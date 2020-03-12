@@ -1,0 +1,60 @@
+---
+description: Als u ondersteuning voor VPAID 2.0 wilt toevoegen, voegt u een aangepaste advertentieweergave en de juiste listeners toe.
+seo-description: Als u ondersteuning voor VPAID 2.0 wilt toevoegen, voegt u een aangepaste advertentieweergave en de juiste listeners toe.
+seo-title: VPAID 2.0-integratie implementeren
+title: VPAID 2.0-integratie implementeren
+uuid: d512fb5b-001c-4a7a-a553-d5962002bb30
+translation-type: tm+mt
+source-git-commit: 1034a0520590777cc0930d2f732741202bc3bc04
+
+---
+
+
+# VPAID 2.0-integratie implementeren {#implement-vpaid-integration}
+
+Als u ondersteuning voor VPAID 2.0 wilt toevoegen, voegt u een aangepaste advertentieweergave en de juiste listeners toe.
+
+1. Voeg de aangepaste advertentieweergave toe aan de Player-interface wanneer de speler zich in de status PREPARED bevindt.
+
+   ```java
+   ... 
+   private FrameLayout _playerFrame; 
+       ... 
+       case PREPARED: 
+           ... 
+           addCustomView(); 
+   ... 
+   private void addCustomView() { 
+       ... 
+       WebView view = (WebView)_mediaPlayer.getCustomAdView(); 
+       ... 
+       _playerFrame.addView(view);
+   ```
+
+1. Maak listeners en verwerk de gebeurtenissen die in [Gebeurtenissen](../../../../tvsdk-3x-android-prog/android-3x-events-notifications/events-summary/android-3x-events-summary.md)worden beschreven.
+
+   >[!IMPORTANT]
+   >
+   >In een VPAID 2.0-workflow is het voor aangepaste en weergaven erg belangrijk om uw `CustomAdView` instantie te behouden bij `AdBreak` het starten (gebeurtenis `AD_BREAK_START`) en `AdBreak` voltooien (gebeurtenis `AD_BREAK_COMPLETE`), vanaf het moment dat u de aangepaste advertentie maakt tot aan het moment dat u deze verwijdert. Maak dus niet elke keer dat een advertentie-einde begint, een aangepaste advertentie-weergave en verwijder deze op elk advertentie-einde voltooid.
+   >
+   >
+   >Bovendien moet u alleen een aangepaste advertentieweergave maken als de speler de status PREPARED heeft,
+   >
+   >
+   >Gooi de aangepaste advertentieweergave alleen weg wanneer de voorinstelling wordt aangeroepen. Bijvoorbeeld:    >
+   >
+   >
+   ```>
+   >// on reset 
+   >if (_mediaPlayer != null) { 
+   >       _mediaPlayer.disposeCustomAdView(); 
+   >       ... 
+   >} 
+   >
+   >```
+
+   Voordat u de aangepaste advertentieweergave kunt verwijderen, moet u deze eerst uit het deelvenster verwijderen `FrameLayout`. Bijvoorbeeld:
+   >```
+   >if (_playerFrame != null) 
+      _playerFrame.removeAllViews(); 
+   ```
