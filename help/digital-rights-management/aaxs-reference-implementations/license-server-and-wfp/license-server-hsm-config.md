@@ -1,0 +1,25 @@
+---
+seo-title: HSM-configuratie
+title: HSM-configuratie
+uuid: 1cc5be99-c24c-4c1e-9348-fb69f96d8ca5
+translation-type: tm+mt
+source-git-commit: 29bc8323460d9be0fce66cbea7c6fce46df20d61
+
+---
+
+
+# HSM-configuratie {#hsm-configuration}
+
+Het gebruik van een HSM is niet verplicht, maar wordt wel aanbevolen. De verwijzingsimplementatie kan worden gevormd om de leverancier van Zon te gebruiken PKCS11 voor steun HSM. Als u een referentie op een HSM wilt gebruiken, moet u een configuratiebestand voor de Sun PKCS11-provider maken. Raadpleeg de documentatie bij Sun voor meer informatie. Om te verifiëren dat uw HSM en PKCS11 configuratiedossier van de Zon behoorlijk worden gevormd, kunt u het volgende bevel gebruiken (keytool is geïnstalleerd met Java JDK):
+
+```
+    keytool -keystore NONE -storetype PKCS11 -providerClass sun.security.pkcs11.SunPKCS11 
+        -providerArg pkcs11.cfg -list
+```
+
+Als u uw geloofsbrieven in de lijst ziet, wordt HSM gevormd behoorlijk.
+
+>[!NOTE] {class=&quot;- topic/note &quot;}
+>
+>Vanaf Java 1.7 biedt 64-bits Sun Java voor Windows geen ondersteuning voor de PKCS11-interfaces die Adobe Access DRM nodig heeft voor communicatie met HSM-apparaten. Als u een HSM wilt gebruiken, moet u een 32-bits versie van Java gebruiken of een JDK gebruiken die de volledige PKCS11-interfaces ondersteunt.
+
