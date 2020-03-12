@@ -1,0 +1,33 @@
+---
+description: U kunt het standaardgedrag voor de manier waarop TVSDK-handgrepen zoeken op advertenties negeren wanneer u aangepaste advertentiemarkeringen gebruikt.
+seo-description: U kunt het standaardgedrag voor de manier waarop TVSDK-handgrepen zoeken op advertenties negeren wanneer u aangepaste advertentiemarkeringen gebruikt.
+seo-title: Afspeelgedrag bepalen voor zoeken op aangepaste advertentiemarkeringen
+title: Afspeelgedrag bepalen voor zoeken op aangepaste advertentiemarkeringen
+uuid: ec95a22f-0143-4c80-826f-d6b40e77cf26
+translation-type: tm+mt
+source-git-commit: bc35da8b258056809ceaf18e33bed631047bc81b
+
+---
+
+
+# Afspeelgedrag bepalen voor zoeken op aangepaste advertentiemarkeringen {#control-playback-behavior-for-seeking-over-custom-ad-markers}
+
+U kunt het standaardgedrag voor de manier waarop TVSDK-handgrepen zoeken op advertenties negeren wanneer u aangepaste advertentiemarkeringen gebruikt.
+
+Wanneer een gebruiker gedeelten zoekt die afkomstig zijn van de plaatsing van aangepaste advertentiemarkeringen, slaat TVSDK de advertenties standaard over. Dit kan verschillen van het huidige afspeelgedrag voor standaard en eindpunten. U kunt TVSDK zo instellen dat de afspeelkop wordt verplaatst naar het begin van de laatst overgeslagen aangepaste advertentie wanneer de gebruiker voorbij een of meer aangepaste advertenties zoekt.
+
+1. Bel `CustomRangeMetadata.setAdjustSeekPosition` met `true`.
+
+   ```java
+   customRangeMetadata.setAdjustSeekPosition (true);
+   ```
+
+1. Gebruik `customRangeMetadata` in `MediaPlayerItemConfig`.
+
+   ```java
+   // Set customRangeMetadata 
+   config.setCustomRangeMetadata(customRangeMetadata); 
+   
+   // prepare the content for playback by calling replaceCurrentResource 
+   mediaPlayer.replaceCurrentResource(mediaResource, config); 
+   ```
