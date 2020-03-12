@@ -1,0 +1,31 @@
+---
+description: De stapel van Apple HLS steunt omschakeling aan failover/reservestromen als het geen stromen van de primaire reeks kan terugwinnen. Voor Apple HLS-apparaten kunt u, om failover te vergemakkelijken, een signaal geven voor een manifestserver om primaire en failover-streams die in de hoofdafspeellijst zijn geïdentificeerd, te behandelen als gesplitste sets (met hun eigen UUID's).
+seo-description: De stapel van Apple HLS steunt omschakeling aan failover/reservestromen als het geen stromen van de primaire reeks kan terugwinnen. Voor Apple HLS-apparaten kunt u, om failover te vergemakkelijken, een signaal geven voor een manifestserver om primaire en failover-streams die in de hoofdafspeellijst zijn geïdentificeerd, te behandelen als gesplitste sets (met hun eigen UUID's).
+seo-title: HLS-speler helpen overschakelen naar failover-/back-upstreams
+title: HLS-speler helpen overschakelen naar failover-/back-upstreams
+uuid: 2fea8a51-e4cb-4fc9-82d5-6305a1d96603
+translation-type: tm+mt
+source-git-commit: 6863b63c7fa0068c3c5060fb946515c6cc5e3bff
+
+---
+
+
+# HLS-speler helpen overschakelen naar failover-/back-upstreams {#facilitating-hls-player-switching-to-failover-backup-streams}
+
+De stapel van Apple HLS steunt omschakeling aan failover/reservestromen als het geen stromen van de primaire reeks kan terugwinnen. Voor Apple HLS-apparaten kunt u, om failover te vergemakkelijken, een signaal geven voor een manifestserver om primaire en failover-streams die in de hoofdafspeellijst zijn geïdentificeerd, te behandelen als gesplitste sets (met hun eigen UUID&#39;s).
+
+Als u het overschakelen naar failover- of back-upstreams op Apple HLS-apparaten wilt vergemakkelijken, kunt u de `ptfailover` parameter opgeven in de URL van de Bootstrap. Als u deze parameter verstrekt, zal de manifestserver afzonderlijke playbackzittingen (die de geplaatste advertenties) voor elke failoverreeks bepalen.
+
+## Details
+
+Hoe SSAI HLS die aan failover/steun schakelt behandelt wanneer u `ptfailover=true` in het verzoek van Bootstrap omvat:
+
+* Wanneer een hoofdafspeellijst primaire en back-upsets bevat:
+
+   * De manifestserver identificeert AV stroom URLs voor verschillende failover reeksen gebruikend het `BANDWIDTH` attribuut en de parseringsorde van AV stroom URLs. Er worden afzonderlijke interne afspeelsessies gemaakt (geïdentificeerd door afzonderlijke UUID&#39;s) en er worden stroom-URL&#39;s gemaakt die verwijzen naar manifestservers met verschillende UUID&#39;s die verschillende afspeelsessies identificeren.
+   * De manifestserver identificeert I-Frame stroom URLs voor verschillende failoverreeksen gebruikend het passende `RESOLUTION` attribuut en de parserorde van I-Frame stroom URLs. SSAI gebruikt UUIDs die de bijbehorende stromen AV voor I-Frame stroom URLs identificeren die aan SSAI richten.
+   * Voor deze functie ondersteunt de manifestserver alleen `EXT-X-MEDIA` groepen zonder URI-kenmerken in de afspeellijst van de master.
+   * De manifestserver ontdekt een 404 foutenreactie van een CDN met een `X-Object-Too-Old: true` kopbal, en bewaart de statuscode en de kopbal wanneer het verzenden van die reactie naar de speler.
+
+* Pre-roll advertenties worden slechts toegevoegd aan de primaire reeks; zij zijn volledig gehandicapt in de failoverreeksen om het even welke fout en/of gedupliceerde pre-roladvertenties te vermijden wanneer de speler aan failoverstromen schakelt.
+
