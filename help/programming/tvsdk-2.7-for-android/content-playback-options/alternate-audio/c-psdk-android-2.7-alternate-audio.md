@@ -1,0 +1,80 @@
+---
+description: Met alternatieve audio kunt u schakelen tussen beschikbare audiotracks voor een videotrack. Gebruikers kunnen hun voorkeurstaal selecteren wanneer de video wordt afgespeeld.
+seo-description: Met alternatieve audio kunt u schakelen tussen beschikbare audiotracks voor een videotrack. Gebruikers kunnen hun voorkeurstaal selecteren wanneer de video wordt afgespeeld.
+seo-title: Alternatieve audio
+title: Alternatieve audio
+uuid: 86aa5393-6a9e-49db-807b-7299e6b4ab2b
+translation-type: tm+mt
+source-git-commit: 0eaf0e7e7e61d596a51d1c9c837ad072d703c6a7
+
+---
+
+
+# Overzicht {#alternate-audio-overview}
+
+Met alternatieve audio kunt u schakelen tussen beschikbare audiotracks voor een videotrack. Gebruikers kunnen hun voorkeurstaal selecteren wanneer de video wordt afgespeeld.
+
+<!--<a id="section_E4F9DC28A2944BD08B4190A7F98A8365"></a>-->
+
+Wanneer TVSDK de `MediaPlayerItem` instantie voor de huidige video maakt, wordt voor elke beschikbare audiotrack een `AudioTrack` item gemaakt. Het item bevat een `name` eigenschap. Dit is een tekenreeks die doorgaans een door de gebruiker herkenbare beschrijving van de taal van die track bevat. Het item bevat ook informatie over of die track standaard moet worden gebruikt. Wanneer het tijd is om de video af te spelen, kunt u om een lijst van beschikbare audiosporen vragen, naar keuze toestaan de gebruiker selecteert een spoor, en de video plaatsen om met het geselecteerde spoor te spelen.
+
+>[!TIP]
+>
+>Hoewel het zelden voorkomt dat er een extra audiotrack beschikbaar komt nadat TVSDK de `MediaPlayerItem`gebeurtenis heeft gemaakt, wordt er door TVSDK een `MediaPlayerItem.AUDIO_TRACK_UPDATED` gebeurtenis geactiveerd.
+
+## Toegevoegde API&#39;s {#section_87C42C30BA8C4F58A2DAB7CE07FCD3DE}
+
+De volgende API&#39;s zijn toegevoegd ter ondersteuning van alternatieve audio:
+
+`hasAlternateAudio`
+
+Als de opgegeven media een andere audiotrack heeft dan de standaardtrack, wordt deze booleaanse functie geretourneerd `true`. Als er geen alternatieve audiotrack is, wordt de functie geretourneerd `false`.
+
+```java
+boolean hasAlternateAudio();
+```
+
+** `getAudioTracks`**
+
+Deze functie retourneert een lijst met alle huidige beschikbare audiotracks in een opgegeven media.
+
+```java
+List<AudioTrack> getAudioTracks();
+```
+
+`getSelectedAudioTrack`
+
+Deze functie die de momenteel geselecteerde alternatieve audiotrack en eigenschappen zoals taal retourneert. De automatische selectie van tracks kan ook worden geëxtraheerd.
+
+```java
+AudioTrack getSelectedAudioTrack();
+```
+
+`selectAudioTrack`
+
+Deze functie selecteert een alternatieve audiotrack die moet worden afgespeeld.
+
+```java
+void selectAudioTrack(AudioTrack audioTrack);
+```
+
+Bijvoorbeeld:
+
+```java
+private void onPrepared() { 
+    // Select the AA track in PREPARED State 
+    boolean hasAlternateAudio = _mediaPlayer.getCurrentItem().hasAlternateAudio(); 
+    if(hasAlternateAudio) { 
+        AudioTrack selectedAudioTrack =  
+          _mediaPlayer.getCurrentItem().getSelectedAudioTrack(); 
+ 
+        if (selectedAudioTrack == null) {  
+            // Selecting default audio track  
+            // If index is 1 it will select alternate audio track  
+            selectedAudioTrack = _mediaPlayer.getCurrentItem().getAudioTracks().get(0);  
+        } 
+    } 
+    _mediaPlayer.getCurrentItem().selectAudioTrack(selectedAudioTrack); 
+} 
+```
+
