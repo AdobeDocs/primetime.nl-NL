@@ -1,0 +1,104 @@
+---
+description: De prioriteitsregel definieert de prioriteitsvolgorde van de ad-creatieven die worden geselecteerd voor afspelen vanaf een VAST/VMAP-respons.
+keywords: priority rule;creative selection rules
+seo-description: De prioriteitsregel definieert de prioriteitsvolgorde van de ad-creatieven die worden geselecteerd voor afspelen vanaf een VAST/VMAP-respons.
+seo-title: Prioriteitsregels
+title: Prioriteitsregels
+uuid: 20dd0ded-06dd-427d-8dd3-79f9f8a3390c
+translation-type: tm+mt
+source-git-commit: 3fdae2b6babb578d2cacff970fd9c7b53ad2c5dc
+
+---
+
+
+# Prioriteitsregels {#priority-rules}
+
+De prioriteitsregel definieert de prioriteitsvolgorde van de ad-creatieven die worden geselecteerd voor afspelen vanaf een VAST/VMAP-respons.
+
+<table id="table_ljp_tgx_hz">  
+ <thead> 
+  <tr> 
+   <th class="entry"><b>Sleutel</b></th> 
+   <th class="entry"><b>Type</b></th> 
+   <th class="entry"><b>Waarden</b></th> 
+   <th class="entry"><b>Beschrijving</b></th>
+  </tr> 
+ </thead>
+ <tbody> 
+  <tr> 
+   <td><span class="codeph"> prioriteit</span></td> 
+   <td><span class="codeph"> Array</span></td> 
+   <td></td> 
+   <td> Een array van MIME-typen in kleine letters die de prioriteit definiëren waarin broncreatieven moeten worden geselecteerd voor afspelen.</td> 
+  </tr> 
+  <tr> 
+   <td><span class="codeph"> item</span></td> 
+   <td><span class="codeph"> String</span></td> 
+   <td><span class="codeph"> host</span></td> 
+   <td>Momenteel wordt alleen de <span class="codeph"> host</span> ondersteund. Dit kenmerk moet aanwezig zijn wanneer kenmerken voor <span class="codeph"> overeenkomsten</span> en <span class="codeph"> waarden</span> worden gedefinieerd.</td> 
+  </tr> 
+  <tr> 
+   <td><span class="codeph"> matches</span></td> 
+   <td><span class="codeph"> String</span></td> 
+   <td><span class="codeph"> meerdere</span></td> 
+   <td>Mogelijke waarden:
+    <ul id="ul_tnf_2hx_hz"> 
+     <li><span class="codeph"> eq</span> - gelijk</li> 
+     <li><span class="codeph"> ne</span> - niet gelijk aan</li> 
+     <li><span class="codeph"> co</span> - contains</li> 
+     <li><span class="codeph"> nc</span> - bevat niet</li> 
+     <li><span class="codeph"> sw</span> - begint met</li> 
+     <li><span class="codeph"> nieuw</span> - eindigt met</li> 
+    </ul></td> 
+  </tr> 
+  <tr> 
+   <td><span class="codeph"> type</span></td> 
+   <td><span class="codeph"> String</span></td> 
+   <td><span class="codeph"> prioriteit</span></td> 
+   <td>De waarde moet altijd <span class="codeph"> prioriteit hebben</span></td> 
+  </tr> 
+  <tr> 
+   <td><span class="codeph"> values</span></td> 
+   <td><span class="codeph"> Array</span></td> 
+   <td></td> 
+   <td> <p>TVSDK gebruikt het kenmerk <span class="codeph"> match</span> op het <span class="codeph"> item</span> van de bron creatief en komt overeen met de waarden die in deze array zijn gedefinieerd</p> </td> 
+  </tr> 
+  <tr> 
+   <td><span class="codeph"> stream</span></td> 
+   <td><span class="codeph"> String</span></td> 
+   <td></td> 
+   <td> <p>Waarde kan leeg <span class="codeph"> of</span> <span class="codeph"> live zijn</span></p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+```
+{
+    "ads": {
+        "rules": {
+            "default": [
+                {
+                    "
+<b>type</b>": "
+<b>priority</b>",
+                    "
+<b>stream</b>": "vod",
+                    "
+<b>priority</b>": [
+                        "application/x-mpegurl",
+                        "application/vnd.apple.mpegurl",
+                        "application/x-shockwave-flash",
+                        "video/mp4",
+                        "video/m4v",
+                        "video/x-flv",
+                        "video/webm"
+                    ]
+                },
+                {
+                    ...
+                },
+            ]
+        }
+    }
+}
+```
