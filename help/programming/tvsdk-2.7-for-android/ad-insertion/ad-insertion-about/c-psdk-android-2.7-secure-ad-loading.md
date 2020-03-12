@@ -1,0 +1,23 @@
+---
+description: 'null'
+seo-description: 'null'
+seo-title: Beveiligde advertentie laden via HTTPS
+title: Beveiligde advertentie laden via HTTPS
+uuid: 72ab94d3-ee0c-4f02-adf2-c186ae6aec26
+translation-type: tm+mt
+source-git-commit: 812d04037c3b18f8d8cdd0d18430c686c3eee1ff
+
+---
+
+
+# Beveiligde advertentie laden via HTTPS {#secure-ad-loading-over-https}
+
+Adobe Primetime biedt een optie om eerst een oproep te doen naar de Primetime-server en aan CRS gerelateerde aanroepen via HTTPS.
+
+De functie is niet standaard ingeschakeld. Gebruik het volgende om veilig en ladend toe te laten.
+
+```
+AuditudeSettings auditudeSettings = new AuditudeSettings(); 
+auditudeSettings. getForceHttpsConfiguration().setAdServerCalls(true);
+```
+
