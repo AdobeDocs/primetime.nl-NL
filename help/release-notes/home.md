@@ -4,7 +4,7 @@ seo-title: Opmerkingen bij de release Adobe Primetime
 description: 'null'
 seo-description: 'null'
 translation-type: tm+mt
-source-git-commit: c6036a6777e9158861850b60dd1e0749c30fa280
+source-git-commit: 2b1ce2cfea7db0a644507ffdb9d18569b55c84da
 
 ---
 
@@ -13,9 +13,9 @@ source-git-commit: c6036a6777e9158861850b60dd1e0749c30fa280
 
 Welkom bij de opmerkingen bij de Adobe Primetime-release. De documenten die in de linkernavigatie worden vermeld verstrekken versie-specifieke informatie, systeemvereisten, beperkingen, vaste kwesties, en bekende kwesties.
 
-## Verbeteringen en correcties in Opmerkingen bij de release TVSDK 3.10 iOS
+## Verbeteringen en correcties in Opmerkingen bij de release TVSDK 3.11 iOS
 
-De release was vooral gericht op het oplossen van problemen met klanten en het bijwerken van het transportcertificaat voor individualisatie.
+De release was vooral gericht op het oplossen van problemen met klanten.
 
 Raadpleeg de voor meer informatie over de huidige uitgebrachte versie voor [iOS](../release-notes/tvsdk-3x-ios.md).
 
