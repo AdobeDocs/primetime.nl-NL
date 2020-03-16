@@ -1,29 +1,33 @@
 ---
-title: Opmerkingen bij de release TVSDK 3.10 voor iOS
-description: De opmerkingen bij de release TVSDK 3.10 voor iOS beschrijven wat nieuw of gewijzigd is, de opgeloste en bekende problemen en de apparaatproblemen in TVSDK iOS 3.10.
+title: Opmerkingen bij de release TVSDK 3.11 voor iOS
+description: De opmerkingen bij de release TVSDK 3.11 voor iOS beschrijven wat nieuw of gewijzigd is, de opgeloste en bekende problemen en de apparaatproblemen in TVSDK iOS 3.11.
 translation-type: tm+mt
-source-git-commit: c6036a6777e9158861850b60dd1e0749c30fa280
+source-git-commit: 2b1ce2cfea7db0a644507ffdb9d18569b55c84da
 
 ---
 
 
-# Opmerkingen bij de release TVSDK 3.10 voor iOS {#tvsdk-for-ios-release-notes}
+# Opmerkingen bij de release TVSDK 3.11 voor iOS {#tvsdk-for-ios-release-notes}
 
-De opmerkingen bij de release TVSDK 3.10 voor iOS beschrijven wat nieuw of gewijzigd is, de opgeloste en bekende problemen en de apparaatproblemen in TVSDK iOS 3.10.
+De opmerkingen bij de release TVSDK 3.11 voor iOS beschrijven wat nieuw of gewijzigd is, de opgeloste en bekende problemen en de apparaatproblemen in TVSDK iOS 3.11.
 
 ## Systeem- en softwarevereisten {#system-software-requirements}
 
-Voordat u iOS 3.10 downloadt, moet u controleren of uw hardware-, besturingssysteem- en toepassingsversies aan de volgende vereisten voldoen:
+Voordat u iOS 3.11 downloadt, moet u controleren of uw hardware-, besturingssysteem- en toepassingsversies aan de volgende vereisten voldoen:
 
 Besturingssysteem: iOS 8.0 of hoger.
 
-## iOS TVSDK 3.10
+## iOS TVSDK 3.11
 
-Probleem verholpen waarbij de TVSDK-speler geen PTMediaPlayerStatusError-melding activeerde wanneer het netwerk niet beschikbaar is.
+Opgeloste oplossingen voor problemen van klanten waarbij `isFallbackOnInvalidCreativeEnabled` en de methode `customParams` ertoe leiden dat de toepassing vastloopt.
 
 Voor moeilijke situaties in de huidige versie zie [klantenkwesties die worden opgelost](#resolved-issues) en voor beperkingen zie [bekende kwesties en beperkingen](#known-issues-and-limitations) sectie.
 
 ### Nieuwe functies en oplossingen in de vorige versies {#whats-new-previous}
+
+**iOS TVSDK 3.10**
+
+* Probleem verholpen waarbij de TVSDK-speler geen melding `PTMediaPlayerStatusError` verzendt wanneer het netwerk niet beschikbaar is.
 
 **iOS TVSDK 3.9**
 
@@ -45,7 +49,7 @@ Hotfix voor een scenario waarbij het afspelen werd gestopt wanneer een groot aan
 
 **iOS TVSDK 3.6**
 
-**Oplossingen in de eigenschap wideXML van klasse`PTNetworkAdInfo`**
+**Oplossingen in de eigenschap wideXML van de klasse`PTNetworkAdInfo`**
 
 De eigenschap wideXML werd niet correct ingesteld en retourneert een nulwaarde.
 
@@ -290,11 +294,17 @@ Comment Type: draft
 </note>
  -->
 
+**iOS TVSDK 3.11**
+
+* (ZD#40998) - De toepassing `isFallbackOnInvalidCreativeEnabled` loopt vast.
+
+* (ZD#41289) - `NSInvalidArgumentException` wordt waargenomen bij de methode die tot het vastlopen van de toepassing `customParams` leidt.
+
+### Opgeloste problemen in de vorige releases {#resolved-issues-previous}
+
 **iOS TVSDK 3.10**
 
 (ZD#40943) - De TVSDK-speler geeft geen PTMediaPlayerStatusError-melding wanneer het netwerk niet beschikbaar is.
-
-### Opgeloste problemen in de vorige releases {#resolved-issues-previous}
 
 **iOS TVSDK 3.9**
 
@@ -310,94 +320,81 @@ Comment Type: draft
 
 **iOS TVSDK 3.7**
 
-* (ZD#38961) - Inhoud kan niet worden afgespeeld in het PiP-venster (Picture-in-Picture) nadat één inhoud is afgespeeld, wanneer meerdere inhoud is geconfigureerd om te worden afgespeeld in de PiP.
+(ZD#38961) - Inhoud kan niet worden afgespeeld in het PiP-venster (Picture-in-Picture) nadat één inhoud is afgespeeld, wanneer meerdere inhoud is geconfigureerd om te worden afgespeeld in de PiP.
 
 **iOS TVSDK 3.6**
 
-* Geen nieuwe problemen in deze release.
+Geen nieuwe problemen in deze release.
 
 **iOS TVSDK 3.5**
 
-* Geen nieuwe problemen in deze release.
+Geen nieuwe problemen in deze release.
 
 **Versie 3.3**
 
-* (ZD#37820) - whitelisting toegevoegd voor aangepaste header HS-ID, HS-SSAI-TAG.
+(ZD#37820) - whitelisting toegevoegd voor aangepaste header HS-ID, HS-SSAI-TAG.
 
 **Versie 3.2**
 
-**Ticket#36588** - Er wordt een crash van de speler waargenomen wanneer de STOP-methode van MediaPlayer wordt aangeroepen.
-
+* **Ticket#36588** - Er wordt een crash van de speler waargenomen wanneer de STOP-methode van MediaPlayer wordt aangeroepen.
 Correctie van het periodiek vastlopen dat werd waargenomen wanneer de STOP-methode wordt aangeroepen voor een paar streams met ondertitels.
 
-**Ticket#37080** - Dubbele verzoeken die voor Duidelijke vraag worden gezien.
-
+* **Ticket#37080** - Dubbele verzoeken die voor Duidelijke vraag worden gezien.
 Oplossing voor de dubbele aanvragen voor Manifest-URL&#39;s tijdens het afspelen. TVSDK doet nu één vraag per manifest.
 
-**Ticket#37** - De normalisatieregel van CRS ontbreekt met eq gelijke type
-
-Probleem verholpen waarbij de speler vastliep wanneer deze werd aangetroffen bij de laatste normalisatieregel die was ingesteld voor hostnamen met het match-type &quot;eq&quot;.
+* **Ticket#37** - de normalisatieregel van CRS ontbreekt met eq gelijke typeFixed een geval waar de speler aan botsing gebruikte wanneer ontmoet met laatste normalisatieregel die voor hostnames met een &quot;eq&quot;gelijkenis wordt geplaatst.
 
 **Versie 3.1**
 
-**Ticket #36313** - Intermitterende onvoorspelbare resultaten tijdens lineaire ADD-einden
-
-Correctie van afspelen met tussenpozen tijdens lineaire en onderbrekingen in Live stream.
+**Ticket #36313** - Intermitterende onvoorspelbare resultaten tijdens Lineaire ad BreaksCorrectie afspelen met intermitterende tussenpozen tijdens lineaire en onderbrekingen in Live stream.
 
 **Versie 3.0.1**
 
-**Ticket36948** - CRS - Volgorde voor selectie van bedrijfsmiddelen inconsistent op iOS 12
-
-Het voor CRS geselecteerde middel is niet altijd de hoogste kwaliteitsvariant die in een reactie VAST of VMAP wordt teruggekeerd.
+**Ticket36948** - CRS - Volgorde van de activaselectie inconsistent op iOS 12Het voor CRS geselecteerde middel is niet altijd de hoogste kwaliteitsvariant die in een reactie van VAST of VMAP wordt teruggegeven.
 
 **Versie 3.0**
 
-**Ticket35311** - de status van de speler wordt niet GEPAUZEERD tijdens een telefoononderbreking
+* **Ticket35311** - de status van de Speler wordt niet GEPAUZEERD tijdens een telefoongesprek interruptAdded onderbreekt manager om de speler tegen te houden die onderbreekt. Na onderbreking wordt de spelerstatus gepauzeerd en wordt het afspelen hervat wanneer u op de afspeelknop klikt.
 
-Toegevoegde interrupt-handler om te voorkomen dat de speler wordt onderbroken. Na onderbreking wordt de spelerstatus gepauzeerd en wordt het afspelen hervat wanneer u op de afspeelknop klikt.
+* **Ticket36685** - Levende activa - De tijd wanverhouding met de vooruitgang van de spelertijd en de tijd van de tellertijd SCTE wordt berekend tijdCorrect voor de tellers SCTE die vóór live punt zijn.
 
-**Ticket36685** - Live assets - Tijd komt niet overeen met de voortgang van de spelertijd en de tijd van de SCTE-markeerteken
-
-De correcte tijd wordt berekend voor de tellers SCTE die vóór levend punt zijn.
-
-**Ticket36492** - `currentTime` en `localTime` worden niet bijgewerkt wanneer het zoeken naar een nieuwe positie tijdens gepauzeerde status
-
-De huidige tijd van de speler kan nu worden ingesteld op nul als de speler zich in de pauzestatus bevindt. eerder dan de huidige tijd die alleen in afspeelstatus op nul werd ingesteld.
+* **Ticket36492** - `currentTime` en `localTime` worden niet bijgewerkt wanneer het zoeken naar een nieuwe positie tijdens gepauzeerde statusPlayer huidige tijd kan nu aan nul worden geplaatst voor het geval de speler in gepauzeerde staat is; eerder dan de huidige tijd die alleen in afspeelstatus op nul werd ingesteld.
 
 **Versie 1.4.45**
 
-**Ticket36294** - iOS TVSDK werkt niet met Xcode 10
+* **Ticket36294** - iOS TVSDK werkt niet met Xcode 10Oplossing voor de compilatieproblemen met TVSDK op XCode 10. Vanwege de XCode 10-vereisten vereisen apps die op TVSDK voor iOS 1.4.45 en hoger bouwen, een minimaal implementatiedoel als iOS 7.0
 
-Oplossing voor de compilatieproblemen met TVSDK op XCode 10. Vanwege de XCode 10-vereisten vereisen apps die op TVSDK voor iOS 1.4.45 en hoger bouwen, een minimaal implementatiedoel als iOS 7.0
+* **Ticket36321** - Discrepancy waargenomen in het doorzoekbare bereik tussen `PTMediaPlayer` en `AVPlayer` bijvoorbeeld in de staat &quot;Afspelen&quot;.
 
-**Ticket36321** - Discrepancy waargenomen in het doorzoekbare bereik tussen `PTMediaPlayer` en `AVPlayer` bijvoorbeeld in de staat &quot;Afspelen&quot;.
-**Ticket36493** - `libstdc++` ondersteuning voor iOS 12
-
-Oplossing voor problemen met de compilatie van TVSDK op iOS 12. Voor toepassingen die op TVSDK voor iOS 1.4.45 en hoger zijn gebaseerd, is een minimaal implementatiedoel vereist als iOS 7.0
+* **Ticket36493** - `libstdc++` ondersteuning op iOS 12Fixed the compilation issues with TVSDK on iOS 12. Voor toepassingen die op TVSDK voor iOS 1.4.45 en hoger zijn gebaseerd, is een minimaal implementatiedoel vereist als iOS 7.0
 
 **Versie 1.4.44**
 
-**Ticket34683** - Vooruitgang bij afspelen van advertenties verloopt negatief
+* **Ticket34683** - Vooruitgang bij afspelen van advertenties verloopt negatief
 
 Extra controles die worden uitgevoerd om het geval te behandelen wanneer er een wanverhouding tussen de duur die door de advertentieserver wordt gemeld en daadwerkelijke advertentie-inhoud is.
 
-**Ticket34801** - currentTime en localTime werden niet bijgewerkt toen het zoeken naar een nieuwe positie tijdens gepauzeerde status
+* **Ticket34801** - currentTime en localTime werden niet bijgewerkt toen het zoeken naar een nieuwe positie tijdens gepauzeerde statusPlayer huidige tijd kan nu aan nul worden geplaatst voor het geval de speler in gepauzeerde staat is; eerder dan de huidige tijd die alleen in afspeelstatus op nul werd ingesteld.
 
-De huidige tijd van de speler kan nu worden ingesteld op nul als de speler zich in de pauzestatus bevindt. eerder dan de huidige tijd die alleen in afspeelstatus op nul werd ingesteld.
-
-**Ticket35037** - Playback stalls met slechte URL wanneer het terugkeren van op signaal-gebaseerd en toevoeging.
-
+* **Ticket35037** - Playback stalls met slechte URL wanneer het terugkeren van op signaal-gebaseerd en toevoeging.
 Verbeterde oplossing voor afgesloten uitgave #34385 in release 1.4.42. Toegevoegde isCanceled controle en uitzondering behandelende code om verrichtingsrij robuuster te maken.
 
 **Versie 1.4.43**
 
 * (ZD#32990) - iOS: Inhoud afspelen in plaats van advertenties op bepaalde actiepunten. `selectedMediaOptionInMediaSelectionGroup` API die deel uitmaakte van de AVPlayerItem-interface is nu verplaatst onder AVMediaSelection in iOS 11. Het probleem is opgelost met deze nieuwe API.
+
 * (ZD#33683) TVSDK is verwijderd == achtervoegsel uit de metagegevenstekenreeksen. Het probleem is opgelost in de parseringslogica.
+
 * (ZD#33905) - iOS TVSDK die vraag aan de manifestdossiers met twee gebruikersagenten maakt. Het probleem met de gebruikersagent is opgelost in de eerste m3u8-aanroep (nieuwbouw). M3u8&#39;s hebben nu dezelfde gebruiker-agenten voor alle aanroepen.
+
 * (ZD#34293) - Pre-rolls die zijn ingevoegd in LINEAR-streams worden niet correct afgespeeld in iOS11. Het probleem is opgelost voor preroll-advertenties.
+
 * (ZD#34684) - Wanneer het beleid voor het overslaan van advertenties wordt toegepast, worden Pre-roll en frames gedurende een paar seconden weergegeven. Er is een nieuwe API, enableVodPreroll, geïntroduceerd om het vooraf afspelen in het afspelen van wachtwoorden uit te schakelen. De standaardwaarde voor deze API is Ja. De API zorgt ervoor dat de inhoud van de hoofdinhoud wordt overgeslagen.
+
 * (ZD#34765) - Na het aanroepen van stop() worden nog maar weinig transportstreamsegmenten gedownload. Verbeterde de Stop()-API om het downloaden van de extra segmenten te voorkomen.
+
 * (ZD#34865) - Pre-roll advertenties voor livestream worden afgebroken op iOS. Dit probleem is opgelost. Dit probleem is verwant aan iOS11 en er wordt een extra controle toegevoegd om te controleren of de stream pre-roll of main-content is.
+
 * (ZD#35093) - Oplossing voor een failover-scenario waarbij, als de Primaire variant van de stream bij het opstarten mislukt (404 wordt geretourneerd), het afspelen niet naar de back-upstream wordt geschakeld.
 
 **1.4.42 (1.4.42.118)**
@@ -405,10 +402,13 @@ Verbeterde oplossing voor afgesloten uitgave #34385 in release 1.4.42. Toegevoeg
 * (ZD#34385) - Afspeelstallen met een ongeldige URL bij het terugkeren van op signaal gebaseerde invoeging.
 
    Verhoog de maximum gezamenlijke tellingen voor `CustomAVAssetLoaderOperations`, zodat manifest kan blijven uitvoeren leest.
+
 * (ZD#34373) - Eindgebruikers kunnen niet streamen naar met HDMI aangesloten apparaten wanneer het opnemen van streams wordt verboden.
+
 * (ZD#32678) - TVSDK verzamelt de juiste id&#39;s voor advertenties niet op iOS.
 
    Advertentie-id van de uiteindelijke creatieve advertentie wordt nu opgenomen in VHL-pings in geval van omleiding van VAST/VMAP.
+
 * (ZD#33904) - TVSDK is niet geregistreerd voor AVFFoundation-meldingen `AVAudioSessionMediaServicesWereLostNotification` en `AVAudioSessionMediaServicesWereResetNotification`.
 
    `PTMediaServicesWereLostNotification` en `PTMediaServicesWereResetNotification` kan nu worden geregistreerd in de Player-app om de meldingen op te halen wanneer de Media-services opnieuw worden ingesteld of verloren gaan.
@@ -707,7 +707,7 @@ De crash die optrad als gevolg van een niet-toegewezen instantie van de mediaspe
 
 * (ZD #24575) - Crash in TVSDK op 32-bits apparaten wanneer enableDebugLog=true
 
-De kwestie in het logboekformaat dat de botsing op apparaten met 32 bits veroorzaakte wanneer het registreren wordt toegelaten is opgelost.
+De kwestie in het logboekformaat dat de botsing op apparaten met 32 bits veroorzaakte wanneer het registreren wordt toegelaten is bevestigd.
 
 **Versie 1.4.26** (1.4.26.702) voor iOS 6.0+
 
