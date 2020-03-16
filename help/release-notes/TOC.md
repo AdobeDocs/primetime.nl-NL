@@ -4,7 +4,7 @@ product: adobe primetime
 audience: end-user
 user-guide-title: Primetime Release Notes
 translation-type: tm+mt
-source-git-commit: c6036a6777e9158861850b60dd1e0749c30fa280
+source-git-commit: 2b1ce2cfea7db0a644507ffdb9d18569b55c84da
 
 ---
 
@@ -15,7 +15,7 @@ source-git-commit: c6036a6777e9158861850b60dd1e0749c30fa280
 + Dynamische invoeging van primetime-advertentie {#ptai}
    + [Opmerkingen bij de release PTAI 19.11.1](ptai-19x-release-notes.md)
 + TVSDK voor iOS {#tvsdk-ios}
-   + [Opmerkingen bij de release TVSDK 3.10 voor iOS](tvsdk-3x-ios.md)
+   + [Opmerkingen bij de release TVSDK 3.11 voor iOS](tvsdk-3x-ios.md)
    + [Opmerkingen bij de release TVSDK 1.4 voor iOS](tvsdk-1-4-ios.md)
 + TVSDK voor Android {#tvsdk-android}
    + [Opmerkingen bij de release TVSDK 3.10 voor Android](tvsdk-3x-android.md)
