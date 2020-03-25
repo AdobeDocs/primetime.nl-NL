@@ -4,7 +4,7 @@ seo-title: Opmerkingen bij de release Adobe Primetime
 description: 'null'
 seo-description: 'null'
 translation-type: tm+mt
-source-git-commit: 2b1ce2cfea7db0a644507ffdb9d18569b55c84da
+source-git-commit: ededb36a0b460fff4644a3716b36971ff9454c37
 
 ---
 
@@ -25,9 +25,9 @@ De release was vooral gericht op het oplossen van problemen met klanten.
 
 Raadpleeg de voor meer informatie over de huidige uitgebrachte versie voor [Android](../release-notes/tvsdk-3x-android.md).
 
-## Verbeteringen en correcties in PTAI 19.11.1
+## Verbeteringen en correcties in PTAI 20.3.3
 
-Gericht op onderhoudsupdates.
+Gericht op probleemoplossingen van klanten.
 
 Zie Opmerkingen bij de release van [PTAI voor meer informatie over de huidige uitgebrachte versie van Dynamische advertentie-invoeging](ptai-19x-release-notes.md).
 
