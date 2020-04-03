@@ -43,26 +43,20 @@ U voegt als volgt VPAID 2.0-ondersteuning toe:
    >Bovendien moet u alleen een aangepaste advertentieweergave maken als de speler de status PREPARED heeft,
    >
    >
-   >Gooi de aangepaste advertentieweergave alleen weg wanneer de voorinstelling wordt aangeroepen. Bijvoorbeeld:    >
+   >Gooi de aangepaste advertentieweergave alleen weg wanneer de voorinstelling wordt aangeroepen. Bijvoorbeeld:
    >
-   >
-   ```>
+   >```
    >// on reset 
    >if (_mediaPlayer != null) { 
    >       _mediaPlayer.disposeCustomAdView(); 
    >       ... 
    >} 
    >
+   >```
    >
-   ```   >
+   >Voordat u de aangepaste advertentieweergave kunt verwijderen, moet u deze eerst uit het deelvenster verwijderen `FrameLayout`. Bijvoorbeeld:
    >
-
-
-
-   >Voordat u de aangepaste advertentieweergave kunt verwijderen, moet u deze eerst uit het deelvenster verwijderen `FrameLayout`. Bijvoorbeeld:    >
-   >
-   >
-   ```>
-   if (_playerFrame != null) 
-      _playerFrame.removeAllViews(); 
-   ```
+   >```
+   >if (_playerFrame != null) 
+   >   _playerFrame.removeAllViews(); 
+   >```
