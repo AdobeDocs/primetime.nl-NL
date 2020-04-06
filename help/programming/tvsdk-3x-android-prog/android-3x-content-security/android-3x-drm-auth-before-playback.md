@@ -48,26 +48,26 @@ In dit voorbeeld kunt u `DRMHelper` methoden gebruiken om de inhoud van het DRM-
 
 1. Voer de callbacks in uit `DRMLoadMetadataListener`.
 
-       De ` loadDRMMetadata ` roept deze gebeurtenismanagers.
-       
- &quot;java     
- public interface DRMLoadMetadataListener {     
-     
-     public void onLoadMetadataUrlStart();
-       
- /**     
- * @param authNeeded     
-     * of DRM-verificatie vereist is.
-       * @param drmMetadata
-     * de geparseerde DRMMetadata die is verkregen.    */
-     public void onLoadMetadataUrlComplete(boolean authNeeded, DRMMetadata drmMetadata);
-       public void onLoadMetadataUrlError();
-       }
-     
-     &quot;
-     
-     Hier zijn extra details over de managers:
+   De `loadDRMMetadata` roept deze gebeurtenismanagers.
+
+   ```java
+   public interface DRMLoadMetadataListener { 
+    
+       public void onLoadMetadataUrlStart(); 
+    
+       /** 
+       * @param authNeeded 
+       * whether DRM authentication is needed. 
+       * @param drmMetadata 
+       * the parsed DRMMetadata obtained.    */ 
+       public void onLoadMetadataUrlComplete(boolean authNeeded, DRMMetadata drmMetadata); 
+       public void onLoadMetadataUrlError(); 
+   } 
    
+   ```
+
+   Hier zijn extra details over de managers:
+
    * `onLoadMetadataUrlStart` Hiermee wordt gedetecteerd wanneer het laden van de metagegevens-URL is gestart.
    * `onLoadMetadataUrlComplete` Hiermee wordt gedetecteerd wanneer de URL van de metagegevens is geladen.
    * `onLoadMetadataUrlError` geeft aan dat de metagegevens niet zijn geladen.
