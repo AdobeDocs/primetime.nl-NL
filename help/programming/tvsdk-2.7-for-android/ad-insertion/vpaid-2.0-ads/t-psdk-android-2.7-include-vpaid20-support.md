@@ -5,7 +5,7 @@ seo-title: VPAID 2.0-integratie implementeren
 title: VPAID 2.0-integratie implementeren
 uuid: fa5b9cdd-e684-4656-91b7-50781dc59e23
 translation-type: tm+mt
-source-git-commit: 812d04037c3b18f8d8cdd0d18430c686c3eee1ff
+source-git-commit: 25f97c8d296f71deddc8f9d12b97007ddf73f603
 
 ---
 
@@ -45,18 +45,19 @@ U voegt als volgt VPAID 2.0-ondersteuning toe:
    >
    >Gooi de aangepaste advertentieweergave alleen weg wanneer de voorinstelling wordt aangeroepen. Bijvoorbeeld:
    >
-   >```
+   >
+   ```
    >// on reset 
    >if (_mediaPlayer != null) { 
    >       _mediaPlayer.disposeCustomAdView(); 
    >       ... 
    >} 
-   >
    >```
    >
    >Voordat u de aangepaste advertentieweergave kunt verwijderen, moet u deze eerst uit het deelvenster verwijderen `FrameLayout`. Bijvoorbeeld:
    >
-   >```
+   >
+   ```
    >if (_playerFrame != null) 
-   >   _playerFrame.removeAllViews(); 
+   >       _playerFrame.removeAllViews(); 
    >```
