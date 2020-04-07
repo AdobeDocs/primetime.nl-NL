@@ -5,7 +5,7 @@ seo-title: DRM-verificatie vóór afspelen
 title: DRM-verificatie vóór afspelen
 uuid: be319b04-a506-4278-8275-db32cd3f18aa
 translation-type: tm+mt
-source-git-commit: bc35da8b258056809ceaf18e33bed631047bc81b
+source-git-commit: e300238be5a2bddc7c6b9bd26682dcb4401959b1
 
 ---
 
@@ -48,13 +48,13 @@ In dit voorbeeld kunt u `DRMHelper` methoden gebruiken om de inhoud van het DRM-
 
 1. Voer de callbacks in uit `DRMLoadMetadataListener`.
 
-   De `loadDRMMetadata` roept deze gebeurtenismanagers.
+   Deze gebeurtenishandlers `loadDRMMetadata` worden aangeroepen.
 
    ```java
    public interface DRMLoadMetadataListener { 
-    
+   
        public void onLoadMetadataUrlStart(); 
-    
+   
        /** 
        * @param authNeeded 
        * whether DRM authentication is needed. 
@@ -63,7 +63,6 @@ In dit voorbeeld kunt u `DRMHelper` methoden gebruiken om de inhoud van het DRM-
        public void onLoadMetadataUrlComplete(boolean authNeeded, DRMMetadata drmMetadata); 
        public void onLoadMetadataUrlError(); 
    } 
-   
    ```
 
    Hier zijn extra details over de managers:
