@@ -2,7 +2,7 @@
 title: Opmerkingen bij de release TVSDK 3.11 voor iOS
 description: De opmerkingen bij de release TVSDK 3.11 voor iOS beschrijven wat nieuw of gewijzigd is, de opgeloste en bekende problemen en de apparaatproblemen in TVSDK iOS 3.11.
 translation-type: tm+mt
-source-git-commit: 2b1ce2cfea7db0a644507ffdb9d18569b55c84da
+source-git-commit: ac75f63f98060e1937570476362bb5d4458d1f85
 
 ---
 
@@ -183,7 +183,6 @@ In de `PTSDKConfig` klasse is de forceHTTPS API toegevoegd.
 De `PTSDKConfig` klasse biedt methoden om SSL af te dwingen voor aanvragen die zijn ingediend bij Adobe Primetime en beslissings-, DRM- en Video Analytics-servers. Zie de methoden `forceHTTPS` `isForcingHTTPS` en methoden in deze klasse voor meer informatie. Als een manifest over HTTPS wordt geladen, behoudt TVSDK het inhoudsgebruik van HTTPS en eerbiedigt dit gebruik wanneer het laden van om het even welke relatieve URLs van dat manifest.
 
 >[!NOTE] Verzoeken naar domeinen van derden, zoals het bijhouden van pixels voor toevoegen, inhoud en URL&#39;s voor toevoegen en vergelijkbare verzoeken, worden niet gewijzigd. Het is de verantwoordelijkheid van inhoudsproviders en servers om URL&#39;s op te geven die via HTTPS worden ondersteund.
-> 
 
 **Versie 1.4.18**
 
@@ -218,7 +217,6 @@ Primetime iOS TVSDK ondersteunt nu VPAID 2.0 Javascript-creatieven om een rijke 
 **Versie 1.4.13**
 
 >[!NOTE] De Nielsen-module is verwijderd uit de TVSDK-build en de TVSDK wordt in de nabije toekomst bijgewerkt met een nieuwe Nielsen-integratiemodule.
-
 
 **Ad Fallback, Daisy chaining in ad selection logic (Zendesk #3103)**
 
@@ -393,7 +391,7 @@ Verbeterde oplossing voor afgesloten uitgave #34385 in release 1.4.42. Toegevoeg
 
 * (ZD#34765) - Na het aanroepen van stop() worden nog maar weinig transportstreamsegmenten gedownload. Verbeterde de Stop()-API om het downloaden van de extra segmenten te voorkomen.
 
-* (ZD#34865) - Pre-roll advertenties voor livestream worden afgebroken op iOS. Dit probleem is opgelost. Dit probleem is verwant aan iOS11 en er wordt een extra controle toegevoegd om te controleren of de stream pre-roll of main-content is.
+* (ZD#34865) - Pre-roll advertenties voor livestream worden afgebroken op iOS. Dit probleem is opgelost. Dit probleem is te maken met iOS11 en er wordt een extra controle toegevoegd om te controleren of de stream pre-roll of main-content is.
 
 * (ZD#35093) - Oplossing voor een failover-scenario waarbij, als de Primaire variant van de stream bij het opstarten mislukt (404 wordt geretourneerd), het afspelen niet naar de back-upstream wordt geschakeld.
 
@@ -707,7 +705,7 @@ De crash die optrad als gevolg van een niet-toegewezen instantie van de mediaspe
 
 * (ZD #24575) - Crash in TVSDK op 32-bits apparaten wanneer enableDebugLog=true
 
-De kwestie in het logboekformaat dat de botsing op apparaten met 32 bits veroorzaakte wanneer het registreren wordt toegelaten is bevestigd.
+De kwestie in het logboekformaat dat de botsing op apparaten met 32 bits veroorzaakte wanneer het registreren wordt toegelaten is opgelost.
 
 **Versie 1.4.26** (1.4.26.702) voor iOS 6.0+
 
@@ -1108,9 +1106,11 @@ Door TVSDK worden lege URL&#39;s voor het bijhouden van regeleinden en afbreking
 ## Apparaatcertificering en ondersteuning {#device-certification-and-support}
 
 >[!NOTE]
-De volgende functies worden **niet** ondersteund in de TVSDK:
-* Trage beweging op elk platform of elke versie.
-* Live truc.
+>
+>De volgende functies worden **niet** ondersteund in de TVSDK:
+>
+>* Trage beweging op elk platform of elke versie.
+>* Live truc.
 
 
 **Versie 1.4.43**
