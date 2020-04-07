@@ -3,7 +3,7 @@ seo-title: HSM-configuratie
 title: HSM-configuratie
 uuid: da4d7118-65a8-460d-a796-b7bf5c28b208
 translation-type: tm+mt
-source-git-commit: 47b2ed65ff0ea4f54a210cf7627ed535782296b9
+source-git-commit: ac75f63f98060e1937570476362bb5d4458d1f85
 
 ---
 
@@ -21,6 +21,6 @@ keytool -keystore NONE -storetype PKCS11 -providerClass sun.security.pkcs11.SunP
 
 Als u uw geloofsbrieven in de lijst ziet, wordt HSM gevormd behoorlijk en de vergunningsserver zal tot de geloofsbrieven kunnen toegang hebben.
 
-> [!NOTE]
-> Adobe Access Server for protected Streaming biedt momenteel geen ondersteuning voor HSM&#39;s op 64-bits Windows-besturingssystemen.
-
+>[!NOTE]
+>
+>Adobe Access Server for protected Streaming biedt momenteel geen ondersteuning voor HSM&#39;s op 64-bits Windows-besturingssystemen.
