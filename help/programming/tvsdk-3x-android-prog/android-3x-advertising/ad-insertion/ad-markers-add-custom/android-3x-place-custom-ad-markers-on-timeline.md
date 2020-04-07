@@ -1,11 +1,11 @@
 ---
 description: In dit voorbeeld wordt aangegeven hoe u aangepaste en markeertekens op de afspeeltijdlijn kunt opnemen.
-seo-description: In dit voorbeeld wordt aangegeven hoe u aangepaste en markeertekens op de afspeeltijdlijn kunt opnemen.
+seo-description: In dit voorbeeld ziet u de aanbevolen manier om aangepaste en markeertekens op de afspeeltijdlijn op te nemen.
 seo-title: Aangepaste markeertekens op de tijdlijn plaatsen
 title: Aangepaste markeertekens op de tijdlijn plaatsen
 uuid: 47e31a97-e5da-46f3-bdcc-327c159c4355
 translation-type: tm+mt
-source-git-commit: bc35da8b258056809ceaf18e33bed631047bc81b
+source-git-commit: 2a6ea34968ee7085931f99a24dfb23d097721b89
 
 ---
 
@@ -39,44 +39,44 @@ Tijdbereiken die zich niet naast een ander tijdbereik bevinden, worden omgezet i
    U kunt elke TVSDK-ad-resolver-module of het aangepaste ad-markeermechanisme gebruiken. Wanneer u aangepaste advertentiemarkeringen gebruikt, wordt de advertentie-inhoud beschouwd als zijnde opgelost en op de tijdlijn geplaatst.
 
 In het volgende codefragment worden drie tijdbereiken op de tijdlijn geplaatst als aangepaste advertentiemarkeringen.
->```java>
->// Assume that the 3 time ranges are obtained through external means 
+
+```java
+// Assume that the 3 time ranges are obtained through external means 
 // Use them to populate the ReplaceTimeRange instance 
 List<ReplaceTimeRange> timeRanges = new ArrayList<ReplaceTimeRange>(); 
 timeRanges.add(new ReplaceTimeRange(0,10000, 0)); 
 timeRanges.add(new ReplaceTimeRange(15000,20000, 0)); 
 timeRanges.add(new ReplaceTimeRange(25000,30000, 0)); 
-
+ 
 CustomRangeMetadata customRangeMetadata = new CustomRangeMetadata(); 
 customRangeMetadata.setTimeRangeList(timeRanges); 
 customRangeMetadata.setType(CustomRangeMetadata.CustomRangeType.MARK_RANGE); 
-
+ 
 //Create a MediaResource instance 
 MediaResource mediaResource = MediaResource.createFromUrl( 
-       "www.example.com/video/test_video.m3u8", timeRanges.toMedatada(null)); 
-
+        "www.example.com/video/test_video.m3u8", timeRanges.toMedatada(null)); 
+ 
 // Create a MediaPlayerItemConfig instance 
 MediaPlayerItemConfig config =  
- new MediaPlayerItemConfig(getActivity().getApplicationContext()); 
-
+  new MediaPlayerItemConfig(getActivity().getApplicationContext()); 
+ 
 // Set customRangeMetadata 
 config.setCustomRangeMetadata(customRangeMetadata); 
-
+ 
 // Prepare the content for playback by calling replaceCurrentResource 
 // NOTE: mediaPlayer is an instance of a properly configured MediaPlayer  
 mediaPlayer.replaceCurrentResource(mediaResource, config); 
-
+ 
 // wait for TVSDK to reach the PREPARED state 
 mediaPlayer.addEventListener(MediaPlayerEvent.STATE_CHANGED,  
- new StatusChangeEventListener() { 
-   @Override 
-   public void onStatusChanged(MediaPlayerStatusChangeEvent event) { 
-
-   if( event.getStatus() == MediaPlayerStatus.PREPARED ) { 
-       // TVSDK is in the PREPARED state, so start the playback  
-       mediaPlayer.play(); 
-   } 
-   ... 
+  new StatusChangeEventListener() { 
+    @Override 
+    public void onStatusChanged(MediaPlayerStatusChangeEvent event) { 
+ 
+    if( event.getStatus() == MediaPlayerStatus.PREPARED ) { 
+        // TVSDK is in the PREPARED state, so start the playback  
+        mediaPlayer.play(); 
+    } 
+    ... 
 }
-```>
-
+```
