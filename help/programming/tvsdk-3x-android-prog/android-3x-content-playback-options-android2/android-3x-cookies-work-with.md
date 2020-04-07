@@ -5,7 +5,7 @@ seo-title: Werken met cookies
 title: Werken met cookies
 uuid: 618bc59a-032d-445e-a867-ed2bf260570d
 translation-type: tm+mt
-source-git-commit: ad58732842eb651514a47dd565e31e3d98a84c46
+source-git-commit: 5ada8632a7a5e3cb5d795dc42110844244656095
 
 ---
 
@@ -64,8 +64,9 @@ Werken met cookies:
    `config.setNetworkConfiguration(networkConfiguration)`
 
    >[!NOTE]
-   Nadat u deze &#39;setReadSetCookieHeader&#39; hebt ingesteld op false, stelt u de cookies voor de belangrijkste aanvragen in met behulp van JAVA-cookiebeheer.
    >
+   >Nadat u deze &#39;setReadSetCookieHeader&#39; hebt ingesteld op false, stelt u de cookies voor de belangrijkste aanvragen in met behulp van JAVA-cookiebeheer.
+
    `onCookiesUpdated(CookiesUpdatedEvent cookiesUpdatedEvent)`
 Deze callback-API wordt geactiveerd wanneer er een update is in C++ cookies (cookies die afkomstig zijn van http response). De toepassing moet naar deze callback luisteren en kan hun JAVA CookieStore dienovereenkomstig bijwerken zodat hun vraag van het Netwerk in JAVA de koekjes zoals hieronder kan gebruiken:
 
