@@ -5,12 +5,15 @@ description: Met de API's kunt u snel en eenvoudig een functionele toepassing of
 seo-description: Met de API's kunt u snel en eenvoudig een functionele toepassing of integratie maken.
 topic-tags: API-references
 translation-type: tm+mt
-source-git-commit: 7994dee271231af8e20f3aadadb1cfd6660ceb4e
+source-git-commit: 33abc0364a7dbe123ef1e6e444ad8578b5596f63
 
 ---
 
 
 # Adobe Primetime API-verwijzingen {#api-references}
+
++ TVSDK 3.11 {#tvsdk-311}
+   + [TVSDK 3.11 voor Android](https://help.adobe.com/en_US/primetime/api/psdk/javadoc_311/index.html)
 
 + TVSDK 3.5 {#tvsdk-35}
    + [TVSDK 3.5 voor iOS](https://help.adobe.com/en_US/primetime/api/psdk/appledoc_v35/index.html)
