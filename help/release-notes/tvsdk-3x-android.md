@@ -8,7 +8,7 @@ products: SG_PRIMETIME
 topic-tags: release-notes
 discoiquuid: 3a27379f-3cef-4ea3-bcae-21382dc1e9fd
 translation-type: tm+mt
-source-git-commit: e41213acf027e4dc4d016ef31c2d3d1665f54dfc
+source-git-commit: 3e5078c25a1426c3991669809426eefab0386ac9
 
 ---
 
@@ -290,20 +290,16 @@ Wanneer TVSDK een verbinding opent, vraagt het de server om een *levend* verbind
 
 * **SizeAvailableEventListener**
 
-   * getHeight() en getWidth() methoden van SizeAvailableEvent retourneren nu uitvoer in respectievelijk hoogte en breedte. De beeldverhouding kan als volgt worden berekend:
+   * `getHeight()` en `getWidth()` methoden of `SizeAvailableEvent` retourneert nu uitvoer in hoogte en breedte. De beeldverhouding kan als volgt worden berekend:
 
-   ```java
-   SizeAvailableEvent e;
-   DAR = e.getWidth()/ e.getHeight();
-   ```
+      SizeAvailableEvent e;
+DAR = e.getWidth()/ e.getHeight();
 
-   Opslagverhouding in termen van tekenbreedte en -hoogte kan ook worden gebruikt om de framebreedte en -hoogte te berekenen:
+      Opslagverhouding in termen van tekenbreedte en -hoogte kan ook worden gebruikt om de framebreedte en -hoogte te berekenen:
 
-   ```java
-   SAR = e.getSarWidth()/e.getSarHeight();
-   frameHeight = e.getHeight();
-   frameWidth = e.getWidth()/SAR;
-   ```
+      SAR = e.getSarWidth()/e.getSarHeight();
+frameHeight = e.getHeight();
+frameWidth = e.getWidth()/SAR;
 
 * **Cookies**
 
