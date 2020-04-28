@@ -1,5 +1,5 @@
 ---
-title: Opmerkingen bij de release TVSDK 3.11 voor Android
+title: Opmerkingen bij de release TVSDK 3.10 voor Android
 seo-title: Opmerkingen bij de release TVSDK 3.11 voor Android
 description: De opmerkingen bij de release TVSDK 3.11 voor Android beschrijven wat nieuw of gewijzigd is, de opgeloste en bekende problemen en de apparaatproblemen in TVSDK Android 3.10
 seo-description: De opmerkingen bij de release TVSDK 3.11 voor Android beschrijven wat nieuw of gewijzigd is, de opgeloste en bekende problemen en de apparaatproblemen in TVSDK Android 3.11
@@ -8,14 +8,14 @@ products: SG_PRIMETIME
 topic-tags: release-notes
 discoiquuid: 3a27379f-3cef-4ea3-bcae-21382dc1e9fd
 translation-type: tm+mt
-source-git-commit: b71ac860652f53b171926b570c004db2351d3d3a
+source-git-commit: 34ec714ec190e77a70bf4e966d6df02ec0c99cb3
 
 ---
 
 
-# Opmerkingen bij de release TVSDK 3.11 voor Android {#tvsdk-for-android-release-notes}
+# Opmerkingen bij de release TVSDK 3.10 voor Android {#tvsdk-for-android-release-notes}
 
-In de Release-notities van TVSDK 3.11 voor Android wordt beschreven wat nieuw of gewijzigd is, welke problemen zijn opgelost en welke problemen bekend zijn en wat de apparaatproblemen zijn in TVSDK Android 3.11.
+In de Release-notities van TVSDK 3.10 voor Android wordt beschreven wat nieuw of gewijzigd is, wat de opgeloste en bekende problemen zijn en wat de apparaatproblemen zijn in TVSDK Android 3.10.
 
 De Android-referentiespeler wordt geleverd bij Android TVSDK in de map samples/directory van uw distributie. In het bijbehorende bestand README.md wordt uitgelegd hoe u de referentiespeler kunt maken.
 
@@ -33,22 +33,20 @@ TVSDK voor Android biedt veel prestatieverbeteringen ten opzichte van eerdere ve
 
 De uitgebreide reeks functies die wordt ondersteund en niet wordt ondersteund, wordt weergegeven in de sectie Matrix [met](#feature-matrix) functies van de opmerkingen bij de release.
 
-<!-- ## New features {#new-features} -->
-
-## Android TVSDK 3.11
-
-**Ophalen van vak voor beveiligingssysteemspecifieke koptekst (PSSH) is toegestaan**
-
-TVSDK staat nu het halen van het Systeem-Specifieke Kopdoos van de Bescherming toe verbonden aan huidige geladen Middel van Media. Nieuwe API `getPSSH()` is toegevoegd aan `com.adobe.mediacore.drm.DRMManager`.
-Zie [Widevine DRM](../programming/tvsdk-3x-android-prog/android-3x-content-security/android-3x-drm-widevine.md)voor meer informatie.
-
-De belangrijkste problemen die in de huidige release zijn opgelost, worden vermeld in de sectie [Opgeloste problemen](#resolved-issues) .
-
-### Nieuwe en verbeterde functies in de vorige versies
-
 **Android TVSDK 3.10**
 
 Deze release was gericht op het oplossen van problemen met klanten zoals vermeld in de [sectie Opgeloste problemen](#resolved-issues) .
+
+<!-- ## New features {#new-features} -->
+
+<!--
+## Android TVSDK 3.11
+**Protection System Specific Header (PSSH) Box fetching allowed**
+TVSDK now allows fetching of Protection System Specific Header Box associated with current loaded Media Resource. New API `getPSSH()` has been added to `com.adobe.mediacore.drm.DRMManager`.
+For more information, see [Widevine DRM](../programming/tvsdk-3x-android-prog/android-3x-content-security/android-3x-drm-widevine.md).
+Top customer issues fixed in the current release are mentioned in [resolved issues](#resolved-issues) section. -->
+
+### Nieuwe en verbeterde functies in de vorige versies
 
 **Android TVSDK 3.9**
 
@@ -393,17 +391,15 @@ In de onderstaande tabel met functies geeft een &#39;Y&#39; aan dat de functie w
 
 Wanneer de resolutie aan een gemelde kwestie wordt geassocieerd, wordt een verwijzing van Zendesk getoond, bijvoorbeeld ZD#xxxxx.
 
-**Android TVSDK 3.11**
-
-Deze sectie bevat een overzicht van het probleem dat is opgelost in TVSDK 3.11 Android-release.
-
-* ZD#41252 - Koreaanse tekens worden weergegeven als ontbrekende glyphsymbolen voor HLS-manifests met WebVTT in de Android TVSDK-referentie-app.
-
-### Opgeloste problemen in de vorige releases
-
 **Android TVSDK 3.10**
 
 * ZD#40340 - De toepassing loopt vast met de fout &quot;App niet reageert&quot; bij het proberen van het afspelen nadat alle TS-bestanden (TypeScript) zijn gesplitst.
+
+<!-- **Android TVSDK 3.11**
+This section provides a summary of the issue resolved in TVSDK 3.11 Android release.
+* ZD#41252 - Korean characters are displayed as missing glyph symbols for HLS manifests with WebVTT in Android TVSDK reference app. -->
+
+### Opgeloste problemen in de vorige releases
 
 **Android TVSDK 3.8**
 
