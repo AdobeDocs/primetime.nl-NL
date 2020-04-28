@@ -8,7 +8,7 @@ products: SG_PRIMETIME
 topic-tags: release-notes
 discoiquuid: 3a27379f-3cef-4ea3-bcae-21382dc1e9fd
 translation-type: tm+mt
-source-git-commit: 5cf340119147799cd7b2c40a2a312595eebaa737
+source-git-commit: e84c50037557e157a044b1cec1fdea84cb156ea0
 
 ---
 
@@ -396,7 +396,7 @@ Wanneer de resolutie aan een gemelde kwestie wordt geassocieerd, wordt een verwi
 
 Deze sectie bevat een overzicht van het probleem dat is opgelost in TVSDK 3.11 Android-release.
 
-* Koreaanse tekens worden weergegeven als ontbrekende glyphsymbolen voor HLS-manifests met WebVTT in de Android TVSDK-referentie-app.
+* ZD#41252 - Koreaanse tekens worden weergegeven als ontbrekende glyphsymbolen voor HLS-manifests met WebVTT in de Android TVSDK-referentie-app.
 
 ### Opgeloste problemen in de vorige releases
 
