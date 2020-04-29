@@ -8,7 +8,7 @@ products: SG_PRIMETIME
 topic-tags: release-notes
 discoiquuid: 3a27379f-3cef-4ea3-bcae-21382dc1e9fd
 translation-type: tm+mt
-source-git-commit: dbb4aceaea1f3db2fcc5a2aa2168ee8a1cd4c785
+source-git-commit: fdb4e4eb741dd066017d96205cea8cbd15dcbc7b
 
 ---
 
@@ -333,7 +333,7 @@ In de onderstaande tabel met functies geeft een &#39;Y&#39; aan dat de functie w
 |---|---|---|
 | Algemeen afspelen (Afspelen, Pauzeren, Zoeken) | VOD + Live | Y |
 | FER - Algemeen afspelen (afspelen, pauzeren, zoeken) | FER VOD | Y |
-| Zoeken wanneer een advertentie wordt afgespeeld | Live | Niet ondersteund |
+| Zoeken wanneer een advertentie wordt afgespeeld | VOD + Live | Niet ondersteund |
 | AC3 | VOD + Live | Niet ondersteund |
 | MP3 | VOD | Niet ondersteund |
 | MP4-inhoud afspelen | VOD | Y |
@@ -399,7 +399,7 @@ In de onderstaande tabel met functies geeft een &#39;Y&#39; aan dat de functie w
 | DRM | VOD + Live | Alleen Primetime DRM (in de toekomst: Widevine) |
 | Extern afspelen (RBOP) | VOD + Live | Alleen Primetime DRM |
 | Licentie roteren | VOD + Live | Alleen Primetime DRM |
-| Toetsrotatie | VOD + Live | Primetime DRM en Widevine DRM |
+| Toetsrotatie | VOD + Live | Alleen Primetime DRM |
 
 | Functie | Inhoudstype | HLS |
 |---|---|---|
@@ -414,7 +414,7 @@ Wanneer de resolutie aan een gemelde kwestie wordt geassocieerd, wordt een verwi
 
 Deze sectie bevat een overzicht van het probleem dat is opgelost in TVSDK 3.11 Android-release.
 
-* ZD#41252 - Koreaanse tekens worden weergegeven als ontbrekende glyphsymbolen voor HLS-manifests met WebVTT in de Android TVSDK-referentie-app.
+* ZD#41252 - Koreaanse tekens in WebVTT afgebroken na Android 7.1.
 
 ### Opgeloste problemen in de vorige releases
 
