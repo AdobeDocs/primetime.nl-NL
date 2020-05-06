@@ -1,10 +1,10 @@
 ---
-title: Opmerkingen bij de release PTAI 20.3.3
+title: Opmerkingen bij de release PTAI 20.5.1
 description: In de opmerkingen bij de release van PTAI 20.5.1 wordt beschreven wat nieuw of gewijzigd is, wat de opgeloste en bekende problemen zijn in de dynamische invoeging van Primetime in 2020.
 translation-type: tm+mt
-source-git-commit: 2a5866be64895ba13994720bf943dc676c2595bf
+source-git-commit: 266b884707e9160d539a06fd089732ef8ade21ba
 workflow-type: tm+mt
-source-wordcount: '356'
+source-wordcount: '353'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ Opmerkingen bij de release Dynamische advertentie 20.5.1 beschrijven wat nieuw o
 
 **Wanneer:** Dinsdag 5 mei 2020, 04.00 - 05.00 UUR OOSTEN
 
-* Probleem verholpen om ervoor te zorgen dat de juiste CORS-koppen worden opgegeven wanneer if-Modified-Since-koppen worden verzonden.
+* Probleem verholpen om ervoor te zorgen dat correcte kopballen CORS worden verstrekt wanneer if-Modified-Since kopballen worden verzonden.
 
 * Bugfixes op het CRS-dashboard.
 
@@ -48,11 +48,13 @@ Opmerkingen bij de release Dynamische advertentie 20.5.1 beschrijven wat nieuw o
 
 **Wanneer:** Dinsdag 28 januari 2020, 14.00 tot 3.00 uur OOSTENRIJK
 
-* **VMAP met FER-ondersteuning voor &quot;nbc&quot; CueFormat** Convert cues van FER-stream naar FW-tijdlijnoverschrijvingsparams, wanneer ptcueformat=nbc wordt gebruikt en de stream een VOD-stream is met in-manifest aanwijzingen en kant-en-klare advertenties.
+* **VMAP met FER-ondersteuning voor nbc CueFormat**
 
-* Maak user-agent gebied in de Kopbal van HTTP alvorens aan derde Ad providers/CDN door:sturen.
+   Zet cues van FER-stream om in FW-tijdlijnoverschrijvingsparams, wanneer deze `ptcueformat=nbc` wordt gebruikt en de stream een VOD-stream is met aanwijzingen in het manifest en kant-en-klare advertenties.
 
-* Filter besturings- en niet-afdrukbare tekens (ascii-code &lt; 32) uit HTTP-headers &quot;user-agent&quot; voordat u deze verzendt naar Auditude en andere advertentieproviders, CDN&#39;s. Auditude Ad-Call gebruikt om voor dergelijke ongeldige kopballen te ontbreken.
+* Maak user-agent gebied in de Kopbal van HTTP alvorens aan derdeleveranciers/CDN door:sturen.
+
+* Filter controle-/niet-afdrukbare tekens (ASCII-code &lt; 32) uit HTTP-headers van de user-agent voordat u deze verzendt naar Auditude en andere add-providers, CDN&#39;s. Auditude Ad-Call gebruikt om voor dergelijke ongeldige kopballen te ontbreken.
 
 * Verwijder oude V1-objecten van NetStorage-groepen om het aantal objecten binnen de veilige grenzen van Akamai te houden.
 
