@@ -4,7 +4,10 @@ product: adobe primetime
 audience: end-user
 user-guide-title: Opmerkingen bij de release Primetime
 translation-type: tm+mt
-source-git-commit: 33abc0364a7dbe123ef1e6e444ad8578b5596f63
+source-git-commit: 7dd4dced32253a3d94e753a49a4b52a60bbba4b1
+workflow-type: tm+mt
+source-wordcount: '101'
+ht-degree: 0%
 
 ---
 
@@ -13,7 +16,7 @@ source-git-commit: 33abc0364a7dbe123ef1e6e444ad8578b5596f63
 
 + [Overzicht van opmerkingen bij de release](home.md)
 + Dynamische invoeging van primetime-advertentie {#ptai}
-   + [Opmerkingen bij de release PTAI 20.3.3](ptai-20x-release-notes.md)
+   + [Opmerkingen bij de release PTAI 20.5.1](ptai-20x-release-notes.md)
    + [Opmerkingen bij de release PTAI 19.11.1](ptai-19x-release-notes.md)
 + TVSDK voor iOS {#tvsdk-ios}
    + [Opmerkingen bij de release TVSDK 3.11 voor iOS](tvsdk-3x-ios.md)
