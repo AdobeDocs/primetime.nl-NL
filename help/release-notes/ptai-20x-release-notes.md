@@ -2,9 +2,9 @@
 title: Opmerkingen bij de release PTAI 20.5.1
 description: In de opmerkingen bij de release van PTAI 20.5.1 wordt beschreven wat nieuw of gewijzigd is, wat de opgeloste en bekende problemen zijn in de dynamische invoeging van Primetime in 2020.
 translation-type: tm+mt
-source-git-commit: 90f75f263e96ea37dd93a91f4392077ea2c70f32
+source-git-commit: 4f97591b819d705891a053961eccd50a3cd05aa2
 workflow-type: tm+mt
-source-wordcount: '440'
+source-wordcount: '518'
 ht-degree: 0%
 
 ---
@@ -43,6 +43,26 @@ Opmerkingen bij de release Dynamische advertentie 20.5.1 beschrijven wat nieuw o
 * Probleem verholpen met X-Forwarded-For headers, waarbij IPv6-adressen niet correct URL-gecodeerd waren wanneer ze aan de advertentieservers werden doorgegeven.
 
 * Probleem verholpen met CMAF/gedemuxed audiostreams, waarbij in bepaalde scenario&#39;s de EXT-X-MEDIA-SEQUENTIE-nummers onjuist zouden stijgen.
+
+### Versie 20.3.2
+
+**Wanneer:** Woensdag 11 maart 2020, 05.30 - 07.00 uur Oosterse tijd
+
+* Verbeteringen aan SCTE35 signaalbehandeling.
+
+* Onderhoudsupdates.
+
+### Versie 20.3.1
+
+**Wanneer:** Donderdag 5 maart 2020, 20.30 uur tot 04.30 uur Oosterse tijd
+
+* Prestatieverbeteringen:
+
+   * Extra cacheondersteuning voor zowel master-/media m3u8-manifests. Deze manifests antwoorden nu aan geheime voorgeheugen-controle: de openbare en Max-Leeftijd kopballen, die vaak videobeginprestaties kunnen verbeteren.
+
+   * Toegevoegde ondersteuning voor het forceren van https-creatieven om op http te worden opgehaald, wat ook de prestaties van het starten van de video kan verbeteren.
+
+* Oplossingen voor beveiliging en onderhoud.
 
 ### Versie 20.2.1
 
