@@ -2,9 +2,9 @@
 title: Opmerkingen bij de release PTAI 20.5.1
 description: In de opmerkingen bij de release van PTAI 20.5.1 wordt beschreven wat nieuw of gewijzigd is, wat de opgeloste en bekende problemen zijn in de dynamische invoeging van Primetime in 2020.
 translation-type: tm+mt
-source-git-commit: 75f95c1ddbca6fc9aa2a722635b1bfb6f097f8cc
+source-git-commit: e5fb84a7199e16a5eb7b6fd61aa7a1e50bb05c73
 workflow-type: tm+mt
-source-wordcount: '548'
+source-wordcount: '546'
 ht-degree: 0%
 
 ---
@@ -38,7 +38,7 @@ Opmerkingen bij de release Dynamische advertentie 20.5.1 beschrijven wat nieuw o
 
 **Wanneer:** Donderdag 26 maart 2020, 03.00 - 04.00 uur Oosterse tijd
 
-* SSAI 4XX en 5XX antwoorden verstrekken nu correct CORS-verwante kopballen, toestaand dwars-domein javascript/webview cliënten om foutenreacties met succes te lezen.
+* SSAI 4XX en 5XX antwoorden verstrekken nu correct CORS-verwante kopballen, die dwars-domein javascript webview cliënten toestaan om foutenreacties met succes te lezen.
 
 * Probleem verholpen met X-Forwarded-For headers, waarbij IPv6-adressen niet correct URL-gecodeerd waren wanneer ze aan de advertentieservers werden doorgegeven.
 
@@ -85,7 +85,7 @@ Opmerkingen bij de release Dynamische advertentie 20.5.1 beschrijven wat nieuw o
 
 * Verwijder oude V1-objecten van NetStorage-groepen om het aantal objecten binnen de veilige grenzen van Akamai te houden.
 
-### Versie 20.1.2 [Hotfix]
+### Versie 20.1.2 (hotfix)
 
 **Wanneer:** Maandag 20 januari 2020, 20.00 - 03.00 uur Oosterse tijd
 
@@ -103,7 +103,7 @@ Opmerkingen bij de release Dynamische advertentie 20.5.1 beschrijven wat nieuw o
 
 ## Opgeloste problemen
 
-Wanneer de oplossing aan een gemelde kwestie wordt geassocieerd, wordt een verwijzing van Zendesk getoond. Bijvoorbeeld ZD#xxxxx.
+Wanneer de oplossing aan een gemelde kwestie wordt geassocieerd, wordt een verwijzing van Zendesk getoond. Bijvoorbeeld: `ZD#xxxxx`
 
 **PTAI 20.5.1**
 
