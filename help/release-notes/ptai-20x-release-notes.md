@@ -2,9 +2,9 @@
 title: Opmerkingen bij de release PTAI 20.5.1
 description: In de opmerkingen bij de release van PTAI 20.5.1 wordt beschreven wat nieuw of gewijzigd is, wat de opgeloste en bekende problemen zijn in de dynamische invoeging van Primetime in 2020.
 translation-type: tm+mt
-source-git-commit: 4f97591b819d705891a053961eccd50a3cd05aa2
+source-git-commit: 9c117678a049e34bfcf960e992a4ce7361968f3e
 workflow-type: tm+mt
-source-wordcount: '518'
+source-wordcount: '548'
 ht-degree: 0%
 
 ---
@@ -104,6 +104,16 @@ Opmerkingen bij de release Dynamische advertentie 20.5.1 beschrijven wat nieuw o
 ## Opgeloste problemen
 
 Wanneer de oplossing aan een gemelde kwestie wordt geassocieerd, wordt een verwijzing van Zendesk getoond. Bijvoorbeeld ZD#xxxxx.
+
+**PTAI 20.5.1**
+
+* Problemen met CORS-koppen bij if-Modified-Since-koppen worden verzonden.
+
+* Problemen in het CRS-dashboard.
+
+**PTAI 20.3.4**
+
+* Probleem dat ertoe leidde dat ondertitels niet meer gesynchroniseerd waren na toevoeging van de advertentie in VOD/WebVTT.
 
 **PTAI 20.3.3**
 
