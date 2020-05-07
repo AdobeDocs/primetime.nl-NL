@@ -2,9 +2,9 @@
 title: Opmerkingen bij de release PTAI 20.5.1
 description: In de opmerkingen bij de release van PTAI 20.5.1 wordt beschreven wat nieuw of gewijzigd is, wat de opgeloste en bekende problemen zijn in de dynamische invoeging van Primetime in 2020.
 translation-type: tm+mt
-source-git-commit: 266b884707e9160d539a06fd089732ef8ade21ba
+source-git-commit: 90f75f263e96ea37dd93a91f4392077ea2c70f32
 workflow-type: tm+mt
-source-wordcount: '353'
+source-wordcount: '440'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ Opmerkingen bij de release Dynamische advertentie 20.5.1 beschrijven wat nieuw o
 
 ## Nieuwe functies in PTAI 20.5.1
 
-**Wanneer:** Dinsdag 5 mei 2020, 04.00 - 05.00 UUR OOSTEN
+**Wanneer:** Dinsdag 5 mei 2020, 04.00 - 05.00 uur Oosterse tijd
 
 * Probleem verholpen om ervoor te zorgen dat correcte kopballen CORS worden verstrekt wanneer if-Modified-Since kopballen worden verzonden.
 
@@ -28,7 +28,7 @@ Opmerkingen bij de release Dynamische advertentie 20.5.1 beschrijven wat nieuw o
 
 ### Versie 20.3.4
 
-**Wanneer:** Woensdag 1 april 2020, 03.00 - 04.00 UUR OOSTEN
+**Wanneer:** Woensdag 1 april 2020, 03.00 - 04.00 uur Oosterse tijd
 
 * Probleem verholpen waarbij ondertitels niet meer gesynchroniseerd werden na het plaatsen van de advertentie in VOD/WebVTT.
 
@@ -36,7 +36,7 @@ Opmerkingen bij de release Dynamische advertentie 20.5.1 beschrijven wat nieuw o
 
 ### Versie 20.3.3
 
-**Wanneer:** Donderdag 26 maart 2020, 3.00 uur tot 4.00 uur OOSTENRIJK
+**Wanneer:** Donderdag 26 maart 2020, 03.00 - 04.00 uur Oosterse tijd
 
 * SSAI 4XX en 5XX antwoorden verstrekken nu correct CORS-verwante kopballen, toestaand dwars-domein javascript/webview cliënten om foutenreacties met succes te lezen.
 
@@ -44,9 +44,16 @@ Opmerkingen bij de release Dynamische advertentie 20.5.1 beschrijven wat nieuw o
 
 * Probleem verholpen met CMAF/gedemuxed audiostreams, waarbij in bepaalde scenario&#39;s de EXT-X-MEDIA-SEQUENTIE-nummers onjuist zouden stijgen.
 
+### Versie 20.2.1
+
+**Wanneer:** Donderdag 13 februari 2020, 04.30 tot 05.30 uur Oosterse tijd
+
+* Toegevoegde ondersteuning voor stitching en assets die meerdere alleen-audio streams bevatten op basis van taal/codec/bitsnelheid.
+* Kleine prestatieverbeteringen en onderhoudsupdates.
+
 ### Versie 20.1.3
 
-**Wanneer:** Dinsdag 28 januari 2020, 14.00 tot 3.00 uur OOSTENRIJK
+**Wanneer:** Dinsdag 28 januari 2020, 23.00 tot 3.00 uur Oosterse tijd
 
 * **VMAP met FER-ondersteuning voor nbc CueFormat**
 
@@ -57,6 +64,22 @@ Opmerkingen bij de release Dynamische advertentie 20.5.1 beschrijven wat nieuw o
 * Filter controle-/niet-afdrukbare tekens (ASCII-code &lt; 32) uit HTTP-headers van de user-agent voordat u deze verzendt naar Auditude en andere add-providers, CDN&#39;s. Auditude Ad-Call gebruikt om voor dergelijke ongeldige kopballen te ontbreken.
 
 * Verwijder oude V1-objecten van NetStorage-groepen om het aantal objecten binnen de veilige grenzen van Akamai te houden.
+
+### Versie 20.1.2 [Hotfix]
+
+**Wanneer:** Maandag 20 januari 2020, 20.00 - 03.00 uur Oosterse tijd
+
+* Onderhoudsupdates.
+
+### Versie 20.1.1
+
+**Wanneer:** Woensdag 15 januari 2020, 04.00 - 05.00 uur Oosterse tijd
+
+* De service Creative Repackaging biedt nu sneller en invoegender door misvormde creatieve producten automatisch op de zwarte lijst te zetten.
+
+* Toegevoegde fase 1 steun voor nieuw SCTE 35 richtsnoerformaat in server-kant en toevoeging.
+
+* Onderhoudsupgrades.
 
 ## Opgeloste problemen
 
