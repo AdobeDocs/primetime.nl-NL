@@ -1,29 +1,36 @@
 ---
-title: Opmerkingen bij de release TVSDK 3.11 voor iOS
-description: De opmerkingen bij de release TVSDK 3.11 voor iOS beschrijven wat nieuw of gewijzigd is, de opgeloste en bekende problemen en de apparaatproblemen in TVSDK iOS 3.11.
+title: Opmerkingen bij de release TVSDK 3.12 voor iOS
+description: De opmerkingen bij de release TVSDK 3.12 voor iOS beschrijven wat nieuw of gewijzigd is, de opgeloste en bekende problemen en de apparaatproblemen in TVSDK iOS 3.12.
 translation-type: tm+mt
-source-git-commit: ac75f63f98060e1937570476362bb5d4458d1f85
+source-git-commit: f6a0fbaec3d164dd0c15d2738b58c7486bbc6e57
+workflow-type: tm+mt
+source-wordcount: '7665'
+ht-degree: 0%
 
 ---
 
 
-# Opmerkingen bij de release TVSDK 3.11 voor iOS {#tvsdk-for-ios-release-notes}
+# Opmerkingen bij de release TVSDK 3.12 voor iOS {#tvsdk-for-ios-release-notes}
 
-De opmerkingen bij de release TVSDK 3.11 voor iOS beschrijven wat nieuw of gewijzigd is, de opgeloste en bekende problemen en de apparaatproblemen in TVSDK iOS 3.11.
+De opmerkingen bij de release TVSDK 3.12 voor iOS beschrijven wat nieuw of gewijzigd is, de opgeloste en bekende problemen en de apparaatproblemen in TVSDK iOS 3.12.
 
 ## Systeem- en softwarevereisten {#system-software-requirements}
 
-Voordat u iOS 3.11 downloadt, moet u controleren of uw hardware-, besturingssysteem- en toepassingsversies aan de volgende vereisten voldoen:
+Voordat u iOS 3.12 downloadt, moet u controleren of uw hardware-, besturingssysteem- en toepassingsversies aan de volgende vereisten voldoen:
 
 Besturingssysteem: iOS 8.0 of hoger.
 
-## iOS TVSDK 3.11
+## iOS TVSDK 3.12
 
-Opgeloste oplossingen voor problemen van klanten waarbij `isFallbackOnInvalidCreativeEnabled` en de methode `customParams` ertoe leiden dat de toepassing vastloopt.
+Probleem verholpen waarbij de live stream na 15 minuten afspelen mislukt.
 
 Voor moeilijke situaties in de huidige versie zie [klantenkwesties die worden opgelost](#resolved-issues) en voor beperkingen zie [bekende kwesties en beperkingen](#known-issues-and-limitations) sectie.
 
 ### Nieuwe functies en oplossingen in de vorige versies {#whats-new-previous}
+
+**iOS TVSDK 3.11**
+
+Opgeloste oplossingen voor problemen van klanten waarbij `isFallbackOnInvalidCreativeEnabled` en de methode `customParams` ertoe leiden dat de toepassing vastloopt.
 
 **iOS TVSDK 3.10**
 
@@ -291,14 +298,17 @@ Comment Type: draft
  <p>TVSDK versions earlier than version 1.4.28 sometimes exhibit a long delay in the startup time when ad-enabled content is played on devices that are running on iOS 10. To resolve this issue, upgrade to version 1.4.28 or later. Version 1.4.28 was released on August 31, 2016, and iOS 10 was released on September 13, 2016.</p> 
 </note>
  -->
+**iOS TVSDK 3.12**
+
+* Live stream mislukt na 15 minuten afspelen bij gebruik van TVSDK voor iOS 3.10.
+
+### Opgeloste problemen in de vorige releases {#resolved-issues-previous}
 
 **iOS TVSDK 3.11**
 
 * (ZD#40998) - De toepassing `isFallbackOnInvalidCreativeEnabled` loopt vast.
 
 * (ZD#41289) - `NSInvalidArgumentException` wordt waargenomen bij de methode die tot het vastlopen van de toepassing `customParams` leidt.
-
-### Opgeloste problemen in de vorige releases {#resolved-issues-previous}
 
 **iOS TVSDK 3.10**
 
@@ -499,7 +509,7 @@ Verbeterde oplossing voor afgesloten uitgave #34385 in release 1.4.42. Toegevoeg
 
 Gebruik van creatieve ID en AdSystem in CRS- verzoek dat op de normalisatieregels van CRS wordt gebaseerd
 
-* (ZD #29176) - Crash on `PTAdPolicyDeligate``satAdBreakAsWatched:position`
+* (ZD #29176) - Crash on `PTAdPolicyDeligate` `satAdBreakAsWatched:position`
 
 Crash due to empty AdBreak wordt nu afgehandeld.
 
@@ -705,7 +715,7 @@ De crash die optrad als gevolg van een niet-toegewezen instantie van de mediaspe
 
 * (ZD #24575) - Crash in TVSDK op 32-bits apparaten wanneer enableDebugLog=true
 
-De kwestie in het logboekformaat dat de botsing op apparaten met 32 bits veroorzaakte wanneer het registreren wordt toegelaten is opgelost.
+De kwestie in het logboekformaat dat de botsing op apparaten met 32 bits veroorzaakte wanneer het registreren wordt toegelaten is bevestigd.
 
 **Versie 1.4.26** (1.4.26.702) voor iOS 6.0+
 
