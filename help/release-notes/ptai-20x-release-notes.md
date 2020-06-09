@@ -1,20 +1,40 @@
 ---
-title: Opmerkingen bij de release PTAI 20.5.1
-description: In de opmerkingen bij de release van PTAI 20.5.1 wordt beschreven wat nieuw of gewijzigd is, wat de opgeloste en bekende problemen zijn in de dynamische invoeging van Primetime in 2020.
+title: Opmerkingen bij de release PTAI 20.6.1
+description: In de opmerkingen bij de release van PTAI 20.6.1 wordt beschreven wat nieuw of gewijzigd is, wat de opgeloste en bekende problemen zijn in de dynamische invoeging van Primetime in 2020.
 translation-type: tm+mt
-source-git-commit: e5fb84a7199e16a5eb7b6fd61aa7a1e50bb05c73
+source-git-commit: fc09f185489ff7e3decb7c77b495825e4c9c7c09
 workflow-type: tm+mt
-source-wordcount: '546'
+source-wordcount: '671'
 ht-degree: 0%
 
 ---
 
 
-# Opmerkingen bij de release Primetime Dynamic AD 20.5.1
+# Opmerkingen bij de release Primetime Dynamic AD 20.6.1
 
-Opmerkingen bij de release Dynamische advertentie 20.5.1 beschrijven wat nieuw of gewijzigd is, problemen die zijn opgelost en bekende problemen in Dynamische advertentie invoegen in Primetime in 2020.
+Opmerkingen bij de release Dynamische advertentie 20.6.1 beschrijven wat nieuw of gewijzigd is, problemen die zijn opgelost en bekende problemen in Dynamische advertentie invoegen in Primetime in 2020.
 
-## Nieuwe functies in PTAI 20.5.1
+## Nieuw in PTAI 20.6.1
+
+**Wanneer:** Dinsdag 2 juni 2020, 03.00 - 05.00 uur Oosterse tijd
+
+**Nieuwe functies**
+
+Neem contact op met de Technische Ondersteuning van Adobe om de volgende nieuwe functies in te schakelen via de serverconfiguratie:
+
+* Manifest Manipulation: HLS-segment en bron-URL&#39;s kunnen nu worden getransformeerd tussen HTTP en HTTPS om de prestaties te verbeteren door TLS-handtekeningen op back-end verzoeken te verminderen. Het kan ook worden gebruikt om fragmenten van advertentie/inhoud te verenigen op dezelfde CDN&#39;s.
+
+* VOD in lange vorm: Verbeterde API&#39;s om sessies in leven te houden met VOD-middelen van lange formulieren.
+
+**Opgeloste problemen**
+
+* Probleem verholpen waarbij WebVTT-fragmenten altijd werden aangevraagd onder http-protocol, ongeacht het oorspronkelijke aangevraagde protocol.
+
+* Probleem verholpen waarbij EXT-X-DISCONTINUITY-tags van de bovenkant van de afspeellijst werden verwijderd bij het terugschakelen van advertenties naar inhoud. Neem contact op met de Technische Ondersteuning van Adobe om deze oplossing in te schakelen.
+
+## Wat veranderde in vorige versies
+
+### Versie 20.5.1
 
 **Wanneer:** Dinsdag 5 mei 2020, 04.00 - 05.00 uur Oosterse tijd
 
@@ -23,8 +43,6 @@ Opmerkingen bij de release Dynamische advertentie 20.5.1 beschrijven wat nieuw o
 * Bugfixes op het CRS-dashboard.
 
 * Onderhoudsupdates.
-
-## Wat veranderde in vorige versies
 
 ### Versie 20.3.4
 
