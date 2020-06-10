@@ -8,7 +8,10 @@ products: SG_PRIMETIME
 topic-tags: release-notes
 discoiquuid: 3a27379f-3cef-4ea3-bcae-21382dc1e9fd
 translation-type: tm+mt
-source-git-commit: fdb4e4eb741dd066017d96205cea8cbd15dcbc7b
+source-git-commit: 5dd5015c01565964b53ef82659308190ee350a89
+workflow-type: tm+mt
+source-wordcount: '5490'
+ht-degree: 0%
 
 ---
 
@@ -74,7 +77,7 @@ Deze release was gericht op het oplossen van problemen met klanten zoals vermeld
 
 **Android TVSDK 3.6**
 
-* **Verbeter uw apps voor de vereiste** 64-bits functionaliteit - De native bibliotheek `(libAVEAndroid.so)` wordt nu bijgewerkt en beschikbaar gesteld in twee versies. Bestaande native bibliotheeklocatie (32 bits) van armeabi is gewijzigd en een extra arm64-v8a (64 bits)-bibliotheek is geïntroduceerd in `/framework/Player to /framework/Player/armeabi``/framework/Player/arm64-v8a.`
+* **Verbeter uw apps voor de vereiste** 64-bits functionaliteit - De native bibliotheek `(libAVEAndroid.so)` wordt nu bijgewerkt en beschikbaar gesteld in twee versies. Bestaande native bibliotheeklocatie (32 bits) van armeabi is gewijzigd en een extra arm64-v8a (64 bits)-bibliotheek is geïntroduceerd in `/framework/Player to /framework/Player/armeabi` `/framework/Player/arm64-v8a.`
 
 **Versie 3.5**
 
@@ -287,7 +290,7 @@ Wanneer TVSDK een verbinding opent, vraagt het de server om een *levend* verbind
 * **Workflowondersteuning**
 
    * **Integratie van directe facturering -** hiermee worden gegevens over facturering naar de achtergrond van Adobe Analytics verzonden, die door Adobe Primetime is gecertificeerd voor streams die door de klant worden gebruikt.
-   TVSDK verzamelt automatisch metriek, met inachtneming van het klantenverkoopcontract om periodieke gebruiksrapporten te produceren die voor factureringsdoeleinden worden vereist. Bij elke streamstartgebeurtenis gebruikt TVSDK de API voor het invoegen van Adobe Analytics-gegevens om factuurmetriek, zoals het inhoudstype, en voor het invoegen ingeschakelde markeringen en (op basis van de duur van de factureerbare stream) drm-markeringen naar de Primetime-rapportsuite van Adobe Analytics te verzenden. Dit heeft geen invloed op of wordt niet opgenomen in de eigen Adobe Analytics-rapportreeksen of serveraanroepen van de klant. Op verzoek wordt dit gebruiksrapport voor facturering periodiek naar klanten verzonden. Dit is de eerste fase van de factureringsfunctie die alleen gebruiksfacturering ondersteunt. Het kan worden gevormd gebaseerd op het verkoopcontract gebruikend APIs die in de documentatie worden beschreven. Deze functie is standaard ingeschakeld. Raadpleeg het voorbeeld voor de referentiespeler als u deze functie wilt uitschakelen.
+   TVSDK verzamelt automatisch meetgegevens, met inachtneming van het verkoopcontract van de klant, om periodieke gebruiksrapporten te genereren die voor factureringsdoeleinden worden vereist. Bij elke streamstartgebeurtenis gebruikt TVSDK de API voor het invoegen van Adobe Analytics-gegevens om factuurmetriek, zoals het inhoudstype, en voor het invoegen ingeschakelde markeringen en (op basis van de duur van de factureerbare stream) drm-markeringen naar de Primetime-rapportsuite van Adobe Analytics te verzenden. Dit heeft geen invloed op of wordt niet opgenomen in de eigen Adobe Analytics-rapportreeksen of serveraanroepen van de klant. Op verzoek wordt dit gebruiksrapport voor facturering periodiek naar klanten verzonden. Dit is de eerste fase van de factureringsfunctie die alleen gebruiksfacturering ondersteunt. Het kan worden gevormd gebaseerd op het verkoopcontract gebruikend APIs die in de documentatie worden beschreven. Deze functie is standaard ingeschakeld. Raadpleeg het voorbeeld voor de referentiespeler als u deze functie wilt uitschakelen.
 
    * **Verbeterde failover-ondersteuning -** Aanvullende strategieën die zijn geïmplementeerd om het afspelen zonder onderbreking voort te zetten, ondanks fouten van hostservers, afspeelbestanden en segmenten.
 
@@ -334,7 +337,8 @@ In de onderstaande tabel met functies geeft een &#39;Y&#39; aan dat de functie w
 | Algemeen afspelen (Afspelen, Pauzeren, Zoeken) | VOD + Live | Y |
 | FER - Algemeen afspelen (afspelen, pauzeren, zoeken) | FER VOD | Y |
 | Zoeken wanneer een advertentie wordt afgespeeld | VOD + Live | Niet ondersteund |
-| AC3 | VOD + Live | Niet ondersteund |
+| HEVC Playback | VOD + Live | alleen fMP4-container |
+| AC3 en EAC3 | VOD + Live | Niet ondersteund |
 | MP3 | VOD | Niet ondersteund |
 | MP4-inhoud afspelen | VOD | Y |
 | Adaptive Bit Rate Switching Logic | VOD + Live | Y |
@@ -354,7 +358,6 @@ In de onderstaande tabel met functies geeft een &#39;Y&#39; aan dat de functie w
 | Te laat inbinden van audio | VOD + Live | Y |
 | 302 Omleiding | VOD + Live | Y |
 | Afspelen met verschuiving | VOD + Live | Y |
-| Alleen audio afspelen | VOD + Live | Y |
 | Steen afspelen | VOD + Live | Y |
 | Langzame beweging in Steen afspelen | VOD + Live | Niet ondersteund |
 | Vloeiend afspelen van steen (met ABR) | VOD + Live | Y |
@@ -384,19 +387,43 @@ In de onderstaande tabel met functies geeft een &#39;Y&#39; aan dat de functie w
 | Lazy en oplossen | VOD | Y |
 | Ondersteuning voor discontinue markeertekens - SSAI | VOD + Live | Y |
 | Extra&#39;s, banneradvertenties en aanklikbare advertenties | VOD + Live | Y |
+| 302 Draairichting | VOD + Live | Y |
+
+| Functie | Inhoudstype | HLS |
+|---|---|---|
+| Algemeen afspelen, advertenties ingeschakeld | VOD + Live | Y |
+| FER-inhoud met ingeschakelde advertenties | VOD | Y |
+| Standaardgedrag advertentie | VOD + Live | Y |
+| VAST 2,0/3,0 | VOD + Live | Y |
+| VMAP 1.0 | VOD + Live | Y |
+| MP4-advertenties | VOD + Live | Y (van CRS) |
+| Steen afspelen met advertenties ingeschakeld | VOD + Live | Y |
+| Alleen advertentie | VOD | Y |
+| Doelparameters | VOD + Live | Y |
+| Aangepaste parameters | VOD + Live | Y |
+| Aangepast gedrag voor advertentie | VOD + Live | Y |
+| Aangepaste advertentietags | Live | Y |
+| Aangepaste AD-oplossingen | VOD + Live | Y |
+| Aangepaste en resolver van vrijloopwiel | VOD | Y |
+| C3 | VOD + Live | Niet ondersteund |
+| Lazy en oplossen | VOD | Y |
+| Ondersteuning voor discontinue markeertekens - SSAI | VOD + Live | Y |
+| Extra&#39;s, banneradvertenties en aanklikbare advertenties | VOD + Live | Y |
 | VPAID 2.0 | VOD + Live | Y (JS) |
 | Vroege advertentie afsluiten | Live | Y |
 | Op regels gebaseerde Creative Prioritization | VOD + Live | Y |
 | CRS-regels | VOD + Live | Y |
 | JSON Ad Resolver | VOD + Live | Niet ondersteund |
 | Moatintegratie | VOD + Live | Y |
+| Gedeeltelijke invoeging van advertentie-einde | Live | Y |
 
 | Functie | Inhoudstype | HLS |
 |---|---|---|
 | AES-codering | VOD + Live | Y |
 | Voorbeeld AES-codering | VOD + Live | Y |
 | Vertogende stromen | VOD + Live | Y |
-| DRM | VOD + Live | Alleen Primetime DRM (in de toekomst: Widevine) |
+| Widevine DRM | VOD + Live | alleen fMP4-container |
+| Primetime DRM | VOD + Live | Y |
 | Extern afspelen (RBOP) | VOD + Live | Alleen Primetime DRM |
 | Licentie roteren | VOD + Live | Alleen Primetime DRM |
 | Toetsrotatie | VOD + Live | Alleen Primetime DRM |
