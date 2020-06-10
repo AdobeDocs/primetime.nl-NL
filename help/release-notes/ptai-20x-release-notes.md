@@ -2,9 +2,9 @@
 title: Opmerkingen bij de release PTAI 20.6.1
 description: In de opmerkingen bij de release van PTAI 20.6.1 wordt beschreven wat nieuw of gewijzigd is, wat de opgeloste en bekende problemen zijn in de dynamische invoeging van Primetime in 2020.
 translation-type: tm+mt
-source-git-commit: fc09f185489ff7e3decb7c77b495825e4c9c7c09
+source-git-commit: 5dd5015c01565964b53ef82659308190ee350a89
 workflow-type: tm+mt
-source-wordcount: '671'
+source-wordcount: '666'
 ht-degree: 0%
 
 ---
@@ -31,8 +31,6 @@ Neem contact op met de Technische Ondersteuning van Adobe om de volgende nieuwe 
 * Probleem verholpen waarbij WebVTT-fragmenten altijd werden aangevraagd onder http-protocol, ongeacht het oorspronkelijke aangevraagde protocol.
 
 * Probleem verholpen waarbij EXT-X-DISCONTINUITY-tags van de bovenkant van de afspeellijst werden verwijderd bij het terugschakelen van advertenties naar inhoud. Neem contact op met de Technische Ondersteuning van Adobe om deze oplossing in te schakelen.
-
-## Wat veranderde in vorige versies
 
 ### Versie 20.5.1
 
