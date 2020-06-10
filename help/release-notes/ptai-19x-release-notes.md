@@ -2,7 +2,10 @@
 title: Opmerkingen bij de release PTAI 19.11.1
 description: In de opmerkingen bij de release PTAI 19.11.1 wordt beschreven wat nieuw of gewijzigd is, wat de opgeloste en bekende problemen zijn in Primetime Dynamic Ad Insertion in 2019.
 translation-type: tm+mt
-source-git-commit: ededb36a0b460fff4644a3716b36971ff9454c37
+source-git-commit: 0a58cce0d80ade581e32b5dd9376d336e02fac8b
+workflow-type: tm+mt
+source-wordcount: '1968'
+ht-degree: 0%
 
 ---
 
@@ -48,6 +51,7 @@ Oplossing voor een bug waarbij Chromecast-spelers het afspelen onverwachts beëi
 **Wanneer:** Woensdag 21 augustus 2019 2:00 tot 3:00 uur Oosterse tijd
 
 * SSAI-dashboard: Sessiestatsectie. U kunt de sessiegebeurtenissen exporteren via de optie CSV downloaden.
+
 * Onderhoudsupdates
 
 ### Versie 19.8.1
@@ -123,7 +127,7 @@ Oplossing voor een bug waarbij Chromecast-spelers het afspelen onverwachts beëi
    * Overige uitkeringen: De de baanverwerkingstijden van CRS en uploadsnelheden aan klanten&#39; CDN-oorsprong worden verbeterd
 * SSAI: URL&#39;s voor ClickThrough en ClickTracking voor videoadvertenties zijn toegevoegd aan de secundaire JSON v2-indeling.
    * Een nieuwe JSON-array-eigenschap, &#39;videoClicks&#39;, volgt de eigenschap &#39;trackingURLs&#39;
-   * De namen van de waarde &quot;event&quot; zijn &quot;clickThrough&quot; en &quot;clickTracking&quot; en hebben geen begintijdwaarde
+   * De namen van de waarde &quot;event&quot; zijn &quot;clickThrough&quot; en &quot;clickTracking&quot; en hebben geen begintijd
 * SSAI: Voor CRS-middelen, toegevoegde functionaliteit om de vervaldatum van het opzoekverslag van een CRS-middel met 30 dagen uit te breiden wanneer het wordt opgenomen
    * Vorig gedrag: Opzoekrecords voor CRS-middelen worden in elke pod in het geheugen opgeslagen. Opzoekrecords voor CRS-middelen worden 30 dagen na het toevoegen aan het geheugen automatisch verwijderd. Als u de opzoekrecord van een creatief CRS-element wilt herhalen in een pod nadat deze uit het geheugen is verwijderd, moet u driemaal op dat creatieve element in die pod terugkeren
    * Nieuw gedrag: Wanneer een pod toegang krijgt tot een opzoekrecord met CRS-middelen om het CRS-element in te voegen, wordt de vervaldatum van de opzoekrecord van het CRS-element in die pod met 30 dagen verlengd. Als gevolg hiervan worden vaak gebruikte CRS-elementen pas 30 dagen nadat deze voor het laatst zijn gebruikt uit de geheugencache van een pod verwijderd
