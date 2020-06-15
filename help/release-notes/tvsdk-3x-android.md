@@ -1,24 +1,24 @@
 ---
-title: Opmerkingen bij de release TVSDK 3.11 voor Android
-seo-title: Opmerkingen bij de release TVSDK 3.11 voor Android
-description: De opmerkingen bij de release TVSDK 3.11 voor Android beschrijven wat nieuw of gewijzigd is, de opgeloste en bekende problemen en de apparaatproblemen in TVSDK Android 3.11
-seo-description: De opmerkingen bij de release TVSDK 3.11 voor Android beschrijven wat nieuw of gewijzigd is, de opgeloste en bekende problemen en de apparaatproblemen in TVSDK Android 3.11
+title: Opmerkingen bij de release TVSDK 3.12 voor Android
+seo-title: Opmerkingen bij de release TVSDK 3.12 voor Android
+description: De opmerkingen bij de release TVSDK 3.12 voor Android beschrijven wat nieuw of gewijzigd is, de opgeloste en bekende problemen en de apparaatproblemen in TVSDK Android 3.12
+seo-description: De opmerkingen bij de release TVSDK 3.12 voor Android beschrijven wat nieuw of gewijzigd is, de opgeloste en bekende problemen en de apparaatproblemen in TVSDK Android 3.12
 uuid: 685d46f5-5a02-4741-af5c-91e91babd6f7
 products: SG_PRIMETIME
 topic-tags: release-notes
 discoiquuid: 3a27379f-3cef-4ea3-bcae-21382dc1e9fd
 translation-type: tm+mt
-source-git-commit: 5dd5015c01565964b53ef82659308190ee350a89
+source-git-commit: d1881d1fe97d416ee0f69f62828aef46c5ad21bb
 workflow-type: tm+mt
-source-wordcount: '5490'
+source-wordcount: '5415'
 ht-degree: 0%
 
 ---
 
 
-# Opmerkingen bij de release TVSDK 3.11 voor Android {#tvsdk-for-android-release-notes}
+# Opmerkingen bij de release TVSDK 3.12 voor Android {#tvsdk-for-android-release-notes}
 
-In de Release-notities van TVSDK 3.11 voor Android wordt beschreven wat nieuw of gewijzigd is, welke problemen zijn opgelost en welke problemen bekend zijn en wat de apparaatproblemen zijn in TVSDK Android 3.11.
+In de Release-notities van TVSDK 3.12 voor Android wordt beschreven wat nieuw of gewijzigd is, welke problemen zijn opgelost en welke problemen bekend zijn en wat de apparaatproblemen zijn in TVSDK Android 3.12.
 
 De Android-referentiespeler wordt geleverd bij Android TVSDK in de map samples/directory van uw distributie. In het bijbehorende bestand README.md wordt uitgelegd hoe u de referentiespeler kunt maken.
 
@@ -36,26 +36,31 @@ TVSDK voor Android biedt veel prestatieverbeteringen ten opzichte van eerdere ve
 
 De uitgebreide reeks functies die wordt ondersteund en niet wordt ondersteund, wordt weergegeven in de sectie Matrix [met](#feature-matrix) functies van de opmerkingen bij de release.
 
-## Android TVSDK 3.11
+## Android TVSDK 3.12
 
-**Ophalen van vak voor beveiligingssysteemspecifieke koptekst (PSSH) is toegestaan**
+De gradle-versie van de toepassing Primetime-verwijzing wordt nu bijgewerkt naar versie 5.6.4.
 
-TVSDK staat nu het halen van het Systeem-Specifieke Kopdoos van de Bescherming toe verbonden aan huidige geladen Middel van Media. Nieuwe API `getPSSH()` is toegevoegd aan `com.adobe.mediacore.drm.DRMManager`.
-Zie [Widevine DRM](../programming/tvsdk-3x-android-prog/android-3x-content-security/android-3x-drm-widevine.md)voor meer informatie.
+Als u een referentietoepassing wilt instellen en uitvoeren met Android Studio, volgt u de instructies uit het Lees mij-bestand dat beschikbaar is met TVSDK ZIP op `TVSDK_Android_x.x.x.x/samples/PrimetimeReference/src/README.md`.
 
 De belangrijkste problemen die in de huidige release zijn opgelost, worden vermeld in de sectie [Opgeloste problemen](#resolved-issues) .
 
 ### Nieuwe en verbeterde functies in de vorige versies
 
+**Android TVSDK 3.11**
+
+* **De doos die van de Kopbal van het Systeem van de bescherming (PSSH) wordt toegelaten** - TVSDK staat het halen van de Kop van het Systeem Specifieke van de Veiligheid verbonden aan huidige geladen Middel van Media toe. Nieuwe API `getPSSH()` toegevoegd aan `com.adobe.mediacore.drm.DRMManager`.
+
+Zie [Widevine DRM](../programming/tvsdk-3x-android-prog/android-3x-content-security/android-3x-drm-widevine.md)voor meer informatie.
+
 **Android TVSDK 3.10**
 
-Deze release was gericht op het oplossen van problemen met klanten zoals vermeld in de [sectie Opgeloste problemen](#resolved-issues) .
+De release was gericht op het verhelpen van de belangrijkste problemen van klanten, zoals vermeld in de [sectie Opgeloste problemen](#resolved-issues) .
 
 **Android TVSDK 3.9**
 
-* **Beveiligde levering via HTTPS** - Android TVSDK 3.9 introduceert de veilige leveringsmogelijkheden via HTTPS om inhoud veilig te leveren met ongeëvenaarde schaal en prestaties.
+* **Beveiligde levering via HTTPS** - Android TVSDK 3.9 introduceerde de veilige leveringsmogelijkheden via HTTPS om inhoud veilig te leveren met ongeëvenaarde schaal en prestaties.
 
-   Om veilige levering via HTTPS mogelijk te maken, wordt nieuwe API in de `NetworkConfiguration` klasse geïntroduceerd.
+   Nieuwe API die in de `NetworkConfiguration` klasse is geïntroduceerd om veilige levering via HTTPS mogelijk te maken.
 
    `public void setForceHTTPS (boolean value)`
 
@@ -65,7 +70,7 @@ Deze release was gericht op het oplossen van problemen met klanten zoals vermeld
 
 * **Ondersteuning voor pre-rol met gedeeltelijke ad-break-functie** - Dankzij deze verbetering biedt TVSDK 3.8 ondersteuning voor pre-roll-advertenties met PABI (Partial Ad-Break feature).
 
-   De pre-roll advertentie, indien beschikbaar, wordt gespeeld, en dan speelt de inhoud van het levende punt geëmuleerd de ervaring van levende televisie.
+De pre-roll advertentie, indien beschikbaar, wordt gespeeld, en dan speelt de inhoud van het levende punt geëmuleerd de ervaring van levende televisie.
 
 **Android TVSDK 3.7**
 
@@ -82,6 +87,7 @@ Deze release was gericht op het oplossen van problemen met klanten zoals vermeld
 **Versie 3.5**
 
 * **Even in tijd en resolutie** - TVSDK 3.5 verwijdert de ondersteuning van de afgespeelde advertenties uit de tijdlijn.
+
 * **Ondersteuning ingeschakeld voor offline afspelen** - Met offline afspelen kunnen gebruikers nu video-inhoud downloaden naar hun apparaten en deze bekijken wanneer ze geen verbinding hebben. Raadpleeg &quot;[Offline afspelen met Android](https://helpx.adobe.com/content/dam/help/en/primetime/programming-guides/psdk_android_3.5.pdf)&quot; voor meer informatie.
 
 **Versie 3.4**
@@ -289,8 +295,8 @@ Wanneer TVSDK een verbinding opent, vraagt het de server om een *levend* verbind
 
 * **Workflowondersteuning**
 
-   * **Integratie van directe facturering -** hiermee worden gegevens over facturering naar de achtergrond van Adobe Analytics verzonden, die door Adobe Primetime is gecertificeerd voor streams die door de klant worden gebruikt.
-   TVSDK verzamelt automatisch meetgegevens, met inachtneming van het verkoopcontract van de klant, om periodieke gebruiksrapporten te genereren die voor factureringsdoeleinden worden vereist. Bij elke streamstartgebeurtenis gebruikt TVSDK de API voor het invoegen van Adobe Analytics-gegevens om factuurmetriek, zoals het inhoudstype, en voor het invoegen ingeschakelde markeringen en (op basis van de duur van de factureerbare stream) drm-markeringen naar de Primetime-rapportsuite van Adobe Analytics te verzenden. Dit heeft geen invloed op of wordt niet opgenomen in de eigen Adobe Analytics-rapportreeksen of serveraanroepen van de klant. Op verzoek wordt dit gebruiksrapport voor facturering periodiek naar klanten verzonden. Dit is de eerste fase van de factureringsfunctie die alleen gebruiksfacturering ondersteunt. Het kan worden gevormd gebaseerd op het verkoopcontract gebruikend APIs die in de documentatie worden beschreven. Deze functie is standaard ingeschakeld. Raadpleeg het voorbeeld voor de referentiespeler als u deze functie wilt uitschakelen.
+   * **Integratie van directe facturering -** Hiermee worden factureringsgegevens naar de Adobe Analytics-backend verzonden, die door Adobe Primetime is gecertificeerd voor streams die door de klant worden gebruikt.
+   TVSDK verzamelt automatisch metriek, met inachtneming van het klantenverkoopcontract om periodieke gebruiksrapporten te produceren die voor factureringsdoeleinden worden vereist. Bij elke streamstartgebeurtenis gebruikt TVSDK de API voor het invoegen van gegevens in Adobe Analytics om factuurmetriek, zoals inhoudssoort, voor het invoegen ingeschakelde vlaggen en voor het drm ingeschakelde vlaggen (gebaseerd op de duur van de factureerbare stream) naar de Primetime-rapportsuite van Adobe Analytics te verzenden. Dit heeft geen invloed op of wordt niet opgenomen in de eigen Adobe Analytics-rapportreeksen of serveraanroepen van de klant. Op verzoek wordt dit gebruiksrapport voor facturering periodiek naar klanten verzonden. Dit is de eerste fase van de factureringsfunctie die alleen gebruiksfacturering ondersteunt. Het kan worden gevormd gebaseerd op het verkoopcontract gebruikend APIs die in de documentatie worden beschreven. Deze functie is standaard ingeschakeld. Raadpleeg het voorbeeld voor de referentiespeler als u deze functie wilt uitschakelen.
 
    * **Verbeterde failover-ondersteuning -** Aanvullende strategieën die zijn geïmplementeerd om het afspelen zonder onderbreking voort te zetten, ondanks fouten van hostservers, afspeelbestanden en segmenten.
 
@@ -301,9 +307,9 @@ Wanneer TVSDK een verbinding opent, vraagt het de server om een *levend* verbind
 
    * **Companion banners -** Companion banners worden naast een lineaire advertentie weergegeven en worden vaak ook na afloop van de advertentie weergegeven in de weergave. Deze banners kunnen van het type html (een HTML-fragment) of iframe (een URL naar een iframe-pagina) zijn.
 
-* **Analyse**
+* **Analytics**
 
-   * **VHL 2.0 -** Dit is de nieuwste geoptimaliseerde VHL-integratie (Video Heartbeats Library) voor automatische verzameling van gebruiksgegevens voor Adobe Analytics. De complexiteit van de API&#39;s is verminderd om de implementatie te vereenvoudigen. Download de VHL-bibliotheek [v2.0.0 voor Android](https://github.com/Adobe-Marketing-Cloud/video-heartbeat-v2/releases) en extraheer het JAR-bestand in de map libs.
+   * **VHL 2.0 -** Dit is de meest recente geoptimaliseerde VHL-integratie (Video Heartbeats Library) voor automatische verzameling van gebruiksgegevens voor Adobe Analytics. De complexiteit van de API&#39;s is verminderd om de implementatie te vereenvoudigen. Download de VHL-bibliotheek [v2.0.0 voor Android](https://github.com/Adobe-Marketing-Cloud/video-heartbeat-v2/releases) en extraheer het JAR-bestand in de map libs.
 
 * **SizeAvailableEventListener**
 
@@ -387,28 +393,6 @@ In de onderstaande tabel met functies geeft een &#39;Y&#39; aan dat de functie w
 | Lazy en oplossen | VOD | Y |
 | Ondersteuning voor discontinue markeertekens - SSAI | VOD + Live | Y |
 | Extra&#39;s, banneradvertenties en aanklikbare advertenties | VOD + Live | Y |
-| 302 Draairichting | VOD + Live | Y |
-
-| Functie | Inhoudstype | HLS |
-|---|---|---|
-| Algemeen afspelen, advertenties ingeschakeld | VOD + Live | Y |
-| FER-inhoud met ingeschakelde advertenties | VOD | Y |
-| Standaardgedrag advertentie | VOD + Live | Y |
-| VAST 2,0/3,0 | VOD + Live | Y |
-| VMAP 1.0 | VOD + Live | Y |
-| MP4-advertenties | VOD + Live | Y (van CRS) |
-| Steen afspelen met advertenties ingeschakeld | VOD + Live | Y |
-| Alleen advertentie | VOD | Y |
-| Doelparameters | VOD + Live | Y |
-| Aangepaste parameters | VOD + Live | Y |
-| Aangepast gedrag voor advertentie | VOD + Live | Y |
-| Aangepaste advertentietags | Live | Y |
-| Aangepaste AD-oplossingen | VOD + Live | Y |
-| Aangepaste en resolver van vrijloopwiel | VOD | Y |
-| C3 | VOD + Live | Niet ondersteund |
-| Lazy en oplossen | VOD | Y |
-| Ondersteuning voor discontinue markeertekens - SSAI | VOD + Live | Y |
-| Extra&#39;s, banneradvertenties en aanklikbare advertenties | VOD + Live | Y |
 | VPAID 2.0 | VOD + Live | Y (JS) |
 | Vroege advertentie afsluiten | Live | Y |
 | Op regels gebaseerde Creative Prioritization | VOD + Live | Y |
@@ -437,13 +421,17 @@ In de onderstaande tabel met functies geeft een &#39;Y&#39; aan dat de functie w
 
 Wanneer de resolutie aan een gemelde kwestie wordt geassocieerd, wordt een verwijzing van Zendesk getoond, bijvoorbeeld ZD#xxxxx.
 
-**Android TVSDK 3.11**
+**Android TVSDK 3.12**
 
-Deze sectie bevat een overzicht van het probleem dat is opgelost in TVSDK 3.11 Android-release.
+In deze sectie wordt een overzicht gegeven van het probleem dat is opgelost in TVSDK 3.12 Android-release.
 
-* ZD#41252 - Koreaanse tekens in WebVTT afgebroken na Android 7.1.
+* ZD#40584 - De Primetime-referentie-app is niet gebaseerd op de meest recente grijze versie.
 
 ### Opgeloste problemen in de vorige releases
+
+**Android TVSDK 3.11**
+
+* ZD#41252 - Koreaanse tekens in WebVTT afgebroken na Android 7.1.
 
 **Android TVSDK 3.10**
 
@@ -515,7 +503,7 @@ Deze sectie bevat een overzicht van het probleem dat is opgelost in TVSDK 3.11 A
 
 * ZD #34992 - Taal is leeg in Closed Caption.
 
-   * Probleem verholpen waarbij TVSDK #EXT-X-MEDIA:TYPE=CLOSED-CAPTIONS niet parseerde vanuit hoofdmanifest voor het ophalen van de details van de bijschrifttrack.
+   * Probleem verholpen waarbij TVSDK #EXT-X-MEDIA:TYPE=CLOSED-CAPTIONS niet parseerde vanuit hoofdmanifest voor het ophalen van de gegevens van het bijschriftvak.
 
 * ZD #35078 - Android P-validatie.
 
