@@ -4,7 +4,7 @@ product: adobe primetime
 audience: end-user
 user-guide-title: Opmerkingen bij de release Primetime
 translation-type: tm+mt
-source-git-commit: 73c69ac4747db60cd17a1b385ab519f15b9003ac
+source-git-commit: 106a523b0df22157c2ddc9246e959389869fbba5
 workflow-type: tm+mt
 source-wordcount: '101'
 ht-degree: 0%
@@ -22,7 +22,7 @@ ht-degree: 0%
    + [Opmerkingen bij de release TVSDK 3.12 voor iOS](tvsdk-3x-ios.md)
    + [Opmerkingen bij de release TVSDK 1.4 voor iOS](tvsdk-1-4-ios.md)
 + TVSDK voor Android {#tvsdk-android}
-   + [Opmerkingen bij de release TVSDK 3.11 voor Android](tvsdk-3x-android.md)
+   + [Opmerkingen bij de release TVSDK 3.12 voor Android](tvsdk-3x-android.md)
    + [Opmerkingen bij de release TVSDK 2.7 voor Android](tvsdk-27-android.md)
    + [Opmerkingen bij de release TVSDK 2.4.1 voor Android](tvsdk-24-android.md)
    + [Opmerkingen bij de release TVSDK 1.4 voor Android](tvsdk-1-4-android.md)
