@@ -9,7 +9,10 @@ products: SG_PRIMETIME
 topic-tags: release-notes
 discoiquuid: f1ebc1a8-185a-493a-9c00-a6102dffb128
 translation-type: tm+mt
-source-git-commit: ed910a60440ae7c0d19d9be56c80c8bdbc62bcf1
+source-git-commit: 9c6a6f0b5ecff78796e37daf9d7bdb9fa686ee0c
+workflow-type: tm+mt
+source-wordcount: '7913'
+ht-degree: 0%
 
 ---
 
@@ -89,7 +92,7 @@ Opgeloste problemen voor inhoud overslaan op Android.
 
 * **Netwerk en informatie**
 
-   TVSDK API&#39;s bieden nu aanvullende informatie over VAST-reacties van derden. ID van de hulp, het Systeem van de Advertentie en de Uitbreidingen van VAST worden verstrekt in de klasse NetworkAdInfo die door het networkAdInfo bezit op een Middel van de Advertentie toegankelijk is. Deze informatie kan worden gebruikt voor integratie met andere analyseplatforms voor advertentie, zoals **Moat Analytics**.
+   TVSDK API&#39;s bieden nu aanvullende informatie over VAST-reacties van derden. ID van de hulp, het Systeem van de Advertentie en de Uitbreidingen van VAST worden verstrekt in de klasse NetworkAdInfo die door het networkAdInfo bezit op een Middel van de Advertentie toegankelijk is. Deze informatie kan worden gebruikt voor integratie met andere Analytics-advertentieplatforms, zoals **Moat Analytics**.
 
 **Versie 1.4.31**
 
@@ -125,7 +128,7 @@ Zie [Extra fallback voor VAST- en VMAP-advertenties](../programming/tvsdk-3x-and
 
 * **Video Heartbeats Library (VHL)-update naar versie 1.4.0.1**
 
-   * De mogelijkheid om verschillende analytische gebruiksscenario&#39;s, van andere SDK&#39;s of spelers, te bundelen met de Adobe Analytics Video Essentials.
+   * De mogelijkheid om verschillende analysemogelijkheden te bundelen, van andere SDK&#39;s of spelers, met de Adobe Analytics Video Essentials.
    * Het bijhouden van advertenties is geoptimaliseerd door de methoden trackAdBreakStart en trackAdBreakComplete te verwijderen. Het ad-einde wordt afgeleid van de methodeaanroepen trackAdStart en trackAdComplete.
    * De eigenschap playhead is niet meer nodig bij het bijhouden van advertenties.
 
@@ -248,7 +251,7 @@ TVSDK 1.4.43 is gecertificeerd met Android-apparaten met Android 6.0.1/ 7.0 en 8
 
 * Zendesk #33068 - Amazon lip sync issue on new device. Het synchronisatieprobleem met de app is opgelost in deze releases.
 * Zendesk #32215 - Android TVSDK 1.4.38 Beveiligingsproblemen `[Hotlist]`. Bijgewerkt naar de nieuwste OpenSSL-1.1.0 en curl-7.5.1.
-* Zendesk #32920 - wit leeg scherm in een advertentie-einde en geen voltooide advertentie-einde. Probleem verholpen waarbij een VPAID-container een blokkeringsstatus kon krijgen en een probleem behandelde waarbij VPAID-advertenties van Facebook vaak meerdere CDATA-blokken in één \&amp;amp retourneren;lt;AdParameters\&amp;gt; VAST-knooppunt.
+* Zendesk #32920 - Leeg scherm binnen een Ad-einde en geen Ad-break-voltooiing. Probleem verholpen waarbij een VPAID-container een blokkeringsstatus kon krijgen en een probleem behandelde waarbij VPAID-advertenties van Facebook vaak meerdere CDATA-blokken in één \&amp;amp retourneren;lt;AdParameters\&amp;gt; VAST-knooppunt.
 
 **Versie 1.4.39 (1744)**
 
@@ -313,7 +316,7 @@ De code is bijgewerkt om het `cdn.auditude.com` advertentieverzoek om GET in pla
    * Probleem verholpen door de afhandeling van de AV-decoderthreads te verbeteren. Wanneer de invoer- of uitvoerframewachtrijen worden gewijzigd, wordt met name de decoderingsverbinding uitgevoerd die specifiek is voor het inhoudstype van het frame.
 
 * Zendesk #26551 - De CRS-fouten verhelpen
-   * Wanneer het verzoek HEAD (http head) is, hoeven we de inhoud niet te lezen omdat deze leeg is. Hoewel het prima is om het te lezen, loopt de oude Android (4.0.x) vast terwijl we read() aanroepen en de nieuwere Android geeft de juiste waarde (-1) terug wanneer we read() aanroepen. Op basis hiervan is de code gewijzigd en is de inhoud voor &quot;head&quot; niet gelezen
+   * Wanneer het verzoek HEAD (http head) is, hoeven we de inhoud niet te lezen omdat deze leeg is. Hoewel het ok is om te proberen het te lezen, loopt oude Android (4.0.x) vast terwijl we read() aanroepen en de nieuwere Android retourneert de juiste waarde (-1) wanneer we read() aanroepen. Op basis hiervan is de code gewijzigd en is de inhoud voor &quot;head&quot; niet gelezen
 
 * Uitzondering voor Null-aanwijzer in Zendesk #26696 bij toegang tot TrickPlayManager
    * Probleem verholpen door te controleren of het TrickPlayManager-object niet null is voordat het wordt gebruikt.
@@ -328,7 +331,7 @@ De code is bijgewerkt om het `cdn.auditude.com` advertentieverzoek om GET in pla
 
 * Zendesk #21200 - Player herstelt zich niet van de stilstaande toestand wanneer de toepassing op de achtergrond werd uitgevoerd. Wanneer de speler werd onderbroken nadat de streamschakelaar was gesignaleerd, kan de speler met de resolutie de streamschakelaar uitvoeren wanneer de speler wordt teruggezet vanaf de status &#39;suspend&#39; in plaats van de vorige positie te herstellen.
 
-* Zendesk #23412 - Speler zit vast met een zwarte doos als u door om het even welke Advertenties binnen de laatste 3s van het advertentierak klikt. Dit probleem is de zelfde kwestie zoals Zendesk #21200.
+* Zendesk #23412 - Speler zit vast met een zwarte doos als u door om het even welke Advertenties binnen de laatste 3s van de advertentierak klikt. Dit probleem is de zelfde kwestie zoals Zendesk #21200.
 
 * Zendesk #23616 - Overgeslagen ad break zoekt te ver in de toekomst. Afhankelijk van het invoegtype (invoegen/vervangen) bepaalt TVSDK of de ad-duur wordt gebruikt in de berekening om het eindpunt van de advertentie te bepalen.
 
@@ -336,7 +339,7 @@ De code is bijgewerkt om het `cdn.auditude.com` advertentieverzoek om GET in pla
 
 * Zendesk #25067 - Crash in VideoEngineTimelineDit gebeurt omdat de objecten niet correct zijn schoongemaakt en gebeurtenissen werden aangeroepen nadat de objecten waren vernietigd. Het probleem is opgelost door controles toe te voegen om null-uitzonderingen te voorkomen.
 
-* Zendesk #25352 - Stel aangepaste HTTP-header in. Dit probleem is opgelost door een nieuwe aangepaste header toe te voegen aan de whitelist op TVSDK.
+* Zendesk #25352 - Vastgestelde de kopbal van douaneDeze kwestie werd opgelost door een nieuwe douanekopbal aan toe te voegen sta lijst op TVSDK toe.
 
 * Zendesk #25617 - de Levende rollover van stroom PTS die spelerdiscontinuïteit en geheugencrash veroorzaakte. Dit probleem is opgelost door een PTS rollover-verwerking toe te voegen in FragmentedHTTPStreamer wanneer een rollover plaatsvindt in het midden van een segment.
 
@@ -561,7 +564,7 @@ Een beperking voor het uitschakelen van creatief opnieuw verpakken op fallback-a
 
 **Versie 1.4.12 (1388)**
 
-* Zendesk #2751 - CSAI en CRS| Verbeteren: Dynamische elementen in bepaalde URL&#39;s van mediabestanden verwerken.
+* Zendesk #2751 - CSAI en CRS | Verbeteren: Dynamische elementen in bepaalde URL&#39;s van mediabestanden verwerken.
 Bijgewerkte Creative Repackaging Service voor het correct verwerken van advertenties met dynamische creatieve URL&#39;s.
 
 * Zendesk #3965 - Het schakelen terug naar normaal playback van trickplay resulteert in een sprong voorwaarts alvorens met playback te beginnen.
@@ -585,9 +588,9 @@ Instant On is bijgewerkt om een startpunt van niet nul toe te staan.
 
 **Versie 1.4.11 (1363)**
 
-* Zendesk #2076 - Frequent schokkerige weergave bij het afspelen van video op Motorola Xoom met Android 4.0.3Toegevoegde apparaten aan whitelist om te voorkomen dat ze proberen inhoud met een hoog profiel af te spelen.
+* Zendesk #2076 - Frequent schokkerig wanneer het spelen van video op Motorola Xoom met Android 4.0.3Toegevoegde apparaten om lijst toe te staan om hen te verhinderen om high-profile inhoud te spelen.
 
-* Zendesk #2197 - `[Ads]` Tracking and error dispatch OperationFailedEvent met waarschuwingsmelding. 
+* Zendesk #2197 - `[Ads]` Tracking and error dispatch OperationFailedEvent met waarschuwingsmelding.
 
 * Zendesk #3304 - VAST 3.0- `[ERRORCODE]` macro niet gevuld
    * foutcode 400 wordt weergegeven als deze inline is en slecht creatief is.
@@ -597,7 +600,7 @@ Instant On is bijgewerkt om een startpunt van niet nul toe te staan.
 
 * Zendesk #2941 - Levende activa hebben geen &quot;0&quot;in zoekbare waaierEerder was er een 3 segmentbuffer toen het zoeken aan het begin van een Levende stroom, nu is het mogelijk om tot het zeer begin van een levende stroom (d.w.z. het begin van het eerste segment) te zoeken.
 
-* Zendesk #3169 - Update reference player with Adobe Analytics integrationThe reference player has been updated with the Adobe Analytics library as an example implantation. 
+* Zendesk #3169 - Update reference player with Adobe Analytics integrationThe reference player has been updated with the Adobe Analytics library as an example implantation.
 * Zendesk #3299 - Onverklaarbaar gedrag bij het spelen van een truc
    * Het probleem waarbij het terugkeren naar de afspeelstatus na het stoppen van truc enkele seconden kon duren (soms 25+ seconden), is opgelost.
    * Probleem verholpen waarbij het aanroepen van een truc een tweede keer op dezelfde media wordt afgespeeld, kan ertoe leiden dat de stream op het huidige moment vastloopt.
