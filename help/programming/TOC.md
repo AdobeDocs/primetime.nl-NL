@@ -2,9 +2,12 @@
 cloud: experience-cloud
 product: adobe primetime
 audience: end-user
-user-guide-title: Primetime Programming Help
+user-guide-title: Help bij programmeren bij primetime
 translation-type: tm+mt
-source-git-commit: 9d8fa7b8deffcf0d86f0c8343b11fad042d8d4df
+source-git-commit: 9c6a6f0b5ecff78796e37daf9d7bdb9fa686ee0c
+workflow-type: tm+mt
+source-wordcount: '4307'
+ht-degree: 0%
 
 ---
 
@@ -99,7 +102,7 @@ source-git-commit: 9d8fa7b8deffcf0d86f0c8343b11fad042d8d4df
       + Just-in-Time en oplossing {#just-in-time}
          + [Overzicht](tvsdk-3x-android-prog/android-3x-advertising/ad-insertion/c-lazy-ad-resolving/c-lazy-ad-resolving.md)
          + [Lozy en oplossen inschakelen](tvsdk-3x-android-prog/android-3x-advertising/ad-insertion/c-lazy-ad-resolving/t-enable-lazy-ad-resolving.md)
-         + [Opwaarderen vanaf 2.7.x Lazy en oplossen naar 3.x Lazy Ad Resolving (API/Workflow-wijzigingen)](tvsdk-3x-android-prog/android-3x-advertising/ad-insertion/t-upgrade-to-3x.md)
+         + [Opwaarderen vanaf 2.7.x Lazy en oplossen naar 3.x Lazy Ad Resolving (API/workflowwijzigingen)](tvsdk-3x-android-prog/android-3x-advertising/ad-insertion/t-upgrade-to-3x.md)
       + Metagegevens voor invoeging toevoegen {#ad-insertion-metadata}
          + [Overzicht](tvsdk-3x-android-prog/android-3x-advertising/ad-insertion/ad-insertion-metadata/android-3x-ad-insertion-metadata.md)
          + [Metagegevens instellen en invoegen](tvsdk-3x-android-prog/android-3x-advertising/ad-insertion/ad-insertion-metadata/android-3x-ad-insertion-metadata-set-up.md)
@@ -196,7 +199,7 @@ source-git-commit: 9d8fa7b8deffcf0d86f0c8343b11fad042d8d4df
       + [Wacht op een geldige status](tvsdk-3x-ios-prog/ios-3x-content-playback-options/ios-3x-create-a-video-player/ios-3x-configure-ui/ios-3x-ui-state-prepared-wait-for.md)
       + [Een afspeel-/pauzeknop implementeren](tvsdk-3x-ios-prog/ios-3x-content-playback-options/ios-3x-create-a-video-player/ios-3x-configure-ui/ios-3x-implement-pause-play.md)
       + [De duur van de video weergeven](tvsdk-3x-ios-prog/ios-3x-content-playback-options/ios-3x-create-a-video-player/ios-3x-configure-ui/ios-3x-display-video-duration.md)
-      + [De huidige tijd en de resterende tijd weergeven](tvsdk-3x-ios-prog/ios-3x-content-playback-options/ios-3x-create-a-video-player/ios-3x-configure-ui/ios-3x-display-current-remaining-time.md)
+      + [Huidige tijd en resterende tijd weergeven](tvsdk-3x-ios-prog/ios-3x-content-playback-options/ios-3x-create-a-video-player/ios-3x-configure-ui/ios-3x-display-current-remaining-time.md)
       + [Een zoekbalk weergeven met de huidige positie van de afspeeltijd](tvsdk-3x-ios-prog/ios-3x-content-playback-options/ios-3x-create-a-video-player/ios-3x-configure-ui/ios-3x-display-seek-scrub-bar.md)
       + [Adaptieve bitsnelheden (ABR) voor videokwaliteit](tvsdk-3x-ios-prog/ios-3x-content-playback-options/ios-3x-create-a-video-player/ios-3x-configure-ui/ios-3x-abr-control-quality.md)
    + [Kwaliteit van de dienststatistieken](tvsdk-3x-ios-prog/ios-3x-qos-statistics-monitor.md)
@@ -266,7 +269,7 @@ source-git-commit: 9d8fa7b8deffcf0d86f0c8343b11fad042d8d4df
    + Inhoudsbescherming {#content-protection}
       + [Overzicht van de primaire DRM-interface](tvsdk-3x-ios-prog/ios-3x-drm-content-security/ios-3x-drm-interface.md)
       + [Apple FairPlay in TVSDK-toepassingen](tvsdk-3x-ios-prog/ios-3x-drm-content-security/ios-3x-apple-fairplay-tvsdk.md)
-      + [Whitelist uw iOS-toepassing](tvsdk-3x-ios-prog/ios-3x-drm-content-security/ios-3x-whitelist-your-ios-application.md)
+      + [Lijst met uw iOS-toepassing toestaan](tvsdk-3x-ios-prog/ios-3x-drm-content-security/ios-3x-allowlist-your-ios-application.md)
    + [Meldingen voor spelerstatus, activiteit, fouten en logbestanden](tvsdk-3x-ios-prog/ios-3x-notification-system/ios-3x-notification-content.md)
    + [Aangepaste logboekregistratie](tvsdk-3x-ios-prog/ios-3x-customized-logging/c-ios-customized-logging/c-ios-customized-logging.md)
    + [Failover](tvsdk-3x-ios-prog/ios-3x-understanding-failover.md)
@@ -302,7 +305,7 @@ source-git-commit: 9d8fa7b8deffcf0d86f0c8343b11fad042d8d4df
          + [Een MediaPlayer-instantie opnieuw gebruiken of verwijderen](tvsdk-2.7-for-android/content-playback-options/mediaplayerobjects-working-with/c-psdk-android-2.7-mediaplayer-reuse-or-remove.md)
          + [De afspeeltijdlijn controleren](tvsdk-2.7-for-android/content-playback-options/mediaplayerobjects-working-with/t-psdk-android-2.7-timeline-inspect-playback.md)
          + [MediaPlayer onderbreken en herstellen](tvsdk-2.7-for-android/content-playback-options/mediaplayerobjects-working-with/c-psdk-android-2.7-suspend-and-restore.md)
-      + Luisteren naar gebeurtenissen in Primetime Player {#listen-primetime-player-events}
+      + Luisteren naar gebeurtenissen in Primetime Player   {#listen-primetime-player-events}
          + [Overzicht](tvsdk-2.7-for-android/content-playback-options/c-psdk-android-2.7-events-listen-for.md)
          + [Gebeurtenislisteners en callbacks implementeren](tvsdk-2.7-for-android/content-playback-options/t-psdk-android-2.7-event-listeners-implement.md)
       + [Foutafhandeling instellen](tvsdk-2.7-for-android/content-playback-options/t-psdk-android-2.7-error-handling-set-up.md)
@@ -590,7 +593,7 @@ source-git-commit: 9d8fa7b8deffcf0d86f0c8343b11fad042d8d4df
          + [Alternatieve audio](tvsdk-1.4-for-android/android-1.4-implementing-alternate-audio/alternate-audio/android-1.4-alternate-audio.md)
          + [Alternatieve audiotracks in de afspeellijst](tvsdk-1.4-for-android/android-1.4-implementing-alternate-audio/alternate-audio/android-1.4-alternate-audio-in-playlist.md)
          + [Alternatieve audiotracks openen](tvsdk-1.4-for-android/android-1.4-implementing-alternate-audio/alternate-audio/android-1.4-alternate-audio-implement.md)
-      + Adobe-analysemogelijkheden integreren met TVSDK {#integrating-adobe-analytics}
+      + Adobe Analytics integreren met TVSDK {#integrating-adobe-analytics}
          + [Videoanalyse](tvsdk-1.4-for-android/android-1.4-integrating-adobe-analytics/va-integration-overview/android-1.4-va-integration-overview.md)
          + [Videoanalysemogelijkheden initialiseren en configureren](tvsdk-1.4-for-android/android-1.4-integrating-adobe-analytics/va-integration-overview/android-1.4-va-integrate-heartbeats.md)
          + [Ondersteuning voor aangepaste metagegevens implementeren](tvsdk-1.4-for-android/android-1.4-integrating-adobe-analytics/va-integration-overview/android-1.4-va-custom-metadata.md)
@@ -720,7 +723,7 @@ source-git-commit: 9d8fa7b8deffcf0d86f0c8343b11fad042d8d4df
    + Inhoudsbescherming {#content-protection}
       + [Overzicht van de primaire DRM-interface](tvsdk-1.4-for-ios/c-psdk-ios-1.4-drm-content-security/r-psdk-ios-1.4-drm-interface.md)
       + [Apple FairPlay in TVSDK-toepassingen](tvsdk-1.4-for-ios/c-psdk-ios-1.4-drm-content-security/c-psdk-ios-1.4-apple-fairplay-tvsdk/c-psdk-ios-1.4-apple-fairplay-tvsdk.md)
-      + [Whitelist uw iOS-toepassing](tvsdk-1.4-for-ios/c-psdk-ios-1.4-drm-content-security/t-psdk-ios-1.4-whitelist-your-ios-application.md)
+      + [Lijst met uw iOS-toepassing toestaan](tvsdk-1.4-for-ios/c-psdk-ios-1.4-drm-content-security/t-psdk-ios-1.4-allowlist-your-ios-application.md)
    + [Melding van spelerstatus, activiteit, fouten en logbestanden ](tvsdk-1.4-for-ios/c-psdk-ios-1.4-notification-system/c-psdk-ios-1.4-notification-system.md)
    + [Aangepaste logboekregistratie](tvsdk-1.4-for-ios/c-psdk-ios-1.4-customized-logging/c-psdk-ios-1.4-customized-logging.md)
    + [Failover](tvsdk-1.4-for-ios/c-psdk-ios-1.4-understanding-failover.md)
@@ -1068,7 +1071,7 @@ source-git-commit: 9d8fa7b8deffcf0d86f0c8343b11fad042d8d4df
       + Klikbare advertenties {#clickable-ads}
          + [Overzicht](browser-tvsdk-2.4/ad-insertion/clickable-ads/c-psdk-browser-tvsdk-2.4-clickable-ads.md)
          + [Aanklikbare advertenties verwerken](browser-tvsdk-2.4/ad-insertion/clickable-ads/t-psdk-browser-tvsdk-2.4-handle-clickable-ads.md)
-   + BrowserTVSDK integreren met Adobe Analytics {#integrating-browser}
+   + Browser-TVSDK integreren met Adobe Analytics {#integrating-browser}
       + [Videoanalyse](browser-tvsdk-2.4/c-psdk-browser-2.4-integration/c-psdk-browser-tvsdk-2.4-va-integration-overview.md)
       + [Videoanalysemogelijkheden initialiseren en configureren](browser-tvsdk-2.4/c-psdk-browser-2.4-integration/t-psdk-browser-tvsdk-2.4-va-integrate-heartbeats.md)
       + [Ondersteuning voor aangepaste metagegevens implementeren](browser-tvsdk-2.4/c-psdk-browser-2.4-integration/t-psdk-browser-tvsdk-2.4-va-custom-metadata.md)
