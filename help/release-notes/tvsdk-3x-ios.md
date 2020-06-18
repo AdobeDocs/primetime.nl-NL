@@ -2,7 +2,7 @@
 title: Opmerkingen bij de release TVSDK 3.12 voor iOS
 description: De opmerkingen bij de release TVSDK 3.12 voor iOS beschrijven wat nieuw of gewijzigd is, de opgeloste en bekende problemen en de apparaatproblemen in TVSDK iOS 3.12.
 translation-type: tm+mt
-source-git-commit: f6a0fbaec3d164dd0c15d2738b58c7486bbc6e57
+source-git-commit: 9c6a6f0b5ecff78796e37daf9d7bdb9fa686ee0c
 workflow-type: tm+mt
 source-wordcount: '7665'
 ht-degree: 0%
@@ -173,7 +173,7 @@ Integreer en certificeer VHL 2.0 in iOS TVSDK: Verminder de hindernis in de `Vid
 
 **Netwerk en informatie**
 
-TVSDK API&#39;s bieden nu aanvullende informatie over VAST-reacties van derden. Advertentie-ID, Ad System en VAST Ad Extensions worden aangeboden in `PTNetworkAdInfo` klassen die toegankelijk zijn via `networkAdInfo` eigenschap op een advertentie-element. Deze informatie kan worden gebruikt voor integratie met andere analyseplatforms voor advertentie, zoals **Moat Analytics**.
+TVSDK API&#39;s bieden nu aanvullende informatie over VAST-reacties van derden. Advertentie-ID, Ad System en VAST Ad Extensions worden aangeboden in `PTNetworkAdInfo` klassen die toegankelijk zijn via `networkAdInfo` eigenschap op een advertentie-element. Deze informatie kan worden gebruikt voor integratie met andere Analytics-advertentieplatforms, zoals **Moat Analytics**.
 
 **Versie 1.4.31**
 
@@ -187,7 +187,7 @@ TVSDK API&#39;s bieden nu aanvullende informatie over VAST-reacties van derden. 
 
 In de `PTSDKConfig` klasse is de forceHTTPS API toegevoegd.
 
-De `PTSDKConfig` klasse biedt methoden om SSL af te dwingen voor aanvragen die zijn ingediend bij Adobe Primetime en beslissings-, DRM- en Video Analytics-servers. Zie de methoden `forceHTTPS` `isForcingHTTPS` en methoden in deze klasse voor meer informatie. Als een manifest over HTTPS wordt geladen, behoudt TVSDK het inhoudsgebruik van HTTPS en eerbiedigt dit gebruik wanneer het laden van om het even welke relatieve URLs van dat manifest.
+De `PTSDKConfig` klasse biedt methoden om SSL af te dwingen voor aanvragen die zijn ingediend bij Adobe Primetime en bij het nemen van beslissingen, DRM en Video Analytics-servers. Zie de methoden `forceHTTPS` `isForcingHTTPS` en methoden in deze klasse voor meer informatie. Als een manifest over HTTPS wordt geladen, behoudt TVSDK het inhoudsgebruik van HTTPS en eerbiedigt dit gebruik wanneer het laden van om het even welke relatieve URLs van dat manifest.
 
 >[!NOTE] Verzoeken naar domeinen van derden, zoals het bijhouden van pixels voor toevoegen, inhoud en URL&#39;s voor toevoegen en vergelijkbare verzoeken, worden niet gewijzigd. Het is de verantwoordelijkheid van inhoudsproviders en servers om URL&#39;s op te geven die via HTTPS worden ondersteund.
 
@@ -257,7 +257,7 @@ In DRM-beleid kan nu de hoogst toegestane resolutie worden opgegeven, afhankelij
 
 * **Video Heartbeats Library (VHL)-update naar versie 1.4.1.1**
 
-   * De mogelijkheid om verschillende analytische gebruiksscenario&#39;s, van andere SDK&#39;s of spelers, te bundelen met de Adobe Analytics Video Essentials.
+   * De mogelijkheid om verschillende analysemogelijkheden te bundelen, van andere SDK&#39;s of spelers, met de Adobe Analytics Video Essentials.
    * Het bijhouden van advertenties is geoptimaliseerd door de `trackAdBreakStart` en de `trackAdBreakComplete` methoden te verwijderen. Het ad-einde wordt afgeleid van de aanroepen van de methode `trackAdStart` `trackAdComplete` en de methode.
    * De `playhead` eigenschap is niet meer nodig voor het bijhouden van advertenties.
    * Toegevoegde ondersteuning voor de Bezoeker-id van de marketingcloud.
@@ -340,11 +340,12 @@ Geen nieuwe problemen in deze release.
 
 **Versie 3.3**
 
-(ZD#37820) - whitelisting toegevoegd voor aangepaste header HS-ID, HS-SSAI-TAG.
+(ZD#37820) - Toegevoegd staat plaatsing op de lijst voor aangepaste koptekst HS-ID, HS-SSAI-TAG toe.
 
 **Versie 3.2**
 
 * **Ticket#36588** - Er wordt een crash van de speler waargenomen wanneer de STOP-methode van MediaPlayer wordt aangeroepen.
+
 Correctie van het periodiek vastlopen dat werd waargenomen wanneer de STOP-methode wordt aangeroepen voor een paar streams met ondertitels.
 
 * **Ticket#37080** - Dubbele verzoeken die voor Duidelijke vraag worden gezien.
@@ -401,7 +402,7 @@ Verbeterde oplossing voor afgesloten uitgave #34385 in release 1.4.42. Toegevoeg
 
 * (ZD#34765) - Na het aanroepen van stop() worden nog maar weinig transportstreamsegmenten gedownload. Verbeterde de Stop()-API om het downloaden van de extra segmenten te voorkomen.
 
-* (ZD#34865) - Pre-roll advertenties voor livestream worden afgebroken op iOS. Dit probleem is opgelost. Dit probleem is te maken met iOS11 en er wordt een extra controle toegevoegd om te controleren of de stream pre-roll of main-content is.
+* (ZD#34865) - Pre-roll advertenties voor livestream worden afgebroken op iOS. Dit probleem is opgelost. Dit probleem is verwant aan iOS11 en er wordt een extra controle toegevoegd om te controleren of de stream pre-roll of main-content is.
 
 * (ZD#35093) - Oplossing voor een failover-scenario waarbij, als de Primaire variant van de stream bij het opstarten mislukt (404 wordt geretourneerd), het afspelen niet naar de back-upstream wordt geschakeld.
 
@@ -438,24 +439,29 @@ Verbeterde oplossing voor afgesloten uitgave #34385 in release 1.4.42. Toegevoeg
    Correctie van de fout bij het afspelen van inhoud op Apple TV, waardoor het afspelen niet volledig kon worden uitgevoerd.
 * (ZD #32146) - Geen `PTMediaPlayerStatusError` ontvangen voor HLS Live-inhoud op het blokkeren van iOS 11 dev beta
 
-   Er `PTMediaPlayerStatusError` wordt geen informatie ontvangen voor HLS Live- en VOD-inhoud bij het blokkeren met Charles (verbinding Slagen en 403)
-* (ZD #29242) - Het afspelen van Airplay-video mislukt omdat advertenties zijn ingeschakeld
+   Er `PTMediaPlayerStatusError` wordt geen informatie ontvangen voor HLS Live- en VOD-inhoud bij het blokkeren met Charles (verbinding Slagen en 403).
 
-   Wanneer advertenties zijn ingeschakeld en AirPlay is ingeschakeld, wordt het afspelen van een video gestart, wordt het afspelen van de video nooit gestart en wordt geen fout weergegeven
-* (ZD#33341) - `DRMInterface.h` triggers genereren waarschuwingen in Xcode 9
+* (ZD #29242) - Het afspelen van Airplay-video mislukt met advertenties ingeschakeld.
 
-   Oplossing voor twee prototypen van blokken `DRMInterface.h` waarin het woord &#39;void&#39; in de parameterlijsten ontbrak. Dit probleem is nu opgelost.
-* (ZD#31979) - Wordt niet gecompileerd/uitgevoerd als het iOS 10 of hoger is voor iPhone 7/iPhone7+
+   Wanneer advertenties zijn ingeschakeld en AirPlay is ingeschakeld, wordt het afspelen van een video gestart, het afspelen van de video wordt nooit gestart en er wordt geen fout weergegeven.
 
-   Vaste samenstelling van IB-documenten voor eerdere versies dan iOS 7 wordt niet meer ondersteund
-* (ZD#32920) - Wit leeg scherm binnen een advertentiesonderbreking en geen voltooiing van de Advertentie
+* (ZD#33341) - `DRMInterface.h` triggers maken waarschuwingen in Xcode 9.
 
-   Wanneer een Ad-einde Ad-instanties weergeeft en nadat een advertentie-instantie is voltooid, wordt een wit leeg scherm weergegeven
-* (ZD#32509) - Schermopname van iOS 11 uitschakelen Schermopname uitschakelen Schermopname op iOS 11
+   Oplossing voor twee blokprototypen `DRMInterface.h` waarin het woord &#39;void&#39; in de parameterlijsten ontbrak.
 
-* (ZD#33179) - Gebeurtenisfout met tussenpozen in iOS11
+* (ZD#31979) - Wordt niet gecompileerd/uitgevoerd als het iOS 10 of hoger is voor iPhone 7/iPhone7+.
 
-   Gebeurtenisfout in iOS 11 verholpen
+   Correcte samenstelling van IB-documenten voor eerdere versies dan iOS 7 wordt niet meer ondersteund.
+
+* (ZD#32920) - Leeg scherm binnen een Advertentiesonderbreking en geen Ad-onderbreking voltooiing.
+
+   Wanneer een Ad-einde Ad-instanties weergeeft en nadat een advertentie-instantie is voltooid, wordt een leeg scherm weergegeven.
+
+* (ZD#32509) - Schermopname van iOS 11 uitschakelen - Schermopname uitschakelen - schermopname uitschakelen in iOS 11.
+
+* (ZD#33179) - Gebeurtenisfout met tussenpozen in iOS11.
+
+   De gebeurtenisfout in iOS 11 is verholpen.
 
 **Versie 1.4.40** (1.4.40.72)
 
@@ -466,7 +472,7 @@ Verbeterde oplossing voor afgesloten uitgave #34385 in release 1.4.42. Toegevoeg
 * (ZD #31951) - TVSDK-fout tijdens rotaties van licentie.
 
    Probleem met rotatie van licentie opgelost.
-* (ZD #31951) - Wit leeg scherm binnen een pagina-einde en geen voltooide advertentie-einde.
+* (ZD #31951) - Leeg scherm binnen een Ad-einde en geen Ad-break-voltooiing.
 
    Behandelde een probleem waarbij Facebook VPAID-advertenties vaak meerdere CDATA-blokken in één `<AdParameters>` VAST-knooppunt retourneerden.
 * (ZD #33336) - iOS TVSDK - Advertentiepods worden niet gevuld, ondanks dat er voldoende advertenties zijn geretourneerd door Freewieltje.
@@ -625,9 +631,9 @@ Dit probleem is opgelost door een oplossing te bieden voor streams die geen M3U8
 
 De volgende problemen zijn in deze release opgelost voor TVSDK:
 
-* (ZD# 24180) Een aangepaste koptekst toevoegen aan de witte lijst
+* (ZD# 24180) Voeg een aangepaste koptekst toe om lijst toe te staan.
 
-Er is een nieuwe aangepaste koptekst toegevoegd aan de witte lijst voor TVSDK.
+Er is een nieuwe aangepaste koptekst toegevoegd aan de lijst voor TVSDK-toestaan.
 
 * (ZD# 25016) Failover-stroom wordt willekeurig geselecteerd wanneer ABR-besturingsparameters worden ingesteld
 
@@ -715,7 +721,7 @@ De crash die optrad als gevolg van een niet-toegewezen instantie van de mediaspe
 
 * (ZD #24575) - Crash in TVSDK op 32-bits apparaten wanneer enableDebugLog=true
 
-De kwestie in het logboekformaat dat de botsing op apparaten met 32 bits veroorzaakte wanneer het registreren wordt toegelaten is bevestigd.
+De kwestie in het logboekformaat dat de botsing op apparaten met 32 bits veroorzaakte wanneer het registreren wordt toegelaten is opgelost.
 
 **Versie 1.4.26** (1.4.26.702) voor iOS 6.0+
 
@@ -745,7 +751,7 @@ Dit probleem is opgelost door extra null-objectcontroles toe te voegen tijdens h
 
 Dit probleem is hetzelfde als (ZD #21590).
 
-* (ZD #22280) - De videolengte van Analytics wordt ingesteld op 0
+* (ZD #22280) - Analytics Video Length wordt ingesteld op 0
 
 Dit probleem is hetzelfde als (ZD #21590).
 
@@ -771,7 +777,7 @@ Dit probleem is opgelost door de logica bij te werken om de weergave van de spel
 
 Dit probleem is opgelost door VideoAnalyticsTracker bij te werken om het begin/einde van een hoofdstuk correct te detecteren bij het schakelen tussen grenzen van hoofdstukken en niet-hoofdstukken.
 
-* (ZD #20784) - Analyse: Het triggeren van inhoud wordt voltooid voor live video-overgangen
+* (ZD #20784) - Analytics: Het triggeren van inhoud wordt voltooid voor live video-overgangen
 
 Dit probleem is opgelost door een logica toe te voegen die handmatig het voltooien van de inhoud tijdens een sessie voor het bijhouden van video activeert.
 
@@ -1086,7 +1092,7 @@ Door TVSDK worden lege URL&#39;s voor het bijhouden van regeleinden en afbreking
 
 **Versie 1.4.5** (1.4.5.283)
 
-* (ZD #2141) Implementatie van analysemogelijkheden voor de app TreeHouse, toegevoegde `AdobeAnalyticsPlugin.a` bibliotheek voor het samenstellen van het pakket.
+* (ZD #2141) Analytics-implementatie voor de TreeHouse-app, met bibliotheek toegevoegd om het pakket samen te stellen. `AdobeAnalyticsPlugin.a`
 * Video Heartbeats Library update naar 1.4.1.2
 * [PTPALY-4226] [verwant aan ZD #2423) Het uitvoeren van het Terugstellen DRM kan in schrapping van de gegevens van het Document van de Toepassing resulteren.
 
@@ -1158,12 +1164,12 @@ Deze versie van de TVSDK is gecertificeerd met de FairPlay-ondersteuning voor iO
    * VPAID-advertenties worden niet afgespeeld zoals wordt verwacht in iPad 13.
    * Companion-advertenties spelen niet zoals verwacht.
 
-* In iOS TVSDK worden alle advertenties vastgezet in het inhoudsmanifest. Advertentiepatronen worden geïmplementeerd door te zoeken op basis van de duur van de inhoud en advertentiesegmenten. Dus als de duur van het segment niet nauwkeurig is, eindigt het zoeken mogelijk niet altijd bij het exacte frame van het begin of einde van het ad-einde. Zelfs als de duur van het frame beperkt is, is er een tolerantie die het platform zelf oplegt aan zoeken. Er kunnen enkele frames of advertenties of inhoud worden weergegeven. Dit is een beperking van het platform en de manier waarop en de invoeging werkt met TVSDK op iOS.
+* In iOS TVSDK worden alle advertenties vastgezet in het inhoudsmanifest. Advertentiepatronen worden geïmplementeerd door te zoeken op basis van de duur van de inhoud en advertentiesegmenten. Dus als de duur van het segment niet nauwkeurig is, eindigt het zoeken mogelijk niet altijd bij het exacte frame van het begin of einde van het advertentiespoor. Zelfs als de duur van het frame beperkt is, is er een tolerantie die het platform zelf oplegt aan zoeken. Er kunnen enkele frames of advertenties of inhoud worden weergegeven. Dit is een beperking van het platform en de manier waarop en de invoeging werkt met TVSDK op iOS.
 * Het besluit om over te slaan gebeurt in dit geval op de gebeurtenis seek. Aangezien de tijdsduur van het advertentiesegment in het manifest echter de werkelijke duur van de advertentie niet nauwkeurig vertegenwoordigt, is de zoekactie niet nauwkeurig. U ziet dus een paar frames advertentie wanneer het advertentiebeleid wordt toegepast.
 * Het kan voorkomen dat tijdens het roteren van licenties de video niet wordt afgespeeld op iOS 11 en dat deze goed wordt afgespeeld op iOS 9.x en iOS 10.x.
 * Als bij VPAID 2.0-ondersteuning het afspelen via AirPlay actief is, worden VPAID-advertenties overgeslagen.
 * Het drmNativeInterface.framework is niet correct gekoppeld wanneer het minimumdoel is ingesteld op iOS7 (of hoger).
-Oplossing: Geef expliciet de bibliotheek libstdc+.6.dylib op als volgt: Ga naar Doel->Build Phases->Link Binary with Libraries en voeg libstdc++.6.dylib toe.
+Oplossing: Geef expliciet de bibliotheek libstdc+.6.dylib op als volgt: Ga naar Target->Build Phases->Link Binary with Libraries en voeg libstdc++.6.dylib toe.
 * Post-Roll Advertentie wordt niet ingevoegd voor vervangings-API.
 * Als u een advertentie-einde zoekt (zonder er uit te komen), wordt een dubbel advertentie-begin- en advertentierapport weergegeven
 * Het instellen van currentTimeUpdateInterval heeft geen effect.
