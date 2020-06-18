@@ -8,9 +8,9 @@ products: SG_PRIMETIME
 topic-tags: release-notes
 discoiquuid: 3a27379f-3cef-4ea3-bcae-21382dc1e9fd
 translation-type: tm+mt
-source-git-commit: d1881d1fe97d416ee0f69f62828aef46c5ad21bb
+source-git-commit: 9c6a6f0b5ecff78796e37daf9d7bdb9fa686ee0c
 workflow-type: tm+mt
-source-wordcount: '5415'
+source-wordcount: '5417'
 ht-degree: 0%
 
 ---
@@ -256,7 +256,7 @@ Android TVSDK v2.5.2 biedt belangrijke foutoplossingen en enkele API-wijzigingen
 
 De belangrijke nieuwe functies die zijn uitgebracht in Android 2.5.1.
 
-* **Prestatieverbeteringen -** De nieuwe TVSDK 2.5.1-architectuur biedt een aantal prestatieverbeteringen. Gebaseerd op statistieken van een derdebenchmarkingsstudie, verstrekt de nieuwe architectuur een 5x vermindering van starttijd en 3.8x minder gelaten vallen kaders in vergelijking met het industriegemiddelde:
+* **Prestatieverbeteringen -** De nieuwe TVSDK 2.5.1-architectuur biedt een aantal prestatieverbeteringen. Gebaseerd op statistieken van een derdebenchmarkingstudie, verstrekt de nieuwe architectuur een 5x vermindering van starttijd en 3.8x minder gelaten vallen kaders in vergelijking met het industriegemiddelde:
 
 * **Instant on for VOD en live -** Wanneer u instant on inschakelt, initialiseert de TVSDK en buffert deze media voordat het afspelen wordt gestart. Omdat u meerdere MediaPlayerItemLoader-instanties tegelijk op de achtergrond kunt starten, kunt u meerdere streams bufferen. Wanneer een gebruiker het kanaal wijzigt en de stream correct is gebufferd, wordt het afspelen op het nieuwe kanaal onmiddellijk gestart. TVSDK 2.5.1 ondersteunt ook Instant On voor **live** streams. De live streams worden opnieuw gebufferd wanneer het live venster wordt verplaatst.
 
@@ -295,8 +295,8 @@ Wanneer TVSDK een verbinding opent, vraagt het de server om een *levend* verbind
 
 * **Workflowondersteuning**
 
-   * **Integratie van directe facturering -** hiermee worden gegevens over facturering naar de Adobe Analytics-backend verzonden, die door Adobe Primetime is gecertificeerd voor streams die door de klant worden gebruikt.
-   TVSDK verzamelt automatisch meetgegevens, met inachtneming van het verkoopcontract van de klant, om periodieke gebruiksrapporten te genereren die voor factureringsdoeleinden worden vereist. Bij elke streamstartgebeurtenis gebruikt TVSDK de API voor het invoegen van gegevens in Adobe Analytics om factuurmetriek, zoals inhoudssoort, voor het invoegen ingeschakelde vlaggen en voor het drm ingeschakelde vlaggen (gebaseerd op de duur van de factureerbare stream) naar de Primetime-rapportsuite van Adobe Analytics te verzenden. Dit heeft geen invloed op of wordt niet opgenomen in de eigen Adobe Analytics-rapportreeksen of serveraanroepen van de klant. Op verzoek wordt dit gebruiksrapport voor facturering periodiek naar klanten verzonden. Dit is de eerste fase van de factureringsfunctie die alleen gebruiksfacturering ondersteunt. Het kan worden gevormd gebaseerd op het verkoopcontract gebruikend APIs die in de documentatie worden beschreven. Deze functie is standaard ingeschakeld. Raadpleeg het voorbeeld voor de referentiespeler als u deze functie wilt uitschakelen.
+   * **Integratie van directe facturering -** Hiermee worden factureringsgegevens naar de Adobe Analytics-backend verzonden, die door Adobe Primetime is gecertificeerd voor streams die door de klant worden gebruikt.
+   TVSDK verzamelt automatisch metriek, met inachtneming van het klantenverkoopcontract om periodieke gebruiksrapporten te produceren die voor factureringsdoeleinden worden vereist. Bij elke streamstartgebeurtenis gebruikt TVSDK de API voor het invoegen van gegevens in Adobe Analytics om factuurmetriek, zoals inhoudssoort, voor het invoegen ingeschakelde vlaggen en voor het drm ingeschakelde vlaggen (gebaseerd op de duur van de factureerbare stream) naar de Primetime-rapportsuite van Adobe Analytics te verzenden. Dit heeft geen invloed op of wordt niet opgenomen in de eigen Adobe Analytics-rapportreeksen of serveraanroepen van de klant. Op verzoek wordt dit gebruiksrapport voor facturering periodiek naar klanten verzonden. Dit is de eerste fase van de factureringsfunctie die alleen gebruiksfacturering ondersteunt. Het kan worden gevormd gebaseerd op het verkoopcontract gebruikend APIs die in de documentatie worden beschreven. Deze functie is standaard ingeschakeld. Raadpleeg het voorbeeld voor de referentiespeler als u deze functie wilt uitschakelen.
 
    * **Verbeterde failover-ondersteuning -** Aanvullende strategieën die zijn geïmplementeerd om het afspelen zonder onderbreking voort te zetten, ondanks fouten van hostservers, afspeelbestanden en segmenten.
 
@@ -357,7 +357,7 @@ In de onderstaande tabel met functies geeft een &#39;Y&#39; aan dat de functie w
 | Geavanceerde failover | VOD + Live | Y |
 | QoS- en spelersmeldingen | VOD + Live | Y |
 | Ondersteuning voor cookie headers | VOD + Live | Y |
-| Ondersteuning voor aangepaste HTTP-headers | VOD + Live | Y (Whitelisting vereist) |
+| Ondersteuning voor aangepaste HTTP-headers | VOD + Live | Y (aanbieding toestaan vereist) |
 | Parameters voor bufferbesturing instellen | VOD + Live | Y |
 | Aangepaste besturingselementen voor bitsnelheid instellen | VOD + Live | Y |
 | Aangepaste manifest-tags | VOD + Live | Y |
@@ -468,7 +468,7 @@ In deze sectie wordt een overzicht gegeven van het probleem dat is opgelost in T
    * Oplossing voor een specifiek probleem met gebeurtenissen voor het bijhouden van advertenties.
 * ZD#37491 - HTTP-statuscode met foutmeta is niet aanwezig.
    * Werkt bij het verspreiden van netwerkfouten hoger in de stapel.
-* ZD#37808 - Nieuwe aangepaste koptekst whelist.
+* ZD#37808 - Nieuwe aangepaste koptekst toestaan.
    * Ondersteuning voor SSAI_TAG toegevoegd als onderdeel van deze correctie.
 * ZD#37622 - URISyntax-fouten uit specifieke advertentiepods.
    * Probleem verholpen waarbij het afspelen van streams vastliep wanneer de Android-app van de klant advertenties aanbiedt met een niet-gecodeerd %
