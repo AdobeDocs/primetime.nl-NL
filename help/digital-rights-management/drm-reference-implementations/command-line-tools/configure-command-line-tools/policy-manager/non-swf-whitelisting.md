@@ -3,7 +3,10 @@ seo-title: Whitelisting niet-SWF-toepassing
 title: Whitelisting niet-SWF-toepassing
 uuid: d4f93b15-e556-4749-95ab-f7f58b1061d7
 translation-type: tm+mt
-source-git-commit: a63768e51c911914a6ba9d884e2587fa34939f9d
+source-git-commit: 9c6a6f0b5ecff78796e37daf9d7bdb9fa686ee0c
+workflow-type: tm+mt
+source-wordcount: '356'
+ht-degree: 0%
 
 ---
 
@@ -27,4 +30,4 @@ Zie `policy.allowedAIRApplication.n` in de eigenschappen *van de* Configuratie v
 
 >[!NOTE]
 >
->Voor een whitelisting van een iOS-toepassing is een speciale aanpak vereist. Raadpleeg [Whitelist your iOS application](../../../../../programming/tvsdk-3x-ios-prog/ios-3x-drm-content-security/ios-3x-whitelist-your-ios-application.md) in the *TVSDK for iOS Programmer&#39;s Guide*.
+>Voor het aanbieden van een iOS-toepassing is een speciale aanpak vereist. Zie De lijst met uw iOS-toepassingen [](../../../../../programming/tvsdk-3x-ios-prog/ios-3x-drm-content-security/ios-3x-allowlist-your-ios-application.md) toestaan in de *TVSDK voor de programmagids* van iOS.
