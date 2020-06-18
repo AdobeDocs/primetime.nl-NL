@@ -8,7 +8,10 @@ products: SG_PRIMETIME
 topic-tags: release-notes
 discoiquuid: bab78e9f-f9ba-4e1c-b778-0936ae704037
 translation-type: tm+mt
-source-git-commit: 36a1619b43d22ccc7286d4a4b74f2c6297d0fd47
+source-git-commit: 9c6a6f0b5ecff78796e37daf9d7bdb9fa686ee0c
+workflow-type: tm+mt
+source-wordcount: '4123'
+ht-degree: 0%
 
 ---
 
@@ -146,8 +149,8 @@ Opmerking: Het omschakelen van ABR, het spelen van een truc, en het opnemen, laa
 
 * **Workflowondersteuning**
 
-   * **Integratie van directe facturering -** hiermee worden gegevens over facturering naar de achtergrond van Adobe Analytics verzonden, die door Adobe Primetime is gecertificeerd voor streams die door de klant worden gebruikt.
-TVSDK verzamelt automatisch metriek, met inachtneming van het klantenverkoopcontract om periodieke gebruiksrapporten te produceren die voor factureringsdoeleinden worden vereist. Bij elke streamstartgebeurtenis gebruikt TVSDK de API voor het invoegen van Adobe Analytics-gegevens om factuurmetriek, zoals het inhoudstype, en voor het invoegen ingeschakelde markeringen en (op basis van de duur van de factureerbare stream) drm-markeringen naar de Primetime-rapportsuite van Adobe Analytics te verzenden. Dit heeft geen invloed op of wordt niet opgenomen in de eigen Adobe Analytics-rapportreeksen of serveraanroepen van de klant. Op verzoek wordt dit gebruiksrapport voor facturering periodiek naar klanten verzonden. Dit is de eerste fase van de factureringsfunctie die alleen gebruiksfacturering ondersteunt. Het kan worden gevormd gebaseerd op het verkoopcontract gebruikend APIs die in de documentatie worden beschreven. Deze functie is standaard ingeschakeld. Raadpleeg het voorbeeld voor de referentiespeler als u deze functie wilt uitschakelen.
+   * **Integratie van directe facturering -** Hiermee worden factureringsgegevens naar de Adobe Analytics-backend verzonden, die door Adobe Primetime is gecertificeerd voor streams die door de klant worden gebruikt.
+TVSDK verzamelt automatisch meetgegevens, met inachtneming van het verkoopcontract van de klant, om periodieke gebruiksrapporten te genereren die voor factureringsdoeleinden worden vereist. Bij elke streamstartgebeurtenis gebruikt TVSDK de API voor het invoegen van gegevens in Adobe Analytics om factuurmetriek, zoals inhoudssoort, voor het invoegen ingeschakelde vlaggen en voor het drm ingeschakelde vlaggen (gebaseerd op de duur van de factureerbare stream) naar de Primetime-rapportsuite van Adobe Analytics te verzenden. Dit heeft geen invloed op of wordt niet opgenomen in de eigen Adobe Analytics-rapportreeksen of serveraanroepen van de klant. Op verzoek wordt dit gebruiksrapport voor facturering periodiek naar klanten verzonden. Dit is de eerste fase van de factureringsfunctie die alleen gebruiksfacturering ondersteunt. Het kan worden gevormd gebaseerd op het verkoopcontract gebruikend APIs die in de documentatie worden beschreven. Deze functie is standaard ingeschakeld. Raadpleeg het voorbeeld voor de referentiespeler als u deze functie wilt uitschakelen.
    * **Verbeterde failover-ondersteuning -** Aanvullende strategieën die zijn geïmplementeerd om het afspelen zonder onderbreking voort te zetten, ondanks fouten van hostservers, afspeelbestanden en segmenten.
 
 * **Reclame**
@@ -155,9 +158,9 @@ TVSDK verzamelt automatisch metriek, met inachtneming van het klantenverkoopcont
    * **Moat Integration -** Ondersteuning voor meting van de weergavemogelijkheden van advertenties vanuit Mat.
    * **Companion banners -** Companion banners worden naast een lineaire advertentie weergegeven en worden vaak ook na afloop van de advertentie weergegeven in de weergave. Deze banners kunnen van het type html (een HTML-fragment) of iframe (een URL naar een iframe-pagina) zijn.
 
-* **Analyse**
+* **Analytics**
 
-   * **VHL 2.0 -** Dit is de nieuwste geoptimaliseerde VHL-integratie (Video Heartbeats Library) voor automatische verzameling van gebruiksgegevens voor Adobe Analytics. De complexiteit van de API&#39;s is verminderd om de implementatie te vereenvoudigen. Download de VHL-bibliotheek [v2.0.0 voor Android](https://github.com/Adobe-Marketing-Cloud/video-heartbeat-v2/releases) en extraheer het JAR-bestand in de map libs.
+   * **VHL 2.0 -** Dit is de meest recente geoptimaliseerde VHL-integratie (Video Heartbeats Library) voor automatische verzameling van gebruiksgegevens voor Adobe Analytics. De complexiteit van de API&#39;s is verminderd om de implementatie te vereenvoudigen. Download de VHL-bibliotheek [v2.0.0 voor Android](https://github.com/Adobe-Marketing-Cloud/video-heartbeat-v2/releases) en extraheer het JAR-bestand in de map libs.
 
 * **SizeAvailableEventListener**
    * getHeight() en getWidth() methoden van SizeAvailableEvent retourneren nu uitvoer in respectievelijk hoogte en breedte. De beeldverhouding kan als volgt worden berekend:
@@ -204,7 +207,7 @@ In de onderstaande tabel met functies geeft een &#39;Y&#39; aan dat de functie w
 | Geavanceerde failover | VOD + Live | Y |
 | QoS- en spelersmeldingen | VOD + Live | Y |
 | Ondersteuning voor cookie headers | VOD + Live | Y |
-| Ondersteuning voor aangepaste HTTP-headers | VOD + Live | Y (Whitelisting vereist) |
+| Ondersteuning voor aangepaste HTTP-headers | VOD + Live | Y (aanbieding toestaan vereist) |
 | Parameters voor bufferbesturing instellen | VOD + Live | Y |
 | Aangepaste besturingselementen voor bitsnelheid instellen | VOD + Live | Y |
 | Aangepaste manifest-tags | VOD + Live | Y |
