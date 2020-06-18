@@ -8,7 +8,10 @@ products: SG_PRIMETIME
 topic-tags: release-notes
 discoiquuid: 452f8699-7857-49ab-9caa-22204b19fe4a
 translation-type: tm+mt
-source-git-commit: e644e8497e118e2d03e72bef727c4ce1455d68d6
+source-git-commit: 9c6a6f0b5ecff78796e37daf9d7bdb9fa686ee0c
+workflow-type: tm+mt
+source-wordcount: '6578'
+ht-degree: 0%
 
 ---
 
@@ -67,7 +70,7 @@ Integreer en certificeer VHL 2.0 in iOS TVSDK: Verminder de barrière in de impl
 
 * Netwerk en informatie
 
-   TVSDK API&#39;s bieden nu aanvullende informatie over VAST-reacties van derden. Advertentie-ID, Ad System en VAST Ad Extensions worden aangeboden in `PTNetworkAdInfo` klassen die toegankelijk zijn via `networkAdInfo` eigenschap op een advertentie-element. Deze informatie kan worden gebruikt voor integratie met andere analyseplatforms voor advertentie, zoals **Moat Analytics**.
+   TVSDK API&#39;s bieden nu aanvullende informatie over VAST-reacties van derden. Advertentie-ID, Ad System en VAST Ad Extensions worden aangeboden in `PTNetworkAdInfo` klassen die toegankelijk zijn via `networkAdInfo` eigenschap op een advertentie-element. Deze informatie kan worden gebruikt voor integratie met andere Analytics-advertentieplatforms, zoals **Moat Analytics**.
 
 **Versie 1.4.31**
 
@@ -81,7 +84,7 @@ Telkens wanneer TVSDK een streamstartgebeurtenis genereert, stuurt de speler reg
 
 In de klasse PTSDKConfig is de forceHTTPS API toegevoegd.
 
-De PTSDKConfig-klasse biedt methoden om SSL af te dwingen voor aanvragen die zijn ingediend bij Adobe Primetime en besluitvormings-, DRM- en Video Analytics-servers. Zie de methoden `forceHTTPS` `isForcingHTTPS` en methoden in deze klasse voor meer informatie. Als een manifest over HTTPS wordt geladen, behoudt TVSDK het inhoudsgebruik van HTTPS en eerbiedigt dit gebruik wanneer het laden van om het even welke relatieve URLs van dat manifest.
+De PTSDKConfig-klasse biedt methoden om SSL af te dwingen voor aanvragen die zijn gedaan naar Adobe Primetime-, beslissings-, DRM- en video-Analytics-servers. Zie de methoden `forceHTTPS` `isForcingHTTPS` en methoden in deze klasse voor meer informatie. Als een manifest over HTTPS wordt geladen, behoudt TVSDK het inhoudsgebruik van HTTPS en eerbiedigt dit gebruik wanneer het laden van om het even welke relatieve URLs van dat manifest.
 
 **Opmerking**: Verzoeken naar domeinen van derden, zoals het bijhouden van pixels voor toevoegen, inhoud en URL&#39;s voor toevoegen en vergelijkbare verzoeken, worden niet gewijzigd. Het is de verantwoordelijkheid van inhoudsproviders en servers om URL&#39;s op te geven die via HTTPS worden ondersteund.
 
@@ -154,7 +157,7 @@ In DRM-beleid kan nu de hoogst toegestane resolutie worden opgegeven, afhankelij
 
 * **Video Heartbeats Library (VHL)-update naar versie 1.4.1.1**
 
-   * De mogelijkheid om verschillende analytische gebruiksscenario&#39;s, van andere SDK&#39;s of spelers, te bundelen met de Adobe Analytics Video Essentials.
+   * De mogelijkheid om verschillende analysemogelijkheden te bundelen, van andere SDK&#39;s of spelers, met de Adobe Analytics Video Essentials.
    * Het bijhouden van advertenties is geoptimaliseerd door de methoden trackAdBreakStart en trackAdBreakComplete te verwijderen. Het ad-einde wordt afgeleid van de methodeaanroepen trackAdStart en trackAdComplete.
    * De eigenschap playhead is niet meer nodig bij het bijhouden van advertenties.
    * Toegevoegde ondersteuning voor de Bezoeker-id van de marketingcloud.
@@ -311,9 +314,9 @@ Comment Type: draft
 * (ZD#31979) - Wordt niet gecompileerd/uitgevoerd als het iOS 10 of hoger is voor iPhone 7/iPhone7+
 
    Vaste samenstelling van IB-documenten voor eerdere versies dan iOS 7 wordt niet meer ondersteund
-* (ZD#32920) - Wit leeg scherm binnen een advertentiesonderbreking en geen voltooiing van de Advertentie
+* (ZD#32920) - Leeg scherm binnen een Advertentiesonderbreking en geen Ad-onderbreking voltooiing
 
-   Wanneer een Ad-einde Ad-instanties weergeeft en nadat een advertentie-instantie is voltooid, wordt een wit leeg scherm weergegeven
+   Wanneer een Ad-einde Ad-instanties weergeeft en nadat een advertentie-instantie is voltooid, wordt een leeg scherm weergegeven
 * (ZD#32509) - Schermopname van iOS 11 uitschakelen Schermopname uitschakelen Schermopname op iOS 11
 
 * (ZD#33179) - Gebeurtenisfout met tussenpozen in iOS11
@@ -329,7 +332,7 @@ Comment Type: draft
 * (ZD #31951) - TVSDK-fout tijdens rotaties van licentie.
 
    Probleem met rotatie van licentie opgelost.
-* (ZD #31951) - Wit leeg scherm binnen een pagina-einde en geen voltooide advertentie-einde.
+* (ZD #31951) - Leeg scherm binnen een Ad-einde en geen Ad-break-voltooiing.
 
    Een probleem afgehandeld waarbij VPAID-advertenties van Facebook vaak meerdere CDATA-blokken in één \&amp;lt;AdParameters\&amp;gt retourneren; VAST-knooppunt.
 * (ZD #33336) - [iOS] TVSDK - Advertentiepods worden niet gevuld, ondanks dat er voldoende advertenties zijn geretourneerd door Freewieltje.
@@ -489,9 +492,9 @@ Dit probleem is opgelost door een oplossing te bieden voor streams die geen M3U8
 
 De volgende problemen zijn in deze release opgelost voor TVSDK:
 
-* (ZD# 24180) Een aangepaste koptekst toevoegen aan de witte lijst
+* (ZD# 24180) Een aangepaste koptekst toevoegen om lijst toe te staan
 
-Er is een nieuwe aangepaste koptekst toegevoegd aan de witte lijst voor TVSDK.
+Er is een nieuwe aangepaste koptekst toegevoegd aan de lijst voor TVSDK-toestaan.
 
 * (ZD# 25016) Failover-stroom wordt willekeurig geselecteerd wanneer ABR-besturingsparameters worden ingesteld
 
@@ -609,7 +612,7 @@ Dit probleem is opgelost door extra null-objectcontroles toe te voegen tijdens h
 
 Dit probleem is hetzelfde als (ZD #21590).
 
-* (ZD #22280) - De videolengte van Analytics wordt ingesteld op 0
+* (ZD #22280) - Analytics Video Length wordt ingesteld op 0
 
 Dit probleem is hetzelfde als (ZD #21590).
 
@@ -635,7 +638,7 @@ Dit probleem is opgelost door de logica bij te werken om de weergave van de spel
 
 Dit probleem is opgelost door VideoAnalyticsTracker bij te werken om het begin/einde van een hoofdstuk correct te detecteren bij het schakelen tussen grenzen van hoofdstukken en niet-hoofdstukken.
 
-* (ZD #20784) - Analyse: Het triggeren van inhoud wordt voltooid voor live video-overgangen
+* (ZD #20784) - Analytics: Het triggeren van inhoud wordt voltooid voor live video-overgangen
 
 Dit probleem is opgelost door een logica toe te voegen die handmatig het voltooien van de inhoud tijdens een sessie voor het bijhouden van video activeert.
 
@@ -900,7 +903,7 @@ Correctie van onjuiste reverse MD5 in 3P URL.
 
 **Versie 1.4.12** (1.4.12.463) voor iOS 6.0+
 
-* (ZD #2751) CSAI en CRS| Verbeteren: Dynamische elementen in bepaalde URL&#39;s van mediabestanden verwerken.
+* (ZD #2751) CSAI en CRS | Verbeteren: Dynamische elementen in bepaalde URL&#39;s van mediabestanden verwerken.
 
 Bijgewerkte Creative Repackaging Service voor het correct verwerken van advertenties met dynamische creatieve URL&#39;s.
 
@@ -950,7 +953,7 @@ Ondersteuning voor het vastzetten van lege URL&#39;s voor het bijhouden van rege
 
 **Versie 1.4.5** (1.4.5.283)
 
-* (ZD #2141) Implementatie van analysemogelijkheden voor de TreeHouse-app heeft AdobeAnalyticsPlugin.a-bibliotheek toegevoegd om het pakket samen te stellen.
+* (ZD #2141) Analytics-implementatie voor de TreeHouse-app heeft AdobeAnalyticsPlugin.a-bibliotheek toegevoegd om het pakket samen te stellen.
 * Video Heartbeats Library update naar 1.4.1.2
 * [PTPALY-4226] [verwant aan ZD #2423) Het uitvoeren van het Terugstellen DRM kan in schrapping van de gegevens van het Document van de Toepassing resulteren.
 
@@ -985,7 +988,7 @@ Ondersteuning voor het vastzetten van lege URL&#39;s voor het bijhouden van rege
 * Het kan voorkomen dat tijdens het roteren van licenties de video niet wordt afgespeeld op iOS 11 en dat deze goed wordt afgespeeld op iOS 9.x en iOS 10.x.
 * Als bij VPAID 2.0-ondersteuning het afspelen via AirPlay actief is, worden VPAID-advertenties overgeslagen.
 * Het drmNativeInterface.framework is niet correct gekoppeld wanneer het minimumdoel is ingesteld op iOS7 (of hoger).\
-   Oplossing: Geef de `libstdc++6`naam expliciet op.  dylibbibliotheek, als hieronder: Ga naar Doel->Build Phases->Link Binary with Libraries and add `libstdc++.6.dylib`.
+   Oplossing: Geef de `libstdc++6`naam expliciet op.  dylibbibliotheek, als hieronder: Ga naar Target->Build Phases->Link Binary with Libraries and add `libstdc++.6.dylib`.
 
 * Post-Roll Ad wordt niet ingevoegd voor het vervangen van API.
 * Als u in een advertentiesonderbreking zoekt (zonder dat u er uit komt), wordt een dubbel bericht weergegeven en wordt een bericht voor een ad-onderbreking gestart
