@@ -5,7 +5,10 @@ seo-title: Tenant-configuratiebestand
 title: Tenant-configuratiebestand
 uuid: bc9ee4a1-63b6-4362-9929-3e9fe8251075
 translation-type: tm+mt
-source-git-commit: 7e8df034035fe465fbe403949ef828e7811ced2e
+source-git-commit: 9d2e046ae259c05fb4c278f464c9a26795e554fc
+workflow-type: tm+mt
+source-wordcount: '798'
+ht-degree: 0%
 
 ---
 
@@ -45,13 +48,13 @@ Het configuratiebestand voor de huurder bevat:
    * *Rechts* afspelen — Er moet minimaal één recht worden opgegeven. Als u meerdere rechten opgeeft, gebruikt de client het eerste recht dat aan alle vereisten voldoet.
 
       * *Uitvoerbeveiliging* — Hiermee wordt bepaald of uitvoer naar externe renderingapparaten moet worden beveiligd.
-      * *Beperkingen* voor AIR- en SWF-toepassingen — Optionele whitelist van SWF- en AIR-toepassingen die de inhoud kunnen afspelen (bijvoorbeeld alleen de opgegeven toepassingen zijn toegestaan). SWF-toepassingen worden geïdentificeerd door een URL of door de samenvatting van het SWF-bestand en de maximale tijd die nodig is om de samenvatting te downloaden en te controleren.
+      * *Beperkingen* voor AIR- en SWF-toepassingen — Optioneel staan lijst toe met SWF- en AIR-toepassingen die de inhoud kunnen afspelen (bijvoorbeeld alleen de opgegeven toepassingen zijn toegestaan). SWF-toepassingen worden geïdentificeerd door een URL of door de samenvatting van het SWF-bestand en de maximale tijd die nodig is om de samenvatting te downloaden en te controleren.
 
          Zie *SWF-hash Calculator* voor informatie over het berekenen van de SWF-digest.
 
          Een uitgevers-id en een optionele toepassings-id, een minimale versie en een maximale versie identificeren AIR- en iOS-toepassingen. Als u geen toepassingsbeperkingen opgeeft, kan elke SWF- of AIR-toepassing de inhoud afspelen.
 
-      * *DRM- en Runtime Module-beperkingen* — Geeft het minimale beveiligingsniveau op dat is vereist voor de DRM/Runtime-module. Bevat optioneel een zwarte lijst met versies die de inhoud niet mogen afspelen. Moduleversies worden aangeduid met kenmerken, zoals een besturingssysteem en/of een versienummer.
+      * *DRM- en Runtime Module-beperkingen* — Geeft het minimale beveiligingsniveau op dat is vereist voor de DRM/Runtime-module. Bevat optioneel een bloklijst met versies die de inhoud niet mogen afspelen. Moduleversies worden aangeduid met kenmerken, zoals een besturingssysteem en/of een versienummer.
 
          De beperkingen van de Module DRM en de Beperkingen van de Runtime Module steunen nu de volgende extra attributen:
 
