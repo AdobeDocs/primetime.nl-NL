@@ -3,7 +3,10 @@ seo-title: Besturingselementen voor uitvoerbeveiliging
 title: Besturingselementen voor uitvoerbeveiliging
 uuid: a0518392-cd33-4ef0-834c-f90145a9b421
 translation-type: tm+mt
-source-git-commit: 29bc8323460d9be0fce66cbea7c6fce46df20d61
+source-git-commit: 9d2e046ae259c05fb4c278f464c9a26795e554fc
+workflow-type: tm+mt
+source-wordcount: '655'
+ht-degree: 0%
 
 ---
 
@@ -14,7 +17,7 @@ De uitvoerbeveiliging bepaalt de parameter of de uitvoer naar externe renderappa
 
 Bepaalt of uitvoer naar externe renderingapparaten moet worden beperkt. Een extern apparaat wordt gedefinieerd als een video- of audioapparaat dat niet in de computer is ingesloten. Geïntegreerde beeldschermen, zoals in notebookcomputers, worden niet als extern beschouwd in het uitvoerbeveiligingsscenario.
 
-Over de types van luchtverbinding (OTA) zijn allen zwarte lijst door gebrek maar kan uitdrukkelijk worden gewhitelliseerd indien nodig. De gesteunde verbindingen OTA omvatten: Miracast, AirPlay, DLNA en WIDI.
+Over de luchtverbindingstypen (OTA) worden standaard alle blokken vermeld, maar kunnen indien nodig expliciet worden vermeld. De gesteunde verbindingen OTA omvatten: Miracast, AirPlay, DLNA en WIDI.
 
 **Op resolutie gebaseerde outputbescherming: (Beschikbaar vanaf versie 5.3.) ** Dit biedt uitvoerbescherming op basis van het verticale aantal pixels van de inhoud, waardoor een verscheidenheid aan beveiligingsvereisten kan worden opgegeven op basis van verticale aantallen pixels.
 
