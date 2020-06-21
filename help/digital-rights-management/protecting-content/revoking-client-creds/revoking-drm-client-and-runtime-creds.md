@@ -3,7 +3,10 @@ seo-title: Referenties van DRM-client en runtime intrekken
 title: Referenties van DRM-client en runtime intrekken
 uuid: 8e36536a-8eed-4d27-8a5f-8d3219817e57
 translation-type: tm+mt
-source-git-commit: 29bc8323460d9be0fce66cbea7c6fce46df20d61
+source-git-commit: 9d2e046ae259c05fb4c278f464c9a26795e554fc
+workflow-type: tm+mt
+source-wordcount: '413'
+ht-degree: 0%
 
 ---
 
@@ -12,7 +15,7 @@ source-git-commit: 29bc8323460d9be0fce66cbea7c6fce46df20d61
 
 DRM/Runtime versies worden geïdentificeerd door veiligheidsniveau, versienummer, en andere attributen met inbegrip van het Besturingssysteem en runtime. Als u de toegestane DRM-/Runtime-versies wilt beperken, stelt u de modulebeperkingen in een DRM-beleid of in een `HandlerConfiguration`. Modulebeperkingen kunnen een minimaal beveiligingsniveau en een lijst met moduleversies bevatten die geen licentie mogen krijgen.
 
-Zie [Blacklist van DRM-clients waarvoor de toegang tot beveiligde inhoud](../../protecting-content/introduction/usage-rules/runtime-application-restrictions/blacklist-drm-clients.md) is beperkt voor meer informatie over de kenmerken die worden gebruikt om een DRM/Runtime-module te identificeren.
+Zie [Blokoplijst met DRM-clients waarvoor de toegang tot beveiligde inhoud](../../protecting-content/introduction/usage-rules/runtime-application-restrictions/blocklist-drm-clients.md) is beperkt voor meer informatie over de kenmerken die worden gebruikt om een DRM/Runtime-module te identificeren.
 
 Als het minimale beveiligingsniveau is ingesteld, moet de versie op de client (opgegeven in de computertoken) groter zijn dan of gelijk zijn aan de opgegeven waarde.
 
@@ -24,6 +27,6 @@ Als u een nieuwere versie van Adobe Flash Player/Adobe AIR Runtime of de Adobe C
 
 Zie Een beleid [bijwerken met de Java API](../../protecting-content/working-policies-overview/updating-policy-using-java-api.md).
 
-Dan moet u een Lijst van de Update van het Beleid DRM tot stand brengen of binnen beperkingen plaatsen `HandlerConfiguration` door aan te halen `HandlerConfiguration.setRuntimeModuleRequirements()` of `HandlerConfiguration.setDRMModuleRequirements()`. Wanneer een gebruiker een nieuwe licentie aanvraagt waarvoor de opgegeven zwarte lijsten zijn ingeschakeld, moet u de nieuwste runtimes en bibliotheken installeren voordat een licentie kan worden uitgegeven.
+Dan moet u een Lijst van de Update van het Beleid DRM creëren of binnen beperkingen plaatsen `HandlerConfiguration` door te roepen `HandlerConfiguration.setRuntimeModuleRequirements()` of `HandlerConfiguration.setDRMModuleRequirements()`. Wanneer een gebruiker een nieuwe licentie aanvraagt waarvoor de opgegeven bloklijsten zijn ingeschakeld, moet u de nieuwste runtimes en bibliotheken installeren voordat een licentie kan worden uitgegeven.
 
-Zie de voorbeeldcode in Een beleid [bijwerken met de Java API Voor een voorbeeld van het op een zwarte lijst plaatsen van DRM- en runtimeversies](../../protecting-content/working-policies-overview/updating-policy-using-java-api.md) , bijvoorbeeld op een zwarte lijst plaatsen van DRM- en runtimeversies.
+Zie de voorbeeldcode in Een beleid [bijwerken met de Java API Een voorbeeld van een DRM- en runtimeversie](../../protecting-content/working-policies-overview/updating-policy-using-java-api.md) voor bloklijsten in een DRM- en runtimeversie.
