@@ -8,9 +8,9 @@ products: SG_PRIMETIME
 topic-tags: release-notes
 discoiquuid: 3a27379f-3cef-4ea3-bcae-21382dc1e9fd
 translation-type: tm+mt
-source-git-commit: 9c6a6f0b5ecff78796e37daf9d7bdb9fa686ee0c
+source-git-commit: 9d2e046ae259c05fb4c278f464c9a26795e554fc
 workflow-type: tm+mt
-source-wordcount: '5417'
+source-wordcount: '5418'
 ht-degree: 0%
 
 ---
@@ -256,7 +256,7 @@ Android TVSDK v2.5.2 biedt belangrijke foutoplossingen en enkele API-wijzigingen
 
 De belangrijke nieuwe functies die zijn uitgebracht in Android 2.5.1.
 
-* **Prestatieverbeteringen -** De nieuwe TVSDK 2.5.1-architectuur biedt een aantal prestatieverbeteringen. Gebaseerd op statistieken van een derdebenchmarkingstudie, verstrekt de nieuwe architectuur een 5x vermindering van starttijd en 3.8x minder gelaten vallen kaders in vergelijking met het industriegemiddelde:
+* **Prestatieverbeteringen -** De nieuwe TVSDK 2.5.1-architectuur biedt een aantal prestatieverbeteringen. Gebaseerd op statistieken van een derdebenchmarkingsstudie, verstrekt de nieuwe architectuur een 5x vermindering van starttijd en 3.8x minder gelaten vallen kaders in vergelijking met het industriegemiddelde:
 
 * **Instant on for VOD en live -** Wanneer u instant on inschakelt, initialiseert de TVSDK en buffert deze media voordat het afspelen wordt gestart. Omdat u meerdere MediaPlayerItemLoader-instanties tegelijk op de achtergrond kunt starten, kunt u meerdere streams bufferen. Wanneer een gebruiker het kanaal wijzigt en de stream correct is gebufferd, wordt het afspelen op het nieuwe kanaal onmiddellijk gestart. TVSDK 2.5.1 ondersteunt ook Instant On voor **live** streams. De live streams worden opnieuw gebufferd wanneer het live venster wordt verplaatst.
 
@@ -435,7 +435,7 @@ In deze sectie wordt een overzicht gegeven van het probleem dat is opgelost in T
 
 **Android TVSDK 3.10**
 
-* ZD#40340 - De toepassing loopt vast met de fout &quot;App niet reageert&quot; bij het proberen van het afspelen nadat alle TS-bestanden (TypeScript) zijn gesplitst.
+* ZD#40340 - De toepassing loopt vast met de fout &quot;App niet reageert&quot; bij het proberen van het afspelen na een blokvermelding van alle TS-bestanden (TypeScript).
 
 **Android TVSDK 3.8**
 
@@ -717,7 +717,7 @@ WebViewDebbuging wordt geplaatst aan Vals door gebrek. Als u foutopsporing wilt 
    * Ondersteuning van ID3-tags is niet geverifieerd
 
 * Voor gebeurtenissen voor advertentievoortgang weerspiegelt de tijdlijnbalk mogelijk niet de 100% nauwkeurige en afspeeltijd. Als tussenoplossing kunt u de voltooiing van het afspelen van de advertentie en de gebruikersinterface voor verschillende doeleinden kennen, zoals het bijwerken van de tijdlijnbalk, het verwijderen van en verwante gebruikersinterface, enz. `adcompleteevent`
-* Vast en de vraag die van VMAP is teruggekeerd respecteert niet de just-in-Time lookahead positie.
+* Vast en de vraag die van VMAP is teruggekeerd respecteert niet de just-in-timelookahead positie.
 
 **Android TVSDK 2.5.6**
 
