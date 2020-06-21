@@ -5,7 +5,10 @@ seo-title: De licentieserver beschermen
 title: De licentieserver beschermen
 uuid: 7b5de17d-d0a7-41df-9651-4ff51c9965c6
 translation-type: tm+mt
-source-git-commit: c78d3c87848943a0be3433b2b6a543822a7e1c15
+source-git-commit: 9d2e046ae259c05fb4c278f464c9a26795e554fc
+workflow-type: tm+mt
+source-wordcount: '1199'
+ht-degree: 0%
 
 ---
 
@@ -44,7 +47,7 @@ Om CRLs te produceren, zie [RevocationListFactory](https://help.adobe.com/en_US/
 
 ## Terugdraaidetectie {#rollback-detection}
 
-Als in uw implementatie van Adobe Primetime DRM bedrijfsregels worden gebruikt die de client vereisen om de status te behouden (bijvoorbeeld het interval voor het afspeelvenster), raadt Adobe aan dat de server de terugdraaiteller bijhoudt en AIR- of SWF-whitelisting gebruikt.
+Als in uw implementatie van Adobe Primetime DRM bedrijfsregels worden gebruikt die de client vereisen om de status te behouden (bijvoorbeeld het interval voor het afspeelvenster), raadt Adobe aan dat de server de terugdraaiteller bijhoudt en dat AIR of SWF het weergeven van lijsten toestaat.
 
 De rollback teller wordt verzonden naar de server in de meeste verzoeken van de cliënt. Als voor uw implementatie van Primetime DRM de terugdraaiteller niet nodig is, kan deze worden genegeerd. Anders raadt Adobe aan dat de server de willekeurige machine-id opslaat, die wordt verkregen met [MachineToken.getUniqueId()](https://help.adobe.com/en_US/primetime/api/drm-apis/server/javadocs-flashaccess-pro/com/adobe/flashaccess/sdk/cert/MachineId.html#getUniqueId()), en de huidige tellerwaarde in een database.
 
@@ -72,11 +75,11 @@ Een aanval van Dos is een poging door aanvallers om wettige gebruikers van de di
 
 Zie [ AbstractRequestMessage.getMessageId()](https://help.adobe.com/en_US/primetime/api/drm-apis/server/javadocs-flashaccess-pro/com/adobe/flashaccess/sdk/protocol/AbstractRequestMessage.html#getMessageId())voor meer informatie over afspeelbeveiliging.
 
-## Een whitelist bijhouden van vertrouwde inhoudpakketten{#maintain-a-whitelist-of-trusted-content-packagers}
+## Een lijst met vertrouwde inhoudspakketten bijhouden{#maintain-a-allowlist-of-trusted-content-packagers}
 
-Een whitelist is een lijst met vertrouwde entiteiten.
+Een lijst met toegestane entiteiten is een lijst met vertrouwde entiteiten.
 
-Voor inhoudspakketten zijn de entiteiten organisaties die door de eigenaar van de inhoud worden vertrouwd om de videobestanden te verpakken (of te coderen) en DRM-beveiligde inhoud te maken. Wanneer u Adobe Primetime DRM implementeert, moet u een whitelist van vertrouwde inhoudspakketten bijhouden. U moet ook de identiteit verifiëren van de inhoudspakket in de DRM-metagegevens van een DRM-beveiligd bestand voordat u een licentie afgeeft.
+Voor inhoudspakketten zijn de entiteiten organisaties die door de eigenaar van de inhoud worden vertrouwd om de videobestanden te verpakken (of te coderen) en DRM-beveiligde inhoud te maken. Wanneer u Adobe Primetime DRM implementeert, moet u een toegestane lijst met vertrouwde inhoudspakketten bijhouden. U moet ook de identiteit verifiëren van de inhoudspakket in de DRM-metagegevens van een DRM-beveiligd bestand voordat u een licentie afgeeft.
 
 Zie [V2ContentMetaData.getPackagerInfo()](https://help.adobe.com/en_US/primetime/api/drm-apis/server/javadocs-flashaccess-pro/com/adobe/flashaccess/sdk/media/drm/keys/v2/V2ContentMetaData.html#getPackagerInfo())voor informatie over de entiteit die de inhoud in een pakket heeft opgenomen.
 
