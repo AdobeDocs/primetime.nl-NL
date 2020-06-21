@@ -5,7 +5,10 @@ seo-title: Overzicht
 title: Overzicht
 uuid: 874c175b-8207-49fa-aad4-204ccbee9c2c
 translation-type: tm+mt
-source-git-commit: 53654b740b03c6a79394d30704a41186d4655237
+source-git-commit: 9d2e046ae259c05fb4c278f464c9a26795e554fc
+workflow-type: tm+mt
+source-wordcount: '482'
+ht-degree: 0%
 
 ---
 
@@ -40,4 +43,4 @@ De SDK biedt een Java API om deze taken uit te voeren. De SDK bevat referentie-i
 
 Geeft aangepaste gebruiksregels aan. U kunt aangepaste gegevens opnemen in licenties die door de licentieserver worden uitgegeven. De interpretatie/verwerking van deze gegevens is volledig tot aan de implementatie van de clienttoepassing en licentieserver.
 
-Voorbeeld van gebruik: Laat rekbaarheid van gebruiksregels toe door andere bedrijfsregels toe te staan om veilig als deel van het beleid en/of inhoudsvergunning worden vervoerd. Om veiligheidsredenen, omdat deze gebruiksregels worden afgedwongen in aangepaste code voor clienttoepassingen, moet deze optie worden gebruikt in combinatie met de opties voor de witte lijst van AIR-toepassingen of Flash Player SWF. Zie &quot;Beperkingen voor[runtime en toepassingen](../../aaxs-protecting-content/content-introduction/content-usage-rules/content-runtime-application-restrictions/content-whitelist-air.md)&quot; voor meer informatie.
+Voorbeeld van gebruik: Laat rekbaarheid van gebruiksregels toe door andere bedrijfsregels toe te staan om veilig als deel van het beleid en/of inhoudsvergunning worden vervoerd. Om veiligheidsredenen, omdat deze gebruiksregels worden afgedwongen in aangepaste code voor clienttoepassingen, moet deze optie worden gebruikt in combinatie met de AIR-toepassing of Flash Player SWF-opties voor lijsten toestaan. Zie &quot;Beperkingen voor[runtime en toepassingen](../../aaxs-protecting-content/content-introduction/content-usage-rules/content-runtime-application-restrictions/content-allowlist-air.md)&quot; voor meer informatie.
