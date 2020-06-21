@@ -5,7 +5,10 @@ seo-title: Het gebruik van de Opdracht van de Manager van het beleid
 title: Het gebruik van de Opdracht van de Manager van het beleid
 uuid: 9b17bc9a-0b1b-405f-a62b-0310c43c9255
 translation-type: tm+mt
-source-git-commit: 19e7c941b3337c3b4d37f0b6a1350aac2ad8a0cc
+source-git-commit: 9d2e046ae259c05fb4c278f464c9a26795e554fc
+workflow-type: tm+mt
+source-wordcount: '1228'
+ht-degree: 0%
 
 ---
 
@@ -85,7 +88,7 @@ java -jar AdobePolicyManager.jar
    <td colname="2" class="- topic/entry "> <p class="- topic/p ">Het afspeelvenster is het aantal minuten dat de inhoud kan worden weergegeven vanaf het eerste afspelen. </p> <p>Als deze niet is opgegeven of als <span class="codeph"> -w </span> wordt gebruikt zonder een aantal minuten op te geven, is er geen beperking voor het afspeelvenster. De waarde moet niet-negatief zijn. </p> <p>De optionele <span class="codeph"> schakeltHS- </span> of <span class="codeph"> HS- </span> markeringssignalen in of uit om hardstop in of uit te schakelen. De markering geeft aan of de decoderingscontext aan het einde van het afspeelvenster (ingeschakeld) is verwijderd of niet (uitgeschakeld). </p> <p>Als u bijvoorbeeld wilt opgeven dat de inhoud alleen gedurende 60 minuten mag worden weergegeven en een vaste stop vereist: 
      <codeblock>
        -w&amp;nbsp;60,enableHS 
-     </codeblock> </p> <p>Opmerking:  De <i>vaste stop</i> wordt momenteel niet ondersteund in Flash Player, Android en iOS. </p> </td> 
+     </codeblock> </p> <p>Opmerking:  <i>Harde stop</i> wordt momenteel niet ondersteund in Flash Player, Android en iOS. </p> </td> 
   </tr> 
   <tr rowsep="1" class="- topic/row "> 
    <td colname="1" class="- topic/entry "> <span class="+ topic/ph pr-d/codeph codeph"> -l minuten </span> </td> 
@@ -108,28 +111,28 @@ java -jar AdobePolicyManager.jar
    <td colname="2" class="- topic/entry "> <p class="- topic/p ">Anonieme toegang toestaan. </p> <p class="- topic/p ">U kunt deze optie niet samen met <span class="codeph"> -authNS toepassen </span>. </p> <p class="- topic/p ">Deze optie is niet toegestaan voor updates. </p> </td> 
   </tr> 
   <tr rowsep="1" class="- topic/row "> 
-   <td colname="1" class="- topic/entry "> <span class="+ topic/ph pr-d/codeph codeph"> -air pubId </span>[: <span class="+ topic/ph pr-d/codeph codeph"> toepassings-id </span>[:[ <span class="+ topic/ph pr-d/codeph codeph"> min </span>]:[ <span class="+ topic/ph pr-d/codeph codeph"> max </span>]] </td> 
-   <td colname="2" class="- topic/entry "> <p class="- topic/p ">Een whitelist van AIR-toepassingen die beveiligde inhoud kunnen afspelen. </p> <p class="- topic/p ">U kunt deze optie toepassen om te beperken welke uitgevers, toepassingen, en versies tot de inhoud kunnen toegang hebben die met dit beleid DRM wordt beschermd. </p> <p class="- topic/p ">Als u geen <i class="+ topic/ph hi-d/i ">appId</i>opgeeft, zijn alle toepassingen voor uitgever <i class="+ topic/ph hi-d/i ">pubId</i> toegestaan. </p> <p>Opmerking:  <i class="+ topic/ph hi-d/i ">min</i> - en <i class="+ topic/ph hi-d/i ">max</i> -versienummers zijn optioneel. </p> <p class="- topic/p ">U kunt meerdere <span class="codeph"> -air- </span> opties opgeven om meerdere toepassingen toe te staan. Als u geen AIR- of SWF-toepassing opgeeft, hebben alle toepassingen toegang tot deze inhoud. Als u tijdens een update alle items uit de lijst wilt verwijderen of verwijderen, past u <span class="codeph"> -air toe </span> zonder de resterende argumenten. </p> </td> 
+   <td colname="1" class="- topic/entry "> <span class="+ topic/ph pr-d/codeph codeph"> -air pubId </span>[: <span class="+ topic/ph pr-d/codeph codeph"> appId </span>[:[ <span class="+ topic/ph pr-d/codeph codeph"> min </span>]:[ <span class="+ topic/ph pr-d/codeph codeph"> max </span>]] </td> 
+   <td colname="2" class="- topic/entry "> <p class="- topic/p ">Een lijst met toegestane AIR-toepassingen die beveiligde inhoud kunnen afspelen. </p> <p class="- topic/p ">U kunt deze optie toepassen om te beperken welke uitgevers, toepassingen, en versies tot de inhoud kunnen toegang hebben die met dit beleid DRM wordt beschermd. </p> <p class="- topic/p ">Als u geen <i class="+ topic/ph hi-d/i ">appId</i>opgeeft, zijn alle toepassingen voor uitgever <i class="+ topic/ph hi-d/i ">pubId</i> toegestaan. </p> <p>Opmerking:  <i class="+ topic/ph hi-d/i ">min</i> - en <i class="+ topic/ph hi-d/i ">max</i> -versienummers zijn optioneel. </p> <p class="- topic/p ">U kunt meerdere <span class="codeph"> -air- </span> opties opgeven om meerdere toepassingen toe te staan. Als u geen AIR- of SWF-toepassing opgeeft, hebben alle toepassingen toegang tot deze inhoud. Als u tijdens een update alle items uit de lijst wilt verwijderen of verwijderen, past u <span class="codeph"> -air toe </span> zonder de resterende argumenten. </p> </td> 
   </tr> 
   <tr rowsep="1" class="- topic/row "> 
    <td colname="1" class="- topic/entry "> <span class="+ topic/ph pr-d/codeph codeph"> -drmBlacklist name </span> / <i class="+ topic/ph hi-d/i "></i> value <span class="+ topic/ph pr-d/codeph codeph"> </span><i class="+ topic/ph hi-d/i "> </i> <span class="+ topic/ph pr-d/codeph codeph"> pairs </span> </td> 
-   <td colname="2" class="- topic/entry "> <p class="- topic/p ">De DRM-clients die geen toegang hebben tot beveiligde inhoud. </p> <p class="- topic/p ">De waarde ondersteunt door komma's gescheiden naam:waardeparen in de volgende indeling: </p> <p class="- topic/p "> <span class="+ topic/ph pr-d/codeph codeph"> of| release= stringValue </span> </p> <p class="- topic/p ">Bijvoorbeeld, <span class="codeph"> os=Win, versie=2.0.1 </span>. Als u tijdens een update alle items uit de lijst wilt verwijderen, past u <span class="codeph"> -drmBlacklist toe </span> zonder de resterende argumenten. </p> </td> 
+   <td colname="2" class="- topic/entry "> <p class="- topic/p ">De DRM-clients die geen toegang hebben tot beveiligde inhoud. </p> <p class="- topic/p ">De waarde ondersteunt door komma's gescheiden naam:waardeparen in de volgende indeling: </p> <p class="- topic/p "> <span class="+ topic/ph pr-d/codeph codeph"> os | release= stringValue </span> </p> <p class="- topic/p ">Bijvoorbeeld, <span class="codeph"> os=Win, versie=2.0.1 </span>. Als u tijdens een update alle items uit de lijst wilt verwijderen, past u <span class="codeph"> -drmBlacklist toe </span> zonder de resterende argumenten. </p> </td> 
   </tr> 
   <tr rowsep="1" class="- topic/row "> 
    <td colname="1" class="- topic/entry "> <span class="+ topic/ph pr-d/codeph codeph"> -drmLevel int </span> </td> 
    <td colname="2" class="- topic/entry "> <p class="- topic/p ">Geeft aan dat DRM-clients een toegewezen minimumbeveiligingsniveau moeten hebben om toegang tot beveiligde inhoud te krijgen. </p> </td> 
   </tr> 
   <tr rowsep="1" class="- topic/row "> 
-   <td colname="1" class="- topic/entry "> <span class="codeph"> -opAnalog NO_PROTECTION| USE_IF_AVAILABLE| VEREIST| NO_PLAYBACK| REQUIRED_ACP| REQUIRED_CGMSA| USE_IF_AVAILABLE_ACP| USE_IF_AVAILABLE_CGMSA </span> </td> 
+   <td colname="1" class="- topic/entry "> <span class="codeph"> -opAnalog NO_PROTECTION | USE_IF_AVAILABLE | VEREIST | NO_PLAYBACK | REQUIRED_ACP | REQUIRED_CGMSA | USE_IF_AVAILABLE_ACP | USE_IF_AVAILABLE_CGMSA </span> </td> 
    <td colname="2" class="- topic/entry "> <p class="- topic/p ">Restricties voor analoge uitvoerbescherming </p> </td> 
   </tr> 
   <tr rowsep="1" class="- topic/row "> 
-   <td colname="1" class="- topic/entry "> <span class="codeph"> -opDigital NO_PROTECTION| USE_IF_AVAILABLE| VEREIST| NO_PLAYBACK </span> </td> 
+   <td colname="1" class="- topic/entry "> <span class="codeph"> -opDigital NO_PROTECTION | USE_IF_AVAILABLE | VEREIST | NO_PLAYBACK </span> </td> 
    <td colname="2" class="- topic/entry "> <p class="- topic/p ">Beperkingen van de bescherming van digitale uitvoer </p> </td> 
   </tr> 
   <tr rowsep="1" class="- topic/row "> 
    <td colname="1" class="- topic/entry "> <span class="+ topic/ph pr-d/codeph codeph"> -runtimeBlacklist-naam </span> / <i class="+ topic/ph hi-d/i "></i> value <span class="+ topic/ph pr-d/codeph codeph"> </span><i class="+ topic/ph hi-d/i "> </i> <span class="+ topic/ph pr-d/codeph codeph"> paren </span> </td> 
-   <td colname="2" class="- topic/entry "> <p class="- topic/p ">De toepassingsruntimes die geen toegang hebben tot beveiligde inhoud. </p> <p class="- topic/p ">De waarde ondersteunt door komma's gescheiden naam:waardeparen in de volgende indeling: </p> <p class="- topic/p "> <span class="+ topic/ph pr-d/codeph codeph"> of| Aanvraag| release= stringValue </span> </p> <p class="- topic/p ">Bijvoorbeeld <span class="codeph"> os=Win,release=2.0.1,application=AIR </span>. Als u tijdens een update alle items uit de lijst wilt verwijderen, past u <span class="codeph"> -runtimeBlacklist toe </span> zonder de resterende argumenten. </p> </td> 
+   <td colname="2" class="- topic/entry "> <p class="- topic/p ">De toepassingsruntimes die geen toegang hebben tot beveiligde inhoud. </p> <p class="- topic/p ">De waarde ondersteunt door komma's gescheiden naam:waardeparen in de volgende indeling: </p> <p class="- topic/p "> <span class="+ topic/ph pr-d/codeph codeph"> os | Aanvraag | release= stringValue </span> </p> <p class="- topic/p ">Bijvoorbeeld <span class="codeph"> os=Win,release=2.0.1,application=AIR </span>. Als u tijdens een update alle items uit de lijst wilt verwijderen, past u <span class="codeph"> -runtimeBlacklist toe </span> zonder de resterende argumenten. </p> </td> 
   </tr> 
   <tr rowsep="1" class="- topic/row "> 
    <td colname="1" class="- topic/entry "> <span class="+ topic/ph pr-d/codeph codeph"> -runtimeLevel int </span> </td> 
@@ -137,7 +140,7 @@ java -jar AdobePolicyManager.jar
   </tr> 
   <tr rowsep="1" class="- topic/row "> 
    <td colname="1" class="- topic/entry "> <p class="- topic/p "> <span class="+ topic/ph pr-d/codeph codeph"> -swf url </span> </p> <p class="- topic/p "> <span class="+ topic/ph pr-d/codeph codeph"> -swf file= swf_file </span>, <span class="+ topic/ph pr-d/codeph codeph"> time= max_time_to_verify </span> </p> </td> 
-   <td colname="2" class="- topic/entry "> <p class="- topic/p ">Een whitelist van SWF-toepassingen die beveiligde inhoud mogen afspelen. </p> <p class="- topic/p ">U kunt meerdere <span class="codeph"> -swf- </span> opties opgeven om meerdere toepassingen toe te staan. Als u geen AIR- of SWF-toepassingen opgeeft, hebben alle toepassingen toegang tot deze inhoud. </p> <p>Als u tijdens een update alle items uit de lijst wilt verwijderen, past u <span class="codeph"> -swf toe </span> zonder de resterende argumenten. Als u een SWF-bestand wilt identificeren aan de hand van de hashwaarde, moet u het SWF-bestand opgeven waarvoor de hash moet worden berekend en de maximale tijd die nodig is om de SWF-verificatie te voltooien (in seconden). </p> </td> 
+   <td colname="2" class="- topic/entry "> <p class="- topic/p ">Een lijst met SWF-toepassingen die beveiligde inhoud mogen afspelen. </p> <p class="- topic/p ">U kunt meerdere <span class="codeph"> -swf- </span> opties opgeven om meerdere toepassingen toe te staan. Als u geen AIR- of SWF-toepassingen opgeeft, hebben alle toepassingen toegang tot deze inhoud. </p> <p>Als u tijdens een update alle items uit de lijst wilt verwijderen, past u <span class="codeph"> -swf toe </span> zonder de resterende argumenten. Als u een SWF-bestand wilt identificeren aan de hand van de hashwaarde, moet u het SWF-bestand opgeven waarvoor de hash moet worden berekend en de maximale tijd die nodig is om de SWF-verificatie te voltooien (in seconden). </p> </td> 
   </tr> 
   <tr rowsep="1" class="- topic/row "> 
    <td colname="1" class="- topic/entry "> <span class="+ topic/ph pr-d/codeph codeph"> -k name= value </span> </td> 
@@ -148,8 +151,8 @@ java -jar AdobePolicyManager.jar
    <td colname="2" class="- topic/entry "> <p class="- topic/p ">Voegt een aangepaste eigenschap toe die wordt weergegeven in de licentie die voor elke client wordt gegenereerd. </p> <p class="- topic/p ">U kunt meerdere <span class="codeph"> -p- </span> opties opgeven om meerdere eigenschappen toe te voegen. Tijdens een update moet u <span class="codeph"> -p toepassen </span> zonder de resterende argumenten als u alle eigenschappen wilt verwijderen. De interpretatie of verwerking van deze gegevens wordt beheerd door de implementatie van de clienttoepassing. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="1" class="- topic/entry "> <span class="codeph"> <span class="codeph"> -opOTA whitelist=&lt;connection types&gt; </span></span> </td> 
-   <td colname="2" class="- topic/entry "> Over de beperkingen van de bescherming van de luchtoutput (OTA). In het <span class="codeph"> whitelist- </span> veld wordt opgegeven welke verbindingstypen voor whitelist en de indeling van &lt;verbindingstypen&gt; <span class="codeph"> [type(,type)*] zijn, </span>waarbij het type een van de volgende typen kan zijn: MIRACAST, AIRPLAY, WIDI, DLNA </td> 
+   <td colname="1" class="- topic/entry "> <span class="codeph"> <span class="codeph"> -opOTA whitelist=&lt;connection types&gt; </span> </span> </td> 
+   <td colname="2" class="- topic/entry "> Over de beperkingen van de bescherming van de luchtoutput (OTA). In het <span class="codeph"> whitelist- </span> veld wordt aangegeven welke verbindingstypen zijn toegestaan voor lijst en de indeling van &lt;verbindingstypen&gt; is <span class="codeph"> [type(,type)*] </span>, waarbij het type een van de volgende kan zijn: MIRACAST, AIRPLAY, WIDI, DLNA </td> 
   </tr> 
   <tr> 
    <td colname="1" class="- topic/entry "> <span class="codeph"> -opResolution &lt;filename&gt; </span> </td> 
