@@ -2,7 +2,7 @@
 title: Opmerkingen bij de release PTAI 19.11.1
 description: In de opmerkingen bij de release PTAI 19.11.1 wordt beschreven wat nieuw of gewijzigd is, wat de opgeloste en bekende problemen zijn in Primetime Dynamic Ad Insertion in 2019.
 translation-type: tm+mt
-source-git-commit: 0a58cce0d80ade581e32b5dd9376d336e02fac8b
+source-git-commit: 9d2e046ae259c05fb4c278f464c9a26795e554fc
 workflow-type: tm+mt
 source-wordcount: '1968'
 ht-degree: 0%
@@ -127,7 +127,7 @@ Oplossing voor een bug waarbij Chromecast-spelers het afspelen onverwachts beëi
    * Overige uitkeringen: De de baanverwerkingstijden van CRS en uploadsnelheden aan klanten&#39; CDN-oorsprong worden verbeterd
 * SSAI: URL&#39;s voor ClickThrough en ClickTracking voor videoadvertenties zijn toegevoegd aan de secundaire JSON v2-indeling.
    * Een nieuwe JSON-array-eigenschap, &#39;videoClicks&#39;, volgt de eigenschap &#39;trackingURLs&#39;
-   * De namen van de waarde &quot;event&quot; zijn &quot;clickThrough&quot; en &quot;clickTracking&quot; en hebben geen begintijd
+   * De namen van de waarde &quot;event&quot; zijn &quot;clickThrough&quot; en &quot;clickTracking&quot; en hebben geen begintijdwaarde
 * SSAI: Voor CRS-middelen, toegevoegde functionaliteit om de vervaldatum van het opzoekverslag van een CRS-middel met 30 dagen uit te breiden wanneer het wordt opgenomen
    * Vorig gedrag: Opzoekrecords voor CRS-middelen worden in elke pod in het geheugen opgeslagen. Opzoekrecords voor CRS-middelen worden 30 dagen na het toevoegen aan het geheugen automatisch verwijderd. Als u de opzoekrecord van een creatief CRS-element wilt herhalen in een pod nadat deze uit het geheugen is verwijderd, moet u driemaal op dat creatieve element in die pod terugkeren
    * Nieuw gedrag: Wanneer een pod toegang krijgt tot een opzoekrecord met CRS-middelen om het CRS-element in te voegen, wordt de vervaldatum van de opzoekrecord van het CRS-element in die pod met 30 dagen verlengd. Als gevolg hiervan worden vaak gebruikte CRS-elementen pas 30 dagen nadat deze voor het laatst zijn gebruikt uit de geheugencache van een pod verwijderd
@@ -174,13 +174,13 @@ Oplossing voor een bug waarbij Chromecast-spelers het afspelen onverwachts beëi
    * Oude zoeksleutelstructuur: Parameters voor zone, Advertentiesysteem, Advertentie-id, Creative ID, Creative URL en indeling (doelduur, uitvoerindeling, doel-CDN)
    * De opzoeksleutels voor bestaande CRS-elementen worden bijgewerkt zodat deze overeenkomen met de nieuwe structuur vóór de productievrijgave. Houd er echter rekening mee dat nieuwe elementen die tussen de opzoeksleutels zijn getranscodeerd, niet kunnen worden gebruikt. Als zo, zouden zij een nieuw CRS verzoek in werking stellen de volgende tijd zij na de versie worden ontmoet
 
-* CRS: De mogelijkheid toegevoegd om een zwarte lijst of whitelist te maken van CRS-verzoeken van specifieke advertentiesystemen, id&#39;s, creatieve id&#39;s, creatieve URL&#39;s en/of creatieve indeling
+* CRS: De mogelijkheid toegevoegd om CRS-aanvragen van specifieke advertentiesystemen, id&#39;s, creatieve id&#39;s, creatieve URL&#39;s en/of creatieve indeling te blokkeren/toe te staan
 
    >Opmerking
    >
-   >Adobe voegt regels voor zwarte lijsten toe wanneer advertenties met dynamische waarden (bijvoorbeeld een dynamische parameter in een URL) voor dezelfde advertentie worden gevonden. Dergelijke regels voor zwarte lijsten worden uitgeschakeld nadat de dynamische component is opgelost, door de aanbieder of via een normalisatieregel.
+   >Adobe voegt regels voor blokkeringslijsten toe wanneer advertenties met dynamische waarden (bijvoorbeeld een dynamische parameter in URL) voor dezelfde advertentie worden gevonden. Dergelijke blocklist regels zullen worden onbruikbaar gemaakt nadat de dynamische component, of door de leverancier of door een normalisatieregel wordt opgelost.
 
-   * Als u een zwarte lijst of whitelistregel voor uw zone wilt toevoegen, spreekt u dan voor hulp met uw Technical Account Manager.
+   * Neem contact op met de technische accountmanager als u een blokkklist of allowlist-regel voor uw zone wilt toevoegen.
 
 ### Versie 19.1.1
 
