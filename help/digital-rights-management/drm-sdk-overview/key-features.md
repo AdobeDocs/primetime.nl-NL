@@ -3,7 +3,10 @@ seo-title: Belangrijkste kenmerken
 title: Belangrijkste kenmerken
 uuid: bee91fd7-a335-4881-abad-8972f28630d5
 translation-type: tm+mt
-source-git-commit: 19e7c941b3337c3b4d37f0b6a1350aac2ad8a0cc
+source-git-commit: 9d2e046ae259c05fb4c278f464c9a26795e554fc
+workflow-type: tm+mt
+source-wordcount: '1147'
+ht-degree: 0%
 
 ---
 
@@ -45,6 +48,6 @@ Adobe Primetime DRM biedt de volgende belangrijke functies:
 * **Verpakken van losgekoppelde inhoud:** Voor het verpakken van inhoud is geen netwerkverbinding met de licentieserver vereist. Dit maakt veilige back-endbewerkingen mogelijk door de blootstelling van gecomprimeerde inhoud die nog niet is beschermd, te beperken.
 * **Besturing over terugdraaien klok: **Primetime DRM verstrekt voor de veilige en nauwkeurige berekening van tijd om klokterugdraaiing op de cliëntcomputer te ontdekken. Dit handhaaft rechten met betrekking tot de toegang tot van inhoud voor een specifieke hoeveelheid tijd, en verhindert consumenten toegangsrechten te onderdrukken door de tijd op hun computer te veranderen.
 * **Individualisatie**: Hiermee wordt het binden van inhoud aan een bepaalde computer toegestaan.
-* **whitelist van toepassing:** Hiermee kan de clientruntime ervoor zorgen dat beveiligde inhoud alleen wordt afgespeeld binnen een geautoriseerde SWF- of AIR-toepassing.
+* **Toepassingsstaat lijst toe:** Hiermee kan de clientruntime ervoor zorgen dat beveiligde inhoud alleen wordt afgespeeld binnen een geautoriseerde SWF- of AIR-toepassing.
 * **Intrekking van gecompromitteerde cliënten:** Gecombineerde clientsoftware kan worden ingetrokken. Als wordt vastgesteld dat de Flash Player- of Adobe AIR-runtime in gevaar is gebracht, kan de service aan deze clients worden geweigerd totdat ze een upgrade uitvoeren naar een nieuwere en veiligere versie van de clientsoftware.
 * **Meerdere beleidsregels voor hetzelfde videobestand:** Voor één stuk video-inhoud kunnen meerdere beleidsregels zijn ingesloten tijdens het verpakken. Bij het uitgeven van een vergunning, kan de Server van de Vergunning beslissen welke van het beleid te gebruiken, toelatend een inhoudsverdeler om het zelfde beschermde dossier voor verschillende bedrijfsmodellen (zoals huur en elektronische doorverkoop) te gebruiken.
