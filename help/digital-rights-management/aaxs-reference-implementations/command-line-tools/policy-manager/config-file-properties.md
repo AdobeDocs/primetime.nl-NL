@@ -3,7 +3,10 @@ seo-title: Eigenschappen van configuratiebestand
 title: Eigenschappen van configuratiebestand
 uuid: aec5fee7-4d77-4299-8d85-3e9042b2bbd1
 translation-type: tm+mt
-source-git-commit: 99d7eea63b18a97d2b99d0bb7aab5cdc50ae5ffc
+source-git-commit: 9d2e046ae259c05fb4c278f464c9a26795e554fc
+workflow-type: tm+mt
+source-wordcount: '1121'
+ht-degree: 0%
 
 ---
 
@@ -72,11 +75,11 @@ In het configuratiebestand worden de volgende eigenschappen opgegeven. Voor eige
   </tr> 
   <tr rowsep="1" class="- topic/row "> 
    <td colname="1" class="- topic/entry "><span class="codeph"> policy.drmVersionBlacklist.n</span> <p class="- topic/p "><span class="codeph"> -drmBlacklist</span> <i class="+ topic/ph hi-d/i ">name/value-pairs</i> </p> </td> 
-   <td colname="2" class="- topic/entry ">DRM-clients hebben toegang tot beveiligde inhoud beperkt. Met deze optie geeft u een lijst op met versies van DRM-modules die niet mogen worden gebruikt (zwarte lijst). De waarde bestaat uit door komma's gescheiden naam=waarde paren met de volgende notatie: <p class="- topic/p "><span class="+ topic/ph pr-d/codeph codeph"> os|release|arch|model|leverancier|env|screen=value</span> </p> <p class="- topic/p ">De extra naam/waardeparen moeten komma-gescheiden zijn. Bijvoorbeeld: <span class="codeph"> os=Win,release=2.0,arch=32</span>. </p> </td> 
+   <td colname="2" class="- topic/entry ">DRM-clients hebben toegang tot beveiligde inhoud beperkt. Met deze optie geeft u een lijst op met versies van DRM-modules die niet mogen worden gebruikt (bloklijst). De waarde bestaat uit door komma's gescheiden naam=waarde paren met de volgende notatie: <p class="- topic/p "><span class="+ topic/ph pr-d/codeph codeph"> os|release|arch|model|leverancier|env|screen=value</span> </p> <p class="- topic/p ">De extra naam/waardeparen moeten komma-gescheiden zijn. Bijvoorbeeld: <span class="codeph"> os=Win,release=2.0,arch=32</span>. </p> </td> 
   </tr> 
   <tr rowsep="1" class="- topic/row "> 
    <td colname="1" class="- topic/entry "><span class="codeph"> policy.runtimeVersionBlacklist.n</span> <p class="- topic/p "><span class="codeph"> -runtimeBlacklsit</span> <i class="+ topic/ph hi-d/i ">naam/waarde-paren</i> </p> </td> 
-   <td colname="2" class="- topic/entry ">Toepassingsruntimes hebben geen toegang tot beveiligde inhoud. Met deze optie geeft u een lijst op met versies van runtimemodules die niet mogen worden gebruikt (zwarte lijst). De waarde bestaat uit door komma's gescheiden naam=waarde paren met de volgende notatie: <p class="- topic/p "><span class="+ topic/ph pr-d/codeph codeph"> os|release|toepassing|arch|model|leverancier|env|screen=value</span> </p> <p class="- topic/p ">De extra naam/waardeparen moeten komma-gescheiden zijn. Bijvoorbeeld <span class="codeph"> os=Win,application=AIR</span>. </p> </td> 
+   <td colname="2" class="- topic/entry ">Toepassingsruntimes hebben geen toegang tot beveiligde inhoud. Met deze optie geeft u een lijst op met versies van runtimemodules die niet mogen worden gebruikt (bloklijst). De waarde bestaat uit door komma's gescheiden naam=waarde paren met de volgende notatie: <p class="- topic/p "><span class="+ topic/ph pr-d/codeph codeph"> os|release|toepassing|arch|model|leverancier|env|screen=value</span> </p> <p class="- topic/p ">De extra naam/waardeparen moeten komma-gescheiden zijn. Bijvoorbeeld <span class="codeph"> os=Win,application=AIR</span>. </p> </td> 
   </tr> 
   <tr rowsep="1" class="- topic/row "> 
    <td colname="1" class="- topic/entry "><span class="codeph"> policy.v1DeviceCapabilities</span> <p class="- topic/p "><span class="codeph"> -devCapabilitiesV1</span> <i class="+ topic/ph hi-d/i ">naam/waarde-paren</i> </p> </td> 
@@ -145,11 +148,11 @@ In het configuratiebestand worden de volgende eigenschappen opgegeven. Voor eige
   </tr> 
   <tr rowsep="1" class="- topic/row "> 
    <td colname="1" class="- topic/entry "><span class="+ topic/ph pr-d/codeph codeph">policy.allowedAIRApplication.n</span> </td> 
-   <td colname="2" class="- topic/entry "> <p class="- topic/p ">Een witte lijst met Adobe AIR- of iOS-toepassingen die beveiligde inhoud mogen afspelen. De eigenschap moet de volgende notatie gebruiken: <span class="+ topic/ph pr-d/codeph codeph">pubId</span>[:<span class="+ topic/ph pr-d/codeph codeph">appId</span>[:[<span class="+ topic/ph pr-d/codeph codeph">min</span>]:[<span class="+ topic/ph pr-d/codeph codeph">max</span>]] </p> </td> 
+   <td colname="2" class="- topic/entry "> <p class="- topic/p ">Een lijst met toegestane Adobe AIR- of iOS-toepassingen om beveiligde inhoud af te spelen. De eigenschap moet de volgende notatie gebruiken: <span class="+ topic/ph pr-d/codeph codeph">pubId</span>[:<span class="+ topic/ph pr-d/codeph codeph">appId</span>[:[<span class="+ topic/ph pr-d/codeph codeph">min</span>]:[<span class="+ topic/ph pr-d/codeph codeph">max</span>]] </p> </td> 
   </tr> 
   <tr rowsep="1" class="- topic/row "> 
    <td colname="1" class="- topic/entry "><span class="+ topic/ph pr-d/codeph codeph">policy.allowedSWFApplication.n</span> </td> 
-   <td colname="2" class="- topic/entry "> <p class="- topic/p ">Een witte lijst met SWF-toepassingen die beveiligde inhoud mogen afspelen. Gebruik de volgende indeling: </p> <p class="- topic/p "><span class="+ topic/ph pr-d/codeph codeph">URL</span> of file=<span class="+ topic/ph pr-d/codeph codeph">swf_file</span>,time=<i class="+ topic/ph hi-d/i ">max_time_to_verify</i> <i class="+ topic/ph hi-d/i ">swf_file</i> is het SWF-bestand waarvoor de hash moet worden berekend en <i class="+ topic/ph hi-d/i ">max_time_to_verify</i> is de maximale tijd die nodig is om het downloaden en de verificatie van het SWF-bestand te voltooien (in seconden). </p> </td> 
+   <td colname="2" class="- topic/entry "> <p class="- topic/p ">Een lijst met SWF-toepassingen die beveiligde inhoud mogen afspelen. Gebruik de volgende indeling: </p> <p class="- topic/p "><span class="+ topic/ph pr-d/codeph codeph">URL</span> of file=<span class="+ topic/ph pr-d/codeph codeph">swf_file</span>,time=<i class="+ topic/ph hi-d/i ">max_time_to_verify</i> <i class="+ topic/ph hi-d/i ">swf_file</i> is het SWF-bestand waarvoor de hash moet worden berekend en <i class="+ topic/ph hi-d/i ">max_time_to_verify</i> is de maximale tijd die nodig is om het downloaden en de verificatie van het SWF-bestand te voltooien (in seconden). </p> </td> 
   </tr> 
   <tr rowsep="0" class="- topic/row "> 
    <td colname="1" class="- topic/entry "><span class="+ topic/ph pr-d/codeph codeph">policy.license.customProp.n</span> </td> 
