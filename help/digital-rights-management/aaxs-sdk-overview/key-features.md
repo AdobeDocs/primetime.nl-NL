@@ -3,7 +3,10 @@ seo-title: Belangrijkste kenmerken
 title: Belangrijkste kenmerken
 uuid: b1bded0f-4e45-4ff8-a7ce-dac3d3ec0ab0
 translation-type: tm+mt
-source-git-commit: 7e8df034035fe465fbe403949ef828e7811ced2e
+source-git-commit: 9d2e046ae259c05fb4c278f464c9a26795e554fc
+workflow-type: tm+mt
+source-wordcount: '1146'
+ht-degree: 0%
 
 ---
 
@@ -45,7 +48,7 @@ Adobe Access biedt de volgende belangrijke functies:
 * **Verpakken van losgekoppelde inhoud:** Voor het verpakken van inhoud is geen netwerkverbinding met de licentieserver vereist. Dit maakt veilige back-endbewerkingen mogelijk door de blootstelling van gecomprimeerde inhoud die nog niet is beschermd, te beperken.
 * **Besturing over terugdraaien klok: **Adobe Access biedt een veilige en nauwkeurige berekening van de tijd die nodig is om de terugdraaitijd van de klok op de clientcomputer te detecteren. Dit handhaaft rechten met betrekking tot de toegang tot van inhoud voor een specifieke hoeveelheid tijd, en verhindert consumenten toegangsrechten te onderdrukken door de tijd op hun computer te veranderen.
 * **Individualisatie**: Hiermee wordt het binden van inhoud aan een bepaalde computer toegestaan.
-* **whitelist van toepassing:** Hiermee kan de clientruntime ervoor zorgen dat beveiligde inhoud alleen wordt afgespeeld binnen een geautoriseerde SWF- of AIR-toepassing.
+* **Toepassingsstaat lijst toe:** Hiermee kan de clientruntime ervoor zorgen dat beveiligde inhoud alleen wordt afgespeeld binnen een geautoriseerde SWF- of AIR-toepassing.
 * **Intrekking van gecompromitteerde cliënten: **Gecomprimeerde clientsoftware kan worden ingetrokken. Als wordt vastgesteld dat de Flash Player- of Adobe AIR-runtime in gevaar is gebracht, kan de service aan deze clients worden geweigerd totdat ze een upgrade uitvoeren naar een nieuwere en veiligere versie van de clientsoftware.
 * **Meerdere beleidsregels voor hetzelfde videobestand: **Voor één stuk video-inhoud kunnen meerdere beleidsregels zijn ingesloten tijdens het verpakken. Bij het uitgeven van een vergunning, kan de Server van de Vergunning beslissen welke van het beleid te gebruiken, toelatend een inhoudsverdeler om het zelfde beschermde dossier voor verschillende bedrijfsmodellen (zoals huur en elektronische doorverkoop) te gebruiken.
 
