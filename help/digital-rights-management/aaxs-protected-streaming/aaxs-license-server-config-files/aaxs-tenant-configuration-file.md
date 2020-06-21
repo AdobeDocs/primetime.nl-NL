@@ -3,7 +3,10 @@ seo-title: Tenant-configuratiebestand
 title: Tenant-configuratiebestand
 uuid: 6e5c82c9-b8f5-4fca-8325-a884b2c779f7
 translation-type: tm+mt
-source-git-commit: 47b2ed65ff0ea4f54a210cf7627ed535782296b9
+source-git-commit: 9d2e046ae259c05fb4c278f464c9a26795e554fc
+workflow-type: tm+mt
+source-wordcount: '727'
+ht-degree: 0%
 
 ---
 
@@ -31,8 +34,8 @@ Het configuratiebestand voor de huurder bevat:
    * **Rechts** afspelen — Er moet ten minste één recht worden opgegeven. Als er meerdere rechten zijn opgegeven, gebruikt de client het eerste recht waarvoor het voldoet aan alle vereisten.
 
       * **Uitvoerbeveiliging** — Hiermee wordt bepaald of uitvoer naar externe renderingapparaten moet worden beveiligd.
-      * **Beperkingen** voor AIR- en SWF-toepassingen — Optionele whitelist van SWF- en AIR-toepassingen die de inhoud kunnen afspelen (dus alleen de opgegeven toepassingen zijn toegestaan). SWF-toepassingen worden geïdentificeerd door een URL of door de samenvatting van het SWF-bestand en de maximale tijd die nodig is om de samenvatting te downloaden en te controleren. Zie de sectie SWF-hash Calculator voor informatie over het berekenen van de SWF-digest. AIR- en iOS-toepassingen worden aangeduid met een uitgevers-id en een optionele toepassings-id, een minimale versie en een maximale versie. Als er geen toepassingsbeperkingen zijn opgegeven, kan de inhoud door een SWF- of AIR-toepassing worden afgespeeld.
-      * **DRM- en Runtime Module-beperkingen** — Geeft het minimale beveiligingsniveau op dat is vereist voor de DRM/Runtime-module. Bevat optioneel een zwarte lijst met versies die de inhoud niet mogen afspelen. Moduleversies worden geïdentificeerd door kenmerken zoals het besturingssysteem en/of een versienummer. De beperkingen van de Module DRM en de Beperkingen van de Runtime Module steunen nu de volgende extra attributen:
+      * **Beperkingen** voor AIR- en SWF-toepassingen — Optioneel staan een lijst toe van SWF- en AIR-toepassingen die de inhoud kunnen afspelen (dus alleen de opgegeven toepassingen zijn toegestaan). SWF-toepassingen worden geïdentificeerd door een URL of door de samenvatting van het SWF-bestand en de maximale tijd die nodig is om de samenvatting te downloaden en te controleren. Zie de sectie SWF-hash Calculator voor informatie over het berekenen van de SWF-digest. AIR- en iOS-toepassingen worden aangeduid met een uitgevers-id en een optionele toepassings-id, een minimale versie en een maximale versie. Als er geen toepassingsbeperkingen zijn opgegeven, kan de inhoud door een SWF- of AIR-toepassing worden afgespeeld.
+      * **DRM- en Runtime Module-beperkingen** — Geeft het minimale beveiligingsniveau op dat is vereist voor de DRM/Runtime-module. Bevat optioneel een bloklijst met versies die de inhoud niet mogen afspelen. Moduleversies worden geïdentificeerd door kenmerken zoals het besturingssysteem en/of een versienummer. De beperkingen van de Module DRM en de Beperkingen van de Runtime Module steunen nu de volgende extra attributen:
 
          * `oemVendor`
          * `model`
