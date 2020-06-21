@@ -2,9 +2,9 @@
 title: Opmerkingen bij de release PTAI 20.6.1
 description: In de opmerkingen bij de release van PTAI 20.6.1 wordt beschreven wat nieuw of gewijzigd is, wat de opgeloste en bekende problemen zijn in de dynamische invoeging van Primetime in 2020.
 translation-type: tm+mt
-source-git-commit: 5dd5015c01565964b53ef82659308190ee350a89
+source-git-commit: 9d2e046ae259c05fb4c278f464c9a26795e554fc
 workflow-type: tm+mt
-source-wordcount: '666'
+source-wordcount: '667'
 ht-degree: 0%
 
 ---
@@ -111,7 +111,7 @@ Neem contact op met de Technische Ondersteuning van Adobe om de volgende nieuwe 
 
 **Wanneer:** Woensdag 15 januari 2020, 04.00 - 05.00 uur Oosterse tijd
 
-* De service Creative Repackaging biedt nu sneller en invoegender door misvormde creatieve producten automatisch op de zwarte lijst te zetten.
+* De service Creative Repackaging biedt nu snellere toevoegingen door het automatisch blokkeren van lijsten met misvormde creatieve producten.
 
 * Toegevoegde fase 1 steun voor nieuw SCTE 35 richtsnoerformaat in server-kant en toevoeging.
 
