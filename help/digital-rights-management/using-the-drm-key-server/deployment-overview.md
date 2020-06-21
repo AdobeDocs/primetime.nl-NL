@@ -3,7 +3,10 @@ seo-title: Overzicht van Primetime DRM Key Server implementeren
 title: Overzicht van Primetime DRM Key Server implementeren
 uuid: 86630675-c15d-4f32-8212-d7343f4f92e0
 translation-type: tm+mt
-source-git-commit: 105dedcfe47a5f454a067e66a95827e638290742
+source-git-commit: 9d2e046ae259c05fb4c278f464c9a26795e554fc
+workflow-type: tm+mt
+source-wordcount: '1077'
+ht-degree: 0%
 
 ---
 
@@ -153,7 +156,7 @@ Het configuratiebestand voor de **Xbox 360** -huurder bevat:
 
 * XSTS Credential - Geeft de referentie aan van de ontwikkelaar van de toepassing die wordt gebruikt om XSTS-tokens te decoderen
 * XSTS-ondertekeningscertificaat - Geeft het certificaat op dat wordt gebruikt om de handtekening op XSTS-tokens te verifiëren.
-* Whitelist van Packager - de certificaten van Packager die door de Zeer belangrijke Server worden vertrouwd. Als de lijst geen pakketcertificaten bevat, worden alle pakketcertificaten vertrouwd.
+* Packager Allow list - Packager certificates that are trusted by the Key Server. Als de lijst geen pakketcertificaten bevat, worden alle pakketcertificaten vertrouwd.
 
 ## Logbestanden {#log-files}
 
