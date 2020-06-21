@@ -5,7 +5,10 @@ seo-title: Configuratiebestanden bijwerken
 title: Configuratiebestanden bijwerken
 uuid: 34b3247c-3458-49de-b1b0-dc0ebbf61c88
 translation-type: tm+mt
-source-git-commit: 29bc8323460d9be0fce66cbea7c6fce46df20d61
+source-git-commit: 9d2e046ae259c05fb4c278f464c9a26795e554fc
+workflow-type: tm+mt
+source-wordcount: '644'
+ht-degree: 0%
 
 ---
 
@@ -34,4 +37,4 @@ U kunt het wachtwoord HSM op elk [!DNL flashaccess-global.xml] ogenblik wijzigen
 
 ## Het configuratiebestand van de huurder bijwerken {#section_71624DB8DF28480F84F34F0FF7FD4365}
 
-U kunt op elk gewenst moment alle waarden wijzigen die in het [!DNL flashaccess-tenant.xml] bestand zijn opgegeven. De wijzigingen worden van kracht wanneer de server het configuratiebestand opnieuw laadt. Ook, controleert de server om het even welke wijzigingen in alle referentie ( [!DNL .pfx]) dossiers en pakketwhitelist certificaatdossiers die in het dossier van de huurdersconfiguratie van verwijzingen worden voorzien.
+U kunt op elk gewenst moment alle waarden wijzigen die in het [!DNL flashaccess-tenant.xml] bestand zijn opgegeven. De wijzigingen worden van kracht wanneer de server het configuratiebestand opnieuw laadt. Ook, controleert de server om het even welke wijzigingen in alle referentie ( [!DNL .pfx]) dossiers en verpakker staan de dossiers van het lijstcertificaat toe die in het dossier van de huurdersconfiguratie van verwijzingen worden voorzien.
