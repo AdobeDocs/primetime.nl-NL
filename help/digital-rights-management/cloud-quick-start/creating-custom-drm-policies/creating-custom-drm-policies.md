@@ -3,20 +3,23 @@ seo-title: Aangepast DRM-beleid maken (optioneel)
 title: Aangepast DRM-beleid maken (optioneel)
 uuid: 701b51d9-6dde-4c21-bc5b-09e612582968
 translation-type: tm+mt
-source-git-commit: 635e2893439c5459907c54d2c3bd86f58da0eec5
+source-git-commit: 9d2e046ae259c05fb4c278f464c9a26795e554fc
+workflow-type: tm+mt
+source-wordcount: '291'
+ht-degree: 0%
 
 ---
 
 
 # Aangepast DRM-beleid maken (optioneel){#create-custom-drm-policies-optional}
 
-De Primetime Cloud DRM Protection Kit wordt geleverd met een paar vooraf geconfigureerde beleidsregels die tijdens het verpakken kunnen worden gebruikt. Als extra beleidsconfiguraties worden gewenst, bijvoorbeeld, een specifiek SWF-Whitelisting recht, kan de inbegrepen Manager van het Beleid Primetime DRM worden gebruikt om douanebeleid te produceren.
+De Primetime Cloud DRM Protection Kit wordt geleverd met een paar vooraf geconfigureerde beleidsregels die tijdens het verpakken kunnen worden gebruikt. Als extra beleidsconfiguraties worden gewenst, bijvoorbeeld, een specifiek SWF-Toegestane recht, kan de inbegrepen Manager van het Beleid van Primetime DRM worden gebruikt om douanebeleid te produceren.
 
 >[!NOTE]
 >
 >Alle beleidsregels moeten ANONYMOUS-verificatie gebruiken (niet Wachtwoord gebruikersnaam of Aangepast), ongeacht of de workflow Aangepaste controle/machtiging wordt gebruikt.
 
-Bij de Manager van het Beleid wordt inbegrepen is het [!DNL flashaccesstools.properties] configuratiedossier, dat is gewijzigd om slechts de configureerbare beleidsopties bloot te stellen die de Dienst van de Wolk DRM steunt. Als u beleidsopties instelt die niet worden ondersteund door de Primetime Cloud DRM-service, worden fouten met licentieverwervingen gegenereerd. Voor informatie over het gebruiken van de Manager van het Beleid Primetime DRM, verwijs naar: Implementaties van [Primetime DRM-naslaggids: Beleidsbeheer](https://help.adobe.com/en_US/primetime/drm/5.3/reference_implementations/index.html#concept-DRM_Policy_Manager).
+Bij de Manager van het Beleid wordt inbegrepen is het [!DNL flashaccesstools.properties] configuratiedossier, dat is gewijzigd om slechts de configureerbare beleidsopties bloot te stellen die de Dienst van de Wolk DRM steunt. Als u beleidsopties instelt die niet worden ondersteund door de Primetime Cloud DRM-service, worden fouten met licentieverwervingen gegenereerd. Voor informatie over het gebruiken van de Manager van het Beleid Primetime DRM, verwijs naar: [Implementaties van primaire DRM-naslaggids: Beleidsbeheer](https://help.adobe.com/en_US/primetime/drm/5.3/reference_implementations/index.html#concept-DRM_Policy_Manager).
 
 Als u een nieuw beleid wilt maken, werkt u het [!DNL flashaccesstools.properties] bestand naar wens bij en gebruikt u de opdracht:
 
