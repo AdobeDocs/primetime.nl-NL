@@ -3,7 +3,10 @@ seo-title: Inhoud verpakken
 title: Inhoud verpakken
 uuid: 5d1d4b9d-f241-4291-9577-e9de5a8b92be
 translation-type: tm+mt
-source-git-commit: 47b2ed65ff0ea4f54a210cf7627ed535782296b9
+source-git-commit: 9d2e046ae259c05fb4c278f464c9a26795e554fc
+workflow-type: tm+mt
+source-wordcount: '97'
+ht-degree: 0%
 
 ---
 
@@ -24,4 +27,4 @@ https://mylicenseserver.com:8080/flashaccessserver/tenant1
 
 Als elke huurder een verschillende Server van de Vergunning en van het Vervoer Credentials gebruikt, ben zeker om het correcte huurderscertificaat in de verpakker te specificeren.
 
-Als u ervoor wilt zorgen dat de server alleen licenties uitgeeft voor inhoud die is verpakt door bekende verpakkers, neemt u het certificaat van de verpakker op in de whitelist van het configuratiebestand van de pakketsoftware.
+Als u ervoor wilt zorgen dat de server alleen licenties uitgeeft voor inhoud die is verpakt door bekende verpakkers, neemt u het certificaat van de verpakker op in de lijst met pakketmachtigingen van het configuratiebestand voor de huurder.
