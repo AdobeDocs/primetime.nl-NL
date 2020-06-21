@@ -3,7 +3,10 @@ seo-title: De DRM-server uitvoeren voor beveiligde streaming
 title: De DRM-server uitvoeren voor beveiligde streaming
 uuid: 9bbe211d-268b-43c2-9e55-7ce62de40d30
 translation-type: tm+mt
-source-git-commit: c78d3c87848943a0be3433b2b6a543822a7e1c15
+source-git-commit: 9d2e046ae259c05fb4c278f464c9a26795e554fc
+workflow-type: tm+mt
+source-wordcount: '807'
+ht-degree: 0%
 
 ---
 
@@ -81,4 +84,4 @@ U kunt het wachtwoord HSM op elk [!DNL flashaccess-global.xml] ogenblik wijzigen
 
 ### Het configuratiebestand van de huurder bijwerken {#section_71624DB8DF28480F84F34F0FF7FD4365}
 
-U kunt op elk gewenst moment alle waarden wijzigen die in het [!DNL flashaccess-tenant.xml] bestand zijn opgegeven. De wijzigingen worden van kracht wanneer de server het configuratiebestand opnieuw laadt. Ook, controleert de server om het even welke wijzigingen in alle referentie ( [!DNL .pfx]) dossiers en pakketwhitelist certificaatdossiers die in het dossier van de huurdersconfiguratie van verwijzingen worden voorzien.
+U kunt op elk gewenst moment alle waarden wijzigen die in het [!DNL flashaccess-tenant.xml] bestand zijn opgegeven. De wijzigingen worden van kracht wanneer de server het configuratiebestand opnieuw laadt. Ook, controleert de server om het even welke wijzigingen in alle referentie ( [!DNL .pfx]) dossiers en verpakker staan de dossiers van het lijstcertificaat toe die in het dossier van de huurdersconfiguratie van verwijzingen worden voorzien.
