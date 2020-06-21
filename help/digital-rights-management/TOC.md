@@ -2,9 +2,12 @@
 cloud: experience-cloud
 product: adobe primetime
 audience: end-user
-user-guide-title: Primetime Digital Rights Management Help
+user-guide-title: Help bij Primetime Digital Rights Management
 translation-type: tm+mt
-source-git-commit: 5cf90a75d8805fb64d7d145722ad10a1ce77a14d
+source-git-commit: 9d2e046ae259c05fb4c278f464c9a26795e554fc
+workflow-type: tm+mt
+source-wordcount: '2197'
+ht-degree: 0%
 
 ---
 
@@ -186,10 +189,10 @@ source-git-commit: 5cf90a75d8805fb64d7d145722ad10a1ce77a14d
       + [Op tijd gebaseerde regels](protecting-content/introduction/usage-rules/authentication/time-based-rules.md)
       + [Voorschriften voor synchronisatie](protecting-content/introduction/usage-rules/authentication/synchronization.md)
    + Beperkingen van runtime en toepassing {#runtime-application-restrictions}
-      + [Whitelist voor Primetime DRM-toepassingen mag beveiligde inhoud afspelen...](protecting-content/introduction/usage-rules/runtime-application-restrictions/whitelist-air.md)
-      + [Whitelist voor SWF-bestanden van Adobe® Flash® Player](protecting-content/introduction/usage-rules/runtime-application-restrictions/whitelist-flash.md)
-      + [Blacklist of DRM Clients restricted from access protected content](protecting-content/introduction/usage-rules/runtime-application-restrictions/blacklist-drm-clients.md)
-      + [Blacklist of application runtimes](protecting-content/introduction/usage-rules/runtime-application-restrictions/blacklist-app-runtimes.md)
+      + [Toegestane lijst voor Primetime DRM-toepassingen voor het afspelen van beveiligde inhoud...](protecting-content/introduction/usage-rules/runtime-application-restrictions/allowlist-air.md)
+      + [Toegestane lijst voor SWF-bestanden van Adobe® Flash® Player](protecting-content/introduction/usage-rules/runtime-application-restrictions/allowlist-flash.md)
+      + [Bloklijst van DRM-clients die toegang hebben tot beveiligde inhoud](protecting-content/introduction/usage-rules/runtime-application-restrictions/blocklist-drm-clients.md)
+      + [Bloklijst van toepassingsruntimes](protecting-content/introduction/usage-rules/runtime-application-restrictions/blocklist-app-runtimes.md)
       + [Minimumbeveiligingsniveau voor DRM en runtimes](protecting-content/introduction/usage-rules/runtime-application-restrictions/min-sec-level-for-drm.md)
       + [Apparaatmogelijkheden vereist om beveiligde inhoud af te spelen](protecting-content/introduction/usage-rules/runtime-application-restrictions/device-capabilities.md)
       + [Jailbreak-handhaving (vereist Adobe Primetime DRM)](protecting-content/introduction/usage-rules/runtime-application-restrictions/jailbreak-enforcement.md)
@@ -278,8 +281,8 @@ source-git-commit: 5cf90a75d8805fb64d7d145722ad10a1ce77a14d
       + [DRM-beleidsbeheer](drm-reference-implementations/command-line-tools/configure-command-line-tools/policy-manager/policy-manager-overview.md)
       + [Het gebruik van de Opdracht van de Manager van het beleid](drm-reference-implementations/command-line-tools/configure-command-line-tools/policy-manager/policy-manager-command-line-usage.md)
       + [Configuratieeigenschappen](drm-reference-implementations/command-line-tools/configure-command-line-tools/policy-manager/policy-manager-config-file-properties.md)
-      + [Whitelisting niet-SWF-toepassing](drm-reference-implementations/command-line-tools/configure-command-line-tools/policy-manager/non-swf-whitelisting.md)
-      + [Whitelisting van SWF-toepassing](drm-reference-implementations/command-line-tools/configure-command-line-tools/policy-manager/swf-whitelisting.md)
+      + [Niet-SWF-toepassing toestaan](drm-reference-implementations/command-line-tools/configure-command-line-tools/policy-manager/non-swf-allowlisting.md)
+      + [SWF-toepassing toegestaan](drm-reference-implementations/command-line-tools/configure-command-line-tools/policy-manager/swf-allowlisting.md)
    + [DRM Media Packager](drm-reference-implementations/command-line-tools/configure-command-line-tools/media-packager/media-packager-overview.md)
    + [DRM Policy Update List Manager](drm-reference-implementations/command-line-tools/configure-command-line-tools/policy-update-list-manager/policy-update-list-manager-overview.md)
    + [DRM Intrekkingslijstbeheer](drm-reference-implementations/command-line-tools/configure-command-line-tools/policy-revocation-list-manager/policy-revocation-list-manager-overview.md)
@@ -398,7 +401,7 @@ source-git-commit: 5cf90a75d8805fb64d7d145722ad10a1ce77a14d
       + [Terugdraaidetectie](aaxs-secure-deployment-guidelines/issuing-licenses/protect-license-server-rollback-detection.md)
       + [Aantal machines bij afgifte van vergunningen](aaxs-secure-deployment-guidelines/issuing-licenses/protect-license-server-rollback-detection-machine-count.md)
       + [Replay-beveiliging](aaxs-secure-deployment-guidelines/issuing-licenses/protect-license-server-replay-detection.md)
-      + [Een whitelist bijhouden van vertrouwde inhoudpakketten](aaxs-secure-deployment-guidelines/issuing-licenses/protect-license-server-maintain-whitelist.md)
+      + [Een toegestane lijst met vertrouwde inhoudspakketten bijhouden](aaxs-secure-deployment-guidelines/issuing-licenses/protect-license-server-maintain-allowlist.md)
       + [Time-out voor verificatietokens](aaxs-secure-deployment-guidelines/issuing-licenses/protect-license-server-timeout-for-authn-tokens.md)
       + [Beleidsopties overschrijven](aaxs-secure-deployment-guidelines/issuing-licenses/protect-license-server-override-policy-options.md)
       + [Vooraf gegenereerde licenties](aaxs-secure-deployment-guidelines/issuing-licenses/pre-gen-licenses.md)
@@ -421,10 +424,10 @@ source-git-commit: 5cf90a75d8805fb64d7d145722ad10a1ce77a14d
    + [Gebruikersverificatie](aaxs-protecting-content/content-introduction/content-usage-rules/content-authentication/content-user-authentication.md)
    + [Op tijd gebaseerde regels](aaxs-protecting-content/content-introduction/content-usage-rules/content-time-based-rules/content-time-based-rules-defining.md)
    + Beperkingen van runtime en toepassing {#runtime-and-application-restrictions}
-      + [Witlijst voor Adobe® Primetime-toepassingen die beveiligde inhoud mogen afspelen](aaxs-protecting-content/content-introduction/content-usage-rules/content-runtime-application-restrictions/content-whitelist-air.md)
-      + [Witlijst voor SWF-bestanden van Adobe® Flash® Player die beveiligde inhoud mogen afspelen](aaxs-protecting-content/content-introduction/content-usage-rules/content-runtime-application-restrictions/content-whitelist-flash.md)
-      + [Zwarte lijst van DRM-clients die toegang hebben tot beveiligde inhoud](aaxs-protecting-content/content-introduction/content-usage-rules/content-runtime-application-restrictions/content-blacklist-drm-clients.md)
-      + [Blacklist of application runtimes restricted from access protected content](aaxs-protecting-content/content-introduction/content-usage-rules/content-runtime-application-restrictions/content-blacklist-app-runtimes.md)
+      + [Toestaan dat een lijst met Adobe® Primetime-toepassingen beveiligde inhoud mag afspelen](aaxs-protecting-content/content-introduction/content-usage-rules/content-runtime-application-restrictions/content-allowlist-air.md)
+      + [Lijst toestaan voor SWF-bestanden van Adobe® Flash® Player die beveiligde inhoud mogen afspelen](aaxs-protecting-content/content-introduction/content-usage-rules/content-runtime-application-restrictions/content-allowlist-flash.md)
+      + [Bloklijst van DRM-clients die toegang hebben tot beveiligde inhoud](aaxs-protecting-content/content-introduction/content-usage-rules/content-runtime-application-restrictions/content-blocklist-drm-clients.md)
+      + [Bloklijst met toepassingsruntimes die de toegang tot beveiligde inhoud beperken](aaxs-protecting-content/content-introduction/content-usage-rules/content-runtime-application-restrictions/content-blocklist-app-runtimes.md)
       + [Minimumbeveiligingsniveau voor DRM en runtimes](aaxs-protecting-content/content-introduction/content-usage-rules/content-runtime-application-restrictions/content-min-sec-level-for-drm.md)
       + [Apparaatmogelijkheden vereist om beveiligde inhoud af te spelen](aaxs-protecting-content/content-introduction/content-usage-rules/content-runtime-application-restrictions/content-device-capabilities.md)
       + [Jailbreak Enforcement (vereist Adobe Primetime)](aaxs-protecting-content/content-introduction/content-usage-rules/content-runtime-application-restrictions/content-jailbreak-enforcement.md)
