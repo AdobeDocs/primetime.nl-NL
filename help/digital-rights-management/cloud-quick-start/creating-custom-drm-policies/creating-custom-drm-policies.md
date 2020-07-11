@@ -3,9 +3,9 @@ seo-title: Aangepast DRM-beleid maken (optioneel)
 title: Aangepast DRM-beleid maken (optioneel)
 uuid: 701b51d9-6dde-4c21-bc5b-09e612582968
 translation-type: tm+mt
-source-git-commit: 9d2e046ae259c05fb4c278f464c9a26795e554fc
+source-git-commit: 58bb3bedc5b0ac63afd96eb6101d9ad779e6deed
 workflow-type: tm+mt
-source-wordcount: '291'
+source-wordcount: '292'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Aangepast DRM-beleid maken (optioneel){#create-custom-drm-policies-optional}
 
-De Primetime Cloud DRM Protection Kit wordt geleverd met een paar vooraf geconfigureerde beleidsregels die tijdens het verpakken kunnen worden gebruikt. Als extra beleidsconfiguraties worden gewenst, bijvoorbeeld, een specifiek SWF-Toegestane recht, kan de inbegrepen Manager van het Beleid van Primetime DRM worden gebruikt om douanebeleid te produceren.
+De Primetime Cloud DRM Protection Kit wordt geleverd met een paar vooraf geconfigureerde beleidsregels die tijdens het verpakken kunnen worden gebruikt. Als extra beleidsconfiguraties worden gewenst, bijvoorbeeld, een specifiek SWF-allow aanbiedingsrecht, kan de inbegrepen Manager van het Beleid van Primetime DRM worden gebruikt om douanebeleid te produceren.
 
 >[!NOTE]
 >
