@@ -5,9 +5,9 @@ seo-title: De licentieserver beschermen
 title: De licentieserver beschermen
 uuid: 7b5de17d-d0a7-41df-9651-4ff51c9965c6
 translation-type: tm+mt
-source-git-commit: 9d2e046ae259c05fb4c278f464c9a26795e554fc
+source-git-commit: 58bb3bedc5b0ac63afd96eb6101d9ad779e6deed
 workflow-type: tm+mt
-source-wordcount: '1199'
+source-wordcount: '1200'
 ht-degree: 0%
 
 ---
@@ -75,11 +75,11 @@ Een aanval van Dos is een poging door aanvallers om wettige gebruikers van de di
 
 Zie [ AbstractRequestMessage.getMessageId()](https://help.adobe.com/en_US/primetime/api/drm-apis/server/javadocs-flashaccess-pro/com/adobe/flashaccess/sdk/protocol/AbstractRequestMessage.html#getMessageId())voor meer informatie over afspeelbeveiliging.
 
-## Een lijst met vertrouwde inhoudspakketten bijhouden{#maintain-a-allowlist-of-trusted-content-packagers}
+## Een lijst van gewenste personen van vertrouwde-inhoudpakketten onderhouden {#maintain-a-allowlist-of-trusted-content-packagers}
 
-Een lijst met toegestane entiteiten is een lijst met vertrouwde entiteiten.
+Een lijst van gewenste personen is een lijst met vertrouwde entiteiten.
 
-Voor inhoudspakketten zijn de entiteiten organisaties die door de eigenaar van de inhoud worden vertrouwd om de videobestanden te verpakken (of te coderen) en DRM-beveiligde inhoud te maken. Wanneer u Adobe Primetime DRM implementeert, moet u een toegestane lijst met vertrouwde inhoudspakketten bijhouden. U moet ook de identiteit verifiëren van de inhoudspakket in de DRM-metagegevens van een DRM-beveiligd bestand voordat u een licentie afgeeft.
+Voor inhoudspakketten zijn de entiteiten organisaties die door de eigenaar van de inhoud worden vertrouwd om de videobestanden te verpakken (of te coderen) en DRM-beveiligde inhoud te maken. Wanneer u Adobe Primetime DRM implementeert, moet u een lijst van gewenste personen van vertrouwde inhoudspakketten onderhouden. U moet ook de identiteit verifiëren van de inhoudspakket in de DRM-metagegevens van een DRM-beveiligd bestand voordat u een licentie afgeeft.
 
 Zie [V2ContentMetaData.getPackagerInfo()](https://help.adobe.com/en_US/primetime/api/drm-apis/server/javadocs-flashaccess-pro/com/adobe/flashaccess/sdk/media/drm/keys/v2/V2ContentMetaData.html#getPackagerInfo())voor informatie over de entiteit die de inhoud in een pakket heeft opgenomen.
 
