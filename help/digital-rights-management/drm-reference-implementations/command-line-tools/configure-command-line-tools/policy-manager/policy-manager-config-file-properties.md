@@ -6,9 +6,9 @@ seo-title: Configuratieeigenschappen
 title: Configuratieeigenschappen
 uuid: 216921d1-a9c1-4650-9dce-c025836986e5
 translation-type: tm+mt
-source-git-commit: 9d2e046ae259c05fb4c278f464c9a26795e554fc
+source-git-commit: 58bb3bedc5b0ac63afd96eb6101d9ad779e6deed
 workflow-type: tm+mt
-source-wordcount: '1216'
+source-wordcount: '1218'
 ht-degree: 0%
 
 ---
@@ -90,11 +90,11 @@ ht-degree: 0%
   </tr> 
   <tr rowsep="1" class="- topic/row "> 
    <td colname="1" class="- topic/entry "><span class="codeph"> policy.drmVersionBlacklist.n</span> <p class="- topic/p "><span class="codeph"> -drmBlacklist</span> <i class="+ topic/ph hi-d/i ">name/value-pairs</i> </p> </td> 
-   <td colname="2" class="- topic/entry "> <p>DRM-clients die geen toegang hebben tot beveiligde inhoud. Met deze optie geeft u een lijst op met versies van DRM-modules die niet mogen worden gebruikt (blocklist). </p> <p>De waarde bestaat uit door komma's gescheiden <span class="codeph"> name=value</span> paren in de volgende notatie: </p> <p class="- topic/p "><span class="+ topic/ph pr-d/codeph codeph"> os|release|arch|model|leverancier|env|screen=value</span> </p> <p class="- topic/p ">De extra naam/waardeparen moeten komma-gescheiden zijn. Bijvoorbeeld, <span class="codeph"> os=Win, versie=2.0,arch=32</span>. </p> </td> 
+   <td colname="2" class="- topic/entry "> <p>DRM-clients die geen toegang hebben tot beveiligde inhoud. Met deze optie geeft u een lijst op met versies van DRM-modules die niet mogen worden gebruikt (lijst van afgewezen personen). </p> <p>De waarde bestaat uit door komma's gescheiden <span class="codeph"> name=value</span> paren in de volgende notatie: </p> <p class="- topic/p "><span class="+ topic/ph pr-d/codeph codeph"> os|release|arch|model|leverancier|env|screen=value</span> </p> <p class="- topic/p ">De extra naam/waardeparen moeten komma-gescheiden zijn. Bijvoorbeeld, <span class="codeph"> os=Win, versie=2.0,arch=32</span>. </p> </td> 
   </tr> 
   <tr rowsep="1" class="- topic/row "> 
    <td colname="1" class="- topic/entry "><span class="codeph"> policy.runtimeVersionBlacklist.n</span> <p class="- topic/p "><span class="codeph"> -runtimeBlacklsit</span> <i class="+ topic/ph hi-d/i ">naam/waarde-paren</i> </p> </td> 
-   <td colname="2" class="- topic/entry "> <p>Toepassingsruntimes hebben geen toegang tot beveiligde inhoud. Met deze optie geeft u een lijst op met versies van runtimemodules die niet mogen worden gebruikt (blocklist). </p> <p>De waarde bestaat uit door komma's gescheiden <span class="codeph"> name=value</span> paren in de volgende notatie: </p> <p class="- topic/p "><span class="+ topic/ph pr-d/codeph codeph"> os|release|toepassing|arch|model|leverancier|env|screen=value</span> </p> <p class="- topic/p ">De extra naam/waardeparen moeten komma-gescheiden zijn. Bijvoorbeeld <span class="codeph"> os=Win,application=AIR</span>. </p> </td> 
+   <td colname="2" class="- topic/entry "> <p>Toepassingsruntimes hebben geen toegang tot beveiligde inhoud. Met deze optie geeft u een lijst op met versies van runtimemodules die mogelijk niet worden gebruikt (lijst van afgewezen personen). </p> <p>De waarde bestaat uit door komma's gescheiden <span class="codeph"> name=value</span> paren in de volgende notatie: </p> <p class="- topic/p "><span class="+ topic/ph pr-d/codeph codeph"> os|release|toepassing|arch|model|leverancier|env|screen=value</span> </p> <p class="- topic/p ">De extra naam/waardeparen moeten komma-gescheiden zijn. Bijvoorbeeld <span class="codeph"> os=Win,application=AIR</span>. </p> </td> 
   </tr> 
   <tr rowsep="1" class="- topic/row "> 
    <td colname="1" class="- topic/entry "><span class="codeph"> policy.v1DeviceCapabilities</span> <p class="- topic/p "><span class="codeph"> -devCapabilitiesV1</span> <i class="+ topic/ph hi-d/i ">naam/waarde-paren</i> </p> </td> 
@@ -104,7 +104,7 @@ ht-degree: 0%
    <td colname="1" class="- topic/entry "><span class="codeph"> policy.syncFrequency</span> <p class="- topic/p "><span class="codeph"> -sync</span> <i class="+ topic/ph hi-d/i ">naam/waarde-paren</i> </p> </td> 
    <td colname="2" class="- topic/entry "> <p class="- topic/p ">Geeft aan hoe vaak clients synchronisatieberichten naar de server moeten verzenden. </p> <p>Als het bezit niet wordt geplaatst, zullen de cliënten geen synchronisatieberichten verzenden wanneer zij inhoud spelen die met een beleid DRM wordt beschermd. De waarde bestaat uit door komma's gescheiden <span class="codeph"> name=value</span> paren in de volgende notatie: </p> <p class="- topic/p "><span class="+ topic/ph pr-d/codeph codeph"> start|force=numberValue</span> </p> <p class="- topic/p ">De volgende lijst bevat aanvullende informatie over de opties: 
      <ul id="ul_a5j_q4t_44"> 
-      <li id="li_FD2C0C6DA19E455AA1917A56E09A7F84">(vereist) <span class="codeph"> start</span> specificeert dat de client binnen de opgegeven minuten na de laatste synchronisatie moet beginnen te synchroniseren met de server. </li> 
+      <li id="li_FD2C0C6DA19E455AA1917A56E09A7F84">(vereist) <span class="codeph"> start</span> specificeert dat de client binnen de opgegeven minuten na de laatste synchronisatie moet beginnen met synchroniseren met de server. </li> 
       <li id="li_9DEBC57385A442C3929AE3D0E3FA8992">(optioneel) <span class="codeph"> force</span> is de waarschijnlijkheid (0-100) waarmee de client tijdens het afspelen een synchronisatiebericht moet afdwingen. </li> 
      </ul>Gebruik tijdens de update <span class="codeph"> -sync</span> zonder de resterende argumenten om de synchronisatievereisten te verwijderen. </p> </td> 
   </tr> 
@@ -186,11 +186,11 @@ ht-degree: 0%
   </tr> 
   <tr rowsep="1" class="- topic/row "> 
    <td colname="1" class="- topic/entry "><span class="+ topic/ph pr-d/codeph codeph">policy.allowedAIRApplication.n</span> </td> 
-   <td colname="2" class="- topic/entry "> <p class="- topic/p ">Een lijst met toegestane toepassingen die geen Flash-toepassingen zijn (Adobe AIR, iOS, Android, enz.) die beveiligde inhoud mogen afspelen. De eigenschap moet de volgende notatie gebruiken: <span class="+ topic/ph pr-d/codeph codeph">pubId</span>[:<span class="+ topic/ph pr-d/codeph codeph">appId</span>[:[<span class="+ topic/ph pr-d/codeph codeph">min</span>]:[<span class="+ topic/ph pr-d/codeph codeph">max</span>]] </p> </td> 
+   <td colname="2" class="- topic/entry "> <p class="- topic/p ">Een lijst van gewenste personen van niet-Flash-toepassingen (Adobe AIR, iOS, Android enzovoort) die beveiligde inhoud mogen afspelen. De eigenschap moet de volgende notatie gebruiken: <span class="+ topic/ph pr-d/codeph codeph">pubId</span>[:<span class="+ topic/ph pr-d/codeph codeph">appId</span>[:[<span class="+ topic/ph pr-d/codeph codeph">min</span>]:[<span class="+ topic/ph pr-d/codeph codeph">max</span>]] </p> </td> 
   </tr> 
   <tr rowsep="1" class="- topic/row "> 
    <td colname="1" class="- topic/entry "><span class="+ topic/ph pr-d/codeph codeph">policy.allowedSWFApplication.n</span> </td> 
-   <td colname="2" class="- topic/entry "> <p class="- topic/p ">Een lijst met SWF-toepassingen die beveiligde inhoud mogen afspelen. De eigenschap moet de volgende notatie gebruiken: </p> <p class="- topic/p "> 
+   <td colname="2" class="- topic/entry "> <p class="- topic/p ">Een lijst van gewenste personen van SWF-toepassingen die beveiligde inhoud mogen afspelen. De eigenschap moet de volgende notatie gebruiken: </p> <p class="- topic/p "> 
      <ul id="ul_EC20F52AD95C4BE3B7F703048A43CDF0"> 
       <li id="li_3E4A47D925C24834A2C25BC5943279D4"><span class="+ topic/ph pr-d/codeph codeph">URL</span> </li> 
       <li id="li_9A7CAF081C5F488FB5CDA6D38C5552F6"><span class="+ topic/ph pr-d/codeph codeph">file=swf_file</span> </li> 
@@ -203,4 +203,3 @@ ht-degree: 0%
   </tr> 
  </tbody> 
 </table>
-
