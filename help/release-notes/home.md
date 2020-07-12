@@ -4,9 +4,9 @@ seo-title: Opmerkingen bij de release Adobe Primetime
 description: 'null'
 seo-description: 'null'
 translation-type: tm+mt
-source-git-commit: 8f8b9d167d7456968879edac847c51e6c9e1da3c
+source-git-commit: 7c8b9778f9b63151617e57bc2318ba77e0b630bc
 workflow-type: tm+mt
-source-wordcount: '314'
+source-wordcount: '306'
 ht-degree: 0%
 
 ---
@@ -22,9 +22,9 @@ De release was vooral gericht op het bijwerken van de greep-versie van de toepas
 
 Raadpleeg de voor meer informatie over de huidige uitgebrachte versie voor [Android](../release-notes/tvsdk-3x-android.md).
 
-## Verbeteringen en correcties in PTAI 20.6.1
+## Verbeteringen en correcties in PTAI 20.7.1
 
-De release was vooral gericht op functies zoals Manifest-manipulatie en het verbeteren van API&#39;s om sessies in leven te houden met VOD-middelen van lange formulieren. De versie neemt ook moeilijke situaties aan hoogste klantenkwesties op.
+De versie concentreerde zich op verbetering SCTE35, toevoeging van meer informatie in X-ADBE-AI-X1 HTTP- reactiekopballen, verbeterde metriek samenvoeging, en het paneel van de Stats van de Zitting.
 
 Zie Opmerkingen bij de release van [PTAI voor meer informatie over de huidige uitgebrachte versie van Dynamische advertentie-invoeging](ptai-20x-release-notes.md).
 
