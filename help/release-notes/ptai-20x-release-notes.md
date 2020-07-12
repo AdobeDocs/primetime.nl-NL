@@ -1,20 +1,44 @@
 ---
-title: Opmerkingen bij de release PTAI 20.6.1
-description: In de opmerkingen bij de release van PTAI 20.6.1 wordt beschreven wat nieuw of gewijzigd is, wat de opgeloste en bekende problemen zijn in de dynamische invoeging van Primetime in 2020.
+title: Opmerkingen bij de release PTAI 20.7.1
+description: In de opmerkingen bij de release van PTAI 20.7.1 wordt beschreven wat nieuw of gewijzigd is, wat de opgeloste en bekende problemen zijn in de dynamische invoeging van Primetime in 2020.
 translation-type: tm+mt
-source-git-commit: 9d2e046ae259c05fb4c278f464c9a26795e554fc
+source-git-commit: 7c8b9778f9b63151617e57bc2318ba77e0b630bc
 workflow-type: tm+mt
-source-wordcount: '667'
+source-wordcount: '793'
 ht-degree: 0%
 
 ---
 
 
-# Opmerkingen bij de release Primetime Dynamic AD 20.6.1
+# Opmerkingen bij de release Primetime Dynamic AD 20.7.1
 
-Opmerkingen bij de release Dynamische advertentie 20.6.1 beschrijven wat nieuw of gewijzigd is, problemen die zijn opgelost en bekende problemen in Dynamische advertentie invoegen in Primetime in 2020.
+Opmerkingen bij de release Dynamische advertentie 20.7.1 beschrijven wat nieuw of gewijzigd is, problemen die zijn opgelost en bekende problemen in Dynamische advertentie invoegen in Primetime in 2020.
 
-## Nieuw in PTAI 20.6.1
+## Nieuw in PTAI 20.7.1
+
+**Wanneer:** Donderdag 9 juli 2020, 03.00 - 05.00 uur Oosterse tijd
+
+**Nieuwe functies en verbeteringen**
+
+* SCTE35 verhoging om één van beiden van de Bericht van het Begin/van het Eind van de Leverancier te gebruiken of de berichten van het Begin/van het Eind van de Onderbreking om het richtsnoer te identificeren.
+
+* Bijgewerkte X-ADBE-AI-X1 kopbal met extra informatie om het oplossen van problemen te helpen.
+
+* Verbeterde metrische aggregatie.
+
+* Verbeterd SSAI-console-dashboard voor Sessiestatvenster.
+
+### Verbeteringen en correcties in vorige releaseversies
+
+#### Versie 20.6.2
+
+**Wanneer:** Donderdag 18 juni 2020, 03.00 - 04.00 uur Oosterse tijd
+
+**Verbeteringen**
+
+Verbeterde streamsynchronisatie voor videoclips die precisie in milliseconden vereisen. Neem contact op met de Technische Ondersteuning van Adobe om millisecondenprecisie in te schakelen voor `#EXT-X-PROGRAM-DATE-TIME tags`.
+
+#### Versie 20.6.1
 
 **Wanneer:** Dinsdag 2 juni 2020, 03.00 - 05.00 uur Oosterse tijd
 
@@ -26,13 +50,13 @@ Neem contact op met de Technische Ondersteuning van Adobe om de volgende nieuwe 
 
 * VOD in lange vorm: Verbeterde API&#39;s om sessies in leven te houden met VOD-middelen van lange formulieren.
 
-**Opgeloste problemen**
+**Bugfixes**
 
 * Probleem verholpen waarbij WebVTT-fragmenten altijd werden aangevraagd onder http-protocol, ongeacht het oorspronkelijke aangevraagde protocol.
 
 * Probleem verholpen waarbij EXT-X-DISCONTINUITY-tags van de bovenkant van de afspeellijst werden verwijderd bij het terugschakelen van advertenties naar inhoud. Neem contact op met de Technische Ondersteuning van Adobe om deze oplossing in te schakelen.
 
-### Versie 20.5.1
+#### Versie 20.5.1
 
 **Wanneer:** Dinsdag 5 mei 2020, 04.00 - 05.00 uur Oosterse tijd
 
@@ -42,7 +66,7 @@ Neem contact op met de Technische Ondersteuning van Adobe om de volgende nieuwe 
 
 * Onderhoudsupdates.
 
-### Versie 20.3.4
+#### Versie 20.3.4
 
 **Wanneer:** Woensdag 1 april 2020, 03.00 - 04.00 uur Oosterse tijd
 
@@ -50,7 +74,7 @@ Neem contact op met de Technische Ondersteuning van Adobe om de volgende nieuwe 
 
 * Beveiligingsupdates.
 
-### Versie 20.3.3
+#### Versie 20.3.3
 
 **Wanneer:** Donderdag 26 maart 2020, 03.00 - 04.00 uur Oosterse tijd
 
@@ -60,7 +84,7 @@ Neem contact op met de Technische Ondersteuning van Adobe om de volgende nieuwe 
 
 * Probleem verholpen met CMAF/gedemuxed audiostreams, waarbij in bepaalde scenario&#39;s de EXT-X-MEDIA-SEQUENTIE-nummers onjuist zouden stijgen.
 
-### Versie 20.3.2
+#### Versie 20.3.2
 
 **Wanneer:** Woensdag 11 maart 2020, 05.30 - 07.00 uur Oosterse tijd
 
@@ -68,26 +92,26 @@ Neem contact op met de Technische Ondersteuning van Adobe om de volgende nieuwe 
 
 * Onderhoudsupdates.
 
-### Versie 20.3.1
+#### Versie 20.3.1
 
 **Wanneer:** Donderdag 5 maart 2020, 20.30 uur tot 04.30 uur Oosterse tijd
 
 * Prestatieverbeteringen:
 
-   * Extra cacheondersteuning voor zowel master-/media m3u8-manifests. Deze manifests antwoorden nu aan geheime voorgeheugen-controle: de openbare en Max-Leeftijd kopballen, die vaak videobeginprestaties kunnen verbeteren.
+   * Extra cacheondersteuning voor zowel master manifests als media m3u8. Deze manifests antwoorden nu aan geheime voorgeheugen-controle: de openbare en Max-Leeftijd kopballen, die vaak videobeginprestaties kunnen verbeteren.
 
    * Toegevoegde ondersteuning voor het forceren van https-creatieven om op http te worden opgehaald, wat ook de prestaties van het starten van de video kan verbeteren.
 
 * Oplossingen voor beveiliging en onderhoud.
 
-### Versie 20.2.1
+#### Versie 20.2.1
 
 **Wanneer:** Donderdag 13 februari 2020, 04.30 tot 05.30 uur Oosterse tijd
 
 * Toegevoegde ondersteuning voor stitching en assets die meerdere alleen-audio streams bevatten op basis van taal/codec/bitsnelheid.
 * Kleine prestatieverbeteringen en onderhoudsupdates.
 
-### Versie 20.1.3
+#### Versie 20.1.3
 
 **Wanneer:** Dinsdag 28 januari 2020, 23.00 tot 3.00 uur Oosterse tijd
 
@@ -101,13 +125,13 @@ Neem contact op met de Technische Ondersteuning van Adobe om de volgende nieuwe 
 
 * Verwijder oude V1-objecten van NetStorage-groepen om het aantal objecten binnen de veilige grenzen van Akamai te houden.
 
-### Versie 20.1.2 (hotfix)
+#### Versie 20.1.2 (hotfix)
 
 **Wanneer:** Maandag 20 januari 2020, 20.00 - 03.00 uur Oosterse tijd
 
 * Onderhoudsupdates.
 
-### Versie 20.1.1
+#### Versie 20.1.1
 
 **Wanneer:** Woensdag 15 januari 2020, 04.00 - 05.00 uur Oosterse tijd
 
@@ -120,6 +144,12 @@ Neem contact op met de Technische Ondersteuning van Adobe om de volgende nieuwe 
 ## Opgeloste problemen
 
 Wanneer de oplossing aan een gemelde kwestie wordt geassocieerd, wordt een verwijzing van Zendesk getoond. Bijvoorbeeld: `ZD#xxxxx`
+
+**PTAI 20.6.1**
+
+* `WebVTT` fragmenten werden altijd aangevraagd onder het http-protocol, ongeacht het oorspronkelijke aangevraagde protocol.
+
+* `EXT-X-DISCONTINUITY` -tags worden boven aan de afspeellijst verwijderd wanneer u terugschakelt van advertenties naar inhoud. Neem contact op met de Technische Ondersteuning van Adobe om deze oplossing in te schakelen.
 
 **PTAI 20.5.1**
 
