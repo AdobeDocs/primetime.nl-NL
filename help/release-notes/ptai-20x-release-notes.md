@@ -1,20 +1,30 @@
 ---
-title: Opmerkingen bij de release PTAI 20.7.1
-description: In de opmerkingen bij de release van PTAI 20.7.1 wordt beschreven wat nieuw of gewijzigd is, wat de opgeloste en bekende problemen zijn in de dynamische invoeging van Primetime in 2020.
+title: Opmerkingen bij de release PTAI 20.8.1
+description: In de opmerkingen bij de release PTAI 20.8.1 wordt beschreven wat nieuw of gewijzigd is, wat de opgeloste en bekende problemen zijn in Primetime Dynamic Ad Insertion in 2020.
 translation-type: tm+mt
-source-git-commit: 7c8b9778f9b63151617e57bc2318ba77e0b630bc
+source-git-commit: 6b2aaa96f8604af27810cceee5a8a98c4feebd6f
 workflow-type: tm+mt
-source-wordcount: '793'
+source-wordcount: '808'
 ht-degree: 0%
 
 ---
 
 
-# Opmerkingen bij de release Primetime Dynamic AD 20.7.1
+# Opmerkingen bij de release Primetime Dynamic Ad Insertion 20.8.1
 
-Opmerkingen bij de release Dynamische advertentie 20.7.1 beschrijven wat nieuw of gewijzigd is, problemen die zijn opgelost en bekende problemen in Dynamische advertentie invoegen in Primetime in 2020.
+Dynamische Ad Insertion 20.8.1-releaseopmerkingen beschrijven wat nieuw of gewijzigd is, problemen die zijn opgelost en bekende problemen in Primetime Dynamic Ad Insertion in 2020.
 
-## Nieuw in PTAI 20.7.1
+## Nieuw in PTAI 20.8.1
+
+**Wanneer:** Dinsdag 4 augustus 2020, 15.00 tot 18.00 uur Oosterse tijd
+
+**Verbeteringen en correcties**
+
+Onderhoudsupdates.
+
+### Verbeteringen en correcties in vorige releaseversies
+
+#### Versie 20.7.1
 
 **Wanneer:** Donderdag 9 juli 2020, 03.00 - 05.00 uur Oosterse tijd
 
@@ -26,9 +36,7 @@ Opmerkingen bij de release Dynamische advertentie 20.7.1 beschrijven wat nieuw o
 
 * Verbeterde metrische aggregatie.
 
-* Verbeterd SSAI-console-dashboard voor Sessiestatvenster.
-
-### Verbeteringen en correcties in vorige releaseversies
+* Verbeterd SSAI-consoledashboard voor het deelvenster Sessiestatistieken
 
 #### Versie 20.6.2
 
@@ -36,7 +44,7 @@ Opmerkingen bij de release Dynamische advertentie 20.7.1 beschrijven wat nieuw o
 
 **Verbeteringen**
 
-Verbeterde streamsynchronisatie voor videoclips die precisie in milliseconden vereisen. Neem contact op met de Technische Ondersteuning van Adobe om millisecondenprecisie in te schakelen voor `#EXT-X-PROGRAM-DATE-TIME tags`.
+Verbeterde streamsynchronisatie voor videoclips die precisie in milliseconden vereisen. Neem contact op met de Adobe-ondersteuning om millisecondenprecisie in te schakelen voor `#EXT-X-PROGRAM-DATE-TIME tags`.
 
 #### Versie 20.6.1
 
@@ -44,7 +52,7 @@ Verbeterde streamsynchronisatie voor videoclips die precisie in milliseconden ve
 
 **Nieuwe functies**
 
-Neem contact op met de Technische Ondersteuning van Adobe om de volgende nieuwe functies in te schakelen via de serverconfiguratie:
+Neem contact op met de ondersteuning van Adobe om de volgende nieuwe functies in te schakelen via de serverconfiguratie:
 
 * Manifest Manipulation: HLS-segment en bron-URL&#39;s kunnen nu worden getransformeerd tussen HTTP en HTTPS om de prestaties te verbeteren door TLS-handtekeningen op back-end verzoeken te verminderen. Het kan ook worden gebruikt om fragmenten van advertentie/inhoud te verenigen op dezelfde CDN&#39;s.
 
@@ -54,7 +62,7 @@ Neem contact op met de Technische Ondersteuning van Adobe om de volgende nieuwe 
 
 * Probleem verholpen waarbij WebVTT-fragmenten altijd werden aangevraagd onder http-protocol, ongeacht het oorspronkelijke aangevraagde protocol.
 
-* Probleem verholpen waarbij EXT-X-DISCONTINUITY-tags van de bovenkant van de afspeellijst werden verwijderd bij het terugschakelen van advertenties naar inhoud. Neem contact op met de Technische Ondersteuning van Adobe om deze oplossing in te schakelen.
+* Probleem verholpen waarbij EXT-X-DISCONTINUITY-tags van de bovenkant van de afspeellijst werden verwijderd bij het terugschakelen van advertenties naar inhoud. Neem contact op met de Adobe-ondersteuning om deze oplossing in te schakelen.
 
 #### Versie 20.5.1
 
@@ -149,7 +157,7 @@ Wanneer de oplossing aan een gemelde kwestie wordt geassocieerd, wordt een verwi
 
 * `WebVTT` fragmenten werden altijd aangevraagd onder het http-protocol, ongeacht het oorspronkelijke aangevraagde protocol.
 
-* `EXT-X-DISCONTINUITY` -tags worden boven aan de afspeellijst verwijderd wanneer u terugschakelt van advertenties naar inhoud. Neem contact op met de Technische Ondersteuning van Adobe om deze oplossing in te schakelen.
+* `EXT-X-DISCONTINUITY` -tags worden boven aan de afspeellijst verwijderd wanneer u terugschakelt van advertenties naar inhoud. Neem contact op met de Adobe-ondersteuning om deze oplossing in te schakelen.
 
 **PTAI 20.5.1**
 
