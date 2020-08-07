@@ -3,7 +3,10 @@ seo-title: Licenties insluiten
 title: Licenties insluiten
 uuid: e3d55376-07de-479c-9a53-04bc8071ced4
 translation-type: tm+mt
-source-git-commit: 29bc8323460d9be0fce66cbea7c6fce46df20d61
+source-git-commit: 1b9792a10ad606b99b6639799ac2aacb707b2af5
+workflow-type: tm+mt
+source-wordcount: '179'
+ht-degree: 0%
 
 ---
 
@@ -16,7 +19,7 @@ Als u een licentie wilt insluiten, moet u een exemplaar van `com.adobe.flashacce
 
 Zie `com.adobe.flashaccess.samples.licenseembedder.EmbedLicense` [!DNL Samples] in de map Reference Implementation Command Line Tools voor voorbeeldcode die ingesloten licenties aantoont.
 
->[!NOTE] {class=&quot;- topic/note &quot;}
+>[!NOTE]
 >
 >Een Adobe Primetime DRM 2.0-client negeert alle licenties die in de inhoud zijn ingesloten en probeert vervolgens een licentie te verkrijgen van de licentieserver die in de metagegevens is opgegeven. Als de metagegevens echter aangeven dat er geen licentieserver beschikbaar is, moet een Primetime DRM 2.0-client worden bijgewerkt voordat u de inhoud kunt weergeven.
 
