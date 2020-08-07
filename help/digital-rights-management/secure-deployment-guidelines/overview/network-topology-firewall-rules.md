@@ -5,7 +5,10 @@ seo-title: Firewall-regels
 title: Firewall-regels
 uuid: 309b35b5-8c0a-4cd7-9289-b6b035955697
 translation-type: tm+mt
-source-git-commit: 29bc8323460d9be0fce66cbea7c6fce46df20d61
+source-git-commit: 1b9792a10ad606b99b6639799ac2aacb707b2af5
+workflow-type: tm+mt
+source-wordcount: '383'
+ht-degree: 0%
 
 ---
 
@@ -90,7 +93,7 @@ Externe gebruikers hebben toegang tot de volgende URL&#39;s via de buitenste fir
   </tr> 
   <tr rowsep="0" class="- topic/row "> 
    <td colname="1" class="- topic/entry "><span class="filepath"> /edcws/services/urn:EDCLicenseService/*</span> </td> 
-   <td colname="2" class="- topic/entry "> <p class="- topic/p ">URL van LiveCycle Rights Management ES-webservice. Als inhoud is gepubliceerd met een eerdere versie van FMRMS, staat deze URL oudere clients toe verbinding te maken met de server. Deze clients worden gevraagd een upgrade uit te voeren naar Adobe Primetime DRM. </p> <p class="- topic/p ">Opmerking: Deze URL moet SSL (HTTPS) gebruiken. </p> </td> 
+   <td colname="2" class="- topic/entry "> <p class="- topic/p ">URL van webservice LiveCycle Rights Management ES. Als inhoud is gepubliceerd met een eerdere versie van FMRMS, staat deze URL oudere clients toe verbinding te maken met de server. Deze clients worden gevraagd een upgrade uit te voeren naar Adobe Primetime DRM. </p> <p class="- topic/p ">Opmerking: Deze URL moet SSL (HTTPS) gebruiken. </p> </td> 
   </tr> 
   <tr> 
    <td colname="1" class="- topic/entry "> 
@@ -103,7 +106,7 @@ Externe gebruikers hebben toegang tot de volgende URL&#39;s via de buitenste fir
  </tbody> 
 </table>
 
->[!NOTE] {class=&quot;- topic/note &quot;}
+>[!NOTE]
 >
 >De interne firewall mag alleen verbindingen met de Primetime DRM-licentieserver toestaan via de reverse-proxy en alleen met de URL&#39;s in de tabel. Om scalability te verbeteren, gebruik HTTP voor de verbindingen tussen de omgekeerde volmacht en Primetime DRM.
 
