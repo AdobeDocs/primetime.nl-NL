@@ -2,7 +2,7 @@
 title: Opmerkingen bij de release TVSDK 3.12 voor iOS
 description: De opmerkingen bij de release TVSDK 3.12 voor iOS beschrijven wat nieuw of gewijzigd is, de opgeloste en bekende problemen en de apparaatproblemen in TVSDK iOS 3.12.
 translation-type: tm+mt
-source-git-commit: 9c6a6f0b5ecff78796e37daf9d7bdb9fa686ee0c
+source-git-commit: 1b9792a10ad606b99b6639799ac2aacb707b2af5
 workflow-type: tm+mt
 source-wordcount: '7665'
 ht-degree: 0%
@@ -173,23 +173,25 @@ Integreer en certificeer VHL 2.0 in iOS TVSDK: Verminder de hindernis in de `Vid
 
 **Netwerk en informatie**
 
-TVSDK API&#39;s bieden nu aanvullende informatie over VAST-reacties van derden. Advertentie-ID, Ad System en VAST Ad Extensions worden aangeboden in `PTNetworkAdInfo` klassen die toegankelijk zijn via `networkAdInfo` eigenschap op een advertentie-element. Deze informatie kan worden gebruikt voor integratie met andere Analytics-advertentieplatforms, zoals **Moat Analytics**.
+TVSDK API&#39;s bieden nu aanvullende informatie over VAST-reacties van derden. Advertentie-ID, Ad System en VAST Ad Extensions worden aangeboden in `PTNetworkAdInfo` klassen die toegankelijk zijn via `networkAdInfo` eigenschap op een advertentie-element. Deze informatie kan worden gebruikt voor integratie met andere analyseplatforms voor advertentie, zoals **Moat Analytics**.
 
 **Versie 1.4.31**
 
-* **Factureringscijfers** Adobe verzamelt gebruiksmaatstaven en gebruikt deze maatstaven om te bepalen hoeveel de klanten moeten factureren, zodat ze kunnen betalen voor wat ze alleen gebruiken in plaats van een vaste prijs, ongeacht het werkelijke gebruik.
+* **Factureringscijfers** Om klanten aan te passen die slechts voor wat willen betalen zij, eerder dan een vast tarief ongeacht werkelijk gebruik, Adobe gebruiksmetriek verzamelen en deze metriek gebruiken om te bepalen hoeveel om de klanten in rekening te brengen.
 
-   Telkens wanneer TVSDK een streamstartgebeurtenis genereert, stuurt de speler regelmatig HTTP-berichten naar het factureringssysteem van Adobe. De periode, die ook wel factureerbare duur wordt genoemd, kan verschillen voor standaard VOD, pro VOD (mid-roll ads ingeschakeld) en live inhoud. De standaardduur voor elk inhoudstype is 30 minuten, maar uw contract met Adobe bepaalt de werkelijke waarden.
+   Telkens wanneer TVSDK een gebeurtenis van het stroombegin produceert, begint de speler de berichten van HTTP periodiek aan Adobe systeem te verzenden. De periode, die ook wel factureerbare duur wordt genoemd, kan verschillen voor standaard VOD, pro VOD (mid-roll ads ingeschakeld) en live inhoud. De standaardduur voor elk inhoudstype is 30 minuten, maar uw contract met Adobe bepaalt de werkelijke waarden.
 
-* **Ondersteuning voor meerdere CDN&#39;s voor CRS Ads** TVSDK ondersteunt nu Multi-CDN voor CRS-advertenties. Door FTP-gegevens op te geven voor CRS-advertenties, kunt u andere CDN-locaties opgeven dan de standaard CDN die in eigendom is van Adobe, zoals Akamai.
+* **Ondersteuning voor meerdere CDN&#39;s voor CRS Ads** TVSDK ondersteunt nu Multi-CDN voor CRS-advertenties. Door FTP-gegevens op te geven voor CRS-advertenties, kunt u andere CDN-locaties opgeven dan de standaard CDN die eigendom is van de Adobe, zoals Akamai.
 
 **Versie 1.4.29**
 
 In de `PTSDKConfig` klasse is de forceHTTPS API toegevoegd.
 
-De `PTSDKConfig` klasse biedt methoden om SSL af te dwingen voor aanvragen die zijn ingediend bij Adobe Primetime en bij het nemen van beslissingen, DRM en Video Analytics-servers. Zie de methoden `forceHTTPS` `isForcingHTTPS` en methoden in deze klasse voor meer informatie. Als een manifest over HTTPS wordt geladen, behoudt TVSDK het inhoudsgebruik van HTTPS en eerbiedigt dit gebruik wanneer het laden van om het even welke relatieve URLs van dat manifest.
+De `PTSDKConfig` klasse biedt methoden om SSL af te dwingen voor aanvragen die zijn ingediend bij Adobe Primetime en voor beslissings-, DRM- en Video Analytics-servers. Zie de methoden `forceHTTPS` `isForcingHTTPS` en methoden in deze klasse voor meer informatie. Als een manifest over HTTPS wordt geladen, behoudt TVSDK het inhoudsgebruik van HTTPS en eerbiedigt dit gebruik wanneer het laden van om het even welke relatieve URLs van dat manifest.
 
->[!NOTE] Verzoeken naar domeinen van derden, zoals het bijhouden van pixels voor toevoegen, inhoud en URL&#39;s voor toevoegen en vergelijkbare verzoeken, worden niet gewijzigd. Het is de verantwoordelijkheid van inhoudsproviders en servers om URL&#39;s op te geven die via HTTPS worden ondersteund.
+>[!NOTE]
+>
+>Verzoeken naar domeinen van derden, zoals het bijhouden van pixels voor toevoegen, inhoud en URL&#39;s voor toevoegen en vergelijkbare verzoeken, worden niet gewijzigd. Het is de verantwoordelijkheid van inhoudsproviders en servers om URL&#39;s op te geven die via HTTPS worden ondersteund.
 
 **Versie 1.4.18**
 
@@ -223,7 +225,9 @@ Primetime iOS TVSDK ondersteunt nu VPAID 2.0 Javascript-creatieven om een rijke 
 
 **Versie 1.4.13**
 
->[!NOTE] De Nielsen-module is verwijderd uit de TVSDK-build en de TVSDK wordt in de nabije toekomst bijgewerkt met een nieuwe Nielsen-integratiemodule.
+>[!NOTE]
+>
+>De Nielsen-module is verwijderd uit de TVSDK-build en de TVSDK wordt in de nabije toekomst bijgewerkt met een nieuwe Nielsen-integratiemodule.
 
 **Ad Fallback, Daisy chaining in ad selection logic (Zendesk #3103)**
 
@@ -247,7 +251,7 @@ In het kader van de 1.4-TVSDK-update steunen wij nu ook het in- en terugkeren va
 
 * **Ondersteuning voor individuele support op locatie**
 
-Ondersteuning voor on-premise installaties van de Adobe Individualization Server om het individuele verzoek van de client aan te passen en naar een ander eindpunt te gaan.
+Steun voor op-gebouw installaties van de Server van de Individualisering van de Adobe om het de individualisatieverzoek van de cliënt aan te passen om naar een verschillend eindpunt te gaan.
 
 * **Op resolutie gebaseerde uitvoerbeveiliging**
 
@@ -257,10 +261,10 @@ In DRM-beleid kan nu de hoogst toegestane resolutie worden opgegeven, afhankelij
 
 * **Video Heartbeats Library (VHL)-update naar versie 1.4.1.1**
 
-   * De mogelijkheid om verschillende analysemogelijkheden te bundelen, van andere SDK&#39;s of spelers, met de Adobe Analytics Video Essentials.
+   * De mogelijkheid om verschillende analytische gebruiksscenario&#39;s te bundelen, van andere SDK&#39;s of spelers, met de Adobe Analytics Video Essentials.
    * Het bijhouden van advertenties is geoptimaliseerd door de `trackAdBreakStart` en de `trackAdBreakComplete` methoden te verwijderen. Het ad-einde wordt afgeleid van de aanroepen van de methode `trackAdStart` `trackAdComplete` en de methode.
    * De `playhead` eigenschap is niet meer nodig voor het bijhouden van advertenties.
-   * Toegevoegde ondersteuning voor de Bezoeker-id van de marketingcloud.
+   * Extra ondersteuning voor de Marketing Cloud Bezoeker-id.
 
 * **Integratie van Nielsen SDK**
 
@@ -587,9 +591,9 @@ Ingeschakeld door de oorspronkelijke creatieve URL voor de 1401 CRS-aanvraag te 
 
 Dit probleem is opgelost door het laden van bronnen bij te werken en uit alle beschikbare bundels te zoeken.
 
-* (ZD# 27460) eerste vraag van Midroll - POST aan het `cdn.auditude.com` terugkeren van 403.
+* (ZD# 27460) De eerste Vraag van Midroll Ad - POST aan het `cdn.auditude.com` terugkeren 403.
 
-De nieuwe CDN-account kan een POST CDN-aanvraag niet verwerken. Dit probleem is opgelost door de code bij te werken en het `cdn.auditude.com` advertentieverzoek in te dienen om GET in plaats van POST te zijn.
+Het nieuwe CDN-account kan een CDN-aanvraag van een POST niet verwerken. Dit probleem is opgelost door de code bij te werken om het `cdn.auditude.com` advertentieverzoek om GET in plaats van POST te doen.
 
 **Versie 1.4.32** (1.4.32.792 voor iOS 6.0+)
 
@@ -631,9 +635,9 @@ Dit probleem is opgelost door een oplossing te bieden voor streams die geen M3U8
 
 De volgende problemen zijn in deze release opgelost voor TVSDK:
 
-* (ZD# 24180) Voeg een aangepaste koptekst toe om lijst toe te staan.
+* (ZD# 24180) Voeg een aangepaste koptekst toe aan de lijst van gewenste personen.
 
-Er is een nieuwe aangepaste koptekst toegevoegd aan de lijst voor TVSDK-toestaan.
+Er is een nieuwe aangepaste koptekst toegevoegd aan de TVSDK-lijst van gewenste personen.
 
 * (ZD# 25016) Failover-stroom wordt willekeurig geselecteerd wanneer ABR-besturingsparameters worden ingesteld
 
@@ -661,7 +665,7 @@ Dit probleem is opgelost door de API voor assetDuration aan PTVideoAnalyticsTrac
 
 Dit probleem is hetzelfde als ZD #22351.
 
-* (ZD #25908) VHL - Analytics: Adobe Hartslaggebeurtenis vastloopt
+* (ZD #25908) VHL - Analytics: Adobe hartslaggebeurtenis vastloopt
 
 Dit probleem is opgelost door de implementatie bij te werken en de nieuwste versie van VHL voor iOS versie 1.5.9 te gebruiken om de stabiliteit en prestaties te verbeteren.
 
@@ -721,7 +725,7 @@ De crash die optrad als gevolg van een niet-toegewezen instantie van de mediaspe
 
 * (ZD #24575) - Crash in TVSDK op 32-bits apparaten wanneer enableDebugLog=true
 
-De kwestie in het logboekformaat dat de botsing op apparaten met 32 bits veroorzaakte wanneer het registreren wordt toegelaten is opgelost.
+De kwestie in het logboekformaat dat de botsing op apparaten met 32 bits veroorzaakte wanneer het registreren wordt toegelaten is bevestigd.
 
 **Versie 1.4.26** (1.4.26.702) voor iOS 6.0+
 
@@ -751,7 +755,7 @@ Dit probleem is opgelost door extra null-objectcontroles toe te voegen tijdens h
 
 Dit probleem is hetzelfde als (ZD #21590).
 
-* (ZD #22280) - Analytics Video Length wordt ingesteld op 0
+* (ZD #22280) - De videolengte van Analytics wordt ingesteld op 0
 
 Dit probleem is hetzelfde als (ZD #21590).
 
@@ -777,7 +781,7 @@ Dit probleem is opgelost door de logica bij te werken om de weergave van de spel
 
 Dit probleem is opgelost door VideoAnalyticsTracker bij te werken om het begin/einde van een hoofdstuk correct te detecteren bij het schakelen tussen grenzen van hoofdstukken en niet-hoofdstukken.
 
-* (ZD #20784) - Analytics: Het triggeren van inhoud wordt voltooid voor live video-overgangen
+* (ZD #20784) - Analyse: Het triggeren van inhoud wordt voltooid voor live video-overgangen
 
 Dit probleem is opgelost door een logica toe te voegen die handmatig het voltooien van de inhoud tijdens een sessie voor het bijhouden van video activeert.
 
@@ -816,7 +820,7 @@ Dit probleem is opgelost door extra bescherming te bieden tegen gelijktijdige pr
 
 * (ZD #21782) - iOS-foutcode 10100
 
-Het probleem waarbij de TVSDK een fout van 101000 heeft geretourneerd bij het starten van het afspelen op Adobe Access DRM-streams is opgelost.
+Het probleem waarbij de TVSDK een fout van 101000 heeft geretourneerd bij het starten van het afspelen op DRM-streams van Adobe Access is opgelost.
 
 * (ZD #21889) - Onlineadvertenties en het afspelen van offline inhoud mislukt
 
@@ -828,13 +832,13 @@ Dit probleem is opgelost door de verwerking van VAST-tags van derden met ongeldi
 
 * (ZD #22257) - De TVSDK kan de DRM-stream niet afspelen
 
-Het probleem waarbij de TVSDK die een fout van 101000 heeft geretourneerd terwijl het afspelen werd gestart op Adobe Access DRM-streams, is opgelost.
+Het probleem waarbij de TVSDK die een fout van 101000 heeft geretourneerd terwijl het afspelen werd gestart op DRM-streams van Adobe Access, is opgelost.
 
 **Versie 1.4.22** (1.4.22.627) voor iOS 6.0+
 
 * (ZD #18709) - Crash in de TVSDK voor iOS
 
-Het probleem met een crash die optreedt bij bepaalde met Adobe Access DRM beveiligde streams is opgelost.
+Het probleem met een crash die optrad bij bepaalde met DRM beveiligde streams van Adobe Access is opgelost.
 
 * (ZD #18850) - Creatieve selectielogica bijwerken op basis van CRS-regels
 
@@ -1005,7 +1009,7 @@ Dit probleem is opgelost door ondersteuning te bieden voor de Android CTS-letter
 
 Toegevoegde metagegevens om inhoud beschikbaar te maken wanneer de melding M3U8_PARSER_ERROR plaatsvindt.
 
-* (ZD #4437) - Crashes in Adobe Primetime SDK
+* (ZD #4437) - Crashes inside Adobe Primetime SDK
 
 Probleem verholpen waarbij het programma vastloopt tijdens het voorbereiden van ondertitels/alternatieve audio.
 
@@ -1092,7 +1096,7 @@ Door TVSDK worden lege URL&#39;s voor het bijhouden van regeleinden en afbreking
 
 **Versie 1.4.5** (1.4.5.283)
 
-* (ZD #2141) Analytics-implementatie voor de TreeHouse-app, met bibliotheek toegevoegd om het pakket samen te stellen. `AdobeAnalyticsPlugin.a`
+* (ZD #2141) Implementatie van analysemogelijkheden voor de app TreeHouse, toegevoegde `AdobeAnalyticsPlugin.a` bibliotheek voor het samenstellen van het pakket.
 * Video Heartbeats Library update naar 1.4.1.2
 * [PTPALY-4226] [verwant aan ZD #2423) Het uitvoeren van het Terugstellen DRM kan in schrapping van de gegevens van het Document van de Toepassing resulteren.
 
@@ -1141,7 +1145,7 @@ Door TVSDK worden lege URL&#39;s voor het bijhouden van regeleinden en afbreking
 
 * TVSDK 1.4.28 is gecertificeerd voor iOS 10 Beta 7.
 * DRM-ondersteuning om HTTPS te forceren door API&#39;s `forceHTTPS` en `isForcingHTTPS` API&#39;s toe te voegen.
-* Bijgewerkte VHL-bibliotheken naar 1.5.8, Adobe Mobile-bibliotheken naar 4.8.4 en de logger-hulpprogrammabibliotheek naar het doel voor implementatie van versie 7.0.
+* Bijgewerkte bibliotheken VHL aan 1.5.8, Adobe Mobiele bibliotheken aan 4.8.4, en de logger nutsbibliotheek aan versie 7.0 plaatsingsdoel.
 
 **Versie 1.4.19**
 
@@ -1155,7 +1159,7 @@ Deze versie van de TVSDK is gecertificeerd met de FairPlay-ondersteuning voor iO
 
    **Opmerking**: Houd rekening met de volgende compilatierichtlijnen:
 
-   * De TVSDK-tvOs-ondersteuning is beperkt tot niet-Adobe DRM-gecodeerde streams. U moet de verwijzing naar drmNativeInterface.framework verwijderen in uw tvOS-ontwikkelinstellingen. Met AES gecodeerde stromen worden nog steeds ondersteund.
+   * TVSDK tvOs-ondersteuning is beperkt tot niet-Adobe DRM gecodeerde streams. U moet de verwijzing naar drmNativeInterface.framework verwijderen in uw tvOS-ontwikkelinstellingen. Met AES gecodeerde stromen worden nog steeds ondersteund.
    * Apple eist dat alle Apple TV-toepassingen zijn ingeschakeld voor bitcode. U moet deze markering dus in de projectinstellingen inschakelen.
 
 ## Bekende problemen en beperkingen {#known-issues-and-limitations}
@@ -1164,12 +1168,12 @@ Deze versie van de TVSDK is gecertificeerd met de FairPlay-ondersteuning voor iO
    * VPAID-advertenties worden niet afgespeeld zoals wordt verwacht in iPad 13.
    * Companion-advertenties spelen niet zoals verwacht.
 
-* In iOS TVSDK worden alle advertenties vastgezet in het inhoudsmanifest. Advertentiepatronen worden geïmplementeerd door te zoeken op basis van de duur van de inhoud en advertentiesegmenten. Dus als de duur van het segment niet nauwkeurig is, eindigt het zoeken mogelijk niet altijd bij het exacte frame van het begin of einde van het advertentiespoor. Zelfs als de duur van het frame beperkt is, is er een tolerantie die het platform zelf oplegt aan zoeken. Er kunnen enkele frames of advertenties of inhoud worden weergegeven. Dit is een beperking van het platform en de manier waarop en de invoeging werkt met TVSDK op iOS.
+* In iOS TVSDK worden alle advertenties vastgezet in het inhoudsmanifest. Advertentiepatronen worden geïmplementeerd door te zoeken op basis van de duur van de inhoud en advertentiesegmenten. Dus als de duur van het segment niet nauwkeurig is, eindigt het zoeken mogelijk niet altijd bij het exacte frame van het begin of einde van het ad-einde. Zelfs als de duur van het frame beperkt is, is er een tolerantie die het platform zelf oplegt aan zoeken. Er kunnen enkele frames of advertenties of inhoud worden weergegeven. Dit is een beperking van het platform en de manier waarop en de invoeging werkt met TVSDK op iOS.
 * Het besluit om over te slaan gebeurt in dit geval op de gebeurtenis seek. Aangezien de tijdsduur van het advertentiesegment in het manifest echter de werkelijke duur van de advertentie niet nauwkeurig vertegenwoordigt, is de zoekactie niet nauwkeurig. U ziet dus een paar frames advertentie wanneer het advertentiebeleid wordt toegepast.
 * Het kan voorkomen dat tijdens het roteren van licenties de video niet wordt afgespeeld op iOS 11 en dat deze goed wordt afgespeeld op iOS 9.x en iOS 10.x.
 * Als bij VPAID 2.0-ondersteuning het afspelen via AirPlay actief is, worden VPAID-advertenties overgeslagen.
 * Het drmNativeInterface.framework is niet correct gekoppeld wanneer het minimumdoel is ingesteld op iOS7 (of hoger).
-Oplossing: Geef expliciet de bibliotheek libstdc+.6.dylib op als volgt: Ga naar Target->Build Phases->Link Binary with Libraries en voeg libstdc++.6.dylib toe.
+Oplossing: Geef expliciet de bibliotheek libstdc+.6.dylib op als volgt: Ga naar Doel->Build Phases->Link Binary with Libraries en voeg libstdc++.6.dylib toe.
 * Post-Roll Advertentie wordt niet ingevoegd voor vervangings-API.
 * Als u een advertentie-einde zoekt (zonder er uit te komen), wordt een dubbel advertentie-begin- en advertentierapport weergegeven
 * Het instellen van currentTimeUpdateInterval heeft geen effect.
@@ -1178,7 +1182,7 @@ Opmerking: In bepaalde iOS-versies laadt het besturingssysteem niet automatisch 
 * VPAID-advertenties voldoen niet aan de waarde delayAdLoadingTolerance.
 * 24077- Voor bepaalde HLS-inhoud met ondertitels loopt de speler vast bij de methode Stoppen of Herstellen.
 * Gedetailleerde foutmeldingen zijn niet beschikbaar als Just in Time Ad resolving is ingeschakeld.
-* Foutmeldingen worden geregistreerd volgens de tijd van de advertentieresolutie en niet volgens de volgorde van de advertentie.
+* Foutmeldingen worden geregistreerd volgens de resolutietijd van de advertentie en niet volgens de volgorde van de advertentie.
 * HEVC-ondersteuning heeft de volgende beperkingen in deze release
    * DRM wordt niet ondersteund
    * CC-ondersteuning (CEA 608/708) is niet beschikbaar omdat deze niet wordt ondersteund in CMAF.
@@ -1193,4 +1197,4 @@ Opmerking: In bepaalde iOS-versies laadt het besturingssysteem niet automatisch 
 
 * [TVSDK 3.4 voor iOS-programmeergids](https://docs.adobe.com/content/help/en/primetime/programming/tvsdk-3x-for-ios/introduction/ios-3x-overview.html)
 * [Referentie voor TVSDK iOS 3.4 API](https://help.adobe.com/en_US/primetime/api/psdk/appledoc_v34/index.html)
-* Zie de volledige Help-documentatie op de pagina [Adobe Primetime Learn &amp; Support](https://helpx.adobe.com/support/primetime.html) .
+* Zie de volledige Help-documentatie op de pagina Learn &amp; Support [van](https://helpx.adobe.com/support/primetime.html) Adobe Primetime.
