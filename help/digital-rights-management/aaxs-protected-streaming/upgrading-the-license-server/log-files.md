@@ -3,16 +3,19 @@ seo-title: Logbestanden
 title: Logbestanden
 uuid: 90450f27-ed2f-4b67-953b-0546910deebf
 translation-type: tm+mt
-source-git-commit: 29bc8323460d9be0fce66cbea7c6fce46df20d61
+source-git-commit: 1b9792a10ad606b99b6639799ac2aacb707b2af5
+workflow-type: tm+mt
+source-wordcount: '56'
+ht-degree: 0%
 
 ---
 
 
 # Logbestanden{#log-files}
 
-De logbestanden die door de Adobe Access-server voor beveiligde streaming-toepassing worden gegenereerd, bevinden zich in de map die is opgegeven door *LicenseServer.LogRoot*.
+De logbestanden die door de Adobe Access Server voor de beveiligde streamingtoepassing worden gegenereerd, bevinden zich in de map die is opgegeven door *LicenseServer.LogRoot*.
 
->[!NOTE] {class=&quot;- topic/note &quot;}
+>[!NOTE]
 >
 >Als de huidige logbestanden worden verwijderd of verplaatst terwijl de server actief is, wordt het logbestand mogelijk niet opnieuw gemaakt en gaan bepaalde loggegevens verloren.
 
