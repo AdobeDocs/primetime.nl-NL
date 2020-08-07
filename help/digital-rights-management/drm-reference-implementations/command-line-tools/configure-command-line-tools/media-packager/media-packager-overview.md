@@ -5,7 +5,10 @@ seo-title: Overzicht
 title: Overzicht
 uuid: f4474837-9460-479d-89c2-dd697e0fb997
 translation-type: tm+mt
-source-git-commit: 19e7c941b3337c3b4d37f0b6a1350aac2ad8a0cc
+source-git-commit: 1b9792a10ad606b99b6639799ac2aacb707b2af5
+workflow-type: tm+mt
+source-wordcount: '1317'
+ht-degree: 0%
 
 ---
 
@@ -77,7 +80,7 @@ java -jar AdobePackager.jar -dm <metadatafile> [-e]
 
 * `metadatafile` is een [!DNL .metadata] bestand dat DRM-metagegevens bevat.
 
->[!NOTE] {class=&quot;- topic/note &quot;}
+>[!NOTE]
 >
 >Tijdens het verpakken, kan Media Packager niet meer een [!DNL .header] dossier door gebrek produceren. Als u een [!DNL .header] bestand wilt genereren, gebruikt u de `-h` optie tijdens het verpakken.
 
@@ -168,7 +171,7 @@ java -jar AdobePackager.jar -dm <metadatafile> [-e]
   </tr> 
   <tr rowsep="1" class="- topic/row "> 
    <td colname="1" class="- topic/entry "><span class="codeph"> encrypt.contents.video.level</span> </td> 
-   <td colname="2" class="- topic/entry "> <p class="- topic/p ">Geeft het niveau van de videoversleuteling aan. </p> <p class="- topic/p ">De waarde <span class="codeph"> high</span> wordt gebruikt om alle video-inhoud te coderen, terwijl de waarden <span class="codeph"> medium</span> en <span class="codeph"> low</span> worden gebruikt om delen van de video-inhoud te coderen voor MP4-bestanden die H.264-inhoud bevatten. </p> <p class="- topic/p ">value = <span class="codeph"> high| medium| laag</span> </p> </td> 
+   <td colname="2" class="- topic/entry "> <p class="- topic/p ">Geeft het niveau van de videoversleuteling aan. </p> <p class="- topic/p ">De waarde <span class="codeph"> high</span> wordt gebruikt om alle video-inhoud te coderen, terwijl de waarden <span class="codeph"> medium</span> en <span class="codeph"> low</span> worden gebruikt om delen van de video-inhoud te coderen voor MP4-bestanden die H.264-inhoud bevatten. </p> <p class="- topic/p ">value = <span class="codeph"> high | medium | laag</span> </p> </td> 
   </tr> 
   <tr rowsep="1" class="- topic/row "> 
    <td colname="1" class="- topic/entry "><span class="codeph"> encrypt.contents.secondsUnencrypted</span> </td> 
@@ -212,7 +215,7 @@ java -jar AdobePackager.jar -dm <metadatafile> [-e]
   </tr> 
   <tr rowsep="1" class="- topic/row "> 
    <td colname="1" class="- topic/entry "><span class="codeph"> encrypt.keys.rotation.enable</span> </td> 
-   <td colname="2" class="- topic/entry "> <p class="- topic/p ">Geeft aan of toetsrotatie is ingeschakeld. </p> <p class="- topic/p ">Indien ingesteld op false (de standaardinstelling), wordt sleutelrotatie uitgeschakeld en wordt de hoofd-CEK gebruikt om alle samples in de inhoud te coderen. </p> <p class="- topic/p ">Indien ingesteld op true, wordt sleutelrotatie ingeschakeld en kunnen verschillende toetsen worden gebruikt om segmenten van elke inhoud te coderen. </p> </td> 
+   <td colname="2" class="- topic/entry "> <p class="- topic/p ">Geeft aan of toetsrotatie is ingeschakeld. </p> <p class="- topic/p ">Indien ingesteld op false (de standaardinstelling), wordt sleutelrotatie uitgeschakeld en wordt de master CEK gebruikt om alle samples in de inhoud te coderen. </p> <p class="- topic/p ">Indien ingesteld op true, wordt sleutelrotatie ingeschakeld en kunnen verschillende toetsen worden gebruikt om segmenten van elke inhoud te coderen. </p> </td> 
   </tr> 
   <tr rowsep="1" class="- topic/row "> 
    <td colname="1" class="- topic/entry "><span class="codeph">encrypt.keys.rotation.key.n</span> </td> 
