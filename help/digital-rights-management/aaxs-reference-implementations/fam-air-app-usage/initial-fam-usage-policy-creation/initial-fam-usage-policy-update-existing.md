@@ -3,7 +3,10 @@ seo-title: Een bestaand beleid bijwerken
 title: Een bestaand beleid bijwerken
 uuid: 081e5dab-e735-4ae9-bcfd-15dd9819bef3
 translation-type: tm+mt
-source-git-commit: 29bc8323460d9be0fce66cbea7c6fce46df20d61
+source-git-commit: 1b9792a10ad606b99b6639799ac2aacb707b2af5
+workflow-type: tm+mt
+source-wordcount: '80'
+ht-degree: 0%
 
 ---
 
@@ -14,7 +17,7 @@ Als u een bestaand beleid wilt bijwerken, kiest u de bestandsnaam in de vervolgk
 
 Klik wanneer u klaar bent **[!UICONTROL Save]**. Het beleidsbestand in de [!DNL Resource] directory wordt vervangen door de bijgewerkte versie.
 
->[!NOTE] {class=&quot;- topic/note &quot;}
+>[!NOTE]
 >
 >Zelfs als de beleidsnaam wordt veranderd, zal de naam van het dossier in de [!DNL Resource] Folder niet worden gewijzigd.
 
