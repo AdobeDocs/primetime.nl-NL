@@ -3,7 +3,10 @@ seo-title: Externe en lokale iOS-sleutellevering
 title: Externe en lokale iOS-sleutellevering
 uuid: 90f672e7-9301-4e14-adca-db2a8f951a83
 translation-type: tm+mt
-source-git-commit: 53654b740b03c6a79394d30704a41186d4655237
+source-git-commit: 1b9792a10ad606b99b6639799ac2aacb707b2af5
+workflow-type: tm+mt
+source-wordcount: '245'
+ht-degree: 0%
 
 ---
 
@@ -18,7 +21,7 @@ Adobe Primetime biedt ondersteuning voor de volgende opties voor het leveren van
 
 De levering via de externe sleutel wordt ingeschakeld via het Primetime DRM-beleid dat wordt gebruikt om inhoud te verpakken. Als u deze instelling wilt wijzigen, moet u de inhoud opnieuw verpakken. Als u levering via een externe sleutel inschakelt, moet u een Primetime DRM-sleutelserver implementeren die belangrijke aanvragen van iOS-clients kan beheren. De workflow voor clients op andere platforms wordt echter niet gewijzigd.
 
->[!NOTE] {class=&quot;- topic/note &quot;}
+>[!NOTE]
 >
->De selectie voor belangrijke levering is alleen van invloed op iOS-clients. Alle andere apparaten die HLS-inhoud gebruiken, zoals Android en Primetime op Desktop (Flash Player), gebruiken altijd `Local` sleutellevering, zelfs als deze `Remote` is opgegeven.
+>De selectie voor belangrijke levering is alleen van invloed op iOS-clients. Alle andere apparaten die HLS-inhoud gebruiken, zoals Android en Primetime op Desktop (Flash Player), gebruiken altijd `Local` sleutellevering, zelfs als `Remote` is gespecificeerd.
 
