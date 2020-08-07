@@ -3,14 +3,17 @@ seo-title: Op tijd gebaseerde regels definiëren
 title: Op tijd gebaseerde regels definiëren
 uuid: 17c69869-ac81-4561-9fb6-b1c5c9c4006d
 translation-type: tm+mt
-source-git-commit: 53654b740b03c6a79394d30704a41186d4655237
+source-git-commit: 1b9792a10ad606b99b6639799ac2aacb707b2af5
+workflow-type: tm+mt
+source-wordcount: '577'
+ht-degree: 0%
 
 ---
 
 
 # Op tijd gebaseerde regels definiëren {#defining-time-based-rules}
 
-Adobe Access maakt gebruik van &#39;zachte handhaving&#39; van op tijd gebaseerde licentiebeperkingen. Als een tijdrecht tijdens het afspelen van een video verloopt, wordt het afspelen standaard beperkt tot de volgende keer dat de videostream opnieuw wordt gemaakt (door het aanroepen `Netstream.stop()` en `Netstream.play()`).
+Adobe Access maakt gebruik van &#39;zachte handhaving&#39; van op tijd gebaseerde licentiebeperkingen. Wanneer een tijdrecht tijdens het afspelen van een video verloopt, is het standaardgedrag van Adobe Access dat het afspelen pas wordt beperkt wanneer de videostream opnieuw wordt gemaakt (door het aanroepen `Netstream.stop()` en `Netstream.play()`).
 
 Terwijl de zachte handhaving het standaardgedrag is, kunt u harde handhaving ook toelaten door één van de volgende taken uit te voeren:
 
@@ -59,6 +62,6 @@ Het synchronisatiegedrag wordt bepaald gebruikend de volgende parameters:
 * Hard stopinterval — (optioneel). Afspelen niet toestaan als de synchronisatie niet binnen de opgegeven tijd is gelukt.
 * Synchrone synchronisatiewaarschijnlijkheid forceren (optioneel). Mogelijkheid waarmee de client een synchronisatiebericht moet verzenden vóór het volgende begininterval.
 
->[!NOTE] {class=&quot;- topic/note &quot;}
+>[!NOTE]
 >
->Deze gebruiksregel wordt ondersteund door Adobe Access-clients versie 3.0 en hoger. Het gedrag bij oudere clients is afhankelijk van de minimale clientversie die door de licentieserver wordt ondersteund. Zie [Minimale clientversie](../../../../aaxs-protecting-content/content-implementing-the-license-server/content-handling-license-reqs/content-minimum-client-version.md).
+>Deze gebruiksregel wordt gesteund door de cliëntversie 3.0 van de Toegang van de Adobe. Het gedrag bij oudere clients is afhankelijk van de minimale clientversie die door de licentieserver wordt ondersteund. Zie [Minimale clientversie](../../../../aaxs-protecting-content/content-implementing-the-license-server/content-handling-license-reqs/content-minimum-client-version.md).
