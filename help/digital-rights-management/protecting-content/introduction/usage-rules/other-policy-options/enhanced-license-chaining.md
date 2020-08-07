@@ -3,7 +3,10 @@ seo-title: Verbeterde licentietakken
 title: Verbeterde licentietakken
 uuid: 5e4e825a-de84-4ab2-a652-02cc03153957
 translation-type: tm+mt
-source-git-commit: 53654b740b03c6a79394d30704a41186d4655237
+source-git-commit: 1b9792a10ad606b99b6639799ac2aacb707b2af5
+workflow-type: tm+mt
+source-wordcount: '263'
+ht-degree: 0%
 
 ---
 
@@ -16,7 +19,7 @@ Primetime DRM 2.0 ondersteunt licentietekeningen waarin zowel de leaf- als de ho
 
 Als u uitgebreide licentietekeningen wilt inschakelen, moet u een hoofdcoderingssleutel toewijzen aan een Primetime DRM-beleid. De sleutel van de wortelencryptie wordt gebruikt om de bladvergunning cryptografisch aan de wortelvergunning te binden.
 
->[!NOTE] {class=&quot;- topic/note &quot;}
+>[!NOTE]
 >
 >Verbeterde licentieketting wordt ondersteund door Primetime DRM-clients versie 3.0 of hoger. Als een oudere client een licentie aanvraagt voor inhoud die ondersteuning biedt voor de uitgebreide licentieketen, kan de licentieserver nog steeds een licentie aan deze client uitgeven met behulp van de licentieketen die wordt ondersteund door Primetime DRM 2.0.
 
