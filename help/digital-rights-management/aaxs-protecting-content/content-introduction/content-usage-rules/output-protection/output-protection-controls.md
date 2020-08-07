@@ -3,7 +3,10 @@ seo-title: Besturingselementen voor uitvoerbeveiliging
 title: Besturingselementen voor uitvoerbeveiliging
 uuid: 1f4cc617-7f14-4952-8e61-6acbdf01d10e
 translation-type: tm+mt
-source-git-commit: ffb993889a78ee068b9028cb2bd896003c5d4d4c
+source-git-commit: 1b9792a10ad606b99b6639799ac2aacb707b2af5
+workflow-type: tm+mt
+source-wordcount: '635'
+ht-degree: 0%
 
 ---
 
@@ -26,32 +29,32 @@ De volgende opties/niveaus van handhaving zijn beschikbaar:
  </thead>
  <tbody class="- topic/tbody "> 
   <tr rowsep="1" class="- topic/row "> 
-   <td colname="1" class="- topic/entry "> <p class="- topic/p "><b class="+ topic/ph hi-d/b ">Vereist</b> — Analoge kopieerbeveiliging (ACP) of Copy Generation Management System — Analog (CGMS-A)-uitvoerbeveiliging moet zijn ingeschakeld om inhoud af te spelen op een extern apparaat. Adobe Access-clients moeten uitvoerbeveiliging met ACS of CGMS-A inschakelen. Op apparaten die beide ondersteunen, proberen de Adobe Access 3.0-clients beide in te schakelen. U moet echter slechts één speler inschakelen om de inhoud af te spelen. </p> </td> 
+   <td colname="1" class="- topic/entry "> <p class="- topic/p "><b class="+ topic/ph hi-d/b ">Vereist</b> — Analoge kopieerbeveiliging (ACP) of Copy Generation Management System — Analog (CGMS-A)-uitvoerbeveiliging moet zijn ingeschakeld om inhoud af te spelen op een extern apparaat. De cliënten van de Toegang van Adobe moeten outputbescherming toelaten gebruikend ACS of CGMS-A. Op apparaten die beide steunen, zullen de Adobe Access 3.0 cliënten proberen om allebei toe te laten. U moet echter slechts één speler inschakelen om de inhoud af te spelen. </p> </td> 
    <td colname="2" class="- topic/entry "> <p class="- topic/p ">JA </p> </td> 
    <td colname="3" class="- topic/entry "> <p class="- topic/p ">JA </p> </td> 
   </tr> 
   <tr rowsep="1" class="- topic/row "> 
-   <td colname="1" class="- topic/entry "> <p class="- topic/p "><b class="+ topic/ph hi-d/b ">ACS vereist</b> — ACS-uitvoerbescherming is vereist. Afspelen is niet toegestaan op CGMS-A. Adobe Access 2.0-clients bieden geen ondersteuning voor deze optie. Als deze optie is ingesteld, gedraagt een Adobe Access 2.0-client zich alsof de optie Niet afspelen is opgegeven. </p> </td> 
+   <td colname="1" class="- topic/entry "> <p class="- topic/p "><b class="+ topic/ph hi-d/b ">ACS vereist</b> — ACS-uitvoerbescherming is vereist. Afspelen is niet toegestaan op CGMS-A. Adobe Access 2.0-clients bieden geen ondersteuning voor deze optie. Indien ingesteld, gedraagt een Adobe Access 2.0-client zich alsof de optie "Geen afspelen" is opgegeven. </p> </td> 
    <td colname="2" class="- topic/entry "> <p class="- topic/p ">JA </p> </td> 
    <td colname="3" class="- topic/entry "> <p class="- topic/p ">- </p> </td> 
   </tr> 
   <tr rowsep="1" class="- topic/row "> 
-   <td colname="1" class="- topic/entry "> <p class="- topic/p "><b class="+ topic/ph hi-d/b ">CGMS-A vereist</b> — CGMS-A-uitvoerbeveiliging is vereist. Afspelen is niet toegestaan voor ACS-landen. Adobe Access 2.0-clients bieden geen ondersteuning voor deze optie. Als deze optie is ingesteld, gedraagt een Adobe Access 2.0-client zich alsof de optie Niet afspelen is opgegeven. </p> </td> 
+   <td colname="1" class="- topic/entry "> <p class="- topic/p "><b class="+ topic/ph hi-d/b ">CGMS-A vereist</b> — CGMS-A-uitvoerbeveiliging is vereist. Afspelen is niet toegestaan voor ACS-landen. Adobe Access 2.0-clients bieden geen ondersteuning voor deze optie. Indien ingesteld, gedraagt een Adobe Access 2.0-client zich alsof de optie "Geen afspelen" is opgegeven. </p> </td> 
    <td colname="2" class="- topic/entry "> <p class="- topic/p ">JA </p> </td> 
    <td colname="3" class="- topic/entry "> <p class="- topic/p ">- </p> </td> 
   </tr> 
   <tr rowsep="1" class="- topic/row "> 
-   <td colname="1" class="- topic/entry "> <p class="- topic/p "><b class="+ topic/ph hi-d/b ">Gebruik indien beschikbaar</b> — Poging om ACS- en CGMS-A-uitvoerbeveiliging in te schakelen, indien beschikbaar, en afspelen toe te staan als deze niet beschikbaar is. Adobe Access 3.0-clients proberen indien mogelijk zowel ACS als CGMS-A in te schakelen. Adobe Access 2.0-clients proberen alleen ACS of CGMS-A in te schakelen. De Adobe Access-client zal bijvoorbeeld proberen ACS of CGMS-A in te schakelen. Als de poging slaagt, zal de andere optie niet worden toegelaten. Als de poging mislukt, wordt een tweede poging gedaan om de andere optie in te schakelen. Zelfs als beide pogingen mislukken, wordt de inhoud toch afgespeeld. </p> </td> 
+   <td colname="1" class="- topic/entry "> <p class="- topic/p "><b class="+ topic/ph hi-d/b ">Gebruik indien beschikbaar</b> — Poging om ACS- en CGMS-A-uitvoerbeveiliging in te schakelen, indien beschikbaar, en afspelen toe te staan als deze niet beschikbaar is. Adobe Access 3.0-klanten zullen proberen om, indien mogelijk, zowel ACS als CGMS-A in te schakelen. Adobe Access 2.0-clients zullen alleen proberen ACS of CGMS-A in te schakelen. De Adobe Access-client zal bijvoorbeeld proberen ACS of CGMS-A in te schakelen. Als de poging slaagt, zal de andere optie niet worden toegelaten. Als de poging mislukt, wordt een tweede poging gedaan om de andere optie in te schakelen. Zelfs als beide pogingen mislukken, wordt de inhoud toch afgespeeld. </p> </td> 
    <td colname="2" class="- topic/entry "> <p class="- topic/p ">JA </p> </td> 
    <td colname="3" class="- topic/entry "> <p class="- topic/p ">JA </p> </td> 
   </tr> 
   <tr rowsep="1" class="- topic/row "> 
-   <td colname="1" class="- topic/entry "> <p class="- topic/p "><b class="+ topic/ph hi-d/b ">Gebruik ACS indien beschikbaar</b> — Poging om ACS-uitvoerbescherming in te schakelen indien beschikbaar, maar afspelen toestaan als deze niet beschikbaar is. De bescherming is niet beschikbaar op CGMS-A. Adobe Access 2.0-clients bieden geen ondersteuning voor deze optie. Als deze optie is ingesteld, gedraagt een Adobe Access 2.0-client zich alsof de optie "Geen beveiliging" is opgegeven. </p> </td> 
+   <td colname="1" class="- topic/entry "> <p class="- topic/p "><b class="+ topic/ph hi-d/b ">Gebruik ACS indien beschikbaar</b> — Poging om ACS-uitvoerbescherming in te schakelen indien beschikbaar, maar afspelen toestaan als deze niet beschikbaar is. De bescherming is niet beschikbaar op CGMS-A. Adobe Access 2.0-clients bieden geen ondersteuning voor deze optie. Indien ingesteld, gedraagt een Adobe Access 2.0-client zich alsof de optie "Geen beveiliging" is opgegeven. </p> </td> 
    <td colname="2" class="- topic/entry "> <p class="- topic/p ">JA </p> </td> 
    <td colname="3" class="- topic/entry "> <p class="- topic/p ">- </p> </td> 
   </tr> 
   <tr rowsep="1" class="- topic/row "> 
-   <td colname="1" class="- topic/entry "> <p class="- topic/p "><b class="+ topic/ph hi-d/b ">Gebruik CGMS-A indien beschikbaar </b>— probeer CGMS-A-uitvoerbeveiliging in te schakelen als deze beschikbaar is, maar sta afspelen toe als deze niet beschikbaar is. De bescherming is niet beschikbaar op ACS. Adobe Access 2.0-clients bieden geen ondersteuning voor deze optie. Als deze optie is ingesteld, gedraagt een Adobe Access 2.0-client zich alsof de optie "Geen beveiliging" is opgegeven. </p> </td> 
+   <td colname="1" class="- topic/entry "> <p class="- topic/p "><b class="+ topic/ph hi-d/b ">Gebruik CGMS-A indien beschikbaar </b>— probeer CGMS-A-uitvoerbeveiliging in te schakelen als deze beschikbaar is, maar sta afspelen toe als deze niet beschikbaar is. De bescherming is niet beschikbaar op ACS. Adobe Access 2.0-clients bieden geen ondersteuning voor deze optie. Indien ingesteld, gedraagt een Adobe Access 2.0-client zich alsof de optie "Geen beveiliging" is opgegeven. </p> </td> 
    <td colname="2" class="- topic/entry "> <p class="- topic/p ">JA </p> </td> 
    <td colname="3" class="- topic/entry "> <p class="- topic/p ">- </p> </td> 
   </tr> 
@@ -68,7 +71,7 @@ De volgende opties/niveaus van handhaving zijn beschikbaar:
  </tbody> 
 </table>
 
->[!NOTE] {class=&quot;- topic/note &quot;}
+>[!NOTE]
 >
 >Hoewel deze regels op alle platforms consistent worden toegepast, is het momenteel alleen mogelijk om uitvoerbeveiliging op Windows-platforms veilig in te schakelen. Op andere platforms (zoals Macintosh en Linux) zijn er geen ondersteunende besturingssysteemfuncties beschikbaar voor toepassingen van derden.
 
