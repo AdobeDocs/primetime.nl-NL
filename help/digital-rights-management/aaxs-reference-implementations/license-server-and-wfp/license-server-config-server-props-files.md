@@ -3,7 +3,10 @@ seo-title: Servereigenschappen
 title: Servereigenschappen
 uuid: 3d3a0ee3-009f-4d62-9587-7e487ecdcafd
 translation-type: tm+mt
-source-git-commit: 4102780d0c7d0b96d120c1c2b3d14c47bc1b0e6f
+source-git-commit: 1b9792a10ad606b99b6639799ac2aacb707b2af5
+workflow-type: tm+mt
+source-wordcount: '182'
+ht-degree: 0%
 
 ---
 
@@ -32,7 +35,7 @@ Het wachtwoord van uw referentie op de juiste wijze voorbereiden:
    </i class="+ topic>
    ```
 
->[!NOTE] {class=&quot;- topic/note &quot;}
+>[!NOTE]
 >
 >In het vorige voorbeeld wordt een puntkomma (;) als scheidingsteken gebruikt. Gebruik voor andere platforms dan Microsoft Windows een dubbele punt (:) als scheidingsteken.
 
