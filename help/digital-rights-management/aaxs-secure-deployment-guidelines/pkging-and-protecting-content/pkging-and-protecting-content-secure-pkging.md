@@ -3,20 +3,23 @@ seo-title: Inhoud veilig verpakken
 title: Inhoud veilig verpakken
 uuid: a5e7cc17-353b-47d1-b89c-a2ba3c9faca1
 translation-type: tm+mt
-source-git-commit: 29bc8323460d9be0fce66cbea7c6fce46df20d61
+source-git-commit: 1b9792a10ad606b99b6639799ac2aacb707b2af5
+workflow-type: tm+mt
+source-wordcount: '385'
+ht-degree: 0%
 
 ---
 
 
 # Inhoud veilig verpakken {#securely-packaging-content}
 
-Voor het configuratiebestand voor het opdrachtregelprogramma Adobe Access Media Packager is een PKCS12-referentie vereist die tijdens het verpakken wordt gebruikt.
+Het configuratiedossier voor het Adobe Access Media Packager bevellijnhulpmiddel vereist een referentie PKCS12 die tijdens het verpakken wordt gebruikt.
 
 In de hulpmiddelen van de Lijn van het Bevel van de Implementatie van de Verwijzing, wordt het wachtwoord voor het PKCS12 geloofsbrieven- dossier opgeslagen in het flashaccess.properties- dossier in duidelijke teksten. Wees daarom voorzichtig met het beveiligen van de computer die als host fungeert voor dit bestand en zorg ervoor dat dit bestand zich in een veilige omgeving bevindt. (Zie [Fysieke veiligheid en toegang](../../aaxs-secure-deployment-guidelines/physical-sec-and-access.md)).
 
-Packager gebruikt ook de certificaten van het Vervoer van de Server van de Vergunning en van de Server van de Vergunning. Zowel de integriteit als de vertrouwelijkheid van deze informatie moeten worden beschermd. Alleen bevoegde entiteiten mogen de verpakker gebruiken. Als een van uw persoonlijke sleutels is aangetast, stelt u Adobe Systems Incorporated hiervan onmiddellijk in kennis, zodat het certificaat kan worden ingetrokken.
+Packager gebruikt ook de certificaten van het Vervoer van de Server van de Vergunning en van de Server van de Vergunning. Zowel de integriteit als de vertrouwelijkheid van deze informatie moeten worden beschermd. Alleen bevoegde entiteiten mogen de verpakker gebruiken. Als een van uw persoonlijke sleutels is aangetast, stelt u Adobe Systems Incorporated hiervan onmiddellijk op de hoogte, zodat het certificaat kan worden ingetrokken.
 
->[!NOTE] {class=&quot;- topic/note &quot;}
+>[!NOTE]
 >
 >Met de API kunt u dezelfde sleutel gebruiken voor meerdere stukken inhoud. Om het hoogste niveau van veiligheid te verzekeren, adviseren wij deze eigenschap slechts voor multi-beetjetarief FMS inhoud wordt gebruikt. Het wordt afgeraden dezelfde sleutel te gebruiken voor meerdere bestanden die verschillende inhoud vertegenwoordigen.
 
