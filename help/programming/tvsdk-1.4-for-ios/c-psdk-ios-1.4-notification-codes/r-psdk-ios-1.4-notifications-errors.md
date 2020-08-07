@@ -5,7 +5,10 @@ seo-title: FOUTmeldingscodes
 title: FOUTmeldingscodes
 uuid: cea75277-7747-4f9b-ad59-98f9f1a5ac2f
 translation-type: tm+mt
-source-git-commit: 5908e5a3521966496aeec0ef730e4a704fddfb68
+source-git-commit: 1b9792a10ad606b99b6639799ac2aacb707b2af5
+workflow-type: tm+mt
+source-wordcount: '446'
+ht-degree: 5%
 
 ---
 
@@ -257,4 +260,6 @@ De meeste fouten bevatten relevante metagegevens, bijvoorbeeld de URL van de bro
  </tbody> 
 </table>
 
->[!NOTE] adID en source (URL) kunnen worden opgehaald via de metagegevens in de melding met de `PTAdAsset` `AD_ASSET` sleutel.
+>[!NOTE]
+>
+>adID en source (URL) kunnen worden opgehaald via de metagegevens in de melding met de `PTAdAsset` `AD_ASSET` sleutel.
