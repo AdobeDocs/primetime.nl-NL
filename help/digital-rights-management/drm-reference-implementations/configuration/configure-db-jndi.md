@@ -5,7 +5,10 @@ seo-title: De database van de licentieserver configureren
 title: De database van de licentieserver configureren
 uuid: 6d34e849-1616-46bd-ad18-4f98e6c45af7
 translation-type: tm+mt
-source-git-commit: 29bc8323460d9be0fce66cbea7c6fce46df20d61
+source-git-commit: 1b9792a10ad606b99b6639799ac2aacb707b2af5
+workflow-type: tm+mt
+source-wordcount: '296'
+ht-degree: 0%
 
 ---
 
@@ -35,7 +38,7 @@ Om het steekproefgegevensbestand te vormen door opstelling het gegevensbestandsc
    Dit script bevindt zich in de `[DRM SDK DVD]\Reference Implementation\Server\Reference Implementation Server\dbscript\ dbscript\` map.
 1. Voer het [!DNL PopulateSampleDB] script uit om de gegevens te vullen, net als in stap 2.
 
-   >[!NOTE] {class=&quot;- topic/note &quot;}
+   >[!NOTE]
    >
    >De eerste keer dat u het [!DNL CreateSampleDB.sql] script uitvoert, treedt de volgende fout op:
 
