@@ -3,7 +3,10 @@ seo-title: Vooraf gegenereerde licenties
 title: Vooraf gegenereerde licenties
 uuid: 31430753-11f1-4ce5-b402-cf4279119a05
 translation-type: tm+mt
-source-git-commit: 29bc8323460d9be0fce66cbea7c6fce46df20d61
+source-git-commit: 1b9792a10ad606b99b6639799ac2aacb707b2af5
+workflow-type: tm+mt
+source-wordcount: '402'
+ht-degree: 0%
 
 ---
 
@@ -16,7 +19,7 @@ Wanneer u een Leaf-licentie genereert, moeten de metagegevens voor de inhoud wor
 
 Bij het genereren van een basislicentie kunnen de metagegevens van de inhoud worden opgegeven zoals hierboven beschreven. U kunt ook een hoofdlicentie genereren met een beleid- ( `setSelectedPolicy()`) en licentieserver-URL ( `setLicenseServerURL()`) in plaats van met de metagegevens.
 
->[!NOTE] {class=&quot;- topic/note &quot;}
+>[!NOTE]
 >
 >Een licentieserver-URL is vereist, zelfs als er geen Adobe Access-licentieserver is waarvan de clients een licentie kunnen aanvragen. In dat geval moet de URL van de licentieserver een URL opgeven die de uitgever van de licentie identificeert.
 
