@@ -3,7 +3,10 @@ seo-title: De licentieserver samenstellen
 title: De licentieserver samenstellen
 uuid: d7ca8a8f-c778-41a2-b823-93fac9ab07c5
 translation-type: tm+mt
-source-git-commit: 29bc8323460d9be0fce66cbea7c6fce46df20d61
+source-git-commit: 1b9792a10ad606b99b6639799ac2aacb707b2af5
+workflow-type: tm+mt
+source-wordcount: '156'
+ht-degree: 0%
 
 ---
 
@@ -12,7 +15,7 @@ source-git-commit: 29bc8323460d9be0fce66cbea7c6fce46df20d61
 
 De licentieserver voor de referentie-implementatie bevat WAR-bestanden voor de implementatie van de licentieserver. Het omvat ook alle broncode van de vergunningsserver en een Ant bouwt manuscript (Verwijzing Implementation\Server\refimpl\build-refimpl.xml) zodat kunt u gemakkelijk veranderingen in de code aanbrengen.
 
->[!NOTE] {class=&quot;- topic/note &quot;}
+>[!NOTE]
 >
 >Deze stap is alleen nodig als u de broncode wilt wijzigen. Voor evaluatiedoeleinden kunt u deze stap overslaan en de WAR-bestanden gebruiken zoals deze worden verzonden.
 
