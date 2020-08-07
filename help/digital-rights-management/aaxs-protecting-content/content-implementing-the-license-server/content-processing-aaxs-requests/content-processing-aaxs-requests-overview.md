@@ -3,7 +3,10 @@ seo-title: Overzicht
 title: Overzicht
 uuid: 870c32f5-1119-4fec-abed-25e51dd1ebe3
 translation-type: tm+mt
-source-git-commit: 29bc8323460d9be0fce66cbea7c6fce46df20d61
+source-git-commit: 1b9792a10ad606b99b6639799ac2aacb707b2af5
+workflow-type: tm+mt
+source-wordcount: '312'
+ht-degree: 0%
 
 ---
 
@@ -16,7 +19,7 @@ De basisklasse die wordt gebruikt om interactie met één aanvraag/reactie af te
 
 Als het verzoek succesvol is, stelt u de reactiegegevens in. anders aanhalen `RequestMessageBase.setErrorData()` bij mislukking. Beëindig altijd de implementatie door de `close()` methode aan te roepen (het wordt geadviseerd dat `close()` wordt geroepen in het `finally` blok van een `try` verklaring). Zie de `MessageHandlerBase` API verwijzingsdocumentatie voor een voorbeeld van hoe te om de manager aan te halen.
 
->[!NOTE] {class=&quot;- topic/note &quot;}
+>[!NOTE]
 >
 >HTTP-statuscode 200 (OK) moet worden verzonden als reactie op alle aanvragen die door de handler worden verwerkt. Als de handler niet kon worden gemaakt vanwege een serverfout, reageert de server mogelijk met een andere statuscode, zoals 500 (Interne serverfout).
 
