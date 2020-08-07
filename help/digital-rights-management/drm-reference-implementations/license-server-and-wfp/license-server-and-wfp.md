@@ -1,18 +1,21 @@
 ---
-description: De referentie-implementatieserver kan u helpen een volledig functionele licentieserver te maken die alle functies van de Adobe Primetime DRM Java SDK gebruikt.
-seo-description: De referentie-implementatieserver kan u helpen een volledig functionele licentieserver te maken die alle functies van de Adobe Primetime DRM Java SDK gebruikt.
+description: Met de server voor referentie-implementatie kunt u een volledig functionele licentieserver maken die alle functies van de Adobe Primetime DRM Java SDK gebruikt.
+seo-description: Met de server voor referentie-implementatie kunt u een volledig functionele licentieserver maken die alle functies van de Adobe Primetime DRM Java SDK gebruikt.
 seo-title: Licentieserver
 title: Licentieserver
 uuid: 39cb0d0f-f3dc-48e9-b6fd-6960a9ade291
 translation-type: tm+mt
-source-git-commit: 4102780d0c7d0b96d120c1c2b3d14c47bc1b0e6f
+source-git-commit: 1b9792a10ad606b99b6639799ac2aacb707b2af5
+workflow-type: tm+mt
+source-wordcount: '297'
+ht-degree: 0%
 
 ---
 
 
 # Licentieserver {#license-server}
 
-De referentie-implementatieserver kan u helpen een volledig functionele licentieserver te maken die alle functies van de Adobe Primetime DRM Java SDK gebruikt.
+Met de server voor referentie-implementatie kunt u een volledig functionele licentieserver maken die alle functies van de Adobe Primetime DRM Java SDK gebruikt.
 
 In deze implementatie worden gebruikers geverifieerd op basis van gebruikersinvoer in een database. De server bevat demonstratie-bedrijfslogica voor het afgeven van licenties en biedt compatibiliteitsondersteuning voor Flash Media Rights Management Server 1.0 en 1.5.
 
@@ -29,7 +32,7 @@ Nadat u Tomcat en MySQL hebt geïnstalleerd, neemt u contact op met Adobe voor u
 
 ## De licentieserver samenstellen {#build-the-license-server}
 
->[!NOTE] {class=&quot;- topic/note &quot;}
+>[!NOTE]
 >
 >Het samenstellen van de licentieserver is alleen nodig als u van plan bent de broncode te wijzigen. Voor evaluatiedoeleinden kunt u de WAR-bestanden gewoon gebruiken zoals ze worden verzonden.
 
