@@ -3,7 +3,10 @@ seo-title: Overzicht van gebruiksmodellen implementeren
 title: Overzicht van gebruiksmodellen implementeren
 uuid: 1041bb84-9996-4284-b2a0-d6fc6d4b73d9
 translation-type: tm+mt
-source-git-commit: 29bc8323460d9be0fce66cbea7c6fce46df20d61
+source-git-commit: 1b9792a10ad606b99b6639799ac2aacb707b2af5
+workflow-type: tm+mt
+source-wordcount: '589'
+ht-degree: 0%
 
 ---
 
@@ -23,7 +26,7 @@ Om de demo van het gebruiksmodel toe te laten, specificeer het douanebezit `RI_U
     java -jar AdobeMediaPackager.jar source.flv dest.flv -k RI_UsageModelDemo=true
 ```
 
->[!NOTE] {class=&quot;- topic/note &quot;}
+>[!NOTE]
 >
 >Als u de optionele demo-modus niet activeert tijdens het verpakken, gebruikt de licentieserver het beleid dat tijdens het verpakken is opgegeven om een licentie uit te geven. Als er meerdere beleidsregels zijn opgegeven, gebruikt de licentieserver het eerste geldige beleid.
 
