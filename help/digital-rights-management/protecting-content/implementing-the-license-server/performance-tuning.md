@@ -3,7 +3,10 @@ seo-title: Prestaties afstemmen
 title: Prestaties afstemmen
 uuid: db8889c7-ecf5-4551-a6fc-1d3ab992b9ff
 translation-type: tm+mt
-source-git-commit: 7e8df034035fe465fbe403949ef828e7811ced2e
+source-git-commit: 1b9792a10ad606b99b6639799ac2aacb707b2af5
+workflow-type: tm+mt
+source-wordcount: '404'
+ht-degree: 0%
 
 ---
 
@@ -15,7 +18,7 @@ Gebruik de volgende tips om de prestaties te verbeteren:
 * Het gebruiken van een netwerk HSM kan beduidend langzamer zijn dan het gebruiken van direct-verbonden HSM.
 * Voor betere prestaties, kunt u naar keuze inheemse steun voor cryptografische verrichtingen toelaten door de platform-specifieke bibliotheken op te stellen die in de [!DNL thirdparty/cryptoj] omslag van SDK worden gevestigd. Als u native ondersteuning wilt inschakelen, voegt u de bibliotheek voor uw platform (jsafe.dll voor Windows of libjsafe.so voor Linux) toe aan het pad.
 
-   >[!NOTE] {class=&quot;- topic/note &quot;}
+   >[!NOTE]
    >
    >Als u meerdere webtoepassingen uitvoert in dezelfde Tomcat-instantie en `jsafe.dll` het pad heeft, kan alleen de eerste webtoepassing die de `jsafe.dll` bibliotheek laadt, deze laden. Daarom krijgt alleen de eerste webtoepassing het voordeel van de native ondersteuning. Plaats in dergelijke gevallen `cryptoj.jar`buiten het WAR-bestand om de prestaties van alle webtoepassingen te verbeteren. Bijvoorbeeld in de `<tomcat_installation_folder>/lib` map.
 
@@ -27,7 +30,7 @@ Onder bepaalde omstandigheden kunnen Linux-omgevingen pauzeren bij het uitvoeren
 
 * Opstarten van de Adobe Primetime DRM-licentieserver
 * Beleid genereren met behulp van het [!DNL AdobePolicyManager] hulpprogramma
-* Met DRM beveiligde inhoud verpakken met Adobe Media Server of de Primetime OfflinePackager
+* Met DRM beveiligde inhoud verpakken met Adobe Media Server of Primetime OfflinePackager
 
 Vertragingen tijdens deze bewerkingen zijn vaak het resultaat van een lage entropiepool op uw Linux-server.
 
