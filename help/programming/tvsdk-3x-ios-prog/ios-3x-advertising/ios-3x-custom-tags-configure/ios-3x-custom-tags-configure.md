@@ -5,7 +5,10 @@ seo-title: Aangepaste tags
 title: Aangepaste tags
 uuid: 103f4fff-2218-4d44-90bc-b80da467f282
 translation-type: tm+mt
-source-git-commit: 557f42cd9a6f356aa99e13386d9e8d65e043a6af
+source-git-commit: 1b9792a10ad606b99b6639799ac2aacb707b2af5
+workflow-type: tm+mt
+source-wordcount: '370'
+ht-degree: 0%
 
 ---
 
@@ -26,9 +29,9 @@ TVSDK biedt offline ondersteuning voor specifieke #EXT-advertentietags. Uw toepa
 >
 >U kunt zich abonneren op aangepaste tags voor zowel VOD- als live/lineaire streams.
 
->[!NOTE] {othertype=&quot;Beperking&quot;}
+>[!NOTE]
 >
->Wanneer HLS wordt afgespeeld met de tag Video in Safari en niet met Flash Fallback, is deze functie niet beschikbaar in Safari.
+>Wanneer HLS door de Video markering in Safari, en niet door Flash Fallback te gebruiken wordt gespeeld, zal deze eigenschap niet beschikbaar in Safari zijn.
 
 ## Aangepaste HLS-tags gebruiken {#section_AD032318AEF5418393D2B1DF36B0BABB}
 
