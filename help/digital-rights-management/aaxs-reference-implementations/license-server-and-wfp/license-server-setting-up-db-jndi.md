@@ -3,7 +3,10 @@ seo-title: De database instellen en de JNDI-gegevensbron configureren
 title: De database instellen en de JNDI-gegevensbron configureren
 uuid: 1326523f-c053-4169-a934-1b2d3907b1f4
 translation-type: tm+mt
-source-git-commit: 29bc8323460d9be0fce66cbea7c6fce46df20d61
+source-git-commit: 1b9792a10ad606b99b6639799ac2aacb707b2af5
+workflow-type: tm+mt
+source-wordcount: '521'
+ht-degree: 0%
 
 ---
 
@@ -19,7 +22,7 @@ Voor de licentieserver voor de voorbeeldimplementatie is een database nodig die 
 
 Voor anonieme licentieaanschaf is geen database vereist.
 
->[!NOTE] {class=&quot;- topic/note &quot;}
+>[!NOTE]
 >
 >De instructies in deze sectie gelden voor het Microsoft Windows-platform. Voor andere besturingssystemen raadpleegt u de documentatie bij uw besturingssysteem of raadpleegt u de MySQL-documentatie.
 
@@ -37,7 +40,7 @@ Als u de licentieserver wilt uitvoeren, moet u MySQL 5.1.34 installeren en confi
 
 Vervolgens moet u MySQL JDBC Driver 5.1.7 installeren. Hiervoor kopieert u [!DNL mysql-connector-java-5.1.7-bin.jar] (in de [!DNL Third Party\MySQL\Installer\5.1] map op de dvd) naar de directory Tomcat Server lib: [!DNL ...\Tomcat6.0\lib].
 
->[!NOTE] {class=&quot;- topic/note &quot;}
+>[!NOTE]
 >
 >MySQL JDBC Driver 5.1.7 werkt met Tomcat 6.0. Oudere versies van Tomcat worden niet ondersteund.
 
@@ -53,7 +56,7 @@ Stel de voorbeelddatabase in door het databaseschema in te stellen en de databas
 1. Bewerk het script waarmee voorbeeldgegevens in de tabellen worden ingevuld en voeg gegevens voor testdoeleinden toe: [!DNL Reference Implementation\Server\dbscript\PopulateSampleDB.sql].
 1. Voer dit manuscript uit om de gegevens te bevolken aangezien u in Stap 2 deed.
 
->[!NOTE] {class=&quot;- topic/note &quot;}
+>[!NOTE]
 >
 >De eerste keer dat u het [!DNL CreateSampleDB.sql] script uitvoert, wordt de volgende fout weergegeven:
 
