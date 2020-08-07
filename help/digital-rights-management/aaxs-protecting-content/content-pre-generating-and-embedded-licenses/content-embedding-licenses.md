@@ -3,7 +3,10 @@ seo-title: Licenties insluiten
 title: Licenties insluiten
 uuid: b8d8ee9b-7430-4899-9caf-47d6b64021b8
 translation-type: tm+mt
-source-git-commit: 29bc8323460d9be0fce66cbea7c6fce46df20d61
+source-git-commit: 1b9792a10ad606b99b6639799ac2aacb707b2af5
+workflow-type: tm+mt
+source-wordcount: '165'
+ht-degree: 0%
 
 ---
 
@@ -16,8 +19,8 @@ Als u een licentie wilt insluiten, vraagt u een exemplaar van `com.adobe.flashac
 
 Zie `com.adobe.flashaccess.samples.licenseembedder.EmbedLicense` in de map Samples van de opdrachtregelprogramma&#39;s voor naslagimplementatie de voorbeeldcode voor het aantonen van ingesloten licenties.
 
->[!NOTE] {class=&quot;- topic/note &quot;}
+>[!NOTE]
 >
->Adobe Access 2.0-clients negeren alle licenties die in de inhoud zijn ingesloten en proberen een licentie te verkrijgen van de licentieserver die in de metagegevens is opgegeven. Als de metagegevens echter aangeven dat er geen licentieserver beschikbaar is, moet een Adobe Access 2.0-client een upgrade uitvoeren om de inhoud weer te geven.
+>Adobe Access 2.0-clients negeren alle licenties die in de inhoud zijn ingesloten en proberen een licentie te verkrijgen van de licentieserver die in de metagegevens is opgegeven. Nochtans, als de meta-gegevens erop wijzen dat geen vergunningsserver beschikbaar is, zal een cliënt van de Toegang 2.0 van Adobe moeten bevorderen om de inhoud te bekijken.
 
 Zie [out-of-band licenties](../../aaxs-protecting-content/content-introduction/packaging-options/content-out-of-band-licenses.md).
