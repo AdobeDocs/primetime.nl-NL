@@ -5,7 +5,10 @@ seo-title: Vooraf gegenereerde licenties
 title: Vooraf gegenereerde licenties
 uuid: aa7d5038-5a9b-40a2-a240-266622158b43
 translation-type: tm+mt
-source-git-commit: 29bc8323460d9be0fce66cbea7c6fce46df20d61
+source-git-commit: 1b9792a10ad606b99b6639799ac2aacb707b2af5
+workflow-type: tm+mt
+source-wordcount: '704'
+ht-degree: 0%
 
 ---
 
@@ -20,9 +23,9 @@ Wanneer u een Leaf-licentie genereert, moet u de metagegevens voor de inhoud opg
 
 Wanneer u een basislicentie genereert, moet u de metagegevens van de inhoud opgeven zoals hierboven beschreven. U kunt ook een hoofdlicentie genereren door een DRM-beleid ( `setSelectedPolicy()`) en een URL van de licentieserver ( `setLicenseServerURL()`) toe te passen in plaats van metagegevens.
 
->[!NOTE] {class=&quot;- topic/note &quot;}
+>[!NOTE]
 >
->Een licentieserver-URL is vereist, zelfs als er geen Adobe Primetime DRM-licentieserver is waarmee de clients een licentie kunnen aanvragen. In dat geval moet de URL van de licentieserver een URL opgeven die de uitgever van de licentie identificeert.
+>Een licentieserver-URL is vereist, zelfs als er geen Adobe Primetime DRM-licentieserver is waar de clients een licentie kunnen aanvragen. In dat geval moet de URL van de licentieserver een URL opgeven die de uitgever van de licentie identificeert.
 
 Als het DRM-beleid gebruikmaakt van Enhanced License Chaining, moet u een licentieserverreferentie opgeven om de hoofdcoderingssleutel te decoderen in het DRM-beleid ( `setRootKeyRetrievalInfo()`).
 
