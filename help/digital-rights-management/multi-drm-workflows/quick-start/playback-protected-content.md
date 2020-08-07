@@ -1,18 +1,21 @@
 ---
-description: Als u de DRM-oplossing wilt testen, hebt u een videotoepassing nodig die de specifieke DRM-oplossing kan verwerken waarmee u werkt. Deze speler kan een voorbeeldspeler zijn die beschikbaar wordt gesteld door Adobe of uw eigen videotoepassing op TVSDK.
-seo-description: Als u de DRM-oplossing wilt testen, hebt u een videotoepassing nodig die de specifieke DRM-oplossing kan verwerken waarmee u werkt. Deze speler kan een voorbeeldspeler zijn die beschikbaar wordt gesteld door Adobe of uw eigen videotoepassing op TVSDK.
+description: Als u de DRM-oplossing wilt testen, hebt u een videotoepassing nodig die de specifieke DRM-oplossing kan verwerken waarmee u werkt. Deze speler kan een voorbeeldspeler zijn die door Adobe of uw eigen op TVSDK gebaseerde videotoepassing beschikbaar wordt gesteld.
+seo-description: Als u de DRM-oplossing wilt testen, hebt u een videotoepassing nodig die de specifieke DRM-oplossing kan verwerken waarmee u werkt. Deze speler kan een voorbeeldspeler zijn die door Adobe of uw eigen op TVSDK gebaseerde videotoepassing beschikbaar wordt gesteld.
 seo-title: Beschermde inhoud afspelen
 title: Beschermde inhoud afspelen
 uuid: 84f73ee7-43d0-481c-a5e7-14f92169323c
 translation-type: tm+mt
-source-git-commit: 557f42cd9a6f356aa99e13386d9e8d65e043a6af
+source-git-commit: 1b9792a10ad606b99b6639799ac2aacb707b2af5
+workflow-type: tm+mt
+source-wordcount: '592'
+ht-degree: 0%
 
 ---
 
 
 # Beschermde inhoud afspelen {#playback-your-protected-content}
 
-Als u de DRM-oplossing wilt testen, hebt u een videotoepassing nodig die de specifieke DRM-oplossing kan verwerken waarmee u werkt. Deze speler kan een voorbeeldspeler zijn die beschikbaar wordt gesteld door Adobe of uw eigen videotoepassing op TVSDK.
+Als u de DRM-oplossing wilt testen, hebt u een videotoepassing nodig die de specifieke DRM-oplossing kan verwerken waarmee u werkt. Deze speler kan een voorbeeldspeler zijn die door Adobe of uw eigen op TVSDK gebaseerde videotoepassing beschikbaar wordt gesteld.
 
 1. Gebruik de URL van de licentieserver van het tokenantwoord dat u hebt gekregen van de ExpressPlay-server om te testen of u de beveiligde inhoud kunt afspelen.
 
@@ -20,7 +23,7 @@ Als u de DRM-oplossing wilt testen, hebt u een videotoepassing nodig die de spec
    * **PlayReady** - Haal de URL en het token van de licentieserver op van het JSON-object dat is geretourneerd van uw aanvraag voor het licentietoken.
    * **FairPlay** - Gebruik het FairPlay-antwoord rechtstreeks zoals u hebt ontvangen van uw ExpressPlay-licentietoken-verzoek.
 
-1. Test het afspelen van uw beveiligde inhoud met behulp van uw eigen speler of een bestaande Adobe-voorbeeldspeler.
+1. Test het afspelen van uw beveiligde inhoud met behulp van uw eigen speler of een bestaande Adobe voorbeeldspeler.
 
    Geef de URL voor de beveiligde inhoud op (de locatie van het M3U8- of MPD-manifest, afhankelijk van de DRM-oplossing die u test).
 
@@ -82,7 +85,7 @@ Als u de DRM-oplossing wilt testen, hebt u een videotoepassing nodig die de spec
    KEYFORMAT="com.apple.streamingkeydelivery",KEYFORMATVERSIONS="1"
    ```
 
-   >[!NOTE] {Important=&quot;high&quot;}
+   >[!NOTE]
    >
    >De bovenstaande informatie is alleen van toepassing op het testen van uw FairPlay-instelling. Het is mogelijk niet van toepassing op uw productie-instellingen, afhankelijk van de manier waarop u uw FairPlay-handler configureert. Zie Apple FairPlay [inschakelen in iOS-toepassingen](../../../programming/tvsdk-3x-ios-prog/ios-3x-drm-content-security/ios-3x-apple-fairplay-tvsdk.md) voor meer informatie.
 
