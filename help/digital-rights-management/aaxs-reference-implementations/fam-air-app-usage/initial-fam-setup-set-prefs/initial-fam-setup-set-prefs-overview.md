@@ -3,7 +3,10 @@ seo-title: Overzicht van voorkeuren instellen
 title: Overzicht van voorkeuren instellen
 uuid: d1c067b1-6c2b-460e-8d00-5a5bfee0789c
 translation-type: tm+mt
-source-git-commit: 29bc8323460d9be0fce66cbea7c6fce46df20d61
+source-git-commit: 1b9792a10ad606b99b6639799ac2aacb707b2af5
+workflow-type: tm+mt
+source-wordcount: '184'
+ht-degree: 0%
 
 ---
 
@@ -12,7 +15,7 @@ source-git-commit: 29bc8323460d9be0fce66cbea7c6fce46df20d61
 
 Met uitzondering van de URL van de Packager Server worden alle hieronder opgegeven voorkeuren opgeslagen in het [!DNL flashaccess-refimpl-packager.properties] bestand op de server. Alle instellingen kunnen rechtstreeks in het eigenschappenbestand of via de AIR-toepassing worden gewijzigd. Wachtwoorden worden versleuteld wanneer ze worden opgeslagen in het eigenschappenbestand op de server. Typ het niet-gecodeerde wachtwoord in de gebruikersinterface en het wordt versleuteld voordat het in het bestand wordt opgeslagen.
 
->[!NOTE] {class=&quot;- topic/note &quot;}
+>[!NOTE]
 >
 >Alle mappen en paden verwijzen naar mappen op de pakketserver, niet op de client waarop de AIR-toepassing wordt uitgevoerd.
 
