@@ -5,7 +5,10 @@ seo-title: Jailbreak-handhaving (vereist Adobe Primetime DRM)
 title: Jailbreak-handhaving (vereist Adobe Primetime DRM)
 uuid: 5cf8ebbc-17de-44cc-90d2-0857ea62c4a4
 translation-type: tm+mt
-source-git-commit: 29bc8323460d9be0fce66cbea7c6fce46df20d61
+source-git-commit: 1b9792a10ad606b99b6639799ac2aacb707b2af5
+workflow-type: tm+mt
+source-wordcount: '92'
+ht-degree: 0%
 
 ---
 
@@ -14,7 +17,7 @@ source-git-commit: 29bc8323460d9be0fce66cbea7c6fce46df20d61
 
 Op platforms die ondersteuning bieden voor jailbreak-detectie, zoals mobiele Android- en iOS-apparaten, kunt u de handhaving van jailbreak inschakelen om het afspelen van inhoud uit te schakelen als deze op het apparaat [!DNL jailbreak/root] is gedetecteerd.
 
->[!NOTE] {class=&quot;- topic/note &quot;}
+>[!NOTE]
 >
->Deze gebruiksregel wordt ondersteund door Adobe Primetime DRM-client versie 4.0 of hoger. Het heeft echter geen effect op platforms die geen ondersteuning bieden voor jailbreak-detectie. Het gedrag bij oudere clients is afhankelijk van de minimale clientversie die door de licentieserver wordt ondersteund.
+>Deze gebruiksregel wordt ondersteund door Adobe Primetime DRM-clientversie 4.0 of hoger. Het heeft echter geen effect op platforms die geen ondersteuning bieden voor jailbreak-detectie. Het gedrag bij oudere clients is afhankelijk van de minimale clientversie die door de licentieserver wordt ondersteund.
 
