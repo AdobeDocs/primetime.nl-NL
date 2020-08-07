@@ -1,11 +1,14 @@
 ---
-description: U kunt advertenties in uw VOD- en live/lineaire inhoud invoegen met de Adobe Primetime- en beslissingsinterface.
-seo-description: U kunt advertenties in uw VOD- en live/lineaire inhoud invoegen met de Adobe Primetime- en beslissingsinterface.
+description: U kunt advertenties in uw VOD en levende/lineaire inhoud opnemen door Adobe Primetime en besluitvormingsinterface te gebruiken.
+seo-description: U kunt advertenties in uw VOD en levende/lineaire inhoud opnemen door Adobe Primetime en besluitvormingsinterface te gebruiken.
 seo-title: Reclamevereisten
 title: Reclamevereisten
 uuid: 0287f1e4-746f-42e5-b811-409064dd9b13
 translation-type: tm+mt
-source-git-commit: 557f42cd9a6f356aa99e13386d9e8d65e043a6af
+source-git-commit: 1b9792a10ad606b99b6639799ac2aacb707b2af5
+workflow-type: tm+mt
+source-wordcount: '144'
+ht-degree: 0%
 
 ---
 
@@ -37,7 +40,7 @@ PTAuditudeMetadata *adMetadata = [[[PTAuditudeMetadata alloc] init]autorelease];
 adMetadata.adResolutionTimeout = 15 seconds
 ```
 
-Hierna volgt u de rubriek: Metagegevens [van primetime en server](../..//tvsdk-3x-ios-prog/ios-3x-advertising/ios-3x-primetime-ad-serving-metadata/ios-3x-primetime-ad-serving-metadata.md).
+Hierna volgt u de rubriek: [Metagegevens](../..//tvsdk-3x-ios-prog/ios-3x-advertising/ios-3x-primetime-ad-serving-metadata/ios-3x-primetime-ad-serving-metadata.md)van primetime en server.
 
 **API&#39;s die relevant zijn voor AdManifest Timeout**
 
@@ -59,4 +62,4 @@ PTAuditudeMetadata *adMetadata = [[[PTAuditudeMetadata alloc] init]autorelease];
 adMetadata.adManifestTimeout = 5 seconds
 ```
 
-Hierna volgt u de rubriek: Metagegevens [van primetime en server](../..//tvsdk-3x-ios-prog/ios-3x-advertising/ios-3x-primetime-ad-serving-metadata/ios-3x-primetime-ad-serving-metadata.md).
+Hierna volgt u de rubriek: [Metagegevens](../..//tvsdk-3x-ios-prog/ios-3x-advertising/ios-3x-primetime-ad-serving-metadata/ios-3x-primetime-ad-serving-metadata.md)van primetime en server.
