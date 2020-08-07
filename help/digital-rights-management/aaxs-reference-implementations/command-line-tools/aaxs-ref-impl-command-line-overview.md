@@ -3,7 +3,10 @@ seo-title: 'Opdrachtregelprogramma''s voor het verpakken van inhoud en het maken
 title: 'Opdrachtregelprogramma''s voor het verpakken van inhoud en het maken van intrekkingslijsten '
 uuid: 2c740521-2004-4320-88e1-118b84e80e31
 translation-type: tm+mt
-source-git-commit: a33e1f290fcf78e6f131910f6037f4803f7be98d
+source-git-commit: 1b9792a10ad606b99b6639799ac2aacb707b2af5
+workflow-type: tm+mt
+source-wordcount: '458'
+ht-degree: 0%
 
 ---
 
@@ -25,9 +28,9 @@ De voorbeeldimplementatie omvat de volgende opdrachtregelprogramma&#39;s:
 De vereisten voor het gebruik van de opdrachtregelprogramma&#39;s die beschikbaar zijn in de referentie-implementaties zijn als volgt:
 
 * Voor alle opdrachtregelprogramma&#39;s is Java 1.5 of hoger vereist.
-* De referenties van Packager en License Server (certificaat en wachtwoord) die door Adobe zijn uitgegeven. U hebt referenties nodig om videobestanden te coderen en te ondertekenen, om de lijsten Beleidsupdate en Intrekking te ondertekenen en licenties vooraf te genereren.
+* De geloofsbrieven van de Server van het pakket en van de Vergunning (certificaat en wachtwoord) die door Adobe worden uitgegeven. U hebt referenties nodig om videobestanden te coderen en te ondertekenen, om de lijsten Beleidsupdate en Intrekking te ondertekenen en licenties vooraf te genereren.
 
->[!NOTE] {class=&quot;- topic/note &quot;}
+>[!NOTE]
 >
 >Vanwege een Java-bug mogen argumenten die op de opdrachtregel worden gebruikt (zoals bestandsnamen, beleidsnamen of beschrijvingen) alleen tekens uit de standaardtekenset van het besturingssysteem gebruiken.
 
@@ -44,8 +47,8 @@ Het configuratiebestand gebruikt de bestandsindeling van het Java-eigenschapbest
 
 Stel waarden in voor eigenschappen in het configuratiebestand voordat u de gereedschappen uitvoert. Voor sommige opdrachtregelprogramma&#39;s kunt u de waarden voor bepaalde opties instellen via de opdrachtregel of het configuratiebestand. In die gevallen, nemen de waarden die door de bevellijn worden geplaatst belangrijkheid over om het even welke waarden in het configuratiedossier.
 
-## De opdrachtregelprogramma&#39;s installeren {#installing-the-command-line-tools}
+## De opdrachtregelprogramma&#39;s installeren  {#installing-the-command-line-tools}
 
 U kunt de gewenste bestanden kopiëren vanuit de [!DNL \Reference Implementation\Command Line Tools] map op de dvd, die het standaardconfiguratiebestand bevat, en vanuit een [!DNL flashaccesstools.properties] [!DNL libs] map met de JAR-bestanden voor de gereedschappen.
 
-De [!DNL samples] map bevat verschillende voorbeelden van Java-bronbestanden die het gebruik van de Adobe Access SDK API&#39;s aantonen. Gebruik het Ant-script om de samples te maken en uit te voeren. [!DNL build-samples.xml]
+De [!DNL samples] map bevat verschillende voorbeelden van Java-bronbestanden die het gebruik van de API&#39;s van de Adobe Access-SDK aantonen. Gebruik het Ant-script om de samples te maken en uit te voeren. [!DNL build-samples.xml]
