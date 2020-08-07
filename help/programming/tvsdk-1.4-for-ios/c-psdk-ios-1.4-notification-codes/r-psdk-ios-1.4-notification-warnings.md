@@ -5,7 +5,10 @@ seo-title: WAARSCHUWINGSmeldingscodes
 title: WAARSCHUWINGSmeldingscodes
 uuid: 136b5a65-b842-40fd-8ddd-efe01d73c388
 translation-type: tm+mt
-source-git-commit: 5908e5a3521966496aeec0ef730e4a704fddfb68
+source-git-commit: 1b9792a10ad606b99b6639799ac2aacb707b2af5
+workflow-type: tm+mt
+source-wordcount: '378'
+ht-degree: 3%
 
 ---
 
@@ -136,7 +139,7 @@ De meeste waarschuwingen bevatten relevante metagegevens, bijvoorbeeld de URL va
   </tr> 
   <tr rowsep="1"> 
    <td colname="1"><span class="codeph"> 270006 </span> </td> 
-   <td colname="2"><span class="codeph"> SITECATALYST_WARNING </span> </td> 
+   <td colname="2"><span class="codeph"> SITECATALYST_WAARSCHUWING </span> </td> 
    <td colname="3"> <p>Geen </p> </td> 
    <td colname="4"><span class="codeph"> BESCHRIJVING </span> </td> 
    <td colname="5"> <p>Waarschuwing: Zie beschrijving van de waarschuwing voor de katalysator. </p> </td> 
@@ -166,4 +169,6 @@ De meeste waarschuwingen bevatten relevante metagegevens, bijvoorbeeld de URL va
  </tbody> 
 </table>
 
->[!NOTE] addID en source (URL) kunnen worden opgehaald via PTAdAsset in de metagegevens van de melding met de `AD_ASSET` sleutel.
+>[!NOTE]
+>
+>addID en source (URL) kunnen worden opgehaald via PTAdAsset in de metagegevens van de melding met de `AD_ASSET` sleutel.
