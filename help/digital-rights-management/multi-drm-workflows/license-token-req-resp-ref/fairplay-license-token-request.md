@@ -5,7 +5,10 @@ seo-title: Aanvraag voor FairPlay-licentietoken/reactie
 title: Aanvraag voor FairPlay-licentietoken/reactie
 uuid: 10d4a760-8895-4fb3-8288-1c3a640df587
 translation-type: tm+mt
-source-git-commit: ffb993889a78ee068b9028cb2bd896003c5d4d4c
+source-git-commit: 1b9792a10ad606b99b6639799ac2aacb707b2af5
+workflow-type: tm+mt
+source-wordcount: '829'
+ht-degree: 5%
 
 ---
 
@@ -45,7 +48,7 @@ De FairPlay-interface voor licentietoken biedt productie- en testservices. Dit v
 
 **Query-parameters aanvragen**
 
-**Tabel 4: Parameters tokenquery**
+**Tabel 3: Parameters tokenquery**
 
 | Query-parameter | Beschrijving | Vereist? |
 |--- |--- |--- |
