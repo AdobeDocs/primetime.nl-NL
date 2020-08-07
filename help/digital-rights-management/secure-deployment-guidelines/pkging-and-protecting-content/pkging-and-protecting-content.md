@@ -5,7 +5,10 @@ seo-title: Inhoud verpakken en beschermen
 title: Inhoud verpakken en beschermen
 uuid: 9bf89f86-082e-40f9-8deb-c9774a9d8e02
 translation-type: tm+mt
-source-git-commit: a33e1f290fcf78e6f131910f6037f4803f7be98d
+source-git-commit: 1b9792a10ad606b99b6639799ac2aacb707b2af5
+workflow-type: tm+mt
+source-wordcount: '822'
+ht-degree: 0%
 
 ---
 
@@ -28,9 +31,9 @@ Voor het configuratiebestand voor het opdrachtregelprogramma Adobe Primetime DRM
 
 In de de beveltijdehulpmiddelen van de Implementatie van de Verwijzing, wordt het wachtwoord voor het PKCS12 geloofsbrieven dossier opgeslagen in het `flashaccess.properties` dossier in duidelijke teksten. Daarom moet u extra voorzichtig zijn wanneer u de computer beveiligt waarop dit bestand wordt gehost en zorgt u ervoor dat de computer zich in een veilige omgeving bevindt. Voor meer informatie, zie [Fysieke veiligheid en toegang](../../secure-deployment-guidelines/physical-sec-and-access.md).
 
-De verpakker gebruikt ook de certificaten van het Vervoer van de Server van de Vergunning en van de Server van de Vergunning, en de integriteit en de vertrouwelijkheid van deze informatie moeten worden beschermd. Alleen bevoegde entiteiten mogen de verpakker gebruiken. Als uw persoonlijke sleutels worden gecompromitteerd, informeer onmiddellijk Adobe Systems Incorporated zodat het certificaat kan worden ingetrokken.
+De verpakker gebruikt ook de certificaten van het Vervoer van de Server van de Vergunning en van de Server van de Vergunning, en de integriteit en de vertrouwelijkheid van deze informatie moeten worden beschermd. Alleen bevoegde entiteiten mogen de verpakker gebruiken. Als uw persoonlijke sleutels worden gecompromitteerd, informeer Adobe Systems Incorporated onmiddellijk zodat het certificaat kan worden ingetrokken.
 
->[!NOTE] {class=&quot;- topic/note &quot;}
+>[!NOTE]
 >
 >Met de API kunt u dezelfde sleutel gebruiken voor meerdere inhoud. Om het hoogste niveau van veiligheid te verzekeren, zou u deze eigenschap slechts voor multi-beetjetarief FMS inhoud moeten gebruiken. Gebruik niet dezelfde sleutel voor meerdere bestanden die verschillende inhoud vertegenwoordigen.
 
@@ -66,4 +69,4 @@ Wanneer u inhoud verpakt, wordt de openbare sleutel van de Server van de Vergunn
 >
 >Zorg ervoor dat u het certificaat van de Server van de Vergunning verkrijgt dat de openbare sleutel van een vertrouwde bron omvat. Op deze manier kunt u ervoor zorgen dat het de sleutel van de Server van de Vergunning en niet een schurken openbare sleutel is. Als aanvallers hun openbare sleutel voor de sleutel van de Server van de Vergunning moesten vervangen, konden zij uw inhoud decrypteren.
 
-Zie [De Adobe Primetime DRM SDK gebruiken voor het beveiligen van inhoud](https://helpx.adobe.com/content/dam/help/en/primetime/drm/drm_protecting_content.pdf)voor meer informatie over het verpakken van inhoud.
+Zie De SDK van Adobe Primetime DRM [gebruiken voor het beschermen van inhoud](https://helpx.adobe.com/content/dam/help/en/primetime/drm/drm_protecting_content.pdf)voor meer informatie over het verpakken van inhoud.
