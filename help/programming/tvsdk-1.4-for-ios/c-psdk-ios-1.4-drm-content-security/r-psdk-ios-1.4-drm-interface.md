@@ -5,16 +5,19 @@ seo-title: Overzicht van de primaire DRM-interface
 title: Overzicht van de primaire DRM-interface
 uuid: 3aae7c7a-fd0c-430e-9018-fd72801ab778
 translation-type: tm+mt
-source-git-commit: 25a0dfef12ecf10ba939500c4ba539468c41ee1b
+source-git-commit: 1b9792a10ad606b99b6639799ac2aacb707b2af5
+workflow-type: tm+mt
+source-wordcount: '383'
+ht-degree: 0%
 
 ---
 
 
 # Overzicht van de primaire DRM-interface {#primetime-drm-interface-overview}
 
-U kunt de functies van het DRM-systeem (Primetime Digital Rights Management) gebruiken om veilige toegang tot uw video-inhoud te bieden. U kunt ook DRM-oplossingen van derden gebruiken als alternatief voor de geïntegreerde Primetime DRM-oplossing van Adobe.
+U kunt de functies van het DRM-systeem (Primetime Digital Rights Management) gebruiken om veilige toegang tot uw video-inhoud te bieden. U kunt ook DRM-oplossingen van derden gebruiken als alternatief voor de geïntegreerde Primetime DRM-oplossing met Adobe.
 
-Neem contact op met uw Adobe-vertegenwoordiger voor de meest actuele informatie over de beschikbaarheid van DRM-oplossingen van derden.
+Neem contact op met uw Adobe voor de meest actuele informatie over de beschikbaarheid van DRM-oplossingen van derden.
 
 Het belangrijkste client-side element van het DRM-systeem (Primetime Digital Rights Management) is DRM Manager.
 
@@ -22,7 +25,7 @@ Het belangrijkste client-side element van het DRM-systeem (Primetime Digital Rig
 
 Primetime DRM biedt een schaalbare, efficiënte workflow voor het implementeren van inhoudsbeveiliging in TVSDK-toepassingen. U beschermt en beheert de rechten voor uw video-inhoud door een licentie te maken voor elk digitaal mediabestand.
 
-TVSDK ondersteunt de integratie van Primetime DRM als aangepaste DRM-workflows. Dit betekent dat uw toepassing de DRM-verificatieworkflows moet implementeren voordat de stream kan worden afgespeeld met Flash DRMManager. Om dit in te schakelen, voorziet MediaPlayer u van DRM manager voor authentificatie.
+TVSDK ondersteunt de integratie van Primetime DRM als aangepaste DRM-workflows. Dit betekent dat uw toepassing de DRM-verificatieworkflows moet implementeren voordat de stream kan worden afgespeeld met de Flash DRMManager. Om dit in te schakelen, voorziet MediaPlayer u van DRM manager voor authentificatie.
 
 Raadpleeg de DRM-voorbeeldspelercode in het TVSDK-pakket.
 
@@ -42,7 +45,7 @@ TVSDK geeft een `PTMediaPlayerItemDRMMetadataChanged` melding weer wanneer de DR
 
 Als de DRM-beveiligde stream meerdere bitsnelheden (MBR) heeft gecodeerd, moeten de DRM-metagegevens die voor de afspeellijst van de variant worden gebruikt, gelijk zijn aan de metagegevens die in alle bitsnelheidstreams worden gebruikt.
 
->[!TIP] {Important=&quot;high&quot;}
+>[!TIP]
 >
 >Wanneer u verwijst naar URL&#39;s met DRM-beveiligde elementen in uw iOS-app, `?faxs=1` moet de parameter van de queryreeks worden toegevoegd aan de (MBR)-URL op setniveau M3U8. Bijvoorbeeld: >
 >
@@ -63,4 +66,4 @@ Primetime DRM is geïntegreerd in TVSDK, waardoor het implementeren van contentb
 
 Voor een overzicht en details over het gebruik van Primetime DRM om inhoudsbescherming in een toepassing van TVSDK uit te voeren, zie:
 
-* [Adobe Primetime TVSDK-DRM-workflow (PDF)](https://helpx.adobe.com/content/dam/help/en/primetime/drm/drm_tvsdk_drm_workflow.pdf)
+* [Adobe Primetime TVSDK-DRM Workflow (PDF)](https://helpx.adobe.com/content/dam/help/en/primetime/drm/drm_tvsdk_drm_workflow.pdf)
