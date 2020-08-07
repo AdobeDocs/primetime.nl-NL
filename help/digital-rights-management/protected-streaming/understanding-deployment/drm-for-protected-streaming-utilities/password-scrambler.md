@@ -5,7 +5,10 @@ seo-title: Wachtwoordsprambler
 title: Wachtwoordsprambler
 uuid: 56df0f49-f3fd-464d-b4ba-25e1b497158a
 translation-type: tm+mt
-source-git-commit: 105dedcfe47a5f454a067e66a95827e638290742
+source-git-commit: 1b9792a10ad606b99b6639799ac2aacb707b2af5
+workflow-type: tm+mt
+source-wordcount: '112'
+ht-degree: 0%
 
 ---
 
@@ -43,6 +46,6 @@ Encrypted password:
 
 Alle wachtwoorden die u in de bestanden [!DNL flashaccess-global.xml] [!DNL flashaccess-tenant.xml] en bestanden hebt opgegeven, moeten worden versleuteld.
 
->[!NOTE] {class=&quot;- topic/note &quot;}
+>[!NOTE]
 >
 >Het hulpprogramma Password Scrambler in de Primetime DRM-server voor beveiligde streaming is niet uitwisselbaar met de schuifregelaar die wordt geleverd bij de Referentie-implementatieserver.
