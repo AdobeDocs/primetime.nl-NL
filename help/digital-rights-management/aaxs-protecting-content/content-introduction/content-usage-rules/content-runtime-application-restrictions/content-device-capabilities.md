@@ -3,7 +3,10 @@ seo-title: Apparaatmogelijkheden vereist om beveiligde inhoud af te spelen
 title: Apparaatmogelijkheden vereist om beveiligde inhoud af te spelen
 uuid: 16ed73d9-e02f-4c86-bf15-2d3e7122bf5a
 translation-type: tm+mt
-source-git-commit: 29bc8323460d9be0fce66cbea7c6fce46df20d61
+source-git-commit: 1b9792a10ad606b99b6639799ac2aacb707b2af5
+workflow-type: tm+mt
+source-wordcount: '132'
+ht-degree: 0%
 
 ---
 
@@ -37,7 +40,7 @@ De mogelijkheden van het apparaat kunnen worden geïdentificeerd aan de hand van
  </tbody> 
 </table>
 
->[!NOTE] {class=&quot;- topic/note &quot;}
+>[!NOTE]
 >
->Deze gebruiksregel wordt ondersteund door Adobe Access-clients versie 2.0.2 en hoger. Het gedrag bij oudere clients is afhankelijk van de minimale clientversie die door de licentieserver wordt ondersteund. Zie [Minimale clientversie](../../../../aaxs-protecting-content/content-setting-up-the-sdk/content-setting-up-the-dev-env.md).
+>Deze gebruiksregel wordt gesteund door de cliëntversie 2.0.2 van de Toegang van de Adobe. Het gedrag bij oudere clients is afhankelijk van de minimale clientversie die door de licentieserver wordt ondersteund. Zie [Minimale clientversie](../../../../aaxs-protecting-content/content-setting-up-the-sdk/content-setting-up-the-dev-env.md).
 
