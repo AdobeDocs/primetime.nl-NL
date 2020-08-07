@@ -3,9 +3,9 @@ seo-title: De DRM-server uitvoeren voor beveiligde streaming
 title: De DRM-server uitvoeren voor beveiligde streaming
 uuid: 9bbe211d-268b-43c2-9e55-7ce62de40d30
 translation-type: tm+mt
-source-git-commit: 9d2e046ae259c05fb4c278f464c9a26795e554fc
+source-git-commit: 1b9792a10ad606b99b6639799ac2aacb707b2af5
 workflow-type: tm+mt
-source-wordcount: '807'
+source-wordcount: '804'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # De DRM-server uitvoeren voor beveiligde streaming {#running-the-drm-server-for-protected-streaming}
 
-Voordat u de Adobe Primetime DRM-server voor beveiligde streaming kunt starten, is het raadzaam de geldigheid van de instellingen in de configuratiebestanden te controleren.
+Voordat u de Adobe Primetime DRM-server kunt starten voor beveiligde streaming, is het raadzaam de geldigheid van de instellingen in de configuratiebestanden te controleren.
 
 U kunt de geldigheid van de montages verifiëren door de nut te gebruiken die met de vergunningsserver zijn verstrekt. (Zie *Configuratie-validator* in deze handleiding.
 
@@ -23,9 +23,9 @@ Nadat de server is gestart, moet u controleren of deze correct is geconfigureerd
 
 ## Logbestanden {#log-files}
 
-De logbestanden die door de Adobe Primetime DRM-server voor beveiligde streaming-toepassing worden gegenereerd, bevinden zich in de map die is opgegeven door LicenseServer.LogRoot.
+De logbestanden die worden gegenereerd door de Adobe Primetime DRM-server voor beveiligde streaming-toepassing bevinden zich in de map die is opgegeven door LicenseServer.LogRoot.
 
->[!NOTE] {class=&quot;- topic/note &quot;}
+>[!NOTE]
 >
 >Als de huidige logbestanden worden verwijderd of verplaatst terwijl de server wordt uitgevoerd, wordt het logbestand mogelijk niet opnieuw gemaakt. Daarom kunnen sommige logboekinformatie worden geschrapt.
 
@@ -50,7 +50,7 @@ Logmappen zijn gestructureerd voor gebruiksgemak. De logmap heeft de volgende st
 
 ### Globaal logbestand {#section_1CFA90748142439C9F3BE380969539DA}
 
-Het globale logboekdossier, [!DNL flashaccess-global.log], wordt gevestigd in *LicenseServer.LogRoot*. Het logbestand kan logboekberichten bevatten die de Adobe Primetime DRM Java SDK of logberichten hebben gegenereerd tijdens de tijd dat de server is geïnitialiseerd.
+Het globale logboekdossier, [!DNL flashaccess-global.log], wordt gevestigd in *LicenseServer.LogRoot*. Het logboek kan logboekberichten omvatten die de Adobe Primetime DRM Java SDK of logboekberichten tijdens de tijd kunnen hebben geproduceerd dat de server is geïnitialiseerd.
 
 ### Partitielogbestand {#section_5660137CD6AA40519E72A4315534846B}
 
@@ -84,4 +84,4 @@ U kunt het wachtwoord HSM op elk [!DNL flashaccess-global.xml] ogenblik wijzigen
 
 ### Het configuratiebestand van de huurder bijwerken {#section_71624DB8DF28480F84F34F0FF7FD4365}
 
-U kunt op elk gewenst moment alle waarden wijzigen die in het [!DNL flashaccess-tenant.xml] bestand zijn opgegeven. De wijzigingen worden van kracht wanneer de server het configuratiebestand opnieuw laadt. Ook, controleert de server om het even welke wijzigingen in alle referentie ( [!DNL .pfx]) dossiers en verpakker staan de dossiers van het lijstcertificaat toe die in het dossier van de huurdersconfiguratie van verwijzingen worden voorzien.
+U kunt op elk gewenst moment alle waarden wijzigen die in het [!DNL flashaccess-tenant.xml] bestand zijn opgegeven. De wijzigingen worden van kracht wanneer de server het configuratiebestand opnieuw laadt. Ook, controleert de server om het even welke wijzigingen in alle credentiedossiers ( [!DNL .pfx]) en het certificaatdossiers van de lijst van gewenste personen van Packager die in het dossier van de huurdersconfiguratie van verwijzingen worden voorzien.
