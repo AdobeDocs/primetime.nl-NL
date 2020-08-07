@@ -3,7 +3,10 @@ seo-title: Overzicht van mediabestanden verpakken
 title: Overzicht van mediabestanden verpakken
 uuid: 9509bcdc-ee4d-4025-9bb6-9b8ac439b926
 translation-type: tm+mt
-source-git-commit: c78d3c87848943a0be3433b2b6a543822a7e1c15
+source-git-commit: 1b9792a10ad606b99b6639799ac2aacb707b2af5
+workflow-type: tm+mt
+source-wordcount: '663'
+ht-degree: 0%
 
 ---
 
@@ -22,7 +25,7 @@ Wanneer een bestand is versleuteld, kan de inhoud ervan niet worden geparseerd z
 
 Een bepaald stuk inhoud kan meerdere DRM-beleidsregels hebben. U kunt bijvoorbeeld inhoud in licentie geven onder verschillende bedrijfsmodellen zonder dat u de inhoud meerdere keren in een pakket hoeft te plaatsen. Bovendien kunt u anonieme toegang voor een korte periode toestaan en de klant toestaan de inhoud te kopen om onbeperkte toegang te hebben. Als de inhoud wordt verpakt door veelvoudige beleid te gebruiken DRM, moet de Server van de Vergunning logica uitvoeren voor het selecteren van welk beleid DRM moet worden gebruikt om een vergunning uit te geven.
 
->[!NOTE] {class=&quot;- topic/note &quot;}
+>[!NOTE]
 >
 >De architectuur staat voor gebruikDRM beleid toe om aan inhoud worden gespecificeerd en worden gebonden wanneer de inhoud wordt verpakt. Voordat een client inhoud kan afspelen, moet de client een licentie voor een opgegeven computer aanschaffen. De vergunning specificeert de gebruiksregels die worden afgedwongen en verstrekt de sleutel die moet worden gebruikt om inhoud te decrypteren. Het DRM-beleid vertegenwoordigt een sjabloon voor het genereren van een licentie. De licentieserver kan echter de gebruiksregels overschrijven wanneer deze een licentie uitgeeft. De licentie kan door dergelijke beperkingen, zoals vervaltijden of afspeelvensters, ongeldig worden gemaakt.
 
@@ -36,4 +39,4 @@ Al deze taken kunnen worden uitgevoerd met de Java API.
 
 Zie *Adobe Primetime DRM API Reference* voor meer informatie over de Java API.
 
-Zie *De Adobe Primetime DRM Reference Implementations* gebruiken voor informatie over de implementatie van de Media Packager-referentie.
+Zie Het *gebruiken van de Implementaties* van de Verwijzing van Adobe Primetime DRM voor informatie over de de verwijzingsimplementatie van Media Packager.
