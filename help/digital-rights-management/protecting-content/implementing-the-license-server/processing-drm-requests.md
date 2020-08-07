@@ -3,7 +3,10 @@ seo-title: Adobe Primetime DRM-verzoeken verwerken
 title: Adobe Primetime DRM-verzoeken verwerken
 uuid: ee10504d-84f0-472a-b58a-2a87fdeedfc1
 translation-type: tm+mt
-source-git-commit: c78d3c87848943a0be3433b2b6a543822a7e1c15
+source-git-commit: 1b9792a10ad606b99b6639799ac2aacb707b2af5
+workflow-type: tm+mt
+source-wordcount: '1251'
+ht-degree: 0%
 
 ---
 
@@ -16,7 +19,7 @@ De basisklasse die wordt gebruikt om interactie met één aanvraag/reactie af te
 
 Als het verzoek succesvol is, stelt u de reactiegegevens in. anders aanhalen `RequestMessageBase.setErrorData()` bij mislukking. Beëindig altijd de implementatie door de `close()` methode aan te roepen (het wordt geadviseerd dat `close()` wordt geroepen in het `finally` blok van een `try` verklaring). Zie de `MessageHandlerBase` API verwijzingsdocumentatie voor een voorbeeld van hoe te om de manager aan te halen.
 
->[!NOTE] {class=&quot;- topic/note &quot;}
+>[!NOTE]
 >
 >HTTP-statuscode 200 (OK) moet worden verzonden als reactie op alle aanvragen die door de handler worden verwerkt. Als de handler niet kon worden gemaakt vanwege een serverfout, reageert de server mogelijk met een andere statuscode, zoals 500 (Interne serverfout).
 
@@ -39,7 +42,7 @@ Een Adobe Primetime DRM-aanvraag kan een verificatietoken bevatten.
 
 Als gebruikersbenaming/wachtwoordauthentificatie werd gebruikt, kan het verzoek een `AuthenticationToken` geproduceerd door `AuthenticationHandler`. Als u tot het token toegang wilt hebben en het wilt verifiëren, moet u het gebruiken `RequestMessageBase.getAuthenticationToken()`. Gebruik de `DRMManager.authenticate()` ActionScript- of iOS-API om een aanvraag voor een gebruikersnaam/wachtwoord op de client te starten.
 
-Als de client en server gebruikmaken van een aangepast verificatiemechanisme, verkrijgt de client via een ander kanaal een verificatietoken en wordt het aangepaste verificatietoken ingesteld met behulp van de `DRMManager.setAuthenticationToken` ActionScript 3.0-API. Gebruik deze optie `RequestMessageBase.getRawAuthenticationToken()` om het aangepaste verificatietoken op te halen. De serverimplementatie bepaalt of het token voor aangepaste verificatie geldig is.
+Als de client en de server gebruikmaken van een aangepast verificatiemechanisme, verkrijgt de client een verificatietoken via een ander kanaal en wordt het aangepaste verificatietoken ingesteld met behulp van de `DRMManager.setAuthenticationToken` ActionScript 3.0-API. Gebruik deze optie `RequestMessageBase.getRawAuthenticationToken()` om het aangepaste verificatietoken op te halen. De serverimplementatie bepaalt of het token voor aangepaste verificatie geldig is.
 
 ## Replay-beveiliging {#replay-protection}
 
