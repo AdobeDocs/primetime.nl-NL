@@ -3,7 +3,10 @@ seo-title: HSM-configuratie
 title: HSM-configuratie
 uuid: 1cc5be99-c24c-4c1e-9348-fb69f96d8ca5
 translation-type: tm+mt
-source-git-commit: 29bc8323460d9be0fce66cbea7c6fce46df20d61
+source-git-commit: 1b9792a10ad606b99b6639799ac2aacb707b2af5
+workflow-type: tm+mt
+source-wordcount: '147'
+ht-degree: 0%
 
 ---
 
@@ -19,7 +22,7 @@ Het gebruik van een HSM is niet verplicht, maar wordt wel aanbevolen. De verwijz
 
 Als u uw geloofsbrieven in de lijst ziet, wordt HSM gevormd behoorlijk.
 
->[!NOTE] {class=&quot;- topic/note &quot;}
+>[!NOTE]
 >
 >Vanaf Java 1.7 biedt 64-bits Sun Java voor Windows geen ondersteuning voor de PKCS11-interfaces die Adobe Access DRM nodig heeft voor communicatie met HSM-apparaten. Als u een HSM wilt gebruiken, moet u een 32-bits versie van Java gebruiken of een JDK gebruiken die de volledige PKCS11-interfaces ondersteunt.
 
