@@ -5,7 +5,10 @@ seo-title: Metagegevens van primetime en server
 title: Metagegevens van primetime en server
 uuid: 314f14c0-4da4-4da6-96f9-5a5ffea22a99
 translation-type: tm+mt
-source-git-commit: 5908e5a3521966496aeec0ef730e4a704fddfb68
+source-git-commit: 1b9792a10ad606b99b6639799ac2aacb707b2af5
+workflow-type: tm+mt
+source-wordcount: '443'
+ht-degree: 0%
 
 ---
 
@@ -14,7 +17,7 @@ source-git-commit: 5908e5a3521966496aeec0ef730e4a704fddfb68
 
 TVSDK ondersteunt het omzetten en invoegen van advertenties voor VOD en live/lineaire streams.
 
->[!NOTE] {othertype=&quot;Prequired&quot;}
+>[!NOTE]
 >
 >Geef de volgende metagegevens op voordat u reclame in uw video-inhoud kunt opnemen:
 >
@@ -22,6 +25,7 @@ TVSDK ondersteunt het omzetten en invoegen van advertenties voor VOD en live/lin
 >* Uw `zoneID`, die uw bedrijf of website identificeert.
 >* Uw advertentieserverdomein, dat het domein van uw toegewezen advertentieserver specificeert.
 >* Andere doelparameters.
+
 >
 
 
@@ -78,7 +82,7 @@ Voor live-inhoud gebruikt TVSDK de metagegevens/aanwijzingen in het manifest om 
 
 Uw toepassing moet TVSDK laten weten of de inhoud live of VOD is door de `PTAdSignalingMode`inhoud op te geven.
 
-Voor een FER-stream moet de Adobe Primetime- en beslissingsserver niet de lijst met ad-hoconderbrekingen opgeven die op de tijdlijn moeten worden ingevoegd voordat het afspelen wordt gestart. Dit is het gebruikelijke proces voor VOD-inhoud. In plaats daarvan, door een verschillende signalerende wijze te specificeren, leest TVSDK alle richtsnoerpunten van FER manifest en gaat naar de advertentieserver voor elk richtsnoerpunt om een advertentieonderbreking te verzoeken. Dit proces lijkt op live/DVR-inhoud.
+Voor een FER-stream moet de Adobe Primetime en de beslissingsserver geen lijst met ad-hoconderbrekingen opgeven die op de tijdlijn moeten worden ingevoegd voordat het afspelen wordt gestart. Dit is het gebruikelijke proces voor VOD-inhoud. In plaats daarvan, door een verschillende signalerende wijze te specificeren, leest TVSDK alle richtsnoerpunten van FER manifest en gaat naar de advertentieserver voor elk richtsnoerpunt om een advertentieonderbreking te verzoeken. Dit proces lijkt op live/DVR-inhoud.
 
 Naast elke aanvraag die aan een actiepunt is gekoppeld, doet TVSDK een aanvullende advertentieaanvraag voor pre-roll-advertenties.
 
