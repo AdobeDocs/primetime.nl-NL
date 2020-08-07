@@ -5,7 +5,10 @@ seo-title: Licentie
 title: Licentie
 uuid: 9f433d62-5609-4d88-95fd-c1e7c0f6aa75
 translation-type: tm+mt
-source-git-commit: 7e8df034035fe465fbe403949ef828e7811ced2e
+source-git-commit: 1b9792a10ad606b99b6639799ac2aacb707b2af5
+workflow-type: tm+mt
+source-wordcount: '393'
+ht-degree: 0%
 
 ---
 
@@ -14,7 +17,7 @@ source-git-commit: 7e8df034035fe465fbe403949ef828e7811ced2e
 
 Licentieverlening is het belangrijkste mechanisme waarbij gebruikers de mogelijkheid wordt geboden of geweigerd om een stuk beveiligde video-inhoud af te spelen. Een wettige (gerechtigde) gebruiker kan een vergunning (een sleutel) worden verleend om een specifiek stuk van de gecodeerde inhoud van zijn inhoudsleverancier te decrypteren en te spelen.
 
-Voordat uw app of webpagina op het apparaat van een eindgebruiker met DRM beveiligde inhoud kan afspelen, moet deze een token verkrijgen van een machtigings- of storefrontserver die u als klant gebruikt. Adobe biedt hiervoor een voorbeeldreferentieserver: [Referentieserver: Voorbeeld ExpressPlay Entitlement Server (SES)](../../multi-drm-workflows/feature-topics/sees-reference-server.md).
+Voordat uw app of webpagina op het apparaat van een eindgebruiker met DRM beveiligde inhoud kan afspelen, moet deze een token verkrijgen van een machtigings- of storefrontserver die u als klant gebruikt. Adobe biedt hiertoe een voorbeeldreferentieserver: [Referentieserver: Voorbeeld ExpressPlay Entitlement Server (SES)](../../multi-drm-workflows/feature-topics/sees-reference-server.md).
 
 Uw machtiging- of storefront-server vraagt alleen een licentietoken aan bij de relevante ExpressPlay-server nadat u met uw eigen back-end-systemen hebt gecontroleerd of de specifieke gebruiker het recht heeft de gevraagde inhoud te bekijken. De reactie die door de aanvraag voor het licentietoken wordt geretourneerd, is een gebruiksklare URL voor de licentieserver of de reactie bevat de URL in een JSON-structuur, afhankelijk van de DRM-oplossing waarmee u werkt.
 
