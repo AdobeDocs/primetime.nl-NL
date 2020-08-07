@@ -1,17 +1,17 @@
 ---
-seo-title: Bloklijst van DRM-clients die toegang hebben tot beveiligde inhoud
-title: Bloklijst van DRM-clients die toegang hebben tot beveiligde inhoud
+seo-title: Lijst van afgewezen personen van DRM-clients die geen toegang hebben tot beveiligde inhoud
+title: Lijst van afgewezen personen van DRM-clients die geen toegang hebben tot beveiligde inhoud
 uuid: c05aa6f8-32d9-42aa-a9c5-0d0629d49778
 translation-type: tm+mt
-source-git-commit: fbc175f383c850a7286b1e6e89daa027e00b29ef
+source-git-commit: 1b9792a10ad606b99b6639799ac2aacb707b2af5
 workflow-type: tm+mt
-source-wordcount: '380'
+source-wordcount: '377'
 ht-degree: 0%
 
 ---
 
 
-# Bloklijst van DRM-clients die toegang hebben tot beveiligde inhoud {#blocklist-of-drm-clients-restricted-from-accessing-protected-content}
+# Lijst van afgewezen personen van DRM-clients die geen toegang hebben tot beveiligde inhoud {#blocklist-of-drm-clients-restricted-from-accessing-protected-content}
 
 **Adobe Access DRM-moduleversies hebben geen toegang tot beveiligde inhoud.**
 
@@ -32,7 +32,7 @@ Een DRM-clientversie kan worden geïdentificeerd aan de hand van de kenmerken di
 | OEM-leverancier | Tekenreeks OEM-leverancier | Exacte overeenkomst | De identificatiereeks van de Leverancier van OEM voor het apparaat gebruikend de het Porteren uitrusting. |
 | Model | Modeltekenreeks. Bijvoorbeeld &quot;iOS_Mobile&quot;, &quot;Android_Mobile&quot;, &quot;Chrome&quot;, &quot;ChromeOS_ARM&quot;, &quot;WindowsOnARM&quot;, &quot;AVE&quot; | Exacte overeenkomst | Identificatiereeks van het apparaatmodel voor het apparaat met behulp van de portkit. |
 
->[!NOTE] {class=&quot;- topic/note &quot;}
+>[!NOTE]
 >
->Wanneer u een item in de bloklijst opgeeft, kunnen waarden worden ingesteld voor een of meer van de kenmerken die in de vorige tabel worden genoemd. Elk kenmerk dat niet wordt opgegeven, wordt behandeld als een jokerteken. Als de DRM-client overeenkomt met alle waarden die in een bloklijstvermelding zijn opgegeven, heeft die client mogelijk geen toegang tot de beveiligde inhoud.
+>Wanneer u een item in de lijst van afgewezen personen opgeeft, kunnen waarden worden ingesteld voor een of meer van de kenmerken die in de vorige tabel worden genoemd. Elk kenmerk dat niet wordt opgegeven, wordt behandeld als een jokerteken. Als de DRM-client overeenkomt met alle waarden die in een lijst van afgewezen personen-item zijn opgegeven, heeft die client mogelijk geen toegang tot de beveiligde inhoud.
 
