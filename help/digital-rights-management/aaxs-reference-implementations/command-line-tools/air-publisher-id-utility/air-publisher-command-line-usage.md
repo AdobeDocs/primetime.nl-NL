@@ -3,7 +3,10 @@ seo-title: Gebruik van opdrachtregels
 title: Gebruik van opdrachtregels
 uuid: 54b1e867-c6cc-4355-b8e6-a7ec910bd33d
 translation-type: tm+mt
-source-git-commit: 7e8df034035fe465fbe403949ef828e7811ced2e
+source-git-commit: 1b9792a10ad606b99b6639799ac2aacb707b2af5
+workflow-type: tm+mt
+source-wordcount: '75'
+ht-degree: 0%
 
 ---
 
@@ -30,7 +33,7 @@ java -jar AdobePublisherIDUtility.jar
 
 * `signingcert` geeft het certificaat aan waarmee de AIR-toepassing wordt ondertekend
 
->[!NOTE] {class=&quot;- topic/note &quot;}
+>[!NOTE]
 >
->Als u de uitgevers-id voor een iOS-toepassing wilt bepalen, gebruikt u de `-s` optie en geeft u het certificaat op waarmee de iOS-toepassing wordt ondertekend. ***Adobe Primetime is vereist voor het maken van iOS-toepassingen waarmee met Access beveiligde inhoud*** kan worden afgespeeld.
+>Als u de uitgevers-id voor een iOS-toepassing wilt bepalen, gebruikt u de `-s` optie en geeft u het certificaat op waarmee de iOS-toepassing wordt ondertekend. ***Adobe Primetime is vereist voor het maken van iOS-toepassingen die met Access beveiligde inhoud*** kunnen afspelen.
 
