@@ -3,7 +3,10 @@ seo-title: Pakketmedia
 title: Pakketmedia
 uuid: f6e877be-d916-4766-bc44-99891a3df3a8
 translation-type: tm+mt
-source-git-commit: 29bc8323460d9be0fce66cbea7c6fce46df20d61
+source-git-commit: 1b9792a10ad606b99b6639799ac2aacb707b2af5
+workflow-type: tm+mt
+source-wordcount: '370'
+ht-degree: 0%
 
 ---
 
@@ -16,9 +19,9 @@ Als u één FLV- of F4V-bestand in een pakket wilt plaatsen, kiest u de **[!UICO
 
 Kies de **[!UICONTROL Select Single Folder]** optie als u alle bestanden in een map wilt verpakken. Geef de map op die de bronbestanden bevat. Alleen bestanden in de invoermap die aan de **[!UICONTROL Input Media File Selection]** criteria voldoen, worden in een pakket opgenomen (bestanden in submappen worden niet in een pakket geplaatst). Kies of u [!DNL .flv] bestanden of [!DNL .f4v] bestanden wilt versleutelen of voer een aangepaste reguliere expressie in (bijvoorbeeld &quot;.*&quot; codeert alle bestanden in de map). De gecodeerde bestanden worden opgeslagen in de opgegeven uitvoermap met dezelfde bestandsnaam als het oorspronkelijke bestand.
 
->[!NOTE] {class=&quot;- topic/note &quot;}
+>[!NOTE]
 >
->Bestandspaden moeten verwijzen naar bestanden die beschikbaar zijn op de pakketserver. Als u Flash Access Manager uitvoert op een andere computer dan de pakketserver, moet u een pad opgeven dat toegankelijk is voor de server (op een netwerkstation of op de server zelf).
+>Bestandspaden moeten verwijzen naar bestanden die beschikbaar zijn op de pakketserver. Als u de Manager van de Flash Access op een verschillende machine dan de verpakkingsserver in werking stelt, moet u een weg specificeren die door de server (of op een netwerkaandrijving of op de server zelf wordt gevestigd) toegankelijk is.
 
 In de volgende tabel worden de voorkeuren voor Media verpakken beschreven:
 
