@@ -5,7 +5,10 @@ seo-title: Multi-DRM-workflow voor FairPlay
 title: Multi-DRM-workflow voor FairPlay
 uuid: cd940a70-400c-435e-8322-55bd624164e1
 translation-type: tm+mt
-source-git-commit: 29149594c4b41956a091ef27093304e74ff15f2f
+source-git-commit: 1b9792a10ad606b99b6639799ac2aacb707b2af5
+workflow-type: tm+mt
+source-wordcount: '1514'
+ht-degree: 0%
 
 ---
 
@@ -65,7 +68,7 @@ Voer de volgende stappen uit om de ExpressPlay-service voor de bescherming van F
    1. Sleutel in uw ASK om certificaatgeneratie te voltooien en te klikken **[!UICONTROL Continue]**.
    1. Nadat u hebt geverifieerd dat u de ASK hebt opgeslagen, klikt u op Doorgaan **[!UICONTROL Generate]** .
 
-      >[!NOTE] {Important=&quot;high&quot;}
+      >[!NOTE]
       >
       >Het is belangrijk dat u een kopie van uw ASK opslaat en deze veilig opslaat. *Als uw ASK gecompromitteerd is, kunt u uw inhoud niet meer beschermen met FairPlay Streaming.* Slechts één (1) ASK wordt toegewezen aan uw team. De waarde wordt niet opnieuw opgegeven en u kunt deze later niet ophalen.
 
@@ -113,7 +116,7 @@ Pakketten bereiden de video voor op afspelen (bijvoorbeeld door het oorspronkeli
 
 1. Verpak uw inhoud.
 
-   Hier volgt een voorbeeld van een pakket met Adobe Offline Packager. Packager gebruikt een configuratiedossier (b.v., [!DNL fairplay.xml]), dat iets als dit kijkt:
+   Hier volgt een voorbeeld van het verpakken met Adobe Offline Packager. Packager gebruikt een configuratiedossier (b.v., [!DNL fairplay.xml]), dat iets als dit kijkt:
 
    ```
    <config>
@@ -141,6 +144,7 @@ Pakketten bereiden de video voor op afspelen (bijvoorbeeld door het oorspronkeli
    * `iv_file_path` - Dit is de locatie van het IV-bestand op uw verpakkingsapparaat.
    * `key_url` - De URI-parameter van de `EXT-X-KEY` tag van het [!DNL .m3u8] bestand.
    * `content_id` - Standaardwaarde.
+
    Zoals vermeld in de documentatie [van](https://helpx.adobe.com/content/dam/help/en/primetime/guides/offline_packager_getting_started.pdf#page=7)Packager, &quot;als beste praktijken, creeer een configuratiedossier dat de gemeenschappelijke opties bevat die u voor het produceren van de output wilt gebruiken. Maak vervolgens de uitvoer door specifieke opties als opdrachtregelargument op te geven.&quot;
 
    ```
@@ -158,9 +162,9 @@ Pakketten bereiden de video voor op afspelen (bijvoorbeeld door het oorspronkeli
 
 ### Beleid instellen voor FairPlay {#setting-policies-for-fairplay}
 
-U kunt het beleid voor met FairPlay beveiligde inhoud instellen met een machtigingsserver. U kunt uw eigen voorbeeldmachtigingsserver instellen of gebruiken.
+U kunt het beleid voor met FairPlay beveiligde inhoud instellen met een machtigingsserver. U kunt uw eigen voorbeeldmachtigingsserver instellen of een door Adobe verschafte voorbeeldmachtigingsserver gebruiken.
 
-Adobe biedt een Sample ExpressPlay Entitlement Server (SES) die laat zien hoe u op *tijd gebaseerde* en *apparaatbindende* machtigingen kunt uitvoeren. Deze voorbeeldmachtigingsserver is bovenop de ExpressPlay-services gebouwd.
+Adobe verstrekt een Server van de Entitlement van de Entitlement van de Steekproef ExpressPlay (SEES) die toont hoe te om op *tijd-gebaseerd* en *apparaat-bindende* rechten te doen. Deze voorbeeldmachtigingsserver is bovenop de ExpressPlay-services gebouwd.
 
 [Referentieserver: Voorbeeld ExpressPlay Entitlement Server (SES)](../../multi-drm-workflows/feature-topics/sees-reference-server.md)
 
@@ -171,7 +175,7 @@ Adobe biedt een Sample ExpressPlay Entitlement Server (SES) die laat zien hoe u 
 
 Voor het verlenen van licenties en het afspelen van door FairPlay beveiligde inhoud moeten URL-schema&#39;s worden gewisseld tussen het schema dat wordt gebruikt in het videomanifestbestand (skd:) en het schema dat wordt gebruikt in ExpressPlay-token-aanvragen (https:).
 
-Hier vindt u instructies voor het implementeren van licenties en het afspelen van een iOS TVSDK-client: Apple FairPlay [inschakelen in TVSDK-toepassingen](../../../programming/tvsdk-3x-ios-prog/ios-3x-drm-content-security/ios-3x-apple-fairplay-tvsdk.md). U kunt ook desgewenst offline afspelen en licentietrotatie voor FairPlay implementeren.
+Hier vindt u instructies voor het implementeren van licenties en het afspelen van een iOS TVSDK-client: [Schakel Apple FairPlay in TVSDK-toepassingen](../../../programming/tvsdk-3x-ios-prog/ios-3x-drm-content-security/ios-3x-apple-fairplay-tvsdk.md)in. U kunt ook desgewenst offline afspelen en licentietrotatie voor FairPlay implementeren.
 
 ## HLS offline met FairPlay {#section_047A05D1E3B64883858BC601CFC8F759}
 
