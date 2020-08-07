@@ -3,14 +3,17 @@ seo-title: Gebruik van opdrachtregels
 title: Gebruik van opdrachtregels
 uuid: 5f24f18d-09ef-400a-9404-50a9fcf4316d
 translation-type: tm+mt
-source-git-commit: 29bc8323460d9be0fce66cbea7c6fce46df20d61
+source-git-commit: 1b9792a10ad606b99b6639799ac2aacb707b2af5
+workflow-type: tm+mt
+source-wordcount: '567'
+ht-degree: 0%
 
 ---
 
 
 # Gebruik van opdrachtregels {#command-line-usage}
 
-Alvorens Media Packager te gebruiken, zorg ervoor dat u aan de vereisten voldoet die in Vereisten worden vermeld en dat het configuratiedossier de vereiste informatie bevat (zie het dossier van de Configuratie in het *Gebruiken van de Implementaties* van de Verwijzing van de Toegang van Adobe.
+Alvorens Media Packager te gebruiken, zorg ervoor dat u aan de vereisten voldoet die in Vereisten worden vermeld en dat het configuratiedossier de vereiste informatie bevat (zie het dossier van de Configuratie in het *Gebruiken van de Implementaties* van de Verwijzing van de Toegang van de Adobe.
 
 Media Packager bevindt zich in de [!DNL \Reference Implementation\Command Line tools] directory op de dvd. Gebruik de volgende syntaxis om één bestand te coderen:
 
@@ -67,7 +70,7 @@ java -jar AdobePackager.jar -dm <metadatafile> [-e]
 
 * `metadatafile` is een [!DNL .metadata] bestand met de DRM-metagegevens.
 
->[!NOTE] {class=&quot;- topic/note &quot;}
+>[!NOTE]
 >
 >Tijdens het verpakken, zal de Packager van Media niet meer een .header dossier door gebrek produceren. Als u dit bestand wilt genereren, gebruikt u de `-h` optie tijdens het verpakken.
 
