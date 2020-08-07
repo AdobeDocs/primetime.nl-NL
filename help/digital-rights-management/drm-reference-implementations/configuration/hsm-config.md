@@ -5,7 +5,10 @@ seo-title: HSM-configuratie
 title: HSM-configuratie
 uuid: 2741ac40-aa42-4aa7-9864-037f3ed3dee2
 translation-type: tm+mt
-source-git-commit: 29bc8323460d9be0fce66cbea7c6fce46df20d61
+source-git-commit: 1b9792a10ad606b99b6639799ac2aacb707b2af5
+workflow-type: tm+mt
+source-wordcount: '211'
+ht-degree: 0%
 
 ---
 
@@ -25,7 +28,7 @@ keytool -keystore NONE -storetype PKCS11 -providerClass sun.security.pkcs11.SunP
 
 U hebt HSM correct gevormd als u uw geloofsbrieven in de lijst kunt bekijken.
 
->[!NOTE] {class=&quot;- topic/note &quot;}
+>[!NOTE]
 >
 >Vanaf Java 1.7 biedt 64-bits Sun Java voor Windows geen ondersteuning meer voor de PKCS#11-interfaces die Adobe Primetime DRM nodig heeft om te communiceren met HSM-apparaten. Als u van plan bent om HSM te gebruiken, zorg ervoor dat u een versie met 32 bits van Java gebruikt of JDK gebruikt die de volledige interfaces PKCS#11 steunt.
 
