@@ -3,7 +3,10 @@ seo-title: Referenties opslaan
 title: Referenties opslaan
 uuid: a9e9db72-c921-4c28-ad1d-3fd3c2283f14
 translation-type: tm+mt
-source-git-commit: 29bc8323460d9be0fce66cbea7c6fce46df20d61
+source-git-commit: 1b9792a10ad606b99b6639799ac2aacb707b2af5
+workflow-type: tm+mt
+source-wordcount: '396'
+ht-degree: 0%
 
 ---
 
@@ -14,13 +17,13 @@ De Primetime DRM SDK ondersteunt verschillende manieren om referenties op te sla
 
 U moet de privésleutels zorgvuldig bewaken om de beveiliging van uw inhoud en licentieserver te garanderen. PKCS12 is een standaard archiefbestandsindeling voor het opslaan van referenties die met een wachtwoord zijn gecodeerd. (U kunt het PKCS12-bestand zelf ook versleutelen en ondertekenen.) De bestandsextensie [!DNL .pfx] wordt veel gebruikt voor bestanden die deze indeling ondersteunen.
 
->[!NOTE] {class=&quot;- topic/note &quot;}
+>[!NOTE]
 >
 >Adobe raadt u aan een HSM te gebruiken voor maximale beveiliging.
 >
 >Zie de handleiding *Adobe Primetime DRM Secure Deployment Guidelines* .
 
->[!NOTE] {Important=&quot;high&quot;}
+>[!NOTE]
 >
 >Vanaf Java 1.7, steunt de Zon Java van 64 bits voor Vensters niet meer de interfaces PKCS11 die Primetime DRM voor communicatie met apparaten HSM vereist. Als u van plan bent om HSM te gebruiken, moet u een versie met 32 bits van Java gebruiken, of JDK gebruiken die de volledige interfaces PKCS11 steunt.
 
