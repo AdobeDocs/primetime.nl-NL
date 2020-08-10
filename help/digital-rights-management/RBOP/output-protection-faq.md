@@ -5,9 +5,9 @@ seo-title: Veelgestelde vragen over RBOP
 title: Veelgestelde vragen over RBOP
 uuid: 7dcd337c-369a-474c-8768-409c48b5cee5
 translation-type: tm+mt
-source-git-commit: 9d2e046ae259c05fb4c278f464c9a26795e554fc
+source-git-commit: fa9e89dd63c8b4c9d6eee78258957cfd30c29088
 workflow-type: tm+mt
-source-wordcount: '347'
+source-wordcount: '331'
 ht-degree: 0%
 
 ---
@@ -41,6 +41,7 @@ Veelgestelde vragen over het gebruik van op resolutie gebaseerde outputbeschermi
 
    * 720P - HDCP vereist
    * 480P - Geen OP
+
    Op elke variant worden de volgende regels toegepast.
 
    **Streams:**
@@ -56,18 +57,27 @@ Veelgestelde vragen over het gebruik van op resolutie gebaseerde outputbeschermi
 
    ```
    { 
-       "maxPixel":  
-   
-<b>800</b>,&quot;pixelConstraints&quot;: [{ &quot;pixelCount&quot;:\
-<b>532</b>,&quot;digitaal&quot;: [{&quot;uitvoer&quot;: &quot;REQUIRED&quot;, &quot;hdcp&quot;:{&quot;major&quot;: 1,&quot;minderjarig&quot;: 0}}],&quot;analoog&quot;: {&quot;uitvoer&quot;: &quot;REQUIRED&quot;},...
+       "maxPixel": 800, 
+       "pixelConstraints": [ 
+           { "pixelCount": 532, 
+             "digital": [{"output": "REQUIRED", "hdcp":{"major": 1,"minor": 0}}], 
+             "analog": {"output": "REQUIRED"} 
+           }, 
+   ... 
+   ```
 
-```
-to: 
-```
-{1} &quot;maxPixel&quot;:\
-<b>820</b>,&quot;pixelConstraints&quot;: [{ &quot;pixelCount&quot;:\
-<b>552</b>,&quot;digitaal&quot;: [{&quot;uitvoer&quot;: &quot;REQUIRED&quot;, &quot;hdcp&quot;:{&quot;major&quot;: 1,&quot;minderjarig&quot;: 0}}],&quot;analoog&quot;: {&quot;uitvoer&quot;: &quot;REQUIRED&quot;},...
+   tot:
 
-```
-throughout, for all instances of `maxPixel` and `pixelCount`.
+   ```
+   { 
+       "maxPixel": 820, 
+       "pixelConstraints": [ 
+           { "pixelCount": 552, 
+             "digital": [{"output": "REQUIRED", "hdcp":{"major": 1,"minor": 0}}], 
+             "analog": {"output": "REQUIRED"} 
+           }, 
+   ... 
+   ```
+
+   in alle gevallen van `maxPixel` en `pixelCount`.
 
