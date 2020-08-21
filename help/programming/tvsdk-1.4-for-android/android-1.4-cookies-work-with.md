@@ -5,7 +5,10 @@ seo-title: Werken met cookies
 title: Werken met cookies
 uuid: f060b520-ceec-48ca-929f-683566fe6ae7
 translation-type: tm+mt
-source-git-commit: 5908e5a3521966496aeec0ef730e4a704fddfb68
+source-git-commit: 6da7d597503d98875735c54e9a794f8171ad408b
+workflow-type: tm+mt
+source-wordcount: '268'
+ht-degree: 0%
 
 ---
 
@@ -43,24 +46,23 @@ Werken met cookies:
 
    TVSDK vraagt deze cookieManager bij uitvoering op, controleert of er cookies zijn gekoppeld aan de URL en gebruikt deze automatisch.
 
-   Een andere mogelijkheid is om `cookieHeaders` in te stellen `NetworkConfiguration` dat een willekeurige headertekenreeks voor cookies wordt gebruikt voor aanvragen. Standaard wordt deze cookieheader alleen met sleutelverzoeken verzonden. Om de koekjeskopbal met alle verzoeken te verzenden, gebruik de `NetworkConfiguration` methode `setUseCookieHeadersForAllRequests`:
+   Een andere mogelijkheid is om `cookieHeaders` in te stellen `NetworkConfiguration` dat een willekeurige headertekenreeks voor cookies wordt gebruikt voor aanvragen. Standaard wordt deze cookieheader alleen met belangrijke aanvragen verzonden. Om de koekjeskopbal met alle verzoeken te verzenden, gebruik de `NetworkConfiguration` methode `setUseCookieHeadersForAllRequests`:
 
-   ```java
+```java
    NetworkConfiguration networkConfiguration = new NetworkConfiguration(); 
-   
+    
    Metadata cookie = new MetadataNode(); 
    cookie.setValue("reqPayload", “1234567”); 
    networkConfiguration.setCookieHeaders(cookie); 
    networkConfiguration.setUseCookieHeadersForAllRequests( true ); 
-   
+    
    // Set NetworkConfiguration as Metadata:                                                                   
-   MetadataNode resourceMetadata = new MetadataNode();  
+   MetadataNode resourceMetadata = new MetadataNode(); 
    resourceMetadata.setNode(DefaultMetadataKeys.NETWORK_CONFIGURATION.getValue(),  
                             networkConfiguration); 
-   
+    
    // Call MediaResource.createFromURL to set the metadata: 
    MediaResource resource = MediaResource.createFromURL(url, resourceMetadata); 
-    // Load the resource 
+   // Load the resource 
    mediaPlayer.replaceCurrentItem(resource);
-   ```
-
+```
