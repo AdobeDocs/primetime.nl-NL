@@ -4,7 +4,10 @@ seo-description: 'Deze tabel bevat gedetailleerde informatie over meldingen voor
 seo-title: Code ONTVANGSTEN
 title: Code ONTVANGSTEN
 translation-type: tm+mt
-source-git-commit: 557f42cd9a6f356aa99e13386d9e8d65e043a6af
+source-git-commit: 6da7d597503d98875735c54e9a794f8171ad408b
+workflow-type: tm+mt
+source-wordcount: '763'
+ht-degree: 0%
 
 ---
 
@@ -15,12 +18,15 @@ Deze tabel bevat gedetailleerde informatie over OPTIMALISATIEmeldingen voor ONTV
 
 ## Enable Revenue Optimization Reporting {#enable-revenue-optimization-reporting}
 
-Gebruik de API PTMediaPlayer om deze rapportage in te schakelen: `[mediaPlayer
-setRevenueOptimizationReportingLevel:PTNotificationTypeInfo]`.
+Gebruik de API PTMediaPlayer om deze rapportage in te schakelen: `[mediaPlayersetRevenueOptimizationReportingLevel:PTNotificationTypeInfo]`.
 
-[!NOpmerking]: De meeste informatieve meldingen bevatten relevante metagegevens, bijvoorbeeld de URL van de bron die niet is gedownload. Sommige meldingen bevatten metagegevens om op te geven of het probleem is opgetreden in de hoofdvideo-inhoud, in de alternatieve audio-inhoud of in een advertentie.
+>[!NOTE]
+>
+>De meeste informatieve meldingen bevatten relevante metagegevens, bijvoorbeeld de URL van de bron die niet is gedownload. Sommige meldingen bevatten metagegevens om op te geven of het probleem is opgetreden in de hoofdvideo-inhoud, in de alternatieve audio-inhoud of in een advertentie.
 
-|Code|Naam|Melding binnen|Metagegevenstoetsen|Opmerkingen||—|—|—|—|—||401001| ONTVANGSTEN_OPTIMALISATIE_RAPPORTERING| Geen| Verwijs hieronder lijst voor meta-gegevenssleutels die op verschillende gebeurtenissen worden gebaseerd. | Geen|
+|Code |Naam |Melding binnen |Metagegevenstoetsen |Opmerkingen |
+|—|—|—|—|—|
+|401001 | ONTVANGSTEN_OPTIMALISATIE_RAPPORTERING | Geen | Verwijs hieronder lijst voor meta-gegevenssleutels die op verschillende gebeurtenissen worden gebaseerd. | Geen |
 
 | Gebeurtenisdetails | ContextMetadata |
 |---|---|
