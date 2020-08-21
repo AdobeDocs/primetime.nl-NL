@@ -2,7 +2,7 @@
 title: Opmerkingen bij de release TVSDK 3.12 voor iOS
 description: De opmerkingen bij de release TVSDK 3.12 voor iOS beschrijven wat nieuw of gewijzigd is, de opgeloste en bekende problemen en de apparaatproblemen in TVSDK iOS 3.12.
 translation-type: tm+mt
-source-git-commit: 1b9792a10ad606b99b6639799ac2aacb707b2af5
+source-git-commit: 6da7d597503d98875735c54e9a794f8171ad408b
 workflow-type: tm+mt
 source-wordcount: '7665'
 ht-degree: 0%
@@ -406,7 +406,7 @@ Verbeterde oplossing voor afgesloten uitgave #34385 in release 1.4.42. Toegevoeg
 
 * (ZD#34765) - Na het aanroepen van stop() worden nog maar weinig transportstreamsegmenten gedownload. Verbeterde de Stop()-API om het downloaden van de extra segmenten te voorkomen.
 
-* (ZD#34865) - Pre-roll advertenties voor livestream worden afgebroken op iOS. Dit probleem is opgelost. Dit probleem is verwant aan iOS11 en er wordt een extra controle toegevoegd om te controleren of de stream pre-roll of main-content is.
+* (ZD#34865) - Pre-roll advertenties voor livestream worden afgebroken op iOS. Dit probleem is opgelost. Dit probleem is te maken met iOS11 en er wordt een extra controle toegevoegd om te controleren of de stream pre-roll of main-content is.
 
 * (ZD#35093) - Oplossing voor een failover-scenario waarbij, als de Primaire variant van de stream bij het opstarten mislukt (404 wordt geretourneerd), het afspelen niet naar de back-upstream wordt geschakeld.
 
@@ -541,7 +541,7 @@ Probleem met afspelen wanneer de tag # EXT-X-PLAYLIST-TYPE in de stream is inges
 
 Gebruik van Creative ID en AdSystem in CRS- verzoek dat op de normalisatieregels van CRS wordt gebaseerd.
 
-* [ ZD #29462) - TremorHub en VOD voor A&amp;E waardoor iOS-apps vastlopen
+* (ZD #29462) - TremorHub en A&amp;E VOD die een crash veroorzaken in iOS-apps
 
 **Versie 1.4.36 (1.4.36.835)**
 
@@ -725,7 +725,7 @@ De crash die optrad als gevolg van een niet-toegewezen instantie van de mediaspe
 
 * (ZD #24575) - Crash in TVSDK op 32-bits apparaten wanneer enableDebugLog=true
 
-De kwestie in het logboekformaat dat de botsing op apparaten met 32 bits veroorzaakte wanneer het registreren wordt toegelaten is bevestigd.
+De kwestie in het logboekformaat dat de botsing op apparaten met 32 bits veroorzaakte wanneer het registreren wordt toegelaten is opgelost.
 
 **Versie 1.4.26** (1.4.26.702) voor iOS 6.0+
 
@@ -1098,7 +1098,7 @@ Door TVSDK worden lege URL&#39;s voor het bijhouden van regeleinden en afbreking
 
 * (ZD #2141) Implementatie van analysemogelijkheden voor de app TreeHouse, toegevoegde `AdobeAnalyticsPlugin.a` bibliotheek voor het samenstellen van het pakket.
 * Video Heartbeats Library update naar 1.4.1.2
-* [PTPALY-4226] [verwant aan ZD #2423) Het uitvoeren van het Terugstellen DRM kan in schrapping van de gegevens van het Document van de Toepassing resulteren.
+* (PTPALY-4226) (gerelateerd aan ZD #2423) Het uitvoeren van DRM-resetten kan resulteren in het verwijderen van gegevens in het toepassingsdocument.
 
 **Versie 1.4.4** (1.4.4.242)
 
