@@ -5,7 +5,10 @@ seo-title: Query-parameters van de server manipuleren
 title: Query-parameters van de server manipuleren
 uuid: 03632da3-ae20-427c-bd24-4794ab627cc8
 translation-type: tm+mt
-source-git-commit: 358c5b02d47f23a6adbc98e457e56c8220cae6e9
+source-git-commit: 6da7d597503d98875735c54e9a794f8171ad408b
+workflow-type: tm+mt
+source-wordcount: '790'
+ht-degree: 0%
 
 ---
 
@@ -34,7 +37,7 @@ De manifestserver herkent de volgende parameters. Deze worden samen met alle nie
 | ptassetid | De unieke id van de inhoud die door de uitgever wordt toegewezen en onderhouden. | Akamai Ad Scaler | URL-veilige tekenreeks |
 | ptcdn | Lijst van één of meerdere CDNs aan gastheer transcoded activa. Zie Ondersteuning voor [meerdere CDN&#39;s](../../creative-repackaging-service/multi-cdn-supportt.md). | Geen (standaard=Akamai) | Voorbeeld: Akamai, Level3, Limelight, Comcast |
 | ptcueformat | De naam van de aangepaste ad-cueformaat in de M3U8. | Nee | DPISimple, DPIScte35, Element,NBC, NFL of Turner |
-| ptfailover | Signaleert de manifestserver om primaire en failover stromen te identificeren die in hoofdplaylist worden gespecificeerd, en hen te behandelen als gescheiden reeksen. Dit vergemakkelijkt failover en voorkomt timingsfouten. (Alleen voor Apple HLS-apparaten.) Zie [Het vergemakkelijken van de speleromschakeling](../../msapi-topics/ms-insert-ads/hls-switching-to-failover.md) van HLS. | Nee | true |
+| ptfailover | Signaleert de manifestserver om primaire en failover stromen te identificeren die in master playlist worden gespecificeerd, en hen te behandelen als gescheiden reeksen. Dit vergemakkelijkt failover en voorkomt timingsfouten. (Alleen voor Apple HLS-apparaten.) Zie [Het vergemakkelijken van de speleromschakeling](../../msapi-topics/ms-insert-ads/hls-switching-to-failover.md) van HLS. | Nee | true |
 | ptmulticall | Indien ingesteld op true, worden meerdere controles ad-call voor FER uitgevoerd; één voor elke advertentie-onderbreking.  Indien afwezig of geplaatst aan vals, wordt één ad-call gemaakt om voor FER te controleren. | Nee | Booleaanse waarde:  De volgende eisen: <ul><li>ptcueformat-parameter moet op nbc worden ingesteld</li><li>parameter pttimeline wordt genegeerd.</li></ul> |
 | ptplayer | Speler die het verzoek indient. | iOS/Safari | ios-mobileweb |
 | ptrendition | Automatisch gegenereerd door invoeging in een advertentie en gebruikt door Akamai. Toevoegen of verwijderen niet uitvoeren. | Akamai Ad Scaler |  |
@@ -45,5 +48,5 @@ De manifestserver herkent de volgende parameters. Deze worden samen met alle nie
 | trackingpositie | Instrueert de manifestserver om slechts informatie terug te keren en te volgen. Geef deze parameter niet op in de bootstrap-aanvraag. | Client-side tracking | Alfanumerieke notitie:  De manifestserver negeert alle overgegaane waarden. Als u echter een null- of lege tekenreeks doorgeeft, retourneert de manifestserver de M3U8 in plaats van informatie te volgen. |
 | trackingversie | De indelingsversie van de traceerinformatie aan de clientzijde. | Client-side tracking | v1, v2, v3 of vmap |
 | scteTracking | Fetch M3U8, before SCTE tracking information can be fetched in JSON V2 sidecar.  <br/>Deze parameter geeft aan de manifestserver door dat de speler die de M3U8 haalt, SCTE-taginformatie moet ophalen. | Nee (standaard:  false ) | true of false Note:  De SCTE-35 gegevens zijn teruggekeerd in JSON sidecar met de volgende combinatie waarden van de vraagparameter: <ul><li>`ptcueformat=turner | elemental | nfl | DPIScte35` </li><li>pttrackingversion=v2 </li><li>scteTracking=true</li></ul> |
-| vetargetmultiplier | Het aantal segmenten vanaf het live punt De pre-roll compensatie wordt gevormd gebruikend:   `(  vetargetmultiplier  *  targetduration ) +  vebufferlength` Opmerking <br/><br/>****:  Alleen actief/lineair | Nee (standaard:  3.0) | Float |
+| vetargetmultiplier | Het aantal segmenten vanaf het live punt De pre-roll compensatie wordt gevormd gebruikend:   `(  vetargetmultiplier  *  targetduration ) +  vebufferlength`  <br/><br/>**Opmerking**:  Alleen actief/lineair | Nee (standaard:  3.0) | Float |
 | vebufferLength | Het aantal seconden vanaf de actieve puntnotitie:  Alleen actief/lineair | Nee (standaard:  3.0) | Float |
