@@ -5,7 +5,10 @@ seo-title: Een mediabron maken
 title: Een mediabron maken
 uuid: 9ae86c04-7bbe-43fb-9f57-1d9fa2fa73d0
 translation-type: tm+mt
-source-git-commit: ed910a60440ae7c0d19d9be56c80c8bdbc62bcf1
+source-git-commit: bdeab54aeb083f1fc8d27db1fd94bf89d74429da
+workflow-type: tm+mt
+source-wordcount: '316'
+ht-degree: 0%
 
 ---
 
@@ -43,7 +46,7 @@ De MediaResource-klasse vertegenwoordigt de inhoud die door de MediaPlayer-insta
    </tr> 
    <tr> 
       <td colname="col1"> <span class="codeph"> metagegevens </span> </td> 
-      <td colname="col2"> Een instantie van de <span class="codeph"> </span> klasse Metagegevens (een woordenboekachtige structuur) die aanvullende informatie kan bevatten over de inhoud die op het punt staat te worden geladen, zoals alternatieve inhoud of inhoud die in de hoofdinhoud moet worden geplaatst. Als u reclame gebruikt, stelt u AuditudeSettings in <span class="codeph"> </span> voordat u deze constructor gebruikt (zie href=Ad insert metadata](../../android-3.5-advertence/ad-insert/ad-insert-metadata/android-3.5-ad-insert-metadata.md). </td> 
+      <td colname="col2"> Een instantie van de <span class="codeph"> </span> klasse Metagegevens (een woordenboekachtige structuur) die aanvullende informatie kan bevatten over de inhoud die op het punt staat te worden geladen, zoals alternatieve inhoud of inhoud die in de hoofdinhoud moet worden geplaatst. Als u reclame gebruikt, stelt u AuditudeSettings in <span class="codeph"> voordat u deze constructor </span> Advertentie-invoegmetagegevens gebruikt <a href="/help/programming/tvsdk-3x-android-prog/android-3x-advertising/ad-insertion/ad-insertion-metadata/android-3x-ad-insertion-metadata.md"> </a>. </td> 
    </tr> 
    </tbody> 
    </table>
@@ -70,6 +73,7 @@ De MediaResource-klasse vertegenwoordigt de inhoud die door de MediaPlayer-insta
 
    * De instantie MediaPlayer.
    * `MediaPlayerItemLoader` Zie Een mediabron [laden met MediaPlayerItemLoader](../../../tvsdk-3x-android-prog/android-3x-content-playback-options-android2/mediaplayer-initialize-for-video/android-3x-media-resource-mediaplayeritemloader.md)voor meer informatie.
+
    >[!IMPORTANT]
    >
    >Laad de mediabron niet op een achtergrondthread. De meeste verrichtingen TVSDK moeten op de belangrijkste draad lopen, en het runnen van hen op een achtergronddraad kan de verrichting veroorzaken om een fout te werpen en weg te gaan.
