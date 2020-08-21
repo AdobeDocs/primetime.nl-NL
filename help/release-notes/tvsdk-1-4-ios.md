@@ -8,7 +8,7 @@ products: SG_PRIMETIME
 topic-tags: release-notes
 discoiquuid: 452f8699-7857-49ab-9caa-22204b19fe4a
 translation-type: tm+mt
-source-git-commit: 9c6a6f0b5ecff78796e37daf9d7bdb9fa686ee0c
+source-git-commit: 6da7d597503d98875735c54e9a794f8171ad408b
 workflow-type: tm+mt
 source-wordcount: '6578'
 ht-degree: 0%
@@ -70,21 +70,21 @@ Integreer en certificeer VHL 2.0 in iOS TVSDK: Verminder de barrière in de impl
 
 * Netwerk en informatie
 
-   TVSDK API&#39;s bieden nu aanvullende informatie over VAST-reacties van derden. Advertentie-ID, Ad System en VAST Ad Extensions worden aangeboden in `PTNetworkAdInfo` klassen die toegankelijk zijn via `networkAdInfo` eigenschap op een advertentie-element. Deze informatie kan worden gebruikt voor integratie met andere Analytics-advertentieplatforms, zoals **Moat Analytics**.
+   TVSDK API&#39;s bieden nu aanvullende informatie over VAST-reacties van derden. Advertentie-ID, Ad System en VAST Ad Extensions worden aangeboden in `PTNetworkAdInfo` klassen die toegankelijk zijn via `networkAdInfo` eigenschap op een advertentie-element. Deze informatie kan worden gebruikt voor integratie met andere analyseplatforms voor advertentie, zoals **Moat Analytics**.
 
 **Versie 1.4.31**
 
-* **Factureringscijfers** Adobe verzamelt gebruiksmaatstaven en gebruikt deze maatstaven om te bepalen hoeveel de klanten moeten factureren, zodat ze kunnen betalen voor wat ze alleen gebruiken in plaats van een vaste prijs, ongeacht het werkelijke gebruik.
+* **Factureringscijfers** Om klanten aan te passen die slechts voor wat willen betalen zij, eerder dan een vast tarief ongeacht werkelijk gebruik, Adobe gebruiksmetriek verzamelen en deze metriek gebruiken om te bepalen hoeveel om de klanten in rekening te brengen.
 
-Telkens wanneer TVSDK een streamstartgebeurtenis genereert, stuurt de speler regelmatig HTTP-berichten naar het factureringssysteem van Adobe. De periode, die ook wel factureerbare duur wordt genoemd, kan verschillen voor standaard VOD, pro VOD (mid-roll ads ingeschakeld) en live inhoud. De standaardduur voor elk inhoudstype is 30 minuten, maar uw contract met Adobe bepaalt de werkelijke waarden.
+Telkens wanneer TVSDK een gebeurtenis van het stroombegin produceert, begint de speler de berichten van HTTP periodiek aan Adobe systeem te verzenden. De periode, die ook wel factureerbare duur wordt genoemd, kan verschillen voor standaard VOD, pro VOD (mid-roll ads ingeschakeld) en live inhoud. De standaardduur voor elk inhoudstype is 30 minuten, maar uw contract met Adobe bepaalt de werkelijke waarden.
 
-* **Ondersteuning voor meerdere CDN&#39;s voor CRS** AdsTVSDK ondersteunt nu Multi-CDN voor CRS-advertenties. Door FTP-gegevens op te geven voor CRS-advertenties, kunt u andere CDN-locaties opgeven dan de standaard CDN die in eigendom is van Adobe, zoals Akamai.
+* **Ondersteuning voor meerdere CDN&#39;s voor CRS** AdsTVSDK ondersteunt nu Multi-CDN voor CRS-advertenties. Door FTP-gegevens op te geven voor CRS-advertenties, kunt u andere CDN-locaties opgeven dan de standaard CDN die eigendom is van de Adobe, zoals Akamai.
 
 **Versie 1.4.29**
 
 In de klasse PTSDKConfig is de forceHTTPS API toegevoegd.
 
-De PTSDKConfig-klasse biedt methoden om SSL af te dwingen voor aanvragen die zijn gedaan naar Adobe Primetime-, beslissings-, DRM- en video-Analytics-servers. Zie de methoden `forceHTTPS` `isForcingHTTPS` en methoden in deze klasse voor meer informatie. Als een manifest over HTTPS wordt geladen, behoudt TVSDK het inhoudsgebruik van HTTPS en eerbiedigt dit gebruik wanneer het laden van om het even welke relatieve URLs van dat manifest.
+De PTSDKConfig-klasse biedt methoden om SSL toe te passen op aanvragen die zijn ingediend bij Adobe Primetime en op besluitvormings-, DRM- en Video Analytics-servers. Zie de methoden `forceHTTPS` `isForcingHTTPS` en methoden in deze klasse voor meer informatie. Als een manifest over HTTPS wordt geladen, behoudt TVSDK het inhoudsgebruik van HTTPS en eerbiedigt dit gebruik wanneer het laden van om het even welke relatieve URLs van dat manifest.
 
 **Opmerking**: Verzoeken naar domeinen van derden, zoals het bijhouden van pixels voor toevoegen, inhoud en URL&#39;s voor toevoegen en vergelijkbare verzoeken, worden niet gewijzigd. Het is de verantwoordelijkheid van inhoudsproviders en servers om URL&#39;s op te geven die via HTTPS worden ondersteund.
 
@@ -147,7 +147,7 @@ In het kader van de 1.4-TVSDK-update steunen wij nu ook het in- en terugkeren va
 
 * **Ondersteuning voor individuele support op locatie**
 
-Ondersteuning voor on-premise installaties van de Adobe Individualization Server om het individuele verzoek van de client aan te passen en naar een ander eindpunt te gaan.
+Steun voor op-gebouw installaties van de Server van de Individualisering van de Adobe om het de individualisatieverzoek van de cliënt aan te passen om naar een verschillend eindpunt te gaan.
 
 * **Op resolutie gebaseerde uitvoerbeveiliging**
 
@@ -157,10 +157,10 @@ In DRM-beleid kan nu de hoogst toegestane resolutie worden opgegeven, afhankelij
 
 * **Video Heartbeats Library (VHL)-update naar versie 1.4.1.1**
 
-   * De mogelijkheid om verschillende analysemogelijkheden te bundelen, van andere SDK&#39;s of spelers, met de Adobe Analytics Video Essentials.
+   * De mogelijkheid om verschillende analytische gebruiksscenario&#39;s te bundelen, van andere SDK&#39;s of spelers, met de Adobe Analytics Video Essentials.
    * Het bijhouden van advertenties is geoptimaliseerd door de methoden trackAdBreakStart en trackAdBreakComplete te verwijderen. Het ad-einde wordt afgeleid van de methodeaanroepen trackAdStart en trackAdComplete.
    * De eigenschap playhead is niet meer nodig bij het bijhouden van advertenties.
-   * Toegevoegde ondersteuning voor de Bezoeker-id van de marketingcloud.
+   * Extra ondersteuning voor de Marketing Cloud Bezoeker-id.
 
 * **Integratie van Nielsen SDK**
 
@@ -198,7 +198,7 @@ In DRM-beleid kan nu de hoogst toegestane resolutie worden opgegeven, afhankelij
 
 * TVSDK 1.4.28 is gecertificeerd voor iOS 10 Beta 7.
 * DRM-ondersteuning om HTTPS te forceren door forceHTTPS en isForcingHTTPS API&#39;s toe te voegen.
-* Bijgewerkte VHL-bibliotheken naar 1.5.8, Adobe Mobile-bibliotheken naar 4.8.4 en de logger-hulpprogrammabibliotheek naar het doel voor implementatie van versie 7.0.
+* Bijgewerkte bibliotheken VHL aan 1.5.8, Adobe Mobiele bibliotheken aan 4.8.4, en de logger nutsbibliotheek aan versie 7.0 plaatsingsdoel.
 
 **Versie 1.4.19**
 
@@ -212,7 +212,7 @@ Deze versie van de TVSDK is gecertificeerd met de FairPlay-ondersteuning voor iO
 
    **Opmerking**: Houd rekening met de volgende compilatierichtlijnen:
 
-   * De TVSDK-tvOs-ondersteuning is beperkt tot niet-Adobe DRM-gecodeerde streams. U moet de verwijzing naar drmNativeInterface.framework verwijderen in uw tvOS-ontwikkelinstellingen. Met AES gecodeerde stromen worden nog steeds ondersteund.
+   * TVSDK tvOs-ondersteuning is beperkt tot niet-Adobe DRM gecodeerde streams. U moet de verwijzing naar drmNativeInterface.framework verwijderen in uw tvOS-ontwikkelinstellingen. Met AES gecodeerde stromen worden nog steeds ondersteund.
    * Apple eist dat alle Apple TV-toepassingen zijn ingeschakeld voor bitcode. U moet deze markering dus in de projectinstellingen inschakelen.
 
 ## Opgeloste problemen in 1.4 {#resolved-issues-in}
@@ -449,7 +449,7 @@ Dit probleem is opgelost door het laden van bronnen bij te werken en uit alle be
 
 * (ZD# 27460) eerste vraag van Midroll - POST aan cdn.auditude<span></span>.com terugkerend 403.
 
-De nieuwe CDN-account kan een POST CDN-aanvraag niet verwerken. Dit probleem is opgelost door de code bij te werken en het `cdn.auditude.com` advertentieverzoek in te dienen om GET in plaats van POST te zijn.
+Het nieuwe CDN-account kan een CDN-aanvraag van een POST niet verwerken. Dit probleem is opgelost door de code bij te werken om het `cdn.auditude.com` advertentieverzoek om GET in plaats van POST te doen.
 
 **Versie 1.4.32** (1.4.32.792 voor iOS 6.0+)
 
@@ -480,6 +480,7 @@ Dit probleem is opgelost door discontinuïteitscodes op verschillende manifests 
 Dit probleem is opgelost door het PSDKLibrary.framework in te pakken zoals gevraagd.
 
 * (ZD# 26364) Ondersteuning voor meerdere CDN&#39;s voor CRS-advertenties
+
 <!-- 
 Comment Type: draft
 For more information, see [Multiple CDN support for CRS Ad Delivery](http://help.adobe.com/en_US/primetime/psdk/ios/1.4/index.html#PSDKs-concept-Multiple_CDN_support_for_CRS_ad_delivery).
@@ -492,9 +493,9 @@ Dit probleem is opgelost door een oplossing te bieden voor streams die geen M3U8
 
 De volgende problemen zijn in deze release opgelost voor TVSDK:
 
-* (ZD# 24180) Een aangepaste koptekst toevoegen om lijst toe te staan
+* (ZD# 24180) Een aangepaste koptekst toevoegen aan de lijst van gewenste personen
 
-Er is een nieuwe aangepaste koptekst toegevoegd aan de lijst voor TVSDK-toestaan.
+Er is een nieuwe aangepaste koptekst toegevoegd aan de TVSDK-lijst van gewenste personen.
 
 * (ZD# 25016) Failover-stroom wordt willekeurig geselecteerd wanneer ABR-besturingsparameters worden ingesteld
 
@@ -522,7 +523,7 @@ Dit probleem is opgelost door de API voor assetDuration toe te voegen `PTVideoAn
 
 Dit probleem is hetzelfde als ZD #22351.
 
-* (ZD #25908) VHL - Analytics: Adobe Hartslaggebeurtenis vastloopt
+* (ZD #25908) VHL - Analytics: Adobe hartslaggebeurtenis vastloopt
 
 Dit probleem is opgelost door de implementatie bij te werken en de nieuwste versie van VHL voor iOS versie 1.5.9 te gebruiken om de stabiliteit en prestaties te verbeteren.
 
@@ -612,7 +613,7 @@ Dit probleem is opgelost door extra null-objectcontroles toe te voegen tijdens h
 
 Dit probleem is hetzelfde als (ZD #21590).
 
-* (ZD #22280) - Analytics Video Length wordt ingesteld op 0
+* (ZD #22280) - De videolengte van Analytics wordt ingesteld op 0
 
 Dit probleem is hetzelfde als (ZD #21590).
 
@@ -638,7 +639,7 @@ Dit probleem is opgelost door de logica bij te werken om de weergave van de spel
 
 Dit probleem is opgelost door VideoAnalyticsTracker bij te werken om het begin/einde van een hoofdstuk correct te detecteren bij het schakelen tussen grenzen van hoofdstukken en niet-hoofdstukken.
 
-* (ZD #20784) - Analytics: Het triggeren van inhoud wordt voltooid voor live video-overgangen
+* (ZD #20784) - Analyse: Het triggeren van inhoud wordt voltooid voor live video-overgangen
 
 Dit probleem is opgelost door een logica toe te voegen die handmatig het voltooien van de inhoud tijdens een sessie voor het bijhouden van video activeert.
 
@@ -677,7 +678,7 @@ Dit probleem is opgelost door extra bescherming te bieden tegen gelijktijdige pr
 
 * (ZD #21782) - iOS-foutcode 10100
 
-Het probleem waarbij de TVSDK een fout van 101000 heeft geretourneerd bij het starten van het afspelen op Adobe Access DRM-streams is opgelost.
+Het probleem waarbij de TVSDK een fout van 101000 heeft geretourneerd bij het starten van het afspelen op DRM-streams van Adobe Access is opgelost.
 
 * (ZD #21889) - Onlineadvertenties en het afspelen van offline inhoud mislukt
 
@@ -689,13 +690,13 @@ Dit probleem is opgelost door de verwerking van VAST-tags van derden met ongeldi
 
 * (ZD #22257) - De TVSDK kan de DRM-stream niet afspelen
 
-Het probleem waarbij de TVSDK die een fout van 101000 heeft geretourneerd terwijl het afspelen werd gestart op Adobe Access DRM-streams, is opgelost.
+Het probleem waarbij de TVSDK die een fout van 101000 heeft geretourneerd terwijl het afspelen werd gestart op DRM-streams van Adobe Access, is opgelost.
 
 **Versie 1.4.22** (1.4.22.627) voor iOS 6.0+
 
 * (ZD #18709) - Crash in de TVSDK voor iOS
 
-Het probleem met een crash die optreedt bij bepaalde met Adobe Access DRM beveiligde streams is opgelost.
+Het probleem met een crash die optrad bij bepaalde met DRM beveiligde streams van Adobe Access is opgelost.
 
 * (ZD #18850) - Creatieve selectielogica bijwerken op basis van CRS-regels
 
@@ -733,7 +734,7 @@ Bij EVENT-streams worden geen correcte regeleinden geactiveerd in de vorige rele
 
 * (ZD #20749) - Bij fallback worden niet-lege VAST-reacties overgeslagen; URL&#39;s met extra URL&#39;s en tekstspatiëring worden geactiveerd
 
-Er is een probleem opgelost met dubbele pingen op terugvaladvertenties.
+Er is een probleem opgelost met dubbele pings op terugvaladvertenties.
 
 **1.4.20** (1.4.20.590) voor iOS 6.0+
 
@@ -866,7 +867,7 @@ Dit probleem is opgelost door ondersteuning te bieden voor de Android CTS-letter
 
 Toegevoegde metagegevens om inhoud beschikbaar te maken wanneer de melding M3U8_PARSER_ERROR plaatsvindt.
 
-* (ZD #4437) - Crashes in Adobe Primetime SDK
+* (ZD #4437) - Crashes inside Adobe Primetime SDK
 
 Probleem verholpen waarbij het programma vastloopt tijdens het voorbereiden van ondertitels/alternatieve audio.
 
@@ -953,9 +954,9 @@ Ondersteuning voor het vastzetten van lege URL&#39;s voor het bijhouden van rege
 
 **Versie 1.4.5** (1.4.5.283)
 
-* (ZD #2141) Analytics-implementatie voor de TreeHouse-app heeft AdobeAnalyticsPlugin.a-bibliotheek toegevoegd om het pakket samen te stellen.
+* (ZD #2141) Implementatie van analysemogelijkheden voor de TreeHouse-app heeft AdobeAnalyticsPlugin.a-bibliotheek toegevoegd om het pakket samen te stellen.
 * Video Heartbeats Library update naar 1.4.1.2
-* [PTPALY-4226] [verwant aan ZD #2423) Het uitvoeren van het Terugstellen DRM kan in schrapping van de gegevens van het Document van de Toepassing resulteren.
+* (PTPALY-4226) (gerelateerd aan ZD #2423) Het uitvoeren van DRM-resetten kan resulteren in het verwijderen van gegevens in het toepassingsdocument.
 
 **Versie 1.4.4** (1.4.4.242)
 
@@ -988,7 +989,7 @@ Ondersteuning voor het vastzetten van lege URL&#39;s voor het bijhouden van rege
 * Het kan voorkomen dat tijdens het roteren van licenties de video niet wordt afgespeeld op iOS 11 en dat deze goed wordt afgespeeld op iOS 9.x en iOS 10.x.
 * Als bij VPAID 2.0-ondersteuning het afspelen via AirPlay actief is, worden VPAID-advertenties overgeslagen.
 * Het drmNativeInterface.framework is niet correct gekoppeld wanneer het minimumdoel is ingesteld op iOS7 (of hoger).\
-   Oplossing: Geef de `libstdc++6`naam expliciet op.  dylibbibliotheek, als hieronder: Ga naar Target->Build Phases->Link Binary with Libraries and add `libstdc++.6.dylib`.
+   Oplossing: Geef de `libstdc++6`naam expliciet op.  dylibbibliotheek, als hieronder: Ga naar Doel->Build Phases->Link Binary with Libraries and add `libstdc++.6.dylib`.
 
 * Post-Roll Ad wordt niet ingevoegd voor het vervangen van API.
 * Als u in een advertentiesonderbreking zoekt (zonder dat u er uit komt), wordt een dubbel bericht weergegeven en wordt een bericht voor een ad-onderbreking gestart
@@ -998,4 +999,4 @@ Ondersteuning voor het vastzetten van lege URL&#39;s voor het bijhouden van rege
 
 ## Nuttige bronnen {#helpful-resources}
 
-* Zie de volledige Help-documentatie op de pagina [Adobe Primetime Learn &amp; Support](https://helpx.adobe.com/support/primetime.html) .
+* Zie de volledige Help-documentatie op de pagina Learn &amp; Support [van](https://helpx.adobe.com/support/primetime.html) Adobe Primetime.
