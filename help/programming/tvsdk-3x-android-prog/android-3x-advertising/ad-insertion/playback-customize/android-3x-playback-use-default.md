@@ -5,7 +5,10 @@ seo-title: Standaardgedrag voor afspelen gebruiken
 title: Standaardgedrag voor afspelen gebruiken
 uuid: 36f76c42-4c6c-4620-9b47-ec97519a642a
 translation-type: tm+mt
-source-git-commit: bc35da8b258056809ceaf18e33bed631047bc81b
+source-git-commit: 6da7d597503d98875735c54e9a794f8171ad408b
+workflow-type: tm+mt
+source-wordcount: '238'
+ht-degree: 0%
 
 ---
 
@@ -40,19 +43,20 @@ Zo past u het gedrag van advertenties aan:
 1. Voer de `AdPolicySelector` interface en al zijn methodes uit.
 1. Wijs het beleidsexemplaar toe dat door TVSDK via de reclamefabriek moet worden gebruikt.
 
->[!NOTE]
->class CustomContentFactory extends ContentFactory {
->...
->@Override
->public AdPolicySelector retrieveAdPolicySelector>>(MediaPlayerItem mediaPlayerItem) {
->retourneert nieuwe CustomAdPolicySelector(mediaPlayerItem);
->}
->...
->}
->// registreer de aangepaste inhoudsfabriek met de mediaspeler.
->MediaPlayerItemConfig config = new MediaPlayerItemConfig();
->config.setAdvertisingFactory(new CustomContentFactory());
->// deze configuratie wordt later doorgegeven tijdens het laden >de resource
->mediaPlayer.replaceCurrentResource(resource, config);
+   >[!NOTE]
+   >
+   >klasse CustomContentFactory extends ContentFactory&amp;trace;
+   >...
+   >@Override
+   >public AdPolicySelector retrieveAdPolicySelector>>(MediaPlayerItem mediaPlayerItem) &amp;trace;
+   >retourneert nieuwe CustomAdPolicySelector(mediaPlayerItem);
+   >&amp;trace;
+   >...
+   >&amp;trace;
+   >// registreer de aangepaste inhoudsfabriek met de mediaspeler.
+   >MediaPlayerItemConfig config = new MediaPlayerItemConfig();
+   >config.setAdvertisingFactory(new CustomContentFactory());
+   >// deze configuratie wordt later doorgegeven tijdens het laden >de resource
+   >mediaPlayer.replaceCurrentResource(resource, config);
 
 1. Implementeer uw aanpassingen.
