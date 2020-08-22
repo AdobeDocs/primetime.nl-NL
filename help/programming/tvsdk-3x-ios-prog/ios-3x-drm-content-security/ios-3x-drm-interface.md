@@ -6,7 +6,7 @@ seo-title: Overzicht van de primaire DRM-interface
 title: Overzicht van de primaire DRM-interface
 uuid: 5e794147-cc58-448c-b8ec-065e80ef01fd
 translation-type: tm+mt
-source-git-commit: 1b9792a10ad606b99b6639799ac2aacb707b2af5
+source-git-commit: 23a48208ac1d3625ae7d925ab6bfba8f2a980766
 workflow-type: tm+mt
 source-wordcount: '464'
 ht-degree: 0%
@@ -46,9 +46,9 @@ TVSDK geeft een `PTMediaPlayerItemDRMMetadataChanged` melding weer wanneer de DR
 
 Als de DRM-beveiligde stream meerdere bitsnelheden (MBR) heeft gecodeerd, moeten de DRM-metagegevens die voor de afspeellijst van de variant worden gebruikt, gelijk zijn aan de metagegevens die in alle bitsnelheidstreams worden gebruikt.
 
-[!TIP]
-
-Wanneer u verwijst naar URL&#39;s met DRM-beveiligde elementen in uw iOS-app, `?faxs=1` moet de parameter van de queryreeks worden toegevoegd aan de (MBR)-URL op setniveau M3U8. Bijvoorbeeld:
+>[!TIP]
+>
+>Wanneer u verwijst naar URL&#39;s met DRM-beveiligde elementen in uw iOS-app, `?faxs=1` moet de parameter van de queryreeks worden toegevoegd aan de (MBR)-URL op setniveau M3U8. Bijvoorbeeld:
 
 ```
 https://your.domain.com/hls/[...]/index.m3u8?faxs=1
