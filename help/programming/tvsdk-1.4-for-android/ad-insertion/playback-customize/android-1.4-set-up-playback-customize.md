@@ -5,7 +5,10 @@ seo-title: Aangepast afspelen instellen
 title: Aangepast afspelen instellen
 uuid: 9cbf0bcf-7932-409e-a690-e79f284eaf74
 translation-type: tm+mt
-source-git-commit: 5908e5a3521966496aeec0ef730e4a704fddfb68
+source-git-commit: 23a48208ac1d3625ae7d925ab6bfba8f2a980766
+workflow-type: tm+mt
+source-wordcount: '170'
+ht-degree: 1%
 
 ---
 
@@ -30,7 +33,7 @@ Zo past u het gedrag van advertenties aan:
 
 1. Wijs het beleidsexemplaar toe dat door TVSDK via de reclamefabriek moet worden gebruikt.
 
->[!ATTENTION]
+>[!IMPORTANT]
 >
 >Aangepaste advertentiebeleidsregels die zijn geregistreerd aan het begin van >playback worden gewist wanneer de instantie MediaPlayer >deassigned is. Uw toepassing moet een beleid >selector registreren telkens wanneer een nieuwe playbackzitting wordt gecreeerd.
 
