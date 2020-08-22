@@ -2,9 +2,10 @@
 cloud: experience-cloud
 product: adobe primetime
 audience: end-user
-user-guide-title: Help bij Primetime Digital Rights Management
+user-guide-title: Help bij primetime-Digital Rights Management
+user-guide-description: Helps you learn more about various user scenarios in Digital Rights Management (DRM).
 translation-type: tm+mt
-source-git-commit: 58bb3bedc5b0ac63afd96eb6101d9ad779e6deed
+source-git-commit: 23a48208ac1d3625ae7d925ab6bfba8f2a980766
 workflow-type: tm+mt
 source-wordcount: '2202'
 ht-degree: 0%
@@ -19,7 +20,7 @@ ht-degree: 0%
    + [Certificaten](certificate-enrollment-guide/about-certs.md)
    + [Vereisten](certificate-enrollment-guide/prerequisites.md)
    + [Over rollen voor certificaatinschrijving](certificate-enrollment-guide/about-cert-enrollment.md)
-   + [Aanvragers toevoegen](certificate-enrollment-guide/add-requesters.md)
+   + [M-aanvragers toevoegen](certificate-enrollment-guide/add-requesters.md)
    + [Een secundaire beheerder maken](certificate-enrollment-guide/add-secondary-admin.md)
    + Certificaten aanvragen {#request-certs}
       + [Overzicht](certificate-enrollment-guide/request-certs/request-certs-overview.md)
@@ -39,12 +40,12 @@ ht-degree: 0%
    + [Belangrijkste kenmerken](drm-sdk-overview/key-features.md)
    + [Terminologie en kernbegrippen](drm-sdk-overview/terminology-and-core-concepts.md)
    + Workflow voor distributie van inhoud {#content-distribution-workflow}
-      + [Inhoud voorbereiden](drm-sdk-overview/content-distribution-workflow/content-preparation.md)
+      + [SDUUR](drm-sdk-overview/content-distribution-workflow/content-preparation.md)
       + [Inhoudsverwerving](drm-sdk-overview/content-distribution-workflow/content-acquisition.md)
    + Adobe Primetime DRM-componenten {#adobe-access-components}
       + [Overzicht](drm-sdk-overview/adobe-access-components/adobe-access-sdk.md)
       + [Adobe Primetime DRM SDK](drm-sdk-overview/adobe-access-components/drm-sdk.md)
-      + [Adobe Primetime DRM Server voor beveiligde streaming](drm-sdk-overview/adobe-access-components/protected-streaming.md)
+      + [Adobe Primetime DRM-server voor beveiligde streaming](drm-sdk-overview/adobe-access-components/protected-streaming.md)
       + [Adobe Flash Player](drm-sdk-overview/adobe-access-components/adobe-flash-player.md)
       + [Adobe AIR](drm-sdk-overview/adobe-access-components/adobe-air.md)
       + [Systeemeigen iOS- en Android-toepassingen](drm-sdk-overview/adobe-access-components/native-ios-and-android-apps.md)
@@ -57,10 +58,10 @@ ht-degree: 0%
    + [Tomcat installeren](quick-start/install-tomcat.md)
    + [De server instellen en implementeren voor beveiligde streaming](quick-start/setup-deploy-drm-server-ps.md)
    + [Gecodeerde inhoud verpakken](quick-start/package-content.md)
-   + [Flash Player installeren en testinhoud afspelen](quick-start/install-fp-playback-test.md)
+   + [Flash Player- en afspeeltestinhoud installeren](quick-start/install-fp-playback-test.md)
    + [Een lokaal verpakte video afspelen](quick-start/playback-locally-pkgd-video.md)
    + [Volgende stappen](quick-start/next-steps.md)
-+ Adobe Premiere Cloud DRM Handleiding voor snel starten {#cloud-drm-quickstart}
++ Handleiding voor snel starten van Adobe Primetime Cloud DRM {#cloud-drm-quickstart}
    + [Wat is inbegrepen bij Primetime Cloud DRM](cloud-quick-start/whats-included.md)
    + [Wat wordt NIET ondersteund door Primetime Cloud DRM](cloud-quick-start/not-supported.md)
    + [Vereisten](cloud-quick-start/prerequisites.md)
@@ -82,7 +83,7 @@ ht-degree: 0%
    + [Aangepast DRM-beleid maken (optioneel)](cloud-quick-start/creating-custom-drm-policies/creating-custom-drm-policies.md)
    + [Bestaande DRM-inhoud bijwerken voor gebruik van Cloud DRM (optioneel)](cloud-quick-start/update-existing-drm-to-cloud.md)
    + [Streaming naar Xbox360 (optioneel)](cloud-quick-start/streaming-to-xbox360.md)
-+ De Adobe Primetime DRM-sleutelserver gebruiken {#using-key-server}
++ Adobe Primetime DRM Key Server gebruiken {#using-key-server}
    + [Vereisten voor het gebruik van Primetime DRM Key Server](using-the-drm-key-server/requirements.md)
    + [De primaire DRM-sleutelserver implementeren](using-the-drm-key-server/deployment-overview.md)
    + [Inhoud verpakken](using-the-drm-key-server/packaging-content.md)
@@ -97,7 +98,7 @@ ht-degree: 0%
    + [Specifieke beveiligingsinformatie van de leverancier](secure-deployment-guidelines/vendor-specific-sec-info.md)
    + [Fysieke beveiliging en toegang](secure-deployment-guidelines/physical-sec-and-access.md)
    + [Inhoud verpakken en beveiligen](secure-deployment-guidelines/pkging-and-protecting-content/pkging-and-protecting-content.md)
-   + [Compatibiliteit met Flash Media Rights Management Server 1.x garanderen](secure-deployment-guidelines/pkging-and-protecting-content/pkging-and-protecting-content-fmrms.md)
+   + [Compatibiliteit met Flash Media Rights Management Server 1.x waarborgen](secure-deployment-guidelines/pkging-and-protecting-content/pkging-and-protecting-content-fmrms.md)
    + De licentieserver uitgeven en beschermen {#issuing-licenses}
       + [De licentieserver beschermen](secure-deployment-guidelines/issuing-licenses/issuing-licenses-protect-license-server.md)
       + [Vooraf gegenereerde licenties](secure-deployment-guidelines/issuing-licenses/issuing-licenses-pre-gen.md)
@@ -124,7 +125,7 @@ ht-degree: 0%
       + [Belangrijke aanvraagworkflow voor Android PSDK](multi-drm-workflows/p-l-and-p/licensing-widevine-client-key-request/licensing-widevine-client-key-android-psdk.md)
       + [Belangrijke aanvraagworkflow voor HTML5 TVSDK](multi-drm-workflows/p-l-and-p/licensing-widevine-client-key-request/licensing-widevine-client-key-html5-tvsdk.md)
       + [Apparaatbinding](multi-drm-workflows/p-l-and-p/licensing-widevine-client-device-binding.md)
-   + Algemene workflows {#generic-workflows}
+   + Algemene werkstromen {#generic-workflows}
       + [Primetime Packager / Cloud DRM / TVSDK](multi-drm-workflows/p-l-and-p/generic-workflows/plp-1.md)
       + [ExpressPlay Packager / Cloud DRM / TVSDK](multi-drm-workflows/p-l-and-p/generic-workflows/package-and-play.md)
    + Onderwerpen met functies {#feature-topics}
@@ -139,7 +140,7 @@ ht-degree: 0%
       + [Token-aanvraag voor Widevine-licentie/reactie](multi-drm-workflows/license-token-req-resp-ref/widevine-license-token-request.md)
    + [Migreren van toegang naar multi-DRM](multi-drm-workflows/access-vs-multi.md)
    + [Verklarende woordenlijst](multi-drm-workflows/glossary/glossary-cek.md)
-+ Adobe Primetime DRM op locatie - Handleiding voor Individualization Server {#individualization-server}
++ Adobe Primetime DRM On Premises Individualization Server Guide {#individualization-server}
    + [Softwarevereisten](on-premises-i15n-server/title-page/sw-requirements.md)
    + Eigenschappen van serverconfiguratie {#configuration-properties}
       + [Eigenschappen toepassen op serveromgevingen](on-premises-i15n-server/server-configuration-section/server-properties/apply-props-to-envs.md)
@@ -159,13 +160,13 @@ ht-degree: 0%
    + [Voorbeeld van clientverzoeken](on-premises-i15n-server/server-configuration-section/sample-client-requests.md)
    + [Veelgestelde vragen](on-premises-i15n-server/server-configuration-section/faq.md)
 + Primetime DRM-server voor beveiligde streaming 5.3.1 {#server-for-protected-streaming}
-   + [Over Adobe Primetime DRM Server voor beveiligde streaming](protected-streaming/about-drm-for-protected-streaming.md)
+   + [Informatie over Adobe Primetime DRM Server voor beveiligde streaming](protected-streaming/about-drm-for-protected-streaming.md)
    + [Gebruiksregels](protected-streaming/usage-rules.md)
    + [Vereisten](protected-streaming/requirements.md)
    + Implementatie begrijpen {#understanding-deployment}
       + [De Adobe Primetime DRM-server implementeren voor beveiligde streaming](protected-streaming/understanding-deployment/deplying-drm-for-protected-streaming.md)
       + [Eigenschappen van Java-systemen](protected-streaming/understanding-deployment/java-system-properties.md)
-      + [Adobe Primetime DRM-referenties](protected-streaming/understanding-deployment/drm-credentials.md)
+      + [Adobe Primetime DRM-gebruikersgegevens](protected-streaming/understanding-deployment/drm-credentials.md)
       + [HSM-configuratie](protected-streaming/understanding-deployment/hsm-configuration.md)
       + Configuratiebestanden van de licentieserver instellen {#configuration-files}
          + [Configuratiebestanden van de licentieserver](protected-streaming/understanding-deployment/set-drm-license-server-config/drm-license-server-config-files.md)
@@ -175,14 +176,14 @@ ht-degree: 0%
       + [Crossdomain DRM-beleidsbestand](protected-streaming/understanding-deployment/drm-crossdomain-policy-file.md)
       + [Aangepaste extensies voor machtigingen](protected-streaming/understanding-deployment/custom-authorization-extensions.md)
       + [Prestaties afstemmen](protected-streaming/understanding-deployment/performance-tuning/global-configuration-file.md)
-      + [Een upgrade uitvoeren van de Adobe Primetime DRM-server voor beveiligde streaming](protected-streaming/understanding-deployment/upgrading-the-license-server.md)
+      + [De Adobe Primetime DRM-server upgraden voor beveiligde streaming](protected-streaming/understanding-deployment/upgrading-the-license-server.md)
       + [De DRM-server uitvoeren voor beveiligde streaming](protected-streaming/understanding-deployment/setting-the-license-server/running-the-license-server.md)
       + [Inhoud verpakken](protected-streaming/understanding-deployment/packaging-content.md)
       + DRM-server voor beveiligde streamingprogramma&#39;s {#drm-for-protected-streaming-utilities}
          + [Configuratievalidator](protected-streaming/understanding-deployment/drm-for-protected-streaming-utilities/configuration-validator.md)
          + [Wachtwoordsprambler](protected-streaming/understanding-deployment/drm-for-protected-streaming-utilities/password-scrambler.md)
          + [SWF-hash-calculator](protected-streaming/understanding-deployment/drm-for-protected-streaming-utilities/swf-hash-calculator.md)
-+ De Adobe Primetime DRM SDK gebruiken voor het beschermen van inhoud - 5.3.1 {#using-drm-sdk}
++ Adobe Primetime DRM SDK gebruiken voor het beschermen van inhoud - 5.3.1 {#using-drm-sdk}
    + [Nieuw in Adobe Primetime DRM](protecting-content/introduction/whats-new.md)
    + Gebruiksregels en verificatie {#usage-rules-authentication}
       + [Gebruiksregels en verificatie](protecting-content/introduction/usage-rules/authentication/user-authentication.md)
@@ -214,18 +215,18 @@ ht-degree: 0%
       + [Meerdere DRM-beleidsregels](protecting-content/introduction/packaging-options/multiple-policies.md)
    + De SDK instellen {#setting-up-the-sdk}
       + [De ontwikkelomgeving instellen](protecting-content/setting-up-the-sdk/setup-dev-env.md)
-      + [Adobe Primetime DRM-referenties](protecting-content/setting-up-the-sdk/drm-credentials.md)
+      + [Adobe Primetime DRM-gebruikersgegevens](protecting-content/setting-up-the-sdk/drm-credentials.md)
       + [Certificaten aanvragen](protecting-content/setting-up-the-sdk/requesting-certs.md)
-      + [Referenties opslaan](protecting-content/setting-up-the-sdk/storing-credentials.md)
+      + [Normale gegevens opslaan](protecting-content/setting-up-the-sdk/storing-credentials.md)
    + Werken met DRM-beleid {#working-policies}
       + [Overzicht](protecting-content/working-policies-overview/working-with-policies.md)
       + [Een DRM-beleid maken met de Java API](protecting-content/working-policies-overview/creating-policy-using-java-api.md)
       + [Een DRM-beleid bijwerken met de Java API](protecting-content/working-policies-overview/updating-policy-using-java-api.md)
       + [Kritiek op DRM-beleid](protecting-content/working-policies-overview/policy-criticality.md)
       + [Werken met DRM-beleidsupdatelijsten](protecting-content/working-policies-overview/policy-update-lists/working-with-policy-update-lists.md)
-   + Mediabestanden verpakken {#packaging-media}
+   + Licentiebestanden verpakken {#packaging-media}
       + [Overzicht](protecting-content/packaging-media-overview/packaging-media-files.md)
-      + [Verpakkingsopties](protecting-content/packaging-media-overview/content-packaging-options.md)
+      + [Media verpakken](protecting-content/packaging-media-overview/content-packaging-options.md)
       + [Inhoud versleutelen](protecting-content/packaging-media-overview/encrypting-content.md)
       + [Gecodeerde bestandsinhoud controleren](protecting-content/packaging-media-overview/examining-encrypted-file-content.md)
    + Licenties vooraf genereren en insluiten {#pre-generating-and-embedded-licenses}
@@ -245,7 +246,7 @@ ht-degree: 0%
          + [Foutafhandeling van licentieaanvraag](protecting-content/implementing-the-license-server/handling-license-reqs/license-request-errors.md)
          + [Licenties genereren](protecting-content/implementing-the-license-server/handling-license-reqs/generating-licenses.md)
          + [Domeingebonden licenties afgeven](protecting-content/implementing-the-license-server/handling-license-reqs/domian-bound-licenses.md)
-         + [Licenties voor levering via externe sleutel aan iOS-clients afgeven (hiervoor is Adobe Primetime vereist)](protecting-content/implementing-the-license-server/handling-license-reqs/issuing-licenses-remote-ios.md)
+         + [Licenties voor levering via externe sleutel aan iOS-clients afgeven (vereist Adobe Primetime)](protecting-content/implementing-the-license-server/handling-license-reqs/issuing-licenses-remote-ios.md)
          + [Minimale clientversie](protecting-content/implementing-the-license-server/handling-license-reqs/minimum-client-version.md)
          + [Voorvertoning van licentie](protecting-content/implementing-the-license-server/handling-license-reqs/license-preview.md)
          + [Licenties op basis van identiteit](protecting-content/implementing-the-license-server/handling-license-reqs/identity-based-licenses.md)
@@ -254,7 +255,7 @@ ht-degree: 0%
          + [Enhanced License Chaining](protecting-content/implementing-the-license-server/license-chaining/gen-enhanced-license-chaining.md)
       + [Synchronisatieverzoeken afhandelen](protecting-content/implementing-the-license-server/handling-synch-reqs.md)
       + [FMRMS-compatibiliteit verwerken](protecting-content/implementing-the-license-server/handling-fmrms-compatibility.md)
-      + [Certificaatupdates worden verwerkt wanneer door Adobe uitgegeven certificaten verlopen](protecting-content/implementing-the-license-server/handling-cert-updates.md)
+      + [Certificaatupdates verwerken wanneer door Adobe uitgegeven certificaten verlopen](protecting-content/implementing-the-license-server/handling-cert-updates.md)
       + [Prestaties afstemmen](protecting-content/implementing-the-license-server/performance-tuning.md)
    + Client-referenties intrekken {#revoking-client-creds}
       + [Overzicht](protecting-content/revoking-client-creds/revoking-creds-overview.md)
@@ -268,9 +269,9 @@ ht-degree: 0%
    + [Voorbeeld van RBOP-configuratie](RBOP/sample-output-protection-config.md)
    + [RBOP Grammar](RBOP/output-protection-grammar.md)
    + [Veelgestelde vragen over RBOP](RBOP/output-protection-faq.md)
-+ Implementatie van Adobe Primetime DRM-naslaggids 5.3.1 {#drm-reference-implementation-5-3-1}
++ Adobe Primetime DRM Reference Implementations 5.3.1 {#drm-reference-implementation-5-3-1}
    + [Informatie over de referentie-implementaties](drm-reference-implementations/overview.md)
-   + [Normale workflow](drm-reference-implementations/typical-scenario.md)
+   + [Vergelijkbare workflow](drm-reference-implementations/typical-scenario.md)
    + Gereedschappen voor opdrachtregels {#command-line-tools}
       + [Overzicht](drm-reference-implementations/command-line-tools/command-line-tools-overview.md)
       + [Vereisten voor opdrachtregelprogramma&#39;s](drm-reference-implementations/command-line-tools/requirements.md)
@@ -289,8 +290,8 @@ ht-degree: 0%
    + [DRM-licentiegenerator](drm-reference-implementations/command-line-tools/configure-command-line-tools/license-generator/license-generator-overview.md)
    + [DRM-licentie insluiten](drm-reference-implementations/command-line-tools/configure-command-line-tools/license-embedder/license-embedder-overview.md)
    + [AIR Publisher ID-hulpprogramma](drm-reference-implementations/command-line-tools/configure-command-line-tools/air-publisher-id-utility/air-publisher-id-utility-overview.md)
-   + [Licentieserver](drm-reference-implementations/license-server-and-wfp/license-server-and-wfp.md)
-   + Configuratie {#configuration}
+   + [Configuratie licentie](drm-reference-implementations/license-server-and-wfp/license-server-and-wfp.md)
+   + configuratie {#configuration}
       + [Eigenschappen van licentieserver](drm-reference-implementations/configuration/properties-file.md)
       + [Wachtwoorden voorbereiden voor de bestanden met servereigenschappen](drm-reference-implementations/configuration/config-prep-pws-for-server-props-files.md)
       + [Wachtwoorden voorbereiden met Ant](drm-reference-implementations/configuration/config-prep-pws-for-server-with-ant.md)
@@ -320,7 +321,7 @@ ht-degree: 0%
    + Bestaande implementaties upgraden {#upgrade-existing-deploys}
       + [Overzicht van bestaande implementaties upgraden](drm-reference-implementations/upgrading-existing-deplys/upgrading-existing-deplys.md)
       + [Een domeinserver instellen](drm-reference-implementations/upgrading-existing-deplys/upgrading-existing-deplys-setup-ds.md)
-+ Adobe Primetime TVSDK-DRM-workflow {#workflow}
++ Adobe Primetime TVSDK-DRM Workflow {#workflow}
    + [Overzicht van de TVSDK-DRM-clientworkflow](tvsdk-drm-workflow/overview.md)
    + [Opties voor primetime DRM-inhoudsbeveiliging](tvsdk-drm-workflow/content-protection-options.md)
    + [Primetime DRM op de client](tvsdk-drm-workflow/drm-on-client.md)
@@ -345,14 +346,14 @@ ht-degree: 0%
    + [Standaard AXS DRM-workflow](aaxs-drm-xkey-mgmt/aaxs-drm-standard-workflow.md)
    + [AXS DRM External CEK Workflow](aaxs-drm-xkey-mgmt/aaxs-drm-external-cek-workflow.md)
    + [De externe CEK gebruiken om licenties te zoeken en te verpakken](aaxs-drm-xkey-mgmt/aaxs-drm-using-external-cek.md)
-+ De Adobe Access-server gebruiken voor beveiligde streaming {#adobe-access-server}
-   + [Over Adobe Access Server voor beveiligde streaming](aaxs-protected-streaming/about-aaxs-protect-stream.md)
++ De Adobe Access Server gebruiken voor beveiligde streaming {#adobe-access-server}
+   + [Informatie over Adobe Access Server voor beveiligde streaming](aaxs-protected-streaming/about-aaxs-protect-stream.md)
    + [Gebruiksregels](aaxs-protected-streaming/usage-rules.md)
    + [Vereisten](aaxs-protected-streaming/requirements.md)
-   + De Adobe Access-server gebruiken voor beveiligde streaming {#deploying-aaxs-protect-stream}
-      + [Overzicht van de implementatie van de Adobe Access-server voor beveiligde streaming](aaxs-protected-streaming/deplying-aaxs-protect-stream/deplying-aaxs-protect-stream-overview.md)
+   + De Adobe Access Server implementeren voor beveiligde streaming {#deploying-aaxs-protect-stream}
+      + [Overzicht van Adobe Access Server for Protected Streaming implementeren](aaxs-protected-streaming/deplying-aaxs-protect-stream/deplying-aaxs-protect-stream-overview.md)
       + [Eigenschappen van Java-systemen](aaxs-protected-streaming/deplying-aaxs-protect-stream/java-system-properties.md)
-      + [Adobe Access-referenties](aaxs-protected-streaming/deplying-aaxs-protect-stream/aaxs-credentials.md)
+      + [Referenties van Adobe Access](aaxs-protected-streaming/deplying-aaxs-protect-stream/aaxs-credentials.md)
       + [HSM-configuratie](aaxs-protected-streaming/deplying-aaxs-protect-stream/hsm-configuration.md)
    + Configuratiebestanden van de licentieserver {#aaxs-license-server-config-files}
       + [Configuratie-mapstructuur](aaxs-protected-streaming/aaxs-license-server-config-files/aaxs-configuration-directory-structure.md)
@@ -362,8 +363,8 @@ ht-degree: 0%
    + [Aangepaste extensies voor machtigingen](aaxs-protected-streaming/custom-authorization-extensions.md)
    + Prestaties afstemmen {#performance-tuning}
       + [Globaal configuratiebestand](aaxs-protected-streaming/performance-tuning/global-configuration-file.md)
-   + Een upgrade uitvoeren van de Adobe Access-server voor beveiligde streaming {#upgrading-the-license-server}
-      + [De Adobe Access-server voor beveiligde streaming uitvoeren](aaxs-protected-streaming/upgrading-the-license-server/running-the-license-server.md)
+   + De Adobe Access Server voor beveiligde streaming upgraden {#upgrading-the-license-server}
+      + [De Adobe Access Server uitvoeren voor beveiligde streaming](aaxs-protected-streaming/upgrading-the-license-server/running-the-license-server.md)
       + [Logbestanden](aaxs-protected-streaming/upgrading-the-license-server/log-files.md)
       + [Logboekmapstructuur](aaxs-protected-streaming/upgrading-the-license-server/log-directory-structure.md)
       + [Globaal logbestand](aaxs-protected-streaming/upgrading-the-license-server/global-log-file.md)
@@ -374,16 +375,16 @@ ht-degree: 0%
       + [Het algemene configuratiebestand bijwerken](aaxs-protected-streaming/updating-configuration-files/updating-global-configuration.md)
       + [Het configuratiebestand van de huurder bijwerken](aaxs-protected-streaming/updating-configuration-files/updating-tenant-configuration.md)
    + [Inhoud verpakken](aaxs-protected-streaming/packaging-content.md)
-   + Adobe Access Server voor beveiligde streamingprogramma&#39;s {#aaxs-protected-streaming-utilities}
+   + Adobe Access Server for Protected Streaming hulpprogramma {#aaxs-protected-streaming-utilities}
       + [Configuratie-validatie](aaxs-protected-streaming/aaxs-protected-streaming-utilities/configuration-validator.md)
       + [Wachtwoordkrambler](aaxs-protected-streaming/aaxs-protected-streaming-utilities/password-scrambler.md)
       + [SWF-hash-calculator](aaxs-protected-streaming/aaxs-protected-streaming-utilities/swf-hash-calculator.md)
-+ Richtlijnen voor veilige implementatie van Adobe Access {#adobe-access-secure-deployment-guidelines}
++ Richtlijnen voor veilige Adobe Access-implementatie {#adobe-access-secure-deployment-guidelines}
    + Inleiding aan de Topologie van het Netwerk {#overview}
       + [Overzicht van netwerktopologie](aaxs-secure-deployment-guidelines/overview/network-topology.md)
       + [Netwerklaagbeveiliging](aaxs-secure-deployment-guidelines/overview/network-topology-network-layer-sec.md)
       + [Firewall-regels](aaxs-secure-deployment-guidelines/overview/network-topology-firewall-rules.md)
-      + [Netwerkprotocollen die door Adobe Access worden gebruikt](aaxs-secure-deployment-guidelines/overview/network-topology-nw-protocols.md)
+      + [De protocollen van het netwerk die door Adobe Access worden gebruikt](aaxs-secure-deployment-guidelines/overview/network-topology-nw-protocols.md)
       + [Poorten voor toepassingsservers](aaxs-secure-deployment-guidelines/overview/network-topology-ports-for-app-srvs.md)
       + [SSL configureren](aaxs-secure-deployment-guidelines/overview/network-topology-configuring-ssl.md)
    + [Specifieke beveiligingsinformatie van de leverancier](aaxs-secure-deployment-guidelines/vendor-specific-sec-info.md)
@@ -393,11 +394,11 @@ ht-degree: 0%
       + [Inhoud veilig verpakken](aaxs-secure-deployment-guidelines/pkging-and-protecting-content/pkging-and-protecting-content-secure-pkging.md)
       + [Beleid veilig opslaan](aaxs-secure-deployment-guidelines/pkging-and-protecting-content/pkging-and-protecting-content-secure-storing-policies.md)
       + [Asymmetrische sleutelversleuteling](aaxs-secure-deployment-guidelines/pkging-and-protecting-content/pkging-and-protecting-content-ake.md)
-      + [Compatibiliteit met Flash Media Rights Management Server 1.x garanderen](aaxs-secure-deployment-guidelines/pkging-and-protecting-content/pkging-and-protecting-content-ensure-compat-fmrms.md)
-   + Licenties beveiligen en afgeven {#issuing-licenses}
+      + [Compatibiliteit met Flash Media Rights Management Server 1.x waarborgen](aaxs-secure-deployment-guidelines/pkging-and-protecting-content/pkging-and-protecting-content-ensure-compat-fmrms.md)
+   + Protect en afgifte van licenties {#issuing-licenses}
       + [Lokaal gegenereerde CRL&#39;s gebruiken](aaxs-secure-deployment-guidelines/issuing-licenses/protect-license-server-consume-local-crls.md)
-      + [CRL&#39;s gebruiken die zijn gepubliceerd door Adobe](aaxs-secure-deployment-guidelines/issuing-licenses/protect-license-server-consume-crls-by-adobe.md)
-      + [CRL&#39;s genereren als aanvulling op de publicaties van Adobe](aaxs-secure-deployment-guidelines/issuing-licenses/protect-license-server-gen-crls-to-supplement-adobe.md)
+      + [CRL&#39;s gebruiken die door Adobe zijn gepubliceerd](aaxs-secure-deployment-guidelines/issuing-licenses/protect-license-server-consume-crls-by-adobe.md)
+      + [CRL’s genereren ter aanvulling van de door Adobe gepubliceerde CRL’s](aaxs-secure-deployment-guidelines/issuing-licenses/protect-license-server-gen-crls-to-supplement-adobe.md)
       + [Terugdraaidetectie](aaxs-secure-deployment-guidelines/issuing-licenses/protect-license-server-rollback-detection.md)
       + [Aantal machines bij afgifte van vergunningen](aaxs-secure-deployment-guidelines/issuing-licenses/protect-license-server-rollback-detection-machine-count.md)
       + [Replay-beveiliging](aaxs-secure-deployment-guidelines/issuing-licenses/protect-license-server-replay-detection.md)
@@ -406,25 +407,25 @@ ht-degree: 0%
       + [Beleidsopties overschrijven](aaxs-secure-deployment-guidelines/issuing-licenses/protect-license-server-override-policy-options.md)
       + [Vooraf gegenereerde licenties](aaxs-secure-deployment-guidelines/issuing-licenses/pre-gen-licenses.md)
       + [Domeinen beheren](aaxs-secure-deployment-guidelines/issuing-licenses/managing-domains.md)
-+ Een overzicht van de Adobe Access SDK {#overview}
-   + [Een overzicht van de Adobe Access SDK](aaxs-sdk-overview/overview.md)
-   + [Over Adobe Access](aaxs-sdk-overview/about-adobe-access.md)
++ Een overzicht van Adobe Access SDK {#overview}
+   + [Een overzicht van Adobe Access SDK](aaxs-sdk-overview/overview.md)
+   + [Info over Adobe Access](aaxs-sdk-overview/about-adobe-access.md)
    + [Belangrijkste kenmerken](aaxs-sdk-overview/key-features.md)
    + [Terminologie en kernbegrippen](aaxs-sdk-overview/terminology-and-core-concepts.md)
    + Workflow voor distributie van inhoud {#content-distribution-workflow}
       + [Inhoud voorbereiden](aaxs-sdk-overview/content-distribution-workflow/content-preparation.md)
       + [Inhoudsverwerving](aaxs-sdk-overview/content-distribution-workflow/content-acquisition.md)
    + [Adobe Access-componenten](aaxs-sdk-overview/adobe-access-components/adobe-access-sdk.md)
-   + [Adobe Access implementeren](aaxs-sdk-overview/deploying-adobe-access/configure-adobe-access.md)
+   + [Toegang tot Adobe implementeren](aaxs-sdk-overview/deploying-adobe-access/configure-adobe-access.md)
    + Aanvullende implementatiescenario&#39;s {#additional-scenarios}
       + [UltraViolet-media en Adobe Access](aaxs-sdk-overview/deploying-adobe-access/additional-deployment-scenarios/ultra-violet-media-adobe-access.md)
       + [Adobe Pass en Adobe Access](aaxs-sdk-overview/deploying-adobe-access/additional-deployment-scenarios/adobe-pass-and-adobe-access.md)
-+ De SDK van Adobe Access gebruiken voor het beveiligen van inhoud {#using-adobe-access-sdk}
++ De SDK van Adobe Access gebruiken voor het beschermen van inhoud {#using-adobe-access-sdk}
    + [Inleiding](aaxs-protecting-content/content-introduction/content-whats-new.md)
    + [Gebruikersverificatie](aaxs-protecting-content/content-introduction/content-usage-rules/content-authentication/content-user-authentication.md)
    + [Op tijd gebaseerde regels](aaxs-protecting-content/content-introduction/content-usage-rules/content-time-based-rules/content-time-based-rules-defining.md)
    + Beperkingen van runtime en toepassing {#runtime-and-application-restrictions}
-      + [Lijst van gewenste personen voor Adobe® Primetime-toepassingen is toegestaan om beveiligde inhoud af te spelen](aaxs-protecting-content/content-introduction/content-usage-rules/content-runtime-application-restrictions/content-allowlist-air.md)
+      + [Lijst van gewenste personen voor Adobe® Primetime toepassingen toegestaan om beveiligde inhoud af te spelen](aaxs-protecting-content/content-introduction/content-usage-rules/content-runtime-application-restrictions/content-allowlist-air.md)
       + [Lijst van gewenste personen voor SWF-bestanden van Adobe® Flash® Player die beveiligde inhoud mogen afspelen](aaxs-protecting-content/content-introduction/content-usage-rules/content-runtime-application-restrictions/content-allowlist-flash.md)
       + [Lijst van afgewezen personen van DRM-clients die geen toegang hebben tot beveiligde inhoud](aaxs-protecting-content/content-introduction/content-usage-rules/content-runtime-application-restrictions/content-blocklist-drm-clients.md)
       + [Lijst van afgewezen personen van toepassingsruntimes die toegang hebben tot beveiligde inhoud](aaxs-protecting-content/content-introduction/content-usage-rules/content-runtime-application-restrictions/content-blocklist-app-runtimes.md)
@@ -437,7 +438,7 @@ ht-degree: 0%
       + [Externe en lokale iOS-sleutellevering](aaxs-protecting-content/content-introduction/content-usage-rules/content-other-policy-options/content-remote-key-delivery.md)
       + [Domeinregistratie apparaatgroep](aaxs-protecting-content/content-introduction/content-usage-rules/content-domain-registration.md)
    + [Besturingselementen voor uitvoerbeveiliging](aaxs-protecting-content/content-introduction/content-usage-rules/output-protection/output-protection-controls.md)
-   + Verpakkingsopties {#packaging-option}
+   + Media verpakken {#packaging-option}
       + [Toetsrotatie](aaxs-protecting-content/content-introduction/packaging-options/content-key-rotation.md)
       + [Out-of-band licenties](aaxs-protecting-content/content-introduction/packaging-options/content-out-of-band-licenses.md)
       + [Tracks versleutelen](aaxs-protecting-content/content-introduction/packaging-options/content-encrypting-tracks.md)
@@ -448,7 +449,7 @@ ht-degree: 0%
       + [Meerdere beleidsregels](aaxs-protecting-content/content-introduction/packaging-options/content-multiple-policies.md)
    + De SDK instellen {#setting-up-the-sdk}
       + [De ontwikkelomgeving instellen](aaxs-protecting-content/content-setting-up-the-sdk/content-setting-up-the-dev-env.md)
-      + [Adobe Access-referenties](aaxs-protecting-content/content-setting-up-the-sdk/content-aaxs-credentials.md)
+      + [Referenties van Adobe Access](aaxs-protecting-content/content-setting-up-the-sdk/content-aaxs-credentials.md)
       + [Certificaten aanvragen](aaxs-protecting-content/content-setting-up-the-sdk/content-requesting-certs.md)
       + [Referenties opslaan](aaxs-protecting-content/content-setting-up-the-sdk/content-storing-credentials.md)
    + Werken met beleid {#working-with-policies}
@@ -469,8 +470,8 @@ ht-degree: 0%
    + De licentieserver implementeren {#implementing-license-server}
       + [De licentieserver implementeren](aaxs-protecting-content/content-implementing-the-license-server/content-implementing-license-server-overview.md)
       + [Implementatieopties voor licentieservers](aaxs-protecting-content/content-implementing-the-license-server/content-license-server-deployment-options.md)
-   + Adobe Access-verzoeken verwerken {#processing-adobe-access-requests}
-      + [Adobe Access-verzoeken verwerken](aaxs-protecting-content/content-implementing-the-license-server/content-processing-aaxs-requests/content-processing-aaxs-requests-overview.md)
+   + Bezig met verwerken Adobe Access-aanvragen {#processing-adobe-access-requests}
+      + [Bezig met verwerken Adobe Access-aanvragen](aaxs-protecting-content/content-implementing-the-license-server/content-processing-aaxs-requests/content-processing-aaxs-requests-overview.md)
       + [Apparaatid&#39;s gebruiken](aaxs-protecting-content/content-implementing-the-license-server/content-processing-aaxs-requests/content-using-machine-ids.md)
       + [Gebruikersverificatie](aaxs-protecting-content/content-implementing-the-license-server/content-processing-aaxs-requests/content-licenses-user-authentication.md)
       + [Replay-beveiliging](aaxs-protecting-content/content-implementing-the-license-server/content-processing-aaxs-requests/content-replay-protection.md)
@@ -488,7 +489,7 @@ ht-degree: 0%
       + [Licentieketens](aaxs-protecting-content/content-implementing-the-license-server/content-handling-license-reqs/content-license-chaining.md)
       + [Enhanced License Chaining](aaxs-protecting-content/content-implementing-the-license-server/content-handling-license-reqs/content-gen-enhanced-license-chaining.md)
       + [Domeingebonden licenties afgeven](aaxs-protecting-content/content-implementing-the-license-server/content-handling-license-reqs/content-domian-bound-licenses.md)
-      + [Licenties voor levering via externe sleutel aan iOS-clients afgeven (hiervoor is Adobe Primetime vereist)](aaxs-protecting-content/content-implementing-the-license-server/content-handling-license-reqs/content-issuing-licenses-remote-ios.md)
+      + [Licenties voor levering via externe sleutel aan iOS-clients afgeven (vereist Adobe Primetime)](aaxs-protecting-content/content-implementing-the-license-server/content-handling-license-reqs/content-issuing-licenses-remote-ios.md)
       + [Minimale clientversie](aaxs-protecting-content/content-implementing-the-license-server/content-handling-license-reqs/content-minimum-client-version.md)
       + [Voorvertoning van licentie](aaxs-protecting-content/content-implementing-the-license-server/content-handling-license-reqs/content-license-preview.md)
       + Licenties op basis van identiteit {#licenses}
@@ -507,10 +508,10 @@ ht-degree: 0%
       + [Referenties van DRM-client en runtime intrekken](aaxs-protecting-content/content-revoking-client-creds/content-revoking-drm-client-and-runtime-creds.md)
       + [Machinegegevens intrekken](aaxs-protecting-content/content-revoking-client-creds/content-revoking-machine-creds.md)
    + [Videospelers maken](aaxs-protecting-content/content-creating-video-players.md)
-+ Implementaties van Adobe Access-naslagwerken {#reference-implementation}
++ Implementatie van Adobe Access-naslagwerken {#reference-implementation}
    + [Overzicht - De verwijzingsimplementaties gebruiken](aaxs-reference-implementations/overview.md)
    + [Opdrachtregelprogramma&#39;s voor het verpakken van inhoud en het maken van intrekkingslijsten ](aaxs-reference-implementations/command-line-tools/aaxs-ref-impl-command-line-overview.md)
-   + Beleidsbeheer {#policy-manager}
+   + Licentiebeheer {#policy-manager}
       + [Beleidsbeheer gebruiken](aaxs-reference-implementations/command-line-tools/policy-manager/using-aaxs-policy-manager.md)
       + [Eigenschappen van configuratiebestand](aaxs-reference-implementations/command-line-tools/policy-manager/config-file-properties.md)
       + [Gebruik van opdrachtregels](aaxs-reference-implementations/command-line-tools/policy-manager/command-line-usage.md)
@@ -563,15 +564,15 @@ ht-degree: 0%
       + [Overzicht van domeinregistratie implementeren](aaxs-reference-implementations/impl-domain-registration/impl-domain-registration.md)
       + [Identiteitsgebaseerde domeinen](aaxs-reference-implementations/impl-domain-registration/impl-domain-registration-id-based-domains.md)
       + [Anonieme domeinen](aaxs-reference-implementations/impl-domain-registration/impl-domain-registration-anonymous-domains.md)
-   + [Migreren van FMRMS 1.0 of 1.5 naar Adobe Access 2.0 en hoger](aaxs-reference-implementations/license-server-migrating-fmrms-aaxs.md)
+   + [Migratie van FMRMS 1.0 of 1.5 naar Adobe Access 2.0 en hoger](aaxs-reference-implementations/license-server-migrating-fmrms-aaxs.md)
    + [Bestaande implementaties upgraden](aaxs-reference-implementations/license-server-upgrading-existing-deplys.md)
    + [Een domeinserver instellen](aaxs-reference-implementations/license-server-upgrading-existing-deplys-setup-ds.md)
-   + Flash Access Manager AIR-toepassingsgebruik {#flash-access-manager-air-app-usage}
+   + Gebruik van Flash Access Manager AIR-toepassingen {#flash-access-manager-air-app-usage}
       + Flash Access Manager-componenten {#flash-manager-components}
          + [Packager Server en AIR Application samenstellen](aaxs-reference-implementations/fam-air-app-usage/build-fam-air-app-usage/fam-air-app-usage-overview.md)
          + [Packager Server samenstellen](aaxs-reference-implementations/fam-air-app-usage/build-fam-air-app-usage/fam-air-app-usage-bld-pkg-srv.md)
-         + [De Flash Access Manager AIR-toepassing samenstellen](aaxs-reference-implementations/fam-air-app-usage/build-fam-air-app-usage/fam-air-app-usage-bld-fam-air-app.md)
-      + [Eerste installatie van Flash Access Manager](aaxs-reference-implementations/fam-air-app-usage/initial-fam-setup.md)
+         + [De AIR-toepassing voor Flash Access Manager maken](aaxs-reference-implementations/fam-air-app-usage/build-fam-air-app-usage/fam-air-app-usage-bld-fam-air-app.md)
+      + [Eerste configuratie van Flash Access Manager](aaxs-reference-implementations/fam-air-app-usage/initial-fam-setup.md)
       + Voorkeuren instellen {#setting-preferences}
          + [Overzicht van voorkeuren instellen](aaxs-reference-implementations/fam-air-app-usage/initial-fam-setup-set-prefs/initial-fam-setup-set-prefs-overview.md)
          + [Voorkeuren voor Packager](aaxs-reference-implementations/fam-air-app-usage/initial-fam-setup-set-prefs/initial-fam-setup-pkg-prefs.md)
