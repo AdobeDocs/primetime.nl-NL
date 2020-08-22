@@ -5,7 +5,10 @@ seo-title: Afspelen van media en failover
 title: Afspelen van media en failover
 uuid: e0072eeb-8ad1-436f-bf4a-fee6885a25bd
 translation-type: tm+mt
-source-git-commit: bc35da8b258056809ceaf18e33bed631047bc81b
+source-git-commit: 23a48208ac1d3625ae7d925ab6bfba8f2a980766
+workflow-type: tm+mt
+source-wordcount: '649'
+ht-degree: 0%
 
 ---
 
@@ -45,9 +48,12 @@ Wanneer TVSDK geen alternatief segment kan verkrijgen, wordt een `CONTENT_ERROR`
 
 Als de video-engine continu geen segmenten kan ophalen, beperkt deze de doorlopende segmentoverslaan tot 5, waarna het afspelen wordt gestopt en geeft TVSDK een back-up `NATIVE_ERROR` met code 5.
 
->[!Rbeperkingen]
+>[!NOTE]
+>
+>**Beperkingen**
 >
 >Hier volgen enkele beperkingen waarmee u rekening moet houden:
+>
 >* De adaptieve parameters van de beetjetarief (ABR) worden niet in overweging genomen wanneer een failover voorkomt.
 >
 >  
