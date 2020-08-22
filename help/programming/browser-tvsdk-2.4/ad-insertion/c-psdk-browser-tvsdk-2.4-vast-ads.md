@@ -5,7 +5,10 @@ seo-title: VAST-advertenties
 title: VAST-advertenties
 uuid: 052dae0c-2425-456c-aebe-531f68bb5aa8
 translation-type: tm+mt
-source-git-commit: 040655d8ba5f91c98ed0584c08db226ffe1e0f4e
+source-git-commit: 23a48208ac1d3625ae7d925ab6bfba8f2a980766
+workflow-type: tm+mt
+source-wordcount: '368'
+ht-degree: 0%
 
 ---
 
@@ -56,14 +59,18 @@ Hier volgt meer informatie over de advertentietypen:
       * `MediaFiles`
 
       * `MediaFile`
-         [!TIP]
-In dit element worden de kenmerken `id`, `bitrate`, `delivery`, `width`, `height`, `scalable`, `maintainAspectRatio`, `apiFramework`, en `type` ondersteund.
+
+         >[!TIP]
+         >
+         >In dit element worden de kenmerken `id`, `bitrate`, `delivery`, `width`, `height`, `scalable`, `maintainAspectRatio`, `apiFramework`, en `type` ondersteund.
 
 * **Niet-lineaire advertenties** De volgende elementen worden ondersteund:
 
    * `Non-linear`
-      [!TIP]
-In dit element worden de kenmerken `id`, `width`, `height`, `apiFramework`, `expandedWidth`, `expandedHeight`, `scalable`, `maintainAspectRatio`, en `minSuggestedDuration` ondersteund.
+
+      >[!TIP]
+      >
+      >In dit element worden de kenmerken `id`, `width`, `height`, `apiFramework`, `expandedWidth`, `expandedHeight`, `scalable`, `maintainAspectRatio`, en `minSuggestedDuration` ondersteund.
 
       * `StaticResource`
       * `IFrameResource`
@@ -74,8 +81,10 @@ In dit element worden de kenmerken `id`, `width`, `height`, `apiFramework`, `exp
 * **Extra advertenties** De volgende elementen worden ondersteund:
 
    * `Companion`
-      [!TIP]
-In dit element worden de `id`, `width`, `height`, `apiFramework`, `expandedWidth`, en `expandedHeight` attributen gesteund.
+
+      >[!TIP]
+      >
+      >In dit element worden de `id`, `width`, `height`, `apiFramework`, `expandedWidth`, en `expandedHeight` attributen gesteund.
 
       * `StaticResource`
       * `IFrameResource`
@@ -84,7 +93,8 @@ In dit element worden de `id`, `width`, `height`, `apiFramework`, `expandedWidth
 
 ## Extensies {#section_17401C75F419453BAE83637EEB6E1E60}
 
-[!TIP]
-Alleen Auditegerichte extensies worden ondersteund.
+>[!TIP]
+>
+>Alleen Auditegerichte extensies worden ondersteund.
 
 * `Extension`
