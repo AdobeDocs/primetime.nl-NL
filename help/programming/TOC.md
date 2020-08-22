@@ -3,8 +3,9 @@ cloud: experience-cloud
 product: adobe primetime
 audience: end-user
 user-guide-title: Help bij programmeren bij primetime
+user-guide-description: Allows you to learn to develop applications and video players using Java on Android devices and Objective-C on iOS devices.
 translation-type: tm+mt
-source-git-commit: 9c6a6f0b5ecff78796e37daf9d7bdb9fa686ee0c
+source-git-commit: 23a48208ac1d3625ae7d925ab6bfba8f2a980766
 workflow-type: tm+mt
 source-wordcount: '4307'
 ht-degree: 0%
@@ -28,7 +29,7 @@ ht-degree: 0%
          + [Levenscyclus en status van het MediaPlayer-object](tvsdk-3x-android-prog/android-3x-content-playback-options-android2/mediaplayerobjects-working-with/android-3x-mediaplayer-object-lifecycle-states.md)
          + [Methoden van MediaPlayerItem voor toegang tot MediaResource-informatie](tvsdk-3x-android-prog/android-3x-content-playback-options-android2/mediaplayerobjects-working-with/android-3x-mediaplayeritem-accessing-mediaresource.md)
          + [Een MediaPlayer-instantie opnieuw gebruiken of verwijderen](tvsdk-3x-android-prog/android-3x-content-playback-options-android2/mediaplayerobjects-working-with/android-3x-mediaplayer-reuse-or-remove.md)
-         + [De afspeeltijdlijn controleren](tvsdk-3x-android-prog/android-3x-content-playback-options-android2/mediaplayerobjects-working-with/android-3x-timeline-inspect-playback.md)
+         + [De afspeeltijdlijn Inspect](tvsdk-3x-android-prog/android-3x-content-playback-options-android2/mediaplayerobjects-working-with/android-3x-timeline-inspect-playback.md)
          + [MediaPlayer onderbreken en herstellen](tvsdk-3x-android-prog/android-3x-content-playback-options-android2/mediaplayerobjects-working-with/android-3x-suspend-and-restore.md)
       + Luisteren naar gebeurtenissen in Primetime Player {#listen-primetime-player-events}
          + [Overzicht](tvsdk-3x-android-prog/android-3x-content-playback-options-android2/events-listen-for/android-3x-events-listen-for.md)
@@ -67,7 +68,7 @@ ht-degree: 0%
          + [Alternatieve audiotracks openen](tvsdk-3x-android-prog/android-3x-content-playback-options-android2/alternate-audio/android-3x-alternate-audio-implement.md)
       + [Achtergrondaudio inschakelen](tvsdk-3x-android-prog/android-3x-content-playback-options-android2/android-3x-background-audio.md)
       + [ID3-tags](tvsdk-3x-android-prog/android-3x-content-playback-options-android2/android-3x-id3-metadata-retrieve.md)
-      + Bufferen {#buffering}
+      + Prioriteit {#buffering}
          + [Overzicht](tvsdk-3x-android-prog/android-3x-content-playback-options-android2/buffering-configuration/android-3x-buffering-configuration.md)
          + [Direct aan](tvsdk-3x-android-prog/android-3x-content-playback-options-android2/buffering-configuration/android-3x-instant-on.md)
       + [Parallelle downloads](tvsdk-3x-android-prog/android-3x-content-playback-options-android2/android-3x-parallel-downloads.md)
@@ -102,7 +103,7 @@ ht-degree: 0%
       + Just-in-Time en oplossing {#just-in-time}
          + [Overzicht](tvsdk-3x-android-prog/android-3x-advertising/ad-insertion/c-lazy-ad-resolving/c-lazy-ad-resolving.md)
          + [Lozy en oplossen inschakelen](tvsdk-3x-android-prog/android-3x-advertising/ad-insertion/c-lazy-ad-resolving/t-enable-lazy-ad-resolving.md)
-         + [Opwaarderen vanaf 2.7.x Lazy en oplossen naar 3.x Lazy Ad Resolving (API/workflowwijzigingen)](tvsdk-3x-android-prog/android-3x-advertising/ad-insertion/t-upgrade-to-3x.md)
+         + [Opwaarderen vanaf 2.7.x Lazy en oplossen naar 3.x Lazy Ad Resolving (API/Workflow-wijzigingen)](tvsdk-3x-android-prog/android-3x-advertising/ad-insertion/t-upgrade-to-3x.md)
       + Metagegevens voor invoeging toevoegen {#ad-insertion-metadata}
          + [Overzicht](tvsdk-3x-android-prog/android-3x-advertising/ad-insertion/ad-insertion-metadata/android-3x-ad-insertion-metadata.md)
          + [Metagegevens instellen en invoegen](tvsdk-3x-android-prog/android-3x-advertising/ad-insertion/ad-insertion-metadata/android-3x-ad-insertion-metadata-set-up.md)
@@ -161,7 +162,7 @@ ht-degree: 0%
          + [Overzicht](tvsdk-3x-android-prog/android-3x-advertising/ad-insertion/android-updating-rules/android-3x-updating-rules.md)
          + [Prioriteitsregels](tvsdk-3x-android-prog/android-3x-advertising/ad-insertion/android-updating-rules/android-3x-priority-rule.md)
          + [Regels normaliseren](tvsdk-3x-android-prog/android-3x-advertising/ad-insertion/android-updating-rules/android-3x-normalize-rule.md)
-         + [Voorbeelden van regels voor creatieve selectie](tvsdk-3x-android-prog/android-3x-advertising/ad-insertion/android-updating-rules/android-3x-sample-rule-files.md)
+         + [Voorbeelden van creatieve selectieregels](tvsdk-3x-android-prog/android-3x-advertising/ad-insertion/android-updating-rules/android-3x-sample-rule-files.md)
          + [Creatieve selectieregels toepassen](tvsdk-3x-android-prog/android-3x-advertising/ad-insertion/android-updating-rules/android-3x-how-tvsdk-applies-csr.md)
    + Inhoudsbescherming {#content-protection}
       + [Widevine DRM](tvsdk-3x-android-prog/android-3x-content-security/android-3x-drm-widevine.md)
@@ -180,7 +181,7 @@ ht-degree: 0%
       + [Meldingscodes](tvsdk-3x-android-prog/android-3x-events-notifications/notification-codes/android-3x-notification-codes.md)
       + [PSDK-foutcodes](tvsdk-3x-android-prog/android-3x-events-notifications/notification-codes/android-3x-error-codes.md)
       + [Details voor de melding NATIVE_ERROR](tvsdk-3x-android-prog/android-3x-events-notifications/notification-codes/android-3x-native-error-summary.md)
-      + [Overzicht van gebeurtenissen in de primetime-speler](tvsdk-3x-android-prog/android-3x-events-notifications/events-summary/android-3x-events-summary.md)
+      + [Overzicht van gebeurtenissen in de primaire speler](tvsdk-3x-android-prog/android-3x-events-notifications/events-summary/android-3x-events-summary.md)
    + Facturering {#billing}
       + [Factureringscijfers](tvsdk-3x-android-prog/android-3x-billing-title/billing/android-3x-billing.md)
       + [Factureringsmetriek configureren](tvsdk-3x-android-prog/android-3x-billing-title/billing/android-3x-billing-config.md)
@@ -199,7 +200,7 @@ ht-degree: 0%
       + [Wacht op een geldige status](tvsdk-3x-ios-prog/ios-3x-content-playback-options/ios-3x-create-a-video-player/ios-3x-configure-ui/ios-3x-ui-state-prepared-wait-for.md)
       + [Een afspeel-/pauzeknop implementeren](tvsdk-3x-ios-prog/ios-3x-content-playback-options/ios-3x-create-a-video-player/ios-3x-configure-ui/ios-3x-implement-pause-play.md)
       + [De duur van de video weergeven](tvsdk-3x-ios-prog/ios-3x-content-playback-options/ios-3x-create-a-video-player/ios-3x-configure-ui/ios-3x-display-video-duration.md)
-      + [Huidige tijd en resterende tijd weergeven](tvsdk-3x-ios-prog/ios-3x-content-playback-options/ios-3x-create-a-video-player/ios-3x-configure-ui/ios-3x-display-current-remaining-time.md)
+      + [De huidige tijd en de resterende tijd weergeven](tvsdk-3x-ios-prog/ios-3x-content-playback-options/ios-3x-create-a-video-player/ios-3x-configure-ui/ios-3x-display-current-remaining-time.md)
       + [Een zoekbalk weergeven met de huidige positie van de afspeeltijd](tvsdk-3x-ios-prog/ios-3x-content-playback-options/ios-3x-create-a-video-player/ios-3x-configure-ui/ios-3x-display-seek-scrub-bar.md)
       + [Adaptieve bitsnelheden (ABR) voor videokwaliteit](tvsdk-3x-ios-prog/ios-3x-content-playback-options/ios-3x-create-a-video-player/ios-3x-configure-ui/ios-3x-abr-control-quality.md)
    + [Kwaliteit van de dienststatistieken](tvsdk-3x-ios-prog/ios-3x-qos-statistics-monitor.md)
@@ -219,7 +220,7 @@ ht-degree: 0%
       + [Toevoegingsmodus](tvsdk-3x-ios-prog/ios-3x-advertising/ios-3x-primetime-ad-serving-metadata/ios-3x-ad-signaling-mode.md)
    + [Companion banneradvertenties](tvsdk-3x-ios-prog/ios-3x-advertising/ios-3x-companion-banner-ads/ios-3x-companion-banner-ads.md)
    + [Klikbare advertenties](tvsdk-3x-ios-prog/ios-3x-advertising/ios-3x-clickable-ads.md)
-   + [Niet-compatibele advertenties opnieuw verpakken met Adobe Creative Repackaging Service](tvsdk-3x-ios-prog/ios-3x-advertising/ios-3x-ad-transcoding.md)
+   + [Niet-compatibele advertenties opnieuw verpakken met de Adobe Creative Repackaging Service](tvsdk-3x-ios-prog/ios-3x-advertising/ios-3x-ad-transcoding.md)
    + [Metingen toevoegen van mat](tvsdk-3x-ios-prog/ios-3x-advertising/ios-3x-ad-measurements-from-moat.md)
    + [VPAID 2.0-ondersteuning](tvsdk-3x-ios-prog/ios-3x-advertising/ios-3x-vpaid-2.0-ads.md)
    + [Extra fallback voor VAST- en VMAP-advertenties](tvsdk-3x-ios-prog/ios-3x-advertising/ios-3x-ad-fallback.md)
@@ -237,7 +238,7 @@ ht-degree: 0%
       + [Overzicht](tvsdk-3x-ios-prog/ios-3x-advertising/ios-3x-updating-rules/ios-3x-updating-rules.md)
       + [Prioriteitsregels](tvsdk-3x-ios-prog/ios-3x-advertising/ios-3x-updating-rules/ios-3x-priority-rule.md)
       + [Regels normaliseren](tvsdk-3x-ios-prog/ios-3x-advertising/ios-3x-updating-rules/ios-3x-normalize-rule.md)
-      + [Voorbeelden van regels voor creatieve selectie](tvsdk-3x-ios-prog/ios-3x-advertising/ios-3x-updating-rules/ios-3x-sample-rule-files.md)
+      + [Voorbeelden van creatieve selectieregels](tvsdk-3x-ios-prog/ios-3x-advertising/ios-3x-updating-rules/ios-3x-sample-rule-files.md)
       + [Creatieve selectieregels toepassen](tvsdk-3x-ios-prog/ios-3x-advertising/ios-3x-updating-rules/ios-3x-how-tvsdk-applies-csr.md)
    + [Vertogende segmentstromen](tvsdk-3x-ios-prog/ios-3x-tokenized-segment-streams.md)
    + Aangepaste opportuniteitsdetectors en contentoplossers {#customize-content-resolvers}
@@ -269,7 +270,7 @@ ht-degree: 0%
    + Inhoudsbescherming {#content-protection}
       + [Overzicht van de primaire DRM-interface](tvsdk-3x-ios-prog/ios-3x-drm-content-security/ios-3x-drm-interface.md)
       + [Apple FairPlay in TVSDK-toepassingen](tvsdk-3x-ios-prog/ios-3x-drm-content-security/ios-3x-apple-fairplay-tvsdk.md)
-      + [Lijst met uw iOS-toepassing toestaan](tvsdk-3x-ios-prog/ios-3x-drm-content-security/ios-3x-allowlist-your-ios-application.md)
+      + [De iOS-toepassing lijsten van gewenste personen](tvsdk-3x-ios-prog/ios-3x-drm-content-security/ios-3x-allowlist-your-ios-application.md)
    + [Meldingen voor spelerstatus, activiteit, fouten en logbestanden](tvsdk-3x-ios-prog/ios-3x-notification-system/ios-3x-notification-content.md)
    + [Aangepaste logboekregistratie](tvsdk-3x-ios-prog/ios-3x-customized-logging/c-ios-customized-logging/c-ios-customized-logging.md)
    + [Failover](tvsdk-3x-ios-prog/ios-3x-understanding-failover.md)
@@ -282,7 +283,7 @@ ht-degree: 0%
       + [QoS-klassen](tvsdk-3x-ios-prog/ios-3x-primetime-player-class-summary/ios-3x-classes-qos.md)
       + [Tijdlijnklassen](tvsdk-3x-ios-prog/ios-3x-primetime-player-class-summary/ios-3x-classes-timeline.md)
       + [Tijdlijnadvertentieklassen](tvsdk-3x-ios-prog/ios-3x-primetime-player-class-summary/ios-3x-classes-timeline-advertising.md)
-      + [Digital Rights Management-klassen](tvsdk-3x-ios-prog/ios-3x-primetime-player-class-summary/ios-3x-classes-digital-rights-management-ios.md)
+      + [Digital Rights Management, klassen](tvsdk-3x-ios-prog/ios-3x-primetime-player-class-summary/ios-3x-classes-digital-rights-management-ios.md)
       + [Video Analytics-klassen](tvsdk-3x-ios-prog/ios-3x-primetime-player-class-summary/ios-3x-classes-video-analytics.md)
    + Meldingscodes {#notification-codes}
       + [TVSDK-meldingssysteem](tvsdk-3x-ios-prog/ios-3x-notification-codes/c-ios-notification-codes/c-ios-notification-codes.md)
@@ -303,7 +304,7 @@ ht-degree: 0%
          + [Levenscyclus en status van het MediaPlayer-object](tvsdk-2.7-for-android/content-playback-options/mediaplayerobjects-working-with/c-psdk-android-2.7-mediaplayer-object-lifecycle-states.md)
          + [Methoden van MediaPlayerItem voor toegang tot MediaResource-informatie](tvsdk-2.7-for-android/content-playback-options/mediaplayerobjects-working-with/r-psdk-android-2.7-mediaplayeritem-methods-for-accessing-mediaresource.md)
          + [Een MediaPlayer-instantie opnieuw gebruiken of verwijderen](tvsdk-2.7-for-android/content-playback-options/mediaplayerobjects-working-with/c-psdk-android-2.7-mediaplayer-reuse-or-remove.md)
-         + [De afspeeltijdlijn controleren](tvsdk-2.7-for-android/content-playback-options/mediaplayerobjects-working-with/t-psdk-android-2.7-timeline-inspect-playback.md)
+         + [De afspeeltijdlijn Inspect](tvsdk-2.7-for-android/content-playback-options/mediaplayerobjects-working-with/t-psdk-android-2.7-timeline-inspect-playback.md)
          + [MediaPlayer onderbreken en herstellen](tvsdk-2.7-for-android/content-playback-options/mediaplayerobjects-working-with/c-psdk-android-2.7-suspend-and-restore.md)
       + Luisteren naar gebeurtenissen in Primetime Player   {#listen-primetime-player-events}
          + [Overzicht](tvsdk-2.7-for-android/content-playback-options/c-psdk-android-2.7-events-listen-for.md)
@@ -389,7 +390,7 @@ ht-degree: 0%
          + [Reageren op klikken op advertenties](tvsdk-2.7-for-android/ad-insertion/clickable-ads/t-psdk-android-2.7-respond-to-ad-clicks.md)
          + [Scheid het klikbare ad proces](tvsdk-2.7-for-android/ad-insertion/clickable-ads/t-psdk-android-2.7-separate-clickable-ad-process.md)
          + [Afspelen onderbreken en hervatten](tvsdk-2.7-for-android/ad-insertion/clickable-ads/t-psdk-android-2.7-pausing-resuming-playback.md)
-      + [Niet-compatibele advertenties opnieuw verpakken met Adobe Creative Repackaging Service (CRS)](tvsdk-2.7-for-android/ad-insertion/ad-transcoding/c-psdk-android-2.7-ad-transcoding.md)
+      + [Niet-compatibele advertenties opnieuw verpakken met gebruik van de Adobe Creative Repackaging Service (CRS)](tvsdk-2.7-for-android/ad-insertion/ad-transcoding/c-psdk-android-2.7-ad-transcoding.md)
       + Extra fallback voor VAST- en VMAP-advertenties {#ad-fallback}
          + [Overzicht](tvsdk-2.7-for-android/ad-insertion/ad-fallback/c-psdk-android-2.7-ad-fallback.md)
          + [Definieer de fallback en het gedrag voor inline VMAP-advertenties](tvsdk-2.7-for-android/ad-insertion/ad-fallback/t-psdk-android-2.7-ad-fallback-set-up.md)
@@ -435,7 +436,7 @@ ht-degree: 0%
          + [Overzicht](tvsdk-2.7-for-android/ad-insertion/c-psdk-android-2.7-updating-rules/c-psdk-android-2.7-updating-rules.md)
          + [Prioriteitsregels](tvsdk-2.7-for-android/ad-insertion/c-psdk-android-2.7-updating-rules/r-psdk-android-2.7-priority-rule.md)
          + [Regels normaliseren](tvsdk-2.7-for-android/ad-insertion/c-psdk-android-2.7-updating-rules/r-psdk-android-2.7-normalize-rule.md)
-         + [Voorbeelden van regels voor creatieve selectie](tvsdk-2.7-for-android/ad-insertion/c-psdk-android-2.7-updating-rules/r-psdk-android-2.7-sample-rule-files.md)
+         + [Voorbeelden van creatieve selectieregels](tvsdk-2.7-for-android/ad-insertion/c-psdk-android-2.7-updating-rules/r-psdk-android-2.7-sample-rule-files.md)
          + [Creatieve selectieregels toepassen](tvsdk-2.7-for-android/ad-insertion/c-psdk-android-2.7-updating-rules/c-psdk-android-2.7-how-tvsdk-applies-csr.md)
    + Inhoudsbescherming {#content-protection}
       + [Overzicht](tvsdk-2.7-for-android/drm-content-security/c-psdk-android-2.7-drm-content-security.md)
@@ -455,7 +456,7 @@ ht-degree: 0%
       + Meldingscodes {#notification-codes}
          + [Overzicht](tvsdk-2.7-for-android/events-and-notifications/notification-codes/c-psdk-android-2.7-notification-codes.md)
          + [Details voor de melding NATIVE_ERROR](tvsdk-2.7-for-android/events-and-notifications/notification-codes/c-psdk-android-2.7-native-error-summary.md)
-      + [Overzicht van gebeurtenissen in de primetime-speler](tvsdk-2.7-for-android/events-and-notifications/events-summary/c-psdk-android-2.7-events-summary.md)
+      + [Overzicht van gebeurtenissen in de primaire speler](tvsdk-2.7-for-android/events-and-notifications/events-summary/c-psdk-android-2.7-events-summary.md)
       + Factureringscijfers {#billing-metrics}
          + [Overzicht](tvsdk-2.7-for-android/billing/c-psdk-android-2.7-billing.md)
          + [Factureringsmetriek configureren](tvsdk-2.7-for-android/billing/t-psdk-android-2.7-billing-config.md)
@@ -502,7 +503,7 @@ ht-degree: 0%
          + [Levenscyclus van MediaPlayer-objecten](tvsdk-1.4-for-android/mediaplayerobjects-working-with/android-1.4-mediaplayer-object-lifecycle-states.md)
          + [Methoden van MediaPlayer voor toegang tot MediaResource-informatie](tvsdk-1.4-for-android/mediaplayerobjects-working-with/android-1.4-mediaplayer-mediaresource.md)
          + [Een MediaPlayer-instantie opnieuw instellen, opnieuw gebruiken of verwijderen](tvsdk-1.4-for-android/mediaplayerobjects-working-with/mediaplayer-reuse-or-remove/android-1.4-mediaplayer-reset-reuse-instance.md)
-         + [De afspeeltijdlijn controleren](tvsdk-1.4-for-android/mediaplayerobjects-working-with/android-1.4-timeline-inspect-playback.md)
+         + [De afspeeltijdlijn Inspect](tvsdk-1.4-for-android/mediaplayerobjects-working-with/android-1.4-timeline-inspect-playback.md)
       + [ID3-tags](tvsdk-1.4-for-android/notification-system/android-1.4-id3-metadata-retrieve.md)
       + [Bufferen](tvsdk-1.4-for-android/buffering-configuration/android-1.4-buffering-times-set.md)
       + [Direct aan](tvsdk-1.4-for-android/buffering-configuration/instant-on/android-1.4-instant-on.md)
@@ -537,7 +538,7 @@ ht-degree: 0%
          + [Reageren op klikken op advertenties](tvsdk-1.4-for-android/ad-insertion/clickable-ads/android-1.4-respond-to-ad-clicks.md)
          + [Scheid het klikbare ad proces](tvsdk-1.4-for-android/ad-insertion/clickable-ads/android-1.4-separate-clickable-ad-process.md)
          + [Afspelen onderbreken en hervatten](tvsdk-1.4-for-android/ad-insertion/clickable-ads/android-1.4-pausing-resuming-playback.md)
-      + [Niet-compatibele advertenties opnieuw verpakken met Adobe Creative Repackaging Service](tvsdk-1.4-for-android/ad-insertion/ad-transcoding/android-1.4-ad-transcoding.md)
+      + [Niet-compatibele advertenties opnieuw verpakken met de Adobe Creative Repackaging Service](tvsdk-1.4-for-android/ad-insertion/ad-transcoding/android-1.4-ad-transcoding.md)
       + [Extra fallback voor VAST- en VMAP-advertenties](tvsdk-1.4-for-android/ad-insertion/ad-fallback/android-1.4-ad-fallback.md)
       + [Metingen toevoegen van mat](tvsdk-1.4-for-android/ad-insertion/android-1.4-ad-measurements-from-moat.md)
       + [VPAID 2.0-ondersteuning](tvsdk-1.4-for-android/ad-insertion/vpaid-2.0-ads/android-1.4-vpaid-2.0-ads.md)
@@ -559,9 +560,9 @@ ht-degree: 0%
          + [Afspeelgedrag bepalen voor zoeken op aangepaste advertentiemarkeringen](tvsdk-1.4-for-android/ad-insertion/ad-markers-add-custom/android-1.4-ad-markers-control-seek.md)
       + Regels voor het bijwerken en creatief selecteren {#updating-ad-rules}
          + [Overzicht](tvsdk-1.4-for-android/ad-insertion/android-1.4-updating-rules/android-1.4-updating-rules.md)
-         + [Prioriteitsregels](tvsdk-1.4-for-android/ad-insertion/android-1.4-updating-rules/android-1.4-priority-rule.md)
+         + [Maak van prioriteiten](tvsdk-1.4-for-android/ad-insertion/android-1.4-updating-rules/android-1.4-priority-rule.md)
          + [Regels normaliseren](tvsdk-1.4-for-android/ad-insertion/android-1.4-updating-rules/android-1.4-normalize-rule.md)
-         + [Voorbeelden van regels voor creatieve selectie](tvsdk-1.4-for-android/ad-insertion/android-1.4-updating-rules/android-1.4-sample-rule-files.md)
+         + [Voorbeelden van creatieve selectieregels](tvsdk-1.4-for-android/ad-insertion/android-1.4-updating-rules/android-1.4-sample-rule-files.md)
          + [Creatieve selectieregels toepassen](tvsdk-1.4-for-android/ad-insertion/android-1.4-updating-rules/android-1.4-how-tvsdk-applies-csr.md)
       + Aangepaste opportuniteitsdetectors en contentoplossers {#customize-opportunity-detectors}
          + [Opportuniteitsgeneratoren en contentoplosers](tvsdk-1.4-for-android/content-resolver/android-1.4-content-resolver-about.md)
@@ -618,7 +619,7 @@ ht-degree: 0%
          + [Adverteringsfase](tvsdk-1.4-for-android/failover-for-playback/failover-ad-insertion-for-vod/android-1.4-failover-ad-resolving-phase.md)
          + [Ad-invoegfase](tvsdk-1.4-for-android/failover-for-playback/failover-ad-insertion-for-vod/android-1.4-failover-ad-insertion-phase.md)
          + [Ad-playbackfase](tvsdk-1.4-for-android/failover-for-playback/failover-ad-insertion-for-vod/android-1.4-failover-ad-playback-phase.md)
-      + Overzicht van gebeurtenissen in de primetime-speler {#primetime-player-events-summary}
+      + Overzicht van gebeurtenissen in de primaire speler {#primetime-player-events-summary}
          + [Gebeurtenissen van Playback](tvsdk-1.4-for-android/android-1.4-events-notifications/events-summary/android-1.4-event-listener-mediaplayer-playback.md)
          + [Afspeelgebeurtenissen toevoegen](tvsdk-1.4-for-android/android-1.4-events-notifications/events-summary/android-1.4-event-listener-mediaplayer.md)
          + [QoS-gebeurtenissen](tvsdk-1.4-for-android/android-1.4-events-notifications/events-summary/android-1.4-event-listener-mediaplayer-qos.md)
@@ -673,7 +674,7 @@ ht-degree: 0%
       + [Toevoegingsmodus](tvsdk-1.4-for-ios/ad-insertion/c-psdk-ios-1.4-primetime-ad-serving-metadata/r-psdk-ios-1.4-ad-signaling-mode.md)
    + [Companion banneradvertenties](tvsdk-1.4-for-ios/ad-insertion/c-psdk-ios-1.4-companion-banner-ads/c-psdk-ios-1.4-companion-banner-ads.md)
    + [Klikbare advertenties](tvsdk-1.4-for-ios/ad-insertion/c-psdk-ios-1.4-clickable-ads.md)
-   + [Niet-compatibele advertenties opnieuw verpakken met Adobe Creative Repackaging Service](tvsdk-1.4-for-ios/ad-insertion/c-psdk-ios-1.4-ad-transcoding.md)
+   + [Niet-compatibele advertenties opnieuw verpakken met de Adobe Creative Repackaging Service](tvsdk-1.4-for-ios/ad-insertion/c-psdk-ios-1.4-ad-transcoding.md)
    + [Metingen toevoegen van mat](tvsdk-1.4-for-ios/ad-insertion/c-psdk-ios-1.4-ad-measurements-from-moat.md)
    + [VPAID 2.0-ondersteuning](tvsdk-1.4-for-ios/ad-insertion/c-psdk-ios-1.4-vpaid-2.0-ads.md)
    + [Extra fallback voor VAST- en VMAP-advertenties](tvsdk-1.4-for-ios/ad-insertion/c-psdk-ios-1.4-ad-fallback.md)
@@ -691,7 +692,7 @@ ht-degree: 0%
       + [Overzicht](tvsdk-1.4-for-ios/ad-insertion/c-psdk-ios-1.4-updating-rules/c-psdk-ios-1.4-updating-rules.md)
       + [Prioriteitsregels](tvsdk-1.4-for-ios/ad-insertion/c-psdk-ios-1.4-updating-rules/r-psdk-ios-1.4-priority-rule.md)
       + [Regels normaliseren](tvsdk-1.4-for-ios/ad-insertion/c-psdk-ios-1.4-updating-rules/r-psdk-ios-1.4-normalize-rule.md)
-      + [Voorbeelden van regels voor creatieve selectie](tvsdk-1.4-for-ios/ad-insertion/c-psdk-ios-1.4-updating-rules/r-psdk-ios-1.4-sample-rule-files.md)
+      + [Voorbeelden van creatieve selectieregels](tvsdk-1.4-for-ios/ad-insertion/c-psdk-ios-1.4-updating-rules/r-psdk-ios-1.4-sample-rule-files.md)
       + [Creatieve selectieregels toepassen](tvsdk-1.4-for-ios/ad-insertion/c-psdk-ios-1.4-updating-rules/c-psdk-ios-1.4-how-tvsdk-applies-csr.md)
    + [Vertogende segmentstromen](tvsdk-1.4-for-ios/c-psdk-ios-1.4-tokenized-segment-streams.md)
    + Aangepaste opportuniteitsdetectors en contentoplossers {#customize-opportunity-content}
@@ -723,7 +724,7 @@ ht-degree: 0%
    + Inhoudsbescherming {#content-protection}
       + [Overzicht van de primaire DRM-interface](tvsdk-1.4-for-ios/c-psdk-ios-1.4-drm-content-security/r-psdk-ios-1.4-drm-interface.md)
       + [Apple FairPlay in TVSDK-toepassingen](tvsdk-1.4-for-ios/c-psdk-ios-1.4-drm-content-security/c-psdk-ios-1.4-apple-fairplay-tvsdk/c-psdk-ios-1.4-apple-fairplay-tvsdk.md)
-      + [Lijst met uw iOS-toepassing toestaan](tvsdk-1.4-for-ios/c-psdk-ios-1.4-drm-content-security/t-psdk-ios-1.4-allowlist-your-ios-application.md)
+      + [De iOS-toepassing lijsten van gewenste personen](tvsdk-1.4-for-ios/c-psdk-ios-1.4-drm-content-security/t-psdk-ios-1.4-allowlist-your-ios-application.md)
    + [Melding van spelerstatus, activiteit, fouten en logbestanden ](tvsdk-1.4-for-ios/c-psdk-ios-1.4-notification-system/c-psdk-ios-1.4-notification-system.md)
    + [Aangepaste logboekregistratie](tvsdk-1.4-for-ios/c-psdk-ios-1.4-customized-logging/c-psdk-ios-1.4-customized-logging.md)
    + [Failover](tvsdk-1.4-for-ios/c-psdk-ios-1.4-understanding-failover.md)
@@ -736,7 +737,7 @@ ht-degree: 0%
       + [QoS-klassen](tvsdk-1.4-for-ios/c-psdk-ios-1.4-primetime-player-class-summary/r-psdk-ios-1.4-classes-qos.md)
       + [Tijdlijnklassen](tvsdk-1.4-for-ios/c-psdk-ios-1.4-primetime-player-class-summary/r-psdk-ios-1.4-classes-timeline.md)
       + [Tijdlijnadvertentieklassen](tvsdk-1.4-for-ios/c-psdk-ios-1.4-primetime-player-class-summary/r-psdk-ios-1.4-classes-timeline-advertising.md)
-      + [Digital Rights Management-klassen](tvsdk-1.4-for-ios/c-psdk-ios-1.4-primetime-player-class-summary/r-psdk-ios-1.4-classes-digital-rights-management-ios.md)
+      + [Digital Rights Management, klassen](tvsdk-1.4-for-ios/c-psdk-ios-1.4-primetime-player-class-summary/r-psdk-ios-1.4-classes-digital-rights-management-ios.md)
       + [Video Analytics-klassen](tvsdk-1.4-for-ios/c-psdk-ios-1.4-primetime-player-class-summary/r-psdk-ios-1.4-classes-video-analytics.md)
    + Meldingscodes {#notification-codes}
       + [TVSDK-meldingssysteem](tvsdk-1.4-for-ios/c-psdk-ios-1.4-notification-codes/c-psdk-ios-1.4-notification-codes.md)
@@ -798,7 +799,7 @@ ht-degree: 0%
       + Een MediaPlayer-instantie opnieuw gebruiken of verwijderen {#reuse-or-remove-mediaplayer}
          + [Een MediaPlayer-instantie opnieuw instellen of gebruiken](tvsdk-1.4-for-desktop-hls/mediaplayerobjects-working-with/mediaplayer-reuse-or-remove/t-psdk-dhls-1.4-mediaplayer-reset-reuse-instance.md)
          + [Een MediaPlayer-instantie en -bronnen opheffen](tvsdk-1.4-for-desktop-hls/mediaplayerobjects-working-with/mediaplayer-reuse-or-remove/t-psdk-dhls-1.4-mediaplayer-release-instance.md)
-      + [De afspeeltijdlijn controleren](tvsdk-1.4-for-desktop-hls/mediaplayerobjects-working-with/t-psdk-dhls-1.4-timeline-inspect-playback.md)
+      + [De afspeeltijdlijn Inspect](tvsdk-1.4-for-desktop-hls/mediaplayerobjects-working-with/t-psdk-dhls-1.4-timeline-inspect-playback.md)
    + Bufferen {#buffering}
       + [Tijdbeleid bufferen](tvsdk-1.4-for-desktop-hls/buffering-configuration/buffering-policies/c-psdk-dhls-1.4-buffering-policies.md)
       + [Buffertijden instellen](tvsdk-1.4-for-desktop-hls/buffering-configuration/buffering-policies/t-psdk-dhls-1.4-buffering-times-set.md)
@@ -831,7 +832,7 @@ ht-degree: 0%
          + [Meldingen voor manifestlabels](tvsdk-1.4-for-desktop-hls/ad-insertion/custom-tags-configure/c-psdk-dhls-1.4-custom-tags-notifications.md)
          + [Abonneren op aangepaste tags](tvsdk-1.4-for-desktop-hls/ad-insertion/custom-tags-configure/t-psdk-dhls-1.4-custom-tags-subscribe.md)
          + [Listeners toevoegen voor meldingen van getimede metagegevens](tvsdk-1.4-for-desktop-hls/ad-insertion/custom-tags-configure/t-psdk-dhls-1.4-custom-tags-receive-notifications.md)
-      + [Niet-compatibele advertenties opnieuw verpakken met Adobe Creative Repackaging Service](tvsdk-1.4-for-desktop-hls/ad-insertion/ad-transcoding/c-psdk-dhls-1.4-ad-transcoding.md)
+      + [Niet-compatibele advertenties opnieuw verpakken met de Adobe Creative Repackaging Service](tvsdk-1.4-for-desktop-hls/ad-insertion/ad-transcoding/c-psdk-dhls-1.4-ad-transcoding.md)
       + [Extra fallback voor VAST- en VMAP-advertenties](tvsdk-1.4-for-desktop-hls/ad-insertion/ad-fallback/c-psdk-dhls-1.4-ad-fallback.md)
       + Aangepaste advertenties {#custom-ads}
          + [Aangepaste vereisten voor advertenties](tvsdk-1.4-for-desktop-hls/ad-insertion/custom-ads/c-psdk-dhls-1.4-custom-ads-req.md)
@@ -846,9 +847,9 @@ ht-degree: 0%
          + [Afspeelgedrag bepalen voor zoeken op aangepaste advertentiemarkeringen](tvsdk-1.4-for-desktop-hls/ad-insertion/ad-markers-add-custom/t-psdk-dhls-1.4-ad-markers-control-seek.md)
       + Regels voor het bijwerken en creatief selecteren {#updating-ad-rules}
          + [Overzicht](tvsdk-1.4-for-desktop-hls/ad-insertion/c-psdk-dhls-1.4-updating-rules/c-psdk-dhls-1.4-updating-rules.md)
-         + [Prioriteitsregels](tvsdk-1.4-for-desktop-hls/ad-insertion/c-psdk-dhls-1.4-updating-rules/r-psdk-dhls-1.4-priority-rule.md)
+         + [Maak van prioriteiten](tvsdk-1.4-for-desktop-hls/ad-insertion/c-psdk-dhls-1.4-updating-rules/r-psdk-dhls-1.4-priority-rule.md)
          + [Regels normaliseren](tvsdk-1.4-for-desktop-hls/ad-insertion/c-psdk-dhls-1.4-updating-rules/r-psdk-dhls-1.4-normalize-rule.md)
-         + [Voorbeelden van regels voor creatieve selectie](tvsdk-1.4-for-desktop-hls/ad-insertion/c-psdk-dhls-1.4-updating-rules/r-psdk-dhls-1.4-sample-rule-files.md)
+         + [Voorbeelden van creatieve selectieregels](tvsdk-1.4-for-desktop-hls/ad-insertion/c-psdk-dhls-1.4-updating-rules/r-psdk-dhls-1.4-sample-rule-files.md)
          + [Creatieve selectieregels toepassen](tvsdk-1.4-for-desktop-hls/ad-insertion/c-psdk-dhls-1.4-updating-rules/c-psdk-dhls-1.4-how-tvsdk-applies-csr.md)
    + Aangepaste opportuniteitsdetectors en contentoplossers {#customize-opportunities}
       + [Overzicht](tvsdk-1.4-for-desktop-hls/c-psdk-dhls-1.4-opportunity-detector/content-resolver/c-psdk-dhls-1.4-content-resolver.md)
@@ -863,7 +864,7 @@ ht-degree: 0%
          + [Handtekeningmodus en tijdbereik](tvsdk-1.4-for-desktop-hls/delete-replace-content-vod/custom-time-range-ops/c-psdk-dhls-1.4-signalmode-timerange-combos.md)
       + Gebruik hoofdletters en kleine letters om advertenties te verwijderen en te vervangen {#use-cases}
          + [Markeringsbereiken](tvsdk-1.4-for-desktop-hls/delete-replace-content-vod/ad-delete-replace-use-cases/t-psdk-dhls-1.4-mark-ranges.md)
-         + [Vervang tijdbereiken door een Adobe Primetime en een beslissing en](tvsdk-1.4-for-desktop-hls/delete-replace-content-vod/ad-delete-replace-use-cases/t-psdk-dhls-1.4-replace-ranges-with-aud-ad.md)
+         + [Bereiken voor tijd vervangen door een Adobe Primetime en een beslissing en](tvsdk-1.4-for-desktop-hls/delete-replace-content-vod/ad-delete-replace-use-cases/t-psdk-dhls-1.4-replace-ranges-with-aud-ad.md)
          + [Bereiken verwijderen met Primetime en beslissings- en](tvsdk-1.4-for-desktop-hls/delete-replace-content-vod/ad-delete-replace-use-cases/t-psdk-dhls-1.4-delete-ranges-with-aud-ad.md)
          + [Speciale gevallen](tvsdk-1.4-for-desktop-hls/delete-replace-content-vod/ad-delete-replace-use-cases/t-psdk-dhls-1.4-special-use-cases.md)
       + [Foutafhandeling voor verwijderen en vervangen van toevoegen](tvsdk-1.4-for-desktop-hls/delete-replace-content-vod/ad-delete-replace-error-handling/c-psdk-dhls-1.4-ad-delete-replace-error-handling.md)
@@ -903,9 +904,9 @@ ht-degree: 0%
       + [Overzicht](tvsdk-1.4-for-desktop-hls/failover-for-playback/c-psdk-dhls-1.4-failover-for-playback.md)
       + [Afspelen van media en failover](tvsdk-1.4-for-desktop-hls/failover-for-playback/c-psdk-dhls-1.4-failover-media-playback.md)
       + [Toevoeging en overname van advertenties voor VOD](tvsdk-1.4-for-desktop-hls/failover-for-playback/c-psdk-dhls-1.4-failover-ad-insertion-for-vod.md)
-      + [Live master-manifest bijwerken](tvsdk-1.4-for-desktop-hls/failover-for-playback/c-psdk-dhls-1.4-manifest-update-intro.md)
+      + [Live master-manifest-update](tvsdk-1.4-for-desktop-hls/failover-for-playback/c-psdk-dhls-1.4-manifest-update-intro.md)
       + [Informatie ophalen over profielschakelaar](tvsdk-1.4-for-desktop-hls/failover-for-playback/t-psdk-dhls-1.4-profile-switch-info.md)
-   + Overzicht van gebeurtenissen in de primetime-speler {#events-summary}
+   + Overzicht van gebeurtenissen in de primaire speler {#events-summary}
       + [Gebeurtenissen van Playback](tvsdk-1.4-for-desktop-hls/events-summary/r-psdk-dhls-1.4-event-listener-mediaplayer-playback.md)
       + [Afspeelgebeurtenissen toevoegen](tvsdk-1.4-for-desktop-hls/events-summary/r-psdk-dhls-1.4-event-listener-mediaplayer-adplayback.md)
       + [Gebeurtenissen van metagegevens met tijdslimiet toevoegen](tvsdk-1.4-for-desktop-hls/events-summary/r-psdk-dhls-1.4-event-listener-mediaplayer-adserving.md)
@@ -952,12 +953,12 @@ ht-degree: 0%
          + [Ondersteunde DASH-functies](browser-tvsdk-2.4/c-psdk-browser-2.4-introduction/new-features/c-psdk-browser-tvsdk-2.4-new-features-c-dash.md)
       + Vereisten {#requirements}
          + [Overzicht](browser-tvsdk-2.4/c-psdk-browser-2.4-introduction/requirements-overview/c-psdk-browser-tvsdk-2.4-requirements.md)
-         + [Flash Player-vereisten](browser-tvsdk-2.4/c-psdk-browser-2.4-introduction/requirements-overview/r-psdk-browser-tvsdk-2.4-flash-fallback-req.md)
+         + [Flash Player-eisen](browser-tvsdk-2.4/c-psdk-browser-2.4-introduction/requirements-overview/r-psdk-browser-tvsdk-2.4-flash-fallback-req.md)
          + [Beveiligingsoverwegingen](browser-tvsdk-2.4/c-psdk-browser-2.4-introduction/requirements-overview/c-psdk-browser-tvsdk-2.4-sec-req.md)
          + [Inhoud- en manifestvereisten](browser-tvsdk-2.4/c-psdk-browser-2.4-introduction/requirements-overview/r-psdk-browser-tvsdk-2.4-requirements-content.md)
          + [#EXT-X-VERSION-vereisten](browser-tvsdk-2.4/c-psdk-browser-2.4-introduction/requirements-overview/r-psdk-browser-tvsdk-2.4-requirements-ext-x-version.md)
    + Aan de slag {#getting-started}
-      + Basisspeler {#basic-player}
+      + Systeem {#basic-player}
          + [Overzicht](browser-tvsdk-2.4/getting-started/c-psdk-browser-tvsdk-2.4-create-a-basic-player/c-psdk-browser-tvsdk-2.4-create-a-basic-player.md)
          + [Een basisspeler maken met TVSDK](browser-tvsdk-2.4/getting-started/c-psdk-browser-tvsdk-2.4-create-a-basic-player/t-psdk-browser-tvsdk-2.4-create-basic-player-tvsdk.md)
          + [Een basisspeler maken met behulp van het UI-framework](browser-tvsdk-2.4/getting-started/c-psdk-browser-tvsdk-2.4-create-a-basic-player/t-psdk-browser-tvsdk-2.4-create-basic-player-uif.md)
@@ -973,7 +974,7 @@ ht-degree: 0%
       + [Digital Rights Management](browser-tvsdk-2.4/getting-started/about-drm/c-psdk-browser-tvsdk-2.4-drm.md)
       + [Bufferen](browser-tvsdk-2.4/getting-started/c-psdk-browser-tvsdk-2.4-buffering.md)
       + [Metrisch](browser-tvsdk-2.4/getting-started/c-psdk-browser-tvsdk-2.4-metrics.md)
-      + [Flash-fallback forceren met gebruik van de lijst met mediabronnen](browser-tvsdk-2.4/getting-started/c-psdk-browser-tvsdk-2.4-force-flash-fallback.md)
+      + [De Flash-fallback forceren met gebruik van de lijst met mediabronnen](browser-tvsdk-2.4/getting-started/c-psdk-browser-tvsdk-2.4-force-flash-fallback.md)
       + [Foutopsporing en logboekregistratie](browser-tvsdk-2.4/getting-started/c-psdk-browser-tvsdk-2.4-debugging.md)
    + Gebruikersinterfacekader {#user-interface-framework}
       + [Het UI-framework](browser-tvsdk-2.4/c-psdk-browser-2.4-userinterface/c-psdk-browser-tvsdk-2.4-ui-framework.md)
@@ -987,7 +988,7 @@ ht-degree: 0%
          + [Een mediabron laden in de MediaPlayer](browser-tvsdk-2.4/content-playback-options-browser-tvsdk/mediaplayer-initialize-for-video/t-psdk-browser-tvsdk-2.4-media-resource-load.md)
       + [Google Cast-app voor TVSDK van browser](browser-tvsdk-2.4/content-playback-options-browser-tvsdk/r-psdk-browser-tvsdk-2.4-chromecast.md)
       + [Uitbreidbare stromen](browser-tvsdk-2.4/content-playback-options-browser-tvsdk/c-psdk-browser-tvsdk-2.4-extensionless-streams.md)
-      + [Bufferen](browser-tvsdk-2.4/content-playback-options-browser-tvsdk/c-psdk-browser-tvsdk-2.4-buffering-configuration.md)
+      + [Prioriteit](browser-tvsdk-2.4/content-playback-options-browser-tvsdk/c-psdk-browser-tvsdk-2.4-buffering-configuration.md)
       + Luisteren naar gebeurtenissen in Primetime Player {#listen-events}
          + [Overzicht](browser-tvsdk-2.4/content-playback-options-browser-tvsdk/events-listen-for/c-psdk-browser-tvsdk-2.4-events-listen-for.md)
          + [Gebeurtenislisteners en callbacks implementeren](browser-tvsdk-2.4/content-playback-options-browser-tvsdk/events-listen-for/t-psdk-browser-tvsdk-2.4-event-listeners-implement.md)
@@ -1018,7 +1019,7 @@ ht-degree: 0%
          + [Levenscyclus en status van het MediaPlayer-object](browser-tvsdk-2.4/content-playback-options-browser-tvsdk/mediaplayerobjects-working-with/c-psdk-browser-tvsdk-2.4-mediaplayer-object-lifecycle-states.md)
          + [Attributen van MediaPlayer voor toegang tot MediaResource-informatie](browser-tvsdk-2.4/content-playback-options-browser-tvsdk/mediaplayerobjects-working-with/r-psdk-browser-tvsdk-2.4-mediaplayer-methods-for-accessing-mediaresource.md)
          + [Een MediaPlayer-instantie opnieuw gebruiken of verwijderen](browser-tvsdk-2.4/content-playback-options-browser-tvsdk/mediaplayerobjects-working-with/c-psdk-browser-tvsdk-2.4-mediaplayer-reuse-or-remove.md)
-         + [De afspeeltijdlijn controleren](browser-tvsdk-2.4/content-playback-options-browser-tvsdk/mediaplayerobjects-working-with/t-psdk-browser-tvsdk-2.4-timeline-inspect-playback.md)
+         + [De afspeeltijdlijn Inspect](browser-tvsdk-2.4/content-playback-options-browser-tvsdk/mediaplayerobjects-working-with/t-psdk-browser-tvsdk-2.4-timeline-inspect-playback.md)
          + [Listeners toevoegen voor TimelineUpdatedEvent](browser-tvsdk-2.4/content-playback-options-browser-tvsdk/mediaplayerobjects-working-with/t-psdk-browser-tvsdk-2.4-timeline-update-add-listener.md)
       + Werken met gesloten bijschriften {#closed-captions}
          + [Overzicht](browser-tvsdk-2.4/content-playback-options-browser-tvsdk/closed-captions-set-up/c-psdk-browser-tvsdk-2.4-closed-captions-set-up.md)
@@ -1085,14 +1086,14 @@ ht-degree: 0%
       + Afspelen en failover {#playback-and-failover}
          + [Afspelen en failover](browser-tvsdk-2.4/drm-content-security/android-dhls-failover-for-playback/c-psdk-browser-tvsdk-2.4-failover-for-playback.md)
          + [Toevoeging en overname van advertenties voor VOD](browser-tvsdk-2.4/drm-content-security/android-dhls-failover-for-playback/c-psdk-browser-tvsdk-2.4-failover-ad-insertion-for-vod.md)
-         + [Live master-manifest bijwerken](browser-tvsdk-2.4/drm-content-security/android-dhls-failover-for-playback/c-psdk-browser-tvsdk-2.4-manifest-update-intro.md)
-         + [Live master-manifest update-architectuur](browser-tvsdk-2.4/drm-content-security/android-dhls-failover-for-playback/c-psdk-browser-tvsdk-2.4-manifest-update-architecture.md)
-         + [Live master-manifest bijwerken gebruiken](browser-tvsdk-2.4/drm-content-security/android-dhls-failover-for-playback/t-psdk-browser-tvsdk-2.4-manifest-update-use.md)
+         + [Live master-manifest-update](browser-tvsdk-2.4/drm-content-security/android-dhls-failover-for-playback/c-psdk-browser-tvsdk-2.4-manifest-update-intro.md)
+         + [Live master-manifest updatearchitectuur](browser-tvsdk-2.4/drm-content-security/android-dhls-failover-for-playback/c-psdk-browser-tvsdk-2.4-manifest-update-architecture.md)
+         + [Live update master-manifest gebruiken](browser-tvsdk-2.4/drm-content-security/android-dhls-failover-for-playback/t-psdk-browser-tvsdk-2.4-manifest-update-use.md)
          + [Informatie ophalen over profielschakelaar](browser-tvsdk-2.4/drm-content-security/android-dhls-failover-for-playback/t-psdk-browser-tvsdk-2.4-profile-switch-info.md)
       + [DRM-callbacks implementeren](browser-tvsdk-2.4/drm-content-security/c-psdk-browser-tvsdk-2.4-impl-drm-callbacks.md)
    + Factureringscijfers {#billing-metrics}
       + [Overzicht](browser-tvsdk-2.4/billing/c-psdk-browser-tvsdk-2.4-billing.md)
       + [Factureringsmetriek configureren](browser-tvsdk-2.4/billing/t-psdk-browser-tvsdk-2.4-billing-config.md)
       + [Factureringsgegevens verzenden](browser-tvsdk-2.4/billing/r-psdk-browser-tvsdk-2.4-billing-data-format.md)
-   + [Nuttige API&#39;s voor Adobe Flash Player](browser-tvsdk-2.4/r-psdk-browser-tvsdk-2.4-helpful-apis.md)
+   + [Nuttige API&#39;s voor de Adobe Flash Player](browser-tvsdk-2.4/r-psdk-browser-tvsdk-2.4-helpful-apis.md)
    + [Overzicht van de klasse Primetime Player](browser-tvsdk-2.4/c-psdk-browser-tvsdk-2.4-class-summary.md)
