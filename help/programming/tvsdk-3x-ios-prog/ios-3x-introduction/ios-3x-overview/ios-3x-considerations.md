@@ -5,7 +5,10 @@ seo-title: Overwegingen en beste praktijken
 title: Overwegingen en beste praktijken
 uuid: a65c9739-ed83-4519-8ae5-7ba4c8f1ca49
 translation-type: tm+mt
-source-git-commit: 557f42cd9a6f356aa99e13386d9e8d65e043a6af
+source-git-commit: 23a48208ac1d3625ae7d925ab6bfba8f2a980766
+workflow-type: tm+mt
+source-wordcount: '412'
+ht-degree: 0%
 
 ---
 
@@ -54,6 +57,6 @@ Hier volgen de aanbevolen procedures voor TVSDK:
 
 Zie de methoden forceHTTPS en isForcingHTTPS in deze klasse voor meer informatie.
 
-[!IMPORTANT]
-
-Aanvragen voor domeinen van derden, zoals het bijhouden van pixels, URL&#39;s voor inhoud en advertentie, en vergelijkbare aanvragen worden niet gewijzigd. Het is de verantwoordelijkheid van de inhoudsproviders en -servers om URL&#39;s te leveren die via HTTPS worden ondersteund.
+>[!IMPORTANT]
+>
+>Aanvragen voor domeinen van derden, zoals het bijhouden van pixels, URL&#39;s voor inhoud en advertentie, en vergelijkbare aanvragen worden niet gewijzigd. Het is de verantwoordelijkheid van de inhoudsproviders en -servers om URL&#39;s te leveren die via HTTPS worden ondersteund.
