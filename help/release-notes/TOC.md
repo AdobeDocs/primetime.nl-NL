@@ -3,8 +3,9 @@ cloud: experience-cloud
 product: adobe primetime
 audience: end-user
 user-guide-title: Opmerkingen bij de release Primetime
+user-guide-description: Provides release-specific information, system requirements, limitations, fixed issues, and known issues.
 translation-type: tm+mt
-source-git-commit: 6b2aaa96f8604af27810cceee5a8a98c4feebd6f
+source-git-commit: 23a48208ac1d3625ae7d925ab6bfba8f2a980766
 workflow-type: tm+mt
 source-wordcount: '101'
 ht-degree: 0%
@@ -30,7 +31,7 @@ ht-degree: 0%
    + [Opmerkingen bij de release Browser TVSDK 2.4](tvsdk-24-browser.md)
 + TVSDK voor desktop HLS {tvsdk-desktop-hls}
    + [Opmerkingen bij de release TVSDK 1.4 voor desktop HLS](tvsdk-1-4-desktop-hls.md)
-+ Offlinepakket bij primetime {#offline-packager}
++ Offline pakket primetime {#offline-packager}
    + [Versie 2 van de Offline Packager van primetime](offline-packager-2x-release-note.md)
 + Primetime Streaming Server {#streaming-server}
    + [Primetime Streaming Server versie 1 releases](primetime-streaming-server-1x.md)
