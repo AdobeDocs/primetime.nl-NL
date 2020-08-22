@@ -5,7 +5,10 @@ seo-title: Opmaak van ondertiteling beheren
 title: Opmaak van ondertiteling beheren
 uuid: b5d9c783-755f-47a2-acb1-966df9d6116e
 translation-type: tm+mt
-source-git-commit: bc35da8b258056809ceaf18e33bed631047bc81b
+source-git-commit: 23a48208ac1d3625ae7d925ab6bfba8f2a980766
+workflow-type: tm+mt
+source-wordcount: '871'
+ht-degree: 0%
 
 ---
 
@@ -123,20 +126,22 @@ U kunt de tekst met een gesloten bijschrift opmaken met de methoden TVSDK.
       public void setTreatSpaceAsAlphaNum(bool)
       ```
 
-      [!IMPORTANT]
+      >[!IMPORTANT]
+      >
+      >**Kleurinstellingen:** In Android TVSDK 2.X is de kleurstijl van gesloten bijschriften verbeterd. Dankzij deze verbetering kunt u Closed Caption-kleuren instellen met een hexadecimale tekenreeks die RGB-kleurwaarden vertegenwoordigt. De hexadecimale RGB-kleurrepresentatie is de bekende tekenreeks van 6 bytes die u gebruikt in toepassingen zoals Photoshop:
+      >
+      >* FFFFFF = Zwart
+      >* 000000 = wit
+      >* FF0000 = rood
+      >* 00FF00 = Groen
+      >* 0000FF = blauw
+         >enzovoort.
 
-      **Kleurinstellingen:** In Android TVSDK 2.X is de kleurstijl van gesloten bijschriften verbeterd. Dankzij deze verbetering kunt u Closed Caption-kleuren instellen met een hexadecimale tekenreeks die RGB-kleurwaarden vertegenwoordigt. De representatie van de hexadecimale RGB-kleur is de bekende tekenreeks van 6 bytes die u gebruikt in toepassingen zoals Photoshop:
+      >
+      >Wanneer u in uw toepassing informatie over kleurstijlen doorgeeft, gebruikt u de `TextFormatBuilder`opsomming nog steeds zoals voorheen, maar nu moet u de kleur toevoegen `Color` `getValue()` om de waarde als tekenreeks op te halen. Bijvoorbeeld:
+      >
+      >`tfb = tfb.setBackgroundColor(TextFormat.Color.RED      <b>.getValue()</b>);`
 
-          * FFFFFF = Zwart
-          * 00000 = Wit
-          * FF0000 = Rood
-          * 00FF00 = Groen
-          * 0000FF = Blauw
-      enzovoort.
-
-      Wanneer u in uw toepassing informatie over kleurstijlen doorgeeft, gebruikt u de `TextFormatBuilder`opsomming nog steeds zoals voorheen, maar nu moet u de kleur toevoegen `Color` `getValue()` om de waarde als tekenreeks op te halen. Bijvoorbeeld:
-
-      `tfb = tfb.setBackgroundColor(TextFormat.Color.RED      <b>.getValue()</b>);`
 
 
 Het instellen van de stijl voor een Closed Caption is een asynchrone bewerking. Het kan dus enkele seconden duren voordat de wijzigingen op het scherm worden weergegeven.
