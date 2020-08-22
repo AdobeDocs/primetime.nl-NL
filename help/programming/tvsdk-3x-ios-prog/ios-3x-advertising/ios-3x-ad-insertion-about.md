@@ -5,7 +5,10 @@ seo-title: Advertenties invoegen
 title: Advertenties invoegen
 uuid: 6e31cae5-7363-454f-82dd-e03c1e34cd3f
 translation-type: tm+mt
-source-git-commit: 557f42cd9a6f356aa99e13386d9e8d65e043a6af
+source-git-commit: 23a48208ac1d3625ae7d925ab6bfba8f2a980766
+workflow-type: tm+mt
+source-wordcount: '628'
+ht-degree: 0%
 
 ---
 
@@ -93,11 +96,11 @@ De mogelijkheid om vroegtijdig een advertentie-einde te verlaten, wordt geïdent
 
 1. Wanneer de toepassing dezelfde actielijn deelt om cue-out/splice-out en cue-in/splice-in aan te geven, breidt u de `PTDefaultAdOpportunityResolver` methode uit `preparePlacementOpportunity` en implementeert u deze.
 
-   [!TIP]
+   >[!TIP]
+   >
+   >In de volgende code wordt ervan uitgegaan dat de toepassing een implementatie voor de `isCueInOpportunity` methode heeft.
 
-   In de volgende code wordt ervan uitgegaan dat de toepassing een implementatie voor de `isCueInOpportunity` methode heeft.
-
-```
+   ```
    - (PTPlacementOpportunity *)preparePlacementOpportunity:(PTTimedMetadata *)timedMetadata 
    { 
          if ([self isCueInOpportunity:timedMetadata]) 
@@ -109,7 +112,7 @@ De mogelijkheid om vroegtijdig een advertentie-einde te verlaten, wordt geïdent
                return [super preparePlacementOpportunity:timedMetadata]; 
          } 
    }
-```
+   ```
 
 1. Registreer de verlengde opportuniteitsoplosser op de `PTDefaultMediaPlayerClientFactory` instantie.
 
