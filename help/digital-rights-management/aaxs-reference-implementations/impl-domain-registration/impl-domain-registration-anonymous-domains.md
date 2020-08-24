@@ -3,14 +3,17 @@ seo-title: Anonieme domeinen
 title: Anonieme domeinen
 uuid: ee29ae4d-65b2-48de-b441-18c8cf55de32
 translation-type: tm+mt
-source-git-commit: 29bc8323460d9be0fce66cbea7c6fce46df20d61
+source-git-commit: 4f196bbd079edeb1a423afee6b4b7e249d380f40
+workflow-type: tm+mt
+source-wordcount: '380'
+ht-degree: 0%
 
 ---
 
 
 # Anonieme domeinen {#anonymous-domains}
 
-In dit geval, behoren een groot aantal apparaten tot één enkel domein, en de authentificatie kan niet worden vereist. Als u dit type domein wilt gebruiken in de referentie-implementatie, maakt u het beleid waarin u opgeeft dat domeinregistratie verplicht is. Geef de URL van de domeinserver op als [*!DNL https:// host:port/flashaccess/domainserver/domainname/*] en geef anonieme verificatie op.
+In dit geval, behoren een groot aantal apparaten tot één enkel domein, en de authentificatie kan niet worden vereist. Als u dit type domein wilt gebruiken in de referentie-implementatie, maakt u het beleid waarin u opgeeft dat domeinregistratie verplicht is. Geef de URL van de domeinserver op als `https:// host:port/flashaccess/domainserver/domainname/` en geef anonieme verificatie op.
 
 De referentie-implementatie implementeert de volgende logica voor domeinregistratie:
 
