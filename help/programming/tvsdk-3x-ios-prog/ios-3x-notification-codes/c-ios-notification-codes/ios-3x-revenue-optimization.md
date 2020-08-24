@@ -4,9 +4,9 @@ seo-description: 'Deze tabel bevat gedetailleerde informatie over meldingen voor
 seo-title: Code ONTVANGSTEN
 title: Code ONTVANGSTEN
 translation-type: tm+mt
-source-git-commit: 6da7d597503d98875735c54e9a794f8171ad408b
+source-git-commit: df3d60874701383325be1afdd1ec5fe036f855f8
 workflow-type: tm+mt
-source-wordcount: '763'
+source-wordcount: '764'
 ht-degree: 0%
 
 ---
@@ -24,9 +24,9 @@ Gebruik de API PTMediaPlayer om deze rapportage in te schakelen: `[mediaPlayerse
 >
 >De meeste informatieve meldingen bevatten relevante metagegevens, bijvoorbeeld de URL van de bron die niet is gedownload. Sommige meldingen bevatten metagegevens om op te geven of het probleem is opgetreden in de hoofdvideo-inhoud, in de alternatieve audio-inhoud of in een advertentie.
 
-|Code |Naam |Melding binnen |Metagegevenstoetsen |Opmerkingen |
-|—|—|—|—|—|
-|401001 | ONTVANGSTEN_OPTIMALISATIE_RAPPORTERING | Geen | Verwijs hieronder lijst voor meta-gegevenssleutels die op verschillende gebeurtenissen worden gebaseerd. | Geen |
+| Code | Naam | Melding binnen | Metagegevenstoetsen | Opmerkingen |
+|---|---|---|---|---|
+| 401001 | REVENUE_OPTIMIZATION_REPORTING | Geen | Verwijs hieronder lijst voor meta-gegevenssleutels die op verschillende gebeurtenissen worden gebaseerd. | Geen |
 
 | Gebeurtenisdetails | ContextMetadata |
 |---|---|
