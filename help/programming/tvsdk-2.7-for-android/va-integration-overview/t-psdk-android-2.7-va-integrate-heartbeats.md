@@ -5,7 +5,10 @@ seo-title: Videoanalysemogelijkheden initialiseren en configureren
 title: Videoanalysemogelijkheden initialiseren en configureren
 uuid: 98017a20-4997-42f7-9b03-fd9c4b6ccd92
 translation-type: tm+mt
-source-git-commit: 812d04037c3b18f8d8cdd0d18430c686c3eee1ff
+source-git-commit: 1985694f99c548284aad6e6b4e070bece230bdf4
+workflow-type: tm+mt
+source-wordcount: '575'
+ht-degree: 0%
 
 ---
 
@@ -27,7 +30,7 @@ Controleer of u het volgende hebt voordat u video-tracking (videohartslagen) act
    <td colname="col2"> <p>Belangrijk:  Dit JSON-configuratiebestand moet ADBMobileConfig.json blijven <span class="filepath"> </span>. De naam en het pad van dit configuratiebestand kunnen niet worden gewijzigd. Het pad naar dit bestand moet <span class="filepath"> &lt;source root&gt;/assets zijn </span>. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> Het eindpunt van de toepassingsmeetserver </td> 
+   <td colname="col1"> Het eindpunt van de trackingserver voor AppMeturement </td> 
    <td colname="col2"> De URL van het achterste eindpunt van de Adobe Analytics-verzameling (voorheen SiteCatalyst). </td> 
   </tr> 
   <tr> 
@@ -39,7 +42,7 @@ Controleer of u het volgende hebt voordat u video-tracking (videohartslagen) act
    <td colname="col2"> Ook gekend als identiteitskaart van de Reeks van het Rapport (RSID). </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> Organisatie-id van Marketing Cloud </td> 
+   <td colname="col1"> Organisatie-id Marketing Cloud </td> 
    <td colname="col2"> Een tekenreekswaarde die is vereist voor het instantiëren van de component Visitor. </td> 
   </tr> 
  </tbody> 
@@ -49,38 +52,39 @@ U kunt als volgt video bijhouden in uw speler configureren:
 
 1. Controleer of de opties voor de laadtijd in het `ADBMobileConfig.json` bronbestand correct zijn.
 
-       &quot;
-     {
-    &quot;version&quot;: &quot;1.1&quot;,
-     &quot;analytics&quot;: {
- &quot;     sids&quot;: &quot;adobedevelopment&quot;,
-     &quot;server&quot;: &quot;10.131.129.149:3000&quot;,
-     &quot;charset&quot; : &quot;UTF-8&quot;,
-     &quot;ssl&quot;: false,
-     &quot;offlineEnabled&quot; : false,
-     &quot;lifecycleTimeout&quot;: 5,
-     &quot;batchLimit&quot;: 50,
-     &quot;privacyDefault&quot; : &quot;optedin&quot;,
-     &quot;poi&quot;: []
-     },
-     &quot;marketingCloud&quot;: {
- &quot;org&quot;     : &quot;ADOBE PROVIDED VALUE&quot;
-     },
- &quot;     target&quot;: {
-     &quot;clientCode&quot;: &quot;&quot;,
-     &quot;timeout&quot;: 5
-     },
-     &quot;publiekManager&quot;: {
-     &quot;server&quot;: &quot;&quot;
-     }
-     
-     &quot;
-     
-     Dit JSON-configuratiebestand wordt gebundeld als een bron met TVSDK. De speler leest deze waarden alleen tijdens het laden en de waarden blijven constant tijdens de uitvoering van de toepassing.
-       
-     Voor het configureren van opties voor de laadtijd:
-   
-   1. Controleer of het `ADBMobileConfig.json` bestand de juiste waarden bevat (opgegeven door Adobe).
+   ```
+   { 
+       "version" : "1.1", 
+       "analytics" : { 
+           "rsids" : "adobedevelopment", 
+           "server" : "10.131.129.149:3000", 
+           "charset" : "UTF-8", 
+           "ssl" : false, 
+           "offlineEnabled" : false, 
+           "lifecycleTimeout" : 5, 
+           "batchLimit" : 50, 
+           "privacyDefault" : "optedin", 
+           "poi" : [] 
+       }, 
+       "marketingCloud": { 
+           "org": "ADOBE PROVIDED VALUE"  
+       }, 
+       "target" : { 
+           "clientCode" : "", 
+           "timeout" : 5 
+       }, 
+       "audienceManager" : { 
+           "server" : "" 
+       } 
+   }
+   ```
+
+   Dit JSON-configuratiebestand wordt gebundeld als bron met TVSDK. De speler leest deze waarden alleen tijdens het laden en de waarden blijven constant tijdens de uitvoering van de toepassing.
+
+   Opties voor laadtijd configureren:
+
+
+   1. Bevestig dat het `ADBMobileConfig.json` bestand de juiste waarden bevat (opgegeven door Adobe).
    1. Bevestig dat dit bestand zich in de `assets/` map bevindt.
 
       Deze map moet zich in de hoofdmap van de bronstructuur van de toepassing bevinden.
