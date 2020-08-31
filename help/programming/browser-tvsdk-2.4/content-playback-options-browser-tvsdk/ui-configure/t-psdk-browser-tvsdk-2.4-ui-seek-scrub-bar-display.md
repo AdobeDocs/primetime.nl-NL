@@ -5,7 +5,10 @@ seo-title: Handgreep zoeken bij gebruik van de zoekbalk
 title: Handgreep zoeken bij gebruik van de zoekbalk
 uuid: a7c74141-581f-40a3-9d28-ce56ba56773c
 translation-type: tm+mt
-source-git-commit: 7e8df034035fe465fbe403949ef828e7811ced2e
+source-git-commit: 1985694f99c548284aad6e6b4e070bece230bdf4
+workflow-type: tm+mt
+source-wordcount: '361'
+ht-degree: 0%
 
 ---
 
@@ -38,15 +41,15 @@ In Browser TVSDK, kunt u aan een specifieke positie (tijd) in een stroom zoeken.
 
 1. Wacht tot Browser TVSDK de `AdobePSDK.PSDKEventType.SEEK_END` gebeurtenis activeert, die de aangepaste positie in het `actualPosition` kenmerk van de gebeurtenis retourneert:
 
-       &quot;js
-     player.addEventListener(AdobePSDK.PSDKEventType.SEEK_END, onSeekComplete);
-       onSeekComplete = function (event) {
-     // event.actualPosition
-     }
-     &quot;
-     
-     Dit is belangrijk omdat de werkelijke startpositie na de zoekactie anders kan zijn dan de gevraagde positie. Een aantal van de volgende regels kan van toepassing zijn:
-   
+   ```js
+   player.addEventListener(AdobePSDK.PSDKEventType.SEEK_END, onSeekComplete); 
+   onSeekComplete = function (event) {
+       // event.actualPosition
+   }
+   ```
+
+   Dit is belangrijk omdat de werkelijke startpositie na de zoekactie anders kan zijn dan de gewenste positie. Een aantal van de volgende regels kan van toepassing zijn:
+
    * Het afspeelgedrag wordt beïnvloed als een zoekopdracht of een andere verplaatsing in het midden van een advertentiesleutel eindigt of als een zoekopdracht of andere verplaatsing wordt overgeslagen en afgebroken.
    * U kunt alleen zoeken in de doorzoekbare duur van het element. Voor VOD, dat van 0 door de duur van het activa is.
 
