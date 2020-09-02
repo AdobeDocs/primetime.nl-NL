@@ -4,9 +4,9 @@ seo-title: Opmerkingen bij de release van Adobe Primetime
 description: 'null'
 seo-description: 'null'
 translation-type: tm+mt
-source-git-commit: 6b2aaa96f8604af27810cceee5a8a98c4feebd6f
+source-git-commit: ca603507f696f75a32b4a4fc8cc35f9e1c14c214
 workflow-type: tm+mt
-source-wordcount: '290'
+source-wordcount: '307'
 ht-degree: 0%
 
 ---
@@ -16,9 +16,9 @@ ht-degree: 0%
 
 Welkom bij de Adobe Primetime Release Notes. De documenten die in de linkernavigatie worden vermeld verstrekken versie-specifieke informatie, systeemvereisten, beperkingen, vaste kwesties, en bekende kwesties.
 
-## Verbeteringen en correcties in PTAI 20.8.1
+## Verbeteringen en correcties in PTAI 20.9.1
 
-De release was gericht op onderhoudsupdates.
+De release was gericht op het verhelpen van het belangrijkste probleem van de klant, waarbij EXT-X-MAP CDN-tokens of EXT-X-MAP-tags onjuist uit het DVR-venster werd opgerold.
 
 Voor meer informatie over de huidige vrijgegeven versie van Dynamische Ad Insertion, zie [PTAI versienota&#39;s](ptai-20x-release-notes.md).
 
