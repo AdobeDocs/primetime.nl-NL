@@ -2,7 +2,7 @@
 title: Opmerkingen bij de release PTAI 20.9.1
 description: In de opmerkingen bij de release PTAI 20.9.1 wordt beschreven wat nieuw of gewijzigd is, wat de opgeloste en bekende problemen zijn in Primetime Dynamic Ad Insertion in 2020.
 translation-type: tm+mt
-source-git-commit: f17a9fdf2a7c22d1d7b0833c7eac8f1202cebe87
+source-git-commit: c23b052f14c6673d4ba2aae6a317a55a2e611e8a
 workflow-type: tm+mt
 source-wordcount: '860'
 ht-degree: 0%
@@ -20,7 +20,7 @@ Dynamische Ad Insertion 20.9.1-releaseopmerkingen beschrijven wat nieuw of gewij
 
 **Oplossingen**
 
-・ Oplossing voor het probleem voor klanten die HLS/CMAF gebruikten, waarbij EXT-X-MAP soms CDN-tokens of EXT-X-MAP-tags niet correct uit het DVR-venster kon worden ingevoerd.
+* Probleem opgelost voor klanten die HLS/CMAF gebruiken, waarbij EXT-X-MAP soms CDN-tokens of EXT-X-MAP-tags niet correct uit het DVR-venster kon worden ingevoerd.
 
 ### Verbeteringen en correcties in vorige releaseversies
 
