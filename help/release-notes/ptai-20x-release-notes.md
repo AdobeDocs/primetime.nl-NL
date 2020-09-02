@@ -1,28 +1,44 @@
 ---
-title: Opmerkingen bij de release PTAI 20.8.1
-description: In de opmerkingen bij de release PTAI 20.8.1 wordt beschreven wat nieuw of gewijzigd is, wat de opgeloste en bekende problemen zijn in Primetime Dynamic Ad Insertion in 2020.
+title: Opmerkingen bij de release PTAI 20.9.1
+description: In de opmerkingen bij de release PTAI 20.9.1 wordt beschreven wat nieuw of gewijzigd is, wat de opgeloste en bekende problemen zijn in Primetime Dynamic Ad Insertion in 2020.
 translation-type: tm+mt
-source-git-commit: 6b2aaa96f8604af27810cceee5a8a98c4feebd6f
+source-git-commit: f17a9fdf2a7c22d1d7b0833c7eac8f1202cebe87
 workflow-type: tm+mt
-source-wordcount: '808'
+source-wordcount: '860'
 ht-degree: 0%
 
 ---
 
 
-# Opmerkingen bij de release Primetime Dynamic Ad Insertion 20.8.1
+# Opmerkingen bij de release Primetime Dynamic Ad Insertion 20.9.1
 
-Dynamische Ad Insertion 20.8.1-releaseopmerkingen beschrijven wat nieuw of gewijzigd is, problemen die zijn opgelost en bekende problemen in Primetime Dynamic Ad Insertion in 2020.
+Dynamische Ad Insertion 20.9.1-releaseopmerkingen beschrijven wat nieuw of gewijzigd is, problemen die zijn opgelost en bekende problemen in Primetime Dynamic Ad Insertion in 2020.
 
-## Nieuw in PTAI 20.8.1
+## Nieuwe functies in PTAI 20.9.1
+
+**Wanneer:** Dinsdag 1 september 2020, 15.30 tot 19.30 uur Oosterse tijd
+
+**Oplossingen**
+
+・ Oplossing voor het probleem voor klanten die HLS/CMAF gebruikten, waarbij EXT-X-MAP soms CDN-tokens of EXT-X-MAP-tags niet correct uit het DVR-venster kon worden ingevoerd.
+
+### Verbeteringen en correcties in vorige releaseversies
+
+#### Versie 20.8.4
+
+**Wanneer:** Woensdag 19 augustus 2020, 03.30 - 07.30 uur Oosterse tijd
+
+**Verbeteringen en correcties**
+
+Onderhoudsupdates.
+
+#### Versie 20.8.1
 
 **Wanneer:** Dinsdag 4 augustus 2020, 15.00 tot 18.00 uur Oosterse tijd
 
 **Verbeteringen en correcties**
 
 Onderhoudsupdates.
-
-### Verbeteringen en correcties in vorige releaseversies
 
 #### Versie 20.7.1
 
