@@ -3,9 +3,9 @@ seo-title: Overzicht van Primetime DRM Key Server implementeren
 title: Overzicht van Primetime DRM Key Server implementeren
 uuid: 86630675-c15d-4f32-8212-d7343f4f92e0
 translation-type: tm+mt
-source-git-commit: 9d2e046ae259c05fb4c278f464c9a26795e554fc
+source-git-commit: d2b8cb67c54fadb8e0e7d2bdc15e393fdce8550e
 workflow-type: tm+mt
-source-wordcount: '1077'
+source-wordcount: '1075'
 ht-degree: 0%
 
 ---
@@ -86,13 +86,13 @@ JAVA_OPTS=-DKeyServer.ConfigRoot=”absolute-path-to-config-folder”
 
 ## Primetime DRM-referenties {#primetime-drm-credentials}
 
-Als u belangrijke aanvragen van Primetime DRM iOS- en Xbox 360-clients wilt verwerken, moet de Primetime DRM-sleutelserver zijn geconfigureerd met een reeks referenties die door Adobe zijn uitgegeven. Deze gegevens kunnen worden opgeslagen in PKCS#12-bestanden ( [!DNL .pfx]) of op een HSM-bestand.
+Om zeer belangrijke verzoeken van Primetime DRM iOS en Xbox 360 cliënten te verwerken, moet de Belangrijkste Server van Primetime DRM met een reeks geloofsbrieven worden gevormd die door Adobe worden uitgegeven. Deze gegevens kunnen worden opgeslagen in PKCS#12-bestanden ( [!DNL .pfx]) of op een HSM-bestand.
 
-De [!DNL .pfx] bestanden kunnen zich overal bevinden, maar voor de configuratie raadt Adobe u aan de [!DNL .pfx] bestanden in de configuratiemap van de huurder te plaatsen. Voor meer informatie, zie de configuratiedossiers [van de](#key-server-configuration-files)Zeer belangrijke Server.
+De [!DNL .pfx] dossiers kunnen overal worden gevestigd, maar voor gemak van configuratie, adviseert Adobe het plaatsen van de [!DNL .pfx] dossiers in de de configuratiefolder van de huurder. Voor meer informatie, zie de configuratiedossiers [van de](#key-server-configuration-files)Zeer belangrijke Server.
 
 ### HSM-configuratie {#section_13A19E3E32934C5FA00AEF621F369877}
 
-Als u ervoor kiest om een HSM te gebruiken om uw servergeloofsbrieven op te slaan, moet u de privé sleutels en de certificaten op HSM laden en een *pkcs11.cfg* configuratiedossier creëren. Dit bestand moet zich in de map *KeyServer.ConfigRoot* bevinden. Zie de [!DNL <Primetime DRM Key Server>/configs] directory voor een voorbeeld PKCS 11 configuratiedossier. Voor informatie over het formaat van [!DNL pkcs11.cfg], zie de de leveranciersdocumentatie van Zon PKCS11.
+Als u ervoor kiest om een HSM te gebruiken om uw servergeloofsbrieven op te slaan, moet u de privé sleutels en de certificaten op HSM laden en een *pkcs11.cfg* configuratiedossier creëren. Dit bestand moet zich in de map *KeyServer.ConfigRoot* bevinden. Zie de `<Primetime DRM Key Server>/configs` map voor een voorbeeld-PKCS 11-configuratiebestand. Voor informatie over het formaat van [!DNL pkcs11.cfg], zie de de leveranciersdocumentatie van Zon PKCS11.
 
 Om te verifiëren dat uw HSM en PKCS11 configuratiedossiers van de Zon behoorlijk worden gevormd, kunt u het volgende bevel van de folder gebruiken waar het [!DNL pkcs11.cfg] dossier wordt gevestigd ( [!DNL keytool] is geïnstalleerd met Java JRE en JDK):
 
@@ -112,7 +112,7 @@ Voor de Primetime DRM-sleutelserver zijn twee typen configuratiebestanden vereis
 
 Als er wijzigingen worden aangebracht in de configuratiebestanden, moet de server opnieuw worden gestart om de wijzigingen van kracht te laten worden.
 
-Om te voorkomen dat wachtwoorden in duidelijke tekst in de configuratiedossiers beschikbaar worden gemaakt, moeten alle wachtwoorden die in de globale en huurdersconfiguratiedossiers worden gespecificeerd worden gecodeerd. Voor meer informatie bij het coderen van wachtwoorden, zie de Scrambler [*van het *Wachtwoord in het* Gebruiken van de Server Primetime DRM voor Beschermde Streaming *](../protected-streaming/understanding-deployment/drm-for-protected-streaming-utilities/password-scrambler.md).
+Om te voorkomen dat wachtwoorden in duidelijke tekst in de configuratiedossiers beschikbaar worden gemaakt, moeten alle wachtwoorden die in de globale en huurdersconfiguratiedossiers worden gespecificeerd worden gecodeerd. Voor meer informatie bij het coderen van wachtwoorden, zie de Scrambler [*van het* Wachtwoord in het *Gebruiken van de Server Primetime DRM voor Beschermde Streaming*](../protected-streaming/understanding-deployment/drm-for-protected-streaming-utilities/password-scrambler.md).
 
 ## Configuratie van mapstructuur {#configuration-directory-structure}
 
@@ -136,7 +136,7 @@ Het [!DNL flashaccess-keyserver-global.xml] configuratiedossier bevat montages d
 * Logboekregistratie - Geeft het registratieniveau op en hoe vaak logbestanden worden gewist.
 * HSM-wachtwoord - Alleen vereist als een HSM wordt gebruikt om serverreferenties op te slaan.
 
-Zie de opmerkingen in het algemene configuratiebestand van het voorbeeld in [!DNL <Primetime DRM Key Server>/configs] voor meer details.
+Zie de opmerkingen in het algemene configuratiebestand van het voorbeeld in `<Primetime DRM Key Server>/configs` voor meer informatie.
 
 ## Aanraakconfiguratiebestanden {#tenant-configuration-files}
 
@@ -146,7 +146,7 @@ U kunt alle dossierwegen in het dossier van de huurdersconfiguratie als of absol
 
 Alle configuratiebestanden van de huurder bevatten:
 
-* Sleutelserverreferenties - Geeft een of meer sleutelserverreferenties (certificaat en persoonlijke sleutel) op die door Adobe zijn uitgegeven. Kan worden opgegeven als een pad naar een [!DNL .pfx] bestand en een wachtwoord, of als een alias voor een referentie die is opgeslagen op een HSM. Verscheidene dergelijke geloofsbrieven kunnen hier, of als dossierwegen, of belangrijkste aliassen, of allebei worden gespecificeerd.
+* Sleutelserverreferenties - Geeft een of meer sleutelserverreferenties (certificaat en persoonlijke sleutel) aan die door Adobe zijn uitgegeven. Kan worden opgegeven als een pad naar een [!DNL .pfx] bestand en een wachtwoord, of als een alias voor een referentie die is opgeslagen op een HSM. Verscheidene dergelijke geloofsbrieven kunnen hier, of als dossierwegen, of belangrijkste aliassen, of allebei worden gespecificeerd.
 
 Het configuratiebestand voor **iOS** -gebruikers bevat:
 
@@ -156,7 +156,7 @@ Het configuratiebestand voor de **Xbox 360** -huurder bevat:
 
 * XSTS Credential - Geeft de referentie aan van de ontwikkelaar van de toepassing die wordt gebruikt om XSTS-tokens te decoderen
 * XSTS-ondertekeningscertificaat - Geeft het certificaat op dat wordt gebruikt om de handtekening op XSTS-tokens te verifiëren.
-* Packager Allow list - Packager certificates that are trusted by the Key Server. Als de lijst geen pakketcertificaten bevat, worden alle pakketcertificaten vertrouwd.
+* Packager Lijst van gewenste personen - Packager-certificaten die door de Key Server worden vertrouwd. Als de lijst geen pakketcertificaten bevat, worden alle pakketcertificaten vertrouwd.
 
 ## Logbestanden {#log-files}
 
