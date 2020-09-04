@@ -5,7 +5,10 @@ seo-title: Meldingscodes
 title: Meldingscodes
 uuid: 8a332057-8fda-4497-9264-a2caac92e900
 translation-type: tm+mt
-source-git-commit: 5908e5a3521966496aeec0ef730e4a704fddfb68
+source-git-commit: d2b8cb67c54fadb8e0e7d2bdc15e393fdce8550e
+workflow-type: tm+mt
+source-wordcount: '241'
+ht-degree: 0%
 
 ---
 
@@ -27,9 +30,9 @@ Meldingsobjecten bevatten informatie over de status van de speler. TVSDK biedt e
   <tr rowsep="1"> 
    <td colname="1"><span class="codeph"> type</span></td> 
    <td colname="2">Het berichttype. Afhankelijk van het platform verwijst deze eigenschap naar een opgesomd type met mogelijke waarden van 
-    <ph>
+    <pre>
       INFORMATIE, WAARSCHUWING of FOUT. Dit is de groepering op hoofdniveau voor meldingen.
-    </ph> </td> 
+    </pre> </td> 
   </tr> 
   <tr rowsep="1"> 
    <td colname="1"><span class="codeph"> code</span></td> 
