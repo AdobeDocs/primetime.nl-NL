@@ -5,7 +5,10 @@ seo-title: Tijdlijnadvertentieklassen
 title: Tijdlijnadvertentieklassen
 uuid: df970e8f-4bf8-4367-9d70-42ebcb11c025
 translation-type: tm+mt
-source-git-commit: 557f42cd9a6f356aa99e13386d9e8d65e043a6af
+source-git-commit: d2b8cb67c54fadb8e0e7d2bdc15e393fdce8550e
+workflow-type: tm+mt
+source-wordcount: '549'
+ht-degree: 0%
 
 ---
 
@@ -25,40 +28,40 @@ Deze klassen bieden informatie over advertenties die binnen een tijdlijn voorkom
   <tr rowsep="1"> 
    <td colname="1"><a href="https://help.adobe.com/en_US/primetime/api/psdk/appledoc/Classes/PTAd.html" format="html" scope="external"> PTAd</a> </td> 
    <td colname="2">Klasse die de abstractie van de Advertentie bepaalt en alle advertentiemateriaal houdt. Deze wordt gedefinieerd door een unieke id, een duur en een MediaResource. MediaResource bevat URL waar de daadwerkelijke advertentie inhoud verblijft. 
-    <ph>
+    <pre>
       Vertegenwoordigt een primair lineair element dat in de inhoud wordt gespliceerd. Het kan eventueel een serie van metgezelactiva bevatten die samen met het lineaire element moeten worden getoond.
-    </ph> </td> 
+    </pre> </td> 
   </tr> 
   <tr rowsep="1"> 
    <td colname="1"> <a href="https://help.adobe.com/en_US/primetime/api/psdk/appledoc/Classes/PTAdAsset.html" format="html" scope="external"> PTAdAsset</a> </td> 
    <td colname="2">Klasse die een element vertegenwoordigt dat moet worden weergegeven. 
-    <ph>
+    <pre>
       Vertegenwoordigt een element dat moet worden weergegeven.
-    </ph> 
-    <ph>
+    </pre> 
+    <pre>
       Klasse die een advertentie-element vertegenwoordigt.
-    </ph> </td> 
+    </pre> </td> 
   </tr> 
   <tr rowsep="1"> 
    <td colname="1"><a href="https://help.adobe.com/en_US/primetime/api/psdk/appledoc/Classes/PTAdBannerView.html" format="html" scope="external"> PTAdBannerView</a> </td> 
    <td colname="2">
-    <ph>
+    <pre>
       Hiermee geeft u een bannerelement weer. Uw toepassing moet een nieuwe instantie van deze hulpprogrammaklasse maken, het bannerelement instellen en aan een weergave toevoegen. De indruk en klik het volgen voor de banner wordt intern beheerd door deze klasse.
-    </ph> </td> 
+    </pre> </td> 
   </tr> 
   <tr rowsep="1"> 
    <td colname="1"> <a href="https://help.adobe.com/en_US/primetime/api/psdk/appledoc/Classes/PTAdBreak.html" format="html" scope="external"> PTAdBreak</a> </td> 
    <td colname="2">Klasse die een verenigde weergave biedt op meerdere advertenties die op een bepaald punt tijdens het afspelen worden afgespeeld. 
-    <ph>
+    <pre>
       Vertegenwoordigt een ononderbroken opeenvolging van advertenties die in de inhoud worden gespliceerd.
-    </ph> </td> 
+    </pre> </td> 
   </tr> 
   <tr rowsep="1"> 
    <td colname="1"> <a href="https://help.adobe.com/en_US/primetime/api/psdk/appledoc/Classes/PTAdClick.html" format="html" scope="external"> PTAdClick</a> </td> 
    <td colname="2">Klasse die een klikinstantie vertegenwoordigt die aan activa wordt geassocieerd. Deze instantie bevat informatie over de doorklikken-URL en de titel die kunnen worden gebruikt om extra informatie aan de gebruiker te verstrekken. 
-    <ph>
+    <pre>
       Vertegenwoordigt een klikinstantie verbonden aan een middel. Deze instantie bevat informatie over de doorklikken-URL en de titel die kunnen worden gebruikt om extra informatie aan de gebruiker te verstrekken.
-    </ph> </td> 
+    </pre> </td> 
   </tr> 
   <tr rowsep="1"> 
    <td colname="1"><a href="https://help.adobe.com/en_US/primetime/api/psdk/appledoc/Classes/PTAdPolicyInfo.html" format="html" scope="external"> PTAdPolicyInfo</a> </td> 
@@ -74,10 +77,10 @@ Deze klassen bieden informatie over advertenties die binnen een tijdlijn voorkom
   </tr> 
   <tr rowsep="1"> 
    <td colname="1"> 
-    <ph>
+    <pre>
      <a href="https://help.adobe.com/en_US/primetime/api/psdk/appledoc/Classes/PTContentResolver.html" format="html" scope="external"> PTContentResolver</a> -klasse, <a href="https://help.adobe.com/en_US/primetime/api/psdk/appledoc/Protocols/PTContentResolver.html" format="html" scope="external"> PTContentResolver</a> -protocol
-    </ph> </td> 
-   <td colname="2"> Klasse die het ad-resolving gedeelte van het Adobe Primetime- en beslissingsproces afhandelt. </td> 
+    </pre> </td> 
+   <td colname="2"> Klasse die het ad-resolving deel in het Adobe Primetime en besluitvormingsproces behandelt. </td> 
   </tr> 
   <tr rowsep="1"> 
    <td colname="1"><a href="https://help.adobe.com/en_US/primetime/api/psdk/appledoc/Protocols/PTContentResolverDelegate.html" format="html" scope="external"> PTContentResolverDelegate</a> </td> 
