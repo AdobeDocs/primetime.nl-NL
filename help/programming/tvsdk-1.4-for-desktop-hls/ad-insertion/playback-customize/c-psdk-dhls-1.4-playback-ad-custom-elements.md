@@ -5,7 +5,10 @@ seo-title: API-elementen voor het afspelen van advertenties
 title: API-elementen voor het afspelen van advertenties
 uuid: 61ebbfd7-696c-4a5b-8dbb-682770cd5840
 translation-type: tm+mt
-source-git-commit: 040655d8ba5f91c98ed0584c08db226ffe1e0f4e
+source-git-commit: d2b8cb67c54fadb8e0e7d2bdc15e393fdce8550e
+workflow-type: tm+mt
+source-wordcount: '259'
+ht-degree: 0%
 
 ---
 
@@ -27,9 +30,9 @@ De volgende API-elementen zijn handig voor het aanpassen van het afspelen:
   <tr> 
    <td colname="col1"><span class="codeph"> AdvertisingMetadata</span> </td> 
    <td colname="col2">Bepaal of een advertentieeinde moet worden gemarkeerd als gevolgd door een viewer en zo ja, wanneer om het te markeren. Het gevolgde beleid instellen en ophalen met 
-    <ph>
+    <pre>
      de <span class="codeph"> eigenschap adBreakAsWatched</span> .
-    </ph> </td> 
+    </pre> </td> 
   </tr> 
   <tr> 
    <td colname="col1"><span class="codeph"> AdBreakPolicy</span> </td> 
