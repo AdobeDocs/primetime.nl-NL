@@ -8,7 +8,7 @@ products: SG_PRIMETIME
 topic-tags: release-notes
 discoiquuid: 452f8699-7857-49ab-9caa-22204b19fe4a
 translation-type: tm+mt
-source-git-commit: 6da7d597503d98875735c54e9a794f8171ad408b
+source-git-commit: d2b8cb67c54fadb8e0e7d2bdc15e393fdce8550e
 workflow-type: tm+mt
 source-wordcount: '6578'
 ht-degree: 0%
@@ -221,10 +221,10 @@ Deze versie van de TVSDK is gecertificeerd met de FairPlay-ondersteuning voor iO
 
 Comment Type: draft
 
-<note type="note"> 
+`<note type="note">` 
  <p>All TVSDK customers who use CRS are strongly encouraged to upgrade to TVSDK 1.4.39 or latest on iOS and Android. This upgrade is a drop-in replacement to the existing app implementation. After the upgrade, check for the CRS creative URL requests in a proxy tool (for example, Charles) to verify that the version in the path reflects version 3.1. For example:</p> 
  <p><span class="code">https://primetime-a.akamaihd.net/assets/3p/v3.1/222000/167/d77/ 167d775d00cbf7fd224b112sf5a4bc7d_0e34cd3ca5177fbc74d66d784bf3586d.m3u8</span></p> 
-</note>
+`</note>`
 
  -->
 
@@ -232,9 +232,9 @@ Comment Type: draft
 
 Comment Type: draft
 
-<note type="note"> 
+`<note type="note"> `
  <p>TVSDK versions earlier than version 1.4.28 sometimes exhibit a long delay in the startup time when ad-enabled content is played on devices that are running on iOS 10. To resolve this issue, upgrade to version 1.4.28 or later. Version 1.4.28 was released on August 31, 2016, and iOS 10 was released on September 13, 2016.</p> 
-</note>
+`</note>`
 
  -->
 
@@ -447,7 +447,7 @@ Ingeschakeld door de oorspronkelijke creatieve URL voor de 1401 CRS-aanvraag te 
 
 Dit probleem is opgelost door het laden van bronnen bij te werken en uit alle beschikbare bundels te zoeken.
 
-* (ZD# 27460) eerste vraag van Midroll - POST aan cdn.auditude<span></span>.com terugkerend 403.
+* (ZD# 27460) De eerste Vraag van Midroll Ad - POST aan cdn.auditude<span></span>.com terugkerend 403.
 
 Het nieuwe CDN-account kan een CDN-aanvraag van een POST niet verwerken. Dit probleem is opgelost door de code bij te werken om het `cdn.auditude.com` advertentieverzoek om GET in plaats van POST te doen.
 
@@ -843,7 +843,7 @@ Het terugkeren van de afhankelijkheid van OKHTTP op controle voor CRS omdat TVSD
 
 Het probleem is opgelost door de videohartslagtracker tijdens een lineaire streamafspeelsessie opnieuw te initialiseren.
 
-* Zendesk #17919 - Android - content seek veroorzaakt een hartslagfout
+* Zendesk #17919 - Android - bij het zoeken naar inhoud treedt een hartslagfout op
 
 Het probleem was om de hartslag in een foutenstaat op te lossen wanneer er een vraag in een hoofdstuk is
 
