@@ -3,9 +3,9 @@ seo-title: De DRM-server uitvoeren voor beveiligde streaming
 title: De DRM-server uitvoeren voor beveiligde streaming
 uuid: 9bbe211d-268b-43c2-9e55-7ce62de40d30
 translation-type: tm+mt
-source-git-commit: 1b9792a10ad606b99b6639799ac2aacb707b2af5
+source-git-commit: 51b3713e04fcb4adeaa7a8d1b700372b1dba7cf6
 workflow-type: tm+mt
-source-wordcount: '804'
+source-wordcount: '795'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ U kunt de geldigheid van de montages verifiëren door de nut te gebruiken die me
 
 Als u Tomcat en de vergunningsserver wilt beginnen, moet u [!DNL catalina.bat start] of van de [!DNL catalina.sh start] [!DNL bin] folder van Tomcat in werking stellen.
 
-Nadat de server is gestart, moet u controleren of deze correct is geconfigureerd door [!DNL https://<lic<span></span>ense-server-host:poort>/flashaccessserver/<tenant-name>/flashaccess/license/v1] in een browservenster. Als de huurdersconfiguratie met succes is geladen, verschijnt een bevestigingsbericht.
+Nadat de server is begonnen, moet u verifiëren dat het correct door `https://<lic<span></span>ense-server-host:port>/flashaccessserver/<tenant-name>/flashaccess/license/v1` in een browser venster te openen is gevormd. Als de huurdersconfiguratie met succes is geladen, verschijnt een bevestigingsbericht.
 
 ## Logbestanden {#log-files}
 
@@ -54,11 +54,11 @@ Het globale logboekdossier, [!DNL flashaccess-global.log], wordt gevestigd in *L
 
 ### Partitielogbestand {#section_5660137CD6AA40519E72A4315534846B}
 
-Het partitielogbestand [!DNL flashaccess-partition.log], bevindt zich in de [!DNL <LicenseServer.LogRoot>/flashaccesserver] map. Het omvat logboekberichten die tijdens de verwerking van een vergunningsverzoek zijn geproduceerd.
+Het partitielogbestand [!DNL flashaccess-partition.log], bevindt zich in de `<LicenseServer.LogRoot>/flashaccesserver` map. Het omvat logboekberichten die tijdens de verwerking van een vergunningsverzoek zijn geproduceerd.
 
 ### Aanraaklogboek {#section_F0257CC0831647F18A746B4F02E3E910}
 
-Het logbestand van elke huurder, [!DNL flashaccess-tenant.log], bevindt zich in [!DNL &lt;LicenseServer.LogRoot>/flashaccserver/tenants/<tenantname>]. Het huurderslogboek omvat controleinformatie die elke vergunning beschrijft die voor deze huurder wordt geproduceerd.
+Het logbestand van elke huurder, [!DNL flashaccess-tenant.log], bevindt zich in `<LicenseServer.LogRoot>/flashaccesserver/tenants/<tenantname>`. Het huurderslogboek omvat controleinformatie die elke vergunning beschrijft die voor deze huurder wordt geproduceerd.
 
 ## Configuratiebestanden bijwerken {#updating-configuration-files}
 
