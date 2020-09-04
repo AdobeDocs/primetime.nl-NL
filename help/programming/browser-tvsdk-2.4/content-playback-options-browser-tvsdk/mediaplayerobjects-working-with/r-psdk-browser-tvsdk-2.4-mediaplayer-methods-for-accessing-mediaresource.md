@@ -5,7 +5,10 @@ seo-title: Attributen van MediaPlayer voor toegang tot MediaResource-informatie
 title: Attributen van MediaPlayer voor toegang tot MediaResource-informatie
 uuid: d26f39d6-0a6b-4072-b99a-8767a511a846
 translation-type: tm+mt
-source-git-commit: 040655d8ba5f91c98ed0584c08db226ffe1e0f4e
+source-git-commit: d2b8cb67c54fadb8e0e7d2bdc15e393fdce8550e
+workflow-type: tm+mt
+source-wordcount: '238'
+ht-degree: 0%
 
 ---
 
@@ -53,9 +56,9 @@ Met de methoden in de MediaPlayerItem-klasse kunt u informatie ophalen over de i
   <tr rowsep="1"> 
    <td colname="2"> <span class="codeph"> selectedAudioTrack </span> </td> 
    <td colname="3"> 
-    <ph>
+    <pre>
       Hiermee wordt de geselecteerde audiotrack opgehaald die is geselecteerd met <span class="codeph"> selectAudioTrack </span>. 
-    </ph> </td> 
+    </pre> </td> 
   </tr> 
   <tr rowsep="1"> 
    <td colname="1" morerows="1"> Timed metadata </td> 
