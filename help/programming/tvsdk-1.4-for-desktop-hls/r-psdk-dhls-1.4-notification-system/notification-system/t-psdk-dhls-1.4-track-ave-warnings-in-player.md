@@ -1,18 +1,21 @@
 ---
-description: Met behulp van NotificationEvent kunt u waarschuwingen bijhouden die worden doorgegeven via de Adobe Video Engine (AVE).
-seo-description: Met behulp van NotificationEvent kunt u waarschuwingen bijhouden die worden doorgegeven via de Adobe Video Engine (AVE).
+description: Gebruikend NotificationEvent, kunt u waarschuwingen volgen die van de Adobe VideoMotor (AVE) worden overgegaan.
+seo-description: Gebruikend NotificationEvent, kunt u waarschuwingen volgen die van de Adobe VideoMotor (AVE) worden overgegaan.
 seo-title: AVE-waarschuwingen bijhouden in uw speler
 title: AVE-waarschuwingen bijhouden in uw speler
 uuid: 236aee5e-6b1a-4298-9d3b-f33b40416c19
 translation-type: tm+mt
-source-git-commit: adef0bbd52ba043f625f38db69366c6d873c586d
+source-git-commit: d2b8cb67c54fadb8e0e7d2bdc15e393fdce8550e
+workflow-type: tm+mt
+source-wordcount: '187'
+ht-degree: 1%
 
 ---
 
 
 # AVE-waarschuwingen bijhouden in uw speler{#track-ave-warnings-in-your-player}
 
-Met behulp van NotificationEvent kunt u waarschuwingen bijhouden die worden doorgegeven via de Adobe Video Engine (AVE).
+Gebruikend NotificationEvent, kunt u waarschuwingen volgen die van de Adobe VideoMotor (AVE) worden overgegaan.
 
 Uw speler-app kan afspeelwaarschuwingen en fouten bijhouden die door de AVE zijn gegenereerd, zoals failover- of netwerk-downgebeurtenissen die het afspelen niet stoppen en waarvoor niet noodzakelijkerwijs een actie van uw app nodig is. Sommige AVE-fouten worden door de TVSDK afgehandeld, maar `NotificationEvent` fungeren als een algemeen doorvoermechanisme voor AVE-waarschuwingen naar uw toepassingslaag. Na het ontvangen van waarschuwingen van de AVE, zou u kunnen verkiezen om wat actie te voeren, zoals proactief het tegenhouden van playback, het activeren van een rampenplan, het registreren van berichten, etc.
 
@@ -108,10 +111,10 @@ Hier volgt een voorbeeld van AVE-waarschuwingen die zijn bijgehouden met `Notifi
 [WARN ] [psdkdemo::PSDKDemo] #onWarningAvailable metadata [runtimeCodeMessage:SEGMENT_SKIPPED_ON_FAILURE] 
 [WARN ] [psdkdemo::PSDKDemo] #onWarningAvailable metadata [eventType:Warning] 
  
-<ph>
+<pre>
   [WARN ] [psdkdemo::PSDKDemo] #onWarningAvailable metadata [description:url::= 
    https://xyz.corp.adobe.com/pmp/assets/abc/failover/tc.1.04/content/backup-01/ 
    low-res/main-stream4-4x3-info6.ts,periodIndex::=0, 
    sizeBytes::=0,downloadTime(ms)::=0,mediaDuration(ms)::=0] 
-</ph>
+</pre>
 ```
