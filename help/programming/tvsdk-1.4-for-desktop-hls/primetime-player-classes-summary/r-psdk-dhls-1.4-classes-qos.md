@@ -5,7 +5,10 @@ seo-title: QoS-klassen
 title: QoS-klassen
 uuid: c1192474-d183-4995-87ef-839699844b48
 translation-type: tm+mt
-source-git-commit: 91cea7acb8127e02b82e5242b9ad6ab0d12ce0eb
+source-git-commit: d2b8cb67c54fadb8e0e7d2bdc15e393fdce8550e
+workflow-type: tm+mt
+source-wordcount: '449'
+ht-degree: 0%
 
 ---
 
@@ -67,12 +70,12 @@ Pakket: [com.adobe.mediacore.qos](https://help.adobe.com/en_US/primetime/api/psd
   <tr rowsep="1"> 
    <td colname="1"><span class="codeph"><a href="https://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls_1.4/com/adobe/mediacore/qos/QOSProvider.html" format="html" scope="external"> QOSProvider</a></span> </td> 
    <td colname="2">
-    <ph>
+    <pre>
       Verstrekt essentiële metriek QoS voor zowel playback als het apparaat.
-    </ph>
-    <ph>
+    </pre>
+    <pre>
       QOS-informatieleveranciersklasse.
-    </ph> </td> 
+    </pre> </td> 
   </tr> 
  </tbody> 
 </table>
