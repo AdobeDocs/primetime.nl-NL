@@ -5,9 +5,9 @@ seo-title: Logbestanden
 title: Logbestanden
 uuid: 4498fe60-65af-4f99-8f9b-e85013d0c9e9
 translation-type: tm+mt
-source-git-commit: 1b9792a10ad606b99b6639799ac2aacb707b2af5
+source-git-commit: d2b8cb67c54fadb8e0e7d2bdc15e393fdce8550e
 workflow-type: tm+mt
-source-wordcount: '213'
+source-wordcount: '210'
 ht-degree: 0%
 
 ---
@@ -42,12 +42,12 @@ Logmappen zijn gestructureerd voor gebruiksgemak. De logmap heeft de volgende st
 
 ## Globaal logbestand {#section_1CFA90748142439C9F3BE380969539DA}
 
-Het globale logboekdossier, [!DNL flashaccess-global.log], wordt gevestigd in *LicenseServer.LogRoot*. Het logboek kan logboekberichten omvatten die de Adobe Primetime DRM Java SDK of logboekberichten tijdens de tijd kunnen hebben geproduceerd dat de server is geïnitialiseerd.
+Het globale logboekdossier, `flashaccess-global.log`, wordt gevestigd in *LicenseServer.LogRoot*. Het logboek kan logboekberichten omvatten die de Adobe Primetime DRM Java SDK of logboekberichten tijdens de tijd kunnen hebben geproduceerd dat de server is geïnitialiseerd.
 
 ## Partitielogbestand {#section_5660137CD6AA40519E72A4315534846B}
 
-Het partitielogbestand [!DNL flashaccess-partition.log], bevindt zich in de [!DNL <LicenseServer.LogRoot>/flashaccesserver] map. Het omvat logboekberichten die tijdens de verwerking van een vergunningsverzoek zijn geproduceerd.
+Het partitielogbestand `flashaccess-partition.log`, bevindt zich in de `<LicenseServer.LogRoot>/flashaccesserver` map. Het omvat logboekberichten die tijdens de verwerking van een vergunningsverzoek zijn geproduceerd.
 
 ## Aanraaklogboek {#section_F0257CC0831647F18A746B4F02E3E910}
 
-Het logbestand van elke huurder, [!DNL flashaccess-tenant.log], bevindt zich in [!DNL &lt;LicenseServer.LogRoot>/flashaccserver/tenants/<tenantname>]. Het huurderslogboek omvat controleinformatie die elke vergunning beschrijft die voor deze huurder wordt geproduceerd.
+Het logbestand van elke huurder, `flashaccess-tenant.log`, bevindt zich in `<LicenseServer.LogRoot>/flashaccesserver/tenants/<tenantname>`. Het huurderslogboek omvat controleinformatie die elke vergunning beschrijft die voor deze huurder wordt geproduceerd.
