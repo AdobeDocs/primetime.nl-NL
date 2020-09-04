@@ -3,7 +3,10 @@ seo-title: Overzicht
 title: Overzicht
 uuid: 857390be-dd14-46c0-b8f7-2bc661c515d4
 translation-type: tm+mt
-source-git-commit: 19e7c941b3337c3b4d37f0b6a1350aac2ad8a0cc
+source-git-commit: d2b8cb67c54fadb8e0e7d2bdc15e393fdce8550e
+workflow-type: tm+mt
+source-wordcount: '672'
+ht-degree: 0%
 
 ---
 
@@ -108,11 +111,11 @@ Voordat u de licentiegenerator uitvoert, moet u waarden voor de eigenschappen va
  <tbody class="- topic/tbody "> 
   <tr rowsep="1" class="- topic/row "> 
    <td colname="1" class="- topic/entry "><span class="+ topic/ph pr-d/codeph codeph"> licensegen.minClientVersion</span> </td> 
-   <td colname="2" class="- topic/entry "> <p>Hiermee stelt u de minimaal ondersteunde clientversie in. Als u deze eigenschap niet instelt, worden standaard alle versies automatisch ondersteund. </p> <p>U kunt deze waarde instellen om te bepalen hoe oudere clients reageren op de licentievereisten die ze niet ondersteunen. Geef <span class="codeph"> x</span> (voor Adobe Primetime DRM x.0) op waarbij <span class="codeph"> x</span> een hoofdreleasenummer vertegenwoordigt. </p> </td> 
+   <td colname="2" class="- topic/entry "> <p>Hiermee stelt u de minimaal ondersteunde clientversie in. Als u deze eigenschap niet instelt, worden standaard alle versies automatisch ondersteund. </p> <p>U kunt deze waarde instellen om te bepalen hoe oudere clients reageren op de licentievereisten die ze niet ondersteunen. Geef <span class="codeph"> x</span> op (voor Adobe Primetime DRM x.0) waarbij <span class="codeph"> x</span> een hoofdreleasenummer vertegenwoordigt. </p> </td> 
   </tr> 
   <tr rowsep="1" class="- topic/row "> 
    <td colname="1" class="- topic/entry "><span class="+ topic/ph pr-d/codeph codeph"> licensegen.keyServerCert</span> </td> 
-   <td colname="2" class="- topic/entry "> Sleutelservercertificaat, dat een door Adobe uitgegeven certificaat van de Server van de Vergunning is dat door de Zeer belangrijke Server wordt gebruikt. Dit certificaat wordt alleen toegepast als het beleid voor metagegevens/DRM aangeeft dat een sleutelserver vereist is voor de levering van sleutels aan iOS-apparaten. </td> 
+   <td colname="2" class="- topic/entry "> Het Zeer belangrijke Certificaat van de Server, dat een Adobe-uitgegeven certificaat van de Server van de Vergunning is dat door de Zeer belangrijke Server wordt gebruikt. Dit certificaat wordt alleen toegepast als het beleid voor metagegevens/DRM aangeeft dat een sleutelserver vereist is voor de levering van sleutels aan iOS-apparaten. </td> 
   </tr> 
   <tr rowsep="1" class="- topic/row "> 
    <td colname="1" class="- topic/entry "><span class="+ topic/ph pr-d/codeph codeph"> licensegen.sign.certfile</span> </td> 
@@ -128,16 +131,14 @@ Voordat u de licentiegenerator uitvoert, moet u waarden voor de eigenschappen va
   </tr> 
   <tr rowsep="1" class="- topic/row "> 
    <td colname="1" class="- topic/entry "> 
-    <lines>
-     <span class="+ topic/ph pr-d/codeph codeph">licensegen.keys.asymmetrisch. licenseServerCredential.n</span>
-    </lines> </td> 
+    <code>licensegen.keys.asymmetric. licenseServerCredential.n</code>
+   </td> 
    <td colname="2" class="- topic/entry "> <p class="- topic/p ">Optioneel PKCS12-bestand met extra licentieserverreferenties voor het decoderen van de CEK in de metagegevens en het DRM-beleid. U kunt extra geloofsbrieven vormen als de inhoud eerder met een certificaat van de Server van de Vergunning buiten die geloofsbrieven is verpakt die met <span class="codeph"> licensegen.sign.certfile</span>zijn gespecificeerd. Deze eigenschap moet verwijzen naar een <span class="filepath"> .pfx</span> -bestand dat een certificaat en een persoonlijke sleutel bevat. <span class="codeph">n</span> moet monotonisch stijgen, te beginnen met 1. </p> </td> 
   </tr> 
   <tr rowsep="0" class="- topic/row "> 
    <td colname="1" class="- topic/entry "> 
-    <lines>
-     <span class="+ topic/ph pr-d/codeph codeph">licensegen.keys.asymmetrisch. licenseServerCredential.n.password</span>
-    </lines> </td> 
+    <code>licensegen.keys.asymmetric. licenseServerCredential.n.password</code>
+   </td> 
    <td colname="2" class="- topic/entry "> <p>Het wachtwoord wordt toegepast om het dossier te beschermen dat u met het<span class="+ topic/ph pr-d/codeph codeph"> bezit licensegen.keys.asymmetric.licenseServerCredential.n</span> hebt gespecificeerd. </p> </td> 
   </tr> 
  </tbody> 
