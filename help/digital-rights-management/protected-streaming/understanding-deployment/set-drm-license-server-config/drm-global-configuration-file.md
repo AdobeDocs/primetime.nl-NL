@@ -5,7 +5,10 @@ seo-title: Globaal configuratiebestand
 title: Globaal configuratiebestand
 uuid: 294d6cff-be07-4b4b-8aa6-943044a1c56f
 translation-type: tm+mt
-source-git-commit: 29bc8323460d9be0fce66cbea7c6fce46df20d61
+source-git-commit: d2b8cb67c54fadb8e0e7d2bdc15e393fdce8550e
+workflow-type: tm+mt
+source-wordcount: '147'
+ht-degree: 0%
 
 ---
 
@@ -26,4 +29,4 @@ Het algemene configuratiebestand bevat:
 * Logboekregistratie — Geeft het logniveau op en hoe vaak logbestanden worden gewist.
 * HSM-wachtwoord — Alleen vereist als een HSM wordt gebruikt om serverreferenties op te slaan.
 
-Zie de opmerkingen in het voorbeeld van het algemene configuratiebestand in [!DNL Primetime DRM <DVD>\Adobe Primetime DRM Server for Protected Streaming\configureert] voor meer informatie.
+Zie opmerkingen in het algemene configuratiebestand van het voorbeeld dat zich bevindt in Primetime DRM `<DVD>`\Adobe Primetime DRM Server for Protected Streaming\configs voor meer informatie.
