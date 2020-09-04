@@ -2,7 +2,7 @@
 title: Opmerkingen bij de release TVSDK 3.12 voor iOS
 description: De opmerkingen bij de release TVSDK 3.12 voor iOS beschrijven wat nieuw of gewijzigd is, de opgeloste en bekende problemen en de apparaatproblemen in TVSDK iOS 3.12.
 translation-type: tm+mt
-source-git-commit: 6da7d597503d98875735c54e9a794f8171ad408b
+source-git-commit: d2b8cb67c54fadb8e0e7d2bdc15e393fdce8550e
 workflow-type: tm+mt
 source-wordcount: '7665'
 ht-degree: 0%
@@ -274,7 +274,7 @@ TVSDK ondersteunt nu het verzenden van mTVR- en MDPR ID3-beacons naar de Nielsen
 
 * **Blackout-signalering met vervanging van alternatieve inhoud**
 
-In het kader van de 1.4-TVSDK-update ondersteunt de TVSDK nu ook het in- en terugkeren van regionale stroomuitval tegen lineaire inhoud. De TVSDK kan nu twee manifestbestanden parallel, hoofdbestand en alternatief verwerken om te controleren op uitstroomsignalen, zelfs wanneer alternatieve programmering wordt weergegeven in plaats van de oorspronkelijke programmering.
+In het kader van de 1.4-TVSDK-update ondersteunt de TVSDK nu ook het in- en terugkeren van regionale stroomuitval tegen lineaire inhoud. De TVSDK kan nu twee manifestbestanden parallel, hoofdbestand en alternatief verwerken, om te controleren op uitstroomsignalen, zelfs wanneer alternatieve programmering wordt weergegeven in plaats van de oorspronkelijke programmering.
 
 * **C3-advertenties verwijderen/vervangen**
 
@@ -288,19 +288,19 @@ Wanneer de resolutie aan een gemelde kwestie wordt geassocieerd, wordt een verwi
 
 Comment Type: draft
 
-<note type="note"> 
+`<note type="note"> `
  <p>All TVSDK customers who use CRS are strongly encouraged to upgrade to TVSDK 1.4.39 or latest on iOS and Android. This upgrade is a drop-in replacement to the existing app implementation. After the upgrade, check for the CRS creative URL requests in a proxy tool (for example, Charles) to verify that the version in the path reflects version 3.1. For example:</p> 
  <p><span class="code">https://primetime-a.akamaihd.net/assets/3p/v3.1/222000/167/d77/ 167d775d00cbf7fd224b112sf5a4bc7d_0e34cd3ca5177fbc74d66d784bf3586d.m3u8</span></p> 
-</note>
+`</note>`
 
  -->
 
 <!--
 Comment Type: draft
 
-<note type="note"> 
+`<note type="note"> `
  <p>TVSDK versions earlier than version 1.4.28 sometimes exhibit a long delay in the startup time when ad-enabled content is played on devices that are running on iOS 10. To resolve this issue, upgrade to version 1.4.28 or later. Version 1.4.28 was released on August 31, 2016, and iOS 10 was released on September 13, 2016.</p> 
-</note>
+`</note>`
  -->
 **iOS TVSDK 3.12**
 
@@ -355,7 +355,7 @@ Correctie van het periodiek vastlopen dat werd waargenomen wanneer de STOP-metho
 * **Ticket#37080** - Dubbele verzoeken die voor Duidelijke vraag worden gezien.
 Oplossing voor de dubbele aanvragen voor Manifest-URL&#39;s tijdens het afspelen. TVSDK doet nu één vraag per manifest.
 
-* **Ticket#37** - de normalisatieregel van CRS ontbreekt met eq gelijke typeFixed een geval waar de speler aan botsing gebruikte wanneer ontmoet met laatste normalisatieregel die voor hostnames met een &quot;eq&quot;gelijkenis wordt geplaatst.
+* **Ticket#37** - de normalisatieregel van CRS ontbreekt met eq gelijke typeFixed een geval waar de speler gebruikte om te crashen wanneer ontmoet met laatste normalisatieregel die voor hostnames met een &quot;eq&quot;gelijkenis wordt geplaatst.
 
 **Versie 3.1**
 
@@ -406,7 +406,7 @@ Verbeterde oplossing voor afgesloten uitgave #34385 in release 1.4.42. Toegevoeg
 
 * (ZD#34765) - Na het aanroepen van stop() worden nog maar weinig transportstreamsegmenten gedownload. Verbeterde de Stop()-API om het downloaden van de extra segmenten te voorkomen.
 
-* (ZD#34865) - Pre-roll advertenties voor livestream worden afgebroken op iOS. Dit probleem is opgelost. Dit probleem is te maken met iOS11 en er wordt een extra controle toegevoegd om te controleren of de stream pre-roll of main-content is.
+* (ZD#34865) - Pre-roll advertenties voor livestream worden afgebroken op iOS. Dit probleem is opgelost. Dit probleem is verwant aan iOS11 en er wordt een extra controle toegevoegd om te controleren of de stream pre-roll of main-content is.
 
 * (ZD#35093) - Oplossing voor een failover-scenario waarbij, als de Primaire variant van de stream bij het opstarten mislukt (404 wordt geretourneerd), het afspelen niet naar de back-upstream wordt geschakeld.
 
@@ -876,7 +876,7 @@ Bij EVENT-streams worden geen correcte regeleinden geactiveerd in de vorige rele
 
 * (ZD #20749) - Bij fallback worden niet-lege VAST-reacties overgeslagen; URL&#39;s met extra URL&#39;s en tekstspatiëring worden geactiveerd
 
-Er is een probleem opgelost met dubbele pingen op terugvaladvertenties.
+Er is een probleem opgelost met dubbele pings op terugvaladvertenties.
 
 **Versie 1.4.20** (1.4.20.590) voor iOS 6.0+
 
