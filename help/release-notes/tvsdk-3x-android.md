@@ -8,7 +8,7 @@ products: SG_PRIMETIME
 topic-tags: release-notes
 discoiquuid: 3a27379f-3cef-4ea3-bcae-21382dc1e9fd
 translation-type: tm+mt
-source-git-commit: e467153067bb10107054a5d4166b1d9c2ac646ab
+source-git-commit: 33509042e32c2167fab21788042bfb2bb877c0f4
 workflow-type: tm+mt
 source-wordcount: '5418'
 ht-degree: 0%
@@ -178,7 +178,7 @@ Booleaanse parameters val - True gebruikt audiouitvoerlatentie voor audiotijdste
 
 TVSDK annuleert nu, indien nodig, het downloaden van het actieve segment en schakelt dynamisch over naar de juiste uitvoering. Dit wordt gedaan door naadloos tussen bitsnelheden zonder onderbrekingen te schakelen.
 
-**Versie 2.5.5**
+**Versie 1.5.5**
 
 * **Gedeeltelijke invoeging van advertentie-einde**
 
@@ -250,7 +250,7 @@ Android TVSDK v2.5.3 biedt de volgende updates en API-wijzigingen.
 
 Android TVSDK v2.5.2 biedt belangrijke foutoplossingen en enkele API-wijzigingen.
 
-**Versie 2.5.1**
+**Versie 1.5.1**
 
 De belangrijke nieuwe functies die zijn uitgebracht in Android 2.5.1.
 
@@ -502,7 +502,7 @@ In deze sectie wordt een overzicht gegeven van het probleem dat is opgelost in T
 
 * ZD #34992 - Taal is leeg in Closed Caption.
 
-   * Probleem verholpen waarbij TVSDK #EXT-X-MEDIA:TYPE=CLOSED-CAPTIONS niet parseerde vanuit hoofdmanifest voor het ophalen van de details van de bijschrifttrack.
+   * Probleem verholpen waarbij TVSDK #EXT-X-MEDIA:TYPE=CLOSED-CAPTIONS niet parseerde vanuit hoofdmanifest voor het ophalen van de gegevens van het bijschriftvak.
 
 * ZD #35078 - Android P-validatie.
 
@@ -745,7 +745,7 @@ Deze versie heeft de volgende problemen:
 
 Deze versie van TVSDK heeft de volgende problemen:
 
-* Bij het afspelen van live video kunnen er problemen optreden bij het synchroniseren van audio en video op eenvoudige apparaten.
+* Bij het afspelen van live video kunnen er problemen optreden met het synchroniseren van audio en video op eenvoudige apparaten.
 * Voor FER stromen, kunnen virtualTime en localTime verschillen. FER met verschuiving werkt ook niet.
 * Als er in VMAP XML een lege VAST-tag is zonder een expliciete afsluitende tag (&lt;/VAST>) en zonder een nieuwe regel erna, wordt de VMAP XML niet correct geparseerd en worden advertenties mogelijk niet afgespeeld.
 * VPAID post-roll wordt niet gesteund.
