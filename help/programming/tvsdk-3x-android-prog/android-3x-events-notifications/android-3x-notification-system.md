@@ -5,7 +5,10 @@ seo-title: Meldingen en gebeurtenissen voor spelerstatus, activiteit, fouten en 
 title: Meldingen en gebeurtenissen voor spelerstatus, activiteit, fouten en logboekregistratie
 uuid: c4a108e7-72aa-4c96-9538-b1385343d6af
 translation-type: tm+mt
-source-git-commit: bc35da8b258056809ceaf18e33bed631047bc81b
+source-git-commit: 5df9a8b98baaf1cd1803581d2b60c7ed4261a0e8
+workflow-type: tm+mt
+source-wordcount: '503'
+ht-degree: 0%
 
 ---
 
@@ -49,7 +52,7 @@ Als u meldingen wilt ontvangen, luistert u als volgt naar meldingen:
 
    >[!NOTE]
    >
-   >De types van berichten worden opgesomd in `Notification.Type` opsomming:
+   >Typen meldingen worden opgesomd in de `Notification.Type` opsomming:
 
    * `ERROR`
    * `INFO`
@@ -72,11 +75,12 @@ Hier is een voorbeeld van hoe u meldingen kunt ophalen:
 
    >[!NOTE]
    >
-   >Voer een van de volgende handelingen uit om deze overloop te voorkomen:    >
-   >    
-   >    
-   >    1. Verlaag het tijdinterval dat de draad drijft die voor nieuwe gebeurtenissen opiniepeilt.
-   >    1. Vergroot de lijst met meldingen.
+   >Voer een van de volgende handelingen uit om deze overloop te voorkomen:
+   >
+   >1. Verlaag het tijdinterval dat de draad drijft die voor nieuwe gebeurtenissen opiniepeilt.
+      >
+      >
+   1. Vergroot de lijst met meldingen.
 
 
 1. Serialiseren van de meest recente berichtgebeurtenisberichten in JSON-indeling en verzenden de berichten naar een externe server voor nabewerking.
