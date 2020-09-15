@@ -5,7 +5,10 @@ seo-title: Aangepaste skins
 title: Aangepaste skins
 uuid: bc71926e-0dec-4628-8248-911224a7a6c2
 translation-type: tm+mt
-source-git-commit: 040655d8ba5f91c98ed0584c08db226ffe1e0f4e
+source-git-commit: 5df9a8b98baaf1cd1803581d2b60c7ed4261a0e8
+workflow-type: tm+mt
+source-wordcount: '242'
+ht-degree: 0%
 
 ---
 
@@ -41,14 +44,11 @@ U kunt de volgende typen wijzigingen aanbrengen:
 
       >[!TIP]
       >
-      >Als u een van de bufferspinners wilt gebruiken, moet u de klasse in het buffering-overlay-element toevoegen. Voeg bijvoorbeeld de volgende regels in het `overlay-text`bestand toe om te gebruiken `BufferOverlay.js` :       >
+      >Als u een van de bufferspinners wilt gebruiken, moet u de klasse in het buffering-overlay-element toevoegen. Voeg bijvoorbeeld de volgende regels in het `overlay-text`bestand toe om te gebruiken `BufferOverlay.js` :
       >
       >
-      ```js      >
+      ```js
       >var overlay = document.getElementById("buffering-overlay"); 
       >overlay.classList.add ("spinner");
-      >```      >
-      >
-
-
+      >```
 
