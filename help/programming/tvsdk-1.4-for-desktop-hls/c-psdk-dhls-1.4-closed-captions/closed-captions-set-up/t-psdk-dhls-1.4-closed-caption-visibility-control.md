@@ -5,7 +5,10 @@ seo-title: Zichtbaarheid van ondertiteling beheren
 title: Zichtbaarheid van ondertiteling beheren
 uuid: 360d1158-67d9-40d9-b4b6-8ef46f9d73c0
 translation-type: tm+mt
-source-git-commit: adef0bbd52ba043f625f38db69366c6d873c586d
+source-git-commit: 5df9a8b98baaf1cd1803581d2b60c7ed4261a0e8
+workflow-type: tm+mt
+source-wordcount: '243'
+ht-degree: 0%
 
 ---
 
@@ -20,14 +23,13 @@ U kunt de zichtbaarheid van gesloten bijschriften bepalen. Wanneer de zichtbaarh
 
 >[!NOTE]
 >
->De zichtbaarheidswaarden voor gesloten bijschriften worden gedefinieerd in `ClosedCaptionsVisibility`. >
+>De zichtbaarheidswaarden voor gesloten bijschriften worden gedefinieerd in `ClosedCaptionsVisibility`.
 >
-```>
+>
+```
 >public static const HIDDEN:String = hidden; 
 >public static const VISIBLE:String = visible;
->```>
-
-
+>```
 
 1. Wacht tot de status `MediaPlayer` ten minste de status PREPARED heeft (zie [Wacht op een geldige status](../../t-psdk-dhls-1.4-configure/c-psdk-dhls-1.4-ui-configure/t-psdk-dhls-1.4-ui-state-prepared-wait-for.md)).
 1. Als u de huidige zichtbaarheidsinstelling voor gesloten bijschriften wilt ophalen, gebruikt u de methode getter in `MediaPlayer`, die een zichtbaarheidswaarde retourneert.
