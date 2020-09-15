@@ -5,7 +5,7 @@ seo-title: Opmaak van ondertiteling beheren
 title: Opmaak van ondertiteling beheren
 uuid: fa4f637f-f13c-465d-8eee-5e66a6dd9db2
 translation-type: tm+mt
-source-git-commit: 5df9a8b98baaf1cd1803581d2b60c7ed4261a0e8
+source-git-commit: 4ccc99f1ad6536ceb5e09c898dba3f71fa2de3f3
 workflow-type: tm+mt
 source-wordcount: '882'
 ht-degree: 0%
@@ -143,10 +143,11 @@ U kunt de tekst met een gesloten bijschrift opmaken met de methoden TVSDK.
       >enzovoort.
       >
       >Wanneer u in uw toepassing informatie over kleurstijlen doorgeeft, gebruikt u de `TextFormatBuilder`opsomming nog steeds zoals voorheen, maar nu moet u de kleur toevoegen `Color` `getValue()` om de waarde als tekenreeks op te halen. Bijvoorbeeld:
-
+      >
+      >
       ```
-      tfb = tfb.setBackgroundColor(TextFormat.Color.RED <b>.getValue()</b>);
-      ```
+      >tfb = tfb.setBackgroundColor(TextFormat.Color.RED <b>.getValue()</b>);
+      >```
 
 
 
@@ -174,7 +175,8 @@ public TextFormatBuilder(
 ```
 
 >[!TIP]
-In opties die standaardwaarden definiëren (bijvoorbeeld `DEFAULT`), verwijst die waarde naar de instelling op het moment dat het bijschrift oorspronkelijk werd opgegeven.
+>
+>In opties die standaardwaarden definiëren (bijvoorbeeld `DEFAULT`), verwijst die waarde naar de instelling op het moment dat het bijschrift oorspronkelijk werd opgegeven.
 
 <table frame="all" colsep="1" rowsep="1" id="table_87205DEFEE384AF4AF83952B15E18A42"> 
  <thead> 
