@@ -5,7 +5,10 @@ seo-title: Zichtbaarheid van ondertiteling beheren
 title: Zichtbaarheid van ondertiteling beheren
 uuid: 42913347-8158-474e-aa3c-ba4d38baba12
 translation-type: tm+mt
-source-git-commit: 5908e5a3521966496aeec0ef730e4a704fddfb68
+source-git-commit: 5df9a8b98baaf1cd1803581d2b60c7ed4261a0e8
+workflow-type: tm+mt
+source-wordcount: '206'
+ht-degree: 0%
 
 ---
 
@@ -20,16 +23,15 @@ U kunt de zichtbaarheid van gesloten bijschriften bepalen. Wanneer de zichtbaarh
 
 >[!NOTE]
 >
->De zichtbaarheidswaarden voor gesloten bijschriften worden gedefinieerd in `MediaPlayer.Visibility`. >
+>De zichtbaarheidswaarden voor gesloten bijschriften worden gedefinieerd in `MediaPlayer.Visibility`.
 >
-```java>
+>
+```java
 >enum Visibility { 
 >       VISIBLE,  
 >       INVISIBLE 
 >}
->```>
-
-
+>```
 
 1. Wacht op MediaPlayer om minstens de PREPARED staat te hebben (zie [Wacht op een geldige staat](../../../tvsdk-1.4-for-android/ui-configure/android-1.4-ui-state-prepared-wait-for.md)).
 1. Als u de huidige zichtbaarheidsinstelling voor gesloten bijschriften wilt ophalen, gebruikt u de methode getter in MediaPlayer, die een zichtbaarheidswaarde retourneert.
