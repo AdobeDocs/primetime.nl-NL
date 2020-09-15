@@ -6,7 +6,10 @@ seo-title: Just-in-Time en oplossing
 title: Just-in-Time en oplossing
 uuid: 77028f6e-7e53-45d1-bcc0-54f8224d6d18
 translation-type: tm+mt
-source-git-commit: bc35da8b258056809ceaf18e33bed631047bc81b
+source-git-commit: 5df9a8b98baaf1cd1803581d2b60c7ed4261a0e8
+workflow-type: tm+mt
+source-wordcount: '696'
+ht-degree: 0%
 
 ---
 
@@ -20,6 +23,7 @@ Oplossen en laden van advertenties kan een onaanvaardbare wachttijd veroorzaken 
    1. TVSDK downloadt een manifest (playlist) en *lost* alle advertenties op.
    1. TVSDK *laadt* alle advertenties en plaatst deze op de tijdlijn.
    1. TVSDK verplaatst de speler naar de status PREPARED en begint met afspelen van inhoud.
+
    De speler gebruikt de URL&#39;s in het manifest om de advertentie-inhoud (creatieven) te verkrijgen, zorgt ervoor dat de advertentie-inhoud een indeling heeft die TVSDK kan afspelen en dat TVSDK de advertenties op de tijdlijn plaatst. Dit basisproces voor het oplossen en laden van advertenties kan een onaanvaardbare lange wachttijd veroorzaken voor een gebruiker die wacht om zijn inhoud af te spelen, vooral als het manifest meerdere advertentie-URL&#39;s bevat.
 
 * *Lazy advertentie laden*:
@@ -27,6 +31,7 @@ Oplossen en laden van advertenties kan een onaanvaardbare wachttijd veroorzaken 
    1. TVSDK downloadt een afspeellijst en *lost* alle advertenties op.
    1. TVSDK *laadt* pre-roladvertenties, verplaatst de speler naar de status PREPARED en begint met het afspelen van inhoud.
    1. TVSDK *laadt* de resterende advertenties en plaatst deze op de tijdlijn wanneer het afspelen plaatsvindt.
+
    Met deze functie wordt het basisproces verbeterd doordat de speler in de status PREPARED wordt geplaatst voordat alle advertenties worden geladen.
 
 * *Lazy en oplossen*:
@@ -43,7 +48,8 @@ Oplossen en laden van advertenties kan een onaanvaardbare wachttijd veroorzaken 
 
 >[!IMPORTANT]
 >
->**Factoren die in overweging moeten worden genomen met Lazy Ad Resolving:** >
+>**Factoren die in overweging moeten worden genomen met Lazy Ad Resolving:**
+>
 >* Lazy Ad Resolving wordt slechts gesteund voor stromen VOD met wijzen SERVER_MAP en MANIFEST_CUES.
 >* Lazy Ad Resolving is niet standaard ingeschakeld. Als deze optie is uitgeschakeld, worden alle advertenties opgelost in VOD-streams voordat het afspelen wordt gestart.
 >* Lazy Ad Resolving is incompatibel met de functie Instant on. Voor meer informatie over Onmiddellijk aan, zie Onmiddellijk.
@@ -52,6 +58,7 @@ Oplossen en laden van advertenties kan een onaanvaardbare wachttijd veroorzaken 
 >* Het wordt afgeraden de waarde *setDelayAdLoadingTolerance() *te verlagen tot onder de standaardwaarde (5 seconden). Hierdoor kan de speler onnodig &quot;bufferen&quot;.
 >* Lazy ad Resolving heeft geen invloed op pre-roll advertenties.
 >* Het luie Oplossen van Advertenties wordt momenteel gesteund met Auditude-Insteekmodule. Het wordt aanbevolen ** setDelayAdLoadingto niet in te stellen op true als u een aangepaste resolver gebruikt.
+
 >
 
 
