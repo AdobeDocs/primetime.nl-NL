@@ -5,7 +5,10 @@ seo-title: Zichtbaarheid van ondertiteling beheren
 title: Zichtbaarheid van ondertiteling beheren
 uuid: f142e60d-5581-4d1c-9d4d-a4a58ac1b67b
 translation-type: tm+mt
-source-git-commit: ed910a60440ae7c0d19d9be56c80c8bdbc62bcf1
+source-git-commit: 5df9a8b98baaf1cd1803581d2b60c7ed4261a0e8
+workflow-type: tm+mt
+source-wordcount: '212'
+ht-degree: 0%
 
 ---
 
@@ -18,16 +21,15 @@ U kunt de zichtbaarheid van gesloten bijschriften bepalen. Wanneer de zichtbaarh
 >
 >Als Closed Caption-tekst wordt weergegeven wanneer de speler naar de zoekmodus gaat, wordt de tekst niet meer weergegeven nadat het zoeken is voltooid. In plaats daarvan geeft TVSDK na een paar seconden de volgende Closed Caption-tekst in de video weer na de eindzoekpositie.
 >
->De zichtbaarheidswaarden voor gesloten bijschriften worden gedefinieerd in `MediaPlayer.Visibility`. >
+>De zichtbaarheidswaarden voor gesloten bijschriften worden gedefinieerd in `MediaPlayer.Visibility`.
 >
-```java>
+>
+```java
 >enum Visibility {  
 >       VISIBLE,  
 >       INVISIBLE 
 >}
->```>
-
-
+>```
 
 1. Wacht tot de status `MediaPlayer` is VOORBEREID. Zie [Wacht op een geldige status](../../../../tvsdk-3x-android-prog/android-3x-content-playback-options-android2/ui-configure/android-3x-ui-state-prepared-wait-for.md)voor meer informatie.
 
