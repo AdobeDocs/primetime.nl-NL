@@ -5,7 +5,10 @@ seo-title: Adaptieve bitsnelheden (ABR) voor videokwaliteit
 title: Adaptieve bitsnelheden (ABR) voor videokwaliteit
 uuid: e3d5ef90-067d-48e0-a025-081de931d842
 translation-type: tm+mt
-source-git-commit: 040655d8ba5f91c98ed0584c08db226ffe1e0f4e
+source-git-commit: 5df9a8b98baaf1cd1803581d2b60c7ed4261a0e8
+workflow-type: tm+mt
+source-wordcount: '1011'
+ht-degree: 0%
 
 ---
 
@@ -80,20 +83,17 @@ Deze klasse bevat ook de `toABRControlParameters()` helpermethode. Gebruik deze 
 
    >[!NOTE]
    >
-   >In het volgende voorbeeld worden alle parameters bijvoorbeeld geïnitialiseerd naar de standaardwaarden en wordt alleen het beleid ingesteld op conservatief. De maximale bitsnelheid wordt beperkt tot 1000000:    >
+   >In het volgende voorbeeld worden alle parameters bijvoorbeeld geïnitialiseerd naar de standaardwaarden en wordt alleen het beleid ingesteld op conservatief. De maximale bitsnelheid wordt beperkt tot 1000000:
    >
    >
-   ```>
+   ```
    >var abrBuilder:ABRControlParametersBuilder =  
    >   new ABRControlParametersBuilder(); 
    >abrBuilder.policy = ABRControlParameters.CONSERVATIVE_POLICY; 
    >abrBuilder.maxBitRate = 1000000; 
    >mediaPlayer.abrControlParameters =  
    >   abrBuilder.toABRControlParameters();
-   >```   >
-   >
-
-
+   >```
 
 1. Pas individuele parameters ABR bij runtime aan.
 
