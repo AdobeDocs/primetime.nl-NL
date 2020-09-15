@@ -5,7 +5,10 @@ seo-title: De positie en grootte van de videoweergave bepalen
 title: De positie en grootte van de videoweergave bepalen
 uuid: 2231c574-03cd-45a8-ab00-4a42f8e044f0
 translation-type: tm+mt
-source-git-commit: 040655d8ba5f91c98ed0584c08db226ffe1e0f4e
+source-git-commit: 5df9a8b98baaf1cd1803581d2b60c7ed4261a0e8
+workflow-type: tm+mt
+source-wordcount: '242'
+ht-degree: 0%
 
 ---
 
@@ -32,10 +35,10 @@ U kunt het standaardgedrag voor de verhouding overschrijven door een ander *scha
    >TVSDK gebruikt een `StageVideo` object voor de weergave van de video en omdat `StageVideo` objecten zich niet in het weergaveoverzicht bevinden, bevat de `viewPort` parameter de absolute coördinaten van de video.
    >
    >
-   >Bijvoorbeeld:    >
+   >Bijvoorbeeld:
    >
    >
-   ```>
+   ```
    >public class CustomScalePolicy implements MediaPlayerViewScalePolicy { 
    >       /** 
    >         * Default constructor. 
@@ -56,10 +59,7 @@ U kunt het standaardgedrag voor de verhouding overschrijven door een ander *scha
    >               [...] 
    >       } 
    >}
-   >```   >
-   >
-
-
+   >```
 
 1. Wijs uw implementatie toe aan de `MediaPlayerView` eigenschap.
 
