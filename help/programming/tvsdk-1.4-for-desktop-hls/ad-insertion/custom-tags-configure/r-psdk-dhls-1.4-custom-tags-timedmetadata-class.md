@@ -5,7 +5,10 @@ seo-title: Timed metadata-klasse
 title: Timed metadata-klasse
 uuid: 827a3bcf-a584-4032-aa19-4fc7730778cc
 translation-type: tm+mt
-source-git-commit: 040655d8ba5f91c98ed0584c08db226ffe1e0f4e
+source-git-commit: 5df9a8b98baaf1cd1803581d2b60c7ed4261a0e8
+workflow-type: tm+mt
+source-wordcount: '423'
+ht-degree: 0%
 
 ---
 
@@ -70,16 +73,13 @@ Houd rekening met het volgende:
 
    >[!TIP]
    >
-   >Complexe gegevens in aangepaste tags in het manifest, zoals tekenreeksen met speciale tekens, moeten tussen aanhalingstekens staan. Bijvoorbeeld:   >
+   >Complexe gegevens in aangepaste tags in het manifest, zoals tekenreeksen met speciale tekens, moeten tussen aanhalingstekens staan. Bijvoorbeeld:
    >
    >
-   ```>
+   ```
    >#EXT-CUSTOM-TAG:type=SpliceOut,ID=1,time=71819.7222,duration=30.0,url=
    >"www.example.com:8090?parameter1=xyz&parameter2=abc"
-   >```  >
-   >
-
-
+   >```
 
 * Als de extractie mislukt als gevolg van een aangepaste tagindeling, is de eigenschap metadata leeg en moet de toepassing de werkelijke informatie ophalen. Er wordt in dit geval geen fout gegenereerd.
 
