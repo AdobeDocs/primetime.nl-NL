@@ -5,7 +5,10 @@ seo-title: Ondersteunde DASH-functies
 title: Ondersteunde DASH-functies
 uuid: 299516a4-09ed-4b8a-b0bf-a04f204f385a
 translation-type: tm+mt
-source-git-commit: 592245f5a7186d18dabbb5a98a468cbed7354aed
+source-git-commit: 5df9a8b98baaf1cd1803581d2b60c7ed4261a0e8
+workflow-type: tm+mt
+source-wordcount: '506'
+ht-degree: 0%
 
 ---
 
@@ -23,7 +26,7 @@ Browser TVSDK steunt een aantal eigenschappen DASH die u kunt uitvoeren om funct
 
 >[!TIP]
 >
->In de onderstaande tabel met functiematrix, ![](assets/supported15.png)>
+>In de onderstaande tabel met functiematrix:  ![](assets/supported15.png)
 >betekent dat de functie wordt ondersteund in de huidige release.
 
 De volgende functies worden ondersteund:
@@ -91,26 +94,26 @@ De volgende functies worden ondersteund:
 
 | Categorie | Inhoudstype | Functie | HTML5 FF, IE, Chrome, Android-chroom |
 |---|---|---|---|
-| Toevoegen van advertentie | VOD | Alleen advertentie | Niet ondersteund |
-| Toevoegen van advertentie | VOD | Doelparameters | Alleen VOD |
-| Toevoegen van advertentie | VOD | Aangepaste parameters | Alleen VOD |
-| Toevoegen van advertentie | VOD + Live | Aangepast advertentiebeleid | Niet ondersteund |
-| Toevoegen van advertentie | VOD + Live | Lazy en laden | Niet ondersteund |
-| Toevoegen van advertentie | VOD | Companion-advertenties, banneradvertenties en aanklikbare advertenties | Niet ondersteund |
-| Toevoegen van advertentie | VOD | VPAID 2.0 | Niet ondersteund |
+| Ad Insertion | VOD | Alleen advertentie | Niet ondersteund |
+| Ad Insertion | VOD | Doelparameters | Alleen VOD |
+| Ad Insertion | VOD | Aangepaste parameters | Alleen VOD |
+| Ad Insertion | VOD + Live | Aangepast advertentiebeleid | Niet ondersteund |
+| Ad Insertion | VOD + Live | Lazy en laden | Niet ondersteund |
+| Ad Insertion | VOD | Companion-advertenties, banneradvertenties en aanklikbare advertenties | Niet ondersteund |
+| Ad Insertion | VOD | VPAID 2.0 | Niet ondersteund |
 
 ## DASH-core en invoegfuncties (CSAI) {#dash-core-ad-insertion}
 
 | Categorie | Inhoudstype | Functie | HTML5 FF, IE, Chrome, Android-chroom |
 |---|---|---|---|
-| Toevoegen van advertentie | VOD + Live | Pre-roll | Alleen VOD |
-| Toevoegen van advertentie | VOD + Live | Midden rol | Alleen VOD |
-| Toevoegen van advertentie | VOD + Live | Na de rol | Alleen VOD |
-| Toevoegen van advertentie | FER VOD | Resolutie en gedrag toevoegen | Niet ondersteund |
-| Toevoegen van advertentie | VOD + Live | Standaardbeleid en standaardbeleid | Alleen VOD |
-| Toevoegen van advertentie | VOD + Live | VAST 2,0/3,0 | Alleen VOD |
-| Toevoegen van advertentie | VOD + Live | VMAP 1.0 | Alleen VOD |
-| Toevoegen van advertentie | VOD + Live | CRS v3.1 | Alleen VOD |
+| Ad Insertion | VOD + Live | Pre-roll | Alleen VOD |
+| Ad Insertion | VOD + Live | Midden rol | Alleen VOD |
+| id | VOD + Live | Na de rol | Alleen VOD |
+| Ad Insertion | FER VOD | Resolutie en gedrag toevoegen | Niet ondersteund |
+| Ad Insertion | VOD + Live | Standaardbeleid en standaardbeleid | Alleen VOD |
+| Ad Insertion | VOD + Live | VAST 2,0/3,0 | Alleen VOD |
+| Ad Insertion | VOD + Live | VMAP 1.0 | Alleen VOD |
+| Ad Insertion | VOD + Live | CRS v3.1 | Alleen VOD |
 
 ## Beveiligingsfuncties voor DASH-inhoud {#dash-content-protection}
 
@@ -155,7 +158,7 @@ De volgende functies worden ondersteund:
  </tbody> 
 </table>
 
-## Geavanceerde DASH-afspeelfuncties {#dash-advanced-playback}
+## Geavanceerde afspeelfuncties DASH {#dash-advanced-playback}
 
 | Categorie | Inhoudstype | Functie | HTML5, FF, IE, Chrome, Android-chroom |
 |---|---|---|---|
