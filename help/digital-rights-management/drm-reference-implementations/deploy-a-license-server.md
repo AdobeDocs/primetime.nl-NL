@@ -5,7 +5,10 @@ seo-title: De licentieserver implementeren
 title: De licentieserver implementeren
 uuid: bee7ead1-ed13-4894-80f9-5196bf2f818f
 translation-type: tm+mt
-source-git-commit: 29149594c4b41956a091ef27093304e74ff15f2f
+source-git-commit: 5df9a8b98baaf1cd1803581d2b60c7ed4261a0e8
+workflow-type: tm+mt
+source-wordcount: '294'
+ht-degree: 0%
 
 ---
 
@@ -20,7 +23,7 @@ source-git-commit: 29149594c4b41956a091ef27093304e74ff15f2f
 
    >[!NOTE]
    >
-   >Als u eerder WAR-bestanden van de licentieserver hebt geïmplementeerd, moet u mogelijk de onverpakte WAR-mappen in de [!DNL webapps] map op de Tomcat-server verwijderen:        >
+   >Als u eerder WAR-bestanden van de licentieserver hebt geïmplementeerd, moet u mogelijk de onverpakte WAR-mappen in de [!DNL webapps] map op de Tomcat-server verwijderen:
    >
    >* [!DNL webapps/flashaccess]
    >* [!DNL webapps/edcws]
@@ -28,7 +31,7 @@ source-git-commit: 29149594c4b41956a091ef27093304e74ff15f2f
 
    >[!NOTE]
    >
-   >Implementeer niet [!DNL edsws.war] tenzij u achterwaartse compatibiliteit met Flash Media Rights Management (FMRMS) v1.5-inhoud vereist. (Dit is een zeer zeldzame vereiste.)
+   >Implementeer niet [!DNL edsws.war] tenzij u achterwaartse compatibiliteit met Flash Media Rights Management v1.5-inhoud (FMRMS) vereist. (Dit is een zeer zeldzame vereiste.)
    >
    >Als u liever wilt voorkomen dat Tomcat WAR-bestanden uitpakt, bewerkt u deze `server.xml` in de `conf` map en stelt u `unpackWARs` deze in op `false`.
 
@@ -39,7 +42,8 @@ source-git-commit: 29149594c4b41956a091ef27093304e74ff15f2f
    * [!DNL flashaccesstools.properties] - Het eigenschappenbestand van de licentieserver.
    * [!DNL log4j.xml] - Configuratie logboekregistratie licentieserver
    * [!DNL *.pol] - Voorbeelden van DRM-beleidsbestanden.
-   Bovendien kunt u de Adobe-certificeringsbestanden naar deze locatie kopiëren.
+
+   Bovendien kunt u ervoor kiezen om de Adobe-certificeringsbestanden naar deze locatie te kopiëren.
 
 1. Wijzig de instellingen van de licentieserver in [!DNL flashaccesstools.properties] de serverinstellingen.
 
