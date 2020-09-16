@@ -1,28 +1,43 @@
 ---
-title: Opmerkingen bij de release PTAI 20.9.1
-description: In de opmerkingen bij de release PTAI 20.9.1 wordt beschreven wat nieuw of gewijzigd is, wat de opgeloste en bekende problemen zijn in Primetime Dynamic Ad Insertion in 2020.
+title: Opmerkingen bij de release PTAI 20.9.2
+description: In de release van PTAI 20.9.2 wordt beschreven wat nieuw of gewijzigd is, wat de opgeloste en bekende problemen zijn in Primetime Dynamic Ad Insertion in 2020.
 translation-type: tm+mt
-source-git-commit: 699e6a463bce4f7853406cb7fe529fb09f87ca92
+source-git-commit: e3d2811e40bc34bfdaacdab1529fa9b01e416a98
 workflow-type: tm+mt
-source-wordcount: '887'
+source-wordcount: '962'
 ht-degree: 0%
 
 ---
 
 
-# Opmerkingen bij de release Primetime Dynamic Ad Insertion 20.9.1
+# Opmerkingen bij de release Primetime Dynamic Ad Insertion 20.9.2
 
-Dynamische Ad Insertion 20.9.1-releaseopmerkingen beschrijven wat nieuw of gewijzigd is, problemen die zijn opgelost en bekende problemen in Primetime Dynamic Ad Insertion in 2020.
+Dynamische Ad Insertion 20.9.2 release notes beschrijven wat nieuw of gewijzigd is, problemen opgelost en bekende problemen in Primetime Dynamic Ad Insertion in 2020.
 
-## Nieuwe functies in PTAI 20.9.1
+## Nieuwe functies in PTAI 20.9.2
+
+**Wanneer:** Dinsdag 15 september 2020, 15.30 tot 18.30 uur Oosterse tijd
+
+**Verbeteringen**
+
+* Bied ondersteuning voor het opnemen van niet-lineaire advertentietypen met behulp van `EXT-X-MARKER` tags.
+Neem voor meer informatie of om deze functie in te schakelen contact op met uw medewerker van de technische ondersteuning.
+
+* Bied ondersteuning voor het beperken van de totale tijd voor advertentie-oplossing, als providers te lang duren om te reageren. Om het beperken toe te laten, plaats de laarzentrekker API parameter `ptadtimeout` aan een waarde in milliseconden.
+
+   >[!NOTE]
+   >
+   >Deze time-out is alleen van toepassing op advertentieverzoeken en niet op creatieve verzoeken.
+
+### Verbeteringen en correcties in vorige releaseversies
+
+#### Versie 20.9.1
 
 **Wanneer:** Dinsdag 1 september 2020, 15.30 tot 19.30 uur Oosterse tijd
 
 **Wijzigingen**
 
 * Probleem opgelost voor klanten die HLS/CMAF gebruiken, waarbij EXT-X-MAP soms CDN-tokens of EXT-X-MAP-tags niet correct uit het DVR-venster kon worden ingevoerd.
-
-### Verbeteringen en correcties in vorige releaseversies
 
 #### Versie 20.8.4
 
