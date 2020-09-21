@@ -5,7 +5,7 @@ seo-title: Opmaak van ondertiteling beheren
 title: Opmaak van ondertiteling beheren
 uuid: fa4f637f-f13c-465d-8eee-5e66a6dd9db2
 translation-type: tm+mt
-source-git-commit: 4ccc99f1ad6536ceb5e09c898dba3f71fa2de3f3
+source-git-commit: b02dfafdc78ca209da5ba0ed855342952be4288f
 workflow-type: tm+mt
 source-wordcount: '882'
 ht-degree: 0%
@@ -133,11 +133,11 @@ U kunt de tekst met een gesloten bijschrift opmaken met de methoden TVSDK.
       >
       >**Kleurinstellingen:** In Android TVSDK 2.X is de kleurstijl van gesloten bijschriften verbeterd. Dankzij deze verbetering kunt u Closed Caption-kleuren instellen met een hexadecimale tekenreeks die RGB-kleurwaarden vertegenwoordigt. De hexadecimale RGB-kleurrepresentatie is de bekende tekenreeks van 6 bytes die u gebruikt in toepassingen zoals Photoshop:
       >
-      >    * FFFFFF = Zwart
-      >    * 000000 = wit
-      >    * FF0000 = rood
-      >    * 00FF00 = Groen
-      >    * 0000FF = blauw
+      >* FFFFFF = Zwart
+      >* 000000 = wit
+      >* FF0000 = rood
+      >* 00FF00 = Groen
+      >* 0000FF = blauw
 
       >
       >enzovoort.
