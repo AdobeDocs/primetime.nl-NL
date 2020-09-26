@@ -4,9 +4,9 @@ seo-title: Opmerkingen bij de release van Adobe Primetime
 description: 'null'
 seo-description: 'null'
 translation-type: tm+mt
-source-git-commit: e3d2811e40bc34bfdaacdab1529fa9b01e416a98
+source-git-commit: 6d25fc11bc4ca91556cae0b944322cd224c89fb5
 workflow-type: tm+mt
-source-wordcount: '313'
+source-wordcount: '301'
 ht-degree: 0%
 
 ---
@@ -16,11 +16,9 @@ ht-degree: 0%
 
 Welkom bij de Adobe Primetime Release Notes. De documenten die in de linkernavigatie worden vermeld verstrekken versie-specifieke informatie, systeemvereisten, beperkingen, vaste kwesties, en bekende kwesties.
 
-## Verbeteringen en correcties in PTAI 20.9.2
+## Verbeteringen en correcties in PTAI 20.9.3
 
-De release was gericht op ondersteuning voor het opnemen van niet-lineaire advertentietypen met behulp van `EXT-X-MARKER` tags en op het beperken van de totale tijd en de oplossingstijd wanneer providers te lang duren om te reageren.
-
-Voor meer informatie over de huidige vrijgegeven versie van Dynamische Ad Insertion, zie [PTAI versienota&#39;s](ptai-20x-release-notes.md).
+De release was gericht op het verschaffen van de API-parameter voor bootstrap `ptparallelstream`, zodat klanten met spelers die CMAF-gedemuleerde audio- of videostreams aanvragen, tegelijkertijd kunnen werken om ervoor te zorgen dat advertenties in audio- en videotracks consistent zijn.
 
 ## Oplossingen in TVSDK 3.12 Android
 
