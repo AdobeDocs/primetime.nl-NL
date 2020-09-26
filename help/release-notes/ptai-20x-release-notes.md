@@ -1,20 +1,30 @@
 ---
-title: Opmerkingen bij de release PTAI 20.9.2
-description: In de release van PTAI 20.9.2 wordt beschreven wat nieuw of gewijzigd is, wat de opgeloste en bekende problemen zijn in Primetime Dynamic Ad Insertion in 2020.
+title: Opmerkingen bij de release PTAI 20.9.3
+description: In de opmerkingen bij de release PTAI 20.9.3 wordt beschreven wat nieuw of gewijzigd is, wat de opgeloste en bekende problemen zijn in Primetime Dynamic Ad Insertion in 2020.
 translation-type: tm+mt
-source-git-commit: e3d2811e40bc34bfdaacdab1529fa9b01e416a98
+source-git-commit: 6d25fc11bc4ca91556cae0b944322cd224c89fb5
 workflow-type: tm+mt
-source-wordcount: '962'
+source-wordcount: '1017'
 ht-degree: 0%
 
 ---
 
 
-# Opmerkingen bij de release Primetime Dynamic Ad Insertion 20.9.2
+# Opmerkingen bij de release Primetime Dynamic Ad Insertion 20.9.3
 
-Dynamische Ad Insertion 20.9.2 release notes beschrijven wat nieuw of gewijzigd is, problemen opgelost en bekende problemen in Primetime Dynamic Ad Insertion in 2020.
+Dynamische Ad Insertion 20.9.3 release notes beschrijven wat nieuw of gewijzigd is, problemen opgelost en bekende problemen in Primetime Dynamic Ad Insertion in 2020.
 
-## Nieuwe functies in PTAI 20.9.2
+## Nieuwe functies in PTAI 20.9.3
+
+**Wanneer:** Woensdag 30 september 2020, 15:30 - 18:30 uur (Oost)
+
+**Wijzigingen**
+
+* Bootstrap API-parameter toegevoegd `ptparallelstream`. Hierdoor kunnen klanten met spelers die CMAF-gedemuleerde audio- of videostreams aanvragen, parallel werken om ervoor te zorgen dat advertenties in audio- en videotracks consistent zijn. Stel de parameterwaarde in op true om deze functie in te schakelen of op weglaten om uit te schakelen.
+
+### Verbeteringen en correcties in vorige releaseversies
+
+#### Versie 20.9.2
 
 **Wanneer:** Dinsdag 15 september 2020, 15.30 tot 18.30 uur Oosterse tijd
 
@@ -28,8 +38,6 @@ Neem voor meer informatie of om deze functie in te schakelen contact op met uw m
    >[!NOTE]
    >
    >Deze time-out is alleen van toepassing op advertentieverzoeken en niet op creatieve verzoeken.
-
-### Verbeteringen en correcties in vorige releaseversies
 
 #### Versie 20.9.1
 
