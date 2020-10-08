@@ -5,7 +5,10 @@ seo-title: Apple FairPlay in TVSDK-toepassingen
 title: Apple FairPlay in TVSDK-toepassingen
 uuid: 5796d5af-0018-4c69-a755-65e4819ee838
 translation-type: tm+mt
-source-git-commit: 557f42cd9a6f356aa99e13386d9e8d65e043a6af
+source-git-commit: e1c6ab1d50f9262aaf70aef34854cf293fb4f30d
+workflow-type: tm+mt
+source-wordcount: '585'
+ht-degree: 0%
 
 ---
 
@@ -20,7 +23,7 @@ De code van de Loader van het Middel is verantwoordelijk voor de volgende taken:
 1. Maak de aanvraag op.
 1. Geef de benodigde informatie op aan de server, zodat de server kan beslissen of het verzoek is toegestaan.
 
-Als u bijvoorbeeld Primetime Cloud DRM van Adobe gebruikt, aangedreven door ExpressPlay, verzendt de Resource Loader de aanvraag naar:
+Als u bijvoorbeeld Adobe Primetime Cloud DRM gebruikt met ExpressPlay, verzendt de Resource Loader de aanvraag naar:
 
 ```
 https://fp-gen.service.expressplay.com
@@ -28,7 +31,7 @@ https://fp-gen.service.expressplay.com
 
 De Resource Loader maakt de aanvraag op en voegt een ExpressPlay-token toe dat het afspelen naar de URL toestaat. Wanneer het verwerven van het token ExpressPlay moet u rekening houden met verschillende opties. Deze opties worden bepaald door de manier waarop u de inhoud hebt verpakt.
 
-Wanneer u de inhoud verpakt, voegt de pakketsoftware URL&#39; `skd:` s in het M3U8-manifest in. Na de `skd:` ingang, kunt u om het even welke gegevens in manifest zetten. U kunt deze gegevens in uw toepassingscode gebruiken om de hierboven vermelde taken te voltooien. U kunt bijvoorbeeld zo gebruiken `skd:{content_id}` dat uw app de id kan bepalen van de inhoud die wordt afgespeeld en een token kan aanvragen voor die specifieke inhoud. U kunt bijvoorbeeld ook gebruiken `skd:{entitlement_server_url}?cid={content_id}`, zodat de URL van de machtigingsserver niet hoeft te zijn gecodeerd voor uw toepassing.
+Wanneer u de inhoud verpakt, voegt de pakketsoftware URL&#39; `skd:` s in het M3U8-manifest in. Na de `skd:` ingang, kunt u om het even welke gegevens in manifest zetten. U kunt deze gegevens in uw toepassingscode gebruiken om de hierboven vermelde taken te voltooien. U kunt bijvoorbeeld zo gebruiken `skd:{content_id}` dat uw toepassing de id kan bepalen van de inhoud die wordt afgespeeld en een token kan aanvragen voor die specifieke inhoud. U kunt bijvoorbeeld ook gebruiken `skd:{entitlement_server_url}?cid={content_id}`, zodat de URL van de machtigingsserver niet hoeft te zijn gecodeerd voor uw toepassing.
 
 U hebt mogelijk geen informatie in uw `skd:` URL nodig als u bij het afspelen de inhoud-id via andere kanalen kent. Het tweede voorbeeld is een ideale oplossing om uw opstelling te testen, maar u kunt het ook in een productiemilieu gebruiken.
 
