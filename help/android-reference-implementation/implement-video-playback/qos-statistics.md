@@ -5,7 +5,10 @@ seo-title: QoS-afspeelgegevens en apparaatstatistieken weergeven
 title: QoS-afspeelgegevens en apparaatstatistieken weergeven
 uuid: 8fc45a2f-03d4-4fa0-979b-eb816419c4f7
 translation-type: tm+mt
-source-git-commit: 31b6cad26bcc393d731080a70eff1c59551f1c8e
+source-git-commit: e1c6ab1d50f9262aaf70aef34854cf293fb4f30d
+workflow-type: tm+mt
+source-wordcount: '365'
+ht-degree: 0%
 
 ---
 
@@ -28,9 +31,11 @@ De `QoSManager` sporen statistieken QoS door apparateninformatie te krijgen, aan
 
    * Een QosManager maken:
       * Deze toepassing moet de functie voor de advertentieworkflow gebruiken
+
    QoSManager qosManager = new QosManagerOn();
 
    * Om een ManagerFactory te gebruiken om de vertoning van statistieken QoS toe te laten:
+
    qosManager = ManagerFactory.getQosManager()
    <b>true</b>, config, mediaPlayer);
 
