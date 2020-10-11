@@ -4,9 +4,9 @@ seo-title: Opmerkingen bij de release van Adobe Primetime
 description: 'null'
 seo-description: 'null'
 translation-type: tm+mt
-source-git-commit: 6d25fc11bc4ca91556cae0b944322cd224c89fb5
+source-git-commit: 7d74e526dbc4c9f623d1ec30e4bc70d9318a89f9
 workflow-type: tm+mt
-source-wordcount: '301'
+source-wordcount: '274'
 ht-degree: 0%
 
 ---
@@ -16,9 +16,9 @@ ht-degree: 0%
 
 Welkom bij de Adobe Primetime Release Notes. De documenten die in de linkernavigatie worden vermeld verstrekken versie-specifieke informatie, systeemvereisten, beperkingen, vaste kwesties, en bekende kwesties.
 
-## Verbeteringen en correcties in PTAI 20.9.3
+## Verbeteringen en correcties in PTAI 20.10.1
 
-De release was gericht op het verschaffen van de API-parameter voor bootstrap `ptparallelstream`, zodat klanten met spelers die CMAF-gedemuleerde audio- of videostreams aanvragen, tegelijkertijd kunnen werken om ervoor te zorgen dat advertenties in audio- en videotracks consistent zijn.
+De release was gericht op onderhoudsupdates.
 
 ## Oplossingen in TVSDK 3.12 Android
 
