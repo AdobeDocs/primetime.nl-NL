@@ -1,28 +1,36 @@
 ---
-title: Opmerkingen bij de release PTAI 20.9.3
-description: In de opmerkingen bij de release PTAI 20.9.3 wordt beschreven wat nieuw of gewijzigd is, wat de opgeloste en bekende problemen zijn in Primetime Dynamic Ad Insertion in 2020.
+title: Opmerkingen bij de release PTAI 20.10.1
+description: In de release van PTAI 20.10.1 wordt beschreven wat nieuw of gewijzigd is, wat de opgeloste en bekende problemen zijn in Primetime Ad Insertion in 2020.
 translation-type: tm+mt
-source-git-commit: 6d25fc11bc4ca91556cae0b944322cd224c89fb5
+source-git-commit: 7d74e526dbc4c9f623d1ec30e4bc70d9318a89f9
 workflow-type: tm+mt
-source-wordcount: '1017'
+source-wordcount: '1027'
 ht-degree: 0%
 
 ---
 
 
-# Opmerkingen bij de release Primetime Dynamic Ad Insertion 20.9.3
+# Opmerkingen bij de release Primetime Ad Insertion 20.10.1
 
-Dynamische Ad Insertion 20.9.3 release notes beschrijven wat nieuw of gewijzigd is, problemen opgelost en bekende problemen in Primetime Dynamic Ad Insertion in 2020.
+Opmerkingen bij de release van Primetime Ad Insertion 20.10.1 beschrijven nieuwe of gewijzigde, opgeloste problemen en bekende problemen in Primetime Ad Insertion in 2020.
 
-## Nieuwe functies in PTAI 20.9.3
+## Nieuwe functies in PTAI 20.10.1
+
+**Wanneer:** Dinsdag 13 oktober 2020, 03.00 - 07.00 uur Oosterse tijd
+
+**Wijzigingen**
+
+* Onderhoudsupdates.
+
+### Verbeteringen en correcties in vorige releaseversies
+
+#### Versie 20.9.3
 
 **Wanneer:** Woensdag 30 september 2020, 15:30 - 18:30 uur (Oost)
 
 **Wijzigingen**
 
 * Bootstrap API-parameter toegevoegd `ptparallelstream`. Hierdoor kunnen klanten met spelers die CMAF-gedemuleerde audio- of videostreams aanvragen, parallel werken om ervoor te zorgen dat advertenties in audio- en videotracks consistent zijn. Stel de parameterwaarde in op true om deze functie in te schakelen of op weglaten om uit te schakelen.
-
-### Verbeteringen en correcties in vorige releaseversies
 
 #### Versie 20.9.2
 
@@ -220,6 +228,6 @@ Wanneer de oplossing aan een gemelde kwestie wordt geassocieerd, wordt een verwi
 
 ## Bekende problemen en beperkingen
 
-**PTAI 20.3.3**
+**PTAI 20.10.1**
 
 Geen nieuwe beperking toegevoegd.
