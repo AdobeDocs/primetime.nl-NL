@@ -2,9 +2,9 @@
 title: Aan de slag met Adobe Primetime Ad Insertion
 description: Aan de slag met Adobe Primetime Ad Insertion
 translation-type: tm+mt
-source-git-commit: 7d74e526dbc4c9f623d1ec30e4bc70d9318a89f9
+source-git-commit: 2a9bb089cda2b315f91b30d5cab0db9b3e372799
 workflow-type: tm+mt
-source-wordcount: '284'
+source-wordcount: '278'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,7 @@ Nadat het systeem correct is opgezet, zou een typisch werkschema als volgt kunne
 
 1. Primetime-Ad Insertion haalt de aangevraagde stream(s) op van de CDN-inhoud, parseert/leest alle actiemiddelen, roept de advertentieserver aan en vervangt en verbreekt indien nodig de gegevens.
 
-1. Primetime Ad Insertion normaliseert manifest door middel van herschrijven bron URLs en het ontdekken of ad creatieve transcodering vereist, zie [just-in-time en transcodering](just-in-time-transcoding.md) en [verpakking](just-in-time-repackaging.md).
+1. Primetime-Ad Insertion normaliseert het manifest door bron-URL&#39;s opnieuw te schrijven en na te gaan of en creatieve elementen transcodering vereisen. <!-- see [Just-in-time ad transcoding](just-in-time-transcoding.md) and [packaging](just-in-time-repackaging.md).-->
 
 1. Primetime Ad Insertion haalt de vereiste en creatieve elementen op en voegt de juiste fragmenten in de manifesten in.
 
