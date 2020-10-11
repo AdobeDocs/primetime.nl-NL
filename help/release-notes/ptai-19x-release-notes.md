@@ -1,18 +1,18 @@
 ---
 title: Opmerkingen bij de release PTAI 19.11.1
-description: In de opmerkingen bij de release PTAI 19.11.1 wordt beschreven wat nieuw of gewijzigd is, wat de opgeloste en bekende problemen zijn in Primetime Dynamic Ad Insertion in 2019.
+description: In de release van PTAI 19.11.1 wordt beschreven wat nieuw of gewijzigd is, wat de opgeloste en bekende problemen zijn in Primetime Ad Insertion in 2019.
 translation-type: tm+mt
-source-git-commit: 369dc8d987f5d49467ec376d4df5ffc46ea6d36c
+source-git-commit: 7d74e526dbc4c9f623d1ec30e4bc70d9318a89f9
 workflow-type: tm+mt
-source-wordcount: '1974'
+source-wordcount: '1971'
 ht-degree: 0%
 
 ---
 
 
-# Opmerkingen bij de release Primetime Dynamic AD 19.11.1
+# Opmerkingen bij de release van Primetime Ad Insertion 19.11.1
 
-Opmerkingen bij de release Dynamische advertentie 19.11.1 beschrijven wat nieuw of gewijzigd is, problemen die zijn opgelost en bekende problemen in de dynamische invoeging van primetime in 2019.
+Opmerkingen bij de release van Primetime Ad Insertion 19.11.1 beschrijven nieuwe of gewijzigde, opgeloste problemen en bekende problemen in Primetime Ad Insertion in 2019.
 
 ## Nieuw in PTAI 19.11.1
 
@@ -88,6 +88,7 @@ Oplossing voor een bug waarbij Chromecast-spelers het afspelen onverwachts beëi
    * Toegevoegde creatieve URL-normalisatieregel voor Innovid, gebruikt door SSAI
    * De normalisatieregel die door CRS wordt gebruikt werd toegevoegd in een vroegere versie
    * TVSDK: De normalisatieregel om in de regels van CRS JSON toe te voegen werd verstrekt na een vroegere versie, maar om veilig te zijn, gelieve met uw Technische Manager van de Rekening te spreken om alle normalisatieregels te herzien u op zijn plaats hebt.
+
       >[!NOTE]
       >
       >De meeste innovatieve creatieve URL&#39;s worden getranscodeerd en zonder de normalisatieregel vastgezet. Soms worden echter innovatieve creatieve URL&#39;s met dynamische parameters aangetroffen. De normalisatieregel is nodig om deze instanties te behandelen.
@@ -102,7 +103,7 @@ Oplossing voor een bug waarbij Chromecast-spelers het afspelen onverwachts beëi
    * CRS: Toegevoegde workflow voor het opnieuw verpakken van advertenties naar de CMAF-indeling (HLS/fMP4)
 * SSAI: Probleem verholpen waarbij werd voorkomen dat ongedempte advertenties in ongedempte inhoud werden ingevoegd, wanneer zowel de inhoud als de advertentie geen audio-alleen streams hebben (EXT-X-STREAM-INF).
 * SSAI: Toegevoegde ondersteuning voor CDN-authokens (Limelight (LLNW) voor inhoudssegmenten
-   * Wanneer `pttoken=limelight` of `pttoken=llnw` wordt toegevoegd aan de laarzentrekker URL, zullen wij een geheime kopbal toevoegen wanneer het terugwinnen van de bron master playlist, dan zullen wij de vraagparameters van X-Adobe-Sig van LLNW kopbal aan de inhoudssegmenten toevoegen
+   * Wanneer `pttoken=limelight` of `pttoken=llnw` aan bootstrap URL wordt toegevoegd, zullen wij een geheime kopbal toevoegen wanneer het terugwinnen van de bron master playlist, dan zullen wij de vraagparameters van X-Adobe-Sig van LLNW kopbal aan de inhoudssegmenten toevoegen
 * SSAI: Er is nog een token-waarde (`pttoken=centurylink`) toegevoegd voor de ondersteuning van het CDN-auttoken van CenturyLink, die op 30 juli 2018 is uitgebracht
    * `pttoken=centurylink` heeft hetzelfde gedrag als `pttoken=level3`en beide waarden zijn geldig
 
@@ -119,9 +120,9 @@ Oplossing voor een bug waarbij Chromecast-spelers het afspelen onverwachts beëi
 
 **Wanneer:** Woensdag 10 april 2010 - 12:30 uur Oosterse tijd tot woensdag 10 april 19:30 uur Oosterse tijd
 
-* CRS: De API voor het opnieuw verpakken van CRS biedt geen ondersteuning meer voor HTTP POST-opdrachten. De API voor opnieuw verpakken van CRS leidt (301) HTTP POST-opdrachten automatisch om naar HTTPS
+* CRS: De API voor het opnieuw verpakken van CRS biedt geen ondersteuning meer voor HTTP POST-opdrachten. De API voor opnieuw verpakken van CRS leidt (301) HTTP-POST-opdrachten automatisch om naar HTTPS
    * Vanaf 20 mei wordt HTTP->HTTPS-omleiding voor HTTP POST-opdrachten uitgeschakeld
-   * Als u de API voor het opnieuw verpakken van CRS gebruikt om advertenties vooraf te verpakken, gelieve uw POST bevelen aan HTTPS tegen 20 Mei te schakelen
+   * Als u de API voor het opnieuw verpakken van CRS gebruikt om advertenties vooraf te verpakken, gelieve uw bevelen van de POST aan HTTPS tegen 20 Mei te schakelen
 * CRS: Opnieuw ontworpen de architectuur en het werkschema voor het uploaden van activa van CRS aan klanten&#39; CDN oorsprong
    * Taakprocessen per CDN-oorsprong worden gescheiden, dus uploadknelpunten voor één CDN-oorsprong hebben geen invloed op uploads naar andere CDN-oorsprong
    * Overige uitkeringen: De de baanverwerkingstijden van CRS en uploadsnelheden aan klanten&#39; CDN-oorsprong worden verbeterd
@@ -133,10 +134,10 @@ Oplossing voor een bug waarbij Chromecast-spelers het afspelen onverwachts beëi
    * Nieuw gedrag: Wanneer een pod toegang krijgt tot een opzoekrecord met CRS-middelen om het CRS-element in te voegen, wordt de vervaldatum van de opzoekrecord van het CRS-element in die pod met 30 dagen verlengd. Als gevolg hiervan worden vaak gebruikte CRS-elementen pas 30 dagen nadat deze voor het laatst zijn gebruikt uit de geheugencache van een pod verwijderd
    * Het nieuwe gedrag is systeembreed en kan worden uitgeschakeld als een prestatieverlies wordt gedetecteerd
 * SSAI: Bijgewerkt WebVTT manifest-manipulatie gedrag voor levende stromen slechts
-   * Vorig gedrag: Alleen in het WebVTT-manifest verwijdert u EXT-X-DISCONTINUITY-tags die voor elke ingevoegde en na het laatste segment van de ingevoegde en ingevoegd advertentie-einde zouden worden ingevoegd.
+   * Vorig gedrag: Alleen in het WebVTT-manifest verwijdert u EXT-X-DISCONTINUITY-tags die vóór elke ingevoegde en na het laatste segment van de ingevoegde en ingevoegd advertentie-einde zouden worden ingevoegd.
    * Nieuw gedrag: Een nieuwe parameter, vttdisc, met geaccepteerde waarden true en false, is toegevoegd aan de URL van de SSAI-bootstrap
       * vttdisc=true: EXT-X-DISCONTINUITY-tags worden ingevoegd in het WebVTT-manifest vóór elke ingevoegde advertentie en na het laatste segment van de ingevoegde en afgebroken audio, overeenkomstig het gedrag voor audio/video- en alleen-audio manifests
-      * vttdisc=false (zelfde als vorig gedrag): Alleen in het WebVTT-manifest verwijdert u EXT-X-DISCONTINUITY-tags die voor elke ingevoegde en na het laatste segment van de ingevoegde en ingevoegd advertentie-einde zouden worden ingevoegd.
+      * vttdisc=false (zelfde als vorig gedrag): Alleen in het WebVTT-manifest verwijdert u EXT-X-DISCONTINUITY-tags die vóór elke ingevoegde en na het laatste segment van de ingevoegde en ingevoegd advertentie-einde zouden worden ingevoegd.
       * Als de vttdisc-parameter wordt weggelaten of een andere waarde dan true/false heeft, wordt vttdisc standaard ingesteld op true
 * SSAI: Beveiligingsupdates en updates van softwareversies
    * Java: Bijgewerkte Java-versie voor ondersteuning van extra cdersuites voor ad-call die via TLS 1.2 (HTTPS) worden gestart
@@ -146,7 +147,7 @@ Oplossing voor een bug waarbij Chromecast-spelers het afspelen onverwachts beëi
 **Wanneer:** Woensdag 20 februari 2019 13:30 uur Oosterse tijd tot woensdag 20 februari 2019 3:30 uur Oosterse tijd
 
 * SSAI: URL&#39;s voor ClickThrough en ClickTracking voor videoadvertenties zijn toegevoegd aan de secundaire JSON v2-indeling.
-   * Onder de eigenschap &quot;trackingURLs&quot; zijn de namen van de waarde &#39;event&#39; &#39;clickthrough&#39; en &#39;clickTracking&#39;
+   * Onder de eigenschap &quot;trackingURLs&quot; zijn de namen van de waarde &quot;event&quot; &#39;clickTracking&#39; en &quot;clickTracking&quot;
    * Hun begintijd-waarden zullen het begin van de advertentie zijn
 * SSAI: Voor CRS-middelen, toegevoegde functionaliteit om de vervaldatum van het opzoekverslag van een CRS-middel met 30 dagen uit te breiden wanneer het wordt opgenomen
    * Vorig gedrag: Opzoekrecords voor CRS-middelen worden in elke pod in het geheugen opgeslagen. Opzoekrecords voor CRS-middelen worden 30 dagen na het toevoegen aan het geheugen automatisch verwijderd. Als u de opzoekrecord van een creatief CRS-element wilt herhalen in een pod nadat deze uit het geheugen is verwijderd, moet u driemaal op dat creatieve element in die pod terugkeren
@@ -169,18 +170,18 @@ Oplossing voor een bug waarbij Chromecast-spelers het afspelen onverwachts beëi
 
 **Wanneer:** Woensdag 30 januari 2019 13:30 uur Oosterse tijd tot woensdag 30 januari 30:30 uur Oosterse tijd
 
-* SSAI: De lookup key-structuur die SSAI gebruikt om CRS-elementen op te slaan en op te halen, is bijgewerkt om scenario&#39;s af te handelen waarbij advertentieleveranciers een dynamische id of Creative ID voor dezelfde advertentie hebben
+* SSAI: Bijgewerkt de raadpleging - zeer belangrijke structuur die SSAI gebruikt om activa van CRS op te slaan en terug te winnen, om scenario&#39;s te behandelen waar de dienstverleners een dynamische identiteitskaart of Creative identiteitskaart voor de zelfde advertentie hebben
    * Nieuwe lookup-key-structuur: Parameters voor zone, Creative URL en indeling (doelduur, uitvoerindeling, doel-CDN)
    * Oude zoeksleutelstructuur: Parameters voor zone, Advertentiesysteem, Advertentie-id, Creative ID, Creative URL en indeling (doelduur, uitvoerindeling, doel-CDN)
    * De opzoeksleutels voor bestaande CRS-elementen worden bijgewerkt zodat deze overeenkomen met de nieuwe structuur vóór de productievrijgave. Houd er echter rekening mee dat nieuwe elementen die tussen de opzoeksleutels zijn getranscodeerd, niet kunnen worden gebruikt. Als zo, zouden zij een nieuw CRS verzoek in werking stellen de volgende tijd zij na de versie worden ontmoet
 
-* CRS: De mogelijkheid toegevoegd om een lijst met CRS-aanvragen van specifieke advertentiesystemen, id&#39;s, creatieve id&#39;s, creatieve URL&#39;s en/of creatieve indeling te blokkeren of toe te staan
+* CRS: De mogelijkheid toegevoegd om CRS-verzoeken van specifieke advertentiesystemen, id&#39;s, creatieve id&#39;s, creatieve URL&#39;s en/of creatieve indeling te lijsten van afgewezen personen/lijsten van gewenste personen
 
    >Opmerking
    >
-   >Adobe voegt regels voor bloklijsten toe wanneer advertenties met dynamische waarden (bijvoorbeeld een dynamische parameter in een URL) voor dezelfde advertentie worden gevonden. Dergelijke regels van de bloklijst zullen worden onbruikbaar gemaakt nadat de dynamische component, of door de leverancier of door een normalisatieregel wordt opgelost.
+   >Adobe voegt regels voor lijsten van afgewezen personen toe wanneer advertentieproviders met dynamische waarden (bijvoorbeeld een dynamische parameter in URL) voor dezelfde advertentie worden gevonden. Dergelijke lijst van afgewezen personen regels zullen worden onbruikbaar gemaakt nadat de dynamische component, of door de leverancier of door een normalisatieregel wordt opgelost.
 
-   * Als u een bloklijst wilt toevoegen of lijstregel voor uw zone wilt toestaan, spreekt u dan voor hulp met uw Technical Account Manager.
+   * Als u een lijst van afgewezen personen of lijst van gewenste personen regel voor uw streek wilt toevoegen, gelieve uw Technische Manager van de Rekening voor hulp te spreken.
 
 ### Versie 19.1.1
 
