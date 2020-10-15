@@ -1,10 +1,13 @@
 ---
-title: Dynamische invoeging van primetime-advertentie
-seo-title: Help voor dynamische invoeging van Adobe Primetime
+title: Primetime Ad Insertion
+seo-title: Adobe Primetime Ad Insertion Help
 description: 'null'
 seo-description: 'null'
 translation-type: tm+mt
-source-git-commit: 115df527472bb0ac6b7d9bae921e80d4c92ddfd7
+source-git-commit: fac84687085f289e984c189665bfe775337592b3
+workflow-type: tm+mt
+source-wordcount: '426'
+ht-degree: 0%
 
 ---
 
@@ -13,9 +16,9 @@ source-git-commit: 115df527472bb0ac6b7d9bae921e80d4c92ddfd7
 
 Uw kijkers kijken tv niet alleen op tv, maar ook op telefoons, tablets, laptops en verschillende andere apparaten. Toch verwachten ze een ervaring van tv-kwaliteit. Daarom is het leveren van een dergelijke ervaring van essentieel belang, zelfs in complexe situaties zoals sportevenementen of wanneer u realtime programmatisch en beslissend werkt. Omdat de advertentielijst bederfelijk is, kunt u het zich niet veroorloven om uw technologie zelfs voor een ogenblik te laten mislukken.
 
-Met de functie Dynamische invoeging van Adobe Primetime kunt u doelgerichte en ervaren bewerkingen maken zonder fouten in het bufferen of afspelen. U kunt advertenties invoegen in live-, lineaire- of VOD-inhoud. U kunt de complexiteit ook minimaliseren door te profiteren van de bestaande integratie van Primetime met toonaangevende advertentieservers. Bied superieure en superieure ervaring met altijd kijkbaarheid en ondersteuning voor verwisselbare VAST-advertenties. Zorg voor een hogere betrokkenheid en meer inkomsten voor u door betere kijkervaringen voor uw klanten op verschillende apparaten te bieden.
+Met Adobe Primetime Ad Insertion kunt u doelgerichte en ervaren toepassingen maken zonder fouten in het bufferen of afspelen. U kunt advertenties invoegen in live-, lineaire- of VOD-inhoud. U kunt de complexiteit ook minimaliseren door te profiteren van de bestaande integratie van Primetime met toonaangevende advertentieservers. Bied superieure en superieure ervaring met altijd kijkbaarheid en ondersteuning voor verwisselbare VAST-advertenties. Zorg voor een hogere betrokkenheid en meer inkomsten voor u door betere kijkervaringen voor uw klanten op verschillende apparaten te bieden.
 
-## Help voor dynamische advertentie-invoeging bij primetime {#ad-insertion-user-guide}
+## Help bij primetime Ad Insertion {#ad-insertion-user-guide}
 
 In deze zelfHelp-handleiding wordt uitgelegd hoe u inhoud kunt monetiseren door gebruikersgerichte dynamische advertenties op de server in te voegen en het publiek te bereiken met gepersonaliseerde advertenties. Gebruik de navigatie op de linkerzijde om neer te boren om te weten hoe diverse configuraties en hoe te om toevoegingen te volgen.
 
@@ -23,7 +26,7 @@ In deze zelfHelp-handleiding wordt uitgelegd hoe u inhoud kunt monetiseren door 
 
 | Handboek | Beschrijving |
 |---|---|
-| [Opmerkingen bij de release Dynamische advertentie](../release-notes/ptai-19x-release-notes.md) | Verstrekt versie-specifieke informatie, systeemvereisten, beperkingen, vaste kwesties, en bekende kwesties. |
+| [Opmerkingen bij de release Primetime Ad Insertion](../release-notes/ptai-19x-release-notes.md) | Verstrekt versie-specifieke informatie, systeemvereisten, beperkingen, vaste kwesties, en bekende kwesties. |
 | [Overzicht van Manifest Server-interacties](msapi-topics/ms-overview.md) | Geeft een overzicht over de Manifest Server en hoe het de diverse systemen coördineert. |
 | [Foutopsporingsprogramma voor server Manifest](manifest-server-debugging-tool.md) | Geeft een inzicht in Manifest het zuiveren van de Server hulpmiddel en het zuiveren informatie het verstrekt om problemen te onderzoeken en op te nemen. |
 | [Overzicht van de Creative Repackaging Service](creative-repackaging-service/crs-overview.md) | Verklaart hoe CRS ervoor zorgt dat niet-HLS en creatief spel behoorlijk in HLS stromen terugspelen. |
@@ -41,7 +44,7 @@ In deze zelfHelp-handleiding wordt uitgelegd hoe u inhoud kunt monetiseren door 
 
 ## Nuttige bronnen {#helpful-resources}
 
-* [Adobe Primetime leren kennen](https://www.adobe.com/in/marketing/primetime.html)
+* [Get to Know Adobe Primetime](https://www.adobe.com/in/marketing/primetime.html)
 
 * [Gelijktijdige bewaking](https://tve.helpdocsonline.com/concurrency-monitoring-introduction)
 
@@ -49,4 +52,4 @@ In deze zelfHelp-handleiding wordt uitgelegd hoe u inhoud kunt monetiseren door 
 
 * [Adobe Primetime DRM-forums](https://forums.adobe.com/community/adobe_access)
 
-* [Bronnen voor Adobe Primetime-ontwikkelaars](https://www.adobe.com/devnet/primetime.html)
+* [Adobe Primetime Developer Resources](https://www.adobe.com/devnet/primetime.html)
