@@ -1,10 +1,13 @@
 ---
-title: Help bij Adobe Primetime programmeren
-seo-title: Help bij Adobe Primetime programmeren
+title: Help bij Adobe Primetime-programmering
+seo-title: Help bij Adobe Primetime-programmering
 description: 'null'
 seo-description: 'null'
 translation-type: tm+mt
-source-git-commit: 60931be251ea07e5c2200d8e8b16c14b18d908c2
+source-git-commit: fac84687085f289e984c189665bfe775337592b3
+workflow-type: tm+mt
+source-wordcount: '222'
+ht-degree: 0%
 
 ---
 
@@ -22,14 +25,14 @@ Zie de video voor meer informatie over de [huidige uitgebrachte versie](tvsdk-3x
 | [Opmerkingen bij de release Primetime](/help/release-notes/home.md) | Verstrekt versie-specifieke informatie, systeemvereisten, beperkingen, vaste kwesties, en bekende kwesties. |
 | [Help bij Primetime-migratie en -conversie](/help/migration-guides/home.md) | Verklaart het omzettings en migratieproces om van uw bestaande Reeks van de TVSDK van Primetime aan de volgende-generatiereeks over te gaan. |
 | [Referentie-implementatie](/help/android-reference-implementation/home.md) | Helpt de TVSDK te begrijpen en de functies te wijzigen om uw persoonlijke speler aan te passen. |
-| [Help voor dynamische advertentie-invoeging](/help/dynamic-ad-insertion/home.md) | Verklaart hoe te om inhoud te monetiseren door gebruiker-gerichte dynamische advertenties op de server op te nemen en publiek met gepersonaliseerde advertenties in dienst te nemen. |
+| [Help bij primetime Ad Insertion](/help/dynamic-ad-insertion/home.md) | Verklaart hoe te om inhoud te monetiseren door gebruiker-gerichte dynamische advertenties op de server op te nemen en publiek met gepersonaliseerde advertenties in dienst te nemen. |
 | [Digital Rights Management](/help/digital-rights-management/home.md) | Helpt u meer over diverse gebruikersscenario&#39;s in Digital Rights Management (DRM) te leren |
 | [Primetime-API-verwijzingen](/help/reference/api-references.md) | Verstrekt gedetailleerde informatie over functies TVSDK, gegevensstructuren en andere programmeringsconcepten. |
 | [Archieven](https://helpx.adobe.com/primetime/archives.html) | Download PDF&#39;s van de gearchiveerde documentatie. |
 
 ## Nuttige bronnen
 
-* [Adobe Primetime leren kennen](https://www.adobe.com/in/marketing/primetime.html)
+* [Get to Know Adobe Primetime](https://www.adobe.com/in/marketing/primetime.html)
 
 * [Gelijktijdige bewaking](https://tve.helpdocsonline.com/concurrency-monitoring-introduction)
 
@@ -37,4 +40,4 @@ Zie de video voor meer informatie over de [huidige uitgebrachte versie](tvsdk-3x
 
 * [Adobe Primetime DRM-forums](https://forums.adobe.com/community/adobe_access)
 
-* [Bronnen voor Adobe Primetime-ontwikkelaars](https://www.adobe.com/devnet/primetime.html)
+* [Adobe Primetime Developer Resources](https://www.adobe.com/devnet/primetime.html)
