@@ -4,7 +4,7 @@ seo-title: Opmerkingen bij de release van Adobe Primetime
 description: 'null'
 seo-description: 'null'
 translation-type: tm+mt
-source-git-commit: 7d74e526dbc4c9f623d1ec30e4bc70d9318a89f9
+source-git-commit: fac84687085f289e984c189665bfe775337592b3
 workflow-type: tm+mt
 source-wordcount: '274'
 ht-degree: 0%
@@ -41,7 +41,7 @@ Raadpleeg de voor meer informatie over de huidige uitgebrachte versie voor [iOS]
 | [Referentie-implementatie](/help/android-reference-implementation/home.md) | Helpt de TVSDK te begrijpen en de functies te wijzigen om uw persoonlijke speler aan te passen. |
 | [Primetime-API-verwijzingen](/help/reference/api-references.md) | Verstrekt gedetailleerde informatie over functies TVSDK, gegevensstructuren en andere programmeringsconcepten. |
 | [Digital Rights Management](/help/digital-rights-management/home.md) | Helpt u meer over diverse gebruikersscenario&#39;s in Digital Rights Management (DRM) te leren |
-| [Help bij Dynamic Ad Insertion](/help/dynamic-ad-insertion/home.md) | Verklaart hoe te om inhoud te monetiseren door gebruiker-gerichte dynamische advertenties op de server op te nemen en publiek met gepersonaliseerde advertenties in dienst te nemen. |
+| [Help bij primetime Ad Insertion](/help/dynamic-ad-insertion/home.md) | Verklaart hoe te om inhoud te monetiseren door gebruiker-gerichte dynamische advertenties op de server op te nemen en publiek met gepersonaliseerde advertenties in dienst te nemen. |
 | [Archieven](https://helpx.adobe.com/primetime/archives.html) | Download PDF&#39;s van de gearchiveerde documentatie. |
 
 ## Nuttige bronnen
