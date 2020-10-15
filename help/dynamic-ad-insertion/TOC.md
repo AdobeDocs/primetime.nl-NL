@@ -2,20 +2,20 @@
 cloud: experience-cloud
 product: adobe primetime
 audience: end-user
-user-guide-title: Help bij primetime Dynamic Ad Insertion
-user-guide-description: Explains how to monetize content by inserting user-targeted dynamic ads on the server and engage audience with personalized ads.
+user-guide-title: Help bij primetime Ad Insertion
+user-guide-description: Verklaart hoe te om inhoud te monetiseren door gebruiker-gerichte dynamische advertenties op de server op te nemen en publiek met gepersonaliseerde advertenties in dienst te nemen.
 translation-type: tm+mt
-source-git-commit: 7d74e526dbc4c9f623d1ec30e4bc70d9318a89f9
+source-git-commit: fac84687085f289e984c189665bfe775337592b3
 workflow-type: tm+mt
-source-wordcount: '232'
+source-wordcount: '250'
 ht-degree: 0%
 
 ---
 
 
-# Help bij Dynamic Ad Insertion {#ad-insertion}
+# Help bij primetime Ad Insertion {#ad-insertion}
 
-+ [Dynamisch Ad Insertion-overzicht](home.md)
++ [Primetime Ad Insertion - overzicht](home.md)
 + Aan de slag met Primetime Ad Insertion{#get-started}
    + [Overzicht](get-started-ptai.md)
    + [Voorbereiden op het gebruik van Primetime Ad Insertion](setup-ptai.md)
@@ -24,7 +24,7 @@ ht-degree: 0%
    + [Toevoegen en invoegen in live/lineaire streams gebruiken](ad-insertion-live-linear-stream.md)
    + [Toevoegen en invoegen voor VOD gebruiken](ad-insertion-vod.md)
    + [Opzetten en bijhouden](set-up-ad-tracking.md)
-+ [Opmerkingen bij de release Dynamic Ad Insertion](https://docs.adobe.com/content/help/en/primetime/release-notes/ptai/ptai-19x-release-notes.html)
++ [Opmerkingen bij de release Primetime Ad Insertion](https://docs.adobe.com/content/help/en/primetime/release-notes/ptai/ptai-19x-release-notes.html)
 + [Foutopsporingsprogramma voor server Manifest](manifest-server-debugging-tool.md)
 
 <!-- + [Server Side Ad Insertion debugging dashboard](ssai-debugging-dashboard.md)-->
