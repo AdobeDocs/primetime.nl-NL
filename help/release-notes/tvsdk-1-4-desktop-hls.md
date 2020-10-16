@@ -9,7 +9,7 @@ products: SG_PRIMETIME
 topic-tags: release-notes
 discoiquuid: e4437a26-9454-4da1-ae87-0fce664aac3d
 translation-type: tm+mt
-source-git-commit: 6da7d597503d98875735c54e9a794f8171ad408b
+source-git-commit: ba291a4615a8e0713cf610f76f41e328da96ec4d
 workflow-type: tm+mt
 source-wordcount: '5222'
 ht-degree: 0%
@@ -735,9 +735,6 @@ Mime-typen voor HLS-indeling waren hoofdlettergevoelig, dit was onjuist en is ge
 * Zendesk #1423 - De mislukking van de playback HLS vergrendelt omhoog Flash Player (zonder gemelde fout)
 * Zendesk #1674 - ClosedCaption Niet zichtbaar, corrigeer de weergave van 708 bijschriften wanneer 0x03 ETX-codes ontbreken.
 
-</p>
-</details>
-
 ## Bekende problemen {#known-issues}
 
 * Closed Caption werkt niet met alleen-audio inhoud omdat het bijschriftsysteem video nodig heeft om te werken.
@@ -756,7 +753,7 @@ _playbackManager.pause();
 
 * **Versie 1.4.13** PTPLAY-8501 - wanneer VMAP twee directe MP4 niet-getranscodeerde advertenties terugkeert, de zelfde daling terug en speelt tweemaal.
 
-* **Versie 1.4.2** In versie 16 van Flash Player werd een kwestie geïdentificeerd met ABR &quot;het schakelen neer&quot;logica, nadat de speler in een lege het bufferen gebeurtenis wordt. Het probleem voorkomt dat de bitsnelheid in slechte bandbreedteomgevingen wordt omgeschakeld wanneer de speler in een bufferstatus komt. Als u dit probleem wilt verhelpen, stelt u uw app in `BufferControlParameters.initialBufferTime` op hetzelfde als `BufferControlParameters.playbackBufferTime` tijdelijk tijdens de bufferstatus (dat wil zeggen voor een `BufferEvent.BUFFERING_BEGIN` gebeurtenis) en stelt u de toepassing vervolgens weer in op de ingestelde waarden voor de `BufferEvent.BUFFERING_END` gebeurtenis. De oplossing voor dit probleem is beschikbaar in de volgende patchrelease van Flash Player versie 16.
+* **Versie 1.4.2** In versie 16 van Flash Player werd een kwestie geïdentificeerd met ABR &quot;het schakelen neer&quot;logica, nadat de speler in een lege het bufferen gebeurtenis wordt. Het probleem voorkomt dat de bitsnelheid in slechte bandbreedteomgevingen omlaag gaat wanneer de speler in een bufferstatus komt. Als u dit probleem wilt verhelpen, stelt u uw app in `BufferControlParameters.initialBufferTime` op hetzelfde als `BufferControlParameters.playbackBufferTime` tijdelijk tijdens de bufferstatus (dat wil zeggen voor een `BufferEvent.BUFFERING_BEGIN` gebeurtenis) en stelt u de toepassing vervolgens weer in op de ingestelde waarden voor de `BufferEvent.BUFFERING_END` gebeurtenis. De oplossing voor dit probleem is beschikbaar in de volgende patchrelease van Flash Player versie 16.
 
 * **Versie 1.4.0**
 
