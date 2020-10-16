@@ -5,7 +5,10 @@ seo-title: Ondersteunde MP3- en MP4-functies
 title: Ondersteunde MP3- en MP4-functies
 uuid: 33e3130f-fc78-40b8-a4b7-2fcdd5a2b4f9
 translation-type: tm+mt
-source-git-commit: 592245f5a7186d18dabbb5a98a468cbed7354aed
+source-git-commit: ba291a4615a8e0713cf610f76f41e328da96ec4d
+workflow-type: tm+mt
+source-wordcount: '220'
+ht-degree: 0%
 
 ---
 
@@ -15,7 +18,7 @@ source-git-commit: 592245f5a7186d18dabbb5a98a468cbed7354aed
 Browser TVSDK steunt een aantal eigenschappen MP3 en MP4 die u kunt uitvoeren om functionaliteit aan uw toepassingen toe te voegen.
 * [MP3-audiofuncties - Core Playback](#core-playback)
 * [MP4-audiofuncties - Core Playback](#mp4-audio-features)
-* [MP4-videofuncties - Core-invoeging](#section_1A8CBC5AA4FA4477813FD9EFF26AC104)
+* [MP4-videofuncties - Core Ad Insertion](#section_1A8CBC5AA4FA4477813FD9EFF26AC104)
 
 >[!TIP]
 >
@@ -31,7 +34,7 @@ Browser TVSDK steunt een aantal eigenschappen MP3 en MP4 die u kunt uitvoeren om
 
 ## MP4-audiofuncties {#mp4-audio-features}
 
-### Core Playback
+### Core Playback {#mp4-core-playback}
 
 | Categorie | Inhoudstype | Functie | Flash | HTML5: FF, IE, Chrome, Android-chroom | HTML5: Safari, iOS Safari |
 |--- |--- |--- |--- |--- |--- |
@@ -43,5 +46,5 @@ Browser TVSDK steunt een aantal eigenschappen MP3 en MP4 die u kunt uitvoeren om
 
 | Categorie | Inhoudstype | Functie | Flash | HTML5: FF, IE, Chrome, Android-chroom | HTML5: Safari, iOS Safari |
 |--- |--- |--- |--- |--- |--- |
-| Toevoegen van advertentie | MP4 VOD | Pre-roll | Niet ondersteund | ![ondersteund pictogram](assets/supported15.png) | ![ondersteund pictogram](assets/supported15.png) |
-| Toevoegen van advertentie | MP4 VOD | Na de rol | Niet ondersteund | ![ondersteund pictogram](assets/supported15.png) | ![ondersteund pictogram](assets/supported15.png) |
+| Ad Insertion | MP4 VOD | Pre-roll | Niet ondersteund | ![ondersteund pictogram](assets/supported15.png) | ![ondersteund pictogram](assets/supported15.png) |
+| Ad Insertion | MP4 VOD | Na de rol | Niet ondersteund | ![ondersteund pictogram](assets/supported15.png) | ![ondersteund pictogram](assets/supported15.png) |
