@@ -3,11 +3,11 @@ cloud: experience-cloud
 product: adobe primetime
 audience: end-user
 user-guide-title: Help bij primetime-Digital Rights Management
-user-guide-description: Helps you learn more about various user scenarios in Digital Rights Management (DRM).
+user-guide-description: Helpt u meer over diverse gebruikersscenario's in Digital Rights Management (DRM) te leren.
 translation-type: tm+mt
 source-git-commit: 23a48208ac1d3625ae7d925ab6bfba8f2a980766
 workflow-type: tm+mt
-source-wordcount: '2202'
+source-wordcount: '2215'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 0%
    + [Certificaten](certificate-enrollment-guide/about-certs.md)
    + [Vereisten](certificate-enrollment-guide/prerequisites.md)
    + [Over rollen voor certificaatinschrijving](certificate-enrollment-guide/about-cert-enrollment.md)
-   + [M-aanvragers toevoegen](certificate-enrollment-guide/add-requesters.md)
+   + [Aanvragers toevoegen](certificate-enrollment-guide/add-requesters.md)
    + [Een secundaire beheerder maken](certificate-enrollment-guide/add-secondary-admin.md)
    + Certificaten aanvragen {#request-certs}
       + [Overzicht](certificate-enrollment-guide/request-certs/request-certs-overview.md)
@@ -40,7 +40,7 @@ ht-degree: 0%
    + [Belangrijkste kenmerken](drm-sdk-overview/key-features.md)
    + [Terminologie en kernbegrippen](drm-sdk-overview/terminology-and-core-concepts.md)
    + Workflow voor distributie van inhoud {#content-distribution-workflow}
-      + [SDUUR](drm-sdk-overview/content-distribution-workflow/content-preparation.md)
+      + [Inhoud voorbereiden](drm-sdk-overview/content-distribution-workflow/content-preparation.md)
       + [Inhoudsverwerving](drm-sdk-overview/content-distribution-workflow/content-acquisition.md)
    + Adobe Primetime DRM-componenten {#adobe-access-components}
       + [Overzicht](drm-sdk-overview/adobe-access-components/adobe-access-sdk.md)
@@ -217,16 +217,16 @@ ht-degree: 0%
       + [De ontwikkelomgeving instellen](protecting-content/setting-up-the-sdk/setup-dev-env.md)
       + [Adobe Primetime DRM-gebruikersgegevens](protecting-content/setting-up-the-sdk/drm-credentials.md)
       + [Certificaten aanvragen](protecting-content/setting-up-the-sdk/requesting-certs.md)
-      + [Normale gegevens opslaan](protecting-content/setting-up-the-sdk/storing-credentials.md)
+      + [Referenties opslaan](protecting-content/setting-up-the-sdk/storing-credentials.md)
    + Werken met DRM-beleid {#working-policies}
       + [Overzicht](protecting-content/working-policies-overview/working-with-policies.md)
       + [Een DRM-beleid maken met de Java API](protecting-content/working-policies-overview/creating-policy-using-java-api.md)
       + [Een DRM-beleid bijwerken met de Java API](protecting-content/working-policies-overview/updating-policy-using-java-api.md)
       + [Kritiek op DRM-beleid](protecting-content/working-policies-overview/policy-criticality.md)
       + [Werken met DRM-beleidsupdatelijsten](protecting-content/working-policies-overview/policy-update-lists/working-with-policy-update-lists.md)
-   + Licentiebestanden verpakken {#packaging-media}
+   + Mediabestanden verpakken {#packaging-media}
       + [Overzicht](protecting-content/packaging-media-overview/packaging-media-files.md)
-      + [Media verpakken](protecting-content/packaging-media-overview/content-packaging-options.md)
+      + [Verpakkingsopties](protecting-content/packaging-media-overview/content-packaging-options.md)
       + [Inhoud versleutelen](protecting-content/packaging-media-overview/encrypting-content.md)
       + [Gecodeerde bestandsinhoud controleren](protecting-content/packaging-media-overview/examining-encrypted-file-content.md)
    + Licenties vooraf genereren en insluiten {#pre-generating-and-embedded-licenses}
@@ -271,7 +271,7 @@ ht-degree: 0%
    + [Veelgestelde vragen over RBOP](RBOP/output-protection-faq.md)
 + Adobe Primetime DRM Reference Implementations 5.3.1 {#drm-reference-implementation-5-3-1}
    + [Informatie over de referentie-implementaties](drm-reference-implementations/overview.md)
-   + [Vergelijkbare workflow](drm-reference-implementations/typical-scenario.md)
+   + [Normale workflow](drm-reference-implementations/typical-scenario.md)
    + Gereedschappen voor opdrachtregels {#command-line-tools}
       + [Overzicht](drm-reference-implementations/command-line-tools/command-line-tools-overview.md)
       + [Vereisten voor opdrachtregelprogramma&#39;s](drm-reference-implementations/command-line-tools/requirements.md)
@@ -290,8 +290,8 @@ ht-degree: 0%
    + [DRM-licentiegenerator](drm-reference-implementations/command-line-tools/configure-command-line-tools/license-generator/license-generator-overview.md)
    + [DRM-licentie insluiten](drm-reference-implementations/command-line-tools/configure-command-line-tools/license-embedder/license-embedder-overview.md)
    + [AIR Publisher ID-hulpprogramma](drm-reference-implementations/command-line-tools/configure-command-line-tools/air-publisher-id-utility/air-publisher-id-utility-overview.md)
-   + [Configuratie licentie](drm-reference-implementations/license-server-and-wfp/license-server-and-wfp.md)
-   + configuratie {#configuration}
+   + [Licentieserver](drm-reference-implementations/license-server-and-wfp/license-server-and-wfp.md)
+   + Configuratie {#configuration}
       + [Eigenschappen van licentieserver](drm-reference-implementations/configuration/properties-file.md)
       + [Wachtwoorden voorbereiden voor de bestanden met servereigenschappen](drm-reference-implementations/configuration/config-prep-pws-for-server-props-files.md)
       + [Wachtwoorden voorbereiden met Ant](drm-reference-implementations/configuration/config-prep-pws-for-server-with-ant.md)
@@ -438,7 +438,7 @@ ht-degree: 0%
       + [Externe en lokale iOS-sleutellevering](aaxs-protecting-content/content-introduction/content-usage-rules/content-other-policy-options/content-remote-key-delivery.md)
       + [Domeinregistratie apparaatgroep](aaxs-protecting-content/content-introduction/content-usage-rules/content-domain-registration.md)
    + [Besturingselementen voor uitvoerbeveiliging](aaxs-protecting-content/content-introduction/content-usage-rules/output-protection/output-protection-controls.md)
-   + Media verpakken {#packaging-option}
+   + Verpakkingsopties {#packaging-option}
       + [Toetsrotatie](aaxs-protecting-content/content-introduction/packaging-options/content-key-rotation.md)
       + [Out-of-band licenties](aaxs-protecting-content/content-introduction/packaging-options/content-out-of-band-licenses.md)
       + [Tracks versleutelen](aaxs-protecting-content/content-introduction/packaging-options/content-encrypting-tracks.md)
@@ -511,7 +511,7 @@ ht-degree: 0%
 + Implementatie van Adobe Access-naslagwerken {#reference-implementation}
    + [Overzicht - De verwijzingsimplementaties gebruiken](aaxs-reference-implementations/overview.md)
    + [Opdrachtregelprogramma&#39;s voor het verpakken van inhoud en het maken van intrekkingslijsten ](aaxs-reference-implementations/command-line-tools/aaxs-ref-impl-command-line-overview.md)
-   + Licentiebeheer {#policy-manager}
+   + Beleidsbeheer {#policy-manager}
       + [Beleidsbeheer gebruiken](aaxs-reference-implementations/command-line-tools/policy-manager/using-aaxs-policy-manager.md)
       + [Eigenschappen van configuratiebestand](aaxs-reference-implementations/command-line-tools/policy-manager/config-file-properties.md)
       + [Gebruik van opdrachtregels](aaxs-reference-implementations/command-line-tools/policy-manager/command-line-usage.md)
