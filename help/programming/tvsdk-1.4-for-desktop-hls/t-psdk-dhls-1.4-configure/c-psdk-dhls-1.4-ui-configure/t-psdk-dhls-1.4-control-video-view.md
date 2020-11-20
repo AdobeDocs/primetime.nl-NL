@@ -37,8 +37,7 @@ U kunt het standaardgedrag voor de verhouding overschrijven door een ander *scha
    >
    >Bijvoorbeeld:
    >
-   >
-   ```
+   >```
    >public class CustomScalePolicy implements MediaPlayerViewScalePolicy { 
    >       /** 
    >         * Default constructor. 
