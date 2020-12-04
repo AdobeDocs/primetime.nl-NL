@@ -6,6 +6,9 @@ title: TimeRange, klasse
 uuid: af3ce5e6-44b5-457f-a6e7-aa232defb91e
 translation-type: tm+mt
 source-git-commit: bc35da8b258056809ceaf18e33bed631047bc81b
+workflow-type: tm+mt
+source-wordcount: '135'
+ht-degree: 0%
 
 ---
 
@@ -16,15 +19,15 @@ Met aangepaste advertentiemarkeringen kunt u een set tijdbereikspecificaties die
 
 <!--<a id="section_42EB6D62627A424ABA250E3246EFEFC3"></a>-->
 
-Elke `TimeRange` specificatie in de set vertegenwoordigt een segment in de afspeeltijdlijn dat intern door TVSDK wordt onderhouden en dat op de juiste wijze moet worden gemarkeerd als een periode die met advertenties verband houdt.
+Elke `TimeRange`-specificatie in de set vertegenwoordigt een segment in de afspeeltijdlijn dat intern door TVSDK wordt onderhouden en dat op de juiste wijze moet worden gemarkeerd als een periode met betrekking tot een advertentie.
 
-De `TimeRange` klasse is een eenvoudige gegevensstructuur die de startpositie en de eindpositie op de tijdlijn beschikbaar maakt. Deze twee alleen-lezen-eigenschappen onttrekken het idee van een tijdbereik in de afspeeltijdlijn.
+De klasse `TimeRange` is een eenvoudige gegevensstructuur die de startpositie en de eindpositie op de tijdlijn beschikbaar maakt. Deze twee alleen-lezen-eigenschappen onttrekken het idee van een tijdbereik in de afspeeltijdlijn.
 
 >[!TIP]
 >
 >Beide waarden worden uitgedrukt in milliseconden.
 
-Hier volgt een overzicht van de `TimeRange` klasse:
+Hier volgt een overzicht van de klasse `TimeRange`:
 
 ```java
 public final class TimeRange {
