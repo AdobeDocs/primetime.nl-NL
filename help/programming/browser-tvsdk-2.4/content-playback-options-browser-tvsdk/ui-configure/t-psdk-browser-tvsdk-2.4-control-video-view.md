@@ -6,6 +6,9 @@ title: De positie en grootte van de videoweergave bepalen
 uuid: d09dbc18-1ec0-4336-bf3f-7ff6c265c443
 translation-type: tm+mt
 source-git-commit: 592245f5a7186d18dabbb5a98a468cbed7354aed
+workflow-type: tm+mt
+source-wordcount: '317'
+ht-degree: 0%
 
 ---
 
@@ -16,23 +19,23 @@ U kunt de positie en grootte van de videoweergave bepalen met het MediaPlayerVie
 
 Browser TVSDK door gebrek probeert om de aspectverhouding van de videomening te handhaven wanneer de grootte of de positie van de video wegens een verandering door de toepassing, een profielschakelaar, een inhoudschakelaar, etc. verandert.
 
-U kunt het standaardgedrag voor de verhouding overschrijven door een ander *schaalbeleid* op te geven. Geef het schaalbeleid op met de `MediaPlayerView` eigenschap van het `scalePolicy` object. Het standaardschaalbeleid van `MediaPlayerView` wordt ingesteld met een instantie van de `MaintainAspectRatioScalePolicy` klasse. Als u het schaalbeleid opnieuw wilt instellen, vervangt u de standaardinstantie van `MaintainAspectRatioScalePolicy` Aan `MediaPlayerView.scalePolicy` door uw eigen beleid.
+U kunt het standaardgedrag van de aspectverhouding met voeten treden door een verschillend *schaalbeleid* te specificeren. Geef het schaalbeleid op met de eigenschap `MediaPlayerView` van het object. `scalePolicy` Het standaardschaalbeleid van `MediaPlayerView` wordt geplaatst met een geval van de `MaintainAspectRatioScalePolicy` klasse. Om het schaalbeleid terug te stellen, vervang de standaardinstantie van `MaintainAspectRatioScalePolicy` op `MediaPlayerView.scalePolicy` met uw eigen beleid.
 
 >[!IMPORTANT]
 >
->U kunt de `scalePolicy` eigenschap niet instellen op een null-waarde.
+>U kunt de eigenschap `scalePolicy` niet instellen op een null-waarde.
 
-## Niet-Flash fallback-scenario&#39;s {#non-flash-fallback-scenarios}
+## Niet-Flash fallbackscenario&#39;s {#non-flash-fallback-scenarios}
 
-In niet-Flash-fallbackscenario&#39;s zou het div-element van de video in de `View` constructor voor een juist schaalbeleid andere waarden dan nul moeten retourneren voor `offsetWidth` en `offsetHeight`. Als u een voorbeeld wilt geven van een onjuiste functie, kan het gebeuren dat wanneer de breedte en hoogte van de div-elementen van de video niet expliciet in css zijn ingesteld, de `View` constructor nul retourneert voor `offsetWidth` of `offsetHeight`.
+In niet-Flash fallback scenario&#39;s, voor schaalbeleid om correct te werken, zou het video div element dat in de `View` aannemer wordt gegeven niet-nul waarden voor `offsetWidth` en `offsetHeight` moeten terugkeren. Als u een voorbeeld van een onjuiste functie wilt weergeven, soms wanneer de breedte en hoogte van de div-elementen van de video niet expliciet zijn ingesteld in css, retourneert de constructor `View` nul voor `offsetWidth` of `offsetHeight`.
 
 >[!NOTE]
 >
 >CustomScalePolicy biedt beperkte ondersteuning voor een aantal browsers, met name IE, Edge en Safari 9. Voor deze browsers kan de native hoogte-breedteverhouding van de video niet worden gewijzigd. De positie en afmetingen van de video worden echter afgedwongen volgens het schaalbeleid.
 
-1. Implementeer de `MediaPlayerViewScalePolicy` interface om uw eigen schaalbeleid te maken.
+1. Implementeer de interface `MediaPlayerViewScalePolicy` om uw eigen schaalbeleid te maken.
 
-   De methode `MediaPlayerViewScalePolicy` heeft één methode:
+   De `MediaPlayerViewScalePolicy` heeft één methode:
 
    ```js
    /** 
@@ -64,7 +67,7 @@ In niet-Flash-fallbackscenario&#39;s zou het div-element van de video in de `Vie
    };
    ```
 
-1. Wijs uw implementatie toe aan de `MediaPlayerView` eigenschap.
+1. Wijs uw implementatie aan het `MediaPlayerView` bezit toe.
 
    ```js
    var view = new AdobePSDK.MediaPlayerView(videoDiv); 
