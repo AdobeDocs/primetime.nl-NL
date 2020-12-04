@@ -6,6 +6,9 @@ title: Bijhouden op fragmentniveau met behulp van laadgegevens
 uuid: a6572823-d525-4ce0-806a-3feb20678cb0
 translation-type: tm+mt
 source-git-commit: 5908e5a3521966496aeec0ef730e4a704fddfb68
+workflow-type: tm+mt
+source-wordcount: '358'
+ht-degree: 0%
 
 ---
 
@@ -22,7 +25,7 @@ TVSDK biedt ook informatie over de volgende gedownloade bronnen:
 
    U kunt de kwaliteit van de dienst (QoS) informatie over gedownloade middelen, zoals fragmenten en sporen, van de `LoadInfo` klasse lezen.
 
-1. Implementeer de `onLoadInfo` callback-gebeurtenislistener.
+1. Implementeer de callback-gebeurtenislistener `onLoadInfo`.
 1. Registreer de gebeurtenislistener, die door TVSDK wordt aangeroepen telkens wanneer een fragment is gedownload.
 1. Lees de gegevens van belang van de `LoadInfo` parameter die tot callback wordt overgegaan.
 
@@ -36,43 +39,43 @@ TVSDK biedt ook informatie over de volgende gedownloade bronnen:
     </thead>
     <tbody> 
       <tr> 
-      <td colname="col01"> <span class="codeph"> downloadDuration </span> </td> 
-      <td colname="col1"> <span class="codeph"> lang </span> </td> 
+      <td colname="col01"> <span class="codeph"> downloadDuration  </span> </td> 
+      <td colname="col1"> <span class="codeph"> lang  </span> </td> 
       <td colname="col2"> <p>De duur van de download in milliseconden. </p> <p>TVSDK maakt geen onderscheid tussen de tijd dat de client verbinding heeft gemaakt met de server en de tijd die nodig was om het volledige fragment te downloaden. Bijvoorbeeld, als een 10 MB segment 8 seconden aan download vergt, verstrekt TVSDK die informatie, maar vertelt u niet dat het 4 seconden tot de eerste byte en nog eens 4 seconden kostte om het volledige fragment te downloaden. </p> </td> 
       </tr> 
       <tr> 
-      <td colname="col01"> <span class="codeph"> mediaDuration </span> </td> 
-      <td colname="col1"> <span class="codeph"> lang </span> </td> 
+      <td colname="col01"> <span class="codeph"> mediaDuration  </span> </td> 
+      <td colname="col1"> <span class="codeph"> lang  </span> </td> 
       <td colname="col2"> De mediaduur van de gedownloade fragmenten in milliseconden. </td> 
       </tr> 
       <tr> 
-      <td colname="col01"> <span class="codeph"> periodIndex </span> </td> 
-      <td colname="col1"> <span class="codeph"> int </span> </td> 
+      <td colname="col01"> <span class="codeph"> periodIndex  </span> </td> 
+      <td colname="col1"> <span class="codeph"> int  </span> </td> 
       <td colname="col2"> De tijdlijntijdindex die is gekoppeld aan de gedownloade bron. </td> 
       </tr> 
       <tr> 
-      <td colname="col01"> <span class="codeph"> size </span> </td> 
-      <td colname="col1"> <span class="codeph"> lang </span> </td> 
+      <td colname="col01"> <span class="codeph"> size  </span> </td> 
+      <td colname="col1"> <span class="codeph"> lang  </span> </td> 
       <td colname="col2"> De grootte van de gedownloade bron in bytes. </td> 
       </tr> 
       <tr> 
-      <td colname="col01"> <span class="codeph"> trackIndex </span> </td> 
-      <td colname="col1"> <span class="codeph"> int </span> </td> 
+      <td colname="col01"> <span class="codeph"> trackIndex  </span> </td> 
+      <td colname="col1"> <span class="codeph"> int  </span> </td> 
       <td colname="col2"> de index van het overeenkomstige spoor, indien bekend; anders, 0. </td> 
       </tr> 
       <tr> 
-      <td colname="col01"> <span class="codeph"> trackName </span> </td> 
-      <td colname="col1"> <span class="codeph"> String </span> </td> 
+      <td colname="col01"> <span class="codeph"> trackName  </span> </td> 
+      <td colname="col1"> <span class="codeph"> String  </span> </td> 
       <td colname="col2"> de naam van de overeenkomstige spoorbaan, indien bekend; anders, null. </td> 
       </tr> 
       <tr> 
-      <td colname="col01"> <span class="codeph"> trackType </span> </td> 
-      <td colname="col1"> <span class="codeph"> String </span> </td> 
+      <td colname="col01"> <span class="codeph"> trackType  </span> </td> 
+      <td colname="col1"> <span class="codeph"> String  </span> </td> 
       <td colname="col2"> het type van het overeenkomstige spoor, indien bekend; anders, null. </td> 
       </tr> 
       <tr> 
-      <td colname="col01"> <span class="codeph"> type </span> </td> 
-      <td colname="col1"> <span class="codeph"> String </span> </td> 
+      <td colname="col01"> <span class="codeph"> type  </span> </td> 
+      <td colname="col1"> <span class="codeph"> String  </span> </td> 
       <td colname="col2"> Wat heeft TVSDK gedownload. Een van de volgende opties: 
       <ul id="ul_9C3BDEBD878544DA95C7FF81114F9B5C"> 
       <li id="li_A093552B492A44FD8B30785E465F6886">MANIFEST - Een afspeellijst/manifest </li> 
@@ -81,8 +84,8 @@ TVSDK biedt ook informatie over de volgende gedownloade bronnen:
       </ul> Soms is het mogelijk dat het type van de bron niet kan worden gedetecteerd. Als dit gebeurt, wordt FILE geretourneerd. </td> 
       </tr> 
       <tr> 
-      <td colname="col01"> <span class="codeph"> url </span> </td> 
-      <td colname="col1"> <span class="codeph"> String </span> </td> 
+      <td colname="col01"> <span class="codeph"> url  </span> </td> 
+      <td colname="col1"> <span class="codeph"> String  </span> </td> 
       <td colname="col2"> De URL die naar de gedownloade bron wijst. </td> 
       </tr> 
     </tbody> 
