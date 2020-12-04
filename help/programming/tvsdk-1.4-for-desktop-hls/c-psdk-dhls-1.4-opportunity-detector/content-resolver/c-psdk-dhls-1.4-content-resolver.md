@@ -6,6 +6,9 @@ title: Aangepaste opportuniteitsdetectors en contentoplossers
 uuid: 7bd04c8f-6f04-4321-88e8-9bb93251d940
 translation-type: tm+mt
 source-git-commit: adef0bbd52ba043f625f38db69366c6d873c586d
+workflow-type: tm+mt
+source-wordcount: '254'
+ht-degree: 0%
 
 ---
 
@@ -22,7 +25,7 @@ TVSDK bevat standaard opportuniteitsdetectoren:
 
 TVSDK bevat ook een standaardinhoudsoplosser die inhoud bevat die moet worden ingevoegd op basis van de metagegevenssleutel in het speleritem:
 
-* `AuditudeResolver`, in staat om te communiceren met Adobe Primetime en beslissingsservers (voorheen bekend als Auditude) en om ad-hocafbrekingen te retourneren die moeten worden geplaatst.
+* `AuditudeResolver`, geschikt voor communicatie met Adobe Primetime en beslissingsservers (voorheen Auditude genoemd) en het retourneren van ad-hoconderbrekingen die moeten worden geplaatst.
 
 U kunt de standaardopportuniteitsdetectors en inhoudsoplossers overschrijven om de advertentieworkflow op de volgende manieren aan te passen:
 
