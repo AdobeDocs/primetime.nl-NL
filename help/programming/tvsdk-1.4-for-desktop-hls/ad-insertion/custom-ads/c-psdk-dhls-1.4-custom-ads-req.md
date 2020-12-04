@@ -6,11 +6,14 @@ title: Aangepaste vereisten voor advertenties
 uuid: 6d4ba87b-ffe5-467d-8ab5-9795928c2f69
 translation-type: tm+mt
 source-git-commit: adef0bbd52ba043f625f38db69366c6d873c586d
+workflow-type: tm+mt
+source-wordcount: '353'
+ht-degree: 0%
 
 ---
 
 
-# Aangepaste vereisten voor advertenties {#custom-ad-requirements}
+# Aangepaste vereisten {#custom-ad-requirements}
 
 De TVSDK-speler kan VPAID-advertenties (Digital Video Player Ad-Interface Definition) afspelen en de laadstatus van de advertentie weergeven. Als de advertentie fouten bevat of het laden van advertenties te lang duurt, negeert TVSDK deze advertenties.
 
@@ -24,7 +27,7 @@ De TVSDK ondersteunt de volgende functies:
 * Lineaire VPAID-advertenties op video-on-demand (VOD)-inhoud
 * Flash VPAID-advertenties
 
-   VPAID-advertenties moeten zijn gebaseerd op Flash en de reactie op de advertentie moet het mediatype van de VPAID-advertentie identificeren als `application/x-shockwave-flash`.
+   VPAID-advertenties moeten op Flash zijn gebaseerd en in de reactie op de advertentie moet het mediatype van de VPAID-advertentie worden aangeduid als `application/x-shockwave-flash`.
 
 De volgende functies worden niet ondersteund:
 
@@ -33,7 +36,7 @@ De volgende functies worden niet ondersteund:
 * VPAID-advertenties in live-inhoud
 * JavaScript VPAID-advertenties
 
-## Status van laden {#section_5F55C0101CD44A65BCFE1D124CBDF239}
+## Status {#section_5F55C0101CD44A65BCFE1D124CBDF239} laden
 
 De TVSDK verzendt de volgende gebeurtenissen:
 
@@ -43,14 +46,14 @@ De TVSDK verzendt de volgende gebeurtenissen:
 * `AdPlaying`
 * `AdStopped`
 
-Na de `AdStopped` gebeurtenis wordt de video-inhoud door de TVSDK hervat.
+Na de gebeurtenis `AdStopped` hervat TVSDK de video-inhoud.
 
 >[!TIP]
 >
 >Als u de waarde nul opgeeft, probeert TVSDK de advertentie te laden totdat deze wordt geladen of een fout is opgetreden.
 
-## Advertenties negeren {#section_3EA452F420884335AE90DF23C17E416A}
+## Advertenties {#section_3EA452F420884335AE90DF23C17E416A} negeren
 
 Als de advertentie te lang duurt om te laden of als er fouten in de advertentie voorkomen, kan de TVSDK de advertentie negeren en wordt de volgende advertentie in de advertentiepod automatisch afgespeeld.
 
-Als de `AuditudeSettings.customAdLoadTimeout` instelling een aantal seconden groter dan nul opgeeft, probeert de TVSDK de advertentie naar de opgegeven duur te laden. Als de advertentie niet kan worden geladen, wordt de advertentie overgeslagen. Bijvoorbeeld, als u vormt `AuditudeSettings.customAdLoadTimeout:5`, probeert TVSDK om de advertentie voor een maximum van 5 seconden te laden. Als de advertentie nog steeds niet wordt geladen, wordt deze genegeerd.
+Als de instelling `AuditudeSettings.customAdLoadTimeout` een aantal seconden groter dan nul opgeeft, probeert de TVSDK de advertentie naar de opgegeven duur te laden. Als de advertentie niet kan worden geladen, wordt de advertentie overgeslagen. Als u bijvoorbeeld `AuditudeSettings.customAdLoadTimeout:5` configureert, probeert de TVSDK de advertentie maximaal 5 seconden te laden. Als de advertentie nog steeds niet wordt geladen, wordt deze genegeerd.
