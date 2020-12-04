@@ -6,6 +6,9 @@ title: Gebeurtenistypen en -klassen voor callbacks
 uuid: 13d7e939-ff45-4a52-bcbe-70abb56ac205
 translation-type: tm+mt
 source-git-commit: 040655d8ba5f91c98ed0584c08db226ffe1e0f4e
+workflow-type: tm+mt
+source-wordcount: '254'
+ht-degree: 0%
 
 ---
 
