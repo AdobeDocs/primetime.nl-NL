@@ -17,16 +17,16 @@ Voordat u de Adobe Primetime DRM-server kunt implementeren voor beveiligde strea
 
 Het pakket Primetime DRM Server for Protected Streaming bevat [!DNL flashaccesserver.war]. Als u:
 
-* Als u dit WAR-bestand wilt implementeren, moet u het kopiëren naar de [!DNL webapps] directory van Tomcat.
-* Als u eerder het WAR-bestand hebt geïmplementeerd, moet u mogelijk de onverpakte WAR-map ( [!DNL flashaccessserver] in de [!DNL webapps] map van Tomcat) verwijderen.
+* Als u dit WAR-bestand wilt implementeren, moet u het kopiëren naar de map [!DNL webapps] van Tomcat.
+* Als u eerder het WAR-bestand hebt geïmplementeerd, moet u mogelijk de onverpakte WAR-map verwijderen ( [!DNL flashaccessserver] in de map [!DNL webapps] van Tomcat).
 
-* Als u wilt voorkomen dat Tomcat WAR-bestanden uitpakt, bewerkt u het [!DNL server.xml] bestand in de [!DNL conf] directory van Tomcat en configureert u het `unpackWARs` kenmerk door dit in te stellen op `false`.
+* Als u wilt voorkomen dat Tomcat WAR-bestanden uitpakt, bewerkt u het [!DNL server.xml]-bestand in de map [!DNL conf] van Tomcat en configureert u het `unpackWARs`-kenmerk door dit in te stellen op `false`.
 
 >[!NOTE]
 >
->Als u Tomcat hebt gevormd om [!DNL commons-logging.jar] op het Klassepad van het Systeem (niet die voor de Server Primetime DRM voor Beschermde Streaming wordt vereist) te omvatten, dan moet u komma-registreren vormen om Log4J te gebruiken.
+>Als u Tomcat hebt geconfigureerd om [!DNL commons-logging.jar] op te nemen in het System classpath (niet vereist voor de Primetime DRM Server voor Protected Streaming), moet u komma&#39;s registreren configureren om Log4J te gebruiken.
 
-De server gebruikt eventueel een platformspecifieke bibliotheek ( [!DNL jsafe.dll] op Microsoft Windows of [!DNL libjsafe.so] op Linux voor optimale prestaties. U kunt de juiste bibliotheek voor uw platform kopiëren van [!DNL thirdparty/cryptoj/]*platform *naar een locatie die is opgegeven door de`PATH`omgevingsvariabele of`LD_LIBRARY_PATH`op Linux.
+De server gebruikt optioneel een platformspecifieke bibliotheek ( [!DNL jsafe.dll] op Microsoft Windows of [!DNL libjsafe.so] op Linux voor optimale prestaties. U kunt de desbetreffende bibliotheek voor uw platform kopiëren van [!DNL thirdparty/cryptoj/]*platform* naar een locatie die is opgegeven door de omgevingsvariabele `PATH` of `LD_LIBRARY_PATH` in Linux.
 
 >[!NOTE]
 >
