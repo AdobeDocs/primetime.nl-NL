@@ -6,6 +6,9 @@ title: Alternatieve audiotracks in de afspeellijst
 uuid: 47289392-ae4e-44b9-8d54-6ccee8fe1446
 translation-type: tm+mt
 source-git-commit: 812d04037c3b18f8d8cdd0d18430c686c3eee1ff
+workflow-type: tm+mt
+source-wordcount: '294'
+ht-degree: 0%
 
 ---
 
@@ -20,7 +23,7 @@ Met alternatieve audiotracks kunnen gebruikers schakelen tussen meerdere geluids
 >
 >De alternatieve audio wordt alleen gemengd met de videotrack van de hoofdmedia als de tijdstempels van de alternatieve track overeenkomen met de tijdstempels van de audio in de hoofdtrack.
 
-De hoofdaudiotrack wordt samen met het `default` label opgenomen in de audiotracks. Metagegevens voor de alternatieve audiostreams worden opgenomen in de afspeellijst in de `#EXT-X-MEDIA` tags met `TYPE=AUDIO`.
+De hoofdaudiotrack wordt opgenomen in de verzameling audiotracks met het label `default`. Metagegevens voor de alternatieve audiostreams worden met `TYPE=AUDIO` opgenomen in de afspeellijst in de `#EXT-X-MEDIA`-tags.
 
 Een M3U8-manifest dat bijvoorbeeld meerdere alternatieve audiostreams opgeeft, ziet er als volgt uit:
 
