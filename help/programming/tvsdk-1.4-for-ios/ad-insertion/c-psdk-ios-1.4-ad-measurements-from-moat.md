@@ -6,11 +6,14 @@ title: Metingen toevoegen van mat
 uuid: 76fa9ca0-58bd-44fe-82ce-72fdf6fcc28c
 translation-type: tm+mt
 source-git-commit: 5908e5a3521966496aeec0ef730e4a704fddfb68
+workflow-type: tm+mt
+source-wordcount: '292'
+ht-degree: 0%
 
 ---
 
 
-# Metingen toevoegen van mat{#ad-measurements-from-moat}
+# Metingen toevoegen uit moat{#ad-measurements-from-moat}
 
 TVSDK neemt informatie van FreeWheel en andere adservers die VAST-reacties verstrekken. FreeWheel verstrekt, binnen VAST reacties, informatie van de dienst van de Moat. De Maat-service telt en impressies met een nauwkeurigheid die beter laat zien dat creatieve mensen de belangen van een publiek vastleggen of negeren.
 
