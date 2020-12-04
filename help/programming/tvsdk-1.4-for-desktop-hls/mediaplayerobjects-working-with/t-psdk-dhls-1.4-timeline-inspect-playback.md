@@ -1,16 +1,19 @@
 ---
 description: U kunt een beschrijving verkrijgen van de tijdlijn die is gekoppeld aan het geselecteerde item dat door TVSDK wordt afgespeeld. Dit is vooral handig wanneer uw toepassing een aangepast scrub-bar besturingselement weergeeft waarin de inhoudssecties worden geïdentificeerd die overeenkomen met advertentie-inhoud.
 seo-description: U kunt een beschrijving verkrijgen van de tijdlijn die is gekoppeld aan het geselecteerde item dat door TVSDK wordt afgespeeld. Dit is vooral handig wanneer uw toepassing een aangepast scrub-bar besturingselement weergeeft waarin de inhoudssecties worden geïdentificeerd die overeenkomen met advertentie-inhoud.
-seo-title: De afspeeltijdlijn controleren
-title: De afspeeltijdlijn controleren
+seo-title: De afspeeltijdlijn Inspect
+title: De afspeeltijdlijn Inspect
 uuid: 2f903493-2d88-4af2-ac71-36300b49735b
 translation-type: tm+mt
 source-git-commit: 040655d8ba5f91c98ed0584c08db226ffe1e0f4e
+workflow-type: tm+mt
+source-wordcount: '251'
+ht-degree: 0%
 
 ---
 
 
-# De afspeeltijdlijn controleren{#inspect-the-playback-timeline}
+# De afspeeltijdlijn Inspect{#inspect-the-playback-timeline}
 
 U kunt een beschrijving verkrijgen van de tijdlijn die is gekoppeld aan het geselecteerde item dat door TVSDK wordt afgespeeld. Dit is vooral handig wanneer uw toepassing een aangepast scrub-bar besturingselement weergeeft waarin de inhoudssecties worden geïdentificeerd die overeenkomen met advertentie-inhoud.
 
@@ -19,11 +22,11 @@ Hier ziet u een voorbeeldimplementatie die u kunt zien in de volgende schermafbe
 
 ![](assets/inspect-playback.jpg){width=&quot;368.641pt&quot;}
 
-1. Open het `Timeline` object in de `MediaPlayer` toepassing met de `get` methode.
+1. Open het `Timeline`-object in `MediaPlayer` met de methode `get`.
 
-   De `Timeline` klasse omvat de informatie die verwant is aan de inhoud van de chronologie die met het media punt wordt geassocieerd dat momenteel door de `MediaPlayer` instantie wordt geladen. De `Timeline` klasse biedt toegang tot een alleen-lezen weergave van de onderliggende tijdlijn. De `Timeline` klasse biedt een methode getter voor het ophalen van alle geplaatste `TimelineMarker` objecten.
+   Met de klasse `Timeline` wordt de informatie ingekapseld die betrekking heeft op de inhoud van de tijdlijn die is gekoppeld aan het media-item dat momenteel wordt geladen door de instantie `MediaPlayer`. De klasse `Timeline` biedt toegang tot een alleen-lezen weergave van de onderliggende tijdlijn. De klasse `Timeline` biedt een methode getter voor het ophalen van alle geplaatste `TimelineMarker`-objecten.
 
-1. Doorloop de lijst met geretourneerde gegevens `TimelineMarkers` en gebruik deze om uw tijdlijn te implementeren.
+1. Doorloop de lijst van `TimelineMarkers` en gebruik de teruggekeerde informatie om uw chronologie uit te voeren.
 
        Een object TimelineMarker bevat twee gegevens:
    
