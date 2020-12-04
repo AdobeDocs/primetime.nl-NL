@@ -13,7 +13,7 @@ ht-degree: 0%
 ---
 
 
-# Zichtbaarheid van ondertiteling beheren{#control-closed-caption-visibility}
+# Zichtbaarheid van een gesloten bijschrift besturen{#control-closed-caption-visibility}
 
 U kunt de zichtbaarheid van gesloten bijschriften bepalen. Wanneer de zichtbaarheid is ingeschakeld, wordt de geselecteerde track weergegeven. Als u wijzigt welke track huidig is, blijft de zichtbaarheidsinstelling ongewijzigd.
 
@@ -31,7 +31,7 @@ U kunt de zichtbaarheid van gesloten bijschriften bepalen. Wanneer de zichtbaarh
 >public static const VISIBLE:String = visible;
 >```
 
-1. Wacht tot de status `MediaPlayer` ten minste de status PREPARED heeft (zie [Wacht op een geldige status](../../t-psdk-dhls-1.4-configure/c-psdk-dhls-1.4-ui-configure/t-psdk-dhls-1.4-ui-state-prepared-wait-for.md)).
+1. Wacht op `MediaPlayer` om minstens de PREPARED status (zie [Wacht op een geldige staat](../../t-psdk-dhls-1.4-configure/c-psdk-dhls-1.4-ui-configure/t-psdk-dhls-1.4-ui-state-prepared-wait-for.md)) te hebben.
 1. Als u de huidige zichtbaarheidsinstelling voor gesloten bijschriften wilt ophalen, gebruikt u de methode getter in `MediaPlayer`, die een zichtbaarheidswaarde retourneert.
 
    ```
