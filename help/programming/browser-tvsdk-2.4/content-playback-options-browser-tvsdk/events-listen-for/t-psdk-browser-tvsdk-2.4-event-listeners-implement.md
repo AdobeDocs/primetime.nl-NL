@@ -6,11 +6,14 @@ title: Gebeurtenislisteners en callbacks implementeren
 uuid: 63f62c60-505e-4f83-bc0d-58895d85a75a
 translation-type: tm+mt
 source-git-commit: 592245f5a7186d18dabbb5a98a468cbed7354aed
+workflow-type: tm+mt
+source-wordcount: '184'
+ht-degree: 1%
 
 ---
 
 
-# Gebeurtenislisteners en callbacks implementeren{#implement-event-listeners-and-callbacks}
+# Implementeer gebeurtenislisteners en callbacks{#implement-event-listeners-and-callbacks}
 
 Met gebeurtenishandlers kan Browser-TVSDK reageren op gebeurtenissen.
 
@@ -24,11 +27,11 @@ Uw toepassing moet gebeurtenislisteners implementeren voor Browser-TVSDK-gebeurt
 
       >[!IMPORTANT]
       >
-      >De afspeelgebeurtenis `STATUS_CHANGED` geeft de spelerstatus aan, inclusief fouten. Een van de staten kan de volgende stap van de speler beïnvloeden.
+      >De playbackgebeurtenis `STATUS_CHANGED` verstrekt de spelerstaat, met inbegrip van fouten. Een van de staten kan de volgende stap van de speler beïnvloeden.
 
    * **Andere gebeurtenissen**: Optioneel, afhankelijk van uw toepassing.
 
-      Als u bijvoorbeeld reclame in het afspelen opneemt, luistert u naar alle gebeurtenissen `AdBreakPlaybackEvent` `AdPlaybackEvent` en gebeurtenissen.
+      Als u bijvoorbeeld reclame in het afspelen opneemt, luistert u naar alle gebeurtenissen `AdBreakPlaybackEvent` en `AdPlaybackEvent`.
 
 1. Implementeer gebeurtenislisteners voor elke gebeurtenis.
 
@@ -37,7 +40,7 @@ Uw toepassing moet gebeurtenislisteners implementeren voor Browser-TVSDK-gebeurt
    Bijvoorbeeld:
 
    * Type gebeurtenis: `AdobePSDK.PSDKEventType.STATUS_CHANGED`
-   * Event, eigenschap: Op deze manier `MediaPlayerStatus.<event>` gebruikt:
+   * Event, eigenschap: `MediaPlayerStatus.<event>` wordt als volgt gebruikt:
 
 ```js
 player.addEventListener( 
@@ -52,7 +55,7 @@ onStatusChange = function (event) {
             break;
 ```
 
-1. Registreer de callback-listeners met het `MediaPlayer` object `MediaPlayer.addEventListener`.
+1. Registreer uw callback luisteraars met het `MediaPlayer` voorwerp door `MediaPlayer.addEventListener` te gebruiken.
 
    ```js
    player.addEventListener(AdobePSDK.PSDKEventType.STATUS_CHANGED,  
