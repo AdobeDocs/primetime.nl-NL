@@ -6,6 +6,9 @@ title: QoS-gebeurtenissen
 uuid: fd657cf0-c6d4-4e9a-b212-7d09d483cae9
 translation-type: tm+mt
 source-git-commit: 91cea7acb8127e02b82e5242b9ad6ab0d12ce0eb
+workflow-type: tm+mt
+source-wordcount: '219'
+ht-degree: 0%
 
 ---
 
@@ -14,7 +17,7 @@ source-git-commit: 91cea7acb8127e02b82e5242b9ad6ab0d12ce0eb
 
 TVSDK verstuurt QoS-gebeurtenissen (quality of service) om uw toepassing op de hoogte te stellen van gebeurtenissen die de berekening van QoS-statistieken kunnen beïnvloeden, zoals bufferen of zoeken.
 
-Wanneer u een melding wilt ontvangen over alle gebeurtenissen die betrekking hebben op QoS, registreert u gebeurtenislisteners bij het `MediaPlayer` object voor de volgende gebeurtenissen:
+Wanneer u een melding wilt ontvangen over alle gebeurtenissen die betrekking hebben op QoS, registreert u gebeurtenislisteners bij het object `MediaPlayer` voor de volgende gebeurtenissen:
 
 | Gebeurtenis | Betekenis |
 |---|---|
