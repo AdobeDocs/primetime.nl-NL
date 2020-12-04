@@ -6,6 +6,9 @@ title: Bijhouden op fragmentniveau met behulp van laadgegevens
 uuid: 41fb2b90-3531-4cc5-bf9b-01ccae04d2fd
 translation-type: tm+mt
 source-git-commit: 040655d8ba5f91c98ed0584c08db226ffe1e0f4e
+workflow-type: tm+mt
+source-wordcount: '297'
+ht-degree: 0%
 
 ---
 
@@ -14,7 +17,7 @@ source-git-commit: 040655d8ba5f91c98ed0584c08db226ffe1e0f4e
 
 U kunt de kwaliteit van de dienst (QoS) informatie over gedownloade middelen, zoals fragmenten en sporen, van de klasse lezen LoadInformation.
 
-1. Implementeer de `onLoadInformationAvailable` callback-gebeurtenislistener.
+1. Implementeer de callback-gebeurtenislistener `onLoadInformationAvailable`.
 
    ```
    private function onLoadInformationAvailable(event:LoadInformationEvent):void { 
@@ -30,7 +33,7 @@ U kunt de kwaliteit van de dienst (QoS) informatie over gedownloade middelen, zo
                                     onLoadInformationAvailable);
    ```
 
-1. Lees de gegevens van belang van de `LoadInformation` die tot callback wordt overgegaan.
+1. Lees de gegevens van belang van `LoadInformation` die tot callback wordt overgegaan.
 
    <table id="table_75E61A2EB25E435DB631166A7FF64757"> 
    <thead> 
@@ -42,37 +45,37 @@ U kunt de kwaliteit van de dienst (QoS) informatie over gedownloade middelen, zo
    </thead>
    <tbody> 
    <tr> 
-      <td colname="col01"> <span class="codeph"> downloadDuration </span> </td> 
+      <td colname="col01"> <span class="codeph"> downloadDuration  </span> </td> 
       <td colname="col1"> <p>Getal </p> </td> 
       <td colname="col2"> <p>De duur van de download in milliseconden. </p> <p>TVSDK maakt geen onderscheid tussen de tijd dat de client verbinding heeft gemaakt met de server en de tijd die nodig was om het volledige fragment te downloaden. Bijvoorbeeld, als een 10 MB segment 8 seconden aan download vergt, verstrekt TVSDK die informatie, maar vertelt u niet dat het 4 seconden tot de eerste byte en nog eens 4 seconden kostte om het volledige fragment te downloaden. </p> </td> 
    </tr> 
    <tr> 
-      <td colname="col01"> <span class="codeph"> mediaDuration </span> </td> 
+      <td colname="col01"> <span class="codeph"> mediaDuration  </span> </td> 
       <td colname="col1"> <p>Getal </p> </td> 
       <td colname="col2"> De mediaduur van de gedownloade fragmenten in milliseconden. </td> 
    </tr> 
    <tr> 
-      <td colname="col01"> <span class="codeph"> size </span> </td> 
+      <td colname="col01"> <span class="codeph"> size  </span> </td> 
       <td colname="col1"> <p>Getal </p> </td> 
       <td colname="col2"> De grootte van de gedownloade bron in bytes. </td> 
    </tr> 
    <tr> 
-      <td colname="col01"> <span class="codeph"> trackIndex </span> </td> 
+      <td colname="col01"> <span class="codeph"> trackIndex  </span> </td> 
       <td colname="col1"> <p>int </p> </td> 
       <td colname="col2"> de index van het overeenkomstige spoor, indien bekend; anders, 0. </td> 
    </tr> 
    <tr> 
-      <td colname="col01"> <span class="codeph"> trackName </span> </td> 
+      <td colname="col01"> <span class="codeph"> trackName  </span> </td> 
       <td colname="col1"> <p>String </p> </td> 
       <td colname="col2"> de naam van de overeenkomstige spoorbaan, indien bekend; anders, null. </td> 
    </tr> 
    <tr> 
-      <td colname="col01"> <span class="codeph"> trackType </span> </td> 
+      <td colname="col01"> <span class="codeph"> trackType  </span> </td> 
       <td colname="col1"> <p>String </p> </td> 
       <td colname="col2"> het type van het overeenkomstige spoor, indien bekend; anders, null. </td> 
    </tr> 
    <tr> 
-      <td colname="col01"> <span class="codeph"> type </span> </td> 
+      <td colname="col01"> <span class="codeph"> type  </span> </td> 
       <td colname="col1"> <p>String </p> </td> 
       <td colname="col2"> Wat heeft TVSDK gedownload. Een van de volgende opties: 
       <ul id="ul_FA02F42D109344F4866073908CA4E835"> 
@@ -82,7 +85,7 @@ U kunt de kwaliteit van de dienst (QoS) informatie over gedownloade middelen, zo
       </ul> Soms is het mogelijk dat het type van de bron niet kan worden gedetecteerd. Als dit gebeurt, wordt FILE geretourneerd. </td> 
    </tr> 
    <tr> 
-      <td colname="col01"> <span class="codeph"> url </span> </td> 
+      <td colname="col01"> <span class="codeph"> url  </span> </td> 
       <td colname="col1"> <p>String </p> </td> 
       <td colname="col2"> De URL die naar de gedownloade bron wijst. </td> 
    </tr> 
