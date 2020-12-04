@@ -23,11 +23,11 @@ In Browser TVSDK, kunt u aan een specifieke positie (tijd) in een stroom zoeken.
 
 1. Wacht tot Browser TVSDK geldig is voor zoeken.
 
-   Geldige statussen worden BEREID, VOLTOOID, GEPAUZEERD en AFGESPEELD. Als u in een geldige status werkt, weet u zeker dat de mediabrondel is geladen. Wanneer de speler zich niet in een geldige, doorzoekbare status bevindt, wordt een `IllegalStateException`fout gegenereerd wanneer u de volgende methoden probeert aan te roepen.
+   Geldige statussen worden BEREID, VOLTOOID, GEPAUZEERD en AFGESPEELD. Als u in een geldige status werkt, weet u zeker dat de mediabrondel is geladen. Wanneer de speler zich niet in een geldige, doorzoekbare status bevindt, wordt een `IllegalStateException` gegenereerd als u de volgende methoden probeert aan te roepen.
 
-   U kunt bijvoorbeeld wachten tot Browser-TVSDK wordt geactiveerd `AdobePSDK.MediaPlayerStatusChangeEvent` met een `event.status` van `AdobePSDK.MediaPlayerStatus.PREPARED`.
+   U kunt bijvoorbeeld wachten tot Browser-TVSDK `AdobePSDK.MediaPlayerStatusChangeEvent` heeft geactiveerd met een `event.status` van `AdobePSDK.MediaPlayerStatus.PREPARED`.
 
-1. Geef de gewenste zoekpositie als parameter door aan de `MediaPlayer.seek` methode in milliseconden.
+1. Geef de gewenste zoekpositie door aan de methode `MediaPlayer.seek` als een parameter in milliseconden.
 
    Hierdoor wordt de afspeelkop naar een andere positie in de stream verplaatst.
 
@@ -39,7 +39,7 @@ In Browser TVSDK, kunt u aan een specifieke positie (tijd) in een stroom zoeken.
    void seek(long position) throws IllegalStateException;
    ```
 
-1. Wacht tot Browser TVSDK de `AdobePSDK.PSDKEventType.SEEK_END` gebeurtenis activeert, die de aangepaste positie in het `actualPosition` kenmerk van de gebeurtenis retourneert:
+1. Wacht op Browser TVSDK om de gebeurtenis `AdobePSDK.PSDKEventType.SEEK_END` teweeg te brengen, die de aangepaste positie in het `actualPosition` attribuut van de gebeurtenis terugkeert:
 
    ```js
    player.addEventListener(AdobePSDK.PSDKEventType.SEEK_END, onSeekComplete); 
@@ -53,7 +53,7 @@ In Browser TVSDK, kunt u aan een specifieke positie (tijd) in een stroom zoeken.
    * Het afspeelgedrag wordt beïnvloed als een zoekopdracht of een andere verplaatsing in het midden van een advertentiesleutel eindigt of als een zoekopdracht of andere verplaatsing wordt overgeslagen en afgebroken.
    * U kunt alleen zoeken in de doorzoekbare duur van het element. Voor VOD, dat van 0 door de duur van het activa is.
 
-1. Voor de zoekbalk die in het bovenstaande voorbeeld is gemaakt, luistert u of de gebruiker `setPositionChangeListener()` scrubt:
+1. Voor de zoekbalk die in het bovenstaande voorbeeld is gemaakt, luistert u naar `setPositionChangeListener()` om te zien wanneer de gebruiker scrubt:
 
    ```js
    seekBar.setPositionChangeListener(function (pos) { 
