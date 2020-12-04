@@ -33,7 +33,7 @@ ht-degree: 0%
    + Aan de slag met Manifest Server {#get-started}
       + [Een opdracht naar de manifest-server verzenden](msapi-topics/ms-getting-started/ms-sending-cmd.md)
       + [Query-parameters van de server manipuleren](msapi-topics/ms-getting-started/ms-api-query-params.md)
-   + Aanvragen voor invoeging toevoegen {#ad-insert}
+   + Aanvragen {#ad-insert} toevoegen
       + [Verzoek om inlassing](msapi-topics/ms-insert-ads/ms-ad-insert.md)
       + [Optionele queryparameters per client en situatie](msapi-topics/ms-insert-ads/ms-api-query-param-situation.md)
       + [HLS-speler helpen overschakelen naar failover-/back-upstreams](msapi-topics/ms-insert-ads/hls-switching-to-failover.md)
