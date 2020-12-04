@@ -20,7 +20,7 @@ Oplossen en laden van advertenties kan een onaanvaardbare wachttijd veroorzaken 
 
 * Eenvoudig proces voor het oplossen en laden van bestanden:
 
-   1. TVSDK downloadt een manifest (playlist) en *lost* alle advertenties op.
+   1. TVSDK downloadt manifest (playlist) en *verhelpt* alle advertenties.
    1. TVSDK *laadt* alle advertenties en plaatst deze op de tijdlijn.
    1. TVSDK verplaatst de speler naar de status PREPARED en begint met afspelen van inhoud.
 
@@ -29,7 +29,7 @@ Oplossen en laden van advertenties kan een onaanvaardbare wachttijd veroorzaken 
 * *Lazy advertentie laden*:
 
    1. TVSDK downloadt een afspeellijst en *lost* alle advertenties op.
-   1. TVSDK *laadt* pre-roladvertenties, verplaatst de speler naar de status PREPARED en begint met het afspelen van inhoud.
+   1. TVSDK *laadt* pre-roll advertenties, verplaatst de speler naar de status PREPARED en begint de inhoud af te spelen.
    1. TVSDK *laadt* de resterende advertenties en plaatst deze op de tijdlijn wanneer het afspelen plaatsvindt.
 
    Met deze functie wordt het basisproces verbeterd doordat de speler in de status PREPARED wordt geplaatst voordat alle advertenties worden geladen.
@@ -57,7 +57,7 @@ Oplossen en laden van advertenties kan een onaanvaardbare wachttijd veroorzaken 
 >* Als er meerdere ad-hocafbrekingen tegelijk voorkomen (VMAP), worden deze tegelijkertijd opgelost.
 >* Het wordt afgeraden de waarde *setDelayAdLoadingTolerance() *te verlagen tot onder de standaardwaarde (5 seconden). Hierdoor kan de speler onnodig &quot;bufferen&quot;.
 >* Lazy ad Resolving heeft geen invloed op pre-roll advertenties.
->* Het luie Oplossen van Advertenties wordt momenteel gesteund met Auditude-Insteekmodule. Het wordt aanbevolen ** setDelayAdLoadingto niet in te stellen op true als u een aangepaste resolver gebruikt.
+>* Het luie Oplossen van Advertenties wordt momenteel gesteund met Auditude-Insteekmodule. Het wordt aanbevolen *setDelayAdLoading* niet in te stellen op true als u een aangepaste resolver gebruikt.
 
 >
 
