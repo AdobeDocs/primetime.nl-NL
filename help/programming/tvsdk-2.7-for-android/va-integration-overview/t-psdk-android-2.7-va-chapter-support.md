@@ -6,13 +6,16 @@ title: Hoofdstukondersteuning implementeren
 uuid: f62a8244-6393-4a38-9ae2-8ac31f6a8a06
 translation-type: tm+mt
 source-git-commit: 812d04037c3b18f8d8cdd0d18430c686c3eee1ff
+workflow-type: tm+mt
+source-wordcount: '62'
+ht-degree: 0%
 
 ---
 
 
-# Hoofdstukondersteuning implementeren {#implement-chapter-support}
+# Hoofdstukondersteuning {#implement-chapter-support} implementeren
 
-U kunt *aangepaste* hoofdstukken voor het bijhouden van video&#39;s definiëren en bijhouden in toepassingen die zijn gebaseerd op TVSDK.
+U kunt *aangepaste* hoofdstukken definiëren en bijhouden voor videotracering in toepassingen die zijn gebaseerd op TVSDK.
 
 De hoofdstukken van de douane worden beheerd door de toepassing, en zijn gebaseerd op CMS gegevens of op een andere manier die de toepassing gebruikt om hoofdstukken te bepalen.
 
