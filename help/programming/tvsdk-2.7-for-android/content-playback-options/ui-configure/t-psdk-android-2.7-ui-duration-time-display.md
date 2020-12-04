@@ -6,16 +6,19 @@ title: De duur, de huidige tijd en de resterende tijd van de video weergeven
 uuid: 13627fa2-8cd8-4336-bc4b-7e3226330389
 translation-type: tm+mt
 source-git-commit: 812d04037c3b18f8d8cdd0d18430c686c3eee1ff
+workflow-type: tm+mt
+source-wordcount: '399'
+ht-degree: 0%
 
 ---
 
 
-# De duur, de huidige tijd en de resterende tijd van de video weergeven {#display-the-duration-current-time-and-remaining-time-of-the-video}
+# De duur, de huidige tijd en de resterende tijd van de video {#display-the-duration-current-time-and-remaining-time-of-the-video} weergeven
 
 U kunt TVSDK gebruiken om informatie op te halen over de positie van de speler in de media en deze weer te geven op de zoekbalk.
 
 1. Wacht tot de speler zich ten minste in de staat PREPARED bevindt.
-1. Haal de huidige tijd van de afspeelkop op met de `MediaPlayer.getCurrentTime` methode.
+1. Haal de huidige playhead tijd door `MediaPlayer.getCurrentTime` methode terug te gebruiken.
 
    Hiermee wordt de huidige positie van de afspeelkop op de virtuele tijdlijn in milliseconden geretourneerd. De tijd wordt berekend ten opzichte van de opgeloste stream die meerdere instanties van alternatieve inhoud kan bevatten, zoals meerdere advertenties of ad-einden die in de hoofdstream worden gespliceerd. Voor live/lineaire streams bevindt de geretourneerde tijd zich altijd in het bereik van het afspeelvenster.
 
@@ -24,22 +27,22 @@ U kunt TVSDK gebruiken om informatie op te halen over de positie van de speler i
    ```
 
 1. Haal het afspeelbereik van de stream op en bepaal de duur.
-   1. Gebruik de `MediaPlayer.getPlaybackRange` methode om het tijdbereik van de virtuele tijdlijn op te halen.
+   1. Gebruik de methode `MediaPlayer.getPlaybackRange` om het tijdbereik van de virtuele tijdlijn op te halen.
 
       ```java
       TimeRange getPlaybackRange() throws MediaPlayerException;
       ```
 
-   1. Gebruik de `MediaPlayer.getPlaybackRange` methode om het tijdbereik van de virtuele tijdlijn op te halen.
+   1. Gebruik de methode `MediaPlayer.getPlaybackRange` om het tijdbereik van de virtuele tijdlijn op te halen.
 
       * Bij VOD begint het bereik altijd met nul en is de eindwaarde gelijk aan de som van de duur van de hoofdinhoud en de duur van de extra inhoud in de stream (advertenties).
       * Voor een lineair/actief-element vertegenwoordigt het bereik van het afspeelvenster. Dit bereik verandert tijdens het afspelen.
 
-         TVSDK roept de `ITEM_Updated` callback aan om erop te wijzen dat het media punt werd verfrist en dat zijn attributen, met inbegrip van de playbackwaaier, werden bijgewerkt.
+         TVSDK roept `ITEM_Updated` callback om erop te wijzen dat het media punt werd verfrist en dat zijn attributen, met inbegrip van de playbackwaaier, werden bijgewerkt.
 
-1. Gebruik de methoden die beschikbaar zijn op `MediaPlayer` en op de `SeekBar` klasse in de Android-SDK om de zoekbalkparameters in te stellen.
+1. Gebruik de methoden die beschikbaar zijn op `MediaPlayer` en op de `SeekBar`-klasse in de Android-SDK om de zoekbalkparameters in te stellen.
 
-   Hier ziet u bijvoorbeeld een mogelijke indeling die de zoekbalk en twee `TextView` elementen bevat.
+   Hier ziet u bijvoorbeeld een mogelijke lay-out die de zoekbalk en twee `TextView` elementen bevat.
 
    ```xml
    <LinearLayout 
@@ -77,7 +80,7 @@ U kunt TVSDK gebruiken om informatie op te halen over de positie van de speler i
 
    ![](assets/seek-bar.jpg){width=&quot;477.000pt&quot;}
 
-   In het volgende voorbeeld wordt de klasse `Clock.java` `ReferencePlayer`helper, die beschikbaar is in, gebruikt als de timer. Deze klasse stelt een gebeurtenislistener in en activeert elke seconde een `onTick` gebeurtenis of een andere time-outwaarde die u kunt opgeven.
+   In het volgende voorbeeld wordt de hulpklasse `Clock.java`, die beschikbaar is in `ReferencePlayer`, gebruikt als de timer. Deze klasse stelt een gebeurtenislistener in en activeert elke seconde een gebeurtenis `onTick` of een andere time-outwaarde die u kunt opgeven.
 
    ```java
    playbackClock = new Clock(PLAYBACK_CLOCK, CLOCK_TIMER); 
@@ -90,7 +93,7 @@ U kunt TVSDK gebruiken om informatie op te halen over de positie van de speler i
    playbackClock.addClockEventListener(playbackClockEventListener);
    ```
 
-   In dit voorbeeld wordt de huidige positie van de mediaspeler opgehaald en wordt de zoekbalk bijgewerkt op elke klok. De twee `TextView` elementen worden gebruikt om de eindpositie van de huidige tijd en het afspeelbereik als numerieke waarden te markeren.
+   In dit voorbeeld wordt de huidige positie van de mediaspeler opgehaald en wordt de zoekbalk bijgewerkt op elke klok. De twee `TextView`-elementen worden gebruikt om de huidige tijd en de eindpositie van het afspeelbereik als numerieke waarden te markeren.
 
    ```java
    @Override 
