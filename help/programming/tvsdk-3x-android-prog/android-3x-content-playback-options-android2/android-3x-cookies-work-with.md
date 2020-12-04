@@ -6,6 +6,9 @@ title: Werken met cookies
 uuid: 618bc59a-032d-445e-a867-ed2bf260570d
 translation-type: tm+mt
 source-git-commit: 5ada8632a7a5e3cb5d795dc42110844244656095
+workflow-type: tm+mt
+source-wordcount: '402'
+ht-degree: 0%
 
 ---
 
@@ -27,7 +30,7 @@ Hier volgt een voorbeeld van een aanvraag aan de sleutelserver met verificatie:
 
 Werken met cookies:
 
-1. Maak een cookie `cookieManager` en voeg uw cookies voor de URI&#39;s toe aan uw cookieStore.
+1. Maak een `cookieManager` en voeg uw cookies voor de URI&#39;s toe aan uw cookieStore.
 
    Bijvoorbeeld:
 
@@ -45,9 +48,9 @@ Werken met cookies:
    >
    >Wanneer 302 omleiding wordt toegelaten, kan het advertentieverzoek aan een domein worden opnieuw gericht dat van het domein verschillend is waartot het koekje behoort.
 
-   TVSDK vraagt dit `cookieManager` tijdens runtime af, controleert of er cookies aan de URL zijn gekoppeld en gebruikt deze cookies automatisch.
+   TVSDK vraagt dit `cookieManager` bij uitvoering, controleert of er cookies zijn gekoppeld aan de URL en gebruikt automatisch die cookies.
 
-   Als de cookies in de toepassing moeten worden bijgewerkt tijdens het afspelen, gebruikt u geen API omdat de update plaatsvindt in de cookie-opslag van JAVA. `networkConfiguration.setCookieHeaders`
+   Als de cookies in de toepassing moeten worden bijgewerkt tijdens het afspelen, gebruikt u `networkConfiguration.setCookieHeaders` API niet omdat de update plaatsvindt in de cookie-opslag van JAVA.
 
    `networkConfiguration.setCookieHeaders` API stelt de cookies in op de C++ CookieStore van TVSDK.
 
