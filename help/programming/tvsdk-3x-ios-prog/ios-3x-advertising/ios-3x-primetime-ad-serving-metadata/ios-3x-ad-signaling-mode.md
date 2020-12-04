@@ -6,6 +6,9 @@ title: Toevoegingsmodus
 uuid: 6e6e72cf-4de4-4ac1-9726-7521e47ccd83
 translation-type: tm+mt
 source-git-commit: 557f42cd9a6f356aa99e13386d9e8d65e043a6af
+workflow-type: tm+mt
+source-wordcount: '137'
+ht-degree: 0%
 
 ---
 
@@ -14,9 +17,9 @@ source-git-commit: 557f42cd9a6f356aa99e13386d9e8d65e043a6af
 
 De ad-signaliseringsmodus bepaalt waar de videostream advertentie-informatie moet ophalen.
 
-De geldige waarden zijn `PTAdSignalingModeDefault`, `PTAdSignalingModeManifestCues`en `PTAdSignalingModeServerMap`.
+De geldige waarden zijn `PTAdSignalingModeDefault`, `PTAdSignalingModeManifestCues` en `PTAdSignalingModeServerMap`.
 
-In de volgende tabel wordt het effect beschreven van `AdSignalingMode` waarden voor verschillende HLS-stroomtypen:
+In de volgende tabel wordt het effect beschreven van `AdSignalingMode`-waarden voor verschillende HLS-stroomtypen:
 
 <table frame="all" colsep="1" rowsep="1" id="table_AdSignalingMode"> 
  <thead> 
