@@ -1,18 +1,21 @@
 ---
-description: In Adobe Primetime en bij beslissingen kunt u advertenties op sleutelwaardeparen als doel instellen.
-seo-description: In Adobe Primetime en bij beslissingen kunt u advertenties op sleutelwaardeparen als doel instellen.
+description: In Adobe Primetime en bij de besluitvorming kunt u advertenties op sleutelwaardeparen aanwijzen.
+seo-description: In Adobe Primetime en bij de besluitvorming kunt u advertenties op sleutelwaardeparen aanwijzen.
 seo-title: Doelgegevens
 title: Doelgegevens
 uuid: 72114bef-36a1-4f2d-92e8-59f4885d70d2
 translation-type: tm+mt
 source-git-commit: 040655d8ba5f91c98ed0584c08db226ffe1e0f4e
+workflow-type: tm+mt
+source-wordcount: '51'
+ht-degree: 0%
 
 ---
 
 
 # Doelgegevens{#targeting-information}
 
-In Adobe Primetime en bij beslissingen kunt u advertenties op sleutelwaardeparen als doel instellen.
+In Adobe Primetime en bij de besluitvorming kunt u advertenties op sleutelwaardeparen aanwijzen.
 
 Deze sleutelwaardeparen doorgeven aan Browser TVSDK:
 
