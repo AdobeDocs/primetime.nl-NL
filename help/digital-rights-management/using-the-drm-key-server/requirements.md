@@ -4,6 +4,9 @@ title: Vereisten voor het gebruik van Primetime DRM Key Server
 uuid: 769f9e10-7a3e-4a38-b30d-18181b666bb4
 translation-type: tm+mt
 source-git-commit: 635e2893439c5459907c54d2c3bd86f58da0eec5
+workflow-type: tm+mt
+source-wordcount: '153'
+ht-degree: 0%
 
 ---
 
@@ -20,8 +23,8 @@ De minimale vereisten voor het gebruik van Primetime DRM Key Server zijn:
 
    >[!NOTE]
    >
-   >64-bits PKCS11 wordt nu ondersteund in OpenJDK 8: [https://openjdk.java.net/jeps/131](https://openjdk.java.net/jeps/131)en Oracle JDK: [https://bugs.java.com/bugdatabase/view_bug.do?bug_id=6880559](https://bugs.java.com/bugdatabase/view_bug.do?bug_id=6880559).
+   >64-bits PKCS11 wordt nu ondersteund in OpenJDK 8: [https://openjdk.java.net/jeps/131](https://openjdk.java.net/jeps/131) en Oracle JDK: [https://bugs.java.com/bugdatabase/view_bug.do?bug_id=6880559](https://bugs.java.com/bugdatabase/view_bug.do?bug_id=6880559).
 
 * [Apache Tomcat 7](https://tomcat.apache.org)
-* Credentials uitgegeven door Adobe
+* Door Adobe afgegeven referenties
 * Referenties uitgegeven door Microsoft (voor Xbox 360-clients)
