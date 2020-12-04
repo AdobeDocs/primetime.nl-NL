@@ -4,6 +4,9 @@ title: Voorbeeld van een aangepast VOD-element
 uuid: e0dfaa72-d62f-4fb3-b7c5-ad94f0dc7ce0
 translation-type: tm+mt
 source-git-commit: 5908e5a3521966496aeec0ef730e4a704fddfb68
+workflow-type: tm+mt
+source-wordcount: '72'
+ht-degree: 0%
 
 ---
 
@@ -40,6 +43,6 @@ seg5.ts
 
 Uw toepassing kan de volgende scenario&#39;s instellen:
 
-* Een melding wanneer het bestand `#EXT-X-ASSET` tags bevat of een andere set aangepaste tagnamen waarop u een abonnement hebt genomen.
-* Voeg advertenties in wanneer er een `#EXT-X-AD` tag of een andere aangepaste tagnaam in de stream wordt gevonden.
+* Een melding wanneer het bestand `#EXT-X-ASSET`-tags bevat of een andere set aangepaste tagnamen waarop u een abonnement hebt genomen.
+* Voeg advertenties in wanneer een `#EXT-X-AD`-tag of een andere aangepaste tagnaam in de stream wordt gevonden.
 
