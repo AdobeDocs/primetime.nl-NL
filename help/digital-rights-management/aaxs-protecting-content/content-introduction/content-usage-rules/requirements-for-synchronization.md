@@ -11,7 +11,7 @@ ht-degree: 0%
 ---
 
 
-# Voorschriften voor synchronisatie{#requirements-for-synchronization}
+# Vereisten voor synchronisatie{#requirements-for-synchronization}
 
 Hiermee geeft u de frequentie op waarmee de client de status synchroniseert met de server. Als aan de client een out-of-band licentie is verleend (zonder dat er een licentieserver wordt gecontacteerd), kunnen gebruiksregels opgeven dat de client synchronisatieberichten naar de server moet verzenden om de veilige tijd van de client te synchroniseren en de status van de client aan de server te melden.
 
