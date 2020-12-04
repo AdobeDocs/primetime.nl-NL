@@ -6,11 +6,14 @@ title: Overwegingen en beste praktijken
 uuid: a65c9739-ed83-4519-8ae5-7ba4c8f1ca49
 translation-type: tm+mt
 source-git-commit: bc35da8b258056809ceaf18e33bed631047bc81b
+workflow-type: tm+mt
+source-wordcount: '368'
+ht-degree: 0%
 
 ---
 
 
-# Overwegingen en beste praktijken {#considerations-and-best-practices}
+# Overwegingen en aanbevolen procedures {#considerations-and-best-practices}
 
 Als u TVSDK het doeltreffendst wilt gebruiken, moet u bepaalde details van de werking van de SDK in overweging nemen en bepaalde best practices volgen.
 
@@ -27,7 +30,7 @@ Houd rekening met de volgende informatie wanneer u TVSDK gebruikt:
 * Momenteel moet u de meeste API-bewerkingen voor TVSDK uitvoeren op de gebruikersinterfacethread. Dit is de belangrijkste Android-thread.
 
    De verrichtingen die correct op de belangrijkste draad lopen kunnen een fout en uitgang werpen wanneer looppas op een achtergronddraad.
-* Voor het afspelen van video&#39;s is de Adobe Video Engine (AVE) vereist. Dit beïnvloedt hoe en wanneer de media middelen kunnen worden betreden:
+* Voor het afspelen van video is de Adobe Video Engine (AVE) vereist. Dit beïnvloedt hoe en wanneer de media middelen kunnen worden betreden:
 
    * Ondertiteling met gesloten ondertiteling wordt gesteund in de mate die door AVE wordt verstrekt.
    * Afhankelijk van de precisie van de codeermodule kan de werkelijk gecodeerde mediaduur afwijken van de tijdsduur die in het manifest van de streambron wordt vastgelegd.
@@ -41,7 +44,7 @@ Houd rekening met de volgende informatie wanneer u TVSDK gebruikt:
 
       Voor alle aan advertenties gerelateerde aanroepen wordt de standaardgebruikersagent van Android of de aangepaste gebruikersagent gebruikt als u deze instelt tijdens het instellen van metagegevens voor invoegtoepassingen.
 
-## Aanbevolen procedures {#section_tvsdk_best_practices}
+## Aanbevolen werkwijzen {#section_tvsdk_best_practices}
 
 Hier volgen de aanbevolen procedures voor TVSDK:
 
@@ -49,4 +52,4 @@ Hier volgen de aanbevolen procedures voor TVSDK:
 * Voer de meeste bewerkingen van TVSDK uit op de hoofd-thread (UI), niet op de achtergrondthreads.
 * Voor TVSDK 3.0 voor Android is het standaard lazy en resolving ingeschakeld.
 
-Voor inhoud zonder pre-rol of middenrol, kunt u gebruiken `AdvertisingMetadata.setPreroll(false)` om inhoud te versnellen ladend.
+Voor inhoud zonder pre-rol of middenrol, kunt u `AdvertisingMetadata.setPreroll(false)` gebruiken om inhoud te versnellen ladend.
