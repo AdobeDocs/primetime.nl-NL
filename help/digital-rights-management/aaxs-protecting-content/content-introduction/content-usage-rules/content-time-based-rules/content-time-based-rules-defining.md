@@ -11,14 +11,14 @@ ht-degree: 0%
 ---
 
 
-# Op tijd gebaseerde regels definiëren {#defining-time-based-rules}
+# Op tijd gebaseerde regels {#defining-time-based-rules} definiëren
 
-Adobe Access maakt gebruik van &#39;zachte handhaving&#39; van op tijd gebaseerde licentiebeperkingen. Wanneer een tijdrecht tijdens het afspelen van een video verloopt, is het standaardgedrag van Adobe Access dat het afspelen pas wordt beperkt wanneer de videostream opnieuw wordt gemaakt (door het aanroepen `Netstream.stop()` en `Netstream.play()`).
+Adobe Access maakt gebruik van &#39;zachte handhaving&#39; van op tijd gebaseerde licentiebeperkingen. Als een tijdrecht tijdens playback van een video verloopt, is het standaardgedrag van Adobe Access playback niet te beperken tot de volgende tijd de videostroom wordt ontspannen (door `Netstream.stop()` en `Netstream.play()` te roepen).
 
 Terwijl de zachte handhaving het standaardgedrag is, kunt u harde handhaving ook toelaten door één van de volgende taken uit te voeren:
 
 * Zorg dat uw videospeler de licentie periodiek opvraagt om er zeker van te zijn dat geen van de tijdbeperkingen is verlopen. Dit kan worden verwezenlijkt door `DRMManager.loadVoucher(LOCAL_ONLY).`een foutencode te roepen wijst erop dat de lokaal-opgeslagen vergunning niet meer geldig is.
-* Wanneer de gebruiker de knoop van de Pauze klikt, kunt u het huidige videotimestamp registreren en dan roepen `Netstream.stop().`wanneer de gebruiker de knoop van het Spel klikt, kunt u aan de geregistreerde plaats zoeken en dan roepen `Netstream.play()`.
+* Wanneer de gebruiker de knoop van de Pauze klikt, kunt u huidige videotimestamp registreren en dan `Netstream.stop().`roepen wanneer de gebruiker de knoop van het Spel klikt, kunt u naar de geregistreerde plaats zoeken en dan `Netstream.play()` roepen.
 
 ## Begindatum {#start-date}
 
@@ -38,7 +38,7 @@ Vermeld de vervaldatum van de vergunning, uitgedrukt in verhouding tot de verpak
 
 Voorbeeld van gebruik: In een geautomatiseerd verpakkingsproces gebruikt u één beleid met deze optie voor een reeks video&#39;s om de vervaldatum in te stellen op 30 dagen ten opzichte van de verpakkingsdatum.
 
-## Duur van licentiecache {#license-caching-duration}
+## Licentie in cache {#license-caching-duration}
 
 Geeft aan hoe lang een licentie op schijf in de lokale licentieserve van de client in cache kan worden geplaatst zonder dat de licentie opnieuw moet worden opgehaald van de licentieserver. U kunt ook een absolute datum/tijd opgeven waarna een licentie niet langer in de cache kan worden opgeslagen.
 
@@ -52,7 +52,7 @@ Hiermee geeft u op hoe lang een licentie geldig is nadat deze voor het eerst wor
 
 Voorbeeld van gebruik: Sommige bedrijfsmodellen staan een verhuurperiode van 30 dagen toe, maar wanneer het afspelen begint, moet het binnen 48 uur worden voltooid. Deze levensduur van 48 uur van de licentie wordt gedefinieerd als het afspeelvenster.
 
-## Voorschriften voor synchronisatie {#requirements-for-synchronization}
+## Vereisten voor synchronisatie {#requirements-for-synchronization}
 
 Hiermee geeft u de frequentie op waarmee de client de status synchroniseert met de server. Als aan de client een out-of-band licentie is verleend (zonder dat er een licentieserver wordt gecontacteerd), kunnen gebruiksregels opgeven dat de client synchronisatieberichten naar de server moet verzenden om de veilige tijd van de client te synchroniseren en de status van de client aan de server te melden.
 
