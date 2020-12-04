@@ -6,6 +6,9 @@ title: Vloeiende truckbewerkingen
 uuid: 4749bfa0-17bf-4444-a167-987249945325
 translation-type: tm+mt
 source-git-commit: 812d04037c3b18f8d8cdd0d18430c686c3eee1ff
+workflow-type: tm+mt
+source-wordcount: '216'
+ht-degree: 0%
 
 ---
 
@@ -22,4 +25,4 @@ Het gebruik van de iFrame-indeling resulteert in &#39;truc play&#39;-bewerkingen
 >
 >Adobe raadt u aan het afspelen te beperken tot dubbele snelheid voor nieuwere Android-apparaten en de functie niet te gebruiken voor oudere Android-apparaten.
 
-Voor een vloeiender kunstspel, plaats `ABRControlParameters.maxPlayoutRate` aan de gewenste veelvoud van normale snelheid (bijvoorbeeld, 2.0 voor dubbele snelheid). Als een volgende aanroep een argument `MediaPlayer.setRate()` heeft dat kleiner is dan of gelijk is aan de waarde die u instelt voor `maxPlayoutRate`, gebruikt TVSDK een normaal profiel om een vloeiender truckplay te bereiken. Anders wordt een iFrame-profiel gebruikt voor de trickplay-bewerking.
+Om een vlotter kunstspel te bereiken, plaats `ABRControlParameters.maxPlayoutRate` aan de gewenste veelvoud van normale snelheid (bijvoorbeeld, 2.0 voor dubbele snelheid). Als een volgende aanroep van `MediaPlayer.setRate()` een argument heeft dat minder dan of gelijk aan de waarde u voor `maxPlayoutRate` plaatst, gebruikt TVSDK een normaal profiel om vlotter kunstspel te bereiken. Anders wordt een iFrame-profiel gebruikt voor de trickplay-bewerking.
