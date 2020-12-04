@@ -4,6 +4,9 @@ title: De opdrachtregelprogramma's installeren
 uuid: 42fe7d55-7b8e-4f44-8714-ddae6c086d6a
 translation-type: tm+mt
 source-git-commit: 19e7c941b3337c3b4d37f0b6a1350aac2ad8a0cc
+workflow-type: tm+mt
+source-wordcount: '81'
+ht-degree: 0%
 
 ---
 
@@ -16,8 +19,8 @@ source-git-commit: 19e7c941b3337c3b4d37f0b6a1350aac2ad8a0cc
 
    * [!DNL flashaccesstools.properties] - Het standaardconfiguratiebestand voor de opdrachtregelprogramma&#39;s.
    * [!DNL libs/] - Bevat de opdrachtregelprogramma&#39;s JAR-bestanden
-   * [!DNL samples/] - Bevat het Ander bouwstijlmanuscript ( [!DNL build-samples.xml]) en de brondossiers van Java.
+   * [!DNL samples/] - Bevat het Ander bouwstijlmanuscript (  [!DNL build-samples.xml]) en de brondossiers van Java.
 
       >[!NOTE]
       >
-      >De Java-bronbestanden tonen hoe u de API&#39;s van de Primetime DRM SDK kunt gebruiken. Voer het Ant-script in om de voorbeelden te maken en uit te voeren [!DNL build-samples.xml] [!DNL samples/].
+      >De Java-bronbestanden tonen hoe u de API&#39;s van de Primetime DRM SDK kunt gebruiken. Als u de samples wilt maken en uitvoeren, voert u het Ant-script [!DNL build-samples.xml] in [!DNL samples/] uit.
