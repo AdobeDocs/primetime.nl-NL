@@ -6,11 +6,14 @@ title: Toevoegen en plaatsen van toevoegen
 uuid: 1d4d6364-1c49-402b-9b72-8c185b1c94e1
 translation-type: tm+mt
 source-git-commit: 5908e5a3521966496aeec0ef730e4a704fddfb68
+workflow-type: tm+mt
+source-wordcount: '290'
+ht-degree: 0%
 
 ---
 
 
-# Toevoegen en plaatsen van toevoegen{#ad-insertion-and-placement}
+# Toevoegen en plaatsen{#ad-insertion-and-placement}
 
 Er zijn een paar manieren om plaatsing en plaatsing van advertenties te bepalen.
 
@@ -22,7 +25,7 @@ Hier volgt een overzicht van het proces dat wordt gebruikt om ad-invoeging te be
 1. **Advertentieresolutie**: De TVSDK communiceert met een advertentieserver om de advertenties op te halen die in de inhoud moeten worden gesplice.
 1. **Advertentie plaatsen**: De TVSDK laadt de opgegeven advertenties en plaatst deze in ad-hoconderbrekingen op de tijdlijn van de inhoud op de opgegeven locaties en berekent de virtuele tijdlijn indien nodig opnieuw.
 
-## Advertentie plaatsen {#section_B9D63F7409A2447F9FF209289BE5D3D5}
+## Plaatsing toevoegen {#section_B9D63F7409A2447F9FF209289BE5D3D5}
 
 De TVSDK kan locaties voor mogelijke advertentie opvragen vanuit de volgende bronnen:
 
