@@ -13,17 +13,17 @@ ht-degree: 0%
 ---
 
 
-# QoS-afspeelgegevens en apparaatstatistieken weergeven {#display-qos-playback-and-device-statistics}
+# QoS playback en apparatenstatistieken {#display-qos-playback-and-device-statistics} tonen
 
 U kunt opstelling uw speler om playback en apparatenstatistieken van QoSProvider zo vaak te lezen zoals nodig.
 
-De `QoSProvider` klasse biedt diverse statistieken, waaronder de framesnelheid, de bitsnelheid van het profiel, de totale tijd die is besteed aan bufferen, het aantal bufferpogingen, de tijd die nodig was om de eerste byte van het eerste videofragment op te halen, de tijd die nodig was om het eerste frame te renderen, de momenteel gebufferde lengte en de buffertijd.
+De klasse `QoSProvider` verstrekt diverse statistieken, met inbegrip van het kadertarief, de tarief van het profielbeetje, de totale tijd die in het als buffer optreden wordt doorgebracht, het aantal het als buffer optreden voor pogingen, de tijd het nam om de eerste byte van het eerste videofragment te krijgen, de tijd het nam om het eerste kader, de momenteel als buffer optredende lengte, en de buffertijd terug te geven.
 
 De verwijzingsimplementatie verstrekt een `QoSManager` klasse waar u de vertoning van de bekleding kunt toelaten QoS. U kunt de zichtbaarheid van QoS ook inschakelen in de gebruikersinterface van Instellingen:
 
 ![](assets/qos-configuration.jpg)
 
-De `QoSManager` sporen statistieken QoS door apparateninformatie te krijgen, aan de media speler vast te maken, en met de recentste informatie te bijwerken QoS.
+`QoSManager` volgt statistieken QoS door apparateninformatie te krijgen, aan de media speler vast te maken, en met de recentste informatie te bijwerken QoS.
 
 **De rapportage van QoS-statistieken in- of uitschakelen**
 
@@ -41,7 +41,7 @@ De `QoSManager` sporen statistieken QoS door apparateninformatie te krijgen, aan
 
    >[!NOTE]
    >
-   >Als u de Booleaanse waarde wijzigt in `false` schakelt u de QoS-rapportage uit.
+   >Als u de Booleaanse waarde wijzigt in `false`, wordt QoS-rapportage uitgeschakeld.
 
 2. Gebeurtenislisteners toevoegen:
 
