@@ -6,6 +6,9 @@ title: INFO-meldingscodes
 uuid: 21297863-dac1-45a4-ac9d-309d1f746f8b
 translation-type: tm+mt
 source-git-commit: 557f42cd9a6f356aa99e13386d9e8d65e043a6af
+workflow-type: tm+mt
+source-wordcount: '192'
+ht-degree: 4%
 
 ---
 
@@ -35,36 +38,36 @@ De meeste informatieve meldingen bevatten relevante metagegevens, bijvoorbeeld d
    <td colname="5"> </td> 
   </tr> 
   <tr rowsep="1"> 
-   <td colname="1"><span class="codeph"> 300000 </span> </td> 
-   <td colname="2"><span class="codeph"> PLAYBACK_START </span> </td> 
+   <td colname="1"><span class="codeph"> 300000  </span> </td> 
+   <td colname="2"><span class="codeph"> PLAYBACK_START  </span> </td> 
    <td colname="3"> Geen </td> 
    <td colname="4"> Geen </td> 
    <td colname="5"> Het afspelen is gestart. </td> 
   </tr> 
   <tr rowsep="1"> 
-   <td colname="1"><span class="codeph"> 300001 </span> </td> 
-   <td colname="2"><span class="codeph"> PLAYBACK_COMPLETE </span> </td> 
+   <td colname="1"><span class="codeph"> 300001  </span> </td> 
+   <td colname="2"><span class="codeph"> PLAYBACK_COMPLETE  </span> </td> 
    <td colname="3"> Geen </td> 
    <td colname="4"> Geen </td> 
    <td colname="5"> Het afspelen is voltooid. </td> 
   </tr> 
   <tr rowsep="1"> 
-   <td colname="1"><span class="codeph"> 300002 </span> </td> 
-   <td colname="2"><span class="codeph"> ZOEKEN_START </span> </td> 
+   <td colname="1"><span class="codeph"> 300002  </span> </td> 
+   <td colname="2"><span class="codeph"> ZOEKEN_START  </span> </td> 
    <td colname="3"> Geen </td> 
    <td colname="4"> <p> Geen </p> </td> 
    <td colname="5"> Er is een zoekbewerking gestart. </td> 
   </tr> 
   <tr rowsep="1"> 
-   <td colname="1"><span class="codeph"> 300003 </span> </td> 
-   <td colname="2"><span class="codeph"> ZOEKEN_COMPLETE </span> </td> 
+   <td colname="1"><span class="codeph"> 300003  </span> </td> 
+   <td colname="2"><span class="codeph"> ZOEKEN_COMPLETE  </span> </td> 
    <td colname="3"> Geen </td> 
    <td colname="4"> <p>Geen </p> </td> 
    <td colname="5"> Een zoekbewerking is voltooid. </td> 
   </tr> 
   <tr rowsep="1"> 
-   <td colname="1"><span class="codeph"> 300005 </span> </td> 
-   <td colname="2"><span class="codeph"> PLAYER_STATE_CHANGE </span> </td> 
+   <td colname="1"><span class="codeph"> 300005  </span> </td> 
+   <td colname="2"><span class="codeph"> PLAYER_STATE_CHANGE  </span> </td> 
    <td colname="3"> <p>Geen </p> </td> 
    <td colname="4"> <p>Geen </p> </td> 
    <td colname="5"> De spelerstatus is gewijzigd. Wanneer de status ERROR is, is het binnenste bericht het voorwerp van het foutenmelding dat de schakelaar aan de staat van de FOUT teweegbracht. </td> 
@@ -77,10 +80,10 @@ De meeste informatieve meldingen bevatten relevante metagegevens, bijvoorbeeld d
    <td colname="5"> </td> 
   </tr> 
   <tr rowsep="1"> 
-   <td colname="1"><span class="codeph"> 302000 </span> </td> 
-   <td colname="2"><span class="codeph"> BITRATE_CHANGE </span> </td> 
+   <td colname="1"><span class="codeph"> 302000  </span> </td> 
+   <td colname="2"><span class="codeph"> BITRATE_CHANGE  </span> </td> 
    <td colname="3"> <p>Geen </p> </td> 
-   <td colname="4"><span class="codeph"> BITRAAT </span> </td> 
+   <td colname="4"><span class="codeph"> BITRAAT  </span> </td> 
    <td colname="5"> De bitsnelheid van de video is gewijzigd. </td> 
   </tr> 
   <tr rowsep="1"> 
@@ -91,8 +94,8 @@ De meeste informatieve meldingen bevatten relevante metagegevens, bijvoorbeeld d
    <td colname="5"> </td> 
   </tr> 
   <tr rowsep="1"> 
-   <td colname="1"><span class="codeph"> 304000 </span> </td> 
-   <td colname="2"><span class="codeph"> AUDIO_TRACK_CHANGE </span> </td> 
+   <td colname="1"><span class="codeph"> 304000  </span> </td> 
+   <td colname="2"><span class="codeph"> AUDIO_TRACK_CHANGE  </span> </td> 
    <td colname="3"> <p>Geen </p> </td> 
    <td colname="4"> <p>Geen </p> </td> 
    <td colname="5"> <p>De audiotrack is gewijzigd. </p> </td> 
@@ -105,8 +108,8 @@ De meeste informatieve meldingen bevatten relevante metagegevens, bijvoorbeeld d
    <td colname="5"> </td> 
   </tr> 
   <tr rowsep="1"> 
-   <td colname="1"><span class="codeph"> 307000 </span> </td> 
-   <td colname="2"><span class="codeph"> SUBTITLES_TRACK_CHANGE </span> </td> 
+   <td colname="1"><span class="codeph"> 307000  </span> </td> 
+   <td colname="2"><span class="codeph"> SUBTITLES_TRACK_CHANGE  </span> </td> 
    <td colname="3"> <p>Geen </p> </td> 
    <td colname="4"> <p>Geen </p> </td> 
    <td colname="5"> <p>De track voor ondertitels is gewijzigd. </p> </td> 
