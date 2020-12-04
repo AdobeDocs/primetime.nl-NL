@@ -11,9 +11,9 @@ ht-degree: 0%
 ---
 
 
-# De gebruiksmodeldemo inschakelen{#enable-the-usage-model-demo}
+# De demo van het gebruiksmodel inschakelen{#enable-the-usage-model-demo}
 
-1. Geef de aangepaste eigenschap op `RI_UsageModelDemo=true` in de pakkettijd.
+1. Geef de aangepaste eigenschap `RI_UsageModelDemo=true` op bij het verpakken.
 
    Als u inhoud verpakt met de opdrachtregeltool van Media Packager, voert u het volgende in:
 
