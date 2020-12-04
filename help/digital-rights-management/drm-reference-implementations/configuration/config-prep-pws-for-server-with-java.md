@@ -15,7 +15,7 @@ ht-degree: 8%
 
 # Wachtwoorden voorbereiden met Java{#prepare-passwords-using-java}
 
-Voer het `ScrambleUtil.class` met Java uit:
+`ScrambleUtil.class` uitvoeren met Java:
 
 1. Ga naar `[DRM SDK DVD]\Reference Implementation\Server\Reference Implementation Server\refimpl/scrambler/ refimpl/scrambler/`
 1. Typ vanaf de opdrachtregel:
