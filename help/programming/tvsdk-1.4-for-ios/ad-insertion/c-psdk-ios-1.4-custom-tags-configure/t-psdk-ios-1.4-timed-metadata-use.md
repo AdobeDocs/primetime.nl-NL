@@ -6,6 +6,9 @@ title: Metagegevens met tijdslimiet gebruiken
 uuid: 9bbdaefa-4ac5-4e08-92b4-15ebe5c46864
 translation-type: tm+mt
 source-git-commit: 25a0dfef12ecf10ba939500c4ba539468c41ee1b
+workflow-type: tm+mt
+source-wordcount: '116'
+ht-degree: 1%
 
 ---
 
@@ -14,9 +17,9 @@ source-git-commit: 25a0dfef12ecf10ba939500c4ba539468c41ee1b
 
 U kunt TimedMetadata gebruiken wanneer de huidige playbacktijd de begintijd aanpast.
 
-Als u deze opgeslagen `PTTimedMetadata` objecten tijdens het afspelen wilt gebruiken, gebruikt u het opgeslagen woordenboek van [Opgeslagen metagegevensobjecten opslaan terwijl ze worden verzonden](../../../tvsdk-1.4-for-ios/ad-insertion/c-psdk-ios-1.4-custom-tags-configure/t-psdk-ios-1.4-timed-metadata-store.md).
+Als u deze opgeslagen `PTTimedMetadata`-objecten tijdens het afspelen wilt gebruiken, gebruikt u het opgeslagen woordenboek van [Objecten met getimede metagegevens opslaan wanneer ze worden verzonden](../../../tvsdk-1.4-for-ios/ad-insertion/c-psdk-ios-1.4-custom-tags-configure/t-psdk-ios-1.4-timed-metadata-store.md).
 
-1. Extraheer en werk de huidige afspeeltijd van dit bericht bij en zoek alle `PTTimedMetadata` objecten met begintijden die overeenkomen met de huidige afspeeltijd.
+1. Extraheer en werk de huidige afspeeltijd van dit bericht bij en zoek alle `PTTimedMetadata`-objecten met begintijden die overeenkomen met de huidige afspeeltijd.
 
    U kunt deze objecten gebruiken om verschillende handelingen uit te voeren.
 
@@ -57,4 +60,4 @@ Als u deze opgeslagen `PTTimedMetadata` objecten tijdens het afspelen wilt gebru
    }
    ```
 
-1. Verwijder stijlexemplaren regelmatig uit de lijst om te voorkomen dat het geheugen voortdurend toeneemt. `PTTimedMetadata`
+1. Verwijder regelmatig `PTTimedMetadata` exemplaren van de lijst om te voorkomen dat het geheugen voortdurend toeneemt.
