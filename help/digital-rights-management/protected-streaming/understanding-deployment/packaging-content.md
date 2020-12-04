@@ -23,7 +23,7 @@ De URL van de Adobe Primetime DRM-server gebruikt de volgende indeling:
 http(s)://<license-server-host:port>/flashaccessserver/<tenant-name>
 ```
 
-Bijvoorbeeld, voor de hostname van de vergunningsserver `mylicenseserver.com` die op haven 8080 luistert, en een huurder riep *`tenant1`*, zou u de volgende syntaxis voor de vergunningsserver URL gebruiken die u op de tijd specificeert dat u inhoud verpakt:
+Bijvoorbeeld, voor de hostnaam van de licentieserver `mylicenseserver.com` die op haven 8080 luistert, en een huurder genoemd *`tenant1`*, zou u de volgende syntaxis voor de vergunningsserver URL gebruiken die u op het tijdstip specificeert dat u inhoud verpakt:
 
 ```
 https://mylicenseserver.com:8080/flashaccessserver/tenant1
@@ -31,4 +31,4 @@ https://mylicenseserver.com:8080/flashaccessserver/tenant1
 
 Als elke huurder een verschillende Server van de Vergunning en van het Vervoer Credentials gebruikt, zorg ervoor dat u het correcte huurderscertificaat in de verpakker specificeert.
 
-Als u ervoor wilt zorgen dat de server vergunningen slechts aan inhoud van bekende verpakkers uitgeeft, moet u het certificaat van de verpakker in de verpakker omvatten staat lijst van het dossier van de huurdersconfiguratie toe.
+Als u ervoor wilt zorgen dat de server vergunningen slechts aan inhoud van bekende verpakkers uitgeeft, moet u het certificaat van de verpakker in de pakketsoftware lijst van gewenste personen van het dossier van de huurdersconfiguratie omvatten.
