@@ -6,11 +6,14 @@ title: Ondersteuning voor aangepaste metagegevens implementeren
 uuid: 6e23311c-a393-4485-919e-4cf6412789b1
 translation-type: tm+mt
 source-git-commit: 040655d8ba5f91c98ed0584c08db226ffe1e0f4e
+workflow-type: tm+mt
+source-wordcount: '94'
+ht-degree: 0%
 
 ---
 
 
-# Ondersteuning voor aangepaste metagegevens implementeren{#implement-custom-metadata-support}
+# Aangepaste ondersteuning voor metagegevens implementeren{#implement-custom-metadata-support}
 
 U kunt douanemetagegevens op inhoud, advertenties, en hoofdstuk het volgen vraag verstrekken door callback functies te gebruiken.
 
