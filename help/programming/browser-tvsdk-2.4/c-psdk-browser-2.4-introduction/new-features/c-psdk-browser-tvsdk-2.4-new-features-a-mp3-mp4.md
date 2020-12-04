@@ -22,7 +22,7 @@ Browser TVSDK steunt een aantal eigenschappen MP3 en MP4 die u kunt uitvoeren om
 
 >[!TIP]
 >
->In de onderstaande tabel met functiematrix betekent het ![ondersteunde pictogram](assets/supported15.png) dat de functie in de huidige versie wordt ondersteund.
+>In de lijsten van de eigenschapmatrijs hieronder, ![gesteund pictogram](assets/supported15.png) betekent dat de eigenschap in de huidige versie wordt gesteund.
 
 ## MP3-audiofuncties {#section_C900C301291A40529D02EACC3CD4D55A}
 
