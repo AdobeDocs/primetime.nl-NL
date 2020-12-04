@@ -6,6 +6,9 @@ title: Kwaliteit van de dienststatistieken
 uuid: b74cbc94-1d69-4b4b-b969-d0e985b4762b
 translation-type: tm+mt
 source-git-commit: 5908e5a3521966496aeec0ef730e4a704fddfb68
+workflow-type: tm+mt
+source-wordcount: '225'
+ht-degree: 0%
 
 ---
 
@@ -14,22 +17,22 @@ source-git-commit: 5908e5a3521966496aeec0ef730e4a704fddfb68
 
 De kwaliteit van de dienst (QoS) biedt een gedetailleerde mening in hoe de videomotor presteert. TVSDK biedt gedetailleerde statistieken over het afspelen, bufferen en apparaten.
 
-## De playback van QOS, het bufferen, en apparatenstatistieken lezen {#section_9996406E2D814FA382B77E3041CB02BC}
+## De playback van QOS, het bufferen, en apparatenstatistieken {#section_9996406E2D814FA382B77E3041CB02BC} lezen
 
-U kunt het afspelen, bufferen en apparaatstatistieken lezen van de `PTQOSProvider` klasse.
+U kunt het afspelen, het bufferen, en apparatenstatistieken van de `PTQOSProvider` klasse lezen.
 
-De `PTQOSProvider` klasse biedt diverse statistieken, waaronder informatie over buffering, bitsnelheden, framesnelheden, tijdgegevens enzovoort.
+De klasse `PTQOSProvider` verstrekt diverse statistieken, met inbegrip van informatie over het als buffer optreden voor, beetjetarieven, kadertarieven, tijdgegevens, etc.
 
 Het biedt ook informatie over het apparaat, zoals het model, het besturingssysteem en de apparaat-id van de fabrikant.
 
 >[!TIP]
 >
->U kunt de grootte van de afspeelbuffer niet wijzigen, maar u kunt wel de status van de buffergrootte voor foutopsporing of analyse controleren. `PTPlaybackInformation` bevat eigenschappen zoals `playbackBufferFull` en `playbackLikelyToKeepUp`.
+>U kunt de grootte van de afspeelbuffer niet wijzigen, maar u kunt wel de status van de buffergrootte voor foutopsporing of analyse controleren. `PTPlaybackInformation` bevat eigenschappen zoals  `playbackBufferFull` en  `playbackLikelyToKeepUp`.
 
 1. Instantiëren van een mediaspeler.
-1. Maak een `PTQOSProvider` object en koppel dit aan de mediaspeler.
+1. Maak een `PTQOSProvider`-object en koppel dit aan de mediaspeler.
 
-   De `PTQOSProvider` constructor gebruikt een spelercontext zodat deze apparaatspecifieke informatie kan ophalen.
+   De constructor `PTQOSProvider` neemt de spelercontext zodat deze apparaatspecifieke informatie kan ophalen.
 
    ```
    qosProvider = [[PTQOSProvider alloc]initWithPlayer:self.player]; 
@@ -37,7 +40,7 @@ Het biedt ook informatie over het apparaat, zoals het model, het besturingssyste
 
 1. (Optioneel) Lees de afspeelstatistieken.
 
-   Één oplossing om playbackstatistieken te lezen moet een tijdopnemer, zoals hebben `NSTimer`, die periodiek de nieuwe waarden QoS van `PTQOSProvider`. haalt. Bijvoorbeeld:
+   Één oplossing om playbackstatistieken te lezen moet een tijdopnemer, zoals `NSTimer` hebben, die periodiek de nieuwe waarden QoS van `PTQOSProvider` haalt. Bijvoorbeeld:
 
    ```
    - (void)printPlaybackInfoLog { 
