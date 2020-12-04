@@ -6,6 +6,9 @@ title: Wacht op een geldige status
 uuid: 0add29a8-fbd8-483a-8c99-e4bc6de9e3d3
 translation-type: tm+mt
 source-git-commit: 592245f5a7186d18dabbb5a98a468cbed7354aed
+workflow-type: tm+mt
+source-wordcount: '154'
+ht-degree: 0%
 
 ---
 
@@ -20,7 +23,7 @@ De vereiste status wordt gewoonlijk BEREID.
 
 1. Om te bevestigen dat de status BEREID is:
 
-   Wanneer de speler initialiseert, wacht u tot Browser TVSDK de `AdobePSDK.MediaPlayerStatusChangeEvent` gebeurtenis verzendt met een `event.status` van `MediaPlayerStatus.PREPARED`.
+   Wanneer de speler initialiseert, wacht u tot Browser-TVSDK de gebeurtenis `AdobePSDK.MediaPlayerStatusChangeEvent` verzendt met een `event.status` van `MediaPlayerStatus.PREPARED`.
 
    Om te controleren of de huidige status van het MediaPlayer-object ten minste PREPARED is.
 
