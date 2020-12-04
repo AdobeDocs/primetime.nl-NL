@@ -6,24 +6,27 @@ title: Een VOD-tijdlijn vervangen
 uuid: 17a6daa3-5ee5-48fb-8981-0d183aed0fe4
 translation-type: tm+mt
 source-git-commit: 358c5b02d47f23a6adbc98e457e56c8220cae6e9
+workflow-type: tm+mt
+source-wordcount: '199'
+ht-degree: 0%
 
 ---
 
 
-# Een VOD-tijdlijn vervangen {#replace-a-vod-timeline}
+# Een VOD-tijdlijn {#replace-a-vod-timeline} vervangen
 
 Vervang een VOD-tijdlijn door een nieuw verzoek tot invoeging naar de manifestserver te verzenden met een correct ingestelde tijdlijnqueryparameter.
 
 1. Bereid een verzoek tot toevoeging van een advertentie op de gebruikelijke manier voor.
 1. Plaats de `ptcueformat` vraagparameter aan DPIScte35.
-1. Stel de `enableC3` queryparameter in op waar of onwaar.
-1. Maak een `pttimeline` parameter met de tijdlijnnotatie VOD:
+1. Stel de query-parameter `enableC3` in op true of false zoals van toepassing.
+1. Maak een parameter `pttimeline` met de tijdlijnindeling VOD:
    1. Geef elk inhoudsblok (hoofdstuk) op met `duration = 0` en `number_of_lots = 1`.
-   1. Geef elk advertentieblok op zoals gewoonlijk, maar stel dit in `lots = 0` om een einde te verwijderen. Stel dit in `duration = 0` om de duur van het ad-einde te gebruiken (uit het M3U8-bestand).
+   1. Geef elk advertentieblok op zoals gewoonlijk, maar stel `lots = 0` in om een einde te verwijderen. Stel `duration = 0` in om de duur van het ad-einde te gebruiken (uit het M3U8-bestand).
 
 ## Voorbeeld: Een VOD-tijdlijn vervangen
 
-In dit voorbeeld wordt ervan uitgegaan dat de VOD-inhoud `Original.m3u8` met een tijdlijn van `C,120,1;B,60,2,m;C,120,1;B,60,2,m;C,120,1;`
+In dit voorbeeld wordt ervan uitgegaan dat de VOD-inhoud zich in `Original.m3u8` met een tijdlijn van `C,120,1;B,60,2,m;C,120,1;B,60,2,m;C,120,1;` bevindt
 
 Het volgende manifestserververzoek vervangt de onderbrekingen in `Original.m3u8` met een pre-rol 30 seconden, gevolgd door twee onderbrekingen van duur twee minuten elk.
 
