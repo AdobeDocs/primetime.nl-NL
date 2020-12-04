@@ -1,18 +1,21 @@
 ---
-description: Er zijn API's die u kunnen helpen Adobe Flash Player te gebruiken.
-seo-description: Er zijn API's die u kunnen helpen Adobe Flash Player te gebruiken.
-seo-title: Nuttige API's voor Adobe Flash Player
-title: Nuttige API's voor Adobe Flash Player
+description: Er zijn enkele API's die u kunnen helpen de Flash Player van Adobe te gebruiken.
+seo-description: Er zijn enkele API's die u kunnen helpen de Flash Player van Adobe te gebruiken.
+seo-title: Nuttige API's voor de Adobe Flash Player
+title: Nuttige API's voor de Adobe Flash Player
 uuid: eae314c0-fd9e-480f-ae1c-9b5f3eb4db4b
 translation-type: tm+mt
 source-git-commit: 040655d8ba5f91c98ed0584c08db226ffe1e0f4e
+workflow-type: tm+mt
+source-wordcount: '84'
+ht-degree: 0%
 
 ---
 
 
-# Nuttige API&#39;s voor Adobe Flash Player{#helpful-apis-for-the-adobe-flash-player}
+# Nuttige APIs voor de Flash Player van de Adobe{#helpful-apis-for-the-adobe-flash-player}
 
-Er zijn API&#39;s die u kunnen helpen Adobe Flash Player te gebruiken.
+Er zijn enkele API&#39;s die u kunnen helpen de Flash Player van Adobe te gebruiken.
 
 ## AdobePSDK.MediaResource {#section_8C339FA1386D4B1A926A1459B2619E5E}
 
@@ -20,7 +23,7 @@ Er zijn API&#39;s die u kunnen helpen Adobe Flash Player te gebruiken.
 new MediaResource(url, type, metadata, forceFlash)
 ```
 
-Indien ondersteund, kunt u de `forceFlash` parameter gebruiken om de determinatiereeks voor de afspeeltechnologie te negeren en de implementatie dwingen de Flash Player te gebruiken.
+Indien ondersteund, kunt u de parameter `forceFlash` gebruiken om de determinatiereeks voor de afspeeltechnologie te negeren en de implementatie te dwingen de Flash Player te gebruiken.
 
 <!--<a id="section_FEE3205B532446498771F7DD55B5E79F"></a>-->
 
