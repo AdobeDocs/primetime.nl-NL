@@ -4,11 +4,14 @@ title: Configuratie-validatie
 uuid: 60ebd35c-290a-4f08-9bd0-178903857149
 translation-type: tm+mt
 source-git-commit: 47b2ed65ff0ea4f54a210cf7627ed535782296b9
+workflow-type: tm+mt
+source-wordcount: '185'
+ht-degree: 0%
 
 ---
 
 
-# Configuratie-validatie {#configuration-validator}
+# Configuratievalidering {#configuration-validator}
 
 Adobe raadt u aan het hulpprogramma Configuration Validator uit te voeren voordat u de server start wanneer wijzigingen in het configuratiebestand worden aangebracht. Dit nut kan de meeste configuratiefouten vroeg ontdekken, alvorens zij mislukkingen tijdens verzoekverwerking veroorzaken.
 
