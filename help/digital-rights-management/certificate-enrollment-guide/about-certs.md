@@ -4,11 +4,14 @@ title: Certificaten
 uuid: 0b7818b4-bd6a-4f2e-94c2-565e0d735bf8
 translation-type: tm+mt
 source-git-commit: b4b50471ab0ba98329862322a61bf73aa9e471d5
+workflow-type: tm+mt
+source-wordcount: '207'
+ht-degree: 0%
 
 ---
 
 
-# Certificaten {#about-certificates}
+# Informatie over certificaten {#about-certificates}
 
 De Adobe Primetime DRM SDK is beschikbaar in de volgende configuraties:
 
@@ -31,7 +34,7 @@ Voor maximale flexibiliteit en verbeterde beveiliging in uw implementatieopties 
    De SDK gebruikt dit certificaat om de communicatie tussen de clients en de licentieserver te beveiligen.
 * Domain CA-certificaat
 
-   De klanten die een domeinserver willen uitvoeren hebben het certificaat van CA van het Domein nodig. In tegenstelling tot de andere certificaten wordt het Domain CA-certificaat niet uitgegeven door Adobe.
+   De klanten die een domeinserver willen uitvoeren hebben het certificaat van CA van het Domein nodig. In tegenstelling tot de andere certificaten, wordt het certificaat van CA van het Domein niet uitgegeven door Adobe.
 
 >[!NOTE]
 >
