@@ -1,11 +1,14 @@
 ---
-description: TVSDK biedt ondersteuning voor banneradvertenties die bij een lineaire advertentie horen en die vaak op de pagina blijven staan nadat de lineaire advertentie is beëindigd. Uw toepassing is verantwoordelijk voor het weergeven van de bijbehorende banners die een lineaire advertentie hebben.
+description: TVSDK biedt ondersteuning voor banneradvertenties die bij een lineaire advertentie horen en die vaak na afloop van de lineaire advertentie op de pagina blijven staan. Uw toepassing is verantwoordelijk voor het weergeven van de bijbehorende banners die een lineaire advertentie hebben.
 seo-description: TVSDK biedt ondersteuning voor banneradvertenties die bij een lineaire advertentie horen en die vaak na afloop van de lineaire advertentie op de pagina blijven staan. Uw toepassing is verantwoordelijk voor het weergeven van de bijbehorende banners die een lineaire advertentie hebben.
 seo-title: Companion banneradvertenties
 title: Companion banneradvertenties
 uuid: 388a1683-342c-4f3b-97c8-cfcb6c5cfee1
 translation-type: tm+mt
 source-git-commit: 8ff38bdc1a7ff9732f7f1fae37f64d0e1113ff40
+workflow-type: tm+mt
+source-wordcount: '650'
+ht-degree: 0%
 
 ---
 
@@ -29,14 +32,14 @@ Volg deze aanbevelingen bij het weergeven van bijhorende advertenties:
 
    Standaard wordt elke bijbehorende banner weergegeven totdat u een nieuwe banner voor deze banner hebt.
 
-## Bannergegevens van de onderneming {#companion-banner-data}
+## Companion banner data {#companion-banner-data}
 
 De inhoud van een AdBannerAsset beschrijft een bijbehorende banner.
 
 <!--<a id="section_D730B4FD6FD749E9860B6A07FC110552"></a>-->
 
-De `AdPlaybackEvent.AD_STARTED` gebeurtenis retourneert een `Ad` instantie die een `companionAssets` eigenschap ( `Vector.<AdAsset>`) bevat.
-Elk element `AdAsset` biedt informatie over de weergave van het element.
+De gebeurtenis `AdPlaybackEvent.AD_STARTED` retourneert een `Ad`-instantie die een `companionAssets`-eigenschap ( `Vector.<AdAsset>`) bevat.
+Elke `AdAsset` biedt informatie over de weergave van het element.
 
 <table id="table_760C885E2DCA4BE983CC57FDA7BD5B14"> 
  <thead> 
@@ -68,26 +71,26 @@ Elk element `AdAsset` biedt informatie over de weergave van het element.
   </tr> 
   <tr> 
    <td colname="col1"> statische URL </td> 
-   <td colname="col2"> <p>Soms heeft de bijbehorende banner ook een staticURL die een directe URL naar de afbeelding of naar een <span class="filepath"> .swf</span> (flash banner) is. </p> <p>Als u html of iframe niet wilt gebruiken, kunt u een directe URL naar een afbeelding of SWF gebruiken om de banner in het Flash-werkgebied weer te geven. In dit geval kunt u de staticURL gebruiken om de banner weer te geven. </p> <p>Belangrijk:  U moet controleren of de statische URL een geldige tekenreeks is, omdat deze eigenschap mogelijk niet altijd beschikbaar is. </p> </td> 
+   <td colname="col2"> <p>Soms heeft de bijbehorende banner ook een staticURL die een directe URL is naar de afbeelding of naar een <span class="filepath"> .swf</span> (flash banner). </p> <p>Als u html of iframe niet wilt gebruiken, kunt u een directe URL naar een afbeelding of SWF gebruiken om de banner in plaats daarvan in het werkgebied van de Flash weer te geven. In dit geval kunt u de staticURL gebruiken om de banner weer te geven. </p> <p>Belangrijk:  U moet controleren of de statische URL een geldige tekenreeks is, omdat deze eigenschap mogelijk niet altijd beschikbaar is. </p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-## banneradvertenties weergeven {#display-banner-ads}
+## banneradvertenties {#display-banner-ads} weergeven
 
 Als u banneradvertenties wilt weergeven, moet u bannerinstanties maken en TVSDK toestaan te luisteren naar gebeurtenissen met betrekking tot advertenties.
 
-TVSDK biedt een lijst met banneradvertenties die zijn gekoppeld aan een lineaire advertentie via de `AdPlaybackEvent.AD_STARTED` gebeurtenisgebeurtenis.
+TVSDK biedt een lijst met banneradvertenties die bij een lineaire advertentie horen via de gebeurtenis `AdPlaybackEvent.AD_STARTED`.
 
 Manifests kunnen banneradvertenties voor gezellen specificeren door:
 
 * Een HTML-fragment
 * De URL van een iFrame-pagina
-* De URL van een statische afbeelding of een Adobe Flash SWF-bestand
+* De URL van een statische afbeelding of een Adobe Flash-SWF-bestand
 
 Voor elke bijbehorende advertentie geeft TVSDK aan welke typen beschikbaar zijn voor uw toepassing.
 
-Voeg een listener toe voor de `AdPlaybackEvent.AD_STARTED` gebeurtenis die het volgende doet:
+Voeg een listener toe voor de gebeurtenis `AdPlaybackEvent.AD_STARTED` die het volgende doet:
 
 1. Wist bestaande advertenties in de bannerinstantie.
 
@@ -95,15 +98,15 @@ Voeg een listener toe voor de `AdPlaybackEvent.AD_STARTED` gebeurtenis die het v
 
 1. Doorloop de lijst voor bannerinstanties als de lijst met bijbehorende advertenties niet leeg is.
 
-   Elke bannerinstantie ( `AdBannerAsset`) bevat informatie, zoals breedte, hoogte, middeltype (html, iframe of statisch), en gegevens die worden vereist om de bijbehorende banner weer te geven.
+   Elke bannerinstantie ( een `AdBannerAsset`) bevat informatie, zoals breedte, hoogte, middeltype (html, iframe, of statisch), en gegevens die worden vereist om de bijbehorende banner te tonen.
 
 1. Als een video zonder bijbehorende advertenties is geboekt, bevat de lijst met bijbehorende elementen geen gegevens voor die video-advertentie.
 
    Als u een standalone weergaveadvertentie wilt weergeven, voegt u de logica toe aan uw script om een normale DFP-advertentie (DoubleClick voor Publishers) in de juiste bannerinstantie uit te voeren.
 
-1. Verzendt de bannergegevens naar een functie op uw pagina, meestal JavaScript, door te gebruiken `ExternalInterface`, die de banners op een geschikte locatie weergeeft.
+1. Verzendt de bannergegevens naar een functie op uw pagina, meestal JavaScript, met behulp van `ExternalInterface`, die de banners op een geschikte locatie weergeeft.
 
-   Dit is meestal een `div`bewerking en uw functie gebruikt deze `div ID` om de banner weer te geven. Bijvoorbeeld:
+   Dit is gewoonlijk een `div`, en uw functie gebruikt `div ID` om de banner te tonen. Bijvoorbeeld:
 
    Voeg de gebeurtenislistener toe:
 
