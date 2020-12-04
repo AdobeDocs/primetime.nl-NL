@@ -1,18 +1,21 @@
 ---
 description: 'null'
 seo-description: 'null'
-seo-title: Vervang tijdbereiken door een Adobe Primetime en een beslissing en
-title: Vervang tijdbereiken door een Adobe Primetime en een beslissing en
+seo-title: Bereiken voor tijd vervangen door een Adobe Primetime en een beslissing en
+title: Bereiken voor tijd vervangen door een Adobe Primetime en een beslissing en
 uuid: 101ac42d-5ba5-4487-af95-483a6594808a
 translation-type: tm+mt
 source-git-commit: adef0bbd52ba043f625f38db69366c6d873c586d
+workflow-type: tm+mt
+source-wordcount: '54'
+ht-degree: 0%
 
 ---
 
 
-# Vervang tijdbereiken door een Adobe Primetime en een beslissing en{#replace-time-ranges-with-an-adobe-primetime-ad-decisioning-ad}
+# Tijdbereiken vervangen door een Adobe Primetime en een besluit en{#replace-time-ranges-with-an-adobe-primetime-ad-decisioning-ad}
 
-Verwijderen `TimeRanges` tussen de tijdlijn `begin` en `end` in de tijdlijn `localTime` . Vervang het door een AdBreak van `begin` aan `begin+replaceDuration`.
+Verwijder `TimeRanges` tussen `begin` en `end` in `localTime` uit de tijdlijn. Vervang het door een AdBreak van `begin` aan `begin+replaceDuration`.
 
 Hiermee vervangt u bereiken door primetime- en beslissingsadvertenties.
 
