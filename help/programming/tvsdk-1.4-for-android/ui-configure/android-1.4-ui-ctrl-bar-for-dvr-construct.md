@@ -6,6 +6,9 @@ title: Een besturingsbalk maken die is verbeterd voor DVR
 uuid: c9c86383-379f-452c-b35d-447ac8691fa0
 translation-type: tm+mt
 source-git-commit: 5908e5a3521966496aeec0ef730e4a704fddfb68
+workflow-type: tm+mt
+source-wordcount: '355'
+ht-degree: 0%
 
 ---
 
@@ -45,7 +48,7 @@ U kunt een besturingsbalk implementeren met DVR-ondersteuning voor VOD en live s
       }
       ```
 
-      U kunt er ook voor kiezen om met de `MediaPlayer.LIVE_POINT` constante naar het actieve punt van de client te zoeken.
+      U kunt er ook voor kiezen om met de constante `MediaPlayer.LIVE_POINT` naar het actieve punt van de client te zoeken.
 
       ```
       mediaPlayer.seek(MediaPlayer.LIVE_POINT);
