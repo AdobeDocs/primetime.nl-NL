@@ -6,11 +6,14 @@ title: Effect op het toevoegen en verwijderen van gegevens uit de advertentiemod
 uuid: c2ae8148-889d-46ae-848a-5f45d993a0e2
 translation-type: tm+mt
 source-git-commit: 5908e5a3521966496aeec0ef730e4a704fddfb68
+workflow-type: tm+mt
+source-wordcount: '472'
+ht-degree: 0%
 
 ---
 
 
-# Effect op het toevoegen en verwijderen van gegevens uit de advertentiemodus en combinaties van metagegevens{#effect-on-ad-insertion-and-deletion-from-ad-signaling-mode-and-ad-metadata-combinations}
+# Effect op het toevoegen en verwijderen van gegevens uit de advertentiemodus en de combinaties van metagegevens voor advertenties{#effect-on-ad-insertion-and-deletion-from-ad-signaling-mode-and-ad-metadata-combinations}
 
 U kunt tijdbereiken in VOD-streams markeren, verwijderen en vervangen door verschillende combinaties van ad-signaalmodus en metagegevens te gebruiken. Verschillende combinaties van signalerende wijze en meta-gegevens resulteren in verschillend gedrag.
 
@@ -26,7 +29,7 @@ U kunt tijdbereiken in VOD-streams markeren, verwijderen en vervangen door versc
    <th class="entry"> Ad-signaalmodus </th> 
    <th class="entry"> Metagegevens toevoegen </th> 
    <th class="entry"> Gemaakte oplossingen </th> 
-   <th class="entry"><span class="codeph"> PlacementInformation</span> gemaakt </th> 
+   <th class="entry"><span class="codeph"> </span> PlacementInformationScreated </th> 
    <th class="entry"> Resulterend gedrag </th> 
   </tr> 
  </thead>
@@ -51,7 +54,7 @@ U kunt tijdbereiken in VOD-streams markeren, verwijderen en vervangen door versc
    <td> Verwijderen, Auditude </td> 
    <td> 
     <ul> 
-     <li><span class="codeph"> PlacementInfo (Type.CUSTOM_TIME_RANGE, Mode.DELETE), </span> </li> 
+     <li><span class="codeph"> PlacementInfo (Type.CUSTOM_TIME_RANGE, Mode.DELETE),  </span> </li> 
      <li><span class="codeph"> PlacementInfo (Type.SERVER_MAP, Mode.INSERT)</span> </li> 
     </ul> </td> 
    <td> Bereiken verwijderd, advertenties ingevoegd </td> 
