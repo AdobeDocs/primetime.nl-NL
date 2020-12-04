@@ -14,6 +14,6 @@ ht-degree: 0%
 ---
 
 
-# Primetime-verwijzing {#reference}
+# Primetime-referentie {#reference}
 
 + [API-verwijzingen](api-references.md)
