@@ -6,13 +6,16 @@ title: Reclamevereisten
 uuid: 60e299df-4f42-455a-8983-8964f7a197e1
 translation-type: tm+mt
 source-git-commit: 5908e5a3521966496aeec0ef730e4a704fddfb68
+workflow-type: tm+mt
+source-wordcount: '211'
+ht-degree: 0%
 
 ---
 
 
 # Reclamevereisten {#advertising-requirements}
 
-U kunt advertenties in uw VOD- en live/lineaire inhoud invoegen met de Adobe Primetime- en beslissingsinterface.
+U kunt advertenties in uw VOD en levende/lineaire inhoud opnemen door Adobe Primetime en besluitvormingsinterface te gebruiken.
 
 Primetime en besluitvorming werken samen met TVSDK om advertentiemogelijkheden te identificeren, advertenties op te lossen en opgeloste advertenties in uw videostreams in te voegen.
 
