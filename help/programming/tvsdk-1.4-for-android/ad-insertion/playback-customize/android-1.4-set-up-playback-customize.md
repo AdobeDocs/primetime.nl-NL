@@ -13,16 +13,17 @@ ht-degree: 1%
 ---
 
 
-# Aangepast afspelen instellen {#cset-up-customized-playback}
+# Aangepaste weergave instellen {#cset-up-customized-playback}
 
 U kunt het gedrag van een advertentie aanpassen of overschrijven door de beleidsinstantie voor advertentie te registreren bij TVSDK.
 
 Voer een van de volgende handelingen uit om het gedrag van advertenties aan te passen:
 
-* Voer de `AdPolicySelector` interface en al zijn methodes uit.
+* Implementeer de interface `AdPolicySelector` en alle bijbehorende methoden.
 Deze optie wordt aanbevolen als u alle standaardinstellingen en gedragingen moet negeren.
 
-* Breid de `DefaultAdPolicySelector` klasse uit en verstrek implementaties voor slechts die gedrag dat aanpassing vereist.
+* De klasse `DefaultAdPolicySelector` uitbreiden en alleen implementaties bieden voor gedragingen die
+aanpassing.
 Deze optie wordt aanbevolen als u slechts enkele standaardgedragingen wilt overschrijven.
 
 Voer voor beide opties de volgende taken uit:
