@@ -6,27 +6,30 @@ title: De MediaPlayer instellen
 uuid: 2279e388-6fbc-49a2-8560-218d3d31e1d6
 translation-type: tm+mt
 source-git-commit: af9b865bc1627a97bf8957b5460ff9b46052a7dc
+workflow-type: tm+mt
+source-wordcount: '107'
+ht-degree: 0%
 
 ---
 
 
-# De MediaPlayer instellen{#set-up-the-mediaplayer}
+# De MediaPlayer{#set-up-the-mediaplayer} instellen
 
 Een MediaPlayer-object kapselt het gedrag en de functionaliteit van een mediaspeler in.
 
-1. Instantieer een `MediaPlayer` toepassing met het volgende:
+1. Instantieer een `MediaPlayer` gebruikend het volgende:
 
    ```js
    var player = new AdobePSDK.MediaPlayer();
    ```
 
-1. Een `MediaPlayerView` instantie maken:
+1. Een `MediaPlayerView`-instantie maken:
 
    ```js
    var view = new AdobePSDK.MediaPlayerView(container);
    ```
 
-   waar `container` is het doelelement `div` dat uw `HTMLMediaElement`.
+   waarbij `container` het doel `div` element is dat uw `HTMLMediaElement` bevat.
 
    Bijvoorbeeld op een HTML-pagina:
 
@@ -50,13 +53,13 @@ Een MediaPlayer-object kapselt het gedrag en de functionaliteit van een mediaspe
          document.getElementById("videoDiv"));  
    ```
 
-1. Koppel uw `MediaPlayerView` instantie aan uw `MediaPlayer` instantie:
+1. Koppel uw `MediaPlayerView`-instantie aan uw `MediaPlayer`-instantie:
 
    ```js
    player.view = view;
    ```
 
-1. Koppel het `div` element met aangepaste besturingselementen aan de instantie MediaPlayer.
+1. Koppel de aangepaste besturingselementen `div`-element aan uw MediaPlayer-instantie.
 
    Bijvoorbeeld in HTML:
 
@@ -77,4 +80,4 @@ Een MediaPlayer-object kapselt het gedrag en de functionaliteit van een mediaspe
    }
    ```
 
-De `MediaPlayer` instantie is nu beschikbaar en correct geconfigureerd voor het weergeven van video-inhoud op het apparaatscherm.
+De instantie `MediaPlayer` is nu beschikbaar en correct geconfigureerd om video-inhoud weer te geven op het apparaatscherm.
