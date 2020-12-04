@@ -6,6 +6,9 @@ title: SEES Public API
 uuid: f3a17d61-04ee-4bdb-9d64-a98066c6d1c8
 translation-type: tm+mt
 source-git-commit: 15403abbd53486e1faa2146cda83f41bd8116632
+workflow-type: tm+mt
+source-wordcount: '179'
+ht-degree: 0%
 
 ---
 
@@ -14,9 +17,9 @@ source-git-commit: 15403abbd53486e1faa2146cda83f41bd8116632
 
 De aanvraag en het antwoord voor machtigingen worden doorgegeven via een wederzijds geverifieerde SSL-verbinding tussen de licentieserver en de machtigingsservice van de klant.
 
-Het URI-schema HTTPS ( [https://tools.ietf.org/html/rfc7230#section-2.7.2](https://tools.ietf.org/html/rfc7230#section-2.7.2)) wordt gebruikt om het eindpunt van de machtiging te definiëren en de HTTP POST-aanvraagmethode ( [https://tools.ietf.org/html/rfc7231#section-4.3.3](https://tools.ietf.org/html/rfc7231#section-4.3.3)) wordt gebruikt voor de aanvraag. Het eindpunt van de machtiging en een markering die de &#39;back-end&#39;-machtiging aangeeft, zijn vereist en moeten in het beleid bij het verpakken worden opgenomen.
+Het URI-schema HTTPS ( [https://tools.ietf.org/html/rfc7230#section-2.7.2](https://tools.ietf.org/html/rfc7230#section-2.7.2)) wordt gebruikt om het eindpunt van de machtiging te definiëren en de aanvraagmethode voor de HTTP-POST ( [https://tools.ietf.org/html/rfc7231#section-4.3.3](https://tools.ietf.org/html/rfc7231#section-4.3.3)) wordt gebruikt voor de aanvraag. Het eindpunt van de machtiging en een markering die de &#39;back-end&#39;-machtiging aangeeft, zijn vereist en moeten in het beleid bij het verpakken worden opgenomen.
 
-## Machtigingsaanvraag {#section_BFBFEF0795CA46D6842C479256B95F95}
+## Machtigingsverzoek {#section_BFBFEF0795CA46D6842C479256B95F95}
 
 De hoofdtekst van de machtigingsaanvraag is een JSON-object dat is gedefinieerd zoals hieronder wordt weergegeven.
 
