@@ -6,6 +6,9 @@ title: Werken met gesloten bijschriften
 uuid: 881266aa-3c32-4035-9547-0f363949f77b
 translation-type: tm+mt
 source-git-commit: 040655d8ba5f91c98ed0584c08db226ffe1e0f4e
+workflow-type: tm+mt
+source-wordcount: '240'
+ht-degree: 0%
 
 ---
 
@@ -24,6 +27,6 @@ TVSDK ondersteunt het renderen van deze indelingen:
 U kunt:
 
 * Selecteer een beschikbare bijschrifttrack als huidige track en luister naar gebeurtenissen die aangeven welke aanvullende beschikbare tracks beschikbaar zijn.
-* Schakel ondertiteling in of uit (zichtbaar of niet zichtbaar) door de `MediaPlayer` interface te gebruiken.
-* Selecteer opmaakopties die bepalen hoe gesloten bijschriften worden gerenderd door de onderliggende video-engine. Gebruik de `MediaPlayerItem` interface om indelingen zoals het lettertype of de lettertypekleur te selecteren.
+* Schakel ondertiteling aan of uit (zichtbaar of niet zichtbaar) door de `MediaPlayer` interface te gebruiken.
+* Selecteer opmaakopties die bepalen hoe gesloten bijschriften worden gerenderd door de onderliggende video-engine. Gebruik de `MediaPlayerItem` interface om formaten zoals de doopvont of doopvontkleur te selecteren.
 
