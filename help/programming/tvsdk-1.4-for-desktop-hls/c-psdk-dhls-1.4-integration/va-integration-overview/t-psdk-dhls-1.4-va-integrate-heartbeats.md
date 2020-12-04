@@ -6,6 +6,9 @@ title: Videoanalysemogelijkheden initialiseren en configureren
 uuid: ece5ddc1-3f7b-4878-b1bc-1fec0a459add
 translation-type: tm+mt
 source-git-commit: 6cb3463be8986d8a1dc718655bd929a0f07ac00d
+workflow-type: tm+mt
+source-wordcount: '712'
+ht-degree: 0%
 
 ---
 
@@ -17,24 +20,24 @@ U kunt de speler configureren om het videogebruik te volgen en te analyseren.
 Controleer of u het volgende hebt voordat u video-tracking (videohartslagen) activeert:
 
 * TVSDK voor desktop HLS
-* Configuratie-/initialisatiegegevens - Neem contact op met uw Adobe-vertegenwoordiger voor uw specifieke informatie over uw account voor het bijhouden van video&#39;s:
+* Configuratie-/initialisatiegegevens - Neem contact op met uw Adobe-vertegenwoordiger voor uw specifieke accountgegevens voor het bijhouden van video:
 
 <table id="table_3565328ABBEE4605A92EAE1ADE5D6F84"> 
  <tbody> 
   <tr> 
-   <td colname="col1"> Het eindpunt van de toepassingsmeetserver </td> 
+   <td colname="col1"> Het eindpunt van de trackingserver voor AppMeturement </td> 
    <td colname="col2"> De URL van het achterste eindpunt van de Adobe Analytics-verzameling (voorheen SiteCatalyst). </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Het servereindpunt voor videoanalyse bijhouden </td> 
-   <td colname="col2"> De URL van het back-end verzameleindpunt van de videoanalyse. Dit is waar alle video hartslag het volgen vraag wordt verzonden. <p>Tip:  De URL van de server voor het bijhouden van bezoekers is gelijk aan de URL van de analytische trackingserver. Voor informatie over het uitvoeren van de Dienst van identiteitskaart van de Bezoeker, zie de Dienst van identiteitskaart van het <a href="https://marketing.adobe.com/resources/help/en_US/mcvid/mcvid-setup-target.html" format="html" scope="external"> Uitvoeren </a>. </p> </td> 
+   <td colname="col2"> De URL van het back-end verzameleindpunt van de videoanalyse. Dit is waar alle video hartslag het volgen vraag wordt verzonden. <p>Tip:  De URL van de server voor het bijhouden van bezoekers is gelijk aan de URL van de analytische trackingserver. Voor informatie over het uitvoeren van de Dienst van identiteitskaart van de Bezoeker, zie <a href="https://marketing.adobe.com/resources/help/en_US/mcvid/mcvid-setup-target.html" format="html" scope="external"> de Dienst </a> van identiteitskaart uitvoeren. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Accountnaam </td> 
    <td colname="col2"> Ook gekend als identiteitskaart van de Reeks van het Rapport (RSID). </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> Organisatie-id van Marketing Cloud </td> 
+   <td colname="col1"> Organisatie-id Marketing Cloud </td> 
    <td colname="col2"> Een tekenreekswaarde die is vereist voor het instantiëren van de component Visitor. </td> 
   </tr> 
   <tr> 
@@ -54,7 +57,7 @@ U kunt als volgt video bijhouden in uw speler configureren:
 
        Houd rekening met het volgende:
    
-   * Voor Instantiatie is een door Adobe opgegeven invoerparameter voor de organisatie-id van de Marketing Cloud vereist.
+   * Instantiatie vereist een Marketing Cloud organisatie-id-invoerparameter die door Adobe wordt opgegeven.
 
       Dit is een tekenreekswaarde.
    * De enige configuratieoptie voor de bibliotheek VisitorAPI is URL van het achterste eindpunt dat unieke herkenningsteken voor de huidige gebruiker verstrekt.
@@ -69,7 +72,7 @@ U kunt als volgt video bijhouden in uw speler configureren:
 
 1. Instantieer en vorm de component AppMeasurement.
 
-   De instantie AppMeasurement heeft vele configuratieopties. Raadpleeg de documentatie van [Adobe Analytics Developer](https://microsite.omniture.com/t2/help/en_US/reference/#Developer) voor meer informatie. De opties in de volgende voorbeeldcode ( `account`, `visitorNamespace`, en `trackingServer`) zijn vereist, en de waarden worden verstrekt door Adobe.
+   De instantie AppMeasurement heeft vele configuratieopties. Raadpleeg de documentatie [Adobe Analytics Developer](https://microsite.omniture.com/t2/help/en_US/reference/#Developer) voor meer informatie. De opties in de volgende voorbeeldcode ( `account`, `visitorNamespace`, en `trackingServer`) worden vereist, en de waarden worden verstrekt door Adobe.
 
    >[!IMPORTANT]
    >
@@ -100,7 +103,7 @@ U kunt als volgt video bijhouden in uw speler configureren:
 
    >[!IMPORTANT]
    >
-   >Zorg ervoor dat de video in uw toepassing `appMeasurementObject.visitor` is gevuld voordat u de stroom voor videoanalyse start, of u krijgt geen resultaten voor het bijhouden van de video. Deze resultaten worden vermeld door de berichten in uw logboek. U kunt een lege spoorvraag ( `appMeasurementObject.track`) toevoegen, het `visitor` bezit onderzoeken tot het wordt bevolkt, en videoanalyses in werking stellen.
+   >Controleer in uw toepassing of `appMeasurementObject.visitor` is gevuld voordat u de videovertaling start, of dat er geen resultaten bij het bijhouden van de video worden weergegeven. Deze resultaten worden vermeld door de berichten in uw logboek. U kunt een lege spoorvraag ( `appMeasurementObject.track`) toevoegen, het `visitor` bezit onderzoeken tot het wordt bevolkt, en videoanalyses in werking stellen.
 
 1. Metagegevens voor het bijhouden van videokaarten initialiseren en configureren.
 
