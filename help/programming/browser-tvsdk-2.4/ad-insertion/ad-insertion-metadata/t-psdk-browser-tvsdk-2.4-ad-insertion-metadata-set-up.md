@@ -1,30 +1,33 @@
 ---
-description: Met de hulpklasse AuditudeSettings stelt u Adobe Primetime- en beslissingsmetagegevens in.
-seo-description: Met de hulpklasse AuditudeSettings stelt u Adobe Primetime- en beslissingsmetagegevens in.
+description: Gebruik de hulpklasse AuditudeSettings om Adobe Primetime- en beslissingsmetagegevens in te stellen.
+seo-description: Gebruik de hulpklasse AuditudeSettings om Adobe Primetime- en beslissingsmetagegevens in te stellen.
 seo-title: Metagegevens instellen en invoegen
 title: Metagegevens instellen en invoegen
 uuid: fc37e0ae-6acf-4a78-a468-f7b5b123b45e
 translation-type: tm+mt
 source-git-commit: 592245f5a7186d18dabbb5a98a468cbed7354aed
+workflow-type: tm+mt
+source-wordcount: '219'
+ht-degree: 0%
 
 ---
 
 
 # Metagegevens instellen en invoegen{#set-up-ad-insertion-metadata}
 
-Met de hulpklasse AuditudeSettings stelt u Adobe Primetime- en beslissingsmetagegevens in.
+Gebruik de hulpklasse AuditudeSettings om Adobe Primetime- en beslissingsmetagegevens in te stellen.
 
 >[!TIP]
 >
->Adobe Primetime en het besluit was eerder bekend als Auditude.
+>Adobe Primetime en het besluit stond voorheen bekend als Auditude.
 
-1. Maak de `AuditudeSettings` instantie.
+1. Stel de instantie `AuditudeSettings` samen.
 
    ```java
    AuditudeSettings auditudeSettings = new AuditudeSettings();
    ```
 
-1. Stel de Adobe Primetime- en beslissingsmedia-id, zoneID, domain en de optionele doelparameters in.
+1. Stel de Adobe Primetime- en beslissingsmedia-id, zoneID, domain en de optionele parameters voor toewijzen in.
 
    ```js
    auditudeSettings.domain = "yourdomain"; 
@@ -32,7 +35,7 @@ Met de hulpklasse AuditudeSettings stelt u Adobe Primetime- en beslissingsmetage
    auditudeSettings.zoneId = "zoneid";
    ```
 
-1. Maak een `MediaResource` instantie met de URL van de mediastream en de eerder gemaakte metagegevens voor advertenties.
+1. Maak een `MediaResource`-instantie met de URL van de mediastream en de eerder gemaakte advertentiemetagegevens.
 
    ```js
    mediaResource = new AdobePSDK.MediaResource ( 
@@ -41,17 +44,17 @@ Met de hulpklasse AuditudeSettings stelt u Adobe Primetime- en beslissingsmetage
          auditudeSettings);
    ```
 
-1. Laad het `MediaResource` object via de `MediaPlayer.replaceCurrentResource(resource)` methode.
+1. Laad het object `MediaResource` via de methode `MediaPlayer.replaceCurrentResource(resource)`.
 
-   Het `MediaPlayer` begin ladend en verwerkt media stroommanifest.
+   Met `MediaPlayer` wordt het mediabream geladen en verwerkt.
 
-1. Wanneer de `MediaPlayer` overgangen naar de INITIALIZED status, krijg de eigenschappen van de media stroom in de vorm van een `MediaPlayerItem` instantie door het `MediaPlayer.CurrentItem` attribuut.
-1. (Optioneel) Vraag de `MediaPlayerItem` instantie om na te gaan of de stream live is, ongeacht of er alternatieve audiotracks zijn.
+1. Wanneer de `MediaPlayer` naar de geINITIALISEERDE status overgaat, krijg de eigenschappen van de media stroom in de vorm van een `MediaPlayerItem` instantie door het `MediaPlayer.CurrentItem` attribuut.
+1. (Optioneel) Vraag de instantie `MediaPlayerItem` om te zien of de stream live is, ongeacht of deze alternatieve audiotracks heeft.
 
    Deze informatie kan u helpen UI voor het playback voorbereiden. Als u bijvoorbeeld weet dat er twee audiotracks zijn, kunt u een UI-besturingselement opnemen dat schakelt tussen deze tracks.
 
 1. Bel `MediaPlayer.prepareToPlay` om de advertentieworkflow te starten.
 
-   Nadat de advertenties zijn opgelost en op de tijdlijn zijn geplaatst, gaat de `  MediaPlayer ` overgang naar de status PREPARED.
-1. Bel `MediaPlayer.play` om het afspelen te starten.
+   Nadat de advertenties zijn opgelost en op de tijdlijn zijn geplaatst, gaat `  MediaPlayer ` over naar de status PREPARED.
+1. Roep `MediaPlayer.play` aan om het afspelen te starten.
 Browser-TVSDK bevat nu advertenties wanneer uw media wordt afgespeeld.
