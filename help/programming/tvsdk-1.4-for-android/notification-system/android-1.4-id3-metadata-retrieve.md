@@ -6,6 +6,9 @@ title: ID3-tags
 uuid: 5e5c5f89-7653-47c1-b9c1-6b9b9b1f8d73
 translation-type: tm+mt
 source-git-commit: 5908e5a3521966496aeec0ef730e4a704fddfb68
+workflow-type: tm+mt
+source-wordcount: '286'
+ht-degree: 0%
 
 ---
 
@@ -25,13 +28,13 @@ Wanneer TVSDK ID3-metagegevens detecteert, wordt een melding met de volgende geg
 * NAME = niet aanwezig
 * ID = 0
 
-1. Implementeer een gebeurtenislistener voor `MediaPlayer.PlaybackEventListener#onTimedMetadata(TimeMetadata timeMetadata)` en registreer deze bij het `MediaPlayer` object.
+1. Implementeer een gebeurtenislistener voor `MediaPlayer.PlaybackEventListener#onTimedMetadata(TimeMetadata timeMetadata)` en registreer deze bij het object `MediaPlayer`.
 
    TVSDK roept deze listener aan wanneer deze ID3-metagegevens detecteert.
 
    >[!NOTE]
    >
-   >Aangepaste cues en cues gebruiken dezelfde `onTimedMetadata` gebeurtenis om de detectie van een nieuwe tag aan te geven. Dit mag geen verwarring veroorzaken omdat aangepaste ad-cues worden gedetecteerd op manifestniveau en ID3-tags zijn ingesloten in de stream. Voor meer informatie, zie douane-markeringen-vormen.
+   >Aangepaste cues en cues gebruiken dezelfde gebeurtenis `onTimedMetadata` om de detectie van een nieuwe tag aan te geven. Dit mag geen verwarring veroorzaken omdat aangepaste ad-cues worden gedetecteerd op manifestniveau en ID3-tags zijn ingesloten in de stream. Voor meer informatie, zie douane-markeringen-vormen.
 
 1. Haal de metagegevens op.
 
