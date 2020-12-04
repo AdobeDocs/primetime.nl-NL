@@ -18,7 +18,7 @@ Primetime-Ad Insertion communiceert met client-toepassingen voor het afspelen va
 
 Nadat het systeem correct is opgezet, zou een typisch werkschema als volgt kunnen kijken:
 
-1. De clienttoepassing genereert een [Bootstrap-URL](/help/dynamic-ad-insertion/msapi-topics/ms-getting-started/ms-api-query-params.md) met informatie over de videostream en verzendt een verzoek van de GET naar Primetime Ad Insertion.
+1. De cliënttoepassing produceert [Bootstrap URL](/help/dynamic-ad-insertion/msapi-topics/ms-getting-started/ms-api-query-params.md) met informatie over de videostroom en verzendt een verzoek van de GET naar Primetime Ad Insertion.
 
 1. Primetime Ad Insertion reageert door inhoudsmanifest van CDN van de uitgever terug naar de cliënttoepassing te verzenden.
 
@@ -32,6 +32,6 @@ Nadat het systeem correct is opgezet, zou een typisch werkschema als volgt kunne
 
 1. Primetime Ad Insertion levert de uiteindelijke manifesten, inclusief advertenties, aan de clienttoepassing voor afspelen.
 
-1. De levering en de viewability van de advertentie kunnen door of cliënt of server-kant worden gemeten en volgen, zie [Opstelling en het Volgen](set-up-ad-tracking.md)van de Aanpassing.
+1. De levering en de viewability van de advertentie kunnen door of cliënt of server-kant en het volgen worden gemeten, zie [Het Plaatsen van de Controle van de Advisering](set-up-ad-tracking.md).
 
 Primetime Ad Insertion ondersteunt de meeste clientconfiguraties voor HLS/DASH.
