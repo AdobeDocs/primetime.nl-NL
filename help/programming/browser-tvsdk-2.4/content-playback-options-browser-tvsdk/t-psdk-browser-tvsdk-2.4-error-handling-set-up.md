@@ -6,6 +6,9 @@ title: Foutafhandeling instellen
 uuid: 9e650ea7-86cb-4489-a3fd-80cd2ccef41f
 translation-type: tm+mt
 source-git-commit: 040655d8ba5f91c98ed0584c08db226ffe1e0f4e
+workflow-type: tm+mt
+source-wordcount: '145'
+ht-degree: 2%
 
 ---
 
@@ -23,13 +26,13 @@ U kunt één plaats in uw toepassing instellen om fout behandeling in antwoord o
                            onStatusChange);
    ```
 
-1. Geef in uw gebeurtenislistener, wanneer de gebeurtenis `event.status` is `AdobePSDK.MediaPlayerStatus.ERROR`, de logica op om alle fouten af te handelen.
-1. Nadat de fout is afgehandeld, herstelt u het `MediaPlayer` object of laadt u een nieuwe mediabron.
+1. Wanneer de `event.status` `AdobePSDK.MediaPlayerStatus.ERROR` is in uw gebeurtenislistener, geeft u de logica op om alle fouten af te handelen.
+1. Nadat de fout is afgehandeld, herstelt u het `MediaPlayer`-object of laadt u een nieuwe mediabron.
 
        Wanneer het MediaPlayer-object de status ERROR heeft, kan deze status pas worden afgesloten wanneer u een van de volgende taken uitvoert:
    
-   * Herstel het MediaPlayer-object met de `MediaPlayer.reset` methode.
-   * Laad een nieuwe mediabron met de `MediaPlayer.replaceCurrentResource` methode.
+   * Herstel het MediaPlayer-object met de methode `MediaPlayer.reset`.
+   * Laad een nieuwe media bron door de `MediaPlayer.replaceCurrentResource` methode te gebruiken.
 
 <!--<a id="example_342CA5A8CD7C45BD88233C5BDBB17220"></a>-->
 
