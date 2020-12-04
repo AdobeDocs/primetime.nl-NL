@@ -1,66 +1,69 @@
 ---
-description: De manifestserver retourneert master playlists in M3U8-indeling, conform de voorgestelde HTTP Live Streaming-standaard. Het bestaat uit een reeks variantvervoerstromen (TSs), elk die vertoningen van de zelfde inhoud voor verschillende beetjetarieven en formaten bevatten. Adobe Primetime en invoeging voegen de EXT-X-MARKER-instructietag toe, die door clientvideospelers moet worden geïnterpreteerd.
-seo-description: De manifestserver retourneert master playlists in M3U8-indeling, conform de voorgestelde HTTP Live Streaming-standaard. Het bestaat uit een reeks variantvervoerstromen (TSs), elk die vertoningen van de zelfde inhoud voor verschillende beetjetarieven en formaten bevatten. Adobe Primetime en invoeging voegen de EXT-X-MARKER-instructietag toe, die door clientvideospelers moet worden geïnterpreteerd.
+description: De manifestserver retourneert master afspeellijsten in de M3U8-indeling, conform de voorgestelde HTTP Live Streaming-standaard. Het bestaat uit een reeks variantvervoerstromen (TSs), elk die vertoningen van de zelfde inhoud voor verschillende beetjetarieven en formaten bevatten. Bij Adobe Primetime en invoegen wordt de EXT-X-MARKER-tag toegevoegd die door videospelers op de client moet worden geïnterpreteerd.
+seo-description: De manifestserver retourneert master afspeellijsten in de M3U8-indeling, conform de voorgestelde HTTP Live Streaming-standaard. Het bestaat uit een reeks variantvervoerstromen (TSs), elk die vertoningen van de zelfde inhoud voor verschillende beetjetarieven en formaten bevatten. Bij Adobe Primetime en invoegen wordt de EXT-X-MARKER-tag toegevoegd die door videospelers op de client moet worden geïnterpreteerd.
 seo-title: EXT-X-MARKERINGSrichtlijn
 title: EXT-X-MARKERINGSrichtlijn
 uuid: e349bf89-b196-47b4-a362-9913fa28b2c6
 translation-type: tm+mt
 source-git-commit: 358c5b02d47f23a6adbc98e457e56c8220cae6e9
+workflow-type: tm+mt
+source-wordcount: '807'
+ht-degree: 0%
 
 ---
 
 
 # EXT-X-MARKERINGSrichtlijn {#ext-x-marker-directive}
 
-De manifestserver retourneert master playlists in M3U8-indeling, conform de voorgestelde HTTP Live Streaming-standaard. Het bestaat uit een reeks variantvervoerstromen (TSs), elk die vertoningen van de zelfde inhoud voor verschillende beetjetarieven en formaten bevatten. Adobe Primetime en invoeging voegen de EXT-X-MARKER-instructietag toe, die door clientvideospelers moet worden geïnterpreteerd.
+De manifestserver retourneert master afspeellijsten in de M3U8-indeling, conform de voorgestelde HTTP Live Streaming-standaard. Het bestaat uit een reeks variantvervoerstromen (TSs), elk die vertoningen van de zelfde inhoud voor verschillende beetjetarieven en formaten bevatten. Bij Adobe Primetime en invoegen wordt de EXT-X-MARKER-tag toegevoegd die door videospelers op de client moet worden geïnterpreteerd.
 
-Zie [Adobe Primetime HTTP Live Streaming Profile](https://wwwimages2.adobe.com/content/dam/acom/en/devnet/primetime/PrimetimeHLS_April2014.pdf)voor meer informatie over de EXT-X-MARKER-tag.
+Zie [Adobe Primetime Live streaming profiel](https://wwwimages2.adobe.com/content/dam/acom/en/devnet/primetime/PrimetimeHLS_April2014.pdf) voor meer informatie over de EXT-X-MARKER-tag.
 
 >[!NOTE]
 >
->Deze functionaliteit is alleen beschikbaar als de URL van de bootstrap-manifestserver de `pttrackingmode` parameter niet bevat.
+>Deze functionaliteit is alleen beschikbaar als de URL van de bootstrap-manifestserver niet de parameter `pttrackingmode` bevat.
 
 >[!NOTE]
 >
 >De tag EXT-X-MARKER wordt toegevoegd aan advertentiesegmenten en niet aan inhoudssegmenten.
 
-In de conceptstandaard bij Live [HTTP-streaming](https://tools.ietf.org/html/draft-pantos-http-live-streaming-23) worden de inhoud en indeling van afspeellijsten met varianten beschreven. De tag EXT-X-MARKER geeft de client de opdracht een callback aan te roepen. Het bevat de volgende componenten:
+In de conceptstandaard op [Live HTTP-streaming](https://tools.ietf.org/html/draft-pantos-http-live-streaming-23) worden de inhoud en indeling van afspeellijsten met varianten beschreven. De tag EXT-X-MARKER geeft de client de opdracht een callback aan te roepen. Het bevat de volgende componenten:
 
-* **ID** Unieke id (tekenreeks) voor deze callback-gebeurtenis binnen de context van de programmastream.
+* **** IDUnique-id (tekenreeks) voor deze callback-gebeurtenis binnen de context van de programmastream.
 
-* **TYPE** Type (tekenreeks) van de callback-gebeurtenis: PodBegin, PodEnd, PrerollPodBegin, PrerollPodEnd of AdBegin
+* **** TYPEType (tekenreeks) van de callback-gebeurtenis: PodBegin, PodEnd, PrerollPodBegin, PrerollPodEnd of AdBegin
 
-* **DURATION** Length of time (in seconden) vanaf het begin van het segment met de tag waarvoor de instructie geldig blijft.
+* **** DURATIONLength of time (in seconden) vanaf het begin van het segment met de tag waarvoor de instructie geldig blijft.
 
-* **VERSCHUIVEN** optioneel. De verschuiving (in seconden) ten opzichte van het begin van het afspelen van het segment, wanneer de callback moet worden aangeroepen.
+* **** OFFSETOptional. De verschuiving (in seconden) ten opzichte van het begin van het afspelen van het segment, wanneer de callback moet worden aangeroepen.
 
-   * `PodBegin` en `PrerollPodBegin` bevatten baken-informatie in het kenmerk DATA en worden geactiveerd bij het begin van het segment. De `OFFSET` tag is hier dus niet beschikbaar.
+   * `PodBegin` en  `PrerollPodBegin` bevatten baken-informatie in het kenmerk DATA en worden geactiveerd bij het begin van het segment. De tag `OFFSET` is hier dus niet beschikbaar.
 
-   * `AdBegin` bevat bakeninformatie in het attribuut DATA en de impositietags worden geactiveerd aan het begin van dat segment. De `OFFSET` tag is hier dus ook niet beschikbaar.
+   * `AdBegin` bevat bakeninformatie in het attribuut DATA en de impositietags worden geactiveerd aan het begin van dat segment. De tag `OFFSET` is hier dus ook niet beschikbaar.
 
-   * `PodEnd` en `PrerollPodEnd` bevatten baken-informatie in het kenmerk DATA, maar worden geactiveerd aan het einde van het huidige segment, omdat wordt verwacht dat deze tags worden geactiveerd aan het einde van het laatste segment van de laatste advertentie in de pod. In dit geval, `OFFSET` wordt geplaatst om `<duration of segment>` te specificeren dat het baken aan eind van het huidige segment moet worden gestaakt.
+   * `PodEnd` en  `PrerollPodEnd` bevatten baken-informatie in het kenmerk DATA, maar worden geactiveerd aan het einde van het huidige segment, omdat wordt verwacht dat deze tags worden geactiveerd aan het einde van het laatste segment van de laatste advertentie in de pod. In dit geval is `OFFSET` ingesteld op `<duration of segment>` om op te geven dat het baken moet worden geactiveerd aan het einde van het huidige segment.
 
-* **Een tekenreeks met DATA** Base64-codering die is ingesloten in dubbele aanhalingstekens die de gegevens bevatten die aan de toepassing moeten worden doorgegeven wanneer de callback wordt aangeroepen. Het bevat informatie over het bijhouden van advertenties die voldoet aan de VMAP1.0- en VAST3.0-specificaties.
+* **Een tekenreeks met** DATABase64-codering die is ingesloten in dubbele aanhalingstekens die de gegevens bevatten die aan de toepassing moeten worden doorgegeven wanneer de callback wordt aangeroepen. Het bevat informatie over het bijhouden van advertenties die voldoet aan de VMAP1.0- en VAST3.0-specificaties.
 
-* **Aantal advertenties** dat in het advertentieeinde zal worden vastgezet.
+* **Aantal** advertenties dat in de advertentiesonderbreking zal worden vastgezet.
 
    Alleen van toepassing als de component TYPE is ingesteld op PodBegin of PrerollPodBegin.
 
-* **BREAKDUR** Totale duur (in seconden) van het gevulde en afgebroken formulier.
+* **** BREAKDURTotale duur (in seconden) van het gevulde en afgebroken formulier.
 
    Alleen van toepassing als de component TYPE is ingesteld op PodBegin of PrerollPodBegin.
 
 Wanneer het construeren van callback, interpreteer de componenten EXT-X-MARKER als volgt:
 
-* Wanneer de tag `OFFSET`bevat, wordt de callback geactiveerd bij de opgegeven verschuiving ten opzichte van het begin van het afspelen van de inhoud in dat segment. Anders, brand de callback zodra de inhoud in dat segment begint speel.
-* Gebruik deze optie `DURATION` om de voortgang van de advertentie te volgen en om URL&#39;s aan te vragen voor het bijhouden van gebeurtenissen.
-* Geef `ID`, `TYPE`en `DATA` aan callback door.
+* Wanneer de tag `OFFSET` bevat, wordt de callback geactiveerd bij de opgegeven verschuiving ten opzichte van het begin van het afspelen van de inhoud in dat segment. Anders, brand de callback zodra de inhoud in dat segment begint speel.
+* Gebruik `DURATION` om de voortgang van de advertentie-inhoud te volgen en om URL&#39;s aan te vragen voor het bijhouden van gebeurtenissen.
+* Geef `ID`, `TYPE`, en `DATA` aan callback door.
 
-Gebruik de `PrerollPodBegin`, en `PrerollPodEnd` waarden voor `TYPE` om te beslissen welk TS segment eerst in levende/lineaire stromen moet spelen.
+Gebruik `PrerollPodBegin`, en `PrerollPodEnd` waarden voor `TYPE` om te beslissen welk TS segment eerst in levende/lineaire stromen moet spelen.
 
 >[!NOTE]
 >
->De waarden `PrerollPodBegin`en `PrerollPodEnd` waarden zijn alleen beschikbaar wanneer een pre-roll-advertentie wordt ingevoegd in een live stream.
+>De waarden `PrerollPodBegin` en `PrerollPodEnd` zijn alleen beschikbaar wanneer een pre-roll-advertentie in een live stream wordt ingevoegd.
 
 De manifestserver omvat markeringen EXT-X-MARKER in de volgende segmenten:
 
@@ -68,7 +71,7 @@ De manifestserver omvat markeringen EXT-X-MARKER in de volgende segmenten:
 * Het eerste segment van de advertentie om het begin/einde/de voortgang van een afzonderlijke advertentie in een advertentiepod bij te houden.
 * Het laatste segment in het advertentieeinde om het einde van een advertentiepod bij te houden.
 
-De manifestserver verzendt een document van `VMAP1.0-conformant` XML om het begin en het eind van elk advertentierak te volgen. Het is een gefilterde versie van de daadwerkelijke die reactie VMAP1.0 door de advertentieserver wordt teruggekeerd, en bevat hoofdzakelijk de volgende gebeurtenissen zoals hier getoond:
+De manifestserver verzendt een `VMAP1.0-conformant` document van XML om het begin en het eind van elk advertentieeinde te volgen. Het is een gefilterde versie van de daadwerkelijke die reactie VMAP1.0 door de advertentieserver wordt teruggekeerd, en bevat hoofdzakelijk de volgende gebeurtenissen zoals hier getoond:
 
 ```xml
 <?xml version="1.0"?> 
@@ -93,7 +96,7 @@ De manifestserver verzendt een document van `VMAP1.0-conformant` XML om het begi
 </AdTrackingFragments>
 ```
 
-Voor elke advertentie die de manifestserver in de programmainhoud opneemt, verzendt het een VAST3.0-conformant document van XML om die advertentie te volgen. Elk XML-document bevat een `<InLine>` element waarin de ingevoegde lineaire en creatieve inhoud wordt beschreven, of een `<Wrapper>` element in het geval van omvattende advertenties (dat wil zeggen gekoppelde of omgeleide advertenties) en eventuele bijbehorende advertenties en uitbreidingen. Als de VAST-reactie een reekskenmerk bevat, bijvoorbeeld wanneer de advertentie deel uitmaakt van een advertentiepod, bevat het document dat kenmerk. Hier volgt een voorbeeld van een XML-document dat compatibel is met VAST3.0 voor het bijhouden van een afzonderlijke advertentie:
+Voor elke advertentie die de manifestserver in de programmainhoud opneemt, verzendt het een VAST3.0-conformant document van XML om die advertentie te volgen. Elk XML-document bevat een `<InLine>`-element dat het lineaire en creatieve ingevoegde element beschrijft, of een `<Wrapper>`-element in het geval van omvattende advertenties (dat wil zeggen gekoppelde of omgeleide advertenties), en eventuele bijbehorende advertenties en uitbreidingen. Als de VAST-reactie een reekskenmerk bevat, bijvoorbeeld wanneer de advertentie deel uitmaakt van een advertentiepod, bevat het document dat kenmerk. Hier volgt een voorbeeld van een XML-document dat compatibel is met VAST3.0 voor het bijhouden van een afzonderlijke advertentie:
 
 ```xml
 <?xml version="1.0"?> 
