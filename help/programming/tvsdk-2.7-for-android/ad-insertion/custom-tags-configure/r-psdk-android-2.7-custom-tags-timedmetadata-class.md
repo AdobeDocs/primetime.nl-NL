@@ -29,27 +29,27 @@ De klasse biedt de volgende elementen:
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <span class="codeph"> id </span> </td> 
+   <td colname="col1"> <span class="codeph"> id  </span> </td> 
    <td colname="col02"> lang </td> 
    <td colname="col2"> <p>Unieke id van de metagegevens met tijdslimiet. </p> <p>Deze waarde wordt meestal geëxtraheerd uit het kenmerk cue/tag-id. Anders wordt een unieke willekeurige waarde opgegeven. Gebruik <span class="codeph"> getId </span>. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <span class="codeph"> metagegevens </span> </td> 
+   <td colname="col1"> <span class="codeph"> metagegevens  </span> </td> 
    <td colname="col02"> Metagegevens </td> 
    <td colname="col2"> <p>De verwerkte/geëxtraheerde informatie uit de aangepaste tag playlist/manifest. Gebruik <span class="codeph"> getMetadata </span>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <span class="codeph"> name </span> </td> 
    <td colname="col02"> String </td> 
-   <td colname="col2"> <p>De naam van de getimede metagegevens. Als het type <span class="codeph"> </span>TAG is, vertegenwoordigt de waarde de naam van het actiepunt/de tag. Als het type <span class="codeph"> ID3 </span>is, is het null. Gebruik <span class="codeph"> getName </span>. </p> </td> 
+   <td colname="col2"> <p>De naam van de getimede metagegevens. Wanneer het type <span class="codeph"> TAG </span> is, vertegenwoordigt de waarde de naam van het actiepunt/de tag. Als het type <span class="codeph"> ID3 </span> is, is het ongeldig. Gebruik <span class="codeph"> getName </span>. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <span class="codeph"> tijd </span> </td> 
+   <td colname="col1"> <span class="codeph"> tijd  </span> </td> 
    <td colname="col02"> lang </td> 
    <td colname="col2"> <p>De tijdpositie, in milliseconden, ten opzichte van het begin van de hoofdinhoud waar deze getimede metagegevens aanwezig zijn in de stream. Gebruik <span class="codeph"> getTime </span>. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <span class="codeph"> type </span> </td> 
+   <td colname="col1"> <span class="codeph"> type  </span> </td> 
    <td colname="col02"> Type </td> 
    <td colname="col2"> <p>Het type van de getimede meta-gegevens. Gebruik <span class="codeph"> getType </span>. 
      <ul id="ul_70FBFB33E9F846D8B38592560CCE9560"> 
@@ -87,31 +87,31 @@ Houd rekening met het volgende:
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <span class="codeph"> public enum Type {TAG, ID3} </span> </td> 
+   <td colname="col1"> <span class="codeph"> public enum Type {TAG, ID3}  </span> </td> 
    <td colname="col2"> <p>Mogelijke typen voor de getimede metagegevens. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <span class="codeph"> public TimedMetadata(Type, long time, long id, String name, Metadata metadata); </span> </td> 
+   <td colname="col1"> <span class="codeph"> public TimedMetadata(Type, long time, long id, String name, Metadata metadata);  </span> </td> 
    <td colname="col2"> <p>Standaardconstructor (time is de lokale streamtijd). </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <span class="codeph"> public long getTime(); </span> </td> 
+   <td colname="col1"> <span class="codeph"> public long getTime();  </span> </td> 
    <td colname="col2"> <p>De tijdpositie, relatief ten opzichte van het begin van de hoofdinhoud, waar deze metagegevens in de stream zijn ingevoegd. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <span class="codeph"> public Metadata getMetadata(); </span> </td> 
+   <td colname="col1"> <span class="codeph"> public Metadata getMetadata();  </span> </td> 
    <td colname="col2"> <p>De metagegevens die in de stream zijn ingevoegd. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <span class="codeph"> public type getType(); </span> </td> 
+   <td colname="col1"> <span class="codeph"> public type getType();  </span> </td> 
    <td colname="col2"> <p>Retourneert het type van de getimede metagegevens. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <span class="codeph"> public long getId(); </span> </td> 
+   <td colname="col1"> <span class="codeph"> public long getId();  </span> </td> 
    <td colname="col2"> <p>Retourneert de id die uit de kenmerken cue/tag is geëxtraheerd. Anders wordt een unieke willekeurige waarde opgegeven. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <span class="codeph"> public String getName(); </span> </td> 
+   <td colname="col1"> <span class="codeph"> public String getName();  </span> </td> 
    <td colname="col2"> <p>Hiermee wordt de naam van de actielijn geretourneerd. Dit is doorgaans de naam van de HLS-tag. </p> </td> 
   </tr> 
  </tbody> 
