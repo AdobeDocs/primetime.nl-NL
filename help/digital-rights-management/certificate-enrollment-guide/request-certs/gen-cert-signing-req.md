@@ -4,11 +4,14 @@ title: Een certificaataanvraag genereren (aanvrager)
 uuid: 04abd5d2-77ac-4f89-8bea-31d389159aee
 translation-type: tm+mt
 source-git-commit: b4b50471ab0ba98329862322a61bf73aa9e471d5
+workflow-type: tm+mt
+source-wordcount: '203'
+ht-degree: 0%
 
 ---
 
 
-# Een certificaataanvraag genereren (aanvrager) {#generate-a-certificate-signing-request-requester}
+# Een certificaataanvraag genereren (Requester) {#generate-a-certificate-signing-request-requester}
 
 1. Een sleutelpaar genereren. Als u een hulpprogramma zoals OpenSSL wilt gebruiken, opent u een opdrachtvenster en voert u het volgende in:
 
@@ -18,7 +21,7 @@ source-git-commit: b4b50471ab0ba98329862322a61bf73aa9e471d5
 
    >[!NOTE]
    >
-   >Adobe raadt u aan certificaattype (lic, pkgr, trans, trial of eval) op te nemen in de sleutelnaam. Deze naamgevingsconventie maakt het gemakkelijker om deze op uw licentieserver te implementeren. In dit voorbeeld wordt &quot;mijnbedrijf-licentie.sleutel&quot; gebruikt. Voor de Evaluatie- en proefversies gebruikt u &quot;mijnbedrijf-eval.key&quot; en &quot;mijnbedrijf-trial.key&quot;.
+   >Adobe raadt aan om certificaattype (lic, pkgr, trans, trial of eval) op te nemen in de sleutelnaam. Deze naamgevingsconventie maakt het gemakkelijker om deze op uw licentieserver te implementeren. In dit voorbeeld wordt &quot;mijnbedrijf-licentie.sleutel&quot; gebruikt. Voor de Evaluatie- en proefversies gebruikt u &quot;mijnbedrijf-eval.key&quot; en &quot;mijnbedrijf-trial.key&quot;.
 
 1. Voer een wachtwoord in om de persoonlijke sleutel te beveiligen.
 
@@ -39,7 +42,7 @@ source-git-commit: b4b50471ab0ba98329862322a61bf73aa9e471d5
 1. U wordt gevraagd het wachtwoord voor de persoonlijke sleutel in te voeren.
 1. Maak een reservekopie van uw persoonlijke sleutel en wachtwoord.
 
-   Als u de persoonlijke sleutel verliest of als er een compromis is bereikt, neemt u contact op met de Adobe-certificaatbeheerder om uw certificaat in te trekken en een nieuw certificaat aan te vragen.
+   Als u de persoonlijke sleutel verliest of als deze is gecompromitteerd, neemt u contact op met de beheerder van het Adobe-certificaat om uw certificaat in te trekken en een nieuw certificaat aan te vragen.
 
    >[!NOTE]
    >
