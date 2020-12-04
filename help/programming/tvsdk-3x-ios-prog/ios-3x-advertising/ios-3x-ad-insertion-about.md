@@ -13,7 +13,7 @@ ht-degree: 0%
 ---
 
 
-# Advertenties invoegen {#insert-ads}
+# Advertenties {#insert-ads} invoegen
 
 Toevoegen lost advertenties voor video-op-verzoek (VOD), voor live streaming en voor lineair streamen met het bijhouden van advertenties en het afspelen van advertenties op. TVSDK doet de vereiste verzoeken aan de advertentieserver, ontvangt informatie over advertenties voor de opgegeven inhoud en plaatst de advertenties in fasen.
 
@@ -23,7 +23,7 @@ Een *`ad break`* bevat een of meer advertenties die achtereenvolgens worden afge
 >
 >Als de advertentie fouten bevat, negeert TVSDK de advertentie.
 
-## VOD-advertenties omzetten en invoegen {#section_157344F857C64F36B48AD441F6E7FABA}
+## VOD-advertenties {#section_157344F857C64F36B48AD441F6E7FABA} omzetten en invoegen
 
 TVSDK biedt ondersteuning voor verschillende gebruiksgevallen voor VOD en het oplossen en invoegen van VOD.
 
@@ -33,7 +33,7 @@ TVSDK biedt ondersteuning voor verschillende gebruiksgevallen voor VOD en het op
 
 TVSDK verhelpt de advertenties, voegt de advertenties in op locaties die door de advertentieserver zijn gedefinieerd en berekent de virtuele tijdlijn voordat het afspelen start. Nadat het afspelen is gestart, kunnen er geen wijzigingen plaatsvinden, zoals advertenties die worden ingevoegd of ingevoegde advertenties die worden verwijderd.
 
-## Actieve en lineaire en {#section_A6A1BB262D084462A1D134083556B7CC}
+## Actieve en lineaire ad {#section_A6A1BB262D084462A1D134083556B7CC} omzetten en invoegen
 
 TVSDK biedt ondersteuning voor verschillende gebruiksgevallen voor live en lineair opheffen en invoegen.
 
@@ -47,21 +47,21 @@ TVSDK lost de advertenties op en voegt de advertenties in wanneer een richtsnoer
 * # EXT-X-CUE
 * # EXT-X-CUE-OUT
 
-Deze markeringen vereisen het meta-gegevensgebied `DURATION` in seconden en unieke identiteitskaart van de actie. Bijvoorbeeld:
+Deze markeringen vereisen `DURATION` van het meta-gegevensgebied in seconden en unieke identiteitskaart van de richtsnoer. Bijvoorbeeld:
 
 ```
 #EXT-X-CUE DURATION=27 ID=identiferForThisCue ... 
 ```
 
-Zie [Abonneren op aangepaste tags](../../tvsdk-3x-ios-prog/ios-3x-advertising/ios-3x-custom-tags-configure/ios-3x-custom-tags-subscribe.md)voor meer informatie over extra aanwijzingen.
+Zie [Abonneren op aangepaste tags](../../tvsdk-3x-ios-prog/ios-3x-advertising/ios-3x-custom-tags-configure/ios-3x-custom-tags-subscribe.md) voor meer informatie over extra aanwijzingen.
 
-## Clientadvertentie bijhouden {#section_12355C7A35F14C15A2A18AAC90FEC2F5}
+## Client en {#section_12355C7A35F14C15A2A18AAC90FEC2F5} bijhouden
 
 TVSDK houdt automatisch advertenties bij voor VOD en live/lineair streamen.
 
 Meldingen worden gebruikt om de toepassing te informeren over de voortgang van een advertentie, inclusief informatie over het begin en het einde van een advertentie.
 
-## Een vroege terugkeer voor een onderbreking implementeren {#section_EEB9FE62CA7E4790B58D3CA906F43DCF}
+## Een vroege return ad break {#section_EEB9FE62CA7E4790B58D3CA906F43DCF} implementeren
 
 Voor live streaming en invoegen moet u mogelijk een ad-einde verlaten voordat alle advertenties in het einde worden afgespeeld.
 
@@ -74,7 +74,7 @@ Hier volgen enkele voorbeelden van een vroege return ad break:
 
 De mogelijkheid om vroegtijdig een advertentie-einde te verlaten, wordt geïdentificeerd door een aangepaste tag in het manifest die als splice-in of een cue-intag wordt bekend. Met TVSDK kan de toepassing zich abonneren op deze splice-in-tags om een splice-in-mogelijkheid te bieden.
 
-* U kunt als volgt de `#EXT-X-CUE-IN` tag gebruiken als splice-in-mogelijkheid en een vroege en eindemarkering implementeren:
+* De tag `#EXT-X-CUE-IN` gebruiken als een splice-in-mogelijkheid en een vroege en break-return implementeren:
 
    1. Abonneren op de tag.
 
@@ -94,11 +94,11 @@ De mogelijkheid om vroegtijdig een advertentie-einde te verlaten, wordt geïdent
 
 * Dezelfde tag delen voor splice-out en splice-in:
 
-1. Wanneer de toepassing dezelfde actielijn deelt om cue-out/splice-out en cue-in/splice-in aan te geven, breidt u de `PTDefaultAdOpportunityResolver` methode uit `preparePlacementOpportunity` en implementeert u deze.
+1. Wanneer de toepassing hetzelfde actiepunt deelt om cue-out/splice-out en cue-in/splice-in aan te geven, breidt u `PTDefaultAdOpportunityResolver` uit en implementeert u de methode `preparePlacementOpportunity`.
 
    >[!TIP]
    >
-   >In de volgende code wordt ervan uitgegaan dat de toepassing een implementatie voor de `isCueInOpportunity` methode heeft.
+   >In de volgende code wordt ervan uitgegaan dat de toepassing een implementatie heeft voor de methode `isCueInOpportunity`.
 
    ```
    - (PTPlacementOpportunity *)preparePlacementOpportunity:(PTTimedMetadata *)timedMetadata 
@@ -114,7 +114,7 @@ De mogelijkheid om vroegtijdig een advertentie-einde te verlaten, wordt geïdent
    }
    ```
 
-1. Registreer de verlengde opportuniteitsoplosser op de `PTDefaultMediaPlayerClientFactory` instantie.
+1. Registreer de uitgebreide opportuniteitsoplosser op de `PTDefaultMediaPlayerClientFactory` instantie.
 
 ```
    // self.player is the PTMediaPlayer instance created for content and ad playback 
