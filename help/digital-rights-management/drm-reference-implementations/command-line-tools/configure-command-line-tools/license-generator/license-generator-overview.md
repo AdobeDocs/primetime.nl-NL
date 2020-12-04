@@ -15,7 +15,7 @@ ht-degree: 0%
 
 Gebruik [!DNL AdobeLicenseGenerator.jar] om licenties te genereren zonder dat de client een licentieaanvraag naar een server moet verzenden. Vervolgens kunt u een vooraf gegenereerde licentie insluiten in de inhoud of de licentie leveren aan de client via andere mechanismen, zoals een eenvoudige HTTP-webserver.
 
-## Het opdrachtregelgebruik van de licentiegenerator {#license-generator-command-line-usage}
+## Het bevel-lijn gebruik van de Generator van de vergunning {#license-generator-command-line-usage}
 
 **Een licentie genereren:**
 
@@ -31,7 +31,7 @@ java -jar AdobeLicenseGenerator.jar -m
 
 * `metadata` - Bevat de Adobe Primetime DRM-metagegevens.
 
-   U kunt dit bestand ophalen van beveiligde inhoud met de `-d -m` opties in Media Packager.
+   U kunt dit bestand ophalen van beveiligde inhoud met de `-d -m`-opties in Media Packager.
 
 **Een eerder gegenereerde licentie weergeven:**
 
@@ -56,7 +56,7 @@ java -jar AdobeLicenseGenerator.jar -d
  <tbody class="- topic/tbody "> 
   <tr rowsep="1" class="- topic/row "> 
    <td colname="1" class="- topic/entry "><span class="+ topic/ph pr-d/codeph codeph">-c configfile</span> </td> 
-   <td colname="2" class="- topic/entry "> <p class="- topic/p ">Hier geeft u de naam en locatie op van het configuratiebestand. </p> <p class="- topic/p ">Als u geen naam of locatie opgeeft, zoekt de DRM-licentiegenerator naar <span class="filepath"> flashaccessStools.eigenschappen</span> in de huidige werkmap. </p> <p>Opmerking:  Opties die u op de opdrachtregel opgeeft, hebben voorrang op de opties die u in het configuratiebestand opgeeft. </p> </td> 
+   <td colname="2" class="- topic/entry "> <p class="- topic/p ">Hier geeft u de naam en locatie op van het configuratiebestand. </p> <p class="- topic/p ">Als u geen naam of locatie opgeeft, zoekt de DRM-licentiegenerator naar <span class="filepath"> flashaccess.properties</span> in de huidige werkmap. </p> <p>Opmerking:  Opties die u op de opdrachtregel opgeeft, hebben voorrang op de opties die u in het configuratiebestand opgeeft. </p> </td> 
   </tr> 
   <tr rowsep="1" class="- topic/row "> 
    <td colname="1" class="- topic/entry "> <p class="- topic/p ">-d <i class="+ topic/ph hi-d/i "><span class="+ topic/ph pr-d/codeph codeph"> licentiebestand</span></i> </p> </td> 
@@ -84,7 +84,7 @@ java -jar AdobeLicenseGenerator.jar -d
   </tr> 
   <tr rowsep="1" class="- topic/row "> 
    <td colname="1" class="- topic/entry "><span class="+ topic/ph pr-d/codeph codeph">-r ontvanger-cert</span> </td> 
-   <td colname="2" class="- topic/entry ">Genereert een licentie voor een opgegeven ontvanger. U kunt een apparaat- of domeincertificaat gebruiken en u kunt meerdere <span class="+ topic/ph pr-d/codeph codeph"> -r- </span>opties opgeven om een licentie voor meerdere ontvangers te maken. </td> 
+   <td colname="2" class="- topic/entry ">Genereert een licentie voor een opgegeven ontvanger. U kunt een apparaat of domeincertificaat gebruiken, en u kunt veelvoudige <span class="+ topic/ph pr-d/codeph codeph"> - of </span>opties specificeren om een vergunning voor veelvoudige ontvangers tot stand te brengen. </td> 
   </tr> 
   <tr rowsep="0" class="- topic/row "> 
    <td colname="1" class="- topic/entry "><span class="+ topic/ph pr-d/codeph codeph">-root-root-filename</span> </td> 
@@ -99,7 +99,7 @@ Voordat u de licentiegenerator uitvoert, moet u waarden voor de eigenschappen va
 
 >[!NOTE]
 >
->Voor eigenschapsnamen die *n* bevatten, vertegenwoordigt *n* een geheel getal dat begint met 1 en wordt verhoogd voor elke instantie van de eigenschap.
+>Voor eigenschapsnamen die *n* omvatten, *n* vertegenwoordigt een geheel dat met 1 begint en voor elke instantie van het bezit stijgt.
 
 <table frame="all" colsep="1" rowsep="1" class="+ topic/table adobe-d/table " id="table_qk1_rry_n4"> 
  <thead class="- topic/thead "> 
@@ -111,7 +111,7 @@ Voordat u de licentiegenerator uitvoert, moet u waarden voor de eigenschappen va
  <tbody class="- topic/tbody "> 
   <tr rowsep="1" class="- topic/row "> 
    <td colname="1" class="- topic/entry "><span class="+ topic/ph pr-d/codeph codeph"> licensegen.minClientVersion</span> </td> 
-   <td colname="2" class="- topic/entry "> <p>Hiermee stelt u de minimaal ondersteunde clientversie in. Als u deze eigenschap niet instelt, worden standaard alle versies automatisch ondersteund. </p> <p>U kunt deze waarde instellen om te bepalen hoe oudere clients reageren op de licentievereisten die ze niet ondersteunen. Geef <span class="codeph"> x</span> op (voor Adobe Primetime DRM x.0) waarbij <span class="codeph"> x</span> een hoofdreleasenummer vertegenwoordigt. </p> </td> 
+   <td colname="2" class="- topic/entry "> <p>Hiermee stelt u de minimaal ondersteunde clientversie in. Als u deze eigenschap niet instelt, worden standaard alle versies automatisch ondersteund. </p> <p>U kunt deze waarde instellen om te bepalen hoe oudere clients reageren op de licentievereisten die ze niet ondersteunen. Geef <span class="codeph"> x</span> (voor Adobe Primetime DRM x.0) op waarbij <span class="codeph"> x</span> een primair releasenummer vertegenwoordigt. </p> </td> 
   </tr> 
   <tr rowsep="1" class="- topic/row "> 
    <td colname="1" class="- topic/entry "><span class="+ topic/ph pr-d/codeph codeph"> licensegen.keyServerCert</span> </td> 
@@ -123,23 +123,23 @@ Voordat u de licentiegenerator uitvoert, moet u waarden voor de eigenschappen va
   </tr> 
   <tr rowsep="1" class="- topic/row "> 
    <td colname="1" class="- topic/entry "><span class="+ topic/ph pr-d/codeph codeph"> licensegen.sign.certpass</span> </td> 
-   <td colname="2" class="- topic/entry ">Het wachtwoord dat het bestand beveiligt dat u hebt opgegeven met de optie <span class="+ topic/ph pr-d/codeph codeph"> licensegen.sign.certfile</span> . </td> 
+   <td colname="2" class="- topic/entry ">Het wachtwoord dat het dossier beschermt dat u met <span class="+ topic/ph pr-d/codeph codeph"> licentiegen.sign.certfile</span> optie hebt gespecificeerd. </td> 
   </tr> 
   <tr rowsep="1" class="- topic/row "> 
    <td colname="1" class="- topic/entry "><span class="+ topic/ph pr-d/codeph codeph">licensegen.domainca.n</span> </td> 
-   <td colname="2" class="- topic/entry "> <p>Als u domeingebonden vergunningen produceert, moet u één of meerdere certificaten van MAC van het Domein specificeren om op de domeinautoriteiten te wijzen die de vergunningverlener kan vertrouwen. </p> <p>Als de licentieontvanger een domeincertificaat is, dat niet is uitgegeven door een van de opgegeven Domein CA's, kan geen licentie worden gegenereerd. This property specifies a <span class="filepath"> .cer</span> file that includes the certificate in the PEM or the DER format. <span class="codeph">n</span> moet monotonisch stijgen, te beginnen met 1. </p> </td> 
+   <td colname="2" class="- topic/entry "> <p>Als u domeingebonden vergunningen produceert, moet u één of meerdere certificaten van MAC van het Domein specificeren om op de domeinautoriteiten te wijzen die de vergunningverlener kan vertrouwen. </p> <p>Als de licentieontvanger een domeincertificaat is, dat niet is uitgegeven door een van de opgegeven Domein CA's, kan geen licentie worden gegenereerd. This property specifies a <span class="filepath"> .cer</span> file that includes the certificate in the PEM or the DER format. <span class="codeph">De </span> frequentie moet monotonisch stijgen, te beginnen met 1. </p> </td> 
   </tr> 
   <tr rowsep="1" class="- topic/row "> 
    <td colname="1" class="- topic/entry "> 
     <code>licensegen.keys.asymmetric. licenseServerCredential.n</code>
    </td> 
-   <td colname="2" class="- topic/entry "> <p class="- topic/p ">Optioneel PKCS12-bestand met extra licentieserverreferenties voor het decoderen van de CEK in de metagegevens en het DRM-beleid. U kunt extra geloofsbrieven vormen als de inhoud eerder met een certificaat van de Server van de Vergunning buiten die geloofsbrieven is verpakt die met <span class="codeph"> licensegen.sign.certfile</span>zijn gespecificeerd. Deze eigenschap moet verwijzen naar een <span class="filepath"> .pfx</span> -bestand dat een certificaat en een persoonlijke sleutel bevat. <span class="codeph">n</span> moet monotonisch stijgen, te beginnen met 1. </p> </td> 
+   <td colname="2" class="- topic/entry "> <p class="- topic/p ">Optioneel PKCS12-bestand met extra licentieserverreferenties voor het decoderen van de CEK in de metagegevens en het DRM-beleid. U kunt extra geloofsbrieven vormen als de inhoud eerder met een certificaat van de Server van de Vergunning buiten die referentie is verpakt die met <span class="codeph"> licensegen.sign.certfile</span> zijn gespecificeerd. Deze eigenschap moet verwijzen naar een .pfx</span>-bestand <span class="filepath"> dat een certificaat en een persoonlijke sleutel bevat. <span class="codeph">De </span> frequentie moet monotonisch stijgen, te beginnen met 1. </span></p> </td> 
   </tr> 
   <tr rowsep="0" class="- topic/row "> 
    <td colname="1" class="- topic/entry "> 
     <code>licensegen.keys.asymmetric. licenseServerCredential.n.password</code>
    </td> 
-   <td colname="2" class="- topic/entry "> <p>Het wachtwoord wordt toegepast om het dossier te beschermen dat u met het<span class="+ topic/ph pr-d/codeph codeph"> bezit licensegen.keys.asymmetric.licenseServerCredential.n</span> hebt gespecificeerd. </p> </td> 
+   <td colname="2" class="- topic/entry "> <p>Het wachtwoord wordt toegepast om het dossier te beschermen dat u met <span class="+ topic/ph pr-d/codeph codeph"> licentiegen.keys.asymmetric.licenseServerCredential.n</span> bezit hebt gespecificeerd. </p> </td> 
   </tr> 
  </tbody> 
 </table>
