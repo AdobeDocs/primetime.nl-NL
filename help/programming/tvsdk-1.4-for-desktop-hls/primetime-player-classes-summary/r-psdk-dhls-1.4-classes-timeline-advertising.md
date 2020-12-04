@@ -6,6 +6,9 @@ title: Tijdlijnadvertentieklassen
 uuid: f424fa13-778b-458d-bc82-389441a8a56a
 translation-type: tm+mt
 source-git-commit: adef0bbd52ba043f625f38db69366c6d873c586d
+workflow-type: tm+mt
+source-wordcount: '555'
+ht-degree: 0%
 
 ---
 
@@ -14,11 +17,12 @@ source-git-commit: adef0bbd52ba043f625f38db69366c6d873c586d
 
 Deze klassen bieden informatie over advertenties die binnen een tijdlijn voorkomen.
 
-Pakket: [com.adobe.mediacore.timeline.advertentie](https://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls_1.4/com/adobe/mediacore/timeline/advertising/package-detail.html)-pakket: [com.adobe.mediacore.timeline.advertence.policy](https://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls_1.4/com/adobe/mediacore/timeline/advertising/policy/package-detail.html)
+Pakket: [com.adobe.mediacore.timeline.advertence](https://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls_1.4/com/adobe/mediacore/timeline/advertising/package-detail.html)
+Pakket: [com.adobe.mediacore.timeline.advertence.policy](https://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls_1.4/com/adobe/mediacore/timeline/advertising/policy/package-detail.html)
 
 | Naam | Beschrijving |
 |---|---|
-| [Advertentie](https://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls_1.4/com/adobe/mediacore/timeline/advertising/Ad.html) | Klasse die de abstractie van de Advertentie bepaalt en alle advertentiemateriaal houdt. Deze wordt gedefinieerd door een unieke id, een duur en een `MediaResource`. Het `MediaResource` bevat de URL waar de daadwerkelijke advertentie-inhoud zich bevindt. |
+| [Advertentie](https://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls_1.4/com/adobe/mediacore/timeline/advertising/Ad.html) | Klasse die de abstractie van de Advertentie bepaalt en alle advertentiemateriaal houdt. Deze wordt gedefinieerd door een unieke id, een duur en een `MediaResource`. De `MediaResource` bevat de URL waar de daadwerkelijke inhoud van de advertentie zich bevindt. |
 | [AdAsset](https://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls_1.4/com/adobe/mediacore/timeline/advertising/AdAsset.html) | Klasse die een element vertegenwoordigt dat moet worden weergegeven. Klasse die een advertentie-element vertegenwoordigt. |
 | [AdBreak](https://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls_1.4/com/adobe/mediacore/timeline/advertising/AdBreak.html) | Klasse die een verenigde weergave biedt op meerdere advertenties die op een bepaald punt tijdens het afspelen worden afgespeeld. |
 | [AdBreakPolicy](https://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls_1.4/com/adobe/mediacore/timeline/advertising/policy/AdBreakPolicy.html) | Opsomming waarmee het beleid voor het afspelen van advertenties wordt gedefinieerd voor het omzeilen van advertenties door de gebruiker tijdens het zoeken. |
