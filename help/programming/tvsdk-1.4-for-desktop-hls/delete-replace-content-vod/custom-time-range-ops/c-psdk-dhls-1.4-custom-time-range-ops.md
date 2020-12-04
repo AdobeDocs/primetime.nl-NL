@@ -6,6 +6,9 @@ title: Aangepaste tijdbereikbewerkingen
 uuid: fb27f343-718d-444e-8fc1-5ae0be02557b
 translation-type: tm+mt
 source-git-commit: adef0bbd52ba043f625f38db69366c6d873c586d
+workflow-type: tm+mt
+source-wordcount: '265'
+ht-degree: 0%
 
 ---
 
@@ -20,14 +23,14 @@ De functie Verwijderen en vervangen breidt de functie Aangepaste markeertekens u
 
 De schrapping en de vervanging van de toevoeging worden uitgevoerd met douanemarkeringen die verschillende types van tijdwaaiers in een stroom VOD identificeren: markeren, verwijderen en vervangen. Voor elk aangepast tijdbereik kunt u bijbehorende bewerkingen uitvoeren, zoals het verwijderen of vervangen van advertentie-inhoud.
 
-Voor het verwijderen en vervangen van advertenties bevat TVSDK de volgende bewerkingsmodi voor het *aangepaste tijdbereik* :
+Voor het verwijderen en vervangen van advertenties bevat TVSDK de volgende *aangepaste tijdbereikbewerking* modi:
 
-* MARK - hiermee verzendt u `AdBreak` gebeurtenissen voor de gemarkeerde gebieden. (Dit werd aangeroepen `customAdMarker` in eerdere versies van TVSDK.) In deze modus is invoeging niet toegestaan.
+* MARK - verzendt `AdBreak` gebeurtenissen voor de duidelijke gebieden. (Dit werd `customAdMarker` genoemd in vorige versies van TVSDK.) In deze modus is invoeging niet toegestaan.
 
-* VERWIJDEREN - Voor deze modus gebruikt de app de `TimeRangeCollection` klasse om tijdgebieden voor verwijderen van C3 en ADT te definiëren. In deze modus is invoeging toegestaan.
-* VERVANGEN - In deze modus vervangt de app een `timeRange` bestand door een Adobe Primetime-beslissing `AdBreak`. De vervangingsverrichting begint waar de C3 Ad schrapping voorkomt, en beëindigt op de aangegeven tijd (korter of langer dan de originele tijdwaaier).
+* DELETE - Voor deze modus gebruikt de toepassing de klasse `TimeRangeCollection` om tijdgebieden te definiëren voor C3 Ad Deletion. In deze modus is invoeging toegestaan.
+* VERVANGEN - In deze modus vervangt de toepassing een `timeRange` door een Adobe Primetime en een besluit `AdBreak`. De vervangingsverrichting begint waar de C3 Ad schrapping voorkomt, en beëindigt op de aangegeven tijd (korter of langer dan de originele tijdwaaier).
 
-TVSDK biedt een `CustomRangesOpportunityGenerator` klasse om plaatsingsmogelijkheden voor de bereiken MARK en DELETE te genereren. Voor de modus VERVANGEN genereert TVSDK twee plaatsingsmogelijkheden voor elk tijdbereik:
+TVSDK biedt de klasse `CustomRangesOpportunityGenerator` om plaatsingsmogelijkheden voor de bereiken MARK en DELETE te genereren. Voor de modus VERVANGEN genereert TVSDK twee plaatsingsmogelijkheden voor elk tijdbereik:
 
-* De `CustomRangeResolver` genereert plaatsingsmogelijkheden voor DELETE
-* Het `AuditudeAdResolver` produceert plaatsingskansen voor TUSSENVOEGSEL.
+* `CustomRangeResolver` genereert plaatsingsmogelijkheden voor DELETE
+* `AuditudeAdResolver` produceert plaatsingskansen voor TUSSENVOEGSEL.
