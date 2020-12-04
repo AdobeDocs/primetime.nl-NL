@@ -6,6 +6,9 @@ title: Scheid het klikbare ad proces
 uuid: a5254ac5-3005-483e-935e-acbbef03df0e
 translation-type: tm+mt
 source-git-commit: bc35da8b258056809ceaf18e33bed631047bc81b
+workflow-type: tm+mt
+source-wordcount: '173'
+ht-degree: 0%
 
 ---
 
@@ -14,9 +17,9 @@ source-git-commit: bc35da8b258056809ceaf18e33bed631047bc81b
 
 U moet de gebruikersinterfacelogica van uw speler scheiden van het proces dat beheert en klikt. Een manier om dit te doen is het implementeren van meerdere fragmenten voor een activiteit.
 
-1. Eén fragment implementeren om het fragment te bevatten `MediaPlayer`.
+1. Eén fragment implementeren voor de `MediaPlayer`.
 
-   Dit fragment moet worden aangeroepen `notifyClick()` en is verantwoordelijk voor het afspelen van video.
+   Dit fragment moet `notifyClick()` aanroepen en is verantwoordelijk voor het afspelen van video.
 
    ```java
    public class PlayerFragment extends SherlockFragment { 
@@ -28,7 +31,7 @@ U moet de gebruikersinterfacelogica van uw speler scheiden van het proces dat be
    } 
    ```
 
-1. Voer een verschillend fragment uit om een element te tonen UI dat erop wijst dat een advertentie klikbaar is, dat element controleert UI, en gebruikers meedelen klikt aan het fragment dat `MediaPlayer`bevat.
+1. Voer een verschillend fragment uit om een element te tonen UI dat erop wijst dat een advertentie klikbaar is, dat element controleert UI, en gebruikers meedelen klikt aan het fragment dat `MediaPlayer` bevat.
 
    Dit fragment moet een interface voor fragmentcommunicatie declareren. Het fragment vangt de interfaceimplementatie tijdens zijn `onAttach()` levenscyclusmethode en kan de interfacemethodes roepen om met de activiteit te communiceren.
 
