@@ -17,21 +17,21 @@ ht-degree: 0%
 
 U kunt Apple FairPlay Streaming, de DRM-oplossing van Apple, implementeren in uw TVSDK-toepassingen.
 
-1. Maak uw FairPlay-lader voor klantbronnen door deze te implementeren `PTAVAssetResourceLoaderDelegate`.
+1. Maak uw FairPlay-lader voor klantbronnen door `PTAVAssetResourceLoaderDelegate` te implementeren.
 
-   Zie [Apple FairPlay in TVSDK-toepassingen](../../c-psdk-ios-1.4-drm-content-security/c-psdk-ios-1.4-apple-fairplay-tvsdk/c-psdk-ios-1.4-apple-fairplay-tvsdk.md)voor meer informatie.
+   Zie [Apple FairPlay in TVSDK-toepassingen](../../c-psdk-ios-1.4-drm-content-security/c-psdk-ios-1.4-apple-fairplay-tvsdk/c-psdk-ios-1.4-apple-fairplay-tvsdk.md) voor meer informatie.
 
    >[!NOTE]
    >
-   >Zorg ervoor dat u de instructies opvolgt in de *FairPlay Streaming Program Guide* ( *FairPlayStreaming_PG.pdf*), die is opgenomen in de SDK van [FairPlay Server voor het ontwikkelen van een FPS-compatibele app](https://developer.apple.com/services-account/download?path=/Developer_Tools/FairPlay_Streaming_SDK/FairPlay_Streaming_Server_SDK.zip)).
+   >Zorg ervoor dat u de instructies opvolgt in de *FairPlay Streaming Program Guide* ( *FairPlayStreaming_PG.pdf*), die is opgenomen in [FairPlay Server SDK voor het ontwikkelen van een FPS-compatibele app](https://developer.apple.com/services-account/download?path=/Developer_Tools/FairPlay_Streaming_SDK/FairPlay_Streaming_Server_SDK.zip)).
 
-   De `resourceLoader:shouldWaitForLoadingOfRequestedResource` methode is gelijk aan de methode `AVAssetResourceLoaderDelegate`in.
+   De `resourceLoader:shouldWaitForLoadingOfRequestedResource` methode is gelijkwaardig aan wat in `AVAssetResourceLoaderDelegate` is.
 
    >[!IMPORTANT]
    >
-   >Als u inhoud wilt afspelen in het ExpressPlay-licentieserverscenario, wijzigt u het URL-schema in uw ExpressPlay FairPlay-serverlicentieaanvraag-URL van `skd://` naar `https://` (of `https://`).
+   >Als u inhoud wilt afspelen in het ExpressPlay-licentieserverscenario, wijzigt u het URL-schema in uw ExpressPlay FairPlay-serverlicentieaanvraag-URL van `skd://` in `https://` (of `https://`).
 
-1. Registreer de *FairPlay* Customer Resource Loader bij `registerPTAVAssetResourceLoader`.
+1. Registreer de *FairPlay* Loader voor hulpbronnen van klanten met `registerPTAVAssetResourceLoader`.
 
    ```
    PTFairPlayResourceLoader *resourceLoader =  
