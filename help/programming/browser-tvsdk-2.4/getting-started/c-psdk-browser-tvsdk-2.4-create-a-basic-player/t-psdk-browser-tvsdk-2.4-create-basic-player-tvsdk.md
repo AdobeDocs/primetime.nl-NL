@@ -6,6 +6,9 @@ title: Een basisspeler maken met TVSDK
 uuid: ec15cf53-197f-4190-a6b2-600a57815390
 translation-type: tm+mt
 source-git-commit: 040655d8ba5f91c98ed0584c08db226ffe1e0f4e
+workflow-type: tm+mt
+source-wordcount: '225'
+ht-degree: 0%
 
 ---
 
@@ -16,7 +19,7 @@ Voer de volgende stappen uit om een basisspeler te maken met de Browser-TVSDK.
 
 1. Maak een nieuwe map waarin u de gecomprimeerde bestanden voor Browser-TVSDK kunt downloaden.
 1. Download Browser TVSDK van Zendesk, decomprimeer de bestanden en plaats de map frameworks in de nieuwe directory.
-1. Maak een eenvoudige HTML-bouwsteen voor de code met een `div` code erin.
+1. Maak een eenvoudige HTML-bouwsteen voor de code met daarin een `div`.
 1. Plaats deze bouwsteenplaat in een HTML- dossier in de folder u in stap 1 creeerde.
 
    ```
@@ -42,14 +45,14 @@ Voer de volgende stappen uit om een basisspeler te maken met de Browser-TVSDK.
    <script src= "frameworks/player/primetimeei.min.js"></script>
    ```
 
-1. Voeg de `onLoad` sectie toe voor de body-tag.
+1. Voeg de sectie `onLoad` toe voor de body-tag.
 
    ```
    <body onload="startVideo()">
    ```
 
-1. Start met het implementeren van de `startVideo` functie.
-1. Voeg een scripttag toe en maak de `startVideo` functie in de tag.
+1. Start met de implementatie van de functie `startVideo`.
+1. Voeg een scripttag toe en maak de functie `startVideo` in de tag.
 
    Dit hoort in de kopsectie van de pagina te staan.
 
@@ -70,7 +73,7 @@ Voer de volgende stappen uit om een basisspeler te maken met de Browser-TVSDK.
 
    >[!TIP]
    >
-   >Dit is waar `div` u vroeger creeerde wordt gebruikt.
+   >Dit is waar `div` wordt gebruikt die u vroeger creeerde.
 
    ```js
    var view = new AdobePSDK.MediaPlayerView( 
@@ -141,7 +144,7 @@ Voer de volgende stappen uit om een basisspeler te maken met de Browser-TVSDK.
    }; 
    ```
 
-1. Maak de `MediaResource`koppeling, die de M3U8-koppeling (of mpd) passeert.
+1. Maak de `MediaResource`, die de M3U8-koppeling (of mpd) doorgeeft.
 
    ```js
    var resourceUrl = "https://example.com/a/yourUrl.m3u8"; 
@@ -157,7 +160,7 @@ Voer de volgende stappen uit om een basisspeler te maken met de Browser-TVSDK.
    player.replaceCurrentResource(mediaResource, config);
    ```
 
-1. Roep aan wanneer de speler de status INITIALIZED heeft. `prepareToPlay`
+1. Roep `prepareToPlay` aan wanneer de speler in de geINITIALISEERDE status is.
 
    ```js
    case INITIALIZED: 
@@ -165,7 +168,7 @@ Voer de volgende stappen uit om een basisspeler te maken met de Browser-TVSDK.
     break;
    ```
 
-1. Nadat de speler in de PREPARED staat is, vraag `play`.
+1. Nadat de speler in de VOORBEREIDENDE staat is, roep `play`.
 
    ```js
    case PREPARED: 
