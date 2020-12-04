@@ -17,7 +17,7 @@ ht-degree: 0%
 
 In deze sectie worden de functies beschreven die beschikbaar zijn in verschillende versies van Flash Player en TVSDK.
 
-**Foutverzending** - De TVSDK-platforms die hieronder worden vermeld, verzenden een DRM-runtime-fout wanneer de resolutie van de afgespeelde inhoud groter is dan de resolutie die is toegestaan voor de apparaatconfiguratie die is gedefinieerd in het DRM-beleid:
+**Fout bij verzenden**  - De TVSDK-platforms die hieronder worden vermeld, verzenden een DRM-runtime-fout wanneer de resolutie van de afgespeelde inhoud groter is dan de resolutie die is toegestaan voor de apparaatconfiguratie die is gedefinieerd in het DRM-beleid:
 
 * Flash Player versies 18 tot en met 20
 * Android, versies
@@ -35,7 +35,7 @@ In deze sectie worden de functies beschreven die beschikbaar zijn in verschillen
 
 
 
-**Automatisch downschalen** - De techniek voor downscale varieert per platform en Flash Player-versie:
+**Automatisch downschalen**  - De techniek voor het downschalen varieert per platform en Flash Player-versie:
 
 * Flash Player versie 21: Ondersteunt RBOP met Automatisch downscalen (intelligente bitsnelheidsomschakeling)
 * Firefox-versie 38 en hoger in Windows (met Access CDM): Adobe downloadt automatisch een hogere bitsnelheidsstream naar een lagere stream (in tegenstelling tot het downloaden van een stream van een lagere kwaliteit).
@@ -44,4 +44,4 @@ In deze sectie worden de functies beschreven die beschikbaar zijn in verschillen
 >
 >Deze platforms onderschalen video automatisch en tonen de inhoud bij een resolutie die lager is dan of gelijk aan wat door het beleid DRM wordt gespecificeerd. Met deze functie wordt inhoud altijd afgespeeld op de client, zolang er een beschikbare stream beschikbaar is die voldoet aan de DRM-beleidsbeperkingen.
 
-**Oudere uitvoerbeveiliging** - Clients die Flash Player vóór versie 18 gebruiken, kunnen alleen oude OP-beperkingen verwerken. Clients met Flash Player versie 18 en hoger kunnen verouderde of RBOP-beperkingen afhandelen. Als u RBOP-beperkingen instelt, moet u ook oudere OP-beperkingen voor oudere clients instellen. Voor cliënten die RBOP steunen, de beperkingen van RBOP trekken erfenis OP beperkingen.
+**Verouderde uitvoerbeveiliging**  - Clients die Flash Player vóór versie 18 gebruiken, kunnen alleen oude OP-beperkingen verwerken. Clients met Flash Player versie 18 en hoger kunnen verouderde of RBOP-beperkingen afhandelen. Als u RBOP-beperkingen instelt, moet u ook oudere OP-beperkingen voor oudere clients instellen. Voor cliënten die RBOP steunen, de beperkingen van RBOP trekken erfenis OP beperkingen.
