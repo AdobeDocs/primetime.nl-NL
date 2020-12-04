@@ -6,6 +6,9 @@ title: Klikbare advertenties
 uuid: 8b257483-8b90-47cf-be2a-095b6d5b8883
 translation-type: tm+mt
 source-git-commit: 557f42cd9a6f356aa99e13386d9e8d65e043a6af
+workflow-type: tm+mt
+source-wordcount: '361'
+ht-degree: 0%
 
 ---
 
@@ -20,16 +23,16 @@ In TVSDK voor iOS kan alleen op lineaire advertenties worden geklikt.
 
 Wanneer een gebruiker op een advertentie, een banneradvertentie of een verwante knop klikt, moet uw toepassing reageren. TVSDK biedt u informatie over de doel-URL voor de klik.
 
-1. Als u een gebeurtenislistener voor TVSDK wilt instellen en de doorklikinformatie wilt weergeven, voegt u een waarnemer voor `PTMediaPlayerAdClickNotification`.
+1. Als u een gebeurtenislistener voor TVSDK wilt instellen en de doorklikinformatie wilt opgeven, voegt u een waarnemer voor `PTMediaPlayerAdClickNotification` toe.
 
    >[!NOTE]
    >
    >Wanneer een gebruiker op een advertentie, een banneradvertentie of een verwante knop klikt, verzendt TVSDK dit bericht, inclusief informatie over de bestemming voor de klik.
 
 1. Gebruikersinteracties controleren op klikbare advertenties.
-1. Wanneer de gebruiker de advertentie of knop aanraakt of erop klikt, gebruikt u `[_player notifyClick:_currentAd.primaryAsset];`.
-1. Luister naar de `PTMediaPlayerAdClickNotification` gebeurtenis van TVSDK.
-1. Gebruik het `PTMediaPlayerAdClickURLKey` object om de doorklikURL en verwante informatie op te halen.
+1. Wanneer de gebruiker de advertentie of knop aanraakt of erop klikt, gebruikt u `[_player notifyClick:_currentAd.primaryAsset];` om TVSDK op de hoogte te brengen.
+1. Luister naar de `PTMediaPlayerAdClickNotification`-gebeurtenis van TVSDK.
+1. Gebruik het object `PTMediaPlayerAdClickURLKey` om de doorklikURL en verwante informatie op te halen.
 1. De video pauzeren.
 1. Gebruik de doorklikinformatie om de advertentie-door URL en de verwante informatie te tonen.
 
