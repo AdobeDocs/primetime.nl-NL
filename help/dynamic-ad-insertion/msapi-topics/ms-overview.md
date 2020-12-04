@@ -6,6 +6,9 @@ title: Overzicht van Manifest Server-interacties
 uuid: 3e314a45-a4dd-492f-8915-19224a8fbbc7
 translation-type: tm+mt
 source-git-commit: 9dc8498593a1d70918b66016e429eb013cdc61f7
+workflow-type: tm+mt
+source-wordcount: '654'
+ht-degree: 0%
 
 ---
 
@@ -24,21 +27,21 @@ Een typische configuratie bevat:
 * Een advertentieserver
 * Een ontvanger voor rapporten voor het bijhouden van advertenties
 
-De workflow varieert op basis van een aantal factoren, zoals of de CDN Akamai is of dat de client een advertentie bijhoudt. Voor een diagram van het werkschema voor cliënt-kant en het volgen, zie [Cliënt-kant het volgen werkschema](../msapi-topics/ms-at-effectiveness/notvsdk-csat-overview.md#section_cst_flow).
+De workflow varieert op basis van een aantal factoren, zoals of de CDN Akamai is of dat de client een advertentie bijhoudt. Voor een diagram van het werkschema voor client-side en tracking, zie [Client-side tracking workflow](../msapi-topics/ms-at-effectiveness/notvsdk-csat-overview.md#section_cst_flow).
 
-De manifeste server communiceert met video-levering cliënten door ontvangen en aan HTTP antwoorden KRIJGT verzoeken. De reacties zijn in M3U8 gecodeerde manifests die inhoud met advertenties beschrijven, eventueel inclusief een JSON- of VMAP-structuur (sidecar) met gedetailleerde instructies voor het bijhouden van advertenties (zie [Bestandsindelingen](../msapi-topics/ms-list-file-formats/ms-api-file-formats.md)).
+De manifeste server communiceert met video-levering cliënten door ontvangen van en het antwoorden op de verzoeken van de GET van HTTP. De reacties zijn in M3U8 gecodeerde manifests die inhoud met advertenties beschrijven, eventueel inclusief een JSON- of VMAP-structuur (sidecar) met gedetailleerde instructies voor het bijhouden van advertenties (zie [Bestandsindelingen](../msapi-topics/ms-list-file-formats/ms-api-file-formats.md)).
 
 Een typisch werkschema kijkt als het volgende:
 
 1. De uitgever verzendt de inhoud-URL en de informatie voor de advertentieserver naar de client.
-1. De client gebruikt de informatie van de uitgever om een manifestserver-URL te genereren en verzendt een GET-aanvraag naar die URL. Dit wordt de Bootstrap-URL genoemd.
+1. De client gebruikt de informatie van de uitgever om een manifestserver-URL te genereren en verzendt een verzoek van de GET naar die URL. Dit wordt de URL van de Bootstrap genoemd.
 1. De manifestserver vestigt een zitting met de cliënt.
 1. De manifestserver verkrijgt inhoudsmanifests van CDN, die informatie kan omvatten ad onderbreking.
-1. De manifestserver richt de cliënt aan hoofd/variant manifest het voor de cliënt opnieuw wordt geproduceerd.
+1. De manifestserver richt de cliënt aan master/variant manifest het voor de cliënt opnieuw wordt geproduceerd.
 
    >[!NOTE]
    >
-   >Als de de vraagparameters van Van Bootstrap URL het `pttrackingmode=simple` of `ptplayer=ios-mobileweb` plaatsen bevat, keert de manifestserver het hoofd/variant manifest URL in een voorwerp JSON terug, en de cliënt verzendt een GET verzoek naar dat variant manifest URL.
+   >Als de Bootstrap URL vraagparameters `pttrackingmode=simple` of `ptplayer=ios-mobileweb` plaatsen bevat, keert de manifestserver master/variant manifest URL in een voorwerp JSON terug, en de cliënt verzendt een GET verzoek naar dat variant manifest URL.
 
 1. De client kiest een stream in het gegenereerde variantmanifest om af te spelen, te verzenden en informatie naar de manifestserver te verzenden.
 1. De manifestserver geeft de door de client opgegeven informatie door aan de advertentieserver en ontvangt advertenties en URL&#39;s voor het bijhouden van advertenties van de advertentieserver. Als een geleverde advertentie niet in formaat HLS is, verzendt de manifestserver het naar CRS voor omzetting in HLS.
@@ -53,7 +56,7 @@ Primetime en invoeging ondersteunen clients op veel platforms voor het afspelen 
 
 ## CORS {#section_BEA7F298660944BE92801E4C82FCD038}
 
-De manifestserver gebruikt de norm het Delen van het Middel van de Cross-Origin (CORS). Er wordt gezocht naar een `Origin` koptekst in de aanvragen die worden ontvangen. Als de koptekst aanwezig is, reageert deze met
+De manifestserver gebruikt de norm het Delen van het Middel van de Cross-Origin (CORS). Het zoekt naar een `Origin` kopbal in de verzoeken het ontvangt. Als de koptekst aanwezig is, reageert deze met
 
 * `Access-Control-Allow-Origin: *`tekenreeks uit de koptekst Oorsprong`*`
 * `Access-Control-Allow-Credentials: true`
