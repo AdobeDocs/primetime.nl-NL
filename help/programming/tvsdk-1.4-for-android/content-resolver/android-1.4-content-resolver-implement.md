@@ -6,17 +6,20 @@ title: Een aangepaste contentoplosser implementeren
 uuid: 88627fdc-3b68-4a9f-847e-a490ea8e3034
 translation-type: tm+mt
 source-git-commit: 5908e5a3521966496aeec0ef730e4a704fddfb68
+workflow-type: tm+mt
+source-wordcount: '258'
+ht-degree: 1%
 
 ---
 
 
-# Een aangepaste contentoplosser implementeren {#implement-a-custom-content-resolver}
+# Een aangepaste inhoudoplosser {#implement-a-custom-content-resolver} implementeren
 
 U kunt uw eigen inhoudsoplossers implementeren op basis van de standaardoplossers.
 
 Wanneer TVSDK een nieuwe kans detecteert, doorloopt het de geregistreerde contentoplossers die naar een mogelijkheid zoeken die deze mogelijkheid kan oplossen. De eerste die waar terugkeert wordt geselecteerd voor het oplossen van de kans. Als er geen inhoudoplosser kan worden gemaakt, wordt die mogelijkheid overgeslagen. Omdat het proces voor het oplossen van inhoud meestal asynchroon is, is de oplosser van de inhoud verantwoordelijk voor het op de hoogte brengen wanneer het proces is voltooid.
 
-1. Een aangepaste `AdvertisingFactory` instantie maken en overschrijven `createContentResolver`.
+1. Een aangepaste `AdvertisingFactory`-instantie maken en `createContentResolver` overschrijven.
 
    Bijvoorbeeld:
 
@@ -43,7 +46,7 @@ Wanneer TVSDK een nieuwe kans detecteert, doorloopt het de geregistreerde conten
    }
    ```
 
-1. Registreer de fabriek van de advertentiecliënt aan de `MediaPlayer`.
+1. Registreer de fabriek van de advertentiecliënt aan `MediaPlayer`.
 
    Bijvoorbeeld:
 
@@ -53,9 +56,9 @@ Wanneer TVSDK een nieuwe kans detecteert, doorloopt het de geregistreerde conten
    mediaPlayer.registerAdClientFactory(advertisingFactory);
    ```
 
-1. Geef een `AdvertisingMetadata` object als volgt door aan TVSDK:
-   1. Maak een `AdvertisingMetadata` object en `MetadataNode` object.
-   1. Sla het `AdvertisingMetadata` object op in `MetadataNode`.
+1. Geef een `AdvertisingMetadata`-object als volgt door aan TVSDK:
+   1. Maak een `AdvertisingMetadata`-object en `MetadataNode`-object.
+   1. Sla het `AdvertisingMetadata`-object op in `MetadataNode`.
 
    ```java
    MetadataNode result = new MetadataNode(); 
@@ -63,7 +66,7 @@ Wanneer TVSDK een nieuwe kans detecteert, doorloopt het de geregistreerde conten
                   advertisingMetadata);
    ```
 
-1. Maak een aangepaste ad resolver-klasse die de `ContentResolver` klasse uitbreidt.
+1. Maak een aangepaste ad resolver-klasse die de klasse `ContentResolver` uitbreidt.
    1. Overschrijf deze beveiligde functie in de aangepaste en oplosser:
 
       ```java
@@ -71,9 +74,9 @@ Wanneer TVSDK een nieuwe kans detecteert, doorloopt het de geregistreerde conten
                         PlacementOpportunity placementOpportunity)
       ```
 
-      Metagegevens bevatten uw `AdvertisingMetada`. Gebruik deze voor de volgende `TimelineOperation` vectorgeneratie.
+      Metagegevens bevatten uw `AdvertisingMetada`. Gebruik dit voor de volgende `TimelineOperation` vectorgeneratie.
 
-   1. Maak voor elke plaatsingskans een `Vector<TimelineOperation>`.
+   1. Voor elke plaatsingskans, creeer `Vector<TimelineOperation>`.
 
       De vector kan leeg zijn, maar niet null.
 
@@ -94,6 +97,7 @@ Wanneer TVSDK een nieuwe kans detecteert, doorloopt het de geregistreerde conten
 
       * Als de advertentie succesvol is: `notifyResolveComplete(Vector<TimelineOperation> proposals)`
       * Als de advertentie-oplossing mislukt: `notifyResolveError(Error error)`
+
       Als dit bijvoorbeeld mislukt:
 
       ```java
