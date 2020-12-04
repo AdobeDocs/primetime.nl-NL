@@ -13,7 +13,7 @@ ht-degree: 0%
 ---
 
 
-# Overzicht van de primaire DRM-interface {#primetime-drm-interface-overview}
+# Primetime DRM-interfaceoverzicht {#primetime-drm-interface-overview}
 
 U kunt de functies van het DRM-systeem (Primetime Digital Rights Management) gebruiken om veilige toegang tot uw video-inhoud te bieden. U kunt ook DRM-oplossingen van derden gebruiken als alternatief voor de geïntegreerde Primetime DRM-oplossing met Adobe.
 
@@ -39,7 +39,7 @@ Dit zijn de belangrijkste API-elementen voor het werken met DRM:
 
 <!--<a id="section_F986DB1EDD6F44CD8E57419CCA0921E8"></a>-->
 
-TVSDK geeft een `PTMediaPlayerItemDRMMetadataChanged` melding weer wanneer de DRM-metagegevens veranderen. Deze metagegevens worden gebruikt als invoer voor bijna alle functies van de `DRMManager` klasse.
+TVSDK geeft een `PTMediaPlayerItemDRMMetadataChanged`-melding weer wanneer de DRM-metagegevens veranderen. Deze metagegevens worden gebruikt als invoer voor bijna alle functies van de klasse `DRMManager`.
 
 <!--<a id="section_223DCF63BAB6438792A85352A79044CC"></a>-->
 
@@ -47,18 +47,18 @@ Als de DRM-beveiligde stream meerdere bitsnelheden (MBR) heeft gecodeerd, moeten
 
 >[!TIP]
 >
->Wanneer u verwijst naar URL&#39;s met DRM-beveiligde elementen in uw iOS-app, `?faxs=1` moet de parameter van de queryreeks worden toegevoegd aan de (MBR)-URL op setniveau M3U8. Bijvoorbeeld:
+>Wanneer u verwijst naar URL&#39;s met DRM-beveiligde elementen in uw iOS-app, moet de parameter `?faxs=1` voor de queryreeks worden toegevoegd aan de (MBR)-URL op het niveau M3U8. Bijvoorbeeld:
 >
 >
 ```
 >https://your.domain.com/hls/[...]/index.m3u8?faxs=1
 >```
 >
->De parameter voor de `faxs=1` querytekenreeks geeft aan dat de inhoud met DRM is beveiligd en activeert de DRM-decoderingsworkflow dienovereenkomstig in de iOS TVSDK. U kunt de `faxs=1` tag ook toevoegen aan URL&#39;s van door DRM beveiligde HLS-elementen die bestemd zijn voor andere platforms. wordt waargenomen zoals vereist op iOS of behandeld als een non-op in spelers op andere platforms.
+>De `faxs=1` parameter van het vraagkoord signaleert dat de inhoud DRM beschermd is, en brengt het DRM decryptiewerkschema dienovereenkomstig in iOS TVSDK in werking. U kunt de tag `faxs=1` ook toevoegen aan URL&#39;s met DRM-beveiligde HLS-elementen die bestemd zijn voor andere platforms. wordt waargenomen zoals vereist op iOS of behandeld als een non-op in spelers op andere platforms.
 
 <!--<a id="section_F58941D68EB94A5EBD1C7454D2A1B17A"></a>-->
 
-Raadpleeg de [Adobe Primetime DRM-documentatie](https://help.adobe.com/en_US/primetime/drm)voor meer informatie over DRM.
+Raadpleeg de [Adobe Primetime DRM-documentatie](https://help.adobe.com/en_US/primetime/drm) voor meer informatie over DRM.
 
 ## Primetime DRM implementeren in een TSVDK-toepassing {#implement-primetime-drm-in-a-tsvdk-application}
 
