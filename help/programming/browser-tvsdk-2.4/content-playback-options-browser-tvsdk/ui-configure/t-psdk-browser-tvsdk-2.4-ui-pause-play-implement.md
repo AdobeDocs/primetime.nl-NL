@@ -6,6 +6,9 @@ title: Een video afspelen en pauzeren
 uuid: 4053ea9e-6b74-41e9-ad04-087ad13e3698
 translation-type: tm+mt
 source-git-commit: 040655d8ba5f91c98ed0584c08db226ffe1e0f4e
+workflow-type: tm+mt
+source-wordcount: '127'
+ht-degree: 0%
 
 ---
 
@@ -28,7 +31,7 @@ U kunt gedrag voor Browser-TVSDK toevoegen om knoppen te pauzeren en af te spele
       void pause() throws IllegalStateException;
       ```
 
-1. Luister naar de `AdobePSDK.MediaPlayerStatusChangeEvent` gebeurtenis om te controleren op fouten of om andere relevante acties uit te voeren.
+1. Luister naar de gebeurtenis `AdobePSDK.MediaPlayerStatusChangeEvent` om te controleren op fouten of om andere geschikte acties uit te voeren.
 
-   Browser-TVSDK activeert deze gebeurtenis wanneer pauze- of afspeelmethoden worden aangeroepen en geeft informatie over het gebeurtenisobject, inclusief de nieuwe status, zoals `MediaPlayerStatus.PLAYING` of `MediaPlayerStatus.PAUSED`.
+   Browser TVSDK activeert deze gebeurtenis wanneer pauze- of afspeelmethoden worden aangeroepen en geeft informatie over het gebeurtenisobject door, inclusief de nieuwe status, zoals `MediaPlayerStatus.PLAYING` of `MediaPlayerStatus.PAUSED`.
 
