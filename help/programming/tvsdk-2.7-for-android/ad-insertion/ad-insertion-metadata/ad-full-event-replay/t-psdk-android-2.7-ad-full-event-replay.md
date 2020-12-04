@@ -6,19 +6,22 @@ title: Advertenties inschakelen bij volledig afspelen van gebeurtenissen
 uuid: 69244069-ef61-42e4-b2f5-62ae2561d9e1
 translation-type: tm+mt
 source-git-commit: 0eaf0e7e7e61d596a51d1c9c837ad072d703c6a7
+workflow-type: tm+mt
+source-wordcount: '351'
+ht-degree: 0%
 
 ---
 
 
-# Advertenties inschakelen bij volledig afspelen van gebeurtenissen {#enable-ads-in-full-event-replay-overview}
+# Advertenties in full-event replay {#enable-ads-in-full-event-replay-overview} inschakelen
 
 FER (Full-event replay) is een VOD-middel dat fungeert als een live/DVR-element. Uw toepassing moet daarom stappen ondernemen om ervoor te zorgen dat advertenties correct worden geplaatst.
 
-Voor live-inhoud gebruikt TVSDK de metagegevens/aanwijzingen in het manifest om te bepalen waar advertenties moeten worden geplaatst. Soms lijkt het echter wel of levende/lineaire inhoud op VOD-inhoud lijkt. Wanneer de actieve inhoud bijvoorbeeld is voltooid, wordt een `EXT-X-ENDLIST` tag toegevoegd aan het live manifest. Voor HLS betekent de `EXT-X-ENDLIST` tag dat de stream een VOD-stream is. Om advertenties correct in te voegen, kan TVSDK deze stream niet automatisch onderscheiden van een standaard VOD-stream.
+Voor live-inhoud gebruikt TVSDK de metagegevens/aanwijzingen in het manifest om te bepalen waar advertenties moeten worden geplaatst. Soms lijkt het echter wel of levende/lineaire inhoud op VOD-inhoud lijkt. Wanneer de actieve inhoud bijvoorbeeld is voltooid, wordt de tag `EXT-X-ENDLIST` toegevoegd aan het live manifest. Voor HLS betekent de tag `EXT-X-ENDLIST` dat de stream een VOD-stream is. Om advertenties correct in te voegen, kan TVSDK deze stream niet automatisch onderscheiden van een standaard VOD-stream.
 
-Uw toepassing moet TVSDK laten weten of de inhoud live of VOD is door de `AdSignalingMode`inhoud op te geven.
+Uw toepassing moet TVSDK vertellen of de inhoud live of VOD is door `AdSignalingMode` te specificeren.
 
-Voor een FER-stream moet de Adobe Primetime- en beslissingsserver niet de lijst met ad-hoconderbrekingen opgeven die op de tijdlijn moeten worden ingevoegd voordat het afspelen wordt gestart. Dit is het gebruikelijke proces voor VOD-inhoud. In plaats daarvan, door een verschillende signalerende wijze te specificeren, leest TVSDK alle richtsnoerpunten van FER manifest en gaat naar de advertentieserver voor elk richtsnoerpunt om een advertentieonderbreking te verzoeken. Dit proces lijkt op live/DVR-inhoud.
+Voor een FER-stream moet de Adobe Primetime en de beslissingsserver geen lijst met ad-hoconderbrekingen opgeven die op de tijdlijn moeten worden ingevoegd voordat het afspelen wordt gestart. Dit is het gebruikelijke proces voor VOD-inhoud. In plaats daarvan, door een verschillende signalerende wijze te specificeren, leest TVSDK alle richtsnoerpunten van FER manifest en gaat naar de advertentieserver voor elk richtsnoerpunt om een advertentieonderbreking te verzoeken. Dit proces lijkt op live/DVR-inhoud.
 
 >[!TIP]
 >
@@ -26,13 +29,13 @@ Voor een FER-stream moet de Adobe Primetime- en beslissingsserver niet de lijst 
 
 1. Van een externe bron, zoals vCMS, verkrijg de signalerende wijze die zou moeten worden gebruikt.
 1. Maak de metagegevens die betrekking hebben op reclame.
-1. Als het standaardgedrag moet worden beschreven, specificeer `AdSignalingMode` door te gebruiken `AdvertisingMetadata.setSignalingMode`.
+1. Als het standaardgedrag moet worden beschreven, specificeer `AdSignalingMode` door `AdvertisingMetadata.setSignalingMode` te gebruiken.
 
-   De geldige waarden zijn `DEFAULT`, `SERVER_MAP`en `MANIFEST_CUES`.
+   De geldige waarden zijn `DEFAULT`, `SERVER_MAP` en `MANIFEST_CUES`.
 
    >[!IMPORTANT]
    >
-   >U moet de advertentie signalerende wijze plaatsen alvorens `prepareToPlay`te roepen. Nadat TVSDK de bewerkingen voor advertenties heeft opgelost en op de tijdlijn heeft geplaatst, worden wijzigingen in de modus voor advertenties genegeerd. Stel de modus in wanneer u het `AuditudeSettings` object maakt.
+   >U moet de ad signalerende wijze plaatsen alvorens `prepareToPlay` te roepen. Nadat TVSDK de bewerkingen voor advertenties heeft opgelost en op de tijdlijn heeft geplaatst, worden wijzigingen in de modus voor advertenties genegeerd. Stel de modus in wanneer u het object `AuditudeSettings` maakt.
 
 1. Doorgaan met afspelen.
 
