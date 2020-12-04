@@ -10,7 +10,7 @@ ht-degree: 0%
 ---
 
 
-# Uw advertentieserver integreren {#integrate-ad-server}
+# Uw advertentieserver {#integrate-ad-server} integreren
 
 Om te beginnen, zult u login worden gegeven om tot de console toegang te hebben van de Ad Insertion van Primetime, waar u opstellingsregels zult die de Ad Insertion van Primetime gebruikt om en verzoeken aan de advertentieserver van uw keus door:sturen. Primetime Ad Insertion ondersteunt de meeste VAST- of VMAP-compatibele advertentieservers.
 
