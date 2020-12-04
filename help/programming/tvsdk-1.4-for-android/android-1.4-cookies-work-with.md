@@ -26,7 +26,7 @@ Hier is een voorbeeld met wat type authentificatie wanneer het doen van verzoeke
 
 Werken met cookies:
 
-1. Maak een cookie `cookieManager` en voeg uw cookies voor de URI&#39;s toe aan uw `cookieStore`.
+1. Maak een `cookieManager` en voeg uw cookies voor de URI&#39;s toe aan uw `cookieStore`.
 
    Bijvoorbeeld:
 
@@ -46,7 +46,7 @@ Werken met cookies:
 
    TVSDK vraagt deze cookieManager bij uitvoering op, controleert of er cookies zijn gekoppeld aan de URL en gebruikt deze automatisch.
 
-   Een andere mogelijkheid is om `cookieHeaders` in te stellen `NetworkConfiguration` dat een willekeurige headertekenreeks voor cookies wordt gebruikt voor aanvragen. Standaard wordt deze cookieheader alleen met belangrijke aanvragen verzonden. Om de koekjeskopbal met alle verzoeken te verzenden, gebruik de `NetworkConfiguration` methode `setUseCookieHeadersForAllRequests`:
+   Een andere optie is om `cookieHeaders` in `NetworkConfiguration` te gebruiken om een willekeurige kokerkoord van de koekjeskopbal te plaatsen dat voor verzoeken moet worden gebruikt. Standaard wordt deze cookieheader alleen met belangrijke aanvragen verzonden. Om de koekjeskopbal met alle verzoeken te verzenden, gebruik `NetworkConfiguration` methode `setUseCookieHeadersForAllRequests`:
 
 ```java
    NetworkConfiguration networkConfiguration = new NetworkConfiguration(); 
