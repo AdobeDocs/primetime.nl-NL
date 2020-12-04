@@ -6,6 +6,9 @@ title: Snel vooruitspoelen en terugspoelen
 uuid: 2e5d0fd0-0290-4f08-b9c6-c8ecde26abb8
 translation-type: tm+mt
 source-git-commit: 5908e5a3521966496aeec0ef730e4a704fddfb68
+workflow-type: tm+mt
+source-wordcount: '242'
+ht-degree: 0%
 
 ---
 
@@ -16,10 +19,11 @@ Wanneer gebruikers snel vooruit of snel terugspoelen door de media, zijn zij in 
 
 U moet één waarde instellen om van snelheid te wisselen.
 
-1. Ga van normale spelwijze (1x) aan truc speelwijze door het tarief op `MediaPlayer` een toegestane waarde te plaatsen.
+1. Ga van normale spelwijze (1x) aan truc speelwijze door het tarief op `MediaPlayer` aan een toegestane waarde te plaatsen.
 
-   * De `MediaPlayerItem` klasse definieert de toegestane afspeelsnelheden.
+   * De klasse `MediaPlayerItem` definieert de toegestane afspeelsnelheden.
    * TVSDK selecteert de dichtstbijzijnde toegestane snelheid als de opgegeven snelheid niet is toegestaan.
+
    In dit voorbeeld wordt de interne afspeelsnelheid van de speler ingesteld op de gewenste snelheid.
 
    ```java
@@ -50,7 +54,7 @@ U moet één waarde instellen om van snelheid te wisselen.
 
        TVSDK verzendt de volgende gebeurtenissen met betrekking tot truc-play:
    
-   * `AdobePSDK.PSDKEventType.RATE_SELECTED` wanneer de `rate` waarde in een andere waarde verandert.
+   * `AdobePSDK.PSDKEventType.RATE_SELECTED` wanneer de  `rate` waarde in een andere waarde verandert.
 
    * `AdobePSDK.PSDKEventType.RATE_PLAYING` wanneer het afspelen wordt hervat met de geselecteerde frequentie.
 
