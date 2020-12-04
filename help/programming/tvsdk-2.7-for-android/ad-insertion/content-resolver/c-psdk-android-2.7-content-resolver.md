@@ -6,6 +6,9 @@ title: Aanpassen van opportuniteitsgeneratoren en contentoplossers
 uuid: 97738b80-5cf8-494f-8811-449bceded220
 translation-type: tm+mt
 source-git-commit: 0eaf0e7e7e61d596a51d1c9c837ad072d703c6a7
+workflow-type: tm+mt
+source-wordcount: '249'
+ht-degree: 0%
 
 ---
 
@@ -16,7 +19,7 @@ Een opportuniteitsgenerator identificeert plaatsingsmogelijkheden door douanetag
 
 TVSDK bevat de volgende standaardopportuniteitsgeneratoren:
 
-* `ManifestCuesOpportunityGenerator` genereert mogelijkheden op basis van de standaard en aanwijzingen ( `#EXT-X-CUE`).
+* `ManifestCuesOpportunityGenerator` genereert mogelijkheden op basis van de standaard en aanwijzingen (  `#EXT-X-CUE`).
 
 * `AdSignalingModeOpportunityGenerator` genereert een eerste mogelijkheid voor de opgegeven advertentiemodus. Hiermee worden aanwijzingen of metagegevens met tijdslimiet genegeerd.
 * `CustomMarkerOpportunityGenerator` Hiermee worden mogelijkheden gegenereerd om kant-en-klare C3-advertenties te vervangen.
