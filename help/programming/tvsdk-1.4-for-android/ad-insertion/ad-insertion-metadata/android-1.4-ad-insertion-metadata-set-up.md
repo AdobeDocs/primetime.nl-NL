@@ -6,6 +6,9 @@ title: Metagegevens instellen en invoegen
 uuid: d96e67c3-4cc7-4309-a2a2-ff5193b46534
 translation-type: tm+mt
 source-git-commit: 4102780d0c7d0b96d120c1c2b3d14c47bc1b0e6f
+workflow-type: tm+mt
+source-wordcount: '290'
+ht-degree: 0%
 
 ---
 
@@ -16,17 +19,17 @@ Met de hulpklasse AuditudeSettings, die de klasse MetadataNode uitbreidt, kunt u
 
 >[!TIP]
 >
->Adobe Primetime en het besluit was eerder bekend als Auditude.
+>Adobe Primetime en de beslissing stond voorheen bekend als Auditude.
 
-Metagegevens voor reclame bevinden zich in de `MediaResource.Metadata` eigenschap. Wanneer u begint met het afspelen van een nieuwe video, is uw toepassing verantwoordelijk voor het instellen van de juiste metagegevens voor advertenties.
+Metagegevens voor reclame bevinden zich in de eigenschap `MediaResource.Metadata`. Wanneer u begint met het afspelen van een nieuwe video, is uw toepassing verantwoordelijk voor het instellen van de juiste metagegevens voor advertenties.
 
-1. Maak de `AuditudeSettings` instantie.
+1. Stel de instantie `AuditudeSettings` samen.
 
    ```java
    AuditudeSettings auditudeSettings = new AuditudeSettings();
    ```
 
-1. Stel de Adobe Primetime- en beslissingsparameters `mediaID`, `zoneID`en `domain`de optionele doelparameters in.
+1. Stel de Adobe Primetime en de beslissing `mediaID`, `zoneID`, `domain` en de optionele parameters voor het toewijzen van doelen in.
 
    ```java
    auditudeSettings.setZoneId("yourZoneId"); 
@@ -44,7 +47,7 @@ Metagegevens voor reclame bevinden zich in de `MediaResource.Metadata` eigenscha
 
    >[!TIP]
    >
-   >De media-id wordt door TVSDK gebruikt als een tekenreeks, die wordt omgezet in een md5-waarde en wordt gebruikt voor de `u` waarde in het verzoek Primetime en beslissings-URL. Bijvoorbeeld:
+   >De media-id wordt door TVSDK gebruikt als een tekenreeks, die wordt omgezet in een md5-waarde en wordt gebruikt voor de waarde `u` in het URL-verzoek voor primetime en besluitvorming. Bijvoorbeeld:
    >
    >
    ```
@@ -57,25 +60,25 @@ Metagegevens voor reclame bevinden zich in de `MediaResource.Metadata` eigenscha
    >   &g=1000002
    >```
 
-1. Maak een `MediaResource` instantie met de URL van de mediastream en de eerder gemaakte metagegevens voor advertenties.
+1. Maak een `MediaResource`-instantie met de URL van de mediastream en de eerder gemaakte advertentiemetagegevens.
 
    ```java
    MediaResource mediaResource = new MediaResource( 
    "https://example.com/media/test_media.m3u8", MediaResource.Type.HLS, Metadata);
    ```
 
-1. Laad het `MediaResource` object via de `MediaPlayer.replaceCurrentResource` methode.
+1. Laad het object `MediaResource` via de methode `MediaPlayer.replaceCurrentResource`.
 
-   Het `MediaPlayer` begin ladend en verwerkt media stroommanifest.
+   Met `MediaPlayer` wordt het mediabream geladen en verwerkt.
 
-1. Wanneer de `MediaPlayer` overgangen naar de `INITIALIZED` status, krijg de eigenschappen van de media stroom in de vorm van een `MediaPlayerItem` instantie door de `MediaPlayer.CurrentItem` methode.
-1. (Optioneel) Vraag de `MediaPlayerItem` instantie om na te gaan of de stream live is, ongeacht of er alternatieve audiotracks zijn of of de stream is beveiligd.
+1. Wanneer de `MediaPlayer` naar de `INITIALIZED` status overgaat, krijg de eigenschappen van de media stroom in de vorm van een `MediaPlayerItem` instantie door de `MediaPlayer.CurrentItem` methode.
+1. (Optioneel) Vraag de instantie `MediaPlayerItem` om te zien of de stream live is, ongeacht of deze alternatieve audiotracks heeft of of de stream is beveiligd.
 
    Deze informatie kan u helpen UI voor het playback voorbereiden. Als u bijvoorbeeld weet dat er twee audiotracks zijn, kunt u een UI-besturingselement opnemen dat schakelt tussen deze tracks.
 
 1. Bel `MediaPlayer.prepareToPlay` om de advertentieworkflow te starten.
 
-   Nadat de advertenties zijn opgelost en op de tijdlijn zijn geplaatst, gaat de `MediaPlayer` overgang naar de `PREPARED` status.
-1. Bel `MediaPlayer.play` om het afspelen te starten.
+   Nadat de advertenties zijn opgelost en op de tijdlijn zijn geplaatst, gaat `MediaPlayer` naar de status `PREPARED`.
+1. Roep `MediaPlayer.play` aan om het afspelen te starten.
 
 TVSDK bevat nu advertenties wanneer uw media wordt afgespeeld.
