@@ -6,18 +6,21 @@ title: Een aangepaste contentoplosser implementeren
 uuid: 1714fcd9-45e0-48be-97f3-f702265128a4
 translation-type: tm+mt
 source-git-commit: 040655d8ba5f91c98ed0584c08db226ffe1e0f4e
+workflow-type: tm+mt
+source-wordcount: '186'
+ht-degree: 2%
 
 ---
 
 
-# Een aangepaste contentoplosser implementeren{#implement-a-custom-content-resolver}
+# Een aangepaste inhoudsoplosser{#implement-a-custom-content-resolver} implementeren
 
 U kunt uw eigen inhoudsoplossers implementeren op basis van de standaardoplossers.
 
 Wanneer TVSDK een nieuwe kans ontdekt, herhaalt het door de geregistreerde inhoudsoplossers zoekend één die die kans kan oplossen gebruikend de `canResolve` methode. De eerste die waar terugkeert wordt geselecteerd voor het oplossen van de kans. Als er geen inhoudoplosser kan worden gemaakt, wordt die mogelijkheid overgeslagen. Omdat het proces voor het oplossen van inhoud meestal asynchroon is, brengt de contentoplosser TVSDK op de hoogte wanneer het proces is voltooid.
 
-* De inhoudoplosser roept `client.place` aan om op te geven welke tijdlijnbewerking TVSDK moet uitvoeren (meestal een plaatsing van een advertentie-einde).
-* De inhoudoplosser roept aan `client.notifyCompleted` als het oplossend proces succesvol is, of `client.notifyFailed` als het proces ontbreekt.
+* De inhoudoplosser roept `client.place` aan om op te geven welke tijdlijnbewerking TVSDK moet worden uitgevoerd (meestal een plaatsing van een advertentie-einde).
+* De inhoudoplosser roept `client.notifyCompleted` aan als het oplossend proces succesvol is, of `client.notifyFailed` als het proces ontbreekt.
 
 1. Maak een aangepaste opportuniteitsoplosser.
 
