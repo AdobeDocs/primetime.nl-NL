@@ -6,6 +6,9 @@ title: Google Cast-app voor TVSDK van browser
 uuid: 018143e2-143a-4f88-97c6-4b10a2083f9e
 translation-type: tm+mt
 source-git-commit: 040655d8ba5f91c98ed0584c08db226ffe1e0f4e
+workflow-type: tm+mt
+source-wordcount: '439'
+ht-degree: 0%
 
 ---
 
@@ -29,7 +32,7 @@ Er zijn twee componenten van een app voor Cast:
 
 De afzender en de ontvanger communiceren door de Gegoten SDKs te gebruiken om berichten over te gaan.
 
-## Basisworkflow {#section_FAF680FF29DA4D24A50AC0A2B6402B58}
+## Standaardworkflow {#section_FAF680FF29DA4D24A50AC0A2B6402B58}
 
 Hier volgt een overzicht van het proces:
 
@@ -39,7 +42,7 @@ Hier volgt een overzicht van het proces:
 1. De afzenderapp stuurt afspeelbesturingsberichten, zoals afspelen, pauzeren, zoeken, vooruitspoelen, snel terugspoelen, terugspoelen, volumewijziging enzovoort, naar de ontvanger-app.
 1. De ontvanger-app reageert op deze berichten.
 
-## Berichtindeling {#section_1624159DD51D4C87B3E5803DEEBCB6B7}
+## Berichtformaat {#section_1624159DD51D4C87B3E5803DEEBCB6B7}
 
 U moet de berichten bepalen zodat de afzender en de ontvanger kunnen begrijpen. Hier volgt een voorbeeld van een zoekbericht:
 
@@ -57,7 +60,7 @@ Custom Message Namespace
 var MSG_NAMESPACE = "urn:x-cast:com.adobe.primetime"; 
 ```
 
-## Verbinding maken {#section_B4D40CABDD3E46FDBE7B5651DFF91653}
+## Verbinding {#section_B4D40CABDD3E46FDBE7B5651DFF91653} maken
 
 >[!IMPORTANT]
 >
@@ -65,7 +68,7 @@ var MSG_NAMESPACE = "urn:x-cast:com.adobe.primetime";
 
 Om een verbinding tot stand te brengen, moeten de afzender en de ontvanger de volgende taken voltooien:
 
-* De afzender moet de documentatie voor platform bij de Ontwikkeling [van de](https://developers.google.com/cast/docs/sender_apps)Toepassing van de Afzender herzien.
+* De afzender moet de documentatie voor platform op [Sender App Development](https://developers.google.com/cast/docs/sender_apps) herzien.
 * De ontvanger gebruikt de ontvanger APIs van de Gietvorm om een verbinding met de afzender te vestigen app. Bijvoorbeeld:
 
    ```js
@@ -87,7 +90,7 @@ Om berichten naar de ontvanger te verzenden, zie de documentatie voor het platfo
 
 >[!IMPORTANT]
 >
->U moet de naamruimte van het aangepaste bericht opnemen `MSG_NAMESPACE` in alle berichten.
+>U moet de naamruimte van het aangepaste bericht `MSG_NAMESPACE` in alle berichten opnemen.
 
 Voor de ontvanger app, volg de documentatie voor de gietvormontvanger APIs.
 
