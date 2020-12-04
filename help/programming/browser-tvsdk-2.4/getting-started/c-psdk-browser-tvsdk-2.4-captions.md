@@ -17,7 +17,7 @@ ht-degree: 3%
 
 U kunt bijschriften weergeven tijdens het afspelen van video-inhoud.
 
-Als u ondertitels wilt afhandelen, moet u de `AdobePSDK.PSDKEventType.CAPTIONS_UPDATED` gebeurtenislistener toevoegen:
+Als u bijschriften wilt afhandelen, moet u de gebeurtenislistener `AdobePSDK.PSDKEventType.CAPTIONS_UPDATED` toevoegen:
 
 ```js
 ... 
