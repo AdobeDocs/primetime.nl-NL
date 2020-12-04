@@ -6,6 +6,9 @@ title: Logboekregistratie en foutopsporing in realtime toevoegen
 uuid: 037daf57-a1b3-4b42-ac51-81179fb36915
 translation-type: tm+mt
 source-git-commit: 5908e5a3521966496aeec0ef730e4a704fddfb68
+workflow-type: tm+mt
+source-wordcount: '254'
+ht-degree: 0%
 
 ---
 
@@ -34,4 +37,4 @@ Hier is een voorbeeld van hoe u meldingen kunt ophalen.
    De externe server kan de verschafte gegevens dan grafisch in real-time weergeven.
 1. Om het verlies van berichtgebeurtenissen te ontdekken, zoek hiaten in de opeenvolging van waarden van de gebeurtenisindex.
 
-   Elke meldingsgebeurtenis heeft een indexwaarde die automatisch wordt verhoogd door de `session.NotificationHistory` klasse.
+   Elke meldingsgebeurtenis heeft een indexwaarde die automatisch wordt verhoogd door de klasse `session.NotificationHistory`.
