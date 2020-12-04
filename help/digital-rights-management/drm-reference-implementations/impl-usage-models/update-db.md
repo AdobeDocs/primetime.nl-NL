@@ -4,17 +4,20 @@ title: De referentieimplementatiedatabase bijwerken
 uuid: 2883045e-ad62-466d-94a2-fc45ded2a4f5
 translation-type: tm+mt
 source-git-commit: 29bc8323460d9be0fce66cbea7c6fce46df20d61
+workflow-type: tm+mt
+source-wordcount: '122'
+ht-degree: 0%
 
 ---
 
 
-# De referentieimplementatiedatabase bijwerken{#update-the-reference-implementation-db}
+# De referentie-implementatie-DB{#update-the-reference-implementation-db} bijwerken
 
 Om gebruiksmodellen te controleren waaronder een vergunning aan een aangewezen gebruiker wordt verleend, voeg ingangen aan het gegevensbestand van de verwijzings implementatie toe.
 
-1. Voeg vermeldingen toe aan de `Customer` tabel.
+1. Voeg items toe aan de tabel `Customer`.
 
-   De `Customer` tabel bevat gebruikersnamen en wachtwoorden om gebruikers te verifiëren. Het geeft ook aan of een gebruiker een abonnement heeft (een licentie die is uitgegeven onder het gebruiksmodel *Abonnement* ).
+   De tabel `Customer` bevat gebruikersnamen en wachtwoorden om gebruikers te verifiëren. Ook wordt aangegeven of een gebruiker een abonnement heeft (een licentie die is uitgegeven onder het gebruiksmodel *Subscription*).
 
 1. Bied een gebruiker toegang via de gebruiksmodellen Downloaden naar het eigen systeem of Video op aanvraag.
 
@@ -23,4 +26,4 @@ Om gebruiksmodellen te controleren waaronder een vergunning aan een aangewezen g
    * Het gebruiksmodel
    * Elk segment met inhoud waartoe een gebruiker toegang heeft
 
-Zie het [!DNL PopulateSampleDB.sql] script (opgenomen op uw Primetime DRM-dvd in de [!DNL Reference Implementation/Server/Reference Implementation Server/dbscript/] directory) voor meer informatie over hoe u elke tabel kunt vullen.
+Voor meer informatie over hoe te om elke lijst te bevolken, zie [!DNL PopulateSampleDB.sql] manuscript (inbegrepen op uw Dvd van Primetime DRM in [!DNL Reference Implementation/Server/Reference Implementation Server/dbscript/] folder).
