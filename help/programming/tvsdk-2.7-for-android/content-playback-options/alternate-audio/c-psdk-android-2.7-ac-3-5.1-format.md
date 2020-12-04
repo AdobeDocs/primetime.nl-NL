@@ -6,6 +6,9 @@ title: AC-3 5.1-indeling
 uuid: 11dab0ac-5aed-4909-b9fb-807781f88480
 translation-type: tm+mt
 source-git-commit: 812d04037c3b18f8d8cdd0d18430c686c3eee1ff
+workflow-type: tm+mt
+source-wordcount: '442'
+ht-degree: 0%
 
 ---
 
@@ -14,7 +17,7 @@ source-git-commit: 812d04037c3b18f8d8cdd0d18430c686c3eee1ff
 
 Met de Audio Codec 3 (AC-3, ook bekend als Dolby Digital®) 5.1-indeling kunnen inhoudsproviders de grootte van multikanaalsaudiobestanden comprimeren zonder dat dit de geluidskwaliteit nadelig beïnvloedt. AC-3 is een formaat 5.1, zo betekent het dat het vijf volledig-bandbreedtekanalen voor een rijkere gebruikerservaring verstrekt.
 
-Zie [Dolby Digital 5.1](https://www.dolby.com/us/en/technologies/dolby-digital.html)voor meer informatie.
+Zie [Dolby Digital 5.1](https://www.dolby.com/us/en/technologies/dolby-digital.html) voor meer informatie.
 
 TVSDK ondersteunt de volgende AC-3 5.1-functies:
 
@@ -29,7 +32,7 @@ TVSDK ondersteunt de volgende AC-3 5.1-functies:
 
 >[!IMPORTANT]
 >
->TVSDK biedt alleen ondersteuning voor de AC-3 5.1-functies op het apparaat van de eerste generatie Amazon Fire TV.
+>TVSDK ondersteunt de AC-3 5.1-functies alleen op het Amazon Fire TV-apparaat van de eerste generatie.
 
 De volgende AC-3 5.1-functies worden niet ondersteund:
 
@@ -54,7 +57,7 @@ Hier is het typische werkschema dat voorkomt wanneer TVSDK manifest met AC-3 en 
 >
 >De toepassing kan geen informatie ophalen over genegeerde profielen.
 
-## De uitvoermodus bepalen {#section_D2AFBF33D3904AC2A7C653A60C3A0CD3}
+## De uitvoermodus {#section_D2AFBF33D3904AC2A7C653A60C3A0CD3} bepalen
 
 Als een Android-apparaat tijdens de verwerking van AC-3-media is aangesloten op het luidsprekersysteem, is de beslissing om inhoud af te spelen in de surround-modus of de stereomodus afhankelijk van de configuratie van het apparaat.
 
