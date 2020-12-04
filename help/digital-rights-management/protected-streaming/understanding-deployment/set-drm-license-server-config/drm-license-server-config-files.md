@@ -4,6 +4,9 @@ title: Configuratiebestanden van de licentieserver
 uuid: 7c7e0f76-2ced-45af-9542-99e06ec31cda
 translation-type: tm+mt
 source-git-commit: 29bc8323460d9be0fce66cbea7c6fce46df20d61
+workflow-type: tm+mt
+source-wordcount: '121'
+ht-degree: 0%
 
 ---
 
@@ -17,8 +20,8 @@ Voor de Adobe Primetime DRM-server voor beveiligde streaming zijn de volgende ty
 
 Nadat u de configuratiebestanden hebt bewerkt, raadt Adobe u aan de hulpprogramma&#39;s van de Primetime DRM-server voor beveiligde streaming te gebruiken om te controleren of de bestanden de juiste indeling hebben.
 
-Zie *Configuratie-validatie*.
+Zie *Configuratievalidatie*.
 
-Als u wilt vermijden makend wachtwoorden in duidelijke teksten in de configuratiedossiers beschikbaar, dan moet u alle wachtwoorden coderen die u in de globale en huurdersconfiguratiedossiers door het hulpmiddel te gebruiken Scrambler hebt gespecificeerd dat Adobe heeft verstrekt.
+Als u wilt vermijden makend wachtwoorden beschikbaar in duidelijke teksten in de configuratiedossiers, dan moet u alle wachtwoorden coderen die u in de globale en huurdersconfiguratiedossiers door het hulpmiddel te gebruiken Scrambler hebt gespecificeerd dat Adobe heeft verstrekt.
 
 Zie *Wachtwoordkrambler* voor meer informatie over hoe te om wachtwoorden te coderen.
