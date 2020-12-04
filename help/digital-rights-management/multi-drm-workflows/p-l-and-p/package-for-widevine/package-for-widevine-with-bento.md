@@ -66,13 +66,13 @@ In het onderstaande voorbeeld worden PlayReady- en Windows-schema&#39;s gecombin
 
 waar
 
-De waarde voor de `--encryption-key` markering is in de vorm `<base16 encoded key id>:<base16 encoded encryption key>`.
+De waarde voor de markering `--encryption-key` is in de vorm `<base16 encoded key id>:<base16 encoded encryption key>`.
 
-De `--widevine-header=provider:intertrust#content_id:2a` vlag vertelt de verpakker om de pssh doos in manifest op te nemen, die TVSDK momenteel voor playback vereist.
+De `--widevine-header=provider:intertrust#content_id:2a` vlag vertelt de pakketmanager om de doos pssh in manifest op te nemen, die TVSDK momenteel voor playback vereist.
 
 De waarde voor `-playready-header` is voor de verwerving van een PlayReady-licentie.
 
-## Inhoud verpakken met Adobe Offline Packager {#package-your-content-with-adobe-offline-packager}
+## Verpak uw inhoud met Adobe Offline Packager {#package-your-content-with-adobe-offline-packager}
 
 Adobe Offline Packager gebruikt als invoer van niet-gecodeerde MP4-inhoud.
 
