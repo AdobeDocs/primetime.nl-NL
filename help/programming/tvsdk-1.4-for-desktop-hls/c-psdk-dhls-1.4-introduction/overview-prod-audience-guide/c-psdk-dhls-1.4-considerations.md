@@ -6,11 +6,14 @@ title: Overwegingen en beste praktijken
 uuid: 62a5d641-6f37-4e4d-bbc2-414bf3681d9c
 translation-type: tm+mt
 source-git-commit: 040655d8ba5f91c98ed0584c08db226ffe1e0f4e
+workflow-type: tm+mt
+source-wordcount: '300'
+ht-degree: 0%
 
 ---
 
 
-# Overwegingen en beste praktijken{#considerations-and-best-practices}
+# Overwegingen en aanbevolen procedures{#considerations-and-best-practices}
 
 Als u TVSDK het doeltreffendst wilt gebruiken, moet u bepaalde details van de werking van de SDK in overweging nemen en bepaalde best practices volgen.
 
@@ -18,13 +21,13 @@ Als u TVSDK het doeltreffendst wilt gebruiken, moet u bepaalde details van de we
 
 Houd rekening met de volgende informatie wanneer u TVSDK gebruikt:
 
-* Adobe Primetime werkt niet op emulators of simulators.
+* Adobe Primetime werkt niet op emulators of simulatoren.
 
    U moet echte apparaten gebruiken voor het testen.
 * Afspelen wordt alleen ondersteund voor HLS-inhoud (HTTP Live Streaming).
 * Hoofdvideo-inhoud kan worden vermenigvuldigd, waarbij video- en audiostreams zich in dezelfde uitvoering bevinden, of niet-gemultiplext, waarbij video- en audiostreams zich in afzonderlijke uitvoeringen bevinden.
 * De TVSDK-API wordt geïmplementeerd in ActionScript.
-* Voor het afspelen van video&#39;s is de Adobe Video Engine (AVE) vereist. Dit beïnvloedt hoe en wanneer de media middelen kunnen worden betreden:
+* Voor het afspelen van video is de Adobe Video Engine (AVE) vereist. Dit beïnvloedt hoe en wanneer de media middelen kunnen worden betreden:
 
    * Ondertiteling met gesloten ondertiteling wordt gesteund in de mate die door AVE wordt verstrekt.
    * Afhankelijk van de precisie van de codeermodule kan de werkelijk gecodeerde mediaduur afwijken van de tijdsduur die in het manifest van de streambron wordt vastgelegd.
@@ -36,12 +39,12 @@ Houd rekening met de volgende informatie wanneer u TVSDK gebruikt:
       "Adobe Flash Player"
       ```
 
-## Aanbevolen procedures {#section_tvsdk_best_practices}
+## Aanbevolen werkwijzen {#section_tvsdk_best_practices}
 
 Hier volgen de aanbevolen procedures voor TVSDK:
 
 * Gebruik HLS versie 3.0 of hoger voor programma-inhoud.
 * Voor TVSDK 1.4 voor DHLS, wordt het luie en het laden toegelaten door gebrek.
 
-   Voor inhoud zonder pre-rol of middenrol, kunt u gebruiken `AdvertisingMetadata.delayAdLoading` om inhoud te versnellen ladend nog meer.
+   Voor inhoud zonder pre-rol of middenrol, kunt u `AdvertisingMetadata.delayAdLoading` gebruiken om inhoud te versnellen die nog meer laadt.
 
