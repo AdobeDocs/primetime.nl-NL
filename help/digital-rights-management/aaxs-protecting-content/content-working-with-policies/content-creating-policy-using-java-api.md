@@ -4,16 +4,19 @@ title: Beleid maken met de Java API
 uuid: c653548d-4abf-46b9-8669-d68b966da359
 translation-type: tm+mt
 source-git-commit: 29bc8323460d9be0fce66cbea7c6fce46df20d61
+workflow-type: tm+mt
+source-wordcount: '103'
+ht-degree: 0%
 
 ---
 
 
-# Beleid maken met de Java API {#creating-a-policy-using-the-java-api}
+# Een beleid maken met de Java API {#creating-a-policy-using-the-java-api}
 
 Voer de volgende stappen uit om een beleid te maken met de Java API:
 
-1. Stel uw ontwikkelomgeving in en neem alle JAR-bestanden op die in de ontwikkelomgeving [van uw project worden](../../aaxs-protecting-content/content-setting-up-the-sdk/content-setting-up-the-dev-env.md) ingesteld.
-1. Maak een `com.adobe.flashaccess.sdk.policy.Policy` object en geef de eigenschappen ervan op, zoals de rechten, de duur van het in cache plaatsen van licenties en de einddatum van het beleid.
+1. Stel uw ontwikkelomgeving in en neem alle JAR-bestanden op die worden vermeld in [De ontwikkelomgeving instellen](../../aaxs-protecting-content/content-setting-up-the-sdk/content-setting-up-the-dev-env.md) in uw project.
+1. Maak een `com.adobe.flashaccess.sdk.policy.Policy`-object en geef de eigenschappen ervan op, zoals de rechten, de duur van het in cache plaatsen van licenties en de einddatum van het beleid.
 
    ```java
      // Create a new Policy object.  
@@ -49,7 +52,7 @@ Voer de volgende stappen uit om een beleid te maken met de Java API:
      }
    ```
 
-1. Serialiseer het `Policy` object en sla het op in een bestand of database.
+1. Serialiseer het `Policy` voorwerp en bewaar het in een dossier of gegevensbestand.
 
    ```java
      // Serialize the policy  
@@ -63,4 +66,4 @@ Voer de volgende stappen uit om een beleid te maken met de Java API:
      out.close();
    ```
 
-Voor de volledige bron van deze steekproefcode, zie *com.adobe.flashaccess.samples.policy.CreatePolicy* in de folder &quot; [!DNL samples]&quot;van de Lijn van het Bevel van de Toepassing van de Verwijzing.
+Voor de volledige bron van deze steekproefcode, zie *com.adobe.flashaccess.samples.policy.CreatePolicy* in de folder van de Lijn van de Lijn van het Bevel van de Implementatie van de Verwijzing &quot;[!DNL samples]&quot;.
