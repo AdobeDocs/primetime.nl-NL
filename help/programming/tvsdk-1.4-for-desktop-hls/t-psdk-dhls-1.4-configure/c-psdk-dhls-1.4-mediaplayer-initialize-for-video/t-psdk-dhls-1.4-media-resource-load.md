@@ -6,17 +6,20 @@ title: Een mediabron laden in de MediaPlayer
 uuid: 8af3e8d1-359d-483c-b394-b95054f7265a
 translation-type: tm+mt
 source-git-commit: 84924d84bfa436a8807c2e8d74d1dc268d457051
+workflow-type: tm+mt
+source-wordcount: '276'
+ht-degree: 0%
 
 ---
 
 
-# Een mediabron laden in de MediaPlayer{#load-a-media-resource-in-the-mediaplayer}
+# Laad een media middel in MediaPlayer{#load-a-media-resource-in-the-mediaplayer}
 
 Laad een bron door rechtstreeks een MediaResource te instantiëren en de video-inhoud te laden die moet worden afgespeeld. Dit is een manier om een mediabrondel te laden.
 
-1. Stel het afspeelbare item van het `MediaPlayer` object in met de nieuwe bron die moet worden afgespeeld.
+1. Stel het afspeelbare item van het `MediaPlayer`-object in met de nieuwe bron die moet worden afgespeeld.
 
-   Vervang het momenteel afspeelbare item van uw bestaande MediaPlayer door een bestaande `MediaPlayer.replaceCurrentResource` instantie aan te roepen `MediaResource` en door te geven.
+   Vervang het momenteel afspeelbare item van uw bestaande MediaPlayer door `MediaPlayer.replaceCurrentResource` aan te roepen en een bestaande `MediaResource`-instantie door te geven.
 
 1. Controleer op zijn minst op de volgende wijzigingen:
 
@@ -24,20 +27,20 @@ Laad een bron door rechtstreeks een MediaResource te instantiëren en de video-i
    * BEREID
    * FOUT
 
-      Via deze gebeurtenissen kan het `MediaPlayer` object een melding sturen naar de toepassing wanneer de mediabron is geladen.
+      Via deze gebeurtenissen kan het `MediaPlayer`-object uw toepassing een melding sturen wanneer de mediabron is geladen.
 
 1. Wanneer de status van de mediaspeler verandert in INITIALIZED, kunt u `MediaPlayer.prepareToPlay`
 
-   De geINITIALISEERDE status geeft aan dat het medium is geladen. Het aanroepen `prepareToPlay` begint het proces van het oplossen en plaatsen van reclame, als om het even welk.
+   De geINITIALISEERDE status geeft aan dat het medium is geladen. Als u `prepareToPlay` aanroept, wordt het proces voor het oplossen en plaatsen van advertenties gestart, indien van toepassing.
 
 1. Wanneer de status van de mediaspeler verandert in PREPARED, is de mediastream geladen en voorbereid voor afspelen.
 
-   Wanneer de mediastream wordt geladen, `MediaPlayerItem` wordt er een gemaakt.
+   Wanneer de mediastream wordt geladen, wordt een `MediaPlayerItem` gemaakt.
 
-Als er een fout optreedt, schakelt MediaPlayer over naar de status ERROR. Het brengt ook uw toepassing op de hoogte door de `STATUS_CHANGED` gebeurtenis naar uw `MediaPlayerStatusChangeEvent` callback te verzenden.
+Als er een fout optreedt, schakelt MediaPlayer over naar de status ERROR. Het brengt ook uw toepassing op de hoogte door de `STATUS_CHANGED` gebeurtenis aan uw `MediaPlayerStatusChangeEvent` callback te verzenden.
 
 Hiermee worden verschillende parameters doorgegeven:
-* Een `type` parameter van het type tekenreeks met de waarde `ERROR`.
+* Een `type`-parameter van het type tekenreeks met de waarde `ERROR`.
 
 * Een `MediaError` parameter die u kunt gebruiken om een bericht te krijgen dat kenmerkende informatie over de foutengebeurtenis bevat.
 
