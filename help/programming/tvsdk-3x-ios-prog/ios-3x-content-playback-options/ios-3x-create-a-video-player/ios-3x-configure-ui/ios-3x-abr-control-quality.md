@@ -6,6 +6,9 @@ title: Adaptieve bitsnelheden (ABR) voor videokwaliteit
 uuid: a9b9a6a8-4098-4952-90e7-684e64800b3f
 translation-type: tm+mt
 source-git-commit: a63768e51c911914a6ba9d884e2587fa34939f9d
+workflow-type: tm+mt
+source-wordcount: '580'
+ht-degree: 0%
 
 ---
 
@@ -50,7 +53,7 @@ Als een stream bijvoorbeeld de volgende profielen heeft:
 
 Als u een bereik van 300000 tot 2000000 opgeeft, houdt TVSDK alleen rekening met de profielen 1, 2 en 3. Hierdoor kunnen toepassingen zich aanpassen aan verschillende netwerkvoorwaarden, zoals het schakelen van WiFi naar 3G of naar verschillende apparaten, zoals een telefoon, tablet of desktopcomputer.
 
-## Aangepaste bitsnelheden configureren {#section_572FCE4CC28D4DF8BD9C461F00B3CA17}
+## Aangepaste bitsnelheden {#section_572FCE4CC28D4DF8BD9C461F00B3CA17} configureren
 
 Aangepaste parameters voor de bitsnelheid van TVSDK configureren:
 
@@ -81,9 +84,9 @@ Aangepaste parameters voor de bitsnelheid van TVSDK configureren:
 
 Houd rekening met het volgende:
 
-* De toepassing moet de `abrControlParameters` eigenschap instellen `PTMediaPlayer` voordat een `PTMediaPlayerItem` instantie wordt geconfigureerd, zodat de initiële en minimale bitsnelheidinstellingen van kracht worden.
+* De toepassing moet de eigenschap `abrControlParameters` op `PTMediaPlayer` instellen voordat een instantie `PTMediaPlayerItem` wordt geconfigureerd, zodat de initiële en minimale bitsnelheidinstellingen van kracht worden.
 
    Nadat het afspelen van inhoud is gestart, heeft het instellen van een nieuwe instantie alleen invloed op de instelling van de maximale bitsnelheid.
 
-* Als u de maximale bitsnelheid tijdens het afspelen wilt bijwerken, maakt u een nieuwe `PTABRControlParameters` instantie en stelt u deze in op de spelerinstantie.
-* U kunt de instelling voor de maximale bitsnelheid alleen bijwerken tijdens het afspelen op iOS 8.0 en hoger. Voor eerdere versies wordt de `maxBitrate` waarde gebruikt die was ingesteld voordat de inhoud werd afgespeeld.
+* Als u de maximale bitsnelheid tijdens het afspelen wilt bijwerken, maakt u een nieuwe `PTABRControlParameters`-instantie en stelt u deze in op de spelerinstantie.
+* U kunt de instelling voor de maximale bitsnelheid alleen bijwerken tijdens het afspelen op iOS 8.0 en hoger. Voor eerdere versies wordt de waarde `maxBitrate` gebruikt die was ingesteld voordat de inhoud werd afgespeeld.
