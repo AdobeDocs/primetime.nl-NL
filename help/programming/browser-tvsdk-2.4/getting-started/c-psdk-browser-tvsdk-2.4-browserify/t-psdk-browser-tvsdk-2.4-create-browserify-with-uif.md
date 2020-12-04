@@ -6,6 +6,9 @@ title: Creeer een Browser-Compatibele speler gebruikend UI-Kader
 uuid: 544fd872-5ca1-417d-8aab-69613caada0e
 translation-type: tm+mt
 source-git-commit: 592245f5a7186d18dabbb5a98a468cbed7354aed
+workflow-type: tm+mt
+source-wordcount: '152'
+ht-degree: 0%
 
 ---
 
@@ -16,12 +19,12 @@ Gebruik de Browser bibliotheekbestanden die door Browser TVSDK in uw app worden 
 
 Voorbeeld van Browser-bestanden die zijn opgenomen in de TVSDK:
 
-* [!DNL [...]/samples/browserify/ui-framework/build/Gruntfile.js]
-* [!DNL [...]/samples/browserify/ui-framework/build/package.json]
-* [!DNL [...]/samples/browserify/ui-framework/examples/sample.html]
-* [!DNL [...]/samples/browserify/ui-framework/examples/sample.js]
+* [!DNL [..]/samples/browserify/ui-framework/build/Gruntfile.js]
+* [!DNL [..]/samples/browserify/ui-framework/build/package.json]
+* [!DNL [..]/samples/browserify/ui-framework/examples/sample.html]
+* [!DNL [..]/samples/browserify/ui-framework/examples/sample.js]
 
-Als u een toepassing wilt maken die compatibel is met Browserbesturing via het UI-framework, moet u `require` de twee Browser-modules (geleverd door Browser-TVSDK) in uw toepassingscode opnemen:
+Als u een toepassing wilt maken die compatibel is met Browserbesturing en die gebruikmaakt van het UI-framework, moet u `require` de twee Browser-TVSDK-modules (geleverd door Browser-TVSDK) in uw toepassingscode opgeven:
 
 1. Vereisen Browser modules:
 
