@@ -6,6 +6,9 @@ title: Tijdbereiken vervangen door een advertentie
 uuid: 50cdcc06-7df5-414b-95d4-c684bc68dce3
 translation-type: tm+mt
 source-git-commit: 5908e5a3521966496aeec0ef730e4a704fddfb68
+workflow-type: tm+mt
+source-wordcount: '107'
+ht-degree: 0%
 
 ---
 
@@ -14,7 +17,7 @@ source-git-commit: 5908e5a3521966496aeec0ef730e4a704fddfb68
 
 U kunt advertenties invoegen in VOD-inhoud.
 
-In dit geval worden `TimeRanges` tussen de `begin` en `end` `localTime` binnen verwijderd uit de tijdlijn. Zij worden vervangen door een `AdBreak` van `begin` tot `begin+replaceDuration`. Als de vervanging-duur niet als parameter bestaat, maakt de server de bepaling op teruggekeerde Adbreak.
+In dit geval worden `TimeRanges` tussen `begin` en `end` in `localTime` verwijderd uit de tijdlijn. Ze worden vervangen door een `AdBreak` van `begin` tot `begin+replaceDuration`. Als de vervanging-duur niet als parameter bestaat, maakt de server de bepaling op teruggekeerde Adbreak.
 
 >[!NOTE]
 >
