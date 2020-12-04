@@ -11,7 +11,7 @@ ht-degree: 0%
 ---
 
 
-# Scriptgegevens versleutelen {#encrypting-script-data}
+# Scriptgegevens {#encrypting-script-data} coderen
 
 Met deze pakketoptie geeft u op of scriptgegevens die zijn ingesloten in de inhoud, worden gecodeerd.
 
