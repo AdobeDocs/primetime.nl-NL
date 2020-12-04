@@ -4,15 +4,18 @@ title: HSM-configuratie
 uuid: da4d7118-65a8-460d-a796-b7bf5c28b208
 translation-type: tm+mt
 source-git-commit: ac75f63f98060e1937570476362bb5d4458d1f85
+workflow-type: tm+mt
+source-wordcount: '142'
+ht-degree: 0%
 
 ---
 
 
 # HSM-configuratie {#hsm-configuration}
 
-Als u ervoor kiest om een HSM te gebruiken om uw servergeloofsbrieven op te slaan, moet u de privé sleutels en de certificaten op HSM laden en een [!DNL pkcs11.cfg] configuratiedossier creëren. Dit bestand moet zich in de map *LicenseServer.ConfigRoot* bevinden. Zie de [!DNL Adobe Access Server for Protected Streaming/configs] directory op de Adobe Access DVD voor een voorbeeld van een PKCS11-configuratiebestand. Voor informatie over het formaat van [!DNL pkcs11.cfg], zie de de leveranciersdocumentatie van Zon PKCS11.
+Als u ervoor kiest om een HSM te gebruiken om uw serverreferenties op te slaan, moet u de persoonlijke sleutels en certificaten op HSM laden en een configuratiebestand [!DNL pkcs11.cfg] maken. Dit bestand moet zich in de map *LicenseServer.ConfigRoot* bevinden. Zie de [!DNL Adobe Access Server for Protected Streaming/configs] folder op de Toegang DVD van de Adobe voor een voorbeeldPKCS11 configuratiedossier. Raadpleeg de documentatie bij de Sun PKCS11-provider voor informatie over de indeling van [!DNL pkcs11.cfg].
 
-Om te verifiëren dat uw HSM en PKCS11 configuratiedossier van de Zon behoorlijk wordt gevormd, kunt u het volgende bevel van de folder gebruiken waar het [!DNL pkcs11.cfg] dossier wordt gevestigd ( [!DNL keytool] is geïnstalleerd met Java JRE en JDK):
+Om te verifiëren dat uw HSM en PKCS11 configuratiedossier van de Zon behoorlijk wordt gevormd, kunt u het volgende bevel van de folder gebruiken waar het [!DNL pkcs11.cfg] dossier wordt gevestigd ( [!DNL keytool] wordt geïnstalleerd met Java JRE en JDK):
 
 ```
 keytool -keystore NONE -storetype PKCS11 -providerClass sun.security.pkcs11.SunPKCS11 
