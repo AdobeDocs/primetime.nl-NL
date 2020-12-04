@@ -6,6 +6,9 @@ title: Advertenties invoegen
 uuid: 25c79822-a861-427b-b6a8-24714b21aae4
 translation-type: tm+mt
 source-git-commit: adef0bbd52ba043f625f38db69366c6d873c586d
+workflow-type: tm+mt
+source-wordcount: '205'
+ht-degree: 0%
 
 ---
 
@@ -16,7 +19,7 @@ Toevoegen lost advertenties voor video-op-verzoek (VOD), voor live streaming en 
 
 Een *`ad break`* bevat een of meer advertenties die achtereenvolgens worden afgespeeld. TVSDK voegt advertenties in de hoofdinhoud in als leden van een of meer advertentieafbrekingen.
 
-## Voorroladvertenties uitschakelen {#disable-preroll-ads}
+## Voorroladvertenties {#disable-preroll-ads} uitschakelen
 
 Om pre-rol onbruikbaar te maken, verander de standaardopportuniteitsgenerators om niet de pre-rolvraag te maken. De standaard opportuniteitsgeneratoren zijn:
 
