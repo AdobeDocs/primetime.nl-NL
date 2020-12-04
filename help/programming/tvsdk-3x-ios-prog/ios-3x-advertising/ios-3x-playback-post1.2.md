@@ -6,6 +6,9 @@ title: Standaardgedrag en aangepast afspeelgedrag met advertenties
 uuid: 570f6d77-cbb9-4aa7-a935-058003f4ce87
 translation-type: tm+mt
 source-git-commit: 557f42cd9a6f356aa99e13386d9e8d65e043a6af
+workflow-type: tm+mt
+source-wordcount: '493'
+ht-degree: 0%
 
 ---
 
@@ -14,7 +17,7 @@ source-git-commit: 557f42cd9a6f356aa99e13386d9e8d65e043a6af
 
 Het gedrag van het afspelen van media wordt beïnvloed door zoeken, onderbreken en het opnemen van advertenties.
 
-Als u het standaardgedrag wilt overschrijven, gebruikt u `PTAdPolicySelector`.
+Gebruik `PTAdPolicySelector` om het standaardgedrag te overschrijven.
 
 >[!IMPORTANT]
 >
@@ -43,17 +46,17 @@ In de volgende tabel wordt beschreven hoe met TVSDK advertenties en afbrekingen 
   <tr> 
    <td colname="col1"> Uw toepassing zoekt naar voorwaarts over en onderverdelingen in de hoofdinhoud. </td> 
    <td colname="col2"> Hiermee wordt het laatste niet-gecontroleerde ad-einde afgespeeld dat is overgeslagen en wordt het afspelen hervat op de gewenste zoekpositie wanneer het afspelen van het einde of de eindemarkeringen is voltooid. </td> 
-   <td colname="col3">Selecteer met <span class="codeph"> selectAdBreaksToPlay welk overgeslagen einde moet worden afgespeeld</span>. </td> 
+   <td colname="col3">Selecteer met <span class="codeph"> selectAdBreaksToPlay</span> welk overgeslagen einde moet worden afgespeeld. </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Uw toepassing zoekt achterwaarts over een of meerdere pagina's in de hoofdinhoud. </td> 
    <td colname="col2"> Hiermee gaat u naar de gewenste zoekpositie zonder dat er een advertentie wordt afgespeeld. </td> 
-   <td colname="col3">Selecteer met <span class="codeph"> selectAdBreaksToPlay welk overgeslagen einde moet worden afgespeeld</span>.                      </td> 
+   <td colname="col3">Selecteer met <span class="codeph"> selectAdBreaksToPlay</span> welk overgeslagen einde moet worden afgespeeld.                      </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Uw toepassing zoekt verder in een advertentie-einde. </td> 
    <td colname="col2"> Hiermee wordt afgespeeld vanaf het begin van de advertentie waarin de zoekopdracht is beëindigd. </td> 
-   <td colname="col3">Geef een ander advertentiebeleid op voor het advertentiespoor en voor de specifieke advertentie waar de zoekopdracht is beëindigd met <span class="codeph"> selectPolicyForSeekIntoAd</span>. </td> 
+   <td colname="col3">Geef een ander advertentiebeleid op voor het advertentieeinde en voor de specifieke advertentie waar de zoekopdracht is beëindigd met <span class="codeph"> selectPolicyForSeekIntoAd</span>. </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Uw toepassing zoekt terug naar een advertentie-einde. </td> 
@@ -63,7 +66,7 @@ In de volgende tabel wordt beschreven hoe met TVSDK advertenties en afbrekingen 
   <tr> 
    <td colname="col1"> Uw toepassing zoekt voorwaarts of achterwaarts over gecontroleerde advertentie(s) naar de hoofdinhoud. </td> 
    <td colname="col2"> Als de laatste overgeslagen advertentie-onderbreking reeds is gecontroleerd, slaat aan gebruiker-geselecteerde vraagpositie over. </td> 
-   <td colname="col3">Selecteer met <span class="codeph"> AdBreaksToPlay</span> welke overgeslagen einden moeten worden afgespeeld en bepaal welke einden al zijn gecontroleerd met <span class="codeph"> PTAdBreak.isWatched</span>. <p> <p>Belangrijk:  Standaard markeert TVSDK een advertentie-einde zoals onmiddellijk na het invoeren van de eerste advertentie in het ad-einde wordt gecontroleerd. </p> </p> </td> 
+   <td colname="col3">Selecteer welke overgeslagen onderbrekingen om te spelen gebruikend <span class="codeph"> selectAdBreaksToPlay</span> en bepaal welke onderbrekingen reeds zijn gecontroleerd door <span class="codeph"> PTAdBreak.isWatched</span> te gebruiken. <p> <p>Belangrijk:  Standaard markeert TVSDK een advertentie-einde zoals onmiddellijk na het invoeren van de eerste advertentie in het ad-einde wordt gecontroleerd. </p> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Uw toepassing zoekt voorwaarts of achteruit over een of meer advertenties en stapt af in een gecontroleerd advertentieeinde. </td> 
