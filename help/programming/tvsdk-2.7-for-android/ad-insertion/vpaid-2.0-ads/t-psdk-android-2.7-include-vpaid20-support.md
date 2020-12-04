@@ -6,11 +6,14 @@ title: VPAID 2.0-integratie implementeren
 uuid: fa5b9cdd-e684-4656-91b7-50781dc59e23
 translation-type: tm+mt
 source-git-commit: 25f97c8d296f71deddc8f9d12b97007ddf73f603
+workflow-type: tm+mt
+source-wordcount: '184'
+ht-degree: 2%
 
 ---
 
 
-# VPAID 2.0-integratie implementeren {#implement-vpaid-integration}
+# Implementeer VPAID 2.0-integratie {#implement-vpaid-integration}
 
 Als u ondersteuning voor VPAID 2.0 wilt toevoegen, voegt u een aangepaste advertentieweergave en de juiste listeners toe.
 
@@ -37,7 +40,7 @@ U voegt als volgt VPAID 2.0-ondersteuning toe:
 
    >[!IMPORTANT]
    >
-   >In een VPAID 2.0-workflow is het voor aangepaste en weergaven erg belangrijk om uw `CustomAdView` instantie te behouden bij `AdBreak` het starten (gebeurtenis `AD_BREAK_START`) en `AdBreak` voltooien (gebeurtenis `AD_BREAK_COMPLETE`), vanaf het moment dat u de aangepaste advertentie maakt tot aan het moment dat u deze verwijdert. Maak dus niet elke keer dat een advertentie-einde begint, een aangepaste advertentie-weergave en verwijder deze op elk advertentie-einde voltooid.
+   >In een VPAID 2.0-workflow is het voor aangepaste en weergaven erg belangrijk om uw `CustomAdView`-instantie te behouden over `AdBreak` start (gebeurtenis `AD_BREAK_START`) en `AdBreak` voltooit (gebeurtenis `AD_BREAK_COMPLETE`), vanaf het moment dat u de aangepaste en weergave maakt tot aan het moment dat u de aangepaste en weergavebewerking verwijdert. Maak dus niet elke keer dat een advertentie-einde begint, een aangepaste advertentie-weergave en verwijder deze op elk advertentie-einde voltooid.
    >
    >
    >Bovendien moet u alleen een aangepaste advertentieweergave maken als de speler de status PREPARED heeft,
@@ -54,7 +57,7 @@ U voegt als volgt VPAID 2.0-ondersteuning toe:
    >} 
    >```
    >
-   >Voordat u de aangepaste advertentieweergave kunt verwijderen, moet u deze eerst uit het deelvenster verwijderen `FrameLayout`. Bijvoorbeeld:
+   >Tot slot moet u het verwijderen uit `FrameLayout` alvorens u uw douane ad mening verwijdert. Bijvoorbeeld:
    >
    >
    ```
