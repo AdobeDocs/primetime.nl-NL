@@ -6,15 +6,18 @@ title: Specifieke beveiligingsinformatie van de leverancier
 uuid: 331baa42-5e19-40a5-bc74-0b1a2cb9370e
 translation-type: tm+mt
 source-git-commit: 29bc8323460d9be0fce66cbea7c6fce46df20d61
+workflow-type: tm+mt
+source-wordcount: '387'
+ht-degree: 0%
 
 ---
 
 
-# Specifieke beveiligingsinformatie van de leverancier{#vendor-specific-security-information}
+# Specifieke beveiligingsinformatie van leverancier{#vendor-specific-security-information}
 
 Besturingssystemen en toepassingsservers worden opgenomen in uw Adobe Primetime DRM-oplossing.
 
-Zie De Adobe Primetime DRM Key Server gebruiken voor informatie over leveranciersspecifieke beveiligingsgegevens voor uw besturingssysteem en toepassingsserver.
+Zie Adobe Primetime DRM Key Server gebruiken voor informatie over leveranciersspecifieke beveiliging voor uw besturingssysteem en toepassingsserver.
 
 ## Beveiligingsgegevens besturingssysteem {#section_53CAD802FCA54C4D8CE0C4E1B3045E52}
 
@@ -27,7 +30,7 @@ Hieronder volgen enkele maatregelen:
 * Het verwijderen van onnodige diensten en toepassingen
 * Back-ups maken van bestanden
 
-Hier volgt enkele informatie over de besturingssystemen die worden ondersteund door Adobe Primetime DRM:
+Hier volgt een aantal informatie over de besturingssystemen die door Adobe Primetime DRM worden ondersteund:
 
 <table frame="all" colsep="1" rowsep="1" class="+ topic/table adobe-d/table " id="table_ugl_kjz_n4"> 
  <thead class="- topic/thead "> 
