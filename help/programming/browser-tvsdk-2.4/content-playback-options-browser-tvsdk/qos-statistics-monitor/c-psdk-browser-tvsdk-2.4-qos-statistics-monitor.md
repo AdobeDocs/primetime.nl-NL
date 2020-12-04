@@ -6,6 +6,9 @@ title: Kwaliteit van de dienststatistieken
 uuid: e4bb2617-d8a7-4da7-b669-d6ffab2864bb
 translation-type: tm+mt
 source-git-commit: 592245f5a7186d18dabbb5a98a468cbed7354aed
+workflow-type: tm+mt
+source-wordcount: '170'
+ht-degree: 1%
 
 ---
 
@@ -14,14 +17,14 @@ source-git-commit: 592245f5a7186d18dabbb5a98a468cbed7354aed
 
 De kwaliteit van de dienst (QoS) biedt een gedetailleerde mening in hoe de videomotor presteert. Browser TVSDK verstrekt gedetailleerde statistieken over playback, het als buffer optreden, en apparaten.
 
-## De playback van QOS, het bufferen, en apparatenstatistieken lezen {#read-qos-playback-buffering-and-device-statistics}
+## De playback van QOS, het bufferen, en apparatenstatistieken {#read-qos-playback-buffering-and-device-statistics} lezen
 
 U kunt playback, het als buffer optreden voor, en apparatenstatistieken van de klasse lezen QOSProvider.
 
-De `QOSProvider` klasse biedt diverse statistieken, waaronder informatie over buffering, bitsnelheden, framesnelheden, tijdgegevens enzovoort.
+De klasse `QOSProvider` verstrekt diverse statistieken, met inbegrip van informatie over het als buffer optreden voor, beetjetarieven, kadertarieven, tijdgegevens, etc.
 
 1. Instantiëren van een mediaspeler.
-1. Maak een `QOSProvider` object en koppel dit aan de mediaspeler.
+1. Maak een `QOSProvider`-object en koppel dit aan de mediaspeler.
 
    ```js
    // Create Media Player.qosProvider =  
@@ -31,7 +34,7 @@ De `QOSProvider` klasse biedt diverse statistieken, waaronder informatie over bu
 
 1. (Optioneel) Lees de afspeelstatistieken.
 
-   Één oplossing om playbackstatistieken te lezen is een tijdopnemer te hebben, die periodiek de nieuwe waarden QoS van `QOSProvider`. haalt Bijvoorbeeld:
+   Één oplossing om playbackstatistieken te lezen moet een tijdopnemer hebben, die periodiek de nieuwe waarden QoS van `QOSProvider` haalt. Bijvoorbeeld:
 
    ```js
    var qosTimer = (function () { 
