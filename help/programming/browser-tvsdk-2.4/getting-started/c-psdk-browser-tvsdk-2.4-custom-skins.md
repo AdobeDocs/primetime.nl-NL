@@ -26,25 +26,25 @@ U kunt de volgende typen wijzigingen aanbrengen:
 
 * Voorgrondkleur van knoppen en tekst
 
-   Alle besturingselementen met een voorgrond gebruiken de `vid-skin-fgcolor` klasse. Als u de voorgrond van alle besturingselementen wilt wijzigen, doorloopt u alle elementen met de `vid-skin-fgcolor` klasse en geeft u de gewenste kleur op.
+   Alle besturingselementen met een voorgrond gebruiken de klasse `vid-skin-fgcolor`. Als u de voorgrond van alle besturingselementen wilt wijzigen, doorloopt u alle elementen met de klasse `vid-skin-fgcolor` en geeft u de gewenste kleur op.
 * Achtergrondkleur van knoppen en tekst
 
-   Alle besturingselementen met een voorgrond gebruiken de `vid-skin-bgcolor` klasse. Als u de voorgrond van alle besturingselementen wilt wijzigen, doorloopt u alle elementen met de `vid-skin-bgcolor` klasse en geeft u de gewenste kleur op.
+   Alle controles die een voorgrond hebben gebruiken de `vid-skin-bgcolor` klasse. Als u de voorgrond van alle besturingselementen wilt wijzigen, doorloopt u alle elementen met de klasse `vid-skin-bgcolor` en geeft u de gewenste kleur op.
 * Vorm van de afspeelkop
 
-   De afspeelkop kan vierkant of rond zijn. Als u de afspeelkop wilt wijzigen, voegt u `square` een klasse toe aan het `round` `playhead` element.
+   De afspeelkop kan vierkant of rond zijn. Als u de afspeelkop wilt wijzigen, voegt u de klasse `square` of `round` toe aan het element `playhead`.
 * Stijl van de bufferspinners
 
    De referentiespeler biedt de volgende stijlen van spinners die kunnen worden weergegeven als inhoud voor buffers van de speler:
 
-   * Bedekking-tekst ( `overlay-text`)
-   * Rechthoekig draaien ( `spinner`)
+   * Overlay-tekst ( `overlay-text`)
+   * Rechthoekige spinner ( `spinner`)
    * Signaal ( `signal`)
    * Verticale balken ( `vertical`)
 
       >[!TIP]
       >
-      >Als u een van de bufferspinners wilt gebruiken, moet u de klasse in het buffering-overlay-element toevoegen. Voeg bijvoorbeeld de volgende regels in het `overlay-text`bestand toe om te gebruiken `BufferOverlay.js` :
+      >Als u een van de bufferspinners wilt gebruiken, moet u de klasse in het buffering-overlay-element toevoegen. Als u bijvoorbeeld `overlay-text` wilt gebruiken, voegt u de volgende regels toe aan het bestand `BufferOverlay.js`:
       >
       >
       ```js
