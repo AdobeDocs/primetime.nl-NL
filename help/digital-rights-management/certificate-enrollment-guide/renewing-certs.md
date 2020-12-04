@@ -4,13 +4,16 @@ title: Certificaten vernieuwen
 uuid: 12a560b0-966b-424e-bfe5-22e9c10d8667
 translation-type: tm+mt
 source-git-commit: b4b50471ab0ba98329862322a61bf73aa9e471d5
+workflow-type: tm+mt
+source-wordcount: '295'
+ht-degree: 0%
 
 ---
 
 
 # Certificaten vernieuwen{#renew-certificates}
 
-Houd rekening met de volgende beperkingen voor certificaatvernieuwing die zijn gebaseerd op uw configuratie van Adobe Primetime DRM SDK:
+Houd rekening met de volgende beperkingen voor certificaatvernieuwing die zijn gebaseerd op uw Adobe Primetime DRM SDK-configuratie:
 
 * Primetime DRM Production SDK
 
@@ -24,9 +27,9 @@ Houd rekening met de volgende beperkingen voor certificaatvernieuwing die zijn g
 
 ## Nieuwe certificaten implementeren en oude certificaten gebruiken voor bestaande inhoud {#section_345C92D1C9794B0BBB9A9B0702EC95FF}
 
-In Primetime DRM kunt u toestaan dat een licentieserver een licentie geeft voor inhoud die is verpakt met vorige (of zelfs verlopen) pakketcertificaten. Als u uw server wilt configureren voor het accepteren van licentieaanvragen van eerder verpakte inhoud, geeft u uw oude certificaat op aan uw server en werkt u het configuratiebestand van uw server bij, zodat de server weet waar de oude certificaten moeten worden gevonden. Zie Certificaatupdates *afhandelen wanneer door Adobe uitgegeven certificaten verlopen* in de Adobe Primetime DRM SDK *gebruiken voor het beschermen van inhoud*.
+In Primetime DRM kunt u toestaan dat een licentieserver een licentie geeft voor inhoud die is verpakt met vorige (of zelfs verlopen) pakketcertificaten. Als u uw server wilt configureren voor het accepteren van licentieaanvragen van eerder verpakte inhoud, geeft u uw oude certificaat op aan uw server en werkt u het configuratiebestand van uw server bij, zodat de server weet waar de oude certificaten moeten worden gevonden. Zie *Certificaatupdates afhandelen wanneer door Adobe uitgegeven certificaten verlopen* in *De Adobe Primetime DRM SDK gebruiken voor het beschermen van inhoud* voor meer informatie.
 
-Als uw servertoepassing is gebaseerd op de Primetime DRM-naslagimplementatie, hoeft u uw serverprogramma niet bij te werken. In het `flashaccess-refimpl.properties` dossier, zijn er gebieden waarin u extra certificaten van de Server van het Vervoer en van de Vergunning kunt specificeren. Als u slechts één certificaat hebt, hoeft u deze eigenschappen niet in te vullen. Als u certificaten hebt verlopen en deze certificaten wilt gebruiken wanneer u licentiereacties uitgeeft, moet u deze certificaten aan het configuratiebestand verstrekken en de server opnieuw starten.
+Als uw servertoepassing is gebaseerd op de Primetime DRM-naslagimplementatie, hoeft u uw serverprogramma niet bij te werken. In het `flashaccess-refimpl.properties` dossier, zijn er gebieden waarin u extra Certificaten van de Server van het Vervoer en van de Vergunning kunt specificeren. Als u slechts één certificaat hebt, hoeft u deze eigenschappen niet in te vullen. Als u certificaten hebt verlopen en deze certificaten wilt gebruiken wanneer u licentiereacties uitgeeft, moet u deze certificaten aan het configuratiebestand verstrekken en de server opnieuw starten.
 
 Gebruik de volgende eigenschappen om oude certificaten op te geven:
 
