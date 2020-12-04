@@ -6,28 +6,31 @@ title: Aangepast afspelen instellen
 uuid: 479ca1b0-6b3f-42fa-85e1-31d707da8730
 translation-type: tm+mt
 source-git-commit: a21a5fcc819a7bec58ad36e118d04f462ec3fd92
+workflow-type: tm+mt
+source-wordcount: '180'
+ht-degree: 0%
 
 ---
 
 
-# Aangepast afspelen instellen{#set-up-customized-playback}
+# Aangepaste weergave instellen{#set-up-customized-playback}
 
 U kunt het gedrag van advertenties aanpassen of overschrijven.
 
 Registreer de beleidsinstantie voor advertenties met voordat u gedrag voor advertenties kunt aanpassen of overschrijven.
 Voer een van de volgende handelingen uit om het gedrag van advertenties aan te passen:
 
-* Voer de `AdPolicySelector` interface en al zijn methodes uit.
+* Implementeer de interface `AdPolicySelector` en alle bijbehorende methoden.
 
-   Deze optie wordt aanbevolen als u **alle** standaardgedragingen wilt negeren.
+   Deze optie wordt aanbevolen als u **all** de standaard en het gedrag moet negeren.
 
-* Breid de `DefaultAdPolicySelector` klasse uit en verstrek implementaties voor slechts die gedrag dat aanpassing vereist.
+* Breid de `DefaultAdPolicySelector` klasse uit en verstrekt implementaties voor slechts die gedrag dat aanpassing vereist.
 
-   Deze optie wordt aanbevolen als u slechts **enkele** standaardgedragingen wilt overschrijven.
+   Deze optie wordt geadviseerd als u slechts **sommige** van het standaardgedrag moet met voeten treden.
 
 Voer voor beide opties de volgende taken uit:
 
-1. Implementeer uw eigen aangepaste advertentiebeleidskiezer.
+1. Implementeer uw eigen aangepaste advertentie-beleidskiezer.
 
    ```
    public class CustomAdPolicySelector implements AdPolicySelector { 
@@ -63,4 +66,4 @@ Voer voor beide opties de volgende taken uit:
 
    >[!TIP]
    >
-   >Als de fabriek van de douaneinhoud voor een specifieke stroom door de `MediaPlayerItemConfig` klasse werd geregistreerd, zal het worden ontruimd wanneer de `MediaPlayer` instantie wordt toegewezen. Uw toepassing moet deze registreren telkens wanneer een nieuwe afspeelsessie wordt gemaakt.
+   >Als de fabriek van de douaneinhoud voor een specifieke stroom door de `MediaPlayerItemConfig` klasse werd geregistreerd, zal het worden ontruimd wanneer de `MediaPlayer` instantie wordt deassigned. Uw toepassing moet deze registreren telkens wanneer een nieuwe afspeelsessie wordt gemaakt.
