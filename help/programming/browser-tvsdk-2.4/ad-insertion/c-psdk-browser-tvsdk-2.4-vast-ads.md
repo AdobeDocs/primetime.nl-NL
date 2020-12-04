@@ -13,15 +13,15 @@ ht-degree: 0%
 ---
 
 
-# VAST-advertenties {#vast-ads}
+# VAST advertenties {#vast-ads}
 
 Wanneer Browser TVSDK om een advertentie vraagt die zich niet op uw primaire advertentieserver bevindt, moet de speler de advertentie aanvragen bij de secundaire server. De video Ad Serving Malplaatje (VAST) plaatst de norm van mededeling tussen advertentieservers en videospelers en is de reactie die door de secundaire advertentieserver wordt verzonden wanneer de advertentie wordt gevraagd.
 
-Voor meer informatie over VAST, zie [Digitale Video Ad Serving Template (VAST) 3.0](https://www.iab.com/wp-content/uploads/2015/06/VASTv3_0.pdf).
+Zie [Digital Video Ad Serving Template (VAST) 3.0](https://www.iab.com/wp-content/uploads/2015/06/VASTv3_0.pdf) voor meer informatie over VAST.
 
 Browser TVSDK steunt de volgende VAST en elementen:
 
-## Wrapper- en inlineadvertenties {#section_11B8A1A8F52F4F77981C6AAC02185087}
+## Wrapper- en inline-advertenties {#section_11B8A1A8F52F4F77981C6AAC02185087}
 
 De volgende elementen worden ondersteund:
 
@@ -41,13 +41,13 @@ De volgende elementen worden ondersteund:
 
 ## Creatieve {#section_0121F948CB074E49A8132D202786CAA4}
 
-Dit element is een bestand dat deel uitmaakt van een VAST-advertentie en een `creative` element bevat dat een lineaire advertentie, een niet-lineaire advertentie of een bijbehorende advertentie kan ondersteunen. In het `creative` element worden de elementen `id`, `sequence`en `adId` ondersteund.
+Dit element is een bestand dat een onderdeel is van een VAST-advertentie en een `creative`-element bevat dat een lineaire advertentie, een niet-lineaire advertentie of een bijbehorende advertentie kan ondersteunen. In het `creative` element, worden `id`, `sequence`, en `adId` elementen gesteund.
 
 Hier volgt meer informatie over de advertentietypen:
 
-* **Lineaire advertenties** De volgende elementen worden ondersteund:
+* **Lineaire** advertentiesDe volgende elementen worden ondersteund:
 
-   * `TrackingEvent`, die het `Tracking` element bevat.
+   * `TrackingEvent`, die het  `Tracking` element bevat.
       * `Duration`
       * `AdParameters`
       * `VideoClicks`, met inbegrip van:
@@ -62,15 +62,15 @@ Hier volgt meer informatie over de advertentietypen:
 
          >[!TIP]
          >
-         >In dit element worden de kenmerken `id`, `bitrate`, `delivery`, `width`, `height`, `scalable`, `maintainAspectRatio`, `apiFramework`, en `type` ondersteund.
+         >In dit element worden de kenmerken `id`, `bitrate`, `delivery`, `width`, `height`, `scalable`, `maintainAspectRatio`, `apiFramework` en `type` ondersteund.
 
-* **Niet-lineaire advertenties** De volgende elementen worden ondersteund:
+* **Niet-lineaire** advertentiesDe volgende elementen worden ondersteund:
 
    * `Non-linear`
 
       >[!TIP]
       >
-      >In dit element worden de kenmerken `id`, `width`, `height`, `apiFramework`, `expandedWidth`, `expandedHeight`, `scalable`, `maintainAspectRatio`, en `minSuggestedDuration` ondersteund.
+      >In dit element worden de kenmerken `id`, `width`, `height`, `apiFramework`, `expandedWidth`, `expandedHeight`, `scalable`, `maintainAspectRatio` en `minSuggestedDuration` ondersteund.
 
       * `StaticResource`
       * `IFrameResource`
@@ -78,13 +78,13 @@ Hier volgt meer informatie over de advertentietypen:
       * `NonLinearClickThrough`
       * `AdParameters`
 
-* **Extra advertenties** De volgende elementen worden ondersteund:
+* **Companion** adsDe volgende elementen worden ondersteund:
 
    * `Companion`
 
       >[!TIP]
       >
-      >In dit element worden de `id`, `width`, `height`, `apiFramework`, `expandedWidth`, en `expandedHeight` attributen gesteund.
+      >In dit element worden de kenmerken `id`, `width`, `height`, `apiFramework`, `expandedWidth` en `expandedHeight` ondersteund.
 
       * `StaticResource`
       * `IFrameResource`
