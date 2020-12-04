@@ -13,9 +13,9 @@ ht-degree: 0%
 ---
 
 
-# Time-out advertentie {#ad-timeout}
+# Time-out toevoegen {#ad-timeout}
 
-## Vereisten voor AV-stichting {#av-foundation-requirements}
+## AV Foundation-vereisten {#av-foundation-requirements}
 
 In het geval van VOD-inhoud moet het naaien van de afspeellijst, waarbij het laden van het hoofdinhoudsmanifest en het laden van de resolutie en het ad-manifest worden doorlopen, binnen 35 seconden worden voltooid.
 
@@ -40,7 +40,7 @@ PTAuditudeMetadata *adMetadata = [[[PTAuditudeMetadata alloc] init]autorelease];
 adMetadata.adResolutionTimeout = 15 seconds
 ```
 
-Hierna volgt u de rubriek: [Metagegevens](../..//tvsdk-3x-ios-prog/ios-3x-advertising/ios-3x-primetime-ad-serving-metadata/ios-3x-primetime-ad-serving-metadata.md)van primetime en server.
+Hierna volgt u de rubriek: [Metagegevens van primetime en server](../..//tvsdk-3x-ios-prog/ios-3x-advertising/ios-3x-primetime-ad-serving-metadata/ios-3x-primetime-ad-serving-metadata.md).
 
 **API&#39;s die relevant zijn voor AdManifest Timeout**
 
@@ -62,4 +62,4 @@ PTAuditudeMetadata *adMetadata = [[[PTAuditudeMetadata alloc] init]autorelease];
 adMetadata.adManifestTimeout = 5 seconds
 ```
 
-Hierna volgt u de rubriek: [Metagegevens](../..//tvsdk-3x-ios-prog/ios-3x-advertising/ios-3x-primetime-ad-serving-metadata/ios-3x-primetime-ad-serving-metadata.md)van primetime en server.
+Hierna volgt u de rubriek: [Metagegevens van primetime en server](../..//tvsdk-3x-ios-prog/ios-3x-advertising/ios-3x-primetime-ad-serving-metadata/ios-3x-primetime-ad-serving-metadata.md).
