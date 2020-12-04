@@ -6,6 +6,9 @@ title: Een videoweergave verbergen
 uuid: 7cc02bf4-41ee-4af0-98ba-df070b50b88d
 translation-type: tm+mt
 source-git-commit: 040655d8ba5f91c98ed0584c08db226ffe1e0f4e
+workflow-type: tm+mt
+source-wordcount: '185'
+ht-degree: 1%
 
 ---
 
@@ -15,10 +18,10 @@ source-git-commit: 040655d8ba5f91c98ed0584c08db226ffe1e0f4e
 Nadat een MediaPlayer-weergave is gebruikt om video af te spelen, kunt u deze verbergen en opnieuw weergeven met een TVSDK-methode of handmatig.
 
 U moet een video pauzeren voordat u deze wist of van het scherm verplaatst.
-* Optie 1: Wis het videoframe met `MediaPlayer.clearVideo`&#x200B; en vervang het frame later.
+* Optie 1: Wis het videoframe met `MediaPlayer.clearVideo` &#x200B; en vervang het kader later.
    * Pauzeer de video die u wilt verbergen.
-   * Verwijder het weergegeven videoframe door het aan te roepen `MediaPlayer.clearVideo`.
-   * Om het terug te stellen `MediaPlayer` zodat het opnieuw kan worden gespeeld, roep `replaceCurrentResource` of `replaceCurrentItem`.
+   * Verwijder het weergegeven videoframe door `MediaPlayer.clearVideo` aan te roepen.
+   * Om `MediaPlayer` terug te stellen zodat het opnieuw kan worden gespeeld, roep `replaceCurrentResource` of `replaceCurrentItem`.
 * Optie 2: Verplaats de `MediaPlayer` weergave van het scherm en verplaats deze later terug zonder deze te vervangen.
    * Pauzeer de video die u wilt verbergen.
    * De weergave uit het werkgebied verplaatsen. Bijvoorbeeld:
