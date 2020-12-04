@@ -19,28 +19,28 @@ U kunt ervoor kiezen om standaard en gedrag te gebruiken.
 
 1. Als u standaardgedrag wilt gebruiken, voert u een van de volgende taken uit:
 
-   * Als u uw eigen `AdvertisingFactory` klasse implementeert, retourneert u null voor `createAdPolicySelector`.
+   * Als u uw eigen `AdvertisingFactory` klasse uitvoert, terugkeer ongeldig voor `createAdPolicySelector`.
 
-   * Als u geen aangepaste implementatie voor de `AdvertisingFactory` klasse hebt, gebruikt TVSDK een standaard- en beleidskiezer.
+   * Als u geen douaneimplementatie voor de `AdvertisingFactory` klasse hebt, gebruikt TVSDK een gebrek en beleidsselecteur.
 
-## Aangepast afspelen instellen {#set-up-customized-playback}
+## Aangepaste weergave instellen {#set-up-customized-playback}
 
 U kunt het gedrag van advertenties aanpassen of overschrijven.
 
 Registreer de beleidsinstantie voor advertenties met voordat u gedrag voor advertenties kunt aanpassen of overschrijven.
 Voer een van de volgende handelingen uit om het gedrag van advertenties aan te passen:
 
-* Voer de `AdPolicySelector` interface en al zijn methodes uit.
+* Implementeer de interface `AdPolicySelector` en alle bijbehorende methoden.
 
-   Deze optie wordt aanbevolen als u **alle** standaardgedragingen wilt negeren.
+   Deze optie wordt aanbevolen als u **all** de standaard en het gedrag moet negeren.
 
-* Breid de `DefaultAdPolicySelector` klasse uit en verstrek implementaties voor slechts die gedrag dat aanpassing vereist.
+* Breid de `DefaultAdPolicySelector` klasse uit en verstrekt implementaties voor slechts die gedrag dat aanpassing vereist.
 
-   Deze optie wordt aanbevolen als u slechts **enkele** standaardgedragingen wilt overschrijven.
+   Deze optie wordt geadviseerd als u slechts **sommige** van het standaardgedrag moet met voeten treden.
 
 Zo past u het gedrag van advertenties aan:
 
-1. Voer de `AdPolicySelector` interface en al zijn methodes uit.
+1. Implementeer de interface `AdPolicySelector` en alle bijbehorende methoden.
 1. Wijs het beleidsexemplaar toe dat door TVSDK via de reclamefabriek moet worden gebruikt.
 
    >[!NOTE]
