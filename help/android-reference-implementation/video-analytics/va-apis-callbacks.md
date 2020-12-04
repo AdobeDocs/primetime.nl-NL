@@ -6,11 +6,14 @@ title: Gerelateerde API-documentatie
 uuid: 2dbb01c7-f8e0-47c7-baaa-84b8d54c03a6
 translation-type: tm+mt
 source-git-commit: 31b6cad26bcc393d731080a70eff1c59551f1c8e
+workflow-type: tm+mt
+source-wordcount: '102'
+ht-degree: 0%
 
 ---
 
 
-# Gerelateerde API-documentatie {#related-api-documentation}
+# Verwante API-documentatie {#related-api-documentation}
 
 Video Analytics Manager stelt deze klassen beschikbaar om video het volgen in uw speler uit te voeren.
 
