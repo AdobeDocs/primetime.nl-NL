@@ -6,6 +6,9 @@ title: Een besturingsbalk maken die is verbeterd voor DVR
 uuid: 08f943e8-90da-4860-92dd-dd289fd68cba
 translation-type: tm+mt
 source-git-commit: 040655d8ba5f91c98ed0584c08db226ffe1e0f4e
+workflow-type: tm+mt
+source-wordcount: '357'
+ht-degree: 0%
 
 ---
 
@@ -34,7 +37,7 @@ U kunt een besturingsbalk implementeren met DVR-ondersteuning voor VOD en live s
 
       Voor een besturingsbalk:
    1. Voeg een bedekking aan de controlebar toe die de playbackwaaier vertegenwoordigt.
-   1. Wanneer de gebruiker begint te zoeken, controleer of de gewenste zoekpositie zich binnen het doorzoekbare bereik bevindt met behulp van de `MediaPlayer.seekableRange` eigenschap.
+   1. Wanneer de gebruiker begint te zoeken, controleer of de gewenste spoelpositie binnen de doorzoekbare waaier gebruikend het `MediaPlayer.seekableRange` bezit is.
 
       Bijvoorbeeld:
 
@@ -49,7 +52,7 @@ U kunt een besturingsbalk implementeren met DVR-ondersteuning voor VOD en live s
       }
       ```
 
-      U kunt er ook voor kiezen om met de `MediaPlayer.LIVE_POINT` constante naar het actieve punt van de client te zoeken.
+      U kunt er ook voor kiezen om met de constante `MediaPlayer.LIVE_POINT` naar het actieve punt van de client te zoeken.
 
       ```
       private function onSeekToLiveClick(event:MouseEvent):void { 
