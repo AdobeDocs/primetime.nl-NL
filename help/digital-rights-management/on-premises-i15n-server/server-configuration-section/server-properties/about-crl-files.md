@@ -4,6 +4,9 @@ title: Over CRL-bestanden
 uuid: 672c3ca0-5c5d-4ec7-83b1-f0f8e34c8d09
 translation-type: tm+mt
 source-git-commit: 29bc8323460d9be0fce66cbea7c6fce46df20d61
+workflow-type: tm+mt
+source-wordcount: '305'
+ht-degree: 0%
 
 ---
 
@@ -44,10 +47,10 @@ Hieronder vindt u extern gehoste CRL&#39;s die alleen door de licentieservers wo
 * Bestand: [!DNL http___individualization-crl.primetime.adobe.com_FlashAccessIndividualizationCA.crl]
 * Geldigheid: Goed voor ongeveer 3 maanden na de aanmaak
 
-* URL: [!DNL <ht<span></span>tps://individualization-crl.s3-website-us-east-1.amazonaws.com/FlashAccessIndividualizationCA.crl]>
+* URL: [!DNL <ht<span></span>tps://individualization-crl.s3-website-us-east-1.amazonaws.com/FlashAccessIndividualizationCA.crl]
 * Bestand: [!DNL http___individualization-crl.s3-website-us-east-1.amazonaws.com_FlashAccessIndividualizationCA.crl]
 * Geldigheid: Goed voor ongeveer 3 maanden na de aanmaak
 
-Naast de bovengenoemde CRLs, moet u een extra CRL creëren en handhaven. Dit is de Individualisatie CA CRL, zoals die in de [Create Individualization CA CRL](../../../on-premises-i15n-server/server-configuration-section/server-properties/create-i15n-ca-crl.md) sectie van dit document wordt gespecificeerd.
+Naast de bovengenoemde CRLs, moet u een extra CRL creëren en handhaven. Dit is de Individualisatie CA CRL, zoals gespecificeerd in [Create Individualization CA CRL](../../../on-premises-i15n-server/server-configuration-section/server-properties/create-i15n-ca-crl.md) sectie van dit document.
 
 CRL&#39;s moeten volgens de planning 45 dagen voor ze verlopen. Hierdoor hebt u voldoende tijd om nieuw gegenereerde CRL&#39;s van internet te verkrijgen en te installeren. U moet ervoor zorgen dat CRL-bestanden worden bijgewerkt voordat ze verlopen.
