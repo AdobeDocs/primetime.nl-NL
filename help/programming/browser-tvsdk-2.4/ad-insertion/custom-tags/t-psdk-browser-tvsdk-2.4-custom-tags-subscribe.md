@@ -6,6 +6,9 @@ title: Abonneren op aangepaste advertentietags
 uuid: 208f61f4-dc33-4363-aa71-878458740a8d
 translation-type: tm+mt
 source-git-commit: 040655d8ba5f91c98ed0584c08db226ffe1e0f4e
+workflow-type: tm+mt
+source-wordcount: '205'
+ht-degree: 0%
 
 ---
 
@@ -15,7 +18,7 @@ source-git-commit: 040655d8ba5f91c98ed0584c08db226ffe1e0f4e
 TimedMetadata-objecten worden door Browser-TVSDK voorbereid voor geabonneerde tags telkens wanneer deze objecten worden aangetroffen in het MPD-bestand (Media Presentation Description).
 
 U moet zich op de tags abonneren voordat het afspelen begint.
-Als u zich wilt abonneren op tags, stelt u een vector met de aangepaste tagnamen in op de `subscribedTags` eigenschap. Als u ook de advertentietags moet wijzigen die door de standaardopportuniteitsgenerator worden gebruikt, stelt u een vector in die de aangepaste namen van ad-tags aan de `adTags` eigenschap bevat.
+Als u zich wilt abonneren op tags, stelt u een vector met de aangepaste tagnamen in op de eigenschap `subscribedTags`. Als u ook de advertentietags moet wijzigen die door de standaardopportuniteitsgenerator worden gebruikt, stelt u een vector die de aangepaste namen van ad-tags bevat in op de eigenschap `adTags`.
 
 Abonneren op aangepaste tags:
 
@@ -35,14 +38,14 @@ Abonneren op aangepaste tags:
 
    >[!IMPORTANT]
    >
-   >Als u werkt met HLS-streams, vergeet dan niet het `#` voorvoegsel op te nemen.
+   >Als u met HLS stromen werkt, herinner me om `#` prefix te omvatten.
 
    ```js
    subscribeTags.push("urn:mpeg:dash:event:2012"); 
    subscribeTags.push("urn:com:adobe:dpi:simple:2015"); 
    ```
 
-1. Wijs de bijgewerkte vector toe aan de `mediaPlayerItemConfig.subscribeTags` eigenschap.
+1. Wijs de bijgewerkte vector aan het `mediaPlayerItemConfig.subscribeTags` bezit toe.
 
    ```js
    mediaPlayerItemConfig.subscribeTags = subscribeTags;
@@ -60,7 +63,7 @@ Abonneren op aangepaste tags:
    adTags.push("urn:com:adobe:dpi:simple:2015");
    ```
 
-1. Wijs de bijgewerkte vector toe aan de `mediaPlayerItemConfig.adTags` eigenschap.
+1. Wijs de bijgewerkte vector aan het `mediaPlayerItemConfig.adTags` bezit toe.
 
    ```js
    mediaPlayerItemConfig.adTags = adTags;
