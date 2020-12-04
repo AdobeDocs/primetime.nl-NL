@@ -6,6 +6,9 @@ title: Adds
 uuid: 9a5e8c83-18ce-41e8-9cb1-fdc9da903faf
 translation-type: tm+mt
 source-git-commit: 592245f5a7186d18dabbb5a98a468cbed7354aed
+workflow-type: tm+mt
+source-wordcount: '120'
+ht-degree: 0%
 
 ---
 
@@ -14,7 +17,7 @@ source-git-commit: 592245f5a7186d18dabbb5a98a468cbed7354aed
 
 Wanneer inhoud wordt afgespeeld, kan Browser-TVSDK tijdens het maken van het MediaResource-object advertenties weergeven en informatie over advertenties doorgeven.
 
-U kunt de `prepareToPlay` functie optioneel aanroepen nadat u deze hebt ontvangen `AdobePSDK.MediaPlayerStatus.INITIALIZED`.
+U kunt optioneel de functie `prepareToPlay` roepen nadat u `AdobePSDK.MediaPlayerStatus.INITIALIZED` ontvangt.
 
 ```js
 function onStatusChange (event) { 
@@ -68,4 +71,4 @@ var playerWrapper = ptp.videoPlayer('.videoDiv', {
 }; 
 ```
 
-Zie Metagegevens `AuditudeSettings`voor [invoegtoepassingen toevoegen voor meer informatie over de vereiste metagegevens](../../ad-insertion/ad-insertion-metadata/c-psdk-browser-tvsdk-2.4-ad-insertion-metadata.md).
+Zie [Metagegevens toevoegen](../../ad-insertion/ad-insertion-metadata/c-psdk-browser-tvsdk-2.4-ad-insertion-metadata.md) voor meer informatie over de vereiste `AuditudeSettings`.
