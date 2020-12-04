@@ -6,6 +6,9 @@ title: Afspelen van media en failover
 uuid: 197a6ee0-f1ff-40ac-bd49-eafeae6167d4
 translation-type: tm+mt
 source-git-commit: 040655d8ba5f91c98ed0584c08db226ffe1e0f4e
+workflow-type: tm+mt
+source-wordcount: '703'
+ht-degree: 0%
 
 ---
 
@@ -14,7 +17,7 @@ source-git-commit: 040655d8ba5f91c98ed0584c08db226ffe1e0f4e
 
 Voor live en video-on-demand (VOD) media begint TVSDK met afspelen door de afspeellijst te downloaden die is gekoppeld aan de bitsnelheid met de middelste resolutie en worden de mediasegmenten gedownload die door die afspeellijst zijn gedefinieerd. Deze selecteert snel de afspeellijst met hoge bitsnelheid en de bijbehorende media en gaat verder met het downloaden.
 
-## failover van afspeellijst ontbreekt {#section_E6B6A15930894F56A0A8501577B35E7F}
+## failover van afspeellijst {#section_E6B6A15930894F56A0A8501577B35E7F} ontbreekt
 
 Wanneer een volledige afspeellijst ontbreekt, bijvoorbeeld wanneer het M3U8-bestand dat in een manifestbestand op hoofdniveau is opgegeven niet wordt gedownload, probeert TVSDK het bestand te herstellen. Als deze niet kan worden hersteld, bepaalt uw toepassing de volgende stap.
 
@@ -22,7 +25,7 @@ Als de afspeellijst die is gekoppeld aan de bitsnelheid met middelste resolutie 
 
 Uw toepassing kan bepalen hoe deze situatie wordt afgehandeld. U kunt bijvoorbeeld de speleractiviteit sluiten en de gebruiker naar de catalogusactiviteit verwijzen. De gebeurtenis van belang is de `STATUS_CHANGED` gebeurtenis, en de overeenkomstige callback is de `onStatusChange` methode. Hier volgt code waarmee wordt gecontroleerd of de interne status van de speler wordt gewijzigd in ERROR:
 
-Zie het `PSDKDemo` bestand voor meer informatie. Gebeurtenislisteners zijn gekoppeld aan de MediaPlayer-instantie.
+Zie het bestand `PSDKDemo` voor meer informatie. Gebeurtenislisteners zijn gekoppeld aan de MediaPlayer-instantie.
 
 ```
 case MediaPlayerStatus.ERROR: 
@@ -48,7 +51,7 @@ _networkDownVerificationUrl = value; return psdkutils::kECSuccess; }
 
 Als setNetworkDownVerificationUrl niet wordt geplaatst, gebruikt TVSDK de MainManifest url door gebrek om te bepalen als het netwerk neer is.
 
-## Ontbrekende segment-failover {#section_ED8CF666289042D39E9914D42BDD9BA4}
+## Ontbrekende segmentfailover {#section_ED8CF666289042D39E9914D42BDD9BA4}
 
 Wanneer een segment ontbreekt, bijvoorbeeld wanneer een bepaald segment niet kan downloaden, probeert TVSDK om door een verscheidenheid van failoverpogingen terug te krijgen. Als het niet kan herstellen, geeft het een fout uit.
 
@@ -59,9 +62,9 @@ Als een segment ontbreekt op de server omdat, bijvoorbeeld, het manifestdossier 
 1. Doorloop elke beschikbare bitsnelheid in elke beschikbare variant.
 1. Sla het segment over en geef een waarschuwing weer.
 
-Wanneer TVSDK geen alternatief segment kan verkrijgen, wordt een `CONTENT_ERROR` foutmelding geactiveerd. Deze melding bevat een binnenste melding met de `DOWNLOAD_ERROR` code. Als de stream met het probleem een alternatieve audiotrack is, genereert TVSDK de `AUDIO_TRACK_ERROR` foutmelding.
+Wanneer TVSDK geen alternatief segment kan verkrijgen, leidt het tot een `CONTENT_ERROR` foutenmelding. Deze melding bevat een binnenste melding met de code `DOWNLOAD_ERROR`. Als de stream met het probleem een alternatieve audiotrack is, genereert TVSDK de foutmelding `AUDIO_TRACK_ERROR`.
 
-Als de video-engine continu geen segmenten kan ophalen, beperkt deze de doorlopende segmentoverslaan tot 5, waarna het afspelen wordt gestopt en geeft TVSDK een back-up `NATIVE_ERROR` met code 5.
+Als de video-engine continu geen segmenten kan ophalen, beperkt het continue segmentoverslaan tot 5, waarna het afspelen wordt gestopt en geeft TVSDK een `NATIVE_ERROR` met code 5 uit.
 
 >[!NOTE]
 >
