@@ -16,10 +16,10 @@ ht-degree: 0%
 # PSDK 1.4 voor Android-naslagimplementatie {#reference-implementation}
 
 + [Implementatieoverzicht Android-naslaggids](home.md)
-+ Primetime-referentieimplementatie {#reference}
++ Primetime referentie-implementatie {#reference}
    + [De Primetime-voorbeeldimplementatie gebruiken](ref-implementation/how-to-use-ref-player.md)
    + [Referentie-implementatiestructuur](ref-implementation/ref-player-structure.md)
-   + Hoe te om eigenschapmanagers te gebruiken {#feature-managers}
+   + Hoe te om eigenschapmanagers {#feature-managers} te gebruiken
       + [Hoe te om eigenschapmanagers te gebruiken](ref-implementation/using-feature-managers/how-to-use-feature-managers.md)
       + [Het creëren van eigenschapmanagers door configuratieinformatie tot MediaPlayer over te gaan..](ref-implementation/using-feature-managers/creating-feature-managers.md)
       + [Functies in- of uitschakelen met ManagerFactory](ref-implementation/using-feature-managers/turning-features-on-off.md)
@@ -28,7 +28,7 @@ ht-degree: 0%
       + [De ontwikkelomgeving instellen](set-up-dev-environment/set-up-dev-environment-overview.md)
       + [Voorwaardelijke software downloaden en configureren](set-up-dev-environment/download-prereqs-android.md)
       + [De implementatie van de Primetime-referentie samenstellen](set-up-dev-environment/install-the-ref-player-project.md)
-   + De code verkennen {#explore-code}
+   + De code {#explore-code} verkennen
       + [PlayerFragment](set-up-dev-environment/exploring-code/player-fragment.md)
       + [Functiemanagers](set-up-dev-environment/exploring-code/about-psdk-feature-managers.md)
       + [ConfigProvider](set-up-dev-environment/exploring-code/config-provider.md)
@@ -39,7 +39,7 @@ ht-degree: 0%
       + [JSON-object voor aangepaste advertentiemarkeringen](set-up-dev-environment/exploring-code/json-custom-ad-markers.md)
       + [JSON-object voor machtigingsbron-id](set-up-dev-environment/exploring-code/json-entitlement-resource-id.md)
       + [Voorbeeld JSON-feedindeling](set-up-dev-environment/exploring-code/example-json-feed-format.md)
-   + Video&#39;s afspelen {#implement-video}
+   + Afspelen van video {#implement-video} implementeren
       + [Essentiële bewerkingen bij het afspelen van video](implement-video-playback/video-playback.md)
       + [Afspelen van video inschakelen](implement-video-playback/enable-video-playback.md)
       + [DRM-inhoudsbeveiliging](implement-video-playback/content-protection.md)
@@ -50,7 +50,7 @@ ht-degree: 0%
       + [Een aangepast beginpunt voor DVR kiezen](implement-video-playback/dvr/dvr-custom-start-point.md)
       + [Een aangepaste begintijd instellen in de voorbeeldimplementatie](implement-video-playback/dvr/set-custom-start-time-dvr.md)
    + [QoS-afspeelgegevens en apparaatstatistieken weergeven](implement-video-playback/qos-statistics.md)
-   + Advertenties invoegen {#insert-ads}
+   + Advertenties {#insert-ads} invoegen
       + [Toevoegen](insert-ads/ad-insertion.md)
       + [Toevoegingstypen](insert-ads/ad-insertion-types.md)
       + [Reclame toevoegen](insert-ads/add-advertising.md)
@@ -60,13 +60,13 @@ ht-degree: 0%
       + [Laattijdige-binding audio integreren](late-binding-audio/aa-enable.md)
       + [Audiotracks selecteren](late-binding-audio/select-audio-tracks.md)
       + [Gerelateerde API-documentatie](late-binding-audio/aa-api-callbacks.md)
-   + Machtigingsstromen voor primetime-verificatie {#primetime-authentications}
+   + Primetime verificatierechten stromen {#primetime-authentications}
       + [Overzicht](paytvpass-entitlement/paytvpass-entitlement-overview.md)
       + [Overzicht van Entitlement Manager](paytvpass-entitlement/entitlement-overvivew.md)
       + [Primetime-verificatie integreren](paytvpass-entitlement/integrate-pass.md)
       + [Adobe Analytics-rapportage configureren](paytvpass-entitlement/pass-analytics-setup.md)
       + [Gerelateerde API-documentatie](paytvpass-entitlement/pass-apis-callbacks.md)
-   + Video Analytics {#video-analytics}
+   + Video-analyse {#video-analytics}
       + [Video Analytics](video-analytics/video-analytics-overview.md)
       + [Manager voor videoanalyse maken](video-analytics/create-video-analytics-manager.md)
       + [Video-analyse configureren](video-analytics/configure-video-analytics-manager.md)
