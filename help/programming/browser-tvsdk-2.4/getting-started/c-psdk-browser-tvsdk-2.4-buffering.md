@@ -6,15 +6,18 @@ title: Bufferen
 uuid: da9498ee-c736-4093-97a2-250d3ad56d49
 translation-type: tm+mt
 source-git-commit: 040655d8ba5f91c98ed0584c08db226ffe1e0f4e
+workflow-type: tm+mt
+source-wordcount: '69'
+ht-degree: 2%
 
 ---
 
 
-# Bufferen{#buffering}
+# Buffering{#buffering}
 
 U kunt visuele instellingen configureren om de gebruiker te laten weten dat de inhoud wordt gebufferd.
 
-Luister naar `AdobePSDK.PSDKEventType.BUFFERING_BEGIN` en `AdobePSDK.PSDKEventType.BUFFERING_END` gebeurtenissen. Bijvoorbeeld:
+Luister naar `AdobePSDK.PSDKEventType.BUFFERING_BEGIN`- en `AdobePSDK.PSDKEventType.BUFFERING_END`-gebeurtenissen. Bijvoorbeeld:
 
 ```js
 player.addEventListener(AdobePSDK.PSDKEventType.BUFFERING_BEGIN,  
