@@ -1,18 +1,21 @@
 ---
-description: Als u de standaardconfiguratie gebruikt, is er niets anders u moet doen om het factureren toe te laten of te vormen. Als u verschillende configuratieparameters van uw vertegenwoordiger van Adobe Enablement hebt verkregen, gebruik de klasse BillingMetricsConfiguration om deze parameters omhoog te plaatsen alvorens de media speler te initialiseren.
-seo-description: Als u de standaardconfiguratie gebruikt, is er niets anders u moet doen om het factureren toe te laten of te vormen. Als u verschillende configuratieparameters van uw vertegenwoordiger van Adobe Enablement hebt verkregen, gebruik de klasse BillingMetricsConfiguration om deze parameters omhoog te plaatsen alvorens de media speler te initialiseren.
+description: Als u de standaardconfiguratie gebruikt, is er niets anders u moet doen om het factureren toe te laten of te vormen. Als u verschillende configuratieparameters van uw Adobe Enablement vertegenwoordiger hebt verkregen, gebruik de klasse BillingMetricsConfiguration om deze parameters omhoog te plaatsen alvorens de media speler te initialiseren.
+seo-description: Als u de standaardconfiguratie gebruikt, is er niets anders u moet doen om het factureren toe te laten of te vormen. Als u verschillende configuratieparameters van uw Adobe Enablement vertegenwoordiger hebt verkregen, gebruik de klasse BillingMetricsConfiguration om deze parameters omhoog te plaatsen alvorens de media speler te initialiseren.
 seo-title: Factureringsmetriek configureren
 title: Factureringsmetriek configureren
 uuid: 04d3b53e-f08c-49d0-ba42-5375f1307d2e
 translation-type: tm+mt
 source-git-commit: 592245f5a7186d18dabbb5a98a468cbed7354aed
+workflow-type: tm+mt
+source-wordcount: '192'
+ht-degree: 0%
 
 ---
 
 
-# Factureringsmetriek configureren{#configure-billing-metrics}
+# Factureringsmetriek{#configure-billing-metrics} vormen
 
-Als u de standaardconfiguratie gebruikt, is er niets anders u moet doen om het factureren toe te laten of te vormen. Als u verschillende configuratieparameters van uw vertegenwoordiger van Adobe Enablement hebt verkregen, gebruik de klasse BillingMetricsConfiguration om deze parameters omhoog te plaatsen alvorens de media speler te initialiseren.
+Als u de standaardconfiguratie gebruikt, is er niets anders u moet doen om het factureren toe te laten of te vormen. Als u verschillende configuratieparameters van uw Adobe Enablement vertegenwoordiger hebt verkregen, gebruik de klasse BillingMetricsConfiguration om deze parameters omhoog te plaatsen alvorens de media speler te initialiseren.
 
 De meeste klanten zouden de standaardconfiguratie moeten gebruiken.
 
@@ -33,5 +36,5 @@ Factureringsmetriek vormen:
    _player.replaceCurrentResource(_resource, config);
    ```
 
-   waarbij `_player` een instantie van `AdobePSDK.MediaPlayer` en een geval van `_resource` is `AdobePSDK.MediaResource`.
+   waarbij `_player` een instantie is van `AdobePSDK.MediaPlayer` en `_resource` een instantie van `AdobePSDK.MediaResource` is.
 
