@@ -6,11 +6,14 @@ title: Actief/lineair en omzetten en invoegen
 uuid: 18c6733a-e827-4b1c-9cd5-796d57cbdb05
 translation-type: tm+mt
 source-git-commit: 040655d8ba5f91c98ed0584c08db226ffe1e0f4e
+workflow-type: tm+mt
+source-wordcount: '302'
+ht-degree: 0%
 
 ---
 
 
-# Actief/lineair en omzetten en invoegen{#live-linear-ad-resolving-and-insertion}
+# Live/lineair en opheffen en invoegen{#live-linear-ad-resolving-and-insertion}
 
 Voor live/lineaire inhoud vervangt Browser TVSDK een segment van de hoofdstreaminhoud door een ad-einde van dezelfde duur, zodat de tijdlijnduur ongewijzigd blijft.
 
@@ -20,7 +23,7 @@ De browser TVSDK voegt advertenties op de volgende manieren in:
 
 * **Pre-roll**, dat aan het begin van de inhoud is.
 
-Browser-TVSDK accepteert het ad-einde, zelfs als de duur langer of korter is dan de vervangende duur van het actiepunt. Browser-TVSDK biedt standaard ondersteuning voor het `#EXT-X-CUE` actiepunt als een geldige advertentiemarkering bij het omzetten en plaatsen van advertenties. Deze markering vereist het metagegevensveld `DURATION` in seconden en de unieke id van de actielijn. Bijvoorbeeld:
+Browser-TVSDK accepteert het ad-einde, zelfs als de duur langer of korter is dan de vervangende duur van het actiepunt. Browser-TVSDK biedt standaard ondersteuning voor het `#EXT-X-CUE`-actiepunt als een geldige advertentiemarkering bij het omzetten en plaatsen van advertenties. Deze markering vereist het metagegevensveld `DURATION` in seconden en de unieke id van de actielijn. Bijvoorbeeld:
 
 ```
 #EXT-X-CUE:DURATION=27,ID="..."
@@ -28,7 +31,7 @@ Browser-TVSDK accepteert het ad-einde, zelfs als de duur langer of korter is dan
 
 U kunt extra cues (tags) definiëren en er een abonnement op nemen.
 
-Nadat het afspelen is gestart, vernieuwt de video-engine het manifestbestand regelmatig. Browser-TVSDK verhelpt nieuwe advertenties en voegt de advertenties in wanneer een actiepunt wordt aangetroffen in de live of lineaire stream die in het manifest is gedefinieerd. Nadat advertenties zijn opgelost en ingevoegd, berekent Browser TVSDK de virtuele tijdlijn opnieuw en verzendt een `AdobePSDK.PSDKEventType.TIMELINE_UPDATED` gebeurtenis.
+Nadat het afspelen is gestart, vernieuwt de video-engine het manifestbestand regelmatig. Browser-TVSDK verhelpt nieuwe advertenties en voegt de advertenties in wanneer een actiepunt wordt aangetroffen in de live of lineaire stream die in het manifest is gedefinieerd. Nadat de advertenties zijn opgelost en ingevoegd, berekent Browser TVSDK de virtuele tijdlijn opnieuw en verzendt een gebeurtenis `AdobePSDK.PSDKEventType.TIMELINE_UPDATED`.
 
 >[!TIP]
 >
