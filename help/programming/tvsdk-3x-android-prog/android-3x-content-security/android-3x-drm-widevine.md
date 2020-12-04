@@ -1,20 +1,23 @@
 ---
-description: U kunt de functies van het DRM-systeem (Primetime Digital Rights Management) gebruiken om veilige toegang tot uw video-inhoud te bieden. U kunt ook DRM-oplossingen van derden gebruiken als alternatief voor de geïntegreerde oplossing van Adobe.
-seo-description: U kunt de functies van het DRM-systeem (Primetime Digital Rights Management) gebruiken om veilige toegang tot uw video-inhoud te bieden. U kunt ook DRM-oplossingen van derden gebruiken als alternatief voor de geïntegreerde oplossing van Adobe.
+description: U kunt de functies van het DRM-systeem (Primetime Digital Rights Management) gebruiken om veilige toegang tot uw video-inhoud te bieden. U kunt ook DRM-oplossingen van derden gebruiken als alternatief voor de geïntegreerde Adobe.
+seo-description: U kunt de functies van het DRM-systeem (Primetime Digital Rights Management) gebruiken om veilige toegang tot uw video-inhoud te bieden. U kunt ook DRM-oplossingen van derden gebruiken als alternatief voor de geïntegreerde Adobe.
 seo-title: Widevine DRM
 title: Widevine DRM
 uuid: 3a5fd786-4319-4e92-83b6-0f5328df6a44
 translation-type: tm+mt
 source-git-commit: 0271af21b74e80455ddb2c53571cd75f3a0f56ba
+workflow-type: tm+mt
+source-wordcount: '325'
+ht-degree: 0%
 
 ---
 
 
 # Widevine DRM {#widevine-drm}
 
-U kunt de functies van het DRM-systeem (Primetime Digital Rights Management) gebruiken om veilige toegang tot uw video-inhoud te bieden. U kunt ook DRM-oplossingen van derden gebruiken als alternatief voor de geïntegreerde oplossing van Adobe.
+U kunt de functies van het DRM-systeem (Primetime Digital Rights Management) gebruiken om veilige toegang tot uw video-inhoud te bieden. U kunt ook DRM-oplossingen van derden gebruiken als alternatief voor de geïntegreerde Adobe.
 
-Neem contact op met uw Adobe-vertegenwoordiger voor de meest recente informatie over de beschikbaarheid van DRM-oplossingen van derden.
+Neem contact op met uw Adobe-vertegenwoordiger voor de meest actuele informatie over de beschikbaarheid van DRM-oplossingen van derden.
 
 <!--<a id="section_1385440013EF4A9AA45B6AC98919E662"></a>-->
 
@@ -26,9 +29,9 @@ U kunt de native Widevine DRM van Android gebruiken met HLS CMAF-streams.
 >
 > Voor Widevine CBCS Scheme is minimaal Android versie 7.1 (API Level 25) vereist.
 
-## Gegevens voor licentieserver instellen {#license-server-details}
+## Gegevens van licentieserver {#license-server-details} instellen
 
-Roep de volgende `com.adobe.mediacore.drm.DRMManager` API aan voordat u de MediaPlayer-bron laadt:
+Roep de volgende `com.adobe.mediacore.drm.DRMManager`-API aan voordat u de MediaPlayer-bron laadt:
 
 ```java
 public static void setProtectionData(
@@ -39,7 +42,7 @@ Map<String, String> requestProperties)
 
 ### Argumenten {#arguments-license-server}
 
-* `drm` - `"com.widevine.alpha"` voor Widevine.
+* `drm` -  `"com.widevine.alpha"` voor Widevine.
 
 * `licenseServerURL` - De URL van de Widevine-licentieserver die licentieaanvragen ontvangt.
 
@@ -55,9 +58,9 @@ DRMManager.setProtectionData(
   null);
 ```
 
-## Aangepaste callback opgeven {#custom-callback}
+## Aangepaste callback {#custom-callback} opgeven
 
-Roep de volgende `com.adobe.mediacore.drm.DRMManager` API aan voordat u de MediaPlayer-bron laadt.
+Roep de volgende `com.adobe.mediacore.drm.DRMManager` API vóór het laden van de bron MediaPlayer aan.
 
 ```java
 public static void setMediaDrmCallback(
@@ -66,13 +69,13 @@ MediaDrmCallback callback)
 
 ### Argumenten {#arguments-custom-callback}
 
-* `callback` - aangepaste implementatie van MediaDrmCallback voor gebruik in plaats van het gebrek `com.adobe.mediacore.drm.WidevineMediaDrmCallback`.
+* `callback` - aangepaste implementatie van MediaDrmCallback voor gebruik in plaats van het gebrek  `com.adobe.mediacore.drm.WidevineMediaDrmCallback`.
 
-Zie de [Android TVSDK 3.11 API-documentatie](https://help.adobe.com/en_US/primetime/api/psdk/javadoc3.11/index.html)voor meer informatie.
+Zie [Android TVSDK 3.11 API-documentatie](https://help.adobe.com/en_US/primetime/api/psdk/javadoc3.11/index.html) voor meer informatie.
 
-## PSSH-vak van huidige geladen MediaPlayer-bron ophalen {#pssh-box-mediaplayer-resoource}
+## PSSH-vak ophalen van huidige geladen MediaPlayer-bron {#pssh-box-mediaplayer-resoource}
 
-Roep volgende `com.adobe.mediacore.drm.DRMManager` API, bij voorkeur in douanecallback implementatie.
+Roep de volgende `com.adobe.mediacore.drm.DRMManager` API, bij voorkeur in douanecallback implementatie.
 
 ```java
 public static byte[] getPSSH()
