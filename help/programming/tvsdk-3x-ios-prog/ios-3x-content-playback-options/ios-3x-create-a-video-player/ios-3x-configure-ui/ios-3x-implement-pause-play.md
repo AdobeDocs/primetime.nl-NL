@@ -6,11 +6,14 @@ title: Een afspeel-/pauzeknop implementeren
 uuid: b0ce4103-819e-4a1c-8238-1d7728ec8770
 translation-type: tm+mt
 source-git-commit: a63768e51c911914a6ba9d884e2587fa34939f9d
+workflow-type: tm+mt
+source-wordcount: '72'
+ht-degree: 0%
 
 ---
 
 
-# Een afspeel-/pauzeknop implementeren {#implement-a-play-pause-button}
+# Een afspeel-/pauzeknop {#implement-a-play-pause-button} implementeren
 
 U kunt opstellingsknopen die methodes van TVSDK roepen om de media te pauzeren en te spelen.
 
