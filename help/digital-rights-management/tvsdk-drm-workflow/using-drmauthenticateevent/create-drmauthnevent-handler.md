@@ -6,11 +6,14 @@ title: DRMAuthenticateEvent-handlers maken
 uuid: 58330691-d0b5-46bd-9b1d-8dc597580d31
 translation-type: tm+mt
 source-git-commit: 5749142d42f7d7b36c96592955d1f71f6a7956fc
+workflow-type: tm+mt
+source-wordcount: '265'
+ht-degree: 0%
 
 ---
 
 
-# DRMAuthenticateEvent-handlers maken{#create-a-drmauthenticateevent-handler}
+# Een DRMAuthenticateEvent-handler{#create-a-drmauthenticateevent-handler} maken
 
 Het DRMAuthenticateEvent-object wordt verzonden wanneer een Primetime-object beveiligde inhoud wil afspelen waarvoor gebruikersverificatie is vereist voordat deze kan worden afgespeeld (en de verificatie is nog niet uitgevoerd). De DRMAuthenticateEvent-handler verzamelt de vereiste referenties (gebruikersnaam, wachtwoord en type) en geeft de waarden voor validatie door aan de methode .setDRMAuthenticationCredentials().
 
