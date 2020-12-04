@@ -16,7 +16,7 @@ ht-degree: 0%
 
 Welkom bij de Android- en iOS-programma&#39;s voor Adobe Primetime. Met de documenten in de linkernavigatie kunt u leren toepassingen en videospelers te ontwikkelen met behulp van Java op Android-apparaten en met behulp van doelstelling-C op iOS-apparaten.
 
-Zie de video voor meer informatie over de [huidige uitgebrachte versie](tvsdk-3x-ios-prog/ios-3x-introduction/ios-3x-overview/ios-3x-overview.md).
+Bekijk de [huidige uitgebrachte versie](tvsdk-3x-ios-prog/ios-3x-introduction/ios-3x-overview/ios-3x-overview.md) voor meer informatie.
 
 ## Zie ook
 
