@@ -6,11 +6,14 @@ title: Een basisspeler maken met behulp van het UI-framework
 uuid: d1a82dbb-1c05-4d0c-b6bc-e07cbede93cb
 translation-type: tm+mt
 source-git-commit: 4102780d0c7d0b96d120c1c2b3d14c47bc1b0e6f
+workflow-type: tm+mt
+source-wordcount: '136'
+ht-degree: 1%
 
 ---
 
 
-# Een basisspeler maken met behulp van het UI-framework{#create-a-basic-player-using-the-ui-framework}
+# Creeer een basisspeler gebruikend het Kader UI{#create-a-basic-player-using-the-ui-framework}
 
 Een basisspeler maken met het UI-framework:
 
@@ -70,7 +73,7 @@ Een basisspeler maken met het UI-framework:
    </div>
    ```
 
-Het object dat door het aanroepen wordt geretourneerd, `ptp.videoPlayer()` biedt een gedrag dat de API voor de TVSDK-mediaspeler omsluit en programmatische controle over het afspelen mogelijk maakt. Wanneer u de instantie van de mediaspeler aanroept, wordt de gebruikersinterface automatisch bijgewerkt op basis van gebeurtenissen die door de mediaspeler zijn geactiveerd:
+Het object dat wordt geretourneerd door het aanroepen van `ptp.videoPlayer()`, biedt een gedrag dat de TVSDK-mediaspeler-API omsluit en programmatische controle over het afspelen mogelijk maakt. Wanneer u de instantie van de mediaspeler aanroept, wordt de gebruikersinterface automatisch bijgewerkt op basis van gebeurtenissen die door de mediaspeler zijn geactiveerd:
 
 ```js
 <script> 
