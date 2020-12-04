@@ -4,11 +4,14 @@ title: Crossdomain-beleidsbestand
 uuid: fc05aa5e-6fbd-445f-a22a-f795d5a0b3ad
 translation-type: tm+mt
 source-git-commit: 7e8df034035fe465fbe403949ef828e7811ced2e
+workflow-type: tm+mt
+source-wordcount: '172'
+ht-degree: 0%
 
 ---
 
 
-# Crossdomain-beleidsbestand {#crossdomain-policy-file}
+# Crossdomain policy file {#crossdomain-policy-file}
 
 Als de licentieserver wordt gehost op een ander domein dan het SWF-bestand voor het afspelen van video, is een bestand met interdomeinbeleid (crossdomain.xml) nodig om het SWF-bestand de mogelijkheid te geven licenties aan te vragen bij de licentieserver. Een bestand met interdomeinbeleid is een XML-bestand waarmee de server kan aangeven dat de gegevens en documenten ervan beschikbaar zijn voor SWF-bestanden die vanuit andere domeinen worden aangeboden. Elk SWF-bestand dat wordt aangeboden vanuit een domein dat is opgegeven in het bestand met interdomeinbeleid van de licentieserver, heeft toegang tot gegevens of elementen van die licentieserver.
 
