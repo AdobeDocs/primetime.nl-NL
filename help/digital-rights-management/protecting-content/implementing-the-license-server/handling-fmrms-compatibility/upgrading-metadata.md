@@ -4,6 +4,9 @@ title: Metagegevens bijwerken
 uuid: 769483e6-a2d1-46cb-afcf-557aa807037c
 translation-type: tm+mt
 source-git-commit: 29bc8323460d9be0fce66cbea7c6fce46df20d61
+workflow-type: tm+mt
+source-wordcount: '282'
+ht-degree: 0%
 
 ---
 
@@ -19,14 +22,14 @@ De omzetting van metagegevens kan direct worden uitgevoerd wanneer de server de 
 
 Voor het omzetten van metagegevens moet de server de volgende stappen uitvoeren:
 
-* Get `LiveCycleKeyMetaData`. Als u de metagegevens vooraf wilt converteren, kunt u deze verkrijgen via een 1.x-pakketbestand met `LiveCycleKeyMetaData` `MediaEncrypter.examineEncryptedContent()`. De metagegevens worden ook opgenomen in de aanvraag voor omzetting van metagegevens ( `FMRMSv1MetadataHandler.getOriginalMetadata()`).
+* `LiveCycleKeyMetaData` ophalen. Als u de metagegevens vooraf wilt converteren, kunt u `LiveCycleKeyMetaData` uit een 1.x-pakketbestand verkrijgen met `MediaEncrypter.examineEncryptedContent()`. De metagegevens worden ook opgenomen in het verzoek om omzetting van metagegevens ( `FMRMSv1MetadataHandler.getOriginalMetadata()`).
 
-* Haal de licentie-id op uit de oude metagegevens en zoek naar de coderingssleutel en het DRM-beleid (deze informatie stond oorspronkelijk in de Adobe LiveCycle ES-database. Het LiveCycle ES DRM-beleid moet worden geconverteerd naar Primetime DRM 2.0 DRM-beleid.) De Reference Implementation bevat scripts en voorbeeldcode voor het converteren van het DRM-beleid en het exporteren van licentiegegevens uit LiveCycle ES.
-* Vul het `V2KeyParameters` object in (dat u ophaalt door aan te roepen `MediaEncrypter.getKeyParameters()`).
+* Haal de licentie-id op uit de oude metagegevens en zoek naar de coderingssleutel en het DRM-beleid (deze informatie stond oorspronkelijk in de Adobe LiveCycle ES-database. Het LiveCycle ES DRM-beleid moet worden omgezet in Primetime DRM 2.0 DRM-beleid.) De implementatie van de Verwijzing omvat manuscripten en steekproefcode voor het omzetten van het beleid DRM en het uitvoeren van vergunningsinformatie van LiveCycle ES.
+* Vul het `V2KeyParameters` voorwerp in (dat u door `MediaEncrypter.getKeyParameters()`) te roepen terugwint.
 
-* Laad de URL `SigningCredential`, de gegevens van de verpakker die door Adobe zijn uitgegeven voor het ondertekenen van versleutelingsmetagegevens. Haal het `SignatureParameters` object op door de ondertekeningsreferentie aan te roepen `MediaEncrypter.getSignatureParameters()` en in te vullen.
+* Laad de `SigningCredential`. Dit is de pakketreferentie die door Adobe is uitgegeven voor het ondertekenen van versleutelingsmetagegevens. Haal het `SignatureParameters`-object op door `MediaEncrypter.getSignatureParameters()` aan te roepen en vul de ondertekeningsreferentie in.
 
-* Vraag `MetaDataConverter.convertMetadata()` om het `V2ContentMetaData`.
+* Roep `MetaDataConverter.convertMetadata()` aan om `V2ContentMetaData` te verkrijgen.
 
-* Vraag `V2ContentMetaData.getBytes()` en bewaar voor toekomstig gebruik, of vraag `FMRMSv1MetadataHandler.setUpdatedMetadata()`.
+* Roep `V2ContentMetaData.getBytes()` aan en sla deze op voor toekomstig gebruik of roep `FMRMSv1MetadataHandler.setUpdatedMetadata()`.
 
