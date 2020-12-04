@@ -6,15 +6,18 @@ title: Problemen met uw snelstartoplossing oplossen
 uuid: 42256aa0-2efc-4602-aefc-3bab2dc58ec0
 translation-type: tm+mt
 source-git-commit: 29bc8323460d9be0fce66cbea7c6fce46df20d61
+workflow-type: tm+mt
+source-wordcount: '465'
+ht-degree: 0%
 
 ---
 
 
-# Problemen met uw snelstartoplossing oplossen{#troubleshooting-your-quick-start}
+# Problemen met uw snelstartverbinding oplossen{#troubleshooting-your-quick-start}
 
 De gemeenschappelijke problemen tijdens het testen impliceren vaak uw authenticators ExpressPlay, vervoerprotocollen, en vereiste parameters van het de dienstverzoek.
 
-Als uw [!DNL curl] verzoeken om ExpressPlay voor symbolische generatie ontbreken, zal het antwoordlichaam een foutenmelding bevatten die de reden voor mislukking verklaart.
+Als uw [!DNL curl] verzoeken om ExpressPlay voor symbolengeneratie ontbreken, zal het antwoordlichaam een foutenmelding bevatten die de reden voor mislukking verklaart.
 
 Als het genereren van een token is gelukt maar de inhoud nog steeds niet wordt afgespeeld, controleert u de aflossingslogboeken voor de ExpressPlay-token op fouten zoals &quot;Verlopen token&quot;.
 
@@ -22,9 +25,9 @@ Als het genereren van het token is gelukt en er geen fout is opgetreden en de vi
 
 Daarnaast:
 
-* Controleer of u de correcte Authenticator van de Klant in uw de dienstverzoeken gebruikt. Het is gemakkelijk om de productieauthenticator per ongeluk te gebruiken wanneer u de testauthenticator wilde gebruiken. Zorg er ook voor dat u *de verificator* gebruikt. Tijdens het testen kunt u bijvoorbeeld het `curl` bevel van iemand anders lenen en vergeten om de authenticator van iemand anders te vervangen.
+* Controleer of u de correcte Authenticator van de Klant in uw de dienstverzoeken gebruikt. Het is gemakkelijk om de productieauthenticator per ongeluk te gebruiken wanneer u de testauthenticator wilde gebruiken. Ook, zorg ervoor u *uw* authentificator gebruikt. Tijdens het testen kunt u bijvoorbeeld de opdracht `curl` van iemand anders lenen en vergeten de authenticator voor zijn of haar authenticator in te wisselen.
 
-* Controleer of u het juiste transportprotocol gebruikt in uw verzoeken of in uw manifesten ( `https://` versus `https://`, of in het geval van FairPlay, `skd://` versus `https://` `https://`.
+* Controleer of u het juiste transportprotocol gebruikt in uw aanvragen of in uw manifesten ( `https://` versus `https://`, of in het geval van FairPlay, `skd://` versus `https://` versus `https://`.
 
 * Zorg ervoor dat u alle vereiste vraagparameters voor de oplossing DRM omvat u met werkt. Het is gemakkelijk om tussen PlayReady en Widevine bijvoorbeeld te worden verward, omdat zij allebei met DASH werken, maar de vereiste verzoekparameters en verpakkingsconfiguraties zijn verschillend.
 * Bevestig dat je ExpressPlay-account voldoende token-credits heeft en nog niet is gebruikt.
