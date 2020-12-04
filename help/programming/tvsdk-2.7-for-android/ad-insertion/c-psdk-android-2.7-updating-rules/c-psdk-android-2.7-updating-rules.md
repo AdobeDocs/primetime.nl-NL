@@ -7,6 +7,9 @@ title: Regels voor het bijwerken en creatieve selectie
 uuid: fddc5593-db40-4b03-bd7e-4b5fe5b6f650
 translation-type: tm+mt
 source-git-commit: 0eaf0e7e7e61d596a51d1c9c837ad072d703c6a7
+workflow-type: tm+mt
+source-wordcount: '314'
+ht-degree: 0%
 
 ---
 
@@ -19,14 +22,15 @@ Wanneer uw videospeler een verzoek indient aan een advertentieserver, omvat de r
 
 >[!IMPORTANT]
 >
->* Wijzig de naam van het configuratiebestand voor TVSDK niet. De naam moet achterblijven [!DNL AdobeTVSDKConfig.json].
->* Dit bestand moet in de [!DNL assets/] map van uw project worden geplaatst.
+>* Wijzig de naam van het configuratiebestand voor TVSDK niet. De naam moet [!DNL AdobeTVSDKConfig.json] blijven.
+>* Dit bestand moet in de map [!DNL assets/] van uw project worden geplaatst.
 >* Het wijzigen van audiotracks tijdens het afspelen van advertenties verandert de audiotrack niet. Gebruikers mogen de audiotrack niet wijzigen wanneer een advertentie wordt afgespeeld.
+
 >
 
 
 
-U kunt twee typen regels opgeven in [!DNL AdobeTVSDKConfig.json]: *Prioritaire* regels en *Normaliseer* regels.
+U kunt twee typen regels opgeven in [!DNL AdobeTVSDKConfig.json]: *Prioriteitsregels* en *Normaliseren* regels.
 
 **[!UICONTROL Ad Rules change]**
 
