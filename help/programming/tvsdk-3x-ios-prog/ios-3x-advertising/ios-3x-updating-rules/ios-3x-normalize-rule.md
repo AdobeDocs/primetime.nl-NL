@@ -7,11 +7,14 @@ title: Regels normaliseren
 uuid: c5cdc40c-7f8c-4b4a-8044-217494e2f466
 translation-type: tm+mt
 source-git-commit: 557f42cd9a6f356aa99e13386d9e8d65e043a6af
+workflow-type: tm+mt
+source-wordcount: '185'
+ht-degree: 1%
 
 ---
 
 
-# Regels normaliseren {#normalize-rules}
+# Regels {#normalize-rules} normaliseren
 
 De regel normaliseren definieert een URL-transformatie die moet worden toegepast op een creatieve bronURL die is verkregen uit een VAST/VMAP-reactie.
 
@@ -31,13 +34,13 @@ De regel normaliseren definieert een URL-transformatie die moet worden toegepast
    <td><span class="codeph"> type</span></td> 
    <td><span class="codeph"> String</span></td> 
    <td><span class="codeph"> normaliseren</span></td> 
-   <td>De waarde moet altijd worden <span class="codeph"> genormaliseerd</span>.</td> 
+   <td>De waarde moet altijd <span class="codeph"> normalize</span> zijn.</td> 
   </tr> 
   <tr> 
    <td><span class="codeph"> item</span></td> 
    <td><span class="codeph"> String</span></td> 
    <td><span class="codeph"> host</span></td> 
-   <td>Momenteel wordt alleen de <span class="codeph"> host</span> ondersteund. Dit kenmerk moet aanwezig zijn wanneer kenmerken voor <span class="codeph"> overeenkomsten</span> en <span class="codeph"> waarden</span> worden gedefinieerd.</td> 
+   <td>Momenteel wordt alleen <span class="codeph"> host</span> ondersteund. Dit kenmerk moet aanwezig zijn wanneer <span class="codeph"> overeenkomsten</span> en <span class="codeph"> waarden</span> attributen worden bepaald.</td> 
   </tr> 
   <tr> 
    <td><span class="codeph"> matches</span></td> 
@@ -45,19 +48,19 @@ De regel normaliseren definieert een URL-transformatie die moet worden toegepast
    <td></td> 
    <td>Mogelijke waarden:
     <ul id="ul_tnf_2hx_hz"> 
-     <li><span class="codeph"> eq</span> - gelijk</li> 
+     <li><span class="codeph"> eq</span> - gelijk aan</li> 
      <li><span class="codeph"> ne</span> - niet gelijk aan</li> 
-     <li><span class="codeph"> co</span> - contains</li> 
-     <li><span class="codeph"> nc</span> - bevat niet</li> 
+     <li><span class="codeph"> co</span> -contains</li> 
+     <li><span class="codeph"> nc</span>  - niet bevat</li> 
      <li><span class="codeph"> sw</span> - begint met</li> 
      <li><span class="codeph"> nieuw</span> - eindigt met</li> 
     </ul></td> 
   </tr> 
   <tr> 
-   <td><span class="codeph"> values</span></td> 
+   <td><span class="codeph"> waarden</span></td> 
    <td><span class="codeph"> Array</span></td> 
    <td></td> 
-   <td>TVSDK gebruikt het kenmerk <span class="codeph"> match</span> op het <span class="codeph"> item</span> van de bron creatief en komt overeen met de waarden die in deze array zijn gedefinieerd.</td> 
+   <td>TVSDK gebruikt het <span class="codeph">-kenmerk </span> op het <span class="codeph">-item</span> van de bron-creatief en past dit aan op de waarden die in deze array zijn gedefinieerd.</td> 
   </tr> 
   <tr> 
    <td><span class="codeph"> zoeken</span></td> 
