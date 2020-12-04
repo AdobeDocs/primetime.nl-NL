@@ -6,11 +6,14 @@ title: Afstroomverwerking implementeren
 uuid: a447ff24-8386-4cae-878e-0859fb191de2
 translation-type: tm+mt
 source-git-commit: 557f42cd9a6f356aa99e13386d9e8d65e043a6af
+workflow-type: tm+mt
+source-wordcount: '143'
+ht-degree: 1%
 
 ---
 
 
-# Afstroomverwerking implementeren {#implement-blackout-handling}
+# Uitstroomafhandeling uitvoeren {#implement-blackout-handling}
 
 De TVSDK biedt API&#39;s en voorbeeldcode voor de afhandeling van brainstormperioden.
 
@@ -27,7 +30,7 @@ Omgaan met black-out en alternatieve inhoud bieden tijdens de black-out:
    }
    ```
 
-1. Voeg een meldingslistener toe voor `PTTimedMetadataChangedNotification`.
+1. Voeg een berichtluisteraar voor `PTTimedMetadataChangedNotification` toe.
 
    ```
    - (void)addobservers 
@@ -37,7 +40,7 @@ Omgaan met black-out en alternatieve inhoud bieden tijdens de black-out:
    }
    ```
 
-1. Een listenermethode implementeren voor `PTTimedMetadata` objecten op de voorgrond.
+1. Hiermee implementeert u een listenermethode voor `PTTimedMetadata`-objecten op de voorgrond.
 
    Bijvoorbeeld:
 
@@ -61,7 +64,7 @@ Omgaan met black-out en alternatieve inhoud bieden tijdens de black-out:
    }
    ```
 
-1. Objecten tijdens het afspelen afhandelen met constante updates. `TimedMetadata`
+1. Objecten `TimedMetadata` tijdens het afspelen met constante updates afhandelen.
 
    ```
    - (void)onMediaPlayerTimeChange:(NSNotification *)notification 
@@ -82,7 +85,7 @@ Omgaan met black-out en alternatieve inhoud bieden tijdens de black-out:
    }
    ```
 
-1. Voeg de `PTTimedMetadata` handler toe om naar alternatieve inhoud te schakelen en terug te keren naar de hoofdinhoud, zoals aangegeven door het `PTTimedMetadata` object en de afspeeltijd.
+1. Voeg de `PTTimedMetadata` manager toe om aan afwisselende inhoud te schakelen en aan belangrijkste inhoud terug te keren zoals die door het `PTTimedMetadata` voorwerp en zijn playbacktijd wordt vermeld.
 
    ```
    - (void)handleCollectionAtTime:(int)currentTime 
@@ -197,7 +200,7 @@ Omgaan met black-out en alternatieve inhoud bieden tijdens de black-out:
    }
    ```
 
-1. Hiermee implementeert u een listenermethode voor `PTTimedMetadata` objecten op de achtergrond.
+1. Hiermee implementeert u een listenermethode voor `PTTimedMetadata`-objecten op de achtergrond.
 
    ```
    - (void)onSubscribedTagInBackground:(NSNotification *)notification 
