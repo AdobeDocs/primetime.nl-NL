@@ -6,6 +6,9 @@ title: API-elementen voor het afspelen van advertenties
 uuid: 6d0ab181-9c50-431f-97bf-32e6684a7df1
 translation-type: tm+mt
 source-git-commit: 5908e5a3521966496aeec0ef730e4a704fddfb68
+workflow-type: tm+mt
+source-wordcount: '249'
+ht-degree: 0%
 
 ---
 
@@ -51,11 +54,11 @@ De volgende API-elementen zijn handig voor het aanpassen van het afspelen:
      <li id="li_B465170D449E49489C5924572BEEB4A5"><span class="codeph"> getLocalTime</span>. <p>Dit is de lokale tijd van het afspelen, exclusief de geplaatste en afgebroken foto's. </p> </li> 
      <li id="li_D9D68CF428904BB2B84E1BCE828A90DC"><span class="codeph"> seekToLocal</span>. <p>Hier wordt gezocht ten opzichte van een lokale tijd in de stream. </p> </li> 
      <li id="li_9DBCA75537DC4824AA66B53A3FA28812"><span class="codeph"> getTimeline.convertToLocalTime</span>. <p>De virtuele positie op de tijdlijn wordt geconverteerd naar de lokale positie. </p> </li> 
-    </ul> <p>Belangrijk:  <span class="codeph"> getLocalTime</span> in <span class="codeph"> MediaPlayer</span> retourneert de huidige tijd ten opzichte van de oorspronkelijke inhoud, zonder dynamisch gesplitste advertenties. <span class="codeph"> getLocalTime</span> in <span class="codeph"> AdBreak</span> retourneert de begintijd van het einde ten opzichte van de oorspronkelijke inhoud. </p> </td> 
+    </ul> <p>Belangrijk:  <span class="codeph"> getLocalTime</span> in <span class="codeph"> MediaPlayer</span> retourneert de huidige tijd ten opzichte van de oorspronkelijke inhoud, zonder dynamisch gesplitste advertenties. <span class="codeph"> </span> getLocalTimein  <span class="codeph"> </span> AdBreakRetourneert de begintijd van het einde ten opzichte van de oorspronkelijke inhoud. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"><span class="codeph"> AdBreak</span> </td> 
-   <td colname="col2"><span class="codeph"> isWatched</span> , eigenschap. Geeft aan of de viewer de advertentie heeft gecontroleerd. </td> 
+   <td colname="col2"><span class="codeph"> </span> isWatchedproperty. Geeft aan of de viewer de advertentie heeft gecontroleerd. </td> 
   </tr> 
  </tbody> 
 </table>
