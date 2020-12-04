@@ -13,14 +13,14 @@ ht-degree: 0%
 ---
 
 
-# Bannergegevens van de onderneming{#companion-banner-data}
+# Companion banner data{#companion-banner-data}
 
 De inhoud van een AdBannerAsset beschrijft een bijbehorende banner.
 
 <!--<a id="section_D730B4FD6FD749E9860B6A07FC110552"></a>-->
 
-De `AdobePSDK.PSDKEventType.AD_STARTED` gebeurtenis retourneert een `Ad` instantie die een `companionAssets` eigenschap ( `Array<AdBannerAsset>`) bevat.
-Elk element `AdBannerAsset` biedt informatie over de weergave van het element.
+De gebeurtenis `AdobePSDK.PSDKEventType.AD_STARTED` retourneert een `Ad`-instantie die een `companionAssets`-eigenschap ( `Array<AdBannerAsset>`) bevat.
+Elke `AdBannerAsset` biedt informatie over de weergave van het element.
 
 <table id="table_760C885E2DCA4BE983CC57FDA7BD5B14"> 
  <thead> 
