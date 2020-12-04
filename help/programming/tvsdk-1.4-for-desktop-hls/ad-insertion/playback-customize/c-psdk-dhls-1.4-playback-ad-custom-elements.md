@@ -31,7 +31,8 @@ De volgende API-elementen zijn handig voor het aanpassen van het afspelen:
    <td colname="col1"><span class="codeph"> AdvertisingMetadata</span> </td> 
    <td colname="col2">Bepaal of een advertentieeinde moet worden gemarkeerd als gevolgd door een viewer en zo ja, wanneer om het te markeren. Het gevolgde beleid instellen en ophalen met 
     <pre>
-     de <span class="codeph"> eigenschap adBreakAsWatched</span> .
+     de 
+     <span class="codeph"> adBreakAsWatched</span>-eigenschap.
     </pre> </td> 
   </tr> 
   <tr> 
