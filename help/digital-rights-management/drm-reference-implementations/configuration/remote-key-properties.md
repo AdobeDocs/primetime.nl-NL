@@ -6,13 +6,16 @@ title: Eigenschappen voor levering van externe sleutels (iOS)
 uuid: 17e1b756-d106-47a7-99ae-641190693870
 translation-type: tm+mt
 source-git-commit: 7e8df034035fe465fbe403949ef828e7811ced2e
+workflow-type: tm+mt
+source-wordcount: '115'
+ht-degree: 0%
 
 ---
 
 
 # Eigenschappen voor levering van externe sleutels (iOS){#remote-key-delivery-properties-ios}
 
-Als u het genereren van licenties voor externe sleutellevering aan een iOS-client in Adobe Primetime DRM wilt ondersteunen, moet u het certificaat voor sleutelserver opgeven in het `flashaccess-refimpl.properties` bestand.
+Als u het genereren van licenties voor Remote Key-levering aan een iOS-client in Adobe Primetime DRM wilt ondersteunen, moet u het Key Server-certificaat opgeven in het bestand `flashaccess-refimpl.properties`.
 
 De volgende eigenschappen zijn toegevoegd aan Primetime DRM:
 
@@ -30,7 +33,7 @@ De volgende eigenschappen zijn toegevoegd aan Primetime DRM:
   </tr> 
   <tr rowsep="0" class="- topic/row "> 
    <td colname="1" class="- topic/entry "><span class="codeph"> RefImpl.HSM.HandlerConfiguration.\ KeyServerCertificate.Alias</span> </td> 
-   <td colname="2" class="- topic/entry "> <p>De alias van het door Adobe uitgegeven certificaat van de Server van de Sleutelserver dat op HSM wordt opgeslagen. </p> <p>Wanneer u HSM toelaat, kunt u dit bezit in plaats van het bezit toepassen <span class="codeph"> HandlerConfiguration.KeyServerCertificate</span> . </p> </td> 
+   <td colname="2" class="- topic/entry "> <p>De alias van het Adobe-uitgegeven certificaat van de Server van een Sleutelserver van de Vergunning dat op HSM wordt opgeslagen. </p> <p>Wanneer u HSM toelaat, kunt u dit bezit in plaats van het <span class="codeph"> bezit toepassen HandlerConfiguration.KeyServerCertificate</span>. </p> </td> 
   </tr> 
  </tbody> 
 </table>
