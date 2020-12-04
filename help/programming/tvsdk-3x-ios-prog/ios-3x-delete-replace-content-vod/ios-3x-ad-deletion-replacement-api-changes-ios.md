@@ -6,6 +6,9 @@ title: Wijzigingen in API voor verwijderen en vervangen toevoegen
 uuid: 3689d31f-4feb-4ea5-ac49-ef2e71472f4b
 translation-type: tm+mt
 source-git-commit: 557f42cd9a6f356aa99e13386d9e8d65e043a6af
+workflow-type: tm+mt
+source-wordcount: '390'
+ht-degree: 0%
 
 ---
 
@@ -33,21 +36,21 @@ De volgende wijzigingen in TVSDK ondersteunen het verwijderen en vervangen van b
       >
       >Alle objecten van de array moeten van hetzelfde type zijn.
 
-   * `PTTimeRangeCollectionType` is een opsomming die het gedrag definieert voor de bereiken die in het `PTTimeRangeCollection`volgende worden gedefinieerd:
+   * `PTTimeRangeCollectionType` is een opsomming die het gedrag definieert voor de bereiken die in het  `PTTimeRangeCollection`volgende worden gedefinieerd:
 
-      * `PTTimeRangeCollectionTypeMarkRanges`: Het type van de bereiken is *Mark*. De bereiken worden gebruikt om de waaiers in de inhoud als Advertentie te merken.
+      * `PTTimeRangeCollectionTypeMarkRanges`: Het type van de bereiken is  *Mark*. De bereiken worden gebruikt om de waaiers in de inhoud als Advertentie te merken.
 
       * `PTTimeRangeCollectionTypeDeleteRanges`: Het type van de bereiken is Delete. De gedefinieerde bereiken worden voor het invoegen uit de hoofdinhoud verwijderd.
       * `PTTimeRangeCollectionTypeReplaceRanges`: Het type van de bereiken is Vervangen. De gedefinieerde bereiken worden vanaf het hoofdvenster vervangen door Advertenties (de modus voor Ad-signalering is ingesteld op `PTAdSignalingModeCustomTimeRanges`).
 
-* `PTReplacementTimeRange` - Nieuwe klasse public die één bereik van de `PTTimeRangeCollection`:
+* `PTReplacementTimeRange` - Nieuwe klasse public die één bereik van de  `PTTimeRangeCollection`:
 
    * `property CMTimeRange range` - Definieert het begin en de duur van het bereik.
-   * `property long replacementDuration` - Als het type van `TimeRangeCollection` is `PTTimeRangeCollectionTypeReplaceRanges`, `replacementDuration` wordt gebruikt om een plaatsingskans (en toevoeging) met een duur van `replacementDuration`. te creëren. Als de advertentieserver niet `replacementDuration` is ingesteld, bepaalt de advertentieserver de duur en het aantal advertenties voor die plaatsingsmogelijkheid.
+   * `property long replacementDuration` - Als het type van het  `TimeRangeCollection` is  `PTTimeRangeCollectionTypeReplaceRanges`,  `replacementDuration` wordt het gebruikt om een plaatsingskans (en toevoeging) met een duur van  `replacementDuration`. te creëren. Als `replacementDuration` niet is ingesteld, bepaalt de advertentieserver de duur en het aantal advertenties voor die plaatsingsmogelijkheid.
 
 * `PTAdSignalingMode`:
 
-   * `PTAdSignalingModeCustomTimeRanges` - Er is een nieuw type `PTAdSignalingMode`toegevoegd. Deze modus wordt gebruikt in combinatie met het `PTTimeRangeCollection` type voor invoeging `PTTimeRangeCollectionReplace` op basis van de vervangingsbereiken.
+   * `PTAdSignalingModeCustomTimeRanges` - Er is een nieuw type  `PTAdSignalingMode`toegevoegd. Deze modus wordt gebruikt in combinatie met `PTTimeRangeCollection` en type `PTTimeRangeCollectionReplace` voor invoeging op basis van het vervangingsbereik.
 
 * `PTAdMetadata`:
 
@@ -69,4 +72,4 @@ De volgende wijzigingen in TVSDK ondersteunen het verwijderen en vervangen van b
 
 * `PTAdMetadata`:
 
-   * `property NSArray* externalAdRanges` - Deze eigenschap werd eerder gebruikt om C3-bereiken voor markering te definiëren. Het is nu afgekeurd, aangezien deze bereiken via worden ingesteld `PTTimeRangeCollection`.
+   * `property NSArray* externalAdRanges` - Deze eigenschap werd eerder gebruikt om C3-bereiken voor markering te definiëren. Het is nu afgekeurd, aangezien deze waaiers via `PTTimeRangeCollection` worden geplaatst.
