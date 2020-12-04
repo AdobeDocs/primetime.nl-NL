@@ -31,7 +31,7 @@ U kunt de zichtbaarheid van gesloten bijschriften bepalen. Wanneer de zichtbaarh
 >}
 >```
 
-1. Wacht tot de status `MediaPlayer` is VOORBEREID.
+1. Wacht tot de status `MediaPlayer` ten minste de status PREPARED heeft.
 
    Voor meer informatie, zie ui-state-prepare-wait-for.
 1. Als u de huidige zichtbaarheidsinstelling voor gesloten bijschriften wilt ophalen, gebruikt u de methode getter in `MediaPlayer`, die een zichtbaarheidswaarde retourneert.
