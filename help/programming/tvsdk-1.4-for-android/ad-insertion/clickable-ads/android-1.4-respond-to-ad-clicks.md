@@ -6,6 +6,9 @@ title: Reageren op klikken op advertenties
 uuid: 31852f01-c900-48e3-ae23-7fb131c22594
 translation-type: tm+mt
 source-git-commit: 5908e5a3521966496aeec0ef730e4a704fddfb68
+workflow-type: tm+mt
+source-wordcount: '319'
+ht-degree: 0%
 
 ---
 
@@ -14,16 +17,16 @@ source-git-commit: 5908e5a3521966496aeec0ef730e4a704fddfb68
 
 Wanneer een gebruiker op een advertentie of een verwante knop klikt, moet de toepassing reageren. TVSDK biedt u informatie over de doel-URL voor de klik.
 
-1. Registreer een gebeurtenislistener voor TVSDK en verstrek de doorklikinformatie `AdClickedEventListener.onAdClicked`.
+1. Registreer een `AdClickedEventListener.onAdClicked` om een gebeurtenislistener voor TVSDK in te stellen en de doorklikinformatie te verstrekken.
 
    Wanneer een gebruiker op een advertentie of een verwante knop klikt, verzendt TVSDK dit bericht, inclusief informatie over de bestemming voor de klik.
 1. Gebruikersinteracties controleren op klikbare advertenties.
-1. Als de gebruiker op de advertentie of knop klikt om TVSDK op de hoogte te brengen, roept u `notifyClick` de `MediaPlayerView`.
-1. Luister naar de `onAdClick(AdClickEvent event)` gebeurtenis van TVSDK.
-1. Als u de doorklikURL en verwante informatie wilt ophalen, gebruikt u de methoden getter voor de `AdClickEvent` instantie.
+1. Wanneer de gebruiker de advertentie of knop aanraakt of erop klikt, om TVSDK op de hoogte te brengen, roept u `notifyClick` op `MediaPlayerView`.
+1. Luister naar de `onAdClick(AdClickEvent event)`-gebeurtenis van TVSDK.
+1. Als u de doorklikURL en verwante informatie wilt ophalen, gebruikt u de methoden getter voor de instantie `AdClickEvent`.
 1. De video pauzeren.
 
-   Zie Afspelen [pauzeren en hervatten voor meer informatie over het pauzeren van de video.](../../ad-insertion/clickable-ads/android-1.4-pausing-resuming-playback.md).
+   Zie [Afspelen pauzeren en hervatten.](../../ad-insertion/clickable-ads/android-1.4-pausing-resuming-playback.md) voor meer informatie over het pauzeren van de video.
 1. Gebruik de doorklikinformatie om de advertentie-door URL en de verwante informatie te tonen.
 
        U kunt de informatie bijvoorbeeld op een van de volgende manieren weergeven:
