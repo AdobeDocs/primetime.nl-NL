@@ -10,7 +10,7 @@ ht-degree: 0%
 ---
 
 
-# Uw CDN integreren {#integrating-cdn}
+# De CDN {#integrating-cdn} integreren
 
 Primetime Ad Insertion fungeert als een proxy tussen uw clienttoepassing en manifests, niet de videoblokken zelf. Implementeer uw inhoud naar de CDN van uw keuze en geef de URL door aan Primetime Ad Insertion met behulp van de Bootstrap-API.<!-- For integration details, see [Supported CDNs](supported-cdns.md).-->
 
@@ -23,7 +23,7 @@ CDN&#39;s hebben vaak verschillende tokenisatieschema&#39;s voor fragmentautoris
 * Centurylink / Niveau3
 * Neem contact op met uw ondersteuningsvertegenwoordiger voor Primetime voor een volledige lijst met ondersteunde CDN&#39;s
 
-Zie de beschrijving van de parameter `pttoken` [Bootstrap API voor meer informatie over de](/help/dynamic-ad-insertion/msapi-topics/ms-getting-started/ms-api-query-params.md)parameter.
+Voor meer informatie over de `pttoken` parameter, zie [Bootstrap API parameterbeschrijving](/help/dynamic-ad-insertion/msapi-topics/ms-getting-started/ms-api-query-params.md).
 
 ## Advertenties configureren om te leveren vanuit de CDN-inhoud {#configure-ad-deliver-from-cdn}
 
@@ -33,6 +33,6 @@ Mogelijk wilt u advertenties en inhoud van dezelfde CDN leveren om de affiniteit
 
 For more information, see [Optimizing start-up](optimize-video-startup-time.md).-->
 
-## Multi-CDN-functies {#enable-multi-cdn-fetures}
+## MultiCDN-functies {#enable-multi-cdn-fetures}
 
 Neem contact op met uw vertegenwoordiger van Primetime-ondersteuning om functies voor meerdere CDN&#39;s in te schakelen.
