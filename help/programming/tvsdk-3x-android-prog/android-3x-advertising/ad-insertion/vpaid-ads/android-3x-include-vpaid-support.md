@@ -6,11 +6,14 @@ title: VPAID 2.0-integratie implementeren
 uuid: d512fb5b-001c-4a7a-a553-d5962002bb30
 translation-type: tm+mt
 source-git-commit: 83df68905f74931355264661aed6cff43b802d3f
+workflow-type: tm+mt
+source-wordcount: '180'
+ht-degree: 2%
 
 ---
 
 
-# VPAID 2.0-integratie implementeren {#implement-vpaid-integration}
+# Implementeer VPAID 2.0-integratie {#implement-vpaid-integration}
 
 Als u ondersteuning voor VPAID 2.0 wilt toevoegen, voegt u een aangepaste advertentieweergave en de juiste listeners toe.
 
@@ -31,11 +34,11 @@ Als u ondersteuning voor VPAID 2.0 wilt toevoegen, voegt u een aangepaste advert
        _playerFrame.addView(view);
    ```
 
-1. Maak listeners en verwerk de gebeurtenissen die in [Gebeurtenissen](../../../../tvsdk-3x-android-prog/android-3x-events-notifications/events-summary/android-3x-events-summary.md)worden beschreven.
+1. Maak listeners en verwerk de gebeurtenissen die worden beschreven in [Gebeurtenissen](../../../../tvsdk-3x-android-prog/android-3x-events-notifications/events-summary/android-3x-events-summary.md).
 
    >[!IMPORTANT]
    >
-   >In een VPAID 2.0-workflow is het voor aangepaste en weergaven erg belangrijk om uw `CustomAdView` instantie te behouden bij `AdBreak` het starten (gebeurtenis `AD_BREAK_START`) en `AdBreak` voltooien (gebeurtenis `AD_BREAK_COMPLETE`), vanaf het moment dat u de aangepaste advertentie maakt tot aan het moment dat u deze verwijdert. Maak dus niet elke keer dat een advertentie-einde begint, een aangepaste advertentie-weergave en verwijder deze op elk advertentie-einde voltooid.
+   >In een VPAID 2.0-workflow is het voor aangepaste en weergaven erg belangrijk om uw `CustomAdView`-instantie te behouden over `AdBreak` start (gebeurtenis `AD_BREAK_START`) en `AdBreak` voltooit (gebeurtenis `AD_BREAK_COMPLETE`), vanaf het moment dat u de aangepaste en weergave maakt tot aan het moment dat u de aangepaste en weergavebewerking verwijdert. Maak dus niet elke keer dat een advertentie-einde begint, een aangepaste advertentie-weergave en verwijder deze op elk advertentie-einde voltooid.
    >
    >
    >Bovendien moet u alleen een aangepaste advertentieweergave maken als de speler de status PREPARED heeft,
@@ -53,7 +56,7 @@ Als u ondersteuning voor VPAID 2.0 wilt toevoegen, voegt u een aangepaste advert
    >
    >```
    >
-   >Voordat u de aangepaste advertentieweergave kunt verwijderen, moet u deze eerst uit het deelvenster verwijderen `FrameLayout`. Bijvoorbeeld:
+   >Tot slot moet u het verwijderen uit `FrameLayout` alvorens u uw douane ad mening verwijdert. Bijvoorbeeld:
    >
    >
    ```
