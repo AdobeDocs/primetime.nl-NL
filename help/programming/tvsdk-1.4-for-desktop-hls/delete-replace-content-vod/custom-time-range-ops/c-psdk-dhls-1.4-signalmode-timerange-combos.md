@@ -6,6 +6,9 @@ title: Handtekeningmodus en tijdbereik
 uuid: a4d2b0f3-49ce-4a07-a460-9e63bb91b5d3
 translation-type: tm+mt
 source-git-commit: adef0bbd52ba043f625f38db69366c6d873c586d
+workflow-type: tm+mt
+source-wordcount: '91'
+ht-degree: 0%
 
 ---
 
@@ -17,13 +20,13 @@ source-git-commit: adef0bbd52ba043f625f38db69366c6d873c586d
   <tr> 
    <th class="entry"> </th> 
    <th class="entry"> MARK </th> 
-   <th class="entry"> VERWIJDEREN </th> 
+   <th class="entry"> DELETE </th> 
    <th class="entry"> VERVANGEN </th> 
   </tr> 
  </thead>
  <tbody> 
   <tr> 
-   <td> <span class="codeph"> CustomRange OpportunityGenerator </span> </td> 
+   <td> <span class="codeph"> CustomRange OpportunityGenerator  </span> </td> 
    <td> 
     <code>
       (range.begin,&nbsp; 
@@ -136,13 +139,13 @@ source-git-commit: adef0bbd52ba043f625f38db69366c6d873c586d
   <tr> 
    <th class="entry"> </th> 
    <th class="entry"> MARK </th> 
-   <th class="entry"> VERWIJDEREN </th> 
+   <th class="entry"> DELETE </th> 
    <th class="entry"> VERVANGEN </th> 
   </tr> 
  </thead>
  <tbody> 
   <tr> 
-   <td> <span class="codeph"> AdSignalingMode OpportunityGenerator </span> </td> 
+   <td> <span class="codeph"> AdSignalingMode OpportunityGenerator  </span> </td> 
    <td> 
     <code>
       (range.begin,&nbsp; 
@@ -161,7 +164,7 @@ source-git-commit: adef0bbd52ba043f625f38db69366c6d873c586d
     </code> </td> 
   </tr> 
   <tr> 
-   <td> <span class="codeph"> De </span> signaalmodus van de serverkaart </td> 
+   <td> <span class="codeph"> De  </span> signaalmodus van de serverkaart </td> 
    <td> Niet aanwezig (advertentie is uitgeschakeld). </td> 
    <td> 
     <code>
@@ -172,7 +175,7 @@ source-git-commit: adef0bbd52ba043f625f38db69366c6d873c586d
      Placement.UNKNOWN_DURATION, 
      PlacementMode.DEFAULT); 
     </code> </td> 
-   <td> N.v.t. (automatische <span class="codeph"> CustomRange- </span> signaalmodus) </td> 
+   <td> N.v.t. (automatische <span class="codeph"> CustomRange </span> signaalmodus) </td> 
   </tr> 
   <tr> 
    <td> <span class="codeph"> ManifestCue- </span> signaalmodus </td> 
@@ -186,7 +189,7 @@ source-git-commit: adef0bbd52ba043f625f38db69366c6d873c586d
      Placement.UNKNOWN_DURATION, 
      PlacementMode.DEFAULT); 
     </code> </td> 
-   <td> N.v.t. (automatische <span class="codeph"> CustomRange- </span> signaalmodus) </td> 
+   <td> N.v.t. (automatische <span class="codeph"> CustomRange </span> signaalmodus) </td> 
   </tr> 
   <tr> 
    <td> <span class="codeph"> CustomRange- </span> signaalmodus </td> 
