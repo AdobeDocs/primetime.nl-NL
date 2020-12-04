@@ -4,13 +4,16 @@ title: Audiotracks selecteren
 uuid: a827f426-956b-4a5f-90ba-db12010aa7c7
 translation-type: tm+mt
 source-git-commit: 31b6cad26bcc393d731080a70eff1c59551f1c8e
+workflow-type: tm+mt
+source-wordcount: '136'
+ht-degree: 0%
 
 ---
 
 
-# Audiotracks selecteren{#select-the-audio-tracks}
+# Selecteer de audiotracks{#select-the-audio-tracks}
 
-Implementeer [IAAConfig](https://help.adobe.com/en_US/primetime/api/reference_implementation/android/javadoc/com/adobe/primetime/reference/config/IAAConfig.html)om audiotracks te selecteren voor audio die pas later wordt gebonden.
+Implementeer [IAAConfig](https://help.adobe.com/en_US/primetime/api/reference_implementation/android/javadoc/com/adobe/primetime/reference/config/IAAConfig.html) om audiotracks te selecteren voor audio die op het laatste moment wordt gebonden.
 
 | Aan... | Bellen... |
 |---|---|
