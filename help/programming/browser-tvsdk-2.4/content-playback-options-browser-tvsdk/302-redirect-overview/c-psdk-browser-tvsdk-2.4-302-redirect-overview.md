@@ -6,6 +6,9 @@ title: HTTP 302-herleidingsoptimalisatie
 uuid: d3009c6c-320a-4c0f-b6ba-bf6473049823
 translation-type: tm+mt
 source-git-commit: 592245f5a7186d18dabbb5a98a468cbed7354aed
+workflow-type: tm+mt
+source-wordcount: '169'
+ht-degree: 1%
 
 ---
 
@@ -18,14 +21,14 @@ Als een hoofdmanifestverzoek wordt omgeleid, en optimalisering 302 in uw speler 
 
 >[!IMPORTANT]
 >
->Deze functie wordt alleen ondersteund in gecertificeerde browsers die de `responseURL` eigenschap in het `XMLHttpRequest` object ondersteunen.
+>Deze functie wordt alleen ondersteund in gecertificeerde browsers die de eigenschap `responseURL` in het object `XMLHttpRequest` ondersteunen.
 
-Houd rekening met de volgende informatie voor Flash-fallback:
+Voor Flash fallback, herinner de volgende informatie:
 
 * Uw eindgebruikers moeten Adobe Flash Player versie 23 of hoger hebben geïnstalleerd.
 * Als de streamintegriteit is uitgeschakeld, wordt 302 omleiding alleen ondersteund door gecertificeerde browsers.
 
-## 302-herleidingsoptimalisatie uitschakelen {#disabling-redirect-optimization}
+## 302 omleidingsoptimalisatie uitschakelen {#disabling-redirect-optimization}
 
 Met de eigenschap useRedirectedUrl kunt u 302 omleiden (true) of uitschakelen (false).
 
