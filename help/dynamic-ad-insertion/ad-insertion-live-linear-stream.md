@@ -26,7 +26,7 @@ Primetime Ad Insertion ondersteunt een groot aantal standaard- en niet-standaard
 
 Neem contact op met de ondersteuningsvertegenwoordiger van Primetime voor meer informatie of andere ondersteunde actiefindelingen.
 
-## Ondersteuning voor gedeeltelijk afbreken van advertenties {#partial-ad-break-support}
+## Ondersteuning voor gedeeltelijk ad-einde {#partial-ad-break-support}
 
 Gedeeltelijke advertentie-einden kunnen worden gebruikt in situaties waarin een viewer een live/lineaire stream invoert nadat een advertentie-einde is gestart.  Als een viewer bijvoorbeeld een lange versie van 2:00 invoert en een onderbreking van 1:00 invoert, zorgt de gedeeltelijke invoeging en de invoeging van onderbreking ervoor dat de advertenties in de resterende tijd worden weergegeven. Zonder gedeeltelijke invoeging in een advertentie, worden tijdens het einde geen advertenties naar deze viewer verzonden. Met Primetime Ad Insertion kunt u de invoeging van delen en afbrekingen standaard inschakelen als de juiste tags aanwezig zijn in de mediastream(s).
 
