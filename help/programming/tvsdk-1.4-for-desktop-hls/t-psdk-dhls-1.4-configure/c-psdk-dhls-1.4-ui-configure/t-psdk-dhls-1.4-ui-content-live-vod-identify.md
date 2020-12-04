@@ -6,16 +6,19 @@ title: Identificeer of de inhoud live of VOD is
 uuid: 4d514c46-a1d0-4721-a423-92108126e37e
 translation-type: tm+mt
 source-git-commit: 040655d8ba5f91c98ed0584c08db226ffe1e0f4e
+workflow-type: tm+mt
+source-wordcount: '90'
+ht-degree: 0%
 
 ---
 
 
-# Identificeer of de inhoud live of VOD is{#identify-whether-the-content-is-live-or-vod}
+# Identificeer of de inhoud live of VOD{#identify-whether-the-content-is-live-or-vod} is
 
 In sommige gevallen moet u weten of de media-inhoud live of VOD is.
 
 1. Zorg ervoor dat de speler ten minste de status INITIALIZED heeft.
-1. Bepaal of de `MediaPlayerItem` inhoud live (true) of VOD (false) is.
+1. Bepaal of de `MediaPlayerItem`-inhoud live (true) of VOD (false) is.
 
    ```
    function get isLive():Boolean;
