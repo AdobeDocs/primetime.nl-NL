@@ -7,20 +7,23 @@ title: Lozy en oplossen inschakelen
 uuid: 91884eea-a622-4f5d-b6a8-36bb0050ba1d
 translation-type: tm+mt
 source-git-commit: bc35da8b258056809ceaf18e33bed631047bc81b
+workflow-type: tm+mt
+source-wordcount: '320'
+ht-degree: 0%
 
 ---
 
 
-# Lozy en oplossen inschakelen {#enable-lazy-ad-resolving}
+# {#enable-lazy-ad-resolving} lui inschakelen en oplossen
 
 U kunt de functie Oplossen via Lazy en laden in- of uitschakelen via het bestaande mechanisme voor Lazy en oplossen (de functie Oplossen via Lazy en oplossen is standaard uitgeschakeld).
 
-U kunt Lazy Ad oplossen in- of uitschakelen door [AdvertisingMetadata.setDelayLoading](https://help.adobe.com/en_US/primetime/api/psdk/javadoc_2.4/com/adobe/mediacore/metadata/AdvertisingMetadata.html#setDelayAdLoading-boolean-) aan te roepen met waar of onwaar.
+U kunt het oplossen van problemen in- of uitschakelen door [AdvertisingMetadata.setDelayLoading](https://help.adobe.com/en_US/primetime/api/psdk/javadoc_2.4/com/adobe/mediacore/metadata/AdvertisingMetadata.html#setDelayAdLoading-boolean-) aan te roepen met waar of onwaar.
 
-* Gebruik de methoden Boolean *hasDelayAdLoading* en *setDelayAdLoading* in AdvertisingMetadata om de timing van de advertentiesolutie en de plaatsing van advertenties op de tijdlijn te bepalen:
+* Gebruik de Booleaanse methoden *hasDelayAdLoading* en *setDelayAdLoading* in AdvertisingMetadata om de timing van de advertentiesolutie en de plaatsing van advertenties op de tijdlijn te bepalen:
 
-   * Als *hasDelayAdLoading* false retourneert, wacht TVSDK totdat alle advertenties zijn opgelost en geplaatst voordat wordt overgeschakeld naar de status PREPARED.
-   * Als *hasDelayAdLoading* true retourneert, lost TVSDK alleen de initiële advertenties en overgangen naar de status PREPARED op.
+   * Als *hasDelayAdLoading* vals terugkeert, wacht TVSDK tot alle advertenties worden opgelost en vóór overgang aan de VOORBEREIDDE staat worden geplaatst.
+   * Als *hasDelayAdLoading* waar terugkeert, lost TVSDK slechts de aanvankelijke advertenties en de overgangen aan de PREPARED staat op.
 
       * De resterende advertenties worden opgelost en tijdens het afspelen geplaatst.
    * Als *hasPreroll *of *hasLivePreroll* false retourneert, gaat TVSDK ervan uit dat er geen preroll-advertentie is en wordt het afspelen van de inhoud direct gestart. Deze zijn standaard ingesteld op true.
@@ -46,9 +49,9 @@ Methods:
     public Placement.Type getPlacementType() // Returns whether
 ```
 
-Als u advertenties nauwkeurig wilt spiegelen als aanwijzingen op een scrubbalk, luistert u naar de `TimelineEvent`gebeurtenis en tekent u de scrubbalk telkens wanneer u deze gebeurtenis ontvangt.
+Als u advertenties nauwkeurig wilt spiegelen als aanwijzingen op een scrubbalk, luistert u naar de gebeurtenis `TimelineEvent`en tekent u de scrubbalk telkens opnieuw wanneer u deze gebeurtenis ontvangt.
 
-Wanneer Lazy Ad Resolving voor VOD stromen wordt toegelaten, worden alle ad onderbrekingen geplaatst op de chronologie, nochtans, zullen veel van de ad onderbrekingen nog niet worden opgelost. De toepassing kan bepalen of deze markeringen al dan niet moeten worden getekend door de `TimelineMarker::getDuration()`muis te bedienen. Als de waarde groter is dan nul, zijn de advertenties in het ad-einde opgelost.
+Wanneer Lazy Ad Resolving voor VOD stromen wordt toegelaten, worden alle ad onderbrekingen geplaatst op de chronologie, nochtans, zullen veel van de ad onderbrekingen nog niet worden opgelost. De toepassing kan bepalen of deze markeringen al dan niet worden getekend door `TimelineMarker::getDuration()` te controleren. Als de waarde groter is dan nul, zijn de advertenties in het ad-einde opgelost.
 
 TVSDK verzendt deze gebeurtenis wanneer een ad-einde is opgelost en ook wanneer de speler overschakelt naar de status PREPARED.
 
