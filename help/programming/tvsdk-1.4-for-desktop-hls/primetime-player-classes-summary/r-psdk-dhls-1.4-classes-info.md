@@ -6,6 +6,9 @@ title: Info-klassen
 uuid: 491ea40b-5a8d-4b6a-b369-a8848c6bd9b6
 translation-type: tm+mt
 source-git-commit: 040655d8ba5f91c98ed0584c08db226ffe1e0f4e
+workflow-type: tm+mt
+source-wordcount: '233'
+ht-degree: 0%
 
 ---
 
@@ -50,7 +53,7 @@ Pakket: [com.adobe.mediacore.info](https://help.adobe.com/en_US/primetime/api/ps
   </tr> 
   <tr rowsep="0"> 
    <td colname="1"><span class="codeph"><a href="https://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls_1.4/com/adobe/mediacore/info/Track.html" format="html" scope="external"> Track</a></span></td> 
-   <td colname="2">Klasse die de trackabstractie definieert die moet worden gebruikt voor het definiëren van <span class="codeph"> Audiotrack</span> en <span class="codeph"> ClosedCaptionsTrack</span>. </td> 
+   <td colname="2">Klasse die de trackabstractie definieert die moet worden gebruikt voor het definiëren van <span class="codeph"> AudioTrack</span> en <span class="codeph"> ClosedCaptionsTrack</span>. </td> 
   </tr> 
  </tbody> 
 </table>
