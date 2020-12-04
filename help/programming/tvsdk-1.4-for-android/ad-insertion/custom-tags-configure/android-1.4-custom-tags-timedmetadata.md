@@ -29,27 +29,27 @@ De klasse biedt de volgende elementen:
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <span class="codeph"> id </span> </td> 
+   <td colname="col1"> <span class="codeph"> id  </span> </td> 
    <td colname="col02"> lang </td> 
    <td colname="col2"> Unieke id van de metagegevens met tijdslimiet. Deze waarde wordt meestal geëxtraheerd uit het kenmerk cue/tag-id. Anders wordt een unieke willekeurige waarde opgegeven. Gebruik <span class="codeph"> getId </span>. </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <span class="codeph"> metagegevens </span> </td> 
+   <td colname="col1"> <span class="codeph"> metagegevens  </span> </td> 
    <td colname="col02"> Metagegevens </td> 
    <td colname="col2"> De verwerkte/geëxtraheerde informatie uit de aangepaste tag playlist/manifest. Gebruik <span class="codeph"> getMetadata </span>. </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <span class="codeph"> name </span> </td> 
    <td colname="col02"> String </td> 
-   <td colname="col2"> De naam van de getimede metagegevens. Als het type <span class="codeph"> </span>TAG is, vertegenwoordigt de waarde de naam van het actiepunt/de tag. Als het type <span class="codeph"> ID3 </span>is, is het null. Gebruik <span class="codeph"> getName </span>. </td> 
+   <td colname="col2"> De naam van de getimede metagegevens. Wanneer het type <span class="codeph"> TAG </span> is, vertegenwoordigt de waarde de naam van het actiepunt/de tag. Als het type <span class="codeph"> ID3 </span> is, is het ongeldig. Gebruik <span class="codeph"> getName </span>. </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <span class="codeph"> tijd </span> </td> 
+   <td colname="col1"> <span class="codeph"> tijd  </span> </td> 
    <td colname="col02"> lang </td> 
    <td colname="col2"> De tijdpositie, in milliseconden, ten opzichte van het begin van de hoofdinhoud waar deze getimede metagegevens aanwezig zijn in de stream. Gebruik <span class="codeph"> getTime </span>. </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <span class="codeph"> type </span> </td> 
+   <td colname="col1"> <span class="codeph"> type  </span> </td> 
    <td colname="col02"> Type </td> 
    <td colname="col2"> Het type van de getimede meta-gegevens. Gebruik <span class="codeph"> getType </span>. 
     <ul id="ul_70FBFB33E9F846D8B38592560CCE9560"> 
