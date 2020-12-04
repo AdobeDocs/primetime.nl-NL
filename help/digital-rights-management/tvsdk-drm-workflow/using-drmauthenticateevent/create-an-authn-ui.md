@@ -4,6 +4,9 @@ title: Een gebruikersinterface voor verificatie maken
 uuid: 4744bac0-c36e-4b0a-b3fb-d81c7f2e7617
 translation-type: tm+mt
 source-git-commit: e60d285b9e30cdd19728e3029ecda995cd100ac9
+workflow-type: tm+mt
+source-wordcount: '188'
+ht-degree: 0%
 
 ---
 
@@ -12,7 +15,7 @@ source-git-commit: e60d285b9e30cdd19728e3029ecda995cd100ac9
 
 1. Maak een gebruikersinterface om de verificatiereferenties van de gebruiker op te halen.
 
-   Hier volgt een Flex-voorbeeld van een eenvoudige gebruikersinterface voor het ophalen van gebruikersgegevens. Het bestaat uit een deelvensterobject met twee `TextInput` objecten, één voor elke gebruikersnaam en wachtwoord. Het deelvenster bevat ook een knop waarmee de `credentials()` methode wordt gestart.
+   Hieronder ziet u een Flex-voorbeeld van een eenvoudige gebruikersinterface voor het ophalen van gebruikersgegevens. Het bestaat uit een deelvensterobject met twee `TextInput`-objecten, één voor elke gebruikersnaam en wachtwoord. Het deelvenster bevat ook een knop waarmee de methode `credentials()` wordt gestart.
 
    ```xml
    <mx:Panel x="236.5"  
@@ -41,9 +44,9 @@ source-git-commit: e60d285b9e30cdd19728e3029ecda995cd100ac9
    </mx:Panel>  
    ```
 
-1. Schrijf de `credentials()` methode om de door de gebruiker opgegeven verificatiewaarden te verwerken.
+1. Schrijf de methode `credentials()` om de door de gebruiker opgegeven verificatiewaarden te verwerken.
 
-   De `credentials()` methode is een door de gebruiker gedefinieerde methode die de waarden voor gebruikersnaam en wachtwoord doorgeeft aan de `setDRMAuthenticationCredentials()` methode. Nadat de waarden zijn doorgegeven, worden de waarden van de `credentials()` `TextInput` objecten opnieuw ingesteld.
+   De methode `credentials()` is een door de gebruiker gedefinieerde methode die de waarden voor gebruikersnaam en wachtwoord doorgeeft aan de methode `setDRMAuthenticationCredentials()`. Nadat de waarden zijn doorgegeven, herstelt de methode `credentials()` de waarden van de objecten `TextInput`.
 
    ```
    <mx:Script> 
@@ -56,7 +59,7 @@ source-git-commit: e60d285b9e30cdd19728e3029ecda995cd100ac9
    </mx:Script> 
    ```
 
-   U kunt dit type eenvoudige interface implementeren door het deelvenster als onderdeel van een nieuwe status op te nemen. De nieuwe status komt voort uit de basisstatus wanneer het `DRMAuthenticateEvent` object wordt gegenereerd. Het volgende voorbeeld bevat een `VideoDisplay` object met een bronkenmerk dat naar een beveiligd videobestand wijst. In dit geval wordt de `credentials()` methode gewijzigd zodat deze ook de toepassing naar de basisstatus retourneert. Deze methode doet dit nadat de gebruikersgegevens zijn doorgegeven en de waarden van het TextInput-object opnieuw zijn ingesteld.
+   U kunt dit type eenvoudige interface implementeren door het deelvenster als onderdeel van een nieuwe status op te nemen. De nieuwe status komt voort uit de basisstatus wanneer het object `DRMAuthenticateEvent` wordt gegenereerd. Het volgende voorbeeld bevat een `VideoDisplay`-object met een bronkenmerk dat naar een beveiligd videobestand wijst. In dit geval wordt de methode `credentials()` gewijzigd zodat de toepassing ook naar de basisstatus wordt geretourneerd. Deze methode doet dit nadat de gebruikersgegevens zijn doorgegeven en de waarden van het TextInput-object opnieuw zijn ingesteld.
 
    ```xml
    <?xml version="1.0" encoding="utf-8"?> 
