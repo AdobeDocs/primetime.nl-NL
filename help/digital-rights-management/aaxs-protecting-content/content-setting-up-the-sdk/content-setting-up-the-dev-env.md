@@ -1,28 +1,31 @@
 ---
-description: Kopieer bestanden van de dvd om Adobe® Access™ voor gebruik in te stellen. Deze bestanden bevatten JAR-bestanden met code, certificaten en klassen van derden. Vraag bovendien een certificaat aan bij Adobe Systems Incorporated. U krijgt meerdere referenties toegewezen die worden gebruikt om de integriteit van inhoud, licenties en communicatie tussen de client en de server in het pakket te beschermen.
-seo-description: Kopieer bestanden van de dvd om Adobe® Access™ voor gebruik in te stellen. Deze bestanden bevatten JAR-bestanden met code, certificaten en klassen van derden. Vraag bovendien een certificaat aan bij Adobe Systems Incorporated. U krijgt meerdere referenties toegewezen die worden gebruikt om de integriteit van inhoud, licenties en communicatie tussen de client en de server in het pakket te beschermen.
+description: Kopieer bestanden van de dvd om de Adobe® Access™ voor gebruik in te stellen. Deze bestanden bevatten JAR-bestanden met code, certificaten en klassen van derden. Vraag bovendien een certificaat aan bij Adobe Systems Incorporated. U krijgt meerdere referenties toegewezen die worden gebruikt om de integriteit van inhoud, licenties en communicatie tussen de client en de server in het pakket te beschermen.
+seo-description: Kopieer bestanden van de dvd om de Adobe® Access™ voor gebruik in te stellen. Deze bestanden bevatten JAR-bestanden met code, certificaten en klassen van derden. Vraag bovendien een certificaat aan bij Adobe Systems Incorporated. U krijgt meerdere referenties toegewezen die worden gebruikt om de integriteit van inhoud, licenties en communicatie tussen de client en de server in het pakket te beschermen.
 seo-title: De ontwikkelomgeving instellen
 title: De ontwikkelomgeving instellen
 uuid: 1f192783-9c9a-4342-909a-4881248a85ad
 translation-type: tm+mt
 source-git-commit: ffb993889a78ee068b9028cb2bd896003c5d4d4c
+workflow-type: tm+mt
+source-wordcount: '466'
+ht-degree: 0%
 
 ---
 
 
-# De SDK instellen {#setting-up-the-sdk}
+# SDK {#setting-up-the-sdk} instellen
 
-Kopieer bestanden van de dvd om Adobe® Access™ voor gebruik in te stellen. Deze bestanden bevatten JAR-bestanden met code, certificaten en klassen van derden. Vraag bovendien een certificaat aan bij Adobe Systems Incorporated. U krijgt meerdere referenties toegewezen die worden gebruikt om de integriteit van inhoud, licenties en communicatie tussen de client en de server in het pakket te beschermen.
+Kopieer bestanden van de dvd om de Adobe® Access™ voor gebruik in te stellen. Deze bestanden bevatten JAR-bestanden met code, certificaten en klassen van derden. Vraag bovendien een certificaat aan bij Adobe Systems Incorporated. U krijgt meerdere referenties toegewezen die worden gebruikt om de integriteit van inhoud, licenties en communicatie tussen de client en de server in het pakket te beschermen.
 
-De SDK van Adobe Access is beschikbaar in twee typen:
+De Adobe Access SDK is beschikbaar in twee typen:
 * Adobe Access Core SDK
 * Adobe Access Professional SDK
 
-In de volgende tabel ziet u een eenvoudige vergelijking van Adobe Access-SDK&#39;s:
+De volgende lijst toont een basisvergelijking van Adobe Access SDKs:
 
 | Functie | Adobe Access Core SDK | Adobe Access Professional SDK |
 |---|---|---|
-| Flash Access 2.0-functies | Beschikbaar | Beschikbaar |
+| Functies van Flash Access 2.0 | Beschikbaar | Beschikbaar |
 | Toetsrotatie | - | Beschikbaar |
 | Domeinondersteuning | Beschikbaar | Beschikbaar |
 | Enhanced License Chaining | Beschikbaar | Beschikbaar |
@@ -54,4 +57,4 @@ U hebt de volgende JAR-bestanden van derden nodig die ook op de dvd staan in de 
 
 Voor betere prestaties, kunt u naar keuze inheemse steun voor cryptografische verrichtingen toelaten door de platform-specifieke bibliotheken op te stellen die in de &quot;derde/cryptoj&quot;omslag van SDK worden gevestigd. Als u native ondersteuning wilt inschakelen, voegt u de bibliotheek voor uw platform (jsafe.dll voor Windows of libjsafe.so voor Linux) toe aan het pad. De 32-bits en 64-bits versies van deze bibliotheken zijn beschikbaar. (De 64-bits versie mag alleen worden gebruikt als u een 64-bits besturingssysteem hebt en u de 64-bits versie van Java uitvoert).
 
-Bovendien is een optioneel deel van de SDK adobe-flashaccess-lcrm.jar. Dit bestand is alleen nodig voor functionaliteit die gerelateerd is aan de compatibiliteit met Adobe Flash Media Rights Management Server (FMRMS) 1.x. Als u eerder FMRMS 1.x hebt geïmplementeerd en uw met FMRMS beveiligde inhoud niet opnieuw wilt verpakken, moet u ondersteuning toevoegen aan uw licentieserver zodat deze oude inhoud en clients kan verwerken.
+Bovendien is een optioneel deel van de SDK adobe-flashaccess-lcrm.jar. Dit bestand is alleen nodig voor functionaliteit die gerelateerd is aan Adobe Flash Media Rights Management Server (FMRMS) 1.x-compatibiliteit. Als u eerder FMRMS 1.x hebt geïmplementeerd en uw met FMRMS beveiligde inhoud niet opnieuw wilt verpakken, moet u ondersteuning toevoegen aan uw licentieserver zodat deze oude inhoud en clients kan verwerken.
