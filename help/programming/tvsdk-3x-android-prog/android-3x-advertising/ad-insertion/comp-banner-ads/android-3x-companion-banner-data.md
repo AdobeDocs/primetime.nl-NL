@@ -6,22 +6,25 @@ title: Bannergegevens van de onderneming
 uuid: f54aecea-5e11-45dd-97d0-5774ca631a4d
 translation-type: tm+mt
 source-git-commit: bc35da8b258056809ceaf18e33bed631047bc81b
+workflow-type: tm+mt
+source-wordcount: '172'
+ht-degree: 0%
 
 ---
 
 
-# Bannergegevens van de onderneming {#companion-banner-data}
+# Companion banner data {#companion-banner-data}
 
 De inhoud van een AdAsset beschrijft een bijbehorende banner.
 
 <!--<a id="section_D730B4FD6FD749E9860B6A07FC110552"></a>-->
 
-Elk element `AdAsset` biedt informatie over de weergave van het element.
+Elke `AdAsset` biedt informatie over de weergave van het element.
 
 <table id="table_760C885E2DCA4BE983CC57FDA7BD5B14"> 
  <thead> 
   <tr> 
-   <th colname="col1" class="entry"> <b>Beschikbare informatie </b></th> 
+   <th colname="col1" class="entry"> <b>Beschikbare informatie  </b></th> 
    <th colname="col2" class="entry"> <b>Beschrijving</b> </th> 
   </tr> 
  </thead>
@@ -44,7 +47,7 @@ Elk element `AdAsset` biedt informatie over de weergave van het element.
   </tr> 
   <tr> 
    <td colname="col1"> statische URL </td> 
-   <td colname="col2"> <p>Soms heeft de bijbehorende banner ook een <span class="codeph"> statischeURL</span> die een directe URL is naar de afbeelding of naar een <span class="codeph"> .swf</span> (flash banner). </p> <p>Als u html of iframe niet wilt gebruiken, kunt u een directe URL naar een afbeelding of SWF gebruiken om de banner in het Flash-werkgebied weer te geven. In dit geval kunt u de banner weergeven met de <span class="codeph"> statische URL</span> . </p> <p>Belangrijk:  U moet controleren of de statische URL een geldige tekenreeks is, omdat deze eigenschap mogelijk niet altijd beschikbaar is. </p> </td> 
+   <td colname="col2"> <p>Soms heeft de bijbehorende banner ook een <span class="codeph"> staticURL</span> die een directe URL is naar de afbeelding of naar een <span class="codeph"> .swf</span> (flash banner). </p> <p>Als u html of iframe niet wilt gebruiken, kunt u een directe URL naar een afbeelding of SWF gebruiken om de banner in plaats daarvan in het werkgebied van de Flash weer te geven. In dit geval kunt u de banner weergeven met de <span class="codeph"> staticURL</span>. </p> <p>Belangrijk:  U moet controleren of de statische URL een geldige tekenreeks is, omdat deze eigenschap mogelijk niet altijd beschikbaar is. </p> </td> 
   </tr> 
  </tbody> 
 </table>
