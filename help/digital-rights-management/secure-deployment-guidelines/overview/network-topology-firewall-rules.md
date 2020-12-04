@@ -13,7 +13,7 @@ ht-degree: 0%
 ---
 
 
-# Firewall-regels {#firewall-rules}
+# Firewallregels {#firewall-rules}
 
 Houd rekening met de volgende typen URL&#39;s wanneer u uw firewallregels bepaalt:
 
