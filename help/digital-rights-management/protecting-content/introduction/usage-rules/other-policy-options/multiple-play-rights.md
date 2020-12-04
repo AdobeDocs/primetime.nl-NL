@@ -4,11 +4,14 @@ title: Meerdere spelrechten
 uuid: 90f898bf-ffa2-44f0-a01a-0af8868500ee
 translation-type: tm+mt
 source-git-commit: 53654b740b03c6a79394d30704a41186d4655237
+workflow-type: tm+mt
+source-wordcount: '66'
+ht-degree: 0%
 
 ---
 
 
-# Meerdere spelrechten {#multiple-play-rights}
+# Meerdere afspeelrechten {#multiple-play-rights}
 
 U kunt de parameter met meerdere afspeelrechten opgeven voor verschillende gebruiksregels die u toepast op verschillende platforms of toepassingen.
 
