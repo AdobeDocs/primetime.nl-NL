@@ -4,13 +4,16 @@ title: Inhoud van levering/pakket voor code
 uuid: 13de2fd4-9079-496c-a087-25176c118864
 translation-type: tm+mt
 source-git-commit: 7e8df034035fe465fbe403949ef828e7811ced2e
+workflow-type: tm+mt
+source-wordcount: '98'
+ht-degree: 0%
 
 ---
 
 
-# Inhoud van levering/pakket voor code{#code-delivery-package-contents}
+# Inhoud van code leveren / Pakket{#code-delivery-package-contents}
 
-Het pakket Adobe Primetime DRM On Premises Individualization Server bevat het volgende:
+Het Adobe Primetime DRM On Premises Individualization Server-pakket bevat het volgende:
 
 * [!DNL flashaccess.war] - De Individualization Server
 * [!DNL flashaccess-kgs.war] - De optionele Key Generation Server
@@ -25,7 +28,7 @@ Het pakket Adobe Primetime DRM On Premises Individualization Server bevat het vo
    * [!DNL jsafe.dll] (Windows)
 
 * [!DNL adobe-flashaccess-i15n-setup.jar] - Een hulpprogramma voor het coderen van serverreferenties voor wachtwoorden
-* [!DNL ROOT] - bevat een [!DNL crossdomain.xml] bestand
+* [!DNL ROOT] - bevat een  [!DNL crossdomain.xml] bestand
 
 * ECI-cachebestanden - vooraf gedownload
 * [!DNL addIndivCert.py] - Een script voor het bijwerken van de vertrouwensbasis van een licentieserver voor ondersteuning van individualisaties op locatie
