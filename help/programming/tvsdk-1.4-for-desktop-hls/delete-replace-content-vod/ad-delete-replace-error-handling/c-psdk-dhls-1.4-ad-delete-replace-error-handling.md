@@ -6,34 +6,37 @@ title: Foutafhandeling voor verwijderen en vervangen van toevoegen
 uuid: ab153591-0011-44b4-87f9-be0302c2295e
 translation-type: tm+mt
 source-git-commit: adef0bbd52ba043f625f38db69366c6d873c586d
+workflow-type: tm+mt
+source-wordcount: '333'
+ht-degree: 0%
 
 ---
 
 
-# Foutafhandeling voor verwijderen en vervangen van toevoegen {#ad-deletion-and-replacement-error-handling}
+# Afhandeling van verwijderings- en vervangingsfouten {#ad-deletion-and-replacement-error-handling} toevoegen
 
 TVSDK handelt fouten in het tijdbereik af op basis van het specifieke probleem, door de onjuist gedefinieerde tijdbereiken samen te voegen of opnieuw te ordenen.
 
-TVSDK behandelt `timeRanges` fouten door standaardsamenvoeging en herschikking uit te voeren. Eerst, sorteert het klant-bepaalde tijdwaaiers door de *begintijd* . Op basis van deze sorteervolgorde worden aangrenzende bereiken samengevoegd en worden deze samengevoegd als er subsets en snijpunten zijn tussen de bereiken.
+TVSDK behandelt `timeRanges` fouten door standaardsamenvoeging en opnieuw rangschikken te doen. Eerst worden door de klant gedefinieerde tijdbereiken gesorteerd op de tijd *begin*. Op basis van deze sorteervolgorde worden aangrenzende bereiken samengevoegd en worden deze samengevoegd als er subsets en snijpunten zijn tussen de bereiken.
 
 TVSDK verwerkt fouten in het tijdbereik als volgt:
 
 * Buiten bestelling - TVSDK past de tijdbereiken opnieuw aan.
 * Subset - TVSDK voegt de tijdbereiksubsets samen.
 * Doorsnede - TVSDK voegt de elkaar kruisende tijdbereiken samen.
-* Conflict tussen bereik en bereik vervangen: TVSDK kiest de vervangingsduur vanaf de oudste `timeRange` in de conflicterende groep.
+* Conflict tussen bereiken vervangen - TVSDK kiest de vervangingsduur vanaf de vroegste `timeRange` in de conflicterende groep.
 
 TVSDK handelt de signalerende-wijze conflicten als volgt af:
 
 * Als de waaiers van de VERVANGING worden bepaald, verandert TVSDK automatisch de signalerende wijze in CUSTOM_RANGE.
-* Als DELETE waaiers of de waaiers van de MARKERING worden bepaald en de signalerende wijze CUSTOM_RANGE is, schrapt TVSDK of merkt deze waaiers. Er is geen invoeging in dit geval.
-* Als een DELETE-bereik of een MARK-bereik een vervangende duur definieert, negeert TVSDK deze duur.
+* Als de waaiers van de DELETE of van het Merk worden bepaald en de signalerende wijze CUSTOM_RANGE is, schrapt TVSDK of merkt deze waaiers. Er is geen invoeging in dit geval.
+* Als een bereik van DELETE of een MARK-bereik een vervangingsduur definieert, negeert TVSDK deze duur.
 
-Wanneer de server niet geldig retourneert `AdBreaks`:
+Wanneer de server geen geldige `AdBreaks` retourneert:
 
-* TVSDK genereert en verwerkt een `NOPTimelineOperation` voor het lege veld `AdBreak`. Geen advertentie wordt afgespeeld.
+* TVSDK genereert en verwerkt een `NOPTimelineOperation` voor de lege `AdBreak`. Geen advertentie wordt afgespeeld.
 
-## Voorbeelden van tijdbereikfouten {#time-range-error-examples}
+## Voorbeelden van fouten in tijdbereik {#time-range-error-examples}
 
 TVSDK reageert op onjuiste tijdbereikspecificaties door de tijdbereiken waar nodig samen te voegen of te vervangen.
 
