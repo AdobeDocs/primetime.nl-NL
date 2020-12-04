@@ -6,6 +6,9 @@ title: Aangepaste ad-events
 uuid: 78e2ccf4-5943-4c60-84be-623182d9a300
 translation-type: tm+mt
 source-git-commit: 040655d8ba5f91c98ed0584c08db226ffe1e0f4e
+workflow-type: tm+mt
+source-wordcount: '210'
+ht-degree: 0%
 
 ---
 
@@ -23,36 +26,36 @@ De TVSDK-speler verzendt gebeurtenissen om de status van de aangepaste advertent
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <span class="codeph"> AdClickThru </span> </td> 
+   <td colname="col1"> <span class="codeph"> AdClickThru  </span> </td> 
    <td colname="col2"> Het aantal keren dat de viewer op een aangepaste advertentie heeft geklikt. </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <span class="codeph"> AdError </span> </td> 
+   <td colname="col1"> <span class="codeph"> AdError  </span> </td> 
    <td colname="col2"> Er is een fout opgetreden met de aangepaste advertentie. </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <span class="codeph"> AdLoaded </span> </td> 
+   <td colname="col1"> <span class="codeph"> AdLoaded  </span> </td> 
    <td colname="col2"> De aangepaste advertentie is geladen.  </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <span class="codeph"> AdLoading </span> </td> 
+   <td colname="col1"> <span class="codeph"> AdLoading  </span> </td> 
    <td colname="col2"> De aangepaste advertentie wordt geladen. </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <span class="codeph"> AdPaused </span> </td> 
+   <td colname="col1"> <span class="codeph"> AdPaused  </span> </td> 
    <td colname="col2"> De aangepaste advertentie is gepauzeerd. </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <span class="codeph"> AdResumed </span> </td> 
+   <td colname="col1"> <span class="codeph"> AdResumed  </span> </td> 
    <td colname="col2"> De aangepaste advertentie is na een pauze verder afgespeeld. </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <span class="codeph"> Afspelen </span> </td> 
+   <td colname="col1"> <span class="codeph"> Afspelen  </span> </td> 
    <td colname="col2"> De aangepaste advertentie wordt afgespeeld. </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <span class="codeph"> AdProgress </span> </td> 
-   <td colname="col2"> <p>De aangepaste advertentiespeler informeert de TVSDK-speler over de voortgang van de aangepaste advertentie. &amp;nbsp; </p> <p>De <span class="codeph"> huidigeTijd </span> en de <span class="codeph"> totaleTijd </span> van de advertentie worden overgegaan met deze gebeurtenis. </p> </td> 
+   <td colname="col1"> <span class="codeph"> AdProgress  </span> </td> 
+   <td colname="col2"> <p>De aangepaste advertentiespeler informeert de TVSDK-speler over de voortgang van de aangepaste advertentie. &amp;nbsp; </p> <p>De <span class="codeph"> currentTime </span> en <span class="codeph"> totalTime </span> van de advertentie worden met deze gebeurtenis overgegaan. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> AdStarted </td> 
