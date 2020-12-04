@@ -1,8 +1,8 @@
 ---
 description: 'null'
 seo-description: 'null'
-seo-title: Lijst toestaan voor SWF-bestanden van Adobe® Flash® Player
-title: Lijst toestaan voor SWF-bestanden van Adobe® Flash® Player
+seo-title: Lijst van gewenste personen voor SWF-bestanden van Adobe® Flash® Player
+title: Lijst van gewenste personen voor SWF-bestanden van Adobe® Flash® Player
 uuid: 670d8ccf-5145-499f-a6e3-d5d89562291e
 translation-type: tm+mt
 source-git-commit: 9d2e046ae259c05fb4c278f464c9a26795e554fc
@@ -13,9 +13,9 @@ ht-degree: 0%
 ---
 
 
-# Lijst toestaan voor SWF-bestanden van Adobe® Flash® Player{#allowlist-for-adobe-flash-player-swfs}
+# Lijst van gewenste personen voor Adobe® Flash® Player SWFs{#allowlist-for-adobe-flash-player-swfs}
 
-In deze lijst voor toestaan worden de SWF-bestanden opgegeven die inhoud mogen afspelen.
+Deze lijst van gewenste personen geeft de SWF-bestanden aan die inhoud mogen afspelen.
 
 Geef het SWF-bestand op met een SWF-URL of een SHA-256-overzicht die is berekend met de inhoud van het SWF-bestand. Als u de SHA-256-samenvatting gebruikt, geeft deze gebruiksregel ook de maximale tijdsduur op waarbinnen de client het SWF-bestand kan downloaden en verifiëren.
 
