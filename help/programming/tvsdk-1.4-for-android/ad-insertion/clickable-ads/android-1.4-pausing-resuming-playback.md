@@ -6,15 +6,18 @@ title: Afspelen onderbreken en hervatten
 uuid: a8fec392-3a71-4086-abf1-23522d023680
 translation-type: tm+mt
 source-git-commit: 5908e5a3521966496aeec0ef730e4a704fddfb68
+workflow-type: tm+mt
+source-wordcount: '67'
+ht-degree: 0%
 
 ---
 
 
-# Afspelen onderbreken en hervatten {#pause-and-resume-playback}
+# Afspelen pauzeren en hervatten {#pause-and-resume-playback}
 
 Wanneer een gebruiker op een advertentie klikt, moet de toepassing het afspelen van de hoofdvideo-inhoud pauzeren.
 
-Overschrijf de `onPause` Android-activiteit en `onResume` de Android-activiteit.
+Overschrijf `onPause` en `onResume` van de Android-activiteit.
 
 ```java
 @Override 
