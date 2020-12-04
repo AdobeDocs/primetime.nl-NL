@@ -1,22 +1,25 @@
 ---
-description: Browser-TVSDK verzendt factuurgegevens naar Adobe in XML-indeling.
-seo-description: Browser-TVSDK verzendt factuurgegevens naar Adobe in XML-indeling.
+description: Browser TVSDK verzendt factuurmetriek naar Adobe in XML-indeling.
+seo-description: Browser TVSDK verzendt factuurmetriek naar Adobe in XML-indeling.
 seo-title: Factureringsgegevens verzenden
 title: Factureringsgegevens verzenden
 uuid: ed2638d2-7894-4840-b31a-51e48e0a3f49
 translation-type: tm+mt
 source-git-commit: 040655d8ba5f91c98ed0584c08db226ffe1e0f4e
+workflow-type: tm+mt
+source-wordcount: '75'
+ht-degree: 0%
 
 ---
 
 
 # Factureringsgegevens verzenden{#transmit-billing-metrics}
 
-Browser-TVSDK verzendt factuurgegevens naar Adobe in XML-indeling.
+Browser TVSDK verzendt factuurmetriek naar Adobe in XML-indeling.
 
 <!--<a id="example_13ABDB1CC0B549968A534765378DA3A0"></a>-->
 
-Als u een hulpprogramma voor het vastleggen van netwerken gebruikt om de statistische Browser-TVSDK-verzendingen naar Adobe te controleren, ziet u bijvoorbeeld de volgende eenheden:
+Als u een netwerk vangt hulpmiddel gebruikt om de Browser van statistieken te controleren TVSDK brengt naar Adobe over, zou u eenheden als het volgende moeten zien:
 
 ```
 <?xml version="1.0" encoding="UTF-8"?>
@@ -40,4 +43,4 @@ Als u een hulpprogramma voor het vastleggen van netwerken gebruikt om de statist
 </request>
 ```
 
-De booleaanse eigenschappen `drmProtected`, `adsEnabled`en `midrollEnabled` worden alleen weergegeven als ze waar zijn.
+De booleaanse eigenschappen `drmProtected`, `adsEnabled` en `midrollEnabled` worden alleen weergegeven als ze waar zijn.
