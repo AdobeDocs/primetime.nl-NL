@@ -6,6 +6,9 @@ seo-description: Deze workflow is een afwijking van de meeste bestaande DRM-syst
 uuid: b313594b-0feb-4f27-bf02-f04b955e2140
 translation-type: tm+mt
 source-git-commit: 17a492d30c65b1b5e12419f04afa0116654b99fc
+workflow-type: tm+mt
+source-wordcount: '210'
+ht-degree: 0%
 
 ---
 
@@ -16,10 +19,10 @@ Deze workflow is een afwijking van de meeste bestaande DRM-systemen, aangezien h
 
 ![](assets/ECEK_Workflow.PNG)
 
-1. (Pakket) De AXS Java SDK wordt voorzien van een CEK en een CEK ID.
+1. (Pakket) De AXS Java SDK wordt geleverd met een CEK- en een CEK-id.
 1. (Pakket) De CEK wordt gebruikt om inhoud te coderen.
 1. (Pakket) De CEK-id wordt ingevoegd in de DRM-metagegevens van de inhoud.
 1. Het apparaat probeert inhoud af te spelen door een licentie aan te vragen bij de AXS-server.
 1. (Licentieverlening) De AXS-server extraheert de CEK-id uit de metagegevens van de inhoud.
 1. De server AXS wint CEK van CKMS terug.
-1. (Licentieverlening) De AXS-server geeft aan het apparaat een licentie af die de CEK bevat.
+1. (Licentieverlening) De AXS-server geeft het apparaat een licentie met de CEK.
