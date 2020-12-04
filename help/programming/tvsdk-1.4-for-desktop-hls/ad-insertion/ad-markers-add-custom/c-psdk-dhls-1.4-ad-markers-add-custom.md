@@ -6,6 +6,9 @@ title: Aangepaste advertentiemarkeringen toevoegen
 uuid: 7cf76e76-965c-4ee4-a311-e28b5a3b5046
 translation-type: tm+mt
 source-git-commit: adef0bbd52ba043f625f38db69366c6d873c586d
+workflow-type: tm+mt
+source-wordcount: '321'
+ht-degree: 0%
 
 ---
 
@@ -18,7 +21,7 @@ Deze functie is vooral handig wanneer inhoud wordt opgenomen van bijvoorbeeld ee
 
 Mogelijk kunt u de informatie die betrekking heeft op de positie van de periode van ad-inhoud opvragen bij andere out-of-band bronnen, zoals externe CMS-systemen. U kunt aangepaste markeertekens definiëren waarmee deze out-of-band informatie kan worden doorgegeven aan het tijdlijnbeheersubsysteem. Het is de bedoeling om de inhoudssecties te markeren die overeenkomen met de opgegeven inhoud met betrekking tot advertentie, zodat alle ad-specifieke afspeelgebeurtenissen op dezelfde manier worden geactiveerd als wanneer deze aangepaste tijdvakken expliciet op de tijdlijn van de speler werden geplaatst.
 
-Het bijhouden van advertenties wordt niet intern door TVSDK afgehandeld, bijvoorbeeld wanneer advertenties door Adobe Primetime en door beslissingen worden opgelost (voorheen Auditude). TVSDK biedt echter de volgende abstracties die bepalen hoe ad-gerelateerde inhoud op de tijdlijn wordt weergegeven:
+Het bijhouden van advertenties wordt niet intern afgehandeld door TVSDK, bijvoorbeeld wanneer advertenties worden opgelost door Adobe Primetime en door een beslissing (voorheen Auditude). TVSDK biedt echter de volgende abstracties die bepalen hoe ad-gerelateerde inhoud op de tijdlijn wordt weergegeven:
 
 * Het ad-einde
 
@@ -27,4 +30,4 @@ Het bijhouden van advertenties wordt niet intern door TVSDK afgehandeld, bijvoor
 
 Afspeelgebeurtenissen worden afzonderlijk geactiveerd voor ad-einden en advertenties op het begin- en eindpunt voor elke advertentie.
 
-TVSDK verzendt en volgt gebeurtenissen naar uw toepassing, zodat u uw eigen traceringslogica kunt implementeren. Als u aangepaste advertentiemarkeringen instelt, ontvangt u de gebeurtenissen `AD_BREAK_STARTED`, `AD_STARTED`, `AD_PROGRESS`, `AD_COMPLETED`en `AD_BREAK_COMPLETED` gebeurtenissen.
+TVSDK verzendt en volgt gebeurtenissen naar uw toepassing, zodat u uw eigen traceringslogica kunt implementeren. Als u aangepaste advertentiemarkeringen instelt, ontvangt u de gebeurtenissen `AD_BREAK_STARTED`, `AD_STARTED`, `AD_PROGRESS`, `AD_COMPLETED` en `AD_BREAK_COMPLETED`.
