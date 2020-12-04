@@ -4,11 +4,14 @@ title: Terminologie en kernbegrippen
 uuid: dc269873-7b63-4c18-bada-5338f4da0edd
 translation-type: tm+mt
 source-git-commit: 7e8df034035fe465fbe403949ef828e7811ced2e
+workflow-type: tm+mt
+source-wordcount: '669'
+ht-degree: 0%
 
 ---
 
 
-# Terminologie en kernbegrippen{#terminology-and-core-concepts}
+# Terminologie en kernconcepten{#terminology-and-core-concepts}
 
 In dit document worden de volgende termen en concepten gebruikt:
 
@@ -18,15 +21,15 @@ De *consument* is de eindgebruiker die inhoud downloadt of stroomt.
 
 **Inhoud**
 
-*Inhoud* bestaat uit digitale audio- of videobestanden.
+*De* inhoud bestaat uit digitale audio- of videobestanden.
 
 **Inhoudscoderingssleutel**
 
-De CEK ( *Content Encryption Key* ) is een cryptografische sleutel die wordt gebruikt om de inhoud te versleutelen.
+De *Content Encryption Key* (CEK) is een cryptografische sleutel die wordt gebruikt om de inhoud te versleutelen.
 
 **Eigenaren van inhoud**
 
-*Eigenaars* van inhoud zijn de zakelijke entiteiten die eigenaar zijn van het copyright van de inhoud. Dit kunnen grote filmstudio&#39;s zijn, of kleinere, onafhankelijke producenten van films of andere audiovisuele inhoud.
+*Inhoud* is eigendom van de zakelijke entiteiten die eigenaar zijn van het copyright van de inhoud. Dit kunnen grote filmstudio&#39;s zijn, of kleinere, onafhankelijke producenten van films of andere audiovisuele inhoud.
 
 **Inhoud verpakken**
 
@@ -34,7 +37,7 @@ De CEK ( *Content Encryption Key* ) is een cryptografische sleutel die wordt geb
 
 **Digitaal certificaat**
 
-*Digitale certificaten* (ook wel *certificaten* genoemd) binden een entiteit, zoals een individu, organisatie of systeem, aan een specifiek openbaar en privé sleutelpaar. Digitale certificaten kunnen worden beschouwd als elektronische referenties waarmee de identiteit van een individu, systeem of organisatie wordt geverifieerd.
+*Digitale certificaten*  (ook wel  *certificaten* genoemd) binden een entiteit, zoals een individu, organisatie of systeem, aan een specifiek openbaar en privé sleutelpaar. Digitale certificaten kunnen worden beschouwd als elektronische referenties waarmee de identiteit van een individu, systeem of organisatie wordt geverifieerd.
 
 **Digitale handtekening**
 
@@ -42,11 +45,11 @@ Een *digitale handtekening* bindt de identiteit van de uitgever aan de inhoud di
 
 **Distributeur**
 
-*Distributeurs* (ook wel *contentdistributeurs* of* detailhandelaren* genoemd) zijn zakelijke entiteiten die distributierechten van eigenaars van inhoud veiligstellen om inhoud aan consumenten te publiceren en te verspreiden. In sommige gevallen is dezelfde entiteit zowel de eigenaar van de inhoud als de distributeur van de inhoud.
+*Distributeurs*  (ook wel  *contentdistributeur (** detailhandelaren) genoemd) zijn zakelijke entiteiten die distributierechten van eigenaars van inhoud veiligstellen om inhoud aan consumenten te publiceren en te verspreiden. In sommige gevallen is dezelfde entiteit zowel de eigenaar van de inhoud als de distributeur van de inhoud.
 
 **DRM-metagegevens**
 
-Informatie die de client (dus Adobe® Flash® Player, Adobe® AIR® runtime en Primetime client) verzendt om de gevraagde inhoud te identificeren.
+Informatie die de client (Adobe® Flash® Player, Adobe® AIR® runtime en Primetime client) verzendt om de gevraagde inhoud te identificeren.
 
 **Licentie**
 
@@ -54,7 +57,7 @@ Een *license *is een gegevensstructuur die een gecodeerde sleutel bevat die word
 
 **Vergunning verkrijgen**
 
-*Vergunningsverwerving* is het proces waarbij een licentie wordt verkregen waarmee de consument beveiligde inhoud kan decoderen en bekijken volgens een set gebruiksregels. Licentieaanschaf doet zich voor wanneer een client informatie met de gevraagde inhoud (de *DRM-metagegevens*) en het machinecertificaat (de computer van de consument identificeren) naar de licentieserver verzendt (zie hieronder).
+*Licentieverwerving* is het proces waarbij een licentie wordt aangeschaft waarmee de consument beveiligde inhoud kan decoderen en weergeven volgens een set gebruiksregels. Licentieaanschaf doet zich voor wanneer een client informatie met de gevraagde inhoud (de *DRM-metagegevens*) en het machinecertificaat (die de computer van de consument identificeert) naar de licentieserver verzendt (zie hieronder).
 
 **Licentieserver**
 
@@ -70,8 +73,8 @@ Het beleid wordt gecreeerd gebruikend Primetime DRM SDK.
 
 **Beveiligde inhoud**
 
-*Beveiligde inhoud* (ook wel *verpakte inhoud* genoemd) verwijst naar video-inhoud die is gecodeerd met Primetime DRM SDK of andere ondersteunde gereedschappen.
+*Beveiligde inhoud*  (ook wel  *verpakte inhoud* genoemd) verwijst naar video-inhoud die is gecodeerd met Primetime DRM SDK of andere ondersteunde gereedschappen.
 
 **Detailhandelaars**
 
-Zie de ingang voor *verdelers* vroeger in deze sectie.
+Zie de vermelding voor *distributeurs* eerder in deze sectie.
