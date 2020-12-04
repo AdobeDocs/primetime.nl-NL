@@ -6,6 +6,9 @@ title: Advertentie laden voor een DVR-venster
 uuid: 67bc3924-3d17-4d1a-b9a7-be8d0488a970
 translation-type: tm+mt
 source-git-commit: 5908e5a3521966496aeec0ef730e4a704fddfb68
+workflow-type: tm+mt
+source-wordcount: '245'
+ht-degree: 0%
 
 ---
 
@@ -24,11 +27,11 @@ Wanneer een gebruiker inhoud begint te bekijken aan het begin van een DVR-stream
 
 U kunt als volgt een DVR-venster besturen en laden:
 
-Als u alle advertenties voor de gehele stream wilt laden, stelt u de `PTAdMetadata.enableDVRAds` eigenschap in op `YES`.
+Als u alle advertenties voor de gehele stream wilt laden, stelt u de eigenschap `PTAdMetadata.enableDVRAds` in op `YES`.
 
 >[!NOTE]
 >
->De standaardwaarde is `NO`en deze optie laadt alleen advertenties vanaf het huidige actieve punt.
+>De standaardwaarde is `NO` en deze optie laadt alleen advertenties vanaf het huidige actieve punt.
 
 Bijvoorbeeld:
 
