@@ -6,11 +6,14 @@ title: Functies van Primetime TVSDK
 uuid: 0a7ebb05-7da5-49ff-928a-4d2124eaa115
 translation-type: tm+mt
 source-git-commit: 25a0dfef12ecf10ba939500c4ba539468c41ee1b
+workflow-type: tm+mt
+source-wordcount: '261'
+ht-degree: 0%
 
 ---
 
 
-# Functies van Primetime TVSDK{#primetime-tvsdk-features}
+# De eigenschappen van de TVSDK van Primetime{#primetime-tvsdk-features}
 
 TVSDK voor Desktop HLS omvat een verscheidenheid van eigenschappen en verstrekt de volgende belangrijkste mogelijkheden:
 
