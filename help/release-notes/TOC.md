@@ -13,7 +13,7 @@ ht-degree: 0%
 ---
 
 
-# Opmerkingen bij de release Primetime {#release-notes}
+# Opmerkingen bij de release bij primetime {#release-notes}
 
 + [Overzicht van opmerkingen bij de release](home.md)
 + Primetime Ad Insertion {#ptai}
@@ -31,9 +31,9 @@ ht-degree: 0%
    + [Opmerkingen bij de release Browser TVSDK 2.4](tvsdk-24-browser.md)
 + TVSDK voor desktop HLS {tvsdk-desktop-hls}
    + [Opmerkingen bij de release TVSDK 1.4 voor desktop HLS](tvsdk-1-4-desktop-hls.md)
-+ Offline pakket primetime {#offline-packager}
++ Primetime Offline Packager {#offline-packager}
    + [Versie 2 van de Offline Packager van primetime](offline-packager-2x-release-note.md)
-+ Primetime Streaming Server {#streaming-server}
++ Primetime streamingserver {#streaming-server}
    + [Primetime Streaming Server versie 1 releases](primetime-streaming-server-1x.md)
 + TVSDK voor afspeelstation 4 {#tvsdk-playstation}
    + [Opmerkingen bij de release TVSDK 2.1 PlayStation 4](tvsdk-21-ps4.md)
