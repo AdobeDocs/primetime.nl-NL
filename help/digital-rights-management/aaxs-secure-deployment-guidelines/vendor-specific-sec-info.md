@@ -4,13 +4,16 @@ title: Specifieke beveiligingsinformatie van de leverancier
 uuid: 23186770-c73a-4802-bc30-fa9e4b47d9ba
 translation-type: tm+mt
 source-git-commit: 29bc8323460d9be0fce66cbea7c6fce46df20d61
+workflow-type: tm+mt
+source-wordcount: '362'
+ht-degree: 0%
 
 ---
 
 
-# Specifieke beveiligingsinformatie van de leverancier{#vendor-specific-security-information}
+# Specifieke beveiligingsinformatie van leverancier{#vendor-specific-security-information}
 
-Deze sectie bevat beveiligingsinformatie over besturingssystemen en toepassingsservers die in uw Adobe Access-oplossing zijn opgenomen.
+Deze sectie bevat veiligheid-verwante informatie over werkende systemen en toepassingsservers die in uw oplossing van de Toegang van de Adobe worden opgenomen.
 
 Gebruik de koppelingen in deze sectie om leveranciersspecifieke beveiligingsinformatie voor uw besturingssysteem en toepassingsserver te zoeken.
 
@@ -23,7 +26,7 @@ Wanneer het beveiligen van uw werkend systeem, voer zorgvuldig de maatregelen ui
 * Het verwijderen van onnodige diensten en toepassingen
 * Back-ups maken van bestanden
 
-Zie de bronnen in deze tabel voor beveiligingsinformatie over besturingssystemen die door Adobe Access worden ondersteund.
+Voor veiligheidsinformatie over werkende systemen die de Adobe Access steunt, zie de middelen in deze lijst.
 
 <table frame="all" colsep="1" rowsep="1" class="+ topic/table adobe-d/table " id="table-ugl-kjz-n4"> 
  <thead class="- topic/thead "> 
@@ -64,7 +67,7 @@ In de volgende tabel worden enkele mogelijke benaderingen beschreven voor het mi
   </tr> 
   <tr rowsep="0" class="- topic/row "> 
    <td colname="1" class="- topic/entry "> <p class="- topic/p ">Netwerktijdprotocol (NTP) </p> </td> 
-   <td colname="2" class="- topic/entry "> <p class="- topic/p ">Voor zowel een goede werking als forensische analyse moet u nauwkeurige tijd in Adobe Access-servers en Adobe Access-pakketten bewaren. Gebruik een veilige versie van NTP om de tijd op alle systemen te synchroniseren die met Internet worden verbonden. </p> </td> 
+   <td colname="2" class="- topic/entry "> <p class="- topic/p ">Voor zowel correcte verrichting als forensische analyse, houd nauwkeurige tijd op de servers van de Toegang van de Adobe en de pakketleiders van de Toegang van de Adobe. Gebruik een veilige versie van NTP om de tijd op alle systemen te synchroniseren die met Internet worden verbonden. </p> </td> 
   </tr> 
  </tbody> 
 </table>
