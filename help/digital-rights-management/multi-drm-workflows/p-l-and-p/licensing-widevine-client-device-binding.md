@@ -6,6 +6,9 @@ title: Apparaatbinding
 uuid: 351fa33c-4226-4ed5-829c-56b563166fec
 translation-type: tm+mt
 source-git-commit: ed1430bdcb590a53fa69b324ef340ad636b2fa7c
+workflow-type: tm+mt
+source-wordcount: '364'
+ht-degree: 0%
 
 ---
 
@@ -23,7 +26,7 @@ U kunt de API&#39;s op de volgende manier gebruiken.
    Deze dummy vergunningsaanvraag, wanneer succesvol, associeert device_id van de gebruiker (die door de implementatie DRM op het apparaat van de gebruiker wordt berekend of geproduceerd) aan het koekje in het terug-eind van de Uitdrukking wordt berekend. Deze cookie wordt vervolgens op de volgende manier gebruikt:
 
    * Bij de aankoop/huurtijd van de inhoud, vraagt de code het terug-eind van de Uitdrukking voor device_id van de gebruiker door het bijbehorende koekje te verzenden ( [https://www.expressplay.com/developer/restapi/#record-retrieval](https://www.expressplay.com/developer/restapi/#record-retrieval))
-   * Verzend een verzoek van de symbolengeneratie met de gekochte sleutel van de inhoud (CEK), keyID (CEKSID), beleid, en andere informatie, vastmakend het koekje en device_id hierboven als, respectievelijk, de `cookie` correlatieparameter en de parameter van de `deviceid` symbolische beperking.
+   * Verzend een verzoek van de symbolengeneratie met de gekochte sleutel van de inhoudsgeneratie (CEK), keyID (CEKSID), beleid, en andere informatie, vastmakend het koekje en device_id hierboven als, respectievelijk, de `cookie` correlatieparameter en `deviceid` symbolische beperkingsparameter.
 
    * Geef deze token op aan de gebruiker.
 
