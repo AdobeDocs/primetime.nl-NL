@@ -6,11 +6,14 @@ title: Gebruikersmodel demo bedrijfsregels
 uuid: c55f85be-5ecb-4a78-b47d-7001ec207d3a
 translation-type: tm+mt
 source-git-commit: 29bc8323460d9be0fce66cbea7c6fce46df20d61
+workflow-type: tm+mt
+source-wordcount: '253'
+ht-degree: 0%
 
 ---
 
 
-# Gebruikersmodel demo bedrijfsregels{#usage-model-demo-business-rules}
+# Gebruiksmodel demo bedrijfsregels{#usage-model-demo-business-rules}
 
 Wanneer een gebruiker om een vergunning verzoekt, controleert de server van de Implementatie van de Verwijzing de meta-gegevens die de cliënt heeft verzonden, om te bepalen of de inhoud werd verpakt door het `RI_UsageModelDemo` bezit te gebruiken. Als dat het geval is, past de server de volgende bedrijfsregels toe.
 
@@ -20,14 +23,16 @@ Wanneer een gebruiker om een vergunning verzoekt, controleert de server van de I
 
       Als u de naam van de gebruiker niet kunt vinden, voltooi de volgende taken:
 
-      * Als het `Customer.IsSubscriber` bezit aan `true`wordt geplaatst, moet u een vergunning voor het *`Subscription`* gebruiksmodel produceren en het verzenden naar de gebruiker.
+      * Als de eigenschap `Customer.IsSubscriber` is ingesteld op `true`, moet u een licentie voor het *`Subscription`*-gebruiksmodel genereren en naar de gebruiker verzenden.
 
       * Zoek naar een verslag in de `CustomerAuthorization` gegevensbestandlijst voor de naam van de gebruiker en inhoudsidentiteitskaart
+
       Als u de record van de gebruiker kunt vinden, voert u de volgende taken uit:
 
-      * Als het `CustomerAuthorization.UsageType` `DTO`bezit aan wordt geplaatst, produceer een vergunning voor het DTO gebruiksmodel en verzend het naar de gebruiker.
+      * Als `CustomerAuthorization.UsageType` bezit aan `DTO` wordt geplaatst, produceer een vergunning voor het DTO gebruiksmodel en verzend het naar de gebruiker.
 
-      * Als de `CustomerAuthorization.UsageType` eigenschap is ingesteld op `VOD`, genereert u een licentie voor het VOD-gebruiksmodel en verzendt u deze naar de gebruiker.
+      * Als de eigenschap `CustomerAuthorization.UsageType` is ingesteld op `VOD`, genereert u een licentie voor het VOD-gebruiksmodel en verzendt u deze naar de gebruiker.
+
       Als geen van de DRM-beleidsregels anonieme toegang toestaat, voert u de volgende taken uit:
 
       * Als er geen geldig authentificatietoken in het verzoek is, moet u een &quot;vereiste authentificatie&quot;fout terugkeren.
