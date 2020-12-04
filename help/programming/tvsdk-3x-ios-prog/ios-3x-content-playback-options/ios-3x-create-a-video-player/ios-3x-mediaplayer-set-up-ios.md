@@ -6,11 +6,14 @@ title: PTMediaPlayer instellen
 uuid: 698034d3-1260-416f-83b0-6b7d058750a0
 translation-type: tm+mt
 source-git-commit: 557f42cd9a6f356aa99e13386d9e8d65e043a6af
+workflow-type: tm+mt
+source-wordcount: '198'
+ht-degree: 0%
 
 ---
 
 
-# PTMediaPlayer instellen {#set-up-the-ptmediaplayer}
+# PTMediaPlayer {#set-up-the-ptmediaplayer} instellen
 
 TVSDK beschikt over gereedschappen voor het maken van een geavanceerde videospelertoepassing (uw Primetime-speler), die u kunt integreren met andere Primetime-componenten.
 
@@ -18,7 +21,7 @@ Gebruik de gereedschappen van uw platform om een speler te maken en deze aan te 
 
 Met de PTMediaPlayer-interface worden de functionaliteit en het gedrag van een mediaspelerobject ingekapseld.
 
-Stel uw `PTMediaPlayer`:
+Uw `PTMediaPlayer` instellen:
 
 1. Haal de URL van het medium op vanuit de gebruikersinterface, bijvoorbeeld in een tekstveld.
 
@@ -26,15 +29,15 @@ Stel uw `PTMediaPlayer`:
    NSURL *url = [NSURL URLWithString:textFieldURL.text];
    ```
 
-1. Maken `PTMetadata`.
+1. `PTMetadata` maken.
 
-   Stel dat uw methode metagegevens `createMetada` voorbereidt (zie [Advertising](../../ios-3x-advertising/ios-3x-advertising-requirements.md)).
+   Stel dat uw methode `createMetada` metagegevens voorbereidt (zie [Reclame](../../ios-3x-advertising/ios-3x-advertising-requirements.md)).
 
    ```
    PTMetadata *metadata = [self createMetadata]
    ```
 
-1. Maak `PTMediaPlayerItem` met uw `PTMetadata` instantie.
+1. Maak `PTMediaPlayerItem` door uw `PTMetadata`-instantie te gebruiken.
 
    ```
    PTMediaPlayerItem *item = [[[PTMediaPlayerItem alloc] 
@@ -47,7 +50,7 @@ Stel uw `PTMediaPlayer`:
    [self addObservers]
    ```
 
-1. Maak uw nieuwe `PTMediaPlayer` versie `PTMediaPlayerItem`.
+1. Maak `PTMediaPlayer` met de nieuwe `PTMediaPlayerItem`.
 
    ```
    PTMediaPlayer *player = [PTMediaPlayer playerWithMediaPlayerItem:item];
@@ -55,7 +58,7 @@ Stel uw `PTMediaPlayer`:
 
 1. Stel eigenschappen in voor de speler.
 
-   Hier volgen enkele beschikbare `PTMediaPlayer` eigenschappen:
+   Hier volgen een aantal van de beschikbare `PTMediaPlayer` eigenschappen:
 
    ```
    player.autoPlay                    = YES;  
@@ -84,7 +87,7 @@ Stel uw `PTMediaPlayer`:
    [self.adPlayerView addSubview:(UIView *)player.view];
    ```
 
-1. Vraag `play` om media playback te beginnen.
+1. Roep `play` aan om het afspelen van media te starten.
 
    ```
    [player play];
