@@ -6,11 +6,14 @@ title: Extra fallback-gedrag voor VAST en VMAP
 uuid: 612416b9-d070-42e2-b68b-74ba52023345
 translation-type: tm+mt
 source-git-commit: bc35da8b258056809ceaf18e33bed631047bc81b
+workflow-type: tm+mt
+source-wordcount: '282'
+ht-degree: 0%
 
 ---
 
 
-# Extra fallback-gedrag voor VAST en VMAP {#ad-fallback-behavior-for-vast-and-vmap}
+# Extra fallbackgedrag voor VAST en VMAP {#ad-fallback-behavior-for-vast-and-vmap}
 
 Wanneer Primetime en beslissingsoningencounters een (creatieve) VAST-advertentie die leeg is of een mediatype heeft dat ongeldig is voor HLS, evalueert het de fallback-advertenties om te bepalen wat er moet worden geretourneerd.
 
