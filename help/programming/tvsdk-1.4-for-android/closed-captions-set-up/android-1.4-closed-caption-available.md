@@ -13,7 +13,7 @@ ht-degree: 1%
 ---
 
 
-# Selecteer een ondertitelingstrack uit de beschikbare tracks{#select-a-current-caption-track-from-among-available-tracks}
+# Selecteer een huidige bijschrifttrack uit de beschikbare tracks{#select-a-current-caption-track-from-among-available-tracks}
 
 U kunt een track selecteren in een lijst met momenteel beschikbare Closed Caption-tracks. Dit wordt de huidige track die wordt weergegeven wanneer de zichtbaarheid is ingeschakeld. Sommige sporen zouden niet aanvankelijk beschikbaar kunnen zijn, zodat luistert naar de gebeurtenis die erop wijst dat meer beschikbaar is geworden.
 
