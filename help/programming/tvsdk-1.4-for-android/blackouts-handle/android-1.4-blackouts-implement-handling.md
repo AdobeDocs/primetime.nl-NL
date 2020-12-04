@@ -6,11 +6,14 @@ title: Afstroomverwerking implementeren
 uuid: db7f831c-5069-4426-bfe3-5fc51fec7930
 translation-type: tm+mt
 source-git-commit: 5908e5a3521966496aeec0ef730e4a704fddfb68
+workflow-type: tm+mt
+source-wordcount: '171'
+ht-degree: 0%
 
 ---
 
 
-# Afstroomverwerking implementeren{#implement-blackout-handling}
+# Uitstroomafhandeling implementeren{#implement-blackout-handling}
 
 TVSDK biedt API&#39;s en voorbeeldcode voor de afhandeling van brainstormperioden.
 
@@ -75,7 +78,7 @@ Omgaan met black-out, inclusief alternatieve inhoud tijdens de black-out:
    }; 
    ```
 
-1. Objecten afhandelen wanneer de `TimedMetadata` `MediaPlayer` tijd wordt uitgevoerd.
+1. Objecten `TimedMetadata` verwerken wanneer `MediaPlayer`-tijd wordt uitgevoerd.
 
    ```java
    _playbackClockEventListener = new Clock.ClockEventListener() { 
@@ -98,7 +101,7 @@ Omgaan met black-out, inclusief alternatieve inhoud tijdens de black-out:
    };
    ```
 
-1. Methoden maken voor het schakelen tussen inhoud aan het begin en einde van de periode van uitschakeling.
+1. Methoden maken voor het schakelen tussen inhoud aan het begin en einde van de periode van uitnemen.
 
    ```java
    private void handleTimedMetadataList(long currentTime) { 
