@@ -6,15 +6,18 @@ title: Gebeurtenissen van Playback
 uuid: 6d6491d7-cf25-4130-8388-68b8c028bb71
 translation-type: tm+mt
 source-git-commit: 91cea7acb8127e02b82e5242b9ad6ab0d12ce0eb
+workflow-type: tm+mt
+source-wordcount: '541'
+ht-degree: 0%
 
 ---
 
 
-# Gebeurtenissen van Playback {#playback-events}
+# Afspeelgebeurtenissen {#playback-events}
 
 Uw toepassing kan de activiteit in uw speler en de veranderende staat van de speler controleren door naar gebeurtenissen te luisteren die door TVSDK worden verzonden.
 
-TVSDK verzendt afspeelgebeurtenissen wanneer afspeelbewerkingen van media plaatsvinden, zoals een video die wordt afgespeeld. Registreer listeners bij het `MediaPlayer` object voor de volgende gebeurtenissen om op de hoogte te worden gebracht van alle gebeurtenissen die betrekking hebben op het afspelen.
+TVSDK verzendt afspeelgebeurtenissen wanneer afspeelbewerkingen van media plaatsvinden, zoals een video die wordt afgespeeld. Registreer listeners bij het `MediaPlayer`-object voor de volgende gebeurtenissen om een melding over alle aan het afspelen gerelateerde gebeurtenissen te ontvangen.
 
 <table frame="all" colsep="1" rowsep="1" id="table_922EEA3DE0BD47BA982E11F890CA0A6B"> 
  <thead> 
@@ -82,7 +85,7 @@ TVSDK verzendt afspeelgebeurtenissen wanneer afspeelbewerkingen van media plaats
   </tr> 
   <tr rowsep="0"> 
    <td colname="1">TimelineEvent.<a href="https://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls_1.4/com/adobe/mediacore/events/TimelineEvent.html#TIMELINE_UPDATED" format="html" scope="external"> TIMELINE_UPDATED</a> </td> 
-   <td colname="2">De mediaspeler heeft advertenties toegevoegd of verwijderd en heeft dus een bijgewerkte tijdlijn. <p>Het manifest dat is vernieuwd voor een actief en oude advertentieonderbrekingen zijn verwijderd uit de tijdlijn of er zijn nieuwe advertentiemogelijkheden (actiepunten) ontdekt. De mediaspeler probeert nieuwe advertenties op te lossen en op de tijdlijn te plaatsen. </p> <p> Gebruik deze gebeurtenis om te controleren of de tijdlijn updates bevat (VOD verandert niet tijdens het afspelen). U kunt de tijdlijn vervolgens ophalen met <a href="https://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls_1.4/com/adobe/mediacore/MediaPlayer.html#timeline" format="html" scope="external"> MediaPlayer.timeline</a>. </p> </td> 
+   <td colname="2">De mediaspeler heeft advertenties toegevoegd of verwijderd en heeft dus een bijgewerkte tijdlijn. <p>Het manifest dat is vernieuwd voor een actief en oude advertentieonderbrekingen zijn verwijderd uit de tijdlijn of er zijn nieuwe advertentiemogelijkheden (actiepunten) ontdekt. De mediaspeler probeert nieuwe advertenties op te lossen en op de tijdlijn te plaatsen. </p> <p> Gebruik deze gebeurtenis om te controleren of de tijdlijn updates bevat (VOD verandert niet tijdens het afspelen). Vervolgens kunt u de tijdlijn ophalen met <a href="https://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls_1.4/com/adobe/mediacore/MediaPlayer.html#timeline" format="html" scope="external"> MediaPlayer.timeline</a>. </p> </td> 
   </tr> 
  </tbody> 
 </table>
