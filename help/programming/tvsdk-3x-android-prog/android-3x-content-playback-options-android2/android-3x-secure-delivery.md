@@ -5,6 +5,9 @@ seo-title: Beveiligde aflevering via HTTPS
 title: Beveiligde aflevering via HTTPS
 translation-type: tm+mt
 source-git-commit: 4a2271fc481b37bb0a437091de6efe98fcb348d9
+workflow-type: tm+mt
+source-wordcount: '91'
+ht-degree: 0%
 
 ---
 
@@ -21,7 +24,7 @@ Adobe Primetime TVSDK biedt ondersteuning voor HTTPS-levering voor alle aanroepe
 
 Als u deze functie wilt gebruiken, moet u ervoor zorgen dat de servers die zijn geconfigureerd voor het aanbieden van de bovenstaande aanvragen, HTTPS ondersteunen.
 
-Dit nieuwe gedrag is niet standaard ingeschakeld. Gebruik het volgende om veilige levering vóór vraag toe te laten om `MediaPlayer.replaceCurrentResource()`
+Dit nieuwe gedrag is niet standaard ingeschakeld. Gebruik het volgende om veilige levering vóór vraag aan `MediaPlayer.replaceCurrentResource()` toe te laten
 
 ```java
 MediaPlayerItemConfig config = new MediaPlayerItemConfig(context);
