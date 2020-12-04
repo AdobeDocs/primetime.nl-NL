@@ -15,9 +15,9 @@ ht-degree: 0%
 
 Als u een bestaand beleid wilt bijwerken, kiest u de bestandsnaam in de vervolgkeuzelijst en klikt u op **[!UICONTROL Open]**. Wijzig de gewenste beleidskenmerken. Alle kenmerken kunnen worden gewijzigd, behalve de kenmerken die betrekking hebben op verificatie en licentietekening.
 
-Klik wanneer u klaar bent **[!UICONTROL Save]**. Het beleidsbestand in de [!DNL Resource] directory wordt vervangen door de bijgewerkte versie.
+Klik **[!UICONTROL Save]** als u klaar bent. Het beleidsdossier in [!DNL Resource] Folder zal met de bijgewerkte versie worden vervangen.
 
 >[!NOTE]
 >
->Zelfs als de beleidsnaam wordt veranderd, zal de naam van het dossier in de [!DNL Resource] Folder niet worden gewijzigd.
+>Zelfs als de beleidsnaam wordt veranderd, zal de naam van het dossier in [!DNL Resource] Folder niet worden gewijzigd.
 
