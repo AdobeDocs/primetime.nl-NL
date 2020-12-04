@@ -6,13 +6,16 @@ title: Het XSTS-token instellen in de speler
 uuid: 8995e029-deee-4e23-9cda-a50de8c4f2c0
 translation-type: tm+mt
 source-git-commit: b7f52b71bde1d7bf59ef51d4f6f90dfaa07e347b
+workflow-type: tm+mt
+source-wordcount: '66'
+ht-degree: 0%
 
 ---
 
 
-# Het XSTS-token instellen in de speler{#set-the-xsts-token-in-your-player}
+# Stel het XSTS-token in uw speler in{#set-the-xsts-token-in-your-player}
 
-In Xbox 360 stelt u het token asynchroon in als reactie op de `MediaPlayer.RequestKeyAttribute` gebeurtenis.
+In Xbox 360 stelt u het token asynchroon in als reactie op de gebeurtenis `MediaPlayer.RequestKeyAttribute`.
 
 Stel het XSTS-token in.
 
