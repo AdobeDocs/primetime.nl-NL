@@ -4,23 +4,26 @@ title: ECI-bestanden
 uuid: 124d8ab1-933b-4a1b-992a-919f3d799460
 translation-type: tm+mt
 source-git-commit: d8e4c39c297d69b154baf0b4d67cf09b5cf0a9d4
+workflow-type: tm+mt
+source-wordcount: '238'
+ht-degree: 0%
 
 ---
 
 
-# ECI-bestanden{#about-eci-files}
+# Info over ECI-bestanden{#about-eci-files}
 
-Naast de CRL&#39;s moet u ook periodiek ingesloten ECI-bestanden (Common Interface) bijwerken. Wanneer Adobe ondersteuning toevoegt voor een nieuw Primetime DRM-clientplatform (bijvoorbeeld iOS, Android, Windows Flash Player, enz.) wordt een nieuwe ECI-record gemaakt. Om de individualisering van deze cliënt te steunen, moet een overeenkomstige ECI verslag op de Server van de Individualisatie aanwezig zijn.
+Naast de CRL&#39;s moet u ook periodiek ingesloten ECI-bestanden (Common Interface) bijwerken. Wanneer Adobe ondersteuning toevoegt voor een nieuw Primetime DRM-clientplatform (bijvoorbeeld: iOS, Android, Windows Flash Player, enz.) wordt een nieuwe ECI-record gemaakt. Om de individualisering van deze cliënt te steunen, moet een overeenkomstige ECI verslag op de Server van de Individualisatie aanwezig zijn.
 
-Aangezien de release van nieuwe Primetime DRM-clients niet veel voorkomt, zal Adobe waar nodig bijgewerkte ECI-gegevens publiceren. Adobe verzamelt regelmatig ECI-bestanden en host deze op de onderstaande locatie voor distributie:
+Aangezien de release van nieuwe Primetime DRM-clients niet veel voorkomt, zal Adobe zo nodig bijgewerkte ECI-gegevens vrijgeven. Adobe verzamelt regelmatig ECI-bestanden en host deze op de onderstaande locatie voor distributie:
 
 ```
 http://cdmdownload.adobe.com/indiv/onprem/eci/Latest.txt
 ```
 
-Het [!DNL Latest.txt] bestand bevat de URL naar het meest recente CRL-distributiebestand.
+Het [!DNL Latest.txt]-bestand bevat de URL naar het meest recente CRL-distributiebestand.
 
-Adobe maakt het ZIP-bestand van de ECI op de onderstaande manier:
+Adobe maakt het ZIP-bestand van ECI op de onderstaande manier:
 
 Mapstructuur:
 
@@ -59,7 +62,7 @@ Voer het volgende proces voor installatie na download uit:
 1. Noteer de SHA-256-samenvatting en herberekend deze met OpenSSL of een vergelijkbaar gereedschap.
 1. Vergelijk dit met de naam die u in de bestandsnaam hebt opgegeven.
 1. Wijzig de naam van het bestand in [!DNL ECI.zip].
-1. Pak de [!DNL ECI] directory uit.
+1. Pak de map [!DNL ECI] uit.
 1. Vervang de oude ECI-directory door de nieuwe.
 1. Start de Individualization-server opnieuw.
 
