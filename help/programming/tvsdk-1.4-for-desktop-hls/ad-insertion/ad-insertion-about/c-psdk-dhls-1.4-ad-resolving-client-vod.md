@@ -6,11 +6,14 @@ title: VOD en omzetten en invoegen
 uuid: c1017483-5b4f-4d71-9589-fb2327b4572b
 translation-type: tm+mt
 source-git-commit: 040655d8ba5f91c98ed0584c08db226ffe1e0f4e
+workflow-type: tm+mt
+source-wordcount: '222'
+ht-degree: 0%
 
 ---
 
 
-# VOD en omzetten en invoegen{#vod-ad-resolving-and-insertion}
+# VOD en invoegen{#vod-ad-resolving-and-insertion}
 
 Voor video-on-demand (VOD)-inhoud voegt TVSDK de advertenties in de hoofdinhoud op en verbreekt deze door de tijdlijnduur te spreiden.
 
@@ -24,7 +27,7 @@ TVSDK voegt advertenties op de volgende manieren in:
 
 >[!IMPORTANT]
 >
->Wanneer het uitvoeren van een douane `AdPolicySelector`, kan een verschillend beleid aan elk type van `AdBreakTimelineItem` (pre-rol, middenrol, of post-rol) in `AdPolicyInfo`, gebaseerd op het type van `AdBreakTimelineItem`worden gegeven. U kunt bijvoorbeeld inhoud halverwege de rol behouden nadat deze is afgespeeld, maar inhoud vóór de rol verwijderen nadat deze is afgespeeld.
+>Wanneer het uitvoeren van een douane `AdPolicySelector`, kan een verschillend beleid aan elk type van `AdBreakTimelineItem` (pre-rol, middenrol, of post-rol) in `AdPolicyInfo` worden gegeven, gebaseerd op het type van `AdBreakTimelineItem`. U kunt bijvoorbeeld inhoud halverwege de rol behouden nadat deze is afgespeeld, maar inhoud vóór de rol verwijderen nadat deze is afgespeeld.
 
 Nadat het afspelen is gestart, kunnen er geen verdere wijzigingen in de inhoud plaatsvinden. Advertenties kunnen niet:
 
