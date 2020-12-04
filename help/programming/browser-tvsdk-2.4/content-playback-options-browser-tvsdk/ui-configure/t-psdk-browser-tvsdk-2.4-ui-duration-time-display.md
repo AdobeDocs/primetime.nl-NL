@@ -6,16 +6,19 @@ title: De duur, de huidige tijd en de resterende tijd van de video weergeven
 uuid: 58341c5f-1d53-4f65-92c8-5bde22f61519
 translation-type: tm+mt
 source-git-commit: 040655d8ba5f91c98ed0584c08db226ffe1e0f4e
+workflow-type: tm+mt
+source-wordcount: '319'
+ht-degree: 0%
 
 ---
 
 
-# De duur, de huidige tijd en de resterende tijd van de video weergeven{#display-the-duration-current-time-and-remaining-time-of-the-video}
+# Geef de duur, de huidige tijd en de resterende tijd van de video weer{#display-the-duration-current-time-and-remaining-time-of-the-video}
 
 U kunt Browser TVSDK gebruiken om informatie over de media terug te winnen die u op de zoekbalk kunt tonen.
 
 1. Wacht tot de speler zich ten minste in de staat PREPARED bevindt.
-1. Haal de huidige tijd van de afspeelkop op met behulp van het `MediaPlayer.currentTime` kenmerk.
+1. Haal de huidige playhead tijd terug gebruikend het `MediaPlayer.currentTime` attribuut.
 
    Dit kenmerk retourneert de huidige positie van de afspeelkop op de virtuele tijdlijn in milliseconden. De tijd wordt berekend ten opzichte van de opgeloste stream die meerdere instanties van alternatieve inhoud kan bevatten, zoals meerdere advertenties of ad-einden die in de hoofdstream worden gespliceerd. Voor live/lineaire streams bevindt de geretourneerde tijd zich altijd in het bereik van het afspeelvenster.
 
@@ -24,7 +27,7 @@ U kunt Browser TVSDK gebruiken om informatie over de media terug te winnen die u
    ```
 
 1. Haal het afspeelbereik van de stream op en bepaal de duur.
-   1. Gebruik de `mediaPlayer.playbackRange` eigenschap om het tijdbereik van de virtuele tijdlijn op te halen.
+   1. Gebruik de eigenschap `mediaPlayer.playbackRange` om het tijdbereik van de virtuele tijdlijn op te halen.
 
    1. Als u de duur wilt bepalen, trekt u het begin af aan het einde van het bereik.
 
@@ -148,7 +151,7 @@ U kunt Browser TVSDK gebruiken om informatie over de media terug te winnen die u
    } 
    ```
 
-1. Luister naar de zoekbalk `AdobePSDK.TimeChangeEvent` en werk deze dienovereenkomstig bij.
+1. Luister naar `AdobePSDK.TimeChangeEvent` en werk de zoekbalk dienovereenkomstig bij.
 
    ```js
    player.addEventListener(AdobePSDK.PSDKEventType.TIME_CHANGED, onTimeChange); 
