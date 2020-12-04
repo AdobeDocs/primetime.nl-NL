@@ -6,11 +6,14 @@ description: Het volgende codeblok geeft een voorbeeld van een JSON-object wanne
 seo-description: Het volgende codeblok geeft een voorbeeld van een JSON-object wanneer de machtigingsbron-id een eenvoudige tekstreeks is.
 translation-type: tm+mt
 source-git-commit: 31b6cad26bcc393d731080a70eff1c59551f1c8e
+workflow-type: tm+mt
+source-wordcount: '122'
+ht-degree: 0%
 
 ---
 
 
-# JSON-object voor machtigingsbron-id {#json-object-for-entitlement-resource-id}
+# JSON-object voor machtigingsresource-id {#json-object-for-entitlement-resource-id}
 
 Het volgende codeblok geeft een voorbeeld van een JSON-object wanneer de machtigingsbron-id een eenvoudige tekstreeks is. In dit geval is de bron-id de tekenreeks &quot;resource&quot;.
 
