@@ -1,16 +1,19 @@
 ---
 description: Uw toepassing kan de activiteit in uw speler en de veranderende status van de speler controleren door naar de gebeurtenissen te luisteren die door TVSDK worden verzonden.
 seo-description: Uw toepassing kan de activiteit in uw speler en de veranderende status van de speler controleren door naar de gebeurtenissen te luisteren die door TVSDK worden verzonden.
-seo-title: Overzicht van gebeurtenissen in de primetime-speler
-title: Overzicht van gebeurtenissen in de primetime-speler
+seo-title: Overzicht van gebeurtenissen in de primaire speler
+title: Overzicht van gebeurtenissen in de primaire speler
 uuid: b2ff74f2-c373-42da-a717-2f0550cbcb7f
 translation-type: tm+mt
 source-git-commit: bc35da8b258056809ceaf18e33bed631047bc81b
+workflow-type: tm+mt
+source-wordcount: '598'
+ht-degree: 0%
 
 ---
 
 
-# Overzicht van gebeurtenissen in de primetime-speler {#primetime-player-events-summary}
+# Overzicht van gebeurtenissen in primetime-speler {#primetime-player-events-summary}
 
 Uw toepassing kan de activiteit in uw speler en de veranderende status van de speler controleren door naar de gebeurtenissen te luisteren die door TVSDK worden verzonden.
 
@@ -20,283 +23,283 @@ TVSDK brengt u op de hoogte wanneer gebeurtenissen plaatsvinden waarop uw toepas
 
 >[!TIP]
 >
->De gebeurteniscodes zijn de constanten van de `MediaPlayerEvent` opsomming.
+>De gebeurteniscodes zijn de constanten van de `MediaPlayerEvent`-opsomming.
 
 `AdBreakCompletedEventListener`
 
-* **Dit betekent** dat het afspelen van het advertentieeinde is voltooid.
+* **** BetekenisHet afspelen van het advertentieeinde is voltooid.
 
-* **Callback om te implementeren**`onAdBreakCompleted(AdBreakPlaybackEvent event)`
+* **Callback om uit te voeren** `onAdBreakCompleted(AdBreakPlaybackEvent event)`
 
-* **Gebeurteniscode**`AD_BREAK_COMPLETE`
+* **Gebeurteniscode** `AD_BREAK_COMPLETE`
 
 `AdBreakSkippedEventListener`
 
-* **Dit betekent** dat een advertentie-einde is overgeslagen tijdens het afspelen.
+* **** Betekenis: een advertentie-einde is overgeslagen tijdens het afspelen.
 
-* **Callback om te implementeren**`onAdBreakSkipped(AdBreakPlaybackEvent event)`
+* **Callback om uit te voeren** `onAdBreakSkipped(AdBreakPlaybackEvent event)`
 
-* **Gebeurteniscode**`AD_BREAK_SKIPPED`
+* **Gebeurteniscode** `AD_BREAK_SKIPPED`
 
 `AdBreakStartedEventListener`
 
-* **Dit betekent** dat het afspelen van een advertentie-einde is gestart.
+* **** BetekenisHet afspelen van een advertentie-einde is begonnen.
 
-* **Callback om te implementeren**`onAdBreakStarted(AdBreakPlaybackEvent event)`
+* **Callback om uit te voeren** `onAdBreakStarted(AdBreakPlaybackEvent event)`
 
-* **Gebeurteniscode**`AD_BREAK_START`
+* **Gebeurteniscode** `AD_BREAK_START`
 
 `AdClickedEventListener`
 
-* **Dit betekent dat** tijdens het afspelen op een advertentie is geklikt.
+* **** BetekenisEr is op een advertentie geklikt tijdens het afspelen.
 
-* **Callback om te implementeren**`onAdClicked(AdClickEvent event)`
-* **Gebeurteniscode**`AD_CLICK`
+* **Callback om uit te voeren** `onAdClicked(AdClickEvent event)`
+* **Gebeurteniscode** `AD_CLICK`
 
 `AdCompletedEventListener`
 
-* **Dit betekent** dat het afspelen van de advertentie is voltooid.
+* **** BetekenisHet afspelen van de advertentie is voltooid.
 
-* **Callback om te implementeren**`onAdCompleted(AdPlaybackEvent event)`
+* **Callback om uit te voeren** `onAdCompleted(AdPlaybackEvent event)`
 
-* **Gebeurteniscode**`AD_COMPLETE`
+* **Gebeurteniscode** `AD_COMPLETE`
 
 `AdProgressEventListener`
 
-* **Betekenis** het Melden van vooruitgang tijdens playback.
+* **Voortgang** BetekenisRapportage tijdens playback.
 
-* **Callback om te implementeren**`onAdProgress(AdPlaybackEvent event)`
+* **Callback om uit te voeren** `onAdProgress(AdPlaybackEvent event)`
 
-* **Gebeurteniscode**`AD_PROGRESS`
+* **Gebeurteniscode** `AD_PROGRESS`
 
 `AdResolutionCompleteEventListener`
 
-* **Dat betekent dat** Primetime en besluitvorming en resolutie compleet zijn. Deze gebeurtenis is alleen van toepassing op VOD-inhoud.
+* **** Betekenis: Primetime en besluitvorming en resolutie zijn voltooid. Deze gebeurtenis is alleen van toepassing op VOD-inhoud.
 
-* **Callback om te implementeren**`onAdResolutionComplete()`
+* **Callback om uit te voeren** `onAdResolutionComplete()`
 
-* **Gebeurteniscode**`AD_RESOLUTION_COMPLETE`
+* **Gebeurteniscode** `AD_RESOLUTION_COMPLETE`
 
 `AdStartedEventListener`{#section_A4339C48F82640A8AF4AF09CB3B33188}
 
-* **Dit betekent** dat het afspelen van de advertentie is gestart.
+* **** Betekenis: het afspelen van de advertentie is begonnen.
 
-* **Callback om te implementeren**`onAdStarted(AdPlaybackEvent event)`
+* **Callback om uit te voeren** `onAdStarted(AdPlaybackEvent event)`
 
-* **Gebeurteniscode**`AD_START`
+* **Gebeurteniscode** `AD_START`
 
 `AudioUpdatedEventListener`
 
-* **Betekenis** Er is een nieuwe audiotrack gedetecteerd.
+* **** BetekenisEr is een nieuwe audiotrack gedetecteerd.
 
-* **Callback om te implementeren**`onAudioUpdated(MediaPlayerItemEvent event)`
+* **Callback om uit te voeren** `onAudioUpdated(MediaPlayerItemEvent event)`
 
-* **Gebeurteniscode**`AUDIO_TRACK_UPDATED`
+* **Gebeurteniscode** `AUDIO_TRACK_UPDATED`
 
 `BufferingBeginEventListener`
 
-* **Dit betekent** dat de speler begint te bufferen.
+* **** Betekenis: de speler is begonnen te bufferen.
 
-* **Callback om te implementeren**`onBufferingBegin(BufferEvent event)`
+* **Callback om uit te voeren** `onBufferingBegin(BufferEvent event)`
 
-* **Gebeurteniscode**`BUFFERING_BEGIN`
+* **Gebeurteniscode** `BUFFERING_BEGIN`
 
 `BufferingEndEventListener`
 
-* **Dit betekent** dat de speler niet meer buffert.
+* **** BetekenisDe speler heeft het bufferen gestopt.
 
-* **Callback om te implementeren**`onBufferingEnd(BufferEvent event)`
+* **Callback om uit te voeren** `onBufferingEnd(BufferEvent event)`
 
-* **Gebeurteniscode**`BUFFERING_END`
+* **Gebeurteniscode** `BUFFERING_END`
 
 &quot;BufferPreparedEventListener&quot;
 
-* **Betekenis** De buffer wordt voorbereid.
+* **** BetekenisDe buffer wordt voorbereid.
 
-* **Callback om te implementeren**`onBufferPrepared()`
+* **Callback om uit te voeren** `onBufferPrepared()`
 
-* **Gebeurteniscode**`BUFFER_PREPARED`
+* **Gebeurteniscode** `BUFFER_PREPARED`
 
 `CaptionsUpdatedEventListener`
 
-* **Betekenis** Er is een nieuw bijschriftspoor gedetecteerd.
+* **** Betekenis Een nieuw bijschriftspoor is gedetecteerd.
 
-* **Callback om te implementeren**`onCaptionsUpdated(MediaPlayerItemEvent event)`
+* **Callback om uit te voeren** `onCaptionsUpdated(MediaPlayerItemEvent event)`
 
-* **Gebeurteniscode**`CAPTIONS_UPDATED`
+* **Gebeurteniscode** `CAPTIONS_UPDATED`
 
 `DRMMetadataInfoEventListener`
 
-* **Betekenis** Er zijn nieuwe DRM-metagegevens gedetecteerd in de mediastream.
+* **** BetekenisEr zijn nieuwe DRM-metagegevens gedetecteerd in de mediastream.
 
-* **Callback om te implementeren**`onDRMMetadataInfo(DRMMetadataInfoEvent event)`
+* **Callback om uit te voeren** `onDRMMetadataInfo(DRMMetadataInfoEvent event)`
 
-* **Gebeurteniscode**`DRM_METADATA`
+* **Gebeurteniscode** `DRM_METADATA`
 
 `ItemCreatedEventListener`
 
-* **Betekenis** Er is een nieuw mediaspelitem gemaakt.
+* **** Betekenis: er is een nieuw mediaspeler-item gemaakt.
 
-* **Callback om te implementeren**`onItemCreated(MediaPlayerItemEvent event)`
+* **Callback om uit te voeren** `onItemCreated(MediaPlayerItemEvent event)`
 
-* **Gebeurteniscode**`ITEM_CREATED`
+* **Gebeurteniscode** `ITEM_CREATED`
 
 `ItemLoadCompleteEventListener`
 
-* **Betekenis** de Nieuwe ladingsinformatie is gecreeerd voor het huidige punt.
+* **** BetekenisNieuwe ladingsinformatie is gecreeerd voor het huidige punt.
 
-* **Callback om te implementeren**`onLoadComplete(MediaPlayerItemEvent event)`
+* **Callback om uit te voeren** `onLoadComplete(MediaPlayerItemEvent event)`
 
-* **Gebeurteniscode**`ITEM_UPDATED`
+* **Gebeurteniscode** `ITEM_UPDATED`
 
 `LoadInformationEventListener`
 
-* **Betekenis** Een nieuw segment is geladen.
+* **** BetekenisEen nieuw segment is geladen.
 
-* **Callback om te implementeren**`onLoadInformation(LoadInformationEvent event)`
+* **Callback om uit te voeren** `onLoadInformation(LoadInformationEvent event)`
 
-* **Gebeurteniscode**`LOAD_INFORMATION_AVAILABLE`
+* **Gebeurteniscode** `LOAD_INFORMATION_AVAILABLE`
 
 `MainManifestUpdatedEventListener`
 
-* **Betekenis** belangrijkste manifest of playlist is bijgewerkt.
+* **** BetekenisHet belangrijkste manifest of playlist is bijgewerkt.
 
-* **Callback om te implementeren**`onMainManifestUpdated(MediaPlayerItemEvent event)`
+* **Callback om uit te voeren** `onMainManifestUpdated(MediaPlayerItemEvent event)`
 
-* **Gebeurteniscode**`MANIFEST_UPDATED`
+* **Gebeurteniscode** `MANIFEST_UPDATED`
 
 `NotificationEventListener`
 
-* **Betekenis** De bewerking is mislukt.
+* **** BetekenisDe bewerking is mislukt.
 
-* **Callback om te implementeren**`onNotification(NotificationEvent event)`
+* **Callback om uit te voeren** `onNotification(NotificationEvent event)`
 
-* **Gebeurteniscode**`OPERATION_FAILED`
+* **Gebeurteniscode** `OPERATION_FAILED`
 
 `PlaybackRangeUpdatedEventListener`
 
-* **Dit betekent** dat het afspeelbereik is bijgewerkt.
+* **** BetekenisHet afspeelbereik is bijgewerkt.
 
-* **Callback om te implementeren**`onPlaybackRangeUpdated(MediaPlayerItemEvent event)`
+* **Callback om uit te voeren** `onPlaybackRangeUpdated(MediaPlayerItemEvent event)`
 
-* **Gebeurteniscode**`PLAYBACK_RANGE_UPDATED`
+* **Gebeurteniscode** `PLAYBACK_RANGE_UPDATED`
 
 `PlaybackRatePlayingEventListener`
 
-* **Dit betekent** dat een nieuwe afspeelsnelheid zichtbaar is op het scherm.
+* **** Betekenis: er is een nieuwe afspeelsnelheid zichtbaar op het scherm.
 
-* **Callback om te implementeren**`onRatePlaying(PlaybackRateEvent event)`
+* **Callback om uit te voeren** `onRatePlaying(PlaybackRateEvent event)`
 
-* **Gebeurteniscode**`RATE_PLAYING`
+* **Gebeurteniscode** `RATE_PLAYING`
 
 `PlaybackRateSelectedEventListener`
 
-* **Betekenis** het de tariefattribuut van MediaPlayer is geplaatst.
+* **** BetekenisHet de tariefattribuut van MediaPlayer is geplaatst.
 
-* **Callback om te implementeren**`onRateSelected(PlaybackRateEvent event)`
+* **Callback om uit te voeren** `onRateSelected(PlaybackRateEvent event)`
 
-* **Gebeurteniscode**`RATE_SELECTED`
+* **Gebeurteniscode** `RATE_SELECTED`
 
 `PlayStartEventListener`
 
-* **Dit betekent** dat het afspelen is gestart.
+* **** Betekenis: het afspelen is gestart.
 
-* **Callback om te implementeren**`onPlayStart()`
+* **Callback om uit te voeren** `onPlayStart()`
 
-* **Gebeurteniscode**`PLAY_START`
+* **Gebeurteniscode** `PLAY_START`
 
 `ProfileChangeEventListener`
 
-* **Dit betekent** dat het huidige profiel van MediaPlayer is gewijzigd.
+* **** Betekenis: het huidige profiel van MediaPlayer is gewijzigd.
 
-* **Callback om te implementeren**`onProfileChanged(ProfileEvent event)`
+* **Callback om uit te voeren** `onProfileChanged(ProfileEvent event)`
 
-* **Gebeurteniscode**`PROFILE_CHANGED`
+* **Gebeurteniscode** `PROFILE_CHANGED`
 
 `ReservationReachedEventListener`
 
-* **Betekenis dat** het afspelen een tijdlijnreservering heeft bereikt.
+* **** Betekenis afspelen heeft een tijdlijnreservering bereikt.
 
-* **Callback om te implementeren**`onReservationReached(ReservationEvent event)`
+* **Callback om uit te voeren** `onReservationReached(ReservationEvent event)`
 
-* **Gebeurteniscode**`RESERVATION_REACHED`
+* **Gebeurteniscode** `RESERVATION_REACHED`
 
 `SeekBeginEventListener`
 
-* **Betekenis** dat de zoekopdracht is gestart.
+* **De** BetekenisSeek-bewerking is gestart.
 
-* **Callback om te implementeren**`onSeekBegin(SeekEvent event)`
+* **Callback om uit te voeren** `onSeekBegin(SeekEvent event)`
 
-* **Gebeurteniscode**`SEEK_BEGIN`
+* **Gebeurteniscode** `SEEK_BEGIN`
 
 `SeekEndEventListener`
 
-* **Betekenis** De zoekbewerking is voltooid.
+* **** BetekenisDe zoekbewerking is voltooid.
 
-* **Callback om te implementeren**`onSeekEnd(SeekEvent event)`
+* **Callback om uit te voeren** `onSeekEnd(SeekEvent event)`
 
-* **Gebeurteniscode**`SEEK_END`
+* **Gebeurteniscode** `SEEK_END`
 
 `SeekPositionAdjustedEventListener`
 
-* **Betekenis** De zoekpositie is aangepast vanwege interne afspeelregels of externe bedrijfsregels.
+* **** BetekenisDe zoekpositie is aangepast vanwege interne afspeelregels of externe bedrijfsregels.
 
-* **Callback om te implementeren**`onPositionAdjusted(SeekEvent event)`
+* **Callback om uit te voeren** `onPositionAdjusted(SeekEvent event)`
 
-* **Gebeurteniscode**`SEEK_POSITION_ADJUSTED`
+* **Gebeurteniscode** `SEEK_POSITION_ADJUSTED`
 
 `SizeAvailableEventListener`
 
-* **Betekenis** de grootte van de media is beschikbaar.
+* **** BetekenisDe grootte van de media is beschikbaar.
 
-* **Callback om te implementeren**`onSizeAvailable(SizeAvailableEvent event)`
+* **Callback om uit te voeren** `onSizeAvailable(SizeAvailableEvent event)`
 
-* **Gebeurteniscode**`SIZE_AVAILABLE`
+* **Gebeurteniscode** `SIZE_AVAILABLE`
 
 `StatusChangeEventListener`
 
-* **Betekenis** de staat MediaPlayer is veranderd.
+* **** Betekenis: de status MediaPlayer is gewijzigd.
 
-* **Callback om te implementeren**`onStatusChanged(MediaPlayerStatusChangeEvent event)`
+* **Callback om uit te voeren** `onStatusChanged(MediaPlayerStatusChangeEvent event)`
 
-* **Gebeurteniscode**`STATUS_CHANGED`
+* **Gebeurteniscode** `STATUS_CHANGED`
 
 `TimeChangeEventListener`
 
-* **Betekenis** De afspeelkop is veranderd.
+* **** BetekenisDe afspeelkop is gewijzigd.
 
-* **Callback om te implementeren**`onTimeChanged(TimeChangeEvent event)`
+* **Callback om uit te voeren** `onTimeChanged(TimeChangeEvent event)`
 
-* **Gebeurteniscode**`TIME_CHANGED`
+* **Gebeurteniscode** `TIME_CHANGED`
 
 `TimedEventEventListener`
 
-* **Betekenis** De bewerking is voltooid met de tijd die voor de bewerking is genomen.
+* **** BetekenisDe verrichting is volledig met de tijd die voor de verrichting wordt genomen.
 
-* **Callback om te implementeren**`onTimedEvent(TimedEventEvent event)`
+* **Callback om uit te voeren** `onTimedEvent(TimedEventEvent event)`
 
-* **Gebeurteniscode**`TIMED_EVENT`
+* **Gebeurteniscode** `TIMED_EVENT`
 
 `TimelineMetadataAddedInBackgroundEventListener`
 
-* **Betekenis** Er zijn nieuwe metagegevens met tijdslimiet toegevoegd aan een item op de achtergrond.
+* **** Betekenis: er zijn nieuwe metagegevens met tijdslimiet toegevoegd aan een item op de achtergrond.
 
-* **Callback om te implementeren**`onTimedMetadata(TimedMetadataEvent event)`
+* **Callback om uit te voeren** `onTimedMetadata(TimedMetadataEvent event)`
 
-* **Gebeurteniscode**`TIMED_METADATA_ADDED_IN_BACKGROUND`
+* **Gebeurteniscode** `TIMED_METADATA_ADDED_IN_BACKGROUND`
 
 `TimedMetadataEventListener`
 
-* **Betekenis** Er zijn nieuwe metagegevens met tijdslimiet gedetecteerd in de mediastream.
+* **** Betekenis: er zijn nieuwe metagegevens met tijdslimiet gedetecteerd in de mediastream.
 
-* **Callback om te implementeren**`onTimedMetadata(TimedMetadataEvent event)`
+* **Callback om uit te voeren** `onTimedMetadata(TimedMetadataEvent event)`
 
-* **Gebeurteniscode**`TIMED_METADATA_AVAILABLE`
+* **Gebeurteniscode** `TIMED_METADATA_AVAILABLE`
 
 `TimelineUpdatedEventListener`
 
-* **Betekenis** De tijdlijn is gewijzigd. Mogelijk zijn advertenties toegevoegd aan of verwijderd uit de tijdlijn.
+* **** BetekenisDe tijdlijn is gewijzigd. Mogelijk zijn advertenties toegevoegd aan of verwijderd uit de tijdlijn.
 
-* **Callback om te implementeren**`onTimelineUpdated(TimelineEvent event)`
+* **Callback om uit te voeren** `onTimelineUpdated(TimelineEvent event)`
 
-* **Gebeurteniscode**`TIMELINE_UPDATED`
+* **Gebeurteniscode** `TIMELINE_UPDATED`
