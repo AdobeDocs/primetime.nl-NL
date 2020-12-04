@@ -6,6 +6,9 @@ title: HTTP 302-herleidingsoptimalisatie
 uuid: 91ed8919-a3c1-4e57-9eaf-e3ba430de35f
 translation-type: tm+mt
 source-git-commit: bc35da8b258056809ceaf18e33bed631047bc81b
+workflow-type: tm+mt
+source-wordcount: '120'
+ht-degree: 1%
 
 ---
 
@@ -18,7 +21,7 @@ Als een hoofdmanifestverzoek wordt omgeleid, en optimalisering 302 in uw speler 
 
 ## 302 omleidingsoptimalisatie uitschakelen of inschakelen {#section_8977448B268E41D69A8F75B60EB9DA3B}
 
-Gebruik de `useRedirectedUrl` eigenschap om 302 omleiding in of uit te schakelen ( `true``false`).
+Gebruik de eigenschap `useRedirectedUrl` om 302 omleiding in te schakelen ( `true`) of uit ( `false`).
 
 <!--<a id="example_888749F70C8A43279D06A29BD68E7E4D"></a>-->
 
