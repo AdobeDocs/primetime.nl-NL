@@ -21,14 +21,14 @@ TVSDK ondersteunt het omzetten en invoegen van advertenties voor VOD en live/lin
 
 Geef de volgende metagegevens op voordat u reclame in uw video-inhoud kunt opnemen:
 
-* A `mediaID`, dat de specifieke inhoud identificeert die moet worden afgespeeld.
+* A `mediaID`, die de specifieke inhoud identificeert die moet worden afgespeeld.
 * Uw `zoneID`, die uw bedrijf of website identificeert.
 * Uw advertentieserverdomein, dat het domein van uw toegewezen advertentieserver specificeert.
 * Andere doelparameters.
 
 ## Metagegevens van primetime en server instellen {#section_86C4A3B2DF124770B9B7FD2511394313}
 
-Uw toepassing moet TVSDK de vereiste `PTAuditudeMetadata` informatie verstrekken om verbinding te maken met de advertentieserver.
+Uw toepassing moet TVSDK de vereiste `PTAuditudeMetadata` informatie verstrekken om met de advertentieserver te verbinden.
 
 De metagegevens van de advertentieserver instellen:
 
@@ -42,7 +42,7 @@ De metagegevens van de advertentieserver instellen:
    adMetadata.userAgent = @"INSERT_AGENT_NAME_HERE; 
    ```
 
-1. Stel de `PTAuditudeMetadata` instantie in als metagegevens voor de huidige `PTMediaPlayerItem` metagegevens door deze te gebruiken `PTAdResolvingMetadataKey`.
+1. Stel de `PTAuditudeMetadata`-instantie in als metagegevens voor de huidige `PTMediaPlayerItem`-metagegevens met `PTAdResolvingMetadataKey`.
 
    ```
    // Metadata is an instance of PTMetadata that is used to create the PTMediaPlayerItem 
