@@ -6,15 +6,18 @@ title: Voorbeelden van bijschriftopmaak
 uuid: d55a506a-6662-4252-95f6-4073b2997f3b
 translation-type: tm+mt
 source-git-commit: 040655d8ba5f91c98ed0584c08db226ffe1e0f4e
+workflow-type: tm+mt
+source-wordcount: '41'
+ht-degree: 0%
 
 ---
 
 
-# Voorbeelden: Opmaak bijschrift{#examples-caption-formatting}
+# Voorbeelden: Bijschriftopmaak{#examples-caption-formatting}
 
 U kunt opmaak voor Closed Caption opgeven.
 
-## Voorbeeld 1: Opmaakwaarden expliciet opgeven {#section_BD7B48F3B66D4E9290E1CB2F464E08E4}
+## Voorbeeld 1: Geef opmaakwaarden expliciet op {#section_BD7B48F3B66D4E9290E1CB2F464E08E4}
 
 ```js
 // Set CC style. 
