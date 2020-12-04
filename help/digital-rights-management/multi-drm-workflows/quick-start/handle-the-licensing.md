@@ -17,7 +17,7 @@ ht-degree: 0%
 
 Licentieverlening is het belangrijkste mechanisme waarbij gebruikers de mogelijkheid wordt geboden of geweigerd om een stuk beveiligde video-inhoud af te spelen. Een wettige (gerechtigde) gebruiker kan een vergunning (een sleutel) worden verleend om een specifiek stuk van de gecodeerde inhoud van zijn inhoudsleverancier te decrypteren en te spelen.
 
-Voordat uw app of webpagina op het apparaat van een eindgebruiker met DRM beveiligde inhoud kan afspelen, moet deze een token verkrijgen van een machtigings- of storefrontserver die u als klant gebruikt. Adobe biedt hiertoe een voorbeeldreferentieserver: [Referentieserver: Voorbeeld ExpressPlay Entitlement Server (SES)](../../multi-drm-workflows/feature-topics/sees-reference-server.md).
+Voordat uw app of webpagina op het apparaat van een eindgebruiker met DRM beveiligde inhoud kan afspelen, moet deze een token verkrijgen van een machtigings- of storefrontserver die u als klant gebruikt. Adobe biedt hiertoe een voorbeeldreferentieserver: [Referentieserver: Voorbeeld ExpressPlay Entitlement Server (SEES)](../../multi-drm-workflows/feature-topics/sees-reference-server.md).
 
 Uw machtiging- of storefront-server vraagt alleen een licentietoken aan bij de relevante ExpressPlay-server nadat u met uw eigen back-end-systemen hebt gecontroleerd of de specifieke gebruiker het recht heeft de gevraagde inhoud te bekijken. De reactie die door de aanvraag voor het licentietoken wordt geretourneerd, is een gebruiksklare URL voor de licentieserver of de reactie bevat de URL in een JSON-structuur, afhankelijk van de DRM-oplossing waarmee u werkt.
 
@@ -30,7 +30,7 @@ Uw machtiging- of storefront-server vraagt alleen een licentietoken aan bij de r
 
 1. Voer de aanvraag voor het licentietoken uit.
 
-   Voor een snel-startscenario, waarin u slechts wilt ervoor zorgen dat de diverse betrokken componenten samenwerken, kunt u iets willen gebruiken als uw verzoek van het licentietoken, (in tegenstelling tot aanvankelijk het krijgen van een app en het testen van vraag van daar). [!DNL curl] Bijvoorbeeld:
+   Voor een snel-startscenario, waarin u slechts wilt ervoor zorgen dat de diverse betrokken componenten samenwerken, kunt u iets als [!DNL curl] willen gebruiken om uw verzoek van het licentietoken te maken, (in tegenstelling tot aanvankelijk het krijgen van een app en het uitvoeren van en het testen van vraag van daar). Bijvoorbeeld:
 
    * Widevine:
 
