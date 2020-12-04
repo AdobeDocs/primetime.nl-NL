@@ -6,17 +6,20 @@ title: PlayReady verzoek voor licentietoken/reactie
 uuid: 20ebd582-ebb9-4716-8c1e-df3e58d6ec14
 translation-type: tm+mt
 source-git-commit: ffb993889a78ee068b9028cb2bd896003c5d4d4c
+workflow-type: tm+mt
+source-wordcount: '913'
+ht-degree: 3%
 
 ---
 
 
-# PlayReady verzoek voor licentietoken/reactie {#playready-license-token-request-response}
+# PlayReady-verzoek voor licentietoken / reactie {#playready-license-token-request-response}
 
 De PlayReady interface van het licentietoken verleent productie en testdiensten.
 
 Deze HTTP-aanvraag retourneert een token dat voor een PlayReady-licentie kan worden ingewisseld.
 
-**Methode: GET, POST** (met een www-url-gecodeerde hoofdtekst die parameters voor beide methoden bevat)
+**Methode: GET, POST**  (met een www-url-gecodeerde hoofdtekst die parameters voor beide methoden bevat)
 
 **URL&#39;s:**
 
@@ -48,7 +51,7 @@ Deze HTTP-aanvraag retourneert een token dat voor een PlayReady-licentie kan wor
                "token":"<base64-encoded ExpressPlay token>"}
    ```
 
-## Query-parameters aanvragen {#section_26F8856641A64A46A3290DBE61ACFAD2}
+## Parameters {#section_26F8856641A64A46A3290DBE61ACFAD2} aanvragen
 
 **Tabel 9: Parameters tokenquery**
 
@@ -68,7 +71,7 @@ Deze HTTP-aanvraag retourneert een token dat voor een PlayReady-licentie kan wor
   </tr> 
   <tr> 
    <td><span class="codeph"> errorFormat</span> </td> 
-   <td>Of <span class="codeph"> html</span> of <span class="codeph"> json</span>. Als html <span class="codeph"></span> (de standaardinstelling) een HTML-representatie van fouten wordt opgegeven in de hoofdtekst van de reactie van de entiteit. <p>Als <span class="codeph"> json</span> is opgegeven, wordt een gestructureerde reactie in JSON-indeling geretourneerd. Zie <a href="https://www.expressplay.com/developer/restapi/#json-errors" format="html" scope="external"> JSON-fouten</a> voor meer informatie. </p> <p>Het mime-type van de reactie is ofwel <span class="codeph"> text/uri-list</span> bij succes, <span class="codeph"> text/html</span> voor HTML-foutindeling, of <span class="codeph"> application/json</span> voor JSON-foutindeling. </p> </td> 
+   <td>Of <span class="codeph"> html</span> of <span class="codeph"> json</span>. Als <span class="codeph"> html</span> (het gebrek) een vertegenwoordiging van HTML van om het even welke fouten in het entiteitlichaam van de reactie wordt verstrekt. <p>Als <span class="codeph"> json</span> wordt gespecificeerd, is een gestructureerde reactie in formaat JSON teruggekeerd. Zie <a href="https://www.expressplay.com/developer/restapi/#json-errors" format="html" scope="external"> JSON-fouten</a> voor meer informatie. </p> <p>Het mime-type van de reactie is <span class="codeph"> text/uri-list</span> als de bewerking succesvol is, <span class="codeph"> text/html</span> voor HTML-foutindeling, of <span class="codeph"> application/json</span> voor JSON-foutindeling. </p> </td> 
    <td> Nee </td> 
   </tr> 
  </tbody> 
@@ -97,7 +100,7 @@ Deze HTTP-aanvraag retourneert een token dat voor een PlayReady-licentie kan wor
   </tr> 
   <tr> 
    <td><span class="codeph"> kind</span> </td> 
-   <td>Een hexadecimale tekenreeksrepresentatie van 16 byte van de coderingssleutel voor inhoud of een tekenreeks <span class="codeph"> ^ergens'</span>. De lengte van de tekenreeks gevolgd door '^' mag niet groter zijn dan 64 tekens. </td> 
+   <td>Een hexadecimale tekenreeksrepresentatie van 16 bytes van de coderingssleutel voor inhoud of een tekenreeks <span class="codeph"> ^sommige string'</span>. De lengte van de tekenreeks gevolgd door '^' mag niet groter zijn dan 64 tekens. </td> 
    <td> Ja </td> 
   </tr> 
   <tr> 
@@ -108,17 +111,17 @@ Deze HTTP-aanvraag retourneert een token dat voor een PlayReady-licentie kan wor
   <tr> 
    <td><span class="codeph"> contentKey</span> </td> 
    <td> Een hexadecimale tekenreeksrepresentatie van 16 bytes van de coderingssleutel voor inhoud </td> 
-   <td>Ja, tenzij <span class="codeph"> kek</span> en <span class="codeph"> ek</span> of <span class="codeph"> kind</span> worden verstrekt </td> 
+   <td>Ja, tenzij <span class="codeph"> kek</span> en <span class="codeph"> ek</span> of <span class="codeph"> child</span> worden opgegeven </td> 
   </tr> 
   <tr> 
    <td><span class="codeph"> rightsType</span> </td> 
-   <td>Geeft het soort rechten aan. Moet <span class="codeph"> Kopen aanEigen</span> of <span class="codeph"> Verhuur</span>zijn. </td> 
+   <td>Geeft het soort rechten aan. Moet <span class="codeph"> BuyToOwn</span> of <span class="codeph"> Huur</span> zijn. </td> 
    <td> Ja </td> 
   </tr> 
   <tr> 
    <td><span class="codeph"> huur.periodEndTime</span> </td> 
-   <td>Einddatum huur. Deze waarde MOET de notatie "RFC 3339" _ datum/tijd hebben in de notatie "Z"-zoneaanduiding ("Zulu time") of een geheel getal voorafgegaan door een plusteken (+). <p>Als de waarde een <a href="https://www.ietf.org/rfc/rfc3339.txt" format="html" scope="external"> RFC 3339</a> datum/tijd formaat is, dan vertegenwoordigt het een absolute vervaldatum/tijd voor de vergunning. Een voorbeeld van een RFC 3339 datum/tijd is 2006-04-14T12:01:10Z. </p> <p> Als de waarde een geheel getal is dat wordt voorafgegaan door een plusteken (+), wordt deze genomen als een relatief aantal seconden vanaf het moment dat het token wordt uitgegeven. De inhoud kan na deze keer niet worden afgespeeld. Alleen geldig als <span class="codeph"> rechtentype</span> de <span class="codeph"> huur</span>is. </p> </td> 
-   <td>Ja, wanneer <span class="codeph"> rechtentype</span> de <span class="codeph"> huur</span>is. </td> 
+   <td>Einddatum huur. Deze waarde MOET de notatie "RFC 3339" _ datum/tijd hebben in de notatie "Z"-zoneaanduiding ("Zulu time") of een geheel getal voorafgegaan door een plusteken (+). <p>Als de waarde een <a href="https://www.ietf.org/rfc/rfc3339.txt" format="html" scope="external"> RFC 3339</a> datum/tijd formaat is, dan vertegenwoordigt het een absolute vervaldatum/tijd voor de vergunning. Een voorbeeld van een RFC 3339 datum/tijd is 2006-04-14T12:01:10Z. </p> <p> Als de waarde een geheel getal is dat wordt voorafgegaan door een plusteken (+), wordt deze genomen als een relatief aantal seconden vanaf het moment dat het token wordt uitgegeven. De inhoud kan na deze keer niet worden afgespeeld. Alleen geldig als <span class="codeph"> rightsType</span> <span class="codeph"> Rental</span> is. </p> </td> 
+   <td>Ja, wanneer <span class="codeph"> rightsType</span> <span class="codeph"> Rental</span> is. </td> 
   </tr> 
   <tr> 
    <td><span class="codeph"> huur.playDuration</span> </td> 
@@ -152,7 +155,7 @@ Deze HTTP-aanvraag retourneert een token dat voor een PlayReady-licentie kan wor
   </tr> 
   <tr> 
    <td><span class="codeph"> unknownOutputBehavior</span> </td> 
-   <td>Vereist gedrag als de uitvoer onbekend is. Toegestane waarden: Alleen <span class="codeph"> SDO toestaan</span>, <span class="codeph"> niet toestaan</span> of <span class="codeph"> alleen</span> </td> 
+   <td>Vereist gedrag als de uitvoer onbekend is. Toegestane waarden: <span class="codeph"> Allow</span>, <span class="codeph"> Disallow</span> or <span class="codeph"> SDOnly</span> </td> 
    <td> Nee </td> 
   </tr> 
   <tr> 
@@ -162,13 +165,13 @@ Deze HTTP-aanvraag retourneert een token dat voor een PlayReady-licentie kan wor
   </tr> 
   <tr> 
    <td><span class="codeph"> extensionType</span> </td> 
-   <td>Een willekeurig woord van 4 letters dat een 32-bits id voor een extensie vertegenwoordigt. De 8-bits ASCII-code van elke letter is het corresponderende 8-bits bytegedeelte van de id. De id-waarde 0x61626364 (hexadecimaal) wordt bijvoorbeeld '<span class="codeph"> abcd</span>' geschreven, omdat de ASCII-code voor 'a' 0x61 is, enzovoort. </td> 
+   <td>Een willekeurig woord van 4 letters dat een 32-bits id voor een extensie vertegenwoordigt. De 8-bits ASCII-code van elke letter is het corresponderende 8-bits bytegedeelte van de id. De id-waarde 0x61626364 (hexadecimaal) wordt bijvoorbeeld geschreven als '<span class="codeph"> abcd</span>', omdat de ASCII-code voor 'a' 0x61 is, enzovoort. </td> 
    <td> Nee </td> 
   </tr> 
   <tr> 
    <td><span class="codeph"> extensionPayload</span> </td> 
    <td> Een base64-gecodeerde tekenreeks van de extensie. </td> 
-   <td>Ja, wanneer <span class="codeph"> extensionType</span> is opgegeven. </td> 
+   <td>Ja, wanneer <span class="codeph"> extensionType</span> wordt gespecificeerd. </td> 
   </tr> 
  </tbody> 
 </table>
@@ -180,10 +183,10 @@ Deze HTTP-aanvraag retourneert een token dat voor een PlayReady-licentie kan wor
 | **HTTP-statuscode** | **Beschrijving** | **Inhoudstype** | **Entiteitslichaam bevat** |
 |---|---|---|---|
 | `200 OK` | Geen fout. | `text/uri-list` | Vergunningaankoop-URL en token |
-| `400 Bad Request` | Ongeldige args | `text/html` of `application/json` | Foutbeschrijving |
-| `401 Unauthorized` | Auth failed | `text/html` of `application/json` | Foutbeschrijving |
-| `404 Not found` | Ongeldige URL | `text/html` of `application/json` | Foutbeschrijving |
-| `50x Server Error` | Serverfout | `text/html` of `application/json` | Foutbeschrijving |
+| `400 Bad Request` | Ongeldige args | `text/html` of  `application/json` | Foutbeschrijving |
+| `401 Unauthorized` | Auth failed | `text/html` of  `application/json` | Foutbeschrijving |
+| `404 Not found` | Ongeldige URL | `text/html` of  `application/json` | Foutbeschrijving |
+| `50x Server Error` | Serverfout | `text/html` of  `application/json` | Foutbeschrijving |
 
 **Tabel 12: Gebeurtenisfoutcodes**
 
@@ -217,7 +220,7 @@ Deze HTTP-aanvraag retourneert een token dat voor een PlayReady-licentie kan wor
   </tr> 
   <tr> 
    <td> -2018 </td> 
-   <td>Verificatietoken ongeldig: &lt;details&gt; <p>Opmerking:  Dit kan gebeuren als de authenticator het mis heeft of wanneer het toegang tot van test API bij *.test.expression.com gebruikend productieauthentiek en vice versa. </p> <p importance="high">Opmerking: De test SDK en het Geavanceerde Hulpmiddel van de Test (ATT) werken slechts met <span class="filepath"> *.test.expressplay.com</span>, terwijl de productieapparaten <span class="filepath"> *.service.expressplay.com</span>moeten gebruiken. </p> </td> 
+   <td>Verificatietoken ongeldig: &lt;details&gt; <p>Opmerking:  Dit kan gebeuren als de authenticator het mis heeft of wanneer het toegang tot van test API bij *.test.expression.com gebruikend productieauthentiek en vice versa. </p> <p importance="high">Opmerking: De SDK van de Test en het Geavanceerde Hulpmiddel van de Test (ATT) werken slechts met <span class="filepath"> *.test.expressplay.com</span>, terwijl de productieapparaten <span class="filepath"> *.service.expression.com</span> moeten gebruiken. </p> </td> 
   </tr> 
   <tr> 
    <td> -2019 </td> 
@@ -277,7 +280,7 @@ Deze HTTP-aanvraag retourneert een token dat voor een PlayReady-licentie kan wor
   </tr> 
   <tr> 
    <td> -2040 </td> 
-   <td><span class="codeph"> OutputControlFlag</span> moet 4 bytes worden gecodeerd </td> 
+   <td><span class="codeph"> </span> OutputControlFlagmust be encode 4 bytes </td> 
   </tr> 
   <tr> 
    <td> -3004 </td> 
@@ -289,7 +292,7 @@ Deze HTTP-aanvraag retourneert een token dat voor een PlayReady-licentie kan wor
   </tr> 
   <tr> 
    <td> -4018 </td> 
-   <td>Ontbrekend <span class="codeph"> kind</span> </td> 
+   <td><span class="codeph"> onderliggende </span> ontbreekt </td> 
   </tr> 
   <tr> 
    <td> -4019 </td> 
@@ -297,11 +300,11 @@ Deze HTTP-aanvraag retourneert een token dat voor een PlayReady-licentie kan wor
   </tr> 
   <tr> 
    <td> -4020 </td> 
-   <td><span class="codeph"> child</span> must be 32 hexadecimale characters long </td> 
+   <td><span class="codeph"> </span> moet 32 hexadecimale tekens lang zijn </td> 
   </tr> 
   <tr> 
    <td> -4021 </td> 
-   <td><span class="codeph"> kind</span> moet 64 karakters lang na ^ zijn </td> 
+   <td><span class="codeph"> De </span> onderliggende items moeten 64 tekens lang na het ^ zijn </td> 
   </tr> 
   <tr> 
    <td> -4022 </td> 
@@ -337,7 +340,7 @@ Deze HTTP-aanvraag retourneert een token dat voor een PlayReady-licentie kan wor
   </tr> 
   <tr> 
    <td> -5007 </td> 
-   <td>U kunt slechts één <span class="codeph"> sleutel</span> of <span class="codeph"> inhoudssleutel</span> opgeven </td> 
+   <td>Slechts één van <span class="codeph"> kek</span> of <span class="codeph"> contentKey</span> kan worden gespecificeerd </td> 
   </tr> 
  </tbody> 
 </table>
