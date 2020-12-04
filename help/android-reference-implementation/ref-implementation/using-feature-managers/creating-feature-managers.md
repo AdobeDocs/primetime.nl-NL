@@ -6,11 +6,14 @@ title: Het creëren van eigenschapmanagers door configuratieinformatie tot Media
 uuid: 106ececd-a670-4360-b000-a31fec65233c
 translation-type: tm+mt
 source-git-commit: 31b6cad26bcc393d731080a70eff1c59551f1c8e
+workflow-type: tm+mt
+source-wordcount: '251'
+ht-degree: 0%
 
 ---
 
 
-# Het creëren van eigenschapmanagers door configuratieinformatie tot MediaPlayer over te gaan {#creating-feature-managers-by-passing-configuration-information-to-the-mediaplayer}
+# Het creëren van eigenschapmanagers door configuratieinformatie tot MediaPlayer {#creating-feature-managers-by-passing-configuration-information-to-the-mediaplayer} over te gaan
 
 De eigenschappen van TVSDK worden gedreven door configuratie en door MediaPlayer uitgevoerd.
 
@@ -24,9 +27,9 @@ De eigenschappen van TVSDK worden gedreven door configuratie en door MediaPlayer
 
    De managers van de eigenschap registreren TVSDK gebeurtenisluisteraars aan dit spelervoorwerp, halen gegevens van de playbackzitting terug en brengen eigenschappen TVSDK aan de playbackzitting teweeg.
 
-Elke eigenschap heeft een overeenkomstige configuratieinterface. Bijvoorbeeld, `CCManager` gebruikt `ICCConfig` om de configuratie terug te winnen. `ICCConfig` bevat methodes om de configuratieinformatie met betrekking tot gesloten ondertiteling slechts te krijgen.
+Elke eigenschap heeft een overeenkomstige configuratieinterface. `CCManager` gebruikt bijvoorbeeld `ICCConfig` om de configuratie op te halen. `ICCConfig` bevat methodes om de configuratieinformatie met betrekking tot gesloten ondertiteling slechts te krijgen.
 
-In het volgende voorbeeld wordt het [!DNL ICCConfig.java] bestand getoond, geconfigureerd om informatie te ontvangen over de zichtbaarheid van een gesloten bijschrift, de lettertypestijl en de lettertyperand van het `MediaPlayer`bestand:
+In het volgende voorbeeld wordt het [!DNL ICCConfig.java]-bestand getoond, geconfigureerd om informatie te ontvangen over de zichtbaarheid van een gesloten bijschrift, de lettertypestijl en de lettertyperand van `MediaPlayer`:
 
 ```java
 // Constructor of CCManager 
