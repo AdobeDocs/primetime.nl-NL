@@ -6,6 +6,9 @@ title: Aangepaste logboekregistratie
 uuid: f056d7d7-ec3a-4cf1-997f-72a89bbc9447
 translation-type: tm+mt
 source-git-commit: 557f42cd9a6f356aa99e13386d9e8d65e043a6af
+workflow-type: tm+mt
+source-wordcount: '297'
+ht-degree: 0%
 
 ---
 
@@ -14,21 +17,21 @@ source-git-commit: 557f42cd9a6f356aa99e13386d9e8d65e043a6af
 
 U kunt uw eigen registratiesysteem implementeren.
 
-Naast het registreren door vooraf bepaalde berichten te gebruiken, kunt u een registrerensysteem uitvoeren dat uw logboekberichten en berichten gebruikt die door TVSDK worden geproduceerd. Voor meer informatie over vooraf bepaalde berichten, zie [het Systeem](https://help.adobe.com/en_US/primetime/psdk/ios/index.html#PSDKs-concept-The_Notification_System)van het Bericht. U kunt deze logboeken gebruiken om problemen op te lossen uw spelertoepassingen en om beter inzicht in het playback en reclamewerkschema te verstrekken.
+Naast het registreren door vooraf bepaalde berichten te gebruiken, kunt u een registrerensysteem uitvoeren dat uw logboekberichten en berichten gebruikt die door TVSDK worden geproduceerd. Voor meer informatie over vooraf bepaalde berichten, zie [The Notification System](https://help.adobe.com/en_US/primetime/psdk/ios/index.html#PSDKs-concept-The_Notification_System). U kunt deze logboeken gebruiken om problemen op te lossen uw spelertoepassingen en om beter inzicht in het playback en reclamewerkschema te verstrekken.
 
-Het aangepaste registreren gebruikt een gedeelde singletoninstantie van `PSDKPTLogFactory`, die een mechanisme verstrekt om berichten aan veelvoudige loggers te registreren. U definieert en voegt (registreert) een of meer loggers toe aan de `PTLogFactory`code. Dit staat u toe om veelvoudige registreerapparaten met douaneimplementaties, zoals een consoleregistreerapparaat, een Weblogger, of een registreerapparaat van de consolegeschiedenis te bepalen.
+Het aangepaste registreren gebruikt een gedeelde singletoninstantie van `PSDKPTLogFactory`, die een mechanisme verstrekt om berichten aan veelvoudige loggers te registreren. U bepaalt en voegt (registreert) één of meerdere loggers aan `PTLogFactory` toe. Dit staat u toe om veelvoudige registreerapparaten met douaneimplementaties, zoals een consoleregistreerapparaat, een Weblogger, of een registreerapparaat van de consolegeschiedenis te bepalen.
 
-TVSDK genereert logberichten voor veel van zijn activiteiten, die door de onderneming aan alle geregistreerde loggers worden `PTLogFactory` doorgestuurd. Uw toepassing kan ook aangepaste logberichten genereren. Deze worden doorgestuurd naar alle geregistreerde loggers. Elk logger kan de berichten filteren en de juiste actie ondernemen.
+TVSDK genereert logberichten voor veel van zijn activiteiten, die de `PTLogFactory` doorstuurt naar alle geregistreerde loggers. Uw toepassing kan ook aangepaste logberichten genereren. Deze worden doorgestuurd naar alle geregistreerde loggers. Elk logger kan de berichten filteren en de juiste actie ondernemen.
 
 Er zijn twee implementaties voor `PTLogFactory`:
 
 * Voor het luisteren naar logboeken.
-* Voor het toevoegen van logbestanden aan een `PTLogFactory`bestand.
+* Voor het toevoegen van logboeken aan `PTLogFactory`.
 
-## Logbestanden beluisteren {#listen-to-logs}
+## Logbestanden {#listen-to-logs} beluisteren
 
 Registreren voor luisteren naar logbestanden:
-1. Voer een douaneklasse uit die het protocol volgt `PTLogger`:
+1. Een aangepaste klasse implementeren die volgt op het protocol `PTLogger`:
 
    ```
    @implementation PTConsoleLogger 
@@ -45,7 +48,7 @@ Registreren voor luisteren naar logbestanden:
    @end
    ```
 
-1. Als u de instantie wilt registreren voor het ontvangen van loginggegevens, voegt u een exemplaar van de code toe `PTLogger` aan de `PTLoggerFactory`:
+1. Voeg een instantie van `PTLogger` toe aan `PTLoggerFactory` om de instantie te registreren voor het ontvangen van loginggegevens:
 
    ```
    PTConsoleLogger *logger = [PTConsoleLogger consoleLogger]; 
@@ -93,11 +96,11 @@ Hier is een voorbeeld van het filtreren logboeken door het `PTLogEntry` type te 
 
 Registreren om naar logbestanden te luisteren:
 
-Maak een nieuw bestand `PTLogEntry` en voeg het toe aan `thePTLogFactory`:
+Maak een nieuwe `PTLogEntry` en voeg deze toe aan `thePTLogFactory`:
 
-U kunt handmatig een macro instantiëren `PTLogEntry` en deze toevoegen aan de `PTLogFactory` gedeelde instantie of een van de macro&#39;s gebruiken om dezelfde taak uit te voeren.
+U kunt een `PTLogEntry` manueel concretiseren en het toevoegen aan `PTLogFactory` gedeelde instantie of één van de macro&#39;s gebruiken om de zelfde taak te verwezenlijken.
 
-Hier volgt een voorbeeld van het registreren met behulp van de `PTLogDebug` macro:
+Hier volgt een voorbeeld van het registreren met de macro `PTLogDebug`:
 
 <!--<a id="example_F014436E1686468F941F4EBD1A21B18E"></a>-->
 
