@@ -6,6 +6,9 @@ title: Werken met cookies
 uuid: a3b966fd-1263-458d-8303-b4e898372ee1
 translation-type: tm+mt
 source-git-commit: 0eaf0e7e7e61d596a51d1c9c837ad072d703c6a7
+workflow-type: tm+mt
+source-wordcount: '258'
+ht-degree: 0%
 
 ---
 
@@ -27,7 +30,7 @@ Hier volgt een voorbeeld van een aanvraag aan de sleutelserver met verificatie:
 
 Werken met cookies:
 
-Maak een cookie `cookieManager` en voeg uw cookies voor de URI&#39;s toe aan uw cookieStore.
+Maak een `cookieManager` en voeg uw cookies voor de URI&#39;s toe aan uw cookieStore.
 
 Bijvoorbeeld:
 
@@ -45,7 +48,7 @@ cookieManager.getCookieStore().add(newURI("https://twitter.com/"),cookie);
 >
 >Wanneer 302 omleiding wordt toegelaten, kan het advertentieverzoek aan een domein worden opnieuw gericht dat van het domein verschillend is waartot het koekje behoort.
 
-TVSDK vraagt dit `cookieManager` tijdens runtime af, controleert of er cookies aan de URL zijn gekoppeld en gebruikt deze cookies automatisch.
+TVSDK vraagt dit `cookieManager` bij uitvoering, controleert of er cookies zijn gekoppeld aan de URL en gebruikt automatisch die cookies.
 
 De gebeurtenis MediaPlayerEvent.COOKIES_UPDATED wordt geroepen wanneer C++ koekjes worden bijgewerkt. Deze cookiesUpdatedEvent heeft een methode getCookieString() die een tekenreekswaarde voor de cookie retourneert.
 
