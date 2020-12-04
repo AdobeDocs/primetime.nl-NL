@@ -13,7 +13,7 @@ ht-degree: 0%
 ---
 
 
-# Zichtbaarheid van ondertiteling beheren {#control-closed-caption-visibility}
+# Zichtbaarheid van een gesloten bijschrift bepalen {#control-closed-caption-visibility}
 
 U kunt de zichtbaarheid van gesloten bijschriften bepalen. Wanneer de zichtbaarheid is ingeschakeld, wordt de geselecteerde track weergegeven. Als u wijzigt welke track huidig is, blijft de zichtbaarheidsinstelling ongewijzigd.
 
@@ -31,7 +31,7 @@ U kunt de zichtbaarheid van gesloten bijschriften bepalen. Wanneer de zichtbaarh
 >}
 >```
 
-1. Wacht tot de status `MediaPlayer` is VOORBEREID. Zie [Wacht op een geldige status](../../../../tvsdk-3x-android-prog/android-3x-content-playback-options-android2/ui-configure/android-3x-ui-state-prepared-wait-for.md)voor meer informatie.
+1. Wacht tot de status `MediaPlayer` ten minste de status PREPARED heeft. Voor meer informatie, zie [Wacht op een geldige status](../../../../tvsdk-3x-android-prog/android-3x-content-playback-options-android2/ui-configure/android-3x-ui-state-prepared-wait-for.md).
 
 1. Als u de huidige zichtbaarheidsinstelling voor gesloten bijschriften wilt ophalen, gebruikt u de methode getter in `MediaPlayer`, die een zichtbaarheidswaarde retourneert.
 
