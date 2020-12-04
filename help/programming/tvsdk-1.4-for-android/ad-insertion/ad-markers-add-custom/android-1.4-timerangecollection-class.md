@@ -6,11 +6,14 @@ title: TimeRangeCollection, klasse
 uuid: 5705dc9d-4325-44b0-b5aa-196d09c3a67e
 translation-type: tm+mt
 source-git-commit: 5908e5a3521966496aeec0ef730e4a704fddfb68
+workflow-type: tm+mt
+source-wordcount: '124'
+ht-degree: 0%
 
 ---
 
 
-# TimeRangeCollection, klasse{#timerangecollection-class}
+# TimeRangeCollection-klasse{#timerangecollection-class}
 
 De het hulpprogrammaklasse van TimeRangeCollection onttrekt het begrip van een bevolen inzameling van specificaties TimeRange en verleent de diensten om zich in een instantie van Metadata te vertalen.
 
@@ -32,4 +35,4 @@ public final class TimeRangeCollection {
 }
 ```
 
-De `type` parameter, de eerste positieparameter in de handtekening van de constructormethoden, is een instantie van de `TimeRangeCollection#Type` opsomming. Dit is onderdeel van de `TimeRangeCollection` klasse. De waarden die momenteel door deze opsomming worden bepaald zijn `MARK_RANGES`, `DELETE_RANGES`en `REPLACE_RANGES`. U kunt `TimeRangeCollection` objecten maken met deze drie typen.
+De parameter `type`, de eerste positieparameter in de handtekening van de constructormethoden, is een instantie van de opsomming `TimeRangeCollection#Type`. Dit is onderdeel van de klasse `TimeRangeCollection`. De waarden die momenteel door deze opsomming worden bepaald zijn `MARK_RANGES`, `DELETE_RANGES`, en `REPLACE_RANGES`. U kunt `TimeRangeCollection` voorwerpen tot stand brengen gebruikend deze drie types.
