@@ -7,6 +7,9 @@ title: Regels voor het bijwerken en creatief selecteren
 uuid: 84cc13d1-21a3-456b-95c8-200bfec7b453
 translation-type: tm+mt
 source-git-commit: 5908e5a3521966496aeec0ef730e4a704fddfb68
+workflow-type: tm+mt
+source-wordcount: '276'
+ht-degree: 0%
 
 ---
 
@@ -19,15 +22,16 @@ Wanneer uw videospeler een verzoek indient aan een advertentieserver, omvat de r
 
 >[!IMPORTANT]
 >
->* Wijzig de naam van het configuratiebestand voor TVSDK niet. De naam moet achterblijven [!DNL AdobeTVSDKConfig.json].
->* Dit bestand moet in de [!DNL assets/] map van uw project worden geplaatst.
+>* Wijzig de naam van het configuratiebestand voor TVSDK niet. De naam moet [!DNL AdobeTVSDKConfig.json] blijven.
+>* Dit bestand moet in de map [!DNL assets/] van uw project worden geplaatst.
+
 >
 
 
 
-U kunt twee typen regels opgeven in [!DNL AdobeTVSDKConfig.json]: *Prioritaire* regels en *Normaliseer* regels.
+U kunt twee typen regels opgeven in [!DNL AdobeTVSDKConfig.json]: *Prioriteitsregels* en *Normaliseren* regels.
 
-## Pre-Roll uitschakelen {#disabling-preroll}
+## Pre-Roll {#disabling-preroll} uitschakelen
 
 Om pre-rol onbruikbaar te maken zult u de standaardopportuniteitsgenerators moeten veranderen om niet de pre-rolvraag te maken. Standaard gebruikt TVSDK de volgende opportuniteitsgeneratoren:
 
