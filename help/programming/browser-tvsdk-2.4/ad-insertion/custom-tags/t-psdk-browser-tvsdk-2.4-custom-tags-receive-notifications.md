@@ -6,15 +6,18 @@ title: Listeners toevoegen voor meldingen van getimede metagegevens
 uuid: c82c5549-0ab6-4343-a766-5176e784d4cb
 translation-type: tm+mt
 source-git-commit: 040655d8ba5f91c98ed0584c08db226ffe1e0f4e
+workflow-type: tm+mt
+source-wordcount: '83'
+ht-degree: 0%
 
 ---
 
 
-# Listeners toevoegen voor meldingen van getimede metagegevens{#add-listeners-for-timed-metadata-notifications}
+# Listeners toevoegen voor meldingen met tijdmetagegevens{#add-listeners-for-timed-metadata-notifications}
 
 Luister naar AdobePSDK.TimedMetadataEvent om meldingen over tags in het manifest te ontvangen.
 
-Wanneer een nieuw `TimedMetadata` object wordt gemaakt, verzendt de MediaPlayer `AdobePSDK.TimedMetadataEvent`.
+Wanneer een nieuw `TimedMetadata` voorwerp wordt gecreeerd, verzendt MediaPlayer `AdobePSDK.TimedMetadataEvent`.
 
 1. Voer de aangewezen luisteraars uit.
 
@@ -31,5 +34,5 @@ Wanneer een nieuw `TimedMetadata` object wordt gemaakt, verzendt de MediaPlayer 
    player.addEventListener(AdobePSDK.PSDKEventType.TIMED_METADATA_AVAILABLE, onTimedMetadataEvent);
    ```
 
-ID3-metagegevens worden op dezelfde manier verzonden `Events.TimedMetadataEvent`. U kunt de `timedMetadata.type` eigenschap gebruiken om onderscheid te maken tussen TAG en ID3.
+ID3-metagegevens worden via dezelfde `Events.TimedMetadataEvent` verzonden. Met de eigenschap `timedMetadata.type` kunt u onderscheid maken tussen TAG en ID3.
 
