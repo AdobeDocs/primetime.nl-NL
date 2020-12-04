@@ -6,6 +6,9 @@ title: Toevoegen
 uuid: 75c1d77a-a7ff-4cb6-ad7f-7c83a950b7cb
 translation-type: tm+mt
 source-git-commit: 31b6cad26bcc393d731080a70eff1c59551f1c8e
+workflow-type: tm+mt
+source-wordcount: '189'
+ht-degree: 0%
 
 ---
 
@@ -16,6 +19,6 @@ De voorbeeldimplementatie illustreert hoe u de speler voor advertenties kunt ins
 
 Het instellen van een speler voor het invoegen van advertenties omvat:
 
-* **Invoer:** Een invoerfeed vullen met metagegevens voor advertenties. Zie [Catalogusindeling](../set-up-dev-environment/exploring-code/catalog-format.md).
-* **Referentie-implementatiefeed-adapter:** De invoerfeed parseren om een metagegevensobject voor een advertentie te vullen.
-* **AdsManager:** Met AdsManager kunt u de metagegevens van de advertentie ophalen en de bijbehorende AdProvider maken.
+* **Invoer:** invoerfeed vullen met metagegevens voor advertenties. Zie [Catalogusindeling](../set-up-dev-environment/exploring-code/catalog-format.md).
+* **Referentie-implementatiefeed-adapter:de invoerfeed** parseren om een advertentie-metagegevensobject te vullen.
+* **AdsManager:AdsManager** gebruiken om de advertentiemetagegevens terug te winnen en overeenkomstige AdProvider tot stand te brengen.
