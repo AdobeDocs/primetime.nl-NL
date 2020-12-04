@@ -6,6 +6,9 @@ title: Creeer een Browser-Compatibele speler zonder UI-Kader
 uuid: c4315bc8-c75d-4dd9-8680-946c1197be1e
 translation-type: tm+mt
 source-git-commit: 592245f5a7186d18dabbb5a98a468cbed7354aed
+workflow-type: tm+mt
+source-wordcount: '253'
+ht-degree: 0%
 
 ---
 
@@ -14,16 +17,16 @@ source-git-commit: 592245f5a7186d18dabbb5a98a468cbed7354aed
 
 Gebruik het bibliotheekbestand Browser van TVSDK van Browser in uw app om een speler te maken die compatibel is met Browser.
 
-Het onderwerp [](../../../browser-tvsdk-2.4/getting-started/c-psdk-browser-tvsdk-2.4-create-a-basic-player/t-psdk-browser-tvsdk-2.4-create-basic-player-tvsdk.md) bevat een lijst met Browser-TVSDK-bibliotheken die u normaal gesproken gebruikt wanneer u een eenvoudige videospeler maakt. Hiervoor voegt u eenvoudig `script` tags toe met `src` kenmerken die naar de bibliotheken verwijzen.
+Het onderwerp [](../../../browser-tvsdk-2.4/getting-started/c-psdk-browser-tvsdk-2.4-create-a-basic-player/t-psdk-browser-tvsdk-2.4-create-basic-player-tvsdk.md) maakt een lijst van de Browser bibliotheken van TVSDK die u normaal omvat wanneer u een basisvideospeler creeert. Hiervoor voegt u `script`-tags toe met `src`-kenmerken die naar de bibliotheken verwijzen.
 
-Het proces is iets anders voor het maken van een speler die compatibel is met Browser. Hiervoor gebruikt u de `require` opdracht om het [!DNL AdobePSDK.module.js] bestand (opgegeven door de Browser-TVSDK) op te nemen in uw app. Dit bestand bundelt de basisbibliotheekbestanden van de speler in de juiste volgorde van afhankelijkheid en retourneert de `AdobePSDK` naamruimte die u gebruikt om functies voor de speler te implementeren.
+Het proces is iets anders voor het maken van een speler die compatibel is met Browser. Hiervoor gebruikt u de opdracht `require` om het bestand [!DNL AdobePSDK.module.js] (opgegeven door de TVSDK van de browser) op te nemen in uw app. Dit bestand bundelt de basisbibliotheekbestanden van de speler in de juiste volgorde van afhankelijkheid en retourneert de naamruimte `AdobePSDK` die u gebruikt om functies voor uw speler te implementeren.
 
 Browser TVSDK biedt de volgende voorbeeldtoepassing Browser en bouwt bestanden in het releasepakket:
 
-* [!DNL [...]/samples/browserify/reference/build/Gruntfile.js]
-* [!DNL [...]/samples/browserify/reference/build/package.json]
-* [!DNL [...]/samples/browserify/reference/examples/sample.html]
-* [!DNL [...]/samples/browserify/reference/examples/sample.js]
+* [!DNL [..]/samples/browserify/reference/build/Gruntfile.js]
+* [!DNL [..]/samples/browserify/reference/build/package.json]
+* [!DNL [..]/samples/browserify/reference/examples/sample.html]
+* [!DNL [..]/samples/browserify/reference/examples/sample.js]
 
 Een videospeler maken die compatibel is met Browser:
 
