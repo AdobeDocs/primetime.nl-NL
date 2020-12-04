@@ -6,6 +6,9 @@ title: Videoanalysemogelijkheden initialiseren en configureren
 uuid: 262b1a28-2986-4fbb-a465-4ce8cefe18fb
 translation-type: tm+mt
 source-git-commit: 5908e5a3521966496aeec0ef730e4a704fddfb68
+workflow-type: tm+mt
+source-wordcount: '631'
+ht-degree: 0%
 
 ---
 
@@ -17,28 +20,28 @@ U kunt de speler configureren om het videogebruik te volgen en te analyseren.
 Controleer of u het volgende hebt voordat u video-tracking (videohartslagen) activeert:
 
 * TVSDK voor Android
-* Configuratie-/initialisatiegegevens - Neem contact op met uw Adobe-vertegenwoordiger voor uw specifieke informatie over uw account voor het bijhouden van video&#39;s:
+* Configuratie-/initialisatiegegevens - Neem contact op met uw Adobe-vertegenwoordiger voor uw specifieke accountgegevens voor het bijhouden van video:
 
 <table id="table_3565328ABBEE4605A92EAE1ADE5D6F84"> 
  <tbody> 
   <tr> 
-   <td colname="col1"> <span class="filepath"> ADBMobileConfig.json </span> </td> 
-   <td colname="col2"> <p>Belangrijk:  Dit JSON-configuratiebestand moet ADBMobileConfig.json blijven <span class="codeph"> </span>. De naam en het pad van dit configuratiebestand kunnen niet worden gewijzigd. Het pad naar dit bestand moet <span class="codeph"> &lt;source root&gt;/assets zijn </span>. </p> </td> 
+   <td colname="col1"> <span class="filepath"> ADBMobileConfig.json  </span> </td> 
+   <td colname="col2"> <p>Belangrijk:  Dit JSON-configuratiebestand moet <span class="codeph"> ADBMobileConfig.json </span> blijven. De naam en het pad van dit configuratiebestand kunnen niet worden gewijzigd. Het pad naar dit bestand moet <span class="codeph"> &lt;source root&gt;/assets </span> zijn. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> Het eindpunt van de toepassingsmeetserver </td> 
+   <td colname="col1"> Het eindpunt van de trackingserver voor AppMeturement </td> 
    <td colname="col2"> De URL van het achterste eindpunt van de Adobe Analytics-verzameling (voorheen SiteCatalyst). </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Het servereindpunt voor videoanalyse bijhouden </td> 
-   <td colname="col2"> De URL van het back-end verzameleindpunt van de videoanalyse. Dit is waar alle video hartslag het volgen vraag wordt verzonden. <p>Tip:  De URL van de server voor het bijhouden van bezoekers is gelijk aan de URL van de analytische trackingserver. Voor informatie over het uitvoeren van de Dienst van identiteitskaart van de Bezoeker, zie de Dienst van identiteitskaart van het <a href="https://marketing.adobe.com/resources/help/en_US/mcvid/mcvid-setup-target.html" format="html" scope="external"> Uitvoeren </a>. </p> </td> 
+   <td colname="col2"> De URL van het back-end verzameleindpunt van de videoanalyse. Dit is waar alle video hartslag het volgen vraag wordt verzonden. <p>Tip:  De URL van de server voor het bijhouden van bezoekers is gelijk aan de URL van de analytische trackingserver. Voor informatie over het uitvoeren van de Dienst van identiteitskaart van de Bezoeker, zie <a href="https://marketing.adobe.com/resources/help/en_US/mcvid/mcvid-setup-target.html" format="html" scope="external"> de Dienst </a> van identiteitskaart uitvoeren. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Accountnaam </td> 
    <td colname="col2"> Ook gekend als identiteitskaart van de Reeks van het Rapport (RSID). </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> Organisatie-id van Marketing Cloud </td> 
+   <td colname="col1"> Organisatie-id Marketing Cloud </td> 
    <td colname="col2"> Een tekenreekswaarde die is vereist voor het instantiëren van de component Visitor. </td> 
   </tr> 
   <tr> 
@@ -50,7 +53,7 @@ Controleer of u het volgende hebt voordat u video-tracking (videohartslagen) act
 
 U kunt als volgt video bijhouden in uw speler configureren:
 
-1. Controleer of de opties voor de laadtijd in het `ADBMobileConfig.json` bronbestand correct zijn.
+1. Bevestig dat de lading-tijd opties in het `ADBMobileConfig.json` middeldossier correct zijn.
 
    ```
    { 
@@ -83,14 +86,14 @@ U kunt als volgt video bijhouden in uw speler configureren:
 
    Opties voor laadtijd configureren:
 
-   1. Controleer of het `ADBMobileConfig.json` bestand de juiste waarden bevat die door Adobe worden geleverd.
-   1. Bevestig dat dit bestand zich in de `assets` map bevindt.
+   1. Bevestig dat het `ADBMobileConfig.json`-bestand de juiste waarden bevat die door Adobe worden opgegeven.
+   1. Bevestig dat dit bestand zich in de map `assets` bevindt.
 
       Deze map moet zich in de hoofdmap van de bronstructuur van de toepassing bevinden.
    1. Compileer en bouw uw toepassing.
    1. Implementeer en voer de gebundelde toepassing uit.
 
-      Zie Video [meten in Adobe Analytics](https://marketing.adobe.com/resources/help/en_US/sc/appmeasurement/video/)voor meer informatie over deze instellingen voor AppMeasurement.
+      Voor meer informatie over deze montages AppMeasurement, zie [Metende Video in Adobe Analytics](https://marketing.adobe.com/resources/help/en_US/sc/appmeasurement/video/).
 1. Metagegevens voor het bijhouden van videokaarten initialiseren en configureren.
 
    >[!IMPORTANT]
