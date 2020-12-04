@@ -6,6 +6,9 @@ title: Selecteer een ondertitelingstrack uit de beschikbare tracks
 uuid: 637a70c9-9bef-4b13-8b1f-62f22f983e80
 translation-type: tm+mt
 source-git-commit: 5908e5a3521966496aeec0ef730e4a704fddfb68
+workflow-type: tm+mt
+source-wordcount: '247'
+ht-degree: 0%
 
 ---
 
@@ -24,5 +27,5 @@ TVSDK ondersteunt het renderen van deze indelingen:
 U kunt:
 
 * Selecteer een beschikbare bijschrifttrack als huidige track en luister naar gebeurtenissen die aangeven welke aanvullende beschikbare tracks beschikbaar zijn.
-* Schakel ondertiteling in of uit (zichtbaar of niet zichtbaar) door de `MediaPlayer` interface te gebruiken.
-* Selecteer opmaakopties die bepalen hoe gesloten bijschriften worden gerenderd door de onderliggende video-engine. Gebruik de `MediaPlayerItem` interface om indelingen zoals het lettertype of de lettertypekleur te selecteren.
+* Schakel ondertiteling aan of uit (zichtbaar of niet zichtbaar) door de `MediaPlayer` interface te gebruiken.
+* Selecteer opmaakopties die bepalen hoe gesloten bijschriften worden gerenderd door de onderliggende video-engine. Gebruik de `MediaPlayerItem` interface om formaten zoals de doopvont of doopvontkleur te selecteren.
