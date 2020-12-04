@@ -6,6 +6,9 @@ title: Beperkingen en gedrag voor het spelen van truc
 uuid: c28cc8db-3f45-488e-ab72-b102b3a1fab2
 translation-type: tm+mt
 source-git-commit: bc35da8b258056809ceaf18e33bed631047bc81b
+workflow-type: tm+mt
+source-wordcount: '287'
+ht-degree: 0%
 
 ---
 
@@ -16,7 +19,7 @@ source-git-commit: bc35da8b258056809ceaf18e33bed631047bc81b
 
 Beperkingen voor de speelmodus van een truc:
 
-* De hoofdafspeellijst moet alleen Iframe-segmenten bevatten.
+* De master afspeellijst moet alleen Iframe-segmenten bevatten.
 
    Alleen de keyframes van de Iframe-track worden op het scherm weergegeven.
 * De audiotrack en gesloten bijschriften zijn uitgeschakeld.
@@ -30,7 +33,7 @@ Beperkingen voor de speelmodus van een truc:
    * De huidige tijdwaarde springt vooruit (op snelle voorwaartse) of achteruit (op snelle terugspoeling) met de duur overgeslagen en onderbreking.
 
       Door dit spronggedrag voor de huidige tijd kan de streamduur ongewijzigd blijven tijdens het spelen van een truc. De speler kan de tijd alleen bijhouden ten opzichte van de hoofdinhoud. Er worden geen tijdsprongen uitgevoerd op de waarden die tijdens het overslaan van een advertentie worden geretourneerd.
-   * De `MediaPlayerEvent.AD_BREAK_SKIPPED` gebeurtenis wordt verzonden vlak voordat een advertentieeinde wordt overgeslagen.
+   * De gebeurtenis `MediaPlayerEvent.AD_BREAK_SKIPPED` wordt verzonden vlak voordat een advertentieeinde wordt overgeslagen.
 
       De speler kan deze gebeurtenis gebruiken om aangepaste logica te implementeren met betrekking tot overgeslagen en verbroken bewerkingen.
 
