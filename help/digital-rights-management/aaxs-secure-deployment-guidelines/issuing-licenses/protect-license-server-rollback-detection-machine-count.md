@@ -11,14 +11,14 @@ ht-degree: 0%
 ---
 
 
-# Aantal machines bij afgifte van vergunningen{#machine-count-when-issuing-licenses}
+# Aantal machines bij afgifte licenties{#machine-count-when-issuing-licenses}
 
-Als de bedrijfsregels vereisen dat het aantal machines voor een gebruiker wordt gevolgd, moet de Server van de Vergunning of de Server van het Domein machine IDs opslaan verbonden aan de gebruiker. De meest robuuste manier om machine IDs te volgen is de waarde op te slaan die door de `MachineId.getBytes()` methode in een gegevensbestand is teruggekeerd. Wanneer een nieuwe aanvraag wordt ingediend, vergelijkt u de machine-id in de aanvraag met de bekende machine-id&#39;s die `MachineId.matches()`worden gebruikt.
+Als de bedrijfsregels vereisen dat het aantal machines voor een gebruiker wordt gevolgd, moet de Server van de Vergunning of de Server van het Domein machine IDs opslaan verbonden aan de gebruiker. De meest robuuste manier om machine IDs te volgen is de waarde op te slaan die door de `MachineId.getBytes()` methode in een gegevensbestand is teruggekeerd. Wanneer een nieuw verzoek binnen komt, vergelijk machineidentiteitskaart in het verzoek met bekende machineIDs gebruikend `MachineId.matches()`.
 
 `MachineId.matches()` voert een vergelijking van IDs uit om te bepalen of zij de zelfde machine vertegenwoordigen. Deze vergelijking is alleen handig als er een klein aantal machine-id&#39;s is die met elkaar moeten worden vergeleken. Bijvoorbeeld, als een gebruiker vijf machines binnen hun domein wordt toegestaan, kunt u het gegevensbestand naar machine IDs zoeken verbonden aan de gebruikersbenaming van de gebruiker en een kleine reeks gegevens verkrijgen om tegen te vergelijken.
 
 >[!NOTE]
 >
->Deze vergelijking is niet praktisch voor plaatsingen die anonieme toegang toestaan. In dergelijke gevallen `MachineId.getUniqueID()` kan deze id echter niet worden gebruikt als de gebruiker toegang krijgt tot inhoud van zowel de Flash- als de Adobe AIR®-runtime, en deze id blijft niet behouden als de gebruiker de vaste schijf opnieuw formatteert.
+>Deze vergelijking is niet praktisch voor plaatsingen die anonieme toegang toestaan. In dergelijke gevallen kan `MachineId.getUniqueID()` worden gebruikt, echter, zal deze identiteitskaart niet het zelfde zijn als de gebruiker tot inhoud van zowel Flash als Adobe AIR® runtimes toegang heeft, en zal niet overleven als de gebruiker hun harde aandrijving herformatteert.
 
-Zie de API-naslaggids voor `MachineToken.getMachineId()``MachineId.matches()`Adobe Access voor meer informatie over *en* informatie.
+Voor meer informatie over `MachineToken.getMachineId()`en `MachineId.matches()`, zie *Adobe Toegang API Verwijzing*.
