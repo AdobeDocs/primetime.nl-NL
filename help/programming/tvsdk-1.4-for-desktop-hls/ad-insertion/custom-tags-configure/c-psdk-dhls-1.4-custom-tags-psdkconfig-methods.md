@@ -6,6 +6,9 @@ title: Methoden van de klasse Config voor tags
 uuid: 3317fc8b-c13c-4e7d-8334-aa8cdf40fa05
 translation-type: tm+mt
 source-git-commit: b9e98ef2b4246fdfd79ebcd91db344c97367d661
+workflow-type: tm+mt
+source-wordcount: '243'
+ht-degree: 0%
 
 ---
 
@@ -16,7 +19,7 @@ U kunt aangepaste tagnamen in TVSDK globaal configureren met de MediaPlayerItemC
 
 TVSDK past de algemene configuratie automatisch toe op elke mediastream waarvoor geen streamspecifieke configuratie is opgegeven.
 
-Deze methoden worden `PSDKConfig` zowel beschikbaar gemaakt als `MediaPlayerItemConfig` beschikbaar gemaakt voor het beheer van aangepaste tags:
+Zowel `PSDKConfig` als `MediaPlayerItemConfig` stellen deze methodes bloot om de douanetags te beheren:
 
 <table id="table_B37A6C75270D47BC99258F2884AD6905"> 
  <tbody> 
@@ -25,23 +28,23 @@ Deze methoden worden `PSDKConfig` zowel beschikbaar gemaakt als `MediaPlayerItem
    <td colname="3"> </td>
   </tr> 
   <tr> 
-   <td colname="col1"><span class="codeph"> public function get subscribeTags():Vector.&lt;String&gt;</span> </td> 
+   <td colname="col1"><span class="codeph"> public function get subscribeTags():Vector.&lt;string&gt;</span> </td> 
    <td colname="col2"> Hiermee wordt de huidige lijst met geabonneerde tags opgehaald. </td> 
   </tr> 
   <tr> 
-   <td colname="col1"><span class="codeph"> public function set subscribeTags():Vector.&lt;String&gt;</span> </td> 
-   <td colname="col2">Hiermee stelt u de lijst met geabonneerde tags in die aan de toepassing worden blootgesteld. <p>Uw toepassing wordt ook automatisch geabonneerd op alle tags die via <span class="codeph"> advertentietags</span>worden verzonden. </p> </td> 
+   <td colname="col1"><span class="codeph"> public function set subscribeTags():Vector.&lt;string&gt;</span> </td> 
+   <td colname="col2">Hiermee stelt u de lijst met geabonneerde tags in die aan de toepassing worden blootgesteld. <p>Uw toepassing wordt ook automatisch geabonneerd op alle tags die via <span class="codeph"> adTags</span> worden verzonden. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="1"><b>De advertentietags aanpassen die worden gebruikt door de standaardopportuniteitsdetector </b> </td> 
+   <td colname="1"><b>De advertentietags aanpassen die worden gebruikt door de standaardopportuniteitsdetector  </b> </td> 
    <td colname="3"> </td>
   </tr> 
   <tr> 
-   <td colname="col1"><span class="codeph"> public function get adTags():Vector.&lt;String&gt;</span> </td> 
+   <td colname="col1"><span class="codeph"> public function get adTags():Vector.&lt;string&gt;</span> </td> 
    <td colname="col2"> Hiermee wordt de huidige lijst met advertentietags opgehaald. </td> 
   </tr> 
   <tr> 
-   <td colname="col1"><span class="codeph"> public function set adTags():Vector.&lt;String&gt;</span> </td> 
+   <td colname="col1"><span class="codeph"> public function set adTags():Vector.&lt;string&gt;</span> </td> 
    <td colname="col2"> Hiermee stelt u de lijst met advertentietags in die door de standaardopportuniteitsgenerator wordt gebruikt. </td> 
   </tr> 
  </tbody> 
@@ -54,6 +57,6 @@ Houd rekening met het volgende:
    Indien aangetroffen, genereert TVSDK een `IllegalArgumentException`.
 * De naam van de aangepaste tag moet het voorvoegsel # bevatten.
 
-   De aangepaste tagnaam `#EXT-X-ASSET` is bijvoorbeeld correct, maar `EXT-X-ASSET` is onjuist.
+   `#EXT-X-ASSET` is bijvoorbeeld een correcte aangepaste tagnaam, maar `EXT-X-ASSET` is onjuist.
 * U kunt de configuratie niet wijzigen nadat de mediastream is geladen.
 
