@@ -6,6 +6,9 @@ title: Werken met cookies
 uuid: 7586a5a7-9914-403b-86a9-fbdd28664b07
 translation-type: tm+mt
 source-git-commit: 040655d8ba5f91c98ed0584c08db226ffe1e0f4e
+workflow-type: tm+mt
+source-wordcount: '256'
+ht-degree: 0%
 
 ---
 
@@ -23,7 +26,7 @@ Hier is een voorbeeld met wat type authentificatie wanneer het doen van verzoeke
 
 Werken met cookies:
 
-1. Gebruik de `cookieHeaders` eigenschap in `NetworkConfiguration` om een cookie in te stellen. De `cookieHeaders` eigenschap is een object Metadata en u kunt sleutelwaardeparen toevoegen aan dit object dat in de cookie-header moet worden opgenomen.
+1. Gebruik de eigenschap `cookieHeaders` in `NetworkConfiguration` om een cookie in te stellen. De eigenschap `cookieHeaders` is een object Metagegevens en u kunt sleutelwaardeparen aan dit object toevoegen om in de cookie-header te worden opgenomen.
 
    Bijvoorbeeld:
 
@@ -35,9 +38,9 @@ Werken met cookies:
    networkConfiguration.cookieHeaders = metadata;
    ```
 
-   Cookiekoppen worden standaard alleen met hoofdaanvragen verzonden. Als u cookie-headers wilt verzenden met alle aanvragen, stelt u de `NetworkConfiguration` eigenschap in `useCookieHeadersForAllRequests` op true.
+   Cookiekoppen worden standaard alleen met hoofdaanvragen verzonden. Om koekjeskopballen met alle verzoeken te verzenden, plaats `NetworkConfiguration` bezit `useCookieHeadersForAllRequests` aan waar.
 
-1. Als u dit wilt `NetworkConfiguration` doen, stelt u het in als metagegevens:
+1. Om ervoor te zorgen dat `NetworkConfiguration` werkt, plaats het als meta-gegevens:
 
    ```
    var networkConfiguration:NetworkConfiguration = new NetworkConfiguration(); 
@@ -47,9 +50,9 @@ Werken met cookies:
                                 networkConfiguration);
    ```
 
-1. Geef de metagegevens van de vorige stap op wanneer u een `MediaResource`bestand maakt.
+1. Geef de metagegevens van de vorige stap op wanneer u een `MediaResource` maakt.
 
-   Als u bijvoorbeeld de `createFromURL` methode gebruikt, voert u de volgende informatie in:
+   Als u bijvoorbeeld de methode `createFromURL` gebruikt, voert u de volgende informatie in:
 
    ```
    var resource:MediaResource = MediaResource.createFromURL(url, resourceMetadata);
