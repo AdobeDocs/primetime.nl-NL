@@ -6,11 +6,14 @@ title: Ontbrekende segment-failover
 uuid: 17ee1221-e1eb-4f64-a406-4d7eff1d7555
 translation-type: tm+mt
 source-git-commit: 5908e5a3521966496aeec0ef730e4a704fddfb68
+workflow-type: tm+mt
+source-wordcount: '321'
+ht-degree: 0%
 
 ---
 
 
-# Ontbrekende segment-failover{#missing-segment-failover}
+# Ontbrekende segment failover{#missing-segment-failover}
 
 Wanneer een segment mist, bijvoorbeeld wanneer een bepaald segment er niet in slaagt te downloaden, probeert om door een verscheidenheid van failoverpogingen terug te krijgen. Als het niet kan herstellen, geeft het een fout uit.
 
@@ -21,9 +24,9 @@ Als een segment ontbreekt op de server omdat, bijvoorbeeld, het manifestdossier 
 1. Doorloop elke beschikbare bitsnelheid in elke beschikbare variant.
 1. Sla het segment over en geef een waarschuwing weer.
 
-Wanneer TVSDK geen alternatief segment kan verkrijgen, wordt een `CONTENT_ERROR` foutmelding geactiveerd. Deze melding bevat een binnenste melding met de `DOWNLOAD_ERROR` code. Als de stream met het probleem een alternatieve audiotrack is, wordt een foutmelding gegenereerd. `AUDIO_TRACK_ERROR`
+Wanneer TVSDK geen alternatief segment kan verkrijgen, leidt het tot een `CONTENT_ERROR` foutenmelding. Deze melding bevat een binnenste melding met de code `DOWNLOAD_ERROR`. Als de stream met het probleem een alternatieve audiotrack is, wordt de foutmelding `AUDIO_TRACK_ERROR` gegenereerd.
 
-Als de video-engine continu geen segmenten kan ophalen, beperkt het continue segmentoverslaan tot 5, waarna het afspelen wordt gestopt en een lus `NATIVE_ERROR` met code 5 wordt uitgevoerd.
+Als de video-engine continu geen segmenten kan ophalen, beperkt het continue segmentoverslaan tot 5, waarna het afspelen wordt gestopt en een `NATIVE_ERROR` met code 5 wordt uitgegeven.
 
 >[!NOTE]
 >
