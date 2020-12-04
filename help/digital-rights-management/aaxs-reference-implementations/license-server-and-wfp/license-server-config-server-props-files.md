@@ -11,7 +11,7 @@ ht-degree: 0%
 ---
 
 
-# Servereigenschappen {#server-properties-files}
+# Bestanden met servereigenschappen {#server-properties-files}
 
 Voor de server zijn twee configuratiebestanden nodig: een voor de licentieserver en een voor de pakketsoftware. Beide bestanden moeten op het klassepad worden geplaatst. De eigenschappenbestanden bevatten de locatie van de gegevens die door Adobe zijn uitgegeven. Deze referenties kunnen worden opgegeven als een .pfx-bestand en wachtwoord of door een alias en wachtwoord op te geven voor een referentie die is opgeslagen op een HSM.
 
@@ -39,4 +39,4 @@ Het wachtwoord van uw referentie op de juiste wijze voorbereiden:
 >
 >In het vorige voorbeeld wordt een puntkomma (;) als scheidingsteken gebruikt. Gebruik voor andere platforms dan Microsoft Windows een dubbele punt (:) als scheidingsteken.
 
-Het hulpprogramma geeft het gecodeerde wachtwoord uit, dat u naar het [!DNL .properties] bestand moet kopiëren.
+Het nut output het gecodeerde wachtwoord, dat u aan het [!DNL .properties] dossier moet kopiëren.
