@@ -6,16 +6,19 @@ title: De duur, de huidige tijd en de resterende tijd van de video weergeven
 uuid: 64536ba7-33a1-49f8-a947-5700e1e9c032
 translation-type: tm+mt
 source-git-commit: 040655d8ba5f91c98ed0584c08db226ffe1e0f4e
+workflow-type: tm+mt
+source-wordcount: '321'
+ht-degree: 0%
 
 ---
 
 
-# De duur, de huidige tijd en de resterende tijd van de video weergeven{#display-the-duration-current-time-and-remaining-time-of-the-video}
+# Geef de duur, de huidige tijd en de resterende tijd van de video weer{#display-the-duration-current-time-and-remaining-time-of-the-video}
 
 U kunt TVSDK gebruiken om informatie op te halen over de media die u op de zoekbalk kunt weergeven.
 
 1. Wacht tot de speler de status INITIALIZED heeft.
-1. Haal de huidige tijd van de afspeelkop op met de `MediaPlayer.currentTime` eigenschap.
+1. Haal de huidige tijd van de afspeelkop op met de eigenschap `MediaPlayer.currentTime`.
 
    Hiermee wordt de huidige positie van de afspeelkop op de virtuele tijdlijn in milliseconden geretourneerd. De tijd wordt berekend ten opzichte van de opgeloste stream die meerdere instanties van alternatieve inhoud kan bevatten, zoals meerdere advertenties of ad-einden die in de hoofdstream worden gespliceerd. Voor live/lineaire streams bevindt de geretourneerde tijd zich altijd in het bereik van het afspeelvenster.
 
@@ -24,7 +27,7 @@ U kunt TVSDK gebruiken om informatie op te halen over de media die u op de zoekb
    ```
 
 1. Haal het afspeelbereik van de stream op en bepaal de duur.
-   1. Gebruik de `mediaPlayer.playbackRange` eigenschap om het tijdbereik van de virtuele tijdlijn op te halen.
+   1. Gebruik de eigenschap `mediaPlayer.playbackRange` om het tijdbereik van de virtuele tijdlijn op te halen.
 
       ```
       function get playbackRange():TimeRange;
@@ -39,8 +42,8 @@ U kunt TVSDK gebruiken om informatie op te halen over de media die u op de zoekb
 
       Voor een lineair/actief-element vertegenwoordigt het bereik van het afspeelvenster en verandert dit bereik tijdens het afspelen.
 
-      TVSDK verzendt een `MediaPlayerItemEvent.ITEM_UPDATED` gebeurtenis om aan te geven dat het media-item is vernieuwd en dat de kenmerken ervan (inclusief het afspeelbereik) zijn bijgewerkt.
+      TVSDK verzendt een gebeurtenis `MediaPlayerItemEvent.ITEM_UPDATED` om aan te geven dat het media-item is vernieuwd en dat de kenmerken ervan (inclusief het afspeelbereik) zijn bijgewerkt.
 
-1. Gebruik de methoden die beschikbaar zijn op de SDK `MediaPlayer` en de `HSlider` klasse die algemeen beschikbaar is in de SDK van Flex om de parameters voor de zoekbalk in te stellen.
+1. Gebruik de methoden die beschikbaar zijn in de klasse `MediaPlayer` en `HSlider` die algemeen beschikbaar is in de SDK van Flex om de parameters voor de zoekbalk in te stellen.
 
-1. Gebruik een tijdopnemer om de huidige tijd periodiek terug te winnen en de `SeekBar`. bij te werken.
+1. Gebruik een tijdopnemer om de huidige tijd periodiek terug te winnen en `SeekBar` bij te werken.
