@@ -1,16 +1,19 @@
 ---
 description: Uw toepassing kan de activiteit in uw speler en de veranderende status van de speler controleren door naar de gebeurtenissen te luisteren die door TVSDK worden verzonden.
 seo-description: Uw toepassing kan de activiteit in uw speler en de veranderende status van de speler controleren door naar de gebeurtenissen te luisteren die door TVSDK worden verzonden.
-seo-title: Overzicht van gebeurtenissen in de primetime-speler
-title: Overzicht van gebeurtenissen in de primetime-speler
+seo-title: Overzicht van gebeurtenissen in de primaire speler
+title: Overzicht van gebeurtenissen in de primaire speler
 uuid: ed3be4c2-8df3-4d96-a30b-74c196262798
 translation-type: tm+mt
 source-git-commit: a33e1f290fcf78e6f131910f6037f4803f7be98d
+workflow-type: tm+mt
+source-wordcount: '632'
+ht-degree: 0%
 
 ---
 
 
-# Overzicht van gebeurtenissen in de primetime-speler {#primetime-player-events-summary-overview}
+# Overzicht van gebeurtenissen in primetime-speler {#primetime-player-events-summary-overview}
 
 Uw toepassing kan de activiteit in uw speler en de veranderende status van de speler controleren door naar de gebeurtenissen te luisteren die door TVSDK worden verzonden.
 
@@ -20,13 +23,13 @@ TVSDK brengt u op de hoogte wanneer gebeurtenissen plaatsvinden waarop uw toepas
 
 >[!TIP]
 >
->De gebeurteniscodes zijn de constanten van de `MediaPlayerEvent` opsomming.
+>De gebeurteniscodes zijn de constanten van de `MediaPlayerEvent`-opsomming.
 
 ## AdBreakCompletedEventListener {#section_D7A74A4EACA44E54806D040491B7D879}
 
 * ** Betekenis ** Het afspelen van het advertentieeinde is voltooid.
 
-* ** Callback om te implementeren ** `onAdBreakCompleted(AdBreakPlaybackEvent event)`
+* ** Callback om ** `onAdBreakCompleted(AdBreakPlaybackEvent event)` uit te voeren
 
 * ** Gebeurteniscode ** `AD_BREAK_COMPLETE`
 
@@ -34,7 +37,7 @@ TVSDK brengt u op de hoogte wanneer gebeurtenissen plaatsvinden waarop uw toepas
 
 * ** Betekenis ** Er is een advertentie-einde overgeslagen tijdens het afspelen.
 
-* ** Callback om te implementeren ** `onAdBreakSkipped(AdBreakPlaybackEvent event)`
+* ** Callback om ** `onAdBreakSkipped(AdBreakPlaybackEvent event)` uit te voeren
 
 * ** Gebeurteniscode ** `AD_BREAK_SKIPPED`
 
@@ -42,7 +45,7 @@ TVSDK brengt u op de hoogte wanneer gebeurtenissen plaatsvinden waarop uw toepas
 
 * ** Betekenis ** Het afspelen van een advertentie-einde is begonnen.
 
-* ** Callback om te implementeren ** `onAdBreakStarted(AdBreakPlaybackEvent event)`
+* ** Callback om ** `onAdBreakStarted(AdBreakPlaybackEvent event)` uit te voeren
 
 * ** Gebeurteniscode ** `AD_BREAK_START`
 
@@ -50,7 +53,7 @@ TVSDK brengt u op de hoogte wanneer gebeurtenissen plaatsvinden waarop uw toepas
 
 * ** Betekenis ** Er is op een advertentie geklikt tijdens het afspelen.
 
-* ** Callback om te implementeren ** `onAdClicked(AdClickEvent event)`
+* ** Callback om ** `onAdClicked(AdClickEvent event)` uit te voeren
 
 * ** Gebeurteniscode ** `AD_CLICK`
 
@@ -58,7 +61,7 @@ TVSDK brengt u op de hoogte wanneer gebeurtenissen plaatsvinden waarop uw toepas
 
 * ** Betekenis ** Het afspelen van de advertentie is voltooid.
 
-* ** Callback om te implementeren ** `onAdCompleted(AdPlaybackEvent event)`
+* ** Callback om ** `onAdCompleted(AdPlaybackEvent event)` uit te voeren
 
 * ** Gebeurteniscode ** `AD_COMPLETE`
 
@@ -66,7 +69,7 @@ TVSDK brengt u op de hoogte wanneer gebeurtenissen plaatsvinden waarop uw toepas
 
 * ** Betekenis ** De voortgang tijdens het afspelen rapporteren.
 
-* ** Callback om te implementeren ** `onAdProgress(AdPlaybackEvent event)`
+* ** Callback om ** `onAdProgress(AdPlaybackEvent event)` uit te voeren
 
 * ** Gebeurteniscode ** `AD_PROGRESS`
 
@@ -74,7 +77,7 @@ TVSDK brengt u op de hoogte wanneer gebeurtenissen plaatsvinden waarop uw toepas
 
 * ** Betekenis ** Primetime en besluitvorming en resolutie zijn voltooid. Deze gebeurtenis is alleen van toepassing op VOD-inhoud.
 
-* ** Callback om te implementeren ** `onAdResolutionComplete()`
+* ** Callback om ** `onAdResolutionComplete()` uit te voeren
 
 * ** Gebeurteniscode ** `AD_RESOLUTION_COMPLETE`
 
@@ -82,7 +85,7 @@ TVSDK brengt u op de hoogte wanneer gebeurtenissen plaatsvinden waarop uw toepas
 
 * ** Betekenis ** Het afspelen van de advertentie is gestart.
 
-* ** Callback om te implementeren ** `onAdStarted(AdPlaybackEvent event)`
+* ** Callback om ** `onAdStarted(AdPlaybackEvent event)` uit te voeren
 
 * ** Gebeurteniscode ** `AD_START`
 
@@ -90,7 +93,7 @@ TVSDK brengt u op de hoogte wanneer gebeurtenissen plaatsvinden waarop uw toepas
 
 * ** Betekenis ** Er is een nieuwe audiotrack gedetecteerd.
 
-* ** Callback om te implementeren ** `onAudioUpdated(MediaPlayerItemEvent event)`
+* ** Callback om ** `onAudioUpdated(MediaPlayerItemEvent event)` uit te voeren
 
 * ** Gebeurteniscode ** `AUDIO_TRACK_UPDATED`
 
@@ -98,7 +101,7 @@ TVSDK brengt u op de hoogte wanneer gebeurtenissen plaatsvinden waarop uw toepas
 
 * ** Betekenis ** De speler is begonnen als buffer op te treden.
 
-* ** Callback om te implementeren ** `onBufferingBegin(BufferEvent event)`
+* ** Callback om ** `onBufferingBegin(BufferEvent event)` uit te voeren
 
 * ** Gebeurteniscode ** `BUFFERING_BEGIN`
 
@@ -106,7 +109,7 @@ TVSDK brengt u op de hoogte wanneer gebeurtenissen plaatsvinden waarop uw toepas
 
 * ** Betekenis ** De speler is gestopt met bufferen.
 
-* ** Callback om te implementeren ** `onBufferingEnd(BufferEvent event)`
+* ** Callback om ** `onBufferingEnd(BufferEvent event)` uit te voeren
 
 * ** Gebeurteniscode ** `BUFFERING_END`
 
@@ -114,7 +117,7 @@ TVSDK brengt u op de hoogte wanneer gebeurtenissen plaatsvinden waarop uw toepas
 
 * ** Betekenis ** De buffer wordt voorbereid.
 
-* ** Callback om te implementeren ** `onBufferPrepared()`
+* ** Callback om ** `onBufferPrepared()` uit te voeren
 
 * ** Gebeurteniscode ** `BUFFER_PREPARED`
 
@@ -122,7 +125,7 @@ TVSDK brengt u op de hoogte wanneer gebeurtenissen plaatsvinden waarop uw toepas
 
 * ** Betekenis ** Er is een nieuw bijschriftspoor gedetecteerd.
 
-* ** Callback om te implementeren ** `onCaptionsUpdated(MediaPlayerItemEvent event)`
+* ** Callback om ** `onCaptionsUpdated(MediaPlayerItemEvent event)` uit te voeren
 
 * ** Gebeurteniscode ** `CAPTIONS_UPDATED`
 
@@ -130,7 +133,7 @@ TVSDK brengt u op de hoogte wanneer gebeurtenissen plaatsvinden waarop uw toepas
 
 * ** Betekenis ** Er zijn nieuwe DRM-metagegevens gedetecteerd in de mediastream.
 
-* ** Callback om te implementeren ** `onDRMMetadataInfo(DRMMetadataInfoEvent event)`
+* ** Callback om ** `onDRMMetadataInfo(DRMMetadataInfoEvent event)` uit te voeren
 
 * ** Gebeurteniscode ** `DRM_METADATA`
 
@@ -138,7 +141,7 @@ TVSDK brengt u op de hoogte wanneer gebeurtenissen plaatsvinden waarop uw toepas
 
 * ** Betekenis ** Er is een nieuw mediaspelitem gemaakt.
 
-* ** Callback om te implementeren ** `onItemCreated(MediaPlayerItemEvent event)`
+* ** Callback om ** `onItemCreated(MediaPlayerItemEvent event)` uit te voeren
 
 * ** Gebeurteniscode ** `ITEM_CREATED`
 
@@ -146,7 +149,7 @@ TVSDK brengt u op de hoogte wanneer gebeurtenissen plaatsvinden waarop uw toepas
 
 * ** Betekenis ** Nieuwe ladingsinformatie is gecreeerd voor het huidige punt.
 
-* ** Callback om te implementeren ** `onLoadComplete(MediaPlayerItemEvent event)`
+* ** Callback om ** `onLoadComplete(MediaPlayerItemEvent event)` uit te voeren
 
 * ** Gebeurteniscode ** `ITEM_UPDATED`
 
@@ -154,7 +157,7 @@ TVSDK brengt u op de hoogte wanneer gebeurtenissen plaatsvinden waarop uw toepas
 
 * ** Betekenis ** Een nieuw segment is geladen.
 
-* ** Callback om te implementeren ** `onLoadInformation(LoadInformationEvent event)`
+* ** Callback om ** `onLoadInformation(LoadInformationEvent event)` uit te voeren
 
 * ** Gebeurteniscode ** `LOAD_INFORMATION_AVAILABLE`
 
@@ -162,7 +165,7 @@ TVSDK brengt u op de hoogte wanneer gebeurtenissen plaatsvinden waarop uw toepas
 
 * ** Betekenis ** Hoofdmanifest of playlist is bijgewerkt.
 
-* ** Callback om te implementeren ** `onMainManifestUpdated(MediaPlayerItemEvent event)`
+* ** Callback om ** `onMainManifestUpdated(MediaPlayerItemEvent event)` uit te voeren
 
 * ** Gebeurteniscode ** `MANIFEST_UPDATED`
 
@@ -170,7 +173,7 @@ TVSDK brengt u op de hoogte wanneer gebeurtenissen plaatsvinden waarop uw toepas
 
 * ** Betekenis ** De bewerking is mislukt.
 
-* ** Callback om te implementeren ** `onNotification(NotificationEvent event)`
+* ** Callback om ** `onNotification(NotificationEvent event)` uit te voeren
 
 * ** Gebeurteniscode ** `OPERATION_FAILED`
 
@@ -178,7 +181,7 @@ TVSDK brengt u op de hoogte wanneer gebeurtenissen plaatsvinden waarop uw toepas
 
 * ** Betekenis ** Het afspeelbereik is bijgewerkt.
 
-* ** Callback om te implementeren ** `onPlaybackRangeUpdated(MediaPlayerItemEvent event)`
+* ** Callback om ** `onPlaybackRangeUpdated(MediaPlayerItemEvent event)` uit te voeren
 
 * ** Gebeurteniscode ** `PLAYBACK_RANGE_UPDATED`
 
@@ -186,7 +189,7 @@ TVSDK brengt u op de hoogte wanneer gebeurtenissen plaatsvinden waarop uw toepas
 
 * ** Betekenis ** Een nieuwe playbacksnelheid is zichtbaar op het scherm.
 
-* ** Callback om te implementeren ** `onRatePlaying(PlaybackRateEvent event)`
+* ** Callback om ** `onRatePlaying(PlaybackRateEvent event)` uit te voeren
 
 * ** Gebeurteniscode ** `RATE_PLAYING`
 
@@ -194,7 +197,7 @@ TVSDK brengt u op de hoogte wanneer gebeurtenissen plaatsvinden waarop uw toepas
 
 * ** Betekenis ** Het kenmerk rate van MediaPlayer is ingesteld.
 
-* ** Callback om te implementeren ** `onRateSelected(PlaybackRateEvent event)`
+* ** Callback om ** `onRateSelected(PlaybackRateEvent event)` uit te voeren
 
 * ** Gebeurteniscode ** `RATE_SELECTED`
 
@@ -202,7 +205,7 @@ TVSDK brengt u op de hoogte wanneer gebeurtenissen plaatsvinden waarop uw toepas
 
 * ** Betekenis ** Het afspelen is gestart.
 
-* ** Callback om te implementeren ** `onPlayStart()`
+* ** Callback om ** `onPlayStart()` uit te voeren
 
 * ** Gebeurteniscode ** `PLAY_START`
 
@@ -210,7 +213,7 @@ TVSDK brengt u op de hoogte wanneer gebeurtenissen plaatsvinden waarop uw toepas
 
 * ** Betekenis ** Het huidige profiel van MediaPlayer is gewijzigd.
 
-* ** Callback om te implementeren ** `onProfileChanged(ProfileEvent event)`
+* ** Callback om ** `onProfileChanged(ProfileEvent event)` uit te voeren
 
 * ** Gebeurteniscode ** `PROFILE_CHANGED`
 
@@ -218,7 +221,7 @@ TVSDK brengt u op de hoogte wanneer gebeurtenissen plaatsvinden waarop uw toepas
 
 * ** Betekenis ** Het afspelen heeft een tijdlijnreservering bereikt.
 
-* ** Callback om te implementeren ** `onReservationReached(ReservationEvent event)`
+* ** Callback om ** `onReservationReached(ReservationEvent event)` uit te voeren
 
 * ** Gebeurteniscode ** `RESERVATION_REACHED`
 
@@ -226,7 +229,7 @@ TVSDK brengt u op de hoogte wanneer gebeurtenissen plaatsvinden waarop uw toepas
 
 * ** Betekenis ** De zoekbewerking is gestart.
 
-* ** Callback om te implementeren ** `onSeekBegin(SeekEvent event)`
+* ** Callback om ** `onSeekBegin(SeekEvent event)` uit te voeren
 
 * ** Gebeurteniscode ** `SEEK_BEGIN`
 
@@ -234,7 +237,7 @@ TVSDK brengt u op de hoogte wanneer gebeurtenissen plaatsvinden waarop uw toepas
 
 * ** Betekenis ** De zoekbewerking is voltooid.
 
-* ** Callback om te implementeren ** `onSeekEnd(SeekEvent event)`
+* ** Callback om ** `onSeekEnd(SeekEvent event)` uit te voeren
 
 * ** Gebeurteniscode ** `SEEK_END`
 
@@ -242,7 +245,7 @@ TVSDK brengt u op de hoogte wanneer gebeurtenissen plaatsvinden waarop uw toepas
 
 * ** Betekenis ** De zoekpositie is aangepast vanwege interne afspeelregels of externe bedrijfsregels.
 
-* ** Callback om te implementeren ** `onPositionAdjusted(SeekEvent event)`
+* ** Callback om ** `onPositionAdjusted(SeekEvent event)` uit te voeren
 
 * ** Gebeurteniscode ** `SEEK_POSITION_ADJUSTED`
 
@@ -250,15 +253,15 @@ TVSDK brengt u op de hoogte wanneer gebeurtenissen plaatsvinden waarop uw toepas
 
 * ** Betekenis ** De grootte van de media is beschikbaar.
 
-* ** Callback om te implementeren ** `onSizeAvailable(SizeAvailableEvent event)`
+* ** Callback om ** `onSizeAvailable(SizeAvailableEvent event)` uit te voeren
 
 * ** Gebeurteniscode ** `SIZE_AVAILABLE`
 
 ## StatusChangeEventListener {#section_310D2327089D46358F9CE03EA76F3287}
 
-* ** Betekenis ** De staat MediaPlayer is veranderd.
+* ** Betekenis ** De status MediaPlayer is gewijzigd.
 
-* ** Callback om te implementeren ** `onStatusChanged(MediaPlayerStatusChangeEvent event)`
+* ** Callback om ** `onStatusChanged(MediaPlayerStatusChangeEvent event)` uit te voeren
 
 * ** Gebeurteniscode ** `STATUS_CHANGED`
 
@@ -266,7 +269,7 @@ TVSDK brengt u op de hoogte wanneer gebeurtenissen plaatsvinden waarop uw toepas
 
 * ** Betekenis ** De afspeelkop is gewijzigd.
 
-* ** Callback om te implementeren ** `onTimeChanged(TimeChangeEvent event)`
+* ** Callback om ** `onTimeChanged(TimeChangeEvent event)` uit te voeren
 
 * ** Gebeurteniscode ** `TIME_CHANGED`
 
@@ -274,7 +277,7 @@ TVSDK brengt u op de hoogte wanneer gebeurtenissen plaatsvinden waarop uw toepas
 
 * ** Betekenis ** De bewerking is voltooid met de tijd die nodig is voor de bewerking.
 
-* ** Callback om te implementeren ** `onTimedEvent(TimedEventEvent event)`
+* ** Callback om ** `onTimedEvent(TimedEventEvent event)` uit te voeren
 
 * ** Gebeurteniscode ** `TIMED_EVENT`
 
@@ -282,7 +285,7 @@ TVSDK brengt u op de hoogte wanneer gebeurtenissen plaatsvinden waarop uw toepas
 
 * ** Betekenis ** Er zijn nieuwe metagegevens met tijdslimiet toegevoegd aan een item op de achtergrond.
 
-* ** Callback om te implementeren ** `onTimedMetadata(TimedMetadataEvent event)`
+* ** Callback om ** `onTimedMetadata(TimedMetadataEvent event)` uit te voeren
 
 * ** Gebeurteniscode ** `TIMED_METADATA_ADDED_IN_BACKGROUND`
 
@@ -290,7 +293,7 @@ TVSDK brengt u op de hoogte wanneer gebeurtenissen plaatsvinden waarop uw toepas
 
 * ** Betekenis ** Er is een nieuwe metagegevens met tijdslimiet gedetecteerd in de mediastream.
 
-* ** Callback om te implementeren ** `onTimedMetadata(TimedMetadataEvent event)`
+* ** Callback om ** `onTimedMetadata(TimedMetadataEvent event)` uit te voeren
 
 * ** Gebeurteniscode ** `TIMED_METADATA_AVAILABLE`
 
@@ -298,6 +301,6 @@ TVSDK brengt u op de hoogte wanneer gebeurtenissen plaatsvinden waarop uw toepas
 
 * ** Betekenis ** De tijdlijn is gewijzigd. Mogelijk zijn advertenties toegevoegd aan of verwijderd uit de tijdlijn.
 
-* ** Callback om te implementeren ** `onTimelineUpdated(TimelineEvent event)`
+* ** Callback om ** `onTimelineUpdated(TimelineEvent event)` uit te voeren
 
 * ** Gebeurteniscode ** `TIMELINE_UPDATED`
