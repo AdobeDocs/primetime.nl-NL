@@ -6,6 +6,9 @@ title: Metagegevensklassen
 uuid: e3884825-132c-4c5c-bc58-00c2967d9fa8
 translation-type: tm+mt
 source-git-commit: 91cea7acb8127e02b82e5242b9ad6ab0d12ce0eb
+workflow-type: tm+mt
+source-wordcount: '290'
+ht-degree: 0%
 
 ---
 
