@@ -11,13 +11,13 @@ ht-degree: 0%
 ---
 
 
-# SWF-toepassing staat plaatsing toe {#swf-application-allowlisting}
+# De toepassing van SWF staat lijst {#swf-application-allowlisting} toe
 
 Als u een SWF-toepassing wilt lijsten van gewenste personen, kunt u een van de volgende twee strategieën volgen:
 
 * U kunt een URL opgeven voor een SWF-bestand. Dit is een zeer flexibele benadering, vooral in een ontwikkelomgeving waarin u regelmatig uw SWF-bestand herbouwt.
-* U kunt een SWF-HASH opgeven. Dit is een cryptografische samenvattingswaarde van uw SWF-bestand. Deze aanpak is minder flexibel (maar veel strenger), aangezien de SWF-HASH verandert wanneer de toepassing verandert en opnieuw wordt samengesteld. In deze situatie zal alle aan de vorige HASH gebonden inhoud niet op de nieuwe speler kunnen spelen en moeten worden herverpakt. Het [!DNL PolicyManager.jar] gereedschap berekent automatisch de hash als u een [!DNL .swf] bestand opgeeft.
+* U kunt een SWF-HASH opgeven. Dit is een cryptografische samenvattingswaarde van uw SWF-bestand. Deze aanpak is minder flexibel (maar veel strenger), aangezien de SWF-HASH verandert wanneer de toepassing verandert en opnieuw wordt samengesteld. In deze situatie zal alle aan de vorige HASH gebonden inhoud niet op de nieuwe speler kunnen spelen en moeten worden herverpakt. Het [!DNL PolicyManager.jar] hulpmiddel zal automatisch de knoeiboel berekenen als u een [!DNL .swf] dossier specificeert.
 
-   Als u echter Primetime DRM gebruikt via Flash/Adobe Media Server (FMS/AMS), kunt u het pad naar uw specifieke SWF-bestanden opgeven. FMS/AMS zal de SWF-bestanden dan automatisch hashen zodat u deze kunt invoegen in het DRM-beleid dat wordt gebruikt om de inhoud te verpakken die door FMS/AMS wordt gestreamd.
+   Anderzijds, als u Primetime DRM via Flash/Adobe Media Server (FMS/AMS) gebruikt, kunt u de weg aan uw bepaalde SWF(s) leveren, en FMS/AMS zal automatisch SWFs voor u verpakken in het DRM beleid dat wordt gebruikt om de inhoud te verpakken die door FMS/AMS wordt gestroomd.
 
-Zie `policy.allowedSWFApplication.n` in de eigenschappen *van de* Configuratie voor details.
+Zie `policy.allowedSWFApplication.n` in *Configuration properties* voor meer informatie.
