@@ -1,20 +1,23 @@
 ---
-description: Gebruik HTTP GET bevel om met de manifestserver in wisselwerking te staan.
-seo-description: Gebruik HTTP GET bevel om met de manifestserver in wisselwerking te staan.
+description: Gebruik het bevel van de GET van HTTP om met de manifestserver in wisselwerking te staan.
+seo-description: Gebruik het bevel van de GET van HTTP om met de manifestserver in wisselwerking te staan.
 seo-title: Een opdracht naar de manifest-server verzenden
 title: Een opdracht naar de manifest-server verzenden
 uuid: e9680563-d268-406d-87ce-1521a677e9ec
 translation-type: tm+mt
 source-git-commit: 358c5b02d47f23a6adbc98e457e56c8220cae6e9
+workflow-type: tm+mt
+source-wordcount: '253'
+ht-degree: 0%
 
 ---
 
 
 # Een opdracht naar de manifest-server verzenden {#send-a-command-to-the-manifest-server}
 
-Gebruik HTTP GET bevel om met de manifestserver in wisselwerking te staan.
+Gebruik het bevel van de GET van HTTP om met de manifestserver in wisselwerking te staan.
 
-1. Verzend een `HTTP GET` aanvraag voor een laarzentrekker-URL met behulp van het volgende patroon:
+1. Verzend een `HTTP GET` verzoek om een laarzentrekker URL die met het volgende patroon wordt samengesteld:
 
    ```
    https://{manifest-server:port}/auditude/variant/
@@ -22,11 +25,11 @@ Gebruik HTTP GET bevel om met de manifestserver in wisselwerking te staan.
     ?{query parameters}
    ```
 
-* **PublisherAssetID** vereist. De unieke id van de uitgever voor de specifieke inhoud.
+* **** PublisherAssetIDR vereist. De unieke id van de uitgever voor de specifieke inhoud.
 
-* **URL** van inhoud vereist. URL van de inhoud van het M3U8-bestand, Base64-gecodeerd om veilig te zijn binnen de URL van de manifestserver. De inhoud-URL moet verwijzen naar een M3U8-bestand van een andere type, zelfs als er slechts één bitsnelheidstream is.
+* **Inhoud** URLRequired. URL van de inhoud van het M3U8-bestand, Base64-gecodeerd om veilig te zijn binnen de URL van de manifestserver. De inhoud-URL moet verwijzen naar een M3U8-bestand van een andere type, zelfs als er slechts één bitsnelheidstream is.
 
-* **Parameters** voor query Sommige zijn vereist, sommige zijn optioneel. Deze vormen het meest gevarieerde deel van het verzoek. Zij vertellen de duidelijke server welke soort cliënt het verzoek doet en wat het de manifestserver wil doen.
+* **Query-** parametersSommige zijn vereist, sommige zijn optioneel. Deze vormen het meest gevarieerde deel van het verzoek. Zij vertellen de duidelijke server welke soort cliënt het verzoek doet en wat het de manifestserver wil doen.
 
    Bijvoorbeeld:
 
