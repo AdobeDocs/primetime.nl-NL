@@ -6,6 +6,9 @@ title: Afspelen met advertenties aanpassen
 uuid: e7c9f4b1-15c9-43a2-be00-1ca4bfd17e43
 translation-type: tm+mt
 source-git-commit: adef0bbd52ba043f625f38db69366c6d873c586d
+workflow-type: tm+mt
+source-wordcount: '254'
+ht-degree: 0%
 
 ---
 
@@ -16,7 +19,7 @@ Wanneer het afspelen een advertentie-einde bereikt, een advertentie-einde doorge
 
 >[!TIP]
 >
->U kunt het standaardgedrag met de `AdPolicySelector` klasse overschrijven.
+>U kunt het standaardgedrag met voeten treden door de `AdPolicySelector` klasse te gebruiken.
 
 Het standaardgedrag varieert, afhankelijk van het feit of de gebruiker de advertentie doorgeeft tijdens het afspelen of door in een video te zoeken of deze snel terug te spoelen of terug te spoelen (truc).
 
