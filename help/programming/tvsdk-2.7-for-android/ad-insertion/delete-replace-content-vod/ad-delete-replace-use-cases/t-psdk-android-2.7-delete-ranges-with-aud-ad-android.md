@@ -6,6 +6,9 @@ title: Bereiken verwijderen
 uuid: 637829a7-efa8-4b83-9a04-ef01c043621f
 translation-type: tm+mt
 source-git-commit: 0eaf0e7e7e61d596a51d1c9c837ad072d703c6a7
+workflow-type: tm+mt
+source-wordcount: '90'
+ht-degree: 0%
 
 ---
 
@@ -16,11 +19,11 @@ U kunt TimeRanges verwijderen tussen begin en eind in localTime van de chronolog
 
 >[!TIP]
 >
->Als u alleen bepaalde bereiken uit de inhoud wilt verwijderen, maakt u een `CustomRangeMetadata` instantie en geeft u het type op als een `DELETE` bewerking met de gedefinieerde aangepaste bereiken.
+>Als u alleen bepaalde bereiken uit de inhoud wilt verwijderen, maakt u een `CustomRangeMetadata`-instantie en geeft u het type op als een `DELETE`-bewerking met de gedefinieerde aangepaste bereiken.
 
 De advertentiekaart moet worden gebruikt zoals gedefinieerd door de advertentieserver.
 
-1. U verwijdert bereiken met een Adobe Primetime-advertentie voor beslissingen:
+1. U verwijdert bereiken met een Adobe Primetime en een beslissingsadvertentie:
 
    ```
    {   
