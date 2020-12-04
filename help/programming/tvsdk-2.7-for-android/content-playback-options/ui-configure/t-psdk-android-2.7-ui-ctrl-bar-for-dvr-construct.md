@@ -6,6 +6,9 @@ title: Een besturingsbalk maken die is verbeterd voor DVR
 uuid: 71bfceef-baf0-40ad-a7a0-fa2e22d24e31
 translation-type: tm+mt
 source-git-commit: fd686391df0fa711bba99bc1bc312c9ef619f184
+workflow-type: tm+mt
+source-wordcount: '360'
+ht-degree: 0%
 
 ---
 
@@ -29,7 +32,7 @@ U kunt een besturingsbalk implementeren met DVR-ondersteuning voor VOD en live s
 
 ![](assets/dvr-window.PNG){width=&quot;684&quot;}
 
-1. Als u een besturingsbalk wilt implementeren met ondersteuning voor DVR, volgt u de stappen in [Een zoekbalk weergeven met de huidige afspeelpositie...](../../../tvsdk-2.7-for-android/content-playback-options/ui-configure/t-psdk-android-2.7-ui-seek-scrub-bar-display.md) met de volgende verschillen:
+1. Als u een besturingsbalk wilt implementeren met ondersteuning voor DVR, voert u de stappen in [Een zoekbalk weergeven met de huidige afspeelpositie...](../../../tvsdk-2.7-for-android/content-playback-options/ui-configure/t-psdk-android-2.7-ui-seek-scrub-bar-display.md) met de volgende verschillen:
 
    * U kunt een controlebar uitvoeren die slechts voor de zoekbare waaier in plaats van voor de playbackwaaier in kaart wordt gebracht.
 
@@ -49,7 +52,7 @@ U kunt een besturingsbalk implementeren met DVR-ondersteuning voor VOD en live s
       }
       ```
 
-      U kunt er ook voor kiezen om met de `MediaPlayer.LIVE_POINT` constante naar het actieve punt van de client te zoeken.
+      U kunt er ook voor kiezen om met de constante `MediaPlayer.LIVE_POINT` naar het actieve punt van de client te zoeken.
 
       ```
       mediaPlayer.seek(MediaPlayer.LIVE_POINT);
