@@ -4,11 +4,14 @@ title: Een certificaat aanvragen (aanvrager)
 uuid: f0d7f65d-681d-430f-b67b-3bdceb4b6d37
 translation-type: tm+mt
 source-git-commit: b4b50471ab0ba98329862322a61bf73aa9e471d5
+workflow-type: tm+mt
+source-wordcount: '118'
+ht-degree: 0%
 
 ---
 
 
-# Een certificaat aanvragen (aanvrager){#request-a-certificate-requester}
+# Een certificaat aanvragen (Requester){#request-a-certificate-requester}
 
 1. Meld u aan bij de site voor certificaatinschrijving.
 
@@ -27,9 +30,9 @@ source-git-commit: b4b50471ab0ba98329862322a61bf73aa9e471d5
 
       >[!NOTE]
       >
-      >Als u de CSR-gegevens wilt kopiëren, selecteert u de tekst tussen, niet inclusief, de begintag `(-----BEGIN CERTIFICATE REQUEST-----)` en de eindtag `(-----END CERTIFICATE REQUEST-----)`.
+      >Als u de CSR-gegevens wilt kopiëren, selecteert u de tekst tussen, zonder inbegrip van, het beginlabel `(-----BEGIN CERTIFICATE REQUEST-----)` en het eindlabel `(-----END CERTIFICATE REQUEST-----)`.
 
-1. Klik op de **[!UICONTROL Submit Request]** knop.
+1. Klik op de knop **[!UICONTROL Submit Request]**.
 
    Een e-mail wordt verzonden naar de Account en Secundaire Beheerders voor overzicht. De aanvrager is cc&#39;d.
 
