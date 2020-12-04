@@ -78,13 +78,14 @@ Deze klassen bieden informatie over advertenties die binnen een tijdlijn voorkom
   <tr rowsep="1"> 
    <td colname="1"> 
     <pre>
-     <a href="https://help.adobe.com/en_US/primetime/api/psdk/appledoc/Classes/PTContentResolver.html" format="html" scope="external"> PTContentResolver</a> -klasse, <a href="https://help.adobe.com/en_US/primetime/api/psdk/appledoc/Protocols/PTContentResolver.html" format="html" scope="external"> PTContentResolver</a> -protocol
+     <a href="https://help.adobe.com/en_US/primetime/api/psdk/appledoc/Classes/PTContentResolver.html" format="html" scope="external"> </a> PTContentResolverclass,  
+     <a href="https://help.adobe.com/en_US/primetime/api/psdk/appledoc/Protocols/PTContentResolver.html" format="html" scope="external"> </a> PTContentResolverprotocol
     </pre> </td> 
    <td colname="2"> Klasse die het ad-resolving deel in het Adobe Primetime en besluitvormingsproces behandelt. </td> 
   </tr> 
   <tr rowsep="1"> 
    <td colname="1"><a href="https://help.adobe.com/en_US/primetime/api/psdk/appledoc/Protocols/PTContentResolverDelegate.html" format="html" scope="external"> PTContentResolverDelegate</a> </td> 
-   <td colname="2"> Protocol dat de methodes beschrijft die de oplosser van de douaneinhoud ( <span class="codeph"> PTContentResolver</span> ) zou moeten gebruiken om aan de afgevaardigde de status van het oplossen van inhoud mee te delen. </td> 
+   <td colname="2"> Protocol dat de methodes beschrijft die de oplosser van de douaneinhoud ( <span class="codeph"> PTContentResolver</span>) zou moeten gebruiken om aan de afgevaardigde het statuut van het oplossen van inhoud mee te delen. </td> 
   </tr> 
   <tr rowsep="0"> 
    <td colname="1"> <a href="https://help.adobe.com/en_US/primetime/api/psdk/appledoc/Constants/PTPlacementType.html" format="html" scope="external"> PTPlacementType</a> </td> 
