@@ -11,11 +11,11 @@ ht-degree: 0%
 ---
 
 
-# Inhoud veilig verpakken {#securely-packaging-content}
+# Inhoud {#securely-packaging-content} op veilige wijze verpakken
 
 Het configuratiedossier voor het Adobe Access Media Packager bevellijnhulpmiddel vereist een referentie PKCS12 die tijdens het verpakken wordt gebruikt.
 
-In de hulpmiddelen van de Lijn van het Bevel van de Implementatie van de Verwijzing, wordt het wachtwoord voor het PKCS12 geloofsbrieven- dossier opgeslagen in het flashaccess.properties- dossier in duidelijke teksten. Wees daarom voorzichtig met het beveiligen van de computer die als host fungeert voor dit bestand en zorg ervoor dat dit bestand zich in een veilige omgeving bevindt. (Zie [Fysieke veiligheid en toegang](../../aaxs-secure-deployment-guidelines/physical-sec-and-access.md)).
+In de hulpmiddelen van de Lijn van het Bevel van de Implementatie van de Verwijzing, wordt het wachtwoord voor het PKCS12 geloofsbrieven- dossier opgeslagen in het flashaccess.properties- dossier in duidelijke teksten. Wees daarom voorzichtig met het beveiligen van de computer die als host fungeert voor dit bestand en zorg ervoor dat dit bestand zich in een veilige omgeving bevindt. (Zie [Fysieke beveiliging en toegang](../../aaxs-secure-deployment-guidelines/physical-sec-and-access.md)).
 
 Packager gebruikt ook de certificaten van het Vervoer van de Server van de Vergunning en van de Server van de Vergunning. Zowel de integriteit als de vertrouwelijkheid van deze informatie moeten worden beschermd. Alleen bevoegde entiteiten mogen de verpakker gebruiken. Als een van uw persoonlijke sleutels is aangetast, stelt u Adobe Systems Incorporated hiervan onmiddellijk op de hoogte, zodat het certificaat kan worden ingetrokken.
 
