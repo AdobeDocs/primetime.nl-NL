@@ -6,6 +6,9 @@ title: Tijdlijnadvertentieklassen
 uuid: 4e6ca9fb-9e68-4625-a24b-386a50333862
 translation-type: tm+mt
 source-git-commit: 5908e5a3521966496aeec0ef730e4a704fddfb68
+workflow-type: tm+mt
+source-wordcount: '584'
+ht-degree: 0%
 
 ---
 
@@ -20,7 +23,7 @@ Pakket: [com.adobe.mediacore.timeline.advertence.auditude](https://help.adobe.co
 
 | Naam | Beschrijving |
 |--- |--- |
-| [Advertentie](https://help.adobe.com/en_US/primetime/api/psdk/javadoc_1.4/com/adobe/mediacore/timeline/advertising/Ad.html) | Klasse die de abstractie van de Advertentie bepaalt en alle advertentiemateriaal houdt. Deze wordt gedefinieerd door een unieke id, een duur en een `MediaResource`. Het `MediaResource` bevat de URL waar de daadwerkelijke advertentie-inhoud zich bevindt. |
+| [Advertentie](https://help.adobe.com/en_US/primetime/api/psdk/javadoc_1.4/com/adobe/mediacore/timeline/advertising/Ad.html) | Klasse die de abstractie van de Advertentie bepaalt en alle advertentiemateriaal houdt. Deze wordt gedefinieerd door een unieke id, een duur en een `MediaResource`. De `MediaResource` bevat de URL waar de daadwerkelijke inhoud van de advertentie zich bevindt. |
 | [AdAsset](https://help.adobe.com/en_US/primetime/api/psdk/javadoc_1.4/com/adobe/mediacore/timeline/advertising/AdAsset.html) | Klasse die een element vertegenwoordigt dat moet worden weergegeven. Klasse die een advertentie-element vertegenwoordigt. |
 | [AdBreak](https://help.adobe.com/en_US/primetime/api/psdk/javadoc_1.4/com/adobe/mediacore/timeline/advertising/AdBreak.html) | Klasse die een verenigde weergave biedt op meerdere advertenties die op een bepaald punt tijdens het afspelen worden afgespeeld. |
 | [AdBreakPlacement](https://help.adobe.com/en_US/primetime/api/psdk/javadoc_1.4/com/adobe/mediacore/timeline/advertising/AdBreakPlacement.html) | bewerkingsklasse voor plaatsing van regeleinde toevoegen. |
