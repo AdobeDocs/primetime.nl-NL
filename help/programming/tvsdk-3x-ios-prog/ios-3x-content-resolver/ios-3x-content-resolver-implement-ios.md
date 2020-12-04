@@ -6,11 +6,14 @@ title: Een aangepaste opportuniteit/contentoplosser implementeren
 uuid: 0023f516-12f3-4548-93de-b0934789053b
 translation-type: tm+mt
 source-git-commit: 557f42cd9a6f356aa99e13386d9e8d65e043a6af
+workflow-type: tm+mt
+source-wordcount: '344'
+ht-degree: 0%
 
 ---
 
 
-# Een aangepaste opportuniteit/contentoplosser implementeren {#implement-a-custom-opportunity-content-resolver}
+# Een aangepaste opportuniteit/inhoudsoplosser {#implement-a-custom-opportunity-content-resolver} implementeren
 
 U kunt uw oplosmiddelen uitvoeren die op de standaardoplossers worden gebaseerd.
 
@@ -24,7 +27,7 @@ U kunt uw oplosmiddelen uitvoeren die op de standaardoplossers worden gebaseerd.
 
    >[!TIP]
    >
-   >`PTContentResolver` wordt via de `PTDefaultMediaPlayerClientFactory` klasse weergegeven. Clients kunnen een nieuwe contentoplosser registreren door de `PTContentResolver` abstracte klasse uit te breiden. Door gebrek, en tenzij specifiek verwijderd, `PTDefaultAdContentResolver` wordt een geregistreerd in `PTDefaultMediaPlayerClientFactory`.
+   >`PTContentResolver` wordt via de  `PTDefaultMediaPlayerClientFactory` klasse weergegeven. Clients kunnen een nieuwe inhoudoplosser registreren door de abstracte klasse `PTContentResolver` uit te breiden. Door gebrek, en tenzij specifiek verwijderd, wordt `PTDefaultAdContentResolver` geregistreerd in `PTDefaultMediaPlayerClientFactory`.
 
    ```
    @protocol PTContentResolver <NSObject> 
@@ -52,27 +55,28 @@ U kunt uw oplosmiddelen uitvoeren die op de standaardoplossers worden gebaseerd.
    @end
    ```
 
-1. Voer uit `shouldResolveOpportunity` en terugkeer `YES` als het ontvangen zou moeten behandelen `PTPlacementOpportunity`.
-1. Implementeren `resolvePlacementOpportunity`, waarmee de alternatieve inhoud of advertenties wordt geladen.
-1. Nadat de advertenties zijn geladen, bereidt u een document voor `PTTimeline` met de informatie over de inhoud die u wilt invoegen.
+1. Implementeer `shouldResolveOpportunity` en retourneer `YES` als het ontvangen `PTPlacementOpportunity` moet verwerken.
+1. Implementeer `resolvePlacementOpportunity`, waarmee de alternatieve inhoud of advertenties worden geladen.
+1. Nadat de advertenties zijn geladen, maakt u een `PTTimeline` met de informatie over de inhoud die u wilt invoegen.
 
        Hier volgt nuttige informatie over tijdlijnen:
    
-   * Er kunnen meerdere typen `PTAdBreak`vóór, halverwege en na het rollen zijn.
+   * Er kunnen meerdere `PTAdBreak`s van pre-, mid-roll, en post-roltypes zijn.
 
-      * A `PTAdBreak` heeft het volgende:
+      * Een `PTAdBreak` heeft het volgende:
 
-         * Een `CMTimeRange` met de begintijd en de duur van het einde.
+         * A `CMTimeRange` met de begintijd en duur van het einde.
 
-            Deze wordt ingesteld als de eigenschap range van `PTAdBreak`.
+            Dit wordt geplaatst als waaierbezit van `PTAdBreak`.
 
-         * `NSArray` van `PTAd`s.
+         * `NSArray` van  `PTAd`s.
 
             Deze wordt ingesteld als de eigenschap ads van `PTAdBreak`.
-   * A `PTAd` vertegenwoordigt de advertentie en elk `PTAd` heeft het volgende:
+   * A `PTAd` vertegenwoordigt de advertentie, en elk `PTAd` heeft het volgende:
 
-      * Een `PTAdHLSAsset` set als de primaire eigenschap van het element van de advertentie.
-      * Meerdere `PTAdAsset` varianten mogelijk als klikbare advertenties of banneradvertenties.
+      * A `PTAdHLSAsset` ingesteld als de primaire eigenschap asset van de advertentie.
+      * Mogelijk meerdere `PTAdAsset` instanties als klikbare advertenties of banneradvertenties.
+
    Bijvoorbeeld:
 
    ```
@@ -102,8 +106,8 @@ U kunt uw oplosmiddelen uitvoeren die op de standaardoplossers worden gebaseerd.
    _timeline.adBreaks = ptBreaks;
    ```
 
-1. Vraag `didFinishResolvingPlacementOpportunity`, die `PTTimeline`verstrekt.
-1. Registreer uw aangepaste inhoud/advertentieoplosser aan de standaardfabriek van de mediaspeler door aan te roepen `registerContentResolver`.
+1. Vraag `didFinishResolvingPlacementOpportunity`, die `PTTimeline` verstrekt.
+1. Registreer uw aangepaste inhoud/advertentiesolver aan de standaardfabriek van de mediaspeler door `registerContentResolver` te roepen.
 
    ```
    //Remove default content/ad resolver 
