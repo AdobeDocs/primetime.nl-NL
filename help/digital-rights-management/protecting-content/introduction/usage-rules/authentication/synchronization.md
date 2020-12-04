@@ -11,15 +11,15 @@ ht-degree: 0%
 ---
 
 
-# Voorschriften voor synchronisatie {#requirements-for-synchronization}
+# Vereisten voor synchronisatie {#requirements-for-synchronization}
 
 Vereisten voor synchronisatie geven de frequentie aan waarmee de client de status synchroniseert met de server. Als aan de client een out-of-band licentie is verleend (zonder dat er een licentieserver wordt gecontacteerd), kunnen gebruiksregels opgeven dat de client synchronisatieberichten naar de server moet sturen om de veilige tijd van de client te synchroniseren en de status van de client aan de server moet rapporteren.
 
 Het synchronisatiegedrag wordt bepaald gebruikend de volgende parameters:
 
-* **Interval** starten - Geeft aan hoe lang er moet worden gewacht na de laatste succesvolle synchronisatie om een andere synchronisatieaanvraag te starten.
-* **Hard stopinterval** - (optioneel). Afspelen niet toestaan als de synchronisatie niet binnen de opgegeven tijd is gelukt.
-* **Synchrone synchronisatiewaarschijnlijkheid** forceren (optioneel). Mogelijkheid waarmee de client een synchronisatiebericht moet verzenden vóór het volgende begininterval.
+* **Het Interval**  van het begin - specificeert hoe lang om na de laatste succesvolle synchronisatie te wachten om een andere synchronisatieverzoek te beginnen.
+* **Hard stopinterval**  (optioneel). Afspelen niet toestaan als de synchronisatie niet binnen de opgegeven tijd is gelukt.
+* **Synchrone synchronisatiewaarschijnlijkheid**  forceren (optioneel). Mogelijkheid waarmee de client een synchronisatiebericht moet verzenden vóór het volgende begininterval.
 
 >[!NOTE]
 >
