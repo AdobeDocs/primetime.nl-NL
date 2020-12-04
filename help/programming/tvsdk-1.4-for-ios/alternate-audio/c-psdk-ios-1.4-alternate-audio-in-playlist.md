@@ -6,6 +6,9 @@ title: Alternatieve audiotracks in de afspeellijst
 uuid: 68f01375-9d57-4839-a1c0-7e022b374012
 translation-type: tm+mt
 source-git-commit: 5908e5a3521966496aeec0ef730e4a704fddfb68
+workflow-type: tm+mt
+source-wordcount: '346'
+ht-degree: 0%
 
 ---
 
@@ -25,7 +28,7 @@ De volgende vereisten zijn van toepassing als u afwisselende audiosporen gebruik
 * Als de hoofdinhoud alternatieve audiotracks heeft, moeten advertenties ten minste één audiostream hebben.
 * Elke segmentduur van de audio-enige stream van een advertentie moet gelijk zijn aan de segmentduur van de videostream van een advertentie.
 
-De hoofdaudiotrack wordt samen met het `default` label opgenomen in de audiotracks. Metagegevens voor de alternatieve audiostreams worden opgenomen in de afspeellijst in de `#EXT-X-MEDIA` tags met `TYPE=AUDIO`.
+De hoofdaudiotrack wordt opgenomen in de verzameling audiotracks met het label `default`. Metagegevens voor de alternatieve audiostreams worden met `TYPE=AUDIO` opgenomen in de afspeellijst in de `#EXT-X-MEDIA`-tags.
 
 Een M3U8-manifest dat bijvoorbeeld meerdere alternatieve audiostreams opgeeft, ziet er als volgt uit:
 
