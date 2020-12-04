@@ -4,6 +4,9 @@ title: Netwerklaagbeveiliging
 uuid: bd53bccf-1130-4189-97ec-4259bd25762f
 translation-type: tm+mt
 source-git-commit: 29bc8323460d9be0fce66cbea7c6fce46df20d61
+workflow-type: tm+mt
+source-wordcount: '265'
+ht-degree: 0%
 
 ---
 
@@ -24,11 +27,11 @@ Deze lijst beschrijft gemeenschappelijke technieken die de kwetsbaarheid van de 
  <tbody class="- topic/tbody "> 
   <tr rowsep="1" class="- topic/row "> 
    <td colname="1" class="- topic/entry "> <p class="- topic/p ">Gedemilitariseerde zones (DMZ's) </p> </td> 
-   <td colname="2" class="- topic/entry "> <p class="- topic/p ">De segmentatie moet op minstens twee niveaus bestaan terwijl de toepassingsserver wordt gebruikt om Adobe Access uit te voeren achter de binnenfirewall. Scheid het externe netwerk van DMZ die de Webservers bevat, die beurtelings van het interne netwerk moeten worden gescheiden. Gebruik firewalls om de scheidingslagen te implementeren. Categoriseer en controleer het verkeer dat door elke netwerklaag overgaat om ervoor te zorgen dat slechts het absolute minimum van vereiste gegevens wordt toegestaan. </p> </td> 
+   <td colname="2" class="- topic/entry "> <p class="- topic/p ">De segmentatie moet in minstens twee niveaus bestaan met de toepassingsserver die wordt gebruikt om Toegang in werking te stellen Adobe die achter de binnenfirewall wordt geplaatst. Scheid het externe netwerk van DMZ die de Webservers bevat, die beurtelings van het interne netwerk moeten worden gescheiden. Gebruik firewalls om de scheidingslagen te implementeren. Categoriseer en controleer het verkeer dat door elke netwerklaag overgaat om ervoor te zorgen dat slechts het absolute minimum van vereiste gegevens wordt toegestaan. </p> </td> 
   </tr> 
   <tr rowsep="1" class="- topic/row "> 
    <td colname="1" class="- topic/entry "> <p class="- topic/p ">Persoonlijke IP-adressen </p> </td> 
-   <td colname="2" class="- topic/entry "> <p class="- topic/p ">Gebruik NAT (Network Address Translation) met RFC 1918-adressen (Private IP) op Adobe Access-toepassingsservers. Wijs privé IP adressen (10.0.0.0/8, 172.16.0.0/12, en 192.168.0.0/16) toe om het voor een aanvaller moeilijker te maken om verkeer aan en van een NATIONAAL interne gastheer door Internet te leiden. </p> </td> 
+   <td colname="2" class="- topic/entry "> <p class="- topic/p ">De Vertaling van het Adres van het Netwerk van het gebruik (NATIONAAL) met RFC 1918 privé IP adressen op de toepassingsservers van de Toegang van Adobe. Wijs privé IP adressen (10.0.0.0/8, 172.16.0.0/12, en 192.168.0.0/16) toe om het voor een aanvaller moeilijker te maken om verkeer aan en van een NATIONAAL interne gastheer door Internet te leiden. </p> </td> 
   </tr> 
   <tr rowsep="0" class="- topic/row "> 
    <td colname="1" class="- topic/entry "> <p class="- topic/p ">Vuurmuren </p> </td> 
