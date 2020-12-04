@@ -6,11 +6,14 @@ title: Advertenties gedurende een bepaalde periode overslaan
 uuid: 1a18d5fd-c957-481b-83ae-2129590c1678
 translation-type: tm+mt
 source-git-commit: 040655d8ba5f91c98ed0584c08db226ffe1e0f4e
+workflow-type: tm+mt
+source-wordcount: '232'
+ht-degree: 0%
 
 ---
 
 
-# Advertenties gedurende een bepaalde periode overslaan{#skip-ad-breaks-for-a-period-of-time}
+# Overslaan en afbreken voor een bepaalde tijd{#skip-ad-breaks-for-a-period-of-time}
 
 Standaard dwingt TVSDK een advertentie-einde af wanneer de gebruiker een advertentie-einde zoekt. U kunt het gedrag aanpassen om een advertentie-einde over te slaan als de tijd die is verstreken vanaf een vorige eindemarkering binnen een bepaald aantal minuten is.
 
