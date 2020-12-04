@@ -4,13 +4,16 @@ title: Domein CA-certificaten verkrijgen
 uuid: 41bbe02b-363a-47f4-9cc0-350730b6c787
 translation-type: tm+mt
 source-git-commit: b4b50471ab0ba98329862322a61bf73aa9e471d5
+workflow-type: tm+mt
+source-wordcount: '115'
+ht-degree: 0%
 
 ---
 
 
 # Domein CA-certificaten verkrijgen{#obtain-domain-ca-certificates}
 
-In tegenstelling tot de Server van de Vergunning, Packager of het certificaat van het Vervoer, wordt het certificaat van MAC van het Domein niet uitgegeven door Adobe. U kunt dit certificaat verkrijgen van een certificeringsinstantie of u kunt een zelfondertekend certificaat genereren om dit te gebruiken.
+In tegenstelling tot de Server van de Vergunning, wordt de Packager of het certificaat van het Vervoer van het Vervoer, het certificaat van MAC van het Domein niet uitgegeven door Adobe. U kunt dit certificaat verkrijgen van een certificeringsinstantie of u kunt een zelfondertekend certificaat genereren om dit te gebruiken.
 
 Het certificaat van MAC van het Domein zou een sleutel met 1024 bits moeten gebruiken en de standaardattributen bevatten die in een certificaat van CA worden vereist:
 
@@ -19,7 +22,7 @@ Het certificaat van MAC van het Domein zou een sleutel met 1024 bits moeten gebr
 
 Met OpenSSL kunt u bijvoorbeeld als volgt een zelfondertekend CA-certificaat genereren:
 
-1. Maak een bestand met de naam [!DNL ca-extensions.txt] met:
+1. Maak een bestand met de naam [!DNL ca-extensions.txt] dat het volgende bevat:
 
    ```
    keyUsage=critical,keyCertSign  
