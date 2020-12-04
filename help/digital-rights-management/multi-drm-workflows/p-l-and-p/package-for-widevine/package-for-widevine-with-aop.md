@@ -1,18 +1,21 @@
 ---
-description: Adobe Offline Packager neemt niet-gecodeerde MP4-inhoud in.
-seo-description: Adobe Offline Packager neemt niet-gecodeerde MP4-inhoud in.
+description: Adobe Offline Packager gebruikt als invoer van niet-gecodeerde MP4-inhoud.
+seo-description: Adobe Offline Packager gebruikt als invoer van niet-gecodeerde MP4-inhoud.
 seo-title: Inhoud verpakken met Adobe Offline Packager
 title: Inhoud verpakken met Adobe Offline Packager
 uuid: d0676147-c20f-49ea-93a6-9c8dbbbba992
 translation-type: tm+mt
 source-git-commit: ffb993889a78ee068b9028cb2bd896003c5d4d4c
+workflow-type: tm+mt
+source-wordcount: '217'
+ht-degree: 0%
 
 ---
 
 
-# Inhoud verpakken met Adobe Offline Packager{#package-your-content-with-adobe-offline-packager}
+# Verpak uw inhoud met Adobe Offline Packager{#package-your-content-with-adobe-offline-packager}
 
-Adobe Offline Packager neemt niet-gecodeerde MP4-inhoud in.
+Adobe Offline Packager gebruikt als invoer van niet-gecodeerde MP4-inhoud.
 
 **Adobe Offline Packager aanroepen**
 
@@ -34,7 +37,7 @@ Het argument conf_path verwijst naar het configuratiebestand dat het volgende zo
 
     &lt;config>
     &lt;frag_dur>4&lt;/frag_dur>
-    &lt;target_dur>6&lt;/target_dur>
+    &lt;target_dur>6 &lt;/target_dur>
     &lt;encrypt_audio>false&lt;/encrypt_audio>
     &lt;/config>
 
