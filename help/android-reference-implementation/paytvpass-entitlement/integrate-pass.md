@@ -1,43 +1,46 @@
 ---
-description: Pas uw referentie-implementatie aan om Adobe Primetime-verificatie te integreren voor uw productieomgeving.
-seo-description: Pas uw referentie-implementatie aan om Adobe Primetime-verificatie te integreren voor uw productieomgeving.
+description: Pas uw referentie-implementatie aan om Adobe Primetime-verificatie voor uw productieomgeving te integreren.
+seo-description: Pas uw referentie-implementatie aan om Adobe Primetime-verificatie voor uw productieomgeving te integreren.
 seo-title: Primetime-verificatie integreren
 title: Primetime-verificatie integreren
 uuid: 34cdf1da-261e-462c-a194-4fcb439e5dfb
 translation-type: tm+mt
 source-git-commit: 31b6cad26bcc393d731080a70eff1c59551f1c8e
+workflow-type: tm+mt
+source-wordcount: '783'
+ht-degree: 0%
 
 ---
 
 
 # Primetime-verificatie integreren {#integrate-primetime-authentication}
 
-Pas uw referentie-implementatie aan om Adobe Primetime-verificatie te integreren voor uw productieomgeving.
+Pas uw referentie-implementatie aan om Adobe Primetime-verificatie voor uw productieomgeving te integreren.
 
 De integratie van de Dienst van de Uitvoering van de Verwijzing van de Echtheid Primetime werkt uit-van-de-doos als demonstratie. Nochtans, om de integratie in een productie-klaar speler te gebruiken, moet u de volgende aanpassingen uitvoeren:
 
 1. Machtigingsstromen in- of uitschakelen.
 
-   De `EntitlementManager` moet eerst een geval van de authentificatieSDK initialiseren en verkrijgen Primetime om worden toegelaten. Als de gebruiker deze bibliotheek `EntitlementManager` niet initialiseert, wordt de manager uitgeschakeld.
-1. De toepassing inschakelen `EntitlementManger`, vanuit de hoofdtoepassingsklasse:
+   `EntitlementManager` moet eerst initialiseren en een geval van Primetime authentificatie SDK verkrijgen om worden toegelaten. Als `EntitlementManager` deze bibliotheek niet initialiseert, wordt de manager onbruikbaar gemaakt.
+1. Schakel `EntitlementManger` in uit de hoofdtoepassingsklasse:
 
    ```java
    // initialize the AccessEnabler library, required for Primetime PayTV Pass entitlement workflows 
    EntitlementManager.initializeAccessEnabler(this); // comment out this line to disable entitlement workflows
    ```
 
-1. Gebruik de `ManagerFactory` klasse om een instantie van de `EntitlementManager`klasse te verkrijgen.
+1. Gebruik de klasse `ManagerFactory` om een instantie van `EntitlementManager` te verkrijgen.
 
-   U moet het altijd gebruiken `ManagerFactory` om een instantie van de toepassing te krijgen, `EntitlementManager`aangezien `ManagerFactory` handhaaft één enkel geval van EntitlementManager voor uw toepassing. Instantieer nooit de `EntitlementManager` of de `EntitlementManagerOn` klassen door hun aannemers te gebruiken.
+   U moet `ManagerFactory` altijd gebruiken om een geval van `EntitlementManager` te krijgen, aangezien `ManagerFactory` één enkel geval van EntitlementManager voor uw toepassing handhaaft. Instantieer nooit de `EntitlementManager` of `EntitlementManagerOn` klassen door hun aannemers te gebruiken.
 
    ```java
    EntitlementManager entitlementManager =  
    ManagerFactory.getEntitlementManager();
    ```
 
-   De `ManagerFactory` functie retourneert een instantie van `EntitlementManagerOn`, met de machtigingsstromen ingeschakeld, als u eerder hebt aangeroepen `EntitlementManager.initializeAccessEnabler`. Als u niet eerst roept `EntitlementManager.initializeAccessEnabler`, dan `ManagerFactory` zal een geval van terugkeren `EntitlementManager`, met de machtigingsstromen gehandicapt. 1. Configureer de aanvrager-id.
+   `ManagerFactory` keert een geval van `EntitlementManagerOn`, met de toegelaten machtigingsstromen terug, als u eerder `EntitlementManager.initializeAccessEnabler` riep. Als u `EntitlementManager.initializeAccessEnabler` niet eerst roept, dan zal `ManagerFactory` een geval van `EntitlementManager`, met de machtigingsstromen gehandicapt terugkeren. 1. Configureer de aanvrager-id.
 
-   De implementatie van de Verwijzing wordt vooraf geconfigureerd met de id van de testaanvrager ingesteld op: &quot;REF&quot;. U kunt deze aanvrager-id gebruiken om uw toepassing te testen. Wanneer u klaar bent om de ID van de Aanvrager te gebruiken die door uw vertegenwoordiger van de Authentificatie wordt verstrekt Primetime, werk het [!DNL res/values/strings.xml] dossier van de toepassing met uw identiteitskaart van de Aanvrager bij.
+   De implementatie van de Verwijzing wordt vooraf geconfigureerd met de id van de testaanvrager ingesteld op: &quot;REF&quot;. U kunt deze aanvrager-id gebruiken om uw toepassing te testen. Wanneer u klaar bent om de identiteitskaart van de Aanvrager te gebruiken die door uw vertegenwoordiger van de Authentificatie wordt verstrekt Primetime, werk het dossier [!DNL res/values/strings.xml] van de toepassing met uw identiteitskaart van de Aanvrager bij.
 
    ```xml
    <!-- Programmer Requestor ID, change to ID provided by your Adobe  
@@ -53,11 +56,11 @@ De integratie van de Dienst van de Uitvoering van de Verwijzing van de Echtheid 
    <string name="adobepass_sp_url_staging">sp.auth-staging.adobe.com</string>
    ```
 
-   Bovendien moet u mogelijk de URL&#39;s wijzigen die uw toepassing gebruikt om verbinding te maken met de Primetime-verificatieservices. Dit zijn onder andere de URL&#39;s van de Primetime-verificatieserver en productieserver, en een URL naar een token-verificatieservice. Raadpleeg uw Adobe Primetime-vertegenwoordiger voor meer informatie. 1. Onderteken de aanvrager-id.
+   Bovendien moet u mogelijk de URL&#39;s wijzigen die uw toepassing gebruikt om verbinding te maken met de Primetime-verificatieservices. Dit zijn onder andere de URL&#39;s van de Primetime-verificatieserver en productieserver, en een URL naar een token-verificatieservice. Neem contact op met uw Adobe Primetime-vertegenwoordiger voor meer informatie. 1. Onderteken de aanvrager-id.
 
-   Om de identiteit van de programmeur binnen het authentificatiesysteem te vestigen Primetime, wordt de identiteitskaart van de Aanvrager van de Programma verzonden naar het authentificatiesysteem Primetime. Als extra beveiligingslaag moet de aanvrager-id door de programmeur worden ondertekend voordat u deze naar Adobe kunt verzenden. Adobe raadt de programmeur aan een service in te stellen om de aanvrager-id op een vertrouwd netwerk te ondertekenen.
+   Om de identiteit van de programmeur binnen het authentificatiesysteem te vestigen Primetime, wordt de identiteitskaart van de Aanvrager van de Programma verzonden naar het authentificatiesysteem Primetime. Als toegevoegde laag van veiligheid, moet identiteitskaart van de Aanvrager door de Programmeur worden ondertekend alvorens het naar Adobe te verzenden. Adobe raadt de programmeur aan een service in te stellen om de aanvrager-id op een vertrouwd netwerk te ondertekenen.
 
-   In de Primetime-referentieimplementatie wordt getoond hoe u de id van de aanvrager ondertekent. Dit is echter alleen voor demonstratiedoeleinden. Adobe raadt u ten zeerste aan het handtekeningcertificaat en de code van de handtekeninggenerator, onder `com.adobe.primetime.reference.crypto`, niet in een productietoepassing op te nemen. In plaats daarvan moet u de toepassing verplaatsen naar een vertrouwde netwerkservice.
+   In de Primetime-referentieimplementatie wordt getoond hoe u de id van de aanvrager ondertekent. Dit is echter alleen voor demonstratiedoeleinden. Adobe beveelt ten zeerste aan dat het ondertekeningscertificaat en de code van de handtekeninggenerator, onder `com.adobe.primetime.reference.crypto`, niet worden opgenomen in een productietoepassing. In plaats daarvan moet u de toepassing verplaatsen naar een vertrouwde netwerkservice.
 
 1. Configureer de serveromgeving.
 
@@ -65,7 +68,8 @@ De integratie van de Dienst van de Uitvoering van de Verwijzing van de Echtheid 
 
    * Staging - De testomgeving wordt gebruikt voor het testen van uw toepassing.
    * Productie - De productieomgeving wordt gebruikt voor live implementaties van uw toepassing.
-   U stelt de URI&#39;s voor zowel de testomgeving als de productieomgeving in met de toepassing. U moet echter instellen welke van deze URI&#39;s door de toepassing in de code wordt gebruikt. In de `com.adobe.primetime.reference.manager.EntitlementManger` klasse, plaats de `environmentUri` variabele aan of `STAGING_URI` of `PRODUCTION_URI` afhankelijk van welke milieu van de authentificatiedienst Primetime u gebruikt.
+
+   U stelt de URI&#39;s voor zowel de testomgeving als de productieomgeving in met de toepassing. U moet echter instellen welke van deze URI&#39;s door de toepassing in de code wordt gebruikt. Stel in de klasse `com.adobe.primetime.reference.manager.EntitlementManger` de variabele `environmentUri` in op `STAGING_URI` of `PRODUCTION_URI`, afhankelijk van de omgeving van de Primetime-verificatieservice die u gebruikt.
 
    >[!NOTE]
    >
