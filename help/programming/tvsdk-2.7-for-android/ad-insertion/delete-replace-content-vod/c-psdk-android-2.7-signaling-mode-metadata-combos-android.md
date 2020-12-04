@@ -6,11 +6,14 @@ title: Effect op het toevoegen en verwijderen van gegevens uit de advertentiemod
 uuid: 7b2a5588-110d-4ce5-aa9c-706d357f211d
 translation-type: tm+mt
 source-git-commit: 21d1eae53cea303221de00765724e787cf6e84ef
+workflow-type: tm+mt
+source-wordcount: '480'
+ht-degree: 0%
 
 ---
 
 
-# Effect op het toevoegen en verwijderen van gegevens uit de advertentiemodus en combinaties van metagegevens {#effect-on-ad-insertion-and-deletion-from-ad-signaling-mode-and-ad-metadata-combinations}
+# Effect op het toevoegen en verwijderen van gegevens uit de advertentiemodus en de combinaties van metagegevens {#effect-on-ad-insertion-and-deletion-from-ad-signaling-mode-and-ad-metadata-combinations}
 
 U kunt tijdbereiken in VOD-streams markeren, verwijderen en vervangen door verschillende combinaties van ad-signaalmodus en metagegevens te gebruiken. Verschillende combinaties van signalerende wijze en meta-gegevens resulteren in verschillend gedrag.
 
@@ -26,7 +29,7 @@ De volgende lijst verstrekt de details over het signaleren wijze en gedrag van d
    <th class="entry"> Ad-signaalmodus </th> 
    <th class="entry"> Metagegevens toevoegen </th> 
    <th class="entry"> Gemaakte oplossingen </th> 
-   <th class="entry"><span class="codeph"> PlacementInformation</span> gemaakt </th> 
+   <th class="entry"><span class="codeph"> </span> PlacementInformationScreated </th> 
    <th class="entry"> Resulterend gedrag </th> 
   </tr> 
  </thead>
@@ -51,7 +54,7 @@ De volgende lijst verstrekt de details over het signaleren wijze en gedrag van d
    <td> Verwijderen, Auditude </td> 
    <td> 
     <ul id="ul_E0A2F885E93B4D23A486C37B305E17D8"> 
-     <li id="li_D977B398D3904A44AFEC4B05AB0E3340"><span class="codeph"> PlacementInfo (Type.CUSTOM_TIME_RANGE, Mode.DELETE), </span> </li> 
+     <li id="li_D977B398D3904A44AFEC4B05AB0E3340"><span class="codeph"> PlacementInfo (Type.CUSTOM_TIME_RANGE, Mode.DELETE),  </span> </li> 
      <li id="li_439886CB38AA46239C2E40352443888A"><span class="codeph"> PlacementInfo (Type.SERVER_MAP, Mode.INSERT)</span> </li> 
     </ul> </td> 
    <td> Bereiken verwijderd, advertenties ingevoegd </td> 
