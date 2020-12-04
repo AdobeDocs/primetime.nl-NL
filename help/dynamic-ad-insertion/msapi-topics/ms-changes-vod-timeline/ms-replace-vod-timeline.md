@@ -6,6 +6,9 @@ title: Wijzigingen in VOD
 uuid: e734aacd-b42e-4c8e-a16a-c7a0739a0492
 translation-type: tm+mt
 source-git-commit: 358c5b02d47f23a6adbc98e457e56c8220cae6e9
+workflow-type: tm+mt
+source-wordcount: '163'
+ht-degree: 0%
 
 ---
 
@@ -21,4 +24,4 @@ De situaties waarin u een tijdlijn van VOD zou kunnen willen vervangen omvatten:
 * Vervang dynamisch oude C3-advertenties door nieuwere advertenties van langere duur.
 * Voeg minder of geen advertenties in.
 
-U kunt de tijdlijn van de advertentie vervangen door een nieuw verzoek tot invoeging in te dienen met het oorspronkelijke M3U8-bestand en een andere waarde van de parameter `pttimeline` query.
+U kunt de tijdlijn van de advertentie vervangen door een nieuw verzoek tot invoeging in te dienen met het oorspronkelijke M3U8-bestand en een andere waarde van de queryparameter `pttimeline`.
