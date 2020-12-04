@@ -6,6 +6,9 @@ title: Een mediabron laden in de MediaPlayer
 uuid: 6ee8032f-0728-423f-a1d2-5030aa7db14f
 translation-type: tm+mt
 source-git-commit: 4ef05be045334a2e723da4c7c6a7ee22fb0f776c
+workflow-type: tm+mt
+source-wordcount: '252'
+ht-degree: 0%
 
 ---
 
@@ -16,25 +19,25 @@ Laad een bron door rechtstreeks een MediaResource te instantiëren en de video-i
 
 1. Plaats het playable punt van uw MediaPlayer met de nieuwe te spelen bron.
 
-   Vervang het momenteel afspeelbare item van uw bestaande MediaPlayer door een bestaande `MediaPlayer.replaceCurrentItem` instantie aan te roepen `MediaResource` en door te geven.
+   Vervang het momenteel afspeelbare item van uw bestaande MediaPlayer door `MediaPlayer.replaceCurrentItem` aan te roepen en een bestaande `MediaResource`-instantie door te geven.
 
-1. Registreer een implementatie van de `MediaPlayer.PlaybackEventListener` interface met de `MediaPlayer` instantie.
+1. Registreer een implementatie van de `MediaPlayer.PlaybackEventListener` interface met `MediaPlayer` instantie.
 
    * `onPrepared`
    * `onStateChanged`en controleer op INITIALIZED en ERROR.
 
 1. Wanneer de status van de mediaspeler verandert in INITIALIZED, kunt u `MediaPlayer.prepareToPlay`
 
-   De geINITIALISEERDE status geeft aan dat het medium is geladen. Het aanroepen `prepareToPlay` begint het proces van het oplossen en plaatsen van reclame, als om het even welk.
+   De geINITIALISEERDE status geeft aan dat het medium is geladen. Als u `prepareToPlay` aanroept, wordt het proces voor het oplossen en plaatsen van advertenties gestart, indien van toepassing.
 
-1. Wanneer TVSDK de `onPrepared` callback aanroept, is de mediastream geladen en voorbereid voor afspelen.
+1. Wanneer TVSDK de callback `onPrepared` aanroept, is de mediastream geladen en voorbereid voor afspelen.
 
-   Wanneer de mediastream wordt geladen, `MediaPlayerItem` wordt er een gemaakt.
+   Wanneer de mediastream wordt geladen, wordt een `MediaPlayerItem` gemaakt.
 
->Als er een fout optreedt, gaat u naar de status FOUT. `MediaPlayer` Het brengt ook uw toepassing op de hoogte door uw `PlaybackEventListener.onStateChanged`callback te roepen.
+>Als er een fout optreedt, schakelt `MediaPlayer` over naar de status ERROR. Het brengt ook uw toepassing op de hoogte door uw `PlaybackEventListener.onStateChanged`callback te roepen.
 >
 >Hiermee worden verschillende parameters doorgegeven:
->* Een `state` parameter van type `MediaPlayer.PlayerState` met de waarde van `MediaPlayer.PlayerState.ERROR`.
+>* Een `state`-parameter van het type `MediaPlayer.PlayerState` met de waarde `MediaPlayer.PlayerState.ERROR`.
    >
    >
 * Een `notification` parameter van type `MediaPlayerNotification` die kenmerkende informatie over de foutengebeurtenis bevat.
