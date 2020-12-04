@@ -6,6 +6,9 @@ title: Tijdbereiken vervangen door een advertentie
 uuid: c1d93389-cba4-4db0-877d-dbdc5183683c
 translation-type: tm+mt
 source-git-commit: bc35da8b258056809ceaf18e33bed631047bc81b
+workflow-type: tm+mt
+source-wordcount: '102'
+ht-degree: 0%
 
 ---
 
@@ -14,11 +17,11 @@ source-git-commit: bc35da8b258056809ceaf18e33bed631047bc81b
 
 U kunt advertenties invoegen in VOD-inhoud.
 
-De `TimeRanges` tussen `begin` en `end` in `localTime` worden verwijderd uit de tijdlijn. Deze bereiken worden vervangen door een `AdBreak` van `begin` tot `begin+replaceDuration`. Als het `replacement-duration` niet als parameter bestaat, maakt de server de bepaling op teruggekeerde `Adbreak`.
+De `TimeRanges` tussen `begin` en `end` in `localTime` worden verwijderd uit de tijdlijn. Deze bereiken worden vervangen door een `AdBreak` van `begin` tot `begin+replaceDuration`. Als `replacement-duration` niet als parameter bestaat, bepaalt de server de bepaling op teruggekeerde `Adbreak`.
 
 >[!TIP]
 >
->Geef altijd een `replacement-duration` waarde op voor aangepaste bereiken. Als er geen advertenties zijn die dit aangepaste bereik moeten vervangen, geeft u een `replacement-duration` van 0 op.
+>Geef altijd een `replacement-duration` op voor aangepaste bereiken. Als er geen advertenties zijn die dit aangepaste bereik moeten vervangen, geeft u een `replacement-duration` van 0 op.
 
 1. U kunt als volgt de bereiken vervangen door Primetime en beslissingsadvertenties:
 
