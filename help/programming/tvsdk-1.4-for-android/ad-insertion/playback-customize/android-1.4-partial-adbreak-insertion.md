@@ -6,11 +6,14 @@ title: Onvolledige invoeging van advertentie
 uuid: 296a9b6a-9e9f-4ca7-ab8a-c8cbc98fb9af
 translation-type: tm+mt
 source-git-commit: 5908e5a3521966496aeec0ef730e4a704fddfb68
+workflow-type: tm+mt
+source-wordcount: '349'
+ht-degree: 0%
 
 ---
 
 
-# Onvolledige invoeging van advertentie {#partial-ad-break-insertion}
+# Onvolledige invoeging van Advertentiereinden {#partial-ad-break-insertion}
 
 U kunt een tv-achtige ervaring inschakelen om in live streams deel te kunnen nemen aan een advertentie.
 
