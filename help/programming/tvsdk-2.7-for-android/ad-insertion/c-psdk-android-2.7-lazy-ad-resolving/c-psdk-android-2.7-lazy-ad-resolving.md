@@ -20,7 +20,7 @@ Oplossen en laden van advertenties kan een onaanvaardbare wachttijd veroorzaken 
 
 * Eenvoudig proces voor het oplossen en laden van bestanden:
 
-   1. TVSDK downloadt een manifest (playlist) en *lost* alle advertenties op.
+   1. TVSDK downloadt manifest (playlist) en *verhelpt* alle advertenties.
    1. TVSDK *laadt* alle advertenties en plaatst deze op de tijdlijn.
    1. TVSDK verplaatst de speler naar de status PREPARED en begint met afspelen van inhoud.
 
@@ -29,7 +29,7 @@ Oplossen en laden van advertenties kan een onaanvaardbare wachttijd veroorzaken 
 * *Lazy advertentie laden*:
 
    1. TVSDK downloadt een afspeellijst en *lost* alle advertenties op.
-   1. TVSDK *laadt* pre-roladvertenties, verplaatst de speler naar de status PREPARED en begint met het afspelen van inhoud.
+   1. TVSDK *laadt* pre-roll advertenties, verplaatst de speler naar de status PREPARED en begint de inhoud af te spelen.
    1. TVSDK *laadt* de resterende advertenties en plaatst deze op de tijdlijn wanneer het afspelen plaatsvindt.
 
    Met deze functie wordt het basisproces verbeterd doordat de speler in de status PREPARED wordt geplaatst voordat alle advertenties worden geladen.
@@ -51,12 +51,12 @@ Oplossen en laden van advertenties kan een onaanvaardbare wachttijd veroorzaken 
 
    >
    >    
-   * De speler moet op de `kEventAdResolutionComplete` gebeurtenis wachten voordat het zoeken of kunstspel wordt toegestaan.
-   >    * Als de gebruiker zoekbewerkingen of truc-afspeelbewerkingen probeert uit te voeren terwijl advertenties nog steeds worden opgelost, genereert TVSDK de `kECLazyAdResolutionInProgress` fout.
-   >    * Indien nodig moet de speler de scrubbalk bijwerken *na* ontvangst van de `kEventAdResolutionComplete` gebeurtenis.
+   * De speler moet wachten op de gebeurtenis `kEventAdResolutionComplete` voordat u het afspelen van zoekopdrachten of trucs toestaat.
+   >    * Als de gebruiker zoekbewerkingen of truc-afspeelbewerkingen probeert uit te voeren terwijl advertenties nog steeds worden opgelost, genereert TVSDK de fout `kECLazyAdResolutionInProgress`.
+   >    * Indien nodig moet de speler de scrubbalk *after* die de gebeurtenis `kEventAdResolutionComplete` ontvangt, bijwerken.
 >
 >* Lazy Ad Resolving is alleen voor VOD. Het werkt niet met LIVE-streams.
->* Lazy Ad Resolving is incompatibel met de functie *Instant On* .
+>* Het luie Oplossen van Advertentie is onverenigbaar met *Onmiddellijk op* eigenschap.
 
 >
 >  
