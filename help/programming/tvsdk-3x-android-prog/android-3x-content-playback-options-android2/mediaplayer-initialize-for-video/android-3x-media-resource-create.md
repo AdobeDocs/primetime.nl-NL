@@ -19,9 +19,9 @@ Voor elke nieuwe video-inhoud initialiseert u een MediaResource-instantie met in
 
 De MediaResource-klasse vertegenwoordigt de inhoud die door de MediaPlayer-instantie moet worden geladen.
 
-1. Maak een mediabestand `MediaResource` door informatie over de media door te geven aan de `MediaResource` constructor.
+1. Maak een `MediaResource` door informatie over de media door te geven aan de constructor `MediaResource`.
 
-   De `MediaResource` constructor vereist de volgende parameters:
+   De constructor `MediaResource` vereist de volgende parameters:
 
    <table id="table_22886D6770FB45E99D35D0B90E6CC302"> 
    <thead> 
@@ -32,21 +32,21 @@ De MediaResource-klasse vertegenwoordigt de inhoud die door de MediaPlayer-insta
    </thead>
    <tbody> 
    <tr> 
-      <td colname="col1"> <span class="codeph"> url </span> </td> 
+      <td colname="col1"> <span class="codeph"> url  </span> </td> 
       <td colname="col2"> Een tekenreeks die de URL van het manifest/de afspeellijst van het medium vertegenwoordigt. </td> 
    </tr> 
    <tr> 
-      <td colname="col1"> <span class="codeph"> type </span> </td> 
-      <td colname="col2"> Één van de volgende leden van <span class="codeph"> MediaResource.Type </span> enum, die aan het vermelde dossiertype beantwoordt: 
+      <td colname="col1"> <span class="codeph"> type  </span> </td> 
+      <td colname="col2"> Een van de volgende leden van de <span class="codeph"> MediaResource.Type </span> opsomming, die overeenkomt met het aangegeven bestandstype: 
       <ul id="ul_C286ED3C31364B858A1C9AF3356E9282"> 
-      <li id="li_25B24EF76D8849DE8764539F25E435FA"> <span class="codeph"> HLS </span> - M3U8 </li> 
-      <li id="li_1344A41B434D49229E392F1AAF9ECA81"> <span class="codeph"> ISOBMFF </span> - ISO-indeling voor basismediabestanden (MP4) </li> 
-      <li id="li_92392073B7334916B06B16570C51AC91"> <span class="codeph"> DASH </span> - MPEG-DASH media Presentation Description (MPD) </li> 
+      <li id="li_25B24EF76D8849DE8764539F25E435FA"> <span class="codeph"> HLS  </span> - M3U8 </li> 
+      <li id="li_1344A41B434D49229E392F1AAF9ECA81"> <span class="codeph"> ISOBMFF  </span> - ISO-indeling voor basismediabestanden (MP4) </li> 
+      <li id="li_92392073B7334916B06B16570C51AC91"> <span class="codeph"> DASH  </span> - MPEG-DASH media Presentation Description (MPD) </li> 
       </ul> </td> 
    </tr> 
    <tr> 
-      <td colname="col1"> <span class="codeph"> metagegevens </span> </td> 
-      <td colname="col2"> Een instantie van de <span class="codeph"> </span> klasse Metagegevens (een woordenboekachtige structuur) die aanvullende informatie kan bevatten over de inhoud die op het punt staat te worden geladen, zoals alternatieve inhoud of inhoud die in de hoofdinhoud moet worden geplaatst. Als u reclame gebruikt, stelt u AuditudeSettings in <span class="codeph"> voordat u deze constructor </span> Advertentie-invoegmetagegevens gebruikt <a href="/help/programming/tvsdk-3x-android-prog/android-3x-advertising/ad-insertion/ad-insertion-metadata/android-3x-ad-insertion-metadata.md"> </a>. </td> 
+      <td colname="col1"> <span class="codeph"> metagegevens  </span> </td> 
+      <td colname="col2"> Een instantie van de klasse <span class="codeph"> Metagegevens </span> (een woordenboekachtige structuur), die aanvullende informatie kan bevatten over de inhoud die op het punt staat te worden geladen, zoals alternatieve inhoud of inhoud toevoegen om in de hoofdinhoud te plaatsen. Als u reclame gebruikt, stelt u <span class="codeph"> AuditudeSettings </span> in voordat u deze constructor <a href="/help/programming/tvsdk-3x-android-prog/android-3x-advertising/ad-insertion/ad-insertion-metadata/android-3x-ad-insertion-metadata.md"> Add insert metadata </a> gebruikt. </td> 
    </tr> 
    </tbody> 
    </table>
@@ -57,7 +57,7 @@ De MediaResource-klasse vertegenwoordigt de inhoud die door de MediaPlayer-insta
    >
    >Voor MP4-video-on-demand (VOD)-inhoud biedt TVSDK geen ondersteuning voor truc&#39;s, ABR-streaming (Adaptive bit rate), invoeging, Closed Captions of DRM.
 
-   Met de volgende code wordt een `MediaResource` instantie gemaakt:        >
+   De volgende code maakt een `MediaResource`-instantie:        >
 
    ```java
    // To do: Create metadata here 
@@ -67,12 +67,12 @@ De MediaResource-klasse vertegenwoordigt de inhoud die door de MediaPlayer-insta
      metadata); 
    ```
 
-   Na deze stap kunt u op elk gewenst moment `MediaResource` accessors (getters) gebruiken om het type, de URL en de metagegevens van de bron te bekijken.
+   Op elk moment na deze stap kunt u `MediaResource` accessors (getters) gebruiken om het type van de bron, URL, en meta-gegevens te onderzoeken.
 
 1. Laad de mediabron met een van de volgende opties:
 
    * De instantie MediaPlayer.
-   * `MediaPlayerItemLoader` Zie Een mediabron [laden met MediaPlayerItemLoader](../../../tvsdk-3x-android-prog/android-3x-content-playback-options-android2/mediaplayer-initialize-for-video/android-3x-media-resource-mediaplayeritemloader.md)voor meer informatie.
+   * `MediaPlayerItemLoader` Zie Een mediabron  [laden met MediaPlayerItemLoader](../../../tvsdk-3x-android-prog/android-3x-content-playback-options-android2/mediaplayer-initialize-for-video/android-3x-media-resource-mediaplayeritemloader.md) voor meer informatie.
 
    >[!IMPORTANT]
    >
