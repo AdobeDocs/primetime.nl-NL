@@ -1,18 +1,21 @@
 ---
-description: U kunt advertenties in uw VOD- en live/lineaire inhoud invoegen met de Adobe Primetime- en beslissingsinterface.
-seo-description: U kunt advertenties in uw VOD- en live/lineaire inhoud invoegen met de Adobe Primetime- en beslissingsinterface.
+description: U kunt advertenties in uw VOD en levende/lineaire inhoud opnemen door Adobe Primetime en besluitvormingsinterface te gebruiken.
+seo-description: U kunt advertenties in uw VOD en levende/lineaire inhoud opnemen door Adobe Primetime en besluitvormingsinterface te gebruiken.
 seo-title: Reclamevereisten
 title: Reclamevereisten
 uuid: 734e6fc1-9343-4a5c-86a9-2a6d8e2b9acc
 translation-type: tm+mt
 source-git-commit: 040655d8ba5f91c98ed0584c08db226ffe1e0f4e
+workflow-type: tm+mt
+source-wordcount: '134'
+ht-degree: 0%
 
 ---
 
 
 # Reclamevereisten{#advertising-requirements}
 
-U kunt advertenties in uw VOD- en live/lineaire inhoud invoegen met de Adobe Primetime- en beslissingsinterface.
+U kunt advertenties in uw VOD en levende/lineaire inhoud opnemen door Adobe Primetime en besluitvormingsinterface te gebruiken.
 
 <!--<a id="section_4889E0ED7A4241D98E61AD6C846B84B6"></a>-->
 
