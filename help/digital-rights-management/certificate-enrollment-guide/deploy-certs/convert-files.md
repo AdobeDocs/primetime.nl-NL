@@ -4,6 +4,9 @@ title: Bestanden converteren
 uuid: e17ee003-5ac2-4bb8-83b7-81ee8fa9ee46
 translation-type: tm+mt
 source-git-commit: b4b50471ab0ba98329862322a61bf73aa9e471d5
+workflow-type: tm+mt
+source-wordcount: '173'
+ht-degree: 0%
 
 ---
 
@@ -44,7 +47,7 @@ Met behulp van een hulpprogramma zoals OpenSSL en de persoonlijke sleutel genere
 
    >[!NOTE]
    >
-   >Hoewel niet vereist, raadt Adobe u aan verschillende wachtwoorden te gebruiken voor de persoonlijke sleutel (private_key_password) en de PFX (pfx_password).
+   >Hoewel niet vereist, raadt Adobe aan verschillende wachtwoorden te gebruiken voor de persoonlijke sleutel (private_key_password) en de PFX (pfx_password).
 
    Dit definitieve PEM-bestand bevat alleen uw certificaat.
 
@@ -58,5 +61,5 @@ Met behulp van een hulpprogramma zoals OpenSSL en de persoonlijke sleutel genere
 
    >[!NOTE]
    >
-   >DER-bestanden zijn alleen vereist voor het HTTP Dynamic Streaming-pakket.
+   >DER-bestanden zijn alleen vereist voor het HTTP Dynamic Streaming-verpakkingshulpprogramma.
 
