@@ -6,6 +6,9 @@ title: Toevoeging en overname van advertenties voor VOD
 uuid: 33f7aad5-fc4f-459d-8c29-01ba1353dfcc
 translation-type: tm+mt
 source-git-commit: 040655d8ba5f91c98ed0584c08db226ffe1e0f4e
+workflow-type: tm+mt
+source-wordcount: '719'
+ht-degree: 0%
 
 ---
 
@@ -14,7 +17,7 @@ source-git-commit: 040655d8ba5f91c98ed0584c08db226ffe1e0f4e
 
 Het ad-invoegproces (VOD, Video on-demand) bestaat uit de fasen voor het omzetten, invoegen en toevoegen van de advertentie. Voor het bijhouden van advertenties moet Browser-TVSDK een externe trackingserver informeren over de voortgang van het afspelen van elke advertentie. Wanneer zich onverwachte situaties voordoen, neemt de Commissie passende maatregelen.
 
-## Adverteringsfase {#section_F562CD6D0EF04AA9A0A3C0176A4EC340}
+## Adverterende fase {#section_F562CD6D0EF04AA9A0A3C0176A4EC340}
 
 Browser TVSDK neemt contact op met een advertentieservice, zoals Adobe Primetime en besluitvorming, en probeert het primaire afspeellijstbestand te verkrijgen dat overeenkomt met de videostream voor de advertentie. Tijdens de ad-resolving fase, brengt Browser TVSDK een vraag van HTTP aan de verre ad-leveringsserver en ontleedt de reactie van de server.
 
@@ -23,9 +26,9 @@ Browser TVSDK ondersteunt de volgende typen advertentieproviders:
 * Metagegevens en provider
 
    De advertentiegegevens worden gecodeerd in JSON-bestanden zonder opmaak.
-* Adobe Primetime en beslissings- en provider
+* Adobe Primetime en aanbieder van beslissingen en beslissingen
 
-   Browser TVSDK verzendt een verzoek, met inbegrip van een reeks richtingsparameters en een element identificatienummer, naar de Adobe Primetime en beslissingsbackend server. Adobe Primetime en besluitvorming reageren op een SMIL-document (synchronized multimedia integration language) dat de vereiste advertentietekst bevat.
+   Browser TVSDK verzendt een verzoek, met inbegrip van een reeks richtingsparameters en een activa identificatienummer, naar de Adobe Primetime en beslissingsbackend server. Adobe Primetime en besluitvorming reageren op een SMIL-document (synchronized multimedia integration language) dat de vereiste advertentietekst bevat.
 
    Één van de volgende failoversituaties kan tijdens deze fase voorkomen:
 
@@ -35,7 +38,7 @@ Browser TVSDK ondersteunt de volgende typen advertentieproviders:
       Dit kan gebeuren omdat, bijvoorbeeld, het ontleden van de binnenkomende gegevens ontbrak.
    Browser TVSDK geeft een waarschuwingsbericht over de fout weer en gaat door met de verwerking.
 
-## Ad-invoegfase {#section_88A0E4FA12394717A9D85689BD11D59F}
+## Advertentiefase {#section_88A0E4FA12394717A9D85689BD11D59F}
 
 Browser-TVSDK voegt de alternatieve inhoud (advertenties) in de tijdlijn die overeenkomt met de hoofdinhoud.
 
