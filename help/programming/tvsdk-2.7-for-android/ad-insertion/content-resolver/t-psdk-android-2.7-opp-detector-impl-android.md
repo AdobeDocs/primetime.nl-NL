@@ -6,15 +6,18 @@ title: Een aangepaste opportuniteitsgenerator implementeren
 uuid: 93d8253f-10f9-4950-a273-28975cb69caa
 translation-type: tm+mt
 source-git-commit: 0eaf0e7e7e61d596a51d1c9c837ad072d703c6a7
+workflow-type: tm+mt
+source-wordcount: '117'
+ht-degree: 3%
 
 ---
 
 
-# Een aangepaste opportuniteitsgenerator implementeren {#implement-a-custom-opportunity-generator}
+# Een aangepaste opportuniteitsgenerator {#implement-a-custom-opportunity-generator} implementeren
 
 U kunt uw eigen opportuniteitsgenerators uitvoeren door de klasse OpportunityGenerator te implementeren.
 
-1. Voer uw douane uit `ContentFactory` door de `ContentFactory` interface uit te voeren en met voeten te treden `retrieveGenerators`.
+1. Implementeer uw aangepaste `ContentFactory` door de `ContentFactory`-interface te implementeren en `retrieveGenerators` te overschrijven.
 
    Bijvoorbeeld:
 
@@ -30,7 +33,7 @@ U kunt uw eigen opportuniteitsgenerators uitvoeren door de klasse OpportunityGen
    }
    ```
 
-1. Registreer de `ContentFactory` gegevens bij de `MediaPlayer`.
+1. Registreer `ContentFactory` aan `MediaPlayer`.
 
    Bijvoorbeeld:
 
@@ -47,14 +50,14 @@ U kunt uw eigen opportuniteitsgenerators uitvoeren door de klasse OpportunityGen
    itemLoader.load(resource, id, config);
    ```
 
-1. Maak een aangepaste opportuniteitsgeneratorklasse die de `OpportunityGenerator` klasse implementeert.
+1. Creeer een klasse van de de generator van de douanekans die de `OpportunityGenerator` klasse uitvoert.
 
    ```java
    public class CustomOpportunityGenerator implements OpportunityGenerator  
    {...}
    ```
 
-   1. In de generator van de douanemogelijkheid, treedt met voeten `doConfigure`, `doUpdate` en `doCleanup`:
+   1. Overschrijf `doConfigure`, `doUpdate` en `doCleanup` in de aangepaste opportuniteitsgenerator:
 
       ```java
       @Override 
