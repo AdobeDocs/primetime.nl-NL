@@ -11,7 +11,7 @@ ht-degree: 0%
 ---
 
 
-# Overzicht - De verwijzingsimplementaties gebruiken {#overview-using-the-reference-implementations}
+# Overzicht - Gebruikend de verwijzingsimplementaties {#overview-using-the-reference-implementations}
 
 Het product van de Toegang van Adobe komt met een verwijzingsimplementatie voor de volgende componenten:
 
