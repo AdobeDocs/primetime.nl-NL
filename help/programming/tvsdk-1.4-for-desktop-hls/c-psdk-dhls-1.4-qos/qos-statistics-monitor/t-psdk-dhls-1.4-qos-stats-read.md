@@ -6,20 +6,23 @@ title: De playback van QOS, het bufferen, en apparatenstatistieken lezen
 uuid: 5ee631fc-cd6f-4f35-8621-2ffdc51a57c7
 translation-type: tm+mt
 source-git-commit: 040655d8ba5f91c98ed0584c08db226ffe1e0f4e
+workflow-type: tm+mt
+source-wordcount: '141'
+ht-degree: 1%
 
 ---
 
 
-# De playback van QOS, het bufferen, en apparatenstatistieken lezen{#read-qos-playback-buffering-and-device-statistics}
+# De playback van QOS, het bufferen, en apparatenstatistieken{#read-qos-playback-buffering-and-device-statistics} lezen
 
 U kunt playback, het als buffer optreden voor, en apparatenstatistieken van de klasse lezen QOSProvider.
 
-De `QOSProvider` klasse biedt diverse statistieken, waaronder informatie over buffering, bitsnelheden, framesnelheden, tijdgegevens enzovoort.
+De klasse `QOSProvider` verstrekt diverse statistieken, met inbegrip van informatie over het als buffer optreden voor, beetjetarieven, kadertarieven, tijdgegevens, etc.
 
 Het biedt ook informatie over het apparaat, zoals de fabrikant, het model, het besturingssysteem, de SDK-versie en schermgrootte/dichtheid.
 
 1. Instantiëren van een mediaspeler.
-1. Maak een `QOSProvider` object en koppel dit aan de mediaspeler.
+1. Maak een `QOSProvider`-object en koppel dit aan de mediaspeler.
 
    ```
    // Create Media Player. 
@@ -29,7 +32,7 @@ Het biedt ook informatie over het apparaat, zoals de fabrikant, het model, het b
 
 1. (Optioneel) Lees de afspeelstatistieken.
 
-   Één oplossing om playbackstatistieken te lezen is een tijdopnemer te hebben, die periodiek de nieuwe waarden QoS van `QOSProvider`. haalt Bijvoorbeeld:
+   Één oplossing om playbackstatistieken te lezen moet een tijdopnemer hebben, die periodiek de nieuwe waarden QoS van `QOSProvider` haalt. Bijvoorbeeld:
 
    ```
    var qosTimer:Timer = new Timer(1000); // every 1 second  
