@@ -6,6 +6,9 @@ title: ID3-tags
 uuid: 3fa199cd-668d-4d26-928f-074b6114b84c
 translation-type: tm+mt
 source-git-commit: 0eaf0e7e7e61d596a51d1c9c837ad072d703c6a7
+workflow-type: tm+mt
+source-wordcount: '283'
+ht-degree: 0%
 
 ---
 
@@ -23,13 +26,13 @@ Wanneer TVSDK ID3-metagegevens detecteert, wordt een melding met de volgende geg
 * TYPE = ID3
 * NAME = ID3
 
-1. Implementeer een gebeurtenislistener voor `MediaPlayer.TimedMetadataEventListener#onTimedMetadata(TimeMetadata timeMetadata)` en registreer deze bij het `MediaPlayer` object.
+1. Implementeer een gebeurtenislistener voor `MediaPlayer.TimedMetadataEventListener#onTimedMetadata(TimeMetadata timeMetadata)` en registreer deze bij het object `MediaPlayer`.
 
    TVSDK roept deze listener aan wanneer deze `ID3` metagegevens detecteert.
 
    >[!TIP]
    >
-   >Aangepaste cues en cues gebruiken dezelfde `onTimedMetadata` gebeurtenis om de detectie van een nieuwe tag aan te geven. Dit mag geen verwarring veroorzaken omdat aangepaste ad-cues worden gedetecteerd op manifestniveau en ID3-tags zijn ingesloten in de stream. Zie [Aangepaste tags](../../tvsdk-2.7-for-android/ad-insertion/custom-tags-configure/c-psdk-android-2.7-custom-tags-configure.md)voor meer informatie.
+   >Aangepaste cues en cues gebruiken dezelfde gebeurtenis `onTimedMetadata` om de detectie van een nieuwe tag aan te geven. Dit mag geen verwarring veroorzaken omdat aangepaste ad-cues worden gedetecteerd op manifestniveau en ID3-tags zijn ingesloten in de stream. Zie [Aangepaste tags](../../tvsdk-2.7-for-android/ad-insertion/custom-tags-configure/c-psdk-android-2.7-custom-tags-configure.md) voor meer informatie.
 
 
 1. Haal de metagegevens op.
