@@ -6,6 +6,9 @@ title: Afspelen en failover
 uuid: 5d75e55d-9c01-4a36-9bdf-891289821c6b
 translation-type: tm+mt
 source-git-commit: 592245f5a7186d18dabbb5a98a468cbed7354aed
+workflow-type: tm+mt
+source-wordcount: '496'
+ht-degree: 0%
 
 ---
 
@@ -22,7 +25,7 @@ Voor live en VOD media, begint Browser TVSDK playback door playlist te downloade
 
 Browser TVSDK selecteert snel de afspeellijst met hoge bitsnelheid en de bijbehorende media en gaat door met het downloaden.
 
-## failover van afspeellijst ontbreekt {#section_81A5822C108449E1A0E94A6E25DE9E8E}
+## failover van afspeellijst {#section_81A5822C108449E1A0E94A6E25DE9E8E} ontbreekt
 
 Wanneer een volledige afspeellijst ontbreekt, bijvoorbeeld, wanneer het M3U8-bestand dat in een manifestbestand op hoofdniveau is opgegeven niet wordt gedownload, probeert Browser-TVSDK te herstellen. Als deze niet kan worden hersteld, bepaalt uw toepassing de volgende stap.
 
