@@ -15,7 +15,7 @@ ht-degree: 0%
 
 Hiermee wordt de versie van de Primetime- of Flash-runtime opgegeven die geen toegang heeft tot inhoud. Geef de beperkte runtime (Flash Player, AIR of iOS), het platform en de versie op.
 
-Voorbeeld van gebruik: Net als bij de DRM Client lijst van afgewezen personen kan de nieuwste versie van de runtimes van Flash Player, AIR of iOS worden opgegeven als de minimale versie die vereist is voor het aanschaffen van licenties en het afspelen van inhoud.
+Voorbeeld van gebruik: Net als bij de DRM Client lijst van afgewezen personen kan de nieuwste versie van de runtimes Flash Player, AIR of iOS worden opgegeven als de minimale versie die vereist is voor het aanschaffen van licenties en het afspelen van inhoud.
 
 Naast de volgende kenmerken die worden ondersteund voor DRM-clientversies, kan de runtime van de toepassing worden geïdentificeerd:
 
