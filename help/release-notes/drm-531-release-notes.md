@@ -9,6 +9,9 @@ topic-tags: release-notes
 products: SG_PRIMETIME
 translation-type: tm+mt
 source-git-commit: e644e8497e118e2d03e72bef727c4ce1455d68d6
+workflow-type: tm+mt
+source-wordcount: '543'
+ht-degree: 0%
 
 ---
 
@@ -19,9 +22,9 @@ In de Opmerkingen bij de release DRM 5.3.1 worden de nieuwe functies en de beken
 
 ## Nieuwe functies in versie 5.3 {#new-features}
 
-* **Beveiligd stoppen - U kunt opgeven of het afspelen wordt gestopt of voortgezet aan het einde van een afspeelvenster.**
+* **Beveiligd stoppen -** U kunt opgeven of het afspelen wordt gestopt of voortgezet aan het einde van een afspeelvenster.
 * **RBOP (Resolution Based Output Protection) -** U kunt de uitvoerbeperkingen opgeven op basis van pixelresoluties.
-* **CDM Gating -** Adobe heeft de licentieserver voor Reference Implementation die is meegeleverd bij de Adobe Primetime DRM (voorheen Adobe Access DRM) Java SDK bijgewerkt om alle DRM-protocolberichten te kunnen gebruiken op één URL-eindpunt. Deze consolidatie van HTTP URL-methoden is nodig om te voldoen aan de HTML5 EME-specificatie (Encrypted Media Extension) die op zijn beurt moet worden geïmplementeerd door DRM-leveranciers van CDM (Content Decryption Module). Eerder waren dit de enige URL-eindpunten die werden weergegeven door de licentieserver voor de implementatie van verwijzingen:
+* **CDM Gating -** Om HTML5 te ondersteunen heeft Adobe de Reference Implementation-licentieserver bijgewerkt die is opgenomen in de Adobe Primetime DRM (voorheen Adobe Access DRM) Java SDK om alle DRM-protocolberichten te kunnen gebruiken op één URL-eindpunt. Deze consolidatie van HTTP URL-methoden is nodig om te voldoen aan de HTML5 EME-specificatie (Encrypted Media Extension) die op zijn beurt moet worden geïmplementeerd door DRM-leveranciers van CDM (Content Decryption Module). Eerder waren dit de enige URL-eindpunten die werden weergegeven door de licentieserver voor de implementatie van verwijzingen:
 
    * /flashaccess/i15n/v3 (Individualisatie)
    * /flashaccess/license/v5 (Licentieverzoek)
@@ -36,9 +39,9 @@ Deze wijziging is achterwaarts compatibel met niet-CDM-platforms, zoals Flash Pl
 
 ## Bekende problemen in versie 5.3 {#known-issues}
 
-* `Hasher.bat (flashaccess-hasher.jar)` Hiermee geeft u logberichten door aan `flashaccess-global.log.`U moet ervoor zorgen dat het `flashaccess-global.log` bestand zich in dezelfde map met Hasher.bat bevindt.
+* `Hasher.bat (flashaccess-hasher.jar)` output logboekberichten aan  `flashaccess-global.log.`U moet ervoor zorgen dat het  `flashaccess-global.log` dossier in de zelfde folder met Hasher.bat is.
 
-* De output van sommige `toJSON()`vraag keert terug `Strings` die niet volledig JSON volgzaam of volledig volgzaam op een stand-alone manier (d.w.z., zonder samenstelling van structuren JSON) zijn.
+* De output van sommige `toJSON()`vraag keert `Strings` terug die niet volledig JSON volgzaam of volledig volgzaam op een stand-alone manier (d.w.z., zonder samenstelling van structuren JSON) zijn.
 
 * Xbox key-server accepteert belangrijke aanvragen met een versiewaarde die niet gelijk is aan 1.
 
@@ -55,4 +58,4 @@ Verschillende klassen implementeren een toJSON()-methode die een JSON-compatibel
 
 ## Nuttige bronnen {#helpful-resources}
 
-* Zie de volledige Help-documentatie op de pagina [Adobe Primetime Learn &amp; Support](https://helpx.adobe.com/support/primetime.html) .
+* Zie de volledige Help-documentatie op de pagina [Adobe Primetime Learn &amp; Support](https://helpx.adobe.com/support/primetime.html).
