@@ -5,6 +5,9 @@ seo-title: Offline afspelen met Android
 title: Offline afspelen met Android
 translation-type: tm+mt
 source-git-commit: bc35da8b258056809ceaf18e33bed631047bc81b
+workflow-type: tm+mt
+source-wordcount: '110'
+ht-degree: 0%
 
 ---
 
@@ -20,7 +23,7 @@ boolean NetworkConfiguration::getOfflinePlayback()
 
 U kunt deze instelling inschakelen en de netwerkconnectiviteit negeren.
 
-Instellen `com.adobe.mediacore.system.NetworkConfiguration::setOfflinePlayback` op true. De standaardwaarde voor een Booleaanse waarde is false.
+Stel `com.adobe.mediacore.system.NetworkConfiguration::setOfflinePlayback` in op true. De standaardwaarde voor een Booleaanse waarde is false.
 
 ```
 // example of NetworkConfiguration
