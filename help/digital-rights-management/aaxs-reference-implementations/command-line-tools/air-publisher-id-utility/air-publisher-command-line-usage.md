@@ -11,7 +11,7 @@ ht-degree: 0%
 ---
 
 
-# Gebruik van opdrachtregels {#command-line-usage}
+# Gebruik van opdrachtregel {#command-line-usage}
 
 Gebruik de volgende syntaxis om het gereedschap uit te voeren:
 
@@ -29,11 +29,11 @@ java -jar AdobePublisherIDUtility.jar
 ```
 
 * 
-   * `signaturefile`* geeft het pad aan naar het bestand signatures.xml van de AIR-toepassing in de [!DNL META-INF] map met toepassingen.
+   * `signaturefile`* geeft het pad aan naar het bestand signatures.xml van de AIR-toepassing in de  [!DNL META-INF] map met toepassingen.
 
 * `signingcert` geeft het certificaat aan waarmee de AIR-toepassing wordt ondertekend
 
 >[!NOTE]
 >
->Als u de uitgevers-id voor een iOS-toepassing wilt bepalen, gebruikt u de `-s` optie en geeft u het certificaat op waarmee de iOS-toepassing wordt ondertekend. ***Adobe Primetime is vereist voor het maken van iOS-toepassingen die met Access beveiligde inhoud*** kunnen afspelen.
+>Als u de uitgevers-id voor een iOS-toepassing wilt bepalen, gebruikt u de optie `-s` en geeft u het certificaat op waarmee de iOS-toepassing wordt ondertekend. ***Adobe Primetime is vereist voor het maken van iOS-toepassingen waarmee met Access beveiligde inhoud*** kan worden afgespeeld.
 
