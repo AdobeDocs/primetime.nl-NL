@@ -46,7 +46,7 @@ De klasse biedt de volgende elementen:
   <tr> 
    <td colname="col1"><span class="codeph"> name</span> </td> 
    <td colname="col02"> String </td> 
-   <td colname="col2">De naam van de getimede metagegevens. Als het type <span class="codeph"> TAG</span>is, vertegenwoordigt de waarde de naam van het actiepunt/de tag. Als het type <span class="codeph"> ID3</span>is, is het null. </td> 
+   <td colname="col2">De naam van de getimede metagegevens. Wanneer het type <span class="codeph"> TAG</span> is, vertegenwoordigt de waarde de naam van het actiepunt/de tag. Als het type <span class="codeph"> ID3</span> is, is het ongeldig. </td> 
   </tr> 
   <tr> 
    <td colname="col1"><span class="codeph"> tijd</span> </td> 
