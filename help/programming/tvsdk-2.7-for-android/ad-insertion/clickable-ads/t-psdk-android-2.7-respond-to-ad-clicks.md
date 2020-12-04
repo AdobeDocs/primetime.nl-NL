@@ -6,6 +6,9 @@ title: Reageren op klikken op advertenties
 uuid: 58efaba5-d0f6-4ddd-9628-6bc065cc95d8
 translation-type: tm+mt
 source-git-commit: 812d04037c3b18f8d8cdd0d18430c686c3eee1ff
+workflow-type: tm+mt
+source-wordcount: '357'
+ht-degree: 0%
 
 ---
 
@@ -17,13 +20,13 @@ TVSDK biedt u informatie zodat u op doorklikadvertenties kunt werken. Terwijl u 
 Voor TVSDK voor Android kan alleen op lineaire advertenties worden geklikt.
 Wanneer een gebruiker op een advertentie of een verwante knop klikt, moet de toepassing reageren. TVSDK biedt u informatie over de doel-URL voor de klik.
 
-1. Registreer u om een gebeurtenislistener voor TVSDK in te stellen en de doorklikgegevens op te geven `AdClickedEventListener.onAdClicked`.
+1. Registreer `AdClickedEventListener.onAdClicked` om een gebeurtenislistener voor TVSDK in te stellen en de doorklikinformatie te verstrekken.
 
    Wanneer een gebruiker op een advertentie of een verwante knop klikt, verzendt TVSDK dit bericht, inclusief informatie over de bestemming voor de klik.
 1. Gebruikersinteracties controleren op klikbare advertenties.
-1. Als de gebruiker op de advertentie of knop klikt om TVSDK op de hoogte te brengen, roept u `notifyClick` de `MediaPlayerView`.
-1. Luister naar de `onAdClick(AdClickEvent event)` gebeurtenis van TVSDK.
-1. Als u de doorklikURL en verwante informatie wilt ophalen, gebruikt u de methoden getter voor de `AdClickEvent` instantie.
+1. Wanneer de gebruiker de advertentie of knop aanraakt of erop klikt, om TVSDK op de hoogte te brengen, roept u `notifyClick` op `MediaPlayerView`.
+1. Luister naar de `onAdClick(AdClickEvent event)`-gebeurtenis van TVSDK.
+1. Als u de doorklikURL en verwante informatie wilt ophalen, gebruikt u de methoden getter voor de instantie `AdClickEvent`.
 1. De video pauzeren.
 
    Zie Het pauzeren en hervatten van het afspelen voor meer informatie over het pauzeren van de video.
