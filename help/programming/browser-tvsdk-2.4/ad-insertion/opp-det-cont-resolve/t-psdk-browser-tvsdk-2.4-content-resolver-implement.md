@@ -6,11 +6,14 @@ title: Een aangepaste contentoplosser implementeren
 uuid: cf85dd90-242e-4f9e-9785-158ca0fc9465
 translation-type: tm+mt
 source-git-commit: 040655d8ba5f91c98ed0584c08db226ffe1e0f4e
+workflow-type: tm+mt
+source-wordcount: '208'
+ht-degree: 0%
 
 ---
 
 
-# Een aangepaste contentoplosser implementeren{#implement-a-custom-content-resolver}
+# Een aangepaste inhoudsoplosser{#implement-a-custom-content-resolver} implementeren
 
 U kunt uw eigen inhoudsoplossers implementeren op basis van de standaardoplossers.
 
@@ -18,11 +21,11 @@ Wanneer Browser TVSDK een nieuwe kans ontdekt, herhaalt het door de geregistreer
 
 De volgende informatie onthouden:
 
-* De inhoudoplosser roept `client.process` op om op te geven welke tijdlijnbewerking TVSDK moet uitvoeren.
+* De inhoudoplosser roept `client.process` aan om op te geven welke tijdlijnbewerking TVSDK moet uitvoeren.
 
    De bewerking is doorgaans een plaatsing van een advertentie-einde.
 
-* De inhoudoplosser roept aan `client.notifyCompleted` als het oplossend proces succesvol is of `client.notifyFailed` als het proces ontbreekt.
+* De inhoudoplosser roept `client.notifyCompleted` aan als het oplossend proces succesvol is of `client.notifyFailed` als het proces ontbreekt.
 
 1. Maak een aangepaste opportuniteitsoplosser.
 
