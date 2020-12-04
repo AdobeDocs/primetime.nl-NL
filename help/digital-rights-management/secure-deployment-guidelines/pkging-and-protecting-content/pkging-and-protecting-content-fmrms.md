@@ -1,16 +1,19 @@
 ---
 description: Flash Media Rights Management Server 1.x en Adobe Primetime DRM gebruiken verschillende metagegevens voor het verpakken van inhoud en het aanvragen van licenties. Voor Primetime DRM om FMRMS versie 1.x-inhoud te gebruiken, moeten de metagegevens worden omgezet.
 seo-description: Flash Media Rights Management Server 1.x en Adobe Primetime DRM gebruiken verschillende metagegevens voor het verpakken van inhoud en het aanvragen van licenties. Voor Primetime DRM om FMRMS versie 1.x-inhoud te gebruiken, moeten de metagegevens worden omgezet.
-seo-title: Compatibiliteit met Flash Media Rights Management Server 1.x garanderen
-title: Compatibiliteit met Flash Media Rights Management Server 1.x garanderen
+seo-title: Compatibiliteit met Flash Media Rights Management Server 1.x waarborgen
+title: Compatibiliteit met Flash Media Rights Management Server 1.x waarborgen
 uuid: dd70941e-9015-4fb0-b265-557b6252e051
 translation-type: tm+mt
 source-git-commit: 29bc8323460d9be0fce66cbea7c6fce46df20d61
+workflow-type: tm+mt
+source-wordcount: '405'
+ht-degree: 0%
 
 ---
 
 
-# Compatibiliteit met Flash Media Rights Management Server 1.x garanderen {#ensuring-compatibility-with-flash-media-rights-management-server-x}
+# Compatibiliteit met Flash Media Rights Management Server 1.x {#ensuring-compatibility-with-flash-media-rights-management-server-x} waarborgen
 
 Flash Media Rights Management Server 1.x en Adobe Primetime DRM gebruiken verschillende metagegevens voor het verpakken van inhoud en het aanvragen van licenties. Voor Primetime DRM om FMRMS versie 1.x-inhoud te gebruiken, moeten de metagegevens worden omgezet.
 
@@ -27,6 +30,6 @@ De Primetime DRM SDK ondersteunt de volgende opties voor de conversie van metage
    >
    >De DRM 1.x-metagegevens van Primetime zijn niet inclusief de CEK.
 
-   Voor het converteren van de metagegevens hebt u toegang nodig tot de Primetime DRM 1.x-coderingssleutels voor inhoud. Wanneer u migreert vanaf Flash Media Rights Management Server 1.x, kunt u de coderingssleutels voor inhoud blijven opslaan in de LiveCycle ES-database of een aangepaste oplossing implementeren om de coderingssleutels voor inhoud veilig op een andere locatie op te slaan. Als u besluit de coderingssleutels voor inhoud op te slaan in de LiveCycle ES-database, volgt u de aanbevelingen die worden beschreven in *Toegang tot gevoelige inhoud in de database* beschermen in **Verharden en Beveiliging voor LiveCycle® ES2**.
+   Voor het converteren van de metagegevens hebt u toegang nodig tot de Primetime DRM 1.x-coderingssleutels voor inhoud. Wanneer u van de Server 1.x van het Rights Management van de Media van de Flash Media migreert, kunt u de sleutels van de inhoudsencryptie in het gegevensbestand blijven opslaan van LiveCycle ES of een douaneoplossing uitvoeren om de sleutels van de inhoudsencryptie veilig op een andere plaats op te slaan. Als u besluit om de sleutels van de inhoudsencryptie in het gegevensbestand van LiveCycle ES op te slaan, volg de aanbevelingen die in *het Beschermen van toegang tot gevoelige inhoud in het gegevensbestand* in **het Verharden en Veiligheid voor LiveCycle® ES2** worden geschetst.
 
-Zie de Adobe Primetime DRM API&#39;s in de Adobe Primetime API-referenties op de Adobe [Primetime API-referenties voor meer informatie over compatibiliteit met inhoud die is verpakt met Flash Media Rights Management Server 1.x](https://help.adobe.com/en_US/primetime/api/index.html#api-Adobe_Primetime_API_References).
+Zie de Adobe Primetime DRM API&#39;s op [Adobe Primetime API References](https://help.adobe.com/en_US/primetime/api/index.html#api-Adobe_Primetime_API_References) voor meer informatie over het garanderen van compatibiliteit met inhoud die is verpakt met Flash Media Rights Management Server 1.x.
