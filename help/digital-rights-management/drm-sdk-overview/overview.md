@@ -4,6 +4,9 @@ title: Adobe Primetime DRM SDK - Een overzicht
 uuid: d6bdd66e-02b3-48b8-9355-60238b9115a4
 translation-type: tm+mt
 source-git-commit: 91cea7acb8127e02b82e5242b9ad6ab0d12ce0eb
+workflow-type: tm+mt
+source-wordcount: '170'
+ht-degree: 0%
 
 ---
 
@@ -12,7 +15,7 @@ source-git-commit: 91cea7acb8127e02b82e5242b9ad6ab0d12ce0eb
 
 >[!NOTE]
 >
->Adobe Primetime DRM werd voorheen Adobe Access genoemd en daarvoor was Flash Access.
+>Adobe Primetime DRM werd voorheen Adobe Access genoemd, en daarvoor Flash Access.
 
 Primetime DRM SDK is een platform voor digitaal rechtenbeheer waarmee video- en audio-inhoud kan worden beveiligd en veilig kan worden afgespeeld op apparaten van de consument.
 
@@ -21,6 +24,6 @@ Primetime DRM is een flexibel platform waarmee eigenaars van inhoud hun inhoud k
 Primetime DRM ondersteunt een groot aantal bedrijfsmodellen, waaronder video op aanvraag, verhuur en elektronische doorverkoop. U kunt inhoud die met Primetime DRM is beveiligd, op verschillende manieren distribueren, zoals:
 
 * Streaming via Adobe Flash Media Server-software
-* Progressief downloaden via HTTP met behulp van de HTTP Dynamic Streaming-technologie van Adobe
+* Het aanbieden van progressieve download via HTTP gebruikend Adobe HTTP Dynamic Streaming technologie
 * Downloads naar een inhoudsbibliotheek toestaan voor lokaal afspelen op het gemak van de consument
 
