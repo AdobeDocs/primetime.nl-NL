@@ -7,6 +7,9 @@ title: Prioriteitsregels
 uuid: 20dd0ded-06dd-427d-8dd3-79f9f8a3390c
 translation-type: tm+mt
 source-git-commit: 3fdae2b6babb578d2cacff970fd9c7b53ad2c5dc
+workflow-type: tm+mt
+source-wordcount: '178'
+ht-degree: 1%
 
 ---
 
@@ -35,7 +38,7 @@ De prioriteitsregel definieert de prioriteitsvolgorde van de ad-creatieven die w
    <td><span class="codeph"> item</span></td> 
    <td><span class="codeph"> String</span></td> 
    <td><span class="codeph"> host</span></td> 
-   <td>Momenteel wordt alleen de <span class="codeph"> host</span> ondersteund. Dit kenmerk moet aanwezig zijn wanneer kenmerken voor <span class="codeph"> overeenkomsten</span> en <span class="codeph"> waarden</span> worden gedefinieerd.</td> 
+   <td>Momenteel wordt alleen <span class="codeph"> host</span> ondersteund. Dit kenmerk moet aanwezig zijn wanneer <span class="codeph"> overeenkomsten</span> en <span class="codeph"> waarden</span> attributen worden bepaald.</td> 
   </tr> 
   <tr> 
    <td><span class="codeph"> matches</span></td> 
@@ -43,10 +46,10 @@ De prioriteitsregel definieert de prioriteitsvolgorde van de ad-creatieven die w
    <td><span class="codeph"> meerdere</span></td> 
    <td>Mogelijke waarden:
     <ul id="ul_tnf_2hx_hz"> 
-     <li><span class="codeph"> eq</span> - gelijk</li> 
+     <li><span class="codeph"> eq</span> - gelijk aan</li> 
      <li><span class="codeph"> ne</span> - niet gelijk aan</li> 
-     <li><span class="codeph"> co</span> - contains</li> 
-     <li><span class="codeph"> nc</span> - bevat niet</li> 
+     <li><span class="codeph"> co</span> -contains</li> 
+     <li><span class="codeph"> nc</span>  - niet bevat</li> 
      <li><span class="codeph"> sw</span> - begint met</li> 
      <li><span class="codeph"> nieuw</span> - eindigt met</li> 
     </ul></td> 
@@ -55,19 +58,19 @@ De prioriteitsregel definieert de prioriteitsvolgorde van de ad-creatieven die w
    <td><span class="codeph"> type</span></td> 
    <td><span class="codeph"> String</span></td> 
    <td><span class="codeph"> prioriteit</span></td> 
-   <td>De waarde moet altijd <span class="codeph"> prioriteit hebben</span></td> 
+   <td>De waarde moet altijd <span class="codeph"> prioriteit</span> zijn</td> 
   </tr> 
   <tr> 
-   <td><span class="codeph"> values</span></td> 
+   <td><span class="codeph"> waarden</span></td> 
    <td><span class="codeph"> Array</span></td> 
    <td></td> 
-   <td> <p>TVSDK gebruikt het kenmerk <span class="codeph"> match</span> op het <span class="codeph"> item</span> van de bron creatief en komt overeen met de waarden die in deze array zijn gedefinieerd</p> </td> 
+   <td> <p>TVSDK gebruikt het <span class="codeph">-kenmerk </span> op het <span class="codeph">-item</span> van de bron en past zich aan de waarden in deze array aan</p> </td> 
   </tr> 
   <tr> 
    <td><span class="codeph"> stream</span></td> 
    <td><span class="codeph"> String</span></td> 
    <td></td> 
-   <td> <p>Waarde kan leeg <span class="codeph"> of</span> <span class="codeph"> live zijn</span></p> </td> 
+   <td> <p>Waarde kan <span class="codeph"> vod</span> of <span class="codeph"> live</span> zijn</p> </td> 
   </tr> 
  </tbody> 
 </table>
