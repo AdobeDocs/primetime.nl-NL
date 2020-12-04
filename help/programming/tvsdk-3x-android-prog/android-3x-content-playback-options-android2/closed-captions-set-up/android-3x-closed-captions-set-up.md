@@ -6,6 +6,9 @@ title: Werken met gesloten bijschriften
 uuid: d7860de4-2881-4817-a4cc-5e7ab557a1db
 translation-type: tm+mt
 source-git-commit: bc35da8b258056809ceaf18e33bed631047bc81b
+workflow-type: tm+mt
+source-wordcount: '240'
+ht-degree: 0%
 
 ---
 
@@ -29,4 +32,4 @@ U kunt het volgende doen:
 * Schakel ondertiteling sluiten in (zichtbaar) of uit (niet zichtbaar) door de `MediaPlayer` interface te gebruiken.
 * Selecteer opmaakopties die bepalen hoe gesloten bijschriften worden gerenderd door de onderliggende video-engine.
 
-   Gebruik de `MediaPlayerItem` interface om indelingen zoals het lettertype of de lettertypekleur te selecteren.
+   Gebruik de `MediaPlayerItem` interface om formaten zoals de doopvont of doopvontkleur te selecteren.
