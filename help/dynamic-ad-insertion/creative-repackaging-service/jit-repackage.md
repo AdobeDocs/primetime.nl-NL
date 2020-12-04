@@ -6,6 +6,9 @@ title: Gedetailleerde workflows voor JIT-herverpakken
 uuid: 11b6eb3c-f6aa-4018-9b20-ab6f5910508b
 translation-type: tm+mt
 source-git-commit: 358c5b02d47f23a6adbc98e457e56c8220cae6e9
+workflow-type: tm+mt
+source-wordcount: '553'
+ht-degree: 0%
 
 ---
 
@@ -26,7 +29,7 @@ De workflow voor JIT-herverpakken aan de kant van de manifestserver ziet er als 
 
    >[!NOTE]
    >
-   >In een multi-CDN opstelling, gebruikt de manifestserver de `ptcdn` parameter in bootstrap URL om de server te identificeren CDN.
+   >In een multi-CDN opstelling, gebruikt de manifestserver `ptcdn` parameter in bootstrap URL om de server te identificeren CDN.
 
 1. De manifestserver controleert de reactie:
 
@@ -54,7 +57,7 @@ Een client die is gebaseerd op TVSDK of met vergelijkbare mogelijkheden, kan als
 
       >[!NOTE]
       >
-      >In een multi-CDN opstelling, gebruikt de manifestserver de `ptcdn` parameter in bootstrap URL om de server te identificeren CDN.
+      >In een multi-CDN opstelling, gebruikt de manifestserver `ptcdn` parameter in bootstrap URL om de server te identificeren CDN.
 
 1. De client controleert de reactie van de CDN-server.
 
