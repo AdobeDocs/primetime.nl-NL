@@ -19,9 +19,9 @@ De Primetime Cloud DRM Protection Kit wordt geleverd met een paar vooraf geconfi
 >
 >Alle beleidsregels moeten ANONYMOUS-verificatie gebruiken (niet Wachtwoord gebruikersnaam of Aangepast), ongeacht of de workflow Aangepaste controle/machtiging wordt gebruikt.
 
-Bij de Manager van het Beleid wordt inbegrepen is het [!DNL flashaccesstools.properties] configuratiedossier, dat is gewijzigd om slechts de configureerbare beleidsopties bloot te stellen die de Dienst van de Wolk DRM steunt. Als u beleidsopties instelt die niet worden ondersteund door de Primetime Cloud DRM-service, worden fouten met licentieverwervingen gegenereerd. Voor informatie over het gebruiken van de Manager van het Beleid Primetime DRM, verwijs naar: [Implementaties van primaire DRM-naslaggids: Beleidsbeheer](https://help.adobe.com/en_US/primetime/drm/5.3/reference_implementations/index.html#concept-DRM_Policy_Manager).
+Bij de Manager van het Beleid inbegrepen is het [!DNL flashaccesstools.properties] configuratiedossier, dat is gewijzigd om slechts de configureerbare beleidsopties bloot te stellen die de Dienst van de Wolk DRM van de Prijs steunt. Als u beleidsopties instelt die niet worden ondersteund door de Primetime Cloud DRM-service, worden fouten met licentieverwervingen gegenereerd. Voor informatie over het gebruiken van de Manager van het Beleid Primetime DRM, verwijs naar: [Primetime DRM Reference Implementations: Beleidsbeheer](https://help.adobe.com/en_US/primetime/drm/5.3/reference_implementations/index.html#concept-DRM_Policy_Manager).
 
-Als u een nieuw beleid wilt maken, werkt u het [!DNL flashaccesstools.properties] bestand naar wens bij en gebruikt u de opdracht:
+Als u een nieuw beleid wilt maken, werkt u het [!DNL flashaccesstools.properties]-bestand naar wens bij en gebruikt u vervolgens de opdracht:
 
 ```
 java -jar libs/AdobePolicyManager.jar new myPolicy.pol
@@ -29,9 +29,9 @@ java -jar libs/AdobePolicyManager.jar new myPolicy.pol
 
 ## Beleid dynamisch maken voor Aangepaste auth/Entitlement{#create-policies-dynamically-for-custom-auth-entitlement}
 
-Als u Primetime Cloud DRM Custom Authentication/Entitlement gebruikt en u wilt dynamisch een nieuw DRM-beleid maken voor elke licentieaanvraag (in plaats van beleidsregels uit een vooraf gegenereerde pool op te halen), raadt Adobe u aan de Primetime DRM Java SDK rechtstreeks te gebruiken. Het rechtstreeks gebruiken van de SDK van Java is sneller dan het [!DNL AdobePolicyManager.jar] hulpmiddel, dat automatisch het beleidsdossier aan schijf uitzet, die schijf I/O overheadkosten.
+Als u de Aangepaste verificatie/machtiging van Primetime Cloud DRM gebruikt en u wilt dynamisch een nieuw DRM-beleid maken voor elke licentieaanvraag (in plaats van beleid uit een vooraf gegenereerde pool op te halen), raadt Adobe u aan de Primetime DRM Java SDK rechtstreeks te gebruiken. Het rechtstreeks gebruiken van de SDK van Java is sneller dan het [!DNL AdobePolicyManager.jar] hulpmiddel, dat automatisch het beleidsdossier aan schijf, het veroorzaken van schijf I/O overheadkosten uitvoert.
 
-Voorbeeldcode met de Java SDK vindt u in de [!DNL /Primetime DRM PolicyManager/sampleCode/] map met de naam [!DNL CreatePolicy.java] en [!DNL CreatePolicyWithOutputProtection.java]. JavaDocs en documentatie voor de Java SDK vindt u in [Een overzicht van de Adobe Primetime DRM SDK](../../../digital-rights-management/drm-sdk-overview/overview.md)
+Voorbeeldcode met de Java SDK vindt u in de map [!DNL /Primetime DRM PolicyManager/sampleCode/] met de namen [!DNL CreatePolicy.java] en [!DNL CreatePolicyWithOutputProtection.java]. Javadocs en documentatie voor de Java SDK vindt u op [Een overzicht van de Adobe Primetime DRM SDK](../../../digital-rights-management/drm-sdk-overview/overview.md)
 
 Kopieer de .java-bestanden naar de map ../libs/ en voer deze uit om de voorbeelden te maken en uit te voeren:
 
