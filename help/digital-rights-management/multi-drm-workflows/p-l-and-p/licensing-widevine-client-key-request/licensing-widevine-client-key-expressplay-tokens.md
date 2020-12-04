@@ -6,6 +6,9 @@ title: Expressplaytokens
 uuid: 6103e1b2-127d-4758-a589-15f0f3c73db1
 translation-type: tm+mt
 source-git-commit: d0ba1f98b16f6350ae842ca2ce1261bf49dd8a66
+workflow-type: tm+mt
+source-wordcount: '152'
+ht-degree: 0%
 
 ---
 
@@ -25,7 +28,7 @@ token?customerAuthenticator=<your expressplay customer authenticator>
 &hdcpOutputControl=0
 ```
 
-De opslag-id van de inhoudscoderingssleutel of de CEKSID die aan de `kid` parameter wordt gegeven en de coderingssleutel voor de inhoud of de CEK die aan de `contentKey` parameter wordt gegeven, moeten overeenkomen met de opslag-id van de coderingssleutel voor de inhoud en de coderingssleutel voor de inhoud die voor het verpakken wordt gebruikt. De volgende tekst is een voorbeeld van de tokenserverreactie:
+De opslag-id van de inhoudscoderingssleutel of de CEKSID die aan de parameter `kid` wordt gegeven en de coderingssleutel voor inhoud of CEK die aan de parameter `contentKey` wordt gegeven, moeten overeenkomen met de opslag-id van de coderingssleutel voor inhoud en de coderingssleutel voor inhoud die voor het maken van pakketten wordt gebruikt. De volgende tekst is een voorbeeld van de tokenserverreactie:
 
 ```
 https://wv.service.expressplay.com/hms/wv/rights/
@@ -37,4 +40,4 @@ https://wv.service.expressplay.com/hms/wv/rights/
 U kunt dan
 
 * de geretourneerde URL en query gebruiken als de URL van de licentieserver, of
-* verwijder de query van de URL en geef de ExpressPlayToken afzonderlijk door als HTTP POST-header
+* neem uit de vraag van URL en geef in ExpressPlayToken afzonderlijk als kopbal van de POST van HTTP door
