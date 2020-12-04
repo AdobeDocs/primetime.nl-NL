@@ -6,15 +6,18 @@ title: Listeners toevoegen voor TimelineUpdatedEvent
 uuid: 7d742e15-5a55-4155-93a7-7b79f21c1472
 translation-type: tm+mt
 source-git-commit: 040655d8ba5f91c98ed0584c08db226ffe1e0f4e
+workflow-type: tm+mt
+source-wordcount: '62'
+ht-degree: 0%
 
 ---
 
 
-# Listeners toevoegen voor TimelineUpdatedEvent{#add-listeners-for-timelineupdatedevent}
+# Voeg luisteraars voor TimelineUpdatedEvent{#add-listeners-for-timelineupdatedevent} toe
 
 Registreer de juiste gebeurtenislisteners om meldingen over tijdlijnupdates te ontvangen.
 
-Telkens wanneer de tijdlijn wordt bijgewerkt, wordt het `MediaPlayer` verzonden `AdobePSDK.TimelineEvent` met tekst `AdobePSDK.PSDKEventType.TIMELINE_UPDATED`.
+Elke keer dat de tijdlijn wordt bijgewerkt, verzendt `MediaPlayer` `AdobePSDK.TimelineEvent` met type `AdobePSDK.PSDKEventType.TIMELINE_UPDATED`.
 1. Voer de aangewezen luisteraars uit.
 
    ```js
