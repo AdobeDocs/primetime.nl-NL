@@ -1,18 +1,21 @@
 ---
-description: U kunt advertenties in uw VOD- en live/lineaire inhoud invoegen met de Adobe Primetime- en beslissingsinterface. Primetime en besluitvorming werken samen met TVSDK om advertenties te identificeren en op te lossen en opgeloste advertenties in uw videostreams in te voegen.
-seo-description: U kunt advertenties in uw VOD- en live/lineaire inhoud invoegen met de Adobe Primetime- en beslissingsinterface. Primetime en besluitvorming werken samen met TVSDK om advertenties te identificeren en op te lossen en opgeloste advertenties in uw videostreams in te voegen.
+description: U kunt advertenties in uw VOD en levende/lineaire inhoud opnemen door Adobe Primetime en besluitvormingsinterface te gebruiken. Primetime en besluitvorming werken samen met TVSDK om advertenties te identificeren en op te lossen en opgeloste advertenties in uw videostreams in te voegen.
+seo-description: U kunt advertenties in uw VOD en levende/lineaire inhoud opnemen door Adobe Primetime en besluitvormingsinterface te gebruiken. Primetime en besluitvorming werken samen met TVSDK om advertenties te identificeren en op te lossen en opgeloste advertenties in uw videostreams in te voegen.
 seo-title: Reclamevereisten
 title: Reclamevereisten
 uuid: b68c8b1b-5fc1-4e6f-b640-9e9ad1ac61da
 translation-type: tm+mt
 source-git-commit: bc35da8b258056809ceaf18e33bed631047bc81b
+workflow-type: tm+mt
+source-wordcount: '173'
+ht-degree: 0%
 
 ---
 
 
-# Reclame en de eisen daarvan {#advertising-requirements}
+# Reclame en de vereisten {#advertising-requirements}
 
-U kunt advertenties in uw VOD- en live/lineaire inhoud invoegen met de Adobe Primetime- en beslissingsinterface. Primetime en besluitvorming werken samen met TVSDK om advertenties te identificeren en op te lossen en opgeloste advertenties in uw videostreams in te voegen.
+U kunt advertenties in uw VOD en levende/lineaire inhoud opnemen door Adobe Primetime en besluitvormingsinterface te gebruiken. Primetime en besluitvorming werken samen met TVSDK om advertenties te identificeren en op te lossen en opgeloste advertenties in uw videostreams in te voegen.
 
 <!--<a id="section_282A8000A8BF4860A24F0D3F1A19BC9E"></a>-->
 
