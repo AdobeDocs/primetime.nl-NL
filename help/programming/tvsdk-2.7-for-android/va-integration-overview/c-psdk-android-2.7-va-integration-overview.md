@@ -6,6 +6,9 @@ title: Videoanalyse
 uuid: 94e73128-532c-4981-abcb-2692d801c971
 translation-type: tm+mt
 source-git-commit: 0eaf0e7e7e61d596a51d1c9c837ad072d703c6a7
+workflow-type: tm+mt
+source-wordcount: '134'
+ht-degree: 0%
 
 ---
 
@@ -14,7 +17,7 @@ source-git-commit: 0eaf0e7e7e61d596a51d1c9c837ad072d703c6a7
 
 U kunt het videogebruik bijhouden door TVSDK te integreren met Adobe Analytics.
 
-Bij het bijhouden van video&#39;s in TVSDK wordt gebruik gemaakt van de service **Adobe Analytics Video Essentials** , die metrische gegevens over de videobetrokkenheid biedt, zoals videoweergaven, voltooide video en indrukkingen, de aan video bestede tijd, enzovoort. Neem voor meer informatie over deze service contact op met uw vertegenwoordiger van Adobe.
+Bij het bijhouden van video&#39;s in TVSDK wordt de service **Adobe Analytics Video Essentials** gebruikt. Deze service biedt meetgegevens voor videobetrokkenheid, zoals videoweergaven, voltooide video en indrukkingen, de tijd die aan video wordt besteed, enzovoort. Neem voor meer informatie over deze service contact op met uw Adobe-vertegenwoordiger.
 
 In de volgende procedure worden de stappen beschreven waarmee videotracering in de speler wordt geactiveerd:
 
@@ -28,5 +31,5 @@ In de volgende procedure worden de stappen beschreven waarmee videotracering in 
    * Metagegevensobject voor videoanalyse
    * Algemeen metagegevensobject
 
-1. U kunt videoverslagen op de server instellen met Adobe Analytics Admin Tools.
+1. Stel met Adobe Analytics Admin Tools videoanalytics in die rapporteren op de server.
 
