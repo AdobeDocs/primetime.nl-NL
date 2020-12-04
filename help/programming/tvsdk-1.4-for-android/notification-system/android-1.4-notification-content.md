@@ -6,21 +6,24 @@ title: Inhoud voor meldingen
 uuid: 89fb8f63-b0d5-45cd-bdad-348529fd07d0
 translation-type: tm+mt
 source-git-commit: 5908e5a3521966496aeec0ef730e4a704fddfb68
+workflow-type: tm+mt
+source-wordcount: '739'
+ht-degree: 0%
 
 ---
 
 
-# Inhoud voor meldingen {#notification-content}
+# Inhoud {#notification-content}
 
 MediaPlayerNotification-objecten bieden informatie over wijzigingen in spelerstatus, waarschuwingen en fouten. Fouten die het afspelen van de video stoppen, veroorzaken ook een wijziging in de status van de speler.
 
-Uw toepassing kan de melding- en statusgegevens ophalen. U kunt ook een registratiesysteem voor diagnostiek en validatie maken met behulp van de meldingsgegevens.
+Uw toepassing kan de melding- en statusinformatie ophalen. U kunt ook een registratiesysteem voor diagnostiek en validatie maken met behulp van de meldingsgegevens.
 
-U implementeert gebeurtenislisteners om gebeurtenissen vast te leggen en erop te reageren. Veel gebeurtenissen bieden `MediaPlayerNotification` statusmeldingen.
+U implementeert gebeurtenislisteners om gebeurtenissen vast te leggen en erop te reageren. Veel gebeurtenissen bieden statusmeldingen `MediaPlayerNotification`.
 
 `MediaPlayerNotification` geeft informatie over de status van de speler.
 
-TVSDK verstrekt een chronologische lijst van `MediaPlayerNotification` berichten. Elke melding bevat de volgende informatie:
+TVSDK bevat een chronologische lijst met `MediaPlayerNotification`-meldingen. Elke melding bevat de volgende informatie:
 
 * Tijdstempel
 * Diagnostische metagegevens die bestaan uit de volgende elementen:
@@ -28,9 +31,9 @@ TVSDK verstrekt een chronologische lijst van `MediaPlayerNotification` berichten
    * `type`: INFORMATIE, WAARSCHUWING of FOUT.
    * `code`: Een numerieke weergave van de kennisgeving.
    * `name`: Een door mensen leesbare beschrijving van de melding, zoals SEEK_ERROR
-   * `metadata`: Sleutel-waardeparen die relevante informatie over de kennisgeving bevatten. Een benoemde sleutel `URL` biedt bijvoorbeeld een waarde die een URL is die gerelateerd is aan het bericht.
+   * `metadata`: Sleutel-waardeparen die relevante informatie over de kennisgeving bevatten. Een sleutel met de naam `URL` levert bijvoorbeeld een waarde die een URL is die gerelateerd is aan het bericht.
 
-   * `innerNotification`: Een verwijzing naar een ander `MediaPlayerNotification` object dat rechtstreeks van invloed is op deze melding.
+   * `innerNotification`: Een verwijzing naar een ander  `MediaPlayerNotification` object dat rechtstreeks van invloed is op deze melding.
 
 U kunt deze informatie lokaal opslaan voor latere analyse of naar een externe server verzenden voor registratie en grafische weergave.
 
@@ -38,9 +41,9 @@ U kunt deze informatie lokaal opslaan voor latere analyse of naar een externe se
 
 U kunt luisteren naar meldingen en u kunt uw eigen meldingen toevoegen aan de berichtgeschiedenis.
 
-De kern van het meldingssysteem van de Speler Primetime is de `Notification` klasse, die een standalone bericht vertegenwoordigt.
+De kern van het Primetime Player meldingssysteem is de `Notification` klasse, die een standalone bericht vertegenwoordigt.
 
-De `NotificationHistory` klasse biedt een mechanisme voor het verzamelen van meldingen. Het slaat een logboek van bericht (NotificationHistoryItem) voorwerpen op die een inzameling van Meldingen vertegenwoordigt.
+De klasse `NotificationHistory` biedt een mechanisme voor het verzamelen van meldingen. Het slaat een logboek van bericht (NotificationHistoryItem) voorwerpen op die een inzameling van Meldingen vertegenwoordigt.
 
 Om meldingen te ontvangen:
 
@@ -48,11 +51,11 @@ Om meldingen te ontvangen:
 * Meldingen toevoegen aan de berichtgeschiedenis
 
 1. Luisteren naar statuswijzigingen.
-1. Implementeer de `MediaPlayer.PlaybackEventListener.onStateChanged` callback.
+1. Voer `MediaPlayer.PlaybackEventListener.onStateChanged` callback uit.
 1. TVSDK geeft twee parameters door aan de callback:
 
-   * Het nieuwe frame ( `MediaPlayer.PlayerState`)
-   * Een `MediaPlayerNotification` object
+   * De nieuwe status ( `MediaPlayer.PlayerState`)
+   * Een object `MediaPlayerNotification`
 
 ## Logboekregistratie en foutopsporing in realtime toevoegen {#add-real-time-logging-and-debugging}
 
@@ -78,7 +81,7 @@ Hier is een voorbeeld van hoe u meldingen kunt ophalen.
    De externe server kan de verschafte gegevens dan grafisch in real-time weergeven.
 1. Om het verlies van berichtgebeurtenissen te ontdekken, zoek hiaten in de opeenvolging van waarden van de gebeurtenisindex.
 
-   Elke meldingsgebeurtenis heeft een indexwaarde die automatisch wordt verhoogd door de `session.NotificationHistory` klasse.
+   Elke meldingsgebeurtenis heeft een indexwaarde die automatisch wordt verhoogd door de klasse `session.NotificationHistory`.
 
 ## ID3-tags {#id-tags}
 
@@ -95,13 +98,13 @@ Wanneer TVSDK ID3-metagegevens detecteert, wordt een melding met de volgende geg
 * NAME = niet aanwezig
 * ID = 0
 
-1. Implementeer een gebeurtenislistener voor `MediaPlayer.PlaybackEventListener#onTimedMetadata(TimeMetadata timeMetadata)` en registreer deze bij het `MediaPlayer` object.
+1. Implementeer een gebeurtenislistener voor `MediaPlayer.PlaybackEventListener#onTimedMetadata(TimeMetadata timeMetadata)` en registreer deze bij het object `MediaPlayer`.
 
    TVSDK roept deze listener aan wanneer deze ID3-metagegevens detecteert.
 
    >[!NOTE]
    >
-   >Aangepaste cues en cues gebruiken dezelfde `onTimedMetadata` gebeurtenis om de detectie van een nieuwe tag aan te geven. Dit mag geen verwarring veroorzaken omdat aangepaste ad-cues worden gedetecteerd op manifestniveau en ID3-tags zijn ingesloten in de stream. Voor meer informatie, zie douane-markeringen-vormen.
+   >Aangepaste cues en cues gebruiken dezelfde gebeurtenis `onTimedMetadata` om de detectie van een nieuwe tag aan te geven. Dit mag geen verwarring veroorzaken omdat aangepaste ad-cues worden gedetecteerd op manifestniveau en ID3-tags zijn ingesloten in de stream. Voor meer informatie, zie douane-markeringen-vormen.
 
 1. Haal de metagegevens op.
 
