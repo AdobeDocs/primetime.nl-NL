@@ -6,19 +6,22 @@ title: Inhoud voorbereiden
 uuid: edb633f0-b623-41ea-a52a-19017d45fb18
 translation-type: tm+mt
 source-git-commit: 29bc8323460d9be0fce66cbea7c6fce46df20d61
+workflow-type: tm+mt
+source-wordcount: '440'
+ht-degree: 0%
 
 ---
 
 
-# Inhoud voorbereiden{#content-preparation}
+# Inhoudsvoorbereiding{#content-preparation}
 
 Elk gebruik van Adobe Primetime DRM bestaat uit twee belangrijke stappen op verschillende punten van de workflow. De inhoud moet één keer per element worden voorbereid en dit leidt tot het maken van beveiligde inhoud. Inhoud aanschaffen wordt meerdere keren uitgevoerd, voor elke consument die dat beveiligde middel wil bekijken.
 
-Voordat u inhoud beschikbaar maakt voor distributie, moet u eerst de inhoud in uw video-indeling coderen, een of meer beleidsregels maken die gebruiksregels voor de inhoud opgeven en de inhoud verpakken met Adobe Primetime DRM SDK.
+Voordat u inhoud beschikbaar maakt voor distributie, moet u eerst de inhoud in uw video-indeling coderen, een of meer beleidsregels maken die gebruiksregels voor de inhoud opgeven en de inhoud verpakken met gebruik van Adobe Primetime DRM SDK.
 
 De stappen voor het coderen, verpakken en distribueren van inhoud zijn als volgt:
 
-1. Codeer de inhoud in uw gewenste video-indeling met behulp van coderingsgereedschappen die beschikbaar zijn bij Adobe of van derden.
+1. Codeer de inhoud in uw gewenste video-indeling met gebruik van coderingsgereedschappen die beschikbaar zijn bij Adobe of van derden.
 1. Beleid maken waarin de gebruiksregels worden gespecificeerd waaronder consumenten de inhoud kunnen bekijken.
 
    Een beleid is de container voor de regels en beperkingen die bepalen hoe, wanneer en waar de beschermde inhoud door consumenten kan worden bekeken.
@@ -33,5 +36,5 @@ De stappen voor het coderen, verpakken en distribueren van inhoud zijn als volgt
 
 1. De beschermde inhoud beschikbaar stellen voor distributie aan consumenten.
 
-   De beveiligde inhoud wordt doorgaans gedistribueerd via een inhoudsdistributienetwerk (CDN). De CDN kan elk mechanisme gebruiken dat door de clientruntime wordt ondersteund, zoals Flash Media Server, Adobe HTTP Dynamic Streaming voor streaming met meerdere bitsnelheden of een HTTP-webserver voor progressieve download.
+   De beveiligde inhoud wordt doorgaans gedistribueerd via een inhoudsdistributienetwerk (CDN). CDN kan om het even welk mechanisme gebruiken dat door cliëntruntime, zoals Flash Media Server, Adobe HTTP Dynamic Streaming voor veelvoudige bitrate het stromen, of een Server van het Web van HTTP voor progressieve download wordt gesteund.
 
