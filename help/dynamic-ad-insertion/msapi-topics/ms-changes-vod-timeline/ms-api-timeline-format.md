@@ -6,11 +6,14 @@ title: Tijdlijnindeling VOD
 uuid: 6daaf605-e5ee-48dc-a222-a5973b3d915a
 translation-type: tm+mt
 source-git-commit: 358c5b02d47f23a6adbc98e457e56c8220cae6e9
+workflow-type: tm+mt
+source-wordcount: '189'
+ht-degree: 0%
 
 ---
 
 
-# Tijdlijnindeling VOD {#vod-timeline-format}
+# Indeling VOD-tijdlijn {#vod-timeline-format}
 
 U kunt tijdlijnen voor en onderbrekingen in VOD-inhoud opgeven of overschrijven met behulp van een opgemaakte lijst met advertentie- en inhoudssegmenten, pods genoemd.
 
@@ -25,9 +28,12 @@ B,duration,maximum_number_of_ads,position
 ```
 
 De duur is in seconden, met nauwkeurigheid van 0,001 (milliseconden); Het aantal advertenties is een geheel getal. Positie is een van de volgende:
-* **n** Geen — geen ad* **p** Pre-roll — vóór de inhoud* **m** mid-roll — binnen de inhoud* **t** Post-roll — na de inhoud
+* **n** Geen — geen advertentie
+* **p** Pre-roll — vóór de inhoud
+* **m** Halve rol — binnen de inhoud
+* **t** Na de rol — na de inhoud
 
-Dit `B,60,2,p` is bijvoorbeeld een pauze van één minuut voor maximaal twee advertenties vóór de inhoud.
+`B,60,2,p` staat bijvoorbeeld voor een onderbreking van één minuut voor maximaal twee advertenties vóór de inhoud.
 
 ### Inhoudssegment - hoofdstuk
 
@@ -35,4 +41,4 @@ Dit `B,60,2,p` is bijvoorbeeld een pauze van één minuut voor maximaal twee adv
 C,duration,number_of_lots
 ```
 
-De duur is in seconden, met nauwkeurigheid van 0,001 (milliseconden); Het aantal partijen (inhoudsgedeelten) is een geheel getal. Dit is bijvoorbeeld `C,300,1` één sectie met vijf minuten inhoud.
+De duur is in seconden, met nauwkeurigheid van 0,001 (milliseconden); Het aantal partijen (inhoudsgedeelten) is een geheel getal. `C,300,1` vertegenwoordigt bijvoorbeeld één sectie van vijf minuten van inhoud.
