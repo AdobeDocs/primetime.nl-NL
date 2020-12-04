@@ -16,7 +16,7 @@ Opmerkingen bij de release van Primetime Ad Insertion 19.11.1 beschrijven nieuwe
 
 ## Nieuw in PTAI 19.11.1
 
-**Wanneer:** Maandag 4 november 2019 om 12.01 uur tot 13.00 uur OOSTEN
+**Wanneer:** maandag, 4 november 2019 om 12.01 uur &#39;s morgens tot 13.00 uur &#39;s morgens
 
 Onderhoudsupdates.
 
@@ -24,31 +24,31 @@ Onderhoudsupdates.
 
 ### Versie 19.10.2
 
-**Wanneer:** Donderdag 31 oktober 2019, 13.00 tot 3.00 uur Oost
+**Wanneer:** Donderdag, 31 oktober 2019, 13.00 uur tot 03.00 uur Oost
 
 Onderhoudsupdates.
 
 ### Versie 19.10.1
 
-**Wanneer:**  Dinsdag 22 oktober om 13.00 uur tot 20.00 uur OOSTENRIJK
+**Wanneer:**  Dinsdag, 22 oktober om 01:00 tot 2:00 uur OOSTEN
 
 Onderhoudsupdates.
 
 ### Versie 19.9.1
 
-**Wanneer:** Dinsdag 10 september 2019, 12.30 uur tot 2.00 uur Oosterse tijd
+**Wanneer:** Dinsdag, 10 september 2019 om 12:30 uur tot 2:00 uur Oosterse tijd
 
 Beveiligingsupdates
 
 ### Versie 19.8.3
 
-**Wanneer:** Woensdag 28 augustus 2019, 12:30 - 13:30 uur OOSTENRIJK
+**Wanneer:** woensdag 28 augustus 2019, 12:30 - 13:30 uur OOSTENRIJK
 
 Oplossing voor een bug waarbij Chromecast-spelers het afspelen onverwachts beëindigden wanneer ad-segmenten uit het DVR-venster werden gerold.
 
 ### Versie 19.8.2
 
-**Wanneer:** Woensdag 21 augustus 2019 2:00 tot 3:00 uur Oosterse tijd
+**Wanneer:** woensdag, 21 augustus 2019 2:00 tot 3:00 uur Oosterse tijd
 
 * SSAI-dashboard: Sessiestatsectie. U kunt de sessiegebeurtenissen exporteren via de optie CSV downloaden.
 
@@ -56,7 +56,7 @@ Oplossing voor een bug waarbij Chromecast-spelers het afspelen onverwachts beëi
 
 ### Versie 19.8.1
 
-**Wanneer:** Dinsdag 6 augustus 2019 2:30 uur &#39;s morgens om 19.00 uur tot dinsdag 6 augustus 2019 4:30 uur &#39;s morgens om 19.00 uur
+**Wanneer:** Dinsdag, 6 augustus 2019 2:30 AM Oost Tijd aan Dinsdag, 6 augustus 2019 4:30 Oost Tijd
 
 * SSAI-dashboard: Nieuwe sectie, Sessiestaten, toegevoegd aan het SSAI-dashboard
    * Als u Sessie-id hebt voor een SSAI-sessie waarvoor de foutopsporingsmodus is ingeschakeld (ptdebug=true), kunt u de volgende activiteit die zich tijdens die sessie heeft voorgedaan, opzoeken:
@@ -69,7 +69,7 @@ Oplossing voor een bug waarbij Chromecast-spelers het afspelen onverwachts beëi
 
 ### Versie 19.7.1
 
-**Wanneer:** Woensdag 10 juli
+**Wanneer:** woensdag, 10 juli
 
 * SSAI: Voor ptcueformatwaarden die EXT-X-CUE-OUT en break het signaleren in levende stromen steunen, voegde een generische macro toe om gegevens van attributen in het EXT-X-ASSET markeringsvoorbeeld over te gaan: Tag die bij de #EXT-X-CUE-OUT-tag hoort: #EXT-X-ASSET:CAID=75BCD15,GENRE=News,Program=NewsAt10 Macros: # kan worden gebruikt om Nieuws (van het attribuut GENRE) tot een vraag URL # van de advertentie over te gaan kan worden gebruikt om NewsAt10 (van het attribuut van het Programma) tot een uitzondering van de vraag URL over te gaan: Voor achterwaartse verenigbaarheid, # en # hebben de zelfde functionaliteit. Beide macro&#39;s kunnen worden gebruikt om de waarde van het attribuut CAID door te geven, na het omzetten van de waarde van hexadecimale in lange. De lange waarde is 123456789 voor de hexadecimale waarde, 75BCD15, in het bovenstaande voorbeeld. Beide macro&#39;s worden gebruikt om 123456789 door te geven aan een URL voor een advertentieaanroep. De macro begint altijd met #. De macro is hoofdlettergevoelig, maar het kenmerk in de tag EXT-X-ASSET is dat niet. Dat wil zeggen dat zowel PROGRAMMA als Programma zijn toegestaan in de EXT-X-ASSET-tag
 * SSAI: De veranderingen van de configuratie voor een specifieke klant voor het volgende:
@@ -79,7 +79,7 @@ Oplossing voor een bug waarbij Chromecast-spelers het afspelen onverwachts beëi
 
 ### Versie 19.6.1
 
-**Wanneer:** Woensdag 12 juni 2019 11:30 PM PST tot donderdag 13 juni 2019 12:30 PST
+**Wanneer:** woensdag 12 juni 2019 11:30 PM PST t t/m donderdag 13 juni 2019 12:30 PST
 
 * CRS: Normalisatieregel voor creatieve personen uit RevJet
    * Toegevoegde regel voor creatieve URL-normalisatie voor RevJet, gebruikt door CRS en SSAI
@@ -95,7 +95,7 @@ Oplossing voor een bug waarbij Chromecast-spelers het afspelen onverwachts beëi
 
 ### Versie 19.5.2
 
-**Wanneer:** Woensdag 22 mei 20:30 Oosterse tijd tot woensdag 22 mei 2011 4:30 Oosterse tijd
+**Wanneer:** Woensdag, 22 mei 23:30 Oost Tijd aan Woensdag, 22 mei 4:30 Oost Tijd
 
 * Toegevoegde ondersteuning voor CMAF (HLS/fMP4-inhoud)
    * SSAI: CMAF-manifesten verwerken
@@ -103,13 +103,13 @@ Oplossing voor een bug waarbij Chromecast-spelers het afspelen onverwachts beëi
    * CRS: Toegevoegde workflow voor het opnieuw verpakken van advertenties naar de CMAF-indeling (HLS/fMP4)
 * SSAI: Probleem verholpen waarbij werd voorkomen dat ongedempte advertenties in ongedempte inhoud werden ingevoegd, wanneer zowel de inhoud als de advertentie geen audio-alleen streams hebben (EXT-X-STREAM-INF).
 * SSAI: Toegevoegde ondersteuning voor CDN-authokens (Limelight (LLNW) voor inhoudssegmenten
-   * Wanneer `pttoken=limelight` of `pttoken=llnw` aan bootstrap URL wordt toegevoegd, zullen wij een geheime kopbal toevoegen wanneer het terugwinnen van de bron master playlist, dan zullen wij de vraagparameters van X-Adobe-Sig van LLNW kopbal aan de inhoudssegmenten toevoegen
-* SSAI: Er is nog een token-waarde (`pttoken=centurylink`) toegevoegd voor de ondersteuning van het CDN-auttoken van CenturyLink, die op 30 juli 2018 is uitgebracht
-   * `pttoken=centurylink` heeft hetzelfde gedrag als `pttoken=level3`en beide waarden zijn geldig
+   * Wanneer `pttoken=limelight` of `pttoken=llnw` aan bootstrap URL wordt toegevoegd, zullen wij een geheime kopbal toevoegen wanneer het terugwinnen van de bron master playlist, dan zullen wij de vraagparameters van X-Adobe van LLNW kopbal aan de inhoudssegmenten toevoegen
+* SSAI: Er is een andere pttoken-waarde (`pttoken=centurylink`) toegevoegd voor de ondersteuning van het auteur-token voor CenturyLink CDN, die op 30 juli 2018 is uitgebracht
+   * `pttoken=centurylink` heeft hetzelfde gedrag als  `pttoken=level3`en beide waarden zijn geldig
 
 ### Versie 19.5.1
 
-**Wanneer:** Donderdag 9 mei 2010 - 00:30 - 18:30 uur Oosterse tijd
+**Wanneer:** Donderdag, 9 mei 2010:30 Oosterse Tijd aan Donderdag, 9 mei 4:30 Oosterse Tijd
 
 * SSAI: Beveiligingsupdates
 * CRS-dashboard: De tekenreeks FqAdId Sample is afgevlakt tot 255 tekens vanwege beperkingen op gegevensopslag (8 bits)
@@ -118,7 +118,7 @@ Oplossing voor een bug waarbij Chromecast-spelers het afspelen onverwachts beëi
 
 ### Versie 19.4.1
 
-**Wanneer:** Woensdag 10 april 2010 - 12:30 uur Oosterse tijd tot woensdag 10 april 19:30 uur Oosterse tijd
+**Wanneer:** Woensdag, 10 april 2:30 Oost Tijd aan Woensdag, 10 april 4:30 Oost Tijd
 
 * CRS: De API voor het opnieuw verpakken van CRS biedt geen ondersteuning meer voor HTTP POST-opdrachten. De API voor opnieuw verpakken van CRS leidt (301) HTTP-POST-opdrachten automatisch om naar HTTPS
    * Vanaf 20 mei wordt HTTP->HTTPS-omleiding voor HTTP POST-opdrachten uitgeschakeld
@@ -144,7 +144,7 @@ Oplossing voor een bug waarbij Chromecast-spelers het afspelen onverwachts beëi
 
 ### Versie 19.2.1
 
-**Wanneer:** Woensdag 20 februari 2019 13:30 uur Oosterse tijd tot woensdag 20 februari 2019 3:30 uur Oosterse tijd
+**Wanneer:** woensdag, 20 februari 2019 1:30 uur Oosterse tijd tot woensdag 20 februari 2019 3:30 uur Oosterse tijd
 
 * SSAI: URL&#39;s voor ClickThrough en ClickTracking voor videoadvertenties zijn toegevoegd aan de secundaire JSON v2-indeling.
    * Onder de eigenschap &quot;trackingURLs&quot; zijn de namen van de waarde &quot;event&quot; &#39;clickTracking&#39; en &quot;clickTracking&quot;
@@ -160,15 +160,15 @@ Oplossing voor een bug waarbij Chromecast-spelers het afspelen onverwachts beëi
 
 ### Web UI-release
 
-**Wanneer:** Woensdag 13 februari, 4:00 - 4:30 Pacific
+**Wanneer:** woensdag 13 februari, 4:00 - 4:30 uur Stille Oceaan
 
-**Wat:** UI-component Primetime en besluitvorming
+**Wat:** De component van het Web UI van Primetime en van Beslissing
 
 * Probleem met de gebruikersinterface van de kalender verhelpen waarbij de gebruiker geen datum na 31 december 2018 kan selecteren uit de agendacomponent tijdens het verhandelen van een campagne of het trekken van een rapport.
 
 ### Versie 19.1.2
 
-**Wanneer:** Woensdag 30 januari 2019 13:30 uur Oosterse tijd tot woensdag 30 januari 30:30 uur Oosterse tijd
+**Wanneer:** Woensdag, 30 Januari, 2019 1:30 Oost Tijd aan Woensdag, 30 Januari 3:30 Oost Tijd
 
 * SSAI: Bijgewerkt de raadpleging - zeer belangrijke structuur die SSAI gebruikt om activa van CRS op te slaan en terug te winnen, om scenario&#39;s te behandelen waar de dienstverleners een dynamische identiteitskaart of Creative identiteitskaart voor de zelfde advertentie hebben
    * Nieuwe lookup-key-structuur: Parameters voor zone, Creative URL en indeling (doelduur, uitvoerindeling, doel-CDN)
@@ -185,7 +185,7 @@ Oplossing voor een bug waarbij Chromecast-spelers het afspelen onverwachts beëi
 
 ### Versie 19.1.1
 
-**Wanneer:** Woensdag 9 januari 2019 13:30 uur Oosterse tijd tot woensdag 9 januari 3:30 uur Oosterse tijd
+**Wanneer:** Woensdag, 9 Januari, 2019 1:30 Oost Tijd aan Woensdag, 9 Januari 3:30 Oost Tijd
 
 * Probleem verholpen waarbij een onjuiste interpretatie van HTTP-headers die in leven houden tot een fout kan leiden bij het valideren van binnenkomende creatieve elementen die worden gehost op total-stream.net.
 * Probleem verholpen waarbij enkele aanhalingstekens (&#39;) en dubbele aanhalingstekens (&#39;) in advertentie-id, Creative ID en andere velden voor een herverpakkingsaanvraag ertoe leidden dat de herverpakkingsaanvraag mislukte.
