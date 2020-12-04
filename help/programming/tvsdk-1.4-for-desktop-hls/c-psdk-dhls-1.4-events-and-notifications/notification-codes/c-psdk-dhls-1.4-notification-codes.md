@@ -40,12 +40,13 @@ Meldingsobjecten bevatten informatie over de status van de speler. TVSDK biedt e
      <li id="li_6D3EA03845294DC2BAD1ACF507639E51">Gebeurtenissen voor de kennisgeving van informatie, van 300000 tot 399999 </li> 
     </ul> <p>Elk bereik op hoofdniveau, zoals fouten, wordt onderverdeeld in subbereiken, zoals 101000 tot en met 101999 die de afspeelfouten vertegenwoordigen. </p>
     <pre>
-     De opsomming <span class="codeph"> mediacore.PSDKErrorCode</span> maakt een lijst van de mogelijke waarden.
+     De opsomming 
+     <span class="codeph"> mediacore.PSDKErrorCode</span> maakt een lijst van de mogelijke waarden.
     </pre> </td> 
   </tr> 
   <tr rowsep="1"> 
    <td colname="1"> name </td> 
-   <td colname="2">Een tekenreeks die een leesbare beschrijving van de code bevat, zoals <span class="codeph"> SEEK_ERROR</span>. </td> 
+   <td colname="2">Een tekenreeks die een door de mens leesbare beschrijving van de code bevat, zoals <span class="codeph"> SEEK_ERROR</span>. </td> 
   </tr> 
   <tr rowsep="1"> 
    <td colname="1"> metagegevens </td> 
@@ -53,7 +54,7 @@ Meldingsobjecten bevatten informatie over de status van de speler. TVSDK biedt e
   </tr> 
   <tr rowsep="0"> 
    <td colname="1"> innerNotification </td> 
-   <td colname="2">Een verwijzing naar een ander <span class="codeph"> MediaPlayerNotification</span> -object dat deze melding rechtstreeks beïnvloedt. Een voorbeeld kan een melding zijn over een fout bij het invoegen van een invoegpositie die direct overeenkomt met een invoegconflict in een tijdlijn. Niet alle meldingen bevatten een binnenste melding. </td> 
+   <td colname="2">Een verwijzing naar een ander <span class="codeph"> MediaPlayerNotification</span>-object dat deze melding rechtstreeks beïnvloedt. Een voorbeeld kan een melding zijn over een fout bij het invoegen van een invoegpositie die direct overeenkomt met een invoegconflict in een tijdlijn. Niet alle meldingen bevatten een binnenste melding. </td> 
   </tr> 
  </tbody> 
 </table>
