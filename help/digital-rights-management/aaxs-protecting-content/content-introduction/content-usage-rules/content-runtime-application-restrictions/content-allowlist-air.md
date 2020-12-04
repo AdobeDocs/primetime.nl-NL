@@ -11,7 +11,7 @@ ht-degree: 0%
 ---
 
 
-# Lijst van gewenste personen voor Adobe® Primetime toepassingen toegestaan om beveiligde inhoud af te spelen {#allowlist-for-adobe-primetime-applications-allowed-to-play-protected-content}
+# Lijst van gewenste personen voor Adobe® Primetime toepassingen toegestaan om beschermde inhoud {#allowlist-for-adobe-primetime-applications-allowed-to-play-protected-content} te spelen
 
 Geeft de AIR/iOS-toepassingen aan die inhoud kunnen afspelen. Geef de AIR/iOS-toepassings-id, de minimale versie, de maximale versie en de uitgevers-id op.
 
