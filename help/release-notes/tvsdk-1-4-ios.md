@@ -24,7 +24,7 @@ De opmerkingen bij de release TVSDK 1.4 voor iOS beschrijven wat nieuw of gewijz
 
 **Versie 1.4.45**
 
-* Om te voldoen aan Xcode10, is TVSDK van &quot;`libstdc++`&quot;naar &quot;`libc++`&quot;verplaatst, en dientengevolge is de minimaal gesteunde versie iOS 7. Eerder was het iOS 6.
+* Om te voldoen aan Xcode10, is TVSDK van &quot;`libstdc++`&quot;verplaatst naar &quot;`libc++`&quot;, en dientengevolge is de minimaal gesteunde versie iOS 7. Eerder was het iOS 6.
 
 **Versie 1.4.44**
 
@@ -59,7 +59,7 @@ Geen nieuwe functies.
 **Versie 1.4.39**
 
 * iOS TVSDK is gecertificeerd met VHL 2.0.1 en met VHL 2.0.1 met Nielsen.
-* De iOS TVSDK wordt bijgewerkt en maakt daarom CRS-aanvragen van de nieuwe Akamai-host `primetime-a.akamaihd.net`.
+* iOS TVSDK wordt bijgewerkt om CRS-aanvragen in te dienen van de nieuwe Akamai-host `primetime-a.akamaihd.net`.
 * De nieuwe hostnaamconfiguratie verstrekt activa CRS levering via zowel HTTP als HTTPS (SSL) op grotere schaal.
 
 **Versie 1.4.36**
@@ -70,11 +70,11 @@ Integreer en certificeer VHL 2.0 in iOS TVSDK: Verminder de barrière in de impl
 
 * Netwerk en informatie
 
-   TVSDK API&#39;s bieden nu aanvullende informatie over VAST-reacties van derden. Advertentie-ID, Ad System en VAST Ad Extensions worden aangeboden in `PTNetworkAdInfo` klassen die toegankelijk zijn via `networkAdInfo` eigenschap op een advertentie-element. Deze informatie kan worden gebruikt voor integratie met andere analyseplatforms voor advertentie, zoals **Moat Analytics**.
+   TVSDK API&#39;s bieden nu aanvullende informatie over VAST-reacties van derden. Advertentie-ID, Systeem en de Uitbreidingen van de Advertentie van de Advertentie worden verstrekt in `PTNetworkAdInfo` klasse toegankelijk door `networkAdInfo` bezit op een Middel van de Advertentie. Deze informatie kan worden gebruikt voor integratie met andere analytische hulpmiddelen zoals **Moat Analytics**.
 
 **Versie 1.4.31**
 
-* **Factureringscijfers** Om klanten aan te passen die slechts voor wat willen betalen zij, eerder dan een vast tarief ongeacht werkelijk gebruik, Adobe gebruiksmetriek verzamelen en deze metriek gebruiken om te bepalen hoeveel om de klanten in rekening te brengen.
+* **FactureringscijfersOm klanten aan te passen die slechts voor wat willen betalen zij, eerder dan een vast tarief ongeacht werkelijk gebruik, Adobe gebruiksmetriek verzamelen en deze metriek gebruiken om te bepalen hoeveel om de klanten in rekening te brengen.** 
 
 Telkens wanneer TVSDK een gebeurtenis van het stroombegin produceert, begint de speler de berichten van HTTP periodiek aan Adobe systeem te verzenden. De periode, die ook wel factureerbare duur wordt genoemd, kan verschillen voor standaard VOD, pro VOD (mid-roll ads ingeschakeld) en live inhoud. De standaardduur voor elk inhoudstype is 30 minuten, maar uw contract met Adobe bepaalt de werkelijke waarden.
 
@@ -84,7 +84,7 @@ Telkens wanneer TVSDK een gebeurtenis van het stroombegin produceert, begint de 
 
 In de klasse PTSDKConfig is de forceHTTPS API toegevoegd.
 
-De PTSDKConfig-klasse biedt methoden om SSL toe te passen op aanvragen die zijn ingediend bij Adobe Primetime en op besluitvormings-, DRM- en Video Analytics-servers. Zie de methoden `forceHTTPS` `isForcingHTTPS` en methoden in deze klasse voor meer informatie. Als een manifest over HTTPS wordt geladen, behoudt TVSDK het inhoudsgebruik van HTTPS en eerbiedigt dit gebruik wanneer het laden van om het even welke relatieve URLs van dat manifest.
+De PTSDKConfig-klasse biedt methoden om SSL toe te passen op aanvragen die zijn ingediend bij Adobe Primetime en op besluitvormings-, DRM- en Video Analytics-servers. Zie de methoden `forceHTTPS` en `isForcingHTTPS` voor meer informatie over deze klasse. Als een manifest over HTTPS wordt geladen, behoudt TVSDK het inhoudsgebruik van HTTPS en eerbiedigt dit gebruik wanneer het laden van om het even welke relatieve URLs van dat manifest.
 
 **Opmerking**: Verzoeken naar domeinen van derden, zoals het bijhouden van pixels voor toevoegen, inhoud en URL&#39;s voor toevoegen en vergelijkbare verzoeken, worden niet gewijzigd. Het is de verantwoordelijkheid van inhoudsproviders en servers om URL&#39;s op te geven die via HTTPS worden ondersteund.
 
@@ -128,7 +128,7 @@ Voor meer informatie over VPAID 2.0, zie [VPAID en steun](../programming/tvsdk-1
 
 Voor VAST-advertenties (creatieven) waarvoor de terugvalregel is ingeschakeld, behandelt de TVSDK een advertentie met een ongeldig MIME-type als een lege advertentie en probeert deze om terugvaladvertenties te gebruiken. U kunt bepaalde aspecten van fallback-gedrag configureren.
 
-Zie [Extra fallback voor VAST- en VMAP-advertenties](../programming/tvsdk-1.4-for-ios/ad-insertion/c-psdk-ios-1.4-ad-fallback.md)voor meer informatie.
+Zie [Extra fallback voor VAST- en VMAP-advertenties](../programming/tvsdk-1.4-for-ios/ad-insertion/c-psdk-ios-1.4-ad-fallback.md) voor meer informatie.
 
 **Versie 1.4.9**
 
@@ -240,7 +240,7 @@ Comment Type: draft
    * Oplossing voor de compilatieproblemen met TVSDK op XCode 10. Vanwege de XCode 10-vereisten vereisen apps die op TVSDK voor iOS 1.4.45 en hoger bouwen, een minimaal implementatiedoel als iOS 7.0
 
 * Ticket #36321 - Discrepancy waargenomen in doorzoekbaar bereik tussen PTMediaPlayer en AVPlayer instantie in de status &quot;Afspelen&quot;.
-* Ticket #36493 - `libstdc++` ondersteuning voor iOS 12
+* Ticket #36493 - `libstdc++` ondersteuning op iOS 12
 
    * Oplossing voor problemen met de compilatie van TVSDK op iOS 12. Voor toepassingen die op TVSDK voor iOS 1.4.45 en hoger zijn gebaseerd, is een minimaal implementatiedoel vereist als iOS 7.0
 
@@ -430,7 +430,7 @@ Oplossing voor meerdere crashes met betrekking tot synchronisatie.
 
 * (ZD# 28481) - FER-stroomstoring als gevolg van de onjuiste sleutel die wordt toegevoegd aan het einde van een advertentiesonderbreking voor die FER-streams
 
-Voor een FER-stream wordt de toets voor het ad-einde ingevoegd na het einde van het ad-einde. Dit probleem is opgelost door de *laatst weergegeven toets* aan het einde van het advertentiespoor toe te voegen.
+Voor een FER-stream wordt de toets voor het ad-einde ingevoegd na het einde van het ad-einde. Dit probleem is opgelost door de *laatst bekeken key* aan het einde van het advertentiespoor toe te voegen.
 
 **Versie 1.4.33** (1.4.33.803 voor iOS 6.0+)
 
@@ -442,9 +442,9 @@ Ingeschakeld door de oorspronkelijke creatieve URL voor de 1401 CRS-aanvraag te 
 
 Dit probleem is opgelost door het laden van bronnen bij te werken en uit alle beschikbare bundels te zoeken.
 
-* (ZD# 27460) De eerste Vraag van Midroll Ad - POST aan cdn.auditude<span></span>.com terugkerend 403.
+* (ZD# 27460) eerste vraag van Midroll - POST aan cdn.auditude<span></span>.com terugkerend 403.
 
-Het nieuwe CDN-account kan een CDN-aanvraag van een POST niet verwerken. Dit probleem is opgelost door de code bij te werken om het `cdn.auditude.com` advertentieverzoek om GET in plaats van POST te doen.
+Het nieuwe CDN-account kan een CDN-aanvraag van een POST niet verwerken. Dit probleem is opgelost door de code bij te werken om de `cdn.auditude.com` toe te voegen en te verzoeken om GET in plaats van POST te zijn.
 
 **Versie 1.4.32** (1.4.32.792 voor iOS 6.0+)
 
@@ -460,7 +460,7 @@ Het probleem is opgelost door de tag aan het begin van de afspeellijst te plaats
 
 * (ZD# 24528) Gebruikswaarden voor TVSDK implementeren voor facturering
 
-Zie [Factureringscijfers](../programming/tvsdk-1.4-for-ios/c-psdk-ios-1.4-billing/c-psdk-ios-1.4-billing.md)voor meer informatie.
+Voor meer informatie, zie [Factureringsmetriek](../programming/tvsdk-1.4-for-ios/c-psdk-ios-1.4-billing/c-psdk-ios-1.4-billing.md).
 
 * (ZD# 24642) Picture-in-Picture support for TVSDK
 
@@ -512,7 +512,7 @@ Wanneer de laatste begintijd van de advertentie-break van de VMAP valt voordat d
 
    * (ZD #22351) VHL - Analytics: Duur van live video-element
 
-Dit probleem is opgelost door de API voor assetDuration toe te voegen `PTVideoAnalyticsTrackingMetadata` om de elementduur voor live/lineaire streams bij te werken en een logica voor het controleren van de live stream te bieden.
+Dit probleem is opgelost door de API voor assetDuration aan `PTVideoAnalyticsTrackingMetadata` toe te voegen om de elementduur voor Live/Lineaire streams bij te werken en een logica voor het controleren van de live stream te bieden.
 
 * (ZD# 22675) VHL - Analytics: De duur van live video-elementen bijwerken
 
@@ -530,7 +530,7 @@ Dit probleem is hetzelfde als ZD #25908.
 
 * (ZD# 23901) Advertenties van derden worden niet afgespeeld
 
-Dit probleem is opgelost door naar de URL-structuur van CRS v3 te gaan en de zone-id op te nemen in de opnieuw verpakte URL.
+Dit probleem is opgelost door naar de URL-structuur van CRS v3 te gaan om de zone-id op te nemen in de opnieuw verpakte URL.
 
 * (ZD #25183) Problemen met het afspelen van DRM op tvOS en iOS
 
@@ -796,7 +796,7 @@ Dit probleem is opgelost door de PTMediaPlayer.drmManager API-implementatie bij 
 
 Dit probleem is opgelost door de toepassingen toe te staan hun eigen waarde voor de afspeelkop in te stellen.
 
-* Zendesk #18518 - Als de naam van de video niet is opgegeven, wordt de naam van TVSDK standaard ingesteld op een speler op *PSDK.*
+* Zendesk #18518 - Als de naam van de video niet is opgegeven, wordt de naam van de TVSDK standaard ingesteld op *PSDK-speler.*
 
 Dit probleem is opgelost door de standaardwaarde voor de naam van de speler te verwijderen.
 
@@ -810,7 +810,7 @@ In plaats van een fout te verzenden wanneer de inhoud niet M3U8 is, retourneert 
 
 Dezelfde resolutie als Zendesk #2228
 
-* Zendesk #3304 - VAST 3.0- `[ERRORCODE]` macro niet gevuld
+* Zendesk #3304 - VAST 3.0 `[ERRORCODE]` macro wordt niet gevuld
 
 Het probleem waarbij de Auditude SDK er niet in slaagt te verzenden pingelt wanneer volgende URL ruimten aan het begin heeft is opgelost.
 
@@ -878,9 +878,9 @@ Probleem verholpen waarbij een periodiek crash optrad als gevolg van gelijktijdi
 
 **Versie 1.4.13** (iOS 6.0+)
 
-* (ZD #3304) - VAST 3.0- `[ERRORCODE]` macro niet gevuld
+* (ZD #3304) - VAST 3.0 `[ERRORCODE]`-macro wordt niet gevuld
 
-   * Foutcode 400 wordt weergegeven als deze inline is en slecht creatief is.
+   * Foutcode 400 wordt weergegeven als deze inline staat   advertentie heeft slecht creatief werk.
    * `[ERRORCODE]` macro wordt URL-gecodeerd.
 
 * (ZD #3865) Integratie van hartslag met IMA-advertenties
@@ -984,7 +984,7 @@ Ondersteuning voor het vastzetten van lege URL&#39;s voor het bijhouden van rege
 * Het kan voorkomen dat tijdens het roteren van licenties de video niet wordt afgespeeld op iOS 11 en dat deze goed wordt afgespeeld op iOS 9.x en iOS 10.x.
 * Als bij VPAID 2.0-ondersteuning het afspelen via AirPlay actief is, worden VPAID-advertenties overgeslagen.
 * Het drmNativeInterface.framework is niet correct gekoppeld wanneer het minimumdoel is ingesteld op iOS7 (of hoger).\
-   Oplossing: Geef de `libstdc++6`naam expliciet op.  dylibbibliotheek, als hieronder: Ga naar Doel->Build Phases->Link Binary with Libraries and add `libstdc++.6.dylib`.
+   Oplossing: Geef expliciet `libstdc++6` op.  dylibbibliotheek, als hieronder: Ga naar Doel->Build Phases->Link Binary with Libraries en voeg `libstdc++.6.dylib` toe.
 
 * Post-Roll Ad wordt niet ingevoegd voor het vervangen van API.
 * Als u in een advertentiesonderbreking zoekt (zonder dat u er uit komt), wordt een dubbel bericht weergegeven en wordt een bericht voor een ad-onderbreking gestart
@@ -994,4 +994,4 @@ Ondersteuning voor het vastzetten van lege URL&#39;s voor het bijhouden van rege
 
 ## Nuttige bronnen {#helpful-resources}
 
-* Zie de volledige Help-documentatie op de pagina Learn &amp; Support [van](https://helpx.adobe.com/support/primetime.html) Adobe Primetime.
+* Zie de volledige Help-documentatie op de pagina [Adobe Primetime Learn &amp; Support](https://helpx.adobe.com/support/primetime.html).
