@@ -6,6 +6,9 @@ title: Markeringsbereiken
 uuid: 6ae2adee-fb7a-4cef-a8e8-ecf671ed3660
 translation-type: tm+mt
 source-git-commit: 812d04037c3b18f8d8cdd0d18430c686c3eee1ff
+workflow-type: tm+mt
+source-wordcount: '94'
+ht-degree: 0%
 
 ---
 
@@ -14,11 +17,11 @@ source-git-commit: 812d04037c3b18f8d8cdd0d18430c686c3eee1ff
 
 U kunt tijdintervallen in VOD-inhoud aanwijzen als en als einden.
 
-De `TimeRanges` tussen `begin` en `end` binnen `localTime` wordt gemarkeerd als een `AdBreak` in de tijdlijn. Andere advertentie-instellingen worden genegeerd.
+De `TimeRanges` tussen `begin` en `end` in `localTime` zal als `AdBreak` in de chronologie worden gemerkt. Andere advertentie-instellingen worden genegeerd.
 
 >[!TIP]
 >
->Als u alleen bepaalde bereiken in de inhoud wilt markeren als advertenties, zonder dynamische invoeging, maakt u een `CustomRangeMetadata` instantie en geeft u de tekst op als een `MARK` bewerking met de gedefinieerde aangepaste bereiken.
+>Als u alleen bepaalde bereiken in de inhoud wilt markeren als advertenties, zonder dynamische invoeging, maakt u een `CustomRangeMetadata`-instantie en geeft u het type op als een `MARK`-bewerking met de gedefinieerde aangepaste bereiken.
 
 1. Tik teken de bereiken:
 
