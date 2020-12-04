@@ -6,6 +6,9 @@ title: Meldingen voor manifestlabels
 uuid: 50727455-b37b-4e39-8efb-a97de3164074
 translation-type: tm+mt
 source-git-commit: 040655d8ba5f91c98ed0584c08db226ffe1e0f4e
+workflow-type: tm+mt
+source-wordcount: '118'
+ht-degree: 0%
 
 ---
 
@@ -16,4 +19,4 @@ De eigenschap MediaPlayerItem.timedMetadata biedt toegang tot alle objecten Time
 
 <!--<a id="section_9A22F6F1EA1F4F0C9E0C7687D12AA4AA"></a>-->
 
-De `MediaPlayerItem.hasTimedMetadata` eigenschap geeft aan of er een aangepaste tag met abonnement aanwezig is in de huidige media. U kunt metagegevens met tijdinstellingen controleren door te luisteren naar de metagegevens `Events.TimedMetadataEvent`die de instantie MediaPlayer verzendt telkens wanneer een nieuw `TimedMetadata` object wordt gemaakt.
+De eigenschap `MediaPlayerItem.hasTimedMetadata` geeft aan of een aangepaste tag met een abonnement aanwezig is in de huidige media. U kunt getimede meta-gegevens controleren door op `Events.TimedMetadataEvent` te luisteren, die de instantie MediaPlayer verzendt telkens als een nieuw `TimedMetadata` voorwerp wordt gecreeerd.
