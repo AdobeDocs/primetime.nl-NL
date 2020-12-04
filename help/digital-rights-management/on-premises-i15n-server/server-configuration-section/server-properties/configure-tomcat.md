@@ -4,15 +4,18 @@ title: Tomcat configureren
 uuid: 5f23aa33-29d7-4b41-87a4-59dc5b433de4
 translation-type: tm+mt
 source-git-commit: 7e8df034035fe465fbe403949ef828e7811ced2e
+workflow-type: tm+mt
+source-wordcount: '169'
+ht-degree: 0%
 
 ---
 
 
-# Tomcat configureren{#configure-tomcat}
+# Tomcat{#configure-tomcat} configureren
 
-Voor de server van de Individualisering, wijzig het [!DNL conf/server.xml] dossier van Tomcat om extra informatie in het toegangslogboek te omvatten. U kunt deze gegevens gebruiken voor rapportagedoeleinden.
+Wijzig op de Individualization-server het [!DNL conf/server.xml]-bestand van Tomcat om aanvullende informatie op te nemen in het toegangslogboek. U kunt deze gegevens gebruiken voor rapportagedoeleinden.
 
-1. Zoek de configuratie voor de `AccessLogValve` insteekmodule [!DNL server.xml] en wijzig het patroon zoals u hier ziet:
+1. Zoek de configuratie voor `AccessLogValve` in [!DNL server.xml] en wijzig het patroon zoals hier getoond:
 
    ```
    <Valve className="org.apache.catalina.valves.AccessLogValve" 
@@ -21,11 +24,11 @@ Voor de server van de Individualisering, wijzig het [!DNL conf/server.xml] dossi
    %{request-id}r" resolveHosts="false"/>
    ```
 
-   `%{x-forwarded-for}i` zal de waarde van de `x-forwarded-for` kopbal registreren. Als u een Apache reverse-proxy gebruikt om verzoeken door te sturen naar de Tomcat-server, bevat deze header het IP-adres van de oorspronkelijke client, terwijl het IP-adres van de Apache-server wordt `%h` vastgelegd. `%{request-id}r` zal het verzoek herkenningsteken registreren, dat aan verzoek identiteitskaart in het Van de Individualisatietoepassing logboek beantwoordt.
+   `%{x-forwarded-for}i` Hiermee wordt de waarde van de  `x-forwarded-for` koptekst vastgelegd. Als u een Apache reverse-proxy gebruikt om aanvragen door te sturen naar de Tomcat-server, bevat deze header het IP-adres van de oorspronkelijke client, terwijl `%h` het IP-adres van de Apache-server opneemt. `%{request-id}r` zal het verzoek herkenningsteken registreren, dat aan verzoek identiteitskaart in het Van de Individualisatietoepassing logboek beantwoordt.
 
-1. Bewerk [!DNL conf/server.xml] `unpackwars` de eigenschap en stel deze in op false.
+1. Bewerk [!DNL conf/server.xml] en stel de eigenschap `unpackwars` in op false.
 
-   Voor zowel de servers van de Individualisering als van de Zeer belangrijke Generatie, is het een goed idee om het [!DNL conf/server.xml] bezit uit te geven `unpackwars` en te plaatsen aan `false`. Anders, wanneer u WARs bijwerkt, kunt u de onverpakte omslagen van de OORLOG ook moeten zuiveren.
+   Voor zowel de servers van de Individualisering als van de Zeer belangrijke Generatie, is het een goed idee om [!DNL conf/server.xml] uit te geven en `unpackwars` te plaatsen bezit aan `false`. Anders, wanneer u WARs bijwerkt, kunt u de onverpakte omslagen van de OORLOG ook moeten zuiveren.
 
 >[!NOTE]
 >
