@@ -6,6 +6,9 @@ title: Een stream invoeren op een bepaald tijdstip
 uuid: ac3479e2-46a1-4ac8-a9e8-68a23f5dd74d
 translation-type: tm+mt
 source-git-commit: 5908e5a3521966496aeec0ef730e4a704fddfb68
+workflow-type: tm+mt
+source-wordcount: '110'
+ht-degree: 1%
 
 ---
 
