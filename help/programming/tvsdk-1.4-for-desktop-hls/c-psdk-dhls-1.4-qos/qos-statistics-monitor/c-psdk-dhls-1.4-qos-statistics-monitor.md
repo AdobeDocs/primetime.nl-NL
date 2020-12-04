@@ -6,6 +6,9 @@ title: Kwaliteit van de dienststatistieken
 uuid: 5c9d09a9-0e0b-44f2-98ca-2eeb8a830ec6
 translation-type: tm+mt
 source-git-commit: 8ff38bdc1a7ff9732f7f1fae37f64d0e1113ff40
+workflow-type: tm+mt
+source-wordcount: '446'
+ht-degree: 0%
 
 ---
 
@@ -24,7 +27,7 @@ TVSDK biedt ook informatie over de volgende gedownloade bronnen:
 
 U kunt de kwaliteit van de dienst (QoS) informatie over gedownloade middelen, zoals fragmenten en sporen, van de klasse lezen LoadInformation.
 
-1. Implementeer de `onLoadInformationAvailable` callback-gebeurtenislistener.
+1. Implementeer de callback-gebeurtenislistener `onLoadInformationAvailable`.
 
    ```
    private function onLoadInformationAvailable(event:LoadInformationEvent):void { 
@@ -40,7 +43,7 @@ U kunt de kwaliteit van de dienst (QoS) informatie over gedownloade middelen, zo
                                     onLoadInformationAvailable);
    ```
 
-1. Lees de gegevens van belang van de `LoadInformation` die tot callback wordt overgegaan.
+1. Lees de gegevens van belang van `LoadInformation` die tot callback wordt overgegaan.
 
    <table id="table_75E61A2EB25E435DB631166A7FF64757"> 
    <thead> 
@@ -52,37 +55,37 @@ U kunt de kwaliteit van de dienst (QoS) informatie over gedownloade middelen, zo
    </thead>
    <tbody> 
    <tr> 
-      <td colname="col01"> <span class="codeph"> downloadDuration </span> </td> 
+      <td colname="col01"> <span class="codeph"> downloadDuration  </span> </td> 
       <td colname="col1"> <p>Getal </p> </td> 
       <td colname="col2"> <p>De duur van de download in milliseconden. </p> <p>TVSDK maakt geen onderscheid tussen de tijd dat de client verbinding heeft gemaakt met de server en de tijd die nodig was om het volledige fragment te downloaden. Bijvoorbeeld, als een 10 MB segment 8 seconden aan download vergt, verstrekt TVSDK die informatie, maar vertelt u niet dat het 4 seconden tot de eerste byte en nog eens 4 seconden kostte om het volledige fragment te downloaden. </p> </td> 
    </tr> 
    <tr> 
-      <td colname="col01"> <span class="codeph"> mediaDuration </span> </td> 
+      <td colname="col01"> <span class="codeph"> mediaDuration  </span> </td> 
       <td colname="col1"> <p>Getal </p> </td> 
       <td colname="col2"> De mediaduur van de gedownloade fragmenten in milliseconden. </td> 
    </tr> 
    <tr> 
-      <td colname="col01"> <span class="codeph"> size </span> </td> 
+      <td colname="col01"> <span class="codeph"> size  </span> </td> 
       <td colname="col1"> <p>Getal </p> </td> 
       <td colname="col2"> De grootte van de gedownloade bron in bytes. </td> 
    </tr> 
    <tr> 
-      <td colname="col01"> <span class="codeph"> trackIndex </span> </td> 
+      <td colname="col01"> <span class="codeph"> trackIndex  </span> </td> 
       <td colname="col1"> <p>int </p> </td> 
       <td colname="col2"> de index van het overeenkomstige spoor, indien bekend; anders, 0. </td> 
    </tr> 
    <tr> 
-      <td colname="col01"> <span class="codeph"> trackName </span> </td> 
+      <td colname="col01"> <span class="codeph"> trackName  </span> </td> 
       <td colname="col1"> <p>String </p> </td> 
       <td colname="col2"> de naam van de overeenkomstige spoorbaan, indien bekend; anders, null. </td> 
    </tr> 
    <tr> 
-      <td colname="col01"> <span class="codeph"> trackType </span> </td> 
+      <td colname="col01"> <span class="codeph"> trackType  </span> </td> 
       <td colname="col1"> <p>String </p> </td> 
       <td colname="col2"> het type van het overeenkomstige spoor, indien bekend; anders, null. </td> 
    </tr> 
    <tr> 
-      <td colname="col01"> <span class="codeph"> type </span> </td> 
+      <td colname="col01"> <span class="codeph"> type  </span> </td> 
       <td colname="col1"> <p>String </p> </td> 
       <td colname="col2"> Wat heeft TVSDK gedownload. Een van de volgende opties: 
       <ul id="ul_FA02F42D109344F4866073908CA4E835"> 
@@ -92,23 +95,23 @@ U kunt de kwaliteit van de dienst (QoS) informatie over gedownloade middelen, zo
       </ul> Soms is het mogelijk dat het type van de bron niet kan worden gedetecteerd. Als dit gebeurt, wordt FILE geretourneerd. </td> 
    </tr> 
    <tr> 
-      <td colname="col01"> <span class="codeph"> url </span> </td> 
+      <td colname="col01"> <span class="codeph"> url  </span> </td> 
       <td colname="col1"> <p>String </p> </td> 
       <td colname="col2"> De URL die naar de gedownloade bron wijst. </td> 
    </tr> 
    </tbody> 
    </table>
 
-## De playback van QOS, het bufferen, en apparatenstatistieken lezen {#read-qos-playback-buffering-and-device-statistics}
+## De playback van QOS, het bufferen, en apparatenstatistieken {#read-qos-playback-buffering-and-device-statistics} lezen
 
 U kunt playback, het als buffer optreden voor, en apparatenstatistieken van de klasse lezen QOSProvider.
 
-De `QOSProvider` klasse biedt diverse statistieken, waaronder informatie over buffering, bitsnelheden, framesnelheden, tijdgegevens enzovoort.
+De klasse `QOSProvider` verstrekt diverse statistieken, met inbegrip van informatie over het als buffer optreden voor, beetjetarieven, kadertarieven, tijdgegevens, etc.
 
 Het biedt ook informatie over het apparaat, zoals de fabrikant, het model, het besturingssysteem, de SDK-versie en schermgrootte/dichtheid.
 
 1. Instantiëren van een mediaspeler.
-1. Maak een `QOSProvider` object en koppel dit aan de mediaspeler.
+1. Maak een `QOSProvider`-object en koppel dit aan de mediaspeler.
 
    ```
    // Create Media Player. 
@@ -118,7 +121,7 @@ Het biedt ook informatie over het apparaat, zoals de fabrikant, het model, het b
 
 1. (Optioneel) Lees de afspeelstatistieken.
 
-   Één oplossing om playbackstatistieken te lezen is een tijdopnemer te hebben, die periodiek de nieuwe waarden QoS van `QOSProvider`. haalt Bijvoorbeeld:
+   Één oplossing om playbackstatistieken te lezen moet een tijdopnemer hebben, die periodiek de nieuwe waarden QoS van `QOSProvider` haalt. Bijvoorbeeld:
 
    ```
    var qosTimer:Timer = new Timer(1000); // every 1 second  
