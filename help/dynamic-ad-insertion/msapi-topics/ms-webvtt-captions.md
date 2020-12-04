@@ -6,6 +6,9 @@ title: Ondersteuning voor WebVTT-bijschriften
 uuid: 1dc728b0-5aeb-4c48-8f3b-54ff4b135742
 translation-type: tm+mt
 source-git-commit: 358c5b02d47f23a6adbc98e457e56c8220cae6e9
+workflow-type: tm+mt
+source-wordcount: '356'
+ht-degree: 0%
 
 ---
 
@@ -29,4 +32,4 @@ De workflow voor VOD-inhoudsstromen is als volgt:
 
 >[!NOTE]
 >
->Als een client vraagt dat een video wordt afgespeeld in een specifieke taal zoals Engels en vervolgens wordt gevraagd de video af te spelen in het Frans, kan de manifestserver niet detecteren dat de client heeft verzocht de taal te wijzigen in het Frans. Omdat de client niet met de manifestserver communiceert, voegt de manifestserver het bijschrift van de advertentie in de videostream in met de eerste taal die in het M3U8-hoofdbestand van de advertentie is opgegeven.
+>Als een client vraagt dat een video wordt afgespeeld in een specifieke taal zoals Engels en vervolgens wordt gevraagd de video af te spelen in het Frans, kan de manifestserver niet detecteren dat de client heeft verzocht de taal te wijzigen in het Frans. Omdat de client niet met de manifestserver communiceert, voegt de manifestserver het bijschrift van de advertentie in de videostream in met behulp van de eerste taal die in het master bestand M3U8 van de advertentie is opgegeven.
