@@ -6,15 +6,18 @@ title: Referentieservice op tijd gebaseerde machtiging
 uuid: dd937299-a271-49a9-9b26-eec16f1484df
 translation-type: tm+mt
 source-git-commit: ffb993889a78ee068b9028cb2bd896003c5d4d4c
+workflow-type: tm+mt
+source-wordcount: '279'
+ht-degree: 0%
 
 ---
 
 
-# Referentieservice: Machtiging op basis van tijd {#reference-service-time-based-entitlement}
+# Referentieservice: Op tijd gebaseerde machtiging {#reference-service-time-based-entitlement}
 
 Werk met de SES om te zien hoe u een op tijd gebaseerde machtigingsservice kunt inschakelen met ExpressPlay.
 
-De SEES ontvangt een machtigingsverzoek (zie de sectie Public API) van de client. De server SEES kijkt omhoog CEK en IV op basis van `contentID`, voegt toe, `expirationTime`en door:sturen het verzoek aan de server ExpressPlay. Het uiteindelijke ExpressPlay-token is tijdgebonden. Zie het op tijd gebaseerde diagram van de opeenvolging van de Entitlement hieronder. ![](assets/fees-time-based.png)
+De SEES ontvangt een machtigingsverzoek (zie de sectie Public API) van de client. De server SEES kijkt omhoog CEK en IV gebaseerd op `contentID`, voegt `expirationTime` toe, en door:sturen het verzoek aan de server ExpressPlay. Het uiteindelijke ExpressPlay-token is tijdgebonden. Zie het op tijd gebaseerde diagram van de opeenvolging van de Entitlement hieronder. ![](assets/fees-time-based.png)
 
 **Tabel 1: Licentieparameters verzonden door client**
 
@@ -37,7 +40,7 @@ De SEES ontvangt een machtigingsverzoek (zie de sectie Public API) van de client
  <tbody> 
   <tr> 
    <td><span class="codeph"> expirationTime</span> </td> 
-   <td>Vervaltijd van deze token. Deze waarde moet een tekenreeks zijn in de datum-/tijdnotatie <a href="https://www.ietf.org/rfc/rfc3339.txt" format="html" type="external"> RFC 339</a> in de zoneaanduiding 'Z' ('Zulu-tijd') of een geheel getal voorafgegaan door een plusteken (+'). Een voorbeeld van een RFC 3339 datum/tijd is <span class="codeph"> 2006-04-14T12:01:10Z</span>. <p>Als de waarde een tekenreeks in RFC 3339 datum/tijd-indeling is, vertegenwoordigt deze een absolute vervaldatum/tijd voor het token. Als de waarde een geheel getal is dat wordt voorafgegaan door een plusteken (+), wordt deze geïnterpreteerd als een relatief aantal seconden vanaf de afgifte dat de token geldig is. Met <span class="codeph"> +60</span> wordt bijvoorbeeld één minuut opgegeven. De maximale (en standaard, indien niet opgegeven) symbolische levensduur is 30 dagen. Gebruik het gecodeerde formulier "%2B" wanneer u het plusteken (+) opgeeft. </p> </td> 
+   <td>Vervaltijd van deze token. Deze waarde moet een tekenreeks zijn in de datum-/tijdnotatie <a href="https://www.ietf.org/rfc/rfc3339.txt" format="html" type="external"> RFC 339</a> in de zoneaanduiding 'Z' ('Zulu-tijd') of een geheel getal voorafgegaan door het plusteken. Een voorbeeld van een RFC 3339 datum/tijd is <span class="codeph"> 2006-04-14T12:01:10Z</span>. <p>Als de waarde een tekenreeks in RFC 3339 datum/tijd-indeling is, vertegenwoordigt deze een absolute vervaldatum/tijd voor het token. Als de waarde een geheel getal is dat wordt voorafgegaan door een plusteken (+), wordt deze geïnterpreteerd als een relatief aantal seconden vanaf de afgifte dat de token geldig is. <span class="codeph"> +60</span> geeft bijvoorbeeld één minuut op. De maximale (en standaard, indien niet opgegeven) symbolische levensduur is 30 dagen. Gebruik het gecodeerde formulier "%2B" wanneer u het plusteken (+) opgeeft. </p> </td> 
    <td> Nee </td> 
   </tr> 
  </tbody> 
