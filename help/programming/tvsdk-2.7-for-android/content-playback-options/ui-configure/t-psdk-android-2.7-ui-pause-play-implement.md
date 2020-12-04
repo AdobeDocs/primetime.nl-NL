@@ -6,6 +6,9 @@ title: Een video afspelen en pauzeren
 uuid: 66fefead-7f1d-46ed-a23e-381f25697978
 translation-type: tm+mt
 source-git-commit: 812d04037c3b18f8d8cdd0d18430c686c3eee1ff
+workflow-type: tm+mt
+source-wordcount: '123'
+ht-degree: 0%
 
 ---
 
@@ -16,13 +19,13 @@ U kunt pauze- en afspeelknoppen toevoegen om de video te pauzeren of af te spele
 
 1. Een pauze- of afspeelknop maken:
    1. Wacht tot de speler zich in minstens de voorbereide staat bevindt.
-   1. Roep de `play` methode aan om het afspelen te starten:
+   1. Roep de methode `play` aan om het afspelen te starten:
 
       ```java
       void play() throws MediaPlayerException;
       ```
 
-   1. Roep de `pause()` methode op om het afspelen te pauzeren:
+   1. Roep de methode `pause()` aan om het afspelen te pauzeren:
 
       ```java
       void pause() throws MediaPlayerException;
