@@ -6,11 +6,14 @@ title: Metagegevens voor toevoegen en invoegen aanpassen
 uuid: 047470d3-45bd-48be-82ce-4e9d9fe6ea10
 translation-type: tm+mt
 source-git-commit: 040655d8ba5f91c98ed0584c08db226ffe1e0f4e
+workflow-type: tm+mt
+source-wordcount: '113'
+ht-degree: 0%
 
 ---
 
 
-# Metagegevens voor toevoegen en invoegen aanpassen{#customize-ad-insertion-metadata}
+# Metagegevens voor toevoegen aanpassen{#customize-ad-insertion-metadata}
 
 U kunt metagegevens aanpassen en invoegen.
 
@@ -23,7 +26,7 @@ U kunt metagegevens aanpassen en invoegen.
    auditudeSettings.timeout = 10000; //this value is specified in milliseconds
    ```
 
-   De `timeout` eigenschap wordt gedefinieerd in de `AdvertisingMetadata` klasse en deze time-out kan worden ingesteld voor alle aangepaste advertentie-instellingen die uit de `AdvertisingMetadata` klasse voortkomen. Als gebruikers bijvoorbeeld aangepaste instellingen voor een FreeWheel-oplosser definiëren, kunnen ze een standaardtime-out instellen met deze instelling.
+   De eigenschap `timeout` wordt gedefinieerd in de klasse `AdvertisingMetadata` en deze time-out kan worden ingesteld voor alle aangepaste ad-instellingen die afkomstig zijn van de klasse `AdvertisingMetadata`. Als gebruikers bijvoorbeeld aangepaste instellingen voor een FreeWheel-oplosser definiëren, kunnen ze een standaardtime-out instellen met deze instelling.
 
 1. Maak `MediaPlayerItemConfig` met de advertentie-instellingen in stap 2.
 
