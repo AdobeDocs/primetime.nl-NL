@@ -6,13 +6,16 @@ title: Markeringsbereiken
 uuid: d98efb92-701e-4ee2-b574-823c1e5d5149
 translation-type: tm+mt
 source-git-commit: 040655d8ba5f91c98ed0584c08db226ffe1e0f4e
+workflow-type: tm+mt
+source-wordcount: '26'
+ht-degree: 0%
 
 ---
 
 
 # Markeringsbereiken{#mark-ranges}
 
-Markeren `TimeRanges` tussen de tijdlijn `begin` en `end` in `localTime` als een `AdBreak` van de tijdlijn. Andere advertentie-instellingen worden genegeerd.
+Markeer `TimeRanges` tussen `begin` en `end` in `localTime` als `AdBreak` van de chronologie. Andere advertentie-instellingen worden genegeerd.
 
 1. Tijdbereiken markeren.
 
