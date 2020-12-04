@@ -13,13 +13,13 @@ ht-degree: 0%
 ---
 
 
-# Standaardgedrag voor afspelen gebruiken{#use-the-default-playback-behavior}
+# Standaardafspeelgedrag gebruiken{#use-the-default-playback-behavior}
 
 U kunt ervoor kiezen om standaard en gedrag te gebruiken.
 
 Standaardgedrag gebruiken:
 
-* Als u uw eigen `ContentFactory` klasse implementeert, retourneert u een nieuwe instantie van `DefaultAdPolicySelector` in uw implementatie van `doRetrieveAdPolicySelector`.
+* Als u uw eigen `ContentFactory` klasse uitvoert, keer een nieuwe geval van `DefaultAdPolicySelector` in uw implementatie van `doRetrieveAdPolicySelector` terug.
 
    ```
    public class CustomContentFactory extends ContentFactory { 
@@ -38,4 +38,4 @@ Standaardgedrag gebruiken:
    }
    ```
 
-* Als u geen aangepaste implementatie voor de `ContentFactory` klasse hebt, gebruikt TVSDK `DefaultAdPolicySelector`.
+* Als u geen aangepaste implementatie voor de klasse `ContentFactory` hebt, gebruikt TVSDK `DefaultAdPolicySelector`.
