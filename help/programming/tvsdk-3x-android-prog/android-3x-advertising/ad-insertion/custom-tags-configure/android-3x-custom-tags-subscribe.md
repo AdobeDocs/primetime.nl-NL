@@ -6,6 +6,9 @@ title: Abonneren op aangepaste tags
 uuid: f1a934bd-772e-435f-84b5-cb48db23c06e
 translation-type: tm+mt
 source-git-commit: bc35da8b258056809ceaf18e33bed631047bc81b
+workflow-type: tm+mt
+source-wordcount: '112'
+ht-degree: 1%
 
 ---
 
@@ -16,11 +19,11 @@ TimedMetadata-objecten worden door TVSDK voorbereid voor geabonneerde tags telke
 
 Voordat het afspelen begint, moet u zich op de tags abonneren. Informatie over aangepaste tags in HLS-manifests:
 
-1. Stel de aangepaste namen van tags globaal in door een array met aangepaste tags door te geven `setSubscribedTags` in `MediaPlayerItemConfig`.
+1. Stel de namen van aangepaste ad-tags globaal in door een array met aangepaste tags door te geven aan `setSubscribedTags` in `MediaPlayerItemConfig`.
 
    >[!IMPORTANT]
    >
-   >U moet het `#` voorvoegsel opnemen wanneer u werkt met HLS-streams.
+   >Wanneer u met HLS-streams werkt, moet u het voorvoegsel `#` opnemen.
 
    Bijvoorbeeld:
 
