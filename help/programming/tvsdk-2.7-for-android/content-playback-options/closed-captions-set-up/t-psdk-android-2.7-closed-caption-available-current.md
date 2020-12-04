@@ -6,18 +6,21 @@ title: Selecteer een ondertitelingstrack uit de beschikbare tracks
 uuid: d582779a-2789-4e2a-85f6-1a0b9b847382
 translation-type: tm+mt
 source-git-commit: 812d04037c3b18f8d8cdd0d18430c686c3eee1ff
+workflow-type: tm+mt
+source-wordcount: '251'
+ht-degree: 1%
 
 ---
 
 
-# Selecteer een ondertitelingstrack uit de beschikbare tracks {#select-a-current-caption-track-from-among-available-tracks}
+# Selecteer een huidige bijschrifttrack uit de beschikbare tracks {#select-a-current-caption-track-from-among-available-tracks}
 
 U kunt een track selecteren in een lijst met momenteel beschikbare Closed Caption-tracks. Dit wordt de huidige track die wordt weergegeven wanneer de zichtbaarheid is ingeschakeld. Sommige sporen zouden niet aanvankelijk beschikbaar kunnen zijn, zodat luistert naar de gebeurtenis die erop wijst dat meer beschikbaar is geworden.
 
-1. Wacht tot de mediaspeler ten minste de `PREPARED` status heeft.
+1. Wacht tot de mediaspeler ten minste de status `PREPARED` heeft.
 1. Luister naar deze gebeurtenissen:
 
-   * `MediaPlayerEvent.STATUS_CHANGED` met status `MediaPlayerStatus.INITIALIZED`: De eerste lijst met Closed Caption-tracks is beschikbaar.
+   * `MediaPlayerEvent.STATUS_CHANGED` met status  `MediaPlayerStatus.INITIALIZED`: De eerste lijst met Closed Caption-tracks is beschikbaar.
 
 1. Hiermee wordt een lijst opgehaald met alle momenteel beschikbare Closed Caption-tracks.
 
