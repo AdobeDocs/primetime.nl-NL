@@ -6,6 +6,9 @@ title: Referentie-implementatiestructuur
 uuid: ae347a97-1500-476a-9fc8-c99e6b2ab8de
 translation-type: tm+mt
 source-git-commit: 31b6cad26bcc393d731080a70eff1c59551f1c8e
+workflow-type: tm+mt
+source-wordcount: '454'
+ht-degree: 0%
 
 ---
 
@@ -32,4 +35,4 @@ De implementatie van de Primetime-referentie bevat de volgende pakketten:
 | [com.adobe.primetime.reference.ui.player](https://help.adobe.com/en_US/primetime/api/reference_implementation/android/javadoc/com/adobe/primetime/reference/ui/player/package-summary.html) | Bevat UI-code voor de speler. |
 | [com.adobe.primetime.reference.ui.settings](https://help.adobe.com/en_US/primetime/api/reference_implementation/android/javadoc/com/adobe/primetime/reference/ui/settings/package-summary.html) | Bevat UI-code voor instellingen. |
 | [com.adobe.primetime.reference.utils](https://help.adobe.com/en_US/primetime/api/reference_implementation/android/javadoc/com/adobe/primetime/reference/utils/package-summary.html) | Bevat algemene hulpprogrammaklassen. |
-| [com.adobe.primetime.reference.utils.http](https://help.adobe.com/en_US/primetime/api/reference_implementation/android/javadoc/com/adobe/primetime/reference/utils/http/package-summary.html) | Bevat `HTTP-specific` hulpprogrammaklassen. |
+| [com.adobe.primetime.reference.utils.http](https://help.adobe.com/en_US/primetime/api/reference_implementation/android/javadoc/com/adobe/primetime/reference/utils/http/package-summary.html) | Bevat hulpprogrammaklassen `HTTP-specific`. |
