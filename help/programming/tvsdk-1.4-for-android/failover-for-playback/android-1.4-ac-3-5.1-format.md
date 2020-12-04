@@ -6,6 +6,9 @@ title: AC-3 5.1-indeling
 uuid: d5e77bb5-ed51-4f9f-b34f-e9082f5ee4de
 translation-type: tm+mt
 source-git-commit: 5908e5a3521966496aeec0ef730e4a704fddfb68
+workflow-type: tm+mt
+source-wordcount: '558'
+ht-degree: 0%
 
 ---
 
@@ -18,7 +21,7 @@ Primetime kan niet tegen dergelijke mislukkingen zoals een ISP stroomonderbrekin
 
 Met de Audio Codec 3 (AC-3, ook bekend als Dolby Digital®) 5.1-indeling kunnen inhoudsproviders de grootte van multikanaalsaudiobestanden comprimeren zonder dat dit de geluidskwaliteit nadelig beïnvloedt. AC-3 is een formaat 5.1, zo betekent het dat het vijf volledig-bandbreedtekanalen voor een rijkere gebruikerservaring verstrekt.
 
-Zie [Dolby Digital 5.1](https://www.dolby.com/us/en/technologies/dolby-digital.html)voor meer informatie.
+Zie [Dolby Digital 5.1](https://www.dolby.com/us/en/technologies/dolby-digital.html) voor meer informatie.
 
 >[!IMPORTANT]
 >
@@ -35,7 +38,7 @@ TVSDK ondersteunt de volgende AC-3 5.1-functies:
 
    In de passthrough-modus wordt de TVSDK-indeling gewijzigd of ongewijzigd (afhankelijk van het apparaat) Dolby-media van de Decoder in plaats van de media te decoderen van de AC-3 5.1-indeling naar een PCM-indeling (multi-channel pulse-code modululation). Deze media worden naar het audioapparaat (luidspreker of ontvanger) verzonden, zodat het audioapparaat de Dolby-surround-stream kan decoderen en afspelen.
 
-TVSDK biedt alleen ondersteuning voor de AC-3 5.1-functies op het apparaat van de eerste generatie Amazon Fire TV.
+TVSDK ondersteunt de AC-3 5.1-functies alleen op het Amazon Fire TV-apparaat van de eerste generatie.
 
 De volgende AC-3 5.1-functies worden niet ondersteund:
 
@@ -56,7 +59,7 @@ Hier is het typische werkschema dat voorkomt wanneer TVSDK manifest met AC-3 en 
 >
 >De toepassing kan geen informatie ophalen over genegeerde profielen.
 
-## De uitvoermodus bepalen {#section_64145D9824594C36AADBF0482C528767}
+## De uitvoermodus {#section_64145D9824594C36AADBF0482C528767} bepalen
 
 Als een Android-apparaat tijdens de verwerking van AC-3-media is aangesloten op het luidsprekersysteem, is de beslissing om inhoud af te spelen in de surround-modus of de stereomodus afhankelijk van de configuratie van het apparaat.
 
