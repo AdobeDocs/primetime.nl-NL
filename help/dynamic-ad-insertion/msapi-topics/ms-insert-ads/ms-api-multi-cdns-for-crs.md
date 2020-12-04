@@ -6,6 +6,9 @@ title: Meerdere CDN-ondersteuning voor CRS en levering
 uuid: c5557a38-aa49-4161-bb58-3e8dff9a4d64
 translation-type: tm+mt
 source-git-commit: f327b45de7e482dcb25407659846b2098f1fd49d
+workflow-type: tm+mt
+source-wordcount: '222'
+ht-degree: 0%
 
 ---
 
@@ -24,4 +27,4 @@ U kunt meerdere CDN&#39;s gebruiken om de volgende redenen:
 
 Wanneer de manifestserver omhoog voor getranscodeerde verzoeken maakt, gebruikt het een laarzentrekker URL die een aantal vraagparameters bevat. Als u opstelling een multi-CDN milieu hebt, zal bootstrap URL ook de `ptcdn` parameter moeten bevatten. De manifestserver gebruikt deze parameter om de server te identificeren CDN waarvan om de getranscodeerde versie van de advertentie te krijgen.
 
-Voor meer details, zie de Steun [van](../../creative-repackaging-service/multi-cdn-supportt.md) MultiCDN in de documentatie van CRS.
+Zie [Ondersteuning van meerdere CDN](../../creative-repackaging-service/multi-cdn-supportt.md) in de CRS-documentatie voor meer informatie.
