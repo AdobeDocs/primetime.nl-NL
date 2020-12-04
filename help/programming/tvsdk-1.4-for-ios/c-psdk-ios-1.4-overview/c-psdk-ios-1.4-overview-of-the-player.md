@@ -6,11 +6,14 @@ title: Functies van Primetime TVSDK
 uuid: 838d407c-84e1-4818-bec2-4abd7cbf5308
 translation-type: tm+mt
 source-git-commit: 5908e5a3521966496aeec0ef730e4a704fddfb68
+workflow-type: tm+mt
+source-wordcount: '206'
+ht-degree: 0%
 
 ---
 
 
-# Functies van Primetime TVSDK {#primetime-tvsdk-features}
+# Premimetime-TVSDK-functies {#primetime-tvsdk-features}
 
 TVSDK voor iOS bevat verschillende functies en biedt de volgende hoofdmogelijkheden:
 
