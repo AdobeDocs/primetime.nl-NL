@@ -6,11 +6,14 @@ title: SNELLER EN OPLOSSEN EN INVOEGEN
 uuid: 85da0e92-17fe-4001-a53c-085dadd09756
 translation-type: tm+mt
 source-git-commit: 040655d8ba5f91c98ed0584c08db226ffe1e0f4e
+workflow-type: tm+mt
+source-wordcount: '242'
+ht-degree: 0%
 
 ---
 
 
-# SNELLER EN OPLOSSEN EN INVOEGEN{#fer-ad-resolving-and-insertion}
+# FER en oplossen{#fer-ad-resolving-and-insertion}
 
 FER-inhoud (Full Event Replay) is een live stream die wordt omgezet in VOD door de tag #EXT-X-ENDLIST toe te voegen aan het einde van het manifestbestand. De stream behoudt de advertentiemarkeringen.
 
@@ -31,4 +34,4 @@ FER-gedrag voor opheffen en invoegen is vergelijkbaar met live opheffen en invoe
 1. Hiermee vervangt u delen van de hoofdinhoud door extra einden van dezelfde duur
 1. Berekent indien nodig de virtuele tijdlijn opnieuw.
 
-**Beperking:** Browser-TVSDK ondersteunt alleen het afspelen van HLS FER-streams. Bovendien worden MP4-advertenties in het midden niet ondersteund met FER-streams.
+**Beperking:** Browser TVSDK ondersteunt alleen het afspelen van HLS FER-streams. Bovendien worden MP4-advertenties in het midden niet ondersteund met FER-streams.
