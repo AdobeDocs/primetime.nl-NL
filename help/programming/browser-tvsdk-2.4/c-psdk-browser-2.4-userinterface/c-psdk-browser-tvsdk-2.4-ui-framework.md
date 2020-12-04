@@ -1,18 +1,21 @@
 ---
-description: Het UI-framework is een UI-laag boven op Browser-TVSDK, die uit het vak diverse aan de videospeler gerelateerde UI-constructies biedt. U kunt een zeer aanpasbare speler tot stand brengen door de puntveranderingen aan te brengen die voor uw milieu aangewezen zijn.
-seo-description: Het UI-framework is een UI-laag boven op Browser-TVSDK, die uit het vak diverse aan de videospeler gerelateerde UI-constructies biedt. U kunt een zeer aanpasbare speler tot stand brengen door de puntveranderingen aan te brengen die voor uw milieu aangewezen zijn.
+description: Het UI-framework is een UI-laag boven op Browser-TVSDK, die uit het vak diverse aan videospelers gerelateerde UI-constructies biedt. U kunt een zeer aanpasbare speler tot stand brengen door de puntveranderingen aan te brengen die voor uw milieu aangewezen zijn.
+seo-description: Het UI-framework is een UI-laag boven op Browser-TVSDK, die uit het vak diverse aan videospelers gerelateerde UI-constructies biedt. U kunt een zeer aanpasbare speler tot stand brengen door de puntveranderingen aan te brengen die voor uw milieu aangewezen zijn.
 seo-title: Het UI-framework
 title: Het UI-framework
 uuid: 8460d65c-b9aa-40d0-9e68-771b9f73a7b4
 translation-type: tm+mt
 source-git-commit: 2399515edaad49341cfa406a13887bcc8a3562be
+workflow-type: tm+mt
+source-wordcount: '886'
+ht-degree: 0%
 
 ---
 
 
 # Het UI-framework {#the-ui-framework}
 
-Het UI-framework is een UI-laag boven op Browser-TVSDK, die uit het vak diverse aan de videospeler gerelateerde UI-constructies biedt. U kunt een zeer aanpasbare speler tot stand brengen door de puntveranderingen aan te brengen die voor uw milieu aangewezen zijn.
+Het UI-framework is een UI-laag boven op Browser-TVSDK, die uit het vak diverse aan videospelers gerelateerde UI-constructies biedt. U kunt een zeer aanpasbare speler tot stand brengen door de puntveranderingen aan te brengen die voor uw milieu aangewezen zijn.
 
 >[!TIP]
 >
@@ -20,9 +23,9 @@ Het UI-framework is een UI-laag boven op Browser-TVSDK, die uit het vak diverse 
 
 U kunt uw eigen gedrag herschrijven of de functionaliteit van bepaalde standaardgedragingen overschrijven. U kunt het gedrag dat bij SDK wordt geleverd ook hergebruiken door het gedrag helemaal zelf te schrijven.
 
-## Basisspeler maken {#section_30E4812C4DDA4B519C9C837930B6AE45}
+## Basisspeler {#section_30E4812C4DDA4B519C9C837930B6AE45} maken
 
-`primetimevisualapi.min.js` is de UI-frameworkbibliotheek en alle functionaliteit ervan wordt beschikbaar gemaakt via de algemene objectpptp. In het volgende voorbeeld wordt de onderliggende speler gemaakt door `videoPlayer` methoden:
+`primetimevisualapi.min.js` is de UI-frameworkbibliotheek en alle functionaliteit ervan wordt beschikbaar gemaakt via de algemene objectpptp. In het volgende voorbeeld wordt met de methode `videoPlayer` de onderliggende speler gemaakt:
 
 ```js
 <script src="scripts/primetimevisualapi.min.js"></script> 
@@ -33,19 +36,19 @@ U kunt uw eigen gedrag herschrijven of de functionaliteit van bepaalde standaard
 </script>
 ```
 
-## De speler configureren {#section_9FC936B983CD40439E6D7675197B226C}
+## De speler {#section_9FC936B983CD40439E6D7675197B226C} configureren
 
 U kunt de speler op een van de volgende manieren configureren:
 
 * Het JSON-object gebruiken
 * API&#39;s gebruiken
 
-Voor het genereren van het JSON-object biedt Browser-TVSDK een hulpprogramma UI Configurator. In het hulpmiddel, kunt u diverse montages selecteren, klikken **[!UICONTROL Test Configuration]** om de montages te verifiëren, en klik **[!UICONTROL Download Configuration]** om de montages te downloaden. De inhoud van het gedownloade bestand wordt gebruikt als JSON-object dat moet worden doorgegeven aan de `ptp.videoPlayer` API.
+Voor het genereren van het JSON-object biedt Browser-TVSDK een hulpprogramma UI Configurator. In het hulpmiddel, kunt u diverse montages selecteren, **[!UICONTROL Test Configuration]** klikken om de montages te verifiëren, en **[!UICONTROL Download Configuration]** te klikken om de montages te downloaden. De inhoud van het gedownloade bestand wordt gebruikt als JSON-object dat moet worden doorgegeven aan de API `ptp.videoPlayer`.
 
 **Het hulpprogramma** UI Configurator uitvoeren:
 
-1. Host de `frameworks` map, die beschikbaar is in Browser-TVSDK, op een lokale webserver.
-1. Als u het gereedschap wilt openen, opent u een browser en navigeert u naar `< path-to-hosted-frameworks-folder>/ui-framework/ui-configurator/`het gereedschap.
+1. Host de map `frameworks`, die beschikbaar is in Browser-TVSDK, op een lokale webserver.
+1. Als u het gereedschap wilt openen, opent u een browser en gaat u naar `< path-to-hosted-frameworks-folder>/ui-framework/ui-configurator/`.
 
 **Het gedrag van de speler configureren**
 
@@ -55,13 +58,13 @@ U kunt het spelergedrag op één van de volgende manieren vormen:
 >
 >Voor sommige instellingen zijn beide opties beschikbaar.
 
-* **Het gebruiken van videoBehavior APIs** keert terug `ptp.videoPlayer` `ptp.videoBehavior`, die u toestaat om de onderliggende videospeler te vormen. Als een bepaalde instelling voor afspelen moet worden geconfigureerd, kunt u deze optie gebruiken.
+* **Het gebruiken van videoBehavior** `ptp.videoPlayer` APIs keert terug  `ptp.videoBehavior`, die u toestaat om de onderliggende videospeler te vormen. Als een bepaalde instelling voor afspelen moet worden geconfigureerd, kunt u deze optie gebruiken.
 
    ```js
    player.setAbrControlParameters ({object})
    ```
 
-* **Wanneer u dit object gebruikt en een configuratieobject doorgeeft aan de functie** videoPlayer, kan het gedrag van de gebruikersinterface worden geconfigureerd naast de hierboven beschreven afspeelinstellingen. De aanroeper moet de parameters specificeren die moeten worden veranderd, en de speler zal standaardwaarden voor de niet gespecificeerde parameters blijven gebruiken.
+* **Als u een configuratieobject doorgeeft aan de** functie videoPlayer, kan het gedrag van de interface worden geconfigureerd naast de hierboven beschreven afspeelinstellingen. De aanroeper moet de parameters specificeren die moeten worden veranderd, en de speler zal standaardwaarden voor de niet gespecificeerde parameters blijven gebruiken.
 
    ```js
    var player = ptp.videoPlayer('#video1', { 
@@ -76,11 +79,11 @@ U kunt het spelergedrag op één van de volgende manieren vormen:
 
    Raadpleeg de sectie Structuur van weergaveobjecten hieronder voor de structuur van het configuratieobject.
 
-* **Toegang tot AdobePSDK.MediaPlayer** U kunt `videoPlayer.getMediaPlayer` in bepaalde gevallen van geavanceerd gebruik gebruiken waar u toegang tot de MediaPlayer van Browser TVSDK nodig hebt.
+* **Toegang tot AdobePSDK.** MediaPlayerU kunt  `videoPlayer.getMediaPlayer` in bepaalde gevallen van geavanceerd gebruik gebruiken waar u toegang tot de MediaPlayer van Browser TVSDK nodig hebt.
 
-* **Vormend het villen van de speler** Voor meer informatie over het villen van de speler, zie de [Speler](../../browser-tvsdk-2.4/c-psdk-browser-2.4-userinterface/c-psdk-browser-tvsdk-2.4-skin-the-player.md).
+* **Wanneer u de skin van de** speler configureert, raadpleegt u  [Skins toewijzen aan de speler](../../browser-tvsdk-2.4/c-psdk-browser-2.4-userinterface/c-psdk-browser-tvsdk-2.4-skin-the-player.md) voor meer informatie over het toewijzen van skins aan de speler.
 
-## Standaardgedrag wijzigen {#section_D5D692638FFF4BEF81F7BE70E438CCE9}
+## Een standaardgedrag wijzigen {#section_D5D692638FFF4BEF81F7BE70E438CCE9}
 
 In UI kaderterminologie, is een gedrag een constructie die het visuele deel en het interactiedeel van een specifieke component bepaalt. Met de objectstructuur die hieronder wordt beschreven, kunt u wijzigen wat u in het gedrag wilt wijzigen.
 
@@ -111,15 +114,15 @@ var player = ptp.videoPlayer('.videoHolder', {
 
 >[!NOTE]
 >
->Afhankelijk van de aanpassing die u wilt, kunt u bepaalde functionaliteit in het gedrag met voeten treden of uw eigen gedrag schrijven. Zie de documentatie over de API van het [UI-framework](https://help.adobe.com/en_US/primetime/api/psdk/btvsdk-ui-framework/index.html) voor meer informatie over welke functionaliteit kan worden overschreven.
+>Afhankelijk van de aanpassing die u wilt, kunt u bepaalde functionaliteit in het gedrag met voeten treden of uw eigen gedrag schrijven. Zie de [UI-framework](https://help.adobe.com/en_US/primetime/api/psdk/btvsdk-ui-framework/index.html) API-documentatie voor meer informatie over welke functionaliteit kan worden overschreven.
 
 ## Verwijzingen {#section_0A76A3F44D8A49B09FE4C83F3FACCB76}
 
 Hier volgt een aantal aanvullende informatie:
 
-* **De de objecten van de Configuratie van de mening structuur** dit is de volledige objecten structuur die alle standaardgedrag op hiërarchische wijze met de standaardelementen voor het gedrag noemt. In de steekproefconfiguratie, werden de fabrieken UI gebruikt om het element tot stand te brengen. U kunt de elementen samenstellen met dezelfde of door u gewenste methoden.
+* **De voorwerpen van de Configuratie van de mening** structuurDit is de volledige objecten structuur die alle standaardgedrag op hiërarchische wijze met de standaardelementen voor het gedrag noemt. In de steekproefconfiguratie, werden de fabrieken UI gebruikt om het element tot stand te brengen. U kunt de elementen samenstellen met dezelfde of door u gewenste methoden.
 
-   U hoeft alleen de onderdelen op te geven die u wilt wijzigen en de rest van de functionaliteit wordt geselecteerd op basis van standaardwaarden. Om te beginnen, afhankelijk van het gebruikscase, moet u de `SingleViewConfigurationObject` of de `MultiViewConfigurationObject` structuur leveren.
+   U hoeft alleen de onderdelen op te geven die u wilt wijzigen en de rest van de functionaliteit wordt geselecteerd op basis van standaardwaarden. Om te beginnen, afhankelijk van het gebruiksgeval, moet u `SingleViewConfigurationObject` of `MultiViewConfigurationObject` structuur leveren.
 
    ```js
    var DEFAULT_CONTROL_BAR_CONFIG = { 
@@ -766,13 +769,13 @@ Hier volgt een aantal aanvullende informatie:
    };
    ```
 
-* **Helperconstructies** Deze constructie bestaat uit de volgende elementen:
+* **Helper** constructsDeze constructie bestaat uit het volgende:
 
-   * **Factoren** om de visuele elementen tot stand te brengen, kunt u gebruiken `ptp.factories.simpleButtonFactory`, `ptp.factories.simpleDivFactory`, `ptp.factories.simpleHRFactory`, en `ptp.factories.simpleSliderFactory`. Zie de documentatie van de API van het [UI-framework](https://help.adobe.com/en_US/primetime/api/psdk/btvsdk-ui-framework/index.html) voor meer informatie.
+   * **** FactorenOm de visuele elementen tot stand te brengen, kunt u gebruiken  `ptp.factories.simpleButtonFactory`,  `ptp.factories.simpleDivFactory`,  `ptp.factories.simpleHRFactory`, en  `ptp.factories.simpleSliderFactory`. Zie de [UI Framework](https://help.adobe.com/en_US/primetime/api/psdk/btvsdk-ui-framework/index.html) API-documentatie voor meer informatie.
 
-   * **Mixins** Mixins zijn composable modules die in het gedrag kunnen worden samengesteld om gemeenschappelijke concepten te gebruiken. Veel van de componenten willen zich bijvoorbeeld bewust zijn van wijzigingen die hun gedrag kunnen beïnvloeden wanneer bijvoorbeeld een advertentie wordt afgespeeld. Al deze elementen voegen een `adBreak` klasse toe.
+   * **** MixinsMixins zijn composable modules die in het gedrag kunnen worden samengesteld om gemeenschappelijke concepten te gebruiken. Veel van de componenten willen zich bijvoorbeeld bewust zijn van wijzigingen die hun gedrag kunnen beïnvloeden wanneer bijvoorbeeld een advertentie wordt afgespeeld. Al deze elementen voegen een klasse `adBreak` toe.
 
-      Hier is een voorbeeld over hoe te om de ingebouwde mengeling uit te voeren `adBreakStyling`:
+      Hier is een voorbeeld over hoe te om de ingebouwde mengeling `adBreakStyling` uit te voeren:
 
       ```js
       adBreakStyling = function (element, player) { 
@@ -798,7 +801,7 @@ Hier volgt een aantal aanvullende informatie:
       }
       ```
 
-      Nu `customBehavior` kunnen alle methoden worden gebruikt waarmee `adBreakStyling`, in dit voorbeeld, wordt blootgesteld `manageAdBreakStyle`. Een extra gebruiksgeval is wanneer een mixin gebeurtenisluisteraars kan toevoegen, en in de manager, kan de mixin het element op één of andere manier wijzigen. Vervolgens hebben de componenten die deze mix gebruiken automatisch deze functionaliteit.
+      `customBehavior` kan nu alle methodes gebruiken die door `adBreakStyling` worden blootgesteld, die in dit voorbeeld `manageAdBreakStyle` is. Een extra gebruiksgeval is wanneer een mixin gebeurtenisluisteraars kan toevoegen, en in de manager, kan de mixin het element op één of andere manier wijzigen. Vervolgens hebben de componenten die deze mix gebruiken automatisch deze functionaliteit.
 
-   * **Gebruikt** Sommige nut, zoals `ptp.elementGetter`, die in configuratiesectie en `ptp.deepmerge`, wordt gebruikt kunnen u schrijven of gedrag uitbreiden. Zie de documentatie van de API van het [UI-framework](https://help.adobe.com/en_US/primetime/api/psdk/btvsdk-ui-framework/index.html) voor meer informatie.
+   * **** UtilsSommige nut, zoals  `ptp.elementGetter`, die in configuratiesectie en  `ptp.deepmerge`, wordt gebruikt kunnen u schrijven of gedrag uitbreiden. Zie de [UI Framework](https://help.adobe.com/en_US/primetime/api/psdk/btvsdk-ui-framework/index.html) API-documentatie voor meer informatie.
 
