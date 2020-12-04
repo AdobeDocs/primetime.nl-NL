@@ -6,6 +6,9 @@ title: Reageren op klikken op advertenties
 uuid: abc5de2f-3ab0-4e00-908c-ea8b31387d4f
 translation-type: tm+mt
 source-git-commit: 3fdae2b6babb578d2cacff970fd9c7b53ad2c5dc
+workflow-type: tm+mt
+source-wordcount: '360'
+ht-degree: 0%
 
 ---
 
@@ -17,16 +20,16 @@ TVSDK biedt u informatie zodat u op doorklikadvertenties kunt werken. Terwijl u 
 Voor TVSDK voor Android kan alleen op lineaire advertenties worden geklikt.
 Wanneer een gebruiker op een advertentie of een verwante knop klikt, moet de toepassing reageren. TVSDK biedt u informatie over de doel-URL voor de klik.
 
-1. Registreer u om een gebeurtenislistener voor TVSDK in te stellen en de doorklikgegevens op te geven `AdClickedEventListener.onAdClicked`.
+1. Registreer `AdClickedEventListener.onAdClicked` om een gebeurtenislistener voor TVSDK in te stellen en de doorklikinformatie te verstrekken.
 
    Wanneer een gebruiker op een advertentie of een verwante knop klikt, verzendt TVSDK dit bericht, inclusief informatie over de bestemming voor de klik.
 1. Gebruikersinteracties controleren op klikbare advertenties.
-1. Als de gebruiker op de advertentie of knop klikt om TVSDK op de hoogte te brengen, roept u `notifyClick` de `MediaPlayerView`.
-1. Luister naar de `onAdClick(AdClickEvent event)` gebeurtenis van TVSDK.
-1. Als u de doorklikURL en verwante informatie wilt ophalen, gebruikt u de methoden getter voor de `AdClickEvent` instantie.
+1. Wanneer de gebruiker de advertentie of knop aanraakt of erop klikt, om TVSDK op de hoogte te brengen, roept u `notifyClick` op `MediaPlayerView`.
+1. Luister naar de `onAdClick(AdClickEvent event)`-gebeurtenis van TVSDK.
+1. Als u de doorklikURL en verwante informatie wilt ophalen, gebruikt u de methoden getter voor de instantie `AdClickEvent`.
 1. De video pauzeren.
 
-   Zie Afspelen [pauzeren en hervatten voor meer informatie over het pauzeren van de video](../../ad-insertion/clickable-ads/android-3x-pausing-resuming-playback.md).
+   Zie [Afspelen pauzeren en hervatten](../../ad-insertion/clickable-ads/android-3x-pausing-resuming-playback.md) voor meer informatie over het pauzeren van de video.
 1. Gebruik de doorklikinformatie om de advertentie-door URL en de verwante informatie te tonen. U kunt de informatie bijvoorbeeld op een van de volgende manieren weergeven:
 
    * In uw toepassing, door klik-door URL in browser te openen.
