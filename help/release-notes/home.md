@@ -30,7 +30,7 @@ Raadpleeg de voor meer informatie over de huidige uitgebrachte versie voor [Andr
 
 De release was vooral gericht op het oplossen van problemen met klanten.
 
-Raadpleeg de voor meer informatie over de huidige uitgebrachte versie voor [iOS](../release-notes/tvsdk-3x-ios.md).
+Zie voor meer informatie over de huidige uitgebrachte versie voor [iOS](../release-notes/tvsdk-3x-ios.md).
 
 ## Zie ook
 
