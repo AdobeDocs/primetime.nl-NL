@@ -20,7 +20,7 @@ Gebruik de volgende tips om de prestaties te verbeteren:
 
    >[!NOTE]
    >
-   >Als u meerdere webtoepassingen uitvoert in dezelfde Tomcat-instantie en `jsafe.dll` het pad heeft, kan alleen de eerste webtoepassing die de `jsafe.dll` bibliotheek laadt, deze laden. Daarom krijgt alleen de eerste webtoepassing het voordeel van de native ondersteuning. Plaats in dergelijke gevallen `cryptoj.jar`buiten het WAR-bestand om de prestaties van alle webtoepassingen te verbeteren. Bijvoorbeeld in de `<tomcat_installation_folder>/lib` map.
+   >Als u meerdere webtoepassingen uitvoert in dezelfde Tomcat-instantie en `jsafe.dll` op het pad hebt, kan alleen de eerste webtoepassing die wordt geladen, de `jsafe.dll`-bibliotheek laden. Daarom krijgt alleen de eerste webtoepassing het voordeel van de native ondersteuning. Plaats in dergelijke gevallen `cryptoj.jar`buiten het WAR-bestand om de prestaties van alle webtoepassingen te verbeteren. Bijvoorbeeld in de map `<tomcat_installation_folder>/lib`.
 
 * Een 64-bits besturingssysteem, zoals de 64-bits versie van Red Hat® of Windows, biedt veel betere prestaties dan een 32-bits besturingssysteem.
 
