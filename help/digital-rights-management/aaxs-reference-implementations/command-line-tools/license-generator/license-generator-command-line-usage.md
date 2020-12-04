@@ -4,11 +4,14 @@ title: Gebruik van opdrachtregels
 uuid: b3a995de-653e-491a-9262-86dc56b9ce31
 translation-type: tm+mt
 source-git-commit: 29bc8323460d9be0fce66cbea7c6fce46df20d61
+workflow-type: tm+mt
+source-wordcount: '280'
+ht-degree: 0%
 
 ---
 
 
-# Gebruik van opdrachtregels {#command-line-usage}
+# Gebruik van opdrachtregel {#command-line-usage}
 
 Gebruik de volgende syntaxis om een licentie te genereren:
 
@@ -22,7 +25,7 @@ Gebruik de volgende syntaxis om een licentie te genereren:
 </i class="+ topic>
 ```
 
-`metadata` is een .metadata bestand met de Adobe Access DRM-metagegevens. Dit bestand kan met de `-d -m` optie Media Packager worden verkregen van beveiligde inhoud.
+`metadata` is een .metadata bestand dat de Adobe Access DRM-metagegevens bevat. Dit bestand kan worden verkregen van beveiligde inhoud met de optie `-d -m` van Media Packager.
 
 Als u een eerder gegenereerde licentie wilt weergeven, gebruikt u de volgende syntaxis:
 
@@ -33,7 +36,7 @@ Als u een eerder gegenereerde licentie wilt weergeven, gebruikt u de volgende sy
 </i class="+ topic>
 ```
 
-`license` is een bestand met een Adobe Access-licentie die is gegenereerd door de licentiegenerator.
+`license` is een bestand met een Adobe Access-licentie die door de licentiegenerator is gegenereerd.
 
 In de volgende tabel worden de opdrachtregelopties beschreven die samen met de eerder vermelde syntaxis kunnen worden opgegeven:
 
@@ -75,7 +78,7 @@ In de volgende tabel worden de opdrachtregelopties beschreven die samen met de e
   </tr> 
   <tr rowsep="1" class="- topic/row "> 
    <td colname="1" class="- topic/entry "><span class="+ topic/ph pr-d/codeph codeph">-r ontvanger-cert</span> </td> 
-   <td colname="2" class="- topic/entry ">Genereer een licentie voor de opgegeven ontvanger. Een apparaat of domeincertificaat kan worden gebruikt. U kunt meerdere <span class="+ topic/ph pr-d/codeph codeph"> -r- </span>opties opgeven om een licentie te maken voor meerdere ontvangers. </td> 
+   <td colname="2" class="- topic/entry ">Genereer een licentie voor de opgegeven ontvanger. Een apparaat of domeincertificaat kan worden gebruikt. Er kunnen meerdere <span class="+ topic/ph pr-d/codeph codeph"> -r </span>opties worden opgegeven om een licentie voor meerdere ontvangers te maken. </td> 
   </tr> 
   <tr rowsep="0" class="- topic/row "> 
    <td colname="1" class="- topic/entry "><span class="+ topic/ph pr-d/codeph codeph">-root-root-filename</span> </td> 
