@@ -6,6 +6,9 @@ title: Belangrijkste toepassingen van CRS
 uuid: df2caa67-bc94-4146-9b93-14edc060c3d5
 translation-type: tm+mt
 source-git-commit: 358c5b02d47f23a6adbc98e457e56c8220cae6e9
+workflow-type: tm+mt
+source-wordcount: '396'
+ht-degree: 0%
 
 ---
 
@@ -14,13 +17,13 @@ source-git-commit: 358c5b02d47f23a6adbc98e457e56c8220cae6e9
 
 CRS verstrekt just-in-time (JIT) en asynchrone het herverpakken en omzetten HLS-aan-HLS. Het resultaat van het opnieuw verpakken is een HLS-opgemaakte versie van het origineel en de creatieve versie. CRS plaatst de HLS geformatteerde versie op de server van het netwerk van de inhoudslevering (CDN) voor gebruik wanneer nodig.
 
-In JIT begint het herverpakken van Adobe Primetime en wordt het opnieuw verpakken wanneer er voor het eerst een niet-HLS en creatieve functie wordt aangetroffen. Dit betekent meestal dat er tijdens het herverpakken kansen verloren gaan om de advertentie uit te voeren.
+In JIT begint het herverpakken van Adobe Primetime en begint het invoegproces wanneer het voor het eerst een niet-HLS en creatieve functie tegenkomt. Dit betekent meestal dat er tijdens het herverpakken kansen verloren gaan om de advertentie uit te voeren.
 
 In asynchrone herverpakking, wordt de advertentie getranscodeerd en opgeslagen alvorens het nodig is, die die verloren kansen kunnen elimineren.
 
 Bij HLS-aan-HLS-omzetting, herformatteert CRS HLS en creatief in aangewezen grote brokken om verenigbare playback te verzekeren.
 
-## Just-in-Time herverpakken {#section_1BA344F2300B49F291865A7461EDFEAE}
+## Just-in-Time-herverpakking {#section_1BA344F2300B49F291865A7461EDFEAE}
 
 De volgorde voor JIT-herverpakken is als volgt:
 
@@ -30,9 +33,9 @@ De volgorde voor JIT-herverpakken is als volgt:
 1. Als het formaat niet HLS is en de server CDN heeft geen getranscodeerde versie, gaat de duidelijke server de advertentie tot CRS over, die de advertentie transcodeert en het resultaat op de server CDN voor later gebruik opslaat.
 1. De manifestserver keert de inhoud zonder de advertentie terug.
 
-## Asynchrone herverpakking {#section_ACDFB43FDA4B445CB9F2A107FEB4F2F7}
+## Asynchroon opnieuw verpakken {#section_ACDFB43FDA4B445CB9F2A107FEB4F2F7}
 
-Met de API die in de [API](../creative-repackaging-service/api-repackage.md) voor herverpakken wordt beschreven, kunt u een niet-HLS-creatief pretranscoderen om het verlies van indrukken tot een minimum te beperken en de monetisering te maximaliseren.
+U kunt de API gebruiken die in [API opnieuw verpakken](../creative-repackaging-service/api-repackage.md) wordt beschreven om een niet-HLS creatief pretranscoderen om verlies van indrukkingen te minimaliseren en monetisatie te maximaliseren.
 
 ## HLS-aan-HLS-omzetting {#section_877A0E7E8FAF4C2DB086A31C24D53435}
 
