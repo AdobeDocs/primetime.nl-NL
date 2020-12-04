@@ -6,6 +6,9 @@ title: 302 omleidingsoptimalisatie uitschakelen of inschakelen
 uuid: 7561839f-aec6-4a59-a07a-7e4fa043fdc2
 translation-type: tm+mt
 source-git-commit: 5908e5a3521966496aeec0ef730e4a704fddfb68
+workflow-type: tm+mt
+source-wordcount: '126'
+ht-degree: 1%
 
 ---
 
@@ -20,7 +23,7 @@ Deze functie is standaard ingeschakeld en u kunt deze instelling wijzigen.
 
 ## 302 omleidingsoptimalisatie uitschakelen of inschakelen{#disable-or-enable-redirect-optimization}
 
-Gebruik de `useRedirectedUrl` eigenschap om 302 omleiding in of uit te schakelen (true).
+Gebruik de eigenschap `useRedirectedUrl` om 302 omleiding in of uit te schakelen (true).
 Bijvoorbeeld:
 
 ```java
