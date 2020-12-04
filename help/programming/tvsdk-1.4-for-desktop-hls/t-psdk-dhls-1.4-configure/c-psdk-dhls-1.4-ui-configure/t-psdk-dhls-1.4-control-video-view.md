@@ -19,11 +19,11 @@ U kunt de positie en grootte van de videoweergave bepalen met het MediaPlayerVie
 
 TVSDK probeert standaard de hoogte-breedteverhouding van de videoweergave te behouden wanneer de grootte of de positie van de video verandert (als gevolg van een wijziging die door de toepassing, een profielschakelaar of een inhoudsschakelaar is aangebracht, enz.).
 
-U kunt het standaardgedrag voor de verhouding overschrijven door een ander *schaalbeleid* op te geven. Geef het schaalbeleid op met de `MediaPlayerView` eigenschap van het `scalePolicy` object. Het standaardschaalbeleid `MediaPlayerView`van de klasse wordt ingesteld met een instantie van de `MaintainAspectRatioScalePolicy` klasse. Als u het schaalbeleid opnieuw wilt instellen, vervangt u de standaardinstantie van `MaintainAspectRatioScalePolicy` Aan `MediaPlayerView.scalePolicy` door uw eigen beleid. (U kunt de `scalePolicy` eigenschap niet instellen op een null-waarde.)
+U kunt het standaardgedrag van de aspectverhouding met voeten treden door een verschillend *schaalbeleid* te specificeren. Geef het schaalbeleid op met de eigenschap `MediaPlayerView` van het object. `scalePolicy` Het standaardschaalbeleid van `MediaPlayerView` wordt geplaatst met een geval van de `MaintainAspectRatioScalePolicy` klasse. Om het schaalbeleid terug te stellen, vervang de standaardinstantie van `MaintainAspectRatioScalePolicy` op `MediaPlayerView.scalePolicy` met uw eigen beleid. (U kunt de eigenschap `scalePolicy` niet instellen op een null-waarde.)
 
-1. Implementeer de `MediaPlayerViewScalePolicy` interface om uw eigen schaalbeleid te maken.
+1. Implementeer de interface `MediaPlayerViewScalePolicy` om uw eigen schaalbeleid te maken.
 
-   De methode `MediaPlayerViewScalePolicy` heeft één methode:
+   De `MediaPlayerViewScalePolicy` heeft één methode:
 
    ```
    public function adjust(viewPort:Rectangle, 
@@ -32,12 +32,13 @@ U kunt het standaardgedrag voor de verhouding overschrijven door een ander *scha
 
    >[!NOTE]
    >
-   >TVSDK gebruikt een `StageVideo` object voor de weergave van de video en omdat `StageVideo` objecten zich niet in het weergaveoverzicht bevinden, bevat de `viewPort` parameter de absolute coördinaten van de video.
+   >TVSDK gebruikt een `StageVideo`-object voor het weergeven van de video en omdat `StageVideo`-objecten niet in het weergaveoverzicht staan, bevat de parameter `viewPort` de absolute coördinaten van de video.
    >
    >
    >Bijvoorbeeld:
    >
-   >```
+   >
+   ```
    >public class CustomScalePolicy implements MediaPlayerViewScalePolicy { 
    >       /** 
    >         * Default constructor. 
@@ -60,7 +61,7 @@ U kunt het standaardgedrag voor de verhouding overschrijven door een ander *scha
    >}
    >```
 
-1. Wijs uw implementatie toe aan de `MediaPlayerView` eigenschap.
+1. Wijs uw implementatie aan het `MediaPlayerView` bezit toe.
 
    ```
    var view:MediaPlayerView = MediaPlayerView.create(stage.stageVideos[0]); 
