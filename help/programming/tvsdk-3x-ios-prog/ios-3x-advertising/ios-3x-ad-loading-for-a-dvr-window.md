@@ -6,6 +6,9 @@ title: Advertentie laden voor een DVR-venster
 uuid: 3ae1fbf6-deae-4f39-a17d-43d1fe3cb975
 translation-type: tm+mt
 source-git-commit: 557f42cd9a6f356aa99e13386d9e8d65e043a6af
+workflow-type: tm+mt
+source-wordcount: '247'
+ht-degree: 0%
 
 ---
 
@@ -28,7 +31,7 @@ U kunt als volgt een DVR-venster besturen en laden:
 
 >[!NOTE]
 >
->De standaardwaarde is `NO`en deze optie laadt alleen advertenties vanaf het huidige actieve punt.
+>De standaardwaarde is `NO` en deze optie laadt alleen advertenties vanaf het huidige actieve punt.
 
 Bijvoorbeeld:
 
