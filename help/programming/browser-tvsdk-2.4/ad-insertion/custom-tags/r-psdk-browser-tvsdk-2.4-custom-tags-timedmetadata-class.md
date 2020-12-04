@@ -6,6 +6,9 @@ title: Timed metadata-klasse
 uuid: 3f276618-5f61-4b41-bd2d-78e7f32178d9
 translation-type: tm+mt
 source-git-commit: 040655d8ba5f91c98ed0584c08db226ffe1e0f4e
+workflow-type: tm+mt
+source-wordcount: '257'
+ht-degree: 0%
 
 ---
 
@@ -14,7 +17,7 @@ source-git-commit: 040655d8ba5f91c98ed0584c08db226ffe1e0f4e
 
 Wanneer Browser TVSDK een geabonneerde tag in de afspeellijst/het manifest detecteert, probeert de speler de tag automatisch te verwerken en beschikbaar te maken als een object TimedMetadata.
 
-De `TimedMetadata` klasse biedt de volgende elementen:
+De klasse `TimedMetadata` biedt de volgende elementen:
 
 <table id="table_5827A0626EDC45F68DC3E7644F3EFF69"> 
  <thead> 
@@ -47,7 +50,7 @@ De `TimedMetadata` klasse biedt de volgende elementen:
   <tr> 
    <td colname="col1"> <p>name </p> </td> 
    <td colname="col02"> <p>Getal </p> </td> 
-   <td colname="col2"> <p>De naam van de getimede metagegevens. </p> <p>Als het type TAG is, vertegenwoordigt de waarde de naam van het actiepunt/de tag. Als het type ID3 is, is de waarde null. </p> </td> 
+   <td colname="col2"> <p>De naam van de getimede metagegevens. </p> <p>Wanneer het type TAG is, vertegenwoordigt de waarde de naam van het actiepunt/de tag. Als het type ID3 is, is de waarde null. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>content </p> </td> 
