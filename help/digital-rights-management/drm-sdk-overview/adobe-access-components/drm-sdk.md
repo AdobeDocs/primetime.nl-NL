@@ -6,6 +6,9 @@ title: Java SDK, Flash Player en Adobe AIR-client
 uuid: e6daed27-3803-4ef7-ba25-4a180af7502f
 translation-type: tm+mt
 source-git-commit: 635e2893439c5459907c54d2c3bd86f58da0eec5
+workflow-type: tm+mt
+source-wordcount: '462'
+ht-degree: 0%
 
 ---
 
@@ -16,7 +19,7 @@ Primetime DRM wordt geleverd als een Java SDK die de bouwstenen verstrekt waarva
 
 De Java API&#39;s in de SDK worden in de volgende subsecties beschreven.
 
-## Java API&#39;s voor het beheer van apparaatgroepdomeinen{#java-apis-for-managing-device-group-domains}
+## Java API&#39;s voor het beheer van apparaatgroepsdomeinen{#java-apis-for-managing-device-group-domains}
 
 Deze APIs wordt gebruikt om de server toe te staan om cliëntverzoeken te behandelen om zich bij te sluiten van en het verlaten van de domeinen van de apparatengroep.
 
