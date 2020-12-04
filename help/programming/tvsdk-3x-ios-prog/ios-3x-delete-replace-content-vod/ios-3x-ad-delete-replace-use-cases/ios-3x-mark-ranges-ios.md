@@ -6,19 +6,22 @@ title: Markeringsbereiken
 uuid: ca544f64-ef83-4c08-8ec5-1bc07fdba3c4
 translation-type: tm+mt
 source-git-commit: a63768e51c911914a6ba9d884e2587fa34939f9d
+workflow-type: tm+mt
+source-wordcount: '205'
+ht-degree: 0%
 
 ---
 
 
-# Gebruik hoofdletters en kleine letters om advertenties te verwijderen en te vervangen {#use-cases-delete-replace-ads}
+# Gebruik hoofdletters en kleine letters om advertenties {#use-cases-delete-replace-ads} te verwijderen en te vervangen
 
 Hier volgen de gebruiksscenario&#39;s voor het verwijderen en vervangen van advertenties:
 
 ## Markeringsbereiken {#mark-ranges}
 
-U kunt als volgt de inhoudsbereiken `PTTimeRangeCollection` en tekenbereiken implementeren als advertenties:
-1. Bereid het `PTTimeRangeCollection`voor.
-1. Stel het type van de afbeelding in `PTTimeRangeCollection` op `PTTimeRangeCollectionTypeMarkRanges`.
+`PTTimeRangeCollection` implementeren en inhoudsbereiken markeren als advertenties:
+1. Bereid `PTTimeRangeCollection` voor.
+1. Stel het type van de `PTTimeRangeCollection` in op `PTTimeRangeCollectionTypeMarkRanges`.
 
    Deze stap brengt TVSDK op de hoogte dat de aangepaste bereiken moeten worden behandeld als advertenties.
 
@@ -39,7 +42,7 @@ U kunt als volgt de inhoudsbereiken `PTTimeRangeCollection` en tekenbereiken imp
        type:PTTimeRangeCollectionTypeMarkRanges];
    ```
 
-1. Maak het `PTAdMetadata` en stel het `PTTimeRangeCollection`in.
+1. Maak de `PTAdMetadata` en stel de `PTTimeRangeCollection` in.
 
    ```
    // Create the PTPlayerItem metadata 
@@ -71,11 +74,11 @@ U kunt als volgt de inhoudsbereiken `PTTimeRangeCollection` en tekenbereiken imp
    [player play];
    ```
 
-## Bereiken vervangen {#replace-ranges}
+## Bereiken {#replace-ranges} vervangen
 
-U kunt als volgt de inhoudsbereiken implementeren `PTTimeRangeCollection` en verwijderen als advertenties:
-1. Voorbereiden `PTTimeRangeCollection`.
-1. Stel het type van de afbeelding in `PTTimeRangeCollection` op `PTTimeRangeCollectionTypeReplaceRanges`.
+Om `PTTimeRangeCollection` uit te voeren en waaiers van inhoud als advertenties te schrappen:
+1. `PTTimeRangeCollection` voorbereiden.
+1. Stel het type van de `PTTimeRangeCollection` in op `PTTimeRangeCollectionTypeReplaceRanges`.
 
    Deze stap deelt TVSDK mee dat de opgegeven bereiken moeten worden vervangen door alternatieve inhoud (advertenties).
 
@@ -98,9 +101,9 @@ U kunt als volgt de inhoudsbereiken implementeren `PTTimeRangeCollection` en ver
 
    >[!TIP]
    >
-   >Het argument `replacementDuration` is optioneel. Als deze niet is gedefinieerd, `AdServer` bepaalt de code de duur van het ad-einde.
+   >Het argument `replacementDuration` is optioneel. Als deze niet is gedefinieerd, bepaalt `AdServer` de duur van het ad-einde.
 
-1. Maak het `PTAdMetadata` en stel het `PTTimeRangeCollection`in.
+1. Maak de `PTAdMetadata` en stel de `PTTimeRangeCollection` in.
 
    ```
    //Create the PTPlayerItem metadata 
@@ -124,7 +127,7 @@ U kunt als volgt de inhoudsbereiken implementeren `PTTimeRangeCollection` en ver
 
    >[!TIP]
    >
-   >Hoewel het `signalingMode` als `PTAdSignalingModeCustomRanges`wordt geplaatst, wordt deze ad signalerende wijze geplaatst automatisch wanneer het plaatsen van `PTTimeRangeCollection` type `PTTimeRangeCollectionTypeReplace`.
+   >Hoewel `signalingMode` wordt geplaatst als `PTAdSignalingModeCustomRanges`, wordt deze advertentiemodus automatisch geplaatst wanneer het plaatsen van `PTTimeRangeCollection` van type `PTTimeRangeCollectionTypeReplace`.
 
 1. Maak de speler en start het afspelen.
 
@@ -139,11 +142,11 @@ U kunt als volgt de inhoudsbereiken implementeren `PTTimeRangeCollection` en ver
    [player play];
    ```
 
-## Bereiken verwijderen {#delete-ranges}
+## Bereiken {#delete-ranges} verwijderen
 
-U kunt als volgt de inhoudsbereiken implementeren `PTTimeRangeCollection` en verwijderen als advertenties:
-1. Bereid het `PTTimeRangeCollection`voor.
-1. Stel het type van de reeks in `PTTimeRangeCollection` op `PTTimeRangeCollectionTypeDeleteRanges`, die TVSDK laat weten dat de opgegeven bereiken moeten worden verwijderd.
+Om `PTTimeRangeCollection` uit te voeren en waaiers van inhoud als advertenties te schrappen:
+1. Bereid `PTTimeRangeCollection` voor.
+1. Stel het type van de `PTTimeRangeCollection` in op `PTTimeRangeCollectionTypeDeleteRanges`, die TVSDK meldt dat de opgegeven bereiken moeten worden verwijderd.
 
    ```
    #define PSDK_TIMESCALE 100000 
@@ -160,7 +163,7 @@ U kunt als volgt de inhoudsbereiken implementeren `PTTimeRangeCollection` en ver
                                               type:PTTimeRangeCollectionTypeDeleteRanges];
    ```
 
-1. Maak het `PTAdMetadata` en stel het `PTTimeRangeCollection`in.
+1. Maak de `PTAdMetadata` en stel de `PTTimeRangeCollection` in.
 
    ```
    //Create the PTPlayerItem metadata 
@@ -184,7 +187,7 @@ U kunt als volgt de inhoudsbereiken implementeren `PTTimeRangeCollection` en ver
 
    >[!TIP]
    >
-   >Toevoegen vindt plaats na het verwijderen van de aangepaste bereiken op basis van de huidige `PTAdMetadata` en de huidige reeks `PTAdSignalingMode`.
+   >Er wordt een invoeging toegevoegd na het verwijderen van de aangepaste bereiken op basis van `PTAdMetadata` en de huidige `PTAdSignalingMode`.
 
 1. Maak de speler en start het afspelen.
 
