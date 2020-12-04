@@ -6,6 +6,9 @@ title: RBOP Grammar
 uuid: d9064e39-593a-4767-b835-287640b4c94a
 translation-type: tm+mt
 source-git-commit: e60d285b9e30cdd19728e3029ecda995cd100ac9
+workflow-type: tm+mt
+source-wordcount: '486'
+ht-degree: 0%
 
 ---
 
@@ -66,7 +69,7 @@ AnotherRule ::=
    }
    ```
 
-   dan is de volgende instantie ongeldig, omdat er twee `foo` paren binnen hetzelfde object zijn:
+   De volgende instantie zou dan ongeldig zijn, omdat er twee `foo` paren binnen hetzelfde object zijn:
 
    ```
    { 
@@ -98,13 +101,13 @@ AnotherRule ::=
 
    is geldig, omdat het onafhankelijke instanties van hetzelfde object zijn.
 
-1. Voor definities waarbij een of meer reeksen kunnen worden gekozen, behandelt u de tekenreeksen als een set, waarin dubbele items als één item worden beschouwd. Bijvoorbeeld, `["foo", "bar", "foo", "baz"]` is gelijk aan `["foo", "bar", "baz"]`
+1. Voor definities waarbij een of meer reeksen kunnen worden gekozen, behandelt u de tekenreeksen als een set, waarin dubbele items als één item worden beschouwd. `["foo", "bar", "foo", "baz"]` is bijvoorbeeld gelijk aan `["foo", "bar", "baz"]`
 
-1. Voor het definiëren van getallen wordt een spatie gebruikt tussen de regels (bijvoorbeeld `Digit Digits`), maar bij het toepassen van de regel moet een dergelijke spatie niet worden gebruikt.
+1. Voor het definiëren van getallen wordt een spatie gebruikt tussen de regels (bijvoorbeeld `Digit Digits`), maar deze spatie moet niet worden gebruikt bij het toepassen van de regel.
 
-   Bijvoorbeeld, als wij het aantal *123* per de regel NonZeroInteger uitdrukken, zou het als `123` eerder dan `1 2 3`, moeten worden uitgedrukt alhoewel de regel een ruimte tussen NonZeroDigit en Cijfers bevat.
+   Als we bijvoorbeeld het getal *103* per de regel NonZeroInteger uitdrukken, moet deze worden uitgedrukt als `123` in plaats van `1 2 3`, ook al bevat de regel een ruimte tussen NonZeroDigit en Cijfers.
 
-1. Sommige regels staan meerdere formulieren toe. In deze gevallen worden de verschillende formulieren gescheiden door het `'|'` teken.
+1. Sommige regels staan meerdere formulieren toe. In deze gevallen worden de verschillende formulieren gescheiden door het teken `'|'`.
 
    Deze regel:
 
@@ -112,7 +115,7 @@ AnotherRule ::=
    Foo ::= "A" | "B" | "C"
    ```
 
-   betekent dat een exemplaar van `Foo` kan worden vervangen door &quot;A&quot;, &quot;B&quot; of &quot;C&quot;. Dit mag niet worden verward met een formulier dat meerdere regels omvat. hiermee kunt u langere formulieren leesbaarder maken.
+   betekent dat een instantie van `Foo` kan worden vervangen door &quot;A&quot;, &quot;B&quot; of &quot;C&quot;. Dit mag niet worden verward met een formulier dat meerdere regels omvat. hiermee kunt u langere formulieren leesbaarder maken.
 
 ## De grammatica {#section_52189FD66B1A46BA9F8FDDE1D7C8E8E8}
 
@@ -235,7 +238,7 @@ NonZeroDigit ::=
 
 ## Semantiek: Geldige maar ongeldige configuraties {#section_709BE240FF0041D4A1B0A0A7544E4966}
 
-Het onderwerp van de Configuratie *van de Bescherming van de Output van de* Steekproef stelde een geldige configuratie samen met zijn semantische betekenis voor. De vorige sectie in *dit* onderwerp voorlegde de grammaticaregels voor configuraties voor. Hoewel de grammatica helpt syntactische correctheid te verzekeren, zijn er syntactisch wettige configuraties die niet semantisch correct zijn (d.w.z., zijn zij niet logisch). In deze sectie worden configuraties weergegeven die *syntactisch* geldig maar *semantisch* onjuist zijn. Houd er rekening mee dat de voorbeelden in dit gedeelte zijn beperkt tot de minimale structuur die nodig is om het te bespreken scenario te illustreren.
+Het *onderwerp van de Bescherming van de Output van de Steekproef* stelde een geldige configuratie samen met zijn semantische betekenis voor. De vorige sectie in *dit* onderwerp presenteerde de grammaticaregels voor configuraties. Hoewel de grammatica helpt syntactische correctheid te verzekeren, zijn er syntactisch wettige configuraties die niet semantisch correct zijn (d.w.z., zijn zij niet logisch). In deze sectie worden configuraties weergegeven die *syntactisch* legaal zijn, maar *semantisch* onjuist. Houd er rekening mee dat de voorbeelden in dit gedeelte zijn beperkt tot de minimale structuur die nodig is om het te bespreken scenario te illustreren.
 
 * Het is niet toegestaan meerdere pixelbeperkingen met hetzelfde aantal pixels te definiëren.
 
