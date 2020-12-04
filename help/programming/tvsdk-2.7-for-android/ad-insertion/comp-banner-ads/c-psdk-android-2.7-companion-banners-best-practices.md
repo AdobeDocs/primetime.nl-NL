@@ -6,6 +6,9 @@ title: Aanbevolen werkwijzen voor banneradvertenties
 uuid: d844babb-20ab-4380-9487-eb1c24b58877
 translation-type: tm+mt
 source-git-commit: a33e1f290fcf78e6f131910f6037f4803f7be98d
+workflow-type: tm+mt
+source-wordcount: '163'
+ht-degree: 0%
 
 ---
 
