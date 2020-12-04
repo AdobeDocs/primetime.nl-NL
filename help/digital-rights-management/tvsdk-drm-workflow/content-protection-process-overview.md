@@ -4,13 +4,16 @@ title: Overzicht van het proces voor het verkrijgen van licenties
 uuid: c2eedd0a-3e3a-4c2f-a781-855f0ba65b15
 translation-type: tm+mt
 source-git-commit: 7e8df034035fe465fbe403949ef828e7811ced2e
+workflow-type: tm+mt
+source-wordcount: '339'
+ht-degree: 0%
 
 ---
 
 
-# Overzicht van het proces voor het verkrijgen van licenties{#license-acquisition-process-overview}
+# Overzicht van licentieaanschaf{#license-acquisition-process-overview}
 
-In de volgende secties wordt beschreven hoe u uw toepassing kunt inschakelen voor het afspelen van inhoud onder de beveiliging van Primetime DRM. Hierbij worden voorbeelden van ActionScript 3-code (AS3) gebruikt. De nuanced afwijkingen van deze workflow voor native apps op mobiele platforms worden waar nodig weergegeven. De Primetime DRM-workflows zijn echter op alle platforms zeer vergelijkbaar, zodat u de AS3-code begrijpt en de extrapolatie naar andere platforms vrij eenvoudig maakt.
+Het inschakelen van uw toepassing voor het afspelen van inhoud onder bescherming van Primetime DRM wordt in de volgende secties beschreven, met gebruik van ActionScript 3 (AS3)-codevoorbeelden. De nuanced afwijkingen van deze workflow voor native apps op mobiele platforms worden waar nodig weergegeven. De Primetime DRM-workflows zijn echter op alle platforms zeer vergelijkbaar, zodat u de AS3-code begrijpt en de extrapolatie naar andere platforms vrij eenvoudig maakt.
 
 **Verwervingsproces licentie:**
 
@@ -29,6 +32,6 @@ In de volgende secties wordt beschreven hoe u uw toepassing kunt inschakelen voo
 1. Als de verificatie nodig was en nu is voltooid, downloadt u de licentie van de licentieserver.
 1. Speel de inhoud af.
 
-Als er geen fouten zijn opgetreden en de gebruiker is geautoriseerd om de inhoud weer te geven, verzendt Primetime een `DRMStatusEvent` object en begint de toepassing het afspelen. Het `DRMStatusEvent` object bevat de gerelateerde licentiegegevens, die het beleid en de machtigingen van de gebruiker identificeren. U kunt bijvoorbeeld informatie `DRMStatusEvent` bevatten over de vraag of de inhoud offline toegankelijk mag worden gemaakt, wanneer de licentie verloopt, enzovoort.
+Als er geen fouten zijn opgetreden en de gebruiker is geautoriseerd om de inhoud weer te geven, verzendt Primetime een `DRMStatusEvent`-object en begint de toepassing met het afspelen. Het `DRMStatusEvent`-object bevat de gerelateerde licentiegegevens, die het beleid en de machtigingen van de gebruiker identificeren. `DRMStatusEvent` kan bijvoorbeeld informatie bevatten over het feit of de inhoud offline beschikbaar kan worden gemaakt, wanneer de licentie verloopt, enzovoort.
 
-De toepassing kan de licentiegegevens gebruiken om de gebruiker op de hoogte te stellen van de status van zijn beleid. De toepassing kan bijvoorbeeld het aantal resterende dagen dat de gebruiker heeft om de inhoud weer te geven, weergeven in een statusbalk. Als de gebruiker offline toegang heeft, wordt de licentie in de cache geplaatst en wordt de gecodeerde inhoud gedownload naar de computer van de gebruiker. De inhoud is toegankelijk voor de duur die is gedefinieerd in de duur van de licentiecache. De eigenschap detail in de gebeurtenis bevat `DRM.voucherObtained`. De toepassing bepaalt waar de inhoud lokaal wordt opgeslagen om deze offline beschikbaar te maken. U kunt licenties ook vooraf laden met de `DRMManager` klasse.
+De toepassing kan de licentiegegevens gebruiken om de gebruiker op de hoogte te stellen van de status van zijn beleid. De toepassing kan bijvoorbeeld het aantal resterende dagen dat de gebruiker heeft om de inhoud weer te geven, weergeven in een statusbalk. Als de gebruiker offline toegang heeft, wordt de licentie in de cache geplaatst en wordt de gecodeerde inhoud gedownload naar de computer van de gebruiker. De inhoud is toegankelijk voor de duur die is gedefinieerd in de duur van de licentiecache. De eigenschap detail in de gebeurtenis bevat `DRM.voucherObtained`. De toepassing bepaalt waar de inhoud lokaal wordt opgeslagen om deze offline beschikbaar te maken. U kunt licenties ook vooraf laden met de klasse `DRMManager`.
