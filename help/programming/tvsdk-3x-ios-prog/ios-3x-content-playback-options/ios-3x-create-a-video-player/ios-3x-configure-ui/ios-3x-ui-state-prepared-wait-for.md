@@ -6,6 +6,9 @@ title: Wacht op een geldige status
 uuid: ad9df366-c443-4e6b-a7ab-658d5691eb94
 translation-type: tm+mt
 source-git-commit: a63768e51c911914a6ba9d884e2587fa34939f9d
+workflow-type: tm+mt
+source-wordcount: '113'
+ht-degree: 0%
 
 ---
 
@@ -14,6 +17,6 @@ source-git-commit: a63768e51c911914a6ba9d884e2587fa34939f9d
 
 Voordat u de meeste methoden van de TVSDK-speler kunt gebruiken, moet de speler een geldige status hebben.
 
-De speler doorloopt verschillende statussen. Wachten tot de speler de juiste status heeft, zorgt ervoor dat de mediabron correct is geladen. Als de speler niet minstens de vereiste status heeft, genereren veel spelermethoden `IllegalStateException`.
+De speler doorloopt verschillende statussen. Wachten tot de speler de juiste status heeft, zorgt ervoor dat de mediabron correct is geladen. Als de speler niet in minstens de vereiste status is, werpen vele spelermethodes `IllegalStateException`.
 
 De vereiste status is meestal `PTMediaPlayerStatusReady`.
