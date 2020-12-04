@@ -6,6 +6,9 @@ title: Klikbare advertenties
 uuid: edefbc66-2d30-441d-9c30-256588504463
 translation-type: tm+mt
 source-git-commit: adef0bbd52ba043f625f38db69366c6d873c586d
+workflow-type: tm+mt
+source-wordcount: '397'
+ht-degree: 0%
 
 ---
 
@@ -14,7 +17,7 @@ source-git-commit: adef0bbd52ba043f625f38db69366c6d873c586d
 
 TVSDK biedt u informatie zodat u op doorklikadvertenties kunt werken. Terwijl u de interface van de speler maakt, moet u bepalen hoe u moet reageren wanneer een gebruiker op een klikbare advertentie klikt.
 
-Voor TVSDK voor Flash Runtime kan alleen op lineaire advertenties worden geklikt.
+Voor TVSDK voor Flash Runtime, slechts zijn de lineaire advertenties klikbaar.
 
 ## Reageren op klikken op advertenties {#respond-to-clicks-on-ads}
 
@@ -22,7 +25,7 @@ Wanneer een gebruiker op een advertentie of een verwante knop klikt, is de toepa
 
 In dit voorbeeld ziet u een mogelijke manier om advertenties te beheren.
 
-1. Elke keer dat een advertentie wordt afgespeeld, geeft u een knop boven op de mediaspeler weer. Een gebruiker die op de advertentie klikt, wordt omgeleid naar de advertentie-URL. Deze knop maakt deel uit van de [!DNL ClickableAdsOverlay.xml].
+1. Elke keer dat een advertentie wordt afgespeeld, geeft u een knop boven op de mediaspeler weer. Een gebruiker die op de advertentie klikt, wordt omgeleid naar de advertentie-URL. Deze knop maakt deel uit van [!DNL ClickableAdsOverlay.xml].
 
    ```xml
       <?xml version="1.0"?> 
@@ -35,7 +38,7 @@ In dit voorbeeld ziet u een mogelijke manier om advertenties te beheren.
    </s:VGroup>
    ```
 
-1. Neem deze overlay op in ons voorbeeld voor de mediaspeler [!DNL psdkdemo.xml].
+1. Neem deze overlay op in ons voorbeeld voor de mediaspeler, [!DNL psdkdemo.xml].
 
    ```xml
       <psdk:ClickableAdsOverlay id="clickableAdsOverlay"  
@@ -45,7 +48,7 @@ In dit voorbeeld ziet u een mogelijke manier om advertenties te beheren.
    </psdk:ClickableAdsOverlay
    ```
 
-1. Als u de weergave alleen zichtbaar wilt maken wanneer een advertentie wordt afgespeeld, luistert u naar de `onAdStart` `onAdComplete` gebeurtenissen en gebeurtenissen die door zijn verzonden.
+1. Als u de weergave alleen zichtbaar wilt maken wanneer een advertentie wordt afgespeeld, luistert u naar de gebeurtenissen `onAdStart` en `onAdComplete` die door zijn verzonden.
 
    ```
    _player.addEventListener(AdPlaybackEvent.AD_STARTED, onAdStarted); 
@@ -64,7 +67,7 @@ In dit voorbeeld ziet u een mogelijke manier om advertenties te beheren.
    }
    ```
 
-1. Gebruikersinteracties controleren op klikbare advertenties. Als de gebruiker op de advertentie of knop klikt, stuurt u een melding naar TVSDK `notifyClick`.
+1. Gebruikersinteracties controleren op klikbare advertenties. Wanneer de gebruiker de advertentie of knop aanraakt of erop klikt, geeft u een melding aan TVSDK met `notifyClick`.
 
    ```
    private function onAdsOverlayClicked():void {     
@@ -72,9 +75,9 @@ In dit voorbeeld ziet u een mogelijke manier om advertenties te beheren.
    }
    ```
 
-1. Luister naar de `AdclickEvent.AD_CLICK` gebeurtenis.
+1. Luister naar de gebeurtenis `AdclickEvent.AD_CLICK`.
 
-   Als een advertentie wordt afgespeeld, verzendt TVSDK de `AdClickEvent.AD_CLICK` gebeurtenis, waarvan u de doorklikURL en verwante informatie kunt terugwinnen.
+   Als een advertentie wordt afgespeeld, verzendt TVSDK de gebeurtenis `AdClickEvent.AD_CLICK`, waarvan u de doorklikURL en verwante informatie kunt terugwinnen.
 
    ```
       _player.addEventListener(AdClickEvent.AD_CLICK, onAdClick);
