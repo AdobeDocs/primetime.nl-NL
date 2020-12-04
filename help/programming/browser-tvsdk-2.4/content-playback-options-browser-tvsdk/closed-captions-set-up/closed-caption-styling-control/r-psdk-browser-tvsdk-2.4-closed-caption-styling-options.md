@@ -6,11 +6,14 @@ title: Opties voor de stijl van gesloten bijschriften
 uuid: 0e2fd9f3-e569-4b5d-9b78-86f8ee6230ee
 translation-type: tm+mt
 source-git-commit: 040655d8ba5f91c98ed0584c08db226ffe1e0f4e
+workflow-type: tm+mt
+source-wordcount: '371'
+ht-degree: 0%
 
 ---
 
 
-# Opties voor de stijl van gesloten bijschriften{#closed-caption-styling-options}
+# Opties voor de stijl van een gesloten bijschrift{#closed-caption-styling-options}
 
 U kunt meerdere opties voor de bijschriftstijlen opgeven. Deze opties overschrijven de stijlopties in de originele bijschriften.
 
@@ -32,7 +35,7 @@ new TextFormat(
 
 >[!TIP]
 >
->In opties die standaardwaarden definiëren (bijvoorbeeld `DEFAULT`), verwijst die waarde naar de instelling op het moment dat het bijschrift oorspronkelijk werd opgegeven.
+>In opties die standaardwaarden definiëren (bijvoorbeeld `DEFAULT`), verwijst die waarde naar de instelling op het moment dat de ondertitel oorspronkelijk werd opgegeven.
 
 <table frame="all" colsep="1" rowsep="1" id="table_87205DEFEE384AF4AF83952B15E18A42"> 
  <thead> 
@@ -44,21 +47,21 @@ new TextFormat(
  <tbody> 
   <tr rowsep="1"> 
    <td colname="1"> Lettertype </td> 
-   <td colname="2"> <p>Het lettertype. </p> <p>Kan alleen worden ingesteld op een waarde die wordt gedefinieerd door de <span class="codeph"> </span> opsomming TextFormat.Font en die bijvoorbeeld een vaste spatiëring met of zonder schreef vertegenwoordigt. </p> <p>Tip:  De werkelijke lettertypen die op een apparaat beschikbaar zijn, kunnen variëren en waar nodig worden vervangende lettertypen gebruikt. Monospace met schreef wordt typisch gebruikt als substituut, hoewel deze substitutie systeemspecifiek kan zijn. </p> </td> 
+   <td colname="2"> <p>Het lettertype. </p> <p>Kan alleen worden ingesteld op een waarde die wordt gedefinieerd door de opsomming <span class="codeph"> TextFormat.Font </span> en die bijvoorbeeld een vaste spatiëring met of zonder schreef vertegenwoordigt. </p> <p>Tip:  De werkelijke lettertypen die op een apparaat beschikbaar zijn, kunnen variëren en waar nodig worden vervangende lettertypen gebruikt. Monospace met schreef wordt typisch gebruikt als substituut, hoewel deze substitutie systeemspecifiek kan zijn. </p> </td> 
   </tr> 
   <tr rowsep="1"> 
    <td colname="1"> Grootte </td> 
-   <td colname="2"> <p>De grootte van het bijschrift. </p> <p> Kan alleen worden ingesteld op een waarde die wordt gedefinieerd door de <span class="codeph"> opsomming TextFormat.Size </span> : 
+   <td colname="2"> <p>De grootte van het bijschrift. </p> <p> Kan alleen worden ingesteld op een waarde die wordt gedefinieerd door de opsomming <span class="codeph"> TextFormat.Size </span>: 
      <ul compact="yes" id="ul_544BFC7A46474A74839477108F1AB1E9"> 
-      <li id="li_A592ED46B8DF4D8FAD7AF3BD931A712B"> <span class="codeph"> MEDIUM </span> - De standaardgrootte </li> 
-      <li id="li_4F8CEDE54965430EB707DD3D5B2E3F87"> <span class="codeph"> GROOT </span> - ongeveer 30% groter dan gemiddeld </li> 
-      <li id="li_D78D823883F54D869118BAB58257E377"> <span class="codeph"> KLEINE </span> - ongeveer 30% kleiner dan gemiddeld </li> 
-      <li id="li_9299C13408584A38835F8D91BD048083"> <span class="codeph"> STANDAARD </span> - De standaardgrootte voor het bijschrift; gelijk aan medium </li> 
+      <li id="li_A592ED46B8DF4D8FAD7AF3BD931A712B"> <span class="codeph"> MEDIUM  </span> - De standaardgrootte </li> 
+      <li id="li_4F8CEDE54965430EB707DD3D5B2E3F87"> <span class="codeph"> GROOT  </span> - ongeveer 30% groter dan gemiddeld </li> 
+      <li id="li_D78D823883F54D869118BAB58257E377"> <span class="codeph"> KLEIN  </span> - ongeveer 30% kleiner dan gemiddeld </li> 
+      <li id="li_9299C13408584A38835F8D91BD048083"> <span class="codeph"> STANDAARD  </span> - De standaardgrootte voor het bijschrift; gelijk aan medium </li> 
      </ul> </p> </td> 
   </tr> 
   <tr rowsep="1"> 
    <td colname="1"> Fontkleur </td> 
-   <td colname="2"> <p>De fontkleur. </p> <p>Kan alleen worden ingesteld op een waarde die wordt gedefinieerd door de <span class="codeph"> </span> opsomming TextFormat.Color. </p> </td> 
+   <td colname="2"> <p>De fontkleur. </p> <p>Kan alleen worden ingesteld op een waarde die wordt gedefinieerd door de opsomming <span class="codeph"> TextFormat.Color </span>. </p> </td> 
   </tr> 
   <tr rowsep="1"> 
    <td colname="1"> Achtergrondkleur </td> 
@@ -66,7 +69,7 @@ new TextFormat(
   </tr> 
   <tr rowsep="1"> 
    <td colname="1"> Dekking van lettertype </td> 
-   <td colname="2"> <p>De dekking van de tekst. </p> <p>Uitgedrukt als een percentage tussen 0 (volledig transparant) en 100 (volledig dekkend). <span class="codeph"> DEFAULT_OPACITY </span> voor het lettertype is 100. </p> </td> 
+   <td colname="2"> <p>De dekking van de tekst. </p> <p>Uitgedrukt als een percentage tussen 0 (volledig transparant) en 100 (volledig dekkend). <span class="codeph"> DEFAULT_OPACITY  </span> voor het lettertype is 100. </p> </td> 
   </tr> 
   <tr rowsep="1"> 
    <td colname="1"> Onderste inzet </td> 
