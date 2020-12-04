@@ -7,6 +7,9 @@ title: Regels voor het bijwerken en creatieve selectie
 uuid: b7d316ef-323e-4769-83d9-036422ae1707
 translation-type: tm+mt
 source-git-commit: 557f42cd9a6f356aa99e13386d9e8d65e043a6af
+workflow-type: tm+mt
+source-wordcount: '275'
+ht-degree: 0%
 
 ---
 
@@ -19,13 +22,14 @@ Wanneer uw videospeler een verzoek indient aan een advertentieserver, omvat de r
 
 >[!IMPORTANT]
 >
->* Wijzig de naam van het configuratiebestand voor TVSDK niet. De naam moet achterblijven [!DNL AdobeTVSDKConfig.json].
+>* Wijzig de naam van het configuratiebestand voor TVSDK niet. De naam moet [!DNL AdobeTVSDKConfig.json] blijven.
 >* U kunt dit bestand op een willekeurige locatie plaatsen die toegankelijk is voor uw bundel.
+
 >
 
 
 
-U kunt twee typen regels opgeven in [!DNL AdobeTVSDKConfig.json]: *Prioritaire* regels en *Normaliseer* regels.
+U kunt twee typen regels opgeven in [!DNL AdobeTVSDKConfig.json]: *Prioriteitsregels* en *Normaliseren* regels.
 
 **[!UICONTROL Disabling Pre-Roll]**
 
