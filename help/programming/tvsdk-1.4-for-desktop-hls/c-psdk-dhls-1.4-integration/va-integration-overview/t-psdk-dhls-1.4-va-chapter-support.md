@@ -6,11 +6,14 @@ title: Hoofdstukondersteuning implementeren
 uuid: 85d14b83-7910-4f5d-9ef2-511de916abd6
 translation-type: tm+mt
 source-git-commit: adef0bbd52ba043f625f38db69366c6d873c586d
+workflow-type: tm+mt
+source-wordcount: '97'
+ht-degree: 0%
 
 ---
 
 
-# Hoofdstukondersteuning implementeren {#implement-chapter-support}
+# Hoofdstukondersteuning {#implement-chapter-support} implementeren
 
 U kunt hoofdstukken voor video het volgen in een op TVSDK-Gebaseerde toepassing op de volgende manieren bepalen en volgen:
 
