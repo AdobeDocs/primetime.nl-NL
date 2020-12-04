@@ -6,6 +6,9 @@ title: Toevoeging en overname van advertenties voor VOD
 uuid: 74cc35e6-6479-4572-a3b3-05ff6344272a
 translation-type: tm+mt
 source-git-commit: bc35da8b258056809ceaf18e33bed631047bc81b
+workflow-type: tm+mt
+source-wordcount: '736'
+ht-degree: 0%
 
 ---
 
@@ -14,7 +17,7 @@ source-git-commit: bc35da8b258056809ceaf18e33bed631047bc81b
 
 Het ad-invoegproces (VOD, Video on-demand) bestaat uit de fasen voor het omzetten, invoegen en toevoegen van de advertentie. Voor het bijhouden van advertenties moet TVSDK een externe traceringsserver op de hoogte stellen van de voortgang van het afspelen van elke advertentie. In onverwachte situaties neemt TVSDK de juiste maatregelen.
 
-## Adverteringsfase {#section_5DD3A7DA79E946298BFF829A60202E1C}
+## Adverterende fase {#section_5DD3A7DA79E946298BFF829A60202E1C}
 
 TVSDK neemt contact op met een advertentieservice, zoals Adobe Primetime en besluitvorming, en probeert het primaire afspeellijstbestand te verkrijgen dat overeenkomt met de videostream voor de advertentie. Tijdens de ad-resolving fase, doet TVSDK een vraag van HTTP aan de verre ad-leveringsserver en ontleedt de reactie van de server.
 
@@ -39,7 +42,7 @@ TVSDK ondersteunt de volgende typen advertentieproviders:
 
 TVSDK geeft een waarschuwingsbericht over de fout weer en gaat door met de verwerking.
 
-## Ad-invoegfase {#section_29F7F7756C8B40B99AD4C3DD16B72B5B}
+## Advertentiefase {#section_29F7F7756C8B40B99AD4C3DD16B72B5B}
 
 TVSDK voegt de alternatieve inhoud (advertenties) in de tijdlijn in die overeenkomt met de hoofdinhoud.
 
@@ -69,4 +72,4 @@ TVSDK stuurt de getriggerde gebeurtenissen door naar uw toepassing, inclusief me
 
    Uw toepassing moet de juiste actie ondernemen.
 
-Ongeacht of fouten voorkomen, roept TVSDK `onAdBreakComplete` voor elk `onAdBreakStart` en `onAdComplete` voor elk `onAdStart`. Als segmenten echter niet kunnen worden gedownload, bevat de tijdlijn mogelijk tussenruimten. Wanneer de tussenruimten groot genoeg zijn, kunnen de waarden in de positie van de afspeelkop en de gerapporteerde en de voortgang discontinuïteit vertonen.
+Ongeacht of er fouten optreden, roept TVSDK `onAdBreakComplete` aan voor elke `onAdBreakStart` en `onAdComplete` voor elke `onAdStart`. Als segmenten echter niet kunnen worden gedownload, bevat de tijdlijn mogelijk tussenruimten. Wanneer de tussenruimten groot genoeg zijn, kunnen de waarden in de positie van de afspeelkop en de gerapporteerde en de voortgang discontinuïteit vertonen.
