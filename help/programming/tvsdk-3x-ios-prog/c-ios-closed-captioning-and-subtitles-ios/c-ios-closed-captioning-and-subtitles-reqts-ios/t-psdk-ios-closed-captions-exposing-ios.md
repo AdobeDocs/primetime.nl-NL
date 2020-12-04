@@ -6,6 +6,9 @@ title: Gesloten bijschriften beschikbaar maken
 uuid: 7057014a-b14a-4790-8f7f-37d7a1fb8194
 translation-type: tm+mt
 source-git-commit: 557f42cd9a6f356aa99e13386d9e8d65e043a6af
+workflow-type: tm+mt
+source-wordcount: '143'
+ht-degree: 0%
 
 ---
 
@@ -16,7 +19,7 @@ Als u Closed Captions beschikbaar wilt maken voor uw clientspeler, moet u deze i
 
 Gesloten bijschriften toegankelijk maken:
 
-1. Stel de `PTMediaPlayer` eigenschap in `closedCaptionDisplayEnabled` het object in.
+1. Stel in `PTMediaPlayer`-object de eigenschap `closedCaptionDisplayEnabled` in.
 
    Als de gebruiker Closed Captions heeft ingeschakeld, wordt de tekst in deze stap weergegeven.
 
@@ -26,4 +29,4 @@ Gesloten bijschriften toegankelijk maken:
 
    >[!NOTE]
    >
-   >`closedCaptionDisplayEnabled` eigenschap is afgekeurd. Gebruik `subtitlesOptions` eigenschap van `PTMediaPlayerItem`. Zie Ondertitels [](../../../tvsdk-3x-ios-prog/c-ios-closed-captioning-and-subtitles-ios/c-ios-closed-captioning-and-subtitles-reqts-ios/t-ios-subtitles-exposing-ios.md) onthullen om gesloten bijschriften te gebruiken.
+   >`closedCaptionDisplayEnabled` eigenschap is afgekeurd. Gebruik `subtitlesOptions`-eigenschap van `PTMediaPlayerItem`. Zie [Ondertitels blootstellen](../../../tvsdk-3x-ios-prog/c-ios-closed-captioning-and-subtitles-ios/c-ios-closed-captioning-and-subtitles-reqts-ios/t-ios-subtitles-exposing-ios.md) om gesloten titels te gebruiken.
