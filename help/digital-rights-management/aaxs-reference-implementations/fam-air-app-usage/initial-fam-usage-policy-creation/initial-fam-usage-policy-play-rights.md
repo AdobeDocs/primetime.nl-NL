@@ -19,13 +19,13 @@ In de volgende tabel worden de voorkeuren voor afspeelrechten beschreven:
 |--- |--- |
 | Afspeelvenster | De duur van een licentie is geldig (in minuten) nadat de gebruiker de beveiligde inhoud voor het eerst afspeelt. |
 | Uitvoerbeveiliging | Bepaalt of uitvoer naar externe renderingapparaten moet worden beveiligd. De analoge en digitale output kan onafhankelijk worden gespecificeerd. |
-| Beperkingen | Bloklijst met clientversies die geen inhoud mogen afspelen. Alle kolommen zijn optioneel. |
+| Beperkingen | Lijst van afgewezen personen van clientversies is niet toegestaan om inhoud af te spelen. Alle kolommen zijn optioneel. |
 | DRM | Hiermee geeft u een lijst op met DRM-versies die beveiligde inhoud niet mogen afspelen. |
 | Runtime | Hier geeft u een lijst op met versies bij uitvoering die geen beveiligde inhoud mogen afspelen. |
 | Minimaal beveiligingsniveau |  |
 | DRM | Minimaal DRM-beveiligingsniveau vereist om beveiligde inhoud af te spelen. |
 | Runtime | Minimale runtime beveiligingsniveau vereist om beveiligde inhoud af te spelen. |
-| Toegestane toepassingen | Lijst met clienttoepassingen toestaan die inhoud mogen afspelen. Wanneer geen toepassingen worden opgegeven, is een SWF- of AIR-toepassing toegestaan. |
+| Toegestane toepassingen | Lijst van gewenste personen van clienttoepassingen die inhoud mogen afspelen. Wanneer geen toepassingen worden opgegeven, is een SWF- of AIR-toepassing toegestaan. |
 | SWF | Lijst met SWF-URL&#39;s die beveiligde inhoud mogen afspelen. |
 | AIR | Lijst met AIR-toepassingen die beveiligde inhoud mogen afspelen. Uitgever-id is vereist. De overige velden zijn optioneel. |
 
