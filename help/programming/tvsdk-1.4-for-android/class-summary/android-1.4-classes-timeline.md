@@ -6,6 +6,9 @@ title: Tijdlijnklassen
 uuid: dd4af4b4-215e-45cb-8bac-574a461ac1ce
 translation-type: tm+mt
 source-git-commit: 5908e5a3521966496aeec0ef730e4a704fddfb68
+workflow-type: tm+mt
+source-wordcount: '244'
+ht-degree: 0%
 
 ---
 
@@ -33,11 +36,11 @@ Pakket: [com.adobe.mediacore.timeline](https://help.adobe.com/en_US/primetime/ap
    <td colname="2"> Interface die een iterator voor het verwerken van tijdlijnmarkeertekens biedt. Geeft de tijdlijn van de inhoud aan, inclusief afbrekingen. </td> 
   </tr> 
   <tr rowsep="1"> 
-   <td colname="1"><span class="codeph"><a href="https://help.adobe.com/en_US/primetime/api/psdk/javadoc_1.4/com/adobe/mediacore/timeline/TimelineItem.html" format="html" scope="external"> TimelineItem</a></span> </td> 
+   <td colname="1"><span class="codeph"><a href="https://help.adobe.com/en_US/primetime/api/psdk/javadoc_1.4/com/adobe/mediacore/timeline/TimelineItem.html" format="html" scope="external"> TimelineItem</a> </span> </td> 
    <td colname="2"> Klasse. Algemene, onveranderlijke representatie van een tijdlijstitem. </td> 
   </tr> 
   <tr rowsep="1"> 
-   <td colname="1"><span class="codeph"><a href="https://help.adobe.com/en_US/primetime/api/psdk/javadoc_1.4/com/adobe/mediacore/timeline/TimelineMarker.html" format="html" scope="external"> TimelineMarker</a></span> </td> 
+   <td colname="1"><span class="codeph"><a href="https://help.adobe.com/en_US/primetime/api/psdk/javadoc_1.4/com/adobe/mediacore/timeline/TimelineMarker.html" format="html" scope="external"> TimelineMarker</a> </span> </td> 
    <td colname="2"> Interface die een markeerteken op de tijdlijn vertegenwoordigt. Dit markeert een gebied van belang op de daadwerkelijke chronologie. Momenteel zijn de interessegebieden de advertenties, die u bijvoorbeeld met een andere kleur op de scrub bar UI zou kunnen willen merken. Elke markering wordt gedefinieerd door een positie en een duur (elk uitgedrukt in milliseconden). </td> 
   </tr> 
   <tr rowsep="0"> 
