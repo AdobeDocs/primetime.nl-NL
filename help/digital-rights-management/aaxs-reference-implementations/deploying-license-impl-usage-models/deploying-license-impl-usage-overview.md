@@ -32,21 +32,21 @@ Om de demo van het gebruiksmodel toe te laten, specificeer het douanebezit `RI_U
 
 In de demo, controleert de bedrijfslogica op de server de daadwerkelijke attributen van de geproduceerde vergunningen. Op het moment van het verpakken moet er alleen minimale beleidsinformatie in de inhoud worden opgenomen. Specifiek, moet het beleid slechts erop wijzen of de authentificatie wordt vereist om tot de inhoud toegang te hebben. Om alle vier gebruiksmodellen toe te laten, omvat één beleid dat anonieme toegang (voor het Adf-gefinancierde model) en één beleid toestaat dat gebruikersnaam/wachtwoordauthentificatie (voor de andere 3 gebruiksmodellen) vereist. Bij het aanvragen van een licentie kan een clienttoepassing bepalen of de gebruiker wordt gevraagd om verificatie op basis van de verificatiegegevens in het beleid.
 
-Om het gebruiksmodel te bepalen waaronder een bepaalde gebruiker een licentie moet krijgen, kunnen vermeldingen worden toegevoegd aan de database van de referentieimplementatie. De `Customer` tabel bevat gebruikersnamen en wachtwoorden voor het verifiëren van gebruikers. Ook wordt aangegeven of de gebruiker een abonnement heeft. Gebruikers met abonnementen krijgen licenties toegewezen volgens het *abonnementsmodel* . Om een gebruiker toegang onder de *Download aan het gebruiksmodellen van het Gebruik van het Gebruik van het Eigen* of van de *Video op bestelling* te verlenen, kan een ingang aan de `CustomerAuthorization` lijst worden toegevoegd, die elk stuk van inhoud specificeert de gebruiker wordt toegestaan om tot en het gebruiksmodel toegang te hebben. Zie het [!DNL PopulateSampleDB.sql] script voor meer informatie over het vullen van elke tabel.
+Om het gebruiksmodel te bepalen waaronder een bepaalde gebruiker een licentie moet krijgen, kunnen vermeldingen worden toegevoegd aan de database van de referentieimplementatie. De tabel `Customer` bevat gebruikersnamen en wachtwoorden voor het verifiëren van gebruikers. Ook wordt aangegeven of de gebruiker een abonnement heeft. Gebruikers met abonnementen krijgen licenties toegewezen volgens het gebruiksmodel *Subscription*. Om een gebruiker toegang te verlenen onder de *Downloaden aan de Gebruiksmodellen* of *Video op bestelling*, kan een ingang aan `CustomerAuthorization` tabel worden toegevoegd, die elk stuk van inhoud specificeert de gebruiker wordt toegestaan om tot en het gebruiksmodel toegang te hebben. Zie het [!DNL PopulateSampleDB.sql] script voor meer informatie over het vullen van elke tabel.
 
-Wanneer een gebruiker een licentie aanvraagt, controleert de server van de Referentie-implementatie de metagegevens die door de client zijn verzonden om te bepalen of de inhoud met de `RI_UsageModelDemo` eigenschap in een pakket is geplaatst. In dat geval worden de volgende bedrijfsregels gebruikt:
+Wanneer een gebruiker een licentie aanvraagt, controleert de server voor referentieimplementatie de metagegevens die door de client zijn verzonden om te bepalen of de inhoud is verpakt met de eigenschap `RI_UsageModelDemo`. In dat geval worden de volgende bedrijfsregels gebruikt:
 
 * Als een van de beleidsregels verificatie vereist:
 
    * Als het verzoek een geldig authentificatietoken bevat, zoek de gebruiker in de de gegevensbestandlijst van de Klant. Als de gebruiker is gevonden:
 
-      * Als het `Customer.IsSubscriber` bezit is `true`, produceer een vergunning voor het het gebruiksmodel van het *Abonnement* en verzend het naar de gebruiker.
+      * Als de `Customer.IsSubscriber` eigenschap `true` is, genereert u een licentie voor het *Subscription*-gebruiksmodel en verzendt u deze naar de gebruiker.
 
-      * Zoek naar een verslag in de `CustomerAuthorization` gegevensbestandlijst voor deze gebruiker en inhoudsidentiteitskaart Als een record is gevonden:
+      * Zoek een verslag in de `CustomerAuthorization` gegevensbestandlijst voor deze gebruiker en inhoudsidentiteitskaart Als een record is gevonden:
 
-         * Als `CustomerAuthorization.UsageType` dit het geval is, genereert u een licentie voor het `DTO`gebruiksmodel Downloaden naar eigen ** gebruik en stuurt u deze naar de gebruiker.
+         * Als `CustomerAuthorization.UsageType` `DTO` is, produceer een vergunning voor *Download aan Eigen* gebruiksmodel en verzend het naar de gebruiker.
 
-         * Als `CustomerAuthorization.UsageType` dit zo is, genereert u een licentie voor het `VOD`gebruiksmodel Video On Demand ** en stuurt u deze naar de gebruiker.
+         * Als `CustomerAuthorization.UsageType` `VOD` is, produceer een vergunning voor *Video On Demand* gebruiksmodel en verzend het naar de gebruiker.
    * Als geen van de beleidsregels anonieme toegang toestaat:
 
       * Als er geen geldig authentificatietoken in het verzoek is, keer een &quot;vereiste authentificatie&quot;fout terug.
@@ -55,7 +55,7 @@ Wanneer een gebruiker een licentie aanvraagt, controleert de server van de Refer
 
 * Als een van de beleidsregels anonieme toegang toestaat, genereert u een licentie voor het gebruiksmodel met advertenties en stuurt u deze naar de gebruiker.
 
-Voordat de server voor Reference Implementation licenties kan uitgeven voor de gebruiksmodeldemo, moet de server worden geconfigureerd om op te geven hoe licenties worden gegenereerd voor elk van de vier gebruiksmodellen. Dit wordt gedaan door een beleid voor elk gebruiksmodel te specificeren. De implementatie van de Verwijzing omvat vier steekproefbeleid ( [!DNL dto-policy.pol], [!DNL vod-policy.pol], [!DNL sub-policy.pol], [!DNL ad-policy.pol]) of u kunt uw eigen beleid vervangen. In [!DNL flashaccess-refimpl.properties], plaats de volgende eigenschappen om het beleid te specificeren voor elk gebruiksmodel te gebruiken en de beleidsdossiers in de folder te plaatsen die door het `config.resourcesDirectory` bezit wordt gespecificeerd:
+Voordat de server voor Reference Implementation licenties kan uitgeven voor de demo van het gebruiksmodel, moet de server worden geconfigureerd om op te geven hoe licenties worden gegenereerd voor elk van de vier gebruiksmodellen. Dit wordt gedaan door een beleid voor elk gebruiksmodel te specificeren. De implementatie van de Verwijzing omvat vier steekproefbeleid ( [!DNL dto-policy.pol], [!DNL vod-policy.pol], [!DNL sub-policy.pol], [!DNL ad-policy.pol]) of u kunt uw eigen beleid vervangen. In [!DNL flashaccess-refimpl.properties], plaats de volgende eigenschappen om het beleid te specificeren voor elk gebruiksmodel te gebruiken en de beleidsdossiers in de folder te plaatsen die door het `config.resourcesDirectory` bezit wordt gespecificeerd:
 
 ```
 # Policy file name for Download To Own usage  
