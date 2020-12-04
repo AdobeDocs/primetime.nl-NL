@@ -6,11 +6,14 @@ title: Overwegingen en beste praktijken
 uuid: b37a5710-e811-4c3e-be8c-7c34ee5944e5
 translation-type: tm+mt
 source-git-commit: 5908e5a3521966496aeec0ef730e4a704fddfb68
+workflow-type: tm+mt
+source-wordcount: '409'
+ht-degree: 0%
 
 ---
 
 
-# Overwegingen en beste praktijken{#considerations-and-best-practices}
+# Overwegingen en aanbevolen procedures{#considerations-and-best-practices}
 
 Als u TVSDK het doeltreffendst wilt gebruiken, moet u bepaalde details van de werking van de SDK in overweging nemen en bepaalde best practices volgen.
 
@@ -36,15 +39,15 @@ Houd rekening met de volgende informatie wanneer u TVSDK gebruikt:
 
       De waarde van de userAgent-tekenreeks staat standaard voor wat het besturingssysteem toewijst.
 
-## Aanbevolen procedures {#section_tvsdk_best_practices}
+## Aanbevolen werkwijzen {#section_tvsdk_best_practices}
 
 Hier volgen de aanbevolen procedures voor TVSDK:
 
 * Gebruik HLS versie 3.0 of hoger voor programma-inhoud.
 * Gebruik het hulpprogramma MediaStreamValidator van Apple om VOD-streams te valideren.
-* De `PTSDKConfig` klasse biedt methoden om SSL af te dwingen voor aanvragen die zijn gedaan naar Primetime en beslissings-, DRM- en Video Analytics-servers.
+* De `PTSDKConfig` klasse verstrekt methodes om SSL op verzoeken af te dwingen die aan de servers van de Analytics van Primetime en van de Beslissing, DRM, en Video worden gemaakt.
 
-   Zie de methoden `forceHTTPS` `isForcingHTTPS` en methoden in deze klasse voor meer informatie.
+   Zie de methoden `forceHTTPS` en `isForcingHTTPS` in deze klasse voor meer informatie.
 
    >[!IMPORTANT]
    >
