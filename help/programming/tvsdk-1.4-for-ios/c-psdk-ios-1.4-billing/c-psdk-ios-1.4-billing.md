@@ -1,20 +1,23 @@
 ---
-description: Om klanten die alleen willen betalen voor wat ze gebruiken in plaats van een vaste prijs, ongeacht het werkelijke gebruik, te kunnen opnemen, verzamelt Adobe gebruiksmaatstaven en gebruikt Adobe deze meetgegevens om te bepalen hoeveel ze de klanten in rekening willen brengen.
-seo-description: Om klanten die alleen willen betalen voor wat ze gebruiken in plaats van een vaste prijs, ongeacht het werkelijke gebruik, te kunnen opnemen, verzamelt Adobe gebruiksmaatstaven en gebruikt Adobe deze meetgegevens om te bepalen hoeveel ze de klanten in rekening willen brengen.
+description: Om klanten aan te passen die slechts voor wat willen betalen zij, eerder dan een vast tarief ongeacht werkelijk gebruik, Adobe gebruiksmetriek verzamelen en deze metriek gebruiken om te bepalen hoeveel om de klanten in rekening te brengen.
+seo-description: Om klanten aan te passen die slechts voor wat willen betalen zij, eerder dan een vast tarief ongeacht werkelijk gebruik, Adobe gebruiksmetriek verzamelen en deze metriek gebruiken om te bepalen hoeveel om de klanten in rekening te brengen.
 seo-title: Factureringscijfers
 title: Factureringscijfers
 uuid: 658ffbcd-dedc-464c-8ec7-aa3bdfcb1512
 translation-type: tm+mt
 source-git-commit: 5908e5a3521966496aeec0ef730e4a704fddfb68
+workflow-type: tm+mt
+source-wordcount: '393'
+ht-degree: 0%
 
 ---
 
 
 # Factureringscijfers {#billing-metrics}
 
-Om klanten die alleen willen betalen voor wat ze gebruiken in plaats van een vaste prijs, ongeacht het werkelijke gebruik, te kunnen opnemen, verzamelt Adobe gebruiksmaatstaven en gebruikt Adobe deze meetgegevens om te bepalen hoeveel ze de klanten in rekening willen brengen.
+Om klanten aan te passen die slechts voor wat willen betalen zij, eerder dan een vast tarief ongeacht werkelijk gebruik, Adobe gebruiksmetriek verzamelen en deze metriek gebruiken om te bepalen hoeveel om de klanten in rekening te brengen.
 
-Telkens wanneer de speler een streamstartgebeurtenis genereert, verzendt TVSDK regelmatig HTTP-berichten naar het factureringssysteem van Adobe. De periode, die ook wel factureerbare duur wordt genoemd, kan verschillen voor standaard VOD, pro VOD (mid-roll ads ingeschakeld) en live inhoud. De standaardduur voor elk inhoudstype is 30 minuten, maar uw contract met Adobe bepaalt de werkelijke waarden.
+Telkens wanneer de speler een streamstartgebeurtenis genereert, begint TVSDK regelmatig HTTP-berichten naar het Adobe systeem te verzenden. De periode, die ook wel factureerbare duur wordt genoemd, kan verschillen voor standaard VOD, pro VOD (mid-roll ads ingeschakeld) en live inhoud. De standaardduur voor elk inhoudstype is 30 minuten, maar uw contract met Adobe bepaalt de werkelijke waarden.
 
 De berichten bevatten de volgende informatie:
 
@@ -25,13 +28,13 @@ De berichten bevatten de volgende informatie:
 * Of de stream door DRM is beveiligd
 * De TVSDK-versie en -platform
 
-Adobe configureert deze indeling vooraf, maar als u de rangschikking wilt wijzigen, werkt u samen met uw Adobe Enablement-vertegenwoordiger.
+Adobe configureert deze indeling vooraf, maar als u de indeling wilt wijzigen, werkt u samen met uw Adobe Enablement-vertegenwoordiger.
 
-Als u de statistieken wilt controleren die TVSDK naar Adobe verzendt, vraagt u de URL bij uw Adobe Enablement-vertegenwoordiger en gebruikt u een hulpprogramma voor het vastleggen van netwerken, bijvoorbeeld Charles, om de gegevens te bekijken.
+Om de statistieken te controleren die TVSDK naar Adobe verzendt, verkrijg URL van uw vertegenwoordiger van Inablement van de Adobe, en gebruik een netwerk vangt hulpmiddel, bijvoorbeeld, Charles, om de gegevens te zien.
 
-## Factureringsmetriek configureren {#configure-billing-metrics}
+## Factureringsmetriek {#configure-billing-metrics} vormen
 
-Als u de standaardconfiguratie gebruikt, is er niets anders u moet doen om het factureren toe te laten of te vormen. Als u verschillende configuratieparameters hebt gekregen van uw Adobe Enablement-vertegenwoordiger, gebruikt u de klasse PTBillingMetricsConfiguration om deze parameters in te stellen voordat u de mediaspeler initialiseert.
+Als u de standaardconfiguratie gebruikt, is er niets anders u moet doen om het factureren toe te laten of te vormen. Als u verschillende configuratieparameters van uw Adobe Enablement vertegenwoordiger hebt verkregen, gebruik de klasse PTBillingMetricsConfiguration om deze parameters omhoog te plaatsen alvorens de media speler te initialiseren.
 
 De meeste klanten zouden de standaardconfiguratie moeten gebruiken.
 
@@ -54,13 +57,13 @@ Factureringsmetriek vormen:
    [metadata setMetadata:billingConfig forKey:PTBillingMetricsConfigurationMetadataKey];
    ```
 
-## Factureringsgegevens verzenden {#transmit-billing-metrics}
+## Factureringscijfers {#transmit-billing-metrics} verzenden
 
-TVSDK verzendt factuurgegevens naar Adobe in XML-indeling.
+TVSDK verzendt factureringsmetriek naar Adobe in een formaat van XML.
 
 <!--<a id="example_13ABDB1CC0B549968A534765378DA3A0"></a>-->
 
-Als u een hulpprogramma voor het vastleggen van netwerken gebruikt om de statistieken te controleren die TVSDK naar Adobe verzendt, ziet u bijvoorbeeld de volgende eenheden:
+Als u een netwerk vangt hulpmiddel gebruikt om de statistiekenTVSDK te controleren brengt naar Adobe over, zou u eenheden als het volgende moeten zien:
 
 ```
 <request> 
@@ -86,4 +89,4 @@ Als u een hulpprogramma voor het vastleggen van netwerken gebruikt om de statist
 </request>
 ```
 
-De booleaanse eigenschappen `drmProtected`, `adsEnabled`en `midrollEnabled` worden alleen weergegeven als ze waar zijn.
+De booleaanse eigenschappen `drmProtected`, `adsEnabled` en `midrollEnabled` worden alleen weergegeven als ze waar zijn.
