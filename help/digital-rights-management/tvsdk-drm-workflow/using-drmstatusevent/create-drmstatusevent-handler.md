@@ -4,11 +4,14 @@ title: DRMStatusEvent-handlers maken
 uuid: 64f539d9-344c-4372-88b8-c8d098af9dd8
 translation-type: tm+mt
 source-git-commit: 5749142d42f7d7b36c96592955d1f71f6a7956fc
+workflow-type: tm+mt
+source-wordcount: '47'
+ht-degree: 0%
 
 ---
 
 
-# DRMStatusEvent-handlers maken{#create-a-drmstatusevent-handler}
+# Een DRMStatusEvent-handler{#create-a-drmstatusevent-handler} maken
 
 In het volgende voorbeeld wordt een gebeurtenishandler gemaakt die de statusinformatie van de DRM-inhoud uitvoert voor het Primetime-object dat de gebeurtenis heeft gestart.
 
