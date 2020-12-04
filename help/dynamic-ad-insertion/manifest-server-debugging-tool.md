@@ -21,9 +21,9 @@ ht-degree: 0%
 ---
 
 
-# Foutopsporingsprogramma voor server Manifest {#manifest-server-debugging-tool}
+# Foutopsporingsprogramma voor server wissen {#manifest-server-debugging-tool}
 
-## Overzicht van het hulpprogramma voor foutopsporing {#overview-of-debugging-tool}
+## Overzicht van het foutopsporingsprogramma {#overview-of-debugging-tool}
 
 Het het zuiveren hulpmiddel laat uitgevers toe om potentieel dure en toevoegingsproblemen te onderzoeken door het zuiveren informatie te onderzoeken die in echt - tijd door de duidelijke server in de kopballen van HTTP wordt teruggekeerd of, wanneer meer gedetailleerde informatie nodig is, het onderzoeken van zittingslogboeken na het feit. Adobe-partners zoals Akamai kunnen het hulpprogramma gebruiken om fouten op te sporen in hun integratie met Primetime en besluitvorming.
 
@@ -43,17 +43,17 @@ Wanneer u een manifestserverzitting in werking stelt, kunt u een parameter op ve
 
 Wanneer het aanhalen van het het zuiveren hulpmiddel, hebt u verscheidene opties voor welke informatie de duidelijke server in de kopballen van HTTP terugkeert. De opties hebben geen invloed op wat de manifestserver in logbestanden plaatst.
 
-### De foutopsporing opgeven {#specifying-ptdebug}
+### Het specificeren van ptdebug {#specifying-ptdebug}
 
 Wanneer het in werking stellen zuivert registreren voor een duidelijke serverzitting, kunt u de parameter ptdebug aan het verzoek URL toevoegen om de volgende opties voor de informatie te specificeren die de manifestserver in de kopballen van HTTP terugkeert:
 
 * ptdebug=true Alle records behalve `TRACE_HTTP_HEADER` en de meeste `call/response data` van `TRACE_AD_CALL` records.
-* ptdebug=AdCall Only TRACE_AD_*type* (bijvoorbeeld, TRACE_AD_CALL) records.
+* ptdebug=AdCall Only TRACE_AD_*type* (bijvoorbeeld, TRACE_AD_CALL) verslagen.
 * ptdebug=Header Only TRACE_HTTP_HEADER records.
 
 De opties hebben geen invloed op de plaatsen van de manifestserver in de logbestanden. Daar hebt u geen controle over, maar de logbestanden zijn tekstbestanden, dus u kunt een groot aantal gereedschappen toepassen om de informatie die u interesseert, te extraheren en opnieuw op te maken.
 
-Hier volgt een voorbeeld van de HTTP-header die wordt geretourneerd wanneer `ptdebug=Header`. Bepaalde lange tekenreeksen met hexadecimale cijfers worden voor `. . .` de duidelijkheid vervangen door.
+Hier volgt een voorbeeld van de HTTP-header die wordt geretourneerd wanneer `ptdebug=Header`. Bepaalde lange tekenreeksen hexadecimale cijfers worden voor de duidelijkheid vervangen door `. . .`.
 
 ```
 X-ADBE-AI-DBG-1 TRACE_MISC    HTTP request received
@@ -99,7 +99,7 @@ De structuur van een logrecord is als volgt:
 | record_type | string | Type gebeurtenis dat wordt geregistreerd |
 | overige velden | *** | Afhankelijk van het type gebeurtenis |
 
-### TRACE_REQUEST_INFO-records {#trace-request-info-records}
+### TRACE_REQUEST_INFO records {#trace-request-info-records}
 
 De verslagen van dit type registreren de resultaten van HTTP- verzoeken. De gebieden voorbij TRACE_REQUEST_INFO verschijnen in de orde die in de lijst wordt getoond, door lusjes wordt gescheiden.
 
@@ -174,7 +174,7 @@ Een voorbeeld:
     UNKNOWN RESPONSE  Via MS4xIH. . .
 ```
 
-### TRACE_AD_CALL-records {#trace-ad-call-records}
+### TRACE_AD_CALL records {#trace-ad-call-records}
 
 De verslagen van dit type registreren de resultaten van manifestserver en verzoeken. De gebieden voorbij TRACE_AD_CALL verschijnen in de orde die in de lijst wordt getoond, door lusjes wordt gescheiden.
 
@@ -256,15 +256,15 @@ Een voorbeeld:
     sid:3086f5cd . . .;pts:0    200
 ```
 
-### TRACE_TRANSCODING_NO_MEDIA_TO_TRANSCODE-records {#trace-transcoding-no-media-to-transcode-records}
+### TRACE_TRANSCODING_NO_MEDIA_TO_TRANSCODE records {#trace-transcoding-no-media-to-transcode-records}
 
 Records van dit type registreren een ontbrekend en creatief bestand. Het enige veld buiten TRACE_TRANSCODING_NO_MEDIA_TO_TRANSCODE wordt in de tabel weergegeven.
 
 | Veld | Type | Beschrijving |
 |--- |--- |--- |
-| ad_id | string | Volledig gekwalificeerde advertentie-id `(FQ_AD_ID: Q_AD_ID[;Q_AD_ID[;Q_AD_ID...]]` Q_AD_ID: `PROTOCOL:AD_SYSTEM:AD_ID[:CREATIVE_ID[:MEDIA_ID]]` PROTOCOL: AUDITUDE, VAST`)` |
+| ad_id | string | Volledig gekwalificeerde advertentie-id `(FQ_AD_ID: Q_AD_ID[;Q_AD_ID[;Q_AD_ID...]]` Q_AD_ID: `PROTOCOL:AD_SYSTEM:AD_ID[:CREATIVE_ID[:MEDIA_ID]]` PROTOCOL: AUDITUDE,VAST`)` |
 
-### TRACE_TRANSCODING_REQUESTED-records {#trace-transcoding-requested-records}
+### TRACE_TRANSCODING_REQUESTED records {#trace-transcoding-requested-records}
 
 De verslagen van dit type registreren de resultaten van het transcoderen verzoeken die de manifestserver naar CRS verzendt. De gebieden voorbij TRACE_TRANSCODING_REQUESTED verschijnen in de orde die in de lijst wordt getoond, door lusjes wordt gescheiden.
 
@@ -307,16 +307,16 @@ De verslagen van dit typelogboek verzoeken de manifestserver voor titels WEBVTT 
 | start | zweven | Starttijd splitsen (seconden met precisie milliseconde) |
 | end | zweven | Eindtijd splitsen (seconden met milliseconde-precisie) |
 
-### TRACE_WEBVTT_RESPONSE-records {#trace-webvtt-response-records}
+### TRACE_WEBVTT_RESPONSE records {#trace-webvtt-response-records}
 
-Registreert ``of ``dit ``type ``logboek ``responses ``de ``manifest ``server ``sends ``aan ``clients ``binnen `` `answer` ``aan ``requests ```for` ``WEBVTT ``titels. De gebieden voorbij TRACE_WEBVTT_RESPONSE &quot;verschijnen in de orde die in de lijst wordt getoond, gescheiden `by`lusjes.
+Registreert ``of ``dit ``type ``log ``responses ``de ``manifest ``server ``sends ``naar ``clients ``in `` `answer` ``naar ``requests `` `for` ``WEBVTT ``bijschriften. De gebieden voorbij TRACE_WEBVTT_RESPONSE &quot;verschijnen in de orde die in de lijst wordt getoond, gescheiden `by`lusjes.
 
 | Veld | Type | Beschrijving |
 |--- |--- |--- |
 | status | string | Geretourneerde HTTP-statuscode |
 | reactie | string | Base64-gecodeerde reactie die naar cliënt wordt verzonden |
 
-### TRACE_WEBVTT_SOURCE-records {#trace-webvtt-source-records}
+### TRACE_WEBVTT_SOURCE records {#trace-webvtt-source-records}
 
 Verslagen van dit type logboekreacties op verzoeken de manifestserver voor titels WEBVTT maakt. De gebieden voorbij TRACE_WEBVTT_SOURCE verschijnen in de orde die in de lijst wordt getoond, door lusjes wordt gescheiden.
 
@@ -330,70 +330,70 @@ Verslagen van dit type logboekreacties op verzoeken de manifestserver voor titel
 
 De verslagen van dit type laten de manifestserver toe om gebeurtenissen en informatie te registreren niet anders gepland voor wanneer het advertenties opneemt. Het gebied voorbij TRACE_MISC bestaat uit een berichtkoord. De berichten die zouden kunnen verschijnen omvatten het volgende:
 
-* Toevoegen genegeerd:advertentie plaatsen `[adManifestURL=https://cdn2.auditude.com/assets/3p/v2/8c/2b/8c2bb. . . .m3u8, durationSeconds=15.0, ignore=false, redirectAd=false, priority=1]`
-* AdPlacement andManifestURL=*adManifestURL*, durationSeconds=*seconds*, ignore=*ignore*, redirectAd=*redirectAd*, priority=*priority*
+* Toevoegen genegeerd:AdPlacement `[adManifestURL=https://cdn2.auditude.com/assets/3p/v2/8c/2b/8c2bb. . . .m3u8, durationSeconds=15.0, ignore=false, redirectAd=false, priority=1]`
+* AdPlacement adManifestURL=*adManifestURL*, durationSeconds=*seconds*, ignore=*ignore*, redirectAd=*redirectAd*, priority=*priority a9/>*
 * De advertentie is null geretourneerd.
 * Toegevoegd.
 * Aanroep toevoegen mislukt: *foutbericht*.
 * Gebruiker-Agent toevoegen om onbewerkte manifest te halen: *user-agent*.
-* Cookie toevoegen om Raw-manifest op te halen: [koekje]
-* Onjuist URL- *gevraagd foutbericht*. (Kan URL variant niet parseren)
-* Opgeroepen URL: URL *retourneert: antwoordcode*. (Live URL)
-* Opgeroepen URL: URL- *retourcode: antwoordcode*. (VOD-URL)
+* Cookie toevoegen om Raw-manifest op te halen: [cookie]
+* Onjuiste URL *opgevraagd URL-foutbericht*. (Kan URL variant niet parseren)
+* Opgeroepen URL: URL *retourneert: responscode*. (Live URL)
+* Opgeroepen URL: URL *retourcode: responscode*. (VOD-URL)
 * Conflict gevonden tijdens het omzetten van advertenties: een van de middelste of middelste beginuiteinden valt binnen de voorrol of voorrol in de middelste rol (VOD).
-* Onverwerkte uitzondering gedetecteerd die door de handler voor URI wordt gegenereerd: *verzoek-URL*.
+* Onverwerkte uitzondering gedetecteerd die door de handler voor URI wordt gegenereerd: *verzoek URL*.
 * Gereed met het genereren van het manifest van de variant. (Variant)
 * Gereed met het genereren van het manifest van de variant.
 * Uitzondering bij verwerking van VAST redirect *redirect URL *error: *foutbericht*.
-* Kan de afspeellijst van de advertentie niet ophalen voor *advertentie-URL*.
+* Kan de afspeellijst van de advertentie niet ophalen voor *en manifest-URL*.
 * Kan doelmanifest niet genereren. (HLSManifestResolver)
 * Kan eerste reactie op advertentie niet parseren: *foutbericht*.
-* Kan *GET|POST *request for path niet verwerken: *verzoek-URL*. (Live/VOD)
-* Kan live manifestverzoek niet verwerken: *verzoek-URL*. (Live)
+* Kan *GET|POST *request for path niet verwerken: *verzoek URL*. (Live/VOD)
+* Kan live manifestverzoek niet verwerken: *verzoek URL*. (Live)
 * Kan geen variantmanifest retourneren: *foutbericht*.
 * Kan groep-id niet valideren: *groep-id*.
 * Onbewerkte manifest ophalen: *inhoud-URL*. (Live)
-* Na omleiding VAST: *URL* omleiden.
+* Na omleiding VAST: *URL omleiden*.
 * Er zijn lege bronnen gevonden. (VOD)
 * *nummer *advertenties gevonden. (VOD)
 * HTTP-aanvraag ontvangen. (Zeer eerste bericht)
 * Dit wordt genegeerd omdat het verschil tussen de tijdsduur van de advertentie (*ad responsduur *sec) en de werkelijke duur van de advertentie (*actual duration *sec) groter is dan de limiet. (HLSManifestResolver)
 * Negeren is gelukt zonder id-waarde. (GroupAdResolver.java)
-* Negeren van een geldige tijdwaarde: *time *for availId = *geldige id*.
+* Negeren van een geldige tijdwaarde: *time *for availId = *avail ID*.
 * Negeren van een geldige waarde voor de duur: *duration *for availId = *avail ID*.
 * Nieuwe sessie initialiseren. (Variant)
 * Ongeldige HTTP-methode. Het moet een GET zijn. (VOD)
 * Ongeldige HTTP-methode. Trackingverzoek moet een GET zijn. (Live)
-* Ongeldig URL- *gevraagd foutbericht*. (Variant)
+* Ongeldige URL *opgevraagd URL-foutbericht*. (Variant)
 * Ongeldige groep. (HLSManifestResolver)
 * Ongeldig verzoek. Bijschrift is geen geldige aanvraag voor bijhouden. (VOD)
 * Ongeldig verzoek. Bijschriftverzoek moet worden ingediend nadat de sessie is ingesteld. (VOD)
 * Ongeldig verzoek. Het volgende verzoek moet worden gedaan nadat de zitting wordt gevestigd. (VOD)
 * Ongeldige serverinstantie voor overbelastingsgroep-id: *groep-id*. (Live)
 * Limiet voor VAST-omleidingen bereikt - *getal*.
-* Plaatsen van advertentie: *URL* toevoegen.
+* Plaatsen van advertentie: *roep URL* toe.
 * Geen manifest gevonden voor: *inhoud-URL*. (Live)
-* Geen gelijke die voor beschikbare identiteitskaart wordt gevonden: *geldige id*. (HLSManifestResolver)
+* Geen gelijke die voor beschikbare identiteitskaart wordt gevonden: *geldige ID*. (HLSManifestResolver)
 * Geen afspeelsessie gevonden. (HLSManifestResolver)
-* Bezig met verwerken van VOD-verzoek voor URL *van manifestinhoud*.
+* Bezig met verwerken van VOD-verzoek voor manifest *content-URL*.
 * Verwerkingsvariant.
-* Bezig met het verwerken van het bijschrift voor de URL ** van de manifestinhoud.
+* Bezig met verwerken van bijschriftverzoek voor manifest *content-URL*.
 * Trackingverzoek verwerken. (VOD)
 * Leid en reactie leeg om. ( VASTStAX)
 * Aanvragen: *URL*.
 * Respons van fout voor GET- verzoek omdat geen playbackzitting werd gevonden. (VOD)
 * Respons van een fout voor het verzoek van de GET wegens een interne serverfout terugkeren.
-* Respons van fout voor GET- verzoek die een ongeldig middel specificeren: *aanvraag-id*. (VOD)
+* Respons van fout voor GET- verzoek die een ongeldig middel specificeren: *aanvraag-id toevoegen*. (VOD)
 * Respons van fout voor GET- verzoek die een ongeldige of lege groep ID specificeren: *groep-id*. (VOD)
 * Respons van fout voor het terugkeren van GET verzoek die een ongeldige het volgen positiewaarde specificeren. (VOD)
-* Respons van fout voor GET verzoek met ongeldige syntaxis terugkeren - *verzoek URL*. (Live/VOD)
+* Respons van de fout voor het verzoek van de GET met ongeldige syntaxis - *verzoek URL*. (Live/VOD)
 * Respons van fout voor verzoek met niet gestaafde methode van HTTP terugkeren: *GET|POST*. (Live/VOD)
 * Manifest van cache retourneren. (VOD)
 * Server is overbelast. Doorgaan zonder aanvraag voor een advertentie. (Variant)
 * Beginnen met genereren van doelmanifest. (HLSManifestResolver)
 * Begin genererend variantmanifest van: *inhoud-URL*. (Variant)
 * Begin advertenties in manifest te stikken. (VODHLSResolver)
-* Poging advertentie te naaien op *HH:MM:SS*: AdPlacement andManifestURL=*and Manifest URL*, durationSeconds=*seconds*, ignore=*ignore*, redirectAd=*redirect ad*, priority=*priority*. (HLSManifestResolver)
+* Poging om advertentie op *HH:MM:SS* te naaien: AdPlacement adManifestURL=*ad Manifest URL*, durationSeconds=*seconds*, ignore=*ignore*, redirectAd=*redirect ad*, priority=*priority*. (HLSManifestResolver)
 * Kan geen advertenties ophalen vanwege een ongeldige tijdlijn. Retourneerde de inhoud zonder advertenties. (VOD)
 * Kan geen advertenties ophalen. Retourneerde de inhoud zonder advertenties. (VOD)
 * Kan geen advertentie-query ophalen en er is geen inhoud-URL opgegeven. (VOD)
@@ -411,7 +411,7 @@ De manifestserver produceert verslagen van dit type na het roepen van een volgen
 | url | string | URL gepingd |
 | state | string | HTTP-statuscode |
 
-### TRACE_PLAYBACK_PROGRESS-records {#trace-playback-progress-records}
+### TRACE_PLAYBACK_PROGRESS records {#trace-playback-progress-records}
 
 De manifestserver produceert verslagen van dit type wanneer het een signaal over playbackvooruitgang tijdens de server het volgen werkschema ontvangt. De gebieden voorbij TRACE_PLAYBACK_PROGRESS verschijnen in de orde die in de lijst wordt getoond, door lusjes wordt gescheiden.
 
@@ -433,4 +433,4 @@ De manifestserver produceert verslagen van dit type wanneer het een signaal over
 
 ## Nuttige bronnen {#helpful-resources}
 
-* Zie de volledige Help-documentatie op de pagina Learn &amp; Support [van](https://helpx.adobe.com/support/primetime.html) Adobe Primetime.
+* Zie de volledige Help-documentatie op de pagina [Adobe Primetime Learn &amp; Support](https://helpx.adobe.com/support/primetime.html).
