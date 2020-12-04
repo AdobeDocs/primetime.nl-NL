@@ -4,13 +4,16 @@ title: Eigenschappen van configuratiebestand
 uuid: 13e158a6-c447-4e5e-884d-03fb4835c120
 translation-type: tm+mt
 source-git-commit: 29bc8323460d9be0fce66cbea7c6fce46df20d61
+workflow-type: tm+mt
+source-wordcount: '314'
+ht-degree: 0%
 
 ---
 
 
 # Eigenschappen van configuratiebestand {#configuration-file-properties}
 
-Voordat u de licentiegenerator uitvoert, geeft u waarden op voor de eigenschappen van de licentiegenerator. In het configuratiebestand worden de volgende eigenschappen opgegeven. Voor eigenschapsnamen die *n* bevatten, vertegenwoordigt *n* een geheel getal dat begint met 1 en toeneemt voor elke instantie van de eigenschap.
+Voordat u de licentiegenerator uitvoert, geeft u waarden op voor de eigenschappen van de licentiegenerator. In het configuratiebestand worden de volgende eigenschappen opgegeven. Voor eigenschapsnamen die *n* omvatten, *n* vertegenwoordigt een geheel dat met 1 begint en voor elke instantie van het bezit stijgt.
 
 <table frame="all" colsep="1" rowsep="1" class="+ topic/table adobe-d/table " id="table_qk1_rry_n4"> 
  <thead class="- topic/thead "> 
@@ -22,7 +25,7 @@ Voordat u de licentiegenerator uitvoert, geeft u waarden op voor de eigenschappe
  <tbody class="- topic/tbody "> 
   <tr rowsep="1" class="- topic/row "> 
    <td colname="1" class="- topic/entry "><span class="+ topic/ph pr-d/codeph codeph"> licensegen.minClientVersion</span> </td> 
-   <td colname="2" class="- topic/entry "> Stel de minimaal ondersteunde clientversie in. Als deze optie niet is ingesteld, worden standaard alle versies ondersteund. Stel deze waarde in om te bepalen hoe oudere clients reageren op licentievereisten die ze niet ondersteunen. Geef x (voor Adobe Access x.0) op waarbij x het hoofdreleasenummer is. </td> 
+   <td colname="2" class="- topic/entry "> Stel de minimaal ondersteunde clientversie in. Als deze optie niet is ingesteld, worden standaard alle versies ondersteund. Stel deze waarde in om te bepalen hoe oudere clients reageren op licentievereisten die ze niet ondersteunen. Geef x (voor Adobe Access x.0) op, waarbij x het hoofdreleasenummer is. </td> 
   </tr> 
   <tr rowsep="1" class="- topic/row "> 
    <td colname="1" class="- topic/entry "><span class="+ topic/ph pr-d/codeph codeph"> licensegen.keyServerCert</span> </td> 
@@ -34,7 +37,7 @@ Voordat u de licentiegenerator uitvoert, geeft u waarden op voor de eigenschappe
   </tr> 
   <tr rowsep="1" class="- topic/row "> 
    <td colname="1" class="- topic/entry "><span class="+ topic/ph pr-d/codeph codeph"> licensegen.sign.certpass</span> </td> 
-   <td colname="2" class="- topic/entry ">Het wachtwoord dat wordt gebruikt om het bestand te beschermen dat door <span class="+ topic/ph pr-d/codeph codeph"> licensegen.sign.certfile wordt opgegeven.</span> </td> 
+   <td colname="2" class="- topic/entry ">Het wachtwoord dat wordt gebruikt om het bestand te beveiligen dat wordt opgegeven door <span class="+ topic/ph pr-d/codeph codeph"> licensegen.sign.certfile.</span> </td> 
   </tr> 
   <tr rowsep="1" class="- topic/row "> 
    <td colname="1" class="- topic/entry "><span class="+ topic/ph pr-d/codeph codeph">licensegen.domainca.n</span> </td> 
@@ -42,7 +45,7 @@ Voordat u de licentiegenerator uitvoert, geeft u waarden op voor de eigenschappe
   </tr> 
   <tr rowsep="1" class="- topic/row "> 
    <td colname="1" class="- topic/entry "><span class="+ topic/ph pr-d/codeph codeph">licensegen.keys.asymmetric.licenseServerCredential.n</span> </td> 
-   <td colname="2" class="- topic/entry "> <p class="- topic/p ">Optioneel PKCS12-bestand met aanvullende licentieserverreferenties voor het decoderen van de CEK in de metagegevens en het beleid. Aanvullende referenties kunnen worden geconfigureerd als de inhoud eerder is verpakt met een ander certificaat voor de licentieserver dan het certificaat dat is opgegeven door <span class="codeph"> licensegen.sign.certfile</span>. Deze eigenschap moet verwijzen naar een <span class="filepath"> .pfx</span> -bestand met een certificaat en een persoonlijke sleutel. n moet monotonisch toenemen, beginnend bij 1. </p> </td> 
+   <td colname="2" class="- topic/entry "> <p class="- topic/p ">Optioneel PKCS12-bestand met aanvullende licentieserverreferenties voor het decoderen van de CEK in de metagegevens en het beleid. Aanvullende referenties kunnen worden geconfigureerd als inhoud eerder is verpakt met een ander licentieservercertificaat dan is opgegeven door <span class="codeph"> licensegen.sign.certfile</span>. Deze eigenschap moet verwijzen naar een .pfx<span class="filepath">-bestand met een certificaat en een persoonlijke sleutel. </span> n moet monotonisch toenemen, beginnend bij 1. </p> </td> 
   </tr> 
   <tr rowsep="0" class="- topic/row "> 
    <td colname="1" class="- topic/entry "><span class="+ topic/ph pr-d/codeph codeph">licensegen.keys.asymmetric.licenseServerCredential.n.password</span> </td> 
