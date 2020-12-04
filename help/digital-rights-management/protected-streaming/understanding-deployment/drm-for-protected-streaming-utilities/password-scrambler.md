@@ -44,7 +44,7 @@ Encrypted password:
 </i class="+ topic>
 ```
 
-Alle wachtwoorden die u in de bestanden [!DNL flashaccess-global.xml] [!DNL flashaccess-tenant.xml] en bestanden hebt opgegeven, moeten worden versleuteld.
+Alle wachtwoorden die u in de [!DNL flashaccess-global.xml] en [!DNL flashaccess-tenant.xml] dossiers hebt gespecificeerd moeten worden gecodeerd.
 
 >[!NOTE]
 >
