@@ -6,11 +6,14 @@ title: Methoden van de klasse Config voor tags
 uuid: 27f1df0a-bbd3-4d80-820e-b659f2f33069
 translation-type: tm+mt
 source-git-commit: 557f42cd9a6f356aa99e13386d9e8d65e043a6af
+workflow-type: tm+mt
+source-wordcount: '184'
+ht-degree: 0%
 
 ---
 
 
-# Methoden van de klasse Config voor tags {#config-class-methods-for-tags}
+# Methoden van de klasse Config voor codes {#config-class-methods-for-tags}
 
 U kunt aangepaste tagnamen in TVSDK globaal configureren met de klasse PTSDKConfig.
 
