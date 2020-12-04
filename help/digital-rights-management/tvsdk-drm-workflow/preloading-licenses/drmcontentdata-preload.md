@@ -6,24 +6,27 @@ title: DRMContentData gebruiken om licenties vooraf te laden
 uuid: 5cedd077-0613-4677-8fb0-81237d7ac61a
 translation-type: tm+mt
 source-git-commit: 29bc8323460d9be0fce66cbea7c6fce46df20d61
+workflow-type: tm+mt
+source-wordcount: '132'
+ht-degree: 0%
 
 ---
 
 
-# DRMContentData gebruiken om licenties vooraf te laden{#using-drmcontentdata-to-pre-load-licenses}
+# DRMContentData gebruiken om licenties {#using-drmcontentdata-to-pre-load-licenses} vooraf te laden
 
-In de volgende stappen wordt de workflow beschreven voor het vooraf laden van de licentie voor een beveiligd mediabestand met behulp van een `DRMContentData` object.
+In de volgende stappen wordt de workflow beschreven voor het vooraf laden van de licentie voor een beveiligd mediabestand met behulp van een `DRMContentData`-object.
 
 1. Haal de binaire DRM-metagegevens op voor de inhoud in het pakket.
 
-   Als u het Primetime DRM Java Reference Implementations Packager gebruikt, wordt dit metagegevensbestand automatisch gegenereerd met een [!DNL .metadata] extensie. U kunt deze metagegevens bijvoorbeeld downloaden met de `URLLoader` klasse. Als het gebruiken van inhoud HLS of HDS, wordt de meta-gegevens van verwijzingen voorzien in het content manifest- dossier ( [!DNL .m3u8] of [!DNL .f4m]) of *binnen* het manifest- dossier opgenomen als Base64-Gecodeerde koord (die Base64-gedecodeerd vóór consumptie moet zijn).
-1. Maak een `DRMContentData` object en geef de metagegevens door aan de constructorfunctie:
+   Als u het Primetime DRM Java Reference Implementations Packager gebruikt, wordt dit metagegevensbestand automatisch gegenereerd met de extensie [!DNL .metadata]. U kunt deze metagegevens bijvoorbeeld downloaden met de klasse `URLLoader`. Als u HLS- of HDS-inhoud gebruikt, wordt naar de metagegevens verwezen in het inhoudsmanifestbestand ( [!DNL .m3u8] of [!DNL .f4m]) of wordt *in het manifestbestand opgenomen als een Base64-gecodeerde tekenreeks (die Base64-gedecodeerd moet zijn vóór consumptie).*
+1. Maak een `DRMContentData`-object en geef de metagegevens door aan de constructorfunctie:
 
    ```
    var drmData:DRMContentData = new DRMContentData( metadata );
    ```
 
-1. De overige stappen zijn gelijk aan de workflow die wordt beschreven in Details *van* inhoudsbeveiligingsproces.
+1. De overige stappen zijn identiek aan de workflow die wordt beschreven in *Details inhoudsbeveiligingsproces*.
 
 <!--<a id="example_EBEDA8E10F6344CABA4DE31DC342B8F8"></a>-->
 
