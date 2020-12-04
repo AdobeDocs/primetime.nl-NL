@@ -21,8 +21,8 @@ Gebruik dit hulpmiddel om het wachtwoord te coderen alvorens u het in het [!DNL 
 
 Voor het uitvoeren van het gereedschap kunt u een Ant-script of Java gebruiken.
 
-Het hulpprogramma genereert het gecodeerde wachtwoord dat u naar het [!DNL flashaccess-refimpl.properties] bestand moet kopiëren.
+Het nut produceert het gecodeerde wachtwoord, dat u aan het [!DNL flashaccess-refimpl.properties] dossier moet kopiëren.
 
 >[!NOTE]
 >
->Wachtwoorden die zijn gecodeerd met de `ScrambleUtil.class` referentie-implementatie werken niet met de Primetime DRM-server voor beveiligde streaming.
+>Wachtwoorden die zijn gecodeerd met de `ScrambleUtil.class` die zijn meegeleverd bij de referentie-implementatie, werken niet met de Primetime DRM-server voor beveiligde streaming.
