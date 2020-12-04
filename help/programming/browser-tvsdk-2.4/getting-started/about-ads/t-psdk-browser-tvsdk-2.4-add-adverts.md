@@ -6,11 +6,14 @@ title: Adverteren toevoegen
 uuid: 7762506f-b55e-445d-b8a2-c1208358a370
 translation-type: tm+mt
 source-git-commit: 592245f5a7186d18dabbb5a98a468cbed7354aed
+workflow-type: tm+mt
+source-wordcount: '51'
+ht-degree: 0%
 
 ---
 
 
-# Adverteren toevoegen {#add-advertising}
+# Advertentie {#add-advertising} toevoegen
 
 1. De metagegevens voor advertenties definiëren.
 
@@ -21,7 +24,7 @@ source-git-commit: 592245f5a7186d18dabbb5a98a468cbed7354aed
      auditudeSettings.zoneId = "123869";
    ```
 
-1. Voeg de advertentiemetagegevens aan toe `MediaResource`.
+1. Voeg de advertentiemetagegevens aan `MediaResource` toe.
 
    ```js
    var mediaResource =  
@@ -36,8 +39,8 @@ source-git-commit: 592245f5a7186d18dabbb5a98a468cbed7354aed
    config.advertisingFactory = new ExtCueOutContentFactory(auditudeSettings);
    ```
 
-1. Voeg het `ExtCueOutContentFactory` aan de bibliotheeksectie toe.
-1. Download het bestand `ExtCueOutContentFactory.js` uit de bibliotheeksectie en plaats het in de werkmap.
+1. Voeg `ExtCueOutContentFactory` aan de bibliotheeksectie toe.
+1. Download `ExtCueOutContentFactory.js` van de bibliotheeksectie en plaats het in de werkende omslag.
 
    ```js
    <script src= "frameworks/player/dash.min.js"></script> 
