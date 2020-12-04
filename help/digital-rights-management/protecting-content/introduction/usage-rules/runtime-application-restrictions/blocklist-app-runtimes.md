@@ -15,7 +15,7 @@ ht-degree: 0%
 
 # Lijst van afgewezen personen van toepassingsruntimes {#blocklist-of-application-runtimes}
 
-Lijst van afgewezen personen van toepassingsruntimes geeft de versie van de Primetime-client of Flash Runtime aan die geen toegang heeft tot inhoud. Geef de beperkte runtime (Flash Player, AIR of iOS), het platform en de versie op.
+Lijst van afgewezen personen van toepassingsruntimes specificeert de versie van de cliënt Primetime of Flash Runtime die tot inhoud niet kan toegang hebben. Geef de beperkte runtime (Flash Player, AIR of iOS), het platform en de versie op.
 
 Voorbeeld van gebruik: Net als bij de Primetime DRM Client lijst van afgewezen personen kan de nieuwste versie van de Flash Player-, AIR- of iOS-runtimes worden opgegeven als de minimale versie die vereist is voor het aanschaffen van licenties en het afspelen van inhoud.
 
