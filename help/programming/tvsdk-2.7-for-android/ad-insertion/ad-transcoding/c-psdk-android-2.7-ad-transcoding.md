@@ -27,7 +27,7 @@ Neem contact op met uw Adobe als u deze optionele CRS-functie wilt activeren.
 >
 >Voor klanten van versie 3.0 van CRS (en vroeger), die met Versie 3.1 beginnen van CRS hebben de volgende veranderingen zowel veiligheid als prestaties verbeterd:
 >
->* CRS 3.1 gaat verder met `https:` als de inhoud die wordt herverpakt gebruikt `https:`. Hierdoor wordt het potentieel van sommige spelers om onveilige inhoud te presenteren, beperkt.
+>* CRS 3.1 gaat verder met `https:` als de inhoud die wordt herverpakt `https:` gebruikt. Hierdoor wordt het potentieel van sommige spelers om onveilige inhoud te presenteren, beperkt.
    >
    >
 * CRS 3.1 minimaliseert zeer netwerkvraag, verbeterend videostarttijd.
@@ -36,7 +36,7 @@ Neem contact op met uw Adobe als u deze optionele CRS-functie wilt activeren.
 
 
 
-Voor meer informatie over CRS, zie de Dienst van het [Verpakken Creative (CRS)](https://helpx.adobe.com/content/dam/help/en/primetime/drm/drm_certificate_enrollment.pdf).
+Zie [Creative Packaging Service (CRS)](https://helpx.adobe.com/content/dam/help/en/primetime/drm/drm_certificate_enrollment.pdf) voor meer informatie over CRS.
 
 ## CRS inschakelen in TVSDK-toepassingen{#enable-crs-in-tvsdk-applications}
 
