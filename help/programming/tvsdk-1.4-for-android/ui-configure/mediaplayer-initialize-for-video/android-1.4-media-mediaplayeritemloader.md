@@ -6,6 +6,9 @@ title: Een mediabron laden met MediaPlayerItemLoader
 uuid: b2311ddc-f059-4775-8553-fc354ec2636b
 translation-type: tm+mt
 source-git-commit: 5908e5a3521966496aeec0ef730e4a704fddfb68
+workflow-type: tm+mt
+source-wordcount: '255'
+ht-degree: 0%
 
 ---
 
@@ -14,9 +17,9 @@ source-git-commit: 5908e5a3521966496aeec0ef730e4a704fddfb68
 
 Een andere manier om een mediabron op te lossen is met MediaPlayerItemLoader. Dit is nuttig wanneer u informatie over een bepaalde media stroom wilt verkrijgen zonder een instantie te concretiseren MediaPlayer.
 
-Via de `MediaPlayerItemLoader` klasse kunt u een mediabronis voor de corresponderende bron uitwisselen `MediaPlayerItem` zonder een weergave aan een `MediaPlayer` instantie te koppelen. Dit zou leiden tot de toewijzing van de hardwarebronnen voor videodecodering. Het verkrijgen van de `MediaPlayerItem` instantie verloopt asynchroon.
+Via de klasse `MediaPlayerItemLoader` kunt u een mediabron voor de bijbehorende `MediaPlayerItem` uitwisselen zonder een weergave aan een `MediaPlayer`-instantie te koppelen, wat zou leiden tot de toewijzing van de hardwarebronnen voor videodecodering. Het proces voor het verkrijgen van de instantie `MediaPlayerItem` is asynchroon.
 
-1. Implementeer de `MediaPlayerItemLoader.LoaderListener` callback-interface.
+1. Voer de `MediaPlayerItemLoader.LoaderListener` callback interface uit.
 
        Deze interface definieert twee methoden:
    
@@ -26,12 +29,12 @@ Via de `MediaPlayerItemLoader` klasse kunt u een mediabronis voor de corresponde
 
    * `LoaderListener.onError` callback, functie
 
-      TVSDK gebruikt dit om uw toepassing mee te delen dat de gevraagde informatie beschikbaar is in de vorm van een `MediaPlayerItem` instantie die als parameter aan callback wordt doorgegeven.
+      TVSDK gebruikt dit om uw toepassing mee te delen dat de gevraagde informatie in de vorm van een `MediaPlayerItem` instantie beschikbaar is die als parameter aan callback wordt overgegaan.
 
-1. Registreer deze instantie bij TVSDK door deze als parameter door te geven aan de constructor van de `MediaPlayerItemLoader`instantie.
-1. Roep aan `MediaPlayerItemLoader.load`en geef een instantie van een `MediaResource` object door.
+1. Registreer deze instantie aan TVSDK door het als parameter tot de aannemer van `MediaPlayerItemLoader` over te gaan.
+1. Roep `MediaPlayerItemLoader.load` aan en geef een instantie van een `MediaResource`-object door.
 
-   De URL van het `MediaResource` object moet verwijzen naar de stream waarvoor u informatie wilt ophalen. Bijvoorbeeld:
+   De URL van het object `MediaResource` moet verwijzen naar de stream waarvoor u informatie wilt ophalen. Bijvoorbeeld:
 
    ```java
    // instantiate the listener interface 
