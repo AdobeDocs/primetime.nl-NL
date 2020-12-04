@@ -11,6 +11,6 @@ ht-degree: 0%
 ---
 
 
-# Het configuratiebestand van de huurder bijwerken{#updating-the-tenant-configuration-file}
+# Het bijwerken van het Dossier van de Configuratie van de Aannemer{#updating-the-tenant-configuration-file}
 
-Alle waarden die zijn opgegeven in [!DNL flashaccess-tenant.xml] kunnen op elk moment worden gewijzigd en de wijzigingen worden van kracht wanneer de server het configuratiebestand opnieuw laadt. Ook, controleert de server veranderingen in alle credentiedossiers (.pfx) en het certificaatdossiers van de lijst van gewenste personen van Packager waarnaar in het dossier van de huurdersconfiguratie wordt verwezen.
+Alle waarden die in [!DNL flashaccess-tenant.xml] worden opgegeven, kunnen op elk moment worden gewijzigd en de wijzigingen worden van kracht wanneer de server het configuratiebestand opnieuw laadt. Ook, controleert de server veranderingen in alle credentiedossiers (.pfx) en het certificaatdossiers van de lijst van gewenste personen van Packager waarnaar in het dossier van de huurdersconfiguratie wordt verwezen.
