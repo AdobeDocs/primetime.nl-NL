@@ -7,19 +7,22 @@ title: MediaPlayer onderbreken en herstellen
 uuid: 7777af91-547c-4f7a-8818-3d46dccee7d6
 translation-type: tm+mt
 source-git-commit: 0eaf0e7e7e61d596a51d1c9c837ad072d703c6a7
+workflow-type: tm+mt
+source-wordcount: '180'
+ht-degree: 0%
 
 ---
 
 
-# MediaPlayer onderbreken en herstellen {#suspend-and-restore-mediaplayer}
+# MediaPlayer {#suspend-and-restore-mediaplayer} onderbreken en herstellen
 
 De TVSDK MediaPlayer onderbreken en herstellen wanneer een apparaatscherm wordt uitgeschakeld en ingeschakeld, moet door de toepassing worden afgehandeld.
 
-U kunt de bewerkingen op de ontvanger van de Android-uitzending onderbreken en herstellen voor het in- en uitschakelen van het scherm. `MediaPlayer`
+U kunt bewerkingen op `MediaPlayer` opschorten en herstellen in de Android-ontvanger voor het in- en uitschakelen van het scherm.
 
-TVSDK kan niet bepalen wanneer een fragment (of activiteit) zich op de achtergrond of voorgrond bevindt. Bovendien wordt Android `SurfaceView` niet vernietigd wanneer het apparaatscherm wordt uitgeschakeld (maar de activiteit wordt gepauzeerd). De toepassing wordt echter `SurfaceView`*wel* vernietigd wanneer het apparaat de toepassing op de achtergrond plaatst. TVSDK kan geen van deze wijzigingen detecteren, dus deze moeten door uw toepassing worden verwerkt.
+TVSDK kan niet bepalen wanneer een fragment (of activiteit) zich op de achtergrond of voorgrond bevindt. Bovendien wordt Android `SurfaceView` niet vernietigd wanneer het apparaatscherm wordt uitgeschakeld (maar de activiteit wordt gepauzeerd). `SurfaceView` *does* worden echter vernietigd wanneer het apparaat uw toepassing op de achtergrond plaatst. TVSDK kan geen van deze wijzigingen detecteren, dus deze moeten door uw toepassing worden verwerkt.
 
-In het volgende voorbeeld ziet u hoe uw toepassing het opschorten en herstellen van het apparaat kan afhandelen `MediaPlayer` wanneer het apparaatscherm op toepassingsniveau wordt in- en uitgeschakeld:
+De volgende voorbeeldcode geeft aan hoe uw toepassing de `MediaPlayer` kan opschorten en herstellen wanneer het apparaatscherm op toepassingsniveau wordt in- en uitgeschakeld:
 
 ```java
 // Track the state of a fragment to determine if it is PAUSED or RESUMED 
