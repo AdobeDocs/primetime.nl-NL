@@ -6,6 +6,9 @@ title: Foutafhandeling instellen
 uuid: ff56180d-aa74-4b7c-a24c-e536d874c2e6
 translation-type: tm+mt
 source-git-commit: 040655d8ba5f91c98ed0584c08db226ffe1e0f4e
+workflow-type: tm+mt
+source-wordcount: '111'
+ht-degree: 1%
 
 ---
 
@@ -14,13 +17,13 @@ source-git-commit: 040655d8ba5f91c98ed0584c08db226ffe1e0f4e
 
 Eén locatie instellen om fouten af te handelen.
 
-1. Hiermee wordt een callback-functie voor gebeurtenissen geïmplementeerd `MediaPlayerStatusChangeEvent.STATUS_CHANGED`.
+1. Voer een gebeurteniscallback functie voor `MediaPlayerStatusChangeEvent.STATUS_CHANGED` uit.
 
-   TVSDK geeft gebeurtenisinformatie, zoals een `MediaPlayerStatusChangeEvent` object, door.
-1. Wanneer in de callback de status van de gebeurtenisparameter is, `MediaPlayerStatus.ERROR`moet u logica opgeven om alle fouten af te handelen.
-1. Nadat de fout is afgehandeld, herstelt u het `MediaPlayer` object of laadt u een nieuwe mediabron.
+   TVSDK geeft gebeurtenisinformatie door, zoals een `MediaPlayerStatusChangeEvent`-object.
+1. Wanneer in de callback de status van de gebeurtenisparameter `MediaPlayerStatus.ERROR` is, levert u logica op om alle fouten af te handelen.
+1. Nadat de fout is afgehandeld, herstelt u het `MediaPlayer`-object of laadt u een nieuwe mediabron.
 
-   Wanneer het `MediaPlayer` object de status ERROR heeft, kan deze status pas worden afgesloten wanneer u het `MediaPlayer` object opnieuw instelt (via de `MediaPlayer.reset` methode) of een nieuwe mediabron laadt ( `MediaPlayer.replaceCurrentItem`).
+   Wanneer het `MediaPlayer` voorwerp in de FOUT staat is, kan het niet deze staat weggaan tot u of het `MediaPlayer` voorwerp (via de `MediaPlayer.reset` methode) terugstelt of een nieuwe media middel ( `MediaPlayer.replaceCurrentItem`) laadt.
 
 <!--<a id="example_49FF225E92EA494AA06B2E5F26101F4C"></a>-->
 
