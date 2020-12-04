@@ -6,6 +6,9 @@ title: Wacht op een geldige status
 uuid: 22b68162-1625-4e8a-8566-b0c198155622
 translation-type: tm+mt
 source-git-commit: 5908e5a3521966496aeec0ef730e4a704fddfb68
+workflow-type: tm+mt
+source-wordcount: '183'
+ht-degree: 0%
 
 ---
 
