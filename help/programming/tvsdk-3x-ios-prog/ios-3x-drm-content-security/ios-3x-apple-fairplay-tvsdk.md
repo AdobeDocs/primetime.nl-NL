@@ -31,17 +31,17 @@ https://fp-gen.service.expressplay.com
 
 De Resource Loader maakt de aanvraag op en voegt een ExpressPlay-token toe dat het afspelen naar de URL toestaat. Wanneer het verwerven van het token ExpressPlay moet u rekening houden met verschillende opties. Deze opties worden bepaald door de manier waarop u de inhoud hebt verpakt.
 
-Wanneer u de inhoud verpakt, voegt de pakketsoftware URL&#39; `skd:` s in het M3U8-manifest in. Na de `skd:` ingang, kunt u om het even welke gegevens in manifest zetten. U kunt deze gegevens in uw toepassingscode gebruiken om de hierboven vermelde taken te voltooien. U kunt bijvoorbeeld zo gebruiken `skd:{content_id}` dat uw toepassing de id kan bepalen van de inhoud die wordt afgespeeld en een token kan aanvragen voor die specifieke inhoud. U kunt bijvoorbeeld ook gebruiken `skd:{entitlement_server_url}?cid={content_id}`, zodat de URL van de machtigingsserver niet hoeft te zijn gecodeerd voor uw toepassing.
+Wanneer u de inhoud verpakt, voegt de pakketsoftware `skd:` URL&#39;s in uw M3U8-manifest in. Na de `skd:` ingang, kunt u om het even welke gegevens in manifest zetten. U kunt deze gegevens in uw toepassingscode gebruiken om de hierboven vermelde taken te voltooien. U kunt bijvoorbeeld `skd:{content_id}` gebruiken, zodat uw toepassing de id kan bepalen van de inhoud die wordt afgespeeld en een token kan aanvragen voor die specifieke inhoud. U kunt bijvoorbeeld ook `skd:{entitlement_server_url}?cid={content_id}` gebruiken, zodat de URL van de machtigingsserver niet hoeft te zijn gecodeerd.
 
-U hebt mogelijk geen informatie in uw `skd:` URL nodig als u bij het afspelen de inhoud-id via andere kanalen kent. Het tweede voorbeeld is een ideale oplossing om uw opstelling te testen, maar u kunt het ook in een productiemilieu gebruiken.
+U hebt mogelijk geen informatie in uw `skd:` URL nodig als u, wanneer het afspelen begint, de inhoud-id al via andere kanalen kent. Het tweede voorbeeld is een ideale oplossing om uw opstelling te testen, maar u kunt het ook in een productiemilieu gebruiken.
 
 >[!TIP]
 >
 >U bepaalt de indeling van `skd:`.
 
-Uw inhoud wordt verkregen door het `skd:` protocol te gebruiken, maar uw licentieaanvraag gebruikt `https:`. De gemeenschappelijkste opties om deze protocollen te behandelen zijn:
+Uw inhoud wordt verkregen door het `skd:` protocol te gebruiken, maar uw vergunningsverzoek gebruikt `https:`. De gemeenschappelijkste opties om deze protocollen te behandelen zijn:
 
-* **Het eerste testen van playback** van begin tot eind wanneer het verpakken van uw inhoud, selecteer een `skd:` URL. Wanneer u uw app test, moet u handmatig een licentie aanschaffen bij ExpressPlay en de licentie- (een `https:` URL) en inhoud-URL in uw lader coderen.
+* **Eerste tests van end-to-end** afspelenSelecteer een  `skd:` URL wanneer u de inhoud verpakt. Wanneer u uw app test, moet u handmatig een licentie aanschaffen bij ExpressPlay en de licentie- (een `https:` URL) en inhoud-URL in uw lader coderen.
 
    Bijvoorbeeld:
 
@@ -53,7 +53,7 @@ Uw inhoud wordt verkregen door het `skd:` protocol te gebruiken, maar uw licenti
        ExpressPlayToken={copy_your_token_to_here}";
    ```
 
-* **In de meeste andere gevallen** selecteert u bij het verpakken van uw inhoud een `skd:` URL die uniek de id van de inhoud vertegenwoordigt. Analyseer de `skd:` URL in de lader, verzend deze naar de server om een token te verkrijgen en gebruik de resulterende token als URL.
+* **De meeste andere** gevallenWanneer u de inhoud verpakt, selecteert u een  `skd:` URL die uniek de id van de inhoud vertegenwoordigt. Analyseer de URL `skd:` in de lader, stuur deze naar de server om een token aan te schaffen en gebruik de resulterende token als URL.
 
    Bijvoorbeeld:
 
@@ -155,19 +155,19 @@ Uw inhoud wordt verkregen door het `skd:` protocol te gebruiken, maar uw licenti
 
 U kunt Apple FairPlay Streaming, de DRM-oplossing van Apple, implementeren in uw TVSDK-toepassingen.
 
-1. Maak uw FairPlay-lader voor klantbronnen door deze te implementeren `PTAVAssetResourceLoaderDelegate`. Zie Apple FairPlay in TVSDK-toepassingen voor meer informatie.
+1. Maak uw FairPlay-lader voor klantbronnen door `PTAVAssetResourceLoaderDelegate` te implementeren. Zie Apple FairPlay in TVSDK-toepassingen voor meer informatie.
 
    >[!NOTE]
    >
-   >Zorg ervoor dat u de instructies opvolgt in de *FairPlay Streaming Program Guide* ( *FairPlayStreaming_PG.pdf*), die is opgenomen in de SDK van [FairPlay Server voor het ontwikkelen van een FPS-compatibele app](https://developer.apple.com/services-account/download?path=/Developer_Tools/FairPlay_Streaming_SDK/FairPlay_Streaming_Server_SDK.zip)).
+   >Zorg ervoor dat u de instructies opvolgt in de *FairPlay Streaming Program Guide* ( *FairPlayStreaming_PG.pdf*), die is opgenomen in [FairPlay Server SDK voor het ontwikkelen van een FPS-compatibele app](https://developer.apple.com/services-account/download?path=/Developer_Tools/FairPlay_Streaming_SDK/FairPlay_Streaming_Server_SDK.zip)).
 
-   De methode `resourceLoader:shouldWaitForLoadingOfRequestedResource` is gelijk aan de methode `AVAssetResourceLoaderDelegate`in.
+   De methode `resourceLoader:shouldWaitForLoadingOfRequestedResource` is gelijk aan wat in `AVAssetResourceLoaderDelegate` is.
 
    >[!NOTE]
    >
-   >Als u inhoud wilt afspelen in het ExpressPlay-licentieserverscenario, wijzigt u het URL-schema in uw ExpressPlay FairPlay-serverlicentieaanvraag-URL van `skd://` naar `https://` (of `https://`).
+   >Als u inhoud wilt afspelen in het ExpressPlay-licentieserverscenario, wijzigt u het URL-schema in uw ExpressPlay FairPlay-serverlicentieaanvraag-URL van `skd://` in `https://` (of `https://`).
 
-1. Registreer de *FairPlay* Customer Resource Loader bij `registerPTAVAssetResourceLoader`.
+1. Registreer de *FairPlay* Loader voor hulpbronnen van klanten met `registerPTAVAssetResourceLoader`.
 
    ```
    PTFairPlayResourceLoader *resourceLoader =  
