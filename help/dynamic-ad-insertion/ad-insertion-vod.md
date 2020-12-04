@@ -18,12 +18,12 @@ Primetime Ad Insertion ondersteunt het toevoegen van VOD-bestanden aan meerdere 
 
 * [IAB VAST](https://www.iab.com/wp-content/uploads/2015/06/VASTv3_0.pdf)
 
-## VOD (via server toegewezen advertenties) {#server-mapped-ads}
+## VOD (Server-Toegewezen Adds) {#server-mapped-ads}
 
-Primetime Ad Insertion ondersteunt VOD-invoeging met advertenties die vóór het begin van het afspelen zijn ingevoegd met behulp van tijdlijngegevens die in een VMAP-indeling zijn gedefinieerd.  VMAP-specifieke bijschriften, zoals breakStart/breakEnd-beacons, worden geleverd met [Advertentie bijhouden](set-up-ad-tracking.md).
+Primetime Ad Insertion ondersteunt VOD-invoeging met advertenties die vóór het begin van het afspelen zijn ingevoegd met behulp van tijdlijngegevens die in een VMAP-indeling zijn gedefinieerd.  VMAP-specifieke bijschriften zoals breakStart/breakEnd-beacons worden geleverd met [Advisering](set-up-ad-tracking.md).
 
-## Volledige weergave van gebeurtenissen (VOD met Ad Decisioning Cues) {#full-event-replay}
+## Full Event Replay (VOD met Ad Decisioning Cues) {#full-event-replay}
 
-Primetime Ad Insertion ondersteunt ook gespecialiseerde VOD-elementen die cues bevatten in de inhoudsstroom zelf, zoals die worden gevonden bij het afspelen van eerder opgenomen live gebeurtenissen. Voor meer informatie over de types van ad beslissingsaanwijzingen (of richtsnoerformaten) steunen wij, zie [het Gebruiken van Ad Insertion in Levend/Lineair](ad-insertion-live-linear-stream.md).
+Primetime Ad Insertion ondersteunt ook gespecialiseerde VOD-elementen die cues bevatten in de inhoudsstroom zelf, zoals die worden gevonden bij het afspelen van eerder opgenomen live gebeurtenissen. Zie [Ad Insertion gebruiken in Live/Lineair](ad-insertion-live-linear-stream.md) voor meer informatie over de typen ad-beslissingsaanwijzingen (of actiefindelingen) die we ondersteunen.
 
-Wij steunen zowel één enkel ad-request als parallelle veelvoudige ad-request scenario&#39;s voor activa VOD die meer dan één ad-break bevatten. Zie parameter in de beschrijving van de `ptmulticall` parameter voor meer informatie [](/help/dynamic-ad-insertion/msapi-topics/ms-getting-started/ms-api-query-params.md). Zowel VAST als VMAP-indelingen worden ondersteund voor in-stream cues.
+Wij steunen zowel één enkel ad-request als parallelle veelvoudige ad-request scenario&#39;s voor activa VOD die meer dan één ad-break bevatten. Zie `ptmulticall` parameter in [Parameterbeschrijving](/help/dynamic-ad-insertion/msapi-topics/ms-getting-started/ms-api-query-params.md) voor meer informatie. Zowel VAST als VMAP-indelingen worden ondersteund voor in-stream cues.
