@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Jailbreak Enforcement (vereist Adobe Primetime) {#jailbreak-enforcement-requires-adobe-primetime}
 
-Op platformen die ondersteuning bieden voor detectie van jailbreak (zoals mobiele Android- en iOS-apparaten), maakt het afspelen van inhoud die op het apparaat [!DNL jailbreak/root] is gedetecteerd, onmogelijk als dit gebeurt.
+Op platformen die ondersteuning bieden voor detectie van jailbreak (zoals mobiele Android- en iOS-apparaten), maakt het afspelen van inhoud via jailbreak mogelijk als [!DNL jailbreak/root] op het apparaat is gedetecteerd.
 
 >[!NOTE]
 >
