@@ -6,6 +6,9 @@ title: DRM-verificatie tijdens afspelen
 uuid: a1a63e3e-be34-49e1-96c4-ae266003b3d1
 translation-type: tm+mt
 source-git-commit: 5908e5a3521966496aeec0ef730e4a704fddfb68
+workflow-type: tm+mt
+source-wordcount: '207'
+ht-degree: 0%
 
 ---
 
@@ -14,7 +17,7 @@ source-git-commit: 5908e5a3521966496aeec0ef730e4a704fddfb68
 
 Voer verificatie uit tijdens het afspelen wanneer de DRM-metagegevens voor een video in de mediastream zijn opgenomen.
 
-Denk aan de functie voor het roteren van licenties, waarbij een element wordt gecodeerd met meerdere DRM-licenties. Telkens wanneer nieuwe DRM-metagegevens worden aangetroffen, gebruikt u `DRMHelper` methoden om te controleren of voor de DRM-metagegevens DRM-verificatie is vereist.
+Denk aan de functie voor het roteren van licenties, waarbij een element wordt gecodeerd met meerdere DRM-licenties. Telkens wanneer nieuwe DRM-metagegevens worden aangetroffen, gebruikt u `DRMHelper`-methoden om te controleren of DRM-metagegevens DRM-verificatie vereisen.
 
 >[!NOTE]
 >
@@ -34,7 +37,7 @@ Denk aan de functie voor het roteren van licenties, waarbij een element wordt ge
    };
    ```
 
-1. Gebruik het `DRMMetadata` om te controleren of de authentificatie nodig is. Zo niet, niets doen; het afspelen wordt zonder onderbreking voortgezet.
+1. Gebruik `DRMMetadata` om te controleren of de authentificatie nodig is. Zo niet, niets doen; het afspelen wordt zonder onderbreking voortgezet.
 1. Anders voert u DRM-verificatie uit. Aangezien deze bewerking asynchroon is en in een andere thread wordt afgehandeld, heeft deze geen invloed op de gebruikersinterface en het afspelen van video.
 1. Als de verificatie mislukt, kan de gebruiker de video niet verder weergeven en wordt het afspelen gestopt. Anders wordt het afspelen zonder onderbreking voortgezet.
 
