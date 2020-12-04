@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Logbestanden{#log-files}
 
-De logbestanden die door de Adobe Access Server voor de beveiligde streamingtoepassing worden gegenereerd, bevinden zich in de map die is opgegeven door *LicenseServer.LogRoot*.
+De logbestanden die worden gegenereerd door de Adobe Access Server voor beveiligde streaming-toepassing, bevinden zich in de map die is opgegeven door *LicenseServer.LogRoot*.
 
 >[!NOTE]
 >
