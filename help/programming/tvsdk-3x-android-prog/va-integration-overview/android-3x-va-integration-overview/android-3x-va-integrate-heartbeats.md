@@ -26,8 +26,8 @@ Controleer of u het volgende hebt voordat u video-tracking (videohartslagen) act
 <table id="table_3565328ABBEE4605A92EAE1ADE5D6F84"> 
  <tbody> 
   <tr> 
-   <td colname="col1"> <span class="filepath"> ADBMobileConfig.json </span> </td> 
-   <td colname="col2"> <p>Belangrijk:  Dit JSON-configuratiebestand moet ADBMobileConfig.json blijven <span class="filepath"> </span>. De naam en het pad van dit configuratiebestand kunnen niet worden gewijzigd. Het pad naar dit bestand moet <span class="filepath"> &lt;source root&gt;/assets zijn </span>. </p> </td> 
+   <td colname="col1"> <span class="filepath"> ADBMobileConfig.json  </span> </td> 
+   <td colname="col2"> <p>Belangrijk:  Dit JSON-configuratiebestand moet <span class="filepath"> ADBMobileConfig.json </span> blijven. De naam en het pad van dit configuratiebestand kunnen niet worden gewijzigd. Het pad naar dit bestand moet <span class="filepath"> &lt;source root&gt;/assets </span> zijn. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Het eindpunt van de trackingserver voor AppMeturement </td> 
@@ -35,7 +35,7 @@ Controleer of u het volgende hebt voordat u video-tracking (videohartslagen) act
   </tr> 
   <tr> 
    <td colname="col1"> Het servereindpunt voor videoanalyse bijhouden </td> 
-   <td colname="col2"> De URL van het back-end verzameleindpunt van de videoanalyse. Dit is waar alle video hartslag het volgen vraag wordt verzonden. <p>Tip:  De URL van de server voor het bijhouden van bezoekers is gelijk aan de URL van de analytische trackingserver. Voor informatie over het uitvoeren van de Dienst van identiteitskaart van de Bezoeker, zie de Dienst van identiteitskaart van het <a href="https://marketing.adobe.com/resources/help/en_US/mcvid/mcvid-setup-target.html" format="html" scope="external"> Uitvoeren </a>. </p> </td> 
+   <td colname="col2"> De URL van het back-end verzameleindpunt van de videoanalyse. Dit is waar alle video hartslag het volgen vraag wordt verzonden. <p>Tip:  De URL van de server voor het bijhouden van bezoekers is gelijk aan de URL van de analytische trackingserver. Voor informatie over het uitvoeren van de Dienst van identiteitskaart van de Bezoeker, zie <a href="https://marketing.adobe.com/resources/help/en_US/mcvid/mcvid-setup-target.html" format="html" scope="external"> de Dienst </a> van identiteitskaart uitvoeren. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Accountnaam </td> 
@@ -50,7 +50,7 @@ Controleer of u het volgende hebt voordat u video-tracking (videohartslagen) act
 
 U kunt als volgt video bijhouden in uw speler configureren:
 
-1. Controleer of de opties voor de laadtijd in het `ADBMobileConfig.json` bronbestand correct zijn.
+1. Bevestig dat de lading-tijd opties in het `ADBMobileConfig.json` middeldossier correct zijn.
 
    ```
    { 
@@ -84,15 +84,15 @@ U kunt als volgt video bijhouden in uw speler configureren:
    Opties voor laadtijd configureren:
 
 
-   1. Bevestig dat het `ADBMobileConfig.json` bestand de juiste waarden bevat (opgegeven door Adobe).
-   1. Bevestig dat dit bestand zich in de `assets/` map bevindt.
+   1. Bevestig dat het `ADBMobileConfig.json`-bestand de juiste waarden bevat (opgegeven door Adobe).
+   1. Bevestig dat dit bestand zich in de map `assets/` bevindt.
 
       Deze map moet zich in de hoofdmap van de bronstructuur van de toepassing bevinden.
 
    1. Compileer en bouw uw toepassing.
    1. Implementeer en voer de gebundelde toepassing uit.
 
-      Zie Video [meten in Adobe Analytics](https://marketing.adobe.com/resources/help/en_US/sc/appmeasurement/video/)voor meer informatie over deze instellingen voor AppMeasurement.
+      Voor meer informatie over deze montages AppMeasurement, zie [Metende Video in Adobe Analytics](https://marketing.adobe.com/resources/help/en_US/sc/appmeasurement/video/).
 
 1. Metagegevens voor het bijhouden van videokaarten initialiseren en configureren.
 
@@ -135,13 +135,13 @@ U kunt als volgt video bijhouden in uw speler configureren:
       VideoAnalyticsProvider videoAnalyticsProvider = new VideoAnalyticsProvider(appContext); 
       ```
 
-   1. Stel de metagegevens voor Video-analyse in op de `videoAnalyticsProvider` instantie.
+   1. Stel de metagegevens voor Video-analyse in op de instantie `videoAnalyticsProvider`.
 
       ```java
       videoAnalyticsProvider.setVideoAnalyticsMetadata(vaMetadata);
       ```
 
-   1. Koppel de instantie van de mediaspeler aan de `videoAnalyticsProvider` instantie:
+   1. Koppel de instantie van de mediaspeler aan de instantie `videoAnalyticsProvider`:
 
       ```java
       videoAnalyticsProvider.attachMediaPlayer(mediaPlayer); 
