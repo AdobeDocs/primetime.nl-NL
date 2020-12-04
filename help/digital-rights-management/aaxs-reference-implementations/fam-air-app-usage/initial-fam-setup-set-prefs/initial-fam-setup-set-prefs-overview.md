@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Overzicht van voorkeuren instellen {#setting-preferences-overview}
 
-Met uitzondering van de URL van de Packager Server worden alle hieronder opgegeven voorkeuren opgeslagen in het [!DNL flashaccess-refimpl-packager.properties] bestand op de server. Alle instellingen kunnen rechtstreeks in het eigenschappenbestand of via de AIR-toepassing worden gewijzigd. Wachtwoorden worden versleuteld wanneer ze worden opgeslagen in het eigenschappenbestand op de server. Typ het niet-gecodeerde wachtwoord in de gebruikersinterface en het wordt versleuteld voordat het in het bestand wordt opgeslagen.
+Met uitzondering van de URL van de Packager Server worden alle hieronder opgegeven voorkeuren opgeslagen in het [!DNL flashaccess-refimpl-packager.properties]-bestand op de server. Alle instellingen kunnen rechtstreeks in het eigenschappenbestand of via de AIR-toepassing worden gewijzigd. Wachtwoorden worden versleuteld wanneer ze worden opgeslagen in het eigenschappenbestand op de server. Typ het niet-gecodeerde wachtwoord in de gebruikersinterface en het wordt versleuteld voordat het in het bestand wordt opgeslagen.
 
 >[!NOTE]
 >
@@ -33,7 +33,7 @@ In de voorkeursbeschrijvingen worden de volgende termen gebruikt:
  <tbody class="- topic/tbody "> 
   <tr rowsep="1" class="- topic/row "> 
    <td colname="1" class="- topic/entry "> URL van Packager Server </td> 
-   <td colname="2" class="- topic/entry "> Locatie van server met <span class="filepath"> flashaccess-packager.war </span>; bijvoorbeeld <span class="filepath"> https://localhost:8080 </span> </td> 
+   <td colname="2" class="- topic/entry "> Locatie van server waarop <span class="filepath"> flashaccess-packager.war </span> wordt uitgevoerd; bijvoorbeeld <span class="filepath"> https://localhost:8080 </span> </td> 
   </tr> 
   <tr rowsep="1" class="- topic/row "> 
    <td colname="1" class="- topic/entry "> Resource Directory </td> 
