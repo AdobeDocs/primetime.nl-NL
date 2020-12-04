@@ -6,21 +6,24 @@ title: banneradvertenties weergeven
 uuid: aabc126e-b3aa-42dd-ab50-a7db8e324c50
 translation-type: tm+mt
 source-git-commit: 592245f5a7186d18dabbb5a98a468cbed7354aed
+workflow-type: tm+mt
+source-wordcount: '264'
+ht-degree: 0%
 
 ---
 
 
-# banneradvertenties weergeven {#display-banner-ads}
+# banneradvertenties {#display-banner-ads} weergeven
 
 Als u banneradvertenties wilt weergeven, moet u bannerinstanties maken en Browser-TVSDK toestaan te luisteren naar gebeurtenissen met betrekking tot advertenties.
 
-Browser TVSDK biedt een lijst met banneradvertenties die zijn gekoppeld aan een lineaire advertentie door de `AdobePSDK.PSDKEventType.AD_STARTED` gebeurtenis.
+Browser TVSDK biedt een lijst met banneradvertenties die zijn gekoppeld aan een lineaire advertentie via de gebeurtenis `AdobePSDK.PSDKEventType.AD_STARTED`.
 
 Manifests kunnen banneradvertenties voor gezellen specificeren door:
 
 * Een HTML-fragment
 * De URL van een iFrame-pagina
-* De URL van een statische afbeelding of een Adobe Flash SWF-bestand
+* De URL van een statische afbeelding of een Adobe Flash-SWF-bestand
 
 Voor elke bijbehorende advertentie geeft Browser TVSDK aan welke typen beschikbaar zijn voor uw toepassing.
 
@@ -29,11 +32,11 @@ Voeg een listener toe voor de gebeurtenis `AdobePSDK.PSDKEventType.AD_STARTED` d
 1. Haalt de lijst met bijbehorende advertenties op van `Ad.getCompanionAssets`.
 1. Doorloop de lijst voor bannerinstanties als de lijst met bijbehorende advertenties niet leeg is.
 
-   Elke bannerinstantie (een `AdBannerAsset`) bevat informatie, zoals breedte, hoogte, middeltype (html, iframe of statisch), en gegevens die nodig zijn om de bijbehorende banner weer te geven.
+   Elke bannerinstantie (een `AdBannerAsset`) bevat informatie, zoals breedte, hoogte, middeltype (html, iframe, of statisch), en gegevens die worden vereist om de bijbehorende banner te tonen.
 1. Als een video zonder bijbehorende advertenties is geboekt, bevat de lijst met bijbehorende elementen geen gegevens voor die video-advertentie.
 1. Verzendt de bannergegevens naar een functie op de pagina die de banners op een geschikte locatie weergeeft.
 
-   Dit is meestal een `div`bewerking en uw functie gebruikt deze `div ID` om de banner weer te geven. Bijvoorbeeld:
+   Dit is gewoonlijk een `div`, en uw functie gebruikt `div ID` om de banner te tonen. Bijvoorbeeld:
 
    Voeg de gebeurtenislistener toe:
 
