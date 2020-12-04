@@ -13,7 +13,7 @@ ht-degree: 0%
 ---
 
 
-# Overwegingen en beste praktijken {#considerations-and-best-practices}
+# Overwegingen en aanbevolen procedures {#considerations-and-best-practices}
 
 Als u TVSDK het doeltreffendst wilt gebruiken, moet u bepaalde details van de werking van de SDK in overweging nemen en bepaalde best practices volgen.
 
@@ -45,7 +45,7 @@ Houd rekening met de volgende informatie wanneer u TVSDK gebruikt:
 
       De waarde van de userAgent-tekenreeks staat standaard voor wat het besturingssysteem toewijst.
 
-## Aanbevolen procedures {#section_tvsdk_best_practices}
+## Aanbevolen werkwijzen {#section_tvsdk_best_practices}
 
 Hier volgen de aanbevolen procedures voor TVSDK:
 
