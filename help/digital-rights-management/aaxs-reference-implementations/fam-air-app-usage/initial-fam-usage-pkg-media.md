@@ -11,13 +11,13 @@ ht-degree: 0%
 ---
 
 
-# Pakketmedia {#package-media}
+# Media {#package-media} verpakken
 
 Gebruik het tabblad Media verpakken om inhoud te verpakken. In de sectie Eigenschappen van Packager worden de instellingen van Packager weergegeven die op het tabblad Voorkeuren zijn ingevoerd. Als u deze instellingen wilt wijzigen, gaat u naar het tabblad Voorkeuren, wijzigt u de instellingen en kiest u Opslaan.
 
-Als u één FLV- of F4V-bestand in een pakket wilt plaatsen, kiest u de **[!UICONTROL Select Single File]** optie en voert u het volledige pad in naar het bronbestand en het volledige pad waar het gecodeerde bestand moet worden opgeslagen.
+Als u één FLV- of F4V-bestand in een pakket wilt plaatsen, kiest u de optie **[!UICONTROL Select Single File]** en voert u het volledige pad in naar het bronbestand en het volledige pad waar het gecodeerde bestand moet worden opgeslagen.
 
-Kies de **[!UICONTROL Select Single Folder]** optie als u alle bestanden in een map wilt verpakken. Geef de map op die de bronbestanden bevat. Alleen bestanden in de invoermap die aan de **[!UICONTROL Input Media File Selection]** criteria voldoen, worden in een pakket opgenomen (bestanden in submappen worden niet in een pakket geplaatst). Kies of u [!DNL .flv] bestanden of [!DNL .f4v] bestanden wilt versleutelen of voer een aangepaste reguliere expressie in (bijvoorbeeld &quot;.*&quot; codeert alle bestanden in de map). De gecodeerde bestanden worden opgeslagen in de opgegeven uitvoermap met dezelfde bestandsnaam als het oorspronkelijke bestand.
+Als u alle bestanden in een map wilt verpakken, kiest u de optie **[!UICONTROL Select Single Folder]**. Geef de map op die de bronbestanden bevat. Alleen bestanden in de invoermap die voldoen aan de **[!UICONTROL Input Media File Selection]**-criteria worden in een pakket opgenomen (bestanden in submappen worden niet in een pakket geplaatst). Kies of u [!DNL .flv] bestanden, [!DNL .f4v] bestanden wilt versleutelen of voer een aangepaste reguliere expressie in (bijvoorbeeld &quot;.*&quot; codeert alle bestanden in de map). De gecodeerde bestanden worden opgeslagen in de opgegeven uitvoermap met dezelfde bestandsnaam als het oorspronkelijke bestand.
 
 >[!NOTE]
 >
@@ -35,4 +35,4 @@ In de volgende tabel worden de voorkeuren voor Media verpakken beschreven:
 | Script versleutelen | Schakel dit selectievakje in om scriptgegevens te coderen (alleen FLV) |
 | Aangepaste eigenschappen | Geef aangepaste eigenschappen op die u in de inhoud van het pakket wilt opnemen. Deze eigenschappen zijn beschikbaar voor de licentieserver bij het uitgeven van een licentie. (Optioneel) |
 
-Nadat de verpakkingsopties zijn geselecteerd, klikt u op de **[!UICONTROL Package Media]** knop om de bestanden te verpakken.
+Nadat de verpakkingsopties zijn geselecteerd, klikt u op de knop **[!UICONTROL Package Media]** om de bestanden in een pakket te plaatsen.
