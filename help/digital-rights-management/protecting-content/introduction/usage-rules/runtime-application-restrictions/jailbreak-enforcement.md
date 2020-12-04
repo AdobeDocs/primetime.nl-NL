@@ -15,7 +15,7 @@ ht-degree: 0%
 
 # Jailbreak-handhaving (vereist Adobe Primetime DRM){#jailbreak-enforcement-requires-adobe-primetime-drm}
 
-Op platforms die ondersteuning bieden voor jailbreak-detectie, zoals mobiele Android- en iOS-apparaten, kunt u de handhaving van jailbreak inschakelen om het afspelen van inhoud uit te schakelen als deze op het apparaat [!DNL jailbreak/root] is gedetecteerd.
+Op platforms die ondersteuning bieden voor jailbreak-detectie, zoals mobiele Android- en iOS-apparaten, kunt u de handhaving van jailbreak inschakelen om het afspelen van inhoud uit te schakelen als [!DNL jailbreak/root] op het apparaat is gedetecteerd.
 
 >[!NOTE]
 >
