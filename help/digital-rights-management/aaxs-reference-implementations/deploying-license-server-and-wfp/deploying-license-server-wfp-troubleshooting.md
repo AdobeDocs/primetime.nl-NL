@@ -4,6 +4,9 @@ title: Problemen oplossen
 uuid: db76d6a4-c285-4d86-95a1-4f1a85ed3743
 translation-type: tm+mt
 source-git-commit: 29bc8323460d9be0fce66cbea7c6fce46df20d61
+workflow-type: tm+mt
+source-wordcount: '82'
+ht-degree: 0%
 
 ---
 
@@ -19,7 +22,7 @@ Hieronder ziet u algemene problemen en oplossingen voor implementatie:
        javax.crypto.IllegalBlockSizeException: Input length must be multiple of 8 when decrypting with padded cipher"
    ```
 
-   Controleer of het wachtwoord is versleuteld met de opgegeven `ScrambleUtil` klasse.
+   Controleer of het wachtwoord is versleuteld met de opgegeven `ScrambleUtil`-klasse.
 
 * Als u de volgende fout ziet:
 
