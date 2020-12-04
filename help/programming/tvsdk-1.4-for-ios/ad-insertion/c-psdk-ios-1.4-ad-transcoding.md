@@ -1,16 +1,19 @@
 ---
 description: Sommige advertenties van derden (of creatieve objecten) kunnen niet in de HLS-inhoudsstroom (HTTP Live Streaming) worden geplaatst omdat hun video-indeling niet compatibel is met HLS. Primetime en invoeging en TVSDK kunnen desgewenst proberen incompatibele advertenties om te zetten in compatibele M3U8-video's.
 seo-description: Sommige advertenties van derden (of creatieve objecten) kunnen niet in de HLS-inhoudsstroom (HTTP Live Streaming) worden geplaatst omdat hun video-indeling niet compatibel is met HLS. Primetime en invoeging en TVSDK kunnen desgewenst proberen incompatibele advertenties om te zetten in compatibele M3U8-video's.
-seo-title: Niet-compatibele advertenties opnieuw verpakken met Adobe Creative Repackaging Service
-title: Niet-compatibele advertenties opnieuw verpakken met Adobe Creative Repackaging Service
+seo-title: Niet-compatibele advertenties opnieuw verpakken met de Adobe Creative Repackaging Service
+title: Niet-compatibele advertenties opnieuw verpakken met de Adobe Creative Repackaging Service
 uuid: e8be1ed2-3ee3-4ee7-a75c-b804ab398568
 translation-type: tm+mt
 source-git-commit: 5908e5a3521966496aeec0ef730e4a704fddfb68
+workflow-type: tm+mt
+source-wordcount: '516'
+ht-degree: 0%
 
 ---
 
 
-# Niet-compatibele advertenties opnieuw verpakken met Adobe Creative Repackaging Service{#repackage-incompatible-ads-using-adobe-creative-repackaging-service}
+# Niet-compatibele advertenties opnieuw verpakken met de Adobe Creative Repackaging Service{#repackage-incompatible-ads-using-adobe-creative-repackaging-service}
 
 Sommige advertenties van derden (of creatieve objecten) kunnen niet in de HLS-inhoudsstroom (HTTP Live Streaming) worden geplaatst omdat hun video-indeling niet compatibel is met HLS. Primetime en invoeging en TVSDK kunnen desgewenst proberen incompatibele advertenties om te zetten in compatibele M3U8-video&#39;s.
 
@@ -18,9 +21,9 @@ Advertenties die door verschillende derden worden aangeboden, zoals een bureau e
 
 Wanneer TVSDK voor het eerst een niet-compatibele advertentie tegenkomt, negeert de speler de advertentie en geeft een verzoek aan de creatieve herverpakkingsdienst (CRS) uit, die deel van Primetime en toevoegend achtereind uitmaakt, om de advertentie in een compatibel formaat te herverpakken. CRS probeert om met meerdere bitsnelheden M3U8-uitvoeringen van de advertentie te genereren en deze uitvoeringen op het netwerk voor de levering van primetime-inhoud (CDN) op te slaan. De volgende keer dat TVSDK een advertentierespons ontvangt die naar die advertentie wijst, gebruikt de speler de HLS-compatibele M3U8-versie van de CDN.
 
-Neem contact op met uw vertegenwoordiger van Adobe om deze optionele functie in te schakelen.
+Neem contact op met uw Adobe als u deze optionele functie wilt inschakelen.
 
-Voor meer informatie over CRS, zie de Dienst van het [Verpakken Creative (CRS)](https://helpx.adobe.com/content/dam/help/en/primetime/guides/crs.pdf).
+Zie [Creative Packaging Service (CRS)](https://helpx.adobe.com/content/dam/help/en/primetime/guides/crs.pdf) voor meer informatie over CRS.
 
 ## Meerdere CDN-ondersteuning voor CRS en levering {#section_900FDDA5454143718F1EB4C9732C8E1C}
 
@@ -37,15 +40,15 @@ Hier volgen de API-toevoegingen in TVSDK:
 
 * `PTURLTransformer` Een protocol dat de methodes beschrijft die worden vereist om CRS en URLs om te zetten die door TVSDK worden gevraagd. De toepassingen kunnen dit protocol uitvoeren en implementaties voor de vereiste methodes verstrekken.
 
-* `PTDefaultURLTransformer` De standaardobformatie URL die in TVSDK wordt gecreeerd en die het `PTURLTransformer` protocol uitvoert. Toepassingen kunnen deze klasse overschrijven of een post-URL-transformatiehandler toevoegen. Deze handler is nuttig wanneer de toepassing wijzigingen in het URL-verzoek wil aanbrengen nadat de standaardtransformatie is toegepast.
+* `PTDefaultURLTransformer` De standaardobformatie URL die in TVSDK wordt gecreeerd en die het  `PTURLTransformer` protocol uitvoert. Toepassingen kunnen deze klasse overschrijven of een post-URL-transformatiehandler toevoegen. Deze handler is nuttig wanneer de toepassing wijzigingen in het URL-verzoek wil aanbrengen nadat de standaardtransformatie is toegepast.
 
-* `PTNetworkConfiguration setURLTransformer:defaultTransformer` Een settermethode die op de `PTNetworkConfiguration` metagegevensinstantie wordt opgegeven om de `PTURLTransformer` implementatie in te stellen.
+* `PTNetworkConfiguration setURLTransformer:defaultTransformer` Een settermethode die op de  `PTNetworkConfiguration` meta-gegevensinstantie wordt verstrekt om de  `PTURLTransformer` implementatie te plaatsen.
 
 >[!IMPORTANT]
 >
->Uw app-implementaties moeten de opsomming controleren en alleen URL&#39;s van het type `PTURLTransformerInputType` `PTURLTransformerInputTypeCRSCreative` voor CRS transformeren.
+>Uw app-implementaties moeten de opsomming `PTURLTransformerInputType` controleren en alleen URL&#39;s van het type `PTURLTransformerInputTypeCRSCreative` voor CRS transformeren.
 
-In het volgende codevoorbeeld ziet u hoe uw toepassing de standaardhostcomponent kan wijzigen in een andere tekenreeks (bijvoorbeeld `cdn.mycrsdomain.com`):
+In het volgende codevoorbeeld ziet u hoe uw toepassing de standaardhostcomponent in een andere tekenreeks kan wijzigen (bijvoorbeeld `cdn.mycrsdomain.com`):
 
 ```
 // The sample code below uses Non-ARC code 
