@@ -6,6 +6,9 @@ title: Standaardgedrag en aangepast afspeelgedrag met advertenties
 uuid: 45e6b0cd-fb0b-4896-b53a-d3bd78a3c1f3
 translation-type: tm+mt
 source-git-commit: fd686391df0fa711bba99bc1bc312c9ef619f184
+workflow-type: tm+mt
+source-wordcount: '571'
+ht-degree: 0%
 
 ---
 
@@ -14,7 +17,7 @@ source-git-commit: fd686391df0fa711bba99bc1bc312c9ef619f184
 
 Het gedrag van het afspelen van media wordt beïnvloed door zoeken, pauzeren, snel vooruitspoelen of terugspoelen (de modus voor het kunstspel) en het opnemen van reclame.
 
-Als u het standaardgedrag wilt overschrijven, gebruikt u `AdPolicySelector`.
+Gebruik `AdPolicySelector` om het standaardgedrag te overschrijven.
 
 >[!IMPORTANT]
 >
@@ -36,24 +39,24 @@ In de volgende tabel wordt beschreven hoe met TVSDK advertenties en afbrekingen 
    <td colname="col2"> 
     <ul id="ul_10D2638676EA4ADDA718E61BD4FDC1D2"> 
      <li id="li_D5CC30F063934C738971E2E8AF00C137"> Hiermee speelt u voor live/lineair het ad-einde af, zelfs als het ad-einde al is gecontroleerd. </li> 
-     <li id="li_D962C0938DA74186AE99D117E5A74E38">Bij VOD wordt het ad-einde afgespeeld en wordt het ad-einde gemarkeerd als gecontroleerd. </li> 
+     <li id="li_D962C0938DA74186AE99D117E5A74E38">Voor VOD speelt u het advertentiescheiding af en markeert u het ad-einde zoals gecontroleerd. </li> 
     </ul> </td> 
    <td colname="col3">Geef een ander beleid voor het advertentieeinde op met <span class="codeph"> selectPolicyForAdBreak</span>. </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Uw toepassing zoekt naar voorwaarts over en onderverdelingen in de hoofdinhoud. </td> 
    <td colname="col2"> Hiermee wordt het laatste niet-gecontroleerde ad-einde afgespeeld dat is overgeslagen en wordt het afspelen hervat op de gewenste zoekpositie wanneer het afspelen van het einde of de eindemarkeringen is voltooid. </td> 
-   <td colname="col3">Selecteer met <span class="codeph"> selectAdBreaksToPlay welk overgeslagen einde moet worden afgespeeld</span>. </td> 
+   <td colname="col3">Selecteer met <span class="codeph"> selectAdBreaksToPlay</span> welk overgeslagen einde moet worden afgespeeld. </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Uw toepassing zoekt achterwaarts over een of meerdere pagina's in de hoofdinhoud. </td> 
    <td colname="col2"> Hiermee gaat u naar de gewenste zoekpositie zonder dat er een advertentie wordt afgespeeld. </td> 
-   <td colname="col3">Selecteer met <span class="codeph"> selectAdBreaksToPlay welk overgeslagen einde moet worden afgespeeld</span>. </td> 
+   <td colname="col3">Selecteer met <span class="codeph"> selectAdBreaksToPlay</span> welk overgeslagen einde moet worden afgespeeld. </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Uw toepassing zoekt verder in een advertentie-einde. </td> 
    <td colname="col2"> Hiermee wordt afgespeeld vanaf het begin van de advertentie waarin de zoekopdracht is beëindigd. </td> 
-   <td colname="col3">Geef een ander advertentiebeleid op voor het advertentiespoor en voor de specifieke advertentie waar de zoekopdracht is beëindigd met <span class="codeph"> selectPolicyForSeekIntoAd</span>. </td> 
+   <td colname="col3">Geef een ander advertentiebeleid op voor het advertentieeinde en voor de specifieke advertentie waar de zoekopdracht is beëindigd met <span class="codeph"> selectPolicyForSeekIntoAd</span>. </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Uw toepassing zoekt terug naar een advertentie-einde. </td> 
@@ -63,7 +66,7 @@ In de volgende tabel wordt beschreven hoe met TVSDK advertenties en afbrekingen 
   <tr> 
    <td colname="col1"> Uw toepassing zoekt voorwaarts of achterwaarts over gecontroleerde advertentie(s) naar de hoofdinhoud. </td> 
    <td colname="col2"> Als de laatste overgeslagen advertentie-onderbreking reeds is gecontroleerd, slaat aan gebruiker-geselecteerde vraagpositie over. </td> 
-   <td colname="col3">Selecteer met <span class="codeph"> AdBreaksToPlay</span> welke overgeslagen einden moeten worden afgespeeld en bepaal welke einden al zijn gecontroleerd met <span class="codeph"> TimeLineItem.watch</span> . <p>Belangrijk:  Standaard markeert TVSDK een advertentie-einde zoals onmiddellijk na het invoeren van de eerste advertentie in het ad-einde wordt gecontroleerd. </p> </td> 
+   <td colname="col3">Selecteer welke overgeslagen onderbrekingen om te spelen gebruikend <span class="codeph"> selectAdBreaksToPlay</span> en bepaal welke onderbrekingen reeds door <span class="codeph"> TimeLineItem.watch</span> te gebruiken zijn gecontroleerd. <p>Belangrijk:  Standaard markeert TVSDK een advertentie-einde zoals onmiddellijk na het invoeren van de eerste advertentie in het ad-einde wordt gecontroleerd. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Uw toepassing zoekt voorwaarts of achteruit over een of meer advertenties en stapt af in een gecontroleerd advertentieeinde. </td> 
@@ -73,12 +76,12 @@ In de volgende tabel wordt beschreven hoe met TVSDK advertenties en afbrekingen 
   <tr> 
    <td colname="col1"> Uw toepassing gaat truc-spel (wijze DVR) in. Afspeelsnelheid kan negatief (terugspoelen) of groter dan 1 (vooruitspoelen) zijn. </td> 
    <td colname="col2"> Hiermee slaat u alle advertenties over tijdens snel vooruit- of terugspoelen, speelt u het laatste einde dat is overgeslagen na het afspelen van de truc af en slaat u de door de gebruiker geselecteerde positie voor het afspelen van de truc over wanneer die onderbreking het afspelen beëindigt. </td> 
-   <td colname="col3">Selecteer met <span class="codeph"> selectAdBreaksToPlay welke van de overgeslagen einden moeten worden afgespeeld nadat het truc is beëindigd</span>. </td> 
+   <td colname="col3">Selecteer met <span class="codeph"> selectAdBreaksToPlay</span> welke van de overgeslagen einden moeten worden afgespeeld nadat het truc is beëindigd. </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Uw toepassing zoekt voorwaarts over advertenties die met aangepaste advertentiemarkeringen zijn ingevoegd. </td> 
    <td colname="col2"> Hiermee gaat u naar de door de gebruiker geselecteerde zoekpositie. </td> 
-   <td colname="col3">Zie Een zoekbalk met de huidige afspeelpositie weergeven voor meer informatie... <a href="../../tvsdk-1.4-for-desktop-hls/t-psdk-dhls-1.4-configure/c-psdk-dhls-1.4-ui-configure/t-psdk-dhls-1.4-ui-seek-scrub-bar-display.md" format="dita" scope="local"></a> </td> 
+   <td colname="col3">Zie <a href="../../tvsdk-1.4-for-desktop-hls/t-psdk-dhls-1.4-configure/c-psdk-dhls-1.4-ui-configure/t-psdk-dhls-1.4-ui-seek-scrub-bar-display.md" format="dita" scope="local"> Een zoekscrubbalk weergeven met de huidige afspeelpositie voor meer informatie...</a> </td> 
   </tr> 
  </tbody> 
 </table>
