@@ -6,17 +6,20 @@ title: DRM-callbacks implementeren
 uuid: a54c5ec2-299f-47b0-b65b-eed5656ab6aa
 translation-type: tm+mt
 source-git-commit: 040655d8ba5f91c98ed0584c08db226ffe1e0f4e
+workflow-type: tm+mt
+source-wordcount: '181'
+ht-degree: 0%
 
 ---
 
 
-# DRM-callbacks implementeren{#implementing-drm-callbacks}
+# Het uitvoeren van DRM callbacks{#implementing-drm-callbacks}
 
 Met de volgende nieuwe API&#39;s kunt u DRM-callbacks definiëren.
 
 <!--<a id="section_1090BFDB2C1D4EA4AAC9F9A6EC9DCD51"></a>-->
 
-U kunt een callback-functie definiëren (bijvoorbeeld `parseContentIdCallback`) om de inhoud-id te parseren en deze in te stellen `drmManager` met de `setParseContentIdCallback` API.
+U kunt een callback functie (bijvoorbeeld, `parseContentIdCallback`) bepalen om inhoudsidentiteitskaart te ontleden en het te plaatsen aan `drmManager` door `setParseContentIdCallback` API te gebruiken.
 
 ```js
 var arrayToString = function (array) { 
@@ -39,7 +42,7 @@ drmManager.setParseContentIdCallback(parseContentIdCallback);
 
 <!--<a id="section_1E082B428EA74D9CA11C052158A83947"></a>-->
 
-U kunt een callback-functie definiëren (bijvoorbeeld `onCertificateResponseCallback`) voor het verwerken van een reactie van een tekstcertificaat en het instellen van de functie `drmManager` met de `setCertificateResponseCallback` API. U kunt instellen `setCertificateResponseCallback` om het standaardgedrag te overschrijven. Als u bijvoorbeeld een ander `certificateResponseType` item hebt dan `ArrayBuffer`, kunt u deze callback gebruiken om het certificaatantwoord om te zetten in het `ArrayBuffer` type.
+U kunt een callback functie (bijvoorbeeld `onCertificateResponseCallback`) bepalen om een reactie van het tekstcertificaat te verwerken en de functie aan `drmManager` te plaatsen door `setCertificateResponseCallback` API te gebruiken. U kunt `setCertificateResponseCallback` plaatsen om het standaardgedrag met voeten te treden. Als u bijvoorbeeld een `certificateResponseType` hebt die geen `ArrayBuffer` is, kunt u deze callback gebruiken om de certificaatreactie om te zetten in het type `ArrayBuffer`.
 
 ```js
 var base64DecodeUint8Array = function (input) { 
@@ -66,7 +69,7 @@ drmManager.setCertificateResponseCallback(onCertificateResponseCallback);
 
 <!--<a id="section_4DCC1B3ABCED484EB5340A558C9A770A"></a>-->
 
-U kunt callback functies bepalen om het vergunningsbericht en de vergunningsreactie te ontleden en hen in een vraag tot over te gaan `drmManager.acquireLicense`. `onLicenseResponseCallback` is een nieuwe parameter in de `acquireLicense` API.
+U kunt callback functies bepalen om het vergunningsbericht en de vergunningsreactie te ontleden en hen in een vraag tot `drmManager.acquireLicense` over te gaan. `onLicenseResponseCallback` is een nieuwe parameter in de  `acquireLicense` API.
 
 ```js
 var base64EncodeUint8Array = function (input) { 
@@ -137,4 +140,4 @@ In de Gegevens van de Bescherming, wordt het nieuwe **[!UICONTROL certificateRes
 }
 ```
 
-Het gebruik van het `certificateResponseType` veld is optioneel. Als deze niet wordt gebruikt, wordt ervan uitgegaan dat de waarde wordt `ArrayBuffer`gebruikt.
+Het gebruik van het veld `certificateResponseType` is optioneel. Als deze waarde niet wordt gebruikt, wordt ervan uitgegaan dat deze `ArrayBuffer` is.
