@@ -4,6 +4,9 @@ title: Een DRM-beleid maken met de Java API
 uuid: 1672a6d0-e38c-4330-97b0-02147f99db47
 translation-type: tm+mt
 source-git-commit: 29bc8323460d9be0fce66cbea7c6fce46df20d61
+workflow-type: tm+mt
+source-wordcount: '102'
+ht-degree: 0%
 
 ---
 
@@ -12,8 +15,8 @@ source-git-commit: 29bc8323460d9be0fce66cbea7c6fce46df20d61
 
 Een DRM-beleid maken met de Java API:
 
-1. Stel uw ontwikkelomgeving in en neem in uw project alle JAR-bestanden op die in de ontwikkelomgeving [instellen staan.](../../protecting-content/setting-up-the-sdk/setup-dev-env.md).
-1. Maak een `com.adobe.flashaccess.sdk.policy.Policy` object en geef de eigenschappen ervan op, zoals de rechten, de duur van het in cache plaatsen van licenties en de einddatum van het DRM-beleid.
+1. Stel uw ontwikkelomgeving in en neem in uw project alle JAR-bestanden op die worden vermeld in [De ontwikkelomgeving instellen.](../../protecting-content/setting-up-the-sdk/setup-dev-env.md)
+1. Maak een `com.adobe.flashaccess.sdk.policy.Policy`-object en geef de eigenschappen ervan op, inclusief de rechten, de duur van het in cache plaatsen van licenties en de einddatum van het DRM-beleid.
 
    ```java
    // Create a new DRM policy object.  
@@ -48,7 +51,7 @@ Een DRM-beleid maken met de Java API:
    } 
    ```
 
-1. Serialiseer het DRM- `Policy` object en sla het op in een bestand of database.
+1. Serialiseer het DRM `Policy` voorwerp en bewaar het in een dossier of een gegevensbestand.
 
    ```java
    // Serialize the DRM policy  
@@ -62,4 +65,4 @@ Een DRM-beleid maken met de Java API:
    out.close(); 
    ```
 
-Zie [!DNL com.adobe.flashaccess.samples.policy.CreatePolicy] in de [!DNL samples] map Reference Implementation Command Line Tools voor de volledige bron van deze voorbeeldcode.
+Zie [!DNL com.adobe.flashaccess.samples.policy.CreatePolicy] in de folder van de Hulpmiddelen [!DNL samples] van de Lijn van het Bevel van de Implementatie van de Verwijzing voor de volledige bron van deze steekproefcode.
