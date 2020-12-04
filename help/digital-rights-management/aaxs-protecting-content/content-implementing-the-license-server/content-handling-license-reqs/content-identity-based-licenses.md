@@ -11,7 +11,7 @@ ht-degree: 0%
 ---
 
 
-# Licenties op basis van identiteit {#identity-based-licenses}
+# Licenties {#identity-based-licenses} op basis van identiteit
 
 Als licentie op basis van identiteit wordt gebruikt, controleert de server op een geldig verificatietoken voordat een licentie wordt uitgegeven. Zie [Gebruikersverificatie](../../../aaxs-protecting-content/content-introduction/content-usage-rules/content-authentication/content-user-authentication.md) voor meer informatie over de verwerking van verificatietokens.
 
