@@ -19,7 +19,7 @@ Met de server voor referentie-implementatie kunt u een volledig functionele lice
 
 In deze implementatie worden gebruikers geverifieerd op basis van gebruikersinvoer in een database. De server bevat demonstratie-bedrijfslogica voor het afgeven van licenties en biedt compatibiliteitsondersteuning voor Flash Media Rights Management Server 1.0 en 1.5.
 
-## Vereisten voor licentieservers {#license-server-requirements}
+## Vereisten voor licentieserver {#license-server-requirements}
 
 Vereisten voor licentieserver:
 
@@ -30,7 +30,7 @@ Vereisten voor licentieserver:
 
 Nadat u Tomcat en MySQL hebt geïnstalleerd, neemt u contact op met Adobe voor uw set vereiste DRM-referenties.
 
-## De licentieserver samenstellen {#build-the-license-server}
+## De licentieserver {#build-the-license-server} samenstellen
 
 >[!NOTE]
 >
@@ -40,17 +40,17 @@ De licentieserver voor de referentie-implementatie bevat alle broncode van de li
 
 1. Wijzig Ant bouwt manuscript om de plaatsen van uw Primetime DRM SDK, Tomcat, MySQL, en Log4J te specificeren.
 
-   Open het [!DNL build-refimpl.xml] bestand in een teksteditor en stel de volgende eigenschapswaarden in:
+   Open het [!DNL build-refimpl.xml]-bestand in een teksteditor en stel de volgende eigenschapswaarden in:
 
    * `sdkdir`
    * `tomcatdir`
    * `mysqldir`
    * `log4jdir`
 
-1. Voer het Ant-constructiescript met de `all` eigenschap uit in de map waarin het Ant-constructiescript zich bevindt.
+1. Voer het Ant-constructiescript uit met de eigenschap `all` in de map waar het Ant-constructiescript zich bevindt.
 
    ```
    ant -f build-refimpl.xml all
    ```
 
-   Het Ant-constructiescript maakt een [!DNL refimpl-build/wars] map die de WAR-bestanden van de server bevat.
+   Met het Ant-constructiescript wordt een map [!DNL refimpl-build/wars] gemaakt die de WAR-bestanden van de server bevat.
