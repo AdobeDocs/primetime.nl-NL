@@ -6,11 +6,14 @@ title: Gedeeltelijke invoeging van advertentie-einde
 uuid: a0c1ae34-0f8d-4401-97fe-45a2ea40d08d
 translation-type: tm+mt
 source-git-commit: 358c5b02d47f23a6adbc98e457e56c8220cae6e9
+workflow-type: tm+mt
+source-wordcount: '356'
+ht-degree: 0%
 
 ---
 
 
-# Gedeeltelijke invoeging van advertentie-einde {#partial-ad-break-insertion}
+# Onvolledige invoeging van advertentie {#partial-ad-break-insertion}
 
 Met de PABI-functie (Partial Ad Break Insertion) bootst u een tv-achtige ervaring na waarin de gebruiker, als hij of zij zich bij een live stream aanmeldt in een mid-roll break, middenroladvertenties in plaats van een pre-roll advertentie of leisteen weergeeft.
 
@@ -28,9 +31,9 @@ De eigenschap PABI instrueert de manifestserver de pre-rol en onderbreking neger
 
 >[!NOTE]
 >
->De [EXT-X-START](https://tools.ietf.org/html/rfc8216#section-4.3.5.2) is een standaard-HLS-tag die een voorkeurspunt in de afspeellijst aangeeft.
+>De [EXT-X-START](https://tools.ietf.org/html/rfc8216#section-4.3.5.2) is een standaard HLS-markering die op een aangewezen uitgangspunt binnen playlist wijst.
 
-## Aanbevelingen {#section_4CF0733B14504F2A99690310B9F3B130}
+## Recommendations {#section_4CF0733B14504F2A99690310B9F3B130}
 
 * Gebruik tracering aan de clientzijde omdat de client meer controle heeft over het vuren van trackingbeacons.
 * Gedeeltelijke add-einden mogen alleen worden gebruikt in de modus voor het bijhouden van de server als de speler EXT-X-START ondersteunt.
