@@ -6,11 +6,14 @@ title: Live/lineaire advertentie oplossen en invoegen
 uuid: c9d54fc9-1d54-41c3-a872-d27afdd16314
 translation-type: tm+mt
 source-git-commit: 812d04037c3b18f8d8cdd0d18430c686c3eee1ff
+workflow-type: tm+mt
+source-wordcount: '291'
+ht-degree: 0%
 
 ---
 
 
-# Actieve/lineaire advertenties omzetten en invoegen {#resolve-and-insert-live-linear-ad}
+# Live/lineaire advertenties {#resolve-and-insert-live-linear-ad} omzetten en invoegen
 
 Voor live/lineaire inhoud vervangt TVSDK een segment van de inhoud van de hoofdstream door een ad-einde van dezelfde duur, zodat de tijdlijnduur ongewijzigd blijft.
 
@@ -21,7 +24,7 @@ TVSDK voegt advertenties op de volgende manieren in:
 * **Pre-roll**, die vóór de inhoud wordt geplaatst.
 * **Halve rol**, die in het midden van de inhoud wordt geplaatst.
 
-TVSDK accepteert het ad-einde, zelfs als de duur langer of korter is dan de vervangende duur van het actiepunt. Standaard ondersteunt TVSDK het `#EXT-X-CUE` actiepunt als een geldige advertentiemarkering bij het omzetten en plaatsen van advertenties. Deze markering vereist dat de `DURATION` waarde van het metagegevensveld wordt uitgedrukt in seconden en de unieke id van de actielijn. Bijvoorbeeld:
+TVSDK accepteert het ad-einde, zelfs als de duur langer of korter is dan de vervangende duur van het actiepunt. Standaard ondersteunt TVSDK het `#EXT-X-CUE`-actiepunt als een geldige advertentiemarkering bij het omzetten en plaatsen van advertenties. Deze markering vereist dat het metagegevensveld `DURATION` wordt uitgedrukt in seconden en de unieke id van de actielijn. Bijvoorbeeld:
 
 ```
 #EXT-X-CUE:DURATION=27,ID="..."
@@ -29,4 +32,4 @@ TVSDK accepteert het ad-einde, zelfs als de duur langer of korter is dan de verv
 
 U kunt extra cues (tags) definiëren en er een abonnement op nemen.
 
-Nadat het afspelen is gestart, vernieuwt de video-engine het manifestbestand regelmatig. TVSDK lost nieuwe advertenties op en voegt de advertenties in wanneer een richtsnoerpunt in de levende of lineaire stroom wordt ontmoet die in manifest werd bepaald. Nadat de advertenties zijn opgelost en ingevoegd, berekent TVSDK de virtuele tijdlijn opnieuw en verzendt een `TimelineItemsUpdatedEventListener.onTimelineUpdated` gebeurtenis.
+Nadat het afspelen is gestart, vernieuwt de video-engine het manifestbestand regelmatig. TVSDK lost nieuwe advertenties op en voegt de advertenties in wanneer een richtsnoerpunt in de levende of lineaire stroom wordt ontmoet die in manifest werd bepaald. Nadat de advertenties zijn opgelost en ingevoegd, berekent TVSDK de virtuele tijdlijn opnieuw en verzendt een gebeurtenis `TimelineItemsUpdatedEventListener.onTimelineUpdated`.
