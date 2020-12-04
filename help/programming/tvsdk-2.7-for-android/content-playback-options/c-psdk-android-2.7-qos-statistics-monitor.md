@@ -6,6 +6,9 @@ title: Kwaliteit van de dienststatistieken
 uuid: 8e990461-065b-4efa-b77c-b2b832f86f7d
 translation-type: tm+mt
 source-git-commit: 0eaf0e7e7e61d596a51d1c9c837ad072d703c6a7
+workflow-type: tm+mt
+source-wordcount: '286'
+ht-degree: 0%
 
 ---
 
@@ -24,23 +27,23 @@ TVSDK biedt ook informatie over de volgende gedownloade bronnen:
 
 U kunt de kwaliteit van de dienst (QoS) informatie over gedownloade middelen, zoals fragmenten en sporen, van de `LoadInformation` klasse lezen.
 
-1. Implementeer en registreer de `MediaPlayerEvent.LOAD_INFORMATION_AVAILABLE` gebeurtenislistener.
-1. Vraag `event.getLoadInformation()` om de relevante gegevens van de `event` parameter te lezen die tot callback wordt overgegaan.
+1. Implementeer en registreer de gebeurtenislistener `MediaPlayerEvent.LOAD_INFORMATION_AVAILABLE`.
+1. Roep `event.getLoadInformation()` aan om de relevante gegevens van de `event` parameter te lezen die aan callback wordt overgegaan.
 
    >[!NOTE]
    >
-   >Zie de API-documenten van `LoadInformation`Android (Java) [](https://help.adobe.com/en_US/primetime/api/psdk/javadoc_2.7/index.html) voor meer informatie.
+   >Zie `LoadInformation`2.7 for Android (Java)[ API docs voor meer informatie.](https://help.adobe.com/en_US/primetime/api/psdk/javadoc_2.7/index.html)
 
-## De playback van QOS, het bufferen, en apparatenstatistieken lezen {#section_D21722600F324E67A9F06234D338B243}
+## De playback van QOS, het bufferen, en apparatenstatistieken {#section_D21722600F324E67A9F06234D338B243} lezen
 
-U kunt het afspelen, bufferen en apparaatstatistieken lezen van de `QOSProvider` klasse.
+U kunt het afspelen, het bufferen, en apparatenstatistieken van de `QOSProvider` klasse lezen.
 
-De `QOSProvider` klasse biedt diverse statistieken, waaronder informatie over buffering, bitsnelheden, framesnelheden, tijdgegevens enzovoort. Het biedt ook informatie over het apparaat, zoals de fabrikant, het model, het besturingssysteem, de SDK-versie, de apparaat-id van de fabrikant en schermgrootte/dichtheid.
+De klasse `QOSProvider` verstrekt diverse statistieken, met inbegrip van informatie over het als buffer optreden voor, beetjetarieven, kadertarieven, tijdgegevens, etc. Het biedt ook informatie over het apparaat, zoals de fabrikant, het model, het besturingssysteem, de SDK-versie, de apparaat-id van de fabrikant en schermgrootte/dichtheid.
 
 1. Instantiëren van een mediaspeler.
-1. Maak een `QOSProvider` object en koppel dit aan de mediaspeler.
+1. Maak een `QOSProvider`-object en koppel dit aan de mediaspeler.
 
-   De `QOSProvider` constructor gebruikt een spelercontext zodat deze apparaatspecifieke informatie kan ophalen.
+   De constructor `QOSProvider` neemt de spelercontext zodat deze apparaatspecifieke informatie kan ophalen.
 
    ```java
    // Create Media Player. 
@@ -50,7 +53,7 @@ De `QOSProvider` klasse biedt diverse statistieken, waaronder informatie over bu
 
 1. (Optioneel) Lees de afspeelstatistieken.
 
-   Één oplossing om playbackstatistieken te lezen is een tijdopnemer te hebben, die periodiek de nieuwe waarden QoS van `QOSProvider`. haalt
+   Één oplossing om playbackstatistieken te lezen moet een tijdopnemer hebben, die periodiek de nieuwe waarden QoS van `QOSProvider` haalt.
 
    Bijvoorbeeld:
 
