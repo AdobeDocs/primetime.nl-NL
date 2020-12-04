@@ -4,13 +4,16 @@ title: Wachtwoordkrambler
 uuid: e488babc-cd50-41b9-acb8-490e8e42e8bc
 translation-type: tm+mt
 source-git-commit: 47b2ed65ff0ea4f54a210cf7627ed535782296b9
+workflow-type: tm+mt
+source-wordcount: '80'
+ht-degree: 0%
 
 ---
 
 
-# Wachtwoordkrambler {#password-scrambler}
+# Wachtwoordspaander {#password-scrambler}
 
-Met het hulpprogramma Password Scrambler wordt een wachtwoord gecodeerd, zodat dit in de Adobe Access-server kan worden gebruikt voor beveiligde streamingconfiguratiebestanden. Voer de opdracht uit om de schuifregelaar uit te voeren:
+Met het hulpprogramma Password Scrambler wordt een wachtwoord gecodeerd, zodat dit in de Adobe Access Server kan worden gebruikt voor beveiligde streamingconfiguratiebestanden. Voer de opdracht uit om de schuifregelaar uit te voeren:
 
 ```
 Scrambler.bat password 
@@ -32,5 +35,5 @@ Alle wachtwoorden die in flashaccess-global.xml en flashaccess-huurder.xml worde
 
 >[!NOTE]
 >
->Het hulpprogramma Password Scrambler in de Adobe Access-server voor beveiligde streaming is niet uitwisselbaar met de schuifregelaar die wordt geleverd bij de Referentie-implementatieserver.
+>Het hulpprogramma Password Scrambler in de Adobe Access Server for Protected Streaming is niet uitwisselbaar met de schuifregelaar die wordt geleverd bij de Referentie-implementatielicentieserver.
 
