@@ -6,11 +6,14 @@ title: De speler Skins toewijzen
 uuid: 516ff846-d76d-4062-b64b-3032f7a70470
 translation-type: tm+mt
 source-git-commit: 19e7c941b3337c3b4d37f0b6a1350aac2ad8a0cc
+workflow-type: tm+mt
+source-wordcount: '1449'
+ht-degree: 0%
 
 ---
 
 
-# De speler Skins toewijzen {#skinning-the-player}
+# De speler {#skinning-the-player} vegen
 
 U kunt de volgende informatie gebruiken om u te helpen een skin aan uw speler toewijzen. Voor elke visuele constructie, wordt het overeenkomstige gedrag vermeld in standaardgedrag.
 
@@ -24,7 +27,7 @@ Hier volgen de stijlen voor de containerdiv-elementen:
 
 >[!TIP]
 >
->Deze div-elementen worden weergegeven in het `common-styles.css` bestand.
+>Deze div-elementen worden vermeld in het `common-styles.css`-bestand.
 
 Hier volgen de stijlen voor de hoofddiv:
 
@@ -83,13 +86,13 @@ Hier volgen de stijlen voor de hoofddiv:
  </tbody> 
 </table>
 
-## Diverse besturingselementen {#section_E9E4A8E3AEBF4BDC89840B84B3B0E737}
+## Verschillende besturingselementen {#section_E9E4A8E3AEBF4BDC89840B84B3B0E737}
 
 Hier volgen de stijlen voor algemene besturingselementen voor spelers:
 
 >[!TIP]
 >
->Deze stijlen staan in het `default-controls.css` bestand.
+>Deze stijlen worden vermeld in het `default-controls.css` dossier.
 
 <table id="table_0ACB6BAB5DAD42DBBD18CA7C0385A261"> 
  <thead> 
@@ -142,7 +145,7 @@ Hier volgen de stijlen voor algemene besturingselementen voor spelers:
  </tbody> 
 </table>
 
-## Controlebalk {#section_B683B51EC746484B9AA90CB481D637BD}
+## Regelbalk {#section_B683B51EC746484B9AA90CB481D637BD}
 
 Hier volgen de stijlen voor de besturingsbalk:
 
@@ -155,7 +158,7 @@ Hier volgen de stijlen voor de besturingsbalk:
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"><span class="codeph"> ptp-control-bar</span> (standaardgedrag)</td>
+   <td colname="col1"><span class="codeph"> ptp-control-bar</span>  (standaardgedrag)</td>
    <td colname="col2"> <p>Van toepassing op de bedieningsbalk </p> </td> 
   </tr> 
  </tbody> 
@@ -216,7 +219,7 @@ Het standaardgedrag is:
 * `playProgressBarBehavior`
 * `seekToBarBehavior`
 
-## Knop Afspelen/Pauze {#section_F1F40A948D0049C5A4D8EA5F2A475CAA}
+## Knop Afspelen/Pauzeren {#section_F1F40A948D0049C5A4D8EA5F2A475CAA}
 
 Hier volgen de stijlen voor de knop Afspelen/Pauzeren:
 
@@ -234,11 +237,11 @@ Hier volgen de stijlen voor de knop Afspelen/Pauzeren:
   </tr>
   <tr>
    <td colname="col1"><span class="codeph"> ptp-btn-playpause.pause-state</span> </td>
-   <td colname="col2"> <p><span class="codeph"> ptp-btn-playpause</span> in de pauzestatus </p> </td>
+   <td colname="col2"> <p><span class="codeph"> ptp-btn-</span> playpausin de pauzestatus </p> </td>
   </tr>
   <tr>
    <td colname="col1"><span class="codeph"> ptp-btn-playpause.pause-state</span> </td> 
-   <td colname="col2"> <p><span class="codeph"> ptp-btn-playpause</span> in de afspeelstatus </p> </td>
+   <td colname="col2"> <p><span class="codeph"> ptp-btn-</span> playpausin de afspeelstatus </p> </td>
   </tr>
  </tbody>
 </table>
@@ -309,7 +312,7 @@ Hier volgen de stijlen voor de volumeschuifregelaar:
 
 Het standaardgedrag is `volumeSliderBehavior`.
 
-## Terugspoelen {#section_06EE608FC54A4CF5B5DF9DC743CFC740}
+## {#section_06EE608FC54A4CF5B5DF9DC743CFC740} terugspoelen
 
 Hier is de stijl voor de knop Terugspoelen:
 
@@ -393,7 +396,7 @@ Hier is de stijl voor de knop Langzaam terugspoelen:
 
 Het standaardgedrag is `slowRewindButtonBehavior`.
 
-## Langzaam vooruit {#section_92ACF092EECC4A5EAF6AA090C05E552E}
+## Volgende langzaam {#section_92ACF092EECC4A5EAF6AA090C05E552E}
 
 Hier is de stijl voor de langzame voorwaartse knoop:
 
@@ -485,12 +488,12 @@ Hier zijn de stijlen om het audiospoor te vormen:
   </tr>
   <tr>
    <td colname="col1"><span class="codeph"> .ptp-audio-track-selection-menu</span> </td>
-   <td colname="col2"> <p>De menupunten in ptp-audio-track-selectie-paneel <span class="codeph"></span>. </p> </td>
+   <td colname="col2"> <p>De menu-items in <span class="codeph"> ptp-audio-track-selection-panel</span>. </p> </td>
   </tr>
  </tbody>
 </table>
 
-## Delen {#section_B2ADC76E76304A68AD648A00A12B676E}
+## {#section_B2ADC76E76304A68AD648A00A12B676E} delen
 
 Hier zijn de stijlen om het delen te vormen:
 
@@ -508,7 +511,7 @@ Hier zijn de stijlen om het delen te vormen:
   </tr>
   <tr>
    <td colname="col1"><span class="codeph"> .ptp-btn-share-video</span> </td> 
-   <td colname="col2"> <p>De knop Delen via sociale media op de besturingsbalk waarmee het <span class="codeph"> PPT-share-video-deelvenster</span>wordt geopend. </p> </td>
+   <td colname="col2"> <p>De knop Delen via sociale media op de besturingsbalk waarmee <span class="codeph"> ptp-share-video-panel</span> wordt geopend. </p> </td>
   </tr>
   <tr>
    <td colname="col1">Het standaardgedrag is <span class="codeph"> shareVideoButtonBehavior</span>. </td>
@@ -535,11 +538,11 @@ Hier zijn de stijlen om het delen te vormen:
   </tr>
   <tr>
    <td colname="col1"><span class="codeph"> .share-video-panel-menu</span> </td>
-   <td colname="col2"> <p>Het menu in het <span class="codeph"> PPT-share-video-panel</span> waarin alle opties voor het delen van inhoud op sociale media worden weergegeven. </p> </td>
+   <td colname="col2"> <p>Het menu in <span class="codeph"> ptp-share-video-panel</span> dat alle opties toont om inhoud op sociale media te delen. </p> </td>
   </tr>
   <tr>
    <td colname="col1"><span class="codeph"> .ptp-share-video-panel-menu-item</span> </td>
-   <td colname="col2"> <p>Het menu-item in het menu <span class="codeph"></span>Delen-video-paneel. </p> </td>
+   <td colname="col2"> <p>Het menu-item in het <span class="codeph"> share-video-panel-menu</span>. </p> </td>
   </tr>
   <tr>
    <td colname="col1"><span class="codeph"> .ptp-btn-share-video-facebook</span> </td>
@@ -578,7 +581,7 @@ Hier zijn de stijlen om gesloten titels te vormen:
   </tr>
   <tr>
    <td colname="col1"><span class="codeph"> .ptp-btn-closed-caption</span> </td>
-   <td colname="col2"> <p>De <span class="uicontrol"> Gesloten knoop van Bijschriften</span> op de controlebar. </p> </td>
+   <td colname="col2"> <p>De <span class="uicontrol"> Gesloten Captions</span> knoop op de controlebar. </p> </td>
   </tr>
   <tr>
    <td colname="col1">Het standaardgedrag is <span class="codeph"> closedCaptionButtonBehavior</span>. </td>
@@ -609,7 +612,7 @@ Hier zijn de stijlen om gesloten titels te vormen:
    <td colname="col2"> <p>De header voor de <span class="codeph"> ptp-audio-track-selection-panel</span>. </p> </td>
   </tr>
   <tr>
-   <td colname="col1"><span class="codeph"> .ptp-closed-caption-language-menu: </span> </td>
+   <td colname="col1"><span class="codeph"> .ptp-closed-caption-language-menu:  </span> </td>
    <td colname="col2"> <p>Het menu in het venster met gesloten bijschriften. </p> </td>
   </tr>
   <tr>
@@ -618,7 +621,7 @@ Hier zijn de stijlen om gesloten titels te vormen:
   </tr>
   <tr>
    <td colname="col1"><span class="codeph"> .ptp-closed-caption-options-btn</span> </td>
-   <td colname="col2"> <p>De knop <span class="uicontrol"> Opties</span> in het deelvenster Opties voor gesloten bijschriften. </p> </td>
+   <td colname="col2"> <p>De <span class="uicontrol"> knoop van Opties</span> in het gesloten paneel van de opties van titels. </p> </td>
   </tr>
   <tr>
    <td colname="col1"><span class="codeph"> .ptp-closed-caption-options-panel</span> </td>
@@ -634,7 +637,7 @@ Hier zijn de stijlen om gesloten titels te vormen:
   </tr>
   <tr>
    <td colname="col1"><span class="codeph"> .ptp-closed-caption-done-btn</span> </td> 
-   <td colname="col2"> <p>De knop <span class="uicontrol"> Gereed</span> in de koptekst van het deelvenster Opties voor gesloten bijschriften. </p> </td> 
+   <td colname="col2"> <p>De <span class="uicontrol"> Gereed</span> knoop in de kopbal van het gesloten paneel van de opties van titels. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"><span class="codeph"> .ptp-closed-caption-options-menu</span> </td> 
@@ -658,7 +661,7 @@ Hier zijn de stijlen om gesloten titels te vormen:
   </tr> 
   <tr> 
    <td colname="col1"><span class="codeph"> ptp-closed-caption-options-menu-item</span> </td> 
-   <td colname="col2"> <p>Het menu-item <span class="uicontrol"> Opties</span> voor gesloten bijschrift. </p> </td> 
+   <td colname="col2"> <p>Het gesloten bijschrift <span class="uicontrol"> Opties</span> menupunt. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"><span class="codeph"> ptp-closed-caption-preview-panel</span> </td> 
@@ -670,11 +673,11 @@ Hier zijn de stijlen om gesloten titels te vormen:
   </tr> 
   <tr> 
    <td colname="col1"><span class="codeph"> ptp-closed-caption-options-reset-button</span> </td> 
-   <td colname="col2"> <p>De knop <span class="uicontrol"> Herstellen</span> in de voettekst van het venster met opties voor een gesloten bijschrift. </p> </td> 
+   <td colname="col2"> <p>De <span class="uicontrol"> knoop van het Terugstellen</span> in footer van het gesloten paneel van de opties van de titel. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"><span class="codeph"> ptp-closed-caption-options-apply-button</span> </td> 
-   <td colname="col2"> <p>De knop <span class="uicontrol"> Toepassen</span> in de voettekst van het deelvenster met ondertitels. </p> </td> 
+   <td colname="col2"> <p>Met de knop <span class="uicontrol"> Toepassen</span> in de voettekst van het venster met opties voor een gesloten bijschrift. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1">Het standaardgedrag is <span class="codeph"> closedCaptionOptionsPanelBehavior</span>. </td> 
@@ -696,7 +699,7 @@ Hier zijn de stijlen om extra opties te vormen:
  <tbody> 
   <tr> 
    <td colname="col1"><span class="codeph"> .ptp-btn-more-options</span> </td> 
-   <td colname="col2"> <p>De knop <span class="uicontrol"> Meer opties</span> . </p> </td> 
+   <td colname="col2"> <p>De <span class="uicontrol"> Meer Opties</span> knoop. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"><span class="codeph"> .ptp-btn-more-options.ptp-control-bar-btn</span> </td> 
@@ -721,7 +724,7 @@ Het standaardgedrag is `moreOptionsButtonBehavior`.
 
 ## PIP-knop (W) {#section_1EE039DEA99541D391B30BD1DF72A83E}
 
-Hier is de stijl voor de [!UICONTROL PIP<] knop:
+Hier is de stijl voor de [!UICONTROL PIP<] knoop:
 
 <table id="table_EE2E882C87E24D39B8D5347686F29E55"> 
  <thead> 
@@ -756,7 +759,7 @@ Hier is de stijl om het volledige scherm te vormen:
  <tbody> 
   <tr> 
    <td colname="col1"><span class="codeph"> .ptp-btn-fullscreen</span> </td> 
-   <td colname="col2"> <p>De knop <span class="uicontrol"> Volledig scherm</span> op de besturingsbalk. </p> </td> 
+   <td colname="col2"> <p>De <span class="uicontrol"> Volledige Scherm</span> knoop op controlebar. </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -784,7 +787,7 @@ Hier is de stijl om trukspel te vormen:
 
 Het standaardgedrag is `trickPlayRateDisplayBehavior`.
 
-## Meerdere weergaven (Z) {#section_58EFAE7263BA45D3A4E2AB7309A9CAA7}
+## Multiview (Z) {#section_58EFAE7263BA45D3A4E2AB7309A9CAA7}
 
 Hier is de stijl om multiview te vormen:
 
@@ -857,7 +860,7 @@ Hier is de stijl om foutberichten te configureren:
 
 Het standaardgedrag is `errorMessagePanelBehavior`.
 
-## Bufferbedekking {#section_2FE8FDE2599E42BAA7411D0D38FA0A88}
+## Bedekking bufferen {#section_2FE8FDE2599E42BAA7411D0D38FA0A88}
 
 Hier is de stijl voor het configureren van miniaturen:
 
@@ -900,11 +903,11 @@ Hier is de stijl voor de knop Snel vooruit:
       <li id="li_FDF2CEDB0A854098907FF9CBCF1A61C1"><span class="codeph"> .ptp-btn-slowaakse</span> </li> 
       <li id="li_CD2E14DB3DD64C10A253DA23FBE04A04"><span class="codeph"> .ptp-btn-slowaakse</span> </li> 
       <li id="li_A230359E8F7F4571A9EBFF0E4C2462D7"><span class="codeph"> .ptp-btn-slowrewind</span> </li> 
-      <li id="li_5711A315872F4FA59FDDF0EF0AFD03C6"><span class="codeph"> .ptp-btn-more-options </span> </li> 
+      <li id="li_5711A315872F4FA59FDDF0EF0AFD03C6"><span class="codeph"> .ptp-btn-more-options  </span> </li> 
       <li id="li_71C8E76077A84ED590160AB5ABFCC0D7"><span class="codeph"> .ptp-btn-share-video</span> </li> 
-      <li id="li_4A3113C0360F4F708AAA96AB316FA057"><span class="codeph"> .ptp-btn-closed-caption </span> </li> 
+      <li id="li_4A3113C0360F4F708AAA96AB316FA057"><span class="codeph"> .ptp-btn-closed-caption  </span> </li> 
       <li id="li_901A0186D65A48A1B774DC555CEC5367"><span class="codeph"> .ptp-btn-audio-track</span> </li> 
-      <li id="li_2331583C01C2482B8EE72979FBF111DB"><span class="codeph"> .ptp-btn-pip </span> </li> 
+      <li id="li_2331583C01C2482B8EE72979FBF111DB"><span class="codeph"> .ptp-btn-pip  </span> </li> 
       <li id="li_7BB39BDF5E294AEB8FA3DCD9F9A29468"><span class="codeph"> .ptp-btn-rewind</span> </li> 
       <li id="li_E4FEF5A7486A40F6A5FE1119BD63AFEF"><span class="codeph"> .ptp-scrub-bar</span> </li> 
       <li id="li_12153547558A4871842EE0416BCCA8B2"><span class="codeph"> .ptp-seek-to-bar</span> </li> 
@@ -924,7 +927,7 @@ Hier is de stijl voor de knop Snel vooruit:
    <td colname="col1"><span class="codeph"> .fullscreen-status</span> </td> 
    <td colname="col2"> <p>De speler is in de modus Volledig scherm. </p> <p>Is van toepassing op het volgende: 
      <ul id="ul_B235C1D339F64B2FAC6BC72F03807616"> 
-      <li id="li_6E050EE74C604FDAB4C9C0447F547A9D"><span class="codeph"> .ptp-control-bar </span> </li> 
+      <li id="li_6E050EE74C604FDAB4C9C0447F547A9D"><span class="codeph"> .ptp-control-bar  </span> </li> 
       <li id="li_67D54B1A41764B2DA544479CDA1C901C"><span class="codeph"> .ptp-btn-fullscreen</span> </li> 
      </ul> </p> </td> 
   </tr> 
