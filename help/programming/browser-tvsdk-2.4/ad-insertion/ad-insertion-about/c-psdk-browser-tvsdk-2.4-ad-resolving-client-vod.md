@@ -6,15 +6,18 @@ title: VOD en omzetten en invoegen
 uuid: 34a30ae5-d553-4c5d-9829-8e5eaa41c104
 translation-type: tm+mt
 source-git-commit: 040655d8ba5f91c98ed0584c08db226ffe1e0f4e
+workflow-type: tm+mt
+source-wordcount: '180'
+ht-degree: 0%
 
 ---
 
 
-# VOD en omzetten en invoegen{#vod-ad-resolving-and-insertion}
+# VOD en invoegen{#vod-ad-resolving-and-insertion}
 
 Voor video-on-demand-inhoud (VOD) voegt Browser TVSDK toe en verbreekt deze inhoud door de advertenties in de hoofdinhoud op te splitsen, zodat de tijdlijnduur langer wordt.
 
-Voordat de inhoud wordt afgespeeld, verhelpt Browser-TVSDK bekende advertenties, voegt de hoofdinhoud in en voegt deze af zoals wordt beschreven in een tijdlijn die wordt geretourneerd door Adobe Primetime en besluitvorming, en verwerkt indien nodig de virtuele tijdlijn opnieuw.
+Voordat de inhoud wordt afgespeeld, lost Browser-TVSDK bekende advertenties op, voegt de hoofdinhoud in en voegt deze af zoals wordt beschreven door een tijdlijn die door Adobe Primetime wordt geretourneerd en die de virtuele tijdlijn indien nodig opnieuw berekent.
 
 De browser TVSDK voegt advertenties op de volgende manieren in:
 
