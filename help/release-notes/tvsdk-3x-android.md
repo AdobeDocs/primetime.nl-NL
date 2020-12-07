@@ -32,7 +32,7 @@ De Android-referentiespeler wordt geleverd bij Android TVSDK in de map samples/d
 
 TVSDK voor Android biedt veel prestatieverbeteringen ten opzichte van eerdere versies. Het biedt een hoogwaardige kijkervaring en beschikt over alle functies van versie 1.4, met uitzondering van de ondersteuning voor Multi-CDN.
 
-De uitgebreide reeks functies die wordt ondersteund en niet wordt ondersteund, wordt weergegeven in de sectie Matrix [met](#feature-matrix) functies van de opmerkingen bij de release.
+De uitgebreide reeks functies die worden ondersteund en niet worden ondersteund, worden weergegeven in de sectie [Matrix met functies](#feature-matrix) van de releaseopmerkingen.
 
 ## Android TVSDK 3.12
 
@@ -40,25 +40,25 @@ De gradle-versie van de toepassing Primetime-verwijzing wordt nu bijgewerkt naar
 
 Als u een referentietoepassing wilt instellen en uitvoeren met Android Studio, volgt u de instructies uit het Lees mij-bestand dat beschikbaar is met TVSDK ZIP op `TVSDK_Android_x.x.x.x/samples/PrimetimeReference/src/README.md`.
 
-De belangrijkste problemen die in de huidige release zijn opgelost, worden vermeld in de sectie [Opgeloste problemen](#resolved-issues) .
+De belangrijkste klantproblemen die in de huidige release zijn opgelost, worden vermeld in [sectie Opgeloste problemen](#resolved-issues).
 
 ### Nieuwe en verbeterde functies in de vorige versies
 
 **Android TVSDK 3.11**
 
-* **De doos die van de Kopbal van het Systeem van de bescherming (PSSH) wordt toegelaten** - TVSDK staat het halen van de Kop van het Systeem Specifieke van de Veiligheid verbonden aan huidige geladen Middel van Media toe. Nieuwe API `getPSSH()` toegevoegd aan `com.adobe.mediacore.drm.DRMManager`.
+* **De doos die van de Kopbal van het Systeem van de bescherming (PSSH) wordt toegelaten**  - TVSDK staat het halen van het Systeem-Specifieke Kopdoos van de Bescherming verbonden aan huidige geladen Middel van Media toe. Nieuwe API `getPSSH()` toegevoegd aan `com.adobe.mediacore.drm.DRMManager`.
 
-Zie [Widevine DRM](../programming/tvsdk-3x-android-prog/android-3x-content-security/android-3x-drm-widevine.md)voor meer informatie.
+Zie [Widevine DRM](../programming/tvsdk-3x-android-prog/android-3x-content-security/android-3x-drm-widevine.md) voor meer informatie.
 
 **Android TVSDK 3.10**
 
-De release was gericht op het verhelpen van de belangrijkste problemen van klanten, zoals vermeld in de [sectie Opgeloste problemen](#resolved-issues) .
+De release was gericht op het verhelpen van de belangrijkste klantproblemen, zoals vermeld in [sectie Problemen oplossen](#resolved-issues).
 
 **Android TVSDK 3.9**
 
-* **Beveiligde levering via HTTPS** - Android TVSDK 3.9 introduceerde de veilige leveringsmogelijkheden via HTTPS om inhoud veilig te leveren met ongeëvenaarde schaal en prestaties.
+* **Beveiligde levering via HTTPS**  - Android TVSDK 3.9 introduceerde de veilige leveringsmogelijkheden via HTTPS om inhoud veilig te leveren met ongeëvenaarde schaal en prestaties.
 
-   Nieuwe API die in de `NetworkConfiguration` klasse is geïntroduceerd om veilige levering via HTTPS mogelijk te maken.
+   Om veilige levering over HTTPS toe te laten, nieuwe API die in `NetworkConfiguration` klasse wordt geïntroduceerd.
 
    `public void setForceHTTPS (boolean value)`
 
@@ -66,27 +66,27 @@ De release was gericht op het verhelpen van de belangrijkste problemen van klant
 
 **Android TVSDK 3.8**
 
-* **Ondersteuning voor pre-rol met gedeeltelijke ad-break-functie** - Dankzij deze verbetering biedt TVSDK 3.8 ondersteuning voor pre-roll-advertenties met PABI (Partial Ad-Break feature).
+* **Ondersteuning voor pre-rol met gedeeltelijke ad-break-functie**  - Met deze verbetering biedt TVSDK 3.8 ondersteuning voor pre-roll-advertenties met PABI (Partial Ad-Break feature).
 
 De pre-roll advertentie, indien beschikbaar, wordt gespeeld, en dan speelt de inhoud van het levende punt geëmuleerd de ervaring van levende televisie.
 
 **Android TVSDK 3.7**
 
-* Voor Widevine-testinhoud kan een nieuwe API `setMediaDrmCallback` in de DRMManager-klasse de standaardimplementatie van de MediaDRmCallback-interface overschrijven.
+* Voor Widevine-testinhoud wordt een nieuwe API `setMediaDrmCallback` in de DRMManager-klasse beschikbaar gemaakt om de standaardimplementatie van de MediaDRmCallback-interface te overschrijven.
 
    `public static void setMediaDrmCallback(MediaDrmCallback callback)`
 
-* Correctie van AppCrash-fout voor niet-afhandeling `MediaPlayerEvent.ITEM_UPDATED` in C++-laag (Android 64-bits).
+* Correctie AppCrash-fout voor het niet verwerken van `MediaPlayerEvent.ITEM_UPDATED` in C++-laag (Android 64-bits).
 
 **Android TVSDK 3.6**
 
-* **Verbeter uw apps voor de vereiste** 64-bits functionaliteit - De native bibliotheek `(libAVEAndroid.so)` wordt nu bijgewerkt en beschikbaar gesteld in twee versies. Bestaande native bibliotheeklocatie (32 bits) van armeabi is gewijzigd en een extra arm64-v8a (64 bits)-bibliotheek is geïntroduceerd in `/framework/Player to /framework/Player/armeabi` `/framework/Player/arm64-v8a.`
+* **Verbeter uw toepassingen voor de vereiste**  64-bits functionaliteit. De native bibliotheek  `(libAVEAndroid.so)` wordt nu bijgewerkt en beschikbaar gesteld in twee versies. Bestaande native bibliotheeklocatie (32 bits) van armeabi is gewijzigd van `/framework/Player to /framework/Player/armeabi` en een extra arm64-v8a (64 bits)-bibliotheek is geïntroduceerd in `/framework/Player/arm64-v8a.`
 
 **Versie 3.5**
 
-* **Even in tijd en resolutie** - TVSDK 3.5 verwijdert de ondersteuning van de afgespeelde advertenties uit de tijdlijn.
+* **Net op tijd en resolutie**  - TVSDK 3.5 verwijdert de ondersteuning van de afgespeelde advertenties uit de tijdlijn.
 
-* **Ondersteuning ingeschakeld voor offline afspelen** - Met offline afspelen kunnen gebruikers nu video-inhoud downloaden naar hun apparaten en deze bekijken wanneer ze geen verbinding hebben. Raadpleeg &quot;[Offline afspelen met Android](https://helpx.adobe.com/content/dam/help/en/primetime/programming-guides/psdk_android_3.5.pdf)&quot; voor meer informatie.
+* **Ondersteuning ingeschakeld voor offline afspelen**  - Met offline afspelen kunnen gebruikers nu video-inhoud downloaden naar hun apparaten en deze bekijken wanneer ze geen verbinding hebben. Raadpleeg &quot;[Offline afspelen met Android](https://helpx.adobe.com/content/dam/help/en/primetime/programming-guides/psdk_android_3.5.pdf)&quot; voor gedetailleerde informatie.
 
 **Versie 3.4**
 
@@ -96,7 +96,7 @@ De pre-roll advertentie, indien beschikbaar, wordt gespeeld, en dan speelt de in
 
 * **API-wijzigingen**
 
-   * Er wordt een nieuwe API toegevoegd `NetworkConfiguration::setNumOfTimesManifestRetryBeforeError(n)*` voor de afhandeling van netwerkfouten en -onderbrekingen.
+   * Er wordt een nieuwe API toegevoegd aan `NetworkConfiguration::setNumOfTimesManifestRetryBeforeError(n)*` om netwerkfouten en time-outs af te handelen.
       * waarbij n) het aantal pogingen is.
 
 **Versie 3.2**
@@ -129,33 +129,34 @@ De pre-roll advertentie, indien beschikbaar, wordt gespeeld, en dan speelt de in
 
 * **Het afspelen van streams met AC3/EAC3-audiocodec is ingeschakeld**
 
-   * `void alwaysUseAC3OnSupportedDevices(boolean val)` in `MediaPlayer` klasse
+   * `void alwaysUseAC3OnSupportedDevices(boolean val)` in  `MediaPlayer` klasse
 
 * **TVSDK ondersteunt CMAF en het afspelen van normale streams voor gecodeerde Windows CTR.**
 
 * **Het afspelen van HEVC-streams van 4.000 pagina&#39;s wordt nu ondersteund.**
 
-* **Parallel en vraag verzoeken** - TVSDK prefetst nu 20 en vraagverzoeken parallel.
+* **Parallel en vraag verzoeken**  - TVSDK prefetst nu 20 en vraagverzoeken parallel.
 
 **Versie 3.0**
 
 * **TVSDK 3.0 biedt ondersteuning voor HEVC-streams (High Efficiency Video Coding).**
 
-* **Even in tijd - Als u advertenties dichter bij de opmaakmarkeringen** Lazy Ad oplost, worden deze nu afzonderlijk opgelost. Eerder was de resolutie een tweefasenaanpak: De pre-rollen werden opgelost voorafgaand aan playbackbegin en alle midden/postrolgroeven gecombineerd nadat het spelen begon. Met deze verbeterde functie wordt elk ad-einde nu opgelost op een specifiek tijdstip vóór het ad-cuepunt.
+* **Even in tijd - Als u advertenties dichter bij**
+markeertekens oplost, wordt elke advertentie nu afzonderlijk opgelost door Lazy Ad toe te voegen. Eerder was de resolutie een tweefasenaanpak: De pre-rollen werden opgelost voorafgaand aan playbackbegin en alle midden/postrolgroeven gecombineerd nadat het spelen begon. Met deze verbeterde functie wordt elk ad-einde nu opgelost op een specifiek tijdstip vóór het ad-cuepunt.
 
 >[!NOTE]
 >
 >Het luie Oplossen van Advertenties is nu veranderd om door gebrek worden uitgezet, en uitdrukkelijk moet worden toegelaten.
 
-Er wordt een nieuwe API toegevoegd `AdvertisingMetadata::setDelayAdLoadingTolerance` om de vertraagde laadtolerantie voor deze advertentiemetagegevens te verkrijgen.\
+Er wordt een nieuwe API toegevoegd aan `AdvertisingMetadata::setDelayAdLoadingTolerance` om de vertraagde advertentietolerantie te verkrijgen die aan deze advertentiemetagegevens is gekoppeld.\
 Zoeken is nu toegestaan direct na het voorbereiden, en als u op ad-hocpauzes zoekt, wordt dit onmiddellijk opgelost voordat het zoeken is voltooid.\
-De signaalmodi `SERVER_MAP` en `MANIFEST_CUES` worden ondersteund.
+Signaleringsmodi `SERVER_MAP` en `MANIFEST_CUES` worden ondersteund.
 
-Zie [TVSDK 3.0 voor de Android-programmeergids](../programming/tvsdk-3x-android-prog/android-3x-advertising/ad-insertion/c-lazy-ad-resolving/c-lazy-ad-resolving.md) over API- en gebeurteniswijzigingen voor meer informatie.
+Zie [TVSDK 3.0 voor de Guide van de Android-programmeur](../programming/tvsdk-3x-android-prog/android-3x-advertising/ad-insertion/c-lazy-ad-resolving/c-lazy-ad-resolving.md) voor meer informatie over API- en gebeurteniswijzigingen.
 
-* **Bijgewerkt`targetSdkVersion`tot laatste versie**
+* **Bijgewerkt  `targetSdkVersion` tot laatste versie**
 
-Bijgewerkt `targetSdkVersion` van 19 naar 27 voor een vloeiende werking.
+`targetSdkVersion` bijgewerkt van 19 tot 27 voor een vloeiende werking.
 
 * **Placement.Type getPlacementType() is nu een methode op interface TimelineMarker**
 
@@ -167,7 +168,7 @@ Bijgewerkt `targetSdkVersion` van 19 naar 27 voor een vloeiende werking.
 
 * **Achtergrondaudio inschakelen**
 
-   Als u het afspelen van audio wilt inschakelen wanneer de toepassing van de voorgrond naar de achtergrond gaat, moet de toepassing de API van MediaPlayer aanroepen met de waarde true als het argument wanneer de speler zich in de status PREPARED bevindt. `enableAudioPlaybackInBackground`
+   Als u het afspelen van audio wilt inschakelen wanneer de toepassing van de voorgrond naar de achtergrond wordt verplaatst, moet de toepassing `enableAudioPlaybackInBackground` API van MediaPlayer met true aanroepen als argument wanneer de speler zich in de status PREPARED bevindt.
 
 * **alwaysUseAudioOutputLatency(boolean val) in MediaPlayer-klasse**
 
@@ -178,7 +179,7 @@ Booleaanse parameters val - True gebruikt audiouitvoerlatentie voor audiotijdste
 
 TVSDK annuleert nu, indien nodig, het downloaden van het actieve segment en schakelt dynamisch over naar de juiste uitvoering. Dit wordt gedaan door naadloos tussen bitsnelheden zonder onderbrekingen te schakelen.
 
-**Versie 1.5.5**
+**Versie 2.5.5**
 
 * **Gedeeltelijke invoeging van advertentie-einde**
 
@@ -195,17 +196,17 @@ TVSDK annuleert nu, indien nodig, het downloaden van het actieve segment en scha
 
 * **AdSystem en Creative ID toegevoegd aan CRS-aanvragen**
 
-   Nu worden de 1401- en 1403-verzoeken aangevuld `AdSystem` en `CreativeId` als nieuwe parameters.
+   Nu opnemen van `AdSystem` en `CreativeId` als nieuwe parameters in de 1401 en 1403 verzoeken.
 
-* **API setEncodeUrlForTracking in NetworkConfiguration-klasse verwijderd** omdat de onveilige tekens in een URL moeten worden gecodeerd.
+* **API setEncodeUrlForTracking in NetworkConfiguration-klasse** verwijderd als de onveilige tekens in een URL moeten worden gecodeerd.
 
 **Versie 2.5.4**
 
 Android TVSDK v2.5.4 biedt de volgende updates en API-wijzigingen:
 
-* Wijzigingen in de standaardwaarde voor `WebViewDebbuging`
+* Wijzigingen in standaardwaarde voor `WebViewDebbuging`
 
-   `WebViewDebbuging` waarde is standaard ingesteld op `Fals`e. Roep de toepassing aan om deze in te schakelen. `setWebContentsDebuggingEnabled(true)`
+   `WebViewDebbuging` waarde is standaard ingesteld op  `Fals`e. Om het toe te laten, roep `setWebContentsDebuggingEnabled(true)` in de toepassing.
 
 * **Upgrade van OpenSSL- en Curl-versie**
 
@@ -232,17 +233,17 @@ Android TVSDK v2.5.3 biedt de volgende updates en API-wijzigingen.
 
 * API-wijzigingen:
 
-   * Er `CookiesUpdatedEvent` wordt een nieuwe gebeurtenis toegevoegd. Het wordt verzonden door de mediaspeler wanneer het cookie wordt bijgewerkt.
+   * Er wordt een nieuwe gebeurtenis `CookiesUpdatedEvent` toegevoegd. Het wordt verzonden door de mediaspeler wanneer het cookie wordt bijgewerkt.
 
-   * Er wordt een nieuwe API toegevoegd `NetworkConfiguration::set/ getCustomUserAgent()` om de aangepaste gebruikersagent te gebruiken.
+   * Er wordt een nieuwe API toegevoegd aan `NetworkConfiguration::set/ getCustomUserAgent()` om een aangepaste gebruikersagent te gebruiken.
 
-   * Er wordt een nieuwe API toegevoegd om de codering van onveilige tekens te forceren. `NetworkConfiguration::set/ getEncodedUrlForTracking`
+   * Er wordt een nieuwe API toegevoegd aan `NetworkConfiguration::set/ getEncodedUrlForTracking` om de codering van onveilige tekens te forceren.
 
-   * Er wordt een nieuwe API toegevoegd `NetworkConfiguration::getNetworkDownVerificationUrl()` om een URL voor netwerkverificatie in te stellen bij een failover.
+   * Er wordt een nieuwe API toegevoegd aan `NetworkConfiguration::getNetworkDownVerificationUrl()` om een URL voor netwerkverificatie in te stellen bij een failover.
 
-   * Er wordt een nieuwe eigenschap toegevoegd `TextFormat::treatSpaceAsAlphaNum` die bepaalt of ruimte alfanumeriek moet zijn bij het weergeven van bijschriften.
+   * Er wordt een nieuwe eigenschap toegevoegd aan `TextFormat::treatSpaceAsAlphaNum` die definieert of ruimte moet worden behandeld als alfanumeriek bij het weergeven van bijschriften.
 
-* Wijzigingen in `SizeAvailableEvent`. Eerder, `getHeight()` en `getWidth()` methodes van `SizeAvailableEvent` in 2.5.2 gebruikt om de hoogte en kaderbreedte van het Kader terug te keren, die door media formaat werd teruggegeven. Nu worden uitvoerhoogte en uitvoerbreedte respectievelijk geretourneerd door decoder.
+* Wijzigingen in `SizeAvailableEvent`. Eerder werden `getHeight()`- en `getWidth()`-methoden van `SizeAvailableEvent` in 2.5.2 gebruikt om Framehoogte en framebreedte te retourneren, die werden geretourneerd door de media-indeling. Nu worden uitvoerhoogte en uitvoerbreedte respectievelijk geretourneerd door decoder.
 
 * Wijzigingen in buffergedrag: Het buffergedrag wordt gewijzigd. Het is aan ontwikkelaar van de Toepassing op wat zij in het geval van buffer leeg willen doen. 2.5.3 gebruikt de grootte van de spelbuffer bij buffer lege situatie.
 
@@ -256,24 +257,24 @@ De belangrijke nieuwe functies die zijn uitgebracht in Android 2.5.1.
 
 * **Prestatieverbeteringen -** De nieuwe TVSDK 2.5.1-architectuur biedt een aantal prestatieverbeteringen. Gebaseerd op statistieken van een derdebenchmarkingsstudie, verstrekt de nieuwe architectuur een 5x vermindering van starttijd en 3.8x minder gelaten vallen kaders in vergelijking met het industriegemiddelde:
 
-* **Instant on for VOD en live -** Wanneer u instant on inschakelt, initialiseert de TVSDK en buffert deze media voordat het afspelen wordt gestart. Omdat u meerdere MediaPlayerItemLoader-instanties tegelijk op de achtergrond kunt starten, kunt u meerdere streams bufferen. Wanneer een gebruiker het kanaal wijzigt en de stream correct is gebufferd, wordt het afspelen op het nieuwe kanaal onmiddellijk gestart. TVSDK 2.5.1 ondersteunt ook Instant On voor **live** streams. De live streams worden opnieuw gebufferd wanneer het live venster wordt verplaatst.
+* **Onmiddellijk aan voor VOD en levend -** Wanneer u onmiddellijk toelaat, initialiseert TVSDK en buffert media alvorens playback begint. Omdat u meerdere MediaPlayerItemLoader-instanties tegelijk op de achtergrond kunt starten, kunt u meerdere streams bufferen. Wanneer een gebruiker het kanaal wijzigt en de stream correct is gebufferd, wordt het afspelen op het nieuwe kanaal onmiddellijk gestart. TVSDK 2.5.1 biedt ook ondersteuning voor de streams Instant On voor **live**. De live streams worden opnieuw gebufferd wanneer het live venster wordt verplaatst.
 
 * **Verbeterde logica ABR -** De nieuwe logica ABR is gebaseerd op bufferlengte, snelheid van verandering van bufferlengte, en gemeten bandbreedte. Dit zorgt ervoor dat ABR het juiste beetjetarief kiest wanneer de bandbreedte fluctueert en ook het aantal tijden optimaliseert de bitsnelheidschakelaar eigenlijk door het tarief te controleren waarbij de bufferlengte verandert.
 
 * **Gedeeltelijk segment downloaden/subsegmentatie -** TVSDK verkleint de grootte van elk fragment verder, zodat het afspelen zo snel mogelijk kan worden gestart. Het fragment moet om de twee seconden een keyframe hebben.
 
-* **Lazy en resolutie -** TVSDK wacht niet op het oplossen van niet-preroll advertenties voordat het afspelen wordt gestart, waardoor de opstarttijd afneemt. API&#39;s zoals zoeken en spelen met truc zijn nog steeds niet toegestaan totdat alle advertenties zijn opgelost. Dit is van toepassing op VOD stromen die met CSAI worden gebruikt. Bewerkingen zoals zoeken en vooruitspoelen zijn niet toegestaan tot de advertentiesolutie is voltooid. Voor live streams kan deze functie niet worden ingeschakeld voor het corrigeren van advertenties tijdens een live gebeurtenis.
+* **Lazy ad resolution -** TVSDK wacht niet op resolutie van niet pre-preroll advertenties alvorens playback te beginnen, zo verminderend de starttijd. API&#39;s zoals zoeken en spelen met truc zijn nog steeds niet toegestaan totdat alle advertenties zijn opgelost. Dit is van toepassing op VOD stromen die met CSAI worden gebruikt. Bewerkingen zoals zoeken en vooruitspoelen zijn niet toegestaan tot de advertentiesolutie is voltooid. Voor live streams kan deze functie niet worden ingeschakeld voor het corrigeren van advertenties tijdens een live gebeurtenis.
 
-* **Blijvende netwerkverbindingen -** Met deze functie kan TVSDK een interne lijst met permanente netwerkverbindingen maken en opslaan. Deze verbindingen worden opnieuw gebruikt voor veelvoudige verzoeken, eerder dan het openen van een nieuwe verbinding voor elk netwerkverzoek en dan het daarna vernietigen. Dit verhoogt de efficiëntie en verlaagt de latentie in de netwerkcode, wat resulteert in snellere afspeelprestaties.
-Wanneer TVSDK een verbinding opent, vraagt het de server om een *levend* verbinding. Dit type verbinding wordt mogelijk niet door alle servers ondersteund. In dat geval wordt TVSDK opnieuw gebruikt voor het maken van een verbinding voor elk verzoek. Bovendien heeft TVSDK, terwijl permanente verbindingen standaard zijn ingeschakeld, nu een configuratieoptie zodat toepassingen de permanente verbindingen desgewenst kunnen uitschakelen.
+* **Blijvende netwerkverbindingen - Met** deze functie kan TVSDK een interne lijst met permanente netwerkverbindingen maken en opslaan. Deze verbindingen worden opnieuw gebruikt voor veelvoudige verzoeken, eerder dan het openen van een nieuwe verbinding voor elk netwerkverzoek en dan het daarna vernietigen. Dit verhoogt de efficiëntie en verlaagt de latentie in de netwerkcode, wat resulteert in snellere afspeelprestaties.
+Wanneer TVSDK een verbinding opent, vraagt het de server om een *keep-live* verbinding. Dit type verbinding wordt mogelijk niet door alle servers ondersteund. In dat geval wordt TVSDK opnieuw gebruikt voor het maken van een verbinding voor elk verzoek. Bovendien heeft TVSDK, terwijl permanente verbindingen standaard zijn ingeschakeld, nu een configuratieoptie zodat toepassingen de permanente verbindingen desgewenst kunnen uitschakelen.
 
-* **Parallelle download: het** gelijktijdig downloaden van video en audio in plaats van in serie vermindert de opstartvertraging. Met deze functie kunnen HLS Live- en VOD-bestanden worden afgespeeld, optimaliseert u het beschikbare bandbreedtegebruik van een server, vermindert u de kans dat u in situaties met bufferonderbreking terechtkomt en minimaliseert u de wachttijd tussen downloaden en afspelen.
+* **Parallelle download - Het** downloaden van video en audio parallel in plaats van in reeks vermindert opstartvertragingen. Met deze functie kunnen HLS Live- en VOD-bestanden worden afgespeeld, optimaliseert u het beschikbare bandbreedtegebruik van een server, vermindert u de kans dat u in situaties met bufferonderbreking terechtkomt en minimaliseert u de wachttijd tussen downloaden en afspelen.
 
-* **Parallel en gedownload—** TVSDK prefetches adverteren parallel aan het afspelen van de inhoud voordat de advertentie wordt afgebroken, zodat advertenties en inhoud naadloos kunnen worden afgespeeld.
+* **Parallel en gedownload -** TVSDK-prefetches worden parallel aan het afspelen van de inhoud geplaatst voordat de advertentie wordt afgebroken, zodat advertenties en inhoud naadloos kunnen worden afgespeeld.
 
 * **Afspelen**
 
-* **MP4-inhoud afspelen -** korte MP4-clips hoeven niet opnieuw te worden getranscodeerd om te worden afgespeeld in TVSDK.
+* **MP4-inhoud afspelen -** MP4-korte clips hoeven niet opnieuw te worden getranscodeerd om te worden afgespeeld in TVSDK.
 
    >[!NOTE]
    >
@@ -293,26 +294,26 @@ Wanneer TVSDK een verbinding opent, vraagt het de server om een *levend* verbind
 
 * **Workflowondersteuning**
 
-   * **Integratie van directe facturering -** Dit stuurt factureringsgegevens naar de Adobe Analytics-backend, die door Adobe Primetime is gecertificeerd voor streams die door de klant worden gebruikt.
+   * **Directe integratie van facturering -** Dit verzendt factureringsmetriek naar Adobe Analytics backend, die door Adobe Primetime voor stromen wordt verklaard die door de klant worden gebruikt.
 
    TVSDK verzamelt automatisch meetgegevens, met inachtneming van het verkoopcontract van de klant, om periodieke gebruiksrapporten te genereren die voor factureringsdoeleinden worden vereist. Bij elke streamstartgebeurtenis gebruikt TVSDK de API voor het invoegen van Adobe Analytics-gegevens om factuurmetriek, zoals inhoudssoort, voor het invoegen ingeschakelde vlaggen en voor het drm ingeschakelde vlaggen - gebaseerd op de duur van de factureerbare stream - naar de Adobe Analytics Primetime-rapportsuite te verzenden. Dit heeft geen invloed op of wordt niet opgenomen in de eigen Adobe Analytics-rapportreeksen of serveraanroepen van de klant. Op verzoek wordt dit gebruiksrapport voor facturering periodiek naar klanten verzonden. Dit is de eerste fase van de factureringsfunctie die alleen gebruiksfacturering ondersteunt. Het kan worden gevormd gebaseerd op het verkoopcontract gebruikend APIs die in de documentatie worden beschreven. Deze functie is standaard ingeschakeld. Raadpleeg het voorbeeld voor de referentiespeler als u deze functie wilt uitschakelen.
 
-   * **Verbeterde failover-ondersteuning -** Aanvullende strategieën die zijn geïmplementeerd om het afspelen zonder onderbreking voort te zetten, ondanks fouten van hostservers, afspeelbestanden en segmenten.
+   * **Verbeterde failover-ondersteuning -** Aanvullende strategieën die zijn geïmplementeerd om het afspelen zonder onderbreking voort te zetten, ondanks fouten met hostservers, afspeelbestanden en segmenten.
 
 
 * **Reclame**
 
-   * **Moat Integration -** Ondersteuning voor meting van de weergavemogelijkheden van advertenties vanuit Mat.
+   * **Maat Integration -** Ondersteuning voor meting van de weergavemogelijkheden van advertenties vanuit Mat.
 
    * **Companion banners -** Companion banners worden naast een lineaire advertentie weergegeven en worden vaak ook na afloop van de advertentie weergegeven in de weergave. Deze banners kunnen van het type html (een HTML-fragment) of iframe (een URL naar een iframe-pagina) zijn.
 
 * **Analyse**
 
-   * **VHL 2.0 -** Dit is de nieuwste geoptimaliseerde VHL-integratie (Video Heartbeats Library) voor automatische verzameling van gebruiksgegevens voor Adobe Analytics. De complexiteit van de API&#39;s is verminderd om de implementatie te vereenvoudigen. Download de VHL-bibliotheek [v2.0.0 voor Android](https://github.com/Adobe-Marketing-Cloud/video-heartbeat-v2/releases) en extraheer het JAR-bestand in de map libs.
+   * **VHL 2.0 -** Dit is de recentste geoptimaliseerde Video Heartbeats Library (VHL) integratie voor automatische inzameling van gebruiksgegevens voor Adobe Analytics. De complexiteit van de API&#39;s is verminderd om de implementatie te vereenvoudigen. Download de VHL-bibliotheek [v2.0.0 voor Android](https://github.com/Adobe-Marketing-Cloud/video-heartbeat-v2/releases) en extraheer het JAR-bestand in de map libs.
 
 * **SizeAvailableEventListener**
 
-   * `getHeight()` en `getWidth()` methoden of `SizeAvailableEvent` retourneert nu uitvoer in hoogte en breedte. De beeldverhouding kan als volgt worden berekend:
+   * `getHeight()` en  `getWidth()` methoden van  `SizeAvailableEvent` zullen nu uitvoer in hoogte en breedte retourneren. De beeldverhouding kan als volgt worden berekend:
 
       ```java
       SizeAvailableEvent e;
@@ -329,7 +330,7 @@ Wanneer TVSDK een verbinding opent, vraagt het de server om een *levend* verbind
 
 * **Cookies**
 
-   * Android TVSDK ondersteunt nu toegang tot JAVA-cookies die zijn opgeslagen in CookieStore van de Android-toepassing. Een callback API (onCookiesUpdated) wordt verstrekt om te registreren wanneer een nieuwe Koekje als deel van **reeks-Koekjesantwoordkopbal** komt. Deze cookies zijn beschikbaar als een lijst met HttpCookie(s) die voor een ander URI/domein wordt gebruikt door deze cookie-waarden in te stellen op die specifieke URI/domein met gebruik van CookieStore. De cookie-waarden in TVSDK worden ook bijgewerkt met de CookieStore-API voor toevoegen.
+   * Android TVSDK ondersteunt nu toegang tot JAVA-cookies die zijn opgeslagen in CookieStore van de Android-toepassing. Een callback API (onCookiesUpdated) wordt verstrekt om te registreren wanneer een nieuwe Cookie als deel van **reeks-Cookie** de kopbal van de Reactie komt. Deze cookies zijn beschikbaar als een lijst met HttpCookie(s) die voor een ander URI/domein wordt gebruikt door deze cookie-waarden in te stellen op die specifieke URI/domein met gebruik van CookieStore. De cookie-waarden in TVSDK worden ook bijgewerkt met de CookieStore-API voor toevoegen.
 
 ## Eigenschappenmatrix {#feature-matrix}
 
@@ -514,7 +515,7 @@ In deze sectie wordt een overzicht gegeven van het probleem dat is opgelost in T
 
 * ZD #31533 - Audio afspelen op Android nadat de app naar de achtergrond is verzonden.
 
-   * Toegevoegde `enableAudioPlaybackInBackground` API van MediaPlayer die met &#39;True&#39; als argument (als speler zich in de status PREPARED bevindt) moet worden aangeroepen om het afspelen van audio mogelijk te maken wanneer de toepassing op de achtergrond wordt uitgevoerd.
+   * Toegevoegde `enableAudioPlaybackInBackground` API van MediaPlayer die met &quot;Waar&quot;als argument (wanneer de speler in de VOORBEREIDENDE staat is) zou moeten worden geroepen om playback van audio toe te laten wanneer app op achtergrond is.
 
 **Android TVSDK 2.5.5**
 
@@ -715,7 +716,7 @@ WebViewDebbuging wordt geplaatst aan Vals door gebrek. Als u foutopsporing wilt 
    * 4K-ondersteuning is nog niet aanwezig
    * Ondersteuning van ID3-tags is niet geverifieerd
 
-* Voor gebeurtenissen voor advertentievoortgang weerspiegelt de tijdlijnbalk mogelijk niet de 100% nauwkeurige en afspeeltijd. Als tussenoplossing kunt u de voltooiing van het afspelen van de advertentie en de gebruikersinterface voor verschillende doeleinden kennen, zoals het bijwerken van de tijdlijnbalk, het verwijderen van en verwante gebruikersinterface, enz. `adcompleteevent`
+* Voor gebeurtenissen voor advertentievoortgang weerspiegelt de tijdlijnbalk mogelijk niet de 100% nauwkeurige en afspeeltijd. Als tussenoplossing kunt u `adcompleteevent` gebruiken om te weten wat de voltooiing van het afspelen van de advertentie is en de gebruikersinterface bijwerken voor verschillende doeleinden, zoals het bijwerken van de tijdlijnbalk, het verwijderen van en verwante gebruikersinterface, enz.
 * Vast en de vraag die van VMAP is teruggekeerd respecteert niet de just-in-Time lookahead positie.
 
 **Android TVSDK 2.5.6**
@@ -755,7 +756,7 @@ Deze versie van TVSDK heeft de volgende problemen:
 * [Systeemvereisten](https://docs.adobe.com/content/help/en/primetime/programming/tvsdk-3x-android-prog/introduction/android-3x-requirements.html)
 * [TVSDK 3.10 voor Android-programmeergids](https://docs.adobe.com/content/help/en/primetime/programming/tvsdk-3x-android-prog/introduction/android-3x-overview-prod-audience-guide.html)
 * [TVSDK Android Javadoc voor API-naslaggids](https://help.adobe.com/en_US/primetime/api/psdk/javadoc3.5/index.html)
-* [TVSDK Android C++ API-document](https://help.adobe.com/en_US/primetime/api/psdk/cpp_3.5/namespaces.html) - Elke Java-klasse heeft een corresponderende C++-klasse en de C++-documentatie bevat meer verklarend materiaal dan de JavaDocs. Raadpleeg daarom de C++-documentatie voor een beter begrip van de Java API.
+* [TVSDK Android C++ API Document](https://help.adobe.com/en_US/primetime/api/psdk/cpp_3.5/namespaces.html)  - Elke Java-klasse heeft een corresponderende C++-klasse en de C++-documentatie bevat meer verklarend materiaal dan de JavaDocs. Raadpleeg daarom de C++-documentatie voor een beter begrip van de Java API.
 * [TVSDK 1.4 tot 2.5 voor migratiehandleiding voor Android (Java)](https://helpx.adobe.com/primetime/migration-guides/tvsdk-14-25-android.html)
-* Zie het `Application_Changes_for_Screen_On_Off.pdf` bestand dat is opgenomen in de build voor informatie over het afhandelen van schermscenario&#39;s aan/uit.
-* Zie de volledige Help-documentatie op de pagina Learn &amp; Support [van](https://helpx.adobe.com/support/primetime.html) Adobe Primetime.
+* Zie het `Application_Changes_for_Screen_On_Off.pdf`-bestand dat is opgenomen in de build voor informatie over het afhandelen van scenario&#39;s voor het in- en uitschakelen van schermen.
+* Zie de volledige Help-documentatie op de pagina [Adobe Primetime Learn &amp; Support](https://helpx.adobe.com/support/primetime.html).
