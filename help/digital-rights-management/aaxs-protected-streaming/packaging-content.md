@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Inhoud verpakken{#packaging-content}
 
-Bij het verpakken van inhoud moet de URL van de licentieserver worden opgegeven. De URL van de Adobe Access-server heeft de volgende indeling:
+Bij het verpakken van inhoud moet de URL van de licentieserver worden opgegeven. De Adobe Access Server URL heeft de volgende notatie:
 
 ```
 http(s):// license-server-host:port/flashaccessserver/tenant-name
