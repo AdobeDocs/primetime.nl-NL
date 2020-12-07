@@ -17,7 +17,7 @@ ht-degree: 0%
 ---
 
 
-# TVSDK-conversie - 1.3 naar 2.0 voor JavaScript {#tvsdk-conversion-to-for-javascript}
+# TVSDK-conversie - 1,3 naar 2,0 voor JavaScript {#tvsdk-conversion-to-for-javascript}
 
 Veel methode-handtekeningen en API-elementnamen zijn gewijzigd voor 2.0. Bekijk deze tabellen om alle details van de API-wijziging te bekijken.
 
@@ -25,7 +25,7 @@ Veel methode-handtekeningen en API-elementnamen zijn gewijzigd voor 2.0. Bekijk 
 
 De commentaren in methodedocumentatie stellen de handtekening voor callbacks voor die u moet uitvoeren.
 
-Voor JavaScript is de API-syntaxis gebaseerd op de web-id. Voor een TVSDK-interface worden de methodenamen *methodName*() genoemd. Voor methodes die door uw toepassing moeten worden uitgevoerd, wordt een lees-schrijfattribuut genoemd ** methodNameCallbackFunc toegevoegd aan de interface en uw toepassing zou het moeten plaatsen om aan een functie te richten die de methode uitvoert. Bijvoorbeeld:
+Voor JavaScript is de API-syntaxis gebaseerd op de web-id. Voor een interface van TVSDK, worden de methodenamen genoemd *methodName* (). Voor methodes die door uw toepassing moeten worden uitgevoerd, wordt een lees-schrijfattribuut genoemd *methodName* CallbackFunc toegevoegd aan de interface en uw toepassing zou het moeten plaatsen om aan een functie te richten die de methode uitvoert. Bijvoorbeeld:
 
 ```shell
 // An app implementable interface
@@ -92,12 +92,12 @@ Tabellen in dit onderwerp:
    <th>1.3 API</th> 
   </tr> 
   <tr> 
-   <td><p> <strong>TimedMetadata</strong>: interface TimedMetadata {<br /> const unsigned short METADATA_TYPE_TAG = 0; <br /> const unsigned short METADATA_TYPE_ID3 = 1; <br /> kenmerk readonly, kenmerk unsigned short type; <br /> kenmerk read-only, lange tijd;<br /> kenmerk readonly, DomString-id;<br /> alleen-lezen kenmerk DomString-naam;<br /> kenmerk readonly, DomString-inhoud; <br /> metagegevens kenmerk kenmerk kenmerk Alleen-lezen;<br /> }; </p> </td> 
-   <td><p>interface TimedMetadata {<br /> const unsigned short METADATA_TYPE_TAG = 0;<br /> const unsigned short METADATA_TYPE_ID3 = 1;<br /> kenmerk readonly, kenmerk unsigned short metadataType;<br /> kenmerk read-only, lange tijd;<br /> kenmerk read-only long id;<br /> alleen-lezen kenmerk DomString-naam;<br /> <br /> metagegevens kenmerk kenmerk kenmerk Alleen-lezen;<br /> };</p> </td> 
+   <td><p> <strong>TimedMetadata</strong>: interface TimedMetadata {<br /> const unsigned short METADATA_TYPE_TAG = 0;  <br /> const unsigned short METADATA_TYPE_ID3 = 1;  <br /> kenmerk readonly, kenmerk unsigned short type;  <br /> kenmerk readOnly lange tijd;kenmerk <br /> readonly DomString id;kenmerk <br /> readonly DomString name;kenmerk <br /> readonly DomString content;  <br /> readOnly-metagegevens kenmerk Object;<br /> }; </p> </td> 
+   <td><p>interface TimedMetadata {<br /> const unsigned short METADATA_TYPE_TAG = 0 ;<br /> const unsigned short METADATA_TYPE_ID3 = 1 ;<br /> readonly attribute unsigned short metadataType;<br /> readonly attribute long time;<br /> readonly attribute long id;<br /> readonly attribute Dom name;<br /> <br /> read-only attributenObjectemetagegevens;<br /> };</p> </td> 
   </tr> 
   <tr> 
    <td><strong>TimedMetadataList</strong>: (Geen wijziging voor 2.0)</td> 
-   <td><p>interface TimedMetadataList {<br /> readonly attributen unsigned long length;<br /> getter TimedMetadata(unsigned long index);<br /> };</p> </td> 
+   <td><p>interface TimedMetadataList {<br /> kenmerk read-only lange lengte zonder teken;<br /> getter TimedMetadata(unsigned long index);<br /> };</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -111,7 +111,7 @@ Tabellen in dit onderwerp:
    <th>1.3 API</th> 
   </tr> 
   <tr> 
-   <td><p>Interface AdSignalingMode { <br /> const unsigned short MODE_DEFAULT, <br /> const unsigned short MODE_MANIFEST_CUES , <br /> const unsigned short MODE_SERVER_MAP , <br /> const unsigned short MODE_CUSTOM_RANGES <br /> };</p> </td> 
+   <td><p>Interface AdSignalingMode { <br /> const unsigned short MODE_DEFAULT, <br /> const unsigned short MODE_MANIFEST_CUES, <br /> const unsigned short MODE_SERVER_MAP, <br /> const unsigned short MODE_CUSTOM_RANGES <br /> };</p> </td> 
    <td>Deze vervangt MetadataKeys::MANIFEST_CUES key.</td> 
   </tr> 
  </tbody> 
@@ -126,7 +126,7 @@ Tabellen in dit onderwerp:
    <th>1.3 API</th> 
   </tr> 
   <tr> 
-   <td><p>Interface AdvertisingMetadata { <br /> -kenmerkmodus AdSignalingMode; <br /> kenmerk AdBreakWatchedPolicy enBreakAsWatched; <br /> attribute boolean livePreroll; <br /> attribute boolean delayAdLoading ; <br /> };</p> </td> 
+   <td><p>Interface AdvertisingMetadata { <br /> attribuut AdSignalingMode wijze; <br />-kenmerk AdBreakWatchedPolicy enBreakAsWatched; <br /> attribuut boolean livePreroll; <br /> attribute boolean delayAdLoading; <br /> };</p> </td> 
    <td>Deze functionaliteit is afkomstig van<p>MetadataKeys::ADVERTISING_METADATA</p> key.</td> 
   </tr> 
  </tbody> 
@@ -141,7 +141,7 @@ Tabellen in dit onderwerp:
    <th>1.3 API</th> 
   </tr> 
   <tr> 
-   <td><p>Interface CustomRangeMetadata { <br /> const unsigned short TYPE_MARK_RANGE; <br /> const unsigned short TYPE_DELETE_RANGE; <br /> const unsigned short TYPE_REPLACE_RANGE; <br /> kenmerk zonder teken kort type; <br /> attribuut boolean adjustSeekPosition; <br /> kenmerk TimeRangeList timeRangeList; <br /> };</p> </td> 
+   <td><p>Interface CustomRangeMetadata { <br /> const unsigned short TYPE_MARK_RANGE; <br /> const unsigned short TYPE_DELETE_RANGE; <br /> const unsigned short TYPE_REPLACE_RANGE; <br />-kenmerk korte type zonder teken; <br /> attribuut boolean adjustSeekPosition; <br />-kenmerk TimeRangeList timeRangeList; <br /> };</p> </td> 
    <td>(Nieuw voor 2.0)</td> 
   </tr> 
  </tbody> 
@@ -156,7 +156,7 @@ Tabellen in dit onderwerp:
    <th>1.3 API</th> 
   </tr> 
   <tr> 
-   <td><p>interface ReplaceTimeRange {, <br /> kenmerk unsigned long begin; <br /> kenmerk read-only, kenmerk unsigned long end; <br /> kenmerk unsigned long duration; <br /> kenmerk unsigned long replaceDuration; <br /> };</p> </td> 
+   <td><p>interface ReplaceTimeRange { <br /> attributen unsigned long begin; <br /> kenmerk Alleen-lezen, lange-eindzijde zonder teken; <br /> kenmerk unsigned long duration; <br />-kenmerk unsigned long replaceDuration; <br /> };</p> </td> 
    <td>(Nieuw voor 2.0)</td> 
   </tr> 
  </tbody> 
@@ -171,7 +171,7 @@ Tabellen in dit onderwerp:
    <th>1.3 API</th> 
   </tr> 
   <tr> 
-   <td><p>Interface Placement { <br /> const unsigned short TYPE_MID_ROLL; <br /> const unsigned short TYPE_PRE_ROLL; <br /> const unsigned short TYPE_POST_ROLL; <br /> const unsigned short TYPE_SERVER_MAP; <br /> const unsigned short TYPE_CUSTOM_RANGE;<br /> kenmerk readonly, kenmerk unsigned short type; <br /> kenmerk read-only, lange tijd; <br /> kenmerk read-only, lange duur; <br /> const unsigned short MODE_DEFAULT; <br /> const unsigned short MODE_INSERT; <br /> const unsigned short MODE_REPLACE; <br /> const unsigned short MODE_DELETE; <br /> const unsigned short MODE_MARK; <br /> const unsigned short MODE_FREE_REPLACE; <br /> kenmerk readonly, niet-ondertekende korte modus; <br /> alleen-lezen kenmerk TimeRange; <br /> };</p> </td> 
+   <td><p>Interface Placement { <br /> const unsigned short TYPE_MID_ROLL; <br /> const unsigned short TYPE_PRE_ROLL; <br /> const unsigned short TYPE_POST_ROLL; <br /> const unsigned short TYPE_SERVER_MAP; <br /> const unsigned short TYPE_CUSTOM_RANGE;<br /> readonly attribute unsigned short type; <br /> kenmerk read-only lange tijd; <br /> kenmerk read-only lange duration; <br /> const unsigned short MODE_DEFAULT; <br /> const unsigned short MODE_INSERT; <br /> const unsigned short MODE_REPLACE; <br /> const unsigned short MODE_DELETE; <br /> const unsigned short MODE_MARK; <br /> const unsigned short MODE_FREE_REPLACE; <br /> kenmerk Alleen-lezen, korte modus zonder teken; <br /> readonly attribute TimeRange range; <br /> };</p> </td> 
    <td>(Nieuw voor 2.0)</td> 
   </tr> 
  </tbody> 
@@ -186,7 +186,7 @@ Tabellen in dit onderwerp:
    <th>1.3 API</th> 
   </tr> 
   <tr> 
-   <td><p>interface Opportunity { <br /> readonly attribute DomString id; <br /> kenmerk Alleen-lezen plaatsing; <br /> alleen-lezen-kenmerk, Objectinstellingen; <br /> kenmerk Alleen-lezen Object customParameters; <br /> }; </p> </td> 
+   <td><p>interface Opportunity { <br /> readonly attribuut DomString id; <br /> Alleen-lezen kenmerkplaatsing; <br /> alleen-lezen kenmerkobjectinstellingen; <br /> kenmerk Alleen-lezen Object customParameters; <br /> }; </p> </td> 
    <td>(Nieuw voor 2.0)</td> 
   </tr> 
  </tbody> 
@@ -201,13 +201,13 @@ Tabellen in dit onderwerp:
    <th>1.3 API</th> 
   </tr> 
   <tr> 
-   <td><p>interface Reservation { <br /> readonly attribute TimeRange; <br /> kenmerk read-only, lange hold; <br /> }; </p> </td> 
+   <td><p>interface Reservation { <br /> readonly attribuut TimeRange waaier; <br /> kenmerk read-only eigenschap long hold; <br /> }; </p> </td> 
    <td> (Nieuw voor 2.0)</td> 
   </tr> 
  </tbody> 
 </table>
 
-### Tijdlijn / TijdlijnItem / Tijdlijnmarkeerteken {#timeline-timelineitem-timelinemarker}
+### Tijdlijn / Tijdlijnitem / Tijdlijnmarkeerteken {#timeline-timelineitem-timelinemarker}
 
 <table> 
  <tbody> 
@@ -216,16 +216,16 @@ Tabellen in dit onderwerp:
    <th>1.3 API</th> 
   </tr> 
   <tr> 
-   <td><p><strong>Tijdlijn</strong>: interface Timeline <br /> {readonly attribute TimelineMarkerList timelineMarkers; <br /> alleen-lezen kenmerk TimelineItemList timelineItems; <br /> double convertToLocalTime( dubbele tijd); <br /> double convertToVirtualTime( dubbele tijd); <br /> };</p> </td> 
+   <td><p><strong>Tijdlijn</strong>: interfacetijdlijn  <br /> { alleen-lezen kenmerk TimelineMarkerList tijdlijnmarkeertekens;  <br /> alleen-lezen kenmerk TimelineItemList timelineItems;  <br /> double convertToLocalTime( dubbele tijd);  <br /> double convertToVirtualTime( dubbele tijd);  <br /> };</p> </td> 
    <td><p>interface Timeline {<br /> readonly attribute TimelineMarkerList timelineMarkers;<br /> <br /> <br /> <br /> };</p> </td> 
   </tr> 
   <tr> 
-   <td><p> <strong>TimelineItem</strong>: interface TimelineItem:<br /> TimelineMarker {<br /> alleen-lezen kenmerk long id; <br /> kenmerk readonly, TimeRange virtualRange; <br /> kenmerk readonly TimeRange localRange; <br /> read-only, kenmerk booleaans gecontroleerd; <br /> read-only, kenmerk boolean temporary; <br /> }; </p> </td> 
+   <td><p> <strong>TimelineItem</strong>: interface TimelineItem:<br /> TimelineMarker {kenmerk <br /> read-only long id;  <br /> kenmerk readonly, TimeRange virtualRange;  <br /> kenmerk readonly TimeRange localRange;  <br /> read-only, kenmerk booleaans gecontroleerd;  <br /> read-only, kenmerk boolean temporary;  <br /> }; </p> </td> 
    <td>(Nieuw voor 2.0)</td> 
   </tr> 
   <tr> 
    <td><strong>Tijdlijnmarkeerteken</strong>: (Geen wijziging voor 2.0)</td> 
-   <td><p>kenmerk double-time van interface TimelineMarker {<br /> alleen-lezen;<br /> kenmerk read-only dubbele duur;<br /> };</p> </td> 
+   <td><p>interface TimelineMarker {<br /> read-only attributen double time;<br /> readonly attributen double duration;<br /> };</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -239,8 +239,8 @@ Tabellen in dit onderwerp:
    <th>1.3 API</th> 
   </tr> 
   <tr> 
-   <td><p>interface AdBreak {<br /><br /> readonly <br /> <br /> kenmerk double duration;<br /> alleen-lezen kenmerk AdList-advertenties;<br /> <br /> <br /> alleen-lezen kenmerk AdInsertionType insertType;<br /> }; </p> </td> 
-   <td><p>interface AdBreak {<br /> readonly attribuut double time;<br /> kenmerk readonly double replaceDuration;<br /> <br /> kenmerk read-only dubbele duur;<br /> alleen-lezen kenmerk AdList enList;<br /> <br /> readOnly-kenmerk DomString-gegevens;<br /> <br /> }; </p> </td> 
+   <td><p>interface AdBreak {<br /> <br /> <br /> <br /> kenmerk read-only double duration;<br /> kenmerk readonly ADD;<br /> <br /> <br /> kenmerk AdInsertionType insertType;<br /> }; </p> </td> 
+   <td><p>interface AdBreak {<br /> read-only attribuut double time;<br /> readonly attribute double replaceDuration;<br /> <br /> readonly attribute double duration;<br /> readonly attribute AdList adList;<br /> <br /> readonly attribute DomString data;<br /> <br /> }; </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -254,27 +254,27 @@ Tabellen in dit onderwerp:
    <th>1.3 API</th> 
   </tr> 
   <tr> 
-   <td><p> <strong>Advertentie</strong>: interface Ad {<br /> readonly attribute AdAsset primaryAsset;<br /> kenmerk Alleen-lezen: AdAssetList companionAssets;<br /> <br /> kenmerk read-only dubbele duur;<br /> kenmerk readonly, DomString-id;<br /> const unsigned short ADTYPE_LINEAR = 0;<br /> const unsigned short ADTYPE_NONLINEAR = 1;<br /> <br /> kenmerk readonly, kenmerk unsigned short adType;<br /> alleen-lezen kenmerk AdInsertionType enInsertionType; <br /> <br /> kenmerk readonly boolean klikbaar; <br /> alleen-lezen kenmerk boolean isCustomAdMarker;<br /> }; </p> </td> 
-   <td><p>interface Ad {<br /> readonly attribute AdAsset primaryAsset;<br /> kenmerk Alleen-lezen: AdAssetList companionAssets;<br /> <br /> kenmerk read-only dubbele duur;<br /> kenmerk readonly, DomString-id;<br /> const unsigned short ADTYPE_LINEAR = 0;<br /> const unsigned short ADTYPE_NONLINEAR = 1;<br /> <br /> kenmerk readonly, kenmerk unsigned short type;<br /> alleen-lezen kenmerk AdInsertionType insertType; <br /> alleen-lezen kenmerkobjectcontrole;<br /> <br /> <br /> }; </p> </td> 
+   <td><p> <strong>Advertentie</strong>: interface Ad {<br /> readonly attribute AdAsset primaryAsset;<br /> readonly attribute AdAssetList companionAssets;<br /> <br /> readonly attribute double duration;<br /> readonly attribute DomString id;<br /> const unsigned short ADTYPE_LINEAR = 0;<br /> const unsigned short ADTYPE_NONLINEAR = 1;<br /> <br /> readonly attribute unsigned short adType;<br /> readonly attribuut AdInsertionType adInsertionType;  <br /> <br /> kenmerk readonly boolean klikbaar;  <br /> alleen-lezen kenmerk boolean isCustomAdMarker;<br /> }; </p> </td> 
+   <td><p>interface Ad {<br /> read-only attribute AdAsset primaryAsset;<br /> readonly attribute AdAssetList companionAssets;<br /> <br /> readonly attribute double duration;<br /> readonly attribute DomString id;<br /> const unsigned short ADTYPE_LINEAR = 0;<br /> const unsigned short ADTYPE_TYPE_TYPE NONLINEAR = 1 ;<br /> <br /> kenmerk read-only type unsigned short type;<br /> kenmerk read-only AdInsertionType insertType; <br /> Alleen-lezen kenmerkobjecttracering;<br /> <br /> <br /> }; </p> </td> 
   </tr> 
   <tr> 
    <td><strong>AdAsset</strong>: (Geen wijziging voor 2.0)</td> 
-   <td><p>interface AdAsset {<br /> readonly attribute DomString id;<br /> kenmerk read-only dubbele duur;<br /> kenmerk Alleen-lezen MediaResource-bron;<br /> alleen-lezen kenmerk AdClick enClick;<br /> metagegevens kenmerk kenmerk kenmerk Alleen-lezen;<br /> };</p> </td> 
+   <td><p>interface AdAsset {<br /> read-only attribuut DomString id;<br /> readonly attribuut double duration;<br /> readonly attribute MediaResource middel;<br /> readonly attribute AdClick enClick;<br /> readonly attribuut Object metadata;<br /> };</p> </td> 
   </tr> 
   <tr> 
    <td><strong>AdClick</strong>: (Geen wijziging voor 2.0)</td> 
-   <td><p>interface AdClick {<br /> readonly attribute DomString id;<br /> kenmerk readonly, DomString-titel;<br /> alleen-lezen kenmerk DomString-url;<br /> };</p> </td> 
+   <td><p>interface AdClick {<br /> read-only attributen DomString id;<br /> readonly attributen DomString titel;<br /> read-only attributen DomString url;<br /> };</p> </td> 
   </tr> 
   <tr> 
    <td><strong>Advertentielijst</strong>: (Geen wijziging voor 2.0)</td> 
-   <td><p>interface AdList {<br /> readonly attribute unsigned long length;<br /> getter Ad (niet-ondertekende lange index);<br /> };</p> </td> 
+   <td><p>interface AdList {<br /> read-only attributen unsigned long length;<br /> getter Ad(unsigned long index);<br /> };</p> </td> 
   </tr> 
   <tr> 
    <td><strong>AdAssetList</strong>: (Geen wijziging voor 2.0)</td> 
-   <td><p>interface AdAssetList {<br /> readonly attribute unsigned long length;<br /> getter AdAsset(unsigned long index);<br /> };</p> </td> 
+   <td><p>interface AdAssetList {<br /> kenmerk read-only lange lengte zonder teken;<br /> getter AdAsset(unsigned long index);<br /> };</p> </td> 
   </tr> 
   <tr> 
-   <td><p><strong>AdBannerAsset</strong>: interface AdBannerAsset: AdAsset<br /> {<br /> readonly attribute int width;<br /> alleen-lezen kenmerk int hoogte;<br /> readOnly, kenmerk DomString staticUrl;<br /> kenmerk readonly, DomString-hoogte;<br /> kenmerk readonly, DomString-breedte;<br /> };</p> </td> 
+   <td><p><strong>AdBannerAsset</strong>: interface AdBannerAsset: AdAsset<br /> {<br /> readonly attribute int width;<br /> readonly attribute int height;<br /> readonly attribute DomString staticUrl;<br /> readonly attribute DomString height;<br /> readonly attribute DomString width;<br /> };</p> </td> 
    <td> Nieuw in 2.0</td> 
   </tr> 
  </tbody> 
@@ -289,15 +289,15 @@ Tabellen in dit onderwerp:
    <th>1.3 API</th> 
   </tr> 
   <tr> 
-   <td><p> <strong>AdBreakTimelineItem</strong>: interface AdBreakTimelineItem: TimelineItem { <br /> alleen-lezen kenmerk AdBreak adBreak; <br /> alleen-lezen kenmerk AdTimelineItemList-items; <br /> }; </p> </td> 
+   <td><p> <strong>AdBreakTimelineItem</strong>: interface AdBreakTimelineItem: TimelineItem {  <br /> readonly attribute AdBreak adBreak;  <br /> alleen-lezen kenmerk AdTimelineItemList-items;  <br /> }; </p> </td> 
    <td> (Nieuw voor 2.0)</td> 
   </tr> 
   <tr> 
-   <td><p><strong>AdTimelineItem</strong>: interface AdTimelineItem : TimelineItem { <br /> alleen-lezen kenmerk AdBreak adBreak; <br /> alleen-lezen kenmerk Advertentie; <br /> }; </p> </td> 
+   <td><p><strong>AdTimelineItem</strong>: interface AdTimelineItem : TimelineItem {  <br /> readonly attribute AdBreak adBreak;  <br /> alleen-lezen kenmerk Advertentie;  <br /> }; </p> </td> 
    <td> (Nieuw voor 2.0)</td> 
   </tr> 
   <tr> 
-   <td><p><strong>AdBreakTimelineItemList</strong>: interface AdBreakTimelineItemList { <br /> alleen-lezen kenmerk lange lengte zonder teken; <br /> getter AdBreakTimelineItem (index zonder teken); <br /> };</p> </td> 
+   <td><p><strong>AdBreakTimelineItemList</strong>: interface AdBreakTimelineItemList {  <br /> readonly attribuut unsigned long length;  <br /> getter AdBreakTimelineItem (index zonder teken);  <br /> };</p> </td> 
    <td> (Nieuw voor 2.0)</td> 
   </tr> 
  </tbody> 
@@ -312,28 +312,28 @@ Tabellen in dit onderwerp:
    <th>1.3 API</th> 
   </tr> 
   <tr> 
-   <td><p>interface AdBreakPolicy {<br /> readonly attribute short AD_BREAK_POLICY_SKIP;<br /> kenmerk read-only, short AD_BREAK_POLICY_PLAY;<br /> kenmerk read-only short AD_BREAK_POLICY_REMOVE;<br /> kenmerk read-only: short AD_BREAK_POLICY_REMOVE_AFTER_PLAY;<br /> };</p> </td> 
-   <td><p> interface AdPolicyConstants {<br /> readonly attribute short AD_BREAK_POLICY_SKIP;<br /> kenmerk read-only, short AD_BREAK_POLICY_PLAY;<br /> kenmerk read-only short AD_BREAK_POLICY_REMOVE;<br /> read-only attribuut short AD_BREAK_POLICY_REMOVE_AFTER_PLAY;}<br /> ..</p> </td> 
+   <td><p>interface AdBreakPolicy {<br /> readonly attribute short AD_BREAK_POLICY_SKIP;<br /> readonly attribute short AD_BREAK_POLICY_PLAY;<br /> readonly attribute short AD_BREAK_POLICY_REMOVE;<br /> readonly attribute short AD_BREAK_POLICY_REMOVE_AFTER LAY;<br /> };</p> </td> 
+   <td><p> interface AdPolicyConstants {<br /> readonly attribute short AD_BREAK_POLICY_SKIP;<br /> readonly attribute short AD_BREAK_POLICY_PLAY;<br /> readonly attribute short AD_BREAK_POLICY_REMOVE;<br /> readonly attribute short AD_BREAK_POLICY_REMOVE_AFTER AFSPELEN;}<br /> ...</p> </td> 
   </tr> 
   <tr> 
-   <td><p> interface AdBreakWatchedPolicy {<br /> readonly attribute short AD_BREAK_AS_WATCHED_ON_BEGIN;<br /> kenmerk read-only short AD_BREAK_AS_WATCHED_ON_END;<br /> kenmerk readonly, short AD_BREAK_AS_WATCHED_NEVER;<br /> }; </p> </td> 
-   <td><p> ...<br /> kenmerk read-only: short AD_BREAK_AS_WATCHED_ON_BEGIN;<br /> kenmerk read-only short AD_BREAK_AS_WATCHED_ON_END;<br /> kenmerk readonly, short AD_BREAK_AS_WATCHED_NEVER;<br /> ...</p> </td> 
+   <td><p> interface AdBreakWatchedPolicy {<br /> readonly attribute short AD_BREAK_AS_WATCHED_ON_BEGIN;<br /> readonly attribute short AD_BREAK_AS_WATCHED_ON_END;<br /> readonly attribute short AD_BREAK_AS_WATCHED_NEVER;<br /> }; </p> </td> 
+   <td><p> ...<br /> alleen-lezen kenmerk short AD_BREAK_AS_WATCHED_ON_BEGIN;<br /> alleen-lezen kenmerk short AD_BREAK_AS_WATCHED_ON_END;<br /> alleen-lezen kenmerk short AD_BREAK_AS_WATCHED_NEVER;<br />..</p> </td> 
   </tr> 
   <tr> 
-   <td><p>interface AdPolicy {<br /> readonly attribute short AD_POLICY_PLAY;<br /> kenmerk read-only: short AD_POLICY_PLAY_FROM_AD_BEGIN;<br /> kenmerk read-only: short AD_POLICY_PLAY_FROM_AD_BREAK_BEGIN; kenmerk read-only: short AD_POLICY_SKIP_TO_NEXT_AD_IN_BREAK;<br /> <br /> kenmerk readonly, short AD_POLICY_SKIP_AD_BREAK;<br /> };</p> </td> 
-   <td><p> ... <br /> read-only attribuut short AD_POLICY_PLAY;<br /> kenmerk read-only: short AD_POLICY_PLAY_FROM_AD_BEGIN;<br /> kenmerk read-only: short AD_POLICY_PLAY_FROM_AD_BREAK_BEGIN;<br /> kenmerk read-only: short AD_POLICY_SKIP_TO_NEXT_AD_IN_BREAK;<br /> kenmerk readonly, short AD_POLICY_SKIP_AD_BREAK;<br /> ...</p> </td> 
+   <td><p>interface AdPolicy {<br /> alleen-lezen kenmerk short AD_POLICY_PLAY;<br /> alleen-lezen kenmerk short AD_POLICY_PLAY_FROM_AD_BEGIN;<br /> alleen-lezen kenmerk short AD_POLICY_PLAY_FROM_AD_BREAK_BEGIN; read-only attribuut short AD_POLICY_SKIP_TO_NEXT_AD_IN_BREAK;<br /> <br /> readonly attribute short AD_POLICY_SKIP_AD_BREAK;<br /> };</p> </td> 
+   <td><p> ... <br /> alleen-lezen kenmerk short AD_POLICY_PLAY;<br /> alleen-lezen kenmerk short AD_POLICY_PLAY_FROM_AD_BEGIN;<br /> alleen-lezen kenmerk short AD_POLICY_PLAY_FROM_AD_BREAK_BEGIN;<br /> alleen-lezen kenmerk short AD_POLICY_SKIP_TO_NEXT_AD_IN_ABREIN K;<br /> alleen-lezen kenmerk short AD_POLICY_SKIP_AD_BREAK;<br /> ...</p> </td> 
   </tr> 
   <tr> 
-   <td><p>interface AdPolicyMode {<br /> readonly attribute short AD_POLICY_MODE_PLAY;<br /> read-only attribuut short AD_POLICY_MODE_SEEK;<br /> read-only attribuut short AD_POLICY_MODE_TRICKPLAY;<br /> };</p> </td> 
-   <td><p> ...<br /> {readonly attribute short AD_POLICY_MODE_PLAY;<br /> read-only attribuut short AD_POLICY_MODE_SEEK;<br /> read-only attribuut short AD_POLICY_MODE_TRICKPLAY;<br /> };</p> </td> 
+   <td><p>interface AdPolicyMode {<br /> alleen-lezen kenmerk short AD_POLICY_MODE_PLAY;<br /> alleen-lezen kenmerk short AD_POLICY_MODE_SEEK;<br /> alleen-lezen kenmerk short AD_POLICY_MODE_TRICKPLAY;<br /> };</p> </td> 
+   <td><p> ...<br /> {readonly attribute short AD_POLICY_MODE_PLAY;<br /> readonly attribute short AD_POLICY_MODE_SEEK;<br /> readonly attribute short AD_POLICY_MODE_TRICKPLAY;<br /> };</p> </td> 
   </tr> 
   <tr> 
-   <td><p>interface AdPolicyInfo {<br /> alleen-lezen kenmerk AdBreakTimelineItemList <br /> en BreakTimelineItems;<br /> alleen-lezen kenmerk AdTimelineItem enTimelineItem;<br /> kenmerk readonly double currentTime;<br /> kenmerk readonly double seekToTime;<br /> kenmerk Alleen-lezen dubbele frequentie;<br /> kenmerk short-mode alleen-lezen; //AdPolicyMode<br /> };</p> </td> 
-   <td><p>interface AdPolicyInfo {<br /> readonly attribute AdBreakPlacementList <br /> en BreakPlacements;<br /> alleen-lezen kenmerk Advertentie;<br /> kenmerk readonly double currentTime;<br /> kenmerk readonly double seekToTime;<br /> kenmerk Alleen-lezen dubbele frequentie;<br /> kenmerk short-mode alleen-lezen; //AdPolicyMode<br /> };</p> </td> 
+   <td><p>interface AdPolicyInfo {<br /> alleen-lezen kenmerk AdBreakTimelineItemList <br /> adBreakTimelineItems;<br /> alleen-lezen kenmerk AdTimelineItem adTimelineItem;<br /> alleen-lezen kenmerk dubbel-currentTime;<br /> alleen-lezen kenmerk dubbel tarief; <br /> kenmerk short mode alleen-lezen; //AdPolicyMode<br /> };<br /></p> </td> 
+   <td><p>interface AdPolicyInfo {<br /> alleen-lezen kenmerk AdBreakPlacementList <br /> adBreakPlacements;<br /> alleen-lezen kenmerk Ad;<br /> alleen-lezen kenmerk double currentTime;<br /> alleen-lezen kenmerk double seekToTime;<br /> alleen-lezen kenmerk double rate;<br /> alleen-kenmerk korte modus; //AdPolicyMode<br /> };</p> </td> 
   </tr> 
   <tr> 
-   <td><p>interface AdPolicySelector {<br /> /**<br /> * AdbreakPolicy selectPolicyForAdBreak(<br /> * AdPolicyInfo enPolicyInfo);<br /> */<br /> attribute Object selectPolicyForAdBreakCallbackFunc;<br /> /**<br /> * AdBreakTimelineItemList selectAdBreaksToPlay(<br /> * AdPolicyInfo enPolicyInfo);<br /> */<br /> attribute Object selectAdBreaksToPlayCallbackFunc;<br /> /**<br /> * AdPolicy selectPolicyForSeekIntoAd(AdPolicyInfo enPolicyInfo);<br /> */<br /> attribute Object selectPolicyForSeekIntoAdCallbackFunc; <br /> /**<br /> * AdBreakWatchedPolicy selectWatchedPolicyForAdBreak(<br /> * AdPolicyInfo adPolicyInfo);<br /> */<br /> attribute Object selectWatchedPolicyForAdBreakCallbackFunc;<br /> };</p> </td> 
-   <td><p>interface AdPolicySelector {<br /> /**<br /> * AdbreakPolicy selectPolicyForAdBreak(<br /> * AdPolicyInfo enPolicyInfo);<br /> */<br /> attribute Object selectPolicyForAdBreakFuncCallback;<br /> /**<br /> * AdBreakPlacementList selectAdBreaksToPlay(<br /> * AdPolicyInfo enPolicyInfo);<br /> */<br /> attribute Object selectAdBreaksToPlayCallback;<br /> /**<br /> * AdPolicy selectPolicyForSeekIntoAd(AdPolicyInfo enPolicyInfo);<br /> */<br /> attribute Object selectPolicyForSeekIntoAdCallback; <br /> /**<br /> * AdBreakAsWatched selectWatchedPolicyForAdBreak(<br /> * AdPolicyInfo enPolicyInfo);<br /> */<br /> attribute Object selectWatchedPolicyForAdBreakCallback;<br /> };</p> </td> 
+   <td><p>interface AdPolicySelector {<br /> /**<br /> * AdbreakPolicy selectPolicyForAdBreak(<br /> * AdPolicyInfo adPolicyInfo);<br /> */<br /> attribute Object selectPolicyForAdBreakCallbackFunc;<br /> /* 6/&gt; * AdBreakTimelineItemList selectAdBreaksToPlay(<br /> * AdPolicyInfo adPolicyInfo);<br /> */<br /> kenmerkobject selectAdBreaksToPlayCallbackFunc;<br /> /**<br /> * Ad Policy selectPolicyForSeekIntoAd(AdPolicyInfo adPolicyInfo);<br /> */<br /> attribute Object selectPolicyForSeekIntoAdCallbackFunc; <br /> /**<br /> * AdBreakWatchedPolicy selectWatchedPolicyForAdBreak(<br /> * AdPolicyInfo adPolicyInfo);<br /> */<br /> attribute Object selectWatchedPolicyForAdBreak akCallbackFunc;<br /> };<br /></p> </td> 
+   <td><p>interface AdPolicySelector {<br /> /**<br /> * AdbreakPolicy selectPolicyForAdBreak(<br /> * AdPolicyInfo adPolicyInfo);<br /> */<br /> attribute Object selectPolicyForAdBreakFuncCallback;<br /> /* 6/&gt; * AdBreakPlacementList selectAdBreaksToPlay(<br /> * AdPolicyInfo adPolicyInfo);<br /> */<br /> attribute Object selectAdBreaksToPlayCallback;<br /> /**<br /> * AdPolicy PolicyForSeekIntoAd(AdPolicyInfo adPolicyInfo);<br /> */<br /> kenmerk Object selectPolicyForSeekIntoAdCallback; <br /> /**<br /> * AdBreakAsWatched selectWatchedPolicyForAdBreak(<br /> * AdPolicyInfo adPolicyInfo);<br /> */<br /> kenmerk Object selectWatchedPolicyForAdBreak akCallback;<br /> };<br /></p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -347,7 +347,7 @@ Tabellen in dit onderwerp:
    <th>1.3 API</th> 
   </tr> 
   <tr> 
-   <td><p>interface TimelineOperation { <br /> readonly attribute Placement placement ; <br /> };</p> </td> 
+   <td><p>interface TimelineOperation { <br /> Alleen-lezen kenmerkplaatsing ; <br /> };</p> </td> 
    <td> (Nieuw voor 2.0)</td> 
   </tr> 
  </tbody> 
@@ -362,8 +362,8 @@ Tabellen in dit onderwerp:
    <th>1.3 API</th> 
   </tr> 
   <tr> 
-   <td><p>interface AdBreakPlacement : TimelineOperation {<br /> alleen-lezen kenmerk AdBreak adBreak;<br /> kenmerk Alleen-lezen plaatsing; // kenmerk double-time van kenmerk TimelineOperation<br /> alleen-lezen;<br /> kenmerk read-only dubbele duur;<br /> };</p> </td> 
-   <td><p>interface AdBreakPlacement {<br /> alleen-lezen kenmerk AdBreak adBreak;<br /> kenmerk Alleen-lezen plaatsing;<br /> kenmerk Alleen-lezen dubbele tijd;<br /> kenmerk read-only dubbele duur;<br /> };</p> </td> 
+   <td><p>interface AdBreakPlacement : TimelineOperation {<br /> read-only attribute AdBreak adBreak;<br /> read-only attribute Placement placement; // Van TimelineOperation<br /> kenmerk read-only double time;<br /> kenmerk read-only double duration;<br /> };</p> </td> 
+   <td><p>interface AdBreakPlacement {<br /> read-only attribuut AdBreak adBreak;<br /> read-only kenmerkplaatsing;<br /> readonly attribuut double time;<br /> readonly attribuut double duration;<br /> };</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -377,7 +377,7 @@ Tabellen in dit onderwerp:
    <th>1.3 API</th> 
   </tr> 
   <tr> 
-   <td><p>interface AuditudeSettings: AdvertisingMetadata { <br /> -kenmerk DomString zoneId; <br /> kenmerk DomString mediaId; <br /> kenmerk DomString defaultMediaId ; <br /> attribuut DomString domain; <br /> kenmerk Object targetInfo ; <br /> attribuut Object customParameters ; <br /> attribute Boolean creativePackingEnabled ;<br /> attribute Boolean showStaticBanners ;<br /> };</p> </td> 
+   <td><p>interface AuditudeSettings: AdvertisingMetadata { <br />-kenmerk DomString zoneId; <br /> kenmerk DomString mediaId; <br /> kenmerk DomString defaultMediaId; <br /> attribuut DomString domain; <br /> kenmerk Object targettingInfo; <br /> kenmerk Object customParameters; <br /> attribuut Boolean creativePackingEnabled ;<br /> attribuut Boolean showStaticBanners ;<br /> };</p> </td> 
    <td>Functionaliteit is opgegeven door MetadataKeys::AUDITUDE_METADATA_KEY.</td> 
   </tr> 
  </tbody> 
@@ -402,8 +402,8 @@ Tabellen in dit onderwerp:
    <th>1.3 API's</th> 
   </tr> 
   <tr> 
-   <td><p>interface MediaPlayerItemConfig {<br /> kenmerk ContentFactory en Factory;<br /> attribute StringList subscribeTags;<br /> <br /> kenmerk StringList enTags;<br /> <br /> <br /> attribuut AdSignalingMode enSignalingMode;<br /> attribute CustomRangeMetadata customRangeMetadata;<br /> attribuut NetworkConfiguration networkConfiguration;<br /> kenmerk AdvertisingMetadata advertenceMetadata;<br /> attribute Boolean useHardwareDecoder;<br /> };</p> </td> 
-   <td><p>interface MediaPlayerConfig {<br /><br /> <br /> <br /> attributen StringList enTags;<br /> attribute StringList subscribedTags;<br /> kenmerk MediaPlayerClientFactory clientFactory;<br /> <br /> <br /> <br /> <br /> <br /> };</p> </td> 
+   <td><p>interface MediaPlayerItemConfig {<br /> attributen ContentFactory en Factory;<br /> attributen StringList subscribeTags;<br /> <br /> attributen StringList enTags;<br /> <br /> <br /> &lt;a6/&gt; attributen AdSignalingMode en SignalingMode;<br /> attributen CustomRange Metadata customRangeMetadata;<br /> attribute NetworkConfiguration networkConfiguration Configuration;<br /> attribute AdvertisingMetadata advertenceMetadata;<br /> attribute Boolean useHardwareDecoder;<br /> };</p> </td> 
+   <td><p>interface MediaPlayerConfig {<br /> <br /> <br /> <br /> attributen StringList adTags;<br /> attributen StringList subscribedTags;<br /> attributen MediaPlayerClientFactory clientFactory;<br /> <br /> <br /> <br /> <br /> a11/&gt; };<br /></p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -417,8 +417,8 @@ Tabellen in dit onderwerp:
    <th>1.3 API's</th> 
   </tr> 
   <tr> 
-   <td><p>interface ContentFactory {<br /> /*<br /> * AdPolicySelector retrieveAdPolicySelector(<br /> * MediaPlayerItem item);<br /> */<br /> attribute Object retrieveAdPolicySelectorCallbackFunc;<br /> };</p> </td> 
-   <td><p>interface MediaPlayerClientFactory {<br /> /*<br /> * AdPolicySelector retrieveAdPolicySelector(<br /> * MediaPlayerItem item);<br /> */<br /> attribute Object retrieveAdPolicySelectorFunc;<br /> };</p> </td> 
+   <td><p>interface ContentFactory {<br /> /*<br /> * AdPolicySelector retrieveAdPolicySelector(<br /> * MediaPlayerItem item);<br /> */<br /> attributen Object retrieveAdPolicySelectorCallbackFunc;<br /> };</p> </td> 
+   <td><p>interface MediaPlayerClientFactory {<br /> /*<br /> * AdPolicySelector retrieveAdPolicySelector(<br /> * MediaPlayerItem item);<br /> */<br /> attributen Object retrieveAdPolicySelectorFunc;<br /> };</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -432,13 +432,13 @@ Tabellen in dit onderwerp:
    <th>1.3 API's</th> 
   </tr> 
   <tr> 
-   <td><p>interface NetworkConfiguration<br /> {<br /> attribute boolean forceNativeNetworking;<br /> attribute boolean useRedirectedUrl;<br /> attribute Object cookieHeader;<br /> attribute boolean readSetCookieHeader;<br /> kenmerk int masterUpdateInterval; <br /> attribuut boolean useCookieHeaderForAllRequests;<br /> attribute int readLimit;<br /> };</p> </td> 
+   <td><p>interface NetworkConfiguration<br /> {<br /> attribuut boolean forceNativeNetworking;<br /> attribuut boolean useRedirectedUrl;<br /> attribuut Object cookieHeader;<br /> attribuut boolean readSetCookieHeader;<br /> attribuut int masterUpdateInterval; <br /> attribuut boolean useCookieHeaderForAllRequests;<br /> attribuut int readLimit;<br /> };</p> </td> 
    <td>In 1.3 werd een deel van deze functionaliteit geleverd door MetadataKeys</td> 
   </tr> 
  </tbody> 
 </table>
 
-## Wijzigingen in DRM API-element voor 2.0 {#drm-api-element-changes-for}
+## DRM API-elementwijzigingen voor 2.0 {#drm-api-element-changes-for}
 
 In deze tabellen worden de DRM API-elementen voor de JavaScript-TVSDK vergeleken tussen versie 1.3 en 2.0.
 
@@ -453,7 +453,7 @@ Tabellen in dit onderwerp:
 * DRMPopolicy
 * DRMManager
 
-### Initialisatie DRM-workflow {#drm-workflow-initialization}
+### DRM Workflowinitialisatie {#drm-workflow-initialization}
 
 <table> 
  <tbody> 
@@ -462,7 +462,7 @@ Tabellen in dit onderwerp:
    <th>1.3 API's</th> 
   </tr> 
   <tr> 
-   <td>De toepassing moet AdobePSDK.initisDRMWorkflow aanroepen om de DRM-workflow te starten. Zonder deze oproep worden DRM-video's niet afgespeeld.<p>interface AdobePSDK<br /> {<br /> void initiDRMWorkFlow(<br /> DomString appStoratePath, <br /> DomString publisherId, <br /> DomString appId, <br /> DomString appVersion, <br /> booleaanse privacyModeOn);<br /> };</p> </td> 
+   <td>De toepassing moet AdobePSDK.initisDRMWorkflow aanroepen om de DRM-workflow te starten. Zonder deze oproep worden DRM-video's niet afgespeeld.<p>interface AdobePSDK<br /> {<br /> void initiDRMWorkFlow(<br /> DomString appStoratePath, <br /> DomString publisherId, <br /> DomString appId, <br /> DomString appVersion, <br /> boolean privacyModeOn); a7/&gt; };<br /></p> </td> 
    <td>De initialisering werd gedaan intern en geen expliciete vraag werd vereist.</td> 
   </tr> 
  </tbody> 
@@ -475,7 +475,7 @@ Tabellen in dit onderwerp:
 | **DRMAcquireLicenseSettings** |  |
 | Geen wijziging voor 2.0. | enum DRMAcquireLicenseSettings <br>{<br> const unsigned int FORCE_REFRESH = 0;<br> const unsigned int LOCAL_ONLY = 1;<br> const unsigned int ALLOW_SERVER = 2;<br> }; |
 | **DRMAuthenticationMethod** |  |
-| Geen wijziging voor 2.0. | enum DRMAuthenticationMethod <br>{<br> const unsigned int UNKNOWN = 0;<br> const zonder teken in ANONYMOUS = 1;<br> const unsigned int USERNAME_AND_PASSWORD = 2;<br> } |
+| Geen wijziging voor 2.0. | enum DRMAuthenticationMethod <br>{<br> const unsigned int UNKNOWN = 0;<br> const unsigned int ANONYMOUS = 1;<br> const unsigned int USERNAME_AND_PASSWORD = 2;<br> } |
 
 ### DRMMetadata {#drmmetadata}
 
@@ -487,7 +487,7 @@ Tabellen in dit onderwerp:
   </tr> 
   <tr> 
    <td>Geen wijziging voor 2.0.</td> 
-   <td><p>interface DRMMetadata<br /> {<br /> readonly attributen DomString serverUrl;<br /> kenmerk readonly, DomString licenseId;<br /> alleen-lezen kenmerk DRMPopolicyArray-beleid; <br /> };</p> </td> 
+   <td><p>interface DRMMetadata<br /> {<br /> read-only attribuut DomString serverUrl;<br /> readonly attribuut DomString licenseId;<br /> readonly attribuut DRMPPolicyArray beleid; <br /> };</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -501,8 +501,8 @@ Tabellen in dit onderwerp:
    <th>1.3 API's</th> 
   </tr> 
   <tr> 
-   <td><p>interface DRMPlaybackTimeWindow {<br /> readonly attribute int playbackPeriodInSeconds;<br /> readOnly, kenmerk long playbackStartDate;<br /> readOnly, kenmerk long playbackEndDate;<br /> };</p> </td> 
-   <td><p>interface DRMPlaybackTimeWindow {<br /> readonly attribute int periodInSeconds;<br /> readOnly, kenmerk int startDate;<br /> readOnly, kenmerk int endDate;<br /> };</p> </td> 
+   <td><p>interface DRMPlaybackTimeWindow {<br /> read-only attribuut int playbackPeriodInSeconds;<br /> readonly attribuut long playbackStartDate;<br /> readonly attribuut long playbackEndDate;<br /> };</p> </td> 
+   <td><p>interface DRMPlaybackTimeWindow {<br /> kenmerk readonly int periodInSeconds;<br /> kenmerk readonly int startDate;<br /> kenmerk readonly int endDate;<br /> };</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -517,7 +517,7 @@ Tabellen in dit onderwerp:
   </tr> 
   <tr> 
    <td>Geen wijziging voor 2.0.</td> 
-   <td><p>interface DRMLicense {<br /> readonly attribute Uint8Array bytes;<br /> readOnly, kenmerk Date licenseStartDate;<br /> kenmerk readonly Date licenseEndDate;<br /> kenmerk readonly Date offlineStorageStartDate;<br /> alleen-lezen kenmerk Date offlineStorageEndDate; <br /> kenmerk readonly, DomString serverUrl;<br /> kenmerk readonly, DomString licenseID;<br /> readOnly-kenmerk DomString policyID;<br /> readOnly, kenmerk DRMPlaybackTimeWindow playbackTimeWindow;<br /> kenmerk Alleen-lezen Object customProperties;<br /> }; </p> </td> 
+   <td><p>interface DRMLicense {<br /> read-only attributen Uint8Array bytes;<br /> readonly attributen Date licenseStartDate;<br /> readonly attribuut Date licenseEndDate;<br /> readonly attribuut Date offlineStorageStartDate;<br /> readonly attribuut Date offlineStorageEndDate; <br /> kenmerk Alleen-lezen DomString serverUrl;<br /> kenmerk alleen-lezen DomString licenseID;<br /> kenmerk alleen-lezen DomString policyID;<br /> kenmerk alleen-lezen DRMPlaybackTimeWindow playbackTimeWindow;<br /> kenmerk kenmerk Alleen-lezen Object customProperties;<br /> }; </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -531,8 +531,8 @@ Tabellen in dit onderwerp:
    <th>1.3 API's</th> 
   </tr> 
   <tr> 
-   <td><p>interface DRMLicenseDomain {<br /> readonly attribute DomString authenticationDomain;<br /> kenmerk readOnly DRMAuthenticationMethod authenticationMethod; <br /> kenmerk readonly, DomString serverUrl;<br /> };</p> </td> 
-   <td><p>interface DRMLicenseDomain {<br /> readonly attribute DomString authDomain;<br /> readOnly, kenmerk DRMAuthenticationMethod authMethod; <br /> readOnly-kenmerk DomString serverURL;<br /> };</p> </td> 
+   <td><p>interface DRMLicenseDomain {<br /> alleen-lezen kenmerk DomString authenticationDomain;<br /> alleen-lezen kenmerk DRMAuthenticationMethod authenticationMethod; <br /> kenmerk Alleen-lezen DomString serverUrl;<br /> };</p> </td> 
+   <td><p>interface DRMLicenseDomain {<br /> read-only attribuut DomString authDomain;<br /> readonly attribuut DRMAuthenticationMethod authMethod; <br /> kenmerk Alleen-lezen DomString serverURL;<br /> };</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -546,8 +546,8 @@ Tabellen in dit onderwerp:
    <th>1.3 API's</th> 
   </tr> 
   <tr> 
-   <td><p>interface DRMPopolicy<br /> {<br /> readonly attribute DomString authenticationDomain;<br /> kenmerk readOnly DRMAuthenticationMethod authenticationMethod;<br /> <br /> kenmerk readonly, DomString displayName;<br /> read-only attribute DRMLicenseDomain licenseDomain;<br /> };</p> </td> 
-   <td><p>interface DRMPopolicy<br /> {<br /> readonly attribute DomString authDomain;<br /> readOnly, kenmerk DRMAuthenticationMethod authMethod;<br /> readOnly-kenmerk DomString dispName;<br /> read-only attribute DRMLicenseDomain licenseDomain;<br /> };</p> </td> 
+   <td><p>interface DRMPopolicy<br /> {<br /> readonly attribute DomString authenticationDomain;<br /> readonly attribute DRMAuthenticationMethod authenticationMethod;<br /> <br /> readonly attribute DomString displayName;<br /> readonly attribute DRMLicenseDomain licenseDomain;<br /> };</p> </td> 
+   <td><p>interface DRMPopolicy<br /> {<br /> read-only attribuut DomString authDomain;<br /> readonly attribute DRMAuthenticationMethod authMethod;<br /> readonly attribute DomString dispName;<br /> readonly attribute DRMLicenseDomain licenseDomain;<br /> };</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -561,22 +561,22 @@ Tabellen in dit onderwerp:
    <th>1.3 API's</th> 
   </tr> 
   <tr> 
-   <td><p>interface DRMManager: EventTarget {<br /> void verwervingLicense(DRMMetadata metadata, <br /> DRMAcquireLicenseSettings setting, <br /> DRMAquireLicenseListener listener);<br /> void verwervingPreviewLicense(DRMMetadata-metagegevens, <br /> DRMAquireLicenseListener-listener);<br /> void authenticate (DRMMetadata-metagegevens, <br /> DomString url,<br /> DomString&amp;authenticationDomain, <br /> DomString-gebruiker, <br /> DomString-wachtwoord, <br /> DRMAuthenticateListener-listener);<br /> <br /> DRMMetadata createMetadataFromBytes(<br /> Uint8Array-array, DRMErrorListener-listener);<br /> void initialize(DRMOperationCompleteListener-listener);<br /> kenmerk long maxOperationTime;<br /> <br /> void joinLicenseDomain(<br /> DRMLicenseDomain licenseDomain, <br /> boolean forceRefresh, <br /> DRMOperationCompleteListener listener);<br /> void leaveLicenseDomain(<br /> DRMLicenseDomain licenseDomain, <br /> DRMOperationCompleteListener listener);<br /> <br /> void resetDRM(DRMOperationCompleteListener listener);<br /> void returnLicense(DomString serverURL, <br /> DomString licenseID, <br /> DomString policyID, <br /> boolean commitImmediatically,<br /> DRMReturnLicenseListener listener);<br /> void setAuthenticationToken(<br /> DRMMetadata-metagegevens, <br /> DomString-verificatiedomein, <br /> Uint8Array-token, <br /> DRMOperationCompleteListener-listener);<br /> void storeLicenseBytes(Uint8Array, <br /> DRMOperationCompleteListener listener);<br /> };</p> </td> 
-   <td><p>interface DRMManager: EventTarget {<br /> void verwervingLicense(DRMMetadata metadata, <br /> DRMAcquireLicenseSettings setting, <br /> EventContext eventContext);<br /> void verwervingPreviewLicense(DRMMetadata-metagegevens, <br /> EventContext eventContext);<br /> void authenticate (DRMMetadata-metagegevens, <br /> DomString url,<br /> DomString&amp;authenticationDomain, <br /> DomString-gebruiker, <br /> DomString-wachtwoord, <br /> EventContext-gebeurtenisContext);<br /> <br /> DRMMetadata createMetadataFromBytes(<br /> Uint8Array-array, EventContext eventContext);<br /> void initialize(EventContext eventContext);<br /> kenmerk long maxOperationTime;<br /> <br /> void joinLicenseDomain(<br /> DRMLicenseDomain licenseDomain, <br /> boolean forceRefresh, <br /> EventContext eventContext);<br /> void leaveLicenseDomain(<br /> DRMLicenseDomain licenseDomain, <br /> EventContext eventContext);<br /> <br /> void resetDRM(EventContext eventContext);<br /> void returnLicense(DomString serverURL, <br /> DomString licenseID,<br /> DomString policyID, <br /> boolean commitImmediatically,<br /> EventContext eventContext);<br /> void setAuthenticationToken(<br /> DRMMetadata-metagegevens, <br /> DomString-verificatiedomein, <br /> uint8Array-token, <br /> EventContext-gebeurteniscontext);<br /> void storeLicenseBytes(Uint8Array licenseBytes, <br /> EventContext eventContext);<br /> };</p> </td> 
+   <td><p>interface DRMManager: EventTarget {<br /> void verwervingLicense(DRMMetadata metadata, <br /> DRMAcquireLicenseSettings setting, <br /> DRMAquireLicenseListener listener);<br /> voidPreviewLicense(DRMMetadata metadata, <br /> DRMAquireLicenseListener listener);<br /> void authenticate(DRMMetadata metadata, <br /> DomString url,<br /> DomString &amp;authenticationDomain, <br /> DomString user, <br /> DomString password, <br /> DRMAuthenticateListener listener);<br /> <br /> DRMM etadata createMetadataFromBytes(<br /> Uint8Array-array, DRMErrorListener-listener);<br /> void initialize(DRMOperationCompleteListener-listener);<br /> attribute long maxOperationTime;<br /> <br /> void Domain(<br /> DRMLicenseDomain licenseDomain, <br /> boolean forceRefresh, <br /> DRMOperationCompleteListener listener);<br /> void leaveLicenseDomain(<br /> DRMLicenseDomain licenseDomain, <br /> DRMOperationCompleteListener listener);<br /> <br /> void resetDRM(DRMOperationCompleteListener listener);<br /> void returnLicense(DomString serverURL, <br /> DomString licenseID, <br /> DomPolicy Id, <br /> boolean commitDirect,<br /> DRMReturnLicenseListener listener);<br /> void setAuthenticationToken(<br /> DRMMetadata, <br /> DomString authenticationDomain, <br /> Uint8Array-token, <br /> DRMOperationCompleteListener-listener);<br /> void storeLicenseBytes(Uint8Array-licentieBytes, <br /> DRMOperationCompleteListener-listener);<br /> };</p> </td> 
+   <td><p>interface DRMManager: EventTarget {<br /> void verwervingLicense(DRMMetadata metadata, <br /> DRMAcquireLicenseSettings setting, <br /> EventContext eventContext);<br /> voidPreviewLicense(DRMMetadata metadata, <br /> EventContext eventContext);<br /> void authenticate(DRMMetadata) a6/&gt; DomString url,<br /> DomString &amp;authenticationDomain, <br /> DomString user, <br /> DomString password, <br /> EventContextContext);<br /> <br /> DRMMetadata createMetadataFromBytes(<br /> Uint8Array-array, EventContext-eventContext);<br /> void initialize(EventContext eventContext);<br /> attribuut long maxOperationTime;<br /> <br /> void joinLicenseDomain(<br /> DRMLicenseDomain licenseDomain, <br /> booleaanse forceRefresh, <br /> EventContext eventContext);<br /> void leaveLicenseDomain(<br /> DRMLicenseDomain licenseDomain, <br /> EventContext eventContext);<br /> <br /> void resetDRM(EventContext Context);<br /> void returnLicense(DomString serverURL, <br /> DomString licenseID,<br /> DomString policyID, <br /> boolean commitDirect,<br /> EventContext);<br /> void setContext AuthenticationToken(<br /> DRMMetadata metadata, <br /> DomString authenticationDomain, <br /> Uint8Array token, <br /> EventContext eventContext);<br /> void storeLicenseBytes(Uint8Array licenseBytes, <br /> Event Context eventContext);<br /> };<br /></p> </td> 
   </tr> 
   <tr> 
-   <td><p>klasse DRMErrorListener: <br /> public psdkutils::PSDKInterfaceWithUserData {<br /> public:<br /> virtual void onDRMError(uint32_t major, <br /> uint32_t minor, <br /> const psdkutils: PSDKString&amp; errorString, <br /> const psdkutils::PSDKString&amp; errorServerUrl) = 0;<br /> <br /> beveiligd:<br /> virtual ~DRMErrorListener() {}<br /> }</p> </td> 
+   <td><p>klasse DRMErrorListener: <br /> public psdkutils::PSDKInterfaceWithUserData {<br /> public:<br /> virtual void onDRMError(uint32_t major, <br /> uint32_t minor, <br /> const psdkutils: PSDKString&amp; errorString, <br /> const psdkutils::PSDKString&amp; errorServerUrl) = 0;<br /> <br /> protected:<br /> virtual ~DRMErrorListener() {}<br /> }</p> </td> 
    <td>Gebeurtenis/interface/beschrijving 
     <ul> 
      <li>kEventDRMOperationError<p>/ DRMOperationErrorEvent</p> <p>Wanneer een fout tijdens één van de asynchrone methodes van DRMManger voorkomt.</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
-   <td><p>klasse DRMOperationCompleteListener: <br /> public DRMErrorListener {<br /> public:<br /> virtuele void onDRMOperationComplete() = 0;<br /> <br /> beveiligd:<br /> virtual ~DRMOperationCompleteListener() {}<br /> };</p> </td> 
+   <td><p>klasse DRMOperationCompleteListener: <br /> public DRMErrorListener {<br /> public:<br /> virtual void onDRMOperationComplete() = 0;<br /> <br /> protected:<br /> virtual ~DRMOperationCompleteListener() {}<br /> };</p> </td> 
    <td>Gebeurtenis/interface/beschrijving 
     <ul> 
      <li>kEventDRMInitializationComplete<p>/ PSDKEvent</p> <p>Wanneer de initialisatie van DRM is voltooid.</p> </li> 
-     <li>kEventDRMJoinLicenseDomainComplete<p>/ PSDKEvent</p> <p>Wanneer de joinLicenseDomain()-actie met succes is voltooid.</p> </li> 
+     <li>kEventDRMJoinLicenseDomainComplete<p>/ PSDKEvent</p> <p>Wanneer de joinLicenseDomain()-actie correct is voltooid.</p> </li> 
      <li>kEventDRMLeaveLicenseDomainComplete<p>/ PSDKEvent</p> <p>Wanneer de handeling leaveLicenseDomain() correct is voltooid.</p> </li> 
      <li>kEventDRMResetCompletePSDKEvent<p>/ PSDKEvent</p> <p>Wanneer resetDRM()-actie correct is voltooid.</p> </li> 
      <li>kEventDRMAuthenticationTokenSet<p>/ PSDKEvent</p> <p>Wanneer de handeling setAuthenticationTokenSet() correct is voltooid.</p> </li> 
@@ -584,14 +584,14 @@ Tabellen in dit onderwerp:
     </ul> </td> 
   </tr> 
   <tr> 
-   <td><p>klasse DRMAuthenticateListener: <br /> public DRMErrorListener {<br /> public:<br /> virtual void onAuthenticationComplete(<br /> psdkutils::PSDKImmutableByteArray* <br /> authenticationToken) = 0;<br /> <br /> beveiligd:<br /> virtual ~DRMAuthenticateListener() {}<br /> }</p> </td> 
+   <td><p>klasse DRMAuthenticateListener: <br /> openbare DRMErrorListener {<br /> public:<br /> virtuele void onAuthenticationComplete(<br /> psdkutils::PSDKImmutableByteArray* <br /> authenticationToken) = 0;<br /> <br /> protected:<br /> virtueel ~DRMAuthenticate Listener() {}<br /> }</p> </td> 
    <td>Gebeurtenis/interface/beschrijving 
     <ul> 
      <li>kEventDRMAuthenticationComplete<p>/ DRMAuthenticationCompleteEvent</p> <p>Wanneer DRMManager::authenticate de methodevraag succesvol is.</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
-   <td><p>klasse DRMAquireLicenseListener: <br /> public DRMErrorListener {<br /> public:<br /> virtuele void onLicenseAcquired(const DRMLicense*) = 0;<br /> <br /> beveiligd:<br /> virtual ~DRMAquireLicenseListener() {}<br /> };</p> </td> 
+   <td><p>klasse DRMAquireLicenseListener: <br /> public DRMErrorListener {<br /> public:<br /> virtual void onLicenseAcquired(const DRMLicense*) = 0;<br /> <br /> protected:<br /> virtual ~DRMAquireLicenseListener() {}<br /> };</p> </td> 
    <td>Gebeurtenis/interface/beschrijving 
     <ul> 
      <li>kEventDRMPreviewLicenseAcquired<p>/ DRMLicenseAcquiredEvent</p> <p>Wanneer DRMManager::verwervingPreviewLicense is aangeroepen.</p> </li> 
@@ -599,7 +599,7 @@ Tabellen in dit onderwerp:
     </ul> </td> 
   </tr> 
   <tr> 
-   <td><p>klasse DRMReturnLicenseListener: <br /> public DRMErrorListener {<br /> public:<br /> virtuele void onLicenseReturnComplete(uint32_t numGeretourneerd ) = 0;<br /> <br /> beveiligd:<br /> virtual ~DRMReturnLicenseListener() {}<br /> };</p> </td> 
+   <td><p>klasse DRMReturnLicenseListener: <br /> public DRMErrorListener {<br /> public:<br /> virtual void onLicenseReturnComplete(uint32_t numGeretourneerd ) = 0;<br /> <br /> protected:<br /> virtual ~DRMReturnLicenseListener() {}<br /> };</p> </td> 
    <td>Gebeurtenis/interface/beschrijving 
     <ul> 
      <li>kEventDRMLicenseReturnComplete<p>/ DRMLicenseReturnCompleteEvent</p> <p>Wanneer DRMManager::returnLicense, aanroep van de methode succesvol is.</p> </li> 
@@ -630,8 +630,8 @@ Tabellen in dit onderwerp:
    <th>1.3 API's</th> 
   </tr> 
   <tr> 
-   <td><p>interface MediaResource {<br /> kenmerk DomString url; <br /> kenmerk zonder teken kort type;<br /> metagegevens kenmerkobject;<br /> const unsigned short TYPE_HLS;<br /> const unsigned short TYPE_HDS;<br /> const unsigned short TYPE_DASH;<br /> const unsigned short TYPE_CUSTOM;<br /> const unsigned short TYPE_UNKNOWN;<br /> };</p> </td> 
-   <td><p>interface MediaResource {<br /> kenmerk DomString url;<br /> attribuut DomString type;<br /> metagegevens kenmerkobject;<br /> <br /> <br /> <br /> <br /> <br /> };</p> </td> 
+   <td><p>interface MediaResource {<br /> attribuut DomString url; <br /> attribuut unsigned short type;<br /> attribute Object metadata;<br /> const unsigned short TYPE_HLS;<br /> const unsigned short TYPE_HDS;<br /> const unsigned short TYPE_DASH;<br /> const unsigned short TYPE_CUSTOM;<br /> const unsigned short TYPE_UNKNOWN; a8/&gt; };<br /></p> </td> 
+   <td><p>interface MediaResource {<br /> attribuut DomString url;<br /> attribuut DomString type;<br /> attribuut Object metadata;<br /> <br /> <br /> <br /> <br /> <br /> &lt;a8/&gt; };</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -645,11 +645,11 @@ Tabellen in dit onderwerp:
    <th>1.3 API's</th> 
   </tr> 
   <tr> 
-   <td><p>interface MediaPlayer: EventTarget<br /> {<br /> void prepareToPlay( dubbele positie);<br /> void play();<br /> void pause();<br /> void seek( dubbele positie);<br /> void seekToLocal( dubbele positie);<br /> void reset();<br /> void release();<br /> void replaceCurrentItem(MediaPlayerItem item);<br /> void replaceCurrentResource(MediaResource-bron, <br /> MediaPlayerItemConfig-config); <br /> void suspend();<br /> void restore();<br /> void notifyClick();<br /> <br /> readonly attribute TimeRange playbackRange;<br /> alleen-lezen kenmerk TimeRange seekableRange;<br /> kenmerk readonly double currentTime;<br /> kenmerk readonly double localTime;<br /> readonly attribute TimeRange bufferedRange;<br /> readOnly, kenmerk DRMManager drmManager;<br /> readOnly, kenmerk MediaPlayerItem currentItem;<br /> <br /> // PlayerStatus<br /><br /> <br /> const unsigned short PLAYER_STATUS_INITIALIZED;<br /> const unsigned short PLAYER_STATUS_PREPARING;<br /> const unsigned short PLAYER_STATUS_PREPARED;<br /> const unsigned short PLAYER_STATUS_PLAYING;<br /> const unsigned short PLAYER_STATUS_PAUSED;<br /> const unsigned short PLAYER_STATUS_SEEKING;<br /> const unsigned short PLAYER_STATUS_COMPLETE;<br /> const unsigned short PLAYER_STATUS_ERROR;<br /> const unsigned short PLAYER_STATUS_RELEASED;<br /> <br /> kenmerk readonly, kenmerk unsigned short status;<br /> <br /> kenmerk unsigned short volume;<br /> kenmerk ABRControlParameters abrControlParameters;<br /> attribuut BufferControlParameters bufferControlParameters;<br /> <br /> const unsigned short VISIBLE; //Voor CC-zichtbaarheidsconst<br /> zonder teken kort ONZICHTBAAR; //Voor CC visibility<br /> -kenmerk unsigned short ccVisibility<br /> attribute TextFormat ccStyle;<br /> alleen-lezen kenmerk PlaybackMetrics playbackMetrics;<br /> <br /> dubbel tarief;<br /> kenmerk MediaPlayerView;<br /> kenmerk Alleen-lezen tijdlijn;<br /> kenmerk double currentTimeUpdateInterval; <br /> // het plaatsen van dit zal niet voor 2.0<br /> } worden gesteund;</p> </td> 
-   <td><p>interface MediaPlayer: EventTarget<br /> {<br /> void prepareToPlay( int positie);<br /> void play();<br /> void pause();<br /> void seek( int position);<br /> void seekToLocalTime( int position);<br /> void reset();<br /> void release();<br /> void replaceCurrentItem(MediaResource-bron);<br /> <br /> <br /> <br /> <br /> <br /> <br /> readonly attribute TimeRange playbackRange;<br /> alleen-lezen kenmerk TimeRange seekableRange;<br /> kenmerk readonly double currentTime;<br /> kenmerk readonly double localTime;<br /> readonly attribute TimeRange bufferedRange;<br /> readOnly, kenmerk DRMManager drmManager;<br /> readOnly, kenmerk MediaPlayerItem currentItem;<br /> <br /> // PlayerState<br /> const unsigned short PLAYER_STATE_IDLE;<br /> const unsigned short PLAYER_STATE_INITIALIZING;<br /> const unsigned short PLAYER_STATE_INITIALIZED;<br /> const unsigned short PLAYER_STATE_PREPARING;<br /> const unsigned short PLAYER_STATE_PREPARED;<br /> const unsigned short PLAYER_STATE_PLAYING;<br /> const unsigned short PLAYER_STATE_PAUSED;<br /> const unsigned short PLAYER_STATE_SEEKING;<br /> const unsigned short PLAYER_STATE_COMPLETE;<br /> const unsigned short PLAYER_STATE_ERROR;<br /> const unsigned short PLAYER_STATE_RELEASED;<br /> const unsigned short PLAYER_STATUS_SUSPENDED;<br /> kenmerk readonly, kenmerk unsigned short state;<br /> <br /> kenmerk unsigned short volume;<br /> kenmerk ABRControlParameters abrControlParameters;<br /> attribuut BufferControlParameters bufferControlParameters;<br /> <br /> alleen-lezen zonder teken kort ZICHTBAAR; //Voor CC-zichtbaarheid<br /> alleen lezen zonder teken kort ONZICHTBAAR; //Voor CC visibility<br /> -kenmerk unsigned short ccVisibility<br /> attribute TextFormat ccStyle;<br /> alleen-lezen kenmerk PlaybackMetrics playbackMetrics;<br /> kenmerk MediaPlayerConfig mediaPlayerConfig;<br /> dubbel tarief;<br /> kenmerk MediaPlayerView;<br /> kenmerk Alleen-lezen tijdlijn;<br /> <br /> <br /> };</p> </td> 
+   <td><p>interface MediaPlayer: EventTarget<br /> {<br /> void prepareToPlay( dubbele positie);<br /> void play();<br /> void pause();<br /> void seek( dubbele positie);<br /> void seekToLocal( dubbele positie);<br /> void reset();<br /> void release();<br /> void replaceCurrentItem(MediaPlayerItem punt);<br /> void replaceCurrentResource(MediaResource bron, <br /> MediaPlayerItemConfig config); <br /> void suspend();<br /> void restore();<br /> void notifyClick();<br /> <br /> readonly attribute TimeRange playbackRange;<br /> readonly attribute TimeRange seekableRange;<br /> readonly attribute double currentTime;<br /> readonly attribute double localTime;<br /> readonly attribute TimeRange bufferedRange;<br /> readonly attribute DRMManager drmManager;<br /> readonly attribute MediaPlayerItem currentItem;<br /> <br /> // PlayerStatus<br /> <br />/&gt; const unsigned short PLAYER_STATUS_INITIALIZED;<br /> const unsigned short PLAYER_STATUS_PREPARING;<br /> const unsigned short PLAYER_STATUS_PREPARED;<br /> const unsigned short PLAYER_STATUS_PLAYING; a12/&gt; const unsigned short PLAYER_STATUS_PAUSED;<br /> const unsigned short PLAYER_STATUS_SEEKING;<br /> const unsigned short PLAYER_STATUS_COMPLETE;<br /> const unsigned short PLAYER_STATUS_NL FOUT;<br /> const unsigned short PLAYER_STATUS_RELEASED;<br /> <br /> <br /><br /> kenmerk readonly, kenmerk unsigned short status;<br /> <br /> kenmerk unsigned short volume;<br /> kenmerk ABRControlParameters abrControlParameters;<br /> kenmerk BufferControlParameters bufferControlParameters;<br /> <br /> const unsigned short VISIBLE; //Voor CC visibility<br /> const unsigned short INVISIBLE; //Voor CC visibility<br /> kenmerk unsigned short ccVisibility;<br /> kenmerk TextFormat ccStyle;<br /> kenmerk readonly attribute PlaybackMetrics playbackMetrics;<br /> <br /> kenmerk double rate;<br /> kenmerk MediaPlayerView view;<br /> kenmerk Alleen-lezen timeline;<br /> attribute double currentTimeUpdateInterval; <br /> // het plaatsen van dit zal niet voor 2.0<br />} worden gesteund;</p> </td> 
+   <td><p>interface MediaPlayer: EventTarget<br /> {<br /> void prepareToPlay( int position);<br /> void play();<br /> void pause();<br /> void seek( int position);<br /> void seekToLocalTime( int position);<br /> void reset();<br /> void release();&lt;a8/ &gt; void replaceCurrentItem(MediaResource source);<br /> <br /> <br /> <br /> <br /> <br /> <br /> readonly attribute TimeRange playbackRange;<br /> readonly attribute TimeRange seekable;&lt;a1 Het kenmerk Alleen-lezen van het kenmerk double currentTime;<br /> kenmerk read-only is het kenmerk double localTime;<br /> kenmerk readonly van het kenmerk TimeRange bufferedRange;<br /> <br /><br /> read-only attribuut DRMManager drmManager;<br /> read-only attribute MediaPlayerItem currentItem;<br /> <br /> // PlayerState<br /> const unsigned short PLAYER_STATE_IDLE;<br /> const unsigned short PLAYER_STATE_INITIALIZING;<br /> const unsigned short PLAYER_STATE_INITIALIZED;<br /> const unsigned short PLAYER_STATE_PREPARING;<br /> const unsigned short PLAYER_STATE_PREPARED;<br /> const unsigned short PLAYER_STATE_PLAYING;<br /> const unsigned short PLAYER_STATE_PAUSED;<br /> const unsigned short PLAYER_STATE_SEEKING;<br /> const unsigned short PLAYER_STATE_COMPLETE;<br /> const unsigned short PLAYER_STATE_ERROR;<br /> const unsigned short PLAYER_STATE_RELEASED;<br /> const unsigned short PLAYER_STATUS_SUSPENDED;<br /> read-only attribute unsigned short state;<br /> <br /> kenmerk unsigned short volume;<br /> kenmerk ABRControlParameters abrControlParameters;<br /> kenmerk BufferControlParameters bufferControlParameters;<br /> <br /> alleen gelezen unsigned short VISIBLE; //Voor CC-zichtbaarheid<br /> alleen-lezen zonder teken kort ONZICHTBAAR; //Voor CC visibility<br /> kenmerk unsigned short ccVisibility;<br /> kenmerk TextFormat ccStyle;<br /> kenmerk readonly attribute PlaybackMetrics playbackMetrics;<br /> kenmerk MediaPlayerConfig mediaPlayerConfig;<br /> kenmerk double rate;<br /> kenmerk MediaPlayerView;&lt;a1 1/&gt; alleen-lezen kenmerk tijdlijn;<br /> <br /> <br /> };<br /></p> </td> 
   </tr> 
   <tr> 
-   <td><p>interface MediaPlayerStatus<br /> {<br /> // PlayerStatus<br /> const unsigned short PLAYER_STATUS_IDLE;<br /> const unsigned short PLAYER_STATUS_INITIALIZING;<br /> const unsigned short PLAYER_STATUS_INITIALIZED;<br /> const unsigned short PLAYER_STATUS_PREPARING;<br /> const unsigned short PLAYER_STATUS_PREPARED;<br /> const unsigned short PLAYER_STATUS_PLAYING;<br /> const unsigned short PLAYER_STATUS_PAUSED;<br /> const unsigned short PLAYER_STATUS_SEEKING;<br /> const unsigned short PLAYER_STATUS_COMPLETE;<br /> const unsigned short PLAYER_STATUS_ERROR;<br /> const unsigned short PLAYER_STATUS_RELEASED;<br /> const unsigned short PLAYER_STATUS_SUSPENDED;<br /> };</p> </td> 
+   <td><p>interface MediaPlayerStatus<br /> {<br /> // PlayerStatus<br /> const unsigned short PLAYER_STATUS_IDLE;<br /> const unsigned short PLAYER_STATUS_INITIALIZING;<br /> const unsigned short PLAYER_STATUS_INITIALIZED;<br /> const unsigned short PLAYER_STATUS_PREPARING;<br /> const unsigned short PLAYER_STATUS_PREPARED;<br /> const unsigned short PLAYER_STATUS_PLAYING;<br /> const unsigned short PLAYER_STATUS_PAUSED;<br /> const unsigned short PLAYER LAYER_STATUS_SEEKING;<br /> const unsigned short PLAYER_STATUS_COMPLETE;<br /> const unsigned short PLAYER_STATUS_ERROR;<br /> const unsigned short PLAYER_STATUS_RELEASED;<br /> const st unsigned short PLAYER_STATUS_SUSPENDED;<br /> };</p> </td> 
    <td>(Nieuw voor 2.0)</td> 
   </tr> 
  </tbody> 
@@ -747,7 +747,7 @@ Tabellen in dit onderwerp:
    <td>adCompleted</td> 
    <td>AdEvent</td> 
    <td> </td> 
-   <td>progressComplete</td> 
+   <td>adComplete</td> 
    <td>AdEvent</td> 
   </tr> 
   <tr> 
@@ -761,14 +761,14 @@ Tabellen in dit onderwerp:
    <td>timeChanged</td> 
    <td>TimeEvent</td> 
    <td> </td> 
-   <td>buffer</td> 
+   <td>vordering</td> 
    <td>ProgressEvent</td> 
   </tr> 
   <tr> 
    <td>bufferingBegin</td> 
    <td>Gebeurtenis</td> 
    <td> </td> 
-   <td>Progress</td> 
+   <td>buffer</td> 
    <td>Gebeurtenis</td> 
   </tr> 
   <tr> 
@@ -849,14 +849,14 @@ Tabellen in dit onderwerp:
    <td>AdBreakEvent</td> 
   </tr> 
   <tr> 
-   <td>Klik<br /> wanneer de gebruiker op een advertentie klikt.</td> 
+   <td>adClick<br /> Wanneer de gebruiker op Advertentie klikt.</td> 
    <td>AdClickedEvent</td> 
    <td> </td> 
    <td><p>Nieuw in 2.0</p> </td> 
    <td> </td> 
   </tr> 
   <tr> 
-   <td>profileChanged<br /> When the playback profile changes.</td> 
+   <td>profileChanged<br /> Wanneer het playbackprofiel verandert.</td> 
    <td>ProfileEvent</td> 
    <td> </td> 
    <td><p>Nieuw in 2.0</p> </td> 
@@ -870,14 +870,14 @@ Tabellen in dit onderwerp:
    <td> </td> 
   </tr> 
   <tr> 
-   <td>audioBijgewerkt<br /> wanneer een item van een mediaspeler wordt bijgewerkt. Voor bepaalde streams die audiotracks bevatten die alleen tijdens het afspelen kunnen worden gedetecteerd, wordt deze gebeurtenis geactiveerd wanneer nieuwe audiotracks beschikbaar zijn.</td> 
+   <td>audioUpdated<br /> Wanneer een media playeritem wordt bijgewerkt. Voor bepaalde streams die audiotracks bevatten die alleen tijdens het afspelen kunnen worden gedetecteerd, wordt deze gebeurtenis geactiveerd wanneer nieuwe audiotracks beschikbaar zijn.</td> 
    <td>MediaPlayerItemEvent</td> 
    <td> </td> 
    <td><p>Nieuw in 2.0</p> </td> 
    <td> </td> 
   </tr> 
   <tr> 
-   <td>captionsUpdated <br /> Wanneer een media player-item wordt bijgewerkt. Voor live/lineaire streams moet de client de mediabron periodiek vernieuwen om de nieuwe beschikbare inhoud te detecteren. Wanneer dit gebeurt, zouden bepaalde media kenmerken kunnen veranderen.</td> 
+   <td>captionsUpdated <br /> When a media player item is updated. Voor live/lineaire streams moet de client de mediabron periodiek vernieuwen om de nieuwe beschikbare inhoud te detecteren. Wanneer dit gebeurt, zouden bepaalde media kenmerken kunnen veranderen.</td> 
    <td>MediaPlayerItemEvent</td> 
    <td> </td> 
    <td><p>Nieuw in 2.0</p> </td> 
@@ -891,7 +891,7 @@ Tabellen in dit onderwerp:
    <td> </td> 
   </tr> 
   <tr> 
-   <td>playbackRangeUpdated<br /> Wanneer een media playerpunt wordt bijgewerkt. Voor live/lineaire streams moet de client de mediabron periodiek vernieuwen om de nieuwe beschikbare inhoud te detecteren. Wanneer dit gebeurt, zouden bepaalde media kenmerken kunnen veranderen.</td> 
+   <td>playbackRangeUpdated<br /> Wanneer een punt van de media speler wordt bijgewerkt. Voor live/lineaire streams moet de client de mediabron periodiek vernieuwen om de nieuwe beschikbare inhoud te detecteren. Wanneer dit gebeurt, zouden bepaalde media kenmerken kunnen veranderen.</td> 
    <td>MediaPlayerItemEvent</td> 
    <td> </td> 
    <td><p>Nieuw in 2.0</p> </td> 
@@ -915,8 +915,8 @@ Tabellen in dit onderwerp:
    <th>1.3 API's</th> 
   </tr> 
   <tr> 
-   <td><p>interface ABRControlParameters<br /> {<br /> const unsigned short ABR_POLICY_CONSERVATIVE = 0;<br /> const unsigned short ABR_POLICY_MODERATE = 1;<br /> const unsigned short ABR_POLICY_AGGRESIVE = 2;<br /> <br /> kenmerk unsigned short abrPolicy;<br /> kenmerk unsigned int initialBitRate;<br /> kenmerk unsigned int minBitRate;<br /> kenmerk unsigned int maxBitRate;<br /> const unsigned short DEFAULT_ABR_INITIAL_BITRATE;<br /> const unsigned short DEFAULT_ABR_MIN_BITRATE;<br /> const unsigned short DEFAULT_ABR_MAX_BITRATE;<br /> const ABRPopolicy DEFAULT_ABR_POLICY;<br /> };</p> </td> 
-   <td><p>interface ABRControlParameters<br /> {<br /> const unsigned short ABR_POLICY_CONSERVATIVE = 0;<br /> const unsigned short ABR_POLICY_MODERATE = 1;<br /> const unsigned short ABR_POLICY_AGGRESIVE = 2;<br /> <br /> kenmerk unsigned short abrPolicy;<br /> kenmerk unsigned int initialBitRate;<br /> kenmerk unsigned int minBitRate;<br /> kenmerk unsigned int maxBitRate;<br /> <br /> <br /> <br /> <br /> };</p> </td> 
+   <td><p>interface ABRControlParameters<br /> {<br /> const unsigned short ABR_POLICY_CONSERVATIVE = 0 ;<br /> const unsigned short ABR_POLICY_MODERATE = 1 ;<br /> const unsigned short ABR_POLICY_AGGRESIVE = 2 ;<br /> <br /> kenmerk unsigned short abr Beleid;<br /> kenmerk unsigned int initialBitRate;<br /> kenmerk unsigned int minBitRate;<br /> kenmerk unsigned int maxBitRate;<br /> const unsigned short DEFAULT_ABR_INITIAL_BITRATE;<br /> const unsigned short DEFAULT_ABR_MIN_BITRATE ITRATE;<br /> const unsigned short DEFAULT_ABR_MAX_BITRATE;<br /> const ABRPopolicy DEFAULT_ABR_POLICY;<br /> };</p> </td> 
+   <td><p>interface ABRControlParameters<br /> {<br /> const unsigned short ABR_POLICY_CONSERVATIVE = 0 ;<br /> const unsigned short ABR_POLICY_MODERATE = 1 ;<br /> const unsigned short ABR_POLICY_AGGRESIVE = 2 ;<br /> <br /> kenmerk unsigned short abr Beleid;<br /> kenmerk unsigned int initialBitRate;<br /> kenmerk unsigned int minBitRate;<br /> kenmerk unsigned int maxBitRate;<br /> <br /> <br /> <br /> <br /> };</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -930,8 +930,8 @@ Tabellen in dit onderwerp:
    <th>1.3 API's</th> 
   </tr> 
   <tr> 
-   <td><p>interface BufferControlParameters<br /> {<br /> attribuut double initialBufferTime;<br /> kenmerk double playBufferTime;<br /> const double DEFAULT_INITIAL_BUFFER_TIME;<br /> const double DEFAULT_PLAY_BUFFER_TIME;<br /> };</p> </td> 
-   <td><p>interface BufferControlParameters<br /> {<br /> attribuut double initialBufferTime;<br /> kenmerk double playBufferTime;<br /> <br /> <br /> };</p> </td> 
+   <td><p>interface BufferControlParameters<br /> {<br /> attribuut double initialBufferTime;<br /> attribuut double playBufferTime;<br /> const double DEFAULT_INITIAL_BUFFER_TIME;<br /> const double DEFAULT_PLAY_BUFFER_TIME;<br /> };</p> </td> 
+   <td><p>interface BufferControlParameters<br /> {<br /> attribuut double initialBufferTime;<br /> attribuut double playBufferTime;<br /> <br /> <br /> };</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -946,7 +946,7 @@ Tabellen in dit onderwerp:
   </tr> 
   <tr> 
    <td>Geen wijziging voor 2.0</td> 
-   <td><p>interface TextFormat<br /> {<br /> // Kleurconst<br /> zonder teken short COLOR_DEFAULT = 0 ;<br /> const unsigned short COLOR_BLACK = 1;<br /> const unsigned short COLOR_GRAY = 2;<br /> const unsigned short COLOR_WHITE = 3;<br /> const unsigned short COLOR_BRIGHT_WHITE = 4;<br /> const unsigned short COLOR_DARK_RED = 5;<br /> const unsigned short COLOR_RED = 6;<br /> const unsigned short COLOR_BRIGHT_RED = 7;<br /> const unsigned short COLOR_DARK_GREEN = 8;<br /> const unsigned short COLOR_GREEN = 9;<br /> const unsigned short COLOR_BRIGHT_GREEN = 10 ;<br /> const unsigned short COLOR_DARK_BLUE = 11;<br /> const unsigned short COLOR_BLUE = 12;<br /> const unsigned short COLOR_BRIGHT_BLUE = 13;<br /> const unsigned short COLOR_DARK_YELLOW = 14;<br /> const unsigned short COLOR_YELLOW = 15;<br /> const unsigned short COLOR_BRIGHT_YELLOW = 16;<br /> const unsigned short COLOR_DARK_MAGENTA = 17;<br /> const unsigned short COLOR_MAGENTA = 18;<br /> const unsigned short COLOR_BRIGHT_MAGENTA = 19;<br /> const unsigned short COLOR_DARK_CYAN = 20 ;<br /> const unsigned short COLOR_CYAN = 21;<br /> const unsigned short COLOR_BRIGHT_CYAN = 22 ;<br /> <br /> readOnly-kenmerk unsigned short fontColor;<br /> kenmerk readOnly, kenmerk unsigned short backgroundColor;<br /> readOnly, kenmerk unsigned short fillColor;<br /> kenmerk readOnly, kenmerk zonder teken short edgeColor;<br /> <br /> // Size<br /> const unsigned short SIZE_DEFAULT = 0;<br /> const unsigned short SIZE_SMALL = 1;<br /> const unsigned short SIZE_MEDIUM = 2;<br /> const unsigned short SIZE_LARGE = 3;<br /> <br /> kenmerk read-only, korte grootte zonder teken;<br /> <br /> // FontEdge<br /> const unsigned short FONT_EDGE_DEFAULT = 0;<br /> const unsigned short FONT_EDGE_NONE = 1;<br /> const unsigned short FONT_EDGE_RAISED = 2;<br /> const unsigned short FONT_EDGE_DEPRESSED = 3;<br /> const unsigned short FONT_EDGE_UNIFORM = 4;<br /> const unsigned short FONT_EDGE_DROP_SHADOW_LEFT = 5;<br /> const unsigned short FONT_EDGE_DROP_SHADOW_RIGHT = 6;<br /> kenmerk readOnly, kenmerk unsigned short fontEdge;<br /> <br /> // Font<br /> const unsigned short FONT_DEFAULT = 0;<br /> const unsigned short FONT_MONOSPACED_WITH_SERIFS = 1;<br /> const unsigned short FONT_PROPORTIONAL_WITH_SERIFS = 2;<br /> const unsigned short FONT_MONSPACED_WITHOUT_SERIFS = 3;<br /> const unsigned short FONT_CASUAL = 4;<br /> const unsigned short FONT_CURSIVE = 5;<br /> const unsigned short FONT_SMALL_CAPITALS = 6;<br /> kenmerk read-only, niet-ondertekend kort lettertype;<br /> kenmerk Alleen-lezen, kenmerk unsigned short fontOpacity;<br /> kenmerk readonly, kenmerk unsigned short backgroundOpacity;<br /> readOnly, kenmerk unsigned short fillOpacity;<br /> read-only attribuut unsigned short DEFAULT_OPACITY;<br /> };</p> </td> 
+   <td><p>interface TextFormat<br /> {<br /> // Color<br /> const unsigned short COLOR_DEFAULT = 0 ;<br /> const unsigned short COLOR_BLACK = 1 ;<br /> const unsigned short COLOR_GRAY = 2 ;<br /> const unsigned short COLOR_WHITE = 3 ; 6/&gt; const unsigned short COLOR_BRIGHT_WHITE = 4 ;<br /> const unsigned short COLOR_DARK_RED = 5 ;<br /> const unsigned short COLOR_RED = 6 ;<br /> const unsigned short COLOR_BRIGHT_RED = 7 ;<br /> const unsigned short COLOR_DOR ARK_GREEN = 8 ;<br /> const unsigned short COLOR_GREEN = 9 ;<br /> const unsigned short COLOR_BRIGHT_GREEN = 10 ;<br /> const unsigned short COLOR_DARK_BLUE = 11 ;<br /> const short COLOR_BLUE = 12 ;<br /> const unsigned short COLOR_BRIGHT_BLUE = 13 ;<br /> const unsigned short COLOR_DARK_YELLOW = 14 ;<br /> const unsigned short COLOR_YELLOW = 15 ; 118/&gt; <br /><br /> const unsigned short COLOR_BRIGHT_YELLOW = 16 ;<br /> const unsigned short COLOR_DARK_MAGENTA = 17 ;<br /> const unsigned short COLOR_MAGENTA = 18 ;<br /> const unsigned short COLOR_BRIGHT_MAGENTA = 19<br /> const st unsigned short COLOR_DARK_CYAN = 20 ;<br /> const unsigned short COLOR_CYAN = 21 ;<br /> const unsigned short COLOR_BRIGHT_CYAN = 22 ;<br /> <br /> readonly attribute unsigned short fontColor;<br /> readonly attribute&lt;unsigned short backgroundColor; a9/&gt; alleen-lezen kenmerk unsigned short fillColor;<br /> alleen-lezen kenmerk unsigned short edgeColor;<br /> <br /> // Size<br /> const unsigned short SIZE_DEFAULT = 0;<br /> const unsigned short SIZE_SMALL = 1 ; 5/&gt; const unsigned short SIZE_MEDIUM = 2 ;<br /> <br /><br /> const unsigned short SIZE_LARGE = 3 ;<br /> <br /> readonly attribute unsigned short size;<br /> <br /> // FontEdge<br /> const unsigned short FONT_EDGE_DEFAULT = 0 ;<br /> const unsigned short FONT_EDGE_NONE = 1;<br /> const st unsigned short FONT_EDGE_RAISED = 2 ;<br /> const unsigned short FONT_EDGE_DEPRESSED = 3 ;<br /> const unsigned short FONT_EDGE_UNIFORM = 4 ;<br /> const unsigned short FONT_EDGE_DROP_SHADOW_LEFT = 5 ; a 10/&gt; const unsigned short FONT_EDGE_DROP_SHADOW_RIGHT = 6 ;<br /> readonly attribute unsigned short fontEdge;<br /> <br /> // Font<br /> const unsigned short FONT_DEFAULT = 0 ;<br /> const unsigned short FONT_MONOSPACED_WITH_SERIFS = 1 ;<br /><br /> const unsigned short FONT_PROPORTIONAL_WITH_SERIFS = 2 ;<br /> const unsigned short FONT_MONSPACED_WITHOUT_SERIFS = 3 ;<br /> const unsigned short FONT_CASUAL = 4 ;<br /> const unsigned short FONT_CURSIVE = 5 ;<br /> const ondertekende korte FONT_SMALL_CAPITALS = 6;<br /> kenmerk Alleen-lezen kenmerk unsigned short font;<br /> kenmerk Alleen-lezen kenmerk unsigned short fontOpacity;<br /> kenmerk read-only kenmerk unsigned short backgroundOpacity;<br /> kenmerk read-only kenmerk unsigned short fillOpacity;<br /> kenmerk readonly kenmerk unsigned short DEFAULT_OPACITY; a9/&gt; };<br /></p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -960,7 +960,7 @@ Tabellen in dit onderwerp:
    <th>1.3 API's</th> 
   </tr> 
   <tr> 
-   <td><p>interface MediaPlayerItemLoader:<br /> {<br /> void load(MediaResource-bron, lange resourceId,<br /> ItemLoaderListener-listener, <br /> MediaPlayerItemConfig-config);<br /> void cancel();<br /> readOnly, kenmerk MediaPlayerItem currentItem;<br /> };</p> </td> 
+   <td><p>interface MediaPlayerItemLoader:<br /> {<br /> void(MediaResource resource, long resourceId,<br /> ItemLoaderListener listener, <br /> MediaPlayerItemConfig config);<br /> void cancel();<br /> readonly attribute MediaPlayerItem currentItem;<br /> };</p> </td> 
    <td>Nieuw voor 2.0</td> 
   </tr> 
   <tr> 
@@ -990,8 +990,8 @@ Tabellen in dit onderwerp:
    <th>1.3 API's</th> 
   </tr> 
   <tr> 
-   <td><p>interface MediaPlayerItem {<br /> readonly attribute MediaResource resource;<br /> kenmerk read-only long resourceId;<br /> read-only attribute boolean live;<br /> <br /> alleen-lezen kenmerk boolean hasAlternateAudio;<br /> kenmerk readonly AudioTrackList audioTracks;<br /> kenmerk Alleen-lezen: AudioTrack selectedAudioTrack;<br /> void selectAudioTrack(AudioTrack); <br /> <br /> alleen-lezen kenmerk boolean hasClosedCaptions;<br /> kenmerk readonly; ClosedCaptionsTrackList closedCaptionsTracks;<br /> kenmerk readonly; ClosedCaptionsTrack selectedClosedCaptionsTrack;<br /> void selectClosedCaptionsTrack(<br /> ClosedCaptionsTrack-track); <br /> <br /> alleen-lezen kenmerk boolean hasTimedMetadata;<br /> kenmerk readonly, TimedMetadataList timedMetadata;<br /> read-only attribuut boolean dynamic;<br /> <br /> readonly attribute boolean isProtected;<br /> readOnly-kenmerk DRMMetadataInfoList drmMetadataInfos;<br /> alleen-lezen kenmerkprofielen ProfileList;<br /> alleen-lezen kenmerkprofiel selectedProfile;<br /> <br /> readOnly, kenmerk booleaanse trucPlaySupported;<br /> Alleen-lezen kenmerk FloatArray availablePlaybackRates;<br /> kenmerk Alleen-lezen float selectedPlaybackRate;<br /> <br /> <br /> kenmerk readOnly MediaPlayer;<br /> kenmerk readonly MediaPlayerItemConfig config;<br /> };</p> </td> 
-   <td><p>interface MediaPlayerItem {<br /> readonly attribute MediaResource resource;<br /> kenmerk read-only long resourceId;<br /> read-only attribute boolean live;<br /> <br /> alleen-lezen kenmerk boolean hasAlternateAudio;<br /> kenmerk readonly AudioTrackList audioTracks;<br /> kenmerk AudioTrack selectedAudioTrack;<br /> <br /> <br /> alleen-lezen kenmerk boolean hasClosedCaptions;<br /> readOnly-kenmerk ClosedCaptionsTrackList ccTracks;<br /> kenmerk ClosedCaptionsTrack selectedCCTrack;<br /> <br /> <br /> <br /> alleen-lezen kenmerk boolean hasTimedMetadata;<br /> kenmerk readonly, TimedMetadataList timedMetadata;<br /> read-only attribuut boolean dynamic;<br /> <br /> readonly attribute boolean isProtected;<br /> readOnly-kenmerk DRMMetadataInfoList drmMetadataInfos;<br /> alleen-lezen kenmerkprofielen ProfileList;<br /> <br /> <br /> readOnly, kenmerk booleaanse trucPlaySupported;<br /> readOnly-kenmerk Int32Array availablePlaybackRates;<br /> <br /> alleen-lezen kenmerk StringList enTags;<br /> <br /> kenmerk readOnly MediaPlayer;<br /> <br /> };</p> </td> 
+   <td><p>interface MediaPlayerItem {<br /> kenmerk Alleen-lezen MediaResource-resource;<br /> kenmerk alleen-lezen lange resourceId;<br /> kenmerk alleen-lezen booleaanse live;<br /> <br /> kenmerk alleen-lezen boolean hasAlternateAudio;<br /> kenmerk kenmerk Alleen-lezen AudioTrackList audioTracks;<br /> kenmerk Alleen-lezen Track;<br /> void selectAudioTrack(AudioTrack); <br /> <br /> Alleen-lezen kenmerk boolean hasClosedCaptions;<br /> alleen-lezen kenmerk ClosedCaptionsTrackList closedCaptionsTracks;<br /> alleen-lezen kenmerk ClosedCaptionsTrack selectedClosedCaptionsTrack;<br /> void selectClosedCaptionsTrack() 13/&gt; ClosedCaptionsTrack (track); <br /> <br /> Alleen-lezen kenmerk boolean hasTimedMetadata;<br /> alleen-lezen kenmerk TimedMetadataList timedMetadata;<br /> alleen-lezen kenmerk boolean dynamic;<br /> <br /> alleen-lezen kenmerk boolean isProtected;<br /> alleen-lezen kenmerk DRMMetadataInfoList drmMetadataInfos;<br /> alleen-lezen kenmerk ProfileList-profielen;<br /> alleen-lezen kenmerk Profile selectedProfile;<br /> <br /> alleen-lezen kenmerk boolean trickPlaySupported;<br /> alleen-kenmerk FloatArray PlaybackRates;<br /> alleen-lezen kenmerk float selectedPlaybackRate;<br /> <br /> <br /> alleen-lezen kenmerk MediaPlayer mediaPlayer;<br /> alleen-lezen kenmerk MediaPlayerItemConfig;<br /> };<br /></p> </td> 
+   <td><p>interface MediaPlayerItem {<br /> read-only attribuut MediaResource middel;<br /> readonly attribute long resourceId;<br /> readonly attribute boolean live;<br /> <br /> readonly attribute boolean hasAlternateAudio;<br /> readonly attribute AudioTrackList audioTracks;<br /> attribute AudioTrack selectedAudioTrack <br /> <br /> <br /> Alleen-lezen-kenmerk boolean hasClosedCaptions;<br /> alleen-lezen-kenmerk ClosedCaptionsTrackList ccTracks;<br /> kenmerk ClosedCaptionsTrack selectedCCTrack;<br /> <br />&gt; <br /> Alleen-lezen kenmerk boolean hasTimedMetadata;<br /> alleen-lezen kenmerk TimedMetadataList timedMetadata;<br /> alleen-lezen kenmerk boolean dynamic;<br /> <br /> alleen-lezen kenmerk boolean isProtected;<br /> alleen-kenmerk DRMM MetadataInfoList drmMetadataInfos;<br /> Alleen-lezen kenmerkprofielen ProfileList;<br /> <br /> <br /> Alleen-lezen kenmerk boolean trucPlaySupported;<br /> alleen-lezen kenmerk Int32Array availablePlaybackRates;<br /> <br /> kenmerk Alleen-lezen StringList enTags;<br /> <br /> kenmerk Alleen-lezen MediaPlayer mediaPlayer;<br /> <br /> };<br /></p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -1005,20 +1005,20 @@ Tabellen in dit onderwerp:
    <th>1.3 API's</th> 
   </tr> 
   <tr> 
-   <td><p>interface Track<br /> {<br /> readonly attribute DomString name;<br /> kenmerk readonly, DomString-taal;<br /> Booleaanse standaardwaarde, kenmerk readonly;<br /> alleen-lezen kenmerk boolean autoSelect;<br /> }; </p> </td> 
+   <td><p>interface Track<br /> {<br /> alleen-lezen kenmerk DomString-naam;<br /> alleen-lezen kenmerk DomString-taal;<br /> alleen-lezen kenmerk boolean standaard;<br /> alleen-lezen kenmerk boolean autoSelect;<br /> }; </p> </td> 
    <td>Nieuw voor 2.0</td> 
   </tr> 
   <tr> 
-   <td><p>interface AudioTrack: Track<br /> {<br /> readonly attribute DomString name; //FromTrack<br /> readonly attribute DomString language;//FromTrack<br /> readonly attribute boolean default; // Van track<br /> alleen-lezen kenmerk boolean autoSelect;//FromTrack<br /> alleen-lezen kenmerk <br /> unsigned int pid;<br /> };</p> </td> 
-   <td><p>interface AudioTrack<br /> {<br /> readonly attribute DomString name;<br /> kenmerk readonly, DomString-taal; <br /> Booleaanse standaardwaarde, kenmerk readonly;<br /> alleen-lezen kenmerk boolean autoSelect;<br /> read-only attribuut boolean geforceerd;<br /> <br /> };</p> </td> 
+   <td><p>interface AudioTrack: Track<br /> {<br /> alleen-lezen kenmerk DomString-naam; //FromTrack<br /> kenmerk Alleen-lezen DomString-taal;//FromTrack<br /> kenmerk boolean default; // Van track<br /> alleen-lezen kenmerk booleaanse autoSelect;//FromTrack<br /> <br /> kenmerk alleen-lezen kenmerk unsigned int pid;<br /> };</p> </td> 
+   <td><p>interface AudioTrack<br /> {<br /> alleen-lezen kenmerk DomString-naam;<br /> alleen-lezen kenmerk DomString-taal; <br /> read-only attribuut boolean default;<br /> readonly attribute boolean autoSelect;<br /> readonly attribute boolean forcated;<br /> <br /> };</p> </td> 
   </tr> 
   <tr> 
    <td>Geen wijziging voor 2.0</td> 
-   <td><p>interface AudioTrackList<br /> {<br /> kenmerk read-only lengte zonder teken;<br /> getter AudioTrack (unsigned long index);<br /> };</p> </td> 
+   <td><p>interface AudioTrackList<br /> {<br /> kenmerk read-only lange lengte zonder teken;<br /> getter AudioTrack (unsigned long index);<br /> };</p> </td> 
   </tr> 
   <tr> 
-   <td><p>interface ClosedCaptionsTrack: Track<br /> {<br /> readonly attribute DomString name; //FromTrack<br /> readonly attribute DomString language;//FromTrack<br /> readonly attribute boolean default; // FromTrack<br /> readonly attribute boolean autoSelect;//FromTrack<br /> <br /> const <br /> unsigned short SERVICE_608_CAPTIONS = 0;<br /> const unsigned short SERVICE_708_CAPTIONS = 1;<br /> const unsigned short SERVICE_WEB_VTT_CAPTIONS = 2;<br /> readOnly, kenmerk unsigned short serviceType;<br /> read-only attribuut boolean geforceerd;<br /> };</p> </td> 
-   <td><p>interface ClosedCaptionsTrack<br /> {<br /> readonly attribute DomString name;<br /> kenmerk readonly, DomString-taal;<br /> Booleaanse standaardwaarde, kenmerk readonly;<br /> <br /> <br /> alleen-lezen kenmerk boolean actief;<br /> <br /> <br /> <br /> <br /> <br /> };</p> </td> 
+   <td><p>interface ClosedCaptionsTrack: Track<br /> {<br /> alleen-lezen kenmerk DomString-naam; //FromTrack<br /> kenmerk Alleen-lezen DomString-taal;//FromTrack<br /> kenmerk boolean default; // FromTrack<br /> read-only attribute boolean autoSelect;//FromTrack<br /> <br /> <br /> const unsigned short SERVICE_608_CAPTIONS = 0;<br /> const unsigned short SERVICE_708_CAPTIONS = 1;<br /> const unsigned short SERVICE_WEB_VTT_CAPTIONS = 2;<br /> read-only attribuut unsigned short serviceType;<br /> readonly attribute boolean required;<br /> };</p> </td> 
+   <td><p>interface ClosedCaptionsTrack<br /> {<br /> alleen-lezen kenmerk DomString-naam;<br /> alleen-lezen kenmerk DomString-taal;<br /> alleen-lezen kenmerk booleaanse standaard;<br /> <br /> <br /> alleen-lezen kenmerk booleaan actief;<br /> <br /> <br /> a11/&gt; <br /> };<br /><br /></p> </td> 
   </tr> 
   <tr> 
    <td>Geen wijziging voor 2.0</td> 
@@ -1037,11 +1037,11 @@ Tabellen in dit onderwerp:
   </tr> 
   <tr> 
    <td>Profiel: Geen wijziging voor 2.0</td> 
-   <td><p>interfaceprofiel<br /> {<br /> readonly attribute unsigned int width;<br /> kenmerk readonly, hoogte niet-ondertekende int;<br /> kenmerk readonly, kenmerk unsigned int bitRate;<br /> }; </p> </td> 
+   <td><p>interfaceprofiel<br /> {<br /> alleen-lezen kenmerk unsigned int width;<br /> alleen-lezen kenmerk unsigned int height;<br /> kenmerk read-only kenmerk unsigned int bitRate;<br /> }; </p> </td> 
   </tr> 
   <tr> 
    <td>Profiellijst: Geen wijziging voor 2.0</td> 
-   <td><p>interface ProfileList<br /> {<br /> readonly attributen unsigned long length;<br /> getter profiel (lange index zonder teken);<br /> };</p> </td> 
+   <td><p>interface ProfileList<br /> {<br /> read-only attributen unsigned long length;<br /> getter Profile(unsigned long index);<br /> };</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -1056,11 +1056,11 @@ Tabellen in dit onderwerp:
   </tr> 
   <tr> 
    <td><strong>DRMMetadataInfo</strong>: Geen wijziging voor 2.0</td> 
-   <td><p>interface DRMMetadataInfo<br /> { <br /> readonly attributen DRMMetadata metadata;<br /> kenmerk readOnly lang prefetchTimestamp;<br /> readonly attribuut TimeRange timeRange;<br /> };</p> </td> 
+   <td><p>interface DRMMetadataInfo<br /> { <br /> read-only attributen DRMMetadata metadata;<br /> readonly attributen long prefetchTimestamp;<br /> readonly attributen TimeRange timeRange;<br /> };</p> </td> 
   </tr> 
   <tr> 
    <td><strong>DRMMetadataInfoList</strong>: Geen wijziging voor 2.0</td> 
-   <td><p>interface DRMMetadataInfoList<br /> {<br /> readonly attribuut unsigned long length;<br /> getter DRMMetadataInfo(unsigned long index);<br /> };</p> </td> 
+   <td><p>interface DRMMetadataInfoList<br /> {<br /> kenmerk read-only lange lengte zonder teken;<br /> getter DRMMetadataInfo(unsigned long index);<br /> };</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -1273,8 +1273,8 @@ Tabellen in dit onderwerp:
    <th>1.3 API's</th> 
   </tr> 
   <tr> 
-   <td><p>interface Version<br /> {<br /> readonly attribute DomString version;<br /> kenmerk readonly, beschrijving van DomString;<br /> kenmerk read-only long major;<br /> kenmerk readonly, lange ondergeschikte;<br /> kenmerk read-only, lange revisie;<br /> readonly, kenmerk long apiVersion;<br /> };</p> </td> 
-   <td><p>interface Version<br /> {<br /> readonly attribute DomString version;<br /> kenmerk readonly, beschrijving van DomString;<br /> readOnly, kenmerk DomString major;<br /> readOnly, kenmerk DomString minor;<br /> kenmerk readonly, DomString-revisie;<br /> readonly attribute DomString apiVersion;<br /> };</p> </td> 
+   <td><p>interfaceversie<br /> {<br /> read-only attributen DomString versie;<br /> readonly attributen DomString beschrijving;<br /> readonly attributen long major;<br /> readonly attributen long minor;<br /> readonly attributen long revision;<br /> readonly attribute long apiVersion;<br /> };</p> </td> 
+   <td><p>interface Version<br /> {<br /> readonly attribute DomString version;<br /> readonly attribute DomString description;<br /> readonly attribute DomString major;<br /> readonly attribute DomString minor;<br /> readonly attribute DomString revision;<br /> readonly attribute DomString apiVersion;<br /> };</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -1289,7 +1289,7 @@ Tabellen in dit onderwerp:
   </tr> 
   <tr> 
    <td>Geen wijziging voor 2.0</td> 
-   <td><p>interface TimeRange<br /> {<br /> readonly attributen unsigned long begin;<br /> kenmerk read-only, kenmerk unsigned long end;<br /> kenmerk readonly is kenmerk unsigned long duration;<br /> };</p> </td> 
+   <td><p>interface TimeRange<br /> {<br /> readonly attributen unsigned long begin;<br /> readonly attributen unsigned long end;<br /> readonly attributen unsigned long duration;<br /> };</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -1304,7 +1304,7 @@ Tabellen in dit onderwerp:
   </tr> 
   <tr> 
    <td>Geen wijziging voor 2.0</td> 
-   <td><p>interface QOSProvider<br /> {<br /> void attachMediaPlayer(MediaPlayer-speler);<br /> void detachMediaPlayer();<br /> <br /> alleen-lezen kenmerk DeviceInformation deviceInformation;<br /> alleen-lezen kenmerk PlaybackInformation playbackInformation;<br /> };</p> </td> 
+   <td><p>interface QOSProvider<br /> {<br /> void attachMediaPlayer(MediaPlayer speler);<br /> void detachMediaPlayer();<br /> <br /> readonly attribute DeviceInformation deviceInformation;<br /> readonly attribute PlaybackInformation playbackInformation;<br /> };</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -1318,8 +1318,8 @@ Tabellen in dit onderwerp:
    <th>1.3 API's</th> 
   </tr> 
   <tr> 
-   <td><p>interface DeviceInformation<br /> {<br /> readonly attribute DomString os;<br /> <br /> <br /> <br /> kenmerk readonly, DomString-id;<br /> alleen-lezen kenmerk int densityDPI;<br /> kenmerk readonly int heightPixels;<br /> kenmerk readonly int widthPixels;<br /> alleen-lezen kenmerk boolean seekToKeyFrame;<br /> };</p> </td> 
-   <td><p>interface DeviceInformation<br /> {<br /> readonly attribute DomString os;<br /> kenmerk readonly int sdk;<br /> alleen-lezen kenmerk DomString-model;<br /> kenmerk readonly, fabrikant van DomString;<br /> kenmerk readonly, DomString-id;<br /> alleen-lezen kenmerk int densityDPI;<br /> kenmerk readonly int heightPixels;<br /> kenmerk readonly int widthPixels;<br /> <br /> };</p> </td> 
+   <td><p>interface DeviceInformation<br /> {<br /> alleen-lezen kenmerk DomString os;<br /> <br /> <br /> <br /> alleen-lezen kenmerk DomString id;<br /> alleen-lezen kenmerk int densityDPI;<br /> alleen-lezen kenmerk int heightPixels;<br /> alleen kenmerk int width<br /> alleen-lezen kenmerk boolean seekToKeyFrame;<br /> };</p> </td> 
+   <td><p>interface DeviceInformation<br /> {<br /> read-only attribute DomString os;<br /> readonly attribute int sdk;<br /> readonly attribute DomString model;<br /> readonly attribute DomString manufacturer;<br /> readonly attribute DomString id;<br /> readonly attribute intDPI;<br /> readonly kenmerk int heightPixels;<br /> kenmerk read-only int widthPixels;<br /> <br /> };</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -1334,12 +1334,12 @@ Tabellen in dit onderwerp:
   </tr> 
   <tr> 
    <td>Geen wijziging voor 2.0</td> 
-   <td><p>interface LoadInfo<br /> {<br /> alleen-lezen kenmerk DomString url;<br /> alleen-lezen kenmerk int-grootte;<br /> kenmerk readonly, double downloadDuration;<br /> kenmerk readonly int periodIndex;<br /> kenmerk read-only double mediaDuration;<br /> kenmerk readonly, short TRACK_TYPE_FRAGMENT;<br /> kenmerk readonly, short TRACK_TYPE_TRACK;<br /> read-only kenmerk short TRACK_TYPE_MANIFEST;<br /> kenmerk Alleen-lezen, kort type;<br /> kenmerk readonly, DomString trackName;<br /> kenmerk readonly, DomString trackType;<br /> kenmerk readonly int trackIndex;<br /> };</p> </td> 
+   <td><p>interface LoadInfo<br /> {<br /> alleen-lezen kenmerk DomString url;<br /> alleen-lezen kenmerk int size;<br /> alleen-lezen kenmerk double downloadDuration;<br /> alleen-lezen kenmerk int periodIndex;<br /> alleen-lezen kenmerk double mediaDuration;<br /> alleen-lezen kenmerk short TRACK_TYPE_FRAGMENT;<br /> readonly attribute short TRACK_TYPE_TRACK;<br /> readonly attribute short TRACK_TYPE_MANIFEST;<br /> readonly attribute short type;<br /> readonly attribute DomString trackName;<br /> readonly attribute DomString trackType;<br /> readonly attribute int trackIndex;&lt;a1 3/&gt; };<br /></p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-### Weergave {#view}
+### {#view} weergeven
 
 <table> 
  <tbody> 
@@ -1349,12 +1349,12 @@ Tabellen in dit onderwerp:
   </tr> 
   <tr> 
    <td>Geen wijziging voor 2.0</td> 
-   <td><p>interface View<br /> {<br /> readonly attribute unsigned short x;<br /> kenmerk readonly zonder teken kort y;<br /> kenmerk readonly, kenmerk unsigned short width;<br /> kenmerk readonly, kenmerk unsigned short height;<br /> <br /> void setSize(unsigned short width, unsigned short height);<br /> void setPos(unsigned short x, unsigned short y);<br /> }</p> </td> 
+   <td><p>interface View<br /> {<br /> read-only attribuut unsigned short x;<br /> readonly attribute unsigned short y;<br /> readonly attribute unsigned short width;<br /> readonly attribute unsigned short height;<br /> <br /> void setSize(unsigned short width, unsigned short height);<br /> void setPos(unsigned short x, kort zonder teken y);<br /> }</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-### Afspeelgegevens {#playbackinformation}
+### PlaybackInformation {#playbackinformation}
 
 <table> 
  <tbody> 
@@ -1363,12 +1363,12 @@ Tabellen in dit onderwerp:
    <th>1.3 API's</th> 
   </tr> 
   <tr> 
-   <td><p>interface PlaybackInformation<br /> {<br /> readonly attribuut double timeToFirstByte;<br /> kenmerk readonly double timeToLoad;<br /> kenmerk readonly double timeToStart;<br /> kenmerk readonly double timeToFail;<br /> kenmerk readonly int totalSecondsPlayed;<br /> kenmerk readonly int totalSecondsSpent;<br /> kenmerk read-only double frameRate;<br /> readOnly, kenmerk int droppedFrameCount;<br /> readOnly-kenmerk int waargenomenBandwidth;<br /> kenmerk Alleen-lezen in bitsnelheid;<br /> kenmerk readonly double bufferTime;<br /> kenmerk readonly int bufferLength;<br /> readOnly, kenmerk int emptyBufferCount;<br /> kenmerk readonly; double bufferingTime;<br /> };</p> </td> 
-   <td><p>interface PlaybackInformation<br /> {<br /> readonly attribuut double timeToFirstByte;<br /> kenmerk readonly double timeToLoad;<br /> kenmerk readonly double timeToStart;<br /> kenmerk readonly double timeToFail;<br /> kenmerk readonly int totalSecondsPlayed;<br /> kenmerk readonly int totalSecondsSpent;<br /> kenmerk read-only double frameRate;<br /> readOnly, kenmerk int droppedFrameCount;<br /> <br /> kenmerk Alleen-lezen in bitsnelheid;<br /> kenmerk readonly double bufferTime;<br /> kenmerk readonly int bufferLength;<br /> readOnly, kenmerk int emptyBufferCount;<br /> kenmerk readonly; double bufferingTime;<br /> };</p> </td> 
+   <td><p>interface PlaybackInformation<br /> {<br /> readonly attribuut double timeToFirstByte;<br /> readonly attribute double timeToLoad;<br /> readonly attribute double timeToStart;<br /> readonly attribute double timeToFail;<br /> readonly attribute int totalSecondsPlayed;<br /> readonly attribute int totalSecondsSpent;<br /> kenmerk read-only double frameRate;<br /> kenmerk read-only int droppedFrameCount;<br /> kenmerk read-only int gezienBandwidth;<br /> kenmerk readonly int bitrate;<br /> kenmerk readonly kenmerk double bufferTime;<br /> kenmerk readonly kenmerk intLength;<br /> readonly attribute int emptyBufferCount;<br /> readonly attribute double bufferingTime;<br /> };</p> </td> 
+   <td><p>interface PlaybackInformation<br /> {<br /> readonly attribuut double timeToFirstByte;<br /> readonly attribute double timeToLoad;<br /> readonly attribute double timeToStart;<br /> readonly attribute double timeToFail;<br /> readonly attribute int totalSecondsPlayed;<br /> readonly attribute int totalSecondsSpent;<br /> kenmerk read-only double frameRate;<br /> kenmerk readonly int droppedFrameCount;<br /> <br /> kenmerk readonly int bitrate;<br /> kenmerk readonly double bufferTime;<br /> kenmerk readonly attribute int bufferLength;<br /> readonly kenmerk int emptyBufferCount;<br /> kenmerk read-only double bufferingTime;<br /> };</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
 ## Nuttige bronnen {#helpful-resources}
 
-* Zie de volledige Help-documentatie op de pagina Learn &amp; Support [van](https://helpx.adobe.com/support/primetime.html) Adobe Primetime.
+* Zie de volledige Help-documentatie op de pagina [Adobe Primetime Learn &amp; Support](https://helpx.adobe.com/support/primetime.html).
