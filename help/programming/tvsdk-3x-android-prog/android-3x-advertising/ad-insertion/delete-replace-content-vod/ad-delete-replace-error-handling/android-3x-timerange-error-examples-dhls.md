@@ -6,15 +6,18 @@ title: Voorbeelden van tijdbereikfouten
 uuid: 25ac5985-a844-452e-ac95-5006fdf413e6
 translation-type: tm+mt
 source-git-commit: bc35da8b258056809ceaf18e33bed631047bc81b
+workflow-type: tm+mt
+source-wordcount: '136'
+ht-degree: 0%
 
 ---
 
 
-# Voorbeelden van tijdbereikfouten {#time-range-error-examples}
+# Voorbeelden van fouten in tijdbereik {#time-range-error-examples}
 
 TVSDK reageert op onjuiste tijdbereikspecificaties door de tijdbereiken waar nodig samen te voegen of te vervangen.
 
-**Tijdbereik VERWIJDEREN**
+**DELETE-tijdbereik**
 
 In het volgende voorbeeld worden vier elkaar kruisende DELETE-tijdbereiken gedefinieerd. TVSDK voegt de vier tijdbereiken samen in één, zodat de daadwerkelijke schrappingswaaier van 0 tot 50 s is.
 
