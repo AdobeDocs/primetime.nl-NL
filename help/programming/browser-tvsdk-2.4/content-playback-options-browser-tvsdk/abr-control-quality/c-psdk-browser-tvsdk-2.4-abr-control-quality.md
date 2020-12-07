@@ -6,6 +6,9 @@ title: Adaptieve bitsnelheden (ABR) voor videokwaliteit
 uuid: 4c34fb7b-1bbd-4fa9-8929-d50e85a17396
 translation-type: tm+mt
 source-git-commit: 592245f5a7186d18dabbb5a98a468cbed7354aed
+workflow-type: tm+mt
+source-wordcount: '482'
+ht-degree: 1%
 
 ---
 
@@ -22,22 +25,22 @@ U kunt het adaptieve beetje-tarief (ABR) omschakelingsbeleid en de aanvankelijke
  <tbody> 
   <tr> 
    <td colname="col01"> Oorspronkelijke bitsnelheid </td> 
-   <td colname="col2">De gewenste afspeelbitsnelheid (in bits per seconde) voor het eerste segment. Wanneer het afspelen begint, wordt het dichtstbijzijnde profiel, dat gelijk is aan of groter is dan de aanvankelijke bitsnelheid, gebruikt voor het eerste segment. <p> Als een minimale bitsnelheid is gedefinieerd en de aanvankelijke bitsnelheid lager is dan de minimale bitsnelheid, selecteert Browser-TVSDK het profiel met de laagste bitsnelheid boven de minimale bitsnelheid. Als de aanvankelijke snelheid boven de maximumsnelheid ligt, selecteert Browser TVSDK de hoogste snelheid onder de maximumsnelheid. </p> <p>Als de aanvankelijke bitsnelheid nul of ongedefinieerd is, wordt de aanvankelijke bitsnelheid bepaald door het ABR-beleid. </p> <p><span class="codeph"> initialBitRate</span> retourneert een geheel-getalwaarde die het byte-per-seconde-profiel vertegenwoordigt. </p> </td> 
+   <td colname="col2">De gewenste afspeelbitsnelheid (in bits per seconde) voor het eerste segment. Wanneer het afspelen begint, wordt het dichtstbijzijnde profiel, dat gelijk is aan of groter is dan de aanvankelijke bitsnelheid, gebruikt voor het eerste segment. <p> Als een minimale bitsnelheid is gedefinieerd en de aanvankelijke bitsnelheid lager is dan de minimale bitsnelheid, selecteert Browser-TVSDK het profiel met de laagste bitsnelheid boven de minimale bitsnelheid. Als de aanvankelijke snelheid boven de maximumsnelheid ligt, selecteert Browser TVSDK de hoogste snelheid onder de maximumsnelheid. </p> <p>Als de aanvankelijke bitsnelheid nul of ongedefinieerd is, wordt de aanvankelijke bitsnelheid bepaald door het ABR-beleid. </p> <p><span class="codeph"> </span> initialBitRenderer retourneert een geheel-getalwaarde die het byte-per-seconde profiel vertegenwoordigt. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col01"> Minimale bitsnelheid </td> 
-   <td colname="col2">Het laagste toegestane beetjetarief waaraan ABR kan schakelen. De omschakeling ABR negeert profielen met een beetjetarief dat lager is dan dit beetjetarief. <p><span class="codeph"> minBitRate</span> retourneert een geheel getal dat het bits-per-seconde-profiel vertegenwoordigt. </p> </td> 
+   <td colname="col2">Het laagste toegestane beetjetarief waaraan ABR kan schakelen. De omschakeling ABR negeert profielen met een beetjetarief dat lager is dan dit beetjetarief. <p><span class="codeph"> Met </span> minBitRaternert u een geheel-getalwaarde die het bits-per-seconde profiel vertegenwoordigt. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col01"> Maximale bitsnelheid </td> 
-   <td colname="col2">Het hoogste toegestane beetjetarief waaraan ABR kan schakelen. De omschakeling ABR negeert profielen met een beetjetarief hoger dan dit beetjetarief. <p><span class="codeph"> maxBitRate</span> retourneert een geheel getal dat het bits-per-seconde-profiel vertegenwoordigt. </p> </td> 
+   <td colname="col2">Het hoogste toegestane beetjetarief waaraan ABR kan schakelen. De omschakeling ABR negeert profielen met een beetjetarief hoger dan dit beetjetarief. <p><span class="codeph"> </span> maxBitRaterrendert een geheel-getalwaarde die het beetjes-per-tweede profiel vertegenwoordigt. </p> </td> 
   </tr> 
  </tbody> 
 </table>
 
 Houd rekening met het volgende:
 
-* Wanneer de bitsnelheid verandert, verzendt Browser-TVSDK `AdobePSDK.ProfileEvent` het type als `AdobePSDK.PSDKEventType.PROFILE_CHANGED`.
+* Wanneer de bitsnelheid verandert, verzendt Browser-TVSDK `AdobePSDK.ProfileEvent` met het type als `AdobePSDK.PSDKEventType.PROFILE_CHANGED`.
 
 * U kunt de ABR-instellingen op elk gewenst moment wijzigen en de speler schakelt over naar het profiel dat het meest overeenkomt met de meest recente instellingen.
 
@@ -53,5 +56,5 @@ Als u een bereik van 300000 tot 2000000 opgeeft, beschouwt Browser-TVSDK alleen 
 
 ABR-controleparameters instellen:
 
-* Stel de parameters voor de `ABRControlParameters` klasse in.
+* Stel de parameters in voor de klasse `ABRControlParameters`.
 
