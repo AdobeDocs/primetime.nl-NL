@@ -13,9 +13,9 @@ pagecreatedat: en
 pagelayout: video
 sidecolumn: left
 translation-type: tm+mt
-source-git-commit: 6da7d597503d98875735c54e9a794f8171ad408b
+source-git-commit: 3efbd1113e82c4d5f84798997b6f744daf6f508e
 workflow-type: tm+mt
-source-wordcount: '2430'
+source-wordcount: '2437'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 0%
 
 # Foutopsporingsprogramma voor server wissen {#manifest-server-debugging-tool}
 
-## Overzicht van het foutopsporingsprogramma {#overview-of-debugging-tool}
+## Overzicht van het hulpprogramma voor foutopsporing {#overview-of-debugging-tool}
 
 Het het zuiveren hulpmiddel laat uitgevers toe om potentieel dure en toevoegingsproblemen te onderzoeken door het zuiveren informatie te onderzoeken die in echt - tijd door de duidelijke server in de kopballen van HTTP wordt teruggekeerd of, wanneer meer gedetailleerde informatie nodig is, het onderzoeken van zittingslogboeken na het feit. Adobe-partners zoals Akamai kunnen het hulpprogramma gebruiken om fouten op te sporen in hun integratie met Primetime en besluitvorming.
 
@@ -309,7 +309,7 @@ De verslagen van dit typelogboek verzoeken de manifestserver voor titels WEBVTT 
 
 ### TRACE_WEBVTT_RESPONSE records {#trace-webvtt-response-records}
 
-Registreert ``of ``dit ``type ``log ``responses ``de ``manifest ``server ``sends ``naar ``clients ``in `` `answer` ``naar ``requests `` `for` ``WEBVTT ``bijschriften. De gebieden voorbij TRACE_WEBVTT_RESPONSE &quot;verschijnen in de orde die in de lijst wordt getoond, gescheiden `by`lusjes.
+Records van dit type logreacties die de manifestserver naar clients verzendt als antwoord op verzoeken om `WEBVTT` bijschriften. De gebieden voorbij `TRACE_WEBVTT_RESPONSE` verschijnen in de orde die in de lijst wordt getoond, door lusjes wordt gescheiden.
 
 | Veld | Type | Beschrijving |
 |--- |--- |--- |
