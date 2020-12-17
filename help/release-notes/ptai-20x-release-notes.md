@@ -1,28 +1,52 @@
 ---
-title: Opmerkingen bij de release PTAI 20.10.1
-description: In de release van PTAI 20.10.1 wordt beschreven wat nieuw of gewijzigd is, wat de opgeloste en bekende problemen zijn in Primetime Ad Insertion in 2020.
+title: Opmerkingen bij de release PTAI 20.12.1
+description: In de PTAI-release wordt beschreven wat nieuw of gewijzigd is, wat de opgeloste en bekende problemen zijn in Primetime Ad Insertion in 2020.
 translation-type: tm+mt
-source-git-commit: 7d74e526dbc4c9f623d1ec30e4bc70d9318a89f9
+source-git-commit: 6e4d29f3fb85410943b960b179147b2fc2f1e7c4
 workflow-type: tm+mt
-source-wordcount: '1027'
+source-wordcount: '1081'
 ht-degree: 0%
 
 ---
 
 
-# Opmerkingen bij de release Primetime Ad Insertion 20.10.1
+# Opmerkingen bij de release Primetime Ad Insertion 20.12.1
 
-Opmerkingen bij de release van Primetime Ad Insertion 20.10.1 beschrijven nieuwe of gewijzigde, opgeloste problemen en bekende problemen in Primetime Ad Insertion in 2020.
+Opmerkingen bij de release van Primetime Ad Insertion 20.12.1 beschrijven nieuwe of gewijzigde, opgeloste problemen en bekende problemen in Primetime Ad Insertion in 2020.
 
-## Nieuwe functies in PTAI 20.10.1
+## Nieuwe functies in PTAI 20.12.1
+
+**Wanneer:** Dinsdag, 08 december, 2020 van 01:00 AM aan 04:00 oosterse Tijd
+
+**Wijzigingen**
+
+* Bevat hotfix om problemen met intermitterende clientconnectiviteit (5xx) te verhelpen in Primetime Ad Insertion die op 30 november 2020 zijn aangetroffen.
+
+### Verbeteringen en correcties in vorige releaseversies
+
+#### Versie 201.11.1
+
+**Wanneer:** Donderdag, 5 november 2020 van 2:00 uur tot 05:00 uur Oosterse tijd
+
+**Wijzigingen**
+
+* Onderhoudsupdates.
+
+#### Versie 201.10.2
+
+**Wanneer:** Donderdag, 29 okt, 2020 van 12.01 uur tot 06.00 uur Oosterse tijd
+
+**Wijzigingen**
+
+* Onderhoudsupdates.
+
+#### Versie 201.10.1
 
 **Wanneer:** Dinsdag, 13 oktober 2020, 03.00 - 07.00 uur Oosterse tijd
 
 **Wijzigingen**
 
 * Onderhoudsupdates.
-
-### Verbeteringen en correcties in vorige releaseversies
 
 #### Versie 20.9.3
 
