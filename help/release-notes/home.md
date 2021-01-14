@@ -4,7 +4,7 @@ seo-title: Opmerkingen bij de release van Adobe Primetime
 description: 'null'
 seo-description: 'null'
 translation-type: tm+mt
-source-git-commit: 4790c8ab25ca6ecf118adf3037fc2e4e4f451cb3
+source-git-commit: c17145da29d148f3dbfe1bcd1011acfa7177bc25
 workflow-type: tm+mt
 source-wordcount: '280'
 ht-degree: 0%
@@ -16,9 +16,9 @@ ht-degree: 0%
 
 Welkom bij de Adobe Primetime Release Notes. De documenten die in de linkernavigatie worden vermeld verstrekken versie-specifieke informatie, systeemvereisten, beperkingen, vaste kwesties, en bekende kwesties.
 
-## Verbeteringen en correcties in PTAI 20.12.1
+## Verbeteringen en correcties in PTAI 21.1.1
 
-De release bevat een hotfix voor het verhelpen van problemen met de clientconnectiviteit.
+De versie omvat steun voor filiaal beschikbaar voor op SCTE35-Gebaseerde richtsnoerformaten.
 
 ## Oplossingen in TVSDK 3.12 Android
 
