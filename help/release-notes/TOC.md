@@ -5,7 +5,7 @@ audience: end-user
 user-guide-title: Opmerkingen bij de release Primetime
 user-guide-description: Verstrekt versie-specifieke informatie, systeemvereisten, beperkingen, vaste kwesties, en bekende kwesties.
 translation-type: tm+mt
-source-git-commit: c17145da29d148f3dbfe1bcd1011acfa7177bc25
+source-git-commit: d1b79fb39c0f51b6e06653caaaaa491aef7129d7
 workflow-type: tm+mt
 source-wordcount: '114'
 ht-degree: 0%
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 + [Overzicht van opmerkingen bij de release](home.md)
 + Primetime Ad Insertion {#ptai}
-   + [Opmerkingen bij de release PTAI 21.1.1](ptai-21x-release-notes.md)
+   + [Opmerkingen bij de release PTAI 21.1.2](ptai-21x-release-notes.md)
    + [Opmerkingen bij de release PTAI 20.12.1](ptai-20x-release-notes.md)
    + [Opmerkingen bij de release PTAI 19.11.1](ptai-19x-release-notes.md)
 + TVSDK voor iOS {#tvsdk-ios}
