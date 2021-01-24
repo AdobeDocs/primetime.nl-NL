@@ -4,9 +4,9 @@ seo-title: Opmerkingen bij de release van Adobe Primetime
 description: 'null'
 seo-description: 'null'
 translation-type: tm+mt
-source-git-commit: c17145da29d148f3dbfe1bcd1011acfa7177bc25
+source-git-commit: d1b79fb39c0f51b6e06653caaaaa491aef7129d7
 workflow-type: tm+mt
-source-wordcount: '280'
+source-wordcount: '279'
 ht-degree: 0%
 
 ---
@@ -16,9 +16,9 @@ ht-degree: 0%
 
 Welkom bij de Adobe Primetime Release Notes. De documenten die in de linkernavigatie worden vermeld verstrekken versie-specifieke informatie, systeemvereisten, beperkingen, vaste kwesties, en bekende kwesties.
 
-## Verbeteringen en correcties in PTAI 21.1.1
+## Verbeteringen en correcties in PTAI 21.1.2
 
-De versie omvat steun voor filiaal beschikbaar voor op SCTE35-Gebaseerde richtsnoerformaten.
+De release bevat een upgrade van Primetime Ad Insertion-back-endgeheugenclusters.
 
 ## Oplossingen in TVSDK 3.12 Android
 
