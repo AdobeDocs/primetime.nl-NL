@@ -5,9 +5,9 @@ audience: end-user
 user-guide-title: Help bij programmeren bij primetime
 user-guide-description: Hiermee kunt u leren toepassingen en videospelers te ontwikkelen met behulp van Java op Android-apparaten en met behulp van doelstelling-C op iOS-apparaten.
 translation-type: tm+mt
-source-git-commit: 02ac57d14cf5c4c2819d17413a9d3e9a31237715
+source-git-commit: aab96dcf5107be90534350156ee66a88de80613e
 workflow-type: tm+mt
-source-wordcount: '4327'
+source-wordcount: '4342'
 ht-degree: 0%
 
 ---
@@ -599,7 +599,7 @@ ht-degree: 0%
          + [Videoanalysemogelijkheden initialiseren en configureren](tvsdk-1.4-for-android/android-1.4-integrating-adobe-analytics/va-integration-overview/android-1.4-va-integrate-heartbeats.md)
          + [Ondersteuning voor aangepaste metagegevens implementeren](tvsdk-1.4-for-android/android-1.4-integrating-adobe-analytics/va-integration-overview/android-1.4-va-custom-metadata.md)
          + [Hoofdstukondersteuning implementeren](tvsdk-1.4-for-android/android-1.4-integrating-adobe-analytics/va-integration-overview/android-1.4-va-chapter-support.md)
-         + [Aangepaste tijdupdates implementeren](tvsdk-1.4-for-android/android-1.4-integrating-adobe-analytics/va-integration-overview/android-1.4-imp-cust-time-updates.md)
+         + [Aangepaste tijdupdates implementeren](https://experienceleague.adobe.com/docs/primetime/programming/tvsdk-1-4-for-android/configure-user-interface/inserting-ads/android-1.4-imp-cust-time-updates.html?lang=en#tvsdk-1-4-for-android)
          + [Video-analyses instellen die worden gerapporteerd aan de serverzijde](tvsdk-1.4-for-android/android-1.4-integrating-adobe-analytics/va-integration-overview/android-1.4-va-server-side-set-up.md)
          + [Rapporten voor videoanalyse openen](tvsdk-1.4-for-android/android-1.4-integrating-adobe-analytics/va-integration-overview/android-1.4-va-reports-access.md)
       + Inhoudsbescherming {#content-protection}
