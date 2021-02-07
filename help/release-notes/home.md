@@ -4,7 +4,7 @@ seo-title: Opmerkingen bij de release van Adobe Primetime
 description: 'null'
 seo-description: 'null'
 translation-type: tm+mt
-source-git-commit: d1b79fb39c0f51b6e06653caaaaa491aef7129d7
+source-git-commit: 22ed68a2aa5a85a37763186bd6802f980acfc9d8
 workflow-type: tm+mt
 source-wordcount: '279'
 ht-degree: 0%
@@ -16,9 +16,9 @@ ht-degree: 0%
 
 Welkom bij de Adobe Primetime Release Notes. De documenten die in de linkernavigatie worden vermeld verstrekken versie-specifieke informatie, systeemvereisten, beperkingen, vaste kwesties, en bekende kwesties.
 
-## Verbeteringen en correcties in PTAI 21.1.2
+## Verbeteringen en correcties in PTAI 21.2.1
 
-De release bevat een upgrade van Primetime Ad Insertion-back-endgeheugenclusters.
+De release biedt ondersteuning voor DASH-uitvoeroptimalisatie: op tijd gebaseerde consolidatie van knooppunten.
 
 ## Oplossingen in TVSDK 3.12 Android
 
