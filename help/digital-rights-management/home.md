@@ -4,7 +4,7 @@ seo-title: Help bij Adobe Digital Rights Management
 description: 'null'
 seo-description: 'null'
 translation-type: tm+mt
-source-git-commit: fac84687085f289e984c189665bfe775337592b3
+source-git-commit: 242b5a2875ebc0e0020296ce9489dd54438b5ad0
 workflow-type: tm+mt
 source-wordcount: '213'
 ht-degree: 0%
@@ -24,7 +24,7 @@ Welkom bij de Digital Rights Management Help voor Adobe Primetime. De documenten
 | [Help bij programmeren bij primetime](/help/programming/home.md) | Hiermee kunt u leren toepassingen en videospelers te ontwikkelen met behulp van Java op Android-apparaten en met behulp van doelstelling-C op iOS-apparaten. |
 | [Help bij Primetime-migratie en -conversie](/help/migration-guides/home.md) | Verklaart het omzettings en migratieproces om van uw bestaande Reeks van de TVSDK van Primetime aan de volgende-generatiereeks over te gaan. |
 | [Referentie-implementatie](/help/android-reference-implementation/home.md) | Helpt de TVSDK te begrijpen en de functies te wijzigen om uw persoonlijke speler aan te passen. |
-| [Help bij primetime Ad Insertion](/help/dynamic-ad-insertion/home.md) | Verklaart hoe te om inhoud te monetiseren door gebruiker-gerichte dynamische advertenties op de server op te nemen en publiek met gepersonaliseerde advertenties in dienst te nemen. |
+| [Help bij primetime Ad Insertion](/help/primetime-ad-insertion/home.md) | Verklaart hoe te om inhoud te monetiseren door gebruiker-gerichte dynamische advertenties op de server op te nemen en publiek met gepersonaliseerde advertenties in dienst te nemen. |
 | [Primetime-API-verwijzingen](/help/reference/api-references.md) | Verstrekt gedetailleerde informatie over functies TVSDK, gegevensstructuren en andere programmeringsconcepten. |
 | [Archieven](https://helpx.adobe.com/primetime/archives.html) | Download PDF&#39;s van de gearchiveerde documentatie. |
 
