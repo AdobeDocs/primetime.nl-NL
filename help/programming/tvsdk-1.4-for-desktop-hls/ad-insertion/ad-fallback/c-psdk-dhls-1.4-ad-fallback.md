@@ -5,9 +5,9 @@ seo-title: Extra fallback voor VAST- en VMAP-advertenties
 title: Extra fallback voor VAST- en VMAP-advertenties
 uuid: 7b44abf9-50cf-4e39-b594-ceb52208a865
 translation-type: tm+mt
-source-git-commit: adef0bbd52ba043f625f38db69366c6d873c586d
+source-git-commit: cecc559480b9b52c412fefff4361603d6f14caf7
 workflow-type: tm+mt
-source-wordcount: '602'
+source-wordcount: '558'
 ht-degree: 0%
 
 ---
@@ -18,8 +18,6 @@ ht-degree: 0%
 Voor Digital Video Ad Serving Template (VAST)-advertenties (of creatieven) waarvoor de fallback-regel is ingeschakeld, behandelt TVSDK een advertentie met een ongeldig mediatype als een lege advertentie en probeert het alternatieve advertenties te gebruiken. U kunt bepaalde aspecten van fallback-gedrag configureren.
 
 In de VAST/Digital Video Multiple Ad Playlist (VMAP)-specificatie staat dat voor advertenties waarvoor VAST-fallback is ingeschakeld, lege advertenties automatisch het gebruik van fallback-advertenties activeren. Als een VAST-advertentie leeg is, zoekt TVSDK naar een geldige vervanging van het HLS-mediatype in de fallback-advertenties. Als een VAST-advertentie in een omslag een ongeldig mediatype heeft, behandelt TVSDK deze advertentie als leeg. U kunt configureren of TVSDK hetzelfde moet doen voor inline-advertenties in een VMAP. Zie [Digital Video Ad Serving Template (VAST) 3.0](https://www.iab.net/guidelines/508676/digitalvideo/vsuite/vast) voor meer informatie over de functie VAST `fallbackOnNoAd`.
-
-De Primetime en de toevoeging achtereind handhaaft een reeks prioriteiten om het toe te laten om uit verschillende media types in de zelfde reactie te kiezen VAST/VMAP. U kunt meer over deze prioritaire lijst en hoe te om het bij [Overzicht van CRS](../../../../dynamic-ad-insertion/creative-repackaging-service/crs-overview.md) te veranderen.
 
 ## Definieer fallback en gedrag voor inline VMAP-advertenties {#define-fallback-ad-behavior-for-vmap-inline-ads}
 
