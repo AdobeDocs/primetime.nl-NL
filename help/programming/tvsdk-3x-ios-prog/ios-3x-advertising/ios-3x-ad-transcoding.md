@@ -5,9 +5,9 @@ seo-title: Niet-compatibele advertenties opnieuw verpakken met de Adobe Creative
 title: Niet-compatibele advertenties opnieuw verpakken met de Adobe Creative Repackaging Service
 uuid: 56a2405d-b395-4fea-820d-343590be7c19
 translation-type: tm+mt
-source-git-commit: 557f42cd9a6f356aa99e13386d9e8d65e043a6af
+source-git-commit: cecc559480b9b52c412fefff4361603d6f14caf7
 workflow-type: tm+mt
-source-wordcount: '507'
+source-wordcount: '497'
 ht-degree: 0%
 
 ---
@@ -22,8 +22,6 @@ Advertenties die door verschillende derden worden aangeboden, zoals een bureau e
 Wanneer TVSDK voor het eerst een niet-compatibele advertentie tegenkomt, negeert de speler de advertentie en geeft een verzoek aan de creatieve herverpakkingsdienst (CRS) uit, die deel van Primetime en toevoegend achtereind uitmaakt, om de advertentie in een compatibel formaat te herverpakken. CRS probeert om met meerdere bitsnelheden M3U8-uitvoeringen van de advertentie te genereren en deze uitvoeringen op het netwerk voor de levering van primetime-inhoud (CDN) op te slaan. De volgende keer dat TVSDK een advertentierespons ontvangt die naar die advertentie wijst, gebruikt de speler de HLS-compatibele M3U8-versie van de CDN.
 
 Neem contact op met uw Adobe als u deze optionele functie wilt inschakelen.
-
-Zie [Creative Packaging Service (CRS)](../../../dynamic-ad-insertion/creative-repackaging-service/crs-overview.md) voor meer informatie over CRS.
 
 ## Meerdere CDN-ondersteuning voor CRS en levering {#section_900FDDA5454143718F1EB4C9732C8E1C}
 
