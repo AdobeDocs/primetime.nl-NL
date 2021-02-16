@@ -4,7 +4,7 @@ product: adobe primetime
 audience: end-user
 user-guide-title: Help bij primetime Ad Insertion
 translation-type: tm+mt
-source-git-commit: c6fe809ec079e08f5b1baba7ceeeb5a46b6e0a5a
+source-git-commit: bde82bd062a7980e08cdf2642c9e64be8f074a6e
 workflow-type: tm+mt
 source-wordcount: '161'
 ht-degree: 0%
@@ -17,7 +17,7 @@ ht-degree: 0%
 + [Adobe Primetime Ad Insertion](home.md)
 + Aankondigingen van primetime-Ad Insertion{#announcements}
    + [Aankondigingen](announcements/overview.md)
-   + [Opmerkingen bij de release](/help/release-notes/ptai-20x-release-notes.md)
+   + [Opmerkingen bij de release](/help/release-notes/ptai-21x-release-notes.md)
 + Aan de slag met Primetime Ad Insertion{#get-started}
    + [Overzicht](getting-started/get-started-overview.md)
    + [Voorbereiden op het gebruik van Primetime Ad Insertion](getting-started/setup-ptai.md)
