@@ -2,7 +2,7 @@
 title: Opmerkingen bij de release PTAI 20.12.1
 description: In de PTAI-release wordt beschreven wat nieuw of gewijzigd is, wat de opgeloste en bekende problemen zijn in Primetime Ad Insertion in 2020.
 translation-type: tm+mt
-source-git-commit: 4790c8ab25ca6ecf118adf3037fc2e4e4f451cb3
+source-git-commit: 8133c35bed7fc72a6c642016a2a4b69204ad8f7a
 workflow-type: tm+mt
 source-wordcount: '1081'
 ht-degree: 0%
@@ -22,9 +22,9 @@ Opmerkingen bij de release van Primetime Ad Insertion 20.12.1 beschrijven nieuwe
 
 * Bevat hotfix om problemen met intermitterende clientconnectiviteit (5xx) te verhelpen in Primetime Ad Insertion die op 30 november 2020 zijn aangetroffen.
 
-### Verbeteringen en correcties in vorige releaseversies
+## Verbeteringen en correcties in vorige releaseversies
 
-#### Versie 20.11.1
+### Versie 20.11.1
 
 **Wanneer:** Donderdag, 5 november 2020 van 2:00 uur tot 05:00 uur Oosterse tijd
 
@@ -32,7 +32,7 @@ Opmerkingen bij de release van Primetime Ad Insertion 20.12.1 beschrijven nieuwe
 
 * Onderhoudsupdates.
 
-#### Versie 20.10.2
+### Versie 20.10.2
 
 **Wanneer:** Donderdag, 29 okt, 2020 van 12.01 uur tot 06.00 uur Oosterse tijd
 
@@ -40,7 +40,7 @@ Opmerkingen bij de release van Primetime Ad Insertion 20.12.1 beschrijven nieuwe
 
 * Onderhoudsupdates.
 
-#### Versie 20.10.1
+### Versie 20.10.1
 
 **Wanneer:** Dinsdag, 13 oktober 2020, 03.00 - 07.00 uur Oosterse tijd
 
@@ -48,7 +48,7 @@ Opmerkingen bij de release van Primetime Ad Insertion 20.12.1 beschrijven nieuwe
 
 * Onderhoudsupdates.
 
-#### Versie 20.9.3
+### Versie 20.9.3
 
 **Wanneer:** Woensdag, 30 september, 2020 om 3:30:00 tot 6:30:00 Oosterse Tijd
 
@@ -56,7 +56,7 @@ Opmerkingen bij de release van Primetime Ad Insertion 20.12.1 beschrijven nieuwe
 
 * Toegevoegde Bootstrap API-parameter `ptparallelstream`. Hierdoor kunnen klanten met spelers die CMAF-gedemuleerde audio- of videostreams aanvragen, parallel werken om ervoor te zorgen dat advertenties in audio- en videotracks consistent zijn. Stel de parameterwaarde in op true om deze functie in te schakelen of op weglaten om uit te schakelen.
 
-#### Versie 20.9.2
+### Versie 20.9.2
 
 **Wanneer:** Dinsdag, 15 september 2020 van 3:30 uur tot 6:30 uur Oosterse tijd
 
@@ -71,7 +71,7 @@ Neem voor meer informatie of om deze functie in te schakelen contact op met uw m
    >
    >Deze time-out is alleen van toepassing op advertentieverzoeken en niet op creatieve verzoeken.
 
-#### Versie 20.9.1
+### Versie 20.9.1
 
 **Wanneer:** Dinsdag, 1 september 2020 van 3:30 tot 7:30 Oost Tijd
 
@@ -79,7 +79,7 @@ Neem voor meer informatie of om deze functie in te schakelen contact op met uw m
 
 * Probleem opgelost voor klanten die HLS/CMAF gebruiken, waarbij EXT-X-MAP soms CDN-tokens of EXT-X-MAP-tags niet correct uit het DVR-venster kon worden ingevoerd.
 
-#### Versie 20.8.4
+### Versie 20.8.4
 
 **Wanneer:** Woensdag, 19 augustus 2020, 03.30 uur tot 07.30 uur Oosterse tijd
 
@@ -87,7 +87,7 @@ Neem voor meer informatie of om deze functie in te schakelen contact op met uw m
 
 Onderhoudsupdates.
 
-#### Versie 20.8.1
+### Versie 20.8.1
 
 **Wanneer:** Dinsdag, 4 augustus, 2020 van 3.00 uur tot 6.00 uur Oosterse tijd
 
@@ -95,7 +95,7 @@ Onderhoudsupdates.
 
 Onderhoudsupdates.
 
-#### Versie 20.7.1
+### Versie 20.7.1
 
 **Wanneer:** Donderdag, 9 juli 2020, 03.00 - 05.00 uur Oosterse tijd
 
@@ -109,7 +109,7 @@ Onderhoudsupdates.
 
 * Verbeterd SSAI-consoledashboard voor het deelvenster Sessiestatistieken
 
-#### Versie 20.6.2
+### Versie 20.6.2
 
 **Wanneer:** Donderdag, 18 juni 2020, 03.00 - 04.00 uur Oosterse tijd
 
@@ -117,7 +117,7 @@ Onderhoudsupdates.
 
 Verbeterde streamsynchronisatie voor videoclips die precisie in milliseconden vereisen. Neem contact op met de Adobe-ondersteuning om millisecondenprecisie in te schakelen voor `#EXT-X-PROGRAM-DATE-TIME tags`.
 
-#### Versie 20.6.1
+### Versie 20.6.1
 
 **Wanneer:** Dinsdag, 2 juni, 2020 van 03:00 AM aan 05:00 oosterse Tijd
 
@@ -135,7 +135,7 @@ Neem contact op met de ondersteuning van Adobe om de volgende nieuwe functies in
 
 * Probleem verholpen waarbij EXT-X-DISCONTINUITY-tags van de bovenkant van de afspeellijst werden verwijderd bij het terugschakelen van advertenties naar inhoud. Neem contact op met de Adobe-ondersteuning om deze oplossing in te schakelen.
 
-#### Versie 20.5.1
+### Versie 20.5.1
 
 **Wanneer:** Dinsdag, 5 mei 2020 van 04:00 tot 05:00 uur Oosterse tijd
 
@@ -145,7 +145,7 @@ Neem contact op met de ondersteuning van Adobe om de volgende nieuwe functies in
 
 * Onderhoudsupdates.
 
-#### Versie 20.3.4
+### Versie 20.3.4
 
 **Wanneer:** Woensdag, 1 april 2020 van 03:00 tot 04:00 Oost Tijd
 
@@ -153,7 +153,7 @@ Neem contact op met de ondersteuning van Adobe om de volgende nieuwe functies in
 
 * Beveiligingsupdates.
 
-#### Versie 20.3.3
+### Versie 20.3.3
 
 **Wanneer:** Donderdag, 26 maart 2020, 03.00 - 04.00 uur Oosterse tijd
 
@@ -163,7 +163,7 @@ Neem contact op met de ondersteuning van Adobe om de volgende nieuwe functies in
 
 * Probleem verholpen met CMAF/gedemuxed audiostreams, waarbij in bepaalde scenario&#39;s de EXT-X-MEDIA-SEQUENTIE-nummers onjuist zouden stijgen.
 
-#### Versie 20.3.2
+### Versie 20.3.2
 
 **Wanneer:** Woensdag, 11 maart 2020, 05.30 - 07.00 uur Oosterse tijd
 
@@ -171,7 +171,7 @@ Neem contact op met de ondersteuning van Adobe om de volgende nieuwe functies in
 
 * Onderhoudsupdates.
 
-#### Versie 20.3.1
+### Versie 20.3.1
 
 **Wanneer:** donderdag, 5 maart, 2020 van 02:30 uur tot 04:30 uur Oosterse tijd
 
@@ -183,14 +183,14 @@ Neem contact op met de ondersteuning van Adobe om de volgende nieuwe functies in
 
 * Oplossingen voor beveiliging en onderhoud.
 
-#### Versie 20.2.1
+### Versie 20.2.1
 
 **Wanneer:** Donderdag, 13 februari 2020, 04.30 uur tot 05.30 uur Oosterse tijd
 
 * Toegevoegde ondersteuning voor stitching en assets die meerdere alleen-audio streams bevatten op basis van taal/codec/bitsnelheid.
 * Kleine prestatieverbeteringen en onderhoudsupdates.
 
-#### Versie 20.1.3
+### Versie 20.1.3
 
 **Wanneer:** Dinsdag, 28 januari, 2020 van 2:00 AM aan 03:00 oosterse Tijd
 
@@ -204,13 +204,13 @@ Neem contact op met de ondersteuning van Adobe om de volgende nieuwe functies in
 
 * Verwijder oude V1-objecten van NetStorage-groepen om het aantal objecten binnen de veilige grenzen van Akamai te houden.
 
-#### Versie 20.1.2 (hotfix)
+### Versie 20.1.2 (hotfix)
 
 **Wanneer:** Maandag, 20 januari, 2020 van 02:00 AM aan 03:00 Oost Tijd
 
 * Onderhoudsupdates.
 
-#### Versie 20.1.1
+### Versie 20.1.1
 
 **Wanneer:** Woensdag, 15 januari 2020 van 04.00 uur tot 05.00 uur Oosterse tijd
 
