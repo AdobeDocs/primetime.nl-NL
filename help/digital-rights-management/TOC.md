@@ -68,7 +68,7 @@ ht-degree: 0%
    + Verpakkingsopties {#packaging-options}
       + [De meegeleverde Offline Packager Primetime gebruiken](cloud-quick-start/packaging-options/use-offline-packager.md)
       + [Codeermodule van derden gebruiken](cloud-quick-start/packaging-options/use-third-party-encoder.md)
-      + [Adobe Media Server gebruiken](cloud-quick-start/packaging-options/use-adobe-media-server.md)
+      + [Adobe Media-server gebruiken](cloud-quick-start/packaging-options/use-adobe-media-server.md)
    + [De inhoud van het pakket testen](cloud-quick-start/test-packaged-content.md)
    + [Trigfouten](cloud-quick-start/triaging-errors/client-error-triaging.md)
    + Aangepaste verificatie/machtiging {#custom-auth-ent}
@@ -192,8 +192,8 @@ ht-degree: 0%
    + Beperkingen bij uitvoering en toepassing {#runtime-application-restrictions}
       + [Lijst van gewenste personen voor Primetime DRM-toepassingen is toegestaan om beveiligde inhoud af te spelen...](protecting-content/introduction/usage-rules/runtime-application-restrictions/allowlist-air.md)
       + [Lijst van gewenste personen voor SWF-bestanden van Adobe® Flash® Player](protecting-content/introduction/usage-rules/runtime-application-restrictions/allowlist-flash.md)
-      + [Lijst van afgewezen personen van DRM-clients die geen toegang hebben tot beveiligde inhoud](protecting-content/introduction/usage-rules/runtime-application-restrictions/blocklist-drm-clients.md)
-      + [Lijst van afgewezen personen van toepassingsruntimes](protecting-content/introduction/usage-rules/runtime-application-restrictions/blocklist-app-runtimes.md)
+      + [Lijst van gewezen personen van DRM-clients die geen toegang hebben tot beveiligde inhoud](protecting-content/introduction/usage-rules/runtime-application-restrictions/blocklist-drm-clients.md)
+      + [Lijst van gewezen personen van toepassingsruntimes](protecting-content/introduction/usage-rules/runtime-application-restrictions/blocklist-app-runtimes.md)
       + [Minimumbeveiligingsniveau voor DRM en runtimes](protecting-content/introduction/usage-rules/runtime-application-restrictions/min-sec-level-for-drm.md)
       + [Apparaatmogelijkheden vereist om beveiligde inhoud af te spelen](protecting-content/introduction/usage-rules/runtime-application-restrictions/device-capabilities.md)
       + [Jailbreak-handhaving (vereist Adobe Primetime DRM)](protecting-content/introduction/usage-rules/runtime-application-restrictions/jailbreak-enforcement.md)
@@ -427,8 +427,8 @@ ht-degree: 0%
    + Beperkingen bij uitvoering en toepassing {#runtime-and-application-restrictions}
       + [Lijst van gewenste personen voor Adobe® Primetime toepassingen toegestaan om beveiligde inhoud af te spelen](aaxs-protecting-content/content-introduction/content-usage-rules/content-runtime-application-restrictions/content-allowlist-air.md)
       + [Lijst van gewenste personen voor SWF-bestanden van Adobe® Flash® Player die beveiligde inhoud mogen afspelen](aaxs-protecting-content/content-introduction/content-usage-rules/content-runtime-application-restrictions/content-allowlist-flash.md)
-      + [Lijst van afgewezen personen van DRM-clients die geen toegang hebben tot beveiligde inhoud](aaxs-protecting-content/content-introduction/content-usage-rules/content-runtime-application-restrictions/content-blocklist-drm-clients.md)
-      + [Lijst van afgewezen personen van toepassingsruntimes die toegang hebben tot beveiligde inhoud](aaxs-protecting-content/content-introduction/content-usage-rules/content-runtime-application-restrictions/content-blocklist-app-runtimes.md)
+      + [Lijst van gewezen personen van DRM-clients die geen toegang hebben tot beveiligde inhoud](aaxs-protecting-content/content-introduction/content-usage-rules/content-runtime-application-restrictions/content-blocklist-drm-clients.md)
+      + [Lijst van gewezen personen van toepassingsruntimes die toegang hebben tot beveiligde inhoud](aaxs-protecting-content/content-introduction/content-usage-rules/content-runtime-application-restrictions/content-blocklist-app-runtimes.md)
       + [Minimumbeveiligingsniveau voor DRM en runtimes](aaxs-protecting-content/content-introduction/content-usage-rules/content-runtime-application-restrictions/content-min-sec-level-for-drm.md)
       + [Apparaatmogelijkheden vereist om beveiligde inhoud af te spelen](aaxs-protecting-content/content-introduction/content-usage-rules/content-runtime-application-restrictions/content-device-capabilities.md)
       + [Jailbreak Enforcement (vereist Adobe Primetime)](aaxs-protecting-content/content-introduction/content-usage-rules/content-runtime-application-restrictions/content-jailbreak-enforcement.md)
