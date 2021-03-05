@@ -4,9 +4,9 @@ seo-title: Opmerkingen bij de release van Adobe Primetime
 description: 'null'
 seo-description: 'null'
 translation-type: tm+mt
-source-git-commit: 0c0ef7249688137a67482eab902e9d188b4c661c
+source-git-commit: a42c5b4478967822c920d96b05d5f04a6dec8c25
 workflow-type: tm+mt
-source-wordcount: '297'
+source-wordcount: '345'
 ht-degree: 0%
 
 ---
@@ -20,11 +20,13 @@ Welkom bij de Adobe Primetime Release Notes. De documenten die in de linkernavig
 
 De release bevat ondersteuning voor het invoegen/synchroniseren van EXT-X-IMAGE-STREAM-INF-streams in HLS-streams. De eigenschap wordt toegelaten door een server-zijconfiguratie. Neem contact op met de vertegenwoordiger van uw technische account om deze functie in te schakelen.
 
-## Oplossingen in TVSDK 3.12 Android
+## Oplossingen in TVSDK 3.13 Android
 
-De release was vooral gericht op het bijwerken van de greep-versie van de toepassing Primetime Reference naar versie 5.6.4.
+Deze release biedt een oplossing voor het probleem van het stilzetten van de Widevine DRM-stream of het tonen van zwarte frames op ABR-apparaten op FireTV, waaronder Fire TV-apparaten van de derde generatie en Fire TV-apparaten van de eerste en tweede generatie.
 
-Raadpleeg de voor meer informatie over de huidige uitgebrachte versie voor [Android](../release-notes/tvsdk-3x-android.md).
+Stel de API `MediaPlayer.flushVideoDecoderOnHeaderChange(true)` voor de opgegeven Fire TV-apparaten in voordat u het afspelen start om het probleem op te lossen. De standaardwaarde is false.
+
+Raadpleeg [TVSDK voor opmerkingen bij de Android-release](../release-notes/tvsdk-3x-android.md) voor meer informatie.
 
 ## Verbeteringen en correcties in Opmerkingen bij de release TVSDK 3.12 iOS
 
