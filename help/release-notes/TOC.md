@@ -5,7 +5,7 @@ audience: end-user
 user-guide-title: Opmerkingen bij de release Primetime
 user-guide-description: Verstrekt versie-specifieke informatie, systeemvereisten, beperkingen, vaste kwesties, en bekende kwesties.
 translation-type: tm+mt
-source-git-commit: 61a6c039685c3c6a937e2c98ffa3baf51455507b
+source-git-commit: a42c5b4478967822c920d96b05d5f04a6dec8c25
 workflow-type: tm+mt
 source-wordcount: '114'
 ht-degree: 0%
@@ -24,7 +24,7 @@ ht-degree: 0%
    + [Opmerkingen bij de release TVSDK 3.12 voor iOS](tvsdk-3x-ios.md)
    + [Opmerkingen bij de release TVSDK 1.4 voor iOS](tvsdk-1-4-ios.md)
 + TVSDK voor Android {#tvsdk-android}
-   + [Opmerkingen bij de release TVSDK 3.12 voor Android](tvsdk-3x-android.md)
+   + [Opmerkingen bij de release TVSDK 3.13 voor Android](tvsdk-3x-android.md)
    + [Opmerkingen bij de release TVSDK 2.7 voor Android](tvsdk-27-android.md)
    + [Opmerkingen bij de release TVSDK 2.4.1 voor Android](tvsdk-24-android.md)
    + [Opmerkingen bij de release TVSDK 1.4 voor Android](tvsdk-1-4-android.md)
