@@ -1,24 +1,24 @@
 ---
-title: Opmerkingen bij de release TVSDK 3.12 voor Android
-seo-title: Opmerkingen bij de release TVSDK 3.12 voor Android
-description: De opmerkingen bij de release TVSDK 3.12 voor Android beschrijven wat nieuw of gewijzigd is, de opgeloste en bekende problemen en de apparaatproblemen in TVSDK Android 3.12
-seo-description: De opmerkingen bij de release TVSDK 3.12 voor Android beschrijven wat nieuw of gewijzigd is, de opgeloste en bekende problemen en de apparaatproblemen in TVSDK Android 3.12
+title: Opmerkingen bij de release TVSDK 3.13 voor Android
+seo-title: Opmerkingen bij de release TVSDK 3.13 voor Android
+description: De opmerkingen bij de release TVSDK 3.13 voor Android beschrijven wat nieuw of gewijzigd is, de opgeloste en bekende problemen en de apparaatproblemen in TVSDK Android 3.13
+seo-description: De opmerkingen bij de release TVSDK 3.13 voor Android beschrijven wat nieuw of gewijzigd is, de opgeloste en bekende problemen en de apparaatproblemen in TVSDK Android 3.13
 uuid: 685d46f5-5a02-4741-af5c-91e91babd6f7
 products: SG_PRIMETIME
 topic-tags: release-notes
 discoiquuid: 3a27379f-3cef-4ea3-bcae-21382dc1e9fd
 translation-type: tm+mt
-source-git-commit: 33509042e32c2167fab21788042bfb2bb877c0f4
+source-git-commit: a42c5b4478967822c920d96b05d5f04a6dec8c25
 workflow-type: tm+mt
-source-wordcount: '5418'
+source-wordcount: '5471'
 ht-degree: 0%
 
 ---
 
 
-# Opmerkingen bij de release TVSDK 3.12 voor Android {#tvsdk-for-android-release-notes}
+# Opmerkingen bij de release van TVSDK 3.13 voor Android {#tvsdk-for-android-release-notes}
 
-In de Release-notities van TVSDK 3.12 voor Android wordt beschreven wat nieuw of gewijzigd is, welke problemen zijn opgelost en welke problemen bekend zijn en wat de apparaatproblemen zijn in TVSDK Android 3.12.
+In de Release-notities van TVSDK 3.13 voor Android wordt beschreven wat nieuw of gewijzigd is, welke problemen zijn opgelost en welke problemen bekend zijn en wat de apparaatproblemen zijn in TVSDK Android 3.13.
 
 De Android-referentiespeler wordt geleverd bij Android TVSDK in de map samples/directory van uw distributie. In het bijbehorende bestand README.md wordt uitgelegd hoe u de referentiespeler kunt maken.
 
@@ -34,6 +34,14 @@ TVSDK voor Android biedt veel prestatieverbeteringen ten opzichte van eerdere ve
 
 De uitgebreide reeks functies die worden ondersteund en niet worden ondersteund, worden weergegeven in de sectie [Matrix met functies](#feature-matrix) van de releaseopmerkingen.
 
+## Android TVSDK 3.13
+
+De stroom van DRM van Widevine bevriest of toont zwarte kaders op ABR schakelaar op apparaten FireTV, die de Behoort van de derde generatie van de Buur van de Vuur en de Apparaten van de Kolom van de Tweede en van de Tweede generatie van de Vuur TV omvatten.
+
+Stel de API `MediaPlayer.flushVideoDecoderOnHeaderChange(true)` voor de opgegeven Fire TV-apparaten in voordat u het afspelen start om het probleem op te lossen. De standaardwaarde is false.
+
+### Nieuwe en verbeterde functies in de vorige versies
+
 ## Android TVSDK 3.12
 
 De gradle-versie van de toepassing Primetime-verwijzing wordt nu bijgewerkt naar versie 5.6.4.
@@ -41,8 +49,6 @@ De gradle-versie van de toepassing Primetime-verwijzing wordt nu bijgewerkt naar
 Als u een referentietoepassing wilt instellen en uitvoeren met Android Studio, volgt u de instructies uit het Lees mij-bestand dat beschikbaar is met TVSDK ZIP op `TVSDK_Android_x.x.x.x/samples/PrimetimeReference/src/README.md`.
 
 De belangrijkste klantproblemen die in de huidige release zijn opgelost, worden vermeld in [sectie Opgeloste problemen](#resolved-issues).
-
-### Nieuwe en verbeterde functies in de vorige versies
 
 **Android TVSDK 3.11**
 
@@ -251,7 +257,7 @@ Android TVSDK v2.5.3 biedt de volgende updates en API-wijzigingen.
 
 Android TVSDK v2.5.2 biedt belangrijke foutoplossingen en enkele API-wijzigingen.
 
-**Versie 1.5.1**
+**Versie 2.5.1**
 
 De belangrijke nieuwe functies die zijn uitgebracht in Android 2.5.1.
 
@@ -296,7 +302,7 @@ Wanneer TVSDK een verbinding opent, vraagt het de server om een *keep-live* verb
 
    * **Directe integratie van facturering -** Dit verzendt factureringsmetriek naar Adobe Analytics backend, die door Adobe Primetime voor stromen wordt verklaard die door de klant worden gebruikt.
 
-   TVSDK verzamelt automatisch meetgegevens, met inachtneming van het verkoopcontract van de klant, om periodieke gebruiksrapporten te genereren die voor factureringsdoeleinden worden vereist. Bij elke streamstartgebeurtenis gebruikt TVSDK de API voor het invoegen van Adobe Analytics-gegevens om factuurmetriek, zoals inhoudssoort, voor het invoegen ingeschakelde vlaggen en voor het drm ingeschakelde vlaggen - gebaseerd op de duur van de factureerbare stream - naar de Adobe Analytics Primetime-rapportsuite te verzenden. Dit heeft geen invloed op of wordt niet opgenomen in de eigen Adobe Analytics-rapportreeksen of serveraanroepen van de klant. Op verzoek wordt dit gebruiksrapport voor facturering periodiek naar klanten verzonden. Dit is de eerste fase van de factureringsfunctie die alleen gebruiksfacturering ondersteunt. Het kan worden gevormd gebaseerd op het verkoopcontract gebruikend APIs die in de documentatie worden beschreven. Deze functie is standaard ingeschakeld. Raadpleeg het voorbeeld voor de referentiespeler als u deze functie wilt uitschakelen.
+   TVSDK verzamelt automatisch metriek, met inachtneming van het klantenverkoopcontract om periodieke gebruiksrapporten te produceren die voor factureringsdoeleinden worden vereist. Bij elke streamstartgebeurtenis gebruikt TVSDK de API voor het invoegen van Adobe Analytics-gegevens om factuurmetriek, zoals inhoudssoort, voor het invoegen ingeschakelde vlaggen en voor het drm ingeschakelde vlaggen - gebaseerd op de duur van de factureerbare stream - naar de Adobe Analytics Primetime-rapportsuite te verzenden. Dit heeft geen invloed op of wordt niet opgenomen in de eigen Adobe Analytics-rapportreeksen of serveraanroepen van de klant. Op verzoek wordt dit gebruiksrapport voor facturering periodiek naar klanten verzonden. Dit is de eerste fase van de factureringsfunctie die alleen gebruiksfacturering ondersteunt. Het kan worden gevormd gebaseerd op het verkoopcontract gebruikend APIs die in de documentatie worden beschreven. Deze functie is standaard ingeschakeld. Raadpleeg het voorbeeld voor de referentiespeler als u deze functie wilt uitschakelen.
 
    * **Verbeterde failover-ondersteuning -** Aanvullende strategieën die zijn geïmplementeerd om het afspelen zonder onderbreking voort te zetten, ondanks fouten met hostservers, afspeelbestanden en segmenten.
 
@@ -371,7 +377,7 @@ In de onderstaande tabel met functies geeft een &#39;Y&#39; aan dat de functie w
 | Zwart-out van advertenties | VOD + Live | Niet ondersteund |
 | Direct aan | VOD + Live | Niet ondersteund |
 | Ondersteuning van discontinue markeertekens | VOD + Live | Y |
-| 302 Draairichting | VOD + Live | Y |
+| 302 Voortleidingsgevoeligheid | VOD + Live | Y |
 
 | Functie | Inhoudstype | HLS |
 |---|---|---|
@@ -739,7 +745,7 @@ Deze versie heeft de volgende problemen:
 Deze versie heeft de volgende problemen:
 
 * Het afspelen van live video kan problemen met audio- en videosynchronisatie hebben op eenvoudige apparaten.
-* Het afspelen kan op momenten stagneren wanneer wordt gezocht naar het einde van de VOD-media.
+* Afspelen kan op momenten stagneren wanneer wordt gezocht naar het einde van de VOD-media.
 * Voor FER stromen, kunnen virtualTime en localTime verschillen. FER met verschuiving werkt ook niet.
 
 **Android TVSDK 2.5.1**
