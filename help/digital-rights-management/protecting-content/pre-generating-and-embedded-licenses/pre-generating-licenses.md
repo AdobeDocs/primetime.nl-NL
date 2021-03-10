@@ -1,13 +1,10 @@
 ---
 description: Als u Adobe Primetime DRM Professional gebruikt, kunt u licenties vooraf genereren en licenties insluiten in inhoud. Deze functie kan worden gecombineerd met 'Enhanced License Chaining', zodat een Leaf-licentie vooraf wordt gegenereerd en ingesloten in de inhoud, en de client kan een basislicentie (gebonden aan een computer of domein) aanvragen bij een licentieserver. Als alternatief kunnen clienttoepassingen een workflow implementeren waarbij het apparaat zich vooraf bij een server registreert, de server licenties vooraf genereert die aan dat apparaat zijn gebonden en de client de licenties ophaalt van een eenvoudige HTTP-webserver.
-seo-description: Als u Adobe Primetime DRM Professional gebruikt, kunt u licenties vooraf genereren en licenties insluiten in inhoud. Deze functie kan worden gecombineerd met 'Enhanced License Chaining', zodat een Leaf-licentie vooraf wordt gegenereerd en ingesloten in de inhoud, en de client kan een basislicentie (gebonden aan een computer of domein) aanvragen bij een licentieserver. Als alternatief kunnen clienttoepassingen een workflow implementeren waarbij het apparaat zich vooraf bij een server registreert, de server licenties vooraf genereert die aan dat apparaat zijn gebonden en de client de licenties ophaalt van een eenvoudige HTTP-webserver.
-seo-title: Vooraf gegenereerde licenties
 title: Vooraf gegenereerde licenties
-uuid: aa7d5038-5a9b-40a2-a240-266622158b43
 translation-type: tm+mt
-source-git-commit: 1b9792a10ad606b99b6639799ac2aacb707b2af5
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '704'
+source-wordcount: '611'
 ht-degree: 0%
 
 ---
