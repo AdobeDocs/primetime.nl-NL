@@ -1,9 +1,9 @@
 ---
-seo-title: Gedeeltelijk versleutelingsniveau
 title: Gedeeltelijk versleutelingsniveau
-uuid: dbd9ce92-c829-4cad-9ac4-c57bd4f70345
+description: Gedeeltelijk versleutelingsniveau
+copied-description: true
 translation-type: tm+mt
-source-git-commit: 1b9792a10ad606b99b6639799ac2aacb707b2af5
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
 source-wordcount: '279'
 ht-degree: 0%
@@ -29,4 +29,4 @@ Vanwege de aard van videocodering is het niet nodig om 100% van de video te code
 
 Deze montages werden ontworpen gebruikend de volgende regel: Alle inhoud die bij de lage instelling is gecodeerd, wordt ook gecodeerd bij de gemiddelde instelling. Dit zorgt ervoor dat hetzelfde stuk inhoud dat bij lage codering door de ene partij wordt gedistribueerd en met gemiddelde codering door een andere partij wordt gedistribueerd, de bescherming van de inhoud niet in gevaar brengt.
 
-Voorbeeld van gebruik: Door het coderingsniveau te verlagen, wordt de decoderingsoverhead op de client verminderd en worden de afspeelprestaties op computers met een laag bereik verbeterd.
+Voorbeeld van gebruik: Door het coderingsniveau te verlagen, verlaagt u de decoderingsoverhead op de client en verbetert u de afspeelprestaties op computers met een laag bereik.
