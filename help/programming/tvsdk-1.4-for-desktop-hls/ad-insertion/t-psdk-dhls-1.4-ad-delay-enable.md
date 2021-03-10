@@ -1,13 +1,10 @@
 ---
 description: U kunt opgeven of het afspelen is toegestaan voordat alle advertenties zijn geladen en in de tijdlijn zijn geplaatst. Als u het afspelen op deze manier start, heeft een viewer sneller toegang tot de hoofdinhoud. Deze functie is alleen van toepassing op levende DVR en werkt niet aan VOD-activa.
-seo-description: U kunt opgeven of het afspelen is toegestaan voordat alle advertenties zijn geladen en in de tijdlijn zijn geplaatst. Als u het afspelen op deze manier start, heeft een viewer sneller toegang tot de hoofdinhoud. Deze functie is alleen van toepassing op levende DVR en werkt niet aan VOD-activa.
-seo-title: Lazy en laden inschakelen
 title: Lazy en laden inschakelen
-uuid: ac7c8801-7fa2-4f17-b79c-c603b3236948
 translation-type: tm+mt
-source-git-commit: 040655d8ba5f91c98ed0584c08db226ffe1e0f4e
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '345'
+source-wordcount: '294'
 ht-degree: 0%
 
 ---
