@@ -1,13 +1,10 @@
 ---
 description: Browser-TVSDK heeft standaard logboekregistratie ingeschakeld. Het biedt ook API-ondersteuning om logboekregistratie vanuit de SDK in of uit te schakelen. Gebruik de API AdobePSDK.LogManager.enableLogging om de logbestanden in of uit te schakelen.
-seo-description: Browser-TVSDK heeft standaard logboekregistratie ingeschakeld. Het biedt ook API-ondersteuning om logboekregistratie vanuit de SDK in of uit te schakelen. Gebruik de API AdobePSDK.LogManager.enableLogging om de logbestanden in of uit te schakelen.
-seo-title: Foutopsporing en logboekregistratie
 title: Foutopsporing en logboekregistratie
-uuid: c0970525-975f-4252-8ca2-7c1ebde09983
 translation-type: tm+mt
-source-git-commit: 040655d8ba5f91c98ed0584c08db226ffe1e0f4e
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '96'
+source-wordcount: '64'
 ht-degree: 0%
 
 ---
