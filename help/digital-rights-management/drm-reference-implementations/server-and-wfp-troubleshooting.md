@@ -1,13 +1,11 @@
 ---
-description: 'null'
-seo-description: 'null'
-seo-title: Problemen oplossen
 title: Problemen oplossen
-uuid: 06b86067-1ff6-4b4e-922f-7f968260ba19
+description: Problemen oplossen
+copied-description: true
 translation-type: tm+mt
-source-git-commit: 29bc8323460d9be0fce66cbea7c6fce46df20d61
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '98'
+source-wordcount: '96'
 ht-degree: 0%
 
 ---
@@ -40,5 +38,5 @@ Hier volgen enkele problemen en oplossingen die u tijdens de implementatie kunt 
    "javax.crypto.BadPaddingException: Given final block not properly padded"
    ```
 
-   Zorg ervoor dat u de wachtwoordscrambler-klasse *gebruikt die bij de implementatie van de Verwijzing is geleverd*. Dit hulpprogramma is anders dan het hulpprogramma dat is meegeleverd bij de Adobe Primetime DRM-server voor beveiligde streaming.
+   Zorg ervoor dat u de wachtwoordscrambler-klasse *gebruikt die is meegeleverd bij Referentie-implementatie*. Dit hulpprogramma is anders dan het hulpprogramma dat is meegeleverd bij de Adobe Primetime DRM-server voor beveiligde streaming.
 
