@@ -1,9 +1,9 @@
 ---
-seo-title: Eigenschappen van configuratiebestand
 title: Eigenschappen van configuratiebestand
-uuid: aec5fee7-4d77-4299-8d85-3e9042b2bbd1
+description: Eigenschappen van configuratiebestand
+copied-description: true
 translation-type: tm+mt
-source-git-commit: 9d2e046ae259c05fb4c278f464c9a26795e554fc
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
 source-wordcount: '1121'
 ht-degree: 0%
@@ -76,11 +76,11 @@ In het configuratiebestand worden de volgende eigenschappen opgegeven. Voor eige
   </tr> 
   <tr rowsep="1" class="- topic/row "> 
    <td colname="1" class="- topic/entry "><span class="codeph"> policy.drmVersionBlacklist.n</span> <p class="- topic/p "><span class="codeph"> -</span> <i class="+ topic/ph hi-d/i ">drmBlacklistname/value-pairs</i> </p> </td> 
-   <td colname="2" class="- topic/entry ">DRM-clients hebben toegang tot beveiligde inhoud beperkt. Met deze optie geeft u een lijst op met versies van DRM-modules die niet mogen worden gebruikt (lijst van afgewezen personen). De waarde bestaat uit door komma's gescheiden naam=waarde paren met de volgende notatie: <p class="- topic/p "><span class="+ topic/ph pr-d/codeph codeph"> os|release|arch|model|leverancier|env|screen=value</span> </p> <p class="- topic/p ">De extra naam/waardeparen moeten komma-gescheiden zijn. Bijvoorbeeld: <span class="codeph"> os=Win,release=2.0,arch=32</span>. </p> </td> 
+   <td colname="2" class="- topic/entry ">DRM-clients hebben toegang tot beveiligde inhoud beperkt. Met deze optie geeft u een lijst op met versies van DRM-modules die niet mogen worden gebruikt (lijst van gewezen personen). De waarde bestaat uit door komma's gescheiden naam=waarde paren met de volgende notatie: <p class="- topic/p "><span class="+ topic/ph pr-d/codeph codeph"> os|release|arch|model|leverancier|env|screen=value</span> </p> <p class="- topic/p ">De extra naam/waardeparen moeten komma-gescheiden zijn. Bijvoorbeeld: <span class="codeph"> os=Win,release=2.0,arch=32</span>. </p> </td> 
   </tr> 
   <tr rowsep="1" class="- topic/row "> 
    <td colname="1" class="- topic/entry "><span class="codeph"> policy.runtimeVersionBlacklist.n</span> <p class="- topic/p "><span class="codeph"> -</span> <i class="+ topic/ph hi-d/i ">runtimeBlacklsitname/value-pairs</i> </p> </td> 
-   <td colname="2" class="- topic/entry ">Toepassingsruntimes hebben geen toegang tot beveiligde inhoud. Met deze optie geeft u een lijst op met versies van runtimemodules die mogelijk niet worden gebruikt (lijst van afgewezen personen). De waarde bestaat uit door komma's gescheiden naam=waarde paren met de volgende notatie: <p class="- topic/p "><span class="+ topic/ph pr-d/codeph codeph"> os|release|toepassing|arch|model|leverancier|env|screen=value</span> </p> <p class="- topic/p ">De extra naam/waardeparen moeten komma-gescheiden zijn. Bijvoorbeeld <span class="codeph"> os=Win,application=AIR</span>. </p> </td> 
+   <td colname="2" class="- topic/entry ">Toepassingsruntimes hebben geen toegang tot beveiligde inhoud. Met deze optie geeft u een lijst op met versies van runtimemodules die mogelijk niet worden gebruikt (lijst van gewezen personen). De waarde bestaat uit door komma's gescheiden naam=waarde paren met de volgende notatie: <p class="- topic/p "><span class="+ topic/ph pr-d/codeph codeph"> os|release|toepassing|arch|model|leverancier|env|screen=value</span> </p> <p class="- topic/p ">De extra naam/waardeparen moeten komma-gescheiden zijn. Bijvoorbeeld <span class="codeph"> os=Win,application=AIR</span>. </p> </td> 
   </tr> 
   <tr rowsep="1" class="- topic/row "> 
    <td colname="1" class="- topic/entry "><span class="codeph"> policy.v1DeviceCapabilities</span> <p class="- topic/p "><span class="codeph"> -devCapabilitiesV1</span> <i class="+ topic/ph hi-d/i ">naam/waarde-paren</i> </p> </td> 
