@@ -1,13 +1,10 @@
 ---
 description: Gebruik het bevel van de GET van HTTP om met de manifestserver in wisselwerking te staan.
-seo-description: Gebruik het bevel van de GET van HTTP om met de manifestserver in wisselwerking te staan.
-seo-title: Een opdracht naar de manifest-server verzenden
 title: Een opdracht naar de manifest-server verzenden
-uuid: e9680563-d268-406d-87ce-1521a677e9ec
 translation-type: tm+mt
-source-git-commit: e437f4143fb939f46d106c64efc391137c33fe17
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '253'
+source-wordcount: '235'
 ht-degree: 0%
 
 ---
