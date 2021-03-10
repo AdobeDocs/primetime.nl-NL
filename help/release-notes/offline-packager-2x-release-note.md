@@ -1,17 +1,13 @@
 ---
 title: Release 2.x van de Offline Packager van Primetime
-seo-title: Release 2.x van de Offline Packager van Primetime
 description: Nieuw in de versies van Primetime Offline Packager 2.1 en 2.3.1
-seo-description: Nieuw in de versies van Primetime Offline Packager 2.1 en 2.3.1
-uuid: 01926a10-890d-477d-b832-e22847d957e0
 contentOwner: asgupta
 products: SG_PRIMETIME
 topic-tags: release-notes
-discoiquuid: 933a0711-846a-4bb7-bf51-b300822a93d4
 translation-type: tm+mt
-source-git-commit: e644e8497e118e2d03e72bef727c4ce1455d68d6
+source-git-commit: b33240bf1b42b80389cd95a7ae4d3f85185a2d32
 workflow-type: tm+mt
-source-wordcount: '651'
+source-wordcount: '638'
 ht-degree: 0%
 
 ---
@@ -74,7 +70,7 @@ Softwarevereisten
 
 ### Adobe Primetime Offline Packager 2.3.1 {#adobe-primetime-offline-packager-1}
 
-1. Download de Java SE-software van de [Oracle-site](https://www.oracle.com/technetwork/java/javase/downloads/index.html) en volg de installatie-instructies.
+1. Download de Java SE-software van [Oracle site](https://www.oracle.com/technetwork/java/javase/downloads/index.html) en volg de installatie-instructies.
 1. Extraheer het archiefbestand `PrimetimeOfflinePackager-2-3-1-b47-10142016.zip` van Adobe Primetime Offline Packager 2.3.1 naar de schijf.
 
 ### Het vormen van Offline Packager 2.3.1 {#configuring-the-offline-packager}
@@ -126,7 +122,7 @@ De volgende problemen zijn ook opgelost in deze release.
 
 ### Offline Packager 2.1 {#installing-offline-packager} installeren
 
-1. Download de Java SE-software van de [Oracle-site](https://www.oracle.com/technetwork/java/javase/downloads/index.html) en volg de installatie-instructies.
+1. Download de Java SE-software van [Oracle site](https://www.oracle.com/technetwork/java/javase/downloads/index.html) en volg de installatie-instructies.
 1. Pak `Adobe Primetime - Offline Packager 2.1.0 archive file, PrimetimeOfflinePackager-2-1-0-b15-07082015.zip` uit op de schijf.
 
 ### Het vormen Offline Packager 2.1 {#configuring-the-offline-packager-1}
