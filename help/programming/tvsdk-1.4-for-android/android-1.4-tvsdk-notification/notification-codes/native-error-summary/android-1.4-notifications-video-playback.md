@@ -1,13 +1,10 @@
 ---
 description: De interface Video Encoder van AVE keert deze videoplaybackberichten in het NATIVE_ERROR meta-gegevensvoorwerp terug.
-seo-description: De interface Video Encoder van AVE keert deze videoplaybackberichten in het NATIVE_ERROR meta-gegevensvoorwerp terug.
-seo-title: NATIVE_ERROR-waarden voor het afspelen van video
 title: NATIVE_ERROR-waarden voor het afspelen van video
-uuid: fbc08ecd-2e28-41ad-955b-557358bccdc8
 translation-type: tm+mt
-source-git-commit: 5908e5a3521966496aeec0ef730e4a704fddfb68
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '1430'
+source-wordcount: '1407'
 ht-degree: 6%
 
 ---
@@ -37,7 +34,7 @@ De interface Video Encoder van AVE keert deze videoplaybackberichten in het NATI
    <td colname="col3"> Bewerking gelukt. </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> 1 </td> 
+   <td colname="col1"> 3 </td> 
    <td colname="col2"> <span class="codeph"> ASYNC_OPERATION_IN_PROGRESS</span> </td> 
    <td colname="col3"> Asynchrone bewerking. Het verzoek om een bewerking is uitgevoerd. Informatie over succes/fout is later beschikbaar. </td> 
   </tr> 
@@ -47,7 +44,7 @@ De interface Video Encoder van AVE keert deze videoplaybackberichten in het NATI
    <td colname="col3"> Bewerking niet mogelijk vanwege bestandseinde (EOF). </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> 1 </td> 
+   <td colname="col1"> 3 </td> 
    <td colname="col2"><span class="codeph"> DECODER_FAILED</span> </td> 
    <td colname="col3"> De decoder is mislukt bij uitvoering. </td> 
   </tr> 
