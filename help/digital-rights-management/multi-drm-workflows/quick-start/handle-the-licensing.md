@@ -1,13 +1,10 @@
 ---
 description: Licentieverlening is het belangrijkste mechanisme waarbij gebruikers de mogelijkheid wordt geboden of geweigerd om een stuk beveiligde video-inhoud af te spelen. Een wettige (gerechtigde) gebruiker kan een vergunning (een sleutel) worden verleend om een specifiek stuk van de gecodeerde inhoud van zijn inhoudsleverancier te decrypteren en te spelen.
-seo-description: Licentieverlening is het belangrijkste mechanisme waarbij gebruikers de mogelijkheid wordt geboden of geweigerd om een stuk beveiligde video-inhoud af te spelen. Een wettige (gerechtigde) gebruiker kan een vergunning (een sleutel) worden verleend om een specifiek stuk van de gecodeerde inhoud van zijn inhoudsleverancier te decrypteren en te spelen.
-seo-title: Licentie
 title: Licentie
-uuid: 9f433d62-5609-4d88-95fd-c1e7c0f6aa75
 translation-type: tm+mt
-source-git-commit: 1b9792a10ad606b99b6639799ac2aacb707b2af5
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '393'
+source-wordcount: '346'
 ht-degree: 0%
 
 ---
