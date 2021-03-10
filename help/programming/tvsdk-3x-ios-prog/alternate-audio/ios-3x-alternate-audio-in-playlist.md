@@ -1,13 +1,10 @@
 ---
 description: Met alternatief geluid (late binding) kunt u schakelen tussen beschikbare audiotracks voor een videotrack. Op deze manier kunnen gebruikers een taaltrack selecteren wanneer de video wordt afgespeeld.
-seo-description: Met alternatief geluid (late binding) kunt u schakelen tussen beschikbare audiotracks voor een videotrack. Op deze manier kunnen gebruikers een taaltrack selecteren wanneer de video wordt afgespeeld.
-seo-title: Alternatieve audiotracks in de afspeellijst
 title: Alternatieve audiotracks in de afspeellijst
-uuid: 6241d3e4-6e07-44fb-bc0e-5d49d1a76824
 translation-type: tm+mt
-source-git-commit: 557f42cd9a6f356aa99e13386d9e8d65e043a6af
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '306'
+source-wordcount: '271'
 ht-degree: 0%
 
 ---
