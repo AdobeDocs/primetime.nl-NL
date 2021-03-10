@@ -1,13 +1,11 @@
 ---
-description: 'null'
-seo-description: 'null'
-seo-title: Informatie over Adobe Access Server voor beveiligde streaming
 title: Informatie over Adobe Access Server voor beveiligde streaming
-uuid: a02a98ad-bb1a-4c1f-931d-412945561a8c
+description: Informatie over Adobe Access Server voor beveiligde streaming
+copied-description: true
 translation-type: tm+mt
-source-git-commit: 29bc8323460d9be0fce66cbea7c6fce46df20d61
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '149'
+source-wordcount: '147'
 ht-degree: 0%
 
 ---
