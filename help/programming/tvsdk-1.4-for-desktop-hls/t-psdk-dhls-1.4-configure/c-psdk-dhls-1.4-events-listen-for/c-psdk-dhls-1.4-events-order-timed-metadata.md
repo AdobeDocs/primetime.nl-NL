@@ -1,13 +1,10 @@
 ---
 description: TVSDK verzendt gebeurtenissen met getimede metagegevens en genereert getimede metagegevens wanneer standaard- of aangepaste tags worden aangetroffen of wanneer een afspeellijst in een manifest verandert. Gebeurtenissen worden verzonden in de volgorde waarin ze in het manifest voorkomen.
-seo-description: TVSDK verzendt gebeurtenissen met getimede metagegevens en genereert getimede metagegevens wanneer standaard- of aangepaste tags worden aangetroffen of wanneer een afspeellijst in een manifest verandert. Gebeurtenissen worden verzonden in de volgorde waarin ze in het manifest voorkomen.
-seo-title: Gebeurtenissen van getimede metagegevens
 title: Gebeurtenissen van getimede metagegevens
-uuid: 69c43701-6ffa-45fe-a104-fe81391222e7
 translation-type: tm+mt
-source-git-commit: 040655d8ba5f91c98ed0584c08db226ffe1e0f4e
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '148'
+source-wordcount: '108'
 ht-degree: 0%
 
 ---
