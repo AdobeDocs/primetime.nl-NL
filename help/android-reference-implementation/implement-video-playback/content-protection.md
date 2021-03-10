@@ -1,13 +1,10 @@
 ---
 description: De Primetime-speler ondersteunt de integratie van Primetime DRM als aangepaste DRM-workflows. Dit betekent dat uw toepassing de DRM-verificatieworkflows moet implementeren voordat de stream kan worden afgespeeld.
-seo-description: De Primetime-speler ondersteunt de integratie van Primetime DRM als aangepaste DRM-workflows. Dit betekent dat uw toepassing de DRM-verificatieworkflows moet implementeren voordat de stream kan worden afgespeeld.
-seo-title: DRM-inhoudsbeveiliging
 title: DRM-inhoudsbeveiliging
-uuid: 95c446f6-8304-4d70-9bef-7368b9364025
 translation-type: tm+mt
-source-git-commit: 31b6cad26bcc393d731080a70eff1c59551f1c8e
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '395'
+source-wordcount: '366'
 ht-degree: 0%
 
 ---
