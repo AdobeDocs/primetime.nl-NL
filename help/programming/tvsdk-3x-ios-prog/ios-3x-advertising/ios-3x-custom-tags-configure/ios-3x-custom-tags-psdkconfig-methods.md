@@ -1,13 +1,10 @@
 ---
 description: U kunt aangepaste tagnamen in TVSDK globaal configureren met de klasse PTSDKConfig.
-seo-description: U kunt aangepaste tagnamen in TVSDK globaal configureren met de klasse PTSDKConfig.
-seo-title: Methoden van de klasse Config voor tags
 title: Methoden van de klasse Config voor tags
-uuid: 27f1df0a-bbd3-4d80-820e-b659f2f33069
 translation-type: tm+mt
-source-git-commit: 557f42cd9a6f356aa99e13386d9e8d65e043a6af
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '184'
+source-wordcount: '166'
 ht-degree: 0%
 
 ---
