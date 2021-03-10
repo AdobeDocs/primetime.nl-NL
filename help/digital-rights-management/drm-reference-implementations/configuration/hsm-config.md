@@ -1,13 +1,10 @@
 ---
 description: U kunt de verwijzingsimplementatie met de leverancier vormen van Zon PKCS#11 die HSM steunt. Hoewel het gebruik van een HSM niet vereist is, wordt het aanbevolen.
-seo-description: U kunt de verwijzingsimplementatie met de leverancier vormen van Zon PKCS#11 die HSM steunt. Hoewel het gebruik van een HSM niet vereist is, wordt het aanbevolen.
-seo-title: HSM-configuratie
 title: HSM-configuratie
-uuid: 2741ac40-aa42-4aa7-9864-037f3ed3dee2
 translation-type: tm+mt
-source-git-commit: 1b9792a10ad606b99b6639799ac2aacb707b2af5
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '211'
+source-wordcount: '183'
 ht-degree: 0%
 
 ---
