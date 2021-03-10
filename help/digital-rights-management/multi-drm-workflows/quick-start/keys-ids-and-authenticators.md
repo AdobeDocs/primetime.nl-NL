@@ -1,13 +1,10 @@
 ---
 description: Om DRM uit te voeren hebt u bepaalde certs en sleutels, met inbegrip van een sleutel van de inhoudsencryptie of CEK nodig om uw inhoud te coderen, een klantenauthenticator voor het beschermen van mededelingen met de servers ExpressPlay, en CEKSIDs voor het identificeren van uw sleutels van de inhoudsencryptie zoals opgeslagen in een zeer belangrijk beheerssysteem.
-seo-description: Om DRM uit te voeren hebt u bepaalde certs en sleutels, met inbegrip van een sleutel van de inhoudsencryptie of CEK nodig om uw inhoud te coderen, een klantenauthenticator voor het beschermen van mededelingen met de servers ExpressPlay, en CEKSIDs voor het identificeren van uw sleutels van de inhoudsencryptie zoals opgeslagen in een zeer belangrijk beheerssysteem.
-seo-title: Toetsen, id's en Authenticators
 title: Toetsen, id's en Authenticators
-uuid: 9e5b1a64-b4e9-442f-ac15-26831aaf585d
 translation-type: tm+mt
-source-git-commit: 29bc8323460d9be0fce66cbea7c6fce46df20d61
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '812'
+source-wordcount: '764'
 ht-degree: 0%
 
 ---
@@ -62,7 +59,7 @@ of (voor de Adobe Offline Packager):
 **Wanneer/waar gebruik ik het?**
 
 1. Ten eerste moet de CEK beschikbaar zijn op de computer waarop u het pakket maakt. Uw verpakkingsprogramma gebruikt uw CEK om uw inhoud te coderen.
-1. Ten tweede, moet u CEK in één of andere vorm van Zeer belangrijk Systeem van het Beheer (KMS) opslaan, met elke CEK verbonden aan zijn eigen [Sleutel van de Encryptie van de Inhoud](../../multi-drm-workflows/glossary/glossary-cek.md). U kunt uw eigen KMS maken of [Key Storage](https://www.expressplay.com/developer/key-storage/) van ExpressPlay gebruiken. Hierdoor kan uw winkel (uw machtigingsserver, die de rechten van klanten en de voorziening van de Token van de Vergunning behandelt) een licentietoken voor de klant van KMS trekken gebruikend zeer belangrijke identiteitskaart in plaats van daadwerkelijke CEK (dit is veel veiliger).
+1. Ten tweede, moet u CEK in één of andere vorm van Zeer belangrijk Systeem van het Beheer (KMS) opslaan, met elke CEK verbonden aan zijn eigen [Sleutel van de Encryptie van de Inhoud](../../multi-drm-workflows/glossary/glossary-cek.md). U kunt uw eigen KMS maken of [Key Storage](https://www.expressplay.com/developer/key-storage/) van ExpressPlay gebruiken. Hierdoor kan uw winkel (uw machtigingsserver, die de klantrechten en de voorziening voor licentietokken verwerkt) een licentietoken voor de klant ophalen van het KMS met behulp van een sleutel-id in plaats van de daadwerkelijke CEK (dit is veel veiliger).
 
 ## Inhoudsversleutelingssleutel voor opslag-id {#section_0C94F54970E04BDB82DE3C8A33A62CD4}
 
