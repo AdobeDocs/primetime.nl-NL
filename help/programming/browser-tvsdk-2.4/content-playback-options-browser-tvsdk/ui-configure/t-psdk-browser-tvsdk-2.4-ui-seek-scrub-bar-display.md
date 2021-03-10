@@ -1,13 +1,10 @@
 ---
 description: In Browser TVSDK, kunt u aan een specifieke positie (tijd) in een stroom zoeken. Een stream kan een afspeellijst met schuifvensters of VOD-inhoud (video on demand) zijn.
-seo-description: In Browser TVSDK, kunt u aan een specifieke positie (tijd) in een stroom zoeken. Een stream kan een afspeellijst met schuifvensters of VOD-inhoud (video on demand) zijn.
-seo-title: Handgreep zoeken bij gebruik van de zoekbalk
 title: Handgreep zoeken bij gebruik van de zoekbalk
-uuid: a7c74141-581f-40a3-9d28-ce56ba56773c
 translation-type: tm+mt
-source-git-commit: 1985694f99c548284aad6e6b4e070bece230bdf4
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '361'
+source-wordcount: '329'
 ht-degree: 0%
 
 ---
