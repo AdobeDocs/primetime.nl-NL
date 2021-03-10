@@ -1,13 +1,10 @@
 ---
 description: Het TVSDK-meldingssysteem produceert verschillende fouten, waarschuwingen en informatieve kennisgevingen die diagnostische metagegevens bieden.
-seo-description: Het TVSDK-meldingssysteem produceert verschillende fouten, waarschuwingen en informatieve kennisgevingen die diagnostische metagegevens bieden.
-seo-title: 'null'
-title: 'null'
-uuid: 20828188-817a-471c-acbc-aeb5f336356b
+title: FOUTmeldingscodes
 translation-type: tm+mt
-source-git-commit: 557f42cd9a6f356aa99e13386d9e8d65e043a6af
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '462'
+source-wordcount: '448'
 ht-degree: 5%
 
 ---
@@ -243,7 +240,7 @@ De meeste fouten bevatten relevante metagegevens, bijvoorbeeld de URL van de bro
   </tr> 
   <tr rowsep="1"> 
    <td colname="1"><span class="codeph"> 170010  </span> </td> 
-   <td colname="2"><span class="codeph"> SITECATALYST_ERROR  </span> </td> 
+   <td colname="2"><span class="codeph"> SiteCatalyst_ERROR  </span> </td> 
    <td colname="3"> Geen </td> 
    <td colname="4"><span class="codeph"> BESCHRIJVING  </span> </td> 
    <td colname="5"> <p>Fout in Site-katalysator. Zie beschrijving. </p> </td> 
