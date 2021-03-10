@@ -1,13 +1,10 @@
 ---
 description: Wanneer gebruikers snel vooruit of snel terugspoelen door de media, zijn zij in de truc spelwijze. Stel de afspeelsnelheid van MediaPlayer in op een andere waarde dan 1 om de modus voor bedrieglijk afspelen te activeren.
-seo-description: Wanneer gebruikers snel vooruit of snel terugspoelen door de media, zijn zij in de truc spelwijze. Stel de afspeelsnelheid van MediaPlayer in op een andere waarde dan 1 om de modus voor bedrieglijk afspelen te activeren.
-seo-title: Snel vooruitspoelen en terugspoelen
 title: Snel vooruitspoelen en terugspoelen
-uuid: 070a3331-43a3-4517-9cd9-06d817ffcfbd
 translation-type: tm+mt
-source-git-commit: 0eaf0e7e7e61d596a51d1c9c837ad072d703c6a7
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '238'
+source-wordcount: '201'
 ht-degree: 0%
 
 ---
