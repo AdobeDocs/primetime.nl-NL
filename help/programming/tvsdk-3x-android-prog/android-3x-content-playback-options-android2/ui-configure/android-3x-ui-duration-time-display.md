@@ -1,13 +1,10 @@
 ---
 description: U kunt TVSDK gebruiken om informatie op te halen over de positie van de speler in de media en deze weer te geven op de zoekbalk.
-seo-description: U kunt TVSDK gebruiken om informatie op te halen over de positie van de speler in de media en deze weer te geven op de zoekbalk.
-seo-title: De duur, de huidige tijd en de resterende tijd van de video weergeven
 title: De duur, de huidige tijd en de resterende tijd van de video weergeven
-uuid: 29bb6bc2-dab1-4f35-abcf-d3213605ee70
 translation-type: tm+mt
-source-git-commit: bc35da8b258056809ceaf18e33bed631047bc81b
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '399'
+source-wordcount: '367'
 ht-degree: 0%
 
 ---
