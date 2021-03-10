@@ -1,13 +1,10 @@
 ---
 description: De meeste adverteerders hebben gedetailleerde informatie nodig over wanneer, hoe lang en hoe goed hun advertenties zijn bekeken. De meest efficiënte manier is om de clientspeler rapporten te laten verzenden terwijl de advertenties worden afgespeeld, maar de manifestserver ondersteunt ook server-side en hybride advertentie-tracking.
-seo-description: De meeste adverteerders hebben gedetailleerde informatie nodig over wanneer, hoe lang en hoe goed hun advertenties zijn bekeken. De meest efficiënte manier is om de clientspeler rapporten te laten verzenden terwijl de advertenties worden afgespeeld, maar de manifestserver ondersteunt ook server-side en hybride advertentie-tracking.
-seo-title: Advertentie bijhouden
 title: Advertentie bijhouden
-uuid: 184b8c36-5e51-42a7-b905-53f2b7b15e49
 translation-type: tm+mt
-source-git-commit: e437f4143fb939f46d106c64efc391137c33fe17
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '291'
+source-wordcount: '243'
 ht-degree: 0%
 
 ---
