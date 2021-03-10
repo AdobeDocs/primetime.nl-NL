@@ -1,13 +1,10 @@
 ---
 description: Bij Closed Captioning wordt het audiogedeelte van een video als tekst op het scherm weergegeven wanneer het geluid onhoorbaar is of de kijker niet goed kan worden gehoord.
-seo-description: Bij Closed Captioning wordt het audiogedeelte van een video als tekst op het scherm weergegeven wanneer het geluid onhoorbaar is of de kijker niet goed kan worden gehoord.
-seo-title: Werken met gesloten bijschriften
 title: Werken met gesloten bijschriften
-uuid: d7860de4-2881-4817-a4cc-5e7ab557a1db
 translation-type: tm+mt
-source-git-commit: bc35da8b258056809ceaf18e33bed631047bc81b
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '240'
+source-wordcount: '210'
 ht-degree: 0%
 
 ---
