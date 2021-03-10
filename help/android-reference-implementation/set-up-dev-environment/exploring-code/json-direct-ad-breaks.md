@@ -1,13 +1,10 @@
 ---
-seo-title: JSON-object voor directe en automatische regeleinden
 title: JSON-object voor directe en automatische regeleinden
-uuid: ffb901f4-0a8b-40fe-b6ba-5ffebc324cf2
 description: Geeft het JSON-object in detail wanneer de tekstwaarde direct is en wordt onderbroken
-seo-description: Geeft het JSON-object in detail wanneer de tekstwaarde direct is en wordt onderbroken
 translation-type: tm+mt
-source-git-commit: 31b6cad26bcc393d731080a70eff1c59551f1c8e
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '182'
+source-wordcount: '164'
 ht-degree: 0%
 
 ---
