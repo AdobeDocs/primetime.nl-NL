@@ -1,13 +1,10 @@
 ---
 description: 302 optimalisatie voor omleiding minimaliseert het aantal van 302 reacties voor omleiding, waardoor uw toepassing de taakverdeling effectiever kan uitvoeren.
-seo-description: 302 optimalisatie voor omleiding minimaliseert het aantal van 302 reacties voor omleiding, waardoor uw toepassing de taakverdeling effectiever kan uitvoeren.
-seo-title: 302 omleidingsoptimalisatie uitschakelen of inschakelen
 title: 302 omleidingsoptimalisatie uitschakelen of inschakelen
-uuid: 7561839f-aec6-4a59-a07a-7e4fa043fdc2
 translation-type: tm+mt
-source-git-commit: 5908e5a3521966496aeec0ef730e4a704fddfb68
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '126'
+source-wordcount: '104'
 ht-degree: 1%
 
 ---
