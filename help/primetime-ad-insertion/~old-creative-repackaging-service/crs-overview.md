@@ -1,13 +1,10 @@
 ---
 description: De creatieve herverpakkingsdienst (CRS) zorgt ervoor dat niet-HLS en creatief behoorlijk in HLS stromen kunnen terugspelen. De manifestserver roept op CRS wanneer het een niet-HLS advertentie ontmoet.
-seo-description: De creatieve herverpakkingsdienst (CRS) zorgt ervoor dat niet-HLS en creatief behoorlijk in HLS stromen kunnen terugspelen. De manifestserver roept op CRS wanneer het een niet-HLS advertentie ontmoet.
-seo-title: Overzicht van CRS
 title: Overzicht van CRS
-uuid: 3ae75fa7-397f-47ba-8e3d-50543ca25458
 translation-type: tm+mt
-source-git-commit: e1e33d3ac0aad44859cd49566331524da72ac7e4
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '348'
+source-wordcount: '315'
 ht-degree: 0%
 
 ---
