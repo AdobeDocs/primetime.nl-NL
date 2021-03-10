@@ -1,13 +1,10 @@
 ---
 description: Deze klassen beschrijven berichten over fouten, waarschuwingen, en sommige activiteiten die TVSDK voor het registreren en het zuiveren doeleinden uitgeeft.
-seo-description: Deze klassen beschrijven berichten over fouten, waarschuwingen, en sommige activiteiten die TVSDK voor het registreren en het zuiveren doeleinden uitgeeft.
-seo-title: Kennisgevingsklassen
 title: Kennisgevingsklassen
-uuid: e231a2d0-6190-4251-87db-ca46d2aee60d
 translation-type: tm+mt
-source-git-commit: 5908e5a3521966496aeec0ef730e4a704fddfb68
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '455'
+source-wordcount: '434'
 ht-degree: 0%
 
 ---
