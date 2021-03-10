@@ -1,13 +1,10 @@
 ---
 description: Met de Audio Codec 3 (AC-3, ook bekend als Dolby Digital®) 5.1-indeling kunnen inhoudsproviders de grootte van multikanaalsaudiobestanden comprimeren zonder dat dit de geluidskwaliteit nadelig beïnvloedt. AC-3 is een formaat 5.1, zo betekent het dat het vijf volledig-bandbreedtekanalen voor een rijkere gebruikerservaring verstrekt.
-seo-description: Met de Audio Codec 3 (AC-3, ook bekend als Dolby Digital®) 5.1-indeling kunnen inhoudsproviders de grootte van multikanaalsaudiobestanden comprimeren zonder dat dit de geluidskwaliteit nadelig beïnvloedt. AC-3 is een formaat 5.1, zo betekent het dat het vijf volledig-bandbreedtekanalen voor een rijkere gebruikerservaring verstrekt.
-seo-title: AC-3 5.1-indeling
 title: AC-3 5.1-indeling
-uuid: 9d1adf33-4c9b-4d31-8212-ac301f3e44c5
 translation-type: tm+mt
-source-git-commit: bc35da8b258056809ceaf18e33bed631047bc81b
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '442'
+source-wordcount: '397'
 ht-degree: 0%
 
 ---
