@@ -1,13 +1,10 @@
 ---
 description: Vervang een VOD-tijdlijn door een nieuw verzoek tot invoeging naar de manifestserver te verzenden met een correct ingestelde tijdlijnqueryparameter.
-seo-description: Vervang een VOD-tijdlijn door een nieuw verzoek tot invoeging naar de manifestserver te verzenden met een correct ingestelde tijdlijnqueryparameter.
-seo-title: Een VOD-tijdlijn vervangen
 title: Een VOD-tijdlijn vervangen
-uuid: 17a6daa3-5ee5-48fb-8981-0d183aed0fe4
 translation-type: tm+mt
-source-git-commit: e437f4143fb939f46d106c64efc391137c33fe17
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '199'
+source-wordcount: '173'
 ht-degree: 0%
 
 ---
