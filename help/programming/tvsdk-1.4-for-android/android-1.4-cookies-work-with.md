@@ -1,13 +1,10 @@
 ---
 description: U kunt TVSDK gebruiken om willekeurige gegevens in koekjeskopballen voor zittingsbeheer, poorttoegang, etc. te verzenden.
-seo-description: U kunt TVSDK gebruiken om willekeurige gegevens in koekjeskopballen voor zittingsbeheer, poorttoegang, etc. te verzenden.
-seo-title: Werken met cookies
 title: Werken met cookies
-uuid: f060b520-ceec-48ca-929f-683566fe6ae7
 translation-type: tm+mt
-source-git-commit: 6da7d597503d98875735c54e9a794f8171ad408b
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '268'
+source-wordcount: '246'
 ht-degree: 0%
 
 ---
