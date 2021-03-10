@@ -1,13 +1,10 @@
 ---
 description: Als u banneradvertenties wilt weergeven, moet u bannerinstanties maken en TVSDK toestaan te luisteren naar gebeurtenissen met betrekking tot advertenties.
-seo-description: Als u banneradvertenties wilt weergeven, moet u bannerinstanties maken en TVSDK toestaan te luisteren naar gebeurtenissen met betrekking tot advertenties.
-seo-title: banneradvertenties weergeven
 title: banneradvertenties weergeven
-uuid: cfd4b26c-9643-4b60-9aff-bc27dec289f1
 translation-type: tm+mt
-source-git-commit: bc35da8b258056809ceaf18e33bed631047bc81b
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '270'
+source-wordcount: '249'
 ht-degree: 0%
 
 ---
