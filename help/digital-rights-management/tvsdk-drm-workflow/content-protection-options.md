@@ -1,9 +1,9 @@
 ---
-seo-title: Opties voor primetime DRM-inhoudsbeveiliging
 title: Opties voor primetime DRM-inhoudsbeveiliging
-uuid: e4865e17-fbb3-40be-ab23-816dd76f599d
+description: Opties voor primetime DRM-inhoudsbeveiliging
+copied-description: true
 translation-type: tm+mt
-source-git-commit: 91cea7acb8127e02b82e5242b9ad6ab0d12ce0eb
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
 source-wordcount: '107'
 ht-degree: 0%
