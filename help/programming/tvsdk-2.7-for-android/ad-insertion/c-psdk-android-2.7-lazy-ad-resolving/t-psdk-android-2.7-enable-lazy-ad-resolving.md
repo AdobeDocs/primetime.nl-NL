@@ -1,14 +1,11 @@
 ---
-description: U kunt de functie Oplossen via Lazy en laden in- of uitschakelen met behulp van het bestaande mechanisme voor Lazy en laden (de functie Oplossen via Lazy en oplossen is standaard ingeschakeld).
-keywords: Lazy;Ad resolving;Ad loading;delayLoading
-seo-description: U kunt de functie Oplossen via Lazy en laden in- of uitschakelen met behulp van het bestaande mechanisme voor Lazy en laden (de functie Oplossen via Lazy en oplossen is standaard ingeschakeld).
-seo-title: Lozy en oplossen inschakelen
+description: U kunt de functie Oplossen via Lazy en laden in- of uitschakelen met behulp van het bestaande mechanisme voor Lazy en oplossen (Lazy Ad Resolving is standaard ingeschakeld).
+keywords: Lazy;Adverteren;Advertentie laden;delayLoading
 title: Lozy en oplossen inschakelen
-uuid: a084ee0b-53af-4600-91f6-d30ccc89699d
 translation-type: tm+mt
-source-git-commit: 0eaf0e7e7e61d596a51d1c9c837ad072d703c6a7
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '349'
+source-wordcount: '327'
 ht-degree: 0%
 
 ---
@@ -16,7 +13,7 @@ ht-degree: 0%
 
 # {#enable-lazy-ad-resolving} lui inschakelen en oplossen
 
-U kunt de functie Oplossen via Lazy en laden in- of uitschakelen met behulp van het bestaande mechanisme voor Lazy en laden (de functie Oplossen via Lazy en oplossen is standaard ingeschakeld).
+U kunt de functie Oplossen via Lazy en laden in- of uitschakelen met behulp van het bestaande mechanisme voor Lazy en oplossen (Lazy Ad Resolving is standaard ingeschakeld).
 
 U kunt het oplossen van problemen in- of uitschakelen door [AdvertisingMetadata.setDelayLoading](https://help.adobe.com/en_US/primetime/api/psdk/javadoc_2.4/com/adobe/mediacore/metadata/AdvertisingMetadata.html#setDelayAdLoading-boolean-) aan te roepen met `true` of `false`.
 
