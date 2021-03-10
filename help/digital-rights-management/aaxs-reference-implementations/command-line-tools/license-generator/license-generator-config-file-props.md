@@ -1,9 +1,9 @@
 ---
-seo-title: Eigenschappen van configuratiebestand
 title: Eigenschappen van configuratiebestand
-uuid: 13e158a6-c447-4e5e-884d-03fb4835c120
+description: Eigenschappen van configuratiebestand
+copied-description: true
 translation-type: tm+mt
-source-git-commit: 29bc8323460d9be0fce66cbea7c6fce46df20d61
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
 source-wordcount: '314'
 ht-degree: 0%
@@ -45,7 +45,7 @@ Voordat u de licentiegenerator uitvoert, geeft u waarden op voor de eigenschappe
   </tr> 
   <tr rowsep="1" class="- topic/row "> 
    <td colname="1" class="- topic/entry "><span class="+ topic/ph pr-d/codeph codeph">licensegen.keys.asymmetric.licenseServerCredential.n</span> </td> 
-   <td colname="2" class="- topic/entry "> <p class="- topic/p ">Optioneel PKCS12-bestand met aanvullende licentieserverreferenties voor het decoderen van de CEK in de metagegevens en het beleid. Aanvullende referenties kunnen worden geconfigureerd als inhoud eerder is verpakt met een ander licentieservercertificaat dan is opgegeven door <span class="codeph"> licensegen.sign.certfile</span>. Deze eigenschap moet verwijzen naar een .pfx<span class="filepath">-bestand met een certificaat en een persoonlijke sleutel. </span> n moet monotonisch toenemen, beginnend bij 1. </p> </td> 
+   <td colname="2" class="- topic/entry "> <p class="- topic/p ">Optioneel PKCS12-bestand met aanvullende licentieserverreferenties voor het decoderen van de CEK in de metagegevens en het beleid. Aanvullende referenties kunnen worden geconfigureerd als inhoud eerder is verpakt met een ander licentieservercertificaat dan is opgegeven door <span class="codeph"> licensegen.sign.certfile</span>. Deze eigenschap moet verwijzen naar een .pfx</span>-bestand met een certificaat en een persoonlijke sleutel. <span class="filepath"> n moet monotonisch toenemen, beginnend bij 1. </span></p> </td> 
   </tr> 
   <tr rowsep="0" class="- topic/row "> 
    <td colname="1" class="- topic/entry "><span class="+ topic/ph pr-d/codeph codeph">licensegen.keys.asymmetric.licenseServerCredential.n.password</span> </td> 
