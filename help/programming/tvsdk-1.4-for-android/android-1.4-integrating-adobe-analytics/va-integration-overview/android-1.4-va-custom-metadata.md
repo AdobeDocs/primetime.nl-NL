@@ -1,13 +1,10 @@
 ---
 description: U kunt douanemetagegevens op inhoud, advertenties, en hoofdstuk het volgen vraag verstrekken door callback functies te gebruiken.
-seo-description: U kunt douanemetagegevens op inhoud, advertenties, en hoofdstuk het volgen vraag verstrekken door callback functies te gebruiken.
-seo-title: Ondersteuning voor aangepaste metagegevens implementeren
 title: Ondersteuning voor aangepaste metagegevens implementeren
-uuid: 068ef0b9-79a2-4e44-8a0a-01e9deb8e4a6
 translation-type: tm+mt
-source-git-commit: 5908e5a3521966496aeec0ef730e4a704fddfb68
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '94'
+source-wordcount: '74'
 ht-degree: 0%
 
 ---
