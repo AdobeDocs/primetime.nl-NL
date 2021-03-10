@@ -1,9 +1,9 @@
 ---
-seo-title: Domeingebonden licenties afgeven
 title: Domeingebonden licenties afgeven
-uuid: 706650b7-6044-4c01-9f5a-90779127c9e1
+description: Domeingebonden licenties afgeven
+copied-description: true
 translation-type: tm+mt
-source-git-commit: 7e8df034035fe465fbe403949ef828e7811ced2e
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
 source-wordcount: '204'
 ht-degree: 0%
