@@ -1,13 +1,10 @@
 ---
 description: U kunt de speler configureren om het videogebruik te volgen en te analyseren.
-seo-description: U kunt de speler configureren om het videogebruik te volgen en te analyseren.
-seo-title: Videoanalysemogelijkheden initialiseren en configureren
 title: Videoanalysemogelijkheden initialiseren en configureren
-uuid: ece5ddc1-3f7b-4878-b1bc-1fec0a459add
 translation-type: tm+mt
-source-git-commit: 6cb3463be8986d8a1dc718655bd929a0f07ac00d
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '712'
+source-wordcount: '696'
 ht-degree: 0%
 
 ---
@@ -42,7 +39,7 @@ Controleer of u het volgende hebt voordat u video-tracking (videohartslagen) act
   </tr> 
   <tr> 
    <td colname="col1"> Het servereindpunt van de Bezoeker </td> 
-   <td colname="col2"> URL van het achterste eindpunt dat een unieke herkenningsteken voor de huidige videokijker verstrekt. </td> 
+   <td colname="col2"> De URL van het achterste eindpunt dat een unieke id voor de huidige videoviewer biedt. </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Uitgever </td> 
@@ -103,7 +100,7 @@ U kunt als volgt video bijhouden in uw speler configureren:
 
    >[!IMPORTANT]
    >
-   >Controleer in uw toepassing of `appMeasurementObject.visitor` is gevuld voordat u de videovertaling start, of dat er geen resultaten bij het bijhouden van de video worden weergegeven. Deze resultaten worden vermeld door de berichten in uw logboek. U kunt een lege spoorvraag ( `appMeasurementObject.track`) toevoegen, het `visitor` bezit onderzoeken tot het wordt bevolkt, en videoanalyses in werking stellen.
+   >Zorg ervoor dat `appMeasurementObject.visitor` in uw toepassing is gevuld voordat u de stroom voor videoanalyse start of dat er geen resultaten voor het bijhouden van de video worden weergegeven. Deze resultaten worden vermeld door de berichten in uw logboek. U kunt een lege spoorvraag ( `appMeasurementObject.track`) toevoegen, het `visitor` bezit onderzoeken tot het wordt bevolkt, en videoanalyses in werking stellen.
 
 1. Metagegevens voor het bijhouden van videokaarten initialiseren en configureren.
 
