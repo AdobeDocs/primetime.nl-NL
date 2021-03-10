@@ -1,14 +1,11 @@
 ---
 description: De prioriteitsregel definieert de prioriteitsvolgorde van de ad-creatieven die worden geselecteerd voor afspelen vanaf een VAST/VMAP-respons.
-keywords: priority rule;creative selection rules
-seo-description: De prioriteitsregel definieert de prioriteitsvolgorde van de ad-creatieven die worden geselecteerd voor afspelen vanaf een VAST/VMAP-respons.
-seo-title: Prioriteitsregels
+keywords: prioriteitsregel;creatieve selectieregels
 title: Prioriteitsregels
-uuid: 86b9d654-c85c-45de-a512-969234c56bef
 translation-type: tm+mt
-source-git-commit: 557f42cd9a6f356aa99e13386d9e8d65e043a6af
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '188'
+source-wordcount: '169'
 ht-degree: 1%
 
 ---
