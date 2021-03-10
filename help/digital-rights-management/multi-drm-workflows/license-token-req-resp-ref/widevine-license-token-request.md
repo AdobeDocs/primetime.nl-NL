@@ -1,13 +1,10 @@
 ---
 description: De Widevine-licentie-tokeninterface biedt productie- en testservices.
-seo-description: De Widevine-licentie-tokeninterface biedt productie- en testservices.
-seo-title: Token-aanvraag voor Widevine-licentie/reactie
 title: Token-aanvraag voor Widevine-licentie/reactie
-uuid: a3522422-7075-49a7-bc55-137ef84ee430
 translation-type: tm+mt
-source-git-commit: ffb993889a78ee068b9028cb2bd896003c5d4d4c
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '873'
+source-wordcount: '858'
 ht-degree: 5%
 
 ---
@@ -219,7 +216,7 @@ Informatie over `licenseDuration`: <ol><li> Het afspelen wordt `licenseDuration`
   </tr> 
   <tr> 
    <td> -4021 </td> 
-   <td> <span class="codeph"> kind  </span> moet 64 karakters lang na '^' zijn </td> 
+   <td> <span class="codeph"> kind  </span> moet 64 karakters lang na "^"zijn </td> 
   </tr> 
   <tr> 
    <td> -4022 </td> 
