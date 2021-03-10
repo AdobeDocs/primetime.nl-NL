@@ -1,13 +1,10 @@
 ---
 description: Een MediaResource vertegenwoordigt de inhoud die op het punt staat door de instantie MediaPlayer te worden geladen.
-seo-description: Een MediaResource vertegenwoordigt de inhoud die op het punt staat door de instantie MediaPlayer te worden geladen.
-seo-title: De klassen MediaPlayer en MediaResource
 title: De klassen MediaPlayer en MediaResource
-uuid: 36ef75f3-08f7-4fc5-88a7-9bab9198b917
 translation-type: tm+mt
-source-git-commit: 040655d8ba5f91c98ed0584c08db226ffe1e0f4e
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '251'
+source-wordcount: '232'
 ht-degree: 0%
 
 ---
