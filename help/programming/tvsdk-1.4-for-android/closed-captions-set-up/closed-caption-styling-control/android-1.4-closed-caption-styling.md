@@ -1,13 +1,10 @@
 ---
 description: Met de klasse TextFormat kunt u opmaakinformatie opgeven voor Closed Caption-tracks. Hiermee stelt u de stijl in voor alle gesloten bijschriften die door de speler worden weergegeven.
-seo-description: Met de klasse TextFormat kunt u opmaakinformatie opgeven voor Closed Caption-tracks. Hiermee stelt u de stijl in voor alle gesloten bijschriften die door de speler worden weergegeven.
-seo-title: Opmaak van ondertiteling beheren
 title: Opmaak van ondertiteling beheren
-uuid: 331b0833-3e8a-482e-a3df-5e92b69d0a94
 translation-type: tm+mt
-source-git-commit: 1b9792a10ad606b99b6639799ac2aacb707b2af5
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '685'
+source-wordcount: '656'
 ht-degree: 0%
 
 ---
