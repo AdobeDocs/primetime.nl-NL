@@ -1,9 +1,9 @@
 ---
-seo-title: De DRM-server uitvoeren voor beveiligde streaming
 title: De DRM-server uitvoeren voor beveiligde streaming
-uuid: 9bbe211d-268b-43c2-9e55-7ce62de40d30
+description: De DRM-server uitvoeren voor beveiligde streaming
+copied-description: true
 translation-type: tm+mt
-source-git-commit: 51b3713e04fcb4adeaa7a8d1b700372b1dba7cf6
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
 source-wordcount: '795'
 ht-degree: 0%
@@ -80,7 +80,7 @@ Als er geen versie in de cache is, mislukt het laden van de configuratie en word
 
 ### Het algemene configuratiebestand {#section_AA546C72442646CFB8906AEEBDF50587} bijwerken
 
-U kunt het wachtwoord HSM in [!DNL flashaccess-global.xml] op elk ogenblik wijzigen. De wijzigingen worden van kracht wanneer de server het configuratiebestand opnieuw laadt. Wijzigingen in de elementen Logging en Caching worden echter niet opnieuw geladen. U moet de server opnieuw starten voordat wijzigingen voor deze elementen van kracht worden.
+U kunt het wachtwoord HSM in [!DNL flashaccess-global.xml] op elk ogenblik wijzigen. De wijzigingen worden van kracht wanneer de server het configuratiebestand opnieuw laadt. Wijzigingen in de elementen Logging en Caching worden echter niet opnieuw geladen. U moet de server opnieuw opstarten voordat wijzigingen voor deze elementen effect sorteren.
 
 ### Het bijwerken van het dossier van de huurdersconfiguratie {#section_71624DB8DF28480F84F34F0FF7FD4365}
 
