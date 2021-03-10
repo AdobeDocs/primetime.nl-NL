@@ -1,13 +1,10 @@
 ---
 description: Voor live/lineaire inhoud vervangt TVSDK een segment van de inhoud van de hoofdstream door een ad-einde van dezelfde duur, zodat de tijdlijnduur ongewijzigd blijft.
-seo-description: Voor live/lineaire inhoud vervangt TVSDK een segment van de inhoud van de hoofdstream door een ad-einde van dezelfde duur, zodat de tijdlijnduur ongewijzigd blijft.
-seo-title: Actief/lineair en omzetten en invoegen
 title: Actief/lineair en omzetten en invoegen
-uuid: a63c97c3-00c5-4dee-a42c-30b70e432b93
 translation-type: tm+mt
-source-git-commit: 5908e5a3521966496aeec0ef730e4a704fddfb68
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '284'
+source-wordcount: '249'
 ht-degree: 0%
 
 ---
