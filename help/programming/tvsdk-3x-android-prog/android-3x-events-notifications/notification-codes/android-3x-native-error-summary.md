@@ -1,9 +1,9 @@
 ---
-seo-title: Details voor de melding NATIVE_ERROR
 title: Details voor de melding NATIVE_ERROR
-uuid: d16ef930-d1f4-4984-be6e-1cf4993ab71d
+description: Details voor de melding NATIVE_ERROR
+copied-description: true
 translation-type: tm+mt
-source-git-commit: bc35da8b258056809ceaf18e33bed631047bc81b
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
 source-wordcount: '6888'
 ht-degree: 2%
@@ -742,7 +742,7 @@ De Video Encoder-interface van de AVE retourneert deze meldingen voor het afspel
    <td colname="col3"> Bewerking gelukt. </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> 1 </td> 
+   <td colname="col1"> 3 </td> 
    <td colname="col2"> <span class="codeph"> ASYNC_OPERATION_IN_PROGRESS</span> </td> 
    <td colname="col3"> Asynchrone bewerking. Het verzoek om een bewerking is uitgevoerd. Informatie over succes/fout is later beschikbaar. </td> 
   </tr> 
@@ -752,7 +752,7 @@ De Video Encoder-interface van de AVE retourneert deze meldingen voor het afspel
    <td colname="col3"> Bewerking niet mogelijk vanwege bestandseinde (EOF). </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> 1 </td> 
+   <td colname="col1"> 3 </td> 
    <td colname="col2"><span class="codeph"> DECODER_FAILED</span> </td> 
    <td colname="col3"> De decoder is mislukt bij uitvoering. </td> 
   </tr> 
