@@ -1,21 +1,18 @@
 ---
-description: TVSDK bevat methoden, eigenschappen en gebeurtenissen om geldige frequenties, huidige snelheden, of het kunstspel wordt gesteund, en andere functionaliteit te bepalen die met snel voorwaarts en terugspoelen verwant zijn.
-seo-description: TVSDK bevat methoden, eigenschappen en gebeurtenissen om geldige frequenties, huidige snelheden, of het kunstspel wordt gesteund, en andere functionaliteit te bepalen die met snel voorwaarts en terugspoelen verwant zijn.
-seo-title: API-elementen wijzigen
+description: TVSDK bevat methoden, eigenschappen en gebeurtenissen om geldige snelheden, huidige snelheden, of het fel spelen wordt ondersteund en andere functionaliteit die verwant is aan snel vooruit spoelen en terugspoelen te bepalen.
 title: API-elementen wijzigen
-uuid: 3554bf45-9419-4740-8a0e-484fc14c7436
 translation-type: tm+mt
-source-git-commit: 812d04037c3b18f8d8cdd0d18430c686c3eee1ff
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '163'
-ht-degree: 2%
+source-wordcount: '132'
+ht-degree: 3%
 
 ---
 
 
 # Snelheid wijzigen van API-elementen {#rate-change-api-elements}
 
-TVSDK bevat methoden, eigenschappen en gebeurtenissen om geldige frequenties, huidige snelheden, of het kunstspel wordt gesteund, en andere functionaliteit te bepalen die met snel voorwaarts en terugspoelen verwant zijn.
+TVSDK bevat methoden, eigenschappen en gebeurtenissen om geldige snelheden, huidige snelheden, of het fel spelen wordt ondersteund en andere functionaliteit die verwant is aan snel vooruit spoelen en terugspoelen te bepalen.
 
 <!--<a id="section_E5D37C71323947E2AED8B866D9835E31"></a>-->
 
