@@ -1,13 +1,10 @@
 ---
 description: MediaPlayerNotification-objecten bieden informatie over wijzigingen in spelerstatus, waarschuwingen en fouten. Fouten die het afspelen van de video stoppen, leiden ook tot een wijziging in de status van de speler.
-seo-description: MediaPlayerNotification-objecten bieden informatie over wijzigingen in spelerstatus, waarschuwingen en fouten. Fouten die het afspelen van de video stoppen, leiden ook tot een wijziging in de status van de speler.
-seo-title: Meldingen voor spelerstatus, activiteit, fouten en logboekregistratie
 title: Meldingen voor spelerstatus, activiteit, fouten en logboekregistratie
-uuid: 7ce5bed0-f312-437e-a82f-b1d4a8e1926c
 translation-type: tm+mt
-source-git-commit: adef0bbd52ba043f625f38db69366c6d873c586d
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '147'
+source-wordcount: '109'
 ht-degree: 0%
 
 ---
