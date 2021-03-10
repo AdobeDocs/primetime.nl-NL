@@ -1,12 +1,10 @@
 ---
 description: TVSDK introduceert veilige levering via HTTPS.
-seo-description: TVSDK introduceert veilige levering via HTTPS.
-seo-title: Beveiligde aflevering via HTTPS
 title: Beveiligde aflevering via HTTPS
 translation-type: tm+mt
-source-git-commit: 4a2271fc481b37bb0a437091de6efe98fcb348d9
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '91'
+source-wordcount: '81'
 ht-degree: 0%
 
 ---
