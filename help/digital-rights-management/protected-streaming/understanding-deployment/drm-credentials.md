@@ -1,13 +1,10 @@
 ---
 description: Als u geldige vergunningen wilt uitgeven die een cliënt Primetime DRM kan goedkeuren, dan moet u de Server Primetime DRM voor Beschermde Streaming met een reeks geloofsbrieven vormen die Adobe heeft uitgegeven. U kunt deze gegevens opslaan in PKCS#12-bestanden (.pfx) of op een HSM.
-seo-description: Als u geldige vergunningen wilt uitgeven die een cliënt Primetime DRM kan goedkeuren, dan moet u de Server Primetime DRM voor Beschermde Streaming met een reeks geloofsbrieven vormen die Adobe heeft uitgegeven. U kunt deze gegevens opslaan in PKCS#12-bestanden (.pfx) of op een HSM.
-seo-title: Adobe Primetime DRM-gebruikersgegevens
 title: Adobe Primetime DRM-gebruikersgegevens
-uuid: 0a85c68c-3279-40bf-92d9-e1f4fce994c0
 translation-type: tm+mt
-source-git-commit: 29bc8323460d9be0fce66cbea7c6fce46df20d61
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '184'
+source-wordcount: '132'
 ht-degree: 0%
 
 ---
