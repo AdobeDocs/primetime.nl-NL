@@ -1,9 +1,9 @@
 ---
-seo-title: WAR-bestand van licentieserver bijwerken
 title: WAR-bestand van licentieserver bijwerken
-uuid: 0cde53d6-185d-4bf2-84fc-0c31d17904a8
+description: WAR-bestand van licentieserver bijwerken
+copied-description: true
 translation-type: tm+mt
-source-git-commit: 1547eb3dd220fafc08df923f40504736c16a866c
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
 source-wordcount: '166'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Het WAR-bestand van de licentieserver bijwerken{#update-the-license-server-war-file}
 
-Om cliënten te steunen die via een Op Premises server van de Individualisering geïndividualiseerd zijn, moet u de certificaatwortel van het vertrouwen van de Server van de Vergunning bijwerken om de onlangs verworven Vertrouwelijkheid van IndividualisatieCA te omvatten. Een Python-script ( [!DNL addIndivCert.py]) staat in de map [!DNL update_license_server].
+Om cliënten te steunen die via een Op Premises server van de Individualisering geïndividualiseerd zijn, moet u de certificaatwortel van het vertrouwen van de Server van de Vergunning bijwerken om de onlangs verworven Vertrouwelijkheid van IndividualisatieCA te omvatten. Een Python-script ( [!DNL addIndivCert.py]) wordt opgenomen in de map [!DNL update_license_server].
 
 Ga als volgt te werk om de licentieserver bij te werken:
 
