@@ -1,9 +1,9 @@
 ---
-seo-title: Overzicht
 title: Overzicht
-uuid: 11cf1f1f-a4b2-4ac2-aae7-e925d96729d2
+description: Overzicht
+copied-description: true
 translation-type: tm+mt
-source-git-commit: 1b9792a10ad606b99b6639799ac2aacb707b2af5
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
 source-wordcount: '867'
 ht-degree: 0%
@@ -13,13 +13,13 @@ ht-degree: 0%
 
 # Overzicht {#overview}
 
-*Het* verpakken verwijst naar het coderen en toepassen van een beleid op FLV of F4V dossiers. Gebruik de API&#39;s voor het verpakken van media om bestanden te verpakken. De Adobe Access Java SDK kan alleen Flash- en AIR-inhoud met progressieve download, zoals FLV, F4V en MP4, in een pakket plaatsen. Als u inhoud wilt verpakken met Adobe Access DRM voor andere inhoudsindelingen, zoals Adobe HTTP Dynamic Streaming (HDS) of Apple HTTP Live Streaming (HLS), moet u andere gereedschappen gebruiken, zoals Adobe Media Server ( [https://www.adobe.com/products/adobe-media-server-family.html](https://www.adobe.com/products/adobe-media-server-family.html)) of een codeermodule die de Adobe Uitzending SDK ( [https://help.adobe.com/en_US/primetime/packagers/hdkb_api_overview_3.5.pdf](https://help.adobe.com/en_US/primetime/packagers/hdkb_api_overview_3.5.pdf)) implementeert. Alternatief, hebben de klanten de keus om toolset van Java Primetime Packager te gebruiken, die inhoud voor een verscheidenheid van doelformaten zoals HDS, HLS, en DASH kan verpakken.
+*Het* verpakken verwijst naar het coderen en toepassen van een beleid op FLV of F4V dossiers. Gebruik de API&#39;s voor het verpakken van media om bestanden te verpakken. De Adobe Access Java SDK kan alleen Flash- en AIR-inhoud met progressieve download, zoals FLV, F4V en MP4, in een pakket plaatsen. Als u inhoud wilt verpakken met gebruik van Adobe Access DRM voor andere inhoudsindelingen, zoals Adobe HTTP Dynamic Streaming (HDS) of Apple HTTP Live Streaming (HLS), moet u andere gereedschappen gebruiken, zoals Adobe Media Server ( [https://www.adobe.com/products/adobe-media-server-family.html](https://www.adobe.com/products/adobe-media-server-family.html)) of een codeermodule die de SDK van de Uitzending van de Adobe ( [https://help.adobe.com/en_US/primetime/packagers/hdkb_api_overview_3.5.pdf](https://help.adobe.com/en_US/primetime/packagers/hdkb_api_overview_3.5.pdf)) implementeert. Alternatief, hebben de klanten de keus om toolset van Java Primetime Packager te gebruiken, die inhoud voor een verscheidenheid van doelformaten zoals HDS, HLS, en DASH kan verpakken.
 
 Het verpakken wordt losgekoppeld van de licentieserver. Het is niet nodig dat de pakketsoftware verbinding maakt met de licentieserver om informatie over de inhoud uit te wisselen. Alles wat de licentieserver moet weten om de licentie uit te geven, is opgenomen in de metagegevens van de inhoud.
 
 Wanneer een bestand is versleuteld, kan de inhoud ervan niet worden geparseerd zonder de juiste licentie. Met Adobe Access kunt u selecteren welke delen van het bestand u wilt versleutelen. Omdat Adobe® Access™ de bestandsindeling van de FLV- en F4V-inhoud kan parseren, kan hiermee op intelligente wijze selectieve delen van het bestand worden gecodeerd in plaats van het gehele bestand. Gegevens zoals metagegevens en actiepunten kunnen niet gecodeerd blijven, zodat zoekfuncties het bestand nog steeds kunnen doorzoeken.
 
-Het is mogelijk dat een bepaalde inhoud meerdere beleidsvormen heeft. Dit kan bijvoorbeeld handig zijn als u inhoud wilt licentiëren in verschillende bedrijfsmodellen zonder dat u de inhoud meerdere keren moet verpakken. U kunt bijvoorbeeld anonieme toegang voor een korte periode toestaan en daarna de klant toestaan de inhoud te kopen en onbeperkte toegang te hebben. Als de inhoud wordt verpakt gebruikend veelvoudige beleid, moet de Server van de Vergunning logica voor het selecteren van welk beleid uitvoeren om een vergunning uit te geven.
+Het is mogelijk dat een bepaalde inhoud meerdere beleidsvormen heeft. Dit kan bijvoorbeeld handig zijn als u inhoud wilt licentiëren in verschillende bedrijfsmodellen zonder dat u de inhoud meerdere keren moet verpakken. U kunt anonieme toegang bijvoorbeeld voor een korte periode toestaan en daarna de klant toestaan de inhoud te kopen en onbeperkte toegang te hebben. Als de inhoud wordt verpakt gebruikend veelvoudige beleid, moet de Server van de Vergunning logica voor het selecteren van welk beleid uitvoeren om een vergunning uit te geven.
 
 >[!NOTE]
 >
