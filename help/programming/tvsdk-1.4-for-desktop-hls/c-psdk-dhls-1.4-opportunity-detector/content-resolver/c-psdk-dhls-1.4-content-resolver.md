@@ -1,13 +1,10 @@
 ---
 description: Een opportuniteitsdetector is een TVADK-component die aangepaste tags in een stream detecteert en plaatsingsmogelijkheden identificeert. Deze mogelijkheden worden naar de inhoudoplosser verzonden, die de inhoud/toevoegingswerkstroom op de eigenschappen van de plaatsingskans en meta-gegevens aanpast.
-seo-description: Een opportuniteitsdetector is een TVADK-component die aangepaste tags in een stream detecteert en plaatsingsmogelijkheden identificeert. Deze mogelijkheden worden naar de inhoudoplosser verzonden, die de inhoud/toevoegingswerkstroom op de eigenschappen van de plaatsingskans en meta-gegevens aanpast.
-seo-title: Aangepaste opportuniteitsdetectors en contentoplossers
 title: Aangepaste opportuniteitsdetectors en contentoplossers
-uuid: 7bd04c8f-6f04-4321-88e8-9bb93251d940
 translation-type: tm+mt
-source-git-commit: adef0bbd52ba043f625f38db69366c6d873c586d
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '254'
+source-wordcount: '207'
 ht-degree: 0%
 
 ---
