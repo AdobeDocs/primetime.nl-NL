@@ -1,13 +1,10 @@
 ---
 description: PTNotification-objecten bieden informatie over wijzigingen in spelerstatus, waarschuwingen en fouten. Fouten die het afspelen van de video stoppen, leiden ook tot een wijziging in de status van de speler.
-seo-description: PTNotification-objecten bieden informatie over wijzigingen in spelerstatus, waarschuwingen en fouten. Fouten die het afspelen van de video stoppen, leiden ook tot een wijziging in de status van de speler.
-seo-title: Meldingen voor spelerstatus, activiteit, fouten en logbestanden
 title: Meldingen voor spelerstatus, activiteit, fouten en logbestanden
-uuid: 59716a66-3736-4076-8011-8104bfe3a83a
 translation-type: tm+mt
-source-git-commit: 5908e5a3521966496aeec0ef730e4a704fddfb68
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '470'
+source-wordcount: '432'
 ht-degree: 0%
 
 ---
