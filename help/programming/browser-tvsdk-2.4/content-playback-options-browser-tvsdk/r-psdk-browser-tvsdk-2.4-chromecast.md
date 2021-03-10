@@ -1,13 +1,10 @@
 ---
 description: U kunt om het even welke stromen van een op TVSDK-Gebaseerde afzenderapp gieten en de stroom hebben teruggespeeld op Chromecast met Browser TVSDK.
-seo-description: U kunt om het even welke stromen van een op TVSDK-Gebaseerde afzenderapp gieten en de stroom hebben teruggespeeld op Chromecast met Browser TVSDK.
-seo-title: Google Cast-app voor TVSDK van browser
 title: Google Cast-app voor TVSDK van browser
-uuid: 018143e2-143a-4f88-97c6-4b10a2083f9e
 translation-type: tm+mt
-source-git-commit: 040655d8ba5f91c98ed0584c08db226ffe1e0f4e
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '439'
+source-wordcount: '410'
 ht-degree: 0%
 
 ---
