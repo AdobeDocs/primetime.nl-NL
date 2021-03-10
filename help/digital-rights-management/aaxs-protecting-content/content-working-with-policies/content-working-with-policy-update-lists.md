@@ -1,9 +1,9 @@
 ---
-seo-title: Werken met lijst met beleidsupdates
 title: Werken met lijst met beleidsupdates
-uuid: 583abb31-5c80-43f2-bc3d-a2300f61c4ea
+description: Werken met lijst met beleidsupdates
+copied-description: true
 translation-type: tm+mt
-source-git-commit: 29bc8323460d9be0fce66cbea7c6fce46df20d61
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
 source-wordcount: '440'
 ht-degree: 0%
@@ -30,4 +30,4 @@ Bij het werken met de lijst met beleidsupdates wordt een object `PolicyUpdateLis
 
 Als u extra items wilt toevoegen aan een bestaande `PolicyUpdateList`, laadt u een bestaande lijst met beleidsupdates. Maak een nieuwe `PolicyUpdateListFactory`-instantie. Vraag P `olicyUpdateListFactory.addEntries` om alle ingangen van de oude lijst aan de nieuwe lijst toe te voegen. Roep `PolicyUpdateListFactory.addRevocationEntry` of `addUpdatedEntry` aan om het even welke nieuwe herroepings of updatingangen aan PolicyUpdateList toe te voegen.
 
-Voor steekproefcode die aantonen hoe te om een lijst van de beleidsupdate tot stand te brengen, laad een bestaande lijst van beleidsupdate, en controleer of een beleid is ingetrokken, zie `com.adobe.flashaccess.samples.policyupdatelist` `.CreatePolicyUpdateList` in de folder van de &quot;steekproeven&quot;van de Hulpmiddelen van de Lijn van het Bevel van de Toepassing van de Verwijzing.
+Voor steekproefcode die aantonen hoe te om een lijst van de beleidsupdate tot stand te brengen, laad een bestaande lijst van beleidsupdates, en controleer of een beleid is ingetrokken, zie `com.adobe.flashaccess.samples.policyupdatelist` `.CreatePolicyUpdateList` in de folder van de &quot;steekproeven&quot;van de Hulpmiddelen van de Lijn van het Bevel van de Toepassing van de Verwijzing.
