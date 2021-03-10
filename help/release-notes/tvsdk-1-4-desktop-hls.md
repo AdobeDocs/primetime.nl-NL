@@ -1,17 +1,13 @@
 ---
 title: Opmerkingen bij de release TVSDK 1.4 voor desktop HLS
-seo-title: Opmerkingen bij de release TVSDK 1.4 voor desktop HLS
 description: TVSDK voor Desktop HLS de Nota's van de Versie beschrijven wat nieuw of veranderd is, de opgeloste en bekende kwesties in TVSDK DHLS.
-seo-description: TVSDK voor Desktop HLS de Nota's van de Versie beschrijven wat nieuw of veranderd is, de opgeloste en bekende kwesties in TVSDK DHLS.
-uuid: 84da27b7-299b-478d-88f5-ef943f0a8321
 contentOwner: asgupta
 products: SG_PRIMETIME
 topic-tags: release-notes
-discoiquuid: e4437a26-9454-4da1-ae87-0fce664aac3d
 translation-type: tm+mt
-source-git-commit: ba291a4615a8e0713cf610f76f41e328da96ec4d
+source-git-commit: b33240bf1b42b80389cd95a7ae4d3f85185a2d32
 workflow-type: tm+mt
-source-wordcount: '5222'
+source-wordcount: '5196'
 ht-degree: 0%
 
 ---
@@ -751,7 +747,7 @@ _playbackManager.pause();
 }
 ```
 
-* **Versie 1.4.13** PTPLAY-8501 - wanneer VMAP twee directe MP4 niet-getranscodeerde advertenties terugkeert, de zelfde daling terug en speelt tweemaal.
+* **Versie 1.4.13** PTPLAY-8501 - Wanneer VMAP twee directe MP4 niet-getranscodeerde advertenties terugkeert, de zelfde daling terug en speelt tweemaal.
 
 * **Versie 1.4.2** In versie 16 van Flash Player werd een kwestie geïdentificeerd met ABR &quot;omschakelings neer&quot;logica, nadat de speler in een lege het bufferen gebeurtenis wordt. Het probleem voorkomt dat de bitsnelheid in slechte bandbreedteomgevingen omlaag gaat wanneer de speler in een bufferstatus komt. Om rond de kwestie te werken, laat uw app plaatsen `BufferControlParameters.initialBufferTime` om het zelfde als `BufferControlParameters.playbackBufferTime` tijdelijk tijdens de bufferstaat (namelijk op een `BufferEvent.BUFFERING_BEGIN` gebeurtenis) te zijn dan het terugstellen aan de vastgestelde waarden op `BufferEvent.BUFFERING_END` gebeurtenis. De oplossing voor dit probleem is beschikbaar in de volgende patchrelease van Flash Player versie 16.
 
