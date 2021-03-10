@@ -1,16 +1,12 @@
 ---
 title: Opmerkingen bij de release TVSDK 1.4 voor iOS
-seo-title: Opmerkingen bij de release TVSDK 1.4 voor iOS
 description: Opmerkingen bij de release TVSDK 1.4 voor iOS beschrijven wat nieuw of gewijzigd is, de opgeloste en bekende problemen en de apparaatproblemen in TVSDK iOS 1.4
-seo-description: Opmerkingen bij de release van TVSDK 1.4 voor Android beschrijven wat nieuw of gewijzigd is, de opgeloste en bekende problemen en de apparaatproblemen in TVSDK iOS 1.4
-uuid: c1df12bd-aa21-47e8-ade4-1e497882ce9b
 products: SG_PRIMETIME
 topic-tags: release-notes
-discoiquuid: 452f8699-7857-49ab-9caa-22204b19fe4a
 translation-type: tm+mt
-source-git-commit: 51b3713e04fcb4adeaa7a8d1b700372b1dba7cf6
+source-git-commit: b33240bf1b42b80389cd95a7ae4d3f85185a2d32
 workflow-type: tm+mt
-source-wordcount: '6578'
+source-wordcount: '6550'
 ht-degree: 0%
 
 ---
@@ -530,7 +526,7 @@ Dit probleem is hetzelfde als ZD #25908.
 
 * (ZD# 23901) Advertenties van derden worden niet afgespeeld
 
-Dit probleem is opgelost door naar de URL-structuur van CRS v3 te gaan om de zone-id op te nemen in de opnieuw verpakte URL.
+Dit probleem is opgelost door naar de URL-structuur van CRS v3 te gaan en de zone-id op te nemen in de opnieuw verpakte URL.
 
 * (ZD #25183) Problemen met het afspelen van DRM op tvOS en iOS
 
