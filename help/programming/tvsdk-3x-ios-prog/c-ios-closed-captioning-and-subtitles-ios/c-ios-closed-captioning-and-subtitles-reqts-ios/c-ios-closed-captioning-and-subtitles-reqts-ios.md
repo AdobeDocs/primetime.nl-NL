@@ -1,13 +1,10 @@
 ---
 description: Gesloten bijschriften en ondertitels hebben enkele unieke verschillen en u kunt deze op verschillende manieren inschakelen.
-seo-description: Gesloten bijschriften en ondertitels hebben enkele unieke verschillen en u kunt deze op verschillende manieren inschakelen.
-seo-title: Voorschriften voor ondertitels en gesloten bijschriften
 title: Voorschriften voor ondertitels en gesloten bijschriften
-uuid: 18ed6ac1-4b25-4590-8c61-3ffb0464d093
 translation-type: tm+mt
-source-git-commit: 557f42cd9a6f356aa99e13386d9e8d65e043a6af
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '247'
+source-wordcount: '226'
 ht-degree: 0%
 
 ---
@@ -23,7 +20,7 @@ Houd rekening met de volgende vereisten voor gesloten bijschriften en ondertitel
 
 * **Ondertiteling**
 
-   * Closed Captions hebben doorgaans dezelfde taal als de audio en vertegenwoordigen ook achtergrondgeluiden als tekst.
+   * Gesloten bijschriften hebben doorgaans dezelfde taal als de audio en vertegenwoordigen ook achtergrondgeluiden als tekst.
    * Gesloten bijschriften maken deel uit van de gegevenspakketten van de MPEG-2-videostreams in de videotransmissiestream.
    * Gesloten bijschriften worden ondersteund in de mate waarin dit wordt geboden door het AV Foundation-kader.
 
