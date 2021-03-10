@@ -1,13 +1,10 @@
 ---
 description: Gebeurtenissen van TVSDK geven de status van de speler aan, fouten die optreden, de voltooiing van handelingen die u hebt aangevraagd, zoals een video die wordt afgespeeld, of handelingen die impliciet optreden, zoals een advertentie-bewerking.
-seo-description: Gebeurtenissen van TVSDK geven de status van de speler aan, fouten die optreden, de voltooiing van handelingen die u hebt aangevraagd, zoals een video die wordt afgespeeld, of handelingen die impliciet optreden, zoals een advertentie-bewerking.
-seo-title: Luisteren naar gebeurtenissen in Primetime Player
 title: Luisteren naar gebeurtenissen in Primetime Player
-uuid: 3aa0979c-6141-4098-9f19-d5fe23192827
 translation-type: tm+mt
-source-git-commit: bc35da8b258056809ceaf18e33bed631047bc81b
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '292'
+source-wordcount: '250'
 ht-degree: 0%
 
 ---
