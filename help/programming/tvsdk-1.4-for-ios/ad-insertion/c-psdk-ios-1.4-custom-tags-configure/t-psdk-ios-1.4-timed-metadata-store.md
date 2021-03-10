@@ -1,13 +1,10 @@
 ---
 description: Uw toepassing moet de juiste PTTimedMetadata-objecten op de juiste momenten gebruiken.
-seo-description: Uw toepassing moet de juiste PTTimedMetadata-objecten op de juiste momenten gebruiken.
-seo-title: Metagegevensobjecten met tijdslimiet opslaan terwijl ze worden verzonden
 title: Metagegevensobjecten met tijdslimiet opslaan terwijl ze worden verzonden
-uuid: d26ed49e-fb29-4765-86e9-9ebbe5fa0a2b
 translation-type: tm+mt
-source-git-commit: 5908e5a3521966496aeec0ef730e4a704fddfb68
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '219'
+source-wordcount: '199'
 ht-degree: 0%
 
 ---
@@ -30,7 +27,7 @@ Uw toepassing moet de volgende taken uitvoeren:
    >
    >In de onderstaande code wordt ervan uitgegaan dat er slechts één `PTTimedMetadata`-instantie tegelijk is. Als er meerdere exemplaren zijn, moet de toepassing deze op de juiste wijze opslaan in een woordenboek. Een methode is om een array op een bepaald tijdstip te maken en alle instanties in die array op te slaan.
 
-   In het volgende voorbeeld wordt getoond hoe u `PTTimedMetadata`-objecten opslaat in een `NSMutableDictionary (timedMetadataCollection)` die door de begintijd van elke `timedMetadata` is vastgezet.
+   In het volgende voorbeeld ziet u hoe u `PTTimedMetadata`-objecten opslaat in een `NSMutableDictionary (timedMetadataCollection)`-bestand dat is vastgezet tegen de begintijd van elke `timedMetadata`.
 
    ```
    NSMutableDictionary *timedMetadataCollection; 
