@@ -1,13 +1,10 @@
 ---
 description: Met de hulpklasse AuditudeSettings, die de klasse MetadataNode uitbreidt, kunt u Adobe Primetime- en beslissingsmetagegevens instellen.
-seo-description: Met de hulpklasse AuditudeSettings, die de klasse MetadataNode uitbreidt, kunt u Adobe Primetime- en beslissingsmetagegevens instellen.
-seo-title: Metagegevens instellen en invoegen
 title: Metagegevens instellen en invoegen
-uuid: d96e67c3-4cc7-4309-a2a2-ff5193b46534
 translation-type: tm+mt
-source-git-commit: 4102780d0c7d0b96d120c1c2b3d14c47bc1b0e6f
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '290'
+source-wordcount: '267'
 ht-degree: 0%
 
 ---
