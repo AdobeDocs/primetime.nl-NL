@@ -1,13 +1,10 @@
 ---
 description: U kunt beslissen of alleen de advertenties worden opgelost die na het huidige actieve punt van de gebruiker optreden of dat ook advertenties worden opgelost die vóór het huidige actieve punt plaatsvinden.
-seo-description: U kunt beslissen of alleen de advertenties worden opgelost die na het huidige actieve punt van de gebruiker optreden of dat ook advertenties worden opgelost die vóór het huidige actieve punt plaatsvinden.
-seo-title: Advertentie laden voor een DVR-venster
 title: Advertentie laden voor een DVR-venster
-uuid: 67bc3924-3d17-4d1a-b9a7-be8d0488a970
 translation-type: tm+mt
-source-git-commit: 5908e5a3521966496aeec0ef730e4a704fddfb68
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '245'
+source-wordcount: '210'
 ht-degree: 0%
 
 ---
