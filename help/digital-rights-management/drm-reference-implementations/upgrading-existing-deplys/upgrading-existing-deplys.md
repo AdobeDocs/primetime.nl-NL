@@ -1,13 +1,10 @@
 ---
 description: Als u een server wilt upgraden die versie 3.0 Reference Implementation License Server of Watched Folder Packager ondersteunt, moet u de .war-bestanden die zijn geïmplementeerd op een toepassingsserver vervangen door de bestanden die zijn opgenomen met de Adobe Primetime DRM Reference Implementation Server.
-seo-description: Als u een server wilt upgraden die versie 3.0 Reference Implementation License Server of Watched Folder Packager ondersteunt, moet u de .war-bestanden die zijn geïmplementeerd op een toepassingsserver vervangen door de bestanden die zijn opgenomen met de Adobe Primetime DRM Reference Implementation Server.
-seo-title: Bestaande implementaties upgraden
 title: Bestaande implementaties upgraden
-uuid: 1a40aae9-f639-41fa-b42d-cf8cdfcde694
 translation-type: tm+mt
-source-git-commit: 19e7c941b3337c3b4d37f0b6a1350aac2ad8a0cc
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '213'
+source-wordcount: '165'
 ht-degree: 0%
 
 ---
