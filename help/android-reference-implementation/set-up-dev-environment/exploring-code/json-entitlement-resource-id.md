@@ -1,13 +1,10 @@
 ---
-seo-title: JSON-object voor machtigingsbron-id
 title: JSON-object voor machtigingsbron-id
-uuid: f5b659da-1732-404c-bf00-d32a0ae39aa1
 description: Het volgende codeblok geeft een voorbeeld van een JSON-object wanneer de machtigingsbron-id een eenvoudige tekstreeks is.
-seo-description: Het volgende codeblok geeft een voorbeeld van een JSON-object wanneer de machtigingsbron-id een eenvoudige tekstreeks is.
 translation-type: tm+mt
-source-git-commit: 31b6cad26bcc393d731080a70eff1c59551f1c8e
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '122'
+source-wordcount: '95'
 ht-degree: 0%
 
 ---
