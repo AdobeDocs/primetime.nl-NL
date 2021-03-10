@@ -1,13 +1,10 @@
 ---
 description: Voor video-on-demand (VOD)-inhoud voegt TVSDK de advertenties in de hoofdinhoud op en verbreekt deze door de tijdlijnduur te spreiden.
-seo-description: Voor video-on-demand (VOD)-inhoud voegt TVSDK de advertenties in de hoofdinhoud op en verbreekt deze door de tijdlijnduur te spreiden.
-seo-title: VOD-advertentie omzetten en invoegen
 title: VOD-advertentie omzetten en invoegen
-uuid: b7124cab-441b-4b38-ac83-300ab9e5f9ec
 translation-type: tm+mt
-source-git-commit: bc35da8b258056809ceaf18e33bed631047bc81b
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '186'
+source-wordcount: '159'
 ht-degree: 0%
 
 ---
