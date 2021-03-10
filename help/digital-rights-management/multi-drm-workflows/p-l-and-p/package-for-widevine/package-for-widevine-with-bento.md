@@ -1,13 +1,10 @@
 ---
 description: We gebruiken zowel de Bento4-pakketsoftware als de Adobe offline-pakketsoftware om gecodeerde DASH-inhoud te ontwerpen. Bento4 neemt als invoer niet-gecodeerde MP4-inhoud.
-seo-description: We gebruiken zowel de Bento4-pakketsoftware als de Adobe offline-pakketsoftware om gecodeerde DASH-inhoud te ontwerpen. Bento4 neemt als invoer niet-gecodeerde MP4-inhoud.
-seo-title: Verpak uw inhoud met Bento4
 title: Verpak uw inhoud met Bento4
-uuid: 88323a4e-d0b5-4a41-acec-7126d3e0c90b
 translation-type: tm+mt
-source-git-commit: 75702ea2a524d7b38bb9ac83cb094c8482b1098f
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '292'
+source-wordcount: '264'
 ht-degree: 0%
 
 ---
