@@ -1,13 +1,10 @@
 ---
 description: Wanneer u gebeurtenislisteners registreert met Browser-TVSDK, geeft u een gebeurtenistype op waarnaar wordt geluisterd en de naam van de callback. Wanneer een gebeurtenis voorkomt, roept Browser TVSDK uw callback en gaat tot het een gebeurtenisvoorwerp van het aangewezen type over.
-seo-description: Wanneer u gebeurtenislisteners registreert met Browser-TVSDK, geeft u een gebeurtenistype op waarnaar wordt geluisterd en de naam van de callback. Wanneer een gebeurtenis voorkomt, roept Browser TVSDK uw callback en gaat tot het een gebeurtenisvoorwerp van het aangewezen type over.
-seo-title: Gebeurtenistypen en -klassen voor callbacks
 title: Gebeurtenistypen en -klassen voor callbacks
-uuid: 13d7e939-ff45-4a52-bcbe-70abb56ac205
 translation-type: tm+mt
-source-git-commit: 040655d8ba5f91c98ed0584c08db226ffe1e0f4e
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '254'
+source-wordcount: '206'
 ht-degree: 0%
 
 ---
