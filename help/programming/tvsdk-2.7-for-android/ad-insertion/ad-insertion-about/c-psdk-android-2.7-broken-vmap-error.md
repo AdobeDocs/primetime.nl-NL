@@ -1,14 +1,11 @@
 ---
 description: Wanneer TVSDK een gebroken VMAP in een reactie van de advertentieserver aantreft, verzendt het een fout 1109 (NETWORK_AD_URL_FAILED).
-keywords: 1109;NETWORK_AD_URL_FAILED;broken VMAP
-seo-description: Wanneer TVSDK een gebroken VMAP in een reactie van de advertentieserver aantreft, verzendt het een fout 1109 (NETWORK_AD_URL_FAILED).
-seo-title: Clientfoutafhandeling voor verbroken VMAP
+keywords: 1109;NETWORK_AD_URL_FAILED;verbroken VMAP
 title: Clientfoutafhandeling voor verbroken VMAP
-uuid: 7cc68c86-bb49-4a1b-a1ec-65ca4c94d75d
 translation-type: tm+mt
-source-git-commit: 812d04037c3b18f8d8cdd0d18430c686c3eee1ff
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '247'
+source-wordcount: '228'
 ht-degree: 0%
 
 ---
