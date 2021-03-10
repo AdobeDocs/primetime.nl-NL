@@ -1,13 +1,10 @@
 ---
 description: Deze sectie verstrekt een conceptueel overzicht van de configuratie, de opties, en betekenissen verbonden aan outputbescherming.
-seo-description: Deze sectie verstrekt een conceptueel overzicht van de configuratie, de opties, en betekenissen verbonden aan outputbescherming.
-seo-title: RBOP-concepten
 title: RBOP-concepten
-uuid: fc19c3c9-39a1-4b62-b763-101e5454a01f
 translation-type: tm+mt
-source-git-commit: e60d285b9e30cdd19728e3029ecda995cd100ac9
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '211'
+source-wordcount: '193'
 ht-degree: 0%
 
 ---
