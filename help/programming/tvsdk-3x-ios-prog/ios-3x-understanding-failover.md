@@ -1,13 +1,10 @@
 ---
 description: Failover-afhandeling treedt op wanneer een afspeellijst van een variant meerdere uitvoeringen voor dezelfde bitsnelheid heeft en een van de uitvoeringen niet meer werkt. De TVSDK wisselt tussen uitvoeringen.
-seo-description: Failover-afhandeling treedt op wanneer een afspeellijst van een variant meerdere uitvoeringen voor dezelfde bitsnelheid heeft en een van de uitvoeringen niet meer werkt. De TVSDK wisselt tussen uitvoeringen.
-seo-title: Failover
 title: Failover
-uuid: 064886ab-afa2-4afc-b795-d094b31934b8
 translation-type: tm+mt
-source-git-commit: 557f42cd9a6f356aa99e13386d9e8d65e043a6af
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '250'
+source-wordcount: '222'
 ht-degree: 0%
 
 ---
