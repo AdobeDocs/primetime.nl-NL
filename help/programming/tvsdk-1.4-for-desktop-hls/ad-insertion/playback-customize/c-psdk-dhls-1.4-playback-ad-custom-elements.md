@@ -1,13 +1,10 @@
 ---
 description: TVSDK biedt klassen en methoden waarmee u het afspeelgedrag kunt aanpassen van inhoud die reclame bevat.
-seo-description: TVSDK biedt klassen en methoden waarmee u het afspeelgedrag kunt aanpassen van inhoud die reclame bevat.
-seo-title: API-elementen voor het afspelen van advertenties
 title: API-elementen voor het afspelen van advertenties
-uuid: 61ebbfd7-696c-4a5b-8dbb-682770cd5840
 translation-type: tm+mt
-source-git-commit: d2b8cb67c54fadb8e0e7d2bdc15e393fdce8550e
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '259'
+source-wordcount: '236'
 ht-degree: 0%
 
 ---
