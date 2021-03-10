@@ -1,13 +1,10 @@
 ---
 title: Query-parameters van de server manipuleren
 description: De parameters van de vraag vertellen de manifestserver welke soort cliënt het verzoek verzond en wat die cliënt de manifestserver wil doen. Sommige zijn vereist en sommige hebben specifieke acceptabele indelingen of waarden.
-seo-title: Query-parameters van de server manipuleren
-seo-description: De parameters van de vraag vertellen de manifestserver welke soort cliënt het verzoek verzond en wat die cliënt de manifestserver wil doen. Sommige zijn vereist en sommige hebben specifieke acceptabele indelingen of waarden.
-uuid: 03632da3-ae20-427c-bd24-4794ab627cc8
 translation-type: tm+mt
-source-git-commit: e1e33d3ac0aad44859cd49566331524da72ac7e4
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '759'
+source-wordcount: '721'
 ht-degree: 0%
 
 ---
@@ -29,7 +26,7 @@ De manifestserver herkent de volgende parameters. Deze worden samen met alle nie
 | g | Type clientapparaat | Wanneer het richten van regels afhangt van apparatentype | Zie lijst bij [Clienttypen](https://adobeprimetime.zendesk.com). Vereist toegang van Zendesk. |
 | k | Trefwoorden voor aangepaste advertenties | Nee | URL-veilige tekenreeks in formaat `key1=value1;key2=value2;. . .` |
 | u | ID van primetime en invoegmiddel. | Ja | MD5 Hash-waarde |
-| z | Id van primetime en invoegzone voor het element. | Ja | Geheel |
+| z | Id van primetime- en invoegzone voor het element. | Ja | Geheel |
 | enableC3 | De client bevindt zich in een C3-venster. Indien waar (true), alleen lokale vermeldingen vervangen; anders vervangt u alle beschikbare gegevens. | Nee | Boolean |
 | leven | Geeft aan of de inhoud een live stream of een VOD-stream (video on-demand) is. | Akamai Ad Scaler- of iOS Safari-client. | Boolean |
 | `pabimode` | [Ondersteuning inschakelen voor gedeeltelijke ](/help/primetime-ad-insertion/~old-msapi-topics/ms-insert-ads/partial-ad-break-insetion.md) invoeging en afbreken. <br> Inschakelen indien waar of begin.<br> Uitschakelen indien onwaar. | Nee (standaard is uitgeschakeld) | start, true of false |
