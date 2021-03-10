@@ -1,13 +1,10 @@
 ---
 description: Werk met de SES om te zien hoe u een op tijd gebaseerde machtigingsservice kunt inschakelen met ExpressPlay.
-seo-description: Werk met de SES om te zien hoe u een op tijd gebaseerde machtigingsservice kunt inschakelen met ExpressPlay.
-seo-title: Referentieservice op tijd gebaseerde machtiging
 title: Referentieservice op tijd gebaseerde machtiging
-uuid: dd937299-a271-49a9-9b26-eec16f1484df
 translation-type: tm+mt
-source-git-commit: ffb993889a78ee068b9028cb2bd896003c5d4d4c
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '279'
+source-wordcount: '260'
 ht-degree: 0%
 
 ---
