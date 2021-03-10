@@ -1,13 +1,10 @@
 ---
 description: Mediastreams kunnen extra metagegevens bevatten in de vorm van tags in het MPD-bestand (Media Presentation Description). Dit bestand geeft de plaatsing van de reclame aan. U kunt aangepaste tagnamen opgeven en een melding ontvangen wanneer bepaalde tags in het manifestbestand worden weergegeven.
-seo-description: Mediastreams kunnen extra metagegevens bevatten in de vorm van tags in het MPD-bestand (Media Presentation Description). Dit bestand geeft de plaatsing van de reclame aan. U kunt aangepaste tagnamen opgeven en een melding ontvangen wanneer bepaalde tags in het manifestbestand worden weergegeven.
-seo-title: Aangepaste tags
 title: Aangepaste tags
-uuid: d1e34288-545b-440f-a262-2fb853f0e3c4
 translation-type: tm+mt
-source-git-commit: 1b9792a10ad606b99b6639799ac2aacb707b2af5
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '486'
+source-wordcount: '441'
 ht-degree: 0%
 
 ---
