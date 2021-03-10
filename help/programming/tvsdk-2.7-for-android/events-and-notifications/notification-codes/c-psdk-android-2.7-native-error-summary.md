@@ -1,9 +1,9 @@
 ---
-seo-title: Details voor de melding NATIVE_ERROR
 title: Details voor de melding NATIVE_ERROR
-uuid: 750ee0e2-15d4-4602-9574-94015a6e1b57
+description: Details voor de melding NATIVE_ERROR
+copied-description: true
 translation-type: tm+mt
-source-git-commit: 8ff38bdc1a7ff9732f7f1fae37f64d0e1113ff40
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
 source-wordcount: '6888'
 ht-degree: 2%
@@ -755,7 +755,7 @@ De Video Encoder-interface van de AVE retourneert deze meldingen voor het afspel
    <td colname="col3"> Bewerking niet mogelijk vanwege bestandseinde (EOF). </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> 1 </td> 
+   <td colname="col1"> 3 </td> 
    <td colname="col2"><span class="codeph"> DECODER_FAILED</span> </td> 
    <td colname="col3"> De decoder is mislukt bij uitvoering. </td> 
   </tr> 
