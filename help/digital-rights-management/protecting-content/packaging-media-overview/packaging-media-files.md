@@ -1,9 +1,9 @@
 ---
-seo-title: Overzicht van mediabestanden verpakken
 title: Overzicht van mediabestanden verpakken
-uuid: 9509bcdc-ee4d-4025-9bb6-9b8ac439b926
+description: Overzicht van mediabestanden verpakken
+copied-description: true
 translation-type: tm+mt
-source-git-commit: 1b9792a10ad606b99b6639799ac2aacb707b2af5
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
 source-wordcount: '663'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Overzicht {#packaging-media-files-overview}
 
-Het verpakken verwijst naar het proces om een beleid DRM op videoinhoud te coderen en toe te passen. U kunt de API&#39;s voor het verpakken van media gebruiken om bestanden te verpakken. De Primetime DRM Java SDK kan alleen inhoud die progressief kan worden gedownload, zoals MP4, in een pakket plaatsen.
+Het verpakken verwijst naar het proces om een beleid DRM op videoinhoud te coderen en toe te passen. U kunt de API&#39;s voor het verpakken van media gebruiken om bestanden te verpakken. De Primetime DRM Java SDK kan alleen inhoud die progressief kan worden gedownload, zoals MP4, in een pakket opnemen.
 
 >[!NOTE]
 >
@@ -31,7 +31,7 @@ Een bepaald stuk inhoud kan meerdere DRM-beleidsregels hebben. U kunt bijvoorbee
 
 Primetime DRM biedt een API voor het doorgeven in de CEK. Als er geen CEK is opgegeven, genereert de SDK deze willekeurig. Gewoonlijk hebt u voor elke sectie van inhoud een andere CEK nodig. In Dynamic Streaming zult u echter waarschijnlijk dezelfde CEK gebruiken voor alle bestanden waaruit die inhoud bestaat. Daarom heeft een gebruiker slechts één licentie nodig om naadloos over te schakelen van de ene bitsnelheid naar de andere. Als u dezelfde sleutel en licentie voor meerdere inhoud wilt gebruiken, moet u hetzelfde `DRMParameters`-object doorgeven aan `MediaEncrypter.encryptContent()` of de CEK doorgeven met `V2KeyParameters.setContentEncryptionKey()`. Als u voor elke sectie van inhoud een andere sleutel en licentie wilt gebruiken, moet u een nieuwe `DRMParameters` instantie voor elk bestand maken.
 
-Wanneer u inhoud verpakt met behulp van toetsrotatie, kunt u de gebruikte rotatietoetsen en de frequentie waarmee de toetsen worden gewijzigd instellen. `F4VDRMParameters` en  `FLVDRMParameters` implementeert de  `KeyRotationParameters` interface. Via deze interface kunt u sleutelrotatie inschakelen. U moet ook een `RotatingContentEncryptionKeyProvider` specificeren. Voor elke gecodeerde steekproef, bepaalt deze klasse de Sleutel van de Omwenteling te gebruiken. U kunt uw eigen leverancier uitvoeren, of `TimeBasedKeyProvider` gebruiken inbegrepen met SDK. Deze implementatie genereert op willekeurige wijze een nieuwe sleutel na een opgegeven aantal seconden.
+Wanneer u inhoud verpakt met behulp van toetsrotatie, kunt u de gebruikte rotatietoetsen en de frequentie waarmee de toetsen worden gewijzigd instellen. `F4VDRMParameters` en  `FLVDRMParameters` implementeert de  `KeyRotationParameters` interface. Via deze interface kunt u sleutelrotatie inschakelen. U moet ook een `RotatingContentEncryptionKeyProvider` specificeren. Voor elke gecodeerde steekproef, bepaalt deze klasse de Sleutel van de Omwenteling aan gebruik. U kunt uw eigen leverancier uitvoeren, of `TimeBasedKeyProvider` gebruiken inbegrepen met SDK. Deze implementatie genereert op willekeurige wijze een nieuwe sleutel na een opgegeven aantal seconden.
 
 In sommige gevallen moet u de metagegevens van de inhoud mogelijk opslaan als een afzonderlijk bestand en deze afzonderlijk van de inhoud beschikbaar stellen aan de client. In dat geval moet u `MediaEncrypter.encryptContent()` aanroepen, die een `MediaEncrypterResult` voorwerp terugkeert. Roep `MediaEncrypterResult.getKeyInfo()` aan en cast het resultaat naar `V2KeyStatus`. Vervolgens haalt u de metagegevens van de inhoud op en slaat u deze op in een bestand.
 
