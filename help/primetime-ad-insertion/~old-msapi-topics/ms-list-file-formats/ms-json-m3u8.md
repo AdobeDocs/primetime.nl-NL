@@ -1,13 +1,10 @@
 ---
 description: Als trackingmode=simple of ptplayer=ios-mobileweb, verzendt de manifestserver een JSON-bestand met Master-M3U8, een URL die de client moet gebruiken om het M3U8-bestand met een beschrijving van de inhoud aan te vragen.
-seo-description: Als trackingmode=simple of ptplayer=ios-mobileweb, verzendt de manifestserver een JSON-bestand met Master-M3U8, een URL die de client moet gebruiken om het M3U8-bestand met een beschrijving van de inhoud aan te vragen.
-seo-title: JSON-indeling voor URL voor het aanvragen van afspeellijst met variantmanifest
 title: JSON-indeling voor URL voor het aanvragen van afspeellijst met variantmanifest
-uuid: 9f9693d0-3c93-4555-b20c-7f4576742f41
 translation-type: tm+mt
-source-git-commit: e437f4143fb939f46d106c64efc391137c33fe17
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '133'
+source-wordcount: '91'
 ht-degree: 0%
 
 ---
