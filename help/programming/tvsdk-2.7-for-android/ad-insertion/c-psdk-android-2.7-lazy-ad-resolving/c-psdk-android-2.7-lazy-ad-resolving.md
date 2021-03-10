@@ -1,14 +1,11 @@
 ---
 description: Oplossen en laden van advertenties kan een onaanvaardbare wachttijd veroorzaken voor een gebruiker die wacht tot het afspelen is gestart. Met de functies Lazy Ad Loading en Lazy Ad Resolving kunt u deze opstartvertraging verminderen.
-keywords: Lazy;Ad resolving;Ad loading
-seo-description: Oplossen en laden van advertenties kan een onaanvaardbare wachttijd veroorzaken voor een gebruiker die wacht tot het afspelen is gestart. Met de functies Lazy Ad Loading en Lazy Ad Resolving kunt u deze opstartvertraging verminderen.
-seo-title: Lazy en oplossen
+keywords: Lazy;Adverteren;Toevoegen, laden
 title: Lazy en oplossen
-uuid: cf9ba788-b83f-43aa-94c4-db391d92a77b
 translation-type: tm+mt
-source-git-commit: 5df9a8b98baaf1cd1803581d2b60c7ed4261a0e8
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '506'
+source-wordcount: '476'
 ht-degree: 0%
 
 ---
