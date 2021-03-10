@@ -1,13 +1,10 @@
 ---
 description: Adobe Access kan worden gebruikt met andere oplossingen voor het streamen van inhoud van derden om een volledig en veilig, op DRM gebaseerd ecosysteem voor mediadistributie in te stellen.
-seo-description: Adobe Access kan worden gebruikt met andere oplossingen voor het streamen van inhoud van derden om een volledig en veilig, op DRM gebaseerd ecosysteem voor mediadistributie in te stellen.
-seo-title: UltraViolet-media en Adobe Access
 title: UltraViolet-media en Adobe Access
-uuid: d287680f-02de-4cca-aeea-22b7fd8e67d2
 translation-type: tm+mt
-source-git-commit: 7e8df034035fe465fbe403949ef828e7811ced2e
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '515'
+source-wordcount: '488'
 ht-degree: 0%
 
 ---
