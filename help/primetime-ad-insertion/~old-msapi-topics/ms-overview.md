@@ -1,13 +1,10 @@
 ---
 description: De manifestserver coördineert de systemen die inhoud verstrekken, advertenties verstrekken, video spelen, en spooradvertenties. Het ontvangt met M3U8 gecodeerde afspeellijsten (manifests) die door client-videospelers van contentproviders worden ontvangen, advertenties van advertentieleveranciers in de manifests steekt en de vernaakte manifests aan videospelers doorgeeft. De functie ondersteunt zowel client-side als server-side en tracking. Het voert zijn interactie uit gebruikend een op HTTP-Gebaseerde Webdienstinterface.
-seo-description: De manifestserver coördineert de systemen die inhoud verstrekken, advertenties verstrekken, video spelen, en spooradvertenties. Het ontvangt met M3U8 gecodeerde afspeellijsten (manifests) die door client-videospelers van contentproviders worden ontvangen, advertenties van advertentieleveranciers in de manifests steekt en de vernaakte manifests aan videospelers doorgeeft. De functie ondersteunt zowel client-side als server-side en tracking. Het voert zijn interactie uit gebruikend een op HTTP-Gebaseerde Webdienstinterface.
-seo-title: Overzicht van Manifest Server-interacties
 title: Overzicht van Manifest Server-interacties
-uuid: 3e314a45-a4dd-492f-8915-19224a8fbbc7
 translation-type: tm+mt
-source-git-commit: e1e33d3ac0aad44859cd49566331524da72ac7e4
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '654'
+source-wordcount: '584'
 ht-degree: 0%
 
 ---
