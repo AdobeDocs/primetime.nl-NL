@@ -1,13 +1,11 @@
 ---
-description: 'null'
-seo-description: 'null'
-seo-title: Een certificaat goedkeuren (accountbeheerder of secundaire beheerder)
 title: Een certificaat goedkeuren (accountbeheerder of secundaire beheerder)
-uuid: 5b95e2e8-abe9-4aef-bcb4-9b98ba6604d1
+description: Een certificaat goedkeuren (accountbeheerder of secundaire beheerder)
+copied-description: true
 translation-type: tm+mt
-source-git-commit: b4b50471ab0ba98329862322a61bf73aa9e471d5
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '321'
+source-wordcount: '319'
 ht-degree: 0%
 
 ---
