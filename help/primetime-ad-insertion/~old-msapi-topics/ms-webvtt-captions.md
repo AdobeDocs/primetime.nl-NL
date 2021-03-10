@@ -1,13 +1,10 @@
 ---
 description: De manifestserver steunt uitgever-toegelaten WebVTT titels voor alle videoformaten HLS. Wanneer het verzoeken ontvangt om advertenties in WebVTT getitelde inhoud op te nemen, doet het correct.
-seo-description: De manifestserver steunt uitgever-toegelaten WebVTT titels voor alle videoformaten HLS/DASH. Wanneer het verzoeken ontvangt om advertenties in WebVTT getitelde inhoud op te nemen, doet het correct.
-seo-title: Ondersteuning voor WebVTT-bijschriften
 title: Ondersteuning voor WebVTT-bijschriften
-uuid: 1dc728b0-5aeb-4c48-8f3b-54ff4b135742
 translation-type: tm+mt
-source-git-commit: e437f4143fb939f46d106c64efc391137c33fe17
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '357'
+source-wordcount: '325'
 ht-degree: 0%
 
 ---
