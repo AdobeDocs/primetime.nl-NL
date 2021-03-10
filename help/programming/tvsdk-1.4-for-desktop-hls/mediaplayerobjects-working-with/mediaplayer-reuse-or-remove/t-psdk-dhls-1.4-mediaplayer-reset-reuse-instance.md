@@ -1,13 +1,10 @@
 ---
 description: Wanneer u een instantie MediaPlayer opnieuw instelt, wordt het teruggekeerd aan zijn niet geïnitialiseerde staat IDLE zoals die in MediaPlayerStatus wordt bepaald.
-seo-description: Wanneer u een instantie MediaPlayer opnieuw instelt, wordt het teruggekeerd aan zijn niet geïnitialiseerde staat IDLE zoals die in MediaPlayerStatus wordt bepaald.
-seo-title: Een MediaPlayer-instantie opnieuw instellen of gebruiken
 title: Een MediaPlayer-instantie opnieuw instellen of gebruiken
-uuid: b376096b-0aed-4ac2-96e5-e30a4eaf742e
 translation-type: tm+mt
-source-git-commit: c547002eb8946f8ccc5a79d0836f3f814e823b97
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '201'
+source-wordcount: '177'
 ht-degree: 0%
 
 ---
@@ -31,7 +28,7 @@ Deze bewerking is handig in de volgende gevallen:
    >
    >Dit is de enige manier om van de status van de FOUT terug te krijgen.
 
-1. Roep `reset` aan om de `MediaPlayer` instantie aan zijn uninitialized staat terug te keren:
+1. Roep `reset` aan om de `MediaPlayer` instantie aan zijn niet-geïnitialiseerde staat terug te keren:
 
    ```
    function reset():void; 
