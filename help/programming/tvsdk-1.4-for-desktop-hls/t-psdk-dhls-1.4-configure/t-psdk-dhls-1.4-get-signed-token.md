@@ -1,13 +1,10 @@
 ---
 description: De Flash Runtime TVSDK heeft een ondertekend token nodig om te controleren of u het recht hebt om de TVSDK API aan te roepen in het domein waar uw toepassing zich bevindt.
-seo-description: De Flash Runtime TVSDK heeft een ondertekend token nodig om te controleren of u het recht hebt om de TVSDK API aan te roepen in het domein waar uw toepassing zich bevindt.
-seo-title: Uw ondertekende token laden
 title: Uw ondertekende token laden
-uuid: 8760eab3-3d6d-47c6-9aa7-f64f6aa5ddcf
 translation-type: tm+mt
-source-git-commit: 8ff38bdc1a7ff9732f7f1fae37f64d0e1113ff40
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '546'
+source-wordcount: '515'
 ht-degree: 0%
 
 ---
