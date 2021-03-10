@@ -1,13 +1,10 @@
 ---
 description: Voor een vloeiender kijkervaring wordt de videostream soms door TVSDK gebufferd. U kunt configureren hoe de speler buffert.
-seo-description: Voor een vloeiender kijkervaring wordt de videostream soms door TVSDK gebufferd. U kunt configureren hoe de speler buffert.
-seo-title: Bufferen
 title: Bufferen
-uuid: 7f9f0deb-5f18-441d-b7a4-67c631a798f4
 translation-type: tm+mt
-source-git-commit: 21d1eae53cea303221de00765724e787cf6e84ef
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '520'
+source-wordcount: '500'
 ht-degree: 0%
 
 ---
