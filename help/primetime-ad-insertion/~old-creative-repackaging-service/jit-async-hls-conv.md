@@ -1,13 +1,10 @@
 ---
 description: CRS verstrekt just-in-time (JIT) en asynchrone het herverpakken en omzetten HLS-aan-HLS. Het resultaat van het opnieuw verpakken is een HLS-opgemaakte versie van het origineel en de creatieve versie. CRS plaatst de HLS geformatteerde versie op de server van het netwerk van de inhoudslevering (CDN) voor gebruik wanneer nodig.
-seo-description: CRS verstrekt just-in-time (JIT) en asynchrone het herverpakken en omzetten HLS-aan-HLS. Het resultaat van het opnieuw verpakken is een HLS-opgemaakte versie van het origineel en de creatieve versie. CRS plaatst de HLS geformatteerde versie op de server van het netwerk van de inhoudslevering (CDN) voor gebruik wanneer nodig.
-seo-title: Belangrijkste toepassingen van CRS
 title: Belangrijkste toepassingen van CRS
-uuid: df2caa67-bc94-4146-9b93-14edc060c3d5
 translation-type: tm+mt
-source-git-commit: e1e33d3ac0aad44859cd49566331524da72ac7e4
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '396'
+source-wordcount: '351'
 ht-degree: 0%
 
 ---
