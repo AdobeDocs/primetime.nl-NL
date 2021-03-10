@@ -1,13 +1,10 @@
 ---
 description: Het MediaPlayer-object vertegenwoordigt uw mediaspeler. Een MediaPlayerItem vertegenwoordigt audio of video op uw speler.
-seo-description: Het MediaPlayer-object vertegenwoordigt uw mediaspeler. Een MediaPlayerItem vertegenwoordigt audio of video op uw speler.
-seo-title: Informatie over de klasse MediaPlayerItem
 title: Informatie over de klasse MediaPlayerItem
-uuid: 531dd1a6-d72c-4ae3-9c3f-2f1d854245c5
 translation-type: tm+mt
-source-git-commit: 040655d8ba5f91c98ed0584c08db226ffe1e0f4e
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '165'
+source-wordcount: '145'
 ht-degree: 0%
 
 ---
