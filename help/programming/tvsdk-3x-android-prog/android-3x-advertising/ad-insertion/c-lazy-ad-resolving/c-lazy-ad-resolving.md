@@ -1,14 +1,11 @@
 ---
 description: Oplossen en laden van advertenties kan een onaanvaardbare wachttijd veroorzaken voor een gebruiker die wacht tot het afspelen is gestart. Met de functies Lazy Ad Loading en Lazy Ad Resolving kunt u deze opstartvertraging verminderen. Lazy Adv Resolving is significant veranderd in versie 3.0. In Lazy Ad die voorafgaand aan 3.0, en resolutie werd gebroken in twee stappen, die enkel pre-rollen advertenties vóór de VOORBEREIDENDE status oplossen, en midden rollen en post-rollen na de VOORBEREIDENDE status. Dit is gewijzigd en de afbrekingen van de advertentie worden nu opgelost met een opgegeven interval vóór de positie van het advertentierak.
-keywords: Lazy;Ad resolving;Ad loading
-seo-description: Oplossen en laden van advertenties kan een onaanvaardbare wachttijd veroorzaken voor een gebruiker die wacht tot het afspelen is gestart. Met de functies Lazy Ad Loading en Lazy Ad Resolving kunt u deze opstartvertraging verminderen. Lazy Adv Resolving is significant veranderd in versie 3.0. In Lazy Ad die voorafgaand aan 3.0, en resolutie werd gebroken in twee stappen, die enkel pre-rollen advertenties vóór de VOORBEREIDENDE status oplossen, en midden rollen en post-rollen na de VOORBEREIDENDE status. Dit is gewijzigd en de afbrekingen van de advertentie worden nu opgelost met een opgegeven interval vóór de positie van het advertentierak.
-seo-title: Just-in-Time en oplossing
+keywords: Lazy;Adverteren;Toevoegen, laden
 title: Just-in-Time en oplossing
-uuid: 77028f6e-7e53-45d1-bcc0-54f8224d6d18
 translation-type: tm+mt
-source-git-commit: 5df9a8b98baaf1cd1803581d2b60c7ed4261a0e8
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '696'
+source-wordcount: '606'
 ht-degree: 0%
 
 ---
