@@ -1,13 +1,10 @@
 ---
 description: Deze tabel bevat gedetailleerde informatie over meldingen van FOUTtypen.
-seo-description: Deze tabel bevat gedetailleerde informatie over meldingen van FOUTtypen.
-seo-title: FOUTmeldingscodes
 title: FOUTmeldingscodes
-uuid: 50624782-3d0b-4ac4-b883-355c1f7e9bff
 translation-type: tm+mt
-source-git-commit: 91cea7acb8127e02b82e5242b9ad6ab0d12ce0eb
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '526'
+source-wordcount: '514'
 ht-degree: 4%
 
 ---
