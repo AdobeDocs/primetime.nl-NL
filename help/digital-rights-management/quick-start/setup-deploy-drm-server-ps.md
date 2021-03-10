@@ -1,9 +1,9 @@
 ---
-seo-title: De server instellen en implementeren voor beveiligde streaming
 title: De server instellen en implementeren voor beveiligde streaming
-uuid: 300a1b63-0bf0-48a8-977d-212563025c19
+description: De server instellen en implementeren voor beveiligde streaming
+copied-description: true
 translation-type: tm+mt
-source-git-commit: e60d285b9e30cdd19728e3029ecda995cd100ac9
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
 source-wordcount: '172'
 ht-degree: 0%
