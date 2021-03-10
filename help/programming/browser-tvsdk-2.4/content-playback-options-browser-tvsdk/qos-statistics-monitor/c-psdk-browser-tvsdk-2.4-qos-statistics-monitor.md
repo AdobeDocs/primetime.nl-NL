@@ -1,13 +1,10 @@
 ---
 description: De kwaliteit van de dienst (QoS) biedt een gedetailleerde mening in hoe de videomotor presteert. Browser TVSDK verstrekt gedetailleerde statistieken over playback, het als buffer optreden, en apparaten.
-seo-description: De kwaliteit van de dienst (QoS) biedt een gedetailleerde mening in hoe de videomotor presteert. Browser TVSDK verstrekt gedetailleerde statistieken over playback, het als buffer optreden, en apparaten.
-seo-title: Kwaliteit van de dienststatistieken
 title: Kwaliteit van de dienststatistieken
-uuid: e4bb2617-d8a7-4da7-b669-d6ffab2864bb
 translation-type: tm+mt
-source-git-commit: 592245f5a7186d18dabbb5a98a468cbed7354aed
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '170'
+source-wordcount: '141'
 ht-degree: 1%
 
 ---
