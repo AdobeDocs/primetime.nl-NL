@@ -1,13 +1,10 @@
 ---
 description: U kunt stroomstoringen in live videostreams verwerken en tijdens een stroomstoring alternatieve inhoud bieden.
-seo-description: U kunt stroomstoringen in live videostreams verwerken en tijdens een stroomstoring alternatieve inhoud bieden.
-seo-title: Stroomuitval in live streams verwerken
 title: Stroomuitval in live streams verwerken
-uuid: df933087-c8a8-49eb-a016-6dfd971c219c
 translation-type: tm+mt
-source-git-commit: 040655d8ba5f91c98ed0584c08db226ffe1e0f4e
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '539'
+source-wordcount: '519'
 ht-degree: 0%
 
 ---
