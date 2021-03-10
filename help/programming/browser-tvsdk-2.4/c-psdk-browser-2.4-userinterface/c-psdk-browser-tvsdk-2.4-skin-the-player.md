@@ -1,13 +1,10 @@
 ---
 description: U kunt de volgende informatie gebruiken om u te helpen een skin aan uw speler toewijzen. Voor elke visuele constructie, wordt het overeenkomstige gedrag vermeld in standaardgedrag.
-seo-description: U kunt de volgende informatie gebruiken om u te helpen een skin aan uw speler toewijzen. Voor elke visuele constructie, wordt het overeenkomstige gedrag vermeld in standaardgedrag.
-seo-title: De speler Skins toewijzen
 title: De speler Skins toewijzen
-uuid: 516ff846-d76d-4062-b64b-3032f7a70470
 translation-type: tm+mt
-source-git-commit: 19e7c941b3337c3b4d37f0b6a1350aac2ad8a0cc
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '1449'
+source-wordcount: '1422'
 ht-degree: 0%
 
 ---
