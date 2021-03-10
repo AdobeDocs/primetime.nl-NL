@@ -1,13 +1,10 @@
 ---
 description: De advertentietijdlijn die geschikt is voor het afspelen van VOD-inhoud, is mogelijk niet geschikt voor volgende afspelen. U kunt een VOD-tijdlijn vervangen zonder de inhoud te wijzigen.
-seo-description: De advertentietijdlijn die geschikt is voor het afspelen van VOD-inhoud, is mogelijk niet geschikt voor volgende afspelen. U kunt een VOD-tijdlijn vervangen zonder de inhoud te wijzigen.
-seo-title: Wijzigingen in VOD
 title: Wijzigingen in VOD
-uuid: e734aacd-b42e-4c8e-a16a-c7a0739a0492
 translation-type: tm+mt
-source-git-commit: e437f4143fb939f46d106c64efc391137c33fe17
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '163'
+source-wordcount: '134'
 ht-degree: 0%
 
 ---
