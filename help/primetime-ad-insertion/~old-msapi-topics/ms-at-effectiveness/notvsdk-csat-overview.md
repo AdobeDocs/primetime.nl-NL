@@ -1,13 +1,10 @@
 ---
 description: Uitgevers kunnen HLS-Volgzame videospelers bouwen die met de cliënt-kant en volgwerkschema's van de server van Primetime manifest werken. De interfaces aan de manifestserver voor de levende stroom en video op bestelling (VOD) gevallen zijn lichtjes verschillend.
-seo-description: Uitgevers kunnen HLS-Volgzame videospelers bouwen die met de cliënt-kant en volgwerkschema's van de server van Primetime manifest werken. De interfaces aan de manifestserver voor de levende stroom en video op bestelling (VOD) gevallen zijn lichtjes verschillend.
-seo-title: Overzicht van niet-TVSDK client-side tracking
 title: Overzicht van niet-TVSDK client-side tracking
-uuid: fb23be01-3327-443d-82c4-fb0993e7fec1
 translation-type: tm+mt
-source-git-commit: e1e33d3ac0aad44859cd49566331524da72ac7e4
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '768'
+source-wordcount: '727'
 ht-degree: 1%
 
 ---
