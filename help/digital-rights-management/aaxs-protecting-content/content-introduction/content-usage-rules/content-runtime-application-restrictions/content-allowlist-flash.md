@@ -1,9 +1,9 @@
 ---
-seo-title: Lijst van gewenste personen voor SWF-bestanden van Adobe® Flash® Player die beveiligde inhoud mogen afspelen
 title: Lijst van gewenste personen voor SWF-bestanden van Adobe® Flash® Player die beveiligde inhoud mogen afspelen
-uuid: 482bfbed-7ef9-48d9-b399-d23fddabc81e
+description: Lijst van gewenste personen voor SWF-bestanden van Adobe® Flash® Player die beveiligde inhoud mogen afspelen
+copied-description: true
 translation-type: tm+mt
-source-git-commit: 9d2e046ae259c05fb4c278f464c9a26795e554fc
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
 source-wordcount: '140'
 ht-degree: 0%
