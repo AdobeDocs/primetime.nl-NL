@@ -1,16 +1,12 @@
 ---
 title: Opmerkingen bij de release TVSDK 2.7 voor Android
-seo-title: Opmerkingen bij de release TVSDK 2.7 voor Android
 description: Opmerkingen bij de release van TVSDK 2.7 voor Android beschrijven wat nieuw of gewijzigd is, de opgeloste en bekende problemen en de apparaatproblemen in TVSDK Android 2.7
-seo-description: Opmerkingen bij de release van TVSDK 2.7 voor Android beschrijven wat nieuw of gewijzigd is, de opgeloste en bekende problemen en de apparaatproblemen in TVSDK Android 2.7
-uuid: 4013b97d-29f9-435b-8772-b19df7054282
 products: SG_PRIMETIME
 topic-tags: release-notes
-discoiquuid: bab78e9f-f9ba-4e1c-b778-0936ae704037
 translation-type: tm+mt
-source-git-commit: 9c6a6f0b5ecff78796e37daf9d7bdb9fa686ee0c
+source-git-commit: b33240bf1b42b80389cd95a7ae4d3f85185a2d32
 workflow-type: tm+mt
-source-wordcount: '4123'
+source-wordcount: '4095'
 ht-degree: 0%
 
 ---
@@ -121,7 +117,7 @@ Android TVSDK v2.5.3 biedt de volgende updates en API-wijzigingen.
 
 Android TVSDK v2.5.2 biedt belangrijke foutoplossingen en enkele API-wijzigingen.
 
-**Versie 1.5.1**
+**Versie 2.5.1**
 
 De belangrijke nieuwe functies die zijn uitgebracht in Android 2.5.1.
 
@@ -154,7 +150,7 @@ Opmerking: Het omschakelen van ABR, het spelen van een truc, en het opnemen, laa
 * **Workflowondersteuning**
 
    * **Directe integratie van facturering -** Dit verzendt factureringsmetriek naar Adobe Analytics backend, die door Adobe Primetime voor stromen wordt verklaard die door de klant worden gebruikt.
-TVSDK verzamelt automatisch meetgegevens, met inachtneming van het verkoopcontract van de klant, om periodieke gebruiksrapporten te genereren die voor factureringsdoeleinden worden vereist. Bij elke streamstartgebeurtenis gebruikt TVSDK de API voor het invoegen van Adobe Analytics-gegevens om factuurmetriek, zoals inhoudssoort, voor het invoegen ingeschakelde vlaggen en voor het drm ingeschakelde vlaggen - gebaseerd op de duur van de factureerbare stream - naar de Adobe Analytics Primetime-rapportsuite te verzenden. Dit heeft geen invloed op of wordt niet opgenomen in de eigen Adobe Analytics-rapportreeksen of serveraanroepen van de klant. Op verzoek wordt dit gebruiksrapport voor facturering periodiek naar klanten verzonden. Dit is de eerste fase van de factureringsfunctie die alleen gebruiksfacturering ondersteunt. Het kan worden gevormd gebaseerd op het verkoopcontract gebruikend APIs die in de documentatie worden beschreven. Deze functie is standaard ingeschakeld. Raadpleeg het voorbeeld voor de referentiespeler als u deze functie wilt uitschakelen.
+TVSDK verzamelt automatisch metriek, met inachtneming van het klantenverkoopcontract om periodieke gebruiksrapporten te produceren die voor factureringsdoeleinden worden vereist. Bij elke streamstartgebeurtenis gebruikt TVSDK de API voor het invoegen van Adobe Analytics-gegevens om factuurmetriek, zoals inhoudssoort, voor het invoegen ingeschakelde vlaggen en voor het drm ingeschakelde vlaggen - gebaseerd op de duur van de factureerbare stream - naar de Adobe Analytics Primetime-rapportsuite te verzenden. Dit heeft geen invloed op of wordt niet opgenomen in de eigen Adobe Analytics-rapportreeksen of serveraanroepen van de klant. Op verzoek wordt dit gebruiksrapport voor facturering periodiek naar klanten verzonden. Dit is de eerste fase van de factureringsfunctie die alleen gebruiksfacturering ondersteunt. Het kan worden gevormd gebaseerd op het verkoopcontract gebruikend APIs die in de documentatie worden beschreven. Deze functie is standaard ingeschakeld. Raadpleeg het voorbeeld voor de referentiespeler als u deze functie wilt uitschakelen.
    * **Verbeterde failover-ondersteuning -** Aanvullende strategieën die zijn geïmplementeerd om het afspelen zonder onderbreking voort te zetten, ondanks fouten met hostservers, afspeelbestanden en segmenten.
 
 * **Reclame**
@@ -226,7 +222,7 @@ In de onderstaande tabel met functies geeft een &#39;Y&#39; aan dat de functie w
 | Zwart-out van advertenties | VOD + Live | Niet ondersteund |
 | Direct aan | VOD + Live | Niet ondersteund |
 | Ondersteuning van discontinue markeertekens | VOD + Live | Y |
-| 302 Draairichting | VOD + Live | Y |
+| 302 Voortleidingsgevoeligheid | VOD + Live | Y |
 
 | Functie | Inhoudstype | HLS |
 |---|---|---|
@@ -419,7 +415,7 @@ Deze versie heeft de volgende problemen:
 Deze versie heeft de volgende problemen:
 
 * Het afspelen van live video kan problemen met audio- en videosynchronisatie hebben op eenvoudige apparaten.
-* Het afspelen kan op momenten stagneren wanneer wordt gezocht naar het einde van de VOD-media.
+* Afspelen kan op momenten stagneren wanneer wordt gezocht naar het einde van de VOD-media.
 * Voor FER stromen, kunnen virtualTime en localTime verschillen. FER met verschuiving werkt ook niet.
 
 **Android TVSDK 2.5.1**
