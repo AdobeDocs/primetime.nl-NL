@@ -1,13 +1,10 @@
 ---
 description: Een MediaPlayer-object kapselt het gedrag en de functionaliteit van een mediaspeler in.
-seo-description: Een MediaPlayer-object kapselt het gedrag en de functionaliteit van een mediaspeler in.
-seo-title: De MediaPlayer instellen
 title: De MediaPlayer instellen
-uuid: 2279e388-6fbc-49a2-8560-218d3d31e1d6
 translation-type: tm+mt
-source-git-commit: af9b865bc1627a97bf8957b5460ff9b46052a7dc
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '107'
+source-wordcount: '91'
 ht-degree: 0%
 
 ---
