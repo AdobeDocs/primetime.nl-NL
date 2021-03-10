@@ -1,13 +1,10 @@
 ---
 description: De klasse CustomRangeMetadata identificeert verschillende typen tijdbereiken in een VOD-streammarkering, -verwijderen en -vervangen. Voor elk van deze types van douanetijdwaaier, kunt u overeenkomstige verrichtingen uitvoeren, met inbegrip van het schrappen en het vervangen van advertentie inhoud.
-seo-description: De klasse CustomRangeMetadata identificeert verschillende typen tijdbereiken in een VOD-streammarkering, -verwijderen en -vervangen. Voor elk van deze types van douanetijdwaaier, kunt u overeenkomstige verrichtingen uitvoeren, met inbegrip van het schrappen en het vervangen van advertentie inhoud.
-seo-title: Aangepaste tijdbereikbewerkingen
 title: Aangepaste tijdbereikbewerkingen
-uuid: e9c6a135-124e-44d4-adf2-dc9d671e2483
 translation-type: tm+mt
-source-git-commit: 0eaf0e7e7e61d596a51d1c9c837ad072d703c6a7
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '359'
+source-wordcount: '319'
 ht-degree: 0%
 
 ---
