@@ -1,13 +1,10 @@
 ---
 description: U kunt het standaardgedrag negeren voor de manier waarop TVSDK via advertenties zoekt wanneer u aangepaste advertentiemarkeringen gebruikt.
-seo-description: U kunt het standaardgedrag negeren voor de manier waarop TVSDK via advertenties zoekt wanneer u aangepaste advertentiemarkeringen gebruikt.
-seo-title: Afspeelgedrag bepalen voor zoeken op aangepaste advertentiemarkeringen
 title: Afspeelgedrag bepalen voor zoeken op aangepaste advertentiemarkeringen
-uuid: cf973caf-be29-46ce-bfa4-651e7653f8d4
 translation-type: tm+mt
-source-git-commit: 5908e5a3521966496aeec0ef730e4a704fddfb68
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '181'
+source-wordcount: '155'
 ht-degree: 0%
 
 ---
