@@ -1,13 +1,10 @@
 ---
 description: U kunt een tv-achtige ervaring inschakelen om in live streams deel te kunnen nemen aan een advertentie.
-seo-description: U kunt een tv-achtige ervaring inschakelen om in live streams deel te kunnen nemen aan een advertentie.
-seo-title: Onvolledige invoeging van advertentie
 title: Onvolledige invoeging van advertentie
-uuid: 296a9b6a-9e9f-4ca7-ab8a-c8cbc98fb9af
 translation-type: tm+mt
-source-git-commit: 5908e5a3521966496aeec0ef730e4a704fddfb68
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '349'
+source-wordcount: '325'
 ht-degree: 0%
 
 ---
