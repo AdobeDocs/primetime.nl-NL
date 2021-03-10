@@ -1,13 +1,10 @@
 ---
 description: U kunt ervoor kiezen om standaard en gedrag te gebruiken.
-seo-description: U kunt ervoor kiezen om standaard en gedrag te gebruiken.
-seo-title: Standaardgedrag voor afspelen gebruiken
 title: Standaardgedrag voor afspelen gebruiken
-uuid: ccda5223-17c1-4cda-b875-e706f5dc8648
 translation-type: tm+mt
-source-git-commit: 5908e5a3521966496aeec0ef730e4a704fddfb68
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '73'
+source-wordcount: '60'
 ht-degree: 0%
 
 ---
