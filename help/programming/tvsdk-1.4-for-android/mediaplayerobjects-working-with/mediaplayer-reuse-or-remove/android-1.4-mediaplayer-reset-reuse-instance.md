@@ -1,13 +1,10 @@
 ---
 description: Wanneer u een instantie MediaPlayer opnieuw instelt, wordt het teruggekeerd aan zijn niet geïnitialiseerde staat IDLE zoals die in MediaPlayerState wordt bepaald.
-seo-description: Wanneer u een instantie MediaPlayer opnieuw instelt, wordt het teruggekeerd aan zijn niet geïnitialiseerde staat IDLE zoals die in MediaPlayerState wordt bepaald.
-seo-title: Een MediaPlayer-instantie opnieuw instellen of gebruiken
 title: Een MediaPlayer-instantie opnieuw instellen of gebruiken
-uuid: 72cc4511-8ab0-44e5-b93c-b36f0321bba8
 translation-type: tm+mt
-source-git-commit: 5908e5a3521966496aeec0ef730e4a704fddfb68
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '300'
+source-wordcount: '276'
 ht-degree: 0%
 
 ---
@@ -31,7 +28,7 @@ Deze bewerking is handig in de volgende gevallen:
    >
    >Dit is de enige manier om van de staat van de FOUT terug te krijgen.
 
-1. Roep `reset` aan om de `MediaPlayer` instantie aan zijn uninitialized staat terug te keren:
+1. Roep `reset` aan om de `MediaPlayer` instantie aan zijn niet-geïnitialiseerde staat terug te keren:
 
    ```java
    void reset() throws IllegalStateException; 
