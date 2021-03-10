@@ -1,17 +1,13 @@
 ---
 title: Opmerkingen bij de release Browser TVSDK 2.4
-seo-title: Opmerkingen bij de release Browser TVSDK 2.4
 description: Opmerkingen bij de release van TVSDK 2.4 van de browser beschrijven de nieuwe, ondersteunde en niet-ondersteunde functies en de bekende problemen in TVSDK 2.4 van de browser.
-seo-description: Opmerkingen bij de release van TVSDK 2.4 van de browser beschrijven de nieuwe, ondersteunde en niet-ondersteunde functies en de bekende problemen in TVSDK 2.4 van de browser.
-uuid: 3a1eb1a5-0e72-4658-beeb-bca8816570e7
 contentOwner: dekalra
 topic-tags: release-notes
 products: SG_PRIMETIME
-discoiquuid: d71886cb-f34b-47b2-9df7-168686478106
 translation-type: tm+mt
-source-git-commit: e644e8497e118e2d03e72bef727c4ce1455d68d6
+source-git-commit: b33240bf1b42b80389cd95a7ae4d3f85185a2d32
 workflow-type: tm+mt
-source-wordcount: '6834'
+source-wordcount: '6812'
 ht-degree: 0%
 
 ---
@@ -101,7 +97,7 @@ AdobePSDK.ForceHttpsAdConfiguration-klasse.
 
 Deze update bevat oplossingen voor kritieke klantproblemen. Zie *Opgeloste problemen* voor de lijst.
 
-**Versie 2.4.9**
+**Versie 2.4.8**
 
 De volgende verbeteringen en toevoegingen zijn beschikbaar als onderdeel van de Browser-versie van TVSDK 2.4.8:
 
@@ -1237,7 +1233,7 @@ De volgende functies worden ondersteund:
 
 **Problemen opgelost in 2.4.12-update (build 204)**
 
-De volgende problemen zijn opgelost in de Browser-versie van TVSDK versie 2.4.12 Update (build 204):
+De volgende problemen zijn opgelost in de Browser-TVSDK versie 2.4.12-update (build 204):
 
 ・ **21647**- TVSDK moet het automatisch afspelen van video op iOS-apparaten mogelijk maken wanneer de audio wordt gedempt.
 
@@ -1335,7 +1331,7 @@ De volgende problemen zijn opgelost in Browserversie 2.4.9 van TVSDK:
 
 ・ **20097**: Het afspelen van advertenties wordt overgeslagen en de hoofdinhoud wordt onmiddellijk hervat in plaats van te wachten op een time-out van 20 seconden als ad-manifest niet beschikbaar is.
 
-**Problemen opgelost in versie 2.4.8 Update (build 6002)**
+**Problemen verholpen in versie 2.4.8 Update (build 6002)**
 
 De volgende problemen zijn opgelost in de Browser-versie van TVSDK versie 2.4.8-update (build 6002):
 
