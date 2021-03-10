@@ -1,13 +1,10 @@
 ---
 description: 'De versie van #EXT-X-VERSION in het .m3u8-bestand bepaalt welke functies beschikbaar zijn voor uw toepassing en welke EXT-tags geldig zijn in uw afspeellijst/manifest.'
-seo-description: 'De versie van #EXT-X-VERSION in het .m3u8-bestand bepaalt welke functies beschikbaar zijn voor uw toepassing en welke EXT-tags geldig zijn in uw afspeellijst/manifest.'
-seo-title: '#EXT-X-VERSION-vereisten'
 title: '#EXT-X-VERSION-vereisten'
-uuid: 8d22930f-4faf-4a40-b1f0-507886cd8938
 translation-type: tm+mt
-source-git-commit: 040655d8ba5f91c98ed0584c08db226ffe1e0f4e
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '205'
+source-wordcount: '176'
 ht-degree: 0%
 
 ---
