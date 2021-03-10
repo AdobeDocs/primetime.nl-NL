@@ -1,13 +1,10 @@
 ---
 description: Streaming via internet vereist een constante en stabiele verbinding om een stream vanaf een externe server af te spelen. De variabiliteit van de internetverbinding of het afspelen van streaming van een viewer betekent echter dat extern afspelen mogelijk niet de kwaliteit heeft van media die lokaal worden afgespeeld.
-seo-description: Streaming via internet vereist een constante en stabiele verbinding om een stream vanaf een externe server af te spelen. De variabiliteit van de internetverbinding of het afspelen van streaming van een viewer betekent echter dat extern afspelen mogelijk niet de kwaliteit heeft van media die lokaal worden afgespeeld.
-seo-title: Afspelen en failover
 title: Afspelen en failover
-uuid: 5d75e55d-9c01-4a36-9bdf-891289821c6b
 translation-type: tm+mt
-source-git-commit: 592245f5a7186d18dabbb5a98a468cbed7354aed
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '496'
+source-wordcount: '451'
 ht-degree: 0%
 
 ---
