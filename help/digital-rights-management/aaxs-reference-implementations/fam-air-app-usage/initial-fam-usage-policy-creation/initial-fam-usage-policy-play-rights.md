@@ -1,9 +1,9 @@
 ---
-seo-title: Rechten afspelen
 title: Rechten afspelen
-uuid: 90f2a7a6-6637-4d10-9afe-6d2e77fc4185
+description: Rechten afspelen
+copied-description: true
 translation-type: tm+mt
-source-git-commit: 9d2e046ae259c05fb4c278f464c9a26795e554fc
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
 source-wordcount: '290'
 ht-degree: 0%
@@ -19,7 +19,7 @@ In de volgende tabel worden de voorkeuren voor afspeelrechten beschreven:
 |--- |--- |
 | Afspeelvenster | De duur van een licentie is geldig (in minuten) nadat de gebruiker de beveiligde inhoud voor het eerst afspeelt. |
 | Uitvoerbeveiliging | Bepaalt of uitvoer naar externe renderingapparaten moet worden beveiligd. De analoge en digitale output kan onafhankelijk worden gespecificeerd. |
-| Beperkingen | Lijst van afgewezen personen van clientversies is niet toegestaan om inhoud af te spelen. Alle kolommen zijn optioneel. |
+| Beperkingen | Lijst van gewezen personen van clientversies is niet toegestaan om inhoud af te spelen. Alle kolommen zijn optioneel. |
 | DRM | Hiermee geeft u een lijst op met DRM-versies die beveiligde inhoud niet mogen afspelen. |
 | Runtime | Hier geeft u een lijst op met versies bij uitvoering die geen beveiligde inhoud mogen afspelen. |
 | Minimaal beveiligingsniveau |  |
