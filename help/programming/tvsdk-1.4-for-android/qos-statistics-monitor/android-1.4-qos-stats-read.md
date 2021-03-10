@@ -1,13 +1,10 @@
 ---
 description: U kunt playback, het als buffer optreden voor, en apparatenstatistieken van de klasse lezen QOSProvider.
-seo-description: U kunt playback, het als buffer optreden voor, en apparatenstatistieken van de klasse lezen QOSProvider.
-seo-title: De playback van QOS, het bufferen, en apparatenstatistieken lezen
 title: De playback van QOS, het bufferen, en apparatenstatistieken lezen
-uuid: 19228a50-3721-4dc1-89b6-97458518e272
 translation-type: tm+mt
-source-git-commit: 5908e5a3521966496aeec0ef730e4a704fddfb68
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '157'
+source-wordcount: '138'
 ht-degree: 1%
 
 ---
