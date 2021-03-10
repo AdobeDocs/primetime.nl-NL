@@ -1,13 +1,10 @@
 ---
 description: Voor live streaming en invoegen moet u mogelijk een ad-einde verlaten voordat alle advertenties in het einde worden afgespeeld.
-seo-description: Voor live streaming en invoegen moet u mogelijk een ad-einde verlaten voordat alle advertenties in het einde worden afgespeeld.
-seo-title: Een vroege en eindresultaat implementeren
 title: Een vroege en eindresultaat implementeren
-uuid: 984b6ed0-c929-49a3-9553-e30d1a7758ed
 translation-type: tm+mt
-source-git-commit: 1b9792a10ad606b99b6639799ac2aacb707b2af5
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '413'
+source-wordcount: '382'
 ht-degree: 0%
 
 ---
@@ -72,7 +69,7 @@ In het ene markeerteken met verschillende typen voorbeeld, als de duur van het t
 
 **Twee afzonderlijke markeringen**
 
-Het meer typische scenario is een `SpliceOut` teller met een niet-nul duur en die niet de het in paren `SpliceIn` tellers nodig heeft. Hier markeert een koppelingsmarkering `SpliceIn` het einde van de advertentie tijdens het afspelen van een advertentie, maar het ad-einde wordt kort geknipt op de markeerpositie `SpliceIn` en de hoofdinhoud wordt op deze positie afgespeeld.
+Het meer typische scenario is een `SpliceOut` teller met een niet-nul duur en die niet de het in paren `SpliceIn` tellers nodig heeft. Hier markeert een koppelingsmarkering `SpliceIn` het einde van de advertentie tijdens het afspelen van een advertentie-einde, maar het ad-einde wordt kort geknipt op de markeerpositie `SpliceIn` en de hoofdinhoud wordt op deze positie afgespeeld.
 
 Hier ziet u bijvoorbeeld twee afzonderlijke markeringen:
 
