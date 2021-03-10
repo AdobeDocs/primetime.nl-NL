@@ -1,13 +1,10 @@
 ---
 description: U kunt deze functie inschakelen en controleren op verwante gebeurtenissen.
-seo-description: U kunt deze functie inschakelen en controleren op verwante gebeurtenissen.
-seo-title: Live update master-manifest gebruiken
 title: Live update master-manifest gebruiken
-uuid: 4ec665ab-b7ce-4a45-a251-13a07eb4d789
 translation-type: tm+mt
-source-git-commit: 040655d8ba5f91c98ed0584c08db226ffe1e0f4e
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '71'
+source-wordcount: '56'
 ht-degree: 0%
 
 ---
