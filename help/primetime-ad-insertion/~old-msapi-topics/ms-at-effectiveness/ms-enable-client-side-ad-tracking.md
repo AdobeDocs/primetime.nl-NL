@@ -1,14 +1,11 @@
 ---
 description: U kunt het bijhouden van advertenties aan de clientzijde inschakelen door de parameters trackingmode en trackingversion toe te voegen aan de URL-aanvraag van de Bootstrap.
-seo-description: U kunt het bijhouden van advertenties aan de clientzijde inschakelen door de parameters trackingmode en trackingversion toe te voegen aan de URL-aanvraag van de Bootstrap.
-seo-title: Enable client-side ad tracking
 title: Enable client-side ad tracking
-uuid: 0a825756-1d9a-43c5-bc22-9b366f39fdbb
 translation-type: tm+mt
-source-git-commit: e1e33d3ac0aad44859cd49566331524da72ac7e4
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '110'
-ht-degree: 1%
+source-wordcount: '88'
+ht-degree: 2%
 
 ---
 
