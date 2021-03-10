@@ -1,13 +1,10 @@
 ---
 description: U kunt de API voor het opnieuw verpakken van CRS gebruiken om niet-HLS en creatieve producten vooraf te transcoderen, zodat is een versie van HLS beschikbaar wanneer u het moet in werking stellen, eliminerend de 2-4 minieme vertraging verbonden aan just-in-time (JIT) het herverpakken.
-seo-description: U kunt de API voor het opnieuw verpakken van CRS gebruiken om niet-HLS en creatieve producten vooraf te transcoderen, zodat is een versie van HLS beschikbaar wanneer u het moet in werking stellen, eliminerend de 2-4 minieme vertraging verbonden aan just-in-time (JIT) het herverpakken.
-seo-title: API opnieuw verpakken
 title: API opnieuw verpakken
-uuid: 03cd2428-510a-4b99-8496-059a48d5abba
 translation-type: tm+mt
-source-git-commit: e437f4143fb939f46d106c64efc391137c33fe17
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '643'
+source-wordcount: '605'
 ht-degree: 0%
 
 ---
