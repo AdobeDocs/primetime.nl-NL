@@ -1,13 +1,10 @@
 ---
 description: Browser TVSDK steunt een aantal eigenschappen MP3 en MP4 die u kunt uitvoeren om functionaliteit aan uw toepassingen toe te voegen.
-seo-description: Browser TVSDK steunt een aantal eigenschappen MP3 en MP4 die u kunt uitvoeren om functionaliteit aan uw toepassingen toe te voegen.
-seo-title: Ondersteunde MP3- en MP4-functies
 title: Ondersteunde MP3- en MP4-functies
-uuid: 33e3130f-fc78-40b8-a4b7-2fcdd5a2b4f9
 translation-type: tm+mt
-source-git-commit: ba291a4615a8e0713cf610f76f41e328da96ec4d
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '220'
+source-wordcount: '195'
 ht-degree: 0%
 
 ---
