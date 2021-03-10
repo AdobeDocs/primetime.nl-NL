@@ -1,13 +1,10 @@
 ---
 description: De stapel van Apple HLS steunt omschakeling aan failover/reservestromen als het geen stromen van de primaire reeks kan terugwinnen. Voor Apple HLS-apparaten kunt u, om failover te vergemakkelijken, een signaal geven voor een manifestserver om primaire en failover-streams die in de master afspeellijst worden geïdentificeerd, te behandelen als gesplitste sets (met hun eigen UUID's).
-seo-description: De stapel van Apple HLS steunt omschakeling aan failover/reservestromen als het geen stromen van de primaire reeks kan terugwinnen. Voor Apple HLS-apparaten kunt u, om failover te vergemakkelijken, een signaal geven voor een manifestserver om primaire en failover-streams die in de master afspeellijst worden geïdentificeerd, te behandelen als gesplitste sets (met hun eigen UUID's).
-seo-title: HLS-speler helpen overschakelen naar failover-/back-upstreams
 title: HLS-speler helpen overschakelen naar failover-/back-upstreams
-uuid: 2fea8a51-e4cb-4fc9-82d5-6305a1d96603
 translation-type: tm+mt
-source-git-commit: e437f4143fb939f46d106c64efc391137c33fe17
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '402'
+source-wordcount: '345'
 ht-degree: 0%
 
 ---
