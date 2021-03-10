@@ -1,13 +1,10 @@
 ---
 description: De TVSDK kan video's afspelen die meerdere profielen met verschillende bitsnelheden hebben, waarbij van de ene naar de andere gebruiker wordt geschakeld om op basis van de beschikbare bandbreedte meer dan één kwaliteitsniveau te bieden.
-seo-description: De TVSDK kan video's afspelen die meerdere profielen met verschillende bitsnelheden hebben, waarbij van de ene naar de andere gebruiker wordt geschakeld om op basis van de beschikbare bandbreedte meer dan één kwaliteitsniveau te bieden.
-seo-title: Meerdere bitsnelheden
 title: Meerdere bitsnelheden
-uuid: 46eac41e-0b2a-42e3-8a88-54ad9fe34212
 translation-type: tm+mt
-source-git-commit: 31b6cad26bcc393d731080a70eff1c59551f1c8e
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '798'
+source-wordcount: '767'
 ht-degree: 0%
 
 ---
