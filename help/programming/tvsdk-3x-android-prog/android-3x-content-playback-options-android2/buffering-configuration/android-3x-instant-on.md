@@ -1,13 +1,10 @@
 ---
 description: Als u de functie Onmiddellijk inschakelen inschakelt, wordt een of meer kanalen vooraf geladen. Wanneer gebruikers een kanaal selecteren of schakelen tussen kanalen, wordt de inhoud direct afgespeeld. De buffering is voltooid tegen de tijd dat de gebruiker begint te kijken.
-seo-description: Als u de functie Onmiddellijk inschakelen inschakelt, wordt een of meer kanalen vooraf geladen. Wanneer gebruikers een kanaal selecteren of schakelen tussen kanalen, wordt de inhoud direct afgespeeld. De buffering is voltooid tegen de tijd dat de gebruiker begint te kijken.
-seo-title: Direct aan
 title: Direct aan
-uuid: 5b1ceace-cae7-44c7-b4b9-d45078d58cc3
 translation-type: tm+mt
-source-git-commit: ed910a60440ae7c0d19d9be56c80c8bdbc62bcf1
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '446'
+source-wordcount: '410'
 ht-degree: 0%
 
 ---
