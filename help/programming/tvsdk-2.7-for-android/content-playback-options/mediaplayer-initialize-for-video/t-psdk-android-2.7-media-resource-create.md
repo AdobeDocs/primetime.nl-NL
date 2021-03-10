@@ -1,13 +1,10 @@
 ---
 description: De MediaResource-klasse vertegenwoordigt de inhoud die door de MediaPlayer-instantie moet worden geladen.
-seo-description: De MediaResource-klasse vertegenwoordigt de inhoud die door de MediaPlayer-instantie moet worden geladen.
-seo-title: Een mediabron maken
 title: Een mediabron maken
-uuid: f34a11a3-dac2-405e-8632-1d9617cc019d
 translation-type: tm+mt
-source-git-commit: 1b7ec3759561159c55018b4b81f896ecc99a25e8
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '313'
+source-wordcount: '296'
 ht-degree: 0%
 
 ---
