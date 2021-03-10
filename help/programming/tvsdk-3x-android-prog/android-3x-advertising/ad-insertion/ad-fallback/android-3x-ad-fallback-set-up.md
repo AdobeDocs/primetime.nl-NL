@@ -1,13 +1,10 @@
 ---
 description: U kunt fallback inschakelen wanneer een inline VMAP-bestand een ongeldig mediatype bevat.
-seo-description: U kunt fallback inschakelen wanneer een inline VMAP-bestand een ongeldig mediatype bevat.
-seo-title: Definieer de fallback en het gedrag voor inline VMAP-advertenties
 title: Definieer de fallback en het gedrag voor inline VMAP-advertenties
-uuid: bc8cb0b4-5ea9-429b-ab5d-746c6f03e74b
 translation-type: tm+mt
-source-git-commit: bc35da8b258056809ceaf18e33bed631047bc81b
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '130'
+source-wordcount: '108'
 ht-degree: 0%
 
 ---
