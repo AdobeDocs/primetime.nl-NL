@@ -1,14 +1,11 @@
 ---
 description: De TVSDK MediaPlayer onderbreken en herstellen wanneer een apparaatscherm wordt uitgeschakeld en ingeschakeld, moet door de toepassing worden afgehandeld.
 keywords: SurfaceView;Suspend;Restore;BroadcastReceiver
-seo-description: De TVSDK MediaPlayer onderbreken en herstellen wanneer een apparaatscherm wordt uitgeschakeld en ingeschakeld, moet door de toepassing worden afgehandeld.
-seo-title: MediaPlayer onderbreken en herstellen
 title: MediaPlayer onderbreken en herstellen
-uuid: 624a87df-df65-4358-915b-c09a3a4fa224
 translation-type: tm+mt
-source-git-commit: bc35da8b258056809ceaf18e33bed631047bc81b
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '180'
+source-wordcount: '159'
 ht-degree: 0%
 
 ---
