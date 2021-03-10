@@ -1,13 +1,10 @@
 ---
 description: Deze tabel bevat gedetailleerde informatie over meldingen van INFO-typen.
-seo-description: Deze tabel bevat gedetailleerde informatie over meldingen van INFO-typen.
-seo-title: INFO-meldingscodes
 title: INFO-meldingscodes
-uuid: 21297863-dac1-45a4-ac9d-309d1f746f8b
 translation-type: tm+mt
-source-git-commit: 557f42cd9a6f356aa99e13386d9e8d65e043a6af
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '192'
+source-wordcount: '180'
 ht-degree: 4%
 
 ---
