@@ -1,13 +1,10 @@
 ---
 description: U kunt een MediaPlayer-instantie die u niet meer nodig hebt opnieuw instellen, opnieuw gebruiken of vrijgeven.
-seo-description: U kunt een MediaPlayer-instantie die u niet meer nodig hebt opnieuw instellen, opnieuw gebruiken of vrijgeven.
-seo-title: Een MediaPlayer-instantie opnieuw gebruiken of verwijderen
 title: Een MediaPlayer-instantie opnieuw gebruiken of verwijderen
-uuid: 74a46689-1708-4d26-9a4e-a4cdb0e55451
 translation-type: tm+mt
-source-git-commit: bc35da8b258056809ceaf18e33bed631047bc81b
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '292'
+source-wordcount: '272'
 ht-degree: 0%
 
 ---
