@@ -1,9 +1,9 @@
 ---
-seo-title: Prestaties afstemmen
 title: Prestaties afstemmen
-uuid: db8889c7-ecf5-4551-a6fc-1d3ab992b9ff
+description: Prestaties afstemmen
+copied-description: true
 translation-type: tm+mt
-source-git-commit: 1b9792a10ad606b99b6639799ac2aacb707b2af5
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
 source-wordcount: '404'
 ht-degree: 0%
@@ -30,7 +30,7 @@ Onder bepaalde omstandigheden kunnen Linux-omgevingen pauzeren bij het uitvoeren
 
 * Opstarten van de Adobe Primetime DRM-licentieserver
 * Beleid genereren met het hulpprogramma [!DNL AdobePolicyManager]
-* Met DRM beveiligde inhoud verpakken met Adobe Media Server of Primetime OfflinePackager
+* Door DRM beveiligde inhoud verpakken met Adobe Media Server of Primetime OfflinePackager
 
 Vertragingen tijdens deze bewerkingen zijn vaak het resultaat van een lage entropiepool op uw Linux-server.
 
