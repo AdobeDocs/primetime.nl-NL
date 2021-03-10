@@ -1,13 +1,10 @@
 ---
 description: HLS de stromen die door een Netwerk van de Levering van de Inhoud (CDN) worden geleverd kunnen authentificatietokens op manifest en segmentverzoeken voor controle soms gebruiken. Deze tokens kunnen worden opgegeven als URL-parameters of als cookiekopteksten.
-seo-description: HLS de stromen die door een Netwerk van de Levering van de Inhoud (CDN) worden geleverd kunnen authentificatietokens op manifest en segmentverzoeken voor controle soms gebruiken. Deze tokens kunnen worden opgegeven als URL-parameters of als cookiekopteksten.
-seo-title: Vertogende segmentstromen
 title: Vertogende segmentstromen
-uuid: 62e3b858-2605-4960-b504-9010674f80ad
 translation-type: tm+mt
-source-git-commit: 557f42cd9a6f356aa99e13386d9e8d65e043a6af
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '198'
+source-wordcount: '159'
 ht-degree: 0%
 
 ---
