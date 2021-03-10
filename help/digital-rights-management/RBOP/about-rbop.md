@@ -1,13 +1,10 @@
 ---
 description: Op resolutie gebaseerde uitvoerbeveiliging (RBOP) is een mechanisme dat uitvoerbeveiliging biedt op basis van het verticale aantal pixels van de inhoud.
-seo-description: Op resolutie gebaseerde uitvoerbeveiliging (RBOP) is een mechanisme dat uitvoerbeveiliging biedt op basis van het verticale aantal pixels van de inhoud.
-seo-title: RBOP-overzicht
 title: RBOP-overzicht
-uuid: 57219331-d949-443c-88b3-6f714ab6c82e
 translation-type: tm+mt
-source-git-commit: 9bbcb228d3367fbf53de811bf2941ca653ce3b0e
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '196'
+source-wordcount: '174'
 ht-degree: 0%
 
 ---
