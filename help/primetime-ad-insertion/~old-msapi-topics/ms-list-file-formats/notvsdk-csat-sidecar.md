@@ -1,13 +1,10 @@
 ---
 description: Als de client traceerinformatie aanvraagt in JSON-indeling, stuurt de manifestserver een bestand terug in een van de JSON-indelingen.
-seo-description: Als de client traceerinformatie aanvraagt in JSON-indeling, stuurt de manifestserver een bestand terug in een van de JSON-indelingen.
-seo-title: JSON-indelingen voor het bijhouden van URL's
 title: JSON-indelingen voor het bijhouden van URL's
-uuid: 4b17639b-c0de-4ef4-931b-aa7c4c036c0a
 translation-type: tm+mt
-source-git-commit: e437f4143fb939f46d106c64efc391137c33fe17
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '238'
+source-wordcount: '211'
 ht-degree: 0%
 
 ---
