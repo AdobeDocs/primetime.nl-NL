@@ -1,13 +1,10 @@
 ---
 description: Het PTMediaPlayer-object vertegenwoordigt uw mediaspeler. Een PTMediaPlayerItem vertegenwoordigt audio of video op uw speler.
-seo-description: Het PTMediaPlayer-object vertegenwoordigt uw mediaspeler. Een PTMediaPlayerItem vertegenwoordigt audio of video op uw speler.
-seo-title: Werken met MediaPlayer-objecten
 title: Werken met MediaPlayer-objecten
-uuid: eba26ad7-8c9a-4703-af32-1dfb928f6b67
 translation-type: tm+mt
-source-git-commit: 5908e5a3521966496aeec0ef730e4a704fddfb68
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '469'
+source-wordcount: '449'
 ht-degree: 0%
 
 ---
