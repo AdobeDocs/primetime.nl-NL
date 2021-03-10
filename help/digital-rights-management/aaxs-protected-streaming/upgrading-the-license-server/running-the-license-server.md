@@ -1,13 +1,10 @@
 ---
 description: Als u een server wilt upgraden waarop Adobe Access Server voor beveiligde streaming wordt uitgevoerd, vervangt u het bestand flashaccessserver.war dat op uw toepassingsserver is geïmplementeerd door het bestand dat met de nieuwste Adobe Access is meegeleverd. Als u de nieuwe hierboven beschreven configuratieopties wenst te gebruiken, werk flashaccess-huurder.xml van uw server bij. U moet jsafe.dll of libjsafe.so ook bijwerken naar de versie die bij de nieuwste Adobe Access wordt geleverd.
-seo-description: Als u een server wilt upgraden waarop Adobe Access Server voor beveiligde streaming wordt uitgevoerd, vervangt u het bestand flashaccessserver.war dat op uw toepassingsserver is geïmplementeerd door het bestand dat met de nieuwste Adobe Access is meegeleverd. Als u de nieuwe hierboven beschreven configuratieopties wenst te gebruiken, werk flashaccess-huurder.xml van uw server bij. U moet jsafe.dll of libjsafe.so ook bijwerken naar de versie die bij de nieuwste Adobe Access wordt geleverd.
-seo-title: De Adobe Access Server uitvoeren voor beveiligde streaming
 title: De Adobe Access Server uitvoeren voor beveiligde streaming
-uuid: 3819500d-ad2f-49eb-8aa4-e50a55461608
 translation-type: tm+mt
-source-git-commit: 7e8df034035fe465fbe403949ef828e7811ced2e
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '296'
+source-wordcount: '227'
 ht-degree: 0%
 
 ---
