@@ -1,13 +1,10 @@
 ---
 description: Het flashaccess-global.xml-configuratiebestand bevat instellingen die van toepassing zijn op alle huurders van de licentieserver.
-seo-description: Het flashaccess-global.xml-configuratiebestand bevat instellingen die van toepassing zijn op alle huurders van de licentieserver.
-seo-title: Globaal configuratiebestand
 title: Globaal configuratiebestand
-uuid: 294d6cff-be07-4b4b-8aa6-943044a1c56f
 translation-type: tm+mt
-source-git-commit: d2b8cb67c54fadb8e0e7d2bdc15e393fdce8550e
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '147'
+source-wordcount: '129'
 ht-degree: 0%
 
 ---
