@@ -1,13 +1,10 @@
 ---
 description: Deze klassen helpen u bij het detecteren van kansen in een tijdlijn voor de plaatsing van inhoud, zoals advertenties.
-seo-description: Deze klassen helpen u bij het detecteren van kansen in een tijdlijn voor de plaatsing van inhoud, zoals advertenties.
-seo-title: Klassen van tijdlijngeneratoren
 title: Klassen van tijdlijngeneratoren
-uuid: 1e36b738-0684-44f0-b3c3-dd656c70f705
 translation-type: tm+mt
-source-git-commit: 91cea7acb8127e02b82e5242b9ad6ab0d12ce0eb
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '214'
+source-wordcount: '195'
 ht-degree: 0%
 
 ---
