@@ -1,13 +1,10 @@
 ---
 description: Wanneer TVSDK een geabonneerde tag in de afspeellijst/het manifest detecteert, probeert de speler de tag automatisch te verwerken en beschikbaar te maken in de vorm van een object PTTimedMetadata.
-seo-description: Wanneer TVSDK een geabonneerde tag in de afspeellijst/het manifest detecteert, probeert de speler de tag automatisch te verwerken en beschikbaar te maken in de vorm van een object PTTimedMetadata.
-seo-title: Timed metadata-klasse
 title: Timed metadata-klasse
-uuid: d1ac6b0b-163f-4968-9160-0f60ff439c09
 translation-type: tm+mt
-source-git-commit: 5df9a8b98baaf1cd1803581d2b60c7ed4261a0e8
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '357'
+source-wordcount: '326'
 ht-degree: 0%
 
 ---
