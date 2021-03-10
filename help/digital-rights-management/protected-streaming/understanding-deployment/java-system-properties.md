@@ -1,13 +1,10 @@
 ---
 description: Er zijn verscheidene eigenschappen van het Systeem van Java die u op de vergunningsserver kunt vormen om de plaats van configuratie en logboekdossiers te controleren.
-seo-description: Er zijn verscheidene eigenschappen van het Systeem van Java die u op de vergunningsserver kunt vormen om de plaats van configuratie en logboekdossiers te controleren.
-seo-title: Eigenschappen van Java-systemen
 title: Eigenschappen van Java-systemen
-uuid: d8c72359-bf61-47e0-9cd5-b21225d5fe49
 translation-type: tm+mt
-source-git-commit: 29bc8323460d9be0fce66cbea7c6fce46df20d61
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '195'
+source-wordcount: '169'
 ht-degree: 0%
 
 ---
