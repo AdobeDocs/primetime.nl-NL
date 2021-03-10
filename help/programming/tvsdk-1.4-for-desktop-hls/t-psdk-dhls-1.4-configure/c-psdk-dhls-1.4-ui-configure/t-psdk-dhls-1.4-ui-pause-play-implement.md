@@ -1,13 +1,10 @@
 ---
 description: U kunt gedrag van TVSDK toevoegen om knopen te pauzeren en te spelen.
-seo-description: U kunt gedrag van TVSDK toevoegen om knopen te pauzeren en te spelen.
-seo-title: Een video afspelen en pauzeren
 title: Een video afspelen en pauzeren
-uuid: 04b3b23f-5ef1-4cc4-a22f-f6ffa9cefce5
 translation-type: tm+mt
-source-git-commit: 040655d8ba5f91c98ed0584c08db226ffe1e0f4e
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '129'
+source-wordcount: '114'
 ht-degree: 0%
 
 ---
