@@ -1,13 +1,10 @@
 ---
 description: 'Adobe® Access™ is een geavanceerde oplossing voor digitaal rechtenbeheer en contentbescherming voor hoogwaardige audiovisuele inhoud. Met gereedschappen die u maakt met Java API''s kunt u beleidsregels maken, beleidsregels toepassen op bestanden die audio- en video-inhoud bevatten en die bestanden versleutelen. De stappen op hoog niveau voor het uitvoeren van deze taken zijn als volgt '
-seo-description: 'Adobe® Access™ is een geavanceerde oplossing voor digitaal rechtenbeheer en contentbescherming voor hoogwaardige audiovisuele inhoud. Met gereedschappen die u maakt met Java API''s kunt u beleidsregels maken, beleidsregels toepassen op bestanden die audio- en video-inhoud bevatten en die bestanden versleutelen. De stappen op hoog niveau voor het uitvoeren van deze taken zijn als volgt '
-seo-title: Overzicht
 title: Overzicht
-uuid: 874c175b-8207-49fa-aad4-204ccbee9c2c
 translation-type: tm+mt
-source-git-commit: 58bb3bedc5b0ac63afd96eb6101d9ad779e6deed
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '482'
+source-wordcount: '430'
 ht-degree: 0%
 
 ---
