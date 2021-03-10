@@ -1,13 +1,10 @@
 ---
 description: Het ad-invoegproces (VOD, Video on-demand) bestaat uit de fasen voor het omzetten, invoegen en toevoegen van de advertentie. Voor het bijhouden van advertenties moet Browser-TVSDK een externe trackingserver informeren over de voortgang van het afspelen van elke advertentie. Wanneer zich onverwachte situaties voordoen, neemt de Commissie passende maatregelen.
-seo-description: Het ad-invoegproces (VOD, Video on-demand) bestaat uit de fasen voor het omzetten, invoegen en toevoegen van de advertentie. Voor het bijhouden van advertenties moet Browser-TVSDK een externe trackingserver informeren over de voortgang van het afspelen van elke advertentie. Wanneer zich onverwachte situaties voordoen, neemt de Commissie passende maatregelen.
-seo-title: Toevoeging en overname van advertenties voor VOD
 title: Toevoeging en overname van advertenties voor VOD
-uuid: 33f7aad5-fc4f-459d-8c29-01ba1353dfcc
 translation-type: tm+mt
-source-git-commit: 040655d8ba5f91c98ed0584c08db226ffe1e0f4e
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '719'
+source-wordcount: '671'
 ht-degree: 0%
 
 ---
