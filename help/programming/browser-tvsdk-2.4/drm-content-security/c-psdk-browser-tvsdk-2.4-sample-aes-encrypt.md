@@ -1,13 +1,10 @@
 ---
 description: Terwijl de encryptiemethode AES-128 de volledige container van de vervoerstroom (TS) met inbegrip van kopballen codeert, codeert de encryptie SAMPLE-AES slechts de audio en een deel van de videogegevens.
-seo-description: Terwijl de encryptiemethode AES-128 de volledige container van de vervoerstroom (TS) met inbegrip van kopballen codeert, codeert de encryptie SAMPLE-AES slechts de audio en een deel van de videogegevens.
-seo-title: Voorbeeld van met AES gecodeerde HLS-streams
 title: Voorbeeld van met AES gecodeerde HLS-streams
-uuid: 32c1f87b-eb81-4e1c-92ea-ec37260a7ecb
 translation-type: tm+mt
-source-git-commit: 040655d8ba5f91c98ed0584c08db226ffe1e0f4e
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '232'
+source-wordcount: '200'
 ht-degree: 0%
 
 ---
