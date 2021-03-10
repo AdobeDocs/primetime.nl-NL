@@ -1,13 +1,10 @@
 ---
 description: Adobe Primetime DRM is een geavanceerde Digital Rights Management (DRM) en een oplossing voor inhoudsbescherming voor hoogwaardige audiovisuele inhoud. In toepassingen die het maken van Java API's ondersteunen, kunt u de Primetime DRM SDK gebruiken om DRM-beleid op te geven, dat beleid toe te passen op de inhoud en die inhoud te coderen.
-seo-description: Adobe Primetime DRM is een geavanceerde Digital Rights Management (DRM) en een oplossing voor inhoudsbescherming voor hoogwaardige audiovisuele inhoud. In toepassingen die het maken van Java API's ondersteunen, kunt u de Primetime DRM SDK gebruiken om DRM-beleid op te geven, dat beleid toe te passen op de inhoud en die inhoud te coderen.
-seo-title: Nieuw in Adobe Primetime DRM
 title: Nieuw in Adobe Primetime DRM
-uuid: 3c8da594-a231-4496-bffc-130775ecae50
 translation-type: tm+mt
-source-git-commit: 29bc8323460d9be0fce66cbea7c6fce46df20d61
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '402'
+source-wordcount: '348'
 ht-degree: 0%
 
 ---
