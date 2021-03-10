@@ -1,13 +1,10 @@
 ---
 description: Met Multi CDN kunt u een of meer CDN-locaties instellen voor getranscodeerde advertenties.
-seo-description: Met Multi CDN kunt u een of meer CDN-locaties instellen voor getranscodeerde advertenties.
-seo-title: Ondersteuning voor Multi CDN
 title: Ondersteuning voor Multi CDN
-uuid: 2b6d71f0-61c8-486b-a35a-f7ef3a9519d2
 translation-type: tm+mt
-source-git-commit: e437f4143fb939f46d106c64efc391137c33fe17
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '323'
+source-wordcount: '304'
 ht-degree: 0%
 
 ---
@@ -31,7 +28,7 @@ Ondersteuning voor meerdere CDN is ook beschikbaar voor de volgende Primetime-op
 
 CRS is standaard uitgeschakeld voor alle klanten
 
-Neem contact op met de technische accountmanager van Adobe om uw CRS-account te configureren voor het gebruik van andere CDN&#39;s voor het hosten van de getranscodeerde advertentie-elementen. U moet de volgende informatie opgeven die CRS nodig heeft om de getranscodeerde en elementen naar de CDN te uploaden
+Neem contact op met de technische accountmanager van Adobe om uw CRS-account te configureren voor het gebruik van andere CDN&#39;s voor het hosten van de getranscodeerde advertentie-elementen. U moet de volgende informatie opgeven die door CRS nodig is om de getranscodeerde en elementen naar de CDN te uploaden
 
 1. CDN-URL
 1. Verificatiedetails
