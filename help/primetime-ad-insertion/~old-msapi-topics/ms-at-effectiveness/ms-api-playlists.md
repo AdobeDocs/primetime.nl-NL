@@ -1,13 +1,10 @@
 ---
 description: De manifestserver retourneert master afspeellijsten in de M3U8-indeling, conform de voorgestelde HTTP Live Streaming-standaard. Het bestaat uit een reeks variantvervoerstromen (TSs), elk die vertoningen van de zelfde inhoud voor verschillende beetjetarieven en formaten bevatten. Bij Adobe Primetime en invoegen wordt de EXT-X-MARKER-tag toegevoegd die door videospelers op de client moet worden geïnterpreteerd.
-seo-description: De manifestserver retourneert master afspeellijsten in de M3U8-indeling, conform de voorgestelde HTTP Live Streaming-standaard. Het bestaat uit een reeks variantvervoerstromen (TSs), elk die vertoningen van de zelfde inhoud voor verschillende beetjetarieven en formaten bevatten. Bij Adobe Primetime en invoegen wordt de EXT-X-MARKER-tag toegevoegd die door videospelers op de client moet worden geïnterpreteerd.
-seo-title: EXT-X-MARKERINGSrichtlijn
 title: EXT-X-MARKERINGSrichtlijn
-uuid: e349bf89-b196-47b4-a362-9913fa28b2c6
 translation-type: tm+mt
-source-git-commit: e437f4143fb939f46d106c64efc391137c33fe17
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '807'
+source-wordcount: '748'
 ht-degree: 0%
 
 ---
