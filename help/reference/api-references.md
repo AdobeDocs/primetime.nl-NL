@@ -1,13 +1,11 @@
 ---
 title: Adobe Primetime API-verwijzingen
-seo-title: Adobe Primetime API-verwijzingen
 description: Met de API's kunt u snel en eenvoudig een functionele toepassing of integratie maken.
-seo-description: Met de API's kunt u snel en eenvoudig een functionele toepassing of integratie maken.
 topic-tags: API-references
 translation-type: tm+mt
-source-git-commit: 1841f64e6f7a839f997b0710661898fda0d69bd6
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '345'
+source-wordcount: '327'
 ht-degree: 0%
 
 ---
