@@ -1,13 +1,10 @@
 ---
 description: Voor live/lineaire inhoud vervangt Browser TVSDK een segment van de hoofdstreaminhoud door een ad-einde van dezelfde duur, zodat de tijdlijnduur ongewijzigd blijft.
-seo-description: Voor live/lineaire inhoud vervangt Browser TVSDK een segment van de hoofdstreaminhoud door een ad-einde van dezelfde duur, zodat de tijdlijnduur ongewijzigd blijft.
-seo-title: Actief/lineair en omzetten en invoegen
 title: Actief/lineair en omzetten en invoegen
-uuid: 18c6733a-e827-4b1c-9cd5-796d57cbdb05
 translation-type: tm+mt
-source-git-commit: 040655d8ba5f91c98ed0584c08db226ffe1e0f4e
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '302'
+source-wordcount: '266'
 ht-degree: 0%
 
 ---
