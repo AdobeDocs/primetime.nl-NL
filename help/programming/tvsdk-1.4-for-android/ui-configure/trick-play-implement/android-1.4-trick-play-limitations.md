@@ -1,13 +1,10 @@
 ---
 description: Er zijn enkele beperkingen en een aantal problemen in de manier waarop de truc-afspeelmodus zich gedraagt.
-seo-description: Er zijn enkele beperkingen en een aantal problemen in de manier waarop de truc-afspeelmodus zich gedraagt.
-seo-title: Beperkingen en gedrag voor het spelen van truc
 title: Beperkingen en gedrag voor het spelen van truc
-uuid: 0e84c9ef-fc18-4667-ad17-7f4777b552ba
 translation-type: tm+mt
-source-git-commit: 5908e5a3521966496aeec0ef730e4a704fddfb68
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '384'
+source-wordcount: '364'
 ht-degree: 0%
 
 ---
