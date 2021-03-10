@@ -1,13 +1,10 @@
 ---
 description: Vanaf Flash 15 en hoger geldt dat wanneer geen hardware-rendering met StageVideo beschikbaar is, StageVideo naadloos terugvalt naar een software StageVideo-object.
-seo-description: Vanaf Flash 15 en hoger geldt dat wanneer geen hardware-rendering met StageVideo beschikbaar is, StageVideo naadloos terugvalt naar een software StageVideo-object.
-seo-title: Flash 15-ondersteuning voor StageVideo
 title: Flash 15-ondersteuning voor StageVideo
-uuid: 49bd8703-016e-4fda-8773-5254d4774ec6
 translation-type: tm+mt
-source-git-commit: fd686391df0fa711bba99bc1bc312c9ef619f184
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '271'
+source-wordcount: '246'
 ht-degree: 0%
 
 ---
