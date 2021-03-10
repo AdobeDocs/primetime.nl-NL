@@ -1,14 +1,11 @@
 ---
 description: Voor live streaming en invoegen moet u mogelijk een ad-einde verlaten voordat alle advertenties in het einde worden afgespeeld.
-seo-description: Voor live streaming en invoegen moet u mogelijk een ad-einde verlaten voordat alle advertenties in het einde worden afgespeeld.
-seo-title: Een vroege terugkeer voor een onderbreking implementeren
 title: Een vroege terugkeer voor een onderbreking implementeren
-uuid: c67f2158-5df4-458c-a27a-6329c5d26638
 translation-type: tm+mt
-source-git-commit: 0eaf0e7e7e61d596a51d1c9c837ad072d703c6a7
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '209'
-ht-degree: 1%
+source-wordcount: '178'
+ht-degree: 2%
 
 ---
 
