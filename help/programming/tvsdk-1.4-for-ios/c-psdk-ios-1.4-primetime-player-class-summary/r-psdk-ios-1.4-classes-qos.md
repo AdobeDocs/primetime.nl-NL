@@ -1,13 +1,10 @@
 ---
 description: Deze klassen bieden informatie die u helpt te bepalen hoe goed de speler presteert.
-seo-description: Deze klassen bieden informatie die u helpt te bepalen hoe goed de speler presteert.
-seo-title: QoS-klassen
 title: QoS-klassen
-uuid: fc175269-ec4a-415e-91f3-7fa036290fa6
 translation-type: tm+mt
-source-git-commit: d2b8cb67c54fadb8e0e7d2bdc15e393fdce8550e
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '197'
+source-wordcount: '180'
 ht-degree: 0%
 
 ---
