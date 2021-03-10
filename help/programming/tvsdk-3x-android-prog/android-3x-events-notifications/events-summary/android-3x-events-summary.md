@@ -1,13 +1,10 @@
 ---
 description: Uw toepassing kan de activiteit in uw speler en de veranderende status van de speler controleren door naar de gebeurtenissen te luisteren die door TVSDK worden verzonden.
-seo-description: Uw toepassing kan de activiteit in uw speler en de veranderende status van de speler controleren door naar de gebeurtenissen te luisteren die door TVSDK worden verzonden.
-seo-title: Overzicht van gebeurtenissen in de primaire speler
 title: Overzicht van gebeurtenissen in de primaire speler
-uuid: b2ff74f2-c373-42da-a717-2f0550cbcb7f
 translation-type: tm+mt
-source-git-commit: bc35da8b258056809ceaf18e33bed631047bc81b
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '598'
+source-wordcount: '568'
 ht-degree: 0%
 
 ---
