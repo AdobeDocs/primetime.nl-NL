@@ -1,13 +1,10 @@
 ---
 description: TVSDK ondersteunt het weergeven van lineaire VPAID-advertenties (Video Player-Ad Interface Definition) in een ad-break. VPAID versie 1.0 vereist Flash, terwijl versie 2.0 ook werkt met Browser-TVSDK en JavaScript.
-seo-description: TVSDK ondersteunt het weergeven van lineaire VPAID-advertenties (Video Player-Ad Interface Definition) in een ad-break. VPAID versie 1.0 vereist Flash, terwijl versie 2.0 ook werkt met Browser-TVSDK en JavaScript.
-seo-title: Lineaire VPAID-advertenties weergeven in een advertentiescheiding
 title: Lineaire VPAID-advertenties weergeven in een advertentiescheiding
-uuid: 1f3a5426-79f5-49a1-a913-923708c09ade
 translation-type: tm+mt
-source-git-commit: 5df9a8b98baaf1cd1803581d2b60c7ed4261a0e8
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '263'
+source-wordcount: '228'
 ht-degree: 0%
 
 ---
