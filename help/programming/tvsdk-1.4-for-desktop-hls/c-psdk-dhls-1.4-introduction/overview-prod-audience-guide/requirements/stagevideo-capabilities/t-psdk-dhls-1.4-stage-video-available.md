@@ -1,13 +1,10 @@
 ---
 description: Als StageVideo niet beschikbaar is en uw toepassing probeert StageVideo te gebruiken, geeft de TVSDK geen fout weer. Uw toepassing kan bepalen of StageVideo beschikbaar is door te luisteren naar de StageVideoAvailabilityEvent.
-seo-description: Als StageVideo niet beschikbaar is en uw toepassing probeert StageVideo te gebruiken, geeft de TVSDK geen fout weer. Uw toepassing kan bepalen of StageVideo beschikbaar is door te luisteren naar de StageVideoAvailabilityEvent.
-seo-title: Controleren of StageVideo beschikbaar is
 title: Controleren of StageVideo beschikbaar is
-uuid: 09c39442-cb9a-4892-af99-3d3d9bf1d4a7
 translation-type: tm+mt
-source-git-commit: 040655d8ba5f91c98ed0584c08db226ffe1e0f4e
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '160'
+source-wordcount: '124'
 ht-degree: 1%
 
 ---
