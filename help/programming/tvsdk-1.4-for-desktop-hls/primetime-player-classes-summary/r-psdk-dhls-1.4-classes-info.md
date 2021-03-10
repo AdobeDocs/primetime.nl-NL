@@ -1,13 +1,10 @@
 ---
 description: Deze klassen bieden informatie over de media.
-seo-description: Deze klassen bieden informatie over de media.
-seo-title: Info-klassen
 title: Info-klassen
-uuid: 491ea40b-5a8d-4b6a-b369-a8848c6bd9b6
 translation-type: tm+mt
-source-git-commit: 040655d8ba5f91c98ed0584c08db226ffe1e0f4e
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '233'
+source-wordcount: '224'
 ht-degree: 0%
 
 ---
