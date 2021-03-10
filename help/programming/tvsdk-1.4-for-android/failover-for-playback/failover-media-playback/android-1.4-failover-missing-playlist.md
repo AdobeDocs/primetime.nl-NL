@@ -1,13 +1,10 @@
 ---
 description: Wanneer een volledige afspeellijst ontbreekt, bijvoorbeeld wanneer het M3U8-bestand dat in een manifestbestand op hoofdniveau is opgegeven niet wordt gedownload, probeert TVSDK het bestand te herstellen. Als het niet kan herstellen, bepaalt uw toepassing de volgende stap.
-seo-description: Wanneer een volledige afspeellijst ontbreekt, bijvoorbeeld wanneer het M3U8-bestand dat in een manifestbestand op hoofdniveau is opgegeven niet wordt gedownload, probeert TVSDK het bestand te herstellen. Als het niet kan herstellen, bepaalt uw toepassing de volgende stap.
-seo-title: failover van afspeellijst ontbreekt
 title: failover van afspeellijst ontbreekt
-uuid: 91a537f3-3e69-4669-8f84-0292c19ac209
 translation-type: tm+mt
-source-git-commit: 5908e5a3521966496aeec0ef730e4a704fddfb68
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '372'
+source-wordcount: '333'
 ht-degree: 0%
 
 ---
