@@ -1,13 +1,10 @@
 ---
 description: TVSDK handelt fouten in het tijdbereik af op basis van het specifieke probleem, door de onjuist gedefinieerde tijdbereiken samen te voegen of opnieuw te ordenen.
-seo-description: TVSDK handelt fouten in het tijdbereik af op basis van het specifieke probleem, door de onjuist gedefinieerde tijdbereiken samen te voegen of opnieuw te ordenen.
-seo-title: Foutafhandeling voor verwijderen en vervangen van toevoegen
 title: Foutafhandeling voor verwijderen en vervangen van toevoegen
-uuid: ab153591-0011-44b4-87f9-be0302c2295e
 translation-type: tm+mt
-source-git-commit: adef0bbd52ba043f625f38db69366c6d873c586d
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '333'
+source-wordcount: '308'
 ht-degree: 0%
 
 ---
@@ -17,7 +14,7 @@ ht-degree: 0%
 
 TVSDK handelt fouten in het tijdbereik af op basis van het specifieke probleem, door de onjuist gedefinieerde tijdbereiken samen te voegen of opnieuw te ordenen.
 
-TVSDK behandelt `timeRanges` fouten door standaardsamenvoeging en opnieuw rangschikken te doen. Eerst worden door de klant gedefinieerde tijdbereiken gesorteerd op de tijd *begin*. Op basis van deze sorteervolgorde worden aangrenzende bereiken samengevoegd en worden deze samengevoegd als er subsets en snijpunten zijn tussen de bereiken.
+TVSDK behandelt `timeRanges` fouten door standaardsamenvoeging en opnieuw rangschikking uit te voeren. Eerst worden door de klant gedefinieerde tijdbereiken gesorteerd op de tijd *begin*. Op basis van deze sorteervolgorde worden aangrenzende bereiken samengevoegd en worden deze samengevoegd als er subsets en snijpunten zijn tussen de bereiken.
 
 TVSDK verwerkt fouten in het tijdbereik als volgt:
 
