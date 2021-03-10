@@ -1,13 +1,10 @@
 ---
 description: De aanvraag en het antwoord voor machtigingen worden doorgegeven via een wederzijds geverifieerde SSL-verbinding tussen de licentieserver en de machtigingsservice van de klant.
-seo-description: De aanvraag en het antwoord voor machtigingen worden doorgegeven via een wederzijds geverifieerde SSL-verbinding tussen de licentieserver en de machtigingsservice van de klant.
-seo-title: SEES Public API
 title: SEES Public API
-uuid: f3a17d61-04ee-4bdb-9d64-a98066c6d1c8
 translation-type: tm+mt
-source-git-commit: 15403abbd53486e1faa2146cda83f41bd8116632
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '179'
+source-wordcount: '154'
 ht-degree: 0%
 
 ---
