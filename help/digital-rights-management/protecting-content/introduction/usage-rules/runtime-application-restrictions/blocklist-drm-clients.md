@@ -1,21 +1,19 @@
 ---
-description: 'null'
-seo-description: 'null'
-seo-title: Lijst van afgewezen personen van DRM-clients die geen toegang hebben tot beveiligde inhoud
-title: Lijst van afgewezen personen van DRM-clients die geen toegang hebben tot beveiligde inhoud
-uuid: 38bc024e-0c5b-4c1c-8d4b-94b9e0fec67e
+title: Lijst van gewezen personen van DRM-clients die geen toegang hebben tot beveiligde inhoud
+description: Lijst van gewezen personen van DRM-clients die geen toegang hebben tot beveiligde inhoud
+copied-description: true
 translation-type: tm+mt
-source-git-commit: 1b9792a10ad606b99b6639799ac2aacb707b2af5
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '402'
+source-wordcount: '400'
 ht-degree: 0%
 
 ---
 
 
-# Lijst van afgewezen personen van DRM-clients die toegang hebben tot beveiligde inhoud {#blocklist-of-drm-clients-restricted-from-accessing-protected-content}
+# Lijst van gewezen personen van DRM-clients die toegang hebben tot beveiligde inhoud {#blocklist-of-drm-clients-restricted-from-accessing-protected-content}
 
-Deze lijst van afgewezen personen geeft de Primetime DRM-clients aan die geen toegang hebben tot beveiligde inhoud. U lijst van afgewezen personen clients op clientversie en platform.
+Deze lijst van gewezen personen geeft de Primetime DRM-clients aan die geen toegang hebben tot beveiligde inhoud. U lijst van gewezen personen clients op clientversie en platform.
 
 Voorbeeld van gebruik: In geval van een inbreuk op de beveiliging kan een nieuwere versie van de Primetime DRM-client worden opgegeven als de minimale versie die vereist is voor het aanschaffen van licenties en het afspelen van inhoud. De licentieserver controleert of de Primetime DRM-client die de licentieaanvraag indient, aan de versievereisten voldoet voordat een licentie wordt uitgegeven. De Primetime DRM-client controleert ook de versie in de licentie voordat de inhoud wordt afgespeeld. Deze clientcontrole is vereist in het geval van domeinen waar een licentie naar een andere computer kan worden overgedragen.
 
@@ -34,5 +32,5 @@ Een Primetime DRM-clientversie kan worden geïdentificeerd door de kenmerken die
 
 >[!NOTE]
 >
->Wanneer u een item in de lijst van afgewezen personen opgeeft, kunt u waarden instellen voor een of meer van de kenmerken die in de vorige tabel worden genoemd. Elk kenmerk dat niet wordt opgegeven, wordt behandeld als een jokerteken. Als de Primetime DRM-client overeenkomt met alle waarden die in een lijst van afgewezen personen-item zijn opgegeven, heeft die client mogelijk geen toegang tot de beveiligde inhoud.
+>Wanneer u een item in de lijst van gewezen personen opgeeft, kunt u waarden instellen voor een of meer van de kenmerken die in de vorige tabel worden genoemd. Elk kenmerk dat niet wordt opgegeven, wordt behandeld als een jokerteken. Als de Primetime DRM-client overeenkomt met alle waarden die in een lijst van gewezen personen-item zijn opgegeven, heeft die client mogelijk geen toegang tot de beveiligde inhoud.
 
