@@ -1,13 +1,10 @@
 ---
 description: Deze klassen bieden informatie over de tijdlijn van de specifieke media, waaronder de plaatsing van advertenties.
-seo-description: Deze klassen bieden informatie over de tijdlijn van de specifieke media, waaronder de plaatsing van advertenties.
-seo-title: Tijdlijnklassen
 title: Tijdlijnklassen
-uuid: dd4af4b4-215e-45cb-8bac-574a461ac1ce
 translation-type: tm+mt
-source-git-commit: 5908e5a3521966496aeec0ef730e4a704fddfb68
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '244'
+source-wordcount: '226'
 ht-degree: 0%
 
 ---
