@@ -1,13 +1,10 @@
 ---
 description: TVSDK biedt ondersteuning voor banneradvertenties die bij een lineaire advertentie horen en die vaak na afloop van de lineaire advertentie op de pagina blijven staan. Uw toepassing is verantwoordelijk voor het weergeven van de bijbehorende banners die een lineaire advertentie hebben.
-seo-description: TVSDK biedt ondersteuning voor banneradvertenties die bij een lineaire advertentie horen en die vaak na afloop van de lineaire advertentie op de pagina blijven staan. Uw toepassing is verantwoordelijk voor het weergeven van de bijbehorende banners die een lineaire advertentie hebben.
-seo-title: Companion banneradvertenties
 title: Companion banneradvertenties
-uuid: 388a1683-342c-4f3b-97c8-cfcb6c5cfee1
 translation-type: tm+mt
-source-git-commit: 8ff38bdc1a7ff9732f7f1fae37f64d0e1113ff40
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '650'
+source-wordcount: '607'
 ht-degree: 0%
 
 ---
