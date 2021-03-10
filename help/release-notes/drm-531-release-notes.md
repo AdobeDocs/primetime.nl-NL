@@ -1,16 +1,13 @@
 ---
 title: Opmerkingen bij de release DRM 5.3.1
-seo-title: Opmerkingen bij de release DRM 5.3.1
 description: In de Opmerkingen bij de release DRM 5.3.1 worden de nieuwe functies en de bekende problemen in DRM 5.3.1 beschreven.
-seo-description: In de Opmerkingen bij de release DRM 5.3.1 worden de nieuwe functies en de bekende problemen in DRM 5.3.1 beschreven.
-uuid: bb61b79f-a5b3-42ed-8016-495b1ac99ea6
 contentOwner: dekalra
 topic-tags: release-notes
 products: SG_PRIMETIME
 translation-type: tm+mt
-source-git-commit: e644e8497e118e2d03e72bef727c4ce1455d68d6
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '543'
+source-wordcount: '527'
 ht-degree: 0%
 
 ---
