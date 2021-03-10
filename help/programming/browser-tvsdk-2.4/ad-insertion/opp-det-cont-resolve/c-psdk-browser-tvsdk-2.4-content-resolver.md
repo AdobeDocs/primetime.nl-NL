@@ -1,13 +1,10 @@
 ---
 description: Een opportuniteitsdetector is een TVSDK-component van Browser die aangepaste tags in een stream detecteert en plaatsingsmogelijkheden identificeert. Deze mogelijkheden worden naar de inhoudoplosser verzonden, die de inhoud/toevoegingswerkstroom op de eigenschappen van de plaatsingskans en meta-gegevens aanpast.
-seo-description: Een opportuniteitsdetector is een TVSDK-component van Browser die aangepaste tags in een stream detecteert en plaatsingsmogelijkheden identificeert. Deze mogelijkheden worden naar de inhoudoplosser verzonden, die de inhoud/toevoegingswerkstroom op de eigenschappen van de plaatsingskans en meta-gegevens aanpast.
-seo-title: Aangepaste opportuniteitsdetectors en contentoplossers
 title: Aangepaste opportuniteitsdetectors en contentoplossers
-uuid: d4926933-5966-4cd8-8050-c81c5e3c8545
 translation-type: tm+mt
-source-git-commit: 592245f5a7186d18dabbb5a98a468cbed7354aed
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '246'
+source-wordcount: '198'
 ht-degree: 0%
 
 ---
