@@ -1,13 +1,10 @@
 ---
 description: Rapporten voor videoanalyse worden naar de Adobe Analytics-rapportageplatforms geleid.
-seo-description: Rapporten voor videoanalyse worden naar de Adobe Analytics-rapportageplatforms geleid.
-seo-title: Rapporten voor videoanalyse openen
 title: Rapporten voor videoanalyse openen
-uuid: fa913061-5063-4605-bf72-674b5321bbd1
 translation-type: tm+mt
-source-git-commit: 040655d8ba5f91c98ed0584c08db226ffe1e0f4e
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '74'
+source-wordcount: '59'
 ht-degree: 0%
 
 ---
