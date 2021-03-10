@@ -1,13 +1,10 @@
 ---
 description: In dit voorbeeld wordt de aanbevolen manier getoond om tijdbereikspecificaties op de afspeeltijdlijn op te nemen.
-seo-description: In dit voorbeeld wordt de aanbevolen manier getoond om tijdbereikspecificaties op de afspeeltijdlijn op te nemen.
-seo-title: Tijdbereik en markeertekens op de tijdlijn plaatsen
 title: Tijdbereik en markeertekens op de tijdlijn plaatsen
-uuid: cbcc4c84-0d56-4331-b555-b8e59f7d52d4
 translation-type: tm+mt
-source-git-commit: fd21a29bb186238142d43e0277bbf92f8406f6f7
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '430'
+source-wordcount: '409'
 ht-degree: 0%
 
 ---
