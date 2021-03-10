@@ -1,13 +1,10 @@
 ---
 description: De FairPlay-interface voor licentietoken biedt productie- en testservices.
-seo-description: De FairPlay-interface voor licentietoken biedt productie- en testservices.
-seo-title: Aanvraag voor FairPlay-licentietoken/reactie
 title: Aanvraag voor FairPlay-licentietoken/reactie
-uuid: 10d4a760-8895-4fb3-8288-1c3a640df587
 translation-type: tm+mt
-source-git-commit: 1b9792a10ad606b99b6639799ac2aacb707b2af5
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '829'
+source-wordcount: '814'
 ht-degree: 5%
 
 ---
