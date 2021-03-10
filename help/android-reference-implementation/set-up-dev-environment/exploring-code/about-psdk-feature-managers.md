@@ -1,13 +1,10 @@
 ---
-seo-title: Functiemanagers
 title: Functiemanagers
-uuid: 3d78544e-4819-4122-bfd3-01522a067aa9
 description: De managers van de eigenschap verstrekken een manier voor u om individuele eigenschappen te controleren zonder volledige TVSDK in onderzoek naar code voor één eigenschap over te steken die in veelvoudige plaatsen zou kunnen worden verspreid.
-seo-description: De managers van de eigenschap verstrekken een manier voor u om individuele eigenschappen te controleren zonder volledige TVSDK in onderzoek naar code voor één eigenschap over te steken die in veelvoudige plaatsen zou kunnen worden verspreid.
 translation-type: tm+mt
-source-git-commit: 31b6cad26bcc393d731080a70eff1c59551f1c8e
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '422'
+source-wordcount: '390'
 ht-degree: 2%
 
 ---
