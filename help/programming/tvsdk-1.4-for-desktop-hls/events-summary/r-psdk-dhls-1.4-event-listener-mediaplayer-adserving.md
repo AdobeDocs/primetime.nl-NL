@@ -1,13 +1,10 @@
 ---
 description: TVSDK verzendt ad-serving-gebeurtenissen als reactie op getimede metagegevensbewerkingen.
-seo-description: TVSDK verzendt ad-serving-gebeurtenissen als reactie op getimede metagegevensbewerkingen.
-seo-title: Gebeurtenissen van metagegevens met tijdslimiet toevoegen
 title: Gebeurtenissen van metagegevens met tijdslimiet toevoegen
-uuid: fd50a937-0c9b-4c47-acb2-1ffc0592ad54
 translation-type: tm+mt
-source-git-commit: 91cea7acb8127e02b82e5242b9ad6ab0d12ce0eb
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '189'
+source-wordcount: '174'
 ht-degree: 0%
 
 ---
