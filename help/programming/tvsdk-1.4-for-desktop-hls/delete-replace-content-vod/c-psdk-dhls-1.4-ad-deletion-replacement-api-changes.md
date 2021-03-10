@@ -1,13 +1,10 @@
 ---
 description: Deze wijzigingen in TVSDK ondersteunen het verwijderen en vervangen van bestanden.
-seo-description: Deze wijzigingen in TVSDK ondersteunen het verwijderen en vervangen van bestanden.
-seo-title: Wijzigingen in API voor verwijderen en vervangen toevoegen
 title: Wijzigingen in API voor verwijderen en vervangen toevoegen
-uuid: 9d208d3b-6459-4aaf-bc56-53c405ccc1b6
 translation-type: tm+mt
-source-git-commit: adef0bbd52ba043f625f38db69366c6d873c586d
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '396'
+source-wordcount: '381'
 ht-degree: 0%
 
 ---
@@ -99,7 +96,7 @@ Deze wijzigingen in TVSDK ondersteunen het verwijderen en vervangen van bestande
 
 * `MediaPlayerTimeline`:
 
-   * &quot;>Als de bewerking `executeOperation()` is, voegt u in &lt;a0/> een aanroep toe om de methode in de bewerking te verwijderen.`DeleteRange`
+   * &quot;>Als de bewerking `executeOperation()` is, voegt u in `DeleteRange` een aanroep toe om de methode in de bewerking te verwijderen.
 
    * Als in `executeOperation()` de bewerking `NOPTimelineOperation` is (lege `AdBreaks` die terugkomt van de server), voegt u een aanroep toe om te wissen.
 
