@@ -1,13 +1,10 @@
 ---
 description: Met de PABI-functie (Partial Ad Break Insertion) bootst u een tv-achtige ervaring na waarin de gebruiker, als hij of zij zich bij een live stream aanmeldt in een mid-roll break, middenroladvertenties in plaats van een pre-roll advertentie of leisteen weergeeft.
-seo-description: Met de PABI-functie (Partial Ad Break Insertion) bootst u een tv-achtige ervaring na waarin de gebruiker, als hij of zij zich bij een live stream aanmeldt in een mid-roll break, middenroladvertenties in plaats van een pre-roll advertentie of leisteen weergeeft.
-seo-title: Gedeeltelijke invoeging van advertentie-einde
 title: Gedeeltelijke invoeging van advertentie-einde
-uuid: a0c1ae34-0f8d-4401-97fe-45a2ea40d08d
 translation-type: tm+mt
-source-git-commit: e1e33d3ac0aad44859cd49566331524da72ac7e4
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '356'
+source-wordcount: '314'
 ht-degree: 0%
 
 ---
