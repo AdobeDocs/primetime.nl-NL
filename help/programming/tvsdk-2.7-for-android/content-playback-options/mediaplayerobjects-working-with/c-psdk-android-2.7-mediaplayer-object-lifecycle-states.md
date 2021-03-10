@@ -1,13 +1,10 @@
 ---
 description: De status van de mediaspeler bepaalt welke handelingen legaal zijn.
-seo-description: De status van de mediaspeler bepaalt welke handelingen legaal zijn.
-seo-title: Levenscyclus en status van het MediaPlayer-object
 title: Levenscyclus en status van het MediaPlayer-object
-uuid: a0eb27c8-180b-4c56-926f-59fa3bcef032
 translation-type: tm+mt
-source-git-commit: 21d1eae53cea303221de00765724e787cf6e84ef
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '471'
+source-wordcount: '453'
 ht-degree: 0%
 
 ---
