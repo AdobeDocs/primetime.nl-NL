@@ -1,13 +1,10 @@
 ---
 description: VPAID (Video Player Ad-Serving Interface Definition) biedt een algemene interface voor het afspelen van videoadvertenties. VPAID biedt gebruikers een rijke mediabeleving en biedt uitgevers de mogelijkheid om advertenties beter te richten, afbeeldingen bij te houden en te drukken en video-inhoud te monetiseren.
-seo-description: VPAID (Video Player Ad-Serving Interface Definition) biedt een algemene interface voor het afspelen van videoadvertenties. VPAID biedt gebruikers een rijke mediabeleving en biedt uitgevers de mogelijkheid om advertenties beter te richten, afbeeldingen bij te houden en te drukken en video-inhoud te monetiseren.
-seo-title: Aangepaste vereisten voor advertenties
 title: Aangepaste vereisten voor advertenties
-uuid: 6d4ba87b-ffe5-467d-8ab5-9795928c2f69
 translation-type: tm+mt
-source-git-commit: adef0bbd52ba043f625f38db69366c6d873c586d
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '353'
+source-wordcount: '314'
 ht-degree: 0%
 
 ---
