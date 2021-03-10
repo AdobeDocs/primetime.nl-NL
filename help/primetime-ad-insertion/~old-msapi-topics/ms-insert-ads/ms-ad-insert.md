@@ -1,13 +1,10 @@
 ---
 description: Alle verzoeken om invoeging in een advertentie gebruiken dezelfde URL-structuur en dezelfde basisqueryparameters. De extra vraagparameters laten de duidelijke server toe om met een verscheidenheid van cliënten en situaties te werken.
-seo-description: Alle verzoeken om invoeging in een advertentie gebruiken dezelfde URL-structuur en dezelfde basisqueryparameters. De extra vraagparameters laten de duidelijke server toe om met een verscheidenheid van cliënten en situaties te werken.
-seo-title: Verzoek om inlassing
 title: Verzoek om inlassing
-uuid: e42b3228-bff7-4202-86ed-7f631f3016ae
 translation-type: tm+mt
-source-git-commit: e437f4143fb939f46d106c64efc391137c33fe17
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '251'
+source-wordcount: '215'
 ht-degree: 0%
 
 ---
