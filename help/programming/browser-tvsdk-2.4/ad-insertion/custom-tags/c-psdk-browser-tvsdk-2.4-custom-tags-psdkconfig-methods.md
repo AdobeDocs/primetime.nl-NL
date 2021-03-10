@@ -1,13 +1,10 @@
 ---
 description: U kunt aangepaste tagnamen in een stream configureren met de MediaPlayerItemConfig-klasse.
-seo-description: U kunt aangepaste tagnamen in een stream configureren met de MediaPlayerItemConfig-klasse.
-seo-title: Methoden van de klasse Config voor tags
 title: Methoden van de klasse Config voor tags
-uuid: 222a0349-58d5-4bf3-9d03-e5920610faf5
 translation-type: tm+mt
-source-git-commit: b9e98ef2b4246fdfd79ebcd91db344c97367d661
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '173'
+source-wordcount: '155'
 ht-degree: 0%
 
 ---
