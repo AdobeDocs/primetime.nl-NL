@@ -1,13 +1,10 @@
 ---
 description: U kunt tijdbereiken in VOD-streams markeren, verwijderen en vervangen door verschillende combinaties van ad-signaalmodus en metagegevens te gebruiken. Verschillende combinaties van signalerende wijze en meta-gegevens resulteren in verschillend gedrag.
-seo-description: U kunt tijdbereiken in VOD-streams markeren, verwijderen en vervangen door verschillende combinaties van ad-signaalmodus en metagegevens te gebruiken. Verschillende combinaties van signalerende wijze en meta-gegevens resulteren in verschillend gedrag.
-seo-title: Effect op het toevoegen en verwijderen van gegevens uit de advertentiemodus en combinaties van metagegevens
 title: Effect op het toevoegen en verwijderen van gegevens uit de advertentiemodus en combinaties van metagegevens
-uuid: 7b2a5588-110d-4ce5-aa9c-706d357f211d
 translation-type: tm+mt
-source-git-commit: 21d1eae53cea303221de00765724e787cf6e84ef
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '480'
+source-wordcount: '434'
 ht-degree: 0%
 
 ---
