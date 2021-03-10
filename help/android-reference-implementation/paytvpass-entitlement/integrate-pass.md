@@ -1,13 +1,10 @@
 ---
 description: Pas uw referentie-implementatie aan om Adobe Primetime-verificatie voor uw productieomgeving te integreren.
-seo-description: Pas uw referentie-implementatie aan om Adobe Primetime-verificatie voor uw productieomgeving te integreren.
-seo-title: Primetime-verificatie integreren
 title: Primetime-verificatie integreren
-uuid: 34cdf1da-261e-462c-a194-4fcb439e5dfb
 translation-type: tm+mt
-source-git-commit: 31b6cad26bcc393d731080a70eff1c59551f1c8e
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '783'
+source-wordcount: '767'
 ht-degree: 0%
 
 ---
