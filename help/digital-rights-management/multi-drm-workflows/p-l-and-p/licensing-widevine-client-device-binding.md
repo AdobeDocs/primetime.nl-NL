@@ -1,13 +1,10 @@
 ---
 description: In sommige gevallen wilt u wellicht voorkomen dat eindgebruikers inhoud afspelen op meerdere apparaten wanneer de inhoud wordt aangeschaft of gehuurd. Als de klant Expressplay gebruikt, kan dit worden gedaan door de Uitdrukkelijke APIs te gebruiken om het teken van de Uitdrukking van de gebruiker aan de machine van de gebruiker te binden.
-seo-description: In sommige gevallen wilt u wellicht voorkomen dat eindgebruikers inhoud afspelen op meerdere apparaten wanneer de inhoud wordt aangeschaft of gehuurd. Als de klant Expressplay gebruikt, kan dit worden gedaan door de Uitdrukkelijke APIs te gebruiken om het teken van de Uitdrukking van de gebruiker aan de machine van de gebruiker te binden.
-seo-title: Apparaatbinding
 title: Apparaatbinding
-uuid: 351fa33c-4226-4ed5-829c-56b563166fec
 translation-type: tm+mt
-source-git-commit: ed1430bdcb590a53fa69b324ef340ad636b2fa7c
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '364'
+source-wordcount: '314'
 ht-degree: 0%
 
 ---
