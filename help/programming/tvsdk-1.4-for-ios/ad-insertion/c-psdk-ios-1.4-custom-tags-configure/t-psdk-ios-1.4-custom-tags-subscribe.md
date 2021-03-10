@@ -1,14 +1,11 @@
 ---
 description: TvSDK bereidt PTTimedMetadata-objecten voor op geabonneerde tags telkens wanneer deze objecten in het inhoudsmanifest worden aangetroffen.
-seo-description: TvSDK bereidt PTTimedMetadata-objecten voor op geabonneerde tags telkens wanneer deze objecten in het inhoudsmanifest worden aangetroffen.
-seo-title: Abonneren op aangepaste tags
 title: Abonneren op aangepaste tags
-uuid: de66d3db-46d1-485f-9d3a-6e28495bfb13
 translation-type: tm+mt
-source-git-commit: 5908e5a3521966496aeec0ef730e4a704fddfb68
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '112'
-ht-degree: 1%
+source-wordcount: '91'
+ht-degree: 2%
 
 ---
 
