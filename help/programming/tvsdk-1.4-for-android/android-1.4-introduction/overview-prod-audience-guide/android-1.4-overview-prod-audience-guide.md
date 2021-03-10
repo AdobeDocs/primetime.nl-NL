@@ -1,13 +1,10 @@
 ---
 description: Deze handleiding bevat informatie over hoe u videospelertoepassingen kunt ontwikkelen met behulp van TVSDK voor Android, die in Java is geïmplementeerd.
-seo-description: Deze handleiding bevat informatie over hoe u videospelertoepassingen kunt ontwikkelen met behulp van TVSDK voor Android, die in Java is geïmplementeerd.
-seo-title: Overzicht
 title: Overzicht
-uuid: 9c320389-e327-4e5f-888c-e2e5728365ca
 translation-type: tm+mt
-source-git-commit: 5908e5a3521966496aeec0ef730e4a704fddfb68
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '238'
+source-wordcount: '216'
 ht-degree: 0%
 
 ---
