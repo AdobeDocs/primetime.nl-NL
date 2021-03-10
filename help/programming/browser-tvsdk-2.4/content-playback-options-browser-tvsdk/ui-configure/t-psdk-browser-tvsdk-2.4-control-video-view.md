@@ -1,13 +1,10 @@
 ---
 description: U kunt de positie en grootte van de videoweergave bepalen met het MediaPlayerView-object.
-seo-description: U kunt de positie en grootte van de videoweergave bepalen met het MediaPlayerView-object.
-seo-title: De positie en grootte van de videoweergave bepalen
 title: De positie en grootte van de videoweergave bepalen
-uuid: d09dbc18-1ec0-4336-bf3f-7ff6c265c443
 translation-type: tm+mt
-source-git-commit: 592245f5a7186d18dabbb5a98a468cbed7354aed
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '317'
+source-wordcount: '293'
 ht-degree: 0%
 
 ---
@@ -19,7 +16,7 @@ U kunt de positie en grootte van de videoweergave bepalen met het MediaPlayerVie
 
 Browser TVSDK door gebrek probeert om de aspectverhouding van de videomening te handhaven wanneer de grootte of de positie van de video wegens een verandering door de toepassing, een profielschakelaar, een inhoudschakelaar, etc. verandert.
 
-U kunt het standaardgedrag van de aspectverhouding met voeten treden door een verschillend *schaalbeleid* te specificeren. Geef het schaalbeleid op met de eigenschap `MediaPlayerView` van het object. `scalePolicy` Het standaardschaalbeleid van `MediaPlayerView` wordt geplaatst met een geval van de `MaintainAspectRatioScalePolicy` klasse. Om het schaalbeleid terug te stellen, vervang de standaardinstantie van `MaintainAspectRatioScalePolicy` op `MediaPlayerView.scalePolicy` met uw eigen beleid.
+U kunt het standaardgedrag van de aspectverhouding met voeten treden door een verschillend *schaalbeleid* te specificeren. Geef het schaalbeleid op met de eigenschap `scalePolicy` van het object. `MediaPlayerView` Het standaardschaalbeleid van `MediaPlayerView` wordt geplaatst met een geval van de `MaintainAspectRatioScalePolicy` klasse. Om het schaalbeleid terug te stellen, vervang de standaardinstantie van `MaintainAspectRatioScalePolicy` op `MediaPlayerView.scalePolicy` met uw eigen beleid.
 
 >[!IMPORTANT]
 >
