@@ -1,13 +1,10 @@
 ---
 description: ID3-tags bieden informatie over een audio- of videobestand, zoals de titel van het bestand of de naam van de artiest. Browser TVSDK ontdekt ID3 markeringen op het het segmentniveau van de vervoerstroom (TS) in HLS stromen en verzendt een gebeurtenis. De toepassing kan gegevens uit de tag extraheren.
-seo-description: ID3-tags bieden informatie over een audio- of videobestand, zoals de titel van het bestand of de naam van de artiest. Browser TVSDK ontdekt ID3 markeringen op het het segmentniveau van de vervoerstroom (TS) in HLS stromen en verzendt een gebeurtenis. De toepassing kan gegevens uit de tag extraheren.
-seo-title: ID3-tags
 title: ID3-tags
-uuid: a47cd0cc-b11d-47df-b1fb-56918896ef4c
 translation-type: tm+mt
-source-git-commit: 040655d8ba5f91c98ed0584c08db226ffe1e0f4e
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '326'
+source-wordcount: '274'
 ht-degree: 0%
 
 ---
