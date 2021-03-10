@@ -1,13 +1,10 @@
 ---
 description: U kunt het configuratiebestand van TVSDK (AdobeTVSDKConfig.json) gebruiken om de prioriteiten voor een creatieve selectie op VAST/VMAP-reacties bij te werken. U kunt dit configuratiebestand ook gebruiken om de URL-omzettingsregels voor de bron van advertenties te definiëren.
-seo-description: U kunt het configuratiebestand van TVSDK (AdobeTVSDKConfig.json) gebruiken om de prioriteiten voor een creatieve selectie op VAST/VMAP-reacties bij te werken. U kunt dit configuratiebestand ook gebruiken om de URL-omzettingsregels voor de bron van advertenties te definiëren.
-seo-title: Regels voor het bijwerken en creatief selecteren
 title: Regels voor het bijwerken en creatief selecteren
-uuid: 9eb4ccc2-425f-4c01-a095-f2043df4e25c
 translation-type: tm+mt
-source-git-commit: 6837c753b2f031b024ff510cda670340f346c4e1
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '233'
+source-wordcount: '191'
 ht-degree: 0%
 
 ---
