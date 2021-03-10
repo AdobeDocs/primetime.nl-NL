@@ -1,9 +1,9 @@
 ---
-seo-title: Tenant-configuratiebestand
 title: Tenant-configuratiebestand
-uuid: 6e5c82c9-b8f5-4fca-8325-a884b2c779f7
+description: Tenant-configuratiebestand
+copied-description: true
 translation-type: tm+mt
-source-git-commit: 9d2e046ae259c05fb4c278f464c9a26795e554fc
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
 source-wordcount: '727'
 ht-degree: 0%
@@ -35,7 +35,7 @@ Het configuratiebestand voor de huurder bevat:
 
       * **Uitvoerbeveiliging** : bepaalt of uitvoer naar externe renderingapparaten moet worden beveiligd.
       * **Beperkingen**  voor AIR- en SWF-toepassingen: optionele lijst van gewenste personen van SWF- en AIR-toepassingen die de inhoud kunnen afspelen (dus alleen de opgegeven toepassingen zijn toegestaan). SWF-toepassingen worden geïdentificeerd door een URL of door de samenvatting van het SWF-bestand en de maximale tijd die nodig is om de samenvatting te downloaden en te controleren. Zie de sectie SWF-hash Calculator voor informatie over het berekenen van de SWF-digest. AIR- en iOS-toepassingen worden aangeduid met een uitgevers-id en een optionele toepassings-id, een minimale versie en een maximale versie. Als er geen toepassingsbeperkingen zijn opgegeven, kan de inhoud door een SWF- of AIR-toepassing worden afgespeeld.
-      * **Beperkingen**  voor DRM en Runtime Module - Geeft het minimale beveiligingsniveau op dat is vereist voor de DRM/Runtime-module. Bevat optioneel een lijst van afgewezen personen met versies die de inhoud niet mogen afspelen. Moduleversies worden geïdentificeerd door kenmerken zoals het besturingssysteem en/of een versienummer. De beperkingen van de Module DRM en de Beperkingen van de Runtime Module steunen nu de volgende extra attributen:
+      * **Beperkingen**  voor DRM en Runtime Module - Geeft het minimale beveiligingsniveau op dat is vereist voor de DRM/Runtime-module. Bevat optioneel een lijst van gewezen personen met versies die de inhoud niet mogen afspelen. Moduleversies worden geïdentificeerd door kenmerken zoals het besturingssysteem en/of een versienummer. De beperkingen van de Module DRM en de Beperkingen van de Runtime Module steunen nu de volgende extra attributen:
 
          * `oemVendor`
          * `model`
