@@ -1,13 +1,10 @@
 ---
 description: Standaard dwingt TVSDK een advertentie-einde af wanneer de gebruiker een advertentie-einde zoekt. U kunt het gedrag aanpassen om een advertentie-einde over te slaan als de tijd die is verstreken vanaf een vorige eindemarkering binnen een bepaald aantal minuten is.
-seo-description: Standaard dwingt TVSDK een advertentie-einde af wanneer de gebruiker een advertentie-einde zoekt. U kunt het gedrag aanpassen om een advertentie-einde over te slaan als de tijd die is verstreken vanaf een vorige eindemarkering binnen een bepaald aantal minuten is.
-seo-title: Advertenties gedurende een bepaalde periode overslaan
 title: Advertenties gedurende een bepaalde periode overslaan
-uuid: f8a5c1e3-e97f-421f-ac98-79de94a82955
 translation-type: tm+mt
-source-git-commit: 812d04037c3b18f8d8cdd0d18430c686c3eee1ff
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '322'
+source-wordcount: '271'
 ht-degree: 0%
 
 ---
