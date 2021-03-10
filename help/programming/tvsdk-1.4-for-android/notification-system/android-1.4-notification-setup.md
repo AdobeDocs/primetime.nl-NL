@@ -1,13 +1,10 @@
 ---
 description: U kunt luisteren naar meldingen en u kunt uw eigen meldingen toevoegen aan de berichtgeschiedenis.
-seo-description: U kunt luisteren naar meldingen en u kunt uw eigen meldingen toevoegen aan de berichtgeschiedenis.
-seo-title: Uw meldingssysteem instellen
 title: Uw meldingssysteem instellen
-uuid: caa6a306-dea9-45ee-b0b3-569b5f2527a1
 translation-type: tm+mt
-source-git-commit: 5908e5a3521966496aeec0ef730e4a704fddfb68
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '132'
+source-wordcount: '111'
 ht-degree: 0%
 
 ---
