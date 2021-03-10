@@ -1,13 +1,10 @@
 ---
 description: Toevoegen lost advertenties voor video-op-verzoek (VOD), voor live streaming en voor lineair streamen met het bijhouden van advertenties en het afspelen van advertenties op. TVSDK doet de vereiste verzoeken aan de advertentieserver, ontvangt informatie over advertenties voor de opgegeven inhoud en plaatst de advertenties in fasen.
-seo-description: Toevoegen lost advertenties voor video-op-verzoek (VOD), voor live streaming en voor lineair streamen met het bijhouden van advertenties en het afspelen van advertenties op. TVSDK doet de vereiste verzoeken aan de advertentieserver, ontvangt informatie over advertenties voor de opgegeven inhoud en plaatst de advertenties in fasen.
-seo-title: Advertenties invoegen
 title: Advertenties invoegen
-uuid: 6e31cae5-7363-454f-82dd-e03c1e34cd3f
 translation-type: tm+mt
-source-git-commit: 23a48208ac1d3625ae7d925ab6bfba8f2a980766
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '628'
+source-wordcount: '580'
 ht-degree: 0%
 
 ---
