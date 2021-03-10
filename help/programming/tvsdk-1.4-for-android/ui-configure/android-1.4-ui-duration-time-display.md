@@ -1,13 +1,10 @@
 ---
 description: U kunt TVSDK gebruiken om informatie op te halen over de media die u op de zoekbalk kunt weergeven.
-seo-description: U kunt TVSDK gebruiken om informatie op te halen over de media die u op de zoekbalk kunt weergeven.
-seo-title: De duur, de huidige tijd en de resterende tijd van de video weergeven
 title: De duur, de huidige tijd en de resterende tijd van de video weergeven
-uuid: afb43169-2d82-4137-ba38-27caef3d8c21
 translation-type: tm+mt
-source-git-commit: 5908e5a3521966496aeec0ef730e4a704fddfb68
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '409'
+source-wordcount: '380'
 ht-degree: 0%
 
 ---
