@@ -1,9 +1,9 @@
 ---
-seo-title: Eigenschappen van configuratiebestand
 title: Eigenschappen van configuratiebestand
-uuid: f0d36240-e5fa-4bf9-9a82-7e963d03cdd0
+description: Eigenschappen van configuratiebestand
+copied-description: true
 translation-type: tm+mt
-source-git-commit: 29bc8323460d9be0fce66cbea7c6fce46df20d61
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
 source-wordcount: '630'
 ht-degree: 0%
@@ -73,7 +73,7 @@ Voordat u Media Packager uitvoert, geeft u waarden op voor de eigenschappen van 
   </tr> 
   <tr rowsep="1" class="- topic/row "> 
    <td colname="1" class="- topic/entry "><span class="codeph">encrypt.keys.policyFile.n.domain.transportcert</span> </td> 
-   <td colname="2" class="- topic/entry "> <p class="- topic/p ">Als een beleid <span class="+ topic/ph pr-d/codeph codeph"> encrypt.keys.policyFile.n</span> domeinregistratie met een server vereist die een verschillend vervoercertificaat dan gespecificeerd in <span class="+ topic/ph pr-d/codeph codeph"> encrypt.license.server</span> gebruikt, moet het certificaat van het domeinvervoer worden verstrekt. </p> <p class="- topic/p ">This property specifies a file that contains the certificate only (either PEM or DER format is acceptable). </p> </td> 
+   <td colname="2" class="- topic/entry "> <p class="- topic/p ">Als een beleid <span class="+ topic/ph pr-d/codeph codeph"> encrypt.keys.policyFile.n</span> domeinregistratie met een server vereist die een verschillend vervoercertificaat gebruikt dan gespecificeerd in <span class="+ topic/ph pr-d/codeph codeph"> encrypt.license.server</span>, moet het certificaat van het domeinvervoer worden verstrekt. </p> <p class="- topic/p ">This property specifies a file that contains the certificate only (either PEM or DER format is acceptable). </p> </td> 
   </tr> 
   <tr rowsep="1" class="- topic/row "> 
    <td colname="1" class="- topic/entry "><span class="codeph"> encrypt.keys.licenseKey</span> </td> 
