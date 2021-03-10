@@ -1,9 +1,9 @@
 ---
-seo-title: Lijst van afgewezen personen van DRM-clients die geen toegang hebben tot beveiligde inhoud
-title: Lijst van afgewezen personen van DRM-clients die geen toegang hebben tot beveiligde inhoud
-uuid: c05aa6f8-32d9-42aa-a9c5-0d0629d49778
+title: Lijst van gewezen personen van DRM-clients die geen toegang hebben tot beveiligde inhoud
+description: Lijst van gewezen personen van DRM-clients die geen toegang hebben tot beveiligde inhoud
+copied-description: true
 translation-type: tm+mt
-source-git-commit: 1b9792a10ad606b99b6639799ac2aacb707b2af5
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
 source-wordcount: '377'
 ht-degree: 0%
@@ -11,7 +11,7 @@ ht-degree: 0%
 ---
 
 
-# Lijst van afgewezen personen van DRM-clients die toegang hebben tot beveiligde inhoud {#blocklist-of-drm-clients-restricted-from-accessing-protected-content}
+# Lijst van gewezen personen van DRM-clients die toegang hebben tot beveiligde inhoud {#blocklist-of-drm-clients-restricted-from-accessing-protected-content}
 
 **Adobe Access DRM-moduleversies hebben geen toegang tot beveiligde inhoud.**
 
@@ -34,5 +34,5 @@ Een DRM-clientversie kan worden geïdentificeerd aan de hand van de kenmerken di
 
 >[!NOTE]
 >
->Wanneer u een item in de lijst van afgewezen personen opgeeft, kunnen waarden worden ingesteld voor een of meer van de kenmerken die in de vorige tabel worden genoemd. Elk kenmerk dat niet wordt opgegeven, wordt behandeld als een jokerteken. Als de DRM-client overeenkomt met alle waarden die in een lijst van afgewezen personen-item zijn opgegeven, heeft die client mogelijk geen toegang tot de beveiligde inhoud.
+>Wanneer u een item in de lijst van gewezen personen opgeeft, kunnen waarden worden ingesteld voor een of meer van de kenmerken die in de vorige tabel worden genoemd. Elk kenmerk dat niet wordt opgegeven, wordt behandeld als een jokerteken. Als de DRM-client overeenkomt met alle waarden die in een lijst van gewezen personen-item zijn opgegeven, heeft die client mogelijk geen toegang tot de beveiligde inhoud.
 
