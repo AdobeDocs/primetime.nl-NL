@@ -1,13 +1,10 @@
 ---
 description: Deze klassen bieden metagegevens voor adverteren, naamruimten en tekstspatiëring.
-seo-description: Deze klassen bieden metagegevens voor adverteren, naamruimten en tekstspatiëring.
-seo-title: Metagegevensklassen
 title: Metagegevensklassen
-uuid: 9cabd1b7-4343-41a1-a3e7-1b61235992db
 translation-type: tm+mt
-source-git-commit: 557f42cd9a6f356aa99e13386d9e8d65e043a6af
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '207'
+source-wordcount: '196'
 ht-degree: 0%
 
 ---
