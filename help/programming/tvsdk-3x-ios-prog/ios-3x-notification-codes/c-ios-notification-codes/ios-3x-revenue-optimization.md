@@ -1,12 +1,10 @@
 ---
 description: 'Deze tabel bevat gedetailleerde informatie over meldingen voor de optimalisatie van inkomsten. '
-seo-description: 'Deze tabel bevat gedetailleerde informatie over meldingen voor de optimalisatie van inkomsten. '
-seo-title: Code ONTVANGSTEN
 title: Code ONTVANGSTEN
 translation-type: tm+mt
-source-git-commit: df3d60874701383325be1afdd1ec5fe036f855f8
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '764'
+source-wordcount: '752'
 ht-degree: 0%
 
 ---
