@@ -1,23 +1,21 @@
 ---
-description: 'null'
-seo-description: 'null'
-seo-title: Lijst van afgewezen personen van toepassingsruntimes
-title: Lijst van afgewezen personen van toepassingsruntimes
-uuid: fc3c9bd6-b1e6-4534-b29c-cd9a35b80928
+title: Lijst van gewezen personen van toepassingsruntimes
+description: Lijst van gewezen personen van toepassingsruntimes
+copied-description: true
 translation-type: tm+mt
-source-git-commit: 58bb3bedc5b0ac63afd96eb6101d9ad779e6deed
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '123'
+source-wordcount: '121'
 ht-degree: 0%
 
 ---
 
 
-# Lijst van afgewezen personen van toepassingsruntimes {#blocklist-of-application-runtimes}
+# Lijst van gewezen personen van toepassingsruntimes {#blocklist-of-application-runtimes}
 
-Lijst van afgewezen personen van toepassingsruntimes specificeert de versie van de cliënt Primetime of Flash Runtime die tot inhoud niet kan toegang hebben. Geef de beperkte runtime (Flash Player, AIR of iOS), het platform en de versie op.
+Lijst van gewezen personen van toepassingsruntimes specificeert de versie van de cliënt Primetime of Flash Runtime die tot inhoud niet kan toegang hebben. Geef de beperkte runtime (Flash Player, AIR of iOS), het platform en de versie op.
 
-Voorbeeld van gebruik: Net als bij de Primetime DRM Client lijst van afgewezen personen kan de nieuwste versie van de Flash Player-, AIR- of iOS-runtimes worden opgegeven als de minimale versie die vereist is voor het aanschaffen van licenties en het afspelen van inhoud.
+Voorbeeld van gebruik: Net als bij de Primetime DRM Client lijst van gewezen personen kan de nieuwste versie van de Flash Player-, AIR- of iOS-runtimes worden opgegeven als de minimale versie die vereist is voor het aanschaffen van licenties en het afspelen van inhoud.
 
 Naast de volgende kenmerken kunt u de toepassingsruntime identificeren aan de hand van de kenmerken die worden ondersteund voor Primetime DRM-clientversies:
 
