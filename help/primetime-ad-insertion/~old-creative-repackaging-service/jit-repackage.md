@@ -1,13 +1,10 @@
 ---
 description: Of een cliëntvideospeler of de manifestserver kunnen met CRS in wisselwerking staan om JIT te bereiken herverpakken. Beide gebruiken dezelfde logica en selectielogica.
-seo-description: Of een cliëntvideospeler of de manifestserver kunnen met CRS in wisselwerking staan om JIT te bereiken herverpakken. Beide gebruiken dezelfde logica en selectielogica.
-seo-title: Gedetailleerde workflows voor JIT-herverpakken
 title: Gedetailleerde workflows voor JIT-herverpakken
-uuid: 11b6eb3c-f6aa-4018-9b20-ab6f5910508b
 translation-type: tm+mt
-source-git-commit: e437f4143fb939f46d106c64efc391137c33fe17
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '553'
+source-wordcount: '524'
 ht-degree: 0%
 
 ---
