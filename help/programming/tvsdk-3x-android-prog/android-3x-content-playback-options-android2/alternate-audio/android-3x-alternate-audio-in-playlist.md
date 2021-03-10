@@ -1,13 +1,10 @@
 ---
 description: De afspeellijst voor een video kan een onbeperkt aantal alternatieve audiotracks voor de hoofdvideo-inhoud opgeven. U kunt bijvoorbeeld verschillende talen toevoegen aan uw video-inhoud of de gebruiker toestaan te schakelen tussen verschillende tracks op het apparaat terwijl de inhoud wordt afgespeeld.
-seo-description: De afspeellijst voor een video kan een onbeperkt aantal alternatieve audiotracks voor de hoofdvideo-inhoud opgeven. U kunt bijvoorbeeld verschillende talen toevoegen aan uw video-inhoud of de gebruiker toestaan te schakelen tussen verschillende tracks op het apparaat terwijl de inhoud wordt afgespeeld.
-seo-title: Alternatieve audiotracks in de afspeellijst
 title: Alternatieve audiotracks in de afspeellijst
-uuid: e134cc46-5cd3-4c3c-a6ef-5ae54a2108ce
 translation-type: tm+mt
-source-git-commit: bc35da8b258056809ceaf18e33bed631047bc81b
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '294'
+source-wordcount: '239'
 ht-degree: 0%
 
 ---
