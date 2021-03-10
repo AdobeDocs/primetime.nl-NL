@@ -1,13 +1,10 @@
 ---
 description: TVSDK ondersteunt het programmatisch verwijderen en vervangen van inhoud van advertenties in VOD-streams.
-seo-description: TVSDK ondersteunt het programmatisch verwijderen en vervangen van inhoud van advertenties in VOD-streams.
-seo-title: Aangepaste tijdbereikbewerkingen
 title: Aangepaste tijdbereikbewerkingen
-uuid: fb27f343-718d-444e-8fc1-5ae0be02557b
 translation-type: tm+mt
-source-git-commit: adef0bbd52ba043f625f38db69366c6d873c586d
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '265'
+source-wordcount: '248'
 ht-degree: 0%
 
 ---
