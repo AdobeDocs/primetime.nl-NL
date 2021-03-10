@@ -1,13 +1,10 @@
 ---
 description: Met primetime DRM kunnen eigenaars en distributeurs van inhoud bepalen hoe en waar hun inhoud kan worden gedistribueerd en ervaren, zodat de inhoud van begin tot eind tijdens de levenscyclus van de inhoud wordt beschermd. Het codeert videobestanden, die vervolgens kunnen worden gestreamd of gedownload naar Microsoft® Windows®, Apple® Mac OS®, Linux® en Android®, en dwingt bedrijfsmodellen af, zoals het verhuren van online video. Consumenten kunnen genieten van inhoud van hoge kwaliteit, of ze nu online of offline zijn. Primetime DRM biedt zeer belangrijke voordelen die de inhoudseigenaars en de distributeurs kunnen gebruiken om de nieuwe diensten snel te leveren die hen van de concurrentie onderscheiden.
-seo-description: Met primetime DRM kunnen eigenaars en distributeurs van inhoud bepalen hoe en waar hun inhoud kan worden gedistribueerd en ervaren, zodat de inhoud van begin tot eind tijdens de levenscyclus van de inhoud wordt beschermd. Het codeert videobestanden, die vervolgens kunnen worden gestreamd of gedownload naar Microsoft® Windows®, Apple® Mac OS®, Linux® en Android®, en dwingt bedrijfsmodellen af, zoals het verhuren van online video. Consumenten kunnen genieten van inhoud van hoge kwaliteit, of ze nu online of offline zijn. Primetime DRM biedt zeer belangrijke voordelen die de inhoudseigenaars en de distributeurs kunnen gebruiken om de nieuwe diensten snel te leveren die hen van de concurrentie onderscheiden.
-seo-title: Informatie over Adobe Primetime DRM
 title: Informatie over Adobe Primetime DRM
-uuid: 4c445ccb-0a8e-490f-b840-8654fcaa106c
 translation-type: tm+mt
-source-git-commit: 7e8df034035fe465fbe403949ef828e7811ced2e
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '436'
+source-wordcount: '340'
 ht-degree: 0%
 
 ---
