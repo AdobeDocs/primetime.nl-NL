@@ -1,13 +1,10 @@
 ---
 description: De kwaliteit van de dienst (QoS) verstrekt een gedetailleerde mening in hoe de videomotor presteert. TVSDK biedt gedetailleerde statistieken over het afspelen, bufferen en apparaten.
-seo-description: De kwaliteit van de dienst (QoS) verstrekt een gedetailleerde mening in hoe de videomotor presteert. TVSDK biedt gedetailleerde statistieken over het afspelen, bufferen en apparaten.
-seo-title: Kwaliteit van de dienststatistieken
 title: Kwaliteit van de dienststatistieken
-uuid: 8e990461-065b-4efa-b77c-b2b832f86f7d
 translation-type: tm+mt
-source-git-commit: 0eaf0e7e7e61d596a51d1c9c837ad072d703c6a7
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '286'
+source-wordcount: '258'
 ht-degree: 0%
 
 ---
@@ -32,7 +29,7 @@ U kunt de kwaliteit van de dienst (QoS) informatie over gedownloade middelen, zo
 
    >[!NOTE]
    >
-   >Zie `LoadInformation`2.7 for Android (Java)[ API docs voor meer informatie.](https://help.adobe.com/en_US/primetime/api/psdk/javadoc_2.7/index.html)
+   >Zie [2.7 for Android (Java)](https://help.adobe.com/en_US/primetime/api/psdk/javadoc_2.7/index.html) API docs voor meer informatie.`LoadInformation`
 
 ## De playback van QOS, het bufferen, en apparatenstatistieken {#section_D21722600F324E67A9F06234D338B243} lezen
 
