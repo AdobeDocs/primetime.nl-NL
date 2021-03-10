@@ -1,14 +1,11 @@
 ---
 description: De regel normaliseren definieert een URL-transformatie die moet worden toegepast op een creatieve bronURL die is verkregen uit een VAST/VMAP-reactie.
-keywords: normalize rule;creative selection rules
-seo-description: De regel normaliseren definieert een URL-transformatie die moet worden toegepast op een creatieve bronURL die is verkregen uit een VAST/VMAP-reactie.
-seo-title: Regels normaliseren
+keywords: regel normaliseren;creatieve selectieregels
 title: Regels normaliseren
-uuid: 8511000e-3a8a-42f3-b4be-d069d09112b0
 translation-type: tm+mt
-source-git-commit: 3fdae2b6babb578d2cacff970fd9c7b53ad2c5dc
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '174'
+source-wordcount: '157'
 ht-degree: 1%
 
 ---
