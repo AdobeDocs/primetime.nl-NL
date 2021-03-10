@@ -1,13 +1,10 @@
 ---
 description: Streaming via internet vereist een constante en stabiele verbinding om een stream vanaf een externe server af te spelen. De variabiliteit van de internetverbinding of het afspelen van streaming van een viewer betekent echter dat extern afspelen mogelijk niet de kwaliteit heeft van media die lokaal worden afgespeeld.
-seo-description: Streaming via internet vereist een constante en stabiele verbinding om een stream vanaf een externe server af te spelen. De variabiliteit van de internetverbinding of het afspelen van streaming van een viewer betekent echter dat extern afspelen mogelijk niet de kwaliteit heeft van media die lokaal worden afgespeeld.
-seo-title: AC-3 5.1-indeling
 title: AC-3 5.1-indeling
-uuid: d5e77bb5-ed51-4f9f-b34f-e9082f5ee4de
 translation-type: tm+mt
-source-git-commit: 5908e5a3521966496aeec0ef730e4a704fddfb68
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '558'
+source-wordcount: '514'
 ht-degree: 0%
 
 ---
@@ -25,7 +22,7 @@ Zie [Dolby Digital 5.1](https://www.dolby.com/us/en/technologies/dolby-digital.h
 
 >[!IMPORTANT]
 >
->TVSDK versie 1.4 ondersteunt de indeling AC-3 5.1 alleen op Amazon FireTV.
+>TVSDK versie 1.4 biedt alleen ondersteuning voor de indeling AC-3 5.1 op Amazon FireTV.
 
 TVSDK ondersteunt de volgende AC-3 5.1-functies:
 
