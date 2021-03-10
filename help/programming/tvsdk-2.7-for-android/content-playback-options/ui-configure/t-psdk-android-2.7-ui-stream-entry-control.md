@@ -1,13 +1,10 @@
 ---
 description: Wanneer u het afspelen start, begint VOD-media standaard op 0 en wordt live media gestart op het live punt op de client (MediaPlayer.LIVE_POINT). U kunt het standaardgedrag overschrijven.
-seo-description: Wanneer u het afspelen start, begint VOD-media standaard op 0 en wordt live media gestart op het live punt op de client (MediaPlayer.LIVE_POINT). U kunt het standaardgedrag overschrijven.
-seo-title: Een stream invoeren op een bepaald tijdstip
 title: Een stream invoeren op een bepaald tijdstip
-uuid: 65a19192-b890-4d69-9cb1-582a22988d2b
 translation-type: tm+mt
-source-git-commit: fd686391df0fa711bba99bc1bc312c9ef619f184
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '150'
+source-wordcount: '117'
 ht-degree: 1%
 
 ---
