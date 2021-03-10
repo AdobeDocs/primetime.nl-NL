@@ -1,13 +1,10 @@
 ---
 description: Implementeer de juiste gebeurtenislistener(s) om meldingen over tags in het manifest te ontvangen.
-seo-description: Implementeer de juiste gebeurtenislistener(s) om meldingen over tags in het manifest te ontvangen.
-seo-title: Listeners toevoegen voor meldingen van getimede metagegevens
 title: Listeners toevoegen voor meldingen van getimede metagegevens
-uuid: cd7a5936-d63a-4711-ac16-2d79bac099a3
 translation-type: tm+mt
-source-git-commit: 5908e5a3521966496aeec0ef730e4a704fddfb68
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '173'
+source-wordcount: '153'
 ht-degree: 0%
 
 ---
