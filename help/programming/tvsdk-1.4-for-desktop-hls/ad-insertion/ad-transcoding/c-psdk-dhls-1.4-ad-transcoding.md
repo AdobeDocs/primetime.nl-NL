@@ -1,13 +1,10 @@
 ---
 description: Sommige advertenties van derden (of creatieve objecten) kunnen niet in de HLS-inhoudsstroom (HTTP Live Streaming) worden geplaatst omdat hun video-indeling niet compatibel is met HLS. Primetime en invoeging en TVSDK kunnen desgewenst proberen incompatibele advertenties om te zetten in compatibele M3U8-video's.
-seo-description: Sommige advertenties van derden (of creatieve objecten) kunnen niet in de HLS-inhoudsstroom (HTTP Live Streaming) worden geplaatst omdat hun video-indeling niet compatibel is met HLS. Primetime en invoeging en TVSDK kunnen desgewenst proberen incompatibele advertenties om te zetten in compatibele M3U8-video's.
-seo-title: Niet-compatibele advertenties opnieuw verpakken met de Adobe Creative Repackaging Service
 title: Niet-compatibele advertenties opnieuw verpakken met de Adobe Creative Repackaging Service
-uuid: 3bc24185-6b19-4660-bf78-5ccdaf14787a
 translation-type: tm+mt
-source-git-commit: adef0bbd52ba043f625f38db69366c6d873c586d
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '516'
+source-wordcount: '467'
 ht-degree: 0%
 
 ---
