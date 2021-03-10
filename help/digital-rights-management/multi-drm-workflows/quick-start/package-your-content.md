@@ -1,13 +1,10 @@
 ---
 description: Inhoud verpakken is het proces waarbij video-inhoud wordt voorbereid voor weergave op het web. Het verpakken omvat het omzetten van ruwe video in manifestdossiers, en naar keuze het coderen van de inhoud gebruikend verschillende oplossingen DRM voor verschillende apparaten en browsers.
-seo-description: Inhoud verpakken is het proces waarbij video-inhoud wordt voorbereid voor weergave op het web. Het verpakken omvat het omzetten van ruwe video in manifestdossiers, en naar keuze het coderen van de inhoud gebruikend verschillende oplossingen DRM voor verschillende apparaten en browsers.
-seo-title: Inhoud verpakken
 title: Inhoud verpakken
-uuid: b9bc6104-a1ea-4ea0-a0a4-af8a606e5d47
 translation-type: tm+mt
-source-git-commit: 91cea7acb8127e02b82e5242b9ad6ab0d12ce0eb
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '600'
+source-wordcount: '561'
 ht-degree: 0%
 
 ---
