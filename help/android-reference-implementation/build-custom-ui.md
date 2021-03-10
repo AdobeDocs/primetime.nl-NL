@@ -1,13 +1,10 @@
 ---
 description: U kunt eenvoudig een aangepaste gebruikersinterface maken op basis van het referentie-implementatieframework.
-seo-description: U kunt eenvoudig een aangepaste gebruikersinterface maken op basis van het referentie-implementatieframework.
-seo-title: Een aangepaste gebruikersinterface maken
 title: Een aangepaste gebruikersinterface maken
-uuid: b785f6a4-3ef8-4f7a-a087-0d6551da9750
 translation-type: tm+mt
-source-git-commit: 31b6cad26bcc393d731080a70eff1c59551f1c8e
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '160'
+source-wordcount: '141'
 ht-degree: 0%
 
 ---
