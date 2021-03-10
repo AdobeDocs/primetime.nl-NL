@@ -1,13 +1,10 @@
 ---
 description: U kunt meerdere inhoudsoplossers gebruiken om verschillende tijdlijnbewerkingen af te handelen.
-seo-description: U kunt meerdere inhoudsoplossers gebruiken om verschillende tijdlijnbewerkingen af te handelen.
-seo-title: Inhoud-oplossers voor verwijderen/vervangen
 title: Inhoud-oplossers voor verwijderen/vervangen
-uuid: 2954ce0f-aed2-4a85-8e53-d4e89d1497b6
 translation-type: tm+mt
-source-git-commit: 5908e5a3521966496aeec0ef730e4a704fddfb68
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '51'
+source-wordcount: '34'
 ht-degree: 0%
 
 ---
