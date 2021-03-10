@@ -1,14 +1,11 @@
 ---
 description: U kunt de functie Oplossen via Lazy en laden in- of uitschakelen via het bestaande mechanisme voor Lazy en oplossen (de functie Oplossen via Lazy en oplossen is standaard uitgeschakeld).
-keywords: Lazy;Ad resolving;Ad loading;delayLoading
-seo-description: U kunt de functie Oplossen via Lazy en laden in- of uitschakelen via het bestaande mechanisme voor Lazy en oplossen (de functie Oplossen via Lazy en oplossen is standaard uitgeschakeld).
-seo-title: Lozy en oplossen inschakelen
+keywords: Lazy;Adverteren;Advertentie laden;delayLoading
 title: Lozy en oplossen inschakelen
-uuid: 91884eea-a622-4f5d-b6a8-36bb0050ba1d
 translation-type: tm+mt
-source-git-commit: bc35da8b258056809ceaf18e33bed631047bc81b
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '320'
+source-wordcount: '298'
 ht-degree: 0%
 
 ---
