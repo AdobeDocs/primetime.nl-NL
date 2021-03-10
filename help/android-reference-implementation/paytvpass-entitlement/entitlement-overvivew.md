@@ -1,13 +1,10 @@
 ---
 description: De manager van de Entitlement is de eigenschapmanager die de implementatie van de authentificatie Primetime steunt.
-seo-description: De manager van de Entitlement is de eigenschapmanager die de implementatie van de authentificatie Primetime steunt.
-seo-title: Overzicht van Entitlement Manager
 title: Overzicht van Entitlement Manager
-uuid: b33dfae3-a132-4215-9992-80cbf4c87a61
 translation-type: tm+mt
-source-git-commit: 31b6cad26bcc393d731080a70eff1c59551f1c8e
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '534'
+source-wordcount: '518'
 ht-degree: 0%
 
 ---
