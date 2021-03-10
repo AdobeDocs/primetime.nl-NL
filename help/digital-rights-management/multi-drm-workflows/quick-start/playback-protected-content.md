@@ -1,13 +1,10 @@
 ---
 description: Als u de DRM-oplossing wilt testen, hebt u een videotoepassing nodig die de specifieke DRM-oplossing kan verwerken waarmee u werkt. Deze speler kan een voorbeeldspeler zijn die door Adobe of uw eigen op TVSDK gebaseerde videotoepassing beschikbaar wordt gesteld.
-seo-description: Als u de DRM-oplossing wilt testen, hebt u een videotoepassing nodig die de specifieke DRM-oplossing kan verwerken waarmee u werkt. Deze speler kan een voorbeeldspeler zijn die door Adobe of uw eigen op TVSDK gebaseerde videotoepassing beschikbaar wordt gesteld.
-seo-title: Beschermde inhoud afspelen
 title: Beschermde inhoud afspelen
-uuid: 84f73ee7-43d0-481c-a5e7-14f92169323c
 translation-type: tm+mt
-source-git-commit: 1b9792a10ad606b99b6639799ac2aacb707b2af5
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '592'
+source-wordcount: '550'
 ht-degree: 0%
 
 ---
