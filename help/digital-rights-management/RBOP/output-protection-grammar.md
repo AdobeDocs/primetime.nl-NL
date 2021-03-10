@@ -1,13 +1,10 @@
 ---
 description: Deze sectie behandelt de grammatica van de configuratieinput, benadrukkend geldige en ongeldige inputopties, en verklarend hoe weggelaten facultatieve gebieden worden geïnterpreteerd.
-seo-description: Deze sectie behandelt de grammatica van de configuratieinput, benadrukkend geldige en ongeldige inputopties, en verklarend hoe weggelaten facultatieve gebieden worden geïnterpreteerd.
-seo-title: RBOP Grammar
 title: RBOP Grammar
-uuid: d9064e39-593a-4767-b835-287640b4c94a
 translation-type: tm+mt
-source-git-commit: e60d285b9e30cdd19728e3029ecda995cd100ac9
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '486'
+source-wordcount: '461'
 ht-degree: 0%
 
 ---
