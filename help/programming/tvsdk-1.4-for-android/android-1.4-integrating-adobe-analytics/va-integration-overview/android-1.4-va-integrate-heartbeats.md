@@ -1,13 +1,10 @@
 ---
 description: U kunt de speler configureren om het videogebruik te volgen en te analyseren.
-seo-description: U kunt de speler configureren om het videogebruik te volgen en te analyseren.
-seo-title: Videoanalysemogelijkheden initialiseren en configureren
 title: Videoanalysemogelijkheden initialiseren en configureren
-uuid: 262b1a28-2986-4fbb-a465-4ce8cefe18fb
 translation-type: tm+mt
-source-git-commit: 5908e5a3521966496aeec0ef730e4a704fddfb68
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '631'
+source-wordcount: '615'
 ht-degree: 0%
 
 ---
