@@ -1,13 +1,10 @@
 ---
 description: Met Instant-on worden delen van het medium op een of meer kanalen vooraf geladen. Nadat een gebruiker kanalen selecteert of schakelt, begint de inhoud eerder omdat een deel van het bufferen reeds heeft voltooid.
-seo-description: Met Instant-on worden delen van het medium op een of meer kanalen vooraf geladen. Nadat een gebruiker kanalen selecteert of schakelt, begint de inhoud eerder omdat een deel van het bufferen reeds heeft voltooid.
-seo-title: Direct aan
 title: Direct aan
-uuid: 23864919-9045-4223-9e47-464e38ebe5ef
 translation-type: tm+mt
-source-git-commit: 5908e5a3521966496aeec0ef730e4a704fddfb68
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '241'
+source-wordcount: '210'
 ht-degree: 0%
 
 ---
