@@ -1,19 +1,16 @@
 ---
 description: U kunt opstelling uw speler om playback en apparatenstatistieken van QoSProvider zo vaak te lezen zoals nodig.
-seo-description: U kunt opstelling uw speler om playback en apparatenstatistieken van QoSProvider zo vaak te lezen zoals nodig.
-seo-title: QoS-afspeelgegevens en apparaatstatistieken weergeven
 title: QoS-afspeelgegevens en apparaatstatistieken weergeven
-uuid: 8fc45a2f-03d4-4fa0-979b-eb816419c4f7
 translation-type: tm+mt
-source-git-commit: e1c6ab1d50f9262aaf70aef34854cf293fb4f30d
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '365'
+source-wordcount: '340'
 ht-degree: 0%
 
 ---
 
 
-# QoS playback en apparatenstatistieken {#display-qos-playback-and-device-statistics} tonen
+# QoS-afspeel- en apparaatstatistieken {#display-qos-playback-and-device-statistics} weergeven
 
 U kunt opstelling uw speler om playback en apparatenstatistieken van QoSProvider zo vaak te lezen zoals nodig.
 
