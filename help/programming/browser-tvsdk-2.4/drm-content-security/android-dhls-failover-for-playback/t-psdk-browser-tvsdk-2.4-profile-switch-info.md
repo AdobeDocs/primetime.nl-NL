@@ -1,13 +1,10 @@
 ---
 description: Wanneer de media speler zijn huidige profiel aan een nieuw profiel overschakelt, kunt u informatie over de schakelaar terugwinnen, met inbegrip van wanneer het geschakeld, breedte en hoogteinformatie, of waarom een verschillende beetjetarief werd gebruikt.
-seo-description: Wanneer de media speler zijn huidige profiel aan een nieuw profiel overschakelt, kunt u informatie over de schakelaar terugwinnen, met inbegrip van wanneer het geschakeld, breedte en hoogteinformatie, of waarom een verschillende beetjetarief werd gebruikt.
-seo-title: Informatie ophalen over profielschakelaar
 title: Informatie ophalen over profielschakelaar
-uuid: 0ff1aeac-882a-4209-b19f-1aa3141404d9
 translation-type: tm+mt
-source-git-commit: 040655d8ba5f91c98ed0584c08db226ffe1e0f4e
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '313'
+source-wordcount: '273'
 ht-degree: 0%
 
 ---
