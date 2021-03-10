@@ -1,9 +1,9 @@
 ---
-seo-title: Beleid maken en inhoud verpakken
 title: Beleid maken en inhoud verpakken
-uuid: ecf9bdd8-0bd2-4616-a6e5-a46bb55d16ab
+description: Beleid maken en inhoud verpakken
+copied-description: true
 translation-type: tm+mt
-source-git-commit: 7e8df034035fe465fbe403949ef828e7811ced2e
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
 source-wordcount: '170'
 ht-degree: 0%
