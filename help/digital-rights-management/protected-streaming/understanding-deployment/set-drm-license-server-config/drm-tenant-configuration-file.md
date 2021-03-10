@@ -1,13 +1,10 @@
 ---
 description: Het flashaccess-huurder.xml- configuratiedossier omvat montages die op een specifieke huurder van de vergunningsserver van toepassing zijn.
-seo-description: Het flashaccess-huurder.xml- configuratiedossier omvat montages die op een specifieke huurder van de vergunningsserver van toepassing zijn.
-seo-title: Tenant-configuratiebestand
 title: Tenant-configuratiebestand
-uuid: bc9ee4a1-63b6-4362-9929-3e9fe8251075
 translation-type: tm+mt
-source-git-commit: d2b8cb67c54fadb8e0e7d2bdc15e393fdce8550e
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '792'
+source-wordcount: '773'
 ht-degree: 0%
 
 ---
@@ -54,7 +51,7 @@ Het configuratiebestand voor de huurder bevat:
 
          Een uitgevers-id en een optionele toepassings-id, een minimale versie en een maximale versie identificeren AIR- en iOS-toepassingen. Als u geen toepassingsbeperkingen opgeeft, kan elke SWF- of AIR-toepassing de inhoud afspelen.
 
-      * *Beperkingen*  voor DRM en Runtime Module - Geeft het minimale beveiligingsniveau op dat is vereist voor de DRM/Runtime-module. Bevat optioneel een lijst van afgewezen personen met versies die de inhoud niet mogen afspelen. Moduleversies worden aangeduid met kenmerken, zoals een besturingssysteem en/of een versienummer.
+      * *Beperkingen*  voor DRM en Runtime Module - Geeft het minimale beveiligingsniveau op dat is vereist voor de DRM/Runtime-module. Bevat optioneel een lijst van gewezen personen met versies die de inhoud niet mogen afspelen. Moduleversies worden aangeduid met kenmerken, zoals een besturingssysteem en/of een versienummer.
 
          De beperkingen van de Module DRM en de Beperkingen van de Runtime Module steunen nu de volgende extra attributen:
 
