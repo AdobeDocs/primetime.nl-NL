@@ -1,13 +1,10 @@
 ---
 description: U kunt een MediaPlayer-instantie die u niet meer nodig hebt opnieuw instellen, opnieuw gebruiken of vrijgeven.
-seo-description: U kunt een MediaPlayer-instantie die u niet meer nodig hebt opnieuw instellen, opnieuw gebruiken of vrijgeven.
-seo-title: Een MediaPlayer-instantie opnieuw gebruiken of verwijderen
 title: Een MediaPlayer-instantie opnieuw gebruiken of verwijderen
-uuid: 0b9a06b0-ece7-4e18-9221-a4528bcbc141
 translation-type: tm+mt
-source-git-commit: 040655d8ba5f91c98ed0584c08db226ffe1e0f4e
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '308'
+source-wordcount: '288'
 ht-degree: 0%
 
 ---
@@ -33,7 +30,7 @@ Deze bewerking is handig in de volgende gevallen:
    >
    >Dit is de enige manier om van de staat van de FOUT terug te krijgen.
 
-1. Roep `MediaPlayer.reset()` aan om de `MediaPlayer` instantie aan zijn uninitialized staat terug te keren:
+1. Roep `MediaPlayer.reset()` aan om de `MediaPlayer` instantie aan zijn niet-geïnitialiseerde staat terug te keren:
 
    ```js
    reset(); // returns AdobePSDK.PSDKErrorCode.SUCCESS 
