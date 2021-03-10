@@ -1,13 +1,10 @@
 ---
 description: U kunt de Reference Implementation instellen om Adobe Analytics-rapporten te gebruiken.
-seo-description: U kunt de Reference Implementation instellen om Adobe Analytics-rapporten te gebruiken.
-seo-title: Adobe Analytics-rapportage configureren
 title: Adobe Analytics-rapportage configureren
-uuid: bdf8bb7f-a0c8-48a2-a632-0b872687f3fe
 translation-type: tm+mt
-source-git-commit: 31b6cad26bcc393d731080a70eff1c59551f1c8e
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '395'
+source-wordcount: '379'
 ht-degree: 0%
 
 ---
