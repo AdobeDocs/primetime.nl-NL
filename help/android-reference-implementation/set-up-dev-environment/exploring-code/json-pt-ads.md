@@ -1,13 +1,10 @@
 ---
-seo-title: JSON-object voor primetime-advertenties
 title: JSON-object voor primetime-advertenties
-uuid: acf968d2-9856-4ed6-a046-1ac17d176571
 description: In het codeblok hieronder worden de details van het JSON-object gedefinieerd als de typewaarde bestaat uit primetime-advertenties.
-seo-description: In het codeblok hieronder worden de details van het JSON-object gedefinieerd als de typewaarde bestaat uit primetime-advertenties.
 translation-type: tm+mt
-source-git-commit: 31b6cad26bcc393d731080a70eff1c59551f1c8e
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '141'
+source-wordcount: '120'
 ht-degree: 0%
 
 ---
