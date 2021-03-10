@@ -1,13 +1,10 @@
 ---
 description: U kunt de huidige en resterende tijd weergeven van de inhoud die wordt afgespeeld.
-seo-description: U kunt de huidige en resterende tijd weergeven van de inhoud die wordt afgespeeld.
-seo-title: Een zoekbalk weergeven met de huidige positie van de afspeeltijd
 title: Een zoekbalk weergeven met de huidige positie van de afspeeltijd
-uuid: db57eb6f-3c67-4a64-a0f4-7e39027eb3e0
 translation-type: tm+mt
-source-git-commit: 5908e5a3521966496aeec0ef730e4a704fddfb68
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '88'
+source-wordcount: '62'
 ht-degree: 0%
 
 ---
