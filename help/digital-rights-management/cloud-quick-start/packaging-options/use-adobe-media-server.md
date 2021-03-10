@@ -1,9 +1,9 @@
 ---
-seo-title: Adobe Media Server gebruiken
-title: Adobe Media Server gebruiken
-uuid: 272b9919-6ae4-4adb-aab5-28b1f92aa9fe
+title: Adobe Media-server gebruiken
+description: Adobe Media-server gebruiken
+copied-description: true
 translation-type: tm+mt
-source-git-commit: 635e2893439c5459907c54d2c3bd86f58da0eec5
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
 source-wordcount: '66'
 ht-degree: 3%
@@ -11,9 +11,9 @@ ht-degree: 3%
 ---
 
 
-# Adobe Media Server {#use-adobe-media-server} gebruiken
+# Adobe Media-server {#use-adobe-media-server} gebruiken
 
-Sommige klanten kunnen reeds de Server van de Media van Adobe gebruiken en willen dat model van de inhoudslevering handhaven. Als dit het geval is, kunnen de vereiste DRM-specifieke gegevens worden verzameld van één van beide configuratiedossiers inbegrepen in deze uitrusting om de configuratie van XML van JIT (enkel in Tijd) voor AMS te bevolken.
+Sommige klanten kunnen reeds de Server van Adobe Media gebruiken en willen dat model van de inhoudslevering handhaven. Als dit het geval is, kunnen de vereiste DRM-specifieke gegevens worden verzameld van één van beide configuratiedossiers inbegrepen in deze uitrusting om de configuratie van XML van JIT (enkel in Tijd) voor AMS te bevolken.
 
 Bijvoorbeeld:
 
