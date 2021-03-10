@@ -1,13 +1,10 @@
 ---
 description: Er zijn twee soorten verzoeken met betrekking tot de verenigbaarheid van de Server 1.x van het Rights Management van de Media van Flash. Eén type aanvraag wordt gebruikt om 1.x-clients te vragen een upgrade uit te voeren naar een runtime die Adobe Primetime DRM 2.0 of hoger ondersteunt. Een andere methode wordt gebruikt om 1.x-metagegevens bij te werken naar de Primetime DRM-indeling voordat een licentie kan worden aangevraagd. Ondersteuning voor deze aanvragen is alleen nodig als u eerder inhoud hebt geïmplementeerd waarvoor FMRMS 1.0 of 1.5 wordt gebruikt.
-seo-description: Er zijn twee soorten verzoeken met betrekking tot de verenigbaarheid van de Server 1.x van het Rights Management van de Media van Flash. Eén type aanvraag wordt gebruikt om 1.x-clients te vragen een upgrade uit te voeren naar een runtime die Adobe Primetime DRM 2.0 of hoger ondersteunt. Een andere methode wordt gebruikt om 1.x-metagegevens bij te werken naar de Primetime DRM-indeling voordat een licentie kan worden aangevraagd. Ondersteuning voor deze aanvragen is alleen nodig als u eerder inhoud hebt geïmplementeerd waarvoor FMRMS 1.0 of 1.5 wordt gebruikt.
-seo-title: FMRMS-compatibiliteit afhandelen
 title: FMRMS-compatibiliteit afhandelen
-uuid: c32ee087-2edf-4d11-be36-e2b31f3769de
 translation-type: tm+mt
-source-git-commit: c78d3c87848943a0be3433b2b6a543822a7e1c15
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '571'
+source-wordcount: '496'
 ht-degree: 0%
 
 ---
