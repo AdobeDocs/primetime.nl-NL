@@ -1,13 +1,10 @@
 ---
-seo-title: Aangepaste extensies voor machtigingen
 title: Aangepaste extensies voor machtigingen
 description: Aangepaste machtigingslogica kan tijdens licentieverwerving worden aangeroepen om te beslissen of een licentie aan de verzoekende cliënt moet worden verleend.
-seo-description: Aangepaste machtigingslogica kan tijdens licentieverwerving worden aangeroepen om te beslissen of een licentie aan de verzoekende cliënt moet worden verleend.
-uuid: fb40db6f-30aa-46e3-9eeb-faff3cfedab1
 translation-type: tm+mt
-source-git-commit: fe9493d610bc6fb97d30351c707b73cda92c67a0
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '176'
+source-wordcount: '152'
 ht-degree: 0%
 
 ---
