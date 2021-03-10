@@ -1,13 +1,10 @@
 ---
 description: U kunt een gebruikersinterfacecontrole voor geluidsvolume instellen.
-seo-description: U kunt een gebruikersinterfacecontrole voor geluidsvolume instellen.
-seo-title: Volumeregeling opgeven
 title: Volumeregeling opgeven
-uuid: 63e96424-54d0-4c16-bd94-2366722f752a
 translation-type: tm+mt
-source-git-commit: 5908e5a3521966496aeec0ef730e4a704fddfb68
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '97'
+source-wordcount: '83'
 ht-degree: 0%
 
 ---
