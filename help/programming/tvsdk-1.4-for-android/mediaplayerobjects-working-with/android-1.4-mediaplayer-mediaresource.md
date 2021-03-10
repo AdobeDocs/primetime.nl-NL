@@ -1,13 +1,10 @@
 ---
 description: Met de methoden in de MediaPlayerItem-klasse kunt u informatie ophalen over de inhoudsstroom die wordt vertegenwoordigd door een geladen MediaResource.
-seo-description: Met de methoden in de MediaPlayerItem-klasse kunt u informatie ophalen over de inhoudsstroom die wordt vertegenwoordigd door een geladen MediaResource.
-seo-title: Methoden van MediaPlayer voor toegang tot MediaResource-informatie
 title: Methoden van MediaPlayer voor toegang tot MediaResource-informatie
-uuid: 5d83491c-6577-46fe-98af-83f0fde7a7d0
 translation-type: tm+mt
-source-git-commit: 5908e5a3521966496aeec0ef730e4a704fddfb68
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '431'
+source-wordcount: '405'
 ht-degree: 0%
 
 ---
