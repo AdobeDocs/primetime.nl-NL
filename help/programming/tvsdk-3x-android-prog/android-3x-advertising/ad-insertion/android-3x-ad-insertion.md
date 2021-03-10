@@ -1,13 +1,10 @@
 ---
 description: U kunt advertenties in uw VOD en levende/lineaire inhoud opnemen door Adobe Primetime en besluitvormingsinterface te gebruiken. Primetime en besluitvorming werken samen met TVSDK om advertenties te identificeren en op te lossen en opgeloste advertenties in uw videostreams in te voegen.
-seo-description: U kunt advertenties in uw VOD en levende/lineaire inhoud opnemen door Adobe Primetime en besluitvormingsinterface te gebruiken. Primetime en besluitvorming werken samen met TVSDK om advertenties te identificeren en op te lossen en opgeloste advertenties in uw videostreams in te voegen.
-seo-title: Reclamevereisten
 title: Reclamevereisten
-uuid: b68c8b1b-5fc1-4e6f-b640-9e9ad1ac61da
 translation-type: tm+mt
-source-git-commit: bc35da8b258056809ceaf18e33bed631047bc81b
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '173'
+source-wordcount: '133'
 ht-degree: 0%
 
 ---
