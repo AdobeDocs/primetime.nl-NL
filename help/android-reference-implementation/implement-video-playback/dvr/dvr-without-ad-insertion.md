@@ -1,13 +1,10 @@
 ---
 description: Een live stream met ondersteuning voor DVR stelt standaard een doorzoekbaar bereik beschikbaar waarin de viewer kan pauzeren en zoeken.
-seo-description: Een live stream met ondersteuning voor DVR stelt standaard een doorzoekbaar bereik beschikbaar waarin de viewer kan pauzeren en zoeken.
-seo-title: DVR zonder invoeging
 title: DVR zonder invoeging
-uuid: e516be00-bb18-4119-ae0d-a79a35f4bd20
 translation-type: tm+mt
-source-git-commit: 31b6cad26bcc393d731080a70eff1c59551f1c8e
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '160'
+source-wordcount: '136'
 ht-degree: 0%
 
 ---
