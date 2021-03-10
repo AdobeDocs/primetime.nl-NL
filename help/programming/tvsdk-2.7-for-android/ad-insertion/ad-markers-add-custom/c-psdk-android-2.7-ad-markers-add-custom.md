@@ -1,13 +1,10 @@
 ---
 description: Door aangepaste advertentiemarkeringen te gebruiken, kunt u specifieke gedeelten van de hoofdinhoud markeren als aan een advertentie gerelateerde inhoudsperioden.
-seo-description: Door aangepaste advertentiemarkeringen te gebruiken, kunt u specifieke gedeelten van de hoofdinhoud markeren als aan een advertentie gerelateerde inhoudsperioden.
-seo-title: Aangepaste advertentiemarkeringen toevoegen
 title: Aangepaste advertentiemarkeringen toevoegen
-uuid: 712da406-094a-49b2-b21d-4d5d73fff8cf
 translation-type: tm+mt
-source-git-commit: 0eaf0e7e7e61d596a51d1c9c837ad072d703c6a7
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '318'
+source-wordcount: '296'
 ht-degree: 0%
 
 ---
