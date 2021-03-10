@@ -1,13 +1,10 @@
 ---
 description: Wanneer een segment mist, bijvoorbeeld wanneer een bepaald segment er niet in slaagt te downloaden, probeert om door een verscheidenheid van failoverpogingen terug te krijgen. Als het niet kan herstellen, geeft het een fout uit.
-seo-description: Wanneer een segment mist, bijvoorbeeld wanneer een bepaald segment er niet in slaagt te downloaden, probeert om door een verscheidenheid van failoverpogingen terug te krijgen. Als het niet kan herstellen, geeft het een fout uit.
-seo-title: Ontbrekende segment-failover
 title: Ontbrekende segment-failover
-uuid: 17ee1221-e1eb-4f64-a406-4d7eff1d7555
 translation-type: tm+mt
-source-git-commit: 5908e5a3521966496aeec0ef730e4a704fddfb68
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '321'
+source-wordcount: '287'
 ht-degree: 0%
 
 ---
