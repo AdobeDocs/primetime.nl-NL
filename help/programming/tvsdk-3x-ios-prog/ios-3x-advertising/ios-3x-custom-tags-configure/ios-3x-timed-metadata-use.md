@@ -1,14 +1,11 @@
 ---
 description: U kunt TimedMetadata gebruiken wanneer de huidige playbacktijd de begintijd aanpast.
-seo-description: U kunt TimedMetadata gebruiken wanneer de huidige playbacktijd de begintijd aanpast.
-seo-title: Metagegevens met tijdslimiet gebruiken
 title: Metagegevens met tijdslimiet gebruiken
-uuid: 1531780f-2502-4235-818c-6c0a6bf3d348
 translation-type: tm+mt
-source-git-commit: 557f42cd9a6f356aa99e13386d9e8d65e043a6af
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '116'
-ht-degree: 1%
+source-wordcount: '100'
+ht-degree: 2%
 
 ---
 
