@@ -1,13 +1,10 @@
 ---
 description: U kunt de positie en grootte van de videoweergave bepalen met het MediaPlayerView-object.
-seo-description: U kunt de positie en grootte van de videoweergave bepalen met het MediaPlayerView-object.
-seo-title: De positie en grootte van de videoweergave bepalen
 title: De positie en grootte van de videoweergave bepalen
-uuid: 2231c574-03cd-45a8-ab00-4a42f8e044f0
 translation-type: tm+mt
-source-git-commit: 5df9a8b98baaf1cd1803581d2b60c7ed4261a0e8
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '242'
+source-wordcount: '218'
 ht-degree: 0%
 
 ---
@@ -19,7 +16,7 @@ U kunt de positie en grootte van de videoweergave bepalen met het MediaPlayerVie
 
 TVSDK probeert standaard de hoogte-breedteverhouding van de videoweergave te behouden wanneer de grootte of de positie van de video verandert (als gevolg van een wijziging die door de toepassing, een profielschakelaar of een inhoudsschakelaar is aangebracht, enz.).
 
-U kunt het standaardgedrag van de aspectverhouding met voeten treden door een verschillend *schaalbeleid* te specificeren. Geef het schaalbeleid op met de eigenschap `MediaPlayerView` van het object. `scalePolicy` Het standaardschaalbeleid van `MediaPlayerView` wordt geplaatst met een geval van de `MaintainAspectRatioScalePolicy` klasse. Om het schaalbeleid terug te stellen, vervang de standaardinstantie van `MaintainAspectRatioScalePolicy` op `MediaPlayerView.scalePolicy` met uw eigen beleid. (U kunt de eigenschap `scalePolicy` niet instellen op een null-waarde.)
+U kunt het standaardgedrag van de aspectverhouding met voeten treden door een verschillend *schaalbeleid* te specificeren. Geef het schaalbeleid op met de eigenschap `scalePolicy` van het object. `MediaPlayerView` Het standaardschaalbeleid van `MediaPlayerView` wordt geplaatst met een geval van de `MaintainAspectRatioScalePolicy` klasse. Om het schaalbeleid terug te stellen, vervang de standaardinstantie van `MaintainAspectRatioScalePolicy` op `MediaPlayerView.scalePolicy` met uw eigen beleid. (U kunt de eigenschap `scalePolicy` niet instellen op een null-waarde.)
 
 1. Implementeer de interface `MediaPlayerViewScalePolicy` om uw eigen schaalbeleid te maken.
 
