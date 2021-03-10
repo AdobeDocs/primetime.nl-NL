@@ -1,13 +1,10 @@
 ---
 description: Als u Browser-TVSDK wilt gebruiken, moet u een basisspeler maken en configureren. Voor het afspelen van video-inhoud kunt u op twee manieren een basisspeler maken met de Browser-TVSDK of het UI-framework.
-seo-description: Als u Browser-TVSDK wilt gebruiken, moet u een basisspeler maken en configureren. Voor het afspelen van video-inhoud kunt u op twee manieren een basisspeler maken met de Browser-TVSDK of het UI-framework.
-seo-title: Basisspeler
 title: Basisspeler
-uuid: 44a27458-be12-452f-92b9-3cef79439257
 translation-type: tm+mt
-source-git-commit: 592245f5a7186d18dabbb5a98a468cbed7354aed
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '440'
+source-wordcount: '402'
 ht-degree: 0%
 
 ---
@@ -19,7 +16,7 @@ Als u Browser-TVSDK wilt gebruiken, moet u een basisspeler maken en configureren
 
 ## De TVSDK van de browser {#section_4D1C6D4B3A3447DFA2AA0229E140E2D9} gebruiken
 
-Gebruik de API&#39;s van de TVSDK van de browser rechtstreeks om de videospeler te coderen. De SDK biedt u raamwerken en hulpprogramma&#39;s en een referentiespeler waarmee u kunt werken.
+Gebruik de API&#39;s van de TVSDK van de browser rechtstreeks om uw videospeler te coderen. De SDK biedt u raamwerken en hulpprogramma&#39;s en een referentiespeler waarmee u kunt werken.
 
 >[!TIP]
 >
