@@ -1,13 +1,10 @@
 ---
 description: Gebruik de hulpklasse AuditudeSettings om Adobe Primetime- en beslissingsmetagegevens in te stellen.
-seo-description: Gebruik de hulpklasse AuditudeSettings om Adobe Primetime- en beslissingsmetagegevens in te stellen.
-seo-title: Metagegevens instellen en invoegen
 title: Metagegevens instellen en invoegen
-uuid: fc37e0ae-6acf-4a78-a468-f7b5b123b45e
 translation-type: tm+mt
-source-git-commit: 592245f5a7186d18dabbb5a98a468cbed7354aed
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '219'
+source-wordcount: '201'
 ht-degree: 0%
 
 ---
