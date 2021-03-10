@@ -1,13 +1,10 @@
 ---
 description: Als de client om traceerinformatie vraagt, stuurt de manifestserver een opgemaakt bestand terug. Zijn formaat en inhoud hangen van de waarde van het trekkende versie van de vraagparameter af
-seo-description: Als de client om traceerinformatie vraagt, stuurt de manifestserver een opgemaakt bestand terug. Zijn formaat en inhoud hangen van de waarde van het trekkende versie van de vraagparameter af
-seo-title: VMAP-indeling voor het bijhouden van URL's
 title: VMAP-indeling voor het bijhouden van URL's
-uuid: e3173fad-caa2-49cb-9a65-631573812e52
 translation-type: tm+mt
-source-git-commit: e437f4143fb939f46d106c64efc391137c33fe17
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '170'
+source-wordcount: '138'
 ht-degree: 0%
 
 ---
