@@ -1,13 +1,10 @@
 ---
 description: De DRM-workflows omvatten het verpakken van uw inhoud, het verstrekken van licenties voor de inhoud en het afspelen van de beveiligde inhoud vanuit uw eigen videotoepassing. De workflow is over het algemeen vergelijkbaar voor elke DRM-oplossing, maar met enkele verschillen zijn de details.
-seo-description: De DRM-workflows omvatten het verpakken van uw inhoud, het verstrekken van licenties voor de inhoud en het afspelen van de beveiligde inhoud vanuit uw eigen videotoepassing. De workflow is over het algemeen vergelijkbaar voor elke DRM-oplossing, maar met enkele verschillen zijn de details.
-seo-title: Multi-DRM-workflow voor FairPlay
 title: Multi-DRM-workflow voor FairPlay
-uuid: cd940a70-400c-435e-8322-55bd624164e1
 translation-type: tm+mt
-source-git-commit: 1b9792a10ad606b99b6639799ac2aacb707b2af5
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '1514'
+source-wordcount: '1470'
 ht-degree: 0%
 
 ---
