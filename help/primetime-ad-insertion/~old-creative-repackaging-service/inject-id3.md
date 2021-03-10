@@ -1,13 +1,10 @@
 ---
 description: CRS kan metagegevens met ID3-timing in HLS-indeling en creatieve documenten injecteren om het bijhouden van advertenties op de client te vergemakkelijken.
-seo-description: CRS kan metagegevens met ID3-timing in HLS-indeling en creatieve documenten injecteren om het bijhouden van advertenties op de client te vergemakkelijken.
-seo-title: CRS gebruiken om ID3-tags met getimede metagegevens te injecteren
 title: CRS gebruiken om ID3-tags met getimede metagegevens te injecteren
-uuid: 491bbb9e-15de-4871-baa1-f7bb0ea0dde2
 translation-type: tm+mt
-source-git-commit: e1e33d3ac0aad44859cd49566331524da72ac7e4
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '165'
+source-wordcount: '141'
 ht-degree: 0%
 
 ---
