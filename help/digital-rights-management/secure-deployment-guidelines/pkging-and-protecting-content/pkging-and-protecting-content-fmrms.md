@@ -1,13 +1,10 @@
 ---
 description: Flash Media Rights Management Server 1.x en Adobe Primetime DRM gebruiken verschillende metagegevens voor het verpakken van inhoud en het aanvragen van licenties. Voor Primetime DRM om FMRMS versie 1.x-inhoud te gebruiken, moeten de metagegevens worden omgezet.
-seo-description: Flash Media Rights Management Server 1.x en Adobe Primetime DRM gebruiken verschillende metagegevens voor het verpakken van inhoud en het aanvragen van licenties. Voor Primetime DRM om FMRMS versie 1.x-inhoud te gebruiken, moeten de metagegevens worden omgezet.
-seo-title: Compatibiliteit met Flash Media Rights Management Server 1.x waarborgen
 title: Compatibiliteit met Flash Media Rights Management Server 1.x waarborgen
-uuid: dd70941e-9015-4fb0-b265-557b6252e051
 translation-type: tm+mt
-source-git-commit: 29bc8323460d9be0fce66cbea7c6fce46df20d61
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '405'
+source-wordcount: '363'
 ht-degree: 0%
 
 ---
