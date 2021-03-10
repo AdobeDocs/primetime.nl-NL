@@ -1,13 +1,10 @@
 ---
 description: Deze workflow voor multi-DRM begeleidt u door het instellen, verpakken, licentiëren en afspelen van DASH-inhoud die met Windows en PlayReady is gecodeerd.
-seo-description: Deze workflow voor multi-DRM begeleidt u door het instellen, verpakken, licentiëren en afspelen van DASH-inhoud die met Windows en PlayReady is gecodeerd.
-seo-title: MultiDRM-workflow voor Windows en PlayReady
 title: MultiDRM-workflow voor Windows en PlayReady
-uuid: 295a7024-353c-4ff5-a46a-927020834322
 translation-type: tm+mt
-source-git-commit: ffb993889a78ee068b9028cb2bd896003c5d4d4c
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '379'
+source-wordcount: '354'
 ht-degree: 0%
 
 ---
