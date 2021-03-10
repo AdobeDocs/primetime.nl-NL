@@ -1,13 +1,11 @@
 ---
-description: 'null'
-seo-description: 'null'
-seo-title: Bepalen of de Vergunning Server van de Vergunning van de Implementatie van de Verwijzing behoorlijk loopt
 title: Bepalen of de Vergunning Server van de Vergunning van de Implementatie van de Verwijzing behoorlijk loopt
-uuid: 84d32c94-7594-464e-a883-5338b52de2bf
+description: Bepalen of de Vergunning Server van de Vergunning van de Implementatie van de Verwijzing behoorlijk loopt
+copied-description: true
 translation-type: tm+mt
-source-git-commit: e60d285b9e30cdd19728e3029ecda995cd100ac9
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '351'
+source-wordcount: '349'
 ht-degree: 0%
 
 ---
@@ -17,7 +15,7 @@ ht-degree: 0%
 
 Er zijn verschillende manieren om te bepalen of uw server correct is gestart. Het weergeven van de [!DNL catalina.log]-logbestanden is mogelijk niet voldoende, aangezien de licentieserver zich aanmeldt bij zijn eigen logbestanden. Voer de onderstaande stappen uit om ervoor te zorgen dat de implementatie van de referentie correct is gestart.
 
-* Controleer het [!DNL AdobeFlashAccess.log]-bestand. Dit is waar de Implementatie van de Verwijzing logboekinformatie schrijft. De locatie van dit logbestand wordt aangegeven door het [!DNL log4j.xml]-bestand en kan worden gewijzigd om naar elke gewenste locatie te wijzen. Standaard wordt het logbestand uitgevoerd naar de werkmap waar u Catalina hebt uitgevoerd.
+* Controleer het [!DNL AdobeFlashAccess.log]-bestand. Dit is waar de Implementatie van de Verwijzing logboekinformatie schrijft. De locatie van dit logbestand wordt aangegeven door het [!DNL log4j.xml]-bestand en kan worden gewijzigd om naar elke gewenste locatie te wijzen. Standaard wordt het logbestand uitgevoerd naar de werkmap waar u catalina hebt uitgevoerd.
 
 * Navigeer naar de volgende URL: `https:///flashaccess/license/v4<your server:server port>`. U moet de tekst &quot;Licentieserver is correct ingesteld&quot; zien.
 
