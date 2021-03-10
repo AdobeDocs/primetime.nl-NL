@@ -1,13 +1,10 @@
 ---
 description: Gebruik het bibliotheekbestand Browser van TVSDK van Browser in uw app om een speler te maken die compatibel is met Browser.
-seo-description: Gebruik het bibliotheekbestand Browser van TVSDK van Browser in uw app om een speler te maken die compatibel is met Browser.
-seo-title: Creeer een Browser-Compatibele speler zonder UI-Kader
 title: Creeer een Browser-Compatibele speler zonder UI-Kader
-uuid: c4315bc8-c75d-4dd9-8680-946c1197be1e
 translation-type: tm+mt
-source-git-commit: 592245f5a7186d18dabbb5a98a468cbed7354aed
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '253'
+source-wordcount: '229'
 ht-degree: 0%
 
 ---
