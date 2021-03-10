@@ -1,9 +1,9 @@
 ---
-seo-title: Details van beleidswerkstroom
 title: Details van beleidswerkstroom
-uuid: b355fcf6-3416-440f-9b30-a155e20f9f74
+description: Details van beleidswerkstroom
+copied-description: true
 translation-type: tm+mt
-source-git-commit: 635e2893439c5459907c54d2c3bd86f58da0eec5
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
 source-wordcount: '593'
 ht-degree: 0%
@@ -23,7 +23,7 @@ ht-degree: 0%
 
 ## Details van beleidswerkstroom {#policy-workflow-details}
 
-Wanneer Primetime Cloud DRM een vergunningsverzoek verwerkt, ontleedt het het beleid DRM in het verzoek om te bepalen als een vraag aan de backend-machtigingsdienst wordt vereist alvorens de inhoud kan worden getoond. Als een vraag van BES *is* vereist, zal de Ouderwetse DRM tot het verzoek van BES leiden, dan ontleedt het DRM beleid om een gespecificeerd eindpunt van BES URL voor het verzoek van BES te verkrijgen.
+Wanneer Primetime Cloud DRM een vergunningsverzoek verwerkt, ontleedt het het beleid DRM in het verzoek om te bepalen als een vraag aan de backend-machtigingsdienst wordt vereist alvorens de inhoud kan worden getoond. Als een vraag van BES *is* vereist, zal de Cloud DRM van Primetime het verzoek van BES tot stand brengen, dan zal het DRM beleid ontleden om een gespecificeerd eindpunt van BES URL voor het verzoek van BES te verkrijgen.
 
 Pas uw beleid DRM toe dat op het vereiste BES wijst, die de volgende twee douaneeigenschappen in het beleid specificeren:
 
