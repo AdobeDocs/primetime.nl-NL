@@ -1,13 +1,10 @@
 ---
 description: U kunt waarden voor ABR-besturingselementen alleen instellen met ABRControlParameters, maar u kunt op elk gewenst moment een nieuwe waarde maken.
-seo-description: U kunt waarden voor ABR-besturingselementen alleen instellen met ABRControlParameters, maar u kunt op elk gewenst moment een nieuwe waarde maken.
-seo-title: Aangepaste bitsnelheden configureren met ABRControlParameters
 title: Aangepaste bitsnelheden configureren met ABRControlParameters
-uuid: 99b7a463-327b-48bf-8244-e41467072b44
 translation-type: tm+mt
-source-git-commit: 040655d8ba5f91c98ed0584c08db226ffe1e0f4e
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '132'
+source-wordcount: '107'
 ht-degree: 0%
 
 ---
