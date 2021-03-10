@@ -1,13 +1,10 @@
 ---
 description: Als de bedrijfsregels vereisen dat het aantal machines voor een gebruiker wordt gevolgd, moet de Server van de Vergunning of de Server van het Domein machine IDs opslaan die met de gebruiker worden geassocieerd.
-seo-description: Als de bedrijfsregels vereisen dat het aantal machines voor een gebruiker wordt gevolgd, moet de Server van de Vergunning of de Server van het Domein machine IDs opslaan die met de gebruiker worden geassocieerd.
-seo-title: Aantal machines bij afgifte van vergunningen
 title: Aantal machines bij afgifte van vergunningen
-uuid: 7ba8a8d4-a31f-4f37-82a7-755cfa443544
 translation-type: tm+mt
-source-git-commit: 91cea7acb8127e02b82e5242b9ad6ab0d12ce0eb
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '334'
+source-wordcount: '297'
 ht-degree: 0%
 
 ---
