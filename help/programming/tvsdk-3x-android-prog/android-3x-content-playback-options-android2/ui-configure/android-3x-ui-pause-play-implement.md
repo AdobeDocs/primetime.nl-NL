@@ -1,13 +1,10 @@
 ---
 description: U kunt pauze- en afspeelknoppen toevoegen om de video te pauzeren of af te spelen.
-seo-description: U kunt pauze- en afspeelknoppen toevoegen om de video te pauzeren of af te spelen.
-seo-title: Een video afspelen en pauzeren
 title: Een video afspelen en pauzeren
-uuid: 3778a1fb-929c-4579-a14c-561179473dea
 translation-type: tm+mt
-source-git-commit: bc35da8b258056809ceaf18e33bed631047bc81b
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '123'
+source-wordcount: '105'
 ht-degree: 0%
 
 ---
