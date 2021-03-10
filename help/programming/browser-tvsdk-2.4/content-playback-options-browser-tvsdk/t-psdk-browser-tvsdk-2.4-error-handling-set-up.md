@@ -1,14 +1,11 @@
 ---
 description: U kunt één plaats in uw toepassing instellen om fout behandeling in antwoord op de FOUTstatus uit te voeren.
-seo-description: U kunt één plaats in uw toepassing instellen om fout behandeling in antwoord op de FOUTstatus uit te voeren.
-seo-title: Foutafhandeling instellen
 title: Foutafhandeling instellen
-uuid: 9e650ea7-86cb-4489-a3fd-80cd2ccef41f
 translation-type: tm+mt
-source-git-commit: 040655d8ba5f91c98ed0584c08db226ffe1e0f4e
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '145'
-ht-degree: 2%
+source-wordcount: '122'
+ht-degree: 3%
 
 ---
 
