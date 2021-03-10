@@ -1,13 +1,10 @@
 ---
 description: In bepaalde analytische implementaties wil de clienttoepassing mogelijk een andere afspeelkoppositie opgeven dan de locatie die door de lokaleTime-waarde voor TVSDK wordt gerapporteerd. Bijvoorbeeld, tijdens een LINEAR stroomplayback, kan playhead van elk programma met betrekking tot het zijn begintijd worden verstrekt.
-seo-description: In bepaalde analytische implementaties wil de clienttoepassing mogelijk een andere afspeelkoppositie opgeven dan de locatie die door de lokaleTime-waarde voor TVSDK wordt gerapporteerd. Bijvoorbeeld, tijdens een LINEAR stroomplayback, kan playhead van elk programma met betrekking tot het zijn begintijd worden verstrekt.
-seo-title: Aangepaste tijdupdates implementeren
 title: Aangepaste tijdupdates implementeren
-uuid: 2b46eca9-3815-4c44-ab5e-21678c35f410
 translation-type: tm+mt
-source-git-commit: 7e8df034035fe465fbe403949ef828e7811ced2e
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '181'
+source-wordcount: '135'
 ht-degree: 0%
 
 ---
