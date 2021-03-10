@@ -1,13 +1,10 @@
 ---
 description: TVSDK verzendt de gebeurtenissen met betrekking tot media Player-items als reactie op het laden van een media-item.
-seo-description: TVSDK verzendt de gebeurtenissen met betrekking tot media Player-items als reactie op het laden van een media-item.
-seo-title: Gebeurtenissen van Loader
 title: Gebeurtenissen van Loader
-uuid: 1b401ff5-4313-4c64-8be9-99bdeb58ba2a
 translation-type: tm+mt
-source-git-commit: 5908e5a3521966496aeec0ef730e4a704fddfb68
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '155'
+source-wordcount: '140'
 ht-degree: 0%
 
 ---
