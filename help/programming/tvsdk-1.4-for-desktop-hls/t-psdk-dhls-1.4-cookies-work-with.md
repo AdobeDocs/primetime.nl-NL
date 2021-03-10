@@ -1,13 +1,10 @@
 ---
 description: U kunt TVSDK gebruiken om willekeurige gegevens in koekjeskopballen voor zittingsbeheer, poorttoegang, etc. te verzenden.
-seo-description: U kunt TVSDK gebruiken om willekeurige gegevens in koekjeskopballen voor zittingsbeheer, poorttoegang, etc. te verzenden.
-seo-title: Werken met cookies
 title: Werken met cookies
-uuid: 7586a5a7-9914-403b-86a9-fbdd28664b07
 translation-type: tm+mt
-source-git-commit: 040655d8ba5f91c98ed0584c08db226ffe1e0f4e
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '256'
+source-wordcount: '234'
 ht-degree: 0%
 
 ---
@@ -26,7 +23,7 @@ Hier is een voorbeeld met wat type authentificatie wanneer het doen van verzoeke
 
 Werken met cookies:
 
-1. Gebruik de eigenschap `cookieHeaders` in `NetworkConfiguration` om een cookie in te stellen. De eigenschap `cookieHeaders` is een object Metagegevens en u kunt sleutelwaardeparen aan dit object toevoegen om in de cookie-header te worden opgenomen.
+1. Gebruik de eigenschap `cookieHeaders` in `NetworkConfiguration` om een cookie in te stellen. De eigenschap `cookieHeaders` is een object Metagegevens en u kunt sleutelwaardeparen toevoegen aan dit object om in de cookiekop te worden opgenomen.
 
    Bijvoorbeeld:
 
