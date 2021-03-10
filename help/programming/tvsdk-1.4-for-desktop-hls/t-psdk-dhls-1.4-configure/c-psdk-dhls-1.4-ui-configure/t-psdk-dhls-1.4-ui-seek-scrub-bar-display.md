@@ -1,13 +1,10 @@
 ---
 description: TVSDK ondersteunt het zoeken naar een specifieke positie (tijd) waar de stream een afspeellijst met schuifvensters is, zowel in video op aanvraag (VOD) als in live streams.
-seo-description: TVSDK ondersteunt het zoeken naar een specifieke positie (tijd) waar de stream een afspeellijst met schuifvensters is, zowel in video op aanvraag (VOD) als in live streams.
-seo-title: Een zoekbalk weergeven met de huidige afspeelpositie
 title: Een zoekbalk weergeven met de huidige afspeelpositie
-uuid: f940b305-4893-4531-9a79-53670f5fd23f
 translation-type: tm+mt
-source-git-commit: 7e8df034035fe465fbe403949ef828e7811ced2e
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '313'
+source-wordcount: '279'
 ht-degree: 0%
 
 ---
