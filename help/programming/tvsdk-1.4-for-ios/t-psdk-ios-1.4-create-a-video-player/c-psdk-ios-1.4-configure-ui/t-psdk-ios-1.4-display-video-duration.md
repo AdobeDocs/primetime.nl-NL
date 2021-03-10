@@ -1,13 +1,10 @@
 ---
 description: U kunt de duur van de actieve inhoud weergeven.
-seo-description: U kunt de duur van de actieve inhoud weergeven.
-seo-title: De duur van de video weergeven
 title: De duur van de video weergeven
-uuid: 02042070-9c55-4cbb-9dc1-49987451eb8f
 translation-type: tm+mt
-source-git-commit: 5908e5a3521966496aeec0ef730e4a704fddfb68
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '122'
+source-wordcount: '106'
 ht-degree: 0%
 
 ---
