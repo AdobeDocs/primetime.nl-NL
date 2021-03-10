@@ -1,13 +1,10 @@
 ---
 description: Voordat u de meeste methoden van de TVSDK-speler kunt gebruiken, moet de speler een geldige status hebben.
-seo-description: Voordat u de meeste methoden van de TVSDK-speler kunt gebruiken, moet de speler een geldige status hebben.
-seo-title: Wacht op een geldige status
 title: Wacht op een geldige status
-uuid: 918ab021-3685-424a-b84e-683da0357724
 translation-type: tm+mt
-source-git-commit: 8ff38bdc1a7ff9732f7f1fae37f64d0e1113ff40
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '187'
+source-wordcount: '164'
 ht-degree: 0%
 
 ---
