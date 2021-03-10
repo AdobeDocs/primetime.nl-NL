@@ -1,13 +1,10 @@
 ---
 description: Uw toepassing kan de activiteit in uw speler en de veranderende staat van de speler controleren door naar gebeurtenissen te luisteren die door TVSDK worden verzonden.
-seo-description: Uw toepassing kan de activiteit in uw speler en de veranderende staat van de speler controleren door naar gebeurtenissen te luisteren die door TVSDK worden verzonden.
-seo-title: Gebeurtenissen van Playback
 title: Gebeurtenissen van Playback
-uuid: 6d6491d7-cf25-4130-8388-68b8c028bb71
 translation-type: tm+mt
-source-git-commit: 91cea7acb8127e02b82e5242b9ad6ab0d12ce0eb
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '541'
+source-wordcount: '516'
 ht-degree: 0%
 
 ---
