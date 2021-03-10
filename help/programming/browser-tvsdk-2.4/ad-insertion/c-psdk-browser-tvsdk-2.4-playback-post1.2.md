@@ -1,13 +1,10 @@
 ---
 description: Het gedrag van het afspelen van media wordt beïnvloed door zoeken, pauzeren, snel vooruitspoelen of terugspoelen (de modus voor het kunstspel) en het opnemen van reclame.
-seo-description: Het gedrag van het afspelen van media wordt beïnvloed door zoeken, pauzeren, snel vooruitspoelen of terugspoelen (de modus voor het kunstspel) en het opnemen van reclame.
-seo-title: Standaardgedrag en aangepast afspeelgedrag met advertenties
 title: Standaardgedrag en aangepast afspeelgedrag met advertenties
-uuid: 58f11167-a764-4647-8490-05ca66eb6c47
 translation-type: tm+mt
-source-git-commit: 040655d8ba5f91c98ed0584c08db226ffe1e0f4e
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '522'
+source-wordcount: '493'
 ht-degree: 0%
 
 ---
