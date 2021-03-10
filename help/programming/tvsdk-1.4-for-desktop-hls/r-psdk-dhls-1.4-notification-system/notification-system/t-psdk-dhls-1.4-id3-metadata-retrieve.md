@@ -1,13 +1,10 @@
 ---
 description: ID3-tags bieden informatie over een audio- of videobestand, zoals de titel van het bestand of de naam van de artiest. Hiermee worden ID3-tags op het niveau van het transportstreamsegment (TS) in HLS-streams gedetecteerd en wordt een gebeurtenis verzonden. De toepassing kan gegevens uit de tag extraheren.
-seo-description: ID3-tags bieden informatie over een audio- of videobestand, zoals de titel van het bestand of de naam van de artiest. Hiermee worden ID3-tags op het niveau van het transportstreamsegment (TS) in HLS-streams gedetecteerd en wordt een gebeurtenis verzonden. De toepassing kan gegevens uit de tag extraheren.
-seo-title: ID3-tags
 title: ID3-tags
-uuid: 5c016260-5ced-480e-897a-11ffe7f34441
 translation-type: tm+mt
-source-git-commit: 040655d8ba5f91c98ed0584c08db226ffe1e0f4e
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '283'
+source-wordcount: '233'
 ht-degree: 0%
 
 ---
