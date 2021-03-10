@@ -1,13 +1,10 @@
 ---
 description: De interface Video Encoder van AVE keert deze videoplaybackberichten in het NATIVE_ERROR meta-gegevensvoorwerp terug.
-seo-description: De interface Video Encoder van AVE keert deze videoplaybackberichten in het NATIVE_ERROR meta-gegevensvoorwerp terug.
-seo-title: NATIVE_ERROR-waarden voor het afspelen van video
 title: NATIVE_ERROR-waarden voor het afspelen van video
-uuid: 4916f96c-857a-4e15-8d91-9c2f949ce783
 translation-type: tm+mt
-source-git-commit: 040655d8ba5f91c98ed0584c08db226ffe1e0f4e
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '1362'
+source-wordcount: '1339'
 ht-degree: 6%
 
 ---
@@ -47,7 +44,7 @@ De interface Video Encoder van AVE keert deze videoplaybackberichten in het NATI
    <td colname="col3"> Bewerking niet mogelijk vanwege bestandseinde (EOF). </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> 3 </td> 
+   <td colname="col1"> 1 </td> 
    <td colname="col2"><span class="codeph"> DECODER_FAILED</span> </td> 
    <td colname="col3"> De decoder is mislukt bij uitvoering. </td> 
   </tr> 
@@ -327,7 +324,7 @@ De interface Video Encoder van AVE keert deze videoplaybackberichten in het NATI
    <td colname="col3"> Het afspelen van HLS is niet ingeschakeld in de Flash Player. Zie <span class="codeph"> AuthorizedFeatures.enableHLSPlayback</span>. </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> 78 </td> 
+   <td colname="col1"> 58 </td> 
    <td colname="col2"><span class="codeph"> BAD_MEDIA_SAMPLE_FOUND</span> </td> 
    <td colname="col3"> De decoder heeft een ongeldig monster ontvangen dat niet kan worden gedecodeerd. Dit is meestal geen fatale fout, maar geeft aan dat er wellicht glitches in de audio/video voorkomen. Te veel exemplaren van deze fout geven een onjuiste codering of een ongeldig bestand aan. </td> 
   </tr> 
@@ -427,7 +424,7 @@ De interface Video Encoder van AVE keert deze videoplaybackberichten in het NATI
    <td colname="col3"> Er is geen audioband aanwezig in een interne gegevensstructuur. </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> 58 </td> 
+   <td colname="col1"> 78 </td> 
    <td colname="col2"><span class="codeph"> FILE_OPEN_ERROR</span> </td> 
    <td colname="col3"> Kan bestand niet openen. </td> 
   </tr> 
