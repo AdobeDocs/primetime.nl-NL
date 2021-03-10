@@ -1,13 +1,10 @@
 ---
 description: Voor live en VOD media, begint Browser TVSDK playback door playlist te downloaden die met het middenresolutie beetjetarief wordt geassocieerd en dan segmenten van de middenresolutie beetjetarief media te downloaden die door playlist wordt bepaald.
-seo-description: Voor live en VOD media, begint Browser TVSDK playback door playlist te downloaden die met het middenresolutie beetjetarief wordt geassocieerd en dan segmenten van de middenresolutie beetjetarief media te downloaden die door playlist wordt bepaald.
-seo-title: Afspelen van media
 title: Afspelen van media
-uuid: 454f84fe-8077-4f37-8e62-1d6ba0fcde27
 translation-type: tm+mt
-source-git-commit: 592245f5a7186d18dabbb5a98a468cbed7354aed
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '368'
+source-wordcount: '329'
 ht-degree: 0%
 
 ---
