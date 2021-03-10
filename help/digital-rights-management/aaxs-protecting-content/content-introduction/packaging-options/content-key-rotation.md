@@ -1,13 +1,10 @@
 ---
 description: De volgende versleutelingsopties worden tijdens het verpakken geselecteerd en kunnen niet worden gewijzigd tijdens het aanschaffen van een licentie.
-seo-description: De volgende versleutelingsopties worden tijdens het verpakken geselecteerd en kunnen niet worden gewijzigd tijdens het aanschaffen van een licentie.
-seo-title: Toetsrotatie
 title: Toetsrotatie
-uuid: 6ee47c06-9981-4281-b10b-343f8b1e55b7
 translation-type: tm+mt
-source-git-commit: 29bc8323460d9be0fce66cbea7c6fce46df20d61
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '196'
+source-wordcount: '178'
 ht-degree: 0%
 
 ---
