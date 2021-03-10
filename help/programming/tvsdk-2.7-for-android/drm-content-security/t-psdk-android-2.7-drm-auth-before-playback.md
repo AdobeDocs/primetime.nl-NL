@@ -1,13 +1,10 @@
 ---
 description: Wanneer de DRM-metagegevens voor een video gescheiden zijn van de mediastream, moet u verifiëren voordat u begint met afspelen.
-seo-description: Wanneer de DRM-metagegevens voor een video gescheiden zijn van de mediastream, moet u verifiëren voordat u begint met afspelen.
-seo-title: DRM-verificatie vóór afspelen
 title: DRM-verificatie vóór afspelen
-uuid: 6b4fbcfb-95fd-4591-bbb2-a17afd783383
 translation-type: tm+mt
-source-git-commit: 16b88f07468811f2c84decb1324b0c5bd2372131
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '364'
+source-wordcount: '339'
 ht-degree: 1%
 
 ---
