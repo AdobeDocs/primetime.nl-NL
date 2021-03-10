@@ -1,13 +1,10 @@
 ---
 description: De term instant op verwijst naar het vooraf laden van een of meer kanalen, zodat een gebruiker die een kanaal selecteert of schakelt kanalen de inhoud direct ziet afspelen. De buffering is al uitgevoerd tegen de tijd dat de gebruiker begint te kijken.
-seo-description: De term instant op verwijst naar het vooraf laden van een of meer kanalen, zodat een gebruiker die een kanaal selecteert of schakelt kanalen de inhoud direct ziet afspelen. De buffering is al uitgevoerd tegen de tijd dat de gebruiker begint te kijken.
-seo-title: Direct aan
 title: Direct aan
-uuid: 4cb4d221-170f-46e8-af26-32f259377617
 translation-type: tm+mt
-source-git-commit: 5908e5a3521966496aeec0ef730e4a704fddfb68
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '368'
+source-wordcount: '329'
 ht-degree: 0%
 
 ---
