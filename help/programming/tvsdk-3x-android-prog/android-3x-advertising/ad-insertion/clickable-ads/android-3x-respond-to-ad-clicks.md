@@ -1,13 +1,10 @@
 ---
 description: Wanneer een gebruiker op een advertentie of een verwante knop klikt, moet de toepassing reageren. TVSDK biedt u informatie over de doel-URL voor de klik.
-seo-description: Wanneer een gebruiker op een advertentie of een verwante knop klikt, moet de toepassing reageren. TVSDK biedt u informatie over de doel-URL voor de klik.
-seo-title: Reageren op klikken op advertenties
 title: Reageren op klikken op advertenties
-uuid: abc5de2f-3ab0-4e00-908c-ea8b31387d4f
 translation-type: tm+mt
-source-git-commit: 3fdae2b6babb578d2cacff970fd9c7b53ad2c5dc
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '360'
+source-wordcount: '328'
 ht-degree: 0%
 
 ---
