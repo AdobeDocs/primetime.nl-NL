@@ -1,13 +1,10 @@
 ---
 description: Als u aan de slag wilt met Primetime DRM Cloud, aangedreven door ExpressPlay, moet u Adobe Cert- en ExpressPlay-accounts instellen met de hulp van uw Adobe-medewerker.
-seo-description: Als u aan de slag wilt met Primetime DRM Cloud, aangedreven door ExpressPlay, moet u Adobe Cert- en ExpressPlay-accounts instellen met de hulp van uw Adobe-medewerker.
-seo-title: Provisioned (accounts, enz.)
 title: Provisioned (accounts, enz.)
-uuid: 51b95676-2121-4d8b-8756-9fd097185a13
 translation-type: tm+mt
-source-git-commit: 9792aff8586c46aabb5bfb70864cfe98c28e602d
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '457'
+source-wordcount: '426'
 ht-degree: 0%
 
 ---
