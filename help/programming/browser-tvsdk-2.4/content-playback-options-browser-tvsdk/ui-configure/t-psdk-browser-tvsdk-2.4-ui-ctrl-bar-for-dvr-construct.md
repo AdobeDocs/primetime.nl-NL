@@ -1,13 +1,10 @@
 ---
 description: U kunt een besturingsbalk implementeren met DVR-ondersteuning voor VOD en live streaming. DVR-ondersteuning omvat het concept van een doorzoekbaar venster en het live-punt van de client.
-seo-description: U kunt een besturingsbalk implementeren met DVR-ondersteuning voor VOD en live streaming. DVR-ondersteuning omvat het concept van een doorzoekbaar venster en het live-punt van de client.
-seo-title: Een besturingsbalk maken die is verbeterd voor DVR
 title: Een besturingsbalk maken die is verbeterd voor DVR
-uuid: 83c56def-a454-4f26-bdfc-2ef2497ef9bd
 translation-type: tm+mt
-source-git-commit: 040655d8ba5f91c98ed0584c08db226ffe1e0f4e
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '253'
+source-wordcount: '218'
 ht-degree: 0%
 
 ---
