@@ -1,13 +1,10 @@
 ---
 description: U kunt de huidige en resterende tijd weergeven van de inhoud die wordt afgespeeld.
-seo-description: U kunt de huidige en resterende tijd weergeven van de inhoud die wordt afgespeeld.
-seo-title: De huidige tijd en de resterende tijd weergeven
 title: De huidige tijd en de resterende tijd weergeven
-uuid: 800996ff-afc0-4e17-9d70-5ec1e1fcfdc7
 translation-type: tm+mt
-source-git-commit: 5908e5a3521966496aeec0ef730e4a704fddfb68
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '106'
+source-wordcount: '84'
 ht-degree: 0%
 
 ---
