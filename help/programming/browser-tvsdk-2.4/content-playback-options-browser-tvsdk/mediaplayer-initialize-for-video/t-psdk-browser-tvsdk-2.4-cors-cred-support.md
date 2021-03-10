@@ -1,14 +1,11 @@
 ---
 description: De steun voor het attribuut withCredentials in XMLHttpRequests staat het delen van middelen van oorsprong (CORS) verzoeken toe om de koekjes van het doeldomein voor een verscheidenheid van verzoektypes te omvatten.
 keywords: CORS;cross origin;resource sharing;cookies;withCredentials
-seo-description: De steun voor het attribuut withCredentials in XMLHttpRequests staat het delen van middelen van oorsprong (CORS) verzoeken toe om de koekjes van het doeldomein voor een verscheidenheid van verzoektypes te omvatten.
-seo-title: Bron delen tussen verschillende oorsprong
 title: Bron delen tussen verschillende oorsprong
-uuid: e788b542-d4ac-48aa-91e2-1e88068cbba1
 translation-type: tm+mt
-source-git-commit: 592245f5a7186d18dabbb5a98a468cbed7354aed
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '275'
+source-wordcount: '254'
 ht-degree: 0%
 
 ---
