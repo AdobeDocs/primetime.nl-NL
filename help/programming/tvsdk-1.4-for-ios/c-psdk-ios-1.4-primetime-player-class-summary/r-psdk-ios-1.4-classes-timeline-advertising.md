@@ -1,13 +1,10 @@
 ---
 description: Deze klassen bieden informatie over advertenties die binnen een tijdlijn voorkomen.
-seo-description: Deze klassen bieden informatie over advertenties die binnen een tijdlijn voorkomen.
-seo-title: Tijdlijnadvertentieklassen
 title: Tijdlijnadvertentieklassen
-uuid: b36d128f-7f13-4c61-b925-dfa5cd94e255
 translation-type: tm+mt
-source-git-commit: d2b8cb67c54fadb8e0e7d2bdc15e393fdce8550e
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '529'
+source-wordcount: '515'
 ht-degree: 0%
 
 ---
