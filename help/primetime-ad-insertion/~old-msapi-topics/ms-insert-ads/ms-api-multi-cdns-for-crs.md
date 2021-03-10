@@ -1,13 +1,10 @@
 ---
 description: Terwijl het standaard creatieve het herverpakken van de dienst (CRS) scenario één Netwerk van de Levering van de Inhoud (CDN) moet gebruiken, kunt u activa CRS op meer dan één CDN opstellen.
-seo-description: Terwijl het standaard creatieve het herverpakken van de dienst (CRS) scenario één Netwerk van de Levering van de Inhoud (CDN) moet gebruiken, kunt u activa CRS op meer dan één CDN opstellen.
-seo-title: Meerdere CDN-ondersteuning voor CRS en levering
 title: Meerdere CDN-ondersteuning voor CRS en levering
-uuid: c5557a38-aa49-4161-bb58-3e8dff9a4d64
 translation-type: tm+mt
-source-git-commit: e1e33d3ac0aad44859cd49566331524da72ac7e4
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '222'
+source-wordcount: '189'
 ht-degree: 0%
 
 ---
