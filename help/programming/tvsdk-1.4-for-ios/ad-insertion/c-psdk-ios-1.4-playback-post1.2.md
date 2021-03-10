@@ -1,13 +1,10 @@
 ---
 description: Het gedrag van het afspelen van media wordt beïnvloed door zoeken, onderbreken en het opnemen van advertenties.
-seo-description: Het gedrag van het afspelen van media wordt beïnvloed door zoeken, onderbreken en het opnemen van advertenties.
-seo-title: Standaardgedrag en aangepast afspeelgedrag met advertenties
 title: Standaardgedrag en aangepast afspeelgedrag met advertenties
-uuid: cc996e5c-bee2-451b-96cb-088df1694188
 translation-type: tm+mt
-source-git-commit: 5908e5a3521966496aeec0ef730e4a704fddfb68
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '493'
+source-wordcount: '471'
 ht-degree: 0%
 
 ---
