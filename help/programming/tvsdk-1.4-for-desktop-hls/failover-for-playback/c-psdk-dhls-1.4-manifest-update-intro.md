@@ -1,13 +1,10 @@
 ---
 description: TVSDK kan gewijzigde afspeelinformatie in master m3u8-manifests voor live streaming detecteren en de afspeelinformatie bijwerken terwijl de stream wordt afgespeeld. TVSDK ondersteunt een dynamische set bitsnelheidprofielen die worden weergegeven of verdwijnen uit het master manifest, inclusief niet-overlappende bitsnelheden voor profielen tussen updates.
-seo-description: TVSDK kan gewijzigde afspeelinformatie in master m3u8-manifests voor live streaming detecteren en de afspeelinformatie bijwerken terwijl de stream wordt afgespeeld. TVSDK ondersteunt een dynamische set bitsnelheidprofielen die worden weergegeven of verdwijnen uit het master manifest, inclusief niet-overlappende bitsnelheden voor profielen tussen updates.
-seo-title: Live master-manifest-update
 title: Live master-manifest-update
-uuid: 44f8adc2-0538-4c5d-8e39-55f661d8540b
 translation-type: tm+mt
-source-git-commit: 040655d8ba5f91c98ed0584c08db226ffe1e0f4e
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '793'
+source-wordcount: '740'
 ht-degree: 0%
 
 ---
