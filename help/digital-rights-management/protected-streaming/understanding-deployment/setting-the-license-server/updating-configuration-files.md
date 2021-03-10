@@ -1,13 +1,10 @@
 ---
 description: Zodra de licentieserver een van de configuratiebestanden van de licentieserver (algemene configuratie of huurdersconfiguratie) leest, wordt de configuratiegegevens in het geheugen opgeslagen. Daarom hoeven de bestanden niet van schijf te worden gelezen voor elke licentieaanvraag. De server staat echter ook toe dat de meeste waarden in de configuratiebestanden worden gewijzigd zonder dat een server opnieuw moet worden opgestart om de wijzigingen van kracht te laten worden.
-seo-description: Zodra de licentieserver een van de configuratiebestanden van de licentieserver (algemene configuratie of huurdersconfiguratie) leest, wordt de configuratiegegevens in het geheugen opgeslagen. Daarom hoeven de bestanden niet van schijf te worden gelezen voor elke licentieaanvraag. De server staat echter ook toe dat de meeste waarden in de configuratiebestanden worden gewijzigd zonder dat een server opnieuw moet worden opgestart om de wijzigingen van kracht te laten worden.
-seo-title: Configuratiebestanden bijwerken
 title: Configuratiebestanden bijwerken
-uuid: 34b3247c-3458-49de-b1b0-dc0ebbf61c88
 translation-type: tm+mt
-source-git-commit: 9d2e046ae259c05fb4c278f464c9a26795e554fc
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '644'
+source-wordcount: '576'
 ht-degree: 0%
 
 ---
@@ -33,7 +30,7 @@ Als er geen versie in de cache is, mislukt het laden van de configuratie en word
 
 ## Het algemene configuratiebestand {#section_AA546C72442646CFB8906AEEBDF50587} bijwerken
 
-U kunt het wachtwoord HSM in [!DNL flashaccess-global.xml] op elk ogenblik wijzigen. De wijzigingen worden van kracht wanneer de server het configuratiebestand opnieuw laadt. Wijzigingen in de elementen Logging en Caching worden echter niet opnieuw geladen. U moet de server opnieuw starten voordat wijzigingen voor deze elementen van kracht worden.
+U kunt het wachtwoord HSM in [!DNL flashaccess-global.xml] op elk ogenblik wijzigen. De wijzigingen worden van kracht wanneer de server het configuratiebestand opnieuw laadt. Wijzigingen in de elementen Logging en Caching worden echter niet opnieuw geladen. U moet de server opnieuw opstarten voordat wijzigingen voor deze elementen effect sorteren.
 
 ## Het bijwerken van het dossier van de huurdersconfiguratie {#section_71624DB8DF28480F84F34F0FF7FD4365}
 
