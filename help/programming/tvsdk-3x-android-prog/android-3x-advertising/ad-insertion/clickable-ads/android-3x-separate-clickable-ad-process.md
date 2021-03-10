@@ -1,13 +1,10 @@
 ---
 description: U moet de gebruikersinterfacelogica van uw speler scheiden van het proces dat beheert en klikt. Een manier om dit te doen is het implementeren van meerdere fragmenten voor een activiteit.
-seo-description: U moet de gebruikersinterfacelogica van uw speler scheiden van het proces dat beheert en klikt. Een manier om dit te doen is het implementeren van meerdere fragmenten voor een activiteit.
-seo-title: Scheid het klikbare ad proces
 title: Scheid het klikbare ad proces
-uuid: a5254ac5-3005-483e-935e-acbbef03df0e
 translation-type: tm+mt
-source-git-commit: bc35da8b258056809ceaf18e33bed631047bc81b
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '173'
+source-wordcount: '141'
 ht-degree: 0%
 
 ---
