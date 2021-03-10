@@ -1,13 +1,10 @@
 ---
 description: De het hulpprogrammaklasse van TimeRangeCollection onttrekt het begrip van een bevolen inzameling van specificaties TimeRange en verleent de diensten om zich in een instantie van Metadata te vertalen.
-seo-description: De het hulpprogrammaklasse van TimeRangeCollection onttrekt het begrip van een bevolen inzameling van specificaties TimeRange en verleent de diensten om zich in een instantie van Metadata te vertalen.
-seo-title: TimeRangeCollection, klasse
 title: TimeRangeCollection, klasse
-uuid: da781df4-6b19-47e1-8dc5-ea83c139f061
 translation-type: tm+mt
-source-git-commit: 040655d8ba5f91c98ed0584c08db226ffe1e0f4e
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '96'
+source-wordcount: '70'
 ht-degree: 0%
 
 ---
