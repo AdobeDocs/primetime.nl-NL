@@ -1,17 +1,13 @@
 ---
 title: Opmerkingen bij de release TVSDK 1.4 voor Android
-seo-title: Opmerkingen bij de release TVSDK 1.4 voor Android
 description: In de Release-notities van TVSDK 1.4 voor Android wordt beschreven wat nieuw of gewijzigd is, welke problemen zijn opgelost en welke problemen bekend zijn en wat de apparaatproblemen zijn in TVSDK Android 1.4.
-seo-description: In de Release-notities van TVSDK 1.4 voor Android wordt beschreven wat nieuw of gewijzigd is, welke problemen zijn opgelost en welke problemen bekend zijn en wat de apparaatproblemen zijn in TVSDK Android 1.4.
-uuid: 8bd8ee42-7a1b-4c14-aad9-22804743e505
 contentOwner: asgupta
 products: SG_PRIMETIME
 topic-tags: release-notes
-discoiquuid: f1ebc1a8-185a-493a-9c00-a6102dffb128
 translation-type: tm+mt
-source-git-commit: 6da7d597503d98875735c54e9a794f8171ad408b
+source-git-commit: b33240bf1b42b80389cd95a7ae4d3f85185a2d32
 workflow-type: tm+mt
-source-wordcount: '7830'
+source-wordcount: '7802'
 ht-degree: 0%
 
 ---
@@ -137,7 +133,7 @@ Zie [Extra fallback voor VAST- en VMAP-advertenties](../programming/tvsdk-3x-and
 
 **Versie 1.4.0**
 
-* **Blackout Signaling With Alternate Content** ReplacementAls onderdeel van de 1.4 TVSDK-update ondersteunt de TVSDK nu ook het in- en terugkeren van regionale black-outs tegen lineaire inhoud. De TVSDK kan nu twee manifestbestanden parallel, hoofdbestand en alternatief verwerken, om te controleren op uitstroomsignalen, zelfs wanneer alternatieve programmering wordt weergegeven in plaats van de oorspronkelijke programmering.
+* **Blackout Signaling With Alternate Content** ReplacementAls onderdeel van de 1.4 TVSDK-update ondersteunt de TVSDK nu ook het in- en terugkeren van regionale black-outs tegen lineaire inhoud. De TVSDK kan nu twee manifestbestanden parallel, hoofdbestand en alternatief verwerken om te controleren op uitstroomsignalen, zelfs wanneer alternatieve programmering wordt weergegeven in plaats van de oorspronkelijke programmering.
 
 * **C3** Ads verwijderen/vervangenEr is nu geen extra voorbereidend werk nodig om nieuwe advertenties dynamisch in video-op-verzoek (VOD) activa op te nemen die uit het C3 venster komen. De TVSDK beschikt nu over een API waarmee u aangepaste inhoudsbereiken kunt verwijderen en dynamisch nieuwe advertenties kunt invoegen. Deze krachtige nieuwe functionaliteit is ook handig in gevallen waarin live/lineaire inhoud tijdens de uitzending wordt gerepareerd en onmiddellijk wordt afgetrokken voor gebruik als inhoud op aanvraag zonder dat er voldoende tijd is om het element &#39;schoon&#39; te maken.
 
@@ -784,7 +780,7 @@ Opmerking: Deze build is ***vereist** voor ondersteuning van Android 5.0 (Lollip
 * Zendesk #1590 - LoadInfo.MediaDuration is altijd 0, mediaDuration toont nu de correcte waarde.
 * Zendesk #1629 - speler/app crasht aan het einde van de afspeelbewerking op Galaxy S4
 * Zendesk #1674 - ClosedCaption Niet zichtbaar, corrigeer de weergave van 708 bijschriften wanneer 0x03 ETX-codes ontbreken.
-* PTPLAY-2157 - de Standaard gesloten Captioning stijlen zijn teruggekeerd door getters zelfs als nadat een verschillende stijlen is geplaatst en visueel op de stroom geverifieerd. In de stijleigenschappen van Closed Caption wordt nu de waarde weergegeven waarop deze zijn ingesteld.
+* PTPLAY-2157 - de Standaard gesloten Captioning stijlen zijn teruggekeerd door getters zelfs als na een verschillende stijlen is geplaatst en visueel op de stroom geverifieerd. In de stijleigenschappen van Closed Caption wordt nu de waarde weergegeven waarop deze zijn ingesteld.
 
 ## Bekende problemen in 1.4 {#known-issues-in}
 
