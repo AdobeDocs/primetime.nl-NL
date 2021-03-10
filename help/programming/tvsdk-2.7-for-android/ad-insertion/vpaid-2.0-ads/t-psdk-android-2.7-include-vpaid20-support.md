@@ -1,13 +1,10 @@
 ---
 description: Als u ondersteuning voor VPAID 2.0 wilt toevoegen, voegt u een aangepaste advertentieweergave en de juiste listeners toe.
-seo-description: Als u ondersteuning voor VPAID 2.0 wilt toevoegen, voegt u een aangepaste advertentieweergave en de juiste listeners toe.
-seo-title: VPAID 2.0-integratie implementeren
 title: VPAID 2.0-integratie implementeren
-uuid: fa5b9cdd-e684-4656-91b7-50781dc59e23
 translation-type: tm+mt
-source-git-commit: 25f97c8d296f71deddc8f9d12b97007ddf73f603
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '184'
+source-wordcount: '169'
 ht-degree: 2%
 
 ---
