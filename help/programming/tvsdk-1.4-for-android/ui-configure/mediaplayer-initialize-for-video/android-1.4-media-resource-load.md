@@ -1,13 +1,10 @@
 ---
 description: Laad een bron door rechtstreeks een MediaResource te instantiëren en de video-inhoud te laden die moet worden afgespeeld. Dit is een manier om een mediabrondel te laden.
-seo-description: Laad een bron door rechtstreeks een MediaResource te instantiëren en de video-inhoud te laden die moet worden afgespeeld. Dit is een manier om een mediabrondel te laden.
-seo-title: Een mediabron laden in de MediaPlayer
 title: Een mediabron laden in de MediaPlayer
-uuid: 6ee8032f-0728-423f-a1d2-5030aa7db14f
 translation-type: tm+mt
-source-git-commit: 4ef05be045334a2e723da4c7c6a7ee22fb0f776c
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '252'
+source-wordcount: '220'
 ht-degree: 0%
 
 ---
