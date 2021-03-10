@@ -1,13 +1,10 @@
 ---
 description: Sommige advertenties van derden (of creatieve objecten) kunnen niet in de HTTP Live Streaming (HLS)/Dynamic Adaptive Streaming via HTTP (DASH)-inhoudsstroom worden geplaatst omdat hun video-indeling niet compatibel is met HLS/DASH. Met Adobe Primetime en invoeging en Browser-TVSDK kunt u desgewenst proberen incompatibele video's te herverpakken (transcoderen) in compatibele m3u8/mpd-video's.
-seo-description: Sommige advertenties van derden (of creatieve objecten) kunnen niet in de HTTP Live Streaming (HLS)/Dynamic Adaptive Streaming via HTTP (DASH)-inhoudsstroom worden geplaatst omdat hun video-indeling niet compatibel is met HLS/DASH. Met Adobe Primetime en invoeging en Browser-TVSDK kunt u desgewenst proberen incompatibele video's te herverpakken (transcoderen) in compatibele m3u8/mpd-video's.
-seo-title: Niet-compatibele advertenties opnieuw verpakken (transcoderen)
 title: Niet-compatibele advertenties opnieuw verpakken (transcoderen)
-uuid: f414d133-2d04-462c-ae2c-75158a577fc5
 translation-type: tm+mt
-source-git-commit: 040655d8ba5f91c98ed0584c08db226ffe1e0f4e
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '197'
+source-wordcount: '141'
 ht-degree: 0%
 
 ---
