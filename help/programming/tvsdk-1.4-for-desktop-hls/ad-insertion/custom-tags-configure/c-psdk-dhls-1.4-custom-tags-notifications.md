@@ -1,13 +1,10 @@
 ---
 description: Met de eigenschap MediaPlayerItem.timedMetadata hebt u toegang tot alle objecten TimedMetadata die zijn gemaakt van afspeellijst-/manifesttags of van ID3-tags in de mediastream. De eigenschap MediaPlayerItem.hasTimedMetadata geeft aan of er een aangepaste tag met een abonnement aanwezig is in de huidige media.
-seo-description: Met de eigenschap MediaPlayerItem.timedMetadata hebt u toegang tot alle objecten TimedMetadata die zijn gemaakt van afspeellijst-/manifesttags of van ID3-tags in de mediastream. De eigenschap MediaPlayerItem.hasTimedMetadata geeft aan of er een aangepaste tag met een abonnement aanwezig is in de huidige media.
-seo-title: Meldingen voor manifestlabels
 title: Meldingen voor manifestlabels
-uuid: 87bee41b-b44e-4d12-afd2-7a63023f992c
 translation-type: tm+mt
-source-git-commit: 040655d8ba5f91c98ed0584c08db226ffe1e0f4e
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '231'
+source-wordcount: '188'
 ht-degree: 0%
 
 ---
