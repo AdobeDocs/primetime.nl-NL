@@ -1,13 +1,10 @@
 ---
 description: Adobe adviseert dat als u veranderingen in het configuratiedossier aanbrengt, u het nut van Validator van de Configuratie zou moeten in werking stellen alvorens u de server begint. Dit nut kan de meeste configuratiefouten vroeg ontdekken, alvorens zij mislukkingen tijdens verzoekverwerking veroorzaken.
-seo-description: Adobe adviseert dat als u veranderingen in het configuratiedossier aanbrengt, u het nut van Validator van de Configuratie zou moeten in werking stellen alvorens u de server begint. Dit nut kan de meeste configuratiefouten vroeg ontdekken, alvorens zij mislukkingen tijdens verzoekverwerking veroorzaken.
-seo-title: Configuratievalidator
 title: Configuratievalidator
-uuid: 7b44919a-0319-4675-95e2-ad1ad72ec0cb
 translation-type: tm+mt
-source-git-commit: 29bc8323460d9be0fce66cbea7c6fce46df20d61
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '259'
+source-wordcount: '219'
 ht-degree: 0%
 
 ---
