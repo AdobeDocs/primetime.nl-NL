@@ -1,13 +1,10 @@
 ---
 description: Nadat een MediaResource met succes wordt geladen, leidt Browser TVSDK tot een geval van de klasse MediaPlayerItem om toegang tot die middel te verlenen.
-seo-description: Nadat een MediaResource met succes wordt geladen, leidt Browser TVSDK tot een geval van de klasse MediaPlayerItem om toegang tot die middel te verlenen.
-seo-title: Informatie over de klasse MediaPlayerItem
 title: Informatie over de klasse MediaPlayerItem
-uuid: 5226d3ad-2438-44fe-a8ef-bcc0da8331b8
 translation-type: tm+mt
-source-git-commit: 040655d8ba5f91c98ed0584c08db226ffe1e0f4e
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '161'
+source-wordcount: '136'
 ht-degree: 0%
 
 ---
