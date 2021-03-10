@@ -1,13 +1,10 @@
 ---
 description: Kopieer de bestanden van de dvd als u Primetime DRM wilt instellen. Deze bestanden bevatten JAR-bestanden met code, certificaten en klassen van derden. Daarnaast moet u een certificaat aanvragen bij Adobe Systems, Incorporated. Vervolgens geeft Adobe u meerdere referenties uit waarmee u de integriteit van uw inhoud, licenties en communicatie tussen client en server in het pakket kunt beschermen.
-seo-description: Kopieer de bestanden van de dvd als u Primetime DRM wilt instellen. Deze bestanden bevatten JAR-bestanden met code, certificaten en klassen van derden. Daarnaast moet u een certificaat aanvragen bij Adobe Systems, Incorporated. Vervolgens geeft Adobe u meerdere referenties uit waarmee u de integriteit van uw inhoud, licenties en communicatie tussen client en server in het pakket kunt beschermen.
-seo-title: De ontwikkelomgeving instellen
 title: De ontwikkelomgeving instellen
-uuid: 68afefe8-7ec6-466e-89a8-bc0da8afb4c8
 translation-type: tm+mt
-source-git-commit: 19e7c941b3337c3b4d37f0b6a1350aac2ad8a0cc
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '387'
+source-wordcount: '320'
 ht-degree: 0%
 
 ---
