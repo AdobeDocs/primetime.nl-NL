@@ -1,13 +1,10 @@
 ---
 description: 'Wanneer een consument een beveiligd inhoudsbestand van een website of CDN verkrijgt, moet de consument ook een licentie verkrijgen die een sleutel bevat om de video te decoderen voordat deze kan worden afgespeeld. De volgende stappen illustreren een algemene workflow voor hoe beveiligde inhoud wordt benaderd door een computer waarop Flash Player of Adobe AIR wordt uitgevoerd '
-seo-description: 'Wanneer een consument een beveiligd inhoudsbestand van een website of CDN verkrijgt, moet de consument ook een licentie verkrijgen die een sleutel bevat om de video te decoderen voordat deze kan worden afgespeeld. De volgende stappen illustreren een algemene workflow voor hoe beveiligde inhoud wordt benaderd door een computer waarop Flash Player of Adobe AIR wordt uitgevoerd '
-seo-title: Inhoudsverwerving
 title: Inhoudsverwerving
-uuid: 80253746-bc31-43f0-b28b-7a1aa7fe34a7
 translation-type: tm+mt
-source-git-commit: 7e8df034035fe465fbe403949ef828e7811ced2e
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '752'
+source-wordcount: '695'
 ht-degree: 0%
 
 ---
