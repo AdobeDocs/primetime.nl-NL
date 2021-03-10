@@ -1,13 +1,10 @@
 ---
 description: Dit is een voorbeeld van hoe u een knop maakt waarmee een gebruiker een track met een gesloten bijschrift kan selecteren.
-seo-description: Dit is een voorbeeld van hoe u een knop maakt waarmee een gebruiker een track met een gesloten bijschrift kan selecteren.
-seo-title: Voorbeeld Gebruikers mogen bijschrifttrack wijzigen
 title: Voorbeeld Gebruikers mogen bijschrifttrack wijzigen
-uuid: 4b69d569-0d6e-4388-9fe3-488e2a4d762d
 translation-type: tm+mt
-source-git-commit: 5908e5a3521966496aeec0ef730e4a704fddfb68
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '134'
+source-wordcount: '107'
 ht-degree: 0%
 
 ---
