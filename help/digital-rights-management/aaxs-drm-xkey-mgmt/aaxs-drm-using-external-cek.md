@@ -1,13 +1,10 @@
 ---
 description: Met de functie External CEK kunt u licenties doorvoeren en verpakken met behulp van uw bestaande CKMS.
-seo-description: Met de functie External CEK kunt u licenties doorvoeren en verpakken met behulp van uw bestaande CKMS.
-seo-title: De externe CEK gebruiken om licenties te zoeken en te verpakken
 title: De externe CEK gebruiken om licenties te zoeken en te verpakken
-uuid: 1bfd8c6c-4ae9-47de-8247-085b5360127d
 translation-type: tm+mt
-source-git-commit: fe9493d610bc6fb97d30351c707b73cda92c67a0
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '249'
+source-wordcount: '227'
 ht-degree: 0%
 
 ---
