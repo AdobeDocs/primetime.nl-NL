@@ -1,13 +1,10 @@
 ---
 description: FER (Full-event replay) is een VOD-middel dat fungeert als een live/DVR-element. Uw toepassing moet daarom stappen ondernemen om ervoor te zorgen dat advertenties correct worden geplaatst.
-seo-description: FER (Full-event replay) is een VOD-middel dat fungeert als een live/DVR-element. Uw toepassing moet daarom stappen ondernemen om ervoor te zorgen dat advertenties correct worden geplaatst.
-seo-title: Advertenties inschakelen bij volledig afspelen van gebeurtenissen
 title: Advertenties inschakelen bij volledig afspelen van gebeurtenissen
-uuid: 69244069-ef61-42e4-b2f5-62ae2561d9e1
 translation-type: tm+mt
-source-git-commit: 0eaf0e7e7e61d596a51d1c9c837ad072d703c6a7
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '351'
+source-wordcount: '319'
 ht-degree: 0%
 
 ---
