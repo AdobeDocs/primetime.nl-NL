@@ -1,14 +1,11 @@
 ---
 description: 302 optimalisatie voor omleiding minimaliseert het aantal van 302 reacties voor omleiding, waardoor uw toepassing de taakverdeling effectiever kan uitvoeren.
-seo-description: 302 optimalisatie voor omleiding minimaliseert het aantal van 302 reacties voor omleiding, waardoor uw toepassing de taakverdeling effectiever kan uitvoeren.
-seo-title: HTTP 302-herleidingsoptimalisatie
 title: HTTP 302-herleidingsoptimalisatie
-uuid: 58593d5f-a639-4d87-9589-dba6b2dbba38
 translation-type: tm+mt
-source-git-commit: 040655d8ba5f91c98ed0584c08db226ffe1e0f4e
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '205'
-ht-degree: 0%
+source-wordcount: '185'
+ht-degree: 1%
 
 ---
 
