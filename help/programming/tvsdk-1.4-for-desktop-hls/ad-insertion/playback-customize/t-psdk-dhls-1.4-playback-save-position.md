@@ -1,13 +1,10 @@
 ---
 description: U kunt de huidige afspeelpositie in een video opslaan en het afspelen op dezelfde positie in een volgende sessie hervatten.
-seo-description: U kunt de huidige afspeelpositie in een video opslaan en het afspelen op dezelfde positie in een volgende sessie hervatten.
-seo-title: De videopositie opslaan en later hervatten
 title: De videopositie opslaan en later hervatten
-uuid: 03ed5c63-008d-4dd1-9a31-baefa73b56e2
 translation-type: tm+mt
-source-git-commit: 040655d8ba5f91c98ed0584c08db226ffe1e0f4e
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '426'
+source-wordcount: '398'
 ht-degree: 0%
 
 ---
