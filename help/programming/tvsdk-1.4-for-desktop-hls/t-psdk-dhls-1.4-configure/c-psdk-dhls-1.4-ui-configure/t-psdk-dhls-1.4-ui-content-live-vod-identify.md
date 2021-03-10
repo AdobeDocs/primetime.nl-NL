@@ -1,13 +1,10 @@
 ---
 description: In sommige gevallen moet u weten of de media-inhoud live of VOD is.
-seo-description: In sommige gevallen moet u weten of de media-inhoud live of VOD is.
-seo-title: Identificeer of de inhoud live of VOD is
 title: Identificeer of de inhoud live of VOD is
-uuid: 4d514c46-a1d0-4721-a423-92108126e37e
 translation-type: tm+mt
-source-git-commit: 040655d8ba5f91c98ed0584c08db226ffe1e0f4e
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '90'
+source-wordcount: '67'
 ht-degree: 0%
 
 ---
