@@ -1,13 +1,10 @@
 ---
 description: In deze sectie worden de functies beschreven die beschikbaar zijn in verschillende versies van Flash Player en TVSDK.
-seo-description: In deze sectie worden de functies beschreven die beschikbaar zijn in verschillende versies van Flash Player en TVSDK.
-seo-title: RBOP-clientondersteuning
 title: RBOP-clientondersteuning
-uuid: d1d0f788-7bc1-488c-807e-be47f83725e9
 translation-type: tm+mt
-source-git-commit: 5df9a8b98baaf1cd1803581d2b60c7ed4261a0e8
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '355'
+source-wordcount: '338'
 ht-degree: 0%
 
 ---
@@ -17,7 +14,7 @@ ht-degree: 0%
 
 In deze sectie worden de functies beschreven die beschikbaar zijn in verschillende versies van Flash Player en TVSDK.
 
-**Fout bij verzenden**  - De TVSDK-platforms die hieronder worden vermeld, verzenden een DRM-runtime-fout wanneer de resolutie van de afgespeelde inhoud groter is dan de resolutie die is toegestaan voor de apparaatconfiguratie die is gedefinieerd in het DRM-beleid:
+**Fout bij verzenden**  - De TVSDK-platforms die hieronder worden vermeld, verzenden een DRM-runtime-fout wanneer de resolutie van de afgespeelde inhoud hoger is dan de resolutie die is toegestaan voor de apparaatconfiguratie die is gedefinieerd in het DRM-beleid:
 
 * Flash Player versies 18 tot en met 20
 * Android, versies
