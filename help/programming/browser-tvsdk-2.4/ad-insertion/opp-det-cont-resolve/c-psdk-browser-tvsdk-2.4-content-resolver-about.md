@@ -1,13 +1,10 @@
 ---
 description: Browser TVSDK biedt standaard opportuniteitsgeneratoren en inhoudsoplossers die advertenties in de tijdlijn plaatsen, en deze generatoren en oplossers zijn gebaseerd op niet-standaardlabels in het manifest. Uw toepassing zou de chronologie kunnen moeten veranderen die op kansen wordt gebaseerd die in manifest worden geïdentificeerd.
-seo-description: Browser TVSDK biedt standaard opportuniteitsgeneratoren en inhoudsoplossers die advertenties in de tijdlijn plaatsen, en deze generatoren en oplossers zijn gebaseerd op niet-standaardlabels in het manifest. Uw toepassing zou de chronologie kunnen moeten veranderen die op kansen wordt gebaseerd die in manifest worden geïdentificeerd.
-seo-title: Opportuniteitsgeneratoren en contentoplosers
 title: Opportuniteitsgeneratoren en contentoplosers
-uuid: e462ad89-1609-4efa-aa67-cfd04f045927
 translation-type: tm+mt
-source-git-commit: 040655d8ba5f91c98ed0584c08db226ffe1e0f4e
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '351'
+source-wordcount: '301'
 ht-degree: 0%
 
 ---
