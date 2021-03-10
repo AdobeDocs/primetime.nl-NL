@@ -1,13 +1,10 @@
 ---
 description: Oplossen en laden van advertenties kan een onaanvaardbare wachttijd veroorzaken voor een gebruiker die wacht tot het afspelen is gestart. Met de functie Oplossen van problemen tijdens laden kunt u deze opstartafstand verminderen. Advertenties kunnen nu met een opgegeven interval worden opgelost vóór de positie van het ad-einde. Dit wordt bereikt door gebruik te maken van een aanpak met twee spelers.
-seo-description: Oplossen en laden van advertenties kan een onaanvaardbare wachttijd veroorzaken voor een gebruiker die wacht tot het afspelen is gestart. Met de functie Oplossen van problemen tijdens laden kunt u deze opstartafstand verminderen. Advertenties kunnen nu met een opgegeven interval worden opgelost vóór de positie van het ad-einde. Dit wordt bereikt door gebruik te maken van een aanpak met twee spelers.
-seo-title: Just-in-Time en oplossing
 title: Just-in-Time en oplossing
-uuid: f7b20439-3604-4d69-bdfe-2e0ad26f495b
 translation-type: tm+mt
-source-git-commit: 557f42cd9a6f356aa99e13386d9e8d65e043a6af
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '497'
+source-wordcount: '439'
 ht-degree: 0%
 
 ---
