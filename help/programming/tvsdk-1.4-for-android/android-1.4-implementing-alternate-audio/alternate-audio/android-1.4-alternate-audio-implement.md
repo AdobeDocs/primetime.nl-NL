@@ -1,13 +1,10 @@
 ---
 description: Voor langbindende audio wordt MediaPlayer gebruikt om een video af te spelen die is opgegeven in een M3U8 HLS-afspeellijst en die verschillende alternatieve audiostreams kan bevatten.
-seo-description: Voor langbindende audio wordt MediaPlayer gebruikt om een video af te spelen die is opgegeven in een M3U8 HLS-afspeellijst en die verschillende alternatieve audiostreams kan bevatten.
-seo-title: Alternatieve audiotracks openen
 title: Alternatieve audiotracks openen
-uuid: c7060022-29ec-43c1-811b-41cca5f5356c
 translation-type: tm+mt
-source-git-commit: 5908e5a3521966496aeec0ef730e4a704fddfb68
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '136'
+source-wordcount: '107'
 ht-degree: 0%
 
 ---
