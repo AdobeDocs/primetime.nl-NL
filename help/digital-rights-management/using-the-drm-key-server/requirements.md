@@ -1,9 +1,9 @@
 ---
-seo-title: Vereisten voor het gebruik van Primetime DRM Key Server
 title: Vereisten voor het gebruik van Primetime DRM Key Server
-uuid: 769f9e10-7a3e-4a38-b30d-18181b666bb4
+description: Vereisten voor het gebruik van Primetime DRM Key Server
+copied-description: true
 translation-type: tm+mt
-source-git-commit: 635e2893439c5459907c54d2c3bd86f58da0eec5
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
 source-wordcount: '153'
 ht-degree: 0%
