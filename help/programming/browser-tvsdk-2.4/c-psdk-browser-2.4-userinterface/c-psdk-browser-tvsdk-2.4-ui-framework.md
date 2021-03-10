@@ -1,13 +1,10 @@
 ---
 description: Het UI-framework is een UI-laag boven op Browser-TVSDK, die uit het vak diverse aan videospelers gerelateerde UI-constructies biedt. U kunt een zeer aanpasbare speler tot stand brengen door de puntveranderingen aan te brengen die voor uw milieu aangewezen zijn.
-seo-description: Het UI-framework is een UI-laag boven op Browser-TVSDK, die uit het vak diverse aan videospelers gerelateerde UI-constructies biedt. U kunt een zeer aanpasbare speler tot stand brengen door de puntveranderingen aan te brengen die voor uw milieu aangewezen zijn.
-seo-title: Het UI-framework
 title: Het UI-framework
-uuid: 8460d65c-b9aa-40d0-9e68-771b9f73a7b4
 translation-type: tm+mt
-source-git-commit: 2399515edaad49341cfa406a13887bcc8a3562be
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '886'
+source-wordcount: '842'
 ht-degree: 0%
 
 ---
