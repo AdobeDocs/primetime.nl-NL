@@ -1,13 +1,10 @@
 ---
 description: U kunt metagegevens aanpassen en invoegen.
-seo-description: U kunt metagegevens aanpassen en invoegen.
-seo-title: Metagegevens voor toevoegen en invoegen aanpassen
 title: Metagegevens voor toevoegen en invoegen aanpassen
-uuid: 047470d3-45bd-48be-82ce-4e9d9fe6ea10
 translation-type: tm+mt
-source-git-commit: 040655d8ba5f91c98ed0584c08db226ffe1e0f4e
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '113'
+source-wordcount: '103'
 ht-degree: 0%
 
 ---
