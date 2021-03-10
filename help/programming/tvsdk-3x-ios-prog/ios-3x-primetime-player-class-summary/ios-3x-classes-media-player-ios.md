@@ -1,13 +1,10 @@
 ---
 description: U kunt de objectief-C API van de Speler Primetime gebruiken om het gedrag van de speler aan te passen.
-seo-description: U kunt de objectief-C API van de Speler Primetime gebruiken om het gedrag van de speler aan te passen.
-seo-title: Mediaspelers, klassen
 title: Mediaspelers, klassen
-uuid: 705c71b6-4e5e-46b5-a59d-13df977b04f2
 translation-type: tm+mt
-source-git-commit: b13f2d3f083a6ca333a4edba1c8d7261f7d448ad
+source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
-source-wordcount: '303'
+source-wordcount: '285'
 ht-degree: 0%
 
 ---
