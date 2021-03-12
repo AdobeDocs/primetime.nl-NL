@@ -5,7 +5,7 @@ audience: end-user
 user-guide-title: Opmerkingen bij de release Primetime
 user-guide-description: Verstrekt versie-specifieke informatie, systeemvereisten, beperkingen, vaste kwesties, en bekende kwesties.
 translation-type: tm+mt
-source-git-commit: a42c5b4478967822c920d96b05d5f04a6dec8c25
+source-git-commit: d1cf8a05172c04655c8a7c76ce116c8f7be61ec9
 workflow-type: tm+mt
 source-wordcount: '114'
 ht-degree: 0%
@@ -21,7 +21,7 @@ ht-degree: 0%
    + [Opmerkingen bij de release PTAI 20.12.1](ptai-20x-release-notes.md)
    + [Opmerkingen bij de release PTAI 19.11.1](ptai-19x-release-notes.md)
 + TVSDK voor iOS {#tvsdk-ios}
-   + [Opmerkingen bij de release TVSDK 3.12 voor iOS](tvsdk-3x-ios.md)
+   + [Opmerkingen bij de release TVSDK 3.13 voor iOS](tvsdk-3x-ios.md)
    + [Opmerkingen bij de release TVSDK 1.4 voor iOS](tvsdk-1-4-ios.md)
 + TVSDK voor Android {#tvsdk-android}
    + [Opmerkingen bij de release TVSDK 3.13 voor Android](tvsdk-3x-android.md)
