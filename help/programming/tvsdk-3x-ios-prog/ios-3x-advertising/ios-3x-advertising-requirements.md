@@ -2,9 +2,9 @@
 description: U kunt advertenties in uw VOD en levende/lineaire inhoud opnemen door Adobe Primetime en besluitvormingsinterface te gebruiken.
 title: Reclamevereisten
 translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+source-git-commit: 944bfb0f3bd0050a9d2974a37f4fabddaaac8a93
 workflow-type: tm+mt
-source-wordcount: '226'
+source-wordcount: '234'
 ht-degree: 0%
 
 ---
@@ -27,6 +27,4 @@ Als u advertenties wilt opnemen in uw video-inhoud, moet u ervoor zorgen dat de 
 * Als de hoofdinhoud een audio-enige stroom bevat, moet de reclame-inhoud ook een audio-enige stroom bevatten.
 * Als de hoofdinhoud subtitelstromen bevat, moet de reclame-inhoud niet-gecodeerd zijn.
 * Als de belangrijkste inhoud veelvoudige beetjetarief (MBR) is, moet de reclame inhoud ook MBR zijn.
-* Als de hoofdinhoud alternatieve audiotracks heeft, moet elke advertentie ten minste één audiostream hebben.
-
-Als de advertentie niet minstens één audio-enige stroom heeft, wordt de advertentie overgeslagen.
+* Als de hoofdinhoud alternatieve audiotracks heeft, moet elke advertentie ten minste één audiostream hebben of moeten de advertenties worden gedempt. Als de advertentie niet minstens één audio-enige stroom heeft en niet wordt gedemuxed, wordt de advertentie overgeslagen.
