@@ -3,9 +3,9 @@ title: Opmerkingen bij de release Primetime
 description: Opmerkingen bij de release Primetime
 copied-description: true
 translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+source-git-commit: 944bfb0f3bd0050a9d2974a37f4fabddaaac8a93
 workflow-type: tm+mt
-source-wordcount: '342'
+source-wordcount: '378'
 ht-degree: 0%
 
 ---
@@ -14,6 +14,12 @@ ht-degree: 0%
 # Opmerkingen bij de release Primetime
 
 Welkom bij de Adobe Primetime Release Notes. De documenten die in de linkernavigatie worden vermeld verstrekken versie-specifieke informatie, systeemvereisten, beperkingen, vaste kwesties, en bekende kwesties.
+
+## Verbeteringen en correcties in TVSDK 3.13 iOS
+
+De release introduceert ondersteuning voor DEMUXED &#39;HLS/CMAF&#39; (preroll, midroll en postroll)-advertenties voor LIVE-, VOD- en FER-streams.
+
+Zie [Opmerkingen bij de release van TVSDK voor iOS](../release-notes/tvsdk-3x-ios.md) voor meer informatie en oplossingen.
 
 ## Verbeteringen en correcties in PTAI 21.2.2
 
