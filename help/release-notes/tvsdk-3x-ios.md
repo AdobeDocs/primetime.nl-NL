@@ -1,16 +1,16 @@
 ---
-title: Opmerkingen bij de release TVSDK 3.12 voor iOS
-description: De opmerkingen bij de release TVSDK 3.12 voor iOS beschrijven wat nieuw of gewijzigd is, de opgeloste en bekende problemen en de apparaatproblemen in TVSDK iOS 3.12.
+title: Opmerkingen bij de release TVSDK 3.13 voor iOS
+description: De opmerkingen bij de release TVSDK 3.13 voor iOS beschrijven wat nieuw of gewijzigd is, de opgeloste en bekende problemen en de apparaatproblemen in TVSDK iOS 3.13.
 translation-type: tm+mt
-source-git-commit: 51b3713e04fcb4adeaa7a8d1b700372b1dba7cf6
+source-git-commit: d1cf8a05172c04655c8a7c76ce116c8f7be61ec9
 workflow-type: tm+mt
-source-wordcount: '7665'
+source-wordcount: '7713'
 ht-degree: 0%
 
 ---
 
 
-# Opmerkingen bij de release TVSDK 3.12 voor iOS {#tvsdk-for-ios-release-notes}
+# Opmerkingen bij de release TVSDK 3.13 voor iOS {#tvsdk-for-ios-release-notes}
 
 De opmerkingen bij de release TVSDK 3.12 voor iOS beschrijven wat nieuw of gewijzigd is, de opgeloste en bekende problemen en de apparaatproblemen in TVSDK iOS 3.12.
 
@@ -20,13 +20,17 @@ Voordat u iOS 3.12 downloadt, moet u controleren of uw hardware-, besturingssyst
 
 Besturingssysteem: iOS 8.0 of hoger.
 
-## iOS TVSDK 3.12
+## iOS TVSDK 3.13
 
-Probleem verholpen waarbij de live stream na 15 minuten afspelen mislukt.
+De release introduceert ondersteuning voor DEMUXED &#39;HLS/CMAF&#39; (preroll, midroll en postroll)-advertenties voor LIVE-, VOD- en FER-streams.
 
-Zie [Klantproblemen opgelost](#resolved-issues) voor oplossingen in de huidige release en [bekende problemen en beperkingen](#known-issues-and-limitations) voor beperkingen.
+Zie [Opgeloste problemen](#resolved-issues) voor oplossingen voor door de klant gemelde problemen. Voor beperkingen, zie [bekende kwesties en beperkingen](#known-issues-and-limitations).
 
 ### Nieuwe functies en oplossingen in de vorige releases {#whats-new-previous}
+
+**iOS TVSDK 3.12**
+
+Probleem verholpen waarbij de live stream na 15 minuten afspelen mislukt.
 
 **iOS TVSDK 3.11**
 
@@ -239,7 +243,7 @@ Voor VAST-advertenties (creatieven) waarvoor de terugvalregel is ingeschakeld, b
 
 **Blackout-signalering met vervanging van alternatieve inhoud**
 
-In het kader van de 1.4-TVSDK-update steunen wij nu ook het in- en terugkeren van regionale stroomuitval tegen lineaire inhoud. De TVSDK kan nu twee manifestbestanden parallel, hoofdbestand en alternatief verwerken, om te controleren op uitstroomsignalen, zelfs wanneer alternatieve programmering wordt weergegeven in plaats van de oorspronkelijke programmering.
+In het kader van de 1.4-TVSDK-update steunen wij nu ook het in- en terugkeren van regionale stroomuitval tegen lineaire inhoud. De TVSDK kan nu twee manifestbestanden parallel, hoofdbestand en alternatief verwerken om te controleren op uitstroomsignalen, zelfs wanneer alternatieve programmering wordt weergegeven in plaats van de oorspronkelijke programmering.
 
 **Versie 1.4.8**
 
@@ -276,7 +280,7 @@ TVSDK ondersteunt nu het verzenden van mTVR- en MDPR ID3-beacons naar de Nielsen
 
 * **Blackout-signalering met vervanging van alternatieve inhoud**
 
-In het kader van de 1.4-TVSDK-update ondersteunt de TVSDK nu ook het in- en terugkeren van regionale stroomuitval tegen lineaire inhoud. De TVSDK kan nu twee manifestbestanden parallel, hoofdbestand en alternatief verwerken, om te controleren op uitstroomsignalen, zelfs wanneer alternatieve programmering wordt weergegeven in plaats van de oorspronkelijke programmering.
+In het kader van de 1.4-TVSDK-update ondersteunt de TVSDK nu ook het in- en terugkeren van regionale stroomuitval tegen lineaire inhoud. De TVSDK kan nu twee manifestbestanden parallel, hoofdbestand en alternatief verwerken om te controleren op uitstroomsignalen, zelfs wanneer alternatieve programmering wordt weergegeven in plaats van de oorspronkelijke programmering.
 
 * **C3-advertenties verwijderen/vervangen**
 
@@ -300,6 +304,14 @@ Comment Type: draft
 
  <p>TVSDK versions earlier than version 1.4.28 sometimes exhibit a long delay in the startup time when ad-enabled content is played on devices that are running on iOS 10. To resolve this issue, upgrade to version 1.4.28 or later. Version 1.4.28 was released on August 31, 2016, and iOS 10 was released on September 13, 2016.</p> 
 -->
+
+**iOS TVSDK 3.13**
+
+* (ZD 42085) - Problemen met afspelen op CMAF-streams.
+
+* (ZD-43215) - De speler wordt vastgelopen wanneer de speler wordt verwijderd terwijl een advertentie wordt uitgevoerd.
+
+* (ZD 43210) - Het afspelen van iOS HLS loopt vast wanneer WebVTT-ondertitel is ingeschakeld.
 
 **iOS TVSDK 3.12**
 
@@ -347,7 +359,7 @@ Geen nieuwe problemen in deze release.
 
 **Versie 3.2**
 
-* **Ticket#36588** - Player crasht wanneer de STOP-methode van MediaPlayer wordt aangeroepen.
+* **Ticket#36588** - Player crasht wordt waargenomen wanneer de STOP-methode van MediaPlayer wordt aangeroepen.
 
 Correctie van het periodiek vastlopen dat werd waargenomen wanneer de STOP-methode wordt aangeroepen voor een paar streams met ondertitels.
 
@@ -676,7 +688,7 @@ Dit probleem is hetzelfde als ZD #25908.
 
 * (ZD# 23901) Advertenties van derden worden niet afgespeeld
 
-Dit probleem is opgelost door naar de URL-structuur van CRS v3 te gaan en de zone-id op te nemen in de opnieuw verpakte URL.
+Dit probleem is opgelost door naar de URL-structuur van CRS v3 te gaan om de zone-id op te nemen in de opnieuw verpakte URL.
 
 * (ZD #25183) Problemen met het afspelen van DRM op tvOS en iOS
 
