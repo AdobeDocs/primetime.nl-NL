@@ -5,15 +5,15 @@ description: Adobe Primetime-specificaties
 seo-description: Adobe Primetime-specificaties
 topic-tags: Adobe Primetime Specifications
 translation-type: tm+mt
-source-git-commit: 53014028cf1a9cb48f93781cbbb4aec3e2bcc523
+source-git-commit: 0bd926b510cd23268b6374ef81a09efcc5d1371a
 workflow-type: tm+mt
-source-wordcount: '264'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
 
 
-# Adobe Primetime API-specificaties
+# Adobe Primetime-specificaties
 
 Adobe Primetime brengt TV aan elk IP-verbonden scherm. Het geeft programmeurs en exploitanten modulaire mogelijkheden om video over Desktops en apparaten te stromen, te beschermen, te analyseren en te monetiseren. De kracht achter deze ervaringen bestaat uit een aantal streamingtechnologieën die worden gebruikt om inhoud en reclame te leveren aan primetime-videospelers.
 
