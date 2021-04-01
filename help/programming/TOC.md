@@ -1,11 +1,9 @@
 ---
-cloud: experience-cloud
-product: adobe primetime
 audience: end-user
 user-guide-title: Help bij programmeren bij primetime
 user-guide-description: Hiermee kunt u leren toepassingen en videospelers te ontwikkelen met behulp van Java op Android-apparaten en met behulp van doelstelling-C op iOS-apparaten.
 translation-type: tm+mt
-source-git-commit: aab96dcf5107be90534350156ee66a88de80613e
+source-git-commit: 95626ebde981d1996652a67bc9e0cea05f24aa6d
 workflow-type: tm+mt
 source-wordcount: '4342'
 ht-degree: 0%
