@@ -1,16 +1,15 @@
 ---
-cloud: experience-cloud
-solution-title: Meer informatie en ondersteuning
-solution-hub-url: https://helpx.adobe.com/support/primetime.html
-solution-image: https://www.adobe.com
-getting-started-title: Aan de slag
-getting-started-url: https://www.adobe.com/devnet/primetime.html
-tutorials-title: Zelfstudies
-tutorials-url: https://www.adobe.com/devnet/primetime.html
-git-repo: https://github.com/AdobeDocs/primetime.en
+cloud: Experience Cloud
+type: Documentatie
+product: adobe primetime
+solution: Primetime
+git-repo: https://git.corp.adobe.com/AdobeDocs/primetime.nl-NL
 index: y
 translation-type: tm+mt
-source-git-commit: a648b6c9dd606304328dc6b5bed4c847e54813eb
+source-git-commit: 95626ebde981d1996652a67bc9e0cea05f24aa6d
+workflow-type: tm+mt
+source-wordcount: '112'
+ht-degree: 0%
 
 ---
 
@@ -27,4 +26,4 @@ Het bestand metadata.md bevat metagegevens op repo-niveau die worden doorgegeven
 | aan de slag-url | Aan de slag met Help-pagina koppelen |
 | zelfstudies-url | Koppeling maken naar videozelfstudies: helpx-zelfstudies of KT-zelfstudies |
 | mini-toc-niveaus | Hiermee bepaalt u het aantal kopniveaus dat wordt weergegeven in de rechterrails. default is 2 |
-| git-repo | Hiermee geeft u de locatie op van het hoofdrepo voor intern gebruik |
+| git-repo | Hiermee wordt de locatie van het master repo voor intern gebruik opgegeven |
