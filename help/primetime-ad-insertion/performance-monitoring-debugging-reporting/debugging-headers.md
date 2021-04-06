@@ -1,14 +1,15 @@
 ---
 title: Fouten opsporen in koppen
-description: null
+description: Fouten opsporen in koppen
+copied-description: true
+exl-id: 42c19089-2c61-4622-b53a-c28b8d495ef8
 translation-type: tm+mt
-source-git-commit: 45e5c8e6144adf4a405bde7d8d19505b7ad549e0
+source-git-commit: 3e63c187f12d1bff53370bbcde4d6a77f58f3b4f
 workflow-type: tm+mt
-source-wordcount: '255'
+source-wordcount: '257'
 ht-degree: 7%
 
 ---
-
 
 # Foutopsporingskoppen (X-ADBE-AI-X1) {#debugging-headers}
 
@@ -22,7 +23,7 @@ De velden worden als volgt beschreven:
 | Naam | Beschrijving | Voorbeeld |
 |--- |--- |--- |
 | isActivePreroll | Of een advertentieoproep voor de prullenbak is verzonden | 0 |
-| isActiveMidroll | Of een ad call for midroll werd verzonden | 1 |
+| isActiveMidroll | Of een ad call for midroll werd verzonden | 3 |
 | Aanvraag-id | Interne SSAI | 1594181097704 |
 | Sessie-id | Sessie-id van de aanvraag | 15126333-5ba9-49b8-a219-4f37e60d259c |
 | Type stream | u=variant, l=live, v=vod | v |
@@ -30,7 +31,7 @@ De velden worden als volgt beschreven:
 | Aantal extra einden | Totaal aantal en onderbrekingen in dit manifest | 1 |
 | Totale duur van einde advertentie | Totale duur van ad-onderbreking, in seconden | 30 |
 | Ad Calls Count | Aantal ad vraag die in dit verzoek wordt verzonden | 2 |
-| Redirect Ad de Telling van Vraag | Aantal omleidings en vraag die in dit verzoek wordt verzonden | 3 |
+| Redirect Ad de Telling van Vraag | Aantal omleidings en vraag die in dit verzoek wordt verzonden | 1 |
 | Totale duur van AdCall | Totale verwerkingstijd AdCall | 199 |
 | Aantal ingevoegde advertenties | Aantal advertenties die in het manifest zijn ingevoegd | 2 |
 | Tijdstip bronmanifest | Tijd besteed aan het ophalen van alleen inhoud | 185 |
