@@ -1,14 +1,15 @@
 ---
 title: Verboden logboekregistratie
-description: null
+description: Verboden logboekregistratie
+copied-description: true
+exl-id: f2d1b0c2-ba28-4fba-9a4e-71d1421f37fe
 translation-type: tm+mt
-source-git-commit: d5e948992d7c59e80b530c8f4619adbffc3c03d8
+source-git-commit: 3e63c187f12d1bff53370bbcde4d6a77f58f3b4f
 workflow-type: tm+mt
-source-wordcount: '2155'
+source-wordcount: '2157'
 ht-degree: 0%
 
 ---
-
 
 # Uitgebreide logboekregistratie {#verbose-logging}
 
@@ -130,7 +131,7 @@ De verslagen van dit type registreren de resultaten van de ad verzoeken die door
 | ad_duration | integer | Duur (seconden) van advertentie, van reactie van de advertentieserver. |
 | ad_content_url | string | URL van het manifestbestand van de advertentie, van de reactie van de advertentieserver. |
 | **†** ad_content_url_actual | string | URL van het ingevoegde manifestbestand van de advertentie. Leeg voor TRACE_AD_REDIRECT. |
-| ad_system_id | string | Systeem toevoegen, van de reactie van de advertentieserver (Auditude indien niet opgegeven). |
+| ad_system_id | string | Systeem toevoegen uit de reactie van de advertentieserver (Auditude indien niet opgegeven). |
 | ad_id | string | Id van de advertentie, van de reactie van de advertentieserver. |
 | creative_id | string | Id van creatief, van de advertentieknooppunt, van de reactie van de advertentieserver. |
 | **†** ad_call_id | string | Niet gebruikt. Gereserveerd voor toekomstig gebruik. |
