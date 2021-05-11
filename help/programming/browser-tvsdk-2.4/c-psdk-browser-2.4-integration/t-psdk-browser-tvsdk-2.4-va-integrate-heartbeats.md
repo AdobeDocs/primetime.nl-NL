@@ -1,14 +1,14 @@
 ---
 description: U kunt de speler configureren om het videogebruik te volgen en te analyseren.
 title: Videoanalysemogelijkheden initialiseren en configureren
+exl-id: e0bf461b-a431-4fba-bd3d-c38be307a92f
 translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+source-git-commit: d884836a2a585bd3540b085de1098cf6ae3de46b
 workflow-type: tm+mt
 source-wordcount: '687'
 ht-degree: 0%
 
 ---
-
 
 # Videoanalysemogelijkheden initialiseren en configureren {#initialize-and-configure-video-analytics}
 
@@ -133,6 +133,7 @@ Voordat u een nieuwe afspeelsessie voor inhoud begint, moet u de vorige instanti
           videoAnalyticsProvider.detachMediaPlayer();
           videoAnalyticsProvider = null;
       ```
+
    4. Markeer de live/lineaire stream handmatig als voltooid.
 Als u verschillende afleveringen hebt op één live stream, kunt u een aflevering handmatig als voltooid markeren met de volledige API. Hiermee beëindigt u de sessie voor het bijhouden van de video voor de huidige video-uitzending en kunt u een nieuwe traceringssessie starten voor de volgende uitzending.
       >[!TIP]
@@ -146,5 +147,5 @@ Als u verschillende afleveringen hebt op één live stream, kunt u een afleverin
       videoAnalyticsProvider.detachMediaPlayer();
       videoAnalyticsProvider = null;
       // Create a new instance of VideoAnalyticsProvider to continue tracking.
-      } 
+      }
       ```
