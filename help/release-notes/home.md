@@ -2,28 +2,29 @@
 title: Opmerkingen bij de release Primetime
 description: Opmerkingen bij de release Primetime
 copied-description: true
-translation-type: tm+mt
-source-git-commit: 944bfb0f3bd0050a9d2974a37f4fabddaaac8a93
+exl-id: 29087a3e-f16e-4510-8d3a-ed2229700899
+source-git-commit: fe0f5f3399d2e2ab3e07713fbcd29ede47888d98
 workflow-type: tm+mt
-source-wordcount: '378'
+source-wordcount: '352'
 ht-degree: 0%
 
 ---
 
-
 # Opmerkingen bij de release Primetime
 
 Welkom bij de Adobe Primetime Release Notes. De documenten die in de linkernavigatie worden vermeld verstrekken versie-specifieke informatie, systeemvereisten, beperkingen, vaste kwesties, en bekende kwesties.
+
+## Verbeteringen en correcties in PTAI 21.5.1
+
+De versie omvat nieuwe telemetrie voor aanstaande dashboardveranderingen, en steun voor verouderde segmentatietype 0x01 (UPID) voor op SCTE-Gebaseerde richtsnoerformaten.
+
+Voor andere correcties en details, zie [Opmerkingen bij de release van Ad Insertion](/help/release-notes/ptai-21x-release-notes.md)
 
 ## Verbeteringen en correcties in TVSDK 3.13 iOS
 
 De release introduceert ondersteuning voor DEMUXED &#39;HLS/CMAF&#39; (preroll, midroll en postroll)-advertenties voor LIVE-, VOD- en FER-streams.
 
 Zie [Opmerkingen bij de release van TVSDK voor iOS](../release-notes/tvsdk-3x-ios.md) voor meer informatie en oplossingen.
-
-## Verbeteringen en correcties in PTAI 21.2.2
-
-De release bevat ondersteuning voor het invoegen/synchroniseren van EXT-X-IMAGE-STREAM-INF-streams in HLS-streams. De eigenschap wordt toegelaten door een server-zijconfiguratie. Neem contact op met de vertegenwoordiger van uw technische account om deze functie in te schakelen.
 
 ## Oplossingen in TVSDK 3.13 Android
 
@@ -32,12 +33,6 @@ Deze release biedt een oplossing voor het probleem van het stilzetten van de Wid
 Stel de API `MediaPlayer.flushVideoDecoderOnHeaderChange(true)` voor de opgegeven Fire TV-apparaten in voordat u het afspelen start om het probleem op te lossen. De standaardwaarde is false.
 
 Raadpleeg [TVSDK voor opmerkingen bij de Android-release](../release-notes/tvsdk-3x-android.md) voor meer informatie.
-
-## Verbeteringen en correcties in Opmerkingen bij de release TVSDK 3.12 iOS
-
-De release was vooral gericht op het oplossen van problemen met klanten.
-
-Zie voor meer informatie over de huidige uitgebrachte versie voor [iOS](../release-notes/tvsdk-3x-ios.md).
 
 ## Zie ook
 
