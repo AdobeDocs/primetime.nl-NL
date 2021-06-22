@@ -1,14 +1,13 @@
 ---
 description: Uw toepassing kan de activiteit in uw speler en de veranderende status van de speler controleren door naar de gebeurtenissen te luisteren die door TVSDK worden verzonden.
 title: Overzicht van gebeurtenissen in de primaire speler
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: 3912f140-1600-41fb-9dc4-306646b7cd85
+source-git-commit: 59f7f8aa82be59c4012ee80648032600590bc4e1
 workflow-type: tm+mt
-source-wordcount: '568'
+source-wordcount: '567'
 ht-degree: 0%
 
 ---
-
 
 # Overzicht van gebeurtenissen in primetime-speler {#primetime-player-events-summary}
 
@@ -109,7 +108,7 @@ TVSDK brengt u op de hoogte wanneer gebeurtenissen plaatsvinden waarop uw toepas
 
 * **Gebeurteniscode** `BUFFERING_END`
 
-&quot;BufferPreparedEventListener&quot;
+`BufferPreparedEventListener`
 
 * **** BetekenisDe buffer wordt voorbereid.
 
