@@ -16,7 +16,7 @@ U kunt de duur van de actieve inhoud weergeven.
 
 Een weergave tijdens de videoduur implementeren met de volgende voorbeeldcode:
 
-    De eigenschap &#39;PTMediaPlayer`, [seekableRange](https://help.adobe.com/en_US/primetime/api/psdk/appledoc/Classes/PTMediaPlayer.html#//api/name/seekableRange), bevat het huidige bereik van doorzoekbare vensters:
+    De eigenschap &#39;PTMediaPlayer&grave;, [seekableRange](https://help.adobe.com/en_US/primetime/api/psdk/appledoc/Classes/PTMediaPlayer.html#//api/name/seekableRange), bevat het huidige bereik van doorzoekbare vensters:
     
     * Voor VOD is dit bereik het gehele VOD-inhoudsbereik, inclusief advertenties.
     * Voor live/lineair vertegenwoordigt dit bereik het doorzoekbare venster.
