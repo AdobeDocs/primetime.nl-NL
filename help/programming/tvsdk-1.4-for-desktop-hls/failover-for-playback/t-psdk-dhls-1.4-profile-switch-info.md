@@ -52,7 +52,7 @@ Wanneer de media speler zijn huidige profiel aan een nieuw profiel overschakelt,
     </tbody>
 </table>
 
-    Hier volgen enkele voorbeelden van geretourneerde &#39;description`-tekenreeksen:
+    Hier volgen enkele voorbeelden van geretourneerde &#39;description&grave;-tekenreeksen:
     
     &quot;
     &quot;Bitrate::=up;Reden::=Network Adaptation;&quot;
@@ -60,7 +60,7 @@ Wanneer de media speler zijn huidige profiel aan een nieuw profiel overschakelt,
     &quot;Bitrate::=down;Reden:=Failover;&quot;
     &quot;
     
-    * ` width&#39;: Geheel getal dat de breedte in pixels aangeeft.
+    * &grave; width&#39;: Geheel getal dat de breedte in pixels aangeeft.
     * &quot;hoogte&quot;: Geheel getal dat de hoogte in pixels aangeeft.
     
     >[!OPMERKING]
