@@ -3,15 +3,15 @@ product: adobe primetime
 audience: end-user
 user-guide-title: Opmerkingen bij de release Primetime
 user-guide-description: Verstrekt versie-specifieke informatie, systeemvereisten, beperkingen, vaste kwesties, en bekende kwesties.
-source-git-commit: fe0f5f3399d2e2ab3e07713fbcd29ede47888d98
+source-git-commit: 2b7f0e3202107320168e5b0b37b3a9296029a0cd
 workflow-type: tm+mt
-source-wordcount: '114'
+source-wordcount: '113'
 ht-degree: 0%
 
 ---
 
 
-# Opmerkingen bij de release bij primetime {#release-notes}
+# Opmerkingen bij de release Primetime {#release-notes}
 
 + [Overzicht van opmerkingen bij de release](home.md)
 + Primetime Ad Insertion {#ptai}
@@ -28,7 +28,7 @@ ht-degree: 0%
    + [Opmerkingen bij de release TVSDK 1.4 voor Android](tvsdk-1-4-android.md)
 + TVSDK van browser {#browser-tvsdk}
    + [Opmerkingen bij de release Browser TVSDK 2.4](tvsdk-24-browser.md)
-+ TVSDK voor desktop HLS {tvsdk-desktop-hls}
++ TVSDK voor desktop-HLS {#tvsdk-desktop-hls}
    + [Opmerkingen bij de release TVSDK 1.4 voor desktop HLS](tvsdk-1-4-desktop-hls.md)
 + Primetime Offline Packager {#offline-packager}
    + [Versie 2 van de Offline Packager van primetime](offline-packager-2x-release-note.md)
