@@ -28,8 +28,7 @@ java -jar AdobePublisherIDUtility.jar
 </i class="+ topic>
 ```
 
-* 
-   * `signaturefile`* geeft het pad aan naar het bestand signatures.xml van de AIR-toepassing in de  [!DNL META-INF] map met toepassingen.
+* `signaturefile` geeft het pad aan naar het bestand signatures.xml van de AIR-toepassing in de  [!DNL META-INF] map met toepassingen.
 
 * `signingcert` geeft het certificaat aan waarmee de AIR-toepassing wordt ondertekend
 
