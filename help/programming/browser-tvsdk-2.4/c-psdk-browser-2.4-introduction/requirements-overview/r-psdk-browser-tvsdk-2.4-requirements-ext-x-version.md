@@ -1,16 +1,15 @@
 ---
-description: 'De versie van #EXT-X-VERSION in het .m3u8-bestand bepaalt welke functies beschikbaar zijn voor uw toepassing en welke EXT-tags geldig zijn in uw afspeellijst/manifest.'
-title: '#EXT-X-VERSION-vereisten'
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+description: De versie van `#'EXT-X-VERSION in het .m3u8 dossier beïnvloedt welke eigenschappen aan uw toepassing beschikbaar zijn en welke markeringen EXT in uw playlist/manifest geldig zijn.
+title: '`#''EXT-X-VERSION-vereisten'
+exl-id: 1b7c205b-c6b1-416f-885a-d1cd23d8e803
+source-git-commit: 8610792a7410dab59d42ab7771b534c2c1670ad2
 workflow-type: tm+mt
-source-wordcount: '176'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
 
-
-# #EXT-X-VERSION requirements{#ext-x-version-requirements}
+# `#`EXT-X-VERSION-vereisten{#ext-x-version-requirements}
 
 De versie van #EXT-X-VERSION in het .m3u8-bestand bepaalt welke functies beschikbaar zijn voor uw toepassing en welke EXT-tags geldig zijn in uw afspeellijst/manifest.
 
@@ -48,4 +47,3 @@ Hier is wat informatie over de `#EXT-X-VERSION` markering, die de het protocolve
   </tr> 
  </tbody> 
 </table>
-
