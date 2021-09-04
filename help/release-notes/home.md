@@ -3,9 +3,9 @@ title: Opmerkingen bij de release Primetime
 description: Opmerkingen bij de release Primetime
 copied-description: true
 exl-id: 29087a3e-f16e-4510-8d3a-ed2229700899
-source-git-commit: fe0f5f3399d2e2ab3e07713fbcd29ede47888d98
+source-git-commit: 97a192ed1d0ddc034f72a836a70293acfcca9881
 workflow-type: tm+mt
-source-wordcount: '352'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -14,9 +14,9 @@ ht-degree: 0%
 
 Welkom bij de Adobe Primetime Release Notes. De documenten die in de linkernavigatie worden vermeld verstrekken versie-specifieke informatie, systeemvereisten, beperkingen, vaste kwesties, en bekende kwesties.
 
-## Verbeteringen en correcties in PTAI 21.5.1
+## Verbeteringen en correcties in PTAI 21.8.1
 
-De versie omvat nieuwe telemetrie voor aanstaande dashboardveranderingen, en steun voor verouderde segmentatietype 0x01 (UPID) voor op SCTE-Gebaseerde richtsnoerformaten.
+Deze release biedt ondersteuning voor Live/Lineaire streams van DASH.
 
 Voor andere correcties en details, zie [Opmerkingen bij de release van Ad Insertion](/help/release-notes/ptai-21x-release-notes.md)
 
