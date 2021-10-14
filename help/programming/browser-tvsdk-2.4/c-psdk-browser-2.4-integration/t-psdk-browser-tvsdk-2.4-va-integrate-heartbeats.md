@@ -2,10 +2,9 @@
 description: U kunt de speler configureren om het videogebruik te volgen en te analyseren.
 title: Videoanalysemogelijkheden initialiseren en configureren
 exl-id: e0bf461b-a431-4fba-bd3d-c38be307a92f
-translation-type: tm+mt
-source-git-commit: d884836a2a585bd3540b085de1098cf6ae3de46b
+source-git-commit: 3bbf70e07b51585c9b53f470180d55aa7ac084bc
 workflow-type: tm+mt
-source-wordcount: '687'
+source-wordcount: '689'
 ht-degree: 0%
 
 ---
@@ -26,7 +25,7 @@ Controleer of u het volgende hebt voordat u video-tracking (videohartslagen) act
   </tr>
   <tr>
    <td colname="col1"> Het servereindpunt voor videoanalyse bijhouden </td>
-   <td colname="col2"> De URL van het back-end verzameleindpunt van de videoanalyse. Dit is waar alle video hartslag het volgen vraag wordt verzonden. <p>Tip:  De URL van de server voor het bijhouden van bezoekers is gelijk aan de URL van de analytische trackingserver. Voor informatie over het uitvoeren van de Dienst van identiteitskaart van de Bezoeker, zie <a href="https://marketing.adobe.com/resources/help/en_US/mcvid/mcvid-setup-target.html" format="html" scope="external"> de Dienst </a> van identiteitskaart uitvoeren. </p> </td>
+   <td colname="col2"> De URL van het back-end verzameleindpunt van de videoanalyse. Dit is waar alle video hartslag het volgen vraag wordt verzonden. <p>Tip:  De URL van de server voor het bijhouden van bezoekers is gelijk aan de URL van de analytische trackingserver. Voor informatie over het uitvoeren van de Dienst van identiteitskaart van de Bezoeker, zie <a href="https://experienceleague.adobe.com/docs/id-service/using/implementation/setup-target.html?lang=en" format="html" scope="external"> de Dienst </a> van identiteitskaart uitvoeren. </p> </td>
   </tr>
   <tr>
    <td colname="col1"> Accountnaam </td>
@@ -59,7 +58,7 @@ U kunt als volgt video bijhouden in uw speler configureren:
    * De enige configuratieoptie voor de bibliotheek VisitorAPI is URL van het achterste eindpunt dat unieke herkenningsteken voor de huidige gebruiker verstrekt.
    * De URL van de server voor het bijhouden van bezoekers is gelijk aan de URL van de analytische trackingserver.
 
-      Voor informatie over het uitvoeren van de Dienst van identiteitskaart van de Bezoeker, zie [Implementatie van de Dienst van identiteitskaart van de Bezoeker](https://marketing.adobe.com/resources/help/en_US/mcvid/mcvid-setup-target.html).
+      Voor informatie over het uitvoeren van de Dienst van identiteitskaart van de Bezoeker, zie [Implementatie van de Dienst van identiteitskaart van de Bezoeker](https://experienceleague.adobe.com/docs/id-service/using/implementation/setup-target.html?lang=en).
 
    ```js
    var_visitor = new Visitor("MARKETING_CLOUD_ORG_ID");

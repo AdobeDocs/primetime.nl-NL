@@ -1,22 +1,19 @@
 ---
 description: Gebeurtenissen van TVSDK geven de status van de speler aan, fouten die optreden, de voltooiing van handelingen die u hebt aangevraagd, zoals een video die wordt afgespeeld, of handelingen die impliciet optreden, zoals een advertentie-bewerking.
 title: Luisteren naar gebeurtenissen in Primetime Player
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: 3a740245-a9e1-4e36-8761-f9f4b4e85b93
+source-git-commit: 3bbf70e07b51585c9b53f470180d55aa7ac084bc
 workflow-type: tm+mt
-source-wordcount: '263'
+source-wordcount: '236'
 ht-degree: 0%
 
 ---
-
 
 # Overzicht {#implement-event-listeners-and-callbacks-overview}
 
 Met gebeurtenishandlers kan TVSDK reageren op gebeurtenissen. Wanneer een gebeurtenis voorkomt, roept het gebeurtenismechanisme van TVSDK uw geregistreerde gebeurtenismanager en gaat de gebeurtenisinformatie tot de manager over.
 
 De Flash Runtime verstrekt een generisch gebeurtenismechanisme, dat TVSDK ook gebruikt en een reeks douanegebeurtenissen bepaalt. Uw toepassing moet gebeurtenislisteners implementeren voor TVSDK-gebeurtenissen die van invloed zijn op uw toepassing.
-
-Zie [Core Video Playback bijhouden](https://marketing.adobe.com/resources/help/en_US/sc/appmeasurement/hbvideo/c_vhl_track-core-vid-playback.html) voor een volledige lijst met gebeurtenissen voor videoanalyse.
 
 1. Bepaal voor welke gebeurtenissen uw toepassing moet luisteren.
 
@@ -55,5 +52,3 @@ Zie [Core Video Playback bijhouden](https://marketing.adobe.com/resources/help/e
      MediaPlayerStatusChangeEvent.STATUS_CHANGED,  
      onStatusChanged);
    ```
-
-

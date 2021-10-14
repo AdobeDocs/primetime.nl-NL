@@ -1,20 +1,19 @@
 ---
-title: Opmerkingen bij de release TVSDK 3.13 voor Android
-description: De opmerkingen bij de release TVSDK 3.13 voor Android beschrijven wat nieuw of gewijzigd is, de opgeloste en bekende problemen en de apparaatproblemen in TVSDK Android 3.13
+title: Opmerkingen bij de release TVSDK 3.14 voor Android
+description: TVSDK 3.14 voor Android Release-notities beschrijven wat nieuw of gewijzigd is, de opgeloste en bekende problemen en de apparaatproblemen in TVSDK Android 3.14
 products: SG_PRIMETIME
 topic-tags: release-notes
-translation-type: tm+mt
-source-git-commit: b33240bf1b42b80389cd95a7ae4d3f85185a2d32
+exl-id: cd2c64ef-dd42-4dc2-805f-eeb64a8a53d9
+source-git-commit: 988bcf8cbc0175e15bcc899a6f6954cc31c5e127
 workflow-type: tm+mt
-source-wordcount: '5443'
+source-wordcount: '5480'
 ht-degree: 0%
 
 ---
 
+# Opmerkingen bij de release TVSDK 3.14 voor Android {#tvsdk-for-android-release-notes}
 
-# Opmerkingen bij de release van TVSDK 3.13 voor Android {#tvsdk-for-android-release-notes}
-
-In de Release-notities van TVSDK 3.13 voor Android wordt beschreven wat nieuw of gewijzigd is, welke problemen zijn opgelost en welke problemen bekend zijn en wat de apparaatproblemen zijn in TVSDK Android 3.13.
+In de Release-notities van TVSDK 3.14 voor Android wordt beschreven wat nieuw of gewijzigd is, wat de opgeloste en bekende problemen zijn en wat de apparaatproblemen zijn in TVSDK Android 3.14.
 
 De Android-referentiespeler wordt geleverd bij Android TVSDK in de map samples/directory van uw distributie. In het bijbehorende bestand README.md wordt uitgelegd hoe u de referentiespeler kunt maken.
 
@@ -30,17 +29,21 @@ TVSDK voor Android biedt veel prestatieverbeteringen ten opzichte van eerdere ve
 
 De uitgebreide reeks functies die worden ondersteund en niet worden ondersteund, worden weergegeven in de sectie [Matrix met functies](#feature-matrix) van de releaseopmerkingen.
 
-## Android TVSDK 3.13
+## Android TVSDK 3.14
+
+Deze versie verhelpt het probleem waarbij de toepassing vastloopt wanneer [!UICONTROL CDATA] het knooppunt leeg is voor [!UICONTROL ClickTracking]-, [!UICONTROL CustomClick]- of [!UICONTROL CompanionClickTracking]-elementen in VAST-reactie.
+
+### Nieuwe en verbeterde functies in de vorige versies
+
+**Android TVSDK 3.13**
 
 De stroom van DRM van Widevine bevriest of toont zwarte kaders op ABR schakelaar op apparaten FireTV, die de Behoort van de derde generatie van de Buur van de Vuur en de Apparaten van de Kolom van de Tweede en van de Tweede generatie van de Vuur TV omvatten.
 
 Stel de API `MediaPlayer.flushVideoDecoderOnHeaderChange(true)` voor de opgegeven Fire TV-apparaten in voordat u het afspelen start om het probleem op te lossen. De standaardwaarde is false.
 
-### Nieuwe en verbeterde functies in de vorige versies
+**Android TVSDK 3.12**
 
-## Android TVSDK 3.12
-
-De gradle-versie van de toepassing Primetime-verwijzing wordt nu bijgewerkt naar versie 5.6.4.
+De instelbare versie van de Primetime-referentietoepassing wordt bijgewerkt naar versie 5.6.4.
 
 Als u een referentietoepassing wilt instellen en uitvoeren met Android Studio, volgt u de instructies uit het Lees mij-bestand dat beschikbaar is met TVSDK ZIP op `TVSDK_Android_x.x.x.x/samples/PrimetimeReference/src/README.md`.
 
@@ -423,13 +426,19 @@ In de onderstaande tabel met functies geeft een &#39;Y&#39; aan dat de functie w
 
 Wanneer de resolutie aan een gemelde kwestie wordt geassocieerd, wordt een verwijzing van Zendesk getoond, bijvoorbeeld ZD#xxxxx.
 
-**Android TVSDK 3.12**
 
-In deze sectie wordt een overzicht gegeven van het probleem dat is opgelost in TVSDK 3.12 Android-release.
 
-* ZD#40584 - De Primetime-referentie-app is niet gebaseerd op de meest recente grijze versie.
+**Android TVSDK 3.14**
+
+Deze sectie bevat een overzicht van het probleem dat is opgelost in TVSDK 3.14 Android-release.
+
+* ZD#46903 - De toepassing loopt vast wanneer [!UICONTROL CDATA] de knoop voor om het even welk [!UICONTROL ClickTracking], [!UICONTROL CustomClick] of [!UICONTROL CompanionClickTracking] element in [!UICONTROL VAST] reactie leeg is.
 
 ### Opgeloste problemen in de vorige releases
+
+**Android TVSDK 3.12**
+
+* ZD#40584 - De Primetime-referentie-app is niet gebaseerd op de meest recente grijze versie.
 
 **Android TVSDK 3.11**
 
@@ -657,7 +666,7 @@ WebViewDebbuging wordt geplaatst aan Vals door gebrek. Als u foutopsporing wilt 
 
 * Apparaatspecifiek vastlopen (Samsung Galaxy Tab 4); VOD DRM LBA met Auditude en klik op advertenties.
 * VHL - de Onjuiste hartslagvraag wordt verzonden wanneer het beginnen van inhoud van een compensatie.
-* Wanneer VPAID-advertenties worden afgespeeld, roept de VHL-hartslag om gebeurtenis:type:play aan en ontbreken deze.
+* Wanneer VPAID-advertenties worden afgespeeld, wordt de VHL-hartslag aangeroepen voor gebeurtenis:type:play en ontbreken deze.
 * Nadat de speler de status COMPLETE heeft gekregen, gaat hij terug naar de status PLAYING met SKIP en BreakPolicy voor postroll-advertenties.
 * Cookies worden niet gekoppeld aan uitgaande en callbacks.
 * Advertentiepunten zijn niet zichtbaar.

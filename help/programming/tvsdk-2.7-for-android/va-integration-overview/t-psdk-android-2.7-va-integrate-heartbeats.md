@@ -2,14 +2,13 @@
 title: Videoanalysemogelijkheden initialiseren en configureren
 description: Videoanalysemogelijkheden initialiseren en configureren
 copied-description: true
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: add832e3-5a17-4235-a76f-ae342e1d85f0
+source-git-commit: 3bbf70e07b51585c9b53f470180d55aa7ac084bc
 workflow-type: tm+mt
 source-wordcount: '573'
 ht-degree: 0%
 
 ---
-
 
 # Videoanalysemogelijkheden initialiseren en configureren {#initialize-and-configure-video-analytics}
 
@@ -33,7 +32,7 @@ Controleer of u het volgende hebt voordat u video-tracking (videohartslagen) act
   </tr> 
   <tr> 
    <td colname="col1"> Het servereindpunt voor videoanalyse bijhouden </td> 
-   <td colname="col2"> De URL van het back-end verzameleindpunt van de videoanalyse. Dit is waar alle video hartslag het volgen vraag wordt verzonden. <p>Tip:  De URL van de server voor het bijhouden van bezoekers is gelijk aan de URL van de analytische trackingserver. Voor informatie over het uitvoeren van de Dienst van identiteitskaart van de Bezoeker, zie <a href="https://marketing.adobe.com/resources/help/en_US/mcvid/mcvid-setup-target.html" format="html" scope="external"> de Dienst </a> van identiteitskaart uitvoeren. </p> </td> 
+   <td colname="col2"> De URL van het back-end verzameleindpunt van de videoanalyse. Dit is waar alle video hartslag het volgen vraag wordt verzonden. <p>Tip:  De URL van de server voor het bijhouden van bezoekers is gelijk aan de URL van de analytische trackingserver. Voor informatie over het uitvoeren van de Dienst van identiteitskaart van de Bezoeker, zie <a href="https://experienceleague.adobe.com/docs/id-service/using/implementation/setup-target.html?lang=en" format="html" scope="external"> de Dienst </a> van identiteitskaart uitvoeren. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Accountnaam </td> 
@@ -90,7 +89,7 @@ U kunt als volgt video bijhouden in uw speler configureren:
    1. Compileer en bouw uw toepassing.
    1. Implementeer en voer de gebundelde toepassing uit.
 
-      Voor meer informatie over deze montages AppMeasurement, zie [Metende Video in Adobe Analytics](https://marketing.adobe.com/resources/help/en_US/sc/appmeasurement/video/).
+      Voor meer informatie over deze montages AppMeasurement, zie [Metende Video in Adobe Analytics](https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html?lang=en).
 
 1. Metagegevens voor het bijhouden van videokaarten initialiseren en configureren.
 
@@ -169,4 +168,3 @@ U kunt als volgt video bijhouden in uw speler configureren:
           videoAnalyticsProvider.trackVideoComplete();    
       }
       ```
-
