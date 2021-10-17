@@ -3,7 +3,7 @@ title: Opmerkingen bij de release Primetime
 description: Opmerkingen bij de release Primetime
 copied-description: true
 exl-id: 29087a3e-f16e-4510-8d3a-ed2229700899
-source-git-commit: 9b91bbc92a613a60233a73cded542a04efd61148
+source-git-commit: 6621a42d859cb872569123c175764e577bb46b9a
 workflow-type: tm+mt
 source-wordcount: '301'
 ht-degree: 0%
@@ -13,6 +13,12 @@ ht-degree: 0%
 # Opmerkingen bij de release Primetime
 
 Welkom bij de Adobe Primetime Release Notes. De documenten die in de linkernavigatie worden vermeld verstrekken versie-specifieke informatie, systeemvereisten, beperkingen, vaste kwesties, en bekende kwesties.
+
+## Oplossingen in TVSDK 3.14 Android
+
+Deze release biedt oplossing voor een probleem waarbij de toepassing vastloopt wanneer [!UICONTROL CDATA]-knooppunt leeg is voor [!UICONTROL ClickTracking]-, [!UICONTROL CustomClick]- of [!UICONTROL CompanionClickTracking]-elementen in [!UICONTROL VAST]-reactie.
+
+Raadpleeg [TVSDK voor opmerkingen bij de Android-release](../release-notes/tvsdk-3x-android.md) voor meer informatie.
 
 ## Verbeteringen en correcties in PTAI 21.8.1
 
@@ -25,12 +31,6 @@ Voor andere correcties en details, zie [Opmerkingen bij de release van Ad Insert
 De release introduceert ondersteuning voor DEMUXED &#39;HLS/CMAF&#39; (preroll, midroll en postroll)-advertenties voor LIVE-, VOD- en FER-streams.
 
 Voor andere correcties en details, zie [TVSDK voor de Nota&#39;s van de Versie van iOS](../release-notes/tvsdk-3x-ios.md)
-
-## Oplossingen in TVSDK 3.14 Android
-
-Deze release biedt oplossing voor een probleem waarbij de toepassing vastloopt wanneer [!UICONTROL CDATA]-knooppunt leeg is voor [!UICONTROL ClickTracking]-, [!UICONTROL CustomClick]- of [!UICONTROL CompanionClickTracking]-elementen in [!UICONTROL VAST]-reactie.
-
-Raadpleeg [TVSDK voor opmerkingen bij de Android-release](../release-notes/tvsdk-3x-android.md) voor meer informatie.
 
 ## Zie ook
 
