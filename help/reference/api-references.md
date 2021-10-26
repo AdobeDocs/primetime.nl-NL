@@ -3,9 +3,9 @@ title: Adobe Primetime API-verwijzingen
 description: Met de API's kunt u snel en eenvoudig een functionele toepassing of integratie maken.
 topic-tags: API-references
 exl-id: 6862764e-c1d8-413a-a0c0-66b31eac8e53
-source-git-commit: bf9adba0bace7e1327446d936c4bfe27f66fb2ac
+source-git-commit: 61904f8bf2ed2942072f75fd4b2d9b3f4bbe21f9
 workflow-type: tm+mt
-source-wordcount: '337'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 + Primetime Dynamic Ad Insertion {#server-side}
    + [Bootstrap API-naslag](../primetime-ad-insertion/technical-reference/bootstrap-api.md)
-   + [Referentie voor rapportAPI](../primetime-ad-insertion/assets/auditude-report-api.pdf)
+   + [Referentie voor rapportAPI](../primetime-ad-insertion/technical-reference/report-api.md)
 
 + TVSDK 3.12 {#tvsdk-312}
    + [TVSDK 3.12 voor Android](https://help.adobe.com/en_US/primetime/api/psdk/javadoc3.12/index.html)
