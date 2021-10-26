@@ -2,8 +2,7 @@
 product: adobe primetime
 audience: end-user
 user-guide-title: Help bij primetime Ad Insertion
-translation-type: tm+mt
-source-git-commit: 9cf1312024ee755e0c99213899c89c015731b66f
+source-git-commit: 98882f0e36919635d99b0cd95f87f9736b692f73
 workflow-type: tm+mt
 source-wordcount: '176'
 ht-degree: 0%
@@ -14,7 +13,7 @@ ht-degree: 0%
 # Help bij primetime Ad Insertion {#ad-insertion}
 
 + [Adobe Primetime Ad Insertion](home.md)
-+ Aankondigingen van primetime-Ad Insertion{#announcements}
++ Aankondigingen Ad Insertion in primetime{#announcements}
    + [Aankondigingen](announcements/overview.md)
    + [Opmerkingen bij de release](https://experienceleague.adobe.com/docs/primetime/release-notes/ptai/ptai-21x-release-notes.html)
 + Aan de slag met Primetime Ad Insertion{#get-started}
@@ -38,7 +37,7 @@ ht-degree: 0%
    + [Contextuele rapportage en doelgerichtheid](advanced-features/contextual-reporting-and-targeting.md)
 + Prestaties: bewaking, foutopsporing en rapportage{#performance}
    + [Overzicht](performance-monitoring-debugging-reporting/performance-overview.md)
-   + Bewaking en foutopsporing{#monitor-debug}
+   + Monitor en foutopsporing{#monitor-debug}
       + [Prestatiebewaking](performance-monitoring-debugging-reporting/performance-monitoring.md)
       + [Problemen oplossen en fouten opsporen](performance-monitoring-debugging-reporting/troubleshoot-and-debug.md)
    + [Rapportage en facturering](performance-monitoring-debugging-reporting/reporting-and-billing.md)
@@ -47,8 +46,9 @@ ht-degree: 0%
    + [Belangrijkste afmetingen en gegevens](advanced-telemetry/key-metrics.md)
 + [Live-gebeurtenisbewaking](live-event-monitoring.md)
 + Referentie {#technical-reference}
-   + [API-referentie / Bootstrap API](technical-reference/bootstrap-api.md)
-   + Beste werkwijzen{#best-practices}
+   + [Bootstrap API](technical-reference/bootstrap-api.md)
+   + [Rapporten-API](assets/auditude-report-api.pdf)
+   + Aanbevolen procedures{#best-practices}
       + [Overzicht](best-practices/best-practices-overview.md)
       + [De opstarttijden van video optimaliseren](best-practices/optimize-video-startup-time.md)
       + [Prestaties analyseren](best-practices/analyze-performance.md)
