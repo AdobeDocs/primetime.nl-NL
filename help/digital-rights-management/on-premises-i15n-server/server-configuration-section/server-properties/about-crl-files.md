@@ -2,14 +2,13 @@
 title: Over CRL-bestanden
 description: Over CRL-bestanden
 copied-description: true
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: 126a323d-9433-4a1e-a617-2d3bbf717cce
+source-git-commit: 6a00df9c061da43f6efa49d927873db629568597
 workflow-type: tm+mt
-source-wordcount: '305'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
-
 
 # Over CRL-bestanden {#about-crl-files}
 
@@ -37,20 +36,34 @@ Hieronder volgt een lijst met extern gehoste CRL&#39;s die door zowel de Individ
    * Bestand: [!DNL http___crl3.adobe.com_AdobeSystemsIncorporatedFlashAccessRuntime_LatestCRL.crl]
    * Geldigheid: Goed voor ongeveer 3 maanden na de aanmaak
 
-Hieronder vindt u extern gehoste CRL&#39;s die alleen door de licentieservers worden gebruikt:
+Neem contact op met de Adobe Support voor informatie over de extern gehoste CRL&#39;s die door de licentieservers kunnen worden gebruikt.
 
-* URL: [!DNL <ht<span></span>tps://crl2.adobe.com/Adobe/FlashAccessIndividualizationCA.crl>]
-* Bestand: [!DNL http___crl2.adobe.com_Adobe_FlashAccessIndividualizationCA.crl]
-* Geldigheid: Goed voor ongeveer 3 maanden na de aanmaak
+<!---
 
-* URL: [!DNL <ht<span></span>tps://individualization-crl.primetime.adobe.com/FlashAccessIndividualizationCA.crl>]
-* Bestand: [!DNL http___individualization-crl.primetime.adobe.com_FlashAccessIndividualizationCA.crl]
-* Geldigheid: Goed voor ongeveer 3 maanden na de aanmaak
+Commenting out because of a security vulnerability reported in Jira PSIRT-20689. 
 
-* URL: [!DNL <ht<span></span>tps://individualization-crl.s3-website-us-east-1.amazonaws.com/FlashAccessIndividualizationCA.crl]
-* Bestand: [!DNL http___individualization-crl.s3-website-us-east-1.amazonaws.com_FlashAccessIndividualizationCA.crl]
-* Geldigheid: Goed voor ongeveer 3 maanden na de aanmaak
+The following are externally hosted CRLs that are used only by the License Servers:
 
-Naast de bovengenoemde CRLs, moet u een extra CRL creëren en handhaven. Dit is de Individualisatie CA CRL, zoals gespecificeerd in [Create Individualization CA CRL](../../../on-premises-i15n-server/server-configuration-section/server-properties/create-i15n-ca-crl.md) sectie van dit document.
+* URL: `https://crl2.adobe.com/Adobe/FlashAccessIndividualizationCA.crl`
+
+* File: `http___crl2.adobe.com_Adobe_FlashAccessIndividualizationCA.crl`
+
+* Validity: Good for approximately 3 months from creation
+
+* URL: `https://individualization-crl.primetime.adobe.com/FlashAccessIndividualizationCA.crl`
+
+* File: `http___individualization-crl.primetime.adobe.com_FlashAccessIndividualizationCA.crl`
+
+* Validity: Good for approximately 3 months from creation
+
+* URL: `https://individualization-crl.s3-website-us-east-1.amazonaws.com/FlashAccessIndividualizationCA.crl`
+
+* File: `http___individualization-crl.s3-website-us-east-1.amazonaws.com_FlashAccessIndividualizationCA.crl`
+
+* Validity: Good for approximately 3 months from creation
+
+--->
+
+Naast extern gehoste CRL&#39;s kunt u een extra CRL maken en onderhouden. Dit is de Individalization CA CRL, zoals gespecificeerd in [Individuele CA CRL maken](../../../on-premises-i15n-server/server-configuration-section/server-properties/create-i15n-ca-crl.md) van dit document.
 
 CRL&#39;s moeten volgens de planning 45 dagen voor ze verlopen. Hierdoor hebt u voldoende tijd om nieuw gegenereerde CRL&#39;s van internet te verkrijgen en te installeren. U moet ervoor zorgen dat CRL-bestanden worden bijgewerkt voordat ze verlopen.
