@@ -1,14 +1,13 @@
 ---
 description: Er zijn enkele beveiligingsoverwegingen die u moet onthouden voor Browser-TVSDK.
 title: Beveiligingsoverwegingen
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: bc98890a-082a-4e2d-b927-ecb3bd878de9
+source-git-commit: 78be1575cc7bd6630a7bf85faa061327e5c414d7
 workflow-type: tm+mt
 source-wordcount: '233'
 ht-degree: 0%
 
 ---
-
 
 # Beveiligingsoverwegingen{#security-considerations}
 
@@ -16,7 +15,7 @@ Er zijn enkele beveiligingsoverwegingen die u moet onthouden voor Browser-TVSDK.
 
 * **Adobe Flash Player**
 
-   * Flash Player staat geen toegang toe tot gegevens die zich buiten het domein bevinden waarvan het SWF-bestand afkomstig is.
+   * Flash Player staat geen toegang tot gegevens toe die buiten het domein verblijven waarvan de SWF voortkwam.
 
       Om toegang toe te staan, gastheer een dossier van het dwars-domeinbeleid met aangewezen toestemmingen bij de wortel van de server die de gegevens ontvangt. In de Wijze van de Fallback van Flash in Browser TVSDK (versie 23 van Flash Player en hoger), hebt u het toestemmingstoken voor uw domein nodig. Neem contact op met uw Adobe-vertegenwoordiger om het token te genereren.
 
@@ -35,4 +34,3 @@ Er zijn enkele beveiligingsoverwegingen die u moet onthouden voor Browser-TVSDK.
       >[!IMPORTANT]
       >
       >Als de speler wordt gehost via HTTPS, wordt vanaf versie 2.4.5 de HTTP-aanroepen door Browser TVSDK geconverteerd naar HTTPS wanneer MSE-technologie wordt gebruikt.
-
