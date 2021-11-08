@@ -3,9 +3,9 @@ title: Opmerkingen bij de release Primetime
 description: Opmerkingen bij de release Primetime
 copied-description: true
 exl-id: 29087a3e-f16e-4510-8d3a-ed2229700899
-source-git-commit: 21695ad15f1dcbbfa33211efd0fb3ab282fefbeb
+source-git-commit: 3b2495960cb4f5c625069415977596b5f6632bc4
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '305'
 ht-degree: 0%
 
 ---
@@ -14,23 +14,23 @@ ht-degree: 0%
 
 Welkom bij de Adobe Primetime Release Notes. De documenten die in de linkernavigatie worden vermeld verstrekken versie-specifieke informatie, systeemvereisten, beperkingen, vaste kwesties, en bekende kwesties.
 
-## Oplossingen in TVSDK 3.14 Android
+## Oplossingen in TVSDK 3.15 Android
 
-Deze release biedt oplossing voor een probleem waarbij de toepassing vastloopt wanneer [!UICONTROL CDATA]-knooppunt leeg is voor [!UICONTROL ClickTracking]-, [!UICONTROL CustomClick]- of [!UICONTROL CompanionClickTracking]-elementen in [!UICONTROL VAST]-reactie.
+Deze release biedt oplossing voor een probleem waarbij de toepassing vastloopt wanneer een creative tag ontbreekt of wanneer [!UICONTROL url CDATA] is leeg in [!UICONTROL VAST] reactie.
 
-Raadpleeg [TVSDK voor opmerkingen bij de Android-release](../release-notes/tvsdk-3x-android.md) voor meer informatie.
+Kijk uit de [Opmerkingen bij de release van TVSDK voor Android](../release-notes/tvsdk-3x-android.md) voor meer informatie .
 
 ## Verbeteringen en correcties in PTAI 21.10.1
 
 De release is gericht op de consolidatie van servers, waarbij niet-productieservers en niet-nuttige servers worden verwijderd.
 
-Zie [Opmerkingen bij de release van Ad Insertion](/help/release-notes/ptai-21x-release-notes.md) voor andere correcties en details.
+Voor andere correcties en details raadpleegt u [Opmerkingen bij de release Ad Insertion](/help/release-notes/ptai-21x-release-notes.md).
 
 ## Verbeteringen en correcties in TVSDK 3.13 iOS
 
 De release introduceert ondersteuning voor DEMUXED &#39;HLS/CMAF&#39; (preroll, midroll en postroll)-advertenties voor LIVE-, VOD- en FER-streams.
 
-Zie [TVSDK voor iOS Release Notes](../release-notes/tvsdk-3x-ios.md) voor andere correcties en details.
+Voor andere correcties en details raadpleegt u [Opmerkingen bij de release van TVSDK voor iOS](../release-notes/tvsdk-3x-ios.md).
 
 ## Zie ook
 
