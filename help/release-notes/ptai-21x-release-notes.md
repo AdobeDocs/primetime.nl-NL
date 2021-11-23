@@ -2,9 +2,9 @@
 title: Opmerkingen bij de release PTAI 21.11.1
 description: In de PTAI-release wordt beschreven wat nieuw of gewijzigd is, wat de opgeloste en bekende problemen zijn in Primetime Ad Insertion in 2021.
 exl-id: 39a05f6d-431a-4416-81b1-21d82c0dbd69
-source-git-commit: b58fea35be528c4c030eab39fde9dd642d90cb58
+source-git-commit: f4c6ef44c7f13bf8170a1f23a7ae8eba0171316a
 workflow-type: tm+mt
-source-wordcount: '383'
+source-wordcount: '389'
 ht-degree: 0%
 
 ---
@@ -19,19 +19,21 @@ Wanneer: Dinsdag 9 november 2021, 13.30 tot 4.30 uur Oosterse tijd
 
 * [!UICONTROL EXT-X-IMAGE-STREAM-INF] is nu configureerbaar per streek.
 
+* Roku Trick Play wordt volledig ondersteund.
+
 ## Verbeteringen en correcties in vorige releaseversies
 
 ### Versie 21.10.1
 
 Wanneer: Dinsdag 12 oktober 2021, 19.45 - 13.45 uur Oosterse tijd
 
-* Consolidated servers, removed non-production and non-useful servers.
+* Geconsolideerde servers, verwijderde niet-productie en niet-bruikbare servers.
 
 ### Primetime Ad Insertion Maintenance release
 
 Wanneer: Dinsdag 28 september 2021, van 5.00 tot 6.00 uur Oosterse tijd
 
-* Updates to Load Balancer stack from AWS&#39;s Elastic Load Balancer to AWS&#39;s Application Load Balancer for enhanced functionality and scalability. These Load Balancers are used to route ad request traffic to Auditude backend from the Ad Insertion layer (SSAI/CSAI).
+* Updates voor Load Balancer-stapel van AWS Elastic Load Balancer naar AWS Application Load Balancer voor verbeterde functionaliteit en schaalbaarheid. Deze Balancers van de Lading worden gebruikt om verkeer te leiden en te verzoeken aan Auditude achterste van de laag van de Ad Insertion (SSAI/CSAI).
 
 ### Versie 21.9.1
 
@@ -39,13 +41,13 @@ Wanneer: Dinsdag 7 september 2021, 2.30 uur &#39;s middags tot 5.30 uur &#39;s m
 
 * Updates voor infrastructuurcomponenten achter de bemiddelings- en rapportagecomponenten van Primetime Ad Insertion (Primetime Ads GUI).
 
-### Version 21.8.1
+### Versie 21.8.1
 
-When: Tuesday, August 24, 2021 from 2:00 AM to 05:00 AM Eastern Time
+Wanneer: Dinsdag 24 augustus 2021, van 2.00 uur tot 05.00 uur Oosterse tijd
 
-* Added support for DASH Live/ Linear streams (VOD is already supported).
+* Toegevoegde ondersteuning voor live/lineaire DASH-streams (VOD wordt al ondersteund).
 
-### Version 21.5.1
+### Versie 21.5.1
 
 Wanneer: Woensdag 26 mei 2021, 15.30 - 06.30 uur Oosterse tijd
 
@@ -69,7 +71,7 @@ Wanneer: Woensdag 26 mei 2021, 15.30 - 06.30 uur Oosterse tijd
 
 **Wanneer:** Dinsdag 23 februari 2021, 13:00 - 04:00 uur Oosterse tijd
 
-**Changes**
+**Wijzigingen**
 
 * Toegevoegde ondersteuning voor EXT-X-IMAGE-STREAM-INF-streaminvoeging/synchronisatie in HLS-streams. De eigenschap wordt toegelaten door een server-zijconfiguratie. Neem contact op met de vertegenwoordiger van uw technische account om deze functie in te schakelen.
 
@@ -85,7 +87,7 @@ Wanneer: Woensdag 26 mei 2021, 15.30 - 06.30 uur Oosterse tijd
 
 **Wanneer:** Dinsdag 19 januari 2021, 12.30 tot 8.30 uur &#39;s morgens
 
-**Changes**
+**Wijzigingen**
 
 * Onderhoudsupdate: Upgrade van Primetime Ad Insertion backend-geheugenclusters.
 
