@@ -3,9 +3,9 @@ title: Opmerkingen bij de release Primetime
 description: Opmerkingen bij de release Primetime
 copied-description: true
 exl-id: 29087a3e-f16e-4510-8d3a-ed2229700899
-source-git-commit: f4c6ef44c7f13bf8170a1f23a7ae8eba0171316a
+source-git-commit: d549c83b50683ed3f803226eaa414179896a29b0
 workflow-type: tm+mt
-source-wordcount: '291'
+source-wordcount: '320'
 ht-degree: 0%
 
 ---
@@ -14,9 +14,9 @@ ht-degree: 0%
 
 Welkom bij de Adobe Primetime Release Notes. De documenten die in de linkernavigatie worden vermeld verstrekken versie-specifieke informatie, systeemvereisten, beperkingen, vaste kwesties, en bekende kwesties.
 
-## Verbeteringen en correcties in PTAI 21.11.1
+## Verbeteringen en correcties in PTAI 22.2.2
 
-De [!UICONTROL EXT-X-IMAGE-STREAM-INF] is nu configureerbaar per zone en [!UICONTROL Roku Trick] play wordt volledig ondersteund.
+Deze release richt zich op het vastleggen van nieuwe gebeurtenissen voor advertentieprestaties, zoals creatieve oproepen, serveraanroepen en geldige resolutiegebeurtenissen. Deze gebeurtenissen zullen door het nieuwe Grafische Gebruikersinterface van Primetime Ad Insertion in een aanstaande versie worden blootgesteld.
 
 ## Oplossingen in TVSDK 3.15 Android
 
