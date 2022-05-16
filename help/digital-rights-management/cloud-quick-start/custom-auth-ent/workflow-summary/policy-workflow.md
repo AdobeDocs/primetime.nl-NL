@@ -2,46 +2,45 @@
 title: Details van beleidswerkstroom
 description: Details van beleidswerkstroom
 copied-description: true
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: e3daf7a9-def0-48a9-8190-adb25eec7b59
+source-git-commit: 0019a95fa9ca6d21249533d559ce844897ab67cf
 workflow-type: tm+mt
-source-wordcount: '593'
+source-wordcount: '582'
 ht-degree: 0%
 
 ---
-
 
 # BES-workflow {#bees-workflow}
 
 **Overzicht:**
 
-* **Beleid**  - creeer een DRM BEES-bewust beleid dat wijst op BES voor alle inhoud wordt vereist die met dit beleid wordt verpakt.
-* **Verpakken**  - Inhoud verpakken met gebruik van het DRM-beleid dat BEES-compatibel is.
-* **Verificatie**  - Verifieer uw clientapparaat en gebruik de Primetime DRM-API of de Primetime-API om dit token te koppelen aan Primetime Cloud DRM. Als u dit doet, stuurt het clientapparaat dit verificatietoken samen met alle licentieaanvragen naar Primetime Cloud DRM. Met Primetime Cloud DRM wordt dit token niet verwerkt, maar wordt het doorgegeven (als een ondoorzichtig blok) aan het BES-eindpunt voor verwerking.
-* **Licentie**  - Vraag een licentie aan voor uw beveiligde inhoud. Het cliëntapparaat zal automatisch uw eerder-vastgestelde authentificatietoken aan de vraag toevoegen.
-* **Entitlement**  - Primetime Cloud DRM bepaalt of de inhoud is verpakt met een beleid waarvoor BES vereist is. Met Primetime Cloud DRM wordt een JSON-aanvraag gemaakt voor verzending naar het BES-eindpunt. In de reactie van de BES wordt Primetime Cloud DRM geïnstrueerd of een licentie moet worden uitgegeven of niet, en optioneel welk DRM-beleid moet worden gebruikt.
+* **Beleid** - Maak een DRM BES-bewust beleid dat aangeeft dat BES vereist is voor alle inhoud die met dit beleid is verpakt.
+* **Verpakken** - Inhoud verpakken met gebruik van het DRM-beleid dat BEES-compatibel is.
+* **Verificatie** - Verifieer uw clientapparaat en gebruik de Primetime DRM-API of de Primetime-API om dit token te koppelen aan Primetime Cloud DRM. Als u dit doet, stuurt het clientapparaat dit verificatietoken samen met alle licentieaanvragen naar Primetime Cloud DRM. Met Primetime Cloud DRM wordt dit token niet verwerkt, maar wordt het doorgegeven (als een ondoorzichtig blok) aan het BES-eindpunt voor verwerking.
+* **Licentie** - Vraag een licentie aan voor uw beveiligde inhoud. Het cliëntapparaat zal automatisch uw eerder-vastgestelde authentificatietoken aan de vraag toevoegen.
+* **Entitlement** - Met Primetime Cloud DRM wordt bepaald dat de inhoud is verpakt met een beleid waarvoor BES is vereist. Met Primetime Cloud DRM wordt een JSON-aanvraag gemaakt voor verzending naar het BES-eindpunt. In de reactie van de BES wordt Primetime Cloud DRM geïnstrueerd of een licentie moet worden uitgegeven of niet, en optioneel welk DRM-beleid moet worden gebruikt.
 
 ## Details van beleidswerkstroom {#policy-workflow-details}
 
-Wanneer Primetime Cloud DRM een vergunningsverzoek verwerkt, ontleedt het het beleid DRM in het verzoek om te bepalen als een vraag aan de backend-machtigingsdienst wordt vereist alvorens de inhoud kan worden getoond. Als een vraag van BES *is* vereist, zal de Cloud DRM van Primetime het verzoek van BES tot stand brengen, dan zal het DRM beleid ontleden om een gespecificeerd eindpunt van BES URL voor het verzoek van BES te verkrijgen.
+Wanneer Primetime Cloud DRM een vergunningsverzoek verwerkt, ontleedt het het beleid DRM in het verzoek om te bepalen als een vraag aan de backend-machtigingsdienst wordt vereist alvorens de inhoud kan worden getoond. Als een BEES-gesprek *is* vereist, maakt Primetime Cloud DRM het BEES-verzoek en parseert vervolgens het DRM-beleid om een opgegeven BES URL-eindpunt voor het BES-verzoek te verkrijgen.
 
 Pas uw beleid DRM toe dat op het vereiste BES wijst, die de volgende twee douaneeigenschappen in het beleid specificeren:
 
-    * &quot;policy.customProp.1=bees.required=&lt;true>&quot;
-    * ` policy.customProp.2=bees.url=&lt;url to=&quot;&quot; your=&quot;&quot; BEES=&quot;&quot; endpoint=&quot;&quot;>`
+* `policy.customProp.1=bees.required=<true | false>`
+* `policy.customProp.2=bees.url=<url to your BEES endpoint>`
 
 <!--<a id="example_F617FC49A4824C0CB234C92E57D876D3"></a>-->
 
-Als u bijvoorbeeld Primetime DRM-beleidsbeheer gebruikt ( [!DNL AdobePolicyManager.jar]), geeft u de volgende twee aangepaste eigenschappen op in het configuratiebestand [!DNL flashaccesstools.properties]:
+Bijvoorbeeld het gebruiken van de Manager van het Beleid Primetime DRM ( [!DNL AdobePolicyManager.jar]), kunt u de volgende twee aangepaste eigenschappen opgeven in het dialoogvenster [!DNL flashaccesstools.properties] configuratiebestand:
 
 * `policy.customProp.1=bees.required=true`
 * `policy.customProp.2=bees.url=https://mybeesserver.example.com/bees`
 
 >[!NOTE]
 >
->Als u `policy.customProp.1` of `policy.customProp.2` voor een andere bezit reeds gebruikt, gebruik eenvoudig unieke aantallen voor de nieuwere eigenschappen.
+>Als u al `policy.customProp.1` of `policy.customProp.2` voor een andere eigenschap gebruikt u gewoon unieke nummers voor de nieuwere eigenschappen.
 
-## Details van de pakketworkflow {#package-workflow-details}
+## Werkstroomgegevens pakket {#package-workflow-details}
 
 Tijdens het verpakken van uw Adobe Access-beveiligde inhoud moet u een van uw DRM-beleid met BEES-vermogen toepassen op de inhoud.
 
@@ -49,13 +48,13 @@ Tijdens het verpakken van uw Adobe Access-beveiligde inhoud moet u een van uw DR
 
 Opdat uw eindpunt BEES machtigingsbesluiten kan nemen, moet het cliëntapparaat authentificatieinformatie verstrekken. U verwezenlijkt dit door uw eigen klant-specifiek authentificatietoken te gebruiken.
 
-Primetime Cloud DRM hoeft deze token niet te begrijpen, maar geeft deze token door aan het eindpunt van uw BES. Het clientapparaat is verantwoordelijk voor het maken of ophalen van dit token en het instellen ervan met de API `DRMManager.setAuthenticationToken()`.
+Primetime Cloud DRM hoeft deze token niet te begrijpen, maar geeft deze token door aan het eindpunt van uw BES. Het clientapparaat is verantwoordelijk voor het maken of ophalen van dit token en het instellen ervan met de `DRMManager.setAuthenticationToken()` API.
 
 Ga als volgt te werk om deze token te koppelen aan Primetime Cloud DRM, zodat deze wordt verzonden met de licentieaanvraag:
 
-Instantieer het `DRMManager`-object met de DRM-metagegevens van de inhoud die is verpakt voor Primetime Cloud DRM.
+Instantiëren van de `DRMManager` -object met de DRM-metagegevens van de inhoud die is verpakt voor Primetime Cloud DRM.
 
-De methode `setAuthenticationToken()` werkt door de opgegeven bytearray te koppelen aan de URL van de licentieserver in de DRM-metagegevens die is gebruikt om `DRMManager` te instantiëren.
+De `setAuthenticationToken()` methode werkt door de opgegeven bytearray te koppelen aan de URL van de licentieserver die is opgegeven in de DRM-metagegevens die zijn gebruikt om een instantie te maken `DRMManager`.
 
 ```java
 //client device acquires auth token needed by your BEES endpoint  
@@ -63,13 +62,13 @@ DRMManager mgr = new DRMManager(<DRM Metadata of CloudDRM content>);
 mgr.setAuthenticationToken(<auth token>);
 ```
 
-Het teken wordt verzonden met alle vergunningsverzoeken tot het teken door `.setAuthenticationToken` met ongeldig als parameter te roepen wordt ontruimd.
+Het token wordt verzonden met alle licentieaanvragen totdat het token wordt gewist door het aanroepen `.setAuthenticationToken` met null als parameter.
 
-## Informatie over licentieworkflow{#license-workflow-details}
+## Gegevens licentieworkflow{#license-workflow-details}
 
-Vraag een licentie aan via Primetime Cloud DRM door `mgr.loadVoucher()` aan te roepen.
+Vraag een licentie aan via Primetime Cloud DRM door `mgr.loadVoucher()`.
 
-## Entitlement request and response details{#entitlement-request-and-response-details}
+## Machtigingsverzoek en reactiegegevens{#entitlement-request-and-response-details}
 
 Wanneer Primetime Cloud DRM bepaalt dat de inhoud met een BES-bewust DRM beleid werd verpakt, bouwt het het volgende JSON- verzoek om naar het BEES eindpunt te verzenden dat in het DRM beleid wordt gespecificeerd:
 
@@ -153,4 +152,4 @@ De volgende respons wordt verwacht van het BES-eindpunt:
 }
 ```
 
-Primetime Cloud DRM gebruikt het antwoord om te bepalen of het een vergunning aan het verzoekende apparaat al dan niet zou moeten uitgeven, en of het een nieuw beleid DRM in het proces van de vergunningsgeneratie zou moeten vervangen. Als `isAllowed` `true` is en geen beleid in de reactie wordt verstrekt, dan zal het originele DRM Beleid dat tijdens de tijd van de inhoudspakketverpakking wordt gebruikt worden gebruikt om de vergunning te produceren.
+Primetime Cloud DRM gebruikt het antwoord om te bepalen of het een vergunning aan het verzoekende apparaat al dan niet zou moeten uitgeven, en of het een nieuw beleid DRM in het proces van de vergunningsgeneratie zou moeten vervangen. Indien `isAllowed` is `true` en er is geen beleid opgegeven in het antwoord, wordt het oorspronkelijke DRM-beleid dat tijdens de tijd van het verpakken van inhoud wordt gebruikt, gebruikt om de licentie te genereren.
