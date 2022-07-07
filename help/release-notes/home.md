@@ -3,9 +3,9 @@ title: Opmerkingen bij de release Primetime
 description: Opmerkingen bij de release Primetime
 copied-description: true
 exl-id: 29087a3e-f16e-4510-8d3a-ed2229700899
-source-git-commit: d549c83b50683ed3f803226eaa414179896a29b0
+source-git-commit: 9f218bddddeab52480bbdcd41e8f0e6fd0fab0f8
 workflow-type: tm+mt
-source-wordcount: '320'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -14,9 +14,9 @@ ht-degree: 0%
 
 Welkom bij de Adobe Primetime Release Notes. De documenten die in de linkernavigatie worden vermeld verstrekken versie-specifieke informatie, systeemvereisten, beperkingen, vaste kwesties, en bekende kwesties.
 
-## Verbeteringen en correcties in PTAI 22.2.2
+## Verbeteringen en correcties in PTAI 22.6.2
 
-Deze release richt zich op het vastleggen van nieuwe gebeurtenissen voor advertentieprestaties, zoals creatieve oproepen, serveraanroepen en geldige resolutiegebeurtenissen. Deze gebeurtenissen zullen door het nieuwe Grafische Gebruikersinterface van Primetime Ad Insertion in een aanstaande versie worden blootgesteld.
+Deze versie richt zich op verbeteringen aan het registreren van de prestaties met meer details op het verlies van het voordeel en extra net-opslagoorsprong voor CRS.
 
 ## Oplossingen in TVSDK 3.15 Android
 
