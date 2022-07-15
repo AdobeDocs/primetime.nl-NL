@@ -3,16 +3,15 @@ product: adobe primetime
 audience: end-user
 user-guide-title: Help bij Primetime-migratie
 user-guide-description: Verklaart het omzettings en migratieproces om van uw bestaande Reeks van de TVSDK van Primetime aan de volgende-generatiereeks over te gaan.
-translation-type: tm+mt
 source-git-commit: 95626ebde981d1996652a67bc9e0cea05f24aa6d
 workflow-type: tm+mt
-source-wordcount: '37'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
 
 
-# Help bij primetime-migratie {#migration}
+# Help bij Primetime-migratie {#migration}
 
 + [Help bij migratie - overzicht](home.md)
 + [TVSDK 1.4 tot en met 2.5 voor Android (Java)](tvsdk-14-25-android.md)
