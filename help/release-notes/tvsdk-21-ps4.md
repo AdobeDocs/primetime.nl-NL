@@ -4,14 +4,13 @@ description: TVSDK 2.1 voor PlayStation 4 Opmerkingen bij de release beschrijven
 contentOwner: dekalra
 topic-tags: release-notes
 products: SG_PRIMETIME
-translation-type: tm+mt
-source-git-commit: b33240bf1b42b80389cd95a7ae4d3f85185a2d32
+exl-id: 32af3fe4-c730-41f6-a558-987bd14c9bae
+source-git-commit: 3b051c3188c81673129e12dfeb573aaf85c15c97
 workflow-type: tm+mt
 source-wordcount: '772'
 ht-degree: 0%
 
 ---
-
 
 # Opmerkingen bij de release TVSDK 2.1 PlayStation 4 {#tvsdk-playstation-release-notes}
 
@@ -24,58 +23,58 @@ Hier volgen de opgeloste problemen voor TVSDK 2.1 voor PlayStation 4:
 **Versie 2.1.0.638**
 
 * **PTPLAY-10439:**
-Toen de omslag VMAP en verbinding werd gebroken, bleef de speler vast in de voorbereidingsstaat (het verzond niet) 
+Toen de insteekmodule VMAP en de koppeling werden verbroken, bleef de speler vast in de voorbereidingsstatus (hij stuurde niet 
 `onComplete` aan zijn bezoeker).
 
 * **PTPLAY-10179:**
 
-   `creativeRepackaging` en  `fallbackOnInvalidCreative` waarden zijn nu standaard uitgeschakeld. Wanneer de `creativeRepackaging`-markering is ingesteld maar geen `creativeRepackaging`-indeling is opgegeven, wordt `onRepackagingComplete` ook zo vaak aangeroepen als er advertenties in het ad-einde stonden, waardoor er meerdere keren ad-einden werden gemaakt.
+   `creativeRepackaging` en `fallbackOnInvalidCreative` waarden zijn nu standaard uitgeschakeld. Ook, wanneer `creativeRepackaging` markering is ingesteld maar geen `creativeRepackaging` het formaat is opgegeven, `onRepackagingComplete` werd net zo vaak opgeroepen als er advertenties waren in de advertentie-onderbreking, waardoor er meerdere keren advertentiepauzes werden gemaakt.
 
-* **Zendesk #10304**: De variabele advertentievrijheid aan/uit is niet geïnitialiseerd. De variabele wordt nu geïnitialiseerd vanuit de ctor `DataSetEntry's`.
+* **Zendesk #10304**: De variabele advertentievrijheid aan/uit is niet geïnitialiseerd. We initialiseren nu de variabele van `DataSetEntry's` ctor.
 
 * **PTPLAY-10318:**
-Steun voor achtergrondwijze is geïntroduceerd.
+Ondersteuning voor de achtergrondmodus is geïntroduceerd.
 * **Zendesk # 17409:**
-Wanneer u overschakelt naar de truc-afspeelmodus, dan weer naar de normale afspeelmodus en vervolgens weer naar de truc-afspeelmodus, sprong de afspeelpositie.
+Als u overschakelt naar de truc-afspeelmodus, gaat u weer terug naar de normale afspeelmodus en gaat u weer over naar de truc-afspeelmodus, dan springt de afspeelpositie.
 * **PTPLAY-9552:**
-Na het ontleden van antwoordXML- dossiers, is foutencode 1108 nu gepingeld wanneer er geen aanwezige advertenties zijn.
+Na het parseren van XML-bestanden met reacties wordt foutcode 1108 nu gepingeld wanneer er geen advertenties aanwezig zijn.
 * **PTPLAY-9551:**
-Wanneer er geen ad onderbreking na de verwerking van de Omschrijving is, de vraag van CRS 
-**** onPrefetchCompletewhich vermindert the groupCount. Aangezien er geen ad onderbreking is, **groupCount** is 0 en door 1 verminderd. Eerder was **groupCount** **uint32_t** omdat het gebruikte om in maximumwaarde te veranderen. Dit is nu **int32_t**.
+Wanneer er geen ad onderbreking na de verwerking van de Omschrijving is, roept CRS 
+**onPrefetchComplete** die de groupCount vermindert. Omdat er geen pauze is, kan de **groupCount** is 0 en wordt met 1 verlaagd. Eerder **groupCount** was **uint32_t** omdat de waarde is gewijzigd in max. Dit is nu **int32_t**.
 
 **Versie 2.1.0.621**
 
 * **Zendesk #4555**
-Instant on Memory issues leading-Loading errors - 
-`MediaItemLoader` Oplossing voor een crash tijdens het loslaten  `mediaitemloader`
+Onmiddellijk na geheugenproblemen fouten bij het laden - 
+`MediaItemLoader` Oplossing voor een crash tijdens het loslaten `mediaitemloader`
 
 * **Zendesk #17223**
 2.x CSAI: Niet alle URL&#39;s met URL&#39;s die worden bijgehouden, zijn geactiveerd
    * Sommige VAST-advertenties wezen op een inlineadvertentie en ontbraken trackingURL&#39;s.
    * Wanneer een advertentie meerdere impositietags bevat in VAST XML, werd alleen de eerste immateriële URL opgeslagen en de rest genegeerd. Nu worden alle impressie-URL&#39;s later opgeslagen en gepingeld.
-* **De gebruikersagent van Zendesk #17224**
-PS4 verplaatst primetime informatie aan het eind van UAString
+* **Zendesk #17224**
+PS4-gebruikersagent verplaatst de primetime-informatie naar het einde van de UAString
 * **Zendesk #17226**
 2.x CSAI: Niet alle advertenties zijn ingeklemd.
 \
    Met Repareren wordt aangegeven dat de tijdlijn is gewijzigd als gevolg van insertBy- of eraseBy-bewerkingen en wordt de periode dienovereenkomstig aangepast.
 
 * **Zendesk #17284**
-   [Niet alle ] platformenOndertiteling verschijnt.\
-   HLS - ondersteuning voor de tag `EXT-X-MEDIA-TIME` voor VTT-bijschriftbestanden.
+   [Alle platforms] Gesloten bijschriften worden niet weergegeven.\
+   HLS - steun voor `EXT-X-MEDIA-TIME` -tag voor VTT-bijschriftbestanden.
 
 * **Zendesk #17889**
-Playback &quot;Milky&quot; op PS4
+&quot;Milky&quot; afspelen op PS4
 \
    correct toegepaste yoffset (voor kleurconversie)
 
 * **Zendesk #17954**
-Ad fallback logic + verwerking van lege, grote
+Extra fallback-logica + lege, grote verwerking
 \
    Probleem verholpen als een van de Vast-wrappers leeg was, werd de Vast-parser gebruikt om de wrapper verder te verwerken.
 
 * **Zendesk #17807**
-Kan niet voorbij lege maten zoals Zendesk #3103
+Kan niet voorbij lege massa zoals Zendesk #3103
 
 * **Zendesk #17865**
 Fallback Logic op PS4 en XBox One
@@ -84,35 +83,35 @@ Fallback Logic op PS4 en XBox One
 
 **Versie 2.1.0.591**
 
-* **Het codefragment Zendesk #3767**
-PS4 Ad, en het oplossen van problemen van de Oplossing ontbreekt wanneer het verwerken van VMAP omleidt.
+* **Zendesk #3767**
+PS4 Ad-codefragment. Het oplossen van Ad-problemen mislukt bij het verwerken van VMAP-omleidingen.
 * **Zendesk #4096**
 PS4 CSAI: Segmenteringsfout Correctie crasht wanneer TVSDK een segmentatiefout genereert wanneer een bibliotheek een VMAP-reactie verwerkt.
 
 * **Zendesk #4161**
-Trickplay 16x aan het eind van de film bevriest Fixed implock die plaatsvindt wanneer trickplay op normale playback terugkeert
+Trickplay 16x aan het eind van de film bevriest Vaste impasse die wanneer het trickplay aan normaal playback terugkeert
 
 * **Zendesk #4208**
-Willekeurig crashen wanneer Closed Captions zijn ingeschakeld Vast geheugenlek wanneer Closed Captions was ingeschakeld
+Willekeurig crashen wanneer Closed Captions is ingeschakeld Vast geheugenlek wanneer Closed Captions is ingeschakeld
 
 * **Zendesk #4213**
 PS4 CSAI: De standaardgebruiker-agentenkoord van de verandering voor alle verwante vraag gebruiker-agentenkoord wordt gecreeerd gebruikend het zelfde koord van UA dat browser gebruikt + voegt Primetime koord toe
 
-* **PTPLAY-7675** (interne) getranscodeerde advertenties spelen geen Creative Repackaging toen het binnen een reactie VMAP of VAST riep. Als u dit corrigeert, hoeft u alleen maar de mediafile te lezen van advertentie in plaats van te lezen van de asset in het geval van grote advertenties.
+* **PTPLAY-7675** (interne) Getranscodeerde advertenties spelen geen Creative Repackaging uit als deze worden aangeroepen in een VMAP- of VAST-reactie. Als u dit corrigeert, hoeft u alleen maar de mediafile te lezen van advertentie in plaats van te lezen van de asset in het geval van grote advertenties.
 
-* **PTPLAY-7895** (internal) Als  `allowMultipleAds=false`er geen advertenties Vaste bug afspelen waarbij de  `allowMultipleAds` parameter niet correct werd gevolgd.
+* **PTPLAY-7895** (internal) Wanneer `allowMultipleAds=false`, geen advertenties Vaste bug afspelen `allowMultipleAds` parameter niet correct wordt uitgevoerd.
 
-* **PTPLAY-7896** (interne) advertenties spelen op PS4 in volgorde van volgorde af. Dit probleem is opgelost. Advertenties waren namelijk niet in de volgorde waarin de advertenties in de XML-reacties werden weergegeven.
+* **PTPLAY-7896** (interne) Advertenties zijn in PS4 in volgorde afgespeeld. Dit probleem is nu opgelost. Advertenties waren namelijk niet in de volgorde waarin de advertenties in de XML-reacties werden weergegeven.
 
 * PS4 TVSDK is opnieuw getest in een mini-app in plaats van in een game.
 
 **Versie 2.1.0.563**
 
 * **Zendesk #3868**
-Does TVSDK support Playstation SDK 2.5 The TVSDK is now built with the 2.5 Playstation SDK.
+Steunt TVSDK Playstation SDK 2.5 TVSDK wordt nu gebouwd met 2.5 Playstation SDK.
 
 * **Zendesk #4093**
-targetingInfo sleutel-waardeparen in Pt Ads request.
+het richten van sleutel-waardeparen van Info in Pt Ads verzoek.
 \
    Er is een nieuwe-regelteken toegevoegd dat de sleutel-/waardeparen scheidt.
 
@@ -122,8 +121,7 @@ De volgende functies worden ondersteund in TVSDK 2.1 voor PlayStation 4:
 
 **Versie 2.1.0.621**
 
-* Ad Fallback, Daisy chaining in ad selection logic (Zendesk #3103)
-Voor VAST-advertenties (creatieven) waarvoor de fallback-regel is ingeschakeld, behandelt de TVSDK een advertentie met een ongeldig MIME-type als een lege advertentie en probeert deze te gebruiken als fallback-advertenties op zijn plaats.U kunt enkele aspecten van fallback-gedrag configureren
+* Ad Fallback, Daisy chaining in ad selection logic (Zendesk #3103) For VAST ads (creatives) with the fallback rule enabled, the TVSDK behandelt een advertentie met een ongeldig MIME type als een lege advertentie en probeert fallback advertenties in zijn plaats te gebruiken.U kunt enkele aspecten van fallback-gedrag configureren
 
 **Versie 2.1.0.538**
 
@@ -139,4 +137,4 @@ Voor VAST-advertenties (creatieven) waarvoor de fallback-regel is ingeschakeld, 
 
 ## Nuttige bronnen {#helpful-resources}
 
-* Zie de volledige Help-documentatie op de pagina [Adobe Primetime Learn &amp; Support](https://helpx.adobe.com/support/primetime.html).
+* Zie de volledige Help-documentatie op [Adobe Primetime - Meer informatie en ondersteuning](https://experienceleague.adobe.com/docs/primetime.html) pagina.

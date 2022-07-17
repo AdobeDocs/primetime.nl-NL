@@ -4,9 +4,9 @@ description: Opmerkingen bij de release van TVSDK 2.7 voor Android™ beschrijve
 products: SG_PRIMETIME
 topic-tags: release-notes
 exl-id: d64f0ef2-60a9-43a1-b2f9-44764a570538
-source-git-commit: 3891ea44775899c1e0d43c4ac74bbc4b07d7962e
+source-git-commit: 59ea8008c828f3bdf275fea5cc2a59c37b0c4845
 workflow-type: tm+mt
-source-wordcount: '4070'
+source-wordcount: '4037'
 ht-degree: 0%
 
 ---
@@ -425,10 +425,10 @@ Deze versie van TVSDK heeft de volgende problemen:
 
 ## Nuttige bronnen {#helpful-resources}
 
-* [Systeemvereisten](https://experienceleague.adobe.com/docs/primetime/programming/tvsdk-2-7-for-android/overview/c-psdk-android-2.7-requirements.html?lang=en)
-* [TVSDK 2.7 voor Android™-programmeergids](https://experienceleague.adobe.com/docs/primetime/programming/tvsdk-2-7-for-android/overview/c-psdk-android-2.7-overview-prod-audience-guide.html?lang=en)
+* [Systeemvereisten](/help/programming/tvsdk-2.7-for-android/c-psdk-android-2.7-requirements.md)
+* [TVSDK 2.7 voor Android™-programmeergids](/help/programming/tvsdk-2.7-for-android/overview-prod-audience-guide/c-psdk-android-2.7-overview-prod-audience-guide.md)
 * [TVSDK Android™ Javadoc voor API-naslaggids](https://help.adobe.com/en_US/primetime/api/psdk/javadoc_2.7/index.html)
 * [TVSDK Android™ C++ API-document](https://help.adobe.com/en_US/primetime/api/psdk/cpp/namespaces.html) - Elke Java™-klasse heeft een corresponderende C++-klasse en de C++-documentatie bevat meer verklarend materiaal dan de Java™-documenten. Raadpleeg daarom de C++-documentatie voor een beter begrip van de Java™ API.
-* [TVSDK 1.4 tot 2.5 voor migratiehandleiding voor Android™ (Java™)](https://experienceleague.adobe.com/docs/primetime/migration/tvsdk-14-25-android.html?lang=en)
+* [TVSDK 1.4 tot 2.5 voor migratiehandleiding voor Android™ (Java™)](/help/migration-guides/tvsdk-14-25-android.md)
 * Zie voor het afhandelen van scenario&#39;s voor het in- en uitschakelen van schermen de `Application_Changes_for_Screen_On_Off.pdf` bestand dat is opgenomen in de build.
 * Zie de volledige Help-documentatie op [Adobe Primetime - Meer informatie en ondersteuning](https://experienceleague.adobe.com/docs/primetime.html) pagina.

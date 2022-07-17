@@ -4,16 +4,15 @@ description: Opmerkingen bij de release van TVSDK 2.4 van de browser beschrijven
 contentOwner: dekalra
 topic-tags: release-notes
 products: SG_PRIMETIME
-translation-type: tm+mt
-source-git-commit: b33240bf1b42b80389cd95a7ae4d3f85185a2d32
+exl-id: 83fdf530-5cbb-41d9-ab2a-28e117f04488
+source-git-commit: 3b051c3188c81673129e12dfeb573aaf85c15c97
 workflow-type: tm+mt
 source-wordcount: '6812'
 ht-degree: 0%
 
 ---
 
-
-# Opmerkingen bij de release van TVSDK 2.4 van browser {#browser-tvsdk-release-notes}
+# Opmerkingen bij de release Browser TVSDK 2.4 {#browser-tvsdk-release-notes}
 
 Opmerkingen bij de release van TVSDK 2.4 van de browser beschrijven de nieuwe, ondersteunde en niet-ondersteunde functies en de bekende problemen in TVSDK 2.4 van de browser.
 
@@ -29,13 +28,13 @@ Browser TVSDK 2.4 biedt JavaScript API&#39;s voor het bouwen van browsergebaseer
 
 Deze release bevat de volgende informatie:
 
-・ [Documentatie voor TVSDK API voor browser](https://help.adobe.com/en_US/primetime/api/psdk/browser_tvsdk/index.html).
+・ [Browser TVSDK API-documentatie](https://help.adobe.com/en_US/primetime/api/psdk/browser_tvsdk/index.html).
 
-・ [Programmeringsgids voor TVSDK-browsers](https://helpx.adobe.com/content/dam/help/en/primetime/programming-guides/psdk_browser-tvsdk.pdf).
+・ [Programmeringsgids voor TVSDK voor browsers](https://helpx.adobe.com/content/dam/help/en/primetime/programming-guides/psdk_browser-tvsdk.pdf).
 
-・ [TVSDK voor 1.4 DHLS aan Browser TVSDK 2.4 de Gids van de Migratie](https://helpx.adobe.com/primetime/migration-guides/tvsdk-14-dhls-browser-tvsdk-24.html).
+・ [TVSDK voor 1.4 DHLS naar Browser TVSDK 2.4-migratiegids](https://helpx.adobe.com/primetime/migration-guides/tvsdk-14-dhls-browser-tvsdk-24.html).
 
-・ [Converteren van Browser TVSDK 2.4.6 naar versie 2.4.7](https://helpx.adobe.com/primetime/conversion-guides/browser-tvsdk-246-to-247-for-javascript.html).
+・ [Omzetten van TVSDK 2.4.6 van browser naar versie 2.4.7](https://helpx.adobe.com/primetime/conversion-guides/browser-tvsdk-246-to-247-for-javascript.html).
 
 ・ Een referentie-implementatie die in de build is opgenomen.
 
@@ -51,9 +50,9 @@ Deze versie van Browser TVSDK verstrekt nieuwe eigenschappen die u kunt gebruike
 
 De volgende toevoeging is beschikbaar als deel van Browser TVSDK 2.4.12 Update (Bouwstijl 204):
 
-* Implementatie van volume-API van AdobePSDK.MediaPlayer wordt zodanig gewijzigd dat automatisch afspelen op iOS is toegestaan wanneer het afspelen wordt gedempt.
+* Implementatie van volume-API van AdobePSDK.MediaPlayer wordt zodanig gewijzigd dat automatisch afspelen op iOS mogelijk is wanneer het afspelen wordt gedempt.
 
-・ Een nieuwe API, `auditudeSettings.ignoreVPAIDAds`, wordt toegevoegd om het negeren van VPAID-advertenties toe te staan die van de Auditude-server worden ontvangen. De API werkt niet voor Flash Fallback.
+・ Een nieuwe API, `auditudeSettings.ignoreVPAIDAds`, wordt toegevoegd om het negeren van VPAID-advertenties die zijn ontvangen van de Auditude-server toe te staan. De API werkt niet voor Flash Fallback.
 
 **Versie 2.4.11**
 
@@ -63,13 +62,13 @@ De volgende verbeteringen en toevoegingen zijn beschikbaar als onderdeel van de 
 
 ・ Ondersteuning voor `AuditudeSettings.creativeRepackagingDomain` API is nu ook beschikbaar voor MSE. Eerder werd deze alleen ondersteund in de fallback-modus Flash.
 
-・ De release bevat oplossingen voor kritieke problemen met klanten. Zie *Vaste problemen* een lijst.
+・ De release bevat oplossingen voor kritieke problemen met klanten. Zie *Opgeloste problemen* een lijst.
 
 **Versie 2.4.10**
 
 De volgende verbeteringen en toevoegingen zijn beschikbaar als onderdeel van de Browser-versie van TVSDK 2.4.10:
 
-・ TVSDK biedt enableLogging() om de logboekregistratie in of uit te schakelen. Raadpleeg de [API documentatie](https://help.adobe.com/en_US/primetime/api/psdk/browser_tvsdk/index.html)voor gebruik.
+・ TVSDK biedt enableLogging() om de logboekregistratie in of uit te schakelen. Zie de [API-documentatie](https://help.adobe.com/en_US/primetime/api/psdk/browser_tvsdk/index.html)voor gebruik.
 
 ・ TVSDK biedt geen ondersteuning meer voor standaardhoofdstukken bij gebruik van Adobe Analytics. Definieer en beheer hoofdstukken met uw toepassing.
 
@@ -95,13 +94,13 @@ AdobePSDK.ForceHttpsAdConfiguration-klasse.
 
 **Nieuw in update 2.4.8 (build 6002)**
 
-Deze update bevat oplossingen voor kritieke klantproblemen. Zie *Opgeloste problemen* voor de lijst.
+Deze update bevat oplossingen voor kritieke klantproblemen. Zie *Opgeloste problemen*, voor de lijst.
 
 **Versie 2.4.8**
 
 De volgende verbeteringen en toevoegingen zijn beschikbaar als onderdeel van de Browser-versie van TVSDK 2.4.8:
 
-・ De SDK is nu compatibel met Chrome EME en de wijzigingen in de aanbevolen procedures zijn beschikbaar vanaf Chrome v58. Zie [https://storage.googleapis.com/wvdocs/Chrome_EME_Changes_and_Best_Practices.pdf](https://storage.googleapis.com/wvdocs/Chrome_EME_Changes_and_Best_Practices.pdf)**
+・ De SDK is nu compatibel met Chrome EME en de wijzigingen in de aanbevolen procedures zijn beschikbaar vanaf Chrome v58. Zie voor meer informatie [https://storage.googleapis.com/wvdocs/Chrome_EME_Changes_and_Best_Practices.pdf](https://storage.googleapis.com/wvdocs/Chrome_EME_Changes_and_Best_Practices.pdf)**
 
 ・ Het UI-framework biedt nu ondersteuning voor de workflow voor HLS Access DRM op Flash, alleen Advertentie en gerichte informatie.
 
@@ -125,7 +124,7 @@ In dit hulpmiddel, kunt u diverse montages selecteren, **Test Configuratie **om 
 
 ・ Toevoeging van de MediaPlayerItemConfig-API aan het UI-framework
 
-Verschillende functies, zoals advertentieMetadata, advertentieFactory, enSignalingMode, networkConfiguration, customRangeMetadata, useHardwareDecoder, subscribeTags, adTags, thumbnailScrubber, billingMetricsConfiguration, kunnen worden geconfigureerd via MediaPlayerItemConfig. Zie de documentatie van AdobePSDK.MediaPlayerItemConfig in de [Browser TVSDK API](https://help.adobe.com/en_US/primetime/api/psdk/browser_tvsdk/index.html)* * [documentatie](https://help.adobe.com/en_US/primetime/api/psdk/browser_tvsdk/index.html) voor meer informatie.
+Verschillende functies, zoals advertentieMetadata, advertentieFactory, enSignalingMode, networkConfiguration, customRangeMetadata, useHardwareDecoder, subscribeTags, adTags, thumbnailScrubber, billingMetricsConfiguration, kunnen worden geconfigureerd via MediaPlayerItemConfig. Raadpleeg de documentatie bij AdobePSDK.MediaPlayerItemConfig in het dialoogvenster [TVSDK-API voor browser](https://help.adobe.com/en_US/primetime/api/psdk/browser_tvsdk/index.html)* * [documentatie](https://help.adobe.com/en_US/primetime/api/psdk/browser_tvsdk/index.html).
 
 In het Kader UI, is de manier om netwerkconfiguraties door de spelerconfiguratie over te gaan gewijzigd.
 
@@ -165,7 +164,7 @@ DRM-configuraties en Analytics Tracking kunnen worden ingeschakeld via het UI-fr
 
 Deze nieuwe API biedt de speler-app flexibiliteit voor het selecteren van het div waarin het FlashFallback.swf-bestand kan worden ingesloten.
 
-* De API van `getVersion`klasse `AdobePSDK.MediaPlayer` is vervangen door de klasse `AdobePSDK.Version` voor informatie over de versie van TVSDK. Zie `AdobePSDK.Version` API [hier](https://help.adobe.com/en_US/primetime/api/psdk/browser_tvsdk/AdobePSDK.Version.html) voor meer informatie.
+* Vervangen `getVersion`API van `AdobePSDK.MediaPlayer` klasse met `AdobePSDK.Version` voor informatie over de TVSDK-versie. Zie voor meer informatie `AdobePSDK.Version` API [hier](https://help.adobe.com/en_US/primetime/api/psdk/browser_tvsdk/AdobePSDK.Version.html).
 
 **Versie 2.4.6**
 
@@ -181,7 +180,7 @@ Met behulp van facturering kan Browser TVSDK gegevens over spelergebruik verzame
 
 >[!NOTE]
 >
->De afgekeurde opsommingstekens MediaPlayer.Events en afgekeurde constanten in Enum PSDKErrorCode zijn verwijderd in versie 2.4.6. Zie [Omzetten van TVSDK 2.4.5 in versie 2.4.6](https://helpx.adobe.com/primetime/conversion-guides/browser-tvsdk-245-to-246-for-javascript.html) voor meer informatie.
+>De afgekeurde opsommingstekens MediaPlayer.Events en afgekeurde constanten in Enum PSDKErrorCode zijn verwijderd in versie 2.4.6. Zie voor meer informatie [Omzetten van TVSDK 2.4.5 van browser naar versie 2.4.6](https://helpx.adobe.com/primetime/conversion-guides/browser-tvsdk-245-to-246-for-javascript.html).
 
 **Versie 2.4.5**
 
@@ -189,7 +188,7 @@ De volgende functies zijn nieuw in versie 2.4.5:
 
 * **Opnieuw afspelen en toevoegen van gebeurtenissen**
 
-   Streams voor HLS Full Event Replay (FER) ondersteunen nu resolutie en ad-gedrag. Om deze steun toe te laten, plaats de advertentie signalerende wijze aan `MANIFEST_CUES` wanneer het creëren van het `MediaPlayerItemConfig` voorwerp.
+   Streams voor HLS Full Event Replay (FER) ondersteunen nu resolutie en ad-gedrag. Om deze steun toe te laten, plaats de advertentie signalerende wijze aan `MANIFEST_CUES` bij het maken van de `MediaPlayerItemConfig` object.
 
 * **MediaplayerView ScalePolicy Support**
 
@@ -201,7 +200,7 @@ De volgende functies zijn nieuw in versie 2.4.5:
 
 * **Selectieve toepassing van`withCredentials`**
 
-Wanneer `withCredentials` aan waar wordt geplaatst, kan `Access-Control-Allow-Origin` kopbal niet aan een wilde kaart worden geplaatst. Afhankelijk van de reactie van de server stelt Browser-TVSDK het kenmerk `withCredentials` selectief in. Zie [De API-docs van de TVSDK-browser](https://help.adobe.com/en_US/primetime/api/psdk/browser_tvsdk/index.html) voor meer informatie over deze ondersteuning.
+Wanneer `withCredentials` is ingesteld op true, `Access-Control-Allow-Origin` header kan niet worden ingesteld op een jokerteken. Afhankelijk van de reactie van de server stelt Browser-TVSDK de `withCredentials` kenmerk. Voor meer informatie over deze ondersteuning raadpleegt u [TVSDK API-documenten browser](https://help.adobe.com/en_US/primetime/api/psdk/browser_tvsdk/index.html).
 
 **Versie 2.4.4**
 
@@ -233,7 +232,7 @@ De volgende functies zijn nieuw in versie 2.4.2:
 
 * **API-pariteit**
 
-Voor een volledige lijst van de API pariteit, zie [TVSDK voor 1.4 DHLS aan Browser TVSDK 2.4 de Gids van de Migratie](https://helpx.adobe.com/primetime/migration-guides/tvsdk-14-dhls-browser-tvsdk-24.html).
+Voor een volledige lijst van de API pariteit, zie [TVSDK voor 1.4 DHLS naar Browser TVSDK 2.4-migratiegids](https://helpx.adobe.com/primetime/migration-guides/tvsdk-14-dhls-browser-tvsdk-24.html).
 
 * **Ondersteuning van Sample-AES**
 
@@ -352,7 +351,7 @@ Browser TVSDK heeft specifieke vereisten voor de niveaus van platforms en softwa
  <tbody> 
   <tr> 
    <td><p><strong>Technologie</strong> </p> </td> 
-   <td><p><strong>Video-tag</strong><sup> 1 voor TVSDK-browser</sup></p> </td> 
+   <td><p><strong>Video-tag voor TVSDK van browser</strong><sup>1</sup></p> </td> 
    <td><p><strong>Browser TVSDK MSE</strong></p> </td> 
    <td><p><strong>Flash</strong></p> </td> 
    <td><p><strong>Standaardtechnologie</strong></p> </td> 
@@ -893,13 +892,13 @@ Hier is de eigenschapmatrijs voor de eigenschappen DASH in Browser TVSDK.
 
 ・ *DASH Core-afspeelfuncties*
 
-・ *Geavanceerde afspeelfuncties voor DASH*
+・ *Geavanceerde afspeelfuncties DASH*
 
-・ *Beschermingsfuncties voor DASH-inhoud*
+・ *Functies voor DASH-inhoudsbeveiliging*
 
 ・ *DASH Core- en invoegfuncties*
 
-・ *Geavanceerde DASH-invoegfuncties*
+・ *Geavanceerde DASH-functies en invoegfuncties*
 
 ・ *DASH-integratie*
 
@@ -1233,15 +1232,15 @@ De volgende functies worden ondersteund:
 
 **Problemen opgelost in 2.4.12-update (build 204)**
 
-De volgende problemen zijn opgelost in de Browser-TVSDK versie 2.4.12-update (build 204):
+De volgende problemen zijn opgelost in de Browser-versie van TVSDK versie 2.4.12 Update (build 204):
 
-・ **21647**- TVSDK moet het automatisch afspelen van video op iOS-apparaten mogelijk maken wanneer de audio wordt gedempt.
+・ **21647**- TVSDK moet het automatisch afspelen van video op iOS-apparaten mogelijk maken wanneer het geluid wordt gedempt.
 
-・ **21465** - De Afgewezen Toegang van het Systeem van de Sleutel van de Fout wordt ontvangen wanneer het spelen van een DRM-Beschermde DASH stroom nadat een Levende DASH stroom wordt gespeeld.
+・ **21465**- Foutsleutelsysteemtoegang geweigerd wordt ontvangen bij het afspelen van een DASH-stream die met DRM is beveiligd nadat een DASH Live-stream is afgespeeld.
 
-・ **21442**- Inhoud automatisch afspelen op iOS-web inschakelen nadat een preroll-advertentie met een gebruikersbeweging is afgespeeld.
+・ **21442**- Schakel automatisch afspelen van inhoud op het iOS-web in nadat een gebruikersbeweging is afgespeeld.
 
-・ **21240**- Geleverde API om VPAID-advertenties te filteren die vanuit Auditude/VMAP zijn geparseerd.
+・ **21240**- Opgegeven API om VPAID-advertenties te filteren die vanuit Auditude/VMAP zijn geparseerd.
 
 **Opgeloste problemen in versie 2.4.11**
 
@@ -1253,15 +1252,15 @@ De volgende problemen zijn opgelost in Browserversie 2.4.11 van TVSDK:
 
 ・ **21009**: Gesloten bijschriften blijven op het scherm staan als er wordt gezocht naar een onderbreking totdat er nieuwe bijschriften verschijnen.
 
-・ **21141**: Het terugzoeken wordt afgewezen vanwege een zeldzame omstandigheid tijdens het toevoegen van het segment.
+・ **2141**: Het terugzoeken wordt afgewezen vanwege een zeldzame omstandigheid tijdens het toevoegen van het segment.
 
-・ **21142**: U kunt zoekbare afspeelbereiken beschikbaar maken wanneer de speler zich in de status INITIALIZED bevindt. Vanwege deze wijzigingen wordt het starten van de sessie op positie nu ondersteund.
+・ **2142**: U kunt zoekbare afspeelbereiken beschikbaar maken wanneer de speler zich in de status INITIALIZED bevindt. Vanwege deze wijzigingen wordt het starten van de sessie op positie nu ondersteund.
 
 ・ **21363**: 608/708 gesloten bijschriften gaan niet meer synchroon nadat ze voor DASH-streams zijn geplaatst.
 
 **Toevoegingsfuncties:**
 
-・ **21179**: Problemen met middelste rol (lange pauzes, zwarte frames) met VOD-inhoud worden nu opgelost door de eigenschap ad.primaryAsset.adParameters correct in te stellen.
+・ **2179**: Problemen met middelste rol (lange pauzes, zwarte frames) met VOD-inhoud worden nu opgelost door de eigenschap ad.primaryAsset.adParameters correct in te stellen.
 
 ・ **21257**: Het MP4-bestand met de hoogste bitsnelheid wordt geselecteerd voor transcodering als MP4 geen geldig mime-type is en de functie voor creatief opnieuw verpakken is ingeschakeld.
 
@@ -1301,7 +1300,7 @@ De volgende problemen zijn opgelost in Browserversie 2.4.9 van TVSDK:
 
 ・ **19141**: Uncaught (in promise) ReferenceError: width is not define.
 
-・ **18997, 19299**: Probleem met videoflikkering bij segmentgrens. Dit gebeurde omdat SDK de verschuiving van de samenstellingstijd van de laatste steekproef niet correct berekende.
+・ **18997 1929**: Probleem met videoflikkering bij segmentgrens. Dit gebeurde omdat SDK de verschuiving van de samenstellingstijd van de laatste steekproef niet correct berekende.
 
 ・ **19780**: Het afspelen begint niet voor HLS-inhoud en HLS-advertentie op Firefox v53 (Firefox-uitgave #354653).
 
@@ -1331,27 +1330,27 @@ De volgende problemen zijn opgelost in Browserversie 2.4.9 van TVSDK:
 
 ・ **20097**: Het afspelen van advertenties wordt overgeslagen en de hoofdinhoud wordt onmiddellijk hervat in plaats van te wachten op een time-out van 20 seconden als ad-manifest niet beschikbaar is.
 
-**Problemen verholpen in versie 2.4.8 Update (build 6002)**
+**Problemen opgelost in versie 2.4.8 Update (build 6002)**
 
 De volgende problemen zijn opgelost in de Browser-versie van TVSDK versie 2.4.8-update (build 6002):
 
-・ **14126:** Afspelen kan op Firefox vastlopen (uitgave #1316024) vanwege interne tussenruimte in MSE-bronbuffer. Probeer te zoeken om het afspelen te hervatten
+・ **14126:** Het afspelen kan vastlopen op Firefox (uitgave #1316024) vanwege interne tussenruimte in MSE-bronbuffer. Probeer te zoeken om het afspelen te hervatten
 
-・ **19608:** Repareren om de tijdverschuivingswaarde van Auditude VMAP reactie na te leven.
+・ **19608:** Oplossen om de timeoffset-waarde van Auditude VMAP-reactie te respecteren.
 
-・ **19635:** Oplossingen voor videoband in Internet Explorer 11 in Windows 10.
+・ **19635:** Hiermee wordt de videoband in Internet Explorer 11 in Windows 10 gecorrigeerd.
 
 ・ **19761:** Oplossingen voor ABR-problemen met HLS.
 
-・ **19780:** Hiermee wordt het afspelen van de advertentie gecorrigeerd met HLS-inhoud die is afgebroken in Mozilla Firefox v53.
+・ **19780:** Hiermee corrigeert u het afspelen van de advertentie met HLS-inhoud die is afgebroken in Mozilla Firefox v53.
 
-・ **19877 en 19744:** De problemen verhelpen de inconsistentie bij het selecteren van bitsnelheid na een zoekbewerking. De bitsnelheidselectie bij zoeken is nu de lagere waarde van de huidige bitsnelheid en de bitsnelheid bij het opstarten.
+・ **1987 en 1974:** De problemen verhelpen de inconsistentie bij het selecteren van bitsnelheid na een zoekbewerking. De bitsnelheidselectie bij zoeken is nu de lagere waarde van de huidige bitsnelheid en de bitsnelheid bij het opstarten.
 
-・ **19881:** Afspelen vastgezet en bufferbedekking wordt gedurende 3-4 keer weergegeven nadat het zoeken is uitgevoerd.
+・ **1981:** Het afspelen van vastgezette bedekkingen en bufferbedekking wordt 3 tot 4 keer oneindig weergegeven nadat het zoeken is uitgevoerd.
 
-・ **19884:** Bevestig naleving van Chrome 59 Beta Verified Media Path (VMP) vereisten. bTVSDK kon Widevine DRM-inhoud afspelen met Chrome 59 Beta.
+・ **1984:** Bevestig naleving van Chrome 59 Beta Verified Media Path (VMP) vereisten. bTVSDK kon Widevine DRM-inhoud afspelen met Chrome 59 Beta.
 
-・ **19916:** DRM playback op UI-Kader werd gebroken. Nu, roept het verwervingLicense aan zelfs als er geen beleid in de meta-gegevens is.
+・ **19916:** Het afspelen van DRM op UI-Framework is verbroken. Nu, roept het verwervingLicense aan zelfs als er geen beleid in de meta-gegevens is.
 
 **In versie 2.4.8 opgeloste problemen**
 
@@ -1359,7 +1358,7 @@ De volgende problemen zijn opgelost in de Browser-versie van TVSDK 2.4.8:
 
 ・ **10075**: Bij het zoeken vóór de tijdlijn is de gebeurtenis play complete niet ontvangen op Firefox en Chrome en is de gebeurtenis seek niet ontvangen op Firefox.
 
-・ **15775**: De gebeurtenis Play complete is niet ontvangen in Windows 8.1 Internet Explorer.
+・ **1575**: De gebeurtenis Play complete is niet ontvangen in Windows 8.1 Internet Explorer.
 
 ・ **17306**: Voor SSAI-streams wordt het afspelen ondersteund. Het bijhouden van vastgezette advertenties wordt niet ondersteund.
 
@@ -1369,7 +1368,7 @@ De volgende problemen zijn opgelost in de Browser-versie van TVSDK 2.4.8:
 
 ・ **19219**: Alleen afspelen toevoegen werkt niet via het gebruikersinterface-framework.
 
-・ **19222**: AES-128 sleutel wordt gevraagd eens voor playlist en de verdere verzoeken worden gediend van het geheime voorgeheugen. Eerder werd het aangevraagd voor elk segment.
+・ **1922**: AES-128 sleutel wordt gevraagd eens voor playlist en de verdere verzoeken worden gediend van het geheime voorgeheugen. Eerder werd het aangevraagd voor elk segment.
 
 ・ **19597**: &quot;Uncaught TypeError: Kan eigenschap &#39;log&#39; van undefined niet lezen. Dit is in de kanariële builds van Chrome waargenomen.
 
@@ -1440,10 +1439,10 @@ De beperkingen en bekende problemen in Browser TVSDK worden hieronder vermeld.
   <tr> 
    <td>VOD + Live</td> 
    <td>Algemeen afspelen (afspelen, pauzeren, zoeken)</td> 
-   <td><p>・ Andere media-indelingen dan HLS worden niet ondersteund.</p> <p>8799: Bij het terugkoppelen van Flash wordt niet rekening gehouden met gemengde inhoud en daarom moet ervoor worden gezorgd dat inhoud, advertentie en andere URL's niet leiden tot gemengde inhoud (beveiligde en onveilige inhoud samen).</p> <p>・ 19271: Afspelen via gebruikersinterface wordt niet ondersteund in de Flash fallback-modus.</p> <p>・ Flash fallback werkt niet in Microsoft Internet Explorer 8 en 9 in Windows 7 omdat deze versies niet door de SDK worden ondersteund.</p> <p>・ 20262: Met fallback voegt u aangepaste parameters toe aan de lijst met doelinfo. Ook de prioriteitsvolgorde van aangepaste parameters verschilt in het geval van Flash en MSE.</p> <p>・ 20653:Browser TVSDK Flash fallback werkt niet bij Win10 met de Update van Maker.</p> <p>・ Flash Fallback werkt met Flash Player versie 23 en hoger.</p> <p>・ 20087 - Chrome 59 Beta met</p> <p>Flash 25.0.0.171</p> <p>Bèta (standaard), werkt het afspelen HLS niet op de Flash Fallback-modus. Het werkt prima op de Canarische Eilanden.</p> </td> 
+   <td><p>・ Andere media-indelingen dan HLS worden niet ondersteund.</p> <p>8799: Bij het terugkoppelen van Flash wordt niet rekening gehouden met gemengde inhoud en daarom moet ervoor worden gezorgd dat inhoud, advertentie en andere URL's niet leiden tot gemengde inhoud (beveiligde en onveilige inhoud samen).</p> <p>・ 19271: Afspelen via gebruikersinterface wordt niet ondersteund in de Flash fallback-modus.</p> <p>・ Flash fallback werkt niet in Microsoft Internet Explorer 8 en 9 in Windows 7, omdat deze versies niet door de SDK worden ondersteund.</p> <p>・ 20262: Met fallback voegt u aangepaste parameters toe aan de lijst met info. Ook de prioriteitsvolgorde van aangepaste parameters verschilt in het geval van Flash en MSE.</p> <p>・ 20653:Browser TVSDK Flash fallback werkt niet bij Win10 met de Update van Maker.</p> <p>・ Flash Fallback werkt met Flash Player versie 23 en hoger.</p> <p>・ 20087 - Chrome 59 Beta met</p> <p>Flash 25.0.0.171</p> <p>Bèta (standaard), werkt het afspelen HLS niet op de Flash Fallback-modus. Het werkt prima op de Canarische Eilanden.</p> </td> 
    <td><p>・ 12563: Streams met audiocodec mp4a.40.02 kunnen niet worden afgespeeld op Firefox vanwege een niet-ondersteunde audiocodec-tekenreeks in MPD. Audiocodec mp4a.40.2 wordt ondersteund.</p> <p>15029: Bij het schakelen tussen video's in multiView in UI-Kader, wordt de speel/pauzeknop niet dienovereenkomstig bijgewerkt.</p> <p>・ 16034:In Windows 8.1 IE leidt het aanroepen van reset() tot een onbekende MIME-typefout. Laad de media opnieuw om het afspelen te hervatten.</p> <p>・ 18235: Bepaalde zoekproblemen worden waargenomen bij DASH vod streams met Advertentie.</p> <p>・ 18727: Fout-API wordt niet ondersteund voor MSE</p> <p>18750: De gebeurtenissen van de Verandering van de status zouden in sommige gevallen voor zowel SDK als UI kader en in het Kader UI, kunnen de gebeurtenissen van IDLE en het Initialiseren StatusChange voor de gebeurtenisluisteraars missen die worden toegevoegd nadat het middel is geladen.</p> <p>・ 18889: Als de status MediaPlayer ERROR heeft, wordt het weergaveobject niet geretourneerd.</p> <p>・ 19039: Als AdobePSDK. MediaPlayer. seekToLocal() wordt gebruikt met een waarde groter dan EOF, en het afspelen begint bij MSE.</p> <p>・ 19049: Er wordt geen foutstatus gerapporteerd voor Flash Player op Chrome, IE en Firefox wanneer video tijdens het afspelen wordt geblokkeerd.</p> <p>・ 17.205: Het afspelen van video wordt gedurende enkele uren onderbroken tijdens het afspelen van niet-gedempte stream (Chromiumprobleem nr. 664033).</p> <p>・ 12308: Voor DASH-streams met composition_time_offset die zijn opgegeven, kan timeStampOffset zijn toegepast op de map in de Chrome-browser. Dit leidt tot een negatieve decoderingstijd en vandaar de fout MEDIA_ERR_ SRC_NOT_ SUPPORTED (Chromiumuitgave #398141).</p> <p>・ 14126: Het afspelen kan vastlopen op Firefox (issue# 1316024) vanwege de interne tussenruimte in de MSE-bronbuffer. Probeer te zoeken om het afspelen te hervatten.</p> <p>・ 19115: MS Edge en IE 11 (Win 8.1 en 10) stellen Oorsprong niet in op null bij omleiding naar CORS en mislukken toch omdat de header niet null is, wat leidt tot een afspeelfout.</p> <p>・ 19861:Probleem met gedrag bij toevoegen op bronbuffer voor media die al worden afgespeeld. Chrome verwerpt het toegevoegde fragment, inclusief VVV, waardoor een volgende decoderingsfout optreedt. (Chroomprobleem #735335)</p> <p>19921: Afspeelstallen voor bepaalde HLS-inhoud, ook al is de inhoud succesvol gebufferd (Chromiumuitgave #713540)</p> <p>・ 20444:Het zoeken naar het einde van het gebufferde bereik op IE en Edge kan ertoe leiden dat het afspelen vastloopt.</p> <p>・ 20511: Soms kan afwijzen door zoekopdrachten worden waargenomen bij HLS-streams met of zonder advertenties.</p> <p>・ 20743: In Windows 10 Chrome wordt de HLS Live-stream enkele seconden vóór het afspelen van de MP4-voorvertoning afgespeeld.</p> <p>・ 21043: De videodimensie is mogelijk niet correct bij de eerste belasting omdat er geen metagegevens beschikbaar zijn.</p> <p>・ 21115: Android-gebruikersbeweging is vereist om het afspelen te starten als een pre-roll-advertentie beschikbaar is voor video's in een afspeellijst.</p> <p>・ HLS Live ondersteunt de rollover van het tijdstempel niet.</p> <p>・ AAC-SSR-audio wordt niet ondersteund.</p> <p>Audiocodecs AC3 en Enhanced AC3 worden niet ondersteund.</p> <p>・ Voor stromen met timestamp discontinuïteit maar zonder discontinuïteitsmarkeringen</p> <p>・ Bij afspelen kunnen er litches en onjuist zoeken optreden door sprongen.</p> <p>・ De duur en de afspeelduur van de inhoud komen mogelijk niet overeen.</p> <p>・ discontinuaties tussen weergaven en uitvoeringen moeten overeenkomen met andere wijzen, wat kan leiden tot synchroniseren en problemen met vastlopen.</p> <p>・ Bijschriften en WebVTT worden mogelijk niet dicht bij het einde van de stream weergegeven.</p> <p>・ Wijzigingen in audiocodec worden niet ondersteund voor tijdstempelsprongen.</p> <p>・ Het invoegen van een advertentie wordt niet ondersteund.</p> <p>・ De modus Snel voorwaartse truc kan leiden tot een afspeellus in Win 8.1 IE 11 (MS-nummer #12446268).</p> <p>DASH:</p> <p>・ Voor live streams - liveprofiel met een dynamisch type wordt ondersteund.</p> <p>・ Voor VoD-streams - Live-profiel van het type static wordt ondersteund.</p> <p>Voor VoD-streams - vraagprofiel is niet gecertificeerd voor workflows voor advertenties.</p> </td> 
    <td><p>・ Live DASH en DASH Video on Demand-streams worden niet ondersteund.</p> <p>・ Het afspelen van PIP-video (Picture-in-Picture) wordt niet ondersteund op iOS in de modus Volledig scherm.</p> <p>Minder manifest voor extensie Safari (Video Tag) zonder juiste koptekst voor inhoudstype werkt niet.</p> </td> 
-   <td><p>・ applicationID in de afzenderapp moet gelijk zijn aan de gegenereerde id bij het registreren van de URL van de ontvanger als een aangepaste ontvanger-app.</p> <p>・ De referentiespeler is gecertificeerd voor DASH-workflows. UI-framework is niet gecertificeerd.</p> <p>Raadpleeg <a href="https://developers.google.com/cast/docs/media"><em>hier</em></a> voor een lijst met ondersteunde mediacodecs.</p> </td> 
+   <td><p>・ applicationID in de afzenderapp moet gelijk zijn aan de gegenereerde id bij het registreren van de URL van de ontvanger als een aangepaste ontvanger-app.</p> <p>・ De referentiespeler is gecertificeerd voor DASH-workflows. UI-framework is niet gecertificeerd.</p> <p>Raadpleeg voor een lijst met ondersteunde mediacodecs <a href="https://developers.google.com/cast/docs/media"><em>hier</em></a>.</p> </td> 
   </tr> 
   <tr> 
    <td>FER VOD</td> 
@@ -1568,8 +1567,8 @@ De beperkingen en bekende problemen in Browser TVSDK worden hieronder vermeld.
    <td>VOD + Live</td> 
    <td>ID3-parsering</td> 
    <td>20346: De byte voor tekstcodering van ID3-frames moet ook worden geretourneerd door SDK.</td> 
-   <td><p>ID3-tags die beschikbaar zijn in audiogegevenstransportstreams (ADTS), worden genegeerd door de SDK.</p> <p>・ 12378: Metagegevens met tijdslimiet voor ID3 worden op verschillende tijdstippen geparseerd op Flash en browser met ondersteuning voor MSE en daarom is het weergavegedrag op de tijdlijn van de verwijzingsspeler ook anders.</p> <p>・ 19247: ID3-parsering wordt niet ondersteund in UI-framework.</p> </td> 
-   <td><p>・ 20323: PRIV ID3-tag die wordt gebruikt om de tijdstempel van het eerste sample van het aac-segment aan te geven, wordt niet geparseerd door Safari (Safari-uitgave #32422733)</p> <p>・ 20350: Op bepaalde apparaten (waaronder MAC OS X 10.1, iPad10) biedt Safari geen gebeurtenis voor het wijzigen van de actiepunten in de trustmodus en dus worden ID3-frames niet ontvangen. (Safari-uitgave #32450526)</p> </td> 
+   <td><p>ID3-tags die beschikbaar zijn in audiogegevenstransportstreams (ADTS), worden genegeerd door de SDK.</p> <p>・ 12378: Metagegevens met tijdslimiet voor ID3 worden op verschillende tijdstippen geparseerd op Flash en browser met ondersteuning voor MSE en daarom is het weergavegedrag op de tijdlijn van de referentiespeler ook anders.</p> <p>・ 19247: ID3-parsering wordt niet ondersteund in UI-framework.</p> </td> 
+   <td><p>・ 20323: PRIV ID3-tag die wordt gebruikt om de tijdstempel van het eerste sample van het aac-segment aan te geven, wordt niet geparseerd door Safari (Safari-uitgave #32422733)</p> <p>・ 20350: Op bepaalde apparaten (zoals MAC OS X 10.1, iPad10) biedt Safari geen gebeurtenis voor het wijzigen van het actiepunt in de trustmodus en daarom worden ID3-frames niet ontvangen. (Safari-uitgave #32450526)</p> </td> 
    <td> </td> 
   </tr> 
   <tr> 
@@ -1607,7 +1606,7 @@ De beperkingen en bekende problemen in Browser TVSDK worden hieronder vermeld.
    <td>VOD</td> 
    <td>DRM</td> 
    <td> </td> 
-   <td><p>・ 12660: De HTML5-speler genereert een interne serverfout voor de verlopen PlayReady gecodeerde streepjesinhoud.</p> <p>・ 16720: DASH DRM-gecodeerde inhoud werkt niet als beginkenmerk in punt-tag ontbreekt.</p> <p>・ 18589: Afspelen wordt niet ondersteund voor DRM-beveiligde VoD-stream met meerdere Dash-perioden met Xlink.</p> <p>・ 18653: Het afspelen van de Inhoud van de Multiperiode van Widevine met Veelvoudige Toetsen, houdt bij eerste periode tegen en kan niet op volgende Periode schakelen.</p> <p>・ 18656: MultiPeriod Stream afspelen, gecodeerd met verschillende toetsen, wordt niet afgespeeld.</p> <p>Playready 2.0 for Dash is not certified.</p> <p> </p> <p> </p> </td> 
+   <td><p>・ 12660: De HTML5-speler genereert een interne serverfout voor de verlopen PlayReady-gecodeerde streepjesinhoud.</p> <p>・ 16720: DASH DRM-gecodeerde inhoud werkt niet als beginkenmerk in punt-tag ontbreekt.</p> <p>・ 18589: Afspelen wordt niet ondersteund voor DRM-beveiligde VoD-stream met meerdere Dash-perioden met Xlink.</p> <p>・ 18653: Het afspelen van de Inhoud van de Multiperiode van Widevine met Veelvoudige Toetsen, houdt bij eerste periode tegen en kan niet op volgende Periode schakelen.</p> <p>・ 18656: MultiPeriod Stream afspelen, gecodeerd met verschillende toetsen, wordt niet afgespeeld.</p> <p>Playready 2.0 for Dash is not certified.</p> <p> </p> <p> </p> </td> 
    <td>12602: HLS Fairplay DRM-metagegevens worden herhaaldelijk vernieuwd door de HTML5-speler op Safari</td> 
    <td><p>DASH Widevine DRM-inhoud die via Bento4 is verpakt, kan worden afgespeeld. Inhoud die is verpakt via Offline Packager en Shaka Packager, wordt niet afgespeeld. DASH PlayReady DRM wordt niet ondersteund.</p> </td> 
   </tr> 
@@ -1630,7 +1629,7 @@ De beperkingen en bekende problemen in Browser TVSDK worden hieronder vermeld.
    <td>VOD + Live</td> 
    <td>Pre/Mid/Post</td> 
    <td> </td> 
-   <td><p>・ Prerolladvertenties met actieve HLS-inhoud worden in de modus Dual Player afgespeeld.</p> <p>・ DASH-advertenties met HLS-inhoud en HLS-advertenties met DASH-inhoud worden niet ondersteund.</p> <p>・ 19002: In HTML5 Player with MSE adBreak. insertType retourneert geen correcte waarde voor het juiste invoegtype, d.w.z. dat de client is ingevoegd en of de server is ingevoegd.</p> <p>7794: Op mobiele apparaten (iOS, Android met Chrome 33 of lager of de native browser) waar de standaardbesturingsbalk in de modus Volledig scherm zichtbaar is, zijn de knoppen seek en fast forward beschikbaar wanneer Advertentie afspelen.</p> <p>・ 11048: Het schakelen van ad naar HLS Live-inhoud verloopt niet vloeiend in het geval van extensies van mediabron.</p> <p>・ 16083: Op Android 4.4 Chrome v52 kan het gebeuren dat HLS en HLS-inhoud leiden tot een decoderingsfout in de pijplijn na het afspelen.</p> <p>・ 16097: Fouten die tijdens het afbreken van de advertentie zijn aangetroffen, worden mogelijk niet afgehandeld, waardoor de hoofdstream het afspelen kan stoppen.</p> <p>・ 18095: MP4-advertenties worden niet ondersteund met live HLS-inhoud.</p> <p>19120: Meerdere zoekopdrachten op HLS-advertenties met HLS-inhoud kunnen ertoe leiden dat de stream het afspelen stopt.</p> <p>・ 19131: De bufferbedekking kan verschijnen terwijl het schakelen van pre-rol en onderbreking aan inhoud.</p> <p>・ 20296: In het geval van HLS Live streams, kan het terugzoeken in DVR-venster gevolgd door het zoeken over opgeloste mid rolls leiden tot een afspeelval.</p> <p>・ 20298:HLS Live streams met halverwege rolletjes de eerste halverwege rol en beweegt zich uit het venster DVR.</p> <p>・ 20317: HLS Live-streams kunnen stagneren bij het schakelen naar volgende advertentie of van advertentie naar inhoud voor het geval dat een break meer dan één advertentie bevat.</p> 
+   <td><p>・ Prerolladvertenties met actieve HLS-inhoud worden in de modus Dual Player afgespeeld.</p> <p>・ DASH-advertenties met HLS-inhoud en HLS-advertenties met DASH-inhoud worden niet ondersteund.</p> <p>・ 19002: In HTML5 Player met MSE adBreak. insertType retourneert geen correcte waarde voor het juiste invoegtype, d.w.z. dat de client is ingevoegd en of de server is ingevoegd.</p> <p>7794: Op mobiele apparaten (iOS, Android met Chrome 33 of lager of de native browser) waar de standaardbesturingsbalk in de modus Volledig scherm zichtbaar is, zijn de knoppen seek en fast forward beschikbaar wanneer Advertentie afspelen.</p> <p>・ 11048: Het schakelen van ad naar HLS Live-inhoud verloopt niet vloeiend in het geval van extensies van mediabron.</p> <p>・ 16083: Op Android 4.4 Chrome v52 kan het gebeuren dat HLS en HLS-inhoud leiden tot een decoderingsfout in de pijplijn na het afspelen.</p> <p>・ 16097: Fouten die tijdens het afbreken van de advertentie zijn aangetroffen, worden mogelijk niet afgehandeld, waardoor de hoofdstream het afspelen kan stoppen.</p> <p>・ 18095: MP4-advertenties worden niet ondersteund met live HLS-inhoud.</p> <p>19120: Meerdere zoekopdrachten op HLS-advertenties met HLS-inhoud kunnen ertoe leiden dat de stream het afspelen stopt.</p> <p>・ 19131: De bufferbedekking kan verschijnen terwijl het schakelen van pre-rol en onderbreking aan inhoud.</p> <p>・ 20296: In het geval van HLS Live streams, kan het terugzoeken in DVR-venster gevolgd door het zoeken over opgeloste mid rolls leiden tot een afspeelval.</p> <p>・ 20298:HLS Live streams met halverwege rolletjes de eerste halverwege rol en beweegt zich uit het venster DVR.</p> <p>・ 20317: HLS Live-streams kunnen stagneren bij het schakelen naar volgende advertentie of van advertentie naar inhoud voor het geval dat een break meer dan één advertentie bevat.</p> 
     <ul> 
      <li>Advertenties in het DVR-venster van HLS Live streams worden niet opgelost.</li> 
     </ul> </td> 
@@ -1712,7 +1711,7 @@ De beperkingen en bekende problemen in Browser TVSDK worden hieronder vermeld.
    <td> </td> 
    <td>VPAID 2.0</td> 
    <td> </td> 
-   <td><p>・ Advertentiepatronen worden niet ondersteund voor VPAID-advertenties.</p> <p>・ 15032: VPAID-advertenties in combinatie met MP4- of HLS-advertenties in een ad-break worden niet ondersteund.</p> <p>・ 19001: Op Android en iOS zijn dubbele audiotracks hoorbaar wanneer VPAID-advertentie met MP4 wordt afgespeeld als hoofdinhoud, een van de hoofdinhoud en een van de advertenties.</p> <p>・ 20762: VPAID-advertenties worden niet ondersteund voor Beeld-in-beeld (PIP).</p> <p>・ 21172: De gebeurtenis Play complete wordt niet ontvangen voor HLS VOD-inhoud met VPAID-advertenties.</p> <p>・ 21173: onAdBreakCompleteEvent wordt niet ontvangen voor HLS VOD-inhoud en post roll VPAID-advertenties.</p> </td> 
+   <td><p>・ Advertentiepatronen worden niet ondersteund voor VPAID-advertenties.</p> <p>・ 15032: VPAID-advertenties in combinatie met MP4- of HLS-advertenties in een ad-break worden niet ondersteund.</p> <p>・ 19001: Op Android en iOS wanneer VPAID-advertentie met MP4 wordt afgespeeld als hoofdinhoud, zijn dubbele audiotracks hoorbaar, een van de hoofdinhoud en een van de advertenties.</p> <p>・ 20762: VPAID-advertenties worden niet ondersteund voor Beeld-in-beeld (PIP).</p> <p>・ 21172: De gebeurtenis Play complete wordt niet ontvangen voor HLS VOD-inhoud met VPAID-advertenties.</p> <p>・ 21173: onAdBreakCompleteEvent wordt niet ontvangen voor HLS VOD-inhoud en post roll VPAID-advertenties.</p> </td> 
    <td>De speler wisselt tussen normale wijze en volledig-schermwijze terwijl het schakelen tussen VPAID en Belangrijkste inhoud.</td> 
    <td> </td> 
    <td> </td> 
@@ -1728,4 +1727,4 @@ De beperkingen en bekende problemen in Browser TVSDK worden hieronder vermeld.
 
 ## Nuttige bronnen {#helpful-resources}
 
-* Zie de volledige Help-documentatie op de pagina [Adobe Primetime Learn &amp; Support](https://helpx.adobe.com/support/primetime.html).
+* Zie de volledige Help-documentatie op [Adobe Primetime - Meer informatie en ondersteuning](https://experienceleague.adobe.com/docs/primetime.html) pagina.

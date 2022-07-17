@@ -4,9 +4,9 @@ description: De opmerkingen bij de release TVSDK 3.15 voor Android beschrijven w
 products: SG_PRIMETIME
 topic-tags: release-notes
 exl-id: cd2c64ef-dd42-4dc2-805f-eeb64a8a53d9
-source-git-commit: f266b93281a290a8c2f19ac6869287d6480f49e5
+source-git-commit: 3b051c3188c81673129e12dfeb573aaf85c15c97
 workflow-type: tm+mt
-source-wordcount: '5540'
+source-wordcount: '5516'
 ht-degree: 0%
 
 ---
@@ -77,7 +77,7 @@ De release was gericht op het verhelpen van de belangrijkste klantproblemen, zoa
 
 **Android TVSDK 3.8**
 
-* **Ondersteuning voor Pre-Roll met gedeeltelijke ad-Break-functie** - Dankzij deze verbetering biedt TVSDK 3.8 ondersteuning voor pre-roll-advertenties met PABI (Partial Ad-Break feature).
+* **Ondersteuning voor Pre-Roll met gedeeltelijke ad-Break-functie** - Dankzij deze verbetering biedt TVSDK 3.8 ondersteuning voor pre-roll-advertenties met de PABI-functie (Partial Ad-Break).
 
 De pre-roll advertentie, indien beschikbaar, wordt gespeeld, en dan speelt de inhoud van het levende punt geëmuleerd de ervaring van levende televisie.
 
@@ -736,7 +736,7 @@ WebViewDebbuging wordt geplaatst aan Vals door gebrek. Als u foutopsporing wilt 
    * Ondersteuning van ID3-tags is niet geverifieerd
 
 * Voor gebeurtenissen voor advertentievoortgang weerspiegelt de tijdlijnbalk mogelijk niet de 100% nauwkeurige en afspeeltijd. Als tijdelijke oplossing kunt u `adcompleteevent` om te weten wat de voltooiing van het afspelen van de advertentie is en om de gebruikersinterface bij te werken voor verschillende doeleinden, zoals het bijwerken van de tijdlijnbalk, het verwijderen van en verwante gebruikersinterface, enz.
-* Vast en de vraag die van VMAP is teruggekeerd respecteert niet de just-in-Time lookahead positie.
+* Vast en de vraag die van VMAP is teruggekeerd respecteert niet de just-in-timelookahead positie.
 
 **Android TVSDK 2.5.6**
 
@@ -772,8 +772,8 @@ Deze versie van TVSDK heeft de volgende problemen:
 
 ## Nuttige bronnen {#helpful-resources}
 
-* [Systeemvereisten](https://docs.adobe.com/content/help/en/primetime/programming/tvsdk-3x-android-prog/introduction/android-3x-requirements.html)
-* [TVSDK 3.10 voor Android-programmeergids](https://docs.adobe.com/content/help/en/primetime/programming/tvsdk-3x-android-prog/introduction/android-3x-overview-prod-audience-guide.html)
+* [Systeemvereisten](/help/programming/tvsdk-3x-android-prog/android-3x-introduction/android-3x-requirements.md)
+* [TVSDK 3.10 voor Android-programmeergids](/help/programming/tvsdk-3x-android-prog/android-3x-introduction/overview-prod-audience-guide/android-3x-overview-prod-audience-guide.md)
 * [TVSDK Android Javadoc voor API-naslaggids](https://help.adobe.com/en_US/primetime/api/psdk/javadoc3.5/index.html)
 * [TVSDK Android C++ API-document](https://help.adobe.com/en_US/primetime/api/psdk/cpp_3.5/namespaces.html) - Elke Java-klasse heeft een corresponderende C++-klasse en de C++-documentatie bevat meer verklarend materiaal dan de Java-docs. Raadpleeg daarom de C++-documentatie voor een beter begrip van de Java API.
 * [TVSDK 1.4 tot 2.5 voor migratiehandleiding voor Android (Java)](https://helpx.adobe.com/primetime/migration-guides/tvsdk-14-25-android.html)

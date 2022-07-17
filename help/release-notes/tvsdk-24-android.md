@@ -3,16 +3,15 @@ title: Opmerkingen bij de release TVSDK 2.4.1 voor Android
 description: In de Release-notities bij TVSDK 2.4.1 voor Android worden de nieuwe en ondersteunde functies en de bekende problemen en beperkingen in TVSDK Android 2.4.1 beschreven.
 topic-tags: release-notes
 products: SG_PRIMETIME
-translation-type: tm+mt
-source-git-commit: b33240bf1b42b80389cd95a7ae4d3f85185a2d32
+exl-id: 3de09048-ae32-43b4-a019-34b217931a4c
+source-git-commit: 3b051c3188c81673129e12dfeb573aaf85c15c97
 workflow-type: tm+mt
-source-wordcount: '1963'
+source-wordcount: '1962'
 ht-degree: 0%
 
 ---
 
-
-# Opmerkingen bij de release van TVSDK 2.4.1 voor Android {#tvsdk-for-android-release-notes}
+# Opmerkingen bij de release TVSDK 2.4.1 voor Android {#tvsdk-for-android-release-notes}
 
 In de Release-notities bij TVSDK 2.4.1 voor Android worden de nieuwe en ondersteunde functies en de bekende problemen en beperkingen in TVSDK Android 2.4.1 beschreven.
 
@@ -20,7 +19,7 @@ In de Release-notities bij TVSDK 2.4.1 voor Android worden de nieuwe en onderste
 
 Adobe geeft TVSDK 2.4.1 voor Android uit.
 
-Als u deze versie van TVSDK wilt gebruiken, moet u ervoor zorgen dat uw systeem voldoet aan de vereisten die worden beschreven onder [Systeemvereisten](https://helpx.adobe.com/content/dam/help/en/primetime/programming-guides/psdk_android_2.5.pdf#page=6).
+Om deze versie van TVSDK te gebruiken, zorg ervoor dat uw systeem aan de vereisten voldoet die bij worden beschreven [Systeemvereisten](https://helpx.adobe.com/content/dam/help/en/primetime/programming-guides/psdk_android_2.5.pdf#page=6).
 
 Hier vindt u documentatie:
 
@@ -34,7 +33,7 @@ De Javadocs zijn de ultieme instantie, omdat ze automatisch rechtstreeks worden 
 
 Elke klasse van Java heeft een overeenkomstige C++ klasse, en de documentatie C++ bevat verklarend materiaal dan JavaDocs, zo raadpleeg de C++ documentatie voor een dieper inzicht in Java API.
 
-・ Migratiehandleiding ([TVSDK 2.4 voor Android-migratiegids](../migration-guides/tvsdk-14-25-android.md))
+・ Migratiegids ([TVSDK 2.4 voor Android-migratiegids](../migration-guides/tvsdk-14-25-android.md))
 
 In deze handleiding wordt uitgelegd wat u moet wijzigen om een toepassing op basis van TVSDK 1.4 te migreren naar een toepassing op basis van TVSDK 2.4.
 
@@ -48,12 +47,12 @@ Hier volgen de belangrijkste nieuwe functies van versie 2.4.1:
 
 * Functies van HLS versie 4
 
-   * **Video afspelen**  (afspelen, pauzeren, zoeken) met afspeelbesturingselementen voor live, lineaire en VOD-streams.
+   * **Video afspelen** (afspelen, pauzeren, zoeken) met afspeelbesturingselementen voor live, lineaire en VOD-streams.
    * **Ondertiteling gesloten.** TVSDK kan 608/708 gesloten bijschriften weergeven met een aantal lettertypen, tekengrootten, kleuren en achtergrond. Het kan video&#39;s met roll-up titels en schakelaar tussen taalsporen ook steunen als die beschikbaar zijn.
-   * **Trick play** modesupports snel voorwaarts en terugspoelen voor stromen HLS die I-Kaders gebruiken. Alle besturingselementen voor het afspelen van video werken op de inhoud. Langzame beweging (vooruit) is beschikbaar voor de externe afspeelmodus van video met een snelheid tussen 0 en 1.
-   * **Met Adaptieve bitsnelheid (ABR)** kan de speler dynamisch selecteren welke versie van dezelfde inhoudsstream moet worden afgespeeld, op basis van het netwerk en andere voorwaarden. U kunt parameters dynamisch instellen of in het manifestbestand selecteren onder agressief, matig en conservatief selectiebeleid.
-   * **Byte** rangschikt één enkel TS dossier om veelvoudige TS segmenten te bevatten.
-   * **Alternatieve audio-renditionable** de speler om tussen beschikbare audiosporen te schakelen.
+   * **Steen, afspeelmodus** ondersteunt snel voorwaarts en terugspoelen voor HLS-streams die I-frames gebruiken. Alle besturingselementen voor het afspelen van video werken op de inhoud. Langzame beweging (vooruit) is beschikbaar voor de externe afspeelmodus van video met een snelheid tussen 0 en 1.
+   * **Adaptieve bitsnelheid (ABR)** Hiermee kan de speler dynamisch selecteren welke van de meerdere versies van dezelfde inhoudsstroom moet worden afgespeeld, op basis van het netwerk en andere voorwaarden. U kunt parameters dynamisch instellen of in het manifestbestand selecteren onder agressief, matig en conservatief selectiebeleid.
+   * **Bytebereiken** laat één enkel TS dossier toe om veelvoudige TS segmenten te bevatten.
+   * **Alternatieve audio-uitvoeringen** de speler in staat stellen te schakelen tussen beschikbare audiotracks.
    * **ID3-ondersteuning.** TVSDK kan HLS-audio- en videostreams afspelen die ID3-audiometagegevens bevatten, zoals de artiest, titel en album.
    * **Failover. **TVSDK gebruikt strategieën om ononderbroken playback voort te zetten, ondanks mislukkingen van gastheerservers, playlist dossiers, en segmenten.
    * **Audio-doorvoer via meerdere kanalen (DD+).** TVSDK kan Dolby Digital Plus-audiogegevens (E-AC3) doorgeven voor ondersteuning van hardware.
@@ -69,26 +68,26 @@ Hier volgen de belangrijkste nieuwe functies van versie 2.4.1:
       * IV-rotatie
 
 * **AES 128 Playback.** TVSDK kan geavanceerde HLS-inhoud van coderingsstandaard (AES) afspelen met een sleutellengte van 128 bits.
-* **Protected HLS (PHLS)** verstrekt een beperkte reeks vooraf gebouwd beleid DRM, een ondergroep van wat Adobe Access verstrekt, om lichtgewichtDRM over HLS voor levende en stromen VOD toe te laten.
+* **Beschermde HLS (PHLS)** verstrekt een beperkte reeks vooraf gebouwd beleid DRM, een ondergroep van wat Adobe Access verstrekt, om lichtgewichtDRM over HLS voor levende en VOD stromen toe te laten.
 
 * Reclame/alternatieve inhoud en monetiekenmerken
 
    * **Volgen voor aan de serverzijde ingevoegde advertenties.** TVSDK kan advertenties bijhouden die zijn ingevoegd door de Adobe Cloud en de invoegservice. Het steunt lineaire advertenties in VAST2, VAST3, en formaten VMAP voor VOD en levende/lineaire stromen.
-   * **Aangepaste HLS-tags.** TVSDK gebruikt zijn  `MediaPlayerConfig` klasse om het melden van de spelertoepassing mogelijk te maken wanneer er aangepaste HLS-tags in de stream verschijnen.
+   * **Aangepaste HLS-tags.** TVSDK gebruikt zijn `MediaPlayerConfig` klasse om het aanmelden van de spelertoepassing mogelijk te maken wanneer er aangepaste HLS-tags in de stream worden weergegeven.
    * **Client-kant en invoeging.** De Auditude- en invoegbibliotheek werken samen met Adobe Auditude-servers om advertenties op dynamische, lineaire en VOD-posities op te lossen, zodat ze kunnen worden ingevoegd in live, lineaire en VOD-inhoud, op pre-, mid-roll- of post-roll-posities.
-   * **Aangepaste en oplosbare versies.** Met de  `ContentResolver, OpportunityGenerator,` en  `MediaPlayerClientFactory` interfaces kunt u een aangepaste en/of alternatieve contentoplosser implementeren en een aangepaste opportuniteitsdetector registreren voor gebruik met TVSDK. De `TestAdResolver` en `AuditudeResolver` klassen verstrekken C++ voorbeelden om een inhoudsoplosser uit te voeren. U kunt een voorbeeld Javascript bij `samples/jspsdk/testapp/psdk.js` vinden.
-   * **Consistent gedrag voor toevoegen.** Gebruik de  `AdPolicySelector` interface om consistent gedrag tussen alle spelers mogelijk te maken voor bewerkingen zoals zoeken en spelen wanneer advertenties in de inhoud aanwezig zijn. Als u niet uw eigen implementeert, gebruikt TVSDK `DefaultAdPolicySelector`.
+   * **Aangepaste en oplosbare versies.** De `ContentResolver, OpportunityGenerator,` en `MediaPlayerClientFactory` Met interfaces kunt u een aangepaste en/of alternatieve contentoplosser implementeren en een aangepaste opportuniteitsdetector registreren voor gebruik met TVSDK. De `TestAdResolver` en `AuditudeResolver` de klassen verstrekken C++ voorbeelden om een inhoudsoplosser uit te voeren. U vindt een Javascript-voorbeeld op `samples/jspsdk/testapp/psdk.js`.
+   * **Consistent gedrag voor toevoegen.** Gebruik de `AdPolicySelector` interface om consistent gedrag tussen alle spelers mogelijk te maken voor bewerkingen zoals zoeken en spelen met trucs wanneer de inhoud advertenties bevat. Als u uw eigen versie niet implementeert, gebruikt TVSDK `DefaultAdPolicySelector`.
    * **C3-advertenties verwijderen/vervangen.** Gebruik de juiste TVSDK API om aangepaste inhoudsbereiken te verwijderen en dynamisch nieuwe advertenties in te voegen zonder extra voorbereidend werk. Dit is handig wanneer live/lineaire inhoud wordt uitgezonden en vervolgens onmiddellijk op aanvraag beschikbaar wordt gesteld zonder opschoning.
 
 Hier volgen de belangrijkste nieuwe functies versie 2.4:
 
-* **Instant on voor VOD en** liveWhen you enable instant on, TVSDK initialiseert en buffert media alvorens playback begint. Omdat u meerdere `MediaPlayerItemLoader` instanties tegelijk op de achtergrond kunt starten, kunt u meerdere streams in buffer plaatsen. Wanneer een gebruiker het kanaal wijzigt en de stream correct is gebufferd, wordt het afspelen op het nieuwe kanaal onmiddellijk gestart. TVSDK 2.4 biedt ook ondersteuning voor Instant On voor live streams. De live streams worden opnieuw gebufferd wanneer het live venster wordt verplaatst.
+* **Direct aan voor VOD en live** Wanneer u instant on inschakelt, initialiseert en buffert de TVSDK media voordat het afspelen wordt gestart. Omdat u meerdere `MediaPlayerItemLoader` meerdere streams tegelijk op de achtergrond in de buffer plaatsen. Wanneer een gebruiker het kanaal wijzigt en de stream correct is gebufferd, wordt het afspelen op het nieuwe kanaal onmiddellijk gestart. TVSDK 2.4 biedt ook ondersteuning voor Instant On voor live streams. De live streams worden opnieuw gebufferd wanneer het live venster wordt verplaatst.
 
 * **Prestatieverbeteringen **De nieuwe TVSDK 2.4-architectuur biedt verschillende prestatieverbeteringen:
 
-   * **Subsegmentatie**  - TVSDK verkleint verder de grootte van elk fragment om het afspelen zo snel mogelijk te starten.
-   * **Parallel en gedownload**  - TVSDK prefetches plaatsen parallel aan het afspelen van de inhoud voordat de advertentie wordt afgebroken, zodat advertenties en inhoud naadloos kunnen worden afgespeeld.
-   * **Lazy ad resolution**  - Met deze eigenschap, wachten wij niet op resolutie van niet pre-preroll advertenties alvorens playback te beginnen, zo verminderend de starttijd. API&#39;s zoals zoeken en spelen met truc zijn nog steeds niet toegestaan totdat alle advertenties zijn opgelost.
+   * **Subsegmentatie** - TVSDK verkleint verder de grootte van elk fragment om het afspelen zo snel mogelijk te starten.
+   * **Parallel en downloaden** - TVSDK-prefetches plaatsen advertenties parallel aan het afspelen van de inhoud voordat de advertentie wordt afgebroken, zodat advertenties en inhoud naadloos kunnen worden afgespeeld.
+   * **Lazy en resolutie** - Met deze functie wachten we niet op het oplossen van niet-preroll-advertenties voordat we het afspelen starten, waardoor de opstarttijd afneemt. API&#39;s zoals zoeken en spelen met truc zijn nog steeds niet toegestaan totdat alle advertenties zijn opgelost.
 
 * **Afspelen van MP4-inhoud**
 
@@ -399,7 +398,7 @@ Deze versie van TVSDK heeft de volgende problemen:
 * Het instellen van het bijschrift Sluiten op CJK-talen werkt niet.
 * Video kan automatisch uit de truc-modus komen, zowel tussen VOD als live.
 * VHL - de verkeerde hartslagvraag wordt verzonden wanneer wij een inhoud van een compensatie beginnen.
-* Wanneer VPAID-advertenties VHL-aanroepen voor hartslag voor gebeurtenis:type:play worden afgespeeld en ontbreken.
+* Wanneer VPAID-advertenties VHL-aanroepen voor hartslag worden afgespeeld:type:afspeeladvertentie ontbreekt.
 * Pre-rol en speelt zelfs wanneer addBreakPolicy SKIP wordt gekozen.
 * Nadat u naar de statusspeler Volledig bent gegaan, gaat u terug naar de afspeelstatus met SKIP en BreakPolicy voor Post-roll-advertenties.
 
@@ -407,4 +406,4 @@ Zonder video is er geen viewport-dimensie en zonder viewport-dimensie kunt u gee
 
 ## Nuttige bronnen {#helpful-resources}
 
-* Zie de volledige Help-documentatie op de pagina [Adobe Primetime Learn &amp; Support](https://helpx.adobe.com/support/primetime.html).
+* Zie de volledige Help-documentatie op [Adobe Primetime - Meer informatie en ondersteuning](https://experienceleague.adobe.com/docs/primetime.html) pagina.
