@@ -1,9 +1,10 @@
 ---
 title: Een segment en tijdframe definiëren
 description: Een segment en tijdframe definiëren
-source-git-commit: a23de698b073d271df9b04494ff59f5d5a194c9d
+exl-id: 86fe010d-3202-4ce2-b803-ff44f5538d7e
+source-git-commit: cc8b34705d9ede95c5e5f25cab1b86a772abec02
 workflow-type: tm+mt
-source-wordcount: '579'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -54,9 +55,8 @@ Om de gewenste programmeerkanalen van te selecteren **Kanalen in segment** optie
 
    De lijstitems op het hoogste niveau in het dialoogvenster **Kanalen in segment** zijn [programmeur](/help/AccountIQ/product-concepts.md#programmer-def) bedrijven en de lijstonderdelen onder programmeernamen zijn hun [kanalen](/help/AccountIQ/product-concepts.md#channel-def). U kunt of individuele kanalen selecteren onder programmeurs, of programmeurs selecteren en alle activiteiten van de kanalen onder die programmeur zijn inbegrepen in rapport en grafiekresultaten.
 
-   ![](assets/programmer-channels.png)
-
-   *Afbeelding: Programmeurs en kanalen die in kanaalselecteur worden vermeld*
+   <!--![](assets/programmer-channels.png)
+   *Figure: Programmers and channels listed in channels selector*-->
 
    >[!IMPORTANT]
    >
@@ -95,9 +95,7 @@ Een evaluatieperiode selecteren:
 
 1. Selecteer **Week** of **Maand** van **Samenvoegen met** om granulariteit voor uw evaluatie in te stellen.
 
-   ![](assets/granularity-timeframe-weekwise.png)
-
-   *Afbeelding: De kiezer van de datum om Korreligheid en tijdkader te selecteren*
+   <!--![](assets/granularity-timeframe-weekwise.png)   *Figure: Date picker to select Granularity and time frame*-->
 
 1. Als u de granulariteit hebt geselecteerd, kunt u met de pijlen naar voren of naar achteren in de tijd gaan.
 
