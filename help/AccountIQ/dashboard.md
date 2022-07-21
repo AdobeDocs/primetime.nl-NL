@@ -2,9 +2,9 @@
 title: Account IQ-dashboard
 description: Het dashboard helpt de instanties van het delen van wachtwoorden te identificeren door een brede serie van abonneegegevens te analyseren.
 exl-id: 616da2a5-c9fe-40ea-90cf-f565bc13e764
-source-git-commit: 8e041e6bb3b0f607eb421be002904e3a8a447f52
+source-git-commit: 2ae03c61344b878c9cac268ad6e7e91b08810488
 workflow-type: tm+mt
-source-wordcount: '499'
+source-wordcount: '563'
 ht-degree: 0%
 
 ---
@@ -15,6 +15,9 @@ Het dashboard vat gegevens samen en voegt deze samen in een verzameling grafieke
 
 ![dashboard of account IQ](assets/dashboard-capture.png)
 
+
+*Afbeelding: Het dashboard*
+
 ## Gemiddelde score voor delen - samengevoegd voor het huidige segment {#aggregated-sharing}
 
 In het deelvenster Geaggregeerde delende score vindt u een overzicht van de hoeveelheid en impact van het delen van accounts en het streamingvolume.
@@ -23,9 +26,12 @@ De waarden helpen u de grootte van credentiedelen door uw abonnees begrijpen, va
 
 ![](assets/aggregate-sharing-score.png)
 
+
+*Afbeelding: Deelvenster Gemiddelde deelscore - samengevoegd voor het huidige segment*
+
 ![](assets/aggregate-sharing-score.svg)
 
-De volgende drie metriek zijn componenten van de Geaggregeerde delende Score.
+De volgende drie metriek zijn componenten van de Gemiddelde het Delen Score.
 
 ### Niveau voor delen {#sharing-level}
 
@@ -34,6 +40,9 @@ De het delen niveaumaat toont het percentage van al uw abonneerekeningen (in het
 Een waarde die wordt berekend op basis van het gemiddelde van de waarschijnlijkheid van delen die is berekend voor elke account in de set geselecteerde MVPD&#39;s die tijdens het geselecteerde tijdframe vanuit een van de geselecteerde programmeerkanalen is gestreamd.
 
 ![](assets/sharing-level.png)
+
+
+*Afbeelding: Niveau voor delen*
 
 De indicator van de Trend toont de percentageverandering in de waarde van metrisch binnen van het vorige tijdkader.
 
@@ -45,6 +54,9 @@ U kunt ook de Trend-indicator zien, die een toename of afname in het gebruik van
 
 ![](assets/usage-4mshared-accounts.png)
 
+
+*Afbeelding: Gebruik van gedeelde accounts*
+
 ### Algehele score voor delen {#overall-sharing-score}
 
 De algemene score voor delen bestaat uit het delen van scores, waaronder &quot;Niveau delen&quot; en &quot;Gebruik z van gedeelde accounts&quot;.
@@ -52,6 +64,9 @@ De algemene score voor delen bestaat uit het delen van scores, waaronder &quot;N
 Het levert een waarde op die de relatieve impact van delen weergeeft in vergelijking met de bedrijfstak. Het doel is vergelijkbaar met dat van een creditscore, waarbij de situatie wordt samengevat met één cijfer. Maar in dit geval, hoe hoger het aantal hoe groter de potentiële schade.
 
 ![](assets/overall-sharing-score.png)
+
+
+*Afbeelding: Algehele score voor delen*
 
 <!--### MVPDs in segment {#mvpd-in-segment}
 
@@ -69,11 +84,17 @@ Deze lijst verstrekt een vergelijkende mening van de verschillende Geaggregeerde
 
 ![](assets/top-mvpds.png)
 
+
+*Afbeelding: Top MVPDs in segment door algemene score*
+
 ### Muziek delen via kanalen en MVPD&#39;s {#sharin-score-by-channels-and-mvpds}
 
 Deze tabel biedt een vergelijkende weergave van het delen van scores van de geselecteerde kanalen voor de MVPD&#39;s in het huidige segment.
 
 ![](assets/sharing-scores-by-channels-mvpds.png)
+
+
+*Afbeelding: Muziek delen via kanalen en MVPD&#39;s*
 
 ### Rekeningen met waarschijnlijkheid {#accounts-sharing-probability}
 
@@ -86,8 +107,15 @@ Dit diagram verdeelt de rekeningen in reeksen van het delen kanskwintielen van z
 
 ![](assets/dashboard-ac-sharing-prob.png)
 
+
+*Afbeelding: Aantal en percentage abonneerekeningen in verschillende waarschijnlijkheidsbereiken bij delen*
+
 ### Aantal rekeningen en gebruik door kansniveau te delen {#number-of-accounts-usage-sharing-probability}
 
 In dit deelvenster vindt u een tabeloverzicht van de accounts die zijn verdeeld in reeksen waarschijnlijkheidskwintielen van zeer laag (0-20%) tot zeer hoog (80=100%) waarbij elke kwintiel gebruik maakt van gedeelde accounts.
 
 ![](assets/no-acc-usage-prob-level.png)
+
+
+*Afbeelding: Aantal rekeningen, tendensen, en gebruik die in diverse kansbereiken vallen*
+
