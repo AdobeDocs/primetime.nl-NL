@@ -1,13 +1,13 @@
 ---
 title: Account IQ-dashboard
-description: 'Het dashboard helpt de instanties van het delen van wachtwoorden te identificeren door een brede serie van abonneegegevens te analyseren.  '
-source-git-commit: f6f1769d86a98d3a545bf986e41e9ba2252a36ff
+description: Het dashboard helpt de instanties van het delen van wachtwoorden te identificeren door een brede serie van abonneegegevens te analyseren.
+exl-id: 616da2a5-c9fe-40ea-90cf-f565bc13e764
+source-git-commit: 8e041e6bb3b0f607eb421be002904e3a8a447f52
 workflow-type: tm+mt
-source-wordcount: '494'
+source-wordcount: '499'
 ht-degree: 0%
 
 ---
-
 
 # Het dashboard {#dashboard}
 
@@ -15,13 +15,15 @@ Het dashboard vat gegevens samen en voegt deze samen in een verzameling grafieke
 
 ![dashboard of account IQ](assets/dashboard-capture.png)
 
-## Geaggregeerde delingsscore {#aggregated-sharing}
+## Gemiddelde score voor delen - samengevoegd voor het huidige segment {#aggregated-sharing}
 
 In het deelvenster Geaggregeerde delende score vindt u een overzicht van de hoeveelheid en impact van het delen van accounts en het streamingvolume.
 
 De waarden helpen u de grootte van credentiedelen door uw abonnees begrijpen, vandaar die een maatregel van de behoefte verstrekken om op het te handelen.
 
 ![](assets/aggregate-sharing-score.png)
+
+![](assets/aggregate-sharing-score.svg)
 
 De volgende drie metriek zijn componenten van de Geaggregeerde delende Score.
 
