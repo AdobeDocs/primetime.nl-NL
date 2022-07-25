@@ -2,7 +2,7 @@
 title: Account IQ-dashboard
 description: Het dashboard helpt de instanties van het delen van wachtwoorden te identificeren door een brede serie van abonneegegevens te analyseren.
 exl-id: 616da2a5-c9fe-40ea-90cf-f565bc13e764
-source-git-commit: cc8b34705d9ede95c5e5f25cab1b86a772abec02
+source-git-commit: 32ba300ce729eab7a6906d8fb0875e8f2bbe2d1d
 workflow-type: tm+mt
 source-wordcount: '563'
 ht-degree: 0%
@@ -110,7 +110,7 @@ Dit diagram verdeelt de rekeningen in reeksen van het delen kanskwintielen van z
 
 ### Aantal rekeningen en gebruik door kansniveau te delen {#number-of-accounts-usage-sharing-probability}
 
-In dit deelvenster vindt u een tabeloverzicht van de accounts die zijn verdeeld in reeksen waarschijnlijkheidskwintielen van zeer laag (0-20%) tot zeer hoog (80=100%) waarbij elke kwintiel gebruik maakt van gedeelde accounts.
+In dit deelvenster vindt u een tabeloverzicht van de accounts die zijn verdeeld in reeksen waarschijnlijkheidskwintielen van zeer laag (0-20%) tot zeer hoog (80-100%) waarbij elke kwintiel gebruik maakt van gedeelde accounts.
 
 ![](assets/no-acc-usage-prob-level.png)
 
