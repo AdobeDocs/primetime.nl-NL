@@ -3,9 +3,9 @@ product: adobe primetime
 audience: end-user
 user-guide-title: Opmerkingen bij de release Primetime
 user-guide-description: Verstrekt versie-specifieke informatie, systeemvereisten, beperkingen, vaste kwesties, en bekende kwesties.
-source-git-commit: e46fc03542211ec21822cf9f52eb8f0172269564
+source-git-commit: 037c65b28d3c4d7f09bde89e3a9d4bae86f6f867
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '116'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 0%
 + [Overzicht van opmerkingen bij de release](home.md)
 + Primetime Ad Insertion {#ptai}
 
-   + [Opmerkingen bij de release PTAI 22.6.2](ptai-22x-release-notes.md)
+   + [Opmerkingen bij de release PTAI 22.7.1](ptai-22x-release-notes.md)
    + [Opmerkingen bij de release PTAI 21.11.1](ptai-21x-release-notes.md)
    + [Opmerkingen bij de release PTAI 20.12.1](ptai-20x-release-notes.md)
    + [Opmerkingen bij de release PTAI 19.11.1](ptai-19x-release-notes.md)

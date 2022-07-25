@@ -3,9 +3,9 @@ title: Opmerkingen bij de release Primetime
 description: Opmerkingen bij de release Primetime
 copied-description: true
 exl-id: 29087a3e-f16e-4510-8d3a-ed2229700899
-source-git-commit: 9f218bddddeab52480bbdcd41e8f0e6fd0fab0f8
+source-git-commit: 037c65b28d3c4d7f09bde89e3a9d4bae86f6f867
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '298'
 ht-degree: 0%
 
 ---
@@ -14,9 +14,9 @@ ht-degree: 0%
 
 Welkom bij de Adobe Primetime Release Notes. De documenten die in de linkernavigatie worden vermeld verstrekken versie-specifieke informatie, systeemvereisten, beperkingen, vaste kwesties, en bekende kwesties.
 
-## Verbeteringen en correcties in PTAI 22.6.2
+## Verbeteringen en correcties in PTAI 22.7.1
 
-Deze versie richt zich op verbeteringen aan het registreren van de prestaties met meer details op het verlies van het voordeel en extra net-opslagoorsprong voor CRS.
+Deze versie concentreert zich op verhogingen aan en prestatiesregistreren met introductie van de beschikbare verwante metriek voor werkschema&#39;s DASH.
 
 ## Oplossingen in TVSDK 3.15 Android
 

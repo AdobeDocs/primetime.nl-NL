@@ -1,27 +1,37 @@
 ---
-title: Opmerkingen bij de release PTAI 22.6.2
+title: Opmerkingen bij de release PTAI 22.7.1
 description: In de PTAI-release wordt beschreven wat nieuw of gewijzigd is, wat de opgeloste en bekende problemen zijn in Primetime Ad Insertion in 2022.
 exl-id: 58b254b8-18b9-48ba-bd4e-378785e56af5
-source-git-commit: 9f218bddddeab52480bbdcd41e8f0e6fd0fab0f8
+source-git-commit: 037c65b28d3c4d7f09bde89e3a9d4bae86f6f867
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '302'
 ht-degree: 0%
 
 ---
 
-# Opmerkingen bij de release Primetime Ad Insertion 22.6.2
+# Opmerkingen bij de release Primetime Ad Insertion 22.7.1
 
 Opmerkingen bij de release van Primetime Ad Insertion 22.xx.x beschrijven wat nieuw of gewijzigd is, problemen die zijn opgelost en bekende problemen in Primetime Ad Insertion 2022.
 
-## Nieuw in PTAI 22.6.2
+## Nieuw in PTAI 22.7.1
 
-Wanneer: Woensdag 29 juni 2022, 3:00 - 6:00 uur Oosterse tijd
+Wanneer: Woensdag 20 juli 2022, 3:00 - 6:00 uur Oosterse tijd
+
+* Verbeteringen op het gebied van het registreren van de advertentie, met introductie van aan voordelen gerelateerde meetgegevens voor DASH-workflows.
+
+* Databasemigratie.
+
+## Verbeteringen en correcties in vorige releaseversies
+
+### Versie 22.6.2
+
+**Wanneer:** Woensdag 29 juni 2022, 3:00 - 6:00 uur Oosterse tijd
+
+**Wijzigingen**
 
 * Verbetering van het registreren van de advertentieprestaties met meer details op het verlies van het voordeel.
 
 * Extra netto-opslagoorsprong voor CRS.
-
-## Verbeteringen en correcties in vorige releaseversies
 
 ### Versie 22.6.1
 
