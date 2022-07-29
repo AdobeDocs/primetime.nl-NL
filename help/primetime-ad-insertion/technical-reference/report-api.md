@@ -1,19 +1,21 @@
 ---
 title: Rapport-API
 description: Auditude report-API
-source-git-commit: 7f958c83a4dd481221feb4a266440b920ac7d195
+exl-id: 50eb4869-3765-4591-8c41-794b29d50044
+source-git-commit: 628544e38616715e83e0274ba26cf93302ce0e61
 workflow-type: tm+mt
-source-wordcount: '1024'
+source-wordcount: '1042'
 ht-degree: 1%
 
 ---
-
 
 # Rapport-API {#report-api}
 
 De gebruikersinterface heeft beheerde rollen voor klanten en voor het enablement (Adobe) team. Klanten hebben toegang tot het portaal en kunnen vervolgens hun configuraties maken en bewerken. Ze kunnen ook de rapporten voor hun advertentie-impressies in de gebruikersinterface zien.
 
 API&#39;s werken achter de schermen om klanten en beheerders te helpen te communiceren met de back-endinfrastructuur.
+
+Om de [!DNL Primetime Ad Insertion] APIs zie [Ad Insertion API-eindpunten in gevloeide gebruikersinterface](https://adconfigservice-va6.cloud.adobe.io/swagger-ui/index.html#/).
 
 ## API-eindpunt {#report-api-endpoint}
 
