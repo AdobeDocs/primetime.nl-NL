@@ -4,7 +4,7 @@ audience: end-user
 user-guide-description: 'De hulp van IQ van de Rekening van Primetime geeft informatie over de IQ van de Rekening componenten en begeleidt u door gebruikersreizen om de diverse componenten te gebruiken. '
 source-git-commit: 6ae9c8651a47e2f458d69c078ba1f314a0227c00
 workflow-type: tm+mt
-source-wordcount: '111'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
