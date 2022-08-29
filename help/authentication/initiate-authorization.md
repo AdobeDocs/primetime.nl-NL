@@ -82,7 +82,7 @@ Verkrijgt de reactie van de vergunning. 
 </br>
   * **XML:**
   </br>
-    "XML
+    ```XML
     <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
     <authorization>
     <expires>1348148289000</expires>
@@ -90,7 +90,7 @@ Verkrijgt de reactie van de vergunning. 
     <requestor>sampleRequestId</requestor>
     <resource>sampleResourceId</resource>
     </authorization>
-    "
+    ```
 
 
 
