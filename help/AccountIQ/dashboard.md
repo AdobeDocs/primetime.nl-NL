@@ -2,9 +2,9 @@
 title: Account IQ-dashboard
 description: Het dashboard helpt de instanties van het delen van wachtwoorden te identificeren door een brede serie van abonneegegevens te analyseren.
 exl-id: 616da2a5-c9fe-40ea-90cf-f565bc13e764
-source-git-commit: 7706d5fcafdcfb9c0d4cc69936681c6223b0739d
+source-git-commit: 5b34fbe26078ae761d61179975366505c5628c9c
 workflow-type: tm+mt
-source-wordcount: '602'
+source-wordcount: '563'
 ht-degree: 0%
 
 ---
@@ -12,10 +12,6 @@ ht-degree: 0%
 # Het dashboard {#dashboard}
 
 Het dashboard vat gegevens samen en voegt deze samen in een verzameling grafieken en rapporten die zijn ontworpen om een uitgebreid overzicht te geven van de reikwijdte en de impact van het delen van accounts. Het verstrekt één enkele pagina die de belangrijkste rapporten en metriek van Rekening IQ bevatten.
-
-<table><tr><th>
-
-+++dashboard voor programmeurs
 
 ![dashboard of account IQ](assets/dashboard-capture.png)
 
@@ -121,29 +117,7 @@ In dit deelvenster vindt u een tabeloverzicht van de accounts die zijn verdeeld 
 
 *Afbeelding: Aantal rekeningen, tendensen, en gebruik die in diverse kansbereiken vallen*
 
-+++
 
-</th><th>
-
-+++dashboard voor MVPDs het dashboard voor gebruikers MVPD is lichtjes verschillend van die van de programmeurs gebruikers.
-
-![](assets/dashboard-mvpd.png)
-
-
-*Afbeelding: Dashboard van MVPD*
-
-## Bovenste programmeurs in segment door algemene score te delen {#}
-
-![](assets/top-programmers-panel.png)
-
-
-*Afbeelding: Deelvenster met de bovenste programmeurs in een segment*
-+++
-
-</th>
-</tr>
-
-</table>
 
 <!--
 +++Dashboard for programmers

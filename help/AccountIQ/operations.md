@@ -2,9 +2,9 @@
 title: Activiteiten in rekening-IQ
 description: De verrichtingen in Rekening IQ impliceren acties om automatiserings en bulkverrichtingen op abonneerekeningen uit te voeren en hun gevolgen te volgen.
 exl-id: ba6bceca-221c-42db-b207-804e4b9f6d54
-source-git-commit: 40239b6715d8eab95bc2564fb19eb6832387ad3e
+source-git-commit: 5b34fbe26078ae761d61179975366505c5628c9c
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '467'
 ht-degree: 0%
 
 ---
@@ -55,7 +55,7 @@ U kunt de effecten van een bewerking analyseren door het bijbehorende rapport te
 
 1. Selecteer de naam van de bewerking op de hoofdpagina Bewerkingen.
 
-   Het rapport wordt weergegeven in de vorm van een gestapelde staafgrafiek.
+   Het rapport wordt weergegeven in de vorm van een gestapelde kolomgrafiek.
 
    ![](assets/operation-impact-report.png)
 
