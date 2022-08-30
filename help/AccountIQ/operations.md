@@ -1,13 +1,13 @@
 ---
 title: Activiteiten in rekening-IQ
 description: De verrichtingen in Rekening IQ impliceren acties om automatiserings en bulkverrichtingen op abonneerekeningen uit te voeren en hun gevolgen te volgen.
-source-git-commit: e61cca77bad4f01de871e300dc99d7368c283f2a
+exl-id: ba6bceca-221c-42db-b207-804e4b9f6d54
+source-git-commit: 40239b6715d8eab95bc2564fb19eb6832387ad3e
 workflow-type: tm+mt
-source-wordcount: '506'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
-
 
 # Bewerkingen {#operations-tab-next-steps}
 
@@ -61,13 +61,24 @@ U kunt de effecten van een bewerking analyseren door het bijbehorende rapport te
 
    *Afbeelding: Operationeel verslag om de effecten van de concrete acties te bekijken*
 
-   De x-as geeft de evaluatieperiode en de y-as een variabele om de impact van de exploitatie te meten.
+   De X-as geeft de evaluatieperiode weer en de y-as geeft het effect van de operatie weer (in termen van het aantal rekeningen in een segment tijdens de evaluatieperiode). Elke balk bestaat uit drie delen.
 
-   In de bovenstaande afbeelding is de variabele op de y-as bijvoorbeeld het aantal accounts. Als u de grafiek bekijkt, kunt u het aantal rekeningen in het operationele segment vergelijken met het aantal rekeningen buiten het operationele segment op een bepaald tijdstip (zoals week 2e van de operationele evaluatieperiode). Daarom kunt u analyseren hoe over de evaluatieperiode aantal rekeningen binnen het verrichtingssegment en buiten het segment varieert.
+   * Een deel geeft het aantal rekeningen weer die nog steeds aan de criteria van het exploitatiesegment voldoen.
 
-   Dus als uw bewerking was om waarschuwings-e-mails naar verdachte accounts te sturen, en accounts in operatiesegmenten waren die met een gedeelde waarschijnlijkheid groter dan 90 en meer dan 5 apparaten gebruiken om inhoud te streamen, dan zijn aan het begin van de evaluatieperiode de accounts in segment meer dan 7 miljoen. Dit aantal verandert tijdens de evaluatieperiode, zoals in de grafiek wordt getoond, en geeft het effect van de operatie aan. Op basis van de evaluatie kunt u corrigerende maatregelen nemen voor het vermoeden van accounts, of doorgaan met de bewerking, of uw strategie aanpassen voor betere resultaten om het delen van referenties te beperken.
+   * Een ander deel vertegenwoordigt het aantal actieve rekeningen voor die periode die oorspronkelijk in het segment waren, maar niet langer aan de criteria van het exploitatiesegment voldoen.
 
-2. Om het rapport te sluiten en terug naar de belangrijkste pagina van Verrichtingen te gaan, selecteer **Bewerkingen** optie onder **Handelingen** in linkernavigatie.
+   * Het derde deel vertegenwoordigt de rekeningen die in die periode niet actief waren.
+   >[!NOTE]
+   >
+   >De eerste balk geeft het aantal rekeningen weer dat aan het begin van de evaluatieperiode aan de voorwaarden van het exploitatiesegment voldoet.
+
+   In de loop der tijd geeft de grafiek het effect van de handeling weer (door de bewerking) door het aantal accounts aan te geven dat hun gedrag ten opzichte van de oorspronkelijke criteria heeft gewijzigd (bijvoorbeeld met een gedeelde waarschijnlijkheid van meer dan 90 en meer dan 5 apparaten), of dat inactief is geworden.
+
+<!--For example, in the above image the variable on the y-axis is number of accounts. Looking at the graph you can compare the number of accounts that are in the operations' segment versus the number of accounts that are outside the operations segment at a particular time (such as week 2nd of the operations evaluation period). Therefore, you can analyze how over the evaluation period do number of accounts vary within the operation segment and outside the segment.
+
+So, if your operation was to send out warning emails to suspecting accounts, and accounts in operations segment were those with sharing probability more than 90 and using more than 5 devices to stream content, then in the beginning of the evaluation period accounts in segment are more than 17 thousand. This number changes over the evaluation period as shown in the graph, thereby indicating the impact of operation. Based on the evaluation, you can take remedial measures on suspecting accounts, or continue with the operation, or adjust your strategy for better outcomes to curb credential sharing.-->
+
+1. Om het rapport te sluiten en terug naar de belangrijkste pagina van Verrichtingen te gaan, selecteer **Bewerkingen** optie onder **Handelingen** in linkernavigatie.
 
 <!--
 
