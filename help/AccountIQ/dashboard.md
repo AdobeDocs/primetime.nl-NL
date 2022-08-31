@@ -2,7 +2,7 @@
 title: Account IQ-dashboard
 description: Het dashboard helpt de instanties van het delen van wachtwoorden te identificeren door een brede serie van abonneegegevens te analyseren.
 exl-id: 616da2a5-c9fe-40ea-90cf-f565bc13e764
-source-git-commit: 5b34fbe26078ae761d61179975366505c5628c9c
+source-git-commit: a015cf059c599c043f03b981eed640fbdbffc27b
 workflow-type: tm+mt
 source-wordcount: '563'
 ht-degree: 0%
@@ -72,7 +72,7 @@ It is a table of risk indices and accounts totals for the top MVPDs ranked by ov
 
 ![](assets/mvpds-in-segment.png)-->
 
-### Globale score voor delen voor MVPD&#39;s voor de hele industrie {#top-mvpds}
+## Globale score voor delen voor MVPD&#39;s voor de hele industrie {#top-mvpds}
 
 Deze lijst verstrekt een vergelijkende mening van de verschillende Geaggregeerde het Delen Scores voor MVPDs in het segment.
 
@@ -85,7 +85,7 @@ Deze lijst verstrekt een vergelijkende mening van de verschillende Geaggregeerde
 
 *Afbeelding: Top MVPDs in segment door algemene score*
 
-### Muziek delen via kanalen en MVPD&#39;s {#sharin-score-by-channels-and-mvpds}
+## Muziek delen via kanalen en MVPD&#39;s {#sharin-score-by-channels-and-mvpds}
 
 Deze tabel biedt een vergelijkende weergave van het delen van scores van de geselecteerde kanalen voor de MVPD&#39;s in het huidige segment.
 
@@ -94,7 +94,7 @@ Deze tabel biedt een vergelijkende weergave van het delen van scores van de gese
 
 *Afbeelding: Muziek delen via kanalen en MVPD&#39;s*
 
-### Rekeningen met waarschijnlijkheid {#accounts-sharing-probability}
+## Rekeningen met waarschijnlijkheid {#accounts-sharing-probability}
 
 Dit diagram verdeelt de rekeningen in reeksen van het delen kanskwintielen van zeer laag (0-20%) aan zeer hoog (80=100%).
 
@@ -108,7 +108,7 @@ Dit diagram verdeelt de rekeningen in reeksen van het delen kanskwintielen van z
 
 *Afbeelding: Aantal en percentage abonneerekeningen in verschillende waarschijnlijkheidsbereiken bij delen*
 
-### Aantal rekeningen en gebruik door kansniveau te delen {#number-of-accounts-usage-sharing-probability}
+## Aantal rekeningen en gebruik door kansniveau te delen {#number-of-accounts-usage-sharing-probability}
 
 In dit deelvenster vindt u een tabeloverzicht van de accounts die zijn verdeeld in reeksen waarschijnlijkheidskwintielen van zeer laag (0-20%) tot zeer hoog (80-100%) waarbij elke kwintiel gebruik maakt van gedeelde accounts.
 
