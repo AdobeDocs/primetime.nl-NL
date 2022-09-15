@@ -1,27 +1,45 @@
 ---
-title: Opmerkingen bij de release PTAI 22.7.1
+title: Opmerkingen bij de release PTAI 22.9.2
 description: In de PTAI-release wordt beschreven wat nieuw of gewijzigd is, wat de opgeloste en bekende problemen zijn in Primetime Ad Insertion in 2022.
 exl-id: 58b254b8-18b9-48ba-bd4e-378785e56af5
-source-git-commit: 037c65b28d3c4d7f09bde89e3a9d4bae86f6f867
+source-git-commit: 1782a6b1d5f1c56d39648d73616bdefddd8a51bc
 workflow-type: tm+mt
-source-wordcount: '302'
+source-wordcount: '368'
 ht-degree: 0%
 
 ---
 
-# Opmerkingen bij de release Primetime Ad Insertion 22.7.1
+# Opmerkingen bij de release Primetime Ad Insertion 22.9.2
 
 Opmerkingen bij de release van Primetime Ad Insertion 22.xx.x beschrijven wat nieuw of gewijzigd is, problemen die zijn opgelost en bekende problemen in Primetime Ad Insertion 2022.
 
-## Nieuw in PTAI 22.7.1
+## Nieuwe functies in PTAI 22.9.2
 
-Wanneer: Woensdag 20 juli 2022, 3:00 - 6:00 uur Oosterse tijd
+**Wanneer:** Woensdag 7 september 2022, 3:00 - 6:00 uur Oosterse tijd
+
+* Verbeteringen aan de telemetriegegevens van de Prestaties van Advertentie in Ad Insertion Primetime om extra Vraag Ad en Avail registrerende gegevens te omvatten.
+
+## Verbeteringen en correcties in vorige releaseversies
+
+### Versie PTAI 22.9.1
+
+**Wanneer:** Dinsdag 6 september 2022, 3:00 tot 6:00 uur Oosterse tijd
+
+**Wijzigingen:**
+
+* Verbeteringen aan de de backendauthentificatie van de Dienst van het Herverpakken van de Inhoud (CRS).
+
+* Updates voor de telemetriegrafieken voor het opnieuw verpakken van inhoud (CRS) in de gebruikersinterface van Primetime Ad Insertion.
+
+### Versie 22.7.1
+
+**Wanneer:** Woensdag 20 juli 2022, 3:00 - 6:00 uur Oosterse tijd
+
+**Wijzigingen:**
 
 * Verbeteringen op het gebied van het registreren van de advertentie, met introductie van aan voordelen gerelateerde meetgegevens voor DASH-workflows.
 
 * Databasemigratie.
-
-## Verbeteringen en correcties in vorige releaseversies
 
 ### Versie 22.6.2
 

@@ -3,9 +3,9 @@ title: Opmerkingen bij de release Primetime
 description: Opmerkingen bij de release Primetime
 copied-description: true
 exl-id: 29087a3e-f16e-4510-8d3a-ed2229700899
-source-git-commit: 037c65b28d3c4d7f09bde89e3a9d4bae86f6f867
+source-git-commit: 1782a6b1d5f1c56d39648d73616bdefddd8a51bc
 workflow-type: tm+mt
-source-wordcount: '298'
+source-wordcount: '309'
 ht-degree: 0%
 
 ---
@@ -14,15 +14,17 @@ ht-degree: 0%
 
 Welkom bij de Adobe Primetime Release Notes. De documenten die in de linkernavigatie worden vermeld verstrekken versie-specifieke informatie, systeemvereisten, beperkingen, vaste kwesties, en bekende kwesties.
 
-## Verbeteringen en correcties in PTAI 22.7.1
+## Verbeteringen en correcties in PTAI 22.9.2
 
-Deze versie concentreert zich op verhogingen aan en prestatiesregistreren met introductie van de beschikbare verwante metriek voor werkschema&#39;s DASH.
+Deze versie concentreert zich op verhogingen aan prestaties telemetriegegevens om Ad vraag en Avail registrerengegevens te omvatten.
+
+Voor andere correcties en details raadpleegt u [Opmerkingen bij de release Ad Insertion](/help/release-notes/ptai-22x-release-notes.md).
 
 ## Oplossingen in TVSDK 3.15 Android
 
 Deze release biedt oplossing voor een probleem waarbij de toepassing vastloopt wanneer een creative tag ontbreekt of wanneer [!UICONTROL url CDATA] is leeg in [!UICONTROL VAST] reactie.
 
-Voor andere correcties en details raadpleegt u [Opmerkingen bij de release Ad Insertion](/help/release-notes/ptai-21x-release-notes.md).
+Voor andere correcties en details raadpleegt u [Opmerkingen bij de release van TVSDK voor Android](/help/release-notes/tvsdk-3x-android.md)
 
 ## Verbeteringen en correcties in TVSDK 3.13 iOS
 
