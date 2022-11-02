@@ -1,14 +1,13 @@
 ---
 description: U kunt een besturingsbalk implementeren met DVR-ondersteuning voor VOD en live streaming. DVR-ondersteuning omvat het concept van een doorzoekbaar venster en het live-punt van de client.
 title: Een besturingsbalk maken die is verbeterd voor DVR
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: 8a764417-4425-44c0-9551-3077c8c0a323
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
-source-wordcount: '325'
+source-wordcount: '324'
 ht-degree: 0%
 
 ---
-
 
 # Een besturingsbalk maken die is verbeterd voor DVR {#construct-a-control-bar-enhanced-for-dvr}
 
@@ -27,9 +26,9 @@ U kunt een besturingsbalk implementeren met DVR-ondersteuning voor VOD en live s
 
 <!--<a id="fig_37A39A28BA714BA5A2C461357ED5BD41"></a>-->
 
-![](assets/dvr-window.PNG){width=&quot;684&quot;}
+![](assets/dvr-window.PNG){width="684"}
 
-1. Als u een besturingsbalk wilt implementeren met ondersteuning voor DVR, voert u de stappen in [Een zoekbalk weergeven met de huidige afspeelpositie...](../../../tvsdk-2.7-for-android/content-playback-options/ui-configure/t-psdk-android-2.7-ui-seek-scrub-bar-display.md) met de volgende verschillen:
+1. Als u een besturingsbalk wilt implementeren met DVR-ondersteuning, voert u de volgende stappen uit: [Een zoekbalk weergeven met de huidige afspeelpositie...](../../../tvsdk-2.7-for-android/content-playback-options/ui-configure/t-psdk-android-2.7-ui-seek-scrub-bar-display.md) met de volgende verschillen:
 
    * U kunt een controlebar uitvoeren die slechts voor de zoekbare waaier in plaats van voor de playbackwaaier in kaart wordt gebracht.
 
@@ -38,7 +37,7 @@ U kunt een besturingsbalk implementeren met DVR-ondersteuning voor VOD en live s
 
       Voor een besturingsbalk:
    1. Voeg een bedekking aan de controlebar toe die de playbackwaaier vertegenwoordigt.
-   1. Wanneer de gebruiker begint te zoeken, controleer of de gewenste zoekpositie zich binnen het doorzoekbare bereik bevindt met `MediaPlayer.getSeekableRange`.
+   1. Wanneer de gebruiker begint te zoeken, controleert u met `MediaPlayer.getSeekableRange`.
 
       Bijvoorbeeld:
 
@@ -49,10 +48,8 @@ U kunt een besturingsbalk implementeren met DVR-ondersteuning voor VOD en live s
       }
       ```
 
-      U kunt er ook voor kiezen om met de constante `MediaPlayer.LIVE_POINT` naar het actieve punt van de client te zoeken.
+      U kunt er ook voor kiezen om naar het actieve punt van de client te zoeken met de opdracht `MediaPlayer.LIVE_POINT` constante.
 
       ```
       mediaPlayer.seek(MediaPlayer.LIVE_POINT);
       ```
-
-

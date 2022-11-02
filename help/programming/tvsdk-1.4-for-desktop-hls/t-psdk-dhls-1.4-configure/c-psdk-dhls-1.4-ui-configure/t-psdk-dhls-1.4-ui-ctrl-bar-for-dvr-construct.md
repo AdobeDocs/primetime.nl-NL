@@ -1,14 +1,13 @@
 ---
 description: U kunt een besturingsbalk implementeren met DVR-ondersteuning voor VOD en live streaming. DVR-ondersteuning omvat het concept van een doorzoekbaar venster en het live-punt van de client.
 title: Een besturingsbalk maken die is verbeterd voor DVR
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: 8e70f03c-880a-48c5-8728-a4b967c19925
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
-source-wordcount: '322'
+source-wordcount: '321'
 ht-degree: 0%
 
 ---
-
 
 # Een besturingsbalk maken die is verbeterd voor DVR{#construct-a-control-bar-enhanced-for-dvr}
 
@@ -25,7 +24,7 @@ U kunt een besturingsbalk implementeren met DVR-ondersteuning voor VOD en live s
 
 <!--<a id="fig_37A39A28BA714BA5A2C461357ED5BD41"></a>-->
 
-![](assets/dvr-window.PNG){width=&quot;684&quot;}
+![](assets/dvr-window.PNG){width="684"}
 
 1. Als u een besturingsbalk wilt implementeren met ondersteuning voor DVR, voert u de stappen uit voor het weergeven van een zoekbalk, met enkele kleine verschillen:
 
@@ -34,7 +33,7 @@ U kunt een besturingsbalk implementeren met DVR-ondersteuning voor VOD en live s
 
       Voor een besturingsbalk:
    1. Voeg een bedekking aan de controlebar toe die de playbackwaaier vertegenwoordigt.
-   1. Wanneer de gebruiker begint te zoeken, controleer of de gewenste spoelpositie binnen de doorzoekbare waaier gebruikend het `MediaPlayer.seekableRange` bezit is.
+   1. Wanneer de gebruiker begint te zoeken, controleert u met behulp van de `MediaPlayer.seekableRange` eigenschap.
 
       Bijvoorbeeld:
 
@@ -49,12 +48,10 @@ U kunt een besturingsbalk implementeren met DVR-ondersteuning voor VOD en live s
       }
       ```
 
-      U kunt er ook voor kiezen om met de constante `MediaPlayer.LIVE_POINT` naar het actieve punt van de client te zoeken.
+      U kunt er ook voor kiezen om naar het actieve punt van de client te zoeken met de opdracht `MediaPlayer.LIVE_POINT` constante.
 
       ```
       private function onSeekToLiveClick(event:MouseEvent):void { 
           _player.seek(DefaultMediaPlayer.LIVE_POINT); 
       }
       ```
-
-
