@@ -1,19 +1,19 @@
 ---
 title: Veelgestelde vragen over account-IQ
 description: Antwoorden op veelgestelde vragen van klanten.
-source-git-commit: df6577182a4211b95c2002f949cdfb894126dc32
+exl-id: d6e11fc9-0d14-46d8-9a85-f1006ac81fb1
+source-git-commit: 4eb5ba53fb3e0a0c314695fcd30cf15c7242b53c
 workflow-type: tm+mt
-source-wordcount: '560'
+source-wordcount: '562'
 ht-degree: 0%
 
 ---
-
 
 # Veelgestelde vragen {#faqs}
 
 1. Voor wie is Account IQ ontworpen?
 
-   **Antwoord.** Account IQ is ontworpen om programmeurs, MVPD&#39;s en D2C-services te leveren, maar er zijn kleine verschillen tussen deze twee versies. Er gelden beperkingen en beperkingen ten aanzien van de gegevens die aan elke groep kunnen worden getoond.
+   **Antwoord.** Account IQ is ontworpen om programmeurs, MVPD&#39;s en D2C-services te leveren, maar er zijn kleine verschillen tussen deze versies. Er gelden beperkingen en beperkingen ten aanzien van de gegevens die aan elke groep kunnen worden getoond.
 
 1. Hoe ver gaan de gegevens terug?
 
@@ -27,7 +27,7 @@ ht-degree: 0%
 
    **Antwoord.** De functionaliteit om de testaccounts uit te filteren is niet beschikbaar in deze versie, maar de functie is beschikbaar in een toekomstige versie.
 
-1. Kan ik de account zien delen voor elk van mijn kanalen?
+1. Kan ik de account zien delen voor elk van mijn kanalen? <!--shall we separate out this question for the persona of programmer?-->
 
    **Antwoord.** Ja, kunt u rekening zien delend voor individuele kanalen, een groep kanalen, of volledige netwerken (bijvoorbeeld, programmeurs).
 
@@ -41,28 +41,28 @@ ht-degree: 0%
 
 1. Is AccountIQ een handhavingsinstrument? Zo niet, hoe gebruiken we het om te stoppen met delen?
 
-   **Antwoord.** AIQ gebruikt krachtige analyses om inzichten te verschaffen. Deze inzichten kunnen echter onbeperkte acties stimuleren door integratie met Adobe-producten, zoals Gelijktijdige bewaking, of uw bedrijfsmiddelen.
+   **Antwoord.** AIQ gebruikt krachtige analyses om inzichten te verschaffen. Deze inzichten kunnen echter tot onbeperkte acties leiden door integratie met Adobe-producten, zoals Gelijktijdige controle of uw bedrijfsmiddelen.
 
 1. Hoe effectief is Gelijktijdige bewaking bij het verzachten van het delen in de industrie?
 
-   **Antwoord.** Account IQ en Gelijktijdige bewaking detecteren verschillende manieren van delen en zijn gratis. CM is uitstekend in het verhinderen van het delen die gelijktijdig voorkomt. Het is daarom het meest effectief tijdens het bekijken in de tijd of voor live evenementen, zoals sport. Aan de andere kant kijkt Account IQ naar een breed scala van historische gegevens en detecteert het delen ervan dus niet noodzakelijkerwijs gelijktijdig. Deze twee diensten kunnen worden gecombineerd voor nog effectievere oplossingen.
+   **Antwoord.** Account IQ en Gelijktijdige bewaking (CM) detecteren verschillende manieren van delen en zijn gratis. CM is uitstekend in het verhinderen van het delen die gelijktijdig voorkomt. Het is daarom het meest effectief tijdens het bekijken in de tijd of voor live evenementen, zoals sport. Aan de andere kant kijkt Account IQ naar een breed scala van historische gegevens en detecteert het delen ervan dus niet noodzakelijkerwijs gelijktijdig. Deze twee diensten kunnen worden gecombineerd voor nog effectievere oplossingen.
 
 1. Kunnen we bepaalde rekeningen identificeren?
 
    **Antwoord.** Ja, kunnen wij de lijst van Rekeningen van om het even welk segment samen met hun het delen metriek en eigenschappen verstrekken.
 
-1. Hoe vergelijkbaar zijn de resultaten van Account IQ vergeleken met interne oplossingen?
+1. Hoe vergelijkbaar zijn de resultaten van Account IQ in vergelijking met interne oplossingen?
 
    **Antwoord.** Account IQ heeft toegang tot meer gegevens dan elke streamingservice en heeft een detectiemodel dat is gebaseerd op meer dan tien jaar verwerking, wat resulteert in de meest nauwkeurige resultaten die beschikbaar zijn.
 
 1. Hoe kan ik de inzichten gebruiken die door Account IQ worden verstrekt?
 
-   **Antwoord.** Kennis van de schaal en de aard van delen is de eerste stap in onze aanbevolen best practices. Het nemen van gerichte actie met specifieke rekeningen zoals het verhogen van de verkoop of het beperken van stromen is de stap. De volledige aanbeveling is om klein te beginnen, de resultaten van de actie te meten en het proces te verfijnen en te schalen.
+   **Antwoord.** Om de schaal en aard van het delen te begrijpen is de eerste stap in onze geadviseerde beste praktijken. Het nemen van gerichte actie met specifieke rekeningen zoals het verhogen van de verkoop of het beperken van stromen is de stap. De volledige aanbeveling is om klein te beginnen, de resultaten van de actie te meten en het proces te verfijnen en te schalen.
 
-1. Moeten we samenwerken met interne technologiegroepen en distributiepartners om maatregelen zoals slimme CM uit te voeren?
+1. Moeten we samenwerken met interne technologiegroepen en distributiepartners om maatregelen zoals smart CM (Gelijktijdige controle) uit te voeren?
 
-   **Antwoord.** Adobe Primetime Support kan niet altijd worden gebruikt om uw eigen CM-regels te maken op basis van AIQ-gegevens.
+   **Antwoord.** Niet noodzakelijk. Adobe Primetime Support kan uw eigen CM-regels maken op basis van uw AIQ-gegevens.
 
 1. Kan ik zien hoe de segmenten zich in de loop der tijd ontwikkelen?
 
-   **Antwoord.** Ja, de grafieken van de bedrijfsimpact volgen de kenmerken van een doelsegment en geven deze weer gedurende de levensduur van de bewerking.
+   **Antwoord.** Ja. Operationele botsingsgrafieken, spoorkarakteristieken en weergavekenmerken van een doelsegment gedurende de levensduur van de operatie.

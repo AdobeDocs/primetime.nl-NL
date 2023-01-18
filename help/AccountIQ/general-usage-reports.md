@@ -1,13 +1,13 @@
 ---
 title: Algemene gebruiksrapporten
 description: Algemene gebruiksrapporten
-source-git-commit: 683b5a5c1dc8dde3f546bbf4b7a09406bc018d78
+exl-id: 1272073a-61fe-47ec-aced-2e8055b6b11e
+source-git-commit: a2181a8fd7334f19b8387a31c71527d4f689ab9d
 workflow-type: tm+mt
-source-wordcount: '1241'
+source-wordcount: '1281'
 ht-degree: 0%
 
 ---
-
 
 # Algemene gebruiksrapporten {#general-usage-reports}
 
@@ -41,7 +41,26 @@ De rapporten zijn allen gebaseerd op het huidige geselecteerde segment gebruiken
 
 De lijngrafieken hier geeft u een mening van de veranderingen in tijd in waarden van O.K. AuthN, O.K. AuthZ, de Verzoeken van het Spel, en de Unieke Abonnees in een geselecteerd tijdkader voor het bepaalde segment.
 
-![](assets/line-graph-gu.png)
++++Programmer- **AuthN OK / AuthZ OK / Play Requests / Unique Subscribers**
+
+![](assets/progr-line-graph-gu.png)
+
+
+*Afbeelding: AuthN OK / AuthZ OK / Play Requests / Unique Subscribers for programmeer user*
+
+
++++
+
+
++++MVPD- **AuthN OK / AuthZ OK / Unieke abonnees**
+
+![](assets/mvpd-line-graph-gu.png)
+
+
+*Afbeelding: AuthN OK / AuthZ OK / Unique Subscribers for MVPD user*
+
+
++++
 
 De x-as stelt de eenheden binnen het huidige tijdkader voor en de y-as vertegenwoordigt de basisgegevens van de abonneeactiviteit tijdens die periode. Met de lijngrafieken kunt u de volgende waarden vergelijken voor de abonnees van MVPD&#39;s en kanalen die u in het deelvenster voor segmentselectie hebt geselecteerd:
 
@@ -57,13 +76,18 @@ De x-as stelt de eenheden binnen het huidige tijdkader voor en de y-as vertegenw
 
    De verzoeken van het spel zijn het aantal Verzoeken van het Spel. Zie voor meer informatie en definitie [Productconcepten: Aanvragen afspelen](/help/AccountIQ/product-concepts.md#play-requests-def)
 
+   >[!NOTE]
+   >
+   >De grafiek van de spelverzoeken lijngrafiek is niet beschikbaar voor gebruikers MVPD.
+
+
 * **Unieke abonnees**
 
    De unieke abonnees zijn het aantal succesvolle unieke abonnees. Zie voor meer informatie en definitie [Productconcepten: Unieke abonnees](/help/AccountIQ/product-concepts.md#unique-subscriber-def)
 
    >[!NOTE]
    >
-   >Het totale aantal unieke abonnees omvat ook het aantal unieke apparaten als het gebruik van Adobe TempPass door een programmeur (d.w.z. vrije voorproef) deel van het segment uitmaakt.
+   >Het totale aantal unieke abonnees omvat ook het aantal unieke apparaten als het gebruik van Adobe TempPass door een programmeur (dat vrije voorproef is) deel van het segment uitmaakt.
 
 ## Overzicht van momentopnamen - Accounts boven drempels {#snapshot-overview}
 
@@ -105,7 +129,7 @@ In de grafiek ziet u het volgende:
 
 ## Apparaten per week (of maand) per account {#devices-week-account}
 
-De **staafgrafiek** biedt inzichten in het gebruiksgedrag in termen van hoe de abonnees van uw MVPD&#39;s hun apparaten gebruiken om toegang te krijgen tot inhoud van uw kanaal.
+De **staafgrafiek** biedt inzichten in het gebruiksgedrag in termen van hoe de abonnees hun apparaten gebruiken om toegang te krijgen tot inhoud.
 
 Het aantal accounts van de x-asplots en het aantal apparaten van de y-as. Gebaseerd op de drempel u voor aantal apparaten per rekening plaatst, merkt het het absolute aantal abonneerekeningen die inhoud van specifiek aantal apparaten in de duur van een week verbruiken.
 
@@ -135,7 +159,7 @@ Resultaten van deze metrische methode gecombineerd met het aantal [Apparaten per
 
 ![](assets/graph-loc-week-acc.png)
 
-Zodra u een segment hebt bepaald (door MVPDs en kanalen te selecteren) en de drempel voor aantal plaatsen te plaatsen, kunt u van de grafiek identificeren:
+Als u een segment hebt gedefinieerd en de drempel voor het aantal locaties hebt ingesteld, kunt u dit in de grafiek identificeren:
 
 * Aantal (en percentage) abonnees die inhoud van (a specifiek) x aantal plaatsen in een week verbruiken.
 
@@ -179,5 +203,5 @@ De grafiek van de bar van de Historische Mening helpt u de gebruiksmetriek over 
 
 >[!MORELIKETHIS]
 >
->* Weet hoe te om rapporten voor hoogste 1000 abonnees voor geselecteerde MVPDs uit te voeren gebruikend filters in het Algemene Rapport van het Gebruik gebruikend [Bovenste 1000-accounts exporteren](/help/AccountIQ/export-acc-information.md) optie.
+>* Weet hoe te om rapporten voor hoogste 1000 abonnees in het geselecteerde segment uit te voeren gebruikend filters in het Algemene Rapport van het Gebruik gebruikend [Bovenste 1000-accounts exporteren](/help/AccountIQ/export-acc-information.md) optie.
 

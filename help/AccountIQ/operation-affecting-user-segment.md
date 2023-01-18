@@ -1,17 +1,17 @@
 ---
-title: 'Een bewerking maken op een gebruikerssegment en het trackeffect '
+title: Een bewerking maken op een gebruikerssegment en het trackeffect
 description: Hoe te om een verrichting tot stand te brengen die gevolgen en spoor het effect op een bepaald segment van gebruikers beïnvloedt.
-source-git-commit: 1d6beb69470fcf6a3193b4d2f508c503d4f957f1
+exl-id: ab74f857-e178-4120-8f9c-655ec921d096
+source-git-commit: dd1001d94e32a1a8b5346ff97b0f6cb7d244dcf2
 workflow-type: tm+mt
-source-wordcount: '881'
+source-wordcount: '1010'
 ht-degree: 0%
 
 ---
 
-
 # Een bewerking maken op een gebruikerssegment {#operation-to-track-segment}
 
-Elke rapportpagina op de IQ van de Rekening heeft a **Nieuwe bewerking maken** optie om u te helpen werkschema&#39;s tot stand brengen om diverse (bulk) acties op abonneerekeningen te automatiseren (en te vereenvoudigen); definieert regels om een voorbeeld op te geven, acties te definiëren en de effecten van die acties op te nemen en te analyseren. Op de pagina voor het maken van bewerkingen kunt u het voorbeeld definiëren van gebruikersgroepen waarop bewerkingen worden uitgevoerd en de bewerking plannen die op een toekomstige datum moet worden uitgevoerd.
+Elke rapportpagina op de IQ van de Rekening heeft a **Nieuwe bewerking maken** optie om u te helpen werkschema&#39;s tot stand brengen om diverse (bulk) acties op abonneerekeningen te automatiseren (en te vereenvoudigen); Definieer regels om een voorbeeld op te geven, acties te definiëren en de effecten van die acties op te nemen en te analyseren. Op de pagina voor het maken van bewerkingen kunt u het voorbeeld definiëren van gebruikersgroepen waarop bewerkingen worden uitgevoerd en de bewerking plannen die op een toekomstige datum moet worden uitgevoerd.
 
 Een bewerking maken:
 
@@ -34,10 +34,21 @@ Een bewerking maken:
 
 ## Bedrijfsgegevens {#operation-details}
 
++++Programma-verrichtingsdetails
+
 Geef de nieuwe bewerking een naam in **Handelingsnaam** onder Bewerkingsdetails. Bijvoorbeeld &quot;*Test het effect van multifactorauthentificatie op abonnees van MVPD X&quot;of &quot;Beperk het aantal stromen in Gelijktijdige Controle&quot;of &quot;Beperk MVPD&#39;s abonnees die kanaal &quot;N&quot;van 20 plus apparaten bekijken*&quot;.
 
++++
+
++++MVPD- verrichtingsdetails
+
+Geef de nieuwe bewerking een naam in **Handelingsnaam** onder Bewerkingsdetails. Bijvoorbeeld &quot;*Test het effect van multifactorauthentificatie op de kijkers van kanaal N&quot;of &quot;Beperk het aantal stromen in Gelijktijdige Controle&quot;of &quot;Beperk de abonnees die kanaal &quot;N&quot;bekijken van 20 plus apparaten*&quot;.
+
++++
 
 ## Doelsegment {#segment}
+
++++Programmer- doelsegment
 
 De **Segment** Hier worden de gebruikers vermeld die door deze verrichting zullen worden geëxploiteerd; of de voorbeeldgroep voor uw bewerking. Het standaardsegment is **segment** u hebt geselecteerd met [segment en tijdframe, deelvenster](/help/AccountIQ/howto-select-segment-timeframe.md) op de pagina met hoofdrapporten of dashboards in stap 1 hierboven.
 
@@ -47,7 +58,22 @@ De **Segment** Hier worden de gebruikers vermeld die door deze verrichting zulle
 ![](assets/operations-segment-selection.png)
 *Figure: Segment and timeframe selection on the main page*-->
 
-Dit segment bepaalt de abonnees van MVPDs en Kanalen die door de verrichting zullen worden beïnvloed die wordt gecreeerd. Uw (standaard)segment bevat bijvoorbeeld *alle abonneerekeningen van MVPD genoemd &quot;C&quot;die het kanaal &quot;N Sport&quot;bekijken*.
+Dit segment bepaalt de abonnees die door de verrichting zullen worden beïnvloed die wordt gecreeerd. Het geselecteerde segment kan bijvoorbeeld *alle abonneerekeningen van MVPD genoemd &quot;C&quot;die het kanaal &quot;N Sport&quot;bekijken*.
+
++++
+
++++MVPD- Doelsegment
+
+De **Segment** Hier worden de gebruikers vermeld die door deze verrichting zullen worden geëxploiteerd; of de voorbeeldgroep voor uw bewerking. Het standaardsegment is **segment** u hebt geselecteerd met [segment en tijdframe, deelvenster](/help/AccountIQ/howto-select-segment-timeframe.md) op de pagina met hoofdrapporten of dashboards in stap 1 hierboven.
+
+<!--* The first segment entry in the **Segment** section, by default, shows the **segment** you selected in the step 1.
+
+* The **segment evaluation period** is the time period of analysis you selected in step 1 from **Granularity and Timeframe** option.
+![](assets/operations-segment-selection.png)
+*Figure: Segment and timeframe selection on the main page*-->
+
+Dit segment bepaalt uw abonnees (die kijkers van specifieke kanalen zijn) die door de verrichting zullen worden beïnvloed die wordt gecreeerd. Uw (standaard)segment bevat bijvoorbeeld *alle abonneeaccounts die het kanaal &#39;N Sports&#39; weergeven*.
++++
 
 ### Aanvullende segmentering {#additional-segmentation}
 

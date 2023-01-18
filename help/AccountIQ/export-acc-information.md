@@ -1,17 +1,17 @@
 ---
 title: Informatie exporteren voor accounts met hoge score voor delen
 description: Exporteer gegevens voor accounts met een hoge score voor delen.
-source-git-commit: 17a44bde5cf320f519cc537d37df0fe823cf51a6
+exl-id: df41ddd2-fde3-4861-abd4-6e32f0be9ea5
+source-git-commit: dcd89849937f4893705423465be4003948739eeb
 workflow-type: tm+mt
-source-wordcount: '752'
+source-wordcount: '727'
 ht-degree: 1%
 
 ---
 
-
 # Informatie exporteren voor accounts met hoge score voor delen {#export-account-info-high-score}
 
-De IQ van de rekening geeft u de optie om rekening het delen details voor hoogste 1000 abonneerekeningen uit te voeren die op hun worden gebaseerd [waarschijnlijkheid delen](/help/AccountIQ/product-concepts.md#account-sharing-probability-def). De gegevens in het geëxporteerde CSV-bestand worden gesorteerd in afnemende volgorde van de waarschijnlijkheid dat gebruikers hun abonnement gebruiken, van de geselecteerde MVPD&#39;s in de [segment](/help/AccountIQ/product-concepts.md#segment-def)voor een [opgegeven tijdsduur](/help/AccountIQ/product-concepts.md#time-frame-def).
+De IQ van de rekening geeft u de optie om rekening het delen details voor hoogste 1000 abonneerekeningen uit te voeren die op hun worden gebaseerd [waarschijnlijkheid delen](/help/AccountIQ/product-concepts.md#account-sharing-probability-def). De gegevens in het geëxporteerde CSV-bestand worden gesorteerd in afnemende volgorde van de waarschijnlijkheid dat de abonneerekeningen delen in de [segment](/help/AccountIQ/product-concepts.md#segment-def)voor een [opgegeven tijdsduur](/help/AccountIQ/product-concepts.md#time-frame-def).
 
 De optie voor het exporteren van de gegevens voor het delen van accounts is beschikbaar op [Algemene verbruiksrapporten](/help/AccountIQ/general-usage-reports.md) en [Rapporten over gedeelde accounts](/help/AccountIQ/shared-acc-reports.md) pagina&#39;s.
 
@@ -23,13 +23,7 @@ De optie voor het exporteren van de gegevens voor het delen van accounts is besc
 
 De gegevens over het delen van accounts van abonnees exporteren:
 
-1. Geef een segment op vanuit de segmentkiezer. Een segment selecteren:
-
-   1. Selecteer gewenste MVPDs van **MVPD&#39;s in segment** optie.
-
-   1. Selecteer de gewenste kanalen uit **Kanalen in segment** optie.
-
-   1. Een tijdframe selecteren vanuit **Korreligheid en tijdkader** om de rapporten hiervoor te bekijken.
+1. Een gewenst segment definiëren na de stappen in [Segment definiëren en tijdframe selecteren](/help/AccountIQ/howto-select-segment-timeframe.md) ter evaluatie van [segment en tijdframe](/help/AccountIQ/segments-timeframe.md) deelvenster.
 
 1. Selecteer **Bovenste 1000-accounts exporteren** optie om de rekeninginformatie voor 1000 abonnees met de hoogste waarschijnlijkheid van het delen uit te voeren.
 
@@ -51,7 +45,7 @@ De week of maand die u hebt geselecteerd in het dialoogvenster **Korreligheid en
 
 **MVPD**
 
-Als u een programmeergebruiker bent, toont de kolom aan welk MVPD de abonneerekening tot behoort.
+Als u een programmeergebruiker bent, toont de kolom aan welk MVPD de abonneerekening behoort.
 
 **Abonnee-id**
 
@@ -105,13 +99,13 @@ Het aantal keren dat de gebruikers zich tijdens de periode hebben aangemeld, geb
 
 Aantal keren dat een MVPD een stroom, of toegang (tot inhoud), aan die rekening heeft verleend.
 
->[!NOTE]
->
->De **# AuthZ OK** is gerelateerd aan de **# Aanvragen afspelen**; het is kleiner dan de **# Aanvragen afspelen** omdat Adobe de vergunningen die voor MVPDs typisch voor 24 uren in het voorgeheugen onderbrengt.
-
 **# Aanvragen afspelen**
 
 Het werkelijke aantal streams tijdens de tijdsperiode.
+
+>[!NOTE]
+>
+>**# AuthZ OK** is doorgaans kleiner dan **# Aanvragen afspelen** omdat Adobe de vergunningen die van MVPDs voor maximaal 24 uren komen in het voorgeheugen onderbrengt. Deze kolom is niet beschikbaar aan MVPDs.
 
 **Aantal kanalen**
 

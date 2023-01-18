@@ -1,23 +1,23 @@
 ---
 title: Gebruikspatronen
 description: Gedrag voor het delen van accounts weergeven voor verschillende gebruikerstypen.
-source-git-commit: dd9b8edfd00bb97d01c6478ae0be6944e7e57535
+exl-id: 2faa7e75-b3a1-491b-bb7d-bd3a149cbe79
+source-git-commit: 560611f2af2605ba399e4cf5ddfd331b6e8e0231
 workflow-type: tm+mt
-source-wordcount: '288'
+source-wordcount: '327'
 ht-degree: 0%
 
 ---
 
-
 # Gebruikspatronen {#usage-patterns}
 
-Rekening-IQ classificeert gebruikers van abonneerekeningen in diverse categorieën wat hun sociaal gedrag betreft, zoals Reiziger of forenserver, Grote familie en het delen van de Gemeenschap. De **Gebruikspatronen** op de pagina worden verschillende analyses en rapporten voor deze gebruikerstypen weergegeven. Bijvoorbeeld: **Distributie van gebruikspatronen - Gebruikers in segment versus industrie** het rapport vergelijkt het gebruiksgedrag voor het huidige segment met de volledige industrie.
+Rekening-IQ classificeert gebruikers van abonneerekeningen in diverse categorieën wat hun sociaal gedrag betreft, zoals reiziger of forengebruiker, Grote familie en het delen van de Gemeenschap. De **Gebruikspatronen** op de pagina worden verschillende analyses en rapporten voor deze gebruikerstypen weergegeven. Bijvoorbeeld: **Distributie van gebruikspatronen - Gebruikers in segment vs. totaal** het rapport vergelijkt het gebruiksgedrag voor het huidige segment met de volledige industrie.
 
 Net als de andere pagina&#39;s in de app zijn de analyses en rapporten hier gebaseerd op het huidige segment zoals gedefinieerd in het dialoogvenster [segmentpaneel](/help/AccountIQ/segments-timeframe.md).
 
 ## Distributie van gebruikspatronen {#usage-pattern-dis}
 
-De staafgrafiek in **Distributie van gebruikspatronen - Gebruikers in segment versus industrie** geeft het aantal en de percentages van abonnees voor elk sociaal gedrag, of gebruikspatroon weer. Naast het vergelijken van elk gebruikspatroon in het huidige segment met de volledige industrie, vergelijkt het hen ook met een segment dat al uw kanalen bevat.
+De staafgrafiek in **Distributie van gebruikspatronen - Gebruikers in segment versus totaal** geeft het aantal en de percentages van abonnees voor elk sociaal gedrag, of gebruikspatroon weer. Naast het vergelijken van elk gebruikspatroon in het huidige segment met de volledige industrie, vergelijkt het hen ook met een segment dat al uw kanalen bevat.
 
 ![](assets/segment-users-industry.png)
 
@@ -39,8 +39,20 @@ Bijvoorbeeld in de bovenstaande afbeelding:
 
 * En 15,7% (24.073.311) van de totale spelverzoeken (153.076.350) worden gedaan door reguliere gebruikers.
 
-## Gebruik van patroondistributie voor MVPD&#39;s {#usage-pattern-dis-mvpd}
+## De patroondistributie van het gebruik door segmentpartner {#usage-pattern-dis-mvpd}
 
-De **Gebruik van patroondistributie voor MVPD&#39;s** de lijst verstrekt een vergelijking van de distributie van het gebruikspatroon voor MVPDs in het huidige segment.
++++Programmer - de patroondistributie van het gebruik voor totale segmenten en segmentpartners
+
+De **Patroondistributie gebruiken** de lijst verstrekt een vergelijking van de distributie van het gebruikspatroon voor MVPDs in het huidige segment.
 
 ![](assets/usage-patterns-mvpdwise.png)
+
++++
+
++++MVPD - de patroondistributie van het gebruik voor totale segmenten en segmentpartners
+
+De **Patroondistributie gebruiken** de lijst verstrekt een vergelijking van de distributie van het gebruikspatroon voor de programmeerkanalen in het huidige segment.
+
+![](assets/usage-patterns-programmerwise.png)
+
++++

@@ -1,15 +1,15 @@
 ---
 title: Hoe te om rapporten voor top 10 MVPDs door programmeur te bekijken.
 description: De rapporten van de mening voor top 10 MVPDs.
-source-git-commit: e61cca77bad4f01de871e300dc99d7368c283f2a
+exl-id: 76fd1af8-dd96-426b-b9c8-a356b53b491d
+source-git-commit: 5963c55d87385fbd92646bfc45a3650fb568bca5
 workflow-type: tm+mt
 source-wordcount: '565'
 ht-degree: 0%
 
 ---
 
-
-# Hoe te om rapporten voor hoogste 10 MVPDs te bekijken <!--and Programmers--> {#view-top-10-mvpd-reports}
+# De rapporten van het rekeningendelen van de mening voor hoogste 10 MVPDs <!--and Programmers--> {#view-top-10-mvpd-reports}
 
 Account IQ beschikt over mogelijkheden om u te helpen statistieken over het delen van accounts voor de top 10 van uw MVPD&#39;s (in een gedefinieerde [segment](/help/AccountIQ/product-concepts.md#segmet-def)) met:
 

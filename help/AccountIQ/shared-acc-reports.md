@@ -1,13 +1,13 @@
 ---
-title: 'Rapporten over gedeelde accounts '
+title: Rapporten over gedeelde accounts
 description: Rapporten van gedeelde accounts
-source-git-commit: ead505dfa3e6569b7e349fa63170e5f8d90d759b
+exl-id: 16c5ded1-2a95-4373-8b90-b445131f333a
+source-git-commit: dd1001d94e32a1a8b5346ff97b0f6cb7d244dcf2
 workflow-type: tm+mt
-source-wordcount: '461'
+source-wordcount: '458'
 ht-degree: 0%
 
 ---
-
 
 # Rapporten over gedeelde accounts {#shared-accounts-reports}
 
@@ -53,7 +53,7 @@ In dit deelvenster kunt u een bereik selecteren van de volgende waarden als drem
 
 ![](assets/threshold-selector-shared-accounts.png)
 
-Zodra u de drempel selecteert, toont het paneel het percentage (en aantal) rekeningen van alle abonneerekeningen voor MVPDs die in het segment worden geselecteerd.
+Zodra u de drempel selecteert, toont het paneel het percentage (en het aantal) rekeningen van alle abonneerekeningen in het geselecteerde segment.
 
 ## Segment - Verzoeken afspelen van totaal {#play-request-out-total}
 

@@ -1,13 +1,13 @@
 ---
 title: Aanbevolen werkwijzen
 description: Lees verder om te begrijpen hoe u het hulpmiddel Account IQ beter kunt gebruiken.
-source-git-commit: 3ee1620dad552c76545f5441ea8530a45143fc4b
+exl-id: 55901f5d-d9c1-4ee5-9349-afa28445b324
+source-git-commit: dcd89849937f4893705423465be4003948739eeb
 workflow-type: tm+mt
 source-wordcount: '538'
 ht-degree: 0%
 
 ---
-
 
 # Aanbevolen werkwijzen {#aiq-best-practices}
 
@@ -28,6 +28,7 @@ Om de aard en impact van delen op uw bedrijf te begrijpen:
 ## Doeltreffende incrementele actie uitvoeren {#incremental-targeted-action}
 
 Met een bepaald doelsegment, doe actie. Door klein met een duidelijk bepaald segment te beginnen, vermindert u uw risico van onopzettelijke gevolgen en kan beter het resultaat begrijpen. U kunt het doel van uw bewerking altijd verfijnen of uitbreiden, ongeacht de positie waar u zich langs het pad bevindt.
+
 Het is verstandig om een kleine en snelle start te maken. Gebruik eerder geïdentificeerde segmenten en onderneem acties (als experimenten) met specifieke doelstellingen.
 
 Gebruik het hulpmiddel van de Verrichting om het doelsegment en een operationeel tijdkader te bepalen. Hierdoor kunt u effecten in de volgende fase volgen.
@@ -98,7 +99,7 @@ How many additional ads were viewed?
 
 Did the number of borrowers decrease?
 
-Account IQ’s sophisticated machine learning based models help you analyze and measure the impacts of your experiments (or actions).
+Account IQ's sophisticated machine learning based models help you analyze and measure the impacts of your experiments (or actions).
 
 Improve and repeat
 Based on the outcomes of your experiments and targeted actions on small groups of users, you can expand the reach of your strategies to rest of the user segment or reset the strategy and audience to act on.
