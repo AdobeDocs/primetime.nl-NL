@@ -4,7 +4,7 @@ user-guide-title: Help bij programmeren bij primetime
 user-guide-description: Hiermee kunt u leren toepassingen en videospelers te ontwikkelen met behulp van Java op Android-apparaten en onder doelstelling C op iOS-apparaten.
 source-git-commit: 95626ebde981d1996652a67bc9e0cea05f24aa6d
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '4342'
 ht-degree: 0%
 
 ---
@@ -453,7 +453,7 @@ ht-degree: 0%
       + Meldingscodes {#notification-codes}
          + [Overzicht](tvsdk-2.7-for-android/events-and-notifications/notification-codes/c-psdk-android-2.7-notification-codes.md)
          + [Details voor de melding NATIVE_ERROR](tvsdk-2.7-for-android/events-and-notifications/notification-codes/c-psdk-android-2.7-native-error-summary.md)
-      + [Overzicht van gebeurtenissen in de primaire speler](tvsdk-2.7-for-android/events-and-notifications/events-summary/c-psdk-android-2.7-events-summary.md)
+      + [Overzicht van gebeurtenissen in de primetime-speler](tvsdk-2.7-for-android/events-and-notifications/events-summary/c-psdk-android-2.7-events-summary.md)
       + Factureringscijfers {#billing-metrics}
          + [Overzicht](tvsdk-2.7-for-android/billing/c-psdk-android-2.7-billing.md)
          + [Factureringsmetriek configureren](tvsdk-2.7-for-android/billing/t-psdk-android-2.7-billing-config.md)
@@ -616,7 +616,7 @@ ht-degree: 0%
          + [Adverteringsfase](tvsdk-1.4-for-android/failover-for-playback/failover-ad-insertion-for-vod/android-1.4-failover-ad-resolving-phase.md)
          + [Ad-invoegfase](tvsdk-1.4-for-android/failover-for-playback/failover-ad-insertion-for-vod/android-1.4-failover-ad-insertion-phase.md)
          + [Ad-playbackfase](tvsdk-1.4-for-android/failover-for-playback/failover-ad-insertion-for-vod/android-1.4-failover-ad-playback-phase.md)
-      + Overzicht van gebeurtenissen in de primaire speler {#primetime-player-events-summary}
+      + Overzicht van gebeurtenissen in de primetime-speler {#primetime-player-events-summary}
          + [Gebeurtenissen van Playback](tvsdk-1.4-for-android/android-1.4-events-notifications/events-summary/android-1.4-event-listener-mediaplayer-playback.md)
          + [Afspeelgebeurtenissen toevoegen](tvsdk-1.4-for-android/android-1.4-events-notifications/events-summary/android-1.4-event-listener-mediaplayer.md)
          + [QoS-gebeurtenissen](tvsdk-1.4-for-android/android-1.4-events-notifications/events-summary/android-1.4-event-listener-mediaplayer-qos.md)
@@ -903,7 +903,7 @@ ht-degree: 0%
       + [Toevoeging en overname van advertenties voor VOD](tvsdk-1.4-for-desktop-hls/failover-for-playback/c-psdk-dhls-1.4-failover-ad-insertion-for-vod.md)
       + [Live master-manifest-update](tvsdk-1.4-for-desktop-hls/failover-for-playback/c-psdk-dhls-1.4-manifest-update-intro.md)
       + [Informatie ophalen over profielschakelaar](tvsdk-1.4-for-desktop-hls/failover-for-playback/t-psdk-dhls-1.4-profile-switch-info.md)
-   + Overzicht van gebeurtenissen in de primaire speler {#events-summary}
+   + Overzicht van gebeurtenissen in de primetime-speler {#events-summary}
       + [Gebeurtenissen van Playback](tvsdk-1.4-for-desktop-hls/events-summary/r-psdk-dhls-1.4-event-listener-mediaplayer-playback.md)
       + [Afspeelgebeurtenissen toevoegen](tvsdk-1.4-for-desktop-hls/events-summary/r-psdk-dhls-1.4-event-listener-mediaplayer-adplayback.md)
       + [Gebeurtenissen van metagegevens met tijdslimiet toevoegen](tvsdk-1.4-for-desktop-hls/events-summary/r-psdk-dhls-1.4-event-listener-mediaplayer-adserving.md)
