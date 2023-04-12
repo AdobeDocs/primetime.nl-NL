@@ -1,13 +1,13 @@
 ---
 title: Rapporten weergeven in de isolatiemodus
-description: 'Rapporten weergeven in de isolatiemodus voor Xfinity. '
-source-git-commit: afa77dd0d7ffe38d353fed21dc9591b994b11193
+description: Rapporten weergeven in de isolatiemodus voor Xfinity.
+exl-id: e7cf24c5-9bfa-48f6-b5c8-20443a976891
+source-git-commit: 326f97d058646795cab5d062fa5b980235f7da37
 workflow-type: tm+mt
 source-wordcount: '471'
 ht-degree: 0%
 
 ---
-
 
 # Rapporten delen weergeven in de isolatiemodus {#report-isolation-mode}
 
@@ -19,7 +19,7 @@ Bijvoorbeeld, in het volgende beeld als abonnee B van een Wijze van de Isolatie 
 
 *Afbeelding: De Wijze van de isolatie MVPD identificeert vier verschillende abonnees in plaats van twee*
 
-Om de vervorming van gegevens te beheren (door de zelfde abonnee te identificeren die verschillend wordt gebaseerd op de toegang tot van verschillende programmeurs), beperkt de Wijze van de Isolatie de activiteit die over een programmeur aan de activiteit slechts op de toepassingen van die programmeur wordt gemeld. Voor de isolatiemodus in de bovenstaande afbeelding ziet Programmer L bijvoorbeeld alleen gegevens die zijn gebaseerd op de activiteit van Identities W en Y, waarbij de identiteiten X en Z worden genegeerd.
+Om de vervorming van gegevens (door het identificeren van de zelfde abonnee als verschillend te beheren gebaseerd op de toegang tot van verschillende programmeurs), beperkt de Wijze van de Isolatie de activiteit die over een programmeur aan de activiteit slechts op de toepassingen van die programmeur wordt gemeld. Voor de isolatiemodus in de bovenstaande afbeelding ziet Programmer L bijvoorbeeld alleen gegevens die zijn gebaseerd op de activiteit van Identities W en Y, waarbij de identiteiten X en Z worden genegeerd.
 
 >[!IMPORTANT]
 >

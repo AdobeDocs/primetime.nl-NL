@@ -2,16 +2,16 @@
 title: Informatie exporteren voor accounts met hoge score voor delen
 description: Exporteer gegevens voor accounts met een hoge score voor delen.
 exl-id: df41ddd2-fde3-4861-abd4-6e32f0be9ea5
-source-git-commit: dcd89849937f4893705423465be4003948739eeb
+source-git-commit: 326f97d058646795cab5d062fa5b980235f7da37
 workflow-type: tm+mt
-source-wordcount: '727'
+source-wordcount: '728'
 ht-degree: 1%
 
 ---
 
 # Informatie exporteren voor accounts met hoge score voor delen {#export-account-info-high-score}
 
-De IQ van de rekening geeft u de optie om rekening het delen details voor hoogste 1000 abonneerekeningen uit te voeren die op hun worden gebaseerd [waarschijnlijkheid delen](/help/AccountIQ/product-concepts.md#account-sharing-probability-def). De gegevens in het geëxporteerde CSV-bestand worden gesorteerd in afnemende volgorde van de waarschijnlijkheid dat de abonneerekeningen delen in de [segment](/help/AccountIQ/product-concepts.md#segment-def)voor een [opgegeven tijdsduur](/help/AccountIQ/product-concepts.md#time-frame-def).
+De IQ van de rekening geeft u de optie om rekening het delen details voor hoogste 1000 abonneerekeningen uit te voeren die op hun worden gebaseerd [waarschijnlijkheid delen](/help/AccountIQ/product-concepts.md#account-sharing-probability-def). De gegevens in het geëxporteerde CSV-bestand worden gesorteerd in afnemende volgorde van de waarschijnlijkheid dat gebruikers hun abonnement gebruiken, van de geselecteerde MVPD&#39;s in de [segment](/help/AccountIQ/product-concepts.md#segment-def)voor een [opgegeven tijdsduur](/help/AccountIQ/product-concepts.md#time-frame-def).
 
 De optie voor het exporteren van de gegevens voor het delen van accounts is beschikbaar op [Algemene verbruiksrapporten](/help/AccountIQ/general-usage-reports.md) en [Rapporten over gedeelde accounts](/help/AccountIQ/shared-acc-reports.md) pagina&#39;s.
 
@@ -45,7 +45,7 @@ De week of maand die u hebt geselecteerd in het dialoogvenster **Korreligheid en
 
 **MVPD**
 
-Als u een programmeergebruiker bent, toont de kolom aan welk MVPD de abonneerekening behoort.
+Als u een programmeergebruiker bent, toont de kolom aan welk MVPD de abonneerekening tot behoort.
 
 **Abonnee-id**
 
@@ -99,13 +99,13 @@ Het aantal keren dat de gebruikers zich tijdens de periode hebben aangemeld, geb
 
 Aantal keren dat een MVPD een stroom, of toegang (tot inhoud), aan die rekening heeft verleend.
 
+>[!NOTE]
+>
+>De **# AuthZ OK** is gerelateerd aan de **# Aanvragen afspelen**; het is kleiner dan de **# Aanvragen afspelen** omdat Adobe de vergunningen die voor MVPDs typisch voor 24 uren in het voorgeheugen onderbrengt.
+
 **# Aanvragen afspelen**
 
 Het werkelijke aantal streams tijdens de tijdsperiode.
-
->[!NOTE]
->
->**# AuthZ OK** is doorgaans kleiner dan **# Aanvragen afspelen** omdat Adobe de vergunningen die van MVPDs voor maximaal 24 uren komen in het voorgeheugen onderbrengt. Deze kolom is niet beschikbaar aan MVPDs.
 
 **Aantal kanalen**
 
@@ -127,7 +127,7 @@ De aantallen in deze kolom zijn herkenningstekens die aan één van de 14 patron
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
 | Gebruikspatronen | Gewone gebruiker | Reiziger of pendelaar | Grote familie | Familie en vrienden sluiten | Delen van sociale groepen | Grote groep vrienden | Gelijktijdige streaming | Delen door Gemeenschap | Onduidelijk gedrag | Kleine familie | Tweede thuis | Abnormaal gebruik |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 **Deelbaarheid**
 

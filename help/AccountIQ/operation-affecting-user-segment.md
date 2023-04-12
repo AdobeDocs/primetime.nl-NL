@@ -2,9 +2,9 @@
 title: Een bewerking maken op een gebruikerssegment en het trackeffect
 description: Hoe te om een verrichting tot stand te brengen die gevolgen en spoor het effect op een bepaald segment van gebruikers beïnvloedt.
 exl-id: ab74f857-e178-4120-8f9c-655ec921d096
-source-git-commit: dd1001d94e32a1a8b5346ff97b0f6cb7d244dcf2
+source-git-commit: 326f97d058646795cab5d062fa5b980235f7da37
 workflow-type: tm+mt
-source-wordcount: '1010'
+source-wordcount: '1007'
 ht-degree: 0%
 
 ---
@@ -146,7 +146,7 @@ De **Handeling** bepaalt welke verrichting u op het bepaalde segment zult uitvoe
 
 U kunt twee soorten acties uitvoeren:
 
-* acties met systemen die zijn geïntegreerd met Account IQ; zoals [Gelijktijdige bewaking](https://tve.helpdocsonline.com/concurrency-monitoring-introduction)<!--, or Adobe Target-->.
+* acties met systemen die zijn geïntegreerd met Account IQ; zoals **Gelijktijdige bewaking** <!--[Concurrency Monitoring](https://tve.helpdocsonline.com/concurrency-monitoring-introduction), or Adobe Target-->.
 
 * Handelingen voor het maken en verwerken van workflows die extern zijn voor Account IQ en niet zijn geïntegreerd met Account IQ-systeem. Bijvoorbeeld, een actie voor kanaalprogrammeur &quot;N&quot;om bulkmail naar alle abonnees van MVPD &quot;C&quot;te verzenden.
 

@@ -2,7 +2,7 @@
 product: adobe primetime
 audience: end-user
 user-guide-description: De hulp van IQ van de Rekening van Primetime geeft informatie over de IQ van de Rekening componenten en begeleidt u door gebruikersreizen om de diverse componenten te gebruiken.
-source-git-commit: 24838ba51683b04894149ae55bcabfb7bf2e8095
+source-git-commit: 326f97d058646795cab5d062fa5b980235f7da37
 workflow-type: tm+mt
 source-wordcount: '141'
 ht-degree: 0%
@@ -17,14 +17,15 @@ ht-degree: 0%
    + [Segmenten en tijdkader](/help/AccountIQ/segments-timeframe.md)
    + [Dashboard](/help/AccountIQ/dashboard.md)
    + Rapporten {#reports-account-iq}
-      + [Algemene gebruiksrapporten](/help/AccountIQ/general-usage-reports.md)
-      + [Rapporten over gedeelde accounts](/help/AccountIQ/shared-acc-reports.md)
+   + [Algemene gebruiksrapporten](/help/AccountIQ/general-usage-reports.md)
+   + [Rapporten over gedeelde accounts](/help/AccountIQ/shared-acc-reports.md)
    + Componenten delen {#sharing-components}
       + [Gebruikspatronen](/help/AccountIQ/usage-patterns.md)
    + Handelingen {#further-next-steps-actions}
       + [Bewerkingen](/help/AccountIQ/operations.md)
 + Hoe kan ik {#use-aiq}
-   + [Een segment en tijdframe definiëren](/help/AccountIQ/howto-select-segment-timeframe.md)
+   + [Segmenten maken](/help/AccountIQ/build-segment.md)
+   + [Segment en tijdframe selecteren](/help/AccountIQ/howto-select-segment-timeframe.md)
    + Rapporten exporteren {#export-reports}
       + [Programmeur - Exportrapporten](/help/AccountIQ/export-segment-metrics-progr.md)
       + [MVPD - Exportrapporten](/help/AccountIQ/export-segment-metrics-mvpd.md)
