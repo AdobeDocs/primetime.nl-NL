@@ -3,9 +3,9 @@ product: adobe primetime
 audience: end-user
 user-guide-title: Primetime-verificatie
 user-guide-description: De Authentificatie van Primetime is een machtigingsoplossing voor TV overal, die een modulair kader verstrekt om te bepalen of iemand die om toegang tot een middel verzoekt tot het recht heeft.
-source-git-commit: 0afc48ae0e423c2a851b3bf22803fbd730999c04
+source-git-commit: aa8169da1308e5372128a93b6a2e5a3a6db5cfef
 workflow-type: tm+mt
-source-wordcount: '719'
+source-wordcount: '723'
 ht-degree: 0%
 
 ---
@@ -152,6 +152,7 @@ ht-degree: 0%
    + [Primetime Adobe PayTV-controle](monitoring-adobe-pay-tv-pass.md)
    + [Minimale systeemvereisten](minimum-system-requirements.md)
 + Opmerkingen bij de release {#release-notes}
+   + [Opmerkingen bij de release Primetime Authentication 2.65](auth-rn-265.md)
    + [Opmerkingen bij de release Primetime Authentication 2.64.1](auth-rn-2641.md)
    + [Opmerkingen bij de release Primetime Authentication 2.64](auth-rn-264.md)
    + [Opmerkingen bij de release Primetime Authentication 2.63](auth-rn-263.md)
