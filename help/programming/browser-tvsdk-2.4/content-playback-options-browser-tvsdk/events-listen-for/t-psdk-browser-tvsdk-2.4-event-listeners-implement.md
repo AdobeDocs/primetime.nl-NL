@@ -1,16 +1,15 @@
 ---
 description: Met gebeurtenishandlers kan Browser-TVSDK reageren op gebeurtenissen.
 title: Gebeurtenislisteners en callbacks implementeren
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: 2ab33c03-4df6-48e5-825c-95aeef8855d2
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '170'
-ht-degree: 1%
+ht-degree: 0%
 
 ---
 
-
-# Implementeer gebeurtenislisteners en callbacks{#implement-event-listeners-and-callbacks}
+# Gebeurtenislisteners en callbacks implementeren{#implement-event-listeners-and-callbacks}
 
 Met gebeurtenishandlers kan Browser-TVSDK reageren op gebeurtenissen.
 
@@ -24,11 +23,11 @@ Uw toepassing moet gebeurtenislisteners implementeren voor Browser-TVSDK-gebeurt
 
       >[!IMPORTANT]
       >
-      >De playbackgebeurtenis `STATUS_CHANGED` verstrekt de spelerstaat, met inbegrip van fouten. Een van de staten kan de volgende stap van de speler beïnvloeden.
+      >De afspeelgebeurtenis `STATUS_CHANGED` bevat de status van de speler, inclusief fouten. Een van de staten kan de volgende stap van de speler beïnvloeden.
 
    * **Andere gebeurtenissen**: Optioneel, afhankelijk van uw toepassing.
 
-      Als u bijvoorbeeld reclame in het afspelen opneemt, luistert u naar alle gebeurtenissen `AdBreakPlaybackEvent` en `AdPlaybackEvent`.
+      Als u bijvoorbeeld reclame in het afspelen opneemt, luistert u naar alles `AdBreakPlaybackEvent` en `AdPlaybackEvent` gebeurtenissen.
 
 1. Implementeer gebeurtenislisteners voor elke gebeurtenis.
 
@@ -37,7 +36,7 @@ Uw toepassing moet gebeurtenislisteners implementeren voor Browser-TVSDK-gebeurt
    Bijvoorbeeld:
 
    * Type gebeurtenis: `AdobePSDK.PSDKEventType.STATUS_CHANGED`
-   * Event, eigenschap: `MediaPlayerStatus.<event>` wordt als volgt gebruikt:
+   * Event, eigenschap: `MediaPlayerStatus.<event>` gebruikt als volgt:
 
 ```js
 player.addEventListener( 
@@ -52,7 +51,7 @@ onStatusChange = function (event) {
             break;
 ```
 
-1. Registreer uw callback luisteraars met het `MediaPlayer` voorwerp door `MediaPlayer.addEventListener` te gebruiken.
+1. Registreer uw callback luisteraars met `MediaPlayer` object gebruiken `MediaPlayer.addEventListener`.
 
    ```js
    player.addEventListener(AdobePSDK.PSDKEventType.STATUS_CHANGED,  

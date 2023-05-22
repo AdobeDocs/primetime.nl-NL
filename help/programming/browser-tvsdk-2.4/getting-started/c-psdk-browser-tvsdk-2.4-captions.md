@@ -1,20 +1,19 @@
 ---
 description: U kunt bijschriften weergeven tijdens het afspelen van video-inhoud.
 title: Bijschriften
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: 2144a6b2-0b9a-49ea-ad44-997adf36cbe6
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '55'
-ht-degree: 3%
+ht-degree: 0%
 
 ---
-
 
 # Bijschriften{#captions}
 
 U kunt bijschriften weergeven tijdens het afspelen van video-inhoud.
 
-Als u bijschriften wilt afhandelen, moet u de gebeurtenislistener `AdobePSDK.PSDKEventType.CAPTIONS_UPDATED` toevoegen:
+Als u bijschriften wilt verwerken, moet u de opdracht `AdobePSDK.PSDKEventType.CAPTIONS_UPDATED` gebeurtenislistener:
 
 ```js
 ... 

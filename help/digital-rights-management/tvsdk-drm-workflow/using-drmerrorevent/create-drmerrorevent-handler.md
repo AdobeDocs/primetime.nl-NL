@@ -2,7 +2,6 @@
 title: DRMErrorEvent-handlers maken
 description: DRMErrorEvent-handlers maken
 copied-description: true
-translation-type: tm+mt
 source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
 source-wordcount: '63'
@@ -11,7 +10,7 @@ ht-degree: 0%
 ---
 
 
-# Een DRMErrorEvent-handler{#create-a-drmerrorevent-handler} maken
+# DRMErrorEvent-handlers maken{#create-a-drmerrorevent-handler}
 
 Maak een gebeurtenishandler voor het verwerken van foutgebeurtenissen die vanaf Primetime worden verzonden wanneer een fout optreedt tijdens het afspelen van beveiligde inhoud.
 

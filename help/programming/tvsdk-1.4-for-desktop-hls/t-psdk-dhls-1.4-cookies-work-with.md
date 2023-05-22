@@ -1,14 +1,13 @@
 ---
 description: U kunt TVSDK gebruiken om willekeurige gegevens in koekjeskopballen voor zittingsbeheer, poorttoegang, etc. te verzenden.
 title: Werken met cookies
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: f7a64c77-7db6-4bae-b299-69267fedc673
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '234'
 ht-degree: 0%
 
 ---
-
 
 # Werken met cookies{#work-with-cookies}
 
@@ -23,7 +22,7 @@ Hier is een voorbeeld met wat type authentificatie wanneer het doen van verzoeke
 
 Werken met cookies:
 
-1. Gebruik de eigenschap `cookieHeaders` in `NetworkConfiguration` om een cookie in te stellen. De eigenschap `cookieHeaders` is een object Metagegevens en u kunt sleutelwaardeparen toevoegen aan dit object om in de cookiekop te worden opgenomen.
+1. Gebruik de `cookieHeaders` eigenschap in `NetworkConfiguration` om een cookie in te stellen. De `cookieHeaders` eigenschap is een object Metadata en u kunt sleutelwaardeparen toevoegen aan dit object om in de cookie-header te worden opgenomen.
 
    Bijvoorbeeld:
 
@@ -35,9 +34,9 @@ Werken met cookies:
    networkConfiguration.cookieHeaders = metadata;
    ```
 
-   Cookiekoppen worden standaard alleen met hoofdaanvragen verzonden. Om koekjeskopballen met alle verzoeken te verzenden, plaats `NetworkConfiguration` bezit `useCookieHeadersForAllRequests` aan waar.
+   Cookiekoppen worden standaard alleen met hoofdaanvragen verzonden. Als u cookie-headers wilt verzenden met alle aanvragen, stelt u de `NetworkConfiguration` eigenschap `useCookieHeadersForAllRequests` naar waar.
 
-1. Om ervoor te zorgen dat `NetworkConfiguration` werkt, plaats het als meta-gegevens:
+1. Om ervoor te zorgen dat `NetworkConfiguration` werkt, stelt u deze in als metagegevens:
 
    ```
    var networkConfiguration:NetworkConfiguration = new NetworkConfiguration(); 
@@ -47,11 +46,10 @@ Werken met cookies:
                                 networkConfiguration);
    ```
 
-1. Geef de metagegevens van de vorige stap op wanneer u een `MediaResource` maakt.
+1. Geef de metagegevens van de vorige stap op wanneer u een `MediaResource`.
 
-   Als u bijvoorbeeld de methode `createFromURL` gebruikt, voert u de volgende informatie in:
+   Als u bijvoorbeeld de opdracht `createFromURL` Voer de volgende gegevens in:
 
    ```
    var resource:MediaResource = MediaResource.createFromURL(url, resourceMetadata);
    ```
-

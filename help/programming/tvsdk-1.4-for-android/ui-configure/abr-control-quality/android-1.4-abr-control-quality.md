@@ -1,14 +1,13 @@
 ---
 description: HLS- en DASH-streams bieden verschillende bitsnelheidcoderingen (profielen) voor dezelfde korte videoprand. TVSDK kan het kwaliteitsniveau voor elke uitbarsting selecteren op basis van de beschikbare bandbreedte.
 title: Adaptieve bitsnelheden (ABR) voor videokwaliteit
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: d5bcce93-9bd1-45cf-a4c4-bec97476f560
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '656'
 ht-degree: 0%
 
 ---
-
 
 # Overzicht {#adaptive-bit-rates-abr-for-video-quality-overview}
 
@@ -22,15 +21,15 @@ U kunt het adaptieve beetje-tarief (ABR) omschakelingsbeleid en de aanvankelijke
  <tbody> 
   <tr> 
    <td colname="col01"> Oorspronkelijke bitsnelheid </td> 
-   <td colname="col2"> <p>De gewenste afspeelbitsnelheid (in bits per seconde) voor het eerste segment. Wanneer het afspelen begint, wordt het dichtstbijzijnde profiel, dat gelijk is aan of groter is dan de aanvankelijke bitsnelheid, gebruikt voor het eerste segment. </p> <p> Als een minimale bitsnelheid is gedefinieerd en de aanvankelijke bitsnelheid lager is dan de minimale bitsnelheid, selecteert TVSDK het profiel met de laagste bitsnelheid boven de minimale bitsnelheid. Als de aanvankelijke snelheid boven de maximumsnelheid ligt, kiest TVSDK de hoogste snelheid onder de maximumsnelheid. </p> <p>Als de aanvankelijke bitsnelheid nul of ongedefinieerd is, wordt de aanvankelijke bitsnelheid bepaald door het ABR-beleid. </p> <p><span class="codeph"> </span> getABRInitialBitRatereturns een geheelwaarde die het byte-per-secondeprofiel vertegenwoordigt. </p> </td> 
+   <td colname="col2"> <p>De gewenste afspeelbitsnelheid (in bits per seconde) voor het eerste segment. Wanneer het afspelen begint, wordt het dichtstbijzijnde profiel, dat gelijk is aan of groter is dan de aanvankelijke bitsnelheid, gebruikt voor het eerste segment. </p> <p> Als een minimale bitsnelheid is gedefinieerd en de aanvankelijke bitsnelheid lager is dan de minimale bitsnelheid, selecteert TVSDK het profiel met de laagste bitsnelheid boven de minimale bitsnelheid. Als de aanvankelijke snelheid boven de maximumsnelheid ligt, kiest TVSDK de hoogste snelheid onder de maximumsnelheid. </p> <p>Als de aanvankelijke bitsnelheid nul of ongedefinieerd is, wordt de aanvankelijke bitsnelheid bepaald door het ABR-beleid. </p> <p><span class="codeph"> getABRInitialBitRate</span> Hiermee wordt een geheel getal geretourneerd dat het byte-per-seconde-profiel vertegenwoordigt. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col01"> Minimale bitsnelheid </td> 
-   <td colname="col2"> <p>Het laagste toegestane beetjetarief waaraan ABR kan schakelen. De omschakeling ABR negeert profielen met een beetjetarief dat lager is dan dit beetjetarief. </p> <p><span class="codeph"> </span> getABRMinBitRatereturns een geheel-getalwaarde die het beetjes-per-tweede profiel vertegenwoordigt. </p> </td> 
+   <td colname="col2"> <p>Het laagste toegestane beetjetarief waaraan ABR kan schakelen. De omschakeling ABR negeert profielen met een beetjetarief dat lager is dan dit beetjetarief. </p> <p><span class="codeph"> getABRMinBitRate</span> Hiermee wordt een geheel-getalwaarde geretourneerd die het bits-per-seconde-profiel vertegenwoordigt. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col01"> Maximale bitsnelheid </td> 
-   <td colname="col2"> <p>Het hoogste toegestane beetjetarief waaraan ABR kan schakelen. De omschakeling ABR negeert profielen met een beetjetarief hoger dan dit beetjetarief. </p> <p><span class="codeph"> </span> getABRMaxBitRatereturns een geheel-getalwaarde die het beetjes-per-tweede profiel vertegenwoordigt. </p> </td> 
+   <td colname="col2"> <p>Het hoogste toegestane beetjetarief waaraan ABR kan schakelen. De omschakeling ABR negeert profielen met een beetjetarief hoger dan dit beetjetarief. </p> <p><span class="codeph"> getABRMaxBitRate</span> Hiermee wordt een geheel-getalwaarde geretourneerd die het bits-per-seconde-profiel vertegenwoordigt. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col01"> ABR-switchbeleid </td> 
@@ -39,7 +38,7 @@ U kunt het adaptieve beetje-tarief (ABR) omschakelingsbeleid en de aanvankelijke
       <li id="li_B79C0AA2CBFB42FF98A257CEC9C400BA"><span class="codeph"> ABR_CONSERVATIVE</span>: Schakelt over naar het profiel met de volgende hogere bitsnelheid wanneer de bandbreedte 50% hoger is dan de huidige bitsnelheid. </li> 
       <li id="li_38CC3A95D8634F359D0F7C273D0108C0"><span class="codeph"> ABR_MODERATE</span>: Schakelt over naar het volgende profiel met een hogere bitsnelheid wanneer de bandbreedte 20% hoger is dan de huidige bitsnelheid. </li> 
       <li id="li_E845C035420D4B3FB2B179F448F8CA85"><span class="codeph"> ABR_AGGRESSIVE</span>: Schakelt onmiddellijk naar het hoogste beetje-tarief profiel wanneer de bandbreedte hoger is dan het huidige beetjetarief. </li> 
-     </ul> </p> <p>Als de aanvankelijke bitsnelheid nul is of niet is opgegeven, maar een beleid is opgegeven, begint het afspelen met het laagste bitsnelheidprofiel voor conservatief, het profiel dat zich het dichtst bij de mediane bitsnelheid van beschikbare profielen voor matig en het hoogste bitsnelheidprofiel voor agressief bevindt. </p> <p>Het beleid werkt in de beperkingen van de minimum en maximumbeetjetarieven, als deze tarieven worden gespecificeerd. </p> <p><span class="codeph"> </span> getABRPolicyretourneert de huidige instelling van het  <span class="codeph"> </span> ABRControlParametersenum: 
+     </ul> </p> <p>Als de aanvankelijke bitsnelheid nul is of niet is opgegeven, maar een beleid is opgegeven, begint het afspelen met het laagste bitsnelheidprofiel voor conservatief, het profiel dat zich het dichtst bij de mediane bitsnelheid van beschikbare profielen voor matig en het hoogste bitsnelheidprofiel voor agressief bevindt. </p> <p>Het beleid werkt in de beperkingen van de minimum en maximumbeetjetarieven, als deze tarieven worden gespecificeerd. </p> <p><span class="codeph"> getABRPopolicy</span> retourneert de huidige instelling van het dialoogvenster <span class="codeph"> ABRControlParameters</span> getallen: 
      <ul id="ul_bd4_5kb_cz"> 
       <li id="li_E7C118AF48994454B7B3C016913DE545"><span class="codeph"> ABR_CONSERVATIVE</span> </li> 
       <li id="li_0A90BB42786449629CE7DD3364B385EE"><span class="codeph"> ABR_MODERATE</span> </li> 
@@ -66,4 +65,4 @@ Als een stream bijvoorbeeld de volgende profielen heeft:
 
 Als u een bereik van 300000 tot 2000000 opgeeft, houdt TVSDK alleen rekening met de profielen 1, 2 en 3. Hierdoor kunnen toepassingen zich aanpassen aan verschillende netwerkvoorwaarden, zoals het schakelen van wifi naar 3G of naar verschillende apparaten, zoals een telefoon, tablet of desktopcomputer.
 
-Als u ABR-besturingsparameters wilt instellen, stelt u de parameters in op de klasse `ABRControlParameter`.
+Als u ABR-besturingsparameters wilt instellen, stelt u de parameters in op de `ABRControlParameter` klasse.

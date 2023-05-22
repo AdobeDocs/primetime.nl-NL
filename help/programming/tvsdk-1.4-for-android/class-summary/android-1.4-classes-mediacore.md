@@ -1,20 +1,19 @@
 ---
 description: U kunt de API voor primetime Player gebruiken om het gedrag van de speler aan te passen.
 title: Mediacore-klassen
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: fdbe9cd3-a5ca-4935-b9b3-8a6c04aed9ab
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '635'
 ht-degree: 0%
 
 ---
 
-
 # Mediacore-klassen {#mediacore-classes}
 
 U kunt de API voor primetime Player gebruiken om het gedrag van de speler aan te passen.
 
-Als u de volledige API-documentatie voor TVSDK wilt bekijken, gaat u naar de [Adobe Primetime API-referenties](https://help.adobe.com/en_US/primetime/api/index.html#api-Adobe_Primetime_API_References).
+Ga naar de [Adobe Primetime API-verwijzingen](https://help.adobe.com/en_US/primetime/api/index.html#api-Adobe_Primetime_API_References).
 
 Deze klassen beschrijven uw mediaspeler en de bijbehorende bronnen.
 Pakket: [com.adobe.mediacore](https://help.adobe.com/en_US/primetime/api/psdk/javadoc_1.4/com/adobe/mediacore/package-summary.html)
@@ -28,7 +27,7 @@ Pakket: [com.adobe.mediacore](https://help.adobe.com/en_US/primetime/api/psdk/ja
  </thead>
  <tbody> 
   <tr rowsep="1"> 
-   <td colname="1"><span class="codeph"><a href="https://help.adobe.com/en_US/primetime/api/psdk/javadoc_1.4/com/adobe/mediacore/ABRControlParameters.html" format="html" scope="external"> </a>  ABRControlParametersABRControlParameters</span> </td> 
+   <td colname="1"><span class="codeph"><a href="https://help.adobe.com/en_US/primetime/api/psdk/javadoc_1.4/com/adobe/mediacore/ABRControlParameters.html" format="html" scope="external"> ABRControlParameters</a>  ABRControlParameters</span> </td> 
    <td colname="2"> Klasse die alle adaptieve parameters voor bitsnelheidbeheersing inkapselt. </td> 
   </tr> 
   <tr rowsep="1"> 
@@ -49,11 +48,11 @@ Pakket: [com.adobe.mediacore](https://help.adobe.com/en_US/primetime/api/psdk/ja
   </tr> 
   <tr rowsep="1"> 
    <td colname="1"><span class="codeph"><a href="https://help.adobe.com/en_US/primetime/api/psdk/javadoc_1.4/com/adobe/mediacore/DefaultMediaPlayer.html" format="html" scope="external"> DefaultMediaPlayer</a></span> </td> 
-   <td colname="2">Standaardklasseimplementatie van <span class="codeph"> MediaPlayer</span>-interface. </td> 
+   <td colname="2">Standaardimplementatie van <span class="codeph"> MediaPlayer</span> interface. </td> 
   </tr> 
   <tr rowsep="1"> 
    <td colname="1"><span class="codeph"><a href="https://help.adobe.com/en_US/primetime/api/psdk/javadoc_1.4/com/adobe/mediacore/MediaPlayer.html" format="html" scope="external"> MediaPlayer</a> </span> </td> 
-   <td colname="2">Openbare interface voor de klasse <span class="codeph"> DefaultMediaPlayer</span>. Omvat opsommingen voor Gebeurtenis, PlayerState, en Zichtbaarheid. </td> 
+   <td colname="2">Openbare interface voor de <span class="codeph"> DefaultMediaPlayer</span> klasse. Omvat opsommingen voor Gebeurtenis, PlayerState, en Zichtbaarheid. </td> 
   </tr> 
   <tr rowsep="1"> 
    <td colname="1"><span class="codeph"><a href="https://help.adobe.com/en_US/primetime/api/psdk/javadoc_1.4/com/adobe/mediacore/MediaPlayer.AdPlaybackEventListener.html" format="html" scope="external"> MediaPlayer.AdPlaybackEventListener</a></span> </td> 

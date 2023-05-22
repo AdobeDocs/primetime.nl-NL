@@ -1,14 +1,13 @@
 ---
 description: U kunt besturingselementen inschakelen en maken voor de laatste binding van audio.
 title: Overzicht
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: be3b41c5-1c30-430c-9baa-06b6496aceb4
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '176'
 ht-degree: 0%
 
 ---
-
 
 # Overzicht {#overview}
 
@@ -22,4 +21,3 @@ U kunt verschillende workflows implementeren, afhankelijk van de gebruikersinter
 1. Wanneer de gebruiker op de knop Instellingen op de gebruikersinterface tikt, worden de audiotrackopties weergegeven.
 1. Wanneer een audiotrack is geselecteerd, wordt de track de actieve audiotrack.
 1. De eindgebruiker kan op de knop Instellingen tikken om terug te gaan naar de oorspronkelijke audiotrack.
-

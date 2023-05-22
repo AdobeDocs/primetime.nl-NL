@@ -1,26 +1,25 @@
 ---
 description: Voor live streaming en invoegen moet u mogelijk een ad-einde verlaten voordat alle advertenties in het einde worden afgespeeld.
 title: Een vroege terugkeer voor een onderbreking implementeren
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: 38386ab7-0e3b-4628-84eb-470d585eb929
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '176'
-ht-degree: 2%
+ht-degree: 0%
 
 ---
 
-
-# Een vroege return ad break {#implement-an-early-ad-break-return} implementeren
+# Een vroege terugkeer voor een onderbreking implementeren {#implement-an-early-ad-break-return}
 
 Voor live streaming en invoegen moet u mogelijk een ad-einde verlaten voordat alle advertenties in het einde worden afgespeeld.
 
 De duur van de advertentiepauze bij bepaalde sportevenementen is bijvoorbeeld mogelijk niet bekend voordat de pauze begint. TVSDK biedt een standaardduur, maar als de game wordt hervat voordat het einde van het einde van het einde is bereikt, moet het ad-einde worden verlaten. Een ander voorbeeld is een noodsignaal tijdens een pauze in een live stream.
 
-1. Abonneren op de splice out/in-advertentiemarkeringen ( `#EXT-X-CUE-OUT`, `#EXT-X-CUE-IN` en `#EXT-X-CUE`).
+1. Abonneer u op de splice out/in-advertentiemarkeringen ( `#EXT-X-CUE-OUT`, `#EXT-X-CUE-IN`, en `#EXT-X-CUE`).
 
-   Zie [Opportunity generators and content resolvers](../../../tvsdk-1.4-for-android/content-resolver/android-1.4-content-resolver-about.md) voor meer informatie over het uitsplitsen/insplitsen van advertentiemarkeringen.
-1. Gebruik een aangepaste `ContentFactory`.
-1. In `retrieveGenerators()`, gebruik `SpliceInPlacementOpportunityGenerator`.
+   Zie voor meer informatie over het uitsplitsen/insplitsen van advertentiemarkeringen [Opportuniteitsgeneratoren en contentoplosers](../../../tvsdk-1.4-for-android/content-resolver/android-1.4-content-resolver-about.md).
+1. Een aangepaste `ContentFactory`.
+1. In `retrieveGenerators()`, gebruikt u de `SpliceInPlacementOpportunityGenerator`.
 
    Bijvoorbeeld:
 
@@ -32,9 +31,9 @@ De duur van de advertentiepauze bij bepaalde sportevenementen is bijvoorbeeld mo
    }
    ```
 
-   Zie stap 1 in [Een aangepaste opportuniteitsdetector implementeren](../../../tvsdk-1.4-for-android/content-resolver/android-1.4-opp-detector-impl.md) voor meer informatie over het gebruik van een aangepaste `ContentFactory`.
+   Voor meer informatie over het gebruik van een aangepaste `ContentFactory`zie stap 1 in [Een aangepaste opportuniteitsdetector implementeren](../../../tvsdk-1.4-for-android/content-resolver/android-1.4-opp-detector-impl.md) .
 
-1. Implementeer `retrieveResolvers` op dezelfde aangepaste `ContentFactory` en neem `AuditudeResolver` en `SpliceInCustomResolver` op.
+1. Op dezelfde aangepaste `ContentFactory`uitvoeren `retrieveResolvers` en omvatten `AuditudeResolver` en `SpliceInCustomResolver`.
 
    Bijvoorbeeld:
 
@@ -44,4 +43,3 @@ De duur van de advertentiepauze bij bepaalde sportevenementen is bijvoorbeeld mo
    contentResolvers.add(new SpliceInCustomResolver()); 
    return contentResolvers;
    ```
-

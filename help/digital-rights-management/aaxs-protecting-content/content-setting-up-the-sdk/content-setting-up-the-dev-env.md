@@ -1,16 +1,15 @@
 ---
 description: Kopieer bestanden van de dvd om de Adobe® Access™ voor gebruik in te stellen. Deze bestanden bevatten JAR-bestanden met code, certificaten en klassen van derden. Vraag bovendien een certificaat aan bij Adobe Systems Incorporated. U krijgt meerdere referenties toegewezen die worden gebruikt om de integriteit van inhoud, licenties en communicatie tussen de client en de server in het pakket te beschermen.
 title: De ontwikkelomgeving instellen
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: 66310fc8-7513-4aab-81d6-1370ce216cbf
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '406'
 ht-degree: 0%
 
 ---
 
-
-# SDK {#setting-up-the-sdk} instellen
+# De SDK instellen {#setting-up-the-sdk}
 
 Kopieer bestanden van de dvd om de Adobe® Access™ voor gebruik in te stellen. Deze bestanden bevatten JAR-bestanden met code, certificaten en klassen van derden. Vraag bovendien een certificaat aan bij Adobe Systems Incorporated. U krijgt meerdere referenties toegewezen die worden gebruikt om de integriteit van inhoud, licenties en communicatie tussen de client en de server in het pakket te beschermen.
 

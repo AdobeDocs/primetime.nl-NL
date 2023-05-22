@@ -1,13 +1,13 @@
 ---
 title: MVPD Direct Integration Plan
 description: MVPD Direct Integration Plan
-source-git-commit: 326f97d058646795cab5d062fa5b980235f7da37
+exl-id: 6423cc9a-a45a-4cde-b562-4cb72c98e505
+source-git-commit: bfc3ba55c99daba561255760baf273b6538a3c6e
 workflow-type: tm+mt
 source-wordcount: '1062'
 ht-degree: 0%
 
 ---
-
 
 # MVPD kickstart-handleiding: Directe integratieplan voor MVPD {#mvpd-dir-int-plan}
 

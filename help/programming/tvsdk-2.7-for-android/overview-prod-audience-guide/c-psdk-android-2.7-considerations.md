@@ -1,16 +1,15 @@
 ---
 description: Als u TVSDK het doeltreffendst wilt gebruiken, moet u bepaalde details van de werking van de SDK in overweging nemen en bepaalde best practices volgen.
 title: Overwegingen en beste praktijken
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: df9029f7-9c23-4f6c-9f5b-4819c63610ca
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '346'
 ht-degree: 0%
 
 ---
 
-
-# Overwegingen en aanbevolen procedures{#considerations-and-best-practices}
+# Overwegingen en beste praktijken{#considerations-and-best-practices}
 
 Als u TVSDK het doeltreffendst wilt gebruiken, moet u bepaalde details van de werking van de SDK in overweging nemen en bepaalde best practices volgen.
 
@@ -44,7 +43,7 @@ Houd rekening met de volgende informatie wanneer u TVSDK gebruikt:
 
    Voor alle aan advertenties gerelateerde aanroepen wordt de standaardgebruikersagent van Android of de aangepaste gebruikersagent gebruikt als u deze instelt tijdens het instellen van metagegevens voor invoegtoepassingen.
 
-## Aanbevolen werkwijzen {#section_tvsdk_best_practices}
+## Aanbevolen procedures {#section_tvsdk_best_practices}
 
 Hier volgen de aanbevolen procedures voor TVSDK:
 
@@ -52,4 +51,4 @@ Hier volgen de aanbevolen procedures voor TVSDK:
 * Voer de meeste bewerkingen van TVSDK uit op de hoofd-thread (UI), niet op de achtergrondthreads.
 * Voor TVSDK 2.5 voor Android is het standaard lazy en resolving ingeschakeld.
 
-   Voor inhoud zonder pre-rol of middenrol, kunt u `AdvertisingMetadata.setPreroll(false)` gebruiken om inhoud te versnellen ladend.
+   Voor inhoud zonder pre- of mid-roll kunt u `AdvertisingMetadata.setPreroll(false)` om het laden van inhoud te versnellen.

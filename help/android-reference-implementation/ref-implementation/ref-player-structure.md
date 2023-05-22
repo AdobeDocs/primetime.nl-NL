@@ -1,20 +1,19 @@
 ---
 description: De eigenschapmanagers dienen als omslagen rond de bibliotheek van TVSDK.
 title: Referentie-implementatiestructuur
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: cf102ccc-2e31-4197-a321-e485f77ba754
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '441'
 ht-degree: 0%
 
 ---
 
-
 # Referentie-implementatiestructuur {#reference-implementation-structure}
 
 De eigenschapmanagers dienen als omslagen rond de bibliotheek van TVSDK.
 
-In Java zijn klassen gestructureerd in een hiërarchie. Bijvoorbeeld, zijn alle op UI betrekking hebbende code onder `com.adobe.primetime.reference.ui` en alle eigenschapmanagers onder `com.adobe.primetime.reference.manager`.
+In Java zijn klassen gestructureerd in een hiërarchie. Bijvoorbeeld alle UI-gerelateerde code onder `com.adobe.primetime.reference.ui` en alle functies zijn ondergebracht `com.adobe.primetime.reference.manager`.
 
 De implementatie van de Primetime-referentie bevat de volgende pakketten:
 
@@ -32,4 +31,4 @@ De implementatie van de Primetime-referentie bevat de volgende pakketten:
 | [com.adobe.primetime.reference.ui.player](https://help.adobe.com/en_US/primetime/api/reference_implementation/android/javadoc/com/adobe/primetime/reference/ui/player/package-summary.html) | Bevat UI-code voor de speler. |
 | [com.adobe.primetime.reference.ui.settings](https://help.adobe.com/en_US/primetime/api/reference_implementation/android/javadoc/com/adobe/primetime/reference/ui/settings/package-summary.html) | Bevat UI-code voor instellingen. |
 | [com.adobe.primetime.reference.utils](https://help.adobe.com/en_US/primetime/api/reference_implementation/android/javadoc/com/adobe/primetime/reference/utils/package-summary.html) | Bevat algemene hulpprogrammaklassen. |
-| [com.adobe.primetime.reference.utils.http](https://help.adobe.com/en_US/primetime/api/reference_implementation/android/javadoc/com/adobe/primetime/reference/utils/http/package-summary.html) | Bevat hulpprogrammaklassen `HTTP-specific`. |
+| [com.adobe.primetime.reference.utils.http](https://help.adobe.com/en_US/primetime/api/reference_implementation/android/javadoc/com/adobe/primetime/reference/utils/http/package-summary.html) | Bevat `HTTP-specific` hulpprogrammaklassen. |

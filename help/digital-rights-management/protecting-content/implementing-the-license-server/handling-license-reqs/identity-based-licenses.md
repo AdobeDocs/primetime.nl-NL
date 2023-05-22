@@ -2,14 +2,13 @@
 title: Licenties op basis van identiteit
 description: Licenties op basis van identiteit
 copied-description: true
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: 27168b44-392b-43db-89a2-39af9535dad7
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '43'
 ht-degree: 0%
 
 ---
-
 
 # Licenties op basis van identiteit{#identity-based-licenses}
 
@@ -20,4 +19,3 @@ Zie [Gebruikersverificatie](../../../protecting-content/implementing-the-license
 >[!NOTE]
 >
 >Als u een licentie voor op een identiteit gebaseerde inhoud wilt voorvertonen, moet een client worden geverifieerd.
-

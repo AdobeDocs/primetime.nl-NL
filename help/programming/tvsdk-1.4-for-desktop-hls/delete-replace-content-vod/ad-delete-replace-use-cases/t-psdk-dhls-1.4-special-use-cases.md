@@ -2,22 +2,21 @@
 title: Speciale gevallen
 description: Speciale gevallen
 copied-description: true
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: 33aad8cc-5939-4890-bc89-32d6bbf1fa4c
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '86'
 ht-degree: 0%
 
 ---
 
+# Speciale gevallen{#special-use-cases}
 
-# Speciale gebruiksgevallen{#special-use-cases}
-
-TVSDK geeft de voorkeur aan aangepaste bereikinstellingen boven standaard-advertentie-instellingen. Als bijvoorbeeld MARK-bereiken zijn gedefinieerd, worden de invoeginstellingen van de advertentie genegeerd. Als de waaiers van de VERVANGING worden bepaald, gebruikt TVSDK automatisch de `CustomRanges` signalerende wijze.
+TVSDK geeft de voorkeur aan aangepaste bereikinstellingen boven standaard-advertentie-instellingen. Als bijvoorbeeld MARK-bereiken zijn gedefinieerd, worden de invoeginstellingen van de advertentie genegeerd. Als REPLACE-bereiken zijn gedefinieerd, gebruikt TVSDK automatisch de instelling `CustomRanges` signaalmodus.
 
 1. `ReplaceRange` zonder vervangende duur
 
-   Als de vervangingsduur ontbreekt, wordt de daadwerkelijke vervangingsduur bepaald door de server. Het aantal advertenties dat in deze `AdBreak` wordt geplaatst, wordt ook bepaald door de server.
+   Als de vervangingsduur ontbreekt, wordt de daadwerkelijke vervangingsduur bepaald door de server. Het aantal advertenties dat in deze `AdBreak` wordt ook bepaald door de server.
 
    ```
    {

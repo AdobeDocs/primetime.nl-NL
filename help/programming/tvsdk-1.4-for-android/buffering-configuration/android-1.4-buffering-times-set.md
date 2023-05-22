@@ -1,32 +1,31 @@
 ---
 description: Voor een vloeiender kijkervaring wordt de videostream soms door TVSDK gebufferd. U kunt de manier configureren waarop de speler buffert.
 title: Buffertijden instellen
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: 4542d10a-b6f8-430d-8b9a-5a358d1c0e9d
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '311'
 ht-degree: 0%
 
 ---
 
-
 # Bufferen {#buffering}
 
 Voor een vloeiender kijkervaring wordt de videostream soms door TVSDK gebufferd. U kunt de manier configureren waarop de speler buffert.
 
-TVSDK definieert een bufferlengte van minimaal 30 seconden en een eerste buffertijd binnen die periode, voordat de media worden afgespeeld, van minimaal 2 seconden. Nadat `play` door de toepassing is aangeroepen, maar voordat het afspelen begint, buffert TVSDK de media tot de begintijd om een vloeiende start te geven wanneer deze daadwerkelijk wordt afgespeeld.
+TVSDK definieert een bufferlengte van minimaal 30 seconden en een eerste buffertijd binnen die periode, voordat de media worden afgespeeld, van minimaal 2 seconden. Nadat de toepassing is aangeroepen `play` Maar voordat het afspelen begint, buffert TVSDK de media tot de begintijd zodat het afspelen probleemloos begint.
 
 U kunt de buffertijden wijzigen door een nieuw bufferbeleid te definiëren en u kunt wijzigen wanneer de eerste buffering plaatsvindt met instant-on.
 
-## Buffertijden {#set-buffering-times} instellen
+## Buffertijden instellen {#set-buffering-times}
 
-`MediaPlayer` verstrekt methodes om de aanvankelijke buffertijd en playbackbuffertijd te plaatsen en te krijgen.
+De `MediaPlayer` biedt methoden voor het instellen en ophalen van de eerste buffertijd en de buffertijd voor het afspelen.
 
 >[!TIP]
 >
 >Als u de bufferbesturingsparameters niet instelt voordat u begint met afspelen, wordt de mediaspeler standaard ingesteld op 2 seconden voor de eerste buffer en op 30 seconden voor de doorlopende buffertijd.
 
-1. Stel het object `BufferControlParameters` in, waarin de parameters voor de aanvankelijke buffertijd en de tijd van de afspeelbuffer worden ingekapseld:
+1. Stel de `BufferControlParameters` object, dat de initiële parameters voor buffertijd en afspeelbuffertijd inkapselt:
 
        Deze klasse biedt twee fabrieksmethoden:
    
@@ -50,19 +49,19 @@ U kunt de buffertijden wijzigen door een nieuw bufferbeleid te definiëren en u 
    * De aanvankelijke buffertijd is minder dan nul.
    * De aanvankelijke buffertijd is groter dan de buffertijd.
 
-1. Als u de parameterwaarden voor de buffer wilt instellen, gebruikt u deze methode `MediaPlayer`:
+1. Gebruik deze optie om de bufferparameterwaarden in te stellen `MediaPlayer` methode:
 
    ```java
    void setBufferControlParameters(BufferControlParameters params)
    ```
 
-1. Als u de huidige bufferparameterwaarden wilt ophalen, gebruikt u deze `MediaPlayer`-methode:
+1. Als u de huidige bufferparameterwaarden wilt ophalen, gebruikt u deze `MediaPlayer` methode:
 
    ```java
       BufferControlParameters getBufferControlParameters()  
    ```
 
-   Als de AVE de opgegeven waarden niet kan instellen, voert de mediaspeler de status `ERROR` in met de foutcode `SET_BUFFER_PARAMETERS_ERROR`.
+   Als de AVE de opgegeven waarden niet kan instellen, voert de mediaspeler de `ERROR` status met de foutcode `SET_BUFFER_PARAMETERS_ERROR`.
 
 <!--<a id="example_B5C5004188574D8D8AB8525742767280"></a>-->
 

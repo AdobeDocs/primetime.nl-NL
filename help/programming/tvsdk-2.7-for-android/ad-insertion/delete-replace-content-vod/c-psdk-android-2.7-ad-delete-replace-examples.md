@@ -1,20 +1,19 @@
 ---
 description: Hier volgen enkele voorbeelden van het proces voor het verwijderen en vervangen van advertenties.
 title: Voorbeelden voor het verwijderen en vervangen van advertenties
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: a6fdb86e-507e-4a65-bb32-928e216c6e9a
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '50'
 ht-degree: 0%
 
 ---
 
-
 # Voorbeelden voor het verwijderen en vervangen van advertenties {#examples-to-delete-and-replace-ads}
 
 Hier volgen enkele voorbeelden van het proces voor het verwijderen en vervangen van advertenties.
 
-Hier is een voorbeeld van het gebruik van `DELETE_RANGE`:
+Hier is een voorbeeld van het gebruik van de `DELETE_RANGE`:
 
 ```java
 // Assume that the 3 timerange specs are obtained through external means,  
@@ -43,7 +42,7 @@ config.setCustomRangeMetadata(customRangeMetadata);
 mediaPlayer.replaceCurrentResource(mediaResource, config);
 ```
 
-Hier is een voorbeeld van het gebruik van `REPLACE_RANGE`:
+Hier is een voorbeeld van het gebruik van de `REPLACE_RANGE`:
 
 ```java
 // Assume that the 3 timerange specs are obtained through external means, like 
@@ -76,4 +75,3 @@ config.setCustomRangeMetadata(customRangeMetadata);
 // prepare the content for playback by calling replaceCurrentResource 
 mediaPlayer.replaceCurrentResource(mediaResource, config);
 ```
-

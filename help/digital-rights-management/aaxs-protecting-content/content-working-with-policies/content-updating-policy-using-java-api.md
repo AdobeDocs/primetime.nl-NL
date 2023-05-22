@@ -2,27 +2,26 @@
 title: Een beleid bijwerken met de Java API
 description: Een beleid bijwerken met de Java API
 copied-description: true
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: 1b03f033-0d29-46cc-ae14-d6fef96fe970
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '113'
 ht-degree: 0%
 
 ---
 
-
 # Een beleid bijwerken met de Java API {#updating-a-policy-using-the-java-api}
 
 Voer de volgende stappen uit om een beleid bij te werken met de Java API:
 
-1. Stel uw ontwikkelomgeving in en neem alle JAR-bestanden op die worden vermeld in [De ontwikkelomgeving instellen](../../aaxs-protecting-content/content-setting-up-the-sdk/content-setting-up-the-dev-env.md) in uw project.
-1. Maak een `Policy`-instantie en lees het beleid in vanuit een bestand of database.
+1. Stel uw ontwikkelomgeving in en neem alle JAR-bestanden op die in [De ontwikkelomgeving instellen](../../aaxs-protecting-content/content-setting-up-the-sdk/content-setting-up-the-dev-env.md) in uw project.
+1. Een `Policy` -instantie en in het beleid lezen vanuit een bestand of database.
 
    ```
    Policy policy = new Policy(policyBytes);
    ```
 
-1. Werk het `Policy` voorwerp door zijn eigenschappen, zoals zijn naam en gebruiksregels te plaatsen bij.
+1. Werk de `Policy` objecten door zijn eigenschappen, zoals zijn naam en gebruiksregels te plaatsen.
 
    ```java
      // Change the policy name.  
@@ -47,7 +46,7 @@ Voer de volgende stappen uit om een beleid bij te werken met de Java API:
      }
    ```
 
-1. Serialiseren van het bijgewerkte `Policy`-object en opslaan dit in een bestand of database.
+1. De bijgewerkte versie serieel maken `Policy` en sla deze op in een bestand of database.
 
    ```java
       // Serialize the policy.  
@@ -61,4 +60,4 @@ Voer de volgende stappen uit om een beleid bij te werken met de Java API:
       out.close(); 
    ```
 
-Voor de volledige bron van deze steekproefcode, zie `com.adobe.flashaccess.samples.policy.UpdatePolicy` in de folder van de &quot;steekproeven&quot;van de Hulpmiddelen van de Lijn van het Bevel van de Implementatie van de Verwijzing.
+Voor de volledige bron van deze voorbeeldcode raadpleegt u `com.adobe.flashaccess.samples.policy.UpdatePolicy` in de map &quot;samples&quot; van de opdrachtregelprogramma&#39;s van de naslagimplementatie.

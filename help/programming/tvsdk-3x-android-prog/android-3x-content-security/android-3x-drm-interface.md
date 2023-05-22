@@ -1,18 +1,17 @@
 ---
 description: Het belangrijkste client-side element van de Primetime DRM-oplossing is DRM Manager. De voorbeeldtoepassing die bij de Android-SDK wordt geleverd, bevat ook een DRMHelper-klasse die kan worden gebruikt om bepaalde DRM-bewerkingen gemakkelijker te implementeren.
 title: Overzicht van de primaire DRM-interface
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: 39e9f2e2-0945-4a89-baee-a2e558f03fd4
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '256'
 ht-degree: 0%
 
 ---
 
+# Overzicht van de primaire DRM-interface {#primetime-drm-interface-overview}
 
-# Primetime DRM-interfaceoverzicht {#primetime-drm-interface-overview}
-
-Het belangrijkste client-side element van de Primetime DRM-oplossing is DRM Manager. De voorbeeldtoepassing die bij de Android-SDK wordt geleverd, bevat ook de klasse `DRMHelper` die kan worden gebruikt om bepaalde DRM-bewerkingen gemakkelijker te implementeren.
+Het belangrijkste client-side element van de Primetime DRM-oplossing is DRM Manager. De voorbeeldtoepassing die bij de Android-SDK wordt geleverd, bevat ook een `DRMHelper` klasse die kan worden gebruikt om bepaalde DRM-bewerkingen gemakkelijker te implementeren.
 
 <!--<a id="section_4DD54E085AB345FE9BE00865E56B28DB"></a>-->
 
@@ -30,10 +29,10 @@ Hier volgen de belangrijkste API-elementen voor het werken met DRM:
 
    >[!TIP]
    >
-   >Deze API retourneert alleen een geldig `DRMManager`-object nadat `MediaPlayerEvent.DRM_METADATA` is geactiveerd. Als u `getDRMManager()` roept alvorens deze gebeurtenis brandt, zou het ONGELDIG kunnen terugkeren.
+   >Deze API retourneert een geldige `DRMManager` alleen na het `MediaPlayerEvent.DRM_METADATA` wordt afgegaan. Als u `getDRMManager()` voordat deze gebeurtenis wordt geactiveerd, wordt mogelijk NULL geretourneerd.
 
-* De hulpklasse `DRMHelper`, die nuttig is wanneer het uitvoeren van DRM werkschema&#39;s.
-* Een `DRMHelper` methode van de meta-gegevenslader, die DRM meta-gegevens laadt wanneer het in een afzonderlijke URL van de media wordt gevestigd.
+* De `DRMHelper` hulpklasse, die nuttig is bij het implementeren van DRM-workflows.
+* A `DRMHelper` methode voor het laden van metagegevens, waarmee DRM-metagegevens worden geladen wanneer deze zich in een andere URL dan het medium bevinden.
 
    ```java
    public static void loadDRMMetadata(final DRMManager drmManager,  
@@ -41,7 +40,7 @@ Hier volgen de belangrijkste API-elementen voor het werken met DRM:
       final DRMLoadMetadataListener loadMetadataListener);
    ```
 
-* Een `DRMHelper` methode om de meta-gegevens te controleren DRM en te bepalen of de authentificatie wordt vereist.
+* A `DRMHelper` methode om de DRM-metagegevens te controleren en te bepalen of verificatie vereist is.
 
    ```java
    /** 
@@ -82,4 +81,4 @@ Hier volgen de belangrijkste API-elementen voor het werken met DRM:
 
 * Gebeurtenissen die uw toepassing op de hoogte stellen van verschillende DRM-activiteiten en -status.
 
-Raadpleeg de [DRM-documentatie](https://helpx.adobe.com/primetime/user-guide.html) voor meer informatie over DRM.
+Voor meer informatie over DRM, zie [DRM-documentatie](https://helpx.adobe.com/primetime/user-guide.html).

@@ -2,18 +2,17 @@
 title: Bereiken voor tijd vervangen door een Adobe Primetime en een beslissing en
 description: Bereiken voor tijd vervangen door een Adobe Primetime en een beslissing en
 copied-description: true
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: 263274b7-4602-4be0-b0ad-040f6f0f2fae
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '52'
 ht-degree: 0%
 
 ---
 
+# Bereiken voor tijd vervangen door een Adobe Primetime en een beslissing en{#replace-time-ranges-with-an-adobe-primetime-ad-decisioning-ad}
 
-# Tijdbereiken vervangen door een Adobe Primetime en een besluit en{#replace-time-ranges-with-an-adobe-primetime-ad-decisioning-ad}
-
-Verwijder `TimeRanges` tussen `begin` en `end` in `localTime` uit de tijdlijn. Vervang het door een AdBreak van `begin` aan `begin+replaceDuration`.
+Verwijderen `TimeRanges` tussen de `begin` en `end` in `localTime` uit de tijdlijn. Vervang het door een AdBreak van `begin` tot `begin+replaceDuration`.
 
 Hiermee vervangt u bereiken door primetime- en beslissingsadvertenties.
 
@@ -70,4 +69,3 @@ Hiermee vervangt u bereiken door primetime- en beslissingsadvertenties.
     "id": "vod_003"
 }
 ```
-

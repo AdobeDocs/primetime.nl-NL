@@ -1,16 +1,15 @@
 ---
-description: 'Houd rekening met de volgende typen URL''s wanneer u uw firewallregels bepaalt '
+description: Houd rekening met de volgende typen URL's wanneer u uw firewallregels bepaalt
 title: Firewall-regels
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: 3f6f6d1a-5759-43b3-9f62-6feb02e0a5c5
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '370'
 ht-degree: 0%
 
 ---
 
-
-# Firewallregels {#firewall-rules}
+# Firewall-regels {#firewall-rules}
 
 Houd rekening met de volgende typen URL&#39;s wanneer u uw firewallregels bepaalt:
 
@@ -86,7 +85,7 @@ Externe gebruikers hebben toegang tot de volgende URL&#39;s via de buitenste fir
   </tr> 
   <tr rowsep="1" class="- topic/row "> 
    <td colname="1" class="- topic/entry "><span class="filepath"> /flashaccess/headerconversion/v1/*</span> </td> 
-   <td colname="2" class="- topic/entry "> <p class="- topic/p ">De client toestaan om FMRMS 1.x DRM-metagegevens te converteren naar Primetime DRM-metagegevens. </p> <p>Opmerking:  Deze URL moet SSL (HTTPS) gebruiken. </p> </td> 
+   <td colname="2" class="- topic/entry "> <p class="- topic/p ">De client toestaan om FMRMS 1.x DRM-metagegevens te converteren naar Primetime DRM-metagegevens. </p> <p>Opmerking: Deze URL moet SSL (HTTPS) gebruiken. </p> </td> 
   </tr> 
   <tr rowsep="0" class="- topic/row "> 
    <td colname="1" class="- topic/entry "><span class="filepath"> /edcws/services/urn:EDCLicenseService/*</span> </td> 
@@ -117,4 +116,3 @@ Hier volgt een lijst met de uitgaande URL&#39;s die u kunt gebruiken:
 * `https://crl2.adobe.com/Adobe/FlashAccessIntermediateCA.crl`
 * `https://crl3.adobe.com/AdobeSystemsIncorporatedFlashAccessRuntime/LatestCRL.crl`
 * `https://crl2.adobe.com/Adobe/FlashAccessIndividualizationCA.crl`
-

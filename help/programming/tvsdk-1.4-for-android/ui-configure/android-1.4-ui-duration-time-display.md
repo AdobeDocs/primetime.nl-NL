@@ -1,21 +1,20 @@
 ---
 description: U kunt TVSDK gebruiken om informatie op te halen over de media die u op de zoekbalk kunt weergeven.
 title: De duur, de huidige tijd en de resterende tijd van de video weergeven
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: 58288501-7d61-4cf3-ae62-d92b83c73a58
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '380'
 ht-degree: 0%
 
 ---
 
-
-# Geef de duur, de huidige tijd en de resterende tijd van de video weer{#display-the-duration-current-time-and-remaining-time-of-the-video}
+# De duur, de huidige tijd en de resterende tijd van de video weergeven{#display-the-duration-current-time-and-remaining-time-of-the-video}
 
 U kunt TVSDK gebruiken om informatie op te halen over de media die u op de zoekbalk kunt weergeven.
 
 1. Wacht tot de speler de status PREPARED heeft.
-1. Haal de huidige tijd van de afspeelkop op met de methode `MediaPlayer.getCurrentTime`.
+1. De huidige tijd van de afspeelkop ophalen met de `MediaPlayer.getCurrentTime` methode.
 
    Hiermee wordt de huidige positie van de afspeelkop op de virtuele tijdlijn in milliseconden geretourneerd. De tijd wordt berekend ten opzichte van de opgeloste stream die meerdere instanties van alternatieve inhoud kan bevatten, zoals meerdere advertenties of ad-einden die in de hoofdstream worden gespliceerd. Voor live/lineaire streams bevindt de geretourneerde tijd zich altijd in het bereik van het afspeelvenster.
 
@@ -24,13 +23,13 @@ U kunt TVSDK gebruiken om informatie op te halen over de media die u op de zoekb
    ```
 
 1. Haal het afspeelbereik van de stream op en bepaal de duur.
-   1. Gebruik de methode `mediaPlayer.getPlaybackRange` om het tijdbereik van de virtuele tijdlijn op te halen.
+   1. Gebruik de `mediaPlayer.getPlaybackRange` om het tijdbereik van de virtuele tijdlijn op te halen.
 
       ```java
       TimeRange getPlaybackRange() throws IllegalStateException;
       ```
 
-   1. Analyseer het tijdbereik met `mediacore.utils.TimeRange`.
+   1. Het tijdbereik parseren met `mediacore.utils.TimeRange`.
    1. Als u de duur wilt bepalen, trekt u het begin af aan het einde van het bereik.
 
       Dit omvat de duur van extra inhoud die in de stream (advertenties) wordt ingevoegd.
@@ -41,9 +40,9 @@ U kunt TVSDK gebruiken om informatie op te halen over de media die u op de zoekb
 
       TVSDK roept uw `onUpdated` callback om erop te wijzen dat het media punt werd verfrist en dat zijn attributen (met inbegrip van de playbackwaaier) werden bijgewerkt.
 
-1. Gebruik de methoden die beschikbaar zijn in de klasse `MediaPlayer` en `SeekBar` die algemeen beschikbaar is in de Android-SDK om de parameters voor de zoekbalk in te stellen.
+1. Gebruik de methoden die beschikbaar zijn op de `MediaPlayer` en de `SeekBar` -klasse die algemeen beschikbaar is in de Android-SDK voor het instellen van de zoekbalkparameters.
 
-   Hier ziet u bijvoorbeeld een mogelijke indeling met de elementen `SeekBar` en `TextView`.
+   Hier ziet u bijvoorbeeld een mogelijke lay-out met de `SeekBar` en twee `TextView` elementen.
 
    ```xml
    <LinearLayout 
@@ -77,7 +76,7 @@ U kunt TVSDK gebruiken om informatie op te halen over de media die u op de zoekb
 
 1. Gebruik een tijdopnemer om de huidige tijd periodiek terug te winnen en SeekBar bij te werken.
 
-   In het volgende voorbeeld wordt de hulpklasse `Clock.java` gebruikt als de timer, die beschikbaar is in PrimetimeReference van de referentiespeler. Deze klasse stelt een gebeurtenislistener in en activeert elke seconde een gebeurtenis `onTick` of een andere time-outwaarde die u kunt opgeven.
+   In het volgende voorbeeld wordt het `Clock.java` hulpklasse als tijdopnemer, die in de verwijzingsspeler PrimetimeReference beschikbaar is. Deze klasse stelt een gebeurtenislistener in en activeert een `onTick` elke seconde of een andere time-outwaarde die u kunt opgeven.
 
    ```java
    playbackClock = new Clock(PLAYBACK_CLOCK, CLOCK_TIMER); 
@@ -110,4 +109,3 @@ U kunt TVSDK gebruiken om informatie op te halen over de media die u op de zoekb
    } 
    }
    ```
-

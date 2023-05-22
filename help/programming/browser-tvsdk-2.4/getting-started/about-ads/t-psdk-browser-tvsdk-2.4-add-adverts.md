@@ -2,16 +2,15 @@
 title: Adverteren toevoegen
 description: Adverteren toevoegen
 copied-description: true
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: 72f875ea-80ae-482b-94be-41116fff3614
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '49'
 ht-degree: 0%
 
 ---
 
-
-# Advertentie {#add-advertising} toevoegen
+# Adverteren toevoegen {#add-advertising}
 
 1. De metagegevens voor advertenties definiëren.
 
@@ -22,14 +21,14 @@ ht-degree: 0%
      auditudeSettings.zoneId = "123869";
    ```
 
-1. Voeg de advertentiemetagegevens aan `MediaResource` toe.
+1. Voeg de advertentiemetagegevens toe aan de `MediaResource`.
 
    ```js
    var mediaResource =  
      new AdobePSDK.MediaResource(resourceUrl, resourceType, auditudeSettings, false);
    ```
 
-1. Voeg de montages aan config toe en voeg een `SpliceOut` parseringsfabriek toe.
+1. Voeg de montages aan config toe en voeg a toe `SpliceOut` parseringsfabriek.
 
    ```js
    var config = new AdobePSDK.MediaPlayerItemConfig(); 
@@ -37,8 +36,8 @@ ht-degree: 0%
    config.advertisingFactory = new ExtCueOutContentFactory(auditudeSettings);
    ```
 
-1. Voeg `ExtCueOutContentFactory` aan de bibliotheeksectie toe.
-1. Download `ExtCueOutContentFactory.js` van de bibliotheeksectie en plaats het in de werkende omslag.
+1. Voeg de `ExtCueOutContentFactory` naar de bibliotheeksectie.
+1. Download de `ExtCueOutContentFactory.js` in de bibliotheeksectie en plaats deze in de werkmap.
 
    ```js
    <script src= "frameworks/player/dash.min.js"></script> 

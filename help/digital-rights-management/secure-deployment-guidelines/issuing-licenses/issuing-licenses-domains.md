@@ -1,16 +1,15 @@
 ---
 description: Als u wilt voorkomen dat gebruikers back-ups maken van bestanden en deze herstellen om de deregistratie van domeinen te omzeilen, moet u een aantal benaderingen voor domeinbeheer implementeren.
 title: Domeinen beheren
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: cbf745d2-ba6e-4144-9608-23870bdfe16d
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '202'
 ht-degree: 0%
 
 ---
 
-
-# Domeinen {#managing-domains} beheren
+# Domeinen beheren {#managing-domains}
 
 Als u wilt voorkomen dat gebruikers back-ups maken van bestanden en deze herstellen om de deregistratie van domeinen te omzeilen, moet u een aantal benaderingen voor domeinbeheer implementeren.
 
@@ -21,8 +20,7 @@ Hier volgen enkele methoden voor domeinbeheer:
    Clients moeten contact opnemen met de domeinserver om domeinreferenties opnieuw te verkrijgen wanneer de referenties verlopen. Op dat ogenblik, kan de Server van het Domein verifiëren dat de machine nog wordt gemachtigd om een lid van het domein te zijn.
 * Beweeg de cursor over de domeintoetsen wanneer een gebruiker de toepassing deregiseert.
 
-   De licentieserver mag alleen licenties uitgeven voor clients die over de nieuwste domeinsleutel beschikken. Deze benadering veronderstelt dat de Server van de Vergunning met de Server van het Domein kan coördineren om te weten welke sleutel de recentste is. Wanneer u de domeinsleutels overschrijft, genereert u een nieuw sleutelpaar voor het domein. Wanneer u over de sleutels voor een domein rolt, verhogen de belangrijkste versie in `generateDomainCredential`.
+   De licentieserver mag alleen licenties uitgeven voor clients die over de nieuwste domeinsleutel beschikken. Deze benadering veronderstelt dat de Server van de Vergunning met de Server van het Domein kan coördineren om te weten welke sleutel de recentste is. Wanneer u de domeinsleutels overschrijft, genereert u een nieuw sleutelpaar voor het domein. Wanneer u de toetsen voor een domein overschrijft, verhoogt u de sleutelversie in `generateDomainCredential`.
 * Als de domeinserver hetzelfde is als de licentieserver, kan de server de terugdraaiteller gebruiken om een back-up en herstel te detecteren.
 
-   Zie [Adobe Primetime DRM-verzoeken verwerken](../../protecting-content/implementing-the-license-server/processing-drm-requests.md) voor meer informatie.
-
+   Zie voor meer informatie [Adobe Primetime DRM-aanvragen verwerken](../../protecting-content/implementing-the-license-server/processing-drm-requests.md).

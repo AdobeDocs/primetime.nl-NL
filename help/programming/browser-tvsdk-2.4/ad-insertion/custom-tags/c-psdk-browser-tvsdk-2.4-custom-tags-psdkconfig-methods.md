@@ -1,26 +1,25 @@
 ---
 description: U kunt aangepaste tagnamen in een stream configureren met de MediaPlayerItemConfig-klasse.
 title: Methoden van de klasse Config voor tags
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: 864d5c35-2b26-447b-8134-414e82096f18
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '155'
 ht-degree: 0%
 
 ---
 
-
 # Methoden van de klasse Config voor tags{#config-class-methods-for-tags}
 
 U kunt aangepaste tagnamen in een stream configureren met de MediaPlayerItemConfig-klasse.
 
-Nieuwe `MediaPlayerItemConfig` maken:
+Een nieuwe `MediaPlayerItemConfig`:
 
 ```js
 var mediaPlayerItemConfig = new AdobePSDK.MediPlayerItemConfig();
 ```
 
-Hier volgt informatie over hoe de methoden `MediaPlayerItemConfig` worden gebruikt om aangepaste tags te beheren:
+Hier is wat informatie over hoe `MediaPlayerItemConfig` methoden worden gebruikt voor het beheer van aangepaste tags:
 
 <table id="table_0AC0973497144DDAB05726E3F031ACD1"> 
  <tbody> 
@@ -40,10 +39,10 @@ Hier volgt informatie over hoe de methoden `MediaPlayerItemConfig` worden gebrui
     <code class="syntax javascript">
       var&nbsp;subscribeTags&nbsp;=&nbsp;["#EXT-X-PROGRAM-DATE-TIME"];mediaPlayerItemConfig.subscribeTags&nbsp;=&nbsp;subscribeTags;
     </code> </td> 
-   <td colname="col2"> <p>Hiermee stelt u de lijst met geabonneerde tags in die aan de toepassing worden blootgesteld. </p> <p>Uw toepassing wordt ook automatisch geabonneerd op alle markeringen die door <span class="codeph"> adTags </span> worden overgebracht. </p> </td> 
+   <td colname="col2"> <p>Hiermee stelt u de lijst met geabonneerde tags in die aan de toepassing worden blootgesteld. </p> <p>Uw toepassing wordt ook automatisch geabonneerd op alle tags die via <span class="codeph"> adTags </span>. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <b>De advertentietags aanpassen die worden gebruikt door de standaardopportuniteitsdetector  </b> </td> 
+   <td colname="col1"> <b>De advertentietags aanpassen die worden gebruikt door de standaardopportuniteitsdetector </b> </td> 
    <td colname="col2"> </td> 
   </tr> 
   <tr> 
@@ -65,9 +64,8 @@ Hier volgt informatie over hoe de methoden `MediaPlayerItemConfig` worden gebrui
 
 Houd rekening met het volgende:
 
-* De naam van de aangepaste tag moet het voorvoegsel `#` bevatten.
+* De aangepaste tagnaam moet de `#` voorvoegsel.
 
-   `#EXT-X-ASSET` is bijvoorbeeld een correcte aangepaste tagnaam, maar `EXT-X-ASSET` is onjuist.
+   Bijvoorbeeld: `#EXT-X-ASSET` is een correcte aangepaste tagnaam, maar `EXT-X-ASSET` is onjuist.
 
 * U kunt de configuratie niet wijzigen nadat de mediastream is geladen.
-

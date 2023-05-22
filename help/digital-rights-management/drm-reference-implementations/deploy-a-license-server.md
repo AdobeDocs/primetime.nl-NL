@@ -2,26 +2,25 @@
 title: De licentieserver implementeren
 description: De licentieserver implementeren
 copied-description: true
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: 1439a5b2-eccb-41b7-a4d3-0673e727fb13
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '292'
 ht-degree: 0%
 
 ---
 
-
 # De licentieserver implementeren{#deploy-the-license-server}
 
-1. Kopieer de oorlogsbestanden voor de verwijzingsimplementatie naar de map `webapps` op uw Tomcat-server.
+1. Kopieer uw oorlogsbestanden voor de implementatie van de referentie naar de `webapps` op uw Tomcat-server.
 
-   Als u de licentieserver voor de referentie-implementatie ongewijzigd wilt gebruiken, kunt u het WAR-bestand van de licentieserver ( `[DRM SDK DVD]\Reference Implementation\Server\Reference Implementation Server\\flashaccess.war`) gewoon kopiëren naar de map `webapps` op uw Tomcat-server.
+   Als u de licentieserver voor de voorbeeldimplementatie ongewijzigd wilt gebruiken, kunt u gewoon het WAR-bestand van de licentieserver kopiëren ( `[DRM SDK DVD]\Reference Implementation\Server\Reference Implementation Server\\flashaccess.war`) aan de `webapps` op uw Tomcat-server.
 
-   Als u de licentieserver voor de referentie-implementatie aanpast, kopieert u de bestanden voor de serveroorlog die u hebt gemaakt van `DRM SDK DVD]\Reference Implementation\Server\Reference Implementation Server\refimpl-build\wars` naar de map `webapps`.
+   Als u de licentieserver voor de voorbeeldimplementatie aanpast, kopieert u de bestanden voor de serveroorlog die u hebt gemaakt `DRM SDK DVD]\Reference Implementation\Server\Reference Implementation Server\refimpl-build\wars` aan de `webapps` directory.
 
    >[!NOTE]
    >
-   >Als u eerder WAR-bestanden van de licentieserver hebt geïmplementeerd, moet u mogelijk de onverpakte WAR-mappen verwijderen in de map [!DNL webapps] op de Tomcat-server:
+   >Als u eerder WAR-bestanden van de licentieserver hebt geïmplementeerd, moet u mogelijk de onverpakte WAR-mappen verwijderen in het dialoogvenster [!DNL webapps] directory op de Tomcat-server:
    >
    >* [!DNL webapps/flashaccess]
    >* [!DNL webapps/edcws]
@@ -29,13 +28,13 @@ ht-degree: 0%
 
    >[!NOTE]
    >
-   >Implementeer [!DNL edsws.war] alleen als u achterwaartse compatibiliteit met Flash Media Rights Management v1.5-inhoud (FMRMS) vereist. (Dit is een zeer zeldzame vereiste.)
+   >Niet implementeren [!DNL edsws.war] tenzij u achterwaartse compatibiliteit met Flash Media Rights Management v1.5-inhoud (FMRMS) vereist. (Dit is een zeer zeldzame vereiste.)
    >
-   >Als u liever wilt voorkomen dat Tomcat WAR-bestanden uitpakt, bewerkt u `server.xml` in de map `conf` en stelt u `unpackWARs` in op `false`.
+   >Als u liever wilt voorkomen dat Tomcat WAR-bestanden uitpakt, bewerkt u `server.xml` in de `conf` map en set `unpackWARs` tot `false`.
 
-1. Kopieer de volledige inhoud van de map `[DRM SDK DVD]\Reference Implementation\Server\Reference Implementation Server\resources\` naar de map [!DNL tomcat].
+1. Kopieer de volledige inhoud van de `[DRM SDK DVD]\Reference Implementation\Server\Reference Implementation Server\resources\` in uw [!DNL tomcat] directory.
 
-   De map [!DNL resources] bevat:
+   De [!DNL resources] map bevat:
 
    * [!DNL flashaccesstools.properties] - Het eigenschappenbestand van de licentieserver.
    * [!DNL log4j.xml] - Configuratie logboekregistratie licentieserver
@@ -43,7 +42,7 @@ ht-degree: 0%
 
    Bovendien kunt u ervoor kiezen om de Adobe-certificeringsbestanden naar deze locatie te kopiëren.
 
-1. Wijzig de instellingen van de licentieserver in [!DNL flashaccesstools.properties] om aan te geven hoe u de server instelt.
+1. Instellingen van licentieserver wijzigen in [!DNL flashaccesstools.properties] om de serverinstelling te weerspiegelen.
 
    Stel ten minste waarden in voor de volgende eigenschappen:
 
@@ -58,25 +57,25 @@ ht-degree: 0%
    * `V2KeyParameters.KeyOptions.AsymmetricKeyOptions.Certificate`
    * V2KeyParameters.LicenseServerTransportCertificate
 
-1. Bewerk het `catalina.properties`-bestand in de map Tomcat `conf`; Voeg de locatie van uw [!DNL resources]-map (of de alternatieve locatie waar u het eigenschappenbestand en andere bronbestanden hebt opgeslagen) toe aan de `shared.loader`-eigenschap.
+1. Bewerk de `catalina.properties` bestand in uw Tomcat `conf` directory; voeg de locatie van uw [!DNL resources] map (of de alternatieve locatie waar u het eigenschappenbestand en andere bronbestanden hebt opgeslagen) naar de `shared.loader` eigenschap.
 
-   Als u bijvoorbeeld `flashaccess-refimpl.properties` hebt in [!DNL [Tomcat home]\resources\]:
+   Als u bijvoorbeeld `flashaccess-refimpl.properties` bevindt zich in [!DNL [Tomcat home]\resources\]:
 
    ```
    shared.loader=..\resources
    ```
 
-   Hiermee plaatst u `flashaccess-refimpl.properties` op het klassepad.
-1. Zorg ervoor dat uw andere bronbestanden ( [!DNL log4j.xml], beleidsbestanden, certificeringen) zich in de map [!DNL resources] bevinden of zich anders in het klassepad bevinden en dat de locatie ervan is opgegeven in [!DNL flashaccess-refimpl.properties].
+   Deze plaatsen `flashaccess-refimpl.properties` op het klassepad.
+1. Zorg ervoor dat uw andere bronbestanden ( [!DNL log4j.xml], beleidsbestanden, certificeringen) bevinden zich in de [!DNL resources] directory of bevinden zich op een andere manier op het klassepad en de locatie die is opgegeven in [!DNL flashaccess-refimpl.properties].
 
-   U zult waarschijnlijk `log4j` op zuivert wijze aanvankelijk willen in werking stellen. Stel `debug` in [!DNL log4j.xml] in op true:
+   U wilt waarschijnlijk eerst uitvoeren `log4j` in de foutopsporingsmodus. In [!DNL log4j.xml], set `debug` naar waar:
 
    ```
    <log4j:configuration xmlns:log4j="https://jakarta.apache.org/log4j/"<b>debug="true"</b>>
    ...
    ```
 
-1. Start de server vanuit de Tomcat-directory [!DNL bin].
+1. Van de Tomcat [!DNL bin] Start de server.
 
    In Linux:
 

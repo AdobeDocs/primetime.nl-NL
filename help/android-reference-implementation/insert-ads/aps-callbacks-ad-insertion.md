@@ -1,16 +1,15 @@
 ---
 title: Gerelateerde API-documentatie
 description: Gerelateerde API-documentatie
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: 8c8bf189-98b1-4bcf-b7aa-049cc2a76108
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '123'
 ht-degree: 0%
 
 ---
 
-
-# Verwante API-documentatie {#related-api-documentation}
+# Gerelateerde API-documentatie {#related-api-documentation}
 
 * [Class AdsManager](https://help.adobe.com/en_US/primetime/api/reference_implementation/android/javadoc/com/adobe/primetime/reference/manager/AdsManager.html)
 * [Klasse AdsManagerOn](https://help.adobe.com/en_US/primetime/api/reference_implementation/android/javadoc/com/adobe/primetime/reference/manager/AdsManagerOn.html)

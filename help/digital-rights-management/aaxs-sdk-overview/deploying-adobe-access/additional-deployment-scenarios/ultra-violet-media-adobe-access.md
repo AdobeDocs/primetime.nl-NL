@@ -1,20 +1,19 @@
 ---
 description: Adobe Access kan worden gebruikt met andere oplossingen voor het streamen van inhoud van derden om een volledig en veilig, op DRM gebaseerd ecosysteem voor mediadistributie in te stellen.
 title: UltraViolet-media en Adobe Access
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: cca476a4-1961-46d8-aad4-bc7c996d7b02
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '488'
 ht-degree: 0%
 
 ---
 
-
-# UltraViolet media en Adobe Access {#ultraviolet-media-and-adobe-access}
+# UltraViolet-media en Adobe Access {#ultraviolet-media-and-adobe-access}
 
 Adobe Access kan worden gebruikt met andere oplossingen voor het streamen van inhoud van derden om een volledig en veilig, op DRM gebaseerd ecosysteem voor mediadistributie in te stellen.
 
-UltraViolet ( [](https://www.uvvu.com/)) is een digitaal rechtenverificatie- en cloudgebaseerd distributiesysteem dat consumenten van digitale home entertainment-inhoud in staat stelt gekochte inhoud te streamen en te downloaden via meerdere platforms en apparaten. De UltraViolet-inhoud wordt gedownload (of gestreamd) in een CFF (Common File Format) met behulp van Common Encryption (CENC).
+UltraViolet ( [](https://www.uvvu.com/)) is een digitaal systeem voor rechtenverificatie en distributie in de cloud waarmee consumenten van digitale home entertainment-inhoud aangeschafte inhoud kunnen streamen en downloaden via meerdere platforms en apparaten. De UltraViolet-inhoud wordt gedownload (of gestreamd) in een CFF (Common File Format) met behulp van Common Encryption (CENC).
 
 Het is eenvoudig om een UltraViolet-systeem samen met Adobe Access in te stellen. Het volgende gebruiksgeval geeft het gedrag van de inhoudsstroom weer:
 
@@ -34,4 +33,3 @@ Het is eenvoudig om een UltraViolet-systeem samen met Adobe Access in te stellen
 
    De inhoudslicentie is gebonden aan het domein. De clienttoepassing kan de licentie in het CFF-bestand invoegen. Inhoud kan nu worden afgespeeld in de toepassing, waarbij alle beveiliging en handhaving van de gebruiksregel worden afgehandeld door de component Adobe Access in de runtime.
 1. Andere apparaten en toepassingen die eigendom zijn van dezelfde eindgebruiker kunnen bij de coördinator worden geregistreerd. De inhoud kan nu in andere apparaten van de Toegang van Adobe worden geladen zonder enige externe transactie te vereisen.
-

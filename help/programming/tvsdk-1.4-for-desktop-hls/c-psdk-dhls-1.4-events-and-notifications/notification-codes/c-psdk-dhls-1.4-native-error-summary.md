@@ -2,14 +2,13 @@
 title: Details voor de melding NATIVE_ERROR
 description: Details voor de melding NATIVE_ERROR
 copied-description: true
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: 2b75d1ef-bfac-4e2e-a2e8-ee40b25eb8b3
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '224'
 ht-degree: 0%
 
 ---
-
 
 # Details voor de melding NATIVE_ERROR {#details-for-the-native-error-notification}
 
@@ -24,7 +23,7 @@ Wanneer TVSDK een native fout afhandelt, worden enkele of alle volgende sleutelw
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <span class="codeph"> RUNTIME_CODE  </span> </td> 
+   <td colname="col1"> <span class="codeph"> RUNTIME_CODE </span> </td> 
    <td colname="col2"> 
     <pre>
       Native foutcode van Flash Player. 
@@ -36,31 +35,31 @@ Wanneer TVSDK een native fout afhandelt, worden enkele of alle volgende sleutelw
     </ul> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <span class="codeph"> RUNTIME_CODE_MESSAGE  </span> </td> 
-   <td colname="col2"> Een tekenreeks die de naam van de fout bevat; bijvoorbeeld <span class="codeph"> AAXS_InvalidVoucher </span> of <span class="codeph"> DECODER_FAILED </span>. </td> 
+   <td colname="col1"> <span class="codeph"> RUNTIME_CODE_MESSAGE </span> </td> 
+   <td colname="col2"> Een tekenreeks die de naam van de fout bevat; bijvoorbeeld: <span class="codeph"> AXS_InvalidVoucher </span> of <span class="codeph"> DECODER_FAILED </span>. </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <span class="codeph"> RUNTIME_SUBERROR_CODE  </span> </td> 
+   <td colname="col1"> <span class="codeph"> RUNTIME_SUBERROR_CODE </span> </td> 
    <td colname="col2"> Voor DRM-fouten worden ook subfoutcodes geretourneerd. Deze codes komen overeen met de <span class="codeph"> DRMErrorEvents </span> subfoutcode die door de Flash Player wordt geretourneerd. Wanneer het melden van fouten aan Adobe, omvat deze numerieke waarde voor het oplossen van problemenhulp. </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <span class="codeph"> DRM_ERROR_STRING  </span> </td> 
+   <td colname="col1"> <span class="codeph"> DRM_ERROR_STRING </span> </td> 
    <td colname="col2"> Voor DRM, is dit uw koord van de douanefout van uw DRM serverplaatsing, als u om het even welk bepaalde. Neem dit ook op wanneer u fouten aan Adobe rapporteert. </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <span class="codeph"> BESCHRIJVING  </span> </td> 
+   <td colname="col1"> <span class="codeph"> BESCHRIJVING </span> </td> 
    <td colname="col2"> Tekenreeksbeschrijving van de fout. Meestal de URL van het medium. </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <span class="codeph"> RESOURCE_URL  </span> </td> 
+   <td colname="col1"> <span class="codeph"> RESOURCE_URL </span> </td> 
    <td colname="col2"> URL van media. </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <span class="codeph"> RESOURCE_TYPE  </span> </td> 
+   <td colname="col1"> <span class="codeph"> RESOURCE_TYPE </span> </td> 
    <td colname="col2"> Mediatype (HLS). </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <span class="codeph"> RESOURCE_ID  </span> </td> 
+   <td colname="col1"> <span class="codeph"> RESOURCE_ID </span> </td> 
    <td colname="col2"> Id van media. </td> 
   </tr> 
  </tbody> 
@@ -70,4 +69,4 @@ TVSDK ontvangt deze foutcodes en -tekenreeksen van de video-engine.
 
 >[!IMPORTANT]
 >
->Zie [Referentie DRM-foutbericht voor DRM-client](https://helpx.adobe.com/content/dam/help/en/primetime/drm/drm_client_error_message_reference.pdf) voor een volledige lijst met Adobe Primetime DRM-clientfoutcodes.
+>Voor een volledige lijst met Adobe Primetime DRM-clientfoutcodes raadpleegt u [Verwijzing naar DRM-foutbericht voor client](https://helpx.adobe.com/content/dam/help/en/primetime/drm/drm_client_error_message_reference.pdf).

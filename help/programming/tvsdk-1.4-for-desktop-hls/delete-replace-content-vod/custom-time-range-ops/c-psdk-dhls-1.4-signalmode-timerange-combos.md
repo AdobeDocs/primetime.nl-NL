@@ -2,14 +2,13 @@
 title: Handtekeningmodus en tijdbereik
 description: Handtekeningmodus en tijdbereik
 copied-description: true
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: ccaf345f-63f2-42f1-8558-65c7e0dffa89
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '89'
 ht-degree: 0%
 
 ---
-
 
 # Handtekeningmodus en tijdbereik {#signaling-mode-and-time-range}
 
@@ -24,7 +23,7 @@ ht-degree: 0%
  </thead>
  <tbody> 
   <tr> 
-   <td> <span class="codeph"> CustomRange OpportunityGenerator  </span> </td> 
+   <td> <span class="codeph"> CustomRange OpportunityGenerator </span> </td> 
    <td> 
     <code>
       (range.begin,&nbsp; 
@@ -43,7 +42,7 @@ ht-degree: 0%
     </code> </td> 
   </tr> 
   <tr> 
-   <td> <span class="codeph"> ServerMap- </span> signaalmodus </td> 
+   <td> <span class="codeph"> ServerMap </span> Signaleringsmodus </td> 
    <td> 
     <code>
       placement&nbsp;=&nbsp; 
@@ -66,7 +65,7 @@ ht-degree: 0%
    <td> N.v.t. (automatische CustomRange-signaalmodus) </td> 
   </tr> 
   <tr> 
-   <td> <span class="codeph"> ManifestCue- </span> signaalmodus </td> 
+   <td> <span class="codeph"> ManifestCue </span> Signaleringsmodus </td> 
    <td> 
     <code>
       placement&nbsp;=&nbsp; 
@@ -90,7 +89,7 @@ ht-degree: 0%
    <td> N.v.t. (automatische CustomRange-signaalmodus) </td> 
   </tr> 
   <tr> 
-   <td> <span class="codeph"> CustomRange- </span> signaalmodus </td> 
+   <td> <span class="codeph"> CustomRange </span> Signaleringsmodus </td> 
    <td> 
     <code>
       placement&nbsp;=&nbsp; 
@@ -143,7 +142,7 @@ ht-degree: 0%
  </thead>
  <tbody> 
   <tr> 
-   <td> <span class="codeph"> AdSignalingMode OpportunityGenerator  </span> </td> 
+   <td> <span class="codeph"> AdSignalingMode OpportunityGenerator </span> </td> 
    <td> 
     <code>
       (range.begin,&nbsp; 
@@ -162,7 +161,7 @@ ht-degree: 0%
     </code> </td> 
   </tr> 
   <tr> 
-   <td> <span class="codeph"> De  </span> signaalmodus van de serverkaart </td> 
+   <td> <span class="codeph"> ServerMap </span> Signaleringsmodus </td> 
    <td> Niet aanwezig (advertentie is uitgeschakeld). </td> 
    <td> 
     <code>
@@ -173,10 +172,10 @@ ht-degree: 0%
      Placement.UNKNOWN_DURATION, 
      PlacementMode.DEFAULT); 
     </code> </td> 
-   <td> N.v.t. (automatische <span class="codeph"> CustomRange </span> signaalmodus) </td> 
+   <td> N.v.t. (automatisch) <span class="codeph"> CustomRange </span> signaalmodus) </td> 
   </tr> 
   <tr> 
-   <td> <span class="codeph"> ManifestCue- </span> signaalmodus </td> 
+   <td> <span class="codeph"> ManifestCue </span> Signaleringsmodus </td> 
    <td> Niet aanwezig (advertentie is uitgeschakeld). </td> 
    <td> 
     <code>
@@ -187,13 +186,13 @@ ht-degree: 0%
      Placement.UNKNOWN_DURATION, 
      PlacementMode.DEFAULT); 
     </code> </td> 
-   <td> N.v.t. (automatische <span class="codeph"> CustomRange </span> signaalmodus) </td> 
+   <td> N.v.t. (automatisch) <span class="codeph"> CustomRange </span> signaalmodus) </td> 
   </tr> 
   <tr> 
-   <td> <span class="codeph"> CustomRange- </span> signaalmodus </td> 
+   <td> <span class="codeph"> CustomRange </span> Signaleringsmodus </td> 
    <td> Niet aanwezig (advertentie is uitgeschakeld). </td> 
    <td> Geen </td> 
-   <td> Geen (verzorgd in <span class="codeph"> CustomRangeOpportunityGenerator </span>) </td> 
+   <td> Geen (zorg ervoor dat u <span class="codeph"> CustomRangeOpportunityGenerator </span>) </td> 
   </tr> 
  </tbody> 
 </table>

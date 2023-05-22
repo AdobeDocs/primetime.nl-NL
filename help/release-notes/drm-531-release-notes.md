@@ -4,14 +4,13 @@ description: In de Opmerkingen bij de release DRM 5.3.1 worden de nieuwe functie
 contentOwner: dekalra
 topic-tags: release-notes
 products: SG_PRIMETIME
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: e4e0a933-cfc6-4713-ae13-5df11cfc1aad
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '527'
 ht-degree: 0%
 
 ---
-
 
 # Opmerkingen bij de release DRM 5.3.1 {#drm-release-notes}
 
@@ -19,26 +18,26 @@ In de Opmerkingen bij de release DRM 5.3.1 worden de nieuwe functies en de beken
 
 ## Nieuwe functies in versie 5.3 {#new-features}
 
-* **Beveiligd stoppen -** U kunt opgeven of het afspelen wordt gestopt of voortgezet aan het einde van een afspeelvenster.
-* **RBOP (Resolution Based Output Protection) -** U kunt de uitvoerbeperkingen opgeven op basis van pixelresoluties.
-* **CDM Gating -** Om HTML5 te ondersteunen heeft Adobe de Reference Implementation-licentieserver bijgewerkt die is opgenomen in de Adobe Primetime DRM (voorheen Adobe Access DRM) Java SDK om alle DRM-protocolberichten te kunnen gebruiken op één URL-eindpunt. Deze consolidatie van HTTP URL-methoden is nodig om te voldoen aan de HTML5 EME-specificatie (Encrypted Media Extension) die op zijn beurt moet worden geïmplementeerd door DRM-leveranciers van CDM (Content Decryption Module). Eerder waren dit de enige URL-eindpunten die werden weergegeven door de licentieserver voor de implementatie van verwijzingen:
+* **Beveiligde stop -** U kunt opgeven of het afspelen wordt gestopt of voortgezet aan het einde van een afspeelvenster.
+* **Op resolutie gebaseerde uitvoerbeveiliging (RBOP) -** U kunt de uitvoerbeperkingen opgeven op basis van pixelresoluties.
+* **CDM-classificatie -** Om HTML5 te steunen, heeft Adobe de de vergunningsserver van de Implementatie van de Verwijzing bijgewerkt inbegrepen met Adobe Primetime DRM (vroeger Adobe Toegang DRM) SDK van Java SDK om alle DRM protocolberichten op één enkel eindpunt te kunnen verbruiken URL. Deze consolidatie van HTTP URL-methoden is nodig om te voldoen aan de HTML5 EME (Encrypted Media Extension)-specificatie die op zijn beurt moet worden geïmplementeerd door DRM-leveranciers van CDM (Content Decryption Module). Eerder waren dit de enige URL-eindpunten die werden weergegeven door de licentieserver voor de implementatie van verwijzingen:
 
    * /flashaccess/i15n/v3 (Individualisatie)
    * /flashaccess/license/v5 (Licentieverzoek)
    * /flashaccess/licenseRet/v5 (Return licentie)
    * /flashaccess/getServerVersion/v5 (Serverversie ophalen)
 
-Nu, kunnen alle verzoeken (afkomstig van HTML5 CDM) aan één enkel eindpunt worden gericht: /req
+Nu, kunnen alle verzoeken (voortkomend uit een HTML5 CDM) aan één enkel eindpunt worden gericht: /req
 
 Deze wijziging is achterwaarts compatibel met niet-CDM-platforms, zoals Flash Player, Android en iOS.
 
-* **RBOP downscaling -** Specifiek voor de HTML5-ruimte, bevat RBOP automatische downscaling. Als een bitsnelheid hoger is dan de toegestane bitsnelheid die in het DRM-beleid is opgegeven, wordt de inhoud verkleind tot de maximaal toegestane resolutie. Als bijvoorbeeld een 1080p-stream wordt gestreamd naar een client die de inhoud weergeeft op een monitor die niet HDCP-compatibel is, kan het DRM-beleid aangeven dat de maximale resolutie 720p moet zijn. Primetime DRM decodeert de 1080p-stream en verkleint deze vervolgens naar 720p voordat deze op het scherm wordt weergegeven. Als de browser die de video afspeelt, vervolgens naar een monitor wordt gesleept die HDCP ondersteunt, wordt met Primetime DRM gestopt met het downscalen van de inhoud en kan deze op 1080 worden afgespeeld.
+* **RBOP downscaling -** Specifiek voor de HTML5 ruimte, bevat RBOP automatisch het schrapen vermogen, waar als een bitsnelheid die de toelaatbare bitsnelheid overschrijdt die in het beleid DRM wordt gespecificeerd, de inhoud aan de maximum toelaatbare resolutie zal worden gedownschaald. Als bijvoorbeeld een 1080p-stream wordt gestreamd naar een client die de inhoud weergeeft op een monitor die niet HDCP-compatibel is, kan het DRM-beleid aangeven dat de maximale resolutie 720p moet zijn. Primetime DRM decodeert de 1080p-stream en verkleint deze vervolgens naar 720p voordat deze op het scherm wordt weergegeven. Als de browser die de video afspeelt, vervolgens naar een monitor wordt gesleept die HDCP ondersteunt, wordt met Primetime DRM gestopt met het downscalen van de inhoud en kan deze op 1080 worden afgespeeld.
 
 ## Bekende problemen in versie 5.3 {#known-issues}
 
-* `Hasher.bat (flashaccess-hasher.jar)` output logboekberichten aan  `flashaccess-global.log.`U moet ervoor zorgen dat het  `flashaccess-global.log` dossier in de zelfde folder met Hasher.bat is.
+* `Hasher.bat (flashaccess-hasher.jar)` output logboekberichten aan `flashaccess-global.log.`U moet ervoor zorgen dat de `flashaccess-global.log` bestand bevindt zich in dezelfde map met Hasher.bat.
 
-* De output van sommige `toJSON()`vraag keert `Strings` terug die niet volledig JSON volgzaam of volledig volgzaam op een stand-alone manier (d.w.z., zonder samenstelling van structuren JSON) zijn.
+* De uitvoer van sommige van de `toJSON()`call return `Strings` die niet volledig JSON-compatibel zijn of op zelfstandige wijze volledig voldoen (d.w.z. zonder samenstelling van JSON-structuren).
 
 * Xbox key-server accepteert belangrijke aanvragen met een versiewaarde die niet gelijk is aan 1.
 
@@ -55,4 +54,4 @@ Verschillende klassen implementeren een toJSON()-methode die een JSON-compatibel
 
 ## Nuttige bronnen {#helpful-resources}
 
-* Zie de volledige Help-documentatie op de pagina [Adobe Primetime Learn &amp; Support](https://helpx.adobe.com/support/primetime.html).
+* Zie de volledige Help-documentatie op [Adobe Primetime - Meer informatie en ondersteuning](https://helpx.adobe.com/support/primetime.html) pagina.

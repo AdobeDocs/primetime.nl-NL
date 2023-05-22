@@ -1,20 +1,19 @@
 ---
 description: Met de Audio Codec 3 (AC-3, ook bekend als Dolby Digital®) 5.1-indeling kunnen inhoudsproviders de grootte van multikanaalsaudiobestanden comprimeren zonder dat dit de geluidskwaliteit nadelig beïnvloedt. AC-3 is een formaat 5.1, zo betekent het dat het vijf volledig-bandbreedtekanalen voor een rijkere gebruikerservaring verstrekt.
 title: AC-3 5.1-indeling
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: 16647d69-9cb4-4bb8-8ad9-cac8811ea66d
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '397'
 ht-degree: 0%
 
 ---
 
-
 # AC-3 5.1-indeling {#ac-format}
 
 Met de Audio Codec 3 (AC-3, ook bekend als Dolby Digital®) 5.1-indeling kunnen inhoudsproviders de grootte van multikanaalsaudiobestanden comprimeren zonder dat dit de geluidskwaliteit nadelig beïnvloedt. AC-3 is een formaat 5.1, zo betekent het dat het vijf volledig-bandbreedtekanalen voor een rijkere gebruikerservaring verstrekt.
 
-Zie [Dolby Digital 5.1](https://www.dolby.com/us/en/technologies/dolby-digital.html) voor meer informatie.
+Zie voor meer informatie [Dolby Digital 5.1](https://www.dolby.com/us/en/technologies/dolby-digital.html).
 
 TVSDK ondersteunt de volgende AC-3 5.1-functies:
 
@@ -54,7 +53,7 @@ Hier is het typische werkschema dat voorkomt wanneer TVSDK manifest met AC-3 en 
 >
 >De toepassing kan geen informatie ophalen over genegeerde profielen.
 
-## De uitvoermodus {#section_D2AFBF33D3904AC2A7C653A60C3A0CD3} bepalen
+## De uitvoermodus bepalen {#section_D2AFBF33D3904AC2A7C653A60C3A0CD3}
 
 Als een Android-apparaat tijdens de verwerking van AC-3-media is aangesloten op het luidsprekersysteem, is de beslissing om inhoud af te spelen in de surround-modus of de stereomodus afhankelijk van de configuratie van het apparaat.
 
@@ -62,4 +61,3 @@ Als een Android-apparaat tijdens de verwerking van AC-3-media is aangesloten op 
 |---|---|---|
 | Apparaatconfiguratie Dolby ingeschakeld (of automatisch) | Apparaatconfiguratie Dolby ingeschakeld (of automatisch) | Stereomodus |
 | Apparaatconfiguratie Dolby uit | Stereomodus | Stereomodus |
-

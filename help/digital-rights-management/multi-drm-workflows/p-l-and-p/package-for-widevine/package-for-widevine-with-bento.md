@@ -1,14 +1,13 @@
 ---
 description: We gebruiken zowel de Bento4-pakketsoftware als de Adobe offline-pakketsoftware om gecodeerde DASH-inhoud te ontwerpen. Bento4 neemt als invoer niet-gecodeerde MP4-inhoud.
 title: Verpak uw inhoud met Bento4
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: c873eaf6-c738-4f95-a900-a8aecb03754d
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '264'
 ht-degree: 0%
 
 ---
-
 
 # Inhoud verpakken voor Windows en PlayReady {#package-for-widevine}
 
@@ -63,13 +62,13 @@ In het onderstaande voorbeeld worden PlayReady- en Windows-schema&#39;s gecombin
 
 waar
 
-De waarde voor de markering `--encryption-key` is in de vorm `<base16 encoded key id>:<base16 encoded encryption key>`.
+De waarde voor de `--encryption-key` markering bevindt zich in het formulier `<base16 encoded key id>:<base16 encoded encryption key>`.
 
-De `--widevine-header=provider:intertrust#content_id:2a` vlag vertelt de pakketmanager om de doos pssh in manifest op te nemen, die TVSDK momenteel voor playback vereist.
+De `--widevine-header=provider:intertrust#content_id:2a` Deze markering geeft aan dat de pakketsoftware in het manifest moet worden opgenomen. TVSDK is momenteel vereist voor afspelen.
 
-De waarde voor `-playready-header` is voor de verwerving van een PlayReady-licentie.
+De waarde voor `-playready-header` is voor PlayReady-licentieverwerving.
 
-## Verpak uw inhoud met Adobe Offline Packager {#package-your-content-with-adobe-offline-packager}
+## Inhoud verpakken met Adobe Offline Packager {#package-your-content-with-adobe-offline-packager}
 
 Adobe Offline Packager gebruikt als invoer van niet-gecodeerde MP4-inhoud.
 
@@ -89,7 +88,7 @@ http://pr.test.expressplay.com/playready/RightsManager.asmx
 -content_id c595f214d84dc7ecf31a8ebf1b7ddda5
 ```
 
-In dit specifieke geval voegt de offlineverpakker zowel Widevine-inhoudsbeveiliging als PlayReady-inhoudsbeveiligingsinitialisatiegegevens toe aan de DASH-uitvoerinhoud. De waarde van `-key_file_path` is voor een base64-gecodeerde sleutel. De waarde van `-playready_LA_URL` is voor de verwerving van een PlayReady-licentie.
+In dit specifieke geval voegt de offlineverpakker zowel Widevine-inhoudsbeveiliging als PlayReady-inhoudsbeveiligingsinitialisatiegegevens toe aan de DASH-uitvoerinhoud. De waarde van `-key_file_path` is voor een base64-gecodeerde sleutel. De waarde van `-playready_LA_URL` is voor PlayReady-licentieverwerving.
 
 Het argument conf_path verwijst naar het configuratiebestand dat het volgende zou bevatten:
 

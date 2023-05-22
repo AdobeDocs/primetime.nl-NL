@@ -1,14 +1,13 @@
 ---
 description: Sommige advertenties van derden (of creatieve objecten) kunnen niet in de HLS-inhoudsstroom (HTTP Live Streaming) worden geplaatst omdat hun video-indeling niet compatibel is met HLS. Primetime en invoeging en TVSDK kunnen desgewenst proberen incompatibele advertenties om te zetten in compatibele M3U8-video's.
 title: Niet-compatibele advertenties opnieuw verpakken met de Adobe Creative Repackaging Service
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: 6766bdf7-bffb-4dc1-bc8d-148a7f713f5f
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '467'
 ht-degree: 0%
 
 ---
-
 
 # Niet-compatibele advertenties opnieuw verpakken met de Adobe Creative Repackaging Service{#repackage-incompatible-ads-using-adobe-creative-repackaging-service}
 
@@ -20,7 +19,7 @@ Wanneer TVSDK voor het eerst een niet-compatibele advertentie tegenkomt, negeert
 
 Neem contact op met uw Adobe als u deze optionele functie wilt inschakelen.
 
-Zie [Creative Packaging Service (CRS)](https://helpx.adobe.com/content/dam/help/en/primetime/guides/crs.pdf) voor meer informatie over CRS.
+Voor meer informatie over CRS, zie [Creative Packaging Service (CRS)](https://helpx.adobe.com/content/dam/help/en/primetime/guides/crs.pdf).
 
 ## Meerdere CDN-ondersteuning voor CRS en levering {#section_900FDDA5454143718F1EB4C9732C8E1C}
 
@@ -37,13 +36,13 @@ Hier volgen de API-toevoegingen in TVSDK:
 
 * `PTURLTransformer` Een protocol dat de methodes beschrijft die worden vereist om CRS en URLs om te zetten die door TVSDK worden gevraagd. De toepassingen kunnen dit protocol uitvoeren en implementaties voor de vereiste methodes verstrekken.
 
-* `PTDefaultURLTransformer` De standaardobformatie URL die in TVSDK wordt gecreeerd en die het  `PTURLTransformer` protocol uitvoert. Toepassingen kunnen deze klasse overschrijven of een post-URL-transformatiehandler toevoegen. Deze handler is nuttig wanneer de toepassing wijzigingen in het URL-verzoek wil aanbrengen nadat de standaardtransformatie is toegepast.
+* `PTDefaultURLTransformer` De standaardoperator voor URL-transformatie die in TVSDK is gemaakt en die het `PTURLTransformer` protocol. Toepassingen kunnen deze klasse overschrijven of een post-URL-transformatiehandler toevoegen. Deze handler is nuttig wanneer de toepassing wijzigingen in het URL-verzoek wil aanbrengen nadat de standaardtransformatie is toegepast.
 
-* `PTNetworkConfiguration setURLTransformer:defaultTransformer` Een settermethode die op de  `PTNetworkConfiguration` meta-gegevensinstantie wordt verstrekt om de  `PTURLTransformer` implementatie te plaatsen.
+* `PTNetworkConfiguration setURLTransformer:defaultTransformer` Een settermethode die op de `PTNetworkConfiguration` instantie van metagegevens die moet worden ingesteld `PTURLTransformer` uitvoering.
 
 >[!IMPORTANT]
 >
->Uw app-implementaties moeten de opsomming `PTURLTransformerInputType` controleren en alleen URL&#39;s van het type `PTURLTransformerInputTypeCRSCreative` voor CRS transformeren.
+>Uw app-implementaties moeten controleren op de `PTURLTransformerInputType` opsomming en alleen transformatie-URL&#39;s van het type `PTURLTransformerInputTypeCRSCreative` voor CRS.
 
 In het volgende codevoorbeeld ziet u hoe uw toepassing de standaardhostcomponent in een andere tekenreeks kan wijzigen (bijvoorbeeld `cdn.mycrsdomain.com`):
 
@@ -65,4 +64,3 @@ PTDefaultURLTransformer *defaultTransformer = [[[PTDefaultURLTransformer alloc] 
 // metadata is the PTMetadata instance set on a PTMediaPlayerItem instance. 
 [metadata setMetadata:[self getNetworkConfiguration] forKey:PTNetworkConfigurationMetadataKey];
 ```
-

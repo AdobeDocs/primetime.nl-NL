@@ -1,18 +1,17 @@
 ---
-description: Adobe biedt een Cloud DRM-service aan Adobe Primetime DRM-klanten die hun eigen Primetime DRM-licentieserver niet willen ontwikkelen en onderhouden. Door deze service te gebruiken, kunnen klanten de operationele en ontwikkelingscomplexiteit van DRM-licenties verminderen. Met Primetime Cloud DRM kunt u DRM-licenties verlenen voor alle apparaten die een videotoepassing kunnen uitvoeren die geschikt is voor TVSDK in de Primetime-browser, zoals iOS, Android, Desktops en Xbox360. Deze DRM-service wordt gehost en onderhouden door Adobe, met 24/7 uptime.
+description: Adobe biedt een Cloud DRM-service aan Adobe Primetime DRM-klanten die hun eigen Primetime DRM-licentieserver niet willen ontwikkelen en onderhouden. Door deze service te gebruiken, kunnen klanten de operationele en ontwikkelingscomplexiteit van DRM-licenties verminderen. Met Primetime Cloud DRM kunt u DRM-licenties verlenen voor alle apparaten die een videotoepassing kunnen uitvoeren die geschikt is voor TVSDK in de primaire browser, zoals iOS, Android, Desktops en Xbox360. Deze DRM-service wordt gehost en onderhouden door Adobe, met 24/7 uptime.
 title: Achtergrond
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: bb5ad080-5b1d-43a6-8d0e-9b5735c82d96
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '364'
 ht-degree: 0%
 
 ---
 
-
 # Achtergrond {#background}
 
-Adobe biedt een Cloud DRM-service aan Adobe Primetime DRM-klanten die hun eigen Primetime DRM-licentieserver niet willen ontwikkelen en onderhouden. Door deze service te gebruiken, kunnen klanten de operationele en ontwikkelingscomplexiteit van DRM-licenties verminderen. Met Primetime Cloud DRM kunt u DRM-licenties verlenen voor alle apparaten die een videotoepassing kunnen uitvoeren die geschikt is voor TVSDK in de Primetime-browser, zoals iOS, Android, Desktops en Xbox360. Deze DRM-service wordt gehost en onderhouden door Adobe, met 24/7 uptime.
+Adobe biedt een Cloud DRM-service aan Adobe Primetime DRM-klanten die hun eigen Primetime DRM-licentieserver niet willen ontwikkelen en onderhouden. Door deze service te gebruiken, kunnen klanten de operationele en ontwikkelingscomplexiteit van DRM-licenties verminderen. Met Primetime Cloud DRM kunt u DRM-licenties verlenen voor alle apparaten die een videotoepassing kunnen uitvoeren die geschikt is voor TVSDK in de primaire browser, zoals iOS, Android, Desktops en Xbox360. Deze DRM-service wordt gehost en onderhouden door Adobe, met 24/7 uptime.
 
 >[!NOTE]
 >
@@ -20,21 +19,20 @@ Adobe biedt een Cloud DRM-service aan Adobe Primetime DRM-klanten die hun eigen 
 
 ## Wat is inbegrepen bij Primetime Cloud DRM {#section_788D0DD5F6DB41678FD87CFBD21B25FD}
 
-* Aangepaste verificatie-/machtigingsmodule en instructies voor het inschakelen van aangepaste verificatie voor uw inhoud. Raadpleeg de map [!DNL Custom Authentication Entitlement] voor meer documentatie.
+* Aangepaste verificatie-/machtigingsmodule en instructies voor het inschakelen van aangepaste verificatie voor uw inhoud. Raadpleeg voor meer documentatie de [!DNL Custom Authentication Entitlement] directory.
 * Cloud DRM-specifiek licentieservercertificaat ( [!DNL .pem/.cer/.der])
 
-* Cloud DRM-specific License Server Transport Certificate ( [!DNL .pem/.cer/.der])
+* Cloud DRM-specifiek Vervoerscertificaat voor licentieserver ( [!DNL .pem/.cer/.der])
 
 * Primetime Java Offline Packager
 * Voorbeeld-DRM-beleid voor verpakken
 
-   * **policy_24hr**  - het geheime voorgeheugen van vergunningen op schijf voor 24 uur. Na 24 uur moet een nieuwe licentie worden aangeschaft om de inhoud te kunnen bekijken. Alle andere beleidsregels in deze kit hebben ook een licentiecache van 24 uur.
-   * **policy_ios_remotekeyserver** - Op iOS-apparaten wordt de DRM-licentie aangeschaft via Cloud DRM. Daarnaast zal de client alle AES-decoderingssleutels van Cloud DRM aanschaffen. Afspelen is niet toegestaan op iOS-apparaten met een handicap.
+   * **policy_24hr** - Licenties zijn 24 uur lang in cache opgeslagen. Na 24 uur moet een nieuwe licentie worden aangeschaft om de inhoud te kunnen bekijken. Alle andere beleidsregels in deze kit hebben ook een licentiecache van 24 uur.
+   * **policy_ios_remotekeyserver** - Op iOS-apparaten wordt de DRM-licentie aangeschaft via Cloud DRM. Daarnaast zal de client alle AES-decoderingssleutels van Cloud DRM aanschaffen. Afspelen is niet toegestaan op iOS-apparaten die op de gevangenis zijn afgebroken.
 
-   * **policy_ios_localkeyserver** - Op iOS-apparaten wordt de DRM-licentie aangeschaft via Cloud DRM. Bovendien zal de client alle HLS AES-decoderingssleutels aanschaffen bij een lokale HTTP-server in plaats van Cloud DRM. Afspelen is niet toegestaan op iOS-apparaten met een handicap.
+   * **policy_ios_localkeyserver** - Op iOS-apparaten wordt de DRM-licentie aangeschaft via Cloud DRM. Bovendien zal de client alle HLS AES-decoderingssleutels aanschaffen bij een lokale HTTP-server in plaats van Cloud DRM. Afspelen is niet toegestaan op iOS-apparaten die op de gevangenis zijn afgebroken.
 
-   * **policy_adobePass** - De client moet eerst worden geverifieerd met (voorheen Adobe Pass genoemd) anders wordt een licentie geweigerd.
+   * **policy_adobePass** - De client moet eerst worden geverifieerd met (voorheen Adobe Pass genoemd), anders wordt een licentie geweigerd.
 
 * Het hulpmiddel van de Manager van het Beleid van Adobe om extra beleid te creëren DRM
 * Voorbeeldvideo-inhoud voor verpakking
-

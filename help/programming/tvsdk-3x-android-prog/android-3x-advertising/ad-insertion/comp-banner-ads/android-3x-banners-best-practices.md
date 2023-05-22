@@ -2,14 +2,13 @@
 title: Aanbevolen werkwijzen voor banneradvertenties
 description: Aanbevolen werkwijzen voor banneradvertenties
 copied-description: true
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: e7d15916-9059-4993-a588-baf7d7ddc534
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '158'
 ht-degree: 0%
 
 ---
-
 
 # Aanbevolen werkwijzen voor banneradvertenties {#best-practices-for-companion-banner-ads}
 

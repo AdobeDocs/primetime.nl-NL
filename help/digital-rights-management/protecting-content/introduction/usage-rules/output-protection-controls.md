@@ -2,16 +2,15 @@
 title: Besturingselementen voor uitvoerbeveiliging
 description: Besturingselementen voor uitvoerbeveiliging
 copied-description: true
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: eedf3885-8e30-4328-ab2c-cf4c981846b3
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '652'
 ht-degree: 0%
 
 ---
 
-
-# Besturingselementen voor uitvoerbescherming{#output-protection-controls}
+# Besturingselementen voor uitvoerbeveiliging{#output-protection-controls}
 
 De uitvoerbeveiliging bepaalt de parameter of de uitvoer naar externe renderapparaten is beveiligd. U kunt onafhankelijk beperkingen voor analoge en digitale uitvoer opgeven.
 
@@ -25,13 +24,13 @@ De volgende opties/niveaus van handhaving zijn beschikbaar:
 
 | Option | Ondersteund in analoge apparaten | Ondersteund in digitale apparaten |
 |---|---|---|
-| **Vereist** : de bescherming van analoge kopieerbeveiliging (ACP) of het systeem van het beheer van de productie van kopieën - analoge (CGMS-A)-uitvoer moet zijn ingeschakeld om de inhoud op een extern apparaat af te spelen. Primetime DRM-clients moeten uitvoerbeveiliging met ACS of CGMS-A inschakelen. Op apparaten die beide ondersteunen, proberen de Primetime DRM 3.0-clients beide in te schakelen. U moet echter slechts één speler inschakelen om de inhoud af te spelen. | JA | JA |
-| **ACS vereist**  — ACS-uitvoerbescherming is vereist. Afspelen is niet toegestaan op CGMS-A. Primetime DRM 2.0-clients bieden geen ondersteuning voor deze optie. Als deze optie is ingesteld, gedraagt een Primetime DRM 2.0-client zich alsof de optie &quot;Geen afspelen&quot; is opgegeven. | JA | - |
-| **Gebruik indien beschikbaar**  — probeer ACS- en CGMS-A-uitvoerbeveiliging in te schakelen als deze beschikbaar is en sta afspelen toe als deze niet beschikbaar is. Primetime DRM 3.0-clients proberen, indien mogelijk, zowel ACS als CGMS-A in te schakelen. Primetime DRM 2.0-clients proberen alleen ACS of CGMS-A in te schakelen. De Primetime DRM-client probeert bijvoorbeeld ACS of CGMS-A in te schakelen. Als de poging slaagt, kan de andere optie niet worden toegelaten. Als de poging mislukt, wordt een tweede poging gedaan om de andere optie in te schakelen. Zelfs als beide pogingen mislukken, wordt de inhoud toch afgespeeld. | JA | JA |
-| **Gebruik ACP indien beschikbaar**  — Poging om ACS-uitvoerbescherming in te schakelen indien beschikbaar, maar sta afspelen toe als deze niet beschikbaar is. De bescherming is niet beschikbaar op CGMS-A. Primetime DRM 2.0-clients bieden geen ondersteuning voor deze optie. Als deze optie is ingesteld, gedraagt een Primetime DRM 2.0-client zich alsof de optie &quot;Geen beveiliging&quot; is opgegeven. | JA | - |
+| **Vereist** — Analoge kopieerbeveiliging (ACP) of Copy Generation Management System - Analog (CGMS-A) moet uitvoerbeveiliging zijn ingeschakeld om inhoud op een extern apparaat af te spelen. Primetime DRM-clients moeten uitvoerbeveiliging met ACS of CGMS-A inschakelen. Op apparaten die beide ondersteunen, proberen de Primetime DRM 3.0-clients beide in te schakelen. U moet echter slechts één speler inschakelen om de inhoud af te spelen. | JA | JA |
+| **ACS vereist** — ACS-outputbescherming is vereist. Afspelen is niet toegestaan op CGMS-A. Primetime DRM 2.0-clients bieden geen ondersteuning voor deze optie. Als deze optie is ingesteld, gedraagt een Primetime DRM 2.0-client zich alsof de optie &quot;Geen afspelen&quot; is opgegeven. | JA | - |
+| **Gebruik indien beschikbaar** — Poging om ACS- en CGMS-A-uitvoerbescherming in te schakelen, indien beschikbaar, en afspelen toe te staan als deze niet beschikbaar is. Primetime DRM 3.0-clients proberen, indien mogelijk, zowel ACS als CGMS-A in te schakelen. Primetime DRM 2.0-clients proberen alleen ACS of CGMS-A in te schakelen. De Primetime DRM-client probeert bijvoorbeeld ACS of CGMS-A in te schakelen. Als de poging slaagt, kan de andere optie niet worden toegelaten. Als de poging mislukt, wordt een tweede poging gedaan om de andere optie in te schakelen. Zelfs als beide pogingen mislukken, wordt de inhoud toch afgespeeld. | JA | JA |
+| **ACS gebruiken indien beschikbaar** — Poging om ACS-uitvoerbescherming in te schakelen indien beschikbaar, maar afspelen toestaan als deze niet beschikbaar is. De bescherming is niet beschikbaar op CGMS-A. Primetime DRM 2.0-clients bieden geen ondersteuning voor deze optie. Als deze optie is ingesteld, gedraagt een Primetime DRM 2.0-client zich alsof de optie &quot;Geen beveiliging&quot; is opgegeven. | JA | - |
 | **Gebruik CGMS-A als dit beschikbaar is **— probeer CGMS-A-uitvoerbeveiliging in te schakelen als deze beschikbaar is, maar sta afspelen toe als deze niet beschikbaar is. De bescherming is niet beschikbaar op ACS. Primetime DRM 2.0-clients bieden geen ondersteuning voor deze optie. Als deze optie is ingesteld, gedraagt een Primetime DRM 2.0-client zich alsof de optie &quot;Geen beveiliging&quot; is opgegeven. | JA | - |
-| **Geen bescherming** — Er wordt geen uitvoerbescherming afgedwongen voor analoge en digitale uitvoer. | JA | JA |
-| **Geen afspelen**  - Afspelen op een extern apparaat niet toestaan voor analoge en digitale uitvoer. | JA | JA |
+| **Geen bescherming** — Voor analoge en digitale uitvoer wordt geen uitvoerbescherming ingeschakeld. | JA | JA |
+| **Geen afspelen** — Afspelen naar een extern apparaat niet toestaan voor analoge en digitale uitvoer. | JA | JA |
 
 >[!NOTE]
 >
@@ -41,4 +40,4 @@ Voorbeeld van gebruik: Sommige inhoud dwingt uitvoerbeveiligingselementen af en 
 
 Als &quot;Vereist&quot; is opgegeven en in Linux wordt geprobeerd de inhoud af te spelen, wordt de inhoud op geen enkel apparaat afgespeeld, omdat er geen onderscheid kan worden gemaakt tussen interne en externe apparaten.
 
-Als u &quot;Gebruik indien beschikbaar&quot; opgeeft, wordt de uitvoerbeveiliging waar mogelijk ingeschakeld. Op Windows-systemen die het Certified Output Protection Protocol (COPP) ondersteunen, wordt de inhoud met uitvoerbeveiliging doorgegeven aan een extern scherm. Dit voorbeeld wordt ook wel *`selectable output control`* genoemd.
+Als u &quot;Gebruik indien beschikbaar&quot; opgeeft, wordt de uitvoerbeveiliging waar mogelijk ingeschakeld. Op Windows-systemen die het Certified Output Protection Protocol (COPP) ondersteunen, wordt de inhoud met uitvoerbeveiliging doorgegeven aan een extern scherm. Dit voorbeeld wordt soms ook wel *`selectable output control`*.

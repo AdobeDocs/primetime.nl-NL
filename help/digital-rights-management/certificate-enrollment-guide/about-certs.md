@@ -2,16 +2,15 @@
 title: Certificaten
 description: Certificaten
 copied-description: true
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: 24ca19bb-a71e-461a-9c3c-558d650e2d99
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '207'
 ht-degree: 0%
 
 ---
 
-
-# Informatie over certificaten {#about-certificates}
+# Certificaten {#about-certificates}
 
 De Adobe Primetime DRM SDK is beschikbaar in de volgende configuraties:
 
@@ -39,4 +38,3 @@ Voor maximale flexibiliteit en verbeterde beveiliging in uw implementatieopties 
 >[!NOTE]
 >
 >Voor de Evaluatie SDK en de Proefversie SDK, worden de Server van de Vergunning, Packager, en de certificaten van het Vervoer gecombineerd in één enkel certificaat.
-

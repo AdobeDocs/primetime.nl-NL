@@ -1,14 +1,13 @@
 ---
 description: Deze klassen bieden informatie over advertenties die binnen een tijdlijn voorkomen.
 title: Tijdlijnadvertentieklassen
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: 4411c86d-8c40-457b-bfc1-40fbea77154e
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '535'
 ht-degree: 0%
 
 ---
-
 
 # Tijdlijnadvertentieklassen {#timeline-advertising-classes}
 
@@ -75,14 +74,14 @@ Deze klassen bieden informatie over advertenties die binnen een tijdlijn voorkom
   <tr rowsep="1"> 
    <td colname="1"> 
     <pre>
-     <a href="https://help.adobe.com/en_US/primetime/api/psdk/appledoc/Classes/PTContentResolver.html" format="html" scope="external"> </a> PTContentResolverclass,  
-     <a href="https://help.adobe.com/en_US/primetime/api/psdk/appledoc/Protocols/PTContentResolver.html" format="html" scope="external"> </a> PTContentResolverprotocol
+     <a href="https://help.adobe.com/en_US/primetime/api/psdk/appledoc/Classes/PTContentResolver.html" format="html" scope="external"> PTContentResolver</a> klasse, 
+     <a href="https://help.adobe.com/en_US/primetime/api/psdk/appledoc/Protocols/PTContentResolver.html" format="html" scope="external"> PTContentResolver</a> protocol
     </pre> </td> 
    <td colname="2"> Klasse die het ad-resolving deel in het Adobe Primetime en besluitvormingsproces behandelt. </td> 
   </tr> 
   <tr rowsep="1"> 
    <td colname="1"><a href="https://help.adobe.com/en_US/primetime/api/psdk/appledoc/Protocols/PTContentResolverDelegate.html" format="html" scope="external"> PTContentResolverDelegate</a> </td> 
-   <td colname="2"> Protocol dat de methodes beschrijft die de oplosser van de douaneinhoud ( <span class="codeph"> PTContentResolver</span>) zou moeten gebruiken om aan de afgevaardigde het statuut van het oplossen van inhoud mee te delen. </td> 
+   <td colname="2"> Protocol dat de methoden beschrijft die de aangepaste inhoud oplosser ( <span class="codeph"> PTContentResolver</span> ) moet worden gebruikt om aan de gedelegeerde de status van het oplossen van inhoud mee te delen. </td> 
   </tr> 
   <tr rowsep="0"> 
    <td colname="1"> <a href="https://help.adobe.com/en_US/primetime/api/psdk/appledoc/Constants/PTPlacementType.html" format="html" scope="external"> PTPlacementType</a> </td> 

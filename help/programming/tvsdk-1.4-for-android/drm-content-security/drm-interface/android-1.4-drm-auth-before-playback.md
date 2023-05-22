@@ -1,14 +1,13 @@
 ---
 description: Wanneer de DRM-metagegevens voor een video gescheiden zijn van de mediastream, moet u verificatie uitvoeren voordat u begint met afspelen.
 title: DRM-verificatie vóór afspelen
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: da81ec38-ea77-4fcd-a6e4-5804465385cb
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '338'
-ht-degree: 1%
+ht-degree: 0%
 
 ---
-
 
 # DRM-verificatie vóór afspelen {#drm-authentication-before-playback}
 
@@ -19,9 +18,9 @@ Een video-element kan een gekoppeld DRM-metagegevensbestand hebben. Bijvoorbeeld
 * &quot;url&quot;: &quot;ht<span></span>tps://www.domain.com/asset.m3u8&quot;
 * &quot;drmMetadata&quot;: &quot;ht<span></span>tps://www.domain.com/asset.metadata&quot;
 
-In dat geval gebruikt u `DRMHelper`-methoden om de inhoud van het DRM-metagegevensbestand te downloaden, te parseren en te controleren of DRM-verificatie nodig is.
+Wanneer dit het geval is, gebruik `DRMHelper` methoden om de inhoud van het DRM-metagegevensbestand te downloaden, te parseren en te controleren of DRM-verificatie nodig is.
 
-1. Gebruik `loadDRMMetadata` om de metagegevens-URL-inhoud te laden en de gedownloade bytes te parseren naar een `DRMMetadata`.
+1. Gebruiken `loadDRMMetadata` om de URL-inhoud van metagegevens te laden en de gedownloade bytes te parseren naar een `DRMMetadata`.
 
    Zoals elke andere netwerkverrichting, is deze methode asynchroon, creërend zijn eigen draad.
 
@@ -39,7 +38,7 @@ In dat geval gebruikt u `DRMHelper`-methoden om de inhoud van het DRM-metagegeve
    ```
 
 1. Omdat de bewerking asynchroon is, is het een goed idee om de gebruiker hiervan bewust te maken. Anders zal hij zich afvragen waarom zijn afspelen niet begint. Geef bijvoorbeeld een draaischijf weer terwijl de DRM-metagegevens worden gedownload en geparseerd.
-1. Voer callbacks in `DRMLoadMetadataListener` uit. `loadDRMMetadata` roept deze gebeurtenismanagers (verzendt deze gebeurtenissen).
+1. Implementeer de callbacks in de `DRMLoadMetadataListener`. De `loadDRMMetadata` roept deze gebeurtenismanagers (verzendt deze gebeurtenissen).
 
    ```java
    public interface  
@@ -62,7 +61,7 @@ In dat geval gebruikt u `DRMHelper`-methoden om de inhoud van het DRM-metagegeve
    * `onLoadMetadataUrlComplete` Hiermee wordt gedetecteerd wanneer de URL van de metagegevens is geladen.
    * `onLoadMetadataUrlError` geeft aan dat de metagegevens niet zijn geladen.
 
-1. Wanneer het laden is voltooid, controleert u het object `DRMMetadata` om te zien of DRM-verificatie nodig is.
+1. Wanneer het laden is voltooid, inspecteert u de `DRMMetadata` om te zien of DRM-verificatie nodig is.
 
    ```java
    public static boolean <b>isAuthNeeded</b>(DRMMetadata drmMetadata);
@@ -170,4 +169,3 @@ In dat geval gebruikt u `DRMHelper`-methoden om de inhoud van het DRM-metagegeve
 1. Als de verificatie niet is gelukt, meldt u dit aan de gebruiker en start u het afspelen niet.
 
 De toepassing moet eventuele verificatiefouten afhandelen. Verificatie is mislukt voordat TVSDK wordt afgespeeld in een foutstatus. De status wordt gewijzigd in ERROR, er wordt een fout gegenereerd met de foutcode uit de DRM-bibliotheek en het afspelen wordt gestopt. Uw toepassing moet het probleem oplossen, de speler herstellen en de bron opnieuw laden.
-

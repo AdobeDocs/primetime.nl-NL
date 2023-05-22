@@ -1,14 +1,13 @@
 ---
-description: 'Adobe® Access™ is een geavanceerde oplossing voor digitaal rechtenbeheer en contentbescherming voor hoogwaardige audiovisuele inhoud. Met gereedschappen die u maakt met Java API''s kunt u beleidsregels maken, beleidsregels toepassen op bestanden die audio- en video-inhoud bevatten en die bestanden versleutelen. De stappen op hoog niveau voor het uitvoeren van deze taken zijn als volgt '
+description: Adobe® Access™ is een geavanceerde oplossing voor digitaal rechtenbeheer en contentbescherming voor hoogwaardige audiovisuele inhoud. Met gereedschappen die u maakt met Java API's kunt u beleidsregels maken, beleidsregels toepassen op bestanden die audio- en video-inhoud bevatten en die bestanden versleutelen. De stappen op hoog niveau voor het uitvoeren van deze taken zijn als volgt
 title: Overzicht
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: cf081058-9b41-4b09-9258-a7d873799846
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '430'
 ht-degree: 0%
 
 ---
-
 
 # Overzicht {#overview}
 
@@ -21,23 +20,23 @@ Adobe® Access™ is een geavanceerde oplossing voor digitaal rechtenbeheer en c
 
 1. Een mediabestand verpakken.
 
-   In deze context betekent *het verpakken van een bestand* het coderen en een beleid erop toepassen. (Zie [Mediabestanden verpakken](../../aaxs-protecting-content/content-packaging-media-files/content-packaging-media-files-overview.md).)
+   In dit verband *het verpakken van een bestand* middelen om het te coderen en er een beleid op toe te passen. (Zie [Mediabestanden verpakken](../../aaxs-protecting-content/content-packaging-media-files/content-packaging-media-files-overview.md).)
 
 1. Voer de licentieserver uit om een licentie aan de gebruiker uit te geven.
 
 De gecodeerde inhoud is nu gereed voor implementatie en de client kan de licentie aanvragen bij de server.
 
-De SDK biedt een Java API om deze taken uit te voeren. De SDK bevat referentie-implementaties van de licentieserver en opdrachtregelprogramma&#39;s die zijn gebaseerd op de Java API&#39;s. Voor informatie, zie *Gebruikend de Implementaties van de Verwijzing van de Toegang van de Adobe*.
+De SDK biedt een Java API om deze taken uit te voeren. De SDK bevat referentie-implementaties van de licentieserver en opdrachtregelprogramma&#39;s die zijn gebaseerd op de Java API&#39;s. Zie voor meer informatie *Implementaties van de Adobe Access-naslaggids gebruiken*.
 
 ## Nieuw in Adobe Access 5.2 {#section_06220EDE36B54DCB9CA7963B76DA8167}
 
-* **Externe CEK**: De mogelijkheid om een CKMS (Content Key Management System) te integreren in de workflows voor het verzenden en verpakken van DRM-licenties in plaats van de CEK te coderen en te bundelen in de metagegevens van de inhoud. Zie [Adobe Access DRM External CEK Overview](../../aaxs-drm-xkey-mgmt/aaxs-drm-using-external-cek-overview.md).
+* **Externe CEK**: De mogelijkheid om een CKMS (Content Key Management System) te integreren in de workflows voor het verzenden en verpakken van DRM-licenties in plaats van de CEK te coderen en te bundelen in de metagegevens van de inhoud. Zie [Adobe Access DRM - Overzicht externe CEK](../../aaxs-drm-xkey-mgmt/aaxs-drm-using-external-cek-overview.md).
 
 * **Licentie (voucher) Return**: De mogelijkheid voor een client om een licentie die aan de client is uitgegeven, te retourneren (of te verwijderen).
-* **Xbox Key Server**: De mogelijkheid om inhoud die naar de Xbox en Xbox 360 wordt verzonden, te beschermen. (Een Adobe Primetime-client is vereist.)
+* **Xbox Key-server**: De mogelijkheid om inhoud die naar de Xbox en Xbox 360 wordt verzonden, te beschermen. (Een Adobe Primetime-client is vereist.)
 
 ## Aangepaste gebruiksregels {#custom-usage-rules}
 
-Geeft aangepaste gebruiksregels aan. U kunt aangepaste gegevens opnemen in licenties die door de licentieserver worden uitgegeven. De interpretatie/verwerking van deze gegevens is volledig tot aan de implementatie van de clienttoepassing en licentieserver.
+Geeft aangepaste gebruiksregels aan. U kunt aangepaste gegevens opnemen in licenties die door de licentieserver worden uitgegeven. De interpretatie/verwerking van deze gegevens is volledig tot de implementatie van de clienttoepassing en licentieserver.
 
-Voorbeeld van gebruik: Laat rekbaarheid van gebruiksregels toe door andere bedrijfsregels toe te staan om veilig als deel van het beleid en/of inhoudsvergunning worden vervoerd. Om veiligheidsredenen, omdat deze gebruiksregels worden afgedwongen in aangepaste code voor clienttoepassingen, moet deze optie worden gebruikt in combinatie met de opties voor AIR-toepassingen of Flash Player SWF-lijsten van gewenste personen. Zie [Runtime en toepassingsbeperkingen](../../aaxs-protecting-content/content-introduction/content-usage-rules/content-runtime-application-restrictions/content-allowlist-air.md) voor meer informatie.
+Voorbeeld van gebruik: Laat rekbaarheid van gebruiksregels toe door andere bedrijfsregels toe te staan om veilig als deel van het beleid en/of inhoudsvergunning worden vervoerd. Om veiligheidsredenen, omdat deze gebruiksregels in de code van de douanecliënt worden afgedwongen, zou deze optie samen met de toepassing van AIR of de opties van de lijst van gewenste personen van de SWF van de Flash Player moeten worden gebruikt. Zie voor meer informatie [Beperkingen van runtime en toepassing](../../aaxs-protecting-content/content-introduction/content-usage-rules/content-runtime-application-restrictions/content-allowlist-air.md).

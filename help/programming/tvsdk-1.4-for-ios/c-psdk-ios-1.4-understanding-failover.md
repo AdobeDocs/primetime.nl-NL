@@ -1,14 +1,13 @@
 ---
 description: Failover-afhandeling treedt op wanneer een afspeellijst van een variant meerdere uitvoeringen voor dezelfde bitsnelheid heeft en een van de uitvoeringen niet meer werkt. De TVSDK wisselt tussen uitvoeringen.
 title: Failover
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: 8c215e2b-e601-4991-a66f-0e810176a511
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '222'
 ht-degree: 0%
 
 ---
-
 
 # Failover{#failover}
 
@@ -35,4 +34,3 @@ Failover treedt alleen op M3U8-niveau op, wat betekent:
 >[!TIP]
 >
 >TVSDK, in plaats van de Apple AV Foundation-speler, biedt failover-verwerking.
-

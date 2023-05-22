@@ -1,7 +1,6 @@
 ---
 description: U kunt de API voor het opnieuw verpakken van CRS gebruiken om niet-HLS en creatieve producten vooraf te transcoderen, zodat is een versie van HLS beschikbaar wanneer u het moet in werking stellen, eliminerend de 2-4 minieme vertraging verbonden aan just-in-time (JIT) het herverpakken.
 title: API opnieuw verpakken
-translation-type: tm+mt
 source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
 source-wordcount: '605'
@@ -10,7 +9,7 @@ ht-degree: 0%
 ---
 
 
-# API {#repackaging-api} opnieuw verpakken
+# API opnieuw verpakken {#repackaging-api}
 
 U kunt de API voor het opnieuw verpakken van CRS gebruiken om niet-HLS en creatieve producten vooraf te transcoderen, zodat is een versie van HLS beschikbaar wanneer u het moet in werking stellen, eliminerend de 2-4 minieme vertraging verbonden aan just-in-time (JIT) het herverpakken.
 
@@ -30,7 +29,7 @@ Om een transcoderingsverzoek naar CRS voor te leggen, verzend als volgt een HTTP
 
 * **Koptekst -** `Content-Type: text/xml`
 
-* **Body -** XML zoals in het volgende voorbeeld:
+* **Lichaam -** XML zoals in het volgende voorbeeld:
 
    ```xml
    <RepackageList>
@@ -52,7 +51,7 @@ Om een transcoderingsverzoek naar CRS voor te leggen, verzend als volgt een HTTP
    </RepackageList>
    ```
 
-Het `RepackageList` blok in het Lichaam kan 1 tot 300 `Repackage` blokken bevatten. Als het aantal `Repackage` blokken in het Lichaam overschrijdt 300, dan zal het HTTP- Verzoek met de volgende fout ontbreken:
+De `RepackageList` blok in het lichaam kan 1 tot 300 bevatten `Repackage` blokken. Indien het aantal `Repackage` de blokken in het Lichaam overschrijden 300, dan zal het HTTP- Verzoek met de volgende fout ontbreken:
 
 ```
 <codeph>
@@ -62,16 +61,16 @@ Het `RepackageList` blok in het Lichaam kan 1 tot 300 `Repackage` blokken bevatt
 ```
 
 
-De vereiste en facultatieve parameters in een `Repackage` blok zijn als volgt:
+De vereiste en optionele parameters in een `Repackage` blok is als volgt:
 
-* **`AdSystem`** (Vereist) - De bron en server, bijvoorbeeld  `Auditude`,  `FreeWheel`,  `Apad.tv`. Dit is een koordwaarde die aan het VAST element `AdSystem` beantwoordt.
+* **`AdSystem`** (Vereist) - De bron en server, bijvoorbeeld `Auditude`, `FreeWheel`, `Apad.tv`. Dit is een tekenreekswaarde die overeenkomt met het VAST-element `AdSystem`.
 
-* **`AdId`** (Vereist) - Dit is een id voor de in de aanvraag opgegeven derde partij en server. Het komt overeen met het `id` attribuut van het `Ad` element in een VAST reactie.
+* **`AdId`** (Vereist) - Dit is een id voor de in de aanvraag opgegeven derde partij en server. Het komt overeen met de `id` kenmerk van de `Ad` -element in een VAST-reactie.
 
-* **`CreativeURL`** (Vereist) - De locatie (URI) van de advertentie die moet worden getranscodeerd. Dit komt overeen met het VAST `MediaFile`-element.
+* **`CreativeURL`** (Vereist) - De locatie (URI) van de advertentie die moet worden getranscodeerd. Dit komt overeen met de VAST `MediaFile` element.
 
 * `CreativeID` (optioneel) - De id voor de creatieve advertentie die moet worden opgenomen als onderdeel van een ad-hocervaring.
-* **`Zone`** (Vereist) - zone-id voor uw account (verkrijgbaar bij uw technische accountmanager). Dit is een numerieke waarde die overeenkomt met de instelling `publisher_site_id` van het Auditude-platform.
+* **`Zone`** (Vereist) - zone-id voor uw account (verkrijgbaar bij uw technische accountmanager). Dit is een numerieke waarde die overeenkomt met het Auditude-platform `publisher_site_id` instellen.
 
 * **`Format`** (optioneel) - Parameters om te bepalen hoe CRS de advertentie transcodeert:
 
@@ -83,7 +82,7 @@ De vereiste en facultatieve parameters in een `Repackage` blok zijn als volgt:
    * `hls` - Genereer een getranscodeerde en creatieve HLS-compatibele code.
    * `dash` - Genereer een getranscodeerde en creatieve DASH-compatibele code.
    * `id3` - U kunt metagegevenstags met tijdslimiet in de getranscodeerde en creatieve code injecteren.
-   * `targetdur` - De duur van het segment (in seconden) voor de getranscodeerde en creatieve gegevens. De standaardwaarde is `targetdur=4`. Deze waarde moet overeenkomen met de waarde die in het manifest is opgegeven voor `<s>` in de tag target duration: `#EXT-X-TARGETDURATION:<s>`.
+   * `targetdur` - De duur van het segment (in seconden) voor de getranscodeerde en creatieve gegevens. Standaard is `targetdur=4`. Deze waarde moet overeenkomen met de waarde die in het manifest voor `<s>` in de tag voor de doelduur: `#EXT-X-TARGETDURATION:<s>`.
 
    >[!NOTE]
    >
@@ -91,15 +90,15 @@ De vereiste en facultatieve parameters in een `Repackage` blok zijn als volgt:
 
 >[!IMPORTANT]
 >
->Stel `targetdur` zodanig in dat deze naadloos wordt afgespeeld.
+>Voor een vloeiend afspelen stelt u `targetdur` om de duur van het inhoudssegment aan te passen.
 
-## HTTP-reactie {#section_B30D27E4A6AC4AAD9E758162EFF7D963}
+## HTTP-respons {#section_B30D27E4A6AC4AAD9E758162EFF7D963}
 
 CRS beantwoordt het verzoek met één van de volgende statuscodes:
 
-* **HTTP 202**  - Geaccepteerd (met lege hoofdtekst). Dit wijst op succes. CRS uploadt de getranscodeerde en naar de CDN-server.
-* **HTTP 400**  - Onjuiste aanvraag. De geposte XML is ongeldig.
-* **HTTP 500**  - Interne serverfout. De server heeft een intern probleem aangetroffen (de server kan bijvoorbeeld geen verbinding maken met een database).
+* **HTTP 202** - Geaccepteerd (met leeg lichaam). Dit wijst op succes. CRS uploadt de getranscodeerde en naar de CDN-server.
+* **HTTP 400** - Onjuist verzoek. De geposte XML is ongeldig.
+* **HTTP 500** - Interne serverfout. De server heeft een intern probleem aangetroffen (de server kan bijvoorbeeld geen verbinding maken met een database).
 
 ## Pre-transcoderingselementen voor SSAI of CSAI {#section_098888BB74FD4DC1AD0BD507B2A48318}
 

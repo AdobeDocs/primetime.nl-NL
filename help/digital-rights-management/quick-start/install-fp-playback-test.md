@@ -2,16 +2,15 @@
 title: Flash Player- en afspeeltestinhoud installeren
 description: Flash Player- en afspeeltestinhoud installeren
 copied-description: true
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: 2a528ced-de94-4bca-b06e-e991f29c24c9
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '44'
 ht-degree: 0%
 
 ---
 
-
-# Flash Player- en afspeeltestinhoud {#install-flash-player-and-playback-test-content} installeren
+# Flash Player- en afspeeltestinhoud installeren {#install-flash-player-and-playback-test-content}
 
 1. Ga naar ht<span></span>tps://get.adobe.com/flashplayer/.
 1. Download en installeer Flash Player.

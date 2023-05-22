@@ -1,13 +1,13 @@
 ---
 title: iOS-verificatiefout - adobepass.ios.app is niet gevonden
 description: iOS-verificatiefout - adobepass.ios.app is niet gevonden
-source-git-commit: 326f97d058646795cab5d062fa5b980235f7da37
+exl-id: cd97c6fb-f0fa-45c2-82c1-f28aa6b2fd12
+source-git-commit: bfc3ba55c99daba561255760baf273b6538a3c6e
 workflow-type: tm+mt
 source-wordcount: '364'
 ht-degree: 0%
 
 ---
-
 
 # iOS-verificatiefout - adobepass.ios.app is niet gevonden {#ios-authentication-error-adobepass.ios.app-cannot-be-found}
 
@@ -63,4 +63,3 @@ Een paar dingen om op te merken:
 - NOOIT gebruiken `adobepass.ios.app` rechtstreeks in de code. Gebruik in plaats daarvan de constante `ADOBEPASS_REDIRECT_URL`
 - De `return NO;` instructie voorkomt dat de pagina wordt geladen
 - Zorg er absoluut voor dat de `getAuthenticationToken` De vraag wordt eens en slechts eenmaal geroepen in uw code. Meerdere aanroepen van `getAuthenticationToken` resulteert in ongedefinieerde resultaten.
-

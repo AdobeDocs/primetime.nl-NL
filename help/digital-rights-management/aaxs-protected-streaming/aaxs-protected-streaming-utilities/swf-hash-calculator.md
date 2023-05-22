@@ -1,19 +1,18 @@
 ---
-title: SWF-hash-calculator
-description: SWF-hash-calculator
+title: SWF Hash-calculator
+description: SWF Hash-calculator
 copied-description: true
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: 651b31bc-47b5-4388-aa00-27d3bd59da30
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '52'
 ht-degree: 0%
 
 ---
 
+# SWF Hash-calculator{#swf-hash-calculator}
 
-# SWF-hash-calculator{#swf-hash-calculator}
-
-Het SWF Hash Calculator-hulpprogramma berekende de samenvatting van een SWF-toepassing in een bestand. Voer de opdracht uit om de hasher uit te voeren:
+Het hulpprogramma Hash Calculator van SWF heeft de samenvatting berekend van een SWF-toepassing in een bestand. Voer de opdracht uit om de hasher uit te voeren:
 
 ```
 Hasher.bat filename.swf

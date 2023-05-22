@@ -2,24 +2,23 @@
 title: Achtergrondaudio inschakelen
 description: Achtergrondaudio inschakelen
 copied-description: true
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: db494969-ef63-46ad-9f08-a95f58c8b27b
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '63'
 ht-degree: 0%
 
 ---
 
+# Achtergrondaudio inschakelen {#enable-background-audio}
 
-# Achtergrondaudio {#enable-background-audio} inschakelen
-
-Om het afspelen van audio in te schakelen wanneer de toepassing op de achtergrond wordt uitgevoerd, moet de toepassing `enableAudioPlaybackInBackground` API van MediaPlayer aanroepen met true als argument wanneer de speler zich in de status PREPARED bevindt.
+Om het afspelen van audio in te schakelen wanneer de toepassing op de achtergrond wordt uitgevoerd, moet de toepassing `enableAudioPlaybackInBackground` API van MediaPlayer met true als argument wanneer de speler zich in de status PREPARED bevindt.
 
 ```
 _mediaPlayer.enableAudioPlaybackInBackground(true);
 ```
 
-De app moet het afspelen pauzeren wanneer deze de audio-focus verliest tijdens gebeurtenissen zoals het reageren op de telefoon, enz. Het volgende codefragment toont aan hoe te om `OnAudioFocusChangeListener` uit te voeren:
+De app moet het afspelen pauzeren wanneer deze de audio-focus verliest tijdens gebeurtenissen zoals het reageren op de telefoon, enz. Het volgende codefragment toont aan hoe te om uit te voeren `OnAudioFocusChangeListener`:
 
 ```
 /** 
@@ -46,4 +45,3 @@ De app moet het afspelen pauzeren wanneer deze de audio-focus verliest tijdens g
 AudioManager audioManager = (AudioManager) getActivity().getApplicationContext().getSystemService(Context.AUDIO_SERVICE); 
 audioManager.requestAudioFocus(onAudioFocusChangeListener, AudioManager.STREAM_MUSIC, AudioManager.AUDIOFOCUS_GAIN);
 ```
-

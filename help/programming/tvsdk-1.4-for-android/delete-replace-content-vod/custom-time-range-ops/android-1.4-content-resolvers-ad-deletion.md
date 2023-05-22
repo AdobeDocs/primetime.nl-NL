@@ -1,14 +1,13 @@
 ---
 description: U kunt meerdere inhoudsoplossers gebruiken om verschillende tijdlijnbewerkingen af te handelen.
 title: Inhoud-oplossers voor verwijderen/vervangen
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: 67677d12-a3a6-4fac-8704-441b81cb10fe
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '34'
 ht-degree: 0%
 
 ---
-
 
 # Inhoud-oplossers voor verwijderen/vervangen {#content-resolvers-for-ad-deletion-replacement}
 
@@ -36,4 +35,3 @@ if (metadata != null) {
 } 
 return contentResolvers;
 ```
-

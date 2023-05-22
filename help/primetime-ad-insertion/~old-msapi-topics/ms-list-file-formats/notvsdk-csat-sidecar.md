@@ -1,7 +1,6 @@
 ---
 description: Als de client traceerinformatie aanvraagt in JSON-indeling, stuurt de manifestserver een bestand terug in een van de JSON-indelingen.
 title: JSON-indelingen voor het bijhouden van URL's
-translation-type: tm+mt
 source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
 source-wordcount: '211'
@@ -14,9 +13,9 @@ ht-degree: 0%
 
 Als de client traceerinformatie aanvraagt in JSON-indeling, stuurt de manifestserver een bestand terug in een van de JSON-indelingen.
 
-## JSON-indeling voor het bijhouden van versie 1 {#json_v1}
+## JSON-indeling voor tracering versie 1 {#json_v1}
 
-Het JSON-bestand dat de manifestserver verzendt wanneer `pttrackingversion=v1` de volgende algemene indeling heeft:
+Het JSON-bestand dat de manifestserver verzendt als `pttrackingversion=v1` heeft de volgende algemene notatie:
 
 ```
 { 
@@ -32,9 +31,9 @@ Het JSON-bestand dat de manifestserver verzendt wanneer `pttrackingversion=v1` d
 }, ...]}
 ```
 
-## JSON-indeling voor het bijhouden van versie 2 {#json_v2}
+## JSON-indeling voor tracering versie 2 {#json_v2}
 
-Het JSON-bestand dat de manifestserver verzendt wanneer `pttrackingversion=v2` de indeling van het volgende voorbeeld heeft, die afkomstig is van een typisch JSON-blok.
+Het JSON-bestand dat de manifestserver verzendt als `pttrackingversion=v2` heeft de indeling van het volgende voorbeeld, dat afkomstig is van een standaard JSON-blok.
 
 Het is ingekort om onnodige herhalingen te voorkomen, zodat de structuur duidelijker wordt. Een ovaal (drie punten, gescheiden door spaties) geeft aan dat informatie binnen sommige URL&#39;s en tussen sommige codeblokken is weggelaten. Onverkorte URL&#39;s worden op meerdere regels weergegeven, hoewel ze op één regel in het JSON-bestand staan.
 
@@ -364,11 +363,11 @@ Het is ingekort om onnodige herhalingen te voorkomen, zodat de structuur duideli
 
 >[!NOTE]
 >
->De `offset`-waarde van het kenmerk `scte35`, geëxtraheerd uit `ad breaks`, kan negatief zijn. De reden hiervoor is dat de secundaire JSON V2-handler informatie bevat over de ad-einden die zich gedeeltelijk in het huidige afspeelvenster bevinden. Het `scte35`-kenmerk bevat dus ook informatie over dergelijke advertentie-einden.
+>De `offset` waarde van de `scte35` kenmerk zoals geëxtraheerd uit `ad breaks` kan negatief zijn. De reden hiervoor is dat de secundaire JSON V2-handler informatie bevat over de ad-einden die zich gedeeltelijk in het huidige afspeelvenster bevinden. Dus de `scte35` bevat ook informatie over dergelijke advertentieeinden.
 
-## JSON-indeling voor het bijhouden van versie 3 {#json_v3}
+## JSON-indeling voor tracering versie 3 {#json_v3}
 
-Het JSON-bestand dat de manifestserver verzendt wanneer `pttrackingversion=v3` de volgende algemene indeling heeft:
+Het JSON-bestand dat de manifestserver verzendt als `pttrackingversion=v3` heeft de volgende algemene notatie:
 
 ```
 { 

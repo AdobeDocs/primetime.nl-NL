@@ -2,16 +2,15 @@
 title: Lijst van gewezen personen van DRM-clients die geen toegang hebben tot beveiligde inhoud
 description: Lijst van gewezen personen van DRM-clients die geen toegang hebben tot beveiligde inhoud
 copied-description: true
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: 74ddb5ed-4e68-4570-9cd5-bfc699609972
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '377'
 ht-degree: 0%
 
 ---
 
-
-# Lijst van gewezen personen van DRM-clients die toegang hebben tot beveiligde inhoud {#blocklist-of-drm-clients-restricted-from-accessing-protected-content}
+# Lijst van gewezen personen van DRM-clients die geen toegang hebben tot beveiligde inhoud {#blocklist-of-drm-clients-restricted-from-accessing-protected-content}
 
 **Adobe Access DRM-moduleversies hebben geen toegang tot beveiligde inhoud.**
 
@@ -25,7 +24,7 @@ Een DRM-clientversie kan worden geïdentificeerd aan de hand van de kenmerken di
 |---|---|---|---|
 | Omgeving | &quot;PC&quot;, &quot;PortingKit&quot; | Exacte overeenkomst | Geeft aan of de client op een desktopcomputer of op een ander apparaat wordt uitgevoerd. |
 | OS | &quot;Win&quot;, &quot;Mac&quot;, &quot;Linux&quot;, &quot;Android&quot;, &quot;iOS&quot;, &quot;ChromeOS&quot; | Exacte overeenkomst | Platform |
-| Architectuur | &quot;32&quot;, &quot;64&quot; | Exacte overeenkomst | 32-bits of 64-bits |
+| Architectuur | “32”, “64” | Exacte overeenkomst | 32-bits of 64-bits |
 | Schermtype | &quot;PC&quot;, &quot;Mobile&quot;, &quot;TV&quot; | Exacte overeenkomst |  |
 | Runtimeversie | Een geldig versienummer. Bijvoorbeeld &quot;2.0.0&quot;, &quot;3.0&quot;, &quot;4.0&quot;, &quot;11.0&quot;, enz. | Komt overeen met als de clientversie kleiner dan of gelijk is aan de opgegeven versie. | Versienummer is opgegeven als een combinatie van getallen en punten (&quot;.&quot;) van elke lengte. |
 | DRM-bibliotheekversie | Een geldig versienummer. Bijvoorbeeld &quot;2.0.0&quot;. | Komt overeen met als de clientversie kleiner dan of gelijk is aan de opgegeven versie. | Versienummer is opgegeven als een combinatie van getallen en punten (&quot;.&quot;) van elke lengte. |
@@ -35,4 +34,3 @@ Een DRM-clientversie kan worden geïdentificeerd aan de hand van de kenmerken di
 >[!NOTE]
 >
 >Wanneer u een item in de lijst van gewezen personen opgeeft, kunnen waarden worden ingesteld voor een of meer van de kenmerken die in de vorige tabel worden genoemd. Elk kenmerk dat niet wordt opgegeven, wordt behandeld als een jokerteken. Als de DRM-client overeenkomt met alle waarden die in een lijst van gewezen personen-item zijn opgegeven, heeft die client mogelijk geen toegang tot de beveiligde inhoud.
-

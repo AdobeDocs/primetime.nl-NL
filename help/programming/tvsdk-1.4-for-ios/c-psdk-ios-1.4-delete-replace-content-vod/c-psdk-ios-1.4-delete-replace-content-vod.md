@@ -1,14 +1,13 @@
 ---
 description: TVSDK ondersteunt het programmatisch verwijderen en vervangen van inhoud van advertenties in VOD-streams.
 title: Advertenties in VOD-streams verwijderen en vervangen
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: 44d75250-23ee-4ce3-a0c1-59bd488a5aba
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '372'
 ht-degree: 0%
 
 ---
-
 
 # Wijzigingen in API voor verwijderen en vervangen toevoegen {#ad-deletion-and-replacement-api-changes}
 
@@ -25,27 +24,27 @@ De volgende wijzigingen in TVSDK ondersteunen het verwijderen en vervangen van b
    * `property PTTimeRangeCollectionType type` Hiermee wordt het type tijdbereik aangegeven.
    * `property NSArray* ranges` wordt gebruikt om de tijdwaaiers te plaatsen.
 
-      Het verwachte type objecten in de array is `PTReplacementTimeRange` of `CMTimeRange`.
+      Het verwachte type objecten in de array zijn `PTReplacementTimeRange` of `CMTimeRange`.
 
       >[!TIP]
       >
       >Alle objecten van de array moeten van hetzelfde type zijn.
 
-   * `PTTimeRangeCollectionType` is een opsomming die het gedrag definieert voor de bereiken die in het  `PTTimeRangeCollection`volgende worden gedefinieerd:
+   * `PTTimeRangeCollectionType` is een opsomming die het gedrag definieert voor de bereiken die zijn gedefinieerd in het dialoogvenster `PTTimeRangeCollection`:
 
-      * `PTTimeRangeCollectionTypeMarkRanges`: Het type van de bereiken is  *Mark*. De bereiken worden gebruikt om de waaiers in de inhoud als Advertentie te merken.
+      * `PTTimeRangeCollectionTypeMarkRanges`: Het type van de bereiken is *Mark*. De bereiken worden gebruikt om de waaiers in de inhoud als Advertentie te merken.
 
       * `PTTimeRangeCollectionTypeDeleteRanges`: Het type van de bereiken is Delete. De gedefinieerde bereiken worden voor het invoegen uit de hoofdinhoud verwijderd.
-      * `PTTimeRangeCollectionTypeReplaceRanges`: Het type van de bereiken is Vervangen. De gedefinieerde bereiken worden vanaf het hoofdvenster vervangen door Advertenties (de modus voor Ad-signalering is ingesteld op `PTAdSignalingModeCustomTimeRanges`).
+      * `PTTimeRangeCollectionTypeReplaceRanges`: Het type van de bereiken is Vervangen. De gedefinieerde bereiken worden vanaf de hoofdregel vervangen door Advertenties (de modus voor Ad-signalering is ingesteld op `PTAdSignalingModeCustomTimeRanges`).
 
-* `PTReplacementTimeRange` - Nieuwe klasse public die één bereik van de  `PTTimeRangeCollection`:
+* `PTReplacementTimeRange` - Nieuwe klasse public die één bereik van de klasse `PTTimeRangeCollection`:
 
    * `property CMTimeRange range` - Definieert het begin en de duur van het bereik.
-   * `property long replacementDuration` - Als het type van het  `TimeRangeCollection` is  `PTTimeRangeCollectionTypeReplaceRanges`,  `replacementDuration` wordt het gebruikt om een plaatsingskans (en toevoeging) met een duur van  `replacementDuration`. te creëren. Als `replacementDuration` niet is ingesteld, bepaalt de advertentieserver de duur en het aantal advertenties voor die plaatsingsmogelijkheid.
+   * `property long replacementDuration` - Indien het type van de `TimeRangeCollection` is `PTTimeRangeCollectionTypeReplaceRanges`de `replacementDuration` wordt gebruikt om een plaatsingskans (en invoeging) te maken met een duur van `replacementDuration`. Als de `replacementDuration` niet is ingesteld, bepaalt de advertentieserver de duur en het aantal advertenties voor die plaatsingsmogelijkheid.
 
 * `PTAdSignalingMode`:
 
-   * `PTAdSignalingModeCustomTimeRanges` - Er is een nieuw type  `PTAdSignalingMode`toegevoegd. Deze modus wordt gebruikt in combinatie met `PTTimeRangeCollection` en type `PTTimeRangeCollectionReplace` voor invoeging op basis van het vervangingsbereik.
+   * `PTAdSignalingModeCustomTimeRanges` - Een nieuw type van `PTAdSignalingMode`. Deze modus wordt gebruikt in combinatie met de `PTTimeRangeCollection` met type `PTTimeRangeCollectionReplace` voor toevoegen op basis van het vervangingsbereik.
 
 * `PTAdMetadata`:
 
@@ -67,4 +66,4 @@ De volgende wijzigingen in TVSDK ondersteunen het verwijderen en vervangen van b
 
 * `PTAdMetadata`:
 
-   * `property NSArray* externalAdRanges` - Deze eigenschap werd eerder gebruikt om C3-bereiken voor markering te definiëren. Het is nu afgekeurd, aangezien deze waaiers via `PTTimeRangeCollection` worden geplaatst.
+   * `property NSArray* externalAdRanges` - Deze eigenschap werd eerder gebruikt om C3-bereiken voor markering te definiëren. Het is nu afgekeurd, omdat deze bereiken zijn ingesteld via `PTTimeRangeCollection`.

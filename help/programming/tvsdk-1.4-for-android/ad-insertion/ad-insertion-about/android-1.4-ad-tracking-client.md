@@ -1,16 +1,15 @@
 ---
 description: TVSDK houdt automatisch advertenties bij voor VOD en live/lineair streamen.
 title: Clientadvertentie bijhouden
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: eebe576c-3854-4718-9bff-341f660dd0b7
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '48'
 ht-degree: 0%
 
 ---
 
-
-# Client en {#client-ad-tracking} bijhouden
+# Clientadvertentie bijhouden {#client-ad-tracking}
 
 TVSDK houdt automatisch advertenties bij voor VOD en live/lineair streamen.
 

@@ -1,14 +1,13 @@
 ---
 title: Adobe Primetime-verificatie en het nieuwe machtigingenmodel voor Android 6 "Marshmallow"
 description: Adobe Primetime-verificatie en het nieuwe machtigingenmodel voor Android 6 "Marshmallow"
-source-git-commit: 326f97d058646795cab5d062fa5b980235f7da37
+exl-id: 3c96769e-b25b-48ab-bb74-40f13d4e5a84
+source-git-commit: bfc3ba55c99daba561255760baf273b6538a3c6e
 workflow-type: tm+mt
 source-wordcount: '480'
 ht-degree: 0%
 
 ---
-
-
 
 # Adobe Primetime-verificatie en het nieuwe machtigingenmodel voor Android 6 &quot;Marshmallow&quot; {#adobe-primetime-authentication-and-the-android-6-marshmallow-new-permissions-model}
 
@@ -80,4 +79,4 @@ if (ContextCompat.checkSelfPermission(thisActivity,
 
 >[!IMPORTANT]
 >
-> Adobe adviseert **zijn partners om toepassingen te ontwikkelen met gebruik van API-niveau 22 (targetSdkVersion=22) of ouder, zodat een optimale gebruikerservaring bij het verificatieproces wordt gegarandeerd**. 
+> Adobe adviseert **zijn partners om toepassingen te ontwikkelen met gebruik van API-niveau 22 (targetSdkVersion=22) of ouder, zodat een optimale gebruikerservaring bij het verificatieproces wordt gegarandeerd**.

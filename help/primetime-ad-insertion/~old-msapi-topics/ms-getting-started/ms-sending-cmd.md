@@ -1,7 +1,6 @@
 ---
 description: Gebruik het bevel van de GET van HTTP om met de manifestserver in wisselwerking te staan.
 title: Een opdracht naar de manifest-server verzenden
-translation-type: tm+mt
 source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
 source-wordcount: '235'
@@ -14,7 +13,7 @@ ht-degree: 0%
 
 Gebruik het bevel van de GET van HTTP om met de manifestserver in wisselwerking te staan.
 
-1. Verzend een `HTTP GET` verzoek om een laarzentrekker URL die met het volgende patroon wordt samengesteld:
+1. Een `HTTP GET` request for a bootstrap URL construeert using the following pattern:
 
    ```
    https://{manifest-server:port}/auditude/variant/
@@ -22,11 +21,11 @@ Gebruik het bevel van de GET van HTTP om met de manifestserver in wisselwerking 
     ?{query parameters}
    ```
 
-* **** PublisherAssetIDR vereist. De unieke id van de uitgever voor de specifieke inhoud.
+* **PublisherAssetID** Vereist. De unieke id van de uitgever voor de specifieke inhoud.
 
-* **Inhoud** URLRequired. URL van de inhoud van het M3U8-bestand, Base64-gecodeerd om veilig te zijn binnen de URL van de manifestserver. De inhoud-URL moet verwijzen naar een M3U8-bestand van een andere type, zelfs als er slechts één bitsnelheidstream is.
+* **Inhoud-URL** Vereist. URL van de inhoud van het M3U8-bestand, Base64-gecodeerd om veilig te zijn binnen de URL van de manifestserver. De inhoud-URL moet verwijzen naar een M3U8-bestand van een andere type, zelfs als er slechts één bitsnelheidstream is.
 
-* **Query-** parametersSommige zijn vereist, sommige zijn optioneel. Deze vormen het meest gevarieerde deel van het verzoek. Zij vertellen de duidelijke server welke soort cliënt het verzoek doet en wat het de manifestserver wil doen.
+* **Parameters query** Sommige zijn vereist, sommige facultatief. Deze vormen het meest gevarieerde deel van het verzoek. Zij vertellen de duidelijke server welke soort cliënt het verzoek doet en wat het de manifestserver wil doen.
 
    Bijvoorbeeld:
 
@@ -39,7 +38,7 @@ Gebruik het bevel van de GET van HTTP om met de manifestserver in wisselwerking 
 
    **HTTP- vs. HTTPS-aanvragen**
 
-   De manifestserver leidt tot URLs gebruikend het zelfde protocol van HTTP van het verzoek van de cliënt. Wanneer een speler een niet-beveiligd HTTP-verzoek (http) indient, retourneert de manifestserver manifest-URL&#39;s en URL&#39;s voor bijhouden van bestandsgrootte met het http-protocol. Als een speler een beveiligde HTTP-verbinding (https) maakt, geeft de manifestserver duidelijke URL&#39;s en URL&#39;s van Auditude tracking met het https-protocol.
+   De manifestserver leidt tot URLs gebruikend het zelfde protocol van HTTP van het verzoek van de cliënt. Als een speler een niet-veilig HTTP-verzoek (http) indient, retourneert de manifestserver manifest-URL&#39;s en Auditude-URL&#39;s met het http-protocol. Als een speler een beveiligde HTTP-verbinding (https) maakt, geeft de manifestserver duidelijke URL&#39;s en URL&#39;s van Auditude tracking met het https-protocol.
 
    >[!NOTE]
    >

@@ -2,22 +2,21 @@
 title: Licenties insluiten
 description: Licenties insluiten
 copied-description: true
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: 63b1bf18-b93d-4305-885a-3a9eee783a03
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '165'
 ht-degree: 0%
 
 ---
 
-
-# Licenties {#embedding-licenses} insluiten
+# Licenties insluiten {#embedding-licenses}
 
 Nadat de inhoud is gecodeerd en er een licentie is gegenereerd, kan de licentie worden ingesloten in de gecodeerde inhoud.
 
-Als u een licentie wilt insluiten, verkrijgt u een exemplaar van `com.adobe.flashaccess.sdk.media.drm.contentupdate.MediaKeyMetaDataUpdater`. Als u het type van de gecodeerde inhoud kent, gebruik de aannemer voor `FLVKeyMetaDataUpdater` of `F4VKeyMetaDataUpdater`; anders, gebruik `MediaProcessorFactory.getMediaProcessor()` om een instantie terug te keren die op het ontdekte dossiertype wordt gebaseerd. Construeer een `KeyMetaDataCallback` en roep `modifyKeyMetaData()` aan. De callback-implementatie wordt geactiveerd wanneer de DRM-metagegevens zich in de gecodeerde inhoud bevinden. Op basis van de gevonden metagegevens kunt u een licentie kiezen om de licentie in te sluiten en in te stellen met `EmbedLicenseKeyMetaData.setEmbeddedLicenses()`.
+Als u een licentie wilt insluiten, ontvangt u een exemplaar van `com.adobe.flashaccess.sdk.media.drm.contentupdate.MediaKeyMetaDataUpdater`. Als u het type van de gecodeerde inhoud kent, gebruik de aannemer voor `FLVKeyMetaDataUpdater` of `F4VKeyMetaDataUpdater`; anders gebruiken `MediaProcessorFactory.getMediaProcessor()` om een instantie te retourneren op basis van het gedetecteerde bestandstype. Een `KeyMetaDataCallback` en aanroepen `modifyKeyMetaData()`. De callback-implementatie wordt geactiveerd wanneer de DRM-metagegevens zich in de gecodeerde inhoud bevinden. Op basis van de gevonden metagegevens kunt u een licentie kiezen om in te sluiten en de licentie in te stellen met `EmbedLicenseKeyMetaData.setEmbeddedLicenses()`.
 
-Zie `com.adobe.flashaccess.samples.licenseembedder.EmbedLicense` in de map Samples van de opdrachtregelprogramma&#39;s voor naslagimplementatie &quot;Samples&quot; voor voorbeeldcode die ingesloten licenties aantoont.
+Zie voor voorbeeldcode voor het demonstreren van ingesloten licenties `com.adobe.flashaccess.samples.licenseembedder.EmbedLicense` in de map &quot;Samples&quot; in de opdrachtregelprogramma&#39;s van de Reference Implementation.
 
 >[!NOTE]
 >

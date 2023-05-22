@@ -2,16 +2,15 @@
 title: Domeinregistratie apparaatgroep
 description: Domeinregistratie apparaatgroep
 copied-description: true
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: 1f3e9d26-c185-4d12-accf-aa74a313f890
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '179'
 ht-degree: 0%
 
 ---
 
-
-# Domeinregistratie{#device-group-domain-registration} van apparaatgroep
+# Domeinregistratie apparaatgroep{#device-group-domain-registration}
 
 Als alternatief voor het binden van een vergunning aan een specifiek apparaat, steunen Adobe Access 3.0 en hoger bindende vergunningen aan een apparatendomein. De veelvoudige apparaten kunnen zich bij een domein aansluiten en domeintokens ontvangen. Nadat een apparaat in het domein een vergunning verwerft, kan de vergunning worden overgebracht naar om het even welk ander apparaat in het domein, en die apparaten kunnen de inhoud spelen zonder een vergunning direct van de vergunningsserver te verwerven.
 

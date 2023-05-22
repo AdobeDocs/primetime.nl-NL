@@ -1,41 +1,40 @@
 ---
 description: Met de ExpressPlay's Bento4-packager kunt u inhoud voorbereiden voor alle DRM-oplossingen die worden ondersteund door Primetime Cloud DRM, met ExpressPlay.
 title: ExpressPlay Packager / Cloud DRM / TVSDK
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: ff937279-3866-4d0a-9a19-cf61726299e1
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '477'
 ht-degree: 0%
 
 ---
 
-
 # ExpressPlay Packager / Cloud DRM / TVSDK {#expressplay-packager-cloud-drm-tvsdk}
 
 Met de ExpressPlay&#39;s Bento4-packager kunt u inhoud voorbereiden voor alle DRM-oplossingen die worden ondersteund door Primetime Cloud DRM, met ExpressPlay.
 
-In deze taak wordt beschreven hoe u een hulpprogramma van derden kunt gebruiken om beveiligde inhoud voor te bereiden, in dit geval *ExpressPlay Bento4 Tools*, voor gebruik met verschillende DRM-oplossingen. Raadpleeg de *Bento4-documentatie* op de [ExpressPlay](https://www.expressplay.com/developer/)-website voor meer informatie.
+In deze taak wordt beschreven hoe u een hulpprogramma van derden kunt gebruiken om beveiligde inhoud voor te bereiden. In dit geval *ExpressPlay Bento4-gereedschappen* voor gebruik met diverse DRM-oplossingen. Zie voor meer informatie de *Bento4-gereedschappen* documentatie over de [ExpressPlay](https://www.expressplay.com/developer/) website.
 1. Vraag een ExpressPlay-account aan en verkrijg uw ExpressPlay-klantverificatie-gegevens.
 
-   Zie [Primetime DRM Cloud Quick-start.](../../quick-start/quick-overview.md)
+   Zie [Primetime DRM Cloud, snel starten.](../../quick-start/quick-overview.md)
 1. Als u inhoud voor Toegang Primetime codeert, verkrijg de Toegang SDK van de Adobe van Primetime van Adobe, samen met de vereiste certificaten (Vergunning, Vervoer, en het Verpakken certs).
 1. Geef een CEK (Content Encryption Key) en CEKSID (Content Encryption Key Storage ID) op voor gebruik op de DRM-systemen. (U genereert deze willekeurig met OpenSSL of een vergelijkbare methode.)
 
-   De CEK is de werkelijke sleutel waarmee u uw videobestand(en) versleutelt. U slaat het bestand op een veilige manier op uw eigen server op in uw eigen sleutelbeheersysteem, of u kunt gebruikmaken van de [sleutelopslagoplossing](https://www.expressplay.com/developer/key-storage/) van ExpressPlay.
+   De CEK is de werkelijke sleutel waarmee u uw videobestand(en) versleutelt. U slaat het bestand op een veilige manier op uw eigen server op in uw eigen sleutelbeheersysteem of u kunt de ExpressPlay-functies gebruiken [belangrijkste opslagoplossing](https://www.expressplay.com/developer/key-storage/).
 
    Een CEKSID is het herkenningsteken voor bepaalde CEK. U geeft (gewoonlijk) de coderingssleutel niet door. Bijvoorbeeld, wanneer het verzoeken van een vergunningsteken, verstrekt u CEKSID.
 
 1. Als u inhoud voor Toegang codeert, gebruik uw CEK om meta-gegevens tot stand te brengen Primetime van de Toegang verbonden aan uw inhoud.
 
-1. Fragmenteer de inhoud om deze voor te bereiden voor het *Bento4 MP4DASH*-gereedschap.
+1. De inhoud fragmenteren om deze voor te bereiden op de *Bento4 MP4DASH* gebruiken.
 
-   Voor deze stap kunt u het gereedschap *MP4FRAGMENT* gebruiken. U hoeft de inhoud maar één keer te fragmenteren. Bijvoorbeeld:
+   Voor deze stap kunt u de opdracht *MP4FRAGMENT* gebruiken. U hoeft de inhoud maar één keer te fragmenteren. Bijvoorbeeld:
 
    ```
    ./mp4fragment Unfragmented.mp4 Fragmented.mp4
    ```
 
-1. Met het gereedschap *Bento4 MPDASH* kunt u de gefragmenteerde inhoud &#39;DASH-ify&#39; coderen.
+1. Gebruik de *Bento4 MPDASH* gebruiken om de gefragmenteerde inhoud te &quot;DASH-ify&quot; en te coderen.
 
    Gebruik deze opdracht om alle DRM-systemen op te geven die u wilt gebruiken en om eventuele uit de vorige stappen gegenereerde metagegevens voor toegang tot primetime door te geven. Bijvoorbeeld:
 
@@ -58,7 +57,7 @@ In deze taak wordt beschreven hoe u een hulpprogramma van derden kunt gebruiken 
    
    1. Klantenselectie van inhoud. Deze implementatie moet een eindpunt voor cliënten omvatten om een inhoudstoken voor een specifieke inhoudsidentiteitskaart aan te vragen.
    1. Klantrechten
-   1. Aanvragen voor licentietoken (ExpressPlay) van de client ( [ExpressPlay-licentietoken verzoek / reactieverwijzing](../../license-token-req-resp-ref/license-req-resp-overview.md))
+   1. Aanvragen voor licentietoken (ExpressPlay) van de client ( [ExpressPlay-verzoek voor licentietoken/reactieverwijzing](../../license-token-req-resp-ref/license-req-resp-overview.md))
 
 1. Maak uw client.
 

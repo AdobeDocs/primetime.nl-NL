@@ -1,14 +1,13 @@
 ---
 description: Met deze klassen kunt u logboekregistratie aanpassen.
 title: Logboekklassen
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: f42033ec-99d6-4755-90d5-04c2462e9f19
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '83'
 ht-degree: 0%
 
 ---
-
 
 # Logboekklassen{#logging-classes}
 
@@ -36,4 +35,3 @@ Met deze klassen kunt u logboekregistratie aanpassen.
   </tr> 
  </tbody> 
 </table>
-

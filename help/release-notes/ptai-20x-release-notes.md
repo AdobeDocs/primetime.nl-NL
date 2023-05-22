@@ -1,14 +1,13 @@
 ---
 title: Opmerkingen bij de release PTAI 20.12.1
 description: In de PTAI-release wordt beschreven wat nieuw of gewijzigd is, wat de opgeloste en bekende problemen zijn in Primetime Ad Insertion in 2020.
-translation-type: tm+mt
-source-git-commit: 8133c35bed7fc72a6c642016a2a4b69204ad8f7a
+exl-id: 47e36e42-b6a0-408c-93da-f63c929396b5
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '1081'
 ht-degree: 0%
 
 ---
-
 
 # Opmerkingen bij de release Primetime Ad Insertion 20.12.1
 
@@ -16,7 +15,7 @@ Opmerkingen bij de release van Primetime Ad Insertion 20.12.1 beschrijven nieuwe
 
 ## Nieuwe functies in PTAI 20.12.1
 
-**Wanneer:** Dinsdag, 08 december, 2020 van 01:00 AM aan 04:00 oosterse Tijd
+**Wanneer:** Dinsdag 08 december 2020, 13.00 - 04.00 uur Oosterse tijd
 
 **Wijzigingen**
 
@@ -26,7 +25,7 @@ Opmerkingen bij de release van Primetime Ad Insertion 20.12.1 beschrijven nieuwe
 
 ### Versie 20.11.1
 
-**Wanneer:** Donderdag, 5 november 2020 van 2:00 uur tot 05:00 uur Oosterse tijd
+**Wanneer:** Donderdag 5 november 2020, 14.00 tot 05.00 uur Oosterse tijd
 
 **Wijzigingen**
 
@@ -34,7 +33,7 @@ Opmerkingen bij de release van Primetime Ad Insertion 20.12.1 beschrijven nieuwe
 
 ### Versie 20.10.2
 
-**Wanneer:** Donderdag, 29 okt, 2020 van 12.01 uur tot 06.00 uur Oosterse tijd
+**Wanneer:** Donderdag 29 oktober 2020, 12.01 - 06.00 uur Oosterse tijd
 
 **Wijzigingen**
 
@@ -42,7 +41,7 @@ Opmerkingen bij de release van Primetime Ad Insertion 20.12.1 beschrijven nieuwe
 
 ### Versie 20.10.1
 
-**Wanneer:** Dinsdag, 13 oktober 2020, 03.00 - 07.00 uur Oosterse tijd
+**Wanneer:** Dinsdag 13 oktober 2020, 03.00 - 07.00 uur Oosterse tijd
 
 **Wijzigingen**
 
@@ -50,7 +49,7 @@ Opmerkingen bij de release van Primetime Ad Insertion 20.12.1 beschrijven nieuwe
 
 ### Versie 20.9.3
 
-**Wanneer:** Woensdag, 30 september, 2020 om 3:30:00 tot 6:30:00 Oosterse Tijd
+**Wanneer:** Woensdag 30 september 2020, 15:30 - 18:30 uur (Oost)
 
 **Wijzigingen**
 
@@ -58,14 +57,14 @@ Opmerkingen bij de release van Primetime Ad Insertion 20.12.1 beschrijven nieuwe
 
 ### Versie 20.9.2
 
-**Wanneer:** Dinsdag, 15 september 2020 van 3:30 uur tot 6:30 uur Oosterse tijd
+**Wanneer:** Dinsdag 15 september 2020, 15.30 tot 18.30 uur Oosterse tijd
 
 **Verbeteringen**
 
-* Bied ondersteuning voor het opnemen van niet-lineaire advertentietypen met behulp van `EXT-X-MARKER`-tags.
+* Verleende steun voor het opnemen van niet-lineaire advertentietypen die `EXT-X-MARKER` -tags.
 Neem voor meer informatie of om deze functie in te schakelen contact op met uw medewerker van de technische ondersteuning.
 
-* Bied ondersteuning voor het beperken van de totale tijd voor advertentie-oplossing, als providers te lang duren om te reageren. Om het beperken toe te laten, plaats de laarzentrekker API parameter `ptadtimeout` aan een waarde in milliseconden.
+* Bied ondersteuning voor het beperken van de totale tijd voor advertentie-oplossing, als providers te lang duren om te reageren. Om het beperken toe te laten, plaats de laarzentrekker API parameter `ptadtimeout` naar een waarde in milliseconden.
 
    >[!NOTE]
    >
@@ -73,7 +72,7 @@ Neem voor meer informatie of om deze functie in te schakelen contact op met uw m
 
 ### Versie 20.9.1
 
-**Wanneer:** Dinsdag, 1 september 2020 van 3:30 tot 7:30 Oost Tijd
+**Wanneer:** Dinsdag 1 september 2020, 15.30 tot 19.30 uur Oosterse tijd
 
 **Wijzigingen**
 
@@ -81,7 +80,7 @@ Neem voor meer informatie of om deze functie in te schakelen contact op met uw m
 
 ### Versie 20.8.4
 
-**Wanneer:** Woensdag, 19 augustus 2020, 03.30 uur tot 07.30 uur Oosterse tijd
+**Wanneer:** Woensdag 19 augustus 2020, 03.30 - 07.30 uur Oosterse tijd
 
 **Verbeteringen en correcties**
 
@@ -89,7 +88,7 @@ Onderhoudsupdates.
 
 ### Versie 20.8.1
 
-**Wanneer:** Dinsdag, 4 augustus, 2020 van 3.00 uur tot 6.00 uur Oosterse tijd
+**Wanneer:** Dinsdag 4 augustus 2020, 15.00 tot 18.00 uur Oosterse tijd
 
 **Verbeteringen en correcties**
 
@@ -97,7 +96,7 @@ Onderhoudsupdates.
 
 ### Versie 20.7.1
 
-**Wanneer:** Donderdag, 9 juli 2020, 03.00 - 05.00 uur Oosterse tijd
+**Wanneer:** Donderdag 9 juli 2020, 03.00 - 05.00 uur Oosterse tijd
 
 **Nieuwe functies en verbeteringen**
 
@@ -111,21 +110,21 @@ Onderhoudsupdates.
 
 ### Versie 20.6.2
 
-**Wanneer:** Donderdag, 18 juni 2020, 03.00 - 04.00 uur Oosterse tijd
+**Wanneer:** Donderdag 18 juni 2020, 03.00 - 04.00 uur Oosterse tijd
 
 **Verbeteringen**
 
-Verbeterde streamsynchronisatie voor videoclips die precisie in milliseconden vereisen. Neem contact op met de Adobe-ondersteuning om millisecondenprecisie in te schakelen voor `#EXT-X-PROGRAM-DATE-TIME tags`.
+Verbeterde streamsynchronisatie voor videoclips die precisie in milliseconden vereisen. Contact opnemen met de Adobe-ondersteuning om millisecondenprecisie in te schakelen voor `#EXT-X-PROGRAM-DATE-TIME tags`.
 
 ### Versie 20.6.1
 
-**Wanneer:** Dinsdag, 2 juni, 2020 van 03:00 AM aan 05:00 oosterse Tijd
+**Wanneer:** Dinsdag 2 juni 2020, 03.00 - 05.00 uur Oosterse tijd
 
 **Nieuwe functies**
 
 Neem contact op met de ondersteuning van Adobe om de volgende nieuwe functies in te schakelen via de serverconfiguratie:
 
-* Manifest Manipulation: HLS-segment en bron-URL&#39;s kunnen nu worden getransformeerd tussen HTTP en HTTPS om de prestaties te verbeteren door TLS-handtekeningen op back-end verzoeken te verminderen. Het kan ook worden gebruikt om fragmenten van advertentie/inhoud te verenigen op dezelfde CDN&#39;s.
+* Manifest Manipulation: HLS-segment en bron-URL&#39;s kunnen nu worden getransformeerd tussen HTTP en HTTPS om de prestaties te verbeteren door TLS-handtekeningen op back-end verzoeken te verminderen. Het kan ook worden gebruikt om fragmenten van advertentie/inhoud op zelfde CDNs te verenigen.
 
 * VOD in lange vorm: Verbeterde API&#39;s om sessies in leven te houden met VOD-middelen van lange formulieren.
 
@@ -137,7 +136,7 @@ Neem contact op met de ondersteuning van Adobe om de volgende nieuwe functies in
 
 ### Versie 20.5.1
 
-**Wanneer:** Dinsdag, 5 mei 2020 van 04:00 tot 05:00 uur Oosterse tijd
+**Wanneer:** Dinsdag 5 mei 2020, 04.00 - 05.00 uur Oosterse tijd
 
 * Probleem verholpen om ervoor te zorgen dat correcte kopballen CORS worden verstrekt wanneer if-Modified-Since kopballen worden verzonden.
 
@@ -147,7 +146,7 @@ Neem contact op met de ondersteuning van Adobe om de volgende nieuwe functies in
 
 ### Versie 20.3.4
 
-**Wanneer:** Woensdag, 1 april 2020 van 03:00 tot 04:00 Oost Tijd
+**Wanneer:** Woensdag 1 april 2020, 03.00 - 04.00 uur Oosterse tijd
 
 * Probleem verholpen waarbij ondertitels niet meer gesynchroniseerd werden na het plaatsen van de advertentie in VOD/WebVTT.
 
@@ -155,7 +154,7 @@ Neem contact op met de ondersteuning van Adobe om de volgende nieuwe functies in
 
 ### Versie 20.3.3
 
-**Wanneer:** Donderdag, 26 maart 2020, 03.00 - 04.00 uur Oosterse tijd
+**Wanneer:** Donderdag 26 maart 2020, 03.00 - 04.00 uur Oosterse tijd
 
 * SSAI 4XX en 5XX antwoorden verstrekken nu correct CORS-verwante kopballen, die dwars-domein javascript webview cliënten toestaan om foutenreacties met succes te lezen.
 
@@ -165,7 +164,7 @@ Neem contact op met de ondersteuning van Adobe om de volgende nieuwe functies in
 
 ### Versie 20.3.2
 
-**Wanneer:** Woensdag, 11 maart 2020, 05.30 - 07.00 uur Oosterse tijd
+**Wanneer:** Woensdag 11 maart 2020, 05.30 - 07.00 uur Oosterse tijd
 
 * Verbeteringen aan SCTE35 signaalbehandeling.
 
@@ -173,7 +172,7 @@ Neem contact op met de ondersteuning van Adobe om de volgende nieuwe functies in
 
 ### Versie 20.3.1
 
-**Wanneer:** donderdag, 5 maart, 2020 van 02:30 uur tot 04:30 uur Oosterse tijd
+**Wanneer:** Donderdag 5 maart 2020, 20.30 uur tot 04.30 uur Oosterse tijd
 
 * Prestatieverbeteringen:
 
@@ -185,18 +184,18 @@ Neem contact op met de ondersteuning van Adobe om de volgende nieuwe functies in
 
 ### Versie 20.2.1
 
-**Wanneer:** Donderdag, 13 februari 2020, 04.30 uur tot 05.30 uur Oosterse tijd
+**Wanneer:** Donderdag 13 februari 2020, 04.30 tot 05.30 uur Oosterse tijd
 
 * Toegevoegde ondersteuning voor stitching en assets die meerdere alleen-audio streams bevatten op basis van taal/codec/bitsnelheid.
 * Kleine prestatieverbeteringen en onderhoudsupdates.
 
 ### Versie 20.1.3
 
-**Wanneer:** Dinsdag, 28 januari, 2020 van 2:00 AM aan 03:00 oosterse Tijd
+**Wanneer:** Dinsdag 28 januari 2020, 23.00 tot 3.00 uur Oosterse tijd
 
 * **VMAP met FER-ondersteuning voor nbc CueFormat**
 
-   Zet cues van FER-stream om in FW-tijdlijnoverschrijvingsparams, wanneer `ptcueformat=nbc` wordt gebruikt en de stream een VOD-stream is met in-manifest aanwijzingen en kant-en-klare advertenties.
+   cues van FER-stream omzetten in FW-tijdlijnoverschrijvingsparams, wanneer `ptcueformat=nbc` wordt gebruikt en de stream is een VOD-stream met in-manifest aanwijzingen en kant-en-klare advertenties.
 
 * Maak user-agent gebied in de Kopbal van HTTP alvorens aan derdeleveranciers/CDN door:sturen.
 
@@ -206,13 +205,13 @@ Neem contact op met de ondersteuning van Adobe om de volgende nieuwe functies in
 
 ### Versie 20.1.2 (hotfix)
 
-**Wanneer:** Maandag, 20 januari, 2020 van 02:00 AM aan 03:00 Oost Tijd
+**Wanneer:** Maandag 20 januari 2020, 20.00 - 03.00 uur Oosterse tijd
 
 * Onderhoudsupdates.
 
 ### Versie 20.1.1
 
-**Wanneer:** Woensdag, 15 januari 2020 van 04.00 uur tot 05.00 uur Oosterse tijd
+**Wanneer:** Woensdag 15 januari 2020, 04.00 - 05.00 uur Oosterse tijd
 
 * De service Creative Repackaging biedt nu snellere toevoegingen door het automatisch blokkeren van lijsten met misvormde creatieve producten.
 
@@ -222,7 +221,7 @@ Neem contact op met de ondersteuning van Adobe om de volgende nieuwe functies in
 
 ## Opgeloste problemen {#Resolved-issues}
 
-Wanneer de oplossing aan een gemelde kwestie wordt geassocieerd, wordt een verwijzing van Zendesk getoond. Bijvoorbeeld, `ZD#xxxxx`.
+Wanneer de oplossing aan een gemelde kwestie wordt geassocieerd, wordt een verwijzing van Zendesk getoond. Bijvoorbeeld: `ZD#xxxxx`.
 
 **PTAI 20.9.1**
 

@@ -1,14 +1,13 @@
 ---
 description: U kunt aangepaste tagnamen in TVSDK globaal configureren met de MediaPlayerItemConfig-klasse.
 title: Methoden van de klasse Config voor tags
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: 6b3e344f-1d50-4743-9cc4-bd0bc82a0b9c
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '201'
 ht-degree: 0%
 
 ---
-
 
 # Methoden van de klasse Config voor tags{#config-class-methods-for-tags}
 
@@ -25,23 +24,23 @@ TVSDK past de algemene configuratie automatisch toe op elke mediastream waarvoor
    <td colname="col2"> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <span class="codeph"> public final String[] getSubscribedTags()  </span> </td> 
+   <td colname="col1"> <span class="codeph"> public final String[] getSubscribedTags() </span> </td> 
    <td colname="col2"> Hiermee wordt de huidige lijst met geabonneerde tags opgehaald. </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <span class="codeph"> public final void setSubscribedTags(String[] tags);  </span> </td> 
-   <td colname="col2"> Hiermee stelt u de lijst met geabonneerde tags in die aan de toepassing worden blootgesteld. <p>Uw toepassing wordt ook automatisch geabonneerd op alle tags die via <span class="codeph"> setAdTags </span> worden verzonden. </p> </td> 
+   <td colname="col1"> <span class="codeph"> public final void setSubscribedTags(String[] tags); </span> </td> 
+   <td colname="col2"> Hiermee stelt u de lijst met geabonneerde tags in die aan de toepassing worden blootgesteld. <p>Uw toepassing wordt ook automatisch geabonneerd op alle tags die via <span class="codeph"> setAdTags </span>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <b>De advertentietags aanpassen die worden gebruikt door de standaardopportuniteitsdetector</b> </td> 
    <td colname="col2"> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <span class="codeph"> public final String[] getAdTags();  </span> </td> 
+   <td colname="col1"> <span class="codeph"> public final String[] getAdTags(); </span> </td> 
    <td colname="col2"> Hiermee wordt de huidige lijst met advertentietags opgehaald. </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <span class="codeph"> public final void setAdTags(String[] tags);  </span> </td> 
+   <td colname="col1"> <span class="codeph"> public final void setAdTags(String[] tags); </span> </td> 
    <td colname="col2"> Hiermee stelt u de lijst met advertentietags in die door de standaardopportuniteitsgenerator wordt gebruikt. </td> 
   </tr> 
  </tbody> 
@@ -54,6 +53,5 @@ Houd rekening met het volgende:
    Indien aangetroffen, genereert TVSDK een `IllegalArgumentException`.
 * De naam van de aangepaste tag moet het voorvoegsel # bevatten.
 
-   `#EXT-X-ASSET` is bijvoorbeeld een correcte aangepaste tagnaam, maar `EXT-X-ASSET` is onjuist.
+   Bijvoorbeeld: `#EXT-X-ASSET` is een correcte aangepaste tagnaam, maar `EXT-X-ASSET` is onjuist.
 * U kunt de configuratie niet wijzigen nadat de mediastream is geladen.
-

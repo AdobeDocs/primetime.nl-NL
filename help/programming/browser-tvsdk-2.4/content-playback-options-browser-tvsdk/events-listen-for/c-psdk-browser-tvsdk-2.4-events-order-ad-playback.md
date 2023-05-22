@@ -1,16 +1,15 @@
 ---
 description: Wanneer uw afspelen reclame bevat, verzendt Browser-TVSDK gebeurtenissen/meldingen in de over het algemeen verwachte reeksen. De speler kan handelingen implementeren op basis van gebeurtenissen in de verwachte volgorde.
 title: Volgorde van reclameevenementen
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: fcc40aa8-9364-40a8-b2f2-9327e24819af
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '96'
 ht-degree: 0%
 
 ---
 
-
-# Volgorde van advertentieevenementen{#order-of-advertising-events}
+# Volgorde van reclameevenementen{#order-of-advertising-events}
 
 Wanneer uw afspelen reclame bevat, verzendt Browser-TVSDK gebeurtenissen/meldingen in de over het algemeen verwachte reeksen. De speler kan handelingen implementeren op basis van gebeurtenissen in de verwachte volgorde.
 
@@ -36,4 +35,3 @@ player.addEventListener(AdobePSDK.PSDKEventType.AD_PROGRESS, onAdProgress);
 player.addEventListener(AdobePSDK.PSDKEventType.AD_COMPLETED, onAdCompleted); 
 player.addEventListener(AdobePSDK.PSDKEventType.AD_BREAK_COMPLETED, onAdbreakCompleted);
 ```
-

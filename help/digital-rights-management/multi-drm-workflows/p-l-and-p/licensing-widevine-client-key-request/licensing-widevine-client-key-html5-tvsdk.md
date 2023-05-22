@@ -1,14 +1,13 @@
 ---
 description: Code kan een sleutel aanvragen via DRMManager.
 title: Belangrijke aanvraagworkflow voor HTML5 TVSDK
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: 1f60aadc-4730-4f71-a221-1af3ae3cba93
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '106'
 ht-degree: 0%
 
 ---
-
 
 # Belangrijke aanvraagworkflow voor HTML5 TVSDK{#key-request-workflow-on-html-tvsdk}
 

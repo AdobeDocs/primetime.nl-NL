@@ -1,26 +1,25 @@
 ---
 description: Eén locatie instellen om fouten af te handelen.
 title: Foutafhandeling instellen
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: 2d0e0d08-d932-4b6e-8f95-494a2e666827
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '88'
-ht-degree: 2%
+ht-degree: 0%
 
 ---
-
 
 # Foutafhandeling instellen{#set-up-error-handling}
 
 Eén locatie instellen om fouten af te handelen.
 
-1. Voer een gebeurteniscallback functie voor `MediaPlayerEvent.STATUS_CHANGED` uit.
+1. Een gebeurteniscallback-functie implementeren voor `MediaPlayerEvent.STATUS_CHANGED`.
 
-   TVSDK geeft gebeurtenisinformatie door, zoals een `MediaPlayerStatusChangeEvent`-object.
-1. In callback, wanneer de teruggekeerde staat `MediaPlayerState.ERROR` is, verstrek logica om alle fouten te behandelen.
-1. Nadat de fout is afgehandeld, herstelt u het `MediaPlayer`-object of laadt u een nieuwe mediabron.
+   TVSDK geeft gebeurtenisinformatie door, zoals een `MediaPlayerStatusChangeEvent` object.
+1. In callback, wanneer de teruggekeerde staat is `MediaPlayerState.ERROR`, biedt logica voor de afhandeling van alle fouten.
+1. Nadat de fout is afgehandeld, stelt u de `MediaPlayer` een nieuwe mediabron te laden of te gebruiken.
 
-   Wanneer het `MediaPlayer` voorwerp in de foutenstaat is, blijft het in die staat tot u het terugstelt gebruikend de `MediaPlayer.reset` methode.
+   Wanneer de `MediaPlayer` Het object bevindt zich in de foutstatus en blijft in die status totdat u het opnieuw instelt met de opdracht `MediaPlayer.reset` methode.
 
 <!--<a id="example_49FF225E92EA494AA06B2E5F26101F4C"></a>-->
 
@@ -37,4 +36,3 @@ mediaPlayer.addEventListener(
     } 
 });
 ```
-

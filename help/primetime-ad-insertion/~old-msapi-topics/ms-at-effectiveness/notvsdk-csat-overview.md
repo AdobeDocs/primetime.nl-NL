@@ -1,11 +1,10 @@
 ---
 description: Uitgevers kunnen HLS-Volgzame videospelers bouwen die met de cliënt-kant en volgwerkschema's van de server van Primetime manifest werken. De interfaces aan de manifestserver voor de levende stroom en video op bestelling (VOD) gevallen zijn lichtjes verschillend.
 title: Overzicht van niet-TVSDK client-side tracking
-translation-type: tm+mt
 source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
 source-wordcount: '727'
-ht-degree: 1%
+ht-degree: 0%
 
 ---
 
@@ -21,9 +20,9 @@ De manifestserver verstrekt API om douanespelers toe te laten om de volgende URL
 * Voortgang van advertentiepod
 * Voortgang inhoudspod
 
-De API van de manifestserver veronderstelt dat om het even welke videospeler die het gebruikt aan de minimumvereisten voldoet. Zie [Vereisten voor videospeler](/help/primetime-ad-insertion/~old-msapi-topics/ms-player-req.md) voor meer informatie.
+De API van de manifestserver veronderstelt dat om het even welke videospeler die het gebruikt aan de minimumvereisten voldoet. Zie [Vereisten voor videospeler](/help/primetime-ad-insertion/~old-msapi-topics/ms-player-req.md) voor meer informatie .
 
-## Workflow {#section_cst_flow} voor tracering aan de clientzijde
+## Workflow voor bijhouden aan clientzijde {#section_cst_flow}
 
 ![](assets/pt_ssai_notvsdk_csat_ai-workflow.png)
 
@@ -42,7 +41,7 @@ De API van de manifestserver veronderstelt dat om het even welke videospeler die
    u=9a2893fd893cab27da24059ff034b78d&z=173475&pttrackingmode=simple&pttrackingversion=v2&__sid__=docExample02
    ```
 
-   De URL bevat de elementen die worden beschreven in [Een opdracht verzenden naar de manifest-server](/help/primetime-ad-insertion/~old-msapi-topics/ms-getting-started/ms-sending-cmd.md).
+   De URL bevat de elementen die worden beschreven in [Een opdracht naar de manifest-server verzenden](/help/primetime-ad-insertion/~old-msapi-topics/ms-getting-started/ms-sending-cmd.md).
 
 1. De manifestserver vestigt een zitting voor die speler en produceert een unieke zitting-identiteitskaart Er wordt een nieuwe URL voor de M3U8-afspeellijst gemaakt, die als JSON-reactie wordt geretourneerd naar de speler. De JSON heeft de volgende syntaxis:
 
@@ -124,23 +123,23 @@ De API van de manifestserver veronderstelt dat om het even welke videospeler die
 
    >[!NOTE]
    >
-   >De speler selecteert de URL van de afspeellijst op streamniveau om de inhoudsstroom te verkrijgen. De manifestserver wint originele playlist van CDN terug. Sommige codeermodules kunnen extra details in het `#EXTINF` titelattribuut injecteren, bijvoorbeeld:
+   >De speler selecteert de URL van de afspeellijst op streamniveau om de inhoudsstroom te verkrijgen. De manifestserver wint originele playlist van CDN terug. Sommige codeermodules injecteren mogelijk aanvullende details in de `#EXTINF` titelkenmerk, bijvoorbeeld:
    >
    >
    ```
    >#EXTINF:6.006,LTC=2017-08-23T13:25:47+00:00
    >```
 
-   Aangezien de manifestserver niet de betekenis van niet-standaardattributen kan afleiden om hen voor ad-stitched playlist te wijzigen, verwijdert de manifestserver alle extra attributen voorbij de duurinformatie in deze markering. Zie de [EXTINF](https://tools.ietf.org/html/rfc8216#section-4.3.2.1)-vermelding in de HLS-specificatie voor meer informatie.
+   Aangezien de manifestserver niet de betekenis van niet-standaardattributen kan afleiden om hen voor ad-stitched playlist te wijzigen, verwijdert de manifestserver alle extra attributen voorbij de duurinformatie in deze markering. Zie de [EXTINF](https://tools.ietf.org/html/rfc8216#section-4.3.2.1) in de HLS-specificatie voor meer informatie.
 
-1. Om het volgen informatie te verzoeken, voegt de speler de vraagparameter `pttrackingposition` met om het even welke alfanumerieke waarde aan stream-vlakke playlist URL voor het geselecteerde beetjetarief toe. Bijvoorbeeld:
+1. Om het volgen informatie te verzoeken, voegt de speler de vraagparameter toe `pttrackingposition` met een alfanumerieke waarde naar de URL van de afspeellijst op streamniveau voor de geselecteerde bitsnelheid. Bijvoorbeeld:
 
    ```URL
    https://pcor3.manifest.auditude.com/auditude/vod/7LTc86_kMUDFcCjoH9X7K_2auwb_gnWM/500/f958bef8-9158-43cc-80b9-4b15417b7895/aHR0cDovL3d3dy5wdGRlbW9zLmNvbS92aWRlb3MvdG9zaGR1bmVuY3J5cHRlZC9obHMvNTAwL3RvY181MDAubTN1OA.m3u8?u=9a2893fd893cab27da24059ff034b78d
    &z=173475&pttrackingmode=simple&pttrackingversion=v2&pttrackingposition=1
    ```
 
-1. De manifestserver retourneert het playlist-bestand dat is gevuld met een [JSON](/help/primetime-ad-insertion/~old-msapi-topics/ms-list-file-formats/notvsdk-csat-sidecar.md) of [VMAP](/help/primetime-ad-insertion/~old-msapi-topics/ms-list-file-formats/notvsdk-csat-vmap.md)-object dat de gegevens voor het bijhouden van de advertentie bevat voor het op dat moment gevraagde m3u8-bestand op streamniveau.
+1. De manifestserver keert het playlist dossier terug dat met of wordt bevolkt  [JSON](/help/primetime-ad-insertion/~old-msapi-topics/ms-list-file-formats/notvsdk-csat-sidecar.md) of [VMAP](/help/primetime-ad-insertion/~old-msapi-topics/ms-list-file-formats/notvsdk-csat-vmap.md) -object met de gegevens voor het bijhouden van de advertentie voor het momenteel aangevraagde bestand m3u8 op streamniveau.
 
    >[!NOTE]
    >
@@ -148,7 +147,7 @@ De API van de manifestserver veronderstelt dat om het even welke videospeler die
 
    >[!NOTE]
    >
-   >De manifestserver genereert het ad-tracking-object op basis van de waarde `pttrackingversion` in de Bootstrap-URL. Als `pttrackingversion` wordt weggelaten of een ongeldige waarde heeft, dan zal de manifestserver automatisch de informatie van het advertentietracken in `#EXT-X-MARKER` markeringen in elke gevraagde stroom-vlakke playlist bevolken. Zie [voor meer informatie](/help/primetime-ad-insertion/~old-msapi-topics/ms-at-effectiveness/ms-api-playlists.md).
+   >De manifestserver genereert het object voor het bijhouden van de advertentie op basis van de `pttrackingversion` waarde in de Bootstrap URL. Als de `pttrackingversion` wordt weggelaten of heeft een ongeldige waarde, dan zal de manifestserver automatisch de informatie van het volgen van de advertentie in `#EXT-X-MARKER` -tags in elke opgevraagde afspeellijst op streamniveau. Zie [voor meer informatie](/help/primetime-ad-insertion/~old-msapi-topics/ms-at-effectiveness/ms-api-playlists.md).
 
 1. De speler vraagt elke URL voor het bijhouden van de advertentie op het juiste moment aan voor elke gebeurtenis die de advertentie bijhoudt.
 

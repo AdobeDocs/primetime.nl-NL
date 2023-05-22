@@ -1,16 +1,15 @@
 ---
 description: TVSDK downloadt de advertentiesegmenten en rendert deze op het scherm van het apparaat.
 title: Ad-playbackfase
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: c12dcf84-0daa-4bc2-8e17-fdf47a760296
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '184'
 ht-degree: 0%
 
 ---
 
-
-# Ad-playback fase{#ad-playback-phase}
+# Ad-playbackfase{#ad-playback-phase}
 
 TVSDK downloadt de advertentiesegmenten en rendert deze op het scherm van het apparaat.
 
@@ -30,4 +29,4 @@ Voor alle drie foutklassen heeft TVSDK gebeurtenissen doorgestuurd naar uw toepa
 
    Uw toepassing moet de juiste actie ondernemen.
 
-Of er fouten optreden of niet, TVSDK roept onAdBreakComplete aan voor elke `onAdBreakStart` en `onAdComplete` voor elke `onAdStart`. Als segmenten echter niet kunnen worden gedownload, bevat de tijdlijn mogelijk tussenruimten. Wanneer de tussenruimten groot genoeg zijn, kunnen de waarden in de positie van de afspeelkop en de gerapporteerde en de voortgang discontinuïteit vertonen.
+Of er fouten optreden of niet, TVSDK roept onAdBreakComplete aan voor elke fout `onAdBreakStart` en `onAdComplete` voor elke `onAdStart`. Als segmenten echter niet kunnen worden gedownload, bevat de tijdlijn mogelijk tussenruimten. Wanneer de tussenruimten groot genoeg zijn, kunnen de waarden in de positie van de afspeelkop en de gerapporteerde en de voortgang discontinuïteit vertonen.

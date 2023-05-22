@@ -1,14 +1,13 @@
 ---
 description: Deze klassen geven opmaak voor tekst op.
 title: Tekstopmaakklassen
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: 885de6f1-6c1a-4862-ab57-3854a3d5ebaf
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '133'
 ht-degree: 0%
 
 ---
-
 
 # Tekstopmaakklassen{#text-format-classes}
 
@@ -22,4 +21,3 @@ Pakket: [com.adobe.mediacore.textformat](https://help.adobe.com/en_US/primetime/
 | [Lettertype](https://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls_1.4/com/adobe/mediacore/textformat/Font.html) | Klasse. Verschaft een tekstlettertype. |
 | [FontEdge](https://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls_1.4/com/adobe/mediacore/textformat/FontEdge.html) | Klasse. Hiermee geeft u de gewenste fontrand op. |
 | [Grootte](https://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls_1.4/com/adobe/mediacore/textformat/Size.html) | Klasse. Geeft een waarde voor de tekengrootte. |
-

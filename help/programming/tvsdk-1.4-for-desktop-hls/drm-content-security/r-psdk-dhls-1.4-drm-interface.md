@@ -1,16 +1,15 @@
 ---
 description: Het belangrijkste client-side element van het DRM-systeem (Primetime Digital Rights Management) is DRM Manager.
 title: Overzicht van de primaire DRM-interface
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: 8d6b9416-5d8a-4d1e-b8e6-47c43389f079
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '225'
 ht-degree: 0%
 
 ---
 
-
-# Primetime DRM interface overview{#primetime-drm-interface-overview}
+# Overzicht van de primaire DRM-interface{#primetime-drm-interface-overview}
 
 Het belangrijkste client-side element van het DRM-systeem (Primetime Digital Rights Management) is DRM Manager.
 
@@ -18,7 +17,7 @@ Het belangrijkste client-side element van het DRM-systeem (Primetime Digital Rig
 
 Primetime DRM biedt een schaalbare, efficiënte workflow voor het implementeren van inhoudsbeveiliging in TVSDK-toepassingen. U beschermt en beheert de rechten voor uw video-inhoud door een licentie te maken voor elk digitaal mediabestand.
 
-TVSDK ondersteunt de integratie van Primetime DRM als aangepaste DRM-workflows. Dit betekent dat uw toepassing de DRM authentificatiewerkschema&#39;s moet uitvoeren alvorens de stroom te spelen door de Flash `DRMManager` te gebruiken. Om dit in te schakelen, voorziet `MediaPlayer` u van DRM manager voor authentificatie.
+TVSDK ondersteunt de integratie van Primetime DRM als aangepaste DRM-workflows. Dit betekent dat uw toepassing de DRM-verificatieworkflows moet implementeren voordat de stream kan worden afgespeeld met de Flash `DRMManager`. Om dit mogelijk te maken, `MediaPlayer` biedt u de DRM-manager voor verificatie.
 
 Dit zijn de belangrijkste API-elementen voor het werken met DRM:
 

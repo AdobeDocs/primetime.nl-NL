@@ -1,14 +1,13 @@
 ---
 description: Het TVSDK-meldingssysteem produceert verschillende fouten, waarschuwingen en informatieve kennisgevingen die diagnostische metagegevens bieden.
 title: Meldingscodes
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: 6cbc85d7-c197-448b-aa90-554c70af6557
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '224'
 ht-degree: 0%
 
 ---
-
 
 # TVSDK-meldingssysteem {#tvsdk-notification-system}
 
@@ -42,16 +41,15 @@ Meldingsobjecten bevatten informatie over de status van de speler. TVSDK biedt e
   </tr> 
   <tr rowsep="1"> 
    <td colname="1"><span class="codeph"> name</span></td> 
-   <td colname="2">Een tekenreeks die een door de mens leesbare beschrijving van de code bevat, zoals <span class="codeph"> SEEK_ERROR</span>. </td> 
+   <td colname="2">Een tekenreeks die een leesbare beschrijving van de code bevat, zoals <span class="codeph"> ZOEKEN_FOUT</span>. </td> 
   </tr> 
   <tr rowsep="1"> 
    <td colname="1"><span class="codeph"> metagegevens</span> </td> 
-   <td colname="2">Sleutel-waardeparen die extra relevante informatie over de kennisgeving bevatten. Een sleutel met de naam <span class="codeph"> URL</span> zou bijvoorbeeld worden gekoppeld aan een waarde die een URL is die gerelateerd is aan het bericht, zoals een ongeldige URL die een fout heeft veroorzaakt. </td> 
+   <td colname="2">Sleutel-waardeparen die extra relevante informatie over de kennisgeving bevatten. Een toets met de naam <span class="codeph"> URL</span> zou worden gecombineerd met een waarde die een URL is die gerelateerd is aan het bericht, zoals een ongeldige URL die een fout heeft veroorzaakt. </td> 
   </tr> 
   <tr rowsep="0"> 
    <td colname="1"><span class="codeph"> innerNotification</span></td> 
-   <td colname="2">Een verwijzing naar een ander <span class="codeph"> PTNotification</span>-object dat deze melding rechtstreeks heeft beïnvloed. Een voorbeeld kan een melding zijn over een fout bij het invoegen van een invoegpositie die direct overeenkomt met een invoegconflict in een tijdlijn. Niet alle meldingen bevatten een binnenste melding. </td> 
+   <td colname="2">Een verwijzing naar een andere <span class="codeph"> PTNotification</span> object dat dit bericht rechtstreeks beïnvloedt. Een voorbeeld kan een melding zijn over een fout bij het invoegen van een invoegpositie die direct overeenkomt met een invoegconflict in een tijdlijn. Niet alle meldingen bevatten een binnenste melding. </td> 
   </tr> 
  </tbody> 
 </table>
-

@@ -2,14 +2,13 @@
 title: Informatie over de referentie-implementaties
 description: Informatie over de referentie-implementaties
 copied-description: true
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: fe387330-9449-4977-be15-069c814354bf
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '563'
 ht-degree: 0%
 
 ---
-
 
 # Informatie over de referentie-implementaties{#about-the-reference-implementations}
 
@@ -21,12 +20,12 @@ In deze handleiding worden de installatie, configuratie en werking van de Adobe 
 
 De Primetime DRM verwijzingsimplementaties omvatten deze componenten:
 
-* **Hulpprogramma**  voor opdrachtregels - Deze gereedschappen zijn gebaseerd op dezelfde Primetime DRM SDK-code die wordt gebruikt in de Primetime DRM-licentieserver. U kunt verpakken, licenties en andere DRM-taken uitvoeren vanaf de opdrachtregel en naadloos schakelen tussen het gebruik van de opdrachtregelprogramma&#39;s en de licentieserver.
-* **Licentieserver** : een volledig functionele, aanpasbare licentieserver (die hieronder wordt beschreven als een van uw licentieserveropties).
+* **Opdrachtregelprogramma&#39;s** - Deze gereedschappen zijn gebaseerd op dezelfde Primetime DRM SDK-code die wordt gebruikt in de Primetime DRM-licentieserver. U kunt verpakken, licenties en andere DRM-taken uitvoeren vanaf de opdrachtregel en naadloos schakelen tussen het gebruik van de opdrachtregelprogramma&#39;s en de licentieserver.
+* **Licentieserver** - Een volledig functionele, aanpasbare licentieserver (hieronder beschreven als een van uw opties voor licentieservers).
 
 **Licentieserveropties:**
 
-* **De Primetime DRM verwijzingsimplementaties**  - Het onderwerp van deze gids, deze verwijzingsimplementatie kenmerkt een robuuste DRM vergunningsserver die alle eigenschappen toont die door Primetime DRM SDK worden verstrekt. Deze implementatie wordt geleverd met broncode en instructies voor het samenstellen van de code. Deze implementatie is niet bedoeld om zoals is te worden gebruikt (hoewel een [!DNL .war] dossier inbegrepen is dat u snel kunt opstellen). Het is hoofdzakelijk bedoeld als verwijzing u kunt gebruiken om uw eigen server van de douanevergunning te bouwen.
+* **De Primetime DRM-verwijzingsimplementaties** - Het onderwerp van deze handleiding, deze verwijzingsimplementatie kenmerkt een robuuste DRM vergunningsserver die alle eigenschappen toont die door Primetime DRM SDK worden verstrekt. Deze implementatie wordt geleverd met broncode en instructies voor het samenstellen van de code. Deze implementatie is niet bedoeld als zodanig (hoewel [!DNL .war] Het bestand is opgenomen en u kunt het snel implementeren.) Het is hoofdzakelijk bedoeld als verwijzing u kunt gebruiken om uw eigen server van de douanevergunning te bouwen.
 
    Functies van licentieserver:
 
@@ -34,7 +33,7 @@ De Primetime DRM verwijzingsimplementaties omvatten deze componenten:
    * Beheert vergunningsverzoeken en bepaalt het type vergunning dat wordt uitgegeven wanneer de vergunning het ketenen wordt toegepast.
    * Geeft licenties voor inhoud die meerdere Primetime DRM-beleidsregels bevat.
    * Geeft licenties die levering via Remote Key aan iOS-clients ondersteunen. Hiervoor is Primetime DRM vereist.
-   * Kwesties vergunningen die een externe raadpleging en terugwinning van de Sleutel van de Encryptie van de Inhoud (CEK) vereisen.
+   * Kwesties vergunningen die een externe raadpleging en herwinning van de Sleutel van de Encryptie van de Inhoud (CEK) vereisen.
    * Zoekt een gegevensbestand om te bepalen als een gebruiker wordt gemachtigd om inhoud te bekijken.
    * Zoekt in Primetime DRM-beleidsupdate de lijsten.
    * Hiermee zoekt u lijsten met intrekkingen van machines.
@@ -58,7 +57,6 @@ De Primetime DRM verwijzingsimplementaties omvatten deze componenten:
    * Synchronisatieverzoeken
    * Licentie terugsturen
 
-* **De Primetime DRM-server voor beveiligde streaming**  - Dit is een kant-en-klare binaire oplossing die u snel en met minimale moeite kunt implementeren. Het is een goede optie voor klanten die snel een concepttest willen tonen, of het *kan een productieoptie zijn als uw aangepaste DRM-behoeften minimaal zijn.* Zie Verwante informatie hieronder voor meer informatie.
+* **De Primetime DRM-server voor beveiligde streaming** - Dit is een kant-en-klare binaire oplossing die u snel en met minimale moeite kunt implementeren. Het is een goede optie voor klanten die het Bewijs van Concept snel willen tonen, of het *kon* zijn een productieoptie als uw aangepaste DRM-behoeften minimaal zijn. Zie Verwante informatie hieronder voor meer informatie.
 
-* **De Primetime Cloud DRM-service**  - Dit is een op Adobe gehoste licentieserver die u kunt gebruiken voor het bedienen van licenties. (U moet een Primetime-licentienemer zijn om deze service te kunnen gebruiken.) Met deze Adobe-cloudservice verliest u de kosten, het onderhoud en de engineering die nodig zijn om uw eigen service te maken. Zie Verwante informatie hieronder voor meer informatie.
-
+* **De Primetime Cloud DRM-service** - Dit is een op Adobe gehoste licentieserver die u kunt gebruiken voor het bedienen van licenties. (U moet een Primetime-licentienemer zijn om deze service te kunnen gebruiken.) Met deze Adobe-cloudservice verliest u de kosten, het onderhoud en de engineering die nodig zijn om uw eigen service te maken. Zie Verwante informatie hieronder voor meer informatie.

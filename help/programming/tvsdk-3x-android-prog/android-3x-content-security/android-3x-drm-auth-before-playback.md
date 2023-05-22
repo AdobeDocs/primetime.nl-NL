@@ -1,14 +1,13 @@
 ---
 description: Wanneer de DRM-metagegevens voor een video gescheiden zijn van de mediastream, moet u verifiëren voordat u begint met afspelen.
 title: DRM-verificatie vóór afspelen
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: 74eb7218-403e-4264-9063-bf959403436f
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '339'
-ht-degree: 1%
+ht-degree: 0%
 
 ---
-
 
 # DRM-verificatie vóór afspelen {#drm-authentication-before-playback}
 
@@ -19,9 +18,9 @@ Een video-element kan bijvoorbeeld een gekoppeld DRM-metagegevensbestand hebben:
 * `"url": "https://www.domain.com/asset.m3u8"`
 * `"drmMetadata": "https://www.domain.com/asset.metadata"`
 
-In dit voorbeeld kunt u `DRMHelper`-methoden gebruiken om de inhoud van het DRM-metagegevensbestand te downloaden, te parseren en te controleren of DRM-verificatie nodig is.
+In dit voorbeeld kunt u `DRMHelper` methoden om de inhoud van het DRM-metagegevensbestand te downloaden, te parseren en te controleren of DRM-verificatie nodig is.
 
-1. Gebruik `loadDRMMetadata` om de metagegevens-URL-inhoud te laden en de gedownloade bytes te parseren naar een `DRMMetadata`.
+1. Gebruiken `loadDRMMetadata` om de URL-inhoud van metagegevens te laden en de gedownloade bytes te parseren naar een `DRMMetadata`.
 
    >[!TIP]
    >
@@ -46,9 +45,9 @@ In dit voorbeeld kunt u `DRMHelper`-methoden gebruiken om de inhoud van het DRM-
 
    Als gebruikers niet weten dat de bewerking asynchroon is, vragen zij zich wellicht af waarom het afspelen nog niet is gestart. U kunt bijvoorbeeld een draaischijf weergeven terwijl de DRM-metagegevens worden gedownload en geparseerd.
 
-1. Voer callbacks in `DRMLoadMetadataListener` uit.
+1. Implementeer de callbacks in de `DRMLoadMetadataListener`.
 
-   `loadDRMMetadata` roept deze gebeurtenismanagers.
+   De `loadDRMMetadata` roept deze gebeurtenismanagers aan.
 
    ```java
    public interface DRMLoadMetadataListener { 
@@ -71,7 +70,7 @@ In dit voorbeeld kunt u `DRMHelper`-methoden gebruiken om de inhoud van het DRM-
    * `onLoadMetadataUrlComplete` Hiermee wordt gedetecteerd wanneer de URL van de metagegevens is geladen.
    * `onLoadMetadataUrlError` geeft aan dat de metagegevens niet zijn geladen.
 
-1. Wanneer het laden is voltooid, controleert u het object `DRMMetadata` om te bepalen of DRM-verificatie is vereist.
+1. Wanneer het laden is voltooid, controleert u de `DRMMetadata` -object om te bepalen of DRM-verificatie vereist is.
 
    ```java
    public static boolean isAuthNeeded(DRMMetadata drmMetadata);

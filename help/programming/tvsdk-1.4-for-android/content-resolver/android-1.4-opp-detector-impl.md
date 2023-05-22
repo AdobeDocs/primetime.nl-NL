@@ -1,20 +1,19 @@
 ---
 description: U kunt uw eigen opportuniteitsdetectors implementeren door de interface PlacementOpportunityDetector te implementeren.
 title: Een aangepaste opportuniteitsdetector implementeren
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: d78949a0-2c76-4976-9358-05f3db86781e
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '135'
-ht-degree: 2%
+ht-degree: 0%
 
 ---
 
-
-# Een aangepaste opportuniteitsdetector {#implement-a-custom-opportunity-detector} implementeren
+# Een aangepaste opportuniteitsdetector implementeren {#implement-a-custom-opportunity-detector}
 
 U kunt uw eigen opportuniteitsdetectors implementeren door de interface PlacementOpportunityDetector te implementeren.
 
-1. Een aangepaste `AdvertisingFactory`-instantie maken en `createOpportunityDetector` overschrijven. Bijvoorbeeld:
+1. Een aangepaste `AdvertisingFactory` instantie en overschrijving `createOpportunityDetector`. Bijvoorbeeld:
 
    ```java
    new AdvertisingFactory() { 
@@ -27,7 +26,7 @@ U kunt uw eigen opportuniteitsdetectors implementeren door de interface Placemen
    }
    ```
 
-1. Registreer de fabriek van de advertentiecliënt aan `MediaPlayer`. Bijvoorbeeld:
+1. De advertentiecliënt registreren bij `MediaPlayer`. Bijvoorbeeld:
 
    ```java
    // register the custom advertising factory with media player 
@@ -35,16 +34,16 @@ U kunt uw eigen opportuniteitsdetectors implementeren door de interface Placemen
    mediaPlayer.registerAdClientFactory(advertisingFactory);
    ```
 
-1. Maak een aangepaste opportuniteitsdetectorklasse die de klasse `PlacementOpportunityDetector` uitbreidt.
+1. Een aangepaste opportuniteitsdetectorklasse maken die de klasse `PlacementOpportunityDetector` klasse.
    1. Overschrijf deze functie in de aangepaste opportuniteitsdetector:
 
       ```java
       public List<PlacementOpportunity> process(List<TimedMetadata> timedMetadataList, Metadata metadata)
       ```
 
-      De `timedMetadataList` bevat de lijst van beschikbare `TimedMetadata`, die wordt gesorteerd. Metagegevens bevatten de doelparameters en de aangepaste parameters die naar de advertentieprovider moeten worden verzonden.
+      De `timedMetadataList` bevat de lijst met beschikbare `TimedMetadata`, die wordt gesorteerd. Metagegevens bevatten de doelparameters en de aangepaste parameters die naar de advertentieprovider moeten worden verzonden.
 
-   1. Maak voor elke `TimedMetadata` een `List<PlacementOpportunity>`. De lijst mag leeg zijn, maar niet null. `PlacementOpportunity` moeten de volgende kenmerken hebben:
+   1. Voor elke `TimedMetadata`, een `List<PlacementOpportunity>`. De lijst mag leeg zijn, maar niet null. `PlacementOpportunity` moeten de volgende kenmerken hebben:
 
       ```java
       PlacementOpportunity( 
@@ -54,7 +53,7 @@ U kunt uw eigen opportuniteitsdetectors implementeren door de interface Placemen
       )
       ```
 
-   1. Nadat de plaatsingskansen voor alle ontdekte getimed meta-gegevensvoorwerpen worden gecreeerd, keer eenvoudig de `PlacementOpportunity` lijst terug.
+   1. Nadat de plaatsingsmogelijkheden voor alle ontdekte getimede meta-gegevensvoorwerpen worden gecreeerd, keer eenvoudig terug `PlacementOpportunity` lijst.
 
 Dit is een voorbeeld van een aangepaste plaatsingsopportuniteitsdetector:
 
@@ -82,4 +81,3 @@ public class CustomPlacementOpportunityDetector implements PlacementOpportunityD
     ... 
 } 
 ```
-

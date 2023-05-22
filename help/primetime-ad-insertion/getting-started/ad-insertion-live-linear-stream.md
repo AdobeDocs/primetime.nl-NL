@@ -1,14 +1,13 @@
 ---
 title: Ad Insertion gebruiken in Live/Lineaire stream
 description: Ad Insertion gebruiken in Live/Lineaire stream
-translation-type: tm+mt
-source-git-commit: 0f98b9848f1764e7c66e3692d8a845513493597f
+exl-id: d56ed723-ec72-4bbd-befc-6858c7c9d800
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '274'
 ht-degree: 0%
 
 ---
-
 
 # Ad Insertion gebruiken in Live/Lineaire stream {#ad-insertion-live-linear-stream}
 
@@ -28,7 +27,7 @@ Primetime Ad Insertion ondersteunt een groot aantal standaard- en niet-standaard
 
 Neem contact op met de ondersteuningsvertegenwoordiger van Primetime voor meer informatie of andere ondersteunde actiefindelingen.
 
-## Ondersteuning voor gedeeltelijk ad-einde {#partial-ad-break-support}
+## Ondersteuning voor gedeeltelijk afbreken van advertenties {#partial-ad-break-support}
 
 Gedeeltelijke advertentie-einden kunnen worden gebruikt in situaties waarin een viewer een live/lineaire stream invoert nadat een advertentie-einde is gestart.  Als een viewer bijvoorbeeld een lange versie van 2:00 invoert en een onderbreking van 1:00 invoert, zorgt de gedeeltelijke invoeging en de invoeging van onderbreking ervoor dat de advertenties in de resterende tijd worden weergegeven. Zonder gedeeltelijke invoeging in een advertentie, worden tijdens het einde geen advertenties naar deze viewer verzonden. Met Primetime Ad Insertion kunt u de invoeging van delen en afbrekingen standaard inschakelen als de juiste tags aanwezig zijn in de mediastream(s).
 

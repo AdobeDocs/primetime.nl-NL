@@ -1,16 +1,15 @@
 ---
 description: Wanneer een segment mist, bijvoorbeeld wanneer een bepaald segment er niet in slaagt te downloaden, probeert om door een verscheidenheid van failoverpogingen terug te krijgen. Als het niet kan herstellen, geeft het een fout uit.
 title: Ontbrekende segment-failover
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: e941008a-99a5-4fff-ac88-133abcf9380d
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '287'
 ht-degree: 0%
 
 ---
 
-
-# Ontbrekende segment failover{#missing-segment-failover}
+# Ontbrekende segment-failover{#missing-segment-failover}
 
 Wanneer een segment mist, bijvoorbeeld wanneer een bepaald segment er niet in slaagt te downloaden, probeert om door een verscheidenheid van failoverpogingen terug te krijgen. Als het niet kan herstellen, geeft het een fout uit.
 
@@ -21,13 +20,12 @@ Als een segment ontbreekt op de server omdat, bijvoorbeeld, het manifestdossier 
 1. Doorloop elke beschikbare bitsnelheid in elke beschikbare variant.
 1. Sla het segment over en geef een waarschuwing weer.
 
-Wanneer TVSDK geen alternatief segment kan verkrijgen, leidt het tot een `CONTENT_ERROR` foutenmelding. Deze melding bevat een binnenste melding met de code `DOWNLOAD_ERROR`. Als de stream met het probleem een alternatieve audiotrack is, wordt de foutmelding `AUDIO_TRACK_ERROR` gegenereerd.
+Wanneer TVSDK geen alternatief segment kan verkrijgen, wordt een `CONTENT_ERROR` foutmelding. Deze melding bevat een binnenbericht met de code `DOWNLOAD_ERROR` code. Als de stream met het probleem een alternatieve audiotrack is, wordt de `AUDIO_TRACK_ERROR` foutmelding.
 
-Als de video-engine continu geen segmenten kan ophalen, beperkt het continue segmentoverslaan tot 5, waarna het afspelen wordt gestopt en een `NATIVE_ERROR` met code 5 wordt uitgegeven.
+Als de video-engine continu geen segmenten kan ophalen, beperkt deze de doorlopende segmentoverslaan tot 5, waarna het afspelen wordt gestopt en een `NATIVE_ERROR` met code 5.
 
 >[!NOTE]
 >
 >De adaptieve parameters van de beetjetarief (ABR) worden niet in overweging genomen wanneer een failover voorkomt. Dit komt doordat het failover-mechanisme is ontworpen om een van de momenteel beschikbare afspeellijsten, ongeacht hun bitsnelheidprofiel, te gebruiken als back-upstreams.
 >
 >Tijdens een failoververrichting, kan er een profielschakelaar zijn. Als een fout tijdens de download van één van playlist segmenten voorkomt, worden de controleparameters ABR zoals min/max toegestaan beetjetarief genegeerd.
-

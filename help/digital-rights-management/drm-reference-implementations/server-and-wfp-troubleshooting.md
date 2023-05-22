@@ -2,14 +2,13 @@
 title: Problemen oplossen
 description: Problemen oplossen
 copied-description: true
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: 6c4f15b6-507e-496e-ad1c-702ce77dd069
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '96'
 ht-degree: 0%
 
 ---
-
 
 # Problemen oplossen{#troubleshooting}
 
@@ -22,7 +21,7 @@ Hier volgen enkele problemen en oplossingen die u tijdens de implementatie kunt 
        javax.crypto.IllegalBlockSizeException: Input length must be multiple of 8 when decrypting with padded cipher"
    ```
 
-   Controleer of het wachtwoord is gecodeerd met de klasse `ScrambleUtil`.
+   Zorg ervoor dat het wachtwoord is gecodeerd met de `ScrambleUtil` klasse.
 
 * Als het volgende foutbericht wordt weergegeven:
 
@@ -38,5 +37,4 @@ Hier volgen enkele problemen en oplossingen die u tijdens de implementatie kunt 
    "javax.crypto.BadPaddingException: Given final block not properly padded"
    ```
 
-   Zorg ervoor dat u de wachtwoordscrambler-klasse *gebruikt die is meegeleverd bij Referentie-implementatie*. Dit hulpprogramma is anders dan het hulpprogramma dat is meegeleverd bij de Adobe Primetime DRM-server voor beveiligde streaming.
-
+   Zorg ervoor dat u de wachtwoordklasse gebruikt *die bij de referentieuitvoering is geleverd*. Dit hulpprogramma is anders dan het hulpprogramma dat is meegeleverd bij de Adobe Primetime DRM-server voor beveiligde streaming.

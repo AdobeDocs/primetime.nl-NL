@@ -1,20 +1,19 @@
 ---
 description: Met Adobe Offline packager kunt u inhoud voorbereiden voor alle DRM-oplossingen die worden ondersteund door Primetime Cloud DRM, aangedreven door ExpressPlay.
 title: Primetime Packager / Cloud DRM / TVSDK
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: 2055c18b-62de-41bf-9644-f366609e0198
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '437'
 ht-degree: 0%
 
 ---
 
-
 # Primetime Packager / Cloud DRM / TVSDK {#primetime-packager-cloud-drm-tvsdk}
 
 Met Adobe Offline packager kunt u inhoud voorbereiden voor alle DRM-oplossingen die worden ondersteund door Primetime Cloud DRM, aangedreven door ExpressPlay.
 
-Bij deze set instructies wordt ervan uitgegaan dat u al een ExpressPlay-beheerdersaccount hebt ingesteld: [Primetime DRM Cloud Quick-start](../../../multi-drm-workflows/quick-start/quick-overview.md).
+Bij deze set instructies wordt ervan uitgegaan dat u al een ExpressPlay-beheerdersaccount hebt ingesteld: [Primetime DRM Cloud, snel starten](../../../multi-drm-workflows/quick-start/quick-overview.md).
 1. Kies de infrastructuur die u wilt gebruiken voor het verpakken van uw inhoud. Primetime Packager ondersteunt zowel opdrachtregelpakketten als op configuratie gebaseerde pakketten van inhoud voor gebruik met de DRM&#39;s FairPlay, Widevine en PlayReady. De volgende indelingen en codering worden momenteel ondersteund in TVSDK (met meer in voorbereiding):
 
    * DASH (CENC) / PlayReady, Windows - voor HTML5
@@ -22,7 +21,7 @@ Bij deze set instructies wordt ervan uitgegaan dat u al een ExpressPlay-beheerde
 
 1. Kies een Key Management System (KMS):
 
-   * KMS ( [ExpressPlay Key Storage](https://www.expressplay.com/developer/key-storage/)) van ExpressPlay gebruiken; dit systeem beheert uw inhoudstoetsen via de RESTful-API van ExpressPlay.
+   * ExpressPlay&#39;s KMS gebruiken ( [ExpressPlay-sleutelopslag](https://www.expressplay.com/developer/key-storage/)); dit systeem beheert uw inhoudstoetsen via de RESTful-API van ExpressPlay.
 
       of...
 
@@ -34,7 +33,7 @@ Bij deze set instructies wordt ervan uitgegaan dat u al een ExpressPlay-beheerde
 
    De volgende voorbeeldopdrachten tonen enkele voorbeelden van inhoud verpakken voor verschillende DRM-oplossingen:
 
-   * [Widevine met Primetime Packager](https://helpx.adobe.com/content/dam/help/en/primetime/guides/offline_packager_getting_started.pdf#page=19)  (genereert MPD-bestand):
+   * [Widevine met Primetime Packager](https://helpx.adobe.com/content/dam/help/en/primetime/guides/offline_packager_getting_started.pdf#page=19) (Hiermee wordt een MPD-bestand gegenereerd):
 
       ```
       java -jar OfflinePackager.jar \ 
@@ -53,7 +52,7 @@ Bij deze set instructies wordt ervan uitgegaan dat u al een ExpressPlay-beheerde
         -widevine_header provider:intertrust#content_id:2a
       ```
 
-   * [FairPlay met Primetime Packager](https://helpx.adobe.com/content/dam/help/en/primetime/guides/offline_packager_getting_started.pdf#page=20)  (genereert een M3U8-bestand):
+   * [FairPlay met Primetime Packager](https://helpx.adobe.com/content/dam/help/en/primetime/guides/offline_packager_getting_started.pdf#page=20) (Genereert een M3U8-bestand):
 
       ```
       java -jar OfflinePackager.jar  
@@ -70,7 +69,7 @@ Bij deze set instructies wordt ervan uitgegaan dat u al een ExpressPlay-beheerde
 
       >[!NOTE]
       >
-      >De waarde `key_url` wordt gekopieerd zoals in het M3U8-bestand.
+      >De `key_url` De waarde wordt gekopieerd zoals in het M3U8-bestand.
 
 1. Maak een &quot;storefront server&quot;.
 
@@ -78,11 +77,11 @@ Bij deze set instructies wordt ervan uitgegaan dat u al een ExpressPlay-beheerde
    
    1. Klantenselectie van inhoud. Deze implementatie moet een eindpunt voor cliënten omvatten om een inhoudstoken voor een specifieke inhoudsidentiteitskaart aan te vragen.
    1. Klantrechten
-   1. Aanvragen voor licentietoken (ExpressPlay) van de client ( [ExpressPlay-licentietoken verzoek / reactieverwijzing](../../../multi-drm-workflows/license-token-req-resp-ref/license-req-resp-overview.md))
+   1. Aanvragen voor licentietoken (ExpressPlay) van de client ( [ExpressPlay-verzoek voor licentietoken/reactieverwijzing](../../../multi-drm-workflows/license-token-req-resp-ref/license-req-resp-overview.md))
 
 1. Maak uw client.
 
-       De client moet een aanroep naar uw winkelserver bevatten. Adobe raadt aan dat de client de storefront aanroept nadat de gebruiker inhoud selecteert en nadat de gebruiker is geverifieerd. Geef vervolgens het token dat door ExpressPlay is geretourneerd, door aan de speler voor licentieaanvragen. Inleiding tot het implementeren van de DRM-component van uw spelers is hier:
+       De client moet een aanroep naar uw winkelserver bevatten. Adobe raadt aan dat de client de storefront aanroept nadat de gebruiker inhoud selecteert en nadat de gebruiker is geverifieerd. Geef vervolgens het token dat door ExpressPlay is geretourneerd, door aan de speler voor licentieaanvragen. Hier vindt u informatie over de implementatie van de DRM-component van uw spelers:
    
    * [TVSDK van browser voor HTML5](https://help.adobe.com/en_US/primetime/psdk/browser_tvsdk/index.html#PSDKs-reference-DRM_interface_overview)
    * [iOS](../../../../programming/tvsdk-3x-ios-prog/ios-3x-drm-content-security/ios-3x-apple-fairplay-tvsdk.md)

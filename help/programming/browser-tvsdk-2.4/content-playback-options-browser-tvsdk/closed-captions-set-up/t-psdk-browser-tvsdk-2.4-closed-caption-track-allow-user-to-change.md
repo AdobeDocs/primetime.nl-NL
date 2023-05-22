@@ -1,27 +1,26 @@
 ---
 description: Hier ziet u hoe een gebruiker een track met een gesloten bijschrift kan selecteren.
 title: De gebruiker toestaan de track te wijzigen
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: 103ca0ad-2707-4e4f-87ee-f55041e4527a
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '77'
 ht-degree: 0%
 
 ---
 
-
-# Laat de gebruiker het spoor wijzigen{#allow-the-user-to-change-the-track}
+# De gebruiker toestaan de track te wijzigen{#allow-the-user-to-change-the-track}
 
 Hier ziet u hoe een gebruiker een track met een gesloten bijschrift kan selecteren.
 
-1. Gebruik de eigenschap `MediaPlayerItem.closedCaptionsTracks` om de beschikbare Closed Caption-tracks weer te geven.
+1. Als u de beschikbare Closed Caption-tracks wilt weergeven, gebruikt u de opdracht `MediaPlayerItem.closedCaptionsTracks` eigenschap.
 
    ```js
    var tracks = item.closedCaptionsTracks;
    ```
 
-1. Gebruik de methode `MediaPlayerItem.selectClosedCaptionsTrack` om in te stellen welke Closed Caption-track actief is.
-1. Nadat het item van de mediaspeler is voorbereid, haalt u dit op uit de mediaspeler met de methode ` MediaPlayer.  currentItem `.
+1. Als u wilt instellen welke Closed Caption-track actief is, gebruikt u de optie `MediaPlayerItem.selectClosedCaptionsTrack` methode.
+1. Nadat het item van de mediaspeler is voorbereid, haalt u het op uit de mediaspeler met de ` MediaPlayer.  currentItem ` methode.
 
    ```js
    // Select the cc track with index k. 
@@ -32,4 +31,3 @@ Hier ziet u hoe een gebruiker een track met een gesloten bijschrift kan selecter
        item.selectClosedCaptionsTrack(tracks[k]); 
    }
    ```
-

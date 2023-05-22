@@ -1,16 +1,15 @@
 ---
 description: De het hulpprogrammaklasse van TimeRangeCollection onttrekt het begrip van een bevolen inzameling van specificaties TimeRange en verleent de diensten om zich in een instantie van Metadata te vertalen.
 title: TimeRangeCollection, klasse
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: 2e5160b0-2254-4a40-8c32-fe3e05b9fc30
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '70'
 ht-degree: 0%
 
 ---
 
-
-# TimeRangeCollection-klasse{#timerangecollection-class}
+# TimeRangeCollection, klasse{#timerangecollection-class}
 
 De het hulpprogrammaklasse van TimeRangeCollection onttrekt het begrip van een bevolen inzameling van specificaties TimeRange en verleent de diensten om zich in een instantie van Metadata te vertalen.
 
@@ -26,4 +25,4 @@ public final class TimeRangeCollection {
 }
 ```
 
-De gedefinieerde waarde voor het type verzameling is `MARK_RANGES`, `DELETE_RANGES` en `REPLACE_RANGES`. U kunt `TimeRangeCollection`s tot stand brengen gebruikend deze drie types.
+De gedefinieerde waarde voor het type verzameling is `MARK_RANGES`, `DELETE_RANGES`, en `REPLACE_RANGES`. U kunt `TimeRangeCollection`Deze drie typen worden gebruikt.

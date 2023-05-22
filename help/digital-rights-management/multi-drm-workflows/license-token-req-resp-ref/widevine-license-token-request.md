@@ -1,22 +1,21 @@
 ---
 description: De Widevine-licentie-tokeninterface biedt productie- en testservices.
 title: Token-aanvraag voor Widevine-licentie/reactie
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: f8d71f63-7783-44f9-8b1b-4b5646dca339
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '858'
 ht-degree: 5%
 
 ---
 
-
-# Verzoek om licentietoken voor wijn/reactie {#widevine-license-token-request-response}
+# Token-aanvraag voor Widevine-licentie/reactie {#widevine-license-token-request-response}
 
 De Widevine-licentie-tokeninterface biedt productie- en testservices.
 
 Dit HTTP-verzoek retourneert een token dat kan worden ingewisseld voor een Widevine-licentie.
 
-**Methode: GET, POST**  (met een www-url-gecodeerde hoofdtekst die parameters voor beide methoden bevat)
+**Methode: GET, POST** (met een www-url-gecodeerd lichaam dat parameters voor beide methodes bevat)
 
 **URL&#39;s:**
 
@@ -51,13 +50,13 @@ Dit HTTP-verzoek retourneert een token dat kan worden ingewisseld voor een Widev
  </thead>
  <tbody> 
   <tr> 
-   <td> <span class="codeph"> customerAuthenticator  </span> </td> 
+   <td> <span class="codeph"> customerAuthenticator </span> </td> 
    <td> <p>Dit is de API-sleutel van uw klant, één voor uw productie- en testomgeving. U vindt dit op het tabblad ExpressPlay-beheerdashboard. </p> </td> 
    <td> Ja </td> 
   </tr> 
   <tr> 
-   <td> <span class="codeph"> errorFormat  </span> </td> 
-   <td> Of <span class="codeph"> html </span> of <span class="codeph"> json </span>. <p>Als <span class="codeph"> html </span> (het gebrek) een HTML- vertegenwoordiging van om het even welke fouten in het entiteitlichaam van de reactie wordt verstrekt. Als <span class="codeph"> json </span> wordt gespecificeerd, is een gestructureerde reactie in formaat JSON teruggekeerd. Zie <a href="https://www.expressplay.com/developer/restapi/#json-errors" format="html" scope="external"> JSON-fouten </a> voor meer informatie. </p> <p>Het mime-type van de reactie is ofwel <span class="codeph"> text/uri-list </span> bij succes, <span class="codeph"> text/html </span> voor <span class="codeph"> html </span> error format, of <span class="codeph"> application/json </span> voor <span class="codeph"> json </span> error format. </p> </td> 
+   <td> <span class="codeph"> errorFormat </span> </td> 
+   <td> Willekeurig <span class="codeph"> html </span> of <span class="codeph"> json </span>. <p>Indien <span class="codeph"> html </span> (standaard) een HTML-weergave van eventuele fouten wordt gegeven in de hoofdtekst van de reactie van de entiteit. Indien <span class="codeph"> json </span> wordt opgegeven, wordt een gestructureerde reactie in JSON-indeling geretourneerd. Zie <a href="https://www.expressplay.com/developer/restapi/#json-errors" format="html" scope="external"> JSON-fouten </a> voor meer informatie. </p> <p>Het mime-type van de reactie is: <span class="codeph"> text/uri-list </span> over succes, <span class="codeph"> text/html </span> for <span class="codeph"> html </span> foutindeling, of <span class="codeph"> application/json </span> for <span class="codeph"> json </span> foutindeling. </p> </td> 
    <td> Nee </td> 
   </tr> 
  </tbody> 
@@ -69,22 +68,22 @@ Dit HTTP-verzoek retourneert een token dat kan worden ingewisseld voor een Widev
 |--- |--- |--- |
 | `generalFlags` | Een hexadecimale tekenreeks van 4 bytes die de licentiemarkeringen vertegenwoordigt. &quot;0000&quot; is de enige toegestane waarde | Nee |
 | `kek` | Key Encryption Key (KEK). Toetsen worden gecodeerd met een KEK opgeslagen met behulp van een sleutelomsluitingsalgoritme (AES Key Wrap, RFC3394). | Nee |
-| `kid` | Een hexadecimale tekenreeksrepresentatie van 16 bytes van de coderingssleutel voor inhoud of een tekenreeks `^somestring'`. De lengte van de tekenreeks, gevolgd door `^`, mag niet groter zijn dan 64 tekens. Raadpleeg de onderstaande opmerking voor een voorbeeld. | Ja |
+| `kid` | Een hexadecimale tekenreeksrepresentatie van 16 bytes van de coderingssleutel voor inhoud of een tekenreeks `^somestring'`. De lengte van de tekenreeks, gevolgd door de `^` mag niet groter zijn dan 64 tekens. Raadpleeg de onderstaande opmerking voor een voorbeeld. | Ja |
 | `ek` | Een hexadecimale tekenreeksrepresentatie van de gecodeerde inhoudssleutel. | Nee |
-| `contentKey` | Een hexadecimale tekenreeksrepresentatie van 16 bytes van de coderingssleutel voor inhoud | Ja, tenzij `kek` en `ek` of `kid` worden opgegeven |
+| `contentKey` | Een hexadecimale tekenreeksrepresentatie van 16 bytes van de coderingssleutel voor inhoud | Ja, tenzij `kek` en `ek` of `kid` worden verstrekt |
 | `contentId` | Inhoud-id | Nee |
 | `securityLevel` | Toegestane waarden zijn 1-5. <ul><li>1 = `SW_SECURE_CRYPTO`</li><li> 2 = `SW_SECURE_DECODE` </li><li> 3 = `HW_SECURE_CRYPTO` </li><li> 4 = `HW_SECURE_DECODE` </li><li> 5 = `HW_SECURE_ALL`</li></ul> | Ja |
 | `hdcpOutputControl` | Toegestane waarden zijn 0, 1, 2. <ul><li>0 = `HDCP_NONE` </li><li> 1 = `HDCP_V1` </li><li> 2 = `HDCP_V2`</li></ul> | Ja |
 | `licenseDuration` * | Duur van de vergunning in seconden. Indien niet opgegeven, wordt aangegeven dat er geen beperking voor de duur is. Raadpleeg de onderstaande opmerking voor meer informatie. | Nee |
 | `wvExtension` | Een kort formulier met extensie Type en extensionPayload, als een door komma&#39;s gescheiden tekenreeks. Zie onderstaande indeling. Voorbeeld: `…&wvExtension=wudo,AAAAAA==&…` | Nee, elk nummer kan worden gebruikt |
 
-Informatie over `licenseDuration`: <ol><li> Het afspelen wordt `licenseDuration` seconden gestopt na het starten van het afspelen. </li><li> Als u het afspelen wilt stoppen/hervatten gedurende een onbeperkte tijd, laat u `licenseDuration` weg (het wordt standaard ingesteld op oneindig). Geef anders op hoeveel tijd eindgebruikers van de stream moeten kunnen genieten. </li></ol>
+Info `licenseDuration`: <ol><li> Het afspelen wordt gestopt `licenseDuration` seconden na het starten van het afspelen. </li><li> Als u het afspelen wilt stoppen/hervatten gedurende een onbeperkte periode, laat u het bestand weg `licenseDuration` (standaard oneindig). Geef anders op hoeveel tijd eindgebruikers van de stream moeten kunnen genieten. </li></ol>
 
 **Tabel 15: Parameters query-beperking token**
 
 | Query-parameter | Beschrijving | Vereist? |
 |--- |--- |--- |
-| `expirationTime` | Vervaltijd van deze token. Deze waarde MOET een tekenreeks zijn in de datum-/tijdnotatie [RFC 339](https://www.ietf.org/rfc/rfc3339.txt) in de zoneaanduiding &quot;Z&quot; (&quot;Zulu-tijd&quot;) of een geheel getal voorafgegaan door een plusteken. Een voorbeeld van een RFC 3339 datum/tijd is 2006-04-14T12:01:10Z. <br> Als de waarde een tekenreeks in  [RFC 3339](https://www.ietf.org/rfc/rfc3339.txt) datum-/tijdnotatie is, vertegenwoordigt deze een absolute vervaldatum/-tijd voor het token. Als de waarde een geheel getal is dat wordt voorafgegaan door een plusteken (+), wordt deze geïnterpreteerd als een relatief aantal seconden vanaf de uitgifte, dat de token geldig is. `+60` geeft bijvoorbeeld één minuut op. <br> De maximum en standaard (als gespecificeerd niet) symbolische levensduur is 30 dagen. | Nee |
+| `expirationTime` | Vervaltijd van deze token. Deze waarde MOET een tekenreeks zijn in [RFC 3339](https://www.ietf.org/rfc/rfc3339.txt) datum-/tijdnotatie in de zoneaanduiding &quot;Z&quot; (&quot;Zulu-tijd&quot;) of een geheel getal voorafgegaan door een plusteken (+). Een voorbeeld van een RFC 3339 datum/tijd is 2006-04-14T12:01:10Z. <br> Als de waarde een tekenreeks is in [RFC 3339](https://www.ietf.org/rfc/rfc3339.txt) datum-/tijdnotatie, dan staat deze voor een absolute vervaldatum/tijd voor het token. Als de waarde een geheel getal is dat wordt voorafgegaan door een plusteken (+), wordt deze geïnterpreteerd als een relatief aantal seconden vanaf de uitgifte, dat de token geldig is. Bijvoorbeeld: `+60` geeft één minuut aan. <br> De maximum en standaard (als gespecificeerd niet) symbolische levensduur is 30 dagen. | Nee |
 
 **Tabel 16: Zoekparameters correleren**
 
@@ -99,10 +98,10 @@ Informatie over `licenseDuration`: <ol><li> Het afspelen wordt `licenseDuration`
 | **HTTP-statuscode** | **Beschrijving** | **Inhoudstype** | **Entiteitslichaam bevat** |
 |---|---|---|---|
 | `200 OK` | Geen fout. | `text/uri-list` | Aankoop van licentie, URL + token |
-| `400 Bad Request` | Ongeldige args | `text/html` of  `application/json` | Foutbeschrijving |
-| `401 Unauthorized` | Auth failed | `text/html` of  `application/json` | Foutbeschrijving |
-| `404 Not found` | Ongeldige URL | `text/html` of  `application/json` | Foutbeschrijving |
-| `50x Server Error` | Serverfout | `text/html` of  `application/json` | Foutbeschrijving |
+| `400 Bad Request` | Ongeldige args | `text/html` of `application/json` | Foutbeschrijving |
+| `401 Unauthorized` | Auth failed | `text/html` of `application/json` | Foutbeschrijving |
+| `404 Not found` | Ongeldige URL | `text/html` of `application/json` | Foutbeschrijving |
+| `50x Server Error` | Serverfout | `text/html` of `application/json` | Foutbeschrijving |
 
 **Tabel 18: Gebeurtenisfoutcodes**
 
@@ -136,7 +135,7 @@ Informatie over `licenseDuration`: <ol><li> Het afspelen wordt `licenseDuration`
   </tr> 
   <tr> 
    <td> -2018 </td> 
-   <td> Verificatietoken ongeldig: &lt;details&gt; <p>Opmerking:  Dit kan gebeuren als de authenticator het mis heeft of wanneer het toegang tot van test API bij *.test.expression.com gebruikend productieauthentiek en vice versa. </p> <p importance="high">Opmerking:  De SDK van de Test en het Geavanceerde Hulpmiddel van de Test (ATT) werken slechts met <span class="filepath"> *.test.expressplay.com </span>, terwijl de productieapparaten <span class="filepath"> *.service.expressplay.com </span> moeten gebruiken </p>. </td> 
+   <td> Verificatietoken ongeldig: &lt;details&gt; <p>Opmerking: Dit kan gebeuren als de authenticator het mis heeft of wanneer het toegang tot van test API bij *.test.expression.com gebruikend productieauthentiek en vice versa. </p> <p importance="high">Opmerking: De SDK van de Test en het Geavanceerde Hulpmiddel van de Test (ATT) werken slechts met <span class="filepath"> *.test.expression.splay.com </span>overwegende dat de productiemiddelen <span class="filepath"> *.service.expressplay.com </span> </p>. </td> 
   </tr> 
   <tr> 
    <td> -2019 </td> 
@@ -188,7 +187,7 @@ Informatie over `licenseDuration`: <ol><li> Het afspelen wordt `licenseDuration`
   </tr> 
   <tr> 
    <td> -2040 </td> 
-   <td> <span class="codeph"> OutputControlFlag  </span> moet 4 bytes coderen </td> 
+   <td> <span class="codeph"> OutputControlFlag </span> moet 4 bytes coderen </td> 
   </tr> 
   <tr> 
    <td> -3004 </td> 
@@ -204,7 +203,7 @@ Informatie over `licenseDuration`: <ol><li> Het afspelen wordt `licenseDuration`
   </tr> 
   <tr> 
    <td> -4018 </td> 
-   <td> <span class="filepath"> onderliggende </span> ontbreekt </td> 
+   <td> Ontbreekt <span class="filepath"> kind </span> </td> 
   </tr> 
   <tr> 
    <td> -4019 </td> 
@@ -212,15 +211,15 @@ Informatie over `licenseDuration`: <ol><li> Het afspelen wordt `licenseDuration`
   </tr> 
   <tr> 
    <td> -4020 </td> 
-   <td> <span class="codeph"> child  </span> must be 32 hexadecimale characters long </td> 
+   <td> <span class="codeph"> kind </span> moet 32 hexadecimale tekens lang zijn </td> 
   </tr> 
   <tr> 
    <td> -4021 </td> 
-   <td> <span class="codeph"> kind  </span> moet 64 karakters lang na "^"zijn </td> 
+   <td> <span class="codeph"> kind </span> moet 64 tekens lang na '^' zijn </td> 
   </tr> 
   <tr> 
    <td> -4022 </td> 
-   <td> Ongeldige <span class="codeph"> onderliggende </span> </td> 
+   <td> Ongeldig <span class="codeph"> kind </span> </td> 
   </tr> 
   <tr> 
    <td> -4024 </td> 
@@ -264,7 +263,7 @@ Informatie over `licenseDuration`: <ol><li> Het afspelen wordt `licenseDuration`
   </tr> 
   <tr> 
    <td> -7009 </td> 
-   <td> Ongeldige <span class="codeph"> WVExtensie </span> opgegeven parameters </td> 
+   <td> Ongeldig <span class="codeph"> WVExtensie </span> opgegeven parameters </td> 
   </tr> 
   <tr> 
    <td> -7011 </td> 

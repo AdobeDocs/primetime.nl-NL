@@ -2,30 +2,29 @@
 title: De server instellen en implementeren voor beveiligde streaming
 description: De server instellen en implementeren voor beveiligde streaming
 copied-description: true
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: de1488e6-ccee-49e6-999e-6c6762dd55be
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '172'
 ht-degree: 0%
 
 ---
 
-
 # De server instellen en implementeren voor beveiligde streaming {#set-up-and-deploy-the-server-for-protected-streaming}
 
 1. Stel de configuratiemap in op de Primetime DRM DVD:
 
    `\Adobe Access Server for Protected Streaming\configs\`
-1. Kopieer de voorbeeldmap `configs` naar uw `<Tomcat_installation_dir>` en geef de gekopieerde map een andere naam naar `licenseserver`.
+1. Het voorbeeld kopiëren `configs` map naar uw `<Tomcat_installation_dir>` en wijzig de naam van de gekopieerde map in `licenseserver`.
 
-   Het pad naar de map configs moet nu `<Tomcat_install_dir>\licenseserver\` zijn.
-1. Voer `Scrambler.bat` uit om de gecodeerde wachtwoorden voor de PFX-bestanden van de transport- en licentieserver in de directory Primetime DRM `<DVD>` `\Adobe Access Server for Protected Streaming\` te verkrijgen:
+   Het pad naar de map configs moet nu `<Tomcat_install_dir>\licenseserver\`.
+1. Uitvoeren `Scrambler.bat` om de gecodeerde wachtwoorden voor de vervoer en vergunning server PFX- dossiers in Primetime DRM te verkrijgen `<DVD>` `\Adobe Access Server for Protected Streaming\` map:
 
    * `Scrambler.bat <Adobe-provided transport credential password>`
    * `Scrambler.bat <Adobe-provided license server credential password>`
 
-1. Kopieer de PFX-bestanden naar de map `<TomcatInstallDir>\licenseserver\flashaccessserver\tenants\<tenant-name>\`.
-1. Bewerk de overeenkomende huurdersconfiguratie in `<TomcatInstallDir>\licenseserver\flashaccessserver\tenants\sampletenant\flashaccess-tenant.xml`, met de volgende instellingen:
+1. De PFX-bestanden kopiëren naar de `<TomcatInstallDir>\licenseserver\flashaccessserver\tenants\<tenant-name>\` directory.
+1. Geef de overeenkomstige huurdersconfiguratie in uit `<TomcatInstallDir>\licenseserver\flashaccessserver\tenants\sampletenant\flashaccess-tenant.xml`, met de volgende instellingen:
 
    ```
    Configuration|Tenant|Credentials|TransportCredential|File|path=<filename-transport-credential-PFX> 
@@ -34,14 +33,14 @@ ht-degree: 0%
    Configuration|Tenant|Credentials|LicenseServerCredential|File|password=<scrambled-license-servercredential-password>
    ```
 
-1. Voer het hulpprogramma `Validator.bat` uit om te controleren of de configuratie geldig is:
+1. Voer de `Validator.bat` Het nut om configuratie te verifiëren is geldig:
 
    ```
    Validator.bat -g -r <absolute-path-to TomcatInstallDir\licenseserver>
    ```
 
-1. Kopieer het bestand `flashaccessserver.war` van de cd naar de map `<TomcatInstallDir>\webapps\`.
-1. Als Tomcat wordt uitgevoerd, stop de lopende instantie van Tomcat door `<CTRL-C>` in het bevelvenster te drukken (als het van het bevelvenster werd gelanceerd). U kunt de server van de toepassing van de Diensten van Vensters ook tegenhouden als Tomcat als Dienst van Vensters werd geïnstalleerd.
+1. Kopieer de `flashaccessserver.war` bestand van de cd naar de `<TomcatInstallDir>\webapps\` directory.
+1. Als Tomcat wordt uitgevoerd, onderbreekt u de actieve Tomcat-instantie door op `<CTRL-C>` in het opdrachtvenster (als deze functie is gestart vanuit het opdrachtvenster). U kunt de server van de toepassing van de Diensten van Vensters ook tegenhouden als Tomcat als Dienst van Vensters werd geïnstalleerd.
 1. Voer de volgende opdracht in om Tomcat te starten:
 
    ```

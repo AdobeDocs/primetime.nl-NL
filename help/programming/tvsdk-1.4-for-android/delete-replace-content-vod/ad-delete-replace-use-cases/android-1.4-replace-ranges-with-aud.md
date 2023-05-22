@@ -1,20 +1,19 @@
 ---
 description: U kunt advertenties invoegen in VOD-inhoud.
 title: Tijdbereiken vervangen door een advertentie
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: b341d337-e190-4e2d-bad6-579771bcc577
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '94'
 ht-degree: 0%
 
 ---
 
-
 # Tijdbereiken vervangen door een advertentie{#replace-time-ranges-with-an-ad}
 
 U kunt advertenties invoegen in VOD-inhoud.
 
-In dit geval worden `TimeRanges` tussen `begin` en `end` in `localTime` verwijderd uit de tijdlijn. Ze worden vervangen door een `AdBreak` van `begin` tot `begin+replaceDuration`. Als de vervanging-duur niet als parameter bestaat, maakt de server de bepaling op teruggekeerde Adbreak.
+In dit geval: `TimeRanges` tussen de `begin` en `end` in `localTime` worden verwijderd uit de tijdlijn. Zij worden vervangen door een `AdBreak` van `begin` tot `begin+replaceDuration`. Als de vervanging-duur niet als parameter bestaat, maakt de server de bepaling op teruggekeerde Adbreak.
 
 >[!NOTE]
 >
@@ -76,4 +75,3 @@ Hiermee vervangt u bereiken door primetime- en beslissingsadvertenties.
     "id": "vod_003"
 }
 ```
-

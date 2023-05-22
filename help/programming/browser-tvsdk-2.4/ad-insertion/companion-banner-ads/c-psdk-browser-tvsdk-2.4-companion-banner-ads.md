@@ -1,14 +1,13 @@
 ---
 description: Browser-TVSDK biedt ondersteuning voor banneradvertenties die bij een lineaire advertentie horen en die na afloop van de lineaire advertentie vaak op de pagina blijven staan. Uw toepassing is verantwoordelijk voor het weergeven van de bijbehorende banners die een lineaire advertentie hebben.
 title: Companion banneradvertenties
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: 73b5c9b0-abac-47ed-a21d-3f8f90cc5b55
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '187'
 ht-degree: 0%
 
 ---
-
 
 # Overzicht {#companion-banner-ads-overview}
 
@@ -28,4 +27,3 @@ Volg deze aanbevelingen bij het weergeven van bijhorende advertenties:
 * Ga door met het weergeven van bijbehorende banners nadat de advertentie is beëindigd.
 
    Standaard wordt elke bijbehorende banner weergegeven totdat u een nieuwe banner voor deze banner hebt.
-

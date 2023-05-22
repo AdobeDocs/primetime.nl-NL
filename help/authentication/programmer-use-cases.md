@@ -1,13 +1,13 @@
 ---
 title: Gebruiksgevallen voor programmeerprogramma's
 description: Gebruiksgevallen voor programmeerprogramma's
-source-git-commit: 326f97d058646795cab5d062fa5b980235f7da37
+exl-id: 51ca7e4f-b0d8-4e35-8398-2efb4879de2a
+source-git-commit: bfc3ba55c99daba561255760baf273b6538a3c6e
 workflow-type: tm+mt
 source-wordcount: '1643'
 ht-degree: 0%
 
 ---
-
 
 # Gebruiksgevallen voor programmeerprogramma&#39;s {#programmer-use-cases}
 

@@ -1,27 +1,26 @@
 ---
 description: De kwaliteit van de dienst (QoS) biedt een gedetailleerde mening in hoe de videomotor presteert. Browser TVSDK verstrekt gedetailleerde statistieken over playback, het als buffer optreden, en apparaten.
 title: Kwaliteit van de dienststatistieken
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: b7486ed5-e59f-428c-942c-a2fee7a869c9
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '141'
-ht-degree: 1%
+ht-degree: 0%
 
 ---
-
 
 # Kwaliteit van de dienststatistieken{#quality-of-service-statistics}
 
 De kwaliteit van de dienst (QoS) biedt een gedetailleerde mening in hoe de videomotor presteert. Browser TVSDK verstrekt gedetailleerde statistieken over playback, het als buffer optreden, en apparaten.
 
-## De playback van QOS, het bufferen, en apparatenstatistieken {#read-qos-playback-buffering-and-device-statistics} lezen
+## De playback van QOS, het bufferen, en apparatenstatistieken lezen {#read-qos-playback-buffering-and-device-statistics}
 
 U kunt playback, het als buffer optreden voor, en apparatenstatistieken van de klasse lezen QOSProvider.
 
-De klasse `QOSProvider` verstrekt diverse statistieken, met inbegrip van informatie over het als buffer optreden voor, beetjetarieven, kadertarieven, tijdgegevens, etc.
+De `QOSProvider` klasse verstrekt diverse statistieken, met inbegrip van informatie over het als buffer optreden voor, beetjetarieven, kadertarieven, tijdgegevens, etc.
 
 1. Instantiëren van een mediaspeler.
-1. Maak een `QOSProvider`-object en koppel dit aan de mediaspeler.
+1. Een `QOSProvider` en aan de mediaspeler koppelen.
 
    ```js
    // Create Media Player.qosProvider =  
@@ -31,7 +30,7 @@ De klasse `QOSProvider` verstrekt diverse statistieken, met inbegrip van informa
 
 1. (Optioneel) Lees de afspeelstatistieken.
 
-   Één oplossing om playbackstatistieken te lezen moet een tijdopnemer hebben, die periodiek de nieuwe waarden QoS van `QOSProvider` haalt. Bijvoorbeeld:
+   Één oplossing om playbackstatistieken te lezen moet een tijdopnemer hebben, die periodiek de nieuwe waarden QoS van de `QOSProvider`. Bijvoorbeeld:
 
    ```js
    var qosTimer = (function () { 

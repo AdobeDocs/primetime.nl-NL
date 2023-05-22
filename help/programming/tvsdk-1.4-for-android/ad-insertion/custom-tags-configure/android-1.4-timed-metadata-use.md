@@ -1,31 +1,30 @@
 ---
 description: U kunt TimedMetadata gebruiken wanneer de huidige playbacktijd de begintijd aanpast.
 title: Metagegevens met tijdslimiet gebruiken
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: 7f87cd14-121a-4543-ab0a-a03d829d040b
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '152'
-ht-degree: 1%
+ht-degree: 0%
 
 ---
-
 
 # Metagegevens met tijdslimiet gebruiken {#use-timed-metadata}
 
 U kunt TimedMetadata gebruiken wanneer de huidige playbacktijd de begintijd aanpast.
 
-Als u deze opgeslagen `TimedMetadata`-objecten tijdens het afspelen wilt gebruiken, gebruikt u de opgeslagen `ArrayList` van [Objecten met getimede metagegevens opslaan wanneer ze worden verzonden](../../ad-insertion/custom-tags-configure/android-1.4-timed-metadata-store.md).
+Deze opgeslagen `TimedMetadata` objecten tijdens afspelen gebruiken de opgeslagen `ArrayList` van [Objecten met metagegevens met tijdinstellingen opslaan terwijl ze worden verzonden](../../ad-insertion/custom-tags-configure/android-1.4-timed-metadata-store.md).
 
 1. Voer een timer uit en vul herhaaldelijk een query uit op de huidige afspeeltijd.
-1. Alle `TimedMetadata`-objecten zoeken met begintijden die overeenkomen met de huidige afspeeltijd.
+1. Alles zoeken `TimedMetadata` objecten met begintijden die overeenkomen met de huidige afspeeltijd.
 
    U kunt deze objecten gebruiken om verschillende handelingen uit te voeren.
 
    >[!IMPORTANT]
    >
-   >Wanneer u controleert of de huidige afspeeltijd overeenkomt met een `TimedMetadata`-object, neemt u `shouldTriggerSubscribedTagEvent` op als voorwaarde.
+   >Wanneer u controleert of de huidige afspeeltijd overeenkomt met een `TimedMetadata` objecten opnemen `shouldTriggerSubscribedTagEvent` als voorwaarde.
 
-   De tijdlijn kan veranderen als gevolg van verschillende vormen van advertentie. Een of meer afbrekingen van een advertentie kunnen bijvoorbeeld vanaf de oorspronkelijke positie op de tijdlijn worden verplaatst, maar `shouldTriggerSubscribedTagEvent` zorgt ervoor dat de begintijd van het object `TimeMetadata` overeenkomt met de huidige afspeeltijd.
+   De tijdlijn kan veranderen als gevolg van verschillende vormen van advertentie. Een of meer afbrekingen van een advertentie kunnen bijvoorbeeld vanaf de oorspronkelijke positie op de tijdlijn worden verplaatst, maar `shouldTriggerSubscribedTagEvent` ervoor zorgt dat de `TimeMetadata` de begintijd van het object komt overeen met de huidige afspeeltijd.
 
    Bijvoorbeeld:
 
@@ -59,4 +58,4 @@ Als u deze opgeslagen `TimedMetadata`-objecten tijdens het afspelen wilt gebruik
    _playbackClock.addClockEventListener(_playbackClockEventListener);
    ```
 
-1. Verwijder regelmatig `TimedMetadata` exemplaren van de lijst om te voorkomen dat het geheugen voortdurend toeneemt.
+1. Periodiek uitspoelen `TimedMetadata` exemplaren van de lijst om te voorkomen dat het geheugen voortdurend toeneemt.

@@ -1,16 +1,15 @@
 ---
 description: Inhoud verpakken is het proces waarbij video-inhoud wordt voorbereid voor weergave op het web. Het verpakken omvat het omzetten van ruwe video in manifestdossiers, en naar keuze het coderen van de inhoud gebruikend verschillende oplossingen DRM voor verschillende apparaten en browsers.
 title: Inhoud verpakken
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: d6f922d6-afec-4314-a01e-b951c1f8a7e8
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '561'
 ht-degree: 0%
 
 ---
 
-
-# Uw inhoud verpakken {#package-your-content}
+# Inhoud verpakken {#package-your-content}
 
 Inhoud verpakken is het proces waarbij video-inhoud wordt voorbereid voor weergave op het web. Het verpakken omvat het omzetten van ruwe video in manifestdossiers, en naar keuze het coderen van de inhoud gebruikend verschillende oplossingen DRM voor verschillende apparaten en browsers.
 
@@ -25,15 +24,15 @@ Om uw inhoud voor te bereiden, kunt u Adobe Offline Packager of andere hulpmidde
 
 1. Verpak of verkrijg op een andere manier inhoud voor het testen van uw opstelling.
 
-   Een van de cruciale punten die u voor het maken van pakketten moet onthouden, is dat de sleutel-id (Content ID) die u in deze verpakkingsstap gebruikt, dezelfde is als die u in uw volgende licentietoken-aanvraag moet opgeven. De belangrijkste identiteitskaart is het enige punt dat uw CEK identificeert (die in uw eigen zeer belangrijke beheersgegevensbestand kan worden opgeslagen, of gebruikend [de Zeer belangrijke Opslagdienst van ExpressPlay](https://www.expressplay.com/developer/key-storage/) wordt opgeslagen.
+   Een van de cruciale punten die u voor het maken van pakketten moet onthouden, is dat de sleutel-id (Content ID) die u in deze verpakkingsstap gebruikt, dezelfde is als die u in uw volgende licentietoken-aanvraag moet opgeven. Sleutelidentiteitskaart is het enige punt dat uw CEK identificeert (die in uw eigen zeer belangrijke beheersgegevensbestand kan worden opgeslagen, of die gebruikend wordt opgeslagen [De belangrijkste opslagservice van ExpressPlay](https://www.expressplay.com/developer/key-storage/).
 
    >[!NOTE]
    >
-   >Voor degenen die vertrouwd zijn met Adobe Access, is dit een belangrijk verschil in hoe de verschillende oplossingen werken. Bij Access wordt de licentiecode ingesloten in de DRM-metagegevens en doorgegeven aan de beveiligde inhoud. In de multi-DRM systemen die hier worden beschreven, wordt de daadwerkelijke Vergunning niet overgegaan, maar veilig opgeslagen en via Key ID verkregen.
+   >Voor degenen die vertrouwd zijn met Adobe Access, is dit een belangrijk verschil in hoe de verschillende oplossingen werken. Bij Access wordt de licentiecode ingesloten in de DRM-metagegevens en doorgestuurd met de beveiligde inhoud. In de multi-DRM systemen die hier worden beschreven, wordt de daadwerkelijke Vergunning niet overgegaan, maar veilig opgeslagen en via Key ID verkregen.
 
 <!--<a id="example_52AF76B730174B79B6088280FCDF126D"></a>-->
 
-Hier volgt een voorbeeld van het verpakken met Adobe Offline Packager for Widevine. Packager gebruikt een configuratiedossier (b.v., [!DNL widevine.xml]), dat iets als dit kijkt:
+Hier volgt een voorbeeld van het verpakken met Adobe Offline Packager for Widevine. Packager gebruikt een configuratiebestand (bijvoorbeeld [!DNL widevine.xml]), die er ongeveer als volgt uitziet:
 
 ```
 <config> 
@@ -52,20 +51,20 @@ Hier volgt een voorbeeld van het verpakken met Adobe Offline Packager for Widevi
 ```
 
 * `in_path` - Dit item wijst naar de locatie van de bronvideo op uw lokale verpakkingsapparaat.
-* `out_type` - Dit item beschrijft het type van de verpakte uitvoer, in dit geval DASH (voor Widevine Protection on HTML5).
+* `out_type` - Deze vermelding beschrijft het type van de verpakte output, in dit geval DASH (voor Widevine Protection on HTML5).
 * `out_path` - De locatie op de lokale computer waar u de uitvoer wilt laten gaan.
-* `drm_sys` - De DRM-oplossing waarvoor u een verpakking maakt. Dit zal of `widevine`, `fairplay`, of `playready` zijn.
+* `drm_sys` - De DRM-oplossing waarvoor u een verpakking maakt. Dit zal ofwel `widevine`, `fairplay`, of `playready`.
 
-* `frag_dur` en  `target_dur` zijn DASH-specifieke duuritems die betrekking hebben op het afspelen van video.
+* `frag_dur` en `target_dur` zijn DASH-specifieke duuritems die betrekking hebben op het afspelen van video.
 
 * `key_file_path` - Dit is de locatie van het licentiebestand op uw verpakkingsapparaat dat als CEK (Content Encryption Key) fungeert. Het is een Base-64 gecodeerde 16-byte hexreeks.
-* `widevine_content_id` - Dit is Widevine &quot;Boilerplate&quot;; dat is altijd  `2a`. (Verwar dit niet met `widevine_key_id`.)
+* `widevine_content_id` - Dit is Widevine &quot;Boilerplate&quot;; het is altijd `2a`. (Verwar dit niet met de `widevine_key_id`.)
 
-* `widevine_provider` - Voor onze doeleinden moet dit altijd worden ingesteld op  `intertrust`.
+* `widevine_provider` - Voor onze doeleinden altijd instellen op `intertrust`.
 
-* `widevine_key_id` - Dit is de id voor de licentie die u in de  `key_file_path` vermelding hebt opgegeven. Met andere woorden, dit identificeert de sleutel u gebruikt om de inhoud te coderen. Deze id is een 16-byte HEX-tekenreeks die u zelf maakt.
+* `widevine_key_id` - Dit is de id voor de licentie die u hebt opgegeven in het dialoogvenster `key_file_path` vermelding. Met andere woorden, dit identificeert de sleutel u gebruikt om de inhoud te coderen. Deze id is een 16-byte HEX-tekenreeks die u zelf maakt.
 
-Zoals vermeld in [de documentatie van Packager](https://helpx.adobe.com/content/dam/help/en/primetime/guides/offline_packager_getting_started.pdf), &quot;als beste praktijken, creeer een configuratiedossier dat de gemeenschappelijke opties bevat die u voor het produceren van de output wilt gebruiken. Maak vervolgens de uitvoer door specifieke opties als opdrachtregelargument op te geven.&quot; In dit geval is ons configuratiebestand redelijk volledig, zodat u de uitvoer als volgt kunt maken:
+Zoals vermeld in het [Packager-documentatie](https://helpx.adobe.com/content/dam/help/en/primetime/guides/offline_packager_getting_started.pdf), &quot;Als beste praktijken, creeer een configuratiedossier dat de gemeenschappelijke opties bevat die u voor het produceren van de output wilt gebruiken. Maak vervolgens de uitvoer door specifieke opties als opdrachtregelargument op te geven.&quot; In dit geval is ons configuratiebestand redelijk volledig, zodat u de uitvoer als volgt kunt maken:
 
 ```
 java -jar OfflinePackager.jar -conf_path widevine.xml -out_path test_dash/ 
@@ -73,5 +72,4 @@ java -jar OfflinePackager.jar -conf_path widevine.xml -out_path test_dash/
 
 >[!NOTE]
 >
->De bevel-lijn parameters nemen belangrijkheid over config- dossierparameters. In dit voorbeeld, is alles vereist in het config- dossier, maar wij hebben de outputweg met voeten getreden die in het config- dossier met `-out_path test_dash/` wordt gespecificeerd.
-
+>De bevel-lijn parameters nemen belangrijkheid over config- dossierparameters. In dit voorbeeld, is alles vereist in het config- dossier, maar wij hebben de outputweg met voeten getreden die in het config- dossier wordt gespecificeerd `-out_path test_dash/`.

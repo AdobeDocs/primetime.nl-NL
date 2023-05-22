@@ -1,13 +1,13 @@
 ---
 title: Gebruik geen '&'reg_code in /authenticate Request
 description: Gebruik geen '&'reg_code in /authenticate Request
-source-git-commit: 326f97d058646795cab5d062fa5b980235f7da37
+exl-id: c0ecb6f9-2167-498c-8a2d-a692425b31c5
+source-git-commit: bfc3ba55c99daba561255760baf273b6538a3c6e
 workflow-type: tm+mt
 source-wordcount: '235'
 ht-degree: 0%
 
 ---
-
 
 # Gebruik geen &#39;&amp;&#39;reg_code in /authenticate Request {#clientless-avoid-using-reg_code-in-authenticate-request}
 
@@ -62,4 +62,3 @@ U kunt dit probleem op een van de volgende manieren oplossen:
 1. Normaliseren `&reg_code` zoals gebruiken `&amp;reg_code`.
 
 1. Adobe kon een nieuwe eigenschap introduceren om een foutencode terug naar het tweede scherm in antwoord op een authentificatievraag te verzenden, als de symbolische verwezenlijking AuthN ontbrak.
-

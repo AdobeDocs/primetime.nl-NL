@@ -1,14 +1,13 @@
 ---
 description: TVSDK ondersteunt het omzetten en invoegen van advertenties voor VOD en live/lineaire streams.
 title: Metagegevens van primetime en server
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: 3723dd2f-292c-4ce5-9670-fda1b1f2b5df
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '427'
 ht-degree: 0%
 
 ---
-
 
 # Overzicht {#primetime-ad-server-metadata-overview}
 
@@ -22,18 +21,16 @@ TVSDK ondersteunt het omzetten en invoegen van advertenties voor VOD en live/lin
 >* Uw `zoneID`, die uw bedrijf of website identificeert.
 >* Uw advertentieserverdomein, dat het domein van uw toegewezen advertentieserver specificeert.
 >* Andere doelparameters.
-
 >
-
 
 
 ## Metagegevens van primetime en server instellen {#section_86C4A3B2DF124770B9B7FD2511394313}
 
-Uw toepassing moet TVSDK de vereiste `PTAuditudeMetadata` informatie verstrekken om met de advertentieserver te verbinden.
+Uw toepassing moet TVSDK de vereiste `PTAuditudeMetadata` gegevens om verbinding te maken met de advertentieserver.
 
 De metagegevens van de advertentieserver instellen:
 
-1. Maak een instantie van [PTAuditudeMetadata](https://help.adobe.com/en_US/primetime/api/psdk/appledoc/Classes/PTAuditudeMetadata.html) en stel de eigenschappen ervan in.
+1. Een instantie maken van [PTAuditudeMetadata](https://help.adobe.com/en_US/primetime/api/psdk/appledoc/Classes/PTAuditudeMetadata.html) en stelt de eigenschappen ervan in.
 
    ```
    PTAuditudeMetadata *adMetadata = [[PTAuditudeMetadata alloc] init];  
@@ -43,7 +40,7 @@ De metagegevens van de advertentieserver instellen:
    adMetadata.userAgent = @"INSERT_AGENT_NAME_HERE; 
    ```
 
-1. Stel de `PTAuditudeMetadata`-instantie in als metagegevens voor de huidige `PTMediaPlayerItem`-metagegevens met `PTAdResolvingMetadataKey`.
+1. Stel de `PTAuditudeMetadata` instantie als metagegevens voor de huidige `PTMediaPlayerItem` metagegevens gebruiken `PTAdResolvingMetadataKey`.
 
    ```
    // Metadata is an instance of PTMetadata that is used to create the PTMediaPlayerItem 
@@ -71,13 +68,13 @@ De metagegevens van de advertentieserver instellen:
    }
    ```
 
-## Advertenties in full-event replay {#section_6016E1DAF03645C8A8388D03C6AB7571} inschakelen
+## Advertenties inschakelen bij volledig afspelen van gebeurtenissen {#section_6016E1DAF03645C8A8388D03C6AB7571}
 
 FER (Full-event replay) is een VOD-middel dat fungeert als een live/DVR-element. Uw toepassing moet daarom stappen ondernemen om ervoor te zorgen dat advertenties correct worden geplaatst.
 
-Voor live-inhoud gebruikt TVSDK de metagegevens/aanwijzingen in het manifest om te bepalen waar advertenties moeten worden geplaatst. Soms lijkt het echter wel of levende/lineaire inhoud op VOD-inhoud lijkt. Wanneer de actieve inhoud bijvoorbeeld is voltooid, wordt de tag `EXT-X-ENDLIST` toegevoegd aan het live manifest. Voor HLS betekent de tag `EXT-X-ENDLIST` dat de stream een VOD-stream is. TVSDK kan deze stream niet automatisch onderscheiden van een normale VOD-stream om advertenties correct in te voegen.
+Voor live-inhoud gebruikt TVSDK de metagegevens/aanwijzingen in het manifest om te bepalen waar advertenties moeten worden geplaatst. Soms lijkt het echter wel of levende/lineaire inhoud op VOD-inhoud lijkt. Wanneer de actieve inhoud bijvoorbeeld is voltooid, kan een `EXT-X-ENDLIST` -tag wordt toegevoegd aan het live-manifest. Voor HLS, `EXT-X-ENDLIST` -tag betekent dat de stream een VOD-stream is. TVSDK kan deze stream niet automatisch onderscheiden van een normale VOD-stream om advertenties correct in te voegen.
 
-Uw toepassing moet TVSDK vertellen of de inhoud live of VOD is door `PTAdSignalingMode` te specificeren.
+Uw toepassing moet TVSDK laten weten of de inhoud live is of VOD door de `PTAdSignalingMode`.
 
 Voor een FER-stream moet de Adobe Primetime en de beslissingsserver geen lijst met ad-hoconderbrekingen opgeven die op de tijdlijn moeten worden ingevoegd voordat het afspelen wordt gestart. Dit is het gebruikelijke proces voor VOD-inhoud. In plaats daarvan, door een verschillende signalerende wijze te specificeren, leest TVSDK alle richtsnoerpunten van FER manifest en gaat naar de advertentieserver voor elk richtsnoerpunt om een advertentieonderbreking te verzoeken. Dit proces lijkt op live/DVR-inhoud.
 
@@ -85,11 +82,11 @@ Naast elke aanvraag die aan een actiepunt is gekoppeld, doet TVSDK een aanvullen
 
 1. Van een externe bron, zoals vCMS, verkrijg de signalerende wijze die zou moeten worden gebruikt.
 1. Maak de metagegevens die betrekking hebben op reclame.
-1. Als het standaardgedrag moet worden beschreven, specificeer `PTAdSignalingMode` door `PTAdMetadata.signalingMode` te gebruiken.
+1. Als het standaardgedrag moet worden overschreven, geeft u de opdracht `PTAdSignalingMode` door `PTAdMetadata.signalingMode`.
 
-   De geldige waarden zijn `PTAdSignalingModeDefault`, `PTAdSignalingModeManifestCues` en `PTAdSignalingModeServerMap`.
+   De geldige waarden zijn `PTAdSignalingModeDefault`, `PTAdSignalingModeManifestCues`, en `PTAdSignalingModeServerMap`.
 
-   U moet de ad signalerende wijze plaatsen alvorens `prepareToPlay` te roepen. Nadat TVSDK de bewerkingen voor advertenties heeft opgelost en op de tijdlijn heeft geplaatst, worden wijzigingen in de modus voor advertenties genegeerd. Stel de modus in wanneer u de advertentiemetagegevens voor de bron maakt.
+   U moet de ad signalerende wijze plaatsen alvorens te roepen `prepareToPlay`. Nadat TVSDK de bewerkingen voor advertenties heeft opgelost en op de tijdlijn heeft geplaatst, worden wijzigingen in de modus voor advertenties genegeerd. Stel de modus in wanneer u de advertentiemetagegevens voor de bron maakt.
 
 1. Doorgaan met afspelen.
 
@@ -111,4 +108,3 @@ Naast elke aanvraag die aan een actiepunt is gekoppeld, doet TVSDK een aanvullen
    adMetadata.customParameters = customParameters; 
    [metadata setMetadata:adMetadata forKey:PTAdResolvingMetadataKey]; 
    ```
-

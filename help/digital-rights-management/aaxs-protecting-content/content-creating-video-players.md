@@ -2,15 +2,14 @@
 title: Videospelers maken
 description: Videospelers maken
 copied-description: true
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: bd191b05-c44c-4c1c-8a73-124d9d9d86d4
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '56'
 ht-degree: 0%
 
 ---
 
+# Videospelers maken{#creating-video-players}
 
-# Videospelers{#creating-video-players} maken
-
-Als u beveiligde inhoud wilt afspelen, moet uw toepassing de ActionScript 3 DRM API&#39;s of Adobe Primetime gebruiken. Raadpleeg *ActionScript 3* programmeren en *ActionScript 3.4 Reference for the Adobe Flash Platform* voor meer informatie. Raadpleeg de *Adobe Primetime PSDK-documentatie* voor informatie over het maken van videospelers op basis van iOS.
+Als u beveiligde inhoud wilt afspelen, moet uw toepassing de ActionScript 3 DRM API&#39;s of Adobe Primetime gebruiken. Zie *Programmering ActionScript 3* en de *ActionScript 3.4 Referentie voor de Adobe Flash Platform* voor meer informatie . Voor het bouwen van op iOS gebaseerde videospelers raadpleegt u de *Adobe Primetime PSDK-documentatie*.

@@ -1,14 +1,13 @@
 ---
 description: Adobe adviseert dat als u veranderingen in het configuratiedossier aanbrengt, u het nut van Validator van de Configuratie zou moeten in werking stellen alvorens u de server begint. Dit nut kan de meeste configuratiefouten vroeg ontdekken, alvorens zij mislukkingen tijdens verzoekverwerking veroorzaken.
 title: Configuratievalidator
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: 41d0a926-4e12-442c-886e-5f12cf10eed8
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '219'
 ht-degree: 0%
 
 ---
-
 
 # Configuratievalidator{#configuration-validator}
 
@@ -50,7 +49,7 @@ Validator kan plaatsing-gebaseerde bevestiging ook uitvoeren. Naast het controle
 
 Op implementatie gebaseerde validatie kan op de volgende niveaus worden uitgevoerd:
 
-* `Tenant` — Valideert het configuratiedossier en geloofsbrieven voor een specifieke huurder. Als u de configuratie voor `<tenant1>` wilt bevestigen, type:
+* `Tenant` — Valideert het configuratiedossier en geloofsbrieven voor een specifieke huurder. Als u de configuratie voor wilt bevestigen `<tenant1>`, type:
 
    ```
        Validator --<root-path-to-LicenseServer.ConfigRoot> -d flashaccessserver/tenant1 -t
@@ -61,4 +60,3 @@ Op implementatie gebaseerde validatie kan op de volgende niveaus worden uitgevoe
    ```
        Validator --<root-path-to-LicenseServer.ConfigRoot> -g
    ```
-

@@ -1,16 +1,15 @@
 ---
 description: U kunt een gebruikersinterfacecontrole instellen om het volume voor de video aan te passen.
 title: Volumeregeling opgeven
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: 0daa87e2-51aa-4459-9a67-135dc54d09c7
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '98'
-ht-degree: 2%
+ht-degree: 0%
 
 ---
 
-
-# Verstrek volumeregeling {#provide-volume-control}
+# Volumeregeling opgeven {#provide-volume-control}
 
 U kunt een gebruikersinterfacecontrole instellen om het volume voor de video aan te passen.
 
@@ -20,7 +19,7 @@ U kunt een gebruikersinterfacecontrole instellen om het volume voor de video aan
    >
    >Elke status, behalve RELEASED, is geldig.
 
-1. Roep `setVolume` aan om het audiovolume in te stellen.
+1. Bellen `setVolume` om het audiovolume in te stellen.
 
    Bijvoorbeeld:
 
@@ -28,5 +27,4 @@ U kunt een gebruikersinterfacecontrole instellen om het volume voor de video aan
    void setVolume(int volume) throws MediaPlayerException;
    ```
 
-   De waarde voor het volume vertegenwoordigt het gevraagde volume uitgedrukt als een percentage van het maximale volume, waarbij `0` stil is en `1` het maximale volume is.
-
+   De waarde van het volume staat voor het gevraagde volume, uitgedrukt als een percentage van het maximumvolume, waarbij `0` is stil en `1` is het maximale volume.

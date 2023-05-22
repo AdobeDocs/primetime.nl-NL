@@ -1,13 +1,13 @@
 ---
 title: Registratierecord retourneren
 description: Registratierecord retourneren
-source-git-commit: 326f97d058646795cab5d062fa5b980235f7da37
+exl-id: 7b9e63a2-59b6-4123-a19b-ee1f021219ea
+source-git-commit: bfc3ba55c99daba561255760baf273b6538a3c6e
 workflow-type: tm+mt
 source-wordcount: '253'
 ht-degree: 0%
 
 ---
-
 
 # Registratierecord retourneren {#return-registration-record}
 
@@ -51,7 +51,7 @@ Retourneert een record met registratiecode UUID, registratiecode en hashed devic
 | Invoerparameter | Beschrijving |
 | --- | --- |
 | aanvrager | De programmeeraanvragerId waarvoor deze verrichting geldig is. |
-| registratiecode | De waarde van de registratiecode die op het Streaming Apparaat (in de authentificatiestroom moet worden ingegaan) zou worden getoond. |
+| registratiecode | De waarde van de registratiecode die op het Streaming Apparaat (dat in de authentificatiestroom moet worden ingegaan) zou worden getoond. |
 
 </br>
 

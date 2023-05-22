@@ -1,20 +1,19 @@
 ---
 description: De belangrijkste componenten van Adobe Access bestaan uit een Java SDK en de Flash Player en Adobe AIR-clientruntimeomgevingen.
 title: Java SDK, Flash Player en Adobe AIR-client
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: 2df4da13-8df9-442b-8638-317c41d62fbe
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '924'
 ht-degree: 0%
 
 ---
 
-
 # Adobe Access-componenten{#adobe-access-components}
 
 De belangrijkste componenten van Adobe Access bestaan uit een Java SDK en de Flash Player en Adobe AIR-clientruntimeomgevingen.
 
-Zie De SDK instellen in *De SDK van Adobe Access gebruiken voor het beschermen van inhoud voor meer informatie over het instellen van de SDK.*
+Zie De SDK instellen in voor meer informatie over het instellen van de SDK. *De SDK van Adobe Access gebruiken voor het beveiligen van inhoud.*
 
 Met de Adobe Access SDK kunt u een oplossing voor digitaal rechtenbeheer ontwikkelen die kan worden geïntegreerd met de bestaande zakelijke infrastructuur van uw organisatie, zoals contentbeheer, facturering en toegangsbeheersystemen voor gebruikers. Met Flash Player en Adobe AIR kunt u toepassingen maken en eenvoudig implementeren waarmee consumenten toegang hebben tot grote bibliotheken met digitale inhoud en deze kunnen bekijken.
 
@@ -56,13 +55,13 @@ Deze API&#39;s worden gebruikt wanneer een client een licentie aanvraagt bij de 
 
 * Ondersteuning voor Adobe AIR versie 1.5-clients en -inhoud
 
-   Met het oog op achterwaartse compatibiliteit heeft de SDK API&#39;s voor het afhandelen van aanvragen van AIR-toepassingen die zijn gemaakt voor gebruik met AIR versie 1.5 en eerdere clients en beveiligde inhoud.
+   Met het oog op achterwaartse compatibiliteit heeft de SDK API&#39;s om aanvragen van AIR-toepassingen af te handelen die zijn gemaakt voor gebruik met AIR versie 1.5 en eerdere clients en beveiligde inhoud.
 
 ## Referentie-implementatie {#reference-implementation}
 
-De SDK bevat een voorbeeldimplementatie, een eenvoudige Adobe Access-implementatie die aantoont hoe u de Java API&#39;s kunt gebruiken. De verwijzingsimplementatie verstrekt een Server van de Vergunning, de Controlemapverpakker, de toepassing van de Manager van de Toegang van de Adobe, AIR, en bevellijnhulpmiddelen voor inhoudspakketten en beleidsbeheer dat op Java APIs wordt gebaseerd. Meer over de de verwijzingsimplementatie van de Toegang van de Adobe leren, zie *Beschermend Inhoud*.
+De SDK bevat een voorbeeldimplementatie, een eenvoudige Adobe Access-implementatie die aantoont hoe u de Java API&#39;s kunt gebruiken. De verwijzingsimplementatie verstrekt een Server van de Vergunning, de Gecontroleerde Packager van de Omslag, de toepassing van AIR van de Manager van de Toegang van de Adobe, en bevellijnhulpmiddelen voor inhoudspakketten en beleidsbeheer dat op Java APIs wordt gebaseerd. Meer over de de verwijzingsimplementatie van de Toegang van de Adobe leren, zie *Inhoud beveiligen*.
 
-## Adobe Access Server for Protected Streaming {#adobe-access-server-for-protected-streaming}
+## Adobe Access Server voor beveiligde streaming {#adobe-access-server-for-protected-streaming}
 
 Voor het stromen gebruik gevallen waar de inhoud met Adobe Access, zoals voor Adobe HTTP Dynamic Streaming wordt beschermd, omvat de software ook Adobe Access Server voor Beschermde Streaming. Deze oplossing kan gemakkelijk op een servletcontainer zoals Tomcat worden opgesteld en kan een hoog niveau van scalability en prestaties bereiken om aan de grootste behoeften van de inhoudsdistributie te voldoen.
 
@@ -74,7 +73,7 @@ Ga voor meer informatie over Flash Player naar: [www.adobe.com/go/flashplayer](h
 
 ## Adobe AIR {#adobe-air}
 
-Adobe AIR is een besturingssysteem overschrijdend runtime-programma waarmee inhoudsproducenten hun bestaande investeringen in het web kunnen uitbreiden naar het bureaublad door aangepaste multimediatoepassingen te ontwerpen. Het is gebaseerd op beproefde, open technologieën en biedt een betrouwbare, vereenvoudigde manier voor bedrijven om aangepaste toepassingen te ontwikkelen en te implementeren die vertrouwd kunnen worden voor een veiligere, prettigere gebruikerservaring. Met Adobe AIR kunnen bedrijven op eenvoudige wijze rijke media integreren om een indrukwekkende en interactieve gebruikerservaring te creëren. Ontwikkelaars kunnen vertrouwde hulpprogramma&#39;s zoals HTML, JavaScript, Flash of Adobe® Flex® gebruiken om hun unieke combinatie van geavanceerde internettoepassingen te implementeren in Windows, Macintosh of Linux.
+Adobe AIR is een besturingssysteem overschrijdend runtime-programma waarmee inhoudsproducenten hun bestaande investeringen in het web kunnen uitbreiden naar het bureaublad door aangepaste multimediatoepassingen te ontwerpen. Het is gebaseerd op beproefde, open technologieën en biedt een betrouwbare, vereenvoudigde manier voor bedrijven om aangepaste toepassingen te ontwikkelen en te implementeren die vertrouwd kunnen worden voor een veiligere, prettigere gebruikerservaring. Met Adobe AIR kunnen bedrijven op eenvoudige wijze rijke media integreren om een indrukwekkende en interactieve gebruikerservaring te creëren. Ontwikkelaars kunnen vertrouwde programma&#39;s zoals HTML, JavaScript, Flash of Adobe® Flex® gebruiken om hun unieke combinatie van geavanceerde internettoepassingen te implementeren in Windows, Macintosh of Linux.
 
 De ondernemingen hebben volledige controle van het gebruikersinterface, en zij kunnen een gebruikerservaring ontwerpen om hun merk te weerspiegelen en te versterken. Met ingebouwde ondersteuning voor het afspelen van inhoud die is beveiligd met Adobe Access SDK, helpt Adobe AIR om aangepaste, end-to-end contentdistributieketens te maken.
 

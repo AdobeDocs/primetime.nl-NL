@@ -2,21 +2,20 @@
 title: Domeinregistratie op basis van identiteit implementeren
 description: Domeinregistratie op basis van identiteit implementeren
 copied-description: true
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: e2f826a8-eea5-4d5f-ac4d-401d7a6c5373
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '47'
 ht-degree: 0%
 
 ---
 
-
-# Implementeer domeinregistratie op basis van identiteit{#implement-identity-based-domain-registration}
+# Domeinregistratie op basis van identiteit implementeren{#implement-identity-based-domain-registration}
 
 1. Maak een DRM-beleid met een verplichte domeinregistratie.
 1. Geef de host en poort van de server op voor de URL van de domeinserver.
 
-   Stel in uw [!DNL .properties]-bestand het volgende in:
+   In uw [!DNL .properties] bestand, instellen:
 
    ```
    policy.domain.url=https://[server:port] 
@@ -24,7 +23,7 @@ ht-degree: 0%
 
 1. Verificatie met een gebruikersnaam en wachtwoord verplicht maken.
 
-   Stel in uw [!DNL .properties]-bestand het volgende in:
+   In uw [!DNL .properties] bestand, instellen:
 
    ```
    policy.domain.anonymous=false 

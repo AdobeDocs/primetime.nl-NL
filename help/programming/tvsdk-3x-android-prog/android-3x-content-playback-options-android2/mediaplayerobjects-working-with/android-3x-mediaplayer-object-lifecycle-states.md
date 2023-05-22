@@ -1,14 +1,13 @@
 ---
 description: De status van de mediaspeler bepaalt welke handelingen legaal zijn.
 title: Levenscyclus en status van het MediaPlayer-object
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: b50d5378-4e9b-44c0-9098-8c3e27053b3b
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '453'
 ht-degree: 0%
 
 ---
-
 
 # Levenscyclus en status van het MediaPlayer-object{#lifecycle-and-statuses-of-the-mediaplayer-object}
 
@@ -16,9 +15,9 @@ De status van de mediaspeler bepaalt welke handelingen legaal zijn.
 
 Voor het werken met de status van de mediaspeler:
 
-* U kunt de huidige status van het object `MediaPlayer` ophalen met `MediaPlayer.getStatus()`.
+* U kunt de huidige status van het dialoogvenster `MediaPlayer` object met `MediaPlayer.getStatus()`.
 
-* De lijst met statussen wordt gedefinieerd in de opsomming [MediaPlayerStatus](https://help.adobe.com/en_US/primetime/api/psdk/javadoc_2.5/com/adobe/mediacore/MediaPlayerStatus.html).
+* De lijst met statussen wordt gedefinieerd in het dialoogvenster [MediaPlayerStatus](https://help.adobe.com/en_US/primetime/api/psdk/javadoc_2.5/com/adobe/mediacore/MediaPlayerStatus.html) enum.
 
 Status-overgangsdiagram voor de levenscyclus van een `MediaPlayer` instantie:
 
@@ -42,7 +41,7 @@ In de volgende tabel vindt u informatie over de levenscyclus en status van de me
   </tr> 
   <tr> 
    <td colname="col1"> INITIALISEREN </td> 
-   <td colname="col2"> <p>Uw toepassing roept <span class="codeph"> MediaPlayer.replaceCurrentItem() </span>. </p> <p>Het item van de mediaspeler wordt geladen. </p> </td> 
+   <td colname="col2"> <p>Uw toepassingsvraag <span class="codeph"> MediaPlayer.replaceCurrentItem() </span>. </p> <p>Het item van de mediaspeler wordt geladen. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> GEÏNITIALISEERD </td> 
@@ -50,7 +49,7 @@ In de volgende tabel vindt u informatie over de levenscyclus en status van de me
   </tr> 
   <tr> 
    <td colname="col1"> VOORBEREIDEN </td> 
-   <td colname="col2"> <p>Uw toepassing roept <span class="codeph"> MediaPlayer.prepareToPlay() </span> aan. De mediaspeler laadt het mediaspelitem en alle bijbehorende bronnen. </p> </td> 
+   <td colname="col2"> <p>Uw toepassingsvraag <span class="codeph"> MediaPlayer.prepareToPlay() </span>. De mediaspeler laadt het mediaspelitem en alle bijbehorende bronnen. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> BEREID </td> 
@@ -62,11 +61,11 @@ In de volgende tabel vindt u informatie over de levenscyclus en status van de me
   </tr> 
   <tr> 
    <td colname="col1"> GESCHORST </td> 
-   <td colname="col2"> <p>Als de toepassing niet bij het afspelen navigeert, het apparaat uitschakelt of tijdens het afspelen of pauzeren van de speler overschakelt, wordt de mediaspeler onderbroken en worden de bronnen vrijgegeven. </p> <p>Wanneer <span class="codeph"> MediaPlayer.restore() </span> wordt aangeroepen, wordt de speler teruggezet naar de status waarin deze zich bevond voordat deze werd GESUSPENDED. De uitzondering hierop is dat de speler ZOEKT wanneer de blokkering wordt aangeroepen, de speler wordt gepauzeerd en vervolgens SUSPENDED. </p> <p>Belangrijk:  <p>De volgende informatie onthouden: 
+   <td colname="col2"> <p>Als de toepassing niet bij het afspelen navigeert, het apparaat uitschakelt of tijdens het afspelen of pauzeren van de speler overschakelt, wordt de mediaspeler onderbroken en worden de bronnen vrijgegeven. </p> <p>Aanroepen <span class="codeph"> MediaPlayer.restore() </span> Geeft de speler terug naar de status waarin de speler zich bevond voordat deze werd GESUSPENDED. De uitzondering hierop is dat de speler ZOEKT wanneer de blokkering wordt aangeroepen, de speler wordt gepauzeerd en vervolgens SUSPENDED. </p> <p>Belangrijk:  <p>De volgende informatie onthouden: 
       <ul id="ul_1B21668994D1474AAA0BE839E0D69B00"> 
-       <li id="li_08459A3AB03C45588D73FA162C27A56C">De <span class="codeph"> MediaPlayer </span> roept <span class="codeph"> automatisch </span> op wanneer het oppervlakvoorwerp dat door <span class="codeph"> MediaPlayerView </span> wordt gebruikt wordt vernietigd. </li> 
-       <li id="li_B9926AA2E7B9441490F37D24AE2678A1">De <span class="codeph"> MediaPlayer </span> roept <span class="codeph"> restore() </span> alleen automatisch aan wanneer een nieuw oppervlakobject wordt gemaakt dat door de <span class="codeph"> MediaPlayerView </span> wordt gebruikt. </li> 
-      </ul> </p> </p> <p>Als u het afspelen altijd wilt pauzeren wanneer de MediaPlayer wordt teruggezet, moet u de toepassingsaanroep <span class="codeph"> MediaPlayer.pause() </span> in de Android Activity's <span class="codeph"> onPause() </span>-methode plaatsen. </p> </td> 
+       <li id="li_08459A3AB03C45588D73FA162C27A56C">De <span class="codeph"> MediaPlayer </span> automatisch aanroepen <span class="codeph"> opschorten </span> alleen wanneer het oppervlakobject dat wordt gebruikt door de <span class="codeph"> MediaPlayerView </span> wordt vernietigd. </li> 
+       <li id="li_B9926AA2E7B9441490F37D24AE2678A1">De <span class="codeph"> MediaPlayer </span> automatisch aanroepen <span class="codeph"> restore() </span> alleen wanneer een nieuw object surface wordt gebruikt door de <span class="codeph"> MediaPlayerView </span> wordt gemaakt. </li> 
+      </ul> </p> </p> <p>Als u altijd wilt dat het afspelen wordt gepauzeerd wanneer de MediaPlayer wordt teruggezet, moet u de aanroep van de toepassing uitvoeren <span class="codeph"> MediaPlayer.pause() </span> in de Android-activiteiten <span class="codeph"> onPause() </span> methode. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> VOLTOOID </td> 
@@ -78,7 +77,7 @@ In de volgende tabel vindt u informatie over de levenscyclus en status van de me
   </tr> 
   <tr> 
    <td colname="col1"> FOUT </td> 
-   <td colname="col2"> <p>Er is een fout opgetreden tijdens het proces. Een fout kan ook invloed hebben op wat de toepassing daarna kan doen. Zie <a href="../../../tvsdk-3x-android-prog/android-3x-content-playback-options-android2/android-3x-error-handling-set-up.md" format="dita" scope="local"> Foutafhandeling instellen </a> voor meer informatie. </p> </td> 
+   <td colname="col2"> <p>Er is een fout opgetreden tijdens het proces. Een fout kan ook invloed hebben op wat de toepassing daarna kan doen. Zie voor meer informatie <a href="../../../tvsdk-3x-android-prog/android-3x-content-playback-options-android2/android-3x-error-handling-set-up.md" format="dita" scope="local"> Foutafhandeling instellen </a>. </p> </td> 
   </tr> 
  </tbody> 
 </table>

@@ -2,14 +2,13 @@
 title: Problemen oplossen
 description: Problemen oplossen
 copied-description: true
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: 4af7b625-63d3-48b6-98a5-b8894dd0c67f
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '82'
 ht-degree: 0%
 
 ---
-
 
 # Problemen oplossen {#troubleshooting}
 
@@ -22,7 +21,7 @@ Hieronder ziet u algemene problemen en oplossingen voor implementatie:
        javax.crypto.IllegalBlockSizeException: Input length must be multiple of 8 when decrypting with padded cipher"
    ```
 
-   Controleer of het wachtwoord is versleuteld met de opgegeven `ScrambleUtil`-klasse.
+   Controleer of het wachtwoord is versleuteld met de beschikbare code `ScrambleUtil` klasse.
 
 * Als u de volgende fout ziet:
 
@@ -39,4 +38,3 @@ Hieronder ziet u algemene problemen en oplossingen voor implementatie:
    ```
 
    Zorg ervoor dat u de wachtwoordscrambler-klasse gebruikt die bij de Reference Implementation wordt geleverd (dit hulpprogramma is anders dan het hulpprogramma dat bij de Adobe® Access™-server voor beveiligde streaming wordt geleverd).
-

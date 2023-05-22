@@ -1,20 +1,19 @@
 ---
 description: Voor elke nieuwe video-inhoud initialiseert u een MediaResource-instantie met informatie over de video-inhoud en laadt u de mediabron. De MediaResource-klasse vertegenwoordigt de inhoud die door de MediaPlayer-instantie moet worden geladen.
 title: Een mediabron maken
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: cda70f91-7f30-4e37-9dfa-888b707e3d61
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '306'
 ht-degree: 0%
 
 ---
 
-
 # Een mediabron maken {#create-a-media-resource}
 
 Voor elke nieuwe video-inhoud initialiseert u een MediaResource-instantie met informatie over de video-inhoud en laadt u de mediabron. De MediaResource-klasse vertegenwoordigt de inhoud die door de MediaPlayer-instantie moet worden geladen.
 
-1. Maak een `MediaResource` door informatie over de media door te geven aan de constructor `MediaResource`.
+1. Een `MediaResource` door informatie over de media aan de `MediaResource` constructor.
 
    <table id="table_DD0D5D9129D54F73881399B9B4FF546A"> 
     <thead> 
@@ -30,14 +29,14 @@ Voor elke nieuwe video-inhoud initialiseert u een MediaResource-instantie met in
     </tr> 
     <tr> 
     <td colname="col1"> <p>type </p> </td> 
-    <td colname="col2"> <p>Een van de volgende leden van de opsomming <span class="codeph"> MediaResource.Type </span> die overeenkomt met het aangegeven bestandstype: 
+    <td colname="col2"> <p>Een van de volgende leden van de <span class="codeph"> MediaResource.Type </span> opsomming die overeenkomt met het opgegeven bestandstype: 
     <ul id="ul_72636C41CA7E4538A3BE11A79E0282FC"> 
-    <li id="li_070960200DEB40E992C58FCB8909AEA3"> <span class="codeph"> HLS  </span> - M3U8 </li> 
+    <li id="li_070960200DEB40E992C58FCB8909AEA3"> <span class="codeph"> HLS </span> - M3U8 </li> 
     </ul> </p> </td> 
     </tr> 
     <tr> 
     <td colname="col1"> <p>metagegevens </p> </td> 
-    <td colname="col2"> <p>Een instantie van de klasse <span class="codeph"> Metadata </span>, die aangepaste informatie kan bevatten over de inhoud die moet worden geladen. </p> <p>Voorbeelden van inhoud zijn alternatieve inhoud of voegt inhoud toe die in de hoofdinhoud wordt geplaatst. Als u reclame gebruikt, stelt u <span class="codeph"> AuditudeSettings </span> in. Zie <a href="../../../tvsdk-1.4-for-android/ad-insertion/ad-insertion-metadata/android-1.4-ad-insertion-metadata-set-up.md" format="dita" scope="local"> Metagegevens Ad Insertion </a> voor meer informatie. </p> </td> 
+    <td colname="col2"> <p>Een instantie van de <span class="codeph"> Metagegevens </span> klasse, die aangepaste informatie kan bevatten over de inhoud die moet worden geladen. </p> <p>Voorbeelden van inhoud zijn alternatieve inhoud of voegt inhoud toe die in de hoofdinhoud wordt geplaatst. Als u reclame gebruikt, instellen <span class="codeph"> AuditudeSettings </span>. Zie voor meer informatie <a href="../../../tvsdk-1.4-for-android/ad-insertion/ad-insertion-metadata/android-1.4-ad-insertion-metadata-set-up.md" format="dita" scope="local"> Ad Insertion-metagegevens </a>. </p> </td> 
     </tr> 
     </tbody> 
     </table>
@@ -48,7 +47,7 @@ Voor elke nieuwe video-inhoud initialiseert u een MediaResource-instantie met in
    >
    >Voor MP4-video-on-demand (VOD)-inhoud biedt TVSDK geen ondersteuning voor truc&#39;s, ABR-streaming (Adaptive bit rate), invoeging, Closed Captions of DRM.
 
-   De volgende code maakt een `MediaResource`-instantie:
+   De volgende code maakt een `MediaResource` instantie:
 
    ```java
    try { 
@@ -66,14 +65,14 @@ Voor elke nieuwe video-inhoud initialiseert u een MediaResource-instantie met in
 
    >[!TIP]
    >
-   >Op dit punt, kunt u `MediaResource` accessors (getters) gebruiken om het type van middel, URL, en meta-gegevens te onderzoeken.
+   >U kunt nu `MediaResource` accessors (getters) om het type, de URL en de metagegevens van de bron te bekijken.
 
 1. Laad de mediabron met behulp van het volgende:
 
    * Uw MediaPlayer-instantie.
 
-      Voor meer informatie, zie [Laad een media middel in MediaPlayer](../../../tvsdk-1.4-for-android/ui-configure/mediaplayer-initialize-for-video/android-1.4-media-resource-load.md).
-   * A `MediaPlayerItemLoader` Voor meer informatie, zie [Laad een media middel gebruikend MediaPlayerItemLoader](../../../tvsdk-1.4-for-android/ui-configure/mediaplayer-initialize-for-video/android-1.4-media-mediaplayeritemloader.md).
+      Zie voor meer informatie [Een mediabron laden in de MediaPlayer](../../../tvsdk-1.4-for-android/ui-configure/mediaplayer-initialize-for-video/android-1.4-media-resource-load.md).
+   * A `MediaPlayerItemLoader` Zie voor meer informatie [Een mediabron laden met MediaPlayerItemLoader](../../../tvsdk-1.4-for-android/ui-configure/mediaplayer-initialize-for-video/android-1.4-media-mediaplayeritemloader.md).
    >[!IMPORTANT]
    >
    >Laad de mediabron niet op een achtergrondthread. De meeste verrichtingen TVSDK moeten op de belangrijkste draad worden in werking gesteld, en het runnen van hen op een achtergronddraad kan de verrichting veroorzaken om een fout te werpen en weg te gaan.

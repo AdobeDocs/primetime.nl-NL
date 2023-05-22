@@ -1,20 +1,19 @@
 ---
 description: Wanneer de media speler zijn huidige profiel aan een nieuw profiel overschakelt, kunt u informatie over de schakelaar terugwinnen, met inbegrip van wanneer het geschakeld, breedte en hoogteinformatie, of waarom een verschillende beetjetarief werd gebruikt.
 title: Informatie ophalen over profielschakelaar
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: 3ef4b319-dd78-4abd-9c2d-ab1d608f6cea
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '273'
 ht-degree: 0%
 
 ---
 
-
-# Informatie ophalen over profielswitch{#get-information-about-profile-switch}
+# Informatie ophalen over profielschakelaar{#get-information-about-profile-switch}
 
 Wanneer de media speler zijn huidige profiel aan een nieuw profiel overschakelt, kunt u informatie over de schakelaar terugwinnen, met inbegrip van wanneer het geschakeld, breedte en hoogteinformatie, of waarom een verschillende beetjetarief werd gebruikt.
 
-1. Luister naar de gebeurtenis `AdobePSDK.PSDKEventType.PROFILE_CHANGED`.
+1. Luister naar de `AdobePSDK.PSDKEventType.PROFILE_CHANGED` gebeurtenis.
 
    De Browser TVSDK-mediaspeler verzendt deze gebeurtenis wanneer het adaptieve algoritme voor het wisselen van bitsnelheid overschakelt naar een ander profiel vanwege netwerk- of computeromstandigheden. (Wanneer de bitsnelheid of de punt verandert.)
 1. Wanneer de gebeurtenis voorkomt, controleer de volgende eigenschappen voor informatie over de schakelaar:
@@ -32,7 +31,7 @@ Wanneer de media speler zijn huidige profiel aan een nieuw profiel overschakelt,
     </thead>
     <tbody> 
       <tr> 
-      <td colname="col1"> <span class="codeph"> Reden  </span> </td> 
+      <td colname="col1"> <span class="codeph"> Reden </span> </td> 
       <td colname="col2"> 
         <ul id="ul_37DDE3F297634ED6B47DF5D73F969369"> 
         <li id="li_E374B029E1AF40689D70A9D30E057C5B">Netwerkaanpassing </li> 
@@ -42,17 +41,17 @@ Wanneer de media speler zijn huidige profiel aan een nieuw profiel overschakelt,
         </ul> </td> 
       </tr> 
       <tr> 
-      <td colname="col1"> <span class="codeph"> Bitsnelheid  </span> </td> 
+      <td colname="col1"> <span class="codeph"> Bitsnelheid </span> </td> 
       <td colname="col2"> 
         <ul id="ul_1B49BD90A91147359712E1AFD8877E23"> 
-        <li id="li_1C8E593C65D34742B14A8D0EAD43E0A9"> <span class="codeph"> omhoog  </span>: De bitsnelheid is verhoogd </li> 
-        <li id="li_B1A00E3985A849B6855E15CF70D79BB8"> <span class="codeph"> omlaag  </span>: De bitsnelheid is verlaagd </li> 
+        <li id="li_1C8E593C65D34742B14A8D0EAD43E0A9"> <span class="codeph"> omhoog </span>: De bitsnelheid is verhoogd </li> 
+        <li id="li_B1A00E3985A849B6855E15CF70D79BB8"> <span class="codeph"> omlaag </span>: De bitsnelheid is verlaagd </li> 
         </ul> </td> 
       </tr> 
     </tbody> 
     </table>
 
-   Hier volgen enkele voorbeelden van geretourneerde `description`-tekenreeksen:
+   Hier volgen enkele voorbeelden van geretourneerde waarden `description` tekenreeksen:
 
    ```
    "Bitrate::=up;Reason::=Network Adaptation;" 
@@ -65,4 +64,4 @@ Wanneer de media speler zijn huidige profiel aan een nieuw profiel overschakelt,
 
    >[!NOTE]
    >
-   >Breedte- en hoogtegegevens zijn alleen beschikbaar als ze zijn opgenomen in de `RESOLUTION`-tag in het M3U8-manifest. Als de informatie niet in de M3U8 is opgenomen, worden de eigenschappen width en height ingesteld op 0, aangezien deze geen deel uitmaken van de profielinformatie.
+   >Breedte- en hoogtegegevens zijn alleen beschikbaar als ze zijn opgenomen in het dialoogvenster `RESOLUTION` -tag in het M3U8-manifest. Als de informatie niet in de M3U8 is opgenomen, worden de eigenschappen width en height ingesteld op 0, aangezien deze geen deel uitmaken van de profielinformatie.

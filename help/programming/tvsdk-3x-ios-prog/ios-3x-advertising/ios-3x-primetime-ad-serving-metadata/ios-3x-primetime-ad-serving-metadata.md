@@ -1,14 +1,13 @@
 ---
 description: TVSDK ondersteunt het omzetten en invoegen van advertenties voor VOD en live/lineaire streams.
 title: Metagegevens van primetime en server
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: f27657ac-4037-45e5-a658-ad9a783dd990
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '137'
 ht-degree: 0%
 
 ---
-
 
 # Overzicht {#primetime-ad-server-metadata-overview}
 
@@ -25,11 +24,11 @@ Geef de volgende metagegevens op voordat u reclame in uw video-inhoud kunt opnem
 
 ## Metagegevens van primetime en server instellen {#section_86C4A3B2DF124770B9B7FD2511394313}
 
-Uw toepassing moet TVSDK de vereiste `PTAuditudeMetadata` informatie verstrekken om met de advertentieserver te verbinden.
+Uw toepassing moet TVSDK de vereiste `PTAuditudeMetadata` gegevens om verbinding te maken met de advertentieserver.
 
 De metagegevens van de advertentieserver instellen:
 
-1. Maak een instantie van [PTAuditudeMetadata](https://help.adobe.com/en_US/primetime/api/psdk/appledoc/Classes/PTAuditudeMetadata.html) en stel de eigenschappen ervan in.
+1. Een instantie maken van [PTAuditudeMetadata](https://help.adobe.com/en_US/primetime/api/psdk/appledoc/Classes/PTAuditudeMetadata.html) en stelt de eigenschappen ervan in.
 
    ```
    PTAuditudeMetadata *adMetadata = [[PTAuditudeMetadata alloc] init];  
@@ -39,7 +38,7 @@ De metagegevens van de advertentieserver instellen:
    adMetadata.userAgent = @"INSERT_AGENT_NAME_HERE; 
    ```
 
-1. Stel de `PTAuditudeMetadata`-instantie in als metagegevens voor de huidige `PTMediaPlayerItem`-metagegevens met `PTAdResolvingMetadataKey`.
+1. Stel de `PTAuditudeMetadata` instantie als metagegevens voor de huidige `PTMediaPlayerItem` metagegevens gebruiken `PTAdResolvingMetadataKey`.
 
    ```
    // Metadata is an instance of PTMetadata that is used to create the PTMediaPlayerItem 

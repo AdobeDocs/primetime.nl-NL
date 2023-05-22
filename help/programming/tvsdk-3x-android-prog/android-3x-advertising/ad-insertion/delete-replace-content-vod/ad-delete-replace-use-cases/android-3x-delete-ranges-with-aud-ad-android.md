@@ -1,22 +1,21 @@
 ---
 description: U kunt TimeRanges verwijderen tussen begin en eind in localTime van de chronologie.
 title: Bereiken verwijderen
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: afa2f520-144f-47b4-b271-50c8e4d138d8
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '71'
 ht-degree: 0%
 
 ---
 
+# Bereiken verwijderen {#delete-ranges}
 
-# Bereiken {#delete-ranges} verwijderen
-
-U kunt `TimeRanges` tussen `begin` en `end` in `localTime` uit de tijdlijn verwijderen.
+U kunt `TimeRanges` Tussen `begin` en `end` in `localTime` uit de tijdlijn.
 
 >[!TIP]
 >
->Als u alleen bepaalde bereiken uit de inhoud wilt verwijderen, maakt u een `CustomRangeMetadata`-instantie en geeft u het type op als een `DELETE`-bewerking met de gedefinieerde aangepaste bereiken.
+>Als u alleen bepaalde bereiken uit de inhoud wilt verwijderen, maakt u een `CustomRangeMetadata` -instantie en geef het type op als een `DELETE` bewerking met de gedefinieerde aangepaste bereiken.
 
 De advertentiekaart moet worden gebruikt zoals gedefinieerd door de advertentieserver.
 

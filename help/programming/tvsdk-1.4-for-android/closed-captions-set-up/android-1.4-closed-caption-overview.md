@@ -1,14 +1,13 @@
 ---
 description: Bij Closed Captioning wordt het audiogedeelte van een video als tekst op het scherm weergegeven wanneer het geluid onhoorbaar is of de kijker niet goed kan worden gehoord.
 title: Selecteer een ondertitelingstrack uit de beschikbare tracks
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: ff3e0c59-bcd9-4831-804c-35e13d96f499
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '212'
 ht-degree: 0%
 
 ---
-
 
 # Overzicht {#work-with-closed-captions}
 
@@ -24,5 +23,5 @@ TVSDK ondersteunt het renderen van deze indelingen:
 U kunt:
 
 * Selecteer een beschikbare bijschrifttrack als huidige track en luister naar gebeurtenissen die aangeven welke aanvullende beschikbare tracks beschikbaar zijn.
-* Schakel ondertiteling aan of uit (zichtbaar of niet zichtbaar) door de `MediaPlayer` interface te gebruiken.
-* Selecteer opmaakopties die bepalen hoe gesloten bijschriften worden gerenderd door de onderliggende video-engine. Gebruik de `MediaPlayerItem` interface om formaten zoals de doopvont of doopvontkleur te selecteren.
+* Schakel ondertiteling uitschakelen in of uit (zichtbaar of niet zichtbaar) door de optie `MediaPlayer` interface.
+* Selecteer opmaakopties die bepalen hoe gesloten bijschriften worden gerenderd door de onderliggende video-engine. Gebruik de `MediaPlayerItem` interface voor het selecteren van indelingen zoals het lettertype of de lettertypekleur.

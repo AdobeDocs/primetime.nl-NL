@@ -2,16 +2,15 @@
 title: Overzicht van het proces voor het verkrijgen van licenties
 description: Overzicht van het proces voor het verkrijgen van licenties
 copied-description: true
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: 0e1c43a5-9a7d-4534-acd6-7feff94f4670
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '339'
 ht-degree: 0%
 
 ---
 
-
-# Overzicht van licentieaanschaf{#license-acquisition-process-overview}
+# Overzicht van het proces voor het verkrijgen van licenties{#license-acquisition-process-overview}
 
 Het inschakelen van uw toepassing voor het afspelen van inhoud onder bescherming van Primetime DRM wordt in de volgende secties beschreven, met gebruik van ActionScript 3 (AS3)-codevoorbeelden. De nuanced afwijkingen van deze workflow voor native apps op mobiele platforms worden waar nodig weergegeven. De Primetime DRM-workflows zijn echter op alle platforms zeer vergelijkbaar, zodat u de AS3-code begrijpt en de extrapolatie naar andere platforms vrij eenvoudig maakt.
 
@@ -32,6 +31,6 @@ Het inschakelen van uw toepassing voor het afspelen van inhoud onder bescherming
 1. Als de verificatie nodig was en nu is voltooid, downloadt u de licentie van de licentieserver.
 1. Speel de inhoud af.
 
-Als er geen fouten zijn opgetreden en de gebruiker is geautoriseerd om de inhoud weer te geven, verzendt Primetime een `DRMStatusEvent`-object en begint de toepassing met het afspelen. Het `DRMStatusEvent`-object bevat de gerelateerde licentiegegevens, die het beleid en de machtigingen van de gebruiker identificeren. `DRMStatusEvent` kan bijvoorbeeld informatie bevatten over het feit of de inhoud offline beschikbaar kan worden gemaakt, wanneer de licentie verloopt, enzovoort.
+Als er geen fouten zijn opgetreden en de gebruiker is geautoriseerd om de inhoud weer te geven, verzendt Primetime een `DRMStatusEvent` en de toepassing begint met afspelen. De `DRMStatusEvent` -object bevat de gerelateerde licentiegegevens, die het beleid en de machtigingen van de gebruiker identificeert. Bijvoorbeeld: `DRMStatusEvent` kan informatie bevatten over de vraag of de inhoud offline toegankelijk kan worden gemaakt, wanneer de licentie verloopt, enzovoort.
 
-De toepassing kan de licentiegegevens gebruiken om de gebruiker op de hoogte te stellen van de status van zijn beleid. De toepassing kan bijvoorbeeld het aantal resterende dagen dat de gebruiker heeft om de inhoud weer te geven, weergeven in een statusbalk. Als de gebruiker offline toegang heeft, wordt de licentie in de cache geplaatst en wordt de gecodeerde inhoud gedownload naar de computer van de gebruiker. De inhoud is toegankelijk voor de duur die is gedefinieerd in de duur van de licentiecache. De eigenschap detail in de gebeurtenis bevat `DRM.voucherObtained`. De toepassing bepaalt waar de inhoud lokaal wordt opgeslagen om deze offline beschikbaar te maken. U kunt licenties ook vooraf laden met de klasse `DRMManager`.
+De toepassing kan de licentiegegevens gebruiken om de gebruiker op de hoogte te stellen van de status van zijn beleid. De toepassing kan bijvoorbeeld het aantal resterende dagen dat de gebruiker heeft om de inhoud weer te geven, weergeven in een statusbalk. Als de gebruiker offline toegang heeft, wordt de licentie in de cache geplaatst en wordt de gecodeerde inhoud gedownload naar de computer van de gebruiker. De inhoud is toegankelijk voor de duur die is gedefinieerd in de duur van de licentiecache. De eigenschap detail in de gebeurtenis bevat `DRM.voucherObtained`. De toepassing bepaalt waar de inhoud lokaal wordt opgeslagen om deze offline beschikbaar te maken. U kunt licenties ook vooraf laden met de `DRMManager` klasse.

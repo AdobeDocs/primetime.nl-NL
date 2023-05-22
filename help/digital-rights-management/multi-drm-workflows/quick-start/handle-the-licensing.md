@@ -1,20 +1,19 @@
 ---
 description: Licentieverlening is het belangrijkste mechanisme waarbij gebruikers de mogelijkheid wordt geboden of geweigerd om een stuk beveiligde video-inhoud af te spelen. Een wettige (gerechtigde) gebruiker kan een vergunning (een sleutel) worden verleend om een specifiek stuk van de gecodeerde inhoud van zijn inhoudsleverancier te decrypteren en te spelen.
 title: Licentie
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: 60aa3e77-f821-41b3-ba0e-1a2c05b2bb1a
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '346'
 ht-degree: 0%
 
 ---
 
-
 # Licentie{#licensing}
 
 Licentieverlening is het belangrijkste mechanisme waarbij gebruikers de mogelijkheid wordt geboden of geweigerd om een stuk beveiligde video-inhoud af te spelen. Een wettige (gerechtigde) gebruiker kan een vergunning (een sleutel) worden verleend om een specifiek stuk van de gecodeerde inhoud van zijn inhoudsleverancier te decrypteren en te spelen.
 
-Voordat uw app of webpagina op het apparaat van een eindgebruiker met DRM beveiligde inhoud kan afspelen, moet deze een token verkrijgen van een machtigings- of storefrontserver die u als klant gebruikt. Adobe biedt hiertoe een voorbeeldreferentieserver: [Referentieserver: Voorbeeld ExpressPlay Entitlement Server (SEES)](../../multi-drm-workflows/feature-topics/sees-reference-server.md).
+Voordat uw app of webpagina op het apparaat van een eindgebruiker met DRM beveiligde inhoud kan afspelen, moet deze een token verkrijgen van een machtigings- of storefrontserver die u als klant gebruikt. Adobe biedt hiertoe een voorbeeldreferentieserver: [Referentieserver: Voorbeeld ExpressPlay Entitlement Server (SES)](../../multi-drm-workflows/feature-topics/sees-reference-server.md).
 
 Uw machtiging- of storefront-server vraagt alleen een licentietoken aan bij de relevante ExpressPlay-server nadat u met uw eigen back-end-systemen hebt gecontroleerd of de specifieke gebruiker het recht heeft de gevraagde inhoud te bekijken. De reactie die door de aanvraag voor het licentietoken wordt geretourneerd, is een gebruiksklare URL voor de licentieserver of de reactie bevat de URL in een JSON-structuur, afhankelijk van de DRM-oplossing waarmee u werkt.
 
@@ -27,7 +26,7 @@ Uw machtiging- of storefront-server vraagt alleen een licentietoken aan bij de r
 
 1. Voer de aanvraag voor het licentietoken uit.
 
-   Voor een snel-startscenario, waarin u slechts wilt ervoor zorgen dat de diverse betrokken componenten samenwerken, kunt u iets als [!DNL curl] willen gebruiken om uw verzoek van het licentietoken te maken, (in tegenstelling tot aanvankelijk het krijgen van een app en het uitvoeren van en het testen van vraag van daar). Bijvoorbeeld:
+   Voor een snel-startscenario, waarin u slechts wilt ervoor zorgen dat de diverse betrokken componenten samenwerken, kunt u iets als willen gebruiken [!DNL curl] om uw licentietoken-aanvraag in te dienen (in tegenstelling tot het uitvoeren en testen van een toepassing van daaruit). Bijvoorbeeld:
 
    * Widevine:
 

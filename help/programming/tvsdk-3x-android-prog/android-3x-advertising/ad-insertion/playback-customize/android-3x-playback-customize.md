@@ -1,14 +1,13 @@
 ---
 description: Wanneer het afspelen een advertentie-einde bereikt, een advertentie-einde doorgeeft of eindigt in een advertentie-einde, definieert TVSDK een standaardgedrag voor het plaatsen van de huidige afspeelkop.
 title: Afspelen met advertenties aanpassen
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: 5606c9c6-58ff-42a7-974e-3a445f3d3f28
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '221'
 ht-degree: 0%
 
 ---
-
 
 # Overzicht {#customize-playback-with-ads}
 
@@ -16,7 +15,7 @@ Wanneer het afspelen een advertentie-einde bereikt, een advertentie-einde doorge
 
 >[!TIP]
 >
->U kunt het standaardgedrag met voeten treden door de `AdBreakPolicySelector` klasse te gebruiken.
+>U kunt het standaardgedrag overschrijven door de opdracht `AdBreakPolicySelector` klasse.
 
 Het standaardgedrag varieert, afhankelijk van het feit of de gebruiker de advertentie doorgeeft tijdens het afspelen of door in een video te zoeken of deze snel terug te spoelen of terug te spoelen (truc).
 

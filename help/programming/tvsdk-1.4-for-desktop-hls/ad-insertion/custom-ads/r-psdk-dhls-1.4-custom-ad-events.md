@@ -1,14 +1,13 @@
 ---
 description: De TVSDK-speler verzendt gebeurtenissen om de status van de aangepaste advertentie en het laden weer te geven of om een advertentie te negeren die te lang duurt om te laden of die fouten bevat. Deze gebeurtenissen worden gedefinieerd in events.CustomAdEvents.
 title: Aangepaste ad-events
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: 44f32584-7f6c-4071-82b6-9cc9584418ee
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '175'
 ht-degree: 0%
 
 ---
-
 
 # Aangepaste ad-events{#custom-ad-events}
 
@@ -23,36 +22,36 @@ De TVSDK-speler verzendt gebeurtenissen om de status van de aangepaste advertent
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <span class="codeph"> AdClickThru  </span> </td> 
+   <td colname="col1"> <span class="codeph"> AdClickThru </span> </td> 
    <td colname="col2"> Het aantal keren dat de viewer op een aangepaste advertentie heeft geklikt. </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <span class="codeph"> AdError  </span> </td> 
+   <td colname="col1"> <span class="codeph"> AdError </span> </td> 
    <td colname="col2"> Er is een fout opgetreden met de aangepaste advertentie. </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <span class="codeph"> AdLoaded  </span> </td> 
+   <td colname="col1"> <span class="codeph"> AdLoaded </span> </td> 
    <td colname="col2"> De aangepaste advertentie is geladen.  </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <span class="codeph"> AdLoading  </span> </td> 
+   <td colname="col1"> <span class="codeph"> AdLoading </span> </td> 
    <td colname="col2"> De aangepaste advertentie wordt geladen. </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <span class="codeph"> AdPaused  </span> </td> 
+   <td colname="col1"> <span class="codeph"> AdPaused </span> </td> 
    <td colname="col2"> De aangepaste advertentie is gepauzeerd. </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <span class="codeph"> AdResumed  </span> </td> 
+   <td colname="col1"> <span class="codeph"> AdResumed </span> </td> 
    <td colname="col2"> De aangepaste advertentie is na een pauze verder afgespeeld. </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <span class="codeph"> Afspelen  </span> </td> 
+   <td colname="col1"> <span class="codeph"> Afspelen </span> </td> 
    <td colname="col2"> De aangepaste advertentie wordt afgespeeld. </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <span class="codeph"> AdProgress  </span> </td> 
-   <td colname="col2"> <p>De aangepaste advertentiespeler informeert de TVSDK-speler over de voortgang van de aangepaste advertentie. &amp;nbsp; </p> <p>De <span class="codeph"> currentTime </span> en <span class="codeph"> totalTime </span> van de advertentie worden met deze gebeurtenis overgegaan. </p> </td> 
+   <td colname="col1"> <span class="codeph"> AdProgress </span> </td> 
+   <td colname="col2"> <p>De aangepaste advertentiespeler informeert de TVSDK-speler over de voortgang van de aangepaste advertentie. &amp;nbsp; </p> <p>De <span class="codeph"> currentTime </span> en <span class="codeph"> totalTime </span> van de advertentie worden doorgegeven met deze gebeurtenis. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> AdStarted </td> 
@@ -66,4 +65,3 @@ De TVSDK-speler verzendt gebeurtenissen om de status van de aangepaste advertent
 </table>
 
 <!--<a id="section_027774C2A47C453BA9DED61C6F8567C3"></a>-->
-

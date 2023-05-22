@@ -1,22 +1,21 @@
 ---
 description: TVSDK verzendt de gebeurtenissen met betrekking tot media Player-items als reactie op het laden van een media-item.
 title: Gebeurtenissen van Loader
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: ee5be2d4-5c77-4af4-b8fe-8cef18d7c0d9
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '122'
 ht-degree: 0%
 
 ---
 
-
-# Loader-gebeurtenissen{#loader-events}
+# Gebeurtenissen van Loader{#loader-events}
 
 TVSDK verzendt de gebeurtenissen met betrekking tot media Player-items als reactie op het laden van een media-item.
 
-Deze gebeurtenissen bieden een alternatieve workflow. U wordt niet vereist om deze interface uit te voeren wanneer het creëren van `MediaPlayer`. Gebruik dit wanneer u `MediaPlayerItemLoader` wilt hebben.
+Deze gebeurtenissen bieden een alternatieve workflow. U hoeft deze interface niet te implementeren wanneer u een `MediaPlayer`. Gebruik deze optie als u een `MediaPlayerItemLoader`.
 
-Registreer listeners voor de volgende gebeurtenissen met het object `MediaPlayerItemLoader` om een melding te ontvangen over gebeurtenissen die betrekking hebben op het laden van een mediaspeler.
+Registreer listeners voor de volgende gebeurtenissen bij de `MediaPlayerItemLoader` object.
 
 | Gebeurtenis | Betekenis |
 |---|---|

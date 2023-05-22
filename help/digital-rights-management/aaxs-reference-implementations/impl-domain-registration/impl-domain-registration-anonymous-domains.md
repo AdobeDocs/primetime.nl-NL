@@ -2,14 +2,13 @@
 title: Anonieme domeinen
 description: Anonieme domeinen
 copied-description: true
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: a9358582-ad25-4016-94d2-cd82b4c00573
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '380'
 ht-degree: 0%
 
 ---
-
 
 # Anonieme domeinen {#anonymous-domains}
 
@@ -18,30 +17,30 @@ In dit geval, behoren een groot aantal apparaten tot één enkel domein, en de a
 De referentie-implementatie implementeert de volgende logica voor domeinregistratie:
 
 1. Analyseer de domeinnaam van de aanvraag-URL.
-1. De domeinnaam opzoeken in de tabel `DomainServerInfo`. Als een item niet wordt gevonden, voegt u een item in de tabel in (standaardwaarden: verificatie is niet vereist en geen lidmaatschapsmaximum).
+1. De domeinnaam opzoeken in het dialoogvenster `DomainServerInfo` tabel. Als een item niet wordt gevonden, voegt u een item in de tabel in (standaardwaarden: verificatie is niet vereist en geen lidmaatschapsmaximum).
 1. Als verificatie is vereist voor het gevraagde domein, controleert u of een geldig verificatietoken is opgenomen in de aanvraag en past u de naamruimte Auth aan, indien opgegeven in de database.
 
-   1. Als verificatie is vereist maar geen geldig autetoken is opgegeven, retourneert u fout `DOM_AUTHENTICATION_REQUIRED (503)`.
+   1. Als verificatie is vereist maar geen geldig auteur-token is opgegeven, retourneert u een fout `DOM_AUTHENTICATION_REQUIRED (503)`.
 
 1. Controleer of het apparaat al bij het domein is geregistreerd:
 
-   1. De domeinnaam opzoeken in de tabel `DomainMembership`. Voor elke gevonden machine GUID, vergelijk met de machine GUID in het verzoek. Als dit een nieuwe machine is, voeg een ingang aan `DomainMembership` lijst toe.
+   1. De domeinnaam opzoeken in het dialoogvenster `DomainMembership` tabel. Voor elke gevonden machine GUID, vergelijk met de machine GUID in het verzoek. Als dit een nieuwe computer is, voegt u een item toe aan de `DomainMembership` tabel.
 
    1. Als het een nieuw apparaat is en Max Lidmaatschap reeds is bereikt, terugkeer fout `DOM_LIMIT_REACHED (502)`.
 
-1. Alle domeinsleutels voor dit domein opzoeken in de tabel `DomainKeys`.
+1. Alle domeinsleutels voor dit domein opzoeken in het dialoogvenster `DomainKeys` tabel.
 
-   1. Als `DomainServerInfo` aangeeft dat de toetsen moeten worden omgedraaid, genereert u een nieuw sleutelpaar, slaat u dit op in de tabel `DomainKeys` (met toetsversie één hoger dan de hoogste bestaande toets) en stelt u de markering `Key Rollover Required` in `DomainServerInfo` opnieuw in.
+   1. Indien `DomainServerInfo` geeft aan welke toetsen moeten worden omgedraaid, genereert een nieuw sleutelpaar, slaat dit op in het dialoogvenster `DomainKeys` tabel (met toetsversie één hoger dan de hoogste bestaande toets) en opnieuw instellen `Key Rollover Required` markering in `DomainServerInfo`.
 
    1. Voor elke domeinsleutel genereert u een domeinreferentie.
 
 De verwijzingsimplementatie voert de volgende logica voor domein uit deïnschrijving:
 
 1. Analyseer de domeinnaam van de aanvraag-URL.
-1. Opzoeken van de gevraagde domeinnaam in de tabel `DomainServerInfo`.
+1. Opzoeken van de gevraagde domeinnaam in het dialoogvenster `DomainServerInfo` tabel.
 1. Als verificatie is vereist voor het gevraagde domein, controleert u of een geldig verificatietoken is opgenomen in de aanvraag en past u de naamruimte Auth aan, indien opgegeven in de database.
-1. Zoekt omhoog de domeinnaam en machine GUID in `DomainMembership` lijst. Als geen overeenkomend item wordt gevonden, retourneert u de fout `DEREG_DENIED (401)`.
+1. Opzoeken van de domeinnaam en machine GUID in het dialoogvenster `DomainMembership` tabel. Als geen overeenkomend item wordt gevonden, retourneert u een fout `DEREG_DENIED (401)`.
 
-1. Als dit geen voorvertoningsverzoek is, verwijdert u de vermelding uit `DomainMembership` en stelt u de markering `Key Rollover Required` in `DomainServerInfo` in.
+1. Als dit geen voorvertoningsverzoek is, verwijdert u het item uit `DomainMembership` en stelt de `Key Rollover Required` markering in `DomainServerInfo`.
 
 In dit geval, aangezien een groot aantal machines zich bij het domein kon aansluiten, is volledig het aanpassen van machine identiteitskaart niet mogelijk. In plaats daarvan, wordt de willekeurige machine GUID die aan de machine tijdens individualisering wordt toegewezen gebruikt.

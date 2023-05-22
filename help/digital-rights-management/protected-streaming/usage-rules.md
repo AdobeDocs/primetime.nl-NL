@@ -1,16 +1,15 @@
 ---
 description: Met de Adobe Primetime DRM-server voor beveiligde streaming kunt u alle gebruiksregels op de server opgeven met configuratiebestanden.
 title: Gebruiksregels
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: 55af3a18-8fdb-4285-bd9f-ca479475e34f
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '240'
 ht-degree: 0%
 
 ---
 
-
-# Informatie over gebruiksregels{#about-usage-rules}
+# Gebruiksregels{#about-usage-rules}
 
 Met de Adobe Primetime DRM-server voor beveiligde streaming kunt u alle gebruiksregels op de server opgeven met configuratiebestanden.
 
@@ -27,5 +26,4 @@ De Primetime DRM-server voor beveiligde streaming ondersteunt de volgende gebrui
 
 >[!NOTE]
 >
->Als u levering via externe sleutels op iOS-apparaten wilt ondersteunen, moet voor het DRM-beleid dat wordt toegepast tijdens het verpakken de levering via externe sleutels zijn ingeschakeld. Dit plaatsen kan niet door de huurdersconfiguratie op de server worden gewijzigd.
-
+>Als u levering via een externe toets aan iOS-apparaten wilt ondersteunen, moet voor het DRM-beleid dat wordt toegepast tijdens het verpakken de levering via een externe toets zijn ingeschakeld. Dit plaatsen kan niet door de huurdersconfiguratie op de server worden gewijzigd.

@@ -1,20 +1,19 @@
 ---
 description: U kunt Digital Rights Management-specifieke workflows (DRM) voltooien.
 title: Digital Rights Management
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: 5a40252b-2917-4341-bc64-8642432ddda9
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '102'
 ht-degree: 0%
 
 ---
 
-
 # Digital Rights Management {#digital-rights-management}
 
 U kunt Digital Rights Management-specifieke workflows (DRM) voltooien.
 
-U kunt naar de gebeurtenis `AdobePSDK.DRMMetadataInfoEvent` luisteren om DRM-workflows te verwerken:
+U kunt luisteren naar de `AdobePSDK.DRMMetadataInfoEvent` gebeurtenis voor het afhandelen van DRM-workflows:
 
 ```js
 ... 
@@ -22,15 +21,15 @@ player.addEventListener(AdobePSDK.PSDKEventType.DRM_METADATA_INFO_AVAILABLE, onD
 ...
 ```
 
-## Digital Rights Management {#add-digital-rights-management} toevoegen
+## Digital Rights Management toevoegen {#add-digital-rights-management}
 
-1. Voeg `DRMMetadataInfoAvailableEvent` toe om `DRMMetadata` te krijgen.
+1. Voeg de `DRMMetadataInfoAvailableEvent` om de `DRMMetadata`.
 
    ```js
    player.addEventListener(AdobePSDK.PSDKEventType.DRM_METADATA_INFO_AVAILABLE, onDRMMetadataInfoAvaialble);
    ```
 
-1. Implementeer de sectie `onDRMMetadataInfoAvailable` boven de regel in stap 1.
+1. Implementeer de `onDRMMetadataInfoAvailable` in stap 1.
 
    ```js
    var onDRMMetadataInfoAvaialble = function(event) { 

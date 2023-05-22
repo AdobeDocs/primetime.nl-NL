@@ -1,13 +1,13 @@
 ---
 title: SSO op iOS wanneer het gebruiken van de Toegelaten van de Toegang van Primetime
 description: SSO op iOS wanneer het gebruiken van de Toegelaten van de Toegang van Primetime
-source-git-commit: 326f97d058646795cab5d062fa5b980235f7da37
+exl-id: 882f0abb-2e6e-461d-a375-3ab410991935
+source-git-commit: bfc3ba55c99daba561255760baf273b6538a3c6e
 workflow-type: tm+mt
 source-wordcount: '1160'
 ht-degree: 0%
 
 ---
-
 
 # SSO op iOS wanneer het gebruiken van de Toegelaten van de Toegang van Primetime {#sso-on-ios-when-using-the-primetime-authentication-access-enabler}
 
@@ -88,4 +88,3 @@ Toepassingen hebben dezelfde opslagruimte op het plakbord, maar hebben verschill
 1. Gebruiker opent app B (met bundel-id) *com.z.AppB*) en de machtigingsgegevens die zijn gemaakt door app A worden automatisch gewist door Access Enabler (beveiligingsmechanisme dat een conflict detecteert tussen de momenteel berekende apparaat-id in app B en de id die is opgeslagen in de machtigingstokens die zijn gemaakt door app A)
 1. Gebruiker voert verificatie uit in app B
 1. Gebruiker opent app A en de machtigingsgegevens die door app B zijn gemaakt, worden automatisch gewist door Access Enabler (beveiligingsmechanisme dat een conflict detecteert tussen de momenteel berekende apparaat-id in app A en de id die is opgeslagen in de machtigingstokens die door app B zijn gemaakt)
-

@@ -1,37 +1,36 @@
 ---
 description: De term instant op verwijst naar het vooraf laden van een of meer kanalen, zodat een gebruiker die een kanaal selecteert of schakelt kanalen de inhoud direct ziet afspelen. De buffering is al uitgevoerd tegen de tijd dat de gebruiker begint te kijken.
 title: Direct aan
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: f640f208-d1b3-467a-be97-38690e10b7ed
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '329'
 ht-degree: 0%
 
 ---
 
-
-# Meteen op {#instant-on}
+# Direct aan {#instant-on}
 
 De term instant op verwijst naar het vooraf laden van een of meer kanalen, zodat een gebruiker die een kanaal selecteert of schakelt kanalen de inhoud direct ziet afspelen. De buffering is al uitgevoerd tegen de tijd dat de gebruiker begint te kijken.
 
-Zonder instant on initialiseert TVSDK de media die moeten worden afgespeeld, maar start de buffering van de stream pas wanneer de toepassing `play` aanroept. De gebruiker ziet geen inhoud totdat de buffering is voltooid. Met onmiddellijke ingang kunt u meerdere media Player-instanties (of media-player-itemloader) starten en TVSDK begint de streams direct te bufferen.
+TVSDK initialiseert zonder onmiddellijk de media die moeten worden afgespeeld, maar start de buffering van de stream pas wanneer de toepassing wordt aangeroepen `play`. De gebruiker ziet geen inhoud totdat de buffering is voltooid. Met onmiddellijke ingang kunt u meerdere media Player-instanties (of media-player-itemloader) starten en TVSDK begint de streams direct te bufferen.
 
-Wanneer een gebruiker het kanaal wijzigt en de stream correct is gebufferd, wordt het afspelen onmiddellijk gestart wanneer `play` op het nieuwe kanaal wordt aangeroepen.
+Wanneer een gebruiker het kanaal wijzigt en de stream correct is gebufferd, wordt `play` op het nieuwe kanaal begint onmiddellijk met afspelen.
 
-Hoewel er geen grenzen aan het aantal instanties `MediaPlayer` zijn die TVSDK kan lopen, verbruikt het runnen van meer instanties meer middelen. De prestaties van de toepassing kunnen worden beïnvloed door het aantal exemplaren dat wordt uitgevoerd. Zie [Een mediabron laden met MediaPlayerItemLoader](../../../tvsdk-1.4-for-android/ui-configure/mediaplayer-initialize-for-video/android-1.4-media-mediaplayeritemloader.md) voor meer informatie over deze instanties.
+Hoewel het aantal `MediaPlayer` instanties die door TVSDK kunnen worden uitgevoerd en waarop meer instanties worden uitgevoerd, verbruikt meer bronnen. De prestaties van de toepassing kunnen worden beïnvloed door het aantal exemplaren dat wordt uitgevoerd. Zie voor meer informatie over deze instanties [Een mediabron laden met MediaPlayerItemLoader](../../../tvsdk-1.4-for-android/ui-configure/mediaplayer-initialize-for-video/android-1.4-media-mediaplayeritemloader.md).
 
-## Buffering configureren voor direct afspelen {#configure-buffering-for-instant-on-playback}
+## Buffering configureren voor onmiddellijk afspelen {#configure-buffering-for-instant-on-playback}
 
 Met onmiddellijke aan, kunnen de gebruikers kanalen schakelen en het playback begint onmiddellijk zonder wachttijd. Wanneer u onmiddellijk inschakelt, buffert TVSDK een of meer kanalen voordat het afspelen begint.
 
 1. Bevestig dat de bron is geladen en klaar is voor afspelen door te controleren of de status PREPARED is.
-1. Roep `prepareBuffer` voor elke `MediaPlayer`-instantie aan voordat u `play` aanroept.
+1. Vóór het aanroepen `play`, aanroepen `prepareBuffer` voor elke `MediaPlayer` -instantie.
 
-   Dit laat onmiddellijk toe, wat betekent dat TVSDK begint als buffer op te treden zonder eigenlijk het media middel te spelen. TVSDK verzendt de gebeurtenis `BUFFERING_COMPLETED` wanneer de buffer vol is.
+   Dit laat onmiddellijk toe, wat betekent dat TVSDK begint als buffer op te treden zonder eigenlijk het media middel te spelen. TVSDK verzendt de `BUFFERING_COMPLETED` gebeurtenis wanneer de buffer vol is.
 
    >[!NOTE]
    >
-   >`prepareBuffer` en `prepareToPlay` zetten standaard de mediastream in om vanaf het begin af te spelen. Als u op een andere positie wilt beginnen, geeft u de positie (in milliseconden) door aan `prepareToPlay`.
+   >Standaard, `prepareBuffer` en `prepareToPlay` Stel de mediastream in om vanaf het begin af te spelen. Als u op een andere positie wilt beginnen, geeft u de positie (in milliseconden) door aan `prepareToPlay`.
 
    ```java
    @Override 
@@ -54,9 +53,9 @@ Met onmiddellijke aan, kunnen de gebruikers kanalen schakelen en het playback be
    }
    ```
 
-1. Wanneer u de gebeurtenis `BUFFERING_COMPLETE` ontvangt, begin het punt te spelen of toon visuele terugkoppelen om erop te wijzen dat de inhoud volledig als buffer voor is.
+1. Wanneer u de `BUFFERING_COMPLETE` -gebeurtenis, het afspelen van het item starten of visuele feedback weergeven om aan te geven dat de inhoud volledig is gebufferd.
 
-   Als u `play` roept, zou het playback onmiddellijk moeten beginnen.
+   Als u `play`, moet het afspelen onmiddellijk beginnen.
 
    ```java
    void onBufferPrepared(const psdk::PSDKEvent *ev) { 

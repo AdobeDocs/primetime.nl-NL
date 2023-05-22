@@ -1,33 +1,32 @@
 ---
 description: Uw toepassing moet de juiste PTTimedMetadata-objecten op de juiste momenten gebruiken.
 title: Metagegevensobjecten met tijdslimiet opslaan terwijl ze worden verzonden
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: 43bc2b47-b947-4af1-bba8-6f2063c7b60c
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '199'
 ht-degree: 0%
 
 ---
 
-
 # Metagegevensobjecten met tijdslimiet opslaan terwijl ze worden verzonden {#store-timed-metadata-objects-as-they-are-dispatched}
 
 Uw toepassing moet de juiste PTTimedMetadata-objecten op de juiste momenten gebruiken.
 
-Tijdens het parseren van inhoud, wat vóór playback gebeurt, identificeert TVSDK geabonneerde markeringen en brengt uw toepassing over deze markeringen op de hoogte. De tijd die aan elke `PTTimedMetadata` wordt geassocieerd is de absolute tijd op de playbackchronologie.
+Tijdens het parseren van inhoud, wat vóór playback gebeurt, identificeert TVSDK geabonneerde markeringen en brengt uw toepassing over deze markeringen op de hoogte. De tijd die aan elk wordt geassocieerd `PTTimedMetadata` Dit is de absolute tijd op de afspeeltijdlijn.
 
 Uw toepassing moet de volgende taken uitvoeren:
 
 1. Houd de huidige afspeeltijd bij.
-1. Pas de huidige afspeeltijd aan de verzonden `PTTimedMetadata`-objecten aan.
+1. De huidige afspeeltijd afstemmen op de verzonden tijd `PTTimedMetadata` objecten.
 
-1. Gebruik `PTTimedMetadata` waar de begintijd gelijk is aan de huidige afspeeltijd.
+1. Gebruik de `PTTimedMetadata` waarbij de begintijd gelijk is aan de huidige afspeeltijd.
 
    >[!NOTE]
    >
-   >In de onderstaande code wordt ervan uitgegaan dat er slechts één `PTTimedMetadata`-instantie tegelijk is. Als er meerdere exemplaren zijn, moet de toepassing deze op de juiste wijze opslaan in een woordenboek. Een methode is om een array op een bepaald tijdstip te maken en alle instanties in die array op te slaan.
+   >In de onderstaande code wordt ervan uitgegaan dat er slechts één code is `PTTimedMetadata` -instantie tegelijk. Als er meerdere exemplaren zijn, moet de toepassing deze op de juiste wijze opslaan in een woordenboek. Een methode is om een array op een bepaald tijdstip te maken en alle instanties in die array op te slaan.
 
-   In het volgende voorbeeld ziet u hoe u `PTTimedMetadata`-objecten opslaat in een `NSMutableDictionary (timedMetadataCollection)`-bestand dat is vastgezet tegen de begintijd van elke `timedMetadata`.
+   In het volgende voorbeeld wordt getoond hoe u het bestand opslaat `PTTimedMetadata` objecten in een `NSMutableDictionary (timedMetadataCollection)` keyed by the start time of each `timedMetadata`.
 
    ```
    NSMutableDictionary *timedMetadataCollection; 
@@ -52,9 +51,9 @@ Uw toepassing moet de volgende taken uitvoeren:
    }
    ```
 
-## Parseren van Nielsen ID3-tags {#example_3B51E9D4AF2449FAA8E804206F873ECF}
+## Nielsen ID3-tags parseren {#example_3B51E9D4AF2449FAA8E804206F873ECF}
 
-Als u de ID3-tag voor parseren wilt extraheren, gebruikt u het volgende op de methode `onMediaPlayerSubscribedTagIdentified`:
+Als u de ID3-tag voor parseren wilt extraheren, gebruikt u het volgende op het tabblad `onMediaPlayerSubscribedTagIdentified` methode:
 
 ```
 (void)onMediaPlayerSubscribedTagIdentified:(NSNotification *)notification 
@@ -93,4 +92,3 @@ if([keyValuePairString rangeOfString:@"nielsen.com"].location != NSNotFound)
 return nielsenStr; 
 }
 ```
-

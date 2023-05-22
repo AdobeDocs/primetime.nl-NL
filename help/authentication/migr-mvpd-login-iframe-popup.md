@@ -1,13 +1,13 @@
 ---
 title: Hoe te om de MVPD Login Pagina van iFrame aan Popup te migreren
 description: Hoe te om de MVPD Login Pagina van iFrame aan Popup te migreren
-source-git-commit: 326f97d058646795cab5d062fa5b980235f7da37
+exl-id: 389ea0ea-4e18-4c2e-a527-c84bffd808b4
+source-git-commit: bfc3ba55c99daba561255760baf273b6538a3c6e
 workflow-type: tm+mt
 source-wordcount: '689'
 ht-degree: 0%
 
 ---
-
 
 # Hoe te om de MVPD login pagina van iFrame aan Popup te migreren {#migr-mvpd-login-iframe-popup}
 

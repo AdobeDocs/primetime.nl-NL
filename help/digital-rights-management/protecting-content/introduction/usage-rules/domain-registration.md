@@ -2,16 +2,15 @@
 title: Domeinregistratie apparaatgroep
 description: Domeinregistratie apparaatgroep
 copied-description: true
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: 81d6023b-76e0-4786-805b-bfe77e9f8513
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '190'
 ht-degree: 0%
 
 ---
 
-
-# Domeinregistratie{#device-group-domain-registration} van apparaatgroep
+# Domeinregistratie apparaatgroep{#device-group-domain-registration}
 
 Als alternatief voor het binden van een licentie aan een specifiek apparaat, biedt Primetime DRM 3.0 of hoger ondersteuning voor het binden van licenties aan een apparaatdomein.
 

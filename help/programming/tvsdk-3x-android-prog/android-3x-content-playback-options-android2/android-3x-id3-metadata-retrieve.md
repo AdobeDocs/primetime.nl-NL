@@ -1,14 +1,13 @@
 ---
 description: ID3-tags bieden informatie over een audio- of videobestand, zoals de titel van het bestand of de naam van de artiest. TVSDK detecteert ID3-tags op het segmentniveau van de transportstream (TS) in HLS-streams en verzendt een gebeurtenis. De toepassing kan gegevens uit de tag extraheren.
 title: ID3-tags
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: 7db9150d-bb1d-4e93-84c1-04a1f6605bdc
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '232'
 ht-degree: 0%
 
 ---
-
 
 # ID3-tags {#id-tags}
 
@@ -23,13 +22,13 @@ Wanneer TVSDK ID3-metagegevens detecteert, wordt een melding met de volgende geg
 * TYPE = ID3
 * NAME = ID3
 
-1. Implementeer een gebeurtenislistener voor `MediaPlayer.TimedMetadataEventListener#onTimedMetadata(TimeMetadata timeMetadata)` en registreer deze bij het object `MediaPlayer`.
+1. Een gebeurtenislistener implementeren voor `MediaPlayer.TimedMetadataEventListener#onTimedMetadata(TimeMetadata timeMetadata)` en registreer deze bij de `MediaPlayer` object.
 
-   TVSDK roept deze listener aan wanneer deze `ID3` metagegevens detecteert.
+   TVSDK roept deze listener aan wanneer deze wordt gedetecteerd `ID3` metagegevens.
 
    >[!TIP]
    >
-   >Aangepaste cues en cues gebruiken dezelfde gebeurtenis `onTimedMetadata` om de detectie van een nieuwe tag aan te geven. Dit mag geen verwarring veroorzaken omdat aangepaste ad-cues worden gedetecteerd op manifestniveau en ID3-tags zijn ingesloten in de stream. Zie [Aangepaste tags](../../tvsdk-3x-android-prog/android-3x-advertising/ad-insertion/custom-tags-configure/android-3x-custom-tags-configure.md) voor meer informatie.
+   >Aangepaste cues voor advertenties gebruiken hetzelfde `onTimedMetadata` gebeurtenis die de detectie van een nieuwe tag aangeeft. Dit mag geen verwarring veroorzaken omdat aangepaste ad-cues worden gedetecteerd op manifestniveau en ID3-tags zijn ingesloten in de stream. Zie voor meer informatie [Aangepaste tags](../../tvsdk-3x-android-prog/android-3x-advertising/ad-insertion/custom-tags-configure/android-3x-custom-tags-configure.md).
 
 1. Haal de metagegevens op.
 

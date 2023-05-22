@@ -1,23 +1,22 @@
 ---
 description: U kunt uw eigen inhoudsoplossers implementeren op basis van de standaardoplossers.
 title: Een aangepaste contentoplosser implementeren
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: abe967a5-ced3-4e23-8671-065e256974d3
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '169'
-ht-degree: 2%
+ht-degree: 0%
 
 ---
 
-
-# Een aangepaste inhoudsoplosser{#implement-a-custom-content-resolver} implementeren
+# Een aangepaste contentoplosser implementeren{#implement-a-custom-content-resolver}
 
 U kunt uw eigen inhoudsoplossers implementeren op basis van de standaardoplossers.
 
-Wanneer TVSDK een nieuwe kans ontdekt, herhaalt het door de geregistreerde inhoudsoplossers zoekend één die die kans kan oplossen gebruikend de `canResolve` methode. De eerste die waar terugkeert wordt geselecteerd voor het oplossen van de kans. Als er geen inhoudoplosser kan worden gemaakt, wordt die mogelijkheid overgeslagen. Omdat het proces voor het oplossen van inhoud meestal asynchroon is, brengt de contentoplosser TVSDK op de hoogte wanneer het proces is voltooid.
+Wanneer TVSDK een nieuwe kans detecteert, doorloopt het de geregistreerde contentoplossers die naar een mogelijkheid zoeken die deze kans kan oplossen met behulp van de `canResolve` methode. De eerste die waar terugkeert wordt geselecteerd voor het oplossen van de kans. Als er geen inhoudoplosser kan worden gemaakt, wordt die mogelijkheid overgeslagen. Omdat het proces voor het oplossen van inhoud meestal asynchroon is, brengt de contentoplosser TVSDK op de hoogte wanneer het proces is voltooid.
 
-* De inhoudoplosser roept `client.place` aan om op te geven welke tijdlijnbewerking TVSDK moet worden uitgevoerd (meestal een plaatsing van een advertentie-einde).
-* De inhoudoplosser roept `client.notifyCompleted` aan als het oplossend proces succesvol is, of `client.notifyFailed` als het proces ontbreekt.
+* Aanroepen van de inhoudoplosser `client.place` om aan te geven welke tijdlijnbewerking TVSDK moet uitvoeren (meestal een plaatsing van een advertentie-einde).
+* Aanroepen van de inhoudoplosser `client.notifyCompleted` als het afwikkelingsproces succesvol is, of `client.notifyFailed` als het proces mislukt.
 
 1. Maak een aangepaste opportuniteitsoplosser.
 
@@ -138,4 +137,3 @@ Wanneer TVSDK een nieuwe kans ontdekt, herhaalt het door de geregistreerde inhou
    
    player.replaceCurrentResource(mediaResource, mediaPlayerItemConfig);
    ```
-

@@ -1,14 +1,13 @@
 ---
 description: U kunt de zichtbaarheid van gesloten bijschriften bepalen. Wanneer de zichtbaarheid is ingeschakeld, wordt de geselecteerde track weergegeven. Als u wijzigt welke track huidig is, blijft de zichtbaarheidsinstelling ongewijzigd.
 title: Zichtbaarheid van ondertiteling beheren
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: 358e32d8-7a3b-42bd-900b-dafe8eae3edf
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '171'
-ht-degree: 1%
+ht-degree: 0%
 
 ---
-
 
 # Overzicht {#control-closed-caption-visibility-overview}
 
@@ -28,10 +27,10 @@ U kunt de zichtbaarheid van gesloten bijschriften bepalen. Wanneer de zichtbaarh
 >}
 >```
 
-1. Wacht tot de status `MediaPlayer` ten minste de status PREPARED heeft.
+1. Wacht op de `MediaPlayer` ten minste de status PREPARED hebben.
 
    Voor meer informatie, zie ui-state-prepare-wait-for.
-1. Als u de huidige zichtbaarheidsinstelling voor gesloten bijschriften wilt ophalen, gebruikt u de methode getter in `MediaPlayer`, die een zichtbaarheidswaarde retourneert.
+1. Gebruik de methode getter in `MediaPlayer`, die een zichtbaarheidswaarde retourneert.
 
    ```java
    MediaPlayer.Visibility getCCVisibility() throws MediaPlayerException;
@@ -44,4 +43,3 @@ U kunt de zichtbaarheid van gesloten bijschriften bepalen. Wanneer de zichtbaarh
    ```java
    mediaPlayer.setCCVisibility(MediaPlayer.Visibility visibility);
    ```
-

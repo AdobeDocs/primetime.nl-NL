@@ -1,20 +1,19 @@
 ---
 description: Wanneer de DRM-metagegevens voor een video zijn opgenomen in de mediastream, kunt u verificatie uitvoeren tijdens het afspelen.
 title: DRM-verificatie tijdens afspelen
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: fb244aad-38ae-4bc7-85b7-364cf59db8d6
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '194'
-ht-degree: 1%
+ht-degree: 0%
 
 ---
-
 
 # DRM-verificatie tijdens afspelen {#drm-authentication-during-playback}
 
 Wanneer de DRM-metagegevens voor een video zijn opgenomen in de mediastream, kunt u verificatie uitvoeren tijdens het afspelen.
 
-Bij het draaien van licenties wordt een element gecodeerd met meerdere DRM-licenties. Telkens wanneer nieuwe DRM-metagegevens worden aangetroffen, worden de methoden `DRMHelper` gebruikt om te controleren of voor de DRM-metagegevens DRM-verificatie is vereist.
+Bij het draaien van licenties wordt een element gecodeerd met meerdere DRM-licenties. Elke keer dat nieuwe DRM-metagegevens worden aangetroffen, wordt de `DRMHelper` methoden worden gebruikt om te controleren of DRM-verificatie vereist is voor de DRM-metagegevens.
 
 >[!TIP]
 >
@@ -35,7 +34,7 @@ Bij het draaien van licenties wordt een element gecodeerd met meerdere DRM-licen
    };
    ```
 
-1. Gebruik `DRMMetadata` om te controleren of de authentificatie nodig is.
+1. Gebruik de `DRMMetadata` om te controleren of verificatie nodig is.
 
    * Als verificatie niet vereist is, hoeft u niets te doen en wordt het afspelen zonder onderbreking voortgezet.
    * Als verificatie vereist is, voltooit u de DRM-verificatie.

@@ -1,32 +1,30 @@
 ---
 description: Browser TVSDK biedt standaard opportuniteitsgeneratoren en inhoudsoplossers die advertenties in de tijdlijn plaatsen, en deze generatoren en oplossers zijn gebaseerd op niet-standaardlabels in het manifest. Uw toepassing zou de chronologie kunnen moeten veranderen die op kansen wordt gebaseerd die in manifest worden geïdentificeerd.
 title: Opportuniteitsgeneratoren en contentoplosers
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: a47acd22-8b1b-4c66-a7eb-a4d99afb5f17
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '301'
 ht-degree: 0%
 
 ---
 
-
-# Opportuniteitsgeneratoren en inhoudsoplossers{#opportunity-generators-and-content-resolvers}
+# Opportuniteitsgeneratoren en contentoplosers{#opportunity-generators-and-content-resolvers}
 
 Browser TVSDK biedt standaard opportuniteitsgeneratoren en inhoudsoplossers die advertenties in de tijdlijn plaatsen, en deze generatoren en oplossers zijn gebaseerd op niet-standaardlabels in het manifest. Uw toepassing zou de chronologie kunnen moeten veranderen die op kansen wordt gebaseerd die in manifest worden geïdentificeerd.
 
-Een *`opportunity`* staat voor een interessant punt op de tijdlijn dat meestal een plaatsingsmogelijkheid aangeeft. Deze mogelijkheid kan ook een aangepaste bewerking aangeven die de tijdlijn kan beïnvloeden. Een *`opportunity generator`* identificeert specifieke kansen (markeringen) in de chronologie en deelt TVSDK mee dat deze kansen zijn geëtiketteerd.
+An *`opportunity`* vertegenwoordigt een interessepunt op de chronologie die gewoonlijk op een kans van de advertentie wijst. Deze mogelijkheid kan ook een aangepaste bewerking aangeven die de tijdlijn kan beïnvloeden. An *`opportunity generator`* identificeert specifieke kansen (markeringen) in de chronologie en deelt TVSDK mee dat deze kansen zijn geëtiketteerd.
 
-De kansen worden geïdentificeerd in een chronologie in `TimedMetata`. De `ManifestCuesOpportunityGenerator` creëert mogelijkheden op basis van de `TimedMetadata`-objecten die worden gemaakt voor elke splice-out ad tag (in `MediaPlayerItemConfig.adTags`) die in het manifest is gedetecteerd. `AdSignalingModeOpportunityGenerator` leidt tot de aanvankelijke kans die op `MediaPlayerItem` type en zijn bijbehorende het signaleren wijze gebaseerd is.
-
->[!TIP]
->
->Als `AdvertisingMetadata.livePreroll` of `AdvertisingMetadata.preroll` bezit wordt geplaatst, `AdSignalingModeOpportunityGenerator` produceert een pre-rolkans voor levende stromen.
-
-Wanneer uw toepassing op de hoogte wordt gesteld van een opportuniteit (tag), kan uw toepassing de tijdlijn wijzigen door bijvoorbeeld een reeks advertenties in te voegen. Standaard roept Browser-TVSDK de juiste *`content resolver`* aan om de vereiste tijdlijnwijzigingen of -handelingen te implementeren. Uw toepassing kan de standaardinhoudsoplosser voor TVSDK-advertenties in de browser gebruiken of een eigen inhoudoplosser registreren.
-
-U kunt `MediaPlayerItemConfig.adTags` ook gebruiken om meer tags/aanwijzingen voor advertenties toe te voegen voor de standaardklasse `ManifestCuesOpportunityGenerator` en `MediaPlayerItemConfig.subscribedTags` te gebruiken, zodat TVSDK uw toepassing op de hoogte kan stellen van extra tags die mogelijk informatie over de advertentieworkflow bevatten.
+De kansen worden geïdentificeerd in een chronologie in `TimedMetata`. De `ManifestCuesOpportunityGenerator` biedt mogelijkheden op basis van de `TimedMetadata` objecten die worden gemaakt voor elke splice-out en -tag (in `MediaPlayerItemConfig.adTags`) die in het manifest is aangetroffen. De `AdSignalingModeOpportunityGenerator` creëert de eerste kans die gebaseerd is op de `MediaPlayerItem` type en de bijbehorende advertentiemodus.
 
 >[!TIP]
 >
->De standaardwaarden van `MediaPlayerItemConfig.adTags` en `MediaPlayerItemConfig.subscribeTags` zijn `[MediaPlayerItemConfig.DEFAULT_AD_TAG]`.
+>Als de `AdvertisingMetadata.livePreroll` of de `AdvertisingMetadata.preroll` eigenschap is ingesteld, `AdSignalingModeOpportunityGenerator` genereert een pre-roll mogelijkheid voor live streams.
 
+Wanneer uw toepassing op de hoogte wordt gesteld van een opportuniteit (tag), kan uw toepassing de tijdlijn wijzigen door bijvoorbeeld een reeks advertenties in te voegen. Door gebrek, roept Browser TVSDK aangewezen *`content resolver`* om de vereiste tijdlijnwijzigingen of -handelingen te implementeren. Uw toepassing kan de standaardinhoudsoplosser voor TVSDK-advertenties in de browser gebruiken of een eigen inhoudoplosser registreren.
+
+U kunt ook `MediaPlayerItemConfig.adTags` om meer tags/aanwijzingen voor de standaardmarkeertekens voor advertenties toe te voegen `ManifestCuesOpportunityGenerator` klasse en gebruik `MediaPlayerItemConfig.subscribedTags` zodat TVSDK uw toepassing op de hoogte kan stellen van aanvullende tags die informatie over de publicatieworkflow kunnen bevatten.
+
+>[!TIP]
+>
+>De standaardwaarden van `MediaPlayerItemConfig.adTags` en `MediaPlayerItemConfig.subscribeTags` is `[MediaPlayerItemConfig.DEFAULT_AD_TAG]`.

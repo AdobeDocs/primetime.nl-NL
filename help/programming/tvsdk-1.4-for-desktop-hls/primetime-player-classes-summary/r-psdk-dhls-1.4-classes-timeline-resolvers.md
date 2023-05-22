@@ -1,14 +1,13 @@
 ---
 description: Deze klassen helpen u bij het omzetten van inhoud, zoals advertenties, die u op de tijdlijn wilt plaatsen.
 title: Tijdlijn oplosst klassen
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: 8135214b-5c0c-48ac-b1a4-21825e10f293
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '99'
 ht-degree: 0%
 
 ---
-
 
 # Tijdlijn oplosst klassen{#timeline-resolvers-classes}
 

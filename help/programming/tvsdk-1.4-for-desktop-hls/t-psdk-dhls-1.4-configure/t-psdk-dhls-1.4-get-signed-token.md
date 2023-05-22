@@ -1,16 +1,15 @@
 ---
 description: De Flash Runtime TVSDK heeft een ondertekend token nodig om te controleren of u het recht hebt om de TVSDK API aan te roepen in het domein waar uw toepassing zich bevindt.
 title: Uw ondertekende token laden
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: fef6b764-dc65-412e-a990-3f0b1fef94dd
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '515'
 ht-degree: 0%
 
 ---
 
-
-# Uw ondertekende token {#load-your-signed-token} laden
+# Uw ondertekende token laden {#load-your-signed-token}
 
 De Flash Runtime TVSDK heeft een ondertekend token nodig om te controleren of u het recht hebt om de TVSDK API aan te roepen in het domein waar uw toepassing zich bevindt.
 
@@ -18,26 +17,26 @@ De Flash Runtime TVSDK heeft een ondertekend token nodig om te controleren of u 
 
        Als u een token wilt ophalen, verschaft u Adobe het domein waarin de toepassing wordt opgeslagen of geladen, of bij voorkeur het domein als een SHA256-hash. Als tegenprestatie biedt Adobe u een getekende token voor elk domein. Deze tokens hebben een van de volgende vormen:
    
-   * Een [!DNL .xml]-bestand dat fungeert als token voor één domein of jokertekendomein.
+   * An [!DNL .xml] bestand dat fungeert als token voor één domein of jokertekendomein.
 
       >[!NOTE]
       >
-      >Een token voor een jokertekendomein dekt dat domein en alle subdomeinen ervan. Een jokertekentoken voor het domein [!DNL mycompany.com] dekt bijvoorbeeld ook [!DNL vids.mycompany.com] en [!DNL private.vids.mycompany.com]; een jokerteken voor [!DNL vids.mycompany.com] zou ook [!DNL private.vids.mycompany.com] dekken. *Jokerdomeintokens worden alleen ondersteund voor bepaalde Flash Player-versies.*
+      >Een token voor een jokertekendomein dekt dat domein en alle subdomeinen ervan. Bijvoorbeeld een jokerteken voor het domein [!DNL mycompany.com] zou ook [!DNL vids.mycompany.com] en [!DNL private.vids.mycompany.com]; een jokerteken voor [!DNL vids.mycompany.com] zou ook [!DNL private.vids.mycompany.com]. *Jokerdomeintokens worden alleen ondersteund voor bepaalde Flash Player-versies.*
 
-   * Een [!DNL .swf]-bestand met tokeninformatie voor meerdere domeinen (exclusief jokertekens) (enkelvoudig of jokerteken) die uw toepassing dynamisch kan laden.
+   * A [!DNL .swf] bestand met tokeninformatie voor meerdere domeinen (exclusief jokertekens) (enkelvoudig of jokerteken) die uw toepassing dynamisch kan laden.
 
 1. Sla het tokenbestand op dezelfde locatie of hetzelfde domein als de toepassing op.
 
-   Standaard zoekt TVSDK naar het token op deze locatie. U kunt ook de naam en locatie van het token opgeven in `flash_vars` in het HTML-bestand.
+   Standaard zoekt TVSDK naar het token op deze locatie. U kunt ook de naam en locatie van het token opgeven in `flash_vars` in uw HTML-bestand.
 1. Als uw tokenbestand één XML-bestand is:
-   1. Gebruik `utils.AuthorizedFeaturesHelper.loadFrom` om de gegevens te downloaden die bij gespecificeerde URL (het symbolische dossier) worden opgeslagen en `authorizedFeatures` informatie uit het te halen.
+   1. Gebruiken `utils.AuthorizedFeaturesHelper.loadFrom` om de gegevens te downloaden die zijn opgeslagen op de opgegeven URL (het tokenbestand) en het `authorizedFeatures` informatie van de Commissie.
 
       Deze stap kan variëren. U kunt bijvoorbeeld de verificatie uitvoeren voordat u de toepassing start, of u kunt de token rechtstreeks ontvangen van uw inhoudsbeheersysteem (CMS).
 
-   1. TVSDK verzendt een `COMPLETED`-gebeurtenis als het laden is geslaagd of een `FAILED`-gebeurtenis anders. Voer de juiste actie uit wanneer u een van beide gebeurtenissen detecteert.
+   1. TVSDK verzendt een `COMPLETED` als het laden is voltooid of als een `FAILED` anders. Voer de juiste actie uit wanneer u een van beide gebeurtenissen detecteert.
 
-      Uw toepassing kan de vereiste `authorizedFeatures`-objecten alleen in de vorm van een `MediaPlayerContext` aan TVSDK leveren.
-   In dit voorbeeld wordt getoond hoe u een single-token [!DNL .xml]-bestand kunt gebruiken.
+      Uw toepassing kan alleen de vereiste `authorizedFeatures` objecten voor TVSDK in de vorm van een `MediaPlayerContext`.
+   In dit voorbeeld wordt getoond hoe u een token kunt gebruiken [!DNL .xml] bestand.
 
    ```
    private function loadDirectTokenURL():void { 
@@ -52,19 +51,19 @@ De Flash Runtime TVSDK heeft een ondertekend token nodig om te controleren of u 
     }
    ```
 
-1. Als uw token een [!DNL .swf]-bestand is:
-   1. Definieer een `Loader`-klasse om het [!DNL .swf]-bestand dynamisch te laden.
-   1. Stel de `LoaderContext` in om de laden op te geven die in het huidige toepassingsdomein moet worden uitgevoerd, zodat TVSDK het juiste token kan kiezen in het bestand [!DNL .swf]. Als `LoaderContext` niet wordt gespecificeerd, is de standaardactie van `Loader.load` .swf in het kinddomein van het huidige domein te laden.
+1. Als uw token een [!DNL .swf] bestand:
+   1. Een `Loader` klasse om de [!DNL .swf] bestand.
+   1. Stel de `LoaderContext` om het laden op te geven dat in het huidige toepassingsdomein moet worden uitgevoerd, zodat TVSDK het juiste token kan kiezen in het dialoogvenster [!DNL .swf] bestand. Indien `LoaderContext` is niet opgegeven, de standaardhandeling van `Loader.load` moet het SWF-bestand laden in het onderliggende domein van het huidige domein.
    1. Luister naar de COMPLETE-gebeurtenis, die door TVSDK wordt verzonden als het laden is gelukt.
 
       Luister ook naar de gebeurtenis ERROR en voer de juiste actie uit.
-   1. Als het laden is gelukt, gebruikt u `AuthorizedFeaturesHelper` om een `ByteArray` te verkrijgen dat de met PCKS-7 gecodeerde beveiligingsgegevens bevat.
+   1. Als het laden is gelukt, gebruikt u de `AuthorizedFeaturesHelper` om een `ByteArray` die de met PCKS-7 gecodeerde beveiligingsgegevens bevat.
 
       Deze gegevens worden via de AVE V11-API gebruikt om verificatie van de Flash Runtime Player te verkrijgen. Als de bytearray geen inhoud bevat, gebruikt u in plaats daarvan de procedure om te zoeken naar een token-bestand voor één domein.
-   1. Gebruik `AuthorizedFeatureHelper.loadFeatureFromData` om de vereiste gegevens op te halen uit de bytearray.
-   1. Verwijder het [!DNL .swf]-bestand.
+   1. Gebruiken `AuthorizedFeatureHelper.loadFeatureFromData` om de vereiste gegevens op te halen uit de bytearray.
+   1. Het gereedschap [!DNL .swf] bestand.
 
-   In de volgende voorbeelden ziet u hoe u een bestand met meerdere token [!DNL .swf] kunt gebruiken.
+   De volgende voorbeelden laten zien hoe u een meervoudig token kunt gebruiken [!DNL .swf] bestand.
 
    **Voorbeeld 1 van meerdere token:**
 
@@ -156,4 +155,3 @@ De Flash Runtime TVSDK heeft een ondertekend token nodig om te controleren of u 
        authorizedFeatureHelper.loadFrom(tokenUrl); 
    }
    ```
-

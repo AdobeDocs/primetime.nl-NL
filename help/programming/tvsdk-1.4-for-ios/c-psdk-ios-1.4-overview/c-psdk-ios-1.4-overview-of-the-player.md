@@ -1,16 +1,15 @@
 ---
 description: TVSDK voor iOS bevat verschillende functies.
 title: Functies van Primetime TVSDK
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: 1968c072-2651-442d-9e4c-412f7959bcab
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '195'
 ht-degree: 0%
 
 ---
 
-
-# Premimetime-TVSDK-functies {#primetime-tvsdk-features}
+# Functies van Primetime TVSDK {#primetime-tvsdk-features}
 
 TVSDK voor iOS bevat verschillende functies en biedt de volgende hoofdmogelijkheden:
 
@@ -49,4 +48,3 @@ TVSDK voor iOS bevat verschillende functies en biedt de volgende hoofdmogelijkhe
 * Logboekregistratie
 
    * Foutopsporingsregistratie
-

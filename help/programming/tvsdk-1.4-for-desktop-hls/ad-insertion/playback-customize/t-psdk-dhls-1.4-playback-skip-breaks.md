@@ -1,16 +1,15 @@
 ---
 description: Standaard dwingt TVSDK een advertentie-einde af wanneer de gebruiker een advertentie-einde zoekt. U kunt het gedrag aanpassen om een advertentie-einde over te slaan als de tijd die is verstreken vanaf een vorige eindemarkering binnen een bepaald aantal minuten is.
 title: Advertenties gedurende een bepaalde periode overslaan
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: 7d5ee788-4a67-4c70-acc7-a950e6b2db8a
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '181'
 ht-degree: 0%
 
 ---
 
-
-# Overslaan en afbreken voor een bepaalde tijd{#skip-ad-breaks-for-a-period-of-time}
+# Advertenties gedurende een bepaalde periode overslaan{#skip-ad-breaks-for-a-period-of-time}
 
 Standaard dwingt TVSDK een advertentie-einde af wanneer de gebruiker een advertentie-einde zoekt. U kunt het gedrag aanpassen om een advertentie-einde over te slaan als de tijd die is verstreken vanaf een vorige eindemarkering binnen een bepaald aantal minuten is.
 
@@ -116,4 +115,3 @@ In het volgende voorbeeld van een aangepaste advertentiebeleidskiezer worden adv
    mediaPlayerItemConfig.advertisingFactory = new CustomAdPolicyContentFactory(); 
    player.replaceCurrentResource(mediaResource, mediaPlayerItemConfig);
    ```
-

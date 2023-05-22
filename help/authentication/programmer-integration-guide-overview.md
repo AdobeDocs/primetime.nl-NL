@@ -1,14 +1,13 @@
 ---
 title: Overzicht van de integratiegids voor programmeerprogramma's
 description: beschrijving van de integratiehandleiding van de programmeur
-source-git-commit: 326f97d058646795cab5d062fa5b980235f7da37
+exl-id: 51461caf-08ef-459e-b284-8f317f45e7b1
+source-git-commit: bfc3ba55c99daba561255760baf273b6538a3c6e
 workflow-type: tm+mt
 source-wordcount: '117'
 ht-degree: 0%
 
 ---
-
-
 
 # Programmeringsintegratiegids {#programmer-integration-guide}
 

@@ -1,16 +1,15 @@
 ---
 description: Deze klassen beschrijven uw mediaspeler en de bijbehorende bronnen.
 title: Mediaspelers, klassen
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: de7f7488-2026-43b4-b74d-feff67bdc69a
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '420'
 ht-degree: 0%
 
 ---
 
-
-# Mediaspelklassen {#media-player-classes}
+# Mediaspelers, klassen {#media-player-classes}
 
 U kunt de objectief-C API van de Speler Primetime gebruiken om het gedrag van de speler aan te passen.
 
@@ -33,7 +32,7 @@ Deze klassen beschrijven uw mediaspeler en de bijbehorende bronnen.
   </tr> 
   <tr rowsep="1"> 
    <td colname="1"><span class="codeph"><a href="https://help.adobe.com/en_US/primetime/api/psdk/appledoc/Classes/PTDefaultMediaPlayerClientFactory.html" format="html" scope="external"> PTDefaultMediaPlayerClientFactory</a></span> </td> 
-   <td colname="2"> Standaardimplementatie van <span class="codeph"> PTMediaPlayerClientFactory</span> in de TVSDK. Het verstrekt de beschikbare <span class="codeph"> PTOpportunityResolver</span>, <span class="codeph"> PTContentResolver</span>, en <span class="codeph"> PTAdPolicySelector</span> instanties. </td> 
+   <td colname="2"> Standaardimplementatie van <span class="codeph"> PTMediaPlayerClientFactory</span> in de TVSDK. Het verstrekt beschikbare <span class="codeph"> PTOpportunityResolver</span>, <span class="codeph"> PTContentResolver</span>, en <span class="codeph"> PTAdPolicySelector</span> instanties. </td> 
   </tr> 
   <tr rowsep="1"> 
    <td colname="1"><span class="codeph"><a href="https://help.adobe.com/en_US/primetime/api/psdk/appledoc/Classes/PTMediaPlayer.html" format="html" scope="external"> PTMediaPlayer</a></span> </td> 
@@ -41,7 +40,7 @@ Deze klassen beschrijven uw mediaspeler en de bijbehorende bronnen.
   </tr> 
   <tr rowsep="1"> 
    <td colname="1"><span class="codeph"><a href="https://help.adobe.com/en_US/primetime/api/psdk/appledoc/Protocols/PTMediaPlayerClientFactory.html" format="html" scope="external"> PTMediaPlayerClientFactory</a></span> </td> 
-   <td colname="2"> Protocol dat de methoden beschrijft die een aangepaste mediaspeler-clientfabriek moet implementeren om de beschikbare <span class="codeph"> PTOpportunityResolver</span>-, <span class="codeph"> PTContentResolver</span>- en <span class="codeph"> PTAdPolicySelector</span>-instanties te leveren. </td> 
+   <td colname="2"> Protocol dat de methoden beschrijft die een aangepaste mediaspeler-clientfabriek moet implementeren om de beschikbare <span class="codeph"> PTOpportunityResolver</span> , <span class="codeph"> PTContentResolver</span> en <span class="codeph"> PTAdPolicySelector</span> instanties. </td> 
   </tr> 
   <tr rowsep="1"> 
    <td colname="1"><span class="codeph"><a href="https://help.adobe.com/en_US/primetime/api/psdk/appledoc/Classes/PTMediaPlayerItem.html" format="html" scope="external"> PTMediaPlayerItem</a></span> </td> 
@@ -65,12 +64,12 @@ Deze klassen beschrijven uw mediaspeler en de bijbehorende bronnen.
     </ul> </td> 
   </tr> 
   <tr rowsep="1"> 
-   <td colname="1"><span class="codeph"><a href="https://help.adobe.com/en_US/primetime/api/psdk/appledoc/Classes/PTOpportunityResolver.html" format="html" scope="external"> </a> </span> PTOportunityResolverclass,  <span class="codeph"><a href="https://help.adobe.com/en_US/primetime/api/psdk/appledoc/Protocols/PTOpportunityResolver.html" format="html" scope="external"> </a> PTOportResolverprotocol</span> </td> 
+   <td colname="1"><span class="codeph"><a href="https://help.adobe.com/en_US/primetime/api/psdk/appledoc/Classes/PTOpportunityResolver.html" format="html" scope="external"> PTOpportunityResolver</a> </span> klasse, <span class="codeph"><a href="https://help.adobe.com/en_US/primetime/api/psdk/appledoc/Protocols/PTOpportunityResolver.html" format="html" scope="external"> PTOpportunityResolver</a> protocol</span> </td> 
    <td colname="2"> Klasse die wordt gebruikt voor de verwerking van aanwijzingen in manifest die als plaatsen voor Adobe Primetime en besluitvormingsproces zullen worden gebruikt. </td> 
   </tr> 
   <tr rowsep="1"> 
    <td colname="1"><span class="codeph"><a href="https://help.adobe.com/en_US/primetime/api/psdk/appledoc/Protocols/PTOpportunityResolverDelegate.html" format="html" scope="external"> PTOplementityResolverDelegate</a></span> </td> 
-   <td colname="2"> Protocol dat de methodes beschrijft die de oplosser van de douanemogelijkheid ( <span class="codeph"> PTOportunityResolver</span>) zou moeten gebruiken om aan de afgevaardigde het statuut van het oplossen van de kans mee te delen. </td> 
+   <td colname="2"> Protocol dat de methodes beschrijft die de oplossing van de douanekans ( <span class="codeph"> PTOpportunityResolver</span> ) moet worden gebruikt om de gedelegeerde in kennis te stellen van de status van het oplossen van de kans. </td> 
   </tr> 
   <tr rowsep="1"> 
    <td colname="1"><span class="codeph"><a href="https://help.adobe.com/en_US/primetime/api/psdk/appledoc/Classes/PTSDK.html" format="html" scope="external"> PTSDK</a></span> </td> 
@@ -86,4 +85,3 @@ Deze klassen beschrijven uw mediaspeler en de bijbehorende bronnen.
   </tr> 
  </tbody> 
 </table>
-

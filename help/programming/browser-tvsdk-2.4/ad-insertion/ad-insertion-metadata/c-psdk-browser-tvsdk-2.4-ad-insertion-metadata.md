@@ -1,14 +1,13 @@
 ---
 description: Als u de advertentieoplosser wilt laten werken, hebben providers, zoals Adobe Primetime en besluitvorming, configuratiewaarden nodig om de verbinding met de provider mogelijk te maken.
 title: Metagegevens voor invoeging toevoegen
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: 8d6cb371-8666-4b55-b828-0f1d495e7fb7
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '228'
 ht-degree: 0%
 
 ---
-
 
 # Overzicht {#ad-insertion-metadata-overview}
 
@@ -28,9 +27,9 @@ Browser-TVSDK bevat de Adobe Primetime en de beslissingsbibliotheek. Uw toepassi
 
    >[!TIP]
    >
-   >Adobe raadt u aan `defaultMediaId` te gebruiken.
+   >Adobe raadt u aan `defaultMediaId`.
 
-* Uw `zoneID`, die door Adobe wordt toegewezen, identificeert uw bedrijf of website.
+* Uw `zoneID`, die wordt toegewezen door Adobe, uw bedrijf of website identificeert.
 * Het domein van de toegewezen advertentieserver.
 * Andere doelparameters.
 

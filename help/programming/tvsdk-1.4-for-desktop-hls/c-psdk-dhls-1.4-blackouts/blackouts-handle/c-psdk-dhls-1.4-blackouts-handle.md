@@ -1,22 +1,21 @@
 ---
 description: U kunt stroomstoringen in live videostreams verwerken en tijdens een stroomstoring alternatieve inhoud bieden.
 title: Stroomuitval in live streams verwerken
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: 2e63fb0c-44b1-46f1-a4b8-f8f67389d183
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '519'
 ht-degree: 0%
 
 ---
 
-
-# Stroomuitval verwerken in live streams{#handle-blackouts-in-live-streams}
+# Stroomuitval in live streams verwerken{#handle-blackouts-in-live-streams}
 
 U kunt stroomstoringen in live videostreams verwerken en tijdens een stroomstoring alternatieve inhoud bieden.
 
 Wanneer een brainstormsessie plaatsvindt in een live stream, gebruikt de speler gebeurtenishandlers om de brainstormsessie te detecteren en biedt deze gebruikers alternatieve inhoud die niet in aanmerking komen om de hoofdstream te bekijken. De speler detecteert het begin en einde van de periode van stroomuitval, schakelt het afspelen van de hoofdstream over naar een alternatieve stream en schakelt terug naar de hoofdstream wanneer de periode van stroomuitval eindigt.
 
-In uw client-app meldt u zich aan voor black-out-tags in TVSDK. Nadat u een melding hebt ontvangen van nieuwe *metagegevens met tijdslimiet*-objecten, parseert u de gegevens van het metagegevensobject met tijdslimiet om te bepalen of het object een brainstormsessie of uitgang aangeeft. Voor geïdentificeerde stroomuitval roept u de relevante TVSDK-elementen op om naar alternatieve inhoud te schakelen aan het begin van de stroomuitval, en nogmaals om terug te keren naar de belangrijkste inhoud wanneer de stroomuitval voorbij is.
+In uw client-app meldt u zich aan voor black-out-tags in TVSDK. Na kennisgeving van nieuwe *metagegevens met tijdslimiet* objecten, parseert u de gegevens van het metagegevensobject met een time-out om te bepalen of het object een black-out-item of -uitgang aangeeft. Voor geïdentificeerde stroomuitval roept u de relevante TVSDK-elementen op om naar alternatieve inhoud te schakelen aan het begin van de stroomuitval, en nogmaals om terug te keren naar de belangrijkste inhoud wanneer de stroomuitval voorbij is.
 
 >[!TIP]
 >
@@ -35,19 +34,18 @@ Stroomuitval in live streams afhandelen:
    TVSDK detecteert alleen geen black-out-tags; u moet zich abonneren op brainstormtags om meldingen te ontvangen wanneer de tags tijdens het parseren van manifestbestanden worden aangetroffen.
 1. Maak gebeurtenislisteners voor tags waarop de speler is geabonneerd.
 
-   Wanneer een tag voorkomt waarop de speler heeft geabonneerd (bijvoorbeeld een black-out tag) in de manifests van de voorgrond- (hoofdinhoud) of de achtergrond- (alternatieve inhoud), verzendt TVSDK een `TimedMetadataEvent` en maakt een `TimedMetadataObject` voor `TimedMetadataEvent`.
+   Wanneer een tag voorkomt waarop de speler heeft geabonneerd (bijvoorbeeld een black-out tag) in de manifests van de voor- (hoofdinhoud) of de achtergrond (alternatieve inhoud), verzendt TVSDK een `TimedMetadataEvent` en maakt een `TimedMetadataObject` voor de `TimedMetadataEvent`.
 1. Implementeer handlers voor de getimede metagegevensgebeurtenissen voor zowel de voorgrond- als de achtergrondstreams.
 
    In deze handlers, krijg de begin en eindtijden voor de zwartoutperiode van de getimed voorwerpen van de meta-gegevensgebeurtenis.
-1. Bereid `MediaPlayer` voor op brainstormsessies.
+1. De `MediaPlayer` voor stroomstoringen.
 
-   Wanneer de status `MediaPlayer` wordt BEREIKT, berekent u de stroombereiken en bereidt u deze voor en stelt u deze in op het object `MediaPlayer`.
+   Wanneer de `MediaPlayer` wordt de status PREPARED weergegeven, berekent u de bereik voor stroomuitval en bereidt u deze in op de `MediaPlayer` object.
 
-1. Controleer voor elke update naar de positie van de afspeelkop de lijst met `TimedMetadataObjects`.
+1. Controleer voor elke update van de positie van de afspeelkop de lijst met `TimedMetadataObjects`.
 
    Hier detecteert uw speler het begin en einde van de black-out en volgt de tijd van de black-out op het moment dat deze plaatsvindt.
 
-1. Methoden maken voor het schakelen tussen inhoud aan het begin en einde van de periode van uitnemen.
+1. Methoden maken voor het schakelen tussen inhoud aan het begin en einde van de periode van uitschakeling.
 
    Wanneer de brainstormperiode begint, schakelt u de hoofdinhoud over naar de achtergrond en schakelt u de alternatieve inhoud om als de hoofdstream te worden. Ga door met het ophalen en parseren van het oorspronkelijke manifest op de achtergrond en blijf controleren op de tag &quot;black-out end&quot;, zodat de speler zich opnieuw bij de oorspronkelijke stream kan aansluiten wanneer de black-out eindigt.
-

@@ -3,7 +3,6 @@ title: Just-in-Time Transcoding
 description: Just-in-Time Transcoding
 copied-description: true
 exl-id: 9577e1d5-1462-49d6-9d24-94e74dc9c019
-translation-type: tm+mt
 source-git-commit: 3e63c187f12d1bff53370bbcde4d6a77f58f3b4f
 workflow-type: tm+mt
 source-wordcount: '177'

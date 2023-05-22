@@ -1,18 +1,17 @@
 ---
-description: U kunt om het even welke stromen van een op TVSDK-Gebaseerde afzenderapp gieten en de stroom hebben teruggespeeld op Chromecast met Browser TVSDK.
+description: U kunt om het even welke stromen van een op TVSDK-Gebaseerde afzenderapp werpen en de stroom hebben teruggespeeld op Chromecast met Browser TVSDK.
 title: Google Cast-app voor TVSDK van browser
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: 71077467-8040-4f04-a43b-cc963701c426
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '410'
 ht-degree: 0%
 
 ---
 
-
 # Google Cast-app voor TVSDK van browser{#google-cast-app-for-browser-tvsdk}
 
-U kunt om het even welke stromen van een op TVSDK-Gebaseerde afzenderapp gieten en de stroom hebben teruggespeeld op Chromecast met Browser TVSDK.
+U kunt om het even welke stromen van een op TVSDK-Gebaseerde afzenderapp werpen en de stroom hebben teruggespeeld op Chromecast met Browser TVSDK.
 
 <!--<a id="section_87CE5D6D46F0439EB6E63A742D6DD9C8"></a>-->
 
@@ -29,7 +28,7 @@ Er zijn twee componenten van een app voor Cast:
 
 De afzender en de ontvanger communiceren door de Gegoten SDKs te gebruiken om berichten over te gaan.
 
-## Standaardworkflow {#section_FAF680FF29DA4D24A50AC0A2B6402B58}
+## Basisworkflow {#section_FAF680FF29DA4D24A50AC0A2B6402B58}
 
 Hier volgt een overzicht van het proces:
 
@@ -39,7 +38,7 @@ Hier volgt een overzicht van het proces:
 1. De afzenderapp stuurt afspeelbesturingsberichten, zoals afspelen, pauzeren, zoeken, vooruitspoelen, snel terugspoelen, terugspoelen, volumewijziging enzovoort, naar de ontvanger-app.
 1. De ontvanger-app reageert op deze berichten.
 
-## Berichtformaat {#section_1624159DD51D4C87B3E5803DEEBCB6B7}
+## Berichtindeling {#section_1624159DD51D4C87B3E5803DEEBCB6B7}
 
 U moet de berichten bepalen zodat de afzender en de ontvanger kunnen begrijpen. Hier volgt een voorbeeld van een zoekbericht:
 
@@ -57,7 +56,7 @@ Custom Message Namespace
 var MSG_NAMESPACE = "urn:x-cast:com.adobe.primetime"; 
 ```
 
-## Verbinding {#section_B4D40CABDD3E46FDBE7B5651DFF91653} maken
+## Verbinding maken {#section_B4D40CABDD3E46FDBE7B5651DFF91653}
 
 >[!IMPORTANT]
 >
@@ -65,7 +64,7 @@ var MSG_NAMESPACE = "urn:x-cast:com.adobe.primetime";
 
 Om een verbinding tot stand te brengen, moeten de afzender en de ontvanger de volgende taken voltooien:
 
-* De afzender moet de documentatie voor platform op [Sender App Development](https://developers.google.com/cast/docs/sender_apps) herzien.
+* De afzender moet de documentatie voor het platform op [Ontwikkeling van afzender](https://developers.google.com/cast/docs/sender_apps).
 * De ontvanger gebruikt de ontvanger APIs van de Gietvorm om een verbinding met de afzender te vestigen app. Bijvoorbeeld:
 
    ```js
@@ -87,7 +86,7 @@ Om berichten naar de ontvanger te verzenden, zie de documentatie voor het platfo
 
 >[!IMPORTANT]
 >
->U moet de naamruimte van het aangepaste bericht `MSG_NAMESPACE` in alle berichten opnemen.
+>U moet de naamruimte van het aangepaste bericht opnemen, `MSG_NAMESPACE` in alle berichten.
 
 Voor de ontvanger app, volg de documentatie voor de gietvormontvanger APIs.
 
@@ -127,4 +126,3 @@ customMessageBus.onMessage = function (event) {
     } 
 }; 
 ```
-

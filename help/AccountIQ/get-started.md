@@ -1,13 +1,13 @@
 ---
 title: Hoe u aan boord kunt gaan en aan de slag kunt met Account IQ
-description: 'Hoe te aan boord, eerste vereisten, en begonnen worden met Rekening IQ. '
-source-git-commit: 59ea8008c828f3bdf275fea5cc2a59c37b0c4845
+description: Hoe te aan boord, eerste vereisten, en begonnen worden met Rekening IQ.
+exl-id: 840ab081-0073-492f-86b2-ba174ae93256
+source-git-commit: b83105b94dc1c78de84908f5676ade6a62486349
 workflow-type: tm+mt
 source-wordcount: '271'
 ht-degree: 0%
 
 ---
-
 
 # Hoe u aan boord kunt gaan en aan de slag kunt met Account IQ {#onboard}
 
@@ -53,5 +53,3 @@ Account IQ is compatibel met de meest recente versies van de volgende browsers:
 >[!IMPORTANT]
 >
 >Als uw gebruikers het IQ-dashboard van uw account niet kunnen openen, neemt u contact op met de Adobe-ondersteuning om ervoor te zorgen dat de ID van uw organisatie wordt vermeld in Account IQ.
-
-

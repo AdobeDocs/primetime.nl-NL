@@ -2,14 +2,13 @@
 description: De prioriteitsregel definieert de prioriteitsvolgorde van de ad-creatieven die worden geselecteerd voor afspelen vanaf een VAST/VMAP-respons.
 keywords: prioriteitsregel;creatieve selectieregels
 title: Prioriteitsregels
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: e8bfa6bd-38ef-48e0-a4f8-b771f5ebafb5
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '159'
-ht-degree: 1%
+ht-degree: 0%
 
 ---
-
 
 # Prioriteitsregels {#priority-rules}
 
@@ -35,18 +34,18 @@ De prioriteitsregel definieert de prioriteitsvolgorde van de ad-creatieven die w
    <td><span class="codeph"> item</span></td> 
    <td><span class="codeph"> String</span></td> 
    <td><span class="codeph"> host</span></td> 
-   <td>Momenteel wordt alleen <span class="codeph"> host</span> ondersteund. Dit kenmerk moet aanwezig zijn wanneer <span class="codeph"> overeenkomsten</span> en <span class="codeph"> waarden</span> attributen worden bepaald.</td> 
+   <td>Alleen op dit moment <span class="codeph"> host</span> wordt ondersteund. Dit kenmerk moet aanwezig zijn wanneer <span class="codeph"> overeenkomsten</span> en <span class="codeph"> waarden</span> kenmerken zijn gedefinieerd.</td> 
   </tr> 
   <tr> 
-   <td><span class="codeph"> matches</span></td> 
+   <td><span class="codeph"> overeenkomsten</span></td> 
    <td><span class="codeph"> String</span></td> 
    <td><span class="codeph"> meerdere</span></td> 
    <td>Mogelijke waarden:
     <ul id="ul_tnf_2hx_hz"> 
-     <li><span class="codeph"> eq</span> - gelijk aan</li> 
+     <li><span class="codeph"> eq</span> - gelijk</li> 
      <li><span class="codeph"> ne</span> - niet gelijk aan</li> 
-     <li><span class="codeph"> co</span> -contains</li> 
-     <li><span class="codeph"> nc</span>  - niet bevat</li> 
+     <li><span class="codeph"> co</span> - bevat</li> 
+     <li><span class="codeph"> nc</span> - bevat niet</li> 
      <li><span class="codeph"> sw</span> - begint met</li> 
      <li><span class="codeph"> nieuw</span> - eindigt met</li> 
     </ul></td> 
@@ -55,19 +54,19 @@ De prioriteitsregel definieert de prioriteitsvolgorde van de ad-creatieven die w
    <td><span class="codeph"> type</span></td> 
    <td><span class="codeph"> String</span></td> 
    <td><span class="codeph"> prioriteit</span></td> 
-   <td>De waarde moet altijd <span class="codeph"> prioriteit</span> zijn</td> 
+   <td>De waarde moet altijd <span class="codeph"> prioriteit</span></td> 
   </tr> 
   <tr> 
    <td><span class="codeph"> waarden</span></td> 
    <td><span class="codeph"> Array</span></td> 
    <td></td> 
-   <td> <p>TVSDK gebruikt het <span class="codeph">-kenmerk </span> op het <span class="codeph">-item</span> van de bron en past zich aan de waarden in deze array aan</p> </td> 
+   <td> <p>TVSDK gebruikt de <span class="codeph"> overeenkomsten</span> kenmerk op de <span class="codeph"> item</span> van de bron creatief en gelijke met de waarden die in deze serie worden bepaald</p> </td> 
   </tr> 
   <tr> 
    <td><span class="codeph"> stream</span></td> 
    <td><span class="codeph"> String</span></td> 
    <td></td> 
-   <td> <p>Waarde kan <span class="codeph"> vod</span> of <span class="codeph"> live</span> zijn</p> </td> 
+   <td> <p>Waarde kan <span class="codeph"> vod</span> of <span class="codeph"> leven</span></p> </td> 
   </tr> 
  </tbody> 
 </table>

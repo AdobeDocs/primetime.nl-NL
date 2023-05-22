@@ -2,14 +2,13 @@
 title: Wat wordt NIET ondersteund door Primetime Cloud DRM
 description: Wat wordt NIET ondersteund door Primetime Cloud DRM
 copied-description: true
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: 11dac4e3-6f08-43d0-a0db-3d3849baa8a9
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '120'
 ht-degree: 0%
 
 ---
-
 
 # Wat wordt NIET ondersteund door Primetime Cloud DRM{#what-is-not-supported-by-primetime-cloud-drm}
 
@@ -23,4 +22,3 @@ De volgende functies worden momenteel niet ondersteund door Primetime Cloud DRM:
 * Licentie intrekken/intrekken
 * PHLS/PHDS. Dit zijn beveiligingssystemen die geen gebruik maken van een licentieserver
 * Gebruiker-/wachtwoordverificatie
-

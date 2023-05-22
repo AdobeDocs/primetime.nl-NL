@@ -1,14 +1,13 @@
 ---
 description: Op resolutie gebaseerde uitvoerbeveiliging (RBOP) is een mechanisme dat uitvoerbeveiliging biedt op basis van het verticale aantal pixels van de inhoud.
 title: RBOP-overzicht
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: 57c39c4e-d8f3-4f28-95a5-2e61a1bd7793
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '174'
 ht-degree: 0%
 
 ---
-
 
 # RBOP-overzicht {#rbop-overview}
 
@@ -20,8 +19,7 @@ Om het proces te vereenvoudigen om uw vereisten van de outputbescherming te spec
 
 Secties in deze handleiding:
 
-* [RBOP ](../RBOP/output-protection-concepts.md) Conceptes verstrekt een conceptueel overzicht van de configuratie, de opties, en de betekenis verbonden aan outputbescherming.
-* [De ](../RBOP/client-support.md) Steun van de Cliënt RBOP beschrijft de eigenschappen beschikbaar met verschillende versies van Flash Player en TVSDK.
-* [De ](../RBOP/sample-output-protection-config.md) Configuratie van de steekproef RBOP stelt een steekproefconfiguratie voor die de concepten en de vorm van de configuratie illustreert.
-* [RBOP ](../RBOP/output-protection-grammar.md) Grammarcovert de grammatica van de configuratieinput, benadrukkend geldige en ongeldige inputopties, en verklarend hoe weggelaten facultatieve gebieden worden geïnterpreteerd.
-
+* [RBOP-concepten](../RBOP/output-protection-concepts.md) verstrekt een conceptueel overzicht van de configuratie, de opties, en betekenissen verbonden aan outputbescherming.
+* [RBOP-clientondersteuning](../RBOP/client-support.md) beschrijft de functies die beschikbaar zijn met verschillende versies van Flash Player en TVSDK.
+* [Voorbeeld van RBOP-configuratie](../RBOP/sample-output-protection-config.md) presenteert een steekproefconfiguratie die de concepten en de vorm van de configuratie illustreert.
+* [RBOP Grammar](../RBOP/output-protection-grammar.md) behandelt de grammatica van de configuratieinput, benadrukkend geldige en ongeldige inputopties, en verklarend hoe weggelaten facultatieve gebieden worden geïnterpreteerd.

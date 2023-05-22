@@ -1,14 +1,13 @@
 ---
 description: Terwijl de encryptiemethode AES-128 de volledige container van de vervoerstroom (TS) met inbegrip van kopballen codeert, codeert de encryptie SAMPLE-AES slechts de audio en een deel van de videogegevens.
 title: Voorbeeld van met AES gecodeerde HLS-streams
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: 04bda50f-5ca4-4a00-bb5a-97259a2cb005
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '200'
 ht-degree: 0%
 
 ---
-
 
 # Voorbeeld van met AES gecodeerde HLS-streams{#sample-aes-encrypted-hls-streams}
 
@@ -26,4 +25,3 @@ De volgende codecs worden ondersteund:
 
 * H.264 wordt ondersteund voor video.
 * Voor audio wordt sample-AES alleen ondersteund voor AAC.
-

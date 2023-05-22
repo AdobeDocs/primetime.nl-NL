@@ -1,14 +1,13 @@
 ---
 description: Adobe Primetime DRM is een geavanceerde Digital Rights Management (DRM) en een oplossing voor inhoudsbescherming voor hoogwaardige audiovisuele inhoud. In toepassingen die het maken van Java API's ondersteunen, kunt u de Primetime DRM SDK gebruiken om DRM-beleid op te geven, dat beleid toe te passen op de inhoud en die inhoud te coderen.
 title: Nieuw in Adobe Primetime DRM
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: 998dae80-b3d3-419e-8fd3-d925a83d8b53
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '348'
 ht-degree: 0%
 
 ---
-
 
 # Nieuw in Adobe Primetime DRM{#what-is-new-in-adobe-primetime-drm}
 
@@ -31,13 +30,12 @@ Hier volgt een doorloopprocedure op hoog niveau voor inhoudsbeveiliging:
 
 Als deze stappen zijn voltooid, is uw gecodeerde inhoud gereed voor implementatie. Na de implementatie kan een client een licentie aanvragen bij de licentieserver en na ontvangst kan de inhoud worden afgespeeld.
 
-De Primetime DRM SDK biedt een Java API om deze taken uit te voeren. De SDK bevat voorbeeldimplementaties van de licentieserver en opdrachtregelprogramma&#39;s, die beide gebaseerd zijn op de Java API&#39;s van de DRM SDK.
+De Primetime DRM SDK biedt een Java API om deze taken uit te voeren. De SDK bevat voorbeeldimplementaties van de licentieserver en opdrachtregelprogramma&#39;s, die beide zijn gebaseerd op de Java API&#39;s van de DRM SDK.
 
 De hieronder beschreven functies zijn nieuw in deze release.
 
 ## Nieuwe functies {#section_F6BA874CEAE24610920BC3A4C6D20EBA}
 
-* **Harde stop -** U kunt specificeren of de playback aan het eind van een playbackvenster stopt of verdergaat.
-* **Resolutie-afhankelijke uitvoerbesturingselementen -** u kunt uitvoerbeperkingen opgeven op basis van pixelresoluties.
-* **Anonymization van de Reacties van de Server van de Vergunning -** Om de privacy met de protocollen van de Server van de Vergunning te verbeteren Primetime DRM, zal het serienummer van het vervoercertificaat voor de reacties van de vergunningsserver op ondersteunende cliënten worden gecentreerd.
-
+* **Harde stop -** U kunt opgeven of het afspelen wordt gestopt of voortgezet aan het einde van een afspeelvenster.
+* **Afstandsafhankelijke uitvoerbesturingselementen -** U kunt uitvoerbeperkingen opgeven op basis van pixelresoluties.
+* **Anonymization van de Reacties van de Server van de Vergunning -** Om de privacy met de protocollen van de Server van de Vergunning te verbeteren Primetime DRM, zal het serienummer van het vervoercertificaat voor de reacties van de vergunningsserver aan ondersteunende cliënten worden gecentreerd.

@@ -1,7 +1,6 @@
 ---
 description: Alle verzoeken om invoeging in een advertentie gebruiken dezelfde URL-structuur en dezelfde basisqueryparameters. De extra vraagparameters laten de duidelijke server toe om met een verscheidenheid van cliënten en situaties te werken.
 title: Verzoek om inlassing
-translation-type: tm+mt
 source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
 source-wordcount: '215'
@@ -10,7 +9,7 @@ ht-degree: 0%
 ---
 
 
-# Verzoeken om {#requests-for-ad-insertion} toe te voegen
+# Verzoek om inlassing {#requests-for-ad-insertion}
 
 Alle verzoeken om invoeging in een advertentie gebruiken dezelfde URL-structuur en dezelfde basisqueryparameters. De extra vraagparameters laten de duidelijke server toe om met een verscheidenheid van cliënten en situaties te werken.
 
@@ -22,8 +21,8 @@ Alle verzoeken om invoeging in een advertentie gebruiken dezelfde URL-structuur 
 
 >[!NOTE]
 >
->De parameter `__sid__` wordt omringd door dubbele onderstrepingstekens.
+>De `__sid__` parameter wordt omgeven door dubbele onderstrepingstekens.
 
-De manifestserver handhaaft zittingen voor individuele cliënten of groepen cliënten om ervoor te zorgen dat de opeenvolgingen van API interactie voor verschillende cliënten afzonderlijk blijven. De `__sid__` die de client in de bootstrap-URL naar de manifestserver verzendt, moet uniek zijn binnen de omgeving. De manifestserver gebruikt het om globaal unieke identiteitskaart te construeren, die het aan de cliënt terugkeert.
+De manifestserver handhaaft zittingen voor individuele cliënten of groepen cliënten om ervoor te zorgen dat de opeenvolgingen van API interactie voor verschillende cliënten afzonderlijk blijven. De `__sid__` dat de cliënt in bootstrap URL naar de manifestserver verzendt uniek binnen zijn milieu zou moeten zijn. De manifestserver gebruikt het om globaal unieke identiteitskaart te construeren, die het aan de cliënt terugkeert.
 
 De resterende queryparameters hebben betrekking op verschillende clients en situaties.

@@ -1,14 +1,13 @@
 ---
 description: De afspeellijst voor een video kan een onbeperkt aantal alternatieve audiotracks voor de hoofdvideo-inhoud opgeven. U kunt bijvoorbeeld verschillende talen toevoegen aan uw video-inhoud of de gebruiker toestaan te schakelen tussen verschillende tracks op het apparaat terwijl de inhoud wordt afgespeeld.
 title: Alternatieve audiotracks in de afspeellijst
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: 2706a38c-b103-4f8c-a639-4650b4d515a1
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '291'
 ht-degree: 0%
 
 ---
-
 
 # Alternatieve audiotracks in de afspeellijst{#alternate-audio-tracks-in-the-playlist}
 
@@ -25,7 +24,7 @@ De volgende vereisten zijn van toepassing als u afwisselende audiosporen gebruik
 * Als de hoofdinhoud alternatieve audiotracks heeft, moeten advertenties ten minste één audiostream hebben.
 * Elke segmentduur van de audio-enige stream van een advertentie moet gelijk zijn aan de segmentduur van de videostream van een advertentie.
 
-De hoofdaudiotrack wordt opgenomen in de verzameling audiotracks met het label `default`. Metagegevens voor de alternatieve audiostreams worden met `TYPE=AUDIO` opgenomen in de afspeellijst in de `#EXT-X-MEDIA`-tags.
+De hoofdaudiotrack wordt opgenomen in de verzameling audiotracks met de `default` label. Metagegevens voor de alternatieve audiostreams zijn opgenomen in de afspeellijst in het dialoogvenster `#EXT-X-MEDIA` tags met `TYPE=AUDIO`.
 
 Een M3U8-manifest dat bijvoorbeeld meerdere alternatieve audiostreams opgeeft, ziet er als volgt uit:
 
@@ -49,4 +48,3 @@ gear1/prog_index.m3u8
 gear2/prog_index.m3u8
 ...
 ```
-

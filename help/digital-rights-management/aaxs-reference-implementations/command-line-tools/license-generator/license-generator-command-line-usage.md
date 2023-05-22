@@ -2,16 +2,15 @@
 title: Gebruik van opdrachtregels
 description: Gebruik van opdrachtregels
 copied-description: true
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: 241849bb-e818-420e-98b4-c12e306b17b2
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '280'
 ht-degree: 0%
 
 ---
 
-
-# Gebruik van opdrachtregel {#command-line-usage}
+# Gebruik van opdrachtregels {#command-line-usage}
 
 Gebruik de volgende syntaxis om een licentie te genereren:
 
@@ -25,7 +24,7 @@ Gebruik de volgende syntaxis om een licentie te genereren:
 </i class="+ topic>
 ```
 
-`metadata` is een .metadata bestand dat de Adobe Access DRM-metagegevens bevat. Dit bestand kan worden verkregen van beveiligde inhoud met de optie `-d -m` van Media Packager.
+`metadata` is een .metadata bestand dat de Adobe Access DRM-metagegevens bevat. Dit bestand kan worden verkregen van beveiligde inhoud met behulp van de `-d -m` van Media Packager.
 
 Als u een eerder gegenereerde licentie wilt weergeven, gebruikt u de volgende syntaxis:
 
@@ -66,7 +65,7 @@ In de volgende tabel worden de opdrachtregelopties beschreven die samen met de e
   </tr> 
   <tr rowsep="1" class="- topic/row "> 
    <td colname="1" class="- topic/entry "><span class="codeph"> -noprompt</span> </td> 
-   <td colname="2" class="- topic/entry ">Vraag niet of het doelbestand moet worden overschreven. Als het doelbestand al bestaat en <span class="codeph"> -o</span> niet is ingesteld, wordt een fout geretourneerd. </td> 
+   <td colname="2" class="- topic/entry ">Vraag niet of het doelbestand moet worden overschreven. Als het doelbestand al bestaat en <span class="codeph"> -o</span> is niet ingesteld, wordt een fout geretourneerd. </td> 
   </tr> 
   <tr rowsep="1" class="- topic/row "> 
    <td colname="1" class="- topic/entry "><span class="codeph"> -o</span> </td> 
@@ -78,7 +77,7 @@ In de volgende tabel worden de opdrachtregelopties beschreven die samen met de e
   </tr> 
   <tr rowsep="1" class="- topic/row "> 
    <td colname="1" class="- topic/entry "><span class="+ topic/ph pr-d/codeph codeph">-r ontvanger-cert</span> </td> 
-   <td colname="2" class="- topic/entry ">Genereer een licentie voor de opgegeven ontvanger. Een apparaat of domeincertificaat kan worden gebruikt. Er kunnen meerdere <span class="+ topic/ph pr-d/codeph codeph"> -r </span>opties worden opgegeven om een licentie voor meerdere ontvangers te maken. </td> 
+   <td colname="2" class="- topic/entry ">Genereer een licentie voor de opgegeven ontvanger. Een apparaat of domeincertificaat kan worden gebruikt. Meerdere <span class="+ topic/ph pr-d/codeph codeph"> -r </span>U kunt opties opgeven om een licentie te maken voor meerdere ontvangers. </td> 
   </tr> 
   <tr rowsep="0" class="- topic/row "> 
    <td colname="1" class="- topic/entry "><span class="+ topic/ph pr-d/codeph codeph">-root-root-filename</span> </td> 
@@ -86,4 +85,3 @@ In de volgende tabel worden de opdrachtregelopties beschreven die samen met de e
   </tr> 
  </tbody> 
 </table>
-

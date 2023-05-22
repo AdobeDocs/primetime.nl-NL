@@ -1,14 +1,13 @@
 ---
 description: Deze klassen bieden informatie over de media.
 title: Info-klassen
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: af09c81f-07f4-423b-af97-53bc2274cddc
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '224'
 ht-degree: 0%
 
 ---
-
 
 # Info-klassen{#info-classes}
 
@@ -50,8 +49,7 @@ Pakket: [com.adobe.mediacore.info](https://help.adobe.com/en_US/primetime/api/ps
   </tr> 
   <tr rowsep="0"> 
    <td colname="1"><span class="codeph"><a href="https://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls_1.4/com/adobe/mediacore/info/Track.html" format="html" scope="external"> Track</a></span></td> 
-   <td colname="2">Klasse die de trackabstractie definieert die moet worden gebruikt voor het definiëren van <span class="codeph"> AudioTrack</span> en <span class="codeph"> ClosedCaptionsTrack</span>. </td> 
+   <td colname="2">Klasse die de trackabstractie definieert die moet worden gebruikt bij het definiëren van <span class="codeph"> AudioTrack</span> en <span class="codeph"> ClosedCaptionsTrack</span>. </td> 
   </tr> 
  </tbody> 
 </table>
-

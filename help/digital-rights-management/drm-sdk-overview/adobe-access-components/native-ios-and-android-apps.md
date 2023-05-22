@@ -2,14 +2,13 @@
 title: Systeemeigen iOS- en Android-toepassingen
 description: Systeemeigen iOS- en Android-toepassingen
 copied-description: true
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: 26203ae3-5353-47db-9c72-d01c202d8e84
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '82'
 ht-degree: 0%
 
 ---
-
 
 # Systeemeigen iOS- en Android-toepassingen{#native-ios-and-android-applications}
 

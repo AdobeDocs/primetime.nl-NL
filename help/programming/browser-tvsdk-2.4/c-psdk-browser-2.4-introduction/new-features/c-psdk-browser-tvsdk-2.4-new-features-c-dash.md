@@ -1,14 +1,13 @@
 ---
 description: Browser TVSDK steunt een aantal eigenschappen DASH die u kunt uitvoeren om functionaliteit aan uw videotoepassingen toe te voegen.
 title: Ondersteunde DASH-functies
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: 29a5d1a3-e31e-459c-90b5-80227df46e4b
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '484'
 ht-degree: 0%
 
 ---
-
 
 # Ondersteunde DASH-functies{#supported-dash-features}
 
@@ -23,7 +22,7 @@ Browser TVSDK steunt een aantal eigenschappen DASH die u kunt uitvoeren om funct
 
 >[!TIP]
 >
->In de onderstaande tabel met functiematrix ![](assets/supported15.png)
+>In de onderstaande tabel met functiematrix:  ![](assets/supported15.png)
 >betekent dat de functie wordt ondersteund in de huidige release.
 
 De volgende functies worden ondersteund:
@@ -155,7 +154,7 @@ De volgende functies worden ondersteund:
  </tbody> 
 </table>
 
-## Geavanceerde afspeelfuncties in DASH {#dash-advanced-playback}
+## Geavanceerde afspeelfuncties DASH {#dash-advanced-playback}
 
 | Categorie | Inhoudstype | Functie | HTML5, FF, IE, Chrome, Android-chroom |
 |---|---|---|---|
@@ -169,7 +168,7 @@ De volgende functies worden ondersteund:
 | Afspelen | VOD + Live | Facturering | ![](assets/supported15.png) |
 | Afspelen | VOD + Live | Bladeren | ![](assets/supported15.png) |
 
-## DASH core playback features {#dash-core-playback}
+## DASH-kernfuncties voor afspelen {#dash-core-playback}
 
 | Categorie | Inhoudstype | Functie | HTML5 FF, IE, Chrome, Android-chroom |
 |---|---|---|---|

@@ -1,20 +1,19 @@
 ---
 description: Deze klassen bieden informatie die u helpt te bepalen hoe goed de speler presteert.
 title: QoS-klassen
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: 7d8b2bb2-491d-4c36-a6b3-8f91cf2304aa
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '432'
 ht-degree: 0%
 
 ---
 
-
 # QoS-klassen {#qos-classes}
 
 Deze klassen bieden informatie die u helpt te bepalen hoe goed de speler presteert.
 
-Pakket: [com.adobe.mediacore.qos](https://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls_1.4/com/adobe/mediacore/qos/package-detail.html) Pakket: [com.adobe.mediacore.qos.metrics](https://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls_1.4/com/adobe/mediacore/qos/metrics/package-detail.html)
+Pakket: [com.adobe.mediacore.qos](https://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls_1.4/com/adobe/mediacore/qos/package-detail.html)  Pakket: [com.adobe.mediacore.qos.metrics](https://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls_1.4/com/adobe/mediacore/qos/metrics/package-detail.html)
 
 <table frame="all" colsep="1" rowsep="1" id="table_2893EFF9755149159A4F94E781C76B6E"> 
  <thead> 
@@ -76,4 +75,3 @@ Pakket: [com.adobe.mediacore.qos](https://help.adobe.com/en_US/primetime/api/psd
   </tr> 
  </tbody> 
 </table>
-

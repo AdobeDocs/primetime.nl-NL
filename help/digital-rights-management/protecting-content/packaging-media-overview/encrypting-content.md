@@ -2,30 +2,29 @@
 title: Inhoud versleutelen
 description: Inhoud versleutelen
 copied-description: true
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: c6b5d8c7-eda4-40c0-a609-0ebfeba90c04
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '223'
 ht-degree: 0%
 
 ---
 
-
 # Inhoud versleutelen{#encrypting-content}
 
-U versleutelt video-inhoud met het object `MediaEncrypter`. U kunt mediabestanden versleutelen die alleen audiotracks bevatten. U kunt ook alleen gedeeltelijke versleuteling toepassen. bijvoorbeeld om de prestaties te verbeteren wanneer u H.264-inhoud codeert voor apparaten met een lagere kwaliteit.
+U codeert video-inhoud met de `MediaEncrypter` object. U kunt mediabestanden versleutelen die alleen audiotracks bevatten. U kunt ook alleen gedeeltelijke versleuteling toepassen. bijvoorbeeld om de prestaties te verbeteren wanneer u H.264-inhoud codeert voor apparaten met een lagere kwaliteit.
 
 Mediabestanden versleutelen met de Java API:
 
-1. Stel uw ontwikkelomgeving in en neem alle JAR-bestanden op die worden vermeld in *De ontwikkelomgeving instellen* in uw project.
-1. Maak een `ServerCredential`-instantie om de referenties te laden die nodig zijn voor ondertekening.
-1. Maak een `MediaEncrypter`-instantie. Gebruik een `MediaEncryperFactory` als u niet weet welk type bestand u hebt.
+1. Stel uw ontwikkelomgeving in en neem alle JAR-bestanden op die in *De ontwikkelomgeving instellen* in uw project.
+1. Een `ServerCredential` -instantie om de referenties te laden die nodig zijn voor ondertekening.
+1. Een `MediaEncrypter` -instantie. Een `MediaEncryperFactory` als u niet weet welk type bestand u hebt.
 
-1. Geef de coderingsopties op met behulp van een `DRMParameters`-object.
-1. Stel de handtekeningopties in met een `SignatureParameters`-object en geef de `ServerCredential`-instantie door aan de `setServerCredentials`-methode.
+1. Geef de versleutelingsopties op met een `DRMParameters` object.
+1. Stel de handtekeningopties in met een `SignatureParameters` en geeft het `ServerCredential` instantie `setServerCredentials` methode.
 
-1. Stel de sleutel- en licentiegegevens in met behulp van een `V2KeyParameters`-object. Plaats het beleid DRM gebruikend de `setPolicies` methode. Stel de informatie in die de client nodig heeft om contact op te nemen met de licentieserver door de methoden `setLicenseServerUrl` en `setLicenseServerTransportCertificate` aan te roepen. Stel de CEK-coderingsopties in met de methode `setKeyProtectionOptions` en de aangepaste eigenschappen met de methode `setCustomProperties`. Tot slot, afhankelijk van het gebruikte type van encryptie, gegoten `DRMKeyParameters` voorwerp aan het aangewezen type ( `VideoDRMParameters`, `AudioDRMParameters`), en de encryptieopties plaatsen.
+1. De sleutel- en licentiegegevens instellen met behulp van een `V2KeyParameters` object. Het DRM-beleid instellen met de opdracht `setPolicies` methode. Stel de informatie in die de client nodig heeft om contact op te nemen met de licentieserver door de `setLicenseServerUrl` en `setLicenseServerTransportCertificate` methoden. Stel de CEK-coderingsopties in met de `setKeyProtectionOptions` en de bijbehorende aangepaste eigenschappen gebruiken `setCustomProperties` methode. Tot slot, afhankelijk van het gebruikte type van encryptie, giet `DRMKeyParameters` object naar het juiste type ( `VideoDRMParameters`, `AudioDRMParameters`) en stelt u de versleutelingsopties in.
 
-1. Codeer de inhoud door de invoer- en uitvoerbestanden en de versleutelingsopties aan de methode `MediaEncrypter.encryptContent` door te geven.
+1. Codeer de inhoud door de invoer- en uitvoerbestanden en versleutelingsopties aan de `MediaEncrypter.encryptContent` methode.
 
-Zie `com.adobe.flashaccess.samples.mediapackager.EncryptContent` in de map Reference Implementation Command Line Tools [!DNL samples/] voor voorbeeldcode die aangeeft hoe inhoud moet worden gecodeerd.
+Voor voorbeeldcode die toont hoe te om inhoud te coderen, zie `com.adobe.flashaccess.samples.mediapackager.EncryptContent` in de opdrachtregelprogramma&#39;s voor de referentieimplementatie [!DNL samples/] directory.

@@ -2,23 +2,22 @@
 title: Op tijd gebaseerde regels definiëren
 description: Op tijd gebaseerde regels definiëren
 copied-description: true
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: ef72ee76-7d83-486d-86fe-df90c2aaca3a
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '577'
 ht-degree: 0%
 
 ---
 
+# Op tijd gebaseerde regels definiëren {#defining-time-based-rules}
 
-# Op tijd gebaseerde regels {#defining-time-based-rules} definiëren
-
-Adobe Access maakt gebruik van &#39;zachte handhaving&#39; van op tijd gebaseerde licentiebeperkingen. Als een tijdrecht tijdens playback van een video verloopt, is het standaardgedrag van Adobe Access playback niet te beperken tot de volgende tijd de videostroom wordt ontspannen (door `Netstream.stop()` en `Netstream.play()` te roepen).
+Adobe Access maakt gebruik van &#39;zachte handhaving&#39; van op tijd gebaseerde licentiebeperkingen. Als een tijdrecht tijdens playback van een video verloopt, is het standaardgedrag van Adobe Access niet playback te beperken tot de volgende tijd de videostroom wordt ontspannen (door te roepen `Netstream.stop()` en `Netstream.play()`).
 
 Terwijl de zachte handhaving het standaardgedrag is, kunt u harde handhaving ook toelaten door één van de volgende taken uit te voeren:
 
-* Zorg dat uw videospeler de licentie periodiek opvraagt om er zeker van te zijn dat geen van de tijdbeperkingen is verlopen. Dit kan worden verwezenlijkt door `DRMManager.loadVoucher(LOCAL_ONLY).`een foutencode te roepen wijst erop dat de lokaal-opgeslagen vergunning niet meer geldig is.
-* Wanneer de gebruiker de knoop van de Pauze klikt, kunt u huidige videotimestamp registreren en dan `Netstream.stop().`roepen wanneer de gebruiker de knoop van het Spel klikt, kunt u naar de geregistreerde plaats zoeken en dan `Netstream.play()` roepen.
+* Zorg dat uw videospeler de licentie periodiek opvraagt om er zeker van te zijn dat geen van de tijdbeperkingen is verlopen. Dit kan door te roepen worden verwezenlijkt `DRMManager.loadVoucher(LOCAL_ONLY).`Een foutcode geeft aan dat de lokaal opgeslagen licentie niet langer geldig is.
+* Wanneer de gebruiker op de knop Pauzeren klikt, kunt u de huidige videotijdstempel opnemen en vervolgens bellen `Netstream.stop().`Wanneer de gebruiker de knoop van het Spel klikt, kunt u aan de geregistreerde plaats zoeken en dan roepen `Netstream.play()`.
 
 ## Begindatum {#start-date}
 
@@ -38,7 +37,7 @@ Vermeld de vervaldatum van de vergunning, uitgedrukt in verhouding tot de verpak
 
 Voorbeeld van gebruik: In een geautomatiseerd verpakkingsproces gebruikt u één beleid met deze optie voor een reeks video&#39;s om de vervaldatum in te stellen op 30 dagen ten opzichte van de verpakkingsdatum.
 
-## Licentie in cache {#license-caching-duration}
+## Duur van licentiecache {#license-caching-duration}
 
 Geeft aan hoe lang een licentie op schijf in de lokale licentieserve van de client in cache kan worden geplaatst zonder dat de licentie opnieuw moet worden opgehaald van de licentieserver. U kunt ook een absolute datum/tijd opgeven waarna een licentie niet langer in de cache kan worden opgeslagen.
 
@@ -52,7 +51,7 @@ Hiermee geeft u op hoe lang een licentie geldig is nadat deze voor het eerst wor
 
 Voorbeeld van gebruik: Sommige bedrijfsmodellen staan een verhuurperiode van 30 dagen toe, maar wanneer het afspelen begint, moet het binnen 48 uur worden voltooid. Deze levensduur van 48 uur van de licentie wordt gedefinieerd als het afspeelvenster.
 
-## Vereisten voor synchronisatie {#requirements-for-synchronization}
+## Voorschriften voor synchronisatie {#requirements-for-synchronization}
 
 Hiermee geeft u de frequentie op waarmee de client de status synchroniseert met de server. Als aan de client een out-of-band licentie is verleend (zonder dat er een licentieserver wordt gecontacteerd), kunnen gebruiksregels opgeven dat de client synchronisatieberichten naar de server moet verzenden om de veilige tijd van de client te synchroniseren en de status van de client aan de server te melden.
 
@@ -64,4 +63,4 @@ Het synchronisatiegedrag wordt bepaald gebruikend de volgende parameters:
 
 >[!NOTE]
 >
->Deze gebruiksregel wordt gesteund door de cliëntversie 3.0 van de Toegang van de Adobe. Het gedrag bij oudere clients is afhankelijk van de minimale clientversie die door de licentieserver wordt ondersteund. Zie [Minimale clientversie](../../../../aaxs-protecting-content/content-implementing-the-license-server/content-handling-license-reqs/content-minimum-client-version.md).
+>Deze gebruiksregel wordt gesteund door de cliëntversie 3.0 van de Toegang van de Adobe. Het gedrag bij oudere clients is afhankelijk van de minimale clientversie die door de licentieserver wordt ondersteund. Zie, [Minimale clientversie](../../../../aaxs-protecting-content/content-implementing-the-license-server/content-handling-license-reqs/content-minimum-client-version.md).

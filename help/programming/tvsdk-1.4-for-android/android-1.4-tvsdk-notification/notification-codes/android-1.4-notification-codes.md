@@ -1,14 +1,13 @@
 ---
 description: Het TVSDK-meldingssysteem produceert verschillende fouten, waarschuwingen en informatieve kennisgevingen die diagnostische metagegevens bieden.
 title: Meldingscodes
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: 615de4e4-fb42-4159-b572-da7866df4ce3
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '223'
 ht-degree: 0%
 
 ---
-
 
 # Meldingscodes{#notification-codes}
 
@@ -26,7 +25,7 @@ Meldingsobjecten bevatten informatie over de status van de speler. TVSDK biedt e
  <tbody> 
   <tr rowsep="1"> 
    <td colname="1"><span class="codeph"> type</span> </td> 
-   <td colname="2">Het berichttype. Afhankelijk van het platform verwijst deze eigenschap naar een opgesomd type met mogelijke waarden van <span class="codeph"> INFO</span>, <span class="codeph"> WARN</span> of <span class="codeph"> ERROR</span>. Dit is de groepering op hoofdniveau voor meldingen. </td> 
+   <td colname="2">Het berichttype. Afhankelijk van het platform verwijst deze eigenschap naar een opgesomd type met mogelijke waarden van <span class="codeph"> INFO</span>, <span class="codeph"> WAARSCHUWING</span>, of <span class="codeph"> FOUT</span>. Dit is de groepering op hoofdniveau voor meldingen. </td> 
   </tr> 
   <tr rowsep="1"> 
    <td colname="1"><span class="codeph"> code</span> </td> 
@@ -39,16 +38,15 @@ Meldingsobjecten bevatten informatie over de status van de speler. TVSDK biedt e
   </tr> 
   <tr rowsep="1"> 
    <td colname="1"><span class="codeph"> name</span> </td> 
-   <td colname="2">Een tekenreeks die een door de mens leesbare beschrijving van de code bevat, zoals <span class="codeph"> SEEK_ERROR</span>. </td> 
+   <td colname="2">Een tekenreeks die een leesbare beschrijving van de code bevat, zoals <span class="codeph"> ZOEKEN_FOUT</span>. </td> 
   </tr> 
   <tr rowsep="1"> 
    <td colname="1"><span class="codeph"> metagegevens</span> </td> 
-   <td colname="2">Sleutel-waardeparen die extra relevante informatie over de kennisgeving bevatten. Een sleutel met de naam <span class="codeph"> URL</span> zou bijvoorbeeld worden gekoppeld aan een waarde die een URL is die gerelateerd is aan het bericht, zoals een ongeldige URL die een fout heeft veroorzaakt. </td> 
+   <td colname="2">Sleutel-waardeparen die extra relevante informatie over de kennisgeving bevatten. Een toets met de naam <span class="codeph"> URL</span> zou worden gecombineerd met een waarde die een URL is die gerelateerd is aan het bericht, zoals een ongeldige URL die een fout heeft veroorzaakt. </td> 
   </tr> 
   <tr rowsep="0"> 
    <td colname="1"><span class="codeph"> innerNotification</span> </td> 
-   <td colname="2">Een verwijzing naar een ander <span class="codeph"> MediaPlayerNotification</span>-object dat deze melding rechtstreeks beïnvloedt. Een voorbeeld kan een melding zijn over een fout bij het invoegen van een invoegpositie die direct overeenkomt met een invoegconflict in een tijdlijn. Niet alle meldingen bevatten een binnenste melding. </td> 
+   <td colname="2">Een verwijzing naar een andere <span class="codeph"> MediaPlayerNotification</span> object dat dit bericht rechtstreeks beïnvloedt. Een voorbeeld kan een melding zijn over een fout bij het invoegen van een invoegpositie die direct overeenkomt met een invoegconflict in een tijdlijn. Niet alle meldingen bevatten een binnenste melding. </td> 
   </tr> 
  </tbody> 
 </table>
-

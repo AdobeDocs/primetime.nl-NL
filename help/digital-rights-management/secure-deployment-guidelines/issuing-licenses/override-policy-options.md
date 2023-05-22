@@ -1,7 +1,6 @@
 ---
 description: Wanneer u een licentie geeft, kan de licentieserver de gebruiksregels negeren die in het beleid zijn opgegeven.
 title: Beleidsopties overschrijven
-translation-type: tm+mt
 source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
 source-wordcount: '102'

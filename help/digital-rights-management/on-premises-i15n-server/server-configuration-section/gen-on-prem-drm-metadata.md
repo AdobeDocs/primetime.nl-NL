@@ -2,18 +2,17 @@
 title: De DRM-metagegevens op locatie genereren
 description: De DRM-metagegevens op locatie genereren
 copied-description: true
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: b42e3491-081b-45bf-bd00-8fb769a97446
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '172'
-ht-degree: 1%
+ht-degree: 0%
 
 ---
 
+# De DRM-metagegevens op locatie genereren{#generate-the-on-premises-drm-metadata}
 
-# DRM-metagegevens genereren op locatie{#generate-the-on-premises-drm-metadata}
-
-Een [!DNL CreateMetadata.jar] nut is inbegrepen in [!DNL create_metadata] omslag. Het punt van dit nut is om te creëren op Bebouwen DRM Meta-gegevens die de cliënt in het uitvoeren van het individualisatieproces tegen gespecificeerde op de Server van de Individualisering van Bebouwen in werking zullen stellen.
+A [!DNL CreateMetadata.jar] wordt opgenomen in het [!DNL create_metadata] map. Het punt van dit nut is om te creëren op Bebouwen DRM Meta-gegevens die de cliënt in het uitvoeren van het individualisatieproces tegen gespecificeerde op de Server van de Individualisering van Bebouwen in werking zullen stellen.
 
 1. Werk de Primetime DRM Reference Implementation - de Hulpmiddelen van de Lijn van het Bevel met de volgende dossiers bij:
 
@@ -21,11 +20,11 @@ Een [!DNL CreateMetadata.jar] nut is inbegrepen in [!DNL create_metadata] omslag
    * [!DNL commons-cli-1.2.jar]
    * [!DNL createMetadata.properties]
 
-      De twee JAR-bestanden kunnen zich in de map [!DNL Command Line Tools/libs] bevinden. Het [!DNL createMetadata.properties] dossier kan naast het [!DNL flashaccesstools.properties] dossier verblijven.
+      De twee JAR-bestanden kunnen zich bevinden in de [!DNL Command Line Tools/libs] map. De [!DNL createMetadata.properties] bestand kan naast het [!DNL flashaccesstools.properties] bestand.
 
 <!--<a id="example_2116349CA33642CD9293EAD94A532ED8"></a>-->
 
-Ingesloten is een [!DNL examplecreate.sh]-script dat een voorbeeld van het maken van metagegevens demonstreert. Configureer de URL van de licentieserver en de URL van de Individualization-server in zowel het script als de eigenschappenbestanden voordat u probeert metagegevens te genereren.
+Ingesloten is een [!DNL examplecreate.sh] script dat een voorbeeld van het maken van metagegevens bevat. Configureer de URL van de licentieserver en de URL van de Individualization-server in zowel het script als de eigenschappenbestanden voordat u probeert metagegevens te genereren.
 
 De inputs voor het hulpprogramma zijn als volgt:
 

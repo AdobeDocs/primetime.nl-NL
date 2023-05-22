@@ -2,14 +2,13 @@
 title: Certificaten aanvragen
 description: Certificaten aanvragen
 copied-description: true
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: 49021dba-c6e3-4d11-ab11-061c824b30df
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '123'
 ht-degree: 0%
 
 ---
-
 
 # Certificaten aanvragen{#requesting-certificates}
 
@@ -17,4 +16,4 @@ Inschrijving is het proces waarbij een certificaat van Adobe wordt aangevraagd. 
 
 In tegenstelling tot de Server van de Vergunning, wordt de Packager of het certificaat van het Vervoer van het Vervoer, het certificaat van MAC van het Domein niet uitgegeven door Adobe. U kunt dit certificaat verkrijgen van een certificeringsinstantie of u kunt een zelfondertekend certificaat genereren.
 
-Voor instructies op hoe te om de geloofsbrieven van de Toegang van de Adobe te verkrijgen, zie *de Gids van de Inschrijving van het Certificaat van de Toegang van de Adobe*.
+Voor instructies op hoe te om de geloofsbrieven van de Toegang van de Adobe te verkrijgen, zie *Adobe Access Certificate Enroller Guide*.

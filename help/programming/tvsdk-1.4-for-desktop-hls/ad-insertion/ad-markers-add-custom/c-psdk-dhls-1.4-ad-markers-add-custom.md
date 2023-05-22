@@ -1,14 +1,13 @@
 ---
 description: Door aangepaste advertentiemarkeringen te gebruiken, kunt u specifieke gedeelten van de hoofdinhoud markeren als aan een advertentie gerelateerde inhoudsperioden.
 title: Aangepaste advertentiemarkeringen toevoegen
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: 067bb595-d9cb-40d7-95bc-795c12fb7439
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '299'
 ht-degree: 0%
 
 ---
-
 
 # Overzicht {#add-custom-ad-markers-overview}
 
@@ -27,4 +26,4 @@ Het bijhouden van advertenties wordt niet intern afgehandeld door TVSDK, bijvoor
 
 Afspeelgebeurtenissen worden afzonderlijk geactiveerd voor ad-einden en advertenties op het begin- en eindpunt voor elke advertentie.
 
-TVSDK verzendt en volgt gebeurtenissen naar uw toepassing, zodat u uw eigen traceringslogica kunt implementeren. Als u aangepaste advertentiemarkeringen instelt, ontvangt u de gebeurtenissen `AD_BREAK_STARTED`, `AD_STARTED`, `AD_PROGRESS`, `AD_COMPLETED` en `AD_BREAK_COMPLETED`.
+TVSDK verzendt en volgt gebeurtenissen naar uw toepassing, zodat u uw eigen traceringslogica kunt implementeren. Als u aangepaste advertentiemarkeringen instelt, ontvangt u de `AD_BREAK_STARTED`, `AD_STARTED`, `AD_PROGRESS`, `AD_COMPLETED`, en `AD_BREAK_COMPLETED` gebeurtenissen.

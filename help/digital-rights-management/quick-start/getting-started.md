@@ -2,14 +2,13 @@
 title: Aan de slag
 description: Aan de slag
 copied-description: true
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: d29d141e-913c-4b9d-979c-91c486414071
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '337'
 ht-degree: 0%
 
 ---
-
 
 # Aan de slag {#getting-started}
 
@@ -18,7 +17,7 @@ Dit document bevat de stappen voor een snelle installatie en implementatie van e
 * *De Primetime DRM-server gebruiken voor het beschermen van inhoud*
 * *De Primetime DRM-server gebruiken voor beveiligde streaming*
 
-De Primetime DRM-server voor beveiligde streaming is een server met minimale functionaliteit die geen broncode bevat. Zie de handleiding *Using the Primetime DRM Reference Implementations* voor een wijzigbare server met volledige Java-bron. Als u een Referentie-licentieserver instelt, die de stap *Primetime DRM-server instellen en implementeren voor beveiligde streaming (licentieserver)* vervangt.
+De Primetime DRM-server voor beveiligde streaming is een server met minimale functionaliteit die geen broncode bevat. Voor een wijzigbare server met volledige Java-bron raadpleegt u de *Implementaties van de Primetime DRM-naslaggids gebruiken* hulplijn. Als u een Referentie-licentieserver instelt, die de *Primetime DRM Server instellen en implementeren voor beveiligde streaming (licentieserver)* stap.
 
 ## Vereisten {#prerequisites}
 
@@ -36,7 +35,7 @@ Voer de volgende taken uit voordat u aan de slag gaat:
 
 ## Certificaten verkrijgen {#obtain-certificates}
 
-Nadat de SDK-software is geleverd, ontvangt de aangewezen systeembeheerder van het bedrijfscertificaat een uitnodiging om het registratieproces van Adobe Primetime DRM Certificate Enrollment te voltooien. Voor meer informatie, zie *Primetime Gids van de Inschrijving van het Certificaat DRM*.
+Nadat de SDK-software is geleverd, ontvangt de aangewezen systeembeheerder van het bedrijfscertificaat een uitnodiging om het registratieproces van Adobe Primetime DRM Certificate Enrollment te voltooien. Zie voor meer informatie de *Primetime DRM Certificate Enrollment Guide*.
 
 1. De beheerder wijst minstens één persoon aan om als aanvrager van het Certificaat te handelen.
 1. De aanvrager van het Certificaat produceert een privé sleutel en een CSR.
@@ -45,7 +44,7 @@ Nadat de SDK-software is geleverd, ontvangt de aangewezen systeembeheerder van h
 1. De beheerder van het Adobe-certificaat bevestigt de verzending.
 1. Requester ontvangt het certificaat, bindt het certificaat met de privé sleutel, en stelt het certificaat op. zoals beschreven in .
 
-   Zie de handleiding *Adobe Primetime DRM Server implementeren voor beveiligde streaming* voor meer informatie over het implementeren van het certificaat.
+   Voor meer informatie over het opstellen van het certificaat, zie *De Adobe Primetime DRM-server implementeren voor beveiligde streaming* hulplijn.
 1. De stappen 3 tot en met 6 moeten voor elk certificaattype worden ingevuld.
 
    Voor de versie van de Productie Primetime DRM, moet de aanvrager afzonderlijke verzoeken om de Server van de Vergunning, het Verpakken, en de certificaten van het Vervoer indienen, die voor twee jaar geldig zijn.

@@ -1,7 +1,6 @@
 ---
 description: Als de client om traceerinformatie vraagt, stuurt de manifestserver een opgemaakt bestand terug. Zijn formaat en inhoud hangen van de waarde van het trekkende versie van de vraagparameter af
 title: VMAP-indeling voor het bijhouden van URL's
-translation-type: tm+mt
 source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
 source-wordcount: '138'
@@ -12,11 +11,11 @@ ht-degree: 0%
 
 # VMAP-indeling voor het bijhouden van URL&#39;s {#vmap-format-for-tracking-urls}
 
-Als de client om traceerinformatie vraagt, stuurt de manifestserver een opgemaakt bestand terug. Zijn formaat en inhoud hangen van de waarde van de vraagparameter `pttrackingversion` af
+Als de client om traceerinformatie vraagt, stuurt de manifestserver een opgemaakt bestand terug. Zijn formaat en inhoud hangen van de waarde van de vraagparameter af `pttrackingversion`
 
 ## Single VMAP-indeling {#vmap}
 
-Het VMAP-bestand dat de manifestserver verzendt wanneer `pttrackingversion=vmap` de indeling van het volgende voorbeeld heeft, die afkomstig is van een standaard VMAP-blok. Het is ingekort om onnodige herhalingen te voorkomen, zodat de structuur duidelijker wordt. Een ovaal (drie punten, gescheiden door spaties) geeft aan dat informatie binnen sommige URL&#39;s en tussen sommige codeblokken is weggelaten. Onverkorte URL&#39;s worden op meerdere regels weergegeven, hoewel ze op één regel in het VMAP-bestand staan.
+Het VMAP-bestand dat de manifestserver verzendt als `pttrackingversion=vmap` heeft het formaat van het volgende voorbeeld, dat uit een typisch blok VMAP komt. Het is ingekort om onnodige herhalingen te voorkomen, zodat de structuur duidelijker wordt. Een ovaal (drie punten, gescheiden door spaties) geeft aan dat informatie binnen sommige URL&#39;s en tussen sommige codeblokken is weggelaten. Onverkorte URL&#39;s worden op meerdere regels weergegeven, hoewel ze op één regel in het VMAP-bestand staan.
 
 ```xml
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?> 

@@ -1,13 +1,13 @@
 ---
 title: Amazon FireTV SSO - Handleiding voor de start van de programma's
 description: Amazon FireTV SSO - Handleiding voor de start van de programma's
-source-git-commit: 326f97d058646795cab5d062fa5b980235f7da37
+exl-id: cf9ba614-57ad-46c3-b154-34204b38742d
+source-git-commit: bfc3ba55c99daba561255760baf273b6538a3c6e
 workflow-type: tm+mt
 source-wordcount: '792'
 ht-degree: 0%
 
 ---
-
 
 # Amazon FireTV SSO - Handleiding voor de start van de programma&#39;s {#amazon-firetv-sso---programmer-kick-off-guide}
 

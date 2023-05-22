@@ -2,16 +2,15 @@
 title: Firewall-regels
 description: Firewall-regels
 copied-description: true
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: 5f560782-7b09-411a-8791-8d227bc4049b
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '365'
 ht-degree: 0%
 
 ---
 
-
-# Firewallregels {#firewall-rules}
+# Firewall-regels {#firewall-rules}
 
 ## Binnenkomende URL&#39;s {#section-F111526A9DB844CBBF21A3CAE5F50880}
 
@@ -78,11 +77,11 @@ Vorm uw buitenfirewall zodat het slechts URLs voor toepassingsfunctionaliteit bl
   </tr> 
   <tr rowsep="1" class="- topic/row "> 
    <td colname="1" class="- topic/entry "><span class="filepath"> /flashaccess/headerconversion/v1/*</span> </td> 
-   <td colname="2" class="- topic/entry "> <p class="- topic/p ">URL's die door de client kunnen worden gebruikt om FMRMS 1.x DRM-metagegevens om te zetten in Adobe Access DRM-metagegevens. </p> <p class="- topic/p ">Opmerking: <i class="+ topic/ph hi-d/i ">Deze URL moet SSL (HTTPS)</i> gebruiken. </p> </td> 
+   <td colname="2" class="- topic/entry "> <p class="- topic/p ">URL's die door de client kunnen worden gebruikt om FMRMS 1.x DRM-metagegevens om te zetten in Adobe Access DRM-metagegevens. </p> <p class="- topic/p ">Opmerking: <i class="+ topic/ph hi-d/i ">Deze URL moet SSL (HTTPS) gebruiken</i>. </p> </td> 
   </tr> 
   <tr rowsep="0" class="- topic/row "> 
    <td colname="1" class="- topic/entry "><span class="filepath"> /edcws/services/urn:EDCLicenseService/*</span> </td> 
-   <td colname="2" class="- topic/entry "> <p class="- topic/p ">URL van webservice LiveCycle Rights Management ES. Als inhoud is gepubliceerd met een eerdere versie van FMRMS, staat deze URL toe dat oudere clients verbinding maken met de server en worden gevraagd een upgrade uit te voeren naar Adobe Access. </p> <p class="- topic/p ">Opmerking: <i class="+ topic/ph hi-d/i ">Deze URL moet SSL (HTTPS)</i> gebruiken. </p> </td> 
+   <td colname="2" class="- topic/entry "> <p class="- topic/p ">URL van webservice LiveCycle Rights Management ES. Als inhoud is gepubliceerd met een eerdere versie van FMRMS, staat deze URL toe dat oudere clients verbinding maken met de server en worden gevraagd een upgrade uit te voeren naar Adobe Access. </p> <p class="- topic/p ">Opmerking: <i class="+ topic/ph hi-d/i ">Deze URL moet SSL (HTTPS) gebruiken</i>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="1" class="- topic/entry "><span class="filepath"> /flashaccess/return/v5</span> </td> 

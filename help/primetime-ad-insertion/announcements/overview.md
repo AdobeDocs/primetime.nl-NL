@@ -1,14 +1,13 @@
 ---
 title: Adobe Primetime Ad Insertion-aankondigingen
 description: Aankondigingen over recente persberichten en ander verwant nieuws over Primetime Ad Insertion
-translation-type: tm+mt
-source-git-commit: d8fde0d03bea85b3fefcfa5dcbfddee76b17de03
+exl-id: 7d85d3a2-6786-47bd-8d45-ec162aea0ab3
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '307'
 ht-degree: 0%
 
 ---
-
 
 # Aankondigingen Ad Insertion in primetime
 

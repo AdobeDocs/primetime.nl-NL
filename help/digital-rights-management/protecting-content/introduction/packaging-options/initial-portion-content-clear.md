@@ -2,16 +2,15 @@
 title: Oorspronkelijk gedeelte van inhoud in het vak Wissen
 description: Oorspronkelijk gedeelte van inhoud in het vak Wissen
 copied-description: true
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: f291e0f5-ce26-41c4-b468-36b111cb7a1c
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '113'
 ht-degree: 0%
 
 ---
 
-
-# Oorspronkelijk gedeelte van inhoud in de clear{#initial-portion-of-content-in-the-clear}
+# Oorspronkelijk gedeelte van inhoud in het vak Wissen{#initial-portion-of-content-in-the-clear}
 
 Deze optionele parameter geeft de hoeveelheid tijd (in seconden) vanaf het begin van de inhoud op die niet gecodeerd zal blijven.
 

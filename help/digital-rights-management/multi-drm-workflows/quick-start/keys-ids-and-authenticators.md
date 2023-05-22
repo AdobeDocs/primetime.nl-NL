@@ -1,14 +1,13 @@
 ---
 description: Om DRM uit te voeren hebt u bepaalde certs en sleutels, met inbegrip van een sleutel van de inhoudsencryptie of CEK nodig om uw inhoud te coderen, een klantenauthenticator voor het beschermen van mededelingen met de servers ExpressPlay, en CEKSIDs voor het identificeren van uw sleutels van de inhoudsencryptie zoals opgeslagen in een zeer belangrijk beheerssysteem.
 title: Toetsen, id's en Authenticators
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: b769192d-92ad-4b93-84dd-80b182fc6c43
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '764'
 ht-degree: 0%
 
 ---
-
 
 # Toetsen, id&#39;s en Authenticators{#keys-ids-and-authenticators}
 
@@ -37,13 +36,13 @@ of (voor de Adobe Offline Packager):
    ```
 
 1. Open Kladblok+ en plak in de 16 byte hexreeks.
-1. Zet deze waarde van hexadecimale ASCII door Base64-coderend de waarde om tot uw [!DNL keyfile.bin] te leiden. (Dit wordt behandeld in [](../../multi-drm-workflows/quick-start/package-your-content.md).)
+1. Zet deze waarde van hexuitdraai ASCII door Base64-coderend de waarde om uw tot stand te brengen [!DNL keyfile.bin]. (Dit valt onder [](../../multi-drm-workflows/quick-start/package-your-content.md).)
 
 **Zelfde sleutel, andere naam?** - Ja, u kunt de CEK die door andere namen wordt bedoeld op andere plaatsen zien, zoals:
 
-* ** [!DNL [somefile].bin]* - De Adobe Offline Packager verwijst naar de CEK als [!DNL [somefile].bin]; bijv. * [!DNL Keyfile.bin]* - Dit is de CEK die door de Adobe Offline Packager wordt gebruikt, in de vorm van een bestand op de computer die u gebruikt voor het verpakken van inhoud.
+* ** [!DNL [somfiel].bin]** - De Adobe Offline Packager verwijst naar CEK als [!DNL [somfiel].bin]; bijv. * [!DNL Keyfile.bin]* - Dit is de CEK die door de Adobe Offline Packager wordt gebruikt, in de vorm van een bestand op de computer die u gebruikt voor het verpakken van inhoud.
 
-   U &quot;Base64&quot;uw willekeurige CEK hexkoord, en sparen het als dossier (b.v., [!DNL keyfile.bin]), gewoonlijk gevestigd in [!DNL creds] folder onder [!DNL offlinepkgr/]. In uw Packager config- dossier (b.v., zou u het [!DNL widevine.xml] kunnen roepen als u voor Widevine DRM) verpakt, verwijst u naar uw CEK in uw config- dossier als dit:
+   U &quot;Base64&quot;uw willekeurige CEK hexreeks, en bewaart het als dossier (b.v., [!DNL keyfile.bin]), gewoonlijk in [!DNL creds] directory onder [!DNL offlinepkgr/]. In uw Packager config- dossier (b.v., zou u het kunnen roepen [!DNL widevine.xml] als u voor Widevine DRM) verpakt, verwijst u naar uw CEK in uw configdossier als dit:
 
    ```
    <config>  
@@ -54,24 +53,24 @@ of (voor de Adobe Offline Packager):
    </config> 
    ```
 
-* **Inhoudssleutel**  - U kunt CEK ook zien die als Inhoudssleutel in vraag (  `&contentKey=`), in foutenmeldingen, in steunkaartjes, en in andere documentatie wordt bedoeld.
+* **Inhoudssleutel** - U kunt CEK ook zien die als Inhoudssleutel in vraag wordt bedoeld ( `&contentKey=`), in foutberichten, in ondersteuningstickets en in andere documentatie.
 
 **Wanneer/waar gebruik ik het?**
 
 1. Ten eerste moet de CEK beschikbaar zijn op de computer waarop u het pakket maakt. Uw verpakkingsprogramma gebruikt uw CEK om uw inhoud te coderen.
-1. Ten tweede, moet u CEK in één of andere vorm van Zeer belangrijk Systeem van het Beheer (KMS) opslaan, met elke CEK verbonden aan zijn eigen [Sleutel van de Encryptie van de Inhoud](../../multi-drm-workflows/glossary/glossary-cek.md). U kunt uw eigen KMS maken of [Key Storage](https://www.expressplay.com/developer/key-storage/) van ExpressPlay gebruiken. Hierdoor kan uw winkel (uw machtigingsserver, die de klantrechten en de voorziening voor licentietokken verwerkt) een licentietoken voor de klant ophalen van het KMS met behulp van een sleutel-id in plaats van de daadwerkelijke CEK (dit is veel veiliger).
+1. Ten tweede, moet u CEK in één of andere vorm van Zeer belangrijk Systeem van het Beheer (KMS) opslaan, met elke CEK verbonden aan zijn [Inhoudscoderingssleutel](../../multi-drm-workflows/glossary/glossary-cek.md). U kunt uw eigen KMS maken of [Belangrijke opslag van ExpressPlay](https://www.expressplay.com/developer/key-storage/). Hierdoor kan uw winkel (uw machtigingsserver, die de rechten van klanten en de voorziening van de Token van de Vergunning behandelt) een licentietoken voor de klant van KMS trekken gebruikend zeer belangrijke identiteitskaart in plaats van daadwerkelijke CEK (dit is veel veiliger).
 
-## Inhoudsversleutelingssleutel voor opslag-id {#section_0C94F54970E04BDB82DE3C8A33A62CD4}
+## Opslag-id voor coderingssleutel voor inhoud {#section_0C94F54970E04BDB82DE3C8A33A62CD4}
 
 Met de CEKSID (Content Encryption Key Storage ID) wordt de opgeslagen sleutel geïdentificeerd waarmee een gecodeerd stuk video-inhoud wordt gedecodeerd.
 
 **Wat is CEKSID?** - CEKSID is het unieke herkenningsteken voor een Sleutel van de Encryptie van de Inhoud (CEK). De CEK is noodzakelijk om de beschermde inhoud te ontgrendelen; CEKSID is noodzakelijk om tot CEK toegang te hebben van waar het wordt opgeslagen. Wanneer u uw opstelling test, kunt u willekeurige CEKSID en CEK in de tijd van het Pakket verstrekken, zolang u de zelfde informatie voor de vergunning en playbackcontroles gebruikt.
 
-**Waar komt het vandaan?** - U (de inhoudsleverancier) kunt deze identiteitskaart zelf tot stand brengen, of u kunt de dienst zoals het Belangrijkste  [Opslag van ](https://www.expressplay.com/developer/key-storage/) ExpressPlay gebruiken CEKSIDs voor elk van uw CEKs (en beide opslaan). Verder, kunt u willekeurig geproduceerde CEKSIDs gebruiken, of een regeling aanwenden die uw bedrijfsmodel aanpast. U kunt bijvoorbeeld CEKSID&#39;s gebruiken die betekenisvolle tekenreeksen zijn in plaats van willekeurige hexadecimale tekenreeksen (de id-naam kan bestaan uit onderwerpen, datums, tijden, enz.)
+**Waar komt het vandaan?** - U (de inhoudprovider) kunt deze id zelf maken, of u kunt een service zoals [Belangrijke opslag van ExpressPlay](https://www.expressplay.com/developer/key-storage/) om CEKSIDs voor elk van uw CEKs (te produceren en beide op te slaan). Verder, kunt u willekeurig geproduceerde CEKSIDs gebruiken, of een regeling aanwenden die uw bedrijfsmodel aanpast. U kunt bijvoorbeeld CEKSID&#39;s gebruiken die betekenisvolle tekenreeksen zijn in plaats van willekeurige hexadecimale tekenreeksen (de id-naam kan bestaan uit onderwerpen, datums, tijden, enz.)
 
-**Wat anders wordt CEKSID genoemd?** - Het wordt soms ook wel een  *inhoud-id* genoemd.
+**Wat anders wordt CEKSID genoemd?** - Het wordt soms aangeduid als een *Inhoud-id*.
 
-## Verificatie van klant {#section_F9DDBAA54C544D82A42320CBEEB6CD74}
+## Verificator van klant {#section_F9DDBAA54C544D82A42320CBEEB6CD74}
 
 De authenticator van de klant is een sleutel die u van ExpressPlay krijgt wanneer u daar een beheerdersaccount instelt. De authenticator wordt gebruikt in communicatie met ExpressPlay-servers.
 
@@ -80,4 +79,4 @@ De authenticator van de klant is een sleutel die u van ExpressPlay krijgt wannee
 
 ![](assets/expressplay_admin_dashboard-web.png)
 
-**Wanneer gebruik ik dit?** - U neemt dit op in alle aanroepen naar ExpressPlay-servers, bijvoorbeeld licentieservers,  [ExpressPlay Key Storage](https://www.expressplay.com/developer/key-storage/) en andere aanroepen.
+**Wanneer gebruik ik dit?** - U neemt dit op in alle aanroepen naar ExpressPlay-servers, bijvoorbeeld licentieservers, [ExpressPlay-sleutelopslag](https://www.expressplay.com/developer/key-storage/), en andere vraag.

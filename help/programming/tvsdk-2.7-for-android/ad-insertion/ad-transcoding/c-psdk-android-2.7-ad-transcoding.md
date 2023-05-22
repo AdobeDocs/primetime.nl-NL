@@ -1,14 +1,13 @@
 ---
 description: Sommige advertenties van derden (of creatieve objecten) kunnen niet in de HLS-inhoudsstroom (HTTP Live Streaming) worden geplaatst omdat hun video-indeling niet compatibel is met HLS. Primetime en invoeging en TVSDK kunnen desgewenst proberen incompatibele advertenties om te zetten in compatibele M3U8-video's.
 title: Niet-compatibele advertenties opnieuw verpakken met gebruik van de Adobe Creative Repackaging Service (CRS)
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: b6fb2846-64b6-4db7-a6a9-f85365780775
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '324'
 ht-degree: 0%
 
 ---
-
 
 # Niet-compatibele advertenties opnieuw verpakken met gebruik van de Adobe Creative Repackaging Service (CRS) {#repackage-incompatible-ads-using-adobe-creative-repackaging-service-crs}
 
@@ -24,16 +23,13 @@ Neem contact op met uw Adobe als u deze optionele CRS-functie wilt activeren.
 >
 >Voor klanten van versie 3.0 van CRS (en vroeger), die met Versie 3.1 beginnen van CRS hebben de volgende veranderingen zowel veiligheid als prestaties verbeterd:
 >
->* CRS 3.1 gaat verder met `https:` als de inhoud die wordt herverpakt `https:` gebruikt. Hierdoor wordt het potentieel van sommige spelers om onveilige inhoud te presenteren, beperkt.
-   >
-   >
-* CRS 3.1 minimaliseert zeer netwerkvraag, verbeterend videostarttijd.
-
+>* CRS 3.1 gaat verder met `https:` als de opnieuw verpakte inhoud wordt gebruikt `https:`. Hierdoor wordt het potentieel van sommige spelers om onveilige inhoud te presenteren, beperkt.
+>
+>* CRS 3.1 minimaliseert zeer netwerkvraag, verbeterend videostarttijd.
 >
 
 
-
-Zie [Creative Packaging Service (CRS)](https://helpx.adobe.com/content/dam/help/en/primetime/drm/drm_certificate_enrollment.pdf) voor meer informatie over CRS.
+Voor meer informatie over CRS, zie [Creative Packaging Service (CRS)](https://helpx.adobe.com/content/dam/help/en/primetime/drm/drm_certificate_enrollment.pdf).
 
 ## CRS inschakelen in TVSDK-toepassingen{#enable-crs-in-tvsdk-applications}
 

@@ -1,16 +1,15 @@
 ---
 description: Als u TVSDK het doeltreffendst wilt gebruiken, moet u bepaalde details van de werking van de SDK in overweging nemen en bepaalde best practices volgen.
 title: Overwegingen en beste praktijken
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: d10532a5-bf96-4233-86f1-b135f6e1c0f5
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '387'
 ht-degree: 0%
 
 ---
 
-
-# Overwegingen en aanbevolen procedures{#considerations-and-best-practices}
+# Overwegingen en beste praktijken{#considerations-and-best-practices}
 
 Als u TVSDK het doeltreffendst wilt gebruiken, moet u bepaalde details van de werking van de SDK in overweging nemen en bepaalde best practices volgen.
 
@@ -18,7 +17,7 @@ Als u TVSDK het doeltreffendst wilt gebruiken, moet u bepaalde details van de we
 
 Houd rekening met de volgende informatie wanneer u TVSDK gebruikt:
 
-* Adobe Primetime werkt niet op iOS-simulators.
+* Adobe Primetime werkt niet met iOS-simulatoren.
 
    U moet echte apparaten gebruiken voor het testen.
 * Afspelen wordt alleen ondersteund voor HLS-inhoud (HTTP Live Streaming).
@@ -36,17 +35,16 @@ Houd rekening met de volgende informatie wanneer u TVSDK gebruikt:
 
       De waarde van de userAgent-tekenreeks staat standaard voor wat het besturingssysteem toewijst.
 
-## Aanbevolen werkwijzen {#section_tvsdk_best_practices}
+## Aanbevolen procedures {#section_tvsdk_best_practices}
 
 Hier volgen de aanbevolen procedures voor TVSDK:
 
 * Gebruik HLS versie 3.0 of hoger voor programma-inhoud.
-* Gebruik het hulpprogramma MediaStreamValidator van Apple om VOD-streams te valideren.
-* De `PTSDKConfig` klasse verstrekt methodes om SSL op verzoeken af te dwingen die aan de servers van de Analytics van Primetime en van de Beslissing, DRM, en Video worden gemaakt.
+* Gebruik het Apple-hulpprogramma MediaStreamValidator om VOD-streams te valideren.
+* De `PTSDKConfig` Deze klasse biedt methoden om SSL af te dwingen voor aanvragen die zijn ingediend bij Primetime- en beslissingsservers, DRM- en Video Analytics-servers.
 
-   Zie de methoden `forceHTTPS` en `isForcingHTTPS` in deze klasse voor meer informatie.
+   Zie voor meer informatie de `forceHTTPS` en `isForcingHTTPS` in deze klasse.
 
    >[!IMPORTANT]
    >
    >Aanvragen voor domeinen van derden, zoals het bijhouden van pixels, URL&#39;s voor inhoud en advertentie, en vergelijkbare aanvragen worden niet gewijzigd. Het is de verantwoordelijkheid van de inhoudsproviders en -servers om URL&#39;s te leveren die via HTTPS worden ondersteund.
-

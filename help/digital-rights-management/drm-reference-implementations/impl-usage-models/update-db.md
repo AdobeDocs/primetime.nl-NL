@@ -2,22 +2,21 @@
 title: De referentieimplementatiedatabase bijwerken
 description: De referentieimplementatiedatabase bijwerken
 copied-description: true
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: b337bf9c-7add-47b8-9576-db7fa067c51d
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '122'
 ht-degree: 0%
 
 ---
 
-
-# De referentie-implementatie-DB{#update-the-reference-implementation-db} bijwerken
+# De referentieimplementatiedatabase bijwerken{#update-the-reference-implementation-db}
 
 Om gebruiksmodellen te controleren waaronder een vergunning aan een aangewezen gebruiker wordt verleend, voeg ingangen aan het gegevensbestand van de verwijzings implementatie toe.
 
-1. Voeg items toe aan de tabel `Customer`.
+1. Voeg vermeldingen toe aan de `Customer` tabel.
 
-   De tabel `Customer` bevat gebruikersnamen en wachtwoorden om gebruikers te verifiëren. Ook wordt aangegeven of een gebruiker een abonnement heeft (een licentie die is uitgegeven onder het gebruiksmodel *Subscription*).
+   De `Customer` de lijst omvat gebruikersnamen en wachtwoorden om gebruikers voor authentiek te verklaren. Het geeft ook aan of een gebruiker een abonnement heeft (een licentie die is uitgegeven onder de *Abonnement* gebruiksmodel).
 
 1. Bied een gebruiker toegang via de gebruiksmodellen Downloaden naar het eigen systeem of Video op aanvraag.
 
@@ -26,4 +25,4 @@ Om gebruiksmodellen te controleren waaronder een vergunning aan een aangewezen g
    * Het gebruiksmodel
    * Elk segment met inhoud waartoe een gebruiker toegang heeft
 
-Voor meer informatie over hoe te om elke lijst te bevolken, zie [!DNL PopulateSampleDB.sql] manuscript (inbegrepen op uw Dvd van Primetime DRM in [!DNL Reference Implementation/Server/Reference Implementation Server/dbscript/] folder).
+Voor meer informatie over hoe te om elke lijst te bevolken, zie [!DNL PopulateSampleDB.sql] script (opgenomen op uw Primetime DRM-dvd in het dialoogvenster [!DNL Reference Implementation/Server/Reference Implementation Server/dbscript/] directory).

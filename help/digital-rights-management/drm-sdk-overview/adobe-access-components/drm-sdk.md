@@ -1,14 +1,13 @@
 ---
 description: De belangrijkste componenten van Primetime DRM bestaan uit een Java SDK en de Flash Player- en Adobe AIR-clientruntimeomgevingen.
 title: Java SDK, Flash Player en Adobe AIR-client
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: 5422d282-da9c-4810-a782-3c3af5fdeb3f
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '433'
 ht-degree: 0%
 
 ---
-
 
 # Adobe Primetime DRM SDK {#section_522E57DFEEFF4794978FF2D366B83690}
 
@@ -16,7 +15,7 @@ Primetime DRM wordt geleverd als een Java SDK die de bouwstenen verstrekt waarva
 
 De Java API&#39;s in de SDK worden in de volgende subsecties beschreven.
 
-## Java API&#39;s voor het beheer van apparaatgroepsdomeinen{#java-apis-for-managing-device-group-domains}
+## Java API&#39;s voor het beheer van apparaatgroepdomeinen{#java-apis-for-managing-device-group-domains}
 
 Deze APIs wordt gebruikt om de server toe te staan om cliëntverzoeken te behandelen om zich bij te sluiten van en het verlaten van de domeinen van de apparatengroep.
 
@@ -48,7 +47,7 @@ Deze API&#39;s worden gebruikt wanneer een client een licentie aanvraagt bij de 
 
 * Ondersteuning voor Adobe AIR versie 1.5-clients en -inhoud
 
-   Met het oog op achterwaartse compatibiliteit heeft de SDK API&#39;s voor het afhandelen van aanvragen van AIR-toepassingen die zijn gemaakt voor gebruik met AIR versie 1.5 en eerdere clients en beveiligde inhoud.
+   Met het oog op achterwaartse compatibiliteit heeft de SDK API&#39;s om aanvragen van AIR-toepassingen af te handelen die zijn gemaakt voor gebruik met AIR versie 1.5 en eerdere clients en beveiligde inhoud.
 
 ## Referentie-implementatie {#reference-implementation}
 

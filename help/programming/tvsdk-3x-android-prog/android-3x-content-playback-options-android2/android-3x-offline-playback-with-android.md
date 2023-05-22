@@ -1,14 +1,13 @@
 ---
-description: 'Er zijn nieuwe API''s geïntroduceerd die TVSDK de instructie geven de status van de netwerkconnectiviteit te negeren tijdens het downloaden van manifests. '
+description: Er zijn nieuwe API's geïntroduceerd die TVSDK de instructie geven de status van de netwerkconnectiviteit te negeren tijdens het downloaden van manifests.
 title: Offline afspelen met Android
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: 9ac50d3e-5839-4eb9-8811-efde56cfe375
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '89'
 ht-degree: 0%
 
 ---
-
 
 # Offline afspelen met Android {#offline-playback-with-android}
 
@@ -21,7 +20,7 @@ boolean NetworkConfiguration::getOfflinePlayback()
 
 U kunt deze instelling inschakelen en de netwerkconnectiviteit negeren.
 
-Stel `com.adobe.mediacore.system.NetworkConfiguration::setOfflinePlayback` in op true. De standaardwaarde voor een Booleaanse waarde is false.
+Set `com.adobe.mediacore.system.NetworkConfiguration::setOfflinePlayback` naar waar. De standaardwaarde voor een Booleaanse waarde is false.
 
 ```
 // example of NetworkConfiguration

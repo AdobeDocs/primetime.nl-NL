@@ -2,14 +2,13 @@
 title: Netwerklaagbeveiliging
 description: Netwerklaagbeveiliging
 copied-description: true
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: 70c9917d-32bc-43f6-add3-62883f98ac5e
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '265'
 ht-degree: 0%
 
 ---
-
 
 # Netwerklaagbeveiliging{#network-layer-security}
 
@@ -44,4 +43,3 @@ Deze lijst beschrijft gemeenschappelijke technieken die de kwetsbaarheid van de 
   </tr> 
  </tbody> 
 </table>
-

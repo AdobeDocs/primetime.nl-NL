@@ -2,24 +2,23 @@
 title: Achtergrondaudio inschakelen
 description: Achtergrondaudio inschakelen
 copied-description: true
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: 5bb72233-27d0-4968-b32c-c8d5ac5ac8c8
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '63'
 ht-degree: 0%
 
 ---
 
+# Achtergrondaudio inschakelen {#enable-background-audio}
 
-# Achtergrondaudio {#enable-background-audio} inschakelen
-
-Om het afspelen van audio in te schakelen wanneer de toepassing op de achtergrond wordt uitgevoerd, moet de toepassing `enableAudioPlaybackInBackground` API van MediaPlayer aanroepen met true als argument wanneer de speler zich in de status PREPARED bevindt.
+Om het afspelen van audio in te schakelen wanneer de toepassing op de achtergrond wordt uitgevoerd, moet de toepassing `enableAudioPlaybackInBackground` API van MediaPlayer met true als argument wanneer de speler zich in de status PREPARED bevindt.
 
 ```
 _mediaPlayer.enableAudioPlaybackInBackground(true);
 ```
 
-De app moet het afspelen pauzeren wanneer deze de audio-focus verliest tijdens gebeurtenissen zoals het reageren op de telefoon, enz. Het volgende codefragment toont aan hoe te om `OnAudioFocusChangeListener` uit te voeren:
+De app moet het afspelen pauzeren wanneer deze de audio-focus verliest tijdens gebeurtenissen zoals het reageren op de telefoon, enz. Het volgende codefragment toont aan hoe te om uit te voeren `OnAudioFocusChangeListener`:
 
 ```
 /** 

@@ -1,13 +1,13 @@
 ---
 title: Uw omgeving instellen en testen in een proefversie
 description: Uw omgeving instellen en testen in een proefversie
-source-git-commit: 326f97d058646795cab5d062fa5b980235f7da37
+exl-id: f822c0a1-045a-401f-a44f-742ed25bfcdc
+source-git-commit: bfc3ba55c99daba561255760baf273b6538a3c6e
 workflow-type: tm+mt
 source-wordcount: '473'
 ht-degree: 0%
 
 ---
-
 
 # Uw omgeving instellen en testen in een proefversie{#setting-up-your-environment-and-testing-in-prequal}
 
@@ -96,4 +96,3 @@ Stap 1 en 2 zetten de testomgeving op een van de testmachines in, stap 3 is een 
 * Als u dieper wilt gaan in het testen van de authentificatie van Adobe Primetime, adviseren wij u gebruiken [API-testsite](http://entitlement-prequal.auth.adobe.com/apitest/api.html).
 
 Meer informatie vindt u op de API-testsite op [Hoe te om de stromen van de Vergunning van de Authentificatie te testen gebruikend Adobe API testplaats](/help/authentication/test-authn-authz-flows-using-adobes-api-test-site.md).
-

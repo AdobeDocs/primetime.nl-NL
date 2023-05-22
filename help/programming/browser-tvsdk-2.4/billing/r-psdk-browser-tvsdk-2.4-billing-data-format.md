@@ -1,14 +1,13 @@
 ---
 description: Browser TVSDK verzendt factuurmetriek naar Adobe in XML-indeling.
 title: Factureringsgegevens verzenden
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: f6ed72be-a5a8-48f2-b518-76c710300ea7
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '61'
 ht-degree: 0%
 
 ---
-
 
 # Factureringsgegevens verzenden{#transmit-billing-metrics}
 
@@ -40,4 +39,4 @@ Als u een netwerk vangt hulpmiddel gebruikt om de Browser van statistieken te co
 </request>
 ```
 
-De booleaanse eigenschappen `drmProtected`, `adsEnabled` en `midrollEnabled` worden alleen weergegeven als ze waar zijn.
+Booleaanse eigenschappen `drmProtected`, `adsEnabled`, en `midrollEnabled` worden alleen weergegeven als ze waar zijn.

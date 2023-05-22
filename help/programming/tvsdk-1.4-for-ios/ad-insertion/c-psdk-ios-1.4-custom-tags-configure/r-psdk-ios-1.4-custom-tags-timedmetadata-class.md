@@ -1,14 +1,13 @@
 ---
 description: Wanneer TVSDK een geabonneerde tag in de afspeellijst/het manifest detecteert, probeert de speler de tag automatisch te verwerken en beschikbaar te maken in de vorm van een object PTTimedMetadata.
 title: Timed metadata-klasse
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: b619b019-cb6d-4c31-a7e2-7ebe2f44a4b0
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '326'
 ht-degree: 0%
 
 ---
-
 
 # Timed metadata-klasse{#timed-metadata-class}
 
@@ -33,7 +32,7 @@ De klasse biedt de volgende elementen:
   <tr> 
    <td colname="col1"><span class="codeph"> name</span> </td> 
    <td colname="col02"><span class="codeph"> NSString</span></td> 
-   <td colname="col2"> De naam van de getimede metagegevens. Wanneer het type <span class="codeph"> TAG</span> is, vertegenwoordigt de waarde de naam van het actiepunt/de tag. Als het type <span class="codeph"> ID3</span> is, is het ongeldig. </td> 
+   <td colname="col2"> De naam van de getimede metagegevens. Als het type <span class="codeph"> TAG</span>, vertegenwoordigt de waarde de naam van het actiepunt/de tag. Als het type <span class="codeph"> ID3</span>, is deze null. </td> 
   </tr> 
   <tr> 
    <td colname="col1"><span class="codeph"> tijd</span> </td> 
@@ -77,4 +76,3 @@ Houd rekening met het volgende:
 | `@property (nonatomic, assign) PTTimedMetadataType type` | Retourneert het type van de getimede metagegevens. |
 | `@property (nonatomic, retain) NSString *metadataId` | Retourneert de id die uit de kenmerken cue/tag is geëxtraheerd. Anders wordt een unieke willekeurige waarde opgegeven. |
 | `@property (nonatomic, retain) NSString *name` | Hiermee wordt de naam van de actielijn geretourneerd. Dit is doorgaans de naam van de HLS-tag. |
-

@@ -1,13 +1,13 @@
 ---
 title: Verificatie starten
 description: Verificatie starten
-source-git-commit: 326f97d058646795cab5d062fa5b980235f7da37
+exl-id: 55dddd29-68d6-4aae-8744-307fea285e29
+source-git-commit: bfc3ba55c99daba561255760baf273b6538a3c6e
 workflow-type: tm+mt
 source-wordcount: '290'
 ht-degree: 0%
 
 ---
-
 
 # Verificatie starten {#initiate-authentication}
 
@@ -95,5 +95,3 @@ Hiermee wordt het verificatieproces gestart door een MVPD-selectiegebeurtenis op
 * De `redirect_url` parameter moet de laatste zijn in volgorde
 
 * De waarde van de `redirect_url` parameter moet URL-gecodeerd zijn
-
-

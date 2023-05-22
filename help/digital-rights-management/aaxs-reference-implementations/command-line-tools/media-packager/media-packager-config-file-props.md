@@ -2,18 +2,17 @@
 title: Eigenschappen van configuratiebestand
 description: Eigenschappen van configuratiebestand
 copied-description: true
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: eec6a53d-d831-4ec4-a90c-8b3e7997f330
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '630'
 ht-degree: 0%
 
 ---
 
-
 # Eigenschappen van configuratiebestand {#configuration-file-properties}
 
-Voordat u Media Packager uitvoert, geeft u waarden op voor de eigenschappen van Media Packager. In het configuratiebestand worden de volgende eigenschappen opgegeven. Voor eigenschapnamen die* n* bevatten, vertegenwoordigt *n* een geheel getal dat begint met 1 en toeneemt voor elke instantie van de eigenschap.
+Voordat u Media Packager uitvoert, geeft u waarden op voor de eigenschappen van Media Packager. In het configuratiebestand worden de volgende eigenschappen opgegeven. Voor eigenschapsnamen die* n* bevatten, *n* vertegenwoordigt een geheel dat met 1 begint en voor elke instantie van het bezit stijgt.
 
 <table frame="all" colsep="1" rowsep="1" class="+ topic/table adobe-d/table " id="table_dx4_mpy_n4"> 
  <thead class="- topic/thead "> 
@@ -33,11 +32,11 @@ Voordat u Media Packager uitvoert, geeft u waarden op voor de eigenschappen van 
   </tr> 
   <tr rowsep="1" class="- topic/row "> 
    <td colname="1" class="- topic/entry "><span class="codeph"> encrypt.contents.script</span> </td> 
-   <td colname="2" class="- topic/entry ">Geeft aan of scriptgegevens in FLV's moeten worden gecodeerd. <i class="+ topic/ph hi-d/i ">Gegevenstags </i> onMetaData en  <i class="+ topic/ph hi-d/i "></i> onXMPscript worden nooit gecodeerd, zelfs niet als deze optie is ingeschakeld. </td> 
+   <td colname="2" class="- topic/entry ">Geeft aan of scriptgegevens in FLV's moeten worden gecodeerd. <i class="+ topic/ph hi-d/i ">onMetaData</i> en <i class="+ topic/ph hi-d/i ">onXMP</i> scriptgegevenstags worden nooit gecodeerd, zelfs niet als deze optie is ingeschakeld. </td> 
   </tr> 
   <tr rowsep="1" class="- topic/row "> 
    <td colname="1" class="- topic/entry "><span class="codeph"> encrypt.contents.video.level</span> </td> 
-   <td colname="2" class="- topic/entry "> <p class="- topic/p ">Geeft het niveau van de videoversleuteling aan. De waarde high wordt gebruikt om alle video-inhoud te coderen, terwijl de waarden medium en low worden gebruikt om gedeelten van de video-inhoud te coderen voor F4V-bestanden die H.264-inhoud bevatten. </p> <p class="- topic/p ">value = <span class="codeph"> high | medium | laag</span> </p> </td> 
+   <td colname="2" class="- topic/entry "> <p class="- topic/p ">Geeft het niveau van de videoversleuteling aan. De waarde high wordt gebruikt om alle video-inhoud te coderen, terwijl de waarden medium en low worden gebruikt om gedeelten van de video-inhoud te coderen voor F4V-bestanden die H.264-inhoud bevatten. </p> <p class="- topic/p ">value = <span class="codeph"> hoog | medium | laag</span> </p> </td> 
   </tr> 
   <tr rowsep="1" class="- topic/row "> 
    <td colname="1" class="- topic/entry "><span class="codeph"> encrypt.contents.secondsUnencrypted</span> </td> 
@@ -45,11 +44,11 @@ Voordat u Media Packager uitvoert, geeft u waarden op voor de eigenschappen van 
   </tr> 
   <tr rowsep="1" class="- topic/row "> 
    <td colname="1" class="- topic/entry "><span class="codeph"> encrypt.keys.asymmetrisch.certfile</span> </td> 
-   <td colname="2" class="- topic/entry "> <p class="- topic/p ">Het certificaatbestand van de licentieserver waarmee de sleutel wordt versleuteld. Met de eigenschap <span class="codeph"> encrypt.keys.asymmetrisch.certfile</span> wordt een bestand opgegeven dat alleen het certificaat bevat (PEM- of DER-indeling is acceptabel). </p> </td> 
+   <td colname="2" class="- topic/entry "> <p class="- topic/p ">Het certificaatbestand van de licentieserver waarmee de sleutel wordt versleuteld. De <span class="codeph"> encrypt.keys.asymmetrisch.certfile</span> eigenschap geeft een bestand aan dat alleen het certificaat bevat (PEM- of DER-indeling is acceptabel). </p> </td> 
   </tr> 
   <tr rowsep="1" class="- topic/row "> 
    <td colname="1" class="- topic/entry "><span class="+ topic/ph pr-d/codeph codeph">encrypt.keys.policyFile.n</span> </td> 
-   <td colname="2" class="- topic/entry "> <p class="- topic/p ">Deze eigenschap wordt herhaaldelijk gebruikt om een lijst met beleidsregels te maken die op de inhoud moeten worden toegepast. <span class="codeph"> </span> nis een geheel getal waarvan de waarde 1 of hoger is. De client gebruikt standaard de eerste instantie. </p> </td> 
+   <td colname="2" class="- topic/entry "> <p class="- topic/p ">Deze eigenschap wordt herhaaldelijk gebruikt om een lijst met beleidsregels te maken die op de inhoud moeten worden toegepast. <span class="codeph"> n</span> is een geheel getal waarvan de waarde 1 of hoger is. De client gebruikt standaard de eerste instantie. </p> </td> 
   </tr> 
   <tr rowsep="1" class="- topic/row "> 
    <td colname="1" class="- topic/entry "><span class="codeph"> encrypt.license.serverurl</span> </td> 
@@ -57,15 +56,15 @@ Voordat u Media Packager uitvoert, geeft u waarden op voor de eigenschappen van 
   </tr> 
   <tr rowsep="1" class="- topic/row "> 
    <td colname="1" class="- topic/entry "><span class="codeph"> encrypt.license.servercert</span> </td> 
-   <td colname="2" class="- topic/entry "> <p class="- topic/p ">Het transportcertificaat voor de licentieserver. This property specifies a <span class="filepath"> .cer</span> file that contains the certificate only (either PEM or DER format is acceptable). </p> </td> 
+   <td colname="2" class="- topic/entry "> <p class="- topic/p ">Het transportcertificaat voor de licentieserver. This property specifies a <span class="filepath"> .cer</span> bestand dat alleen het certificaat bevat (PEM- of DER-indeling is acceptabel). </p> </td> 
   </tr> 
   <tr rowsep="1" class="- topic/row "> 
    <td colname="1" class="- topic/entry "><span class="codeph"> encrypt.sign.certfile</span> </td> 
-   <td colname="2" class="- topic/entry "> <p class="- topic/p ">Het PKCS12-bestand met de pakketgegevens voor het ondertekenen van inhoud. <span class="codeph"> encrypt.sign.certfile</span> zou naar een <span class="filepath"> .pfx</span> dossier moeten verwijzen die een certificaat en een privé sleutel bevatten. </p> </td> 
+   <td colname="2" class="- topic/entry "> <p class="- topic/p ">Het PKCS12-bestand met de pakketgegevens voor het ondertekenen van inhoud. De <span class="codeph"> encrypt.sign.certfile</span> verwijst naar een <span class="filepath"> .pfx</span> bestand met een certificaat en een persoonlijke sleutel. </p> </td> 
   </tr> 
   <tr rowsep="1" class="- topic/row "> 
    <td colname="1" class="- topic/entry "><span class="codeph"> encrypt.sign.certpass</span> </td> 
-   <td colname="2" class="- topic/entry "> <p class="- topic/p ">Het wachtwoord dat wordt gebruikt om het bestand te beveiligen dat wordt opgegeven door <span class="codeph"> encrypt.sign.certfile</span>. </p> </td> 
+   <td colname="2" class="- topic/entry "> <p class="- topic/p ">Het wachtwoord waarmee het bestand wordt beveiligd dat is opgegeven door <span class="codeph"> encrypt.sign.certfile</span>. </p> </td> 
   </tr> 
   <tr rowsep="1" class="- topic/row "> 
    <td colname="1" class="- topic/entry "><span class="codeph"> encrypt.license.minServerVersion</span> </td> 
@@ -73,7 +72,7 @@ Voordat u Media Packager uitvoert, geeft u waarden op voor de eigenschappen van 
   </tr> 
   <tr rowsep="1" class="- topic/row "> 
    <td colname="1" class="- topic/entry "><span class="codeph">encrypt.keys.policyFile.n.domain.transportcert</span> </td> 
-   <td colname="2" class="- topic/entry "> <p class="- topic/p ">Als een beleid <span class="+ topic/ph pr-d/codeph codeph"> encrypt.keys.policyFile.n</span> domeinregistratie met een server vereist die een verschillend vervoercertificaat gebruikt dan gespecificeerd in <span class="+ topic/ph pr-d/codeph codeph"> encrypt.license.server</span>, moet het certificaat van het domeinvervoer worden verstrekt. </p> <p class="- topic/p ">This property specifies a file that contains the certificate only (either PEM or DER format is acceptable). </p> </td> 
+   <td colname="2" class="- topic/entry "> <p class="- topic/p ">Als een beleid <span class="+ topic/ph pr-d/codeph codeph"> encrypt.keys.policyFile.n</span> domeinregistratie is vereist bij een server die een ander transportcertificaat gebruikt dan opgegeven in <span class="+ topic/ph pr-d/codeph codeph"> encrypt.license.servercert</span>, moet het domeinvervoercertificaat worden verstrekt. </p> <p class="- topic/p ">This property specifies a file that contains the certificate only (either PEM or DER format is acceptable). </p> </td> 
   </tr> 
   <tr rowsep="1" class="- topic/row "> 
    <td colname="1" class="- topic/entry "><span class="codeph"> encrypt.keys.licenseKey</span> </td> 
@@ -85,7 +84,7 @@ Voordat u Media Packager uitvoert, geeft u waarden op voor de eigenschappen van 
   </tr> 
   <tr rowsep="1" class="- topic/row "> 
    <td colname="1" class="- topic/entry "><span class="codeph">encrypt.keys.rotation.key.n</span> </td> 
-   <td colname="2" class="- topic/entry "> <p class="- topic/p ">Volgorde van geroteerde sleutels die worden gebruikt om inhoud te coderen wanneer de sleutelomwenteling wordt toegelaten. Als er geen toetsen zijn opgegeven, worden de toetsen willekeurig gegenereerd. De sleutels moeten 16 bytes in lengte zijn en als waarden van de Hexadecimale waarde worden gespecificeerd. </p> <p class="- topic/p ">Spaties tussen de hexadecimale waarden zijn optioneel. <i class="+ topic/ph hi-d/i "></i> Dit mag niet monotonisch toenemen vanaf 1. Wanneer meerdere toetsen worden opgegeven, worden de toetsen doorlopen in de aangegeven volgorde. </p> </td> 
+   <td colname="2" class="- topic/entry "> <p class="- topic/p ">Volgorde van geroteerde sleutels die worden gebruikt om inhoud te coderen wanneer de sleutelomwenteling wordt toegelaten. Als er geen toetsen zijn opgegeven, worden de toetsen willekeurig gegenereerd. De sleutels moeten 16 bytes in lengte zijn en als waarden van de Hexadecimale waarde worden gespecificeerd. </p> <p class="- topic/p ">Spaties tussen de hexadecimale waarden zijn optioneel. <i class="+ topic/ph hi-d/i ">n</i> moet monotonisch toenemen, te beginnen met 1. Wanneer meerdere toetsen worden opgegeven, worden de toetsen doorlopen in de aangegeven volgorde. </p> </td> 
   </tr> 
   <tr rowsep="1" class="- topic/row "> 
    <td colname="1" class="- topic/entry "><span class="codeph"> encrypt.keys.rotation.interval</span> </td> 
@@ -97,4 +96,3 @@ Voordat u Media Packager uitvoert, geeft u waarden op voor de eigenschappen van 
   </tr> 
  </tbody> 
 </table>
-

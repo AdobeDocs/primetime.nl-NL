@@ -2,14 +2,13 @@
 title: Referenties opslaan
 description: Referenties opslaan
 copied-description: true
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: ceb1bc19-56a0-47ce-affd-ce4ecb896c3b
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '396'
 ht-degree: 0%
 
 ---
-
 
 # Referenties opslaan{#storing-credentials}
 
@@ -21,16 +20,16 @@ U moet de privésleutels zorgvuldig bewaken om de beveiliging van uw inhoud en l
 >
 >Adobe raadt u aan een HSM te gebruiken voor maximale beveiliging.
 >
->Zie de handleiding *Adobe Primetime DRM Secure Deployment Guidelines*.
+>Zie de *Richtlijnen voor veilige implementatie van Adobe Primetime DRM* hulplijn.
 
 >[!NOTE]
 >
 >Vanaf Java 1.7, steunt de Zon Java van 64 bits voor Vensters niet meer de interfaces PKCS11 die Primetime DRM voor communicatie met apparaten HSM vereist. Als u van plan bent om HSM te gebruiken, moet u een versie met 32 bits van Java gebruiken, of JDK gebruiken die de volledige interfaces PKCS11 steunt.
 
-U kunt een persoonlijke sleutel op een HSM houden, en de Primetime DRM SDK gebruiken om in de referentie over te gaan u van HSM verkrijgt. Als u een referentie wilt gebruiken die op HSM wordt opgeslagen, moet u een leverancier JCE gebruiken die met HSM kan communiceren om een handvat aan de privé sleutel te krijgen. Vervolgens moet u de greep van de persoonlijke sleutel, de naam van de provider en het certificaat die de openbare sleutel bevat, doorgeven aan `ServerCredentialFactory.getServerCredential()`.
+U kunt een persoonlijke sleutel op een HSM houden, en de Primetime DRM SDK gebruiken om in de referentie over te gaan u van HSM verkrijgt. Als u een referentie wilt gebruiken die op HSM wordt opgeslagen, moet u een leverancier JCE gebruiken die met HSM kan communiceren om een handvat aan de privé sleutel te krijgen. Vervolgens moet u de greep van de persoonlijke sleutel, de naam van de provider en het certificaat met de openbare sleutel doorgeven aan `ServerCredentialFactory.getServerCredential()`.
 
 De SunPKCS11-provider vertegenwoordigt een voorbeeld van een JCE-provider die u kunt gebruiken om toegang te krijgen tot een persoonlijke sleutel op een HSM. Sommige HSM&#39;s worden ook opgenomen in een Java SDK die is gebundeld met een JCE-provider.
 
 Raadpleeg de documentatie bij Sun Java voor instructies over het gebruik van deze provider.
 
-PEM en DER zijn manieren om een openbare-sleutelcertificaat te coderen. PEM is een basis-64-codering en DER is een binaire codering. Certificaatbestanden gebruiken doorgaans de extensie [!DNL .cer], [!DNL .pem] of [!DNL .der]. Certificaten worden gebruikt wanneer alleen een openbare sleutel vereist is. Als voor een component alleen de openbare sleutel moet worden gebruikt, wordt u aangeraden dat onderdeel het certificaat te geven in plaats van een referentie- of PKCS12-bestand.
+PEM en DER zijn manieren om een openbare-sleutelcertificaat te coderen. PEM is een basis-64-codering en DER is een binaire codering. Certificaatbestanden gebruiken doorgaans de extensie [!DNL .cer], [!DNL .pem], of [!DNL .der]. Certificaten worden gebruikt wanneer alleen een openbare sleutel vereist is. Als voor een component alleen de openbare sleutel moet worden gebruikt, wordt u aangeraden dat onderdeel het certificaat te geven in plaats van een referentie- of PKCS12-bestand.

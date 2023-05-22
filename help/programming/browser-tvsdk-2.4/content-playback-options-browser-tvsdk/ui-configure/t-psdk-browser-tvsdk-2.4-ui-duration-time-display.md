@@ -1,21 +1,20 @@
 ---
 description: U kunt Browser TVSDK gebruiken om informatie over de media terug te winnen die u op de zoekbalk kunt tonen.
 title: De duur, de huidige tijd en de resterende tijd van de video weergeven
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: f2aa3c42-9c47-4a55-aed6-7dc5a8d0662b
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '289'
 ht-degree: 0%
 
 ---
 
-
-# Geef de duur, de huidige tijd en de resterende tijd van de video weer{#display-the-duration-current-time-and-remaining-time-of-the-video}
+# De duur, de huidige tijd en de resterende tijd van de video weergeven{#display-the-duration-current-time-and-remaining-time-of-the-video}
 
 U kunt Browser TVSDK gebruiken om informatie over de media terug te winnen die u op de zoekbalk kunt tonen.
 
 1. Wacht tot de speler zich ten minste in de staat PREPARED bevindt.
-1. Haal de huidige playhead tijd terug gebruikend het `MediaPlayer.currentTime` attribuut.
+1. De huidige tijd van de afspeelkop ophalen met de `MediaPlayer.currentTime` kenmerk.
 
    Dit kenmerk retourneert de huidige positie van de afspeelkop op de virtuele tijdlijn in milliseconden. De tijd wordt berekend ten opzichte van de opgeloste stream die meerdere instanties van alternatieve inhoud kan bevatten, zoals meerdere advertenties of ad-einden die in de hoofdstream worden gespliceerd. Voor live/lineaire streams bevindt de geretourneerde tijd zich altijd in het bereik van het afspeelvenster.
 
@@ -24,7 +23,7 @@ U kunt Browser TVSDK gebruiken om informatie over de media terug te winnen die u
    ```
 
 1. Haal het afspeelbereik van de stream op en bepaal de duur.
-   1. Gebruik de eigenschap `mediaPlayer.playbackRange` om het tijdbereik van de virtuele tijdlijn op te halen.
+   1. Gebruik de  `mediaPlayer.playbackRange` eigenschap om het tijdbereik van de virtuele tijdlijn op te halen.
 
    1. Als u de duur wilt bepalen, trekt u het begin af aan het einde van het bereik.
 
@@ -148,7 +147,7 @@ U kunt Browser TVSDK gebruiken om informatie over de media terug te winnen die u
    } 
    ```
 
-1. Luister naar `AdobePSDK.TimeChangeEvent` en werk de zoekbalk dienovereenkomstig bij.
+1. Luisteren naar `AdobePSDK.TimeChangeEvent` en werkt de zoekbalk dienovereenkomstig bij.
 
    ```js
    player.addEventListener(AdobePSDK.PSDKEventType.TIME_CHANGED, onTimeChange); 
@@ -343,4 +342,3 @@ U kunt Browser TVSDK gebruiken om informatie over de media terug te winnen die u
    
            })(); 
    ```
-

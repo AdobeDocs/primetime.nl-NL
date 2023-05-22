@@ -2,14 +2,13 @@
 description: Oplossen en laden van advertenties kan een onaanvaardbare wachttijd veroorzaken voor een gebruiker die wacht tot het afspelen is gestart. Met de functies Lazy Ad Loading en Lazy Ad Resolving kunt u deze opstartvertraging verminderen. Lazy Adv Resolving is significant veranderd in versie 3.0. In Lazy Ad die voorafgaand aan 3.0, en resolutie werd gebroken in twee stappen, die enkel pre-rollen advertenties vóór de VOORBEREIDENDE status oplossen, en midden rollen en post-rollen na de VOORBEREIDENDE status. Dit is gewijzigd en de afbrekingen van de advertentie worden nu opgelost met een opgegeven interval vóór de positie van het advertentierak.
 keywords: Lazy;Adverteren;Toevoegen, laden
 title: Just-in-Time en oplossing
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: 7ce0dcac-859b-4570-a31b-4ea1e10ccf95
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '606'
 ht-degree: 0%
 
 ---
-
 
 # Overzicht {#just-in-time-ad-resolving-overview}
 
@@ -17,17 +16,17 @@ Oplossen en laden van advertenties kan een onaanvaardbare wachttijd veroorzaken 
 
 * Eenvoudig proces voor het oplossen en laden van bestanden:
 
-   1. TVSDK downloadt manifest (playlist) en *verhelpt* alle advertenties.
-   1. TVSDK *laadt* alle advertenties en plaatst deze op de tijdlijn.
+   1. TVSDK downloadt manifest (playlist) en *oplossen* alle advertenties.
+   1. TVSDK *laden* alle advertenties en plaatsen deze op de tijdlijn.
    1. TVSDK verplaatst de speler naar de status PREPARED en begint met afspelen van inhoud.
 
    De speler gebruikt de URL&#39;s in het manifest om de advertentie-inhoud (creatieven) te verkrijgen, zorgt ervoor dat de advertentie-inhoud een indeling heeft die TVSDK kan afspelen en dat TVSDK de advertenties op de tijdlijn plaatst. Dit basisproces voor het oplossen en laden van advertenties kan een onaanvaardbare lange wachttijd veroorzaken voor een gebruiker die wacht om zijn inhoud af te spelen, vooral als het manifest meerdere advertentie-URL&#39;s bevat.
 
 * *Lazy advertentie laden*:
 
-   1. TVSDK downloadt een afspeellijst en *lost* alle advertenties op.
-   1. TVSDK *laadt* pre-roll advertenties, verplaatst de speler naar de status PREPARED en begint de inhoud af te spelen.
-   1. TVSDK *laadt* de resterende advertenties en plaatst deze op de tijdlijn wanneer het afspelen plaatsvindt.
+   1. TVSDK downloadt een afspeellijst en *oplossen* alle advertenties.
+   1. TVSDK *laden* pre-rol advertenties, verplaatst de speler in de PREPARED status, en de inhoudsplayback begint.
+   1. TVSDK *laden* de resterende advertenties en plaatst deze op de tijdlijn wanneer het afspelen plaatsvindt.
 
    Met deze functie wordt het basisproces verbeterd doordat de speler in de status PREPARED wordt geplaatst voordat alle advertenties worden geladen.
 
@@ -54,8 +53,6 @@ Oplossen en laden van advertenties kan een onaanvaardbare wachttijd veroorzaken 
 >* Als er meerdere ad-hocafbrekingen tegelijk voorkomen (VMAP), worden deze tegelijkertijd opgelost.
 >* Het wordt afgeraden de waarde *setDelayAdLoadingTolerance() *te verlagen tot onder de standaardwaarde (5 seconden). Hierdoor kan de speler onnodig &quot;bufferen&quot;.
 >* Lazy ad Resolving heeft geen invloed op pre-roll advertenties.
->* Het luie Oplossen van Advertenties wordt momenteel gesteund met Auditude-Insteekmodule. Het wordt aanbevolen *setDelayAdLoading* niet in te stellen op true als u een aangepaste resolver gebruikt.
-
+>* Het luie Oplossen van Advertenties wordt momenteel gesteund met Auditude-Insteekmodule. Aanbevolen wordt niet in te stellen *setDelayAdLoading* true als u een aangepaste oplosser gebruikt.
 >
-
 

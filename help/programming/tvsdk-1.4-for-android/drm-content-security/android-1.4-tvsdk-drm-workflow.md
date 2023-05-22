@@ -1,14 +1,13 @@
 ---
 description: Primetime DRM is geïntegreerd in TVSDK, waardoor het implementeren van contentbeveiliging in een TVSDK-toepassing wordt vereenvoudigd.
 title: Primetime DRM implementeren in een TSVDK-toepassing
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: 916f041b-de8f-4737-beb7-e394b98310d1
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '79'
 ht-degree: 0%
 
 ---
-
 
 # Primetime DRM implementeren in een TSVDK-toepassing {#implementing-primetime-drm-in-a-tsvdk-application}
 

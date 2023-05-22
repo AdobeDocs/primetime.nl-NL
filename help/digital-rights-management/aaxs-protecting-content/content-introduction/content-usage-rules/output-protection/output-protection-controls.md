@@ -2,16 +2,15 @@
 title: Besturingselementen voor uitvoerbeveiliging
 description: Besturingselementen voor uitvoerbeveiliging
 copied-description: true
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: e27e49f9-9bc3-493f-a9ba-efe623694942
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '635'
 ht-degree: 0%
 
 ---
 
-
-# Besturingselementen voor uitvoerbescherming {#output-protection-controls}
+# Besturingselementen voor uitvoerbeveiliging {#output-protection-controls}
 
 **Bepaal of uitvoer naar externe renderapparaten is beveiligd. Geef onafhankelijke analoge en digitale uitvoer op.**
 
@@ -29,42 +28,42 @@ De volgende opties/niveaus van handhaving zijn beschikbaar:
  </thead>
  <tbody class="- topic/tbody "> 
   <tr rowsep="1" class="- topic/row "> 
-   <td colname="1" class="- topic/entry "> <p class="- topic/p "><b class="+ topic/ph hi-d/b ">Vereist</b> : de bescherming van analoge kopieerbeveiliging (ACP) of het systeem van het beheer van de productie van kopieën - analoge (CGMS-A)-uitvoer moet zijn ingeschakeld om de inhoud op een extern apparaat af te spelen. De cliënten van de Toegang van Adobe moeten outputbescherming toelaten gebruikend ACS of CGMS-A. Op apparaten die beide steunen, zullen de Adobe Access 3.0 cliënten proberen om allebei toe te laten. U moet echter slechts één speler inschakelen om de inhoud af te spelen. </p> </td> 
+   <td colname="1" class="- topic/entry "> <p class="- topic/p "><b class="+ topic/ph hi-d/b ">Vereist</b> — Analoge kopieerbeveiliging (ACP) of Copy Generation Management System - Analog (CGMS-A) moet uitvoerbeveiliging zijn ingeschakeld om inhoud op een extern apparaat af te spelen. De cliënten van de Toegang van Adobe moeten outputbescherming toelaten gebruikend ACS of CGMS-A. Op apparaten die beide steunen, zullen de Adobe Access 3.0 cliënten proberen om allebei toe te laten. U moet echter slechts één speler inschakelen om de inhoud af te spelen. </p> </td> 
    <td colname="2" class="- topic/entry "> <p class="- topic/p ">JA </p> </td> 
    <td colname="3" class="- topic/entry "> <p class="- topic/p ">JA </p> </td> 
   </tr> 
   <tr rowsep="1" class="- topic/row "> 
-   <td colname="1" class="- topic/entry "> <p class="- topic/p "><b class="+ topic/ph hi-d/b ">ACS vereist</b>  — ACS-uitvoerbescherming is vereist. Afspelen is niet toegestaan op CGMS-A. Adobe Access 2.0-clients bieden geen ondersteuning voor deze optie. Indien ingesteld, gedraagt een Adobe Access 2.0-client zich alsof de optie "Geen afspelen" is opgegeven. </p> </td> 
+   <td colname="1" class="- topic/entry "> <p class="- topic/p "><b class="+ topic/ph hi-d/b ">ACS vereist</b> — ACS-outputbescherming is vereist. Afspelen is niet toegestaan op CGMS-A. Adobe Access 2.0-clients bieden geen ondersteuning voor deze optie. Indien ingesteld, gedraagt een Adobe Access 2.0-client zich alsof de optie "Geen afspelen" is opgegeven. </p> </td> 
    <td colname="2" class="- topic/entry "> <p class="- topic/p ">JA </p> </td> 
    <td colname="3" class="- topic/entry "> <p class="- topic/p ">- </p> </td> 
   </tr> 
   <tr rowsep="1" class="- topic/row "> 
-   <td colname="1" class="- topic/entry "> <p class="- topic/p "><b class="+ topic/ph hi-d/b ">CGMS-A Required</b>  — CGMS-A output protection is required. Afspelen is niet toegestaan voor ACS-landen. Adobe Access 2.0-clients bieden geen ondersteuning voor deze optie. Indien ingesteld, gedraagt een Adobe Access 2.0-client zich alsof de optie "Geen afspelen" is opgegeven. </p> </td> 
+   <td colname="1" class="- topic/entry "> <p class="- topic/p "><b class="+ topic/ph hi-d/b ">CGMS-A vereist</b> — CGMS-A-uitvoerbeveiliging is vereist. Afspelen is niet toegestaan voor ACS-landen. Adobe Access 2.0-clients bieden geen ondersteuning voor deze optie. Indien ingesteld, gedraagt een Adobe Access 2.0-client zich alsof de optie "Geen afspelen" is opgegeven. </p> </td> 
    <td colname="2" class="- topic/entry "> <p class="- topic/p ">JA </p> </td> 
    <td colname="3" class="- topic/entry "> <p class="- topic/p ">- </p> </td> 
   </tr> 
   <tr rowsep="1" class="- topic/row "> 
-   <td colname="1" class="- topic/entry "> <p class="- topic/p "><b class="+ topic/ph hi-d/b ">Gebruik indien beschikbaar</b>  — probeer ACS- en CGMS-A-uitvoerbeveiliging in te schakelen als deze beschikbaar is en sta afspelen toe als deze niet beschikbaar is. Adobe Access 3.0-klanten zullen proberen om, indien mogelijk, zowel ACS als CGMS-A in te schakelen. Adobe Access 2.0-clients zullen alleen proberen ACS of CGMS-A in te schakelen. De Adobe Access-client zal bijvoorbeeld proberen ACS of CGMS-A in te schakelen. Als de poging slaagt, zal de andere optie niet worden toegelaten. Als de poging mislukt, wordt een tweede poging gedaan om de andere optie in te schakelen. Zelfs als beide pogingen mislukken, wordt de inhoud toch afgespeeld. </p> </td> 
+   <td colname="1" class="- topic/entry "> <p class="- topic/p "><b class="+ topic/ph hi-d/b ">Gebruik indien beschikbaar</b> — Poging om ACS- en CGMS-A-uitvoerbescherming in te schakelen, indien beschikbaar, en afspelen toe te staan als deze niet beschikbaar is. Adobe Access 3.0-klanten zullen proberen om, indien mogelijk, zowel ACS als CGMS-A in te schakelen. Adobe Access 2.0-clients zullen alleen proberen ACS of CGMS-A in te schakelen. De Adobe Access-client zal bijvoorbeeld proberen ACS of CGMS-A in te schakelen. Als de poging slaagt, zal de andere optie niet worden toegelaten. Als de poging mislukt, wordt een tweede poging gedaan om de andere optie in te schakelen. Zelfs als beide pogingen mislukken, wordt de inhoud toch afgespeeld. </p> </td> 
    <td colname="2" class="- topic/entry "> <p class="- topic/p ">JA </p> </td> 
    <td colname="3" class="- topic/entry "> <p class="- topic/p ">JA </p> </td> 
   </tr> 
   <tr rowsep="1" class="- topic/row "> 
-   <td colname="1" class="- topic/entry "> <p class="- topic/p "><b class="+ topic/ph hi-d/b ">Gebruik ACP indien beschikbaar</b>  — Poging om ACS-uitvoerbescherming in te schakelen indien beschikbaar, maar sta afspelen toe als deze niet beschikbaar is. De bescherming is niet beschikbaar op CGMS-A. Adobe Access 2.0-clients bieden geen ondersteuning voor deze optie. Indien ingesteld, gedraagt een Adobe Access 2.0-client zich alsof de optie "Geen beveiliging" is opgegeven. </p> </td> 
+   <td colname="1" class="- topic/entry "> <p class="- topic/p "><b class="+ topic/ph hi-d/b ">ACS gebruiken indien beschikbaar</b> — Poging om ACS-uitvoerbescherming in te schakelen indien beschikbaar, maar afspelen toestaan als deze niet beschikbaar is. De bescherming is niet beschikbaar op CGMS-A. Adobe Access 2.0-clients bieden geen ondersteuning voor deze optie. Indien ingesteld, gedraagt een Adobe Access 2.0-client zich alsof de optie "Geen beveiliging" is opgegeven. </p> </td> 
    <td colname="2" class="- topic/entry "> <p class="- topic/p ">JA </p> </td> 
    <td colname="3" class="- topic/entry "> <p class="- topic/p ">- </p> </td> 
   </tr> 
   <tr rowsep="1" class="- topic/row "> 
-   <td colname="1" class="- topic/entry "> <p class="- topic/p "><b class="+ topic/ph hi-d/b ">Gebruik CGMS-A indien beschikbaar  </b>— probeer CGMS-A-uitvoerbeveiliging in te schakelen als deze beschikbaar is, maar sta afspelen toe als deze niet beschikbaar is. De bescherming is niet beschikbaar op ACS. Adobe Access 2.0-clients bieden geen ondersteuning voor deze optie. Indien ingesteld, gedraagt een Adobe Access 2.0-client zich alsof de optie "Geen beveiliging" is opgegeven. </p> </td> 
+   <td colname="1" class="- topic/entry "> <p class="- topic/p "><b class="+ topic/ph hi-d/b ">CGMS-A gebruiken indien beschikbaar </b>— Poging om CGMS-A-uitvoerbeveiliging in te schakelen, indien beschikbaar, maar afspelen toestaan als dit niet het geval is. De bescherming is niet beschikbaar op ACS. Adobe Access 2.0-clients bieden geen ondersteuning voor deze optie. Indien ingesteld, gedraagt een Adobe Access 2.0-client zich alsof de optie "Geen beveiliging" is opgegeven. </p> </td> 
    <td colname="2" class="- topic/entry "> <p class="- topic/p ">JA </p> </td> 
    <td colname="3" class="- topic/entry "> <p class="- topic/p ">- </p> </td> 
   </tr> 
   <tr rowsep="1" class="- topic/row "> 
-   <td colname="1" class="- topic/entry "> <p class="- topic/p "><b class="+ topic/ph hi-d/b ">Geen bescherming</b> — Er wordt geen uitvoerbescherming afgedwongen voor analoge en digitale uitvoer. </p> </td> 
+   <td colname="1" class="- topic/entry "> <p class="- topic/p "><b class="+ topic/ph hi-d/b ">Geen bescherming</b> — Voor analoge en digitale uitvoer wordt geen uitvoerbescherming ingeschakeld. </p> </td> 
    <td colname="2" class="- topic/entry "> <p class="- topic/p ">JA </p> </td> 
    <td colname="3" class="- topic/entry "> <p class="- topic/p ">JA </p> </td> 
   </tr> 
   <tr rowsep="0" class="- topic/row "> 
-   <td colname="1" class="- topic/entry "> <p class="- topic/p "><b class="+ topic/ph hi-d/b ">Afspelen</b>  is niet mogelijk - Afspelen op een extern apparaat voor analoge en digitale uitvoer is niet toegestaan. </p> </td> 
+   <td colname="1" class="- topic/entry "> <p class="- topic/p "><b class="+ topic/ph hi-d/b ">Geen afspelen</b> —Afspelen naar een extern apparaat niet toestaan voor analoge en digitale uitvoer. </p> </td> 
    <td colname="2" class="- topic/entry "> <p class="- topic/p ">JA </p> </td> 
    <td colname="3" class="- topic/entry "> <p class="- topic/p ">JA </p> </td> 
   </tr> 

@@ -1,16 +1,15 @@
 ---
 description: TVSDK biedt API's en voorbeeldcode voor de afhandeling van brainstormperioden.
 title: Afstroomverwerking implementeren
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: c7252467-a075-4227-b7bc-db1112a96a2b
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '113'
 ht-degree: 0%
 
 ---
 
-
-# Uitstroomafhandeling implementeren{#implement-blackout-handling}
+# Afstroomverwerking implementeren{#implement-blackout-handling}
 
 TVSDK biedt API&#39;s en voorbeeldcode voor de afhandeling van brainstormperioden.
 
@@ -157,7 +156,7 @@ Omgaan met black-out, inclusief alternatieve inhoud tijdens de black-out:
    }
    ```
 
-1. Methoden maken voor het schakelen tussen inhoud aan het begin en einde van de periode van uitnemen.
+1. Methoden maken voor het schakelen tussen inhoud aan het begin en einde van de periode van uitschakeling.
 
    ```
    public function initiate(event:TimerEvent=null):void { 
@@ -195,4 +194,3 @@ Omgaan met black-out, inclusief alternatieve inhoud tijdens de black-out:
        } 
    }
    ```
-

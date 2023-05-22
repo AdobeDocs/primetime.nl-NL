@@ -1,16 +1,15 @@
 ---
 description: TVSDK reageert op onjuiste tijdbereikspecificaties door de tijdbereiken waar nodig samen te voegen of te vervangen.
 title: Voorbeelden van tijdbereikfouten
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: 70bbd98b-4084-4a26-8420-fdbe9029194d
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '116'
 ht-degree: 0%
 
 ---
 
-
-# Foutvoorbeelden voor tijdbereik{#time-range-error-examples}
+# Voorbeelden van tijdbereikfouten{#time-range-error-examples}
 
 TVSDK reageert op onjuiste tijdbereikspecificaties door de tijdbereiken waar nodig samen te voegen of te vervangen.
 
@@ -73,4 +72,3 @@ In het volgende voorbeeld worden vier REPLACE-tijdbereiken gedefinieerd met conf
     ]
 }
 ```
-

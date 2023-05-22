@@ -1,26 +1,25 @@
 ---
 description: U kunt opstelling uw speler om playback en apparatenstatistieken van QoSProvider zo vaak te lezen zoals nodig.
 title: QoS-afspeelgegevens en apparaatstatistieken weergeven
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: 369b6e9a-70a2-4f62-a1bf-f69030c5d6c3
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '340'
 ht-degree: 0%
 
 ---
 
-
-# QoS-afspeel- en apparaatstatistieken {#display-qos-playback-and-device-statistics} weergeven
+# QoS-afspeelgegevens en apparaatstatistieken weergeven {#display-qos-playback-and-device-statistics}
 
 U kunt opstelling uw speler om playback en apparatenstatistieken van QoSProvider zo vaak te lezen zoals nodig.
 
-De klasse `QoSProvider` verstrekt diverse statistieken, met inbegrip van het kadertarief, de tarief van het profielbeetje, de totale tijd die in het als buffer optreden wordt doorgebracht, het aantal het als buffer optreden voor pogingen, de tijd het nam om de eerste byte van het eerste videofragment te krijgen, de tijd het nam om het eerste kader, de momenteel als buffer optredende lengte, en de buffertijd terug te geven.
+De `QoSProvider` klasse verstrekt diverse statistieken, met inbegrip van het kadertarief, de tarief van het profielbeetje, de totale tijd die in het als buffer optreden wordt doorgebracht, het aantal het als buffer optreden voor pogingen, de tijd het nam om de eerste byte van het eerste videofragment te krijgen, de tijd het nam om het eerste kader, de momenteel als buffer optredende voor lengte, en de buffertijd terug te geven.
 
-De verwijzingsimplementatie verstrekt een `QoSManager` klasse waar u de vertoning van de bekleding kunt toelaten QoS. U kunt de zichtbaarheid van QoS ook inschakelen in de gebruikersinterface van Instellingen:
+De referentie-implementatie biedt een `QoSManager` klasse waar u de weergave van de QoS-bedekking kunt inschakelen. U kunt de zichtbaarheid van QoS ook inschakelen in de gebruikersinterface van Instellingen:
 
 ![](assets/qos-configuration.jpg)
 
-`QoSManager` volgt statistieken QoS door apparateninformatie te krijgen, aan de media speler vast te maken, en met de recentste informatie te bijwerken QoS.
+De `QoSManager` volgt statistieken QoS door apparateninformatie, vastmakend aan de media speler, en het bijwerken met de recentste informatie QoS te krijgen.
 
 **De rapportage van QoS-statistieken in- of uitschakelen**
 
@@ -38,7 +37,7 @@ De verwijzingsimplementatie verstrekt een `QoSManager` klasse waar u de vertonin
 
    >[!NOTE]
    >
-   >Als u de Booleaanse waarde wijzigt in `false`, wordt QoS-rapportage uitgeschakeld.
+   >De Booleaanse waarde wijzigen in `false` Hiermee schakelt u QoS-rapportage uit.
 
 2. Gebeurtenislisteners toevoegen:
 
@@ -50,7 +49,7 @@ De verwijzingsimplementatie verstrekt een `QoSManager` klasse waar u de vertonin
 
    >[!NOTE]
    >
-   >Wanneer de speleractiviteit zal worden vernietigd, zorg ervoor om [qosManager.destroyQOSProvider](https://help.adobe.com/en_US/primetime/reference_implementation/android/javadoc/com/adobe/primetime/reference/manager/QosManager.html#destroyQOSProvider()) te roepen om de leverancier QOS schoon te maken door het van de media speler los te maken.
+   >Wanneer de speleractiviteit zal worden vernietigd, zorg ervoor [qosManager.destroyQOSProvider](https://help.adobe.com/en_US/primetime/reference_implementation/android/javadoc/com/adobe/primetime/reference/manager/QosManager.html#destroyQOSProvider()) om de QOS-provider op te schonen door deze van de mediaspeler los te koppelen.
 
 **Gerelateerde API-documentatie**
 

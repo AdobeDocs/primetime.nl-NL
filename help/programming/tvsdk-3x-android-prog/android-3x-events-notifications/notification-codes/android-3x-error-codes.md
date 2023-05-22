@@ -1,14 +1,13 @@
 ---
 title: PSDK-foutcodes
 description: Informatie over verschillende foutcodes, waarschuwingen en native foutcodes.
-translation-type: tm+mt
-source-git-commit: eddc327087411a6214cfd8dafef66b850a603f97
+exl-id: 90d66c13-c40c-4602-83da-186c2b623375
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '1897'
 ht-degree: 6%
 
 ---
-
 
 # PSDK-foutcodes {#psdk-error-codes}
 
@@ -41,7 +40,7 @@ In de volgende tabel vindt u gedetailleerde informatie over meldingen van FOUTty
   </tr>
   <tr>
     <td>ILLEGAL_STATE</td>
-    <td>1</td>
+    <td>3</td>
     <td>De bewerking wordt niet ondersteund in de huidige spelerstatus.</td>
   </tr>
   <tr>
@@ -226,7 +225,7 @@ De interface Video Encoder van AVE keert deze videoplaybackberichten in het NATI
   </tr>
   <tr>
     <td>DECODER_FAILED</td>
-    <td>1</td>
+    <td>3</td>
     <td>De decoder is mislukt bij uitvoering.</td>
   </tr>
   <tr>
@@ -501,7 +500,7 @@ De interface Video Encoder van AVE keert deze videoplaybackberichten in het NATI
   </tr>
   <tr>
     <td>BAD_MEDIA_SAMPLE_FOUND</td>
-    <td>78</td>
+    <td>58</td>
     <td>De decoder heeft een ongeldig monster ontvangen dat niet kan worden gedecodeerd. Dit is meestal geen fatale fout, maar geeft aan dat er wellicht glitches in de audio/video voorkomen. Te veel exemplaren van deze fout geven een onjuiste codering of een ongeldig bestand aan.</td>
   </tr>
   <tr>
@@ -516,7 +515,7 @@ De interface Video Encoder van AVE keert deze videoplaybackberichten in het NATI
   </tr>
   <tr>
     <td>INTERNAL_ERROR</td>
-    <td>81</td>
+    <td>61</td>
     <td>Een zeer zeldzame kwestie die nooit zou mogen voorkomen.</td>
   </tr>
   <tr>  
@@ -607,7 +606,7 @@ De interface Video Encoder van AVE keert deze videoplaybackberichten in het NATI
   <tr>
     <td>FILE_WRITE_ERROR</td>
     <td>79</td>
-    <td>Kan niet naar een bestand schrijven.</td>
+    <td>Kan niet schrijven naar een bestand.</td>
   </tr>
   <tr>
     <td>FILE_READ_ERROR</td>
@@ -616,7 +615,7 @@ De interface Video Encoder van AVE keert deze videoplaybackberichten in het NATI
   </tr>
   <tr>
     <td>ID3PARSE_ERROR</td>
-    <td>61</td>
+    <td>81</td>
     <td>Er is een fout opgetreden bij het parseren van ID3-gegevens.</td>
   </tr>
   <tr>

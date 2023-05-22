@@ -1,14 +1,13 @@
 ---
 description: U kunt meldingen gebruiken om realtime aanmelding in uw videotoepassing te implementeren.
 title: Logboekregistratie en foutopsporing in realtime toevoegen
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: 06ba7207-bb6e-4f77-8575-746505b131bd
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '237'
 ht-degree: 0%
 
 ---
-
 
 # Logboekregistratie en foutopsporing in realtime toevoegen{#add-real-time-logging-and-debugging}
 
@@ -34,4 +33,4 @@ Hier is een voorbeeld van hoe u meldingen kunt ophalen.
    De externe server kan de verschafte gegevens dan grafisch in real-time weergeven.
 1. Om het verlies van berichtgebeurtenissen te ontdekken, zoek hiaten in de opeenvolging van waarden van de gebeurtenisindex.
 
-   Elke meldingsgebeurtenis heeft een indexwaarde die automatisch wordt verhoogd door de klasse `NotificationHistory`.
+   Elke meldingsgebeurtenis heeft een indexwaarde die automatisch wordt verhoogd door de `NotificationHistory` klasse.

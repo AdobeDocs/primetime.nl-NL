@@ -1,16 +1,15 @@
 ---
 description: Als u TVSDK het doeltreffendst wilt gebruiken, moet u bepaalde details van de werking van de SDK in overweging nemen en bepaalde best practices volgen.
 title: Overwegingen en beste praktijken
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: 5e1e09e1-f22e-4797-807a-14dbf50bb835
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '278'
 ht-degree: 0%
 
 ---
 
-
-# Overwegingen en aanbevolen procedures{#considerations-and-best-practices}
+# Overwegingen en beste praktijken{#considerations-and-best-practices}
 
 Als u TVSDK het doeltreffendst wilt gebruiken, moet u bepaalde details van de werking van de SDK in overweging nemen en bepaalde best practices volgen.
 
@@ -36,12 +35,11 @@ Houd rekening met de volgende informatie wanneer u TVSDK gebruikt:
       "Adobe Flash Player"
       ```
 
-## Aanbevolen werkwijzen {#section_tvsdk_best_practices}
+## Aanbevolen procedures {#section_tvsdk_best_practices}
 
 Hier volgen de aanbevolen procedures voor TVSDK:
 
 * Gebruik HLS versie 3.0 of hoger voor programma-inhoud.
 * Voor TVSDK 1.4 voor DHLS, wordt het luie en het laden toegelaten door gebrek.
 
-   Voor inhoud zonder pre-rol of middenrol, kunt u `AdvertisingMetadata.delayAdLoading` gebruiken om inhoud te versnellen die nog meer laadt.
-
+   Voor inhoud zonder pre- of mid-roll kunt u `AdvertisingMetadata.delayAdLoading` om het laden van inhoud nog verder te versnellen.

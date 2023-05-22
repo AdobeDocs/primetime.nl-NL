@@ -1,7 +1,6 @@
 ---
 description: Clientverzoeken om invoeging van een advertentie geven doorgaans meer dan één bitsnelheid op in de afspeellijst met versies die zijn opgemaakt voor de variant M3U8. De manifestserver genereert en retourneert een nieuw M3U8-bestand met een aparte M3U8-koppeling voor elke bitsnelheid. Er wordt ook een unieke groep-id gegenereerd om deze M3U8s aan elkaar te koppelen.
 title: Streams met meerdere bitsnelheden
-translation-type: tm+mt
 source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
 source-wordcount: '309'
@@ -10,7 +9,7 @@ ht-degree: 0%
 ---
 
 
-# Meerdere bitsnelheidstreams {#multiple-bit-rate-streams}
+# Streams met meerdere bitsnelheden {#multiple-bit-rate-streams}
 
 Clientverzoeken om invoeging van een advertentie geven doorgaans meer dan één bitsnelheid op in de afspeellijst met versies die zijn opgemaakt voor de variant M3U8. De manifestserver genereert en retourneert een nieuw M3U8-bestand met een aparte M3U8-koppeling voor elke bitsnelheid. Er wordt ook een unieke groep-id gegenereerd om deze M3U8s aan elkaar te koppelen.
 

@@ -2,16 +2,15 @@
 title: Een certificaataanvraag genereren (aanvrager)
 description: Een certificaataanvraag genereren (aanvrager)
 copied-description: true
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: 4f8dae3d-da56-453d-b3c4-e67fe4f37064
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '203'
 ht-degree: 0%
 
 ---
 
-
-# Een certificaataanvraag genereren (Requester) {#generate-a-certificate-signing-request-requester}
+# Een certificaataanvraag genereren (aanvrager) {#generate-a-certificate-signing-request-requester}
 
 1. Een sleutelpaar genereren. Als u een hulpprogramma zoals OpenSSL wilt gebruiken, opent u een opdrachtvenster en voert u het volgende in:
 
@@ -47,4 +46,3 @@ ht-degree: 0%
    >[!NOTE]
    >
    >Adobe raadt u aan een HSM te gebruiken om uw persoonlijke sleutel en wachtwoord te beschermen.
-

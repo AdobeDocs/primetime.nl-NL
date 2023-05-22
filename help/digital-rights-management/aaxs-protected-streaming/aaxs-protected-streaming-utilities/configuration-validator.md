@@ -2,16 +2,15 @@
 title: Configuratie-validatie
 description: Configuratie-validatie
 copied-description: true
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: 9b73e107-6ab7-4089-b415-0af8c9f86995
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '185'
 ht-degree: 0%
 
 ---
 
-
-# Configuratievalidering {#configuration-validator}
+# Configuratie-validatie {#configuration-validator}
 
 Adobe raadt u aan het hulpprogramma Configuration Validator uit te voeren voordat u de server start wanneer wijzigingen in het configuratiebestand worden aangebracht. Dit nut kan de meeste configuratiefouten vroeg ontdekken, alvorens zij mislukkingen tijdens verzoekverwerking veroorzaken.
 
@@ -52,4 +51,3 @@ Validator --root-path-to-LicenseServer.ConfigRoot -d flashaccessserver/tenant1 -
 ```
 Validator --root-path-to-LicenseServer.ConfigRoot -g 
 ```
-

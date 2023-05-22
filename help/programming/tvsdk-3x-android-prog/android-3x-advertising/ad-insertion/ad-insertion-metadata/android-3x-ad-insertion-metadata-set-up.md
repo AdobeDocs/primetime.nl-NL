@@ -1,32 +1,31 @@
 ---
 description: Met de hulpklasse AuditudeSettings, die de klasse MetadataNode uitbreidt, kunt u Adobe Primetime- en beslissingsmetagegevens instellen.
 title: Metagegevens instellen en invoegen
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: f7d1eb7d-e0be-4f0f-9dec-9336641a8f87
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '265'
 ht-degree: 0%
 
 ---
 
-
 # Metagegevens instellen en invoegen {#set-up-ad-insertion-metadata}
 
-Met de hulpklasse `AuditudeSettings`, die de klasse `MetadataNode` uitbreidt, kunt u metagegevens voor Adobe Primetime en besluitvorming instellen.
+De hulpklasse gebruiken `AuditudeSettings`, die de `MetadataNode` -klasse, om Adobe Primetime en beslissingsmetagegevens in te stellen.
 
 >[!TIP]
 >
 >Adobe Primetime en de beslissing stond voorheen bekend als Auditude.
 
-Metagegevens voor reclame bevinden zich in de eigenschap `MediaResource.Metadata`. Wanneer u begint met het afspelen van een nieuwe video, is uw toepassing verantwoordelijk voor het instellen van de juiste metagegevens voor advertenties.
+Metagegevens over reclame bevinden zich in de `MediaResource.Metadata` eigenschap. Wanneer u begint met het afspelen van een nieuwe video, is uw toepassing verantwoordelijk voor het instellen van de juiste metagegevens voor advertenties.
 
-1. Stel de instantie `AuditudeSettings` samen.
+1. De `AuditudeSettings` -instantie.
 
    ```java
    AuditudeSettings auditudeSettings = new AuditudeSettings();
    ```
 
-1. Stel de Adobe Primetime en de beslissing `mediaID`, `zoneID`, `<ph conkeyref="phrases/primetime-sdk-name"/>` en de optionele parameters voor het toewijzen van doelen in.
+1. De Adobe Primetime en de beslissing instellen `mediaID`, `zoneID`, `<ph conkeyref="phrases/primetime-sdk-name"/>`en de optionele doelparameters.
 
    ```java
    auditudeSettings.setZoneId("yourZoneId"); 
@@ -44,28 +43,28 @@ Metagegevens voor reclame bevinden zich in de eigenschap `MediaResource.Metadata
 
    >[!TIP]
    >
-   >De media-id wordt door TVSDK gebruikt als een tekenreeks, die wordt omgezet in een md5-waarde en wordt gebruikt voor de waarde `u` in het URL-verzoek voor primetime en besluitvorming. Bijvoorbeeld:
+   >De media-id wordt door TVSDK gebruikt als een tekenreeks, die wordt omgezet in een md5-waarde en wordt gebruikt voor de `u` waarde in het Primetime- en beslissings-URL-verzoek. Bijvoorbeeld:
    >
    >`https://ad.auditude.com/adserver? **u**=c76d04ee31c91c4ce5c8cee41006c97d &z=114100&l=20150206141527&of=1.4&tm=15&g=1000002`
 
-1. Maak een `MediaResource`-instantie met de URL van de mediastream en de eerder gemaakte advertentiemetagegevens.
+1. Een `MediaResource` door de URL van de mediastream en de eerder gemaakte advertentiemetagegevens te gebruiken.
 
    ```java
    MediaResource mediaResource = new MediaResource( 
    "https://example.com/media/test_media.m3u8", MediaResource.Type.HLS, Metadata);
    ```
 
-1. Laad het object `MediaResource` via de methode `MediaPlayer.replaceCurrentResource`.
+1. Laad de `MediaResource` door het `MediaPlayer.replaceCurrentResource` methode.
 
-   Met `MediaPlayer` wordt het mediabream geladen en verwerkt.
+   De `MediaPlayer` start met het laden en verwerken van het mediastroommanifest.
 
-1. Wanneer de `MediaPlayer` naar de geINITIALISEERDE status overgaat, krijgt u de kenmerken van de mediastream in de vorm van een `MediaPlayerItem` instantie via de methode `MediaPlayer.CurrentItem`.
-1. (Optioneel) Vraag de instantie `MediaPlayerItem` om te zien of de stream live is, ongeacht of de stream alternatieve audiotracks heeft of dat de stream is beveiligd.
+1. Wanneer de `MediaPlayer` overgangen naar de status INITIALIZED, krijg de kenmerken van de mediastream in de vorm van een `MediaPlayerItem` door de `MediaPlayer.CurrentItem` methode.
+1. (Optioneel) Zoek naar de `MediaPlayerItem` -instantie om te zien of de stream live is, ongeacht of deze alternatieve audiotracks heeft of dat de stream beveiligd is.
 
    Deze informatie kan u helpen UI voor het playback voorbereiden. Als u bijvoorbeeld weet dat er twee audiotracks zijn, kunt u een UI-besturingselement opnemen dat schakelt tussen deze tracks.
 
-1. Bel `MediaPlayer.prepareToPlay` om de advertentieworkflow te starten.
+1. Bellen `MediaPlayer.prepareToPlay` om de publicatieworkflow te starten.
 
-   Nadat de advertenties zijn opgelost en op de tijdlijn zijn geplaatst, gaat `MediaPlayer` naar de status `PREPARED`.
-1. Roep `MediaPlayer.play` aan om het afspelen te starten.
+   Nadat de advertenties zijn opgelost en op de tijdlijn zijn geplaatst, wordt het `MediaPlayer` overgangen naar de `PREPARED` status.
+1. Bellen `MediaPlayer.play` om het afspelen te starten.
 TVSDK bevat nu advertenties wanneer uw media wordt afgespeeld.

@@ -1,7 +1,6 @@
 ---
 description: De SDK downloadt periodiek CRL's die door Adobe worden gepubliceerd. U moet ervoor zorgen dat de toegang tot deze dossiers niet wordt geblokkeerd of de handhaving van deze CRLs niet wordt verhinderd.
 title: CRL's gebruiken die door Adobe zijn gepubliceerd
-translation-type: tm+mt
 source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
 source-wordcount: '118'
@@ -10,7 +9,7 @@ ht-degree: 0%
 ---
 
 
-# CRL&#39;s gebruiken die zijn gepubliceerd door Adobe{#consuming-crls-published-by-adobe}
+# CRL&#39;s gebruiken die door Adobe zijn gepubliceerd{#consuming-crls-published-by-adobe}
 
 De SDK downloadt periodiek CRL&#39;s die door Adobe worden gepubliceerd. U moet ervoor zorgen dat de toegang tot deze dossiers niet wordt geblokkeerd of de handhaving van deze CRLs niet wordt verhinderd.
 

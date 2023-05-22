@@ -1,13 +1,13 @@
 ---
 title: Tijdelijke controle opnieuw instellen op iOS
 description: Tijdelijke controle opnieuw instellen op iOS
-source-git-commit: 326f97d058646795cab5d062fa5b980235f7da37
+exl-id: 53a22fae-192c-4b4c-9d63-fd9a2d960923
+source-git-commit: bfc3ba55c99daba561255760baf273b6538a3c6e
 workflow-type: tm+mt
 source-wordcount: '717'
 ht-degree: 0%
 
 ---
-
 
 # Tijdelijke controle opnieuw instellen op iOS {#reset-temp-pass-on-ios}
 
@@ -64,5 +64,4 @@ Het laatste gebruik-geval (iOS 7 en hoger) is het gemeenschappelijkst zodat zien
 
 1. U kunt de voorinstelling vanuit de demo-app uitvoeren door de gehashte IDFV van de app van de programmeur op te geven als de *Algemene toets*. Dit zal in twee netwerkvraag resulteren: een voor het opnieuw instellen van de Temp-controle voor de demo-app (irrelevant voor de programmeur) en een voor het opnieuw instellen van de Temp-controle voor de programmeerapp.
 
-Alle bovenstaande opties zijn vergelijkbaar. Het is aan de programmeur om er een te kiezen, afhankelijk van het gemak van de implementatie. 
-
+Alle bovenstaande opties zijn vergelijkbaar. Het is aan de programmeur om er een te kiezen, afhankelijk van het gemak van de implementatie.

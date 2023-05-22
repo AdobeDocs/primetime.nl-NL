@@ -2,18 +2,17 @@
 title: Hoofdstukondersteuning implementeren
 description: Hoofdstukondersteuning implementeren
 copied-description: true
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: 4d1b3488-88c9-49ff-9e54-f78aacdabf6e
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '60'
 ht-degree: 0%
 
 ---
 
+# Hoofdstukondersteuning implementeren {#implement-chapter-support}
 
-# Hoofdstukondersteuning {#implement-chapter-support} implementeren
-
-U kunt *aangepaste* hoofdstukken definiëren en bijhouden voor videotracering in toepassingen die zijn gebaseerd op TVSDK.
+U kunt definiëren en bijhouden *aangepast* hoofdstukken voor het bijhouden van video&#39;s in op TVSDK gebaseerde toepassingen.
 
 De hoofdstukken van de douane worden beheerd door de toepassing, en zijn gebaseerd op CMS gegevens of op een andere manier die de toepassing gebruikt om hoofdstukken te bepalen.
 
@@ -45,4 +44,3 @@ De hoofdstukken van de douane worden beheerd door de toepassing, en zijn gebasee
    
    vaMetadata.setChapters(chapters); 
    ```
-

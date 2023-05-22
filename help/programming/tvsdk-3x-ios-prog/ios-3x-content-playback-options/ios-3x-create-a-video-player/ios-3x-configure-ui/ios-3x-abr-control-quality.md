@@ -1,14 +1,13 @@
 ---
 description: HLS- en DASH-streams bieden verschillende bitsnelheidcoderingen (profielen) voor dezelfde korte videoprand. TVSDK kan het kwaliteitsniveau voor elke uitbarsting selecteren op basis van de beschikbare bandbreedte.
 title: Adaptieve bitsnelheden (ABR) voor videokwaliteit
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: 97862cf7-7315-4ca6-a2b4-f9b98047edd9
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '542'
 ht-degree: 0%
 
 ---
-
 
 # Adaptieve bitsnelheden (ABR) voor videokwaliteit {#adaptive-bit-rates-abr-for-video-quality}
 
@@ -50,11 +49,11 @@ Als een stream bijvoorbeeld de volgende profielen heeft:
 
 Als u een bereik van 300000 tot 2000000 opgeeft, houdt TVSDK alleen rekening met de profielen 1, 2 en 3. Hierdoor kunnen toepassingen zich aanpassen aan verschillende netwerkvoorwaarden, zoals het schakelen van WiFi naar 3G of naar verschillende apparaten, zoals een telefoon, tablet of desktopcomputer.
 
-## Aangepaste bitsnelheden {#section_572FCE4CC28D4DF8BD9C461F00B3CA17} configureren
+## Aangepaste bitsnelheden configureren {#section_572FCE4CC28D4DF8BD9C461F00B3CA17}
 
 Aangepaste parameters voor de bitsnelheid van TVSDK configureren:
 
-1. Vorm een geval van `PTABRControlParameters` om de aanvankelijke, minimum, en maximum beetje-tarief montages te plaatsen.
+1. Een instantie configureren van `PTABRControlParameters` om de instellingen voor de aanvankelijke, minimale en maximale bitsnelheid in te stellen.
 
    De standaardwaarden worden weergegeven in het volgende codefragment, maar uw toepassing kan voor elk van deze parameters een geheel-getalwaarde instellen.
 
@@ -72,7 +71,7 @@ Aangepaste parameters voor de bitsnelheid van TVSDK configureren:
    abrMetaData.maxBitRate = INT_MAX;
    ```
 
-1. Werk uw `PTMediaPlayer` instantie met de gevormde `PTABRControlParameters` instantie bij.
+1. Werk uw `PTMediaPlayer` instantie met de geconfigureerde `PTABRControlParameters` -instantie.
 
    ```
    // assuming self.player is the PTMediaPlayer instance 
@@ -81,9 +80,9 @@ Aangepaste parameters voor de bitsnelheid van TVSDK configureren:
 
 Houd rekening met het volgende:
 
-* De toepassing moet de eigenschap `abrControlParameters` op `PTMediaPlayer` instellen voordat een instantie `PTMediaPlayerItem` wordt geconfigureerd, zodat de initiële en minimale bitsnelheidinstellingen van kracht worden.
+* De toepassing moet de `abrControlParameters` eigenschap op `PTMediaPlayer` voordat u een `PTMediaPlayerItem` De eerste en minimale bitsnelheidsinstellingen worden van kracht.
 
    Nadat het afspelen van inhoud is gestart, heeft het instellen van een nieuwe instantie alleen invloed op de instelling van de maximale bitsnelheid.
 
-* Als u de maximale bitsnelheid tijdens het afspelen wilt bijwerken, maakt u een nieuwe `PTABRControlParameters`-instantie en stelt u deze in op de spelerinstantie.
-* U kunt de instelling voor de maximale bitsnelheid alleen bijwerken tijdens het afspelen op iOS 8.0 en hoger. Voor eerdere versies wordt de waarde `maxBitrate` gebruikt die was ingesteld voordat de inhoud werd afgespeeld.
+* Als u de instelling voor de maximale bitsnelheid tijdens het afspelen wilt bijwerken, maakt u een nieuwe `PTABRControlParameters` en stelt deze in op de spelerinstantie.
+* U kunt de instelling voor de maximale bitsnelheid alleen bijwerken tijdens het afspelen in iOS 8.0 en hoger. Voor eerdere versies wordt `maxBitrate` waarde die is ingesteld voordat het afspelen van inhoud is gestart, wordt gebruikt.

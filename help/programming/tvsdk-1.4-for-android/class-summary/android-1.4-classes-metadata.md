@@ -1,14 +1,13 @@
 ---
 description: Deze klassen bieden metagegevens voor adverteren, naamruimten en tekstspatiëring.
 title: Metagegevensklassen
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: 3d98c5e1-6792-419b-9638-f156f1eafd1b
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '226'
 ht-degree: 0%
 
 ---
-
 
 # Metagegevensklassen{#metadata-classes}
 
@@ -20,7 +19,7 @@ Pakket: [com.adobe.mediacore.metadata](https://help.adobe.com/en_US/primetime/ap
 |---|---|
 | [AdvertisingMetadata](https://help.adobe.com/en_US/primetime/api/psdk/javadoc_1.4/com/adobe/mediacore/metadata/AdvertisingMetadata.html) | Klasse die eigenschappen verstrekt die voor het oplossen van advertenties voor een bepaald media punt zouden moeten worden gevormd. Alle vereiste eigenschappen moeten worden ingesteld om de speler te configureren voor het omzetten van advertenties. |
 | AuditudeMetadata | Vervangen. Gebruik AuditudeSettings. |
-| [AuditudeSettings](https://help.adobe.com/en_US/primetime/api/psdk/javadoc_1.4/com/adobe/mediacore/metadata/AuditudeSettings.html) | Klasse die Java `AdvertisingMetadata` specifiek voor Woorden uitbreidt. Verstrekt eigenschappen die voor het oplossen van de advertenties van de Woorden voor een bepaald media punt moeten worden gevormd. U moet alle vereiste eigenschappen instellen, inclusief zone-id, media-id en de URL van de advertentieserver, om de speler zo te configureren dat advertenties met succes worden opgelost. |
+| [AuditudeSettings](https://help.adobe.com/en_US/primetime/api/psdk/javadoc_1.4/com/adobe/mediacore/metadata/AuditudeSettings.html) | Klasse die Java uitbreidt `AdvertisingMetadata` specifiek voor Phrase. Verstrekt eigenschappen die voor het oplossen van de advertenties van de Woorden voor een bepaald media punt moeten worden gevormd. U moet alle vereiste eigenschappen instellen, inclusief zone-id, media-id en de URL van de advertentieserver, om de speler zo te configureren dat advertenties met succes worden opgelost. |
 | [Metagegevens](https://help.adobe.com/en_US/primetime/api/psdk/javadoc_1.4/com/adobe/mediacore/metadata/Metadata.html) | Definieert de algemene interface voor het configureren van alle beschikbare metagegevens voor de speler en aanvullende objecten. |
 | [MetadataNode](https://help.adobe.com/en_US/primetime/api/psdk/javadoc_1.4/com/adobe/mediacore/metadata/MetadataNode.html) | Algemene gegevensstructuur-als klasse voor het opslaan van willekeurige sleutel-waarde paren. |
 | [TimedMetadata](https://help.adobe.com/en_US/primetime/api/psdk/javadoc_1.4/com/adobe/mediacore/metadata/TimedMetadata.html) | Klasse voor de onbewerkte representatie van de metagegevens met tijdinstellingen die in een mediastream zijn ingevoegd. |

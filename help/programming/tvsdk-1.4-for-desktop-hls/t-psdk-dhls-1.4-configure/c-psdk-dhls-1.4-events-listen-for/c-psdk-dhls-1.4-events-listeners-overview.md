@@ -21,17 +21,17 @@ De Flash Runtime verstrekt een generisch gebeurtenismechanisme, dat TVSDK ook ge
 
       >[!IMPORTANT]
       >
-      >De playbackgebeurtenis `MediaPlayerStatusChangeEvent.STATUS_CHANGE` verstrekt de spelerstatus, met inbegrip van fouten. Een van de staten kan de volgende stap van de speler beïnvloeden.
+      >De afspeelgebeurtenis `MediaPlayerStatusChangeEvent.STATUS_CHANGE` geeft de spelerstatus weer, inclusief fouten. Een van de staten kan de volgende stap van de speler beïnvloeden.
 
    * **Andere gebeurtenissen**: Optioneel, afhankelijk van uw toepassing.
 
-      Als u bijvoorbeeld reclame in het afspelen opneemt, luistert u naar alle gebeurtenissen `AdBreakPlaybackEvent` en `AdPlaybackEvent`.
+      Als u bijvoorbeeld reclame in het afspelen opneemt, luistert u naar alles `AdBreakPlaybackEvent` en `AdPlaybackEvent` gebeurtenissen.
 
 1. Implementeer gebeurtenislisteners voor elke gebeurtenis.
 
    TVSDK retourneert parameterwaarden aan uw callbacks van de gebeurtenislistener. Deze waarden bieden relevante informatie over de gebeurtenis die u in de listeners kunt gebruiken om de juiste handelingen uit te voeren.
 
-   De `Event` klasse maakt een lijst van alle callback interfaces. Elke interface toont de parameters die voor die interface zijn teruggekeerd.
+   De `Event` De klasse maakt een lijst van alle callback interfaces. Elke interface toont de parameters die voor die interface zijn teruggekeerd.
 
    Bijvoorbeeld:
 
@@ -43,9 +43,9 @@ De Flash Runtime verstrekt een generisch gebeurtenismechanisme, dat TVSDK ook ge
                    error:MediaError = null) 
    ```
 
-1. Registreer uw callback luisteraars met het `MediaPlayer` voorwerp door `MediaPlayer.addEventListener` te gebruiken.
+1. Registreer uw callback luisteraars met `MediaPlayer` object gebruiken `MediaPlayer.addEventListener`.
 
-   `MediaPlayer` extends, dat onderdeel is van de kernbestanden van de Flash-speler en de functies  `flash.events.IEventDispatcher`en  `addEventListener`   `removeEventListener`bevat.
+   `MediaPlayer` extends `flash.events.IEventDispatcher`, die deel uitmaakt van de kernbestanden van de Flash-speler en de functies bevat `addEventListener` en `removeEventListener`.
 
    ```
    mediaPlayer.addEventListener( 

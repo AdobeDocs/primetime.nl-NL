@@ -2,21 +2,20 @@
 title: Een DRM-beleid maken met de Java API
 description: Een DRM-beleid maken met de Java API
 copied-description: true
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: fcae76c3-4e51-449d-b6d5-2138bf1c583e
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '102'
 ht-degree: 0%
 
 ---
 
-
 # Een DRM-beleid maken met de Java API {#creating-a-drm-policy-with-the-java-api}
 
 Een DRM-beleid maken met de Java API:
 
-1. Stel uw ontwikkelomgeving in en neem in uw project alle JAR-bestanden op die worden vermeld in [De ontwikkelomgeving instellen.](../../protecting-content/setting-up-the-sdk/setup-dev-env.md)
-1. Maak een `com.adobe.flashaccess.sdk.policy.Policy`-object en geef de eigenschappen ervan op, inclusief de rechten, de duur van het in cache plaatsen van licenties en de einddatum van het DRM-beleid.
+1. Stel uw ontwikkelomgeving in en neem in uw project alle JAR-bestanden op die in [Stel uw ontwikkelomgeving in.](../../protecting-content/setting-up-the-sdk/setup-dev-env.md).
+1. Een `com.adobe.flashaccess.sdk.policy.Policy` -object en geef de eigenschappen ervan op, zoals de rechten, de duur van het in cache plaatsen van licenties en de einddatum van het DRM-beleid.
 
    ```java
    // Create a new DRM policy object.  
@@ -51,7 +50,7 @@ Een DRM-beleid maken met de Java API:
    } 
    ```
 
-1. Serialiseer het DRM `Policy` voorwerp en bewaar het in een dossier of een gegevensbestand.
+1. Serienummering van de DRM `Policy` en sla deze op in een bestand of database.
 
    ```java
    // Serialize the DRM policy  
@@ -65,4 +64,4 @@ Een DRM-beleid maken met de Java API:
    out.close(); 
    ```
 
-Zie [!DNL com.adobe.flashaccess.samples.policy.CreatePolicy] in de folder van de Hulpmiddelen [!DNL samples] van de Lijn van het Bevel van de Implementatie van de Verwijzing voor de volledige bron van deze steekproefcode.
+Zie [!DNL com.adobe.flashaccess.samples.policy.CreatePolicy] in de opdrachtregelprogramma&#39;s voor de referentieimplementatie [!DNL samples] directory voor de volledige bron van deze voorbeeldcode.

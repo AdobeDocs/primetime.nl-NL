@@ -1,14 +1,13 @@
 ---
 description: Een advertentie kan meerdere creatieve elementen bevatten, waaruit een advertentie kan worden afgespeeld.
 title: Geldige mime-typen
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: 878cae20-2a94-4795-8908-be7daffefb41
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '138'
 ht-degree: 0%
 
 ---
-
 
 # Geldige mime-typen{#valid-mime-types}
 
@@ -24,6 +23,6 @@ var mimeTypes = [“video/mp4”, “application/x-mpegURL”];
 auditudeSettings.validMimeTypes = mimeTypes; 
 ```
 
-waarbij `mimeTypes` een array van tekenreeksen is en elke tekenreeks een mime-type vertegenwoordigt.
+waar `mimeTypes` is een array van tekenreeksen en elke tekenreeks vertegenwoordigt een mime-type.
 
-Als er meerdere mediabestanden worden geretourneerd voor een advertentie, is de selectie afhankelijk van de volgorde waarin de mediabestanden in `validMimeTypes`-array worden weergegeven. De mime-typen met een lagere index krijgen een voorkeur boven de typen met een hogere index.
+Als meerdere mediabestanden worden geretourneerd voor een advertentie, is de selectie afhankelijk van de volgorde waarin de mediabestanden worden weergegeven in `validMimeTypes` array. De mime-typen met een lagere index krijgen een voorkeur boven de typen met een hogere index.

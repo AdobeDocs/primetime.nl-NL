@@ -1,14 +1,13 @@
 ---
 description: TVSDK biedt u informatie zodat u op doorklikadvertenties kunt werken. Terwijl u de interface van de speler maakt, moet u bepalen hoe u moet reageren wanneer een gebruiker op een klikbare advertentie klikt.
 title: Klikbare advertenties
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: eaaab835-884a-4d3f-b3be-e6f71c814985
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '326'
 ht-degree: 0%
 
 ---
-
 
 # Klikbare advertenties{#clickable-ads}
 
@@ -20,16 +19,16 @@ In TVSDK voor iOS kan alleen op lineaire advertenties worden geklikt.
 
 Wanneer een gebruiker op een advertentie, een banneradvertentie of een verwante knop klikt, moet uw toepassing reageren. TVSDK biedt u informatie over de doel-URL voor de klik.
 
-1. Als u een gebeurtenislistener voor TVSDK wilt instellen en de doorklikinformatie wilt opgeven, voegt u een waarnemer voor `PTMediaPlayerAdClickNotification` toe.
+1. Als u een gebeurtenislistener voor TVSDK wilt instellen en de doorklikinformatie wilt weergeven, voegt u een waarnemer voor `PTMediaPlayerAdClickNotification`.
 
    >[!NOTE]
    >
    >Wanneer een gebruiker op een advertentie, een banneradvertentie of een verwante knop klikt, verzendt TVSDK dit bericht, inclusief informatie over de bestemming voor de klik.
 
 1. Gebruikersinteracties controleren op klikbare advertenties.
-1. Wanneer de gebruiker de advertentie of knop aanraakt of erop klikt, gebruikt u `[_player notifyClick:_currentAd.primaryAsset];` om TVSDK op de hoogte te brengen.
-1. Luister naar de `PTMediaPlayerAdClickNotification`-gebeurtenis van TVSDK.
-1. Gebruik het object `PTMediaPlayerAdClickURLKey` om de doorklikURL en verwante informatie op te halen.
+1. Wanneer de gebruiker op de advertentie of knop klikt om TVSDK op de hoogte te brengen, gebruikt u `[_player notifyClick:_currentAd.primaryAsset];`.
+1. Luister naar de `PTMediaPlayerAdClickNotification` gebeurtenis van TVSDK.
+1. Als u de doorklikURL en verwante informatie wilt ophalen, gebruikt u de `PTMediaPlayerAdClickURLKey` object.
 1. De video pauzeren.
 1. Gebruik de doorklikinformatie om de advertentie-door URL en de verwante informatie te tonen.
 
@@ -59,4 +58,3 @@ Wanneer een gebruiker op een advertentie, een banneradvertentie of een verwante 
       } 
    } 
    ```
-

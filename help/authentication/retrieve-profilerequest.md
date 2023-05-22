@@ -1,13 +1,13 @@
 ---
 title: SSO-profielaanvraag van Platform ophalen
 description: SSO-profielaanvraag van Platform ophalen
-source-git-commit: 326f97d058646795cab5d062fa5b980235f7da37
+exl-id: 44fd4e26-4d9a-4607-ac2c-b85d848f5fc6
+source-git-commit: bfc3ba55c99daba561255760baf273b6538a3c6e
 workflow-type: tm+mt
 source-wordcount: '183'
 ht-degree: 0%
 
 ---
-
 
 # SSO-profielaanvraag van Platform ophalen {#retrieve-platform-sso-profile-request}
 
@@ -44,5 +44,3 @@ Deze bron produceert profielaanvragen voor een aanvraag-id en een MVPD-bestand.
 | aanvrager | De programmeeraanvragerId waarvoor deze verrichting geldig is. |
 | mvpd | De MVPD-id waarvoor deze bewerking geldig is. |
 | deviceType | Het Apple-platform waarvoor we een aanvraag voor een profiel proberen te verkrijgen.  Willekeurig **iOS** of **tvOS**. |
-
-

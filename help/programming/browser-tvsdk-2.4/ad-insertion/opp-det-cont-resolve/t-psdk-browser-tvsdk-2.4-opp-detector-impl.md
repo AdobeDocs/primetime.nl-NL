@@ -1,14 +1,13 @@
 ---
 description: U kunt uw eigen opportuniteitsgenerator uitvoeren door de interface OpportunityGenerator uit te breiden.
 title: Een aangepaste opportuniteitsgenerator implementeren
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: 45f9ed89-94c4-4e74-b20a-4789a25bd9b3
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '78'
-ht-degree: 5%
+ht-degree: 0%
 
 ---
-
 
 # Een aangepaste opportuniteitsgenerator implementeren{#implement-a-custom-opportunity-generator}
 
@@ -83,4 +82,3 @@ U kunt uw eigen opportuniteitsgenerator uitvoeren door de interface OpportunityG
      } 
    }); 
    ```
-

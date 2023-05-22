@@ -2,14 +2,13 @@
 title: Beperkingen en gedrag voor het spelen van truc
 description: Beperkingen en gedrag voor het spelen van truc
 copied-description: true
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: 5acd91e6-6022-4365-be2b-e84f0a0a91d1
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '285'
 ht-degree: 0%
 
 ---
-
 
 # Beperkingen en gedrag voor het spelen van truc {#limitations-and-behavior-for-trick-play}
 
@@ -31,7 +30,7 @@ Beperkingen voor de speelmodus van een truc:
    * De huidige tijdwaarde springt vooruit (op snelle voorwaartse) of achteruit (op snelle terugspoeling) met de duur overgeslagen en onderbreking.
 
       Door dit spronggedrag voor de huidige tijd kan de streamduur ongewijzigd blijven tijdens het spelen van een truc. De speler kan de tijd alleen bijhouden ten opzichte van de hoofdinhoud. Er worden geen tijdsprongen uitgevoerd op de waarden die tijdens het overslaan van een advertentie worden geretourneerd.
-   * De gebeurtenis `MediaPlayerEvent.AD_BREAK_SKIPPED` wordt verzonden vlak voordat een advertentieeinde wordt overgeslagen.
+   * De `MediaPlayerEvent.AD_BREAK_SKIPPED` -gebeurtenis wordt verzonden vlak voordat een advertentieeinde wordt overgeslagen.
 
       De speler kan deze gebeurtenis gebruiken om aangepaste logica te implementeren met betrekking tot overgeslagen en verbroken bewerkingen.
 

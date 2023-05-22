@@ -1,16 +1,15 @@
 ---
-description: 'Uw speler kan handelingen implementeren op basis van de volgende gebeurtenissen '
+description: Uw speler kan handelingen implementeren op basis van de volgende gebeurtenissen
 title: Gebeurtenissen van Loader
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: c9fd00fb-1872-4bfb-8ce3-fdece4af45fe
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '38'
 ht-degree: 0%
 
 ---
 
-
-# Loader-gebeurtenissen{#loader-events}
+# Gebeurtenissen van Loader{#loader-events}
 
 Uw speler kan handelingen implementeren op basis van de volgende gebeurtenissen:
 
@@ -18,4 +17,3 @@ Uw speler kan handelingen implementeren op basis van de volgende gebeurtenissen:
 |---|---|
 | `MediaPlayerItemLoader.completed` | Het laden van mediabronnen is voltooid. |
 | `MediaPlayerItemLoader.failed` | Er is een probleem opgetreden bij het laden van mediabronnen. |
-

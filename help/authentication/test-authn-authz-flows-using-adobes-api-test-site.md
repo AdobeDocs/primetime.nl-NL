@@ -1,13 +1,13 @@
 ---
 title: Hoe te om de stromen van de Vergunning van de Authentificatie te testen gebruikend Adobe API testplaats
 description: Hoe te om de stromen van de Vergunning van de Authentificatie te testen gebruikend Adobe API testplaats
-source-git-commit: 326f97d058646795cab5d062fa5b980235f7da37
+exl-id: 04af4aed-35e4-44cb-98ce-7643165a8869
+source-git-commit: bfc3ba55c99daba561255760baf273b6538a3c6e
 workflow-type: tm+mt
 source-wordcount: '318'
 ht-degree: 0%
 
 ---
-
 
 # Hoe te om de stromen van de Vergunning van de Authentificatie te testen gebruikend de plaats van de Test van Adobe API {#How-to-test-auth-flows}
 
@@ -42,4 +42,3 @@ Voer de volgende stappen uit nadat u deel I hebt voltooid:
 1. Als u de autorisatie wilt testen, voert u in het veld voor de broninvoer de waarde &quot;**aanvragerID**&quot; en klik op de knop &quot;getAuthorization&quot;.
 1. Dientengevolge, in &quot;setToken&quot; - \>&quot;middel identiteitskaart&quot;textbox zal de middel worden getoond en in &quot;setToken&quot;- \>&quot;symbolische&quot;textbox shortAuthorizationToken zal worden getoond betekenend dat authZ succesvol was.
 1. Nu kunt u op de knop &quot;logout&quot; klikken om de tokens te verwijderen.
-

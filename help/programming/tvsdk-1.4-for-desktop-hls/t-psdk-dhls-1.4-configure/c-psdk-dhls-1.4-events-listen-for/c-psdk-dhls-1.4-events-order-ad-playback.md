@@ -1,16 +1,15 @@
 ---
 description: Wanneer uw afspelen advertenties bevat, verzendt TVSDK gebeurtenissen/meldingen in de over het algemeen verwachte reeksen. De speler kan handelingen implementeren op basis van gebeurtenissen in de verwachte volgorde.
 title: Volgorde van reclameevenementen
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: 131b1dc1-3a59-4276-b639-d004ab7394ea
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '97'
 ht-degree: 0%
 
 ---
 
-
-# Volgorde van advertentieevenementen{#order-of-advertising-events}
+# Volgorde van reclameevenementen{#order-of-advertising-events}
 
 Wanneer uw afspelen advertenties bevat, verzendt TVSDK gebeurtenissen/meldingen in de over het algemeen verwachte reeksen. De speler kan handelingen implementeren op basis van gebeurtenissen in de verwachte volgorde.
 
@@ -68,4 +67,3 @@ private function onAdClick(event:AdClickThroughEvent):void {
     ... 
 } 
 ```
-

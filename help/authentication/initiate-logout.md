@@ -1,13 +1,13 @@
 ---
 title: Afmelden starten
 description: Afmelden starten
-source-git-commit: 326f97d058646795cab5d062fa5b980235f7da37
+exl-id: 9625b5a2-31d9-4e20-8703-4a9e4eeb1618
+source-git-commit: bfc3ba55c99daba561255760baf273b6538a3c6e
 workflow-type: tm+mt
 source-wordcount: '301'
 ht-degree: 0%
 
 ---
-
 
 # Afmelden starten {#initiate-logout}
 
@@ -50,6 +50,4 @@ AuthN en AuthZ tekenen uit opslag verwijderen.
 
 >[!IMPORTANT]
 > 
->De logout vraag heeft momenteel de volgende beperking: de AuthN- en AuthZ-tokens worden uit de opslag verwijderd (dus aan de zijde Programmer/Primetime-verificatie), maar **niet** roep het MVPD logout eindpunt. 
-
-
+>De logout vraag heeft momenteel de volgende beperking: de AuthN- en AuthZ-tokens worden uit de opslag verwijderd (dus aan de zijde Programmer/Primetime-verificatie), maar **niet** roep het MVPD logout eindpunt.

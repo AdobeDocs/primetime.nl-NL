@@ -1,13 +1,13 @@
 ---
 title: Voordelen om de parameter Clientless deviceType in de metriek van de authentificatie te gebruiken Primetime
 description: Voordelen om de parameter Clientless deviceType in de metriek van de authentificatie te gebruiken Primetime
-source-git-commit: 326f97d058646795cab5d062fa5b980235f7da37
+exl-id: a5004887-d5fa-468e-971b-10806519175b
+source-git-commit: bfc3ba55c99daba561255760baf273b6538a3c6e
 workflow-type: tm+mt
 source-wordcount: '342'
 ht-degree: 0%
 
 ---
-
 
 # Voordelen om de parameter Clientless deviceType in de metriek van de authentificatie te gebruiken Primetime {#benefits-of-using-the-clientless-devicetype-parameter-in-primetime-authentication-metrics}
 
@@ -61,5 +61,3 @@ Om volledig van de metriek van de authentificatie van Primetime te profiteren, z
    - [\&lt;sp _fqdn=&quot;&quot;>/api/v1/logout](#init_logout)
 
 Onze aanbeveling is om de `deviceType` en geeft het juiste apparaattype zonder Clientless voor alle API&#39;s door.
-
-

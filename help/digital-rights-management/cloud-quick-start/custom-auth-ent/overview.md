@@ -2,14 +2,13 @@
 title: BES-overzicht
 description: BES-overzicht
 copied-description: true
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: 481af72b-40a3-4f33-9e91-990dc5308596
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '239'
 ht-degree: 0%
 
 ---
-
 
 # BES-overzicht{#bees-overview}
 
@@ -27,6 +26,6 @@ Uw on-premisse machtigingsservice moet een reactie op Primetime Cloud DRM levere
 * `isAllowed`
 * `drmPolicyToUse`
 
-Deze bepalen of een apparaat de inhoud mag afspelen en welk DRM-beleid moet worden gebruikt om de DRM-licentie te genereren (als `isAllowed` true is).
+Deze bepalen of een apparaat de inhoud mag afspelen en welk DRM-beleid moet worden gebruikt om de DRM-licentie te genereren (als `isAllowed` is waar).
 
 Dit document behandelt wat u moet doen om Optie 2 hierboven te verwezenlijken: Implementeer uw eigen externe machtigingsservice op locatie en stel deze beschikbaar voor Primetime Cloud DRM voor inhoud die u hebt verpakt.

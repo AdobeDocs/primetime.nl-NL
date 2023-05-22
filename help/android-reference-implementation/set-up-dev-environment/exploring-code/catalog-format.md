@@ -1,14 +1,13 @@
 ---
 description: De Primetime-referentie-implementatie gebruikt een op JSON gebaseerde feed-indeling voor reacties. Dit formaat wordt geparseerd gebruikend een implementatie van de interface IFeedItemAdapter.
 title: Catalogusindeling
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: faaeb647-9c01-4290-be1e-2b8461c8ad27
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '620'
 ht-degree: 0%
 
 ---
-
 
 # Catalogusindeling {#catalog-format}
 
@@ -75,7 +74,7 @@ Elke feed-invoer is een JSON-object met een bepaalde set kenmerken:
 | `thumbnails` | Een array van JSON-objecten met URL&#39;s voor verschillende miniatuurgrootten. De JSON-objectkenmerken worden hieronder gedefinieerd. |
 | `metadata` | Een JSON-object dat metagegevens voor de inhoud definieert. Momenteel zijn deze metagegevens beperkt tot metagegevens die betrekking hebben op de inhoud. Het object metadata wordt hieronder gedefinieerd. |
 
-Het volgende codeblok definieert de JSON-objecten die de array van **inhoudsobjecten** vormen:
+Het volgende codeblok definieert de JSON-objecten die de array van **inhoudsobjecten**:
 
 ```
 "content":  [
@@ -94,7 +93,7 @@ Het volgende codeblok definieert de JSON-objecten die de array van **inhoudsobje
 | format | Moet de m3u8-indeling zijn voor Android. |
 | url | De URL naar de videostream voor de opgegeven indeling. |
 
-Het volgende codeblok definieert de JSON-objecten die de array van **miniatuurobjecten** vormen:
+Het volgende codeblok definieert de JSON-objecten die de array van **miniatuurobjecten**:
 
 ```
 "thumbnails": [
@@ -115,12 +114,12 @@ Het volgende codeblok definieert de JSON-objecten die de array van **miniatuurob
 
 | Eigenschap | Beschrijving |
 |---|---|
-| format | Een tekenreeks die de indeling van het miniatuurbestand aangeeft, bijvoorbeeld JPEG, PNG enzovoort. |
+| format | Een tekenreeks die de indeling van het miniatuurbestand aangeeft, bijvoorbeeld JPEG, PNG, enzovoort. |
 | height | De hoogte van de miniatuur. In de referentietoepassing wordt de miniatuur met de kleinste hoogte en breedte geretourneerd als de kleine miniatuur en de miniatuur met de grootste breedte en hoogte als de grote miniatuur. |
 | width | De breedte van de miniatuur. In de referentietoepassing wordt de miniatuur met de kleinste hoogte en breedte geretourneerd als de kleine miniatuur en de miniatuur met de grootste breedte en hoogte als de grote miniatuur. |
 | url | De URL naar het miniatuurbestand. |
 
-Het volgende codeblok definieert het **metagegevensobject**:
+Het volgende codeblok definieert het **Object metadata**:
 
 ```
 "metadata" : {
@@ -141,5 +140,4 @@ Het volgende codeblok definieert het **metagegevensobject**:
 | type | De waarde kan zijn Primetime Advertenties, Directe Advertentiemarkeringen, of de Markeringen van de Aangepaste Advertentie. <br/><br/>De PSDK biedt ingebouwde ondersteuning voor de volgende typen metagegevens: Aan controles gerelateerde metagegevens voor Primetime en Bezig met bedienen (Primetime-advertenties), directe ad-break met advertentiepunten (Direct Ad Breaks) en aangepaste ad-markeertekens die de TimeRange voor elke advertentiemarkering (Aangepaste advertentiemarkeringen) bieden. Elk type heeft ingebouwde AdProvider in PSDK die de meta-gegevens verwerkt.  <br/><br/>De JSON-indeling voor elk van deze zijn hieronder gedefinieerd. |
 | details | Bevat de kenmerken voor metagegevens van de advertentie. Beide typen metagegevens hebben hun eigen set kenmerken die hieronder worden gedefinieerd. Voor de ingebouwde types, bepalen de inbegrepen attributen de gegevens die door PSDK voor dat type worden verwacht. |
 | aanspraak | Metagegevens met betrekking tot rechten |
-| id | Media resource-id die wordt gebruikt voor autorisatieaanvragen tegen de betaaltelevisieomroep van Adobe Primetime. De id kan een tekstreeks of een HTML-gecodeerde mRSS-tekenreeks zijn. Alle media-inhoud waarvoor toestemming vereist is, moet een geldige bron-id bevatten. |
-
+| id | Media resource-id die wordt gebruikt voor autorisatieaanvragen tegen de betaaltelevisieomroep van Adobe Primetime. De id kan een tekstreeks of een met HTML gecodeerde mRSS-tekenreeks zijn. Alle media-inhoud waarvoor toestemming vereist is, moet een geldige bron-id bevatten. |

@@ -1,16 +1,15 @@
 ---
 description: Browser TVSDK biedt een DRM-interface waarmee u inhoud kunt afspelen die is beveiligd door verschillende DRM-oplossingen, zoals FairPlay, PlayReady en Widevine.
 title: Overzicht van de DRM-interface
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: aa13f042-4472-4fc3-b7ba-61746b8e024a
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '264'
 ht-degree: 0%
 
 ---
 
-
-# Overzicht van DRM-interface{#drm-interface-overview}
+# Overzicht van de DRM-interface{#drm-interface-overview}
 
 Browser TVSDK biedt een DRM-interface waarmee u inhoud kunt afspelen die is beveiligd door verschillende DRM-oplossingen, zoals FairPlay, PlayReady en Widevine.
 
@@ -20,7 +19,7 @@ Browser TVSDK biedt een DRM-interface waarmee u inhoud kunt afspelen die is beve
 >
 >DRM-ondersteuning is beschikbaar voor MPEG-Dash-streams die zijn beveiligd met Microsoft PlayReady (in Internet Explorer op Windows 8.1 en Edge) en Widevine (op Google Chrome) DRM-systemen. DRM-ondersteuning is beschikbaar voor HLS-streams in Safari die zijn beveiligd met FairPlay.
 
-De belangrijkste interface van het DRM werkschema is `DRMManager`. Een verwijzing naar de instantie `DRMManager` kan via de instantie MediaPlayer worden verkregen:
+De belangrijkste interface van de DRM-workflow is: `DRMManager`. Een verwijzing naar de `DRMManager` -instantie kan worden verkregen via de MediaPlayer-instantie:
 
 * `var mediaPlayer = new AdobePSDK.MediaPlayer();`
 * `var drmManager = mediaPlayer.drmManager;`
@@ -29,7 +28,7 @@ De belangrijkste interface van het DRM werkschema is `DRMManager`. Een verwijzin
 
 Hier volgt een workflow op hoog niveau voor het afspelen van DRM-beveiligde inhoud:
 
-1. Als u de DRM-systeemspecifieke gegevens wilt bijvoegen die door Browser TVSDK worden gebruikt in het licentieaanschafproces voor een beveiligde stream, roept u `mediaPlayer.replaceCurrentResource` als volgt aan:
+1. Om de DRM-systeem-specifieke gegevens vast te maken die door Browser TVSDK in het proces van de vergunningsverwerving voor een beschermde stroom zullen worden gebruikt, maak de volgende vraag alvorens het aanhalen van `mediaPlayer.replaceCurrentResource`:
 
    ```js
    var protectionData = { 
@@ -100,14 +99,14 @@ Hier volgt een workflow op hoog niveau voor het afspelen van DRM-beveiligde inho
 
 1. Standaard is het sessietype voor de DRM-licentie tijdelijk, wat betekent dat de licentie niet wordt opgeslagen nadat de sessie is gesloten.
 
-   U kunt een sessietype opgeven met behulp van een API in `DRMManager`.  Voor achterwaartse verenigbaarheid, zittingstypes omvatten `temporary`, `persistent-license`, `persistent-usage-record`, en `persistent`.
+   U kunt een sessietype opgeven met behulp van een API in `DRMManager`.  Voor achterwaartse verenigbaarheid, omvatten de zittingstypes `temporary`, `persistent-license`, `persistent-usage-record`, en `persistent`.
 
    ```js
    var drmManager = mediaPlayer.drmManager; 
     drmManager.setEMESessionType(“<YOUR_SESSION_TYPE>”); 
    ```
 
-1. Wanneer `sessionType` wordt gebruikt `persistent-license` of `persistent` is, kan de DRM vergunning worden teruggekeerd door &lt;a3 aan te halen/>.`DRMManager.returnLicense`
+1. Wanneer de `sessionType` gebruikt is `persistent-license` of `persistent`, kan de DRM-licentie worden geretourneerd door het aanroepen `DRMManager.returnLicense`.
 
    ```js
    var onLicenseReturnFunc = function () { 
@@ -126,4 +125,3 @@ Hier volgt een workflow op hoog niveau voor het afspelen van DRM-beveiligde inho
        drmManager.returnLicense(null, null, null, false, returnLicenseListener, drmLicense.session); 
    }
    ```
-

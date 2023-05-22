@@ -178,7 +178,7 @@ ht-degree: 0%
       + [Meldingscodes](tvsdk-3x-android-prog/android-3x-events-notifications/notification-codes/android-3x-notification-codes.md)
       + [PSDK-foutcodes](tvsdk-3x-android-prog/android-3x-events-notifications/notification-codes/android-3x-error-codes.md)
       + [Details voor de melding NATIVE_ERROR](tvsdk-3x-android-prog/android-3x-events-notifications/notification-codes/android-3x-native-error-summary.md)
-      + [Overzicht van gebeurtenissen in de primaire speler](tvsdk-3x-android-prog/android-3x-events-notifications/events-summary/android-3x-events-summary.md)
+      + [Overzicht van gebeurtenissen in de primetime-speler](tvsdk-3x-android-prog/android-3x-events-notifications/events-summary/android-3x-events-summary.md)
    + Facturering {#billing}
       + [Factureringscijfers](tvsdk-3x-android-prog/android-3x-billing-title/billing/android-3x-billing.md)
       + [Factureringsmetriek configureren](tvsdk-3x-android-prog/android-3x-billing-title/billing/android-3x-billing-config.md)
@@ -453,7 +453,7 @@ ht-degree: 0%
       + Meldingscodes {#notification-codes}
          + [Overzicht](tvsdk-2.7-for-android/events-and-notifications/notification-codes/c-psdk-android-2.7-notification-codes.md)
          + [Details voor de melding NATIVE_ERROR](tvsdk-2.7-for-android/events-and-notifications/notification-codes/c-psdk-android-2.7-native-error-summary.md)
-      + [Overzicht van gebeurtenissen in de primetime-speler](tvsdk-2.7-for-android/events-and-notifications/events-summary/c-psdk-android-2.7-events-summary.md)
+      + [Overzicht van gebeurtenissen in de primaire speler](tvsdk-2.7-for-android/events-and-notifications/events-summary/c-psdk-android-2.7-events-summary.md)
       + Factureringscijfers {#billing-metrics}
          + [Overzicht](tvsdk-2.7-for-android/billing/c-psdk-android-2.7-billing.md)
          + [Factureringsmetriek configureren](tvsdk-2.7-for-android/billing/t-psdk-android-2.7-billing-config.md)

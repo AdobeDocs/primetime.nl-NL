@@ -1,16 +1,15 @@
 ---
 description: TVSDK kan gewijzigde afspeelinformatie in master m3u8-manifests voor live streaming detecteren en de afspeelinformatie bijwerken terwijl de stream wordt afgespeeld. TVSDK ondersteunt een dynamische set bitsnelheidprofielen die worden weergegeven of verdwijnen uit het master manifest, inclusief niet-overlappende bitsnelheden voor profielen tussen updates.
 title: Live master-manifest-update
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: e3fffe64-1d44-4227-b830-c7661478f067
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '740'
 ht-degree: 0%
 
 ---
 
-
-# Live master-manifest update{#live-master-manifest-update}
+# Live master-manifest-update{#live-master-manifest-update}
 
 TVSDK kan gewijzigde afspeelinformatie in master m3u8-manifests voor live streaming detecteren en de afspeelinformatie bijwerken terwijl de stream wordt afgespeeld. TVSDK ondersteunt een dynamische set bitsnelheidprofielen die worden weergegeven of verdwijnen uit het master manifest, inclusief niet-overlappende bitsnelheden voor profielen tussen updates.
 
@@ -47,16 +46,16 @@ Deze functie is standaard uitgeschakeld. Als de toepassing deze inschakelt door 
    * Als een gelijke wordt gevonden, schakelt de speler eerst naar het passende profiel van het beetjetarief in bestaand manifest en overschakelt naar het passende profiel van het beetjetarief in bijgewerkt manifest. Dit zorgt ervoor dat de overgang vloeiend verloopt.
    * Als er geen beetjetarief in gemeenschappelijk tussen vorig manifest en nieuw manifest is, of als TVSDK niet op het beetjetarief kan schakelen dat aanpast, de schakelaars TVSDK direct aan het laagste die tariefprofiel van nieuw manifest en gebruiksABR om aan om het even welk toelaatbare beetjetarief over te schakelen op bandbreedte wordt gebaseerd. Hierdoor kan het afspelen enigszins glitch zijn, maar dit heeft minimaal effect.
 
-1. Als de update succesvol is, verzendt TVSDK een `MediaPlayerItemEvent.MASTER_UPDATED` gebeurtenis.
+1. Als de update is gelukt, verzendt de TVSDK een `MediaPlayerItemEvent.MASTER_UPDATED` gebeurtenis.
 1. Als de update niet is gelukt, wordt het afspelen voortgezet met de installatie van vóór deze update.
 
 ### Voorbeeld 1 {#example_DB55F2B9D98741628C9B973E47A0B6A0}
 
 De volgende bitsnelheden worden live uitgezonden:
 
-* 500 kB
-* 900 kB
-* 2100 kB
+* 500k
+* 900k
+* 2100k
 
 De 2100k-stream heeft een aantal problemen en moet daarom opnieuw worden opgestart. Het master manifest wordt bijgewerkt en bevat slechts 500 kB en 900 kB. Kort daarna zullen de gebruikers die dit programma bij 2100 k bekijken een beetje tariefschakelaar aan 900 k krijgen. De gebruikers die op 900.000 uur kijken, blijven om 900.000 uur kijken. Later, hervat de stroom 2100k, en het wordt toegevoegd terug in master manifest. Enige tijd later, worden de gebruikers die bij 900k letten, en de bandbreedte hebben, overgeschakeld naar 2100k.
 
@@ -64,16 +63,15 @@ De 2100k-stream heeft een aantal problemen en moet daarom opnieuw worden opgesta
 
 De volgende bitsnelheden worden live uitgezonden:
 
-* 500 kB
-* 900 kB
-* 2100 kB
+* 500k
+* 900k
+* 2100k
 
 Al deze beetjetarieven moeten opnieuw worden begonnen. Hiervoor zijn twee tijdsstromen ingesteld, op 400 kbps en 1500 kbps. De gebruikers worden geschakeld aan 400k, die het laagste beetjetarief van de nieuwe configuratie is. Sommige gebruikers worden geschakeld naar 1500k wanneer hun bandbreedte voldoende is. Later, zijn de drie beetjetarieven file en master manifest wordt bijgewerkt. De gebruikers schakelen automatisch terug om bij 500k te letten, die de laagste bandbreedte in herzien (origineel) manifest is. Een tijdje later, worden de gebruikers geschakeld aan de hoogste bandbreedte (900k of 1200k) die hun netwerk toestaat.
 
-## Live master-manifest update {#section_34AC4A9751DB4B7C8561302C6A59A1C4} gebruiken
+## Live update master-manifest gebruiken {#section_34AC4A9751DB4B7C8561302C6A59A1C4}
 
 U kunt deze functie inschakelen en controleren op verwante gebeurtenissen.
 
-1. Als u live master-manifest updates wilt inschakelen, stelt u de updatefrequentie (in minuten) in door de eigenschap `NetworkConfiguration.masterUpdateInterval` in te stellen.
-1. U kunt succesvolle manifestupdates optioneel bijhouden door te luisteren naar de gebeurtenis `MediaPlayerItemEvent.MASTER_UPDATED`.
-
+1. Als u live master-manifest updates wilt inschakelen, stelt u de updatefrequentie (in minuten) in door de instelling van de optie `NetworkConfiguration.masterUpdateInterval` eigenschap.
+1. Optioneel, spoor succesvolle duidelijke updates door naar het `MediaPlayerItemEvent.MASTER_UPDATED` gebeurtenis.

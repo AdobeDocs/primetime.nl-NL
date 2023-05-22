@@ -2,27 +2,26 @@
 title: Een DRM-beleid bijwerken met de Java API
 description: Een DRM-beleid bijwerken met de Java API
 copied-description: true
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: 00bb9b64-30f7-4900-b6bd-57604295b44d
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '113'
 ht-degree: 0%
 
 ---
 
-
 # Een DRM-beleid bijwerken met de Java API {#updating-a-drm-policy-with-the-java-api}
 
 Een DRM-beleid bijwerken met de Java API:
 
-1. Stel uw ontwikkelomgeving in en neem alle JAR-bestanden op die worden vermeld in [De ontwikkelomgeving instellen](../../protecting-content/setting-up-the-sdk/setup-dev-env.md).
-1. Maak een DRM `Policy`-instantie en lees het DRM-beleid vanuit een bestand of database.
+1. Stel uw ontwikkelomgeving in en neem in uw project alle JAR-bestanden op die in [De ontwikkelomgeving instellen](../../protecting-content/setting-up-the-sdk/setup-dev-env.md).
+1. Een DRM maken `Policy` -instantie en lees het DRM-beleid vanuit een bestand of database.
 
    ```
    Policy policy = new Policy(policyBytes);
    ```
 
-1. Werk het DRM `Policy` voorwerp door zijn eigenschappen, zoals zijn naam en gebruiksregels te plaatsen bij.
+1. DRM bijwerken `Policy` objecten door zijn eigenschappen, zoals zijn naam en gebruiksregels te plaatsen.
 
    ```java
    // Change the DRM policy name.  
@@ -47,7 +46,7 @@ Een DRM-beleid bijwerken met de Java API:
    }
    ```
 
-1. Serialiseren van het bijgewerkte DRM `Policy`-object en opslaan dit in een bestand of database.
+1. Serienummering van de bijgewerkte DRM `Policy` en sla deze op in een bestand of database.
 
    ```java
    // Serialize the DRM policy.  
@@ -61,4 +60,4 @@ Een DRM-beleid bijwerken met de Java API:
    out.close();
    ```
 
-Zie `com.adobe.flashaccess.samples.policy.UpdatePolicy` in de folder van de Hulpmiddelen [!DNL samples] van de Lijn van het Bevel van de Implementatie van de Verwijzing voor de bron van deze steekproefcode.
+Zie `com.adobe.flashaccess.samples.policy.UpdatePolicy` in de opdrachtregelprogramma&#39;s voor de referentieimplementatie [!DNL samples] directory voor de bron van deze voorbeeldcode.

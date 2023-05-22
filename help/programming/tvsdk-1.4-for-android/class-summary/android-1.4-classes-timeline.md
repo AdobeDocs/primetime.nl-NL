@@ -1,14 +1,13 @@
 ---
 description: Deze klassen bieden informatie over de tijdlijn van de specifieke media, waaronder de plaatsing van advertenties.
 title: Tijdlijnklassen
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: bb879592-aef2-4adb-acbc-c927133a5cc5
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '226'
 ht-degree: 0%
 
 ---
-
 
 # Tijdlijnklassen{#timeline-classes}
 
@@ -46,4 +45,3 @@ Pakket: [com.adobe.mediacore.timeline](https://help.adobe.com/en_US/primetime/ap
   </tr> 
  </tbody> 
 </table>
-

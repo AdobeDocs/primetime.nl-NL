@@ -1,13 +1,13 @@
 ---
 title: REST API-overzicht
 description: Overzicht voor rest-API's
-source-git-commit: 326f97d058646795cab5d062fa5b980235f7da37
+exl-id: 5533d852-f644-417e-bf80-6f7aa1edd6b2
+source-git-commit: bfc3ba55c99daba561255760baf273b6538a3c6e
 workflow-type: tm+mt
 source-wordcount: '1596'
 ht-degree: 0%
 
 ---
-
 
 # REST API-overzicht {#rest-api-overview}
 
@@ -99,5 +99,3 @@ Het volgende is op zowel server-aan-server als Verbonden toepassingen van het Ap
 ## Minimale apparaatvereisten {#min_reqs}
 
 Voor het gebruik van de API voor primaire authenticatie REST moeten de apparaten voldoen aan de minimale technische vereisten die zijn vermeld in de sectie REST API van het dialoogvenster [Document met vereisten voor primetime-verificatie Platform / apparaat / tools](#general_clientless_reqs).
-
-

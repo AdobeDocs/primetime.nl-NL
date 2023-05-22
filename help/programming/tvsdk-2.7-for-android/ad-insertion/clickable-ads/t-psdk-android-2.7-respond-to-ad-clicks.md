@@ -1,14 +1,13 @@
 ---
 description: Wanneer een gebruiker op een advertentie of een verwante knop klikt, moet de toepassing reageren. TVSDK biedt u informatie over de doel-URL voor de klik.
 title: Reageren op klikken op advertenties
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: a313bb03-a857-48b6-ace7-b61574dbf75f
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '325'
 ht-degree: 0%
 
 ---
-
 
 # Reageren op klikken op advertenties {#respond-to-clicks-on-ads}
 
@@ -17,13 +16,13 @@ TVSDK biedt u informatie zodat u op doorklikadvertenties kunt werken. Terwijl u 
 Voor TVSDK voor Android kan alleen op lineaire advertenties worden geklikt.
 Wanneer een gebruiker op een advertentie of een verwante knop klikt, moet de toepassing reageren. TVSDK biedt u informatie over de doel-URL voor de klik.
 
-1. Registreer `AdClickedEventListener.onAdClicked` om een gebeurtenislistener voor TVSDK in te stellen en de doorklikinformatie te verstrekken.
+1. Als u een gebeurtenislistener voor TVSDK wilt instellen en de doorklikgegevens wilt opgeven, registreert u `AdClickedEventListener.onAdClicked`.
 
    Wanneer een gebruiker op een advertentie of een verwante knop klikt, verzendt TVSDK dit bericht, inclusief informatie over de bestemming voor de klik.
 1. Gebruikersinteracties controleren op klikbare advertenties.
-1. Wanneer de gebruiker de advertentie of knop aanraakt of erop klikt, om TVSDK op de hoogte te brengen, roept u `notifyClick` op `MediaPlayerView`.
-1. Luister naar de `onAdClick(AdClickEvent event)`-gebeurtenis van TVSDK.
-1. Als u de doorklikURL en verwante informatie wilt ophalen, gebruikt u de methoden getter voor de instantie `AdClickEvent`.
+1. Wanneer de gebruiker op de advertentie of knop klikt om TVSDK op de hoogte te brengen, roept u `notifyClick` op de `MediaPlayerView`.
+1. Luister naar de `onAdClick(AdClickEvent event)` gebeurtenis van TVSDK.
+1. Als u de doorklikURL en verwante informatie wilt ophalen, gebruikt u de methoden getter voor de `AdClickEvent` -instantie.
 1. De video pauzeren.
 
    Zie Het pauzeren en hervatten van het afspelen voor meer informatie over het pauzeren van de video.
@@ -97,4 +96,3 @@ private AdClickedEventListener adClickedEventListener =
     } 
 }; 
 ```
-

@@ -2,20 +2,19 @@
 title: Bepalen of Referentie-implementatie-licentieserver correct wordt uitgevoerd
 description: Bepalen of Referentie-implementatie-licentieserver correct wordt uitgevoerd
 copied-description: true
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: 97ca0b6c-2661-4cdc-b8d0-dcc545f009f6
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '362'
 ht-degree: 0%
 
 ---
 
+# Bepalen of Referentie-implementatie-licentieserver correct wordt uitgevoerd {#determining-if-reference-implementation-license-server-runs-properly}
 
-# Bepalen of Referentie-implementatielicentieserver correct {#determining-if-reference-implementation-license-server-runs-properly} wordt uitgevoerd
+Er zijn verscheidene manieren om te bepalen of uw Server van de Vergunning van de Implementatie van de Verwijzing correct is begonnen. U kunt de [!DNL catalina.log] logbestanden zijn mogelijk niet voldoende, aangezien de licentieserver zich aanmeldt bij zijn eigen logbestanden. Voer de onderstaande stappen uit om ervoor te zorgen dat de implementatie van de referentie correct is gestart.
 
-Er zijn verscheidene manieren om te bepalen of uw Server van de Vergunning van de Implementatie van de Verwijzing correct is begonnen. U kunt de [!DNL catalina.log] logboeken bekijken kan niet voldoende zijn, aangezien de vergunningsserver aan zijn eigen logboekdossiers registreert. Voer de onderstaande stappen uit om ervoor te zorgen dat de implementatie van de referentie correct is gestart.
-
-* Controleer het [!DNL AdobeFlashAccess.log]-bestand. Dit is waar de Implementatie van de Verwijzing logboekinformatie schrijft. De locatie van dit logbestand wordt aangegeven door het [!DNL log4j.xml]-bestand en kan worden gewijzigd om naar elke gewenste locatie te wijzen. Standaard is het logbestand gekopieerd naar de werkmap waar u catalina uitvoert.
+* Controleer uw [!DNL AdobeFlashAccess.log] bestand. Dit is waar de Implementatie van de Verwijzing logboekinformatie schrijft. De locatie van dit logbestand wordt aangegeven door uw [!DNL log4j.xml] en kan worden gewijzigd om naar elke gewenste locatie te verwijzen. Standaard is het logbestand gekopieerd naar de werkmap waar u catalina uitvoert.
 
 * Ga naar de volgende URL: [!DNL https:// flashaccess/license/v4]*uw server:serverpoort*. U moet de tekst &quot;Licentieserver is correct ingesteld&quot; zien.
 
@@ -23,9 +22,9 @@ Een andere manier om te testen of de server correct wordt uitgevoerd, is het ver
 
 De volgende procedure beschrijft dit proces:
 
-1. Ga naar de [!DNL \Reference Implementation\Command Line Tools] omslag.
+1. Ga naar de [!DNL \Reference Implementation\Command Line Tools] map.
 
-   Zie [De opdrachtregelprogramma&#39;s installeren](../drm-reference-implementations/command-line-tools/install-command-line-tools.md) voor informatie over het installeren van de opdrachtregelprogramma&#39;s.
+   Zie [De opdrachtregelprogramma&#39;s installeren](../drm-reference-implementations/command-line-tools/install-command-line-tools.md) op hoe te om de hulpmiddelen van de bevellijn te installeren.
 
 1. Typ het volgende bevel om een eenvoudig anoniem beleid te creëren DRM:
 
@@ -33,11 +32,11 @@ De volgende procedure beschrijft dit proces:
        java -jar libs\AdobePolicyManager.jar new policy_test.pol -x
    ```
 
-   Zie [Het lijngebruik van het Bevel](../drm-reference-implementations/command-line-tools/configure-command-line-tools/policy-manager/policy-manager-command-line-usage.md) op hoe te om beleid DRM met de Manager van het Beleid te creëren DRM.
+   Zie [Gebruik van opdrachtregels](../drm-reference-implementations/command-line-tools/configure-command-line-tools/policy-manager/policy-manager-command-line-usage.md) over het maken van DRM-beleid met DRM-beleidsbeheer.
 
-1. Stel de eigenschap `encrypt.license.serverurl` in het bestand [!DNL flashaccesstools.properties] in op de URL van de licentieserver.
+1. Stel de `encrypt.license.serverurl` eigenschap in de [!DNL flashaccesstools.properties] bestand naar de URL van de licentieserver.
 
-   Bijvoorbeeld, [!DNL https:// localhost:8080/]. Het [!DNL flashaccesstools.properties]-bestand bevindt zich in de map [!DNL \Reference Implementation\Command Line Tools].
+   Bijvoorbeeld: [!DNL https:// localhost:8080/]. De [!DNL flashaccesstools.properties] bestand bevindt zich in het dialoogvenster [!DNL \Reference Implementation\Command Line Tools] map.
 
 1. Typ de volgende opdracht om een segment van de inhoud in een pakket te plaatsen:
 
@@ -52,15 +51,14 @@ De volgende procedure beschrijft dit proces:
        </i class="+ topic>
 ```
 
-1. Kopieer de twee gegenereerde bestanden naar de map [!DNL webapps\ROOT\Content] op de Tomcat-server.
-1. Ga naar [!DNL Reference Implementation\Sample Video Players\Desktop\Flash Player\Release] folder en kopieer de inhoud aan  [!DNL webapps\ROOT\SVP\] omslag op de server van Tomcat.
+1. Kopieer de twee gegenereerde bestanden naar de [!DNL webapps\ROOT\Content] op de Tomcat-server.
+1. Ga naar de [!DNL Reference Implementation\Sample Video Players\Desktop\Flash Player\Release] en kopieer de inhoud naar de [!DNL webapps\ROOT\SVP\] op de Tomcat-server.
 
 1. Installeer Flash Player versie 10.1 of hoger.
 1. Open een webbrowser en ga naar de volgende URL: [!DNL        https:// localhost:8080/SVP/player.html]
 
 1. Ga naar de volgende URL en klik vervolgens op **[!UICONTROL Play]**: [!DNL https:// localhost:8080/Content/] *`your_encrypted_FLV`*.
 
-1. Als de video niet kan worden afgespeeld, controleert u of foutcodes worden weergegeven in het logboekvenster van de Sample Video Player of worden toegevoegd aan het [!DNL AdobeFlashAccess.log]-bestand.
+1. Als de video niet kan worden afgespeeld, controleert u of er foutcodes worden weergegeven in het logboekvenster van de Sample Video Player of toegevoegd aan de component [!DNL AdobeFlashAccess.log] bestand.
 
-   U kunt nu zoeken naar de locatie van het logbestand [!DNL AdobeFlashAccess.log] in het bestand log4j.xml en dit vervolgens wijzigen. Standaard wordt het logbestand gekopieerd naar de werkmap waarin u catalina uitvoert.
-
+   U kunt nu zoeken naar de locatie van het dialoogvenster [!DNL AdobeFlashAccess.log] logbestand in het bestand log4j.xml en wijzig het vervolgens. Standaard wordt het logbestand gekopieerd naar de werkmap waarin u catalina uitvoert.

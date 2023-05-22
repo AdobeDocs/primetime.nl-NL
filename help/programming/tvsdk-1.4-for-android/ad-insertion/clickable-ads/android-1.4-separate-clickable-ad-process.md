@@ -1,22 +1,21 @@
 ---
 description: U moet de gebruikersinterfacelogica van uw speler scheiden van het proces dat beheert en klikt. Één manier om dit te doen is veelvoudige Fragments voor een Activiteit uit te voeren.
 title: Scheid het klikbare ad proces
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: 6519b8ed-2963-4708-bbb9-8ff178c1fa86
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '143'
 ht-degree: 0%
 
 ---
 
-
-# Scheid klikbare ad proces{#separate-the-clickable-ad-process}
+# Scheid het klikbare ad proces{#separate-the-clickable-ad-process}
 
 U moet de gebruikersinterfacelogica van uw speler scheiden van het proces dat beheert en klikt. Één manier om dit te doen is veelvoudige Fragments voor een Activiteit uit te voeren.
 
-1. Eén fragment implementeren dat de `MediaPlayer` bevat en dat verantwoordelijk is voor het afspelen van video.
+1. Eén fragment implementeren dat de `MediaPlayer` en die verantwoordelijk zijn voor het afspelen van video.
 
-   Dit fragment moet `notifyClick` aanroepen.
+   Dit fragment moet worden aangeroepen `notifyClick`.
 
    ```java
    public class PlayerFragment extends SherlockFragment { 
@@ -28,7 +27,7 @@ U moet de gebruikersinterfacelogica van uw speler scheiden van het proces dat be
    } 
    ```
 
-1. Voer een verschillend fragment uit om een element te tonen UI dat erop wijst dat een advertentie klikbaar is, dat element controleert UI, en gebruikers meedelen klikt aan het fragment dat `MediaPlayer` bevat.
+1. Voer een verschillend fragment uit om een element te tonen UI dat erop wijst dat een advertentie klikbaar is, dat element controleert UI, en gebruiker aan het fragment meedelen dat bevat `MediaPlayer`.
 
    Dit fragment moet een interface voor fragmentcommunicatie declareren. Het fragment vangt de interfaceimplementatie tijdens zijn levenscyclusmethode onAttach en kan de interfacemethodes roepen om met de Activiteit te communiceren.
 
@@ -90,4 +89,3 @@ U moet de gebruikersinterfacelogica van uw speler scheiden van het proces dat be
        } 
    } 
    ```
-

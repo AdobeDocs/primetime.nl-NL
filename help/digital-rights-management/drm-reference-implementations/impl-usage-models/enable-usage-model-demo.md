@@ -2,18 +2,17 @@
 title: De gebruiksmodeldemo inschakelen
 description: De gebruiksmodeldemo inschakelen
 copied-description: true
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: 5d546f1a-ebf6-4c93-9a73-fa812cd71086
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '62'
 ht-degree: 0%
 
 ---
 
+# De gebruiksmodeldemo inschakelen{#enable-the-usage-model-demo}
 
-# De demo van het gebruiksmodel inschakelen{#enable-the-usage-model-demo}
-
-1. Geef de aangepaste eigenschap `RI_UsageModelDemo=true` op bij het verpakken.
+1. De aangepaste eigenschap opgeven `RI_UsageModelDemo=true` op het tijdstip van verpakking.
 
    Als u inhoud verpakt met de opdrachtregeltool van Media Packager, voert u het volgende in:
 
@@ -24,4 +23,3 @@ ht-degree: 0%
 >[!NOTE]
 >
 >Als u de optionele demo-modus niet activeert tijdens het verpakken, geeft de licentieserver een licentie op basis van het eerste geldige DRM-beleid dat door de server wordt verwerkt.
-

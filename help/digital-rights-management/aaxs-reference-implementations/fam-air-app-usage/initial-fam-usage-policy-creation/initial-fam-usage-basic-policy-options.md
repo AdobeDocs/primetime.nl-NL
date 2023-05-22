@@ -2,14 +2,13 @@
 title: Basisbeleidsopties
 description: Basisbeleidsopties
 copied-description: true
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: d5ddd54d-9301-42da-b7fd-0b838eb6cf9d
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '211'
 ht-degree: 0%
 
 ---
-
 
 # Basisbeleidsopties {#basic-policy-options}
 
@@ -30,4 +29,3 @@ In de volgende tabel worden de basisbeleidsvoorkeuren beschreven:
 |  | Anoniem | Er is geen verificatie vereist om de inhoud weer te geven. |
 |  | Geverifieerd | Gebruikersnaam/wachtwoord is vereist. |
 | Licentietekening inschakelen | Hiermee kan een licentie worden bijgewerkt met behulp van een bovenliggende hoofdlicentie voor het bijwerken van batches van licenties. Zodra de bladlicentie verloopt, kan de server de client een hoofdlicentie geven, waardoor alle inhoud die met dit beleid is beveiligd, wordt vernieuwd. |
-

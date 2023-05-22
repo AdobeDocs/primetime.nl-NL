@@ -1,29 +1,28 @@
 ---
 description: U kunt uw eigen opportuniteitsdetectors implementeren.
 title: Een aangepaste opportuniteitsdetector implementeren
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: a3f6d6b3-4d5e-49bc-b8de-a1196305bbb4
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '160'
 ht-degree: 0%
 
 ---
 
-
 # Een aangepaste opportuniteitsdetector implementeren{#implement-a-custom-opportunity-detector}
 
 U kunt uw eigen opportuniteitsdetectors implementeren.
 
-* Als uw opportuniteitsgenerator is gebaseerd op `TimedMetadata`-objecten die zijn gekoppeld aan de huidige mediastream, moet de `SpliceOutOpportunityGenerator` of `TimedMetadataOpportunityGenerator` worden uitgebreid.
+* Als uw opportuniteitsgenerator is gebaseerd op `TimedMetadata` objecten die aan de huidige mediastream zijn gekoppeld, moet deze de `SpliceOutOpportunityGenerator` of `TimedMetadataOpportunityGenerator`.
 
-* Als uw opportuniteitsgenerator is gebaseerd op out-of-band gegevens die worden verstrekt door een externe service (zoals een CIS), moet de `OpportunityGenerator` worden uitgebreid.
+* Als uw opportuniteitsgenerator is gebaseerd op out-of-band gegevens die door een externe dienst (zoals een CIS) worden verstrekt, dan moet het de `OpportunityGenerator`.
 
 1. Maak de aangepaste opportuniteitsgenerator.
 
        Als uw aangepaste opportuniteitsgenerator is gebaseerd op objecten TimedMetadata, breidt u de klasse TimedMetadataOpportunityGenerator uit en overschrijft u deze methoden:
    
    * `doConfigure` - Deze methode wordt aangeroepen nadat het mediaspelitem is gemaakt en biedt de opportuniteitsgenerator de mogelijkheid om indien nodig een eerste set mogelijkheden te maken
-   * `doProcess` - Deze methode wordt aangeroepen wanneer nieuwe streams  `TimedMetadata` worden gedetecteerd (bijvoorbeeld voor live/lineaire streams telkens wanneer de afspeellijst/manifest wordt vernieuwd)
+   * `doProcess` - Deze methode wordt telkens aangeroepen wanneer een nieuwe `TimedMetadata` wordt gedetecteerd (bijvoorbeeld voor live/lineaire streams telkens wanneer de afspeellijst/manifest wordt vernieuwd)
 
    ```
    public class CustomOpportunityGenerator extends TimedMetadataOpportunityGenerator { 
@@ -74,4 +73,3 @@ U kunt uw eigen opportuniteitsdetectors implementeren.
    
    player.replaceCurrentResource(mediaResource, mediaPlayerItemConfig);
    ```
-

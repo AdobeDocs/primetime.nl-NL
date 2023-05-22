@@ -2,18 +2,17 @@
 title: Eigenschappen van configuratiebestand
 description: Eigenschappen van configuratiebestand
 copied-description: true
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: ce4193fa-d217-4134-b08e-715c2cc57c84
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '314'
 ht-degree: 0%
 
 ---
 
-
 # Eigenschappen van configuratiebestand {#configuration-file-properties}
 
-Voordat u de licentiegenerator uitvoert, geeft u waarden op voor de eigenschappen van de licentiegenerator. In het configuratiebestand worden de volgende eigenschappen opgegeven. Voor eigenschapsnamen die *n* omvatten, *n* vertegenwoordigt een geheel dat met 1 begint en voor elke instantie van het bezit stijgt.
+Voordat u de licentiegenerator uitvoert, geeft u waarden op voor de eigenschappen van de licentiegenerator. In het configuratiebestand worden de volgende eigenschappen opgegeven. Voor eigenschapnamen die *n*, *n* vertegenwoordigt een geheel dat met 1 begint en voor elke instantie van het bezit stijgt.
 
 <table frame="all" colsep="1" rowsep="1" class="+ topic/table adobe-d/table " id="table_qk1_rry_n4"> 
  <thead class="- topic/thead "> 
@@ -29,7 +28,7 @@ Voordat u de licentiegenerator uitvoert, geeft u waarden op voor de eigenschappe
   </tr> 
   <tr rowsep="1" class="- topic/row "> 
    <td colname="1" class="- topic/entry "><span class="+ topic/ph pr-d/codeph codeph"> licensegen.keyServerCert</span> </td> 
-   <td colname="2" class="- topic/entry "> Sleutelservercertificaat (een door Adobe uitgegeven certificaat van de Server van de Vergunning dat door de Zeer belangrijke Server wordt gebruikt). Dit certificaat wordt alleen gebruikt als uit de metagegevens/het beleid blijkt dat een sleutelserver is vereist voor de levering van sleutelbestanden aan iOS-apparaten. </td> 
+   <td colname="2" class="- topic/entry "> Sleutelservercertificaat (een door Adobe uitgegeven certificaat van de Server van de Vergunning dat door de Zeer belangrijke Server wordt gebruikt). Dit certificaat wordt alleen gebruikt als uit de metagegevens/het beleid blijkt dat een sleutelserver vereist is voor het leveren van gegevens op sleutelposities naar iOS-apparaten. </td> 
   </tr> 
   <tr rowsep="1" class="- topic/row "> 
    <td colname="1" class="- topic/entry "><span class="+ topic/ph pr-d/codeph codeph"> licensegen.sign.certfile</span> </td> 
@@ -37,7 +36,7 @@ Voordat u de licentiegenerator uitvoert, geeft u waarden op voor de eigenschappe
   </tr> 
   <tr rowsep="1" class="- topic/row "> 
    <td colname="1" class="- topic/entry "><span class="+ topic/ph pr-d/codeph codeph"> licensegen.sign.certpass</span> </td> 
-   <td colname="2" class="- topic/entry ">Het wachtwoord dat wordt gebruikt om het bestand te beveiligen dat wordt opgegeven door <span class="+ topic/ph pr-d/codeph codeph"> licensegen.sign.certfile.</span> </td> 
+   <td colname="2" class="- topic/entry ">Het wachtwoord waarmee het bestand wordt beveiligd dat is opgegeven door <span class="+ topic/ph pr-d/codeph codeph"> licensegen.sign.certfile.</span> </td> 
   </tr> 
   <tr rowsep="1" class="- topic/row "> 
    <td colname="1" class="- topic/entry "><span class="+ topic/ph pr-d/codeph codeph">licensegen.domainca.n</span> </td> 
@@ -45,7 +44,7 @@ Voordat u de licentiegenerator uitvoert, geeft u waarden op voor de eigenschappe
   </tr> 
   <tr rowsep="1" class="- topic/row "> 
    <td colname="1" class="- topic/entry "><span class="+ topic/ph pr-d/codeph codeph">licensegen.keys.asymmetric.licenseServerCredential.n</span> </td> 
-   <td colname="2" class="- topic/entry "> <p class="- topic/p ">Optioneel PKCS12-bestand met aanvullende licentieserverreferenties voor het decoderen van de CEK in de metagegevens en het beleid. Aanvullende referenties kunnen worden geconfigureerd als inhoud eerder is verpakt met een ander licentieservercertificaat dan is opgegeven door <span class="codeph"> licensegen.sign.certfile</span>. Deze eigenschap moet verwijzen naar een .pfx</span>-bestand met een certificaat en een persoonlijke sleutel. <span class="filepath"> n moet monotonisch toenemen, beginnend bij 1. </span></p> </td> 
+   <td colname="2" class="- topic/entry "> <p class="- topic/p ">Optioneel PKCS12-bestand met aanvullende licentieserverreferenties voor het decoderen van de CEK in de metagegevens en het beleid. Aanvullende referenties kunnen worden geconfigureerd als de inhoud eerder is verpakt met een ander licentieservercertificaat dan is opgegeven door <span class="codeph"> licensegen.sign.certfile</span>. Deze eigenschap moet verwijzen naar een <span class="filepath"> .pfx</span> bestand met een certificaat en een persoonlijke sleutel. n moet monotonisch toenemen, beginnend bij 1. </p> </td> 
   </tr> 
   <tr rowsep="0" class="- topic/row "> 
    <td colname="1" class="- topic/entry "><span class="+ topic/ph pr-d/codeph codeph">licensegen.keys.asymmetric.licenseServerCredential.n.password</span> </td> 
@@ -53,4 +52,3 @@ Voordat u de licentiegenerator uitvoert, geeft u waarden op voor de eigenschappe
   </tr> 
  </tbody> 
 </table>
-

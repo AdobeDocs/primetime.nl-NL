@@ -1,16 +1,15 @@
 ---
 description: Voor live/lineaire inhoud vervangt TVSDK een segment van de inhoud van de hoofdstream door een ad-einde van dezelfde duur, zodat de tijdlijnduur ongewijzigd blijft.
 title: Actief/lineair en omzetten en invoegen
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: b0fbdddf-8529-4f7a-aef2-1764320307f1
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '289'
 ht-degree: 0%
 
 ---
 
-
-# Live/lineair en opheffen en invoegen{#live-linear-ad-resolving-and-insertion}
+# Actief/lineair en omzetten en invoegen{#live-linear-ad-resolving-and-insertion}
 
 Voor live/lineaire inhoud vervangt TVSDK een segment van de inhoud van de hoofdstream door een ad-einde van dezelfde duur, zodat de tijdlijnduur ongewijzigd blijft.
 
@@ -18,10 +17,10 @@ Vóór en tijdens het afspelen lost TVSDK bekende advertenties op, vervangt dele
 
 TVSDK voegt advertenties op de volgende manieren in:
 
-* **Pre-roll**, dat aan het begin van de inhoud is.
-* **Halftoonraster**, midden in de inhoud.
+* **Pre-roll**, die aan het begin van de inhoud staat.
+* **Midden rol**, die midden in de inhoud ligt.
 
-TVSDK accepteert het ad-einde, zelfs als de duur langer of korter is dan de vervangende duur van het actiepunt. Standaard ondersteunt TVSDK het `#EXT-X-CUE`-actiepunt als een geldige advertentiemarkering bij het omzetten en plaatsen van advertenties. Deze markering vereist het metagegevensveld `DURATION` in seconden en de unieke id van de actielijn. Bijvoorbeeld:
+TVSDK accepteert het ad-einde, zelfs als de duur langer of korter is dan de vervangende duur van het actiepunt. TVSDK biedt standaard ondersteuning voor de `#EXT-X-CUE` activeer als een geldige advertentiemarkering bij het omzetten en plaatsen van advertenties. Voor deze markering is het metagegevensveld vereist `DURATION` in seconden en de unieke id van de actielijn. Bijvoorbeeld:
 
 ```
 #EXT-X-CUE:DURATION=27,ID="..."
@@ -29,6 +28,6 @@ TVSDK accepteert het ad-einde, zelfs als de duur langer of korter is dan de verv
 
 >[!IMPORTANT]
 >
->Bij de implementatie van een gebruikelijke `AdPolicySelector` kan een ander beleid worden gegeven aan pre-rol, midden-rol, en post-rol `AdBreakTimelineItem`s in `AdPolicyInfo`, die op het type van `AdBreakTimelineItem`s gebaseerd is. U kunt bijvoorbeeld inhoud halverwege de rol behouden nadat deze is afgespeeld, maar de inhoud vóór de rol verwijderen nadat deze is afgespeeld.
+>Bij het implementeren van een `AdPolicySelector`, kan een ander beleid worden gevoerd voor pre-roll, mid-roll en post-roll `AdBreakTimelineItem`s in `AdPolicyInfo`, die gebaseerd is op het type `AdBreakTimelineItem`s. U kunt bijvoorbeeld inhoud halverwege de rol behouden nadat deze is afgespeeld, maar de inhoud vóór de rol verwijderen nadat deze is afgespeeld.
 
-Nadat het afspelen is gestart, vernieuwt de video-engine het manifestbestand regelmatig. TVSDK lost nieuwe advertenties op en voegt de advertenties in wanneer een richtsnoerpunt in de levende of lineaire stroom wordt ontmoet die in manifest werd bepaald. Nadat de advertenties zijn opgelost en ingevoegd, berekent TVSDK de virtuele tijdlijn opnieuw en verzendt een gebeurtenis `TimelineEvent.TIMELINE_UPDATED`.
+Nadat het afspelen is gestart, vernieuwt de video-engine het manifestbestand regelmatig. TVSDK lost nieuwe advertenties op en voegt de advertenties in wanneer een richtsnoerpunt in de levende of lineaire stroom wordt ontmoet die in manifest werd bepaald. Nadat de advertenties zijn opgelost en ingevoegd, berekent TVSDK de virtuele tijdlijn opnieuw en wordt een `TimelineEvent.TIMELINE_UPDATED` gebeurtenis.

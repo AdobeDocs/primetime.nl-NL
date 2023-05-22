@@ -1,22 +1,21 @@
 ---
 description: De aanvraag en het antwoord voor machtigingen worden doorgegeven via een wederzijds geverifieerde SSL-verbinding tussen de licentieserver en de machtigingsservice van de klant.
 title: SEES Public API
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: b78cd74d-06ea-4d31-a1f2-0f0d84d23670
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '154'
 ht-degree: 0%
 
 ---
 
-
 # SEES Public API {#sees-public-api}
 
 De aanvraag en het antwoord voor machtigingen worden doorgegeven via een wederzijds geverifieerde SSL-verbinding tussen de licentieserver en de machtigingsservice van de klant.
 
-Het URI-schema HTTPS ( [https://tools.ietf.org/html/rfc7230#section-2.7.2](https://tools.ietf.org/html/rfc7230#section-2.7.2)) wordt gebruikt om het eindpunt van de machtiging te definiëren en de aanvraagmethode voor de HTTP-POST ( [https://tools.ietf.org/html/rfc7231#section-4.3.3](https://tools.ietf.org/html/rfc7231#section-4.3.3)) wordt gebruikt voor de aanvraag. Het eindpunt van de machtiging en een markering die de &#39;back-end&#39;-machtiging aangeeft, zijn vereist en moeten in het beleid bij het verpakken worden opgenomen.
+Het URI-schema HTTPS ( [https://tools.ietf.org/html/rfc7230#section-2.7.2](https://tools.ietf.org/html/rfc7230#section-2.7.2)) wordt gebruikt om het betitelingsparameters en de methode van het de verzoekverzoek van de POST van HTTP te bepalen ( [https://tools.ietf.org/html/rfc7231#section-4.3.3](https://tools.ietf.org/html/rfc7231#section-4.3.3)) wordt gebruikt voor de aanvraag. Het eindpunt van de machtiging en een markering die de &#39;back-end&#39;-machtiging aangeeft, zijn vereist en moeten in het beleid bij het verpakken worden opgenomen.
 
-## Machtigingsverzoek {#section_BFBFEF0795CA46D6842C479256B95F95}
+## Machtigingsaanvraag {#section_BFBFEF0795CA46D6842C479256B95F95}
 
 De hoofdtekst van de machtigingsaanvraag is een JSON-object dat is gedefinieerd zoals hieronder wordt weergegeven.
 

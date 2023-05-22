@@ -1,6 +1,6 @@
 ---
 description: Uw toepassing kan de activiteit in uw speler en de veranderende status van de speler controleren door naar de gebeurtenissen te luisteren die door TVSDK worden verzonden.
-title: Overzicht van gebeurtenissen in de primaire speler
+title: Overzicht van gebeurtenissen in de primetime-speler
 exl-id: 3912f140-1600-41fb-9dc4-306646b7cd85
 source-git-commit: 59f7f8aa82be59c4012ee80648032600590bc4e1
 workflow-type: tm+mt
@@ -9,7 +9,7 @@ ht-degree: 0%
 
 ---
 
-# Overzicht van gebeurtenissen in primetime-speler {#primetime-player-events-summary}
+# Overzicht van gebeurtenissen in de primaire speler {#primetime-player-events-summary}
 
 Uw toepassing kan de activiteit in uw speler en de veranderende status van de speler controleren door naar de gebeurtenissen te luisteren die door TVSDK worden verzonden.
 
@@ -19,11 +19,11 @@ TVSDK brengt u op de hoogte wanneer gebeurtenissen plaatsvinden waarop uw toepas
 
 >[!TIP]
 >
->De gebeurteniscodes zijn de constanten van de `MediaPlayerEvent`-opsomming.
+>De gebeurteniscodes zijn de constanten van de `MediaPlayerEvent` enum.
 
 `AdBreakCompletedEventListener`
 
-* **** BetekenisHet afspelen van het advertentieeinde is voltooid.
+* **Betekenis** Het afspelen van het advertentieeinde is voltooid.
 
 * **Callback om uit te voeren** `onAdBreakCompleted(AdBreakPlaybackEvent event)`
 
@@ -31,7 +31,7 @@ TVSDK brengt u op de hoogte wanneer gebeurtenissen plaatsvinden waarop uw toepas
 
 `AdBreakSkippedEventListener`
 
-* **** Betekenis: een advertentie-einde is overgeslagen tijdens het afspelen.
+* **Betekenis** Een advertentie-einde is overgeslagen tijdens het afspelen.
 
 * **Callback om uit te voeren** `onAdBreakSkipped(AdBreakPlaybackEvent event)`
 
@@ -39,7 +39,7 @@ TVSDK brengt u op de hoogte wanneer gebeurtenissen plaatsvinden waarop uw toepas
 
 `AdBreakStartedEventListener`
 
-* **** BetekenisHet afspelen van een advertentie-einde is begonnen.
+* **Betekenis** Het afspelen van een advertentieeinde is gestart.
 
 * **Callback om uit te voeren** `onAdBreakStarted(AdBreakPlaybackEvent event)`
 
@@ -47,14 +47,14 @@ TVSDK brengt u op de hoogte wanneer gebeurtenissen plaatsvinden waarop uw toepas
 
 `AdClickedEventListener`
 
-* **** BetekenisEr is op een advertentie geklikt tijdens het afspelen.
+* **Betekenis** Er is tijdens het afspelen op een advertentie geklikt.
 
 * **Callback om uit te voeren** `onAdClicked(AdClickEvent event)`
 * **Gebeurteniscode** `AD_CLICK`
 
 `AdCompletedEventListener`
 
-* **** BetekenisHet afspelen van de advertentie is voltooid.
+* **Betekenis** Het afspelen van de advertentie is voltooid.
 
 * **Callback om uit te voeren** `onAdCompleted(AdPlaybackEvent event)`
 
@@ -62,7 +62,7 @@ TVSDK brengt u op de hoogte wanneer gebeurtenissen plaatsvinden waarop uw toepas
 
 `AdProgressEventListener`
 
-* **Voortgang** BetekenisRapportage tijdens playback.
+* **Betekenis** Voortgang rapporteren tijdens afspelen.
 
 * **Callback om uit te voeren** `onAdProgress(AdPlaybackEvent event)`
 
@@ -70,7 +70,7 @@ TVSDK brengt u op de hoogte wanneer gebeurtenissen plaatsvinden waarop uw toepas
 
 `AdResolutionCompleteEventListener`
 
-* **** Betekenis: Primetime en besluitvorming en resolutie zijn voltooid. Deze gebeurtenis is alleen van toepassing op VOD-inhoud.
+* **Betekenis** Primetime en besluitvorming en resolutie zijn voltooid. Deze gebeurtenis is alleen van toepassing op VOD-inhoud.
 
 * **Callback om uit te voeren** `onAdResolutionComplete()`
 
@@ -78,7 +78,7 @@ TVSDK brengt u op de hoogte wanneer gebeurtenissen plaatsvinden waarop uw toepas
 
 `AdStartedEventListener`{#section_A4339C48F82640A8AF4AF09CB3B33188}
 
-* **** Betekenis: het afspelen van de advertentie is begonnen.
+* **Betekenis** Het afspelen van de advertentie is gestart.
 
 * **Callback om uit te voeren** `onAdStarted(AdPlaybackEvent event)`
 
@@ -86,7 +86,7 @@ TVSDK brengt u op de hoogte wanneer gebeurtenissen plaatsvinden waarop uw toepas
 
 `AudioUpdatedEventListener`
 
-* **** BetekenisEr is een nieuwe audiotrack gedetecteerd.
+* **Betekenis** Er is een nieuwe audiotrack gevonden.
 
 * **Callback om uit te voeren** `onAudioUpdated(MediaPlayerItemEvent event)`
 
@@ -94,7 +94,7 @@ TVSDK brengt u op de hoogte wanneer gebeurtenissen plaatsvinden waarop uw toepas
 
 `BufferingBeginEventListener`
 
-* **** Betekenis: de speler is begonnen te bufferen.
+* **Betekenis** De speler is begonnen met bufferen.
 
 * **Callback om uit te voeren** `onBufferingBegin(BufferEvent event)`
 
@@ -102,7 +102,7 @@ TVSDK brengt u op de hoogte wanneer gebeurtenissen plaatsvinden waarop uw toepas
 
 `BufferingEndEventListener`
 
-* **** BetekenisDe speler heeft het bufferen gestopt.
+* **Betekenis** De speler heeft het bufferen gestopt.
 
 * **Callback om uit te voeren** `onBufferingEnd(BufferEvent event)`
 
@@ -110,7 +110,7 @@ TVSDK brengt u op de hoogte wanneer gebeurtenissen plaatsvinden waarop uw toepas
 
 `BufferPreparedEventListener`
 
-* **** BetekenisDe buffer wordt voorbereid.
+* **Betekenis** De buffer wordt voorbereid.
 
 * **Callback om uit te voeren** `onBufferPrepared()`
 
@@ -118,7 +118,7 @@ TVSDK brengt u op de hoogte wanneer gebeurtenissen plaatsvinden waarop uw toepas
 
 `CaptionsUpdatedEventListener`
 
-* **** Betekenis Een nieuw bijschriftspoor is gedetecteerd.
+* **Betekenis** Er is een nieuwe bijschrifttrack gedetecteerd.
 
 * **Callback om uit te voeren** `onCaptionsUpdated(MediaPlayerItemEvent event)`
 
@@ -126,7 +126,7 @@ TVSDK brengt u op de hoogte wanneer gebeurtenissen plaatsvinden waarop uw toepas
 
 `DRMMetadataInfoEventListener`
 
-* **** BetekenisEr zijn nieuwe DRM-metagegevens gedetecteerd in de mediastream.
+* **Betekenis** Er zijn nieuwe DRM-metagegevens gedetecteerd in de mediastream.
 
 * **Callback om uit te voeren** `onDRMMetadataInfo(DRMMetadataInfoEvent event)`
 
@@ -134,7 +134,7 @@ TVSDK brengt u op de hoogte wanneer gebeurtenissen plaatsvinden waarop uw toepas
 
 `ItemCreatedEventListener`
 
-* **** Betekenis: er is een nieuw mediaspeler-item gemaakt.
+* **Betekenis** Er is een nieuw mediaspelitem gemaakt.
 
 * **Callback om uit te voeren** `onItemCreated(MediaPlayerItemEvent event)`
 
@@ -142,7 +142,7 @@ TVSDK brengt u op de hoogte wanneer gebeurtenissen plaatsvinden waarop uw toepas
 
 `ItemLoadCompleteEventListener`
 
-* **** BetekenisNieuwe ladingsinformatie is gecreeerd voor het huidige punt.
+* **Betekenis** Er zijn nieuwe laadgegevens gemaakt voor het huidige item.
 
 * **Callback om uit te voeren** `onLoadComplete(MediaPlayerItemEvent event)`
 
@@ -150,7 +150,7 @@ TVSDK brengt u op de hoogte wanneer gebeurtenissen plaatsvinden waarop uw toepas
 
 `LoadInformationEventListener`
 
-* **** BetekenisEen nieuw segment is geladen.
+* **Betekenis** Er is een nieuw segment geladen.
 
 * **Callback om uit te voeren** `onLoadInformation(LoadInformationEvent event)`
 
@@ -158,7 +158,7 @@ TVSDK brengt u op de hoogte wanneer gebeurtenissen plaatsvinden waarop uw toepas
 
 `MainManifestUpdatedEventListener`
 
-* **** BetekenisHet belangrijkste manifest of playlist is bijgewerkt.
+* **Betekenis** Het hoofdmanifest of de afspeellijst is bijgewerkt.
 
 * **Callback om uit te voeren** `onMainManifestUpdated(MediaPlayerItemEvent event)`
 
@@ -166,7 +166,7 @@ TVSDK brengt u op de hoogte wanneer gebeurtenissen plaatsvinden waarop uw toepas
 
 `NotificationEventListener`
 
-* **** BetekenisDe bewerking is mislukt.
+* **Betekenis** De bewerking is mislukt.
 
 * **Callback om uit te voeren** `onNotification(NotificationEvent event)`
 
@@ -174,7 +174,7 @@ TVSDK brengt u op de hoogte wanneer gebeurtenissen plaatsvinden waarop uw toepas
 
 `PlaybackRangeUpdatedEventListener`
 
-* **** BetekenisHet afspeelbereik is bijgewerkt.
+* **Betekenis** Het afspeelbereik is bijgewerkt.
 
 * **Callback om uit te voeren** `onPlaybackRangeUpdated(MediaPlayerItemEvent event)`
 
@@ -182,7 +182,7 @@ TVSDK brengt u op de hoogte wanneer gebeurtenissen plaatsvinden waarop uw toepas
 
 `PlaybackRatePlayingEventListener`
 
-* **** Betekenis: er is een nieuwe afspeelsnelheid zichtbaar op het scherm.
+* **Betekenis** Er wordt een nieuwe afspeelsnelheid weergegeven op het scherm.
 
 * **Callback om uit te voeren** `onRatePlaying(PlaybackRateEvent event)`
 
@@ -190,7 +190,7 @@ TVSDK brengt u op de hoogte wanneer gebeurtenissen plaatsvinden waarop uw toepas
 
 `PlaybackRateSelectedEventListener`
 
-* **** BetekenisHet de tariefattribuut van MediaPlayer is geplaatst.
+* **Betekenis** Het kenmerk rate van MediaPlayer is ingesteld.
 
 * **Callback om uit te voeren** `onRateSelected(PlaybackRateEvent event)`
 
@@ -198,7 +198,7 @@ TVSDK brengt u op de hoogte wanneer gebeurtenissen plaatsvinden waarop uw toepas
 
 `PlayStartEventListener`
 
-* **** Betekenis: het afspelen is gestart.
+* **Betekenis** Het afspelen is gestart.
 
 * **Callback om uit te voeren** `onPlayStart()`
 
@@ -206,7 +206,7 @@ TVSDK brengt u op de hoogte wanneer gebeurtenissen plaatsvinden waarop uw toepas
 
 `ProfileChangeEventListener`
 
-* **** Betekenis: het huidige profiel van MediaPlayer is gewijzigd.
+* **Betekenis** Het huidige profiel van MediaPlayer is gewijzigd.
 
 * **Callback om uit te voeren** `onProfileChanged(ProfileEvent event)`
 
@@ -214,7 +214,7 @@ TVSDK brengt u op de hoogte wanneer gebeurtenissen plaatsvinden waarop uw toepas
 
 `ReservationReachedEventListener`
 
-* **** Betekenis afspelen heeft een tijdlijnreservering bereikt.
+* **Betekenis** Bij het afspelen is een tijdlijnreservering bereikt.
 
 * **Callback om uit te voeren** `onReservationReached(ReservationEvent event)`
 
@@ -222,7 +222,7 @@ TVSDK brengt u op de hoogte wanneer gebeurtenissen plaatsvinden waarop uw toepas
 
 `SeekBeginEventListener`
 
-* **De** BetekenisSeek-bewerking is gestart.
+* **Betekenis** De zoekbewerking is gestart.
 
 * **Callback om uit te voeren** `onSeekBegin(SeekEvent event)`
 
@@ -230,7 +230,7 @@ TVSDK brengt u op de hoogte wanneer gebeurtenissen plaatsvinden waarop uw toepas
 
 `SeekEndEventListener`
 
-* **** BetekenisDe zoekbewerking is voltooid.
+* **Betekenis** De zoekbewerking is voltooid.
 
 * **Callback om uit te voeren** `onSeekEnd(SeekEvent event)`
 
@@ -238,7 +238,7 @@ TVSDK brengt u op de hoogte wanneer gebeurtenissen plaatsvinden waarop uw toepas
 
 `SeekPositionAdjustedEventListener`
 
-* **** BetekenisDe zoekpositie is aangepast vanwege interne afspeelregels of externe bedrijfsregels.
+* **Betekenis** De zoekpositie is aangepast vanwege interne afspeelregels of externe bedrijfsregels.
 
 * **Callback om uit te voeren** `onPositionAdjusted(SeekEvent event)`
 
@@ -246,7 +246,7 @@ TVSDK brengt u op de hoogte wanneer gebeurtenissen plaatsvinden waarop uw toepas
 
 `SizeAvailableEventListener`
 
-* **** BetekenisDe grootte van de media is beschikbaar.
+* **Betekenis** De grootte van de media is beschikbaar.
 
 * **Callback om uit te voeren** `onSizeAvailable(SizeAvailableEvent event)`
 
@@ -254,7 +254,7 @@ TVSDK brengt u op de hoogte wanneer gebeurtenissen plaatsvinden waarop uw toepas
 
 `StatusChangeEventListener`
 
-* **** Betekenis: de status MediaPlayer is gewijzigd.
+* **Betekenis** De status MediaPlayer is gewijzigd.
 
 * **Callback om uit te voeren** `onStatusChanged(MediaPlayerStatusChangeEvent event)`
 
@@ -262,7 +262,7 @@ TVSDK brengt u op de hoogte wanneer gebeurtenissen plaatsvinden waarop uw toepas
 
 `TimeChangeEventListener`
 
-* **** BetekenisDe afspeelkop is gewijzigd.
+* **Betekenis** De afspeelkop is gewijzigd.
 
 * **Callback om uit te voeren** `onTimeChanged(TimeChangeEvent event)`
 
@@ -270,7 +270,7 @@ TVSDK brengt u op de hoogte wanneer gebeurtenissen plaatsvinden waarop uw toepas
 
 `TimedEventEventListener`
 
-* **** BetekenisDe verrichting is volledig met de tijd die voor de verrichting wordt genomen.
+* **Betekenis** De bewerking is voltooid met de tijd die nodig is voor de bewerking.
 
 * **Callback om uit te voeren** `onTimedEvent(TimedEventEvent event)`
 
@@ -278,7 +278,7 @@ TVSDK brengt u op de hoogte wanneer gebeurtenissen plaatsvinden waarop uw toepas
 
 `TimelineMetadataAddedInBackgroundEventListener`
 
-* **** Betekenis: er zijn nieuwe metagegevens met tijdslimiet toegevoegd aan een item op de achtergrond.
+* **Betekenis** Er zijn nieuwe metagegevens met tijdslimiet toegevoegd aan een item op de achtergrond.
 
 * **Callback om uit te voeren** `onTimedMetadata(TimedMetadataEvent event)`
 
@@ -286,7 +286,7 @@ TVSDK brengt u op de hoogte wanneer gebeurtenissen plaatsvinden waarop uw toepas
 
 `TimedMetadataEventListener`
 
-* **** Betekenis: er zijn nieuwe metagegevens met tijdslimiet gedetecteerd in de mediastream.
+* **Betekenis** Er zijn nieuwe metagegevens met tijdslimiet gedetecteerd in de mediastream.
 
 * **Callback om uit te voeren** `onTimedMetadata(TimedMetadataEvent event)`
 
@@ -294,7 +294,7 @@ TVSDK brengt u op de hoogte wanneer gebeurtenissen plaatsvinden waarop uw toepas
 
 `TimelineUpdatedEventListener`
 
-* **** BetekenisDe tijdlijn is gewijzigd. Mogelijk zijn advertenties toegevoegd aan of verwijderd uit de tijdlijn.
+* **Betekenis** De tijdlijn is gewijzigd. Mogelijk zijn advertenties toegevoegd aan of verwijderd uit de tijdlijn.
 
 * **Callback om uit te voeren** `onTimelineUpdated(TimelineEvent event)`
 

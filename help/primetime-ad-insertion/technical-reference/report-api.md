@@ -32,7 +32,7 @@ Om de [!DNL Primetime Ad Insertion] APIs zie [Ad Insertion API-eindpunten in gev
 
 | Naam | Significantie | Type waarde | Verplicht? | Standaardwaarde | Restricties | Voorbeeld/Geldige samplewaarden |
 |----------|-----------------------------------------------------------------------------------------------|----------------|----------------|---------------------|------------------------------------------------------------------------------------|-------------------------------------------------------------------------|
-| endDate | Einddatum voor de rapportgegevens | date | Y | GEEN | niet nieuwer dan gisteren in UTC-8 | ######### |
+| endDate | Einddatum voor de rapportgegevens | date | Y | GEEN | niet nieuwer dan gisteren in UTC-8 | ######## |
 | filters | filteren op een of meer kolommen | string | N | GEEN | ad_config_id , zone_id | ad_config_id=990,900;state=active |
 |  |  |  |  |  | Wanneer metaData in de aanvraag op &#39;true&#39; is ingesteld, kunt u ook filteren op naam. |  |
 |  |  |  |  |  |  | Meerdere filtersleutels zijn door een puntkomma gescheiden. |

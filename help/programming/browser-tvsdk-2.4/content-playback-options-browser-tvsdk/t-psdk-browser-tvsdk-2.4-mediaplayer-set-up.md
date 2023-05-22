@@ -1,32 +1,31 @@
 ---
 description: Een MediaPlayer-object kapselt het gedrag en de functionaliteit van een mediaspeler in.
 title: De MediaPlayer instellen
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: f492b2bb-3280-4306-ac4b-8b8d0fd68409
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '91'
 ht-degree: 0%
 
 ---
 
-
-# De MediaPlayer{#set-up-the-mediaplayer} instellen
+# De MediaPlayer instellen{#set-up-the-mediaplayer}
 
 Een MediaPlayer-object kapselt het gedrag en de functionaliteit van een mediaspeler in.
 
-1. Instantieer een `MediaPlayer` gebruikend het volgende:
+1. Instantiëren van een `MediaPlayer` met behulp van het volgende:
 
    ```js
    var player = new AdobePSDK.MediaPlayer();
    ```
 
-1. Een `MediaPlayerView`-instantie maken:
+1. Een `MediaPlayerView` instantie:
 
    ```js
    var view = new AdobePSDK.MediaPlayerView(container);
    ```
 
-   waarbij `container` het doel `div` element is dat uw `HTMLMediaElement` bevat.
+   waar `container` is het doel `div` element dat uw `HTMLMediaElement`.
 
    Bijvoorbeeld op een HTML-pagina:
 
@@ -50,13 +49,13 @@ Een MediaPlayer-object kapselt het gedrag en de functionaliteit van een mediaspe
          document.getElementById("videoDiv"));  
    ```
 
-1. Koppel uw `MediaPlayerView`-instantie aan uw `MediaPlayer`-instantie:
+1. Voeg uw `MediaPlayerView` -instantie `MediaPlayer` instantie:
 
    ```js
    player.view = view;
    ```
 
-1. Koppel de aangepaste besturingselementen `div`-element aan uw MediaPlayer-instantie.
+1. Aangepaste besturingselementen koppelen `div` -element naar uw MediaPlayer-instantie.
 
    Bijvoorbeeld in HTML:
 
@@ -77,4 +76,4 @@ Een MediaPlayer-object kapselt het gedrag en de functionaliteit van een mediaspe
    }
    ```
 
-De instantie `MediaPlayer` is nu beschikbaar en correct geconfigureerd om video-inhoud weer te geven op het apparaatscherm.
+De `MediaPlayer` -instantie is nu beschikbaar en correct geconfigureerd voor het weergeven van video-inhoud op het apparaatscherm.

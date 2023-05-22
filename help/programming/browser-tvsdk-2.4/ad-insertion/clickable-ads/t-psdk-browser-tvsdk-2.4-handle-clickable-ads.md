@@ -1,16 +1,15 @@
 ---
 description: De MediaPlayer biedt een notifyClick()-functie die aan advertenties gerelateerde gebeurtenissen verzendt wanneer een aanklikbare advertentie wordt afgespeeld. Deze gebeurtenissen bieden informatie over advertenties en afbrekingen die uw app kan gebruiken om doorklikfuncties te bieden.
 title: Aanklikbare advertenties verwerken
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: 25738592-f3fe-4f13-b2bb-26a5f942cd18
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '217'
 ht-degree: 0%
 
 ---
 
-
-# Klikbare advertenties {#handle-clickable-ads} verwerken
+# Aanklikbare advertenties verwerken {#handle-clickable-ads}
 
 De MediaPlayer biedt een notifyClick()-functie die aan advertenties gerelateerde gebeurtenissen verzendt wanneer een aanklikbare advertentie wordt afgespeeld. Deze gebeurtenissen bieden informatie over advertenties en afbrekingen die uw app kan gebruiken om doorklikfuncties te bieden.
 
@@ -20,7 +19,7 @@ De MediaPlayer voert de volgende gebeurtenissen uit wanneer een klikbare adverte
 * `AdobePSDK.PSDKEventType.AD_CLICKED`
 * `AdobePSDK.PSDKEventType.AD_COMPLETED`
 
-`AdClickedEvent` bevat de informatie noodzakelijk om de klikthrough functie te verwerken.
+De `AdClickedEvent` bevat de informatie die nodig is om de klikfunctie te verwerken.
 
 1. Geef gebruikers een besturingselement in de speler op om op klikbare advertenties te klikken.
 
@@ -36,7 +35,7 @@ De MediaPlayer voert de volgende gebeurtenissen uit wanneer een klikbare adverte
 
 1. Voeg een manager voor de klikgebeurtenis van de gebruiker toe.
 
-   Deze manager moet MediaPlayer ertoe aanzetten om de `AdClicked` gebeurtenis in brand te steken.
+   Deze handler moet de MediaPlayer vragen de gebeurtenis `AdClicked` gebeurtenis.
 
    ```
    onAdClick = function (event) { 

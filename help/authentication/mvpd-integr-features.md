@@ -1,13 +1,13 @@
 ---
 title: MVPD-integratiefuncties
 description: MVPD-integratiefuncties
-source-git-commit: 326f97d058646795cab5d062fa5b980235f7da37
+exl-id: fcd65940-9a86-49b2-9d52-9031fb763338
+source-git-commit: bfc3ba55c99daba561255760baf273b6538a3c6e
 workflow-type: tm+mt
 source-wordcount: '1704'
 ht-degree: 2%
 
 ---
-
 
 # MVPD-integratiefuncties
 

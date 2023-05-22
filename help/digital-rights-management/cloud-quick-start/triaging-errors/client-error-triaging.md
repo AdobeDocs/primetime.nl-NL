@@ -1,16 +1,15 @@
 ---
 description: Soms kan de inhoud niet worden afgespeeld. Dit kan door elk aantal situaties worden veroorzaakt, zoals fouten in de netwerkstack van de browser, de transportlaag, het besturingssysteem, de Flash Player-runtime of het Primetime DRM-systeem.
 title: Overzicht van Trigfouten
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: fe94d0a4-4f3c-4b0e-b830-a7a83bac1e85
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '305'
 ht-degree: 0%
 
 ---
 
-
-# Fouten bij bijsnijden {#triaging-errors}
+# Trigfouten {#triaging-errors}
 
 Soms kan de inhoud niet worden afgespeeld. Dit kan door elk aantal situaties worden veroorzaakt, zoals fouten in de netwerkstack van de browser, de transportlaag, het besturingssysteem, de Flash Player-runtime of het Primetime DRM-systeem.
 
@@ -18,10 +17,9 @@ De eerste kenmerkende stap is te bepalen als het probleem zich zonder encryptie 
 
 Primetime DRM (buiten Primetime Cloud DRM) is al jaren op de markt. Als dusdanig, is er een rijkdom aan gemeenschap-gebaseerde informatie over het oplossen van problemen en het vormen Primetime DRM. Adobe heeft een forum verschaft voor Primetime DRM-gebruikers (voorheen Adobe Access genoemd) om problemen en resoluties samen te voegen en te delen. Controleer of je probleem eerder is besproken: [https://forums.adobe.com/community/adobe_access](https://forums.adobe.com/community/adobe_access)
 
-## Trigger voor clientfouten {#section_D0EBAEB0C27F4B01BD44124DEE62F6BA}
+## Testen van clientfouten {#section_D0EBAEB0C27F4B01BD44124DEE62F6BA}
 
-Als de inhoud niet wordt afgespeeld, raadpleegt u het rechterdeelvenster van de Sample Video Players, waarin `DRMErrorEvent` wordt geregistreerd die zich voordoet. Als er een foutgebeurtenis is, heeft deze betrekking op een van de Flash Player Runtime-fouten:
+Als de inhoud niet wordt afgespeeld, raadpleegt u het rechterdeelvenster van de Sample Video Players, waarin eventuele `DRMErrorEvent` dat gebeurt. Als er een foutgebeurtenis is, heeft deze betrekking op een van de Flash Player Runtime-fouten:
 
-* [Naslaggids voor DRM-foutberichten](https://help.adobe.com/en_US/primetime/drm/index.html#reference-DRM_Client_Error_Messages) voor clients of
-* [AS3 Flash-runtimefouten](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/runtimeErrors.html)  (DRM-problemen beginnen bij 3300)
-
+* [Verwijzing naar DRM-foutbericht voor client](https://help.adobe.com/en_US/primetime/drm/index.html#reference-DRM_Client_Error_Messages); of
+* [AS3 Flash Runtime-fouten](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/runtimeErrors.html) (DRM-problemen beginnen op 3300)

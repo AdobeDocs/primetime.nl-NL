@@ -1,14 +1,13 @@
 ---
 description: Vanaf Flash 15 en hoger geldt dat wanneer geen hardware-rendering met StageVideo beschikbaar is, StageVideo naadloos terugvalt naar een software StageVideo-object.
 title: Flash 15-ondersteuning voor StageVideo
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: 23ef0806-3aa5-4c48-a4f7-4ad9b72bdcc9
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '246'
 ht-degree: 0%
 
 ---
-
 
 # Flash 15-ondersteuning voor StageVideo{#flash-support-for-stagevideo}
 
@@ -25,8 +24,8 @@ Bekijk de volgende informatie over de Flash 15 StageVideo-fallback naar software
 
    Als uw Flash 14-toepassing een nieuwe Flash 15-API moet gebruiken, moet u de API dynamisch aanroepen met een cast naar het objecttype, zodat de toepassing niet in Flash Player 14 mislukt bij uitvoering.
 
-## HTML-overlays {#html-overlays}
+## HTML-bedekkingen {#html-overlays}
 
-In Flash 15 en hoger kunt u een naadloze weergave van HTML-overlays behouden wanneer de hardware StageVideo niet beschikbaar is en terugvalt naar de software StageVideo. Stel `wmode=opaque` in om deze functie in te schakelen.
+In Flash 15 en hoger kunt u een naadloze weergave van HTML-overlays behouden wanneer de hardware StageVideo niet beschikbaar is en terugvalt naar de software StageVideo. Als u deze functie wilt inschakelen, stelt u `wmode=opaque`.
 
-Sommige oudere browsers ondersteunen hardwareversnelling niet. Zie [Minimumeisen voor StageVideo](../../../../../tvsdk-1.4-for-desktop-hls/c-psdk-dhls-1.4-introduction/overview-prod-audience-guide/requirements/stagevideo-capabilities/r-psdk-dhls-1.4-requirements-stage-video.md) voor meer informatie over deze vereisten. Wanneer u `wmode=opaque` instelt, wordt de video gerenderd met software StageVideo, wat de prestaties kan beïnvloeden. Als u `wmode=direct` instelt, wordt video doorgaans direct gerenderd naar GPU, wat resulteert in veel betere prestaties. Deze optie negeert echter ook HTML-overlays.
+Sommige oudere browsers ondersteunen hardwareversnelling niet. Zie voor meer informatie over deze vereisten [Minimumvereisten voor StageVideo](../../../../../tvsdk-1.4-for-desktop-hls/c-psdk-dhls-1.4-introduction/overview-prod-audience-guide/requirements/stagevideo-capabilities/r-psdk-dhls-1.4-requirements-stage-video.md). Wanneer u `wmode=opaque`, wordt de video gerenderd met software StageVideo, wat de prestaties kan beïnvloeden. Normaal gesproken instellen `wmode=direct` Hiermee wordt video direct gerenderd naar GPU, wat resulteert in veel betere prestaties. Deze optie heeft echter ook voorrang op HTML-overlays.

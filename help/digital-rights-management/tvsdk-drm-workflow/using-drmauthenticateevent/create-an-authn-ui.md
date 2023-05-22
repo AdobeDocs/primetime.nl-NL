@@ -2,20 +2,19 @@
 title: Een gebruikersinterface voor verificatie maken
 description: Een gebruikersinterface voor verificatie maken
 copied-description: true
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: 54853dcf-2241-44e6-9565-7eca94cc84cc
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '188'
 ht-degree: 0%
 
 ---
 
-
 # Een gebruikersinterface voor verificatie maken {#create-an-authentication-ui}
 
 1. Maak een gebruikersinterface om de verificatiereferenties van de gebruiker op te halen.
 
-   Hieronder ziet u een Flex-voorbeeld van een eenvoudige gebruikersinterface voor het ophalen van gebruikersgegevens. Het bestaat uit een deelvensterobject met twee `TextInput`-objecten, één voor elke gebruikersnaam en wachtwoord. Het deelvenster bevat ook een knop waarmee de methode `credentials()` wordt gestart.
+   Hieronder ziet u een Flex-voorbeeld van een eenvoudige gebruikersinterface voor het ophalen van gebruikersgegevens. Bestaat uit een deelvensterobject dat twee elementen bevat `TextInput` objecten, één voor elke gebruikersnaam en wachtwoord. Het deelvenster bevat ook een knop waarmee de `credentials()` methode.
 
    ```xml
    <mx:Panel x="236.5"  
@@ -44,9 +43,9 @@ ht-degree: 0%
    </mx:Panel>  
    ```
 
-1. Schrijf de methode `credentials()` om de door de gebruiker opgegeven verificatiewaarden te verwerken.
+1. Schrijf de `credentials()` methode om de door de gebruiker opgegeven verificatiewaarden te verwerken.
 
-   De methode `credentials()` is een door de gebruiker gedefinieerde methode die de waarden voor gebruikersnaam en wachtwoord doorgeeft aan de methode `setDRMAuthenticationCredentials()`. Nadat de waarden zijn doorgegeven, herstelt de methode `credentials()` de waarden van de objecten `TextInput`.
+   De `credentials()` methode is een door de gebruiker gedefinieerde methode die de waarden voor gebruikersnaam en wachtwoord doorgeeft aan de `setDRMAuthenticationCredentials()` methode. Wanneer de waarden zijn doorgegeven, wordt de `credentials()` methode herstelt de waarden van `TextInput` objecten.
 
    ```
    <mx:Script> 
@@ -59,7 +58,7 @@ ht-degree: 0%
    </mx:Script> 
    ```
 
-   U kunt dit type eenvoudige interface implementeren door het deelvenster als onderdeel van een nieuwe status op te nemen. De nieuwe status komt voort uit de basisstatus wanneer het object `DRMAuthenticateEvent` wordt gegenereerd. Het volgende voorbeeld bevat een `VideoDisplay`-object met een bronkenmerk dat naar een beveiligd videobestand wijst. In dit geval wordt de methode `credentials()` gewijzigd zodat de toepassing ook naar de basisstatus wordt geretourneerd. Deze methode doet dit nadat de gebruikersgegevens zijn doorgegeven en de waarden van het TextInput-object opnieuw zijn ingesteld.
+   U kunt dit type eenvoudige interface implementeren door het deelvenster als onderdeel van een nieuwe status op te nemen. De nieuwe staat komt van de basisstaat voort wanneer `DRMAuthenticateEvent` wordt gegenereerd. Het volgende voorbeeld bevat een `VideoDisplay` object met een bronkenmerk dat naar een beveiligd videobestand wijst. In dit geval worden de `credentials()` de methode wordt gewijzigd zodat het ook de toepassing aan de basisstaat terugkeert. Deze methode doet dit nadat de gebruikersgegevens zijn doorgegeven en de waarden van het TextInput-object opnieuw zijn ingesteld.
 
    ```xml
    <?xml version="1.0" encoding="utf-8"?> 
@@ -133,4 +132,3 @@ ht-degree: 0%
                     source="https://www.example.com/flv/Video.flv" /> 
    </mx:WindowedApplication> 
    ```
-

@@ -2,16 +2,15 @@
 title: Kritiek op beleid
 description: Kritiek op beleid
 copied-description: true
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: 6c6971fe-0c0a-4998-917c-aebbf1c4a9df
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '123'
 ht-degree: 0%
 
 ---
 
-
-# Beleidskritiek{#policy-criticality}
+# Kritiek op beleid{#policy-criticality}
 
 Als de nieuwe gebruiksregels in het beleid worden gebruikt en dit beleid in inhoud wordt gebruikt die voor oudere vergunningsservers (die de nieuwe gebruiksregels niet begrijpen) wordt verpakt, kunt u specificeren hoe de oudere vergunningsservers zich zouden moeten gedragen. Door gebrek, is de beleidskritiek &quot;waar&quot;, betekenend dat de vergunningsserver alle delen van het beleid moet begrijpen om een vergunning te produceren gebruikend het beleid. Als de beleidskritiek aan &quot;vals&quot;wordt geplaatst, kan een oudere vergunningsserver delen van het beleid negeren het niet begrijpt, en de vergunningen die door de server worden geproduceerd zullen niet de nieuwe gebruiksregels bevatten.
 

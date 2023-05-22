@@ -1,13 +1,13 @@
 ---
 title: Fouten opsporen in de AccessEnabler iOS/tvOS SDK met behulp van console-app-logboeken
 description: Fouten opsporen in de AccessEnabler iOS/tvOS SDK met behulp van console-app-logboeken
-source-git-commit: 326f97d058646795cab5d062fa5b980235f7da37
+exl-id: 0dad325e-db15-4ea0-a87a-75409eaf8d46
+source-git-commit: bfc3ba55c99daba561255760baf273b6538a3c6e
 workflow-type: tm+mt
 source-wordcount: '551'
 ht-degree: 0%
 
 ---
-
 
 # Fouten opsporen in de AccessEnabler iOS/tvOS SDK met behulp van console-app-logboeken {#debugging-the-accessenabler-iostvos-sdk-using-console-app-logs}
 

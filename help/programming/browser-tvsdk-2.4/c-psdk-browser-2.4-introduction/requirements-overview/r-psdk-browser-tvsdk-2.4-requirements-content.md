@@ -1,14 +1,13 @@
 ---
 description: Controleer de beperkingen en vereisten voor streams en afspeellijsten (manifests).
 title: Inhoud- en manifestvereisten
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: 53fdd771-06ea-496f-9591-6ed4d5011f8d
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '193'
 ht-degree: 0%
 
 ---
-
 
 # Inhoud- en manifestvereisten{#content-and-manifest-requirements}
 
@@ -51,4 +50,3 @@ Controleer de beperkingen en vereisten voor streams en afspeellijsten (manifests
   </tr> 
  </tbody> 
 </table>
-

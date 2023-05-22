@@ -1,14 +1,13 @@
 ---
 description: U kunt aangepaste tagnamen in TVSDK globaal configureren met de MediaPlayerItemConfig-klasse of op stream gebaseerd met de MediaPlayerItemConfig-klasse.
 title: Methoden van de klasse Config voor tags
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: 093720df-9c2d-41f1-ba9d-9553c5df40a4
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '219'
 ht-degree: 0%
 
 ---
-
 
 # Methoden van de klasse Config voor tags{#config-class-methods-for-tags}
 
@@ -16,7 +15,7 @@ U kunt aangepaste tagnamen in TVSDK globaal configureren met de MediaPlayerItemC
 
 TVSDK past de algemene configuratie automatisch toe op elke mediastream waarvoor geen streamspecifieke configuratie is opgegeven.
 
-Zowel `PSDKConfig` als `MediaPlayerItemConfig` stellen deze methodes bloot om de douanetags te beheren:
+Beide `PSDKConfig` en `MediaPlayerItemConfig` deze methoden beschikbaar maken voor het beheer van aangepaste tags:
 
 <table id="table_B37A6C75270D47BC99258F2884AD6905"> 
  <tbody> 
@@ -25,23 +24,23 @@ Zowel `PSDKConfig` als `MediaPlayerItemConfig` stellen deze methodes bloot om de
    <td colname="3"> </td>
   </tr> 
   <tr> 
-   <td colname="col1"><span class="codeph"> public function get subscribeTags():Vector.&lt;string&gt;</span> </td> 
+   <td colname="col1"><span class="codeph"> public function get subscribeTags():Vector.&lt;String&gt;</span> </td> 
    <td colname="col2"> Hiermee wordt de huidige lijst met geabonneerde tags opgehaald. </td> 
   </tr> 
   <tr> 
-   <td colname="col1"><span class="codeph"> public function set subscribeTags():Vector.&lt;string&gt;</span> </td> 
-   <td colname="col2">Hiermee stelt u de lijst met geabonneerde tags in die aan de toepassing worden blootgesteld. <p>Uw toepassing wordt ook automatisch geabonneerd op alle tags die via <span class="codeph"> adTags</span> worden verzonden. </p> </td> 
+   <td colname="col1"><span class="codeph"> public function set subscribeTags():Vector.&lt;String&gt;</span> </td> 
+   <td colname="col2">Hiermee stelt u de lijst met geabonneerde tags in die aan de toepassing worden blootgesteld. <p>Uw toepassing wordt ook automatisch geabonneerd op alle tags die via <span class="codeph"> adTags</span>. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="1"><b>De advertentietags aanpassen die worden gebruikt door de standaardopportuniteitsdetector  </b> </td> 
+   <td colname="1"><b>De advertentietags aanpassen die worden gebruikt door de standaardopportuniteitsdetector </b> </td> 
    <td colname="3"> </td>
   </tr> 
   <tr> 
-   <td colname="col1"><span class="codeph"> public function get adTags():Vector.&lt;string&gt;</span> </td> 
+   <td colname="col1"><span class="codeph"> public function get adTags():Vector.&lt;String&gt;</span> </td> 
    <td colname="col2"> Hiermee wordt de huidige lijst met advertentietags opgehaald. </td> 
   </tr> 
   <tr> 
-   <td colname="col1"><span class="codeph"> public function set adTags():Vector.&lt;string&gt;</span> </td> 
+   <td colname="col1"><span class="codeph"> public function set adTags():Vector.&lt;String&gt;</span> </td> 
    <td colname="col2"> Hiermee stelt u de lijst met advertentietags in die door de standaardopportuniteitsgenerator wordt gebruikt. </td> 
   </tr> 
  </tbody> 
@@ -54,6 +53,5 @@ Houd rekening met het volgende:
    Indien aangetroffen, genereert TVSDK een `IllegalArgumentException`.
 * De naam van de aangepaste tag moet het voorvoegsel # bevatten.
 
-   `#EXT-X-ASSET` is bijvoorbeeld een correcte aangepaste tagnaam, maar `EXT-X-ASSET` is onjuist.
+   Bijvoorbeeld: `#EXT-X-ASSET` is een correcte aangepaste tagnaam, maar `EXT-X-ASSET` is onjuist.
 * U kunt de configuratie niet wijzigen nadat de mediastream is geladen.
-

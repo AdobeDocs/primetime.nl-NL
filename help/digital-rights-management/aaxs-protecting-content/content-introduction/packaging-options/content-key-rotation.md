@@ -1,14 +1,13 @@
 ---
 description: De volgende versleutelingsopties worden tijdens het verpakken geselecteerd en kunnen niet worden gewijzigd tijdens het aanschaffen van een licentie.
 title: Toetsrotatie
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: bcb90f0e-5c61-4c56-a030-2831d9a2a962
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '178'
 ht-degree: 0%
 
 ---
-
 
 # Toetsrotatie{#key-rotation}
 

@@ -1,13 +1,13 @@
 ---
 title: Amazon FireOS SSO met Cookbook zonder client
 description: Amazon FireOS SSO met Cookbook zonder client
-source-git-commit: 326f97d058646795cab5d062fa5b980235f7da37
+exl-id: 4c65eae7-81c1-4926-9202-a36fd13af6ec
+source-git-commit: bfc3ba55c99daba561255760baf273b6538a3c6e
 workflow-type: tm+mt
 source-wordcount: '761'
 ht-degree: 0%
 
 ---
-
 
 # Amazon FireOS SSO met Cookbook zonder client {#amazon-fireos-sso-using-clientless-api-cookbook}
 

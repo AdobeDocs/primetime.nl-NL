@@ -1,14 +1,13 @@
 ---
 description: Mediastreams kunnen aanvullende metagegevens in de vorm van tags in het bestand playlist/manifest bevatten. Dit bestand geeft de plaatsing van de reclame aan. U kunt aangepaste tagnamen opgeven en een melding ontvangen wanneer bepaalde tags in het manifestbestand worden weergegeven.
 title: Aangepaste tags
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: b7528516-4996-4bd3-8a82-bb062973aed5
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '327'
 ht-degree: 0%
 
 ---
-
 
 # Overzicht {#custom-tags-overview}
 
@@ -30,7 +29,7 @@ TVSDK biedt offline ondersteuning voor specifieke #EXT-advertentietags. Uw toepa
 >
 >**Beperking**
 >
->Wanneer HLS door de `Video` markering in Safari, en niet door Flash Fallback te gebruiken wordt gespeeld, zal deze eigenschap niet beschikbaar in Safari zijn.
+>Wanneer HLS door te gebruiken wordt gespeeld `Video` -tag in Safari, en niet met Flash Fallback, is deze functie beschikbaar in Safari.
 
 ## Aangepaste HLS-tags gebruiken {#section_AD032318AEF5418393D2B1DF36B0BABB}
 
@@ -64,9 +63,9 @@ seg5.ts
 
 Uw toepassing kan de volgende scenario&#39;s instellen:
 
-* Een melding wanneer het bestand `#EXT-X-ASSET`-tags bevat of een andere set aangepaste tagnamen waarop u een abonnement hebt genomen.
-* Voeg advertenties in wanneer een `#EXT-X-AD`-tag of een andere aangepaste tagnaam in de stream wordt gevonden.
+* Een melding wanneer `#EXT-X-ASSET` -tags of een andere set aangepaste tagnamen waarop u zich hebt geabonneerd, bestaan in het bestand.
+* Advertenties invoegen wanneer een `#EXT-X-AD` -tag of een andere aangepaste tagnaam in de stream wordt gevonden.
 
-U kunt zich als aangepaste tags abonneren op een van de volgende tags: `EXT-PROGRAM-DATE-TIME`, `EXT-X-START`, `EXT-X-AD`, `EXT-X-CUE`, `EXT-X-ENDLIST`. Tijdens het parseren van manifestbestanden ontvangt u een melding met een gebeurtenis `TimedMetadata`.
+U kunt zich als aangepaste tags abonneren op een van de volgende tags: `EXT-PROGRAM-DATE-TIME`, `EXT-X-START`, `EXT-X-AD`, `EXT-X-CUE`, `EXT-X-ENDLIST`. U wordt op de hoogte gesteld van een `TimedMetadata` gebeurtenis tijdens het parseren van manifestbestanden.
 
-Er zijn enkele advertentietags, zoals `EXT-X-CUE`, waarop u al bent geabonneerd. Deze advertentietags worden ook gebruikt door de standaardopportuniteitsgenerator. U kunt specificeren welke ad markeringen door de standaardkansgenerator door het `adTags` bezit te plaatsen worden gebruikt.
+Er zijn enkele advertentietags, zoals `EXT-X-CUE`, waarop u al bent geabonneerd. Deze advertentietags worden ook gebruikt door de standaardopportuniteitsgenerator. U kunt opgeven welke advertentietags door de standaardopportuniteitsgenerator worden gebruikt door de optie `adTags` eigenschap.

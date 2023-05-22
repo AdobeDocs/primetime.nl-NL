@@ -1,20 +1,19 @@
 ---
 description: TVSDK verzendt ad-serving-gebeurtenissen als reactie op getimede metagegevensbewerkingen.
 title: Gebeurtenissen van metagegevens met tijdslimiet toevoegen
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: 875afa2a-a5cc-4192-91e2-5ba7b61abd57
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '174'
 ht-degree: 0%
 
 ---
 
-
-# Gebeurtenissen voor metagegevens via serving/timed toevoegen{#ad-serving-timed-metadata-events}
+# Gebeurtenissen van metagegevens met tijdslimiet toevoegen{#ad-serving-timed-metadata-events}
 
 TVSDK verzendt ad-serving-gebeurtenissen als reactie op getimede metagegevensbewerkingen.
 
-Om op de hoogte te worden gebracht van al dergelijke gerelateerde gebeurtenissen, registreert u gebeurtenislisteners bij het `MediaPlayer`-object voor de volgende gebeurtenissen.
+Registreer gebeurtenislisteners bij de `MediaPlayer` -object voor de volgende gebeurtenissen.
 
 | Gebeurtenis | Betekenis |
 |---|---|

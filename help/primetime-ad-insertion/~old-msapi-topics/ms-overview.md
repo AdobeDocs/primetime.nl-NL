@@ -1,7 +1,6 @@
 ---
 description: De manifestserver coördineert de systemen die inhoud verstrekken, advertenties verstrekken, video spelen, en spooradvertenties. Het ontvangt met M3U8 gecodeerde afspeellijsten (manifests) die door client-videospelers van contentproviders worden ontvangen, advertenties van advertentieleveranciers in de manifests steekt en de vernaakte manifests aan videospelers doorgeeft. De functie ondersteunt zowel client-side als server-side en tracking. Het voert zijn interactie uit gebruikend een op HTTP-Gebaseerde Webdienstinterface.
 title: Overzicht van Manifest Server-interacties
-translation-type: tm+mt
 source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
 source-wordcount: '584'
@@ -24,7 +23,7 @@ Een typische configuratie bevat:
 * Een advertentieserver
 * Een ontvanger voor rapporten voor het bijhouden van advertenties
 
-De workflow varieert op basis van een aantal factoren, zoals of de CDN Akamai is of dat de client een advertentie bijhoudt. Voor een diagram van het werkschema voor client-side en tracking, zie [Client-side tracking workflow](/help/primetime-ad-insertion/~old-msapi-topics/ms-at-effectiveness/notvsdk-csat-overview.md#section_cst_flow).
+De workflow varieert op basis van een aantal factoren, zoals of de CDN Akamai is of dat de client een advertentie bijhoudt. Voor een diagram van de workflow voor client-side en tracking raadpleegt u [Workflow voor bijhouden aan clientzijde](/help/primetime-ad-insertion/~old-msapi-topics/ms-at-effectiveness/notvsdk-csat-overview.md#section_cst_flow).
 
 De manifeste server communiceert met video-levering cliënten door ontvangen van en het antwoorden op de verzoeken van de GET van HTTP. De reacties zijn in M3U8 gecodeerde manifests die inhoud met advertenties beschrijven, eventueel inclusief een JSON- of VMAP-structuur (sidecar) met gedetailleerde instructies voor het bijhouden van advertenties (zie [Bestandsindelingen](/help/primetime-ad-insertion/~old-msapi-topics/ms-list-file-formats/ms-api-file-formats.md)).
 
@@ -38,7 +37,7 @@ Een typisch werkschema kijkt als het volgende:
 
    >[!NOTE]
    >
-   >Als de Bootstrap URL vraagparameters `pttrackingmode=simple` of `ptplayer=ios-mobileweb` plaatsen bevat, keert de manifestserver master/variant manifest URL in een voorwerp JSON terug, en de cliënt verzendt een GET verzoek naar dat variant manifest URL.
+   >Als de parameters van de Bootstrap URL-query de parameter `pttrackingmode=simple` of `ptplayer=ios-mobileweb` het plaatsen, keert de duidelijke server master/variant manifest URL in een voorwerp JSON terug, en de cliënt verzendt een verzoek van de GET naar dat variant manifest URL.
 
 1. De client kiest een stream in het gegenereerde variantmanifest om af te spelen, te verzenden en informatie naar de manifestserver te verzenden.
 1. De manifestserver geeft de door de client opgegeven informatie door aan de advertentieserver en ontvangt advertenties en URL&#39;s voor het bijhouden van advertenties van de advertentieserver. Als een geleverde advertentie niet in formaat HLS is, verzendt de manifestserver het naar CRS voor omzetting in HLS.
@@ -53,7 +52,7 @@ Primetime en invoeging ondersteunen clients op veel platforms voor het afspelen 
 
 ## CORS {#section_BEA7F298660944BE92801E4C82FCD038}
 
-De manifestserver gebruikt de norm het Delen van het Middel van de Cross-Origin (CORS). Het zoekt naar een `Origin` kopbal in de verzoeken het ontvangt. Als de koptekst aanwezig is, reageert deze met
+De manifestserver gebruikt de norm het Delen van het Middel van de Cross-Origin (CORS). Het zoekt naar een `Origin` in de aanvragen die het ontvangt. Als de koptekst aanwezig is, reageert deze met
 
 * `Access-Control-Allow-Origin: *`tekenreeks uit de koptekst Oorsprong`*`
 * `Access-Control-Allow-Credentials: true`

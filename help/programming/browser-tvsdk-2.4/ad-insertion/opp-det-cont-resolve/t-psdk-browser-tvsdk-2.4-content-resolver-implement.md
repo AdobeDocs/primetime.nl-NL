@@ -1,28 +1,27 @@
 ---
 description: U kunt uw eigen inhoudsoplossers implementeren op basis van de standaardoplossers.
 title: Een aangepaste contentoplosser implementeren
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: f594840b-ff56-49c5-baf5-ac2800411215
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '191'
-ht-degree: 1%
+ht-degree: 0%
 
 ---
 
-
-# Een aangepaste inhoudsoplosser{#implement-a-custom-content-resolver} implementeren
+# Een aangepaste contentoplosser implementeren{#implement-a-custom-content-resolver}
 
 U kunt uw eigen inhoudsoplossers implementeren op basis van de standaardoplossers.
 
-Wanneer Browser TVSDK een nieuwe kans ontdekt, herhaalt het door de geregistreerde inhoudoplossers zoekend één die die kans kan oplossen door de `canResolve` methode te gebruiken. De eerste die waar terugkeert wordt geselecteerd voor het oplossen van de kans. Als er geen inhoudoplosser kan worden gemaakt, wordt die mogelijkheid overgeslagen. Omdat het proces voor het oplossen van inhoud meestal asynchroon is, is de oplosser van de inhoud verantwoordelijk voor het op de hoogte brengen van Browser TVSDK wanneer het proces is voltooid.
+Wanneer Browser TVSDK een nieuwe kans ontdekt, herhaalt het door de geregistreerde inhoudoplossers zoekend één die die kans kan oplossen door te gebruiken `canResolve` methode. De eerste die waar terugkeert wordt geselecteerd voor het oplossen van de kans. Als er geen inhoudoplosser kan worden gemaakt, wordt die mogelijkheid overgeslagen. Omdat het proces voor het oplossen van inhoud meestal asynchroon is, is de oplosser van de inhoud verantwoordelijk voor het op de hoogte brengen van Browser TVSDK wanneer het proces is voltooid.
 
 De volgende informatie onthouden:
 
-* De inhoudoplosser roept `client.process` aan om op te geven welke tijdlijnbewerking TVSDK moet uitvoeren.
+* Aanroepen van de inhoudoplosser `client.process` om aan te geven welke tijdlijnbewerking TVSDK moet uitvoeren.
 
    De bewerking is doorgaans een plaatsing van een advertentie-einde.
 
-* De inhoudoplosser roept `client.notifyCompleted` aan als het oplossend proces succesvol is of `client.notifyFailed` als het proces ontbreekt.
+* Aanroepen van de inhoudoplosser `client.notifyCompleted` als het afwikkelingsproces succesvol is of `client.notifyFailed` als het proces mislukt.
 
 1. Maak een aangepaste opportuniteitsoplosser.
 
@@ -132,4 +131,3 @@ De volgende informatie onthouden:
    
    }); 
    ```
-

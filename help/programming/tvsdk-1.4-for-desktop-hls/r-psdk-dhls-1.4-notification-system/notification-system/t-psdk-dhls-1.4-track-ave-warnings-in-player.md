@@ -1,20 +1,19 @@
 ---
 description: Gebruikend NotificationEvent, kunt u waarschuwingen volgen die van de Adobe VideoMotor (AVE) worden overgegaan.
 title: AVE-waarschuwingen bijhouden in uw speler
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: 49118d7f-ed79-4d22-ba91-8929f97c7256
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '165'
-ht-degree: 1%
+ht-degree: 0%
 
 ---
 
-
-# Houd AVE-waarschuwingen bij in uw speler{#track-ave-warnings-in-your-player}
+# AVE-waarschuwingen bijhouden in uw speler{#track-ave-warnings-in-your-player}
 
 Gebruikend NotificationEvent, kunt u waarschuwingen volgen die van de Adobe VideoMotor (AVE) worden overgegaan.
 
-Uw speler-app kan afspeelwaarschuwingen en fouten bijhouden die door de AVE zijn gegenereerd, zoals failover- of netwerk-downgebeurtenissen die het afspelen niet stoppen en waarvoor niet noodzakelijkerwijs een actie van uw app nodig is. Hoewel sommige AVE-fouten worden afgehandeld door de TVSDK, fungeert `NotificationEvent` als een algemeen doorvoermechanisme voor AVE-waarschuwingen naar uw toepassingslaag. Na het ontvangen van waarschuwingen van de AVE, zou u kunnen verkiezen om wat actie te voeren, zoals proactief het tegenhouden van playback, het activeren van een rampenplan, het registreren van berichten, etc.
+Uw speler-app kan afspeelwaarschuwingen en fouten bijhouden die door de AVE zijn gegenereerd, zoals failover- of netwerk-downgebeurtenissen die het afspelen niet stoppen en waarvoor niet noodzakelijkerwijs een actie van uw app nodig is. Terwijl sommige AVE-fouten door de TVSDK worden behandeld, `NotificationEvent` fungeert als een algemeen doorloopmechanisme voor AVE-waarschuwingen naar uw toepassingslaag. Na het ontvangen van waarschuwingen van de AVE, zou u kunnen verkiezen om wat actie te voeren, zoals proactief het tegenhouden van playback, het activeren van een rampenplan, het registreren van berichten, etc.
 
 Gebruik de volgende API-elementen om AVE-waarschuwingen in uw speler bij te houden:
 

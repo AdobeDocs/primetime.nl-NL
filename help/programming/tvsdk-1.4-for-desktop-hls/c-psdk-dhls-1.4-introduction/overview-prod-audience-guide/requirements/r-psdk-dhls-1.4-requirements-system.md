@@ -1,14 +1,13 @@
 ---
 description: Als u TVSDK wilt gebruiken, dient u ervoor te zorgen dat uw hardware-, besturingssysteem- en toepassingsversies allemaal voldoen aan de onderstaande minimale vereisten.
 title: Systeem- en softwarevereisten
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: fb1bccb9-1791-48e5-8e07-91bf776ca14b
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '207'
 ht-degree: 0%
 
 ---
-
 
 # Systeem- en softwarevereisten{#system-and-software-requirements}
 
@@ -27,7 +26,7 @@ Als u TVSDK wilt gebruiken, dient u ervoor te zorgen dat uw hardware-, besturing
    | CPU | Intel Core Duo-processor van 1,83 GHz of sneller |
    | RAM | 513 MB |
    | GPU | 128 MB grafisch geheugen |
-   | swf | Uw gecompileerde toepassing moet ten minste SWF-versie 22 gebruiken |
+   | swf | Uw gecompileerde toepassing moet minstens versie 22 van SWF gebruiken |
 
 * Voor Windows:
 

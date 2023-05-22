@@ -1,13 +1,13 @@
 ---
 title: Amazon FireOS SDK met Dynamic Client-registratie
 description: Amazon FireOS SDK met Dynamic Client-registratie
-source-git-commit: 326f97d058646795cab5d062fa5b980235f7da37
+exl-id: 27acf3f5-8b7e-4299-b0f0-33dd6782aeda
+source-git-commit: bfc3ba55c99daba561255760baf273b6538a3c6e
 workflow-type: tm+mt
 source-wordcount: '1150'
 ht-degree: 0%
 
 ---
-
 
 # Amazon FireOS SDK met Dynamic Client-registratie {#amazon-fireos-sdk-with-dynamic-client-registration}
 
@@ -167,4 +167,3 @@ Vervangen:
 | invalid_request | 400 | Het verzoek is onjuist geformuleerd. SDK zou moeten ophouden uitvoerend vraag aan de server. |
 | invalid_client | 403 | De client-id mag geen aanvragen meer uitvoeren. De SDK MOET de clientregistratie opnieuw uitvoeren. |
 | access_deny | 401 | Access_token is not valid. De sdk MOET om een nieuwe access_token verzoeken. |
-

@@ -1,14 +1,13 @@
 ---
 description: De interface Video Encoder van AVE keert deze videoplaybackberichten in het NATIVE_ERROR meta-gegevensvoorwerp terug.
 title: NATIVE_ERROR-waarden voor het afspelen van video
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: a4476bbe-a62b-40cf-9795-cd209683c572
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '1407'
 ht-degree: 6%
 
 ---
-
 
 # NATIVE_ERROR: Afspeelwaarden van video{#native-error-video-playback-values}
 
@@ -34,7 +33,7 @@ De interface Video Encoder van AVE keert deze videoplaybackberichten in het NATI
    <td colname="col3"> Bewerking gelukt. </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> 3 </td> 
+   <td colname="col1"> 1 </td> 
    <td colname="col2"> <span class="codeph"> ASYNC_OPERATION_IN_PROGRESS</span> </td> 
    <td colname="col3"> Asynchrone bewerking. Het verzoek om een bewerking is uitgevoerd. Informatie over succes/fout is later beschikbaar. </td> 
   </tr> 
@@ -55,72 +54,72 @@ De interface Video Encoder van AVE keert deze videoplaybackberichten in het NATI
   </tr> 
   <tr> 
    <td colname="col1"> 5 </td> 
-   <td colname="col2"><span class="codeph"> FILE_NOT_FOUND  </span> </td> 
+   <td colname="col2"><span class="codeph"> FILE_NOT_FOUND </span> </td> 
    <td colname="col3"> De bron kan niet worden gevonden. </td> 
   </tr> 
   <tr> 
    <td colname="col1"> 6 </td> 
-   <td colname="col2"><span class="codeph"> GENERIC_ERROR  </span> </td> 
+   <td colname="col2"><span class="codeph"> GENERIC_ERROR </span> </td> 
    <td colname="col3"> Algemene fout. </td> 
   </tr> 
   <tr> 
    <td colname="col1"> 7 </td> 
-   <td colname="col2"><span class="codeph"> IRRECOVERABLE_ERROR  </span> </td> 
+   <td colname="col2"><span class="codeph"> IRRECOVERABLE_ERROR </span> </td> 
    <td colname="col3"> Een foutvoorwaarde waarvan de video-engine niet kan worden hersteld. </td> 
   </tr> 
   <tr> 
    <td colname="col1"> 8 </td> 
-   <td colname="col2"><span class="codeph"> LOST_CONNECTION_RECOVERABLE  </span> </td> 
+   <td colname="col2"><span class="codeph"> LOST_CONNECTION_RECOVERABLE </span> </td> 
    <td colname="col3"> Netwerkfout, probeert te herstellen. </td> 
   </tr> 
   <tr> 
    <td colname="col1"> 9 </td> 
-   <td colname="col2"><span class="codeph"> NO_FIXED_SIZE  </span> </td> 
+   <td colname="col2"><span class="codeph"> NO_FIXED_SIZE </span> </td> 
    <td colname="col3"> De grootte van de bron kan niet worden bepaald. </td> 
   </tr> 
   <tr> 
    <td colname="col1"> 10 </td> 
-   <td colname="col2"><span class="codeph"> NOT_IMPLEMENTED  </span> </td> 
+   <td colname="col2"><span class="codeph"> NOT_IMPLEMENTED </span> </td> 
    <td colname="col3"> Functie niet geïmplementeerd. </td> 
   </tr> 
   <tr> 
    <td colname="col1"> 11 </td> 
-   <td colname="col2"><span class="codeph"> OUT_OF_MEMORY  </span> </td> 
+   <td colname="col2"><span class="codeph"> OUT_OF_MEMORY </span> </td> 
    <td colname="col3"> Onvoldoende geheugen. </td> 
   </tr> 
   <tr> 
    <td colname="col1"> 12 </td> 
-   <td colname="col2"><span class="codeph"> PARSE_ERROR  </span> </td> 
+   <td colname="col2"><span class="codeph"> PARSE_ERROR </span> </td> 
    <td colname="col3"> Fout bij het parseren van het mediabestand. </td> 
   </tr> 
   <tr> 
    <td colname="col1"> 13 </td> 
-   <td colname="col2"><span class="codeph"> SIZE_UNKNOWN  </span> </td> 
+   <td colname="col2"><span class="codeph"> SIZE_UNKNOWN </span> </td> 
    <td colname="col3"> De bron heeft een grootte, maar het is onbekend. </td> 
   </tr> 
   <tr> 
    <td colname="col1"> 14 </td> 
-   <td colname="col2"><span class="codeph"> UNDER_FLOW  </span> </td> 
+   <td colname="col2"><span class="codeph"> UNDER_FLOW </span> </td> 
    <td colname="col3"> Onderstroomvoorwaarde. </td> 
   </tr> 
   <tr> 
    <td colname="col1"> 15 </td> 
-   <td colname="col2"><span class="codeph"> UNSUPPORTED_CONFIG  </span> </td> 
+   <td colname="col2"><span class="codeph"> UNSUPPORTED_CONFIG </span> </td> 
    <td colname="col3"> Configuration is not supported. </td> 
   </tr> 
   <tr> 
    <td colname="col1"> 16 </td> 
-   <td colname="col2"><span class="codeph"> UNSUPPORTED_OPERATION  </span> </td> 
+   <td colname="col2"><span class="codeph"> UNSUPPORTED_OPERATION </span> </td> 
    <td colname="col3"> Bewerking wordt niet ondersteund. </td> 
   </tr> 
   <tr> 
    <td colname="col1"> 17 </td> 
-   <td colname="col2"><span class="codeph"> WAITING_FOR_INIT  </span> </td> 
+   <td colname="col2"><span class="codeph"> WAITING_FOR_INIT </span> </td> 
    <td colname="col3"> Nog niet geïnitialiseerd. </td> 
   </tr> 
   <tr> 
    <td colname="col1"> 18 </td> 
-   <td colname="col2"><span class="codeph"> INVALID_PARAMETER  </span> </td> 
+   <td colname="col2"><span class="codeph"> INVALID_PARAMETER </span> </td> 
    <td colname="col3"> Ongeldige parameter. </td> 
   </tr> 
   <tr> 
@@ -145,7 +144,7 @@ De interface Video Encoder van AVE keert deze videoplaybackberichten in het NATI
   </tr> 
   <tr> 
    <td colname="col1"> 23 </td> 
-   <td colname="col2"><span class="codeph"> SOURCE_NOT_SPECIFIED  </span> </td> 
+   <td colname="col2"><span class="codeph"> SOURCE_NOT_SPECIFIED </span> </td> 
    <td colname="col3"> Bron niet opgegeven. </td> 
   </tr> 
   <tr> 
@@ -175,7 +174,7 @@ De interface Video Encoder van AVE keert deze videoplaybackberichten in het NATI
   </tr> 
   <tr> 
    <td colname="col1"> 29 </td> 
-   <td colname="col2"><span class="codeph"> CONTAINER_NOT_SUPPORTED  </span> </td> 
+   <td colname="col2"><span class="codeph"> CONTAINER_NOT_SUPPORTED </span> </td> 
    <td colname="col3"> Containertype wordt niet ondersteund. </td> 
   </tr> 
   <tr> 
@@ -250,7 +249,7 @@ De interface Video Encoder van AVE keert deze videoplaybackberichten in het NATI
   </tr> 
   <tr> 
    <td colname="col1"> 44 </td> 
-   <td colname="col2"><span class="codeph"> NETWORK_DOWN  </span> </td> 
+   <td colname="col2"><span class="codeph"> NETWORK_DOWN </span> </td> 
    <td colname="col3"> De netwerkverbinding van de gebruiker is verbroken. Het afspelen kan op elk moment worden gestopt en wordt hervat wanneer de verbinding beschikbaar is. </td> 
   </tr> 
   <tr> 
@@ -300,7 +299,7 @@ De interface Video Encoder van AVE keert deze videoplaybackberichten in het NATI
   </tr> 
   <tr> 
    <td colname="col1"> 54 </td> 
-   <td colname="col2"><span class="codeph"> LIVE_HOLD  </span> </td> 
+   <td colname="col2"><span class="codeph"> LIVE_HOLD </span> </td> 
    <td colname="col3"> De mediaslezer kan geen segmenten laden omdat het einde van het live venster is bereikt. Het laden van segmenten wordt hervat wanneer de server nieuwe media aan het live venster toevoegt. Deze status wordt meestal bereikt als: 
     <ul id="ul_FCFF658EDA4144E59970B317D6DEB624"> 
      <li id="li_2F6EEEB782D54CD999BC7CC7C0B78B48">De bufferTime is te hoog (gelijk aan of hoger dan de live vensterduur). </li> 
@@ -310,7 +309,7 @@ De interface Video Encoder van AVE keert deze videoplaybackberichten in het NATI
   </tr> 
   <tr> 
    <td colname="col1"> 55 </td> 
-   <td colname="col2"><span class="codeph"> BAD_MEDIA_INTERLEAVING  </span> </td> 
+   <td colname="col2"><span class="codeph"> BAD_MEDIA_INTERLEAVING </span> </td> 
    <td colname="col3"> De audio- en video-interleave in de media is niet correct uitgevoerd. Dit is een verpakkingsfout. De waarschuwing wordt verzonden wanneer het verschil groter is dan twee seconden. </td> 
   </tr> 
   <tr> 
@@ -339,7 +338,7 @@ De interface Video Encoder van AVE keert deze videoplaybackberichten in het NATI
    <td colname="col3"> Invoegingen achteraf zijn niet toegestaan op live media. Ze zijn echter wel toegestaan nadat de server de media als voltooid heeft gemarkeerd. </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> 81 </td> 
+   <td colname="col1"> 61 </td> 
    <td colname="col2"><span class="codeph"> INTERNAL_ERROR</span> </td> 
    <td colname="col3"> Een zeer zeldzame kwestie die nooit zou mogen voorkomen. </td> 
   </tr> 
@@ -375,7 +374,7 @@ De interface Video Encoder van AVE keert deze videoplaybackberichten in het NATI
   </tr> 
   <tr> 
    <td colname="col1"> 68 </td> 
-   <td colname="col2"><span class="codeph"> PROTOCOL_NOT_SUPPORTED  </span> </td> 
+   <td colname="col2"><span class="codeph"> PROTOCOL_NOT_SUPPORTED </span> </td> 
    <td colname="col3"> Het webprotocol dat in de URL wordt gebruikt, wordt niet ondersteund. </td> 
   </tr> 
   <tr> 
@@ -424,14 +423,14 @@ De interface Video Encoder van AVE keert deze videoplaybackberichten in het NATI
    <td colname="col3"> Er is geen audioband aanwezig in een interne gegevensstructuur. </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> 58 </td> 
+   <td colname="col1"> 78 </td> 
    <td colname="col2"><span class="codeph"> FILE_OPEN_ERROR</span> </td> 
    <td colname="col3"> Kan bestand niet openen. </td> 
   </tr> 
   <tr> 
    <td colname="col1"> 79 </td> 
    <td colname="col2"><span class="codeph"> FILE_WRITE_ERROR</span> </td> 
-   <td colname="col3"> Kan niet naar een bestand schrijven. </td> 
+   <td colname="col3"> Kan niet schrijven naar een bestand. </td> 
   </tr> 
   <tr> 
    <td colname="col1"> 80 </td> 
@@ -445,7 +444,7 @@ De interface Video Encoder van AVE keert deze videoplaybackberichten in het NATI
   </tr> 
   <tr> 
    <td colname="col1"> 82 </td> 
-   <td colname="col2"><span class="codeph"> SECURITY_ERROR  </span> </td> 
+   <td colname="col2"><span class="codeph"> SECURITY_ERROR </span> </td> 
    <td colname="col3"> Het laden van de inhoud is mislukt vanwege beveiligingsbeperkingen. </td> 
   </tr> 
   <tr> 
@@ -465,7 +464,7 @@ De interface Video Encoder van AVE keert deze videoplaybackberichten in het NATI
   </tr> 
   <tr> 
    <td colname="col1"> 87 </td> 
-   <td colname="col2"><span class="codeph"> KEY_NOT_FOUND  </span> </td> 
+   <td colname="col2"><span class="codeph"> KEY_NOT_FOUND </span> </td> 
    <td colname="col3"> Kan sleutel niet vinden. </td> 
   </tr> 
   <tr> 
@@ -496,7 +495,7 @@ De interface Video Encoder van AVE keert deze videoplaybackberichten in het NATI
   <tr> 
    <td colname="col1"> 93 </td> 
    <td colname="col2"><span class="codeph"> TRICKPLAY_ENDED_DUE_TO_ERROR</span> </td> 
-   <td colname="col3">Er is een fout opgetreden tijdens het afspelen van media in de <i>truc-modus</i>. De modus Steen afspelen wordt beëindigd en de stream wordt gepauzeerd. Roep <span class="codeph"> Play()</span> aan om de media in de normale modus af te spelen. </td> 
+   <td colname="col3">Er is een fout opgetreden tijdens het afspelen van media in <i>truc</i> in. De modus Steen afspelen wordt beëindigd en de stream wordt gepauzeerd. Bellen <span class="codeph"> Play()</span> om de media in de normale modus af te spelen. </td> 
   </tr> 
   <tr> 
    <td colname="col1"> 95 </td> 
@@ -505,4 +504,3 @@ De interface Video Encoder van AVE keert deze videoplaybackberichten in het NATI
   </tr> 
  </tbody> 
 </table>
-

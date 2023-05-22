@@ -1,20 +1,19 @@
 ---
 description: U kunt uw eigen opportuniteitsgenerators uitvoeren door de klasse OpportunityGenerator te implementeren.
 title: Een aangepaste opportuniteitsgenerator implementeren
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: 215259bd-d8df-43df-9dba-a373559fd926
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '100'
-ht-degree: 4%
+ht-degree: 0%
 
 ---
 
-
-# Een aangepaste opportuniteitsgenerator {#implement-a-custom-opportunity-generator} implementeren
+# Een aangepaste opportuniteitsgenerator implementeren {#implement-a-custom-opportunity-generator}
 
 U kunt uw eigen opportuniteitsgenerators uitvoeren door de klasse OpportunityGenerator te implementeren.
 
-1. Implementeer uw aangepaste `ContentFactory` door de `ContentFactory`-interface te implementeren en `retrieveGenerators` te overschrijven.
+1. Uw aangepaste versie implementeren `ContentFactory` door `ContentFactory` interface en overschrijven `retrieveGenerators`.
 
    Bijvoorbeeld:
 
@@ -30,7 +29,7 @@ U kunt uw eigen opportuniteitsgenerators uitvoeren door de klasse OpportunityGen
    }
    ```
 
-1. Registreer `ContentFactory` aan `MediaPlayer`.
+1. Registreer de `ContentFactory` aan de `MediaPlayer`.
 
    Bijvoorbeeld:
 
@@ -47,14 +46,14 @@ U kunt uw eigen opportuniteitsgenerators uitvoeren door de klasse OpportunityGen
    itemLoader.load(resource, id, config);
    ```
 
-1. Creeer een klasse van de de generator van de douanekans die de `OpportunityGenerator` klasse uitvoert.
+1. Creeer een klasse van de douanemogelijkheid generator die uitvoert `OpportunityGenerator` klasse.
 
    ```java
    public class CustomOpportunityGenerator implements OpportunityGenerator  
    {...}
    ```
 
-   1. Overschrijf `doConfigure`, `doUpdate` en `doCleanup` in de aangepaste opportuniteitsgenerator:
+   1. In de generator van de douanemogelijkheid, treedt `doConfigure`, `doUpdate` en `doCleanup`:
 
       ```java
       @Override 
@@ -75,7 +74,7 @@ U kunt uw eigen opportuniteitsgenerators uitvoeren door de klasse OpportunityGen
       List<TimedMetadata> tList = getItem().getTimedMetadata(); 
       ```
 
-   1. Voor elke `TimedMetadata` of groep van `TimedMetadata`, creeer een kans met de volgende attributen:
+   1. Voor elke `TimedMetadata` of groep `TimedMetadata`, maak een kans met de volgende kenmerken:
 
       ```java
       Opportunity( 
@@ -86,7 +85,7 @@ U kunt uw eigen opportuniteitsgenerators uitvoeren door de klasse OpportunityGen
       ); 
       ```
 
-   1. Voor elke gemaakte kans, roep `resolve` op `OpportunityGeneratorClient:getClient().resolve(opportunity);`.
+   1. Voor elke gemaakte kans roept u `resolve` op de `OpportunityGeneratorClient:getClient().resolve(opportunity);`.
 
 <!--<a id="example_7A46377EBE79458E87423EB95D0568D4"></a>-->
 

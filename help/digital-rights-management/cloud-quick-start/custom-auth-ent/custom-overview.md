@@ -2,14 +2,13 @@
 title: Overzicht van aangepaste verificatie/machtiging (optioneel)
 description: Overzicht van aangepaste verificatie/machtiging (optioneel)
 copied-description: true
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: d92c4246-c772-44da-80b6-4086dfc30ff4
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '105'
 ht-degree: 0%
 
 ---
-
 
 # Overzicht van aangepaste verificatie/machtiging (optioneel){#custom-authentication-entitlement-overview-optional}
 
@@ -22,5 +21,4 @@ Primetime Cloud DRM bevat een referentie-implementatie van een back-end verifica
 
 >[!NOTE]
 >
->Eerder was dit een afzonderlijk product met de naam *Back End Entitlement Server* (BES), dus de verwijzingen naar BES in dit document en in de brondossiers.
-
+>Eerder was dit een afzonderlijk product dat *Back End Entitlement Server* (BES), dus de verwijzingen naar BES in dit document en in de bronbestanden.

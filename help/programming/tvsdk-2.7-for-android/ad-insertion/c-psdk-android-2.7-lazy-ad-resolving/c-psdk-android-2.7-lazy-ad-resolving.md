@@ -2,14 +2,13 @@
 description: Oplossen en laden van advertenties kan een onaanvaardbare wachttijd veroorzaken voor een gebruiker die wacht tot het afspelen is gestart. Met de functies Lazy Ad Loading en Lazy Ad Resolving kunt u deze opstartvertraging verminderen.
 keywords: Lazy;Adverteren;Toevoegen, laden
 title: Lazy en oplossen
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: 6f4c2b9b-a129-4132-8c88-259602222381
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '476'
 ht-degree: 0%
 
 ---
-
 
 # Overzicht {#lazy-ad-resolving}
 
@@ -17,17 +16,17 @@ Oplossen en laden van advertenties kan een onaanvaardbare wachttijd veroorzaken 
 
 * Eenvoudig proces voor het oplossen en laden van bestanden:
 
-   1. TVSDK downloadt manifest (playlist) en *verhelpt* alle advertenties.
-   1. TVSDK *laadt* alle advertenties en plaatst deze op de tijdlijn.
+   1. TVSDK downloadt manifest (playlist) en *oplossen* alle advertenties.
+   1. TVSDK *laden* alle advertenties en plaatsen deze op de tijdlijn.
    1. TVSDK verplaatst de speler naar de status PREPARED en begint met afspelen van inhoud.
 
    De speler gebruikt de URL&#39;s in het manifest om de advertentie-inhoud (creatieven) te verkrijgen, zorgt ervoor dat de advertentie-inhoud een indeling heeft die TVSDK kan afspelen en dat TVSDK de advertenties op de tijdlijn plaatst. Dit basisproces voor het oplossen en laden van advertenties kan een onaanvaardbare lange wachttijd veroorzaken voor een gebruiker die wacht om zijn inhoud af te spelen, vooral als het manifest meerdere advertentie-URL&#39;s bevat.
 
 * *Lazy advertentie laden*:
 
-   1. TVSDK downloadt een afspeellijst en *lost* alle advertenties op.
-   1. TVSDK *laadt* pre-roll advertenties, verplaatst de speler naar de status PREPARED en begint de inhoud af te spelen.
-   1. TVSDK *laadt* de resterende advertenties en plaatst deze op de tijdlijn wanneer het afspelen plaatsvindt.
+   1. TVSDK downloadt een afspeellijst en *oplossen* alle advertenties.
+   1. TVSDK *laden* pre-rol advertenties, verplaatst de speler in de PREPARED status, en de inhoudsplayback begint.
+   1. TVSDK *laden* de resterende advertenties en plaatst deze op de tijdlijn wanneer het afspelen plaatsvindt.
 
    Met deze functie wordt het basisproces verbeterd doordat de speler in de status PREPARED wordt geplaatst voordat alle advertenties worden geladen.
 
@@ -45,20 +44,16 @@ Oplossen en laden van advertenties kan een onaanvaardbare wachttijd veroorzaken 
 >
 >* Lazy Ad Resolving is standaard ingeschakeld. Als u deze uitschakelt, worden alle advertenties opgelost voordat het afspelen wordt gestart.
 >* Met Lazy Adv Resolving kunt u pas zoeken of tikken nadat alle advertenties zijn opgelost:
-
    >
-   >    
-   * De speler moet wachten op de gebeurtenis `kEventAdResolutionComplete` voordat u het afspelen van zoekopdrachten of trucs toestaat.
-   >    * Als de gebruiker zoekbewerkingen of truc-afspeelbewerkingen probeert uit te voeren terwijl advertenties nog steeds worden opgelost, genereert TVSDK de fout `kECLazyAdResolutionInProgress`.
-   >    * Indien nodig moet de speler de scrubbalk *after* die de gebeurtenis `kEventAdResolutionComplete` ontvangt, bijwerken.
+   >    * De speler moet wachten op de `kEventAdResolutionComplete` -gebeurtenis voordat u zoekopdrachten of trucs toestaat.
+   >    * Als de gebruiker zoekbewerkingen of truc-afspeelbewerkingen probeert uit te voeren terwijl advertenties nog steeds worden opgelost, geeft TVSDK de opdracht `kECLazyAdResolutionInProgress` fout.
+   >    * Indien nodig moet de speler de scrubbalk bijwerken, *na* het ontvangen van `kEventAdResolutionComplete` gebeurtenis.
 >
 >* Lazy Ad Resolving is alleen voor VOD. Het werkt niet met LIVE-streams.
->* Het luie Oplossen van Advertentie is onverenigbaar met *Onmiddellijk op* eigenschap.
-
+>* Lazy Adverteren is niet compatibel met de *Direct aan* gebruiken.
 >
->  
-
-Zie instant-on voor meer informatie over Instant On.
+>  Zie instant-on voor meer informatie over Instant On.
 >
 >* Opgeloste advertentie zorgt ervoor dat het afspelen veel sneller begint, maar als er in de eerste 60 seconden van het afspelen een advertentie-einde optreedt, wordt deze mogelijk niet opgelost.
 >* Lazy en resolutie hebben geen invloed op pre-roll advertenties.
+

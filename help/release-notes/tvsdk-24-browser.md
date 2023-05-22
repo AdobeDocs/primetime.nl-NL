@@ -1496,7 +1496,7 @@ De beperkingen en bekende problemen in Browser TVSDK worden hieronder vermeld.
    <td>VOD + Live</td> 
    <td>QoS- en Player-meldingen</td> 
    <td>21129: De framesnelheid is niet beschikbaar bij Flash fallback.</td> 
-   <td><p>・ 11170:</p> <p>Timed_Event is niet beschikbaar voor Browser TVSDK met MSE in tegenstelling tot Browser TVSDK met Flash Fallback.</p> <p>21129: De framesnelheid wordt niet berekend voor live streams.</p> </td> 
+   <td><p>• 11170:</p> <p>Timed_Event is niet beschikbaar voor Browser TVSDK met MSE in tegenstelling tot Browser TVSDK met Flash Fallback.</p> <p>21129: De framesnelheid wordt niet berekend voor live streams.</p> </td> 
    <td> </td> 
    <td> </td> 
   </tr> 
@@ -1664,7 +1664,7 @@ De beperkingen en bekende problemen in Browser TVSDK worden hieronder vermeld.
    <td>VOD + Live</td> 
    <td>Creatieve herverpakking</td> 
    <td> </td> 
-   <td>21464: De reactie van de advertentie wordt volledig genegeerd als het maken van een nieuw pakket mislukt voor een van de advertenties in het advertentiespoor.</td> 
+   <td>21464: De reactie van de advertentie wordt volledig genegeerd als het opnieuw verpakken van de advertentie mislukt voor een van de advertenties in de pauze.</td> 
    <td> </td> 
    <td> </td> 
   </tr> 

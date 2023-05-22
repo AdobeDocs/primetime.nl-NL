@@ -1,14 +1,13 @@
 ---
 description: U kunt de positie en grootte van de videoweergave bepalen met het MediaPlayerView-object.
 title: De positie en grootte van de videoweergave bepalen
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: ab88a90f-4493-4f05-8da0-703ab3cf159e
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '293'
 ht-degree: 0%
 
 ---
-
 
 # De positie en grootte van de videoweergave bepalen{#control-the-position-and-size-of-the-video-view}
 
@@ -16,21 +15,21 @@ U kunt de positie en grootte van de videoweergave bepalen met het MediaPlayerVie
 
 Browser TVSDK door gebrek probeert om de aspectverhouding van de videomening te handhaven wanneer de grootte of de positie van de video wegens een verandering door de toepassing, een profielschakelaar, een inhoudschakelaar, etc. verandert.
 
-U kunt het standaardgedrag van de aspectverhouding met voeten treden door een verschillend *schaalbeleid* te specificeren. Geef het schaalbeleid op met de eigenschap `scalePolicy` van het object. `MediaPlayerView` Het standaardschaalbeleid van `MediaPlayerView` wordt geplaatst met een geval van de `MaintainAspectRatioScalePolicy` klasse. Om het schaalbeleid terug te stellen, vervang de standaardinstantie van `MaintainAspectRatioScalePolicy` op `MediaPlayerView.scalePolicy` met uw eigen beleid.
+U kunt het standaardgedrag voor de verhouding overschrijven door een andere waarde op te geven *schaalbeleid*. Geef het schaalbeleid op met de opdracht `MediaPlayerView` object `scalePolicy` eigenschap. Het standaardschaalbeleid van `MediaPlayerView` wordt ingesteld met een instantie van de `MaintainAspectRatioScalePolicy` klasse. Als u het schaalbeleid opnieuw wilt instellen, vervangt u de standaardinstantie van `MaintainAspectRatioScalePolicy` op `MediaPlayerView.scalePolicy` met uw eigen beleid.
 
 >[!IMPORTANT]
 >
->U kunt de eigenschap `scalePolicy` niet instellen op een null-waarde.
+>U kunt de `scalePolicy` aan een null-waarde.
 
-## Niet-Flash fallbackscenario&#39;s {#non-flash-fallback-scenarios}
+## Niet-Flash fallback-scenario&#39;s {#non-flash-fallback-scenarios}
 
-In niet-Flash fallback scenario&#39;s, voor schaalbeleid om correct te werken, zou het video div element dat in de `View` aannemer wordt gegeven niet-nul waarden voor `offsetWidth` en `offsetHeight` moeten terugkeren. Als u een voorbeeld van een onjuiste functie wilt weergeven, soms wanneer de breedte en hoogte van de div-elementen van de video niet expliciet zijn ingesteld in css, retourneert de constructor `View` nul voor `offsetWidth` of `offsetHeight`.
+In niet-Flash fallback scenario&#39;s, voor schaalbeleid om correct te werken, het video div element dat in wordt gegeven `View` constructor moet andere waarden dan nul retourneren voor `offsetWidth` en `offsetHeight`. Als u een voorbeeld wilt geven van een onjuiste functie, kan het gebeuren dat wanneer de breedte en hoogte van de div-elementen van de video niet expliciet in css zijn ingesteld, de instelling `View` constructor retourneert nul voor `offsetWidth` of `offsetHeight`.
 
 >[!NOTE]
 >
 >CustomScalePolicy biedt beperkte ondersteuning voor een aantal browsers, met name IE, Edge en Safari 9. Voor deze browsers kan de native hoogte-breedteverhouding van de video niet worden gewijzigd. De positie en afmetingen van de video worden echter afgedwongen volgens het schaalbeleid.
 
-1. Implementeer de interface `MediaPlayerViewScalePolicy` om uw eigen schaalbeleid te maken.
+1. Implementeer de `MediaPlayerViewScalePolicy` om uw eigen schaalbeleid te maken.
 
    De `MediaPlayerViewScalePolicy` heeft één methode:
 
@@ -64,14 +63,14 @@ In niet-Flash fallback scenario&#39;s, voor schaalbeleid om correct te werken, z
    };
    ```
 
-1. Wijs uw implementatie aan het `MediaPlayerView` bezit toe.
+1. Wijs uw implementatie toe aan de `MediaPlayerView` eigenschap.
 
    ```js
    var view = new AdobePSDK.MediaPlayerView(videoDiv); 
    view.scalePolicy= new MediaPlayerViewCustomScalePolicy();
    ```
 
-1. Voeg uw mening aan het `view` bezit van Media Player toe.
+1. Uw weergave toevoegen aan de `view` eigenschap.
 
    ```
    mediaplayer.view = view;
@@ -102,4 +101,3 @@ var view = new AdobePSDK.MediaPlayerView(videoDiv);
 view.scalePolicy = new MediaPlayerViewCustomScalePolicy (); 
 mediaPlayer.view = view;
 ```
-

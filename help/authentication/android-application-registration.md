@@ -1,14 +1,13 @@
 ---
 title: Registratie van Android-toepassingen
 description: Registratie van Android-toepassingen
-source-git-commit: 326f97d058646795cab5d062fa5b980235f7da37
+exl-id: 6238bd87-ac97-4a5c-9d92-3631f7b2d46a
+source-git-commit: bfc3ba55c99daba561255760baf273b6538a3c6e
 workflow-type: tm+mt
 source-wordcount: '598'
 ht-degree: 0%
 
 ---
-
-
 
 # Registratie van Android-toepassingen {#android-application-registration}
 
@@ -68,4 +67,3 @@ In het bronbestand van uw toepassing `strings.xml` Voeg de volgende code toe:
     <string name="software_statement">softwarestatement value</string>
     <string name="redirect_uri">com.domain_name</string>
 ```
-

@@ -1,20 +1,19 @@
 ---
 description: Als u meldingen over tags in het manifest wilt ontvangen, moet u de juiste gebeurtenislisteners implementeren.
 title: Listeners toevoegen voor meldingen van getimede metagegevens
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: e38f2a25-3379-4132-a8de-6703dc564ed4
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '152'
 ht-degree: 0%
 
 ---
 
-
 # Listeners toevoegen voor meldingen van getimede metagegevens {#add-listeners-for-timed-metadata-notifications}
 
 Als u meldingen over tags in het manifest wilt ontvangen, moet u de juiste gebeurtenislisteners implementeren.
 
-U kunt getimede metagegevens controleren door te luisteren naar `onTimedMetadata`, die uw toepassing op de hoogte stelt van verwante activiteit. Telkens wanneer een unieke geabonneerde tag wordt geïdentificeerd tijdens het parseren van de inhoud, bereidt TVSDK een nieuw `TimedMetadata`-object voor en verzendt deze gebeurtenis. Het object bevat de naam van de tag waarop u zich hebt geabonneerd, de lokale tijd tijdens het afspelen waar deze tag wordt weergegeven en andere gegevens.
+U kunt vastgestelde meta-gegevens controleren door te luisteren naar `onTimedMetadata`, die uw toepassing op de hoogte stelt van verwante activiteiten. Telkens wanneer een unieke geabonneerde tag wordt geïdentificeerd tijdens het parseren van de inhoud, bereidt TVSDK een nieuwe tag voor `TimedMetadata` en verzendt deze gebeurtenis. Het object bevat de naam van de tag waarop u zich hebt geabonneerd, de lokale tijd tijdens het afspelen waar deze tag wordt weergegeven en andere gegevens.
 
 1. Luister naar gebeurtenissen.
 
@@ -38,4 +37,4 @@ U kunt getimede metagegevens controleren door te luisteren naar `onTimedMetadata
    }; 
    ```
 
-ID3-metagegevens gebruiken dezelfde `onTimedMetadata`-listener om de aanwezigheid van een ID3-tag aan te geven. Dit zou geen verwarring, echter moeten veroorzaken, omdat u `TimedMetadata` `type` bezit kunt gebruiken om tussen TAG en ID3 te onderscheiden. Zie [ID3-tags](../../content-playback-options/t-psdk-android-2.7-id3-metadata-retrieve.md) voor meer informatie over ID3-tags.
+ID3-metagegevens gebruiken hetzelfde `onTimedMetadata` listener die de aanwezigheid van een ID3-tag aangeeft. Dit mag echter geen verwarring veroorzaken, omdat u de `TimedMetadata` `type` eigenschap om onderscheid te maken tussen TAG en ID3. Voor meer informatie over ID3-tags raadpleegt u  [ID3-tags](../../content-playback-options/t-psdk-android-2.7-id3-metadata-retrieve.md).

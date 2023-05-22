@@ -1,6 +1,6 @@
 ---
 description: U kunt de huidige en resterende tijd weergeven van de inhoud die wordt afgespeeld.
-title: De huidige tijd en de resterende tijd weergeven
+title: Huidige tijd en resterende tijd weergeven
 exl-id: f1aebeb7-381b-4bd5-8535-32b902f838d2
 source-git-commit: 7e3f1e2dcf855ecd241b2aebc01d9d60c90ed114
 workflow-type: tm+mt
@@ -9,7 +9,7 @@ ht-degree: 0%
 
 ---
 
-# De huidige tijd en de resterende tijd weergeven {#display-the-current-time-and-remaining-time}
+# Huidige tijd en resterende tijd weergeven {#display-the-current-time-and-remaining-time}
 
 U kunt de huidige en resterende tijd weergeven van de inhoud die wordt afgespeeld.
 

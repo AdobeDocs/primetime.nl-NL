@@ -1,14 +1,13 @@
 ---
 description: Browser TVSDK steunt een aantal eigenschappen HLS die u kunt uitvoeren om functionaliteit aan uw videotoepassingen toe te voegen.
 title: Ondersteunde HLS-functies
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: 111a6683-fb5c-4f0a-8665-5b1aab77056c
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '736'
 ht-degree: 0%
 
 ---
-
 
 # Ondersteunde HLS-functies {#supported-hls-features}
 
@@ -23,7 +22,7 @@ Browser TVSDK steunt een aantal eigenschappen HLS die u kunt uitvoeren om functi
 
 >[!TIP]
 >
->In de lijsten van de eigenschapmatrijs hieronder, ![gesteund pictogram](assets/supported15.png) betekent dat de eigenschap in de huidige versie wordt gesteund.
+>In de onderstaande tabel met functiematrix: ![ondersteund pictogram](assets/supported15.png) betekent dat de functie wordt ondersteund in de huidige release.
 
 >[!TIP]
 >
@@ -111,7 +110,7 @@ Removed Nielsen row
 | Ad Insertion | VOD + Live | VMAP 1.0 | ![ondersteund pictogram](assets/supported15.png) | ![ondersteund pictogram](assets/supported15.png) | ![ondersteund pictogram](assets/supported15.png) |
 | Ad Insertion | VOD + Live | CRS v3.1 | ![ondersteund pictogram](assets/supported15.png) | ![ondersteund pictogram](assets/supported15.png) | ![ondersteund pictogram](assets/supported15.png) |
 
-## Functies voor HLS-inhoudsbeveiliging {#hls-content-protection}
+## Functies voor beveiliging van HLS-inhoud {#hls-content-protection}
 
 | Categorie | Inhoudstype | Functie | Flash | HTML5: FF, IE, Chrome, Android-chroom | HTML5: Safari, iOS Safari |
 |--- |--- |--- |--- |--- |--- |

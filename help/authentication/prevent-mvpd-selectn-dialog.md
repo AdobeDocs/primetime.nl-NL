@@ -1,13 +1,13 @@
 ---
 title: Voorkomen dat MVPD's worden weergegeven in het dialoogvenster Selectie
 description: Voorkomen dat MVPD's worden weergegeven in het dialoogvenster Selectie
-source-git-commit: 326f97d058646795cab5d062fa5b980235f7da37
+exl-id: 20faf501-c006-45e2-a725-fb1273ecaffe
+source-git-commit: bfc3ba55c99daba561255760baf273b6538a3c6e
 workflow-type: tm+mt
 source-wordcount: '103'
 ht-degree: 0%
 
 ---
-
 
 # Voorkomen dat MVPD&#39;s worden weergegeven in het dialoogvenster Selectie
 

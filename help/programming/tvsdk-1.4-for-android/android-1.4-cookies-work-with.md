@@ -1,14 +1,13 @@
 ---
 description: U kunt TVSDK gebruiken om willekeurige gegevens in koekjeskopballen voor zittingsbeheer, poorttoegang, etc. te verzenden.
 title: Werken met cookies
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: 7482777a-c338-4e0d-b123-ce2712657b8d
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '246'
 ht-degree: 0%
 
 ---
-
 
 # Werken met cookies{#work-with-cookies}
 
@@ -23,7 +22,7 @@ Hier is een voorbeeld met wat type authentificatie wanneer het doen van verzoeke
 
 Werken met cookies:
 
-1. Maak een `cookieManager` en voeg uw cookies voor de URI&#39;s toe aan uw `cookieStore`.
+1. Een `cookieManager` en voeg uw cookies voor de URI&#39;s toe aan uw `cookieStore`.
 
    Bijvoorbeeld:
 
@@ -43,7 +42,7 @@ Werken met cookies:
 
    TVSDK vraagt deze cookieManager bij uitvoering op, controleert of er cookies zijn gekoppeld aan de URL en gebruikt deze automatisch.
 
-   Een andere optie is om `cookieHeaders` in `NetworkConfiguration` te gebruiken om een willekeurige kokerkoord van de koekjeskopbal te plaatsen dat voor verzoeken moet worden gebruikt. Standaard wordt deze cookieheader alleen met belangrijke aanvragen verzonden. Om de koekjeskopbal met alle verzoeken te verzenden, gebruik `NetworkConfiguration` methode `setUseCookieHeadersForAllRequests`:
+   Een andere optie is om te gebruiken `cookieHeaders` in `NetworkConfiguration` om een willekeurige headertekenreeks voor cookies in te stellen die moet worden gebruikt voor aanvragen. Standaard wordt deze cookieheader alleen met sleutelverzoeken verzonden. Als u de cookieheader met alle aanvragen wilt verzenden, gebruikt u de `NetworkConfiguration` methode `setUseCookieHeadersForAllRequests`:
 
 ```java
    NetworkConfiguration networkConfiguration = new NetworkConfiguration(); 

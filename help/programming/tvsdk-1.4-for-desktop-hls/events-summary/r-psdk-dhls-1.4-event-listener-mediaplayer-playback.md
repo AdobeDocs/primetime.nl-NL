@@ -1,20 +1,19 @@
 ---
 description: Uw toepassing kan de activiteit in uw speler en de veranderende staat van de speler controleren door naar gebeurtenissen te luisteren die door TVSDK worden verzonden.
 title: Gebeurtenissen van Playback
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: 9fb77b57-be6c-4dab-b779-d8c606938e46
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '516'
 ht-degree: 0%
 
 ---
 
-
-# Afspeelgebeurtenissen {#playback-events}
+# Gebeurtenissen van Playback {#playback-events}
 
 Uw toepassing kan de activiteit in uw speler en de veranderende staat van de speler controleren door naar gebeurtenissen te luisteren die door TVSDK worden verzonden.
 
-TVSDK verzendt afspeelgebeurtenissen wanneer afspeelbewerkingen van media plaatsvinden, zoals een video die wordt afgespeeld. Registreer listeners bij het `MediaPlayer`-object voor de volgende gebeurtenissen om een melding over alle aan het afspelen gerelateerde gebeurtenissen te ontvangen.
+TVSDK verzendt afspeelgebeurtenissen wanneer afspeelbewerkingen van media plaatsvinden, zoals een video die wordt afgespeeld. Registreer listeners bij de `MediaPlayer` -object voor de volgende gebeurtenissen.
 
 <table frame="all" colsep="1" rowsep="1" id="table_922EEA3DE0BD47BA982E11F890CA0A6B"> 
  <thead> 
@@ -50,7 +49,7 @@ TVSDK verzendt afspeelgebeurtenissen wanneer afspeelbewerkingen van media plaats
   </tr> 
   <tr rowsep="1"> 
    <td colname="1">ProfileEvent.<a href="https://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls_1.4/com/adobe/mediacore/events/ProfileEvent.html#PROFILE_CHANGED" format="html" scope="external"> PROFILE_CHANGED</a> </td> 
-   <td colname="2">Het huidige profiel van de mediaspeler is gewijzigd. Gebruik de eigenschap <span class="codeph"> ProfileEvent.profile</span> om het nieuwe profiel op te halen dat wordt afgespeeld. Gebruik de eigenschap <span class="codeph"> time</span> om de tijd op te halen waarop deze gebeurtenis plaatsvond. </td> 
+   <td colname="2">Het huidige profiel van de mediaspeler is gewijzigd. Gebruik de <span class="codeph"> ProfileEvent.profile</span> om het nieuwe profiel op te halen dat wordt afgespeeld. Gebruik de <span class="codeph"> tijd</span> eigenschap om de tijd op te halen waarop deze gebeurtenis heeft plaatsgevonden. </td> 
   </tr> 
   <tr rowsep="1"> 
    <td colname="1"><b>MediaplayerItem</b> </td> 
@@ -58,7 +57,7 @@ TVSDK verzendt afspeelgebeurtenissen wanneer afspeelbewerkingen van media plaats
   </tr> 
   <tr rowsep="1"> 
    <td colname="1">Gebeurtenis MediaPlayerItem.<a href="https://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls_1.4/com/adobe/mediacore/events/MediaPlayerItemEvent.html#ITEM_CREATED" format="html" scope="external"> ITEM_CREATED</a> </td> 
-   <td colname="2">Er is een <span class="codeph"> MediaPlayerItem</span> gemaakt. </td> 
+   <td colname="2">A <span class="codeph"> MediaPlayerItem</span> is gemaakt. </td> 
   </tr> 
   <tr rowsep="1"> 
    <td colname="1">Gebeurtenis MediaPlayerItem.<a href="https://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls_1.4/com/adobe/mediacore/events/MediaPlayerItemEvent.html#ITEM_UPDATED" format="html" scope="external"> ITEM_BIJGEWERKT</a> </td> 
@@ -74,7 +73,7 @@ TVSDK verzendt afspeelgebeurtenissen wanneer afspeelbewerkingen van media plaats
   </tr> 
   <tr rowsep="1"> 
    <td colname="1"> Gebeurtenis MediaPlayerItem.<a href="https://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls_1.4/com/adobe/mediacore/events/MediaPlayerItemEvent.html#CAPTION_UPDATED" format="html" scope="external"> CAPTION_UPDATED</a> </td> 
-   <td colname="2">Er is een nieuwe Closed Captioning-track gedetecteerd in de mediastream en de verzameling <span class="codeph"> closedCaptionsTracks</span> is bijgewerkt. </td> 
+   <td colname="2">Er is een nieuwe Closed Captioning-track gedetecteerd in de mediastream en de <span class="codeph"> closedCaptionsTracks</span> verzameling is bijgewerkt. </td> 
   </tr> 
   <tr rowsep="1"> 
    <td colname="1"><b>Manifest en tijdlijn</b> </td> 
@@ -82,8 +81,7 @@ TVSDK verzendt afspeelgebeurtenissen wanneer afspeelbewerkingen van media plaats
   </tr> 
   <tr rowsep="0"> 
    <td colname="1">TimelineEvent.<a href="https://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls_1.4/com/adobe/mediacore/events/TimelineEvent.html#TIMELINE_UPDATED" format="html" scope="external"> TIMELINE_UPDATED</a> </td> 
-   <td colname="2">De mediaspeler heeft advertenties toegevoegd of verwijderd en heeft dus een bijgewerkte tijdlijn. <p>Het manifest dat is vernieuwd voor een actief en oude advertentieonderbrekingen zijn verwijderd uit de tijdlijn of er zijn nieuwe advertentiemogelijkheden (actiepunten) ontdekt. De mediaspeler probeert nieuwe advertenties op te lossen en op de tijdlijn te plaatsen. </p> <p> Gebruik deze gebeurtenis om te controleren of de tijdlijn updates bevat (VOD verandert niet tijdens het afspelen). Vervolgens kunt u de tijdlijn ophalen met <a href="https://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls_1.4/com/adobe/mediacore/MediaPlayer.html#timeline" format="html" scope="external"> MediaPlayer.timeline</a>. </p> </td> 
+   <td colname="2">De mediaspeler heeft advertenties toegevoegd of verwijderd en heeft dus een bijgewerkte tijdlijn. <p>Het manifest dat is vernieuwd voor een actief en oude advertentieonderbrekingen zijn verwijderd uit de tijdlijn of er zijn nieuwe advertentiemogelijkheden (actiepunten) ontdekt. De mediaspeler probeert nieuwe advertenties op te lossen en op de tijdlijn te plaatsen. </p> <p> Gebruik deze gebeurtenis om te controleren of de tijdlijn updates bevat (VOD verandert niet tijdens het afspelen). U kunt de tijdlijn vervolgens ophalen met <a href="https://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls_1.4/com/adobe/mediacore/MediaPlayer.html#timeline" format="html" scope="external"> MediaPlayer.timeline</a>. </p> </td> 
   </tr> 
  </tbody> 
 </table>
-

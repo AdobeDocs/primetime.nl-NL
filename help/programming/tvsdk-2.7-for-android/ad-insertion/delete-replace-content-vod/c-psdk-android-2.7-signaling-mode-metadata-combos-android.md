@@ -1,18 +1,17 @@
 ---
-description: U kunt tijdbereiken in VOD-streams markeren, verwijderen en vervangen door verschillende combinaties van ad-signaalmodus en metagegevens te gebruiken. Verschillende combinaties van signalerende wijze en meta-gegevens resulteren in verschillend gedrag.
+description: U kunt tijdbereiken in VOD-streams markeren, verwijderen en vervangen door verschillende combinaties van ad-signaalmodus en metagegevens te gebruiken. Verschillende combinaties van signaalmodus en metagegevens resulteren in verschillende gedragingen.
 title: Effect op het toevoegen en verwijderen van gegevens uit de advertentiemodus en combinaties van metagegevens
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: 949ca84f-4aa9-4668-b91b-99fdf13f625c
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '434'
 ht-degree: 0%
 
 ---
 
+# Effect op het toevoegen en verwijderen van gegevens uit de advertentiemodus en combinaties van metagegevens {#effect-on-ad-insertion-and-deletion-from-ad-signaling-mode-and-ad-metadata-combinations}
 
-# Effect op het toevoegen en verwijderen van gegevens uit de advertentiemodus en de combinaties van metagegevens {#effect-on-ad-insertion-and-deletion-from-ad-signaling-mode-and-ad-metadata-combinations}
-
-U kunt tijdbereiken in VOD-streams markeren, verwijderen en vervangen door verschillende combinaties van ad-signaalmodus en metagegevens te gebruiken. Verschillende combinaties van signalerende wijze en meta-gegevens resulteren in verschillend gedrag.
+U kunt tijdbereiken in VOD-streams markeren, verwijderen en vervangen door verschillende combinaties van ad-signaalmodus en metagegevens te gebruiken. Verschillende combinaties van signaalmodus en metagegevens resulteren in verschillende gedragingen.
 
 >[!TIP]
 >
@@ -26,7 +25,7 @@ De volgende lijst verstrekt de details over het signaleren wijze en gedrag van d
    <th class="entry"> Ad-signaalmodus </th> 
    <th class="entry"> Metagegevens toevoegen </th> 
    <th class="entry"> Gemaakte oplossingen </th> 
-   <th class="entry"><span class="codeph"> </span> PlacementInformationScreated </th> 
+   <th class="entry"><span class="codeph"> PlacementInformations</span> gemaakt </th> 
    <th class="entry"> Resulterend gedrag </th> 
   </tr> 
  </thead>
@@ -51,7 +50,7 @@ De volgende lijst verstrekt de details over het signaleren wijze en gedrag van d
    <td> Verwijderen, Auditude </td> 
    <td> 
     <ul id="ul_E0A2F885E93B4D23A486C37B305E17D8"> 
-     <li id="li_D977B398D3904A44AFEC4B05AB0E3340"><span class="codeph"> PlacementInfo (Type.CUSTOM_TIME_RANGE, Mode.DELETE),  </span> </li> 
+     <li id="li_D977B398D3904A44AFEC4B05AB0E3340"><span class="codeph"> PlacementInfo (Type.CUSTOM_TIME_RANGE, Mode.DELETE), </span> </li> 
      <li id="li_439886CB38AA46239C2E40352443888A"><span class="codeph"> PlacementInfo (Type.SERVER_MAP, Mode.INSERT)</span> </li> 
     </ul> </td> 
    <td> Bereiken verwijderd, advertenties ingevoegd </td> 
@@ -237,4 +236,3 @@ De volgende lijst verstrekt de details over het signaleren wijze en gedrag van d
   </tr> 
  </tbody> 
 </table>
-

@@ -2,27 +2,26 @@
 title: Voorkeuren voor Packager
 description: Voorkeuren voor Packager
 copied-description: true
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: 43e49372-a875-413a-ba27-25e3ce5c64c4
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '385'
 ht-degree: 0%
 
 ---
 
-
-# Packager Preferences {#packager-preferences}
+# Voorkeuren voor Packager {#packager-preferences}
 
 Dit tabblad bevat de vereiste instellingen voor het verpakken van inhoud. In de volgende tabel worden deze voorkeuren beschreven:
 
 | Voorkeur | Beschrijving |
 |--- |--- |
-| Vervoerscertificaat licentieserver | Het servertransportcertificaat, uitgegeven door Adobe. Dit certificaat wordt gebruikt om communicatie tussen de client en de licentieserver te beveiligen. Het dossier moet in de Folder van het Middel worden gevestigd. |
+| Vervoerscertificaat licentieserver | Het servertransportcertificaat, uitgegeven door Adobe. Dit certificaat wordt gebruikt om communicatie tussen de client en licentieserver te beveiligen. Het dossier moet in de Folder van het Middel worden gevestigd. |
 | HSM inschakelen | Specificeert of de certificaten en de geloofsbrieven op HSM worden opgeslagen. In dat geval worden de voorkeuren voor certificaten en referenties uitgeschakeld en moeten de eigenschappen op het tabblad HSM worden opgegeven. |
 | Opties voor sleutelversleuteling | Hiermee wordt opgegeven hoe de coderingssleutel voor inhoud tijdens het verpakken wordt gecodeerd |
 | Certificaat van licentieserver | Het licentieservercertificaat, uitgegeven door Adobe. Het dossier moet in de Folder van het Middel worden gevestigd. De CEK wordt gecodeerd met de openbare sleutel van de licentieserver. Alleen houders van de persoonlijke sleutel van de licentieserver kunnen de CEK decoderen. |
 | Packager Credential | De referentie van de verpakker, uitgegeven door Adobe. Dit bestand wordt gebruikt om de metagegevens tijdens het verpakken te ondertekenen. |
-| Bestandsnaam | Het `PKCS#12` (.pfx) dossier dat certificaat en privé sleutel bevat. Het dossier moet in de Folder van het Middel worden gevestigd. |
+| Bestandsnaam | De `PKCS#12` (.pfx) bestand met certificaat en persoonlijke sleutel. Het dossier moet in de Folder van het Middel worden gevestigd. |
 | Wachtwoord voor bestand | Wachtwoord voor PFX-bestand |
 | Algemene eigenschappen van gecontroleerde mappen | Geeft instellingen op die van toepassing zijn op alle gecontroleerde mappen die op deze server zijn geconfigureerd. |
 | Interval controleren in milliseconden | Hiermee geeft u aan hoe vaak Gecontroleerde mappen moeten controleren of er nieuwe inhoud in het pakket moet worden opgenomen. De server doorloopt alle geconfigureerde Gecontroleerde mappen en slaapt gedurende deze periode. |

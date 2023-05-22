@@ -2,18 +2,17 @@
 title: Modus voor demo van gebruiksmodel configureren
 description: Modus voor demo van gebruiksmodel configureren
 copied-description: true
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: 593acfbd-fd37-4bab-ac8e-5cb62963fac4
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '119'
 ht-degree: 0%
 
 ---
 
-
 # Modus voor demo van gebruiksmodel configureren{#configure-usage-model-demo-mode}
 
-Voordat de server voor Reference Implementation licenties kan uitgeven voor de demo van het gebruiksmodel, moet u de server configureren om op te geven hoe licenties worden gegenereerd voor elk van de vier gebruiksmodellen. Dit betekent u een beleid DRM voor elk gebruiksmodel moet specificeren. De implementatie van de Verwijzing omvat het volgende voorbeeldDRM beleid in de [!DNL Reference Implementation/Server/Reference Implementation Server/resources/] folder:
+Voordat de server voor Reference Implementation licenties kan uitgeven voor de demo van het gebruiksmodel, moet u de server configureren om op te geven hoe licenties worden gegenereerd voor elk van de vier gebruiksmodellen. Dit betekent u een beleid DRM voor elk gebruiksmodel moet specificeren. De implementatie van de Verwijzing omvat het volgende voorbeeldDRM beleid in [!DNL Reference Implementation/Server/Reference Implementation Server/resources/] map:
 
 * `dto-policy.pol` - (Downloaden naar eigen keuze)
 * `vod-policy.pol` - (huur/video-on-demand)
@@ -24,7 +23,7 @@ Voordat de server voor Reference Implementation licenties kan uitgeven voor de d
 >
 >U kunt dit voorbeeldbeleid vervangen door uw eigen DRM-beleid.
 
-1. Plaats deze eigenschappen in [!DNL flashaccess-refimpl.properties] om het beleid te specificeren DRM dat u van plan bent om op elk gebruiksmodel toe te passen:
+1. Deze eigenschappen instellen in [!DNL flashaccess-refimpl.properties] om het beleid te specificeren DRM dat u van plan bent op elk gebruiksmodel toe te passen:
 
    ```
    # DRM Policy file name for Download To Own usage 
@@ -37,4 +36,4 @@ Voordat de server voor Reference Implementation licenties kan uitgeven voor de d
    RefImpl.UsageModelDemo.Policy.Free=ad-policy.pol
    ```
 
-1. Kopieer uw dossiers van het steekproefbeleid aan de folder u in `config.resourcesDirectory` bezit in [!DNL flashaccess-refimpl.properties] specificeert.
+1. Kopieer de voorbeeldbeleidsbestanden naar de map die u opgeeft in het dialoogvenster `config.resourcesDirectory` eigenschap in [!DNL flashaccess-refimpl.properties].

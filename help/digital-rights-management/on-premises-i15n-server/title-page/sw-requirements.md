@@ -2,21 +2,20 @@
 title: Softwarevereisten
 description: Softwarevereisten
 copied-description: true
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: aa2ae6ac-7c2a-4cc3-a3a4-b7f92e478d23
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '164'
 ht-degree: 0%
 
 ---
 
-
 # Softwarevereisten {#software-requirements}
 
 * Tomcat 6
 * JDK 1.8
 
-## Inhoud van code leveren / Pakket{#code-delivery-package-contents}
+## Inhoud van levering/pakket voor code{#code-delivery-package-contents}
 
 Het Adobe Primetime DRM On Premises Individualization Server-pakket bevat het volgende:
 
@@ -33,7 +32,7 @@ Het Adobe Primetime DRM On Premises Individualization Server-pakket bevat het vo
    * [!DNL jsafe.dll] (Windows)
 
 * [!DNL adobe-flashaccess-i15n-setup.jar] - Een hulpprogramma voor het coderen van serverreferenties voor wachtwoorden
-* [!DNL ROOT] - bevat een  [!DNL crossdomain.xml] bestand
+* [!DNL ROOT] - bevat een [!DNL crossdomain.xml] file
 
 * ECI-cachebestanden - vooraf gedownload
 * [!DNL addIndivCert.py] - Een script voor het bijwerken van de vertrouwensbasis van een licentieserver voor ondersteuning van individualisaties op locatie
@@ -41,12 +40,12 @@ Het Adobe Primetime DRM On Premises Individualization Server-pakket bevat het vo
 * [!DNL client_sample/] - Een map met een clientcodefragment
 * Opmerkingen bij de release - Voor alle laatste minuten die u aan de documentatie toevoegt
 
-## Certificaten van afzonderlijke validatieservers verkrijgen{#obtain-individualization-server-certificates}
+## Individualisatieservercertificaten verkrijgen{#obtain-individualization-server-certificates}
 
 Om de Server van de Individualisering te gebruiken Op locatie, moet u twee digitale geloofsbrieven (certificaten) eerst verkrijgen:
 
 * *Individuele transportreferentie* - afgegeven door Adobe
-* *Individualisatie CA Credential* , uitgegeven door Symantec (VeriSign)
+* *Individuele CA-referentie* - afgegeven door Symantec (VeriSign)
 
 Om deze certificaten te verkrijgen, dient u een aanvraag in via het Zendesk-ticket naar: [https://adobeprimetime.zendesk.com](https://adobeprimetime.zendesk.com)
 

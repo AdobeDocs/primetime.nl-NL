@@ -2,23 +2,22 @@
 title: Op tijd gebaseerde regels
 description: Op tijd gebaseerde regels
 copied-description: true
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: 02a5c10d-13f5-4482-b525-bf6a1ec9dcf0
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '523'
 ht-degree: 0%
 
 ---
 
-
 # Op tijd gebaseerde regels {#time-based-rules}
 
-Primetime DRM gebruikt &#39;zachte handhaving&#39; van op tijd gebaseerde licentiebeperkingen. Als een tijdrecht tijdens het afspelen van een video verloopt, is het standaardgedrag van Primetime DRM om het afspelen niet te beperken tot de volgende keer dat de videostream opnieuw wordt gemaakt (door `Netstream.stop()` en `Netstream.play()` aan te roepen).
+Primetime DRM gebruikt &#39;zachte handhaving&#39; van op tijd gebaseerde licentiebeperkingen. Als een tijdrecht tijdens het afspelen van een video verloopt, is het standaardgedrag van Primetime DRM dat het afspelen niet wordt beperkt tot de volgende keer dat de videostream opnieuw wordt gemaakt (door `Netstream.stop()` en `Netstream.play()`).
 
 Terwijl de zachte handhaving het standaardgedrag is, kunt u harde handhaving ook toelaten door één van de volgende taken uit te voeren:
 
-* Zorg dat uw videospeler de licentie periodiek opvraagt om er zeker van te zijn dat geen van de tijdbeperkingen is verlopen. Dit kan worden verwezenlijkt door `DRMManager.loadVoucher(LOCAL_ONLY).` te roepen een foutencode wijst erop dat de lokaal-opgeslagen vergunning niet meer geldig is.
-* Wanneer de gebruiker **[!UICONTROL Pause]** klikt, kunt u de huidige videotijdstempel opnemen en dan `Netstream.stop()` roepen. Wanneer de gebruiker de knoop van het Spel klikt, kunt u aan de geregistreerde plaats zoeken en dan `Netstream.play()` roepen.
+* Zorg dat uw videospeler de licentie periodiek opvraagt om er zeker van te zijn dat geen van de tijdbeperkingen is verlopen. Dit kan door te roepen worden verwezenlijkt `DRMManager.loadVoucher(LOCAL_ONLY).` Een foutcode geeft aan dat de lokaal opgeslagen licentie niet langer geldig is.
+* Wanneer de gebruiker klikt **[!UICONTROL Pause]**, kunt u de huidige video timestamp opnemen en dan roepen `Netstream.stop()`. Wanneer de gebruiker de knoop van het Spel klikt, kunt u aan de geregistreerde plaats zoeken en dan roepen `Netstream.play()`.
 
 ## Begindatum {#start-date}
 
@@ -52,7 +51,7 @@ In het afspeelvenster wordt aangegeven hoe lang een licentie geldig is nadat dez
 
 Voorbeeld van gebruik: Sommige bedrijfsmodellen staan een verhuurperiode van 30 dagen toe, maar wanneer het afspelen begint, moet het afspelen binnen 48 uur worden voltooid. In dit geval is de duur van 48 uur van de licentie het afspeelvenster.
 
-**Vanaf versie 5.3 voorwaarts**  - Het playbackvenster steunt ook de optie om Harde Stop toe te laten of onbruikbaar te maken, die erop wijst of de decryptiefcontext voor playback bij de afloop van het (toegelaten) playbackvenster zou moeten stoppen of ondanks afloop (gehandicapt) zou moeten voortzetten.
+**Vanaf versie 5.3 vooruit** - Het playbackvenster steunt ook de optie van het toelaten of onbruikbaar maken van Harde Stop, die erop wijst of de decryptie context voor playback bij het verlopen van (toegelaten) playbackvenster zou moeten stoppen of ondanks afloop (gehandicapt) verdergaan.
 
 >[!NOTE]
 >

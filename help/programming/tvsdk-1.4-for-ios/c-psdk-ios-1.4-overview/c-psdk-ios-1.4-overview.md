@@ -1,32 +1,31 @@
 ---
 description: De Adobe Primetime Software Development Kit (TVSDK) is een toolkit waarmee u geavanceerde functionaliteit voor het afspelen van video's kunt toevoegen aan uw toepassingen.
 title: Overzicht
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: 81a60813-138d-456e-ace3-1efc7859159f
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '215'
 ht-degree: 0%
 
 ---
 
-
 # Overzicht {#overview}
 
 De Adobe Primetime Software Development Kit (TVSDK) is een toolkit waarmee u geavanceerde functionaliteit voor het afspelen van video&#39;s kunt toevoegen aan uw toepassingen.
 
-* Voor een lijst van de eigenschappen die door TVSDK worden gesteund, zie [De eigenschappen van TVSDK van de Speler van de Primetime](../c-psdk-ios-1.4-overview/c-psdk-ios-1.4-overview-of-the-player.md).
-* Zie [Vereisten](../c-psdk-ios-1.4-overview/c-psdk-ios-1.4-requirements.md) voor specifieke hardware- en softwarevereisten voor het gebruik van TVSDK.
+* Voor een lijst met functies die door TVSDK worden ondersteund, raadpleegt u [TVSDK-functies van primetime Player](../c-psdk-ios-1.4-overview/c-psdk-ios-1.4-overview-of-the-player.md).
+* Voor specifieke hardware- en softwarevereisten voor het gebruik van TVSDK raadpleegt u [Vereisten](../c-psdk-ios-1.4-overview/c-psdk-ios-1.4-requirements.md).
 
-## Overzicht van product {#section_3C0C7E7FEF1F41BD9C65392C6C5E8D8E}
+## Overzicht van producten {#section_3C0C7E7FEF1F41BD9C65392C6C5E8D8E}
 
 TVSDK bevat API-beschrijvingen en codevoorbeelden waarmee u geavanceerde videofunctionaliteit, inhoudsbeveiliging en reclamefuncties in uw speler kunt integreren. Met Objectc kunt u een gebruikersinterface voor een videospeler maken. Met TVSDK kunt u die gebruikersinterface aansluiten op de mediaspeler. Op deze manier kunt u video&#39;s en reclame afspelen op basis van mediapresentaties. U kunt TVSDK ook gebruiken om informatie over de video op te halen, veiligheid te behandelen, en playback te controleren en te controleren.
 
-Zie [Vereisten](../c-psdk-ios-1.4-overview/c-psdk-ios-1.4-requirements.md) voor specifieke hardware- en softwarevereisten voor het gebruik van TVSDK.
+Voor specifieke hardware- en softwarevereisten voor het gebruik van TVSDK raadpleegt u [Vereisten](../c-psdk-ios-1.4-overview/c-psdk-ios-1.4-requirements.md).
 
 ## Publiek {#section_527860B373734D3BA89FCF5EC1F6DC37}
 
 Deze gids veronderstelt dat u begrijpt hoe te om toepassingen en videospelers te ontwikkelen gebruikend doelstelling-C. U implementeert een videospelergebruikersinterface door die taal te gebruiken en eigenschappen TVSDK op te nemen.
 
-## Informatie over deze handleiding {#section_9A5B2FC506B34B5DB71CA827B307A4D0}
+## Over deze handleiding {#section_9A5B2FC506B34B5DB71CA827B307A4D0}
 
-Deze handleiding bevat informatie waarmee u TVSDK-functies kunt opnemen in een videospeler door op iOS-apparaten onder doelstelling C te werken.
+Deze gids verstrekt informatie die u toestaat om eigenschappen TVSDK in een videospeler op te nemen door doelstelling-C op de apparaten van iOS te gebruiken.

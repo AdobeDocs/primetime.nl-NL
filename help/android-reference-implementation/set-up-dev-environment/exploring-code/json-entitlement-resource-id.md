@@ -1,16 +1,15 @@
 ---
 title: JSON-object voor machtigingsbron-id
 description: Het volgende codeblok geeft een voorbeeld van een JSON-object wanneer de machtigingsbron-id een eenvoudige tekstreeks is.
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: 396c43e7-404a-40f5-8113-a720e2c834e7
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '95'
 ht-degree: 0%
 
 ---
 
-
-# JSON-object voor machtigingsresource-id {#json-object-for-entitlement-resource-id}
+# JSON-object voor machtigingsbron-id {#json-object-for-entitlement-resource-id}
 
 Het volgende codeblok geeft een voorbeeld van een JSON-object wanneer de machtigingsbron-id een eenvoudige tekstreeks is. In dit geval is de bron-id de tekenreeks &quot;resource&quot;.
 
@@ -22,7 +21,7 @@ Het volgende codeblok geeft een voorbeeld van een JSON-object wanneer de machtig
 }
 ```
 
-Het volgende codeblok geeft een voorbeeld van een JSON-object wanneer de machtigingsbron-id een HTML-gecodeerde mRSS-tekenreeks is.
+Het volgende codeblok geeft een voorbeeld van een JSON-object wanneer de machtigingsbron-id een met HTML gecodeerde mRSS-tekenreeks is.
 
 ```
 <rss version="2.0" xmlns:media="https://search.yahoo.com/mrss/"> 

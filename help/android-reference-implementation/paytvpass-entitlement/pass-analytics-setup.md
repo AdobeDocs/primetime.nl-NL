@@ -1,16 +1,15 @@
 ---
 description: U kunt de Reference Implementation instellen om Adobe Analytics-rapporten te gebruiken.
 title: Adobe Analytics-rapportage configureren
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: 3607f9d4-1069-4722-af0b-121223125112
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '379'
 ht-degree: 0%
 
 ---
 
-
-# Adobe Analytics-rapportage {#configure-adobe-analytics-reporting} configureren
+# Adobe Analytics-rapportage configureren {#configure-adobe-analytics-reporting}
 
 U kunt de Reference Implementation instellen om Adobe Analytics-rapporten te gebruiken.
 
@@ -44,7 +43,7 @@ De onderstaande tabel bevat de gegevens die naar Adobe Analytics zijn verzonden:
 
 1. Configureer de toepassing voor gebruik met Adobe Marketing Cloud.
 
-   Als u het verzenden van Primetime Primetime-verificatiegegevens naar Adobe Analytics wilt inschakelen, moet een [!DNL `ADBMobileConfig.json`]-configuratiebestand bij compilatie worden toegevoegd aan de Reference Implementation. Merk op dat dit precies het zelfde configuratiedossier is dat door Primetime SDK wordt gebruikt om de gegevens van de Analyse van de Video naar de Marketing Cloud te verzenden. Raadpleeg de [Adobe Marketing Cloud documentatie](https://microsite.omniture.com/t2/help/en_US/reference/) voor meer informatie over het configureren van een toepassing met uw Adobe Analytics-account.
+   Om het verzenden van Primetime Primetime-verificatiegegevens naar Adobe Analytics mogelijk te maken, [!DNL `ADBMobileConfig.json`] configuratiebestand moet bij compilatie worden toegevoegd aan de referentieimplementatie. Merk op dat dit precies het zelfde configuratiedossier is dat door Primetime SDK wordt gebruikt om de gegevens van de Analyse van de Video naar de Marketing Cloud te verzenden. Raadpleeg de [Adobe Marketing Cloud-documentatie](https://microsite.omniture.com/t2/help/en_US/reference/) voor meer informatie over het configureren van een toepassing met uw Adobe Analytics-account.
 1. Verwerkingsregels maken.
 
    De gegevens van de Primetime-verificatiegebeurtenis die door de Reference Implementation worden verzonden, worden niet automatisch weergegeven in uw analyserapporten. U moet eerst de gegevens gebruiken door verwerkingsregels te maken. Raadpleeg de [Adobe Analytics-documentatie over het maken van verwerkingsregels](https://microsite.omniture.com/t2/help/en_US/reference/processing_rules.html).

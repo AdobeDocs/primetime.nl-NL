@@ -2,16 +2,15 @@
 title: Specifieke beveiligingsinformatie van de leverancier
 description: Specifieke beveiligingsinformatie van de leverancier
 copied-description: true
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: 668321c5-b2c7-4bb3-9f68-2dba622a54de
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '362'
 ht-degree: 0%
 
 ---
 
-
-# Specifieke beveiligingsinformatie van leverancier{#vendor-specific-security-information}
+# Specifieke beveiligingsinformatie van de leverancier{#vendor-specific-security-information}
 
 Deze sectie bevat veiligheid-verwante informatie over werkende systemen en toepassingsservers die in uw oplossing van de Toegang van de Adobe worden opgenomen.
 
@@ -83,4 +82,3 @@ Wanneer het beveiligen van uw toepassingsserver, moet u de maatregelen uitvoeren
 * Onbenodigde poorten sluiten
 * Het beperken van administratieve interfaces door IP adressen of domeinen
 * Java™ Security Manager gebruiken
-

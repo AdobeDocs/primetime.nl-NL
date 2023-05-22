@@ -1,20 +1,19 @@
 ---
-description: 'FER-inhoud (Full Event Replay) is een live stream die wordt omgezet in VOD door de tag #EXT-X-ENDLIST toe te voegen aan het einde van het manifestbestand. De stream behoudt de advertentiemarkeringen.'
+description: FER-inhoud (Full Event Replay) is een live stream die wordt omgezet in VOD door de tag
 title: SNELLER EN OPLOSSEN EN INVOEGEN
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: 9075932d-4e77-4249-af5d-0b392033907f
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '206'
 ht-degree: 0%
 
 ---
 
-
-# FER en oplossen{#fer-ad-resolving-and-insertion}
+# SNELLER EN OPLOSSEN EN INVOEGEN{#fer-ad-resolving-and-insertion}
 
 FER-inhoud (Full Event Replay) is een live stream die wordt omgezet in VOD door de tag #EXT-X-ENDLIST toe te voegen aan het einde van het manifestbestand. De stream behoudt de advertentiemarkeringen.
 
-Browser TVSDK behandelt een FER stroom als VOD, zodat door gebrek is de advertentie signalerende wijze `SERVER_MAP`. Omdat de stream echter zijn advertentiemarkeringen behoudt, kunt u de advertentiemodus instellen op `MANIFEST_CUES`, zodat u de advertentiemarkeringen kunt gebruiken voor het invoegen van advertenties.
+Browser TVSDK behandelt een FER-stream als VOD, zodat de advertentie-signaalmodus standaard `SERVER_MAP`. Aangezien de advertentiemarkeringen echter behouden blijven, kunt u de advertentiemodus instellen op `MANIFEST_CUES`, waarmee u actiemarkeringen voor advertenties kunt gebruiken om invoegingen toe te voegen.
 
 Een invoeging voor een FER-stream inschakelen met actiemarkeringen:
 
@@ -31,4 +30,4 @@ FER-gedrag voor opheffen en invoegen is vergelijkbaar met live opheffen en invoe
 1. Hiermee vervangt u delen van de hoofdinhoud door extra einden van dezelfde duur
 1. Berekent indien nodig de virtuele tijdlijn opnieuw.
 
-**Beperking:** Browser TVSDK ondersteunt alleen het afspelen van HLS FER-streams. Bovendien worden MP4-advertenties in het midden niet ondersteund met FER-streams.
+**Beperking:** Browser-TVSDK ondersteunt alleen het afspelen van HLS FER-streams. Bovendien worden MP4-advertenties in het midden niet ondersteund met FER-streams.

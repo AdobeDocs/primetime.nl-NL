@@ -1,16 +1,15 @@
 ---
 description: Met de methoden in de MediaPlayerItem-klasse kunt u informatie ophalen over de inhoudsstroom die wordt vertegenwoordigd door een geladen MediaResource.
 title: Attributen van MediaPlayer voor toegang tot MediaResource-informatie
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: 183a2992-06f2-4b1d-84c3-a6c2a7223e32
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '210'
 ht-degree: 0%
 
 ---
 
-
-# MediaPlayer-kenmerken voor toegang tot MediaResource-informatie{#mediaplayer-attributes-to-access-mediaresource-information}
+# Attributen van MediaPlayer voor toegang tot MediaResource-informatie{#mediaplayer-attributes-to-access-mediaresource-information}
 
 Met de methoden in de MediaPlayerItem-klasse kunt u informatie ophalen over de inhoudsstroom die wordt vertegenwoordigd door een geladen MediaResource.
 
@@ -25,33 +24,33 @@ Met de methoden in de MediaPlayerItem-klasse kunt u informatie ophalen over de i
  <tbody> 
   <tr rowsep="1"> 
    <td colname="1"> Live stream </td> 
-   <td colname="2"> <span class="codeph"> leven  </span> </td> 
+   <td colname="2"> <span class="codeph"> leven </span> </td> 
    <td colname="3"> True if the stream is live; false als het om VOD gaat. </td> 
   </tr> 
   <tr rowsep="1"> 
    <td colname="1" morerows="2"> Ondertiteling </td> 
-   <td colname="2"> <span class="codeph"> hasClosedCaptions  </span> </td> 
+   <td colname="2"> <span class="codeph"> hasClosedCaptions </span> </td> 
    <td colname="3"> True if closed-caption tracks are available. </td> 
   </tr> 
   <tr rowsep="1"> 
-   <td colname="2"> <span class="codeph"> closedCaptionsTracks  </span> </td> 
+   <td colname="2"> <span class="codeph"> closedCaptionsTracks </span> </td> 
    <td colname="3"> Bevat een lijst met beschikbare Closed Caption-tracks. </td> 
   </tr> 
   <tr rowsep="1"> 
-   <td colname="2"> <span class="codeph"> selectedClosedCaptionsTrack  </span> </td> 
+   <td colname="2"> <span class="codeph"> selectedClosedCaptionsTrack </span> </td> 
    <td colname="3"> Hiermee wordt de Closed Caption-track opgehaald die is geselecteerd met <span class="codeph"> selectClosedCaptionsTrack </span>. </td> 
   </tr> 
   <tr rowsep="1"> 
    <td colname="1" morerows="2"> Alternatieve audio </td> 
-   <td colname="2"> <span class="codeph"> hasAlternateAudio  </span> </td> 
+   <td colname="2"> <span class="codeph"> hasAlternateAudio </span> </td> 
    <td colname="3"> <p>True als de stream alternatieve audiotracks heeft. </p> </td> 
   </tr> 
   <tr rowsep="1"> 
-   <td colname="2"> <span class="codeph"> audioTracks  </span> </td> 
+   <td colname="2"> <span class="codeph"> audioTracks </span> </td> 
    <td colname="3"> Geeft een lijst met beschikbare alternatieve audiotracks. </td> 
   </tr> 
   <tr rowsep="1"> 
-   <td colname="2"> <span class="codeph"> selectedAudioTrack  </span> </td> 
+   <td colname="2"> <span class="codeph"> selectedAudioTrack </span> </td> 
    <td colname="3"> 
     <pre>
       Hiermee wordt de geselecteerde audiotrack opgehaald die is geselecteerd met 
@@ -60,26 +59,25 @@ Met de methoden in de MediaPlayerItem-klasse kunt u informatie ophalen over de i
   </tr> 
   <tr rowsep="1"> 
    <td colname="1" morerows="1"> Timed metadata </td> 
-   <td colname="2"> <span class="codeph"> hasTimedMetadata  </span> </td> 
+   <td colname="2"> <span class="codeph"> hasTimedMetadata </span> </td> 
    <td colname="3"> True if the stream has associated timed metadata. </td> 
   </tr> 
   <tr rowsep="1"> 
-   <td colname="2"> <span class="codeph"> timedMetadata  </span> </td> 
+   <td colname="2"> <span class="codeph"> timedMetadata </span> </td> 
    <td colname="3"> Bevat een lijst met de metagegevensobjecten met tijdinstellingen die aan de stream zijn gekoppeld. </td> 
   </tr> 
   <tr rowsep="1"> 
    <td colname="1" morerows="1"> Meerdere profielen (bitsnelheden) </td> 
-   <td colname="2" morerows="1"> <span class="codeph"> profielen  </span> </td> 
+   <td colname="2" morerows="1"> <span class="codeph"> profielen </span> </td> 
    <td colname="3"> </td> 
   </tr> 
   <tr rowsep="1"> 
-   <td colname="3"> Verstrekt een lijst van de bijbehorende profielen van het beetjetarief die met deze stroom worden geassocieerd. <p>Opmerking:  U kunt de bitsnelheid voor elk profiel en de hoogte en breedte van het profiel ophalen. </p> </td> 
+   <td colname="3"> Verstrekt een lijst van de bijbehorende profielen van het beetjetarief die met deze stroom worden geassocieerd. <p>Opmerking: U kunt de bitsnelheid voor elk profiel en de hoogte en breedte van het profiel ophalen. </p> </td> 
   </tr> 
   <tr rowsep="1"> 
    <td colname="1"> Mediabron </td> 
-   <td colname="2"> <span class="codeph"> resource  </span> </td> 
+   <td colname="2"> <span class="codeph"> resource </span> </td> 
    <td colname="3"> Retourneert de mediabron die aan dit item is gekoppeld. </td> 
   </tr> 
  </tbody> 
 </table>
-

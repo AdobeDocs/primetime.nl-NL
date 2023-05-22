@@ -1,14 +1,13 @@
 ---
 description: De TVSDK biedt momenteel ingebouwde ondersteuning voor metagegevens van advertenties, directe ad-einden en aangepaste advertentiemarkeringen.
 title: Toevoegingstypen
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: 1634ff41-8a8f-4f34-9685-149ec58518ba
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '248'
 ht-degree: 0%
 
 ---
-
 
 # Toevoegingstypen {#ad-insertion-types}
 
@@ -28,17 +27,17 @@ De volgende typen werkstromen voor het invoegen van advertenties worden onderste
   <tr> 
    <td colname="col1"> Adobe Primetime en beslissingsadvertenties </td> 
    <td colname="col2">VOD <p>Live </p> <p>Lineair </p> </td> 
-   <td colname="col3">De verwijzingsimplementatie verstrekt <span class="codeph"> AuditudeMetadata</span> informatie om met de server voor Primetime en besluitvorming (vroeger genoemd geworden Auditude) te verbinden, die op de informatie wordt gebaseerd die in het gedeelte van de Advertentie van Primetime wordt verstrekt</a> van het JSON configuratiedossier</a>. </td> 
+   <td colname="col3">De referentie-implementatie biedt <span class="codeph"> AuditudeMetadata</span> informatie om met de server voor Primetime en besluitvorming (vroeger genoemd Auditude) te verbinden, die op de informatie wordt gebaseerd die in het gedeelte van de Advertenties van de Primetime wordt verstrekt</a> van het JSON-configuratiebestand</a>. </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Direct advertentie-einden </td> 
    <td colname="col2"> VOD </td> 
-   <td colname="col3">U moet advertentie-URL's opgeven in het JSON-invoerbestand. Wanneer de TVSDK een advertentie probeert op te lossen, wordt de directe en break-oplosser aangeroepen en worden de advertenties opgelost op basis van de directe ad-eindgegevens in het JSON-configuratiebestand</a>. </td> 
+   <td colname="col3">U moet advertentie-URL's opgeven in het JSON-invoerbestand. Wanneer de TVSDK een advertentie probeert op te lossen, wordt de directe en break-oplosser aangeroepen en worden de advertenties opgelost op basis van de informatie over directe ad-einden die in het JSON-configuratiebestand is opgegeven</a>. </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Aangepaste advertentiemarkeringen </td> 
    <td colname="col2"> VOD </td> 
-   <td colname="col3">Aangepaste advertentiemarkeringen zijn handig wanneer de videostream zowel hoofdinhoud als advertenties bevat, maar geen informatie over de advertentiepunten en -timing bevat. Als de informatie over het plaatsen van de advertentie op een andere manier wordt verkregen, bijvoorbeeld via een extern CMS, kunt u aangepaste advertentiemarkeringen definiëren en deze doorgeven aan de tijdlijn van de speler. <p>Als u een speler wilt instellen voor invoeging in een advertentie, moet u metagegevens doorgeven en opnemen in de sectie Aangepaste en metagegevens van het JSON-configuratiebestand</a>, dat een ondersteunende implementatie van een advertentieprovider heeft in de referentie-implementatie. </p> </td>
+   <td colname="col3">Aangepaste advertentiemarkeringen zijn handig wanneer de videostream zowel hoofdinhoud als advertenties bevat, maar geen informatie over de advertentiepunten en -timing bevat. Als de informatie over het plaatsen van de advertentie op een andere manier wordt verkregen, bijvoorbeeld via een extern CMS, kunt u aangepaste advertentiemarkeringen definiëren en deze doorgeven aan de tijdlijn van de speler. <p>Als u een speler wilt instellen voor invoeging in een advertentie, moet u metagegevens en metagegevens doorgeven in het gedeelte Aangepaste en metagegevens van het JSON-configuratiebestand</a>, die in de referentie-implementatie een ondersteunende ad-provider heeft. </p> </td>
   </tr>
  </tbody>
 </table>

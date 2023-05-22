@@ -2,16 +2,15 @@
 title: ECI-bestanden
 description: ECI-bestanden
 copied-description: true
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: ac452897-3c64-4481-a3b7-4b69ef6edb61
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '238'
 ht-degree: 0%
 
 ---
 
-
-# Info over ECI-bestanden{#about-eci-files}
+# ECI-bestanden{#about-eci-files}
 
 Naast de CRL&#39;s moet u ook periodiek ingesloten ECI-bestanden (Common Interface) bijwerken. Wanneer Adobe ondersteuning toevoegt voor een nieuw Primetime DRM-clientplatform (bijvoorbeeld: iOS, Android, Windows Flash Player, enz.) wordt een nieuwe ECI-record gemaakt. Om de individualisering van deze cliënt te steunen, moet een overeenkomstige ECI verslag op de Server van de Individualisatie aanwezig zijn.
 
@@ -21,7 +20,7 @@ Aangezien de release van nieuwe Primetime DRM-clients niet veel voorkomt, zal Ad
 http://cdmdownload.adobe.com/indiv/onprem/eci/Latest.txt
 ```
 
-Het [!DNL Latest.txt]-bestand bevat de URL naar het meest recente CRL-distributiebestand.
+De [!DNL Latest.txt] Het bestand bevat de URL naar het meest recente CRL-distributiebestand.
 
 Adobe maakt het ZIP-bestand van ECI op de onderstaande manier:
 
@@ -61,8 +60,7 @@ Voer het volgende proces voor installatie na download uit:
 
 1. Noteer de SHA-256-samenvatting en herberekend deze met OpenSSL of een vergelijkbaar gereedschap.
 1. Vergelijk dit met de naam die u in de bestandsnaam hebt opgegeven.
-1. Wijzig de naam van het bestand in [!DNL ECI.zip].
-1. Pak de map [!DNL ECI] uit.
+1. De naam van het bestand wijzigen in [!DNL ECI.zip].
+1. De [!DNL ECI] directory.
 1. Vervang de oude ECI-directory door de nieuwe.
 1. Start de Individualization-server opnieuw.
-

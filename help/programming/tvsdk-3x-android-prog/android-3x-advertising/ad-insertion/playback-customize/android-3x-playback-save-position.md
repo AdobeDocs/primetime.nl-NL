@@ -1,20 +1,19 @@
 ---
 description: U kunt de huidige afspeelpositie in een video opslaan en het afspelen op dezelfde positie in een volgende sessie hervatten.
 title: De videopositie opslaan en later hervatten
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: 9f6dc256-ee82-476d-96d0-f34b55f9e1f4
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '391'
 ht-degree: 0%
 
 ---
 
-
-# De videopositie opslaan en later {#save-the-video-position-and-resume-later} hervatten
+# De videopositie opslaan en later hervatten {#save-the-video-position-and-resume-later}
 
 U kunt de huidige afspeelpositie in een video opslaan en het afspelen op dezelfde positie in een volgende sessie hervatten.
 
-Dynamisch ingevoegde advertenties verschillen per gebruikerssessie, zodat het opslaan van de positie **met** gespliceerde advertenties naar een andere positie in een toekomstige sessie verwijst. TVSDK biedt methoden om de afspeelpositie op te halen zonder gespliceerde advertenties te negeren.
+Dynamisch ingevoegde advertenties verschillen per gebruikerssessie, zodat de positie wordt opgeslagen **with** spliced advertenties verwijzen naar een andere positie in een toekomstige sessie. TVSDK biedt methoden om de afspeelpositie op te halen zonder gespliceerde advertenties te negeren.
 
 1. Wanneer de gebruiker een video afsluit, wordt de positie in de video opgehaald en opgeslagen.
 
@@ -24,11 +23,11 @@ Dynamisch ingevoegde advertenties verschillen per gebruikerssessie, zodat het op
 
    De pauzes van de toevoeging kunnen in elke zitting als toe te schrijven aan advertentiepatronen, frequentiegrenzen, etc. variëren. De huidige tijd van de video in één sessie kan in een volgende sessie anders zijn. Wanneer u een positie in de video opslaat, haalt de toepassing de lokale tijd op, die u op het apparaat of in een database op de server kunt opslaan.
 
-   Als de gebruiker bijvoorbeeld op de 20e minuut van de video staat en deze positie vijf minuten aan advertenties bevat, retourneert `getCurrentTime` 1200 seconden, terwijl `getLocalTime` op deze positie 900 seconden retourneert.
+   Als de gebruiker bijvoorbeeld op de twintigste minuut van de video staat en deze positie vijf minuten aan advertenties bevat, `getCurrentTime` zal 1200 seconden terugkeren, terwijl `getLocalTime` op deze positie wordt 900 seconden geretourneerd.
 
    >[!IMPORTANT]
    >
-   >De lokale tijd en de huidige tijd zijn het zelfde voor levende/lineaire stromen. In dit geval heeft `convertToLocalTime` geen effect. Voor VOD blijft de lokale tijd ongewijzigd tijdens het afspelen van advertenties.
+   >De lokale tijd en de huidige tijd zijn het zelfde voor levende/lineaire stromen. In dit geval: `convertToLocalTime` heeft geen effect. Voor VOD blijft de lokale tijd ongewijzigd tijdens het afspelen van advertenties.
 
    ```java
    // Save the user session when player activity stops 
@@ -72,15 +71,15 @@ Dynamisch ingevoegde advertenties verschillen per gebruikerssessie, zodat het op
 
 1. De video op dezelfde positie hervatten:
 
-   * Gebruik `seekToLocalTime` om het afspelen van de video vanaf de positie die is opgeslagen tijdens een vorige sessie te hervatten.
+   * Als u het afspelen van de video wilt hervatten vanaf de positie die u tijdens een vorige sessie hebt opgeslagen, gebruikt u `seekToLocalTime`.
 
       >[!TIP]
       >
       >Deze methode wordt alleen aangeroepen met lokale tijdwaarden. Als de methode wordt aangeroepen met de huidige-tijdresultaten, treedt een onjuist gedrag op.
 
-   * Gebruik `seek` om naar de huidige tijd te zoeken.
+   * Om naar de huidige tijd te zoeken, gebruik `seek`.
 
-1. Wanneer uw toepassing de gebeurtenis `onStatusChanged` van de statusverandering ontvangt, zoek aan de bewaarde lokale tijd.
+1. Wanneer uw toepassing de `onStatusChanged` wijzigt de status, zoekt naar de opgeslagen lokale tijd.
 
    ```java
    private final MediaPlayer.PlaybackEventListener _playbackEventListener =  
@@ -101,6 +100,6 @@ Dynamisch ingevoegde advertenties verschillen per gebruikerssessie, zodat het op
 
 1. Geef de pagina-einden op zoals opgegeven in de interface voor advertentiebeleid.
 1. Voer een douaneselecteur van het advertentiebeleid uit door de standaard uit te breiden en beleidsselecteur.
-1. Geef de ad-einden op die aan de gebruiker moeten worden weergegeven door `selectAdBreaksToPlay` te implementeren.
+1. Geef de ad-einden op die aan de gebruiker moeten worden weergegeven door de implementatie `selectAdBreaksToPlay`.
 
    Deze methode omvat een pre-rol en onderbreking en de middenrol en pauzes vóór de lokale tijdpositie. Uw toepassing kan besluiten een pre-rol en onderbreking te spelen en aan de gespecificeerde lokale tijd te hervatten, een middenrol en onderbreking te spelen en aan de gespecificeerde lokale tijd te hervatten, of geen ad onderbrekingen te spelen.

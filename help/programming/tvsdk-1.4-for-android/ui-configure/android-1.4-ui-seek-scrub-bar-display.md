@@ -1,16 +1,15 @@
 ---
 description: TVSDK ondersteunt het zoeken naar een specifieke positie (tijd) waar de stream een afspeellijst met schuifvensters is, zowel in video op aanvraag (VOD) als in live streams.
 title: Een zoekbalk weergeven met de huidige afspeelpositie
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: 8076521b-579d-491f-97de-c7b57daa9b2e
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '250'
 ht-degree: 0%
 
 ---
 
-
-# Een zoekscrubbalk weergeven met de huidige afspeelpositie {#display-a-seek-scrub-bar-with-the-current-playback-position}
+# Een zoekbalk weergeven met de huidige afspeelpositie {#display-a-seek-scrub-bar-with-the-current-playback-position}
 
 TVSDK ondersteunt het zoeken naar een specifieke positie (tijd) waar de stream een afspeellijst met schuifvensters is, zowel in video op aanvraag (VOD) als in live streams.
 
@@ -30,12 +29,12 @@ TVSDK ondersteunt het zoeken naar een specifieke positie (tijd) waar de stream e
 
    Geldige statussen worden BEREID, VOLTOOID, GEPAUZEERD en AFGESPEELD.
 
-1. Gebruik de native zoekbalk om `OnSeekBarChangeListener` in te stellen om te zien wanneer de gebruiker scrubt.
-1. Luister naar `QOSEventListener.onOperationFailed` en voer de juiste handelingen uit.
+1. De native zoekbalk gebruiken om in te stellen `OnSeekBarChangeListener` om te zien wanneer de gebruiker scrubt.
+1. Luisteren naar `QOSEventListener.onOperationFailed` en nemen passende maatregelen.
 
    Deze gebeurtenis geeft de juiste waarschuwing door. Uw toepassing bepaalt hoe u verdergaat, bijvoorbeeld door opnieuw te zoeken of door te gaan met afspelen vanaf de vorige positie.
 
-1. Wacht op TVSDK om `QOSEventListener.onSeekComplete` callback te roepen.
+1. Wacht tot TVSDK de `QOSEventListener.onSeekComplete` callback.
 1. Haal de definitieve aangepaste spelpositie terug gebruikend de positieparameter van callback.
 
    Dit is belangrijk omdat de werkelijke startpositie na de zoekactie kan verschillen van de gewenste positie. Het afspeelgedrag kan worden beïnvloed als een zoekopdracht of een andere herpositionering halverwege een advertentie-einde eindigt of als een zoekactie wordt overgeslagen en afgebroken.
@@ -79,4 +78,3 @@ seekBar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
     } 
 }; 
 ```
-

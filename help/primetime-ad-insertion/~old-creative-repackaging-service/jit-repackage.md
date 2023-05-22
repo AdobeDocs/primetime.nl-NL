@@ -1,7 +1,6 @@
 ---
 description: Of een cliëntvideospeler of de manifestserver kunnen met CRS in wisselwerking staan om JIT te bereiken herverpakken. Beide gebruiken dezelfde logica en selectielogica.
 title: Gedetailleerde workflows voor JIT-herverpakken
-translation-type: tm+mt
 source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
 source-wordcount: '524'
@@ -26,7 +25,7 @@ De workflow voor JIT-herverpakken aan de kant van de manifestserver ziet er als 
 
    >[!NOTE]
    >
-   >In een multi-CDN opstelling, gebruikt de manifestserver `ptcdn` parameter in bootstrap URL om de server te identificeren CDN.
+   >In een multi-CDN opstelling, gebruikt de manifestserver `ptcdn` in de laarzentrekker-URL om de CDN-server te identificeren.
 
 1. De manifestserver controleert de reactie:
 
@@ -54,7 +53,7 @@ Een client die is gebaseerd op TVSDK of met vergelijkbare mogelijkheden, kan als
 
       >[!NOTE]
       >
-      >In een multi-CDN opstelling, gebruikt de manifestserver `ptcdn` parameter in bootstrap URL om de server te identificeren CDN.
+      >In een multi-CDN opstelling, gebruikt de manifestserver `ptcdn` in de laarzentrekker-URL om de CDN-server te identificeren.
 
 1. De client controleert de reactie van de CDN-server.
 

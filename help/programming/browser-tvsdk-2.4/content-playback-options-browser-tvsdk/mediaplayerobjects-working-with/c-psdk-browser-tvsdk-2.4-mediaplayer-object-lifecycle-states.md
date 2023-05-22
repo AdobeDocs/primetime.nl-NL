@@ -1,14 +1,13 @@
 ---
 description: Vanaf het moment dat de instantie MediaPlayer wordt gemaakt tot het moment dat deze wordt beëindigd, gaat deze instantie van het ene frame naar het volgende.
 title: Levenscyclus en status van het MediaPlayer-object
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: 26cad982-ef85-42fb-aaa7-e5d494088766
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '372'
 ht-degree: 0%
 
 ---
-
 
 # Levenscyclus en status van het MediaPlayer-object{#life-cycle-and-states-of-the-mediaplayer-object}
 
@@ -16,38 +15,38 @@ Vanaf het moment dat de instantie MediaPlayer wordt gemaakt tot het moment dat d
 
 Hier volgen de mogelijke staten:
 
-* **IDLE**:  `MediaPlayerStatus.IDLE`
+* **IDLE**: `MediaPlayerStatus.IDLE`
 
-* **INITIALISEREN**:  `MediaPlayerStatus.INITIALIZING`
+* **INITIALISEREN**: `MediaPlayerStatus.INITIALIZING`
 
-* **GEÏNITIALISEERD**:  `MediaPlayerStatus.INITIALIZED`
+* **GEÏNITIALISEERD**: `MediaPlayerStatus.INITIALIZED`
 
-* **VOORBEREIDEN**:  `MediaPlayerStatus.PREPARING`
+* **VOORBEREIDEN**: `MediaPlayerStatus.PREPARING`
 
-* **BEREID**:  `MediaPlayerStatus.PREPARED`
+* **BEREID**: `MediaPlayerStatus.PREPARED`
 
-* **AFSPELEN**:  `MediaPlayerStatus.PLAYING`
+* **AFSPELEN**: `MediaPlayerStatus.PLAYING`
 
-* **GEPAUZEERD**:  `MediaPlayerStatus.PAUSED`
+* **GEPAUZEERD**: `MediaPlayerStatus.PAUSED`
 
-* **ZOEKEN**:  `MediaPlayerStatus.SEEKING`
+* **ZOEKEN**: `MediaPlayerStatus.SEEKING`
 
-* **VOLTOOID**:  `MediaPlayerStatus.COMPLETE`
+* **VOLTOOID**: `MediaPlayerStatus.COMPLETE`
 
-* **FOUT**:  `MediaPlayerStatus.ERROR`
+* **FOUT**: `MediaPlayerStatus.ERROR`
 
-* **UITGEGEVEN**:  `MediaPlayerStatus.RELEASED`
+* **UITGESCHAKELD**: `MediaPlayerStatus.RELEASED`
 
 De volledige lijst met staten wordt gedefinieerd in `MediaPlayerStatus`.
 
-Het is handig om te weten wat de status van de speler is, omdat bepaalde bewerkingen alleen zijn toegestaan als de speler zich in een bepaalde status bevindt. `play` kan bijvoorbeeld niet worden aangeroepen in de toestand IDLE. Het moet worden opgeroepen nadat de staat PREPARED is bereikt. De staat ERROR verandert ook wat daarna kan gebeuren.
+Het is handig om te weten wat de status van de speler is, omdat bepaalde bewerkingen alleen zijn toegestaan als de speler zich in een bepaalde status bevindt. Bijvoorbeeld: `play` kan niet worden geroepen terwijl in de staat IDLE. Het moet worden opgeroepen nadat de staat PREPARED is bereikt. De staat ERROR verandert ook wat daarna kan gebeuren.
 
 Wanneer een mediabron wordt geladen en afgespeeld, gaat de speler als volgt over:
 
 1. De beginstaat is IDLE.
-1. Uw toepassing roept `MediaPlayer.replaceCurrentResource` aan, waardoor de speler naar de status INITIALIZING wordt verplaatst.
+1. Uw toepassingsvraag `MediaPlayer.replaceCurrentResource`, waardoor de speler naar de status INITIALIZING wordt verplaatst.
 1. Als de bron is geladen in Browser-TVSDK, verandert de status in INITIALIZED.
-1. Uw toepassing roept `MediaPlayer.prepareToPlay`, en de staat verandert in PREPARING.
+1. Uw toepassingsvraag `MediaPlayer.prepareToPlay`en verandert de status in PREPARING.
 1. Browser-TVSDK bereidt de mediastream voor en start de bewerking en invoeging van de advertentie (indien ingeschakeld).
 
    Wanneer deze stap is voltooid, worden advertenties ingevoegd in de tijdlijn of is de advertentieprocedure mislukt en verandert de spelerstatus in PREPARED.
@@ -82,4 +81,3 @@ function onStateChanged(state) {
     } 
 } 
 ```
-

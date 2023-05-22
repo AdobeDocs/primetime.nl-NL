@@ -1,16 +1,15 @@
 ---
 description: Elk gebruik van Adobe Primetime DRM bestaat uit twee belangrijke stappen op verschillende punten van de workflow. De inhoud moet één keer per element worden voorbereid en dit leidt tot het maken van beveiligde inhoud. Inhoud aanschaffen wordt meerdere keren uitgevoerd, voor elke consument die dat beveiligde middel wil bekijken.
 title: Inhoud voorbereiden
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: 6ec8e5a1-3cf4-498b-9cbb-760c525fb9c7
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '390'
 ht-degree: 0%
 
 ---
 
-
-# Inhoudsvoorbereiding{#content-preparation}
+# Inhoud voorbereiden{#content-preparation}
 
 Elk gebruik van Adobe Primetime DRM bestaat uit twee belangrijke stappen op verschillende punten van de workflow. De inhoud moet één keer per element worden voorbereid en dit leidt tot het maken van beveiligde inhoud. Inhoud aanschaffen wordt meerdere keren uitgevoerd, voor elke consument die dat beveiligde middel wil bekijken.
 
@@ -34,4 +33,3 @@ De stappen voor het coderen, verpakken en distribueren van inhoud zijn als volgt
 1. De beschermde inhoud beschikbaar stellen voor distributie aan consumenten.
 
    De beveiligde inhoud wordt doorgaans gedistribueerd via een inhoudsdistributienetwerk (CDN). CDN kan om het even welk mechanisme gebruiken dat door cliëntruntime, zoals Flash Media Server, Adobe HTTP Dynamic Streaming voor veelvoudige bitrate het stromen, of een Server van het Web van HTTP voor progressieve download wordt gesteund.
-

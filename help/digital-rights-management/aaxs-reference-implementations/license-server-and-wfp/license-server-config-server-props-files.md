@@ -2,20 +2,19 @@
 title: Servereigenschappen
 description: Servereigenschappen
 copied-description: true
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: c42fde8f-e438-4497-bd15-ebd0f6e2eed7
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '182'
 ht-degree: 0%
 
 ---
 
-
-# Bestanden met servereigenschappen {#server-properties-files}
+# Servereigenschappen {#server-properties-files}
 
 Voor de server zijn twee configuratiebestanden nodig: een voor de licentieserver en een voor de pakketsoftware. Beide bestanden moeten op het klassepad worden geplaatst. De eigenschappenbestanden bevatten de locatie van de gegevens die door Adobe zijn uitgegeven. Deze referenties kunnen worden opgegeven als een .pfx-bestand en wachtwoord of door een alias en wachtwoord op te geven voor een referentie die is opgeslagen op een HSM.
 
-Raadpleeg de eigenschappenbestanden voor meer informatie over de specifieke waarden en het gebruik van elke parameter. Voorbeeldbestanden met eigenschappen vindt u in de map &quot;resources&quot; van de referentie-implementatie (Referentie Implementation\Server\resources).
+Raadpleeg de eigenschappenbestanden voor meer informatie over de specifieke waarden en het gebruik van elke parameter. Bestanden met voorbeeldeigenschappen vindt u in de map &quot;resources&quot; van de referentie-implementatie (bronnen\Server\Reference Implementation).
 
 Om de veiligheid van het wachtwoord van uw referentie te verzekeren, wordt een hulpmiddel verstrekt (ScrambleUtil.class) om het wachtwoord te coderen alvorens het in het flashaccess-refimpl.properties of flashaccess-refimpl-packager.properties- dossier is ingegaan.
 
@@ -39,4 +38,4 @@ Het wachtwoord van uw referentie op de juiste wijze voorbereiden:
 >
 >In het vorige voorbeeld wordt een puntkomma (;) als scheidingsteken gebruikt. Gebruik voor andere platforms dan Microsoft Windows een dubbele punt (:) als scheidingsteken.
 
-Het nut output het gecodeerde wachtwoord, dat u aan het [!DNL .properties] dossier moet kopiëren.
+Het hulpprogramma voert het gecodeerde wachtwoord uit dat u naar het [!DNL .properties] bestand.

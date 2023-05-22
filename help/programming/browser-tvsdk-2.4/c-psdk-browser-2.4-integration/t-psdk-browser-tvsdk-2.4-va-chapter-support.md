@@ -2,14 +2,13 @@
 title: Hoofdstukondersteuning implementeren
 description: Hoofdstukondersteuning implementeren
 copied-description: true
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: 8a962706-50cd-41c2-96a7-6af1b24145a4
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '84'
 ht-degree: 0%
 
 ---
-
 
 # Hoofdstukondersteuning implementeren{#implement-chapter-support}
 
@@ -31,4 +30,3 @@ Een hoofdstuk wordt gedefinieerd als de tijd tussen elk advertentieeinde. De tij
    
    vaObj.chapters = chapters;
    ```
-

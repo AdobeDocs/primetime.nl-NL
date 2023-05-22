@@ -1,131 +1,129 @@
 ---
 description: Deze wijzigingen in TVSDK ondersteunen het verwijderen en vervangen van bestanden.
 title: Wijzigingen in API voor verwijderen en vervangen toevoegen
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: 3cf63353-741b-41f4-93fd-609b69f7c3af
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '381'
 ht-degree: 0%
 
 ---
 
-
 # Wijzigingen in API voor verwijderen en vervangen toevoegen {#ad-deletion-and-replacement-api-changes}
 
 Deze wijzigingen in TVSDK ondersteunen het verwijderen en vervangen van bestanden.
 
-* `AdSignalingMode` Toegevoegde  `CUSTOM_RANGES` signaalmodus.
+* `AdSignalingMode` Toegevoegd `CUSTOM_RANGES` signaalmodus.
 
-* `OpportunityGenerator`  `extractAdSignalingMode()` - Stel in  `AdSignalingMode.CUSTOM_RANGES` of u vervangingsbereiken wilt invoegen in de metagegevens.
+* `OpportunityGenerator`  `extractAdSignalingMode()` - Set `AdSignalingMode.CUSTOM_RANGES` als reeksen vervangen in de metagegevens staan.
 
-* `PlacementType` Toegevoegd  `CUSTOM_RANGE` type.
+* `PlacementType` Toegevoegd `CUSTOM_RANGE` type.
 
 * `PlacementMode`
 
-   * Modus `DELETE` toegevoegd.
-   * Modus `MARK` toegevoegd
-   * Modus `FreeReplace` toegevoegd - Deze modus heeft een duur maar is een zuivere invoeging
+   * Toegevoegd `DELETE` in.
+   * Toegevoegd `MARK` mode
+   * Toegevoegd `FreeReplace` modus - Deze modus heeft een duur maar is een zuivere invoeging
 
-* `TimeRange` Niet langer een  `final` klasse
+* `TimeRange` Niet langer een `final` class
 
-* Toegevoegde methode `ReplaceTimeRange()`
+* Toegevoegd `ReplaceTimeRange()` methode
 
-   Breidt `TimeRange` uit om een `replacementDuration` bezit te hebben. Voor de gevallen MARK en DELETE is `replacementDuration` 0.
+   Uitbreidingen `TimeRange` om een `replacementDuration` eigenschap. Voor de zaken MARK en DELETE, `replacementDuration` is 0.
 
 * `TimeRangeCollection`
 
-   * `toReplaceMetadata()` hulpprogrammafunctie toegevoegd om `timeRanges` te extraheren.
+   * Toegevoegd `toReplaceMetadata()` hulpprogrammafunctie om te extraheren `timeRanges`.
 
    * Gewijzigd om te werken met `DELETE` en `REPLACE`
 
-   * `METADATA_KEY_CUSTOM_MARK_RANGES`,  `METADATA_KEY_CUSTOM_DELETE_RANGES`,  `METADATA_KEY_CUSTOM_REPLACE_RANGES`
+   * `METADATA_KEY_CUSTOM_MARK_RANGES`, `METADATA_KEY_CUSTOM_DELETE_RANGES`, `METADATA_KEY_CUSTOM_REPLACE_RANGES`
 
 * `CatalogItem`
 
-   * Toegevoegd `createCustomTimeRangesFrom()` - Creeert meta-gegevens voor MARK/DELETE/REPLACE gebruiksgevallen van het JSON dossier.
+   * Toegevoegd `createCustomTimeRangesFrom()` - Hiermee maakt u metagegevens voor gebruik van MARK/DELETE/REPLACE vanuit het JSON-bestand.
    * Verwijderd `createCustomAdMarkersMetadataFrom()`
 
 * `DefaultMetadataKeys`
 
-   * `CUSTOM_DELETE_RANGES_METADATA_KEY` toegevoegd
-   * `CUSTOM_REPLACE_RANGES_METADATA_KEY` toegevoegd
+   * Toegevoegd `CUSTOM_DELETE_RANGES_METADATA_KEY`
+   * Toegevoegd `CUSTOM_REPLACE_RANGES_METADATA_KEY`
    * `CUSTOM_AD_MARKERS_METADATA_KEY` (niet gewijzigd)
 
 * `DefaultContentFactory`
 
    * `doRetrieveGenerators()`
 
-      * `CustomRangesOpportunityGenerator` toegevoegd als de metagegevens aangepaste bereiken bevatten
+      * Toegevoegd `CustomRangesOpportunityGenerator` wanneer de metagegevens aangepaste bereiken bevatten
    * `doRetrieveResolvers()`
 
-      * Voeg `CustomRangeResolver` toe voor wanneer de DELETE en VERVANGEN douanewaaiers in de meta-gegevens aanwezig zijn
-      * `CustomAdMarkerResolver` voor `AuditudeResolver` verplaatst
+      * Toevoegen `CustomRangeResolver` for wanneer DELETE en REPLACE aangepaste bereiken aanwezig zijn in de metagegevens
+      * Verplaatst `CustomAdMarkerResolver` voor `AuditudeResolver`
 
 
-* `CustomRangeOpportunityGenerator` toegevoegd
+* Toegevoegd `CustomRangeOpportunityGenerator`
 
    * `doUpdate()` Laat leeg - geen update, VOD
-   * `doProcess()` Hiermee maakt u een nieuwe plaatsing van een nieuw type  `Placement.Delete_Range`
+   * `doProcess()` Hiermee maakt u een nieuwe plaatsing van een nieuw type `Placement.Delete_Range`
 
-   * `CustomRangeOppotunityGenerator` toegevoegd aan de bovenkant van de lijst van generatoren in `DefaultContentFactory`, zodat worden schrappingswaaiers verwerkt vóór toevoegingen.
+   * Toegevoegd `CustomRangeOppotunityGenerator` boven aan de lijst met generatoren in `DefaultContentFactory`verwijdert u bereiken dus vóór invoegingen.
 
-   * `createCustomRangeOpportunities` toegevoegd om alle mogelijkheden te creëren
+   * Toegevoegd `createCustomRangeOpportunities` alle mogelijkheden creëren
 
-      MARK - één mogelijkheid voor elk geldig markeringsbereik van `PlacementType.CUSTOM_RANGE` en `PlacementMode.MARK`
+      MARK - één mogelijkheid voor elk geldig merkbereik van `PlacementType.CUSTOM_RANGE` en `PlacementMode.MARK`
 
-      DELETE - Eén mogelijkheid voor elk geldig verwijderbereik van `PlacementType.CUSTOM_RANGE` en `PlacementMode.DELETE`
+      DELETE - Eén mogelijkheid voor elk geldig verwijderingsbereik van `PlacementType.CUSTOM_RANGE` en `PlacementMode.DELETE`
 
       VERVANGEN - Twee mogelijkheden voor elke geldige vervang waaier:
 
-      1. Een verwijderingsbereikmogelijkheid van `PlacementType.CUSTOM_RANGE` en `PlacementMode.DELETE`.
+      1. Een verwijderbereikmogelijkheid van `PlacementType.CUSTOM_RANGE` en `PlacementMode.DELETE`.
 
-      1. Een primetime- en beslissings- en opportuniteit van `PlacementType.MID_ROLL` of `PlacementType.PRE_ROLL` en `PlacementMode.FREEREPLACE`
+      1. Een primetime en een beslissing en kans van `PlacementType.MID_ROLL` of `PlacementType.PRE_ROLL` en `PlacementMode.FREEREPLACE`
 
 * Toegevoegd `CustomRangeResolver`:
 
-   * `doCanResolve()` retourneert  `true` voor verwijderbereiken.
+   * `doCanResolve()` retourneert `true` voor verwijderbereiken.
 
-   * `createDeleteRangeOperation()` toegevoegd om `DeleteRange` voor de plaatsing te creëren
+   * Toegevoegd `createDeleteRangeOperation()` om `DeleteRange` voor de plaatsing
 
 * Toegevoegd `CustomRangeHelper`:
 
-   * Gemeenschappelijke hulpprogrammaklasse om Mark/Delete/Replace `timeRanges` te halen en hen te verwerken.
-   * `extractCustomRangesMetadata()` toegevoegd
-   * `extractCustomRanges()` toegevoegd
-   * `mergeRanges()` toegevoegd - Hiermee worden conflicten en subsets/samengevoegde
+   * Algemene hulpprogrammaklasse voor het extraheren van Mark/Delete/Replace `timeRanges` en verwerken.
+   * Toegevoegd `extractCustomRangesMetadata()`
+   * Toegevoegd `extractCustomRanges()`
+   * Toegevoegd `mergeRanges()` - Conflicten en subsets/samenvoegen oplossen
 
 * `MediaPlayerTimeline`:
 
-   * &quot;>Als de bewerking `executeOperation()` is, voegt u in `DeleteRange` een aanroep toe om de methode in de bewerking te verwijderen.
+   * &quot;>In `executeOperation()`, als de bewerking `DeleteRange`, toegevoegde vraag om methode in verrichting te verwijderen
 
-   * Als in `executeOperation()` de bewerking `NOPTimelineOperation` is (lege `AdBreaks` die terugkomt van de server), voegt u een aanroep toe om te wissen.
+   * In `executeOperation()`, als de bewerking `NOPTimelineOperation` (leeg `AdBreaks` terugkomen van server), toegevoegde vraag om te ontruimen.
 
-   * `onDeleteRangeComplete()` toegevoegd
-   * `removeRange()` toegevoegd
-   * In `adjustPlacement()`, voor `PlacementMode.FREEREPLACE` wijze, centreerde uit de duur. Deze duur is eerder nodig wanneer `AdBreaks` wordt aangevraagd, op dit punt moet deze nul zijn om zuiver invoeging te zijn.
+   * Toegevoegd `onDeleteRangeComplete()`
+   * Toegevoegd `removeRange()`
+   * In `adjustPlacement()`, for `PlacementMode.FREEREPLACE` -modus. De duur wordt op nul gezet. Deze tijdsduur is eerder vereist wanneer u een aanvraag indient `AdBreaks`Op dit punt moet de waarde nul zijn om alleen in te voegen.
 
-* `VideoEngineTimeline` Toegevoegd  `removeC3Ad()` - vraag  `removeByLocalTime()` voor schrappingswaaiers
+* `VideoEngineTimeline` Toegevoegd `removeC3Ad()` - call `removeByLocalTime()` voor verwijderbereiken
 
 * `AdSignalingModeGenerator`
 
    * `doConfigure()` - Niet oplossen als er geen mogelijkheid wordt gegenereerd
-   * `createInitialOpportunity()` - Maak geen eerste kans voor  `AdSignalingMode.CUSTOM_RANGE`. De `CustomRangeOpportunityGenerator` behandelt dit al.
+   * `createInitialOpportunity()` - Maak geen eerste kans voor `AdSignalingMode.CUSTOM_RANGE`. De `CustomRangeOpportunityGenerator` heeft betrekking op dit reeds.
 
 * `DeleteRange`
 
-   * Breidt `TimelineOperation` uit.
-   * Gemaakt door `CustomRangeResolver` voor verwijderen en vervangen (het verwijderingsgedeelte van vervanging)
+   * Uitbreidingen `TimelineOperation`.
+   * Gemaakt door `CustomRangeResolver` voor verwijdering en vervanging (schrapping deel van vervanging)
 
 * `AuditudeConstant`
 
    * `MAX_PLACEMENTS_PER_REQUEST 1->5` - verpakken toestaan
    * `MINIMUM_AD_DURATION 10->5`
 
-* `AuditudeRequest` De  `accepts()` methode werd gewijzigd om het verpakken van verschillende plaatsingstypen mogelijk te maken (vóór de rol, halverwege de rol, na de rol)
+* `AuditudeRequest` De `accepts()` de methode is gewijzigd om het verpakken van een ander plaatsingstype (vóór de rol, halverwege de rol, na de rol) mogelijk te maken;
 
-* `AuditudeRequestHelper` Bugfixes om serveroverschrijvingen van advertentieparameters toe te staan
+* `AuditudeRequestHelper` Bugfixes om serveroverschrijving van Advertentieparameters toe te staan
 
-* `AuditudeResolver` De  `canBePacked()` methode is gewijzigd om het verpakken mogelijk te maken
+* `AuditudeResolver` De `canBePacked()` methode gewijzigd om verpakking mogelijk te maken
 
-* `CustomAdResolver` De  `timeRange` extractiefuncties zijn verwijderd. We krijgen één plaatsing tegelijk, en veranderen dat in een `AdBreakPlacement timelineOperation`.
-
+* `CustomAdResolver` De `timeRange` extractiefuncties zijn verwijderd. We krijgen één plaatsing per keer en veranderen dat in een `AdBreakPlacement timelineOperation`.

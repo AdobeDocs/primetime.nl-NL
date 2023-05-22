@@ -1,22 +1,21 @@
 ---
 description: Wanneer Primetime en beslissingsoningencounters een (creatieve) VAST-advertentie die leeg is of een mediatype heeft dat ongeldig is voor HLS, evalueert het de fallback-advertenties om te bepalen wat er moet worden geretourneerd.
 title: Extra fallback-gedrag voor VAST en VMAP
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: 8145d928-5d38-40f1-8dc3-fee9b815465c
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '243'
 ht-degree: 0%
 
 ---
 
-
-# Extra fallbackgedrag voor VAST en VMAP {#ad-fallback-behavior-for-vast-and-vmap}
+# Extra fallback-gedrag voor VAST en VMAP {#ad-fallback-behavior-for-vast-and-vmap}
 
 Wanneer Primetime en beslissingsoningencounters een (creatieve) VAST-advertentie die leeg is of een mediatype heeft dat ongeldig is voor HLS, evalueert het de fallback-advertenties om te bepalen wat er moet worden geretourneerd.
 
 <!--<a id="section_9F60AF00CE9645848EAAF8C06A9E426B"></a>-->
 
-In TVSDK is het enige geldige mediatype `application/x-mpegURL` (M3U8).
+In TVSDK is het enige geldige mediatype: `application/x-mpegURL` (M3U8).
 
 Wanneer er stand-alone reserveadvertenties zijn, onderzoekt Primetime en beslissingsstop - binnen deze advertenties in de volgende orde en keert de eerste advertentie met een geldig media type terug:
 
@@ -30,4 +29,3 @@ Wanneer er stand-alone reserveadvertenties zijn, onderzoekt Primetime en besliss
 >[!IMPORTANT]
 >
 >Dit gedrag is altijd ingeschakeld voor advertenties in VAST-wrappers. Voor VAST-advertenties inline in een VMAP is het gedrag standaard uitgeschakeld, maar uw toepassing kan dit gedrag wel inschakelen.
-

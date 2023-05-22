@@ -1,22 +1,21 @@
 ---
 description: In AdobeTVSDKConfig.json kunt u zowel standaardregels als regels voor specifieke zones opgeven.
-title: Voorbeelden van creatieve selectieregels
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+title: Voorbeelden van regels voor creatieve selectie
+exl-id: e5310c34-2483-4b86-ba60-d8869221ab81
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '85'
 ht-degree: 0%
 
 ---
 
-
-# Voorbeeld van regels voor creatieve selectie {#sample-creative-selection-rules}
+# Voorbeelden van regels voor creatieve selectie  {#sample-creative-selection-rules}
 
 In AdobeTVSDKConfig.json kunt u zowel standaardregels als regels voor specifieke zones opgeven.
 
 ## Voorbeeld van standaardregels {#section_xy4_3fx_hz}
 
-Hieronder ziet u een voorbeeld van een [!DNL AdobeTVSDKConfig.json]-bestand dat alleen standaardregels definieert:
+Hieronder ziet u een voorbeeld van een [!DNL AdobeTVSDKConfig.json] bestand dat alleen standaardregels definieert:
 
 ```
 {
@@ -64,9 +63,9 @@ Hieronder ziet u een voorbeeld van een [!DNL AdobeTVSDKConfig.json]-bestand dat 
 }
 ```
 
-## Voorbeeld van standaardregels met extra streekregels {#section_ocv_3fx_hz}
+## De standaardregels van de steekproef met extra streekregels {#section_ocv_3fx_hz}
 
-Het volgende is een voorbeeld van een [!DNL AdobeTVSDKConfig.json] dossier dat standaardregels bepaalt, plus extra regels voor een specifieke streek identiteitskaart (in dit geval, streek **&quot;1234&quot;**):
+Hieronder ziet u een voorbeeld van een [!DNL AdobeTVSDKConfig.json] bestand dat standaardregels definieert, plus aanvullende regels voor een specifieke zone-id (in dit geval zone) **&quot;1234&quot;**):
 
 ```
 {

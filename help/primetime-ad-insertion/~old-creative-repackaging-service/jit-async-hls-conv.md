@@ -1,7 +1,6 @@
 ---
 description: CRS verstrekt just-in-time (JIT) en asynchrone het herverpakken en omzetten HLS-aan-HLS. Het resultaat van het opnieuw verpakken is een HLS-opgemaakte versie van het origineel en de creatieve versie. CRS plaatst de HLS geformatteerde versie op de server van het netwerk van de inhoudslevering (CDN) voor gebruik wanneer nodig.
 title: Belangrijkste toepassingen van CRS
-translation-type: tm+mt
 source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
 source-wordcount: '351'
@@ -20,7 +19,7 @@ In asynchrone herverpakking, wordt de advertentie getranscodeerd en opgeslagen a
 
 Bij HLS-aan-HLS-omzetting, herformatteert CRS HLS en creatief in aangewezen grote brokken om verenigbare playback te verzekeren.
 
-## Just-in-Time-herverpakking {#section_1BA344F2300B49F291865A7461EDFEAE}
+## Just-in-Time herverpakken {#section_1BA344F2300B49F291865A7461EDFEAE}
 
 De volgorde voor JIT-herverpakken is als volgt:
 
@@ -30,9 +29,9 @@ De volgorde voor JIT-herverpakken is als volgt:
 1. Als het formaat niet HLS is en de server CDN heeft geen getranscodeerde versie, gaat de duidelijke server de advertentie tot CRS over, die de advertentie transcodeert en het resultaat op de server CDN voor later gebruik opslaat.
 1. De manifestserver keert de inhoud zonder de advertentie terug.
 
-## Asynchroon opnieuw verpakken {#section_ACDFB43FDA4B445CB9F2A107FEB4F2F7}
+## Asynchrone herverpakking {#section_ACDFB43FDA4B445CB9F2A107FEB4F2F7}
 
-U kunt de API gebruiken die in [API opnieuw verpakken](../~old-creative-repackaging-service/api-repackage.md) wordt beschreven om een niet-HLS creatief pretranscoderen om verlies van indrukkingen te minimaliseren en monetisatie te maximaliseren.
+U kunt de API gebruiken die wordt beschreven in [API opnieuw verpakken](../~old-creative-repackaging-service/api-repackage.md) om een niet-HLS creatief vooraf te transcoderen om verlies van indrukken tot een minimum te beperken en monetisatie te maximaliseren.
 
 ## HLS-aan-HLS-omzetting {#section_877A0E7E8FAF4C2DB086A31C24D53435}
 

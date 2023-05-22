@@ -1,5 +1,5 @@
 ---
-description: TVSDK heeft specifieke vereisten voor media-inhoud, manifestinhoud, DRM en softwareversies.
+description: TVSDK heeft specifieke vereisten voor mediacontent, manifestcontent, DRM en softwareversies.
 title: Vereisten
 exl-id: 85bf7b85-5f4b-4ed5-aa4f-765dabc5d4d8
 source-git-commit: 3b051c3188c81673129e12dfeb573aaf85c15c97
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Vereisten {#requirements}
 
-TVSDK heeft specifieke vereisten voor media-inhoud, manifestinhoud, DRM en softwareversies.
+TVSDK heeft specifieke vereisten voor mediacontent, manifestcontent, DRM en softwareversies.
 
 ## Systeem- en softwarevereisten {#section_96E5B079900246E78682AE44D3F23068}
 
@@ -21,7 +21,7 @@ Als u TVSDK wilt gebruiken, dient u ervoor te zorgen dat uw hardware-, besturing
 |---|---|
 | CPU | 1 GHz Single Core of equivalent |
 | RAM | 256 MB |
-| GPU | Hardwarematige GPU vereist voor afspelen |
+| GPU | Hardware-GPU vereist voor afspelen |
 | Architectuur | x86 via Houdini, ARM64, ARMv7 en ARMv8 |
 
 ## Inhoud- en manifestvereisten {#section_72DD0E4DA9774DCCADB42887497F1386}
@@ -30,15 +30,15 @@ Controleer de beperkingen en vereisten voor streams en afspeellijsten (manifests
 
 | Adobe Access DRM | Als de DRM-beveiligde stream meerdere bitsnelheden (MBR) heeft, moet de DRM-coderingssleutel die voor de MBR wordt gebruikt, gelijk zijn aan de sleutel die in alle bitsnelheidstreams wordt gebruikt. |
 |---|---|
-| Variantmanifesten toevoegen | Moet dezelfde bitsnelheidvertoningen hebben als de uitvoeringen van de hoofdinhoud. |
+| Variantmanifesten toevoegen | Moet dezelfde bit-rate weergaven hebben als de weergaven van de hoofdinhoud. |
 
-## #EXT-X-VERSION-vereisten {#section_49A33664651A46EC9ED888BA9C1C3F6D}
+## #EXT-X-VERSION requirements {#section_49A33664651A46EC9ED888BA9C1C3F6D}
 
-De versie van `#EXT-X-VERSION` in de [!DNL .m3u8] manifestbestand bepaalt welke functies beschikbaar zijn voor uw toepassing en welke `EXT` -tags zijn geldig.
+De versie van `#EXT-X-VERSION` in het manifestbestand van [!DNL .m3u8] heeft invloed op welke functies beschikbaar zijn voor uw applicatie en welke `EXT` tags geldig zijn.
 
-Hier is wat informatie over `#EXT-X-VERSION` tag, die de versie van het HLS-protocol opgeeft:
+Hier volgt informatie over de tag `#EXT-X-VERSION`, die de versie van het HLS-protocol aangeeft:
 
-* De versie moet overeenkomen met de functies en kenmerken in de HLS-afspeellijst. anders kunnen er afspeelfouten optreden. Zie voor meer informatie [HTTP Live Streaming-specificatie](https://datatracker.ietf.org/doc/draft-pantos-http-live-streaming/?include_text=1).
+* De versie moet overeenkomen met de functies en kenmerken in de HLS-afspeellijst; anders kunnen afspeelfouten optreden. Zie voor meer informatie [HTTP Live Streaming-specificatie](https://datatracker.ietf.org/doc/draft-pantos-http-live-streaming/?include_text=1).
 * Adobe raadt aan ten minste versie 2 van HLS te gebruiken voor afspelen in op TVSDK gebaseerde clients.
 
    De cliënten en de servers moeten de versies op de volgende manier uitvoeren:
@@ -56,14 +56,14 @@ Hier is wat informatie over `#EXT-X-VERSION` tag, die de versie van het HLS-prot
    <td colname="2"> De eigenschap IV van de <span class="codeph"> EXT-X-KEY </span> tag. </td> 
   </tr> 
   <tr rowsep="1"> 
-   <td colname="1"> <span class="codeph"> EXT-X-VERSIE:3 </span> </td> 
+   <td colname="1"> <span class="codeph"> EXT-X-VERSION:3 </span> </td> 
    <td colname="2"> 
     <ul id="ul_C9500D3F934848639C204BF248F139FF"> 
-     <li id="li_535A7E3FABCB46FE872A7EA5DE2A1784">Drijvende komma <span class="codeph"> EXTINF </span> duurwaarden <p>The duration tags ( <span class="codeph"> #EXTINF: </span>&lt;duration&gt;,&lt;title&gt;) in version 2 were rounded to integer values. Voor versie 3 en hoger moet de duur exact worden opgegeven in een zwevend punt. </p> </li> 
+     <li id="li_535A7E3FABCB46FE872A7EA5DE2A1784">Drijvende-komma <span class="codeph"> EXTINF </span> duurwaarden <p>De duurtags ( <span class="codeph"> #EXTINF: </span>&lt;duration&gt;,&lt;title&gt;) in versie 2 werden afgerond naar gehele waarden. Versie 3 en hoger vereisen dat de tijdsduur exact wordt opgegeven, in drijvende komma. </p> </li> 
     </ul> </td> 
   </tr> 
   <tr rowsep="0"> 
-   <td colname="1"> <span class="codeph"> EXT-X-VERSIE:4 </span> </td> 
+   <td colname="1"> <span class="codeph"> EXT-X-VERSION:4 </span> </td> 
    <td colname="2"> 
     <ul id="ul_3355A6CBBE2141DDB92660BB4B604D70"> 
      <li id="li_5E73D41AF6DC4CEE88D6C029FFCFC350">De <span class="codeph"> EXT-X-BYTERANGE </span> tag </li> 

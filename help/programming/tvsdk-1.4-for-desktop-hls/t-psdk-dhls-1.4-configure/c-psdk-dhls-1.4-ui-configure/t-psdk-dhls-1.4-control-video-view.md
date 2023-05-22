@@ -1,14 +1,13 @@
 ---
 description: U kunt de positie en grootte van de videoweergave bepalen met het MediaPlayerView-object.
 title: De positie en grootte van de videoweergave bepalen
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: 5e7ae557-7f2b-4697-85eb-e72d1f43a7fc
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '218'
 ht-degree: 0%
 
 ---
-
 
 # De positie en grootte van de videoweergave bepalen{#control-the-position-and-size-of-the-video-view}
 
@@ -16,9 +15,9 @@ U kunt de positie en grootte van de videoweergave bepalen met het MediaPlayerVie
 
 TVSDK probeert standaard de hoogte-breedteverhouding van de videoweergave te behouden wanneer de grootte of de positie van de video verandert (als gevolg van een wijziging die door de toepassing, een profielschakelaar of een inhoudsschakelaar is aangebracht, enz.).
 
-U kunt het standaardgedrag van de aspectverhouding met voeten treden door een verschillend *schaalbeleid* te specificeren. Geef het schaalbeleid op met de eigenschap `scalePolicy` van het object. `MediaPlayerView` Het standaardschaalbeleid van `MediaPlayerView` wordt geplaatst met een geval van de `MaintainAspectRatioScalePolicy` klasse. Om het schaalbeleid terug te stellen, vervang de standaardinstantie van `MaintainAspectRatioScalePolicy` op `MediaPlayerView.scalePolicy` met uw eigen beleid. (U kunt de eigenschap `scalePolicy` niet instellen op een null-waarde.)
+U kunt het standaardgedrag voor de verhouding overschrijven door een andere waarde op te geven *schaalbeleid*. Geef het schaalbeleid op met de opdracht `MediaPlayerView` object `scalePolicy` eigenschap. De `MediaPlayerView`Het standaardschaalbeleid van de gebruiker wordt ingesteld met een instantie van het `MaintainAspectRatioScalePolicy` klasse. Als u het schaalbeleid opnieuw wilt instellen, vervangt u de standaardinstantie van `MaintainAspectRatioScalePolicy` op `MediaPlayerView.scalePolicy` met uw eigen beleid. (U kunt de `scalePolicy` naar een null-waarde.)
 
-1. Implementeer de interface `MediaPlayerViewScalePolicy` om uw eigen schaalbeleid te maken.
+1. Implementeer de `MediaPlayerViewScalePolicy` om uw eigen schaalbeleid te maken.
 
    De `MediaPlayerViewScalePolicy` heeft één methode:
 
@@ -29,7 +28,7 @@ U kunt het standaardgedrag van de aspectverhouding met voeten treden door een ve
 
    >[!NOTE]
    >
-   >TVSDK gebruikt een `StageVideo`-object voor het weergeven van de video en omdat `StageVideo`-objecten niet in het weergaveoverzicht staan, bevat de parameter `viewPort` de absolute coördinaten van de video.
+   >TVSDK gebruikt een `StageVideo` -object voor het weergeven van de video en omdat `StageVideo` de objecten staan niet in het weergaveoverzicht, `viewPort` parameter bevat de absolute coördinaten van de video.
    >
    >
    >Bijvoorbeeld:
@@ -58,14 +57,14 @@ U kunt het standaardgedrag van de aspectverhouding met voeten treden door een ve
    >}
    >```
 
-1. Wijs uw implementatie aan het `MediaPlayerView` bezit toe.
+1. Wijs uw implementatie toe aan de `MediaPlayerView` eigenschap.
 
    ```
    var view:MediaPlayerView = MediaPlayerView.create(stage.stageVideos[0]); 
    view.scalePolicy = new CustomScalePolicy();
    ```
 
-1. Voeg uw mening aan het `view` bezit van Media Player toe.
+1. Uw weergave toevoegen aan de `view` eigenschap.
 
    ```
    addChild(view); 
@@ -107,4 +106,3 @@ view.scalePolicy = new CustomScalePolicy();
 addChild(view); 
 mediaPlayer.view = view;
 ```
-

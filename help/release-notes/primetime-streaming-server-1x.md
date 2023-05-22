@@ -3,20 +3,19 @@ title: Release van Primetime Streaming Server
 description: Nieuw in de versies Primetime Streaming Server 1.3 en 1.4.
 products: SG_PRIMETIME
 topic-tags: release-notes
-translation-type: tm+mt
-source-git-commit: b33240bf1b42b80389cd95a7ae4d3f85185a2d32
+exl-id: 80c4687e-b0ac-48f2-a1c3-8751552da9d1
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '1916'
 ht-degree: 0%
 
 ---
 
-
-# Premimetime-streamingsereleases {#primetime-streaming-server-x-releases}
+# Release van Primetime Streaming Server {#primetime-streaming-server-x-releases}
 
 Nieuw in de versies Primetime Streaming Server 1.3 en 1.4.
 
-## Nieuw in Primetime Streaming Server 1.4 (Release december) {#what-s-new-in-primetime-streaming-server-december-release}
+## Nieuw in Primetime Streaming Server 1.4 (release december) {#what-s-new-in-primetime-streaming-server-december-release}
 
 **Offline Packager**
 
@@ -30,7 +29,7 @@ Nieuw in de versies Primetime Streaming Server 1.3 en 1.4.
 
 * HLS AES-codering is beschikbaar voor Live- en VOD-workflows. De Oorsprong van Primetime kan enkel in Tijd encryptie HLS AES op inkomende stromen HLS of MP4 dossiers toepassen.
 * Het kan JIT HLS AES encryptie ook toepassen wanneer het wordt gebruikt om inkomende stromen HDS in stromen HLS om te zetten.
-* Primetime-oorsprong ondersteunt nu SWF-bestanden waarmee lijsten voor PHLS-streams kunnen worden weergegeven. Eerder werd deze alleen ondersteund voor PHDS-streams
+* Primetime-oorsprong ondersteunt nu SWF-lijsten voor PHLS-streams. Eerder werd deze alleen ondersteund voor PHDS-streams
 
 **Primetime Live Packager**
 
@@ -51,7 +50,7 @@ PHDS/PHLS-certificaten zijn vernieuwd. De nieuwe vervaldatum voor dezelfde datum
 
 * PTPUB-645 DPISimple-modus wordt geforceerd, zelfs wanneer de DPIScte35-modus is opgegeven wanneer zowel opdrachtregelaanwijzingen als in-stream-cues in de configuratie van offlinepakketten zijn opgenomen
 
-## Nieuw in Primetime Streaming Server 1.3.1 (MEY Release) {#what-s-new-in-primetime-streaming-server-may-release}
+## Nieuw in Primetime Streaming Server 1.3.1 (MEI Release) {#what-s-new-in-primetime-streaming-server-may-release}
 
 Versie 1.3.1 verwijst naar de hotfix. Dankzij de volgende verbeteringen is deze upgrade een aanbevolen upgrade voor klanten omdat deze bestaat uit belangrijke prestatieverbeteringen voor JIT MP4-gebruiksgevallen:
 
@@ -59,7 +58,7 @@ Versie 1.3.1 verwijst naar de hotfix. Dankzij de volgende verbeteringen is deze 
 1. Er is een configuratie &#39;CopyQueryParamToJITFragmentURIs&#39; toegevoegd om queryparameters van JIT-manifestverzoek te kopiëren naar gegenereerde fragment-URI&#39;s voor MP4 JIT-conversie. Raadpleeg de documentatie bij HTTP Origin Server voor voorbeeldgebruik
 1. MP4-bestanden zonder extensie toestaan voor JIT-conversie via configuratie/MP4Only-configuratie toegevoegd aan vod.xml
 
-### Opgeloste problemen in release 1.3.1 {#bug-fixes-included-in-release-1}
+### Opgeloste problemen in versie 1.3.1 {#bug-fixes-included-in-release-1}
 
 * 3759167 - Niet alle cues SCTE35 maken het aan outputmanifest wegens timestamp anomalie terwijl het verpakken. Apply pts_adjustment op SpliceTime in TimeSignal van SpliceInfoSection in SCTE35 bericht.
 
@@ -144,12 +143,12 @@ Verschillende prestatieverbeteringen zijn opgenomen in de JIT-pakketmogelijkhede
 
 * Oracle Java JRE 1.7 (Aanbevolen: Sun/Oracle Hotspot (JVM). JDK is vereist voor JConsole-toegang tot de JMX API&#39;s
 
-### Primetime streamingserver {#install-and-configure-primetime-streaming-server} installeren en configureren
+### Primetime Streaming Server installeren en configureren {#install-and-configure-primetime-streaming-server}
 
 **Streaming server installeren**
 
-1. Download de Java SE- en JDK-software van de [site op het Oracle](https://www.oracle.com/technetwork/java/javase/downloads/index.html) en volg de installatie-instructies.
-2. Pak het archiefbestand `Primetime- StreamingServer-1-4-0-b206-12042014.zip` van Adobe Primetime-Streaming Server 1.4 uit op uw schijf.
+1. Download de Java SE- en JDK-software van de [Oracle](https://www.oracle.com/technetwork/java/javase/downloads/index.html) en volgt u de installatie-instructies.
+2. Pak het archiefbestand Adobe Primetime-Streaming Server 1.4 uit. `Primetime- StreamingServer-1-4-0-b206-12042014.zip` naar uw schijf.
 
 **De Primetime Streaming Server starten**
 
@@ -223,19 +222,19 @@ Deze sectie is van toepassing wanneer Primetime Streaming Server niet wordt gebr
 
 De bovenstaande minimale systeemvereisten gelden voor zowel de oorspronkelijke server als Live Packager.
 
-### Live Packager {#install-and-configure-the-live-packager} installeren en configureren
+### Live Packager installeren en configureren {#install-and-configure-the-live-packager}
 
 **Live Packager installeren**
 
-1. Download de Java SE- en JDK-software van de [site op het Oracle](https://www.oracle.com/technetwork/java/javase/downloads/index.html) en volg de installatie-instructies.
-1. Pak het archiefbestand `Primetime-LivePackager-1-4-0-b206-12042014.zip` van Adobe Primetime - Live Packager 1.4 uit op uw schijf.
+1. Download de Java SE- en JDK-software van de [Oracle](https://www.oracle.com/technetwork/java/javase/downloads/index.html) en volgt u de installatie-instructies.
+1. Het archiefbestand Adobe Primetime - Live Packager 1.4 extraheren `Primetime-LivePackager-1-4-0-b206-12042014.zip` naar uw schijf.
 
 **De HTTP Origin Server installeren**
 
-1. Download de Java JRE- en JDK-software van de [site op het Oracle](https://www.oracle.com/technetwork/java/javase/downloads/index.html) en volg de installatie-instructies.
-1. Pak het archiefbestand `Primetime-HttpOrigin-1-4-0-b206-12042014.zip` van Adobe Primetime - HTTP Origin Server 1.4 uit op uw schijf.
+1. Download de Java JRE- en JDK-software van de [Oracle](https://www.oracle.com/technetwork/java/javase/downloads/index.html) en volgt u de installatie-instructies.
+1. Pak het archiefbestand Adobe Primetime - HTTP Origin Server 1.4 uit. `Primetime-HttpOrigin-1-4-0-b206-12042014.zip`, naar uw schijf.
 
-**Als u Live** PackagerTo wilt starten, voert u de volgende opdracht uit vanuit de hoofdmap van de verpakker:\
+**Live Packager starten** Als u de pakketsoftware wilt starten, voert u de volgende opdracht uit vanuit de hoofdmap van de pakketsoftware:\
 `$packager_start.sh`
 
 **De HTTP Origin Server starten**
@@ -267,7 +266,7 @@ Als u de HTTP Origin Server opnieuw wilt starten, moet u de HTTP Origin Server s
 
 Het distributiebestand bevat een voorbeeldconfiguratie die kan worden gebruikt voor het testen van de verpakker.
 
-Nadat u het archief Adobe Primetime - Live Packager 1.4 hebt uitgepakt, wijzigt u mappen in de map packager en voert u het script packager_start.sh uit. De steekproefconfiguratie luistert op het multicast adres 239.235.0.3:14000, en stelt de lokale oorsprongserver op haven 8080 in werking. De output wordt gevormd om aan `packager/webroot/_default_/_default_/ directory` worden geschreven.
+Nadat u het archief Adobe Primetime - Live Packager 1.4 hebt uitgepakt, wijzigt u mappen in de map packager en voert u het script packager_start.sh uit. De steekproefconfiguratie luistert op het multicast adres 239.235.0.3:14000, en stelt de lokale oorsprongserver op haven 8080 in werking. De output wordt gevormd om aan te schrijven `packager/webroot/_default_/_default_/ directory`.
 
 <!-- 
 
@@ -312,15 +311,15 @@ Als u de HTTP Origin Server wilt verwijderen, moet u de HTTP Origin Server stopp
 
 * Oracle Java JRE 1.7 of hoger.
 
-### Offline Packager {#install-and-configure-offline-packager} installeren en configureren
+### Offline Packager installeren en configureren {#install-and-configure-offline-packager}
 
 Voer de volgende stappen uit om Offline Packager te installeren:
 
-1. Download de Java SE-software van [Oracle site](https://www.oracle.com/technetwork/java/javase/downloads/index.html) en volg de installatie-instructies.
-1. Pak het archiefbestand `Primetime- OfflinePackager-1-4-0-b206-12042014.zip` van Adobe Primetime - Offline Packager 1.4 uit op uw schijf.
+1. Download de Java SE-software van de [Oracle](https://www.oracle.com/technetwork/java/javase/downloads/index.html) en volgt u de installatie-instructies.
+1. Pak het archiefbestand Adobe Primetime - Offline Packager 1.4 uit, `Primetime- OfflinePackager-1-4-0-b206-12042014.zip`, naar uw schijf.
 
-Verwijs naar het Aan de slag zijnde document van de Offline Packager van Primetime voor de configuratiedetails beschikbaar [hier](https://help.adobe.com/en_US/primetime/api/packagers/offline/index.html).
+Verwijs het Voorkeur Offline Packager die - document voor de configuratiedetails beschikbaar wordt begonnen [hier](https://help.adobe.com/en_US/primetime/api/packagers/offline/index.html).
 
 ## Nuttige bronnen {#helpful-resources}
 
-* Zie de volledige Help-documentatie op de pagina [Adobe Primetime Learn &amp; Support](https://helpx.adobe.com/support/primetime.html).
+* Zie de volledige Help-documentatie op [Adobe Primetime - Meer informatie en ondersteuning](https://helpx.adobe.com/support/primetime.html) pagina.

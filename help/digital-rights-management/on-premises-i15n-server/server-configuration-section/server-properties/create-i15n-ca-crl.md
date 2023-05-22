@@ -2,14 +2,13 @@
 title: Individuele CA CRL maken
 description: Individuele CA CRL maken
 copied-description: true
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: 72147209-1337-4aed-9e4e-210c905c55a4
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '299'
 ht-degree: 0%
 
 ---
-
 
 # Individuele CA CRL maken{#create-individualization-ca-crl}
 
@@ -17,21 +16,21 @@ Dit CRL-distributiepunt (Certificate Revocation List) maakt deel uit van elk mac
 
 >[!NOTE]
 >
->Als u de URL voor het CRL-distributiepunt wilt instellen, moet u het veld [!DNL AdobeInitial.properties] `cert.machine.crldp` instellen. Dit distributiepunt wordt *niet* gecontroleerd door Primetime DRM voor geldigheid. U moet controleren of deze URL geldig is. Fouten als gevolg van een ongeldige URL worden pas zichtbaar als validatiefouten worden weergegeven op de licentieserver.
+>Om URL voor het CRL distributiepunt te plaatsen, zult u moeten plaatsen [!DNL AdobeInitial.properties] `cert.machine.crldp` veld. Dit distributiepunt is *niet* gecontroleerd door Primetime DRM voor geldigheid. U moet controleren of deze URL geldig is. Fouten als gevolg van een ongeldige URL worden pas zichtbaar als validatiefouten worden weergegeven op de licentieserver.
 
 Hieronder vindt u vereenvoudigde voorbeeldinstructies voor het gebruik van OpenSSL om CRL&#39;s te maken die uw licentieserver kan gebruiken. Adobe raadt u aan deze stappen op een veilige manier en in een veilige omgeving uit te voeren, zodra er een referentie voor de productiedeskundigheid is verkregen.
 
-1. Wijzig de werkmap in de map [!DNL create_crl] die in deze distributie is opgenomen.
-1. Kopieer uw Individualisatie CA [!DNL pfx] aan de zelfde [!DNL create_crl] folder.
+1. Wijzig de werkmap in de [!DNL create_crl] in deze distributie.
+1. Kopieer uw CA voor individualisatie [!DNL pfx] dezelfde [!DNL create_crl] directory.
 
-   De verdere stappen veronderstellen dat de Individualisatie CA pfx [!DNL i15n.pfx] wordt genoemd. Pas de instellingen naar wens aan.
-1. Pak de persoonlijke sleutel van het bestand Individualization CA [!DNL pfx] uit.
+   De volgende stappen veronderstellen dat pfx van Individualisatie CA wordt genoemd [!DNL i15n.pfx]. Pas de instellingen naar wens aan.
+1. Extraheer de Individuele CA [!DNL pfx] persoonlijke sleutel van het bestand.
 
    ```
    openssl pkcs12 -ini15n.pfx -nocerts -out i15n_priv.pem
    ```
 
-1. Zet de persoonlijke sleutel om in [!DNL pksc8] formaat.
+1. De persoonlijke sleutel omzetten in [!DNL pksc8] gebruiken.
 
    ```
    openssl pkcs8 -topk8 -in i15n_priv.pem -inform pem -out i15n_pk8.pem -outform pem -nocrypt
@@ -44,9 +43,9 @@ Hieronder vindt u vereenvoudigde voorbeeldinstructies voor het gebruik van OpenS
      -out onprem-individualization -ca.crl
    ```
 
-   In dit voorbeeld wordt een CRL gemaakt met een standaardgeldigheidsperiode van 1 maand. Gebruik de opties `-crldays` en `-crlhours` om de standaardwaarden met voeten te treden.
+   In dit voorbeeld wordt een CRL gemaakt met een standaardgeldigheidsperiode van 1 maand. Gebruik de `-crldays` en `-crlhours` opties om de standaardwaarden te overschrijven.
 
-   Wanneer u een CRL genereert, worden [!DNL index] en [!DNL crlnumber] gebruikt, waarnaar in uw [!DNL openssl.conf] wordt verwezen. Standaard wordt de locatie [!DNL demoCA] in de werkmap gebruikt. Voorbeeldbestanden [!DNL index] en [!DNL crlnumber] worden opgenomen in de meegeleverde map [!DNL demoCA].
+   Als u een CRL genereert, wordt het [!DNL index] en [!DNL crlnumber] bestand waarnaar in uw [!DNL openssl.conf]. Standaard worden de [!DNL demoCA] de locatie in de werkmap wordt gebruikt. Monster [!DNL index] en [!DNL crlnumber] bestanden worden opgenomen in de opgegeven [!DNL demoCA] directory.
 
 1. Implementeer het CRL-bestand dat in de vorige stap is gegenereerd naar een geschikte locatie die bereikbaar is door de licentieserver (bijvoorbeeld: individualisatieserver [!DNL ROOT]).
 1. Start de licentieserver opnieuw zodra de CRL is geïnstalleerd.

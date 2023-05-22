@@ -1,26 +1,24 @@
 ---
 description: U kunt het gedrag van advertenties aanpassen of overschrijven.
 title: Aangepast afspelen instellen
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: aaa4d1c2-c425-4a2e-8377-0a3072f3fb18
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '159'
-ht-degree: 1%
+ht-degree: 0%
 
 ---
 
-
-# Aangepaste weergave instellen {#cset-up-customized-playback}
+# Aangepast afspelen instellen {#cset-up-customized-playback}
 
 U kunt het gedrag van een advertentie aanpassen of overschrijven door de beleidsinstantie voor advertentie te registreren bij TVSDK.
 
 Voer een van de volgende handelingen uit om het gedrag van advertenties aan te passen:
 
-* Implementeer de interface `AdPolicySelector` en alle bijbehorende methoden.
+* Implementeer de `AdPolicySelector` en alle bijbehorende methoden.
 Deze optie wordt aanbevolen als u alle standaardinstellingen en gedragingen moet negeren.
 
-* De klasse `DefaultAdPolicySelector` uitbreiden en alleen implementaties bieden voor gedragingen die
-aanpassing.
+* Breid uit `DefaultAdPolicySelector` en verstrekt implementaties voor slechts die gedrag dat aanpassing vereist.
 Deze optie wordt aanbevolen als u slechts enkele standaardgedragingen wilt overschrijven.
 
 Voer voor beide opties de volgende taken uit:

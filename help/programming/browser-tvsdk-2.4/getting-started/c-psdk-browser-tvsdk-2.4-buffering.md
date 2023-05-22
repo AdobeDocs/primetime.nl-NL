@@ -1,20 +1,19 @@
 ---
 description: U kunt visuele instellingen configureren om de gebruiker te laten weten dat de inhoud wordt gebufferd.
 title: Bufferen
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: 1b2f32b4-1839-4256-82d6-b262569aa751
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '56'
-ht-degree: 3%
+ht-degree: 0%
 
 ---
 
-
-# Buffering{#buffering}
+# Bufferen{#buffering}
 
 U kunt visuele instellingen configureren om de gebruiker te laten weten dat de inhoud wordt gebufferd.
 
-Luister naar `AdobePSDK.PSDKEventType.BUFFERING_BEGIN`- en `AdobePSDK.PSDKEventType.BUFFERING_END`-gebeurtenissen. Bijvoorbeeld:
+Luisteren naar `AdobePSDK.PSDKEventType.BUFFERING_BEGIN` en `AdobePSDK.PSDKEventType.BUFFERING_END` gebeurtenissen. Bijvoorbeeld:
 
 ```js
 player.addEventListener(AdobePSDK.PSDKEventType.BUFFERING_BEGIN,  
@@ -58,4 +57,3 @@ Zo ziet het DOM-resultaat eruit:
 </div> 
 </div> 
 ```
-

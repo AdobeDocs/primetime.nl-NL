@@ -1,22 +1,21 @@
 ---
 description: ID3-tags bieden informatie over een audio- of videobestand, zoals de titel van het bestand of de naam van de artiest. Browser TVSDK ontdekt ID3 markeringen op het het segmentniveau van de vervoerstroom (TS) in HLS stromen en verzendt een gebeurtenis. De toepassing kan gegevens uit de tag extraheren.
 title: ID3-tags
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: 33510821-9de4-41fc-b404-bcf0b6ba86ff
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '274'
 ht-degree: 0%
 
 ---
 
-
 # ID3-tags{#id-tags}
 
 ID3-tags bieden informatie over een audio- of videobestand, zoals de titel van het bestand of de naam van de artiest. Browser TVSDK ontdekt ID3 markeringen op het het segmentniveau van de vervoerstroom (TS) in HLS stromen en verzendt een gebeurtenis. De toepassing kan gegevens uit de tag extraheren.
 
-Wanneer een nieuwe ID3-metagegevens wordt gevonden in de onderliggende HLS-stream, activeert Browser-TVSDK een `AdobePSDK.TimedMetadataEvent`-gebeurtenis.
+Wanneer er een nieuwe ID3-metagegevens worden gevonden in de onderliggende HLS-stream, activeert Browser TVSDK een `AdobePSDK.TimedMetadataEvent` gebeurtenis.
 
-Het object `TimedMetadata` voor ID3 heeft de volgende eigenschappen:
+De `TimedMetadata` object voor ID3 heeft de volgende eigenschappen:
 
 <table id="table_6C61886187FB44B4B9821E4B00200018"> 
  <thead> 
@@ -27,35 +26,35 @@ Het object `TimedMetadata` voor ID3 heeft de volgende eigenschappen:
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <p> <span class="codeph"> type  </span> </p> </td> 
-   <td colname="col2"> <p>Een type van <span class="codeph"> TimedMetadata </span> voorwerp. </p> <p>Voor ID3-metagegevens is de waarde <span class="codeph"> AdobePSDK.TimedMetadataType.ID3 </span>. </p> </td> 
+   <td colname="col1"> <p> <span class="codeph"> type </span> </p> </td> 
+   <td colname="col2"> <p>Een type van <span class="codeph"> TimedMetadata </span> object. </p> <p>Voor ID3-metagegevens is de waarde <span class="codeph"> AdobePSDK.TimedMetadataType.ID3 </span>. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <span class="codeph"> tijd  </span> </p> </td> 
+   <td colname="col1"> <p> <span class="codeph"> tijd </span> </p> </td> 
    <td colname="col2"> <p> De spelertijd waar deze getimede meta-gegevens werd ontdekt. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <span class="codeph"> id  </span> </p> </td> 
-   <td colname="col2"> <p>Id van <span class="codeph"> TimedMetadata </span>-object. </p> </td> 
+   <td colname="col1"> <p> <span class="codeph"> id </span> </p> </td> 
+   <td colname="col2"> <p>ID van de <span class="codeph"> TimedMetadata </span> object. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> name </span> </p> </td> 
-   <td colname="col2"> <p>Naam van object <span class="codeph"> TimedMetadata </span>. Voor ID3-metagegevens is de waarde "ID3". </p> </td> 
+   <td colname="col2"> <p>Naam van <span class="codeph"> TimedMetadata </span> object. Voor ID3-metagegevens is de waarde "ID3". </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <span class="codeph"> content  </span> </p> </td> 
+   <td colname="col1"> <p> <span class="codeph"> content </span> </p> </td> 
    <td colname="col2"> <p>De inhoud van getimede metagegevens. Voor ID3-tags vertegenwoordigt deze waarde de geserialiseerde bytearray. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <span class="codeph"> metagegevens  </span> </p> </td> 
-   <td colname="col2"> <p> <span class="codeph"> TimedMetadata  </span> processing information, wat een geval van  <span class="codeph"> AdobePSDK.Metadata is  </span> waar de ID3 kaders worden opgeslagen. </p> <p> <p>Opmerking:  Voor Safari <span class="codeph">-video </span>-tags worden de specifieke framegegevens van de ID3-tag in de vorm van een object weergegeven via een <span class="codeph"> AdobePSDK.Metadata </span>-object, terwijl voor andere browsers de framegegevens van de ID3-tag worden weergegeven in de vorm van een bytearray via een <span class="codeph"> AdobePSDK.Metadata </span>-object. </p> </p> </td> 
+   <td colname="col1"> <p> <span class="codeph"> metagegevens </span> </p> </td> 
+   <td colname="col2"> <p> <span class="codeph"> TimedMetadata </span> verwerkte informatie, die een geval van <span class="codeph"> AdobePSDK.Metadata </span> waarbij de ID3-frames worden opgeslagen. </p> <p> <p>Opmerking: Voor Safari <span class="codeph"> video </span> -tag, worden de specifieke framegegevens van de ID3-tag in de vorm van een object weergegeven via een <span class="codeph"> AdobePSDK.Metadata </span> object, terwijl voor andere browsers de gegevens over het frame van de ID3-tag worden weergegeven in de vorm van een bytearray via <span class="codeph"> AdobePSDK.Metadata </span> object. </p> </p> </td> 
   </tr> 
  </tbody> 
 </table>
 
 &#x200B;
 
-De verschillende ID3-tags die zijn opgeslagen in `TimedMetadata` kunnen door de toepassing op de volgende twee manieren worden opgehaald:
+De verschillende ID3-tags in `TimedMetadata` kan door de toepassing op de volgende twee manieren worden opgehaald:
 
 * In de gebeurtenislistener AdobePSDK.PSDKEventType.TIMED_METADATA_AVAILABLE.
 
@@ -114,7 +113,7 @@ De verschillende ID3-tags die zijn opgeslagen in `TimedMetadata` kunnen door de 
    }); 
    ```
 
-* De `MediaPlayerItem`-eigenschap `timedMetadata` gebruiken.
+* Met de `MediaPlayerItem`s `timedMetadata` eigenschap.
 
    ```
    var isSafari = function () { 
@@ -170,4 +169,3 @@ De verschillende ID3-tags die zijn opgeslagen in `TimedMetadata` kunnen door de 
        } 
    } 
    ```
-

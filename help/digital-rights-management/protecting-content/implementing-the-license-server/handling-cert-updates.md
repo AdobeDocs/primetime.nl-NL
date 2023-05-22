@@ -2,14 +2,13 @@
 title: Certificaatupdates verwerken wanneer door Adobe uitgegeven certificaten verlopen
 description: Certificaatupdates verwerken wanneer door Adobe uitgegeven certificaten verlopen
 copied-description: true
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: 9051a647-87ed-4df6-8bbc-bb5c112383ee
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '534'
 ht-degree: 0%
 
 ---
-
 
 # Certificaatupdates verwerken wanneer door Adobe uitgegeven certificaten verlopen{#handling-certificate-updates-when-adobe-issued-certificates-expire}
 
@@ -45,26 +44,25 @@ Een server bijwerken met nieuwe certificaten:
 
    Voor de referenties van de licentieserver:
 
-   * Zorg ervoor dat de huidige referentie wordt doorgegeven aan de constructor `LicenseHandler`:
+   * Zorg ervoor dat de huidige referentie wordt doorgegeven aan de `LicenseHandler` constructor:
 
-      * In de verwijzingsimplementatie, plaats het met het `LicenseHandler.ServerCredential` bezit.
-      * In de Server van Adobe Primetime DRM voor Beschermde Streaming, moet de huidige referentie de eerste referentie zijn die in het `LicenseServerCredential` element in het flashaccess-huurder.xml- dossier wordt gespecificeerd.
-   * Zorg ervoor dat de huidige en oude gegevens worden doorgegeven aan `AsymmetricKeyRetrieval`
+      * In de verwijzingsimplementatie plaatst het met `LicenseHandler.ServerCredential` eigenschap.
+      * In de Adobe Primetime DRM-server voor beveiligde streaming moet de huidige referentie de eerste referentie zijn die is opgegeven in de `LicenseServerCredential` element in het flashaccess-huurder.xml- dossier.
+   * Zorg ervoor dat de huidige en oude gegevens worden geleverd aan `AsymmetricKeyRetrieval`
 
-      * In de verwijzingsimplementatie, plaats het met `LicenseHandler.ServerCredential` en `AsymmetricKeyRetrieval.ServerCredential. n` eigenschappen.
+      * In de verwijzingsimplementatie plaatst het met `LicenseHandler.ServerCredential` en `AsymmetricKeyRetrieval.ServerCredential. n` eigenschappen.
 
-      * In de Server Primetime DRM voor Beschermde Streaming, worden de oude geloofsbrieven gespecificeerd na de eerste referentie in het `LicenseServerCredential` element in het flashaccess-huurder.xml- dossier.
-
+      * In de Primetime DRM Server voor Beschermde Streaming, worden de oude geloofsbrieven gespecificeerd na de eerste referentie in `LicenseServerCredential` element in het flashaccess-huurder.xml- dossier.
    Voor de vervoergeloofsbrieven:
 
-   * Zorg ervoor dat de huidige referentie wordt doorgegeven aan de methode `HandlerConfiguration.setServerTransportCredential()`:
+   * Zorg ervoor dat de huidige referentie wordt doorgegeven aan de `HandlerConfiguration.setServerTransportCredential()` methode:
 
-      * In de verwijzingsimplementatie, plaats het met het `HandlerConfiguration.ServerTransportCredential` bezit.
-      * In de Primetime DRM-server voor beveiligde streaming moet de huidige referentie de eerste referentie zijn die is opgegeven in het `TransportCredential`-element in het [!DNL flashaccess-tenant.xml]-bestand.
-   * Zorg ervoor dat de oude gegevens worden doorgegeven aan `HandlerConfiguration.setAdditionalServerTransportCredentials`():
+      * In de verwijzingsimplementatie plaatst het met `HandlerConfiguration.ServerTransportCredential` eigenschap.
+      * In de Primetime DRM-server voor beveiligde streaming moet de huidige referentie de eerste referentie zijn die is opgegeven in het dialoogvenster `TransportCredential` in het [!DNL flashaccess-tenant.xml] bestand.
+   * Zorg ervoor dat de oude gegevens worden geleverd aan `HandlerConfiguration.setAdditionalServerTransportCredentials`():
 
-      * In de verwijzingsimplementatie, plaats het met de `HandlerConfiguration.AdditionalServerTransportCredential. n` eigenschappen.
-      * In de Server Primetime DRM voor beschermde het stromen, wordt dit gespecificeerd na de eerste referentie in het `TransportCredential` element in het flashaccess-huurder.xml- dossier.
+      * In de verwijzingsimplementatie plaatst het met `HandlerConfiguration.AdditionalServerTransportCredential. n` eigenschappen.
+      * In de Primetime DRM-server voor beveiligde streaming wordt dit opgegeven na de eerste referentie in het dialoogvenster `TransportCredential` element in het flashaccess-huurder.xml- dossier.
 
 
 
@@ -73,8 +71,7 @@ Een server bijwerken met nieuwe certificaten:
 1. Werk het certificaat van de Server van de Vergunning van de Sleutelserver als volgt bij:
 
    * Werk de geloofsbrieven in het de configuratiedossier van de huurder van de Server van de Server van de Sleutel van Adobe Primetime DRM bij door zowel de oude als nieuwe Zeer belangrijke geloofsbrieven van de Server in flashaccess-keyserver-huurder.xml te omvatten.
-   * Zorg ervoor dat het huidige certificaat wordt doorgegeven aan de methode `HandlerConfiguration.setKeyServerCertificate()`.
+   * Controleer of het huidige certificaat is doorgegeven aan de `HandlerConfiguration.setKeyServerCertificate()` methode.
 
-      * In de verwijzingsimplementatie, plaats het met het `HandlerConfiguration.KeyServerCertificate` bezit.
+      * In de verwijzingsimplementatie plaatst het met `HandlerConfiguration.KeyServerCertificate` eigenschap.
       * In de Server Primetime DRM voor Beschermde Streaming, specificeer het certificaat van de Zeer belangrijke Server in door het element van de Configuratie/van de Aannemer/Certificates/KeyServer.
-

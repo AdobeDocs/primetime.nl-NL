@@ -1,16 +1,15 @@
 ---
 description: Browser TVSDK biedt hulpprogramma's voor het maken van een geavanceerde videospelertoepassing (uw Primetime-speler), die u kunt integreren met andere Primetime-componenten.
 title: Flash Failover
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: 76bd9214-767a-4f26-977d-81fbac3e0c42
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '278'
 ht-degree: 0%
 
 ---
 
-
-# Flash-failover {#flash-failover}
+# Flash Failover {#flash-failover}
 
 Browser TVSDK biedt hulpprogramma&#39;s voor het maken van een geavanceerde videospelertoepassing (uw Primetime-speler), die u kunt integreren met andere Primetime-componenten.
 
@@ -18,9 +17,9 @@ Gebruik de gereedschappen van uw platform om een speler te maken en deze te verb
 
 ## Flash fallback {#section_92D3884A13A6431F9A9CC5C79715D888}
 
-In Browser-TVSDK werkt uw toepassing alleen met de `Primetime.js`-API. De onderliggende TVSDK-implementatie van de browser bepaalt welke spelertechnologie moet worden gebruikt op basis van het huidige platform en het mediatype dat moet worden afgespeeld.
+In Browser-TVSDK werkt uw toepassing alleen met de `Primetime.js` API. De onderliggende TVSDK-implementatie van de browser bepaalt welke spelertechnologie moet worden gebruikt op basis van het huidige platform en het mediatype dat moet worden afgespeeld.
 
-De beslissing voor de spelertechnologie wordt niet genomen tot u `MediaPlayer.replaceCurrentResource` roept om een specifieke bron te spelen.
+De beslissing voor de spelertechnologie wordt pas genomen als je belt `MediaPlayer.replaceCurrentResource` om een specifieke bron af te spelen.
 
 Bijvoorbeeld:
 
@@ -41,13 +40,12 @@ Deze voorbeeldprocedure illustreert het proces om de spelertechnologie te bepale
 >Het proces kan afhankelijk van URL en uw milieu variëren.
 
 1. Als de Uitbreidingen van de Bron van Media wordt gesteund, gebruik het zonder bekende beperkingen.
-1. Gebruik, indien ondersteund, de tag `<video>` rechtstreeks zonder MSE.
+1. Gebruik, indien ondersteund, de `<video>` rechtstreeks zonder MSE.
 1. Zorg ervoor dat u ten minste Adobe Flash Player 23.0 gebruikt.
-1. Als geen geschikte playbacktechnologie wordt gevonden, `replaceCurrentResource` keert een fout terug.
+1. Als er geen geschikte afspeeltechnologie wordt gevonden, `replaceCurrentResource` retourneert een fout.
 
-Een volgende `replaceCurrentResource` vraag op de zelfde `MediaPlayer` instantie volgt het zelfde proces. Dit staat u toe om diverse middeltypes te spelen door de zelfde `MediaPlayer` instantie in de zelfde ouder `<DIV>` markering te gebruiken die u specificeerde toen de `MediaPlayerView` instantie werd gecreeerd.
+Een volgende `replaceCurrentResource` dezelfde oproep `MediaPlayer` -instantie volgt hetzelfde proces. Dit staat u toe om diverse middeltypes te spelen door het zelfde te gebruiken `MediaPlayer` instantie in hetzelfde bovenliggende `<DIV>` -tag die u hebt opgegeven bij het `MediaPlayerView` -instantie is gemaakt.
 
 >[!TIP]
 >
->Het SWF-object en de tag `<video>` zijn genest in de bovenliggende tag `<DIV>`.
-
+>Het object SWF en de `<video>` -tag is genest in het bovenliggende `<DIV>` tag.

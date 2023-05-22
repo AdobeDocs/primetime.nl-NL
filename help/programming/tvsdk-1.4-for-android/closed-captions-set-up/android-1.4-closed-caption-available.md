@@ -1,22 +1,21 @@
 ---
 description: Bij Closed Captioning wordt het audiogedeelte van een video als tekst op het scherm weergegeven wanneer het geluid onhoorbaar is of de kijker niet goed kan worden gehoord.
 title: Selecteer een ondertitelingstrack uit de beschikbare tracks
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: 75970604-c318-4621-bad3-caab292c8a04
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '230'
-ht-degree: 1%
+ht-degree: 0%
 
 ---
 
-
-# Selecteer een huidige bijschrifttrack uit de beschikbare tracks{#select-a-current-caption-track-from-among-available-tracks}
+# Selecteer een ondertitelingstrack uit de beschikbare tracks{#select-a-current-caption-track-from-among-available-tracks}
 
 U kunt een track selecteren in een lijst met momenteel beschikbare Closed Caption-tracks. Dit wordt de huidige track die wordt weergegeven wanneer de zichtbaarheid is ingeschakeld. Sommige sporen zouden niet aanvankelijk beschikbaar kunnen zijn, zodat luistert naar de gebeurtenis die erop wijst dat meer beschikbaar is geworden.
 
 >[!TIP]
 >
->Gesloten bijschriften zijn altijd ingeschakeld. Alle standaard Closed Caption-tracks worden als aanwezig beschouwd. Standaardtracks (zoals CC1-CC4, CS1-CS6) worden opgesomd in `ClosedCaptionsTrack.DefaultCCTypes`. Wanneer het afspelen begint, zoekt TVSDK naar activiteit op elk van deze kanalen. Als het activiteit vindt, plaatst het de `isActive` methode voor dat spoor en verzendt de `MediaPlayer.PlaybackEventListener.onUpdated` gebeurtenis.
+>Gesloten bijschriften zijn altijd ingeschakeld. Alle standaard Closed Caption-tracks worden als aanwezig beschouwd. Standaardtracks (zoals CC1-CC4, CS1-CS6) worden opgesomd in `ClosedCaptionsTrack.DefaultCCTypes`. Wanneer het afspelen begint, zoekt TVSDK naar activiteit op elk van deze kanalen. Als het activiteit vindt, stelt het `isActive` methode voor die track en verzendt de `MediaPlayer.PlaybackEventListener.onUpdated` gebeurtenis.
 
 1. Wacht tot de mediaspeler zich ten minste in de staat PREPARED bevindt.
 1. Luister naar deze gebeurtenissen:

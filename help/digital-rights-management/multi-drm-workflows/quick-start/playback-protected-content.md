@@ -1,24 +1,23 @@
 ---
 description: Als u de DRM-oplossing wilt testen, hebt u een videotoepassing nodig die de specifieke DRM-oplossing kan verwerken waarmee u werkt. Deze speler kan een voorbeeldspeler zijn die door Adobe of uw eigen op TVSDK gebaseerde videotoepassing beschikbaar wordt gesteld.
 title: Beschermde inhoud afspelen
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: b0e09474-f752-495f-a702-93f288535403
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '550'
 ht-degree: 0%
 
 ---
 
-
-# Beveiligde inhoud afspelen {#playback-your-protected-content}
+# Beschermde inhoud afspelen {#playback-your-protected-content}
 
 Als u de DRM-oplossing wilt testen, hebt u een videotoepassing nodig die de specifieke DRM-oplossing kan verwerken waarmee u werkt. Deze speler kan een voorbeeldspeler zijn die door Adobe of uw eigen op TVSDK gebaseerde videotoepassing beschikbaar wordt gesteld.
 
 1. Gebruik de URL van de licentieserver van het tokenantwoord dat u hebt gekregen van de ExpressPlay-server om te testen of u de beveiligde inhoud kunt afspelen.
 
-   * **Widevine**  - Gebruik de reactie van Widevine direct zoals die van uw ExpressPlay verzoek van het licentietoken wordt ontvangen.
-   * **PlayReady**  - Haal de URL en het token van de licentieserver op van het JSON-object dat is geretourneerd van uw aanvraag voor het licentietoken.
-   * **FairPlay**  - Gebruik de FairPlay-reactie rechtstreeks zoals u hebt ontvangen van uw ExpressPlay-licentietoken-verzoek.
+   * **Widevine** - Gebruik de Widevine-reactie rechtstreeks zoals u van uw ExpressPlay-licentietoken-verzoek hebt ontvangen.
+   * **PlayReady** - Haal de URL en het token van de licentieserver op van het JSON-object dat door uw aanvraag voor het licentietoken is geretourneerd.
+   * **FairPlay** - Gebruik het FairPlay-antwoord rechtstreeks zoals u hebt ontvangen van uw ExpressPlay-licentietoken-verzoek.
 
 1. Test het afspelen van uw beveiligde inhoud met behulp van uw eigen speler of een bestaande Adobe voorbeeldspeler.
 
@@ -46,14 +45,14 @@ Als u de DRM-oplossing wilt testen, hebt u een videotoepassing nodig die de spec
    https://drmtest2.adobe.com/TVSDK_HTML5/samples/reference/reference_player.html
    ```
 
-   **Het afspelen controleren tijdens het testen van uw FairPlay-instellingen:** voor FairPlay zijn enkele extra stappen nodig om inhoud af te spelen wanneer u de ExpressPlay-licentieservers gebruikt. Als u [!DNL curl] gebruikt om uw verbindingen te testen (zoals beschreven in [Licentie](../../multi-drm-workflows/quick-start/handle-the-licensing.md)), moet u uw M3U8 manifest *(uw verpakte inhoud) als volgt* bewerken:
+   **Het afspelen controleren tijdens het testen van uw FairPlay-instellingen:** FairPlay vereist enkele extra stappen om inhoud af te spelen wanneer u de ExpressPlay-licentieservers gebruikt. Als u [!DNL curl] om uw verbindingen te testen (zoals beschreven in [Licentie](../../multi-drm-workflows/quick-start/handle-the-licensing.md)), moet u *uw M3U8-manifest bewerken* (uw verpakte inhoud) als volgt:
 
-1. Voeg de reactie toe u van uw verzoek van het licentietoken aan `#EXT-X-KEY:` markering in manifest terugkreeg; en
-1. Wijzig het protocol van die URL van de reactie (nu in het manifest), van `https://` in `skd://`.
+1. Voeg de reactie die u van uw verzoek van het licentietoken hebt teruggekregen toe aan de `#EXT-X-KEY:` de code in het manifest; en
+1. Wijzig het protocol van die URL vanuit de reactie (nu in het manifest), van `https://` tot `skd://`.
 
    Hier volgt een volledig voorbeeld voor het testen van het afspelen met FairPlay, inclusief de licentiesstap:
 
-1. Gebruik de FairPlay-licentietoken-aanvraag om uw licentie-token-URL te verkrijgen. (Gebruik uw eigen Verificator van de Klant van de Productie, en ben zeker om zelfde CEK en `iv` te gebruiken die werd gebruikt om uw inhoud te verpakken FairPlay.) Voer de volgende opdracht uit om de licentietoken-URL voor de voorbeeldinhoud te verkrijgen:
+1. Gebruik de FairPlay-licentietoken-aanvraag om uw licentie-token-URL te verkrijgen. (Gebruik uw eigen Verificator van de Klant van de Productie, en ben zeker om het zelfde CEK te gebruiken en `iv` die is gebruikt om uw FairPlay-inhoud te verpakken.) Voer de volgende opdracht uit om de licentietoken-URL voor de voorbeeldinhoud te verkrijgen:
 
    ```
    curl -v "https://fp-gen.service.expressplay.com/hms/fp/token? 
@@ -71,7 +70,7 @@ Als u de DRM-oplossing wilt testen, hebt u een videotoepassing nodig die de spec
    SSwcDq1ZnRtXunFLueTw6LAL52aZllMLasCSzYRMaAVHw 
    ```
 
-1. Plaats de geretourneerde reactie van het licentietoken-URL in uw M3U8-manifest en *wijzig het schema van het licentietoken-URL in* `sdk://` van `https://`. Hieronder ziet u een voorbeeld van de tag #EXT-X-KEY in uw manifest van M3U8:
+1. Plaats de geretourneerde URL-reactie van het licentietoken in uw M3U8-manifest en *Wijzig het schema van licentietoken-URL in* `sdk://` van `https://`. Hieronder ziet u een voorbeeld van de tag #EXT-X-KEY in uw manifest van M3U8:
 
    ```
    #EXT-X-KEY:METHOD=SAMPLE-AES, 

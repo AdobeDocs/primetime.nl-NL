@@ -1,23 +1,22 @@
 ---
 description: U kunt een track selecteren in een lijst met momenteel beschikbare Closed Caption-tracks. Dit wordt de huidige track die wordt weergegeven wanneer de zichtbaarheid is ingeschakeld. Sommige sporen zouden niet aanvankelijk beschikbaar kunnen zijn, zodat luistert naar de gebeurtenis die erop wijst dat meer beschikbaar is geworden.
 title: Selecteer een ondertitelingstrack uit de beschikbare tracks
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: d604dedc-f3c3-4c97-9b0f-84da326c0678
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '198'
-ht-degree: 2%
+ht-degree: 0%
 
 ---
 
-
-# Selecteer een huidige bijschrifttrack uit de beschikbare tracks {#select-a-current-caption-track-from-among-available-tracks}
+# Selecteer een ondertitelingstrack uit de beschikbare tracks {#select-a-current-caption-track-from-among-available-tracks}
 
 U kunt een track selecteren in een lijst met momenteel beschikbare Closed Caption-tracks. Dit wordt de huidige track die wordt weergegeven wanneer de zichtbaarheid is ingeschakeld. Sommige sporen zouden niet aanvankelijk beschikbaar kunnen zijn, zodat luistert naar de gebeurtenis die erop wijst dat meer beschikbaar is geworden.
 
-1. Wacht tot de mediaspeler ten minste de status `PREPARED` heeft.
+1. Wacht tot de mediaspeler zich in ten minste `PREPARED` status.
 1. Luister naar deze gebeurtenissen:
 
-   * `MediaPlayerEvent.STATUS_CHANGED` met status  `MediaPlayerStatus.INITIALIZED`: De eerste lijst met Closed Caption-tracks is beschikbaar.
+   * `MediaPlayerEvent.STATUS_CHANGED` met status `MediaPlayerStatus.INITIALIZED`: De eerste lijst met Closed Caption-tracks is beschikbaar.
 
 1. Hiermee wordt een lijst opgehaald met alle momenteel beschikbare Closed Caption-tracks.
 

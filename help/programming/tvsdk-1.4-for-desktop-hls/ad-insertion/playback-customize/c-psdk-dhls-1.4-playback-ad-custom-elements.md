@@ -1,14 +1,13 @@
 ---
 description: TVSDK biedt klassen en methoden waarmee u het afspeelgedrag kunt aanpassen van inhoud die reclame bevat.
 title: API-elementen voor het afspelen van advertenties
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: 459995c2-1d6f-4414-94a6-2c0b24098c14
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '236'
 ht-degree: 0%
 
 ---
-
 
 # API-elementen voor het afspelen van advertenties{#api-elements-for-ad-playback}
 
@@ -29,7 +28,7 @@ De volgende API-elementen zijn handig voor het aanpassen van het afspelen:
    <td colname="col2">Bepaal of een advertentieeinde moet worden gemarkeerd als gevolgd door een viewer en zo ja, wanneer om het te markeren. Het gevolgde beleid instellen en ophalen met 
     <pre>
      de 
-     <span class="codeph"> adBreakAsWatched</span>-eigenschap.
+     <span class="codeph"> adBreakAsWatched</span> eigenschap.
     </pre> </td> 
   </tr> 
   <tr> 
@@ -68,4 +67,3 @@ De volgende API-elementen zijn handig voor het aanpassen van het afspelen:
   </tr> 
  </tbody> 
 </table>
-

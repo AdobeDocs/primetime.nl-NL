@@ -3,19 +3,18 @@ title: Verboden logboekregistratie
 description: Verboden logboekregistratie
 copied-description: true
 exl-id: f2d1b0c2-ba28-4fba-9a4e-71d1421f37fe
-translation-type: tm+mt
 source-git-commit: 3e63c187f12d1bff53370bbcde4d6a77f58f3b4f
 workflow-type: tm+mt
-source-wordcount: '2157'
+source-wordcount: '2155'
 ht-degree: 0%
 
 ---
 
-# Uitgebreide logboekregistratie {#verbose-logging}
+# Verboden logboekregistratie {#verbose-logging}
 
-## ptdebug-/logboekgebeurtenisbeschrijvingen {#ptdebug-logging-events}
+## gebeurtenisbeschrijvingen voor foutopsporing/logboekregistratie {#ptdebug-logging-events}
 
-Wanneer het in werking stellen zuivert registreren voor een manifestserverzitting, kunt u de `ptdebug` parameter aan het verzoek URL toevoegen om de volgende opties voor de informatie te specificeren die de manifestserver in de kopballen van HTTP terugkeert:
+Wanneer het in werking stellen van zuivert registreren voor een manifestserverzitting, kunt u toevoegen `ptdebug` parameter aan verzoek URL om de volgende opties voor de informatie te specificeren die de manifestserver in de kopballen van HTTP terugkeert:
 
 * `ptdebug=true`
 Alle verslagen behalve TRACE_HTTP_HEADER en de meeste vraag/reactiegegevens van TRACE_AD_CALL verslagen.
@@ -43,7 +42,7 @@ De structuur van een logrecord is als volgt:
 | record_type | string | Type gebeurtenis dat wordt geregistreerd |
 | overige velden | variëren | Afhankelijk van het type gebeurtenis |
 
-De verslagen van dit type registreren de resultaten van HTTP- verzoeken. De gebieden voorbij `TRACE_REQUEST_INFO` verschijnen in de orde die in de lijst wordt getoond, door lusjes wordt gescheiden.
+De verslagen van dit type registreren de resultaten van HTTP- verzoeken. Velden buiten `TRACE_REQUEST_INFO` worden weergegeven in de volgorde die in de tabel wordt weergegeven, gescheiden door tabs.
 
 | Veld | Type | Beschrijving |
 |---|---|---|
@@ -79,7 +78,7 @@ Verslagen van dit type de kopballen van HTTP van het logboek tijdens de vraag va
 
 >[!NOTE]
 >
->De velden `request_type` en `header_value` zijn optioneel.
+>De `request_type` en `header_value` velden zijn optioneel.
 
 **Een voorbeeld**
 
@@ -99,9 +98,9 @@ Verslagen van dit type de kopballen van HTTP van het logboek tijdens de vraag va
 2015-03-25T06:10:01.064Z 1427263800573 6495aa. . . 189938 TRACE_HTTP_HEADER UNKNOWN RESPONSE Via MS4xIH. . .
 ```
 
-### TRACE_AD_CALL records {#tracing-ad-call-records}
+### TRACE_AD_CALL-records {#tracing-ad-call-records}
 
-De verslagen van dit type registreren de resultaten van manifestserver en verzoeken. De gebieden voorbij `TRACE_AD_CALL` verschijnen in de orde die in de lijst wordt getoond, door lusjes wordt gescheiden.
+De verslagen van dit type registreren de resultaten van manifestserver en verzoeken. Velden buiten `TRACE_AD_CALL` worden weergegeven in de volgorde die in de tabel wordt weergegeven, gescheiden door tabs.
 
 | Veld | Type | Beschrijving |
 |---|---|---|
@@ -138,11 +137,11 @@ De verslagen van dit type registreren de resultaten van de ad verzoeken die door
 | delta | integer | Tijd (milliseconden) die door deze gebeurtenis wordt genomen. |
 | **†** misc | string | Reden dat advertentie is overgeslagen. |
 
-**†** `ad_content_url_actual`,  `ad_call_id`en  `misc` velden zijn optioneel.
+**†** `ad_content_url_actual`, `ad_call_id`, en `misc` velden zijn optioneel.
 
 >[!NOTE]
 >
->Voor `TRACE_AD_RESOLVE` en `TRACE_AD_INSERT` is de URL in het veld `ad_content_url_actual` voor de getranscodeerde code en indien beschikbaar. Anders is het veld leeg voor `TRACE_AD_RESOLVE` of hetzelfde als `ad_content_url` voor `TRACE_AD_INSERT`.
+>Voor `TRACE_AD_RESOLVE` en `TRACE_AD_INSERT`, de URL in de `ad_content_url_actual` is voor de getranscodeerde advertentie, als er een beschikbaar is. Anders is het veld leeg voor `TRACE_AD_RESOLVE` of dezelfde `ad_content_url` for `TRACE_AD_INSERT`.
 
 Een voorbeeld:
 
@@ -170,15 +169,15 @@ Records of this type log the results of manifest server ad requests. Fields beyo
 
 -->
 
-### TRACE_TRANSCODING_NO_MEDIA_TO_TRANSCODE records {#trace-transcoding-no-media-to-transcode}
+### TRACE_TRANSCODING_NO_MEDIA_TO_TRANSCODE-records {#trace-transcoding-no-media-to-transcode}
 
-Records van dit type registreren een ontbrekend en creatief bestand. Het enige veld buiten `TRACE_TRANSCODING_NO_MEDIA_TO_TRANSCODE` verschijnt in de tabel.
+Records van dit type registreren een ontbrekend en creatief bestand. Het enige veld daarbuiten `TRACE_TRANSCODING_NO_MEDIA_TO_TRANSCODE` wordt weergegeven in de tabel.
 
 | Veld | Type | Beschrijving |
 |---|---|---|
 | ad_id | string | Volledig gekwalificeerde advertentie-id (FQ_AD_ID: Q_AD_ID\[;Q_AD_ID\[;Q_AD_ID..\] \] Q_AD_ID: PROTOCOL:AD_SYSTEM:AD_ID\[:CREATIVE_ID\[:MEDIA_ID\] \] PROTOCOL: AUDITUDE, VAST) |
 
-De verslagen van dit type registreren de resultaten van het transcoderen verzoeken die de manifestserver naar CRS verzendt. De gebieden voorbij `TRACE_TRANSCODING_REQUESTED` verschijnen in de orde die in de lijst wordt getoond, door lusjes wordt gescheiden.
+De verslagen van dit type registreren de resultaten van het transcoderen verzoeken die de manifestserver naar CRS verzendt. Velden buiten `TRACE_TRANSCODING_REQUESTED` worden weergegeven in de volgorde die in de tabel wordt weergegeven, gescheiden door tabs.
 
 | Veld | Type | Beschrijving |
 |---|---|---|
@@ -188,7 +187,7 @@ De verslagen van dit type registreren de resultaten van het transcoderen verzoek
 | vlaggen | string | ID3 geeft aan of de transcoderingsaanvraag een verzoek bevat om een ID3-tag toe te voegen |
 | target_duration | string | Doelduur (seconden) van de getranscodeerde creatieve waarde |
 
-De verslagen van dit type wijzen op een verzoek om server zij het volgen te doen. De gebieden voorbij `TRACE_TRACKING_REQUEST` verschijnen in de orde die in de lijst wordt getoond, door lusjes wordt gescheiden.
+Records van dit type geven aan dat een verzoek is gedaan om de serverzijde te volgen. Velden buiten `TRACE_TRACKING_REQUEST` worden weergegeven in de volgorde die in de tabel wordt weergegeven, gescheiden door tabs.
 
 | Veld | Type | Beschrijving |
 |---|---|---|
@@ -196,7 +195,7 @@ De verslagen van dit type wijzen op een verzoek om server zij het volgen te doen
 | start | zweven | Begintijd van PTS-fragment (seconden met precisie milliseconde) |
 | end | zweven | Eindtijd van PTS-fragment (seconden met precisie milliseconde) |
 
-Records van dit type bevatten een URL voor het bijhouden van de serverzijde. De gebieden voorbij `TRACE_TRACKING_REQUEST_URL` verschijnen in de orde die in de lijst wordt getoond, door lusjes wordt gescheiden.
+Records van dit type bevatten een URL voor het bijhouden van de serverzijde. Velden buiten `TRACE_TRACKING_REQUEST_URL` worden weergegeven in de volgorde die in de tabel wordt weergegeven, gescheiden door tabs.
 
 | Veld | Type | Beschrijving |
 |---|---|---|
@@ -204,7 +203,7 @@ Records van dit type bevatten een URL voor het bijhouden van de serverzijde. De 
 | ad_system | string | Advertentiesysteem (bijvoorbeeld auditude) |
 | url | string | URL die moet worden geping |
 
-Records van dit type logbestand vragen de manifestserver om `WEBVTT` bijschriften. De gebieden voorbij `TRACE_WEBVTT_REQUEST` verschijnen in de orde die in de lijst wordt getoond, door lusjes wordt gescheiden.
+Verslagen van dit typelogboek verzoeken de manifestserver voor maakt `WEBVTT` bijschriften. Velden buiten `TRACE_WEBVTT_REQUEST` worden weergegeven in de volgorde die in de tabel wordt weergegeven, gescheiden door tabs.
 
 | Veld | Type | Beschrijving |
 |---|---|---|
@@ -213,14 +212,14 @@ Records van dit type logbestand vragen de manifestserver om `WEBVTT` bijschrifte
 | start | zweven | Starttijd splitsen (seconden met precisie milliseconde) |
 | end | zweven | Eindtijd splitsen (seconden met milliseconde-precisie) |
 
-Records van dit type logreacties die de manifestserver naar clients verzendt in `answer` naar aanvragen voor `WEBVTT` bijschriften. De gebieden voorbij `TRACE_WEBVTT_RESPONSE` verschijnen in de orde die in de lijst wordt getoond, door lusjes wordt gescheiden.
+Verslagen van dit type logboekreacties de manifestserver naar cliënten binnen verzendt `answer` aan verzoeken om `WEBVTT` bijschriften. Velden buiten `TRACE_WEBVTT_RESPONSE` worden weergegeven in de volgorde die in de tabel wordt weergegeven, gescheiden door tabs.
 
 | Veld | Type | Beschrijving |
 |---|---|---|
 | status | string | Geretourneerde HTTP-statuscode |
 | reactie | string | Base64-gecodeerde reactie die naar cliënt wordt verzonden |
 
-Records van dit type logreacties op aanvragen die de manifestserver aanbrengt voor `WEBVTT` bijschriften. De gebieden voorbij `TRACE_WEBVTT_SOURCE` verschijnen in de orde die in de lijst wordt getoond, door lusjes wordt gescheiden.
+Verslagen van dit type logboekreacties op verzoeken de manifestserver maakt voor `WEBVTT` bijschriften. Velden buiten `TRACE_WEBVTT_SOURCE` worden weergegeven in de volgorde die in de tabel wordt weergegeven, gescheiden door tabs.
 
 | Veld | Type | Beschrijving |
 |---|---|---|
@@ -254,7 +253,7 @@ De verslagen van dit type laten de manifestserver toe om gebeurtenissen en infor
 * Onbewerkte manifest ophalen: inhoud-URL. (Live)
 * Na omleiding VAST: URL omleiden.
 * Er zijn lege bronnen gevonden. (VOD)
-* *nummer* advertenties gevonden. (VOD)
+* Gevonden *getal* advertenties. (VOD)
 * HTTP-aanvraag ontvangen. (Zeer eerste bericht)
 * Dit wordt genegeerd omdat het verschil tussen de tijdsduur van de advertentie (*ad responsduur *sec) en de werkelijke duur van de advertentie (*actual duration *sec) groter is dan de limiet. (HLSManifestResolver)
 * Negeren is gelukt zonder id-waarde. (GroupAdResolver.java)
@@ -292,16 +291,16 @@ De verslagen van dit type laten de manifestserver toe om gebeurtenissen en infor
 * Beginnen met genereren van doelmanifest. (HLSManifestResolver)
 * Begin genererend variantmanifest van: inhoud-URL. (Variant)
 * Begin advertenties in manifest te stikken. (VODHLSResolver)
-* Poging om advertentie bij `HH:MM:SS` te naaien: AdPlacement \[adManifestURL= and Manifest URL, durationSeconds= seconds, ignore= ignore, redirectAd= redirect ad, priority= priority.\] \(HLSManifestResolver\)
+* Poging om advertentie te naaien bij `HH:MM:SS`: AdPlacement \[adManifestURL= and Manifest URL, durationSeconds= seconds, ignore= ignore, redirectAd= redirect ad, priority= priority.\] \(HLSManifestResolver\)
 * Kan geen advertenties ophalen vanwege een ongeldige tijdlijn. Retourneerde de inhoud zonder advertenties. (VOD)
 * Kan geen advertenties ophalen. Retourneerde de inhoud zonder advertenties. (VOD)
 * Kan geen advertentie-query ophalen en er is geen inhoud-URL opgegeven. (VOD)
 * Geldige URL ontvangen. (VOD/Variant)
 * Variant M3U8 niet gevonden. (Variant)
 
-### TRACE_PLAYBACK_PROGRESS records {#trace-playback-progress-records}
+### TRACE_PLAYBACK_PROGRESS-records {#trace-playback-progress-records}
 
-De manifestserver produceert verslagen van dit type wanneer het een signaal over playbackvooruitgang tijdens de server het volgen werkschema ontvangt. De gebieden voorbij `TRACE_PLAYBACK_PROGRESS` verschijnen in de orde die in de lijst wordt getoond, door lusjes wordt gescheiden.
+De manifestserver produceert verslagen van dit type wanneer het een signaal over playbackvooruitgang tijdens de server het volgen werkschema ontvangt. Velden buiten `TRACE_PLAYBACK_PROGRESS` worden weergegeven in de volgorde die in de tabel wordt weergegeven, gescheiden door tabs.
 
 | Veld | Type | Beschrijving |
 |---|---|---|
@@ -310,14 +309,14 @@ De manifestserver produceert verslagen van dit type wanneer het een signaal over
 | pts | integer | PTS-tijd binnen stream |
 | ms_time | integer | Tijd waarop URL voor bijhouden van manifestserver is gegenereerd |
 | url | string | URL omleiden |
-| **The** header_user_agent | string | HTTP User-Agent kopbal |
-| **The** header_dnt | integer | HTTP do-not-track header |
-| **Wat is** effectief_extern_adres | string | IPv4 effectief ver adres |
-| **The** remote_address | string | IPv4-adres op afstand |
+| **voor** header_user_agent | string | HTTP User-Agent kopbal |
+| **voor** header_dnt | integer | HTTP do-not-track header |
+| **voor** effective_remote_address | string | IPv4 effectief ver adres |
+| **voor** remote_address | string | IPv4-adres op afstand |
 
-**De** laatste vier velden zijn optioneel.
+**voor** De laatste vier velden zijn optioneel.
 
-## Meerdere bitsnelheidstreams {#multiple-bitrate-streams}
+## Streams met meerdere bitsnelheden {#multiple-bitrate-streams}
 
 Clientverzoeken om invoeging van een advertentie geven doorgaans meer dan één bitsnelheid op in de afspeellijst met versies die zijn opgemaakt voor de variant M3U8. De manifestserver genereert en retourneert een nieuw M3U8-bestand met een aparte M3U8-koppeling voor elke bitsnelheid. Er wordt ook een unieke groep-id gegenereerd om deze M3U8s aan elkaar te koppelen.
 
@@ -328,22 +327,22 @@ https://manifest.auditude.com/auditude/{live/vod}/{publisherAssetID}/{rendition}
 {groupID}/{base64-encoded url of the bit rate stream}.[m3u8]?{Query parameters}
 ```
 
-* **live/**
-vodDe manifestserver stelt deze waarde in op basis van het afspeellijsttype van de inhoud: Live/lineair (
+* **live/vod**
+De manifestserver plaatst deze waarde die op het playlist type van de inhoud wordt gebaseerd: Live/lineair (
 `#EXT-X-PLAYLIST-TYPE:EVENT`) of VOD (`#EXT-X-PLAYLIST-TYPE:VOD`)
 
-* **De unieke id van de**
-uitgeverAssetIDPublisher voor de specifieke inhoud die in het URL-verzoek van de Bootstrap wordt opgegeven.
+* **publisherAssetID**
+De unieke id van de uitgever voor de specifieke inhoud die in het URL-verzoek van de Bootstrap wordt opgegeven.
 
-* ****
-renditionThe manifestserver plaatst dit gebaseerd op 
+* **uitvoering**
+De manifestserver plaatst dit gebaseerd op 
 `BANDWIDTH` -waarde van de inhoudsstroom en gebruikt deze om de bitsnelheid van de advertentie aan te passen aan de bitsnelheid van de inhoud. De bitsnelheid van de advertentie kan de bitsnelheid van de inhoud alleen overschrijden als de advertentie-uitvoering met de laagste bitsnelheid dit doet.
 
-* ****
-groupIDTthe manifest server genereert deze waarde en gebruikt deze om ervoor te zorgen dat advertenties consistent worden geplaatst, ongeacht voor welke bitsnelheidsuitvoering de client advertenties aanvraagt.
+* **groupID**
+De manifestserver genereert deze waarde en gebruikt deze om ervoor te zorgen dat advertenties consistent worden geplaatst, ongeacht de bitsnelheidsuitvoering die de client vraagt voor advertenties.
 
-* **base64-gecodeerde url van de bitsnelheidstreamDe manifestserver URL-safe base64 codeert de absolute URL van de inhoudsstroom.**
-Elke stream heeft een eigen URL.
+* **base64-gecodeerde url van de bitsnelheidstream**
+De duidelijke server URL-safe base64 codeert de absolute URL van de inhoudsstroom. Elke stream heeft een eigen URL.
 
-* **Parameters**
-voor query-parametersQuery worden opgegeven in de URL-aanvraag voor Bootstrap.
+* **Parameters query**
+De parameters van de vraag die in het Bootstrap URL- verzoek worden verstrekt.

@@ -2,22 +2,21 @@
 title: Overzicht van licentieserver en gecontroleerde mappakketten
 description: Overzicht van licentieserver en gecontroleerde mappakketten
 copied-description: true
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: 1a355068-7ad6-4cc2-8447-49251dae3ff8
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '454'
 ht-degree: 0%
 
 ---
 
-
-# Overzicht van licentieserver en gecontroleerde mapverpakker {#license-server-and-watched-folder-packager-overview}
+# Overzicht van licentieserver en gecontroleerde mappakketten {#license-server-and-watched-folder-packager-overview}
 
 De server van de verwijzings implementatie kan u helpen een vergunningsserver tot stand brengen gebruikend de Adobe Toegang SDK. In deze implementatie worden gebruikers geverifieerd op basis van gebruikersinvoer in een database. De server bevat demonstratie-bedrijfslogica voor het afgeven van licenties. Het voert ook verenigbaarheidssteun voor de Server 1.0 en 1.5 van het Rights Management van de Media van Flash uit.
 
 De referentie-implementatieserver bevat ook een gecontroleerde mapimplementatie van de pakketsoftware. Deze component kan samen met de licentieserver of op een aparte computer worden geïmplementeerd. Met deze pakketimplementatie kunnen meerdere gecontroleerde mappen worden gemaakt. Wanneer inhoud in de gecontroleerde omslag wordt gelaten vallen, verpakt de pakketmanager automatisch de inhoud.
 
-De licentieserver en de packager worden geïmplementeerd als afzonderlijke WAR-bestanden, zodat u kunt kiezen of u deze wilt uitvoeren op afzonderlijke servers of in één Apache Tomcat®-instantie. De licentieserver bevindt zich in de [!DNL flashaccess.war] en de pakketsoftware bevindt zich in [!DNL flashaccess-packager.war]. De optionele [!DNL edcws.war] bevat ondersteuning voor licentieaanvragen van FMRMS 1.x-clients.
+De licentieserver en de packager worden geïmplementeerd als afzonderlijke WAR-bestanden, zodat u kunt kiezen of u deze wilt uitvoeren op afzonderlijke servers of in één Apache Tomcat®-instantie. De licentieserver bevindt zich in de [!DNL flashaccess.war] en de verpakker bevindt zich in [!DNL flashaccess-packager.war]. De optionele [!DNL edcws.war] bevat ondersteuning voor licentieaanvragen van FMRMS 1.x-clients.
 
 De voorbeeldcode van de Reference Implementation demonstreert de volgende functies:
 
@@ -53,4 +52,3 @@ De voorbeeldcode van de Reference Implementation demonstreert de volgende functi
    * Een HSM- of PKCS12-bestand gebruiken om referenties op te slaan
    * Wachtwoorden coderen die zijn opgegeven in eigenschappenbestand
    * Packager configureren, beleid maken en lijsten met beleidsupdates maken met een AIR-toepassing
-

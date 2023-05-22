@@ -1,39 +1,38 @@
 ---
 description: Als u banneradvertenties wilt weergeven, moet u bannerinstanties maken en Browser-TVSDK toestaan te luisteren naar gebeurtenissen met betrekking tot advertenties.
 title: banneradvertenties weergeven
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: 331c10a4-ae31-4d3b-aaca-9497e2970ecf
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '242'
 ht-degree: 0%
 
 ---
 
-
-# banneradvertenties {#display-banner-ads} weergeven
+# banneradvertenties weergeven {#display-banner-ads}
 
 Als u banneradvertenties wilt weergeven, moet u bannerinstanties maken en Browser-TVSDK toestaan te luisteren naar gebeurtenissen met betrekking tot advertenties.
 
-Browser TVSDK biedt een lijst met banneradvertenties die zijn gekoppeld aan een lineaire advertentie via de gebeurtenis `AdobePSDK.PSDKEventType.AD_STARTED`.
+Browser TVSDK biedt een lijst met banneradvertenties die zijn gekoppeld aan een lineaire advertentie via de `AdobePSDK.PSDKEventType.AD_STARTED` gebeurtenis.
 
 Manifests kunnen banneradvertenties voor gezellen specificeren door:
 
 * Een HTML-fragment
 * De URL van een iFrame-pagina
-* De URL van een statische afbeelding of een Adobe Flash-SWF-bestand
+* De URL van een statische afbeelding of een Adobe Flash-SWF van het type
 
 Voor elke bijbehorende advertentie geeft Browser TVSDK aan welke typen beschikbaar zijn voor uw toepassing.
 
-Voeg een listener toe voor de gebeurtenis `AdobePSDK.PSDKEventType.AD_STARTED` die het volgende doet:
+Een listener toevoegen voor de gebeurtenis `AdobePSDK.PSDKEventType.AD_STARTED` dat doet het volgende:
 1. Wist bestaande advertenties in de bannerinstantie.
-1. Haalt de lijst met bijbehorende advertenties op van `Ad.getCompanionAssets`.
+1. Hiermee wordt de lijst met bijbehorende advertenties opgehaald van `Ad.getCompanionAssets`.
 1. Doorloop de lijst voor bannerinstanties als de lijst met bijbehorende advertenties niet leeg is.
 
-   Elke bannerinstantie (een `AdBannerAsset`) bevat informatie, zoals breedte, hoogte, middeltype (html, iframe, of statisch), en gegevens die worden vereist om de bijbehorende banner te tonen.
+   Elke bannerinstantie (een `AdBannerAsset`) bevat informatie, zoals breedte, hoogte, middeltype (html, iframe, of statisch), en gegevens die wordt vereist om de bijbehorende banner te tonen.
 1. Als een video zonder bijbehorende advertenties is geboekt, bevat de lijst met bijbehorende elementen geen gegevens voor die video-advertentie.
 1. Verzendt de bannergegevens naar een functie op de pagina die de banners op een geschikte locatie weergeeft.
 
-   Dit is gewoonlijk een `div`, en uw functie gebruikt `div ID` om de banner te tonen. Bijvoorbeeld:
+   Dit is meestal een `div`en uw functie gebruikt de `div ID` om de banner weer te geven. Bijvoorbeeld:
 
    Voeg de gebeurtenislistener toe:
 
@@ -75,4 +74,3 @@ Voeg een listener toe voor de gebeurtenis `AdobePSDK.PSDKEventType.AD_STARTED` d
        } 
    }
    ```
-

@@ -1,14 +1,13 @@
 ---
 description: Streaming via internet vereist een constante en stabiele verbinding om een stream vanaf een externe server af te spelen. De variabiliteit van de internetverbinding of het afspelen van streaming van een viewer betekent echter dat extern afspelen mogelijk niet de kwaliteit heeft van media die lokaal worden afgespeeld.
 title: Afspelen en failover
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: 8316dfb8-3a2e-4057-a3d7-e3d8860e5bd4
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '451'
 ht-degree: 0%
 
 ---
-
 
 # Afspelen en failover {#playback-and-failover}
 
@@ -22,7 +21,7 @@ Voor live en VOD media, begint Browser TVSDK playback door playlist te downloade
 
 Browser TVSDK selecteert snel de afspeellijst met hoge bitsnelheid en de bijbehorende media en gaat door met het downloaden.
 
-## failover van afspeellijst {#section_81A5822C108449E1A0E94A6E25DE9E8E} ontbreekt
+## failover van afspeellijst ontbreekt {#section_81A5822C108449E1A0E94A6E25DE9E8E}
 
 Wanneer een volledige afspeellijst ontbreekt, bijvoorbeeld, wanneer het M3U8-bestand dat in een manifestbestand op hoofdniveau is opgegeven niet wordt gedownload, probeert Browser-TVSDK te herstellen. Als deze niet kan worden hersteld, bepaalt uw toepassing de volgende stap.
 

@@ -1,14 +1,13 @@
 ---
 description: Met alternatief geluid (late binding) kunt u schakelen tussen beschikbare audiotracks voor een videotrack. Op deze manier kunnen gebruikers een taaltrack selecteren wanneer de video wordt afgespeeld.
 title: Alternatieve audio
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: ce3dbdd3-9cc2-4732-b980-33b091667f70
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '249'
 ht-degree: 0%
 
 ---
-
 
 # Alternatieve audio {#alternate-audio}
 
@@ -16,11 +15,11 @@ Met alternatief geluid (late binding) kunt u schakelen tussen beschikbare audiot
 
 <!--<a id="section_E4F9DC28A2944BD08B4190A7F98A8365"></a>-->
 
-Wanneer TVSDK de `MediaPlayerItem`-instantie voor de huidige video maakt, maakt deze een `AudioTrack`-item voor elke beschikbare audiotrack. Het punt bevat een `name` bezit, een koord dat typisch een user-herkenbare beschrijving van de taal van dat spoor bevat. Het item bevat ook informatie over of die track standaard moet worden gebruikt.
+Als TVSDK de opdracht `MediaPlayerItem` instantie voor de huidige video, wordt een `AudioTrack` item voor elke beschikbare audiotrack. Het item bevat een `name` eigenschap, een tekenreeks die doorgaans een door de gebruiker herkenbare beschrijving van de taal van die track bevat. Het item bevat ook informatie over of die track standaard moet worden gebruikt.
 
 Wanneer het tijd is om de video af te spelen, kunt u om een lijst van beschikbare audiosporen vragen, naar keuze de gebruiker laten kiezen, en de video plaatsen om met het geselecteerde spoor te spelen.
 
-Hoewel het zeldzaam is dat als een extra audiotrack beschikbaar wordt nadat `MediaPlayerItem` is gemaakt, door TVSDK een gebeurtenis `MediaPlayerItem.AUDIO_UPDATED` wordt geactiveerd.
+Als er na het maken van de `MediaPlayerItem`, wordt TVSDK geactiveerd `MediaPlayerItem.AUDIO_UPDATED` gebeurtenis.
 
 ## Toegevoegde API&#39;s {#section_87C42C30BA8C4F58A2DAB7CE07FCD3DE}
 
@@ -28,7 +27,7 @@ De volgende API&#39;s zijn toegevoegd ter ondersteuning van alternatieve audio:
 
 `hasAlternateAudio`
 
-Als de opgegeven media een andere audiotrack heeft dan de standaardtrack, retourneert deze booleaanse functie `true`. Als er geen alternatieve audiotrack is, retourneert de functie `false`.
+Als de opgegeven media een andere audiotrack heeft dan de standaardtrack, wordt deze booleaanse functie geretourneerd `true`. Als er geen alternatieve audiotrack is, wordt de functie geretourneerd `false`.
 
 ```
 bool MediaPlayerItemImpl::hasAlternateAudio() const { 
@@ -87,4 +86,3 @@ PSDKErrorCode MediaPlayerItemImpl::selectAudioTrack(const AudioTrack &audioTrack
     return result; 
 }
 ```
-

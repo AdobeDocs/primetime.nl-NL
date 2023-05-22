@@ -1,14 +1,13 @@
 ---
 description: Streaming via internet vereist een constante en stabiele verbinding om een stream vanaf een externe server af te spelen. De variabiliteit van de internetverbinding of het afspelen van streaming van een viewer betekent echter dat extern afspelen mogelijk niet de kwaliteit heeft van media die lokaal worden afgespeeld.
 title: AC-3 5.1-indeling
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: dcc43c1b-b9ce-44a1-a4c9-50ccfc5d572d
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '514'
 ht-degree: 0%
 
 ---
-
 
 # AC-3 5.1-indeling{#ac-format}
 
@@ -18,11 +17,11 @@ Primetime kan niet tegen dergelijke mislukkingen zoals een ISP stroomonderbrekin
 
 Met de Audio Codec 3 (AC-3, ook bekend als Dolby Digital®) 5.1-indeling kunnen inhoudsproviders de grootte van multikanaalsaudiobestanden comprimeren zonder dat dit de geluidskwaliteit nadelig beïnvloedt. AC-3 is een formaat 5.1, zo betekent het dat het vijf volledig-bandbreedtekanalen voor een rijkere gebruikerservaring verstrekt.
 
-Zie [Dolby Digital 5.1](https://www.dolby.com/us/en/technologies/dolby-digital.html) voor meer informatie.
+Zie voor meer informatie [Dolby Digital 5.1](https://www.dolby.com/us/en/technologies/dolby-digital.html).
 
 >[!IMPORTANT]
 >
->TVSDK versie 1.4 biedt alleen ondersteuning voor de indeling AC-3 5.1 op Amazon FireTV.
+>TVSDK versie 1.4 ondersteunt de indeling AC-3 5.1 alleen op Amazon FireTV.
 
 TVSDK ondersteunt de volgende AC-3 5.1-functies:
 
@@ -56,7 +55,7 @@ Hier is het typische werkschema dat voorkomt wanneer TVSDK manifest met AC-3 en 
 >
 >De toepassing kan geen informatie ophalen over genegeerde profielen.
 
-## De uitvoermodus {#section_64145D9824594C36AADBF0482C528767} bepalen
+## De uitvoermodus bepalen {#section_64145D9824594C36AADBF0482C528767}
 
 Als een Android-apparaat tijdens de verwerking van AC-3-media is aangesloten op het luidsprekersysteem, is de beslissing om inhoud af te spelen in de surround-modus of de stereomodus afhankelijk van de configuratie van het apparaat.
 
@@ -64,4 +63,3 @@ Als een Android-apparaat tijdens de verwerking van AC-3-media is aangesloten op 
 |---|---|---|
 | Apparaatconfiguratie Dolby ingeschakeld (of automatisch) | Apparaatconfiguratie Dolby ingeschakeld (of automatisch) | Stereomodus |
 | Apparaatconfiguratie Dolby uit | Stereomodus | Stereomodus |
-

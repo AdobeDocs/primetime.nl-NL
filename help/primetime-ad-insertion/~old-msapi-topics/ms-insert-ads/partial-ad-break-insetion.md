@@ -1,7 +1,6 @@
 ---
 description: Met de PABI-functie (Partial Ad Break Insertion) bootst u een tv-achtige ervaring na waarin de gebruiker, als hij of zij zich bij een live stream aanmeldt in een mid-roll break, middenroladvertenties in plaats van een pre-roll advertentie of leisteen weergeeft.
 title: Gedeeltelijke invoeging van advertentie-einde
-translation-type: tm+mt
 source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
 source-wordcount: '314'
@@ -10,7 +9,7 @@ ht-degree: 0%
 ---
 
 
-# Onvolledige invoeging van advertentie {#partial-ad-break-insertion}
+# Gedeeltelijke invoeging van advertentie-einde {#partial-ad-break-insertion}
 
 Met de PABI-functie (Partial Ad Break Insertion) bootst u een tv-achtige ervaring na waarin de gebruiker, als hij of zij zich bij een live stream aanmeldt in een mid-roll break, middenroladvertenties in plaats van een pre-roll advertentie of leisteen weergeeft.
 
@@ -24,11 +23,11 @@ De eigenschap PABI instrueert de manifestserver de pre-rol en onderbreking neger
 
 >[!NOTE]
 >
->Om PABI toe te laten, zult u [query_params](/help/primetime-ad-insertion/~old-msapi-topics/ms-getting-started/ms-api-query-params.md) in bootstrap URL moeten specificeren.
+>Om PABI toe te laten, zult u moeten specificeren [query_params](/help/primetime-ad-insertion/~old-msapi-topics/ms-getting-started/ms-api-query-params.md) in de laarzentrekker-URL.
 
 >[!NOTE]
 >
->De [EXT-X-START](https://tools.ietf.org/html/rfc8216#section-4.3.5.2) is een standaard HLS-markering die op een aangewezen uitgangspunt binnen playlist wijst.
+>De [EXT-X-START](https://tools.ietf.org/html/rfc8216#section-4.3.5.2) is een standaard-HLS-tag die een voorkeurspunt in de afspeellijst aangeeft.
 
 ## Recommendations {#section_4CF0733B14504F2A99690310B9F3B130}
 

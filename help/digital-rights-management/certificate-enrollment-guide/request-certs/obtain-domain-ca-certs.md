@@ -2,14 +2,13 @@
 title: Domein CA-certificaten verkrijgen
 description: Domein CA-certificaten verkrijgen
 copied-description: true
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: cad233e0-41f7-4897-ab5f-d5a098c37306
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '115'
 ht-degree: 0%
 
 ---
-
 
 # Domein CA-certificaten verkrijgen{#obtain-domain-ca-certificates}
 
@@ -22,7 +21,7 @@ Het certificaat van MAC van het Domein zou een sleutel met 1024 bits moeten gebr
 
 Met OpenSSL kunt u bijvoorbeeld als volgt een zelfondertekend CA-certificaat genereren:
 
-1. Maak een bestand met de naam [!DNL ca-extensions.txt] dat het volgende bevat:
+1. Een bestand maken met de naam [!DNL ca-extensions.txt] bevattende:
 
    ```
    keyUsage=critical,keyCertSign  
@@ -61,4 +60,3 @@ Met OpenSSL kunt u bijvoorbeeld als volgt een zelfondertekend CA-certificaat gen
    openssl pkcs12 -export -inkey domain-ca.key \ 
    -in domain-ca.cer -out domain-ca.pfx
    ```
-

@@ -1,14 +1,13 @@
 ---
 description: Implementeer de juiste gebeurtenislistener(s) om meldingen over tags in het manifest te ontvangen.
 title: Listeners toevoegen voor meldingen van getimede metagegevens
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: febf354b-2a25-4108-abd9-6ff1e09cee39
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '153'
 ht-degree: 0%
 
 ---
-
 
 # Listeners toevoegen voor meldingen van getimede metagegevens {#add-listeners-for-timed-metadata-notifications}
 
@@ -16,7 +15,7 @@ Implementeer de juiste gebeurtenislistener(s) om meldingen over tags in het mani
 
 U kunt getimede metagegevens controleren door te luisteren naar de volgende gebeurtenissen, die uw toepassing op de hoogte stellen van verwante activiteiten:
 
-* `onTimedMetadata`: Telkens wanneer een unieke geabonneerde tag wordt geïdentificeerd tijdens het parseren van de inhoud, bereidt TVSDK een nieuw  `TimedMetadata` object voor en verzendt deze gebeurtenis.
+* `onTimedMetadata`: Telkens wanneer een unieke geabonneerde tag wordt geïdentificeerd tijdens het parseren van de inhoud, bereidt TVSDK een nieuwe tag voor `TimedMetadata` en verzendt deze gebeurtenis.
 
    Het object bevat de naam van de tag waarop u zich hebt geabonneerd, de lokale tijd tijdens het afspelen waar deze tag wordt weergegeven en andere gegevens.
 
@@ -44,4 +43,4 @@ U kunt getimede metagegevens controleren door te luisteren naar de volgende gebe
    }; 
    ```
 
-ID3-metagegevens gebruiken dezelfde onTimedMetadata-listener om de aanwezigheid van een ID3-tag aan te geven. Dit zou geen verwarring, echter moeten veroorzaken, omdat u `TimedMetadata` bezit van objecten `type` kunt gebruiken om tussen TAG en ID3 te onderscheiden. Zie [ID3-tags](../../../tvsdk-1.4-for-android/notification-system/android-1.4-id3-metadata-retrieve.md) voor meer informatie over ID3-tags.
+ID3-metagegevens gebruiken dezelfde onTimedMetadata-listener om de aanwezigheid van een ID3-tag aan te geven. Dit mag echter geen verwarring veroorzaken, omdat u een `TimedMetadata` object `type` eigenschap om onderscheid te maken tussen TAG en ID3. Voor meer informatie over ID3-tags raadpleegt u [ID3-tags](../../../tvsdk-1.4-for-android/notification-system/android-1.4-id3-metadata-retrieve.md).

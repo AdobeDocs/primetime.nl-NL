@@ -2,16 +2,15 @@
 title: Voorroladvertenties uitschakelen
 description: Voorroladvertenties uitschakelen
 copied-description: true
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: ff52588e-540e-4072-bec0-e531c8cb6fe3
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '43'
 ht-degree: 0%
 
 ---
 
-
-# Voorroladvertenties{#disable-pre-roll-ads} uitschakelen
+# Voorroladvertenties uitschakelen{#disable-pre-roll-ads}
 
 Om pre-rol onbruikbaar te maken, verander de standaardopportuniteitsgenerators om niet de pre-rolvraag te maken. De standaard opportuniteitsgeneratoren zijn:
 
@@ -39,4 +38,3 @@ result.push(new SpliceOutOpportunityGenerator());
 return result; 
 }
 ```
-

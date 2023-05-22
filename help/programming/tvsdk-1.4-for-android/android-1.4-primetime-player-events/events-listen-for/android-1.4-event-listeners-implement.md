@@ -1,22 +1,21 @@
 ---
 description: Met gebeurtenishandlers kan TVSDK reageren op gebeurtenissen.
 title: Gebeurtenislisteners en callbacks implementeren
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: eda5cd4e-4ee8-4b37-a179-242e8697f61f
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '572'
 ht-degree: 0%
 
 ---
 
-
-# Implementeer gebeurtenislisteners en callbacks{#implement-event-listeners-and-callbacks}
+# Gebeurtenislisteners en callbacks implementeren{#implement-event-listeners-and-callbacks}
 
 Met gebeurtenishandlers kan TVSDK reageren op gebeurtenissen.
 
 Wanneer een gebeurtenis voorkomt, roept het gebeurtenismechanisme van TVSDK uw geregistreerde gebeurtenismanager en gaat de gebeurtenisinformatie tot de manager over.
 
-TVSDK definieert listeners als openbare interne interfaces in de `MediaPlayer`-interface.
+TVSDK definieert listeners als openbare interne interfaces in de `MediaPlayer` interface.
 
 Uw toepassing moet gebeurtenislisteners implementeren voor TVSDK-gebeurtenissen die van invloed zijn op uw toepassing.
 
@@ -28,7 +27,7 @@ Zie Core Video Playback bijhouden voor een volledige lijst met gebeurtenissen vo
 
       >[!IMPORTANT]
       >
-      >De playbackgebeurtenis `onStateChanged` verstrekt de spelerstaat, met inbegrip van fouten. Een van de statussen heeft mogelijk invloed op de volgende stap van de speler
+      >De afspeelgebeurtenis `onStateChanged` bevat de status van de speler, inclusief fouten. Een van de statussen heeft mogelijk invloed op de volgende stap van de speler
 
    * **Andere gebeurtenissen**: Optioneel, afhankelijk van uw toepassing.
 
@@ -47,7 +46,7 @@ Zie Core Video Playback bijhouden voor een volledige lijst met gebeurtenissen vo
     MediaPlayer.PlayerState state, MediaPlayerNotification notification)
    ```
 
-1. Registreer uw callback luisteraars met het `MediaPlayer` voorwerp door `MediaPlayer.addEventListener` te gebruiken.
+1. Registreer uw callback luisteraars met `MediaPlayer` object gebruiken `MediaPlayer.addEventListener`.
 
    ```
    mediaPlayer.addEventListener(MediaPlayer.Event.PLAYBACK, 
@@ -65,22 +64,22 @@ TVSDK verzendt gebeurtenissen/meldingen in de over het algemeen verwachte reekse
 
 In de volgende voorbeelden wordt de volgorde van bepaalde gebeurtenissen getoond, waaronder afspeelgebeurtenissen.
 
-* Wanneer het laden van een mediabron via `MediaPlayer.replaceCurrentResource` is voltooid, is de volgorde van gebeurtenissen:
+* Wanneer het laden van een mediabron is voltooid `MediaPlayer.replaceCurrentResource`De volgorde van gebeurtenissen is:
 
-1. `MediaPlayer.PlaybackEventListener.onStateChanged` met status  `MediaPlayer.PlayerState.INITIALIZING`
+1. `MediaPlayer.PlaybackEventListener.onStateChanged` met status `MediaPlayer.PlayerState.INITIALIZING`
 
-1. `MediaPlayer.PlaybackEventListener.onStateChanged` met status  `MediaPlayer.PlayerState.INITIALIZED`
+1. `MediaPlayer.PlaybackEventListener.onStateChanged` met status `MediaPlayer.PlayerState.INITIALIZED`
 
 >[!TIP]
 >
->Laad de mediabron in de hoofdthread. Als u een mediabron laadt in een achtergrondthread, kan deze bewerking of volgende TVSDK-bewerkingen, of beide, een fout veroorzaken (bijvoorbeeld `IllegalStateException`) en afsluiten.
+>Laad de mediabron in de hoofdthread. Als u een mediabron laadt op een achtergrondthread, kan deze bewerking of volgende TVSDK-bewerkingen, of beide, een fout veroorzaken (bijvoorbeeld `IllegalStateException`) en afsluiten.
 
-* Bij het voorbereiden op afspelen via `MediaPlayer.prepareToPlay` is de volgorde van gebeurtenissen:
+* Wanneer u het afspelen voorbereidt via `MediaPlayer.prepareToPlay`De volgorde van gebeurtenissen is:
 
-1. `MediaPlayer.PlaybackEventListener.onStateChanged` met status  `MediaPlayerStatus.PREPARING`
+1. `MediaPlayer.PlaybackEventListener.onStateChanged` met status `MediaPlayerStatus.PREPARING`
 
 1. `MediaPlayer.PlaybackEventListener.onTimelineUpdated` als er advertenties zijn ingevoegd.
-1. `MediaPlayer.PlaybackEventListener.onStateChanged` met status  `MediaPlayerStatus.PREPARED`
+1. `MediaPlayer.PlaybackEventListener.onStateChanged` met status `MediaPlayerStatus.PREPARED`
 
 * Voor live/lineaire streams, tijdens het afspelen terwijl het afspeelvenster vordert en er extra mogelijkheden worden opgelost, is de volgorde van gebeurtenissen:
 
@@ -110,7 +109,7 @@ mediaPlayer.addEventListener(MediaPlayer.Event.PLAYBACK,
 });
 ```
 
-## Volgorde van advertentiegebeurtenissen {#section_7B3BE3BD3B6F4CF69D81F9CFAC24CAD5}
+## Volgorde van reclameevenementen {#section_7B3BE3BD3B6F4CF69D81F9CFAC24CAD5}
 
 Wanneer uw afspelen advertenties bevat, verzendt TVSDK gebeurtenissen/meldingen in de over het algemeen verwachte reeksen. De speler kan handelingen implementeren op basis van gebeurtenissen in de verwachte volgorde.
 
@@ -209,7 +208,7 @@ mediaPlayer.addEventListener(MediaPlayer.Event.QOS,
 
 TVSDK verzendt DRM-gebeurtenissen (Digital Rights Management) als reactie op DRM-gerelateerde bewerkingen, zoals wanneer nieuwe DRM-metagegevens beschikbaar komen. Uw speler kan als reactie op deze gebeurtenissen acties implementeren.
 
-Luister naar `onDRMMetadata(DRMMetadataInfo drmMetadataInfo)` als u een melding wilt ontvangen over alle DRM-gerelateerde gebeurtenissen. TVSDK verzendt extra DRM-gebeurtenissen via de klasse `DRMManager`.
+Als u op de hoogte wilt worden gesteld van alle DRM-gerelateerde gebeurtenissen, luistert u naar `onDRMMetadata(DRMMetadataInfo drmMetadataInfo)`. TVSDK verzendt aanvullende DRM-gebeurtenissen via de `DRMManager` klasse.
 
 In het volgende voorbeeld wordt een gemiddelde progressie getoond:
 
@@ -229,4 +228,3 @@ Uw speler kan handelingen implementeren op basis van de volgende gebeurtenissen:
 |---|---|
 | `onLoadComplete (mediaPlayerItem playerItem)` | Het laden van mediabronnen is voltooid. |
 | `onError` | Er is een probleem opgetreden bij het laden van mediabronnen. |
-

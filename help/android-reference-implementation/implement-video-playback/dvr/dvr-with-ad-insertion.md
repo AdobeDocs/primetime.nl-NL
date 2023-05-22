@@ -1,14 +1,13 @@
 ---
 description: Een live stream met ondersteuning voor DVR stelt standaard een doorzoekbaar bereik beschikbaar waarin de viewer kan pauzeren en zoeken.
 title: DVR met ad-invoeging
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: 3471741d-1ae3-4cbe-aa35-4e333aeb83c6
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '73'
 ht-degree: 0%
 
 ---
-
 
 # DVR met ad-invoeging {#dvr-with-ad-insertion}
 

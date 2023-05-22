@@ -1,13 +1,13 @@
 ---
 title: Verificatie met het OAuth 2.0-protocol
 description: Verificatie met het OAuth 2.0-protocol
-source-git-commit: 326f97d058646795cab5d062fa5b980235f7da37
+exl-id: 0c1f04fe-51dc-4b4d-88e7-66e8f4609e02
+source-git-commit: bfc3ba55c99daba561255760baf273b6538a3c6e
 workflow-type: tm+mt
 source-wordcount: '1074'
 ht-degree: 0%
 
 ---
-
 
 # Verificatie met het OAuth 2.0-protocol
 
@@ -111,4 +111,3 @@ Vanuit technisch oogpunt:
 1. De gebruikers reeds voor authentiek verklaard, die reeds een lokaal teken AuthN hebben dat onderwerpidentiteitskaart van SAML bevat, zullen automatisch door Adobe door de integratie van SAML worden verpletterd.
 1. Voor de gebruikers in stap 3, zodra hun SAML geproduceerde teken AuthN verloopt, zal Adobe hen behandelen als nieuwe gebruikers en gedraagt zich als de gebruikers in stap 2.
 1. Adobe zal de gebruikspatronen evalueren om te bepalen wanneer de integratie van SAML veilig kan worden gedeactiveerd.
-

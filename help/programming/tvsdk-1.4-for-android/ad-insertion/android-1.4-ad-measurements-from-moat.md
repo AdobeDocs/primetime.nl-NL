@@ -1,22 +1,21 @@
 ---
-description: TVSDK neemt informatie van FreeWheel en andere advertentieservers die VAST-reacties leveren. FreeWheel verstrekt, binnen VAST reacties, informatie van de dienst van de Moat. De Maat-service telt en impressies met een nauwkeurigheid die beter laat zien of creatieve personen de belangen van een publiek vastleggen of negeren.
+description: TVSDK neemt informatie van FreeWheel en andere advertentieservers die VAST-reacties leveren. FreeWheel verstrekt, binnen VAST reacties, informatie van de dienst van de Moat. De Maat-service telt en impressies met een nauwkeurigheid die beter laat zien of creatieve mensen de belangen van een publiek vastleggen of negeren.
 title: Metingen toevoegen van mat
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: 7ce1a495-a88f-4c96-90b1-1d30933b3dcf
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '238'
 ht-degree: 0%
 
 ---
 
+# Metingen toevoegen van mat{#ad-measurements-from-moat}
 
-# Metingen toevoegen uit moat{#ad-measurements-from-moat}
-
-TVSDK neemt informatie van FreeWheel en andere advertentieservers die VAST-reacties leveren. FreeWheel verstrekt, binnen VAST reacties, informatie van de dienst van de Moat. De Maat-service telt en impressies met een nauwkeurigheid die beter laat zien of creatieve personen de belangen van een publiek vastleggen of negeren.
+TVSDK neemt informatie van FreeWheel en andere advertentieservers die VAST-reacties leveren. FreeWheel verstrekt, binnen VAST reacties, informatie van de dienst van de Moat. De Maat-service telt en impressies met een nauwkeurigheid die beter laat zien of creatieve mensen de belangen van een publiek vastleggen of negeren.
 
 Maat is een service voor het meten en weergeven van vele toepassingen, van browsers tot toepassingen. Met de indeling Mat worden in real-time analytische gegevens voor marketingdoeleinden gegenereerd voor verschillende platforms.
 
-De VAST reactie XML heeft een bezit en een element uw code kan lezen, buitenste `Ad id` bezit en buitenste `Extension` element. Hoe dan ook, uw code kan TVSDK gebruiken om zowel de `Ad id` informatie als de `Extension` informatie op te slaan, dan de informatie in een boomstructuur te organiseren. Met deze organisatie, kan uw code de gegevens van om het even welk niveau ophalen en het overgaan tot waar het moet gaan. De waarde van het buitenste `Ad id` bezit laat uw code toe om informatie van de bijbehorende campagne te coördineren.
+De VAST reactie XML heeft een bezit en een element uw code kan lezen, buitenste `Ad id` eigendommen en de buitenwereld `Extension` element. In beide gevallen kan uw code gebruikmaken van TVSDK om beide `Ad id` informatie en `Extension` en ordent de informatie vervolgens in een boomstructuur. Met deze organisatie, kan uw code de gegevens van om het even welk niveau ophalen en het overgaan tot waar het moet gaan. De waarde van de buitenste `Ad id` de eigenschap laat uw code toe om informatie van de bijbehorende campagne te coördineren.
 
 FreeWheel kan bijvoorbeeld gegevens in een Extensions-element retourneren. Hieronder ziet u een voorbeeldelement.
 
@@ -36,7 +35,7 @@ FreeWheel kan bijvoorbeeld gegevens in een Extensions-element retourneren. Hiero
 </Extensions> 
 ```
 
-Met Freewiel kunt u ook de eigenschap `id` in het element `Ad` instellen, zoals in het onderstaande voorbeeld wordt getoond.
+Het vastlopen kan ook de `id` eigenschap in de `Ad` -element, zoals in het onderstaande voorbeeld wordt getoond.
 
 ```xml
 <Ad id="118566" sequence="1">

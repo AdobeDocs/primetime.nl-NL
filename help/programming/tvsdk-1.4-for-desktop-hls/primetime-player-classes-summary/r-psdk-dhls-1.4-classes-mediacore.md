@@ -1,20 +1,19 @@
 ---
 description: U kunt de API voor primetime Player gebruiken om het gedrag van de speler aan te passen. Deze klassen beschrijven uw mediaspeler en de bijbehorende bron.
 title: Mediacore-klassen
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: 8948484d-a48d-49b4-ac11-b68f1abaf706
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '667'
 ht-degree: 0%
 
 ---
 
-
 # Mediacore-klassen{#mediacore-classes}
 
 U kunt de API voor primetime Player gebruiken om het gedrag van de speler aan te passen. Deze klassen beschrijven uw mediaspeler en de bijbehorende bron.
 
-Als u de volledige API-documentatie voor TVSDK wilt bekijken, gaat u naar de [Adobe Primetime API-referenties](https://help.adobe.com/en_US/primetime/api/index.html).
+Ga naar de [Adobe Primetime API-verwijzingen](https://help.adobe.com/en_US/primetime/api/index.html).
 
 Deze klassen beschrijven uw mediaspeler en de bijbehorende bronnen.
 Pakket: [com.adobe.mediacore](https://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls_1.4/com/adobe/mediacore/package-detail.html)
@@ -53,11 +52,11 @@ Pakket: [com.adobe.mediacore](https://help.adobe.com/en_US/primetime/api/psdk/as
   </tr> 
   <tr rowsep="1"> 
    <td colname="1"><span class="codeph"><a href="https://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls_1.4/com/adobe/mediacore/DefaultContentFactory.html" format="html" scope="external"> DefaultContentFactory</a></span> </td> 
-   <td colname="2">De standaardimplementatie van <span class="codeph"> MediaPlayerClient</span> fabriek die steun zowel voor Meta-gegevens als het proces van het het oplossen van van advertenties verleent. </td> 
+   <td colname="2">Standaardimplementatie van <span class="codeph"> MediaPlayerClient</span> -fabriek die ondersteuning biedt voor zowel metagegevens als het proces voor het oplossen van problemen. </td> 
   </tr> 
   <tr rowsep="1"> 
    <td colname="1"><span class="codeph"><a href="https://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls_1.4/com/adobe/mediacore/DefaultMediaPlayer.html" format="html" scope="external"> DefaultMediaPlayer</a></span> </td> 
-   <td colname="2">Standaardklasseimplementatie van <span class="codeph"> MediaPlayer</span>-interface. </td> 
+   <td colname="2">Standaardimplementatie van <span class="codeph"> MediaPlayer</span> interface. </td> 
   </tr> 
   <tr rowsep="1"> 
    <td colname="1"><span class="codeph"><a href="https://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls_1.4/com/adobe/mediacore/DefaultMediaPlayerConfig.html" format="html" scope="external"> DefaultMediaPlayerConfig</a> </span> </td> 
@@ -73,7 +72,7 @@ Pakket: [com.adobe.mediacore](https://help.adobe.com/en_US/primetime/api/psdk/as
   </tr> 
   <tr rowsep="1"> 
    <td colname="1"><span class="codeph"><a href="https://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls_1.4/com/adobe/mediacore/MediaPlayer.html" format="html" scope="external"> MediaPlayer</a></span> </td> 
-   <td colname="2">Openbare interface voor de klasse <span class="codeph"> DefaultMediaPlayer</span>. Omvat opsommingen voor Gebeurtenis, PlayerState, en Zichtbaarheid. </td> 
+   <td colname="2">Openbare interface voor de <span class="codeph"> DefaultMediaPlayer</span> klasse. Omvat opsommingen voor Gebeurtenis, PlayerState, en Zichtbaarheid. </td> 
   </tr> 
   <tr rowsep="1"> 
    <td colname="1"><span class="codeph"><a href="https://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls_1.4/com/adobe/mediacore/MediaPlayerConfig.html" format="html" scope="external"> MediaPlayerConfig</a> </span> </td> 
@@ -93,7 +92,7 @@ Pakket: [com.adobe.mediacore](https://help.adobe.com/en_US/primetime/api/psdk/as
   </tr> 
   <tr rowsep="1"> 
    <td colname="1"><span class="codeph"><a href="https://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls_1.4/com/adobe/mediacore/MediaPlayerItemLoader.html" format="html" scope="external"> MediaPlayerItemLoader</a></span> </td> 
-   <td colname="2">Klasse die een mediaspeler laadt en het bijbehorende <span class="codeph"> MediaPlayerItem</span>-object maakt. </td> 
+   <td colname="2">Klasse die een mediaspeler laadt en de bijbehorende klasse maakt <span class="codeph"> MediaPlayerItem</span> object. </td> 
   </tr> 
   <tr rowsep="1"> 
    <td colname="1"><span class="codeph"><a href="https://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls_1.4/com/adobe/mediacore/MediaPlayerStatus.html" format="html" scope="external"> MediaPlayerStatus</a></span> </td> 
@@ -101,7 +100,7 @@ Pakket: [com.adobe.mediacore](https://help.adobe.com/en_US/primetime/api/psdk/as
   </tr> 
   <tr rowsep="1"> 
    <td colname="1"><span class="codeph"><a href="https://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls_1.4/com/adobe/mediacore/MediaPlayerView.html" format="html" scope="external"> MediaPlayerView</a></span> </td> 
-   <td colname="2">Klasse voor de mening die door <span class="codeph"> MediaPlayer</span> voor videorendering zal worden gebruikt. </td> 
+   <td colname="2">Klasse voor de weergave die wordt gebruikt door de <span class="codeph"> MediaPlayer</span> voor het renderen van video. </td> 
   </tr> 
   <tr rowsep="1"> 
    <td colname="1"><span class="codeph"><a href="https://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls_1.4/com/adobe/mediacore/MediaResource.html" format="html" scope="external"> MediaResource</a></span> </td> 
@@ -125,4 +124,3 @@ Pakket: [com.adobe.mediacore](https://help.adobe.com/en_US/primetime/api/psdk/as
   </tr> 
  </tbody> 
 </table>
-

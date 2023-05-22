@@ -1,7 +1,8 @@
 ---
 title: Verbeterde foutcodes
 description: Verbeterde foutcodes
-source-git-commit: 326f97d058646795cab5d062fa5b980235f7da37
+exl-id: 2b0a9095-206b-4dc7-ab9e-e34abf4d359c
+source-git-commit: bfc3ba55c99daba561255760baf273b6538a3c6e
 workflow-type: tm+mt
 source-wordcount: '2356'
 ht-degree: 2%
@@ -142,4 +143,3 @@ In de onderstaande tabel met fouten worden de mogelijke foutcodes, de bijbehoren
 |  | *maximum_execute_time_over* | 403 | De aanvraag is niet binnen de maximaal toegestane tijd voltooid. Het opnieuw proberen van het verzoek zou de kwestie kunnen oplossen. |
 | retry-after | *te_many_Requests* | 429 | Er zijn te veel verzoeken verzonden binnen een bepaald interval. De toepassing kan het verzoek na de voorgestelde periode opnieuw proberen. |
 |  | *user_rate_limit_over* | 429 | Een bepaalde gebruiker heeft binnen een bepaald interval te veel aanvragen ingediend. De toepassing kan het verzoek na de voorgestelde periode opnieuw proberen. |
-

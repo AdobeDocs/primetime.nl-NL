@@ -1,14 +1,13 @@
 ---
 description: U kunt luisteren naar meldingen en u kunt uw eigen meldingen toevoegen aan de berichtgeschiedenis.
 title: Uw meldingssysteem instellen
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: da6cec2d-8488-4f61-881b-72999ece650c
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '118'
 ht-degree: 0%
 
 ---
-
 
 # Uw meldingssysteem instellen{#set-up-your-notification-system}
 
@@ -16,7 +15,7 @@ U kunt luisteren naar meldingen en u kunt uw eigen meldingen toevoegen aan de be
 
 De kern van het Primetime Player-meldingssysteem is de klasse Notification, die een standalone melding vertegenwoordigt.
 
-De klasse NotificationHistory biedt een mechanisme voor het verzamelen van meldingen. Er wordt een logboek met meldingsobjecten ( `NotificationHistoryItem`) opgeslagen dat een verzameling meldingen vertegenwoordigt.
+De klasse NotificationHistory biedt een mechanisme voor het verzamelen van meldingen. Het slaat een logboek van bericht op ( `NotificationHistoryItem`) objecten die een verzameling meldingen vertegenwoordigen.
 
 Om meldingen te ontvangen:
 
@@ -24,9 +23,8 @@ Om meldingen te ontvangen:
 * Meldingen toevoegen aan de berichtgeschiedenis
 
 1. Luisteren naar statuswijzigingen.
-1. Implementeer de gebeurtenislistener `MediaPlayer.StatusChangeEvent.STATUS_CHANGED`.
-1. TVSDK geeft een `MediaPlayer.StatusChangeEvent`-instantie door aan de gebeurtenislistener, die twee parameters bevat:
+1. Implementeer de `MediaPlayer.StatusChangeEvent.STATUS_CHANGED` gebeurtenislistener.
+1. TVSDK geeft een `MediaPlayer.StatusChangeEvent` -instantie aan de gebeurtenislistener, die twee parameters bevat:
 
-   * De nieuwe status ( `MediaPlayer.Status`)
-   * Een object `MediaPlayerNotification`
-
+   * De nieuwe staat ( `MediaPlayer.Status`)
+   * A `MediaPlayerNotification` object

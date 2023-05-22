@@ -1,16 +1,15 @@
 ---
 description: TVSDK voegt de alternatieve inhoud (advertenties) in de tijdlijn in die overeenkomt met de hoofdinhoud.
 title: Ad-invoegfase
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: bad246e9-ff2b-4584-a320-826385bb0e6d
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '217'
 ht-degree: 0%
 
 ---
 
-
-# Advertentiefase{#ad-insertion-phase}
+# Ad-invoegfase{#ad-insertion-phase}
 
 TVSDK voegt de alternatieve inhoud (advertenties) in de tijdlijn in die overeenkomt met de hoofdinhoud.
 

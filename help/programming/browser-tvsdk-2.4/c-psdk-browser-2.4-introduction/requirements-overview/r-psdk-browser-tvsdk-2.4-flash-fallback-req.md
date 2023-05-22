@@ -1,16 +1,15 @@
 ---
 description: Om Flash Player te gebruiken, zorg ervoor dat uw milieu aan de noodzakelijke vereisten voldoet.
 title: Flash Player-eisen
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: 26531d0d-d34c-4134-8a05-0604f00a3107
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '142'
-ht-degree: 1%
+ht-degree: 0%
 
 ---
 
-
-# Flash Player-vereisten{#flash-player-requirements}
+# Flash Player-eisen{#flash-player-requirements}
 
 Om Flash Player te gebruiken, zorg ervoor dat uw milieu aan de noodzakelijke vereisten voldoet.
 
@@ -18,17 +17,17 @@ Om Flash Player te gebruiken, zorg ervoor dat uw milieu aan de noodzakelijke ver
 
 Hier volgen de eisen voor de Flash Player:
 
-* Als u wilt afspelen met `Primetime.js`, moet u minstens Flash Player versie 23 installeren.
+* Afspelen met `Primetime.js`minimaal Flash Player versie 23 installeren.
 * Installeer ten minste Flash Player versie 11.0.0 als u wilt worden gevraagd om updates naar Flash Player versie 23 of hoger.
 
-## Verpakkingsvereisten {#section_F95FC1FEEFEA44D28C9596D2F359AFC7}
+## Verpakkingsvoorschriften {#section_F95FC1FEEFEA44D28C9596D2F359AFC7}
 
 Voor afspelen met Flash Player zijn de volgende SWF-bestanden vereist:
 
-* Het SWF-hoofdbestand van de toepassing dat Browser-TVSDK-API&#39;s afhandelt.
-* Het SWF-bestand `playerProductInstall.swf` dat de installatie en updates van Flash Player afhandelt.
+* Het SWF-hoofdbestand van de toepassing dat Browser TVSDK API&#39;s verwerkt.
+* De `playerProductInstall.swf` SWF-bestand dat Flash Player-installatie en -updates afhandelt.
 
-Daarnaast is voor het afspelen van video in Flash een machtigingstoken-bestand nodig dat een SWF- of `.DAT`-bestand kan zijn. Het pad naar de SWF-bestanden, het machtigingstoken-bestand en de naam en het type van het tokenbestand kunnen worden opgegeven met de AdobePSDK-API&#39;s.
+Daarnaast is voor het afspelen van video in Flash een machtigingstoken-bestand vereist dat een SWF of een `.DAT` bestand. U kunt het pad naar de SWF-bestanden, het machtigingstoken-bestand en de naam en het type van het tokenbestand opgeven met de AdobePSDK-API&#39;s.
 
 Bijvoorbeeld:
 
@@ -47,4 +46,3 @@ AdobePSDK.setAuthorizationTokenFilename("hlsaf_localhost.swf");
 //Set the token type, "DAT" or "SWF". Defaults to "DAT" 
 AdobePSDK.setAuthorizationTokenType("SWF");
 ```
-

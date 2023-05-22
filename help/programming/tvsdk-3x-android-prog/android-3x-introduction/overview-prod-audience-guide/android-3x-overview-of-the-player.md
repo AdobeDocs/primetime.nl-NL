@@ -1,16 +1,15 @@
 ---
 description: TVSDK voor Android 3.4 bevat diverse functies die u kunt implementeren in uw spelers.
 title: Functies van Primetime TVSDK
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: 85c41c57-f7a7-49aa-9118-a418f27838e4
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '240'
 ht-degree: 0%
 
 ---
 
-
-# Premimetime-TVSDK-functies {#primetime-tvsdk-features}
+# Functies van Primetime TVSDK {#primetime-tvsdk-features}
 
 TVSDK voor Android 3.9 bevat diverse functies die u kunt implementeren in uw spelers.
 
@@ -22,7 +21,7 @@ TVSDK-mogelijkheden:
    * Ondersteuning voor volledig afspelen van gebeurtenissen
    * Ondertiteling (608, 708, WebVTT) en alternatieve vormen van audio voor verhoogde toegankelijkheid
    * Besturingselementen voor tekstopmaak in bijschriften
-   * DVR-mogelijkheid, snel vooruit en snel terugspoelen (de laatste twee zijn ook bekend als *truc-play modus*)
+   * DVR-mogelijkheid, snel vooruit en snel terugspoelen (de laatste twee worden ook wel *truc-afspeelmodus*)
    * Adaptive bit rate (ABR) logica en eerste instelling van ABR-besturingselementen
    * Ondersteuning voor failover van Live manifest
    * Aanpasbare afspeelbuffers

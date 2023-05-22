@@ -1,13 +1,13 @@
 ---
 title: Preflight-functie, Hoe kan ik het probleem inschakelen, oplossen of bepalen
 description: Preflight-functie, Hoe kan ik het probleem inschakelen, oplossen of bepalen
-source-git-commit: 326f97d058646795cab5d062fa5b980235f7da37
+exl-id: 9e4ec343-371f-4116-915f-191e5f42cb47
+source-git-commit: bfc3ba55c99daba561255760baf273b6538a3c6e
 workflow-type: tm+mt
 source-wordcount: '495'
 ht-degree: 0%
 
 ---
-
 
 # Preflight-functie: Hoe te, los of bepaal de kwestie toe te laten problemen op {#preflight-feature}
 
@@ -39,4 +39,3 @@ Dit zijn dingen die moeten worden gezocht wanneer het toelaten/het oplossen van 
 **Beperking**
 
 Merk op dat wij geen resourceID terug van de Preflight vraag voor sommige MVPDs zoals AT&amp;T &amp; TWC krijgen als om het even welke resourceIDs vals identiteitskaart of een niet erkende identiteitskaart in de lijst van resourceIDs is die zij in de preflight vraag verzenden hoewel wij geldige &amp; gemachtigde middelen in die lijst ook hebben.
-

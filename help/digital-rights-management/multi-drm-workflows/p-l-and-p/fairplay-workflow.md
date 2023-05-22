@@ -1,39 +1,38 @@
 ---
 description: De DRM-workflows omvatten het verpakken van uw inhoud, het verstrekken van licenties voor de inhoud en het afspelen van de beveiligde inhoud vanuit uw eigen videotoepassing. De workflow is over het algemeen vergelijkbaar voor elke DRM-oplossing, maar met enkele verschillen zijn de details.
 title: Multi-DRM-workflow voor FairPlay
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: a66cecda-762b-48f7-afed-6fef6303d169
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '1470'
 ht-degree: 0%
 
 ---
 
-
 # Multi-DRM-workflow voor FairPlay {#multi-drm-workflow-for-fairplay}
 
 De DRM-workflows omvatten het verpakken van uw inhoud, het verstrekken van licenties voor de inhoud en het afspelen van de beveiligde inhoud vanuit uw eigen videotoepassing. De workflow is over het algemeen vergelijkbaar voor elke DRM-oplossing, maar met enkele verschillen zijn de details.
 
-Deze workflow voor multi-DRM begeleidt u door het instellen, verpakken, licentiëren en afspelen van HLS-inhoud die is beveiligd met Apple FairPlay. Deze workflow bevat ook optionele instructies voor het implementeren van offline afspelen en het roteren van licenties.
+Deze workflow met Multi-DRM begeleidt u door het instellen, verpakken, licentiëren en afspelen van HLS-inhoud die is beveiligd met Apple FairPlay. Deze workflow bevat ook optionele instructies voor het implementeren van offline afspelen en het roteren van licenties.
 
 ## ExpressPlay-service inschakelen voor FairPlay {#enable-expressplay-service-for-fairplay}
 
-De FairPlay DRM-oplossing van Apple vereist enige instelling wanneer u deze gebruikt met de ExpressPlay DRM-services. Dit betekent dat u referenties van Apple opgeeft en deze uploadt naar ExpressPlay.
+De FairPlay DRM-oplossing van Apple vereist enige configuratie wanneer u deze gebruikt met de ExpressPlay DRM-services. Dit betekent dat u gebruikersgegevens van Apple moet ophalen en uploaden naar ExpressPlay.
 
 Voer de volgende stappen uit om de ExpressPlay-service voor de bescherming van FairPlay-inhoud in te schakelen.
 
-1. Verkrijg referenties van Apple.
+1. Verkrijg gegevens van Apple.
 
    Deze geloofsbrieven worden verstrekt uniek aan elke dienstverlener. U moet deze aanvragen door het volgende formulier in te vullen: [https://developer.apple.com/contact/fps/](https://developer.apple.com/contact/fps/).
 
    >[!NOTE]
    >
-   >Selecteer **[!UICONTROL Content Provider]** voor primaire rol.
+   >Selecteren **[!UICONTROL Content Provider]** voor primaire rol.
 
-   Zodra uw verzoek is goedgekeurd, stuurt Apple u een *FairPlay Streaming Deployment Package*.
+   Zodra je aanvraag is goedgekeurd, stuurt Apple je een *Implementatiepakket voor FairPlay-streaming*.
 1. Genereer een certificaataanvraag.
 
-   U kunt [!DNL openssl] gebruiken om uw openbaar/privé zeer belangrijk paar, en uw certificaat te produceren ondertekende verzoek (CSR).
+   U kunt [!DNL openssl] om uw openbare/privé zeer belangrijke paar, en uw certificaat ondertekende verzoek (CSR) te produceren.
 
    1. Genereer uw sleutelpaar.
 
@@ -50,19 +49,19 @@ Voer de volgende stappen uit om de ExpressPlay-service voor de bescherming van F
 
       >[!NOTE]
       >
-      >De instructies voor deze stap bevinden zich in uw *FairPlay Streaming-implementatiepakket*, maar worden hier voor uw gemak opgenomen. Als u problemen hebt met dit onderdeel van het proces, controleert u de instructies in *FairPlayCertificateCreation.pdf* (in uw implementatiepakket).
+      >De instructies voor deze stap staan in uw *Implementatiepakket voor FairPlay-streaming*, maar worden hier voor uw gemak opgenomen. Als u problemen hebt met dit onderdeel van het proces, raadpleegt u de instructies in *FairPlayCertificateCreation.pdf* (in uw implementatiepakket).
 
 1. Upload uw CSR via de Apple Developer Portal.
    1. De Agent van het Team voor uw ontwikkelingsteam moet login [!DNL developer.apple.com/account].
-   1. Klik op **[!UICONTROL Certificates, Identifiers & Profiles]**, selecteer dan **[!UICONTROL iOS, tvOS, watchOS]** drop-down op de hogere linkerzijde van de pagina, dan klik op **[!UICONTROL Certificates->Production]** op de linkerzijde van de pagina.
-   1. Klik op de knop **[!UICONTROL +]** rechtsboven op de pagina om een nieuw certificaat aan te vragen. Selecteer de optie **[!UICONTROL FairPlay Streaming Certificate]** onder **[!UICONTROL Production]**.
+   1. Klikken op **[!UICONTROL Certificates, Identifiers & Profiles]** Selecteer vervolgens de **[!UICONTROL iOS, tvOS, watchOS]** vervolgkeuzelijst linksboven op de pagina en klik vervolgens op **[!UICONTROL Certificates->Production]** links op de pagina.
+   1. Klik op de knop **[!UICONTROL +]** rechtsboven op de pagina om een nieuw certificaat aan te vragen. Selecteer **[!UICONTROL FairPlay Streaming Certificate]** optie onder **[!UICONTROL Production]**.
 
-      Het dialoogvenster *iOS-certificaat toevoegen* wordt geopend.
-   1. Upload in *iOS-certificaat toevoegen* het CSR-bestand dat u hebt gegenereerd in Stap 2.b. en klik op **[!UICONTROL Generate]**.
+      De *iOS-certificaat toevoegen* wordt geopend.
+   1. In de *iOS-certificaat toevoegen*, uploadt u het CSR-bestand dat u in Stap 2.b hebt gegenereerd en klikt u op **[!UICONTROL Generate]**.
 
       Uw Sleutel van het Geheime van de Toepassing (ASK) wordt getoond in de zelfde dialoog.
    1. Noteer uw ASK en bewaar deze op een veilige plaats.
-   1. Sleutel in uw ASK om certificaatgeneratie te voltooien en **[!UICONTROL Continue]** te klikken.
+   1. Sleutel in uw ASK om certificaatgeneratie te voltooien en klik **[!UICONTROL Continue]**.
    1. Nadat u hebt geverifieerd dat u de ASK hebt opgeslagen, klikt u op **[!UICONTROL Generate]** om door te gaan.
 
       >[!NOTE]
@@ -74,17 +73,17 @@ Voer de volgende stappen uit om de ExpressPlay-service voor de bescherming van F
       Sla een reservekopie van uw persoonlijke sleutel (uit stap 2.a.) en uw openbare sleutel (het FPS-certificaat dat u in deze stap hebt gedownload) op een veilige plaats op.
 1. Stel uw ExpressPlay-account in met uw FairPlay-referenties.
    1. Stel de certificaatnaam die u in Stap 3.h hebt gedownload. is [!DNL fairplay.cer].
-   1. Open het [!DNL fairplay.cer]-bestand met het hulpprogramma Apple Keychain Access.
-   1. Filter uw vele certificaten door &quot; `fairplay`&quot;in het onderzoeksgebied in te gaan dat op het hoogste recht wordt gevestigd.
+   1. Open de [!DNL fairplay.cer] bestand met het Apple Keychain Access-hulpprogramma.
+   1. Filter uw vele certificaten door &quot; `fairplay`&quot; in het zoekveld rechtsboven.
    1. Identificeer het FairPlay-certificaat van uw bedrijf.
 
-      Uw bedrijfsnaam moet zijn gekoppeld aan het door Apple uitgegeven certificaat.
+      Uw bedrijfsnaam moet zijn gekoppeld aan het certificaat dat door Apple is uitgegeven.
    1. Vouw het certificaat uit door de pijl uitvouwen te selecteren en met de rechtermuisknop op de persoonlijke sleutel te klikken.
-   1. Selecteer **[!UICONTROL Export "Your Company Name"]** en sla het [!DNL .p12] dossier op.
+   1. Selecteren **[!UICONTROL Export "Your Company Name"]** en sla de [!DNL .p12] bestand.
 
       U wordt gevraagd een wachtwoord toe te wijzen om dit bestand te beveiligen. Noteer dit wachtwoord omdat u dit samen met het aanmeldingspakket moet verzenden.
-   1. Meld u aan bij uw account op [www.expressplay.com](https://www.expressplay.com).
-   1. Klik **[!UICONTROL DRM SERVICES]** op de hogere linkerzijde, dan selecteer **[!UICONTROL FairPlay]** tabel.
+   1. Aanmelden bij uw account op [www.expressplay.com](https://www.expressplay.com).
+   1. Klikken **[!UICONTROL DRM SERVICES]** in de linkerbovenhoek selecteert u vervolgens de **[!UICONTROL FairPlay]** tab.
    1. Upload uw FairPlay-referenties naar uw ExpressPlay-account.
 
       1. Maak een tekstbestand dat de waarde van de ASK bevat (dit moet 32 tekens zijn, bijvoorbeeld: `1234567890abcdef1234567890abcdef`) en selecteer dit bestand om te uploaden.
@@ -92,7 +91,7 @@ Voer de volgende stappen uit om de ExpressPlay-service voor de bescherming van F
       1. Voer het PKCS12-bestandswachtwoord uit stap 4.f in.
       1. Klik op de knop Uploaden.
 
-Nu kunt u iOS-toepassingen of HTML5-pagina&#39;s maken met FairPlay-inhoudsbeveiliging en uw [!DNL fairplay.cer]-certificaat met behulp van de ExpressPlay-service voor FairPlay.
+Nu kunt u iOS-toepassingen of HTML5-pagina&#39;s maken met de beveiliging van FairPlay-inhoud, samen met uw [!DNL fairplay.cer] certificaat met de ExpressPlay-service voor FairPlay.
 
 <!--<a id="fig_sjr_2pn_sv"></a>-->
 
@@ -113,7 +112,7 @@ Pakketten bereiden de video voor op afspelen (bijvoorbeeld door het oorspronkeli
 
 1. Verpak uw inhoud.
 
-   Hier volgt een voorbeeld van het verpakken met Adobe Offline Packager. Packager gebruikt een configuratiedossier (b.v., [!DNL fairplay.xml]), dat iets als dit kijkt:
+   Hier volgt een voorbeeld van het verpakken met Adobe Offline Packager. Packager gebruikt een configuratiebestand (bijvoorbeeld [!DNL fairplay.xml]), die er ongeveer als volgt uitziet:
 
    ```
    <config>
@@ -139,10 +138,10 @@ Pakketten bereiden de video voor op afspelen (bijvoorbeeld door het oorspronkeli
    * `target_dur` - De doelduur voor HLS-uitvoer.
    * `key_file_path` - Dit is de locatie van het licentiebestand op uw verpakkingsapparaat dat als CEK (Content Encryption Key) fungeert. Het is een Base-64 gecodeerde 16-byte hexreeks.
    * `iv_file_path` - Dit is de locatie van het IV-bestand op uw verpakkingsapparaat.
-   * `key_url` - De URI-parameter van de  `EXT-X-KEY` tag van het  [!DNL .m3u8] bestand.
+   * `key_url` - De URI-parameter van de `EXT-X-KEY` tag van de [!DNL .m3u8] bestand.
    * `content_id` - Standaardwaarde.
 
-   Zoals vermeld in [de documentatie van Packager](https://helpx.adobe.com/content/dam/help/en/primetime/guides/offline_packager_getting_started.pdf#page=7), &quot;als beste praktijken, creeer een configuratiedossier dat de gemeenschappelijke opties bevat die u voor het produceren van de output wilt gebruiken. Maak vervolgens de uitvoer door specifieke opties als opdrachtregelargument op te geven.&quot;
+   Zoals vermeld in het [Packager-documentatie](https://helpx.adobe.com/content/dam/help/en/primetime/guides/offline_packager_getting_started.pdf#page=7), &quot;Als beste praktijken, creeer een configuratiedossier dat de gemeenschappelijke opties bevat die u voor het produceren van de output wilt gebruiken. Maak vervolgens de uitvoer door specifieke opties als opdrachtregelargument op te geven.&quot;
 
    ```
    java -jar OfflinePackager.jar -in_path sample.mp4 -out_type hls 
@@ -150,7 +149,7 @@ Pakketten bereiden de video voor op afspelen (bijvoorbeeld door het oorspronkeli
    -key_url "user_provided_value"
    ```
 
-   Het gegenereerde M3U8-bestand heeft een `EXT-X-KEY`-kenmerk dat als volgt wordt weergegeven:
+   Het gegenereerde M3U8-bestand heeft een `EXT-X-KEY` kenmerk dat als volgt wordt weergegeven:
 
    ```
    #EXT-X-KEY:METHOD=SAMPLE-AES,URI="user_provided_value",​
@@ -161,7 +160,7 @@ Pakketten bereiden de video voor op afspelen (bijvoorbeeld door het oorspronkeli
 
 U kunt het beleid voor met FairPlay beveiligde inhoud instellen met een machtigingsserver. U kunt uw eigen voorbeeldmachtigingsserver instellen of een door Adobe verschafte voorbeeldmachtigingsserver gebruiken.
 
-Adobe biedt een Sample ExpressPlay Entitlement Server (SES) die aangeeft hoe u *op tijd gebaseerde* en *apparaatbinding* rechten kunt doen. Deze voorbeeldmachtigingsserver is bovenop de ExpressPlay-services gebouwd.
+Adobe verstrekt een Server van de Entitlement van de Entitlement van de Steekproef ExpressPlay (SEES) die toont hoe te te doen *op tijd gebaseerd* en *apparaatbinding* machtiging. Deze voorbeeldmachtigingsserver is bovenop de ExpressPlay-services gebouwd.
 
 [Referentieserver: Voorbeeld ExpressPlay Entitlement Server (SES)](../../multi-drm-workflows/feature-topics/sees-reference-server.md)
 
@@ -178,20 +177,20 @@ Hier vindt u instructies voor het implementeren van licenties en het afspelen va
 
 U kunt het gebruikers mogelijk maken om met FairPlay beveiligde inhoud af te spelen wanneer de licentie niet kan worden opgehaald omdat de speler geïsoleerd is van het web (bijvoorbeeld op een vliegtuig).
 
-Voordat u met deze taak begint, downloadt en leest u het Apple-document **&quot;Offline afspelen met FairPlay Streaming en HTTP Live Streaming&quot;**. Lees de gids om te leren hoe te om de segmenten van de Stroom van het Vervoer (TS) te downloaden en hen te bewaren aan uw lokale machine.
+Voordat u met deze taak begint, moet u het Apple-document downloaden en lezen **&quot;Offline afspelen met FairPlay Streaming en HTTP Live Streaming&quot;**. Lees de gids om te leren hoe te om de segmenten van de Stroom van het Vervoer (TS) te downloaden en hen te bewaren aan uw lokale machine.
 
 Offline afspelen voor FairPlay implementeren met deze workflow:
 
 1. Download het segment HLS TS.
-1. Vraag een Persistent-huurlicentie aan op de FairPlay-server (zie **&quot;FairPlay Persistent Rental Policy&quot;**).
-1. Sla `persistentContentKey` op.
+1. Licentie voor continue huur aanvragen bij de FairPlay-server (zie **&quot;FairPlay Persistent Rental Policy&quot;**).
+1. Sla de `persistentContentKey`.
 1. De FairPlay-inhoud offline afspelen.
 
 >[!NOTE]
 >
 >FairPlay Streaming op de client start geen decodering als de blijvende inhoudssleutel is verlopen. Het zal de gebruikerservaring echter voortzetten als de inhoudssleutel tijdens het afspelen verloopt.
 >
->Zie [Werken met Live HTTP-streaming](https://developer.apple.com/library/content/documentation/AudioVideo/Conceptual/MediaPlaybackGuide/Contents/Resources/en.lproj/HTTPLiveStreaming/HTTPLiveStreaming.html#//apple_ref/doc/uid/TP40016757-CH11-SW3)-document voor meer informatie.
+>Zie [Werken met Live HTTP-streaming](https://developer.apple.com/library/content/documentation/AudioVideo/Conceptual/MediaPlaybackGuide/Contents/Resources/en.lproj/HTTPLiveStreaming/HTTPLiveStreaming.html#//apple_ref/doc/uid/TP40016757-CH11-SW3) voor meer informatie.
 
 ### FairPlay-licentierotatie {#section_D32AA08C61474B4F876AC2A5F18CB879}
 
@@ -205,7 +204,7 @@ Ga als volgt te werk om licentiering toe te voegen:
 
    U kunt een willekeurig aantal toetstags toevoegen.
 
-   Voor lineaire inhoud zorgt u ervoor dat de meest recente toetstag in het M3U8-venster behouden blijft. iOS vraagt de volgende M3U8 wanneer er nog ongeveer twee TS-segmenten moeten worden afgespeeld (ongeveer 20 seconden). Als de nieuwe M3U8 nieuwe sleutelcodes bevat, zullen alle belangrijke verzoeken onmiddellijk plaatsvinden. De vorige bestaande toetsen worden niet opnieuw aangevraagd. iOS wacht tot alle belangrijke aanvragen zijn voltooid voordat het afspelen wordt gestart.
+   Voor lineaire inhoud zorgt u ervoor dat de meest recente toetstag in het M3U8-venster behouden blijft. iOS zal de volgende M3U8 vragen wanneer er nog ongeveer twee TS-segmenten moeten worden afgespeeld (ongeveer 20 seconden). Als de nieuwe M3U8 nieuwe sleutelcodes bevat, zullen alle belangrijke verzoeken onmiddellijk plaatsvinden. De vorige bestaande toetsen worden niet opnieuw aangevraagd. iOS wacht tot alle belangrijke aanvragen zijn voltooid voordat het afspelen wordt gestart.
 
    Voor VOD-inhoud met rotatie van de licentie worden alle belangrijke aanvragen afgespeeld.
 

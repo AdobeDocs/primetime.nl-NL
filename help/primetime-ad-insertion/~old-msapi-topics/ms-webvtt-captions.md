@@ -1,7 +1,6 @@
 ---
 description: De manifestserver steunt uitgever-toegelaten WebVTT titels voor alle videoformaten HLS. Wanneer het verzoeken ontvangt om advertenties in WebVTT getitelde inhoud op te nemen, doet het correct.
 title: Ondersteuning voor WebVTT-bijschriften
-translation-type: tm+mt
 source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
 source-wordcount: '325'

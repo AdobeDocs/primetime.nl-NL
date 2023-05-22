@@ -1,14 +1,13 @@
 ---
 title: Android SDK Cookbook
 description: Android SDK Cookbook
-source-git-commit: 326f97d058646795cab5d062fa5b980235f7da37
+exl-id: 7f66ab92-f52c-4dae-8016-c93464dd5254
+source-git-commit: bfc3ba55c99daba561255760baf273b6538a3c6e
 workflow-type: tm+mt
 source-wordcount: '1693'
 ht-degree: 0%
 
 ---
-
-
 
 # Android SDK Cookbook {#android-sdk-cookbook}
 

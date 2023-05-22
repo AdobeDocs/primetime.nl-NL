@@ -2,16 +2,15 @@
 title: Scriptgegevens versleutelen
 description: Scriptgegevens versleutelen
 copied-description: true
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: aa5c43e0-400f-45a9-aecf-1ea421fe44e4
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '67'
 ht-degree: 0%
 
 ---
 
-
-# Scriptgegevens {#encrypting-script-data} coderen
+# Scriptgegevens versleutelen {#encrypting-script-data}
 
 Met deze pakketoptie geeft u op of scriptgegevens die zijn ingesloten in de inhoud, worden gecodeerd.
 

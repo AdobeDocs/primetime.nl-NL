@@ -1,14 +1,13 @@
 ---
 description: Met alternatieve audio kunt u schakelen tussen beschikbare audiotracks voor een videotrack. Gebruikers kunnen hun voorkeurstaal selecteren wanneer de video wordt afgespeeld.
 title: Alternatieve audio
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: c2eb10dc-3fe0-472b-8450-2fbfc6b09487
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '247'
 ht-degree: 0%
 
 ---
-
 
 # Overzicht {#alternate-audio-overview}
 
@@ -16,11 +15,11 @@ Met alternatieve audio kunt u schakelen tussen beschikbare audiotracks voor een 
 
 <!--<a id="section_E4F9DC28A2944BD08B4190A7F98A8365"></a>-->
 
-Wanneer TVSDK de `MediaPlayerItem`-instantie voor de huidige video maakt, maakt deze een `AudioTrack`-item voor elke beschikbare audiotrack. Het item bevat een eigenschap `name`. Dit is een tekenreeks die doorgaans een door de gebruiker herkenbare beschrijving van de taal van die track bevat. Het item bevat ook informatie over of die track standaard moet worden gebruikt. Wanneer het tijd is om de video af te spelen, kunt u om een lijst van beschikbare audiosporen vragen, naar keuze toestaan de gebruiker selecteert een spoor, en de video plaatsen om met het geselecteerde spoor te spelen.
+Als TVSDK de opdracht `MediaPlayerItem` instantie voor de huidige video, wordt een `AudioTrack` item voor elke beschikbare audiotrack. Het item bevat een `name` eigenschap, die een tekenreeks is die doorgaans een door de gebruiker herkenbare beschrijving van de taal van die track bevat. Het item bevat ook informatie over of die track standaard moet worden gebruikt. Wanneer het tijd is om de video af te spelen, kunt u om een lijst van beschikbare audiosporen vragen, naar keuze toestaan de gebruiker selecteert een spoor, en de video plaatsen om met het geselecteerde spoor te spelen.
 
 >[!TIP]
 >
->Hoewel het zeldzaam is dat als een extra audiotrack beschikbaar wordt nadat TVSDK de gebeurtenis `MediaPlayerItem` heeft gemaakt, TVSDK een gebeurtenis `MediaPlayerItem.AUDIO_TRACK_UPDATED` start.
+>Als er na TVSDK een extra audiotrack beschikbaar komt, wordt de optie `MediaPlayerItem`, wordt TVSDK geactiveerd `MediaPlayerItem.AUDIO_TRACK_UPDATED` gebeurtenis.
 
 ## Toegevoegde API&#39;s {#section_87C42C30BA8C4F58A2DAB7CE07FCD3DE}
 
@@ -28,7 +27,7 @@ De volgende API&#39;s zijn toegevoegd ter ondersteuning van alternatieve audio:
 
 `hasAlternateAudio`
 
-Als de opgegeven media een andere audiotrack heeft dan de standaardtrack, retourneert deze booleaanse functie `true`. Als er geen alternatieve audiotrack is, retourneert de functie `false`.
+Als de opgegeven media een andere audiotrack heeft dan de standaardtrack, wordt deze booleaanse functie geretourneerd `true`. Als er geen alternatieve audiotrack is, wordt de functie geretourneerd `false`.
 
 ```java
 boolean hasAlternateAudio();
@@ -77,4 +76,3 @@ private void onPrepared() {
     _mediaPlayer.getCurrentItem().selectAudioTrack(selectedAudioTrack); 
 } 
 ```
-

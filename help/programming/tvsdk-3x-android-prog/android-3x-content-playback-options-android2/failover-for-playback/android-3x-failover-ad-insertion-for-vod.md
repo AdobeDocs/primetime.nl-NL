@@ -1,20 +1,19 @@
 ---
 description: Het ad-invoegproces (VOD, Video on-demand) bestaat uit de fasen voor het omzetten, invoegen en toevoegen van de advertentie. Voor het bijhouden van advertenties moet TVSDK een externe traceringsserver op de hoogte stellen van de voortgang van het afspelen van elke advertentie. In onverwachte situaties neemt TVSDK de juiste maatregelen.
 title: Toevoeging en overname van advertenties voor VOD
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: 0f5929eb-b6cf-4454-904a-2d4637177b68
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '689'
 ht-degree: 0%
 
 ---
 
-
 # Toevoeging en overname van advertenties voor VOD {#advertising-insertion-and-failover-for-vod}
 
 Het ad-invoegproces (VOD, Video on-demand) bestaat uit de fasen voor het omzetten, invoegen en toevoegen van de advertentie. Voor het bijhouden van advertenties moet TVSDK een externe traceringsserver op de hoogte stellen van de voortgang van het afspelen van elke advertentie. In onverwachte situaties neemt TVSDK de juiste maatregelen.
 
-## Adverterende fase {#section_5DD3A7DA79E946298BFF829A60202E1C}
+## Adverteringsfase {#section_5DD3A7DA79E946298BFF829A60202E1C}
 
 TVSDK neemt contact op met een advertentieservice, zoals Adobe Primetime en besluitvorming, en probeert het primaire afspeellijstbestand te verkrijgen dat overeenkomt met de videostream voor de advertentie. Tijdens de ad-resolving fase, doet TVSDK een vraag van HTTP aan de verre ad-leveringsserver en ontleedt de reactie van de server.
 
@@ -39,7 +38,7 @@ TVSDK ondersteunt de volgende typen advertentieproviders:
 
 TVSDK geeft een waarschuwingsbericht over de fout weer en gaat door met de verwerking.
 
-## Advertentiefase {#section_29F7F7756C8B40B99AD4C3DD16B72B5B}
+## Ad-invoegfase {#section_29F7F7756C8B40B99AD4C3DD16B72B5B}
 
 TVSDK voegt de alternatieve inhoud (advertenties) in de tijdlijn in die overeenkomt met de hoofdinhoud.
 
@@ -69,4 +68,4 @@ TVSDK stuurt de getriggerde gebeurtenissen door naar uw toepassing, inclusief me
 
    Uw toepassing moet de juiste actie ondernemen.
 
-Ongeacht of er fouten optreden, roept TVSDK `onAdBreakComplete` aan voor elke `onAdBreakStart` en `onAdComplete` voor elke `onAdStart`. Als segmenten echter niet kunnen worden gedownload, bevat de tijdlijn mogelijk tussenruimten. Wanneer de tussenruimten groot genoeg zijn, kunnen de waarden in de positie van de afspeelkop en de gerapporteerde en de voortgang discontinuïteit vertonen.
+Ongeacht of fouten optreden, roept TVSDK `onAdBreakComplete` voor elke `onAdBreakStart` en `onAdComplete` voor elke `onAdStart`. Als segmenten echter niet kunnen worden gedownload, bevat de tijdlijn mogelijk tussenruimten. Wanneer de tussenruimten groot genoeg zijn, kunnen de waarden in de positie van de afspeelkop en de gerapporteerde en de voortgang discontinuïteit vertonen.

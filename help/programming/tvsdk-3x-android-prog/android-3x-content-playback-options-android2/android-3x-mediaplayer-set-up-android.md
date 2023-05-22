@@ -1,30 +1,29 @@
 ---
 description: TVSDK beschikt over gereedschappen voor het maken van een geavanceerde videospelertoepassing (uw Primetime-speler) die u kunt integreren met andere Primetime-componenten. De klasse biedt ook een aantal functies die zijn ontworpen om de afspeelkwaliteit van video te maximaliseren.
 title: De mediaspeler instellen
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: 99fdc4c1-0c67-4de5-87a5-b42d76f43ae9
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '140'
 ht-degree: 0%
 
 ---
 
-
-# Mediaspeler {#set-up-the-media-player} instellen
+# De mediaspeler instellen {#set-up-the-media-player}
 
 TVSDK beschikt over gereedschappen voor het maken van een geavanceerde videospelertoepassing (uw Primetime-speler) die u kunt integreren met andere Primetime-componenten. De klasse biedt ook een aantal functies die zijn ontworpen om de afspeelkwaliteit van video te maximaliseren.
 
 <!--<a id="section_1FE83A68DE624F20B52C0959851F5699"></a>-->
 
-Instantieer een `MediaPlayer` en plaats een mening van het in een kaderlay-out.
+Instantiëren van een `MediaPlayer` en plaats er een weergave van in een kaderlay-out.
 
-1. Instantiëren `MediaPlayer`, waarbij een object `android.content.Context` wordt doorgegeven aan de constructor:
+1. Instantiëren `MediaPlayer`, een `android.content.Context` object naar de constructor:
 
    ```java
    MediaPlayer mediaPlayer = new MediaPlayer(context);
    ```
 
-1. Geef een framelay-out ( `android.widget.FrameLayout`) op om een `ViewGroup` van `mediaPlayer` te houden:
+1. Een kaderlay-out bieden ( `android.widget.FrameLayout`) om een `ViewGroup` van `mediaPlayer`:
 
    ```java
    FrameLayout playerFrame = (FrameLayout) _viewGroup.findViewById(R.id.playerFrame);
@@ -44,7 +43,7 @@ Instantieer een `MediaPlayer` en plaats een mening van het in een kaderlay-out.
     }
    ```
 
-1. Plaats een weergave van `mediaPlayer` in de kaderlay-out:
+1. Een weergave plaatsen van `mediaPlayer` in de kaderlay-out:
 
    ```java
    playerFrame.addView(mediaPlayer.getView());
@@ -52,4 +51,4 @@ Instantieer een `MediaPlayer` en plaats een mening van het in een kaderlay-out.
 
    >[!NOTE]
    >
-   >De `MediaPlayer` instantie ( `mediaPlayer`) is nu beschikbaar en behoorlijk gevormd om videoinhoud op het apparatenscherm te tonen.
+   >De `MediaPlayer` instance ( `mediaPlayer`) is nu beschikbaar en correct geconfigureerd voor het weergeven van video-inhoud op het apparaatscherm.

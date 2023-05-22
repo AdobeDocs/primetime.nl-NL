@@ -1,13 +1,13 @@
 ---
 title: Technisch overzicht van Amazon FireOS
 description: Technisch overzicht van Amazon FireOS
-source-git-commit: 326f97d058646795cab5d062fa5b980235f7da37
+exl-id: 939683ee-0dd9-42ab-9fde-8686d2dc0cd0
+source-git-commit: bfc3ba55c99daba561255760baf273b6538a3c6e
 workflow-type: tm+mt
 source-wordcount: '2142'
 ht-degree: 0%
 
 ---
-
 
 # Technisch overzicht van Amazon FireOS {#amazon-fireos-technical-overview}
 

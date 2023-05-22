@@ -2,17 +2,16 @@
 title: Lijsten met beleidsupdates
 description: Lijsten met beleidsupdates
 copied-description: true
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: c53611b9-8d5e-481d-93c0-0613eb88ec56
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '99'
 ht-degree: 0%
 
 ---
 
-
-# Lijsten voor beleidsupdate{#policy-update-lists}
+# Lijsten met beleidsupdates{#policy-update-lists}
 
 Als u de gebruiksregels in een beleid bijwerkt nadat u de inhoud hebt verpakt, moet de licentieserver over de nieuwste versie beschikken om licenties met het bijgewerkte beleid te kunnen uitgeven. Een manier om dit te bereiken is door een lijst met beleidsupdates. Een lijst met beleidsupdates is een bestand met een lijst met bijgewerkte of ingetrokken beleidsregels. Wanneer een beleid wordt bijgewerkt, produceer een nieuwe Lijst van de Update van het Beleid en duw periodiek de lijst uit aan alle vergunningsservers.
 
-Zie * [Werken met beleid](../../aaxs-protecting-content/content-working-with-policies/content-working-with-policies-overview.md)* voor meer informatie over het maken en bijwerken van beleid.
+Zie * voor meer informatie over het maken en bijwerken van beleid [Werken met beleid](../../aaxs-protecting-content/content-working-with-policies/content-working-with-policies-overview.md)*.

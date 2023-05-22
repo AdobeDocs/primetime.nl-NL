@@ -1,14 +1,13 @@
 ---
 description: Wanneer gebruikers snel vooruit of snel terugspoelen door de media, zijn zij in de truc spelwijze. Stel de afspeelsnelheid van MediaPlayer in op een andere waarde dan 1 om de modus voor bedrieglijk afspelen te activeren.
 title: Snel vooruitspoelen en terugspoelen
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: 569fe22c-b1d8-46db-ab29-a50652413072
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '201'
 ht-degree: 0%
 
 ---
-
 
 # Overzicht {#implement-fast-forward-and-rewind-overview}
 
@@ -16,11 +15,11 @@ Wanneer gebruikers snel vooruit of snel terugspoelen door de media, zijn zij in 
 
 U moet één waarde instellen om van snelheid te wisselen.
 
-1. Ga van normale spelwijze (1x) aan truc speelwijze door het tarief op `MediaPlayer` aan een toegestane waarde te plaatsen.
+1. Ga van normale speelwijze (1x) naar truc speelwijze door het tarief op te plaatsen `MediaPlayer` op een toegestane waarde.
 
        De volgende informatie onthouden:
    
-   * De klasse `MediaPlayerItem` definieert de toegestane afspeelsnelheden.
+   * De `MediaPlayerItem` -klasse definieert de toegestane afspeelsnelheden.
    * TVSDK selecteert de dichtstbijzijnde toegestane snelheid als de opgegeven snelheid niet is toegestaan.
 
       In het volgende voorbeeld wordt de interne afspeelsnelheid van de speler ingesteld op de gewenste snelheid:
@@ -53,9 +52,8 @@ U moet één waarde instellen om van snelheid te wisselen.
 
        TVSDK verzendt de volgende gebeurtenissen die betrekking hebben op truc-spelen:
    
-   * `MediaPlayerEvent.RATE_SELECTED`, wanneer de  `rate` waarde in een andere waarde verandert.
+   * `MediaPlayerEvent.RATE_SELECTED`, wanneer de `rate` De waarde verandert in een andere waarde.
 
    * `MediaPlayerEvent.RATE_PLAYING`, wanneer het afspelen wordt hervat met de geselecteerde frequentie.
 
       TVSDK verzendt deze gebeurtenissen wanneer de speler van de truc-afspeelmodus naar de normale afspeelmodus terugkeert.
-

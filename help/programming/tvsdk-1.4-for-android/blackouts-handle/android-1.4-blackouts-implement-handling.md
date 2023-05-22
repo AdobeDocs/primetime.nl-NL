@@ -1,16 +1,15 @@
 ---
 description: TVSDK biedt API's en voorbeeldcode voor de afhandeling van brainstormperioden.
 title: Afstroomverwerking implementeren
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: 9b23674d-76d5-4879-b595-3a6e368c45cd
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '158'
 ht-degree: 0%
 
 ---
 
-
-# Uitstroomafhandeling implementeren{#implement-blackout-handling}
+# Afstroomverwerking implementeren{#implement-blackout-handling}
 
 TVSDK biedt API&#39;s en voorbeeldcode voor de afhandeling van brainstormperioden.
 
@@ -75,7 +74,7 @@ Omgaan met black-out, inclusief alternatieve inhoud tijdens de black-out:
    }; 
    ```
 
-1. Objecten `TimedMetadata` verwerken wanneer `MediaPlayer`-tijd wordt uitgevoerd.
+1. Handgreep `TimedMetadata` objecten wanneer `MediaPlayer` de tijd loopt.
 
    ```java
    _playbackClockEventListener = new Clock.ClockEventListener() { 
@@ -98,7 +97,7 @@ Omgaan met black-out, inclusief alternatieve inhoud tijdens de black-out:
    };
    ```
 
-1. Methoden maken voor het schakelen tussen inhoud aan het begin en einde van de periode van uitnemen.
+1. Methoden maken voor het schakelen tussen inhoud aan het begin en einde van de periode van uitschakeling.
 
    ```java
    private void handleTimedMetadataList(long currentTime) { 
@@ -183,7 +182,7 @@ Omgaan met black-out, inclusief alternatieve inhoud tijdens de black-out:
 
    >[!NOTE]
    >
-   >Momenteel kunnen voor live streams met meerdere bitsnelheden de aanpasbare bitsnelheidprofielen (ABR) niet meer synchroon zijn. Dit veroorzaakt dubbele `timedMetadata` voorwerpen voor de zelfde geabonneerde markering. Om onjuiste niet-doorzoekbare berekeningen te voorkomen, wordt het ten zeerste aanbevolen na uw berekeningen te controleren op overlappende, niet-doorzoekbare bereiken, zoals in het volgende voorbeeld:
+   >Momenteel kunnen voor live streams met meerdere bitsnelheden de aanpasbare bitsnelheidprofielen (ABR) niet meer synchroon zijn. Dit leidt tot dubbel `timedMetadata` objecten voor dezelfde geabonneerde tag. Om onjuiste niet-doorzoekbare berekeningen te voorkomen, wordt het ten zeerste aanbevolen na uw berekeningen te controleren op overlappende, niet-doorzoekbare bereiken, zoals in het volgende voorbeeld:
 
    ```java
    List<TimeRange> rangesToRemove = new ArrayList<TimeRange>(); 
@@ -209,4 +208,3 @@ Omgaan met black-out, inclusief alternatieve inhoud tijdens de black-out:
        nonSeekableRanges.removeAll(rangesToRemove); 
    }
    ```
-

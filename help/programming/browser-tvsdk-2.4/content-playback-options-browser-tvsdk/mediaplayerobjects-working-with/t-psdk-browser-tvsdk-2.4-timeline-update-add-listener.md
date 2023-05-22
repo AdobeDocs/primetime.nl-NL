@@ -1,20 +1,19 @@
 ---
 description: Registreer de juiste gebeurtenislisteners om meldingen over tijdlijnupdates te ontvangen.
 title: Listeners toevoegen voor TimelineUpdatedEvent
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: 7b55beb5-fd84-4144-8d02-bbd998f99e3a
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '47'
 ht-degree: 0%
 
 ---
 
-
-# Voeg luisteraars voor TimelineUpdatedEvent{#add-listeners-for-timelineupdatedevent} toe
+# Listeners toevoegen voor TimelineUpdatedEvent{#add-listeners-for-timelineupdatedevent}
 
 Registreer de juiste gebeurtenislisteners om meldingen over tijdlijnupdates te ontvangen.
 
-Elke keer dat de tijdlijn wordt bijgewerkt, verzendt `MediaPlayer` `AdobePSDK.TimelineEvent` met type `AdobePSDK.PSDKEventType.TIMELINE_UPDATED`.
+Telkens wanneer de tijdlijn wordt bijgewerkt, wordt `MediaPlayer` verzendingen `AdobePSDK.TimelineEvent` met type `AdobePSDK.PSDKEventType.TIMELINE_UPDATED`.
 1. Voer de aangewezen luisteraars uit.
 
    ```js
@@ -39,4 +38,3 @@ Elke keer dat de tijdlijn wordt bijgewerkt, verzendt `MediaPlayer` `AdobePSDK.Ti
    player.addEventListener(AdobePSDK.PSDKEventType.TIMELINE_UPDATED,  
        onTimelineUpdatedEvent);
    ```
-

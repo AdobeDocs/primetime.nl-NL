@@ -1,16 +1,15 @@
 ---
 description: Als de toepassing gebeurtenissen moet verwerken die worden verzonden vanuit functiebeheer, moet deze de manager registreren in het bestand PlayerFragment.java.
 title: Gebeurtenissen afhandelen
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: 4c9a76bb-071e-4408-819c-a7611fe615cd
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '50'
-ht-degree: 4%
+ht-degree: 0%
 
 ---
 
-
-# Gebeurtenissen {#handling-events} verwerken
+# Gebeurtenissen afhandelen {#handling-events}
 
 Als de toepassing gebeurtenissen moet verwerken die worden verzonden vanuit functiebeheer, moet deze de manager registreren in het bestand PlayerFragment.java.
 

@@ -1,22 +1,21 @@
 ---
 description: Met de functie External CEK kunt u licenties doorvoeren en verpakken met behulp van uw bestaande CKMS.
 title: De externe CEK gebruiken om licenties te zoeken en te verpakken
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: 3944624a-099e-4fc0-b829-6ab154a53758
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '227'
 ht-degree: 0%
 
 ---
 
-
-# Het gebruiken van Externe CEK aan Vend en de Vergunningen van het Pakket{#using-external-cek-to-vend-and-package-licenses}
+# De externe CEK gebruiken om licenties te zoeken en te verpakken{#using-external-cek-to-vend-and-package-licenses}
 
 Met de functie External CEK kunt u licenties doorvoeren en verpakken met behulp van uw bestaande CKMS.
 
 ## EncryptContentWithExternalKey.java
 
-Dit is een opdrachtregelprogramma waarmee een video wordt gecodeerd en metagegevens worden gemaakt die *niet* de CEK bevatten (beveiligd met een openbare cert van een AXS-licentieserver). In plaats daarvan sluit het gereedschap een CEK-id in de metagegevens van de video in.
+Dit is een opdrachtregelprogramma waarmee u een video kunt coderen en metagegevens kunt maken die *niet* bevat de CEK (die is beveiligd met een openbare cert van de AXS-licentieserver). In plaats daarvan sluit het gereedschap een CEK-id in de metagegevens van de video in.
 
 Tijdens het aanschaffen van licenties merkt de AAXS-licentieserver een markering in de metagegevens op die aangeeft dat deze inhoud is beveiligd met een externe CEK. De licentieserver haalt de CEK-id uit de metagegevens en vraagt vervolgens een beveiligde gegevensopslagruimte/CKMS op om de juiste CEK op te halen.
 
@@ -35,10 +34,8 @@ Tijdens het aanschaffen van licenties merkt de AAXS-licentieserver een markering
 >[!NOTE]
 >
 >* De Java-broncode kan worden gemaakt met de opgenomen ANT `build-samples.xml`
->* De Flash Access-SDK ( `adobe-flashaccess-sdk.jar`) moet zich op het klassepad bevinden
-
+>* De Flash Access SDK ( `adobe-flashaccess-sdk.jar`) moet op het klassepad staan
 >
-
 
 
 ## Serverworkflow
@@ -50,7 +47,7 @@ Tijdens het aanschaffen van licenties merkt de AAXS-licentieserver een markering
    1. `delete <tomcat>\conf\Catalina\*.*`
    1. `delete <tomcat>\logs\*.*`
 
-1. Controleer of er een [!DNL CEKDepot.properties]-bestand naast uw [!DNL flashaccess-refimpl.properties] staat
+1. Controleren of er een [!DNL CEKDepot.properties] naast uw [!DNL flashaccess-refimpl.properties]
 
 1. Een licentieaanvraag starten vanuit een Adobe Primetime Player
 1. Bekijk de Ref Impl-logboeken voor iets gelijkaardigs:
@@ -60,7 +57,7 @@ Tijdens het aanschaffen van licenties merkt de AAXS-licentieserver een markering
      Used CEK ID:{abc} to retrieve CEK: {abcdef0123456789} from depot
    ```
 
-   1. Mogelijk moet u de [!DNL log4j.xml]-instellingen wijzigen om u aan te melden op een niveau `DEBUG` ( `INFO` is standaard ingesteld)
+   1. Mogelijk moet u uw [!DNL log4j.xml] instellingen voor aanmelden bij een `DEBUG` niveau ( `INFO` is standaard ingesteld)
 
 ## Bekende problemen
 

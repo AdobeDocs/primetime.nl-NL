@@ -2,16 +2,15 @@
 title: Inhoud veilig verpakken
 description: Inhoud veilig verpakken
 copied-description: true
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: f554852c-83d9-4b31-8dde-2af577c70989
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '385'
 ht-degree: 0%
 
 ---
 
-
-# Inhoud {#securely-packaging-content} op veilige wijze verpakken
+# Inhoud veilig verpakken {#securely-packaging-content}
 
 Het configuratiedossier voor het Adobe Access Media Packager bevellijnhulpmiddel vereist een referentie PKCS12 die tijdens het verpakken wordt gebruikt.
 

@@ -1,16 +1,15 @@
 ---
-description: 'TVSDK voor Android bevat verschillende functies en biedt de volgende hoofdmogelijkheden '
+description: TVSDK voor Android bevat verschillende functies en biedt de volgende hoofdmogelijkheden
 title: Functies van Primetime TVSDK
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: 7df03752-98aa-4317-8e41-a284472cabbb
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '237'
 ht-degree: 0%
 
 ---
 
-
-# De eigenschappen van de TVSDK van Primetime{#primetime-tvsdk-features}
+# Functies van Primetime TVSDK{#primetime-tvsdk-features}
 
 TVSDK voor Android bevat verschillende functies en biedt de volgende hoofdmogelijkheden:
 
@@ -52,4 +51,3 @@ TVSDK voor Android bevat verschillende functies en biedt de volgende hoofdmogeli
 
    * Foutopsporingsregistratie
    * Ondersteuning voor reeksspatiëring voor duur, grootte en downloadtijd van fragmenten
-

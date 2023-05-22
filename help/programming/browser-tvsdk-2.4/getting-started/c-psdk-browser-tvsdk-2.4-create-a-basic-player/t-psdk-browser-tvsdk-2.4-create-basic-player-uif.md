@@ -2,20 +2,19 @@
 title: Een basisspeler maken met behulp van het UI-framework
 description: Een basisspeler maken met behulp van het UI-framework
 copied-description: true
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: 78629042-fd87-406b-af42-229e34d48162
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '134'
-ht-degree: 1%
+ht-degree: 0%
 
 ---
 
-
-# Creeer een basisspeler gebruikend het Kader UI{#create-a-basic-player-using-the-ui-framework}
+# Een basisspeler maken met behulp van het UI-framework{#create-a-basic-player-using-the-ui-framework}
 
 Een basisspeler maken met het UI-framework:
 
-1. Maak een `<div>` voor de spelerinstantie.
+1. Een `<div>` voor de spelerinstantie.
 
    Bijvoorbeeld:
 
@@ -34,7 +33,7 @@ Een basisspeler maken met het UI-framework:
    </script>
    ```
 
-   Wanneer de speler wordt gecreeerd, wordt het gespecificeerde `<div>` element gegeven een CSS klasse van `ptp-main-video-div-style`. Het resulterende DOM ziet er ongeveer als volgt uit:
+   Wanneer de speler wordt gemaakt, wordt de opgegeven `<div>` -element krijgt een CSS-klasse van `ptp-main-video-div-style`. Het resulterende DOM ziet er ongeveer als volgt uit:
 
    ```
    <div id="video1" class="ptp-main-video-div-style"> 
@@ -71,7 +70,7 @@ Een basisspeler maken met het UI-framework:
    </div>
    ```
 
-Het object dat wordt geretourneerd door het aanroepen van `ptp.videoPlayer()`, biedt een gedrag dat de TVSDK-mediaspeler-API omsluit en programmatische controle over het afspelen mogelijk maakt. Wanneer u de instantie van de mediaspeler aanroept, wordt de gebruikersinterface automatisch bijgewerkt op basis van gebeurtenissen die door de mediaspeler zijn geactiveerd:
+Het object dat door het aanroepen wordt geretourneerd `ptp.videoPlayer()` biedt een gedrag dat de TVSDK-mediaspeler-API omsluit en programmatische controle over het afspelen mogelijk maakt. Wanneer u de instantie van de mediaspeler aanroept, wordt de gebruikersinterface automatisch bijgewerkt op basis van gebeurtenissen die door de mediaspeler zijn geactiveerd:
 
 ```js
 <script> 

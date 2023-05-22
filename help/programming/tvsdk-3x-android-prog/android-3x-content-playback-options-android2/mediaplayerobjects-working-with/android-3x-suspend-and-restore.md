@@ -2,24 +2,23 @@
 description: De TVSDK MediaPlayer onderbreken en herstellen wanneer een apparaatscherm wordt uitgeschakeld en ingeschakeld, moet door de toepassing worden afgehandeld.
 keywords: SurfaceView;Suspend;Restore;BroadcastReceiver
 title: MediaPlayer onderbreken en herstellen
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: edbc8fc2-4754-44ed-b8ed-c50b3f2fd124
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '159'
 ht-degree: 0%
 
 ---
 
-
-# MediaPlayer {#suspend-and-restore-mediaplayer} onderbreken en herstellen
+# MediaPlayer onderbreken en herstellen {#suspend-and-restore-mediaplayer}
 
 De TVSDK MediaPlayer onderbreken en herstellen wanneer een apparaatscherm wordt uitgeschakeld en ingeschakeld, moet door de toepassing worden afgehandeld.
 
-U kunt bewerkingen op `MediaPlayer` opschorten en herstellen in de Android-ontvanger voor het in- en uitschakelen van het scherm.
+U kunt bewerkingen voor opschorten en herstellen uitvoeren op `MediaPlayer` in de uitgezonden ontvanger van Android voor scherm aan/uit.
 
-TVSDK kan niet bepalen wanneer een fragment (of activiteit) zich op de achtergrond of voorgrond bevindt. Bovendien wordt Android `SurfaceView` niet vernietigd wanneer het apparaatscherm wordt uitgeschakeld (maar de activiteit wordt gepauzeerd). `SurfaceView` *does* worden echter vernietigd wanneer het apparaat uw toepassing op de achtergrond plaatst. TVSDK kan geen van deze wijzigingen detecteren, dus deze moeten door uw toepassing worden verwerkt.
+TVSDK kan niet bepalen wanneer een fragment (of activiteit) zich op de achtergrond of voorgrond bevindt. Daarnaast wordt de Android `SurfaceView` wordt niet vernietigd wanneer het apparaatscherm wordt uitgeschakeld (maar de activiteit wordt gepauzeerd). Maar `SurfaceView` *doet* worden vernietigd wanneer het apparaat de toepassing op de achtergrond plaatst. TVSDK kan geen van deze wijzigingen detecteren, dus deze moeten door uw toepassing worden verwerkt.
 
-De volgende voorbeeldcode geeft aan hoe uw toepassing de `MediaPlayer` kan opschorten en herstellen wanneer het apparaatscherm op toepassingsniveau wordt in- en uitgeschakeld:
+De volgende voorbeeldcode laat zien hoe uw toepassing het opschorten en herstellen van de `MediaPlayer` wanneer het apparaatscherm wordt in- en uitgeschakeld op toepassingsniveau:
 
 ```java
 // Track the state of a fragment to determine if it is PAUSED or RESUMED 

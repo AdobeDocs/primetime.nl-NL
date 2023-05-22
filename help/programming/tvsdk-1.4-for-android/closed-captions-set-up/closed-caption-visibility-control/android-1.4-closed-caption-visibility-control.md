@@ -1,14 +1,13 @@
 ---
 description: U kunt de zichtbaarheid van gesloten bijschriften bepalen. Wanneer de zichtbaarheid is ingeschakeld, wordt de geselecteerde track weergegeven. Als u wijzigt welke track huidig is, blijft de zichtbaarheidsinstelling ongewijzigd.
 title: Zichtbaarheid van ondertiteling beheren
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: d9428744-1700-4917-b334-d6e0446eaf37
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '172'
-ht-degree: 1%
+ht-degree: 0%
 
 ---
-
 
 # Overzicht {#control-closed-caption-visibility}
 
@@ -30,7 +29,7 @@ U kunt de zichtbaarheid van gesloten bijschriften bepalen. Wanneer de zichtbaarh
 >}
 >```
 
-1. Wacht op MediaPlayer om minstens de PREPARED staat te hebben (zie [Wacht op een geldige staat](../../../tvsdk-1.4-for-android/ui-configure/android-1.4-ui-state-prepared-wait-for.md)).
+1. Wacht op MediaPlayer om minstens de VOORBEREIDENDE staat te hebben (zie [Wacht op een geldige status](../../../tvsdk-1.4-for-android/ui-configure/android-1.4-ui-state-prepared-wait-for.md)).
 1. Als u de huidige zichtbaarheidsinstelling voor gesloten bijschriften wilt ophalen, gebruikt u de methode getter in MediaPlayer, die een zichtbaarheidswaarde retourneert.
 
    ```java
@@ -44,4 +43,3 @@ U kunt de zichtbaarheid van gesloten bijschriften bepalen. Wanneer de zichtbaarh
    ```java
    mediaPlayer.setCCVisibility(Visibility.VISIBLE);
    ```
-

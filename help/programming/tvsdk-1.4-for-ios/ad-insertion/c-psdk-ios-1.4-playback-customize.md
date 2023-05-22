@@ -1,22 +1,21 @@
 ---
 description: Wanneer het afspelen een advertentie-einde bereikt, een advertentie-einde doorgeeft of eindigt in een advertentie-einde, definieert TVSDK een standaardgedrag voor het plaatsen van de huidige afspeelkop.
 title: Afspelen met advertenties aanpassen
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: f59e94c2-7ca0-4e0b-b0b1-af076fdd4064
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '990'
 ht-degree: 0%
 
 ---
 
-
-# Afspelen aanpassen met advertenties{#customize-playback-with-ads}
+# Afspelen met advertenties aanpassen{#customize-playback-with-ads}
 
 Wanneer het afspelen een advertentie-einde bereikt, een advertentie-einde doorgeeft of eindigt in een advertentie-einde, definieert TVSDK een standaardgedrag voor het plaatsen van de huidige afspeelkop.
 
 >[!TIP]
 >
->U kunt het standaardgedrag met voeten treden door de `PTAdPolicySelector` klasse te gebruiken.
+>U kunt het standaardgedrag overschrijven door de opdracht `PTAdPolicySelector` klasse.
 
 Het standaardgedrag varieert, afhankelijk van het feit of de gebruiker de advertentie doorgeeft tijdens het afspelen of door te zoeken in een video.
 
@@ -42,46 +41,46 @@ De volgende API-elementen zijn handig voor het aanpassen van het afspelen:
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <span class="codeph"> PTAdMetadata  </span> </td> 
-   <td colname="col2"> Bepaal of een advertentieeinde moet worden gemarkeerd als gevolgd door een viewer en zo ja, wanneer om het te markeren. Stel het gevolgde beleid in en krijg dit via de eigenschap <span class="codeph"> adBreakAsWatched </span>. </td> 
+   <td colname="col1"> <span class="codeph"> PTAdMetadata </span> </td> 
+   <td colname="col2"> Bepaal of een advertentieeinde moet worden gemarkeerd als gevolgd door een viewer en zo ja, wanneer om het te markeren. Het gevolgde beleid instellen en ophalen met <span class="codeph"> adBreakAsWatched </span> eigenschap. </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <span class="codeph"> PTAdPolicySelector  </span> </td> 
+   <td colname="col1"> <span class="codeph"> PTAdPolicySelector </span> </td> 
    <td colname="col2"> Protocol dat aanpassing van TVSDK en gedrag toestaat. </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <span class="codeph"> PTDefaultAdPolicySelector  </span> </td> 
+   <td colname="col1"> <span class="codeph"> PTDefaultAdPolicySelector </span> </td> 
    <td colname="col2"> Klasse die het standaardgedrag van TVSDK uitvoert. Uw toepassing kan deze klasse overschrijven om het standaardgedrag aan te passen zonder de volledige interface te implementeren. </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <span class="codeph"> PTMediaPlayer  </span> </td> 
+   <td colname="col1"> <span class="codeph"> PTMediaPlayer </span> </td> 
    <td colname="col2"> 
     <ul id="ul_37700A741403448A8760FDDA68B099AA"> 
-     <li id="li_B465170D449E49489C5924572BEEB4A5"> <span class="codeph"> localTime  </span>. <p>Dit is de lokale tijd van het afspelen, exclusief de geplaatste en afgebroken foto's. </p> </li> 
-     <li id="li_D9D68CF428904BB2B84E1BCE828A90DC"> <span class="codeph"> seekToLocalTime  </span> . <p>Hier wordt gezocht ten opzichte van een lokale tijd in de stream. </p> </li> 
-     <li id="li_9DBCA75537DC4824AA66B53A3FA28812"> <span class="codeph"> getTimeline.convertToLocalTime  </span>. <p>De virtuele positie op de tijdlijn wordt geconverteerd naar de lokale positie. </p> </li> 
+     <li id="li_B465170D449E49489C5924572BEEB4A5"> <span class="codeph"> localTime </span>. <p>Dit is de lokale tijd van het afspelen, exclusief de geplaatste en afgebroken foto's. </p> </li> 
+     <li id="li_D9D68CF428904BB2B84E1BCE828A90DC"> <span class="codeph"> seekToLocalTime </span> . <p>Hier wordt gezocht ten opzichte van een lokale tijd in de stream. </p> </li> 
+     <li id="li_9DBCA75537DC4824AA66B53A3FA28812"> <span class="codeph"> getTimeline.convertToLocalTime </span>. <p>De virtuele positie op de tijdlijn wordt geconverteerd naar de lokale positie. </p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <span class="codeph"> PTAdBreak  </span> </td> 
-   <td colname="col2"> <span class="codeph"> isWatched,  </span> eigenschap. Geeft aan of de viewer de advertentie heeft gecontroleerd. </td> 
+   <td colname="col1"> <span class="codeph"> PTAdBreak </span> </td> 
+   <td colname="col2"> <span class="codeph"> isWatched </span> eigenschap. Geeft aan of de viewer de advertentie heeft gecontroleerd. </td> 
   </tr> 
  </tbody> 
 </table>
 
-## Aangepaste weergave instellen {#section_8209BAACC7814C9399988DC7DE9CF4CA}
+## Aangepast afspelen instellen {#section_8209BAACC7814C9399988DC7DE9CF4CA}
 
 Registreer de beleidsinstantie voor advertenties bij TVSDK voordat u gedrag voor advertenties kunt aanpassen of overschrijven.
 
 Voer een van de volgende handelingen uit om het gedrag van advertenties aan te passen:
 
-* Conform het `PTAdPolicySelector`-protocol en implementeer alle vereiste methoden voor beleidsselectie.
+* Conform de `PTAdPolicySelector` alle vereiste methoden voor beleidsselectie te implementeren.
 
-   Deze optie wordt aanbevolen als u **all** de standaard en het gedrag moet negeren.
+   Deze optie wordt aanbevolen als u deze optie moet overschrijven **alles** de standaardinstellingen en gedragingen.
 
-* Overschrijf de klasse `PTDefaultAdPolicySelector` en verstrek implementaties voor slechts die gedragingen die aanpassing vereisen.
+* De `PTDefaultAdPolicySelector` en verstrekt implementaties voor slechts die gedrag dat aanpassing vereist.
 
-   Deze optie wordt geadviseerd als u slechts **sommige** van het standaardgedrag moet met voeten treden.
+   Deze optie wordt aanbevolen als u alleen de optie wilt overschrijven **sommige** van het standaardgedrag.
 
 Voer voor beide opties de volgende taken uit:
 
@@ -89,7 +88,7 @@ Voer voor beide opties de volgende taken uit:
 
    >[!NOTE]
    >
-   >Aangepast advertentiebeleid dat aan het begin van het afspelen is geregistreerd, wordt gewist wanneer de `PTMediaPlayer`-instantie wordt gedealdeerd. Elke keer dat een nieuwe afspeelsessie wordt gemaakt, moet uw toepassing een beleidsselector registreren.
+   >Aangepaste advertentiebeleidsregels die bij het begin van het afspelen zijn geregistreerd, worden gewist wanneer de knop `PTMediaPlayer` -instantie wordt gedeallocatie. Elke keer dat een nieuwe afspeelsessie wordt gemaakt, moet uw toepassing een beleidsselector registreren.
 
    Bijvoorbeeld:
 
@@ -104,7 +103,7 @@ Voer voor beide opties de volgende taken uit:
 
 1. Implementeer uw aanpassingen.
 
-## Overslaan en afbrekingen gedurende een tijdsperiode {#section_99809BE4D9BB4DEEBBF596C746CA428A}
+## Advertenties gedurende een bepaalde periode overslaan {#section_99809BE4D9BB4DEEBBF596C746CA428A}
 
 Standaard dwingt TVSDK een advertentie-einde af wanneer de gebruiker een advertentie-einde zoekt. U kunt het gedrag aanpassen om een advertentie-einde over te slaan als de tijd die is verstreken vanaf een vorige eindemarkering binnen een bepaald aantal minuten is.
 
@@ -247,11 +246,11 @@ double MIN_BREAK_INTERVAL  = 60 * 5; // 5 minutes
 @end
 ```
 
-## De videopositie opslaan en later {#section_FAE252E38CED48D4BDD38BAA4A6A20A4} hervatten
+## De videopositie opslaan en later hervatten {#section_FAE252E38CED48D4BDD38BAA4A6A20A4}
 
 U kunt de huidige afspeelpositie in een video opslaan en het afspelen op dezelfde positie in een volgende sessie hervatten.
 
-Dynamisch ingevoegde advertenties verschillen per gebruikerssessie, zodat het opslaan van de positie **met** gespliceerde advertenties naar een andere positie in een toekomstige sessie verwijst. TVSDK biedt methoden om de afspeelpositie op te halen zonder gespliceerde advertenties te negeren.
+Dynamisch ingevoegde advertenties verschillen per gebruikerssessie, zodat de positie wordt opgeslagen **with** spliced advertenties verwijzen naar een andere positie in een toekomstige sessie. TVSDK biedt methoden om de afspeelpositie op te halen zonder gespliceerde advertenties te negeren.
 
 1. Wanneer de gebruiker een video afsluit, wordt de positie in de video opgehaald en opgeslagen.
 
@@ -259,13 +258,13 @@ Dynamisch ingevoegde advertenties verschillen per gebruikerssessie, zodat het op
    >
    >Duur van advertentie is niet inbegrepen.
 
-   De pauzes van de toevoeging kunnen in elke zitting als toe te schrijven aan advertentiepatronen, frequentiegrenzen, etc. variëren. De huidige tijd van de video in één sessie kan in een volgende sessie anders zijn. Wanneer u een positie in de video opslaat, haalt de toepassing de lokale tijd op. Gebruik de eigenschap `localTime` om deze positie te lezen, die u kunt opslaan op het apparaat of in een database op de server.
+   De pauzes van de toevoeging kunnen in elke zitting als toe te schrijven aan advertentiepatronen, frequentiegrenzen, etc. variëren. De huidige tijd van de video in één sessie kan in een volgende sessie anders zijn. Wanneer u een positie in de video opslaat, haalt de toepassing de lokale tijd op. Gebruik de  `localTime` eigenschap voor het lezen van deze positie, die u kunt opslaan op het apparaat of in een database op de server.
 
-   Als de gebruiker bijvoorbeeld op de twintigste minuut van de video staat en deze positie vijf minuten aan advertenties bevat, is `currentTime` 1200 seconden, terwijl `localTime` op deze positie 900 seconden is.
+   Als de gebruiker bijvoorbeeld op de twintigste minuut van de video staat en deze positie vijf minuten aan advertenties bevat, `currentTime` zal 1200 seconden zijn, terwijl `localTime` op deze plaats is dit 900 seconden .
 
    >[!IMPORTANT]
    >
-   >De lokale tijd en de huidige tijd zijn het zelfde voor levende/lineaire stromen. In dit geval heeft `convertToLocalTime` geen effect. Voor VOD blijft de lokale tijd ongewijzigd tijdens het afspelen van advertenties.
+   >De lokale tijd en de huidige tijd zijn het zelfde voor levende/lineaire stromen. In dit geval: `convertToLocalTime` heeft geen effect. Voor VOD blijft de lokale tijd ongewijzigd tijdens het afspelen van advertenties.
 
    ```
    - (void) onMediaPlayerTimeChange:(NSNotification *)notification { 
@@ -280,15 +279,15 @@ Dynamisch ingevoegde advertenties verschillen per gebruikerssessie, zodat het op
    }
    ```
 
-1. De video op dezelfde positie hervatten: Als u het afspelen van de video wilt hervatten vanaf de positie die tijdens een vorige sessie is opgeslagen, gebruikt u `seekToLocalTime`
+1. De video op dezelfde positie hervatten: Als u het afspelen van de video wilt hervatten vanaf de positie die u tijdens een vorige sessie hebt opgeslagen, gebruikt u `seekToLocalTime`
 
    >[!TIP]
    >
    >Deze methode wordt alleen aangeroepen met lokale tijdwaarden. Als de methode wordt aangeroepen met de huidige-tijdresultaten, treedt een onjuist gedrag op.
 
-   Gebruik `seekToTime` om naar de huidige tijd te zoeken.
+   Om naar de huidige tijd te zoeken, gebruik `seekToTime`.
 
-1. Wanneer uw toepassing de gebeurtenis `PTMediaPlayerStatusReady` van de statusverandering ontvangt, zoek aan de bewaarde lokale tijd.
+1. Wanneer uw toepassing de `PTMediaPlayerStatusReady` wijzigt de status, zoekt naar de opgeslagen lokale tijd.
 
    ```
    [self.player seekToLocalTime:CMTimeMake(900, 1) completionHandler:^(BOOL finished) { 
@@ -298,9 +297,8 @@ Dynamisch ingevoegde advertenties verschillen per gebruikerssessie, zodat het op
 
 1. Geef de pagina-einden op zoals opgegeven in de interface voor advertentiebeleid.
 1. Voer een douaneselecteur van het advertentiebeleid uit door de standaard uit te breiden en beleidsselecteur.
-1. Geef de ad-einden op die aan de gebruiker moeten worden weergegeven door `selectAdBreaksToPlay` te implementeren
+1. Geef de ad-einden op die aan de gebruiker moeten worden weergegeven door de implementatie `selectAdBreaksToPlay`
 
    >[!NOTE]
    >
    >Deze methode omvat een pre-rol en onderbreking en de middenrol en pauzes vóór de lokale tijdpositie. Uw toepassing kan besluiten een pre-rol en onderbreking te spelen en aan de gespecificeerde lokale tijd te hervatten, een middenrol en onderbreking te spelen en aan de gespecificeerde lokale tijd te hervatten, of geen ad onderbrekingen te spelen.
-

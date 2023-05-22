@@ -1,14 +1,13 @@
 ---
 title: Overzicht van Android SDK
 description: Overzicht van Android SDK
-source-git-commit: 326f97d058646795cab5d062fa5b980235f7da37
+exl-id: a1d98325-32a1-4881-8635-9a3c38169422
+source-git-commit: bfc3ba55c99daba561255760baf273b6538a3c6e
 workflow-type: tm+mt
 source-wordcount: '2707'
 ht-degree: 0%
 
 ---
-
-
 
 # Overzicht van Android SDK {#android-sdk-overview}
 

@@ -1,14 +1,13 @@
 ---
 title: Toegang tot de Android SDK Single Sign-On (SSO) voor Android 10-apps
 description: Toegang tot de Android SDK Single Sign-On (SSO) voor Android 10-apps
-source-git-commit: 326f97d058646795cab5d062fa5b980235f7da37
+exl-id: dedade15-c451-4757-b684-d3728e11dd87
+source-git-commit: bfc3ba55c99daba561255760baf273b6538a3c6e
 workflow-type: tm+mt
 source-wordcount: '377'
 ht-degree: 0%
 
 ---
-
-
 
 # Toegang tot de Android SDK Single Sign-On (SSO) voor Android 10-apps {#access-enabler-android-sdk-single-sign-on-sso-on-android-10-apps}
 
@@ -38,4 +37,3 @@ Afhankelijk van de **doel-SDK-niveau** of het gebruik van **android:requestLegac
 >[!TIP]
 >
 > Voordat de Adobe Primetime-verificatietoegang Access Enabler Android-SDK volledig compatibel is met opslag met bereik, kunt u tijdelijk weigeren op basis van het doel-SDK-niveau van uw app of het requestLegacyExternalStorage-manifestelement, zoals in het openbaar wordt uitgelegd [Android-documentatie](https://developer.android.com/training/data-storage/files/external-scoped#opt-out-of-scoped-storage).
-

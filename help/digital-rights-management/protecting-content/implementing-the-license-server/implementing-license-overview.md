@@ -2,14 +2,13 @@
 title: Overzicht van licentieserver
 description: Overzicht van licentieserver
 copied-description: true
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: 101d9f63-b9b9-4281-a069-8c66427b34cb
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '133'
 ht-degree: 0%
 
 ---
-
 
 # Overzicht {#license-server-overview}
 
@@ -26,4 +25,4 @@ Een licentieserver implementeren:
 
 Bovendien moet de server bedrijfslogica voor het voor authentiek verklaren van gebruikers verstrekken, bepalend of de gebruikers worden gemachtigd om inhoud te bekijken, en naar keuze vergunningsgebruik te volgen.
 
-Zie *Adobe Primetime DRM API Reference* voor meer informatie over de Java API.
+Zie *Adobe Primetime DRM API-naslaggids* voor meer informatie over de Java API.

@@ -1,14 +1,13 @@
 ---
 description: Wanneer gebruikers snel vooruit of snel terugspoelen door de media, zijn zij in de truc spelwijze. Als u de speelmodus voor truc wilt inschakelen, moet u de afspeelsnelheid van MediaPlayer instellen op een andere waarde dan 1.
 title: Snel vooruitspoelen en terugspoelen
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: 58ed9a96-9617-4364-81d4-b404b23cf265
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '202'
 ht-degree: 0%
 
 ---
-
 
 # Overzicht {#implement-fast-forward-and-rewind-overview}
 
@@ -16,9 +15,9 @@ Wanneer gebruikers snel vooruit of snel terugspoelen door de media, zijn zij in 
 
 U moet één waarde instellen om van snelheid te wisselen.
 
-1. Ga van normale spelwijze (1x) aan truc speelwijze door het tarief op `MediaPlayer` aan een toegestane waarde te plaatsen.
+1. Ga van normale speelwijze (1x) naar truc speelwijze door het tarief op te plaatsen `MediaPlayer` op een toegestane waarde.
 
-   * De klasse `MediaPlayerItem` definieert de toegestane afspeelsnelheden.
+   * De `MediaPlayerItem` -klasse definieert de toegestane afspeelsnelheden.
    * TVSDK selecteert de dichtstbijzijnde toegestane snelheid als de opgegeven snelheid niet is toegestaan.
 
    In dit voorbeeld wordt de interne afspeelsnelheid van de speler ingesteld op de gewenste snelheid.
@@ -51,9 +50,8 @@ U moet één waarde instellen om van snelheid te wisselen.
 
        TVSDK verzendt de volgende gebeurtenissen met betrekking tot truc-play:
    
-   * `AdobePSDK.PSDKEventType.RATE_SELECTED` wanneer de  `rate` waarde in een andere waarde verandert.
+   * `AdobePSDK.PSDKEventType.RATE_SELECTED` wanneer de `rate` De waarde verandert in een andere waarde.
 
    * `AdobePSDK.PSDKEventType.RATE_PLAYING` wanneer het afspelen wordt hervat met de geselecteerde frequentie.
 
       TVSDK verzendt beide gebeurtenissen wanneer de speler van de truc-spelmodus naar de normale afspeelmodus terugkeert.
-

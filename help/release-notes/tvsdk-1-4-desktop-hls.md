@@ -4,80 +4,79 @@ description: TVSDK voor Desktop HLS de Nota's van de Versie beschrijven wat nieu
 contentOwner: asgupta
 products: SG_PRIMETIME
 topic-tags: release-notes
-translation-type: tm+mt
-source-git-commit: b33240bf1b42b80389cd95a7ae4d3f85185a2d32
+exl-id: 5e227c99-acf6-4b16-a35a-68e2928fdbfd
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
-source-wordcount: '5196'
+source-wordcount: '5195'
 ht-degree: 0%
 
 ---
 
-
-# TVSDK 1.4 voor Opmerkingen bij de release van Desktop HLS {#tvsdk-for-desktop-hls-release-notes}
+# Opmerkingen bij de release TVSDK 1.4 voor desktop HLS {#tvsdk-for-desktop-hls-release-notes}
 
 De Nota&#39;s van de Versie van TVSDK voor Desktop HLS beschrijven wat nieuw of veranderd, de opgeloste, en bekende kwesties in TVSDK DHLS is.
 
 ## Nieuwe functies {#new-features}
 
-**1.4.31.**
+**1.4.31**
 
 * **Ondersteuning voor meerdere CDN&#39;s voor CRS-advertenties**
 
    * Standaard worden alle getranscodeerde elementen gehost op een CDN die eigendom is van een Adobe op Akamai. Met de nieuwste release biedt de Adobe Creative Repackaging Service (CRS) u de mogelijkheid om de getranscodeerde creatieven te uploaden naar meerdere CDN&#39;s, zoals opgegeven door de klant.
    * Nieuwe API&#39;s worden toegevoegd aan TVSDK om het opgeven van de uiteindelijke creatieve CRS-URL mogelijk te maken wanneer de standaard-URL niet wordt gebruikt. Raadpleeg de documentatie voor meer informatie over het gebruik van deze nieuwe API&#39;s.
 
-### Nieuwe functies in de vorige releases {#new-features-previous}
+### Nieuwe functies in de vorige versies {#new-features-previous}
 
-**1.4.30.**
+**1.4.30**
 
 * **Factureringscijfers**
 
 Om klanten aan te passen die slechts voor wat willen betalen zij, eerder dan een vast tarief ongeacht werkelijk gebruik, Adobe gebruiksmetriek verzamelen en deze metriek gebruiken om te bepalen hoeveel om de klanten in rekening te brengen.
 
-**1.4.24.**
+**1.4.24**
 
 * **Blijvende netwerkverbinding**
 
 Belangrijk: U moet ten minste Adobe Flash Player versie 22 of hoger hebben geïnstalleerd.
 Met continue netwerkverbindingen wordt een interne lijst met netwerkverbindingen gemaakt en opgeslagen die opnieuw kan worden gebruikt voor meerdere aanvragen, in plaats van een nieuwe verbinding voor elke netwerkaanvraag te openen. Blijvende netwerkverbindingen moeten de efficiëntie verhogen en de latentie in uw netwerkcode verminderen.
 
-In deze versie wordt deze functie niet ondersteund in Apple Safari en Mozilla Firefox op een Mac.
+In deze release wordt deze functie niet ondersteund in Apple Safari en Mozilla Firefox op een Mac.
 
-**1.4.19.**
+**1.4.19**
 
 * Ondersteuning voor streamintegriteit voor VPAID-advertenties.
 * De optie voor het dempen van het tabblad in Flash Player FP 20.0.0.267 voor Firefox 42 en hoger is ingeschakeld door het hanteerprobleem op te lossen.
 
-**1.4.18.**
+**1.4.18**
 
-* Primetime Desktop HLS TVSDK ondersteunt nu VPAID 2.0 Lineaire SWF-creatieven om een rijke interactieve in-stream ad-ervaring mogelijk te maken.
+* Primetime-desktop HLS TVSDK ondersteunt nu VPAID 2.0 Lineaire SWF-creatieven om een rijke interactieve in-stream-advertentie-ervaring mogelijk te maken.
 
-**1.4.10.**
+**1.4.10**
 
-* **Ad Fallback, Daisy chaining in ad selection logic (Zendesk #3103)** For VAST ads (creatives) with the fallback rule enabled, the TVSDK behandelt een advertentie met een ongeldig MIME type als een lege advertentie en probeert in plaats daarvan fallback-advertenties te gebruiken. U kunt bepaalde aspecten van fallback-gedrag configureren.
+* **Ad Fallback, Daisy chaining in ad selection logic (Zendesk #3103)** Voor VAST-advertenties (creatieven) waarvoor de terugvalregel is ingeschakeld, behandelt de TVSDK een advertentie met een ongeldig MIME-type als een lege advertentie en probeert deze om terugvaladvertenties te gebruiken. U kunt bepaalde aspecten van fallback-gedrag configureren.
 
-Zie [Extra fallback voor VAST- en VMAP-advertenties](../programming/tvsdk-1.4-for-android/ad-insertion/ad-fallback/android-1.4-ad-fallback.md) voor meer informatie.
+Zie voor meer informatie [Extra fallback voor VAST- en VMAP-advertenties](../programming/tvsdk-1.4-for-android/ad-insertion/ad-fallback/android-1.4-ad-fallback.md).
 
-**1.4.8.**
+**1.4.8**
 
 * **Video Heartbeats Library (VHL) bijgewerkt naar versie 1.5**
 
    * Mogelijkheid om metagegevens te verzenden met het starten van de video en/of het starten van de video/advertentie/hoofdstuk als contextgegevens
    * Minder netwerkverkeer - De hartslagen zijn gemiddeld minder en kleiner in grootte.
 
-**1.4.7.**
+**1.4.7**
 
 * **Ondersteuning voor individuele support op locatie**
 
 Steun voor op-gebouw installaties van de Server van de Individualisering van de Adobe om het de individualisatieverzoek van de cliënt aan te passen om naar een verschillend eindpunt te gaan.
 
-**1.4.6.**
+**1.4.6**
 
 * **Voorbeeld-AES-codering (vereist Flash Player versie 17.0.0.134)**
 
 AES-codering op basis van voorbeelden wordt nu ondersteund.
 
-**1.4.2.**
+**1.4.2**
 
 * **Video Heartbeats Library (VHL)-update naar versie 1.4.0.1**
 
@@ -85,11 +84,11 @@ AES-codering op basis van voorbeelden wordt nu ondersteund.
    * Het bijhouden van advertenties is geoptimaliseerd door de methoden trackAdBreakStart en trackAdBreakComplete te verwijderen. Het ad-einde wordt afgeleid van de methodeaanroepen trackAdStart en trackAdComplete.
    * De eigenschap playhead is niet meer nodig bij het bijhouden van advertenties.
 
-**1.4.0.**
+**1.4.0**
 
-* **Blackout Signaling With Alternate Content** ReplacementAls onderdeel van de 1.4 TVSDK-update ondersteunt de TVSDK nu ook het in- en terugkeren van regionale black-outs tegen lineaire inhoud. De TVSDK kan nu twee manifestbestanden parallel, hoofdbestand en alternatief verwerken om te controleren op uitstroomsignalen, zelfs wanneer alternatieve programmering wordt weergegeven in plaats van de oorspronkelijke programmering.
+* **Blackout-signalering met vervanging van alternatieve inhoud** In het kader van de 1.4-TVSDK-update ondersteunt de TVSDK nu ook het in- en terugkeren van regionale stroomuitval tegen lineaire inhoud. De TVSDK kan nu twee manifestbestanden parallel, hoofdbestand en alternatief verwerken om te controleren op uitstroomsignalen, zelfs wanneer alternatieve programmering wordt weergegeven in plaats van de oorspronkelijke programmering.
 
-* **C3** Ads verwijderen/vervangenEr is nu geen extra voorbereidend werk nodig om nieuwe advertenties dynamisch in video-op-verzoek (VOD) activa op te nemen die uit het C3 venster komen. De TVSDK beschikt nu over een API waarmee u aangepaste inhoudsbereiken kunt verwijderen en dynamisch nieuwe advertenties kunt invoegen. Deze krachtige nieuwe functionaliteit is ook handig in gevallen waarin live/lineaire inhoud tijdens de uitzending wordt gerepareerd en onmiddellijk wordt afgetrokken voor gebruik als inhoud op aanvraag zonder dat er voldoende tijd is om het element &#39;schoon&#39; te maken.
+* **C3-advertenties verwijderen/vervangen** Er is nu geen extra voorbereidend werk nodig om nieuwe advertenties dynamisch in video-op-verzoek (VOD)-elementen in te voegen die uit het C3-venster komen. De TVSDK beschikt nu over een API waarmee u aangepaste inhoudsbereiken kunt verwijderen en dynamisch nieuwe advertenties kunt invoegen. Deze krachtige nieuwe functionaliteit is ook handig in gevallen waarin live/lineaire inhoud tijdens de uitzending wordt gerepareerd en onmiddellijk wordt afgetrokken voor gebruik als inhoud op aanvraag zonder dat er voldoende tijd is om het element &#39;schoon&#39; te maken.
 
 ## Opgeloste problemen {#resolved-issues}
 
@@ -292,7 +291,7 @@ De volgende bibliotheken zijn bijgewerkt:
 
 Dit probleem is opgelost door een viewport met hoogte nul te gebruiken om het werkgebied te vullen wanneer een VPAID-advertentie wordt afgespeeld.
 
-* Zendesk #22110 - Analytics: Voeg een veld h:sc:ssl toe aan aanroepen voor het bijhouden van de hartslag
+* Zendesk #22110 - Analytics: Een h toevoegen:sc:ssl gebied aan de hartslag volgende vraag
 
 De problemen met SSL zijn opgelost en de VHL-bibliotheek die wordt gebruikt in TVSDK, is bijgewerkt naar de nieuwste versie.
 
@@ -354,7 +353,7 @@ In deze release is de time-out voor algemene advertenties toegevoegd.
 
 **Versie 1.4.21** (782)
 
-* Zendesk #19580 TVSDK wacht op voltooiing van de inhoudsoplosser voordat u `PTTimedMetadataChangedNotification`-berichten verzendt
+* Zendesk #19580 TVSDK wacht op voltooiing van de contentoplosser voordat deze wordt verzonden `PTTimedMetadataChangedNotification` meldingen
 
 **Opmerking**: Voor dit probleem is Flash Player 21.0.0.182 of hoger vereist.
 
@@ -401,7 +400,7 @@ Dit probleem is opgelost door de TVSDK toe te staan het manifest (HLS-subprofiel
 
 **Opmerking**: Voor dit probleem is Flash Player 20.0.0.306 of hoger vereist.
 
-De soms optredende hek bij het zoeken in Google Chrome werd opgelost door de query&#39;s af te sluiten, als het te lang duurt om een antwoord te krijgen of als de socket wordt afgesloten.
+De incidentele hek die optrad bij het zoeken in Google Chrome, werd opgelost door de query&#39;s af te sluiten, als het te lang duurt om een antwoord te krijgen of als de socket wordt afgesloten.
 
 * Zendesk #19305 - Het afspelen van de hap vond plaats bij het afspelen van een stream met A/V-discontinuïteit.
 
@@ -652,13 +651,13 @@ Het zoeken naar jokertekens voor jokertekens in gevallen waarin pageDomain ander
 
 * Zendesk #3249 - TVSDK Web Player crashes Flash op Firefox
 
-Probleem verholpen waarbij Firefox op de Mac soms vastliep terwijl een stream, die op een externe monitor wordt afgespeeld, overschakelde naar een hogere bitsnelheidsstream.(vereist Flash Player 18.0.0.160)
+Probleem verholpen waarbij Firefox af en toe vastliep terwijl een Flash Player op Mac bij een stream die op een externe monitor wordt afgespeeld, zou overschakelen op een hogere bitsnelheidsstream.(vereist Flash Player 18.0.0.160)
 
-* Zendesk #3268 - Desktop: De videospeler begint na 40/50 seconden met flikkeren en begint na `+-` 90 seconden met zwart`+-`
+* Zendesk #3268 - Desktop: De videospeler begint te flikkeren na `+-` 40/50 seconden en begint met zwart na `+-` 90 seconden
 
 Probleem verholpen met Mac Chrome waarbij de stream zou gaan flikkeren en uiteindelijk zwart zou worden. (vereist Flash Player 18.0.0.161)
 
-* Zendesk #3304 - VAST 3.0 `[ERRORCODE]` macro wordt niet gevuld
+* Zendesk #3304 - VAST 3.0 `[ERRORCODE]` macro niet gevuld
 
    * foutcode 400 wordt weergegeven als deze inline is en slecht creatief is.
    * `[ERRORCODE]` macro wordt URL-gecodeerd
@@ -708,7 +707,7 @@ Mime-typen voor HLS-indeling waren hoofdlettergevoelig, dit was onjuist en is ge
 **Versie 1.4.4**
 
 * Zendesk #1561 - Re: `[Adobe Primetime]` Bijwerken: HLS client based failover support for PROGRAM-DATE-TIME in Desktop PSDK (vereist Flash Player versie 16.0.0.305 of hoger)
-* Zendesk #2197 - `[Ads]` Bijhouden en fouten
+* Zendesk #2197 - `[Ads]` Traceren en fouten
 * Zendesk #2286 - Aanvraag van functies: Geef informatie op over de status voor het laden van advertenties (VPAID)
 * Zendesk #2285 - Aanvraag van functies: Advertenties na een opgegeven tijdsduur overslaan
 * Bug #3921755 - OpenSSL-bibliotheekupdate naar versie 1.0.1L in Flash Player (vereist Flash Player versie 16.0.0.305 of hoger)
@@ -718,12 +717,12 @@ Mime-typen voor HLS-indeling waren hoofdlettergevoelig, dit was onjuist en is ge
 * Zendesk #1303 - Verticale verschuiving voor Closed Caption (vereist Flash Player versie 16.0.0.235 of hoger, verwachte releasedatum: december 2014)
 * Zendesk #1870 - Closed Caption On &amp; Off (vereist Flash Player versie 16.0.0.235 of hoger, verwachte releasedatum: december 2014)
 * Zendesk #2110 - Afspelen blijft vastzitten nadat is geprobeerd het volledige scherm te betreden tijdens een VPAID-advertentie (vereist Flash Player versie 16.0.0.235 of hoger, verwachte releasedatum: december 2014)
-* Zendesk #2199 - `[VPAID]` Player reageert niet tijdens het zoeken naar voorbij en onderbreking
+* Zendesk #2199 - `[VPAID]` Speler reageert niet wanneer u naar een verleden en een onderbreking zoekt
 * Zendesk #2358 - Re: `[Analytics]` Onjuiste hoofdstukgegevens
 
 **Versie 1.4.1**
 
-* De bijgewerkte Blackouts API is consistent met de Android- en iOS-implementatie.
+* De bijgewerkte Blackouts-API is consistent met de Android- en iOS-implementatie.
 
 **Versie 1.4.0**
 
@@ -736,7 +735,7 @@ Mime-typen voor HLS-indeling waren hoofdlettergevoelig, dit was onjuist en is ge
 * Closed Caption werkt niet met alleen-audio inhoud omdat het bijschriftsysteem video nodig heeft om te werken.
 Zonder video is er geen viewport-dimensie en zonder viewport-dimensie kunt u geen afbeeldingen voor bijschriften weergeven.
 * De streamintegriteit in Google Chrome is iets trager vanwege beperkingen in de Chrome-sandbox.
-* Als u autoPlay uitschakelt in TVSDK 1.4, kan een DRM-fout optreden wanneer de speler minstens een minuut inactief blijft. Om dit probleem te omzeilen, wanneer u autoPlay uitschakelt maar elementen vooraf laadt, wijzigt u `ReferenceCore.as` door de inhoud van `onPlaybackManagerPrepared` te wijzigen:
+* Als u autoPlay in TVSDK 1.4 uitschakelt, kan een DRM-fout optreden wanneer de speler minstens een minuut inactief blijft. Als u dit probleem wilt oplossen, wanneer u autoPlay uitschakelt maar elementen vooraf laadt, wijzigt u `ReferenceCore.as` door de inhoud van `onPlaybackManagerPrepared`:
 
 ```
 if (_playbackManager.autoPlay) {
@@ -749,14 +748,14 @@ _playbackManager.pause();
 
 * **Versie 1.4.13** PTPLAY-8501 - Wanneer VMAP twee directe MP4 niet-getranscodeerde advertenties terugkeert, de zelfde daling terug en speelt tweemaal.
 
-* **Versie 1.4.2** In versie 16 van Flash Player werd een kwestie geïdentificeerd met ABR &quot;omschakelings neer&quot;logica, nadat de speler in een lege het bufferen gebeurtenis wordt. Het probleem voorkomt dat de bitsnelheid in slechte bandbreedteomgevingen omlaag gaat wanneer de speler in een bufferstatus komt. Om rond de kwestie te werken, laat uw app plaatsen `BufferControlParameters.initialBufferTime` om het zelfde als `BufferControlParameters.playbackBufferTime` tijdelijk tijdens de bufferstaat (namelijk op een `BufferEvent.BUFFERING_BEGIN` gebeurtenis) te zijn dan het terugstellen aan de vastgestelde waarden op `BufferEvent.BUFFERING_END` gebeurtenis. De oplossing voor dit probleem is beschikbaar in de volgende patchrelease van Flash Player versie 16.
+* **Versie 1.4.2** In versie 16 van Flash Player werd een kwestie geïdentificeerd met ABR &quot;omschakelings neer&quot;logica, nadat de speler in een lege het bufferen gebeurtenis wordt. Het probleem voorkomt dat de bitsnelheid in slechte bandbreedteomgevingen omlaag gaat wanneer de speler in een bufferstatus komt. Als u dit probleem wilt verhelpen, stelt u uw app in op de knop `BufferControlParameters.initialBufferTime` gelijk zijn aan `BufferControlParameters.playbackBufferTime` tijdelijk tijdens de bufferstatus (dat wil zeggen op een `BufferEvent.BUFFERING_BEGIN` (gebeurtenis) en herstel deze vervolgens naar de ingestelde waarden op `BufferEvent.BUFFERING_END` gebeurtenis. De oplossing voor dit probleem is beschikbaar in de volgende patchrelease van Flash Player versie 16.
 
 * **Versie 1.4.0**
 
    * PTPLAY-1634 - de zelfde Geabonneerde markering heeft verschillende timestamps in verschillende levende vensters. Wanneer levende vensters zich bewegen, zou de zelfde markering in elk van hen zelfde timestamps moeten hebben. Soms hebben dezelfde tags echter verschillende tijdstempels.
    * PTPLAY-28 - De tijdlijn van MediaPlayer bevat geen lege einden.
    * Een bestand met interdomeinbeleid (crossdomain.xml) is vereist voor machtigingen om inhoud van een ander domein te streamen. [Een bestand crossdomain.xml instellen voor HTTP-streaming](https://www.adobe.com/devnet/adobe-media-server/articles/cross-domain-xml-for-streaming.html).
-   * Bug #3694203 - In een DVR-stream kan het zoeken vanuit een rol halverwege de rol naar een andere medio-roll activering leiden tot blokkering van de browser
+   * Bug #3694203 - In een DVR-stream kan het zoeken vanuit een rol halverwege de rol naar een andere mid-roll advertentie leiden tot blokkering van de browser
    * Bug #3753725 - selectPolicyForSeekIntoAd houdt geen rekening als het ad-einde is gecontroleerd
    * Bug #3754529 - Pre-roll advertenties worden niet verwijderd uit de stream wanneer ze terug zoeken in een live DVR-stream
    * Bug #3761896 - Als zoeken tijdens het afspelen van een advertentie is toegestaan, worden de advertentiemarkeringen na het zoeken opnieuw aangepast. De oplossing moet niet ITEM_UPDATED callback tijdens zoekactie gebruiken
@@ -765,4 +764,4 @@ _playbackManager.pause();
 
 ## Nuttige bronnen {#helpful-resources}
 
-* Zie de volledige Help-documentatie op de pagina [Adobe Primetime Learn &amp; Support](https://helpx.adobe.com/support/primetime.html).
+* Zie de volledige Help-documentatie op [Adobe Primetime - Meer informatie en ondersteuning](https://helpx.adobe.com/support/primetime.html) pagina.

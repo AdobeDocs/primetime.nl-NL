@@ -2,14 +2,13 @@
 title: Wachtwoorden versleutelen
 description: Wachtwoorden versleutelen
 copied-description: true
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: 97b78e00-e5e3-4a9d-8eab-fcf96d3b1219
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '54'
 ht-degree: 0%
 
 ---
-
 
 # Wachtwoorden versleutelen{#encrypt-passwords}
 
@@ -21,4 +20,3 @@ Met deze opdracht wordt een versleuteld wachtwoord uitgevoerd dat u vervolgens i
 
 >[!NOTE]
 >Dit is niet het nut dat voor het coderen van de wachtwoorden van de Server van de Vergunning wordt gebruikt.
-

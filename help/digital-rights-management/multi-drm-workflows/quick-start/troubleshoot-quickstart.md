@@ -1,20 +1,19 @@
 ---
 description: De gemeenschappelijke problemen tijdens het testen impliceren vaak uw authenticators ExpressPlay, vervoerprotocollen, en vereiste parameters van het de dienstverzoek.
 title: Problemen met uw snelstartoplossing oplossen
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: d8908f9c-98f4-4100-a003-d3b990105dee
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '446'
 ht-degree: 0%
 
 ---
 
-
-# Problemen met uw snelstartverbinding oplossen{#troubleshooting-your-quick-start}
+# Problemen met uw snelstartoplossing oplossen{#troubleshooting-your-quick-start}
 
 De gemeenschappelijke problemen tijdens het testen impliceren vaak uw authenticators ExpressPlay, vervoerprotocollen, en vereiste parameters van het de dienstverzoek.
 
-Als uw [!DNL curl] verzoeken om ExpressPlay voor symbolengeneratie ontbreken, zal het antwoordlichaam een foutenmelding bevatten die de reden voor mislukking verklaart.
+Als uw [!DNL curl] De verzoeken aan ExpressPlay voor symbolische generatie ontbreken, zal het reactiekarakter een foutenmelding bevatten die de reden voor mislukking verklaart.
 
 Als het genereren van een token is gelukt maar de inhoud nog steeds niet wordt afgespeeld, controleert u de aflossingslogboeken voor de ExpressPlay-token op fouten zoals &quot;Verlopen token&quot;.
 
@@ -22,9 +21,9 @@ Als het genereren van het token is gelukt en er geen fout is opgetreden en de vi
 
 Daarnaast:
 
-* Controleer of u de correcte Authenticator van de Klant in uw de dienstverzoeken gebruikt. Het is gemakkelijk om de productieauthenticator per ongeluk te gebruiken wanneer u de testauthenticator wilde gebruiken. Ook, zorg ervoor u *uw* authentificator gebruikt. Tijdens het testen kunt u bijvoorbeeld de opdracht `curl` van iemand anders lenen en vergeten de authenticator voor zijn of haar authenticator in te wisselen.
+* Controleer of u de correcte Authenticator van de Klant in uw de dienstverzoeken gebruikt. Het is gemakkelijk om de productieauthenticator per ongeluk te gebruiken wanneer u de testauthenticator wilde gebruiken. Zorg er ook voor dat u *uw* authenticator. Tijdens het testen kunt u bijvoorbeeld iemand anders lenen `curl` en vergeet de authenticator van de persoon of personen te wisselen.
 
-* Controleer of u het juiste transportprotocol gebruikt in uw aanvragen of in uw manifesten ( `https://` versus `https://`, of in het geval van FairPlay, `skd://` versus `https://` versus `https://`.
+* Controle dat u het juiste vervoerprotocol in uw verzoeken of in uw manifests gebruikt ( `https://` versus `https://`of in het geval van FairPlay `skd://` versus `https://` versus `https://`.
 
 * Zorg ervoor dat u alle vereiste vraagparameters voor de oplossing DRM omvat u met werkt. Het is gemakkelijk om tussen PlayReady en Widevine bijvoorbeeld te worden verward, omdat zij allebei met DASH werken, maar de vereiste verzoekparameters en verpakkingsconfiguraties zijn verschillend.
 * Bevestig dat je ExpressPlay-account voldoende token-credits heeft en nog niet is gebruikt.
@@ -39,4 +38,3 @@ Daarnaast:
 
 * Vanaf TVSDK 2.4 ondersteunen alleen AndroidTV-apparaten doorgaans zowel PlayReady- als Windows-DRM&#39;s. Alle andere Android-apparaten ondersteunen doorgaans alleen Widevine.
 * Vanaf TVSDK 2.4 vereist de Android-TVSDK momenteel dat het vak PSSH zich in het .mpd-manifest bevindt. Dit is in strijd met de norm DASH, die specificeert dat de doos PSSH overal, zoals in de inhoud zelf, en niet alleen in .mpd kan zijn.
-

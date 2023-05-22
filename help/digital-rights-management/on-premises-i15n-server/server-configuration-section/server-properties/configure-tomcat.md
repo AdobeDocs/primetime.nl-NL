@@ -2,20 +2,19 @@
 title: Tomcat configureren
 description: Tomcat configureren
 copied-description: true
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: 766b66dd-6070-4b0d-a860-a426fca05e56
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '169'
 ht-degree: 0%
 
 ---
 
+# Tomcat configureren{#configure-tomcat}
 
-# Tomcat{#configure-tomcat} configureren
+Pas op de Individualization-server Tomcat&#39;s aan [!DNL conf/server.xml] dossier om extra informatie in het toegangslogboek te omvatten. U kunt deze gegevens gebruiken voor rapportagedoeleinden.
 
-Wijzig op de Individualization-server het [!DNL conf/server.xml]-bestand van Tomcat om aanvullende informatie op te nemen in het toegangslogboek. U kunt deze gegevens gebruiken voor rapportagedoeleinden.
-
-1. Zoek de configuratie voor `AccessLogValve` in [!DNL server.xml] en wijzig het patroon zoals hier getoond:
+1. Zoek de configuratie voor de `AccessLogValve` in [!DNL server.xml] en wijzig het patroon zoals hieronder getoond:
 
    ```
    <Valve className="org.apache.catalina.valves.AccessLogValve" 
@@ -24,13 +23,12 @@ Wijzig op de Individualization-server het [!DNL conf/server.xml]-bestand van Tom
    %{request-id}r" resolveHosts="false"/>
    ```
 
-   `%{x-forwarded-for}i` Hiermee wordt de waarde van de  `x-forwarded-for` koptekst vastgelegd. Als u een Apache reverse-proxy gebruikt om aanvragen door te sturen naar de Tomcat-server, bevat deze header het IP-adres van de oorspronkelijke client, terwijl `%h` het IP-adres van de Apache-server opneemt. `%{request-id}r` zal het verzoek herkenningsteken registreren, dat aan verzoek identiteitskaart in het Van de Individualisatietoepassing logboek beantwoordt.
+   `%{x-forwarded-for}i` registreert de waarde van `x-forwarded-for` header. Als u een Apache reverse-proxy gebruikt om verzoeken door te sturen naar de Tomcat-server, bevat deze header het IP-adres van de oorspronkelijke client, terwijl `%h` neemt het IP-adres van de Apache-server op. `%{request-id}r` zal het verzoek herkenningsteken registreren, dat aan verzoek identiteitskaart in het Van de Individualisatietoepassing logboek beantwoordt.
 
-1. Bewerk [!DNL conf/server.xml] en stel de eigenschap `unpackwars` in op false.
+1. Bewerken [!DNL conf/server.xml] en stelt de `unpackwars` eigenschap in op false.
 
-   Voor zowel de servers van de Individualisering als van de Zeer belangrijke Generatie, is het een goed idee om [!DNL conf/server.xml] uit te geven en `unpackwars` te plaatsen bezit aan `false`. Anders, wanneer u WARs bijwerkt, kunt u de onverpakte omslagen van de OORLOG ook moeten zuiveren.
+   Voor zowel de servers van de Individualisering als van de Zeer belangrijke Generatie, is het een goed idee om uit te geven [!DNL conf/server.xml] en stelt de `unpackwars` eigenschap aan `false`. Anders, wanneer u WARs bijwerkt, kunt u de onverpakte omslagen van de OORLOG ook moeten zuiveren.
 
 >[!NOTE]
 >
 >Toekomstige DRM-clients vereisen dat u het filter CORS (Cross-Origin Resource Sharing) dat beschikbaar is voor Tomcat inschakelt en configureert. Momenteel hebben geen DRM-clients deze vereiste.
-

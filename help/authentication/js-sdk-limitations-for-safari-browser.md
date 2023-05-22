@@ -1,7 +1,8 @@
 ---
 title: Beperkingen van JS SDK voor Safari-browser
 description: Beperkingen van JS SDK voor Safari-browser
-source-git-commit: 326f97d058646795cab5d062fa5b980235f7da37
+exl-id: 5e5c3b36-ee09-49e0-b5b7-83b24854d69d
+source-git-commit: bfc3ba55c99daba561255760baf273b6538a3c6e
 workflow-type: tm+mt
 source-wordcount: '1804'
 ht-degree: 0%
@@ -167,4 +168,3 @@ Wanneer [N130](/help/authentication/error-reporting.md#advanced-error-codes-refe
 * In het geval van Mac OS X Sierra en previous: Controle t</span>hij &quot;**Altijd toestaan**&quot; te gebruiken voor de &quot;**Cookies en websitegegevens**&quot;-item op het tabblad Privacy van de browser via Voorkeuren, zoals in de onderstaande afbeelding wordt weergegeven.
 
    ![](assets/always-allow-safari13.png)
-

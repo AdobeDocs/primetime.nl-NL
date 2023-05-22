@@ -1,16 +1,15 @@
 ---
 description: U kunt de huidige en resterende tijd weergeven van de inhoud die wordt afgespeeld.
 title: Een zoekbalk weergeven met de huidige positie van de afspeeltijd
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: 2093ee96-84fe-4011-ba18-275f2bf960ca
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '62'
 ht-degree: 0%
 
 ---
 
-
-# Een zoekscrubbalk weergeven met de huidige positie van de afspeeltijd {#display-a-seek-scrub-bar-with-the-current-playback-time-position}
+# Een zoekbalk weergeven met de huidige positie van de afspeeltijd {#display-a-seek-scrub-bar-with-the-current-playback-time-position}
 
 U kunt de huidige en resterende tijd weergeven van de inhoud die wordt afgespeeld.
 

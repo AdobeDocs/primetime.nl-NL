@@ -1,16 +1,15 @@
 ---
 description: Browser-TVSDK ondersteunt momenteel het afspelen van streams waarbij manifesten en fragmenten geen extensies bevatten.
 title: Uitbreidbare stromen
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: ef81bfd2-2bfa-4ff7-b826-fd80802b3c07
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '149'
 ht-degree: 0%
 
 ---
 
-
-# Extra stromen{#extensionless-streams}
+# Uitbreidbare stromen{#extensionless-streams}
 
 Browser-TVSDK ondersteunt momenteel het afspelen van streams waarbij manifesten en fragmenten geen extensies bevatten.
 
@@ -20,7 +19,7 @@ Browser TVSDK ontleedt de eerste bytes van de reactie om het inhoudstype van fra
 
 ## Manifestniveau {#section_AAD9EBAC883D4CC3A0133A45B555EECF}
 
-Browser TVSDK gebruikt de `mediaResource.resourceType` parameter die in `replaceCurrentResource` methode wordt overgegaan om het inhoudstype van manifestURL te ontdekken. Zie de klasse `AdobePSDK.MediaPlayer` voor meer informatie.
+Browser TVSDK gebruikt de `mediaResource.resourceType` parameter die wordt doorgegeven in het dialoogvenster `replaceCurrentResource` methode om het inhoudstype van manifest-URL te detecteren. Zie voor meer informatie de `AdobePSDK.MediaPlayer` klasse.
 
 In de speler van het Kader UI, kunt u het middeltype in media middel als volgt specificeren:
 
@@ -35,9 +34,8 @@ var playerWrapper = ptp.videoPlayer('.videoDiv', {
 }); 
 ```
 
-Als `resourceType` niet wordt verstrekt, bepaalt het Kader UI het middeltype van middel URL uitbreiding, die dan tot `replaceCurrentResource` methode wordt overgegaan.
+Indien `resourceType` wordt niet verstrekt, bepaalt het Kader UI het middeltype van middel URL uitbreiding, die dan wordt overgegaan tot `replaceCurrentResource` methode.
 
 >[!TIP]
 >
->Voor uitbreiding-minder manifest, zorg ervoor dat `resourceType` altijd wordt overgegaan terwijl het laden van een middel in het Kader UI.
-
+>Voor manifest zonder uitbreiding, zorg ervoor dat `resourceType` wordt altijd overgegaan terwijl het laden van een middel in het Kader UI.

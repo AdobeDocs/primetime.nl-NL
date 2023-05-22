@@ -1,14 +1,13 @@
 ---
 description: Deze handleiding bevat informatie over hoe u videospelertoepassingen kunt ontwikkelen met behulp van TVSDK voor Android, die in Java is geïmplementeerd.
 title: Productoverzicht, publiek en deze handleiding
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: 85d7ff0f-a024-4cde-84e6-35f5b7adae86
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '255'
 ht-degree: 0%
 
 ---
-
 
 # Overzicht {#audience}
 
@@ -16,11 +15,11 @@ Deze handleiding bevat informatie over hoe u videospelertoepassingen kunt ontwik
 
 <!--<a id="section_FC24E86A2E6442B8A3769160769BBDFA"></a>-->
 
-* Voor een lijst van de eigenschappen die door TVSDK worden gesteund, zie [De eigenschappen van TVSDK van Primetime](../../../tvsdk-3x-android-prog/android-3x-introduction/overview-prod-audience-guide/android-3x-overview-of-the-player.md).
-* Zie [Vereisten](../../../tvsdk-3x-android-prog/android-3x-introduction/android-3x-requirements.md) voor specifieke hardware- en softwarevereisten voor het gebruik van TVSDK.
-* Zie [TVSDK Android-API&#39;s](https://help.adobe.com/en_US/primetime/api/psdk/javadoc3.5/index.html) voor een lijst met beschikbare API&#39;s.
+* Voor een lijst met functies die door TVSDK worden ondersteund, raadpleegt u [Functies van Primetime TVSDK](../../../tvsdk-3x-android-prog/android-3x-introduction/overview-prod-audience-guide/android-3x-overview-of-the-player.md).
+* Voor specifieke hardware- en softwarevereisten voor het gebruik van TVSDK raadpleegt u [Vereisten](../../../tvsdk-3x-android-prog/android-3x-introduction/android-3x-requirements.md).
+* Voor een lijst met beschikbare API&#39;s raadpleegt u [TVSDK Android-API&#39;s](https://help.adobe.com/en_US/primetime/api/psdk/javadoc3.5/index.html).
 
-## Overzicht van product {#section_9664959F25C948878F2F7EF3D360CA95}
+## Overzicht van producten {#section_9664959F25C948878F2F7EF3D360CA95}
 
 TVSDK bevat API-beschrijvingen en codevoorbeelden waarmee u geavanceerde videofunctionaliteit, inhoudsbeveiliging en reclamefuncties in uw speler kunt integreren. Met Java kunt u een gebruikersinterface voor een videospeler maken. Met TVSDK kunt u die gebruikersinterface aansluiten op de mediaspeler. Op deze manier kunt u video&#39;s en reclame afspelen op basis van mediapresentaties. U kunt TVSDK ook gebruiken om informatie over de video op te halen, veiligheid te behandelen, en playback te controleren en te controleren.
 
@@ -28,7 +27,7 @@ TVSDK bevat API-beschrijvingen en codevoorbeelden waarmee u geavanceerde videofu
 
 In deze handleiding wordt ervan uitgegaan dat u begrijpt hoe u toepassingen en videospelers kunt ontwikkelen met behulp van Java. U implementeert de gebruikersinterface van uw videospeler in Java en voegt de functies voor TVSDK die u nodig hebt in.
 
-## Informatie over deze handleiding {#section_9A5B2FC506B34B5DB71CA827B307A4D0}
+## Over deze handleiding {#section_9A5B2FC506B34B5DB71CA827B307A4D0}
 
 Deze handleiding bevat informatie waarmee u TVSDK-functies in een videospeler kunt opnemen met Java op Android-apparaten.
 
@@ -36,6 +35,6 @@ Deze handleiding bevat informatie waarmee u TVSDK-functies in een videospeler ku
 
 >[!TIP]
 >
->Het prefix van de TVSDK API-naamruimte [!DNL com.adobe.mediacore] wordt vaak weggelaten voor beknoptheid.
+>Het prefix voor de TVSDK API-naamruimte [!DNL com.adobe.mediacore] wordt vaak weggelaten om kort te zijn.
 >
 >Er wordt naar veel API-elementen verwezen zonder de aanduiding van de bovenliggende klasse als de context duidelijk is.

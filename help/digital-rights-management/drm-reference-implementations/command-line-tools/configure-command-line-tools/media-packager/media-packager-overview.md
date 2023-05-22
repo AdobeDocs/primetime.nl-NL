@@ -2,26 +2,25 @@
 title: Overzicht
 description: Overzicht
 copied-description: true
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: 866b3147-c28b-41b0-8653-06ba867354c5
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '1315'
 ht-degree: 0%
 
 ---
 
-
 # DRM Media Packager {#media-packager}
 
-Gebruik Media Packager ( [!DNL AdobePackager.jar]) om een DRM-beleid op te geven dat op uw inhoud moet worden toegepast en om op te geven welk deel van de inhoud moet worden gecodeerd. U kunt bijvoorbeeld opgeven dat de videogegevens moeten worden gecodeerd door de pakketsoftware, maar niet door de audiogegevens.
+Media Packager gebruiken ( [!DNL AdobePackager.jar]) om een DRM-beleid op te geven dat op uw inhoud moet worden toegepast en om op te geven welk deel van de inhoud moet worden gecodeerd. U kunt bijvoorbeeld opgeven dat de videogegevens moeten worden gecodeerd door de pakketsoftware, maar niet door de audiogegevens.
 
-Voordat u [!DNL AdobePackager.jar] uitvoert, moet u eigenschappen instellen in de sectie Eigenschappen van Media Packager van het configuratiebestand.
+Voordat u gaat werken [!DNL AdobePackager.jar], moet u eigenschappen in de sectie van de Eigenschappen van Media Packager van uw configuratiedossier plaatsen.
 
 >[!NOTE]
 >
 >U kunt ook alle eigenschappen van Media Packager opgeven via de opdrachtregel.
 
-## Opdrachtregelgebruik van Media Packager {#media-packager-command-line-usage}
+## Gebruik van de opdrachtregel van Media Packager {#media-packager-command-line-usage}
 
 **Eén bestand verpakken:**
 
@@ -43,7 +42,7 @@ java -jar AdobePackager.jar
 
    Als u een map opgeeft, wordt het gecodeerde bestand automatisch opgeslagen in de opgegeven map met dezelfde bestandsnaam als het bronbestand. U kunt echter geen doelmap opgeven die het bronbestand bevat.
 
-**Meerdere bestanden met dezelfde sleutel**  verpakken (voor ondersteuning van meerdere bitsnelheden):
+**Meerdere bestanden met dezelfde sleutel verpakken** (voor ondersteuning voor meerdere bitsnelheden):
 
 ```
 java -jar AdobePackager.jar  
@@ -76,11 +75,11 @@ java -jar AdobePackager.jar -d
 java -jar AdobePackager.jar -dm <metadatafile> [-e]
 ```
 
-* `metadatafile` is een  [!DNL .metadata] bestand dat DRM-metagegevens bevat.
+* `metadatafile` is een [!DNL .metadata] bestand dat DRM-metagegevens bevat.
 
 >[!NOTE]
 >
->Tijdens het verpakken, kan Media Packager niet meer een [!DNL .header] dossier door gebrek produceren. Als u een [!DNL .header]-bestand wilt genereren, gebruikt u de optie `-h` tijdens het verpakken.
+>Tijdens het verpakken kan Media Packager niet langer een [!DNL .header] bestand standaard. Om een [!DNL .header] bestand gebruiken `-h` tijdens het verpakken.
 
 **Tabel 3: Opties**
 
@@ -94,10 +93,10 @@ java -jar AdobePackager.jar -dm <metadatafile> [-e]
  <tbody class="- topic/tbody "> 
   <tr rowsep="1" class="- topic/row "> 
    <td colname="1" class="- topic/entry "> <p class="- topic/p ">-c <span class="+ topic/ph pr-d/codeph codeph"> configfile </span> </p> </td> 
-   <td colname="2" class="- topic/entry "> <p class="- topic/p ">Hier geeft u de naam en locatie op van het configuratiebestand. </p> <p class="- topic/p ">Als u geen naam of locatie opgeeft, zoekt DRM Media Packager naar <span class="filepath"> flashaccess.properties </span> in de huidige werkmap. </p> <p>Opmerking:  Opties die u op de opdrachtregel opgeeft, hebben voorrang op de opties die u in het configuratiebestand opgeeft. </p> </td> 
+   <td colname="2" class="- topic/entry "> <p class="- topic/p ">Hier geeft u de naam en locatie op van het configuratiebestand. </p> <p class="- topic/p ">Als u geen naam of locatie opgeeft, zoekt DRM Media Packager naar <span class="filepath"> flashaccessstools.properties </span> in de huidige werkmap. </p> <p>Opmerking: Opties die u op de opdrachtregel opgeeft, hebben voorrang op de opties die u in het configuratiebestand opgeeft. </p> </td> 
   </tr> 
   <tr rowsep="1" class="- topic/row "> 
-   <td colname="1" class="- topic/entry "> <p class="- topic/p ">-d <span class="+ topic/ph pr-d/codeph codeph"> gecodeerd bestand </span> </p> </td> 
+   <td colname="1" class="- topic/entry "> <p class="- topic/p ">-d <span class="+ topic/ph pr-d/codeph codeph"> versleuteld bestand </span> </p> </td> 
    <td colname="2" class="- topic/entry "> <p class="- topic/p ">Hiermee kunt u informatie weergeven over een bestand dat al is verpakt. </p> <p class="- topic/p ">De bron- en doelbestanden zijn niet vereist. </p> </td> 
   </tr> 
   <tr rowsep="1" class="- topic/row "> 
@@ -106,11 +105,11 @@ java -jar AdobePackager.jar -dm <metadatafile> [-e]
   </tr> 
   <tr rowsep="1" class="- topic/row "> 
    <td colname="1" class="- topic/entry "> <p class="- topic/p ">-e </p> </td> 
-   <td colname="2" class="- topic/entry "> <p class="- topic/p ">Extraheert DRM-beleid uit een pakketbestand wanneer u deze optie in combinatie met de optie <span class="codeph"> -d </span> toepast. </p> <p class="- topic/p ">Er wordt automatisch een bestand gemaakt in dezelfde map als waarin het gecodeerde bestand zich bevindt, met een bestandsnaam en DRM-beleidsidentificatie. </p> </td> 
+   <td colname="2" class="- topic/entry "> <p class="- topic/p ">Extraheert DRM-beleid uit een pakketbestand wanneer u deze optie in combinatie met de optie <span class="codeph"> -d </span> optie. </p> <p class="- topic/p ">Er wordt automatisch een bestand gemaakt in dezelfde map als waarin het gecodeerde bestand zich bevindt, met een bestandsnaam en DRM-beleidsidentificatie. </p> </td> 
   </tr> 
   <tr rowsep="1" class="- topic/row "> 
    <td colname="1" class="- topic/entry "> <p class="- topic/p ">-h </p> </td> 
-   <td colname="2" class="- topic/entry "> <p class="- topic/p ">Extraheert de DRM-header uit een pakketbestand wanneer u deze optie in combinatie met de optie <span class="codeph"> -d </span> toepast. </p> <p class="- topic/p ">Er wordt automatisch een bestand gemaakt in dezelfde map als waarin het gecodeerde bestand zich bevindt met de bestandsnaam en de extensie <span class="filepath"> .header </span>. </p> </td> 
+   <td colname="2" class="- topic/entry "> <p class="- topic/p ">Extraheert de DRM-header uit een pakketbestand wanneer u deze optie in combinatie met de <span class="codeph"> -d </span> optie. </p> <p class="- topic/p ">Er wordt automatisch een bestand gemaakt in de map waarin het gecodeerde bestand zich bevindt, met de bestandsnaam en de extensie <span class="filepath"> .header </span>. </p> </td> 
   </tr> 
   <tr rowsep="1" class="- topic/row "> 
    <td colname="1" class="- topic/entry "> <p class="- topic/p ">-i <span class="+ topic/ph pr-d/codeph codeph"> contentID </span> </p> </td> 
@@ -118,15 +117,15 @@ java -jar AdobePackager.jar -dm <metadatafile> [-e]
   </tr> 
   <tr rowsep="1" class="- topic/row "> 
    <td colname="1" class="- topic/entry "> <p class="- topic/p ">-k <span class="+ topic/ph pr-d/codeph codeph"> key </span>= <span class="+ topic/ph pr-d/codeph codeph"> value </span> </p> </td> 
-   <td colname="2" class="- topic/entry "> <p class="- topic/p ">Geeft een aangepaste sleutel/waarde op die aan de metagegevens van de inhoud moet worden toegevoegd. </p> <p class="- topic/p ">U kunt meerdere <span class="codeph"> - k </span> opties specificeren. </p> </td> 
+   <td colname="2" class="- topic/entry "> <p class="- topic/p ">Geeft een aangepaste sleutel/waarde op die aan de metagegevens van de inhoud moet worden toegevoegd. </p> <p class="- topic/p ">U kunt meerdere <span class="codeph"> -k </span> opties. </p> </td> 
   </tr> 
   <tr rowsep="1" class="- topic/row "> 
    <td colname="1" class="- topic/entry "> <p class="- topic/p ">-m </p> </td> 
-   <td colname="2" class="- topic/entry "> <p class="- topic/p ">Haal metagegevens uit een pakketbestand wanneer u deze optie in combinatie met de optie <span class="codeph"> -d </span> toepast. </p> <p class="- topic/p ">Er wordt automatisch een bestand gemaakt in dezelfde map als het gecodeerde bestand met een bestandsnaam en de extensie <span class="codeph"> .metadata </span>. </p> </td> 
+   <td colname="2" class="- topic/entry "> <p class="- topic/p ">Metagegevens uit een pakketbestand extraheren wanneer u deze optie in combinatie met de optie <span class="codeph"> -d </span> optie. </p> <p class="- topic/p ">Er wordt automatisch een bestand met een bestandsnaam en een <span class="codeph"> .metadata </span> extensie. </p> </td> 
   </tr> 
   <tr rowsep="1" class="- topic/row "> 
    <td colname="1" class="- topic/entry "> <p class="- topic/p ">-noprompt </p> </td> 
-   <td colname="2" class="- topic/entry "> <p class="- topic/p ">Vraag niet of het doelbestand moet worden overschreven. </p> <p class="- topic/p ">Als het doelbestand al bestaat en <span class="codeph"> -o </span> niet is ingesteld, treedt een fout op. </p> </td> 
+   <td colname="2" class="- topic/entry "> <p class="- topic/p ">Vraag niet of het doelbestand moet worden overschreven. </p> <p class="- topic/p ">Als het doelbestand al bestaat en <span class="codeph"> -o </span> niet is ingesteld, dan treedt er een fout op. </p> </td> 
   </tr> 
   <tr rowsep="1" class="- topic/row "> 
    <td colname="1" class="- topic/entry "> <p class="- topic/p ">-o </p> </td> 
@@ -134,7 +133,7 @@ java -jar AdobePackager.jar -dm <metadatafile> [-e]
   </tr> 
   <tr rowsep="0" class="- topic/row "> 
    <td colname="1" class="- topic/entry "> <p class="- topic/p ">-p <span class="+ topic/ph pr-d/codeph codeph"> bestandsnaam [domain-transport-cert] </span> </p> </td> 
-   <td colname="2" class="- topic/entry "> <p class="- topic/p ">Hier geeft u de naam op van het bestand dat het DRM-beleid bevat. </p> <p class="- topic/p ">Als voor het DRM-beleid domeinregistratie is vereist bij een server die een ander transportcertificaat gebruikt dan het certificaat dat u in het eigenschappenbestand hebt opgegeven, moet u het certificaat voor het domeinvervoer opgeven. </p> <p class="- topic/p ">U kunt meerdere <span class="codeph"> -p </span> opties specificeren. De client past standaard de eerste optie toe. De waarden die u op de bevellijn hebt gespecificeerd nemen belangrijkheid over die die u in het configuratiedossier hebt gespecificeerd. </p> </td> 
+   <td colname="2" class="- topic/entry "> <p class="- topic/p ">Hier geeft u de naam op van het bestand dat het DRM-beleid bevat. </p> <p class="- topic/p ">Als voor het DRM-beleid domeinregistratie is vereist bij een server die een ander transportcertificaat gebruikt dan het certificaat dat u in het eigenschappenbestand hebt opgegeven, moet u het certificaat voor het domeinvervoer opgeven. </p> <p class="- topic/p ">U kunt meerdere <span class="codeph"> -p </span> opties. De client past standaard de eerste optie toe. De waarden die u op de bevellijn hebt gespecificeerd nemen belangrijkheid over die die u in het configuratiedossier hebt gespecificeerd. </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -145,7 +144,7 @@ java -jar AdobePackager.jar -dm <metadatafile> [-e]
 
 >[!NOTE]
 >
->Voor eigenschapnamen die* n* bevatten, vertegenwoordigt *n* een geheel getal dat begint met 1 en voor elke instantie van de eigenschap wordt verhoogd.
+>Voor eigenschapsnamen die* n* bevatten, *n* vertegenwoordigt een geheel dat met 1 begint en voor elke instantie van het bezit stijgt.
 
 <table frame="all" colsep="1" rowsep="1" class="+ topic/table adobe-d/table " id="table_dx4_mpy_n4"> 
  <thead class="- topic/thead "> 
@@ -165,11 +164,11 @@ java -jar AdobePackager.jar -dm <metadatafile> [-e]
   </tr> 
   <tr rowsep="1" class="- topic/row "> 
    <td colname="1" class="- topic/entry "><span class="codeph"> encrypt.contents.script</span> </td> 
-   <td colname="2" class="- topic/entry "> <p>Geeft aan of scriptgegevens in mp4s moeten worden gecodeerd. </p> <p><i class="+ topic/ph hi-d/i ">Gegevenstags </i> onMetaData en  <i class="+ topic/ph hi-d/i "></i> onXMPscript worden nooit gecodeerd, zelfs niet als u deze optie inschakelt. </p> </td> 
+   <td colname="2" class="- topic/entry "> <p>Geeft aan of scriptgegevens in mp4s moeten worden gecodeerd. </p> <p><i class="+ topic/ph hi-d/i ">onMetaData</i> en <i class="+ topic/ph hi-d/i ">onXMP</i> scriptgegevenstags worden nooit versleuteld, zelfs niet als u deze optie inschakelt. </p> </td> 
   </tr> 
   <tr rowsep="1" class="- topic/row "> 
    <td colname="1" class="- topic/entry "><span class="codeph"> encrypt.contents.video.level</span> </td> 
-   <td colname="2" class="- topic/entry "> <p class="- topic/p ">Geeft het niveau van de videoversleuteling aan. </p> <p class="- topic/p ">De waarde <span class="codeph"> high</span> wordt gebruikt om alle video-inhoud te coderen, terwijl de waarden <span class="codeph"> medium</span> en <span class="codeph"> low</span> worden gebruikt om delen van de video-inhoud te coderen voor MP4-bestanden die H.264-inhoud bevatten. </p> <p class="- topic/p ">value = <span class="codeph"> high | medium | laag</span> </p> </td> 
+   <td colname="2" class="- topic/entry "> <p class="- topic/p ">Geeft het niveau van de videoversleuteling aan. </p> <p class="- topic/p ">Een waarde van <span class="codeph"> hoog</span> wordt gebruikt om alle video-inhoud te coderen, terwijl waarden van <span class="codeph"> medium</span> en <span class="codeph"> laag</span> worden gebruikt om delen van de video-inhoud te coderen voor MP4-bestanden die H.264-inhoud bevatten. </p> <p class="- topic/p ">value = <span class="codeph"> hoog | medium | laag</span> </p> </td> 
   </tr> 
   <tr rowsep="1" class="- topic/row "> 
    <td colname="1" class="- topic/entry "><span class="codeph"> encrypt.contents.secondsUnencrypted</span> </td> 
@@ -177,11 +176,11 @@ java -jar AdobePackager.jar -dm <metadatafile> [-e]
   </tr> 
   <tr rowsep="1" class="- topic/row "> 
    <td colname="1" class="- topic/entry "><span class="codeph"> encrypt.keys.asymmetrisch.certfile</span> </td> 
-   <td colname="2" class="- topic/entry "> <p class="- topic/p ">Het certificaatbestand van de licentieserver waarmee de sleutel wordt versleuteld. </p> <p class="- topic/p ">Met de eigenschap <span class="codeph"> encrypt.keys.asymmetrisch.certfile</span> wordt een bestand opgegeven dat alleen het certificaat bevat (PEM- of DER-indeling is acceptabel). </p> </td> 
+   <td colname="2" class="- topic/entry "> <p class="- topic/p ">Het certificaatbestand van de licentieserver waarmee de sleutel wordt versleuteld. </p> <p class="- topic/p ">De <span class="codeph"> encrypt.keys.asymmetrisch.certfile</span> eigenschap geeft een bestand aan dat alleen het certificaat bevat (PEM- of DER-indeling is acceptabel). </p> </td> 
   </tr> 
   <tr rowsep="1" class="- topic/row "> 
    <td colname="1" class="- topic/entry "><span class="+ topic/ph pr-d/codeph codeph">encrypt.keys.policyFile.n</span> </td> 
-   <td colname="2" class="- topic/entry "> <p class="- topic/p ">Deze eigenschap wordt herhaaldelijk gebruikt om een lijst met DRM-beleidsregels te maken die op de inhoud moeten worden toegepast. <span class="codeph"> vertegenwoordigt </span> een geheel getal waarvan de waarde 1 of hoger is. De client gebruikt standaard de eerste instantie. </p> </td> 
+   <td colname="2" class="- topic/entry "> <p class="- topic/p ">Deze eigenschap wordt herhaaldelijk gebruikt om een lijst met DRM-beleidsregels te maken die op de inhoud moeten worden toegepast. <span class="codeph"> n</span> staat voor een geheel getal waarvan de waarde 1 of hoger is. De client gebruikt standaard de eerste instantie. </p> </td> 
   </tr> 
   <tr rowsep="1" class="- topic/row "> 
    <td colname="1" class="- topic/entry "><span class="codeph"> encrypt.license.serverurl</span> </td> 
@@ -189,23 +188,23 @@ java -jar AdobePackager.jar -dm <metadatafile> [-e]
   </tr> 
   <tr rowsep="1" class="- topic/row "> 
    <td colname="1" class="- topic/entry "><span class="codeph"> encrypt.license.servercert</span> </td> 
-   <td colname="2" class="- topic/entry "> <p class="- topic/p ">Het transportcertificaat voor de licentieserver. </p> <p class="- topic/p ">This property specifies a <span class="filepath"> .cer</span> file that includes the certificate only (either PEM or DER format is acceptable). </p> </td> 
+   <td colname="2" class="- topic/entry "> <p class="- topic/p ">Het transportcertificaat voor de licentieserver. </p> <p class="- topic/p ">This property specifies a <span class="filepath"> .cer</span> bestand dat alleen het certificaat bevat (PEM- of DER-indeling is acceptabel). </p> </td> 
   </tr> 
   <tr rowsep="1" class="- topic/row "> 
    <td colname="1" class="- topic/entry "><span class="codeph"> encrypt.sign.certfile</span> </td> 
-   <td colname="2" class="- topic/entry "> <p class="- topic/p ">Het PKCS12-bestand met de gegevens van de verpakker voor het ondertekenen van inhoud. </p> <p class="- topic/p "><span class="codeph"> encrypt.sign.certfile</span> moet naar een <span class="filepath"> .pfx</span> dossier verwijzen dat een certificaat en een privé sleutel omvat. </p> </td> 
+   <td colname="2" class="- topic/entry "> <p class="- topic/p ">Het PKCS12-bestand met de gegevens van de verpakker voor het ondertekenen van inhoud. </p> <p class="- topic/p ">De <span class="codeph"> encrypt.sign.certfile</span> moet verwijzen naar een <span class="filepath"> .pfx</span> bestand dat een certificaat en een persoonlijke sleutel bevat. </p> </td> 
   </tr> 
   <tr rowsep="1" class="- topic/row "> 
    <td colname="1" class="- topic/entry "><span class="codeph"> encrypt.sign.certpass</span> </td> 
-   <td colname="2" class="- topic/entry "> <p class="- topic/p ">Het wachtwoord dat u kunt toepassen om het dossier te beschermen dat door <span class="codeph"> encrypt.sign.certfile</span> is gespecificeerd. </p> </td> 
+   <td colname="2" class="- topic/entry "> <p class="- topic/p ">Het wachtwoord dat u kunt toepassen om het bestand te beveiligen dat is opgegeven door <span class="codeph"> encrypt.sign.certfile</span>. </p> </td> 
   </tr> 
   <tr rowsep="1" class="- topic/row "> 
    <td colname="1" class="- topic/entry "><span class="codeph"> encrypt.license.minServerVersion</span> </td> 
    <td colname="2" class="- topic/entry "> <p class="- topic/p ">Hiermee stelt u de minimale serverversie in die vereist is voor het afgeven van licenties voor de inhoud die wordt verpakt. </p> <p class="- topic/p ">Geef x (voor Primetime DRM x.0) op waarbij x een hoofdreleasenummer vertegenwoordigt. Deze instelling wordt niet ondersteund door versies van servers die voorafgaan aan Adobe Primetime versie 3.0. </p> </td> 
   </tr> 
   <tr rowsep="1" class="- topic/row "> 
-   <td colname="1" class="- topic/entry "><span class="codeph">encrypt.keys.policyFile.n.domain.transportcert  </span> </td> 
-   <td colname="2" class="- topic/entry "> <p class="- topic/p ">Als een DRM-beleid <span class="+ topic/ph pr-d/codeph codeph"> encrypt.keys.policyFile.n</span> domeinregistratie vereist met een server die een ander transportcertificaat ondersteunt dan het certificaat dat u hebt opgegeven in <span class="+ topic/ph pr-d/codeph codeph"> encrypt.license.servercert</span>, moet u de certificaatbehoeften voor het domeinvervoer opgeven. </p> <p class="- topic/p ">This property specifies a file that includes the certificate only (either PEM or DER format is acceptable). </p> </td> 
+   <td colname="1" class="- topic/entry "><span class="codeph">encrypt.keys.policyFile.n.domain.transportcert </span> </td> 
+   <td colname="2" class="- topic/entry "> <p class="- topic/p ">Als een DRM-beleid <span class="+ topic/ph pr-d/codeph codeph"> encrypt.keys.policyFile.n</span> vereist domeinregistratie met een server die een ander vervoercertificaat steunt dan dat u hebt gespecificeerd in <span class="+ topic/ph pr-d/codeph codeph"> encrypt.license.servercert</span>, dan moet u de behoeften van het certificaat van het domeinvervoer verstrekken. </p> <p class="- topic/p ">This property specifies a file that includes the certificate only (either PEM or DER format is acceptable). </p> </td> 
   </tr> 
   <tr rowsep="1" class="- topic/row "> 
    <td colname="1" class="- topic/entry "><span class="codeph"> encrypt.keys.licenseKey</span> </td> 
@@ -217,7 +216,7 @@ java -jar AdobePackager.jar -dm <metadatafile> [-e]
   </tr> 
   <tr rowsep="1" class="- topic/row "> 
    <td colname="1" class="- topic/entry "><span class="codeph">encrypt.keys.rotation.key.n</span> </td> 
-   <td colname="2" class="- topic/entry "> <p class="- topic/p ">Volgorde van geroteerde sleutels die u kunt opgeven om inhoud te coderen wanneer sleutelrotatie is ingeschakeld. </p> <p class="- topic/p ">Als u geen toetsen opgeeft, worden de toetsen willekeurig gegenereerd. De sleutels moeten 16 bytes in lengte zijn en als waarden van de Hexadecimale waarde worden gespecificeerd. </p> <p class="- topic/p ">Spaties tussen de hexadecimale waarden zijn optioneel. <i class="+ topic/ph hi-d/i "></i> Dit mag niet monotonisch toenemen vanaf 1. Wanneer u meerdere toetsen opgeeft, worden de toetsen doorlopen in de volgorde die u hebt aangegeven. </p> </td> 
+   <td colname="2" class="- topic/entry "> <p class="- topic/p ">Volgorde van geroteerde sleutels die u kunt opgeven om inhoud te coderen wanneer sleutelrotatie is ingeschakeld. </p> <p class="- topic/p ">Als u geen toetsen opgeeft, worden de toetsen willekeurig gegenereerd. De sleutels moeten 16 bytes in lengte zijn en als waarden van de Hexadecimale waarde worden gespecificeerd. </p> <p class="- topic/p ">Spaties tussen de hexadecimale waarden zijn optioneel. <i class="+ topic/ph hi-d/i ">n</i> moet monotonisch toenemen, te beginnen met 1. Wanneer u meerdere toetsen opgeeft, worden de toetsen doorlopen in de volgorde die u hebt aangegeven. </p> </td> 
   </tr> 
   <tr rowsep="1" class="- topic/row "> 
    <td colname="1" class="- topic/entry "><span class="codeph"> encrypt.keys.rotation.interval</span> </td> 

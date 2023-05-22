@@ -1,16 +1,15 @@
 ---
 description: De cryptomodule van de Adobe video-engine retourneert deze meldingen in het metagegevensobject NATIVE_ERROR.
 title: Crypto-waarden NATIVE_ERROR
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: 9f34d893-d5b1-4bfe-a590-27deccb6d08d
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '84'
 ht-degree: 8%
 
 ---
 
-
-# NATIVE_ERROR: Crypto values{#native-error-crypto-values}
+# NATIVE_ERROR: Cryptowaarden{#native-error-crypto-values}
 
 De cryptomodule van de Adobe video-engine retourneert deze meldingen in het metagegevensobject NATIVE_ERROR.
 
@@ -23,4 +22,3 @@ De cryptomodule van de Adobe video-engine retourneert deze meldingen in het meta
 | 304 | `CRYPTO_ERROR_DIGEST_UPDATE` | Samenvattingsupdate. |
 | 305 | `CRYPTO_ERROR_DIGEST_FINISH` | Samenvatting voltooid. |
 | 306 | `CRYPTO_ERROR_BAD_PARAMETER` | Onjuiste parameter. |
-

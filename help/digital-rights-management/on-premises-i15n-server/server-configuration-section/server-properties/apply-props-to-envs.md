@@ -1,5 +1,5 @@
 ---
-description: 'U moet servereigenschappen vormen om op uw milieu te wijzen. U kunt dit op een van de volgende manieren doen '
+description: U moet servereigenschappen vormen om op uw milieu te wijzen. U kunt dit op een van de volgende manieren doen
 title: Eigenschappen toepassen op serveromgevingen
 exl-id: 0c78011a-e8c8-43a8-8c2d-a5c4ed54a8d7
 source-git-commit: 0019a95fa9ca6d21249533d559ce844897ab67cf

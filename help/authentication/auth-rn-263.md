@@ -1,13 +1,13 @@
 ---
 title: Opmerkingen bij de release Adobe Primetime authentication 2.63
 description: Opmerkingen bij de release Adobe Primetime authentication 2.63
-source-git-commit: 326f97d058646795cab5d062fa5b980235f7da37
+exl-id: 40987328-6d41-4948-aa4a-bab31f98a18a
+source-git-commit: bfc3ba55c99daba561255760baf273b6538a3c6e
 workflow-type: tm+mt
 source-wordcount: '296'
 ht-degree: 0%
 
 ---
-
 
 # Opmerkingen bij de release Adobe Primetime Authentication 2.63 {#pt-authn-263-rn}
 
@@ -56,6 +56,3 @@ In deze versie hebben we een probleem opgelost waarbij authN of authZ TTL op MVP
 
 * Het gebruik van `eval` functie, waardoor de SDK compatibel wordt gemaakt met het inhoudsbeveiligingsbeleid.
 * Probleem verholpen waardoor de verificatiestroom niet met succes kon worden voltooid wanneer de lokale opslag van de browser expliciet door een Partner-toepassing werd gewist.
-
-
-

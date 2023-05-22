@@ -1,14 +1,13 @@
 ---
 description: U kunt TimeRanges verwijderen tussen begin en eind in localTime van de chronologie.
 title: Bereiken verwijderen
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: 1c0f7718-8a40-4fc8-b70b-f751d8ff40a4
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '79'
 ht-degree: 0%
 
 ---
-
 
 # Bereiken verwijderen{#delete-ranges}
 
@@ -16,7 +15,7 @@ U kunt TimeRanges verwijderen tussen begin en eind in localTime van de chronolog
 
 >[!NOTE]
 >
->Als u alleen bepaalde bereiken uit de inhoud wilt verwijderen en de advertentiekaart moet worden gebruikt zoals gedefinieerd door de advertentieserver, maakt u een `CustomRangeMetadata`-instantie en geeft u het type op als een DELETE-bewerking met de gedefinieerde aangepaste bereiken.
+>Als u alleen bepaalde bereiken uit de inhoud wilt verwijderen en de advertentiekaart moet worden gebruikt zoals gedefinieerd door de advertentieserver, maakt u een `CustomRangeMetadata` -instantie en geeft u het type op als een DELETE-bewerking met de gedefinieerde aangepaste bereiken.
 
 Hiermee verwijdert u bereiken met een Adobe Primetime-advertentie.
 
@@ -76,4 +75,3 @@ Hiermee verwijdert u bereiken met een Adobe Primetime-advertentie.
     "id": "vod_003"
 }
 ```
-

@@ -1,22 +1,21 @@
 ---
 description: Wanneer een volledige afspeellijst ontbreekt, bijvoorbeeld wanneer het M3U8-bestand dat in een manifestbestand op hoofdniveau is opgegeven niet wordt gedownload, probeert TVSDK het bestand te herstellen. Als het niet kan herstellen, bepaalt uw toepassing de volgende stap.
 title: failover van afspeellijst ontbreekt
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: aab2dde3-aee2-4ade-b8f9-91c72df0c747
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '333'
 ht-degree: 0%
 
 ---
 
-
-# Afspeellijst failover{#missing-playlist-failover} ontbreekt
+# failover van afspeellijst ontbreekt{#missing-playlist-failover}
 
 Wanneer een volledige afspeellijst ontbreekt, bijvoorbeeld wanneer het M3U8-bestand dat in een manifestbestand op hoofdniveau is opgegeven niet wordt gedownload, probeert TVSDK het bestand te herstellen. Als het niet kan herstellen, bepaalt uw toepassing de volgende stap.
 
 Als de afspeellijst die is gekoppeld aan de bitsnelheid met middelste resolutie ontbreekt, zoekt TVSDK naar een andere afspeellijst met dezelfde resolutie. Als dezelfde resolutie wordt gevonden, worden de afspeellijst van de variant en de segmenten vanaf de overeenkomende positie gedownload. Als TVSDK niet dezelfde afspeellijst met resolutie vindt, probeert het andere afspeellijsten met bitsnelheden en hun varianten te doorlopen. Een onmiddellijk lagere bitsnelheid is de eerste keuze, daarna de variant, enzovoort. Als alle onderste afspeellijsten met bitsnelheden en de bijbehorende varianten zijn uitgeput in de poging om een geldige afspeellijst te vinden, gaat TVSDK naar de bovenste bitsnelheid en wordt het aantal van daaruit verlaagd. Als er geen geldige afspeellijst kan worden gevonden, mislukt het proces en gaat de speler naar de status ERROR.
 
-Uw toepassing kan bepalen hoe deze situatie wordt afgehandeld. U kunt bijvoorbeeld de speleractiviteit sluiten en de gebruiker naar de catalogusactiviteit verwijzen. De gebeurtenis van belang is de `STATE_CHANGED` gebeurtenis, en de overeenkomstige callback is de `onStateChanged` methode. Hier volgt code waarmee wordt gecontroleerd of de interne status van de speler wordt gewijzigd in ERROR:
+Uw toepassing kan bepalen hoe deze situatie wordt afgehandeld. U kunt bijvoorbeeld de speleractiviteit sluiten en de gebruiker naar de catalogusactiviteit verwijzen. De gebeurtenis van belang is de `STATE_CHANGED` gebeurtenis, en de overeenkomstige callback is `onStateChanged` methode. Hier volgt code waarmee wordt gecontroleerd of de interne status van de speler wordt gewijzigd in ERROR:
 
 ```java
 case ERROR: 
@@ -24,7 +23,7 @@ case ERROR:
     break;
 ```
 
-Raadpleeg het bestand [!DNL PlayerFragment.java] in de SDK voor meer informatie:
+Zie voor meer informatie de [!DNL PlayerFragment.java] bestand in uw SDK:
 
 ```
 […]/samples/PrimetimeReference/src/PrimetimeReference/src/com/adobe/primetime/reference/ui/player/

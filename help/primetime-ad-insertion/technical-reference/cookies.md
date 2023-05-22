@@ -1,14 +1,13 @@
 ---
 description: Primetime en invoeging gebruiken cookies voor interne doeleinden en om het werken met streams en advertentieservers te vergemakkelijken.
 title: Cookies
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: 13184a7a-4302-46af-a7f6-37678db05ce8
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '86'
 ht-degree: 0%
 
 ---
-
 
 # Cookies {#cookies}
 
@@ -18,6 +17,6 @@ Bij invoegen van primetime-bestanden worden cookies gebruikt voor interne doelei
 
 De volgende cookies blijven behouden bij invoeging in primetime:
 
-* `ssaiPub` helpt inhoud-URL&#39;s op te halen uit streams die cookie-verificatie vereisen om het  `m3u8` bestand te verkrijgen.
+* `ssaiPub` helpt inhoud URLs van stromen terug te winnen die koekjesauthentificatie vereisen om te verkrijgen `m3u8` bestand.
 * `ssai3` bevat sessiecookies voor advertentieservers die deze nodig hebben.
-* `AWSELB` en  `ssaiSession` raadpleegt u informatie over sessies.
+* `AWSELB` en `ssaiSession` informatie over sessies bewaren.

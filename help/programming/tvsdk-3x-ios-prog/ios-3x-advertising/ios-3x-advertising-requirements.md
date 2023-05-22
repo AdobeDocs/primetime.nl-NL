@@ -1,14 +1,13 @@
 ---
 description: U kunt advertenties in uw VOD en levende/lineaire inhoud opnemen door Adobe Primetime en besluitvormingsinterface te gebruiken.
 title: Reclamevereisten
-translation-type: tm+mt
-source-git-commit: 944bfb0f3bd0050a9d2974a37f4fabddaaac8a93
+exl-id: 164a5e79-1634-4853-a2b9-d4b5bdbbf190
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '234'
 ht-degree: 0%
 
 ---
-
 
 # Reclamevereisten {#advertising-requirements}
 

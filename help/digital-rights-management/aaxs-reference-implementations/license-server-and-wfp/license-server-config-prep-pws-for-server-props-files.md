@@ -2,24 +2,23 @@
 title: Wachtwoorden voorbereiden voor de bestanden met servereigenschappen
 description: Wachtwoorden voorbereiden voor de bestanden met servereigenschappen
 copied-description: true
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: 70f75640-7075-450a-8191-dc348bd269b8
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '137'
 ht-degree: 0%
 
 ---
 
+# Wachtwoorden voorbereiden voor de bestanden met servereigenschappen {#preparing-passwords-for-the-server-properties-files}
 
-# Wachtwoorden voor de bestanden met servereigenschappen voorbereiden {#preparing-passwords-for-the-server-properties-files}
-
-Om de veiligheid van het wachtwoord van uw referentie te verzekeren, wordt een hulpmiddel verstrekt om het wachtwoord te coderen alvorens het in [!DNL flashaccess-refimpl.properties] of [!DNL flashaccess-refimpl-packager.properties] dossier wordt ingegaan.
+Om de veiligheid van het wachtwoord van uw referentie te verzekeren, wordt een hulpmiddel verstrekt om het wachtwoord te coderen alvorens het in het [!DNL flashaccess-refimpl.properties] of [!DNL flashaccess-refimpl-packager.properties] bestand.
 
 Het gereedschap uitvoeren met behulp van het volgende ANT-script:
 
 * Ga naar *`<Reference Implementation Server Path>`* [!DNL \refimpl]
 
-* Zorg ervoor dat de eigenschap `sdkdir` in [!DNL build-refimpl.xml] verwijst naar de map met de Adobe Access SDK
+* Zorg ervoor dat de `sdkdir` eigenschap in [!DNL build-refimpl.xml] verwijst naar de map met de SDK van Adobe Access
 * Voer het volgende bevel in werking gebruikend ANT:
 
    ```

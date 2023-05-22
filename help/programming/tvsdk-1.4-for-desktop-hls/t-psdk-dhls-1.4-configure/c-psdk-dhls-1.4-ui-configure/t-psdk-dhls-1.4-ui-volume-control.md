@@ -1,23 +1,22 @@
 ---
 description: U kunt een gebruikersinterfacecontrole voor geluidsvolume instellen.
 title: Volumeregeling opgeven
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: 058d79d2-35cc-4238-8fc1-2820a2d91ffb
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '156'
 ht-degree: 0%
 
 ---
 
-
-# Verstrek volumeregeling{#provide-volume-control}
+# Volumeregeling opgeven{#provide-volume-control}
 
 U kunt een gebruikersinterfacecontrole voor geluidsvolume instellen.
 
 1. Wacht tot de instantie MediaPlayer een geldige status voor deze opdracht heeft.
 
    Elke status behalve RELEASED is geldig.
-1. Roep de volumesetmethode op de instantie `MediaPlayer` aan om het audiovolume in te stellen.
+1. Roep de methode van de volumeset op `MediaPlayer` -instantie om het audiovolume in te stellen.
 
    ```
    public function set volume(value:Number):void
@@ -47,7 +46,7 @@ U kunt een gebruikersinterfacecontrole voor geluidsvolume instellen.
       <ul id="ul_8C2282F0EDC44A408820F5768709214F"> 
       <li id="li_B00BC6F4812D4000891358F762C8E492">Het resultaat als dit tussen 0 en 1 ligt </li> 
       <li id="li_03B7F30662554F299320040CAC2DEB7A">1 als het resultaat groter is dan 1 </li> 
-      </ul> <p>Tip:  Deze logica handelt waarden af die van cliënten worden geleverd die op vroegere versies van worden gebaseerd 
+      </ul> <p>Tip: Deze logica handelt waarden af die van cliënten worden geleverd die op vroegere versies van worden gebaseerd 
       <span class="codeph">zinnen/primetime-sdk-name</span>, waarbij de volumewaarden varieerden van 0 tot 100. </p> </td> 
    </tr> 
    </tbody> 

@@ -1,13 +1,13 @@
 ---
 title: Verificatie op thuisbasis voor tv overal
 description: Verificatie op thuisbasis voor tv overal
-source-git-commit: 326f97d058646795cab5d062fa5b980235f7da37
+exl-id: abdc7724-4290-404a-8f93-953662cdc2bc
+source-git-commit: bfc3ba55c99daba561255760baf273b6538a3c6e
 workflow-type: tm+mt
 source-wordcount: '1676'
 ht-degree: 0%
 
 ---
-
 
 # Verificatie op thuisbasis voor tv overal
 
@@ -158,6 +158,3 @@ Voor meer informatie over MVPDs die huis Gebaseerde Authentificatie steunen, zie
 * [Verificatie met SAML MVPDs](/help/authentication/authn-usecase.md)
 * [Gebruikershandleiding voor Primetime TVE-dashboard](/help/authentication/tve-dashboard-user-guide.md)
 * [hba_status-gebruikersmetagegevens](/help/authentication/user-metadata-feature.md#obtaining)
-
-
-

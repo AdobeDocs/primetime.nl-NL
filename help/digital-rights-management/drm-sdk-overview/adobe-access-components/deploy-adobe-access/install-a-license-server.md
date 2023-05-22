@@ -1,7 +1,6 @@
 ---
 description: Met Adobe Primetime DRM SDK moet u een licentieserver maken. Wanneer inhoud wordt beveiligd met Primetime DRM, kan deze pas worden weergegeven als de licentieserver een licentie heeft afgegeven aan de consument. Als licenties op basis van identiteit worden gebruikt, zorgt verificatie op basis van wachtwoord ervoor dat alleen geautoriseerde consumenten inhoud kunnen openen en bekijken.
 title: Een licentieserver implementeren
-translation-type: tm+mt
 source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
 source-wordcount: '159'
@@ -10,7 +9,7 @@ ht-degree: 0%
 ---
 
 
-# Een licentieserver{#implement-a-license-server} implementeren
+# Een licentieserver implementeren{#implement-a-license-server}
 
 Met Adobe Primetime DRM SDK moet u een licentieserver maken. Wanneer inhoud wordt beveiligd met Primetime DRM, kan deze pas worden weergegeven als de licentieserver een licentie heeft afgegeven aan de consument. Als licenties op basis van identiteit worden gebruikt, zorgt verificatie op basis van wachtwoord ervoor dat alleen geautoriseerde consumenten inhoud kunnen openen en bekijken.
 

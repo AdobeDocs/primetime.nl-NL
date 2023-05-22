@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Videoanalysemogelijkheden initialiseren en configureren {#initialize-and-configure-video-analytics}
 
-U kunt de speler configureren om het videogebruik te volgen en te analyseren.
+U kunt uw speler configureren om het videogebruik te volgen en te analyseren.
 Controleer of u het volgende hebt voordat u video-tracking (videohartslagen) activeert:
 
 * TVSDK 3.0 voor Android.
@@ -23,16 +23,16 @@ Controleer of u het volgende hebt voordat u video-tracking (videohartslagen) act
 <table id="table_3565328ABBEE4605A92EAE1ADE5D6F84"> 
  <tbody> 
   <tr> 
-   <td colname="col1"> <span class="filepath"> ADBMobileConfig.json  </span> </td> 
-   <td colname="col2"> <p>Belangrijk:  Dit JSON-configuratiebestand moet <span class="filepath"> ADBMobileConfig.json </span> blijven. De naam en het pad van dit configuratiebestand kunnen niet worden gewijzigd. Het pad naar dit bestand moet <span class="filepath"> &lt;source root&gt;/assets </span> zijn. </p> </td> 
+   <td colname="col1"> <span class="filepath"> ADBMobileConfig.json </span> </td> 
+   <td colname="col2"> <p>Belangrijk: De naam van dit JSON-configuratiebestand moet behouden blijven <span class="filepath"> ADBMobileConfig.json </span>. De naam en het pad van dit configuratiebestand kunnen niet worden gewijzigd. Het pad naar dit bestand moet <span class="filepath"> &lt;source root=""&gt;/assets </span>. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> Het eindpunt van de trackingserver voor AppMeturement </td> 
+   <td colname="col1"> Het eindpunt van de toepassingsmeetserver </td> 
    <td colname="col2"> De URL van het achterste eindpunt van de Adobe Analytics-verzameling (voorheen SiteCatalyst). </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Het servereindpunt voor videoanalyse bijhouden </td> 
-   <td colname="col2"> De URL van het back-end verzameleindpunt van de videoanalyse. Dit is waar alle video hartslag het volgen vraag wordt verzonden. <p>Tip:  De URL van de server voor het bijhouden van bezoekers is gelijk aan de URL van de analytische trackingserver. Voor informatie over het uitvoeren van de Dienst van identiteitskaart van de Bezoeker, zie <a href="https://experienceleague.adobe.com/docs/id-service/using/implementation/setup-target.html?lang=en" format="html" scope="external"> de Dienst </a> van identiteitskaart uitvoeren. </p> </td> 
+   <td colname="col2"> De URL van het back-end verzameleindpunt van de videoanalyse. Dit is waar alle video hartslag het volgen vraag wordt verzonden. <p>Tip: De URL van de server voor het bijhouden van bezoekers is gelijk aan de URL van de analytische trackingserver. Voor informatie over het uitvoeren van de Dienst van identiteitskaart van de Bezoeker, zie <a href="https://experienceleague.adobe.com/docs/id-service/using/implementation/setup-target.html?lang=en" format="html" scope="external"> Id-service implementeren </a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Accountnaam </td> 
@@ -47,7 +47,7 @@ Controleer of u het volgende hebt voordat u video-tracking (videohartslagen) act
 
 U kunt als volgt video bijhouden in uw speler configureren:
 
-1. Bevestig dat de lading-tijd opties in het `ADBMobileConfig.json` middeldossier correct zijn.
+1. Bevestig dat opties voor laadtijd in het dialoogvenster `ADBMobileConfig.json` resource file is correct.
 
    ```
    { 
@@ -81,21 +81,21 @@ U kunt als volgt video bijhouden in uw speler configureren:
    Opties voor laadtijd configureren:
 
 
-   1. Bevestig dat het `ADBMobileConfig.json`-bestand de juiste waarden bevat (opgegeven door Adobe).
-   1. Bevestig dat dit bestand zich in de map `assets/` bevindt.
+   1. Bevestig dat de `ADBMobileConfig.json` bestand bevat de juiste waarden (opgegeven door Adobe).
+   1. Bevestig dat dit bestand zich bevindt in het dialoogvenster `assets/` map.
 
       Deze map moet zich in de hoofdmap van de bronstructuur van de toepassing bevinden.
 
    1. Compileer en bouw uw toepassing.
    1. Implementeer en voer de gebundelde toepassing uit.
 
-      Voor meer informatie over deze montages AppMeasurement, zie [Metende Video in Adobe Analytics](https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html?lang=en).
+      Voor meer informatie over deze instellingen van AppMeasurement raadpleegt u [Video meten in Adobe Analytics](https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html?lang=en).
 
 1. Metagegevens voor het bijhouden van videokaarten initialiseren en configureren.
 
    >[!IMPORTANT]
    >
-   >U kunt de module voor videoanalyse halverwege de stream stoppen en indien nodig opnieuw initialiseren. Voordat de module opnieuw wordt geïnitialiseerd, moet u ervoor zorgen dat de metagegevens voor videoanalyse ook worden bijgewerkt naar de juiste metagegevens voor de inhoud. Herhaal de eerste twee stappen hieronder (substappen **a** en **b**) om de metagegevens opnieuw te maken.
+   >U kunt de module voor videoanalyse halverwege de stream stoppen en indien nodig opnieuw initialiseren. Voordat de module opnieuw wordt geïnitialiseerd, moet u ervoor zorgen dat de metagegevens voor videoanalyse ook worden bijgewerkt naar de juiste metagegevens voor de inhoud. Herhaal de eerste twee stappen hieronder om de metagegevens opnieuw te maken (substappen) **a** en **b**).
 
    1. Maak een instantie van de metagegevens voor videoanalyse.
 
@@ -132,13 +132,13 @@ U kunt als volgt video bijhouden in uw speler configureren:
       VideoAnalyticsProvider videoAnalyticsProvider = new VideoAnalyticsProvider(appContext); 
       ```
 
-   1. Stel de metagegevens voor Video-analyse in op de instantie `videoAnalyticsProvider`.
+   1. Stel de metagegevens van de videodonalyse in op de knop `videoAnalyticsProvider` -instantie.
 
       ```java
       videoAnalyticsProvider.setVideoAnalyticsMetadata(vaMetadata);
       ```
 
-   1. Koppel de instantie van de mediaspeler aan de instantie `videoAnalyticsProvider`:
+   1. De instantie van de mediaspeler koppelen aan de `videoAnalyticsProvider` instantie:
 
       ```java
       videoAnalyticsProvider.attachMediaPlayer(mediaPlayer); 

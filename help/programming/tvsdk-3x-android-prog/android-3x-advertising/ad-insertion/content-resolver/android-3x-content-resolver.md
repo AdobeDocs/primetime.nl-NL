@@ -1,14 +1,13 @@
 ---
 description: Een opportuniteitsgenerator identificeert plaatsingsmogelijkheden door douanetags in een stream, en aangepaste markeringen voor de signaalmodus enzovoort. De opportuniteitsgenerator verzendt deze plaatsingskansen naar de contentoplosser, die de workflow voor inhouds- en invoegtoepassingen aanpast op basis van de eigenschappen en metagegevens van de plaatsingsmogelijkheid.
 title: Aanpassen van opportuniteitsgeneratoren en contentoplossers
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: 5d0ebaa6-4708-4602-b9d7-882c389fb030
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '207'
 ht-degree: 0%
 
 ---
-
 
 # Overzicht {#customize-opportunity-generators-and-content-resolvers-overview}
 
@@ -16,7 +15,7 @@ Een opportuniteitsgenerator identificeert plaatsingsmogelijkheden door douanetag
 
 TVSDK bevat de volgende standaardopportuniteitsgeneratoren:
 
-* `ManifestCuesOpportunityGenerator` genereert mogelijkheden op basis van de standaard en aanwijzingen (  `#EXT-X-CUE`).
+* `ManifestCuesOpportunityGenerator` Hiermee worden mogelijkheden gegenereerd op basis van de standaard en cues ( `#EXT-X-CUE`).
 
 * `AdSignalingModeOpportunityGenerator` genereert een eerste mogelijkheid voor de opgegeven advertentiemodus. Hiermee worden aanwijzingen of metagegevens met tijdslimiet genegeerd.
 * `CustomMarkerOpportunityGenerator` Hiermee worden mogelijkheden gegenereerd om kant-en-klare C3-advertenties te vervangen.
@@ -30,6 +29,6 @@ TVSDK bevat ook standaardinhoudsoplosmiddelen:
 
 U kunt de standaardopportuniteitsgenerators en -oplossers negeren en zo de advertentieworkflow als volgt aanpassen:
 
-* Herken aangepaste tags voor het invoegen van advertenties. Zie [Opportunity generators and content resolvers](../../../../tvsdk-3x-android-prog/android-3x-advertising/ad-insertion/content-resolver/android-3x-content-resolver.md) aanpassen voor meer informatie.
+* Herken aangepaste tags voor het invoegen van advertenties. Zie voor meer informatie [Aanpassen van opportuniteitsgeneratoren en contentoplossers](../../../../tvsdk-3x-android-prog/android-3x-advertising/ad-insertion/content-resolver/android-3x-content-resolver.md).
 * Maak een aangepaste advertentieprovider.
 * Inhoud onleesbaar maken.

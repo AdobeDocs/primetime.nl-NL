@@ -4,22 +4,21 @@ description: Nieuw in de versies van Primetime Offline Packager 2.1 en 2.3.1
 contentOwner: asgupta
 products: SG_PRIMETIME
 topic-tags: release-notes
-translation-type: tm+mt
-source-git-commit: b33240bf1b42b80389cd95a7ae4d3f85185a2d32
+exl-id: 911549b4-45b3-400a-b903-fa1479ee862b
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '638'
 ht-degree: 0%
 
 ---
 
-
-# Release {#primetime-offline-packager-x-releases} van primetime Offline Packager
+# De versies van de Offline Packager van Primetime {#primetime-offline-packager-x-releases}
 
 Nieuw in de versies van Primetime Offline Packager 2.1 en 2.3.1
 
-## Nieuw in Primetime Offline Packager 2.3.1 (okt 2016) {#what-s-new-in-primetime-offline-packager-oct}
+## Nieuw in Primetime Offline Packager 2.3.1 (okt 2016)  {#what-s-new-in-primetime-offline-packager-oct}
 
-De release schakelt het profiel Op aanvraag in voor MPEG-DASH, voegt ondersteuning toe voor de optie `validate` voor het gereedschap PlaylistCreator en bevat enkele belangrijke correcties voor de hieronder vermelde scenario&#39;s voor multi-DRM.
+Met deze release wordt Profiel op aanvraag ingeschakeld voor MPEG-DASH. Daarnaast wordt ondersteuning geboden voor de `validate` voor het gereedschap PlaylistCreator en bevat enkele belangrijke correcties voor multi-DRM-scenario&#39;s die hieronder worden vermeld.
 
 | **Uitgiftenummer** | **Beschrijving** |
 |---|---|
@@ -39,8 +38,8 @@ Deze release bevat de volgende problemen.
 |---|---|
 | PTPUB-1005 | PlaylistCreator verstrekt correcte URL voor het .pssh dossier in het definitieve vastgestelde niveau .mpd dossier niet dat voor AXS DRM wordt geproduceerd. |
 | PTPUB-1001 | PlaylistCreator moet een fout genereren wanneer een leeg pad wordt opgegeven via de parameter in_path |
-| PTPUB-990 | Voor DASH schrijft Offline Packager geen pakketprogramma dat IV wordt gegenereerd naar schijf wanneer de parameters `log_vi` &amp; `iv_out_path` worden opgegeven. |
-| PTPUB-980 | Wanneer het configuratiedossier voor verpakking wordt gebruikt, verwijdert het gebruiken van de parameter `key_url` niet de aanhalingstekens uit de verstrekte input. |
+| PTPUB-990 | Voor DASH schrijft Offline Packager geen verpakkingshulpprogramma dat IV wordt gegenereerd naar schijf wanneer de parameters `log_vi` &amp; `iv_out_path` worden opgegeven. |
+| PTPUB-980 | Wanneer het configuratiedossier voor verpakking wordt gebruikt, gebruikend de parameter `key_url` worden de aanhalingstekens niet van de opgegeven invoer verwijderd. |
 
 ## Adobe Primetime Offline Packager 2.3.1 {#adobe-primetime-offline-packager}
 
@@ -70,16 +69,16 @@ Softwarevereisten
 
 ### Adobe Primetime Offline Packager 2.3.1 {#adobe-primetime-offline-packager-1}
 
-1. Download de Java SE-software van [Oracle site](https://www.oracle.com/technetwork/java/javase/downloads/index.html) en volg de installatie-instructies.
-1. Extraheer het archiefbestand `PrimetimeOfflinePackager-2-3-1-b47-10142016.zip` van Adobe Primetime Offline Packager 2.3.1 naar de schijf.
+1. Download de Java SE-software van de [Oracle](https://www.oracle.com/technetwork/java/javase/downloads/index.html) en volgt u de installatie-instructies.
+1. Het Adobe Primetime Offline Packager 2.3.1-archiefbestand met de naam `PrimetimeOfflinePackager-2-3-1-b47-10142016.zip` naar de schijf.
 
 ### Het vormen van Offline Packager 2.3.1 {#configuring-the-offline-packager}
 
-De configuratieinstructies zijn beschikbaar in de gids Aan de slag van het Begeleidende Offline Packager van Primetime bij [https://help.adobe.com/en_US/primetime/api/packagers/offline/index.html](https://help.adobe.com/en_US/primetime/api/packagers/offline/index.html)
+De configuratieinstructies zijn beschikbaar in de gids Aan de slag van het Pakket van de Offline Primetime bij [https://help.adobe.com/en_US/primetime/api/packagers/offline/index.html](https://help.adobe.com/en_US/primetime/api/packagers/offline/index.html)
 
 ## Nieuw in Primetime Offline Packager 2.1 (juli 2015) {#what-s-new-in-primetime-offline-packager-july}
 
-Ondersteuning voor PlayReady BuyDRM (voor DASH). Voor details, verwijs naar de Documentatie van de Hulp [hier beschikbaar](https://help.adobe.com/en_US/primetime/api/packagers/offline/index.html).
+Ondersteuning voor PlayReady BuyDRM (voor DASH). Raadpleeg de Help-documentatie voor meer informatie [hier beschikbaar](https://help.adobe.com/en_US/primetime/api/packagers/offline/index.html).
 
 De offlineverpakker is ook uitgebreid.
 
@@ -120,15 +119,15 @@ De volgende problemen zijn ook opgelost in deze release.
 
 * Oracle Java SE 1.8 of hoger
 
-### Offline Packager 2.1 {#installing-offline-packager} installeren
+### Offline Packager 2.1 installeren {#installing-offline-packager}
 
-1. Download de Java SE-software van [Oracle site](https://www.oracle.com/technetwork/java/javase/downloads/index.html) en volg de installatie-instructies.
-1. Pak `Adobe Primetime - Offline Packager 2.1.0 archive file, PrimetimeOfflinePackager-2-1-0-b15-07082015.zip` uit op de schijf.
+1. Download de Java SE-software van de [Oracle](https://www.oracle.com/technetwork/java/javase/downloads/index.html) en volgt u de installatie-instructies.
+1. Het gereedschap Extraheren `Adobe Primetime - Offline Packager 2.1.0 archive file, PrimetimeOfflinePackager-2-1-0-b15-07082015.zip`, naar uw schijf.
 
-### Het vormen Offline Packager 2.1 {#configuring-the-offline-packager-1}
+### Het vormen van Offline Packager 2.1 {#configuring-the-offline-packager-1}
 
-Verwijs naar het Voorkeur Offline Packager Getting Started document voor de configuratiedetails beschikbaar hier [https://help.adobe.com/en_US/primetime/api/packagers/offline/index.html](https://help.adobe.com/en_US/primetime/api/packagers/offline/index.html)
+Verwijs het Voorkeur Offline Packager die - hier beschikbaar configuratiedetails krijgt [https://help.adobe.com/en_US/primetime/api/packagers/offline/index.html](https://help.adobe.com/en_US/primetime/api/packagers/offline/index.html)
 
 ## Nuttige bronnen {#helpful-resources}
 
-* Zie de volledige Help-documentatie op de pagina [Adobe Primetime Learn &amp; Support](https://helpx.adobe.com/support/primetime.html).
+* Zie de volledige Help-documentatie op [Adobe Primetime - Meer informatie en ondersteuning](https://helpx.adobe.com/support/primetime.html) pagina.

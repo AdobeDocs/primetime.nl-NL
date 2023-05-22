@@ -1,14 +1,13 @@
 ---
 description: Browser TVSDK verschaft uw video-app de informatie die nodig is om te reageren op een klik van een gebruiker op een klikbare advertentie.
 title: Klikbare advertenties
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: 5fd8b38d-bde7-4d80-bfb0-3390c8f2665c
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '184'
 ht-degree: 0%
 
 ---
-
 
 # Overzicht {#clickable-ads-overview}
 

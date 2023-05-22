@@ -1,14 +1,13 @@
 ---
 description: In Browser TVSDK, kunt u aan een specifieke positie (tijd) in een stroom zoeken. Een stream kan een afspeellijst met schuifvensters of VOD-inhoud (video on demand) zijn.
 title: Handgreep zoeken bij gebruik van de zoekbalk
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: 4c09b218-917a-4318-82b0-c221d450a2c1
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '329'
 ht-degree: 0%
 
 ---
-
 
 # Handgreep zoeken bij gebruik van de zoekbalk{#handle-seek-when-using-the-seek-bar}
 
@@ -20,11 +19,11 @@ In Browser TVSDK, kunt u aan een specifieke positie (tijd) in een stroom zoeken.
 
 1. Wacht tot Browser TVSDK geldig is voor zoeken.
 
-   Geldige statussen worden BEREID, VOLTOOID, GEPAUZEERD en AFGESPEELD. Als u in een geldige status werkt, weet u zeker dat de mediabrondel is geladen. Wanneer de speler zich niet in een geldige, doorzoekbare status bevindt, wordt een `IllegalStateException` gegenereerd als u de volgende methoden probeert aan te roepen.
+   Geldige statussen worden BEREID, VOLTOOID, GEPAUZEERD en AFGESPEELD. Als u in een geldige status werkt, weet u zeker dat de mediabrondel is geladen. Als de speler zich niet in een geldige, doorzoekbare status bevindt, wordt bij een poging de volgende methoden aan te roepen een `IllegalStateException`.
 
-   U kunt bijvoorbeeld wachten tot Browser-TVSDK `AdobePSDK.MediaPlayerStatusChangeEvent` heeft geactiveerd met een `event.status` van `AdobePSDK.MediaPlayerStatus.PREPARED`.
+   U kunt bijvoorbeeld wachten tot Browser TVSDK wordt geactiveerd  `AdobePSDK.MediaPlayerStatusChangeEvent`  met een `event.status` van `AdobePSDK.MediaPlayerStatus.PREPARED`.
 
-1. Geef de gewenste zoekpositie door aan de methode `MediaPlayer.seek` als een parameter in milliseconden.
+1. Geef de gewenste positie in de zoekopdracht door aan de `MediaPlayer.seek` als een parameter in milliseconden.
 
    Hierdoor wordt de afspeelkop naar een andere positie in de stream verplaatst.
 
@@ -36,7 +35,7 @@ In Browser TVSDK, kunt u aan een specifieke positie (tijd) in een stroom zoeken.
    void seek(long position) throws IllegalStateException;
    ```
 
-1. Wacht op Browser TVSDK om de gebeurtenis `AdobePSDK.PSDKEventType.SEEK_END` teweeg te brengen, die de aangepaste positie in het `actualPosition` attribuut van de gebeurtenis terugkeert:
+1. Wacht tot Browser TVSDK de  `AdobePSDK.PSDKEventType.SEEK_END`  gebeurtenis, die de aangepaste positie in de gebeurtenis terugkeert `actualPosition` kenmerk:
 
    ```js
    player.addEventListener(AdobePSDK.PSDKEventType.SEEK_END, onSeekComplete); 
@@ -73,4 +72,3 @@ In Browser TVSDK, kunt u aan een specifieke positie (tijd) in een stroom zoeken.
    * `AdobePSDK.PSDKEventType.SEEK_BEGIN` om aan te geven dat de zoekactie wordt gestart.
    * `AdobePSDK.PSDKEventType.SEEK_END` om aan te geven dat het zoeken is geslaagd.
    * `AdobePSDK.PSDKEventType.SEEK_POSITION_ADJUSTED` om aan te geven dat de mediaspeler de door de gebruiker opgegeven zoekpositie heeft aangepast.
-

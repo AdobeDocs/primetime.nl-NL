@@ -1,13 +1,13 @@
 ---
 title: REST API-naslaggids
 description: Referentie van rustapi
-source-git-commit: 326f97d058646795cab5d062fa5b980235f7da37
+exl-id: 67e4639e-db0b-4400-bb81-e214263e8395
+source-git-commit: bfc3ba55c99daba561255760baf273b6538a3c6e
 workflow-type: tm+mt
 source-wordcount: '629'
 ht-degree: 4%
 
 ---
-
 
 # REST API-naslaggids {#rest-api-reference}
 
@@ -74,4 +74,3 @@ In de onderstaande tabel staan de beschikbare webservices voor de clientless-aan
 ## REST API-beveiliging {#security}
 
 Alle clientless API&#39;s voor verificatie bij Primetime moeten worden aangeroepen met behulp van het HTTPS-protocol voor veilige communicatie. Bovendien zouden de meeste geroepen APIs een toegangstoken moeten bevatten die door wordt verstrekt [Dynamische clientregistratie](/help/authentication/dynamic-client-registration.md).
-

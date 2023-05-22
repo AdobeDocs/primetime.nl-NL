@@ -1,20 +1,19 @@
 ---
 description: Het ad-invoegproces (VOD, Video on-demand) bestaat uit de fasen voor het omzetten, invoegen en toevoegen van de advertentie. Voor het bijhouden van advertenties moet Browser-TVSDK een externe trackingserver informeren over de voortgang van het afspelen van elke advertentie. Wanneer zich onverwachte situaties voordoen, neemt de Commissie passende maatregelen.
 title: Toevoeging en overname van advertenties voor VOD
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: 62b82f56-e8c7-4c44-8b70-f204908777c5
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '671'
 ht-degree: 0%
 
 ---
 
-
 # Toevoeging en overname van advertenties voor VOD{#advertising-insertion-and-failover-for-vod}
 
 Het ad-invoegproces (VOD, Video on-demand) bestaat uit de fasen voor het omzetten, invoegen en toevoegen van de advertentie. Voor het bijhouden van advertenties moet Browser-TVSDK een externe trackingserver informeren over de voortgang van het afspelen van elke advertentie. Wanneer zich onverwachte situaties voordoen, neemt de Commissie passende maatregelen.
 
-## Adverterende fase {#section_F562CD6D0EF04AA9A0A3C0176A4EC340}
+## Adverteringsfase {#section_F562CD6D0EF04AA9A0A3C0176A4EC340}
 
 Browser TVSDK neemt contact op met een advertentieservice, zoals Adobe Primetime en besluitvorming, en probeert het primaire afspeellijstbestand te verkrijgen dat overeenkomt met de videostream voor de advertentie. Tijdens de ad-resolving fase, brengt Browser TVSDK een vraag van HTTP aan de verre ad-leveringsserver en ontleedt de reactie van de server.
 
@@ -35,7 +34,7 @@ Browser TVSDK ondersteunt de volgende typen advertentieproviders:
       Dit kan gebeuren omdat, bijvoorbeeld, het ontleden van de binnenkomende gegevens ontbrak.
    Browser TVSDK geeft een waarschuwingsbericht over de fout weer en gaat door met de verwerking.
 
-## Advertentiefase {#section_88A0E4FA12394717A9D85689BD11D59F}
+## Ad-invoegfase {#section_88A0E4FA12394717A9D85689BD11D59F}
 
 Browser-TVSDK voegt de alternatieve inhoud (advertenties) in de tijdlijn die overeenkomt met de hoofdinhoud.
 

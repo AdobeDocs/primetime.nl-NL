@@ -1,13 +1,13 @@
 ---
 title: Primetime machtigingsservices inschakelen voor een programmeur op Xbox 360 en XboxOne-client
 description: Primetime machtigingsservices inschakelen voor een programmeur op Xbox 360 en XboxOne-client
-source-git-commit: 326f97d058646795cab5d062fa5b980235f7da37
+exl-id: ff7254de-9ea4-4c27-a186-d1c2eea12222
+source-git-commit: bfc3ba55c99daba561255760baf273b6538a3c6e
 workflow-type: tm+mt
 source-wordcount: '433'
 ht-degree: 0%
 
 ---
-
 
 # Primetime machtigingsservices inschakelen voor een programmeur op Xbox 360 en XboxOne-client {#enabling-primetime-entitlement-services-for-a-programer-on-xbox-360-and-xboxone-clientless}
 
@@ -47,6 +47,4 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Wegens de grote lengte van het teken van XSTS, heeft de console XBox een technische beperking: het kan niet het teken als parameter van HTTP GET naar Primetime betaal-TV authentificatie APIs verzenden. Om dit te behandelen, staat de betaling-TV authentificatie Primetime toe verzendend het teken van XSTS als deel van de kopbal van HTTP &quot;Vergunning&quot;wanneer het roepen van APIs. De token XSTS moet worden gecodeerd met de openbare sleutel van het X.509-certificaat dat aan de programmeur is uitgegeven vanaf Primetime betaaltelevisie-verificatie. Bij betaaltelevisie in primetime wordt de bijbehorende persoonlijke sleutel opgeslagen en gebruikt om het XSTS-token te decoderen en de deviceId eruit te extraheren.  
-
-
+>Wegens de grote lengte van het teken van XSTS, heeft de console XBox een technische beperking: het kan niet het teken als parameter van HTTP GET naar Primetime betaal-TV authentificatie APIs verzenden. Om dit te behandelen, staat de betaling-TV authentificatie Primetime toe verzendend het teken van XSTS als deel van de kopbal van HTTP &quot;Vergunning&quot;wanneer het roepen van APIs. De token XSTS moet worden gecodeerd met de openbare sleutel van het X.509-certificaat dat aan de programmeur is uitgegeven vanaf Primetime betaaltelevisie-verificatie. Bij betaaltelevisie in primetime wordt de bijbehorende persoonlijke sleutel opgeslagen en gebruikt om het XSTS-token te decoderen en de deviceId eruit te extraheren.

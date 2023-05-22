@@ -1,14 +1,13 @@
 ---
 description: Wanneer TVSDK een geabonneerde tag in de afspeellijst/het manifest detecteert, probeert de speler de tag automatisch te verwerken en beschikbaar te maken in de vorm van een object PTTimedMetadata.
 title: Timed metadata-klasse
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: 969a3cd8-f8db-4b41-8826-c2d7aa8e5df1
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '326'
 ht-degree: 0%
 
 ---
-
 
 # Timed metadata-klasse {#timed-metadata-class}
 
@@ -33,7 +32,7 @@ De klasse biedt de volgende elementen:
   <tr> 
    <td colname="col1"><span class="codeph"> name</span> </td> 
    <td colname="col02"><span class="codeph"> NSString</span></td> 
-   <td colname="col2"> De naam van de getimede metagegevens. Wanneer het type <span class="codeph"> TAG</span> is, vertegenwoordigt de waarde de naam van het actiepunt/de tag. Als het type <span class="codeph"> ID3</span> is, is het ongeldig. </td> 
+   <td colname="col2"> De naam van de getimede metagegevens. Als het type <span class="codeph"> TAG</span>, vertegenwoordigt de waarde de naam van het actiepunt/de tag. Als het type <span class="codeph"> ID3</span>, is deze null. </td> 
   </tr> 
   <tr> 
    <td colname="col1"><span class="codeph"> tijd</span> </td> 

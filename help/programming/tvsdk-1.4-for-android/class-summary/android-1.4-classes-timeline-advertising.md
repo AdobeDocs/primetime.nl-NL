@@ -1,14 +1,13 @@
 ---
 description: Deze klassen bieden informatie over advertenties die binnen een tijdlijn voorkomen.
 title: Tijdlijnadvertentieklassen
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: fb31a235-6578-4da1-b732-713a2f9b24be
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '570'
 ht-degree: 0%
 
 ---
-
 
 # Tijdlijnadvertentieklassen{#timeline-advertising-classes}
 
@@ -20,7 +19,7 @@ Pakket: [com.adobe.mediacore.timeline.advertence.auditude](https://help.adobe.co
 
 | Naam | Beschrijving |
 |--- |--- |
-| [Advertentie](https://help.adobe.com/en_US/primetime/api/psdk/javadoc_1.4/com/adobe/mediacore/timeline/advertising/Ad.html) | Klasse die de abstractie van de Advertentie bepaalt en alle advertentiemateriaal houdt. Deze wordt gedefinieerd door een unieke id, een duur en een `MediaResource`. De `MediaResource` bevat de URL waar de daadwerkelijke inhoud van de advertentie zich bevindt. |
+| [Advertentie](https://help.adobe.com/en_US/primetime/api/psdk/javadoc_1.4/com/adobe/mediacore/timeline/advertising/Ad.html) | Klasse die de abstractie van de Advertentie bepaalt en alle advertentiemateriaal houdt. Deze wordt gedefinieerd door een unieke id, een duur en een `MediaResource`. De `MediaResource` bevat de URL waar de daadwerkelijke advertentie-inhoud zich bevindt. |
 | [AdAsset](https://help.adobe.com/en_US/primetime/api/psdk/javadoc_1.4/com/adobe/mediacore/timeline/advertising/AdAsset.html) | Klasse die een element vertegenwoordigt dat moet worden weergegeven. Klasse die een advertentie-element vertegenwoordigt. |
 | [AdBreak](https://help.adobe.com/en_US/primetime/api/psdk/javadoc_1.4/com/adobe/mediacore/timeline/advertising/AdBreak.html) | Klasse die een verenigde weergave biedt op meerdere advertenties die op een bepaald punt tijdens het afspelen worden afgespeeld. |
 | [AdBreakPlacement](https://help.adobe.com/en_US/primetime/api/psdk/javadoc_1.4/com/adobe/mediacore/timeline/advertising/AdBreakPlacement.html) | bewerkingsklasse voor plaatsing van regeleinde toevoegen. |

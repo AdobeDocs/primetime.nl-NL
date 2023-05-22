@@ -1,14 +1,13 @@
 ---
 description: Deze sectie behandelt de grammatica van de configuratieinput, benadrukkend geldige en ongeldige inputopties, en verklarend hoe weggelaten facultatieve gebieden worden geïnterpreteerd.
 title: RBOP Grammar
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: 311194ec-e59b-4145-b22b-6983e212fcab
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '461'
 ht-degree: 0%
 
 ---
-
 
 # RBOP Grammar {#rbop-grammar}
 
@@ -66,7 +65,7 @@ AnotherRule ::=
    }
    ```
 
-   De volgende instantie zou dan ongeldig zijn, omdat er twee `foo` paren binnen hetzelfde object zijn:
+   dan is de volgende instantie ongeldig, omdat er twee zijn `foo` paren binnen hetzelfde object:
 
    ```
    { 
@@ -98,13 +97,13 @@ AnotherRule ::=
 
    is geldig, omdat het onafhankelijke instanties van hetzelfde object zijn.
 
-1. Voor definities waarbij een of meer reeksen kunnen worden gekozen, behandelt u de tekenreeksen als een set, waarin dubbele items als één item worden beschouwd. `["foo", "bar", "foo", "baz"]` is bijvoorbeeld gelijk aan `["foo", "bar", "baz"]`
+1. Voor definities waarbij een of meer reeksen kunnen worden gekozen, behandelt u de tekenreeksen als een set, waarin dubbele items als één item worden beschouwd. Bijvoorbeeld: `["foo", "bar", "foo", "baz"]` is gelijk aan `["foo", "bar", "baz"]`
 
-1. Voor het definiëren van getallen wordt een spatie gebruikt tussen de regels (bijvoorbeeld `Digit Digits`), maar deze spatie moet niet worden gebruikt bij het toepassen van de regel.
+1. Voor het definiëren van getallen wordt een spatie tussen de regels gebruikt (bijvoorbeeld `Digit Digits`), maar bij toepassing van de regel mag deze ruimte niet worden gebruikt.
 
-   Als we bijvoorbeeld het getal *103* per de regel NonZeroInteger uitdrukken, moet deze worden uitgedrukt als `123` in plaats van `1 2 3`, ook al bevat de regel een ruimte tussen NonZeroDigit en Cijfers.
+   Als we bijvoorbeeld het getal uitdrukken *123* volgens de regel NonZeroInteger moet deze worden uitgedrukt als `123` eerder dan `1 2 3`, ook al bevat de regel ruimte tussen NonZeroDigit en Cijfers.
 
-1. Sommige regels staan meerdere formulieren toe. In deze gevallen worden de verschillende formulieren gescheiden door het teken `'|'`.
+1. Sommige regels staan meerdere formulieren toe. In deze gevallen worden de verschillende formulieren gescheiden door de `'|'` teken.
 
    Deze regel:
 
@@ -112,7 +111,7 @@ AnotherRule ::=
    Foo ::= "A" | "B" | "C"
    ```
 
-   betekent dat een instantie van `Foo` kan worden vervangen door &quot;A&quot;, &quot;B&quot; of &quot;C&quot;. Dit mag niet worden verward met een formulier dat meerdere regels omvat. hiermee kunt u langere formulieren leesbaarder maken.
+   betekent dat een `Foo` kunnen worden vervangen door &quot;A&quot;, &quot;B&quot; of &quot;C&quot;. Dit mag niet worden verward met een formulier dat meerdere regels omvat. hiermee kunt u langere formulieren leesbaarder maken.
 
 ## De grammatica {#section_52189FD66B1A46BA9F8FDDE1D7C8E8E8}
 
@@ -235,7 +234,7 @@ NonZeroDigit ::=
 
 ## Semantiek: Geldige maar ongeldige configuraties {#section_709BE240FF0041D4A1B0A0A7544E4966}
 
-Het *onderwerp van de Bescherming van de Output van de Steekproef* stelde een geldige configuratie samen met zijn semantische betekenis voor. De vorige sectie in *dit* onderwerp presenteerde de grammaticaregels voor configuraties. Hoewel de grammatica helpt syntactische correctheid te verzekeren, zijn er syntactisch wettige configuraties die niet semantisch correct zijn (d.w.z., zijn zij niet logisch). In deze sectie worden configuraties weergegeven die *syntactisch* legaal zijn, maar *semantisch* onjuist. Houd er rekening mee dat de voorbeelden in dit gedeelte zijn beperkt tot de minimale structuur die nodig is om het te bespreken scenario te illustreren.
+De *Voorbeeld van configuratie voor uitvoerbeveiliging* onderwerp voorlegde een geldige configuratie samen met zijn semantische betekenis voor. De vorige sectie in *dit* het onderwerp voorlegde de grammaticaregels voor configuraties voor. Hoewel de grammatica helpt syntactische correctheid te verzekeren, zijn er syntactisch wettige configuraties die niet semantisch correct zijn (d.w.z., zijn zij niet logisch). Deze sectie stelt configuraties voor die *syntactisch* wettelijk, maar *semantisch* onjuist. Houd er rekening mee dat de voorbeelden in dit gedeelte zijn beperkt tot de minimale structuur die nodig is om het te bespreken scenario te illustreren.
 
 * Het is niet toegestaan meerdere pixelbeperkingen met hetzelfde aantal pixels te definiëren.
 

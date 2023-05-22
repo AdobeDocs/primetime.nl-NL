@@ -1,14 +1,13 @@
 ---
 description: Om klanten aan te passen die slechts voor wat willen betalen zij, eerder dan een vast tarief ongeacht werkelijk gebruik, Adobe gebruiksmetriek verzamelen en deze metriek gebruiken om te bepalen hoeveel om de klanten in rekening te brengen.
 title: Factureringsgebruiksmaatstaven
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: 8b76d8ea-c8d6-427b-886a-4ae8764bd47a
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '355'
 ht-degree: 0%
 
 ---
-
 
 # Factureringscijfers {#billing-metrics}
 
@@ -29,7 +28,7 @@ Adobe configureert deze indeling vooraf, maar als u de indeling wilt wijzigen, w
 
 Om de statistieken te controleren die TVSDK naar Adobe verzendt, verkrijg URL van uw vertegenwoordiger van Inablement van de Adobe, en gebruik een netwerk vangt hulpmiddel, bijvoorbeeld, Charles, om de gegevens te zien.
 
-## Factureringsmetriek {#configure-billing-metrics} vormen
+## Factureringsmetriek configureren {#configure-billing-metrics}
 
 Als u de standaardconfiguratie gebruikt, is er niets anders u moet doen om het factureren toe te laten of te vormen. Als u verschillende configuratieparameters van uw Adobe Enablement vertegenwoordiger hebt verkregen, gebruik de klasse PTBillingMetricsConfiguration om deze parameters omhoog te plaatsen alvorens de media speler te initialiseren.
 
@@ -54,7 +53,7 @@ billingConfig.liveBillableDurationMinutes = 15.0;
 [metadata setMetadata:billingConfig forKey:PTBillingMetricsConfigurationMetadataKey];
 ```
 
-## Factureringscijfers {#transmit-billing-metrics} verzenden
+## Factureringsgegevens verzenden {#transmit-billing-metrics}
 
 TVSDK verzendt factureringsmetriek naar Adobe in een formaat van XML.
 
@@ -86,4 +85,4 @@ Als u een netwerk vangt hulpmiddel gebruikt om de statistiekenTVSDK te controler
 </request>
 ```
 
-De booleaanse eigenschappen `drmProtected`, `adsEnabled` en `midrollEnabled` worden alleen weergegeven als ze waar zijn.
+Booleaanse eigenschappen `drmProtected`, `adsEnabled`, en `midrollEnabled` worden alleen weergegeven als ze waar zijn.

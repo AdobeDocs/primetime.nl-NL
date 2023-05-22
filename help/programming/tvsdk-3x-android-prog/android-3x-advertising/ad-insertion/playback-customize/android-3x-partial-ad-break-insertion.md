@@ -2,14 +2,13 @@
 title: Onvolledige invoeging van advertentie
 description: Onvolledige invoeging van advertentie
 copied-description: true
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: c86f1e99-7f1e-4a1e-b285-568ad6659f45
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '214'
 ht-degree: 0%
 
 ---
-
 
 # Onvolledige invoeging van advertentie-einde {#partial-ad-break-insertion}
 
@@ -22,7 +21,7 @@ Als een gebruiker zich bijvoorbeeld in het midden van een 90-seconde ad-onderbre
 
 Dit gedrag is niet standaard ingeschakeld. Ga als volgt te werk om deze functie in te schakelen in uw app:
 
-Schakel de voorkeur voor Gedeeltelijke invoeging van advertentie in. Gebruik de nieuwe methode `setPartialAdBreakPref` in de interface MediaPlayer om deze eigenschap AAN te schakelen. Gebruik de methode `getPartialAdBreakPref` om de huidige status van deze voorkeur te vinden.
+Schakel de voorkeur voor Gedeeltelijke invoeging van advertentie in. De nieuwe methode gebruiken `setPartialAdBreakPref` in MediaPlayer-interface om deze functie AAN te schakelen. Gebruiken `getPartialAdBreakPref` methode om de huidige status van deze voorkeur te vinden.
 
 ```
     MediaPlayer mediaPlayer = new MediaPlayer(getActivity(). getApplicationContext()); 

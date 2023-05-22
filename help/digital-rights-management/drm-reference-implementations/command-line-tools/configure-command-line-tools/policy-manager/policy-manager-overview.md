@@ -2,20 +2,19 @@
 title: Overzicht
 description: Overzicht
 copied-description: true
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: 4781e0bc-c753-4c8f-9c91-bf15294eb8b2
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '60'
 ht-degree: 0%
 
 ---
 
-
 # Overzicht {#overview}
 
-Gebruik het bevel-lijn hulpmiddel van de Manager van het Beleid Primetime DRM ( [!DNL AdobePolicyManager.jar]) om beleid te creëren en te beheren DRM.
+Het opdrachtregelprogramma Primetime DRM Policy Manager gebruiken ( [!DNL AdobePolicyManager.jar]) om DRM-beleid te maken en te beheren.
 
-Alvorens u [!DNL AdobePolicyManager.jar] in werking stelt, moet u eigenschappen in de sectie van de Eigenschappen van de Manager van het Beleid van uw configuratiedossier plaatsen. De waarden die u instelt in het configuratiebestand worden toegepast op alle DRM-beleidsregels.
+Voordat u gaat werken [!DNL AdobePolicyManager.jar], moet u eigenschappen in de sectie van de Eigenschappen van de Manager van het Beleid van uw configuratiedossier plaatsen. De waarden die u instelt in het configuratiebestand worden toegepast op alle DRM-beleidsregels.
 
 >[!NOTE]
 >

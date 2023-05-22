@@ -1,14 +1,13 @@
 ---
 description: Gebeurtenissen van TVSDK geven de status van de speler aan, fouten die optreden, de voltooiing van handelingen die u hebt aangevraagd, zoals een video die wordt afgespeeld, of handelingen die impliciet optreden, zoals een advertentie-bewerking.
 title: Luisteren naar gebeurtenissen in Primetime Player
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: 5a3a6436-ea69-4977-b4e8-c05a31faba00
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '253'
 ht-degree: 0%
 
 ---
-
 
 # Overzicht {#listen-for-primetime-player-events-overview}
 
@@ -25,4 +24,3 @@ Hieronder vindt u aanvullende informatie over gebeurtenissen:
 * In de toepassing worden gewoonlijk niet-blokkerende bewerkingen gestart, zoals het aanvragen van het afspelen van een video.
 
    TVSDK communiceert asynchroon met uw toepassing door gebeurtenissen te verzenden, zoals wanneer de video begint met afspelen en een gebeurtenis wanneer de video is voltooid. Andere gebeurtenissen kunnen statuswijzigingen in de speler en foutcondities aangeven. Uw gebeurtenishandlers voeren de juiste handelingen uit.
-

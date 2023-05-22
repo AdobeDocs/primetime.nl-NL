@@ -1,13 +1,13 @@
 ---
 title: Amazon FireOS Integration Cookbook
 description: Amazon FireOS Integration Cookbook
-source-git-commit: 326f97d058646795cab5d062fa5b980235f7da37
+exl-id: 1982c485-f0ed-4df3-9a20-9c6a928500c2
+source-git-commit: bfc3ba55c99daba561255760baf273b6538a3c6e
 workflow-type: tm+mt
 source-wordcount: '1433'
 ht-degree: 0%
 
 ---
-
 
 # Amazon FireOS Integration Cookbook {#amazon-fireos-integration-cookbook}
 
@@ -203,4 +203,3 @@ De `event` parameter geeft aan welke machtigingsgebeurtenis heeft plaatsgevond
    AccessEnabler ontruimt alle caching waarden en tekenen die door de gebruiker voor huidige MVPD op alle aanvragers worden verkregen die login delen door Enig Teken. Na het ontruimen van het geheime voorgeheugen, richt AccessEnabler een servervraag om de server-zijzittingen schoon te maken.  Merk op dat aangezien de servervraag in SAML kon resulteren die aan IdP (dit staat voor de zittingsschoonmaak op de kant IdP toe) wordt omgeleid, deze vraag moet alle omleidingen volgen. Om deze reden, zal deze vraag binnen een controle WebView worden behandeld, onzichtbaar voor de gebruiker.
 
    **Opmerking:** De logout stroom verschilt van de authentificatiestroom in die zin dat de gebruiker niet wordt vereist om met WebView op om het even welke manier in wisselwerking te staan. Aldus is het mogelijk (en geadviseerd) om de controle te maken WebView onzichtbaar (d.w.z.: verborgen) tijdens het logout-proces.
-

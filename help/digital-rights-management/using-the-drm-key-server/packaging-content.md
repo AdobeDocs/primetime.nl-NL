@@ -2,14 +2,13 @@
 title: Inhoud verpakken
 description: Inhoud verpakken
 copied-description: true
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: d408889c-f96d-43d3-af50-62cb5ecc2e28
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '135'
 ht-degree: 0%
 
 ---
-
 
 # Inhoud verpakken{#packaging-content}
 
@@ -19,7 +18,7 @@ Wanneer het verpakken van inhoud voor verre zeer belangrijke levering, gebruik e
 https://key-server-host:port/faxsks/tenant-name/key
 ```
 
-Voor de hostnaam [!DNL mykeyserver.com] van Key Server die bijvoorbeeld luistert op poort 443 en een huurder met de naam `tenant1`, is de URL van de toetsserver die moet worden opgegeven in de M3U8:
+Bijvoorbeeld voor hostnaam van sleutelserver [!DNL mykeyserver.com] luisteren op haven 443, en een genoemde huurder `tenant1`De URL van de toetsserver die in de M3U8 moet worden opgegeven, is:
 
 ```
 https://mykeyserver.com:443/faxsks/tenant1/key

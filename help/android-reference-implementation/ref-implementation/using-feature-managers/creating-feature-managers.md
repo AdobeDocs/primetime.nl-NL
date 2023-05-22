@@ -1,16 +1,15 @@
 ---
 description: De eigenschappen van TVSDK worden gedreven door configuratie en door MediaPlayer uitgevoerd.
 title: Het creëren van eigenschapmanagers door configuratieinformatie tot MediaPlayer over te gaan
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: 47377ceb-ed3e-4dca-9b55-82e4fe6b0194
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '230'
 ht-degree: 0%
 
 ---
 
-
-# Het creëren van eigenschapmanagers door configuratieinformatie tot MediaPlayer {#creating-feature-managers-by-passing-configuration-information-to-the-mediaplayer} over te gaan
+# Het creëren van eigenschapmanagers door configuratieinformatie tot MediaPlayer over te gaan {#creating-feature-managers-by-passing-configuration-information-to-the-mediaplayer}
 
 De eigenschappen van TVSDK worden gedreven door configuratie en door MediaPlayer uitgevoerd.
 
@@ -24,9 +23,9 @@ De eigenschappen van TVSDK worden gedreven door configuratie en door MediaPlayer
 
    De managers van de eigenschap registreren TVSDK gebeurtenisluisteraars aan dit spelervoorwerp, halen gegevens van de playbackzitting terug en brengen eigenschappen TVSDK aan de playbackzitting teweeg.
 
-Elke eigenschap heeft een overeenkomstige configuratieinterface. `CCManager` gebruikt bijvoorbeeld `ICCConfig` om de configuratie op te halen. `ICCConfig` bevat methodes om de configuratieinformatie met betrekking tot gesloten ondertiteling slechts te krijgen.
+Elke eigenschap heeft een overeenkomstige configuratieinterface. Bijvoorbeeld: `CCManager` gebruik `ICCConfig` om de configuratie op te halen. `ICCConfig` bevat methodes om de configuratieinformatie met betrekking tot gesloten ondertiteling slechts te krijgen.
 
-In het volgende voorbeeld wordt het [!DNL ICCConfig.java]-bestand getoond, geconfigureerd om informatie te ontvangen over de zichtbaarheid van een gesloten bijschrift, de lettertypestijl en de lettertyperand van `MediaPlayer`:
+In het volgende voorbeeld wordt het [!DNL ICCConfig.java] bestand, geconfigureerd voor het ontvangen van informatie over zichtbaarheid van een gesloten bijschrift, letterstijl en lettertyperand vanuit de `MediaPlayer`:
 
 ```java
 // Constructor of CCManager 
@@ -64,7 +63,7 @@ In het volgende voorbeeld wordt het [!DNL ICCConfig.java]-bestand getoond, gecon
 }
 ```
 
-Een toepassing die een eigenschap van TVSDK gebruikt kan zijn eigenschapmanager met een configuratieleverancier en een `MediaPlayer` voorwerp tot stand brengen. Bijvoorbeeld:
+Een toepassing die een eigenschap van TVSDK gebruikt kan zijn eigenschapmanager met een configuratieleverancier en een `MediaPlayer` object. Bijvoorbeeld:
 
 ```java
 // This application needs to use the advertising workflow feature 

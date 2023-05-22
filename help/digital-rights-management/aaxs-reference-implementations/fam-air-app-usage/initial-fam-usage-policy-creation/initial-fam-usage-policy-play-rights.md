@@ -2,14 +2,13 @@
 title: Rechten afspelen
 description: Rechten afspelen
 copied-description: true
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: a4fda537-dbcc-496b-8f15-c13b25fe87b0
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '290'
 ht-degree: 0%
 
 ---
-
 
 # Rechten afspelen {#play-rights}
 
@@ -25,7 +24,7 @@ In de volgende tabel worden de voorkeuren voor afspeelrechten beschreven:
 | Minimaal beveiligingsniveau |  |
 | DRM | Minimaal DRM-beveiligingsniveau vereist om beveiligde inhoud af te spelen. |
 | Runtime | Minimale runtime beveiligingsniveau vereist om beveiligde inhoud af te spelen. |
-| Toegestane toepassingen | Lijst van gewenste personen van clienttoepassingen die inhoud mogen afspelen. Wanneer geen toepassingen worden opgegeven, is een SWF- of AIR-toepassing toegestaan. |
+| Toegestane toepassingen | Lijst van gewenste personen van clienttoepassingen die inhoud mogen afspelen. Als er geen toepassingen worden opgegeven, is elke SWF- of AIR-toepassing toegestaan. |
 | SWF | Lijst met SWF-URL&#39;s die beveiligde inhoud mogen afspelen. |
 | AIR | Lijst met AIR-toepassingen die beveiligde inhoud mogen afspelen. Uitgever-id is vereist. De overige velden zijn optioneel. |
 

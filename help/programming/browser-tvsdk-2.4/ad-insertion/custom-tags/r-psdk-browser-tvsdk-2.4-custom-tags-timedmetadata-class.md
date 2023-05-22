@@ -1,20 +1,19 @@
 ---
 description: Wanneer Browser TVSDK een geabonneerde tag in de afspeellijst/het manifest detecteert, probeert de speler de tag automatisch te verwerken en beschikbaar te maken als een object TimedMetadata.
 title: Timed metadata-klasse
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: 893879b5-03ed-4c11-80a6-b57b7d54a95c
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '228'
 ht-degree: 0%
 
 ---
 
-
 # Timed metadata-klasse{#timed-metadata-class}
 
 Wanneer Browser TVSDK een geabonneerde tag in de afspeellijst/het manifest detecteert, probeert de speler de tag automatisch te verwerken en beschikbaar te maken als een object TimedMetadata.
 
-De klasse `TimedMetadata` biedt de volgende elementen:
+De `TimedMetadata` class biedt de volgende elementen:
 
 <table id="table_5827A0626EDC45F68DC3E7644F3EFF69"> 
  <thead> 
@@ -61,4 +60,3 @@ De klasse `TimedMetadata` biedt de volgende elementen:
   </tr> 
  </tbody> 
 </table>
-

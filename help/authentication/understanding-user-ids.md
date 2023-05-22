@@ -1,13 +1,13 @@
 ---
 title: Gebruikersnaam
 description: Gebruikersnaam
-source-git-commit: 326f97d058646795cab5d062fa5b980235f7da37
+exl-id: 813a8501-db72-4850-a387-c8db6120db80
+source-git-commit: bfc3ba55c99daba561255760baf273b6538a3c6e
 workflow-type: tm+mt
 source-wordcount: '602'
 ht-degree: 0%
 
 ---
-
 
 # Gebruikersnaam {#understanding-user-ids}
 
@@ -39,4 +39,3 @@ Hoe je de gebruikersnaam gebruikt, hangt af van het gebruik:
 * Als u het voor tracking/analytics nodig hebt, kunt u het het best van `sendTrackingData()`.
 * Als u het op de server-kant voor stroomversie, fraude, of operationele gegevens nodig hebt, kunt u het van de Symbolische validator krijgen van Media Token.
 * Als u het voor rekening het verbinden en diepere fraude nodig hebt, controleer met uw contact van de Adobe voor beschikbaarheid.
-

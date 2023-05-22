@@ -1,18 +1,17 @@
 ---
-description: Het SWF-hulpprogramma Hash Calculator berekent de samenvatting van een SWF-toepassing die zich in een bestand bevindt.
-title: SWF-hash-calculator
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+description: Het hulpmiddel van de Rekenmachine van de Hash van SWF berekent de samenvatting van een toepassing van de SWF die in een dossier wordt gevestigd.
+title: SWF hash-calculator
+exl-id: 245254fe-2fcb-41e8-94bd-0cbc8b39b2b5
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '65'
 ht-degree: 0%
 
 ---
 
+# SWF hash-calculator{#swf-hash-calculator}
 
-# SWF-hash-calculator{#swf-hash-calculator}
-
-Het SWF-hulpprogramma Hash Calculator berekent de samenvatting van een SWF-toepassing die zich in een bestand bevindt.
+Het hulpmiddel van de Rekenmachine van de Hash van SWF berekent de samenvatting van een toepassing van de SWF die in een dossier wordt gevestigd.
 
 Typ de volgende tekst om de hasher uit te voeren:
 

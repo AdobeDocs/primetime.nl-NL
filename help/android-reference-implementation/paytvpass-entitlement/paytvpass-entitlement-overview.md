@@ -1,14 +1,13 @@
 ---
 description: Met Adobe Primetime-verificatie kunt u gebruikersrechten in uw speler beheren.
 title: Overzicht
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: 0db18747-0ccb-4654-8f1d-9b51915b3652
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '99'
 ht-degree: 0%
 
 ---
-
 
 # Overzicht {#overview}
 
@@ -18,4 +17,4 @@ De functiemanager die de stromen van de de authentificatierechten van Primetime 
 
 Deze naslagimplementatie voor Android gebruikt versie 1.7.3 van de AccessEnabler-bibliotheek voor primetime-verificatie. Een groot deel van de implementatie lijkt sterk op de bestaande demo-toepassing die wordt geleverd met de AccessEnabler-bibliotheek.
 
-Voor extra informatie over authentificatie Primetime, zie de documentatie bij [Inleiding aan programmeerintegratie](https://tve.helpdocsonline.com/introduction-to-programmer-integration).
+Raadpleeg de documentatie op [Inleiding tot programmeerintegratie](https://tve.helpdocsonline.com/introduction-to-programmer-integration).

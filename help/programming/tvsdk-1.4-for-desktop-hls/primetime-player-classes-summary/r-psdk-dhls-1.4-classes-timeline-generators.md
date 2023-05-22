@@ -1,16 +1,15 @@
 ---
 description: Deze klassen helpen u bij het detecteren van kansen in een tijdlijn voor de plaatsing van inhoud, zoals advertenties.
 title: Klassen van tijdlijngeneratoren
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: 2c9d1f10-fdf6-48b9-8bda-cee291befeab
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '195'
 ht-degree: 0%
 
 ---
 
-
-# Klassen voor tijdlijngeneratoren{#timeline-generators-classes}
+# Klassen van tijdlijngeneratoren{#timeline-generators-classes}
 
 Deze klassen helpen u bij het detecteren van kansen in een tijdlijn voor de plaatsing van inhoud, zoals advertenties.
 

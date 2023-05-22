@@ -2,16 +2,15 @@
 title: Toezicht
 description: Toezicht
 copied-description: true
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: edf62298-4082-4ac1-b2b7-8d0e0959ed04
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '164'
 ht-degree: 0%
 
 ---
 
-
-# Bewaking{#monitoring}
+# Toezicht{#monitoring}
 
 De server van de Individualisering en de Zeer belangrijke server van de Generatie elk hebben een statuspagina, die u kunt gebruiken om de gezondheid van de servers te bepalen.
 
@@ -34,4 +33,3 @@ De server van de Individualisering en de Zeer belangrijke server van de Generati
 
    * Omvat statistieken over de Zeer belangrijke server van de Generatie, zoals het aantal gediende verzoeken en het aantal zeer belangrijke dossiers beschikbaar op schijf
    * Alle URL&#39;s voor sleutelgeneratie moeten alleen intern toegankelijk zijn
-

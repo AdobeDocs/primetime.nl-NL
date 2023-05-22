@@ -2,16 +2,15 @@
 title: Terminologie en kernbegrippen
 description: Terminologie en kernbegrippen
 copied-description: true
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: 29d83bf8-5f4e-4651-a523-4472942c09a7
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '672'
 ht-degree: 0%
 
 ---
 
-
-# Terminologie en kernconcepten {#terminology-and-core-concepts}
+# Terminologie en kernbegrippen {#terminology-and-core-concepts}
 
 In dit document worden de volgende termen en concepten gebruikt:
 
@@ -21,31 +20,31 @@ De *consument* is de eindgebruiker die inhoud downloadt of stroomt.
 
 **Inhoud**
 
-*De* inhoud bestaat uit digitale audio- of videobestanden.
+*Inhoud* bestaat uit digitale audio- of videobestanden.
 
 **Inhoudscoderingssleutel**
 
-De *Content Encryption Key* (CEK) is een cryptografische sleutel die wordt gebruikt om de inhoud te versleutelen.
+De *Inhoudscoderingssleutel* (CEK) is een cryptografische sleutel die wordt gebruikt om de inhoud te coderen.
 
 **Eigenaren van inhoud**
 
-*Inhoud* is eigendom van de zakelijke entiteiten die eigenaar zijn van het copyright van de inhoud. Dit kunnen grote filmstudio&#39;s zijn, of kleinere, onafhankelijke producenten van films of andere audiovisuele inhoud.
+*Eigenaren van inhoud* zijn de zakelijke entiteiten die eigenaar zijn van het auteursrecht op de inhoud. Dit kunnen grote filmstudio&#39;s zijn, of kleinere, onafhankelijke producenten van films of andere audiovisuele inhoud.
 
 **Inhoud verpakken**
 
-*Inhoud* verpakken is een organisatie die inhoud verpakt voor gebruik met Adobe Access. Eigenaren of distributeurs van inhoud kunnen ervoor kiezen hun eigen inhoud in een pakket te plaatsen, of ze kunnen de services van een derde partij inschrijven om hun inhoud te verpakken en deze elektronisch via internet te distribueren.
+*Inhoud verpakken* zijn organisaties die inhoud verpakken voor gebruik met Adobe Access. Eigenaren of distributeurs van inhoud kunnen ervoor kiezen hun eigen inhoud in een pakket te plaatsen, of ze kunnen de services van een derde partij inschrijven om hun inhoud te verpakken en deze elektronisch via internet te distribueren.
 
 **Digitaal certificaat**
 
-*Digitale certificaten*  (ook wel  *certificaten* genoemd) binden een entiteit, zoals een individu, organisatie of systeem, aan een specifiek openbaar en privé sleutelpaar. Digitale certificaten kunnen worden beschouwd als elektronische referenties waarmee de identiteit van een individu, systeem of organisatie wordt geverifieerd.
+*Digitale certificaten* (ook aangeduid als *certificaten*) bindt een entiteit, zoals een individu, organisatie of systeem, aan een specifiek openbaar en privé zeer belangrijk paar. Digitale certificaten kunnen worden beschouwd als elektronische referenties waarmee de identiteit van een individu, systeem of organisatie wordt geverifieerd.
 
 **Digitale handtekening**
 
-Een *digitale handtekening* bindt de identiteit van de uitgever aan de inhoud die zij hebben gepubliceerd en verstrekt een mechanisme om het knoeien te ontdekken. Digitale handtekeningalgoritmen gebruiken cryptografische hashfuncties en asymmetrische (of openbare/persoonlijke sleutelparen) versleutelingsalgoritmen. Sommige digitale handtekeningen maken ook gebruik van digitale certificaten en PKI (Public Key Infrastructure) om openbare sleutels te binden aan de identiteit van eigenaars of distributeurs van inhoud.
+A *digitale handtekening* bindt de identiteit van de uitgever aan de inhoud die zij hebben gepubliceerd en verstrekt een mechanisme om het knoeien te ontdekken. Digitale handtekeningalgoritmen gebruiken cryptografische hashfuncties en asymmetrische (of openbare/persoonlijke sleutelparen) versleutelingsalgoritmen. Sommige digitale handtekeningen maken ook gebruik van digitale certificaten en PKI (Public Key Infrastructure) om openbare sleutels te binden aan de identiteit van eigenaars of distributeurs van inhoud.
 
 **Distributeur**
 
-*Distributeurs*  (ook wel  *contentdistributeur (** detailhandelaren) genoemd) zijn zakelijke entiteiten die distributierechten van eigenaars van inhoud veiligstellen om inhoud aan consumenten te publiceren en te verspreiden. In sommige gevallen is dezelfde entiteit zowel de eigenaar van de inhoud als de distributeur van de inhoud.
+*Distributeurs* (ook aangeduid als *inhoudsdistributeurs* of* detailhandelaren*) zijn bedrijfsentiteiten die distributierechten van eigenaars van inhoud veiligstellen om inhoud te publiceren en aan consumenten te verspreiden. In sommige gevallen is dezelfde entiteit zowel de eigenaar van de inhoud als de distributeur van de inhoud.
 
 **DRM-metagegevens**
 
@@ -57,7 +56,7 @@ Een *license *is een gegevensstructuur die een gecodeerde sleutel bevat die word
 
 **Vergunning verkrijgen**
 
-*Licentieverwerving* is het proces waarbij een licentie wordt aangeschaft waarmee de consument beveiligde inhoud kan decoderen en weergeven volgens een set gebruiksregels. Licentieaanschaf doet zich voor wanneer een client informatie met de gevraagde inhoud (de *DRM-metagegevens*) en het machinecertificaat (die de computer van de consument identificeert) naar de licentieserver verzendt (zie hieronder).
+*Vergunning verkrijgen* is het proces waarbij een licentie wordt aangeschaft waarmee de consument beveiligde inhoud kan decoderen en bekijken volgens een set gebruiksregels. De aanschaf van een licentie vindt plaats wanneer een client informatie verstuurt die de gevraagde inhoud identificeert (de *DRM-metagegevens*) en het machinecertificaat (ter identificatie van de computer van de consument) voor de licentieserver (zie hieronder).
 
 **Licentieserver**
 
@@ -67,13 +66,13 @@ U moet een Server van de Vergunning tot stand brengen en opstellen gebruikend de
 
 **Beleid**
 
-Een *beleid* is een container voor de gebruiksregels die bepalen hoe de consument beschermde inhoud kan gebruiken. Het beleid wordt onafhankelijk van de inhoud gedefinieerd die wordt beveiligd. Een beleid dwingt geen rechten af tot het aan de inhoud door de vergunning wordt gebonden. Een beleid maakt een lijst van de reeks gebruiksregels, betekenend de toestemmingen of de &quot;rechten&quot;die de consumenten aan de inhoud moeten hebben zij verwerven. Eigenaars van inhoud kunnen bijvoorbeeld een beleid maken dat ervoor zorgt dat beveiligde inhoud alleen voor een bepaalde periode toegankelijk is voor consumenten. Dit beleid wordt vervolgens toegepast op alle inhoud waarvoor de eigenaar van de inhoud deze beperking wil afdwingen.
+A *beleid* is een container voor de gebruiksregels die bepalen hoe de consument beschermde inhoud kan gebruiken. Het beleid wordt onafhankelijk van de inhoud gedefinieerd die wordt beveiligd. Een beleid dwingt geen rechten af tot het aan de inhoud door de vergunning wordt gebonden. Een beleid maakt een lijst van de reeks gebruiksregels, betekenend de toestemmingen of de &quot;rechten&quot;die de consumenten aan de inhoud moeten hebben zij verwerven. Eigenaars van inhoud kunnen bijvoorbeeld een beleid maken dat ervoor zorgt dat beveiligde inhoud alleen voor een bepaalde periode toegankelijk is voor consumenten. Dit beleid wordt vervolgens toegepast op alle inhoud waarvoor de eigenaar van de inhoud deze beperking wil afdwingen.
 
 Het beleid wordt gecreeerd gebruikend Adobe Access SDK.
 
 **Beveiligde inhoud**
 
-*Beveiligde inhoud*  (ook wel  *verpakte inhoud* genoemd) verwijst naar FLV- en F4V-video-inhoud die is gecodeerd met de SDK van Adobe Access of andere ondersteunde gereedschappen.
+*Beveiligde inhoud* (ook aangeduid als *verpakte inhoud*) verwijst naar FLV- en F4V-video-inhoud die is gecodeerd met Adobe Access SDK of andere ondersteunde gereedschappen.
 
 **Detailhandelaars**
 

@@ -1,40 +1,39 @@
 ---
 description: Voor live streaming en invoegen moet u mogelijk een ad-einde verlaten voordat alle advertenties in het einde worden afgespeeld.
 title: Een vroege en eindresultaat implementeren
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: 584e870e-1408-41a9-bb6f-e82b921fe99e
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '382'
 ht-degree: 0%
 
 ---
 
-
-# Een vroege terugkeer voor een onderbreking implementeren{#implementing-an-early-ad-break-return}
+# Een vroege en eindresultaat implementeren{#implementing-an-early-ad-break-return}
 
 Voor live streaming en invoegen moet u mogelijk een ad-einde verlaten voordat alle advertenties in het einde worden afgespeeld.
 
 >[!NOTE]
 >
->U moet zich abonneren op de splice out/in-advertentiemarkeringen ( `#EXT-X-CUE-OUT`, `#EXT-X-CUE-IN` en `#EXT-X-CUE`).
+>Je moet je abonneren op de advertentiemarkeringen voor splice out/in ( `#EXT-X-CUE-OUT`, `#EXT-X-CUE-IN`, en `#EXT-X-CUE`).
 
 Hieronder volgen enkele vereisten die u in overweging wilt nemen:
 
-* Parseermarkeringen zoals `EXT-X-CUE-IN` (of een equivalent markeringslabel) die in de lineaire of FER streams worden weergegeven.
+* Parseermarkeringen zoals `EXT-X-CUE-IN` (of een equivalent markeringslabel) die worden weergegeven in de lineaire of FER-streams.
 
-   Registreer de markeringen als de teller voor een vroege terugkeerpunt. Alleen `adBreaks` afspelen tot deze markeerpositie tijdens het afspelen, die de duur van de `adBreak` gemarkeerd door de regelafstandmarkering `EXE-X-CUE-OUT` overschrijft.
+   Registreer de markeringen als de teller voor een vroege terugkeerpunt. Alleen afspelen `adBreaks` tot deze markeerpositie tijdens het afspelen, die de duur van de `adBreak` gemarkeerd door de regelafstand `EXE-X-CUE-OUT` markering.
 
-* Als twee `EXT-X-CUE-IN` tellers voor de zelfde `EXT-X-CUE-OUT` teller bestaan, is de eerste `EXT-X-CUE-IN` teller die verschijnt die tellen.
+* Indien twee `EXT-X-CUE-IN` er zijn markeringen voor dezelfde `EXT-X-CUE-OUT` markering, de eerste `EXT-X-CUE-IN` De markering die wordt weergegeven, telt.
 
-* Als het `EXE-X-CUE-IN` markeerteken in de tijdlijn verschijnt zonder een regelafstandmarkering `EXT-X-CUE-OUT`, wordt het `EXE-X-CUE-IN` markeerteken verwijderd.
+* Als de `EXE-X-CUE-IN` markeerteken wordt in de tijdlijn weergegeven zonder regelafstand `EXT-X-CUE-OUT` markeerteken, de `EXE-X-CUE-IN` markering wordt genegeerd.
 
-   Als de regelafstandmarkering `EXT-X-CUE-OUT` in een live stream net uit het venster is verplaatst, reageert de TVSDK niet op het venster.
+   In een live stream, als de regelafstand `EXT-X-CUE-OUT` De markering is net uit het venster verplaatst, de TVSDK reageert er niet op.
 
-* Wanneer er een vroege terugkeer van een advertentieonderbreking is, speelt `adBreak` tot playhead op de originele positie terugkeert toen het advertentierak om zou moeten beëindigen en hervat het spelen van de belangrijkste inhoud van die positie.
+* Als er een vroege terugkeer van een advertentierammer is, `adBreak` wordt afgespeeld totdat de afspeelkop terugkeert naar de oorspronkelijke positie toen het ad-einde moest eindigen en het afspelen van de hoofdinhoud vanaf die positie wordt hervat.
 
 ## SpliceOut en SpliceIn {#section_36DD55BA58084E21BD3DC039BB245C82}
 
-`SpliceOut` en  `SpliceIn` markeertekens geven het begin en het einde van het ad-einde aan. De duur van het `SpliceOut`-type van de `EXE-X-CUE`-markering kan nul zijn en het `SpliceIn`-type van `EXE-X-CUE`-markering markeert het einde van het ad-einde. Ze worden in één label weergegeven en verschillen per type.
+`SpliceOut` en `SpliceIn` markeertekens geven het begin en het einde van het ad-einde aan. De duur van de `SpliceOut` type `EXE-X-CUE` De markering is mogelijk nul en de `SpliceIn` type `EXE-X-CUE` markeerteken geeft het einde van het advertentieeinde aan. Ze worden in één label weergegeven en verschillen per type.
 
 **Eén markering met verschillende typen**
 
@@ -65,11 +64,11 @@ https://server-host/path/file57.ts
 https://server-host/path/file58.ts
 ```
 
-In het ene markeerteken met verschillende typen voorbeeld, als de duur van het type `SpliceOut` nul is, moeten `SpliceOut` en `SpliceIn` voor elke advertentierak samenwerken. Momenteel is een `SpliceOut`-markering met een andere duur dan nul en hoeft u `SpliceIn`-markeertekens niet naast elkaar te plaatsen, meer standaard.
+In de ene markering met verschillende typen bijvoorbeeld, als de duur van de `SpliceOut` tekst is nul, de `SpliceOut` en `SpliceIn` moeten samenwerken voor elke advertentie. Op dit moment is een `SpliceOut` markering met een duur die niet gelijk is aan nul en geen koppeling nodig heeft `SpliceIn` markeringen zijn meer typisch.
 
 **Twee afzonderlijke markeringen**
 
-Het meer typische scenario is een `SpliceOut` teller met een niet-nul duur en die niet de het in paren `SpliceIn` tellers nodig heeft. Hier markeert een koppelingsmarkering `SpliceIn` het einde van de advertentie tijdens het afspelen van een advertentie-einde, maar het ad-einde wordt kort geknipt op de markeerpositie `SpliceIn` en de hoofdinhoud wordt op deze positie afgespeeld.
+Het meer typische scenario is een `SpliceOut` markering met een duur die niet gelijk is aan nul en waarvoor geen koppeling nodig is `SpliceIn` markeertekens. Hier, een bedrading `SpliceIn` markeert het einde van het advertentieeinde tijdens het afspelen van een advertentie-einde, maar het afbreking van de advertentie wordt kort bij het `SpliceIn` positie van de markering en de hoofdinhoud wordt op deze positie afgespeeld.
 
 Hier ziet u bijvoorbeeld twee afzonderlijke markeringen:
 
@@ -87,4 +86,3 @@ Hier ziet u bijvoorbeeld twee afzonderlijke markeringen:
 #EXTINF:6.006000,no-desc
 /live/hls/nbc-fer/QualityLevels(2200000)/Fragments(video=14332589330665811,format=m3u8-aapl-v4)
 ```
-

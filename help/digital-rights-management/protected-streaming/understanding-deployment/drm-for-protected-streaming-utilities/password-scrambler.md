@@ -1,14 +1,13 @@
 ---
 description: Met het hulpprogramma Password Scrambler versleutelt u een wachtwoord voor de Adobe Primetime DRM-server voor beveiligde streamingconfiguratiebestanden.
 title: Wachtwoordsprambler
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: 9cedd3e5-01db-4ea9-bf23-8767987fc26c
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '92'
 ht-degree: 0%
 
 ---
-
 
 # Wachtwoordsprambler {#password-scrambler}
 
@@ -41,7 +40,7 @@ Encrypted password:
 </i class="+ topic>
 ```
 
-Alle wachtwoorden die u in de [!DNL flashaccess-global.xml] en [!DNL flashaccess-tenant.xml] dossiers hebt gespecificeerd moeten worden gecodeerd.
+Alle wachtwoorden die u hebt opgegeven in het dialoogvenster [!DNL flashaccess-global.xml] en [!DNL flashaccess-tenant.xml] bestanden moeten worden versleuteld.
 
 >[!NOTE]
 >

@@ -2,14 +2,13 @@
 title: Inhoud verpakken
 description: Inhoud verpakken
 copied-description: true
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: 85950028-d58d-45b3-9337-9fcabe7cc4c0
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '98'
 ht-degree: 0%
 
 ---
-
 
 # Inhoud verpakken{#packaging-content}
 

@@ -1,16 +1,15 @@
 ---
 description: MediaPlayerStatus-objecten bieden informatie over wijzigingen in de spelerstatus. De voorwerpen van het bericht verstrekken informatie over waarschuwingen en fouten. Fouten die het afspelen van de video stoppen, leiden ook tot een wijziging in de status van de speler. U implementeert gebeurtenislisteners om gebeurtenissen vast te leggen en erop te reageren (MediaPlayerEvent-objecten).
 title: Meldingen en gebeurtenissen voor spelerstatus, activiteit, fouten en logboekregistratie
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: c25e834e-ffa0-444c-9285-331e6841ac29
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '517'
 ht-degree: 0%
 
 ---
 
-
-# Meldingen en gebeurtenissen voor spelerstatus, activiteit, fouten en registratie {#notifications-and-events-for-player-status-activity-errors-and-logging}
+# Meldingen en gebeurtenissen voor spelerstatus, activiteit, fouten en logboekregistratie {#notifications-and-events-for-player-status-activity-errors-and-logging}
 
 Met gebeurtenissen en meldingen kunt u de asynchrone aspecten van de videotoepassing beheren.
 
@@ -18,11 +17,11 @@ MediaPlayerStatus-objecten bieden informatie over wijzigingen in de spelerstatus
 
 Uw toepassing kan meldingen en statusgegevens ophalen. Met deze informatie kunt u ook een registratiesysteem voor diagnostiek en validatie maken.
 
-## Inhoud {#section_DF951FF601794CF592841BB7406DC1A1}
+## Inhoud voor meldingen {#section_DF951FF601794CF592841BB7406DC1A1}
 
 `MediaPlayerNotification` geeft informatie over de status van de speler.
 
-TVSDK biedt een chronologische lijst met `MediaPlayerNotification`-meldingen en elke melding bevat de volgende informatie:
+TVSDK verstrekt een chronologische lijst van `MediaPlayerNotification` en elke kennisgeving bevat de volgende informatie:
 
 * Een tijdstempel
 * Diagnostische metagegevens die bestaan uit de volgende elementen:
@@ -30,9 +29,9 @@ TVSDK biedt een chronologische lijst met `MediaPlayerNotification`-meldingen en 
    * `type`: INFORMATIE, WAARSCHUWING of FOUT.
    * `code`: Een numerieke weergave van de kennisgeving.
    * `name`: Een door mensen leesbare beschrijving van de melding, zoals SEEK_ERROR
-   * `metadata`: Sleutel-waardeparen die relevante informatie over de kennisgeving bevatten. Een sleutel met de naam `URL` levert bijvoorbeeld een waarde die een URL is die gerelateerd is aan het bericht.
+   * `metadata`: Sleutel-waardeparen die relevante informatie over de kennisgeving bevatten. Een toets met de naam `URL` Hiermee wordt een waarde opgegeven die een URL is die gerelateerd is aan het bericht.
 
-   * `innerNotification`: Een verwijzing naar een ander  `MediaPlayerNotification` object dat rechtstreeks van invloed is op deze melding.
+   * `innerNotification`: Een verwijzing naar een andere `MediaPlayerNotification` object dat rechtstreeks van invloed is op deze melding.
 
 U kunt deze informatie lokaal opslaan voor latere analyse of naar een externe server verzenden voor registratie en grafische weergave.
 
@@ -40,16 +39,16 @@ U kunt deze informatie lokaal opslaan voor latere analyse of naar een externe se
 
 U kunt luisteren naar meldingen.
 
-De kern van het Primetime Player meldingssysteem is de `Notification` klasse, die een standalone bericht vertegenwoordigt.
+De kern van het meldingssysteem van Primetime Player is de `Notification` klasse, die een standalone bericht vertegenwoordigt.
 
 Als u meldingen wilt ontvangen, luistert u als volgt naar meldingen:
 
-1. Voer `NotificationEventListener.onNotification()` callback uit.
-1. TVSDK geeft een `NotificationEvent`-object door aan de callback.
+1. Implementeer de `NotificationEventListener.onNotification()` callback.
+1. TVSDK geeft een `NotificationEvent` object naar de callback.
 
    >[!NOTE]
    >
-   >De types van berichten worden opgesomd in `Notification.Type` enum:
+   >Meldingstypen worden opgesomd in het dialoogvenster `Notification.Type` getallen:
 
    * `ERROR`
    * `INFO`
@@ -85,4 +84,3 @@ Hier is een voorbeeld van hoe u meldingen kunt ophalen:
    >De externe server kan de verschafte gegevens grafisch in real-time weergeven.
 
 1. Om het verlies van berichtgebeurtenissen te ontdekken, zoek hiaten in de opeenvolging van waarden van de gebeurtenisindex.
-

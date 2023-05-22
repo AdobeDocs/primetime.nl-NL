@@ -1,22 +1,21 @@
 ---
 description: De ad-signaliseringsmodus bepaalt waar de videostream advertentie-informatie moet ophalen.
 title: Toevoegingsmodus
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: 127c69da-6365-43da-8ce5-83e19022ad11
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '121'
 ht-degree: 0%
 
 ---
 
-
 # Toevoegingsmodus {#ad-signaling-mode}
 
 De ad-signaliseringsmodus bepaalt waar de videostream advertentie-informatie moet ophalen.
 
-De geldige waarden zijn `DEFAULT`, `SERVER_MAP` en `MANIFEST_CUES`.
+De geldige waarden zijn `DEFAULT`, `SERVER_MAP`, en `MANIFEST_CUES`.
 
-In de volgende tabel wordt het effect beschreven van `AdSignalingMode`-waarden voor verschillende HLS-stroomtypen:
+In de volgende tabel wordt het effect beschreven van `AdSignalingMode` waarden voor verschillende HLS-streamtypen:
 
 <table frame="all" colsep="1" rowsep="1" id="table_AdSignalingMode"> 
  <thead> 
@@ -63,4 +62,3 @@ In de volgende tabel wordt het effect beschreven van `AdSignalingMode`-waarden v
   </tr> 
  </tbody> 
 </table>
-

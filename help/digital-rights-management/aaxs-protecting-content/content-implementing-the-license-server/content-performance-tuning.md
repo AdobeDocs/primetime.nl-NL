@@ -2,14 +2,13 @@
 title: Prestaties afstemmen
 description: Prestaties afstemmen
 copied-description: true
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: f6b2338e-a209-4881-a599-ded5f1498daf
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '161'
 ht-degree: 0%
 
 ---
-
 
 # Prestaties afstemmen{#performance-tuning}
 
@@ -20,7 +19,6 @@ Gebruik de volgende tips om de prestaties te verbeteren:
 
    >[!NOTE]
    >
-   >Als u meerdere webtoepassingen uitvoert in dezelfde Tomcat-instantie en `jsafe.dll` op het pad hebt, kan alleen de eerste webtoepassing die wordt geladen, de `jsafe.dll`-bibliotheek laden. Daarom krijgt alleen de eerste webtoepassing het voordeel van de native ondersteuning. Plaats in dergelijke gevallen `cryptoj.jar`buiten het WAR-bestand om de prestaties van alle webtoepassingen te verbeteren. Bijvoorbeeld in de map `<tomcat_installation_folder>/lib`.
+   >Als u meerdere webtoepassingen uitvoert in hetzelfde Tomcat-exemplaar en als u `jsafe.dll` alleen de eerste webtoepassing die het pad laadt, kan het pad `jsafe.dll` bibliotheek. Daarom krijgt alleen de eerste webtoepassing het voordeel van de native ondersteuning. In dergelijke gevallen, om de prestaties van alle Webtoepassingen te verbeteren, plaats `cryptoj.jar`buiten het WAR-bestand. In het dialoogvenster `<tomcat_installation_folder>/lib` directory.
 
 * Een 64-bits besturingssysteem, zoals de 64-bits versie van Red Hat® of Windows, biedt veel betere prestaties dan een 32-bits besturingssysteem.
-

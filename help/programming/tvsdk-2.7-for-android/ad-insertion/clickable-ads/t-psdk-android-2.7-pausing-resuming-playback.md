@@ -1,20 +1,19 @@
 ---
 description: Wanneer een gebruiker op een advertentie klikt, moet de toepassing het afspelen van de hoofdvideo-inhoud pauzeren.
 title: Afspelen onderbreken en hervatten
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: 99db31ff-37f1-41f9-84a4-73dfaac8a93a
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '46'
 ht-degree: 0%
 
 ---
 
-
-# Afspelen pauzeren en hervatten {#pause-and-resume-playback}
+# Afspelen onderbreken en hervatten {#pause-and-resume-playback}
 
 Wanneer een gebruiker op een advertentie klikt, moet de toepassing het afspelen van de hoofdvideo-inhoud pauzeren.
 
-1. Overschrijf `onPause` en `onResume` van Android Activity.
+1. De `onPause` en `onResume` Android Activity.
 
    ```java
    @Override 
@@ -44,4 +43,3 @@ Wanneer een gebruiker op een advertentie klikt, moet de toepassing het afspelen 
    } 
    abandonAudioFocus(); 
    ```
-

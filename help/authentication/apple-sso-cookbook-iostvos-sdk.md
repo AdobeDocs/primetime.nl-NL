@@ -1,14 +1,13 @@
 ---
 title: Apple SSO Cookbook (iOS/tvOS SDK)
 description: Apple SSO Cookbook (iOS/tvOS SDK)
-source-git-commit: 326f97d058646795cab5d062fa5b980235f7da37
+exl-id: 2d59cd33-ccfd-41a8-9697-1ace3165bc44
+source-git-commit: bfc3ba55c99daba561255760baf273b6538a3c6e
 workflow-type: tm+mt
 source-wordcount: '1867'
 ht-degree: 0%
 
 ---
-
-
 
 # Apple SSO Cookbook (iOS/tvOS SDK) {#apple-sso-cookbook-iostvos-sdk}
 
@@ -120,7 +119,7 @@ Om te kunnen profiteren van de Apple SSO-gebruikerservaring, moet één toepassi
 
    - De machtiging van de tv-provider van de gebruiker wordt verleend voor de toepassing.
    - De gebruiker is aangemeld bij zijn tv-provider-account op apparaatsysteemniveau.
-   - De AccessEnabler iOS/tvOS SDK heeft de tv-provider-id van de gebruiker ontvangen via het accountframework voor videoabonnees.
+   - De AccessEnabler iOS/tvOS SDK heeft de tv-provider-id van de gebruiker ontvangen via het accountframework van de videoabonnee.
    - De integratie van de tv-provider van de gebruiker met de toepassing wordt mogelijk gemaakt via het Adobe Primetime TVE-dashboard.
    - De eenmalige aanmelding bij de toepassing door de tv-provider van de gebruiker wordt ingeschakeld via het Adobe Primetime TVE-dashboard.
    - De tv-provider van de gebruiker wordt niet gedegradeerd via het Adobe Primetime TVE-dashboard.
@@ -172,7 +171,7 @@ Om te kunnen profiteren van de Apple SSO-gebruikerservaring, moet één toepassi
 
    - De machtiging van de tv-provider van de gebruiker wordt verleend voor de toepassing.
    - De gebruiker is aangemeld / momenteel aangemeld bij de TV Provider-account op apparaatsysteemniveau.
-   - De AccessEnabler iOS/tvOS SDK heeft de tv-provider-id van de gebruiker ontvangen via het accountframework voor videoabonnees.
+   - De AccessEnabler iOS/tvOS SDK heeft de tv-provider-id van de gebruiker ontvangen via het accountframework van de videoabonnee.
    - De integratie van de tv-provider van de gebruiker met de toepassing wordt mogelijk gemaakt via het Adobe Primetime TVE-dashboard.
    - De eenmalige aanmelding bij de toepassing door de tv-provider van de gebruiker wordt ingeschakeld via het Adobe Primetime TVE-dashboard.
    - De tv-provider van de gebruiker wordt niet gedegradeerd via het Adobe Primetime TVE-dashboard.

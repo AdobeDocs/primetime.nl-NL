@@ -1,16 +1,15 @@
 ---
 description: U kunt uw oplosmiddelen uitvoeren die op de standaardoplossers worden gebaseerd.
 title: Een aangepaste opportuniteit/contentoplosser implementeren
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: a73f62e1-7e6e-4b16-9bf8-118ec0381c41
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '328'
 ht-degree: 0%
 
 ---
 
-
-# Een aangepaste opportuniteit/inhoudsoplosser {#implement-a-custom-opportunity-content-resolver} implementeren
+# Een aangepaste opportuniteit/contentoplosser implementeren {#implement-a-custom-opportunity-content-resolver}
 
 U kunt uw oplosmiddelen uitvoeren die op de standaardoplossers worden gebaseerd.
 
@@ -18,13 +17,13 @@ U kunt uw oplosmiddelen uitvoeren die op de standaardoplossers worden gebaseerd.
 
 ![](assets/ios_psdk_content_resolver.png)
 
-1. Ontwikkel een douane en oplosser door de `PTContentResolver` abstracte klasse uit te breiden.
+1. Ontwikkelen van een aangepaste advertentie-oplosser door het dialoogvenster `PTContentResolver` abstracte klasse.
 
    `PTContentResolver` is een interface die door een content resolver-klasse moet worden geïmplementeerd. Een abstracte klasse met de zelfde naam is ook beschikbaar en behandelt automatisch de configuratie (die de afgevaardigde krijgt).
 
    >[!TIP]
    >
-   >`PTContentResolver` wordt via de  `PTDefaultMediaPlayerClientFactory` klasse weergegeven. Clients kunnen een nieuwe inhoudoplosser registreren door de abstracte klasse `PTContentResolver` uit te breiden. Door gebrek, en tenzij specifiek verwijderd, wordt `PTDefaultAdContentResolver` geregistreerd in `PTDefaultMediaPlayerClientFactory`.
+   >`PTContentResolver` wordt via `PTDefaultMediaPlayerClientFactory` klasse. Klanten kunnen een nieuwe inhoudoplosser registreren door het dialoogvenster `PTContentResolver` abstracte klasse. Standaard wordt, tenzij dit specifiek wordt verwijderd, een `PTDefaultAdContentResolver` is geregistreerd in het `PTDefaultMediaPlayerClientFactory`.
 
    ```
    @protocol PTContentResolver <NSObject> 
@@ -52,27 +51,27 @@ U kunt uw oplosmiddelen uitvoeren die op de standaardoplossers worden gebaseerd.
    @end
    ```
 
-1. Implementeer `shouldResolveOpportunity` en retourneer `YES` als het ontvangen `PTPlacementOpportunity` moet verwerken.
-1. Implementeer `resolvePlacementOpportunity`, waarmee de alternatieve inhoud of advertenties worden geladen.
-1. Nadat de advertenties zijn geladen, maakt u een `PTTimeline` met de informatie over de inhoud die u wilt invoegen.
+1. Implementeren `shouldResolveOpportunity` en retour `YES` of zij de ontvangen `PTPlacementOpportunity`.
+1. Implementeren `resolvePlacementOpportunity`, waarmee de alternatieve inhoud of advertenties wordt geladen.
+1. Nadat de advertenties zijn geladen, bereidt u een `PTTimeline` met de informatie over de inhoud die moet worden ingevoegd.
 
        Hier volgt nuttige informatie over tijdlijnen:
    
-   * Er kunnen meerdere `PTAdBreak`s van pre-, mid-roll, en post-roltypes zijn.
+   * Er kunnen meerdere `PTAdBreak`s van de typen pre-roll, mid-roll en post-roll.
 
-      * Een `PTAdBreak` heeft het volgende:
+      * A `PTAdBreak` heeft het volgende:
 
-         * A `CMTimeRange` met de begintijd en duur van het einde.
+         * A `CMTimeRange` met de begintijd en de duur van het einde.
 
-            Dit wordt geplaatst als waaierbezit van `PTAdBreak`.
+            Dit wordt ingesteld als de eigenschap range van `PTAdBreak`.
 
-         * `NSArray` van  `PTAd`s.
+         * `NSArray` van `PTAd`s.
 
-            Deze wordt ingesteld als de eigenschap ads van `PTAdBreak`.
-   * A `PTAd` vertegenwoordigt de advertentie, en elk `PTAd` heeft het volgende:
+            Dit is ingesteld als de eigenschap ads van `PTAdBreak`.
+   * A `PTAd` staat voor de advertentie, en elk `PTAd` heeft het volgende:
 
       * A `PTAdHLSAsset` ingesteld als de primaire eigenschap asset van de advertentie.
-      * Mogelijk meerdere `PTAdAsset` instanties als klikbare advertenties of banneradvertenties.
+      * Meerdere `PTAdAsset` instanties als klikbare advertenties of banneradvertenties.
 
    Bijvoorbeeld:
 
@@ -103,8 +102,8 @@ U kunt uw oplosmiddelen uitvoeren die op de standaardoplossers worden gebaseerd.
    _timeline.adBreaks = ptBreaks;
    ```
 
-1. Vraag `didFinishResolvingPlacementOpportunity`, die `PTTimeline` verstrekt.
-1. Registreer uw aangepaste inhoud/advertentiesolver aan de standaardfabriek van de mediaspeler door `registerContentResolver` te roepen.
+1. Bellen `didFinishResolvingPlacementOpportunity`, die de `PTTimeline`.
+1. Registreer uw aangepaste inhoud/advertentie-oplosser aan de standaardmediaspeler door `registerContentResolver`.
 
    ```
    //Remove default content/ad resolver 

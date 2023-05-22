@@ -2,7 +2,6 @@
 title: JKS maken voor een XSTS-validator
 description: JKS maken voor een XSTS-validator
 copied-description: true
-translation-type: tm+mt
 source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
 workflow-type: tm+mt
 source-wordcount: '70'
@@ -13,13 +12,13 @@ ht-degree: 0%
 
 # JKS maken voor een XSTS-validator{#create-jks-for-an-xsts-validator}
 
-1. Zoek de alias-naam van de persoonlijke cert op in het bestand [!DNL .pfx] van de partner.
+1. Zoek de alias-naam van de persoonlijke cert op die zich in de partner bevindt [!DNL .pfx] bestand.
 
    ```
    keytool -list -storetype pkcs12 -keystore xsts_partner_cert.pfx -v 
    ```
 
-1. [!DNL .pfx] omzetten in [!DNL .jks].
+1. Omzetten [!DNL .pfx] tot [!DNL .jks].
 
    ```
    keytool -importkeystore -srckeystore xsts_partner_cert.pfx -srcstoretype PKCS12 \  
@@ -27,7 +26,7 @@ ht-degree: 0%
    <alias> -destalias xsts
    ```
 
-   (waarbij `<alias>` de alias van het privé cert is die u in Stap 1 ontdekte.)
+   waarbij `<alias>` is de alias van de privé cert naam die u in Stap 1 ontdekte.)
 1. Importeren [!DNL x_secure_token_service.part.xboxlive.com.cer].
 
    ```
@@ -35,9 +34,9 @@ ht-degree: 0%
            -file x_secure_token_service.part.xboxlive.com.cer 
    ```
 
-1. Plaats [!DNL xsts.jks] in uw thuismap van Tomcat en definieer `-Dxsts-keystore-password=****` voor Tomcat.
+1. Put [!DNL xsts.jks] in uw Tomcat-thuismap en definieer `-Dxsts-keystore-password=****` voor Tomcat.
 
-Als [!DNL xsts_partner_cert.pfx] en [!DNL xsts.jks] verschillende wachtwoorden gebruiken, werk `xsts` wachtwoord in `jks` bij om hen het zelfde te maken.
+Indien [!DNL xsts_partner_cert.pfx] en [!DNL xsts.jks] gebruikt verschillende wachtwoorden, werkt u de `xsts` wachtwoord in `jks` om ze gelijk te maken.
 
 ```
 keytool -keypasswd -keystore xsts.jks -alias xsts 

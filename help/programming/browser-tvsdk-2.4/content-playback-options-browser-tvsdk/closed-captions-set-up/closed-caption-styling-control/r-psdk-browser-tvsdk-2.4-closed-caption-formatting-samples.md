@@ -1,20 +1,19 @@
 ---
 description: U kunt opmaak voor Closed Caption opgeven.
 title: Voorbeelden van bijschriftopmaak
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: 946530a1-c7d7-4582-81b8-71b2980561cb
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '33'
 ht-degree: 0%
 
 ---
 
-
-# Voorbeelden: Bijschriftopmaak{#examples-caption-formatting}
+# Voorbeelden: Opmaak bijschrift{#examples-caption-formatting}
 
 U kunt opmaak voor Closed Caption opgeven.
 
-## Voorbeeld 1: Geef opmaakwaarden expliciet op {#section_BD7B48F3B66D4E9290E1CB2F464E08E4}
+## Voorbeeld 1: Opmaakwaarden expliciet opgeven {#section_BD7B48F3B66D4E9290E1CB2F464E08E4}
 
 ```js
 // Set CC style. 
@@ -35,4 +34,3 @@ var tf = new AdobePSDK.TextFormat(
 >[!IMPORTANT]
 >
 >Browser-TVSDK ondersteunt geen fontrand, vulkleur of vuldekking.
-

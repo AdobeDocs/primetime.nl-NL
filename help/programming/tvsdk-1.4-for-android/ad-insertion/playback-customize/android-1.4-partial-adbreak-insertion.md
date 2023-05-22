@@ -1,16 +1,15 @@
 ---
 description: U kunt een tv-achtige ervaring inschakelen om in live streams deel te kunnen nemen aan een advertentie.
 title: Onvolledige invoeging van advertentie
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: cb0d2f5f-c760-450e-ab34-fd7639d1190b
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '325'
 ht-degree: 0%
 
 ---
 
-
-# Onvolledige invoeging van Advertentiereinden {#partial-ad-break-insertion}
+# Onvolledige invoeging van advertentie {#partial-ad-break-insertion}
 
 U kunt een tv-achtige ervaring inschakelen om in live streams deel te kunnen nemen aan een advertentie.
 
@@ -203,4 +202,3 @@ Dit gedrag is niet standaard ingeschakeld. Ga als volgt te werk om deze functie 
          return new PartialAdBreakAdPolicySelector(mediaPlayerItem); 
       } 
       ```
-

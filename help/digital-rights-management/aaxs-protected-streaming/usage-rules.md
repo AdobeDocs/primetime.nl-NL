@@ -2,14 +2,13 @@
 title: Gebruiksregels
 description: Gebruiksregels
 copied-description: true
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: 0f6df09f-47fd-4a05-bcb0-786beaba325a
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '217'
 ht-degree: 0%
 
 ---
-
 
 # Gebruiksregels{#usage-rules}
 
@@ -26,5 +25,4 @@ De Adobe Access Server for Protected Streaming biedt ondersteuning voor de volge
 
 >[!NOTE]
 >
->Voor ondersteuning van levering via externe sleutels naar iOS-apparaten moet de levering via externe sleutels zijn ingeschakeld voor het beleid dat tijdens het verpakken wordt gebruikt. Dit plaatsen kan niet door de huurdersconfiguratie op de server worden gewijzigd. ***Adobe Primetime is vereist voor het maken van iOS-toepassingen waarmee met Adobe Access beveiligde inhoud kan worden afgespeeld.***
-
+>Voor ondersteuning van levering via een externe toets aan iOS-apparaten moet voor het beleid dat tijdens het verpakken wordt gebruikt, levering via een externe toets zijn ingeschakeld. Dit plaatsen kan niet door de huurdersconfiguratie op de server worden gewijzigd. ***Adobe Primetime is vereist voor het maken van iOS-toepassingen waarmee met Adobe Access beveiligde inhoud kan worden afgespeeld.***

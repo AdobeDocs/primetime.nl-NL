@@ -1,13 +1,13 @@
 ---
 title: iOS/tvOS Cookbook
 description: iOS/tvOS Cookbook
-source-git-commit: 326f97d058646795cab5d062fa5b980235f7da37
+exl-id: 4743521e-d323-4d1d-ad24-773127cfbe42
+source-git-commit: bfc3ba55c99daba561255760baf273b6538a3c6e
 workflow-type: tm+mt
 source-wordcount: '2414'
 ht-degree: 0%
 
 ---
-
 
 # iOS/tvOS SDK Cookbook {#iostvos-sdk-cookbook}
 

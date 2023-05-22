@@ -1,14 +1,13 @@
 ---
 description: De de veiligheidskwetsbaarheid van het netwerk is onder de eerste bedreigingen aan om het even welke Internet-Onder ogen ziet of intranet-Onder ogen ziet toepassingsserver, en u moet gastheren op het netwerk tegen deze kwetsbaarheden onderdrukken.
 title: Netwerklaagbeveiliging
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: 0a45d18a-66aa-4ecc-8eaf-e2af599eb3b8
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '280'
 ht-degree: 0%
 
 ---
-
 
 # Netwerklaagbeveiliging{#network-layer-security}
 
@@ -43,4 +42,3 @@ Hier zijn sommige gemeenschappelijke technieken die kwetsbaarheid van de netwerk
   </tr> 
  </tbody> 
 </table>
-

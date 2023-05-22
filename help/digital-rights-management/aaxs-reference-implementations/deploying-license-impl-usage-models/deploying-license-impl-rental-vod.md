@@ -2,14 +2,13 @@
 title: Verhuur/video-op-aanvraag
 description: Verhuur/video-op-aanvraag
 copied-description: true
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: e9b02fd1-0e3f-4526-af55-1c2ac54fac83
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '76'
 ht-degree: 0%
 
 ---
-
 
 # Verhuur/video-op-aanvraag {#rental-video-on-demand}
 

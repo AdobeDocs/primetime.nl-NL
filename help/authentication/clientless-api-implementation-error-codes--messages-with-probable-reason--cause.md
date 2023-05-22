@@ -1,13 +1,13 @@
 ---
 title: Clientless API-implementatie - foutcodes / berichten met mogelijke reden / oorzaak
 description: Clientless API-implementatie - foutcodes / berichten met mogelijke reden / oorzaak
-source-git-commit: 326f97d058646795cab5d062fa5b980235f7da37
+exl-id: 616e35fc-9b72-422b-9a05-e6248bd52490
+source-git-commit: bfc3ba55c99daba561255760baf273b6538a3c6e
 workflow-type: tm+mt
 source-wordcount: '201'
 ht-degree: 0%
 
 ---
-
 
 # Clientless API-implementatie - foutcodes / berichten met mogelijke reden / oorzaak {#clientless-api-implementation--error-codes-messages-with-probable-reason-cause}
 

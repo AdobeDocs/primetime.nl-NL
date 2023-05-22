@@ -1,23 +1,22 @@
 ---
-title: SWF-toepassing staat plaatsing toe
-description: SWF-toepassing staat plaatsing toe
+title: Aanbieding toestaan in SWF-toepassing
+description: Aanbieding toestaan in SWF-toepassing
 copied-description: true
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: ae8b7f52-897f-43f9-ac7b-665d4b8c16b8
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '186'
 ht-degree: 0%
 
 ---
 
+# Aanbieding toestaan in SWF-toepassing {#swf-application-allowlisting}
 
-# De toepassing van SWF staat lijst {#swf-application-allowlisting} toe
+Om een toepassing van de SWF te lijsten van gewenste personen, kunt u één van deze twee strategieën volgen:
 
-Als u een SWF-toepassing wilt lijsten van gewenste personen, kunt u een van de volgende twee strategieën volgen:
+* U kunt een URL opgeven voor een SWF. Dit is een zeer flexibele benadering, vooral in een ontwikkelomgeving waarin u regelmatig uw SWF herbouwt.
+* U kunt een SWF-HASH opgeven. Dit is een cryptografische samenvattingswaarde van uw SWF. Deze benadering is minder flexibel (maar veel strikter), aangezien de HASH van de SWF zal veranderen wanneer de toepassing verandert en wordt herbouwd. In deze situatie zal alle aan de vorige HASH gebonden inhoud niet op de nieuwe speler kunnen spelen en moeten worden herverpakt. De [!DNL PolicyManager.jar] wordt de hash automatisch berekend als u een [!DNL .swf] bestand.
 
-* U kunt een URL opgeven voor een SWF-bestand. Dit is een zeer flexibele benadering, vooral in een ontwikkelomgeving waarin u regelmatig uw SWF-bestand herbouwt.
-* U kunt een SWF-HASH opgeven. Dit is een cryptografische samenvattingswaarde van uw SWF-bestand. Deze aanpak is minder flexibel (maar veel strenger), aangezien de SWF-HASH verandert wanneer de toepassing verandert en opnieuw wordt samengesteld. In deze situatie zal alle aan de vorige HASH gebonden inhoud niet op de nieuwe speler kunnen spelen en moeten worden herverpakt. Het [!DNL PolicyManager.jar] hulpmiddel zal automatisch de knoeiboel berekenen als u een [!DNL .swf] dossier specificeert.
+   Anderzijds, als u Primetime DRM via Flash/Adobe Media Server (FMS/AMS) gebruikt, kunt u de weg aan uw bepaalde SWF(n) leveren, en FMS/AMS zal automatisch SWF voor u verpakken in het DRM beleid dat wordt gebruikt om de inhoud te verpakken die door FMS/AMS wordt gestroomd.
 
-   Anderzijds, als u Primetime DRM via Flash/Adobe Media Server (FMS/AMS) gebruikt, kunt u de weg aan uw bepaalde SWF(s) leveren, en FMS/AMS zal automatisch SWFs voor u verpakken in het DRM beleid dat wordt gebruikt om de inhoud te verpakken die door FMS/AMS wordt gestroomd.
-
-Zie `policy.allowedSWFApplication.n` in *Configuration properties* voor meer informatie.
+Zie `policy.allowedSWFApplication.n` in *Configuratieeigenschappen* voor meer informatie.

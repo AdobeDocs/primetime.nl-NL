@@ -2,14 +2,13 @@
 title: Bestanden converteren
 description: Bestanden converteren
 copied-description: true
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: 7344ca2f-5307-403b-a6fc-cbbea7c2829f
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '173'
 ht-degree: 0%
 
 ---
-
 
 # Bestanden converteren{#convert-files}
 
@@ -62,4 +61,3 @@ Met behulp van een hulpprogramma zoals OpenSSL en de persoonlijke sleutel genere
    >[!NOTE]
    >
    >DER-bestanden zijn alleen vereist voor het HTTP Dynamic Streaming-verpakkingshulpprogramma.
-

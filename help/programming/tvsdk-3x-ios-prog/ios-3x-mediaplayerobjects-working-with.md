@@ -1,39 +1,38 @@
 ---
 description: Het PTMediaPlayer-object vertegenwoordigt uw mediaspeler. Een PTMediaPlayerItem vertegenwoordigt audio of video op uw speler.
 title: Werken met MediaPlayer-objecten
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: 57dd455e-e78c-4e5b-80af-070ae7982864
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '449'
 ht-degree: 0%
 
 ---
 
-
 # Werken met MediaPlayer-objecten {#work-with-mediaplayer-objects}
 
 Het PTMediaPlayer-object vertegenwoordigt uw mediaspeler. Een PTMediaPlayerItem vertegenwoordigt audio of video op uw speler.
 
-## Informatie over de MediaPlayerItem-klasse {#section_B6F36C0462644F5C932C8AA2F6827071}
+## Informatie over de klasse MediaPlayerItem {#section_B6F36C0462644F5C932C8AA2F6827071}
 
-Nadat een media middel met succes wordt geladen, leidt TVSDK tot een geval van de `PTMediaPlayerItem` klasse om toegang tot die middel te verlenen.
+Nadat een mediabron is geladen, maakt TVSDK een instantie van de `PTMediaPlayerItem` klasse om toegang tot die bron te verlenen.
 
-`PTMediaPlayer` verhelpt de mediabron, laadt het bijbehorende manifestbestand en parseert het manifest. Dit is het asynchrone gedeelte van het proces voor het laden van bronnen. De instantie `PTMediaPlayerItem` wordt geproduceerd nadat het middel is opgelost, en deze instantie is een opgeloste versie van een media middel. TVSDK biedt via `PTMediaPlayer.currentItem` toegang tot het nieuwe `PTMediaPlayerItem`-exemplaar.
+De `PTMediaPlayer` lost het media middel op, laadt het bijbehorende duidelijke dossier, en ontleedt manifest. Dit is het asynchrone gedeelte van het proces voor het laden van bronnen. De `PTMediaPlayerItem` instantie wordt geproduceerd nadat het middel is opgelost, en dit geval is een opgeloste versie van een media middel. TVSDK biedt toegang tot het nieuwe `PTMediaPlayerItem` instantie door `PTMediaPlayer.currentItem`.
 
 >[!TIP]
 >
 >U moet wachten tot de bron is geladen voordat u het item van de mediaspeler opent.
 
-## Levenscyclus van MediaPlayer-object {#section_D87EF7FBC7B442BDBE825156DC2C1CCF}
+## Levenscyclus van MediaPlayer-objecten {#section_D87EF7FBC7B442BDBE825156DC2C1CCF}
 
-Vanaf het moment dat u de instantie `PTMediaPlayer` creeert tot het moment waarop u het beëindigt (hergebruik of verwijdert), voltooit deze instantie een reeks overgangen van één status aan een andere.
+Vanaf het moment dat u de `PTMediaPlayer` -instantie tot het moment waarop u deze beëindigt (hergebruikt of verwijdert), voltooit deze instantie een reeks overgangen van de ene status naar de andere.
 
-Sommige bewerkingen zijn alleen toegestaan wanneer de speler zich in een bepaalde toestand bevindt. Het aanroepen van `play` in `PTMediaPlayerStatusCreated` is bijvoorbeeld niet toegestaan. U kunt deze status alleen aanroepen nadat de speler de status `PTMediaPlayerStatusReady` heeft bereikt.
+Sommige bewerkingen zijn alleen toegestaan wanneer de speler zich in een bepaalde toestand bevindt. Bijvoorbeeld, roepen `play` in `PTMediaPlayerStatusCreated` is niet toegestaan. U kunt deze status alleen aanroepen nadat de speler de `PTMediaPlayerStatusReady` status.
 
 Werken met statussen:
 
 * U kunt de huidige status van het MediaPlayer-object ophalen met `PTMediaPlayer.status`.
-* De lijst met statussen wordt gedefinieerd in `PTMediaPlayerStatus`.
+* De lijst met statussen is gedefinieerd in `PTMediaPlayerStatus`.
 
 Overgangsdiagram voor de levenscyclus van een instantie MediaPlayer:
 <!--<a id="fig_1C55DE3F186F4B36AFFDCDE90379534C"></a>-->
@@ -52,11 +51,11 @@ De volgende tabel bevat aanvullende gegevens:
  <tbody> 
   <tr> 
    <td colname="col1"> <p><span class="codeph"> PTMediaPlayerStatusCreated</span> </p> </td> 
-   <td colname="col2"> <p>Uw toepassing heeft een nieuwe mediaspeler aangevraagd door <span class="codeph"> playerWithMediaPlayerItem</span> aan te roepen. De nieuwe speler wacht op het opgeven van een mediaspeler-item. Dit is de beginstatus van de mediaspeler. </p> </td> 
+   <td colname="col2"> <p>Uw toepassing heeft een nieuwe mediaspeler aangevraagd door <span class="codeph"> playerWithMediaPlayerItem</span>. De nieuwe speler wacht op het opgeven van een mediaspeler-item. Dit is de beginstatus van de mediaspeler. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> PTMediaPlayerStatusInitializing</span> </p> </td> 
-   <td colname="col2"> <p>Uw toepassing roept <span class="codeph"> PTMediaPlayer.replaceCurrentItemWithPlayerItem</span> aan, en de mediaspeler laadt. </p> </td> 
+   <td colname="col2"> <p>Uw toepassingsvraag <span class="codeph"> PTMediaPlayer.replaceCurrentItemWithPlayerItem</span>en de mediaspeler wordt geladen. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p><span class="codeph"> PTMediaPlayerStatusInitialized</span> </p> </td> 
@@ -68,11 +67,11 @@ De volgende tabel bevat aanvullende gegevens:
   </tr> 
   <tr> 
    <td colname="col1"> <p><span class="codeph"> PTMediaPlayerStatusPlaying</span> </p> </td> 
-   <td colname="col2"> <p>Uw toepassing heeft <span class="codeph"> play</span> geroepen, zodat probeert TVSDK om de video te spelen. Er kan sprake zijn van buffering voordat de video daadwerkelijk wordt afgespeeld. </p> </td> 
+   <td colname="col2"> <p>Uw toepassing heeft <span class="codeph"> play</span>, dus probeert TVSDK de video af te spelen. Er kan sprake zijn van buffering voordat de video daadwerkelijk wordt afgespeeld. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p><span class="codeph"> PTMediaPlayerStatusPaused</span> </p> </td> 
-   <td colname="col2"> <p>Wanneer de media in uw toepassing worden afgespeeld en gepauzeerd, beweegt de mediaspeler tussen deze status en <span class="codeph"> PTMediaPlayerStatusPplaying</span>. </p> </td> 
+   <td colname="col2"> <p>Wanneer de media in de toepassing worden afgespeeld en gepauzeerd, beweegt de mediaspeler tussen deze status en <span class="codeph"> PTMediaPlayerStatusPlaying</span>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p><span class="codeph"> PTMediaPlayerStatusCompleted</span> </p> </td> 

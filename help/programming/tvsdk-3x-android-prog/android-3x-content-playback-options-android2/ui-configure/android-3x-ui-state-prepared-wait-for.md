@@ -1,14 +1,13 @@
 ---
 description: Voordat u de meeste methoden van de TVSDK-speler kunt gebruiken, moet de speler een geldige status hebben.
 title: Wacht op een geldige status
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: bfd77163-7ca8-41e1-8b97-2d6a765f5ccd
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '135'
 ht-degree: 0%
 
 ---
-
 
 # Wacht op een geldige status {#wait-for-a-valid-status}
 
@@ -16,8 +15,8 @@ Met TVSDK kunt u de standaardafspeelervaring voor live en video op verzoek (VOD)
 
 Voordat u de meeste methoden van de TVSDK-speler kunt gebruiken, moet de speler een geldige status hebben.
 
-Wachten tot de speler de juiste status heeft, zorgt ervoor dat de mediabron correct is geladen. Als de speler niet in minstens de vereiste status is, werpen vele spelermethodes `MediaPlayerException`.
+Wachten tot de speler de juiste status heeft, zorgt ervoor dat de mediabron correct is geladen. Als de speler niet in minstens de vereiste status is, genereren veel spelermethoden `MediaPlayerException`.
 
-De vereiste status wordt gewoonlijk BEREID. Wanneer dit voorkomt, voert de callback routine voor `StatusChangeEventListener.onStatusChanged()` uit.
+De vereiste status wordt gewoonlijk BEREID. Wanneer dit voorkomt, de callback routine voor `StatusChangeEventListener.onStatusChanged()` wordt uitgevoerd.
 
-Controleer `MediaPlayer.MediaPlayerStatus` om te bevestigen dat de status `PREPARED` is.
+Bevestig dat de status `PREPARED`, controle `MediaPlayer.MediaPlayerStatus`.

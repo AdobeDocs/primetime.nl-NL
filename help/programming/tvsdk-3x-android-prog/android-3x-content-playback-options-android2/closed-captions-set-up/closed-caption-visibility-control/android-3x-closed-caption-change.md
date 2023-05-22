@@ -1,16 +1,15 @@
 ---
 description: Deze procedure is een voorbeeld van hoe u een knop maakt waarmee een gebruiker een Closed Caption-track kan selecteren.
 title: Gebruikers toestaan de bijschrifttrack te wijzigen
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: cf273f06-ae0d-458c-aeef-7f70dad6106f
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '113'
 ht-degree: 0%
 
 ---
 
-
-# Gebruikers toestaan de bijschrifttrack {#allow-users-to-change-the-caption-track} te wijzigen
+# Gebruikers toestaan de bijschrifttrack te wijzigen {#allow-users-to-change-the-caption-track}
 
 Deze procedure is een voorbeeld van hoe u een knop maakt waarmee een gebruiker een Closed Caption-track kan selecteren.
 

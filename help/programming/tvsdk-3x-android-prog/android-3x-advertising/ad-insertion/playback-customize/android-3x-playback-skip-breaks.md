@@ -1,16 +1,15 @@
 ---
 description: Standaard dwingt TVSDK een advertentie-einde af wanneer de gebruiker een advertentie-einde zoekt. U kunt het gedrag aanpassen om een advertentie-einde over te slaan als de tijd die is verstreken vanaf een vorige eindemarkering binnen een bepaald aantal minuten is.
 title: Advertenties gedurende een bepaalde periode overslaan
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: a9b77168-c567-4e27-9b34-9b28107bef11
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '271'
 ht-degree: 0%
 
 ---
 
-
-# Overslaan en afbrekingen gedurende een tijdsperiode {#skip-ad-breaks-for-a-period-of-time}
+# Advertenties gedurende een bepaalde periode overslaan {#skip-ad-breaks-for-a-period-of-time}
 
 Standaard dwingt TVSDK een advertentie-einde af wanneer de gebruiker een advertentie-einde zoekt. U kunt het gedrag aanpassen om een advertentie-einde over te slaan als de tijd die is verstreken vanaf een vorige eindemarkering binnen een bepaald aantal minuten is.
 
@@ -32,7 +31,7 @@ Als u het standaardgedrag voor TVSDK en break wilt overschrijven, kunt u de stan
 
    >[!NOTE]
    >
-   >Het beleid `REMOVE` ad break is bedoeld voor afschrijving. Adobe raadt u aan het `SKIP`-beleid voor ad-break te gebruiken in plaats van `REMOVE`.
+   >De `REMOVE` het beleid voor onderbreking van advertentie is bedoeld voor afschrijving. Adobe raadt u aan de `SKIP` en breder beleid in plaats van `REMOVE`.
 
 In het volgende voorbeeld van een aangepaste advertentiebeleidskiezer worden advertenties in de komende vijf minuten (tijd van de wandklok) overgeslagen nadat een gebruiker een advertentiesonderbreking heeft bekeken.
 
@@ -49,7 +48,7 @@ In het volgende voorbeeld van een aangepaste advertentiebeleidskiezer worden adv
    }
    ```
 
-1. `AdPolicySelector` uitbreiden.
+1. Uitbreiden `AdPolicySelector`.
 
    ```java
    package com.adobe.mediacore.sample.advertising; 

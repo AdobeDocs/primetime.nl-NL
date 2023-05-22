@@ -1,16 +1,15 @@
 ---
 description: Dit geeft informatie over Digital Rights Management (DRM) activiteit.
 title: Digital Rights Management, klassen
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: 97a81f00-4e64-4981-a02c-8723a53cfca2
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '45'
 ht-degree: 0%
 
 ---
 
-
-# Digital Rights Management-klassen {#digital-rights-management-classes}
+# Digital Rights Management, klassen {#digital-rights-management-classes}
 
 Dit geeft informatie over Digital Rights Management (DRM) activiteit.
 

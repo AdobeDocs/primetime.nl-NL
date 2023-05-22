@@ -1,16 +1,15 @@
 ---
 description: Verwijder TimeRanges tussen begin en eind in localTime uit de chronologie.
 title: Bereiken verwijderen met Primetime en beslissings- en
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: e097f92e-b4ce-4e33-9a71-213cf19188fb
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '42'
 ht-degree: 0%
 
 ---
 
-
-# Bereiken verwijderen met Primetime en besluitvorming en{#delete-ranges-with-primetime-ad-decisioning-ad}
+# Bereiken verwijderen met Primetime en beslissings- en{#delete-ranges-with-primetime-ad-decisioning-ad}
 
 Verwijder TimeRanges tussen begin en eind in localTime uit de chronologie.
 
@@ -66,4 +65,3 @@ Hiermee verwijdert u bereiken met een woordgroep.
     "id": "vod_003"
 }
 ```
-

@@ -2,14 +2,13 @@
 title: Aanbevolen werkwijzen voor banneradvertenties
 description: Aanbevolen werkwijzen voor banneradvertenties
 copied-description: true
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: 9a335dfc-3de2-45bf-b17e-0330a5d50606
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '161'
 ht-degree: 0%
 
 ---
-
 
 # Companion banneradvertenties {#companion-banner-ads}
 
@@ -31,4 +30,3 @@ Volg deze aanbevelingen bij het weergeven van bijhorende advertenties:
 * U kunt bijbehorende banners weergeven nadat de advertentie is beëindigd.
 
    Standaard wordt elke bijbehorende banner weergegeven totdat u de advertentie vervangt.
-

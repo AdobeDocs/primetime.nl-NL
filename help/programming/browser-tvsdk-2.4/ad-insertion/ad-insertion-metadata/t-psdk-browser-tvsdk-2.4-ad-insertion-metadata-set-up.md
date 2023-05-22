@@ -1,14 +1,13 @@
 ---
 description: Gebruik de hulpklasse AuditudeSettings om Adobe Primetime- en beslissingsmetagegevens in te stellen.
 title: Metagegevens instellen en invoegen
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: 03b2237b-6b3b-46cf-bc0b-691513033463
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '201'
 ht-degree: 0%
 
 ---
-
 
 # Metagegevens instellen en invoegen{#set-up-ad-insertion-metadata}
 
@@ -18,7 +17,7 @@ Gebruik de hulpklasse AuditudeSettings om Adobe Primetime- en beslissingsmetageg
 >
 >Adobe Primetime en het besluit stond voorheen bekend als Auditude.
 
-1. Stel de instantie `AuditudeSettings` samen.
+1. De `AuditudeSettings` -instantie.
 
    ```java
    AuditudeSettings auditudeSettings = new AuditudeSettings();
@@ -32,7 +31,7 @@ Gebruik de hulpklasse AuditudeSettings om Adobe Primetime- en beslissingsmetageg
    auditudeSettings.zoneId = "zoneid";
    ```
 
-1. Maak een `MediaResource`-instantie met de URL van de mediastream en de eerder gemaakte advertentiemetagegevens.
+1. Een `MediaResource` door de URL van de mediastream en de eerder gemaakte advertentiemetagegevens te gebruiken.
 
    ```js
    mediaResource = new AdobePSDK.MediaResource ( 
@@ -41,17 +40,17 @@ Gebruik de hulpklasse AuditudeSettings om Adobe Primetime- en beslissingsmetageg
          auditudeSettings);
    ```
 
-1. Laad het object `MediaResource` via de methode `MediaPlayer.replaceCurrentResource(resource)`.
+1. Laad de `MediaResource` door het `MediaPlayer.replaceCurrentResource(resource)` methode.
 
-   Met `MediaPlayer` wordt het mediabream geladen en verwerkt.
+   De `MediaPlayer` start met het laden en verwerken van het mediastroommanifest.
 
-1. Wanneer de `MediaPlayer` naar de geINITIALISEERDE status overgaat, krijg de eigenschappen van de media stroom in de vorm van een `MediaPlayerItem` instantie door het `MediaPlayer.CurrentItem` attribuut.
-1. (Optioneel) Vraag de instantie `MediaPlayerItem` om te zien of de stream live is, ongeacht of deze alternatieve audiotracks heeft.
+1. Wanneer de `MediaPlayer` overgangen naar de status INITIALIZED, krijg de kenmerken van de mediastream in de vorm van een `MediaPlayerItem` door de `MediaPlayer.CurrentItem` kenmerk.
+1. (Optioneel) Zoek naar de `MediaPlayerItem` -instantie om te zien of de stream live is, ongeacht of deze alternatieve audiotracks heeft.
 
    Deze informatie kan u helpen UI voor het playback voorbereiden. Als u bijvoorbeeld weet dat er twee audiotracks zijn, kunt u een UI-besturingselement opnemen dat schakelt tussen deze tracks.
 
-1. Bel `MediaPlayer.prepareToPlay` om de advertentieworkflow te starten.
+1. Bellen `MediaPlayer.prepareToPlay` om de publicatieworkflow te starten.
 
-   Nadat de advertenties zijn opgelost en op de tijdlijn zijn geplaatst, gaat `  MediaPlayer ` over naar de status PREPARED.
-1. Roep `MediaPlayer.play` aan om het afspelen te starten.
+   Nadat de advertenties zijn opgelost en op de tijdlijn zijn geplaatst, wordt het `  MediaPlayer ` overgangen naar de status PREPARED.
+1. Bellen `MediaPlayer.play` om het afspelen te starten.
 Browser-TVSDK bevat nu advertenties wanneer uw media wordt afgespeeld.

@@ -1,63 +1,61 @@
 ---
 description: U kunt een MediaPlayer-instantie die u niet meer nodig hebt opnieuw instellen, opnieuw gebruiken of vrijgeven.
 title: Een MediaPlayer-instantie opnieuw gebruiken of verwijderen
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: 8b84c7f1-713a-46b4-8eb7-d699a79e74b7
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '272'
 ht-degree: 0%
 
 ---
 
-
-# Een MediaPlayer-instantie {#reuse-or-remove-a-mediaplayer-instance} opnieuw gebruiken of verwijderen
+# Een MediaPlayer-instantie opnieuw gebruiken of verwijderen {#reuse-or-remove-a-mediaplayer-instance}
 
 U kunt een MediaPlayer-instantie die u niet meer nodig hebt opnieuw instellen, opnieuw gebruiken of vrijgeven.
 
-## Een MediaPlayer-instantie {#section_E6A2446A2D0B4ACD9EA980685B2E57D9} opnieuw instellen of gebruiken
+## Een MediaPlayer-instantie opnieuw instellen of gebruiken {#section_E6A2446A2D0B4ACD9EA980685B2E57D9}
 
-Wanneer u een `MediaPlayer` instantie terugstelt, is het teruggekeerd aan zijn niet geïnitialiseerde status IDLE zoals bepaald in `MediaPlayerStatus`.
+Wanneer u een `MediaPlayer` -instantie, wordt de niet-geïnitialiseerde IDLE-status van de instantie hersteld, zoals gedefinieerd in `MediaPlayerStatus`.
 
 Deze bewerking is handig in de volgende gevallen:
 
-* U wilt een `MediaPlayer` instantie opnieuw gebruiken maar moet een nieuwe `MediaResource` (video-inhoud) laden en de vorige instantie vervangen.
+* U wilt een `MediaPlayer` -instantie maar moet een nieuwe instantie laden `MediaResource` (video-inhoud) en vervangt u de vorige instantie.
 
-   Met resetting kunt u de `MediaPlayer`-instantie opnieuw gebruiken zonder de overhead van het vrijgeven van bronnen, het opnieuw maken van de `MediaPlayer` en het opnieuw toewijzen van bronnen.
+   Met opnieuw instellen kunt u de opdracht `MediaPlayer` instantie zonder de overhead van het vrijgeven van bronnen, opnieuw maken van de `MediaPlayer`en herallocatie van middelen.
 
-* Wanneer `MediaPlayer` in FOUTstatus is en moet worden ontruimd.
+* Wanneer de `MediaPlayer` bevindt zich in de status ERROR en moet worden gewist.
 
    >[!IMPORTANT]
    >
    >Dit is de enige manier om van de status van de FOUT terug te krijgen.
 
-   1. Roep `reset` aan om de `MediaPlayer` instantie aan zijn niet-geïnitialiseerde status terug te keren:
+   1. Bellen `reset` om de `MediaPlayer` -instantie naar de niet-geïnitialiseerde status:
 
       ```java
       void reset() throws MediaPlayerException; 
       ```
 
-   1. Gebruik `MediaPlayer.replaceCurrentResource()` om een andere `MediaResource` te laden.
+   1. Gebruiken `MediaPlayer.replaceCurrentResource()` om een andere te laden `MediaResource`.
 
       >[!NOTE]
       >
       >Als u een fout wilt wissen, laadt u dezelfde `MediaResource`.
 
-   1. Wanneer u de `STATUS_CHANGED` gebeurteniscallback met `PREPARED` status ontvangt, begin de playback.
+   1. Wanneer u de `STATUS_CHANGED` gebeurteniscallback met `PREPARED` status, start het afspelen.
 
 ## Een MediaPlayer-instantie en -bronnen opheffen {#section_13A0914AFF784943ABC343F7EB249C4E}
 
-U zou een `MediaPlayer` instantie en middelen moeten vrijgeven wanneer u `MediaResource` niet meer nodig hebt.
+U moet een `MediaPlayer` instantie en bronnen wanneer u de `MediaResource`.
 
-Wanneer u een `MediaPlayer` voorwerp vrijgeeft, worden de onderliggende hardwaremiddelen die met dit `MediaPlayer` voorwerp worden geassocieerd deassigned.
+Wanneer u een `MediaPlayer` object, de onderliggende hardwarebronnen die aan dit object zijn gekoppeld `MediaPlayer` -object wordt gedewijst.
 
-Hier zijn enkele redenen om een `MediaPlayer` vrij te geven:
+Hier volgen enkele redenen om een `MediaPlayer`:
 
 * Het vasthouden van onnodige bronnen kan de prestaties beïnvloeden.
-* Als u een onnodig `MediaPlayer`-object instantieert, kan dit leiden tot een continu batterijverbruik voor mobiele apparaten.
-* Indien meerdere instanties
-Als dezelfde video-codec niet wordt ondersteund op een apparaat, kan het afspelen mislukken bij andere toepassingen.
+* Een onnodige `MediaPlayer` geïnstantieerde objecten kunnen leiden tot een continu batterijverbruik voor mobiele apparaten.
+* Als meerdere instanties van dezelfde video-codec niet worden ondersteund op een apparaat, kan het afspelen mislukken bij andere toepassingen.
 
-* Geef `MediaPlayer` vrij.
+* Laat de `MediaPlayer`.
 
    ```java
    void release() throws MediaPlayerException;
@@ -65,4 +63,4 @@ Als dezelfde video-codec niet wordt ondersteund op een apparaat, kan het afspele
 
    >[!NOTE]
    >
-   >Nadat de `MediaPlayer` instantie wordt vrijgegeven, kunt u het niet meer gebruiken. Als om het even welke methode van de `MediaPlayer` interface wordt geroepen nadat het wordt vrijgegeven, wordt `MediaPlayerException` geworpen.
+   >Na de `MediaPlayer` -instantie wordt vrijgegeven, kunt u deze niet meer gebruiken. Indien een methode van de `MediaPlayer` de interface wordt geroepen nadat het wordt vrijgegeven, a `MediaPlayerException` wordt gegenereerd.

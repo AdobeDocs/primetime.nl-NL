@@ -1,14 +1,13 @@
 ---
 description: Deze klassen bieden manieren om verschillende soorten informatie te verwerken.
 title: Hulpprogrammaklassen
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: 561a8eef-30a3-4b17-bb82-72d31d0848e3
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '116'
 ht-degree: 0%
 
 ---
-
 
 # Hulpprogrammaklassen {#utility-classes}
 
@@ -29,4 +28,3 @@ Comment Type: draft
 | [DateUtils](https://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls_1.4/com/adobe/mediacore/utils/DateUtils.html) | Methoden voor het verwerken van datums. |
 | [NumberUtils](https://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls_1.4/com/adobe/mediacore/utils/NumberUtils.html) | Helpermethoden voor getallen. |
 | [TimeRange](https://help.adobe.com/en_US/primetime/api/psdk/javadoc_1.4/com/adobe/mediacore/utils/TimeRange.html) | Methoden voor het maken en interpreteren van tijdbereiken. |
-

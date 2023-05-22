@@ -1,16 +1,15 @@
 ---
 description: Browser-TVSDK kan gewijzigde afspeelinformatie in master m3u8-manifests voor live streaming detecteren en de afspeelinformatie bijwerken terwijl de stream wordt afgespeeld. Browser TVSDK steunt een dynamische reeks profielen van het beetjetarief aangezien de profielen verschijnen of verdwijnen uit master manifest, met inbegrip van niet-overlappende profielbeetjetarieven tussen updates.
 title: Live master-manifest-update
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: 2f89131c-5204-465b-8757-b47e955f5894
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '190'
 ht-degree: 0%
 
 ---
 
-
-# Live master-manifest update{#live-master-manifest-update}
+# Live master-manifest-update{#live-master-manifest-update}
 
 Browser-TVSDK kan gewijzigde afspeelinformatie in master m3u8-manifests voor live streaming detecteren en de afspeelinformatie bijwerken terwijl de stream wordt afgespeeld. Browser TVSDK steunt een dynamische reeks profielen van het beetjetarief aangezien de profielen verschijnen of verdwijnen uit master manifest, met inbegrip van niet-overlappende profielbeetjetarieven tussen updates.
 
@@ -28,4 +27,3 @@ Aan alle volgende voorwaarden moet worden voldaan:
 * Alle vertoningsgegevens blijven hetzelfde (behalve dat URL&#39;s kunnen variëren).
 * De DRM-toegangsgegevens blijven ongewijzigd.
 * Segmenten worden verpakt rond dezelfde PTS- en framegrenzen in een klein foutbereik.
-

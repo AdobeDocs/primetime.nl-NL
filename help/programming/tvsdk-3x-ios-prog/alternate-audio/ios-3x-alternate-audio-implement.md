@@ -1,23 +1,22 @@
 ---
 description: Voor langbindende audio wordt PTMediaPlayer gebruikt om een video af te spelen die is opgegeven in een M3U8 HLS-afspeellijst en die verschillende alternatieve audiostreams kan bevatten.
 title: Alternatieve audiotracks openen
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: c95e2bae-fcf3-4ae2-be11-fb3191b380f1
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '106'
 ht-degree: 0%
 
 ---
 
-
 # Alternatieve audiotracks openen {#access-alternate-audio-tracks}
 
 Voor langbindende audio wordt PTMediaPlayer gebruikt om een video af te spelen die is opgegeven in een M3U8 HLS-afspeellijst en die verschillende alternatieve audiostreams kan bevatten.
 
-1. Wacht op MediaPlayer om in minstens de `PTMediaPlayerStatusReady` status te zijn.
+1. Wacht tot de MediaPlayer zich in minstens `PTMediaPlayerStatusReady` status.
 1. Luister naar deze gebeurtenis:
 
-   kennisgeving `PTMediaPlayerItemMediaSelectionOptionsAvailable`: De eerste lijst met audiotracks is beschikbaar.
+   melding `PTMediaPlayerItemMediaSelectionOptionsAvailable`: De eerste lijst met audiotracks is beschikbaar.
 
    ```
    [[NSNotificationCenter defaultCenter] addObserver:self 
@@ -26,7 +25,7 @@ Voor langbindende audio wordt PTMediaPlayer gebruikt om een video af te spelen d
         object:self.player];
    ```
 
-1. Haal de beschikbare audiotracks op uit de instantie `PTMediaPlayerItem`.
+1. Beschikbare audiotracks ophalen via de `PTMediaPlayerItem` -instantie.
 
    ```
    - (void) onMediaPlayerItemMediaSelectionOptionsAvailable:(NSNotification *) notification { 
@@ -36,4 +35,4 @@ Voor langbindende audio wordt PTMediaPlayer gebruikt om een video af te spelen d
    ```
 
 1. (Optioneel) Stel de beschikbare tracks voor aan de gebruiker.
-1. Stel de geselecteerde audiotrack in op de instantie `PTMediaPlayerItem`.
+1. De geselecteerde audiotrack instellen op de `PTMediaPlayerItem` -instantie.

@@ -1,14 +1,13 @@
 ---
 description: Wanneer u een veilige netwerkarchitectuur vormt, worden de netwerkprotocollen vereist voor interactie tussen Adobe Primetime DRM en andere systemen in uw ondernemingsnetwerk.
 title: Adobe Primetime DRM-netwerkprotocollen
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: d5720ef4-6845-4a62-940a-9d8ba9b43b13
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '226'
 ht-degree: 0%
 
 ---
-
 
 # Adobe Primetime DRM-netwerkprotocollen {#adobe-primetime-drm-network-protocols}
 
@@ -30,7 +29,7 @@ Wanneer u een veilige netwerkarchitectuur vormt, worden de volgende netwerkproto
   </tr> 
   <tr rowsep="0" class="- topic/row "> 
    <td colname="1" class="- topic/entry "> <p class="- topic/p ">HTTPS (optioneel) </p> </td> 
-   <td colname="2" class="- topic/entry "> <p class="- topic/p ">Flash Player-, Adobe AIR- en Adobe Primetime-clients kunnen HTTPS gebruiken om te communiceren met Primetime DRM. HTTPS (SSL) is niet vereist, tenzij u FMRMS 1.x-clients ondersteunt. Zie <a href="../../secure-deployment-guidelines/overview/network-topology-firewall-rules.md" format="dita" scope="local"> Binnenkomende URL's </a> en SSL configureren voor meer informatie. </p> </td> 
+   <td colname="2" class="- topic/entry "> <p class="- topic/p ">Flash Player-, Adobe AIR- en Adobe Primetime-clients kunnen HTTPS gebruiken om te communiceren met Primetime DRM. HTTPS (SSL) is niet vereist, tenzij u FMRMS 1.x-clients ondersteunt. Zie voor meer informatie <a href="../../secure-deployment-guidelines/overview/network-topology-firewall-rules.md" format="dita" scope="local"> Binnenkomende URL's </a> en SSL configureren. </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -41,8 +40,8 @@ U kunt de Adobe Primetime DRM-licentieserver configureren voor gebruik van elke 
 
 Deze poorten moeten in- of uitgeschakeld zijn op de binnenfirewall, afhankelijk van de netwerkfunctionaliteit die u wilt toestaan voor clients die verbinding maken met de toepassingsserver waarop Primetime DRM wordt uitgevoerd.
 
-## SSL {#configuring-ssl} configureren
+## SSL configureren {#configuring-ssl}
 
 De Secure Sockets Layer (SSL) is alleen nodig als u ondersteuning nodig hebt voor Flash Media Rights Management Server 1.x-clients.
 
-SSL met clientverificatie is vereist voor de Adobe Primetime DRM Key Server. Zie [Adobe Primetime DRM Key Server gebruiken](../../using-the-drm-key-server/requirements.md) voor meer informatie.
+SSL met clientverificatie is vereist voor de Adobe Primetime DRM Key Server. Zie voor meer informatie [Adobe Primetime DRM Key Server gebruiken](../../using-the-drm-key-server/requirements.md).

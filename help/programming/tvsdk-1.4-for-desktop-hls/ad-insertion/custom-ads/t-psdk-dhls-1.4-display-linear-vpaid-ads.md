@@ -1,20 +1,19 @@
 ---
 description: TVSDK ondersteunt het weergeven van lineaire VPAID-advertenties (Video Player-Ad Interface Definition) in een ad-break. VPAID versie 1.0 vereist Flash, terwijl versie 2.0 ook werkt met Browser-TVSDK en JavaScript.
 title: Lineaire VPAID-advertenties weergeven in een advertentiescheiding
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: 316a38ac-ec2d-498c-b441-304e2fa75993
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '228'
 ht-degree: 0%
 
 ---
 
-
-# Lineaire VPAID-advertenties weergeven in een ad-break{#display-linear-vpaid-ads-in-an-ad-break}
+# Lineaire VPAID-advertenties weergeven in een advertentiescheiding{#display-linear-vpaid-ads-in-an-ad-break}
 
 TVSDK ondersteunt het weergeven van lineaire VPAID-advertenties (Video Player-Ad Interface Definition) in een ad-break. VPAID versie 1.0 vereist Flash, terwijl versie 2.0 ook werkt met Browser-TVSDK en JavaScript.
 
-Als u VPAID-advertenties correct wilt weergeven, moet u een advertentiecontainer ( `AdContainerView`) binnen de instantie `MediaPlayerContext` opgeven.
+U moet een advertentiecontainer opgeven ( `AdContainerView`) binnen de `MediaPlayerContext` -instantie.
 
 Beperkingen voor VPAID-advertenties:
 
@@ -55,4 +54,3 @@ Een advertentiecontainer instellen voor de weergave van VPAID-advertenties (vers
    >{ _adContainer.setSize(stage.stageWidth, stage.stageHeight, stage.displayState); } 
    >}
    >```
-

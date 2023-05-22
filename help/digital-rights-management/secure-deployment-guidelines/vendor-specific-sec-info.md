@@ -1,16 +1,15 @@
 ---
 description: Besturingssystemen en toepassingsservers worden opgenomen in uw Adobe Primetime DRM-oplossing.
 title: Specifieke beveiligingsinformatie van de leverancier
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: 4cc39414-cab5-4282-825d-64651d9b03e1
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '371'
 ht-degree: 0%
 
 ---
 
-
-# Specifieke beveiligingsinformatie van leverancier{#vendor-specific-security-information}
+# Specifieke beveiligingsinformatie van de leverancier{#vendor-specific-security-information}
 
 Besturingssystemen en toepassingsservers worden opgenomen in uw Adobe Primetime DRM-oplossing.
 
@@ -60,7 +59,7 @@ Hier volgt een aantal informatie over manieren om beveiligingskwetsbaarheden in 
  <tbody class="- topic/tbody "> 
   <tr rowsep="1" class="- topic/row "> 
    <td colname="1" class="- topic/entry "> <p class="- topic/p ">Beveiligingspatches </p> </td> 
-   <td colname="2" class="- topic/entry "> <p class="- topic/p ">Er is een verhoogd risico dat een onbevoegde gebruiker toegang tot de toepassingsserver zou kunnen krijgen als de patches en upgrades van de verkopersveiligheid niet tijdig worden toegepast. </p> <p>Opmerking:  Zorg ervoor dat u beveiligingspatches test voordat u ze op productieservers toepast. </p> <p class="- topic/p ">U moet beleidsregels en procedures maken om regelmatig te controleren op patches en deze te installeren. </p> </td> 
+   <td colname="2" class="- topic/entry "> <p class="- topic/p ">Er is een verhoogd risico dat een onbevoegde gebruiker toegang tot de toepassingsserver zou kunnen krijgen als de patches en upgrades van de verkopersveiligheid niet tijdig worden toegepast. </p> <p>Opmerking: Zorg ervoor dat u beveiligingspatches test voordat u ze op productieservers toepast. </p> <p class="- topic/p ">U moet beleidsregels en procedures maken om regelmatig te controleren op patches en deze te installeren. </p> </td> 
   </tr> 
   <tr rowsep="1" class="- topic/row "> 
    <td colname="1" class="- topic/entry "> <p class="- topic/p ">Virusbeveiligingssoftware </p> </td> 
@@ -86,4 +85,3 @@ Hieronder volgen enkele maatregelen:
 * Onbenodigde poorten sluiten
 * Het beperken van administratieve interfaces door IP adressen of domeinen
 * Java™ Security Manager gebruiken
-

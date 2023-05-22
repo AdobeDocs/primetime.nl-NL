@@ -1,14 +1,13 @@
 ---
 description: Wanneer TVSDK een geabonneerde tag in de afspeellijst/het manifest detecteert, probeert de speler de tag automatisch te verwerken en beschikbaar te maken in de vorm van een object TimedMetadata.
 title: Timed metadata-klasse
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: abb552d0-42f9-495e-a307-1f03d6a0b965
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '388'
 ht-degree: 0%
 
 ---
-
 
 # Timed metadata-klasse {#timed-metadata-class}
 
@@ -20,35 +19,35 @@ De klasse biedt de volgende elementen:
  <thead> 
   <tr> 
    <th colname="col1" class="entry"><b> Eigenschap </b></th> 
-   <th colname="col02" class="entry"> <b> Type  </b></th> 
-   <th colname="col2" class="entry"> <b> Beschrijving  </b> </th> 
+   <th colname="col02" class="entry"> <b> Type </b></th> 
+   <th colname="col2" class="entry"> <b> Beschrijving </b> </th> 
   </tr> 
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <span class="codeph"> id  </span> </td> 
+   <td colname="col1"> <span class="codeph"> id </span> </td> 
    <td colname="col02"> lang </td> 
-   <td colname="col2"> <p>Unieke id van de metagegevens met tijdslimiet. </p> <p>Deze waarde wordt meestal geëxtraheerd uit het kenmerk cue/tag-id. Anders wordt een unieke willekeurige waarde opgegeven. Gebruik <span class="codeph"> getId </span>. </p> </td> 
+   <td colname="col2"> <p>Unieke id van de metagegevens met tijdslimiet. </p> <p>Deze waarde wordt meestal geëxtraheerd uit het kenmerk cue/tag-id. Anders wordt een unieke willekeurige waarde opgegeven. Gebruiken <span class="codeph"> getId </span>. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <span class="codeph"> metagegevens  </span> </td> 
+   <td colname="col1"> <span class="codeph"> metagegevens </span> </td> 
    <td colname="col02"> Metagegevens </td> 
-   <td colname="col2"> <p>De verwerkte/geëxtraheerde informatie uit de aangepaste tag playlist/manifest. Gebruik <span class="codeph"> getMetadata </span>. </p> </td> 
+   <td colname="col2"> <p>De verwerkte/geëxtraheerde informatie uit de aangepaste tag playlist/manifest. Gebruiken <span class="codeph"> getMetadata </span>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <span class="codeph"> name </span> </td> 
    <td colname="col02"> String </td> 
-   <td colname="col2"> <p>De naam van de getimede metagegevens. Wanneer het type <span class="codeph"> TAG </span> is, vertegenwoordigt de waarde de naam van het actiepunt/de tag. Als het type <span class="codeph"> ID3 </span> is, is het ongeldig. Gebruik <span class="codeph"> getName </span>. </p> </td> 
+   <td colname="col2"> <p>De naam van de getimede metagegevens. Als het type <span class="codeph"> TAG </span>, vertegenwoordigt de waarde de naam van het actiepunt/de tag. Als het type <span class="codeph"> ID3 </span>, is deze null. Gebruiken <span class="codeph"> getName </span>. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <span class="codeph"> tijd  </span> </td> 
+   <td colname="col1"> <span class="codeph"> tijd </span> </td> 
    <td colname="col02"> lang </td> 
-   <td colname="col2"> <p>De tijdpositie, in milliseconden, ten opzichte van het begin van de hoofdinhoud waar deze getimede metagegevens aanwezig zijn in de stream. Gebruik <span class="codeph"> getTime </span>. </p> </td> 
+   <td colname="col2"> <p>De tijdpositie, in milliseconden, ten opzichte van het begin van de hoofdinhoud waar deze getimede metagegevens aanwezig zijn in de stream. Gebruiken <span class="codeph"> getTime </span>. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <span class="codeph"> type  </span> </td> 
+   <td colname="col1"> <span class="codeph"> type </span> </td> 
    <td colname="col02"> Type </td> 
-   <td colname="col2"> <p>Het type van de getimede meta-gegevens. Gebruik <span class="codeph"> getType </span>. 
+   <td colname="col2"> <p>Het type van de getimede meta-gegevens. Gebruiken <span class="codeph"> getType </span>. 
      <ul id="ul_70FBFB33E9F846D8B38592560CCE9560"> 
       <li id="li_739D30561BFB4D9B97DF212E4880BA2C">TAG - geeft aan dat de metagegevens met tijdinstellingen zijn gemaakt op basis van een tag in de afspeellijst/het manifest. </li> 
       <li id="li_E785E1DEF1CC4D9DBE7764E5D05EFAFC">ID3 - geeft aan dat de metagegevens met tijdinstellingen zijn gemaakt op basis van een ID3-tag in de mediastream. </li> 
@@ -78,37 +77,37 @@ Houd rekening met het volgende:
 <table id="table_1BAE98BF23F641A3A5709EBE37B327F6"> 
  <thead> 
   <tr> 
-   <th colname="col1" class="entry"> <b>Element  </b></th> 
+   <th colname="col1" class="entry"> <b>Element </b></th> 
    <th colname="col2" class="entry"> <b>Beschrijving</b></th> 
   </tr> 
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <span class="codeph"> public enum Type {TAG, ID3}  </span> </td> 
+   <td colname="col1"> <span class="codeph"> public enum Type {TAG, ID3} </span> </td> 
    <td colname="col2"> <p>Mogelijke typen voor de getimede metagegevens. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <span class="codeph"> public TimedMetadata(Type, long time, long id, String name, Metadata metadata);  </span> </td> 
+   <td colname="col1"> <span class="codeph"> public TimedMetadata(Type, long time, long id, String name, Metadata metadata); </span> </td> 
    <td colname="col2"> <p>Standaardconstructor (time is de lokale streamtijd). </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <span class="codeph"> public long getTime();  </span> </td> 
+   <td colname="col1"> <span class="codeph"> public long getTime(); </span> </td> 
    <td colname="col2"> <p>De tijdpositie, relatief ten opzichte van het begin van de hoofdinhoud, waar deze metagegevens in de stream zijn ingevoegd. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <span class="codeph"> public Metadata getMetadata();  </span> </td> 
+   <td colname="col1"> <span class="codeph"> public Metadata getMetadata(); </span> </td> 
    <td colname="col2"> <p>De metagegevens die in de stream zijn ingevoegd. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <span class="codeph"> public type getType();  </span> </td> 
+   <td colname="col1"> <span class="codeph"> public type getType(); </span> </td> 
    <td colname="col2"> <p>Retourneert het type van de getimede metagegevens. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <span class="codeph"> public long getId();  </span> </td> 
+   <td colname="col1"> <span class="codeph"> public long getId(); </span> </td> 
    <td colname="col2"> <p>Retourneert de id die uit de kenmerken cue/tag is geëxtraheerd. Anders wordt een unieke willekeurige waarde opgegeven. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <span class="codeph"> public String getName();  </span> </td> 
+   <td colname="col1"> <span class="codeph"> public String getName(); </span> </td> 
    <td colname="col2"> <p>Hiermee wordt de naam van de actielijn geretourneerd. Dit is doorgaans de naam van de HLS-tag. </p> </td> 
   </tr> 
  </tbody> 

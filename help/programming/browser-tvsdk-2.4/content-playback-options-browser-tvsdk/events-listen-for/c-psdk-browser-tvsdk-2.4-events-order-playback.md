@@ -1,14 +1,13 @@
 ---
 description: Browser-TVSDK verzendt gebeurtenissen/meldingen in de over het algemeen verwachte reeksen. De speler kan handelingen implementeren op basis van gebeurtenissen in de verwachte volgorde.
 title: Volgorde van afspeelgebeurtenissen
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: fd9dc0d5-0f39-4a6d-9d88-1fd49946fedf
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '96'
 ht-degree: 0%
 
 ---
-
 
 # Volgorde van afspeelgebeurtenissen{#order-of-playback-events}
 
@@ -18,16 +17,16 @@ Browser-TVSDK verzendt gebeurtenissen/meldingen in de over het algemeen verwacht
 
 In de volgende voorbeelden wordt de volgorde van bepaalde gebeurtenissen getoond, waaronder afspeelgebeurtenissen.
 
-* Wanneer het laden van een mediabron via `replaceCurrentResource` is voltooid, is de volgorde van gebeurtenissen:
+* Wanneer het laden van een mediabron is voltooid `replaceCurrentResource`De volgorde van gebeurtenissen is:
 
-   * `AdobePSDK.MediaPlayerStatusChangeEvent` with  `event.status =`
+   * `AdobePSDK.MediaPlayerStatusChangeEvent` with `event.status =`
 
       * `MediaPlayerStatus.INITIALIZING`
       * `MediaPlayerStatus.INITIALIZED`
 
-* Bij het voorbereiden op afspelen via `MediaPlayer.prepareToPlay` is de volgorde van gebeurtenissen:
+* Wanneer u het afspelen voorbereidt via `MediaPlayer.prepareToPlay`De volgorde van gebeurtenissen is:
 
-   * `AdobePSDK.MediaPlayerStatusChangeEvent` with  `event.status =`
+   * `AdobePSDK.MediaPlayerStatusChangeEvent` with `event.status =`
 
       * `MediaPlayerStatus.PREPARING`
       * `MediaPlayerStatus.PREPARED`
@@ -100,4 +99,3 @@ onStatusChange = function (event) {
     } 
 };
 ```
-

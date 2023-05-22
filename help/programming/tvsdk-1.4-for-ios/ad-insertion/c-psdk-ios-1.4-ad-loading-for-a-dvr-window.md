@@ -1,14 +1,13 @@
 ---
 description: U kunt beslissen of alleen de advertenties worden opgelost die na het huidige actieve punt van de gebruiker optreden of dat ook advertenties worden opgelost die vóór het huidige actieve punt plaatsvinden.
 title: Advertentie laden voor een DVR-venster
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: f0799002-5cba-41c2-86bb-9ccf6b906357
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '210'
 ht-degree: 0%
 
 ---
-
 
 # Advertentie laden voor een DVR-venster {#load-ad-for-a-dvr-window}
 
@@ -24,11 +23,11 @@ Wanneer een gebruiker inhoud begint te bekijken aan het begin van een DVR-stream
 
 U kunt als volgt een DVR-venster besturen en laden:
 
-Als u alle advertenties voor de gehele stream wilt laden, stelt u de eigenschap `PTAdMetadata.enableDVRAds` in op `YES`.
+Als u alle advertenties voor de gehele stream wilt laden, stelt u de `PTAdMetadata.enableDVRAds` eigenschap aan `YES`.
 
 >[!NOTE]
 >
->De standaardwaarde is `NO` en deze optie laadt alleen advertenties vanaf het huidige actieve punt.
+>De standaardwaarde is `NO`en deze optie laadt alleen advertenties vanaf het huidige actieve punt.
 
 Bijvoorbeeld:
 

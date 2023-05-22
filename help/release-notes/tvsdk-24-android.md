@@ -133,24 +133,24 @@ TVSDK voor Android 2.4 ondersteunt een aantal functies die u kunt implementeren 
 
 | **Functie** | **Inhoudstype** | **HLS** | **DASH** |
 |---|---|---|---|
-| Algemeen afspelen (Afspelen, Pauzeren, Zoeken) | VOD + Live | &amp; | Ö (alleen VOD) |
-| FER - Algemeen afspelen (afspelen, pauzeren, zoeken) | FER VOD | &amp; | Niet ondersteund |
+| Algemeen afspelen (Afspelen, Pauzeren, Zoeken) | VOD + Live | √ | Ö (alleen VOD) |
+| FER - Algemeen afspelen (afspelen, pauzeren, zoeken) | FER VOD | √ | Niet ondersteund |
 | MP3 | VOD | Niet ondersteund | Niet ondersteund |
-| MP4-inhoud afspelen | VOD | &amp; | &amp; |
-| Adaptive Bit Rate Switching Logic | VOD + Live | &amp; | Niet ondersteund |
-| Alleen audio afspelen | VOD + Live | &amp; | Niet ondersteund |
-| Ondertiteling - 608/708 | VOD + Live | &amp; | Ö (alleen VOD) |
-| Ondertiteling - WebVTT | VOD + Live | &amp; | Ö (alleen VOD) |
-| Kennelijke failover | VOD + Live | &amp; | Ö (alleen VOD) |
-| Geavanceerde failover | VOD + Live | &amp; | Ö (alleen VOD) |
-| QoS- en spelersmeldingen | VOD + Live | &amp; | Ö (alleen VOD) |
-| Ondersteuning voor cookie headers | VOD + Live | &amp; | Ö (alleen VOD) |
+| MP4-inhoud afspelen | VOD | √ | √ |
+| Adaptive Bit Rate Switching Logic | VOD + Live | √ | Niet ondersteund |
+| Alleen audio afspelen | VOD + Live | √ | Niet ondersteund |
+| Ondertiteling - 608/708 | VOD + Live | √ | Ö (alleen VOD) |
+| Ondertiteling - WebVTT | VOD + Live | √ | Ö (alleen VOD) |
+| Kennelijke failover | VOD + Live | √ | Ö (alleen VOD) |
+| Geavanceerde failover | VOD + Live | √ | Ö (alleen VOD) |
+| QoS- en spelersmeldingen | VOD + Live | √ | Ö (alleen VOD) |
+| Ondersteuning voor cookie headers | VOD + Live | √ | Ö (alleen VOD) |
 | Ondersteuning voor aangepaste koppen | VOD + Live | Niet ondersteund | Niet ondersteund |
-| Parameters voor bufferbesturing instellen | VOD + Live | &amp; | Ö (alleen VOD) |
-| Aangepaste besturingselementen voor bitsnelheid instellen | VOD + Live | &amp; | Ö (alleen VOD) |
-| Aangepaste Manifest Tags (HLS) / Gebeurtenisstreams (DASH) | VOD + Live | &amp; | Ö (alleen VOD) |
-| Laatste gebonden audio | VOD + Live | &amp; | Ö (alleen VOD) |
-| 302 Omleiding | VOD + Live | &amp; | Ö (alleen VOD) |
+| Parameters voor bufferbesturing instellen | VOD + Live | √ | Ö (alleen VOD) |
+| Aangepaste besturingselementen voor bitsnelheid instellen | VOD + Live | √ | Ö (alleen VOD) |
+| Aangepaste Manifest Tags (HLS) / Gebeurtenisstreams (DASH) | VOD + Live | √ | Ö (alleen VOD) |
+| Laatste gebonden audio | VOD + Live | √ | Ö (alleen VOD) |
+| 302 Omleiding | VOD + Live | √ | Ö (alleen VOD) |
 
 ### Geavanceerde afspeelfuncties {#advanced-playback-features}
 
@@ -165,31 +165,31 @@ TVSDK voor Android 2.4 ondersteunt een aantal functies die u kunt implementeren 
   <tr>
    <td>Afspelen met verschuiving</td> 
    <td>Live</td> 
-   <td>&amp;</td> 
+   <td>√</td> 
    <td>Niet ondersteund</td> 
   </tr>
   <tr>
    <td>Alleen audio afspelen</td> 
    <td>VOD + Live</td> 
-   <td>&amp;</td> 
+   <td>√</td> 
    <td>Niet ondersteund</td> 
   </tr>
   <tr>
    <td>Steen afspelen </td> 
    <td>VOD + Live</td> 
-   <td>&amp;</td> 
+   <td>√</td> 
    <td>Niet ondersteund</td> 
   </tr>
   <tr>
    <td>Vloeiend afspelen van steen (met ABR)</td> 
    <td>VOD + Live</td> 
-   <td>&amp;</td> 
+   <td>√</td> 
    <td>Niet ondersteund</td> 
   </tr>
   <tr>
    <td>ID3-parsering (HLS) / getimede metagegevens (DASH)</td> 
    <td>VOD + Live</td> 
-   <td>&amp;</td> 
+   <td>√</td> 
    <td>Niet ondersteund</td> 
   </tr>
   <tr>
@@ -201,7 +201,7 @@ TVSDK voor Android 2.4 ondersteunt een aantal functies die u kunt implementeren 
   <tr>
    <td>Direct aan</td> 
    <td>VOD + Live</td> 
-   <td>&amp;</td> 
+   <td>√</td> 
    <td>Niet ondersteund</td> 
   </tr>
   <tr>
@@ -211,13 +211,13 @@ TVSDK voor Android 2.4 ondersteunt een aantal functies die u kunt implementeren 
      <li>Meerdere perioden (DASH)</li> 
     </ul> </td> 
    <td>VOD + Live</td> 
-   <td>&amp;</td> 
+   <td>√</td> 
    <td>Niet ondersteund</td> 
   </tr>
   <tr>
    <td>302 Wisselingsgevoeligheid</td> 
    <td>VOD + Live</td> 
-   <td>&amp;</td> 
+   <td>√</td> 
    <td>Ö (alleen VOD)</td> 
   </tr>
   <tr>
@@ -229,7 +229,7 @@ TVSDK voor Android 2.4 ondersteunt een aantal functies die u kunt implementeren 
   <tr>
    <td>Integriteit van stream </td> 
    <td>VOD + Live</td> 
-   <td>&amp;</td> 
+   <td>√</td> 
    <td>Niet ondersteund</td> 
   </tr>
  </tbody>
@@ -239,11 +239,11 @@ TVSDK voor Android 2.4 ondersteunt een aantal functies die u kunt implementeren 
 
 | **Functie** | **Inhoudstype** | **HLS** | **DASH** |
 |---|---|---|---|
-| Algemeen afspelen, advertenties ingeschakeld | VOD + Live | &amp; | ð (alleen VOD-rollen) |
-| FER-inhoud met ingeschakelde advertenties | VOD | &amp; | Niet ondersteund |
-| Standaardgedrag advertentie | VOD + Live | &amp; | ð (alleen VOD-rollen) |
-| VAST 2,0/3,0 | VOD + Live | &amp; | ð (alleen VOD-rollen) |
-| VMAP 1.0 | VOD + Live | &amp; | ð (alleen VOD-rollen) |
+| Algemeen afspelen, advertenties ingeschakeld | VOD + Live | √ | ð (alleen VOD-rollen) |
+| FER-inhoud met ingeschakelde advertenties | VOD | √ | Niet ondersteund |
+| Standaardgedrag advertentie | VOD + Live | √ | ð (alleen VOD-rollen) |
+| VAST 2,0/3,0 | VOD + Live | √ | ð (alleen VOD-rollen) |
+| VMAP 1.0 | VOD + Live | √ | ð (alleen VOD-rollen) |
 | MP4-advertenties | VOD + Live | Ö uit CRS) | Ö uit CRS, alleen voorrollen) |
 
 ### Geavanceerde Ad Insertion-functies (CSAI) {#advanced-ad-insertion-features-csai}
@@ -259,7 +259,7 @@ TVSDK voor Android 2.4 ondersteunt een aantal functies die u kunt implementeren 
   <tr>
    <td>Steen afspelen met advertenties ingeschakeld</td> 
    <td>VOD + Live</td> 
-   <td>&amp;</td> 
+   <td>√</td> 
    <td>Niet ondersteund</td> 
   </tr>
   <tr>
@@ -271,31 +271,31 @@ TVSDK voor Android 2.4 ondersteunt een aantal functies die u kunt implementeren 
   <tr>
    <td>Doelparameters</td> 
    <td>VOD + Live</td> 
-   <td>&amp;</td> 
+   <td>√</td> 
    <td>ð (alleen VOD-rollen)</td> 
   </tr>
   <tr>
    <td>Aangepaste parameters</td> 
    <td>VOD + Live</td> 
-   <td>&amp;</td> 
+   <td>√</td> 
    <td>ð (alleen VOD-rollen)</td> 
   </tr>
   <tr>
    <td>Aangepast gedrag voor advertentie</td> 
    <td>VOD + Live</td> 
-   <td>&amp;</td> 
+   <td>√</td> 
    <td>ð (alleen VOD-rollen)</td> 
   </tr>
   <tr>
    <td>Aangepaste advertentietags</td> 
    <td>Live</td> 
-   <td>&amp; </td> 
+   <td>√ </td> 
    <td>Niet ondersteund</td> 
   </tr>
   <tr>
    <td>Aangepaste AD-oplossingen</td> 
    <td>VOD + Live</td> 
-   <td>&amp; </td> 
+   <td>√ </td> 
    <td>Niet ondersteund</td> 
   </tr>
   <tr>
@@ -307,13 +307,13 @@ TVSDK voor Android 2.4 ondersteunt een aantal functies die u kunt implementeren 
   <tr>
    <td>C3 en vervangen </td> 
    <td>VOD + Live</td> 
-   <td>&amp; </td> 
+   <td>√ </td> 
    <td>Niet ondersteund</td> 
   </tr>
   <tr>
    <td>Lazy advertentie laden</td> 
    <td>VOD</td> 
-   <td>&amp; </td> 
+   <td>√ </td> 
    <td>Niet ondersteund</td> 
   </tr>
   <tr>
@@ -323,13 +323,13 @@ TVSDK voor Android 2.4 ondersteunt een aantal functies die u kunt implementeren 
      <li>Meerdere perioden (DASH)</li> 
     </ul> </td> 
    <td>VOD + Live</td> 
-   <td>&amp; </td> 
+   <td>√ </td> 
    <td> </td> 
   </tr>
   <tr>
    <td>Extra's, banneradvertenties en aanklikbare advertenties</td> 
    <td>VOD + Live</td> 
-   <td>&amp; </td> 
+   <td>√ </td> 
    <td>ð (alleen VOD-rollen)</td> 
   </tr>
   <tr>
@@ -341,19 +341,19 @@ TVSDK voor Android 2.4 ondersteunt een aantal functies die u kunt implementeren 
   <tr>
    <td>Vroege advertentie afsluiten</td> 
    <td>Live</td> 
-   <td>&amp; </td> 
+   <td>√ </td> 
    <td>Niet ondersteund</td> 
   </tr>
   <tr>
    <td>Op regels gebaseerde Creative VOD + Live Prioritization</td> 
    <td>VOD + Live</td> 
-   <td>&amp; </td> 
+   <td>√ </td> 
    <td>Niet ondersteund</td> 
   </tr>
   <tr>
    <td>CRS-regels </td> 
    <td>VOD + Live</td> 
-   <td>&amp; </td> 
+   <td>√ </td> 
    <td>Niet ondersteund</td> 
   </tr>
  </tbody>
@@ -363,9 +363,9 @@ TVSDK voor Android 2.4 ondersteunt een aantal functies die u kunt implementeren 
 
 | **Functie** | **Inhoudstype** | **HLS** | **DASH** |
 |---|---|---|---|
-| AES-codering | VOD + Live | &amp; | Ö (alleen VOD) |
-| Voorbeeld AES-codering | VOD + Live | &amp; |  |
-| Vertogende stromen | VOD + Live | &amp; |  |
+| AES-codering | VOD + Live | √ | Ö (alleen VOD) |
+| Voorbeeld AES-codering | VOD + Live | √ |  |
+| Vertogende stromen | VOD + Live | √ |  |
 | DRM | VOD + Live | Alleen Primetime DRM (in de toekomst: Widevine) | Alleen Widevine |
 | Extern afspelen (RBOP) | VOD + Live | Alleen Primetime DRM | Niet ondersteund |
 | Licentie roteren | VOD + Live | Alleen Primetime DRM | Niet ondersteund |
@@ -375,8 +375,8 @@ TVSDK voor Android 2.4 ondersteunt een aantal functies die u kunt implementeren 
 
 | **Functie** | **Inhoudstype** | **HLS** | **DASH** |
 |---|---|---|---|
-| Adobe Analytics VHL-integratie | VOD + Live | &amp; | &amp; |
-| Facturering | VOD + Live | &amp; | Niet ondersteund |
+| Adobe Analytics VHL-integratie | VOD + Live | √ | √ |
+| Facturering | VOD + Live | √ | Niet ondersteund |
 
 ## Functies niet ondersteund {#features-not-supported}
 

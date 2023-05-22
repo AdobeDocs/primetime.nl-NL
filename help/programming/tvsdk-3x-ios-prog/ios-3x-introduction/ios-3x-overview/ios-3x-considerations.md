@@ -1,16 +1,15 @@
 ---
 description: Als u TVSDK het doeltreffendst wilt gebruiken, moet u bepaalde details van de werking van de SDK in overweging nemen en bepaalde best practices volgen.
 title: Overwegingen en beste praktijken
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: f5d3e0ff-675f-4bd4-bfda-71988d25c85d
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '390'
 ht-degree: 0%
 
 ---
 
-
-# Overwegingen en aanbevolen procedures {#considerations-and-best-practices}
+# Overwegingen en beste praktijken {#considerations-and-best-practices}
 
 Als u TVSDK het doeltreffendst wilt gebruiken, moet u bepaalde details van de werking van de SDK in overweging nemen en bepaalde best practices volgen.
 
@@ -18,7 +17,7 @@ Als u TVSDK het doeltreffendst wilt gebruiken, moet u bepaalde details van de we
 
 Houd rekening met de volgende informatie wanneer u TVSDK gebruikt:
 
-* Adobe Primetime werkt niet op iOS-simulators.
+* Adobe Primetime werkt niet met iOS-simulatoren.
 
    U moet echte apparaten gebruiken voor het testen.
 
@@ -42,13 +41,13 @@ Houd rekening met de volgende informatie wanneer u TVSDK gebruikt:
 
       De waarde van de userAgent-tekenreeks staat standaard voor wat het besturingssysteem toewijst.
 
-## Aanbevolen werkwijzen {#section_tvsdk_best_practices}
+## Aanbevolen procedures {#section_tvsdk_best_practices}
 
 Hier volgen de aanbevolen procedures voor TVSDK:
 
 * Gebruik HLS versie 3.0 of hoger voor programma-inhoud.
 
-* Gebruik het hulpprogramma MediaStreamValidator van Apple om VOD-streams te valideren.
+* Gebruik het Apple-hulpprogramma MediaStreamValidator om VOD-streams te valideren.
 
 * De PTSDKConfig-klasse biedt methoden om SSL af te dwingen voor aanvragen die zijn ingediend op Primetime- en beslissings-, DRM- en Video Analytics-servers.
 

@@ -1,14 +1,13 @@
 ---
 description: Met deze klassen kunt u logboekregistratie aanpassen.
 title: Logboekklassen
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: e420f557-eb4f-4adf-9b87-1cffc6b36d53
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '126'
 ht-degree: 0%
 
 ---
-
 
 # Logboekklassen{#logging-classes}
 
@@ -38,7 +37,7 @@ Pakket: [com.adobe.mediacore.logging](https://help.adobe.com/en_US/primetime/api
   </tr> 
   <tr rowsep="1"> 
    <td colname="1"><span class="codeph"><a href="https://help.adobe.com/en_US/primetime/api/psdk/javadoc_1.4/com/adobe/mediacore/logging/Logger.html" format="html" scope="external"> Aanmelder</a> </span></td> 
-   <td colname="2">Interface. De methodes die worden vereist om een douaneregistreerapparaat voor <code>primetime-sdk-name</code> Woorden uit te voeren. </td> 
+   <td colname="2">Interface. De methodes die worden vereist om een douaneregistreerapparaat voor uit te voeren <code>primetime-sdk-name</code> Woorden. </td> 
   </tr> 
  </tbody>
 </table>

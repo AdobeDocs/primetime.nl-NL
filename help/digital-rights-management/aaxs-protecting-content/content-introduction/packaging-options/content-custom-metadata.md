@@ -2,14 +2,13 @@
 title: Aangepaste metagegevens
 description: Aangepaste metagegevens
 copied-description: true
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: d7783420-b345-44de-8f22-a16dda5d7554
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '109'
 ht-degree: 0%
 
 ---
-
 
 # Aangepaste metagegevens {#custom-metadata}
 

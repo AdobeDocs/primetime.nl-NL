@@ -1,14 +1,13 @@
 ---
 description: U kunt gedrag voor Browser-TVSDK toevoegen om knoppen te pauzeren en af te spelen.
 title: Een video afspelen en pauzeren
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: ce3f8b0c-9765-4e77-b096-6b9789608fa8
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '111'
 ht-degree: 0%
 
 ---
-
 
 # Een video afspelen en pauzeren{#play-and-pause-a-video}
 
@@ -28,7 +27,6 @@ U kunt gedrag voor Browser-TVSDK toevoegen om knoppen te pauzeren en af te spele
       void pause() throws IllegalStateException;
       ```
 
-1. Luister naar de gebeurtenis `AdobePSDK.MediaPlayerStatusChangeEvent` om te controleren op fouten of om andere geschikte acties uit te voeren.
+1. Luister naar de `AdobePSDK.MediaPlayerStatusChangeEvent` om op fouten te controleren of om andere passende acties te ondernemen.
 
-   Browser TVSDK activeert deze gebeurtenis wanneer pauze- of afspeelmethoden worden aangeroepen en geeft informatie over het gebeurtenisobject door, inclusief de nieuwe status, zoals `MediaPlayerStatus.PLAYING` of `MediaPlayerStatus.PAUSED`.
-
+   Browser TVSDK activeert deze gebeurtenis wanneer pauze- of afspeelmethoden worden aangeroepen en informatie over het gebeurtenisobject wordt doorgegeven, inclusief de nieuwe status, zoals `MediaPlayerStatus.PLAYING` of `MediaPlayerStatus.PAUSED`.

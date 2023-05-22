@@ -2,25 +2,24 @@
 title: Vorm en stel de bevel-lijn hulpmiddelen in werking
 description: Vorm en stel de bevel-lijn hulpmiddelen in werking
 copied-description: true
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: ff0d4316-24e6-4a34-b332-abd737d6fcf9
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '109'
 ht-degree: 0%
 
 ---
 
+# Vorm en stel de bevel-lijn hulpmiddelen in werking {#configure-and-run-the-command-line-tools}
 
-# Vorm en stel de bevel-lijn hulpmiddelen {#configure-and-run-the-command-line-tools} in werking
+Aan de opdrachtregelprogramma&#39;s zijn eigenschappen gekoppeld waarvoor u waarden moet instellen in [!DNL flashaccesstools.properties] *voor* u voert de gereedschappen uit. Met sommige opdrachtregelprogramma&#39;s kunt u ook eigenschapswaarden opgeven via de opdrachtregel. Waarden die u opgeeft vanaf de opdrachtregel hebben voorrang op waarden die u opgeeft vanaf [!DNL flashaccesstools.properties].
 
-De bevel-lijn hulpmiddelen hebben bijbehorende eigenschappen waarvoor u waarden in [!DNL flashaccesstools.properties] *vóór* moet plaatsen u de hulpmiddelen in werking stelt. Met sommige opdrachtregelprogramma&#39;s kunt u ook eigenschapswaarden opgeven via de opdrachtregel. Waarden die u opgeeft vanaf de opdrachtregel hebben voorrang op waarden die u opgeeft vanaf [!DNL flashaccesstools.properties].
+U moet instellingen wijzigen in de volgende secties van [!DNL flashaccesstools.properties] om de overeenkomstige bevellijnhulpmiddelen toe te laten die u van plan bent te gebruiken:
 
-U moet instellingen in de volgende secties van [!DNL flashaccesstools.properties] wijzigen om de overeenkomstige opdrachtregelprogramma&#39;s die u wilt gebruiken, in te schakelen:
+* **Eigenschappen van Media Packager** - (for [!DNL AdobePackager.jar])
 
-* **Eigenschappen**  van Media Packager - (voor  [!DNL AdobePackager.jar])
+* **Lijstbeheer voor beleidsupdates en eigenschappen van beheer van intrekkingslijsten** - (for [!DNL AdobePolicyUpdateListManager.jar] en [!DNL AdobeRevocationListManager.jar])
 
-* **De Manager van de Lijst van de Update van het beleid en de Eigenschappen**  van de Manager van de Lijst van de Intrekking (voor  [!DNL AdobePolicyUpdateListManager.jar] en  [!DNL AdobeRevocationListManager.jar])
+* **Eigenschappen van beleidsbeheer** - (for [!DNL AdobePolicyManager.jar])
 
-* **Eigenschappen**  voor beleidsbeheer - (voor  [!DNL AdobePolicyManager.jar])
-
-* **Eigenschappen**  van licentiegenerator - (voor  [!DNL AdobeLicenseGenerator.jar])
+* **Eigenschappen van licentiegenerator** - (for [!DNL AdobeLicenseGenerator.jar])

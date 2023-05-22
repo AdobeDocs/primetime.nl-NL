@@ -1,14 +1,13 @@
 ---
 description: De Primetime-speler ondersteunt de integratie van Primetime DRM als aangepaste DRM-workflows. Dit betekent dat uw toepassing de DRM-verificatieworkflows moet implementeren voordat de stream kan worden afgespeeld.
 title: DRM-inhoudsbeveiliging
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: c1904d15-023f-49fb-95f9-d157d17b3516
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '366'
 ht-degree: 0%
 
 ---
-
 
 # DRM-inhoudsbeveiliging {#drm-content-protection}
 
@@ -22,7 +21,7 @@ Om dit in te schakelen, biedt TVSDK u de DRM-manager voor verificatie. De voorbe
 
 Alle met DRM beveiligde inhoud wordt automatisch verwerkt door de DRM-bibliotheken die in de TVSDK zijn ingebouwd. U kunt echter foutafhandeling, optimalisatie van apparaatindividualisatie en licentieverwerving beschikbaar maken met TVSDK API-callbacks.
 
-## Inhoud beschermen aan speler {#section_F1FC4322C35C4FE8A3B47FDC0A74221B}
+## Inhoud beschermen aan speler toevoegen {#section_F1FC4322C35C4FE8A3B47FDC0A74221B}
 
 U kunt inhoudsbeveiliging toevoegen aan de speler door een afspeelbeheer te maken of door de beheerfactory te gebruiken.
 
@@ -30,7 +29,7 @@ Een contentbeveiligingsmanager maken:
 
 * Initialiseer het DRM-systeem.
 
-   Het volgende codevoorbeeld toont het roepen `loadDRMServices` in de toepassing `onCreate()` functie, om ervoor te zorgen dat om het even welke initialisering die voor het DRM systeem wordt vereist alvorens playback in werking wordt gesteld begint.
+   Het volgende codevoorbeeld toont het roepen van `loadDRMServices` in de toepassing `onCreate()` om ervoor te zorgen dat initialisatie die voor het DRM-systeem is vereist, wordt gestart voordat het afspelen wordt gestart.
 
    ```java
    @Override 
@@ -42,7 +41,7 @@ Een contentbeveiligingsmanager maken:
 
 * Laad de DRM-licenties vooraf.
 
-   In het volgende codevoorbeeld wordt het laden van de `VideoItems` getoond wanneer de inhoudslijst klaar is met laden. Hierdoor worden de DRM-licenties opgehaald van de licentieserver en lokaal in het cachegeheugen opgeslagen, zodat de inhoud zo snel mogelijk wordt geladen wanneer het afspelen wordt gestart.
+   Het volgende codevoorbeeld toont het laden van `VideoItems` wanneer het laden van de inhoudslijst is voltooid. Hierdoor worden de DRM-licenties opgehaald van de licentieserver en lokaal in het cachegeheugen opgeslagen, zodat de inhoud zo snel mogelijk wordt geladen wanneer het afspelen wordt gestart.
 
    ```java
    DrmManager.preLoadDrmLicenses(item.getUrl(),  
@@ -66,7 +65,7 @@ Een contentbeveiligingsmanager maken:
    >
    >![](assets/precache-drm-licenses.jpg)
 
-* Als u `ManagerFactory` wilt gebruiken om DRM-foutafhandeling te implementeren, moet u ervoor zorgen dat de volgende coderegel in het [!DNL PlayerFragment.java]-bestand staat:
+* Te gebruiken `ManagerFactory` om DRM fout behandeling uit te voeren, zorg ervoor de volgende lijn van code in is [!DNL PlayerFragment.java] bestand:
 
    ```java
    drmManager = ManagerFactory.getDrmManager(config, mediaPlayer);

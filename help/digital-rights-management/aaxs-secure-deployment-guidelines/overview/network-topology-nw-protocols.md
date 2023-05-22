@@ -2,16 +2,15 @@
 title: De protocollen van het netwerk die door Adobe Access worden gebruikt
 description: De protocollen van het netwerk die door Adobe Access worden gebruikt
 copied-description: true
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: f065690d-6fa1-43a7-8aa8-a1ccd68e998d
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '106'
 ht-degree: 0%
 
 ---
 
-
-# Netwerkprotocollen gebruikt door Adobe Access {#network-protocols-used-by-adobe-access}
+# De protocollen van het netwerk die door Adobe Access worden gebruikt {#network-protocols-used-by-adobe-access}
 
 Wanneer u een veilige netwerkarchitectuur vormt, worden de netwerkprotocollen in de volgende lijst vereist voor interactie tussen de Toegang van Adobe en andere systemen in uw ondernemingsnetwerk.
 
@@ -29,7 +28,7 @@ Wanneer u een veilige netwerkarchitectuur vormt, worden de netwerkprotocollen in
   </tr> 
   <tr rowsep="0" class="- topic/row "> 
    <td colname="1" class="- topic/entry "> <p class="- topic/p ">HTTPS (optioneel) </p> </td> 
-   <td colname="2" class="- topic/entry "> <p class="- topic/p ">Flash Player-, Adobe AIR- en Adobe Primetime-clients kunnen HTTPS gebruiken voor communicatie met Adobe Access, maar HTTPS (SSL) is niet vereist, tenzij u ondersteuning voor FMRMS 1.x-clients nodig hebt. Zie de nota's in de lijst <a href="network-topology-firewall-rules.md" format="dita" scope="local"> Inkomende URLs</a> en <a href="network-topology-nw-protocols.md"> het Vormen SSL</a>. </p> </td> 
+   <td colname="2" class="- topic/entry "> <p class="- topic/p ">Flash Player-, Adobe AIR- en Adobe Primetime-clients kunnen HTTPS gebruiken voor communicatie met Adobe Access, maar HTTPS (SSL) is niet vereist, tenzij u ondersteuning voor FMRMS 1.x-clients nodig hebt. Zie de notities in de tabel <a href="network-topology-firewall-rules.md" format="dita" scope="local"> Binnenkomende URL's</a> en <a href="network-topology-nw-protocols.md"> SSL configureren</a>. </p> </td> 
   </tr> 
  </tbody> 
 </table>

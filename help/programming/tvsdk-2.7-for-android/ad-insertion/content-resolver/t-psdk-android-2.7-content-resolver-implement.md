@@ -1,22 +1,21 @@
 ---
 description: U kunt uw eigen inhoudsoplossers implementeren op basis van de standaardoplossers.
 title: Een aangepaste contentoplosser implementeren
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: 04eff874-8a18-42f0-adb2-5b563e5c6a31
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '209'
-ht-degree: 2%
+ht-degree: 0%
 
 ---
 
-
-# Een aangepaste inhoudoplosser {#implement-a-custom-content-resolver} implementeren
+# Een aangepaste contentoplosser implementeren {#implement-a-custom-content-resolver}
 
 U kunt uw eigen inhoudsoplossers implementeren op basis van de standaardoplossers.
 
-Wanneer TVSDK een nieuwe kans genereert, doorloopt het de geregistreerde contentoplossers die naar een mogelijkheid zoeken die die kans kan oplossen. De eerste die `true` terugkeert wordt geselecteerd om de kans op te lossen. Als er geen oplossing voor inhoud mogelijk is, wordt die mogelijkheid overgeslagen. Omdat het proces voor het oplossen van inhoud meestal asynchroon is, brengt de contentoplosser TVSDK op de hoogte wanneer het proces is voltooid.
+Wanneer TVSDK een nieuwe kans genereert, doorloopt het de geregistreerde contentoplossers die naar een mogelijkheid zoeken die die kans kan oplossen. De eerste die terugkeert `true` wordt geselecteerd om de kans op te lossen. Als er geen oplossing voor inhoud mogelijk is, wordt die mogelijkheid overgeslagen. Omdat het proces voor het oplossen van inhoud meestal asynchroon is, brengt de contentoplosser TVSDK op de hoogte wanneer het proces is voltooid.
 
-1. Implementeer uw eigen aangepaste `ContentFactory` door de `ContentFactory`-interface uit te breiden en `retrieveResolvers` te overschrijven.
+1. Uw eigen aangepaste versie implementeren `ContentFactory`door de `ContentFactory` interface en overschrijven `retrieveResolvers`.
 
    Bijvoorbeeld:
 
@@ -51,7 +50,7 @@ Wanneer TVSDK een nieuwe kans genereert, doorloopt het de geregistreerde content
    } 
    ```
 
-1. Registreer `ContentFactory` aan `MediaPlayer`.
+1. Registreer de `ContentFactory` aan de `MediaPlayer`.
 
    Bijvoorbeeld:
 
@@ -68,9 +67,9 @@ Wanneer TVSDK een nieuwe kans genereert, doorloopt het de geregistreerde content
    itemLoader.load(resource, id, config);
    ```
 
-1. Geef een `AdvertisingMetadata`-object als volgt door aan TVSDK:
-   1. Maak een `AdvertisingMetadata`-object.
-   1. Sla het `AdvertisingMetadata`-object op in `MediaPlayerItemConfig`.
+1. Een `AdvertisingMetadata` als volgt naar TVSDK verwijzen:
+   1. Een `AdvertisingMetadata` object.
+   1. Sla de `AdvertisingMetadata` object naar `MediaPlayerItemConfig`.
 
       ```java
       AdvertisingMetadata advertisingMetadata = new AdvertisingMetadata(); 
@@ -81,8 +80,8 @@ Wanneer TVSDK een nieuwe kans genereert, doorloopt het de geregistreerde content
       mediaPlayerItemConfig.setAdvertisingMetadata(advertisingMetadata); 
       ```
 
-1. Maak een aangepaste ad resolver-klasse die de klasse `ContentResolver` uitbreidt.
-   1. Overschrijf `doConfigure`, `doCanResolve`, `doResolve`, `doCleanup` in de aangepaste add-oplosser:
+1. Maak een aangepaste ad resolver-klasse die de klasse `ContentResolver` klasse.
+   1. Overschrijf in de aangepaste en oplosser `doConfigure`, `doCanResolve`, `doResolve`, `doCleanup`:
 
       ```java
       void doConfigure(MediaPlayerItem item); 
@@ -91,7 +90,7 @@ Wanneer TVSDK een nieuwe kans genereert, doorloopt het de geregistreerde content
       void doCleanup();
       ```
 
-      U krijgt uw `advertisingMetadata` van het punt binnen wordt overgegaan `doConfigure`:
+      Je krijgt je `advertisingMetadata` van het doorgegeven item `doConfigure`:
 
       ```java
       MediaPlayerItemConfig itemConfig = item.getConfig(); 
@@ -100,7 +99,7 @@ Wanneer TVSDK een nieuwe kans genereert, doorloopt het de geregistreerde content
         mediaPlayerItemConfig.getAdvertisingMetadata(); 
       ```
 
-   1. Voor elke plaatsingskans, creeer `List<TimelineOperation>`.
+   1. Voor elke plaatsingskans maakt u een `List<TimelineOperation>`.
 
       Dit voorbeeld `TimelineOperation` biedt een structuur voor `AdBreakPlacement`:
 
@@ -115,14 +114,14 @@ Wanneer TVSDK een nieuwe kans genereert, doorloopt het de geregistreerde content
 
    1. Nadat de advertenties zijn opgelost, roep één van de volgende functies:
 
-      * Als de advertentie slaagt, roepen `process(List<TimelineOperation> proposals)` en `notifyCompleted(Opportunity opportunity)` op `ContentResolverClient`
+      * Als de advertentie succesvol is, roep `process(List<TimelineOperation> proposals)` en `notifyCompleted(Opportunity opportunity)` op de `ContentResolverClient`
 
          ```java
          _client.process(timelineOperations); 
          _client.notifyCompleted(opportunity); 
          ```
 
-      * Als de advertentieoplossing ontbreekt, roep `notifyResolveError` op `ContentResolverClient`
+      * Als de advertentie-oplossing mislukt, roept u `notifyResolveError` op de `ContentResolverClient`
 
          ```java
          _client.notifyFailed(Opportunity opportunity, PSDKErrorCode error);
@@ -169,4 +168,3 @@ public class CustomContentResolver extends ContentResolver {
     protected void doCleanup() {} 
 } 
 ```
-

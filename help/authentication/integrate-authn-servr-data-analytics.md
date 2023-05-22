@@ -1,13 +1,13 @@
 ---
 title: Gegevens van Primetime-verificatieservers integreren in Adobe Analytics
 description: Gegevens van Primetime-verificatieservers integreren in Adobe Analytics
-source-git-commit: 326f97d058646795cab5d062fa5b980235f7da37
+exl-id: c1f1f2a3-c98c-4aed-92ad-1f9bfd80b82b
+source-git-commit: bfc3ba55c99daba561255760baf273b6538a3c6e
 workflow-type: tm+mt
 source-wordcount: '1133'
 ht-degree: 4%
 
 ---
-
 
 # Gegevens van de Primetime-verificatieserver integreren in Adobe Analytics
 

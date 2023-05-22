@@ -1,13 +1,13 @@
 ---
 title: Uitwisseling een teken van Platform SSO voor een teken van Adobe
 description: Uitwisseling een teken van Platform SSO voor een teken van Adobe
-source-git-commit: 326f97d058646795cab5d062fa5b980235f7da37
+exl-id: 5ab60268-8f97-4755-8281-be45e812ed7f
+source-git-commit: bfc3ba55c99daba561255760baf273b6538a3c6e
 workflow-type: tm+mt
 source-wordcount: '223'
 ht-degree: 2%
 
 ---
-
 
 # Uitwisseling een teken van Platform SSO voor een teken van Adobe {#exchange-a-platform-sso-token-for-an-adobe-token}
 
@@ -47,5 +47,3 @@ Staat toe dat een Platform SSO-profiel wordt &quot;uitgewisseld&quot; voor een A
 | SAMLResponse | Het werkelijke profiel zoals geretourneerd door Platform SSO. |
 | _deviceUser_ | De gebruikers-id van het apparaat. |
 | _appId_ | De toepassings-id/-naam. |
-
-

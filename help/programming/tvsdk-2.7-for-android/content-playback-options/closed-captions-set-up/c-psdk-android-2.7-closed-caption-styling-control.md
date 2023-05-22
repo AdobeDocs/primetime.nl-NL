@@ -1,16 +1,15 @@
 ---
 description: U kunt opmaakinformatie opgeven voor Closed Caption-tracks met behulp van de klasse TextFormat, die de stijl instelt voor Closed Captions die door de speler worden weergegeven.
 title: Opmaak van ondertiteling beheren
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: fa96f9f5-f709-4749-90c8-cf237cf074c0
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '853'
 ht-degree: 0%
 
 ---
 
-
-# Besturingselement voor closed-caption {#control-closed-caption-styling}
+# Opmaak van ondertiteling beheren {#control-closed-caption-styling}
 
 U kunt opmaakinformatie opgeven voor Closed Caption-tracks met behulp van de klasse TextFormat, die de stijl instelt voor Closed Captions die door de speler worden weergegeven.
 
@@ -20,12 +19,12 @@ Met deze klasse worden opmaakgegevens voor gesloten bijschriften ingekapseld, zo
 
 U kunt de tekst met een gesloten bijschrift opmaken met de methoden TVSDK.
 
-1. Wacht tot de mediaspeler ten minste de status `PREPARED` heeft.
-1. Maak een `TextFormatBuilder`-instantie.
+1. Wacht tot de mediaspeler zich in ten minste `PREPARED` status.
+1. Een `TextFormatBuilder` -instantie.
 
    U kunt nu alle opmaakparameters voor een gesloten bijschrift opgeven of deze later instellen.
 
-   TVSDK kapselt uit een gesloten bijschrift opmaakinformatie in de interface `TextFormat` in. De klasse `TextFormatBuilder` maakt objecten die deze interface implementeren.
+   TVSDK kapselt opmaakinformatie voor Closed Caption in de `TextFormat` interface. De `TextFormatBuilder` -klasse maakt objecten die deze interface implementeren.
 
    ```java
    public TextFormatBuilder( 
@@ -43,11 +42,11 @@ U kunt de tekst met een gesloten bijschrift opmaken met de methoden TVSDK.
       java.lang.String safeArea)
    ```
 
-1. Om een verwijzing naar een voorwerp te verkrijgen dat de `TextFormat` interface uitvoert, roep `TextFormatBuilder.toTextFormat` openbare methode.
+1. Een verwijzing verkrijgen naar een object dat het `TextFormat` interface, roep de `TextFormatBuilder.toTextFormat` methode public.
 
    >[!NOTE]
    >
-   >Hiermee wordt een `TextFormat`-object geretourneerd dat op de mediaspeler kan worden toegepast.
+   >Dit retourneert een `TextFormat` -object dat op de mediaspeler kan worden toegepast.
 
    ```java
    public TextFormat toTextFormat()
@@ -55,7 +54,7 @@ U kunt de tekst met een gesloten bijschrift opmaken met de methoden TVSDK.
 
 1. U kunt desgewenst de huidige stijlinstellingen voor een gesloten bijschrift ophalen door een van de volgende handelingen uit te voeren:
 
-   * Hiermee worden alle stijlinstellingen opgehaald met `MediaPlayer.getCCStyle` De geretourneerde waarde is een instantie van de interface `TextFormat`.
+   * Alle stijlinstellingen ophalen met `MediaPlayer.getCCStyle` De geretourneerde waarde is een instantie van de `TextFormat` interface.
 
       ```java
       /** 
@@ -67,7 +66,7 @@ U kunt de tekst met een gesloten bijschrift opmaken met de methoden TVSDK.
       public TextFormat getCCStyle() throws MediaPlayerException;
       ```
 
-   * Krijg de montages één voor één door de `TextFormat` methodes van de interfaceteller.
+   * De instellingen een voor een ophalen via de `TextFormat` interface getter, methoden.
 
       ```java
       public java.lang.String getFontColor(); 
@@ -85,7 +84,7 @@ U kunt de tekst met een gesloten bijschrift opmaken met de methoden TVSDK.
 
 1. Voer een van de volgende handelingen uit om de stijlinstellingen te wijzigen:
 
-   * Gebruik de settermethode `MediaPlayer.setCCStyle`, die een geval van de `TextFormat` interface overgaat:
+   * De methode setter gebruiken `MediaPlayer.setCCStyle`, waarbij een instantie van de `TextFormat` interface:
 
       ```java
       /** 
@@ -101,9 +100,9 @@ U kunt de tekst met een gesloten bijschrift opmaken met de methoden TVSDK.
       public void setCCStyle(TextFormat textFormat) throws MediaPlayerException;
       ```
 
-   * Gebruik de klasse `TextFormatBuilder`, die afzonderlijke settermethoden definieert.
+   * Gebruik de `TextFormatBuilder` klasse, die afzonderlijke settermethoden definieert.
 
-      De interface `TextFormat` definieert een onveranderlijk object, zodat er alleen methoden getter en geen setters zijn. U kunt de opmaakparameters voor Closed Caption alleen instellen met de klasse `TextFormatBuilder`:
+      De `TextFormat` interface definieert een onveranderlijk object, zodat er alleen methoden getter en geen setters zijn. U kunt de opmaakparameters voor Closed Caption alleen instellen met de opdracht `TextFormatBuilder` klasse:
 
       ```java
       // set font type 
@@ -128,7 +127,7 @@ U kunt de tekst met een gesloten bijschrift opmaken met de methoden TVSDK.
 
       >[!IMPORTANT]
       >
-      >**Kleurinstellingen:** in Android TVSDK 2.X is de kleurstijl van gesloten bijschriften verbeterd. Dankzij deze verbetering kunt u Closed Caption-kleuren instellen met een hexadecimale tekenreeks die RGB-kleurwaarden vertegenwoordigt. De hexadecimale RGB-kleurrepresentatie is de bekende tekenreeks van 6 bytes die u gebruikt in toepassingen zoals Photoshop:
+      >**Kleurinstellingen:** In Android TVSDK 2.X is de kleurstijl van gesloten bijschriften verbeterd. Dankzij deze verbetering kunt u Closed Caption-kleuren instellen met een hexadecimale tekenreeks die de kleurwaarden van RGB vertegenwoordigt. De RGB hexadecimale kleurrepresentatie is de bekende tekenreeks van 6 bytes die u gebruikt in toepassingen zoals Photoshop:
       >
       >* FFFFFF = Zwart
       >* 000000 = wit
@@ -139,19 +138,16 @@ U kunt de tekst met een gesloten bijschrift opmaken met de methoden TVSDK.
       >
       >enzovoort.
       >
-      >Wanneer u in uw toepassing kleuropmaakgegevens doorgeeft aan `TextFormatBuilder`, gebruikt u nog steeds de `Color`-opsomming zoals voorheen, maar nu moet u `getValue()` aan de kleur toevoegen om de waarde als een tekenreeks op te halen. Bijvoorbeeld:
+      >Wanneer u in uw toepassing kleurstijlgegevens doorgeeft aan `TextFormatBuilder`, gebruikt u de `Color` opsomming zoals voorheen, maar nu moet u toevoegen `getValue()` op de kleur om de waarde als een tekenreeks op te halen. Bijvoorbeeld:
       >
       >
       ```
       >tfb = tfb.setBackgroundColor(TextFormat.Color.RED <b>.getValue()</b>);
       >```
 
-
-
-
 Het instellen van de stijl voor een Closed Caption is een asynchrone bewerking. Het kan dus enkele seconden duren voordat de wijzigingen op het scherm worden weergegeven.
 
-## Opties voor de stijl van een gesloten bijschrift {#section_6D685EC2D58C42A2BDDD574EDFCCC2A0}
+## Opties voor de stijl van gesloten bijschriften {#section_6D685EC2D58C42A2BDDD574EDFCCC2A0}
 
 U kunt meerdere opties voor de bijschriftstijlen opgeven. Deze opties overschrijven de stijlopties in de originele bijschriften.
 
@@ -173,7 +169,7 @@ public TextFormatBuilder(
 
 >[!TIP]
 >
->In opties die standaardwaarden definiëren (bijvoorbeeld `DEFAULT`), verwijst die waarde naar de instelling op het moment dat de ondertitel oorspronkelijk werd opgegeven.
+>In opties die standaardwaarden definiëren (bijvoorbeeld `DEFAULT`), verwijst die waarde naar wat het plaatsen was toen de titel oorspronkelijk werd gespecificeerd.
 
 <table frame="all" colsep="1" rowsep="1" id="table_87205DEFEE384AF4AF83952B15E18A42"> 
  <thead> 
@@ -185,25 +181,25 @@ public TextFormatBuilder(
  <tbody> 
   <tr rowsep="1"> 
    <td colname="1"> Lettertype </td> 
-   <td colname="2"> <p>Het lettertype. </p> <p>Kan alleen worden ingesteld op een waarde die wordt gedefinieerd door de opsomming <span class="codeph"> TextFormat.Font </span> en die bijvoorbeeld een vaste spatiëring met of zonder schreef vertegenwoordigt. </p> <p>Tip:  De werkelijke lettertypen die op een apparaat beschikbaar zijn, kunnen variëren en waar nodig worden vervangende lettertypen gebruikt. Monospace met schreef wordt typisch gebruikt als substituut, hoewel deze substitutie systeemspecifiek kan zijn. </p> </td> 
+   <td colname="2"> <p>Het lettertype. </p> <p>Kan alleen worden ingesteld op een waarde die wordt gedefinieerd door de <span class="codeph"> TextFormat.Font </span> opsomming en vertegenwoordigt, bijvoorbeeld, monospaced met of zonder series. </p> <p>Tip: De werkelijke lettertypen die op een apparaat beschikbaar zijn, kunnen variëren en waar nodig worden vervangende lettertypen gebruikt. Monospace met schreef wordt typisch gebruikt als substituut, hoewel deze substitutie systeemspecifiek kan zijn. </p> </td> 
   </tr> 
   <tr rowsep="1"> 
    <td colname="1"> Grootte </td> 
-   <td colname="2"> <p>De grootte van het bijschrift. </p> <p> Kan alleen worden ingesteld op een waarde die wordt gedefinieerd door de opsomming <span class="codeph"> TextFormat.Size </span>: 
+   <td colname="2"> <p>De grootte van het bijschrift. </p> <p> Kan alleen worden ingesteld op een waarde die wordt gedefinieerd door de <span class="codeph"> TextFormat.Size </span> opsomming: 
      <ul compact="yes" id="ul_544BFC7A46474A74839477108F1AB1E9"> 
-      <li id="li_A592ED46B8DF4D8FAD7AF3BD931A712B"> <span class="codeph"> MEDIUM  </span> - De standaardgrootte </li> 
-      <li id="li_4F8CEDE54965430EB707DD3D5B2E3F87"> <span class="codeph"> GROOT  </span> - ongeveer 30% groter dan gemiddeld </li> 
-      <li id="li_D78D823883F54D869118BAB58257E377"> <span class="codeph"> KLEIN  </span> - ongeveer 30% kleiner dan gemiddeld </li> 
-      <li id="li_9299C13408584A38835F8D91BD048083"> <span class="codeph"> STANDAARD  </span> - De standaardgrootte voor het bijschrift; gelijk aan medium </li> 
+      <li id="li_A592ED46B8DF4D8FAD7AF3BD931A712B"> <span class="codeph"> MEDIUM </span> - De standaardgrootte </li> 
+      <li id="li_4F8CEDE54965430EB707DD3D5B2E3F87"> <span class="codeph"> GROOT </span> - Ongeveer 30% groter dan gemiddeld </li> 
+      <li id="li_D78D823883F54D869118BAB58257E377"> <span class="codeph"> KLEIN </span> - Ongeveer 30% kleiner dan gemiddeld </li> 
+      <li id="li_9299C13408584A38835F8D91BD048083"> <span class="codeph"> STANDAARD </span> - De standaardgrootte voor het bijschrift; gelijk aan medium </li> 
      </ul> </p> </td> 
   </tr> 
   <tr rowsep="1"> 
    <td colname="1"> Fontrand </td> 
-   <td colname="2"> <p>Het effect dat voor de fontrand wordt gebruikt, zoals verhoogd of geen. </p> <p>Kan alleen worden ingesteld op een waarde die wordt gedefinieerd door de opsomming <span class="codeph"> TextFormat.FontEdge </span>. </p> </td> 
+   <td colname="2"> <p>Het effect dat voor de fontrand wordt gebruikt, zoals verhoogd of geen. </p> <p>Kan alleen worden ingesteld op een waarde die wordt gedefinieerd door de <span class="codeph"> TextFormat.FontEdge </span> opsomming. </p> </td> 
   </tr> 
   <tr rowsep="1"> 
    <td colname="1"> Fontkleur </td> 
-   <td colname="2"> <p>De fontkleur. </p> <p>Kan alleen worden ingesteld op een waarde die wordt gedefinieerd door de opsomming <span class="codeph"> TextFormat.Color </span>. </p> </td> 
+   <td colname="2"> <p>De fontkleur. </p> <p>Kan alleen worden ingesteld op een waarde die wordt gedefinieerd door de <span class="codeph"> TextFormat.Color </span> opsomming. </p> </td> 
   </tr> 
   <tr rowsep="1"> 
    <td colname="1"> Randkleur </td> 
@@ -219,15 +215,15 @@ public TextFormatBuilder(
   </tr> 
   <tr rowsep="1"> 
    <td colname="1"> Dekking van lettertype </td> 
-   <td colname="2"> <p>De dekking van de tekst. </p> <p>Uitgedrukt als een percentage tussen 0 (volledig transparant) en 100 (volledig dekkend). <span class="codeph"> DEFAULT_OPACITY  </span> voor het lettertype is 100. </p> </td> 
+   <td colname="2"> <p>De dekking van de tekst. </p> <p>Uitgedrukt als een percentage tussen 0 (volledig transparant) en 100 (volledig dekkend). <span class="codeph"> DEFAULT_OPACITY </span> voor het lettertype is 100. </p> </td> 
   </tr> 
   <tr rowsep="1"> 
    <td colname="1"> Achtergronddekking </td> 
-   <td colname="2"> <p>De dekking van de cel van het achtergrondteken. </p> <p>Uitgedrukt als een percentage tussen 0 (volledig transparant) en 100 (volledig dekkend). <span class="codeph"> DEFAULT_OPACITY  </span> voor de achtergrond is 100. </p> </td> 
+   <td colname="2"> <p>De dekking van de cel van het achtergrondteken. </p> <p>Uitgedrukt als een percentage tussen 0 (volledig transparant) en 100 (volledig dekkend). <span class="codeph"> DEFAULT_OPACITY </span> voor de achtergrond 100. </p> </td> 
   </tr> 
   <tr rowsep="1"> 
    <td colname="1"> Vuldekking </td> 
-   <td colname="2"> <p>De dekking van de achtergrond van het bijschriftvenster. </p> <p>Uitgedrukt als een percentage tussen 0 (volledig transparant) en 100 (volledig dekkend). <span class="codeph"> DEFAULT_OPACITY  </span> voor vulling is 0. </p> </td> 
+   <td colname="2"> <p>De dekking van de achtergrond van het bijschriftvenster. </p> <p>Uitgedrukt als een percentage tussen 0 (volledig transparant) en 100 (volledig dekkend). <span class="codeph"> DEFAULT_OPACITY </span> for fill is 0. </p> </td> 
   </tr> 
   <tr rowsep="1"> 
    <td colname="1"> Onderste inzet </td> 

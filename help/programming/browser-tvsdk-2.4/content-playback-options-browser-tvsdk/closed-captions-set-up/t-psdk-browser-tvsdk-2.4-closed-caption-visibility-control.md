@@ -1,16 +1,15 @@
 ---
 description: U kunt de zichtbaarheid van gesloten bijschriften bepalen. Wanneer de zichtbaarheid is ingeschakeld, wordt de geselecteerde track weergegeven.
 title: Zichtbaarheid van ondertiteling beheren
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: e74c0344-43f3-4ed7-bbf2-d89dd3df8a33
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '122'
 ht-degree: 0%
 
 ---
 
-
-# Zichtbaarheid van een gesloten bijschrift besturen{#control-closed-caption-visibility}
+# Zichtbaarheid van ondertiteling beheren{#control-closed-caption-visibility}
 
 U kunt de zichtbaarheid van gesloten bijschriften bepalen. Wanneer de zichtbaarheid is ingeschakeld, wordt de geselecteerde track weergegeven.
 
@@ -22,7 +21,6 @@ Als Closed Caption-tekst wordt weergegeven wanneer de speler de zoekmodus opent,
 
 >[!TIP]
 >
->De zichtbaarheidswaarden voor gesloten bijschriften worden bepaald met `MediaPlayer.VISIBLE` en `MediaPlayer.INVISIBLE`.
+>De zichtbaarheidswaarden voor gesloten bijschriften worden beheerd met `MediaPlayer.VISIBLE` en `MediaPlayer.INVISIBLE`.
 
-1. Gebruik de eigenschap `MediaPlayer.ccVisibility` om toegang te krijgen tot de huidige zichtbaarheidsinstelling voor de gesloten bijschriften.
-
+1. Gebruik de `MediaPlayer.ccVisibility` eigenschap voor toegang tot de huidige zichtbaarheidsinstelling voor de gesloten bijschriften.

@@ -3,7 +3,6 @@ title: Fouten opsporen in koppen
 description: Fouten opsporen in koppen
 copied-description: true
 exl-id: 42c19089-2c61-4622-b53a-c28b8d495ef8
-translation-type: tm+mt
 source-git-commit: 3e63c187f12d1bff53370bbcde4d6a77f58f3b4f
 workflow-type: tm+mt
 source-wordcount: '257'
@@ -11,7 +10,7 @@ ht-degree: 7%
 
 ---
 
-# Foutopsporingskoppen (X-ADBE-AI-X1) {#debugging-headers}
+# Foutopsporing in koppen (X-ADBE-AI-X1) {#debugging-headers}
 
 SSAI verzendt de kopballen van HTTP die kunnen worden gebruikt om informatie te verzamelen en prestaties voor productiesessies te bepalen, die in X-ADBE-AI-X1 kopbal worden gevestigd.
 
@@ -23,7 +22,7 @@ De velden worden als volgt beschreven:
 | Naam | Beschrijving | Voorbeeld |
 |--- |--- |--- |
 | isActivePreroll | Of een advertentieoproep voor de prullenbak is verzonden | 0 |
-| isActiveMidroll | Of een ad call for midroll werd verzonden | 3 |
+| isActiveMidroll | Of een ad call for midroll werd verzonden | 1 |
 | Aanvraag-id | Interne SSAI | 1594181097704 |
 | Sessie-id | Sessie-id van de aanvraag | 15126333-5ba9-49b8-a219-4f37e60d259c |
 | Type stream | u=variant, l=live, v=vod | v |

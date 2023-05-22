@@ -1,35 +1,34 @@
 ---
 description: U kunt HTML-overlays met StageVideo gebruiken om UI-elementen weer te geven in het videovlak van de weergavelijst Flash. Dit vlak bevindt zich boven het StageVideo-vlak, zodat StageVideo altijd achter alle Flash-weergaveoverzichtelementen wordt weergegeven.
 title: StageVideo- en HTML-overlays
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: 6beda4c8-0981-4a38-bd5e-5714b9ec7efa
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '260'
 ht-degree: 0%
 
 ---
 
-
 # StageVideo- en HTML-overlays{#stagevideo-and-html-overlays}
 
 U kunt HTML-overlays met StageVideo gebruiken om UI-elementen weer te geven in het videovlak van de weergavelijst Flash. Dit vlak bevindt zich boven het StageVideo-vlak, zodat StageVideo altijd achter alle Flash-weergaveoverzichtelementen wordt weergegeven.
 
-HTML-overlays zijn UI-elementen die u in het weergavevlak Flash kunt weergeven op video die wordt gerenderd door `StageVideo` op een eigen vlak. Vóór Flash 15 kon u geen HTML-overlays gebruiken wanneer hardwareversnelling niet beschikbaar was. Vanaf Flash 15 worden HTML-overlays weergegeven wanneer `StageVideo` terugvalt op softwarerendering.
+HTML-overlays zijn UI-elementen die u in het Flash-weergavevlak kunt weergeven op video die wordt gerenderd door `StageVideo` op zijn eigen vliegtuig. Vóór Flash 15 kon u geen HTML-overlays gebruiken wanneer hardwareversnelling niet beschikbaar was. Vanaf Flash 15 worden HTML-overlays weergegeven wanneer `StageVideo` gaat terug naar softwarerendering.
 
 >[!IMPORTANT]
 >
->Afhankelijk van de mogelijkheden van uw systeem kunnen de prestaties in meer of mindere mate afnemen wanneer u HTML-overlays gebruikt.
+>Afhankelijk van de mogelijkheden van uw systeem, kunnen de prestaties tot een grotere of lagere graad verminderen wanneer u HTML overlays gebruikt.
 
 Overweeg de volgende informatie:
 
 * In Flash Player 15:
 
    * U kunt HTML-overlays gebruiken, ongeacht of hardwareversnelling beschikbaar is.
-   * Als u HTML-overlays wilt gebruiken, stelt u `wmode` in op `opaque`.
+   * Als u HTML-bedekkingen wilt gebruiken, stelt u `wmode` tot `opaque`.
 
 * In Flash Player 14:
 
-   * Als hardwareversnelling beschikbaar is, bevindt `StageVideo` zich onder de weergavelijst Flash, zodat u HTML-overlays kunt gebruiken.
+   * Wanneer hardwareversnelling beschikbaar is, `StageVideo` bevindt zich onder het weergaveoverzicht Flash, zodat u HTML-overlays kunt gebruiken.
    * Wanneer hardwareversnelling niet beschikbaar is, wordt video weergegeven boven op alle andere elementen in de browser, waardoor het gebruik van HTML-overlays wordt voorkomen.
 
 Hier volgen de minimale browservereisten voor het gebruik van HTML-overlays met `StageVideo`:
@@ -46,4 +45,3 @@ Hier volgen de minimale browservereisten voor het gebruik van HTML-overlays met 
    >[!IMPORTANT]
    >
    >Chrome Pepper in Windows XP en Windows Vista wordt niet ondersteund.
-

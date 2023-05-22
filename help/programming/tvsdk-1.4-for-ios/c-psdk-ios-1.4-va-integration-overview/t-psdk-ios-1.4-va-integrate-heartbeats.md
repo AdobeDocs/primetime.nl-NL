@@ -1,5 +1,5 @@
 ---
-description: U kunt de speler configureren om het videogebruik te volgen en te analyseren.
+description: U kunt uw speler configureren om het videogebruik te volgen en te analyseren.
 title: Videoanalysemogelijkheden initialiseren en configureren
 exl-id: dbb1e0b4-2a9e-4687-952d-4772440c1643
 source-git-commit: 3bbf70e07b51585c9b53f470180d55aa7ac084bc
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Videoanalysemogelijkheden initialiseren en configureren{#initialize-and-configure-video-analytics}
 
-U kunt de speler configureren om het videogebruik te volgen en te analyseren.
+U kunt uw speler configureren om het videogebruik te volgen en te analyseren.
 
 Controleer of u het volgende hebt voordat u video-tracking (videohartslagen) activeert:
 
@@ -21,16 +21,16 @@ Controleer of u het volgende hebt voordat u video-tracking (videohartslagen) act
 <table id="table_3565328ABBEE4605A92EAE1ADE5D6F84"> 
  <tbody> 
   <tr> 
-   <td colname="col1"> <span class="filepath"> ADBMobileConfig.json  </span> </td> 
-   <td colname="col2"> <p>Belangrijk:  Dit JSON-configuratiebestand moet <span class="codeph"> ADBMobileConfig.json </span> blijven. De naam en het pad van dit configuratiebestand kunnen niet worden gewijzigd. Het pad naar dit bestand moet <span class="codeph"> &lt;source root&gt;/AdobeMobile </span> zijn. </p> </td> 
+   <td colname="col1"> <span class="filepath"> ADBMobileConfig.json </span> </td> 
+   <td colname="col2"> <p>Belangrijk: De naam van dit JSON-configuratiebestand moet behouden blijven <span class="codeph"> ADBMobileConfig.json </span>. De naam en het pad van dit configuratiebestand kunnen niet worden gewijzigd. Het pad naar dit bestand moet <span class="codeph"> &lt;source root=""&gt;/AdobeMobile </span>. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <span class="codeph"> Het eindpunt van de  </span> trackingserver van AppMeasurement </td> 
+   <td colname="col1"> <span class="codeph"> AppMeasurement </span> eindpunt van tekstserver </td> 
    <td colname="col2"> De URL van het achterste eindpunt van de Adobe Analytics-verzameling (voorheen SiteCatalyst). </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Het servereindpunt voor videoanalyse bijhouden </td> 
-   <td colname="col2"> De URL van het back-end verzameleindpunt van de videoanalyse. Dit is waar alle video hartslag het volgen vraag wordt verzonden. <p>Tip:  De URL van de server voor het bijhouden van bezoekers is gelijk aan de URL van de analytische trackingserver. Voor informatie over het uitvoeren van de Dienst van identiteitskaart van de Bezoeker, zie <a href="https://experienceleague.adobe.com/docs/id-service/using/implementation/setup-target.html?lang=en" format="html" scope="external"> de Dienst </a> van identiteitskaart uitvoeren. </p> </td> 
+   <td colname="col2"> De URL van het back-end verzameleindpunt van de videoanalyse. Dit is waar alle video hartslag het volgen vraag wordt verzonden. <p>Tip: De URL van de server voor het bijhouden van bezoekers is gelijk aan de URL van de analytische trackingserver. Voor informatie over het uitvoeren van de Dienst van identiteitskaart van de Bezoeker, zie <a href="https://experienceleague.adobe.com/docs/id-service/using/implementation/setup-target.html?lang=en" format="html" scope="external"> Id-service implementeren </a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Accountnaam </td> 
@@ -42,14 +42,14 @@ Controleer of u het volgende hebt voordat u video-tracking (videohartslagen) act
   </tr> 
   <tr> 
    <td colname="col1"> Uitgever </td> 
-   <td colname="col2"> Dit is de uitgevers-id die door hun Adobe-vertegenwoordiger aan klanten wordt geleverd. <p>Tip:  Deze id is niet alleen een tekenreeks met de naam merk/televisie. </p> </td> 
+   <td colname="col2"> Dit is de uitgevers-id die door hun Adobe-vertegenwoordiger aan klanten wordt geleverd. <p>Tip: Deze id is niet alleen een tekenreeks met de naam merk/televisie. </p> </td> 
   </tr> 
  </tbody> 
 </table>
 
 U kunt als volgt video bijhouden in uw speler configureren:
 
-1. Bevestig dat de lading-tijd opties in het `ADBMobileConfig.json` middeldossier correct zijn.
+1. Bevestig dat opties voor laadtijd in het dialoogvenster `ADBMobileConfig.json` resource file is correct.
 
    ```
    { 
@@ -82,14 +82,14 @@ U kunt als volgt video bijhouden in uw speler configureren:
 
    Opties voor laadtijd configureren:
 
-   1. Bevestig dat het `ADBMobileConfig.json`-bestand de juiste waarden bevat die door Adobe worden opgegeven.
-   1. Bevestig dat dit bestand zich in de map `AdobeMobile` bevindt.
+   1. Bevestig dat de `ADBMobileConfig.json` Het bestand bevat de juiste waarden die door Adobe worden opgegeven.
+   1. Bevestig dat dit bestand zich bevindt in het dialoogvenster `AdobeMobile` map.
 
       Deze map moet zich in de hoofdmap van de bronstructuur van de toepassing bevinden.
    1. Compileer en bouw uw toepassing.
    1. Implementeer en voer de gebundelde toepassing uit.
 
-      Voor meer informatie over deze montages AppMeasurement, zie [Metende Video in Adobe Analytics](https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html?lang=en).
+      Voor meer informatie over deze instellingen van AppMeasurement raadpleegt u [Video meten in Adobe Analytics](https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html?lang=en).
 1. Metagegevens voor het bijhouden van videokaarten initialiseren en configureren.
 
    >[!IMPORTANT]

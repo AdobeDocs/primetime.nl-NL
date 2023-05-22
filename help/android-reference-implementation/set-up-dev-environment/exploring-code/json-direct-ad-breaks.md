@@ -1,20 +1,19 @@
 ---
 title: JSON-object voor directe en automatische regeleinden
 description: Geeft het JSON-object in detail wanneer de tekstwaarde direct is en wordt onderbroken
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: d5e3ddd5-b963-4e7d-b04b-087d4fe96faf
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '164'
 ht-degree: 0%
 
 ---
 
-
-# JSON-object voor directe ad-einden{#json-object-for-direct-ad-breaks}
+# JSON-object voor directe en automatische regeleinden{#json-object-for-direct-ad-breaks}
 
 In het volgende codeblok worden de details van het JSON-object gedefinieerd wanneer de waarde van het type direct is en wordt afgebroken.
 
-De `MetadataNode` die door `IFeedItemAdapter:getStreamMetadata()` is geretourneerd, bevat een item met de sleutel van het type `com.adobe.mediacore.metadata.DefaultMetadataKeys.JSON_METADATA_KEY` en de waarde van een tekenreeksrepresentatie van de details hieronder in de waarde van het JSON-object.
+De `MetadataNode` geretourneerd door `IFeedItemAdapter:getStreamMetadata()` bevat een item met het type key `com.adobe.mediacore.metadata.DefaultMetadataKeys.JSON_METADATA_KEY` en waarde van een tekenreeksrepresentatie van de details van de JSON-objectwaarde hieronder.
 
 ```
 “metadata”: { 
@@ -50,10 +49,10 @@ De `MetadataNode` die door `IFeedItemAdapter:getStreamMetadata()` is geretournee
 
 | Eigenschap | Beschrijving |
 |---|---|
-| `tag` | Een tekenreeks die wordt toegewezen aan het tagveld in `com.adobe.mediacore.timeline.advertising.AdBreak`. |
-| `time` | Geeft de begintijd voor het ad-einde aan, wordt toegewezen aan het tijdveld in `com.adobe.mediacore.timeline.advertising.AdBreak`. De waarde 0 geeft een advertentie vóór de rol aan. |
-| `replace` | Hiermee wordt de vervangingsduur van het advertentiepad aangegeven. Deze wordt toegewezen aan het veld `replaceDuration` in `com.adobe.mediacore.timeline.advertising.AdBreak`. |
-| `ad-list` | Een lijst met advertenties die tijdens de opgegeven advertentie-einde moeten worden afgespeeld, verwijst naar het veld `List<Ad>` in `com.adobe.mediacore.timeline.advertising.AdBreak`. |
+| `tag` | Een tekenreeks die is toegewezen aan het tagveld in `com.adobe.mediacore.timeline.advertising.AdBreak`. |
+| `time` | Geeft de begintijd aan voor het advertentietak, wordt toegewezen aan het tijdveld in `com.adobe.mediacore.timeline.advertising.AdBreak`. De waarde 0 geeft een advertentie vóór de rol aan. |
+| `replace` | Geeft de vervangingsduur van het advertentiepakket aan en koppelt deze aan de `replaceDuration` veld in `com.adobe.mediacore.timeline.advertising.AdBreak`. |
+| `ad-list` | Een lijst met advertenties die tijdens de opgegeven advertentie-einde moeten worden afgespeeld, verwijst naar de `List<Ad>` veld in `com.adobe.mediacore.timeline.advertising.AdBreak`. |
 
 Het volgende codeblok definieert het JSON-object voor de array met advertenties.
 
@@ -75,6 +74,5 @@ Het volgende codeblok definieert het JSON-object voor de array met advertenties.
 | Eigenschap | Beschrijving |
 |---|---|
 | `url` | De URL naar de advertentie-inhoud, verwijst naar het URL-veld in `com.adobe.mediacore.timeline.advertising.Ad`. |
-| `duration` | De duur van de advertentie, wordt toegewezen aan het duurveld in `com.adobe.mediacore.timeline.advertising.Ad`. |
+| `duration` | De duur van de advertentie, verwijst naar het veld Duur in `com.adobe.mediacore.timeline.advertising.Ad`. |
 | `tag` | Een beschrijvende tekenreeks. |
-

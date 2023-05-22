@@ -1,16 +1,15 @@
 ---
 description: Video Analytics Manager stelt deze klassen beschikbaar om video het volgen in uw speler uit te voeren.
 title: Gerelateerde API-documentatie
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: ad806952-5f51-4f43-8ca3-cbd416789a43
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '85'
 ht-degree: 0%
 
 ---
 
-
-# Verwante API-documentatie {#related-api-documentation}
+# Gerelateerde API-documentatie {#related-api-documentation}
 
 Video Analytics Manager stelt deze klassen beschikbaar om video het volgen in uw speler uit te voeren.
 

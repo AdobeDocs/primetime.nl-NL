@@ -1,16 +1,15 @@
 ---
 description: TVSDK ondersteunt zoeken naar een specifieke positie (tijd) waar de stream een afspeellijst met schuifvensters is, in video op aanvraag (VOD) en live streams.
 title: Een zoekbalk weergeven met de huidige afspeelpositie
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: d5bc3a54-7dfd-435e-abb4-323639732e0a
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '314'
 ht-degree: 0%
 
 ---
 
-
-# Een zoekscrubbalk weergeven met de huidige afspeelpositie {#display-a-seek-scrub-bar-with-the-current-playback-position}
+# Een zoekbalk weergeven met de huidige afspeelpositie {#display-a-seek-scrub-bar-with-the-current-playback-position}
 
 TVSDK ondersteunt zoeken naar een specifieke positie (tijd) waar de stream een afspeellijst met schuifvensters is, in video op aanvraag (VOD) en live streams.
 
@@ -29,8 +28,8 @@ TVSDK ondersteunt zoeken naar een specifieke positie (tijd) waar de stream een a
 1. Wacht tot de speler een geldige zoekstatus heeft.
 
    De geldige statussen worden BEREID, VOLTOOID, GEPAUZEERD EN AFGESPEELD.
-1. Gebruik de native `SeekBar` om `OnSeekBarChangeListener` in te stellen, die bepaalt wanneer de gebruiker scrubt.
-1. Geef de gewenste zoekpositie (milliseconden) door aan de methode `MediaPlayer.seek`.
+1. De native `SeekBar` in te stellen `OnSeekBarChangeListener`, die bepaalt wanneer de gebruiker scrubt.
+1. Geef de gewenste zoekpositie (milliseconden) door aan de `MediaPlayer.seek` methode.
 
    ```java
    void seek(long position) throws MediaPlayerException;
@@ -42,11 +41,11 @@ TVSDK ondersteunt zoeken naar een specifieke positie (tijd) waar de stream een a
    >
    >Met deze stap wordt de afspeelkop naar een nieuwe positie in de stream verplaatst, maar de uiteindelijke berekende positie kan afwijken van de opgegeven zoekpositie.
 
-1. Luister naar `MediaPlayerEvent.OPERATION_FAILED` en voer de juiste handelingen uit.
+1. Luisteren naar `MediaPlayerEvent.OPERATION_FAILED` en nemen passende maatregelen.
 
    Deze gebeurtenis geeft de juiste waarschuwing door. Uw toepassing bepaalt hoe u verder wilt gaan. Tot de opties behoren het opnieuw zoeken of het afspelen vanaf de vorige positie.
 
-1. Wacht op TVSDK om `MediaPlayerEvent.SEEK_END` callback te roepen.
+1. Wacht tot TVSDK de `MediaPlayerEvent.SEEK_END` callback.
 1. Haal de definitieve aangepaste spelpositie terug gebruikend de positieparameter van callback.
 
    Dit is belangrijk omdat de werkelijke startpositie na de zoekactie kan verschillen van de gewenste positie. De regels, inclusief het afspeelgedrag, worden beïnvloed wanneer een zoekopdracht of een andere herpositionering halverwege een advertentie-einde eindigt of wanneer afbrekingen worden overgeslagen en onderbroken.

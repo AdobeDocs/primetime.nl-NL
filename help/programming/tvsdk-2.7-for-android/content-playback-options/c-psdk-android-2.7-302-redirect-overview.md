@@ -1,14 +1,13 @@
 ---
 description: 302 optimalisatie voor omleiding minimaliseert het aantal van 302 reacties voor omleiding, waardoor uw toepassing de taakverdeling effectiever kan uitvoeren.
 title: HTTP 302-herleidingsoptimalisatie
-translation-type: tm+mt
-source-git-commit: 89bdda1d4bd5c126f19ba75a819942df901183d1
+exl-id: fdbdc2b4-6c1a-4ab1-80e2-b5e079ffa906
+source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
 workflow-type: tm+mt
 source-wordcount: '100'
-ht-degree: 2%
+ht-degree: 0%
 
 ---
-
 
 # HTTP 302-herleidingsoptimalisatie {#http-redirect-optimization}
 
@@ -18,7 +17,7 @@ Als een hoofdmanifestverzoek wordt omgeleid, en optimalisering 302 in uw speler 
 
 ## 302 omleidingsoptimalisatie uitschakelen of inschakelen {#section_8977448B268E41D69A8F75B60EB9DA3B}
 
-Gebruik de eigenschap `useRedirectedUrl` om 302 omleiding in te schakelen ( `true`) of uit ( `false`).
+Gebruik de `useRedirectedUrl` eigenschap om 302 omleiding in te schakelen ( `true`) of uit ( `false`).
 
 <!--<a id="example_888749F70C8A43279D06A29BD68E7E4D"></a>-->
 
@@ -35,4 +34,3 @@ config.setNetworkConfiguration(networkConfiguration);
  
 //Use this config when loading the MediaPlayerItem or calling replaceCurrentResource
 ```
-
