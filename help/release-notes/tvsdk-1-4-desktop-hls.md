@@ -5,9 +5,9 @@ contentOwner: asgupta
 products: SG_PRIMETIME
 topic-tags: release-notes
 exl-id: 5e227c99-acf6-4b16-a35a-68e2928fdbfd
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 1bc2f6c230c262babf2958c32fee31afcad04c2f
 workflow-type: tm+mt
-source-wordcount: '5195'
+source-wordcount: '5194'
 ht-degree: 0%
 
 ---
@@ -102,7 +102,7 @@ AES-codering op basis van voorbeelden wordt nu ondersteund.
 
 * Zendesk #33777 - Localhost token SWF voor DHLS distribution build expired.
 
-   Het localhost-token bijwerken voor PMP-demo op DHLS.
+  Het localhost-token bijwerken voor PMP-demo op DHLS.
 
 ### Opgeloste problemen in de vorige releases {#resolved-issues-previous}
 
@@ -110,11 +110,11 @@ AES-codering op basis van voorbeelden wordt nu ondersteund.
 
 * Zendesk #30731 - TVSDK speelt geen veelvoudige VPAID advertenties in een AdBreak.
 
-   Het afspelen van meerdere VPAID-advertenties in een AdBreak is opgelost.
+  Het afspelen van meerdere VPAID-advertenties in een AdBreak is opgelost.
 
 * Zendesk #29968 - Double Billboard.
 
-   De videospeler kan het laatste segment van een periode herhalen wanneer een schakelaar ABR gebeurt. Hierdoor werd het laatste segment van preroll soms herhaald. Dit is opgelost.
+  De videospeler kan het laatste segment van een periode herhalen wanneer een schakelaar ABR gebeurt. Hierdoor werd het laatste segment van preroll soms herhaald. Dit is opgelost.
 
 **Versie 1.4.35** (879)
 
@@ -124,31 +124,31 @@ AES-codering op basis van voorbeelden wordt nu ondersteund.
 
 * Zendesk #21701 - Verzend de oorspronkelijke creatieve URL voor het 1401 CRS-verzoek in plaats van de genormaliseerde URL.
 
-   Het probleem waarbij al herverpakte URL&#39;s worden aangevraagd voor transcodering is opgelost, zoals vereist door de CRS-back-end.
+  Het probleem waarbij al herverpakte URL&#39;s worden aangevraagd voor transcodering is opgelost, zoals vereist door de CRS-back-end.
 * Zendesk #26197 - Anamorfe compressie wordt niet afgespeeld met de gewenste weergaveresolutie.
 
-   **Opmerking**: Voor dit probleem is Flash Player 24.0.0.194 of hoger vereist.
+  **Opmerking**: Voor dit probleem is Flash Player 24.0.0.194 of hoger vereist.
 
-   De kwestie waar de ontbrekende ingangen in de aspectverhouding lijsten werden gebruikt om de outputbreedte te berekenen is opgelost.
+  De kwestie waar de ontbrekende ingangen in de aspectverhouding lijsten werden gebruikt om de outputbreedte te berekenen is opgelost.
 
 * Zendesk #26840 - HDCP-detectie mislukt op IE11 + Windows7 na tweede poging.
 
-   **Opmerking**: Voor dit probleem is Flash Player 24.0.0.218 of hoger vereist.
+  **Opmerking**: Voor dit probleem is Flash Player 24.0.0.218 of hoger vereist.
 
-   Dit probleem is opgelost door de verwerking van de hoofdwachtrij met berichten van AdobeCP te wijzigen om de hele wachtrij te doorlopen in plaats van alleen het eerste bericht te blokkeren.
+  Dit probleem is opgelost door de verwerking van de hoofdwachtrij met berichten van AdobeCP te wijzigen om de hele wachtrij te doorlopen in plaats van alleen het eerste bericht te blokkeren.
 
 * Zendesk #27460 - De nieuwe rekening Akamai kan geen POST CDN verzoek behandelen.
 
-   Het nieuwe CDN-account kan een CDN-aanvraag van een POST niet verwerken. Dit probleem is opgelost door de code bij te werken zodat de cdn.auditude.com-aanvraag GET is in plaats van POST.
+  Het nieuwe CDN-account kan een CDN-aanvraag van een POST niet verwerken. Dit probleem is opgelost door de code bij te werken zodat de cdn.auditude.com-aanvraag GET is in plaats van POST.
 * Zendesk #27619 - Flash loopt vast op Windows 10
 
-   **Opmerking**: Voor dit probleem is Flash Player 24.0.0.218 of hoger vereist.
+  **Opmerking**: Voor dit probleem is Flash Player 24.0.0.218 of hoger vereist.
 
-   Dit probleem is opgelost door een fout als gevolg van lange URL&#39;s te voorkomen.
+  Dit probleem is opgelost door een fout als gevolg van lange URL&#39;s te voorkomen.
 
 * Zendesk #28218 - Tracking event does not fire while the plackback from the resume point
 
-   Dit is hetzelfde probleem als in Zendesk #26592. Het probleem waarbij zoekbewerkingen zijn toegestaan wanneer de mediaspeler de status PREPARED voor VOD-streams heeft, is opgelost.
+  Dit is hetzelfde probleem als in Zendesk #26592. Het probleem waarbij zoekbewerkingen zijn toegestaan wanneer de mediaspeler de status PREPARED voor VOD-streams heeft, is opgelost.
 
 **Versie 1.4.32** (867)
 
@@ -194,7 +194,7 @@ Dit probleem is opgelost door de wijzigingen in de bitsnelheid in VideoAnalytics
 
 **Versie 1.4.28** (848)
 
-* Zendesk #25027 - Auditude werkt niet in release 1.4.27
+* Zendesk #25027 - Auditude werkt niet in desktopversie 1.4.27
 
 Dit probleem is opgelost door de code toe te voegen om AUDITUDE_METADATA_KEY te controleren en door AUDITUDE_METADATA_KEY en ADVERTISING_METADATA_KEY onderling verwisselbaar te maken.
 
@@ -380,7 +380,7 @@ Dit probleem is opgelost omdat het zich correct gedraagt en geen gebeurtenissen 
 
 **Opmerking**: Voor dit probleem is Flash Player 21.0.0.182 of hoger vereist.
 
-Het verzoek van de Audittegraad ontleedt AuditudeSettings voor douaneparameters wanneer het creëren van een advertentie-eenheid voor reclameverzoeken.
+Het verzoek van de Auditude ontleedt AuditudeSettings voor douaneparameters wanneer het creëren van een advertentie-eenheid voor reclameverzoeken.
 
 Dit gedrag is zodanig gewijzigd dat aangepaste parameters van het object Opportunity in de aanvraag worden opgenomen. Ook, kunnen de veelvoudige kansen met verschillende douaneparameters niet in één verzoek van de Auditude worden verpakt.
 
@@ -754,7 +754,7 @@ _playbackManager.pause();
 
    * PTPLAY-1634 - de zelfde Geabonneerde markering heeft verschillende timestamps in verschillende levende vensters. Wanneer levende vensters zich bewegen, zou de zelfde markering in elk van hen zelfde timestamps moeten hebben. Soms hebben dezelfde tags echter verschillende tijdstempels.
    * PTPLAY-28 - De tijdlijn van MediaPlayer bevat geen lege einden.
-   * Een bestand met interdomeinbeleid (crossdomain.xml) is vereist voor machtigingen om inhoud van een ander domein te streamen. [Een bestand crossdomain.xml instellen voor HTTP-streaming](https://www.adobe.com/devnet/adobe-media-server/articles/cross-domain-xml-for-streaming.html).
+   * Een bestand met interdomeinbeleid (crossdomain.xml) is vereist voor machtigingen om inhoud van een ander domein te streamen. [Een bestand crossdomain.xml instellen voor HTTP-streaming](https://helpx.adobe.com/adobe-media-server/dev/configure-dynamic-streaming-live-streaming.html).
    * Bug #3694203 - In een DVR-stream kan het zoeken vanuit een rol halverwege de rol naar een andere mid-roll advertentie leiden tot blokkering van de browser
    * Bug #3753725 - selectPolicyForSeekIntoAd houdt geen rekening als het ad-einde is gecontroleerd
    * Bug #3754529 - Pre-roll advertenties worden niet verwijderd uit de stream wanneer ze terug zoeken in een live DVR-stream

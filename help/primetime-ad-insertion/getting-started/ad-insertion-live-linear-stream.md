@@ -2,9 +2,9 @@
 title: Ad Insertion gebruiken in Live/Lineaire stream
 description: Ad Insertion gebruiken in Live/Lineaire stream
 exl-id: d56ed723-ec72-4bbd-befc-6858c7c9d800
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 1bc2f6c230c262babf2958c32fee31afcad04c2f
 workflow-type: tm+mt
-source-wordcount: '274'
+source-wordcount: '265'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ Primetime Ad Insertion ondersteunt een groot aantal standaard- en niet-standaard
 
 * DPI SCTE-35 (SCTE-35 verbeterde advertentiemarkeringen)
 
-* [Adobe Digital Program Inserting Signaling Specification](https://www.adobe.com/content/dam/acom/en/devnet/primetime/PrimetimeDigitalProgramInsertionSignalingSpecification.pdf)
+* [Adobe Digital Program Inserting Signaling Specification](assets/PrimetimeDigitalProgramInsertionSignalingSpecification.pdf)
 
 * Binair SCTE-35 (zowel HLS als DASH)
 

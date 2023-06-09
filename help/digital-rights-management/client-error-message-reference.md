@@ -2,9 +2,9 @@
 description: De DRM-clientfouten vormen een subset van de TVSDK-client-side fouten.
 title: Verwijzing naar DRM-foutbericht voor client
 exl-id: 3d74cb92-c0a7-4eab-91b8-7e60a9c33df4
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 1bc2f6c230c262babf2958c32fee31afcad04c2f
 workflow-type: tm+mt
-source-wordcount: '5185'
+source-wordcount: '5173'
 ht-degree: 1%
 
 ---
@@ -82,7 +82,7 @@ De DRM-clientfouten vormen een subset van de TVSDK-clientfouten, waarbij de DRM-
 | 3365 | IncognitoModeNotAllowed | Deze combinatie browser/platform staat het afspelen op Incognito niet toe met DRM beveiligd.<br>De software van de distributeur zou de gebruiker moeten adviseren om de wijze van Incognito weg te gaan of een verschillende browser te gebruiken. Zie voor meer informatie [DRM-fout 3365 oorzaak en resolutie](https://forums.adobe.com/thread/1266622). |
 | 3366 | BadParameter | De hostruntime heeft de Primetime DRM-bibliotheek aangeroepen met een ongeldige parameter. |
 | 3367 | BadSignature | De ondertekening van het M3U8-manifest is mislukt.<br>**Opmerking:** Deze foutcode wordt alleen geretourneerd door het iOS DRMNative Framework of AVE. |
-| 3368 | UserSettingsNoAccess | De gebruiker heeft de bewerking geannuleerd of heeft instellingen ingevoerd die de toegang tot het systeem blokkeren.<br>Deze fout wordt alleen gegenereerd in SWF versie 19 of hoger. Voor achterwaartse compatibiliteit wordt foutcode 3321 gegenereerd voor SWF versie 18 of lager.<br>De software van de distributeur moet de gebruiker begeleiden bij een uitleg van de manier waarop toegang tot niet-sandbox-plug-ins kan worden toegestaan. Zie voor meer informatie [Toegang tot niet-sandbox van Google Chrome geweigerd](https://helpx.adobe.com/adobe-access/kb/error-3321.html) en [DRM-fout 3322/3346/3368 in Chrome (problemen op de Infobalk)](https://forums.adobe.com/message/5520902). |
+| 3368 | UserSettingsNoAccess | De gebruiker heeft de bewerking geannuleerd of heeft instellingen ingevoerd die de toegang tot het systeem blokkeren.<br>Deze fout wordt alleen gegenereerd in SWF versie 19 of hoger. Voor achterwaartse compatibiliteit wordt foutcode 3321 gegenereerd voor SWF versie 18 of lager.<br>De software van de distributeur moet de gebruiker begeleiden bij een uitleg van de manier waarop toegang tot niet-sandbox-plug-ins kan worden toegestaan. Zie voor meer informatie [DRM-fout 3322/3346/3368 in Chrome (problemen op de Infobalk)](https://forums.adobe.com/message/5520902). |
 | 3369 | InterfaceNotAvailable | Een vereiste browserinterface is niet beschikbaar. Dit probleem treedt alleen op bij Pepper. De Flash-plug-in en de browserversie komen mogelijk niet overeen.<br>De software van de distributeur zou de gebruiker moeten begeleiden om ervoor te zorgen dat zij de recentste geïnstalleerde versie van browser hebben.<br>Als de incidentie van deze fout toeneemt en deze overeenkomt met een browserupdate die wordt vrijgegeven, gaat u naar Adobe. |
 | 3370 | ContentIdSettingsNoAccess | De gebruiker heeft de **Id&#39;s toestaan voor instelling van beveiligde inhoud.**<br>**Opmerking:** Deze fout is opgetreden bij Pepper-versies 13.0.0.x of hoger.<br>Het software- en/of bewerkingsteam van de distributeur moet de gebruiker begeleiden bij het inschakelen van de **Id&#39;s voor beveiligde inhoud toestaan** instellen.<br>Zie voor meer informatie [https://forums.adobe.com/message/6518323#6518323](https://forums.adobe.com/message/6518323#6518323). |
 | 3371 | NoOPConstraintInPixelConstraints | Onjuiste resolutie op basis van uitvoerbeschermingsbeperkingen in de licentie.<br>De software van de distributeur zou een foutenmelding moeten tonen. Vraag de gebruiker om het probleem aan de verdeler met een inhoudstitel te melden.<br>De distributeur moet inhoud opnieuw verpakken met een geldig beleid. |

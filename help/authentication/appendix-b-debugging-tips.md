@@ -2,9 +2,9 @@
 title: Bijlage B "Tips voor foutopsporing"
 description: Bijlage B "Tips voor foutopsporing"
 exl-id: ea024797-315e-47c0-99ea-1ac49c8c9697
-source-git-commit: bfc3ba55c99daba561255760baf273b6538a3c6e
+source-git-commit: 1bc2f6c230c262babf2958c32fee31afcad04c2f
 workflow-type: tm+mt
-source-wordcount: '173'
+source-wordcount: '170'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ Bij Adobe Primetime-verificatie worden tijdelijke gegevens opgeslagen, zoals bro
 
 - [De browsercache en cookies wissen](#clearing-the-browser-cache-and-cookies)
 - [LSO&#39;s-cache wissen](#clearing-lsos-cache)\
-    
+   
 
 ## De browsercache en cookies wissen {#clearing-the-browser-cache-and-cookies}
 
@@ -41,8 +41,7 @@ Selecteer ```entitlement.\*``` (afhankelijk van wat er wordt getest) en klik op 
 Adobe Primetime-verificatietechnici gebruiken de volgende tools voor foutopsporing:
 
 - Firebug - <http://www.getfirebug.com/>
-- Flashbug (werkt met de foutopsporingsversie van de Flash Player) <https://addons.mozilla.org/en-US/firefox/addon/14465/>
-- Live http-headers - <https://addons.mozilla.org/en-US/firefox/addon/3829/>
+- Flashbug (werkt met de foutopsporingsversie van de Flash Player)
 - Fiddler - <http://www.fiddler2.com/fiddler2/>
 - Charles - <http://www.charlesproxy.com/>
 - Wireshark - <http://www.wireshark.org/>

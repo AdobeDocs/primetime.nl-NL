@@ -3,9 +3,9 @@ title: Details voor de melding NATIVE_ERROR
 description: Details voor de melding NATIVE_ERROR
 copied-description: true
 exl-id: 08121879-d5a6-4224-b08d-9e66fe4d185a
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 1bc2f6c230c262babf2958c32fee31afcad04c2f
 workflow-type: tm+mt
-source-wordcount: '6888'
+source-wordcount: '6868'
 ht-degree: 2%
 
 ---
@@ -140,7 +140,7 @@ Wanneer TVSDK een native fout afhandelt, worden enkele of alle volgende waarden 
    <td colname="col2"></td> 
   </tr> 
   <tr> 
-   <td colname="col1"><span class="codeph"> AUDITUDE_ERROR_CODE</span> </td> 
+   <td colname="col1"><span class="codeph"> Auditude_ERROR_CODE</span> </td> 
    <td colname="col2"> Foutcode controle (nummer). </td> 
   </tr> 
  </tbody> 
@@ -349,7 +349,7 @@ Wanneer u DRM-fouten rapporteert aan Adobe, moet u ervoor zorgen dat u de `NATIV
    <td colname="col2"><span class="codeph"> AXS_I15nFailed </span> </td> 
    <td colname="col3"> <p>Het provisioning van de client met toetsen is mislukt. subErrorId bevat een client-specifieke, serverspecifieke of regelfout. </p> 
     <ul id="ul_98D919B9060A441AACB6106F6D8E8DA7"> 
-     <li id="li_DCAB00A8AC4A426CBBD377374B3F71AE">De software van de distributeur moet de bewerking ten minste één keer opnieuw proberen. <p>Als u Google Chrome in Windows gebruikt, geeft u uitleg over het toestaan van toegang voor insteekmodules die zich niet in een sandbox bevinden. Zie voor meer informatie <a href="https://helpx.adobe.com/adobe-access/kb/error-3321.html" format="html" scope="external"> Toegang tot niet-sandbox van Google Chrome geweigerd</a>. </p> </li> 
+     <li id="li_DCAB00A8AC4A426CBBD377374B3F71AE">De software van de distributeur moet de bewerking ten minste één keer opnieuw proberen. <p>Als u Google Chrome in Windows gebruikt, geeft u uitleg over het toestaan van toegang voor insteekmodules die zich niet in een sandbox bevinden. Toegang tot niet-sandbox van Google Chrome geweigerd</a>. </p> </li> 
      <li id="li_7FB7681FE32D444BB1BDBA3E5953A2C3">De distributeur moet een van de volgende taken uitvoeren: 
       <ul id="ul_486B64F187C44AE3B4775953A6142836"> 
        <li id="li_095B1D4CD051427CB2BFA7082B454056">Als de fout op verschillende platformen consistent is, moet u het probleem met Adobe doorverwijzen. </li> 
@@ -682,7 +682,7 @@ Wanneer u DRM-fouten rapporteert aan Adobe, moet u ervoor zorgen dat u de `NATIV
   <tr> 
    <td colname="col1"> 3368 </td> 
    <td colname="col2"><span class="codeph"> AXS_UserSettingsNoAccess</span> </td> 
-   <td colname="col3"> <p>De gebruiker heeft de bewerking geannuleerd of heeft instellingen ingevoerd die de toegang tot het systeem blokkeren. </p> <p>Deze fout wordt alleen gegenereerd wanneer de versie SWF 19 of hoger is. Voor achterwaartse compatibiliteit wordt 3321 gegenereerd wanneer de SWF versie 18 of lager is. </p> <p>De software van de distributeur moet de gebruiker begeleiden bij een uitleg van de manier waarop toegang tot niet-sandbox-plug-ins kan worden toegestaan. Zie voor meer informatie <a href="https://helpx.adobe.com/adobe-access/kb/error-3321.html" format="html" scope="external"> Toegang tot niet-sandbox van Google Chrome geweigerd</a> en <a href="https://forums.adobe.com/message/5520902" format="https" scope="external"> DRM-fout 3322/3346/3368 in Chrome (problemen op de Infobalk)</a>. </p> </td> 
+   <td colname="col3"> <p>De gebruiker heeft de bewerking geannuleerd of heeft instellingen ingevoerd die de toegang tot het systeem blokkeren. </p> <p>Deze fout wordt alleen gegenereerd wanneer de versie SWF 19 of hoger is. Voor achterwaartse compatibiliteit wordt 3321 gegenereerd wanneer de SWF versie 18 of lager is. </p> <p>De software van de distributeur moet de gebruiker begeleiden bij een uitleg van de manier waarop toegang tot niet-sandbox-plug-ins kan worden toegestaan. Toegang tot niet-sandbox van Google Chrome geweigerd</a> en <a href="https://forums.adobe.com/message/5520902" format="https" scope="external"> DRM-fout 3322/3346/3368 in Chrome (problemen op de Infobalk)</a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> 3369 </td> 
