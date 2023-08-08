@@ -31,7 +31,7 @@ ht-degree: 0%
       + [REST API Cookbook (Server-to-Server)](rest-api-cookbook-servertoserver.md)
       + [REST API Cookbook (client-naar-server)](rest-api-cookbook-clienttoserver.md)
       + Referentie voor rest-API {#rest-api-reference}
-         + [REST API-naslaggids](rest-api-reference.md)
+         + [REST API Reference](rest-api-reference.md)
          + [Registratiecode-aanvraag](registration-code-request.md)
          + [Registratierecord retourneren](return-registration-record.md)
          + [Registratierecord verwijderen](delete-registration-record.md)
@@ -54,11 +54,11 @@ ht-degree: 0%
       + JavaScript SDK {#javascriptsdk}
          + [JavaScript SDK - Overzicht](javascript-sdk-overview.md)
          + [JavaScript SDK Cookbook](javascript-sdk-cookbook.md)
-         + [JavaScript SDK API-naslaggids](javascript-sdk-api-reference.md)
+         + [JavaScript SDK API-naslag](javascript-sdk-api-reference.md)
          + Richtsnoeren {#js-sdk-guidelines}
             + [Aanmelding en afmelding zonder vernieuwen](refreshless-login-and-logout.md)
          + JavaScript-API {#js-api}
-            + [Vooraf autoriseren](js-preauthorize.md)
+            + [Voorvoegsel](js-preauthorize.md)
       + iOS/tvOS SDK {#ios-sdk}
          + [Overzicht iOS/tvOS SDK](iostvos-sdk-overview.md)
          + [iOS/tvOS SDK Cookbook](iostvos-sdk-cookbook.md)
@@ -68,7 +68,7 @@ ht-degree: 0%
             + Richtlijnen voor migratie {#migration-guidelines}
                + [Migratiehandleiding voor iOS/tvOS v3.x](iostvos-v3x-migration-guide.md)
          + iOS/tvOS API {#ios-tvos-api}
-            + [Vooraf autoriseren](preauthorize.md)
+            + [Voorvoegsel](preauthorize.md)
       + Android-SDK {#androidsdk}
          + [Overzicht van Android SDK](android-sdk-overview.md)
          + [Android SDK Cookbook](android-sdk-cookbook.md)
@@ -77,7 +77,7 @@ ht-degree: 0%
             + [Registratie van Android-toepassingen](android-application-registration.md)
             + [Android-SDK met dynamische clientregistratie](android-sdk-with-dynamic-client-registration.md)
          + Android-API{#androidapi}
-            + [Vooraf autoriseren](preauthorize-android.md)
+            + [Voorvoegsel](preauthorize-android.md)
       + Amazon FireOS SDK {#fireossdk}
          + [Amazon FireOS SSO - Handleiding voor het starten van de programma&#39;s](amazon-firetv-sso-programmer-kickoff-guide.md)
          + [Amazon FireOS SSO met Cookbook zonder client](amazon-fireos-sso-using-clientless-api-cookbook.md)
@@ -86,8 +86,8 @@ ht-degree: 0%
          + [Amazon FireOS API-naslaggids](amazon-fireos-native-client-api-reference.md)
          + [Amazon FireOS-toepassingsregistratie](amazon-fireos-application-registration.md)
          + [FireOS SDK met Dynamic Client-registratie](fireos-sdk-with-dynamic-client-registration.md)
-   + Platform SSO {#platform-sso}
-      + Apple SSO {#apple-sso}
+   + PLATFORM SSO {#platform-sso}
+      + APPLE SSO {#apple-sso}
          + [Apple SSO - Overzicht](apple-sso-overview.md)
          + [Apple SSO Cookbook (REST API)](apple-sso-cookbook-rest-api.md)
          + [Apple SSO Cookbook (iOS/tvOS SDK)](apple-sso-cookbook-iostvos-sdk.md)
@@ -139,10 +139,10 @@ ht-degree: 0%
       + [Dynamische clientregistratie](dynamic-client-registration.md)
       + [Dynamic Client-registratie-API](dynamic-client-registration-api.md)
       + [Dynamisch clientregistratiebeheer](dynamic-client-registration-management.md)
-   + Afbraakdienst {#degrn-service}
+   + Degradatiedienst {#degrn-service}
       + [Gradatie-API - overzicht](degradation-api-overview.md)
    + Privacygereedheid {#privacy-readiness}
-      + [Overzicht van privéondersteuning](privacy-supp-overview.md)
+      + [Overzicht van privé-ondersteuning](privacy-supp-overview.md)
       + [Een privacyverzoek indienen](make-privacy-req.md)
 + Tips en oplossingen {#tips-troubleshoot}
    + [MVPD&#39;s toestaan in het dialoogvenster Selectie](allow-mvpd-selectn-dialog.md)
@@ -183,14 +183,14 @@ ht-degree: 0%
       + [Uw omgeving instellen en testen in een proefversie](setting-up-your-environment-and-testing-in-prequal.md)
       + [Verificatie- en autorisatiestromen testen met de testsite Adobe API](test-authn-authz-flows-using-adobes-api-test-site.md)
    + Clientloze API {#clientless-api}
-      + [Clientless API-implementatie - foutcodes / berichten met mogelijke reden / oorzaak](clientless-api-implementation-error-codes--messages-with-probable-reason--cause.md)
+      + [Implementatie van de API zonder client - foutcodes / berichten met mogelijke reden / oorzaak](clientless-api-implementation-error-codes--messages-with-probable-reason--cause.md)
       + [Clientless API Flow bij afwezigheid van apparaat-id](clientless-api-flow-in-the-absence-of-device-id.md)
-      + [Zonder clip: Gebruik geen &#39;&amp;&#39;reg_code in /authenticate Request](clientless-avoid-using-reg-code-in-authenticate-request.md)
+      + [Zonder clip: gebruik geen &#39;&amp;&#39;reg_code in /authenticate Request](clientless-avoid-using-reg-code-in-authenticate-request.md)
       + [Primetime machtigingsservices inschakelen voor een programmeur op Xbox 360 en XboxOne-client](enabling-primetime-entitlement-services-for-a-programmer-on-xbox-360-and-xboxone-clientless-solution.md)
       + [Apparaattype en afmetingen zonder clip](benefits-of-using-the-clientless-devicetype-parameter-in-pass-metrics.md)
    + Gebruikerservaring {#user-exp}
       + [Hoe te om de MVPD login pagina van iFrame aan popup te migreren](migr-mvpd-login-iframe-popup.md)
-      + [Preflight-functie: Hoe te om, problemen op te lossen of de kwestie te bepalen toe te laten](preflight-feature.md)
+      + [Preflight-functie: Het probleem inschakelen, oplossen of vaststellen](preflight-feature.md)
    + Gereedschappen en hulpprogramma&#39;s {#tools-and-utilities}
       + [Charles Proxy gebruiken](using-charles-proxy.md)
    + Concepten {#concepts}

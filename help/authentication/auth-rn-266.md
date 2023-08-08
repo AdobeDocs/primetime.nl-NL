@@ -23,7 +23,7 @@ Op deze pagina worden nieuwe functies, wijzigingen en bekende problemen met deze
 
 ### Buildnummer {#build-number-266}
 
-Adobe Pass-verificatie: adobe pass-pass **2.66.0.1.**
+Adobe Pass-verificatie: adobe-pass-**2 66 0,1**
 Releasedatum: **11-07-2023 - 13-07-2023**
 
 ### Overzicht van release {#release-overview-266}
