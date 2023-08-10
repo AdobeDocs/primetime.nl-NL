@@ -2,10 +2,10 @@
 product: adobe primetime
 audience: end-user
 user-guide-title: Gelijktijdige bewaking van primetime
-user-guide-description: null
-source-git-commit: ac0c15b951f305e29bb8fa0bd45aa2c53de6ad15
+user-guide-description: Leer grenzen voor gelijktijdig gebruik in meerdere toepassingen te definiëren en af te dwingen.
+source-git-commit: d84723842e5c540ddf83c4007da09e44b4f08eff
 workflow-type: tm+mt
-source-wordcount: '133'
+source-wordcount: '145'
 ht-degree: 0%
 
 ---
