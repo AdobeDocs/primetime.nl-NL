@@ -2,7 +2,7 @@
 title: Dynamisch clientregistratiebeheer
 description: Dynamisch clientregistratiebeheer
 exl-id: 2c3ebb0b-c814-4b9e-af57-ce1403651e9e
-source-git-commit: bfc3ba55c99daba561255760baf273b6538a3c6e
+source-git-commit: 84a16ce775a0aab96ad954997c008b5265e69283
 workflow-type: tm+mt
 source-wordcount: '1338'
 ht-degree: 0%
@@ -17,9 +17,9 @@ ht-degree: 0%
 
 ## Overzicht {#overview}
 
-Met de algemene goedkeuring van [Aangepaste tabbladen van Android-chroom](https://developer.chrome.com/multidevice/android/customtabs){target_blanck} en [Apple Safari View-controller](https://developer.apple.com/documentation/safariservices/sfsafariviewcontroller){target_blanck} in de toepassingen van onze klanten, werken wij de stroom van de gebruikersauthentificatie in de Authentificatie van Adobe Primetime bij. Specifieker, kunnen wij niet meer het doel bereiken om de staat te handhaven zodat de stroom van de gebruikersagent van het voor authentiek verklaren van een abonnee MVPD tussen redirects kan worden gevolgd. Dit is eerder gedaan met HTTP cookies. Deze beperking is het stuurprogramma voor het starten van de migratie van alle API&#39;s naar OAuth 2.0 [RFC6749](https://tools.ietf.org/html/rfc6749){target_blanck}.
+Met de wijdverbreide goedkeuring van [Aangepaste tabbladen van Android-chroom](https://developer.chrome.com/multidevice/android/customtabs){target_blanck} en [Apple Safari View-controller](https://developer.apple.com/documentation/safariservices/sfsafariviewcontroller){target_blanck} in de toepassingen van onze klanten, werken wij de stroom van de gebruikersauthentificatie in de Authentificatie van Adobe Primetime bij. Specifieker, kunnen wij niet meer het doel bereiken om de staat te handhaven zodat de stroom van de gebruikersagent van het voor authentiek verklaren van een abonnee MVPD tussen redirects kan worden gevolgd. Dit is eerder gedaan met HTTP cookies. Deze beperking is het stuurprogramma waarmee u alle API&#39;s naar OAuth 2.0 gaat migreren [RFC6749](https://tools.ietf.org/html/rfc6749){target_blanck}.
 
-Met deze update worden Adobe Authentication Clients OAuth 2.0 clients en wordt een aangepaste OAuth 2.0-verificatieserver geïmplementeerd om aan de behoeften van Adobe Primetime Authentication Service te voldoen.
+Met deze update worden de Clients van de Authentificatie van de Adobe OAuth 2.0 cliënten en een douane OAuth 2.0 vergunningsserver wordt opgesteld om aan de behoeften van de Dienst van de Authentificatie van Adobe Primetime te voldoen.
 
 Opdat de toepassingen van de Cliënt de vergunning OAuth 2.0 gebruiken, moet de server dynamisch registreren om specifieke informatie (cliëntgeloofsbrieven) te verkrijgen om met het te kunnen communiceren. Als deel van het registratieproces, moet de cliënt een reeks ingebouwde meta-gegevens aan het eindpunt van de cliëntregistratie voorleggen.
 
@@ -37,7 +37,7 @@ Voorafgaand aan deze update, hadden wij twee mechanismen om toepassingen toe te 
 * native toepassingsclients, zoals iOS- en Android-toepassingen, worden geregistreerd via **ondertekende aanvrager** mechanisme
 
 
-Met het vergunningsmechanisme van de Registratie van de Cliënt, moet u uw toepassingen aan het dashboard van TVE toevoegen.
+Met het machtigingsmechanisme voor clientregistratie moet u uw toepassingen toevoegen aan het TVE-dashboard.
 
 Een klant die de nieuwe Android-SDK en de komende iOS SDK wil implementeren, heeft een softwareinstructie nodig. Een softwareinstructie identificeert een toepassing die is gemaakt op het TVE-dashboard.
 
@@ -63,13 +63,13 @@ Zoals u in de onderstaande afbeelding ziet, kunt u de volgende velden invullen:
 
 * **Toepassingsnaam** - de naam van de aanvraag
 
-* **Toegewezen aan kanaal** - de naam van uw kanaal, t</span>Waaraan deze toepassing is gekoppeld. De standaardinstelling in het vervolgkeuzemasker is **Alle kanalen.** Met de interface kunt u één kanaal of alle kanalen selecteren.
+* **Toegewezen aan kanaal** - de naam van uw kanaal, t</span>Waaraan deze toepassing is gekoppeld. De standaardinstelling in het vervolgkeuzemasker is **Alle kanalen.** Met de interface kunt u één kanaal of alle kanalen selecteren.
 
-* **Toepassingsversie** - standaard is deze ingesteld op &quot;1.0.0&quot;, maar we raden u ten zeerste aan deze te wijzigen met uw eigen toepassingsversie. Als u besluit de versie van uw toepassing te wijzigen, kunt u dit het beste doen door een nieuwe geregistreerde toepassing voor de toepassing te maken.
+* **Toepassingsversie** - standaard is deze ingesteld op &quot;1.0.0&quot;, maar we raden u ten zeerste aan deze te wijzigen met uw eigen toepassingsversie. Als u besluit de versie van uw toepassing te wijzigen, kunt u dit het beste doen door een nieuwe geregistreerde toepassing voor de toepassing te maken.
 
-* **Platforms van toepassingen** - de platforms voor de toepassing waarmee een koppeling tot stand moet worden gebracht. U kunt ze allemaal of meerdere waarden selecteren.
+* **Toepassingsplatforms** - de platforms voor de toepassing waarmee een koppeling tot stand moet worden gebracht. U kunt ze allemaal of meerdere waarden selecteren.
 
-* **Domeinnamen** - de domeinen waarmee de toepassing moet worden gekoppeld. De domeinen in de vervolgkeuzelijst zijn een verenigde selectie van alle domeinen vanuit al uw kanalen. U kunt meerdere domeinen selecteren in de lijst. De betekenis van de domeinen is omleiding van URL&#39;s [RFC6749](https://tools.ietf.org/html/rfc6749). In het clientregistratieproces kan de clienttoepassing vragen om een omleidings-URL te mogen gebruiken voor de voltooiing van de verificatiestroom. Wanneer een clienttoepassing een specifieke omleidings-URL aanvraagt, wordt deze gevalideerd tegen de domeinen die in deze geregistreerde toepassing zijn vermeld die aan de softwareinstructie zijn gekoppeld.
+* **Domeinnamen** - de domeinen waarmee de toepassing moet worden gekoppeld. De domeinen in de vervolgkeuzelijst zijn een verenigde selectie van alle domeinen vanuit al uw kanalen. U kunt meerdere domeinen selecteren in de lijst. De betekenis van de domeinen is omleiding van URL&#39;s [RFC6749](https://tools.ietf.org/html/rfc6749). In het clientregistratieproces kan de clienttoepassing vragen om een omleidings-URL te mogen gebruiken voor de voltooiing van de verificatiestroom. Wanneer een clienttoepassing een specifieke omleidings-URL aanvraagt, wordt deze gevalideerd tegen de domeinen die in deze geregistreerde toepassing zijn vermeld die aan de softwareinstructie zijn gekoppeld.
 
 
 ![](assets/new-reg-app.png)
@@ -94,7 +94,7 @@ Zoals hieronder getoond, wat hier lichtjes verschillend is, vergeleken bij de ze
 
 Na het creëren van de geregistreerde toepassing is er de mogelijkheid om een softwareverklaring te krijgen om de vergunningsserver als deel van een verzoek voor te stellen.
 
-Dit kan worden gedaan door of aan de Programmer of het Kanaal te navigeren waarvoor de geregistreerde toepassingen werden gecreeerd, waar zij vermeld zijn. 
+Dit kan worden gedaan door of aan de Programmer of het Kanaal te navigeren waarvoor de geregistreerde toepassingen werden gecreeerd, waar zij vermeld zijn.
 
 Zoals hieronder wordt beschreven, wordt elk item in de lijst geïdentificeerd met een naam, versie en symbolen voor platforms waaraan het is gekoppeld.
 
@@ -122,9 +122,9 @@ Als u klikt op de knop &quot;Downloaden&quot; in de lijst waarvoor een softwarei
 
 De naam van het bestand wordt op unieke wijze geïdentificeerd door het bestand vooraf te voorzien van &quot;software_statement&quot; en het huidige tijdstempel toe te voegen.
 
-Houd er rekening mee dat voor dezelfde geregistreerde toepassing elke keer verschillende softwareinstructies worden ontvangen wanneer op de downloadknop wordt geklikt, maar dat dit de eerder verkregen softwareinstructies voor deze toepassing niet ongeldig maakt. Dit gebeurt omdat ze ter plaatse worden gegenereerd, per actieverzoek.
+Houd er rekening mee dat voor dezelfde geregistreerde toepassing elke keer verschillende softwareinstructies worden ontvangen wanneer op de downloadknop wordt geklikt, maar dat dit de eerder verkregen softwareinstructies voor deze toepassing niet ongeldig maakt. Dit gebeurt omdat ze ter plaatse worden gegenereerd, per verzoek om actie.
 
-Er is er één **beperking** met betrekking tot de downloadactie. Als een softwareinstructie wordt gevraagd door kort na het maken van de geregistreerde toepassing op de knop Downloaden te klikken. Deze instructie is nog niet opgeslagen en de configuratiepunt is niet gesynchroniseerd. Hieronder wordt het volgende foutbericht weergegeven. 
+Er is er één **beperking** met betrekking tot de downloadactie. Als een softwareinstructie wordt gevraagd door kort na het maken van de geregistreerde toepassing op de knop Downloaden te klikken. Deze instructie is nog niet opgeslagen en de configuratiepunt is niet gesynchroniseerd. Hieronder wordt het volgende foutbericht weergegeven.
 
 ![](assets/error-sw-statement-notready.png)
 

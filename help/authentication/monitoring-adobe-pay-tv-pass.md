@@ -2,7 +2,7 @@
 title: Adobe Primetime-verificatie controleren
 description: Adobe Primetime-verificatie controleren
 exl-id: fb000e9d-b5aa-45b1-a914-9e419ec8a4d9
-source-git-commit: bfc3ba55c99daba561255760baf273b6538a3c6e
+source-git-commit: 84a16ce775a0aab96ad954997c008b5265e69283
 workflow-type: tm+mt
 source-wordcount: '188'
 ht-degree: 0%
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 ## Inleiding {#intro}
 
-Klanten kunnen [Nagios](http://www.nagios.org) of andere hulpmiddelen om te controleren of de authentificatie van Adobe Primetime omhoog of neer is. 
+Klanten kunnen [Nagios](http://www.nagios.org) of andere hulpmiddelen om te controleren of de authentificatie van Adobe Primetime omhoog of neer is.
 
 ## Eindpunten controleren {#monitoring-endpoints}
 
@@ -25,17 +25,17 @@ Klanten kunnen [Nagios](http://www.nagios.org) of andere hulpmiddelen om te cont
 
 * Het configuratieeindpunt voor alle platforms: `https://sp.auth.adobe.com/adobe-services/config/[your-config-ID]`- De optie is beschikbaar via HTTP of HTTPS (afhankelijk van de keuze die door de ontwikkelaar van de inhoudprovider is gemaakt). Als dit eindpunt mist betekent dat dat uw inhoud niet beschikbaar zal zijn over alle platforms en alle MVPDs. Voor Clientless REST API hebben wij ook het volgende eindpunt:  `https://api.auth.adobe.com/adobe-services/config your-config-ID]`.
 
-* De volgende eindpunten maken deel uit van het Adobe Primetime-verificatieweb SDK.  Als deze ontbreekt, betekent dit dat pay-TV-pass voor alle programmeurs en alle wegeigenschappen is ingesteld:
+* De volgende eindpunten maken deel uit van het Adobe Primetime-verificatieweb SDK.  Als deze ontbreekt, betekent dit dat pay-TV-pass voor alle programmeurs en alle wegeigenschappen is ingesteld:
 
    * `https://entitlement.auth.adobe.com/entitlement/v4/AccessEnabler.js`
    * `https://entitlement.auth.adobe.com/entitlement/js/AccessEnabler.js`
 
- 
+
 ### Eindpunten die u niet zou moeten controleren {#endpoints-not-monitor}
 
 * `https://sp.auth.adobe.com/sp/saml/SAMLAssertionConsumer`
 
-   U zult altijd een fout 503 krijgen, omdat dit eindpunt een reactie MVPD SAML op het vereist.
+  U zult altijd een fout 503 krijgen, omdat dit eindpunt een reactie MVPD SAML op het vereist.
 
 * Overige Entitlement-eindpunten - `adobe-services/1.0/authenticate/`, `adobe-services/1.0/deviceShortAuthorize`, `adobe-services/1.0/authorize`
 

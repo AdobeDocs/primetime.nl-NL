@@ -2,7 +2,7 @@
 title: Clientless API Flow bij afwezigheid van apparaat-id
 description: Clientless API Flow bij afwezigheid van apparaat-id
 exl-id: 6549a6d6-03a9-4d95-99fb-d3ada832323d
-source-git-commit: bfc3ba55c99daba561255760baf273b6538a3c6e
+source-git-commit: 84a16ce775a0aab96ad954997c008b5265e69283
 workflow-type: tm+mt
 source-wordcount: '238'
 ht-degree: 0%
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 ## Probleem
 
-Niet alle toepassingen voor slimme apparaten kunnen een unieke apparaat-id opgeven.  Aangezien deviceId een verplichte parameter is, keert de dienst een fout 400 terug als het niet wordt overgegaan.
+Niet alle toepassingen voor slimme apparaten kunnen een unieke apparaat-id opgeven.  Aangezien deviceId een verplichte parameter is, keert de dienst een fout 400 terug als het niet wordt overgegaan.
 
 
 ## Tijdelijke oplossing/oplossing
@@ -39,7 +39,7 @@ Nadat deze stappen zijn uitgevoerd, gebruikt Adobe Primetime-verificatie de UUID
 
 ## Permanente oplossing
 
-Adobe zal dit in een toekomstige release wijzigen door `deviceId` een optionele payload bij het maken van de reg-code en het gebruik van UUID als tokensleutel in plaats van `deviceId`, wanneer `deviceId` is niet aanwezig.
+Adobe zal dit in een toekomstige versie veranderen, door `deviceId` een optionele payload bij het maken van de reg-code en het gebruik van UUID als tokensleutel in plaats van `deviceId`, wanneer `deviceId` is niet aanwezig.
 
 <!--
 ## Related Information

@@ -2,7 +2,7 @@
 title: Registratierecord verwijderen
 description: Registratieresord verwijderen
 exl-id: 42707070-2e1f-4847-93fd-30025aef56c1
-source-git-commit: bfc3ba55c99daba561255760baf273b6538a3c6e
+source-git-commit: 84a16ce775a0aab96ad954997c008b5265e69283
 workflow-type: tm+mt
 source-wordcount: '152'
 ht-degree: 0%
@@ -19,24 +19,24 @@ ht-degree: 0%
 
 &lt;reggie_fqdn>:
 
-* Productie - [api.auth.adobe.com](http://api.auth.adobe.com/)
-* Staging - [api.auth-staging.adobe.com](http://api.auth-staging.adobe.com/)
+* Productie - [api.auth.adobe.com](http://api.auth.adobe.com/)
+* Staging - [api.auth-staging.adobe.com](http://api.auth-staging.adobe.com/)
 
 &lt;sp_fqdn>:
 
-* Productie - [api.auth.adobe.com](http://api.auth.adobe.com/)
-* Staging - [api.auth-staging.adobe.com](http://api.auth-staging.adobe.com/)
+* Productie - [api.auth.adobe.com](http://api.auth.adobe.com/)
+* Staging - [api.auth-staging.adobe.com](http://api.auth-staging.adobe.com/)
 
 </br>
 
 
 ## Beschrijving {#delete-record}
 
-Verwijdert de reg code-record en geeft de reg-code vrij voor hergebruik. 
+Verwijdert de reg code-record en geeft de reg-code vrij voor hergebruik.
 
-| Endpoint | Geroepen  </br>Door | Invoer   </br>Params | HTTP  </br>Methode | Antwoord | HTTP  </br>Antwoord |
+| Endpoint | Geroepen  </br>Door | Invoer   </br>Params | HTTP  </br>Methode | Antwoord | HTTP  </br>Antwoord |
 | --- | --- | --- | --- | --- | --- |
-| &lt;reggie_fqdn>/reggie/v1/{requestId}/regcode/{registrationCode}</br></br>Bijvoorbeeld:</br></br>&lt;reggie_fqdn>/reggie/v1/regcode/ER45RTY | Streaming-app</br></br>of</br></br>Programmeringsservice | 1. Id van aanvrager  </br>    (component Path)</br>2.  Registratiecode  </br>    (component Path) | DELETE | Geen | 204 |
+| &lt;reggie_fqdn>/reggie/v1/{requestorId}/regcode/{registrationCode}</br></br>Bijvoorbeeld:</br></br>&lt;reggie_fqdn>/reggie/v1/regcode/ER45RTY | Streaming-app</br></br>of</br></br>Programmeringsservice | 1. ID aanvrager  </br>    (component Path)</br>2.  Registratiecode  </br>    (component Path) | DELETE | Geen | 204 |
 
 {style="table-layout:auto"}
 
@@ -51,4 +51,4 @@ Verwijdert de reg code-record en geeft de reg-code vrij voor hergebruik. 
 
 </br>
 
-### [Terug naar REST API-naslaggids](/help/authentication/rest-api-reference.md)
+### [Terug naar REST API Reference](/help/authentication/rest-api-reference.md)

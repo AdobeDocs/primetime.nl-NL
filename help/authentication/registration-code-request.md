@@ -2,7 +2,7 @@
 title: Registratiepagina
 description: Registratiepagina
 exl-id: 581b8e2e-7420-4511-88b9-f2cd43a41e10
-source-git-commit: bfc3ba55c99daba561255760baf273b6538a3c6e
+source-git-commit: 84a16ce775a0aab96ad954997c008b5265e69283
 workflow-type: tm+mt
 source-wordcount: '486'
 ht-degree: 0%
@@ -19,36 +19,36 @@ ht-degree: 0%
 
 &lt;reggie_fqdn>:
 
-* Productie - [api.auth.adobe.com](http://api.auth.adobe.com/)
-* Staging - [api.auth-staging.adobe.com](http://api.auth-staging.adobe.com/)
+* Productie - [api.auth.adobe.com](http://api.auth.adobe.com/)
+* Staging - [api.auth-staging.adobe.com](http://api.auth-staging.adobe.com/)
 
 &lt;sp_fqdn>:
 
-* Productie - [api.auth.adobe.com](http://api.auth.adobe.com/)
-* Staging - [api.auth-staging.adobe.com](http://api.auth-staging.adobe.com/)
+* Productie - [api.auth.adobe.com](http://api.auth.adobe.com/)
+* Staging - [api.auth-staging.adobe.com](http://api.auth-staging.adobe.com/)
 
- </br>
+</br>
 
 ## Beschrijving {#create-reg-code-svc}
 
 Retourneert willekeurig gegenereerde registratie- en aanmeldingspagina-URI.
 
-| Endpoint | Geroepen  </br>Door | Invoer   </br>Parameter | HTTP  </br>Methode | Antwoord | HTTP  </br>Antwoord |
+| Endpoint | Geroepen  </br>Door | Invoer   </br>Parameter | HTTP  </br>Methode | Antwoord | HTTP  </br>Antwoord |
 | --- | --- | --- | --- | --- | --- |
-| &lt;reggie_fqdn>/reggie/v1/{requestor}/regcode</br>Bijvoorbeeld:</br>REGGIE_FQDN/Reggie/v1/sampleRequestorId/regcode | Streaming-app</br>of</br>Programmeringsservice | 1. aanvrager  </br>    (component Path)</br>2.  deviceId (Hashed)   </br>    (Verplicht)</br>3.  device_info/X-Device-Info (verplicht)</br>4.  mvpd (optioneel)</br>5.  ttl (optioneel)</br>6.  _deviceType_</br> 7.  _deviceUser_ (Afgekeurd)</br>8.  _appId_ (Afgekeurd) | POST | XML of JSON met een registratiecode en informatie of foutdetails als dit mislukt. Zie schema&#39;s en voorbeelden hieronder. | 201 |
+| &lt;reggie_fqdn>/reggie/v1/{requestor}/regcode</br>Bijvoorbeeld:</br>REGGIE_FQDN/Reggie/v1/sampleRequestorId/regcode | Streaming-app</br>of</br>Programmeringsservice | 1. aanvrager  </br>    (component Path)</br>2.  deviceId (Hashed)   </br>    (Verplicht)</br>3.  device_info/X-Device-Info (verplicht)</br>4.  mvpd (optioneel)</br>5.  ttl (optioneel)</br>6.  _deviceType_</br> 7.  _deviceUser_ (Verouderd)</br>8.  _appId_ (Verouderd) | POST | XML of JSON met een registratiecode en informatie of foutdetails als dit mislukt. Zie schema&#39;s en voorbeelden hieronder. | 201 |
 
 {style="table-layout:auto"}
 
 | Invoerparameter | Beschrijving |
 | --- | --- |
 | aanvrager | De programmeeraanvragerId waarvoor deze verrichting geldig is. |
-| deviceId | De id-bytes van het apparaat. |
-| device_info/</br>X-Apparaat-Info | Informatie over streaming apparaat.</br>**Opmerking**: This MAY BE passed device_info as a URL parameter, but due to the potential size of this parameter and constraints on the length of a GET URL, it should be passed as X-Device-Info in the http header. </br>Zie de volledige details in [Gegevens van apparaat en verbinding doorgeven](/help/authentication/passing-client-information-device-connection-and-application.md). |
+| deviceId | Het apparaat-id bytes. |
+| device_info/</br>X-Apparaat-Info | Informatie over streaming apparaat.</br>**Opmerking**: This MAY BE passed device_info as a URL parameter, but due to the potential size of this parameter and constraints on the length of a GET URL, it should be passed as X-Device-Info in the http header. </br>Zie de volledige details in [Gegevens van apparaat en verbinding doorgeven](/help/authentication/passing-client-information-device-connection-and-application.md). |
 | mvpd | De MVPD-id waarvoor deze bewerking geldig is. |
-| ttl | Hoe lang deze regcode in seconden zou moeten leven.</br>**Opmerking**: De maximumwaarde die voor ttl wordt toegestaan is 36000 seconden (10 uren). Hogere waarden resulteren in een 400 HTTP-respons (onjuiste aanvraag). Indien `ttl` wordt leeg gelaten, plaatst de authentificatie van Primetime een standaardwaarde van 30 minuten. |
-| _deviceType_ | Het apparaattype (bijvoorbeeld Roku, PC).</br>Als deze parameter correct is ingesteld, biedt ESM metriek die [uitgesplitst per apparaattype](/help/authentication/entitlement-service-monitoring-overview.md#clientless_device_type) wanneer u Clientless gebruikt, zodat verschillende typen analyses kunnen worden uitgevoerd, bijvoorbeeld Roku, AppleTV en Xbox.</br>Zie, [Voordelen van het gebruiken van clientless apparatentype parameter in pasmetriek ](/help/authentication/benefits-of-using-the-clientless-devicetype-parameter-in-pass-metrics.md)</br>**Opmerking**: device_info zal deze parameter vervangen. |
+| ttl | Hoe lang deze regcode in seconden zou moeten leven.</br>**Opmerking**: De maximaal toegestane waarde voor ttl is 36000 seconden (10 uur). Hogere waarden resulteren in een 400 HTTP-respons (onjuiste aanvraag). Indien `ttl` wordt leeg gelaten, plaatst de authentificatie van Primetime een standaardwaarde van 30 minuten. |
+| _deviceType_ | Het apparaattype (bijvoorbeeld Roku, PC).</br>Als deze parameter correct is ingesteld, biedt ESM metriek die [uitgesplitst per apparaattype](/help/authentication/entitlement-service-monitoring-overview.md#clientless_device_type) wanneer u Clientless gebruikt, zodat verschillende typen analyses kunnen worden uitgevoerd, bijvoorbeeld Roku, AppleTV en Xbox.</br>Zie, [Voordelen van het gebruiken van clientless apparatentype parameter in pasmetriek ](/help/authentication/benefits-of-using-the-clientless-devicetype-parameter-in-pass-metrics.md)</br>**Opmerking**: device_info zal deze parameter vervangen. |
 | _deviceUser_ | De gebruikers-id van het apparaat. |
-| _appId_ | De toepassings-id/-naam. </br>**Opmerking**: device_info vervangt deze parameter. |
+| _appId_ | De toepassings-id/-naam. </br>**Opmerking**: device_info vervangt deze parameter. |
 
 {style="table-layout:auto"}
 
@@ -57,11 +57,10 @@ Retourneert willekeurig gegenereerde registratie- en aanmeldingspagina-URI.
 >
 >**IP-adres van streaming apparaat**
 ></br>
->Voor client-aan-server implementaties, wordt het Streaming Apparaat IP Adres impliciet verzonden met deze vraag.  Voor server-aan-server implementaties, waar **herschrijven** De vraag wordt gemaakt is de Dienst van de Programmer en niet het Streaming Apparaat, wordt de volgende kopbal vereist om het Streaming Apparaat IP Adres over te gaan:
+>Voor client-aan-server implementaties, wordt het Streaming Apparaat IP Adres impliciet verzonden met deze vraag.  Voor server-aan-server implementaties, waar **herschrijven** De vraag wordt gemaakt is de Dienst van de Programmer en niet het Streaming Apparaat, wordt de volgende kopbal vereist om het Streaming Apparaat IP Adres over te gaan:
 >
 >
->
-```
+>```
 >X-Forwarded-For : <streaming_device_ip> 
 >```
 >
@@ -69,10 +68,10 @@ Retourneert willekeurig gegenereerde registratie- en aanmeldingspagina-URI.
 ></br></br>
 >Voorbeeld:</br>
 >
->
-```
+>```
 >POST /reggie/v1/{req_id}/regcode HTTP/1.1</br>X-Forwarded-For:203.45.101.20
 >```
+>
 </br>
 
 ### XML-schema van reactie {#xml-schema}
@@ -112,11 +111,11 @@ Retourneert willekeurig gegenereerde registratie- en aanmeldingspagina-URI.
     </xs:schema>
 ```
 
- </br>
+</br>
 
 | Elementnaam | Beschrijving |
 | --------------- | ------------------------------------------------------------------------------------ |
-| id | UUID gegenereerd door de Registratiecode-service |
+| id | UUID gegenereerd door de Registratiecode Service |
 | code | Registratiecode gegenereerd door de registratiecodeservice |
 | aanvrager | Id van aanvrager |
 | mvpd | Mvpd-id |
@@ -130,9 +129,9 @@ Retourneert willekeurig gegenereerde registratie- en aanmeldingspagina-URI.
 | registrationURL | URL aan de Login App van het Web om aan het eind te tonen - gebruiker |
 
 {style="table-layout:auto"}
- </br>
+</br>
 
- 
+
 
 ### Foutbericht XSD  {#error-message}
 
@@ -153,7 +152,7 @@ Retourneert willekeurig gegenereerde registratie- en aanmeldingspagina-URI.
         </xs:element>
     </xs:schema>
 ```
- 
+
 
 ### Samplereactie {#sample-response}
 
@@ -178,7 +177,7 @@ Retourneert willekeurig gegenereerde registratie- en aanmeldingspagina-URI.
         </info>
     </ns2:regcode>
 ```
- 
+
 **JSON:**
 
 ```JSON

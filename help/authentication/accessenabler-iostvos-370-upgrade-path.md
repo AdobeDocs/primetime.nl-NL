@@ -2,7 +2,7 @@
 title: Upgradepad voor iOS/tvOS 3.7.0 inschakelen
 description: Upgradepad voor iOS/tvOS 3.7.0 inschakelen
 exl-id: f15c7414-ec9b-4e21-b457-1ecf59f47441
-source-git-commit: bfc3ba55c99daba561255760baf273b6538a3c6e
+source-git-commit: 84a16ce775a0aab96ad954997c008b5265e69283
 workflow-type: tm+mt
 source-wordcount: '296'
 ht-degree: 0%
@@ -36,7 +36,7 @@ Sommige beperkingen, die hieronder worden beschreven, kunnen door implementatore
 1. In de situatie van het degraderen van één toepassing gebruikend AccessEnabler versie 3.7.0 aan een lagere versie van AccessEnabler, dan zullen de nieuwe geproduceerde tokens niet worden gemigreerd. Daarom zouden de eindgebruikers het verlies van authentificatie/vergunningszittingen kunnen ervaren, zonder het te verwachten.
 
    - **Belangrijk:**
-      - Eindgebruikers die op systeemniveau (Apple) zijn geverifieerd, worden niet beïnvloed!
+      - Eindgebruikers die zijn geverifieerd via SSO op systeemniveau (Apple) worden niet beïnvloed!
       - Eindgebruikers die al waren geverifieerd voordat ze met AccessEnabler versie 3.7.0 naar de nieuwe toepassing werden bijgewerkt, worden hierdoor niet beïnvloed!
 
 1. In de situatie van het degraderen van één toepassing gebruikend AccessEnabler versie 3.7.0 aan een lagere versie van AccessEnabler, dan zullen de geschrapte tekenen niet worden erkend. Daarom zouden de eindgebruikers de aanwezigheid van authentificatie/vergunningszittingen kunnen ervaren, zonder het te verwachten.

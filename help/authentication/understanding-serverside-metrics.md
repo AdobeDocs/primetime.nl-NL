@@ -1,15 +1,15 @@
 ---
-title: Werken met Metriek aan de serverzijde
-description: Werken met Metriek aan de serverzijde
+title: Werken met Metriek op de server
+description: Werken met Metriek op de server
 exl-id: 516884e9-6b0b-451a-b84a-6514f571aa44
-source-git-commit: bfc3ba55c99daba561255760baf273b6538a3c6e
+source-git-commit: 84a16ce775a0aab96ad954997c008b5265e69283
 workflow-type: tm+mt
-source-wordcount: '2187'
+source-wordcount: '2205'
 ht-degree: 0%
 
 ---
 
-# Werken met Metriek aan de serverzijde {#understanding-server-side-metrics}
+# Werken met Metriek op de server {#understanding-server-side-metrics}
 
 >[!NOTE]
 >
@@ -18,7 +18,7 @@ ht-degree: 0%
 
 ## Inleiding {#intro}
 
-In dit document worden de gegevens van de Adobe Primetime-verificatieserver beschreven die zijn gegenereerd door de ESM-service (Entitlement Service Monitoring). Het beschrijft niet de zelfde gebeurtenissen zoals gezien vanuit het cliënt-zijperspectief (wat Programmeurs zouden zien als zij een metingsdienst zoals Adobe Analytics op hun pagina/toepassing zouden uitvoeren).  
+In dit document worden de gegevens van de Adobe Primetime-verificatieserver beschreven die zijn gegenereerd door de ESM-service (Entitlement Service Monitoring). Het beschrijft niet de zelfde gebeurtenissen zoals gezien vanuit het cliënt-zijperspectief (wat Programmeurs zouden zien als zij een metingsdienst zoals Adobe Analytics op hun pagina/toepassing zouden uitvoeren).
 
 ## Overzicht van gebeurtenissen {#events_summary}
 
@@ -28,14 +28,14 @@ Vanuit het oogpunt van de Adobe Primetime-verificatieserver worden de volgende g
 
    * Bericht van Poging AuthN - dit wordt geproduceerd wanneer de gebruiker naar de MVPD login plaats wordt verzonden.
    * Bericht van AuthN in afwachting - als de gebruiker in het programma openen met hun MVPD slaagt, wordt dit geproduceerd wanneer de gebruiker terug naar authentificatie Primetime wordt gericht.
-   * Melding van AuthN toegekend - Dit wordt geproduceerd wanneer de gebruiker terug op de plaats van de Programmer is, en met succes het teken van de Authentificatie van de authentificatie Primetime heeft teruggewonnen. 
+   * Melding van AuthN toegekend - Dit wordt geproduceerd wanneer de gebruiker terug op de plaats van de Programmer is, en met succes het teken van de Authentificatie van de authentificatie Primetime heeft teruggewonnen.
 * **Autorisatiestroom** (Alleen een controle op autorisatie bij een MVPD)\
-   *Vereiste:* Een geldig AuthN-token
+  *Vereiste:* Een geldig AuthN-token
    * Melding van AuthZ-poging
    * Kennisgeving van AuthZ verleend
 * **Aanvraag voor succesvol afspelen**\
-   *Vereiste:* Geldige AuthN- en AuthZ-tokens
-   * Kennisgeving van een controle met Adobe Primetime-verificatie 
+  *Vereiste:* Geldige AuthN- en AuthZ-tokens
+   * Kennisgeving van een controle met Adobe Primetime-verificatie
    * Een spelverzoek vereist zowel een verleende authentificatie als een verleende vergunning
 
 
@@ -51,11 +51,18 @@ Het aantal unieke gebruikers wordt in de [Unieke gebruikers](#unique-users) hier
 
 In het volgende voorbeeld worden de afmetingen aan de serverzijde voor één maand voor één merk getoond:
 
-| Metrisch | MVPD 1 | MVPD 2 | ... | MVPD n | Totaal | | — | — | — | - | — | — | | Succesvolle authenticaties | 1125 | 2892 | | 2203 | SUM(MVP1+...MVPD n) | | Erkende vergunningen | 2527 | 5603 | | 5904 | SUM(MVP1+...MVPD n) | | Aanvragen voor geslaagde afspelen | 4201 | 10518 | | 10737 | SUM(MVP1+...MVPD n) | | Unieke gebruikers | 1375 | 2400 | | 2890 | SUM van alle gebruikers voor alle MVPD&#39;s waarvan de duplicatie ongedaan is gemaakt\* | | Gepoogde authenticaties | 2147 | 3887 | | 3108 | SUM(MVP1+...MVPD n) | | Gepoogde vergunningen | 2889 | 6139 | | 6039 | SUM(MVP1+...MVPD n) |
+| Metrisch | MVPD 1 | MVPD 2 | … | MVPD n | Totaal |
+| -------------------------- | ------ | ------ | - | ------ | ---------------------------------------------- |
+| Succesvolle verificaties | 1125 | 2892 |   | 2203 | SUM(MVP1+...MVPD n) |
+| Autorisaties geslaagd | 2527 | 5603 |   | 5904 | SUM(MVP1+...MVPD n) |
+| Verzoeken voor afspelen geslaagd | 4201 | 10518 |   | 10737 | SUM(MVP1+...MVPD n) |
+| Unieke gebruikers | 1375 | 2400 |   | 2890 | SUM van alle gebruikers voor alle MVPDs deduplicated\* |
+| Gepoogde verificaties | 2147 | 3887 |   | 3108 | SUM(MVP1+...MVPD n) |
+| Gepoogde machtigingen | 2889 | 6139 |   | 6039 | SUM(MVP1+...MVPD n) |
 
 </br>
 
-De-duplicatie zou in dit geval geen effect moeten hebben aangezien de verschillende gebruikers MVPD niet de zelfde Gebruiker - identiteitskaart zouden moeten ontvangen. Wanneer u een bedrag voor twee verschillende merken maar hetzelfde MVPD doet, zou het deduplicatie-effect veel groter moeten zijn.
+De-duplicatie zou in dit geval geen effect moeten hebben omdat verschillende MVPD-gebruikers niet dezelfde gebruikersnaam zouden moeten ontvangen. Wanneer u een bedrag voor twee verschillende merken maar hetzelfde MVPD doet, zou het deduplicatie-effect veel groter moeten zijn.
 
 ## Gebeurtenistriggers {#event_triggers}
 
@@ -73,7 +80,7 @@ De stroom omvat ronde-reizen aan MVPDs voor zowel Authentificatie (#5 tot \#7) a
 
 
 
-Nadat de flow is voltooid, worden de verificatie- en autorisatietokens in het cachegeheugen opgeslagen op het apparaat van de gebruiker. De tijd-aan-Levende (TTL) waarden voor de tekenen van de Authentificatie zijn tussen 6 uur en 90 dagen. Een AuthN symbolische vervaldatum dwingt automatisch een AuthZ symbolische vervaldatum. De waarde van TTL voor het teken van de Toestemming is gewoonlijk 24 uren.
+Nadat de flow is voltooid, worden de verificatie- en autorisatietokens in het cachegeheugen opgeslagen op het apparaat van de gebruiker. De tijd-aan-Levende (TTL) waarden voor de tekenen van de Authentificatie zijn tussen 6 uur en 90 dagen. Een AuthN symbolische vervaldatum dwingt automatisch een AuthZ symbolische vervaldatum. De waarde van TTL voor het teken van de Toestemming is gewoonlijk 24 uren.
 
 | Gebeurtenissen aan serverzijde geactiveerd | <ul><li>Verificatiepoging, Verificatie in behandeling, Verificatie verleend</li><li>Poging tot autorisatie, autorisatie verleend</li><li>Aanvraag voor succesvol afspelen</li></ul> |
 |---|---|
@@ -112,7 +119,7 @@ Deze stroom omvat een ronde reis naar de MVPD.
 
 ### Verificatiepoging {#authentication-attempt}
 
-Zoals geïllustreerd in het diagram hierboven, worden de authentificatiegebeurtenissen slechts teweeggebracht wanneer de gebruiker een ronde reis aan MVPD doet; verificatiegebeurtenissen bevatten geen tokenverificatie in de cache.
+Zoals geïllustreerd in het diagram hierboven, worden de authentificatiegebeurtenissen slechts teweeggebracht wanneer de gebruiker een ronde reis aan MVPD doet; de authentificatiegebeurtenissen omvatten geen symbolische authentificatie in de cache.
 
 De gebeurtenis van de authentificatiepoging wordt teweeggebracht nadat de gebruiker op een bepaalde MVPD van de plukker heeft geklikt.
 
@@ -127,18 +134,18 @@ Deze gebeurtenis treedt op wanneer het omleidingsproces naar Adobe Primetime-ver
 
 ### Verificatie verleend {#authentication-granted}
 
-De gebruiker is een bekende abonnee van MVPD, typisch met een abonnement van de TV van het Betaal, maar soms met slechts de toegang van Internet. Een succesvolle authentificatie kan of voorkomen omdat de gebruiker uitdrukkelijk geldige geloofsbrieven met hun MVPD inging, of omdat zij eerder geldige geloofsbrieven hadden ingegaan en &quot;herinner me&quot;gecontroleerd (en de vorige zitting niet was verlopen).
+De gebruiker is een bekende abonnee van MVPD, typisch met een abonnement van de Tv van het Betaal, maar soms met slechts de toegang van Internet. Een succesvolle authentificatie kan of voorkomen omdat de gebruiker uitdrukkelijk geldige geloofsbrieven met hun MVPD inging, of omdat zij eerder geldige geloofsbrieven hadden ingegaan en &quot;herinner me&quot;gecontroleerd (en de vorige zitting niet was verlopen).
 
-De MVPD verzendt daarom een positieve reactie van de Adobe Primetime-authenticatie op het verificatieverzoek en de Adobe Primetime-verificatie zorgt voor een *AuthN-token*.
+De MVPD verzendt daarom een positieve reactie van de Adobe Primetime-authenticatie op het verificatieverzoek en de Adobe Primetime-verificatie zorgt voor een *AuthN-token*.
 
 * De authentificatie wordt gewoonlijk in het voorgeheugen ondergebracht voor een lange periode (een maand of meer). Daarom zijn er geen verificatiegebeurtenissen meer aanwezig totdat het token vervalt en de flow opnieuw wordt gestart.
 * Als u vanaf een andere site/app inkomt via Single Sign On, worden er geen verificatiegebeurtenissen gestart.
 
- 
+
 
 ### Comcast-verificatie {#comcast-authentication}
 
-Comcast heeft een andere AuthN-stroom dan de rest van de MVPD&#39;s.
+Comcast heeft een andere AuthN-stroom dan de andere MVPD&#39;s.
 
 De verschillen worden beschreven in de volgende functies:
 
@@ -146,21 +153,21 @@ De verschillen worden beschreven in de volgende functies:
 
 * **AuthN per requestID**: Met Comcast kan de staat AuthN niet in het cachegeheugen worden opgeslagen van de ene aanvrager-id naar de andere. Daarom moet elke site/app naar Comcast gaan om een verificatietoken te krijgen. Afgezien van de ervaringen van gebruikers, is het effect, zoals hierboven, dat meer authentificatiepogingen/toegekende gebeurtenissen zullen worden geproduceerd.
 
-* **Passieve verificatie**: Om gebruikerservaring te verbeteren maar nog de functionaliteit te handhaven AuthN per requestID, gebeurt een passieve authentificatiestroom in een verborgen iFrame. De gebruiker zal niets zien maar de gebeurtenissen zullen nog worden teweeggebracht zoals voordien.
+* **Passieve verificatie**: Om de gebruikerservaring te verbeteren maar toch de AuthN per requestID functionaliteit te handhaven, gebeurt een passieve authentificatiestroom in een verborgen iFrame. De gebruiker zal niets zien maar de gebeurtenissen zullen nog worden teweeggebracht zoals vroeger.
 
 Als de gebruiker &quot;herinner me&quot;op de Comcast login pagina klikt, dan zullen de verdere bezoeken aan deze pagina (in een periode van twee weken) enkel een snel terugleiden zijn. Anders zullen de gebruikers eigenlijk op de pagina voor authentiek moeten verklaren.
 
-### Verificatie mislukt {#unsuccessful-authentication}
+### Verificatie is mislukt {#unsuccessful-authentication}
 
 Een mislukte verificatie is niet per se een gebeurtenis in Adobe Primetime-verificatie, maar kan worden berekend als het verschil tussen poging en succes.
 
 In de release van mei 2013 voegt Adobe Primetime-verificatie foutcodes toe voor mislukte verificaties die het gevolg zijn van systeem- of netwerkfouten, waaronder DRM-fouten (symbolische binding mislukt) en LSO-fouten (geen ruimte om het token te schrijven, enz.).
 
-### Omzetsnelheid verificatie {#authenitication-conversion-rate}
+### Conversiesnelheid verificatie {#authenitication-conversion-rate}
 
 Één interessante metrisch die Programmeurs kunnen volgen is de authentificatieomzettingspercentage, dat als (de verzoeken van AuthN/toegekende AuthN)% wordt berekend.
 
-Enkele opmerkingen over de meetgegevens:
+Sommige notities over de meetgegevens:
 
 * Aangezien het een op gebeurtenis-gebaseerde metrisch is, weerspiegelt het niet echt unieke gebruiker omrekeningskoers - als een gebruiker acht keer probeert en de negende keer slaagt - zal dit zeer slecht in de hierboven vermelde omrekeningskoers weerspiegelen.
 * Bij Adobe Primetime-verificatie (op de server) is er (nog) geen manier om een op unieke verificatie gebaseerde omzetting te berekenen.
@@ -170,16 +177,16 @@ Enkele opmerkingen over de meetgegevens:
 
 ### Verificatiepoging {#authorization_attempt}
 
-Naast het krijgen van een authentificatietoken, moeten de gebruikers ook een toestemmingstoken krijgen alvorens inhoud te spelen. Dit gebeurt gewoonlijk na authentificatie, of als het toestemmingstoken verloopt. Aangezien deze controle op de server wordt uitgevoerd (van de Adobe Primetime-verificatieservers naar de MVPD-servers), hoeft de gebruiker niets te doen.
+Naast het krijgen van een authentificatietoken, moeten de gebruikers ook een toestemmingstoken krijgen alvorens inhoud te spelen. Dit gebeurt gewoonlijk na authentificatie, of als het toestemmingstoken verloopt. Aangezien deze controle op de server wordt uitgevoerd (van de Adobe Primetime-verificatieservers naar de MVPD-servers), hoeft de gebruiker niets te doen.
 
 ### Toelating verleend {#authorization-granted}
 
 Een &quot;vergunning verleend&quot;signalen dat het voor authentiek verklaarde gebruikersabonnement de gevraagde programmering omvat.
 
-Merk op dat niet alle MVPD&#39;s een afzonderlijke toelatingsstap steunen; voor sommige authenticatie is dit gelijk aan autorisatie. MVPD verzendt de authentificatie van Adobe Primetime een succesvolle reactie op het backchannel verzoek AuthZ, en de authentificatie van Adobe Primetime leidt tot een teken AuthZ.
+Merk op dat niet alle MVPDs een afzonderlijke vergunningsstap steunt; voor sommige authentificatie wordt gelijkgesteld met vergunning. MVPD verzendt de authentificatie van Adobe Primetime een succesvolle reactie op het backchannel verzoek AuthZ, en de authentificatie van Adobe Primetime leidt tot een teken AuthZ.
 
 * De token AuthZ wordt gedurende een periode in cache geplaatst, doorgaans 24 uur Tijdens deze periode worden er geen gebeurtenissen AuthZ geactiveerd.
-* Sommige MVPDs werken met de Vergunningen van het Niveau van Activa, andere werken met de Vergunningen van het Niveau van het Kanaal; - afhankelijk van welke wordt gebruikt, worden meer of minder gebeurtenissen AuthZ in brand gestoken. Zelfs voor de toestemming op kanaalniveau, is het in cache plaatsen van toepassing - dus als hetzelfde middel binnen 24 uur wordt aangevraagd, worden er geen gebeurtenissen gestart.
+* Sommige MVPDs werken met de Vergunningen van het Niveau van Activa, andere werken met de Vergunning van het Niveau van het Kanaal; - afhankelijk van welke wordt gebruikt, meer of minder gebeurtenissen AuthZ worden in brand gestoken. Zelfs voor de toestemming op kanaalniveau, is het in cache plaatsen van toepassing - dus als hetzelfde middel binnen 24 uur wordt aangevraagd, worden er geen gebeurtenissen gestart.
 
 ### Autorisatie geweigerd {#authorization-denied}
 

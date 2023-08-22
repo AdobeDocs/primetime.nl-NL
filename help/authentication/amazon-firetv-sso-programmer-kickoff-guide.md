@@ -2,7 +2,7 @@
 title: Amazon FireTV SSO - Handleiding voor de start van de programma's
 description: Amazon FireTV SSO - Handleiding voor de start van de programma's
 exl-id: cf9ba614-57ad-46c3-b154-34204b38742d
-source-git-commit: bfc3ba55c99daba561255760baf273b6538a3c6e
+source-git-commit: 84a16ce775a0aab96ad954997c008b5265e69283
 workflow-type: tm+mt
 source-wordcount: '792'
 ht-degree: 0%
@@ -19,11 +19,11 @@ ht-degree: 0%
 
 ## Inleiding {#intro}
 
-In dit document worden de gegevens beschreven die nodig zijn om het nieuwe **De FireTV SDK van Adobe Primetime-verificatie** in uw FireTV-toepassing. Deze nieuwe SDK profiteert van de integratie op besturingssysteemniveau op het Amazon FireTV-platform en biedt dus **Single Sign On** ondersteuning. Om te kunnen profiteren van Single Sign On is een kleine inspanning vereist van uw kant om uw toepassing van Clientless API naar de nieuwe fireTV SDK te migreren. Er zijn enkele wijzigingen in de verificatiestromen die hieronder worden beschreven.
+In dit document worden de gegevens beschreven die nodig zijn voor de integratie van het nieuwe **De FireTV SDK van Adobe Primetime-verificatie** in uw FireTV-toepassing. Deze nieuwe SDK profiteert van de integratie op besturingssysteemniveau op het Amazon FireTV-platform en biedt dus **Single Sign On** ondersteuning. Om te kunnen profiteren van Single Sign On is een kleine inspanning vereist van uw kant om uw toepassing van Clientless API naar de nieuwe fireTV SDK te migreren. Er zijn enkele wijzigingen in de verificatiestromen die hieronder worden beschreven.
 
 ## Architectuur op hoog niveau en integratie op besturingssysteemniveau {#high}
 
-Om Single Sign On te bereiken tussen tv-toepassingen overal op Amazon fireTV-platform en om de algemene ervaring op dit platform te verbeteren, hebben we besloten onze kern-SDK op het niveau van het FireTV-besturingssysteem te integreren. De programmeurs zullen tegen een stompenbibliotheek moeten compileren die door Adobe wordt verstrekt. De eigenlijke functionaliteit wordt geleverd door de Adobe-bibliotheek die aanwezig is in Amazon FireTV OS.
+Om Single Sign On te bereiken tussen tv-toepassingen overal op Amazon fireTV-platform en om de algemene ervaring op dit platform te verbeteren, hebben we besloten onze kern-SDK op het niveau van het FireTV-besturingssysteem te integreren. De programmeurs zullen tegen een stompenbibliotheek moeten compileren die door Adobe wordt verstrekt. De eigenlijke functionaliteit wordt geleverd door de bibliotheek van de Adobe die aanwezig is in Amazon fireTV OS.
 
 Totdat Amazon een FireTV-simulator aanbiedt die onze bibliotheek op besturingssysteemniveau bevat, is de ontwikkeling alleen mogelijk met echte FireTV-apparaten.
 
@@ -37,7 +37,7 @@ Totdat Amazon een FireTV-simulator aanbiedt die onze bibliotheek op besturingssy
 
 ## Migratie van een op Clientless API gebaseerde app naar een op FireTV SDK gebaseerde app {#migra1}
 
-Als u van de Clientless API wilt migreren naar de FireTV SDK, moet u de codebase verwijderen die betrekking heeft op de API zonder client en de nieuwe FireTV SDK integreren.
+Voor het migreren van de Clientless API naar fireTV SDK moet u de codebase verwijderen die betrekking heeft op de Clientless API en de nieuwe FireTV SDK integreren.
 
 Vergeleken met de op Clientless API gebaseerde app, met de nieuwe FireTV SDK wordt de verificatie naar het eerste scherm verplaatst en is er geen tweede schermverificatie meer nodig.
 
@@ -56,7 +56,7 @@ Vergeleken met de bestaande Android-SDK is het op FireTV-SDK eenvoudiger om het 
 1. Hoe zal de **SSO** werken?
 
    * SSO werkt in alle programmeertoepassingen die worden aangedreven door Adobe Primetime-verificatie en die de nieuwe FireTV SDK gebruiken op hetzelfde Amazon fireTV-apparaat
-   * SSO tussen programmeertoepassingen die zijn geïmplementeerd op de client REST-API en toepassingen die zijn geïmplementeerd op de FireTV-SDK **wordt NIET ondersteund**
+   * SSO tussen programmeertoepassingen die zijn geïmplementeerd op de client REST-API en toepassingen die zijn geïmplementeerd op de FireTV-SDK **wordt NIET ondersteund**
 
 1. Wat is de MVPD-verslaggeving van fireTV SSO?
 
@@ -66,7 +66,7 @@ Vergeleken met de bestaande Android-SDK is het op FireTV-SDK eenvoudiger om het 
 
    * Programmeurs moeten een MVPD-kiezer implementeren voor FireTV-platform.
 
-1. Zal er om het even welke verandering in de authentificatie zijn **TTL&#39;s**?
+1. Zal er elke verandering in de authentificatie zijn **TTL&#39;s**?
 
    * Er is geen verandering in gedrag betreffende authentificatie TTLs.
    * Het eerste geldige authentificatietoken zal voor het uitvoeren van SSO worden gebruikt en in dit geval zullen alle andere toepassingen die door SSO zullen voor authentiek worden verklaard zelfde TTL gebruiken tot het verloopt. Wanneer u dus van de ene toepassing naar de andere navigeert, deelt de tweede toepassing de TTL van de eerste toepassing die wordt geverifieerd.
@@ -79,6 +79,6 @@ Vergeleken met de bestaande Android-SDK is het op FireTV-SDK eenvoudiger om het 
 
    * TempPass-stromen zijn één scherm en gedragen zich net als op andere native apparaten.
 
-1. Werkt andere Adobe-functionaliteit zoals voorheen?
+1. Werkt andere functionaliteit voor Adoben zoals voorheen?
 
    * Alle Primetime-verificatiefunctionaliteit werkt op fireTV net als op Android-apparaten.

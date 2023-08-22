@@ -2,7 +2,7 @@
 title: Migratiehandleiding voor iOS/tvOS v3.x
 description: Migratiehandleiding voor iOS/tvOS v3.x
 exl-id: 4c43013c-40af-48b7-af26-0bd7f8df2bdb
-source-git-commit: bfc3ba55c99daba561255760baf273b6538a3c6e
+source-git-commit: 84a16ce775a0aab96ad954997c008b5265e69283
 workflow-type: tm+mt
 source-wordcount: '561'
 ht-degree: 0%
@@ -20,12 +20,11 @@ ht-degree: 0%
 > **Opmerkingen:**
 >
 > - Vanaf iOS SDK versie 3.1 kunnen implementors nu WKWebView of UIWebView onderling verwisselbaar gebruiken. Aangezien UIWebView is afgekeurd, dienen apps te migreren naar WKWebView om problemen met toekomstige iOS-versies te voorkomen.
-> - Merk op dat de migratie eenvoudig het schakelen van de klasse UIWebView met WKWebView zou impliceren, is er geen specifiek werk dat met betrekking tot Adobe AccessEnabler moet worden gedaan.
-
+> - Merk op dat de migratie eenvoudig zou impliceren omschakelend de klasse UIWebView met WKWebView, is er geen specifiek werk dat met betrekking tot Adobe AccessEnabler moet worden gedaan.
 
 </br>
 
-## Builinstellingen bijwerken {#update}
+## Buildinstellingen bijwerken {#update}
 
 Deze versie bevat functies die in de SWIFT-taal zijn geschreven. Als uw app geheel onder doelstelling C valt, moet u het selectievakje &quot;Altijd SWIFT-standaardbibliotheken insluiten&quot; in de ontwikkelinstellingen van uw doel instellen op &quot;Ja&quot;. Als deze optie is ingesteld, scant Xcode de gebundelde frameworks in uw app en worden de desbetreffende bibliotheken naar de bundel van uw app gekopieerd als een van de frameworks Swift-code bevat. Als u de ontwikkelinstellingen niet bijwerkt, kan de toepassing vastlopen met fouten die aangeven dat AccessEnabler.framework of diverse componenten niet kunnen worden geladen `ibswift*` bibliotheken.
 
@@ -33,7 +32,7 @@ Deze versie bevat functies die in de SWIFT-taal zijn geschreven. Als uw app gehe
 
 ## Software-instructies toevoegen {#add}
 
-> Ga voor meer informatie over hoe u de softwareinstructie kunt verkrijgen naar
+> Ga voor meer informatie over hoe u de softwareinstructie kunt verkrijgen naar deze
 > pagina:
 > [Registratie van toepassingen](/help/authentication/iostvos-application-registration.md)
 
@@ -69,9 +68,9 @@ Nadat u het aangepaste URL-schema hebt gekregen, moet u dit toevoegen aan het be
 
 ## Aanroepen onderscheppen op het aangepaste URL-schema {#intercept}
 
-Dit is alleen van toepassing voor het geval dat uw toepassing de handmatige verwerking van de Safari View Controller (SVC) via de [setOptions(\[&quot;handleSVC&quot;:true&quot;\])](/help/authentication/iostvos-sdk-api-reference.md) vraag en voor specifieke MVPDs die Controlemechanisme van de Mening Safari (SVC) vereisen, daarom ladend URLs van de authentificatie en logout eindpunten door een controlemechanisme SFSafariViewController in plaats van een controlemechanisme UIWebView/WKWebView.
+Dit is alleen van toepassing voor het geval dat uw toepassing de handmatige verwerking van de Safari View Controller (SVC) via de [setOptions(\[&quot;handleSVC&quot;:true&quot;\])](/help/authentication/iostvos-sdk-api-reference.md) vraag en voor specifieke MVPDs die Controlemechanisme van de Mening Safari (SVC) vereisen, daarom ladend URLs van de authentificatie en logout eindpunten door een controlemechanisme SFSafariViewController in plaats van een controlemechanisme UIWebView/WKWebView.
 
-Tijdens authentificatie en logout stromen moet uw toepassing de activiteit van controleren `SFSafariViewController `het controlemechanisme aangezien het door verscheidene omleidingen gaat. Uw toepassing moet het moment detecteren waarop een specifieke aangepaste URL wordt geladen die door uw toepassing wordt gedefinieerd `application's custom URL scheme` (bijvoorbeeld`adbe.u-XFXJeTSDuJiIQs0HVRAg://adobe.com)`. Wanneer de controller deze specifieke aangepaste URL laadt, moet de toepassing het dialoogvenster `SFSafariViewController` en roepen AccessEnabler `handleExternalURL:url `API-methode.
+Tijdens authentificatie en logout stromen moet uw toepassing de activiteit van controleren `SFSafariViewController `het controlemechanisme aangezien het door verscheidene omleidingen gaat. Uw toepassing moet het moment detecteren waarop een specifieke aangepaste URL wordt geladen die door uw toepassing wordt gedefinieerd `application's custom URL scheme` (bijvoorbeeld`adbe.u-XFXJeTSDuJiIQs0HVRAg://adobe.com)`. Wanneer de controller deze specifieke aangepaste URL laadt, moet de toepassing het dialoogvenster `SFSafariViewController` en roepen AccessEnabler `handleExternalURL:url `API-methode.
 
 In uw `AppDelegate` Voeg de volgende methode toe:
 

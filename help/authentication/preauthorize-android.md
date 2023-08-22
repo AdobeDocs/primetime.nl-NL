@@ -1,15 +1,15 @@
 ---
-title: Android vooraf autoriseren
-description: Android vooraf autoriseren
+title: Android vooraf verifiëren
+description: Android vooraf verifiëren
 exl-id: b5337595-135f-4981-a578-2da432f125d6
-source-git-commit: bfc3ba55c99daba561255760baf273b6538a3c6e
+source-git-commit: 84a16ce775a0aab96ad954997c008b5265e69283
 workflow-type: tm+mt
 source-wordcount: '195'
 ht-degree: 0%
 
 ---
 
-# Vooraf autoriseren {#preuthorize-android}
+# Voorvoegsel {#preuthorize-android}
 
 >[!NOTE]
 >
@@ -25,24 +25,23 @@ De methode van de preauthorize API moet door toepassingen worden gebruikt om een
 In het geval van een onverwachte fout (bv. netwerkkwestie, MVPD niet beschikbaar vergunningseindpunt, enz.) wanneer een aanvraag voor een voorafgaande autorisatie-API wordt verwerkt door de Adobe Primetime-verificatieservices, worden een of meer gescheiden foutgegevens opgenomen voor de desbetreffende bron(nen) als onderdeel van het resultaat van de eerdere autorisatie-API-respons.
 
 
-## `public void preauthorize(PreauthorizeRequest request, AccessEnablerCallback<PreauthorizeResponse> callback);`
+## `public void preauthorize(PreauthorizeRequest request, AccessEnablerCallback<PreauthorizeResponse> callback);`
 
 
-**Omschrijving:** 
+**Omschrijving:**
 
 **Beschikbaarheid:** v3.6.0+
 
 **Parameters:**
 
-- *PreauthorizeRequest*: Builder-object dat wordt gebruikt om het verzoek te definiëren
-- AccessEnablerCallback : callback die wordt gebruikt om de API reactie terug te keren
-- PreauthorizeResponse : Object dat wordt gebruikt om de inhoud van de API-reactie te retourneren
+- *PreauthorizeRequest*: Object Builder dat wordt gebruikt om de aanvraag te definiëren
+- AccessEnablerCallback : callback die wordt gebruikt om de API-reactie te retourneren
+- PreauthorizeResponse : Object gebruikt om de inhoud van de API-reactie te retourneren
 
 
 ### public class PreauthorizeRequest {#androidpreauthorizerequest}
 
-**klasse PreauthorizeRequest.Builder**\
- 
+**klasse PreauthorizeRequest.Builder**
 
 ```java
     ///
@@ -129,18 +128,18 @@ functies)**
 ### `abstract class AccessEnablerCallback<PreauthorizeResponse> {#accessenablercallback}`
 
 ```java
-    /// Response callback called by the SDK when the preauthorize API request was fulfilled. The result is either a successful or an error result containing a status.
+    /// Response callback called by the SDK when the preauthorize API request was fulfilled. The result is either a successful or an error result containing a status.
 
 **public void onResponse(PreauthorizeResponse result)**
 
- 
+ 
 
-    /// Failure callback called by the SDK when the preauthorize API request could not be serviced. The result is a failure result containing a status. 
+    /// Failure callback called by the SDK when the preauthorize API request could not be serviced. The result is a failure result containing a status. 
 
 **public void onFailure(PreauthorizeResponse result)**
 ```
 
- 
+
 
 ### klasse PreauthorizeResponse {#preauthorizeresponse}
 
@@ -150,16 +149,16 @@ functies)**
     ///   Might hold a `null` value.
     ///
 
-**public [Status](#status) getStatus()**
+**public [Status](#status) getStatus()**
 
- 
+ 
 
     ///
     /// - Returns: The list of preauthorization decisions. One decision for each resource.
     ///            The list might be empty in case of failure.
     ///
 
-**public List\<[Decision](#status)\> getDecisions()**
+**public List\<[Decision](#status)\> getDecisions()**
 ```
 
 
@@ -172,7 +171,7 @@ functies)**
 
 ///
 
-**public int getStatus()**
+**public int getStatus()**
 
     ///
     /// - Returns: The standard Adobe Primetime Authentication services error code.
@@ -236,9 +235,9 @@ functies)**
     /// - Returns: The resource id for which the decision was obtained.
     ///
 
-    public Status getId()
+    public Status getId()
 
- 
+ 
 
     ///
     /// This is a getter function.
@@ -246,9 +245,9 @@ functies)**
     /// - Returns: The value of the flag indicating if the decision is successful or not.
     ///
 
-**public boolean isAuthorized()**
+**public boolean isAuthorized()**
 
- 
+ 
 
     ///
     /// This is a getter function.
@@ -257,14 +256,14 @@ functies)**
     ///            Might hold a `null` value.
     ///
 
-**public Status getError()**
+**public Status getError()**
 ```
 
 </br>
 
 
 
-Voorbeeld: 
+Voorbeeld:
 
 
 ```java

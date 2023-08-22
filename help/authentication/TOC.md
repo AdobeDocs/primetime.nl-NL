@@ -1,9 +1,10 @@
 ---
 product: adobe primetime
 audience: end-user
+feature: Authentication
 user-guide-title: Primetime-verificatie
 user-guide-description: De Authentificatie van Primetime is een machtigingsoplossing voor TV overal, die een modulair kader verstrekt om te bepalen of iemand die om toegang tot een middel verzoekt tot het recht heeft.
-source-git-commit: 5e649f1c0937882c9a05809af8916229f6a95e73
+source-git-commit: 11ca161ebaaeca08b6bdc84f9bd719dfc8509d09
 workflow-type: tm+mt
 source-wordcount: '739'
 ht-degree: 0%
@@ -86,7 +87,7 @@ ht-degree: 0%
          + [Amazon FireOS API-naslaggids](amazon-fireos-native-client-api-reference.md)
          + [Amazon FireOS-toepassingsregistratie](amazon-fireos-application-registration.md)
          + [FireOS SDK met Dynamic Client-registratie](fireos-sdk-with-dynamic-client-registration.md)
-   + PLATFORM SSO {#platform-sso}
+   + Platform SSO {#platform-sso}
       + APPLE SSO {#apple-sso}
          + [Apple SSO - Overzicht](apple-sso-overview.md)
          + [Apple SSO Cookbook (REST API)](apple-sso-cookbook-rest-api.md)
@@ -149,7 +150,7 @@ ht-degree: 0%
    + [Voorkomen dat MVPD&#39;s het selectiedialoogvenster weergeven](prevent-mvpd-selectn-dialog.md)
 + Ondersteuning {#support}
    + [Doorverwijsprocedures](escalation-procedures.md)
-   + [Primetime Adobe PayTV-controle](monitoring-adobe-pay-tv-pass.md)
+   + [Bewaking van Primetime Adobe met PayPal-tv-controle](monitoring-adobe-pay-tv-pass.md)
    + [Minimale systeemvereisten](minimum-system-requirements.md)
 + Opmerkingen bij de release {#release-notes}
    + [Opmerkingen bij de release Adobe Pass Authentication 2.66](auth-rn-266.md)
@@ -179,9 +180,9 @@ ht-degree: 0%
          + [Fouten opsporen in de AccessEnabler iOS/tvOS SDK met behulp van console-app-logboeken](debugging-the-accessenabler-iostvos-sdk-using-console-app-logs.md)
          + [Upgradepad voor iOS/tvOS 3.7.0 inschakelen](accessenabler-iostvos-370-upgrade-path.md)
    + Primetime-verificatieomgevingen {#primetime-authentication-environments}
-      + [De Adobe-omgevingen begrijpen](understanding-the-adobe-environments.md)
+      + [De Adobe omgevingen begrijpen](understanding-the-adobe-environments.md)
       + [Uw omgeving instellen en testen in een proefversie](setting-up-your-environment-and-testing-in-prequal.md)
-      + [Verificatie- en autorisatiestromen testen met de testsite Adobe API](test-authn-authz-flows-using-adobes-api-test-site.md)
+      + [Verificatie- en autorisatiestromen testen met de testsite voor Adobe API](test-authn-authz-flows-using-adobes-api-test-site.md)
    + Clientloze API {#clientless-api}
       + [Implementatie van de API zonder client - foutcodes / berichten met mogelijke reden / oorzaak](clientless-api-implementation-error-codes--messages-with-probable-reason--cause.md)
       + [Clientless API Flow bij afwezigheid van apparaat-id](clientless-api-flow-in-the-absence-of-device-id.md)

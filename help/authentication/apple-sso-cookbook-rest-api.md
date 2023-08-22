@@ -2,7 +2,7 @@
 title: Apple SSO Cookbook (REST API)
 description: Apple SSO Cookbook (REST API)
 exl-id: cb27c4b7-bdb4-44a3-8f84-c522a953426f
-source-git-commit: bfc3ba55c99daba561255760baf273b6538a3c6e
+source-git-commit: 84a16ce775a0aab96ad954997c008b5265e69283
 workflow-type: tm+mt
 source-wordcount: '1435'
 ht-degree: 0%
@@ -25,49 +25,49 @@ Dit document fungeert als een uitbreiding op de bestaande REST API-documentatie,
 
 ## Cookbooks {#Cookbooks}
 
-Om van de Apple SSO-gebruikerservaring te kunnen profiteren, moet één toepassing de [Video-abonneeaccount](https://developer.apple.com/documentation/videosubscriberaccount) door Apple ontwikkeld raamwerk, maar wat de communicatie van de Adobe Primetime Authentication REST API betreft, moet het de reeks tips volgen die hieronder wordt weergegeven.
+Om van de Apple SSO-gebruikerservaring te kunnen profiteren, moet één toepassing de [Video-abonneeaccount](https://developer.apple.com/documentation/videosubscriberaccount) door Apple ontwikkeld raamwerk, maar wat de communicatie van de Adobe Primetime Authentication REST API betreft, moet het de reeks tips volgen die hieronder wordt weergegeven.
 
 </br>
 
 ### Verificatie {#Authentication}
 
-- [Is er een geldig Adobe verificatietoken?](#Is_there_a_valid_Adobe_authentication_token)
+- [Is er een geldig teken van de Adobe authentificatie?](#Is_there_a_valid_Adobe_authentication_token)
 - [Is de gebruiker aangemeld via Platform SSO?](#Is_the_user_logged_in_via_Platform_SSO)
-- [Adobe-configuratie ophalen](#Fetch_Adobe_configuration)
-- [SSO-workflow voor Platform starten met Adobe config](#Initiate_Platform_SSO_workflow_with_Adobe_config)
+- [Configuratie Adobe ophalen](#Fetch_Adobe_configuration)
+- [Platform SSO-workflow starten met Adobe config](#Initiate_Platform_SSO_workflow_with_Adobe_config)
 - [Is gebruikersaanmelding geslaagd?](#Is_user_login_successful)
-- [Vraag een profielverzoek van Adobe voor geselecteerde MVPD aan](#Obtain_a_profile_request_from_Adobe_for_the_selected_MVPD)
-- [Het verzoek van de Adobe door:sturen aan Platform SSO om het profiel te verkrijgen](#Forward_the_Adobe_request_to_Platform_SSO_to_obtain_the_profile)
-- [Uitwisseling het profiel van Platform SSO voor een de authentificatietoken van Adobe](#Exchange_the_Platform_SSO_profile_for_an_Adobe_authentication_token)
-- [Is het genereren van een Adobe-token gelukt?](#Is_Adobe_token_generated_successfully)
+- [Vraag een profielverzoek van Adobe voor geselecteerde MVPD](#Obtain_a_profile_request_from_Adobe_for_the_selected_MVPD)
+- [Het verzoek van de Adobe doorsturen naar Platform SSO om het profiel te verkrijgen](#Forward_the_Adobe_request_to_Platform_SSO_to_obtain_the_profile)
+- [Exchange the Platform SSO profile for an Adobe authentication token](#Exchange_the_Platform_SSO_profile_for_an_Adobe_authentication_token)
+- [Is het genereren van een Adobe token gelukt?](#Is_Adobe_token_generated_successfully)
 - [Tweede workflow voor schermverificatie starten](#Initiate_second_screen_authentication_workflow)
-- [Doorgaan met machtigingsstromen](#Proceed_with_authorization_flows)
+- [Doorgaan met autorisatiestromen](#Proceed_with_authorization_flows)
 
- 
+
 
 ![](https://dzf8vqv24eqhg.cloudfront.net/userfiles/258/326/ckfinder/images/qu/platform-sso.jpeg)
 
 </br>
 
-#### Stap: &quot;Is er een geldig Adobe verificatietoken?&quot; {#Is_there_a_valid_Adobe_authentication_token}
+#### Stap: &quot;Is er een geldig token voor Adobe-verificatie?&quot; {#Is_there_a_valid_Adobe_authentication_token}
 
 >[!TIP]
 >
-> **<u>Tip:</u>** Deze implementeren via het [Adobe Primetime-verificatie](/help/authentication/check-authentication-token.md) service.
+> **<u>Tip:</u>** Deze implementeren via het medium [Adobe Primetime-verificatie](/help/authentication/check-authentication-token.md) service.
 
 </br>
 
-#### Stap: &quot;Is de gebruiker het programma geopend via Platform SSO?&quot; {#Is_the_user_logged_in_via_Platform_SSO}
+#### Stap: &quot;Is de gebruiker aangemeld via Platform SSO?&quot; {#Is_the_user_logged_in_via_Platform_SSO}
 
 >[!TIP]
 >
-> **<u>Tip:</u>** Deze implementeren via het [Video-abonneeaccount](https://developer.apple.com/documentation/videosubscriberaccount) kader.
+> **<u>Tip:</u>** Deze implementeren via het medium [Video-abonneeaccount](https://developer.apple.com/documentation/videosubscriberaccount) kader.
 
-- De toepassing moet controleren op [toegangsrechten](https://developer.apple.com/documentation/videosubscriberaccount/vsaccountmanager/1949763-checkaccessstatus) de abonnementsgegevens van de gebruiker en ga alleen verder als de gebruiker dit heeft toegestaan.
-- De aanvraag moet een [verzoek](https://developer.apple.com/documentation/videosubscriberaccount/vsaccountmetadatarequest) voor informatie over abonneeaccount.
-- De toepassing moet wachten en de [metagegevens](https://developer.apple.com/documentation/videosubscriberaccount/vsaccountmetadata) informatie.
+- De toepassing moet controleren op [toegangsrechten](https://developer.apple.com/documentation/videosubscriberaccount/vsaccountmanager/1949763-checkaccessstatus) de abonnementsgegevens van de gebruiker en ga alleen verder als de gebruiker dit heeft toegestaan.
+- De aanvraag moet een [verzoek](https://developer.apple.com/documentation/videosubscriberaccount/vsaccountmetadatarequest) voor de informatie van de abonneerekening.
+- De toepassing moet wachten en de [metagegevens](https://developer.apple.com/documentation/videosubscriberaccount/vsaccountmetadata) informatie.
 
- 
+
 
 >[!TIP]
 >
@@ -129,31 +129,31 @@ videoSubscriberAccountManager.checkAccessStatus(options: [VSCheckAccessOption.pr
 
 </br>
 
-#### Stap: &quot;Adobe-configuratie ophalen&quot; {#Fetch_Adobe_configuration}
+#### Stap: &quot;Configuratie Adobe ophalen&quot; {#Fetch_Adobe_configuration}
 
 >[!TIP]
 >
-> **<u>Tip:</u>** Deze implementeren via het [Adobe Primetime-verificatie](/help/authentication/provide-mvpd-list.md) service.
+> **<u>Tip:</u>** Deze implementeren via het medium [Adobe Primetime-verificatie](/help/authentication/provide-mvpd-list.md) service.
 
 
 >[!TIP]
 >
-> **<u>Pro Tip:</u>** Houd rekening met de MVPD-eigenschappen: *`enablePlatformServices`*, *`boardingStatus`*, *`displayInPlatformPicker`*, *`platformMappingId`*, *`requiredMetadataFields`* en extra aandacht besteden aan de opmerkingen in codefragmenten uit andere stappen.
+> **<u>Pro Tip:</u>** Houd rekening met de MVPD-eigenschappen: *`enablePlatformServices`*, *`boardingStatus`*, *`displayInPlatformPicker`*, *`platformMappingId`*, *`requiredMetadataFields`* en extra aandacht besteden aan de opmerkingen in codefragmenten uit andere stappen.
 
 </br>
 
-#### Stap &quot;De werkschema van SSO van het Platform met Adobe config&quot;in werking stellen {#Initiate_Platform_SSO_workflow_with_Adobe_config}
+#### Stap &quot;De werkschema van SSO van het Platform met Adobe config&quot;initialiseren {#Initiate_Platform_SSO_workflow_with_Adobe_config}
 
 >[!TIP]
 >
-> **<u>Tip:</u>** Deze implementeren via het [Video-abonneeaccount](https://developer.apple.com/documentation/videosubscriberaccount) kader.
+> **<u>Tip:</u>** Deze implementeren via het medium [Video-abonneeaccount](https://developer.apple.com/documentation/videosubscriberaccount) kader.
 
-- De toepassing moet controleren op [toegangsrechten](https://developer.apple.com/documentation/videosubscriberaccount/vsaccountmanager/1949763-checkaccessstatus) de abonnementsgegevens van de gebruiker en ga alleen verder als de gebruiker dit heeft toegestaan.
-- De toepassing moet een [gedelegeerde](https://developer.apple.com/documentation/videosubscriberaccount/vsaccountmanagerdelegate) voor VSAccountManager.
-- De aanvraag moet een [verzoek](https://developer.apple.com/documentation/videosubscriberaccount/vsaccountmetadatarequest) voor informatie over abonneeaccount.
-- De toepassing moet wachten en de [metagegevens](https://developer.apple.com/documentation/videosubscriberaccount/vsaccountmetadata) informatie.
+- De toepassing moet controleren op [toegangsrechten](https://developer.apple.com/documentation/videosubscriberaccount/vsaccountmanager/1949763-checkaccessstatus) de abonnementsgegevens van de gebruiker en ga alleen verder als de gebruiker dit heeft toegestaan.
+- De toepassing moet een [gedelegeerde](https://developer.apple.com/documentation/videosubscriberaccount/vsaccountmanagerdelegate) voor VSAccountManager.
+- De aanvraag moet een [verzoek](https://developer.apple.com/documentation/videosubscriberaccount/vsaccountmetadatarequest) voor de informatie van de abonneerekening.
+- De toepassing moet wachten en de [metagegevens](https://developer.apple.com/documentation/videosubscriberaccount/vsaccountmetadata) informatie.
 
- 
+
 
 >[!TIP]
 >
@@ -261,7 +261,7 @@ videoSubscriberAccountManager.checkAccessStatus(options: [VSCheckAccessOption.pr
 
 >[!TIP]
 >
-> **<u>Pro Tip:</u>** Houd rekening met het codefragment van het dialoogvenster [&quot;Platform SSO-workflow starten met Adobe config&quot;](#Initiate_Platform_SSO_workflow_with_Adobe_config) stap. De gebruikersaanmelding is geslaagd voor het geval dat de *`vsaMetadata!.accountProviderIdentifier`* bevat een geldige waarde en de huidige datum is nog niet verstreken *`vsaMetadata!.authenticationExpirationDate`* waarde.
+> **<u>Pro Tip:</u>** Houd rekening met het codefragment van het dialoogvenster [&quot;Platform SSO-workflow starten met Adobe config&quot;](#Initiate_Platform_SSO_workflow_with_Adobe_config) stap. De gebruikersaanmelding is geslaagd voor het geval dat de *`vsaMetadata!.accountProviderIdentifier`* bevat een geldige waarde en de huidige datum is nog niet verstreken *`vsaMetadata!.authenticationExpirationDate`* waarde.
 
 </br>
 
@@ -269,26 +269,26 @@ videoSubscriberAccountManager.checkAccessStatus(options: [VSCheckAccessOption.pr
 
 >[!TIP]
 >
-> **<u>Tip:</u>** Implementeer dit via het medium Adobe Primetime Authentication [Profielaanvraag](/help/authentication/retrieve-profilerequest.md) service.
+> **<u>Tip:</u>** Implementeer dit via het medium Adobe Primetime Authentication [Profielaanvraag](/help/authentication/retrieve-profilerequest.md) service.
 
 >[!TIP]
 >
-> **<u>Pro Tip:</u>** Houd er rekening mee dat de provider-id die wordt verkregen via het framework Video Subscriber Account de *`platformMappingId`* in termen van Adobe Primetime-verificatieconfiguratie. Daarom moet de toepassing de MVPD identiteitskaart bezitswaarde bepalen, gebruikend *`platformMappingId`* waarde, via het medium Adobe Primetime Authentication [MVPD-lijst opgeven](/help/authentication/provide-mvpd-list.md) service.
+> **<u>Pro Tip:</u>** Houd er rekening mee dat de provider-id die wordt verkregen via het framework Video Subscriber Account de *`platformMappingId`* in termen van Adobe Primetime-verificatieconfiguratie. Daarom moet de toepassing de MVPD identiteitskaart bezitswaarde bepalen, gebruikend *`platformMappingId`* waarde, via het medium Adobe Primetime Authentication [MVPD-lijst opgeven](/help/authentication/provide-mvpd-list.md) service.
 
 </br>
 
-#### Stap: &quot;Door:sturen het verzoek van Adobe aan Platform SSO om het profiel te verkrijgen&quot; {#Forward_the_Adobe_request_to_Platform_SSO_to_obtain_the_profile}
+#### Stap: &quot;Verstuur het verzoek van de Adobe naar Platform SSO om het profiel te verkrijgen&quot; {#Forward_the_Adobe_request_to_Platform_SSO_to_obtain_the_profile}
 
 >[!TIP]
 >
-> **<u>Tip:</u>** Deze implementeren via het [Video-abonneeaccount](https://developer.apple.com/documentation/videosubscriberaccount) kader.
+> **<u>Tip:</u>** Deze implementeren via het medium [Video-abonneeaccount](https://developer.apple.com/documentation/videosubscriberaccount) kader.
 
 
-- De toepassing moet controleren op [toegangsrechten](https://developer.apple.com/documentation/videosubscriberaccount/vsaccountmanager/1949763-checkaccessstatus) de abonnementsgegevens van de gebruiker en ga alleen verder als de gebruiker dit heeft toegestaan.
-- De aanvraag moet een [verzoek](https://developer.apple.com/documentation/videosubscriberaccount/vsaccountmetadatarequest) voor informatie over abonneeaccount.
-- De toepassing moet wachten en de [metagegevens](https://developer.apple.com/documentation/videosubscriberaccount/vsaccountmetadata) informatie.
+- De toepassing moet controleren op [toegangsrechten](https://developer.apple.com/documentation/videosubscriberaccount/vsaccountmanager/1949763-checkaccessstatus) de abonnementsgegevens van de gebruiker en ga alleen verder als de gebruiker dit heeft toegestaan.
+- De aanvraag moet een [verzoek](https://developer.apple.com/documentation/videosubscriberaccount/vsaccountmetadatarequest) voor de informatie van de abonneerekening.
+- De toepassing moet wachten en de [metagegevens](https://developer.apple.com/documentation/videosubscriberaccount/vsaccountmetadata) informatie.
 
- 
+
 
 >[!TIP]
 >
@@ -358,28 +358,28 @@ videoSubscriberAccountManager.checkAccessStatus(options: [VSCheckAccessOption.pr
 
 </br>
 
-#### Stap: &quot;Uitwisseling het profiel van Platform SSO voor een de authentificatietoken van Adobe&quot; {#Exchange_the_Platform_SSO_profile_for_an_Adobe_authentication_token}
+#### Stap: &quot;Exchange the Platform SSO profile for an Adobe authentication token&quot; {#Exchange_the_Platform_SSO_profile_for_an_Adobe_authentication_token}
 
 >[!TIP]
 >
-> **<u>Tip:</u>** Implementeer dit via het medium Adobe Primetime Authentication [Tokenuitwisseling](/help/authentication/token-exchange.md) service.
+> **<u>Tip:</u>** Implementeer dit via het medium Adobe Primetime Authentication [Tokenuitwisseling](/help/authentication/token-exchange.md) service.
 
 
 >[!TIP]
 >
-> **<u>Pro Tip:</u>** Houd rekening met het codefragment van het dialoogvenster [&quot;Door:sturen het verzoek van Adobe aan Platform SSO om het profiel te verkrijgen&quot;](#Forward_the_Adobe_request_to_Platform_SSO_to_obtain_the_profile) stap. Dit *`vsaMetadata!.samlAttributeQueryResponse!`* vertegenwoordigt *`SAMLResponse`*, die moet worden doorgegeven [Tokenuitwisseling](/help/authentication/token-exchange.md) en vereist tekenreeksmanipulatie en -codering (*Base64* gecodeerd en *URL* gecodeerd nadien) alvorens de vraag te maken.
+> **<u>Pro Tip:</u>** Houd rekening met het codefragment van het dialoogvenster [&quot;Het verzoek van de Adobe aan Platform SSO doorsturen om het profiel te verkrijgen&quot;](#Forward_the_Adobe_request_to_Platform_SSO_to_obtain_the_profile) stap. Dit *`vsaMetadata!.samlAttributeQueryResponse!`* vertegenwoordigt de *`SAMLResponse`*, die moet worden doorgegeven [Tokenuitwisseling](/help/authentication/token-exchange.md) en vereist tekenreeksmanipulatie en -codering (*Base64* gecodeerd en *URL* gecodeerd nadien) alvorens de vraag te maken.
 
 </br>
 
-#### Stap: &quot;Is het genereren van een Adobe-token geslaagd?&quot; {#Is_Adobe_token_generated_successfully}
+#### Stap: &quot;Wordt het teken van de Adobe met succes geproduceerd?&quot; {#Is_Adobe_token_generated_successfully}
 
 >[!TIP]
 >
-> **<u>Tip:</u>** Implementeer dit via de mediale Adobe Primetime-verificatie [Tokenuitwisseling](/help/authentication/token-exchange.md) een succesvol antwoord , dat *`204 No Content`*, die aangeeft dat de token is gemaakt en klaar is om te worden gebruikt voor de machtigingsstromen.
+> **<u>Tip:</u>** Implementeer dit via de mediale Adobe Primetime-verificatie [Tokenuitwisseling](/help/authentication/token-exchange.md) een succesvol antwoord , dat *`204 No Content`*, die aangeeft dat de token is gemaakt en klaar is om te worden gebruikt voor de machtigingsstromen.
 
 </br>
 
-#### Stap: &quot;tweede workflow voor schermverificatie starten&quot; {#Initiate_second_screen_authentication_workflow}
+#### Stap: &quot;De tweede workflow voor schermverificatie starten&quot; {#Initiate_second_screen_authentication_workflow}
 
 **Belangrijk:** De terminologie van de &quot;Tweede workflow voor schermverificatie&quot; is geschikt voor AppleTV&#39;s, terwijl de terminologie &quot;Eerste workflow voor schermverificatie&quot; / &quot;Reguliere workflow voor verificatie&quot; geschikter zou zijn voor iPhones en iPads.
 
@@ -388,28 +388,28 @@ videoSubscriberAccountManager.checkAccessStatus(options: [VSCheckAccessOption.pr
 >
 > **<u>Tip:</u>** Implementeer dit via het medium Adobe Primetime Authentication
 
-[Registratiecode-aanvraag](/help/authentication/registration-code-request.md), [Verificatie starten](/help/authentication/initiate-authentication.md) en [REST API-verificatietoken ophalen](/help/authentication/retrieve-authentication-token.md) of [Verificatietoken controleren](/help/authentication/check-authentication-token.md) diensten.
+[Registratiecode-aanvraag](/help/authentication/registration-code-request.md), [Verificatie starten](/help/authentication/initiate-authentication.md) en [REST API-verificatietoken ophalen](/help/authentication/retrieve-authentication-token.md) of [Verificatietoken controleren](/help/authentication/check-authentication-token.md) diensten.
 
 
 >[!TIP]
 >
 > **<u>Pro Tip:</u>** Volg de onderstaande stappen voor de implementatie(s) van tvOS.
 
-- De aanvraag moet [een registratiecode verkrijgen](/help/authentication/registration-code-request.md) en deze aan de eindgebruiker presenteren op het eerste apparaat (scherm).
+- De aanvraag moet [een registratiecode verkrijgen](/help/authentication/registration-code-request.md) en deze aan de eindgebruiker presenteren op het eerste apparaat (scherm).
 - De toepassing moet worden gestart [opiniepeiling ter erkenning van de verificatiestatus](/help/authentication/retrieve-authentication-token.md) op het eerste apparaat (scherm) nadat de registratiecode is verkregen.
-- Een andere toepassing moet [verificatie starten](/help/authentication/initiate-authentication.md) op een tweede apparaat (scherm) wanneer de registratiecode wordt gebruikt.
-- De toepassing moet stoppen [pollen](/help/authentication/retrieve-authentication-token.md) op het eerste apparaat (scherm) wanneer het authentificatietoken wordt geproduceerd.
+- Een andere toepassing moet [verificatie starten](/help/authentication/initiate-authentication.md) op een tweede apparaat (scherm) wanneer de registratiecode wordt gebruikt.
+- De toepassing moet stoppen [pollen](/help/authentication/retrieve-authentication-token.md) op het eerste apparaat (scherm) wanneer het authentificatietoken wordt geproduceerd.
 
- 
+
 
 >[!TIP]
 >
 > **<u>Pro Tip:</u>** Voer de onderstaande stappen uit voor de iOS/iPadOS-implementatie(s).
 
-- De aanvraag moet [een registratiecode verkrijgen](/help/authentication/registration-code-request.md) die niet aan het eind - gebruiker op het 1ste apparaat (scherm) zou moeten worden voorgesteld.
-- De aanvraag moet [verificatie starten](/help/authentication/initiate-authentication.md) op het eerste apparaat (scherm) met behulp van de registratiecode en een [WKWebView](https://developer.apple.com/documentation/webkit/wkwebview) of [SFSafariViewController](https://developer.apple.com/documentation/safariservices/sfsafariviewcontroller) component.
-- De toepassing moet worden gestart [opiniepeiling om de verificatiestatus te kennen](/help/authentication/retrieve-authentication-token.md) op het eerste apparaat (scherm) na de [WKWebView](https://developer.apple.com/documentation/webkit/wkwebview) of de [SFSafariViewController](https://developer.apple.com/documentation/safariservices/sfsafariviewcontroller) sluit.
-- De toepassing moet stoppen [pollen](/help/authentication/retrieve-authentication-token.md) op het eerste apparaat (scherm) wanneer het authentificatietoken wordt geproduceerd.
+- De aanvraag moet [een registratiecode verkrijgen](/help/authentication/registration-code-request.md) die niet aan het eind - gebruiker op het 1ste apparaat (scherm) zou moeten worden voorgesteld.
+- De aanvraag moet [verificatie starten](/help/authentication/initiate-authentication.md) op het eerste apparaat (scherm) met behulp van de registratiecode en een [WKWebView](https://developer.apple.com/documentation/webkit/wkwebview) of [SFSafariViewController](https://developer.apple.com/documentation/safariservices/sfsafariviewcontroller) component.
+- De toepassing moet worden gestart [opiniepeiling om de verificatiestatus te kennen](/help/authentication/retrieve-authentication-token.md) op het eerste apparaat (scherm) na de [WKWebView](https://developer.apple.com/documentation/webkit/wkwebview) of de [SFSafariViewController](https://developer.apple.com/documentation/safariservices/sfsafariviewcontroller) wordt gesloten.
+- De toepassing moet stoppen [pollen](/help/authentication/retrieve-authentication-token.md) op het eerste apparaat (scherm) wanneer het authentificatietoken wordt geproduceerd.
 
 </br>
 
@@ -417,37 +417,37 @@ videoSubscriberAccountManager.checkAccessStatus(options: [VSCheckAccessOption.pr
 
 >[!TIP]
 >
-> **<u>Tip:</u>** Implementeer dit via het medium Adobe Primetime Authentication [Autorisatie starten](/help/authentication/initiate-authorization.md) en [Token voor korte media verkrijgen](/help/authentication/obtain-short-media-token.md) diensten.
+> **<u>Tip:</u>** Implementeer dit via het medium Adobe Primetime Authentication [Autorisatie starten](/help/authentication/initiate-authorization.md) en [Token voor korte media verkrijgen](/help/authentication/obtain-short-media-token.md) diensten.
 
 </br>
 
 ### Afmelden {#Logout}
 
-De [Video-abonneeaccount](https://developer.apple.com/documentation/videosubscriberaccount) framework biedt geen API om personen die zich op het niveau van het apparaatsysteem hebben aangemeld bij hun tv-provider, via programmacode af te melden. Om de logout volledig van kracht te laten worden, moet de eindgebruiker zich daarom expliciet afmelden *`Settings -> TV Provider`* op iOS/iPadOS of *`Settings -> Accounts -> TV Provider`* op tvOS. De andere mogelijkheid die de gebruiker zou hebben, is het intrekken van de machtiging om de abonnementsgegevens van de gebruiker te openen in het gedeelte met specifieke toepassingsinstellingen (toegang tot tv-provider).
+De [Video-abonneeaccount](https://developer.apple.com/documentation/videosubscriberaccount) framework biedt geen API om personen die zich op het niveau van het apparaatsysteem hebben aangemeld bij hun tv-provider, via programmacode af te melden. Om de logout volledig van kracht te laten worden, moet de eindgebruiker zich daarom expliciet afmelden *`Settings -> TV Provider`* op iOS/iPadOS of *`Settings -> Accounts -> TV Provider`* op tvOS. De andere mogelijkheid die de gebruiker zou hebben, is het intrekken van de machtiging om de abonnementsgegevens van de gebruiker te openen in het gedeelte met specifieke toepassingsinstellingen (toegang tot tv-provider).
 
 >[!TIP]
 >
-> **<u>Tip:</u>** Implementeer dit via het medium Adobe Primetime Authentication [Gebruikersmetagegevensaanroep](/help/authentication/user-metadata.md) en [Afmelden](/help/authentication/initiate-logout.md) diensten.
+> **<u>Tip:</u>** Implementeer dit via het medium Adobe Primetime Authentication [Gebruikersmetagegevensaanroep](/help/authentication/user-metadata.md) en [Afmelden](/help/authentication/initiate-logout.md) diensten.
 
 
 >[!TIP]
 >
 > **<u>Pro Tip:</u>** Volg de onderstaande stappen voor de implementatie(s) van tvOS.
- 
 
-- De toepassing zou moeten bepalen als de authentificatie als resultaat van login door platform SSO of niet, gebruikend &quot;*tokenSource&quot;* [gebruikersmetagegevens](/help/authentication/user-metadata.md) van de Adobe Primetime-verificatieservice.
-- De toepassing moet de gebruiker de instructie geven/vragen zich expliciet af te melden *`Settings -> Accounts -> TV Provider`* op tvOS **alleen** in geval van *&quot;tokenSource&quot;* waarde is gelijk aan &quot;*Apple&quot;.*
+
+- De toepassing zou moeten bepalen als de authentificatie als resultaat van een login door platform SSO of niet, gebruikend &quot;*tokenSource&quot;* [gebruikersmetagegevens](/help/authentication/user-metadata.md) van de Adobe Primetime Authentication-service.
+- De toepassing moet de gebruiker de instructie geven/vragen zich expliciet af te melden *`Settings -> Accounts -> TV Provider`* op tvOS **alleen** in geval van *&quot;tokenSource&quot;* waarde is gelijk aan &quot;*Apple&quot;.*
 - De aanvraag moet [start de logout](/help/authentication/initiate-logout.md) van de Adobe Primetime-verificatieservice via een directe HTTP-aanroep. Dit zou sessieopruiming aan de MVPD-zijde niet vergemakkelijken.
 
- 
+
 
 >[!TIP]
 >
 > **<u>Pro Tip:</u>** Voer de onderstaande stappen uit voor de iOS/iPadOS-implementatie(s).
 
-- De toepassing zou moeten bepalen als de authentificatie als resultaat van een login door platform SSO of niet, gebruikend &quot;*tokenSource&quot;* [gebruikersmetagegevens](/help/authentication/user-metadata.md) van de Adobe Primetime-verificatieservice.
-- De toepassing moet de gebruiker de instructie geven/vragen zich expliciet af te melden *`Settings -> TV Provider`* op iOS/iPadOS **alleen** in geval van *&quot;tokenSource&quot;* waarde is gelijk aan *&quot;Apple&quot;*.
-- De aanvraag moet [start de logout](/help/authentication/initiate-logout.md) van de Adobe Primetime-verificatieservice via een [WKWebView](https://developer.apple.com/documentation/webkit/wkwebview) of [SFSafariViewController](https://developer.apple.com/documentation/safariservices/sfsafariviewcontroller) component. Dit zou zittingsschoonmaak aan de kant van MVPD vergemakkelijken.
+- De toepassing zou moeten bepalen als de authentificatie als resultaat van een login door platform SSO of niet, gebruikend &quot;*tokenSource&quot;* [gebruikersmetagegevens](/help/authentication/user-metadata.md) van de Adobe Primetime Authentication-service.
+- De toepassing moet de gebruiker de instructie geven/vragen zich expliciet af te melden *`Settings -> TV Provider`* op iOS/iPadOS **alleen** in geval van *&quot;tokenSource&quot;* waarde is gelijk aan *&quot;Apple&quot;*.
+- De aanvraag moet [start de logout](/help/authentication/initiate-logout.md) van de Adobe Primetime-verificatieservice via een [WKWebView](https://developer.apple.com/documentation/webkit/wkwebview) of [SFSafariViewController](https://developer.apple.com/documentation/safariservices/sfsafariviewcontroller) component. Dit zou zittingsschoonmaak aan de kant van MVPD vergemakkelijken.
 
 <!--
 
@@ -458,5 +458,5 @@ De [Video-abonneeaccount](https://developer.apple.com/documentation/videosubscr
 - [REST API Cookbook (Server-to-Server)](/help/authentication/rest-api-cookbook-servertoserver.md)
 - [REST API Cookbook (Client-to-Server)](/help/authentication/rest-api-cookbook-clienttoserver.md)
 - [REST API Reference](/help/authentication/rest-api-reference.md)
-- [Apple Developer Documentation - Video Subscriber Account Framework](https://developer.apple.com/documentation/videosubscriberaccount)
+- [Apple Developer Documentation - Video Subscriber Account Framework](https://developer.apple.com/documentation/videosubscriberaccount)
 -->

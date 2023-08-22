@@ -2,9 +2,9 @@
 title: iOS/tvOS Cookbook
 description: iOS/tvOS Cookbook
 exl-id: 4743521e-d323-4d1d-ad24-773127cfbe42
-source-git-commit: bfc3ba55c99daba561255760baf273b6538a3c6e
+source-git-commit: 84a16ce775a0aab96ad954997c008b5265e69283
 workflow-type: tm+mt
-source-wordcount: '2414'
+source-wordcount: '2413'
 ht-degree: 0%
 
 ---
@@ -23,9 +23,9 @@ De Adobe Primetime-oplossing voor verificatiebevoegdheden voor iOS/tvOS bestaat 
 
 * Het domein UI - dit is de bovenste toepassingslaag die UI uitvoert en de diensten gebruikt die door de bibliotheek AccessEnabler worden verleend om toegang tot beperkte inhoud te verlenen.
 
-* Het domein AccessEnabler - dit is waar de machtigingswerkstromen in de vorm van worden uitgevoerd:
+* Het domein AccessEnabler - dit is waar de machtigingswerkschema&#39;s in de vorm van worden uitgevoerd:
 
-   * De vraag van het netwerk die aan Adobe backend servers wordt gemaakt
+   * De vraag van het netwerk die aan de backendservers van de Adobe wordt gemaakt
    * Zakelijke en logische regels met betrekking tot de workflows voor verificatie en autorisatie
    * Beheer van diverse bronnen en verwerking van workflowstatus (zoals de tokencache)
 
@@ -44,7 +44,7 @@ De het netwerkactiviteit van AccessEnabler vindt plaats in zijn eigen draad, zod
 
 ## De bezoeker-id configureren {#visitorIDSetup}
 
-Een [Marketing Cloud bezoekerID](https://marketing.adobe.com/resources/help/en_US/mcvid/) waarde is vanuit analytisch oogpunt zeer belangrijk . Zodra een bezoekerID-waarde is ingesteld, verzendt de SDK deze informatie samen met elke netwerkaanroep en verzamelt de Adobe Primetime-verificatieserver deze informatie. In de toekomst kunt u de analysemogelijkheden van de Adobe Primetime Authentication-service correleren met andere analytische rapporten die u hebt van andere toepassingen of websites. Informatie over het instellen van bezoekerID vindt u [hier](#setOptions).
+Een [Marketing Cloud bezoekerID](https://experienceleague.adobe.com/docs/id-service/using/home.html) waarde is vanuit analytisch oogpunt van groot belang . Zodra een bezoekerID-waarde is ingesteld, verzendt de SDK deze informatie samen met elke netwerkaanroep en verzamelt de Adobe Primetime-verificatieserver deze informatie. In de toekomst kunt u de analysemogelijkheden van de Adobe Primetime Authentication-service correleren met andere analytische rapporten die u hebt van andere toepassingen of websites. Informatie over het instellen van bezoekerID vindt u [hier](#setOptions).
 
 ## Machtigingsstromen {#entitlement}
 
@@ -69,80 +69,80 @@ I.  [Afmeldingsstroom met Apple SSO](#logout_flow_with_AppleSSO) </br>
    * [`displayProviderDialog(mvpds)`](#$dispProvDialog) </br>
       * geactiveerd door [`getAuthentication()`](#$getAuthN) alleen als de gebruiker geen provider (MVPD) heeft geselecteerd en nog niet is geverifieerd. </br>
       * De `mvpds` parameter is een array van providers die beschikbaar zijn voor de gebruiker.
+
    * `setAuthenticationStatus(status, errorcode)` </br>
       * geactiveerd door `checkAuthentication()` elke keer. </br>
       * geactiveerd door [`getAuthentication()`](#$getAuthN) alleen als de gebruiker al is geverifieerd en een provider heeft geselecteerd. </br>
       * De geretourneerde status is geslaagd of mislukt. De foutcode beschrijft het type fout.
+
    * [`navigateToUrl(url)`](#$nav2url) </br>
       * geactiveerd door [`getAuthentication()`](#$getAuthN) nadat de gebruiker een MVPD selecteert. De `url` parameter verstrekt de plaats van de MVPD login pagina.
+
    * `sendTrackingData(event, data)` </br>
       * geactiveerd door `checkAuthentication()`, [`getAuthentication()`](#$getAuthN), `checkAuthorization()`, [`getAuthorization()`](#$getAuthZ), `setSelectedProvider()`.
-      * De `event` parameter geeft aan welke gebeurtenis machtiging heeft plaatsgevonden; de `data` parameter is een lijst van waarden met betrekking tot de gebeurtenis. 
+      * De `event` parameter geeft aan welke machtigingsgebeurtenis heeft plaatsgevonden; de `data` parameter is een lijst van waarden met betrekking tot de gebeurtenis.
+
    * `setToken(token, resource)`
 
       * geactiveerd door [checkAuthorization()](#checkAuthZ) en [getAuthorization()](#$getAuthZ) na een geslaagde machtiging om een bron te bekijken.
-      * De `token` parameter het kortstondige media-token is; de `resource` parameter is de inhoud die de gebruiker mag bekijken.
+      * De `token` parameter is het kortstondige media token; de `resource` parameter is de inhoud die de gebruiker mag bekijken.
+
    * `tokenRequestFailed(resource, code, description)` </br>
-      * geactiveerd door [checkAuthorization()](#checkAuthZ) en [getAuthorization()](#$getAuthZ) na een geslaagde toelating.
-      * De `resource` parameter de inhoud is die de gebruiker probeerde te bekijken; de `code` parameter de foutcode is die aangeeft welk type fout is opgetreden; de `description` parameter beschrijft de fout die aan de foutencode wordt geassocieerd.
+      * geactiveerd door [checkAuthorization()](#checkAuthZ) en [getAuthorization()](#$getAuthZ) na een niet-succesvolle toelating.
+      * De `resource` parameter is de inhoud die de gebruiker probeerde te bekijken; de `code` parameter is de foutcode die aangeeft welk type fout is opgetreden; de `description` parameter beschrijft de fout die aan de foutencode wordt geassocieerd.
+
    * `selectedProvider(mvpd)` </br>
       * geactiveerd door [`getSelectedProvider()`](#getSelProv).
       * De `mvpd` parameter geeft informatie over de provider die door de gebruiker is geselecteerd.
+
    * `setMetadataStatus(metadata, key, arguments)`
       * geactiveerd door `getMetadata().`
-      * De `metadata` parameter de specifieke gegevens verstrekt u vroeg; de `key` parameter is de sleutel die wordt gebruikt in de [getMetadata()](#getMeta) verzoek; en de `arguments` parameter is hetzelfde woordenboek als dat waaraan is doorgegeven [getMetadata()](#getMeta).
+      * De `metadata` parameter bevat de specifieke gegevens die u hebt aangevraagd; de `key` parameter is de sleutel die wordt gebruikt in de [getMetadata()](#getMeta) en de `arguments` parameter is hetzelfde woordenboek als dat waaraan is doorgegeven [getMetadata()](#getMeta).
+
    * [&quot;preauthorisedResources(authorisedResources)&quot;](#preauthResources)
 
       * geactiveerd door [`checkPreauthorizedResources()`](#checkPreauth).
 
       * De `authorizedResources` parameter geeft de bronnen weer die de gebruiker mag bekijken.
+
    * [` presentTvProviderDialog(viewController)`](#presentTvDialog)
 
       * geactiveerd door [getAuthentication()](#getAuthN) wanneer de huidige aanvrager minstens op MVPD steunt die steun SSO heeft.
       * De parameter viewController is de dialoog van Apple SSO en moet op het belangrijkste meningscontrolemechanisme worden voorgesteld.
+
    * [` dismissTvProviderDialog(viewController)`](#dismissTvDialog)
 
       * Wordt geactiveerd door een gebruikershandeling (door &quot;Annuleren&quot; of &quot;Andere tv-providers&quot; te selecteren in het dialoogvenster Apple SSO).
       * De viewController parameter is de Dialoog van Apple SSO en moet van het belangrijkste meningscontrolemechanisme worden verworpen.
 
-
-
-
-
-
-
-
-
-
-
 ![](assets/iOS-flows.png)
 
-### B. Stroom opstarten {#startup_flow}
+### B. Startstroom {#startup_flow}
 
 1. Start de toepassing op het hoogste niveau.</br>
 1. Adobe Primetime-verificatie starten </br>
 
    a. Bellen [`init`](#$init) om één enkel geval van de authentificatie AccessEnabler van Adobe Primetime te creëren.
    * **Afhankelijkheid:** Adobe Primetime-verificatienative iOS/tvOS-bibliotheek (AccessEnabler)
-   b. Bellen `setRequestor()` de identiteit van de programmeur vast te stellen; slagen in de `requestorID` en (optioneel) een array met Adobe Primetime-verificatieeindpunten. Voor tvOS zult u ook de openbare sleutel en het geheim moeten verstrekken. Zie [Clientloze documentatie](#create_dev) voor meer informatie.
+
+   b. Oproep `setRequestor()` om de identiteit van de programmeur vast te stellen; `requestorID` en (optioneel) een array met Adobe Primetime-verificatieeindpunten. Voor tvOS zult u ook de openbare sleutel en het geheim moeten verstrekken. Zie [Clientloze documentatie](#create_dev) voor meer informatie.
 
    * **Afhankelijkheid:** Geldige Adobe Primetime-verificatieaanvraag-id (werk dit samen met uw Adobe Primetime-verificatieaccountmanager).
 
    * **Triggers:**
-      [setRequestComplete()](#$setReqComplete) callback.
+     [setRequestorComplete()](#$setReqComplete) callback.
+
    >[!NOTE]
    >
    >Er kunnen geen aanvragen voor een machtiging worden ingevuld totdat de identiteit van de aanvrager volledig is vastgesteld. Dit betekent in feite dat [`setRequestor()`](#$setReq)  nog steeds actief is, alle volgende aanvragen voor machtigingen. Bijvoorbeeld: [`checkAuthentication()`](#checkAuthN) zijn geblokkeerd.
 
-   U hebt twee implementatieopties: Zodra de informatie van de verzoeksidentificatie naar de achterste deelserver wordt verzonden, kan de toepassingslaag UI één van de twee volgende benaderingen kiezen: </br>
+   U hebt twee implementatieopties: wanneer de informatie van de aanvrager-identificatie naar de back-endserver is verzonden, kan de UI-toepassingslaag een van de volgende twee methoden kiezen: </br>
 
    1. Wacht op het in werking stellen van [`setRequestorComplete()`](#setReqComplete) callback (deel van de afgevaardigde AccessEnabler). Deze optie biedt de meeste zekerheid dat [`setRequestor()`](#$setReq) voltooid, dus wordt het aanbevolen voor de meeste implementaties.
 
-   1. Doorgaan zonder te wachten op de activering van de [`setRequestorComplete()`](#setReqComplete) callback en begin met het afgeven van aanvragen voor machtigingen. Deze vraag (checkAuthentication, checkAuthorization, getAuthentication, getAuthorization, checkPreauthorisedResource, getMetadata, logout) wordt een rij gevormd door de bibliotheek AccessEnabler, die de daadwerkelijke netwerkvraag na het netwerk zal maken [`setRequestor()`](#$setReq). Deze optie kan af en toe worden onderbroken als, bijvoorbeeld, de netwerkverbinding instabiel is.
+   1. Doorgaan zonder te wachten op de activering van de [`setRequestorComplete()`](#setReqComplete) callback en begin met het afgeven van aanvragen voor machtigingen. Deze vraag (checkAuthentication, checkAuthorization, getAuthentication, getAuthorization, checkPreauthorisedResource, getMetadata, logout) wordt een rij gevormd door de bibliotheek AccessEnabler, die de daadwerkelijke netwerkvraag na het [`setRequestor()`](#$setReq). Deze optie kan af en toe worden onderbroken als, bijvoorbeeld, de netwerkverbinding instabiel is.
 
-
-
-1. Bellen `checkAuthentication()` om op een bestaande authentificatie te controleren zonder de volledige stroom van de Authentificatie in werking te stellen.  Als deze vraag slaagt, kunt u aan de stroom van de Vergunning direct te werk gaan. Als niet, ga aan de stroom van de Authentificatie te werk.
+1. Bellen `checkAuthentication()` om op een bestaande authentificatie te controleren zonder de volledige stroom van de Authentificatie in werking te stellen.  Als deze vraag slaagt, kunt u aan de stroom van de Vergunning direct te werk gaan. Zo niet, ga dan door naar de verificatiestroom.
 
    * **Afhankelijkheid:** Een geslaagde oproep tot [setRequestor()](#$setReq) (dit gebiedsdeel is ook op alle verdere vraag van toepassing).
 
@@ -205,7 +205,7 @@ I.  [Afmeldingsstroom met Apple SSO](#logout_flow_with_AppleSSO) </br>
    **Triggers:**
    * De [`presentTvProviderDialog()`](#presentTvDialog) callback, als de gebruiker niet voor authentiek wordt verklaard en de huidige aanvrager minstens op MVPD heeft die SSO steunt. Als geen MVPDs SSO steunt, zal de klassieke authentificatiestroom worden gebruikt.
 
-1. Nadat de gebruiker een provider heeft geselecteerd, [`status()`](#status_callback_implementation) callback wordt opgeroepen. Er wordt een registratiecode opgegeven en de AccessEnabler-bibliotheek begint de server te pollen voor een geslaagde verificatie op het tweede scherm.
+1. Nadat de gebruiker een provider heeft geselecteerd, [`status()`](#status_callback_implementation) callback wordt aangeroepen. Er wordt een registratiecode opgegeven en de AccessEnabler-bibliotheek begint de server te pollen voor een geslaagde verificatie op het tweede scherm.
 
 1. Als de opgegeven registratiecode is gebruikt voor verificatie op het tweede scherm, wordt de instelling [`setAuthenticatiosStatus()`](#setAuthNStatus) callback wordt geactiveerd. Op dit moment moet de gebruiker worden geverifieerd met Apple SSO.
 1. [Optioneel] Bellen [`checkPreauthorizedResources(resources)`](#$checkPreauth) om te controleren welke middelen de gebruiker wordt gemachtigd om te bekijken. De `resources` parameter is een array met beveiligde bronnen die is gekoppeld aan het verificatietoken van de gebruiker. U kunt onder andere de machtigingsinformatie van de MVPD van de gebruiker gebruiken om de gebruikersinterface te versieren (bijvoorbeeld vergrendelde/ontgrendelde symbolen naast beveiligde inhoud).
@@ -215,7 +215,7 @@ I.  [Afmeldingsstroom met Apple SSO](#logout_flow_with_AppleSSO) </br>
    * **Uitvoeringspunt:** Na de voltooide verificatiestroom
 1. Ga door naar de machtigingsstroom als de verificatie is gelukt.
 
-### F. Autorisatiestroom {#authz_flow}
+### F. Vergunningsstroom {#authz_flow}
 
 1. Bellen [getAuthorization()](#$getAuthZ) de vergunningsstroom in gang te zetten.
 
@@ -224,9 +224,9 @@ I.  [Afmeldingsstroom met Apple SSO](#logout_flow_with_AppleSSO) </br>
 
 1. Verificatie en autorisatie valideren.
 
-   * Als de [getAuthorization()](#$getAuthZ) oproep gelukt: De gebruiker heeft geldige AuthN en AuthZ tokens (de gebruiker wordt voor authentiek verklaard en gemachtigd om de gevraagde media te bekijken).
+   * Als de [getAuthorization()](#$getAuthZ) De vraag slaagt: De gebruiker heeft geldige tokens AuthN en AuthZ (de gebruiker wordt voor authentiek verklaard en gemachtigd om de gevraagde media te bekijken).
 
-   * Indien [getAuthorization()](#$getAuthZ) mislukt: Onderzoek de geworpen uitzondering om zijn type (AuthN, AuthZ, of iets anders) te bepalen:
+   * Indien [getAuthorization()](#$getAuthZ) ontbreekt: Onderzoek de geworpen uitzondering om zijn type (AuthN, AuthZ, of iets anders) te bepalen:
       * Als het een authentificatie (AuthN) fout was dan herstart de authentificatiestroom.
       * Als het een autorisatiefout (AuthZ) was, dan is de gebruiker niet geautoriseerd om de gevraagde media te bekijken en een soort foutbericht zou aan de gebruiker moeten worden getoond.
       * Als er een ander type fout is opgetreden (verbindingsfout, netwerkfout, enz.) geeft u vervolgens een geschikt foutbericht weer aan de gebruiker.
@@ -234,8 +234,8 @@ I.  [Afmeldingsstroom met Apple SSO](#logout_flow_with_AppleSSO) </br>
 1. Valideer de token voor korte media.\
    Gebruik de Adobe Primetime-verificatiebibliotheek van Media Token Verifier om het kortstondige mediatoken te verifiëren dat door de [getAuthorization()](#$getAuthZ) oproep hierboven:
 
-   * Als de validatie is gelukt: De gewenste media afspelen voor de gebruiker.
-   * Als de validatie mislukt: De AuthZ-token was ongeldig, de mediaquery moest worden geweigerd en er moet een foutbericht worden weergegeven aan de gebruiker.
+   * Als de validatie is gelukt: de gevraagde media afspelen voor de gebruiker.
+   * Als de validatie mislukt: de AuthZ-token was ongeldig, wordt de mediaquery geweigerd en wordt een foutbericht weergegeven aan de gebruiker.
 
 
 1. Ga terug naar de normale stroom van de toepassing.
@@ -249,13 +249,13 @@ I.  [Afmeldingsstroom met Apple SSO](#logout_flow_with_AppleSSO) </br>
 
    * Als het geselecteerde medium niet is beveiligd, speelt u de media voor de gebruiker af.
 
-### H. Afmeldingsstroom zonder Apple SSO {#logout_flow_wo_AppleSSO}
+### H. Logout Flow zonder Apple SSO {#logout_flow_wo_AppleSSO}
 
 1. Bellen [`logout()`](#$logout) om de gebruiker af te melden. AccessEnabler ontruimt alle caching waarden en tekenen. Na het ontruimen van het geheime voorgeheugen, richt AccessEnabler een servervraag om de server-zijzittingen schoon te maken. Merk op dat aangezien de servervraag in SAML kon resulteren die aan IdP (dit staat voor de zittingsschoonmaak op de kant IdP toe) wordt omgeleid, deze vraag moet alle omleidingen volgen. Om deze reden, moet deze vraag binnen een controlemechanisme UIWebView/WKWebView of SFSafariViewController worden behandeld.
 
    a. Na het zelfde patroon zoals het authentificatiewerkschema, doet het domein AccessEnabler een verzoek aan de UI toepassingslaag, via `navigateToUrl:` of `navigateToUrl:useSVC:` callback, om een controlemechanisme te creëren UIWebView/WKWebView of SFSafariViewController en die opdracht te geven om URL te laden die in callback wordt verstrekt `url` parameter. Dit is URL van het logout eindpunt op de achtergrondserver.
 
-   b. Uw toepassing moet de activiteit van `UIWebView/WKWebView or SFSafariViewController` en detecteert het moment waarop een specifieke aangepaste URL wordt geladen, terwijl verschillende omleidingen worden doorlopen. Deze specifieke aangepaste URL is in feite ongeldig en is niet bestemd voor de controller om deze daadwerkelijk te laden. Deze mag alleen door uw toepassing worden geïnterpreteerd als een signaal dat de afmeldingsflow is voltooid en dat het veilig is om de `UIWebView/WKWebView` of `SFSafariViewController` controller. Wanneer de controller deze specifieke aangepaste URL laadt, moet de toepassing het dialoogvenster `UIWebView/WKWebView or SFSafariViewController` controlemechanisme en vraag AccessEnabler `handleExternalURL:url`API-methode. In geval van een `SFSafariViewController`controller moet worden gebruikt. De specifieke aangepaste URL wordt gedefinieerd door de **`application's custom scheme`** (bijvoorbeeld `adbe.u-XFXJeTSDuJiIQs0HVRAg://adobe.com`), anders wordt deze specifieke aangepaste URL gedefinieerd door de **`ADOBEPASS_REDIRECT_URL`**  constant (d.w.z. `adobepass://ios.app`).
+   b. Uw toepassing moet de activiteit van de `UIWebView/WKWebView or SFSafariViewController` en detecteert het moment waarop een specifieke aangepaste URL wordt geladen, terwijl verschillende omleidingen worden doorlopen. Deze specifieke aangepaste URL is in feite ongeldig en is niet bestemd voor de controller om deze daadwerkelijk te laden. Deze mag alleen door uw toepassing worden geïnterpreteerd als een signaal dat de afmeldingsflow is voltooid en dat het veilig is om de `UIWebView/WKWebView` of `SFSafariViewController` controller. Wanneer de controller deze specifieke aangepaste URL laadt, moet de toepassing het dialoogvenster `UIWebView/WKWebView or SFSafariViewController` controlemechanisme en vraag AccessEnabler `handleExternalURL:url`API-methode. In geval van een `SFSafariViewController`controller moet worden gebruikt. De specifieke aangepaste URL wordt gedefinieerd door de **`application's custom scheme`** (bijvoorbeeld `adbe.u-XFXJeTSDuJiIQs0HVRAg://adobe.com`), anders wordt deze specifieke aangepaste URL gedefinieerd door de **`ADOBEPASS_REDIRECT_URL`**  constant (d.w.z. `adobepass://ios.app`).
 
    >[!NOTE]
    >

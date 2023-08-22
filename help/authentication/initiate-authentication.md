@@ -2,7 +2,7 @@
 title: Verificatie starten
 description: Verificatie starten
 exl-id: 55dddd29-68d6-4aae-8744-307fea285e29
-source-git-commit: bfc3ba55c99daba561255760baf273b6538a3c6e
+source-git-commit: 84a16ce775a0aab96ad954997c008b5265e69283
 workflow-type: tm+mt
 source-wordcount: '290'
 ht-degree: 0%
@@ -19,24 +19,24 @@ ht-degree: 0%
 
 &lt;reggie_fqdn>:
 
-* Productie - [api.auth.adobe.com](http://api.auth.adobe.com/)
-* Staging - [api.auth-staging.adobe.com](http://api.auth-staging.adobe.com/)
+* Productie - [api.auth.adobe.com](http://api.auth.adobe.com/)
+* Staging - [api.auth-staging.adobe.com](http://api.auth-staging.adobe.com/)
 
 &lt;sp_fqdn>:
 
-* Productie - [api.auth.adobe.com](http://api.auth.adobe.com/)
-* Staging - [api.auth-staging.adobe.com](http://api.auth-staging.adobe.com/)
+* Productie - [api.auth.adobe.com](http://api.auth.adobe.com/)
+* Staging - [api.auth-staging.adobe.com](http://api.auth-staging.adobe.com/)
 
 </br>
 
 
 ## Beschrijving {#description}
 
-Hiermee wordt het verificatieproces gestart door een MVPD-selectiegebeurtenis op de hoogte te stellen. Creeert een verslag op het gegevensbestand van de authentificatie Primetime, dat in overeenstemming wordt gebracht wanneer een succesvolle reactie van MVPD wordt ontvangen. 
+Hiermee wordt het verificatieproces gestart door een MVPD-selectiegebeurtenis op de hoogte te stellen. Creeert een verslag op het gegevensbestand van de authentificatie Primetime, dat in overeenstemming wordt gebracht wanneer een succesvolle reactie van MVPD wordt ontvangen.
 
 
 
-| Endpoint | Geroepen  </br>Door | Invoer   </br>Params | HTTP  </br>Methode | Antwoord | HTTP  </br>Antwoord |
+| Endpoint | Geroepen  </br>Door | Invoer   </br>Params | HTTP  </br>Methode | Antwoord | HTTP  </br>Antwoord |
 | --- | --- | --- | --- | --- | --- |
 | &lt;sp_fqdn>/api/v1/authenticate | Module AuthN | 1. aanvrager_id (verplicht)</br>2.  mso_id (verplicht)</br>3.  reg_code (verplicht)</br>4.  domain_name (verplicht)</br>5.  noflash=true -  </br>    (Verplicht, residuele parameter)</br>6.  no_iframe=true (verplicht, residuparameter)</br>7.  extra parameters (optioneel)</br>8.  redirect_url (verplicht) | GET | De Login App van het Web wordt opnieuw gericht aan de MVPD login pagina. | 302 voor volledige omleiding |
 
@@ -57,13 +57,12 @@ Hiermee wordt het verificatieproces gestart door een MVPD-selectiegebeurtenis op
 
 >[!IMPORTANT]
 > 
->**Belangrijk: Verplichte parameters -** Ongeacht de implementatie op de client zijn alle bovenstaande parameters verplicht.
+>**Belangrijk: verplichte parameters -** Ongeacht de implementatie op de client zijn alle bovenstaande parameters verplicht.
 >
 >
->Voorbeeld:    
+>Voorbeeld:
 >
->
-```
+>```
 >domain_name=loginwebapp.com
 >mso_id=sampleMvpdId
 >reg_code=RO0885W
@@ -74,7 +73,7 @@ Hiermee wordt het verificatieproces gestart door een MVPD-selectiegebeurtenis op
 
 >[!IMPORTANT]
 > 
->**Belangrijk: Optionele parameters**
+>**Belangrijk: optionele parameters**
 >
 >De oproep kan ook optionele parameters bevatten die andere functies mogelijk maken, zoals:
 >
@@ -88,10 +87,10 @@ Hiermee wordt het verificatieproces gestart door een MVPD-selectiegebeurtenis op
 
 ### **Notities** {#notes}
 
-* De waarde van de `domain_name` parameter moet aan één van de domeinnamen worden geplaatst die met authentificatie Primetime worden geregistreerd. Raadpleeg voor meer informatie [Registratie en initialisatie](/help/authentication/programmer-overview.md).
+* De waarde van `domain_name` parameter moet aan één van de domeinnamen worden geplaatst die met authentificatie Primetime worden geregistreerd. Raadpleeg voor meer informatie [Registratie en initialisatie](/help/authentication/programmer-overview.md).
 
 * [Gebruik geen &#39;&amp;&#39;reg\_code in /authenticate request (Tech Note)](/help/authentication/clientless-avoid-using-reg-code-in-authenticate-request.md)
 
-* De `redirect_url` parameter moet de laatste zijn in volgorde
+* De `redirect_url` parameter moet de laatste zijn in volgorde
 
-* De waarde van de `redirect_url` parameter moet URL-gecodeerd zijn
+* De waarde van `redirect_url` parameter moet URL-gecodeerd zijn

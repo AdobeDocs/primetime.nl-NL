@@ -2,7 +2,7 @@
 title: Lijst met vooraf gemachtigde bronnen ophalen
 description: Lijst met vooraf gemachtigde bronnen ophalen
 exl-id: 3821378c-bab5-4dc9-abd7-328df4b60cc3
-source-git-commit: bfc3ba55c99daba561255760baf273b6538a3c6e
+source-git-commit: 84a16ce775a0aab96ad954997c008b5265e69283
 workflow-type: tm+mt
 source-wordcount: '349'
 ht-degree: 0%
@@ -19,13 +19,13 @@ ht-degree: 0%
 
 &lt;reggie_fqdn>:
 
-* Productie - [api.auth.adobe.com](http://api.auth.adobe.com/)
-* Staging - [api.auth-staging.adobe.com](http://api.auth-staging.adobe.com/)
+* Productie - [api.auth.adobe.com](http://api.auth.adobe.com/)
+* Staging - [api.auth-staging.adobe.com](http://api.auth-staging.adobe.com/)
 
 &lt;sp_fqdn>:
 
-* Productie - [api.auth.adobe.com](http://api.auth.adobe.com/)
-* Staging - [api.auth-staging.adobe.com](http://api.auth-staging.adobe.com/)
+* Productie - [api.auth.adobe.com](http://api.auth.adobe.com/)
+* Staging - [api.auth-staging.adobe.com](http://api.auth-staging.adobe.com/)
 
 </br>
 
@@ -33,29 +33,29 @@ ht-degree: 0%
 
 Een verzoek aan de authentificatie van Adobe Primetime om de lijst van vooraf erkende middelen te verkrijgen.
 
-Er zijn twee sets API&#39;s: één set voor de Streaming App of Programmer Service en één set voor de Second Screen Web App. Op deze pagina wordt de API voor de Streaming App of Programmer Service beschreven.
+Er zijn twee reeksen APIs: één reeks voor de Streaming App of de Dienst van Programmer en één reeks voor de Tweede SchermApp. Op deze pagina wordt de API voor de Streaming App of Programmer Service beschreven.
 
 
-| Endpoint | Geroepen  </br>Door | Invoer   </br>Params | HTTP  </br>Methode | Antwoord | HTTP  </br>Antwoord |
+| Endpoint | Geroepen  </br>Door | Invoer   </br>Params | HTTP  </br>Methode | Antwoord | HTTP  </br>Antwoord |
 | --- | --- | --- | --- | --- | --- |
-| &lt;sp_fqdn>/api/v1/preAuthze | Streaming-app</br></br>of</br></br>Programmeringsservice | 1. aanvrager (verplicht)</br>2.  deviceId (verplicht)</br>3.  resourcerelijst (verplicht)</br>4.  device_info/X-Device-Info (verplicht)</br>5.  _deviceType_</br> 6.  _deviceUser_ (Afgekeurd)</br>7.  _appId_ (Afgekeurd) | GET | XML of JSON met individuele aan de autorisatie voorafgaande beslissingen of foutdetails. Zie onderstaande voorbeelden. | 200 - Succes</br></br>400 - Onjuist verzoek</br></br>401 - Niet-geautoriseerd</br></br>405 - Methode niet toegestaan  </br></br>412 - Voorwaarde is mislukt</br></br>500 - Interne serverfout |
+| &lt;sp_fqdn>/api/v1/preAuthze | Streaming-app</br></br>of</br></br>Programmeringsservice | 1. Aanvrager (verplicht)</br>2.  deviceId (verplicht)</br>3.  resourcerelijst (verplicht)</br>4.  device_info/X-Device-Info (verplicht)</br>5.  _deviceType_</br> 6.  _deviceUser_ (Verouderd)</br>7.  _appId_ (Verouderd) | GET | XML of JSON met individuele aan de autorisatie voorafgaande beslissingen of foutdetails. Zie onderstaande voorbeelden. | 200 - Succes</br></br>400 - Onjuist verzoek</br></br>401 - Niet bevoegd</br></br>405 - Methode niet toegestaan  </br></br>412 - Voorwaarde is mislukt</br></br>500 - Interne serverfout |
 
 
 | Invoerparameter | Beschrijving |
 | --- | --- |
 | aanvrager | De programmeeraanvragerId waarvoor deze verrichting geldig is. |
-| deviceId | De id-bytes van het apparaat. |
+| deviceId | Het apparaat-id bytes. |
 | resourcerelijst | Een tekenreeks die een door komma&#39;s gescheiden lijst met resourceIds bevat die de inhoud identificeert die toegankelijk kan zijn voor een gebruiker en die wordt herkend door MVPD-autorisatieeindpunten. |
-| device_info/</br></br>X-Apparaat-Info | Informatie over streaming apparaat.</br></br>**Opmerking**: This MAY BE passed device_info as a URL parameter, but due to the potential size of this parameter and constraints on the length of a GET URL, it should be passed as X-Device-Info in the http header. </br></br><!--See the full details in [Passing Device and Connection Information](http://tve.helpdocsonline.com/passing-device-information)-->. |
-| _deviceType_ | Het apparaattype (bijvoorbeeld Roku, PC).</br></br>Als deze parameter correct is ingesteld, biedt ESM metriek die [uitgesplitst per apparaattype](/help/authentication/entitlement-service-monitoring-overview.md#clientless_device_type) wanneer u Clientless gebruikt, zodat verschillende typen analyses kunnen worden uitgevoerd, bijvoorbeeld Roku, AppleTV en Xbox.</br></br>Zie, [voordelen van het gebruiken van clientless apparatentype parameter in pasmetriek ](/help/authentication/benefits-of-using-the-clientless-devicetype-parameter-in-pass-metrics.md)</br></br>**Opmerking**: de `device_info` vervangt deze parameter. |
+| device_info/</br></br>X-Apparaat-Info | Informatie over streaming apparaat.</br></br>**Opmerking**: This MAY BE passed device_info as a URL parameter, but due to the potential size of this parameter and constraints on the length of a GET URL, it should be passed as X-Device-Info in the http header. </br></br><!--See the full details in [Passing Device and Connection Information](http://tve.helpdocsonline.com/passing-device-information)-->. |
+| _deviceType_ | Het apparaattype (bijvoorbeeld Roku, PC).</br></br>Als deze parameter correct is ingesteld, biedt ESM metriek die [uitgesplitst per apparaattype](/help/authentication/entitlement-service-monitoring-overview.md#clientless_device_type) wanneer u Clientless gebruikt, zodat verschillende typen analyses kunnen worden uitgevoerd, bijvoorbeeld Roku, AppleTV en Xbox.</br></br>Zie, [voordelen van het gebruiken van clientless apparatentype parameter in pasmetriek ](/help/authentication/benefits-of-using-the-clientless-devicetype-parameter-in-pass-metrics.md)</br></br>**Opmerking**: de `device_info` vervangt deze parameter. |
 | _deviceUser_ | De gebruikers-id van het apparaat. |
-| _appId_ | De toepassings-id/-naam. </br></br>**Opmerking**: device_info vervangt deze parameter. |
+| _appId_ | De toepassings-id/-naam. </br></br>**Opmerking**: device_info vervangt deze parameter. |
 
 
 
 ### Samplereactie {#sample-response}
 
- 
+
 
 **XML:**
 
@@ -85,7 +85,7 @@ Content-Type: application/xml; charset=utf-8
   </resource>
 </resources>
 ```
- 
+
 </br>
 
 **JSON:**

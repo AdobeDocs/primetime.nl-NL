@@ -2,7 +2,7 @@
 title: Ondersteuning voor SFSafariViewController op iOS SDK 3.2+
 description: Ondersteuning voor SFSafariViewController op iOS SDK 3.2+
 exl-id: 6691550f-c36f-4fae-aa77-082ca7d8a60a
-source-git-commit: bfc3ba55c99daba561255760baf273b6538a3c6e
+source-git-commit: 84a16ce775a0aab96ad954997c008b5265e69283
 workflow-type: tm+mt
 source-wordcount: '405'
 ht-degree: 0%
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 **Vanwege beveiligingsvereisten MOETEN sommige aanmeldingspagina&#39;s van het MVPD worden weergegeven in een SFSafariViewController in plaats van in webweergaven.**
 
-Sommige MVPD&#39;s vereisen dat hun aanmeldingspagina&#39;s worden weergegeven in een beveiligde browsercontrole, zoals SFSafariViewController. Ze blokkeren actief webweergaven, dus om ermee te kunnen verifiëren moeten we SVC gebruiken. 
+Sommige MVPD&#39;s vereisen dat hun aanmeldingspagina&#39;s worden weergegeven in een beveiligde browsercontrole, zoals SFSafariViewController. Ze blokkeren actief webweergaven, dus om ermee te kunnen verifiëren moeten we SVC gebruiken.
 
 ## Compatibiliteit {#compatiblity}
 
@@ -33,11 +33,11 @@ In dergelijke gevallen introduceert de 3.2-versie de mogelijkheid voor de progra
 ## Handmatig SVC-beheer {#manual-svc-management}
 
 Om SVC manueel te beheren moet de implementor de volgende stappen uitvoeren:
- 
 
-1. call **setOptions()[&quot;handleSVC&quot;:true])** na initialisatie AccessEnabler (zorg ervoor deze vraag wordt uitgevoerd alvorens de authentificatie begint). Hierdoor wordt &quot;handmatig&quot; SVC-beheer ingeschakeld, zal de SDK de SVC niet automatisch presenteren, maar in plaats daarvan, indien nodig, aanroepen **navigate(toUrl:*{url}* useSVC:true)**.  
 
-1. de optionele callback implementeren **navigateToUrl:useSVC:** binnen de implementatie moet u een svc-instantie maken met behulp van de SFSafariViewController-instantie met behulp van de opgegeven URL en deze op het scherm weergeven:
+1. call **setOptions()[&quot;handleSVC&quot;:true])** na initialisatie AccessEnabler (zorg ervoor deze vraag wordt uitgevoerd alvorens de authentificatie begint). Hierdoor wordt &quot;handmatig&quot; SVC-beheer ingeschakeld, zal de SDK de SVC niet automatisch presenteren, maar in plaats daarvan, indien nodig, aanroepen **navigate(toUrl:*{url}* useSVC:true)**.
+
+1. de optionele callback implementeren **navigateToUrl:useSVC:** binnen de implementatie moet u een svc-instantie maken met behulp van de SFSafariViewController-instantie met behulp van de opgegeven URL en deze op het scherm weergeven:
 
    ```obj-c
    func navigate(toUrl url: String!, useSVC: Bool) {
@@ -50,11 +50,11 @@ Om SVC manueel te beheren moet de implementor de volgende stappen uitvoeren:
    ***Opmerkingen:***
 
    - *U kunt SFSafariViewController aanpassen om het even welke manier u wilt. Op iOS 11+ kunt u bijvoorbeeld het label Gereed wijzigen in Annuleren.*
-   - *om het svc te kunnen ontslaan , hebt u een verwijzing naar het nodig ; creeer het niet in het toepassingsgebied van **navigateToUrl:useSVC***
-   - *gebruik uw eigen weergavecontroller voor &quot;myController&quot;*\
-       
+   - *om het svc te kunnen ontslaan , hebt u een verwijzing naar het nodig ; creeer het niet in het toepassingsgebied van **navigateToUrl:useSVC***
+   - *gebruik uw eigen weergavecontroller voor &quot;myController&quot;*
 
-1. In de gedelegeerde implementatie van uw toepassing van **application(\_app: UIApplication, open url: URL, opties: \[UIApplicationOpenURLOptionsKey: Willekeurig\]) -\> Bool**, voegt u code toe om de svc te sluiten. U zou reeds één of andere code daar moeten hebben die roept **accessEnabler.handleExternalURL()**. Net onder toevoegen:
+
+1. In de gedelegeerde implementatie van uw toepassing van **application(\_app: UIApplication, open url: URL, opties: \[UIAapplicationOpenURLOptionsKey: Willekeurig\]) -\> Bool**, voegt u code toe om de svc te sluiten. U zou reeds één of andere code daar moeten hebben die roept **accessEnabler.handleExternalURL()**. Net onder toevoegen:
 
    ```obj-c
    if(svc != nil) {
@@ -62,10 +62,10 @@ Om SVC manueel te beheren moet de implementor de volgende stappen uitvoeren:
    }
    ```
 
-   Opnieuw, is svc een verwijzing naar SFSafariViewController u bij stap 2 creeerde.\
-    
+   Opnieuw, is svc een verwijzing naar SFSafariViewController u bij stap 2 creeerde.
 
-1. Implementeren **safariViewControllerdidFinish(\_ controller: SFSafariViewController)** van **SFSafariViewControllerDelegate** om af te vangen wanneer de gebruiker de SVC heeft geannuleerd met de knop &quot;Gereed&quot;. In deze functie, om SDK mee te delen dat de authentificatie is geannuleerd moet u roepen:
+
+1. Implementeren **safariViewControllerdidFinish(\_ controller: SFSafariViewController)** van **SFSafariViewControllerDelegate** om af te vangen wanneer de gebruiker de SVC heeft geannuleerd met de knop Gereed. In deze functie, om SDK mee te delen dat de authentificatie is geannuleerd moet u roepen:
 
    ```obj-c
    accessEnabler.setSelectedProvider(nil)

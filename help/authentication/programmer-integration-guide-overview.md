@@ -1,8 +1,8 @@
 ---
 title: Overzicht van de integratiegids voor programmeerprogramma's
-description: beschrijving van de integratiehandleiding van de programmeur
+description: beschrijving van de integratiehandleiding voor programmeerprogramma's
 exl-id: 51461caf-08ef-459e-b284-8f317f45e7b1
-source-git-commit: bfc3ba55c99daba561255760baf273b6538a3c6e
+source-git-commit: 84a16ce775a0aab96ad954997c008b5265e69283
 workflow-type: tm+mt
 source-wordcount: '117'
 ht-degree: 0%
@@ -15,10 +15,11 @@ ht-degree: 0%
 >[!NOTE]
 >
 >De inhoud op deze pagina wordt alleen ter informatie verstrekt. Voor het gebruik van deze API is een huidige licentie van Adobe vereist. Ongeautoriseerd gebruik is niet toegestaan.
+>
 
 ## Cookbooks {#cookbooks}
 
-* JavaScript-SDK van AccessEnabler Cookbook 
+* JavaScript-SDK van AccessEnabler Cookbook
 * AccessEnabler iOS/tvOS SDK Cookbook
 * AccessEnabler Android SDK Cookbook
 * REST API Cookbook (Server-to-Server)
@@ -26,10 +27,10 @@ ht-degree: 0%
 
 ## API-verwijzingen {#api-references}
 
-* JavaScript SDK API-naslaggids voor AccessEnabler
+* JavaScript SDK API-naslaggids voor AccessEnabled
 * API-naslaggids voor iOS/tvOS SDK
 * API-naslaggids voor AccessEnabler Android
-* REST API-naslaggids
+* REST API Reference
 
 ## Technische overzichten {#technical-overviews}
 

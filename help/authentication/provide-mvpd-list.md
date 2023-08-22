@@ -2,7 +2,7 @@
 title: MVPD-lijst opgeven
 description: MVPD-lijst opgeven
 exl-id: db2d8f19-d0b9-4195-bf0b-f9de0d96062b
-source-git-commit: bfc3ba55c99daba561255760baf273b6538a3c6e
+source-git-commit: 84a16ce775a0aab96ad954997c008b5265e69283
 workflow-type: tm+mt
 source-wordcount: '229'
 ht-degree: 0%
@@ -19,23 +19,23 @@ ht-degree: 0%
 
 &lt;reggie_fqdn>:
 
-* Productie - [api.auth.adobe.com](http://api.auth.adobe.com/)
-* Staging - [api.auth-staging.adobe.com](http://api.auth-staging.adobe.com/)
+* Productie - [api.auth.adobe.com](http://api.auth.adobe.com/)
+* Staging - [api.auth-staging.adobe.com](http://api.auth-staging.adobe.com/)
 
 &lt;sp_fqdn>:
 
-* Productie - [api.auth.adobe.com](http://api.auth.adobe.com/)
-* Staging - [api.auth-staging.adobe.com](http://api.auth-staging.adobe.com/)
+* Productie - [api.auth.adobe.com](http://api.auth.adobe.com/)
+* Staging - [api.auth-staging.adobe.com](http://api.auth-staging.adobe.com/)
 
- </br>
+</br>
 
 ## Beschrijving {#description}
 
 Keert lijst van gevormde MVPDs voor de aanvrager terug.
 
-| Endpoint | Geroepen  </br>Door | Invoer   </br>Params | HTTP  </br>Methode | Antwoord | HTTP  </br>Antwoord |
+| Endpoint | Geroepen  </br>Door | Invoer   </br>Params | HTTP  </br>Methode | Antwoord | HTTP  </br>Antwoord |
 | --- | --- | --- | --- | --- | --- |
-| &lt;sp_fqdn>/api/v1/config/{requestId}</br></br>Bijvoorbeeld:</br></br>&lt;sp_fqdn>/api/v1/config/sampleRequestorId | Primetime-verificatie | 1. Aanvrager</br>    (component Path)</br>_2.  deviceType (afgekeurd)_ | GET | XML of JSON met lijst van MVPD&#39;s. | 200 |
+| &lt;sp_fqdn>/api/v1/config/{requestorId}</br></br>Bijvoorbeeld:</br></br>&lt;sp_fqdn>/api/v1/config/sampleRequestorId | Primetime-verificatie | 1. Aanvrager</br>    (component Path)</br>_2.  deviceType (afgekeurd)_ | GET | XML of JSON met lijst van MVPD&#39;s. | 200 |
 
 {style="table-layout:auto"}
 
@@ -51,9 +51,9 @@ Keert lijst van gevormde MVPDs voor de aanvrager terug.
 
 Hetzelfde als de bestaande Reactie van XML MVPD op /config servlet
 
-Opmerking: Alle MVPDs die wordt gevormd om gebruik van Platform SSO te maken zal de volgende extra eigenschappen binnen hun overeenkomstige knoop (JSON/XML) hebben:
+Opmerking: alle MVPD&#39;s die zijn geconfigureerd om gebruik te maken van Platform SSO, hebben de volgende extra eigenschappen binnen het corresponderende knooppunt (JSON/XML):
 
-* **enablePlatformServices (boolean):** markering die aangeeft of deze MVPD is geïntegreerd via Platform SSO
+* **enablePlatformServices (boolean):** Markering die aangeeft of deze MVPD is geïntegreerd via Platform SSO
 * **boardingStatus (tekenreeks):** markering die aangeeft of de MVPD Platform SSO volledig ondersteunt (ONDERSTEUND) of dat de MVPD alleen wordt weergegeven in de platformkiezer (PICKER)
 * **displayInPlatformPicker (Boolean):** moet deze MVPD worden weergegeven in de platformkiezer
 * **platformMappingId (tekenreeks):** de identificatiecode van deze MVPD zoals bekend door het platform

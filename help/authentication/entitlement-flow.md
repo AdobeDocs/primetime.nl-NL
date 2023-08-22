@@ -2,7 +2,7 @@
 title: De machtigingsstroom van de programmeur
 description: De machtigingsstroom van de programmeur
 exl-id: b1c8623a-55da-4b7b-9827-73a9fe90ebac
-source-git-commit: bfc3ba55c99daba561255760baf273b6538a3c6e
+source-git-commit: 84a16ce775a0aab96ad954997c008b5265e69283
 workflow-type: tm+mt
 source-wordcount: '1822'
 ht-degree: 0%
@@ -24,7 +24,7 @@ De authentificatie van Adobe Primetime bemiddelen de machtigingsstroom tussen Pr
 1. AccessEnabler - Een clientcomponent die een bibliotheek met API&#39;s voor toepassingen biedt op apparaten die webpagina&#39;s kunnen weergeven (bijvoorbeeld webapps, smartphone/tablet-apps).
 2. Clientless API - RESTful-webservices voor apparaten die geen webpagina&#39;s kunnen weergeven (bijvoorbeeld set-top boxes, spelconsoles, smart TV&#39;s). De vereiste voor het weergeven van webpagina&#39;s vloeit voort uit de eis van het MVPD dat gebruikers zich op de website van het MVPD verifiëren.
 
-Naast het platformneutrale overzicht dat hier wordt gepresenteerd, is er hier een API-specifiek overzicht zonder clips: Clientless API-documentatie. AccessEnabler wordt native uitgevoerd op ondersteunde platforms (AS / JS op internet, doelstelling-C op iOS en Java op Android). De API&#39;s van AccessEnabler zijn consistent op alle ondersteunde platforms. Alle platforms die geen ondersteuning bieden voor AccessEnabler gebruiken dezelfde API zonder Clientless.
+Naast het platformneutrale overzicht dat hier wordt gepresenteerd, is er hier een API-specifiek overzicht zonder clips: documentatie voor de API zonder clips. AccessEnabler wordt native uitgevoerd op ondersteunde platforms (AS / JS op internet, doelstelling-C op iOS en Java op Android). De API&#39;s van AccessEnabler zijn consistent op alle ondersteunde platforms. Alle platforms die geen ondersteuning bieden voor AccessEnabler gebruiken dezelfde API zonder Clientless.
 
 Voor beide soorten interface, controleert de authentificatie Primetime veilig de machtigingsstroom tussen de app van de Programmer en MVPD van de gebruiker:
 
@@ -35,7 +35,7 @@ Voor beide soorten interface, controleert de authentificatie Primetime veilig de
 
 >[!IMPORTANT]
 >
->Opmerking in het bovenstaande diagram dat er één onderdeel van de machtigingsstroom is dat niet door Adobe Primetime-verificatieservers wordt geleid: de MVPD-aanmelding. Gebruikers moeten zich aanmelden bij de aanmeldingspagina van hun MVPD. Vanwege deze vereiste moet de toepassing van de programmeur gebruikers op apparaten die geen webpagina&#39;s kunnen renderen, de opdracht geven om over te schakelen naar een apparaat voor web om zich aan te melden bij hun MVPD, waarna ze voor de rest van de machtigingsstroom terugkeren naar het oorspronkelijke apparaat.
+>Merk op in het diagram hierboven dat er één deel van de machtigingsstroom is die niet door de authentificatieservers van Adobe Primetime gaat: MVPD login. Gebruikers moeten zich aanmelden bij de aanmeldingspagina van hun MVPD. Vanwege deze vereiste moet de toepassing van de programmeur gebruikers op apparaten die geen webpagina&#39;s kunnen renderen, de opdracht geven om over te schakelen naar een apparaat voor web om zich aan te melden bij hun MVPD, waarna ze voor de rest van de machtigingsstroom terugkeren naar het oorspronkelijke apparaat.
 
 ## Entitlement Flow {#entitlement-flow}
 
@@ -46,27 +46,27 @@ Er zijn vier verschillende substromen die de basismachtigingsstroom vormen:
 1. [Autorisatiestroom](/help/authentication/entitlement-flow.md#authorization)
 1. [Logout FLow](/help/authentication/entitlement-flow.md#logout)
 
-Tijdens het eerste bezoek van een gebruiker aan de site van een programmeur gaat de machtigingsstroom verder in de bovenstaande volgorde. Nochtans, bij verdere bezoeken, afhankelijk van of de authentificatie en toestemmingstokens al dan niet zijn verlopen, of afhankelijk van het bekijken van beleid, zou een gebruiker slechts door één of twee substromen kunnen gaan.
+Tijdens het eerste bezoek van een gebruiker aan de site van een programmeur gaat de machtigingsstroom verder in de bovenstaande volgorde. Nochtans, bij verdere bezoeken, afhankelijk van of de authentificatie en toestemmingstokens al dan niet zijn verlopen, of afhankelijk van het bekijken van beleid, zou een gebruiker slechts door één of twee van de substromen kunnen gaan.
 
 ### Stroom opstarten {#startup}
 
 Vestigt de identiteit van de Programmer en het apparaat, voert initialisatietaken uit. Dit is een voorwaarde voor alle volgende machtigingsoproepen.
 
-**AccessEnabler**
+**AccessEnabled**
 
 * **`setRequestor()`** - Vestigt uw identificatie met AccessEnalber, en door uitbreiding, de authentificatieservers van Adobe Primetime. Deze aanroep is een voorloper van de rest van de machtigingsstroom. Bijvoorbeeld in JavaScript:
 
-   ```JavaScript
-     /* Define the requestor ID (Programmer/aggregator ID). */
-       var requestorID = "sample_requestor_Id";
-       ...
-       // Callback indicating that the AccessEnabler swf has initialized
-       function swfLoaded() {
-           // AccessEnabler is loaded so we can use the API function it provides
-           accessEnablerObject.setRequestor(requestorID); 
-       ...
-       }
-   ```
+  ```JavaScript
+    /* Define the requestor ID (Programmer/aggregator ID). */
+      var requestorID = "sample_requestor_Id";
+      ...
+      // Callback indicating that the AccessEnabler swf has initialized
+      function swfLoaded() {
+          // AccessEnabler is loaded so we can use the API function it provides
+          accessEnablerObject.setRequestor(requestorID); 
+      ...
+      }
+  ```
 
 **Clientloze API**
 
@@ -76,10 +76,10 @@ Vestigt de identiteit van de Programmer en het apparaat, voert initialisatietake
 
 De succesvolle authentificatie produceert een teken AuthN verbonden aan het apparaat en de aanvrager. Succesvolle verificatie is een voorwaarde voor autorisatie.
 
-**AccessEnabler**
+**AccessEnabled**
 
 * `checkAuthentication()` - Controleert of een geldig verificatietoken in de cache van een lokale token aanwezig is, zonder dat de volledige verificatiestroom wordt geactiveerd. Dit activeert de `setAuthenticationStatus()` callback-functie.
-* `getAuthentication()` - Hiermee wordt de volledige verificatiestroom gestart. Als dit lukt, genereert Adobe Primetime-verificatie een AuthN-token en wordt deze op de client in cache opgeslagen. De gebruiker logt binnen op hun geselecteerde plaats MVPDs, die of in een iFrame, Popup venster, of een webmening wordt voorgesteld, afhankelijk van het platform. Dit activeert de displayProviderDialog().
+* `getAuthentication()` - Hiermee wordt de volledige verificatiestroom gestart. Als dit lukt, genereert Adobe Primetime-verificatie een AuthN-token en wordt deze op de client in cache opgeslagen. De gebruiker meldt zich op hun geselecteerde plaats MVPDs, die of in een iFrame, Popup venster, of een webmening wordt voorgesteld, afhankelijk van het platform. Dit activeert de displayProviderDialog().
 
 **Clientloze API**
 
@@ -92,17 +92,17 @@ Een token AuthN wordt als geldig beschouwd als de volgende twee punten waar zijn
 * De AuthN-token is niet verlopen
 * MVPD verbonden aan het teken AuthN is op de lijst van toegestane MVPDs voor huidige identiteitskaart van de Aanvrager
 
-#### Generic AccessEnabled Initial Authentication Workflow {#generic-ae-initial-authn-flow}
+#### Generic AccessEnabler Initial Authentication Workflow {#generic-ae-initial-authn-flow}
 
 1. Uw app start de verificatieworkflow met een aanroep van `getAuthentication()`, die een geldig verificatietoken in de cache zoekt. Deze methode heeft een optionele `redirectURL` parameter; als u geen waarde opgeeft voor `redirectURL`, na een geslaagde verificatie wordt de gebruiker geretourneerd naar de URL waarvan de verificatie is geïnitialiseerd.
 1. AccessEnabler bepaalt de huidige authentificatiestatus. Als de gebruiker momenteel voor authentiek wordt verklaard, roept AccessEnabler uw `setAuthenticationStatus()` callback functie, die een authentificatiestatus overgaat die op succes wijst.
 1. Als de gebruiker niet voor authentiek wordt verklaard, gaat AccessEnabler de authentificatiestroom door te bepalen of de laatste authentificatiepoging van de gebruiker met bepaalde MVPD succesvol was. Als een MVPD-id in de cache is geplaatst EN de `canAuthenticate` markering is waar OF er is een MVPD geselecteerd met `setSelectedProvider()`wordt de gebruiker niet gevraagd het dialoogvenster MVPD-selectie te openen. De authentificatiestroom gaat verder gebruikend de caching waarde van MVPD (namelijk zelfde MVPD die tijdens de laatste succesvolle authentificatie werd gebruikt). Een netwerkvraag wordt gemaakt aan de backendserver, en de gebruiker wordt opnieuw gericht aan de MVPD login pagina.
 
-1. Als er geen MVPD-id in de cache is opgeslagen en er geen MVPD is geselecteerd met `setSelectedProvider()` OF de `canAuthenticate` markering is ingesteld op false, de `displayProviderDialog()` callback wordt opgeroepen. Deze callback leidt uw app om UI tot stand te brengen die de gebruiker een lijst van MVPDs voorstelt om van te kiezen. Er wordt een array met MVPD-objecten geleverd, die de benodigde informatie bevat om de MVPD-kiezer te maken. Elk voorwerp MVPD beschrijft een entiteit MVPD, en bevat informatie zoals identiteitskaart van MVPD en URL waar het embleem MVPD kan worden gevonden.
+1. Als er geen MVPD-id in de cache is opgeslagen en er geen MVPD is geselecteerd met `setSelectedProvider()` OF de `canAuthenticate` markering is ingesteld op false, de `displayProviderDialog()` callback wordt aangeroepen. Deze callback leidt uw app om UI tot stand te brengen die de gebruiker een lijst van MVPDs voorstelt om van te kiezen. Er wordt een array met MVPD-objecten geleverd, die de benodigde informatie bevat om de MVPD-kiezer te maken. Elk voorwerp MVPD beschrijft een entiteit MVPD, en bevat informatie zoals identiteitskaart van MVPD en URL waar het embleem MVPD kan worden gevonden.
 
-1. Zodra een MVPD wordt geselecteerd, moet uw app AccessEnabler op de hoogte brengen van de keus van de gebruiker. Voor niet-Flash cliënten, zodra de gebruiker gewenste MVPD selecteert, informeert u AccessEnabler van de gebruikersselectie via een vraag aan `setSelectedProvider()` methode. Flash-clients verzenden in plaats daarvan een gedeeld `MVPDEvent` van het type &quot;`mvpdSelection`&quot;, geeft u de geselecteerde provider door.
+1. Zodra een MVPD wordt geselecteerd, moet uw app AccessEnabler op de hoogte brengen van de keus van de gebruiker. Voor niet-Flash cliënten, zodra de gebruiker gewenste MVPD selecteert, informeert u AccessEnabler van de gebruikersselectie via een vraag aan `setSelectedProvider()` methode. Flash clients verzenden in plaats daarvan een gedeelde `MVPDEvent` van het type &quot;`mvpdSelection`&quot;, geeft u de geselecteerde provider door.
 
-1. Wanneer AccessEnabler van de selectie van MVPD van de gebruiker wordt geïnformeerd, wordt een netwerkvraag gemaakt aan de backend server, en de gebruiker wordt opnieuw gericht aan de MVPD login pagina.
+1. Wanneer AccessEnabler van de selectie van MVPD van de gebruiker wordt geïnformeerd, wordt een netwerkvraag gemaakt aan de backendserver, en de gebruiker wordt opnieuw gericht aan de MVPD login pagina.
 
 1. Binnen het authentificatiewerkschema, communiceert AccessEnabler met de authentificatie van Adobe Primetime en geselecteerde MVPD om de geloofsbrieven van de gebruiker (gebruiker - identiteitskaart en wachtwoord) te vragen en hun identiteit te verifiëren. Terwijl sommige MVPDs aan hun eigen plaats voor login opnieuw richt, vereisen anderen u om hun login pagina binnen een iFrame te tonen. Uw pagina moet callback omvatten die tot een iFrame leidt, voor het geval de klant één van die MVPDs kiest.<!-- For more information on creating a login iFrame, see  [Managing the Login IFrame](https://tve.helpdocsonline.com/managing-the-login-iframe)-->.
 
@@ -110,6 +110,7 @@ Een token AuthN wordt als geldig beschouwd als de volgende twee punten waar zijn
 
 >[!IMPORTANT]
 >Comcast is momenteel de enige MVPD die geen statische URL voor het logo biedt. Programmeurs moeten de nieuwste actuele logo&#39;s ophalen van [XFINITY Developer&#39;s portal](https://developers.xfinity.com/products/tv-everywhere).
+>
 
 ### Autorisatiestroom {#authorization}
 
@@ -117,7 +118,7 @@ Autorisatie is een eerste vereiste voor het weergeven van beveiligde inhoud. Suc
 
 Uw app start een autorisatie wanneer een gebruiker toegang tot een beveiligde bron aanvraagt. U geeft een bron-id door die de gewenste bron opgeeft (bijvoorbeeld een kanaal, aflevering, enz.). Uw app controleert eerst op een opgeslagen verificatietoken. Als er geen wordt gevonden, start u het verificatieproces.
 
-**AccessEnabler**
+**AccessEnabled**
 
 * `checkAuthorization()` - Controleert de vergunning zonder de volledige vergunningsstroom in te leiden. Dit wordt vaak gebruikt om statusinformatie bij te werken die wordt weergegeven in de gebruikersinterface van de programmeerapp.
 
@@ -148,7 +149,7 @@ U verstrekt de volgende callback functies om de resultaten van de vergunningsvra
 
 Wist tokens en andere gegevens verbonden aan de de machtigingsstroom van de huidige gebruiker.
 
-**AccessEnabler**
+**AccessEnabled**
 
 * `logout()`
 
@@ -158,9 +159,9 @@ Wist tokens en andere gegevens verbonden aan de de machtigingsstroom van de huid
 
 ## Begrijp AccessEnabler gedrag {#ae-behavior}
 
-Alle API-aanroepen van AccessEnabler zijn asynchroon (met één uitzondering vermeld in de API-referenties). U kunt API een willekeurig aantal tijden roepen, nochtans is er geen sterke garantie dat de acties die door de vraag teweeggebracht worden in de zelfde orde zullen worden voltooid dat de vraag werd gemaakt. (Een uitzondering hierop is de huidige Flash Player-runtime. geen multi-threaded zal het vraag verzekeren *do* voltooid in de volgorde waarin ze worden aangeroepen.)
+Alle API-aanroepen van AccessEnabler zijn asynchroon (met één uitzondering vermeld in de API-referenties). U kunt API een willekeurig aantal tijden roepen, nochtans is er geen sterke garantie dat de acties die door de vraag teweeggebracht worden in de zelfde orde zullen worden voltooid dat de vraag werd gemaakt. (Een uitzondering hierop is de huidige runtime van de Flash Player; als u geen multi-threaded bent, worden aanroepen zeker *do* voltooid in de volgorde waarin ze worden aangeroepen.)
 
-Om tussen reacties te onderscheiden, en reacties met vraag te kunnen paren, alle callbacks echo terug hun inputparameters. Dit omvat `setToken()` en`tokenRequestFailed()`, die uiteindelijk worden geactiveerd door `checkAuthorization()`. (Voor `checkAuthorization()` callbacks, wordt de gebruikte bron teruggekaatst.) Gebruikend uit deze eigenschap, kunt u onderscheiden welke reactie beantwoordt aan welke vraag. Als u deze functie wilt gebruiken, kunt u iets als volgt coderen:
+Om tussen reacties te onderscheiden, en reacties met vraag te kunnen paren, alle callbacks echo terug hun inputparameters. Dit omvat `setToken()` en`tokenRequestFailed()`, die uiteindelijk door `checkAuthorization()`. (Voor `checkAuthorization()` callbacks, wordt de gebruikte bron teruggekaatst.) Gebruikend uit deze eigenschap, kunt u onderscheiden welke reactie beantwoordt aan welke vraag. Als u deze functie wilt gebruiken, kunt u iets als volgt coderen:
 
 ```JavaScript
     for each (resource in ["TNT", "CNN", "TBS", "AdultSwim"] ) {

@@ -2,7 +2,7 @@
 title: Dynamic Client-registratie-API
 description: Dynamic Client-registratie-API
 exl-id: 06a76c71-bb19-4115-84bc-3d86ebcb60f3
-source-git-commit: bfc3ba55c99daba561255760baf273b6538a3c6e
+source-git-commit: 84a16ce775a0aab96ad954997c008b5265e69283
 workflow-type: tm+mt
 source-wordcount: '927'
 ht-degree: 0%
@@ -30,7 +30,7 @@ Adobe Primetime-authenticatie stelt een nieuw mechanisme voor voor de registrati
 
 Het verificatiemechanisme bij Adobe Primetime-verificatie was gebaseerd op sessiecookies, maar vanwege [Aangepaste tabbladen van Android-chroom](https://developer.chrome.com/multidevice/android/customtabs){target=_blank} and [Apple Safari View Controller](https://developer.apple.com/documentation/safariservices/sfsafariviewcontroller){target=_blank}Dit doel kan echter niet meer worden bereikt.
 
-Gezien deze beperkingen introduceert Adobe een nieuw registratiemechanisme voor al haar cliënten. Het is gebaseerd op OAuth 2.0 RFC en bestaat uit de volgende stappen:
+Gezien deze beperkingen introduceert de Adobe een nieuw registratiemechanisme voor al haar cliënten. Het is gebaseerd op OAuth 2.0 RFC en bestaat uit de volgende stappen:
 
 1. De softwareinstructie ophalen van het TVE-dashboard
 1. Klantenreferenties ophalen
@@ -52,17 +52,17 @@ Nadat u een softwareinstructie hebt opgehaald van het TVE-dashboard, moet u uw t
 
 **Verzoek**
 
-| HTTP-aanroep |  |
+| HTTP-aanroep |                    |
 |-----------|--------------------|
 | pad | /o/client/register |
 | methode | POST |
 
-| velden |  |  |
+| velden |                                                                           |           |
 |--------------------|---------------------------------------------------------------------------|-----------|
 | software_statement | De softwareinstructie die is gemaakt in het TVE-dashboard. | verplicht |
 | redirect_uri | De URI die de toepassing gebruikt om de verificatiestroom te voltooien. | optioneel |
 
-| aanvraagheaders |  |  |
+| aanvraagheaders |                                                                                |           |
 |-----------------|--------------------------------------------------------------------------------|-----------|
 | Inhoudstype | application/json | verplicht |
 | X-Apparaat-Info | De apparaatgegevens zoals gedefinieerd in het Doorgeven van apparaat- en verbindingsgegevens | verplicht |
@@ -70,11 +70,11 @@ Nadat u een softwareinstructie hebt opgehaald van het TVE-dashboard, moet u uw t
 
 **Antwoord**
 
-| antwoordheaders |  |  |
+| antwoordheaders |                  |           |
 |------------------|------------------|-----------|
 | Inhoudstype | application/json | verplicht |
 
-| responsvelden |  |  |
+| responsvelden |                 |                            |
 |---------------------|-----------------|----------------------------|
 | client_id | String | verplicht |
 | client_geheime | String | verplicht |
@@ -86,7 +86,7 @@ Nadat u een softwareinstructie hebt opgehaald van het TVE-dashboard, moet u uw t
 
 #### Foutreactie {#error-response}
 
-In het geval van een fout reageert de registratieserver met de HTTP 400-statuscode (Bad Request) en bevat de volgende parameters in de reactie:
+In het geval van een fout reageert de registratieserver met de HTTP 400-statuscode (Bad Request) en bevat deze de volgende parameters in de reactie:
 
 | statuscode | responsorgaan | beschrijving |
 | --- | --- | --- |
@@ -151,7 +151,7 @@ Pragma: no-cache
 
 ### Toegangstoken verkrijgen {#accessToken}
 
-Nadat u de unieke client-id (client-id en clientgeheim) voor uw toepassing hebt opgehaald, moet u een toegangstoken verkrijgen. Het toegangstoken is een verplicht teken OAuth 2.0, dat wordt gebruikt om Primetime authentificatie APIs te roepen.
+Nadat u de unieke client-id (client-id en clientgeheim) voor uw toepassing hebt opgehaald, moet u een toegangstoken verkrijgen. Het toegangstoken is een verplicht teken OAuth 2.0, dat wordt gebruikt om de authentificatie APIs te roepen Primetime.
 
 >[!NOTE]
 >
@@ -160,12 +160,12 @@ Nadat u de unieke client-id (client-id en clientgeheim) voor uw toepassing hebt 
 **Verzoek**
 
 
-| **HTTP-aanroep** |  |
+| **HTTP-aanroep** | |
 | --- | --- |
 | pad | `/o/client/token` |
 | methode | POST |
 
-| **aanvraagparameters** |  |
+| **aanvraagparameters** | |
 | --- | --- |
 | `grant_type` | Ontvangen in het registratieproces voor de client.<br/> **Geaccepteerde waarde**<br/>`client_credentials`: Wordt gebruikt voor onveilige clients, zoals de Android-SDK. |
 | `client_id` | Client-id verkregen in het clientregistratieproces. |
@@ -173,13 +173,13 @@ Nadat u de unieke client-id (client-id en clientgeheim) voor uw toepassing hebt 
 
 **Antwoord**
 
-| responsvelden |  |  |
+| responsvelden | | |
 | --- | --- | --- |
 | `access_token` | De waarde van het toegangstoken u zou moeten gebruiken om Primetime APIs te roepen | verplicht |
 | `expires_in` | De tijd in seconden tot access_token verloopt | verplicht |
 | `token_type` | Het type token **drager** | verplicht |
 | `created_at` | De uitgiftetijd van de token | verplicht |
-| **antwoordheaders** |  |  |
+| **antwoordheaders** | | |
 | `Content-Type` | application/json | verplicht |
 
 **Foutreactie**
@@ -190,7 +190,7 @@ In het geval van een fout reageert de verificatieserver met de HTTP 400-statusco
 | --- | --- | --- |
 | HTTP 400 | {&quot;error&quot;: &quot;invalid_request&quot;} | Het verzoek mist een vereiste parameter, omvat een niet gestaafde parameterwaarde (buiten giftetype), herhaalt een parameter, omvat veelvoudige geloofsbrieven, gebruikt meer dan één mechanisme om de cliënt voor authentiek te verklaren, of anders misvormd is. |
 | HTTP 400 | {&quot;error&quot;: &quot;invalid_client&quot;} | Clientverificatie is mislukt omdat de client onbekend was. De SDK MOET zich opnieuw bij de machtigingsserver registreren. |
-| HTTP 400 | {&quot;error&quot;: &quot;unauthorised_client&quot;} | De geverifieerde client is niet gemachtigd om dit type autorisatiesubsidie te gebruiken. |
+| HTTP 400 | {&quot;error&quot;: &quot;unauthorised_client&quot;} | De geverifieerde client is niet gemachtigd om dit type autorisatieverlening te gebruiken. |
 
 #### Voorbeeld van toegangstoken verkrijgen: {#obt-access-token}
 
@@ -240,7 +240,7 @@ Het toegangstoken gebruiken om Adobe Primetime uit te voeren [API-aanroepen voor
 
 In het geval van een fout kunnen de volgende foutreacties worden geretourneerd:
 
-| Foutreacties |  |  |
+| Foutreacties |     |                                                                                                        |
 |-----------------|-----|--------------------------------------------------------------------------------------------------------|
 | invalid_request | 400 | Het verzoek is onjuist geformuleerd. |
 | invalid_client | 403 | De client-id mag geen aanvragen meer uitvoeren. Er moeten nieuwe clientreferenties worden gegenereerd. |

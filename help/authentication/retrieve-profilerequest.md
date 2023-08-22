@@ -1,15 +1,15 @@
 ---
-title: SSO-profielaanvraag van Platform ophalen
-description: SSO-profielaanvraag van Platform ophalen
+title: Platform SSO profiel-request ophalen
+description: Platform SSO profiel-request ophalen
 exl-id: 44fd4e26-4d9a-4607-ac2c-b85d848f5fc6
-source-git-commit: bfc3ba55c99daba561255760baf273b6538a3c6e
+source-git-commit: 84a16ce775a0aab96ad954997c008b5265e69283
 workflow-type: tm+mt
 source-wordcount: '183'
 ht-degree: 0%
 
 ---
 
-# SSO-profielaanvraag van Platform ophalen {#retrieve-platform-sso-profile-request}
+# Platform SSO profiel-request ophalen {#retrieve-platform-sso-profile-request}
 
 >[!NOTE]
 >
@@ -19,13 +19,13 @@ ht-degree: 0%
 
 &lt;reggie_fqdn>:
 
-* Productie - [api.auth.adobe.com](http://api.auth.adobe.com/)
-* Staging - [api.auth-staging.adobe.com](http://api.auth-staging.adobe.com/)
+* Productie - [api.auth.adobe.com](http://api.auth.adobe.com/)
+* Staging - [api.auth-staging.adobe.com](http://api.auth-staging.adobe.com/)
 
 &lt;sp_fqdn>:
 
-* Productie - [api.auth.adobe.com](http://api.auth.adobe.com/)
-* Staging - [api.auth-staging.adobe.com](http://api.auth-staging.adobe.com/)
+* Productie - [api.auth.adobe.com](http://api.auth.adobe.com/)
+* Staging - [api.auth-staging.adobe.com](http://api.auth-staging.adobe.com/)
 
 </br>
 
@@ -34,13 +34,13 @@ ht-degree: 0%
 Deze bron produceert profielaanvragen voor een aanvraag-id en een MVPD-bestand.
 
 
-| Endpoint | Geroepen  </br>Door | Invoer   </br>Params | HTTP  </br>Methode | Antwoord | HTTP  </br>Antwoord |
+| Endpoint | Geroepen  </br>Door | Invoer   </br>Params | HTTP  </br>Methode | Antwoord | HTTP  </br>Antwoord |
 | --- | --- | --- | --- | --- | --- |
-| &lt;sp_fqdn>/api/v1/{request}/profile-Requests/{mvpd} | Streaming-app</br></br>of</br></br>Programmeringsservice | 1. aanvrager (padparam)</br>2. mvpd (padparam)</br>3. deviceType (verplicht) | GET | Het antwoord Content-Type is application/octet-stream, omdat de werkelijke lading ondoorzichtig is voor de clienttoepassing.</br></br>Het antwoord moet door de aanvraag aan het Platform worden toegezonden</br></br>SSO-engine voor het verkrijgen van een profiel-SSO. | 200 - Succes   </br>400 - Onjuist verzoek |
+| &lt;sp_fqdn>/api/v1/{requestor}/profile-Requests/{mvpd} | Streaming-app</br></br>of</br></br>Programmeringsservice | 1. aanvrager (padparam)</br>2. mvpd (padparam)</br>3. deviceType (verplicht) | GET | Het antwoord Content-Type is application/octet-stream, omdat de werkelijke lading ondoorzichtig is voor de clienttoepassing.</br></br>Het antwoord moet door de toepassing worden doorgestuurd naar het platform</br></br>SSO-engine voor het verkrijgen van een profiel-SSO. | 200 - Succes   </br>400 - Onjuist verzoek |
 
 
 | Invoerparameter | Beschrijving |
 | --------------- | -------------------------------------------------------------------------------------------------------- |
 | aanvrager | De programmeeraanvragerId waarvoor deze verrichting geldig is. |
 | mvpd | De MVPD-id waarvoor deze bewerking geldig is. |
-| deviceType | Het Apple-platform waarvoor we een aanvraag voor een profiel proberen te verkrijgen.  Willekeurig **iOS** of **tvOS**. |
+| deviceType | Het Apple-platform waarvoor we een aanvraag voor een profiel proberen te verkrijgen.  Willekeurig **iOS** of **tvOS**. |

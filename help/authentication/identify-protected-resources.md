@@ -2,7 +2,7 @@
 title: Beveiligde bronnen identificeren
 description: Beveiligde bronnen identificeren
 exl-id: e96aea02-54b2-491d-ba91-253c0d0e681c
-source-git-commit: bfc3ba55c99daba561255760baf273b6538a3c6e
+source-git-commit: 84a16ce775a0aab96ad954997c008b5265e69283
 workflow-type: tm+mt
 source-wordcount: '255'
 ht-degree: 0%
@@ -23,15 +23,14 @@ Elk vergunningsverzoek (of verzoek om verificatie) moet een unieke identificatie
    - Kanaal
       - Tonen
          - Episode
-            - Element\
-                
+            - Element
 
 </br>
 
 ## RSS-indeling van media {#media_rss}
 
-De middelen kunnen door een eenvoudig koord (uniek herkenningsteken voor een kanaal) worden geïdentificeerd, of kunnen in formaat van Media worden vertegenwoordigd RSS (MRSS), zoals overeengekomen tussen Adobe (of een de authentificatieerkende partner van Adobe Primetime) en deelnemende MVPDs en Programmers. De RSS-tekenreeks die als resource specifier wordt gebruikt, kan aanvullende informatie bevatten, zoals classificaties en metagegevens voor ouderlijk toezicht.\
- 
+De middelen kunnen door een eenvoudig koord (uniek herkenningsteken voor een kanaal) worden geïdentificeerd, of kunnen in formaat van Media worden vertegenwoordigd RSS (MRSS), zoals overeengekomen tussen Adobe (of een de authentificatieerkende partner van Adobe Primetime) en deelnemende MVPDs en Programmers. De RSS-tekenreeks die als resource specifier wordt gebruikt, kan aanvullende informatie bevatten, zoals classificaties en metagegevens voor ouderlijk toezicht.
+
 
 Als u een eenvoudige middelherkenningsteken, zoals &quot;TNT&quot;gebruikt, wordt het verondersteld om een kanaal te vertegenwoordigen, en in dit RSS middelspecifier vertaald:
 
@@ -42,7 +41,7 @@ Als u een eenvoudige middelherkenningsteken, zoals &quot;TNT&quot;gebruikt, word
         </channel>
     </rss>
 ```
- 
+
 
 Een complexere specifier kan bijvoorbeeld aanvullende ratinginformatie bevatten. U kunt het volledige koord van RSS tot de functies overgaan van Enabler van de Toegang die een middelidentiteitskaart vereisen, zoals [`getAuthorization()`](/help/authentication/rest-api-reference.md):
 
@@ -57,7 +56,7 @@ Een complexere specifier kan bijvoorbeeld aanvullende ratinginformatie bevatten.
     getAuthorization(resource);
 ```
 
-Resource specifiers zijn opaque to Adobe Primetime authentication; ze worden gewoon doorgegeven aan het MVPD. Als MVPD uw middelspecifier niet erkent of niet kan ontleden, keert het een fout aan de authentificatie van Adobe Primetime terug, die de fout terug naar uw teruggeeft `tokenRequestFailed()` callback.
+Specifiers van het middel zijn ondoorzichtig aan de authentificatie van Adobe Primetime; zij worden eenvoudig overgegaan tot MVPD. Als MVPD uw middelspecifier niet erkent of niet kan ontleden, keert het een fout aan de authentificatie van Adobe Primetime terug, die de fout terug naar uw teruggeeft `tokenRequestFailed()` callback.
 
 <!--
 ## Related Information {#related}

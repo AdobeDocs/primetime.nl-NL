@@ -2,7 +2,7 @@
 title: Minimale systeemvereisten
 description: Minimale systeemvereisten
 exl-id: 57b21e2a-abd7-4b4b-85f1-25584a850e40
-source-git-commit: bfc3ba55c99daba561255760baf273b6538a3c6e
+source-git-commit: 84a16ce775a0aab96ad954997c008b5265e69283
 workflow-type: tm+mt
 source-wordcount: '433'
 ht-degree: 0%
@@ -20,16 +20,16 @@ ht-degree: 0%
 
 Dit document bevat de huidige software- en hardwarevereisten voor de implementatie van Adobe Primetime Authentication-integratie op ondersteunde platforms. Alle ondersteunde web-/mobiele browsers en besturingssystemen die hieronder worden vermeld, krijgen volledige ondersteuning van het Adobe Primetime Authentication-team, dat gebonden is aan de overeengekomen SLA&#39;s.
 
-Als Adobe Primetime Authentication-team stimuleren we het gebruik van de nieuwste stabiele versies van de browsers en besturingssystemen. We erkennen ook het bestaan van niet-compatibele/oudere platforms en browsers die momenteel in gebruik zijn. Deze verouderde apparaten werken nog steeds zonder problemen, maar ze zijn meer vatbaar voor fouten.
+Hoewel wij als Adobe Primetime Authentication-team het gebruik van de nieuwste stabiele versies van de browsers en besturingssystemen aanmoedigen, erkennen wij ook het bestaan van niet-compatibele/oudere platforms en browsers die momenteel in gebruik zijn. Deze verouderde apparaten werken nog steeds zonder problemen, maar ze zijn meer vatbaar voor fouten.
 
 De eerste aanpak om problemen op deze verouderde platforms te verhelpen, moet bestaan uit het upgraden naar de nieuwste versies. Dit kan de OS-versie, de browserversie of de versie van de geïnstalleerde toepassing zijn.
 
-Alle problemen die op deze platforms worden weergegeven, worden als best-inspanningsbasis opgelost door het Adobe Primetime-verificatieteam. 
+Alle problemen die op deze platforms worden weergegeven, worden als best-inspanningsbasis opgelost door het Adobe Primetime-verificatieteam.
 
-Adobe Primetime moedigt aan om te overwegen om te upgraden naar de nieuwste versies om te profiteren van volledige Adobe support voor alle mogelijke problemen, naast prestatieverbeteringen, efficiëntie en beveiligingsverbeteringen. 
+Adobe Primetime moedigt onze klanten en partners aan om te overwegen om te upgraden naar de nieuwste versies om te profiteren van de volledige ondersteuning van de Adobe bij alle mogelijke problemen, naast prestatieverbeteringen, efficiëntie en beveiligingsverbeteringen.
 
 
-## Vereisten voor browser- en besturingssystemen {#browser-OS-system-requirements}
+## Vereisten voor browser en besturingssysteem {#browser-OS-system-requirements}
 
 
 | Web/mobiele browser (†) | Ondersteunde versies |
@@ -48,7 +48,7 @@ Adobe Primetime moedigt aan om te overwegen om te upgraden naar de nieuwste vers
 | *iPadOS* | **14** of hoger |
 | *tvOS* | **14** of hoger |
 | *Fire OS* | **5 (Android 5.1)** of hoger |
-| *Mac OS* | **10,13** of hoger |
+| *MAC OS* | **10,13** of hoger |
 | *Microsoft Windows* | **10** of hoger |
 
 
@@ -56,13 +56,13 @@ Adobe Primetime moedigt aan om te overwegen om te upgraden naar de nieuwste vers
 
 >[!NOTE]
 >
->Cookies van derden - Adobe Primetime-verificatierechten kunnen mislukken wanneer cookies van derden zijn uitgeschakeld.  Dit probleem kan alleen worden afgespeeld wanneer de browserinstellingen worden gewijzigd. Voor alle ondersteunde browsers moet Primetime-verificatie functioneren met de standaardinstellingen.\
- 
+>Cookies van derden - Adobe Primetime-verificatierechten kunnen mislukken wanneer cookies van derden zijn uitgeschakeld.  Dit probleem kan alleen worden afgespeeld wanneer de browserinstellingen worden gewijzigd. Voor alle ondersteunde browsers moet Primetime-verificatie functioneren met de standaardinstellingen.
+
 
 ## Apparaatvereisten voor implementaties zonder client (REST) {#general_clientless_reqs}
 
- 
-Om het even welk apparaat dat de Diensten van de Authentificatie van Adobe Primetime door cliëntless implementaties zal verbruiken **moet in staat zijn**:
+
+Om het even welk apparaat dat de Diensten van de Authentificatie van Adobe Primetime door cliëntless implementaties zal gebruiken **moet in staat zijn**:
 
 * Geef een unieke hashed-apparaat-id op. Als het apparaat geen unieke hashed apparaat-id heeft, moet het apparaat een unieke id kunnen blijven gebruiken die door Adobe Primetime-verificatie wordt geleverd. Het apparaat moet de unieke id permanent in de lokale opslag kunnen behouden en de unieke id als de apparaat-id kunnen opgeven wanneer het apparaat wordt aangeroepen voor de Adobe Primetime-verificatie-API&#39;s.
 * Digitale handtekeningen genereren met het HMAC-SHA1-algoritme

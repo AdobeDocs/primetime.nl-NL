@@ -1,58 +1,58 @@
 ---
-title: Clientless API-implementatie - foutcodes / berichten met mogelijke reden / oorzaak
-description: Clientless API-implementatie - foutcodes / berichten met mogelijke reden / oorzaak
+title: Clientloze API-implementatie - foutcodes / Berichten met waarschijnlijke reden / oorzaak
+description: Clientloze API-implementatie - foutcodes / Berichten met waarschijnlijke reden / oorzaak
 exl-id: 616e35fc-9b72-422b-9a05-e6248bd52490
-source-git-commit: bfc3ba55c99daba561255760baf273b6538a3c6e
+source-git-commit: 84a16ce775a0aab96ad954997c008b5265e69283
 workflow-type: tm+mt
 source-wordcount: '201'
 ht-degree: 0%
 
 ---
 
-# Clientless API-implementatie - foutcodes / berichten met mogelijke reden / oorzaak {#clientless-api-implementation--error-codes-messages-with-probable-reason-cause}
+# Clientloze API-implementatie - foutcodes / Berichten met waarschijnlijke reden / oorzaak {#clientless-api-implementation--error-codes-messages-with-probable-reason-cause}
 
 >[!NOTE]
 >
->De inhoud op deze pagina wordt alleen ter informatie verstrekt. Voor het gebruik van deze API is een huidige licentie van Adobe vereist. Ongeautoriseerd gebruik is niet toegestaan.
+>De inhoud op deze pagina is uitsluitend ter informatie beschikbaar. Voor het gebruik van deze API is een actuele licentie van Adobe vereist. Ongeautoriseerd gebruik is niet toegestaan.
 
 </br>
 
 
-## Fout: Niet geautoriseerd
+## Fout: niet geautoriseerd
 
 ### Oorzaken:
 
-1. Ontbrekende machtigingheader in de POST
-1. Uitgave met machtigingsheader - controleer of de aanvraagtijd in milliseconden is.
+1. Ontbrekende autorisatiekop in POST
+1. Probleem met autorisatiekop - controleer of de aanvraagtijd zich in milliseconden bevindt.
 
-## Fout: SC 400 tijdens authenticate
+## Fout: SC 400 tijdens verificatie
 
 ### Oorzaken:
 
-1. De server heeft de registratiecode, die voor een specifieke aanvrager en omgeving is gemaakt, niet gevonden.
-1. Mogelijk gaat u naar problemen met scripts die verwijzen naar andere domeinen
-1. Correcte spoofing moet worden toegevoegd aan het bestand /etc/hosts
+1. De server heeft de registratiecode niet gevonden, die voor een specifieke aanvrager en een bepaalde omgeving is gemaakt.
+1. Er kunnen problemen optreden met andere domeinen met scripts
+1. De juiste spoofing moet worden toegevoegd aan het /etc/hosts-bestand
 
 ## Fout: 400 Ongeldig verzoek
 
 ### Oorzaken:
 
-1. Onjuiste URL voor POST/GET
-1. SAMLAsertionParserException - de gecodeerde bevestiging van SAML kon niet worden gedecrypteerd bij Adobe
+1. Verkeerde URL voor POST/GET
+1. SAMLAssertionParserException – De gecodeerde SAML-bevestiging kon niet worden ontsleuteld aan het einde van Adobe
 
 ## Fout: 403 Verboden
 
 ### Oorzaken:
 
-1. Te veel snelle aanvragen - een functie van het API-beheer om DoS-aanvallen te voorkomen.
-2. Als het gebruiken van prequizmilieu dan spoofing toevoegt, anders zorg ervoor spoofing is verwijderd uit /etc/hosts- dossier
+1. Te veel snelle verzoeken - een functie van het API-beheer om DoS-aanvallen te voorkomen.
+2. Als u een prequal-omgeving gebruikt, voegt u spoofing toe, anders moet u ervoor zorgen dat spoofing is verwijderd uit het /etc/hosts-bestand
 
-## Fout: Kan niet aanmelden bij MVPD-pagina
+## Fout: kan zich niet aanmelden bij de MVPD-pagina
 
 ### Oorzaken:
 
-1. Gebruikersnaam en wachtwoord komen niet overeen 
-2. Aanmelding is mogelijk uitgeschakeld
+1. Gebruikersnaam en wachtwoord komen niet overeen
+2. Aanmelden is mogelijk uitgeschakeld
 3. Controleren of de aanmelding is bedoeld voor productie of staging
 
 

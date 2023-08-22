@@ -2,7 +2,7 @@
 title: Toegang tot de Android SDK Single Sign-On (SSO) voor Android 10-apps
 description: Toegang tot de Android SDK Single Sign-On (SSO) voor Android 10-apps
 exl-id: dedade15-c451-4757-b684-d3728e11dd87
-source-git-commit: bfc3ba55c99daba561255760baf273b6538a3c6e
+source-git-commit: 84a16ce775a0aab96ad954997c008b5265e69283
 workflow-type: tm+mt
 source-wordcount: '377'
 ht-degree: 0%
@@ -27,11 +27,11 @@ Zie [Overzicht van Roku SSO](/help/authentication/roku-sso-overview.md).
 
 ## Gedrag
 
-Afhankelijk van de **doel-SDK-niveau** of het gebruik van **android:requestLegacyExternalStorage** Manier attribuut Single Sign-On (SSO) die door Access Enabler Android versie 3.2.1 SDK (recentste) wordt aangeboden en de vorige versies zullen zich momenteel als volgt gedragen:
+Afhankelijk van de **doel-SDK** of het gebruik van **android:requestLegacyExternalStorage** Manier attribuut Single Sign-On (SSO) die door Access Enabler Android versie 3.2.1 SDK (recentste) wordt aangeboden en de vorige versies zullen zich momenteel als volgt gedragen:
 
-- Uw app-doelen **Android 9 (API-niveau 28)** of lager **-\>** Single Sign-On (SSO) **zal werken**
-- Uw app-doelen **Android 10** **(API-niveau 29)** en doet **set** de waarde van **requestLegacyExternalStorage instellen op true** in het manifestbestand van uw app **-\>** Single Sign-On (SSO) **zal werken**
-- Uw app-doelen **Android 10** **(API-niveau 29)** en doet **niet ingesteld** de waarde van **requestLegacyExternalStorage instellen op true** in het manifestbestand van uw app **-\>** Single Sign-On (SSO) **werkt niet**
+- Uw app-doelen **Android 9 (API-niveau 28)** of lager **-\>** Eenmalige aanmelding (SSO) **zal werken**
+- Uw app-doelen **Android 10** **(API-niveau 29)** en doet **set** de waarde van **requestLegacyExternalStorage instellen op true** in het manifestbestand van uw app **-\>** Eenmalige aanmelding (SSO) **zal werken**
+- Uw app-doelen **Android 10** **(API-niveau 29)** en doet **niet ingesteld** de waarde van **requestLegacyExternalStorage instellen op true** in het manifestbestand van uw app **-\>** Eenmalige aanmelding (SSO) **werkt niet**
 
 
 >[!TIP]

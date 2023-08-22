@@ -2,14 +2,14 @@
 title: Bijlage B "Tips voor foutopsporing"
 description: Bijlage B "Tips voor foutopsporing"
 exl-id: ea024797-315e-47c0-99ea-1ac49c8c9697
-source-git-commit: 1bc2f6c230c262babf2958c32fee31afcad04c2f
+source-git-commit: 84a16ce775a0aab96ad954997c008b5265e69283
 workflow-type: tm+mt
 source-wordcount: '170'
 ht-degree: 0%
 
 ---
 
-# Aanhangsel B: Tips voor foutopsporing {#appendix-b-debugging-tips}
+# Bijlage B: Tips voor foutopsporing {#appendix-b-debugging-tips}
 
 >[!NOTE]
 >
@@ -21,20 +21,20 @@ ht-degree: 0%
 Bij Adobe Primetime-verificatie worden tijdelijke gegevens opgeslagen, zoals browsercache, LSO&#39;s-cache en cookies. Het wissen van tijdelijke gegevens is belangrijk om ervoor te zorgen dat u bij het testen een schone lei krijgt.
 
 - [De browsercache en cookies wissen](#clearing-the-browser-cache-and-cookies)
-- [LSO&#39;s-cache wissen](#clearing-lsos-cache)\
-   
+- [LSO&#39;s-cache wissen](#clearing-lsos-cache)
+
 
 ## De browsercache en cookies wissen {#clearing-the-browser-cache-and-cookies}
 
-Het is browser betrouwbaar, maar in Firefox: &quot;Gereedschappen&quot; -\> &quot;Recente geschiedenis wissen...&quot; -\> Voor &quot;Te wissen tijdbereik:&quot; selecteert u &quot;Alles&quot;; en op &quot;Details&quot;: Klik op &quot;Nu wissen&quot; en &quot;Cache&quot; -\>.\
- 
+Het is afhankelijk van de browser, maar in Firefox: &quot;Tools&quot; -\> &quot;Clear Recent History...&quot; -\> Op &quot;Time range to clear:&quot; selecteert u &quot;Alles&quot; en op &quot;Details&quot;: controleer de &quot;Cookies&quot; en &quot;Cache&quot; -\> Klik op &quot;Clear Now&quot;.
+
 
 ## LSO&#39;s-cache wissen {#clearing-lsos-cache}
 
-Toegang krijgen tot [Flash Player help](http://www.macromedia.com/support/documentation/en/flashplayer/help/settings_manager07.html).
+Toegang krijgen tot de [Flash Player Help](http://www.macromedia.com/support/documentation/en/flashplayer/help/settings_manager07.html).
 
-Selecteer ```entitlement.\*``` (afhankelijk van wat er wordt getest) en klik op &quot;Website verwijderen&quot;.\
- 
+Selecteer de ```entitlement.\*``` (afhankelijk van wat er wordt getest) en klik op Website verwijderen.
+
 
 ## Foutopsporingsgereedschappen {#tools}
 

@@ -2,7 +2,7 @@
 title: Registratierecord retourneren
 description: Registratierecord retourneren
 exl-id: 7b9e63a2-59b6-4123-a19b-ee1f021219ea
-source-git-commit: bfc3ba55c99daba561255760baf273b6538a3c6e
+source-git-commit: 84a16ce775a0aab96ad954997c008b5265e69283
 workflow-type: tm+mt
 source-wordcount: '253'
 ht-degree: 0%
@@ -20,29 +20,29 @@ ht-degree: 0%
 
 &lt;reggie_fqdn>:
 
-* Productie - [api.auth.adobe.com](http://api.auth.adobe.com/)
-* Staging - [api.auth-staging.adobe.com](http://api.auth-staging.adobe.com/)
+* Productie - [api.auth.adobe.com](http://api.auth.adobe.com/)
+* Staging - [api.auth-staging.adobe.com](http://api.auth-staging.adobe.com/)
 
 &lt;sp_fqdn>:
 
-* Productie - [api.auth.adobe.com](http://api.auth.adobe.com/)
-* Staging - [api.auth-staging.adobe.com](http://api.auth-staging.adobe.com/)
+* Productie - [api.auth.adobe.com](http://api.auth.adobe.com/)
+* Staging - [api.auth-staging.adobe.com](http://api.auth-staging.adobe.com/)
 
- </br>
- 
+</br>
+
 
 ## Beschrijving {#description}
 
-Retourneert een record met registratiecode UUID, registratiecode en hashed device ID. 
+Retourneert de registratie-code die de registratiecode UUID, de registratiecode en de hashed-apparaat-id bevat.
 
- 
+
 
 <div>
 
 
-| Endpoint | Geroepen  </br>Door | Invoer   </br>Params | HTTP  </br>Methode | Antwoord | HTTP  </br>Antwoord |
+| Endpoint | Geroepen  </br>Door | Invoer   </br>Params | HTTP  </br>Methode | Antwoord | HTTP  </br>Antwoord |
 | --- | --- | --- | --- | --- | --- |
-| &lt;reggie_fqdn>;/reggie/v1/{requestId}/regcode/{registrationCode}</br></br>Bijvoorbeeld:</br></br>&lt;reggie_fqdn>/reggie/v1/sampleRequestorId/regcode/TJCFK?format=xml | Streaming-app</br></br>of</br></br>Programmeringsservice | 1. aanvrager  </br>    (component Path)</br>2.  registratiecode  </br>    (component Path) | GET | XML of JSON met een registratiecode en informatie. Zie schema en voorbeeld hieronder. | 200 |
+| &lt;reggie_fqdn>;/reggie/v1/{requestorId}/regcode/{registrationCode}</br></br>Bijvoorbeeld:</br></br>&lt;reggie_fqdn>/reggie/v1/sampleRequestorId/regcode/TJCFK?format=xml | Streaming-app</br></br>of</br></br>Programmeringsservice | 1. aanvrager  </br>    (component Path)</br>2.  registratiecode  </br>    (component Path) | GET | XML of JSON met een registratiecode en informatie. Zie schema en voorbeeld hieronder. | 200 |
 
 {style="table-layout:auto"}
 
@@ -93,7 +93,7 @@ Retourneert een record met registratiecode UUID, registratiecode en hashed devic
 
 | Elementnaam | Beschrijving |
 | --- | --- |
-| id | UUID gegenereerd door de Registratiecode-service |
+| id | UUID gegenereerd door de Registratiecode Service |
 | code | Registratiecode gegenereerd door de registratiecodeservice |
 | aanvrager | Id van aanvrager |
 | mvpd | MVPD-id |

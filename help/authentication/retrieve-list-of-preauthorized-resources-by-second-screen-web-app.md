@@ -2,7 +2,7 @@
 title: Lijst met vooraf geautoriseerde bronnen ophalen via tweede webtoepassing voor scherm
 description: Lijst met vooraf geautoriseerde bronnen ophalen via tweede webtoepassing voor scherm
 exl-id: 78eeaf24-4cc1-4523-8298-999c9effdb7a
-source-git-commit: bfc3ba55c99daba561255760baf273b6538a3c6e
+source-git-commit: 84a16ce775a0aab96ad954997c008b5265e69283
 workflow-type: tm+mt
 source-wordcount: '244'
 ht-degree: 0%
@@ -19,13 +19,13 @@ ht-degree: 0%
 
 &lt;reggie_fqdn>:
 
-* Productie - [api.auth.adobe.com](http://api.auth.adobe.com/)
-* Staging - [api.auth-staging.adobe.com](http://api.auth-staging.adobe.com/)
+* Productie - [api.auth.adobe.com](http://api.auth.adobe.com/)
+* Staging - [api.auth-staging.adobe.com](http://api.auth-staging.adobe.com/)
 
 &lt;sp_fqdn>:
 
-* Productie - [api.auth.adobe.com](http://api.auth.adobe.com/)
-* Staging - [api.auth-staging.adobe.com](http://api.auth-staging.adobe.com/)
+* Productie - [api.auth.adobe.com](http://api.auth.adobe.com/)
+* Staging - [api.auth-staging.adobe.com](http://api.auth-staging.adobe.com/)
 
 </br>
 
@@ -33,10 +33,12 @@ ht-degree: 0%
 
 Een verzoek aan de authentificatie van Adobe Primetime om de lijst van vooraf erkende middelen te verkrijgen.
 
-Er zijn twee sets API&#39;s: één set voor de Streaming App of Programmer Service en één set voor de Second Screen Web App. Deze pagina beschrijft API voor de App AuthN.
+Er zijn twee reeksen APIs: één reeks voor de Streaming App of de Dienst van Programmer en één reeks voor de Tweede SchermApp. Deze pagina beschrijft API voor de App AuthN.
 
- \
-| Eindpunt | Afgeroepen  </br>Door | Invoer   </br>Params | HTTP  </br>Methode | Reactie | HTTP  </br>Antwoord | | — | — | — | — | — | — | | &lt;sp_fqdn>/api/v1/preauthorize/{registration code} | Module AuthN | 1.  registratiecode  </br>    (component Path)</br>2.  aanvrager (verplicht)</br>3.  resourcerelijst (verplicht) | GET | XML of JSON met individuele aan de autorisatie voorafgaande beslissingen of bijzonderheden over fouten. Zie onderstaande voorbeelden. | 200 - Succes</br></br>400 - Onjuist verzoek</br></br>401 - Niet-geautoriseerd</br></br>405 - Methode niet toegestaan  </br></br>412 - Voorwaarde is mislukt</br></br>500 - Interne serverfout |
+
+| Endpoint | Geroepen  </br>Door | Invoer   </br>Params | HTTP  </br>Methode | Antwoord | HTTP  </br>Antwoord |
+| --- | --- | --- | --- | --- | --- |
+| &lt;sp_fqdn>/api/v1/preauthorize/{registration code} | Module AuthN | 1. Registratiecode  </br>    (component Path)</br>2.  aanvrager (verplicht)</br>3.  resourcerelijst (verplicht) | GET | XML of JSON met individuele aan de autorisatie voorafgaande beslissingen of foutdetails. Zie onderstaande voorbeelden. | 200 - Succes</br></br>400 - Onjuist verzoek</br></br>401 - Niet bevoegd</br></br>405 - Methode niet toegestaan  </br></br>412 - Voorwaarde is mislukt</br></br>500 - Interne serverfout |
 
 
 
@@ -58,23 +60,23 @@ Adobe-Response-Confidence : full
 Content-Type: application/xml; charset=utf-8
 
 <resources>
-    <resource>
-        <id>TestStream1</id>
-        <authorized>true</authorized>
-    </resource>
-    <resource>
-        <id>TestStream2</id>
-        <authorized>false</authorized>  
-        <error>
-            <status>403</status>
-            <code>authorization_denied_by_mvpd</code>
-            <message>User not authorized</message>
-            <details>Your subscription package does not include the "TestStream3" channel.</details>
-            <helpUrl>https://experienceleague-review.corp.adobe.com/docs/primetime/authentication/auth-features/error-reportn/enhanced-error-codes.html#error-codes</helpUrl>
-            <trace>0453f8c8-167a-4429-8784-cd32cfeaee58</trace>
-            <action>none</action>
-        </error>
-    <resource>
+    <resource>
+        <id>TestStream1</id>
+        <authorized>true</authorized>
+    </resource>
+    <resource>
+        <id>TestStream2</id>
+        <authorized>false</authorized>  
+        <error>
+            <status>403</status>
+            <code>authorization_denied_by_mvpd</code>
+            <message>User not authorized</message>
+            <details>Your subscription package does not include the "TestStream3" channel.</details>
+            <helpUrl>https://experienceleague-review.corp.adobe.com/docs/primetime/authentication/auth-features/error-reportn/enhanced-error-codes.html#error-codes</helpUrl>
+            <trace>0453f8c8-167a-4429-8784-cd32cfeaee58</trace>
+            <action>none</action>
+        </error>
+    <resource>
 </resources>
 ```
 

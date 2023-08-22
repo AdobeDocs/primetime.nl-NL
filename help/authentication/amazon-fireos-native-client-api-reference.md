@@ -2,7 +2,7 @@
 title: Native API-naslaggids voor Amazon FireOS
 description: Native API-naslaggids voor Amazon FireOS
 exl-id: 8ac9f976-fd6b-4b19-a80d-49bfe57134b5
-source-git-commit: bfc3ba55c99daba561255760baf273b6538a3c6e
+source-git-commit: 84a16ce775a0aab96ad954997c008b5265e69283
 workflow-type: tm+mt
 source-wordcount: '3416'
 ht-degree: 0%
@@ -19,14 +19,14 @@ ht-degree: 0%
 
 ## Inleiding {#intro}
 
-In dit document worden de methoden en callbacks beschreven die worden weergegeven door de Amazon FireOS SDK voor Adobe Primetime-verificatie, ondersteund met Adobe Primetime-verificatie.</span> De hier beschreven methodes en callback functies worden bepaald in de AccessEnabler.h en EntitlementDelegate.h kopbaldossiers.
+In dit document worden de methoden en callbacks beschreven die worden weergegeven door de Amazon FireOS SDK voor Adobe Primetime-verificatie, ondersteund met Adobe Primetime-verificatie.</span> De hier beschreven methodes en callback functies worden bepaald in de AccessEnabler.h en EntitlementDelegate.h kopbaldossiers.
 
-Zie <https://tve.zendesk.com/hc/en-us/articles/115005561623-fire-TV-Native-AccessEnabler-Library> voor de nieuwste Amazon FireOS AccessEnabler SDK. 
+Zie <https://tve.zendesk.com/hc/en-us/articles/115005561623-fire-TV-Native-AccessEnabler-Library> voor de nieuwste Amazon FireOS AccessEnabled SDK.
 
-**Opmerking:** Het Adobe Primetime-verificatieteam moedigt u aan alleen Adobe Primetime-verificatie te gebruiken *publiek* API&#39;s:
+**Opmerking:** Het Adobe Primetime-verificatieteam moedigt u aan alleen Adobe Primetime-verificatie te gebruiken *publiek* API&#39;s:
 
-- Openbare API&#39;s zijn beschikbaar *en volledig getest* op alle ondersteunde clienttypen. Voor om het even welke openbare eigenschap, zorgen wij ervoor dat elk cliënttype een overeenkomstige versie van de bijbehorende methode(n) heeft.
-- Openbare API&#39;s moeten zo stabiel mogelijk zijn, achterwaartse compatibiliteit ondersteunen en ervoor zorgen dat partnerintegratie niet wordt verbroken. Voor *non*-public API&#39;s, behouden we ons het recht voor om hun handtekening op elk toekomstig moment te wijzigen. Als u een bepaalde stroom tegenkomt die niet door een combinatie van de huidige openbare de authentificatie API vraag van Adobe Primetime kan worden gesteund, is de beste benadering ons op de hoogte te brengen. Rekening houdend met uw behoeften, kunnen wij openbare APIs wijzigen en een stabiele oplossing verstrekken die zich voortzet.
+- Openbare API&#39;s zijn beschikbaar *en volledig getest* op alle ondersteunde clienttypen. Voor om het even welke openbare eigenschap, zorgen wij ervoor dat elk cliënttype een overeenkomstige versie van de bijbehorende methode(n) heeft.
+- Openbare API&#39;s moeten zo stabiel mogelijk zijn, achterwaartse compatibiliteit ondersteunen en ervoor zorgen dat partnerintegratie niet wordt verbroken. Voor *non*-public API&#39;s, behouden we ons het recht voor om hun handtekening op elk toekomstig moment te wijzigen. Als u een bepaalde stroom tegenkomt die niet door een combinatie van de huidige openbare de authentificatie API vraag van Adobe Primetime kan worden gesteund, is de beste benadering ons op de hoogte te brengen. Rekening houdend met uw behoeften, kunnen wij openbare APIs wijzigen en een stabiele oplossing verstrekken die zich voortzet.
 
 ## Amazon FireOS SDK API {#api}
 
@@ -58,7 +58,7 @@ Zie <https://tve.zendesk.com/hc/en-us/articles/115005561623-fire-TV-Native-Acce
 
 ### Factory.getInstance {#getInstance}
 
-**Omschrijving:** Instantieert het Access Enabler-object. Per toepassingsinstantie moet er één instantie van Access Enabler zijn.
+**Omschrijving:** Instantieert het Access Enabler-object. Per toepassingsinstantie moet er één instantie van Access Enabler zijn.
 
 | API-aanroep: constructor |
 | --- |
@@ -72,8 +72,8 @@ Zie <https://tve.zendesk.com/hc/en-us/articles/115005561623-fire-TV-Native-Acce
 
 - *appContext*: Amazon Fire OS-toepassingscontext.
 - softwareStatement
-- redirectUrl : in het geval van FireOS wordt de parameterwaarde genegeerd en op default ingesteld: adobepass://android.app
-- env_url: voor het testen met behulp van een Adobe-testomgeving kan env\_url worden ingesteld op &quot;sp.auth-staging.adobe.com&quot;
+- redirectUrl : in het geval van FireOS wordt de parameterwaarde genegeerd en ingesteld op default : adobepass://android.app
+- env_url: voor het testen met behulp van een testomgeving voor Adobe staging, kan env\_url worden ingesteld op &quot;sp.auth-staging.adobe.com&quot;
 
 **Vervangen:**
 
@@ -81,19 +81,19 @@ Zie <https://tve.zendesk.com/hc/en-us/articles/115005561623-fire-TV-Native-Acce
     public static AccessEnabler getInstance(Context appContext)
         throws AccessEnablerException
 ```
- 
+
 
 ### setRequestor {#setRequestor}
 
-**Omschrijving:** Hiermee wordt de identiteit van de programmeur vastgesteld. Elke programmeur krijgt een unieke id toegewezen na registratie bij Adobe voor het Adobe Primetime-verificatiesysteem. Deze instelling mag slechts eenmaal worden uitgevoerd tijdens de levenscyclus van de toepassing.
+**Omschrijving:** Hiermee wordt de identiteit van de programmeur vastgesteld. Elke programmeur krijgt een unieke id toegewezen bij het registreren bij Adobe voor het Adobe Primetime-verificatiesysteem. Deze instelling mag slechts eenmaal worden uitgevoerd tijdens de levenscyclus van de toepassing.
 
 De serverreactie bevat een lijst van MVPDs samen met wat configuratieinformatie die aan de identiteit van Programmer in bijlage is. De serverreactie wordt intern gebruikt door de code van Toegangsbeheer. Alleen de status van de bewerking (SUCCESS/FAIL) wordt via de callback setRequestorComplete() aan uw toepassing gepresenteerd.
 
-Als de *urls* parameter niet wordt gebruikt, richt de resulterende netwerkvraag de standaarddienstverlener URL: de Adobe-productie-omgeving.
+Als de *urls* parameter niet wordt gebruikt, richt de resulterende netwerkvraag de standaarddienstverlener URL: de milieu van de Versie van de Adobe/van de Productie.
 
-Als een waarde is opgegeven voor de *urls* parameter, richt de resulterende netwerkvraag alle URLs die in *urls* parameter. Alle configuratieverzoeken worden teweeggebracht gelijktijdig in afzonderlijke draden. De eerste responder krijgt voorrang wanneer het compileren van de lijst van MVPDs. Voor elke MVPD in de lijst, onthoudt Toegangsbeheer URL van de bijbehorende dienstverlener. Alle verdere machtigingsverzoeken worden gericht aan URL verbonden aan de dienstverlener die met doel MVPD tijdens de configuratiefase in paren werd gebracht.
+Als een waarde is opgegeven voor de *urls* parameter, richt de resulterende netwerkvraag alle URLs die in *urls* parameter. Alle configuratieverzoeken worden teweeggebracht gelijktijdig in afzonderlijke draden. De eerste responder krijgt voorrang wanneer het compileren van de lijst van MVPDs. Voor elke MVPD in de lijst, onthoudt Toegangsbeheer URL van de bijbehorende dienstverlener. Alle verdere machtigingsverzoeken worden gericht aan URL verbonden aan de dienstverlener die met doel MVPD tijdens de configuratiefase in paren werd gebracht.
 
-| API-aanroep: aanvraagconfiguratie |
+| API-aanroep: configuratie aanvrager |
 | --- |
 | ```public void setRequestor(String requestorId)``` |
 
@@ -101,7 +101,7 @@ Als een waarde is opgegeven voor de *urls* parameter, richt de resulterende ne
 **Beschikbaarheid:**v 3.0+
 
 
-| API-aanroep: aanvraagconfiguratie |
+| API-aanroep: configuratie aanvrager |
 | --- |
 | ```public void setRequestor(String requestorId, ArrayList<String> urls)``` |
 
@@ -110,12 +110,12 @@ Als een waarde is opgegeven voor de *urls* parameter, richt de resulterende ne
 
 **Parameters:**
 
-- *aanvragerID*: De unieke id die aan de programmeur is gekoppeld. Geef de unieke id die door Adobe is toegewezen door aan uw site wanneer u zich voor het eerst hebt geregistreerd bij de Adobe Primetime-verificatieservice.
-- *urls*: Optionele parameter; standaard wordt de Adobe-serviceprovider gebruikt (http://sp.auth.adobe.com/). Deze serie staat u toe om eindpunten voor authentificatie en vergunningsdiensten te specificeren die door Adobe worden verleend (verschillende instanties zouden voor het zuiveren doeleinden kunnen worden gebruikt). U kunt dit gebruiken om meerdere instanties van Adobe Primetime-verificatieproviders op te geven. Wanneer het doen van dit, is de lijst MVPD samengesteld uit de eindpunten van alle dienstverleners. Elke MVPD wordt geassocieerd met de snelste dienstverlener; dat wil zeggen, de leverancier die eerst heeft gereageerd en die dat MVPD ondersteunt.
+- *aanvragerID*: De unieke id die aan de programmeur is gekoppeld. Geef de unieke id die door Adobe aan uw site is toegewezen door wanneer u zich voor het eerst hebt geregistreerd bij de Adobe Primetime-verificatieservice.
+- *urls*: Optionele parameter; standaard wordt de Adobe-serviceprovider gebruikt (http://sp.auth.adobe.com/). Deze serie staat u toe om eindpunten voor authentificatie en vergunningsdiensten te specificeren die door Adobe worden verleend (verschillende instanties zouden voor het zuiveren doeleinden kunnen worden gebruikt). U kunt dit gebruiken om meerdere instanties van Adobe Primetime-verificatieproviders op te geven. Wanneer het doen van dit, is de lijst MVPD samengesteld uit de eindpunten van alle dienstverleners. Elke MVPD wordt geassocieerd met de snelste dienstverlener; namelijk de leverancier die eerst antwoordde en die die MVPD steunt.
 
 **Callbacks geactiveerd:** `setRequestorComplete()`
 
- 
+
 
 **Vervangen:**
 
@@ -124,15 +124,15 @@ Als een waarde is opgegeven voor de *urls* parameter, richt de resulterende ne
 
     public void setRequestor(String requestorId, String signedRequestorId, ArrayList<String> urls)
 ```
- 
+
 </br>
 
 
 ### setRequestorComplete {#setRequestorComplete}
 
-**Omschrijving:** Callback die door Toegankelijkheid wordt teweeggebracht die uw toepassing meedeelt dat de configuratiefase volledig is. Dit is een signaal dat de app aanvragen voor machtigingen kan starten. De toepassing kan geen machtigingsaanvragen indienen totdat de configuratiefase is voltooid.
+**Omschrijving:** Callback die door Toegankelijkheid wordt teweeggebracht die uw toepassing meedeelt dat de configuratiefase volledig is. Dit is een signaal dat de app aanvragen voor machtigingen kan starten. De toepassing kan geen machtigingsaanvragen indienen totdat de configuratiefase is voltooid.
 
-| Callback: aanvraagconfiguratie voltooid |
+| Callback: configuratie aanvrager voltooid |
 | --- |
 | ```public void setRequestorComplete(int status)``` |
 
@@ -140,22 +140,22 @@ Als een waarde is opgegeven voor de *urls* parameter, richt de resulterende ne
 
 **Parameters:**
 
-- *status*: Kan een van de volgende waarden hebben:
+- *status*: Kan een van de volgende waarden gebruiken:
    - `AccessEnabler.ACCESS_ENABLER_STATUS_SUCCESS` - de configuratiefase is voltooid
    - `AccessEnabler.ACCESS_ENABLER_STATUS_ERROR` - configuratiefase mislukt
 
 **geactiveerd door:** `setRequestor()`
 
-</br> 
+</br>
 
 
 ### setOptions {#fire_setOption}
 
-**Omschrijving:** Vormt globale opties van SDK. Het aanvaardt een **Kaart\&lt;string string=&quot;&quot;>** als argument. De waarden van de kaart zullen aan de server samen met elke netwerkvraag worden overgegaan die SDK maakt.
+**Omschrijving:** Vormt globale opties van SDK. Het aanvaardt een **Kaart\&lt;string string=&quot;&quot;>** als argument. De waarden van de kaart zullen aan de server samen met elke netwerkvraag worden overgegaan die SDK maakt.
 
 De waarden worden doorgegeven aan de server, onafhankelijk van de huidige flow (verificatie/autorisatie). Als u de waarden wilt wijzigen, kunt u deze methode op elk gewenst moment aanroepen.
 
- 
+
 
 | API-aanroep: setOptions |
 | --- |
@@ -166,17 +166,17 @@ De waarden worden doorgegeven aan de server, onafhankelijk van de huidige flow (
 **Parameters:**
 
 - *opties*: Een kaart\&lt;string string=&quot;&quot;> met algemene SDK-opties. Momenteel zijn de volgende opties beschikbaar:
-   - **applicationProfile** - Het kan worden gebruikt om serverconfiguraties te maken die op deze waarde worden gebaseerd.
-   - **ap\_vi** - De Marketing Cloud bezoeker-id. Deze waarde kan later worden gebruikt voor geavanceerde analyserapporten.
-   - **apparaat\_info** - Apparaatgegevens zoals beschreven in **Cookbook met doorgegeven apparaatinformatie**
+   - **applicationProfile** - Het kan worden gebruikt om serverconfiguraties te maken die op deze waarde worden gebaseerd.
+   - **ap\_vi** - De Marketing Cloud bezoeker-id. Deze waarde kan later worden gebruikt voor geavanceerde analyserapporten.
+   - **apparaat\_info** - Apparaatgegevens zoals beschreven in **Cookbook met doorgegeven apparaatinformatie**
 
 </br>
 
 ### checkAuthentication {#checkAuthN}
 
-**Omschrijving:** Controleert de verificatiestatus. Het doet dit door naar een geldig authentificatietoken in de lokale symbolische opslagruimte te zoeken. Het roepen van deze methode voert geen netwerkvraag uit. Deze wordt door de toepassing gebruikt om de verificatiestatus van de gebruiker te controleren en de gebruikersinterface dienovereenkomstig bij te werken (de gebruikersinterface voor aanmelding/aanmelding wordt dus bijgewerkt). De verificatiestatus wordt via de [*setAuthenticationStatus()*](#setAuthNStatus) callback.
+**Omschrijving:** Controleert de verificatiestatus. Het doet dit door naar een geldig authentificatietoken in de lokale symbolische opslagruimte te zoeken. Het roepen van deze methode voert geen netwerkvraag uit. Deze wordt door de toepassing gebruikt om de verificatiestatus van de gebruiker te controleren en de gebruikersinterface dienovereenkomstig bij te werken (de gebruikersinterface voor aanmelding/aanmelding wordt dus bijgewerkt). De verificatiestatus wordt via de [*setAuthenticationStatus()*](#setAuthNStatus) callback.
 
-Als een MVPD de eigenschap &quot;Authentificatie per Aanvrager&quot;steunt, dan kunnen de veelvoudige authentificatietokens op een apparaat worden opgeslagen. 
+Als een MVPD de eigenschap &quot;Authentificatie per Aanvrager&quot;steunt, dan kunnen de veelvoudige authentificatietokens op een apparaat worden opgeslagen.
 
 | API-aanroep: verificatiestatus controleren |
 | --- |
@@ -192,22 +192,22 @@ Als een MVPD de eigenschap &quot;Authentificatie per Aanvrager&quot;steunt, dan 
 
 ### getAuthentication {#getAuthN}
 
-**Omschrijving:** Start de volledige verificatieworkflow. Het begint door de authentificatiestatus te controleren. Indien nog niet geverifieerd, wordt de verificatiestroom state-machine gestart:
+**Omschrijving:** Start de volledige verificatieworkflow. Het begint door de authentificatiestatus te controleren. Indien nog niet geverifieerd, wordt de verificatiestroom state-machine gestart:
 
 - Als de laatste authentificatiepoging succesvol was, wordt de MVPD selectiefase overgeslagen en een controle WebView zal de gebruiker met de MVPD login pagina voorstellen.
-- Als de laatste verificatiepoging is mislukt of als de gebruiker zich expliciet heeft afgemeld, wordt [*displayProviderDialog()*](#displayProviderDialog) callback wordt geactiveerd. Uw toepassing gebruikt deze callback om de MVPD selectie UI te tonen. Uw app is ook vereist om de verificatiestroom te hervatten door de Access Enabler-bibliotheek te informeren over de MVPD-selectie van de gebruiker via de [setSelectedProvider()](#setSelectedProvider) methode.
+- Als de laatste verificatiepoging is mislukt of als de gebruiker zich expliciet heeft afgemeld, wordt [*displayProviderDialog()*](#displayProviderDialog) callback wordt geactiveerd. Uw toepassing gebruikt deze callback om de MVPD selectie UI te tonen. Uw app is ook vereist om de verificatiestroom te hervatten door de Access Enabler-bibliotheek te informeren over de MVPD-selectie van de gebruiker via de [setSelectedProvider()](#setSelectedProvider) methode.
 
 Als een MVPD de eigenschap &quot;Authentificatie per Aanvrager&quot;steunt, dan kunnen de veelvoudige authentificatietokens op een apparaat (per Programmer) worden opgeslagen.
 
-Ten slotte wordt de authenticatiestatus via de *setAuthenticationStatus()* callback.
+Ten slotte wordt de authenticatiestatus via de *setAuthenticationStatus()* callback.
 
-| API-aanroep: start de verificatiestroom |
+| API-aanroep: initieert de verificatiestroom |
 | --- |
 | ```public void getAuthentication()``` |
 
 **Beschikbaarheid:** v1.0+
 
-| API-aanroep: start de verificatiestroom |
+| API-aanroep: initieert de verificatiestroom |
 | --- |
 | ```public void getAuthentication(boolean forceAuthN, Map<String, Object> genericData)``` |
 
@@ -215,21 +215,21 @@ Ten slotte wordt de authenticatiestatus via de *setAuthenticationStatus()* cal
 
 **Parameters:**
 
-- *forceAuthn*: Een vlag die specificeert als de authentificatiestroom zou moeten worden begonnen, ongeacht als de gebruiker reeds voor authentiek wordt verklaard of niet.
-- *data*: Een kaart die bestaat uit sleutel-waardeparen die naar de betaaltelevisie-pas dienst moeten worden verzonden. Adobe kan deze gegevens gebruiken om toekomstige functionaliteit toe te laten zonder SDK te veranderen.
+- *forceAuthn*: Een markering die aangeeft of de verificatiestroom moet worden gestart, ongeacht of de gebruiker al dan niet is geverifieerd.
+- *data*: Een kaart die bestaat uit sleutel-waardeparen die naar de betaaltelevisie-omslagdienst moeten worden verzonden. Adobe kan deze gegevens gebruiken om toekomstige functionaliteit toe te laten zonder SDK te veranderen.
 
-**Callbacks geactiveerd:** `setAuthenticationStatus(), displayProviderDialog(), sendTrackingData()`
+**Callbacks geactiveerd:** `setAuthenticationStatus(), displayProviderDialog(), sendTrackingData()`
 
 </br>
 
 ### displayProviderDialog {#displayProviderDialog}
 
-**Beschrijving** Callback teweeggebracht door Toegangsactivering om de toepassing mee te delen dat de aangewezen elementen UI moeten worden geconcretiseerd om de gebruiker toe te staan om gewenste MVPD te selecteren. De callback biedt een lijst met MVPD-objecten met aanvullende informatie die kan helpen om het deelvenster met de selectieinterface correct samen te stellen (zoals de URL die het logo van de MVPD aanwijst, de vriendelijke weergavenaam, enz.)
+**Beschrijving** Callback teweeggebracht door Toegangsactivering om de toepassing mee te delen dat de aangewezen elementen UI moeten worden geconcretiseerd om de gebruiker toe te staan om gewenste MVPD te selecteren. De callback biedt een lijst met MVPD-objecten met aanvullende informatie die kan helpen om het deelvenster met de selectieinterface correct samen te stellen (zoals de URL die het logo van de MVPD aanwijst, de vriendelijke weergavenaam, enz.)
 
-Zodra de gebruiker gewenste MVPD heeft geselecteerd, wordt de upper-layer toepassing vereist om de authentificatiestroom te hervatten door te roepen *setSelectedProvider()* en geeft u de id van de MVPD door die overeenkomt met de selectie van de gebruiker.\
- 
+Zodra de gebruiker gewenste MVPD heeft geselecteerd, wordt de upper-layer toepassing vereist om de authentificatiestroom te hervatten door te roepen *setSelectedProvider()* en geeft u de id van de MVPD door die overeenkomt met de selectie van de gebruiker.
 
-| **Callback: de gebruikersinterface van de MVPD-selectie weergeven** |
+
+| **Callback: toon de selectie UI MVPD** |
 | --- |
 | ```public void displayProviderDialog(ArrayList<Mvpd> mvpds)``` |
 
@@ -237,7 +237,7 @@ Zodra de gebruiker gewenste MVPD heeft geselecteerd, wordt de upper-layer toepas
 
 **Parameters**:
 
-- *mvpds*: Lijst met MVPD-objecten met MVPD-gerelateerde informatie die de toepassing kan gebruiken om de UI-elementen voor de selectie van MVPD te maken.
+- *mvpds*: Lijst met MVPD-objecten die MVPD-gerelateerde informatie bevatten die de toepassing kan gebruiken om de UI-elementen voor de selectie van MVPD te maken.
 
 **geactiveerd door:** `getAuthentication(), getAuthorization()`
 
@@ -245,9 +245,9 @@ Zodra de gebruiker gewenste MVPD heeft geselecteerd, wordt de upper-layer toepas
 
 ### setSelectedProvider {#setSelectedProvider}
 
-**Omschrijving:** Deze methode wordt geroepen door uw toepassing om Toegangsmanager van de selectie MVPD van de gebruiker op de hoogte te brengen. Wanneer u *null* als parameter, toelaat van de Toegang opnieuw stelt huidige MVPD aan een ongeldige waarde in.
+**Omschrijving:** Deze methode wordt geroepen door uw toepassing om Toegangsmanager van de selectie MVPD van de gebruiker op de hoogte te brengen. Bij het passeren *null* als parameter, toelaat van de Toegang opnieuw stelt huidige MVPD aan een ongeldige waarde in.
 
-| **API-aanroep: de momenteel geselecteerde provider instellen** |
+| **API-aanroep: stel de momenteel geselecteerde provider in** |
 | --- |
 | ```public void setSelectedProvider(String mvpdId)``` |
 
@@ -261,7 +261,7 @@ Zodra de gebruiker gewenste MVPD heeft geselecteerd, wordt de upper-layer toepas
 
 ### navigateToUrl {#navigagteToUrl}
 
-**Omschrijving:** Callback die door Toegangsactivering op Android SDK wordt teweeggebracht. Deze moet worden genegeerd in Amazon FireOS SDK.
+**Omschrijving:** Callback die door Toegangsactivering op Android SDK wordt teweeggebracht. Deze moet worden genegeerd in Amazon FireOS SDK.
 
 | **Callback: MVPD-aanmeldingspagina weergeven** |
 | --- |
@@ -271,7 +271,7 @@ Zodra de gebruiker gewenste MVPD heeft geselecteerd, wordt de upper-layer toepas
 
 **Parameters:**
 
-- *url*: De URL die naar de aanmeldingspagina van de MVPD verwijst
+- *url*: De URL die verwijst naar de aanmeldingspagina van de MVPD
 
 **geactiveerd door:** `getAuthentication(), setSelectedProvider()`
 
@@ -279,7 +279,7 @@ Zodra de gebruiker gewenste MVPD heeft geselecteerd, wordt de upper-layer toepas
 
 ### getAuthenticationToken {#getAuthNToken}
 
-**Omschrijving:** Voltooit de authentificatiestroom door het authentificatietoken van de achterste deelserver te verzoeken. 
+**Omschrijving:** Voltooit de authentificatiestroom door het authentificatietoken van de achterste deelserver te verzoeken.
 
 | **API-aanroep: het verificatietoken ophalen** |
 | --- |
@@ -297,11 +297,11 @@ Zodra de gebruiker gewenste MVPD heeft geselecteerd, wordt de upper-layer toepas
 
 ### setAuthenticationStatus {#setAuthNStatus}
 
-**Omschrijving:** Callback die door Toegankelijkheid wordt teweeggebracht die de toepassing van de status van de authentificatie informeert. Er zijn vele plaatsen waar de authentificatiestroom kan ontbreken, of als resultaat van gebruikersinteractie of wegens andere onvoorziene scenario&#39;s (d.w.z. de problemen van de netwerkconnectiviteit, enz.). Deze callback informeert de toepassing van de succes/mislukkingsstatus van de authentificatie, terwijl ook het verstrekken van extra informatie over de mislukkingsreden, wanneer nodig.
+**Omschrijving:** Callback die door Toegankelijkheid wordt teweeggebracht die de toepassing van de status van de authentificatie informeert. Er zijn vele plaatsen waar de authentificatiestroom kan ontbreken, of als resultaat van gebruikersinteractie of wegens andere onvoorziene scenario&#39;s (d.w.z. de problemen van de netwerkconnectiviteit, enz.). Deze callback informeert de toepassing van de succes/mislukkingsstatus van de authentificatie, terwijl ook het verstrekken van extra informatie over de mislukkingsreden, wanneer nodig.
 
 Deze callback signaleert ook wanneer de logout stroom volledig is.
 
-| **Callback: de status van de verificatiestroom rapporteren** |
+| **Callback: rapport de status van de authentificatiestroom** |
 | --- |
 | ```public void setAuthenticationStatus(int status, String errorCode)``` |
 
@@ -309,15 +309,15 @@ Deze callback signaleert ook wanneer de logout stroom volledig is.
 
 **Parameters:**
 
-- *status*: Kan een van de volgende waarden hebben:
+- *status*: Kan een van de volgende waarden gebruiken:
    - `AccessEnabler.ACCESS_ENABLER_STATUS_SUCCESS` - de verificatiestroom is voltooid
    - `AccessEnabler.ACCESS_ENABLER_STATUS_ERROR` - verificatiestroom mislukt
-   - `AccessEnabler.ACCESS_ENABLER_STATUS_LOGOUT` - afmelden
+   - `AccessEnabler.ACCESS_ENABLER_STATUS_LOGOUT` - afmelden
 - *code*: Reden voor de voorgestelde status. Indien *status* is `AccessEnabler.ACCESS_ENABLER_STATUS_SUCCESS`vervolgens *code* is een lege tekenreeks (gedefinieerd door de `AccessEnabler.USER_AUTHENTICATED` constante). Als deze parameter niet wordt geverifieerd, kan deze een van de volgende waarden hebben:
    - `AccessEnabler.USER_NOT_AUTHENTICATED_ERROR` - De gebruiker is niet geverifieerd. Als reactie op de *checkAuthentication()* methodevraag wanneer er geen geldig authentificatietoken in het lokale symbolische geheime voorgeheugen is.
-   - `AccessEnabler.PROVIDER_NOT_SELECTED_ERROR` - AccessEnabler heeft de authentificatiestatus-machine opnieuw ingesteld nadat de hogere laagtoepassing overgegaan *null* tot `setSelectedProvider()` om de verificatiestroom af te breken.  Waarschijnlijk heeft de gebruiker de verificatiestroom geannuleerd (druk op de knop &quot;Terug&quot;).
+   - `AccessEnabler.PROVIDER_NOT_SELECTED_ERROR` - AccessEnabler heeft de authentificatiestatus-machine opnieuw ingesteld nadat de hogere laagtoepassing overgegaan *null* tot `setSelectedProvider()` om de verificatiestroom af te breken.  Waarschijnlijk heeft de gebruiker de verificatiestroom geannuleerd (druk op de knop &quot;Terug&quot;).
    - `AccessEnabler.GENERIC_AUTHENTICATION_ERROR` - De verificatiestroom is mislukt als gevolg van redenen zoals niet-beschikbaarheid van het netwerk of de gebruiker heeft de verificatiestroom expliciet geannuleerd.
-   - `AccessEnabler.LOGOUT` - De gebruiker is niet geautoriseerd vanwege een afmeldingsactie. 
+   - `AccessEnabler.LOGOUT` - De gebruiker is niet geautoriseerd vanwege een afmeldingsactie.
 
 **geactiveerd door:** `checkAuthentication(), getAuthentication(), checkAuthorization()`
 
@@ -325,39 +325,39 @@ Deze callback signaleert ook wanneer de logout stroom volledig is.
 
 ### checkPreauthorisedResources {#checkPreauth}
 
-**Omschrijving:** Deze methode wordt door de toepassing gebruikt om te bepalen of de gebruiker reeds gemachtigd is om specifieke beschermde middelen te bekijken. Het primaire doel van deze methode is het ophalen van informatie voor gebruik in het versieren van de interface (bijvoorbeeld het aangeven van de toegangsstatus met vergrendelings- en ontgrendelingspictogrammen).
+**Omschrijving:** Deze methode wordt door de toepassing gebruikt om te bepalen of de gebruiker reeds gemachtigd is om specifieke beschermde middelen te bekijken. Het primaire doel van deze methode is het ophalen van informatie voor gebruik in het versieren van de interface (bijvoorbeeld het aangeven van de toegangsstatus met vergrendelings- en ontgrendelpictogrammen).
 
-| **API-aanroep: de momenteel geselecteerde provider instellen** |
+| **API-aanroep: stel de momenteel geselecteerde provider in** |
 | --- |
 | ```public void checkPreauthorizedResources(ArrayList<String> resources)``` |
 
 **Beschikbaarheid:** v1.0+
 
-**&lt;parameters: span=&quot;&quot; id=&quot;1&quot; translate=&quot;no&quot; /> De `resources` parameter is een array van bronnen waarvoor de autorisatie moet worden gecontroleerd .** Elk element in de lijst moet een tekenreeks zijn die de bron-id vertegenwoordigt. Voor de bron-id gelden dezelfde beperkingen als voor de bron-id in de `getAuthorization()` de vraag, d.w.z., zou het een overeengekomen waarde moeten zijn die tussen de programmeur en MVPD of een mediaRSS fragment wordt gevestigd.
+**&lt;parameters: span=&quot;&quot; id=&quot;1&quot; translate=&quot;no&quot; /> De `resources` parameter is een array van bronnen waarvoor de autorisatie moet worden gecontroleerd .** Elk element in de lijst moet een tekenreeks zijn die de bron-id vertegenwoordigt. Voor de bron-id gelden dezelfde beperkingen als voor de bron-id in de `getAuthorization()` de vraag, d.w.z., zou het een overeengekomen waarde moeten zijn die tussen de programmeur en MVPD of een mediaRSS fragment wordt gevestigd.
 
-**Callback geactiveerd:** `preauthorizedResources()`
+**Callback geactiveerd:** `preauthorizedResources()`
 
 </br>
 
 ### preauthorisedResources {#preauthResources}
 
-**Omschrijving:** Callback geactiveerd door checkPreauthorisedResources(). Verstrekt een lijst van middelen de gebruiker reeds aan mening wordt gemachtigd.
+**Omschrijving:** Callback geactiveerd door checkPreauthorisedResources(). Verstrekt een lijst van middelen de gebruiker reeds aan mening wordt gemachtigd.
 
-| **API-aanroep: de momenteel geselecteerde provider instellen** |
+| **API-aanroep: stel de momenteel geselecteerde provider in** |
 | --- |
 | ```public void checkPreauthorizedResources(ArrayList<String> resources)``` |
 
 **Beschikbaarheid:**v 1.0+
 
-**Parameters:** De `resources` parameter is een array van bronnen waarvan de gebruiker al gemachtigd is om deze te bekijken.
+**Parameters:** De `resources` parameter is een array van bronnen waarvan de gebruiker al gemachtigd is om deze te bekijken.
 
-**geactiveerd door:** `checkPreauthorizedResources()`
+**geactiveerd door:** `checkPreauthorizedResources()`
 
 <br>
 
 ### checkAuthorization {#checkAuthZ}
 
-**Omschrijving:** Deze methode wordt gebruikt door de aanvraag om de status van de vergunning te controleren. Het begint door de authentificatiestatus eerst te controleren. Indien niet geverifieerd, wordt de *setTokenRequestFailed()* callback wordt geactiveerd en de methode wordt afgesloten. Als de gebruiker voor authentiek wordt verklaard, teweegbrengt het ook de vergunningsstroom. Zie de details over de *getAuthorization()* methode.
+**Omschrijving:** Deze methode wordt gebruikt door de aanvraag om de status van de vergunning te controleren. Het begint door de authentificatiestatus eerst te controleren. Indien niet geverifieerd, wordt de *setTokenRequestFailed()* callback wordt geactiveerd en de methode wordt afgesloten. Als de gebruiker voor authentiek wordt verklaard, teweegbrengt het ook de vergunningsstroom. Zie de details over de *getAuthorization()* methode.
 
 | **API-aanroep: autorisatiestatus controleren** |
 | --- |
@@ -374,7 +374,7 @@ Deze callback signaleert ook wanneer de logout stroom volledig is.
 **Parameters:**
 
 - *resourceId*: De id van de bron waarvoor de gebruiker toestemming aanvraagt.
-- *data*: Een kaart die bestaat uit sleutel-waardeparen die naar de betaaltelevisie-pas dienst moeten worden verzonden. Adobe kan deze gegevens gebruiken om toekomstige functionaliteit toe te laten zonder SDK te veranderen.
+- *data*: Een kaart die bestaat uit sleutel-waardeparen die naar de betaaltelevisie-omslagdienst moeten worden verzonden. Adobe kan deze gegevens gebruiken om toekomstige functionaliteit toe te laten zonder SDK te veranderen.
 
 **Callbacks geactiveerd:** `tokenRequestFailed(), setToken(), sendTrackingData(), setAuthenticationStatus()`
 
@@ -382,15 +382,15 @@ Deze callback signaleert ook wanneer de logout stroom volledig is.
 
 ### getAuthorization {#getAuthZ}
 
-**Omschrijving:** Deze methode wordt gebruikt door de aanvraag om de vergunningsstroom in gang te zetten. Als de gebruiker niet reeds voor authentiek wordt verklaard, stelt het ook de authentificatiestroom in werking. Als de gebruiker voor authentiek wordt verklaard, gaat Access Enabler te werk om verzoeken om het toestemmingstoken (als geen geldig toestemmingstoken in het lokale symbolische geheime voorgeheugen) en voor het korte-levende media token uit te geven. Zodra het korte media token is verkregen, wordt de autorisatiestroom als volledig beschouwd. De *setToken()* callback wordt geactiveerd en het korte media-token wordt als een parameter aan de toepassing geleverd. Indien de vergunning om welke reden dan ook mislukt, *tokenRequestFailed()* callback wordt geactiveerd en de foutcode en details worden gegeven.
+**Omschrijving:** Deze methode wordt gebruikt door de aanvraag om de vergunningsstroom in gang te zetten. Als de gebruiker niet reeds voor authentiek wordt verklaard, stelt het ook de authentificatiestroom in werking. Als de gebruiker voor authentiek wordt verklaard, gaat Access Enabler te werk om verzoeken om het toestemmingstoken (als geen geldig toestemmingstoken in het lokale symbolische geheime voorgeheugen) en voor het korte-levende media token uit te geven. Zodra het korte media token is verkregen, wordt de autorisatiestroom als volledig beschouwd. De *setToken()* callback wordt geactiveerd en het korte media-token wordt als een parameter aan de toepassing geleverd. Indien de vergunning om welke reden dan ook mislukt, *tokenRequestFailed()* callback wordt geactiveerd en de foutcode en details worden gegeven.
 
-| **API-aanroep: de vergunningsstroom in gang zetten** |
+| **API-aanroep: de machtigingsstroom starten** |
 | --- |
 | ```public void getAuthorization(String resourceId)``` |
 
 **Beschikbaarheid:** v1.0+
 
-| **API-aanroep: de vergunningsstroom in gang zetten** |
+| **API-aanroep: de machtigingsstroom starten** |
 | --- |
 | ```public void getAuthorization(String resourceId, Map<String, Object> genericData)``` |
 
@@ -399,21 +399,21 @@ Deze callback signaleert ook wanneer de logout stroom volledig is.
 **Parameters:**
 
 - *resourceId*: De id van de bron waarvoor de gebruiker toestemming aanvraagt.
-- *data*: Een kaart die bestaat uit sleutel-waardeparen die naar de betaaltelevisie-pas dienst moeten worden verzonden. Adobe kan deze gegevens gebruiken om toekomstige functionaliteit toe te laten zonder SDK te veranderen. 
+- *data*: Een kaart die bestaat uit sleutel-waardeparen die naar de betaaltelevisie-omslagdienst moeten worden verzonden. Adobe kan deze gegevens gebruiken om toekomstige functionaliteit toe te laten zonder SDK te veranderen.
 
 **Callbacks geactiveerd:** `tokenRequestFailed(), setToken(), sendTrackingData()`
 
-|  |  |
+|     |     |
 | --- | --- |
 | ![](http://learn.adobe.com/wiki/images/icons/emoticons/warning.gif) | **Extra callbacks geactiveerd**  <br>Deze methode kan de volgende callbacks (als de authentificatiestroom ook in werking wordt gesteld) ook teweegbrengen: _setAuthenticationStatus()_, _displayProviderDialog()_ |
 
-**OPMERKING: Gebruik indien mogelijk checkAuthorization() in plaats van getAuthorization(). De getAuthorization () methode zal een volledige authentificatiestroom (als de gebruiker niet voor authentiek wordt verklaard) beginnen en dit zou tot een ingewikkelde implementatie aan de kant van de Programmer kunnen leiden.**
+**NOTA: Gelieve te gebruiken checkAuthorization () in plaats van getAuthorization () wanneer mogelijk. De getAuthorization () methode zal een volledige authentificatiestroom (als de gebruiker niet voor authentiek wordt verklaard) beginnen en dit zou tot een ingewikkelde implementatie aan de kant van de Programmer kunnen leiden.**
 
 </br>
 
 ### setToken {#setToken}
 
-**Omschrijving:** Callback die door Toegangsactivering wordt teweeggebracht die uw toepassing meedeelt dat de vergunningsstroom met succes werd voltooid. Het media-token voor korte tijd wordt ook als een parameter geleverd.
+**Omschrijving:** Callback die door Toegangsactivering wordt teweeggebracht die uw toepassing meedeelt dat de vergunningsstroom met succes werd voltooid. Het media-token voor korte tijd wordt ook als een parameter geleverd.
 
 | **Callback: autorisatiestroom is voltooid** |
 | --- |
@@ -423,7 +423,7 @@ Deze callback signaleert ook wanneer de logout stroom volledig is.
 
 **Parameters:**
 
-- *token*: Het media-token voor korte tijd
+- *token*: De token voor korte media
 - *resourceId*: De bron waarvoor de vergunning is verleend
 
 **geactiveerd door:** `checkAuthorization(), getAuthorization()`
@@ -432,7 +432,7 @@ Deze callback signaleert ook wanneer de logout stroom volledig is.
 
 ### tokenRequestFailed {#tokenRequestFailed}
 
-**Omschrijving:** Callback teweeggebracht door Toegelaten van de Toegang die de upper-layer toepassing informeert dat de vergunningsstroom ontbrak.
+**Omschrijving:** Callback teweeggebracht door Toegelaten van de Toegang die de upper-layer toepassing informeert dat de vergunningsstroom ontbrak.
 
 | **Callback: autorisatiestroom mislukt** |
 | --- |
@@ -445,7 +445,7 @@ Deze callback signaleert ook wanneer de logout stroom volledig is.
 - *resourceId*: De bron waarvoor de vergunning is verleend
 - *errorCode*: Foutcode die aan het mislukkingsscenario is gekoppeld. Mogelijke waarden:
    - `AccessEnabler.USER_NOT_AUTHORIZED_ERROR` - De gebruiker kan geen autorisatie voor de opgegeven resource uitvoeren.
-- *errorDescription*: Aanvullende details over het mislukkingsscenario. Als deze beschrijvende tekenreeks om welke reden dan ook niet beschikbaar is, wordt met Adobe Primetime-verificatie een lege tekenreeks verzonden >**(&quot;&quot;)**.  Deze tekenreeks kan door een MVPD worden gebruikt om aangepaste foutberichten of verkoopgerelateerde berichten door te geven. Bijvoorbeeld, als een abonnee vergunning voor een middel wordt ontkend, kon MVPD een bericht zoals verzenden: &quot;U hebt momenteel geen toegang tot dit kanaal in uw pakket. Klik hier als u het pakket wilt bijwerken.&quot; Het bericht wordt overgegaan door de authentificatie van Adobe Primetime door deze callback aan Programmer, die de optie heeft om het te tonen of te negeren. Adobe Primetime-verificatie kan deze parameter ook gebruiken voor het melden van de voorwaarde die tot een fout kan hebben geleid. Bijvoorbeeld, &quot;kwam een netwerkfout voor toen het communiceren met de de vergunningsdienst van de leverancier.&quot;
+- *errorDescription*: Aanvullende details over het mislukkingsscenario. Als deze beschrijvende tekenreeks om welke reden dan ook niet beschikbaar is, wordt met Adobe Primetime-verificatie een lege tekenreeks verzonden >**(&quot;&quot;)**.  Deze tekenreeks kan door een MVPD worden gebruikt om aangepaste foutberichten of verkoopgerelateerde berichten door te geven. Bijvoorbeeld, als een abonnee vergunning voor een middel wordt ontkend, kon MVPD een bericht zoals verzenden: &quot;U hebt momenteel geen toegang tot dit kanaal in uw pakket. Klik hier als u het pakket wilt bijwerken.&quot; Het bericht wordt overgegaan door de authentificatie van Adobe Primetime door deze callback aan Programmer, die de optie heeft om het te tonen of te negeren. Adobe Primetime-verificatie kan deze parameter ook gebruiken voor het melden van de voorwaarde die tot een fout kan hebben geleid. Bijvoorbeeld, &quot;kwam een netwerkfout voor toen het communiceren met de de vergunningsdienst van de leverancier.&quot;
 
 **geactiveerd door:** `checkAuthorization(), getAuthorization()`
 
@@ -453,9 +453,9 @@ Deze callback signaleert ook wanneer de logout stroom volledig is.
 
 ### afmelden {#logout}
 
-**Omschrijving:** Gebruik deze methode om de logout-flow te starten. De logout is het resultaat van een reeks HTTP-omleidingsverrichtingen toe te schrijven aan het feit dat de gebruiker uit zowel de authentificatieservers van Adobe Primetime als van de servers van MVPD moet worden geregistreerd. 
+**Omschrijving:** Gebruik deze methode om de logout-flow te starten. De logout is het resultaat van een reeks HTTP-omleidingsverrichtingen toe te schrijven aan het feit dat de gebruiker uit zowel de authentificatieservers van Adobe Primetime als van de servers van MVPD moet worden geregistreerd.
 
-| **API-aanroep: start de afmeldingsstroom** |
+| **API-aanroep: de afmeldingsstroom starten** |
 | --- |
 | ```public void logout()``` |
 
@@ -463,15 +463,15 @@ Deze callback signaleert ook wanneer de logout stroom volledig is.
 
 **Parameters:** Geen
 
-**Callbacks geactiveerd:** Geen
+**Callbacks geactiveerd:** Geen
 
 </br>
 
 ### getSelectedProvider {#getSelectedProvider}
 
-**Omschrijving:** Gebruik deze methode om de momenteel geselecteerde provider te bepalen.
+**Omschrijving:** Gebruik deze methode om de momenteel geselecteerde provider te bepalen.
 
-| **API-aanroep: bepaal momenteel geselecteerde MVPD** |
+| **API-aanroep: bepaal de momenteel geselecteerde MVPD** |
 | --- |
 | ```public void getSelectedProvider()``` |
 
@@ -485,9 +485,9 @@ Deze callback signaleert ook wanneer de logout stroom volledig is.
 
 ### selectedProvider {#selectedProvider}
 
-**Omschrijving:** Callback die door Toegangsactivering wordt teweeggebracht die informatie over momenteel geselecteerde MVPD aan de toepassing levert.
+**Omschrijving:** Callback die door Toegangsactivering wordt teweeggebracht die informatie over momenteel geselecteerde MVPD aan de toepassing levert.
 
-| **Callback: informatie over de momenteel geselecteerde MVPD** |
+| **Callback: informatie over momenteel geselecteerde MVPD** |
 | --- |
 | ```public void selectedProvider(Mvpd mvpd)``` |
 
@@ -503,9 +503,9 @@ Deze callback signaleert ook wanneer de logout stroom volledig is.
 
 ### getMetadata {#getMetadata}
 
-**Omschrijving:** Gebruik deze methode om informatie terug te winnen die als meta-gegevens door de bibliotheek van Inschakelen van de Toegang wordt blootgesteld. De toepassing heeft toegang tot deze informatie door een samengesteld object MetadataKey op te geven.
+**Omschrijving:** Gebruik deze methode om informatie terug te winnen die als meta-gegevens door de bibliotheek van Inschakelen van de Toegang wordt blootgesteld. De toepassing heeft toegang tot deze informatie door een samengesteld object MetadataKey op te geven.
 
-| **API-aanroep: Vraag AccessEnabler voor meta-gegevens** |
+| **API-aanroep: de AccessEnabler vragen naar metagegevens** |
 | --- |
 | ```public void getMetadata(MetadataKey metadataKey)``` |
 
@@ -513,7 +513,7 @@ Deze callback signaleert ook wanneer de logout stroom volledig is.
 
 Er zijn twee soorten meta-gegevens beschikbaar aan Programmeurs:
 
-- Statische metagegevens (verificatietoken TTL, machtigingstoken-TTL en apparaat-id) 
+- Statische metagegevens (verificatietoken TTL, machtigingstoken-TTL en apparaat-id)
 - Gebruikersmetagegevens (gebruikersspecifieke informatie, zoals gebruikersnaam en postcode; doorgegeven van een MVPD aan het apparaat van een gebruiker tijdens de verificatie- en/of autorisatiestromen)
 
 **Parameters:**
@@ -521,15 +521,15 @@ Er zijn twee soorten meta-gegevens beschikbaar aan Programmeurs:
 - *metadataKey*: Een gegevensstructuur die een sleutel- en args-variabele omvat, met de volgende betekenis:
    - Als key is `METADATA_KEY_TTL_AUTHN` dan wordt de vraag gemaakt om de vervaltijd van het authentificatietoken te verkrijgen.
    - Als key is `METADATA_KEY_TTL_AUTHZ` en args bevat een SerializableNameValuePair-object met name = `METADATA_ARG_RESOURCE_ID` en value = `[resource_id]`, dan wordt de vraag gemaakt om de vervaltijd van het toestemmingstoken te verkrijgen verbonden aan het gespecificeerde middel.
-   - Als key is `METADATA_KEY_DEVICE_ID` dan wordt de vraag gemaakt om huidige apparatenidentiteitskaart te verkrijgen. Merk op dat deze eigenschap door gebrek wordt onbruikbaar gemaakt en de Programmeurs zouden Adobe voor informatie betreffende toelage en kosten moeten contacteren.
-   - Als key is `METADATA_KEY_USER_META` en args bevat een SerializableNameValuePair-object met name = `METADATA_KEY_USER_META` en value = `[metadata_name]`, dan wordt de vraag gemaakt voor gebruikersmeta-gegevens. De huidige lijst met beschikbare metagegevenstypen voor gebruikers:
-      - `zip` - Postcode
-      - `householdID` - Huishoudelijke identificatiecode. Als een MVPD geen subaccounts steunt, zal dit identiek zijn aan `userID`.
-      - `maxRating` - Maximale ouderlijke classificatie voor de gebruiker
-      - `userID` - De gebruikersnaam. Als een MVPD subaccounts steunt, en de gebruiker is niet de belangrijkste rekening,
+   - Als key is `METADATA_KEY_DEVICE_ID` dan wordt de vraag gemaakt om huidige apparatenidentiteitskaart te verkrijgen. Deze functie is standaard uitgeschakeld en programmeurs moeten contact opnemen met de Adobe voor informatie over de mogelijkheden en kosten.
+   - Als key is `METADATA_KEY_USER_META` en args bevat een SerializableNameValuePair-object met name = `METADATA_KEY_USER_META` en value = `[metadata_name]`, dan wordt de vraag gemaakt voor gebruikersmeta-gegevens. De huidige lijst met beschikbare metagegevenstypen voor gebruikers:
+      - `zip` - Postcode
+      - `householdID` - Huishoudelijke identificatiecode. Als een MVPD geen subaccounts steunt, zal dit identiek zijn aan `userID`.
+      - `maxRating` - Maximale ouderlijke classificatie voor de gebruiker
+      - `userID` - De gebruikersnaam. Als een MVPD subaccounts steunt, en de gebruiker is niet de belangrijkste rekening,
       - `channelID` - Een lijst met kanalen die de gebruiker mag bekijken
 
-De daadwerkelijke Metagegevens van de Gebruiker beschikbaar aan een Programmer hangt van af wat MVPD ter beschikking stelt.  Deze lijst wordt verder uitgebreid naarmate nieuwe metagegevens beschikbaar worden gemaakt en worden toegevoegd aan het Adobe Primetime-verificatiesysteem.
+De daadwerkelijke Metagegevens van de Gebruiker beschikbaar aan een Programmer hangt van af wat MVPD ter beschikking stelt.  Deze lijst wordt verder uitgebreid naarmate nieuwe metagegevens beschikbaar worden gemaakt en worden toegevoegd aan het Adobe Primetime-verificatiesysteem.
 
 **Callbacks geactiveerd:** [`setMetadataStatus()`](#setMetadaStatus)
 
@@ -539,7 +539,7 @@ De daadwerkelijke Metagegevens van de Gebruiker beschikbaar aan een Programmer h
 
 ### setMetadataStatus {#setMetadaStatus}
 
-**Omschrijving:** Callback die door Toegangsactivering wordt teweeggebracht die de meta-gegevens levert die via wordt gevraagd *getMetadata()* vraag.
+**Omschrijving:** Callback die door Toegangsactivering wordt teweeggebracht die de meta-gegevens levert die via wordt gevraagd *getMetadata()* vraag.
 
 | **Callback: resultaat van verzoek om metagegevens op te halen** |
 | --- |
@@ -551,47 +551,47 @@ De daadwerkelijke Metagegevens van de Gebruiker beschikbaar aan een Programmer h
 
 - *key*: Het object MetadataKey dat de sleutel bevat waarvoor een metagegevenswaarde wordt aangevraagd en de bijbehorende parameters (zie demotoepassing voor een referentie-implementatie).
 - *resultaat*: Een samengesteld object met de gevraagde metagegevens. Het object heeft de volgende velden:
-   - *simpleResult*: een Koord dat de meta-gegevenswaarde vertegenwoordigt toen het verzoek voor Authentificatie TTL, Vergunning TTL, of identiteitskaart van het Apparaat werd ingediend. Deze waarde is null als de aanvraag is ingediend voor metagegevens van gebruiker.
+   - *simpleResult*: een tekenreeks die de metagegevenswaarde vertegenwoordigt op het moment dat de aanvraag is ingediend voor verificatie-TTL, verificatie-TTL of apparaat-id. Deze waarde is null als de aanvraag is ingediend voor metagegevens van gebruiker.
 
-   - *userMetadataResult*: een object dat de Java-representatie bevat van een payload naar een JSON-gebruikersmetagegevens. Bijvoorbeeld:
+   - *userMetadataResult*: Een object dat de Java-representatie bevat van een payload naar een JSON-gebruikersmetagegevens. Bijvoorbeeld:
 
-      ```json
-      {
-      "street": "Main Avenue",
-      "buildings": ["150", "320"]
-      }
-      ```
+     ```json
+     {
+     "street": "Main Avenue",
+     "buildings": ["150", "320"]
+     }
+     ```
 
-      wordt in Java vertaald als: 
+     wordt in Java vertaald als:
 
-      ```java
-      Map("street" -> "Main Avenue", "buildings" -> List("150", "320")))
-      ```
+     ```java
+     Map("street" -> "Main Avenue", "buildings" -> List("150", "320")))
+     ```
 
-      **De daadwerkelijke structuur van objecten met gebruikersmetagegevens is vergelijkbaar met het volgende:**
+     **De daadwerkelijke structuur van objecten met gebruikersmetagegevens is vergelijkbaar met het volgende:**
 
-      ```json
-      {
-          updated: 1334243471,
-          encrypted: ["encryptedProp"],
-          data: {
-              zip: ["12345", "34567"],
-              maxRating: { 
-                  "MPAA": "PG-13",
-                  "VCHIP": "TV-Y", 
-                  "URL": "http://exam.pl/e/manage/ratings"
-              },
-              householdID: "3456",
-              userID: "BgSdasfsdk23/dsaf3+saASesadgfsShggssd=",
-              channelID: ["channel-1", "channel-2"]
-          }
-      }
-      ```
- 
+     ```json
+     {
+         updated: 1334243471,
+         encrypted: ["encryptedProp"],
+         data: {
+             zip: ["12345", "34567"],
+             maxRating: { 
+                 "MPAA": "PG-13",
+                 "VCHIP": "TV-Y", 
+                 "URL": "http://exam.pl/e/manage/ratings"
+             },
+             householdID: "3456",
+             userID: "BgSdasfsdk23/dsaf3+saASesadgfsShggssd=",
+             channelID: ["channel-1", "channel-2"]
+         }
+     }
+     ```
+
 
 Deze waarde is null wanneer de aanvraag is ingediend voor eenvoudige metagegevens (verificatie-TTL, verificatie-TTL of apparaat-id).
 
-- *gecodeerd*: Booleaanse waarde die aangeeft of de opgehaalde metagegevens zijn gecodeerd of niet. Deze parameter is alleen van belang voor verzoeken van metagegevens van gebruikers. Deze parameter heeft geen betekenis voor statische metagegevens (bijvoorbeeld TTL voor verificatie) die altijd ongecodeerd worden ontvangen. Als deze parameter aan Waar wordt geplaatst, dan is het aan programmeur om de niet gecodeerde waarde van Metagegevens van de Gebruiker te verkrijgen door een decryptie van RSA uit te voeren gebruikend whitelingende privé sleutel (de zelfde privé sleutel die voor het ondertekenen van aanvrager identiteitskaart in wordt gebruikt [`setRequestor`](#setRequestor) vraag).
+- *gecodeerd*: Booleaanse waarde die opgeeft of de opgehaalde metagegevens zijn gecodeerd. Deze parameter is alleen van belang voor verzoeken van metagegevens van gebruikers. Deze parameter heeft geen betekenis voor statische metagegevens (bijvoorbeeld TTL voor verificatie) die altijd ongecodeerd worden ontvangen. Als deze parameter aan Waar wordt geplaatst, dan is het aan programmeur om de niet gecodeerde waarde van Metagegevens van de Gebruiker te verkrijgen door een decryptie van RSA uit te voeren gebruikend whitelingende privé sleutel (de zelfde privé sleutel die voor het ondertekenen van aanvrager identiteitskaart in wordt gebruikt [`setRequestor`](#setRequestor) vraag).
 
 **geactiveerd door:** [`getMetadata()`](#getMetadata)
 
@@ -599,11 +599,11 @@ Deze waarde is null wanneer de aanvraag is ingediend voor eenvoudige metagegeven
 
 </br>
 
-## getVersion {#getVersion}
+## getVersion {#getVersion}
 
-**Omschrijving:** Gebruik deze methode om de huidige versie van AccessEnabler terug te winnen  
+**Omschrijving:** Gebruik deze methode om de huidige versie van AccessEnabler terug te winnen
 
-| **API-aanroep: get AccessEnabler-versie** |
+| **API-aanroep: get AccessEnabled-versie** |
 | --- |
 | ```public static String getVersion()``` |
 
@@ -613,7 +613,7 @@ Toegangsactivering activeert een extra callback die niet noodzakelijk met de mac
 
 ### sendTrackingData {#sendTrackingData}
 
-**Omschrijving:** Callback teweeggebracht door Toegangstoegelaten die aan de toepassing het voorkomen van diverse gebeurtenissen zoals de voltooiing/het mislukken van authentificatie/vergunningsstromen signaleert. Het apparaattype, het clienttype Access Enabler en het besturingssysteem worden ook gerapporteerd door sendTrackingData().
+**Omschrijving:** Callback teweeggebracht door Toegangstoegelaten die aan de toepassing het voorkomen van diverse gebeurtenissen zoals de voltooiing/het mislukken van authentificatie/vergunningsstromen signaleert. Het apparaattype, het clienttype Access Enabler en het besturingssysteem worden ook gerapporteerd door sendTrackingData().
 
 >[!WARNING]
 >
@@ -626,7 +626,7 @@ Toegangsactivering activeert een extra callback die niet noodzakelijk met de mac
    - `gameconsole`
    - `unknown`
 
-- Mogelijke waarden voor het clienttype Access Enabler:
+- Mogelijke waarden voor het clienttype Access Enabled:
    - `flash`
    - `html5`
    - `ios`
@@ -634,7 +634,7 @@ Toegangsactivering activeert een extra callback die niet noodzakelijk met de mac
    - `android`
    - `firetv`
 
-| Callback: bijhouden, gebeurtenissen |
+| Callback: gebeurtenissen bijhouden |
 | --- |
 | ```public void sendTrackingData(Event event, ArrayList<String> data)``` |
 
@@ -643,12 +643,12 @@ Toegangsactivering activeert een extra callback die niet noodzakelijk met de mac
 **Parameters:**
 
 - *event*: de gebeurtenis die wordt bijgehouden. Er zijn drie mogelijke gebeurtenistypen voor bijhouden:
-   - **authentication:** om het even welk ogenblik keert een toestemmingstoken verzoek terug (gebeurtenistype is `EVENT_AUTHZ_DETECTION`)
+   - **authenticationDetection:** om het even welk ogenblik keert een toestemmingstoken verzoek terug (gebeurtenistype is `EVENT_AUTHZ_DETECTION`)
    - **authenticationDetection:** wanneer een verificatiecontrole plaatsvindt (gebeurtenistype is `EVENT_AUTHN_DETECTION`)
    - **mvpdSelection:** wanneer de gebruiker een MVPD in de MVPD selectievorm selecteert (gebeurtenistype is `EVENT_MVPD_SELECTION`)
 - *data*: aanvullende gegevens die aan de gerapporteerde gebeurtenis zijn gekoppeld. Deze gegevens worden gepresenteerd in de vorm van een lijst met waarden.
 
-Hieronder vindt u instructies voor het interpreteren van de waarden in het dialoogvenster *data* array:
+Hieronder vindt u instructies voor het interpreteren van de waarden in de *data* array:
 
 - Voor-gebeurtenistype *`EVENT_AUTHN_DETECTION`:*
    - **0** - Of de token-aanvraag succesvol was (true/false) en of het bovenstaande waar is:
@@ -661,7 +661,7 @@ Hieronder vindt u instructies voor het interpreteren van de waarden in het dialo
 
 - Voor-gebeurtenistype `EVENT_AUTHZ_DETECTION`
    - **0** - Of de token-aanvraag succesvol was (true/false) en of deze succesvol was:
-   - **1** - MVPD ID
+   - **1** - MVPD-id
    - **2** - GUID (md5 hashed)
    - **3** - Token bevindt zich al in cache (true/false)
    - **4** - Fout

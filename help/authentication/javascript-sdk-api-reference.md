@@ -1,15 +1,15 @@
 ---
-title: JavaScript SDK API-naslaggids
-description: JavaScript SDK API-naslaggids
+title: JavaScript SDK API-naslag
+description: JavaScript SDK API-naslag
 exl-id: 48d48327-14e6-46f3-9e80-557f161acd8a
-source-git-commit: bfc3ba55c99daba561255760baf273b6538a3c6e
+source-git-commit: 84a16ce775a0aab96ad954997c008b5265e69283
 workflow-type: tm+mt
 source-wordcount: '2835'
 ht-degree: 0%
 
 ---
 
-# JavaScript SDK API-naslaggids {#javascript-sdk-api-reference}
+# JavaScript SDK API-naslag {#javascript-sdk-api-reference}
 
 >[!NOTE]
 >
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 ## API-naslag {#api-reference}
 
-Deze functies stellen verzoeken om interactie met MVPD in werking. Alle vraag is asynchroon; moet u [callbacks](#callbacks) om de reacties af te handelen:
+Deze functies stellen verzoeken om interactie met MVPD in werking. Alle vraag is asynchroon; u moet uitvoeren [callbacks](#callbacks) om de reacties af te handelen:
 
 - [setRequestor()](#setReq)
 - [getAuthorization()](#getAuthZ)
@@ -32,27 +32,26 @@ Deze functies stellen verzoeken om interactie met MVPD in werking. Alle vraag is
 
 ## setRequestor (inRequestID, eindpunten, opties){#setrequestor(inRequestorID,endpoints,options)}
 
-**Omschrijving:** Identificeert de plaats waarvan de verzoeken voortkomen.  U moet deze vraag vóór een andere API vraag in een communicatie zitting maken. 
+**Omschrijving:** Identificeert de plaats waarvan de verzoeken voortkomen.  U moet deze vraag vóór een andere API vraag in een communicatie zitting maken.
 
 **Parameters:**
 
-- *inRequestID* - De unieke id die Adobe tijdens de registratie aan de oorspronkelijke site heeft toegewezen.
+- *inRequestID* - De unieke id die door de Adobe tijdens de registratie aan de oorspronkelijke site is toegewezen.
 
-- *eindpunten* - Deze parameter is optioneel. Dit kan een van de volgende waarden zijn:
+- *eindpunten* - Deze parameter is optioneel. Dit kan een van de volgende waarden zijn:
 
-   - Een serie die u toestaat om eindpunten voor authentificatie en vergunningsdiensten te specificeren die door Adobe worden verleend (verschillende instanties zouden voor het zuiveren doeleinden kunnen worden gebruikt). Als er meerdere URL&#39;s worden opgegeven, bestaat de MVPD-lijst uit de eindpunten van alle serviceproviders. Elke MVPD wordt geassocieerd met de snelste dienstverlener; dat wil zeggen, de leverancier die eerst heeft gereageerd en die dat MVPD ondersteunt. Standaard wordt de Adobe-serviceprovider gebruikt (<http://sp.auth.adobe.com/>).
+   - Een serie die u toestaat om eindpunten voor authentificatie en vergunningsdiensten te specificeren die door Adobe worden verleend (verschillende instanties zouden voor het zuiveren doeleinden kunnen worden gebruikt). Als er meerdere URL&#39;s worden opgegeven, bestaat de MVPD-lijst uit de eindpunten van alle serviceproviders. Elke MVPD wordt geassocieerd met de snelste dienstverlener; namelijk de leverancier die eerst antwoordde en die die MVPD steunt. Standaard wordt de Adobe-serviceprovider gebruikt (<http://sp.auth.adobe.com/>).
 
-   Voorbeeld:
+  Voorbeeld:
    - `setRequestor("IFC", ["http://sp.auth-dev.adobe.com/adobe-services"])`
 
-
 - *opties* - Een JSON-object met de waarden voor toepassings-id, Vernieuwingsinstellingen voor de bezoeker-id (aanmeldingsgegevens voor de achtergrond) en MVPD-instellingen (iFrame). Alle waarden zijn optioneel.
-   1. Indien opgegeven, wordt de Experience Cloud bezoekerID gerapporteerd voor alle netwerkaanroepen die door de bibliotheek worden uitgevoerd. De waarde kan later worden gebruikt voor geavanceerde analyserapporten.
-   2. Als de unieke id van de toepassing is opgegeven -`applicationId` - de waarde zal aan alle verdere vraag worden toegevoegd die door de toepassing als deel van de x-Apparaat-Info HTTP- kopbal wordt gemaakt. Deze waarde kan later worden opgehaald [ESM](/help/authentication/entitlement-service-monitoring-overview.md) rapporten die de juiste vraag gebruiken.
+   1. Indien gespecificeerd, zou Experience Cloud bezoekerID op alle netwerkvraag worden gemeld die door de bibliotheek wordt uitgevoerd. De waarde kan later worden gebruikt voor geavanceerde analyserapporten.
+   2. Als de unieke id van de toepassing is opgegeven -`applicationId` - de waarde zal aan alle verdere vraag worden toegevoegd die door de toepassing als deel van de x-Apparaat-Info HTTP- kopbal wordt gemaakt. Deze waarde kan later worden opgehaald [ESM](/help/authentication/entitlement-service-monitoring-overview.md) rapporten die de juiste vraag gebruiken.
 
-   **Opmerking:** Alle JSON-toetsen zijn hoofdlettergevoelig.
+  **Opmerking:** Alle JSON-toetsen zijn hoofdlettergevoelig.
 
-    Voorbeeld:
+  Voorbeeld:
 
 ```JSON
    setRequestor("IFC", {
@@ -66,7 +65,7 @@ Deze functies stellen verzoeken om interactie met MVPD in werking. Alle vraag is
 ```JSON
     {  
        "visitorID": <string>,
-       "backgroundLogin": <boolean>,
+       "backgroundLogin": <boolean>,
        "backgroundLogout": <boolean>,
        "mvpdConfig":{  
           "MVPD_ID_1":{  
@@ -83,16 +82,16 @@ Deze functies stellen verzoeken om interactie met MVPD in werking. Alle vraag is
        }
     }
 ```
- 
 
-Alle toetsen op het hoogste niveau in de bovenstaande sjabloon zijn optioneel en hebben standaardwaarden (*backgroundLogin*, *backgroundLogut* zijn door gebrek, en mvpdConfig ongeldig - betekenend dat geen montages MVPD worden met voeten getreden).
 
- 
-- **Opmerking**: Als u ongeldige waarden/typen opgeeft voor de bovenstaande parameters, resulteert dit in ongedefinieerd gedrag.
+Alle toetsen op het hoogste niveau in de bovenstaande sjabloon zijn optioneel en hebben standaardwaarden (*backgroundLogin*, *backgroundLogut* zijn door gebrek, en mvpdConfig ongeldig - betekenend dat geen montages MVPD worden met voeten getreden).
 
- 
 
-Hier is een voorbeeldconfiguratie voor het volgende scenario: het activeren verfrist zich-minder login en logout, veranderend MVPD1 in volledige pagina-omleiding login (niet-iFrame) en MVPD2 aan iFrame login met width=500 en height=300:
+- **Opmerking**: Het opgeven van ongeldige waarden/typen voor de bovenstaande parameters resulteert in ongedefinieerd gedrag.
+
+
+
+Hier is een voorbeeldconfiguratie voor het volgende scenario: het activeren van login en logout verfrist zich zonder, veranderend MVPD1 in volledige pagina-omleiding login (niet-iFrame) en MVPD2 aan iFrame login met width=500 en height=300:
 
 ```JSON
     {  
@@ -112,7 +111,7 @@ Hier is een voorbeeldconfiguratie voor het volgende scenario: het activeren verf
 ```
 
 
-**Callbacks geactiveerd:** [setConfig()](#setconfigconfigxml-setconfigconfigxml)
+**Callbacks geactiveerd:** [setConfig()](#setconfigconfigxml-setconfigconfigxml)
 </br>
 
 [Terug naar boven](#top)
@@ -123,15 +122,15 @@ Hier is een voorbeeldconfiguratie voor het volgende scenario: het activeren verf
 
 **Omschrijving:** Verzoekt om toestemming voor de gespecificeerde bron. Telkens als een klant probeert om tot een toegelaten middel toegang te hebben, roep deze functie om een kort-levend vergunningsteken van Toegang te verkrijgen Enabler. Middel IDs wordt overeengekomen met MVPD die vergunning verstrekt.
 
-Gebruikt het caching authentificatietoken voor de huidige klant. Als zulk een teken niet wordt gevonden, stelt eerst het authentificatieproces in werking, dan gaat met vergunning verder.\
- 
+Gebruikt het caching authentificatietoken voor de huidige klant. Als zulk een teken niet wordt gevonden, stelt eerst het authentificatieproces in werking, dan gaat met vergunning verder.
+
 **Parameters:**
 
-- `inResourceID` - De id van de bron waarvoor de gebruiker toestemming aanvraagt.
-- `redirect_url` - Geef optioneel een omleidings-URL op, zodat de gebruiker tijdens het MVPD-autorisatieproces naar die pagina terugkeert in plaats van naar de pagina vanwaar de autorisatie is gestart.
+- `inResourceID` - De id van de bron waarvoor de gebruiker toestemming aanvraagt.
+- `redirect_url` - Geef optioneel een omleidings-URL op, zodat de gebruiker tijdens het MVPD-autorisatieproces naar die pagina terugkeert in plaats van naar de pagina vanwaar de autorisatie is gestart.
 
 
-**Callbacks geactiveerd:** [setToken()](#settokeninrequestedresourceid-intoken-settokeninrequestedresourceidintoken) over succes, [tokenRequestFailed](#tokenrequestfailedinrequestedresourceid-inrequesterrorcode-inrequestdetailederrormessage-tokenrequestfailedinrequestedresourceidinrequesterrorcodeinrequestdetailederrormessage) bij mislukken
+**Callbacks geactiveerd:** [setToken()](#settokeninrequestedresourceid-intoken-settokeninrequestedresourceidintoken) over succes, [tokenRequestFailed](#tokenrequestfailedinrequestedresourceid-inrequesterrorcode-inrequestdetailederrormessage-tokenrequestfailedinrequestedresourceidinrequesterrorcodeinrequestdetailederrormessage) bij mislukken
 
 >[!CAUTION]
 >
@@ -147,13 +146,13 @@ Gebruikt het caching authentificatietoken voor de huidige klant. Als zulk een te
 
 **Omschrijving:** Verzoekt verificatie voor de huidige klant. Wordt doorgaans aangeroepen als reactie op een klik op een knop Aanmelden. Controleert op een in de cache opgeslagen verificatietoken voor de huidige klant. Als een dergelijk token niet wordt gevonden, wordt het verificatieproces gestart. Dit roept het gebrek of de douane leverancier-selectie dialoog aan, dan gebruikt de geselecteerde leverancier om aan de login van MVPD interface om te leiden.
 
-Als de verificatie is gelukt, wordt een verificatietoken voor de gebruiker gemaakt en opgeslagen. Als de verificatie mislukt, geeft de provider een geschikt foutbericht aan uw [setAuthenticationStatus()](#setauthenticationstatusisauthenticated-errorcode) callback.
+Als de verificatie is gelukt, wordt een verificatietoken voor de gebruiker gemaakt en opgeslagen. Als de verificatie mislukt, geeft de provider een geschikt foutbericht aan uw [setAuthenticationStatus()](#setauthenticationstatusisauthenticated-errorcode) callback.
 
 **Parameters:**
 
 - redirect_url - Naar keuze verstrek URL, zodat het de authentificatieproces van MVPD de gebruiker aan die pagina eerder dan de pagina terugkeert waarvan authentificatie werd in werking gesteld.
 
- **Callbacks geactiveerd:** [setAuthenticationStatus()](#setauthenticationstatusisauthenticated-errorcode), [displayProviderDialog()](#displayproviderdialogproviders-displayproviderdialogproviders), [sendTrackingData()](#sendtrackingdatatrackingeventtype-trackingdata-sendtrackingdatatrackingeventtypetrackingdata)
+**Callbacks geactiveerd:** [setAuthenticationStatus()](#setauthenticationstatusisauthenticated-errorcode), [displayProviderDialog()](#displayproviderdialogproviders-displayproviderdialogproviders), [sendTrackingData()](#sendtrackingdatatrackingeventtype-trackingdata-sendtrackingdatatrackingeventtypetrackingdata)
 
 </br>
 
@@ -165,7 +164,7 @@ Als de verificatie is gelukt, wordt een verificatietoken voor de gebruiker gemaa
 
 **Omschrijving:** Controleert de huidige authentificatiestatus voor de huidige klant.  Niet gekoppeld aan een gebruikersinterface.
 
-**Callbacks geactiveerd:** [setAuthentationStatus()](#setauthenticationstatusisauthenticated-errorcode)
+**Callbacks geactiveerd:** [setAuthentationStatus()](#setauthenticationstatusisauthenticated-errorcode)
 
 </br>
 
@@ -175,7 +174,7 @@ Als de verificatie is gelukt, wordt een verificatietoken voor de gebruiker gemaa
 
 ## checkAuthorization(inResourceID) {#checkauthorization(inresourceid)}
 
-**Omschrijving:** Deze methode wordt gebruikt door de toepassing om de vergunningsstatus voor de huidige klant en het bepaalde middel te controleren. Het begint door de authentificatiestatus eerst te controleren. Indien niet geverifieerd, wordt de tokenRequestFailed() callback geactiveerd en wordt de methode afgesloten. Als de gebruiker voor authentiek wordt verklaard, teweegbrengt het ook de vergunningsstroom. Zie de details over de [getAuthorization()](#getAuthZ methode.
+**Omschrijving:** Deze methode wordt gebruikt door de toepassing om de vergunningsstatus voor de huidige klant en het bepaalde middel te controleren. Het begint door de authentificatiestatus eerst te controleren. Indien niet geverifieerd, wordt de tokenRequestFailed() callback geactiveerd en wordt de methode afgesloten. Als de gebruiker voor authentiek wordt verklaard, teweegbrengt het ook de vergunningsstroom. Zie de details over de [getAuthorization()](#getAuthZ methode.
 
 >[!TIP]
 >
@@ -183,11 +182,11 @@ Als de verificatie is gelukt, wordt een verificatietoken voor de gebruiker gemaa
 
 **Parameters:**
 
-- `inResourceID` - De id van de bron waarvoor de gebruiker toestemming aanvraagt.
+- `inResourceID` - De id van de bron waarvoor de gebruiker toestemming aanvraagt.
 
- 
+
 **Callbacks geactiveerd:**
-[setToken()](#settokeninrequestedresourceid-intoken-settokeninrequestedresourceidintoken), [tokenRequestFailed()](#tokenrequestfailedinrequestedresourceid-inrequesterrorcode-inrequestdetailederrormessage-tokenrequestfailedinrequestedresourceidinrequesterrorcodeinrequestdetailederrormessage), [sendTrackingData()](#sendtrackingdatatrackingeventtype-trackingdata-sendtrackingdatatrackingeventtypetrackingdata), [setAuthenticationStatus()](#setauthenticationstatusisauthenticated-errorcode)
+[setToken()](#settokeninrequestedresourceid-intoken-settokeninrequestedresourceidintoken), [tokenRequestFailed()](#tokenrequestfailedinrequestedresourceid-inrequesterrorcode-inrequestdetailederrormessage-tokenrequestfailedinrequestedresourceidinrequesterrorcodeinrequestdetailederrormessage), [sendTrackingData()](#sendtrackingdatatrackingeventtype-trackingdata-sendtrackingdatatrackingeventtypetrackingdata), [setAuthenticationStatus()](#setauthenticationstatusisauthenticated-errorcode)
 
 </br>
 
@@ -197,7 +196,7 @@ Als de verificatie is gelukt, wordt een verificatietoken voor de gebruiker gemaa
 
 **Parameters:**
 
-- *bronnen*: De parameter resources is een array van bronnen waarvoor de autorisatie moet worden gecontroleerd. Elk element in de lijst moet een tekenreeks zijn die de bron-id vertegenwoordigt. Voor de bron-id gelden dezelfde beperkingen als voor de bron-id in de `getAuthorization()` de vraag, namelijk is het een overeengekomen waarde die tussen Programmer en MVPD, of een mediaRSS fragment wordt gevestigd. 
+- *bronnen*: De parameter resources is een array van bronnen waarvoor de autorisatie moet worden gecontroleerd. Elk element in de lijst moet een tekenreeks zijn die de bron-id vertegenwoordigt. Voor de bron-id gelden dezelfde beperkingen als voor de bron-id in de `getAuthorization()` de vraag, namelijk is het een overeengekomen waarde die tussen Programmer en MVPD, of een mediaRSS fragment wordt gevestigd.
 
 </br>
 
@@ -208,12 +207,12 @@ Deze API-variant is beschikbaar vanaf JS SDK versie 4.0
 
 **Parameters:**
 
-- *bronnen*: De parameter resources is een array van bronnen waarvoor de autorisatie moet worden gecontroleerd. Elk element in de lijst moet een tekenreeks zijn die de bron-id vertegenwoordigt. Voor de bron-id gelden dezelfde beperkingen als voor de bron-id in de `getAuthorization()` de vraag, namelijk is het een overeengekomen waarde die tussen Programmer en MVPD, of een mediaRSS fragment wordt gevestigd. 
+- *bronnen*: De parameter resources is een array van bronnen waarvoor de autorisatie moet worden gecontroleerd. Elk element in de lijst moet een tekenreeks zijn die de bron-id vertegenwoordigt. Voor de bron-id gelden dezelfde beperkingen als voor de bron-id in de `getAuthorization()` de vraag, namelijk is het een overeengekomen waarde die tussen Programmer en MVPD, of een mediaRSS fragment wordt gevestigd.
 
-- *cachegeheugen*: Of de interne cache wordt gebruikt wanneer wordt gecontroleerd op vooraf geautoriseerde bronnen. Dit is een optionele parameter, die standaard wordt ingesteld op **true**. Als de waarde true is, is het gedrag identiek aan de bovenstaande API. Dit betekent dat volgende aanroepen naar deze functie een interne cache gebruiken om vooraf geautoriseerde resource op te lossen. Passend **false** voor deze parameter het interne cachegeheugen onbruikbaar maken, resulterend in een servervraag telkens als **checkPreauthorisedResources** API wordt aangeroepen.
+- *cachegeheugen*: Of de interne cache moet worden gebruikt bij het controleren op vooraf geautoriseerde bronnen. Dit is een optionele parameter, die standaard wordt ingesteld op **true**. Als de waarde true is, is het gedrag identiek aan de bovenstaande API. Dit betekent dat volgende aanroepen naar deze functie een interne cache gebruiken om vooraf geautoriseerde resource op te lossen. Passend **false** voor deze parameter het interne cachegeheugen onbruikbaar maken, resulterend in een servervraag telkens als **checkPreauthorisedResources** API wordt aangeroepen.
 
-**Callbacks geactiveerd:** [preauthorisedResources()](#preauthorizedresourcesauthorizedresources-preauthorizedresourcesauthorizedresources)
- 
+**Callbacks geactiveerd:** [preauthorisedResources()](#preauthorizedresourcesauthorizedresources-preauthorizedresourcesauthorizedresources)
+
 </br>
 
 [Terug naar boven](#top)
@@ -221,35 +220,35 @@ Deze API-variant is beschikbaar vanaf JS SDK versie 4.0
 
 ## getMetadata(Key) {#getMetadata}
 
-**Omschrijving:** Hiermee wordt informatie opgehaald die als metagegevens wordt weergegeven door de bibliotheek Access Enabler.
+**Omschrijving:** Hiermee wordt informatie opgehaald die als metagegevens wordt weergegeven door de bibliotheek Access Enabler.
 
-Er zijn twee typen metagegevens: 
+Er zijn twee typen metagegevens:
 
-- **Statisch** (Het teken van de authentificatie TTL, het teken van de Vergunning TTL, en identiteitskaart van het Apparaat) 
+- **Statisch** (Het teken van de authentificatie TTL, het teken van de Vergunning TTL, en identiteitskaart van het Apparaat)
 - **Metagegevens gebruiker** (Dit omvat gebruikersspecifieke informatie die van MVPD aan het apparaat van de gebruiker tijdens de Authentificatie en/of de stromen van de Vergunning wordt overgegaan)
 
 **Meer informatie:** [Metagegevens gebruiker](#UserMetadata)
 
 **Parameters:**
 
-- *key*: An id that specifies the requested metadata:
+- *key*: Een id die de gevraagde metagegevens opgeeft:
    - Als key is `"TTL_AUTHN",` dan wordt de vraag gemaakt om de vervaltijd van het authentificatietoken te verkrijgen.
 
    - Als key is `"TTL_AUTHZ"` en params is een serie die middelidentiteitskaart als koord bevatten, dan wordt de vraag gemaakt om de vervaltijd van het toestemmingstoken te verkrijgen verbonden aan het gespecificeerde middel.
 
-   - Als key is `"DEVICEID"` dan wordt de vraag gemaakt om huidige apparatenidentiteitskaart te verkrijgen. Merk op dat deze eigenschap door gebrek wordt onbruikbaar gemaakt en de Programmeurs zouden Adobe voor informatie betreffende toelage en kosten moeten contacteren.
+   - Als key is `"DEVICEID"` dan wordt de vraag gemaakt om huidige apparatenidentiteitskaart te verkrijgen. Deze functie is standaard uitgeschakeld en programmeurs moeten contact opnemen met de Adobe voor informatie over de mogelijkheden en kosten.
 
-   - Als de sleutel uit de volgende lijst van gebruikers meta-gegevenstypes is, wordt een voorwerp JSON die de overeenkomstige gebruikersmeta-gegevens bevat verzonden naar [`setMetadataStatus()`](#setmetadatastatuskey-encrypted-data-setmetadatastatuskeyencrypteddata) callback-functie:
+   - Als de sleutel uit de volgende lijst van gebruikers meta-gegevenstypes is, wordt een voorwerp JSON die de overeenkomstige gebruikersmeta-gegevens bevat verzonden naar [`setMetadataStatus()`](#setmetadatastatuskey-encrypted-data-setmetadatastatuskeyencrypteddata) callback-functie:
 
-   - `"zip"` - Postcode
+   - `"zip"` - Postcode
 
-   - `"encryptedZip"` - Gecodeerde postcode
+   - `"encryptedZip"` - Gecodeerde postcode
 
-   - `"householdID"` - Huishoudelijke identificatiecode. Als een MVPD geen subaccounts ondersteunt, is dit identiek aan userID.
+   - `"householdID"` - Huishoudelijke identificatiecode. Als een MVPD geen subaccounts ondersteunt, is dit identiek aan userID.
 
-   - `"maxRating"` - Maximale ouderlijke classificatie voor de gebruiker
+   - `"maxRating"` - Maximale ouderlijke classificatie voor de gebruiker
 
-   - `"userID"` - De gebruikersnaam. In het geval waarin een MVPD subaccounts ondersteunt en de gebruiker niet het hoofdaccount is, zal de gebruikersnaam anders zijn dan de huishoudelijke id.
+   - `"userID"` - De gebruikersnaam. In het geval waarin een MVPD subaccounts ondersteunt en de gebruiker niet het hoofdaccount is, zal de gebruikersnaam anders zijn dan de huishoudelijke id.
 
    - `"channelID"` - De lijst met kanalen die de gebruiker mag bekijken
 
@@ -266,7 +265,8 @@ Er zijn twee typen metagegevens: 
    - `"acctID"` - Account-ID
 
    - `"acctParentID"` - Bovenliggende ID account
-   **Opmerking**: De daadwerkelijke Metagegevens van de Gebruiker beschikbaar aan een Programmer hangt van af wat MVPD ter beschikking stelt.  Zie [Metagegevens gebruiker](#UserMetadata) voor de huidige lijst met beschikbare metagegevens van gebruikers.
+
+  **Opmerking**: De feitelijke metagegevens van de gebruiker die beschikbaar zijn voor een programmeur, zijn afhankelijk van wat een MVPD beschikbaar maakt.  Zie [Metagegevens gebruiker](#UserMetadata) voor de huidige lijst met beschikbare metagegevens van gebruikers.
 
 
 Bijvoorbeeld:
@@ -288,9 +288,9 @@ Bijvoorbeeld:
       }
     }
 ```
- 
 
-**Callbacks geactiveerd:** [setMetadataStatus()](#setmetadatastatuskey-encrypted-data-setmetadatastatuskeyencrypteddata)
+
+**Callbacks geactiveerd:** [setMetadataStatus()](#setmetadatastatuskey-encrypted-data-setmetadatastatuskeyencrypteddata)
 
 </br>
 
@@ -301,9 +301,9 @@ Bijvoorbeeld:
 
 ## setSelectedProvider(providerid) {#setSelectedProvider}
 
-**Omschrijving:** Roep deze functie aan wanneer de gebruiker een MVPD van uw leverancier-selectie UI heeft geselecteerd om de leveranciersselectie naar Toegankelijkheid te verzenden of deze functie met een ongeldige parameter te roepen voor het geval de gebruiker uw leverancier-selectie UI zonder een leverancier te selecteren verwierp. 
+**Omschrijving:** Roep deze functie aan wanneer de gebruiker een MVPD van uw leverancier-selectie UI heeft geselecteerd om de leveranciersselectie naar Toegankelijkheid te verzenden of deze functie met een ongeldige parameter te roepen voor het geval de gebruiker uw leverancier-selectie UI zonder een leverancier te selecteren verwierp.
 
-**Callbacks geactiveerd:**[ setAuthentationStatus()](#setauthenticationstatusisauthenticated-errorcode), [sendTrackingData()](#sendtrackingdatatrackingeventtype-trackingdata-sendtrackingdatatrackingeventtypetrackingdata)
+**Callbacks geactiveerd:**[ setAuthentationStatus()](#setauthenticationstatusisauthenticated-errorcode), [sendTrackingData()](#sendtrackingdatatrackingeventtype-trackingdata-sendtrackingdatatrackingeventtypetrackingdata)
 
 </br>
 
@@ -315,12 +315,12 @@ Bijvoorbeeld:
 
 **Omschrijving:** Hiermee worden de resultaten opgehaald van de selectie van de klant in het dialoogvenster voor het selecteren van de provider. Dit kan op elk ogenblik na de eerste authentificatiecontrole worden gebruikt.
 
-Deze functie is asynchroon en retourneert het resultaat naar uw `selectedProvider()` callback-functie.
+Deze functie is asynchroon en retourneert het resultaat naar uw `selectedProvider()` callback-functie.
 
-- **MVPD** De momenteel geselecteerde MVPD, of ongeldig als geen MVPD werd geselecteerd.
-- **AE_State** Het resultaat van authentificatie voor de huidige klant één van &quot;Nieuwe Gebruiker&quot;, &quot;Gebruiker niet voor authentiek verklaard&quot;, of &quot;Gebruiker voor authentiek verklaard&quot;
+- **MVPD** De momenteel geselecteerde MVPD, of ongeldig als geen MVPD werd geselecteerd.
+- **AE_State** Het resultaat van authentificatie voor de huidige klant één van &quot;Nieuwe Gebruiker&quot;, &quot;Gebruiker niet voor authentiek verklaard&quot;, of &quot;Gebruiker voor authentiek verklaard&quot;
 
- **Callbacks geactiveerd:** [selectedProvider()](#getselectedprovider-getselectedprovider)
+**Callbacks geactiveerd:** [selectedProvider()](#getselectedprovider-getselectedprovider)
 
 </br>
 
@@ -332,8 +332,8 @@ Deze functie is asynchroon en retourneert het resultaat naar uw `selectedProvid
 
 **Omschrijving:** Logs uit de huidige klant, die alle authentificatie en vergunningsinformatie voor die gebruiker ontruimt. Verwijdert alle authN en authZ tokens van het systeem van de klant.
 
- **Callbacks geactiveerd:** [setAuthentationStatus()](#setauthenticationstatusisauthenticated-errorcode)
-</br> 
+**Callbacks geactiveerd:** [setAuthentationStatus()](#setauthenticationstatusisauthenticated-errorcode)
+</br>
 
 [Terug naar boven](#top)
 
@@ -368,14 +368,14 @@ U moet deze callbacks uitvoeren om de reacties op uw asynchrone verzoekvraag te 
 
 ## setConfig(configXML) {#setconfig(configXML)}
 
-**Omschrijving:** Voer deze callback uit om de configuratieinformatie en lijst te ontvangen MVPD.
+**Omschrijving:** Voer deze callback uit om de configuratieinformatie en lijst te ontvangen MVPD.
 
 **Parameters:**
 
 - *configXML*: xml-object met de configuratie voor de huidige REQUESTOR, inclusief de MVPD-lijst.
 
- 
-**geactiveerd door:** [setRequestor()](#setrequestor-inrequestorid-endpoints-optionssetreq)
+
+**geactiveerd door:** [setRequestor()](#setrequestor-inrequestorid-endpoints-optionssetreq)
 
 </br>
 
@@ -385,11 +385,11 @@ U moet deze callbacks uitvoeren om de reacties op uw asynchrone verzoekvraag te 
 
 ## displayProviderDialog(providers) {#displayproviderdialog(providers)}
 
-**Omschrijving:** Voer deze callback uit om uw eigen douane leverancier-selectie UI aan te halen. Het dialoogvenster moet de weergavenaam (en het optionele logo) gebruiken om de keuze van de klant te bepalen. Wanneer de klant een keuze heeft gemaakt en het dialoogvenster heeft gesloten, verzendt u de bijbehorende id voor de gekozen provider in de oproep naar *setSelectedProvider()*.
+**Omschrijving:** Voer deze callback uit om uw eigen douane leverancier-selectie UI aan te halen. Het dialoogvenster moet de weergavenaam (en het optionele logo) gebruiken om de keuze van de klant te bepalen. Wanneer de klant een keuze heeft gemaakt en het dialoogvenster heeft gesloten, verzendt u de bijbehorende id voor de gekozen provider in de oproep naar *setSelectedProvider()*.
 
 **Parameters:**
 
-- *providers* - Een array met objecten die de gevraagde MVPD&#39;s vertegenwoordigen:
+- *providers* - Een array met objecten die de gevraagde MVPD&#39;s vertegenwoordigen:
 
 ```JSON
     var mvpd = {
@@ -399,7 +399,7 @@ U moet deze callbacks uitvoeren om de reacties op uw asynchrone verzoekvraag te 
     }
 ```
 
-**geactiveerd door:** [getAuthentication()](#getauthenticationredirecturl-getauthenticationredirecturl), [getAuthorization()](#getauthorizationinresourceid-redirecturl-getauthorizationinresourceidredirecturl)
+**geactiveerd door:** [getAuthentication()](#getauthenticationredirecturl-getauthenticationredirecturl), [getAuthorization()](#getauthorizationinresourceid-redirecturl-getauthorizationinresourceidredirecturl)
 
 </br>[Terug naar boven](#top)
 
@@ -411,7 +411,7 @@ U moet deze callbacks uitvoeren om de reacties op uw asynchrone verzoekvraag te 
 
 **geactiveerd door:**[ setSelectedProvider()](#setselectedproviderproviderid-setselectedprovider)
 
-</br> [Terug naar boven](#top)
+</br> [Terug naar boven](#top)
 
 </br>
 
@@ -426,11 +426,11 @@ U moet deze callbacks uitvoeren om de reacties op uw asynchrone verzoekvraag te 
 
 **Parameters:**
 
-- *isAuthenticated* - Verstrekt authentificatiestatus: 1 (geverifieerd) of 0 (niet geverifieerd).
-- *errorCode* - Een fout die is opgetreden bij het bepalen van de verificatiestatus. Een lege tekenreeks als deze geen is.
+- *isAuthenticated* - Verstrekt authentificatiestatus: 1 (voor authentiek verklaard) of 0 (niet voor authentiek verklaard).
+- *errorCode* - Een fout die is opgetreden bij het bepalen van de verificatiestatus. Een lege tekenreeks als deze geen is.
 
- 
-**geactiveerd door:** [checkAuthentication()](#checkauthn-checkauthn), [getAuthentication()](#getauthenticationredirecturl-getauthenticationredirecturl), [checkAuthorization()](#checkauthorizationinresourceid-checkauthorizationinresourceid)
+
+**geactiveerd door:** [checkAuthentication()](#checkauthn-checkauthn), [getAuthentication()](#getauthenticationredirecturl-getauthenticationredirecturl), [checkAuthorization()](#checkauthorizationinresourceid-checkauthorizationinresourceid)
 
 </br>
 
@@ -444,8 +444,8 @@ U moet deze callbacks uitvoeren om de reacties op uw asynchrone verzoekvraag te 
 >
 >Het apparaattype en besturingssysteem worden afgeleid via een openbare Java-bibliotheek (<http://java.net/projects/user-agent-utils>) en de userAgent-tekenreeks. Deze informatie wordt alleen verstrekt als een ruwe manier om operationele meetgegevens in apparatencategorieën op te delen, maar die Adobe kan geen verantwoordelijkheid voor onjuiste resultaten nemen. Gebruik de nieuwe functionaliteit.
 
-**Omschrijving:** Voer deze callback uit om het volgen gegevens te ontvangen wanneer de specifieke gebeurtenissen voorkomen. U kunt dit bijvoorbeeld gebruiken om bij te houden hoeveel gebruikers zich met dezelfde referenties hebben aangemeld. Tekstspatiëring kan momenteel niet worden geconfigureerd. Met Adobe Primetime-verificatie 1.6, `sendTrackingData()` meldt ook informatie over het apparaat, de cliënt van Enabler van de Toegang, en het werkende systeemtype. De `sendTrackingData()` callback blijft compatibel met oudere versies.\
- 
+**Omschrijving:** Voer deze callback uit om het volgen gegevens te ontvangen wanneer de specifieke gebeurtenissen voorkomen. U kunt dit bijvoorbeeld gebruiken om bij te houden hoeveel gebruikers zich met dezelfde referenties hebben aangemeld. Tekstspatiëring kan momenteel niet worden geconfigureerd. Met Adobe Primetime-verificatie 1.6, `sendTrackingData()` meldt ook informatie over het apparaat, de cliënt van Enabler van de Toegang, en het werkende systeemtype. De `sendTrackingData()` callback blijft compatibel met oudere versies.
+
 - Mogelijke waarden voor apparaattype:
    - computer
    - tablet
@@ -453,7 +453,7 @@ U moet deze callbacks uitvoeren om de reacties op uw asynchrone verzoekvraag te 
    - gameconsole
    - onbekend
 
-- Mogelijke waarden voor het clienttype Access Enabler:
+- Mogelijke waarden voor het clienttype Access Enabled:
    - html5
    - ios
    - androïde
@@ -474,27 +474,27 @@ Gegevens zijn specifiek voor elk gebeurtenistype:
 |:--- | :--- |
 | mvpdSelection | 0: Geselecteerde MVPD |
 |  | 1: Apparaattype |
-|  | 2: Client Type Toegangsbeheer |
+|  | 2: Toegang tot clienttype inschakelen |
 |  | 3: OS |
-| authenticationDetection | 0: Of de token-aanvraag succesvol was (true/false) |
+| authenticationDetection | 0: Of het token-verzoek succesvol was (true/false) |
 |  | 1: MVPD-id |
 |  | 2: GUID |
-|  | 3: Token bevindt zich al in cache (true/false) |
+|  | 3: token is al in cache geplaatst (true/false) |
 |  | 4: Apparaattype |
-|  | 5: Client Type Toegangsbeheer |
+|  | 5: Toegangsbeheer voor clienttype |
 |  | 6: OS |
-| authentication | 0: Of de token-aanvraag succesvol was (true/false) |
+| authentication | 0: Of het token-verzoek succesvol was (true/false) |
 |  | 1: MVPD-id |
 |  | 2: GUID |
-|  | 3: Token bevindt zich al in cache (true/false) |
+|  | 3: token is al in cache geplaatst (true/false) |
 |  | 4: Fout |
 |  | 5: Details |
 |  | 6: Apparaattype |
-|  | 7: Client Type Toegangsbeheer |
+|  | 7: Toegangsbeheer voor clienttype |
 |  | 8: OS |
 
 
-**geactiveerd door:** [checkAuthentication()](#checkauthn-checkauthn), [getAuthentication()](#getauthenticationredirecturl-getauthenticationredirecturl), [checkAuthorization()](#checkauthorizationinresourceid-checkauthorizationinresourceid), [getAuthorization()](#getauthorizationinresourceid-redirecturl-getauthorizationinresourceidredirecturl)
+**geactiveerd door:** [checkAuthentication()](#checkauthn-checkauthn), [getAuthentication()](#getauthenticationredirecturl-getauthenticationredirecturl), [checkAuthorization()](#checkauthorizationinresourceid-checkauthorizationinresourceid), [getAuthorization()](#getauthorizationinresourceid-redirecturl-getauthorizationinresourceidredirecturl)
 
 </br>
 
@@ -506,7 +506,7 @@ Gegevens zijn specifiek voor elk gebeurtenistype:
 
 **Omschrijving:** Voer deze callback uit om het kortstondige media teken (inToken) en identiteitskaart van het middel (inRequestedResourceID) te ontvangen waarvoor een vergunningsverzoek of een controle-vergunning verzoek werd gemaakt en met succes voltooid.
 
-**geactiveerd door:** [checkAuthorization()](#checkAuthZ), [getAuthorization()](#getAuthZ)
+**geactiveerd door:** [checkAuthorization()](#checkAuthZ), [getAuthorization()](#getAuthZ)
 </br>
 
 [Terug naar boven](#top)
@@ -523,13 +523,13 @@ Gegevens zijn specifiek voor elk gebeurtenistype:
 
 **Parameters:**
 
-- *inRequestedResourceID* - Een tekenreeks die de bron-id bevat die is gebruikt in het vergunningsverzoek.
-- *inRequestErrorCode* - Een tekenreeks die de Adobe Primetime-verificatiefoutencode weergeeft en de oorzaak van de fout aangeeft; Mogelijke waarden zijn &quot;User Not Authenticated Error&quot; en &quot;User Not Authorized Error&quot;. Zie &quot;Callback error codes&quot; hieronder voor meer informatie.
+- *inRequestedResourceID* - Een tekenreeks die de bron-id bevat die is gebruikt in het vergunningsverzoek.
+- *inRequestErrorCode* - Een tekenreeks die de Adobe Primetime-verificatiefoutecode weergeeft en die de oorzaak van de fout aangeeft. Mogelijke waarden zijn &quot;Gebruiker niet geverifieerde fout&quot; en &quot;Gebruiker niet geautoriseerde fout&quot;. Zie &quot;Callback-foutcodes&quot; hieronder voor meer informatie.
 - *inRequestDetalErrorMessage* - Een extra beschrijvende tekenreeks die geschikt is voor weergave. Als deze beschrijvende tekenreeks om welke reden dan ook niet beschikbaar is, verzendt Adobe Primetime-verificatie een lege tekenreeks **(&quot;&quot;)**.  Dit kan door MVPD worden gebruikt om de berichten van de douanefout of verkoop-verwante berichten over te gaan. Bijvoorbeeld, als een abonnee vergunning voor een middel wordt ontkend, kon MVPD met antwoorden `*inRequestDetailedErrorMessage*` zoals: **&quot;U hebt momenteel geen toegang tot dit kanaal in uw pakket. Klik \*hier\* als u het pakket wilt bijwerken.&quot;** Het bericht wordt overgegaan door de authentificatie van Adobe Primetime door deze callback aan de plaats van de Programmer. De programmeur heeft dan de optie om het te tonen of te negeren. Adobe Primetime-verificatie kan ook worden gebruikt `*inRequestDetailedErrorMessage*` om de programmeur op de hoogte te stellen van de voorwaarde die tot een fout kan hebben geleid. Bijvoorbeeld: **&quot;Er is een netwerkfout opgetreden bij de communicatie met de machtigingsservice van de provider.&quot;**
 
- 
 
-**geactiveerd door:**  [checkAuthorization()](#checkauthorizationinresourceid-checkauthorizationinresourceid), [getAuthorization()](#getauthorizationinresourceid-redirecturl-getauthorizationinresourceidredirecturl)
+
+**geactiveerd door:**  [checkAuthorization()](#checkauthorizationinresourceid-checkauthorizationinresourceid), [getAuthorization()](#getauthorizationinresourceid-redirecturl-getauthorizationinresourceidredirecturl)
 </br>
 
 [Terug naar boven](#top)
@@ -539,13 +539,13 @@ Gegevens zijn specifiek voor elk gebeurtenistype:
 
 ## preauthorisedResources(authorisedResources) {#preauthorizedResources(authorizedResources)}
 
-**Omschrijving:** Callback die door Toegang wordt teweeggebracht toelaat die de erkende middelenlijst levert die na een vraag aan is teruggekeerd `checkPreauthorizedResources()`.
+**Omschrijving:** Callback die door Toegang wordt teweeggebracht toelaat die de erkende middelenlijst levert die na een vraag aan is teruggekeerd `checkPreauthorizedResources()`.
 
 **Parameters:**
 
 - *authorisedResources*: De lijst met toegestane middelen.
 
-**geactiveerd door:** [checkPreauthorisedResources()](#checkPreauthRes)
+**geactiveerd door:** [checkPreauthorisedResources()](#checkPreauthRes)
 </br>
 
 [Terug naar boven](#top)
@@ -554,14 +554,14 @@ Gegevens zijn specifiek voor elk gebeurtenistype:
 
 ## setMetadataStatus(key, encrypted, data) {#setMetadataStatus(key,encrypted,data)}
 
-**Omschrijving:** Callback die door Toegangsactivering wordt teweeggebracht die de meta-gegevens levert die via wordt gevraagd `getMetadata()` vraag.
+**Omschrijving:** Callback die door Toegangsactivering wordt teweeggebracht die de meta-gegevens levert die via wordt gevraagd `getMetadata()` vraag.
 
-**Meer informatie:** [Metagegevens gebruiker](#userMetadata)
+**Meer informatie:** [Metagegevens gebruiker](#userMetadata)
 
 **Parameters:**
 
-- *key (String)*: De sleutel van de meta-gegevens waarvoor het verzoek werd ingediend.
-- *gecodeerd (Boolean)*: Een vlag die aangeeft of de &quot;waarde&quot; al dan niet gecodeerd is. Als dit &quot;waar&quot;is dan zal de &quot;waarde&quot;eigenlijk een Gecodeerde vertegenwoordiging van het Web JSON van de daadwerkelijke waarde zijn. 
+- *key (String)*: De sleutel van de metagegevens waarvoor het verzoek is ingediend.
+- *gecodeerd (Boolean)*: Een vlag die aangeeft of de &quot;waarde&quot; al dan niet gecodeerd is. Als dit &quot;waar&quot;is dan zal de &quot;waarde&quot;eigenlijk een Gecodeerde vertegenwoordiging van het Web JSON van de daadwerkelijke waarde zijn.
 - *data (JSON-object)*: Een JSON-object met de weergave van de metagegevens.Voor eenvoudige aanvragen (&#39;`TTL_AUTHN`&#39;, &#39;`TTL_AUTHZ`&#39;, &#39;`DEVICEID`&#39;), is het resultaat een tekenreeks (die de TTL voor verificatie, TTL voor autorisatie of apparaat-id vertegenwoordigt). In het geval van een verzoek van Metagegevens van de Gebruiker, kan het resultaat een primitief of JSON voorwerp zijn die de meta-gegevens lading vertegenwoordigen. De daadwerkelijke structuur van objecten met JSON-gebruikersmetagegevens is vergelijkbaar met het volgende:
 
 ```JSON
@@ -580,7 +580,7 @@ Gegevens zijn specifiek voor elk gebeurtenistype:
             channelID: ["channel-1", "channel-2"]
     }
 ```
- 
+
 
 Bijvoorbeeld:
 
@@ -595,9 +595,9 @@ Bijvoorbeeld:
         alert(key + "=" + data);
     }
 ```
- 
 
-**geactiveerd door:** [`getMetadata()`](#getmetadatakey-getmetadata)
+
+**geactiveerd door:** [`getMetadata()`](#getmetadatakey-getmetadata)
 </br>
 [Terug naar boven](#top)
 
@@ -605,12 +605,12 @@ Bijvoorbeeld:
 
 ## selectedProvider(resultaat) {#selectedProvider(result)}
 
-**Omschrijving:** Voer deze callback uit om momenteel geselecteerde MVPD en het resultaat van authentificatie van huidige gebruiker te ontvangen die in `result` parameter. De `result` parameter is een Object met de volgende eigenschappen:
+**Omschrijving:** Voer deze callback uit om momenteel geselecteerde MVPD en het resultaat van authentificatie van huidige gebruiker te ontvangen die in wordt verpakt `result` parameter. De `result` parameter is een Object met de volgende eigenschappen:
 
-- **MVPD** De momenteel geselecteerde MVPD, of ongeldig als geen MVPD werd geselecteerd.
-- **AE\_State** Het resultaat van verificatie voor de huidige gebruiker, een van de opties &quot;Nieuwe gebruiker&quot;, &quot;Gebruiker niet geverifieerd&quot; of &quot;Gebruiker geverifieerd&quot;
+- **MVPD** De momenteel geselecteerde MVPD, of ongeldig als geen MVPD werd geselecteerd.
+- **AE\_State** Het resultaat van verificatie voor de huidige gebruiker, een van &quot;Nieuwe gebruiker&quot;, &quot;Gebruiker niet geverifieerd&quot; of &quot;Gebruiker geverifieerd&quot;
 
- **geactiveerd door:** [getSelectedProvider()](#getSelProv)
+**geactiveerd door:** [getSelectedProvider()](#getSelProv)
 
 </br>
 
@@ -620,20 +620,20 @@ Bijvoorbeeld:
 
 ### Callback-foutcodes {#callback-error-codes}
 
-| Algemene fouten |  |
+| Algemene fouten | |
 |:--- | :--- | 
 | Interne fout | Er is een systeemfout opgetreden bij het verwerken van de aanvraag. |
 | Provider niet geselecteerd | Vindt plaats wanneer klant annuleert in het dialoogvenster voor providerselectie |
-| Provider niet beschikbaar | Vindt plaats wanneer er geen providers beschikbaar zijn. |
+| Fout: provider niet beschikbaar | Vindt plaats wanneer er geen providers beschikbaar zijn. |
 
-| Verificatiefouten |  |
+| Verificatiefouten | |
 |:--- | :--- | 
 | Algemene verificatiefout | Wordt geretourneerd als de reden onbekend is of niet kan worden gepubliceerd. |
 | Interne verificatiefout | Er is een systeemfout opgetreden bij het verifiëren. |
 | Fout door gebruiker niet geverifieerd | Gebruiker is niet geverifieerd. |
 | Fout bij meerdere verificatieverzoeken | Er zijn aanvullende verificatieverzoeken ontvangen voordat de eerste is voltooid. |
 
-| Autorisatiefouten |  |
+| Autorisatiefouten | |
 |:--- | :--- | 
 | Algemene autorisatiefout | Wordt geretourneerd als de reden onbekend is of niet kan worden gepubliceerd. |
 | Interne autorisatiefout | Er is een systeemfout opgetreden bij het autoriseren. |

@@ -2,7 +2,7 @@
 title: Verificatiestroom controleren op tweede scherm van webtoepassing
 description: Verificatiestroom controleren op tweede scherm van webtoepassing
 exl-id: 5807f372-a520-4069-b837-67ae41b7f79b
-source-git-commit: bfc3ba55c99daba561255760baf273b6538a3c6e
+source-git-commit: 84a16ce775a0aab96ad954997c008b5265e69283
 workflow-type: tm+mt
 source-wordcount: '206'
 ht-degree: 0%
@@ -19,13 +19,13 @@ ht-degree: 0%
 
 &lt;reggie_fqdn>:
 
-* Productie - [api.auth.adobe.com](http://api.auth.adobe.com/)
-* Staging - [api.auth-staging.adobe.com](http://api.auth-staging.adobe.com/)
+* Productie - [api.auth.adobe.com](http://api.auth.adobe.com/)
+* Staging - [api.auth-staging.adobe.com](http://api.auth-staging.adobe.com/)
 
 &lt;sp_fqdn>:
 
-* Productie - [api.auth.adobe.com](http://api.auth.adobe.com/)
-* Staging - [api.auth-staging.adobe.com](http://api.auth-staging.adobe.com/)
+* Productie - [api.auth.adobe.com](http://api.auth.adobe.com/)
+* Staging - [api.auth-staging.adobe.com](http://api.auth-staging.adobe.com/)
 
 </br>
 
@@ -34,9 +34,9 @@ ht-degree: 0%
 Deze API moet worden gebruikt door de tweede webtoepassing voor schermaanmelding om te bevestigen dat Adobe Primetime-verificatie heeft bevestigd dat MVPD met succes is aangemeld. Wij adviseren roepend deze API alvorens een succesbericht aan het eind te tonen - gebruiker die hem/haar instrueert om aan de apparatenconsole te werk te gaan om met de werkschema&#39;s verder te gaan.
 
 
-| Endpoint | Geroepen  </br>Door | Invoer   </br>Params | HTTP  </br>Methode | Antwoord | HTTP  </br>Antwoord |
+| Endpoint | Geroepen  </br>Door | Invoer   </br>Params | HTTP  </br>Methode | Antwoord | HTTP  </br>Antwoord |
 | --- | --- | --- | --- | --- | --- |
-| SP_FQDN/api/v1/checkauther/{registration code} | Aanmeldingswebtoepassing | 1. registratiecode  </br>    (component Path)</br>2.  aanvrager  </br>    (Verplicht) | GET | XML of JSON met foutdetails als dit mislukt. | 200 - Succes   </br>403 - Verboden |
+| SP_FQDN/api/v1/checkauther/{registration code} | Aanmeldingswebtoepassing | 1. Registratiecode  </br>    (component Path)</br>2.  aanvrager  </br>    (Verplicht) | GET | XML of JSON met foutdetails als dit mislukt. | 200 - Succes   </br>403 - verboden |
 
 </br>
 
@@ -50,9 +50,9 @@ Deze API moet worden gebruikt door de tweede webtoepassing voor schermaanmelding
 
 ```JSON
     {
-        "status": 403,
-        "message": "Forbidden"
+        "status": 403,
+        "message": "Forbidden"
     }
 ```
 
-### [Terug naar REST API-naslaggids](/help/authentication/rest-api-reference.md)
+### [Terug naar REST API Reference](/help/authentication/rest-api-reference.md)

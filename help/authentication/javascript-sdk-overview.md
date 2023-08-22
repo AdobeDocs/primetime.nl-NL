@@ -2,7 +2,7 @@
 title: JavaScript SDK - Overzicht
 description: JavaScript SDK - Overzicht
 exl-id: 8756c804-a4c1-4ee3-b2b9-be45f38bdf94
-source-git-commit: bfc3ba55c99daba561255760baf273b6538a3c6e
+source-git-commit: 84a16ce775a0aab96ad954997c008b5265e69283
 workflow-type: tm+mt
 source-wordcount: '511'
 ht-degree: 0%
@@ -17,9 +17,9 @@ ht-degree: 0%
 
 ## Inleiding
 
-Adobe raadt u ten zeerste aan om te migreren naar de nieuwste JS v4.x van de AccessEnabler-bibliotheek.
+De Adobe adviseert hoogst dat u aan recentste JS v4.x van de bibliotheek AccessEnabler migreert.
 
-De Adobe Primetime-verificatie-JavaScript-integratie biedt programmeurs een oplossing op tv-elke locatie in de vertrouwde ontwikkelomgeving van JS-webtoepassingen. De belangrijkste componenten van de integratie zijn uw &quot;high-level&quot;toepassing (gebruikersinteractie, videopresentatie), en de Adobe-Geleverde &quot;laag-vlakke&quot;bibliotheek AccessEnabler die uw ingang aan de toestemmingsstromen verstrekt, en communicatie met de authentificatieservers van Adobe Primetime behandelt.
+De Adobe Primetime-verificatie-JavaScript-integratie biedt programmeurs een oplossing op tv-elke locatie in de vertrouwde ontwikkelomgeving van JS-webtoepassingen. De belangrijkste componenten van de integratie zijn uw &quot;high-level&quot;toepassing (gebruikersinteractie, videopresentatie), en de Adobe-geleverde &quot;laag-niveau&quot;bibliotheek AccessEnabler die uw ingang aan de machtigingsstromen verstrekt, en communicatie met de authentificatieservers van Adobe Primetime behandelt.
 
 De algemene Adobe Primetime-verificatierechten worden behandeld in [Machtigingsstroom voor programmeur](/help/authentication/entitlement-flow.md)en de JavaScript Integration Cookbook doorloopt de implementatie. De volgende secties verstrekken beschrijvingen en steekproeven specifiek voor de integratie JavaScript AccessEnabler.
 
@@ -29,15 +29,15 @@ De algemene Adobe Primetime-verificatierechten worden behandeld in [Machtigingss
 
 ## Het dialoogvenster MVPD-selectie maken {#creating-the-mvpd-selection-dialog}
 
-Om een gebruiker aan login aan hun MVPD en voor authentiek verklaard te worden, moet uw pagina of speler een manier voor de gebruiker verstrekken om hun MVPD te identificeren. Een standaardversie van een MVPD selectiedialoog wordt verstrekt voor ontwikkeling. Voor productiegebruik, moet u uw eigen selecteur uitvoeren MVPD. 
+Om een gebruiker aan login aan hun MVPD en voor authentiek verklaard te worden, moet uw pagina of speler een manier voor de gebruiker verstrekken om hun MVPD te identificeren. Een standaardversie van een MVPD selectiedialoog wordt verstrekt voor ontwikkeling. Voor productiegebruik, moet u uw eigen selecteur uitvoeren MVPD.
 
-Als u al weet wie de leverancier van de klant is, kunt u [plaats programmatically MVPD](/help/authentication/home.md), zonder gebruikersinteractie. De techniek is het zelfde, maar negeert de stap om het de dialoogvakje van de Selecteur van de Leverancier aan te halen en de klant te vragen om hun MVPD te selecteren.
+Als u al weet wie de leverancier van de klant is, kunt u [plaats programmatically MVPD](/help/authentication/home.md), zonder gebruikersinteractie. De techniek is het zelfde, maar negeert de stap om het de dialoogvakje van de Selecteur van de Leverancier aan te halen en de klant te vragen om hun MVPD te selecteren.
 
 ## De serviceprovider weergeven {#displaying-the-service-provider}
 
 Het volgende codevoorbeeld toont aan hoe te om de dienstverlener voor de huidige klant te ontdekken en te tonen:
 
- **HTML** - Deze pagina voegt een sectie aan de pagina toe die de gekozen leverancier van de klant toont, als zij reeds het programma worden geopend:
+**HTML** - Deze pagina voegt een sectie aan de pagina toe die de gekozen leverancier van de klant toont, als zij reeds het programma worden geopend:
 
 ```HTML
     <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" 
@@ -74,7 +74,7 @@ Het volgende codevoorbeeld toont aan hoe te om de dienstverlener voor de huidige
     </body>
     </html>
 ```
- 
+
 
 **JavaScript** Dit JavaScript-bestand vraagt de Access Enabler naar de huidige provider als de gebruiker al is aangemeld en geeft het resultaat weer in de paginasectie die voor deze provider is gereserveerd. Het voert ook een MVPD selecteerdialoog uit:
 
@@ -197,13 +197,13 @@ Het volgende codevoorbeeld toont aan hoe te om de dienstverlener voor de huidige
 
 ## Afmelden {#logout}
 
-Bellen `logout()` om het logout-proces te starten. Deze methode gebruikt geen argumenten. Het logout de huidige gebruiker, die alle authentificatie en vergunningsinformatie voor die gebruiker ontruimt en alle tokens AuthN en AuthZ van het lokale systeem schrapt.
+Bellen `logout()` om het logout-proces te starten. Deze methode gebruikt geen argumenten. Het logout de huidige gebruiker, die alle authentificatie en vergunningsinformatie voor die gebruiker ontruimt en alle tokens AuthN en AuthZ van het lokale systeem schrapt.
 
 In sommige gevallen is de speler niet verantwoordelijk voor het afhandelen van gebruikersaanmeldingen:
 
- 
 
-- **Wanneer de logout van een plaats in werking wordt gesteld die niet met de authentificatie van Adobe Primetime wordt geïntegreerd.** In dit geval kan de MVPD de Adobe Primetime-verificatie Single Logout-service aanroepen via een omleiding van de browser. (Het aanroepen van SLO via een backchannel-aanroep wordt momenteel niet ondersteund.)
+
+- **Wanneer de logout van een plaats in werking wordt gesteld die niet met de authentificatie van Adobe Primetime wordt geïntegreerd.** In dit geval kan de MVPD de Adobe Primetime-verificatie Single Logout-service aanroepen via een omleiding van de browser. (Het aanroepen van SLO via een backchannel-aanroep wordt momenteel niet ondersteund.)
 
 >[!NOTE]
 >

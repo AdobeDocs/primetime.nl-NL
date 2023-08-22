@@ -2,7 +2,7 @@
 title: Verificatietoken ophalen
 description: Verificatietoken ophalen
 exl-id: 7fb03854-edad-41e7-b218-1858fc071876
-source-git-commit: bfc3ba55c99daba561255760baf273b6538a3c6e
+source-git-commit: 84a16ce775a0aab96ad954997c008b5265e69283
 workflow-type: tm+mt
 source-wordcount: '260'
 ht-degree: 0%
@@ -19,23 +19,23 @@ ht-degree: 0%
 
 &lt;reggie_fqdn>:
 
-* Productie - [api.auth.adobe.com](http://api.auth.adobe.com/)
-* Staging - [api.auth-staging.adobe.com](http://api.auth-staging.adobe.com/)
+* Productie - [api.auth.adobe.com](http://api.auth.adobe.com/)
+* Staging - [api.auth-staging.adobe.com](http://api.auth-staging.adobe.com/)
 
 &lt;sp_fqdn>:
 
-* Productie - [api.auth.adobe.com](http://api.auth.adobe.com/)
-* Staging - [api.auth-staging.adobe.com](http://api.auth-staging.adobe.com/)
+* Productie - [api.auth.adobe.com](http://api.auth.adobe.com/)
+* Staging - [api.auth-staging.adobe.com](http://api.auth-staging.adobe.com/)
 
 </br>
 
 ## Beschrijving {#description}
 
-Hiermee wordt het verificatietoken (AuthN) opgehaald.  
+Hiermee wordt het verificatietoken (AuthN) opgehaald.
 
-| Endpoint | Geroepen  </br>Door | Invoer   </br>Params | HTTP  </br>Methode | Antwoord | HTTP  </br>Antwoord |
+| Endpoint | Geroepen  </br>Door | Invoer   </br>Params | HTTP  </br>Methode | Antwoord | HTTP  </br>Antwoord |
 | --- | --- | --- | --- | --- | --- |
-| &lt;sp_fqdn>/api/v1/tokens/authoring</br></br>Bijvoorbeeld:</br></br>&lt;sp_fqdn>/api/v1/tokens/authoring | Streaming-app</br></br>of</br></br>Programmeringsservice | 1. aanvrager (verplicht)</br>2.  deviceId (verplicht)</br>3.  device_info/X-Device-Info (verplicht)</br>4.  _deviceType_ (Afgekeurd)</br>5.  _deviceUser_ (Afgekeurd)</br>6.  _appId_ (Afgekeurd) | GET | XML of JSON met verificatiegegevens of foutdetails als dit mislukt. | 200 - Geslaagd.  </br>404 - token niet gevonden  </br>410 - token verlopen |
+| &lt;sp_fqdn>/api/v1/tokens/authoring</br></br>Bijvoorbeeld:</br></br>&lt;sp_fqdn>/api/v1/tokens/authoring | Streaming-app</br></br>of</br></br>Programmeringsservice | 1. Aanvrager (verplicht)</br>2.  deviceId (verplicht)</br>3.  device_info/X-Device-Info (verplicht)</br>4.  _deviceType_ (Afgekeurd)</br>5.  _deviceUser_ (Verouderd)</br>6.  _appId_ (Verouderd) | GET | XML of JSON met verificatiegegevens of foutdetails als dit mislukt. | 200 - Geslaagd.  </br>404 - token niet gevonden  </br>410 - token verlopen |
 
 {style="table-layout:auto"}
 
@@ -43,11 +43,11 @@ Hiermee wordt het verificatietoken (AuthN) opgehaald.  
 | Invoerparameter | Beschrijving |
 | --- | --- |
 | aanvrager | De programmeeraanvragerId waarvoor deze verrichting geldig is. |
-| deviceId | De id-bytes van het apparaat. |
-| device_info/</br></br>X-Apparaat-Info | Informatie over streaming apparaat.</br></br>**Opmerking**: This MAY BE passed device_info as a URL parameter, but due to the potential size of this parameter and constraints on the length of a GET URL, it should be passed as X-Device-Info in the http header. </br></br><!--See the full details in [Passing Device and Connection Information](http://tve.helpdocsonline.com/passing-device-information)-->. |
+| deviceId | Het apparaat-id bytes. |
+| device_info/</br></br>X-Apparaat-Info | Informatie over streaming apparaat.</br></br>**Opmerking**: This MAY BE passed device_info as a URL parameter, but due to the potential size of this parameter and constraints on the length of a GET URL, it should be passed as X-Device-Info in the http header. </br></br><!--See the full details in [Passing Device and Connection Information](http://tve.helpdocsonline.com/passing-device-information)-->. |
 | _deviceType_ | Het apparaattype (bijvoorbeeld Roku, PC).</br></br>**Opmerking**: device_info vervangt deze parameter. |
 | _deviceUser_ | De gebruikers-id van het apparaat.</br></br>**Opmerking**: Indien gebruikt, moet deviceUser dezelfde waarden hebben als in het dialoogvenster [Registratiecode maken](/help/authentication/registration-code-request.md) verzoek. |
-| _appId_ | De toepassings-id/-naam. </br></br>**Opmerking**: device_info vervangt deze parameter. Indien gebruikt, `appId` moeten dezelfde waarden hebben als in de [Registratiecode maken](/help/authentication/registration-code-request.md) verzoek. |
+| _appId_ | De toepassings-id/-naam. </br></br>**Opmerking**: device_info vervangt deze parameter. Indien gebruikt, `appId` moeten dezelfde waarden hebben als in de [Registratiecode maken](/help/authentication/registration-code-request.md) verzoek. |
 
 {style="table-layout:auto"}
 
@@ -55,7 +55,7 @@ Hiermee wordt het verificatietoken (AuthN) opgehaald.  
 
 ### Samplereactie {#response}
 
- 
+
 
 #### Succes
 
@@ -76,16 +76,16 @@ Hiermee wordt het verificatietoken (AuthN) opgehaald.  
 
 ```JSON
     {
-         "requestor": "sampleRequestor",
-         "mvpd": "sampleMvpdId",
-         "userId": "sampleUserId",
-         "expires": "1601114932000"
+         "requestor": "sampleRequestor",
+         "mvpd": "sampleMvpdId",
+         "userId": "sampleUserId",
+         "expires": "1601114932000"
     }
 ```
 
- 
 
- 
+
+
 
 #### Verificatietoken niet gevonden:
 
@@ -99,7 +99,7 @@ Hiermee wordt het verificatietoken (AuthN) opgehaald.  
     </error>
 ```
 
- 
+
 **JSON:**
 
 ```JSON

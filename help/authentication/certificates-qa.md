@@ -2,7 +2,7 @@
 title: Certificaten Vragen en antwoorden
 description: Certificaten Vragen en antwoorden
 exl-id: d4e493b0-4467-42b1-9758-16c5941d8051
-source-git-commit: bfc3ba55c99daba561255760baf273b6538a3c6e
+source-git-commit: 84a16ce775a0aab96ad954997c008b5265e69283
 workflow-type: tm+mt
 source-wordcount: '245'
 ht-degree: 0%
@@ -29,6 +29,6 @@ ht-degree: 0%
 
 </br>
 
-**3e kwartaal:** Is een nieuw certificaat nodig voor webpagina&#39;s die de nieuwe flexibele TempPass gebruiken? 
+**3e kwartaal:** Is een nieuw certificaat nodig voor webpagina&#39;s die de nieuwe flexibele TempPass gebruiken?
 
-**A:** Het certificaat (en alle certificaten) zijn geconfigureerd op het niveau van Media Company &amp; Programmer. FlexibleTempPass is een MVPD, te hoeven u om het even welk certificaat voor het niet te vormen, zodat als u een bestaande Programmer met flexibele TempPass integreert, zal het certificaat dat reeds op het niveau van Programmer/Media Company wordt gevormd worden gebruikt.
+**A:** Het certificaat (en alle certificaten) zijn geconfigureerd op het niveau van Media Company &amp; Programmer. FlexibleTempPass is een MVPD, te hoeven u om het even welk certificaat voor het niet te vormen, zodat als u een bestaande Programmer met flexibele TempPass integreert, zal het certificaat dat reeds op het niveau van Programmer/Media Company wordt gevormd worden gebruikt.
