@@ -2,7 +2,7 @@
 title: Verificatie met het OAuth 2.0-protocol
 description: Verificatie met het OAuth 2.0-protocol
 exl-id: 0c1f04fe-51dc-4b4d-88e7-66e8f4609e02
-source-git-commit: bfc3ba55c99daba561255760baf273b6538a3c6e
+source-git-commit: d7d284e7e8563c5ca1ab1c8627cb75ecb1e1cbe5
 workflow-type: tm+mt
 source-wordcount: '1074'
 ht-degree: 0%
@@ -39,7 +39,7 @@ Het protocol biedt ook meer flexibiliteit in termen van gegevens die worden bloo
 
 Om authentificatie met OAuth 2.0 te steunen, moet een MVPD aan de volgende eerste vereisten voldoen:
 
-In de eerste plaats moet het MVPD ervoor zorgen dat het de * ondersteunt[Toekenning van autorisatiecode](https://oauthlib.readthedocs.io/en/latest/oauth2/grants/authcode.html) stroom.
+In de eerste plaats moet het MVPD ervoor zorgen dat het de [Toekenning van autorisatiecode](https://oauthlib.readthedocs.io/en/latest/oauth2/grants/authcode.html) stroom.
 
 Nadat het bevestigd heeft dat het de stroom steunt, moet MVPD ons de volgende informatie verstrekken:
 
@@ -53,11 +53,11 @@ Nadat het bevestigd heeft dat het de stroom steunt, moet MVPD ons de volgende in
 * we hebben een **eindpunt voor gebruikersprofiel**
    * dit eindpunt zal userID verstrekken, die voor een rekening uniek moet zijn en geen Persoonlijk Identificeerbare Informatie zou moeten bevatten
 * de **/logout** eindpunt (optioneel)
-   * De authentificatie van Adobe Primetime zal aan dit eindpunt opnieuw richten, verstrekt MVPD een omleiding terug URI; op dit eindpunt, kan MVPD de koekjes op de cliëntmachine ontruimen of om het even welke gewenste logica voor logout toepassen
+   * De authentificatie van Adobe Primetime zal aan dit eindpunt opnieuw richten, MVPD een omleiding terug URI verstrekken; op dit eindpunt, kan MVPD de koekjes op de cliëntmachine ontruimen of om het even welke gewenste logica voor logout toepassen
 * het wordt ten zeerste aanbevolen ondersteuning te bieden voor geautoriseerde clients (client-apps die geen gebruikerautorisatiepagina activeren)
 * wij zullen ook nodig hebben :
    * **clientID** en **clientgeheim** voor de integratieconfiguraties
-   * **tijd om te leven** (TTL) waarden voor het vernieuwingstoken en toegangstoken
+   * **tijd om te leven** (TTL) waarden voor vernieuwt teken en toegangstoken
    * Wij kunnen MVPD van een callback van de Vergunning en logout callback URI voorzien. Ook, indien nodig, kunnen wij MVPDs van een lijst van IPs voorzien die in uw firewallmontages moeten worden gewhitelisteerd.
 
 
@@ -67,7 +67,7 @@ In de authentificatiestroom, zal de authentificatie van Adobe Primetime met MVPD
 
 
 
-![Diagram om de stroom van de Authentificatie in de Authentificatie van Adobe te tonen die met MVPD op het protocol communiceert dat in configuratie wordt geselecteerd.](assets/authn-flow.png)
+![Diagram om de stroom van de Authentificatie in de Authentificatie van de Adobe te tonen die met MVPD op het protocol communiceert dat in configuratie wordt geselecteerd.](assets/authn-flow.png)
 
 **Afbeelding 1: OAuth 2.0-verificatiestroom**
 
@@ -106,8 +106,8 @@ Om **SSO behouden**, zullen de gebruikers die reeds een authentificatietoken heb
 
 Vanuit technisch oogpunt:
 
-1. Adobe zal een integratie OAuth 2.0 tussen programmeur en MVPD toelaten, ZONDER de integratie van SAML te schrappen.
+1. De Adobe zal een integratie OAuth 2.0 tussen programmeur en MVPD toelaten, ZONDER de integratie van SAML te schrappen.
 1. Na het inschakelen zullen alle nieuwe gebruikers OAuth 2.0-stromen gebruiken.
 1. De gebruikers reeds voor authentiek verklaard, die reeds een lokaal teken AuthN hebben dat onderwerpidentiteitskaart van SAML bevat, zullen automatisch door Adobe door de integratie van SAML worden verpletterd.
-1. Voor de gebruikers in stap 3, zodra hun SAML geproduceerde teken AuthN verloopt, zal Adobe hen behandelen als nieuwe gebruikers en gedraagt zich als de gebruikers in stap 2.
-1. Adobe zal de gebruikspatronen evalueren om te bepalen wanneer de integratie van SAML veilig kan worden gedeactiveerd.
+1. Voor de gebruikers in stap 3, zodra hun SAML geproduceerde teken AuthN verloopt, zal de Adobe hen als nieuwe gebruikers behandelen en zich als de gebruikers in stap 2 gedragen.
+1. Adobe zal gebruikspatronen evalueren om te bepalen wanneer de integratie van SAML veilig kan worden gedeactiveerd.
