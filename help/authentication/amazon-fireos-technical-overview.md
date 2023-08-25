@@ -2,7 +2,7 @@
 title: Technisch overzicht van Amazon FireOS
 description: Technisch overzicht van Amazon FireOS
 exl-id: 939683ee-0dd9-42ab-9fde-8686d2dc0cd0
-source-git-commit: 84a16ce775a0aab96ad954997c008b5265e69283
+source-git-commit: 4691e769e1fee51507550c8e1fbecdcdff7e44eb
 workflow-type: tm+mt
 source-wordcount: '2142'
 ht-degree: 0%
@@ -80,7 +80,7 @@ Na succesvolle authentificatie en vergunning, zal de authentificatie van Primeti
 
 #### Verificatietoken
 
-- **AccessEnabler 1.10.1 voor FireOS **is gebaseerd op AccessEnabler voor Android 1.9.1 - Deze SDK introduceert een nieuwe methode van symbolische opslag, toelatend veelvoudige Programmer-MVPD emmers, en daarom, veelvoudige authentificatietokens.
+- **AccessEnabler 1.10.1 voor FireOS** is gebaseerd op AccessEnabler voor Android 1.9.1 - Deze SDK introduceert een nieuwe methode van symbolische opslag, toelatend veelvoudige Programmer-MVPD emmers, en daarom, veelvoudige authentificatietokens.
 
 #### Token voor autorisatie
 
