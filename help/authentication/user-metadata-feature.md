@@ -2,9 +2,9 @@
 title: Metagegevens gebruiker
 description: Metagegevens gebruiker
 exl-id: 9fd68885-7b3a-4af0-a090-6f1f16efd2a1
-source-git-commit: 84a16ce775a0aab96ad954997c008b5265e69283
+source-git-commit: 36cf160c42bb68412c71e100a7d4fb3ca9c58d89
 workflow-type: tm+mt
-source-wordcount: '1678'
+source-wordcount: '1649'
 ht-degree: 0%
 
 ---
@@ -212,10 +212,9 @@ De lijst met gebruikermetagegevenstypen wordt uitgebreid wanneer nieuwe typen be
     }
 ```
 
-
-Zie de desbetreffende koppeling in Verwante informatie hieronder voor meer informatie over uw specifieke platform of om inzicht te krijgen in de manier waarop gebruikersmetagegevens aan de MVPD-zijde worden verwerkt.
-
 <!---
+
+For details on your particular platform, or to gain some insight into how User Metadata is processed on the MVPD side, see the appropriate link in Related Information below.  
 
 ## Related Information {#related}
 
