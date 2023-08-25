@@ -2,7 +2,7 @@
 title: Overzicht van Android SDK
 description: Overzicht van Android SDK
 exl-id: a1d98325-32a1-4881-8635-9a3c38169422
-source-git-commit: 84a16ce775a0aab96ad954997c008b5265e69283
+source-git-commit: 4b858a06080ec221c60548e2a2a0f3b6010ede15
 workflow-type: tm+mt
 source-wordcount: '2707'
 ht-degree: 0%
@@ -113,7 +113,7 @@ Na succesvolle authentificatie en vergunning, zal de authentificatie van Primeti
 
 #### Verificatietoken
 
-- **AccessEnabler 1.6 en ouder** - **** De manier waarop verificatietokens in het cachegeheugen worden geplaatst, is afhankelijk van &quot;**Verificatie per aanvrager&quot;** vlag verbonden aan de huidige MVPD:
+- **AccessEnabler 1.6 en ouder** - De manier waarop verificatietokens in het cachegeheugen worden geplaatst, is afhankelijk van de instelling &quot;**Verificatie per aanvrager&quot;** vlag verbonden aan de huidige MVPD:
 
 
 1. Als de functie Verificatie per aanvrager is ingesteld op *uitgeschakeld*, dan zal één enkel authentificatietoken plaatselijk in het globale plakbord worden opgeslagen. Dit teken zal tussen alle toepassingen worden gedeeld die met huidige MVPD geïntegreerd zijn.
