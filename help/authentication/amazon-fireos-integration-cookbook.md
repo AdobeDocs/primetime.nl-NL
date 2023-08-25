@@ -2,7 +2,7 @@
 title: Amazon FireOS Integration Cookbook
 description: Amazon FireOS Integration Cookbook
 exl-id: 1982c485-f0ed-4df3-9a20-9c6a928500c2
-source-git-commit: 84a16ce775a0aab96ad954997c008b5265e69283
+source-git-commit: e5e42763fecae437cfc34bae98a5d2bd5adc4643
 workflow-type: tm+mt
 source-wordcount: '1433'
 ht-degree: 0%
@@ -198,7 +198,6 @@ De `event` parameter geeft aan welke machtigingsgebeurtenis heeft plaatsgevonden
 
 ### F. Afmeldingsstroom {#logout_flow}
 
-1. Bellen [`logout()`](#$logout) om de gebruiker af te melden.\
-   AccessEnabler ontruimt alle caching waarden en tekenen die door de gebruiker voor huidige MVPD op alle aanvragers worden verkregen die login delen door Enig Teken. Na het ontruimen van het geheime voorgeheugen, richt AccessEnabler een servervraag om de server-zijzittingen schoon te maken.  Merk op dat aangezien de servervraag in SAML kon resulteren die aan IdP (dit staat voor de zittingsschoonmaak op de kant IdP toe) wordt omgeleid, deze vraag moet alle omleidingen volgen. Om deze reden, zal deze vraag binnen een controle WebView worden behandeld, onzichtbaar voor de gebruiker.
+1. Bellen [`logout()`](#$logout) om de gebruiker af te melden. AccessEnabler ontruimt alle caching waarden en tekenen die door de gebruiker voor huidige MVPD op alle aanvragers worden verkregen die login delen door Enig Teken. Na het ontruimen van het geheime voorgeheugen, richt AccessEnabler een servervraag om de server-zijzittingen schoon te maken.  Merk op dat aangezien de servervraag in SAML kon resulteren die aan IdP (dit staat voor de zittingsschoonmaak op de kant IdP toe) wordt omgeleid, deze vraag moet alle omleidingen volgen. Om deze reden, zal deze vraag binnen een controle WebView worden behandeld, onzichtbaar voor de gebruiker.
 
    **Opmerking:** De logout stroom verschilt van de authentificatiestroom in die zin dat de gebruiker niet wordt vereist om met WebView op om het even welke manier in wisselwerking te staan. Aldus is het mogelijk (en geadviseerd) om de controle WebView onzichtbaar (d.w.z.: verborgen) tijdens het logout proces te maken.
