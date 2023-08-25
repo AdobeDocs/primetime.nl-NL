@@ -2,7 +2,7 @@
 title: SSO via passieve verificatie
 description: SSO via passieve verificatie
 exl-id: ce45899f-6e94-4bb0-a2c1-51f03bd66d8d
-source-git-commit: bfc3ba55c99daba561255760baf273b6538a3c6e
+source-git-commit: 914ef0b9baaf5c51e6c26a280af9102ea0df5271
 workflow-type: tm+mt
 source-wordcount: '776'
 ht-degree: 0%
@@ -28,15 +28,15 @@ Zolang het token nog geldig is, worden de gebruikers direct weergegeven als zijn
 
 
 
-Het hier beschreven geval van bedrijfsgebruik is een zeer specifieke eis: dat de gebruiker ten minste één keer voor elke bezochte site moet worden geverifieerd. Dit laat MVPD toe om bedrijfsregels toe te passen verbonden aan de authN zitting die per netwerk kan variëren. Het is in strijd met de huidige TVE-belofte dat een gebruiker zich slechts eenmaal moet aanmelden en dat deze verificatie zal worden uitgevoerd op alle sites die deel uitmaken van het Adobe Primetime-verificatieconnecosysteem.
+Het hier beschreven geval voor zakelijk gebruik is een zeer specifieke vereiste: dat de gebruiker ten minste één keer voor elke bezochte site moet worden geverifieerd. Dit laat MVPD toe om bedrijfsregels toe te passen verbonden aan de authN zitting die per netwerk kan variëren. Het is in strijd met de huidige TVE-belofte dat een gebruiker zich slechts eenmaal moet aanmelden en dat deze verificatie zal worden uitgevoerd op alle sites die deel uitmaken van het Adobe Primetime-verificatieconnecosysteem.
 
 
 
-Om de bedrijfsregel te handhaven maar ook een goede gebruikerservaring te houden, vereist MVPD NIET een gebruiker om referentie informatie manueel te verstrekken. Wij kunnen van het eerder vastgestelde zittingskoekje profiteren en proberen om een automatische re-authentificatie te doen gebruikend de passieve stroom; vanuit het perspectief van de gebruiker wordt hij automatisch aangemeld.
+Om de bedrijfsregel te handhaven maar ook een goede gebruikerservaring te houden, vereist MVPD NIET een gebruiker om referentie informatie manueel te verstrekken. Wij kunnen van het eerder vastgestelde zittingskoekje profiteren en proberen om een automatische re-authentificatie te doen gebruikend de passieve stroom; van het gebruikersperspectief zal hij automatisch het programma worden geopend.
 
 
 
-Om deze op te lossen, hebben wij twee verschillende eigenschappen uitgevoerd: authentificatie per netwerk en passieve authentificatiesteun. MVPDs zal SAML passieve authN steunen waar zij eenvoudig een gebruiker opnieuw voor authentiek verklaren als een authN zitting op IdP bestaat, ongeacht op welke plaats die zitting werd gecreeerd.
+Om deze op te lossen, hebben wij 2 verschillende eigenschappen uitgevoerd: authentificatie per netwerk en passieve authentificatiesteun. MVPDs zal SAML passieve authN steunen waar zij eenvoudig een gebruiker opnieuw voor authentiek verklaren als een authN zitting op IdP bestaat, ongeacht op welke plaats die zitting werd gecreeerd.
 
 
 
@@ -58,7 +58,7 @@ De volgende stroom toont de basisauthentificatie per de eigenschap van het Netwe
 
 ## Passieve verificatie
 
-Het doel voor dit is om het herauthentificatieproces op de achtergrond te maken zonder de behoefte van volledige browser omleiding en de plukker die wordt getoond. Hierdoor wordt een gebruiker die van site A naar site B gaat, automatisch geverifieerd.
+Het doel voor dit is om het herauthentificatieproces op de achtergrond te maken zonder de behoefte van volledige browser omleiding en de plukker die wordt getoond. Als gevolg hiervan wordt een gebruiker die van site A naar site B gaat, automatisch geverifieerd.
 
 
 
@@ -101,7 +101,9 @@ SAML- verzoeksteekproef is hier een SAML- verzoeksteekproef voor de passieve aut
 </saml2p:AuthnRequest>
 ```
 
-De bedrijfsregels MVPDs hebben specifieke SSO scoping domeinbeperkingen. Bijvoorbeeld, slechts konden sommige domeinen door sommige MVPDs (SSO voor het zelfde media bedrijf maar niet over bedrijven worden toegestaan).
+## Bedrijfsvoorschriften
+
+MVPDs heeft specifieke SSO scoping domeinbeperkingen. Bijvoorbeeld, slechts konden sommige domeinen door sommige MVPDs (SSO voor het zelfde media bedrijf maar niet over bedrijven worden toegestaan).
 Sommige MVPDs zou verschillende authentificatieregels kunnen vereisen om worden afgedwongen. Bijvoorbeeld, zou MVPDs verschillende authentificatie TTLs per verschillende netwerken kunnen hebben. Ook, zou MVPDs op huis gebaseerde authentificatie voor sommige netwerken maar niet voor anderen kunnen toelaten (de ouderlijke zaken van het controlegebruik worden sterk vertegenwoordigd hier).
 
 
@@ -111,7 +113,9 @@ Dit kan worden verwezenlijkt door authentificatie per netwerk met passieve authN
 
 
 
-Bekende beperkingen iOS: vanwege de aard van de lokale iOS-opslag werken SSO-stromen niet op iOS voor toepassingen die door verschillende leveranciers zijn ontwikkeld. Raadpleeg deze technische notitie voor meer informatie over SSO in iOS 8 en hoger.
+## Bekende beperkingen
+
+iOS - vanwege de aard van de lokale opslag in iOS werken SSO-stromen niet op iOS voor toepassingen die door verschillende leveranciers zijn ontwikkeld. Raadpleeg deze technische notitie voor meer informatie over SSO in iOS 8 en hoger.
 
 
 <!--
