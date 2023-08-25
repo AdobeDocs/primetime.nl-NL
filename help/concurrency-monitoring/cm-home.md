@@ -1,7 +1,7 @@
 ---
 title: Inleiding Gelijktijdige bewaking
 description: Inleiding Gelijktijdige bewaking
-source-git-commit: ac0c15b951f305e29bb8fa0bd45aa2c53de6ad15
+source-git-commit: 9bc4298edb22d72131156bf92717284866728ec5
 workflow-type: tm+mt
 source-wordcount: '138'
 ht-degree: 0%
@@ -15,9 +15,9 @@ Meer informatie over [Doorverwijsprocedures](/help/concurrency-monitoring/cm-esc
 
 De Gelijktijdige Controle staat zowel Identiteit als Inhoudsleveranciers (MVPDs en Programmers) toe om grenzen op gelijktijdig gebruik over veelvoudige toepassingen (potentieel bezeten door veelvoudige partners) te bepalen en af te dwingen.
 
-**De API voor gelijktijdige bewaking wordt gehost op de volgende locatie:
+**De API voor gelijktijdige bewaking wordt gehost op de volgende locatie:**
 
-* V2.0: [API voor gelijktijdige bewaking](http://docs.adobeptime.io/cm-api-v2/)**
+* **V2.0: [API voor gelijktijdige bewaking](http://docs.adobeptime.io/cm-api-v2/)**
 
 Neem contact op met onze [Ondersteuningsteam](mailto:tve-support@adobe.com). Geef de volgende informatie op en ons team zal u graag helpen:
 
