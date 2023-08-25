@@ -2,9 +2,9 @@
 title: JavaScript SDK Cookbook
 description: JavaScript SDK Cookbook
 exl-id: d57f7a4a-ac77-4f3c-8008-0cccf8839f7c
-source-git-commit: 84a16ce775a0aab96ad954997c008b5265e69283
+source-git-commit: df9d2bbef16cceb6a7e594f9b81262d475a5b334
 workflow-type: tm+mt
-source-wordcount: '946'
+source-wordcount: '940'
 ht-degree: 0%
 
 ---
@@ -15,13 +15,13 @@ ht-degree: 0%
 >
 >De inhoud op deze pagina wordt alleen ter informatie verstrekt. Voor het gebruik van deze API is een huidige licentie van Adobe vereist. Ongeautoriseerd gebruik is niet toegestaan.
 
-## Inleiding (#intro)
+## Inleiding {#intro}
 
 In dit document worden de workflows beschreven die de toepassing op hoofdniveau van een programmeur implementeert voor een JavaScript-integratie met de Adobe Primetime-verificatieservice. De koppelingen naar de JavaScript API-naslaggids worden overal weergegeven.
 
 Let ook op het volgende: [Gerelateerde informatie](#related) bevat een koppeling naar een set JavaScript-codevoorbeelden.
 
-## Machtigingsstromen (#entitlement)
+## Machtigingsstromen {#entitlement}
 
 1. [Vereisten](#prereq)
 2. [Stroom opstarten](#startup)
@@ -34,7 +34,7 @@ Let ook op het volgende: [Gerelateerde informatie](#related) bevat een koppeling
 ![](assets/javascript-flows.png)
 
 
-## Vereisten (#prereq)
+## Vereisten {#prereq}
 
 **Afhankelijkheden:**
 
@@ -141,7 +141,7 @@ Bellen `getAuthentication()` om de authentificatiestatus OF te krijgen om de str
 
 De voltooiing van de authentificatiestroom wordt bereikt wanneer AccessEnabler roept `setAuthenticationStatus()`with `isAuthenticated == 1`.
 
-## 4. Vergunningsstroom (#authz)
+## 4. Vergunningsstroom {#authz}
 
 **Afhankelijkheden:**
 
@@ -164,7 +164,7 @@ Gebruik de token-verificateur van Media om de shortMediaToken te valideren die d
 - Als de validatie slaagt: geef de gewenste media voor de gebruiker weer/afspelen.
 - Als het ontbreekt: De token AuthZ was ongeldig, zou de mediaaanvraag moeten worden geweigerd en zou een foutbericht aan de gebruiker moeten worden getoond.
 
-## 5. Mediastroom weergeven (#logout)
+## 5. Mediastroom weergeven {#logout}
 
 - De gebruiker selecteert de media die u wilt weergeven.
    - Is media beveiligd?
@@ -173,7 +173,7 @@ Gebruik de token-verificateur van Media om de shortMediaToken te valideren die d
          - Als het medium niet is beveiligd, gaat u verder met de Media-doorloop weergeven.
          - Media afspelen
 
-## De bezoeker-id configureren (#bezoekerID)
+## De bezoeker-id configureren {#visitorID}
 
 Een [Experience Cloud bezoekerID](https://experienceleague.adobe.com/docs/id-service/using/home.html) waarde is vanuit analytisch oogpunt van groot belang . Zodra een EC bezoekerID-waarde is ingesteld, zal de SDK deze informatie samen met elke netwerkaanroep verzenden en zal de Adobe Primetime Authentication-service deze informatie verzamelen. Op deze manier kunt u de analysegegevens van de Adobe Primetime Authentication-service correleren met andere analytische rapporten die u van andere toepassingen of websites hebt. Informatie over het instellen van de EG-bezoekerID vindt u [hier](https://experienceleague.adobe.com/docs/id-service/using/home.html?lang=en).
 
