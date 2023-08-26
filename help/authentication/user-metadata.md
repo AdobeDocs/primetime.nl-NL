@@ -2,7 +2,7 @@
 title: Metagegevens gebruiker
 description: Metagegevens gebruiker
 exl-id: 3d7b6429-972f-4ccb-80fd-a99870a02f65
-source-git-commit: 84a16ce775a0aab96ad954997c008b5265e69283
+source-git-commit: 6779e20e37f1396402f36564e2c85d48d8c581a3
 workflow-type: tm+mt
 source-wordcount: '491'
 ht-degree: 0%
@@ -33,8 +33,6 @@ ht-degree: 0%
 
 Haal meta-gegevens terug die MVPD over de voor authentiek verklaarde gebruiker deelde.
 
-<div>
-
 
 | Endpoint | Geroepen  </br>Door | Invoer   </br>Params | HTTP  </br>Methode | Antwoord | HTTP  </br>Antwoord |
 | --- | --- | --- | --- | --- | --- |
@@ -54,7 +52,8 @@ Haal meta-gegevens terug die MVPD over de voor authentiek verklaarde gebruiker d
 > 
 >De informatie van gebruikersmeta-gegevens zou beschikbaar moeten zijn nadat de authentificatiestroom heeft voltooid, maar kan op de vergunningsstroom, afhankelijk van MVPD en op het meta-gegevenstype worden bijgewerkt.
 
-</br>
+
+
 
 ## Samplereactie {#sample-response}
 
@@ -87,6 +86,6 @@ Aan de basis van het object bevinden zich drie knooppunten:
 
 Bij een fout retourneert de server een XML- of JSON-object dat een gedetailleerd foutbericht opgeeft.
 
-Zie voor meer informatie [Metagegevens gebruiker](/help/authentication/user-metadata.md).
+Zie voor meer informatie [Metagegevens gebruiker](/help/authentication/user-metadata-feature.md).
 
 ### [Terug naar REST API Reference](/help/authentication/rest-api-reference.md).
