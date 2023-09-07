@@ -2,7 +2,7 @@
 title: Registratierecord retourneren
 description: Registratierecord retourneren
 exl-id: 7b9e63a2-59b6-4123-a19b-ee1f021219ea
-source-git-commit: 622767e06f3b25222286a09a41e6a0cecff1967a
+source-git-commit: 9e1d178e00c49cab7bcf9693c3b16234cb29ba4c
 workflow-type: tm+mt
 source-wordcount: '243'
 ht-degree: 0%
@@ -28,7 +28,7 @@ ht-degree: 0%
 * Productie - [api.auth.adobe.com](http://api.auth.adobe.com/)
 * Staging - [api.auth-staging.adobe.com](http://api.auth-staging.adobe.com/)
 
-</br>
+
 
 
 ## Beschrijving {#description}
@@ -37,7 +37,7 @@ Retourneert de registratie-code die de registratiecode UUID, de registratiecode 
 
 
 
-<div>
+
 
 
 | Endpoint | Geroepen  </br>Door | Invoer   </br>Params | HTTP  </br>Methode | Antwoord | HTTP  </br>Antwoord |
@@ -46,14 +46,16 @@ Retourneert de registratie-code die de registratiecode UUID, de registratiecode 
 
 {style="table-layout:auto"}
 
-</br>
+
+
 
 | Invoerparameter | Beschrijving |
 | --- | --- |
 | aanvrager | De programmeeraanvragerId waarvoor deze verrichting geldig is. |
 | registratiecode | De waarde van de registratiecode die op het Streaming Apparaat (dat in de authentificatiestroom moet worden ingegaan) zou worden getoond. |
 
-</br>
+
+
 
 ## XML-schema van reactie {#response-xml-schema}
 
