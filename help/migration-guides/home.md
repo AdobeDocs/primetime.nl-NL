@@ -3,9 +3,9 @@ title: Help bij Primetime-migratie
 description: Help bij Primetime-migratie
 copied-description: true
 exl-id: 1f3f1a5b-95c7-4d47-a36f-7ad934a7d49d
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 8d7a4f69a6400b0c3242d4cb0c5daac81f27db3a
 workflow-type: tm+mt
-source-wordcount: '208'
+source-wordcount: '200'
 ht-degree: 0%
 
 ---
@@ -36,4 +36,3 @@ Welkom bij de Help voor migratie en conversie voor Adobe Primetime. De documente
 
 * [Adobe Primetime DRM-forums](https://forums.adobe.com/community/adobe_access)
 
-* [Adobe Primetime Developer Resources](https://www.adobe.com/devnet/primetime.html)

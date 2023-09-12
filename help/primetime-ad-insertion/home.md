@@ -2,9 +2,9 @@
 title: Adobe Primetime Ad Insertion
 description: Adobe Primetime Ad Insertion Help
 exl-id: e758044e-a1f5-498a-a809-b6a351dfe8f0
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 8d7a4f69a6400b0c3242d4cb0c5daac81f27db3a
 workflow-type: tm+mt
-source-wordcount: '328'
+source-wordcount: '320'
 ht-degree: 0%
 
 ---
@@ -24,8 +24,8 @@ In deze handleiding ziet u hoe met Primetime Ad Insertion uitgevers hun adverten
 | [Aan de slag met Primetime Ad Insertion](getting-started/get-started-overview.md) | Verstrekt gedetailleerde informatie over hoe te beginnen met Primetime Ad Insertion |
 | [Aankondigingen Ad Insertion in primetime](announcements/overview.md) | Verstrekt de recentste artikelen en aankondigingen met betrekking tot Primetime Ad Insertion |
 | [Opmerkingen bij de release Primetime Ad Insertion](../release-notes/ptai-20x-release-notes.md) | Verstrekt versie-specifieke informatie, systeemvereisten, beperkingen, vaste kwesties, en bekende kwesties. |
-| [Just-in-Time en Transcoding](just-in-time-transcoding/jit-transcoding-overview.md) | Verklaart hoe het Net-in-tijd Coderen ervoor zorgt dat de incompative creatieve creatieven behoorlijk in uw stromen HLS/DASH terugspelen. |
-| [Primetime Ad Insertion - technische referentie](/help/primetime-ad-insertion/technical-reference/bootstrap-api.md) | Technische en Bootstrap API-referentie voor Primetime Ad Insertion. |
+| [Just-in-Time Add Transcoding](just-in-time-transcoding/jit-transcoding-overview.md) | Verklaart hoe het Net-in-tijd Coderen ervoor zorgt dat de incompative creatieve creatieven behoorlijk in uw stromen HLS/DASH terugspelen. |
+| [Primetime Ad Insertion - technische referentie](/help/primetime-ad-insertion/technical-reference/bootstrap-api.md) | API-naslaggids voor technische en Bootstrap voor Primetime Ad Insertion. |
 | [Controle en foutopsporing](/help/primetime-ad-insertion/performance-monitoring-debugging-reporting/performance-overview.md) | Geeft inzichten in de controle en het zuiveren hulpmiddelen van de Ad Insertion van Primetime. |
 
 ## Primetime-gebruikershandleidingen voor clientbibliotheken {#other-primetime-helps}
@@ -49,4 +49,3 @@ In deze handleiding ziet u hoe met Primetime Ad Insertion uitgevers hun adverten
 
 * [Adobe Primetime DRM-forums](https://forums.adobe.com/community/adobe_access)
 
-* [Adobe Primetime Developer Resources](https://www.adobe.com/devnet/primetime.html)

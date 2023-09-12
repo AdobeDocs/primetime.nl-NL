@@ -2,9 +2,9 @@
 title: Android SDK Cookbook
 description: Android SDK Cookbook
 exl-id: 7f66ab92-f52c-4dae-8016-c93464dd5254
-source-git-commit: 84a16ce775a0aab96ad954997c008b5265e69283
+source-git-commit: 9fcbb5285ffa85306c0e18337da9564ac862a6eb
 workflow-type: tm+mt
-source-wordcount: '1693'
+source-wordcount: '1685'
 ht-degree: 0%
 
 ---
@@ -155,7 +155,7 @@ De het netwerkactiviteit van AccessEnabler vindt in een verschillende draad plaa
 
    **Opmerking:** Op dit punt, heeft de gebruiker de kans om de authentificatiestroom te annuleren. Als dit voorkomt, is uw laag UI verantwoordelijk voor het informeren van AccessEnabler over deze gebeurtenis door te roepen `setSelectedProvider()` with `null` als parameter. Dit staat AccessEnabler toe om het interne staat op te schonen en de Stroom van de Authentificatie terug te stellen.
 
-1. Wanneer de gebruiker zich met succes heeft aangemeld, detecteert de toepassingslaag het laden van een aangepaste omleidings-URL (d.w.z.: [http://adobepass.android.app](http://adobepass.android.app/)). Deze aangepaste URL is in feite een ongeldige URL die niet is bedoeld voor het laden van de WebView. Het is een signaal dat de Stroom van de Authentificatie heeft voltooid, en dat WebView moet worden gesloten.
+1. Wanneer de gebruiker zich met succes heeft aangemeld, detecteert de toepassingslaag het laden van een aangepaste omleidings-URL (d.w.z.: `http://adobepass.android.app`). Deze aangepaste URL is in feite een ongeldige URL die niet is bedoeld voor het laden van de WebView. Het is een signaal dat de Stroom van de Authentificatie heeft voltooid, en dat WebView moet worden gesloten.
 
 1. Sluit de controle WebView en vraag `getAuthenticationToken()`, die AccessEnabler opdraagt om het authentificatietoken van de backendserver terug te winnen.
 
@@ -207,7 +207,7 @@ De het netwerkactiviteit van AccessEnabler vindt in een verschillende draad plaa
 
    a. Na het zelfde patroon zoals het authentificatiewerkschema, doet het domein AccessEnabler een verzoek aan de UI toepassingslaag (via`navigateToUrl()` callback) om een controle te creëren WebView en die controle te instrueren om URL van het logout eindpunt op de backendserver te laden.
 
-   b. Opnieuw, moet UI de activiteit van de controle controleren WebView en het moment ontdekken wanneer de controle, aangezien het door verscheidene omleidingen gaat, de douane URL van de toepassing laadt (d.w.z.: [http://adobepass.android.app/](http://adobepass.android.app/)). Zodra deze gebeurtenis plaatsvindt, sluit de UI toepassingslaag WebView en het logout proces volledig is.
+   b. Opnieuw, moet UI de activiteit van de controle controleren WebView en het moment ontdekken wanneer de controle, aangezien het door verscheidene omleidingen gaat, de douane URL van de toepassing laadt (d.w.z.: `http://adobepass.android.app/`). Zodra deze gebeurtenis plaatsvindt, sluit de UI toepassingslaag WebView en het logout proces volledig is.
 
    **Opmerking:** De logout stroom verschilt van de authentificatiestroom in die zin dat de gebruiker niet wordt vereist om met WebView op om het even welke manier in wisselwerking te staan. De toepassingslaag UI gebruikt een WebView om ervoor te zorgen dat alle omleidingen worden gevolgd. Aldus is het mogelijk (en geadviseerd) om de controle WebView onzichtbaar (d.w.z. verborgen) tijdens het logout proces te maken.
 

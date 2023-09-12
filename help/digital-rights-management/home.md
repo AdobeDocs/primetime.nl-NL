@@ -3,9 +3,9 @@ title: Help bij primetime-Digital Rights Management
 description: Help bij primetime-Digital Rights Management
 copied-description: true
 exl-id: 07e4b91d-fc64-480b-aa41-218f682e1d1a
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 8d7a4f69a6400b0c3242d4cb0c5daac81f27db3a
 workflow-type: tm+mt
-source-wordcount: '211'
+source-wordcount: '203'
 ht-degree: 0%
 
 ---
@@ -36,4 +36,3 @@ Welkom bij de Digital Rights Management Help voor Adobe Primetime. De documenten
 
 * [Adobe Primetime DRM-forums](https://forums.adobe.com/community/adobe_access)
 
-* [Adobe Primetime Developer Resources](https://www.adobe.com/devnet/primetime.html)
