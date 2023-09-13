@@ -3,9 +3,9 @@ title: UltraViolet-media en Adobe Primetime DRM
 description: UltraViolet-media en Adobe Primetime DRM
 copied-description: true
 exl-id: 03b01a29-e8e0-4fb5-a685-63a745a6417c
-source-git-commit: 8d7a4f69a6400b0c3242d4cb0c5daac81f27db3a
+source-git-commit: d49042b559ce6083eca0738517d04c490755a033
 workflow-type: tm+mt
-source-wordcount: '474'
+source-wordcount: '467'
 ht-degree: 0%
 
 ---
@@ -23,12 +23,12 @@ Het is eenvoudig om een UltraViolet-systeem samen met Adobe Primetime DRM in te 
 ![](assets/AdobeUV_web.png)
 
 1. De eigenaar van de inhoud codeert en verpakt de inhoud in CFF. De inhoud in het pakket wordt in licentie gegeven aan een detailhandelaar voor distributie.
-1. De detailhandelaar uploadt de inhoud aan een digitale dienstverlener, zoals CDN. De inhoud kan nu worden gedownload. Merk op dat sommige van deze rollen door één of meerdere bedrijven kunnen worden gespeeld.
+1. De detailhandelaar uploadt de inhoud aan een digitale dienstverlener, zoals CDN. De inhoud kan nu worden gedownload. Sommige van deze rollen kunnen door één of meerdere bedrijven worden gespeeld.
 
-   De eindgebruiker heeft een apparaat dat Adobe AIR ondersteunt. Daarnaast moet de gebruiker een toepassing installeren die compatibel is met UltraViolet. De toepassing bevat de code die nodig is om de CFF te parseren en te presenteren voor gebruik door de runtime. Alle gevoelige cryptografische verrichtingen worden behandeld in veilige runtime.
-1. De toepassing kan een domein teweegbrengen toetreedt voor het apparaat, dat met de coördinator in wisselwerking staat. De coördinator handhaaft een rechtenlocker, een gebruikersgegevensbestand en domeinen. De het domeinmanager van de coördinator wordt gebouwd gebruikend Primetime DRM SDK om Primetime DRM-Specifieke domein uit te voeren toetreedt/verlaat verrichtingen.
+   De eindgebruiker heeft een apparaat dat Adobe AIR ondersteunt. Bovendien moet de gebruiker een toepassing installeren die compatibel is met UltraViolet. De toepassing bevat de code die nodig is om de CFF te parseren en te presenteren voor gebruik door de runtime. Alle gevoelige cryptografische verrichtingen worden behandeld in veilige runtime.
+1. De toepassing kan een domein teweegbrengen toetreedt voor het apparaat, dat met de coördinator in wisselwerking staat. De coördinator houdt een rechtenlocker, een gebruikersgegevensbestand en domeinen bij. De domeinmanager van de coördinator wordt gebouwd gebruikend Primetime DRM SDK om Primetime DRM-Specifieke domein uit te voeren toetreedt/verlaat verrichtingen.
 1. De gebruiker kan de toepassing dan gebruiken om een video te selecteren die hij of zij van de detailhandelaar wil verkrijgen. De detailhandelaar verstrekt typisch een Webportaal en behandelt al bedrijfslogica.
-1. De detailhandelaar werkt dan met de coördinator in wisselwerking om een rechtenteken toe te voegen. De detailhandelaar leidt dan het verzoek aan de dienstverlener voor de daadwerkelijke inhouddownload opnieuw.
+1. De detailhandelaar communiceert dan met de coördinator om een rechtentoken toe te voegen. De detailhandelaar leidt dan het verzoek aan de dienstverlener voor de daadwerkelijke inhouddownload opnieuw.
 1. Als het apparaat nog geen licentie voor de inhoud heeft, wordt een licentieaanvraag geactiveerd met behulp van de CFF. De aanvraag bevat doorgaans een domeincertificaat, gebruikersgegevens en informatie over de toepassing. De serviceprovider beheert een Primetime DRM-licentieserver (ontwikkeld met de Primetime DRM SDK) die voldoet aan de UltraViolet-specificaties.
 1. De UltraViolet bedrijfslogica van de dienstverlener wisselt met de coördinator in zoals nodig om het aangewezen rechtenteken terug te winnen om te bepalen of een inhoudsvergunning zou moeten worden uitgegeven.
 

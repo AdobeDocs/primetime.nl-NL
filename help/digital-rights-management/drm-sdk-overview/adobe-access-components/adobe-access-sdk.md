@@ -1,17 +1,17 @@
 ---
-description: De belangrijkste componenten van Primetime DRM bestaan uit een Java SDK en de Flash Player- en Adobe AIR-clientruntimeomgevingen.
-title: Java SDK, Flash Player en Adobe AIR-client
+description: De belangrijkste componenten van Primetime DRM bestaan uit een Java&trade; SDK en de Flash Player- en Adobe AIR-clientruntimeomgevingen.
+title: Java&trade; SDK, Flash Player en Adobe AIR-client
 exl-id: 01bb53dc-211d-4ec0-9e06-3bdbca01a071
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: d49042b559ce6083eca0738517d04c490755a033
 workflow-type: tm+mt
-source-wordcount: '128'
+source-wordcount: '132'
 ht-degree: 0%
 
 ---
 
 # Overzicht {#drm-components-overview}
 
-De belangrijkste componenten van Primetime DRM bestaan uit een Java SDK en de Flash Player- en Adobe AIR-clientruntimeomgevingen.
+De belangrijkste onderdelen van Primetime DRM bestaan uit een Java™ SDK en de Flash Player- en Adobe AIR-clientruntimeomgevingen.
 
 Zie De SDK instellen in voor meer informatie over het instellen van de SDK. *De Adobe Primetime DRM SDK gebruiken voor het beveiligen van inhoud.*
 
