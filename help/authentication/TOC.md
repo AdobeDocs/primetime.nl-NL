@@ -4,9 +4,9 @@ audience: end-user
 feature: Authentication
 user-guide-title: Primetime-verificatie
 user-guide-description: De Authentificatie van Primetime is een machtigingsoplossing voor TV overal, die een modulair kader verstrekt om te bepalen of iemand die om toegang tot een middel verzoekt tot het recht heeft.
-source-git-commit: fbc0e710d205532d268213ca0bdc81449e9c9835
+source-git-commit: a294b5628ec7184491cf8b67a60fd6cf9410c431
 workflow-type: tm+mt
-source-wordcount: '749'
+source-wordcount: '750'
 ht-degree: 0%
 
 ---
@@ -163,7 +163,7 @@ ht-degree: 0%
    + [Opmerkingen bij de release Primetime Authentication 2.62.1](auth-rn-2621.md)
    + [Opmerkingen bij de release Primetime Authentication iOS / tvOS 3.7.0](authn-rn-ios-tvos-370.md)
    + [Opmerkingen bij de release Primetime Authentication iOS / tvOS 3.8.1](authn-rn-ios-tvos-381.md)
-   + [Opmerkingen bij de release Primetime Authentication Android 3.7.3](authn-rn-android-373.md)
+   + [Opmerkingen bij de release Adobe Pass Authentication Android 3.7.3](authn-rn-android-373.md)
 + Technische notities {#tech-notes}
    + Primetime-verificatie-SDK&#39;s {#primetime-authentication-sdks}
       + [Certificaten Vragen en antwoorden](certificates-qa.md)
