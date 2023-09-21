@@ -1,8 +1,7 @@
 ---
 description: Het gedrag van het afspelen van media wordt beïnvloed door zoeken, pauzeren, vooruitspoelen of terugspoelen en door advertenties.
 title: Standaardgedrag en aangepast afspeelgedrag met advertenties
-exl-id: 50e2d3ea-77e0-494d-b558-55ea1798ce27
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '656'
 ht-degree: 0%
@@ -23,10 +22,10 @@ Hier volgt het afspeelgedrag voor live/lineaire inhoud:
 
 * Als u het afspelen hervat na een pauze, wordt de inhoud afgespeeld die op het moment van de pauze is gebufferd.
 
-   Als de hervattende positie zich nog in de playbackwaaier bevindt, zou de playback ononderbroken moeten zijn. Anders springt TVSDK naar het nieuwe live punt. U kunt ook een zoekbewerking uitvoeren en een ander afspeelpunt selecteren.
+  Als de hervattende positie zich nog in de playbackwaaier bevindt, zou de playback ononderbroken moeten zijn. Anders springt TVSDK naar het nieuwe live punt. U kunt ook een zoekbewerking uitvoeren en een ander afspeelpunt selecteren.
 * TVSDK verhelpt advertenties tussen cues na de positie waarop de toepassing live wordt afgespeeld.
 
-   Het afspelen begint nadat het eerste actiepunt is opgelost. De standaardwaarde voor het invoeren van live afspelen is het live punt van de client, maar u kunt een andere positie kiezen. Alle aanwijzingen vóór de eerste positie worden opgelost nadat de toepassing een zoekactie uitvoert in het DVR-venster.
+  Het afspelen begint nadat het eerste actiepunt is opgelost. De standaardwaarde voor het invoeren van live afspelen is het live punt van de client, maar u kunt een andere positie kiezen. Alle aanwijzingen vóór de eerste positie worden opgelost nadat de toepassing een zoekactie uitvoert in het DVR-venster.
 
 In de volgende tabel wordt beschreven hoe met TVSDK advertenties en afbrekingen tijdens het afspelen worden verwerkt:
 
@@ -61,7 +60,7 @@ In de volgende tabel wordt beschreven hoe met TVSDK advertenties en afbrekingen 
   <tr> 
    <td colname="col1"> Uw toepassing zoekt verder in een advertentie-einde. </td> 
    <td colname="col2"> Hiermee wordt afgespeeld vanaf het begin van de advertentie waarin de zoekopdracht is beëindigd. </td> 
-   <td colname="col3">Geef een ander advertentiebeleid op voor het advertentieeinde en voor de specifieke advertentie waar de zoekactie is geëindigd door gebruik te maken van <span class="codeph"> selectPolicyForSeekIntoAd</span>. </td> 
+   <td colname="col3">Geef een ander advertentiebeleid op voor het advertentieeinde en voor de specifieke advertentie waar de zoekactie is geëindigd met gebruik <span class="codeph"> selectPolicyForSeekIntoAd</span>. </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Uw toepassing zoekt terug naar een advertentie-einde. </td> 
@@ -71,7 +70,7 @@ In de volgende tabel wordt beschreven hoe met TVSDK advertenties en afbrekingen 
   <tr> 
    <td colname="col1"> Uw toepassing zoekt voorwaarts of achterwaarts over gecontroleerde advertentie(s) naar de hoofdinhoud. </td> 
    <td colname="col2"> Als de laatste overgeslagen advertentie-onderbreking reeds is gecontroleerd, slaat aan gebruiker-geselecteerde vraagpositie over. </td> 
-   <td colname="col3">Selecteer welke overgeslagen onderbrekingen om te spelen gebruiken <span class="codeph"> selectAdBreaksToPlay</span> en bepalen welke onderbrekingen al zijn gecontroleerd met <span class="codeph"> AdBreak.isWatched</span> . <p>Belangrijk: Standaard markeert TVSDK een advertentie-einde zoals onmiddellijk na het invoeren van de eerste advertentie in het ad-einde wordt gecontroleerd. </p> </td> 
+   <td colname="col3">Selecteer welke overgeslagen onderbrekingen om te spelen gebruiken <span class="codeph"> selectAdBreaksToPlay</span> en bepalen welke onderbrekingen al zijn gecontroleerd met <span class="codeph"> AdBreak.isWatched</span> . <p>Belangrijk: TVSDK markeert standaard een advertentie-einde zoals onmiddellijk na het invoeren van de eerste advertentie in het ad-einde wordt gecontroleerd. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Uw toepassing zoekt voorwaarts of achteruit over een of meer advertenties en stapt af in een gecontroleerd advertentieeinde. </td> 

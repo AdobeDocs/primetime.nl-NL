@@ -1,8 +1,7 @@
 ---
 title: Gebruikersnaam
 description: Gebruikersnaam
-exl-id: 813a8501-db72-4850-a387-c8db6120db80
-source-git-commit: bfc3ba55c99daba561255760baf273b6538a3c6e
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '602'
 ht-degree: 0%
@@ -25,12 +24,12 @@ Hier volgen de verschillende manieren waarop de gebruikersnaam wordt weergegeven
 | --- | --- | --- | --- | --- |
 | sendTrackingData() GUID-eigenschap | Tracering/analyse | Ja | Nee | - De MVPD-gebruikersnaam, gehasht door Adobe. De gebruiker-id kan niet worden teruggezet naar de bron van de MVPD. </br> </br> - Deze vorm van identiteitskaart wordt niet digitaal ondertekend, zodat is het niet veilig voor fraudepreventie. Het is echter goed genoeg voor analyses.  </br> </br> - Deze vorm van de Gebruiker - identiteitskaart wordt verstrekt cliënt-kant op alle gebeurtenissen die de authentificatie van Adobe Primetime in de stroom AuthN/AuthZ produceert. |
 | Het bezit sessionGUID van het token van korte media | Fraude bijhouden bij gelijktijdig gebruik | Ja | Ja | - Dit is hetzelfde als de gebruikersnaam via sendTrackingData(), maar deze is digitaal ondertekend om de integriteit ervan te beschermen en is goed genoeg om te worden gebruikt voor het bijhouden van fraude. </br> </br> - Het is bedoeld om op de server te worden verwerkt nadat u onze validatiebibliotheek hebt gebruikt en kan worden geanalyseerd op fraudepatronen voordat de videostream aan de client wordt vrijgegeven.  Het uitvoeren van om het even welk van deze taken is aan de Programmer. |
-| getMetadata(), eigenschap userID | Account link, fraude-onderzoek met MVPD | Nee | Nee | - This property allows Adobe om de daadwerkelijke bronMVPD Gebruiker - identiteitskaart aan Programmer bloot te stellen. </br> </br> - In Adobe configuratie kan het niet als gecodeerde (afhankelijk van de voorkeur MVPD) worden geplaatst. Als het gecodeerd is, wordt het versleuteld met de openbare sleutel van het certificaat van de programmeur dat aan Adobe is verstrekt, zodat het niet in duidelijke taal aan de client wordt getoond. </br> </br> - Dit geeft de programmeur de daadwerkelijke identiteitskaart van de Gebruiker van MVPD, zodat is het iets dat voor rekening het verbinden of fraudeonderzoek direct met MVPD kan worden gebruikt. |
+| getMetadata(), eigenschap userID | Account link, fraude-onderzoek met MVPD | Nee | Nee | - Dit bezit staat Adobe toe om de daadwerkelijke bronMVPD Gebruiker - identiteitskaart aan de Programmeur bloot te stellen. </br> </br> - In de configuratie van de Adobe kan deze al dan niet worden ingesteld als gecodeerd (afhankelijk van de MVPD-voorkeur). Als het gecodeerd is, wordt het versleuteld met de openbare sleutel van het certificaat van de programmeur dat aan de Adobe wordt verstrekt, zodat het niet in duidelijke taal aan de client wordt getoond. </br> </br> - Dit geeft de programmeur de daadwerkelijke identiteitskaart van de Gebruiker van MVPD, zodat is het iets dat voor rekening het verbinden of fraudeonderzoek direct met MVPD kan worden gebruikt. |
 
 
 **Conclusie**
 
-* In het algemeen biedt de MVPD een blijvende unieke id <u>en geeft deze door aan Adobe bij geslaagde verificatie</u>. Het is over het algemeen verenigbaar over alle netwerken. De uitzondering is Comcast MVPD, die een verschillende Gebruiker - identiteitskaart voor elk kanaal verstrekt.
+* In het algemeen biedt de MVPD een blijvende unieke id <u>en geeft het door aan Adobe op succesvolle authentificatie</u>. Het is over het algemeen verenigbaar over alle netwerken. De uitzondering is Comcast MVPD, die een verschillende Gebruiker - identiteitskaart voor elk kanaal verstrekt.
 
 * De MVPD-gebruikersnaam bevat geen PII en is GEEN rekeningnummer. Het hoeft niet in gecodeerde vorm te worden aangeboden, aangezien we met alle MVPD&#39;s hebben gevalideerd die geen PII worden verzonden.
 

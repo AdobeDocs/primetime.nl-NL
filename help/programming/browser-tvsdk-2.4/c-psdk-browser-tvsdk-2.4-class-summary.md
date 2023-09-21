@@ -1,8 +1,7 @@
 ---
-description: U kunt de API voor primetime Player gebruiken om het gedrag van de speler aan te passen.
+description: U kunt de API van de Speler van de Primetime gebruiken om het gedrag van de speler aan te passen.
 title: Overzicht van de klasse Primetime Player
-exl-id: c081df21-8b21-4604-abf5-fdbf9d92a046
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '63'
 ht-degree: 0%
@@ -11,6 +10,6 @@ ht-degree: 0%
 
 # Overzicht van de klasse Primetime Player {#primetime-player-classes-summary}
 
-U kunt de API voor primetime Player gebruiken om het gedrag van de speler aan te passen.
+U kunt de API van de Speler van de Primetime gebruiken om het gedrag van de speler aan te passen.
 
 Ga voor de volledige API-documentatie voor Browser TVSDK naar de [Adobe Primetime API-verwijzingen](https://help.adobe.com/en_US/primetime/api/index.html#api-Adobe_Primetime_API_References).

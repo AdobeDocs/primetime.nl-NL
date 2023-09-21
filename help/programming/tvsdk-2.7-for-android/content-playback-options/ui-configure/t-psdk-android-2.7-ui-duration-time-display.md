@@ -1,8 +1,7 @@
 ---
 description: U kunt TVSDK gebruiken om informatie op te halen over de positie van de speler in de media en deze weer te geven op de zoekbalk.
 title: De duur, de huidige tijd en de resterende tijd van de video weergeven
-exl-id: d9832f19-c2d1-413a-b094-091052912c96
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '365'
 ht-degree: 0%
@@ -34,7 +33,7 @@ U kunt TVSDK gebruiken om informatie op te halen over de positie van de speler i
       * Bij VOD begint het bereik altijd met nul en is de eindwaarde gelijk aan de som van de duur van de hoofdinhoud en de duur van de extra inhoud in de stream (advertenties).
       * Voor een lineair/actief-element vertegenwoordigt het bereik van het afspeelvenster. Dit bereik verandert tijdens het afspelen.
 
-         TVSDK roept de `ITEM_Updated` callback om erop te wijzen dat het media punt werd verfrist en dat zijn attributen, met inbegrip van de playbackwaaier, werden bijgewerkt.
+        TVSDK roept de `ITEM_Updated` callback om erop te wijzen dat het media punt werd verfrist en dat zijn attributen, met inbegrip van de playbackwaaier, werden bijgewerkt.
 
 1. Gebruik de methoden die beschikbaar zijn op `MediaPlayer` en op de `SeekBar` in de Android-SDK om de parameters voor de zoekbalk in te stellen.
 
@@ -76,7 +75,7 @@ U kunt TVSDK gebruiken om informatie op te halen over de positie van de speler i
 
    ![](assets/seek-bar.jpg){width="477.000pt"}
 
-   In het volgende voorbeeld wordt het `Clock.java` helper, klasse, beschikbaar in `ReferencePlayer`, als de timer. Deze klasse stelt een gebeurtenislistener in en activeert een `onTick` elke seconde of een andere time-outwaarde die u kunt opgeven.
+   In het volgende voorbeeld wordt het `Clock.java` helperklasse, beschikbaar in `ReferencePlayer`, als de timer. Deze klasse stelt een gebeurtenislistener in en activeert een `onTick` elke seconde of een andere time-outwaarde die u kunt opgeven.
 
    ```java
    playbackClock = new Clock(PLAYBACK_CLOCK, CLOCK_TIMER); 

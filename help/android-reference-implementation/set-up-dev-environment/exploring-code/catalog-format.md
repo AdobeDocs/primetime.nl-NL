@@ -1,8 +1,7 @@
 ---
 description: De Primetime-referentie-implementatie gebruikt een op JSON gebaseerde feed-indeling voor reacties. Dit formaat wordt geparseerd gebruikend een implementatie van de interface IFeedItemAdapter.
 title: Catalogusindeling
-exl-id: faaeb647-9c01-4290-be1e-2b8461c8ad27
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '620'
 ht-degree: 0%
@@ -137,7 +136,7 @@ Het volgende codeblok definieert het **Object metadata**:
 | Eigenschap | Beschrijving |
 |--- |--- |
 | advertentie | Toegevoegde metagegevens. |
-| type | De waarde kan zijn Primetime Advertenties, Directe Advertentiemarkeringen, of de Markeringen van de Aangepaste Advertentie. <br/><br/>De PSDK biedt ingebouwde ondersteuning voor de volgende typen metagegevens: Aan controles gerelateerde metagegevens voor Primetime en Bezig met bedienen (Primetime-advertenties), directe ad-break met advertentiepunten (Direct Ad Breaks) en aangepaste ad-markeertekens die de TimeRange voor elke advertentiemarkering (Aangepaste advertentiemarkeringen) bieden. Elk type heeft ingebouwde AdProvider in PSDK die de meta-gegevens verwerkt.  <br/><br/>De JSON-indeling voor elk van deze zijn hieronder gedefinieerd. |
-| details | Bevat de kenmerken voor metagegevens van de advertentie. Beide typen metagegevens hebben hun eigen set kenmerken die hieronder worden gedefinieerd. Voor de ingebouwde types, bepalen de inbegrepen attributen de gegevens die door PSDK voor dat type worden verwacht. |
-| aanspraak | Metagegevens met betrekking tot rechten |
+| type | De waarde kan zijn Primetime Advertenties, Directe Advertentietekens, of de Markeringen van de Aangepaste Advertentie. <br/><br/>PSDK verstrekt ingebouwde steun voor de volgende types van meta-gegevens: Auditude-verwante meta-gegevens voor Primetime en het dienen (Primetime Advertentie), directe ad-einden met advertenties (Directe Ad Break), en douane ad tellers die de TimeRange voor elke advertentiemarkering (de Tellers van de Aangepaste Advertentie) verstrekken. Elk type heeft ingebouwde AdProvider in PSDK die de meta-gegevens verwerkt.  <br/><br/>De JSON-indeling voor elk van deze zijn hieronder gedefinieerd. |
+| details | Bevat de kenmerken van de metagegevens van de advertentie. Beide typen metagegevens hebben hun eigen set kenmerken die hieronder worden gedefinieerd. Voor de ingebouwde types, bepalen de inbegrepen attributen de gegevens die door PSDK voor dat type worden verwacht. |
+| toeschrijven | Metagegevens met betrekking tot rechten |
 | id | Media resource-id die wordt gebruikt voor autorisatieaanvragen tegen de betaaltelevisieomroep van Adobe Primetime. De id kan een tekstreeks of een met HTML gecodeerde mRSS-tekenreeks zijn. Alle media-inhoud waarvoor toestemming vereist is, moet een geldige bron-id bevatten. |

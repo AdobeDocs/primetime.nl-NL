@@ -1,8 +1,7 @@
 ---
 description: HLS- en DASH-streams bieden verschillende bitsnelheidcoderingen (profielen) voor dezelfde korte videoprand. TVSDK kan het kwaliteitsniveau voor elke uitbarsting selecteren op basis van de beschikbare bandbreedte.
 title: Adaptieve bitsnelheden (ABR) voor videokwaliteit
-exl-id: 97862cf7-7315-4ca6-a2b4-f9b98047edd9
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '542'
 ht-degree: 0%
@@ -82,7 +81,7 @@ Houd rekening met het volgende:
 
 * De toepassing moet de `abrControlParameters` eigenschap op `PTMediaPlayer` voordat u een `PTMediaPlayerItem` De eerste en minimale bitsnelheidsinstellingen worden van kracht.
 
-   Nadat het afspelen van inhoud is gestart, heeft het instellen van een nieuwe instantie alleen invloed op de instelling van de maximale bitsnelheid.
+  Nadat het afspelen van inhoud is gestart, heeft het instellen van een nieuwe instantie alleen invloed op de instelling van de maximale bitsnelheid.
 
-* Als u de instelling voor de maximale bitsnelheid tijdens het afspelen wilt bijwerken, maakt u een nieuwe `PTABRControlParameters` en stelt deze in op de spelerinstantie.
+* Als u de maximale bitsnelheid tijdens het afspelen wilt bijwerken, maakt u een nieuwe `PTABRControlParameters` en stelt deze in op de spelerinstantie.
 * U kunt de instelling voor de maximale bitsnelheid alleen bijwerken tijdens het afspelen in iOS 8.0 en hoger. Voor eerdere versies wordt `maxBitrate` waarde die is ingesteld voordat het afspelen van inhoud is gestart, wordt gebruikt.

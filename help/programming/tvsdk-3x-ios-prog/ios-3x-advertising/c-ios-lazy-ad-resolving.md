@@ -1,8 +1,7 @@
 ---
 description: Oplossen en laden van advertenties kan een onaanvaardbare wachttijd veroorzaken voor een gebruiker die wacht tot het afspelen is gestart. Met de functie Oplossen van laden en neerzetten kunt u deze opstartvertraging verminderen. Advertenties kunnen nu met een opgegeven interval worden opgelost vóór de positie van het ad-einde. Dit wordt bereikt door gebruik te maken van een aanpak met twee spelers.
 title: Just-in-Time en oplossing
-exl-id: dd5342c5-9f34-4778-a47a-91ff2eb03155
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '439'
 ht-degree: 0%
@@ -27,18 +26,17 @@ De speler gebruikt de URL&#39;s in het manifest om de advertentie-inhoud (creati
 1. TVSDK *oplost en laadt* alle pre-roladvertenties, verplaatst de speler naar de status PREPARED en begint de inhoud af te spelen.
 1. TVSDK *oplossen* elke advertentie wordt vóór de positie van de advertentie onderbroken op basis van de waarde die is gedefinieerd in `PTAdMetadata::delayAdLoadingTolerance`.
 
-Bijvoorbeeld standaard `delayAdLoadingTolerance` wordt ingesteld op 5 seconden. Als een AdBreak om 3:00 wordt geplaatst te worden gespeeld, zal het om 2 worden opgelost:55:00 Mogelijk wilt u deze waarde verhogen als u denkt dat de resolutie van uw advertentie langer dan 5 seconden duurt.
+Bijvoorbeeld standaard `delayAdLoadingTolerance` wordt ingesteld op 5 seconden. Als een AdBreak om 3:00 wordt geplaatst te worden gespeeld, zal het om 2 worden opgelost:55:00. Mogelijk wilt u deze waarde verhogen als u denkt dat de resolutie van uw advertentie langer dan 5 seconden duurt.
 
 >[!IMPORTANT]
 >
->**Factoren die in overweging moeten worden genomen met Lazy Ad Resolving:**
+>**Factoren die in overweging moeten worden genomen met Lazy Ad die:**
 >* Lazy Ad Resolving wordt slechts gesteund voor stromen VOD slechts met wijzen SERVER_MAP en signalerende wijze.
 >* Lazy Ad Resolving is niet standaard ingeschakeld. U moet instellen `PTAdMetadata::delayAdLoading` = JA om het toe te laten.
 >* Lazy Ad Resolving is incompatibel met de functie Instant on. Voor meer informatie over Instant On, zie [Direct aan](../../tvsdk-3x-ios-prog/ios-3x-instant-on-ios.md).
 >* Beeld-in-beeld-wijze wordt niet gesteund met Lazy en het Oplossen. Schakel de modus Beeld-in-beeld uit als u Oplossen van wazig toevoegen inschakelt.
->* Lazy en resolutie hebben geen invloed op pre-roll advertenties.
+>* Lazy ad resolution does not have pre-roll ads.
 >
-
 **Lozy en oplossen inschakelen**
 
 U kunt de functie Oplossen via Lazy en laden in- of uitschakelen via het bestaande mechanisme voor Lazy en oplossen (de functie Oplossen via Lazy en oplossen is standaard uitgeschakeld).

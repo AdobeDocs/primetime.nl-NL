@@ -1,8 +1,7 @@
 ---
-description: We gebruiken zowel de Bento4-pakketsoftware als de Adobe offline-pakketsoftware om gecodeerde DASH-inhoud te ontwerpen. Bento4 neemt als invoer niet-gecodeerde MP4-inhoud.
+description: We gebruiken zowel de Bento4-pakketsoftware als de Adobe offline pakketsoftware om gecodeerde DASH-inhoud te ontwerpen. Bento4 neemt als invoer niet-gecodeerde MP4-inhoud.
 title: Verpak uw inhoud met Bento4
-exl-id: c873eaf6-c738-4f95-a900-a8aecb03754d
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '264'
 ht-degree: 0%
@@ -11,7 +10,7 @@ ht-degree: 0%
 
 # Inhoud verpakken voor Windows en PlayReady {#package-for-widevine}
 
-We gebruiken zowel de Bento4-pakketsoftware als de Adobe offline-pakketsoftware om gecodeerde DASH-inhoud te ontwerpen. Bento4 neemt als invoer niet-gecodeerde MP4-inhoud.
+We gebruiken zowel de Bento4-pakketsoftware als de Adobe offline pakketsoftware om gecodeerde DASH-inhoud te ontwerpen. Bento4 neemt als invoer niet-gecodeerde MP4-inhoud.
 
 ## Verpak uw inhoud met Bento4{#package-your-content-with-bento}
 
@@ -70,7 +69,7 @@ De waarde voor `-playready-header` is voor PlayReady-licentieverwerving.
 
 ## Inhoud verpakken met Adobe Offline Packager {#package-your-content-with-adobe-offline-packager}
 
-Adobe Offline Packager gebruikt als invoer van niet-gecodeerde MP4-inhoud.
+Adobe Offline Packager neemt als invoer niet-gecodeerde MP4-inhoud.
 
 **Adobe Offline Packager aanroepen**
 

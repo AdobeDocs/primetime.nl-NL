@@ -1,8 +1,7 @@
 ---
 description: De MediaResource-klasse vertegenwoordigt de inhoud die door de MediaPlayer-instantie moet worden geladen.
 title: Een mediabron maken
-exl-id: 20515e90-cbe4-4945-823a-fe882ed460db
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '259'
 ht-degree: 0%
@@ -39,7 +38,7 @@ De MediaResource-klasse vertegenwoordigt de inhoud die door de MediaPlayer-insta
       </tr> 
       <tr> 
       <td colname="col1"><span class="codeph"> metagegevens</span> </td> 
-      <td colname="col2"> <p>Een instantie van de <span class="codeph"> Metagegevens</span> klasse, die aangepaste informatie kan bevatten over de inhoud die moet worden geladen. </p> <p>Voorbeelden van inhoud zijn alternatieve inhoud of voegt inhoud toe die in de hoofdinhoud wordt geplaatst. Als u reclame gebruikt, instellen <span class="codeph"> AuditudeSettings</span> voordat u deze constructor gebruikt. Zie voor meer informatie <a href="../../../tvsdk-1.4-for-desktop-hls/ad-insertion/ad-insertion-metadata/c-psdk-dhls-1.4-ad-insertion-metadata.md" format="dita" scope="local"> Ad Insertion-metagegevens</a>. </p> </td> 
+      <td colname="col2"> <p>Een instantie van de <span class="codeph"> Metagegevens</span> klasse, die aangepaste informatie over de te laden inhoud kan bevatten. </p> <p>Voorbeelden van inhoud zijn alternatieve inhoud of voegt inhoud toe die in de hoofdinhoud wordt geplaatst. Als u reclame gebruikt, instellen <span class="codeph"> AuditudeSettings</span> voordat u deze constructor gebruikt. Zie voor meer informatie <a href="../../../tvsdk-1.4-for-desktop-hls/ad-insertion/ad-insertion-metadata/c-psdk-dhls-1.4-ad-insertion-metadata.md" format="dita" scope="local"> Ad Insertion-metagegevens</a>. </p> </td> 
       </tr> 
     </tbody> 
    </table>
@@ -50,7 +49,7 @@ De MediaResource-klasse vertegenwoordigt de inhoud die door de MediaPlayer-insta
    >
    >Voor MP4-video-on-demand (VOD)-inhoud biedt TVSDK geen ondersteuning voor truc&#39;s, ABR-streaming (Adaptive bit rate), invoeging, Closed Captions of DRM.
 
-   De volgende code maakt een `MediaResource` instantie:
+   De volgende code maakt een `MediaResource` -instantie:
 
    ```
    // To do: Create metadata here
@@ -68,5 +67,5 @@ De MediaResource-klasse vertegenwoordigt de inhoud die door de MediaPlayer-insta
 
    * Uw MediaPlayer-instantie.
 
-      Zie voor meer informatie [Laad een media middel in Mediaplayer](../../../tvsdk-1.4-for-desktop-hls/t-psdk-dhls-1.4-configure/c-psdk-dhls-1.4-mediaplayer-initialize-for-video/t-psdk-dhls-1.4-media-resource-load.md).
+     Zie voor meer informatie [Laad een media middel in Mediaplayer](../../../tvsdk-1.4-for-desktop-hls/t-psdk-dhls-1.4-configure/c-psdk-dhls-1.4-mediaplayer-initialize-for-video/t-psdk-dhls-1.4-media-resource-load.md).
    * A `MediaPlayerItemLoader` Zie voor meer informatie [Laad een media middel in Mediaplayer](../../../tvsdk-1.4-for-desktop-hls/t-psdk-dhls-1.4-configure/c-psdk-dhls-1.4-mediaplayer-initialize-for-video/t-psdk-dhls-1.4-media-resource-load.md).

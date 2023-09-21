@@ -1,15 +1,14 @@
 ---
 description: Uw toepassing kan de activiteit in uw speler en de veranderende status van de speler controleren door naar de gebeurtenissen te luisteren die door TVSDK worden verzonden.
 title: Overzicht van gebeurtenissen in de primetime-speler
-exl-id: 3912f140-1600-41fb-9dc4-306646b7cd85
-source-git-commit: 59f7f8aa82be59c4012ee80648032600590bc4e1
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '567'
 ht-degree: 0%
 
 ---
 
-# Overzicht van gebeurtenissen in de primaire speler {#primetime-player-events-summary}
+# Overzicht van gebeurtenissen in de primetime-speler {#primetime-player-events-summary}
 
 Uw toepassing kan de activiteit in uw speler en de veranderende status van de speler controleren door naar de gebeurtenissen te luisteren die door TVSDK worden verzonden.
 

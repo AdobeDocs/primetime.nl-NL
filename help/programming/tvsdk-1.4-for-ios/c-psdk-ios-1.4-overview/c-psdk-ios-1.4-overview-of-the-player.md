@@ -1,8 +1,7 @@
 ---
 description: TVSDK voor iOS bevat verschillende functies.
 title: Functies van Primetime TVSDK
-exl-id: 1968c072-2651-442d-9e4c-412f7959bcab
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '195'
 ht-degree: 0%
@@ -35,7 +34,7 @@ TVSDK voor iOS bevat verschillende functies en biedt de volgende hoofdmogelijkhe
 
 * Inhoudsbescherming
 
-   * Toegang tot DRM-gerelateerde diensten
+   * Toegang tot DRM-gerelateerde diensten (Digital Rights Management)
    * Afspelen van HLS-streams zonder codering of met Protected HTTP Live Streaming (PHLS)
    * Op resolutie-gebaseerde outputcontrole, die op beleid DRM wordt gebaseerd
 

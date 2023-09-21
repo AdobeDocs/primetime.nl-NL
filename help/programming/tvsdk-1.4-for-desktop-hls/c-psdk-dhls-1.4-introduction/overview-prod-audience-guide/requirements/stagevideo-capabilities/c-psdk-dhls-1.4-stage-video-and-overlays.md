@@ -1,8 +1,7 @@
 ---
-description: U kunt HTML-overlays met StageVideo gebruiken om UI-elementen weer te geven in het videovlak van de weergavelijst Flash. Dit vlak bevindt zich boven het StageVideo-vlak, zodat StageVideo altijd achter alle Flash-weergaveoverzichtelementen wordt weergegeven.
+description: U kunt HTML-overlays met StageVideo gebruiken om UI-elementen weer te geven in het videovlak van de weergavelijst van de Flash. Dit vlak bevindt zich boven het StageVideo-vlak, zodat StageVideo altijd achter de elementen van de weergavelijst van Flash wordt weergegeven.
 title: StageVideo- en HTML-overlays
-exl-id: 6beda4c8-0981-4a38-bd5e-5714b9ec7efa
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '260'
 ht-degree: 0%
@@ -11,9 +10,9 @@ ht-degree: 0%
 
 # StageVideo- en HTML-overlays{#stagevideo-and-html-overlays}
 
-U kunt HTML-overlays met StageVideo gebruiken om UI-elementen weer te geven in het videovlak van de weergavelijst Flash. Dit vlak bevindt zich boven het StageVideo-vlak, zodat StageVideo altijd achter alle Flash-weergaveoverzichtelementen wordt weergegeven.
+U kunt HTML-overlays met StageVideo gebruiken om UI-elementen weer te geven in het videovlak van de weergavelijst van de Flash. Dit vlak bevindt zich boven het StageVideo-vlak, zodat StageVideo altijd achter de elementen van de weergavelijst van Flash wordt weergegeven.
 
-HTML-overlays zijn UI-elementen die u in het Flash-weergavevlak kunt weergeven op video die wordt gerenderd door `StageVideo` op zijn eigen vliegtuig. Vóór Flash 15 kon u geen HTML-overlays gebruiken wanneer hardwareversnelling niet beschikbaar was. Vanaf Flash 15 worden HTML-overlays weergegeven wanneer `StageVideo` gaat terug naar softwarerendering.
+HTML-overlays zijn UI-elementen die u in het weergavevlak van de Flash kunt weergeven op video die wordt gerenderd door `StageVideo` op zijn eigen vliegtuig. Vóór Flash 15 kon u geen HTML-overlays gebruiken wanneer hardwareversnelling niet beschikbaar was. Vanaf Flash 15 worden HTML-overlays weergegeven wanneer `StageVideo` gaat terug naar softwarerendering.
 
 >[!IMPORTANT]
 >
@@ -28,7 +27,7 @@ Overweeg de volgende informatie:
 
 * In Flash Player 14:
 
-   * Wanneer hardwareversnelling beschikbaar is, `StageVideo` bevindt zich onder het weergaveoverzicht Flash, zodat u HTML-overlays kunt gebruiken.
+   * Wanneer hardwareversnelling beschikbaar is, `StageVideo` bevindt zich onder het weergaveoverzicht van de Flash, zodat u HTML-overlays kunt gebruiken.
    * Wanneer hardwareversnelling niet beschikbaar is, wordt video weergegeven boven op alle andere elementen in de browser, waardoor het gebruik van HTML-overlays wordt voorkomen.
 
 Hier volgen de minimale browservereisten voor het gebruik van HTML-overlays met `StageVideo`:
@@ -42,6 +41,6 @@ Hier volgen de minimale browservereisten voor het gebruik van HTML-overlays met 
 
 * Chrome versie 26 en hoger
 
-   >[!IMPORTANT]
-   >
-   >Chrome Pepper in Windows XP en Windows Vista wordt niet ondersteund.
+  >[!IMPORTANT]
+  >
+  >Chrome Pepper in Windows XP en Windows Vista wordt niet ondersteund.

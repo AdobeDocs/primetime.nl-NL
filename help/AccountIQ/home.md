@@ -1,8 +1,7 @@
 ---
 title: Overzicht van IQ-account
 description: Rekening-IQ helpt MVPD's en programmeurs de risico's voor hun opbrengst en bedrijfsverrichtingen te begrijpen, en de meest efficiënte acties te bepalen om de gevolgen van crediteurenfraude te verlichten.
-exl-id: c0d85fc8-b5ab-4284-802e-82f52eff401f
-source-git-commit: 4475faca828510153a7ec3e505704ee8d8b044d0
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '403'
 ht-degree: 0%
@@ -21,7 +20,7 @@ Over het algemeen begrijpen aanbieders van videostreaming services het risico en
 
 *Afbeelding: informatiestroom account-IQ*
 
-Met Adobe Primetime Account IQ kunnen services voor videostreaming inzicht krijgen in de gebruikspatronen van abonnees en kunnen delen van referenties worden geïdentificeerd. Door het lange spoor van gegevens grondig te analyseren die door elke abonnee worden achtergelaten gebruikend merkgebonden multi-layer machine het leren model, kunnen de stromende diensten gedrag begrijpen en credentiedelen met een grotere mate van zekerheid identificeren. Bovendien laat het toe dat actie wordt ondernomen door integratie met andere systemen zoals het beperken van gezamenlijke stromen of het aanpassen van aanbiedingen, en bevestigt het effect van die acties-of het aanmoedigen van wettig het bekijken gedrag of het verhogen van abonnees en opbrengst.
+Met Adobe Primetime Account IQ kunnen services voor videostreaming inzicht krijgen in de gebruikspatronen van abonnees en kunnen delen van referenties worden geïdentificeerd. Door diepgaand het lange spoor van gegevens te analyseren die door elke abonnee worden verlaten gebruikend merkgebonden multi-layer machine het leren model van de Adobe, kunnen de stromende diensten gebruiksgedrag begrijpen en credentiedelen met een grotere mate van zekerheid identificeren. Bovendien laat het toe dat actie wordt ondernomen door integratie met andere systemen zoals het beperken van gezamenlijke stromen of het aanpassen van aanbiedingen, en bevestigt het effect van die acties-of het aanmoedigen van wettig het bekijken gedrag of het verhogen van abonnees en opbrengst.
 
 Account IQ biedt de tools en functies om het delen van referenties te meten, te beheren en in geld te verdelen. Dankzij rapporten, analyses en dashboards kunnen de gegevens worden verkend om patronen te identificeren. Rechtstreekse actie wordt ondersteund door export en integratie met Adobe en systemen van derden, zoals campagnebeheer, valutabeperking of registratie van abonnees. En de specifieke volgende hulpmiddelen meten het succes van die acties zodat kunnen zij worden bijgewerkt of worden uitgebreid.
 
@@ -44,7 +43,6 @@ Laten we eens diep in de grafieken en rapporten in elk van deze secties duiken.
 >* [Gebruikspatronen](/help/AccountIQ/usage-patterns.md)
 >* [Verklarende woordenlijst van producttermen](/help/AccountIQ/product-concepts.md)
 >* [whitepaper over account-IQ](https://www.adobe.com/content/dam/dx/us/en/products/primetime/resources/primetime-account-iq-whitepaper.pdf)
-
 
 <!-- Credential sharing is rampant and prevalent among subscribers in the video streaming industry. To add to it, understanding, identifying, and acting on password sharing is a complex process. There is complexity involved in understanding the subscriber usage behavior and developing a holistic view of viewer activity—for example, distinguishing sharing among members within the same household and outside. Due to this challenge, streaming service providers have inhibitions in acting against password sharing.
 

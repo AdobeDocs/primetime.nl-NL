@@ -2,8 +2,7 @@
 title: De DRM-server uitvoeren voor beveiligde streaming
 description: De DRM-server uitvoeren voor beveiligde streaming
 copied-description: true
-exl-id: 05dc4c55-a97e-4bdc-aea8-32741299454c
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '795'
 ht-degree: 0%
@@ -65,7 +64,7 @@ Zodra de licentieserver een van de configuratiebestanden van de licentieserver (
 
 Wanneer u het configuratiebestand wijzigt, slaat de licentieserver de tijd op waarop het bestand voor het laatst is gewijzigd. Bij een configureerbaar interval controleert de server of de tijd van de bestandswijziging is gewijzigd. Als deze is gewijzigd, laadt de server automatisch de inhoud van het configuratiebestand opnieuw.
 
-Als u wilt bepalen hoe vaak de server controleert op updates, moet u de `refreshDelaySeconds` in het dialoogvenster `Caching` -element van het algemene configuratiebestand. Als `refreshDelaySeconds` wordt geplaatst aan 3600 seconden, zal de server de configuratie binnen hoogstens één uur na de wijzigingstijd van het configuratiedossier bijwerken. Indien `refreshDelaySeconds` is ingesteld op 0, controleert de server op configuratieupdates bij elk verzoek. Het wordt afgeraden om `refreshDelaySeconds` tot een lage waarde in om het even welke productiemilieu&#39;s omdat het doen van dit prestaties kan beïnvloeden.
+Als u wilt bepalen hoe vaak de server controleert op updates, moet u de `refreshDelaySeconds` in het dialoogvenster `Caching` -element van het algemene configuratiebestand. Als `refreshDelaySeconds` wordt geplaatst aan 3600 seconden, zal de server de configuratie binnen hoogstens één uur na de wijzigingstijd van het configuratiedossier bijwerken. Indien `refreshDelaySeconds` is ingesteld op 0, controleert de server op configuratieupdates bij elk verzoek. Het wordt afgeraden om `refreshDelaySeconds` tot een lage waarde in om het even welke productiemilieu&#39;s omdat het doen dit prestaties kan beïnvloeden.
 
 De `Caching` element bepaalt ook hoeveel huurdersconfiguraties tegelijk in de cache worden geplaatst. U kunt deze waarde aan een aantal plaatsen dat kleiner is dan het totale aantal huurders om de hoeveelheid geheugen te beperken dat wordt gebruikt om de configuratieinformatie in het voorgeheugen onder te brengen. Als een verzoek voor een huurder wordt ontvangen die niet in het geheime voorgeheugen is, wordt de configuratie geladen alvorens het verzoek kan worden verwerkt. Als het geheime voorgeheugen volledig is, wordt de minst onlangs gebruikte huurder verwijderd uit het geheime voorgeheugen.
 
@@ -83,4 +82,4 @@ U kunt het HSM-wachtwoord wijzigen in [!DNL flashaccess-global.xml] op elk momen
 
 ### Het configuratiebestand van de huurder bijwerken {#section_71624DB8DF28480F84F34F0FF7FD4365}
 
-U kunt alle waarden wijzigen die zijn opgegeven in het dialoogvenster [!DNL flashaccess-tenant.xml] op elk gewenst moment. De wijzigingen worden van kracht wanneer de server het configuratiebestand opnieuw laadt. De server controleert ook of er wijzigingen zijn aangebracht in alle referenties ( [!DNL .pfx]) bestanden en pakketbestanden met lijsten van gewenste personen-certificaten waarnaar wordt verwezen in het configuratiebestand van de huurder.
+U kunt alle waarden wijzigen die in het dialoogvenster [!DNL flashaccess-tenant.xml] op elk gewenst moment. De wijzigingen worden van kracht wanneer de server het configuratiebestand opnieuw laadt. De server controleert ook of er wijzigingen zijn aangebracht in alle referenties ( [!DNL .pfx]) bestanden en bestanden met het lijst van gewenste personen-certificaat van Packager die in het configuratiebestand voor de  van de huurder worden vermeld.

@@ -1,8 +1,7 @@
 ---
 description: U kunt de huidige afspeelpositie in een video opslaan en het afspelen op dezelfde positie in een volgende sessie hervatten.
 title: De videopositie opslaan en later hervatten
-exl-id: 6b1eeeeb-ae13-437f-80cc-1ceb7bf8ac19
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '391'
 ht-degree: 0%
@@ -23,7 +22,7 @@ Dynamisch ingevoegde advertenties verschillen per gebruikerssessie, zodat de pos
 
    De pauzes van de toevoeging kunnen in elke zitting als toe te schrijven aan advertentiepatronen, frequentiegrenzen, etc. variëren. De huidige tijd van de video in één sessie kan in een volgende sessie anders zijn. Wanneer u een positie in de video opslaat, haalt de toepassing de lokale tijd op, die u op het apparaat of in een database op de server kunt opslaan.
 
-   Als de gebruiker bijvoorbeeld op de twintigste minuut van de video staat en deze positie vijf minuten aan advertenties bevat, `getCurrentTime` zal 1200 seconden terugkeren, terwijl `getLocalTime` op deze positie wordt 900 seconden geretourneerd.
+   Als de gebruiker bijvoorbeeld op de 20e minuut van de video staat en deze positie vijf minuten aan advertenties bevat, `getCurrentTime` zal 1200 seconden terugkeren, terwijl `getLocalTime` op deze positie wordt 900 seconden geretourneerd.
 
    >[!IMPORTANT]
    >
@@ -73,11 +72,11 @@ Dynamisch ingevoegde advertenties verschillen per gebruikerssessie, zodat de pos
 
    * Als u het afspelen van de video wilt hervatten vanaf de positie die u tijdens een vorige sessie hebt opgeslagen, gebruikt u `seekToLocalTime`.
 
-      >[!TIP]
-      >
-      >Deze methode wordt alleen aangeroepen met lokale tijdwaarden. Als de methode wordt aangeroepen met de huidige-tijdresultaten, treedt een onjuist gedrag op.
+     >[!TIP]
+     >
+     >Deze methode wordt alleen aangeroepen met lokale tijdwaarden. Als de methode wordt aangeroepen met de huidige-tijdresultaten, treedt een onjuist gedrag op.
 
-   * Om naar de huidige tijd te zoeken, gebruik `seek`.
+   * Als u naar de huidige tijd wilt zoeken, gebruikt u `seek`.
 
 1. Wanneer uw toepassing de `onStatusChanged` wijzigt de status, zoekt naar de opgeslagen lokale tijd.
 

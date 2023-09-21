@@ -1,8 +1,7 @@
 ---
 description: Uw toepassing moet de juiste TimedMetadata-objecten op de juiste momenten gebruiken.
 title: Metagegevensobjecten met tijdslimiet opslaan terwijl ze worden verzonden
-exl-id: da7ee636-f3ac-4aac-9ca0-7075b8c910f0
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '120'
 ht-degree: 0%
@@ -22,7 +21,7 @@ Tijdens het parseren van inhoud, wat vóór playback gebeurt, identificeert TVSD
 U kunt als volgt getimede metagegevensobjecten opslaan terwijl ze worden verzonden:
 
 1. Houd de huidige afspeeltijd bij.
-1. De huidige afspeeltijd afstemmen op de verzonden tijd `TimedMetadata` objecten.
+1. Pas de huidige afspeeltijd aan de verzonden `TimedMetadata` objecten.
 
 1. Gebruik de `TimedMetadata` waarbij de begintijd gelijk is aan de huidige lokale afspeeltijd.
 

@@ -1,8 +1,7 @@
 ---
 description: U kunt opmaakinformatie voor ClosedCaptionStyles-tracks opgeven met de klasse ClosedCaptionStyles. Hiermee stelt u de stijl in voor alle gesloten bijschriften die door de speler worden weergegeven.
 title: Opmaak van ondertiteling beheren
-exl-id: fd94a851-1e8f-4406-a3bb-ca115b4e60f8
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '565'
 ht-degree: 0%
@@ -61,7 +60,7 @@ public function TextFormat(
  <tbody> 
   <tr rowsep="1"> 
    <td colname="1"> Lettertype </td> 
-   <td colname="2"> <p>Het lettertype. </p> <p>Kan alleen worden ingesteld op een waarde die wordt gedefinieerd door de <span class="codeph"> ClosedCaptionStyles.FONT </span> array en staat bijvoorbeeld voor een vaste spatiëring met of zonder schreef. 
+   <td colname="2"> <p>Het fonttype. </p> <p>Kan alleen worden ingesteld op een waarde die wordt gedefinieerd door de <span class="codeph"> ClosedCaptionStyles.FONT </span> array en staat bijvoorbeeld voor een vaste spatiëring met of zonder schreef. 
      <code class="syntax actionscript">
        public&nbsp;static&nbsp;const&nbsp;FONT&nbsp;:Array&nbsp;=&nbsp;[ 
       &nbsp;AVCaptionStyle.DEFAULT, 
@@ -73,7 +72,7 @@ public function TextFormat(
       &nbsp;AVCaptionStyle.CURSIVE, 
       &nbsp;AVCaptionStyle.SMALL_CAPITALS 
       &nbsp;]; 
-     </code> </p> <p>Tip: De werkelijke lettertypen die op een apparaat beschikbaar zijn, kunnen variëren en waar nodig worden vervangende lettertypen gebruikt. Monospace met schreef wordt typisch gebruikt als substituut, hoewel deze substitutie systeemspecifiek kan zijn. </p> </td> 
+     </code> </p> <p>Tip: de werkelijke lettertypen die op een apparaat beschikbaar zijn, kunnen variëren en waar nodig worden vervangende lettertypen gebruikt. Monospace met schreef wordt typisch gebruikt als substituut, hoewel deze substitutie systeemspecifiek kan zijn. </p> </td> 
   </tr> 
   <tr rowsep="1"> 
    <td colname="1"> Grootte </td> 
@@ -82,8 +81,8 @@ public function TextFormat(
       <li id="li_A592ED46B8DF4D8FAD7AF3BD931A712B"> <span class="codeph"> MEDIUM </span> - De standaardgrootte </li> 
       <li id="li_4F8CEDE54965430EB707DD3D5B2E3F87"> <span class="codeph"> GROOT </span> - Ongeveer 30% groter dan gemiddeld </li> 
       <li id="li_D78D823883F54D869118BAB58257E377"> <span class="codeph"> KLEIN </span> - Ongeveer 30% kleiner dan gemiddeld </li> 
-      <li id="li_9299C13408584A38835F8D91BD048083"> <span class="codeph"> STANDAARD </span> - De standaardgrootte voor het bijschrift; gelijk aan medium </li> 
-     </ul> </p> <p>Tip: U kunt de tekengrootte van WebVTT-bijschriften wijzigen door de grootteparameter voor de optie <span class="codeph"> DefaultMediaPlayer.ccStyles setter </span> functie. </p> </td> 
+      <li id="li_9299C13408584A38835F8D91BD048083"> <span class="codeph"> STANDAARD </span> - De standaardgrootte voor het bijschrift; gelijk aan normaal </li> 
+     </ul> </p> <p>Tip: u kunt de tekengrootte van WebVTT-bijschriften wijzigen door de grootteparameter voor de optie <span class="codeph"> DefaultMediaPlayer.ccStyles setter </span> functie. </p> </td> 
   </tr> 
   <tr rowsep="1"> 
    <td colname="1"> Fontrand </td> 
@@ -101,7 +100,7 @@ public function TextFormat(
      </code> </p> </td> 
   </tr> 
   <tr rowsep="1"> 
-   <td colname="1"> Fontkleur </td> 
+   <td colname="1"> Lettertypekleur </td> 
    <td colname="2"> <p>De fontkleur. </p> <p>Kan alleen worden ingesteld op een waarde die wordt gedefinieerd door de <span class="codeph"> ClosedCaptionStyles.COLOR </span> array. 
      <code class="syntax actionscript">
        public&nbsp;static&nbsp;const&nbsp;COLOR&nbsp;:Array&nbsp;=&nbsp;[ 
@@ -136,11 +135,11 @@ public function TextFormat(
   </tr> 
   <tr rowsep="1"> 
    <td colname="1"> Achtergrondkleur </td> 
-   <td colname="2"> <p>De kleur van de achtergrondtekencel. </p> <p>Kan alleen worden ingesteld op waarden die beschikbaar zijn voor de lettertypekleur. </p> </td> 
+   <td colname="2"> <p>De kleur van de achtergrondtekencel. </p> <p>Kan alleen worden ingesteld op waarden die beschikbaar zijn voor de fontkleur. </p> </td> 
   </tr> 
   <tr rowsep="1"> 
    <td colname="1"> Vulkleur </td> 
-   <td colname="2"> <p>De kleur van de achtergrond van het venster waarin de tekst zich bevindt. </p> <p>Kan worden ingesteld op alle waarden die beschikbaar zijn voor de lettertypekleur. </p> <p>Belangrijk: Dit is niet van toepassing op WebVTT-bijschriften, omdat WebVTT deze functie niet gebruikt. </p> </td> 
+   <td colname="2"> <p>De kleur van de achtergrond van het venster waarin de tekst zich bevindt. </p> <p>Kan worden ingesteld op alle waarden die beschikbaar zijn voor de lettertypekleur. </p> <p>Belangrijk: dit is niet van toepassing op WebVTT-bijschriften, omdat WebVTT deze functie niet gebruikt. </p> </td> 
   </tr> 
   <tr rowsep="1"> 
    <td colname="1"> Dekking van lettertype </td> 
@@ -161,7 +160,7 @@ public function TextFormat(
 
 U kunt opmaak voor Closed Caption opgeven.
 
-## Voorbeeld 1: Opmaakwaarden expliciet opgeven {#section_BD7B48F3B66D4E9290E1CB2F464E08E4}
+## Voorbeeld 1: geef opmaakwaarden expliciet op {#section_BD7B48F3B66D4E9290E1CB2F464E08E4}
 
 ```
 private function onStatusChanged(event:MediaPlayerStatusChangeEvent):void { 
@@ -180,7 +179,7 @@ private function onStatusChanged(event:MediaPlayerStatusChangeEvent):void {
 } 
 ```
 
-## Voorbeeld 2: Opmaakwaarden opgeven in parameters {#section_147036D7C31C4010A5A7DF49997014A9}
+## Voorbeeld 2: indelingswaarden opgeven in parameters {#section_147036D7C31C4010A5A7DF49997014A9}
 
 ```
 /** 

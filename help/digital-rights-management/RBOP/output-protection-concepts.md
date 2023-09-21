@@ -1,8 +1,7 @@
 ---
 description: Deze sectie verstrekt een conceptueel overzicht van de configuratie, de opties, en betekenissen verbonden aan outputbescherming.
 title: RBOP-concepten
-exl-id: 5b9de292-e060-467d-beca-5f428e45ed69
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '193'
 ht-degree: 0%
@@ -28,4 +27,4 @@ Met de vereiste digitale uitvoer kunt u restrictieve opties instellen, zoals &#3
 
 **Analoge uitvoer**
 
-Analoge uitvoerverbindingen zijn eenvoudiger dan digitale uitvoer. zij bestaan uit één uitvoervereiste.
+De analoge outputverbindingen zijn eenvoudiger dan digitale output; zij bestaan uit één enkele outputvereiste.

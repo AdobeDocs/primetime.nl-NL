@@ -1,8 +1,7 @@
 ---
 description: Browser TVSDK steunt een aantal eigenschappen HLS die u kunt uitvoeren om functionaliteit aan uw videotoepassingen toe te voegen.
 title: Ondersteunde HLS-functies
-exl-id: 111a6683-fb5c-4f0a-8665-5b1aab77056c
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '736'
 ht-degree: 0%
@@ -26,7 +25,7 @@ Browser TVSDK steunt een aantal eigenschappen HLS die u kunt uitvoeren om functi
 
 >[!TIP]
 >
->In de kolom &quot;Beperking van Platform&quot; in Safari staat dat het gebruiksgeval niet wordt ondersteund omdat dat platform geen ondersteuning voor het platform toestaat. Gebruik SSAI in geval van invoeging. Als er voor u belangrijke afspeelbeperkingen zijn, forceert u de fallback naar Flash op Safari totdat het platform ondersteuning biedt voor het gebruik van de invoegtoepassing.
+>In de kolom &quot;Platform Limitation&quot; in Safari staat dat het gebruiksgeval niet wordt ondersteund omdat dat platform geen ondersteuning voor het platform toestaat. Gebruik SSAI in geval van invoeging. Als er voor u belangrijke afspeelbeperkingen zijn, forceert u de fallback naar de Flash in Safari totdat het platform ondersteuning biedt voor het gebruik van de invoegtoepassing.
 
 <!--<a id="section_9FB9193D5763448CB228B96164661738"></a>-->
 
@@ -92,8 +91,8 @@ Removed Nielsen row
 |--- |--- |--- |--- |--- |--- |
 | Ad Insertion | VOD | Alleen advertentie | Niet ondersteund | ![ondersteund pictogram](assets/supported15.png) | ![ondersteund pictogram](assets/supported15.png) |
 | Ad Insertion | VOD + Live | Doelparameters | ![ondersteund pictogram](assets/supported15.png) | ![ondersteund pictogram](assets/supported15.png) | ![ondersteund pictogram](assets/supported15.png) |
-| Ad Insertion | VOD + Live | Aangepast advertentiebeleid | ![ondersteund pictogram](assets/supported15.png) | ![ondersteund pictogram](assets/supported15.png) | Beperking van Platform |
-| Ad Insertion | VOD + Live | Lazy en laden | ![ondersteund pictogram](assets/supported15.png) | Niet ondersteund | Beperking van Platform |
+| Ad Insertion | VOD + Live | Aangepast advertentiebeleid | ![ondersteund pictogram](assets/supported15.png) | ![ondersteund pictogram](assets/supported15.png) | Platformbeperking |
+| Ad Insertion | VOD + Live | Lazy en laden | ![ondersteund pictogram](assets/supported15.png) | Niet ondersteund | Platformbeperking |
 | Ad Insertion | VOD | Companion-advertenties, banneradvertenties en aanklikbare advertenties | ![ondersteund pictogram](assets/supported15.png) | ![ondersteund pictogram](assets/supported15.png) | ![ondersteund pictogram](assets/supported15.png) |
 | Ad Insertion | VOD | VPAID 2.0 | SWF | JavaScript | JavaScript |
 
@@ -102,10 +101,10 @@ Removed Nielsen row
 | Categorie | Inhoudstype | Functie | Flash | HTML5: FF, IE, Chrome, Android-chroom | HTML5: Safari, iOS Safari |
 |--- |--- |--- |--- |--- |--- |
 | Ad Insertion | VOD + Live | Pre-roll | ![ondersteund pictogram](assets/supported15.png) | ![ondersteund pictogram](assets/supported15.png) | ![ondersteund pictogram](assets/supported15.png) |
-| Ad Insertion | VOD + Live | Midden rol | ![ondersteund pictogram](assets/supported15.png) | ![ondersteund pictogram](assets/supported15.png) | Beperking van Platform |
+| Ad Insertion | VOD + Live | Midden rol | ![ondersteund pictogram](assets/supported15.png) | ![ondersteund pictogram](assets/supported15.png) | Platformbeperking |
 | Ad Insertion | VOD + Live | Na de rol | Alleen VOD | Alleen VOD | Alleen VOD |
-| Ad Insertion | FER VOD | Resolutie en gedrag toevoegen | ![ondersteund pictogram](assets/supported15.png) | ![ondersteund pictogram](assets/supported15.png) | Beperking van Platform |
-| Ad Insertion | VOD + Live | Standaardbeleid en standaardbeleid | ![ondersteund pictogram](assets/supported15.png) | ![ondersteund pictogram](assets/supported15.png) | Beperking van Platform |
+| Ad Insertion | FER VOD | Resolutie en gedrag toevoegen | ![ondersteund pictogram](assets/supported15.png) | ![ondersteund pictogram](assets/supported15.png) | Platformbeperking |
+| Ad Insertion | VOD + Live | Standaardbeleid en standaardbeleid | ![ondersteund pictogram](assets/supported15.png) | ![ondersteund pictogram](assets/supported15.png) | Platformbeperking |
 | Ad Insertion | VOD + Live | VAST 2,0/3,0 | ![ondersteund pictogram](assets/supported15.png) | ![ondersteund pictogram](assets/supported15.png) | ![ondersteund pictogram](assets/supported15.png) |
 | Ad Insertion | VOD + Live | VMAP 1.0 | ![ondersteund pictogram](assets/supported15.png) | ![ondersteund pictogram](assets/supported15.png) | ![ondersteund pictogram](assets/supported15.png) |
 | Ad Insertion | VOD + Live | CRS v3.1 | ![ondersteund pictogram](assets/supported15.png) | ![ondersteund pictogram](assets/supported15.png) | ![ondersteund pictogram](assets/supported15.png) |
@@ -114,9 +113,9 @@ Removed Nielsen row
 
 | Categorie | Inhoudstype | Functie | Flash | HTML5: FF, IE, Chrome, Android-chroom | HTML5: Safari, iOS Safari |
 |--- |--- |--- |--- |--- |--- |
-| Inhoud beschermen | VOD + Live | AES-128 | ![ondersteund pictogram](assets/supported15.png) | ![ondersteund pictogram](assets/supported15.png) | ![ondersteund pictogram](assets/supported15.png) |
-| Inhoud beschermen | VOD + Live | Sample-AES | ![ondersteund pictogram](assets/supported15.png) | ![ondersteund pictogram](assets/supported15.png) | ![ondersteund pictogram](assets/supported15.png) |
-| Inhoud beschermen | VOD | DRM | Adobe Access | Niet ondersteund | FairPlay |
+| Inhoudsbeveiliging | VOD + Live | AES-128 | ![ondersteund pictogram](assets/supported15.png) | ![ondersteund pictogram](assets/supported15.png) | ![ondersteund pictogram](assets/supported15.png) |
+| Inhoudsbeveiliging | VOD + Live | Sample-AES | ![ondersteund pictogram](assets/supported15.png) | ![ondersteund pictogram](assets/supported15.png) | ![ondersteund pictogram](assets/supported15.png) |
+| Inhoudsbeveiliging | VOD | DRM | Toegang tot Adobe | Niet ondersteund | FairPlay |
 
 ## Geavanceerde HLS-afspeelfuncties {#hls-advanced-playback}
 
@@ -125,10 +124,10 @@ Removed Nielsen row
 | Afspelen | VOD | Afspelen bij verschuiving | ![ondersteund pictogram](assets/supported15.png) | ![ondersteund pictogram](assets/supported15.png) | ![ondersteund pictogram](assets/supported15.png) |
 | Afspelen | VOD | Alleen audio afspelen | ![ondersteund pictogram](assets/supported15.png) | ![ondersteund pictogram](assets/supported15.png) | ![ondersteund pictogram](assets/supported15.png) |
 | Afspelen | VOD | Steen spelen | ![ondersteund pictogram](assets/supported15.png) | ![ondersteund pictogram](assets/supported15.png) | ![ondersteund pictogram](assets/supported15.png) |
-| Afspelen | VOD | Gladde truc | ![ondersteund pictogram](assets/supported15.png) | ![ondersteund pictogram](assets/supported15.png) | Beperking van Platform |
+| Afspelen | VOD | Gladde truc | ![ondersteund pictogram](assets/supported15.png) | ![ondersteund pictogram](assets/supported15.png) | Platformbeperking |
 | Afspelen | VOD + Live | ID3-parsering | ![ondersteund pictogram](assets/supported15.png) | ![ondersteund pictogram](assets/supported15.png) | Niet ondersteund |
 | Afspelen | VOD + Live | Ondersteuning van discontinue markeertekens | ![ondersteund pictogram](assets/supported15.png) | ![ondersteund pictogram](assets/supported15.png) | ![ondersteund pictogram](assets/supported15.png) |
-| Afspelen | VOD + Live | Verwarmde stromen | ![ondersteund pictogram](assets/supported15.png) | ![ondersteund pictogram](assets/supported15.png) | Beperking van Platform |
+| Afspelen | VOD + Live | Verwarmde stromen | ![ondersteund pictogram](assets/supported15.png) | ![ondersteund pictogram](assets/supported15.png) | Platformbeperking |
 | Afspelen | VOD + Live | Facturering | ![ondersteund pictogram](assets/supported15.png) | ![ondersteund pictogram](assets/supported15.png) | ![ondersteund pictogram](assets/supported15.png) |
 | Afspelen | VOD + Live | Bladeren | ![ondersteund pictogram](assets/supported15.png) | ![ondersteund pictogram](assets/supported15.png) | ![ondersteund pictogram](assets/supported15.png) |
 
@@ -142,11 +141,11 @@ Removed Nielsen row
 | Afspelen | VOD + Live | 608/708 bijschriften | ![ondersteund pictogram](assets/supported15.png) | ![ondersteund pictogram](assets/supported15.png) | ![ondersteund pictogram](assets/supported15.png) |
 | Afspelen | VOD + Live | WebVTT | ![ondersteund pictogram](assets/supported15.png) | Alleen VOD | Alleen VOD |
 | Afspelen | VOD + Live | Kennelijke failover | ![ondersteund pictogram](assets/supported15.png) | ![ondersteund pictogram](assets/supported15.png) | ![ondersteund pictogram](assets/supported15.png) |
-| Afspelen | VOD + Live | Geavanceerde failover | ![ondersteund pictogram](assets/supported15.png) | Alleen VOD | Beperking van Platform |
+| Afspelen | VOD + Live | Geavanceerde failover | ![ondersteund pictogram](assets/supported15.png) | Alleen VOD | Platformbeperking |
 | Afspelen | VOD + Live | QoS- en spelersmeldingen | ![ondersteund pictogram](assets/supported15.png) | ![ondersteund pictogram](assets/supported15.png) | Beperkte QoS-ondersteuning |
-| Afspelen | VOD + Live | Ondersteuning voor cookie headers | ![ondersteund pictogram](assets/supported15.png) | ![ondersteund pictogram](assets/supported15.png) | Beperking van Platform |
-| Afspelen | VOD + Live | Parameters voor bufferbesturing instellen | ![ondersteund pictogram](assets/supported15.png) | ![ondersteund pictogram](assets/supported15.png) | Beperking van Platform |
-| Afspelen | VOD + Live | Aangepaste besturingselementen voor bitsnelheid instellen | ![ondersteund pictogram](assets/supported15.png) | ![ondersteund pictogram](assets/supported15.png) | Beperking van Platform |
-| Afspelen | VOD + Live | Aangepaste tags | ![ondersteund pictogram](assets/supported15.png) | ![ondersteund pictogram](assets/supported15.png) | Beperking van Platform |
-| Afspelen | VOD + Live | Geluid met late binding | ![ondersteund pictogram](assets/supported15.png) | ![ondersteund pictogram](assets/supported15.png) | Beperking van Platform |
-| Afspelen | VOD + Live | 302 omleiding | ![ondersteund pictogram](assets/supported15.png) | ![ondersteund pictogram](assets/supported15.png) | Beperking van Platform |
+| Afspelen | VOD + Live | Ondersteuning voor cookie headers | ![ondersteund pictogram](assets/supported15.png) | ![ondersteund pictogram](assets/supported15.png) | Platformbeperking |
+| Afspelen | VOD + Live | Parameters voor bufferbesturing instellen | ![ondersteund pictogram](assets/supported15.png) | ![ondersteund pictogram](assets/supported15.png) | Platformbeperking |
+| Afspelen | VOD + Live | Aangepaste besturingselementen voor bitsnelheid instellen | ![ondersteund pictogram](assets/supported15.png) | ![ondersteund pictogram](assets/supported15.png) | Platformbeperking |
+| Afspelen | VOD + Live | Aangepaste tags | ![ondersteund pictogram](assets/supported15.png) | ![ondersteund pictogram](assets/supported15.png) | Platformbeperking |
+| Afspelen | VOD + Live | Geluid met late binding | ![ondersteund pictogram](assets/supported15.png) | ![ondersteund pictogram](assets/supported15.png) | Platformbeperking |
+| Afspelen | VOD + Live | 302 omleiding | ![ondersteund pictogram](assets/supported15.png) | ![ondersteund pictogram](assets/supported15.png) | Platformbeperking |

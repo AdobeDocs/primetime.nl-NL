@@ -1,8 +1,7 @@
 ---
 description: Met gebeurtenishandlers kunt u reageren op TVSDK-gebeurtenissen.
 title: Gebeurtenislisteners en callbacks implementeren
-exl-id: c8825a6c-3d48-412f-81f5-542c7731a122
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '442'
 ht-degree: 0%
@@ -21,11 +20,11 @@ Uw toepassing moet gebeurtenislisteners implementeren voor alle TVSDK-gebeurteni
 
 1. Bepaal op welke gebeurtenissen uw toepassing moet letten.
 
-   * Vereiste gebeurtenissen: Luister naar alle afspeelgebeurtenissen.
+   * Vereiste gebeurtenissen: luister naar alle afspeelgebeurtenissen.
 
-      >[!IMPORTANT]
-      >
-      >Luister naar de gebeurtenis over statuswijziging die optreedt wanneer de status van de speler verandert op een manier die u moet weten. De informatie die wordt verschaft, bevat fouten die mogelijk van invloed zijn op de volgende taken van de speler.
+     >[!IMPORTANT]
+     >
+     >Luister naar de gebeurtenis over statuswijziging die optreedt wanneer de status van de speler verandert op een manier die u moet weten. De informatie die wordt verschaft, bevat fouten die mogelijk van invloed zijn op de volgende taken van de speler.
 
    * Voor andere gebeurtenissen, afhankelijk van uw toepassing, zie gebeurtenissen-samenvatting.
 

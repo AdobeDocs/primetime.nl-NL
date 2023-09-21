@@ -2,8 +2,7 @@
 title: Beleid maken met de Java API
 description: Beleid maken met de Java API
 copied-description: true
-exl-id: 60e26fd6-1b72-413c-a35b-b317389cd9ed
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '103'
 ht-degree: 0%
@@ -14,7 +13,7 @@ ht-degree: 0%
 
 Voer de volgende stappen uit om een beleid te maken met de Java API:
 
-1. Stel uw ontwikkelomgeving in en neem alle JAR-bestanden op die in [De ontwikkelomgeving instellen](../../aaxs-protecting-content/content-setting-up-the-sdk/content-setting-up-the-dev-env.md) in uw project.
+1. Stel uw ontwikkelomgeving in en neem alle JAR-bestanden op die worden vermeld in [De ontwikkelomgeving instellen](../../aaxs-protecting-content/content-setting-up-the-sdk/content-setting-up-the-dev-env.md) in uw project.
 1. Een `com.adobe.flashaccess.sdk.policy.Policy` -object en geef de eigenschappen ervan op, zoals de rechten, de duur van het in cache plaatsen van licenties en de einddatum van het beleid.
 
    ```java
@@ -51,7 +50,7 @@ Voer de volgende stappen uit om een beleid te maken met de Java API:
      }
    ```
 
-1. Serialiseren `Policy` en sla deze op in een bestand of database.
+1. Serienummering toepassen op `Policy` en sla deze op in een bestand of database.
 
    ```java
      // Serialize the policy  
@@ -65,4 +64,4 @@ Voer de volgende stappen uit om een beleid te maken met de Java API:
      out.close();
    ```
 
-Voor de volledige bron van deze voorbeeldcode raadpleegt u *com.adobe.flashaccess.samples.policy.CreatePolicy* in de opdrachtregelprogramma&#39;s voor de referentieimplementatie &quot; [!DNL samples]&quot; directory.
+Zie voor de volledige bron van deze voorbeeldcode *com.adobe.flashaccess.samples.policy.CreatePolicy* in de opdrachtregelprogramma&#39;s voor de referentieimplementatie &quot; [!DNL samples]&quot; directory.

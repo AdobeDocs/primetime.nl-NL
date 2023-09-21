@@ -2,8 +2,7 @@
 title: Referenties opslaan
 description: Referenties opslaan
 copied-description: true
-exl-id: ceb1bc19-56a0-47ce-affd-ce4ecb896c3b
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '396'
 ht-degree: 0%
@@ -12,13 +11,13 @@ ht-degree: 0%
 
 # Referenties opslaan{#storing-credentials}
 
-De Primetime DRM SDK ondersteunt verschillende manieren om referenties op te slaan, zoals het gebruik van een Hardware Security Module (HSM) of als een PKCS12-bestand. De SDK gebruikt een referentie (openbare-sleutelcertificaat en de bijbehorende persoonlijke sleutel) wanneer de persoonlijke sleutel is vereist. De pakketsoftware gebruikt bijvoorbeeld een referentie om metagegevens te ondertekenen. De server van de Vergunning gebruikt een referentie om gegevens te decrypteren die met de Server van de Vergunning of de openbare sleutel van het Vervoer van het Vervoer zijn gecodeerd.
+De Primetime DRM SDK ondersteunt verschillende manieren om referenties op te slaan, zoals het gebruik van een Hardware Security Module (HSM) of als een PKCS12-bestand. De SDK gebruikt een referentie (openbare-sleutelcertificaat en de bijbehorende persoonlijke sleutel) wanneer de persoonlijke sleutel is vereist. Bijvoorbeeld, gebruikt de pakketmanager een referentie om meta-gegevens te ondertekenen; de Server van de Vergunning gebruikt een referentie om gegevens te decrypteren die met de Server van de Vergunning of de openbare sleutel van het Vervoer zijn gecodeerd.
 
 U moet de privésleutels zorgvuldig bewaken om de beveiliging van uw inhoud en licentieserver te garanderen. PKCS12 is een standaard archiefbestandsindeling voor het opslaan van referenties die met een wachtwoord zijn gecodeerd. (U kunt het PKCS12-bestand zelf ook versleutelen en ondertekenen.) De bestandsextensie [!DNL .pfx] wordt doorgaans gebruikt voor bestanden die deze indeling ondersteunen.
 
 >[!NOTE]
 >
->Adobe raadt u aan een HSM te gebruiken voor maximale beveiliging.
+>De Adobe adviseert dat u HSM voor maximumveiligheid gebruikt.
 >
 >Zie de *Richtlijnen voor veilige implementatie van Adobe Primetime DRM* hulplijn.
 
@@ -30,6 +29,6 @@ U kunt een persoonlijke sleutel op een HSM houden, en de Primetime DRM SDK gebru
 
 De SunPKCS11-provider vertegenwoordigt een voorbeeld van een JCE-provider die u kunt gebruiken om toegang te krijgen tot een persoonlijke sleutel op een HSM. Sommige HSM&#39;s worden ook opgenomen in een Java SDK die is gebundeld met een JCE-provider.
 
-Raadpleeg de documentatie bij Sun Java voor instructies over het gebruik van deze provider.
+Zie de documentatie van Sun Java voor instructies over hoe te om deze leverancier te gebruiken.
 
 PEM en DER zijn manieren om een openbare-sleutelcertificaat te coderen. PEM is een basis-64-codering en DER is een binaire codering. Certificaatbestanden gebruiken doorgaans de extensie [!DNL .cer], [!DNL .pem], of [!DNL .der]. Certificaten worden gebruikt wanneer alleen een openbare sleutel vereist is. Als voor een component alleen de openbare sleutel moet worden gebruikt, wordt u aangeraden dat onderdeel het certificaat te geven in plaats van een referentie- of PKCS12-bestand.

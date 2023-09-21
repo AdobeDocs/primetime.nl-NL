@@ -1,8 +1,7 @@
 ---
 description: TVSDK verwerkt fouten in het tijdbereik op basis van het specifieke probleem door de onjuist gedefinieerde tijdbereiken samen te voegen of opnieuw te ordenen.
-title: Foutafhandeling voor verwijderen en vervangen van toevoegen
-exl-id: 0d70bb63-bdc5-4741-81db-1408216234c2
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+title: Foutafhandeling voor verwijderen en vervangen
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '309'
 ht-degree: 0%
@@ -17,7 +16,7 @@ TVSDK wordt beheerd `timeRanges` fouten door standaardsamenvoegings- en herschik
 
 TVSDK verwerkt tijdbereikfouten met de volgende opties:
 
-* **Niet in orde** De tijdbereiken worden opnieuw gesorteerd door TVSDK.
+* **Niet in orde** TVSDK rangschikt de tijdbereiken opnieuw.
 
 * **Subset** TVSDK voegt de tijdbereiksubsets samen.
 
@@ -29,13 +28,13 @@ TVSDK handelt signalerende-wijze conflicten met advertentiemetagegevens op de vo
 
 * Als de ad signalerende wijze met de tijd-waaier meta-gegevens in conflict brengt, heeft de tijd-waaier meta-gegevens altijd prioriteit.
 
-   Als de ad-signaalmodus bijvoorbeeld is ingesteld als serverkaart of manifestaanwijzingen en er ook MARK-tijdbereiken zijn in de metagegevens van de advertentie, is het resulterende gedrag dat de bereiken zijn gemarkeerd en dat er geen advertenties zijn ingevoegd.
+  Als de ad-signaalmodus bijvoorbeeld is ingesteld als serverkaart of manifestaanwijzingen en er ook MARK-tijdbereiken zijn in de metagegevens van de advertentie, is het resulterende gedrag dat de bereiken zijn gemarkeerd en dat er geen advertenties zijn ingevoegd.
 * Voor de waaiers van de VERVANGING, als de signalerende wijze als serverkaart of duidelijke aanwijzingen wordt geplaatst, worden de waaiers vervangen zoals gespecificeerd in de waaiers van de VERVANGING, en er is geen toevoeging door serverkaart of duidelijke aanwijzingen.
 
-   Zie voor meer informatie de *Handeling signaalmodus/combinatie van metagegevens* tabel in [Effect op invoeging en verwijdering van advertentiemodus...](../../../../tvsdk-2.7-for-android/ad-insertion/delete-replace-content-vod/c-psdk-android-2.7-signaling-mode-metadata-combos-android.md#c_psdk_signaling-mode-metadata-combos-android).
+  Zie de klasse *Handeling signaalmodus/combinatie van metagegevens* tabel in [Effect op invoeging en verwijdering van advertentiemodus...](../../../../tvsdk-2.7-for-android/ad-insertion/delete-replace-content-vod/c-psdk-android-2.7-signaling-mode-metadata-combos-android.md#c_psdk_signaling-mode-metadata-combos-android).
 
 Houd rekening met het volgende:
 
-* Wanneer de server niet geldig is `AdBreaks`, genereert en verwerkt TVSDK een `NOPTimelineOperation` voor de lege AdBreak en er wordt geen advertentie afgespeeld.
+* Wanneer de server niet geldig retourneert `AdBreaks`, genereert en verwerkt TVSDK een `NOPTimelineOperation` voor de lege AdBreak, en geen advertentie speelt.
 
 * Hoewel C3 en delete/replacement alleen voor VOD moeten worden ondersteund, worden tijdbereiken ook verwerkt voor live streams als deze zijn opgegeven in de metagegevens voor advertenties.

@@ -1,8 +1,7 @@
 ---
 description: U moet servereigenschappen vormen om op uw milieu te wijzen. U kunt dit op een van de volgende manieren doen
 title: Eigenschappen toepassen op serveromgevingen
-exl-id: 0c78011a-e8c8-43a8-8c2d-a5c4ed54a8d7
-source-git-commit: 0019a95fa9ca6d21249533d559ce844897ab67cf
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '249'
 ht-degree: 0%
@@ -17,14 +16,14 @@ U moet servereigenschappen vormen om op uw milieu te wijzen. U kunt dit op een v
 
 * [!DNL AdobeInitial.properties] - Monster in de [!DNL /shared] map op de dvd
 
-   U kunt dit bestand als volgt gebruiken om de eigenschappen die in het WAR-bestand zijn ingesteld, te overschrijven:
+  U kunt dit bestand als volgt gebruiken om de eigenschappen die in het WAR-bestand zijn ingesteld, te overschrijven:
 
    1. De waarden van de eigenschap voor overschrijven instellen in [!DNL AdobeInitial.properties]
    1. Plaatsen [!DNL AdobeInitial.properties] op het klassepad.
 
-   >[!NOTE]
-   >
-   >Adobe raadt u aan gebruik te maken van de [!DNL AdobeInitial.properties] bestand, omdat u hiermee WAR-bestanden van uw toepassing kunt bijwerken zonder het risico te lopen dat de vorige configuratie van eigenschappen die u in het dialoogvenster hebt ingesteld, verloren gaan [!DNL flashaccess-i15n.properties] bestand.
+  >[!NOTE]
+  >
+  >Adobe raadt u aan gebruik te maken van de [!DNL AdobeInitial.properties] bestand, omdat u hiermee WAR-bestanden van uw toepassing kunt bijwerken zonder het risico te lopen dat de vorige configuratie van eigenschappen die u in het dialoogvenster hebt ingesteld, verloren gaan [!DNL flashaccess-i15n.properties] bestand.
 
 * Het Java System-eigenschapmechanisme.
 
@@ -42,7 +41,7 @@ Met deze mogelijkheid kunt u hetzelfde WAR-bestand gebruiken voor alle serveromg
 
 <!--<a id="example_A7A58E3EE8DA4114B4F7A9EEB69D50CA"></a>-->
 
-Als u bijvoorbeeld het logniveau wilt instellen op `INFO` voor uw productie- en staging-servers en voor `DEBUG` voor uw ontwikkelingsserver:
+Stel bijvoorbeeld het logniveau in op `INFO` voor uw productie- en staging-servers en voor `DEBUG` voor uw ontwikkelingsserver:
 
 ```
 log.Level=INFO  
@@ -64,5 +63,5 @@ De server gebruikt deze zoekvolgorde voor eigenschappen:
 
 >[!NOTE]
 >
->U moet de de milieunaam van de server als bezit van het Systeem van Java specificeren wanneer het beginnen van de server. Bijvoorbeeld wanneer u Tomcat start met [!DNL catalina.bat]stelt u de `CATALINA_OPTS` omgevingsvariabele, als hieronder:
->-DENVIRONMENT_NAME=[ DEV | FASE | PROD ]
+>U moet de de milieunaam van de server als bezit van het Systeem van Java specificeren wanneer het beginnen van de server. Bijvoorbeeld wanneer u Tomcat start met [!DNL catalina.bat], stelt u de `CATALINA_OPTS` omgevingsvariabele, als hieronder:
+>-DENVIRONMENT_NAME=[DEV | FASE | PROD]

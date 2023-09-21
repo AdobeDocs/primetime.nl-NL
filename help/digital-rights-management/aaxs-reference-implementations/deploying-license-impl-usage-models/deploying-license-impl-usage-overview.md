@@ -2,8 +2,7 @@
 title: Overzicht van gebruiksmodellen implementeren
 description: Overzicht van gebruiksmodellen implementeren
 copied-description: true
-exl-id: 48e7db54-484f-4c46-9a4e-a51bae7c84b4
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '589'
 ht-degree: 0%
@@ -16,7 +15,7 @@ De implementatie van de Referentie omvat bedrijfslogica voor het aantonen van ho
 
 * Download-to-own (DTO)
 * Huur/Video-op-aanvraag (VOD)
-* Abonnement (alles-u-kan-eet)
+* Abonnement (alles-wat-je-kan-eet)
 * Door ad-financiering
 
 Om de demonstratie van het gebruiksmodel toe te laten, specificeer het douanebezit `RI_UsageModelDemo=true` op het tijdstip van verpakking. Als u inhoud verpakt met het opdrachtregelprogramma Media Packager, geeft u het volgende op:
@@ -31,9 +30,9 @@ Om de demonstratie van het gebruiksmodel toe te laten, specificeer het douanebez
 
 In de demo, controleert de bedrijfslogica op de server de daadwerkelijke attributen van de geproduceerde vergunningen. Op het moment van het verpakken moet er alleen minimale beleidsinformatie in de inhoud worden opgenomen. Specifiek, moet het beleid slechts erop wijzen of de authentificatie wordt vereist om tot de inhoud toegang te hebben. Om alle vier gebruiksmodellen toe te laten, omvat één beleid dat anonieme toegang (voor het Adf-gefinancierde model) en één beleid toestaat dat gebruikersnaam/wachtwoordauthentificatie (voor de andere 3 gebruiksmodellen) vereist. Bij het aanvragen van een licentie kan een clienttoepassing bepalen of de gebruiker wordt gevraagd om verificatie op basis van de verificatiegegevens in het beleid.
 
-Om het gebruiksmodel te bepalen waaronder een bepaalde gebruiker een licentie moet krijgen, kunnen vermeldingen worden toegevoegd aan de database van de referentieimplementatie. De `Customer` de lijst bevat gebruikersnamen en wachtwoorden voor het voor authentiek verklaren van gebruikers. Ook wordt aangegeven of de gebruiker een abonnement heeft. Gebruikers met abonnementen krijgen licenties toegewezen in het kader van de *Abonnement* gebruiksmodel. Om een gebruiker toegang te verlenen krachtens *Downloaden naar eigen* of *Video op aanvraag* gebruiksmodellen, kan een vermelding worden toegevoegd aan de `CustomerAuthorization` tabel, die elk stuk inhoud aangeeft waartoe de gebruiker toegang heeft en het gebruiksmodel. Zie de [!DNL PopulateSampleDB.sql] voor meer informatie over het vullen van elke tabel.
+Om het gebruiksmodel te bepalen waaronder een bepaalde gebruiker een licentie moet krijgen, kunnen vermeldingen worden toegevoegd aan de database van de referentieimplementatie. De `Customer` tabel bevat gebruikersnamen en wachtwoorden voor het verifiëren van gebruikers. Ook wordt aangegeven of de gebruiker een abonnement heeft. Gebruikers met abonnementen krijgen licenties toegewezen in het kader van de *Abonnement* gebruiksmodel. Om een gebruiker toegang te verlenen krachtens *Downloaden naar eigen* of *Video op aanvraag* gebruiksmodellen, kan een vermelding worden toegevoegd aan de `CustomerAuthorization` tabel, die elk stuk inhoud aangeeft waartoe de gebruiker toegang heeft en het gebruiksmodel. Zie de [!DNL PopulateSampleDB.sql] voor meer informatie over het vullen van elke tabel.
 
-Wanneer een gebruiker een licentie aanvraagt, controleert de server voor referentieimplementatie de metagegevens die door de client zijn verzonden om te bepalen of de inhoud is verpakt met de `RI_UsageModelDemo` eigenschap. In dat geval worden de volgende bedrijfsregels gebruikt:
+Wanneer een gebruiker een licentie aanvraagt, controleert de server voor referentieimplementatie de metagegevens die door de client zijn verzonden om te bepalen of de inhoud is verpakt met de `RI_UsageModelDemo` eigenschap. Zo ja, dan worden de volgende bedrijfsregels gebruikt:
 
 * Als een van de beleidsregels verificatie vereist:
 
@@ -46,11 +45,11 @@ Wanneer een gebruiker een licentie aanvraagt, controleert de server voor referen
          * Indien `CustomerAuthorization.UsageType` is `DTO`, een licentie genereren voor de *Downloaden naar eigen* -gebruiksmodel en deze naar de gebruiker sturen.
 
          * Indien `CustomerAuthorization.UsageType` is `VOD`, een licentie genereren voor de *Video op aanvraag* -gebruiksmodel en deze naar de gebruiker sturen.
+
    * Als geen van de beleidsregels anonieme toegang toestaat:
 
       * Als er geen geldig authentificatietoken in het verzoek is, keer een &quot;vereiste authentificatie&quot;fout terug.
       * Retourneer anders een fout &quot;niet geautoriseerd&quot;.
-
 
 * Als een van de beleidsregels anonieme toegang toestaat, genereert u een licentie voor het gebruiksmodel met advertenties en stuurt u deze naar de gebruiker.
 

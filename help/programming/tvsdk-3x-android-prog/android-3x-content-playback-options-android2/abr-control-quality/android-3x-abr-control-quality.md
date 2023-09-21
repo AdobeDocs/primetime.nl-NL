@@ -1,8 +1,7 @@
 ---
 description: HLS- en DASH-streams bieden verschillende bitsnelheidcoderingen (profielen) voor dezelfde korte videoprand. TVSDK kan het kwaliteitsniveau voor elke uitbarsting selecteren op basis van het huidige bufferniveau en de beschikbare bandbreedte.
 title: Adaptieve bitsnelheden (ABR) voor videokwaliteit
-exl-id: ed062ef9-138d-446a-a454-3cb19c3bb388
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '683'
 ht-degree: 0%
@@ -34,8 +33,8 @@ TVSDK controleert constant het beetjetarief om ervoor te zorgen dat de inhoud bi
    <td colname="col2"> <p>De schakelaars van de playback geleidelijk aan het hoogste beetje-tarief profiel wanneer mogelijk. U kunt het beleid voor omschakeling plaatsen ABR, die bepaalt hoe snel TVSDK tussen profielen schakelt. De standaardwaarde is <span class="codeph"> ABR_MODERATE</span>. </p> <p>Wanneer TVSDK besluit over te schakelen naar een hogere bitsnelheid, selecteert de speler het ideale bitsnelheidprofiel om over te schakelen op basis van het huidige ABR-beleid: 
      <ul id="ul_AC9C99D84A3B4A8DBD1A05CC05DEE771"> 
       <li id="li_B79C0AA2CBFB42FF98A257CEC9C400BA"><span class="codeph"> ABR_CONSERVATIVE</span>: Schakelt over naar het profiel met de volgende hogere bitsnelheid wanneer de bandbreedte 50% hoger is dan de huidige bitsnelheid. </li> 
-      <li id="li_38CC3A95D8634F359D0F7C273D0108C0"><span class="codeph"> ABR_MODERATE</span>: Schakelt over naar het volgende profiel met een hogere bitsnelheid wanneer de bandbreedte 20% hoger is dan de huidige bitsnelheid. </li> 
-      <li id="li_E845C035420D4B3FB2B179F448F8CA85"><span class="codeph"> ABR_AGGRESSIVE</span>: Schakelt onmiddellijk naar het hoogste beetje-tarief profiel wanneer de bandbreedte hoger is dan het huidige beetjetarief. </li> 
+      <li id="li_38CC3A95D8634F359D0F7C273D0108C0"><span class="codeph"> ABR_MODERATE</span>: schakelt naar het volgende hogere bitsnelheidprofiel wanneer de bandbreedte 20% hoger is dan de huidige bitsnelheid. </li> 
+      <li id="li_E845C035420D4B3FB2B179F448F8CA85"><span class="codeph"> ABR_AGGRESSIVE</span>: schakelt onmiddellijk naar het hoogste bitsnelheidprofiel wanneer de bandbreedte hoger is dan de huidige bitsnelheid. </li> 
      </ul> </p> <p>Als de aanvankelijke beetjetarief nul is, of niet wordt gespecificeerd maar een beleid wordt gespecificeerd, begint de playback met het laagste beetje tariefprofiel voor een conservatief beleid, het profiel dichtst bij de mediane beetjetarief van beschikbare profielen voor een gematigd beleid, en het hoogste beetje tariefprofiel voor een agressief beleid. </p> <p>Het beleid werkt in de beperkingen van de minimum en maximumbeetjetarieven, als deze tarieven worden gespecificeerd. </p> <p> <span class="codeph"> getABRPopolicy</span> retourneert de huidige instelling van het dialoogvenster <span class="codeph"> ABRControlParameters</span> getallen: <span class="codeph"> ABR_CONSERVATIVE</span>, <span class="codeph"> ABR_MODERATE</span>, of <span class="codeph"> ABR_AGGRESSIVE</span>. </p> <p>Zie het document over parameters voor ABR-besturing API voor meer informatie. </p> </td> 
   </tr> 
  </tbody> 

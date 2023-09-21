@@ -4,8 +4,7 @@ description: TVSDK 2.5 biedt meerdere voordelen ten opzichte van versie 1.4 in t
 contentOwner: vishgupt
 products: SG_PRIMETIME
 topic-tags: migration
-exl-id: 3b7f8355-ebea-4322-aef4-5393308391b5
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '2323'
 ht-degree: 0%
@@ -63,7 +62,7 @@ Directe factureringsverbeteringen maken het niet meer nodig om maandelijks handm
 
 ## Overzicht van het migratieproces {#overview-of-the-migration-process}
 
-Voor een vloeiende migratie van TVSDK 1.4 naar 2.5 moet u overschakelen naar versie 2.5-bibliotheken, opnieuw compileren en vervolgens met dit document problemen opsporen die zich voordoen.
+Voor een vloeiende migratie van TVSDK 1.4 naar 2.5 moet u overschakelen naar versie 2.5-bibliotheken, opnieuw compileren en vervolgens dit document gebruiken om fouten op te sporen die zich voordoen.
 
 TVSDK v1.4-bibliotheken werken niet met en bestaan niet samen met v2.5-bibliotheken. U moet v2.5-bibliotheken gebruiken met TVSDK 2.5 en uw toepassingen en integratie migreren voor een upgrade naar TVSDK 2.5. In dit document wordt beschreven hoe en wat er moet worden gewijzigd in uw toepassingscode en hoe fouten moeten worden aangepakt tijdens het opnieuw compileren.
 
@@ -76,7 +75,7 @@ Het bestand psdk.jar gebruikt bibliotheken van derden voor de ondersteuning van 
 { *; }
 ```
 
-In de `build.gradle` moet u de compilerinstructie opnemen om de JAR-bestanden op TVSDK-basis op te nemen. Als uw app Adobe Video Analytics bevat, moet u de compilatierichtlijn opnemen voor de extra potten die vereist zijn voor de integratie van Adobe Video Analytics in de app
+In de `build.gradle` moet u de compilerinstructie opnemen om de JAR-bestanden op TVSDK-basis op te nemen. Als uw app Adobe Video Analytics bevat, moet u de compilatierichtlijn opnemen voor de extra potjes die nodig zijn voor integratie van Video Analytics in de Adobe-app
 
 ```java
 # Compile Adobe TVSDK jars compile files('libs/psdk-va.jar')
@@ -85,7 +84,7 @@ compile files('libs/VideoHeartbeat.jar')
 
 Meerdere kleine wijzigingen worden niet in dit document behandeld. Raadpleeg voor kleine wijzigingen in de API [TVSDK 2.5 voor Java API voor Android](https://help.adobe.com/en_US/primetime/api/psdk/javadoc_2.5/index.html). De overeenkomstige C++ API verwijzing heeft gedetailleerde beschrijvingen. Voor analoge C++ API documentatie, zie [TVSDK 2.5 voor Android C++ API](https://help.adobe.com/en_US/primetime/api/psdk/cpp_2.5/index.html).
 
-Meerdere voorbeelden van het API-gebruik worden behandeld in de referentie-implementatie die met de TVSDK wordt gedistribueerd.
+Meerdere voorbeelden van het gebruik van de API worden behandeld in de referentie-implementatie die met de TVSDK wordt gedistribueerd.
 
 ## API-wijzigingen in TVSDK v2.5 {#api-changes-in-tvsdk-v}
 
@@ -93,7 +92,7 @@ De nieuwe, verouderde en gewijzigde API&#39;s worden hieronder beschreven.
 
 | TVSDK v1.4 | TVSDK v2.5 | Beschrijving |
 |--- |--- |--- |
-| import com.adobe.ave.drm.DRMAcquireLicenseSettings | import com.adobe.mediacore.drm.DRMAcquireLicenseSettings; | Alle klassenamen in de TVSDK 2.5-API beginnen met het voorvoegsel com.adobe.mediacore. Dit is slechts een voorbeeld. |
+| import com.adobe.ave.drm.DRMAcquireLicenseSettings | import com.adobe.media.drm.DRMAcquireLicenseSettings; | Alle klassenamen in de TVSDK 2.5-API beginnen met het voorvoegsel com.adobe.mediacore. Dit is slechts een voorbeeld. |
 | MediaPlayerException, IllegalStateException, of IllegalArgumentException | MediaPlayerException | In 2.5 genereren de API&#39;s alleen MediaPlayerException. |
 | MediaPlayer.PlayerState (MediaPlayer.Event.PLAYBACK) | MediaPlayerStatus (MediaPlayerEvent.STATUS_CHANGED) | In v2.5 werd de naam van MediaPlayer.PlayerState gewijzigd in een aparte opsomming MediaPlayerStatus. |
 | DefaultMediaPlayer.create (getActivity().getApplicationContext()) | MediaPlayer mediaPlayer = new MediaPlayer(getActivity(). getApplicationContext(); | De statische methoden die worden gebruikt om objecten te maken, worden vervangen door openbare constructors. |
@@ -288,7 +287,7 @@ public void adClick() { mediaPlayer.notifyClick();
 ```
 
 * De eerste `MediaPlayer.MediaPlayer.getNotificationHistory()` methode is nu verdwenen en niet vervangen.
-* De eerste `MediaPlayer.replaceCurrentItem()` wordt opgedeeld in twee methoden: `replaceCurrentResource()`, die een geval van `MediaResource`, en `replaceCurrentItem()`, die een geval van `MediaPlayerItem`. Bijvoorbeeld:
+* De eerste `MediaPlayer.replaceCurrentItem()` wordt opgedeeld in twee methoden: `replaceCurrentResource()`, die een voorbeeld neemt van `MediaResource`, en `replaceCurrentItem()`, die een voorbeeld neemt van `MediaPlayerItem`. Bijvoorbeeld:
 
 ```java
 //TVSDK v1.4
@@ -340,11 +339,11 @@ U kunt constructors gebruiken in TVSDK v2.5 in plaats van `create()` methoden va
 
 In sommige gevallen gebruikt de TVSDK v1.4-API het volgende patroon voor het maken van klassen:
 
-1. Een interface definiëren (bijvoorbeeld `MediaPlayer`).
+1. Definieer een interface (bijvoorbeeld `MediaPlayer`).
 1. Een standaardklasse opgeven (bijvoorbeeld `DefaultMediaPlayer`).
-1. Een `create()` methode op de standaardklasse om een klasse te leveren die de interface implementeert.
+1. Geef een `create()` methode op de standaardklasse om een klasse te leveren die de interface implementeert.
 
-In TVSDK v2.5 zijn dergelijke interfaces concrete klassen en u maakt instanties van deze klassen met de respectievelijke constructors. Dit verschil wordt geïllustreerd door de volgende codefragmenten:
+In TVSDK v2.5 zijn dergelijke interfaces concrete klassen en u maakt instanties van deze klassen met de respectievelijke constructors. De volgende codefragmenten illustreren dit verschil:
 
 ```java
 //TVSDK v1.4
@@ -364,7 +363,7 @@ new MediaPlayer(getActivity().getApplicationContext()); return mediaPlayer;
 Andere klassen die dit patroon niet volgen maar gebruiken `create()` onder 1.4 vallen onder meer:
 
 * MediaResource\
-   Dit werd voorheen gebruikt `MediaResource.createFromUrl()`. Gebruik nu de constructor, die een URL, een brontype en metagegevens gebruikt. Bijvoorbeeld:
+  Dit werd voorheen gebruikt `MediaResource.createFromUrl()`. Gebruik nu de constructor, die een URL, een brontype en metagegevens gebruikt. Bijvoorbeeld:
 
 ```java
 //TVSDK v1.4
@@ -389,10 +388,10 @@ Sommige klassen (bijvoorbeeld `ContentFactory`) zijn abstracte klassen zonder op
 
 **Wijzigingen in ondertiteling**
 
-De volgende wijzigingen zijn van toepassing op klassen die gerelateerd zijn aan ondertiteling:
+De volgende wijzigingen zijn van toepassing op klassen die te maken hebben met ondertiteling:
 
 * Bij het ophalen van Closed Caption-tracks, `MediaPlayerItem.getClosedCaptionTracks()` retourneert alleen actieve tracks.
-* `ClosedCaptionTrack` heeft geen `isActive()` methode.
+* `ClosedCaptionTrack` niet langer een `isActive()` methode.
 
 ```java
 //TVSDK v1.4
@@ -450,7 +449,7 @@ In TVSDK v1.4 wordt echter standaard een advertentie afgespeeld in het geval van
 
 **Wijziging van regels toevoegen**
 
-De regels voor Advertentie worden opgegeven met behulp van een JSON-bestand. De indeling van het JSON-bestand blijft in beide versies van de TVSDK hetzelfde. In TVSDK v2.5 moet het JSON-bestand met regels voor toevoegen echter worden gehost op een locatie die toegankelijk is via een HTTP-URL. De toepassing kan een instantie van AuditudeSettings gebruiken.
+De regels voor toevoegen worden opgegeven met behulp van een JSON-bestand. De indeling van het JSON-bestand blijft in beide versies van de TVSDK hetzelfde. In TVSDK v2.5 moet het JSON-bestand met regels voor toevoegen echter worden gehost op een locatie die toegankelijk is via een HTTP-URL. De toepassing kan een instantie van AuditudeSettings gebruiken.
 
 ```java
 //TVSDK v2.5
@@ -461,7 +460,7 @@ In TVSDK versie 1.4 wordt dit bestand onder de map assets in de toepassing gepla
 
 **Fabrieksnaam wijzigen**
 
-`AdvertisingFactory` is nu benoemd `ContentFactory`. Met `ContentFactory` u kunt aangepaste advertentiegereedschappen maken door een aantal methoden te overschrijven. Gebruik return null om het standaardgedrag te behouden, zoals in het volgende voorbeeld:
+`AdvertisingFactory` is nu benoemd `ContentFactory`. Met `ContentFactory` u kunt aangepaste advertentiegereedschappen maken door een aantal van de methoden te overschrijven. Gebruik return null om het standaardgedrag te behouden, zoals in het volgende voorbeeld:
 
 ```java
 //TVSDK v2.5
@@ -668,9 +667,9 @@ De volgende aanvullende wijzigingen zijn beschikbaar in versie 2.5:
 * `AdPolicyInfo` bevat nu een lijst met `AdBreakTimelineItem`, niet `AdBreakPlacement`.
 
 * API-naam van `ContentResolver` abstracte klasse wordt gewijzigd.
-* `PlacementOpportunityDetector` is niet meer beschikbaar. Breid in plaats daarvan de `OpportunityGenerator` abstracte klasse. De voorbeeldimplementatie is hiervan een voorbeeld.
+* `PlacementOpportunityDetector` is niet meer beschikbaar. In plaats daarvan breidt u de `OpportunityGenerator` abstracte klasse. De voorbeeldimplementatie is hiervan een voorbeeld.
 
-* De parameters van de `AdBreakPlacement` constructor is hetzelfde, maar in een andere volgorde. Voor een steekproefimplementatie, zie de implementatie van de Speler van de Verwijzing die met het product wordt gebundeld.
+* De parameters van `AdBreakPlacement` constructor is hetzelfde, maar in een andere volgorde. Zie de implementatie van Reference Player die bij het product is gebundeld voor een voorbeeldimplementatie.
 
 ## Wijzigingen in DRM {#changes-in-drm}
 
@@ -912,7 +911,7 @@ int nMaxTrickPlayBandwidthUsage, double dMaxPlayoutRate)
 
 **Wijzigingen in foutafhandeling**
 
-De `MediaError` klasse is vervangen door `Notification` klasse. Het enige verschil tussen de klassen `MediaError` en `Notification` is dat de laatste geen beschrijvingskenmerk bevat. De TVSDK 1.4-foutcodes met de waarden 101xxx, 102xxx, 104xxx, 106xxx, 107xxx, 109xxx bestaan niet in TVSDK 2.5. Voor de afspeelcodes in TVSDK 2.5 raadpleegt u [Native fout - waarden voor het afspelen van video](assets/psdk_android_2.5.pdf).
+De `MediaError` klasse is vervangen door `Notification` klasse. Het enige verschil tussen de klassen `MediaError` en `Notification` is dat de laatste geen beschrijvingskenmerk bevat. De TVSDK 1.4-foutcodes met de waarden 101xxx, 102xxx, 104xxx, 106xxx, 107xxx, 109xxx bestaan niet in TVSDK 2.5. Zie voor de afspeelcodes in TVSDK 2.5 [Native fout - waarden voor het afspelen van video](assets/psdk_android_2.5.pdf).
 
 Hieronder volgen voorbeelden van foutafhandeling in TVSDK 1.4 en 2.5:
 
@@ -956,7 +955,7 @@ default:
 };
 ```
 
-Alle herstelbare fouten worden behandeld als waarschuwingen en worden verwerkt met behulp van de `NotificationEventListener` in TVSDK 2.5. De waarschuwingen worden weergegeven als meldingen met de `onOperationFailed` Listener in de QOS-handler in TVSDK 1.4, waarbij de melding een aparte gebeurtenis is, net als in TVSDK 2.5. De in de punten 1.4 en 2.5 behandelde waarschuwing ziet er als volgt uit:
+Alle herstelbare fouten worden behandeld als waarschuwingen en worden verwerkt met de functie `NotificationEventListener` in TVSDK 2.5. De waarschuwingen worden weergegeven als meldingen met de `onOperationFailed` Listener in de QOS-handler in TVSDK 1.4, waarbij de melding een aparte gebeurtenis is, net als in TVSDK 2.5. De in de punten 1.4 en 2.5 behandelde waarschuwing ziet er als volgt uit:
 
 ```java
 //TVSDK v1.4

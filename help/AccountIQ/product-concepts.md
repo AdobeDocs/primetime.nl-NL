@@ -1,15 +1,14 @@
 ---
 title: Woordenlijst Account IQ
 description: Een verklarende woordenlijst van productterminologieën.
-exl-id: 2ee54442-9538-4c30-b999-265310b3935f
-source-git-commit: 4eb5ba53fb3e0a0c314695fcd30cf15c7242b53c
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '1456'
 ht-degree: 0%
 
 ---
 
-# Productconcepten en woordenlijst {#glossary}
+# Productconcepten en verklarende woordenlijst {#glossary}
 
 Verwijs de volgende productterminologieën en hun definities.
 
@@ -19,7 +18,7 @@ Een dashboardpaneel met grafieken die de huidige segmenten die scores delen, ver
 
 ## Handeling {#action-def}
 
-Een directe of indirecte gebeurtenis in verband met een [Bewerking](#operation-def) die van invloed is op de kenmerken (bijvoorbeeld de score voor delen of het aantal gebruikte apparaten) van een verwant bewerkingssegment (of cohort).
+Een directe of indirecte gebeurtenis in verband met een [Bewerking](#operation-def) die van invloed is op de kenmerken (bijvoorbeeld score delen of het aantal gebruikte apparaten) van een verwant bewerkingssegment (of cohort).
 
 ## Geaggregeerde score voor delen {#sharing-probability-level-def}
 
@@ -35,7 +34,7 @@ Het aantal geslaagde verificaties. Een succesvolle authentificatie komt voor wan
 
 ## AuthZ {#authz-def}
 
-Vergunning of het nummer van de vergunningsaanvraag. Een autorisatieverzoek is het proces waarbij een programmeur toestemming van een MVPD door Adobe vraagt beginnen streaming de gevraagde inhoud van een gebruiker. Het MVPD verleent typisch het verzoek dat op de inhoudsrechten wordt gebaseerd verbonden aan het abonnement MVPD van de gebruiker (bijvoorbeeld of het kanaal verbonden aan de inhoud in het abonnement van de gebruiker is). Sommige antwoorden van het vergunningsverzoek worden in het voorgeheugen ondergebracht door Adobe, die Adobe toestaat om onmiddellijk te antwoorden zonder het verzoek tot MVPD over te gaan.
+Vergunning of het nummer van de vergunningsaanvraag. Een autorisatieverzoek is het proces waarbij een programmeur toestemming van een MVPD door Adobe vraagt om beginnen het stromen van de gevraagde inhoud van een gebruiker. Het MVPD verleent typisch het verzoek dat op de inhoudsrechten wordt gebaseerd verbonden aan het abonnement MVPD van de gebruiker (bijvoorbeeld of het kanaal verbonden aan de inhoud in het abonnement van de gebruiker is). Sommige antwoorden van het vergunningsverzoek worden in het voorgeheugen ondergebracht door Adobe, die Adobe toestaat om onmiddellijk te antwoorden zonder het verzoek tot MVPD over te gaan.
 
 ## AuthZ OK {#authz-ok-def}
 
@@ -72,7 +71,7 @@ De afstand tussen de verste punten in een set locaties.
 
 ## Korreligheid {#granularity-def}
 
-de grootte van de periode ten opzichte van het tijdsbestek; zoals een week of een maand.
+De grootte van de periode (bijvoorbeeld een week of een maand) wordt uitgedrukt in een tijdskader.
 
 ## Gemiddelde industrie-index {#industry-avg-index-def}
 
@@ -80,7 +79,7 @@ Een waarde die voor elk van de Risicocijfers (Rekeningen, Gebruik, Algemeen) ove
 
 ## IP {#ip-def}
 
-Het adres van het Internet-protocol dat aan een apparaat door een Dienstverlener van Internet wordt toegewezen. Bijvoorbeeld, kabeldienstverlener, en de leverancier van de celdienst.
+Het adres van het Internet-protocol dat aan een apparaat door een Dienstverlener van Internet wordt toegewezen. Bijvoorbeeld, de leverancier van de kabeldienst, en de leverancier van de celdienst.
 
 ## Isolatiemodus {#isolation-mode-def}
 
@@ -112,7 +111,7 @@ MVPD, ook gekend als Verdeler, is aggregator, reseller, en verdeler van de video
 
 ## Bewerking {#operation-def}
 
-Bewerking is een record die is gemaakt om het effect van een bepaalde bewerking bij te houden [action](#action-def) op een bijbehorend segment. Een voorbeeld van een actie kan een grens zijn die op het aantal gezamenlijke stromen wordt geplaatst toegestaan voor rekeningen die door het segment worden geïdentificeerd.
+Bewerking is een record die is gemaakt om het effect van een bepaalde bewerking bij te houden [action](#action-def) op een gekoppeld segment. Een voorbeeld van een actie kan een grens zijn die op het aantal gezamenlijke stromen wordt geplaatst toegestaan voor rekeningen die door het segment worden geïdentificeerd.
 
 ## Algehele score voor delen {#overall-sharing-score}
 
@@ -126,7 +125,7 @@ A value computed as an average of "Risk Index - Accounts" and the "Risk Index - 
 
 ## Aanvraag afspelen {#play-requests-def}
 
-Een verzoek dat door een client-app of -site aan Adobe is gedaan om een mediatoken aan te vragen om een streamstart op te nemen en te beveiligen.
+Een verzoek dat door een client-app of -site aan Adobe wordt gedaan om een mediatoken aan te vragen om een streamstart op te nemen en te beveiligen.
 
 ## Programmeur {#programmer-def}
 
@@ -142,7 +141,7 @@ De inhoud die door de eindgebruiker wordt aangevraagd.  Traditioneel is hiermee 
 
 ## Risicoindex - gebruik {#risk-index-usage}
 
-Deze waarde, ook wel bekend als Gebruik van gedeelde accounts, wordt berekend op basis van het aantal afspeelverzoeken dat door elke account is ingediend, gewogen op basis van de waarschijnlijkheid dat elke account wordt gedeeld. Dit wordt ook wel &#39;Gebruik door gedeelde accounts&#39;-risicoindex genoemd.
+Deze waarde, ook wel bekend als Gebruik van gedeelde accounts, wordt berekend op basis van het aantal afspeelaanvragen dat door elke account wordt ingediend, gewogen op basis van de waarschijnlijkheid dat elke account wordt gedeeld. Dit wordt ook wel &#39;Gebruik door gedeelde accounts&#39;-risicoindex genoemd.
 
 ## Segment {#segmet-def}
 
@@ -170,7 +169,7 @@ Het percentageverschil in bijbehorende metrisch (bijvoorbeeld, percentage van to
 
 ## Unieke abonnees {#unique-subscriber-def}
 
-Het aantal unieke MVPD-accounts voor een bepaalde periode dat gedurende een bepaalde periode heeft samengewerkt met programmeur TV Anywhere apps of sites waarbij Adobe Pass is betrokken.  Die interactie omvat elke activiteit op de programmeur-app of -site die resulteert in een aanroep naar een Adobe Pass-service. Bijvoorbeeld het controleren van de status authN of authZ, het voor authentiek verklaren en het machtigen. Het totale aantal unieke abonnees zal ook het aantal unieke apparaten omvatten als het gebruik van Adobe TempPass (dat vrije voorproef) van programmeurs deel van het segment uitmaakt.
+Het aantal unieke MVPD-accounts voor een bepaalde periode dat gedurende een bepaalde periode heeft samengewerkt met programmeur TV Anywhere apps of sites waarbij Adobe Pass is betrokken.  Die interactie omvat elke activiteit op de programmeur-app of -site die resulteert in een aanroep naar een Adobe Pass-service. Bijvoorbeeld het controleren van de status authN of authZ, het voor authentiek verklaren en het machtigen. Het totale aantal unieke abonnees zal ook het aantal unieke apparaten omvatten als het gebruik van Adobe TempPass (dat vrije voorproef is) van programmeurs deel van het segment uitmaakt.
 
 ## Gebruik {#usage-defs}
 

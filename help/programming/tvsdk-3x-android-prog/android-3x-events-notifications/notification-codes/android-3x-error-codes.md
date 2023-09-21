@@ -1,8 +1,7 @@
 ---
 title: PSDK-foutcodes
 description: Informatie over verschillende foutcodes, waarschuwingen en native foutcodes.
-exl-id: 90d66c13-c40c-4602-83da-186c2b623375
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '1897'
 ht-degree: 6%
@@ -15,7 +14,7 @@ Lees verder voor meer informatie over PSDK-foutcodes, waarschuwingen en native f
 
 ## Fouten
 
-In de volgende tabel vindt u gedetailleerde informatie over meldingen van FOUTtypen. De meeste fouten bevatten relevante metagegevens. bijvoorbeeld de URL van de bron die niet is gedownload. Sommige meldingen bevatten metagegevens om op te geven of het probleem is opgetreden in de hoofdvideo-inhoud, in de alternatieve audio-inhoud of in een advertentie.
+In de volgende tabel vindt u gedetailleerde informatie over meldingen van FOUTtypen. De meeste fouten bevatten relevante metagegevens, bijvoorbeeld de URL van de bron die niet is gedownload. Sommige meldingen bevatten metagegevens om op te geven of het probleem is opgetreden in de hoofdvideo-inhoud, in de alternatieve audio-inhoud of in een advertentie.
 
 <table frame="all" colsep="1" rowsep="1">
   <tr> 
@@ -143,7 +142,7 @@ In de volgende tabel vindt u gedetailleerde informatie over meldingen van FOUTty
 ## Waarschuwingen
 
 De volgende lijst verstrekt gedetailleerde informatie over WARN typeberichten.
-De meeste waarschuwingen bevatten relevante metagegevens. bijvoorbeeld de URL van de bron die niet is gedownload. Sommige meldingen bevatten metagegevens om op te geven of het probleem is opgetreden in de hoofdvideo-inhoud, in de alternatieve audio-inhoud of in een advertentie.
+De meeste waarschuwingen bevatten relevante metagegevens, bijvoorbeeld de URL van de bron die niet is gedownload. Sommige meldingen bevatten metagegevens om op te geven of het probleem is opgetreden in de hoofdvideo-inhoud, in de alternatieve audio-inhoud of in een advertentie.
 
 <table frame="all" colsep="1" rowsep="1">
   <tr>
@@ -221,7 +220,7 @@ De interface Video Encoder van AVE keert deze videoplaybackberichten in het NATI
   <tr>
     <td>EOF</td>
     <td>2</td>
-    <td>Bewerking niet mogelijk vanwege bestandseinde (EOF).</td>
+    <td>Bewerking niet mogelijk vanwege bestandseinenvoorwaarde.</td>
   </tr>
   <tr>
     <td>DECODER_FAILED</td>
@@ -271,7 +270,7 @@ De interface Video Encoder van AVE keert deze videoplaybackberichten in het NATI
   <tr>
     <td>PARSE_ERROR</td>
     <td>12</td>
-    <td>Fout bij het parseren van het mediabestand.</td>
+    <td>Fout bij parseren van mediabestand.</td>
   </tr>
   <tr>  
     <td>SIZE_UNKNOWN</td>

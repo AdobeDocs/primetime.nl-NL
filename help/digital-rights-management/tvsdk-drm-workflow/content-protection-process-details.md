@@ -2,8 +2,7 @@
 title: Gegevens van het proces voor het verkrijgen van licenties
 description: Gegevens van het proces voor het verkrijgen van licenties
 copied-description: true
-exl-id: d772339a-8d05-401b-b5c1-18169b3627b6
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '968'
 ht-degree: 0%
@@ -33,7 +32,7 @@ Dit proces biedt een gedetailleerde weergave op API-niveau van de workflow voor 
 
    [Android: DRMMetadata](https://help.adobe.com/en_US/primetime/api/drm-apis/client/android/index.html)
 
-1. Maak listeners om te luisteren naar de `DRMStatusEvent` en `DRMErrorEvent` vanuit de `DRMManager` object.
+1. Maak listeners om te luisteren naar `DRMStatusEvent` en `DRMErrorEvent` vanuit de `DRMManager` object.
 
    ```
    DRMManager.addEventListener(DRMStatusEvent.DRM_STATUS, onDRMStatus); 
@@ -83,7 +82,7 @@ Probeer eerst een lokaal opgeslagen licentie te laden om de inhoud af te spelen:
 
       [Android: authenticate()](https://help.adobe.com/en_US/primetime/api/drm-apis/client/android/com/adobe/ave/drm/DRMManager.html#authenticate(com.adobe.ave.drm.DRMMetadata,%20java.lang.String,%20java.lang.String,%20java.lang.String,%20java.lang.String,%20com.adobe.ave.drm.DRMOperationErrorCallback,%20com.adobe.ave.drm.DRMAuthenticationCompleteCallback))
 
-      [iOS: authenticeren:](https://help.adobe.com/en_US/primetime/api/drm-apis/client/ios/interface_d_r_m_manager.html#a169c1441f196a834094a8e0f5ecb4aca)
+      [iOS: verifiëren:](https://help.adobe.com/en_US/primetime/api/drm-apis/client/ios/interface_d_r_m_manager.html#a169c1441f196a834094a8e0f5ecb4aca)
 
       >[!NOTE]
       >
@@ -99,11 +98,11 @@ Probeer eerst een lokaal opgeslagen licentie te laden om de inhoud af te spelen:
 
       >[!NOTE]
       >
-      >Alternatief, ongeacht de authentificatiemethode, `.setAuthenticationToken()` kan worden gebruikt om aangepaste gegevens van de client naar de licentieserver te verzenden. Dit is een overbelasting van de API, aangezien dit mechanisme de enige manier is om dynamische aangepaste gegevens van de client naar de licentieserver te verzenden op het moment dat de licentie wordt aangeschaft. Deze methode van het vervoer van douanegegevens wordt uitgebreid besproken in verscheidene forumposten in [Primetime DRM-forums (Adobe Access) ](https://forums.adobe.com/community/adobe_access).
+      >Alternatief, ongeacht de authentificatiemethode, `.setAuthenticationToken()` kan worden gebruikt om aangepaste gegevens van de client naar de licentieserver te verzenden. Dit is een overbelasting van de API, aangezien dit mechanisme de enige manier is om dynamische aangepaste gegevens van de client naar de licentieserver te verzenden op het moment dat de licentie wordt aangeschaft. Deze methode van het vervoer van douanegegevens wordt uitgebreid besproken in verscheidene forumposten in [Primetime DRM-forums (Adobe Access)](https://forums.adobe.com/community/adobe_access).
 
 1. Als de verificatie mislukt, moet uw toepassing terugkeren naar stap 6.
 
-   Zorg ervoor dat uw toepassing een mechanisme heeft om herhaalde mislukte verificaties af te handelen en te beperken. Zo kunt u na drie pogingen een bericht weergeven voor de gebruiker dat de verificatie is mislukt en dat de inhoud niet kan worden afgespeeld.
+   Zorg ervoor dat uw toepassing een mechanisme heeft om herhaalde mislukte verificaties af te handelen en te beperken. Zo kunt u na drie pogingen een bericht weergeven dat de verificatie is mislukt en dat de inhoud niet kan worden afgespeeld.
 1. Als u het opgeslagen token wilt gebruiken in plaats van de gebruiker te vragen referenties in te voeren, stelt u het token in met het `DRMManager.setAuthenticationToken()` methode.
 
    Vervolgens downloadt u de licentie van de licentieserver en speelt u de inhoud af zoals in stap 6.

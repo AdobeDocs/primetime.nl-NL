@@ -2,8 +2,7 @@
 title: Wachtwoorden voorbereiden voor de bestanden met servereigenschappen
 description: Wachtwoorden voorbereiden voor de bestanden met servereigenschappen
 copied-description: true
-exl-id: 70f75640-7075-450a-8191-dc348bd269b8
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '137'
 ht-degree: 0%
@@ -18,12 +17,12 @@ Het gereedschap uitvoeren met behulp van het volgende ANT-script:
 
 * Ga naar *`<Reference Implementation Server Path>`* [!DNL \refimpl]
 
-* Zorg ervoor dat de `sdkdir` eigenschap in [!DNL build-refimpl.xml] verwijst naar de map met de SDK van Adobe Access
-* Voer het volgende bevel in werking gebruikend ANT:
+* Zorg ervoor dat `sdkdir` eigenschap in [!DNL build-refimpl.xml] verwijst naar de map met de Adobe Access SDK
+* Voer het volgende bevel in werking gebruikend ANDER:
 
-   ```
-       ant -f build-refimpl.xml
-   ```
+  ```
+      ant -f build-refimpl.xml
+  ```
 
 * Typ desgevraagd het wachtwoord van uw referentie
 
@@ -35,17 +34,17 @@ Het gereedschap uitvoeren met Java:
 
 * In Windows:
 
-   ```
-   java -classpath path_to_adobe-flashaccess-sdk.jar;.  
-   com.adobe.flashaccess.refimpl.util.ScrambleUtil your_pfx_password
-   ```
+  ```
+  java -classpath path_to_adobe-flashaccess-sdk.jar;.  
+  com.adobe.flashaccess.refimpl.util.ScrambleUtil your_pfx_password
+  ```
 
 * In Linux:
 
-   ```
-       java -classpath path_to_adobe-flashaccess-sdk.jar;.  
-       com.adobe.flashaccess.refimpl.util.ScrambleUtil your_pfx_password
-   ```
+  ```
+      java -classpath path_to_adobe-flashaccess-sdk.jar;.  
+      com.adobe.flashaccess.refimpl.util.ScrambleUtil your_pfx_password
+  ```
 
 Het nut output het gecodeerde wachtwoord, dat u aan het .properties- dossier moet kopiëren.
 

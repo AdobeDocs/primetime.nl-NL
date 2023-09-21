@@ -1,8 +1,7 @@
 ---
 description: De FairPlay-interface voor licentietoken biedt productie- en testservices.
-title: Aanvraag voor FairPlay-licentietoken/reactie
-exl-id: 7073a74b-d907-4d45-8550-4305655c33f5
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+title: Aanvraag/reactie voor FairPlay-licentietoken
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '814'
 ht-degree: 4%
@@ -38,13 +37,13 @@ De FairPlay-interface voor licentietoken biedt productie- en testservices. Dit v
 
 * **Samplereactie:**
 
-   ```
-   https://fp.service.expressplay.com:80/hms/fp/rights/?ExpressPlayToken=<base64-encoded ExpressPlay token>
-   ```
+  ```
+  https://fp.service.expressplay.com:80/hms/fp/rights/?ExpressPlayToken=<base64-encoded ExpressPlay token>
+  ```
 
 **Query-parameters aanvragen**
 
-**Tabel 3: Parameters tokenquery**
+**Tabel 3: parameters voor tokenquery**
 
 | Query-parameter | Beschrijving | Vereist? |
 |--- |--- |--- |
@@ -59,12 +58,12 @@ De FairPlay-interface voor licentietoken biedt productie- en testservices. Dit v
 | `kek` | Key Encryption Key (KEK). Toetsen worden gecodeerd met een KEK opgeslagen met behulp van een sleutelomsluitingsalgoritme (AES Key Wrap, RFC3394). Indien `kek` wordt geleverd, een van de `kid` of de `ek` de parameters moeten worden verstrekt; *maar niet beide*. | Nee |
 | `kid` | Een hexadecimale tekenreeksrepresentatie van 16 bytes van de coderingssleutel voor inhoud of een tekenreeks `'^somestring'`. De lengte van de tekenreeks, gevolgd door de `'^'` mag niet groter zijn dan 64 tekens. | Nee |
 | `ek` | Een hexadecimale tekenreeksrepresentatie van de gecodeerde inhoudssleutel. | Nee |
-| `contentKey` | Een hexadecimale tekenreeksrepresentatie van 16 bytes van de coderingssleutel voor inhoud | Ja, tenzij `kek` en `ek` of `kid` worden verstrekt. |
+| `contentKey` | Een hexadecimale tekenreeksrepresentatie van 16 bytes van de coderingssleutel voor inhoud | Ja, tenzij de `kek` en `ek` of `kid` worden verstrekt. |
 | `iv` | A 16 byte hexadecimale koordvertegenwoordiging van de inhoud encryptie IV | Ja |
 | `rentalDuration` | Duur van de huur in seconden (standaardwaarde - 0) | Nee |
 | `fpExtension` | Een korte tekstomloop `extensionType` en `extensionPayload`, als een door komma&#39;s gescheiden tekenreeks. Bijvoorbeeld: [...] `&fpExtension=wudo,AAAAAA==&`[...] | Nee, elk nummer kan worden gebruikt |
 
-**Tabel 5: Parameters query-beperking token**
+**Tabel 5: parameters voor tokenrestricties**
 
 <table id="table_ar3_lsx_pv">  
  <thead> 
@@ -77,13 +76,13 @@ De FairPlay-interface voor licentietoken biedt productie- en testservices. Dit v
  <tbody> 
   <tr> 
    <td> <span class="codeph"> expirationTime </span> </td> 
-   <td> Vervaltijd van deze token. Deze waarde MOET een tekenreeks zijn in <a href="https://www.ietf.org/rfc/rfc3339.txt" format="html" scope="external"> RFC 3339 </a> datum-/tijdnotatie in de zoneaanduiding "Z" ("Zulu-tijd") of een geheel getal voorafgegaan door een plusteken (+). Een voorbeeld van een RFC 3339 datum/tijd is <span class="codeph"> 2006-04-14T12:01:10Z </span>. <p>Als de waarde een tekenreeks is in <a href="https://www.ietf.org/rfc/rfc3339.txt" format="html" scope="external"> RFC 3339 </a> datum-/tijdnotatie, dan staat deze voor een absolute vervaldatum/tijd voor het token. Als de waarde een geheel getal is dat wordt voorafgegaan door een plusteken (+), wordt deze geïnterpreteerd als een relatief aantal seconden vanaf de uitgifte, dat de token geldig is. </p> Bijvoorbeeld: <span class="codeph"> +60 </span> geeft één minuut aan. De maximum en standaard (als gespecificeerd niet) symbolische levensduur is 30 dagen. </td> 
+   <td> Vervaltijd van deze token. Deze waarde MOET een tekenreeks zijn in <a href="https://www.ietf.org/rfc/rfc3339.txt" format="html" scope="external"> RFC 339 </a> datum-/tijdnotatie in de zoneaanduiding "Z" ("Zulu-tijd") of een geheel getal voorafgegaan door een plusteken (+). Een voorbeeld van een RFC 3339 datum/tijd is <span class="codeph"> 2006-04-14T12:01:10Z </span>. <p>Als de waarde een tekenreeks is in <a href="https://www.ietf.org/rfc/rfc3339.txt" format="html" scope="external"> RFC 339 </a> datum-/tijdnotatie, dan staat deze voor een absolute vervaldatum/tijd voor het token. Als de waarde een geheel getal is dat wordt voorafgegaan door een plusteken (+), wordt deze geïnterpreteerd als een relatief aantal seconden vanaf de uitgifte, dat de token geldig is. </p> Bijvoorbeeld: <span class="codeph"> +60 </span> geeft één minuut aan. De maximum en standaard (als gespecificeerd niet) symbolische levensduur is 30 dagen. </td> 
    <td> Nee </td> 
   </tr> 
  </tbody> 
 </table>
 
-**Tabel 6: Zoekparameters correleren**
+**Tabel 6: Concordantiequery-parameters**
 
 | **Query-parameter** | **Beschrijving** | **Vereist?** |
 |---|---|---|
@@ -133,7 +132,7 @@ De FairPlay-interface voor licentietoken biedt productie- en testservices. Dit v
   </tr> 
   <tr> 
    <td> -2018 </td> 
-   <td> Verificatietoken ongeldig: &lt;details&gt; <p>Opmerking: Dit kan gebeuren als de authenticator het mis heeft of als de test-API wordt benaderd op <span class="filepath"> *.test.expression.splay.com </span> het gebruik van de authenticator van de productie en omgekeerd. </p> <p importance="high">Opmerking: De SDK van de Test en het Geavanceerde Hulpmiddel van de Test (ATT) werken slechts met <span class="filepath"> *.test.expression.splay.com </span>overwegende dat de productiemiddelen <span class="filepath"> *.service.expressplay.com </span>. </p> </td> 
+   <td> Verificatietoken ongeldig: &lt;details&gt; <p>Opmerking: dit kan gebeuren als de authenticator het mis heeft of als de test-API wordt benaderd op <span class="filepath"> *.test.expressplay.com </span> het gebruik van de authenticator van de productie en omgekeerd. </p> <p importance="high">Opmerking: de testSDK en het geavanceerde testgereedschap (ATT) werken alleen met <span class="filepath"> *.test.expressplay.com </span>overwegende dat de productiemiddelen <span class="filepath"> *.service.expressplay.com </span>. </p> </td> 
   </tr> 
   <tr> 
    <td> -2019 </td> 
@@ -157,7 +156,7 @@ De FairPlay-interface voor licentietoken biedt productie- en testservices. Dit v
   </tr> 
   <tr> 
    <td> -2025 </td> 
-   <td> Ongeldige afspeelduur verhuur </td> 
+   <td> Ongeldige afspeelduur van verhuur </td> 
   </tr> 
   <tr> 
    <td> -2027 </td> 

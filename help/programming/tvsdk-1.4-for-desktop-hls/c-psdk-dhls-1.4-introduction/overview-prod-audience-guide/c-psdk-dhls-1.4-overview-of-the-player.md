@@ -1,8 +1,7 @@
 ---
 description: TVSDK voor Desktop HLS omvat een verscheidenheid van eigenschappen en verstrekt de volgende belangrijkste mogelijkheden
 title: Functies van Primetime TVSDK
-exl-id: d78ca77e-b29c-4fae-8ab9-edc55ab12847
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '243'
 ht-degree: 0%
@@ -24,7 +23,7 @@ TVSDK voor Desktop HLS omvat een verscheidenheid van eigenschappen en verstrekt 
    * Ondersteuning voor failover van Live manifest
    * Aanpasbare afspeelbuffers
    * 302 Redirect optimization
-   * De duur, de grootte en de tijd-aan-download steun van het fragment volgen
+   * Ondersteuning voor het bijhouden van de duur, de grootte en de tijd-tot-downloadtijd van fragmenten
 
 * Reclame
 
@@ -38,7 +37,7 @@ TVSDK voor Desktop HLS omvat een verscheidenheid van eigenschappen en verstrekt 
 
 * Inhoudsbescherming
 
-   * Toegang tot DRM-gerelateerde diensten
+   * Toegang tot DRM-gerelateerde diensten (Digital Rights Management)
    * Afspelen van HLS-streams zonder codering of met Protected HTTP Live Streaming (PHLS)
    * Op resolutie-gebaseerde outputcontrole, die op beleid DRM wordt gebaseerd
    * Sessiecookie en ondersteuning voor audioframes

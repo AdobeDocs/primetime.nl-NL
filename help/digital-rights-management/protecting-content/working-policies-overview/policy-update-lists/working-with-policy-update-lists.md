@@ -2,8 +2,7 @@
 title: Werken met DRM-beleidsupdatelijsten
 description: Werken met DRM-beleidsupdatelijsten
 copied-description: true
-exl-id: 140f1fff-2078-427b-ade2-8ec18a14216f
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '596'
 ht-degree: 0%
@@ -28,7 +27,7 @@ U kunt ook elk DRM-beleid intrekken als eigenaars of distributeurs van inhoud he
 
 ## Lijst met beleidsupdates bijwerken{#update-policy-update-lists}
 
-Het werken met DRM de lijsten van beleidsupdates impliceert het gebruik van een `PolicyUpdateListFactory` object. Als u een lijst van DRM beleidsupdate wilt tot stand brengen, moet u een bestaande DRM beleidsupdate lijst laden, en dan controleren of een beleid DRM door Java API is bijgewerkt of ingetrokken.
+Het werken met DRM de lijsten van beleidsupdates impliceert het gebruik van `PolicyUpdateListFactory` object. Als u een lijst van DRM beleidsupdate wilt tot stand brengen, moet u een bestaande DRM beleidsupdate lijst laden, en dan controleren of een beleid DRM door Java API is bijgewerkt of ingetrokken.
 
 Om met de Lijsten van de Update van het Beleid te werken DRM:
 
@@ -39,7 +38,7 @@ Om met de Lijsten van de Update van het Beleid te werken DRM:
 1. Een `PolicyRevocationEntry` object met de DRM-beleids-id `String` die u net creeerde, en dan het toevoegen aan de DRM lijst van de beleidsupdate door het over te gaan in `PolicyUpdateListFactory.addRevocationEntry()`.
 1. Genereer de nieuwe DRM-beleidsupdate door `PolicyUpdateListFactory.generatePolicyUpdateList()`.
 
-   Op dezelfde manier kunt u beleid DRM aan de lijst bijwerken door te gebruiken `PolicyUpdateEntry`.
+   U kunt DRM-beleid ook bijwerken naar de lijst met `PolicyUpdateEntry`.
 1. Als er al een lijst met DRM-beleidsupdates bestaat, kunt u deze voor het laden serialiseren door `PolicyUpdateList.getBytes()`.
 
    Om de lijst te laden, roep `PolicyUpdateListFactory.loadPolicyUpdateList()` en geef het in de geserialiseerde lijst door.

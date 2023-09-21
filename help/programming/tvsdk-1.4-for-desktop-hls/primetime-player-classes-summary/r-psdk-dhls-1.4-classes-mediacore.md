@@ -1,8 +1,7 @@
 ---
-description: U kunt de API voor primetime Player gebruiken om het gedrag van de speler aan te passen. Deze klassen beschrijven uw mediaspeler en de bijbehorende bron.
+description: U kunt de API van de Speler van de Primetime gebruiken om het gedrag van de speler aan te passen. Deze klassen beschrijven uw mediaspeler en de bijbehorende bron.
 title: Mediacore-klassen
-exl-id: 8948484d-a48d-49b4-ac11-b68f1abaf706
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '667'
 ht-degree: 0%
@@ -11,9 +10,9 @@ ht-degree: 0%
 
 # Mediacore-klassen{#mediacore-classes}
 
-U kunt de API voor primetime Player gebruiken om het gedrag van de speler aan te passen. Deze klassen beschrijven uw mediaspeler en de bijbehorende bron.
+U kunt de API van de Speler van de Primetime gebruiken om het gedrag van de speler aan te passen. Deze klassen beschrijven uw mediaspeler en de bijbehorende bron.
 
-Ga naar de [Adobe Primetime API-verwijzingen](https://help.adobe.com/en_US/primetime/api/index.html).
+Ga voor de volledige API-documentatie voor TVSDK naar de [Adobe Primetime API-verwijzingen](https://help.adobe.com/en_US/primetime/api/index.html).
 
 Deze klassen beschrijven uw mediaspeler en de bijbehorende bronnen.
 Pakket: [com.adobe.mediacore](https://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls_1.4/com/adobe/mediacore/package-detail.html)
@@ -28,7 +27,7 @@ Pakket: [com.adobe.mediacore](https://help.adobe.com/en_US/primetime/api/psdk/as
  <tbody> 
   <tr rowsep="1"> 
    <td colname="1"><span class="codeph"><a href="https://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls_1.4/com/adobe/mediacore/ABRControlParameters.html" format="html" scope="external"> ABRControlParameters</a> </span> </td> 
-   <td colname="2"> Klasse die alle adaptieve parameters voor bitsnelheidbeheersing inkapselt. </td> 
+   <td colname="2"> Klasse die alle adaptieve parameters voor bitsnelheidregeling omvat. </td> 
   </tr> 
   <tr rowsep="1"> 
    <td colname="1"><span class="codeph"><a href="https://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls_1.4/com/adobe/mediacore/BufferControlParameters.html" format="html" scope="external"> BufferControlParameters</a></span> </td> 
@@ -72,7 +71,7 @@ Pakket: [com.adobe.mediacore](https://help.adobe.com/en_US/primetime/api/psdk/as
   </tr> 
   <tr rowsep="1"> 
    <td colname="1"><span class="codeph"><a href="https://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls_1.4/com/adobe/mediacore/MediaPlayer.html" format="html" scope="external"> MediaPlayer</a></span> </td> 
-   <td colname="2">Openbare interface voor de <span class="codeph"> DefaultMediaPlayer</span> klasse. Omvat opsommingen voor Gebeurtenis, PlayerState, en Zichtbaarheid. </td> 
+   <td colname="2">Openbare interface voor <span class="codeph"> DefaultMediaPlayer</span> klasse. Omvat opsommingen voor Gebeurtenis, PlayerState, en Zichtbaarheid. </td> 
   </tr> 
   <tr rowsep="1"> 
    <td colname="1"><span class="codeph"><a href="https://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls_1.4/com/adobe/mediacore/MediaPlayerConfig.html" format="html" scope="external"> MediaPlayerConfig</a> </span> </td> 
@@ -80,7 +79,7 @@ Pakket: [com.adobe.mediacore](https://help.adobe.com/en_US/primetime/api/psdk/as
   </tr> 
   <tr rowsep="1"> 
    <td colname="1"><span class="codeph"><a href="https://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls_1.4/com/adobe/mediacore/MediaPlayerContext.html" format="html" scope="external"> MediaPlayerContext</a></span> </td> 
-   <td colname="2"> Klasse die aanvullende context biedt aan de mediaspeler. </td> 
+   <td colname="2"> Klasse die extra context aan media speler verstrekt. </td> 
   </tr> 
   <tr rowsep="1"> 
    <td colname="1"><span class="codeph"><a href="https://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls_1.4/com/adobe/mediacore/MediaPlayerItem.html" format="html" scope="external"> MediaPlayerItem</a></span> </td> 

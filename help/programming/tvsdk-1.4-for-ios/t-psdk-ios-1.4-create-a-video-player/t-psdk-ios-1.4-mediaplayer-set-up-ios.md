@@ -1,8 +1,7 @@
 ---
 description: Met de PTMediaPlayer-interface worden de functionaliteit en het gedrag van een mediaspelerobject ingekapseld.
 title: PTMediaPlayer instellen
-exl-id: cf8f46c8-c52a-4f44-b493-965ce1b50c68
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '181'
 ht-degree: 0%
@@ -13,7 +12,7 @@ ht-degree: 0%
 
 TVSDK beschikt over gereedschappen voor het maken van een geavanceerde videospelertoepassing (uw Primetime-speler), die u kunt integreren met andere Primetime-componenten.
 
-Gebruik de gereedschappen van uw platform om een speler te maken en deze aan te sluiten op de weergave van de mediaspeler in TVSDK, die beschikt over methoden om video&#39;s af te spelen en te beheren. TVSDK beschikt bijvoorbeeld over afspeel- en pauzemethoden. U kunt gebruikersinterfaceknoppen op uw platform tot stand brengen en de knopen plaatsen om die methodes te roepen TVSDK.
+Gebruik de gereedschappen van uw platform om een speler te maken en deze aan te sluiten op de weergave van de mediaspeler in TVSDK, die beschikt over methoden om video&#39;s af te spelen en te beheren. TVSDK beschikt bijvoorbeeld over afspeel- en pauzemethoden. U kunt gebruikersinterfaceknoppen op uw platform creëren en de knopen plaatsen om die methodes te roepen TVSDK.
 
 Met de PTMediaPlayer-interface worden de functionaliteit en het gedrag van een mediaspelerobject ingekapseld.
 

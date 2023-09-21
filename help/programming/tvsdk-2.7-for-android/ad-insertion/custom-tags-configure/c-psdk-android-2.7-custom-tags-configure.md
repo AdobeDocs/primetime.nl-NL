@@ -1,8 +1,7 @@
 ---
 description: Mediastreams kunnen aanvullende metagegevens in de vorm van tags in het bestand playlist/manifest bevatten. Dit bestand geeft de plaatsing van de reclame aan. U kunt aangepaste tagnamen opgeven en een melding ontvangen wanneer bepaalde tags in het manifestbestand worden weergegeven.
 title: Aangepaste tags
-exl-id: 4a9991e1-f3d1-479c-b497-4d3c738e9a57
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '328'
 ht-degree: 0%

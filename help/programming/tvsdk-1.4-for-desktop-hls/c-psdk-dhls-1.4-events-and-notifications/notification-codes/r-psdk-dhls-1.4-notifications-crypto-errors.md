@@ -1,17 +1,16 @@
 ---
-description: De cryptomodule van de Adobe video-engine retourneert deze meldingen in het metagegevensobject NATIVE_ERROR.
+description: De cryptomodule van de Adobe videomotor keert deze berichten in het NATIVE_ERROR meta-gegevensvoorwerp terug.
 title: Crypto-waarden NATIVE_ERROR
-exl-id: c14b35c1-ed91-4a44-b826-fd6a05dbe345
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '83'
 ht-degree: 8%
 
 ---
 
-# NATIVE_ERROR: Cryptowaarden{#native-error-crypto-values}
+# NATIVE_ERROR: Crypto-waarden{#native-error-crypto-values}
 
-De cryptomodule van de Adobe video-engine retourneert deze meldingen in het metagegevensobject NATIVE_ERROR.
+De cryptomodule van de Adobe videomotor keert deze berichten in het NATIVE_ERROR meta-gegevensvoorwerp terug.
 
 | Waarde voor de metagegevenssleutel RUNTIME_CODE | Waarde voor de metagegevenssleutel RUNTIME_CODE_MESSAGE | Betekenis |
 |---|---|---|

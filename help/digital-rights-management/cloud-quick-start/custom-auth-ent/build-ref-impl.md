@@ -1,16 +1,15 @@
 ---
-title: De BES-voorbeeldimplementatie opbouwen
-description: De BES-voorbeeldimplementatie opbouwen
+title: De BES-referentieimplementatie opbouwen
+description: De BES-referentieimplementatie opbouwen
 copied-description: true
-exl-id: 330c14de-fe4e-4cc8-b0a5-8f7c74417adf
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '78'
 ht-degree: 0%
 
 ---
 
-# De BES-voorbeeldimplementatie opbouwen {#build-the-bees-reference-implementation}
+# De BES-referentieimplementatie opbouwen {#build-the-bees-reference-implementation}
 
 Zorg ervoor dat u Java 1.6.0_24 of hoger gebruikt.
 1. De benodigde lege paden vullen, zoals `tomcatdir` en `fasterxmldir` in [!DNL build-bees.xml]

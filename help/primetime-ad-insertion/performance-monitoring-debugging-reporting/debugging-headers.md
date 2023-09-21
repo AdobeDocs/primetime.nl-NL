@@ -2,8 +2,7 @@
 title: Fouten opsporen in koppen
 description: Fouten opsporen in koppen
 copied-description: true
-exl-id: 42c19089-2c61-4622-b53a-c28b8d495ef8
-source-git-commit: 3e63c187f12d1bff53370bbcde4d6a77f58f3b4f
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '257'
 ht-degree: 7%
@@ -21,7 +20,7 @@ De velden worden als volgt beschreven:
 
 | Naam | Beschrijving | Voorbeeld |
 |--- |--- |--- |
-| isActivePreroll | Of een advertentieoproep voor de prullenbak is verzonden | 0 |
+| isActivePreroll | Of er een advertentieoproep voor de prullenbak is verzonden | 0 |
 | isActiveMidroll | Of een ad call for midroll werd verzonden | 1 |
 | Aanvraag-id | Interne SSAI | 1594181097704 |
 | Sessie-id | Sessie-id van de aanvraag | 15126333-5ba9-49b8-a219-4f37e60d259c |
@@ -35,7 +34,7 @@ De velden worden als volgt beschreven:
 | Aantal ingevoegde advertenties | Aantal advertenties die in het manifest zijn ingevoegd | 2 |
 | Tijdstip bronmanifest | Tijd besteed aan het ophalen van alleen inhoud | 185 |
 | Totale tijd van aanvraag | Totale tijd die is besteed aan het ophalen van inhoud en advertenties | 497 |
-| Fetch-tijd voor manifest toevoegen (totaal) | Totale hoeveelheid tijd voor het ophalen en manifesten | 204 |
+| Fetch-tijd voor kunstmanifest (totaal) | Totale hoeveelheid tijd voor het ophalen en manifesten | 204 |
 | Geanifest fest fetch time (werkelijke) | Werkelijke hoeveelheid tijd voor het ophalen en tegelijkertijd manifesten | 104 |
 | Cachetips voor inhoud | Aantal treffers voor inhoudscache | 0 |
 | Inhoudcache-fout | Aantal ontbrekende inhoudcache | 1 |

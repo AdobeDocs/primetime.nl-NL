@@ -1,8 +1,7 @@
 ---
-description: Laad een bron door rechtstreeks een MediaResource te instantiëren en de video-inhoud te laden die moet worden afgespeeld. Dit is een manier om een mediabrondel te laden.
+description: Laad een bron door rechtstreeks een MediaResource te instantiëren en de te spelen video-inhoud te laden. Dit is een manier om een mediabrondel te laden.
 title: Een mediabron laden in de MediaPlayer
-exl-id: 2d5e95bc-3962-4356-b90f-e550066f7a70
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '220'
 ht-degree: 0%
@@ -11,13 +10,13 @@ ht-degree: 0%
 
 # Een mediabron laden in de MediaPlayer {#load-a-media-resource-in-the-mediaplayer}
 
-Laad een bron door rechtstreeks een MediaResource te instantiëren en de video-inhoud te laden die moet worden afgespeeld. Dit is een manier om een mediabrondel te laden.
+Laad een bron door rechtstreeks een MediaResource te instantiëren en de te spelen video-inhoud te laden. Dit is een manier om een mediabrondel te laden.
 
 1. Plaats het playable punt van uw MediaPlayer met de nieuwe te spelen bron.
 
-   Vervang het momenteel afspeelbare item van uw bestaande MediaPlayer door het aanroepen van `MediaPlayer.replaceCurrentItem` en bestaande `MediaResource` -instantie.
+   Vervang het momenteel afspeelbare item van uw bestaande MediaPlayer door het aanroepen van `MediaPlayer.replaceCurrentItem` en het doorgeven van bestaande `MediaResource` -instantie.
 
-1. Een implementatie van de `MediaPlayer.PlaybackEventListener` met de `MediaPlayer` -instantie.
+1. Een implementatie van de `MediaPlayer.PlaybackEventListener` interface met de `MediaPlayer` -instantie.
 
    * `onPrepared`
    * `onStateChanged`en controleer op INITIALIZED en ERROR.
@@ -30,13 +29,12 @@ Laad een bron door rechtstreeks een MediaResource te instantiëren en de video-i
 
    Wanneer de mediastream is geladen, wordt een `MediaPlayerItem` wordt gemaakt.
 
->Als er een fout optreedt, wordt `MediaPlayer` schakelt over naar de status ERROR. Het brengt ook uw toepassing op de hoogte door uw `PlaybackEventListener.onStateChanged`callback.
+>Als er een fout optreedt, wordt de `MediaPlayer` schakelt over naar de status ERROR. Het brengt ook uw toepassing op de hoogte door uw `PlaybackEventListener.onStateChanged`callback.
 >
 >Hiermee worden verschillende parameters doorgegeven:
 >* A `state` parameter of type `MediaPlayer.PlayerState` met de waarde van `MediaPlayer.PlayerState.ERROR`.
 >
 >* A `notification` parameter of type `MediaPlayerNotification` die diagnostische informatie over de foutgebeurtenis bevat.
-
 
 De volgende vereenvoudigde voorbeeldcode illustreert het proces om een media middel te laden:
 

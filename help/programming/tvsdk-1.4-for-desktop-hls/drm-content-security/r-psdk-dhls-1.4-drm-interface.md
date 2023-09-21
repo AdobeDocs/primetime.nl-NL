@@ -1,8 +1,7 @@
 ---
 description: Het belangrijkste client-side element van het DRM-systeem (Primetime Digital Rights Management) is DRM Manager.
 title: Overzicht van de primaire DRM-interface
-exl-id: 8d6b9416-5d8a-4d1e-b8e6-47c43389f079
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '225'
 ht-degree: 0%
@@ -23,9 +22,9 @@ Dit zijn de belangrijkste API-elementen voor het werken met DRM:
 
 * Een verwijzing in de mediaspeler naar het DRM-beheerobject dat het DRM-subsysteem implementeert:
 
-   ```
-   public function get drmManager():DRMManager 
-   ```
+  ```
+  public function get drmManager():DRMManager 
+  ```
 
 <!--<a id="section_4204CE2731A44F67A3664AEDE8CCCA47"></a>-->
 

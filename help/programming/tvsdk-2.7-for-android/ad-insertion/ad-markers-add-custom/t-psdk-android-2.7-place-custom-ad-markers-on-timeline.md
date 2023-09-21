@@ -1,8 +1,7 @@
 ---
 description: In dit voorbeeld ziet u de aanbevolen manier om aangepaste en markeertekens op de afspeeltijdlijn op te nemen.
 title: Aangepaste markeertekens op de tijdlijn plaatsen
-exl-id: a5dafca5-5217-4800-a467-ad5c51471bc2
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '338'
 ht-degree: 0%
@@ -24,15 +23,15 @@ In dit voorbeeld ziet u de aanbevolen manier om aangepaste en markeertekens op d
 Hier volgt het resultaat van het voltooien van de taken in dit voorbeeld: >
 * Indien een `ReplaceTimeRange` overlapt een andere gebeurtenis op de afspeeltijdlijn, bijvoorbeeld de beginpositie van een `ReplaceTimeRange` eerder is dan een reeds geplaatste eindpositie, wordt het begin van de overtreding stilletjes aangepast door TVSDK `ReplaceTimeRange` om het conflict te voorkomen.
 
-   Hierdoor wordt de aangepaste `ReplaceTimeRange` korter dan oorspronkelijk opgegeven. Als de aanpassing tot een duur van nul leidt, laat TVSDK de overtreding stil vallen `ReplaceTimeRange`.
+  Hierdoor wordt de aangepaste `ReplaceTimeRange` korter dan oorspronkelijk opgegeven. Als de aanpassing tot een duur van nul leidt, laat TVSDK de overtreding stil vallen `ReplaceTimeRange`.
 
-* TVSDK zoekt naar aangrenzende tijdbereiken voor aangepaste toevoegingen en voegt deze in afzonderlijke ad-einden samen.
+* TVSDK zoekt naar aangrenzende tijdbereiken voor aangepaste en afbrekingen en voegt deze in afzonderlijke ad-einden samen.
 
-   Tijdbereiken die zich niet naast een ander tijdbereik bevinden, worden omgezet in ad-hocafbrekingen die één advertentie bevatten.
+  Tijdbereiken die zich niet naast een ander tijdbereik bevinden, worden omgezet in ad-hocafbrekingen die één advertentie bevatten.
 * Als de toepassing een mediabrondel probeert te laden waarvan de configuratie `CustomRangeMetadata` die alleen in de context van aangepaste advertentiemarkeringen kunnen worden gebruikt, genereert TVSDK een uitzondering als het onderliggende actief niet van het type VOD is.
 * Bij het omgaan met aangepaste advertentiemarkeringen deactiveert TVSDK andere ad-resolving mechanismen (bijvoorbeeld Adobe Primetime en besluitvorming).
 
-   U kunt elke TVSDK-ad-resolver-module of het aangepaste ad-markeermechanisme gebruiken. Wanneer u aangepaste advertentiemarkeringen gebruikt, wordt de advertentie-inhoud beschouwd als zijnde opgelost en op de tijdlijn geplaatst.
+  U kunt elke TVSDK-ad-resolver-module of het aangepaste ad-markeermechanisme gebruiken. Wanneer u aangepaste advertentiemarkeringen gebruikt, wordt de advertentie-inhoud beschouwd als zijnde opgelost en op de tijdlijn geplaatst.
 
 In het volgende codefragment worden drie tijdbereiken op de tijdlijn geplaatst als aangepaste advertentiemarkeringen.
 

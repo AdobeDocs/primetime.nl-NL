@@ -1,8 +1,7 @@
 ---
 description: U kunt tijdbereiken in VOD-streams markeren, verwijderen en vervangen door verschillende combinaties van ad-signaalmodus en metagegevens te gebruiken. Verschillende combinaties van signaalmodus en metagegevens resulteren in verschillende gedragingen.
 title: Effect op het toevoegen en verwijderen van gegevens uit de advertentiemodus en combinaties van metagegevens
-exl-id: 0b265471-2d5c-432b-b1c9-c850ce99f2f5
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '426'
 ht-degree: 0%
@@ -17,7 +16,7 @@ U kunt tijdbereiken in VOD-streams markeren, verwijderen en vervangen door versc
 >
 >Wanneer er een conflict tussen tijdwaaiers en ad signalerende wijzen is, geeft TVSDK de prioriteit van tijdwaaiers.
 
-**Tabel 3: Handeling signaalmodus/combinatie van metagegevens**
+**Tabel 3: Werking signaalmodus/combinatie van metagegevens**
 
 <table>  
  <thead> 
@@ -71,7 +70,7 @@ U kunt tijdbereiken in VOD-streams markeren, verwijderen en vervangen door versc
   </tr> 
   <tr> 
    <td></td> 
-   <td> Mark </td> 
+   <td> Markeren </td> 
    <td> CustomAd </td> 
    <td><span class="codeph"> PlacementInfo (Type.CUSTOM_TIME_RANGE, Mode.MARK)</span> </td> 
    <td> Gemarkeerde bereiken </td> 
@@ -124,7 +123,7 @@ U kunt tijdbereiken in VOD-streams markeren, verwijderen en vervangen door versc
   </tr> 
   <tr> 
    <td></td> 
-   <td> Mark </td> 
+   <td> Markeren </td> 
    <td> CustomAd </td> 
    <td><span class="codeph"> PlacementInfo (Type.CUSTOM_TIME_RANGE, Mode.MARK)</span> </td> 
    <td> Gemarkeerde bereiken </td> 
@@ -173,7 +172,7 @@ U kunt tijdbereiken in VOD-streams markeren, verwijderen en vervangen door versc
   </tr> 
   <tr> 
    <td></td> 
-   <td> Mark </td> 
+   <td> Markeren </td> 
    <td> CustomAd </td> 
    <td><span class="codeph"> PlacementInfo (Type.CUSTOM_TIME_RANGE, Mode.MARK)</span> </td> 
    <td> Gemarkeerde bereiken </td> 
@@ -181,7 +180,7 @@ U kunt tijdbereiken in VOD-streams markeren, verwijderen en vervangen door versc
   <tr> 
    <td></td> 
    <td> Mark, Auditude </td> 
-   <td> Aangepaste advertentie, controle </td> 
+   <td> Aangepaste advertentie, Auditude </td> 
    <td><span class="codeph"> PlacementInfo (Type.CUSTOM_TIME_RANGE, Mode.MARK)</span> </td> 
    <td> Bereiken gemarkeerd, geen advertenties ingevoegd </td> 
   </tr> 
@@ -222,7 +221,7 @@ U kunt tijdbereiken in VOD-streams markeren, verwijderen en vervangen door versc
   </tr> 
   <tr> 
    <td></td> 
-   <td> Mark </td> 
+   <td> Markeren </td> 
    <td> CustomAd </td> 
    <td><span class="codeph"> PlacementInfo (Type.CUSTOM_TIME_RANGE, Mode.MARK)</span> </td> 
    <td> Gemarkeerde bereiken </td> 

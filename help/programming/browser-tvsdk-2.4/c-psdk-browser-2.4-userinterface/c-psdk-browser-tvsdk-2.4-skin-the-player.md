@@ -1,8 +1,7 @@
 ---
 description: U kunt de volgende informatie gebruiken om u te helpen een skin aan uw speler toewijzen. Voor elke visuele constructie, wordt het overeenkomstige gedrag vermeld in standaardgedrag.
 title: De speler Skins toewijzen
-exl-id: 4ad50f96-d174-401f-a731-21e5fbfdbe31
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '1422'
 ht-degree: 0%
@@ -57,14 +56,14 @@ Hier volgen de stijlen voor de hoofddiv:
   </tr> 
   <tr> 
    <td colname="col1"><span class="codeph"> .ptp-pip-video-div</span> </td> 
-   <td colname="col2"> <p>De stijl van het div-element waarin PIP-video wordt afgespeeld. </p> </td> 
+   <td colname="col2"> <p>De stijl van de div waarin PIP-video wordt afgespeeld. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"><span class="codeph"> .view-as-main-video</span> </td> 
    <td colname="col2"> <p>Wordt toegepast op het eerste PIP wanneer het is omgewisseld en wordt weergegeven als de hoofdvideo. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p><b>Weergave van meerdere video's</b> </p> </td> 
+   <td colname="col1"> <p><b>Weergave van meerdere video</b> </p> </td> 
    <td colname="col2"> </td> 
   </tr> 
   <tr> 
@@ -82,7 +81,7 @@ Hier volgen de stijlen voor de hoofddiv:
  </tbody> 
 </table>
 
-## Diverse besturingselementen {#section_E9E4A8E3AEBF4BDC89840B84B3B0E737}
+## Verschillende besturingselementen {#section_E9E4A8E3AEBF4BDC89840B84B3B0E737}
 
 Hier volgen de stijlen voor algemene besturingselementen voor spelers:
 
@@ -141,7 +140,7 @@ Hier volgen de stijlen voor algemene besturingselementen voor spelers:
  </tbody> 
 </table>
 
-## Controlebalk {#section_B683B51EC746484B9AA90CB481D637BD}
+## Regelbalk {#section_B683B51EC746484B9AA90CB481D637BD}
 
 Hier volgen de stijlen voor de besturingsbalk:
 
@@ -350,7 +349,7 @@ Hier is de stijl om de resterende tijd op de besturingsbalk weer te geven:
 
 Het standaardgedrag is `timeRemainingBehavior`.
 
-## Snel terugspoelen {#section_F6E6C65BD3BD493A89915DF9B92933BA}
+## Fast Rewind {#section_F6E6C65BD3BD493A89915DF9B92933BA}
 
 Hier is de stijl voor de knop Snel terugspoelen:
 
@@ -413,7 +412,7 @@ Hier is de stijl voor de langzame voorwaartse knoop:
 
 Het standaardgedrag is `slowForwardButtonBehavior`.
 
-## Snel vooruitspoelen {#section_F90ED8B3739B49ACAB1F12DF18F0E4D6}
+## Snel vooruit {#section_F90ED8B3739B49ACAB1F12DF18F0E4D6}
 
 Hier is de stijl voor de knop Snel vooruit:
 
@@ -546,7 +545,7 @@ Hier zijn de stijlen om het delen te vormen:
   </tr>
   <tr>
    <td colname="col1"><span class="codeph"> .ptp-btn-share-video-twitter</span> </td>
-   <td colname="col2"> <p>Het menu-item waarmee u inhoud kunt delen op Twitter. </p> </td>
+   <td colname="col2"> <p>Het menu-item waarmee u inhoud kunt delen op een Twitter. </p> </td>
   </tr>
   <tr>
    <td colname="col1"><span class="codeph"> .ptp-btn-share-video-google-plus</span> </td>

@@ -1,8 +1,7 @@
 ---
 description: Deze handleiding bevat informatie over het ontwikkelen van videospelertoepassingen met Browser-TVSDK.
 title: Overzicht en publiek van producten
-exl-id: e2bbec5e-d1ce-430c-986c-ba3152190b1c
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '231'
 ht-degree: 0%
@@ -37,4 +36,4 @@ Zie voor meer informatie over de API&#39;s voor het UI-framework [UI-framework f
 
 ## Publiek {#section_DFC9DECC2E30426DBBDDEA4E288E666C}
 
-In deze handleiding wordt ervan uitgegaan dat u begrijpt hoe u toepassingen en videospelers kunt ontwikkelen met behulp van JavaScript. U kunt een videospeler implementeren en de browserfuncties van TVSDK opnemen.
+In deze handleiding wordt ervan uitgegaan dat u begrijpt hoe u toepassingen en videospelers kunt ontwikkelen met JavaScript. U kunt een videospeler implementeren en de browserfuncties van TVSDK opnemen.

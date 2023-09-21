@@ -1,8 +1,7 @@
 ---
 title: Verificatie op thuisbasis voor tv overal
 description: Verificatie op thuisbasis voor tv overal
-exl-id: abdc7724-4290-404a-8f93-953662cdc2bc
-source-git-commit: bfc3ba55c99daba561255760baf273b6538a3c6e
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '1676'
 ht-degree: 0%
@@ -19,7 +18,7 @@ ht-degree: 0%
 
 HBA (Home Based Authentication) is een tv-functie overal waarmee betaaltv-abonnees tv-inhoud online kunnen bekijken zonder MVPD-referenties in te voeren als ze thuis zijn. Hierdoor wordt de gebruikerservaring van de verificatiestroom aanzienlijk verbeterd.
 
-Thuisgebaseerde verificatie-definitie door het Open Authentication Technology Committee (OATC): &quot;De automatische authentificatie in huis is het proces waardoor een MVPD/OVD eigenschappen van het huisnetwerk (of herkenningstekens automatisch toegankelijk tussen apparaten op het huisnetwerk) gebruikt om voor authentiek te verklaren welke abonneerekening met dat huisnetwerk wordt geassocieerd zodat de gebruikers niet manueel geloofsbrieven hoeven in te gaan wanneer het vestigen van een zitting van TVE voor de toegang tot van TVE beschermde inhoud.&quot;
+Thuisgebaseerde verificatie-definitie door het Open Authentication Technology Committee (OATC): &quot;In-home automatische verificatie is het proces waarbij een MVPD/OVD gebruikmaakt van kenmerken van het thuisnetwerk (of id&#39;s die automatisch toegankelijk zijn tussen apparaten op het thuisnetwerk) om te verifiëren welke abonneeaccount aan dat thuisnetwerk is gekoppeld, zodat gebruikers niet handmatig aanmeldingsgegevens hoeven in te voeren bij het instellen van een TVE-sessie voor toegang tot beveiligde inhoud.&quot;
 
 
 
@@ -39,7 +38,7 @@ Zodra HBA door één van de Top 5 MVPDs werd geactiveerd, zijn authentificatieom
 
 ![](assets/authn-conv-pre-post.png)
 
-Hieronder ziet u ook de aanmeldingsconversiesnelheid voor een kanaal dat is geïntegreerd met verschillende MVPD&#39;s: diegenen die HBA hebben ingeschakeld en degenen die geen HBA hebben. De omrekeningskoers voor HBA-patiënten is aanzienlijk hoger dan die zonder HBA.
+Hieronder ziet u ook de aanmeldingsconversiesnelheid voor een kanaal dat is geïntegreerd met verschillende MVPD&#39;s: voor kanalen die HBA hebben ingeschakeld en voor kanalen die geen HBA hebben. De omrekeningskoers voor HBA-patiënten is aanzienlijk hoger dan die zonder HBA.
 
 ![](assets/hba-vs-non-hba.png)
 
@@ -67,17 +66,17 @@ Primetime-verificatiefuncties die HBA ondersteunen
 
 De volgende tabellen bevatten informatie over de gebruikerservaring voor de ondersteunde platforms wanneer HBA is ingeschakeld en wanneer HBA niet is ingeschakeld:
 
-| Gebruikersstroom - Type Platform | SWF, iOS, Android |
+| Gebruikersstroom - Type platform | SWF, iOS, Android |
 |---|---|
 | Met HBA ingeschakeld | Wanneer gebruikers thuis zijn, worden ze automatisch geverifieerd. Nadat het token HBA AuthN verloopt, worden gebruikers automatisch opnieuw geverifieerd. |
 | Zonder HBA | De gebruikers worden gevraagd om hun MVPD te selecteren en hun geloofsbrieven in te gaan, zelfs als zij thuis zijn.Nadat het teken AuthN verloopt, moeten de gebruikers hun geloofsbrieven opnieuw ingaan. |
 
-| Gebruikersstroom - Type Platform | js, Windows (native) |
+| Gebruikersstroom - Type platform | js, Windows (native) |
 |---|---|
 | Met HBA ingeschakeld | Wanneer gebruikers thuis zijn, worden ze automatisch geverifieerd. Nadat het teken van AuthN HBA verloopt, moeten de gebruikers hun MVPD van de plukker opnieuw selecteren en zullen automatisch voor authentiek verklaard worden. |
 | Zonder HBA | De gebruikers worden gevraagd om hun MVPD te selecteren en hun geloofsbrieven in te gaan, zelfs als zij thuis zijn. Nadat het teken AuthN verloopt, moeten de gebruikers hun geloofsbrieven opnieuw ingaan. |
 
-| Gebruikersstroom - Type Platform | REST-API zonder client (tweede schermverificatie) |
+| Gebruikersstroom - Type platform | REST-API zonder client (tweede schermverificatie) |
 |---|---|
 | Met HBA ingeschakeld | Wanneer gebruikers thuis zijn en een Clientless REST API-toepassing gebruiken, worden ze automatisch geverifieerd op het tweede schermapparaat nadat ze de registratiecode hebben ingevoerd en hun MVPD hebben geselecteerd. Nadat het token HBA AuthN is verlopen, worden gebruikers automatisch opnieuw geverifieerd (op het tweede schermapparaat). |
 | Zonder HBA | De gebruikers worden gevraagd om hun MVPD te selecteren en hun geloofsbrieven in te gaan, zelfs als zij thuis zijn. Nadat het teken AuthN verloopt, moeten de gebruikers hun geloofsbrieven opnieuw ingaan. |
@@ -86,10 +85,10 @@ De volgende tabellen bevatten informatie over de gebruikerservaring voor de onde
 
 #### Protocol OAuth 2.0 {#oauth-2-protocol}
 
-In de stroom HBA voor MVPDs die met het OAuth 2.0 authentificatieprotocol wordt geïntegreerd, geeft MVPD een vernieuwingstoken uit en Adobe geeft een de authentificatietoken van HBA uit:
+In de stroom HBA voor MVPDs die met het OAuth 2.0 authentificatieprotocol wordt geïntegreerd, geeft MVPD een vernieuwingstoken uit en de Adobe geeft een token van de authentificatie van HBA uit:
 
 * Vernieuwingstoken heeft TTL die door de bedrijfsvereisten van MVPD wordt bepaald.
-* De TTL van de authentificatie van HBA **moet kleiner zijn dan of gelijk zijn aan** het vernieuwingstoken TTL.
+* De TTL van de authentificatie van HBA **moet kleiner zijn dan of gelijk zijn aan** Vernieuw teken TTL.
 
 
 *Beschrijving van de HBA-verificatiestroom voor het OAuth 2.0-protocol*
@@ -98,7 +97,7 @@ In de stroom HBA voor MVPDs die met het OAuth 2.0 authentificatieprotocol wordt 
 | Handelingen van gebruikers | Systeemhandelingen |
 |---|---|
 | De gebruiker navigeert naar de site van de programmeur. Wanneer u probeert een video af te spelen, wordt de MVPD-kiezer weergegeven. De gebruiker selecteert hun MVPD en klikt login. | Er wordt een achtergrondcontrole uitgevoerd. MVPD past hun reeks regels voor gebruikersopsporing toe (bijvoorbeeld, kaart het IP van de gebruiker adres met het adres van MAC van verdeler-provisioned modems of breedband-verbonden reeks-top dozen). |
-| Er wordt een scherm weergegeven dat ongeveer 3 seconden aanhoudt. Er kan een interstitiële pagina worden weergegeven om de gebruiker te laten weten dat hij/zij automatisch wordt aangemeld via hun MVPD-account. | <ol><li>AccessEnabler, die aan de kant van de programmeur geïnstalleerd is, verzendt een authentificatieverzoek (als HTTP- verzoek) naar het eindpunt van de Authentificatie van Adobe Primetime.</li><li>Het eindpunt van de Authentificatie Primetime richt het verzoek aan het MVPD authentificatieeindpunt opnieuw. <br />**Opmerking:** Het verzoek bevat de `hba_flag` parameter (poging HBA = true) die aangeeft dat de MVPD moet proberen HBA-verificatie uit te voeren.</li><li>Het MVPD authentificatieeindpunt verzendt een vergunningscode naar het eindpunt van de Authentificatie van Adobe Primetime.</li><li>De Authentificatie van Adobe Primetime gebruikt de vergunningscode om te verzoeken verfrist token en een toegangstoken van het symbolische eindpunt van MVPD.</li><li>Het MVPD verzendt een authentificatiebesluit en `hba_status` (true/false) in de `id_token`.</li><li>Een vraag aan het MVPD eindpunt van het gebruikersprofiel wordt verzonden om het [hba_status-sleutel in metagegevens van gebruikers](/help/authentication/user-metadata-feature.md#obtaining).</li><li>MVPD plaatst vernieuwt teken TTL aan een MVPD-Goedgekeurde waarde en Adobe plaatst het teken AuthN TTL aan een waarde minder of gelijk aan de waarde van het vernieuwingstoken.</li></ol> |
+| Er wordt een scherm weergegeven dat ongeveer 3 seconden aanhoudt. Er kan een interstitiële pagina worden weergegeven om de gebruiker te laten weten dat hij/zij automatisch wordt aangemeld via hun MVPD-account. | <ol><li>AccessEnabler, die aan de kant van de programmeur geïnstalleerd is, verzendt een authentificatieverzoek (als HTTP- verzoek) naar het eindpunt van de Authentificatie van Adobe Primetime.</li><li>Het eindpunt van de Authentificatie Primetime richt het verzoek aan het MVPD authentificatieeindpunt opnieuw. <br />**Opmerking:** Het verzoek bevat de `hba_flag` parameter (poging HBA = true) die aangeeft dat de MVPD moet proberen HBA-verificatie uit te voeren.</li><li>Het MVPD authentificatieeindpunt verzendt een vergunningscode naar het eindpunt van de Authentificatie van Adobe Primetime.</li><li>De Authentificatie van Adobe Primetime gebruikt de vergunningscode om te verzoeken verfrist token en een toegangstoken van het symbolische eindpunt van MVPD.</li><li>Het MVPD verzendt een authentificatiebesluit en `hba_status` (true/false) in de `id_token`.</li><li>Een vraag aan het MVPD eindpunt van het gebruikersprofiel wordt verzonden om het [hba_status-sleutel in metagegevens van gebruikers](/help/authentication/user-metadata-feature.md#obtaining).</li><li>MVPD plaatst vernieuwt teken TTL aan een MVPD-Goedgekeurde waarde en de Adobe plaatst het teken AuthN TTL aan een waarde minder of gelijk aan de waarde van het vernieuwingstoken.</li></ol> |
 | De gebruiker is geverifieerd en kan nu bladeren naar tv-inhoud overal. | Het verificatietoken wordt doorgegeven aan de gebruiker die nu met succes door de site van de programmeur kan bladeren. |
 
 #### SAML-protocol {#saml-protocol}
@@ -116,7 +115,7 @@ Beschrijving van de HBA-verificatiestroom voor het SAML-verificatieprotocol
 
 * **OAuth-protocol:**
    * Voor het inschakelen van HBA zie [Gebruikershandleiding voor Primetime TVE-dashboard](/help/authentication/tve-dashboard-user-guide.md)
-* **SAML-protocol:** De op huis-Gebaseerde Authentificatie wordt geactiveerd op de kant MVPD. De programmeur of Adobe hoeft geen actie te ondernemen.
+* **SAML-protocol:** De op huis-Gebaseerde Authentificatie wordt geactiveerd op de kant MVPD. De programmeur of Adobe heeft geen actie nodig.
 Voor meer informatie over MVPDs die huis Gebaseerde Authentificatie steunen, zie [HBA-status voor MVPD&#39;s](/help/authentication/hba-status-mvpds.md).
 
 ## Veelgestelde vragen {#faqs}
@@ -138,7 +137,7 @@ Voor meer informatie over MVPDs die huis Gebaseerde Authentificatie steunen, zie
 
 **Antwoord 1:** Adobe kan HBA uitschakelen voor integratie met kanalen die goedkeuring van de ouderlijke controle nodig hebben.
 
-**Antwoord 2:** Adobe werkt met OATC aan een UX-document waarin wordt aanbevolen de HBA-ervaring op te zetten met ouderlijk toezicht.
+**Antwoord 2:** Adobe werkt samen met OATC aan een UX-document waarin wordt aanbevolen de HBA-ervaring op te zetten met ouderlijk toezicht.
 
 
 
@@ -150,10 +149,10 @@ Voor meer informatie over MVPDs die huis Gebaseerde Authentificatie steunen, zie
 ## Nuttige informatie {#useful-info}
 
 * [Instant Access (HBA) Recommendations](http://www.ctamtve.com/instantaccess){target=_blank} - door CTAM
-* [Voorbeeld van implementatie van HBA op programmeertoepassing](https://dzf8vqv24eqhg.cloudfront.net/userfiles/258/326/ckfinder/files/HBA_Flow_Sample.pdf?dc=201604222139-1346){target=_blank} - door Adobe
-   <!--* [Home Based Authentication User Experience Guidelines for TV Everywhere](http://oatc.us/Standards/DownloadRecommendedPractices.aspx){target=_blank} - by OATC-->
+* [Voorbeeld van implementatie van HBA op programmeertoepassing](https://dzf8vqv24eqhg.cloudfront.net/userfiles/258/326/ckfinder/files/HBA_Flow_Sample.pdf?dc=201604222139-1346){target=_blank} - per Adobe
+  <!--* [Home Based Authentication User Experience Guidelines for TV Everywhere](http://oatc.us/Standards/DownloadRecommendedPractices.aspx){target=_blank} - by OATC-->
 * [Kwesties en vereisten voor verificatie op thuisbasis](https://dzf8vqv24eqhg.cloudfront.net/userfiles/258/326/ckfinder/files/Defining%20TVE%20Home-Based%20Authentication%20(HBA)%20%20Use%20Cases%20and%20Requirements%20Recommended%20Practice%20Version%201_0%20FINAL%20DRAFT%20FOR%20BOARD%20APPROVAL.pdf){target=_blank} door OATC
-* [Authentificatie op thuisbasis](https://dzf8vqv24eqhg.cloudfront.net/userfiles/258/326/ckfinder/files/AdobeNewsletterHBA.pdf?dc=201604260953-2640){target=_blank} - door Adobe
+* [Authentificatie op thuisbasis](https://dzf8vqv24eqhg.cloudfront.net/userfiles/258/326/ckfinder/files/AdobeNewsletterHBA.pdf?dc=201604260953-2640){target=_blank} - per Adobe
 * [Verificatie met het OAuth 2.0-protocol](/help/authentication/authn-oauth2-protocol.md)
 * [Verificatie met SAML MVPDs](/help/authentication/authn-usecase.md)
 * [Gebruikershandleiding voor Primetime TVE-dashboard](/help/authentication/tve-dashboard-user-guide.md)

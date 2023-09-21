@@ -1,8 +1,7 @@
 ---
 title: Overzicht van Roku SSO
 description: Info Roku SSO
-exl-id: 77b154bc-c09f-49d4-b1af-cc33bc6dd22b
-source-git-commit: bfc3ba55c99daba561255760baf273b6538a3c6e
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '507'
 ht-degree: 0%
@@ -35,29 +34,33 @@ Voor de toepassingen die van Programmers een Server aan de oplossing van de Serv
 
 Door de gebruiker opgegeven abonnee-id die moet worden gebruikt in plaats van de apparaat-id die door de toepassing wordt doorgegeven om SSO voor alle toepassingen (en voor alle apparaten) te garanderen.
 
-Neem contact op met uw Adobe voor specifieke informatie over de indeling van de benodigde koppen.
+Neem voor specifieke informatie over de indeling van de benodigde koppen contact op met uw Adobe.
 
 ### Mogelijke problemen {#possible-issues}
 
-Programmeurs moeten controleren of de implementaties op basis van de huidige REST API zonder client geen belemmering vormen voor Roku&#39;s platform-SSO. Zie hieronder een lijst met mogelijke problemen en hoe deze moeten worden opgelost.
+Programmeurs moeten controleren of hun huidige implementaties op basis van de Clientless REST API van de Adobe geen belemmering vormen voor Roku&#39;s platform-SSO. Zie hieronder een lijst met mogelijke problemen en hoe deze moeten worden opgelost.
 
-| Probleem | Mogelijke oorzaak | Mogelijke oplossingen | |-|-|-|-| |Geen Roku SSO-header verzonden naar Adobe|HTTP gebruiken in plaats van HTTPS voor oproepen naar Adobe Primetime-verificatiedomeinen|HTTPS gebruiken| |MVPD-logo niet weergegeven/niet bijgewerkt voor SSO-tokens|De interface is afhankelijk van lokale opslag|Toepassingen moeten de interface (en lokale opslag indien nodig) bijwerken na verificatie| |Afmelden geactiveerd op geen AuthZ|Toepassingsontwerp|De toepassing moet worden bijgewerkt om zich nooit achter de schermen af te melden|
+| Probleem | Mogelijke oorzaak | Mogelijke oplossingen |
+|-|-|-|
+| Geen Roku SSO-header verzonden naar Adobe | HTTP gebruiken in plaats van HTTPS voor aanroepen naar Adobe Primetime-verificatiedomeinen | HTTPS gebruiken |
+| MVPD-logo niet weergegeven/niet bijgewerkt voor SSO-tokens | Gebruikersinterface is afhankelijk van lokale opslag | Toepassingen moeten de gebruikersinterface (en lokale opslag, indien nodig) bijwerken na verificatie |
+| Afmelden geactiveerd op geen AuthZ | Toepassingsontwerp | De toepassing moet worden bijgewerkt om zich nooit achter de schermen af te melden |
 
 ## Veelgestelde vragen {#faq}
 
 * **Hoe werkt de SBF?**
 
-   SSO zal over alle toepassingen van de Programmer werken die door de authentificatie van Adobe Primetime op alle apparaten van Roku worden aangedreven verbonden aan de zelfde gebruiker Roku.
+  SSO zal over alle toepassingen van de Programmer werken die door de authentificatie van Adobe Primetime op alle apparaten van Roku worden aangedreven verbonden aan de zelfde gebruiker Roku.
 Niet zullen alle MVPDs Roku SSO toestaan.
 
 * **Zal er om het even welke verandering in authentificatie TTLs zijn?**
 
-   Het eerste geldige authentificatietoken zal voor het uitvoeren van SSO worden gebruikt en, in dit geval, zullen alle andere toepassingen die door SSO zullen voor authentiek worden verklaard zelfde TTL gebruiken tot het verloopt. Wanneer u dus van de ene toepassing naar de andere navigeert, deelt de tweede toepassing de TTL van de eerste toepassing die wordt geverifieerd.
+  Het eerste geldige authentificatietoken zal voor het uitvoeren van SSO worden gebruikt en, in dit geval, zullen alle andere toepassingen die door SSO zullen voor authentiek worden verklaard zelfde TTL gebruiken tot het verloopt. Wanneer u dus van de ene toepassing naar de andere navigeert, deelt de tweede toepassing de TTL van de eerste toepassing die wordt geverifieerd.
 
-* **Werkt andere Adobe-functionaliteit zoals voorheen?**
+* **Werkt andere functionaliteit voor Adoben zoals voorheen?**
 
-   Alle functionaliteit voor primetime-verificatie werkt zoals voorheen.
+  Alle functionaliteit voor primetime-verificatie werkt zoals voorheen.
 
 * **Is er een opt-in-/opt-outproces van de Programmer die van SSO op het platform Roku profiteert?**
 
-   Dit wordt een configuratiewijziging in het Dashboard van Adobe TVE. Elke programmeur kan SSO op het platform van Roku voor specifieke integratie toelaten/onbruikbaar maken.
+  Dit wordt een configuratiewijziging in het TVE-dashboard van de Adobe. Elke programmeur kan SSO op het platform van Roku voor specifieke integratie toelaten/onbruikbaar maken.

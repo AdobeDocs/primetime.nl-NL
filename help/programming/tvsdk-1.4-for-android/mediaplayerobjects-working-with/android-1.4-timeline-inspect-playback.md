@@ -1,8 +1,7 @@
 ---
 description: U kunt een beschrijving verkrijgen van de tijdlijn die is gekoppeld aan het geselecteerde item dat door TVSDK wordt afgespeeld. Dit is vooral handig wanneer uw toepassing een aangepast scrub-bar besturingselement weergeeft waarin de inhoudssecties worden geïdentificeerd die overeenkomen met advertentie-inhoud.
 title: De afspeeltijdlijn Inspect
-exl-id: af373f1e-ed5b-40a9-a91e-9eb0e4a181de
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '237'
 ht-degree: 0%
@@ -15,7 +14,7 @@ U kunt een beschrijving verkrijgen van de tijdlijn die is gekoppeld aan het gese
 
 Hier ziet u een voorbeeldimplementatie die u kunt zien in de volgende schermafbeelding.  ![](assets/inspect-playback.jpg){width="368.641pt"}
 
-1. Toegang krijgen tot `Timeline` object in het `MediaPlayer` met de `getTimeline` methode.
+1. Toegang krijgen tot de `Timeline` object in het `MediaPlayer` met de `getTimeline` methode.
 
    De `Timeline` De klasse omvat de informatie die verwant is aan de inhoud van de chronologie die met het media punt wordt geassocieerd dat momenteel door wordt geladen `MediaPlayer` -instantie. De `Timeline` biedt toegang tot een alleen-lezen weergave van de onderliggende tijdlijn. De `Timeline` klasse biedt een methode getter die een iterator in een lijst met `TimelineMarker` objecten.
 

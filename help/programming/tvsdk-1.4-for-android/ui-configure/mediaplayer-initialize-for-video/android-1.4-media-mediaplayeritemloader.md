@@ -1,8 +1,7 @@
 ---
 description: Een andere manier om een mediabron op te lossen is met MediaPlayerItemLoader. Dit is nuttig wanneer u informatie over een bepaalde media stroom wilt verkrijgen zonder een instantie te concretiseren MediaPlayer.
 title: Een mediabron laden met MediaPlayerItemLoader
-exl-id: 9d129497-8a71-433a-a542-f49be519893b
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '220'
 ht-degree: 0%
@@ -13,7 +12,7 @@ ht-degree: 0%
 
 Een andere manier om een mediabron op te lossen is met MediaPlayerItemLoader. Dit is nuttig wanneer u informatie over een bepaalde media stroom wilt verkrijgen zonder een instantie te concretiseren MediaPlayer.
 
-Via de `MediaPlayerItemLoader` klasse, kunt u een media middel voor het overeenkomstige ruilen `MediaPlayerItem` zonder een weergave te koppelen aan een `MediaPlayer` -instantie, die zou leiden tot de toewijzing van de hardwarebronnen voor videodecodering. Het proces om het `MediaPlayerItem` -instantie asynchroon is.
+Via de `MediaPlayerItemLoader` klasse, kunt u een media middel voor het overeenkomstige `MediaPlayerItem` zonder een weergave te koppelen aan een `MediaPlayer` -instantie, die zou leiden tot de toewijzing van de hardwarebronnen voor videodecodering. Het proces om het `MediaPlayerItem` -instantie asynchroon is.
 
 1. Implementeer de `MediaPlayerItemLoader.LoaderListener` callback-interface.
 
@@ -21,11 +20,11 @@ Via de `MediaPlayerItemLoader` klasse, kunt u een media middel voor het overeenk
    
    * `LoaderListener.onError` callback, functie
 
-      TVSDK gebruikt dit om uw toepassing te laten weten dat er een fout is opgetreden. TVSDK biedt een foutcode als parameters en een beschrijvende tekenreeks die diagnostische informatie bevat.
+     TVSDK gebruikt dit om uw toepassing te laten weten dat er een fout is opgetreden. TVSDK biedt een foutcode als parameters en een beschrijvende tekenreeks die diagnostische informatie bevat.
 
    * `LoaderListener.onError` callback, functie
 
-      TVSDK gebruikt dit om uw toepassing te laten weten dat de gevraagde informatie beschikbaar is in de vorm van een `MediaPlayerItem` instantie die als parameter aan callback wordt overgegaan.
+     TVSDK gebruikt dit om uw toepassing te laten weten dat de gevraagde informatie beschikbaar is in de vorm van een `MediaPlayerItem` instantie die als parameter aan callback wordt overgegaan.
 
 1. Registreer deze instantie bij TVSDK door deze als parameter door te geven aan de constructor van de component `MediaPlayerItemLoader`.
 1. Bellen `MediaPlayerItemLoader.load`, door een instantie van een `MediaResource` object.

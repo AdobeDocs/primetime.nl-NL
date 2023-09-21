@@ -2,8 +2,7 @@
 title: Besturingselementen voor uitvoerbeveiliging
 description: Besturingselementen voor uitvoerbeveiliging
 copied-description: true
-exl-id: eedf3885-8e30-4328-ab2c-cf4c981846b3
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '652'
 ht-degree: 0%
@@ -14,15 +13,15 @@ ht-degree: 0%
 
 De uitvoerbeveiliging bepaalt de parameter of de uitvoer naar externe renderapparaten is beveiligd. U kunt onafhankelijk beperkingen voor analoge en digitale uitvoer opgeven.
 
-Bepaalt of uitvoer naar externe renderingapparaten moet worden beperkt. Een extern apparaat wordt gedefinieerd als een video- of audioapparaat dat niet in de computer is ingesloten. Geïntegreerde beeldschermen, zoals in notebookcomputers, worden niet als extern beschouwd in het uitvoerbeveiligingsscenario.
+Controls whether output to external rendering devices should be limited. Een extern apparaat wordt gedefinieerd als een video- of audioapparaat dat niet in de computer is ingesloten. Geïntegreerde beeldschermen, zoals in notebookcomputers, worden niet als extern beschouwd in het uitvoerbeveiligingsscenario.
 
-Over de luchtverbindingstypen (OTA) worden standaard alle blokken vermeld, maar kunnen indien nodig expliciet worden vermeld. De gesteunde verbindingen OTA omvatten: Miracast, AirPlay, DLNA en WIDI.
+Over de luchtverbindingstypen (OTA) worden standaard alle blokken vermeld, maar kunnen indien nodig expliciet worden vermeld. De gesteunde verbindingen OTA omvatten: Miracast, AirPlay, DLNA, en WIDI.
 
-**Op resolutie gebaseerde outputbescherming: (Beschikbaar vanaf versie 5.3.) ** Dit biedt uitvoerbescherming op basis van het verticale aantal pixels van de inhoud, waardoor een verscheidenheid aan beveiligingsvereisten kan worden opgegeven op basis van verticale aantallen pixels.
+**Op resolutie gebaseerde uitvoerbeveiliging: (beschikbaar vanaf versie 5.3.) ** Dit biedt uitvoerbescherming op basis van het verticale aantal pixels van de inhoud, waardoor een verscheidenheid aan beveiligingsvereisten kan worden opgegeven op basis van verticale aantallen pixels.
 
 De volgende opties/niveaus van handhaving zijn beschikbaar:
 
-| Option | Ondersteund in analoge apparaten | Ondersteund in digitale apparaten |
+| Optie | Ondersteund in analoge apparaten | Ondersteund in digitale apparaten |
 |---|---|---|
 | **Vereist** — Analoge kopieerbeveiliging (ACP) of Copy Generation Management System - Analog (CGMS-A) moet uitvoerbeveiliging zijn ingeschakeld om inhoud op een extern apparaat af te spelen. Primetime DRM-clients moeten uitvoerbeveiliging met ACS of CGMS-A inschakelen. Op apparaten die beide ondersteunen, proberen de Primetime DRM 3.0-clients beide in te schakelen. U moet echter slechts één speler inschakelen om de inhoud af te spelen. | JA | JA |
 | **ACS vereist** — ACS-outputbescherming is vereist. Afspelen is niet toegestaan op CGMS-A. Primetime DRM 2.0-clients bieden geen ondersteuning voor deze optie. Als deze optie is ingesteld, gedraagt een Primetime DRM 2.0-client zich alsof de optie &quot;Geen afspelen&quot; is opgegeven. | JA | - |
@@ -36,7 +35,7 @@ De volgende opties/niveaus van handhaving zijn beschikbaar:
 >
 >Hoewel deze regels op alle platforms consistent worden toegepast, kunt u uitvoerbeveiliging alleen veilig inschakelen op Windows-platforms. Op andere platforms, zoals Macintosh en Linux, zijn er geen ondersteunende besturingssysteemfuncties beschikbaar voor toepassingen van derden.
 
-Voorbeeld van gebruik: Sommige inhoud dwingt uitvoerbeveiligingselementen af en daarom kan de inhoudsdistributeur het beschermingsniveau instellen. Als &quot;Vereist&quot; is opgegeven en wordt geprobeerd de inhoud af te spelen op een Macintosh, wordt de inhoud niet afgespeeld op externe apparaten. De inhoud kan op interne monitoren worden afgespeeld.
+Voorbeeld van gebruik: bepaalde inhoud kan uitvoerbeveiligingselementen afdwingen en daarom kan de inhoudsdistributeur het beschermingsniveau instellen. Als &quot;Vereist&quot; is opgegeven en wordt geprobeerd de inhoud af te spelen op een Macintosh, wordt de inhoud niet afgespeeld op externe apparaten. De inhoud kan op interne monitoren worden afgespeeld.
 
 Als &quot;Vereist&quot; is opgegeven en in Linux wordt geprobeerd de inhoud af te spelen, wordt de inhoud op geen enkel apparaat afgespeeld, omdat er geen onderscheid kan worden gemaakt tussen interne en externe apparaten.
 

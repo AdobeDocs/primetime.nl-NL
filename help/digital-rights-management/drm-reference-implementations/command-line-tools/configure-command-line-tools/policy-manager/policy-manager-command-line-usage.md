@@ -1,16 +1,15 @@
 ---
-title: Het gebruik van de Opdracht van de Manager van het beleid
-description: Het gebruik van de Opdracht van de Manager van het beleid
+title: Gebruik van de opdrachtregel voor beleidsbeheer
+description: Gebruik van de opdrachtregel voor beleidsbeheer
 copied-description: true
-exl-id: 888be282-7eaa-4101-b4b1-4f8df99a967a
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '1223'
 ht-degree: 0%
 
 ---
 
-# Het gebruik van de Opdracht van de Manager van het beleid {#policy-manager-command-line-usage}
+# Gebruik van de opdrachtregel voor beleidsbeheer {#policy-manager-command-line-usage}
 
 ```
 java -jar AdobePolicyManager.jar  
@@ -19,11 +18,11 @@ java -jar AdobePolicyManager.jar
 </i class="+ topic>
 ```
 
-**Tabel 1: Opdrachten**
+**Tabel 1: opdrachten**
 
 | Opdracht | Beschrijving |
 |---|---|
-| `new` | Hiermee wordt een nieuw DRM-beleid gemaakt |
+| `new` | Maakt een nieuw DRM-beleid |
 | `detail` | Beschrijft een bestaand beleid DRM |
 | `update` | Een bestaand DRM-beleid bijwerken |
 
@@ -39,7 +38,7 @@ java -jar AdobePolicyManager.jar
  <tbody class="- topic/tbody "> 
   <tr rowsep="1" class="- topic/row "> 
    <td colname="1" class="- topic/entry "> <span class="+ topic/ph pr-d/codeph codeph"> -c configfile </span> </td> 
-   <td colname="2" class="- topic/entry "> <p class="- topic/p ">Hier geeft u de naam en locatie op van het configuratiebestand. </p> <p class="- topic/p ">Als u geen naam of locatie opgeeft, zoekt DRM Policy Manager naar <span class="filepath"> flashaccessstools.properties </span> in de huidige werkmap. </p> <p>Opmerking: Opties die u op de opdrachtregel opgeeft, hebben voorrang op de opties die u in het configuratiebestand opgeeft. </p> </td> 
+   <td colname="2" class="- topic/entry "> <p class="- topic/p ">Hier geeft u de naam en locatie op van het configuratiebestand. </p> <p class="- topic/p ">Als u geen naam of locatie opgeeft, zoekt DRM Policy Manager naar <span class="filepath"> flashaccessstools.properties </span> in de huidige werkmap. </p> <p>Opmerking: de opties die u op de opdrachtregel opgeeft, hebben voorrang op de opties die u in het configuratiebestand opgeeft. </p> </td> 
   </tr> 
   <tr rowsep="1" class="- topic/row "> 
    <td colname="1" class="- topic/entry "> <span class="codeph"> -o </span> </td> 
@@ -93,7 +92,7 @@ java -jar AdobePolicyManager.jar
   </tr> 
   <tr rowsep="1" class="- topic/row "> 
    <td colname="1" class="- topic/entry "> <span class="+ topic/ph pr-d/codeph codeph"> -ldate </span> </td> 
-   <td colname="2" class="- topic/entry "> <p class="- topic/p ">De einddatum van de licentiecache. </p> <p class="- topic/p ">Dit geeft de laatste datum aan waarop de client licenties in de licentiesector van de client in cache kan plaatsen nadat de Primetime DRM-server de licentie heeft uitgegeven. </p> <p>U kunt de datum in de volgende notaties opgeven: 
+   <td colname="2" class="- topic/entry "> <p class="- topic/p ">De einddatum van de licentiecache. </p> <p class="- topic/p ">Dit geeft de einddatum aan waarop de client licenties in de licentiesector van de client in cache kan plaatsen nadat de Primetime DRM-server de licentie heeft uitgegeven. </p> <p>U kunt de datum in de volgende notaties opgeven: 
      <ul id="ul_112DE7248A9C48B19520A3AA9E5D1F03"> 
       <li id="li_01C5400E78B84A3B8955972FBA875AAC"> <span class="+ topic/ph pr-d/codeph codeph"> jjjj-mm-dd </span> </li> 
       <li id="li_AA13B1EFA07A4542A3DB41FA3320B143"> <span class="+ topic/ph pr-d/codeph codeph"> jjjj-mm-dd-h24:min:sec </span> </li> 
@@ -109,7 +108,7 @@ java -jar AdobePolicyManager.jar
   </tr> 
   <tr rowsep="1" class="- topic/row "> 
    <td colname="1" class="- topic/entry "> <span class="+ topic/ph pr-d/codeph codeph"> -air pubId </span>[: <span class="+ topic/ph pr-d/codeph codeph"> appId </span>[:[ <span class="+ topic/ph pr-d/codeph codeph"> min </span>]:[ <span class="+ topic/ph pr-d/codeph codeph"> max </span>]] </td> 
-   <td colname="2" class="- topic/entry "> <p class="- topic/p ">Een lijst van gewenste personen AIR-toepassingen die beveiligde inhoud kunnen afspelen. </p> <p class="- topic/p ">U kunt deze optie toepassen om te beperken welke uitgevers, toepassingen, en versies tot de inhoud kunnen toegang hebben die met dit beleid DRM wordt beschermd. </p> <p class="- topic/p ">Als u geen <i class="+ topic/ph hi-d/i ">appId</i>, alle toepassingen voor de uitgever <i class="+ topic/ph hi-d/i ">pubId</i> zijn toegestaan. </p> <p>Opmerking:  <i class="+ topic/ph hi-d/i ">min</i> en <i class="+ topic/ph hi-d/i ">max</i> versienummers zijn optioneel. </p> <p class="- topic/p ">U kunt meerdere <span class="codeph"> -air </span> opties om meerdere toepassingen toe te staan. Als u geen AIR- of SWF-toepassing opgeeft, hebben alle toepassingen toegang tot deze inhoud. Tijdens een update kunt u alle items uit de lijst verwijderen of verwijderen door op <span class="codeph"> -air </span> zonder de overige argumenten . </p> </td> 
+   <td colname="2" class="- topic/entry "> <p class="- topic/p ">Een lijst van gewenste personen van AIR-toepassingen die beveiligde inhoud kunnen afspelen. </p> <p class="- topic/p ">U kunt deze optie toepassen om te beperken welke uitgevers, toepassingen, en versies tot de inhoud kunnen toegang hebben die met dit beleid DRM wordt beschermd. </p> <p class="- topic/p ">Als u geen <i class="+ topic/ph hi-d/i ">appId</i>, alle toepassingen voor de uitgever <i class="+ topic/ph hi-d/i ">pubId</i> zijn toegestaan. </p> <p>Opmerking:  <i class="+ topic/ph hi-d/i ">min</i> en <i class="+ topic/ph hi-d/i ">max</i> versienummers zijn optioneel. </p> <p class="- topic/p ">U kunt meerdere <span class="codeph"> -air </span> opties om meerdere toepassingen toe te staan. Als u geen AIR- of SWF-toepassing opgeeft, hebben alle toepassingen toegang tot deze inhoud. Tijdens een update kunt u alle items uit de lijst verwijderen of verwijderen door op <span class="codeph"> -air </span> zonder de overige argumenten . </p> </td> 
   </tr> 
   <tr rowsep="1" class="- topic/row "> 
    <td colname="1" class="- topic/entry "> <span class="+ topic/ph pr-d/codeph codeph"> -drmBlacklist-naam </span> <i class="+ topic/ph hi-d/i ">/</i> <span class="+ topic/ph pr-d/codeph codeph"> value </span> <i class="+ topic/ph hi-d/i "> </i> <span class="+ topic/ph pr-d/codeph codeph"> paren </span> </td> 
@@ -125,11 +124,11 @@ java -jar AdobePolicyManager.jar
   </tr> 
   <tr rowsep="1" class="- topic/row "> 
    <td colname="1" class="- topic/entry "> <span class="codeph"> -opDigital NO_PROTECTION | USE_IF_AVAILABLE | VEREIST | NO_PLAYBACK </span> </td> 
-   <td colname="2" class="- topic/entry "> <p class="- topic/p ">Beperkingen van de bescherming van digitale uitvoer </p> </td> 
+   <td colname="2" class="- topic/entry "> <p class="- topic/p ">Beperkingen op het gebied van bescherming van digitale uitvoer </p> </td> 
   </tr> 
   <tr rowsep="1" class="- topic/row "> 
    <td colname="1" class="- topic/entry "> <span class="+ topic/ph pr-d/codeph codeph"> -runtimeBlacklist-naam </span> <i class="+ topic/ph hi-d/i ">/</i> <span class="+ topic/ph pr-d/codeph codeph"> value </span> <i class="+ topic/ph hi-d/i "> </i> <span class="+ topic/ph pr-d/codeph codeph"> paren </span> </td> 
-   <td colname="2" class="- topic/entry "> <p class="- topic/p ">De toepassingsruntimes die geen toegang hebben tot beveiligde inhoud. </p> <p class="- topic/p ">De waarde ondersteunt door komma's gescheiden naam:waardeparen in de volgende indeling: </p> <p class="- topic/p "> <span class="+ topic/ph pr-d/codeph codeph"> os | Aanvraag | release= stringValue </span> </p> <p class="- topic/p ">Bijvoorbeeld: <span class="codeph"> os=Win,release=2.0.1,toepassing=AIR </span>. Tijdens een update kunt u alle items uit de lijst verwijderen door op <span class="codeph"> -runtimeBlacklist </span> zonder de overige argumenten . </p> </td> 
+   <td colname="2" class="- topic/entry "> <p class="- topic/p ">De runtimes van de toepassing die geen toegang hebben tot beveiligde inhoud. </p> <p class="- topic/p ">De waarde ondersteunt door komma's gescheiden namen:waardeparen in de volgende notatie: </p> <p class="- topic/p "> <span class="+ topic/ph pr-d/codeph codeph"> os | Aanvraag | release= stringValue </span> </p> <p class="- topic/p ">Bijvoorbeeld: <span class="codeph"> os=Win,release=2.0.1,toepassing=AIR </span>. Tijdens een update kunt u alle items uit de lijst verwijderen door op <span class="codeph"> -runtimeBlacklist </span> zonder de overige argumenten . </p> </td> 
   </tr> 
   <tr rowsep="1" class="- topic/row "> 
    <td colname="1" class="- topic/entry "> <span class="+ topic/ph pr-d/codeph codeph"> -runtimeLevel int </span> </td> 
@@ -141,7 +140,7 @@ java -jar AdobePolicyManager.jar
   </tr> 
   <tr rowsep="1" class="- topic/row "> 
    <td colname="1" class="- topic/entry "> <span class="+ topic/ph pr-d/codeph codeph"> -k name= value </span> </td> 
-   <td colname="2" class="- topic/entry "> <p class="- topic/p ">Hier geeft u aangepaste sleutels of waarden op die u aan een DRM-beleid wilt toevoegen. </p> <p class="- topic/p ">U kunt meerdere <span class="codeph"> -k </span> opties. Tijdens de update kunt u <span class="codeph"> -k </span> zonder de resterende argumenten als u alle eigenschappen wilt verwijderen. De interpretatie of verwerking van de gegevens wordt beheerd door de Primetime DRM-licentieserver. </p> </td> 
+   <td colname="2" class="- topic/entry "> <p class="- topic/p ">Hier geeft u de aangepaste sleutel of waarden op die u aan een DRM-beleid wilt toevoegen. </p> <p class="- topic/p ">U kunt meerdere <span class="codeph"> -k </span> opties. Tijdens de update kunt u <span class="codeph"> -k </span> zonder de resterende argumenten als u alle eigenschappen wilt verwijderen. De interpretatie of verwerking van de gegevens wordt beheerd door de Primetime DRM-licentieserver. </p> </td> 
   </tr> 
   <tr rowsep="0" class="- topic/row "> 
    <td colname="1" class="- topic/entry "> <span class="+ topic/ph pr-d/codeph codeph"> -p name= value </span> </td> 
@@ -149,7 +148,7 @@ java -jar AdobePolicyManager.jar
   </tr> 
   <tr> 
    <td colname="1" class="- topic/entry "> <span class="codeph"> <span class="codeph"> -opOTA whitelist=&lt;connection types=""&gt; </span> </span> </td> 
-   <td colname="2" class="- topic/entry "> Over de beperkingen van de bescherming van de luchtoutput (OTA). De <span class="codeph"> witter </span> veld geeft aan welke verbindingstypen voor lijst van gewenste personen worden gebruikt en welke notatie &lt;connection types=""&gt; is <span class="codeph"> [type(,type)*] </span>, waarbij het type een van de volgende kan zijn: MIRACAST, AIRPLAY, WIDI, DLNA </td> 
+   <td colname="2" class="- topic/entry "> Over de beperkingen van de bescherming van de luchtoutput (OTA). De <span class="codeph"> whitelist </span> veld geeft aan welke verbindingstypen voor lijst van gewenste personen worden gebruikt en welke notatie &lt;connection types=""&gt; is <span class="codeph"> [type(,type)*] </span>, waarbij het type een van de volgende items kan zijn: MIRACAST, AIRPLAY, WIDI, DLNA </td> 
   </tr> 
   <tr> 
    <td colname="1" class="- topic/entry "> <span class="codeph"> -opResolution &lt;filename&gt; </span> </td> 

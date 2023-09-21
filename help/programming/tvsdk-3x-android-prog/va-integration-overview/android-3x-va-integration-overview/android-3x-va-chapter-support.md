@@ -2,8 +2,7 @@
 title: Hoofdstukondersteuning implementeren
 description: Hoofdstukondersteuning implementeren
 copied-description: true
-exl-id: 2db335b3-1d9b-4339-b1b6-e12ee0f06566
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '60'
 ht-degree: 0%
@@ -18,7 +17,7 @@ De hoofdstukken van de douane worden beheerd door de toepassing, en zijn gebasee
 
 >[!CAUTION]
 >
->Standaardhoofdstukken worden niet ondersteund in de 3.0 Android-TVSDK.
+>Standaardhoofdstukken worden niet ondersteund in de 3.0-Android-TVSDK.
 
 Aangepaste hoofdstukken definiëren en bijhouden.
 

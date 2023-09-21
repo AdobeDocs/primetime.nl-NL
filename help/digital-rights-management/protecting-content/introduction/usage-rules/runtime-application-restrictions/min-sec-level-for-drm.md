@@ -2,8 +2,7 @@
 title: Minimumbeveiligingsniveau voor DRM en runtimes
 description: Minimumbeveiligingsniveau voor DRM en runtimes
 copied-description: true
-exl-id: d8b1162f-26ed-4072-9fed-20a38b9c587c
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '70'
 ht-degree: 0%
@@ -16,4 +15,4 @@ Het minimale beveiligingsniveau bepaalt het beveiligingsniveau dat is vereist vo
 
 Het standaardveiligheidsniveau voor DRM/Runtime modules is 10000.
 
-Voorbeeld van gebruik: Bepaalde soorten inhoud (bijvoorbeeld HD-video) vereisen mogelijk een hoger beveiligingsniveau dan andere typen.
+Voorbeeld: voor bepaalde typen inhoud (bijvoorbeeld HD-video) is mogelijk een hoger beveiligingsniveau vereist dan voor andere typen.

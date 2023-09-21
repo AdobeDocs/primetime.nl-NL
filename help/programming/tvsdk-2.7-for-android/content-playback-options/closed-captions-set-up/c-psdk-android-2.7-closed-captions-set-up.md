@@ -1,8 +1,7 @@
 ---
 description: Bij Closed Captioning wordt het audiogedeelte van een video als tekst op het scherm weergegeven wanneer het geluid onhoorbaar is of de kijker niet goed kan worden gehoord.
 title: Werken met gesloten bijschriften
-exl-id: a89a1c54-f9c2-4868-ac56-a520f6d9192e
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '210'
 ht-degree: 0%
@@ -20,7 +19,7 @@ TVSDK ondersteunt het renderen van deze indelingen:
 * 608 en 708 ondertiteling, wanneer geleverd als deel van de videovervoerstroom over HLS als gegevenspakketten in MPEG-2 videostromen.
 * WebVTT-ondertitelingsbestanden, waarnaar wordt verwezen vanuit de M3U8-manifestbestanden zoals gedefinieerd in de HLS-specificaties.
 
-   Deze bestanden zijn automatisch beschikbaar als Closed Caption-tracks in de Primetime-speler.
+  Deze bestanden zijn automatisch beschikbaar als Closed Caption-tracks in de Primetime-speler.
 
 U kunt het volgende doen:
 
@@ -28,4 +27,4 @@ U kunt het volgende doen:
 * Schakel ondertiteling sluiten in (zichtbaar) of uit (niet zichtbaar) door de `MediaPlayer` interface.
 * Selecteer opmaakopties die bepalen hoe gesloten bijschriften worden gerenderd door de onderliggende video-engine.
 
-   Gebruik de `MediaPlayerItem` interface voor het selecteren van indelingen zoals het lettertype of de lettertypekleur.
+  Gebruik de `MediaPlayerItem` interface voor het selecteren van indelingen zoals het lettertype of de lettertypekleur.

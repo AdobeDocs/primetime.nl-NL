@@ -1,8 +1,7 @@
 ---
 description: Voor live/lineaire inhoud vervangt Browser TVSDK een segment van de hoofdstreaminhoud door een ad-einde van dezelfde duur, zodat de tijdlijnduur ongewijzigd blijft.
 title: Actief/lineair en omzetten en invoegen
-exl-id: 5d5954c6-9d1c-4900-9813-d3248fd61911
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '266'
 ht-degree: 0%
@@ -19,7 +18,7 @@ De browser TVSDK voegt advertenties op de volgende manieren in:
 
 * **Pre-roll**, die aan het begin van de inhoud staat.
 
-Browser-TVSDK accepteert het ad-einde, zelfs als de duur langer of korter is dan de vervangende duur van het actiepunt. Browser-TVSDK biedt standaard ondersteuning voor de `#EXT-X-CUE` activeer als een geldige advertentiemarkering bij het omzetten en plaatsen van advertenties. Voor deze markering is het metagegevensveld vereist `DURATION` in seconden en de unieke id van de actielijn. Bijvoorbeeld:
+Browser-TVSDK accepteert het ad-einde, zelfs als de duur langer of korter is dan de vervangende duur van het actiepunt. Browser-TVSDK biedt standaard ondersteuning voor de `#EXT-X-CUE` activeer als een geldige advertentiemarkering bij het omzetten en plaatsen van advertenties. Deze markering vereist het metagegevensveld `DURATION` in seconden en de unieke id van de actielijn. Bijvoorbeeld:
 
 ```
 #EXT-X-CUE:DURATION=27,ID="..."

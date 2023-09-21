@@ -1,8 +1,7 @@
 ---
 title: MVPD Authorization
 description: MVPD Authorization
-exl-id: 215780e4-12b6-4ba6-8377-4d21b63b6975
-source-git-commit: bfc3ba55c99daba561255760baf273b6538a3c6e
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '579'
 ht-degree: 0%
@@ -17,7 +16,7 @@ ht-degree: 0%
 
 ## Overzicht {#mvpd-authz-overview}
 
-De vergunning (AuthZ) wordt uitgevoerd via backchannel (server-aan-server) mededelingen tussen een Adobe-ontvangen backend server en het eindpunt van AuthZ MVPD.
+De vergunning (AuthZ) wordt uitgevoerd via backchannel (server-aan-server) mededelingen tussen een Adobe-ontvangen backend server en het eindpunt AuthZ MVPD.
 
 Voor verzoeken AuthZ, zou het vergunningseindpunt minstens de volgende parameters moeten kunnen verwerken:
 
@@ -34,7 +33,7 @@ Een AuthZ-verzoek moet een onderwerp bevatten namens wie het verzoek wordt gedaa
 | XACML-element | Komt overeen met |
 |---------------|--------------------------------------------------------------------------------------------------------------------------------|
 | Onderwerp | Het hoofd dat door de Voor authentiek verklaarde Zitting wordt geïdentificeerd, die door &quot;subject-token&quot;AttributeValue van de bevestiging van SAML wordt van verwijzingen voorzien. |
-| Resource | A URI for the Protected Resource. |
+| Bron | A URI for the Protected Resource. |
 | Handeling | WEERGEVEN. |
 | Omgeving | Omvat IP adres van de vragende cliënt, zoals die door SP wordt gezien. |
 
@@ -84,7 +83,7 @@ Na het ontvangen van het verzoek AuthZ, evalueert PDP van MVPD het verzoek en be
 
 ## De machtigingsreactie {#authz-response}
 
-De reactie op het verzoek AuthZ komt nadat MVPD het verzoek evalueert en past de gevraagde bedrijfsregels toe om te bepalen als het onderwerp de gevraagde actie op het middel mag uitvoeren. De teruggekeerde Reactie op de authentificatie van Adobe Primetime wordt opnieuw uitgedrukt na de XACML kernspecificatie met een Besluit, een code van de Status, een bericht, en de Verplichtingen die SP als het Punt van de Handhaving van het Beleid (PEP) heeft. Hier volgt een voorbeeldreactie:
+De reactie op het verzoek AuthZ komt nadat MVPD het verzoek evalueert en past de gevraagde bedrijfsregels toe om te bepalen als het onderwerp de gevraagde actie op het middel mag uitvoeren. De teruggekeerde Reactie op de authentificatie van Adobe Primetime wordt opnieuw uitgedrukt na de XACML kernspecificatie met een Besluit, een code van de Status, een bericht, en de Verplichtingen die SP als het Punt van de Handhaving van het Beleid (PEP) heeft. Hier volgt een voorbeeld van een reactie:
 
 ```XML
 <Response xmlns="urn:oasis:names:tc:xacml:2.0:context:schema:os">

@@ -1,15 +1,14 @@
 ---
 description: Als u de advertentieoplosser wilt laten werken, hebben providers, zoals Adobe Primetime en besluitvorming, configuratiewaarden nodig om de verbinding met de provider mogelijk te maken.
-title: Metagegevens voor invoeging toevoegen
-exl-id: 83c0fd25-dbc3-4529-b81a-16ff78012c80
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+title: Metagegevens voor invoegen toevoegen
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '397'
 ht-degree: 0%
 
 ---
 
-# Metagegevens voor invoeging toevoegen {#ad-insertion-metadata}
+# Metagegevens voor invoegen toevoegen {#ad-insertion-metadata}
 
 Als u de advertentieoplosser wilt laten werken, hebben providers, zoals Adobe Primetime en besluitvorming, configuratiewaarden nodig om de verbinding met de provider mogelijk te maken.
 
@@ -17,13 +16,13 @@ TVSDK bevat de Primetime- en beslissingsbibliotheek. Uw toepassing moet het volg
 
 * `mediaID`Dit is een unieke id voor de video die moet worden afgespeeld.
 
-   De uitgever wijst de media-id toe bij het verzenden van video-inhoud en advertentiegegevens naar de Adobe Primetime en de beslissingsserver. Deze id wordt gebruikt door Primetime en door beslissingen om gerelateerde advertentiegegevens voor de video op te halen van de server.
+  De uitgever wijst de media-id toe bij het verzenden van video-inhoud en advertentiegegevens naar de Adobe Primetime en de beslissingsserver. Deze id wordt gebruikt door Primetime en door beslissingen om gerelateerde advertentiegegevens voor de video op te halen van de server.
 
-* Uw `zoneID`, die wordt toegewezen door Adobe, uw bedrijf of website identificeert.
+* Uw `zoneID`, die door Adobe wordt toegewezen, uw bedrijf of website identificeert.
 * Het domein van de toegewezen advertentieserver.
 * Andere doelparameters.
 
-   U kunt deze parameters opnemen, afhankelijk van uw behoeften en de behoeften van de advertentieprovider.
+  U kunt deze parameters opnemen, afhankelijk van uw behoeften en de behoeften van de advertentieprovider.
 
 ## Metagegevens instellen en invoegen {#set-up-ad-insertion-metadata}
 

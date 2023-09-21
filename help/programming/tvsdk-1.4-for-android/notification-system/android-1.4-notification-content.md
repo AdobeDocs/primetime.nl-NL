@@ -1,8 +1,7 @@
 ---
 description: MediaPlayerNotification-objecten bieden informatie over wijzigingen in spelerstatus, waarschuwingen en fouten. Fouten die het afspelen van de video stoppen, veroorzaken ook een wijziging in de status van de speler.
 title: Inhoud voor meldingen
-exl-id: b8298865-0389-4610-b495-b8735ef9cd56
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '707'
 ht-degree: 0%
@@ -24,10 +23,10 @@ TVSDK verstrekt een chronologische lijst van `MediaPlayerNotification` meldingen
 * Tijdstempel
 * Diagnostische metagegevens die bestaan uit de volgende elementen:
 
-   * `type`: INFORMATIE, WAARSCHUWING of FOUT.
+   * `type`: INFO, WARN of ERROR.
    * `code`: Een numerieke weergave van de kennisgeving.
    * `name`: Een door mensen leesbare beschrijving van de melding, zoals SEEK_ERROR
-   * `metadata`: Sleutel-waardeparen die relevante informatie over de kennisgeving bevatten. Een toets met de naam `URL` Hiermee wordt een waarde opgegeven die een URL is die gerelateerd is aan het bericht.
+   * `metadata`: sleutel/waardeparen die relevante informatie over de kennisgeving bevatten. Bijvoorbeeld een toets met de naam `URL` Hiermee wordt een waarde opgegeven die een URL is die gerelateerd is aan het bericht.
 
    * `innerNotification`: Een verwijzing naar een andere `MediaPlayerNotification` object dat rechtstreeks van invloed is op deze melding.
 
@@ -63,7 +62,7 @@ Het berichtsysteem staat u toe om het registreren en het zuiveren informatie voo
 >
 >Het registreren achtereind maakt geen deel uit van een productieconfiguratie en wordt niet verwacht om hoog-ladingsverkeer te behandelen. Als uw implementatie niet volledig hoeft te zijn, kunt u beter de efficiëntie van gegevensoverdracht in overweging nemen om te voorkomen dat uw systeem wordt overbelast.
 
-Hier is een voorbeeld van hoe u meldingen kunt ophalen.
+Hier is een voorbeeld van hoe te om berichten terug te winnen.
 
 1. Creeer een op tijdopnemer-gebaseerde uitvoeringsdraad voor uw videotoepassing die periodiek de gegevens vraagt die door het TVSDK berichtsysteem worden verzameld.
 
@@ -100,7 +99,7 @@ Wanneer TVSDK ID3-metagegevens detecteert, wordt een melding met de volgende geg
 
    >[!NOTE]
    >
-   >Aangepaste cues voor advertenties gebruiken hetzelfde `onTimedMetadata` gebeurtenis die de detectie van een nieuwe tag aangeeft. Dit mag geen verwarring veroorzaken omdat aangepaste ad-cues worden gedetecteerd op manifestniveau en ID3-tags zijn ingesloten in de stream. Voor meer informatie, zie douane-markeringen-vormen.
+   >Aangepaste cues voor advertenties gebruiken hetzelfde `onTimedMetadata` gebeurtenis om de detectie van een nieuwe tag aan te geven. Dit mag geen verwarring veroorzaken omdat aangepaste ad-cues worden gedetecteerd op manifestniveau en ID3-tags zijn ingesloten in de stream. Voor meer informatie, zie douane-markeringen-vormen.
 
 1. Haal de metagegevens op.
 

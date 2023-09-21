@@ -1,8 +1,7 @@
 ---
 title: MVPD-uitwisseling van metagegevens van gebruikers
 description: MVPD-uitwisseling van metagegevens van gebruikers
-exl-id: 8bce6acc-cd33-476c-af5e-27eb2239cad1
-source-git-commit: bfc3ba55c99daba561255760baf273b6538a3c6e
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '943'
 ht-degree: 0%
@@ -34,8 +33,8 @@ Belangrijke punten van metagegevens van gebruiker:
 * MVPD gaat gebruikersmeta-gegevens tot de toepassing van de Programmer tijdens de authentificatie en vergunningsstromen over
 * Adobe Primetime-verificatie slaat de metagegevenswaarden op in de tokens AuthN en AuthZ
 * Adobe Primetime-verificatie kan waarden normaliseren voor MVPD&#39;s die gebruikersmetagegevens in verschillende indelingen bieden
-* Sommige parameters kunnen worden gecodeerd met behulp van de sleutel van de programmeur
-* Adobe stelt specifieke waarden beschikbaar via een configuratiewijziging
+* Sommige parameters kunnen worden gecodeerd met de sleutel van de programmeur
+* Specifieke waarden worden door de Adobe beschikbaar gesteld via een configuratiewijziging
 
 >[!NOTE]
 >
@@ -68,7 +67,7 @@ var resource = '<rss version="2.0" xmlns:media="http://video.search.yahoo.com/mr
 getAuthorization(resource);
 ```
 
-De authentificatie van Adobe Primetime steunt eigenlijk meer korrelige vergunning, tot het activaniveau, wanneer gesteund door zowel MVPD als programmeur. De bron en de metagegevens zijn ondoorzichtig voor Adobe; de bedoeling is een standaardformaat voor het specificeren van middelidentiteitskaart en meta-gegevens op een genormaliseerde manier te vestigen, om middel IDs naar verschillende MVPDs te verzenden.
+De authentificatie van Adobe Primetime steunt eigenlijk meer korrelige vergunning, tot het activaniveau, wanneer gesteund door zowel MVPD als programmeur. De bron en de bijbehorende metagegevens zijn ondoorzichtig voor de Adobe. De bedoeling is om een standaardindeling in te stellen voor het normaliseren van de bron-id en de metagegevens, zodat de bron-id&#39;s naar andere MVPD&#39;s worden verzonden.
 
 >[!NOTE]
 >
@@ -111,11 +110,11 @@ Bij Adobe Primetime-verificatie worden de volgende veronderstellingen gehanteerd
 
 De authentificatie van Adobe Primetime kan transparante omzetting van het koord van het erfeniskanaal aan het overeenkomstige middel RSS voor MVPDs ook steunen die RSS vereisen. In de andere richting, steunt de authentificatie van Adobe Primetime omzetting van RSS+MRSS aan gewone kanaaltitel, voor kanaal-slechts MVPDs.
 
-**Adobe Primetime-verificatie zorgt voor volledige achterwaartse compatibiliteit met bestaande integratie.** Namelijk voor Programmeurs die kanaal-vlakke authentificatie gebruiken, zorgt de authentificatie van Adobe Primetime ervoor om kanaalidentiteitskaart in het noodzakelijke formaat te verpakken alvorens het naar MVPD te verzenden die dat formaat begrijpt. Het omgekeerde geldt ook: als een programmeur al zijn middelen in een nieuw formaat specificeert, vertaalt de authentificatie van Adobe Primetime het nieuwe formaat aan een eenvoudig kanaalkoord als het machtigen tegen MVPD die slechts de vergunning van het kanaalniveau doet.
+**Adobe Primetime-verificatie zorgt voor volledige achterwaartse compatibiliteit met bestaande integratie.** Namelijk voor Programmeurs die kanaal-vlakke authentificatie gebruiken, zorgt de authentificatie van Adobe Primetime ervoor om kanaalidentiteitskaart in het noodzakelijke formaat te verpakken alvorens het naar MVPD te verzenden die dat formaat begrijpt. Het omgekeerde geldt ook: als een programmeur al zijn middelen in een nieuw formaat specificeert, vertaalt de authentificatie van Adobe Primetime het nieuwe formaat aan een eenvoudig kanaalkoord als het machtigen tegen MVPD die slechts kanaalniveauvergunning doet.
 
-## Gebruiksscenario&#39;s voor metagegevens van gebruiker {#user-metadata-use-cases}
+## Gebruiksscenario&#39;s metagegevens gebruiker {#user-metadata-use-cases}
 
-De gevallen van het gebruik zijn voortdurend veranderend en uitbreidend aangezien meer MVPDs wettelijke regelingen en toevoegt functionaliteit maakt. Hieronder ziet u voorbeelden van gebruikersmetagegevens.
+De gevallen van het gebruik zijn voortdurend veranderend en uitbreidend aangezien meer MVPDs wettelijke regelingen en toevoegt functionaliteit maakt. Hieronder ziet u voorbeelden van de gebruikersmetagegevens die u kunt gebruiken.
 
 * [MVPD-gebruikersnaam](#mvpd-user-id)
 * [Huishoudelijke ID](#household-user-id)
@@ -129,34 +128,34 @@ De gevallen van het gebruik zijn voortdurend veranderend en uitbreidend aangezie
 * Niet de daadwerkelijke login informatie van de gebruiker, aangezien het door MVPD wordt gehakt
 * Kan worden gebruikt om problemen aan te geven met of voor specifieke gebruikers
 * Gecodeerd
-* MVPD-ondersteuning: Alle MVPD&#39;s
+* MVPD-ondersteuning: alle MVPD&#39;s
 
-### Huishoudelijke gebruikersnaam {#household-user-id}
+### Gebruikersnaam voor huishouden {#household-user-id}
 
 * Staat goede metrische informatie toe
 * Gecodeerd
-* MVPD-ondersteuning: Sommige MVPD&#39;s
+* MVPD-ondersteuning: sommige MVPD&#39;s
 
 ### Postcode {#zip-code}
 
 * De postcode voor facturering van de gebruiker
 * Primair gebruikt om de regels voor het blokkeren van sportevenementen af te dwingen
-* Kan worden geleverd met de AuthZ-respons voor snelle updates
-* MVPD-ondersteuning: Sommige MVPD&#39;s
+* Kan de AuthZ-respons voor snelle updates ontvangen
+* MVPD-ondersteuning: sommige MVPD&#39;s
 
 ### Max. score (ouderlijk toezicht) {#max-rating-parental-control}
 
 * Aanvankelijk AuthN, plus AuthZ verfrist zich
 * Inhoud uit de gebruikersinterface filteren
 * MPAA- of VChip-ratings
-* MVPD-ondersteuning: Sommige MVPD&#39;s
+* MVPD-ondersteuning: sommige MVPD&#39;s
 
 ### Kanaal lineup {#channel-line-up}
 
 * MVPDs kan een lijst van kanalen verstrekken die de gebruiker gerechtigd is te bekijken
 * Maakt snel tekenen in de gebruikersinterface mogelijk
 * De specificatie OLCA staat voor dit als AttributeStatement in de reactie van AuthN toe
-* Ondersteuning voor MVPD&#39;s: Sommige MVPD&#39;s
+* Ondersteuning voor MVPD&#39;s: sommige MVPD&#39;s
 
 <!--
 >[!RELATEDINFORMATION]

@@ -1,8 +1,7 @@
 ---
 description: 302 optimalisatie voor omleiding minimaliseert het aantal van 302 reacties voor omleiding, waardoor uw toepassing de taakverdeling effectiever kan uitvoeren.
 title: HTTP 302-herleidingsoptimalisatie
-exl-id: 9b9d98ae-a509-47dc-a5ac-6be9b0f214c1
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '185'
 ht-degree: 0%
@@ -17,7 +16,7 @@ Als een hoofdmanifestverzoek wordt omgeleid, en optimalisering 302 in uw speler 
 
 Deze functie is standaard uitgeschakeld en u kunt deze instelling wijzigen.
 
-Als u deze functie inschakelt, werkt deze alleen correct als *alles* aan de volgende voorwaarden is voldaan: anders vindt geen herleidingsoptimalisatie plaats en blijven 302 reacties optreden:
+Als u deze functie inschakelt, werkt deze alleen correct als *alles* van de volgende voorwaarden is waar; anders vindt geen herleidingsoptimalisatie plaats en blijven 302 reacties optreden:
 
 * Uw toepassing is gecompileerd voor Adobe Flash Player 11.8, die `-swf-version` 21 of hoger.
 * Uw eindgebruikers hebben Adobe Flash Player 11.8 of later geïnstalleerd.

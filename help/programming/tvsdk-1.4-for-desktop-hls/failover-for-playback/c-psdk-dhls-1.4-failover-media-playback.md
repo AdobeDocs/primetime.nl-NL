@@ -1,8 +1,7 @@
 ---
 description: Voor live en video-on-demand (VOD) media begint TVSDK met afspelen door de afspeellijst te downloaden die is gekoppeld aan de bitsnelheid met de middelste resolutie en worden de mediasegmenten gedownload die door die afspeellijst zijn gedefinieerd. Deze selecteert snel de afspeellijst met hoge bitsnelheid en de bijbehorende media en gaat verder met het downloaden.
 title: Afspelen van media en failover
-exl-id: 43a44631-0b45-4f4e-8ec3-d3e1a0d5c71a
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '654'
 ht-degree: 0%
@@ -17,11 +16,11 @@ Voor live en video-on-demand (VOD) media begint TVSDK met afspelen door de afspe
 
 Wanneer een volledige afspeellijst ontbreekt, bijvoorbeeld wanneer het M3U8-bestand dat in een manifestbestand op hoofdniveau is opgegeven niet wordt gedownload, probeert TVSDK het bestand te herstellen. Als deze niet kan worden hersteld, bepaalt uw toepassing de volgende stap.
 
-Als de afspeellijst die is gekoppeld aan de bitsnelheid met middelste resolutie ontbreekt, zoekt TVSDK naar een andere afspeellijst met dezelfde resolutie. Als dezelfde resolutie wordt gevonden, worden de afspeellijst van de variant en de segmenten vanaf de overeenkomende positie gedownload. Als TVSDK niet dezelfde afspeellijst met resolutie vindt, probeert het andere afspeellijsten met bitsnelheden en hun varianten te doorlopen. Een onmiddellijk lagere bitsnelheid is de eerste keuze, daarna de variant, enzovoort. Als alle onderste afspeellijsten met bitsnelheden en de bijbehorende varianten zijn uitgeput in de poging om een geldige afspeellijst te vinden, gaat TVSDK naar de bovenste bitsnelheid en wordt het aantal van daaruit verlaagd. Als er geen geldige afspeellijst kan worden gevonden, mislukt het proces en gaat de speler naar de status ERROR.
+Als de afspeellijst die is gekoppeld aan de bitsnelheid met middelste resolutie ontbreekt, zoekt TVSDK naar een andere afspeellijst met dezelfde resolutie. Als dezelfde resolutie wordt gevonden, worden de afspeellijst van de variant en de segmenten vanaf de overeenkomende positie gedownload. Als TVSDK niet dezelfde afspeellijst met resolutie vindt, probeert het andere afspeellijsten met bitsnelheden en de varianten daarvan te doorlopen. Een onmiddellijk lagere bitsnelheid is de eerste keuze, daarna de variant, enzovoort. Als alle onderste afspeellijsten met bitsnelheden en de bijbehorende varianten zijn uitgeput in de poging om een geldige afspeellijst te vinden, gaat TVSDK naar de bovenste bitsnelheid en wordt het aantal van daaruit verlaagd. Als er geen geldige afspeellijst kan worden gevonden, mislukt het proces en gaat de speler naar de status ERROR.
 
 Uw toepassing kan bepalen hoe deze situatie wordt afgehandeld. U kunt bijvoorbeeld de speleractiviteit sluiten en de gebruiker naar de catalogusactiviteit verwijzen. De gebeurtenis van belang is de `STATUS_CHANGED` gebeurtenis, en de overeenkomstige callback is `onStatusChange` methode. Hier volgt code waarmee wordt gecontroleerd of de interne status van de speler wordt gewijzigd in ERROR:
 
-Zie voor meer informatie de `PSDKDemo` bestand. Gebeurtenislisteners zijn gekoppeld aan de MediaPlayer-instantie.
+Zie de klasse `PSDKDemo` bestand. Gebeurtenislisteners zijn gekoppeld aan de MediaPlayer-instantie.
 
 ```
 case MediaPlayerStatus.ERROR: 

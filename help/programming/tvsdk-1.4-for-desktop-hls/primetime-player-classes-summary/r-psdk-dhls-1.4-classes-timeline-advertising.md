@@ -1,8 +1,7 @@
 ---
 description: Deze klassen bieden informatie over advertenties die binnen een tijdlijn voorkomen.
 title: Tijdlijnadvertentieklassen
-exl-id: 2ac1f6b7-48b2-4d9c-b39d-a7e6f1ff2ac5
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '541'
 ht-degree: 0%
@@ -26,9 +25,9 @@ Pakket: [com.adobe.mediacore.timeline.advertence.policy](https://help.adobe.com/
 | [AdBreakWatchedPolicy](https://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls_1.4/com/adobe/mediacore/timeline/advertising/policy/AdBreakWatchedPolicy.html) | De klasse van de opsomming voor mogelijke beleid over wanneer om een advertentiesonderbreking te merken zoals die zijn gecontroleerd. |
 | [AdClick](https://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls_1.4/com/adobe/mediacore/timeline/advertising/AdClick.html) | Klasse die een klikinstantie vertegenwoordigt die aan activa wordt geassocieerd. Deze instantie bevat informatie over de doorklikken-URL en de titel die kunnen worden gebruikt om extra informatie aan de gebruiker te verstrekken. |
 | [Advertentiebeleid](https://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls_1.4/com/adobe/mediacore/timeline/advertising/policy/AdPolicy.html) | De klasse van de opsomming voor mogelijk beleid op waar te om het spelen van een advertentie na het zoeken of truc-speelwijze te hervatten. |
-| [AdPolicyMode](https://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls_1.4/com/adobe/mediacore/timeline/advertising/policy/AdPolicyMode.html) | Opsommingsklasse die een overzicht geeft van de manieren waarop de speler wordt afgespeeld, zoals zoeken of normaal afspelen. |
+| [AdPolicyMode](https://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls_1.4/com/adobe/mediacore/timeline/advertising/policy/AdPolicyMode.html) | Een opsommingsklasse waarin wordt vermeld hoe de speler wordt afgespeeld, zoals zoeken of normaal afspelen. |
 | [AdPolicyInfo](https://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls_1.4/com/adobe/mediacore/timeline/advertising/policy/AdPolicySelector.html) | Interface die eigenschappen definieert voor `AdPolicySelector` API-aanroepen. Deze eigenschappen bieden de context voor het afdwingen van elk advertentiegedrag. |
-| [AdPolicySelector](https://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls_1.4/com/adobe/mediacore/timeline/advertising/policy/AdPolicySelector.html) | An ad policy selector interface for enforcing and behavior. Toepassingen kunnen met deze interface in overeenstemming zijn door alle vereiste methoden te implementeren of door de bestaande standaardbeleidsselectorklasse uit te breiden om specifiek gedrag aan te passen. |
+| [AdbeleidSelector](https://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls_1.4/com/adobe/mediacore/timeline/advertising/policy/AdPolicySelector.html) | An ad policy selector interface for enforcing and behavior. Toepassingen kunnen met deze interface in overeenstemming zijn door alle vereiste methoden te implementeren of door de bestaande standaardbeleidsselectorklasse uit te breiden om specifiek gedrag aan te passen. |
 | [AdTimelineItem](https://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls_1.4/com/adobe/mediacore/timeline/advertising/AdTimelineItem.html) | Tijdlijnitem dat aan een specifieke advertentie is gekoppeld. |
 | [AuditudeAdResolver](https://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls_1.4/com/adobe/mediacore/timeline/advertising/AuditudeAdResolver.html) | Klasse die de primetime afhandelt en het TVSDK-proces oplost. |
 | [AdType](https://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls_1.4/com/adobe/mediacore/timeline/advertising/AdType.html) | Opsomming van alle advertentietypen die door TVSDK worden gesteund. |

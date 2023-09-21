@@ -1,8 +1,7 @@
 ---
 description: Deze klassen bieden informatie over advertenties die binnen een tijdlijn voorkomen.
 title: Tijdlijnadvertentieklassen
-exl-id: 004c706a-55cc-446a-93b1-c5c7c011ba42
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '515'
 ht-degree: 0%
@@ -42,7 +41,7 @@ Deze klassen bieden informatie over advertenties die binnen een tijdlijn voorkom
    <td colname="1"><a href="https://help.adobe.com/en_US/primetime/api/psdk/appledoc/Classes/PTAdBannerView.html" format="html" scope="external"> PTAdBannerView</a> </td> 
    <td colname="2">
     <pre>
-      Hiermee geeft u een bannerelement weer. Uw toepassing moet een nieuwe instantie van deze hulpprogrammaklasse maken, het bannerelement instellen en aan een weergave toevoegen. De indruk en klik het volgen voor de banner wordt intern beheerd door deze klasse.
+      Geeft een bannerelement weer. Uw toepassing moet een nieuwe instantie van deze hulpprogrammaklasse maken, het bannerelement instellen en aan een weergave toevoegen. De indruk en klik het volgen voor de banner wordt intern beheerd door deze klasse.
     </pre> </td> 
   </tr> 
   <tr rowsep="1"> 

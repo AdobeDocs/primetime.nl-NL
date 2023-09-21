@@ -2,8 +2,7 @@
 title: De licentieserver implementeren
 description: De licentieserver implementeren
 copied-description: true
-exl-id: 1439a5b2-eccb-41b7-a4d3-0673e727fb13
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '292'
 ht-degree: 0%
@@ -16,7 +15,7 @@ ht-degree: 0%
 
    Als u de licentieserver voor de voorbeeldimplementatie ongewijzigd wilt gebruiken, kunt u gewoon het WAR-bestand van de licentieserver kopiëren ( `[DRM SDK DVD]\Reference Implementation\Server\Reference Implementation Server\\flashaccess.war`) aan de `webapps` op uw Tomcat-server.
 
-   Als u de licentieserver voor de voorbeeldimplementatie aanpast, kopieert u de bestanden voor de serveroorlog die u hebt gemaakt `DRM SDK DVD]\Reference Implementation\Server\Reference Implementation Server\refimpl-build\wars` aan de `webapps` directory.
+   Als u de licentieserver voor de voorbeeldimplementatie aanpast, kopieert u de serveroorlogsbestanden die u hebt gemaakt `DRM SDK DVD]\Reference Implementation\Server\Reference Implementation Server\refimpl-build\wars` aan de `webapps` directory.
 
    >[!NOTE]
    >
@@ -25,14 +24,13 @@ ht-degree: 0%
    >* [!DNL webapps/flashaccess]
    >* [!DNL webapps/edcws]
 
-
    >[!NOTE]
    >
-   >Niet implementeren [!DNL edsws.war] tenzij u achterwaartse compatibiliteit met Flash Media Rights Management v1.5-inhoud (FMRMS) vereist. (Dit is een zeer zeldzame vereiste.)
+   >Niet implementeren [!DNL edsws.war] tenzij u achterwaartse compatibiliteit met Flash Media Rights Management (FMRMS) v1.5 inhoud vereist. (Dit is een zeer zeldzame vereiste.)
    >
    >Als u liever wilt voorkomen dat Tomcat WAR-bestanden uitpakt, bewerkt u `server.xml` in de `conf` map en set `unpackWARs` tot `false`.
 
-1. Kopieer de volledige inhoud van de `[DRM SDK DVD]\Reference Implementation\Server\Reference Implementation Server\resources\` in uw [!DNL tomcat] directory.
+1. Kopieer de volledige inhoud van het dialoogvenster `[DRM SDK DVD]\Reference Implementation\Server\Reference Implementation Server\resources\` in uw [!DNL tomcat] directory.
 
    De [!DNL resources] map bevat:
 
@@ -40,7 +38,7 @@ ht-degree: 0%
    * [!DNL log4j.xml] - Configuratie logboekregistratie licentieserver
    * [!DNL *.pol] - Voorbeelden van DRM-beleidsbestanden.
 
-   Bovendien kunt u ervoor kiezen om de Adobe-certificeringsbestanden naar deze locatie te kopiëren.
+   Daarnaast kunt u ook de certificaatbestanden voor de Adobe naar deze locatie kopiëren.
 
 1. Instellingen van licentieserver wijzigen in [!DNL flashaccesstools.properties] om de serverinstelling te weerspiegelen.
 

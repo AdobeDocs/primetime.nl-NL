@@ -2,8 +2,7 @@
 title: JSON-object voor aangepaste advertentiemarkeringen
 description: JSON-object voor aangepaste advertentiemarkeringen
 copied-description: true
-exl-id: 85bcf306-703c-4a0d-b125-df9316fadf69
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '159'
 ht-degree: 0%
@@ -16,7 +15,7 @@ In het codeblok hieronder wordt het JSON-object &quot;details&quot; gedefinieerd
 
 De MetadataNode die door IFeedItemAdapter:getStreamMetadata() wordt geretourneerd, bevat 2 items:
 1. een item met sleutel van het type `com.adobe.mediacore.metadata.DefaultMetadataKeys.CUSTOM_AD_MARKERS_METADATA_KEY` en de waarde van een instantie van de MetadataNode die is geretourneerd door `TimeRangeCollection.toMetadata()`.
-1. Het tweede item heeft een toets van het type `com.adobe.mediacore.metadata.DefaultMetadataKeys.METADATA_KEY_ADJUST_SEEK_ENABLED` met de waarde van *adjust-seek-positie* kenmerk hieronder.
+1. Het tweede item heeft een toets van het type `com.adobe.mediacore.metadata.DefaultMetadataKeys.METADATA_KEY_ADJUST_SEEK_ENABLED` met de waarde van *adjust-seek-positie* kenmerk verderop.
 
 ```
 “metadata”: {

@@ -2,8 +2,7 @@
 title: Rechten afspelen
 description: Rechten afspelen
 copied-description: true
-exl-id: a4fda537-dbcc-496b-8f15-c13b25fe87b0
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '290'
 ht-degree: 0%
@@ -28,6 +27,6 @@ In de volgende tabel worden de voorkeuren voor afspeelrechten beschreven:
 | SWF | Lijst met SWF-URL&#39;s die beveiligde inhoud mogen afspelen. |
 | AIR | Lijst met AIR-toepassingen die beveiligde inhoud mogen afspelen. Uitgever-id is vereist. De overige velden zijn optioneel. |
 
-Flash Access Manager ondersteunt beleid dat meerdere afspeelrechten bevat. Als u een beleid wilt maken met meer dan één Play Right-optie, gebruikt u de knop &quot;Extra rechts afspelen toevoegen&quot; en vult u de gewenste kenmerken in voor elk Play Right-item.
+De Manager van de Flash Access steunt beleid dat veelvoudige Rechten van het Spel bevat. Als u een beleid wilt maken met meer dan één Play Right-optie, gebruikt u de knop &quot;Extra rechts afspelen toevoegen&quot; en vult u de gewenste kenmerken in voor elk Play Right-item.
 
-Wanneer de klant een licentie gebruikt, gebruikt de client het eerste Play Right waarvoor de licentie aan alle vereisten voldoet. U kunt meerdere spelrechten gebruiken om verschillende beperkingen voor verschillende besturingssystemen op te geven. Het is bijvoorbeeld mogelijk één recht op te geven met Uitvoerbeveiliging vereist voor Windows (door DRM-versies op Macintosh en Linux te blokkeren) en een tweede recht op te geven met Uitvoerbeveiliging &quot;Gebruik indien beschikbaar&quot; op andere platforms (door DRM-versies in Windows in de bloklijst weer te geven).
+Wanneer de klant een licentie gebruikt, gebruikt de client het eerste Play Right waarvoor de licentie aan alle vereisten voldoet. Meerdere afspeelrechten kunnen worden gebruikt om verschillende beperkingen voor verschillende besturingssystemen op te geven. Het is bijvoorbeeld mogelijk één recht op te geven met Uitvoerbeveiliging vereist voor Windows (door DRM-versies op Macintosh en Linux te blokkeren) en een tweede recht op te geven met Uitvoerbeveiliging &quot;Gebruik indien beschikbaar&quot; op andere platforms (door DRM-versies in Windows in de bloklijst weer te geven).

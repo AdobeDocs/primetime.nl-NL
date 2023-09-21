@@ -1,8 +1,7 @@
 ---
 description: Voor een vloeiender kijkervaring wordt de videostream soms door Browser-TVSDK gebufferd. U kunt de manier configureren waarop de speler buffert.
 title: Bufferen
-exl-id: 786379d1-0f2d-44a9-b580-1c8dcbd3fd17
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '378'
 ht-degree: 0%
@@ -25,11 +24,11 @@ De MediaPlayer biedt methoden om de initiële buffertijd en de buffertijd voor h
 
 * Als u de bufferparameters wilt gebruiken, gebruikt u de MediaPlayer `bufferControlParameters` kenmerk.
 
-   Stel bijvoorbeeld de eerste buffer in op 2 seconden en de buffertijd voor het afspelen op 30 seconden:
+  Stel bijvoorbeeld de eerste buffer in op 2 seconden en de buffertijd voor het afspelen op 30 seconden:
 
-   ```js
-   var params = new AdobePSDK.BufferControlParameters(2000, 30000);
-   ```
+  ```js
+  var params = new AdobePSDK.BufferControlParameters(2000, 30000);
+  ```
 
 ## Tijdbeleid bufferen {#section_7EF2947931654CCC8DAB9172391FA4EB}
 
@@ -41,4 +40,4 @@ Terwijl de video wordt teruggegeven, blijft Browser TVSDK nieuwe fragmenten buff
 
 >[!TIP]
 >
->Als de aanvankelijke bufferwaarde hoog is, zou het uw gebruiker een lange aanvankelijke buffertijd kunnen geven alvorens te beginnen. Hierdoor wordt het afspelen langer soepel afgespeeld. als de netwerkvoorwaarden echter slecht zijn , kan het afspelen eerst worden vertraagd .
+>Als de aanvankelijke bufferwaarde hoog is, zou het uw gebruiker een lange aanvankelijke buffertijd kunnen geven alvorens te beginnen. Dit kan een langere afspeeltijd voor een vloeiende weergave zorgen. Als de netwerkvoorwaarden echter slecht zijn, kan de eerste afspeelbewerking worden vertraagd.

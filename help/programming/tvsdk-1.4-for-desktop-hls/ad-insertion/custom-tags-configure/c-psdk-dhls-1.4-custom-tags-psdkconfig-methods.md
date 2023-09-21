@@ -1,8 +1,7 @@
 ---
 description: U kunt aangepaste tagnamen in TVSDK globaal configureren met de MediaPlayerItemConfig-klasse of op stream gebaseerd met de MediaPlayerItemConfig-klasse.
 title: Methoden van de klasse Config voor tags
-exl-id: 093720df-9c2d-41f1-ba9d-9553c5df40a4
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '219'
 ht-degree: 0%
@@ -50,8 +49,8 @@ Houd rekening met het volgende:
 
 * De settermethoden staan niet toe dat de tagparameter null-waarden bevat.
 
-   Indien aangetroffen, genereert TVSDK een `IllegalArgumentException`.
+  Indien aangetroffen, genereert TVSDK een `IllegalArgumentException`.
 * De naam van de aangepaste tag moet het voorvoegsel # bevatten.
 
-   Bijvoorbeeld: `#EXT-X-ASSET` is een correcte aangepaste tagnaam, maar `EXT-X-ASSET` is onjuist.
+  Bijvoorbeeld: `#EXT-X-ASSET` is een correcte aangepaste tagnaam, maar `EXT-X-ASSET` is onjuist.
 * U kunt de configuratie niet wijzigen nadat de mediastream is geladen.

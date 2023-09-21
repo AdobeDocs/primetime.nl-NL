@@ -2,8 +2,7 @@
 title: Bestanden converteren
 description: Bestanden converteren
 copied-description: true
-exl-id: 7344ca2f-5307-403b-a6fc-cbbea7c2829f
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '173'
 ht-degree: 0%
@@ -46,7 +45,7 @@ Met behulp van een hulpprogramma zoals OpenSSL en de persoonlijke sleutel genere
 
    >[!NOTE]
    >
-   >Hoewel niet vereist, raadt Adobe aan verschillende wachtwoorden te gebruiken voor de persoonlijke sleutel (private_key_password) en de PFX (pfx_password).
+   >Hoewel niet vereist, raadt de Adobe aan verschillende wachtwoorden te gebruiken voor de persoonlijke sleutel (private_key_password) en de PFX (pfx_password).
 
    Dit definitieve PEM-bestand bevat alleen uw certificaat.
 

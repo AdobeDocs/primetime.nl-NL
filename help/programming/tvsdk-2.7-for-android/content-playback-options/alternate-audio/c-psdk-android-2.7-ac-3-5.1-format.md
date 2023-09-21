@@ -1,8 +1,7 @@
 ---
 description: Met de Audio Codec 3 (AC-3, ook bekend als Dolby Digital®) 5.1-indeling kunnen inhoudsproviders de grootte van multikanaalsaudiobestanden comprimeren zonder dat dit de geluidskwaliteit nadelig beïnvloedt. AC-3 is een formaat 5.1, zo betekent het dat het vijf volledig-bandbreedtekanalen voor een rijkere gebruikerservaring verstrekt.
 title: AC-3 5.1-indeling
-exl-id: 16647d69-9cb4-4bb8-8ad9-cac8811ea66d
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '397'
 ht-degree: 0%
@@ -21,10 +20,10 @@ TVSDK ondersteunt de volgende AC-3 5.1-functies:
 * Gemengde/niet-gemengde streams voor surround-audiotypen
 * Mogelijkheid om het apparaat te vragen om te controleren of de surround-audiocodec beschikbaar is op het apparaat.
 
-   De resultaten bepalen welk voorkeurstype voor audiocodec is geselecteerd. Het manifest met audiocodetype dat het apparaat niet zal gebruiken wordt verworpen. Als bijvoorbeeld de indeling AC-3 is geselecteerd, worden profielen met de indeling Advanced Audio Coding (AAC) niet in aanmerking genomen.
+  De resultaten bepalen welk voorkeurstype voor audiocodec is geselecteerd. Het manifest met audiocodetype dat het apparaat niet zal gebruiken wordt verworpen. Als bijvoorbeeld de indeling AC-3 is geselecteerd, worden profielen met de indeling Advanced Audio Coding (AAC) niet in aanmerking genomen.
 * Passthrough-modus
 
-   In de passthrough-modus wordt de TVSDK-indeling gewijzigd of ongewijzigd (afhankelijk van het apparaat) Dolby-media van de Decoder in plaats van de media te decoderen van de AC-3 5.1-indeling naar een PCM-indeling (multi-channel pulse-code modululation). Deze media worden naar het audioapparaat (luidspreker of ontvanger) verzonden, zodat het audioapparaat de Dolby-surround-stream kan decoderen en afspelen.
+  In de passthrough-modus wordt de TVSDK-indeling gewijzigd of ongewijzigd (afhankelijk van het apparaat) Dolby-media van de Decoder in plaats van de media te decoderen van de AC-3 5.1-indeling naar een PCM-indeling (multi-channel pulse-code modululation). Deze media worden naar het audioapparaat (luidspreker of ontvanger) verzonden, zodat het audioapparaat de Dolby-surround-stream kan decoderen en afspelen.
 
 >[!IMPORTANT]
 >
@@ -57,7 +56,7 @@ Hier is het typische werkschema dat voorkomt wanneer TVSDK manifest met AC-3 en 
 
 Als een Android-apparaat tijdens de verwerking van AC-3-media is aangesloten op het luidsprekersysteem, is de beslissing om inhoud af te spelen in de surround-modus of de stereomodus afhankelijk van de configuratie van het apparaat.
 
-|  | Surround sound | Stereoluidspreker |
+|   | Surround sound | Stereoluidspreker |
 |---|---|---|
 | Apparaatconfiguratie Dolby ingeschakeld (of automatisch) | Apparaatconfiguratie Dolby ingeschakeld (of automatisch) | Stereomodus |
 | Apparaatconfiguratie Dolby uit | Stereomodus | Stereomodus |

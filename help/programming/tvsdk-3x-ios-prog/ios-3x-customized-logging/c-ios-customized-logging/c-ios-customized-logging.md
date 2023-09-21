@@ -1,8 +1,7 @@
 ---
 description: U kunt uw eigen registratiesysteem implementeren.
 title: Aangepaste logboekregistratie
-exl-id: 8b6a916e-783e-40e1-8a3d-706b57a6ff63
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '287'
 ht-degree: 0%
@@ -13,7 +12,7 @@ ht-degree: 0%
 
 U kunt uw eigen registratiesysteem implementeren.
 
-Naast het registreren door vooraf bepaalde berichten te gebruiken, kunt u een registrerensysteem uitvoeren dat uw logboekberichten en berichten gebruikt die door TVSDK worden geproduceerd. Voor meer informatie over vooraf gedefinieerde meldingen raadpleegt u [Het meldingssysteem](https://help.adobe.com/en_US/primetime/psdk/ios/index.html#PSDKs-concept-The_Notification_System). U kunt deze logboeken gebruiken om problemen op te lossen uw spelertoepassingen en om beter inzicht in het playback en reclamewerkschema te verstrekken.
+Naast het registreren door vooraf bepaalde berichten te gebruiken, kunt u een registrerensysteem uitvoeren dat uw logboekberichten en berichten gebruikt die door TVSDK worden geproduceerd. Zie voor meer informatie over vooraf gedefinieerde meldingen [Het meldingssysteem](https://help.adobe.com/en_US/primetime/psdk/ios/index.html#PSDKs-concept-The_Notification_System). U kunt deze logboeken gebruiken om problemen op te lossen uw spelertoepassingen en om beter inzicht in het playback en reclamewerkschema te verstrekken.
 
 Het aangepaste registreren gebruikt een gedeelde singleton instantie van `PSDKPTLogFactory`, die een mechanisme verstrekt om berichten aan veelvoudige registreerapparaten te registreren. U definieert een of meer loggers en voegt deze toe aan de `PTLogFactory`. Dit staat u toe om veelvoudige registreerapparaten met douaneimplementaties, zoals een consoleregistreerapparaat, een Weblogger, of een registreerapparaat van de consolegeschiedenis te bepalen.
 

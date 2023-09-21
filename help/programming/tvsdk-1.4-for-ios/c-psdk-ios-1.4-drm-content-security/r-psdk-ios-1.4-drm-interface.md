@@ -1,8 +1,7 @@
 ---
 description: Het belangrijkste client-side element van het DRM-systeem (Primetime Digital Rights Management) is DRM Manager.
 title: Overzicht van de primaire DRM-interface
-exl-id: dee420cf-8aad-42e8-965d-9fd9395f2c45
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '419'
 ht-degree: 0%
@@ -11,9 +10,9 @@ ht-degree: 0%
 
 # Overzicht van de primaire DRM-interface {#primetime-drm-interface-overview}
 
-U kunt de functies van het DRM-systeem (Primetime Digital Rights Management) gebruiken om veilige toegang tot uw video-inhoud te bieden. U kunt ook DRM-oplossingen van derden gebruiken als alternatief voor de geïntegreerde Primetime DRM-oplossing met Adobe.
+U kunt de functies van het DRM-systeem (Primetime Digital Rights Management) gebruiken om veilige toegang tot uw video-inhoud te bieden. U kunt ook DRM-oplossingen van derden gebruiken als alternatief voor de geïntegreerde Primetime DRM-oplossing van Adobe.
 
-Neem contact op met uw Adobe voor de meest actuele informatie over de beschikbaarheid van DRM-oplossingen van derden.
+Vraag uw Adobe om de meest actuele informatie over de beschikbaarheid van DRM-oplossingen van derden.
 
 Het belangrijkste client-side element van het DRM-systeem (Primetime Digital Rights Management) is DRM Manager.
 
@@ -29,9 +28,9 @@ Dit zijn de belangrijkste API-elementen voor het werken met DRM:
 
 * Een verwijzing in de mediaspeler naar het DRM-beheerobject dat het DRM-subsysteem implementeert:
 
-   ```
-   @property (readonly, nonatomic) DRMManager *drmManager
-   ```
+  ```
+  @property (readonly, nonatomic) DRMManager *drmManager
+  ```
 
 <!--<a id="section_F986DB1EDD6F44CD8E57419CCA0921E8"></a>-->
 
@@ -45,12 +44,11 @@ Als de DRM-beveiligde stream meerdere bitsnelheden (MBR) heeft gecodeerd, moeten
 >
 >Wanneer u verwijst naar URL&#39;s met DRM-beveiligde elementen in uw iOS-app, wordt de parameter voor de queryreeks gebruikt `?faxs=1` moet worden toegevoegd aan de (MBR) set-level M3U8 URL. Bijvoorbeeld:
 >
->
-```
+>```
 >https://your.domain.com/hls/[...]/index.m3u8?faxs=1
 >```
 >
->De `faxs=1` De parameter van het vraagkoord signaleert dat de inhoud DRM beschermd is, en brengt het DRM decryptiewerkschema dienovereenkomstig in iOS TVSDK in werking. U kunt ook de opdracht `faxs=1` tags toewijzen aan URL&#39;s met HLS-middelen die met DRM zijn beveiligd en die bestemd zijn voor andere platforms; het wordt waargenomen zoals vereist op iOS of behandeld als een non-op in spelers op andere platforms.
+>De `faxs=1` De parameter van het vraagkoord signaleert dat de inhoud DRM beschermd is, en brengt het DRM decryptiewerkschema dienovereenkomstig in iOS TVSDK in werking. U kunt ook de opdracht `faxs=1` -tag op met DRM beveiligde URL&#39;s voor HLS-middelen die bestemd zijn voor andere platforms; deze tag wordt als verplicht gezien op iOS of wordt als een niet-op-tag behandeld in spelers op andere platforms.
 
 <!--<a id="section_F58941D68EB94A5EBD1C7454D2A1B17A"></a>-->
 

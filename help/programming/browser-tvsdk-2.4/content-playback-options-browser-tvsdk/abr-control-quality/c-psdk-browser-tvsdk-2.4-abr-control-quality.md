@@ -1,8 +1,7 @@
 ---
 description: HLS- en DASH-streams bieden verschillende bitsnelheidcoderingen (profielen) voor dezelfde korte videoprand. Browser TVSDK kan het kwaliteitsniveau voor elke uitbarsting selecteren op basis van de beschikbare bandbreedte.
 title: Adaptieve bitsnelheden (ABR) voor videokwaliteit
-exl-id: 2506a57b-d77d-4bd1-9e4c-5e00ef1bc8b7
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '443'
 ht-degree: 1%
@@ -52,4 +51,4 @@ Als u een bereik van 300000 tot 2000000 opgeeft, beschouwt Browser-TVSDK alleen 
 
 ABR-controleparameters instellen:
 
-* Stel de parameters in op de `ABRControlParameters` klasse.
+* Stel de parameters in op de knop `ABRControlParameters` klasse.

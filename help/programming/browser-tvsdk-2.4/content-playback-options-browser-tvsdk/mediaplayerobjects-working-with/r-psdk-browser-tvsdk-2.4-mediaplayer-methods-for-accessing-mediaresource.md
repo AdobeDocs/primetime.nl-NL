@@ -1,8 +1,7 @@
 ---
 description: Met de methoden in de MediaPlayerItem-klasse kunt u informatie ophalen over de inhoudsstroom die wordt vertegenwoordigd door een geladen MediaResource.
 title: Attributen van MediaPlayer voor toegang tot MediaResource-informatie
-exl-id: 183a2992-06f2-4b1d-84c3-a6c2a7223e32
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '210'
 ht-degree: 0%
@@ -25,7 +24,7 @@ Met de methoden in de MediaPlayerItem-klasse kunt u informatie ophalen over de i
   <tr rowsep="1"> 
    <td colname="1"> Live stream </td> 
    <td colname="2"> <span class="codeph"> leven </span> </td> 
-   <td colname="3"> True if the stream is live; false als het om VOD gaat. </td> 
+   <td colname="3"> True if the stream is live; false if it is VOD. </td> 
   </tr> 
   <tr rowsep="1"> 
    <td colname="1" morerows="2"> Ondertiteling </td> 
@@ -72,7 +71,7 @@ Met de methoden in de MediaPlayerItem-klasse kunt u informatie ophalen over de i
    <td colname="3"> </td> 
   </tr> 
   <tr rowsep="1"> 
-   <td colname="3"> Verstrekt een lijst van de bijbehorende profielen van het beetjetarief die met deze stroom worden geassocieerd. <p>Opmerking: U kunt de bitsnelheid voor elk profiel en de hoogte en breedte van het profiel ophalen. </p> </td> 
+   <td colname="3"> Verstrekt een lijst van de bijbehorende profielen van het beetjetarief die met deze stroom worden geassocieerd. <p>Opmerking: u kunt de bitsnelheid voor elk profiel en de hoogte en breedte van het profiel ophalen. </p> </td> 
   </tr> 
   <tr rowsep="1"> 
    <td colname="1"> Mediabron </td> 

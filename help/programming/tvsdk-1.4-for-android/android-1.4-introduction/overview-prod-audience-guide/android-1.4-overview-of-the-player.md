@@ -1,8 +1,7 @@
 ---
 description: TVSDK voor Android bevat verschillende functies en biedt de volgende hoofdmogelijkheden
 title: Functies van Primetime TVSDK
-exl-id: 7df03752-98aa-4317-8e41-a284472cabbb
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '237'
 ht-degree: 0%
@@ -23,7 +22,7 @@ TVSDK voor Android bevat verschillende functies en biedt de volgende hoofdmogeli
    * Adaptive bit rate (ABR) logica en eerste instelling van ABR-besturingselementen
    * Ondersteuning voor failover van Live manifest
    * Aanpasbare afspeelbuffers
-   * De duur, de grootte en de tijd-aan-download steun van het fragment volgen
+   * Ondersteuning voor het bijhouden van de duur, de grootte en de tijd-tot-downloadtijd van fragmenten
 
 * Reclame
 
@@ -38,7 +37,7 @@ TVSDK voor Android bevat verschillende functies en biedt de volgende hoofdmogeli
 
 * Inhoudsbescherming
 
-   * Toegang tot DRM-gerelateerde diensten
+   * Toegang tot DRM-gerelateerde diensten (Digital Rights Management)
    * Afspelen van HLS-streams zonder codering of met Protected HTTP Live Streaming (PHLS)
    * Op resolutie-gebaseerde outputcontrole, die op beleid DRM wordt gebaseerd
 

@@ -1,15 +1,14 @@
 ---
-title: Aanbevolen werkwijzen
+title: Aanbevolen procedures
 description: Lees verder om te begrijpen hoe u het hulpmiddel Account IQ beter kunt gebruiken.
-exl-id: 55901f5d-d9c1-4ee5-9349-afa28445b324
-source-git-commit: 326f97d058646795cab5d062fa5b980235f7da37
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '538'
 ht-degree: 0%
 
 ---
 
-# Aanbevolen werkwijzen {#aiq-best-practices}
+# Aanbevolen procedures {#aiq-best-practices}
 
 Met Account IQ kunt u het delen van referenties identificeren, de reikwijdte en de impact ervan meten, relevante cohorten segmenteren en het effect van gerichte acties volgen. Het biedt een verscheidenheid van hulpmiddelen, grafieken en rapporten die worden gebruikt om gedeelde rekeningen te begrijpen en te beheren die op om het even welke manieren kunnen worden gebruikt. Elke streaming service benadert dit gedrag en ontwikkelt processen die overeenkomen met hun unieke doelstellingen. Het product is ontworpen om op flexibele wijze aan deze behoeften te voldoen.  Er zijn echter een aantal regels van algemene praktijken die op een breed scala van scenario&#39;s kunnen worden toegepast.
 
@@ -17,7 +16,7 @@ Met Account IQ kunt u het delen van referenties identificeren, de reikwijdte en 
 
 De IQ-tools van accounts helpen u inzicht te krijgen in de aard en breedte van het delen van gegevens op uw bedrijf, van de diagrammen op het hoogste niveau die het percentage van gedeelde accounts weergeven tot de export op het laagste niveau die de kenmerken van afzonderlijke accounts rapporteren. Vooral vanaf het begin, gebruik deze hulpmiddelen om de gegevens te onderzoeken en ongewone of interessante cohorten of gedragspatronen te identificeren - die op hoge niveaus van het delen bijvoorbeeld wijzen. Vervolgens kunnen segmenten die een bepaalde mogelijkheid of doelstelling vertegenwoordigen, worden geïdentificeerd.
 
-Om de aard en impact van delen op uw bedrijf te begrijpen:
+Om de aard en de gevolgen van het delen voor uw zaken te begrijpen:
 
 * Begin door om het even welke en alle potentieel relevante gegevens te herzien.
 
@@ -27,7 +26,7 @@ Om de aard en impact van delen op uw bedrijf te begrijpen:
 
 ## Doeltreffende incrementele actie uitvoeren {#incremental-targeted-action}
 
-Met een bepaald doelsegment, doe actie. Door klein met een duidelijk bepaald segment te beginnen, vermindert u uw risico van onopzettelijke gevolgen en kan beter het resultaat begrijpen. U kunt het doel van uw bewerking altijd verfijnen of uitbreiden, ongeacht de positie waar u zich langs het pad bevindt.
+Met een bepaald doelsegment, doe actie. Door klein met een duidelijk bepaald segment te beginnen, vermindert u uw risico van onopzettelijke gevolgen en kan beter het resultaat begrijpen. U kunt het doel van de bewerking altijd verfijnen of uitbreiden, ongeacht de positie waar u zich langs het pad bevindt.
 Het is verstandig om een kleine en snelle start te maken. Gebruik eerder geïdentificeerde segmenten en onderneem acties (als experimenten) met specifieke doelstellingen.
 
 Gebruik het hulpmiddel van de Verrichting om het doelsegment en een operationeel tijdkader te bepalen. Hierdoor kunt u effecten in de volgende fase volgen.
@@ -36,13 +35,13 @@ Gebruik het hulpmiddel van de Verrichting om het doelsegment en een operationeel
 
 * Maak een bewerking die het doelsegment en de bewerkingstijd definieert.
 
-* Afhankelijk van doelstellingen zoals het verhogen, verhogen en laden, of het verlichten van toegang tot frauduleuze rekeningen, neem relevante acties op de bepaalde gebruikersreeks, zoals: in app-aanbiedingen, extra advertenties of waarvoor meervoudige verificatie is vereist.
+* Afhankelijk van doelstellingen zoals upselling, verhoging en belasting, of het verlichten van toegang tot frauduleuze rekeningen, neem relevante acties op de bepaalde gebruikersreeks, zoals: in app aanbiedingen, extra advertenties, of het vereisen van multi-factorauthentificatie.
 
 <!--If necessary, gauge the affect [by measuring the impact of actions taken](#track-measure-impact).-->
 
 ## De impact van acties volgen en meten {#track-measure-impact}
 
-De acties vereisen tijd om van kracht te worden. Gebruik de verrichting en bijbehorende grafieken om de verrichtingsstaat en segmentkenmerken door volgende weken of maanden van het verrichtingstijdkader te volgen. Combineer deze informatie met andere analyses om het resultaat te beantwoorden of te begrijpen. Bijvoorbeeld: Welk percentage van de kredietnemers werd omgezet in abonnees? Hoeveel extra advertenties zijn weergegeven? Is het aantal kredietnemers afgenomen?
+De acties vereisen tijd om van kracht te worden. Gebruik de verrichting en bijbehorende grafieken om de verrichtingsstaat en segmentkenmerken door volgende weken of maanden van het verrichtingstijdkader te volgen. Combineer deze informatie met andere analyses om het resultaat te beantwoorden of te begrijpen. Bijvoorbeeld: welk percentage kredietnemers is omgezet in abonnees? Hoeveel extra advertenties zijn weergegeven? Is het aantal kredietnemers afgenomen?
 
 * Gebruik operatiekaarten en andere analyses om het effect van handelingen te volgen en te meten.
 

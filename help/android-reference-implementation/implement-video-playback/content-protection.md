@@ -1,8 +1,7 @@
 ---
 description: De Primetime-speler ondersteunt de integratie van Primetime DRM als aangepaste DRM-workflows. Dit betekent dat uw toepassing de DRM-verificatieworkflows moet implementeren voordat de stream kan worden afgespeeld.
 title: DRM-inhoudsbeveiliging
-exl-id: c1904d15-023f-49fb-95f9-d157d17b3516
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '366'
 ht-degree: 0%
@@ -27,49 +26,49 @@ U kunt inhoudsbeveiliging toevoegen aan de speler door een afspeelbeheer te make
 
 Een contentbeveiligingsmanager maken:
 
-* Initialiseer het DRM-systeem.
+* Start het DRM-systeem.
 
-   Het volgende codevoorbeeld toont het roepen van `loadDRMServices` in de toepassing `onCreate()` om ervoor te zorgen dat initialisatie die voor het DRM-systeem is vereist, wordt gestart voordat het afspelen wordt gestart.
+  Het volgende codevoorbeeld toont het roepen van `loadDRMServices` in de toepassing `onCreate()` om ervoor te zorgen dat initialisatie die voor het DRM-systeem is vereist, wordt gestart voordat het afspelen wordt gestart.
 
-   ```java
-   @Override 
-    public void onCreate() { 
-        super.onCreate();  
-        DrmManager.loadDRMServices(getApplicationContext()); 
-    }
-   ```
+  ```java
+  @Override 
+   public void onCreate() { 
+       super.onCreate();  
+       DrmManager.loadDRMServices(getApplicationContext()); 
+   }
+  ```
 
 * Laad de DRM-licenties vooraf.
 
-   Het volgende codevoorbeeld toont het laden van `VideoItems` wanneer het laden van de inhoudslijst is voltooid. Hierdoor worden de DRM-licenties opgehaald van de licentieserver en lokaal in het cachegeheugen opgeslagen, zodat de inhoud zo snel mogelijk wordt geladen wanneer het afspelen wordt gestart.
+  Het volgende codevoorbeeld toont het laden van `VideoItems` wanneer het laden van de inhoudslijst is voltooid. Hierdoor worden de DRM-licenties opgehaald van de licentieserver en lokaal in het cachegeheugen opgeslagen, zodat de inhoud zo snel mogelijk wordt geladen wanneer het afspelen wordt gestart.
 
-   ```java
-   DrmManager.preLoadDrmLicenses(item.getUrl(),  
-     new MediaPlayerItemLoader.LoaderListener() { 
-   
-       @Override 
-       public void onLoadComplete(MediaPlayerItem item) { 
-           Player.logger.w(LOG_TAG + "::DRMPreload#onLoadComplete", item.getResource().getUrl()); 
-       } 
-   
-       @Override 
-       public void onError(MediaErrorCode errorCode, String s) { 
-           Player.logger.e(LOG_TAG + "::DRMPreload#onError", s); 
-       } 
-   } 
-   ```
+  ```java
+  DrmManager.preLoadDrmLicenses(item.getUrl(),  
+    new MediaPlayerItemLoader.LoaderListener() { 
+  
+      @Override 
+      public void onLoadComplete(MediaPlayerItem item) { 
+          Player.logger.w(LOG_TAG + "::DRMPreload#onLoadComplete", item.getResource().getUrl()); 
+      } 
+  
+      @Override 
+      public void onError(MediaErrorCode errorCode, String s) { 
+          Player.logger.e(LOG_TAG + "::DRMPreload#onError", s); 
+      } 
+  } 
+  ```
 
-   >[!NOTE]
-   >
-   >U kunt Prekache DRM-licenties instellen op ON in de gebruikersinterface Instellingen om DRM-licenties te controleren bij het laden van inhoud. Het wordt echter aanbevolen een bepaald item vooraf te laden in plaats van alle licenties in de catalogus vooraf te laden.
-   >
-   >![](assets/precache-drm-licenses.jpg)
+  >[!NOTE]
+  >
+  >U kunt Prekache DRM-licenties instellen op ON in de gebruikersinterface Instellingen om DRM-licenties te controleren bij het laden van inhoud. Het wordt echter aanbevolen een bepaald item vooraf te laden in plaats van alle licenties in de catalogus vooraf te laden.
+  >
+  >![](assets/precache-drm-licenses.jpg)
 
 * Te gebruiken `ManagerFactory` om DRM fout behandeling uit te voeren, zorg ervoor de volgende lijn van code in is [!DNL PlayerFragment.java] bestand:
 
-   ```java
-   drmManager = ManagerFactory.getDrmManager(config, mediaPlayer);
-   ```
+  ```java
+  drmManager = ManagerFactory.getDrmManager(config, mediaPlayer);
+  ```
 
 **Gerelateerde API-documentatie**
 

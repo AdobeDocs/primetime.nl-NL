@@ -1,8 +1,7 @@
 ---
 description: De Adobe Primetime DRM-server voor beveiligde streaming is een licentieserverimplementatie die is gebaseerd op de Primetime DRM SDK. Deze server geeft licenties voor beveiligde inhoud aan Primetime DRM-clients uit.
 title: Informatie over Adobe Primetime DRM Server voor beveiligde streaming
-exl-id: 911acd61-8b27-4ac7-a420-2faeb46e8087
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '185'
 ht-degree: 0%
@@ -19,4 +18,4 @@ Deze server is bedoeld voor gebruik met HTTP Streaming. Dit betekent dat deze se
 
 >[!NOTE]
 >
->Adobe Primetime DRM werd voorheen Adobe Access genoemd, en daarvoor Flash Access.
+>Adobe Primetime DRM werd vroeger genoemd Toegang van de Adobe, en voorafgaand aan dat, Flash Access.

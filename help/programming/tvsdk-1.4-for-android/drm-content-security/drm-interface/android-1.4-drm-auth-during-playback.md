@@ -1,8 +1,7 @@
 ---
 description: Voer verificatie uit tijdens het afspelen wanneer de DRM-metagegevens voor een video in de mediastream zijn opgenomen.
 title: DRM-verificatie tijdens afspelen
-exl-id: 3f190d37-291e-4a5e-811d-7e9984a6a44a
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '186'
 ht-degree: 0%
@@ -17,7 +16,7 @@ Denk aan de functie voor het roteren van licenties, waarbij een element wordt ge
 
 >[!NOTE]
 >
->In deze zelfstudie worden domeingebonden licenties niet verwerkt. Ideaal gezien, alvorens playback te beginnen, controleer of u met een domein gebonden vergunning behandelt. Indien ja, voer domeinauthentificatie (indien nodig) uit en sluit zich aan bij het domein.
+>In deze zelfstudie worden domeingebonden licenties niet verwerkt. In het ideale geval moet u, voordat u begint met afspelen, controleren of u te maken hebt met een domeingebonden licentie. Indien ja, voer domeinauthentificatie (indien nodig) uit en sluit zich aan bij het domein.
 
 1. Wanneer nieuwe DRM-metagegevens worden aangetroffen in een element, wordt een gebeurtenis verzonden op de toepassingslaag.
 
@@ -33,7 +32,7 @@ Denk aan de functie voor het roteren van licenties, waarbij een element wordt ge
    };
    ```
 
-1. Gebruik de `DRMMetadata` om te controleren of verificatie nodig is. Zo niet, niets doen; het afspelen wordt zonder onderbreking voortgezet.
+1. Gebruik de `DRMMetadata` om te controleren of verificatie nodig is. Als dat niet het geval is, doet u niets. Het afspelen gaat zonder onderbreking door.
 1. Anders voert u DRM-verificatie uit. Aangezien deze bewerking asynchroon is en in een andere thread wordt afgehandeld, heeft deze geen invloed op de gebruikersinterface en het afspelen van video.
 1. Als de verificatie mislukt, kan de gebruiker de video niet verder weergeven en wordt het afspelen gestopt. Anders wordt het afspelen zonder onderbreking voortgezet.
 

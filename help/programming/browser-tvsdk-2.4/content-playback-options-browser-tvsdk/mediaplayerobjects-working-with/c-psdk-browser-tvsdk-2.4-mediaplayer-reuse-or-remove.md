@@ -1,8 +1,7 @@
 ---
 description: U kunt een MediaPlayer-instantie die u niet meer nodig hebt opnieuw instellen, opnieuw gebruiken of vrijgeven.
 title: Een MediaPlayer-instantie opnieuw gebruiken of verwijderen
-exl-id: 2403e6dd-74c4-43fb-913a-d04e61041628
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '288'
 ht-degree: 0%
@@ -15,19 +14,19 @@ U kunt een MediaPlayer-instantie die u niet meer nodig hebt opnieuw instellen, o
 
 ## Een MediaPlayer-instantie opnieuw instellen of gebruiken {#section_C183E6164C184C3CBC5321FC6A2528EA}
 
-U kunt een `MediaPlayer` -instantie om de niet-geïnitialiseerde status van de ILLE te herstellen, zoals gedefinieerd in `MediaPlayerStatus`. U kunt het huidige media-item ook vervangen of een nieuw item instellen met behulp van een eerder geladen media-bron.
+U kunt een `MediaPlayer` instantie om de niet-geïnitialiseerde status van de ILLE te herstellen, zoals gedefinieerd in `MediaPlayerStatus`. U kunt het huidige media-item ook vervangen of een nieuw item instellen met behulp van een eerder geladen media-bron.
 
 Deze bewerking is handig in de volgende gevallen:
 
 * U wilt een `MediaPlayer` -instantie maar moet een nieuwe instantie laden `MediaResource` (video-inhoud) en vervangt u de vorige instantie.
 
-   Met opnieuw instellen kunt u de opdracht `MediaPlayer` instantie zonder de overhead van het vrijgeven van bronnen, opnieuw maken van de `MediaPlayer`en herallocatie van middelen. De `replaceCurrentItem` Deze stappen worden automatisch voor u uitgevoerd.
+  Met opnieuw instellen kunt u de opdracht `MediaPlayer` instantie zonder de overhead van het vrijgeven van bronnen, opnieuw maken van de `MediaPlayer`en herallocatie van middelen. De `replaceCurrentItem` Deze stappen worden automatisch voor u uitgevoerd.
 
 * Wanneer de `MediaPlayer` bevindt zich in een FOUT-status en moet worden gewist.
 
-   >[!IMPORTANT]
-   >
-   >Dit is de enige manier om van de staat van de FOUT terug te krijgen.
+  >[!IMPORTANT]
+  >
+  >Dit is de enige manier om van de staat van de FOUT terug te krijgen.
 
 1. Bellen `MediaPlayer.reset()` om de `MediaPlayer` instantie in de niet-geïnitialiseerde status:
 
@@ -36,7 +35,7 @@ Deze bewerking is handig in de volgende gevallen:
             // on successful reset
    ```
 
-1. Bellen `MediaPlayer.replaceCurrentItem()` om een andere te laden `MediaResource`
+1. Bellen `MediaPlayer.replaceCurrentItem()` om een andere `MediaResource`
 
    >[!TIP]
    >
@@ -60,10 +59,10 @@ Hier volgen enkele redenen om een `MediaPlayer`:
 
 * Laat de `MediaPlayer`.
 
-   ```js
-   void release()
-   ```
+  ```js
+  void release()
+  ```
 
-   >[!NOTE]
-   >
-   >Na de `MediaPlayer` -instantie wordt vrijgegeven, kunt u deze niet meer gebruiken. Indien een methode van de `MediaPlayer` de interface wordt geroepen nadat het wordt vrijgegeven, en `IllegalStateException` wordt gegenereerd.
+  >[!NOTE]
+  >
+  >Na de `MediaPlayer` -instantie wordt vrijgegeven, kunt u deze niet meer gebruiken. Indien een methode van de `MediaPlayer` de interface wordt geroepen nadat het wordt vrijgegeven, en `IllegalStateException` wordt gegenereerd.

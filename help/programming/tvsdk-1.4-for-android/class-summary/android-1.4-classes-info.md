@@ -1,8 +1,7 @@
 ---
 description: Deze klassen bieden informatie over de media.
 title: Info-klassen
-exl-id: bc84a265-5bad-44f2-80da-4a2e0d6fc53e
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '167'
 ht-degree: 0%
@@ -30,7 +29,7 @@ Pakket: [com.adobe.mediacore.info](https://help.adobe.com/en_US/primetime/api/ps
   <tr rowsep="1"> 
    <td colname="1"><span class="codeph"><a href="https://help.adobe.com/en_US/primetime/api/psdk/javadoc_1.4/com/adobe/mediacore/info/ClosedCaptionsTrack.html" format="html" scope="external"> ClosedCaptionsTrack</a> 
    ClosedCaptionsTrack</span> </td> 
-   <td colname="2">Klasse die wordt uitgebreid <span class="codeph"> Track</span> om de abstractie van een gesloten bijschrift te definiëren. Klasse die de klasse definieert <span class="codeph"> ClosedCaptions</span> abstractie. Een gesloten bijschriftspoor wordt uniek gedefinieerd door zijn naam EN het is servicetype. De verschillende diensttypes kunnen de zelfde naam delen.</td> 
+   <td colname="2">Klasse die wordt uitgebreid <span class="codeph"> Track</span> om de abstractie van een gesloten bijschrift te definiëren. Klasse die de <span class="codeph"> ClosedCaptions</span> abstractie. Een gesloten bijschriftspoor wordt uniek gedefinieerd door zijn naam EN het is servicetype. Verschillende servicetypen kunnen dezelfde naam hebben.</td> 
   </tr> 
   <tr rowsep="1"> 
    <td colname="1"><span class="codeph"><a href="https://help.adobe.com/en_US/primetime/api/psdk/javadoc_1.4/com/adobe/mediacore/info/Profile.html" format="html" scope="external"> Profiel</a> </span></td> 

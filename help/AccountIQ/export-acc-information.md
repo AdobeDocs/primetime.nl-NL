@@ -1,8 +1,7 @@
 ---
 title: Informatie exporteren voor accounts met hoge score voor delen
 description: Exporteer gegevens voor accounts met een hoge score voor delen.
-exl-id: df41ddd2-fde3-4861-abd4-6e32f0be9ea5
-source-git-commit: 326f97d058646795cab5d062fa5b980235f7da37
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '728'
 ht-degree: 1%
@@ -25,7 +24,7 @@ De gegevens over het delen van accounts van abonnees exporteren:
 
 1. Een gewenst segment definiëren na de stappen in [Segment definiëren en tijdframe selecteren](/help/AccountIQ/howto-select-segment-timeframe.md) ter evaluatie van [segment en tijdframe](/help/AccountIQ/segments-timeframe.md) deelvenster.
 
-1. Selecteer **Bovenste 1000-accounts exporteren** optie om de rekeninginformatie voor 1000 abonnees met de hoogste waarschijnlijkheid van het delen uit te voeren.
+1. Selecteer de **Bovenste 1000-accounts exporteren** optie om de rekeninginformatie voor 1000 abonnees met de hoogste waarschijnlijkheid van het delen uit te voeren.
 
 Wanneer u de exportoptie gebruikt, worden de statistieken voor 1000 accounts met de hoogste waarschijnlijkheid dat ze met anderen delen (voor een bepaald tijdkader) gedownload naar de map Downloads op uw lokale computer.
 
@@ -101,7 +100,7 @@ Aantal keren dat een MVPD een stroom, of toegang (tot inhoud), aan die rekening 
 
 >[!NOTE]
 >
->De **# AuthZ OK** is gerelateerd aan de **# Aanvragen afspelen**; het is kleiner dan de **# Aanvragen afspelen** omdat Adobe de vergunningen die voor MVPDs typisch voor 24 uren in het voorgeheugen onderbrengt.
+>De **# AuthZ OK** is gerelateerd aan de **# Aanvragen afspelen**; het is kleiner dan de **# Aanvragen afspelen** omdat Adobe de vergunningen in het voorgeheugen onderbrengt die voor MVPDs typisch voor 24 uren komen.
 
 **# Aanvragen afspelen**
 
@@ -109,7 +108,7 @@ Het werkelijke aantal streams tijdens de tijdsperiode.
 
 **Aantal kanalen**
 
-Het totale aantal verschillende kanalen dat de account gedurende de periode heeft gecontroleerd.
+Het totale aantal verschillende kanalen dat de account in de loop van de periode heeft gecontroleerd.
 
 >[!NOTE]
 >

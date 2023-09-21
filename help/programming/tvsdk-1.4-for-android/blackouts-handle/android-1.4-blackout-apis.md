@@ -1,8 +1,7 @@
 ---
 description: U kunt stroomstoringen in live videostreams verwerken en tijdens een stroomstoring alternatieve inhoud bieden.
 title: API-elementen voor doorbraak
-exl-id: 8e4f1dc3-f2f6-4db9-b9d0-3e79d21032e9
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '578'
 ht-degree: 0%
@@ -19,7 +18,7 @@ Stroomuitval in live streams afhandelen:
 
 1. Stel uw app in om black-out-tags te detecteren door u te abonneren op black-out-tags in een live-streaming manifest.
 
-   TVSDK detecteert alleen geen black-out-tags; u moet zich abonneren op brainstormtags om meldingen te ontvangen wanneer de tags tijdens het parseren van manifestbestanden worden aangetroffen.
+   TVSDK detecteert zelf geen brainstormtags. U moet zich abonneren op brainstormtags om meldingen te ontvangen wanneer de tags tijdens het parseren van manifestbestanden worden aangetroffen.
 1. Maak gebeurtenislisteners voor tags waarop de speler is geabonneerd (in dit geval de tags PLAYBACK en BLACKOUTS).
 
    Wanneer een tag voorkomt waarop de speler heeft geabonneerd (bijvoorbeeld een black-out tag) in de manifests van de voor- (hoofdinhoud) of de achtergrond (alternatieve inhoud), verzendt TVSDK een `TimedMetadataEvent` en maakt een `TimedMetadataObject` voor de `TimedMetadataEvent`.
@@ -46,22 +45,22 @@ U kunt het volgende gebruiken wanneer het uitvoeren van een stroomoplossing in u
 
 * **BlackoutMetadata** -
 
-   Een klasse Metadata die specifiek is voor black-outs.
+  Een klasse Metadata die specifiek is voor black-outs.
 
-   Hierdoor kunt u niet-doorzoekbare bereiken instellen (een array van `TimeRanges`) op TVSDK. TVSDK controleert deze waaiers telkens als de gebruiker zoekt. Als deze is ingesteld en de gebruiker een bereik zoekt dat niet kan worden doorzocht, dwingt TVSDK de viewer tot het einde van het bereik dat niet kan worden doorzocht.
+  Hierdoor kunt u niet-doorzoekbare bereiken instellen (een array van `TimeRanges`) op TVSDK. TVSDK controleert deze waaiers telkens als de gebruiker zoekt. Als deze is ingesteld en de gebruiker een bereik zoekt dat niet kan worden doorzocht, dwingt TVSDK de viewer tot het einde van het bereik dat niet kan worden doorzocht.
 
-* **HIER BEGINNEN VOLGENDE AdvertisingMetadata** Voorvertoning op een live stream in- of uitschakelen door het instellen `enableLivePreroll` naar waar of onwaar. Indien onwaar, maakt TVSDK geen expliciete vraag van de advertentieserver naar pre-rol advertenties vóór de inhoudsplayback en zo speelt niet pre-rol. Dit heeft geen invloed op de middenrollen. De standaardwaarde is true.
+* **HIER BEGINNEN VOLGENDE AdvertisingMetadata** Voorvertoning op een live stream in- of uitschakelen door het instellen `enableLivePreroll` naar waar of onwaar. Indien onwaar, maakt TVSDK geen expliciete vraag van de advertentieserver naar pre-rol advertenties vóór de inhoudsplayback en zo speelt niet pre-rol. Dit heeft geen invloed op de halverwege de rol. De standaardwaarde is true.
 
 * **MediaPlayer.BlackoutsEventListener**
 
    * `onTimedMetadataInBackgroundItem` - Wordt verzonden wanneer een geabonneerde tag wordt aangetroffen in het achtergrondmanifest en een nieuwe `TimedMetadata` -instantie is er op voorbereid. De `TimedMetadata` -instantie wordt verzonden als een parameter.
 
-   * `onBackgroundManifestFailed` - Wordt verzonden wanneer de mediaspeler het achtergrondmanifest volledig niet laadt, dat wil zeggen dat alle stream-URL&#39;s een fout of een ongeldige reactie retourneren.
+   * `onBackgroundManifestFailed` - Wordt verzonden wanneer de mediaspeler het achtergrondmanifest volledig niet laadt. Alle URL&#39;s van de stream retourneren een fout of een ongeldige reactie.
 
 * **Meldingen**
 
    * `BACKGROUND_MANIFEST_WARNING`
 
       * Code: 204000
-      * Type: Waarschuwing
+      * Type: waarschuwing
       * Fout in downloaden achtergrondmanifest.

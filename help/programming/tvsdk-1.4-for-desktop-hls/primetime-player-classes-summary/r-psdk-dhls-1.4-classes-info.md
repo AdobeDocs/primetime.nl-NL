@@ -1,8 +1,7 @@
 ---
 description: Deze klassen bieden informatie over de media.
 title: Info-klassen
-exl-id: af09c81f-07f4-423b-af97-53bc2274cddc
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '224'
 ht-degree: 0%
@@ -29,7 +28,7 @@ Pakket: [com.adobe.mediacore.info](https://help.adobe.com/en_US/primetime/api/ps
   </tr> 
   <tr rowsep="1"> 
    <td colname="1"><span class="codeph"><a href="https://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls_1.4/com/adobe/mediacore/info/ClosedCaptionsTrack.html" format="html" scope="external"> ClosedCaptionsTrack</a></span></td> 
-   <td colname="2"> Klasse die Track uitbreidt om de abstractie van een gesloten bijschrift te definiëren. Een gesloten bijschriftspoor wordt uniek gedefinieerd door zijn naam EN het is servicetype. De verschillende diensttypes kunnen de zelfde naam delen.</td> 
+   <td colname="2"> Klasse die Track uitbreidt om de abstractie van een gesloten bijschrift te definiëren. Een gesloten bijschriftspoor wordt uniek gedefinieerd door zijn naam EN het is servicetype. Verschillende servicetypen kunnen dezelfde naam hebben.</td> 
   </tr> 
   <tr rowsep="1"> 
    <td colname="1"><span class="codeph"><a href="https://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls_1.4/com/adobe/mediacore/info/DefaultCCTypes.html" format="html" scope="external"> DefaultCCTypes</a></span> </td> 

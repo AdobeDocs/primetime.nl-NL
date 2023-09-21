@@ -2,8 +2,7 @@
 title: Eigenschappen voor levering van externe sleutels (iOS)
 description: Eigenschappen voor levering van externe sleutels (iOS)
 copied-description: true
-exl-id: 0fe3ed9b-a8ee-43b4-ab3c-8ea2e696503b
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '113'
 ht-degree: 0%
@@ -26,11 +25,11 @@ De volgende eigenschappen zijn toegevoegd aan Primetime DRM:
  <tbody class="- topic/tbody "> 
   <tr rowsep="1" class="- topic/row "> 
    <td colname="1" class="- topic/entry "><span class="codeph"> HandlerConfiguration.KeyServerCertificate</span> </td> 
-   <td colname="2" class="- topic/entry "> <p>Certificaat van licentieserver van sleutelserver dat is uitgegeven door Adobe. </p> <p>Dit certificaat genereert licenties voor iOS-apparaten wanneer de metagegevens aangeven dat een Key Server is vereist. </p> </td> 
+   <td colname="2" class="- topic/entry "> <p>Certificaat van de Server van de Vergunning van de zeer belangrijke server dat door Adobe wordt uitgegeven. </p> <p>Dit certificaat genereert licenties voor iOS-apparaten wanneer de metagegevens aangeven dat een Key Server is vereist. </p> </td> 
   </tr> 
   <tr rowsep="0" class="- topic/row "> 
    <td colname="1" class="- topic/entry "><span class="codeph"> RefImpl.HSM.HandlerConfiguration.\ KeyServerCertificate.Alias</span> </td> 
-   <td colname="2" class="- topic/entry "> <p>De alias van het Adobe-uitgegeven certificaat van de Server van een Sleutelserver van de Vergunning dat op HSM wordt opgeslagen. </p> <p>Wanneer u HSM inschakelt, kunt u deze eigenschap toepassen in plaats van de eigenschap <span class="codeph"> HandlerConfiguration.KeyServerCertificate</span> eigenschap. </p> </td> 
+   <td colname="2" class="- topic/entry "> <p>De alias van het Adobe-uitgegeven certificaat van de Server van een Sleutelserver dat op HSM wordt opgeslagen. </p> <p>Wanneer u HSM inschakelt, kunt u deze eigenschap toepassen in plaats van de eigenschap <span class="codeph"> HandlerConfiguration.KeyServerCertificate</span> eigenschap. </p> </td> 
   </tr> 
  </tbody> 
 </table>

@@ -2,8 +2,7 @@
 title: Identiteitsgebaseerde domeinen
 description: Identiteitsgebaseerde domeinen
 copied-description: true
-exl-id: de7b6c8a-5227-4679-933a-3278921903d7
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '476'
 ht-degree: 0%
@@ -16,7 +15,7 @@ In dit gebruiksgeval, heeft elke voor authentiek verklaarde gebruiker zijn eigen
 
 De referentie-implementatie implementeert de volgende logica voor domeinregistratie:
 
-1. Bepaal de domeinnaam die aan deze gebruiker moet worden toegewezen. De domeinnaam is * `namequalifier:username`* uit het verificatietoken geëxtraheerd. Als er geen verificatietoken is, retourneert u de fout DOM_AUTHENTICATION_REQUIRED (503).
+1. Bepaal de domeinnaam die aan deze gebruiker moet worden toegewezen. De domeinnaam is * `namequalifier:username`* uit het verificatietoken gehaald. Als er geen verificatietoken is, retourneert u de fout DOM_AUTHENTICATION_REQUIRED (503).
 1. De domeinnaam opzoeken in het dialoogvenster `DomainServerInfo` tabel. Als een ingang niet wordt gevonden, neem een ingang in de lijst op (de standaardwaarden worden vereiste authentificatie, maximum domeinlidmaatschap=5).
 1. Controleer of het apparaat al bij het domein is geregistreerd:
 
@@ -32,7 +31,7 @@ De referentie-implementatie implementeert de volgende logica voor domeinregistra
 
 De verwijzingsimplementatie, voert de volgende logica voor domein uit deregistratie:
 
-1. Bepaal de domeinnaam die aan deze gebruiker moet worden toegewezen. De domeinnaam wordt *namequalifier:gebruikersnaam* geëxtraheerd uit het verificatietoken. Als er geen verificatietoken is, retourneert u de fout DOM_AUTHENTICATION_REQUIRED (503).
+1. Bepaal de domeinnaam die aan deze gebruiker moet worden toegewezen. De domeinnaam wordt *namequalifier:gebruikersnaam* uit het verificatietoken gehaald. Als er geen verificatietoken is, retourneert u de fout DOM_AUTHENTICATION_REQUIRED (503).
 1. Opzoeken van de gevraagde domeinnaam in het dialoogvenster `DomainServerInfo` tabel.
 1. De domeinnaam opzoeken in het dialoogvenster `UserDomainMembership` tabel. Vergelijk voor elke gevonden machine-id de machine-id in de aanvraag. De bijbehorende vermelding zoeken in het dialoogvenster `UserDomainRefCount` tabel. Als geen overeenkomend item wordt gevonden, retourneert u de fout DEREG_DENIED (401).
 

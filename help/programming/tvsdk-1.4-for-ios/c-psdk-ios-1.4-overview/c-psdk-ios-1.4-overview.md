@@ -1,8 +1,7 @@
 ---
 description: De Adobe Primetime Software Development Kit (TVSDK) is een toolkit waarmee u geavanceerde functionaliteit voor het afspelen van video's kunt toevoegen aan uw toepassingen.
 title: Overzicht
-exl-id: 81a60813-138d-456e-ace3-1efc7859159f
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '215'
 ht-degree: 0%
@@ -24,7 +23,7 @@ Voor specifieke hardware- en softwarevereisten voor het gebruik van TVSDK raadpl
 
 ## Publiek {#section_527860B373734D3BA89FCF5EC1F6DC37}
 
-Deze gids veronderstelt dat u begrijpt hoe te om toepassingen en videospelers te ontwikkelen gebruikend doelstelling-C. U implementeert een videospelergebruikersinterface door die taal te gebruiken en eigenschappen TVSDK op te nemen.
+Deze gids veronderstelt dat u begrijpt hoe te om toepassingen en videospelers te ontwikkelen gebruikend doelstelling-C. U implementeert een gebruikersinterface voor de videospeler door die taal te gebruiken en TVSDK-functies op te nemen.
 
 ## Over deze handleiding {#section_9A5B2FC506B34B5DB71CA827B307A4D0}
 

@@ -2,8 +2,7 @@
 title: Gebruik van opdrachtregels
 description: Gebruik van opdrachtregels
 copied-description: true
-exl-id: 55b18fee-b7d8-4a5a-91a7-a08cd23e7866
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '567'
 ht-degree: 0%
@@ -12,7 +11,7 @@ ht-degree: 0%
 
 # Gebruik van opdrachtregels {#command-line-usage}
 
-Alvorens de Packager van Media te gebruiken, zorg ervoor dat u aan de vereisten voldoet die in Vereisten worden vermeld en dat het configuratiedossier de vereiste informatie bevat (zie het dossier van de Configuratie in *Implementaties van de Adobe Access-naslaggids gebruiken*.
+Alvorens de Packager van Media te gebruiken, zorg ervoor dat u aan de vereisten voldoet die in Vereisten worden vermeld en dat het configuratiedossier de vereiste informatie bevat (zie het dossier van de Configuratie in *De implementatie van de Adobe Access Reference gebruiken*.
 
 Media Packager bevindt zich in het dialoogvenster [!DNL \Reference Implementation\Command Line tools] op de dvd. Gebruik de volgende syntaxis om één bestand te coderen:
 
@@ -101,7 +100,7 @@ De volgende tabel bevat beschrijvingen van de opties voor de opdrachtregel die i
   </tr> 
   <tr rowsep="1" class="- topic/row "> 
    <td colname="1" class="- topic/entry "> <p class="- topic/p ">-h </p> </td> 
-   <td colname="2" class="- topic/entry "> <p class="- topic/p ">Gebruik met <span class="codeph"> -d </span> om de DRM-header uit een verpakt bestand te extraheren. Er wordt een bestand gemaakt in dezelfde map als het gecodeerde bestand, met de bestandsnaam en de extensie <span class="filepath"> .header </span> </p> </td> 
+   <td colname="2" class="- topic/entry "> <p class="- topic/p ">Gebruiken met <span class="codeph"> -d </span> om de DRM-header uit een verpakt bestand te extraheren. Er wordt een bestand gemaakt in dezelfde map als het gecodeerde bestand, met de bestandsnaam en de extensie <span class="filepath"> .header </span> </p> </td> 
   </tr> 
   <tr rowsep="1" class="- topic/row "> 
    <td colname="1" class="- topic/entry "> <p class="- topic/p ">-i <span class="+ topic/ph pr-d/codeph codeph"> contentID </span> </p> </td> 

@@ -1,8 +1,7 @@
 ---
 description: De manager van de Entitlement is de eigenschapmanager die de implementatie van de authentificatie Primetime steunt.
 title: Overzicht van Entitlement Manager
-exl-id: a66e131e-283f-4378-b834-7cfa887b3ec9
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '518'
 ht-degree: 0%
@@ -35,7 +34,7 @@ Tijdens authentificatie met authentificatie Primetime, twee nieuwe activiteiten,
 
 ### Knop Aanmelden
 
-De belangrijkste activiteit van de Reference Implementation, de `CatalogActivity`, bevat een nieuwe knop Aanmelden op de actiebalk. Met de knop Aanmelden kan de gebruiker verificatie starten met Primetime-verificatie. Bovendien kan de gebruiker verificatie starten door een beveiligde video te selecteren voor afspelen. Het pictogram en de tekst van de knop Aanmelden worden aangepast aan de verificatiestatus van de gebruiker en aan de `CatalogActivity` bevat code voor het bijwerken van het pictogram en de tekst van de knop wanneer de pagina wordt vernieuwd. Om dit te doen, wanneer `CatalogActivity` start, roept het `EntitlementManager.checkAuthentication()` om de verificatiestatus van de gebruiker bij te werken.
+De belangrijkste activiteit van de Reference Implementation, de `CatalogActivity`, bevat een nieuwe knop Aanmelden op de actiebalk. Met de knop Aanmelden kan de gebruiker verificatie starten met Primetime-verificatie. Bovendien kan de gebruiker verificatie starten door een beveiligde video te selecteren voor afspelen. Het pictogram en de tekst van de knop Aanmelden worden aangepast aan de verificatiestatus van de gebruiker en aan de `CatalogActivity` bevat code voor het bijwerken van het pictogram en de tekst van de knop wanneer de pagina wordt vernieuwd. Om dit te doen, wanneer `CatalogActivity` start, wordt aangeroepen `EntitlementManager.checkAuthentication()` de verificatiestatus van de gebruiker bijwerken.
 
 ### Inhoudsmachtiging
 

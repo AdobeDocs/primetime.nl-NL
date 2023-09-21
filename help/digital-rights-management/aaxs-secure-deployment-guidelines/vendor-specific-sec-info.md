@@ -2,8 +2,7 @@
 title: Specifieke beveiligingsinformatie van de leverancier
 description: Specifieke beveiligingsinformatie van de leverancier
 copied-description: true
-exl-id: 668321c5-b2c7-4bb3-9f68-2dba622a54de
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '362'
 ht-degree: 0%
@@ -25,7 +24,7 @@ Wanneer het beveiligen van uw werkend systeem, voer zorgvuldig de maatregelen ui
 * Het verwijderen van onnodige diensten en toepassingen
 * Back-ups maken van bestanden
 
-Voor veiligheidsinformatie over werkende systemen die de Adobe Access steunt, zie de middelen in deze lijst.
+Voor veiligheidsinformatie over werkende systemen die de Toegang van de Adobe steunt, zie de middelen in deze lijst.
 
 <table frame="all" colsep="1" rowsep="1" class="+ topic/table adobe-d/table " id="table-ugl-kjz-n4"> 
  <thead class="- topic/thead "> 
@@ -66,7 +65,7 @@ In de volgende tabel worden enkele mogelijke benaderingen beschreven voor het mi
   </tr> 
   <tr rowsep="0" class="- topic/row "> 
    <td colname="1" class="- topic/entry "> <p class="- topic/p ">Netwerktijdprotocol (NTP) </p> </td> 
-   <td colname="2" class="- topic/entry "> <p class="- topic/p ">Voor zowel correcte verrichting als forensische analyse, houd nauwkeurige tijd op de servers van de Toegang van de Adobe en de pakketleiders van de Toegang van de Adobe. Gebruik een veilige versie van NTP om de tijd op alle systemen te synchroniseren die met Internet worden verbonden. </p> </td> 
+   <td colname="2" class="- topic/entry "> <p class="- topic/p ">Voor zowel juiste verrichting als forensische analyse, houd nauwkeurige tijd op de servers van de Toegang van de Adobe en de pakketleiders van de Toegang van de Adobe. Gebruik een veilige versie van NTP om de tijd op alle systemen te synchroniseren die met Internet worden verbonden. </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -75,7 +74,7 @@ In de volgende tabel worden enkele mogelijke benaderingen beschreven voor het mi
 
 Wanneer het beveiligen van uw toepassingsserver, moet u de maatregelen uitvoeren die door uw serververkoper, met inbegrip van deze worden beschreven:
 
-* Niet-duidelijke gebruikersnaam beheerder gebruiken
+* Gebruikend niet duidelijke beheerdergebruikersnaam
 * Onnodige services uitschakelen
 * De consolemanager beveiligen
 * Beveiligde cookies inschakelen

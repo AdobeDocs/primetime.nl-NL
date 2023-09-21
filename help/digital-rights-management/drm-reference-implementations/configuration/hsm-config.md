@@ -1,8 +1,7 @@
 ---
 description: U kunt de verwijzingsimplementatie met de leverancier vormen van Zon PKCS#11 die HSM steunt. Hoewel het gebruik van een HSM niet vereist is, wordt het aanbevolen.
 title: HSM-configuratie
-exl-id: 87a7d242-8202-4749-91a6-e6697be6a61d
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '183'
 ht-degree: 0%
@@ -13,7 +12,7 @@ ht-degree: 0%
 
 U kunt de verwijzingsimplementatie met de leverancier vormen van Zon PKCS#11 die HSM steunt. Hoewel het gebruik van een HSM niet vereist is, wordt het aanbevolen.
 
-Om referentie op HSM te gebruiken, moet u een configuratiedossier voor de leverancier van de Zon PKCS#11 tot stand brengen. Zie voor meer informatie de [Java PCKS#11 Referentiehandleiding](https://docs.oracle.com/javase/1.5.0/docs/guide/security/p11guide.html).
+Om referentie op HSM te gebruiken, moet u een configuratiedossier voor de leverancier van de Zon PKCS#11 tot stand brengen. Zie de klasse [Java PCKS#11 Referentiehandleiding](https://docs.oracle.com/javase/1.5.0/docs/guide/security/p11guide.html).
 
 Om te verifiëren dat uw HSM en PKCS#11 configuratiedossier van de Zon worden gevormd, typ het volgende bevel door keytool te gebruiken die met Java JDK werd geïnstalleerd:
 

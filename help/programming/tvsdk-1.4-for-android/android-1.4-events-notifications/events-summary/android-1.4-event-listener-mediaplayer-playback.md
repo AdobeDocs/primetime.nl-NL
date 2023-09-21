@@ -1,8 +1,7 @@
 ---
 description: TVSDK verzendt afspeelgebeurtenissen wanneer afspeelbewerkingen van media plaatsvinden, zoals een video die wordt afgespeeld.
 title: Gebeurtenissen van Playback
-exl-id: 675dd444-d58c-4316-9d62-b64e6433b650
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '530'
 ht-degree: 0%
@@ -85,7 +84,7 @@ Registreer een implementatie van `MediaPlayer.PlaybackEventListener`, inclusief 
   </tr> 
   <tr rowsep="1"> 
    <td colname="1"> <a href="https://help.adobe.com/en_US/primetime/api/psdk/javadoc_1.4/com/adobe/mediacore/MediaPlayer.PlaybackEventListener.html#onTimedMetadata%28com.adobe.mediacore.metadata.TimedMetadata%29" format="html" scope="external"> onTimedMetadata</a> (<a href="https://help.adobe.com/en_US/primetime/api/psdk/javadoc_1.4/com/adobe/mediacore/metadata/TimedMetadata.html" format="html" scope="external"> TimedMetadata</a> timeMetadata) </td> 
-   <td colname="2"> Er worden nieuwe metagegevens met tijdinstelling in het manifest gedetecteerd. </td> 
+   <td colname="2"> Er worden nieuwe metagegevens met tijdslimiet in het manifest gedetecteerd. </td> 
   </tr> 
   <tr rowsep="0"> 
    <td colname="1"><a href="https://help.adobe.com/en_US/primetime/api/psdk/javadoc_1.4/com/adobe/mediacore/MediaPlayer.PlaybackEventListener.html#onTimelineUpdated%28%29" format="html" scope="external"> onTimelineUpdated</a> </td> 

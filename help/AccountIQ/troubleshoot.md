@@ -1,8 +1,7 @@
 ---
 title: Problemen oplossen
-description: Kan een rapportvenster niet weergeven of laden? Of kan een rapport niet exporteren? Begrijp hoe te om de algemeen ondervonden kwesties in het product op te lossen.
-exl-id: 2c3f22c4-5534-424c-b321-b57045bcb7a6
-source-git-commit: b83105b94dc1c78de84908f5676ade6a62486349
+description: Kan een venster met rapporten niet weergeven of laden? Of kan een rapport niet exporteren? Begrijp hoe te om de algemeen ondervonden kwesties in het product op te lossen.
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '164'
 ht-degree: 0%
@@ -15,7 +14,7 @@ Wordt u geconfronteerd met problemen met gegevens en grafieken die te lang duren
 
 * Als het te lang duurt om een pagina of afzonderlijke deelvensters te laden, vernieuwt u de pagina. Voor de huidige versie, afhankelijk van de selectie van MVPDs en programmeurs, kan een pagina tot een minuut aan lading vergen.
 
-   ![](assets/troubleshoot.png)
+  ![](assets/troubleshoot.png)
 
 * Als u geen gegevens of grafiek kunt zien zelfs na het verfrissen, dan logout van Rekening IQ en dan login opnieuw.
 

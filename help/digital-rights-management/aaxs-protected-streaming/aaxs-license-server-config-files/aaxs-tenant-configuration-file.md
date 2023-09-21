@@ -2,8 +2,7 @@
 title: Tenant-configuratiebestand
 description: Tenant-configuratiebestand
 copied-description: true
-exl-id: 0f6cafbe-99d9-43bc-9a7f-d87c4da1f37f
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '727'
 ht-degree: 0%
@@ -18,17 +17,17 @@ U kunt alle dossierwegen in het dossier van de huurdersconfiguratie als absolute
 
 Het configuratiebestand voor de huurder bevat:
 
-* **Vervoersreferentie** — Geeft een of meer transportreferenties aan (certificaat en persoonlijke sleutel) die door Adobe zijn uitgegeven. Kan worden opgegeven als een pad naar een .pfx-bestand en een wachtwoord, of als een alias voor een referentie die is opgeslagen op een HSM. Verscheidene dergelijke geloofsbrieven kunnen hier, of als dossierwegen, of belangrijkste aliassen, of allebei worden gespecificeerd. Zie &quot;[Certificaatupdates verwerken](../../aaxs-protecting-content/content-implementing-the-license-server/content-handling-cert-updates.md)&quot; in *De SDK van Adobe Access gebruiken voor het beschermen van inhoud* voor meer informatie over wanneer de extra geloofsbrieven worden vereist.
-* **Credentieserverreferentie** — Geeft een of meer referenties voor licentieservers (certificaat en persoonlijke sleutel) op die door Adobe zijn uitgegeven. Kan worden opgegeven als een pad naar een .pfx-bestand en een wachtwoord, of als een alias voor een referentie die is opgeslagen op een HSM. Verscheidene dergelijke geloofsbrieven kunnen hier, of als dossierwegen, of belangrijkste aliassen, of allebei worden gespecificeerd. Zie Certificaatupdates verwerken in *Using de Adobe Access SDK voor het beschermen van inhoud *voor meer informatie over wanneer extra geloofsbrieven nodig zijn.
+* **Vervoersreferentie** — Geeft een of meer transportreferenties (certificaat en persoonlijke sleutel) aan die door de Adobe worden uitgegeven. Kan worden opgegeven als een pad naar een .pfx-bestand en een wachtwoord, of als een alias voor een referentie die is opgeslagen op een HSM. Verscheidene dergelijke geloofsbrieven kunnen hier, of als dossierwegen, of belangrijkste aliassen, of allebei worden gespecificeerd. Zie &quot;[Certificaatupdates verwerken](../../aaxs-protecting-content/content-implementing-the-license-server/content-handling-cert-updates.md)&quot; in *De Adobe Access SDK gebruiken voor het beveiligen van inhoud* voor meer informatie over wanneer de extra geloofsbrieven worden vereist.
+* **Credentieserverreferentie** — Geeft een of meer referenties voor licentieservers (certificaat en persoonlijke sleutel) op die door de Adobe worden uitgegeven. Kan worden opgegeven als een pad naar een .pfx-bestand en een wachtwoord, of als een alias voor een referentie die is opgeslagen op een HSM. Verscheidene dergelijke geloofsbrieven kunnen hier, of als dossierwegen, of belangrijkste aliassen, of allebei worden gespecificeerd. Zie Certificaatupdates verwerken in *Using de Adobe Access SDK voor het beschermen van inhoud *voor meer informatie over wanneer extra geloofsbrieven nodig zijn.
 * **Belangrijke servercertificaten** — Optioneel. Specificeert het certificaat van de Server van de Vergunning van de Server van de Sleutel door Adobe wordt uitgegeven. Kan worden opgegeven als een pad naar een .cer-bestand of een alias naar een certificaat dat is opgeslagen op een HSM. Deze optie moet worden opgegeven om licenties te kunnen verlenen voor inhoud die is verpakt met een beleid waarvoor levering via externe sleutels voor iOS-apparaten is vereist.
 * **Aangepaste autorisatoren** — Optioneel. Geeft aangepaste autorisatorklassen op die voor elke licentieaanvraag moeten worden aangeroepen. Als er meerdere autorisatoren zijn opgegeven, worden deze in de vermelde volgorde aangeroepen. Zie voor meer informatie &quot;[Aangepaste extensies voor machtigingen](../../aaxs-protected-streaming/custom-authorization-extensions.md)&quot;.
 * **Lijst met geautoriseerde pakketten** — Optioneel. Geeft certificaten aan die entiteiten identificeren die geautoriseerd zijn om inhoud voor deze licentieserver te verpakken. Als er geen pakketcertificaten zijn opgegeven, geeft de server licenties voor inhoud uit die door een verpakker is verpakt.
-* **Minimaal ondersteunde clientversie** (Zie *De SDK van Adobe Access gebruiken voor het beschermen van inhoud*).
+* **Minimaal ondersteunde clientversie** (Zie *De Adobe Access SDK gebruiken voor het beveiligen van inhoud*).
 * **Gebruiksregels**
 
    * **Licentie in cache plaatsen** — Optioneel. Hiermee geeft u op hoe lang de licentie op de client kan worden opgeslagen. Het in cache plaatsen van licenties is standaard uitgeschakeld. Om het in cache plaatsen van licenties voor een beperkte periode mogelijk te maken, stelt u de einddatum of het aantal seconden in waarvoor de licentie moet worden opgeslagen (te beginnen bij de afgifte van de vergunning). Als u het aantal seconden instelt op 0, wordt het in cache plaatsen van licenties uitgeschakeld.
 
-      Alle licenties die door de Server voor Protected Streaming zijn uitgegeven, hebben een vervalperiode van 24 uur (86400 seconden). Deze waarde is daarom impliciet van toepassing als bovengrens aan wat einddatum of duur voor vergunning het in cache plaatsen eveneens wordt geplaatst, met een maximumwaarde van 86400 seconden, alhoewel het schema hogere grenzen afdwingt.
+     Alle licenties die door de Server voor Protected Streaming zijn uitgegeven, hebben een vervalperiode van 24 uur (86400 seconden). Deze waarde is daarom impliciet van toepassing als bovengrens aan wat einddatum of duur voor vergunning het in cache plaatsen eveneens wordt geplaatst, met een maximumwaarde van 86400 seconden, alhoewel het schema hogere grenzen afdwingt.
 
    * **Rechts afspelen** — Ten minste één recht moet worden gespecificeerd. Als er meerdere rechten zijn opgegeven, gebruikt de client het eerste recht waarvoor het voldoet aan alle vereisten.
 
@@ -40,13 +39,12 @@ Het configuratiebestand voor de huurder bevat:
          * `model`
          * `screenType`
 
-         De volgende kenmerken zijn nu optioneel:
+        De volgende kenmerken zijn nu optioneel:
 
          * `osVersion`
          * `version`
-      * **Apparaatcapaciteitseisen** — Geeft optioneel de hardwaremogelijkheden aan die vereist zijn voor toegang tot inhoud.
+
+      * **Vereisten voor apparaatcapaciteit** — Geeft optioneel de hardwaremogelijkheden aan die vereist zijn voor toegang tot inhoud.
       * **Eisen inzake detectie van spelregels** — Optioneel wordt opgegeven dat het afspelen niet is toegestaan voor apparaten waarop jailbreak wordt gedetecteerd.
-
-
 
 Zie de commentaren in het de configuratiedossier van de voorbeeldhuurder voor meer details.

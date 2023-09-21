@@ -1,8 +1,7 @@
 ---
 description: Deze sectie behandelt de grammatica van de configuratieinput, benadrukkend geldige en ongeldige inputopties, en verklarend hoe weggelaten facultatieve gebieden worden geïnterpreteerd.
 title: RBOP Grammar
-exl-id: 311194ec-e59b-4145-b22b-6983e212fcab
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '461'
 ht-degree: 0%
@@ -31,7 +30,7 @@ AnotherRule ::=
 >
 >Om de leesbaarheid van de grammatica te verbeteren, worden de volgende eigenschappen niet weerspiegeld binnen de grammatica maar nog houden waar:
 
-1. De volgorde van de paren die in de objecten zijn gedefinieerd, is niet vast. elke permutatie van de paren is dus geldig .
+1. De volgorde van de paren die in de objecten zijn gedefinieerd, is niet vast. Elke permutatie van de paren is dus geldig.
 
    Als we bijvoorbeeld een object als dit hebben gedefinieerd:
 
@@ -43,7 +42,7 @@ AnotherRule ::=
    }
    ```
 
-   de volgende structuur wordt eveneens als geldig beschouwd : =
+   de volgende structuur wordt ook als geldig beschouwd: =
 
    ```
    {  
@@ -111,7 +110,7 @@ AnotherRule ::=
    Foo ::= "A" | "B" | "C"
    ```
 
-   betekent dat een `Foo` kunnen worden vervangen door &quot;A&quot;, &quot;B&quot; of &quot;C&quot;. Dit mag niet worden verward met een formulier dat meerdere regels omvat. hiermee kunt u langere formulieren leesbaarder maken.
+   betekent dat een `Foo` kunnen worden vervangen door &quot;A&quot;, &quot;B&quot; of &quot;C&quot;. Dit mag niet worden verward met een formulier dat meerdere regels omvat. Dat is een functie waarmee langere formulieren beter leesbaar worden gemaakt.
 
 ## De grammatica {#section_52189FD66B1A46BA9F8FDDE1D7C8E8E8}
 
@@ -232,29 +231,29 @@ NonZeroDigit ::=
     | 9
 ```
 
-## Semantiek: Geldige maar ongeldige configuraties {#section_709BE240FF0041D4A1B0A0A7544E4966}
+## Semantica: geldige maar ongeldige configuraties {#section_709BE240FF0041D4A1B0A0A7544E4966}
 
 De *Voorbeeld van configuratie voor uitvoerbeveiliging* onderwerp voorlegde een geldige configuratie samen met zijn semantische betekenis voor. De vorige sectie in *dit* het onderwerp voorlegde de grammaticaregels voor configuraties voor. Hoewel de grammatica helpt syntactische correctheid te verzekeren, zijn er syntactisch wettige configuraties die niet semantisch correct zijn (d.w.z., zijn zij niet logisch). Deze sectie stelt configuraties voor die *syntactisch* wettelijk, maar *semantisch* onjuist. Houd er rekening mee dat de voorbeelden in dit gedeelte zijn beperkt tot de minimale structuur die nodig is om het te bespreken scenario te illustreren.
 
 * Het is niet toegestaan meerdere pixelbeperkingen met hetzelfde aantal pixels te definiëren.
 
-   ```
-   {  
-     "pixelConstraints":  
-       [  
-         { "pixelCount": 720 }  
-       ]  
-    }  
-   ```
+  ```
+  {  
+    "pixelConstraints":  
+      [  
+        { "pixelCount": 720 }  
+      ]  
+   }  
+  ```
 
 * Een aantal pixels mag de opgegeven maximale pixelresolutie niet overschrijden.
 
-   ```
-   { 
-     "maxPixel": 720, 
-     "pixelConstraints": 
-       [ 
-         {"pixelCount": 1080} 
-       ] 
-   } 
-   ```
+  ```
+  { 
+    "maxPixel": 720, 
+    "pixelConstraints": 
+      [ 
+        {"pixelCount": 1080} 
+      ] 
+  } 
+  ```

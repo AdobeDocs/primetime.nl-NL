@@ -1,8 +1,7 @@
 ---
-description: TVSDK biedt ondersteuning voor banneradvertenties die bij een lineaire advertentie horen en die vaak na afloop van de lineaire advertentie op de pagina blijven staan. Uw toepassing is verantwoordelijk voor het weergeven van de bijbehorende banners die een lineaire advertentie hebben.
+description: TVSDK biedt ondersteuning voor banneradvertenties die bij een lineaire advertentie horen en die vaak op de pagina blijven staan nadat de lineaire advertentie is beëindigd. Uw toepassing is verantwoordelijk voor het weergeven van de bijbehorende banners die een lineaire advertentie hebben.
 title: Companion banneradvertenties
-exl-id: c10a38ec-acbb-4e84-aff2-c93c9b1cec81
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '607'
 ht-degree: 0%
@@ -11,22 +10,22 @@ ht-degree: 0%
 
 # Companion banneradvertenties {#companion-banner-ads}
 
-TVSDK biedt ondersteuning voor banneradvertenties die bij een lineaire advertentie horen en die vaak na afloop van de lineaire advertentie op de pagina blijven staan. Uw toepassing is verantwoordelijk voor het weergeven van de bijbehorende banners die een lineaire advertentie hebben.
+TVSDK biedt ondersteuning voor banneradvertenties die bij een lineaire advertentie horen en die vaak op de pagina blijven staan nadat de lineaire advertentie is beëindigd. Uw toepassing is verantwoordelijk voor het weergeven van de bijbehorende banners die een lineaire advertentie hebben.
 
 Volg deze aanbevelingen bij het weergeven van bijhorende advertenties:
 
 * Poging om zoveel van de banneradvertenties van een video-advertentie weer te geven als in de lay-out van de speler passen.
 * Een bijbehorende banner alleen presenteren als u een locatie hebt die exact overeenkomt met de opgegeven hoogte en breedte.
 
-   >[!TIP]
-   >
-   >Wijzig de grootte van de banner niet.
+  >[!TIP]
+  >
+  >Wijzig de grootte van de banner niet.
 
 * Plaats de bijbehorende banner(s) zo snel mogelijk nadat de advertentie is gestart.
 * Bedek de hoofd-advertentie-/videoclip niet met bijbehorende banners.
 * Ga door met het weergeven van bijbehorende banners nadat de advertentie is beëindigd.
 
-   Standaard wordt elke bijbehorende banner weergegeven totdat u een nieuwe banner voor deze banner hebt.
+  Standaard wordt elke bijbehorende banner weergegeven totdat u een nieuwe banner voor deze banner hebt.
 
 ## Bannergegevens van de onderneming {#companion-banner-data}
 
@@ -58,7 +57,7 @@ Elk `AdAsset` biedt informatie over de weergave van het element.
    <td colname="col2">Het middeltype voor deze metgezelbanner: 
     <ul id="ul_A067787FE49E4B6095BE0AC1D447DBB3"> 
      <li id="li_02B7224C67004095B3F6E50FD21E507E">html: De gegevens staan in HTML-code. </li> 
-     <li id="li_5F37E14472424F808C6094F42009E676">iframe: De gegevens zijn een iframe-URL (src). </li> 
+     <li id="li_5F37E14472424F808C6094F42009E676">iframe: de gegevens zijn een iframe-URL (src). </li> 
     </ul> </td> 
   </tr> 
   <tr> 
@@ -67,7 +66,7 @@ Elk `AdAsset` biedt informatie over de weergave van het element.
   </tr> 
   <tr> 
    <td colname="col1"> statische URL </td> 
-   <td colname="col2"> <p>Soms heeft de bijbehorende banner ook een staticURL die een directe URL naar de afbeelding of naar een <span class="filepath"> .swf</span> (flitsbanner). </p> <p>Als u html of iframe niet wilt gebruiken, kunt u een directe URL naar een afbeelding of SWF gebruiken om de banner in plaats daarvan in het werkgebied van de Flash weer te geven. In dit geval kunt u de staticURL gebruiken om de banner weer te geven. </p> <p>Belangrijk: U moet controleren of de statische URL een geldige tekenreeks is, omdat deze eigenschap mogelijk niet altijd beschikbaar is. </p> </td> 
+   <td colname="col2"> <p>Soms heeft de bijbehorende banner ook een staticURL die een directe URL naar de afbeelding of naar een <span class="filepath"> .SWF</span> (flitsbanner). </p> <p>Als u html of iframe niet wilt gebruiken, kunt u een directe URL naar een afbeelding of SWF gebruiken om de banner in plaats daarvan in het werkgebied van de Flash weer te geven. In dit geval kunt u de staticURL gebruiken om de banner weer te geven. </p> <p>Belangrijk: u moet controleren of de statische URL een geldige tekenreeks is, omdat deze eigenschap mogelijk niet altijd beschikbaar is. </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -82,7 +81,7 @@ Manifests kunnen banneradvertenties voor gezellen specificeren door:
 
 * Een HTML-fragment
 * De URL van een iFrame-pagina
-* De URL van een statische afbeelding of een Adobe Flash-SWF van het type
+* De URL van een statisch of Adobe Flash-SWF-bestand
 
 Voor elke bijbehorende advertentie geeft TVSDK aan welke typen beschikbaar zijn voor uw toepassing.
 
@@ -102,7 +101,7 @@ Voeg een listener toe voor de `AdPlaybackEvent.AD_STARTED` gebeurtenis die het v
 
 1. Hiermee verzendt u de bannergegevens naar een functie op uw pagina, meestal JavaScript, door `ExternalInterface`, die de banners op een geschikte locatie weergeeft.
 
-   Dit is meestal een `div`en uw functie gebruikt de `div ID` om de banner weer te geven. Bijvoorbeeld:
+   Dit is meestal een `div`en uw functie gebruikt de `div ID` de banner weergeven. Bijvoorbeeld:
 
    Voeg de gebeurtenislistener toe:
 

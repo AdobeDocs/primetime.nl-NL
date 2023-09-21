@@ -1,8 +1,7 @@
 ---
 description: Voor video-on-demand-inhoud (VOD) voegt Browser TVSDK toe en verbreekt deze inhoud door de advertenties in de hoofdinhoud op te splitsen, zodat de tijdlijnduur langer wordt.
 title: VOD en omzetten en invoegen
-exl-id: c2a2f14b-c90d-47fc-9dcc-eff8b1491dde
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '152'
 ht-degree: 0%
@@ -25,7 +24,7 @@ Nadat het afspelen is gestart, kunnen er geen verdere wijzigingen in de inhoud p
 * Ingevoegd
 * Verwijderd
 
-   U kunt bijvoorbeeld geen ingebouwde advertenties uit de inhoud verwijderen voor een ad-vrije ervaring.
+  U kunt bijvoorbeeld geen ingebouwde advertenties uit de inhoud verwijderen voor een ad-vrije ervaring.
 * Vervangen
 
-   U kunt bijvoorbeeld geen ingebouwde advertenties vervangen door beoogde advertenties.
+  U kunt bijvoorbeeld geen ingebouwde advertenties vervangen door beoogde advertenties.

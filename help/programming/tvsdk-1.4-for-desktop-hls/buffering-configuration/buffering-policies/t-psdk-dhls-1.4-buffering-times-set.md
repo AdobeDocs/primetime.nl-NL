@@ -1,8 +1,7 @@
 ---
 description: De MediaPlayer biedt methoden om de initiële buffertijd en de buffertijd voor het afspelen in te stellen en op te halen.
 title: Buffertijden instellen
-exl-id: d2fbae05-2190-4acc-ae63-561db030608a
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '191'
 ht-degree: 0%
@@ -23,17 +22,17 @@ De MediaPlayer biedt methoden om de initiële buffertijd en de buffertijd voor h
    
    * De eerste buffertijd instellen op gelijk aan de buffertijd van het afspelen:
 
-      ```
-      createSimple(bufferTime:uint):BufferControlParameters
-      ```
+     ```
+     createSimple(bufferTime:uint):BufferControlParameters
+     ```
 
    * U stelt als volgt de buffertijden voor initialen en afspelen in:
 
-      ```
-      createDual(initialBufferTime:uint, playbackBufferTime:uint):BufferControlParameters 
-      ```
+     ```
+     createDual(initialBufferTime:uint, playbackBufferTime:uint):BufferControlParameters 
+     ```
 
-      Deze methoden genereren een `IllegalArgumentException` als de parameters niet geldig zijn, bijvoorbeeld wanneer:
+     Deze methoden genereren een `IllegalArgumentException` als de parameters niet geldig zijn, bijvoorbeeld wanneer:
 
    * De aanvankelijke buffertijd is minder dan nul.
    * De aanvankelijke buffertijd is groter dan de buffertijd.
@@ -58,4 +57,4 @@ Stel bijvoorbeeld de eerste buffer in op 2 seconden en de buffertijd voor het af
 mediaPlayer.bufferControlParameters = BufferControlParameters.createDual(2000, 30000); 
 ```
 
-De `psdkdemo` dit kenmerk aantoont; Gebruik de instellingen van de toepassing om de bufferwaarden in te stellen.
+De `psdkdemo` demonstreert deze functie; gebruik de instellingen van de toepassing om de bufferwaarden in te stellen.

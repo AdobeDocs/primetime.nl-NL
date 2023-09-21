@@ -1,8 +1,7 @@
 ---
-title: Welkom bij Adobe&reg. Primetime-verificatie!
-description: Welkom bij Adobe&reg. Overzicht van Primetime-verificatie
-exl-id: a8b01469-3d5f-4a44-9ae8-06a68c29d56d
-source-git-commit: bfc3ba55c99daba561255760baf273b6538a3c6e
+title: Welkom bij Adobe&reg; Primetime-verificatie!
+description: Welkom bij Adobe&reg; Primetime-verificatieoverzicht
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '338'
 ht-degree: 0%
@@ -25,15 +24,17 @@ Je feedback wordt altijd gewaardeerd!
 
 ## Populaire Help en veelgestelde vragen {#help-faqs}
 
-| **Aanbevolen objecten** | |-| | <ul><li>Single Sign-On voor iOS</li><li>[Tijdelijke controle voor speciale acties](/help/authentication/promotional-temp-pass.md)</li><li>[Home-Based Authentificatie (HBA)](/help/authentication/home-based-authn-tve.md)</li><li>[HBA Infographic](https://dzf8vqv24eqhg.cloudfront.net/userfiles/258/326/ckfinder/files/AdobeNewsletterHBA.pdf)</li><li>[Gebruikershandleiding voor Primetime TVE-dashboard](/help/authentication/tve-dashboard-user-guide.md)</li></ul> |
+| **Aanbevolen objecten** |
+|-|
+| <ul><li>Single Sign-On voor iOS</li><li>[Tijdelijke controle voor speciale acties](/help/authentication/promotional-temp-pass.md)</li><li>[Home-Based Authentication (HBA)](/help/authentication/home-based-authn-tve.md)</li><li>[HBA Infographic](https://dzf8vqv24eqhg.cloudfront.net/userfiles/258/326/ckfinder/files/AdobeNewsletterHBA.pdf)</li><li>[Gebruikershandleiding voor Primetime TVE-dashboard](/help/authentication/tve-dashboard-user-guide.md)</li></ul> |
 
 | **Voor programmeurs** | **Voor MVPD&#39;s** |
 |------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------|
-| <ul><li>[Programmer Kickstart Guide](/help/authentication/programmer-kickstart-guide.md)</li><li>**MVPD-kiezer (&quot;kiezer&quot;)**</li><li>[Metagegevens gebruiker](/help/authentication/user-metadata.md)</li></ul> | <ul><li>[MVPD Kickstart Guide](/help/authentication/mvpd-kickstart-guide.md)</li><li>[Verificatie](/help/authentication/authn-usecase.md)</li><li>[Toestemming](/help/authentication/authz-usecase.md)</li><li>[Afmelden](/help/authentication/usecase-mvpd-logout.md)</li></ul> |
+| <ul><li>[Programmer Kickstart Guide](/help/authentication/programmer-kickstart-guide.md)</li><li>**MVPD-kiezer (kiezer)**</li><li>[Metagegevens gebruiker](/help/authentication/user-metadata.md)</li></ul> | <ul><li>[MVPD Kickstart Guide](/help/authentication/mvpd-kickstart-guide.md)</li><li>[Verificatie](/help/authentication/authn-usecase.md)</li><li>[Toestemming](/help/authentication/authz-usecase.md)</li><li>[Afmelden](/help/authentication/usecase-mvpd-logout.md)</li></ul> |
 | **Voor systeemeigen App-clients** | **Voor iedereen** |
 | <ul><li>[Technisch overzicht van iOS](/help/authentication/iostvos-sdk-overview.md)</li><li>[Technisch overzicht van Android](/help/authentication/android-sdk-overview.md)</li></ul> | <ul><li>[Technisch document](/help/authentication/technical-paper.md)</li><li>[Doorverwijsprocedures](/help/authentication/escalation-procedures.md)</li><li>**Ondersteunde systemen**</li><li>[Verklarende woordenlijst](/help/authentication/glossary.md)</li></ul> |
-| **Voor slimme apparaten** |  |
-| <ul><li>[Klantloos technisch overzicht](/help/authentication/rest-api-overview.md)</li><li>[Clientloze API](/help/authentication/rest-api-reference.md)</li></ul> |  |
+| **Voor slimme apparaten** | |
+| <ul><li>[Klantloos technisch overzicht](/help/authentication/rest-api-overview.md)</li><li>[Clientloze API](/help/authentication/rest-api-reference.md)</li></ul> | |
 
 >[!IMPORTANT]
 >
@@ -42,6 +43,7 @@ Je feedback wordt altijd gewaardeerd!
 >[E-mailen van ons supportteam](mailto:tve-support@adobe.com) is ook de eerste stap voor om het even welk kwestie of incident rapport.
 >
 >Als u een [LIVE GROND 1](/help/authentication/escalation-procedures.md) en u hebt ons een e-mail gestuurd en er zijn 30 minuten verstreken zonder antwoord. [Doorverwijsprocedures](/help/authentication/escalation-procedures.md) document voor telefoonaantallen te roepen.
+>
 
 
 ## Om te vinden wat u nodig hebt {#how-to-search}

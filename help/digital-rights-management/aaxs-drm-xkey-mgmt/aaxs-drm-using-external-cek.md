@@ -1,8 +1,7 @@
 ---
 description: Met de functie External CEK kunt u licenties doorvoeren en verpakken met behulp van uw bestaande CKMS.
 title: De externe CEK gebruiken om licenties te zoeken en te verpakken
-exl-id: 3944624a-099e-4fc0-b829-6ab154a53758
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '227'
 ht-degree: 0%
@@ -19,7 +18,7 @@ Dit is een opdrachtregelprogramma waarmee u een video kunt coderen en metagegeve
 
 Tijdens het aanschaffen van licenties merkt de AAXS-licentieserver een markering in de metagegevens op die aangeeft dat deze inhoud is beveiligd met een externe CEK. De licentieserver haalt de CEK-id uit de metagegevens en vraagt vervolgens een beveiligde gegevensopslagruimte/CKMS op om de juiste CEK op te halen.
 
-## Verpakkingswerkstroom
+## Verpakkingsworkflow
 
 1. Zorg ervoor dat u Java 1.6.0_24 of hoger gebruikt.
 1. U kunt als volgt het gereedschapsgebruik zien: `java -jar AdobePackager_ExternalCEK.jar`
@@ -34,9 +33,8 @@ Tijdens het aanschaffen van licenties merkt de AAXS-licentieserver een markering
 >[!NOTE]
 >
 >* De Java-broncode kan worden gemaakt met de opgenomen ANT `build-samples.xml`
->* De Flash Access SDK ( `adobe-flashaccess-sdk.jar`) moet op het klassepad staan
+>* De Flash Access-SDK ( `adobe-flashaccess-sdk.jar`) moet zich op het klassepad bevinden
 >
-
 
 ## Serverworkflow
 

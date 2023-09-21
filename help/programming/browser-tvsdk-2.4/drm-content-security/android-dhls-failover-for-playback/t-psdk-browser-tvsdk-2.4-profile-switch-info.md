@@ -1,8 +1,7 @@
 ---
 description: Wanneer de media speler zijn huidige profiel aan een nieuw profiel overschakelt, kunt u informatie over de schakelaar terugwinnen, met inbegrip van wanneer het geschakeld, breedte en hoogteinformatie, of waarom een verschillende beetjetarief werd gebruikt.
 title: Informatie ophalen over profielschakelaar
-exl-id: 3ef4b319-dd78-4abd-9c2d-ab1d608f6cea
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '273'
 ht-degree: 0%
@@ -19,8 +18,8 @@ Wanneer de media speler zijn huidige profiel aan een nieuw profiel overschakelt,
 1. Wanneer de gebeurtenis voorkomt, controleer de volgende eigenschappen voor informatie over de schakelaar:
 
    * `profile`: Id voor het nieuwe profiel dat wordt gebruikt.
-   * `time`: De stroomtijd waarbij de schakelaar voorkwam.
-   * `description`: Een tekstbeschrijving van de reden voor een wijziging van de bitsnelheid, als een tekenreeks met door puntkomma&#39;s gescheiden sleutel/waardeparen. Bevat maximaal één `Reason` en één `Bitrate`. Als de informatie niet beschikbaar is of de bitsnelheid niet is gewijzigd, is deze tekenreeks leeg.
+   * `time`: De streamtijd waarop de switch plaatsvond.
+   * `description`: Beschrijving van de reden voor een wijziging van de bitsnelheid, als een tekenreeks met door puntkomma&#39;s gescheiden sleutel/waardeparen. Bevat maximaal één `Reason` en één `Bitrate`. Als de informatie niet beschikbaar is of de bitsnelheid niet is gewijzigd, is deze tekenreeks leeg.
 
    <table id="table_E400FD9C57FF40CBAC14AF6847CD8301"> 
     <thead> 

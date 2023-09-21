@@ -2,8 +2,7 @@
 title: De server instellen en implementeren voor beveiligde streaming
 description: De server instellen en implementeren voor beveiligde streaming
 copied-description: true
-exl-id: de1488e6-ccee-49e6-999e-6c6762dd55be
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '172'
 ht-degree: 0%
@@ -39,8 +38,8 @@ ht-degree: 0%
    Validator.bat -g -r <absolute-path-to TomcatInstallDir\licenseserver>
    ```
 
-1. Kopieer de `flashaccessserver.war` bestand van de cd naar de `<TomcatInstallDir>\webapps\` directory.
-1. Als Tomcat wordt uitgevoerd, onderbreekt u de actieve Tomcat-instantie door op `<CTRL-C>` in het opdrachtvenster (als deze functie is gestart vanuit het opdrachtvenster). U kunt de server van de toepassing van de Diensten van Vensters ook tegenhouden als Tomcat als Dienst van Vensters werd geïnstalleerd.
+1. De `flashaccessserver.war` bestand van de cd naar de `<TomcatInstallDir>\webapps\` directory.
+1. Als Tomcat wordt uitgevoerd, onderbreekt u de actieve Tomcat-instantie door op `<CTRL-C>` in het opdrachtvenster (als dit gebeurt via het opdrachtvenster). U kunt de server van de toepassing van de Diensten van Vensters ook tegenhouden als Tomcat als Dienst van Vensters werd geïnstalleerd.
 1. Voer de volgende opdracht in om Tomcat te starten:
 
    ```

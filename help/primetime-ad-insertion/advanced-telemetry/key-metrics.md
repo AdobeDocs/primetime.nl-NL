@@ -2,8 +2,7 @@
 title: Belangrijkste afmetingen en gegevens
 description: Belangrijkste afmetingen en gegevens
 copied-description: true
-exl-id: 71da0c5e-646e-4238-88ee-b6e0b068f6e3
-source-git-commit: 3e63c187f12d1bff53370bbcde4d6a77f58f3b4f
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '89'
 ht-degree: 0%
@@ -14,7 +13,7 @@ ht-degree: 0%
 
 * Primetime Ad Insertion ondersteunt het vastleggen van alle gebeurtenissen voor ad-resolutie, inclusief advertentieverzoeken, omvattende verzoeken, netwerkfouten, parseerfouten en gebeurtenissen met betrekking tot ad-selectie en fallback.
 
-* In Primetime Ad Insertion worden netwerkmeetgegevens en foutwaarden vastgelegd die betrekking hebben op prestaties van advertenties en aanbieders.
+* In Primetime Ad Insertion worden netwerkmeetgegevens en foutwaarden vastgelegd die betrekking hebben op de prestaties van advertenties en aanbieders.
 
 * Primetime Ad Insertion ondersteunt het vastleggen van gebieden voor advertentiesamenvoeging, zoals de vulling- en gebruiksfrequentie, creatieve prestaties en prestaties van de advertentieleverancier.
 

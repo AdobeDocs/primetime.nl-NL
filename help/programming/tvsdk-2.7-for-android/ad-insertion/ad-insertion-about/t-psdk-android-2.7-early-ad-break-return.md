@@ -1,8 +1,7 @@
 ---
 description: Voor live streaming en invoegen moet u mogelijk een ad-einde verlaten voordat alle advertenties in het einde worden afgespeeld.
 title: Een vroege terugkeer voor een onderbreking implementeren
-exl-id: 3c61f34f-3587-40c2-b480-4734b4cf9aef
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '178'
 ht-degree: 0%
@@ -15,7 +14,7 @@ Voor live streaming en invoegen moet u mogelijk een ad-einde verlaten voordat al
 
 De duur van de advertentiepauze bij bepaalde sportevenementen is bijvoorbeeld mogelijk niet bekend voordat de pauze begint. TVSDK biedt een standaardduur, maar als de game wordt hervat voordat het einde van het einde van het einde is bereikt, moet het ad-einde worden verlaten. Een ander voorbeeld is een noodsignaal tijdens een pauze in een live stream.
 
-1. Abonneren op `#EXT-X-CUE-OUT`, `#EXT-X-CUE-IN`, en `#EXT-X-CUE`, die de splice out/splice in markeertekens zijn.
+1. Aanmelden bij `#EXT-X-CUE-OUT`, `#EXT-X-CUE-IN`, en `#EXT-X-CUE`, die de splice out/splice in markeertekens zijn.
 
    Zie voor meer informatie over het uitsplitsen/insplitsen van advertentiemarkeringen [Opportuniteitsgeneratoren en contentoplosers](../../ad-insertion/content-resolver/c-psdk-android-2.7-content-resolver-about.md).
 
@@ -32,7 +31,7 @@ De duur van de advertentiepauze bij bepaalde sportevenementen is bijvoorbeeld mo
    }
    ```
 
-   Voor meer informatie over het gebruik van een aangepaste `ContentFactory`zie stap 1 in [Een aangepaste opportuniteitsindicator implementeren](../../ad-insertion/content-resolver/t-psdk-android-2.7-opp-detector-impl-android.md).
+   Voor meer informatie over het gebruik van een aangepaste `ContentFactory`, zie stap 1 in [Een aangepaste opportuniteitsindicator implementeren](../../ad-insertion/content-resolver/t-psdk-android-2.7-opp-detector-impl-android.md).
 
 1. Op dezelfde aangepaste `ContentFactory`uitvoeren `retrieveResolvers` en omvatten `AuditudeResolver` en `SpliceInCustomResolver`.
 

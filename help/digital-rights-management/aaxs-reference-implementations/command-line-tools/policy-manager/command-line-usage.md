@@ -2,8 +2,7 @@
 title: Gebruik van opdrachtregels
 description: Gebruik van opdrachtregels
 copied-description: true
-exl-id: 2142cb76-e71c-4443-8b5d-348e45587331
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '1023'
 ht-degree: 0%
@@ -27,9 +26,9 @@ De volgende tabel bevat beschrijvingen van de opdrachtregelacties die in de bove
 
 | Handeling opdrachtregel | Beschrijving |
 |---|---|
-| `new` | Hiermee maakt u een nieuw beleid. |
+| `new` | Maakt een nieuw beleid. |
 | `detail` | Beschrijft een bestaand beleid. |
-| `update` | Hiermee werkt u een bestaand beleid bij. |
+| `update` | Een bestaand beleid bijwerken. |
 
 In de volgende tabel worden de opdrachtregelopties beschreven die samen met de bovenstaande syntaxis kunnen worden opgegeven:
 
@@ -71,7 +70,7 @@ In de volgende tabel worden de opdrachtregelopties beschreven die samen met de b
   </tr> 
   <tr rowsep="1" class="- topic/row "> 
    <td colname="1" class="- topic/entry "> <span class="+ topic/ph pr-d/codeph codeph"> -w minuten </span> </td> 
-   <td colname="2" class="- topic/entry "> <p class="- topic/p ">Het afspeelvenster (het aantal minuten dat de inhoud kan worden weergegeven, te beginnen bij het eerste afspelen). Als deze optie niet is opgegeven of als <span class="codeph"> -w </span> wordt gebruikt zonder het aantal minuten op te geven, is er geen beperking voor het afspeelvenster. De waarde moet niet-negatief zijn. </p> </td> 
+   <td colname="2" class="- topic/entry "> <p class="- topic/p ">Het afspeelvenster (het aantal minuten dat de inhoud kan worden weergegeven, vanaf het eerste afspelen). Als deze optie niet is opgegeven of als <span class="codeph"> -w </span> wordt gebruikt zonder het aantal minuten op te geven, is er geen beperking voor het afspeelvenster. De waarde moet niet-negatief zijn. </p> </td> 
   </tr> 
   <tr rowsep="1" class="- topic/row "> 
    <td colname="1" class="- topic/entry "> <span class="+ topic/ph pr-d/codeph codeph"> -l minuten </span> </td> 

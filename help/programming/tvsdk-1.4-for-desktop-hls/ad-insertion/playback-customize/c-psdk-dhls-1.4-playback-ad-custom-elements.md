@@ -1,8 +1,7 @@
 ---
 description: TVSDK biedt klassen en methoden waarmee u het afspeelgedrag kunt aanpassen van inhoud die reclame bevat.
 title: API-elementen voor het afspelen van advertenties
-exl-id: 459995c2-1d6f-4414-94a6-2c0b24098c14
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '236'
 ht-degree: 0%
@@ -40,7 +39,7 @@ De volgende API-elementen zijn handig voor het aanpassen van het afspelen:
    <td colname="col2"> Hiermee geeft u een overzicht van het mogelijke afspeelbeleid voor advertenties. </td> 
   </tr> 
   <tr> 
-   <td colname="col1"><span class="codeph"> AdPolicySelector</span> </td> 
+   <td colname="col1"><span class="codeph"> AdbeleidSelector</span> </td> 
    <td colname="col2"> Interface die aanpassing van TVSDK en gedrag toestaat. </td> 
   </tr> 
   <tr> 

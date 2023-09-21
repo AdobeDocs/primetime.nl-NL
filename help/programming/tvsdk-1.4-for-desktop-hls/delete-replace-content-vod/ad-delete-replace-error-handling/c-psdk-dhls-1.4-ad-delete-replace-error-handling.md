@@ -1,15 +1,14 @@
 ---
 description: TVSDK handelt fouten in het tijdbereik af op basis van het specifieke probleem, door de onjuist gedefinieerde tijdbereiken samen te voegen of opnieuw te ordenen.
-title: Foutafhandeling voor verwijderen en vervangen van toevoegen
-exl-id: 86970989-82e0-4e6f-81fb-beee70870c69
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+title: Foutafhandeling voor verwijderen en vervangen
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '308'
 ht-degree: 0%
 
 ---
 
-# Foutafhandeling voor verwijderen en vervangen van toevoegen {#ad-deletion-and-replacement-error-handling}
+# Foutafhandeling voor verwijderen en vervangen {#ad-deletion-and-replacement-error-handling}
 
 TVSDK handelt fouten in het tijdbereik af op basis van het specifieke probleem, door de onjuist gedefinieerde tijdbereiken samen te voegen of opnieuw te ordenen.
 
@@ -28,9 +27,9 @@ TVSDK handelt de signalerende-wijze conflicten als volgt af:
 * Als de waaiers van de DELETE of van het Merk worden bepaald en de signalerende wijze CUSTOM_RANGE is, schrapt TVSDK of merkt deze waaiers. Er is geen invoeging in dit geval.
 * Als een bereik van DELETE of een MARK-bereik een vervangingsduur definieert, negeert TVSDK deze duur.
 
-Wanneer de server niet geldig is `AdBreaks`:
+Wanneer de server niet geldig retourneert `AdBreaks`:
 
-* TVSDK genereert en verwerkt een `NOPTimelineOperation` voor de lege `AdBreak`. Geen advertentie wordt afgespeeld.
+* TVSDK genereert en verwerkt `NOPTimelineOperation` voor de lege `AdBreak`. Geen advertentie wordt afgespeeld.
 
 ## Voorbeelden van tijdbereikfouten {#time-range-error-examples}
 

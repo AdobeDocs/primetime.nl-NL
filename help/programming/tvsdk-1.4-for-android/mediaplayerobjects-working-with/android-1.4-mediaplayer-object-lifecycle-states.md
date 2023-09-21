@@ -1,8 +1,7 @@
 ---
 description: Vanaf het moment dat u de instantie MediaPlayer maakt tot het moment waarop u deze beëindigt (hergebruikt of verwijdert), voltooit deze instantie een reeks overgangen tussen frames.
 title: Levenscyclus van MediaPlayer-objecten
-exl-id: efb39fea-1050-41e5-93d8-1175a54f81e5
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '446'
 ht-degree: 0%
@@ -19,13 +18,13 @@ Werken met frames:
 
 * U kunt de huidige status van het dialoogvenster `MediaPlayer` object met `MediaPlayer.getStatus`.
 
-   ```java
-   PlayerState getStatus() throws IllegalStateException;
-   ```
+  ```java
+  PlayerState getStatus() throws IllegalStateException;
+  ```
 
 * De lijst met staten wordt gedefinieerd in `MediaPlayer.PlayerState`.
 
-Overgangsdiagram voor de levenscyclus van een `MediaPlayer` instantie:
+Overgangsdiagram voor de levenscyclus van een `MediaPlayer` -instantie:
 <!--<a id="fig_1C55DE3F186F4B36AFFDCDE90379534C"></a>-->
 
 ![](assets/player-state-transitions-diagram-android_1.2_web.png)
@@ -54,7 +53,7 @@ De volgende tabel bevat aanvullende gegevens:
   </tr> 
   <tr> 
    <td colname="col1"> <span class="codeph"> VOORBEREIDEN </span> </td> 
-   <td colname="col2"> <p>Uw toepassing is opgeroepen <span class="codeph"> MediaPlayer.prepareToPlay </span>. De mediaspeler laadt het mediaspelitem en de bijbehorende bronnen. </p> <p>Tip: Het is mogelijk dat de hoofdmedia enigszins worden gebufferd. </p> <p>TVSDK bereidt de mediastream voor en probeert (indien ingeschakeld) het invoegen en oplossen van advertenties uit te voeren. </p> <p>Tip: Als u de begintijd wilt instellen op een andere waarde dan nul, roept u <span class="codeph"> prepareToPlay(startTime) </span> met de tijd in milliseconden. </p> </td> 
+   <td colname="col2"> <p>Uw toepassing is opgeroepen <span class="codeph"> MediaPlayer.prepareToPlay </span>. De mediaspeler laadt het mediaspelitem en de bijbehorende bronnen. </p> <p>Tip: er kan zich een buffering van de hoofdmedia voordoen. </p> <p>TVSDK bereidt de mediastream voor en probeert (indien ingeschakeld) het invoegen en oplossen van advertenties uit te voeren. </p> <p>Tip: als u de begintijd op een andere waarde dan nul wilt instellen, roept u <span class="codeph"> prepareToPlay(startTime) </span> in milliseconden. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <span class="codeph"> BEREID </span> </td> 

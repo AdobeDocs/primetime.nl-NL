@@ -1,8 +1,7 @@
 ---
 description: Mediastreams kunnen extra metagegevens bevatten in de vorm van tags in het MPD-bestand (Media Presentation Description). Dit bestand geeft de plaatsing van de reclame aan. U kunt aangepaste tagnamen opgeven en een melding ontvangen wanneer bepaalde tags in het manifestbestand worden weergegeven.
 title: Aangepaste tags
-exl-id: 9e6343b5-ade7-467a-b2a1-8f8d69492a1a
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '441'
 ht-degree: 0%
@@ -64,7 +63,7 @@ Uw toepassing kan de volgende scenario&#39;s instellen:
 * Een melding wanneer `#EXT-X-ASSET` -tags of een andere set aangepaste tagnamen waarop u zich hebt geabonneerd, bestaan in het bestand.
 * Advertenties invoegen wanneer een `#EXT-X-AD` -tag of een andere aangepaste tagnaam in de stream wordt gevonden.
 
-U kunt zich als aangepaste tags abonneren op een van de volgende tags: `EXT-PROGRAM-DATE-TIME`, `EXT-X-START`, `EXT-X-AD`, `EXT-X-CUE`, `EXT-X-ENDLIST`. U wordt op de hoogte gesteld van een `TimedMetadata` gebeurtenis tijdens het parseren van manifestbestanden.
+U kunt zich als aangepaste tags abonneren op een van de volgende tags: `EXT-PROGRAM-DATE-TIME`, `EXT-X-START`, `EXT-X-AD`, `EXT-X-CUE`, `EXT-X-ENDLIST`. U ontvangt een melding met een `TimedMetadata` gebeurtenis tijdens het parseren van manifestbestanden.
 
 Er zijn enkele advertentietags, zoals `EXT-X-CUE`, waarop u al bent geabonneerd. Deze advertentietags worden ook gebruikt door de standaardopportuniteitsgenerator. U kunt opgeven welke advertentietags door de standaardopportuniteitsgenerator worden gebruikt door de optie `adTags` eigenschap.
 
@@ -74,9 +73,9 @@ DASH heeft twee manieren om gebeurtenissen te signaleren:
 
 * In het MPD-bestand.
 
-   Dit bestand lijkt op het M3U8-bestand in HLS-inhoud en het .mpd-bestand bevat MPD-gebeurtenissen.
+  Dit bestand lijkt op het M3U8-bestand in HLS-inhoud en het .mpd-bestand bevat MPD-gebeurtenissen.
 * Inband in de weergave
 
-   Inband gebeurtenissen worden met vertegenwoordiging vermenigvuldigd door de gebeurtenisberichten als deel van de segmenten toe te voegen. Een representatie is een lijst met video- en audiosegmenten die achtereenvolgens worden afgespeeld. De gegevens van de inband-gebeurtenis worden in deze segmenten ingesloten.
+  Inband gebeurtenissen worden met vertegenwoordiging vermenigvuldigd door de gebeurtenisberichten als deel van de segmenten toe te voegen. Een representatie is een lijst met video- en audiosegmenten die achtereenvolgens worden afgespeeld. De gegevens van de inband-gebeurtenis worden in deze segmenten ingesloten.
 
-Deze gebeurtenissen worden op de hoogte gesteld als `TimedMetadata` gebeurtenissen naar de toepassing zodra deze worden geparseerd door Browser-TVSDK. Zodra een gebeurtenis op de hoogte is gebracht, wordt deze niet opnieuw op de hoogte gesteld.
+Deze gebeurtenissen worden op de hoogte gesteld als `TimedMetadata` gebeurtenissen naar de toepassing zodra deze worden geparseerd door Browser-TVSDK. Zodra een gebeurtenis op de hoogte is gebracht, wordt deze niet meer op de hoogte gesteld.

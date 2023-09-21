@@ -1,19 +1,18 @@
 ---
-description: De markering forceflash in de bronlijst forceert Flash fallback voor een URL. Voor deze URL kunt u Adobe Flash Player gebruiken om de inhoud af te spelen.
-title: De Flash-fallback forceren met gebruik van de lijst met mediabronnen
-exl-id: 657bf9b1-d911-489d-80ca-2956b008431b
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+description: Met de markering forceflash in de bronlijst wordt voor een URL een Flash-fallback geforceerd. Voor deze URL kunt u Adobe Flash Player gebruiken om de inhoud af te spelen.
+title: De Flash laten terugvallen met gebruik van de mediabronlijst
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '86'
 ht-degree: 0%
 
 ---
 
-# De Flash-fallback forceren met gebruik van de lijst met mediabronnen{#forcing-the-flash-fallback-using-the-media-source-list}
+# De Flash laten terugvallen met gebruik van de mediabronlijst{#forcing-the-flash-fallback-using-the-media-source-list}
 
-De markering forceflash in de bronlijst forceert Flash fallback voor een URL. Voor deze URL kunt u Adobe Flash Player gebruiken om de inhoud af te spelen.
+Met de markering forceflash in de bronlijst wordt voor een URL een Flash-fallback geforceerd. Voor deze URL kunt u Adobe Flash Player gebruiken om de inhoud af te spelen.
 
-In de lijst met mediabronnen (bijvoorbeeld in het dialoogvenster `sources.js` bestand), kunt u instellen `forceflash` tot `true`. Bijvoorbeeld:
+In de lijst met mediabronnen (bijvoorbeeld in de `sources.js` bestand) kunt instellen `forceflash` tot `true`. Bijvoorbeeld:
 
 ```js
 { 

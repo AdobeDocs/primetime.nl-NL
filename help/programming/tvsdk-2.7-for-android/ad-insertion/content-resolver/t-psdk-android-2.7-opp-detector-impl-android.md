@@ -1,8 +1,7 @@
 ---
 description: U kunt uw eigen opportuniteitsgenerators uitvoeren door de klasse OpportunityGenerator te implementeren.
 title: Een aangepaste opportuniteitsgenerator implementeren
-exl-id: 8fa97515-692c-4e34-9afb-17a5409228db
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '100'
 ht-degree: 0%
@@ -13,7 +12,7 @@ ht-degree: 0%
 
 U kunt uw eigen opportuniteitsgenerators uitvoeren door de klasse OpportunityGenerator te implementeren.
 
-1. Uw aangepaste versie implementeren `ContentFactory` door `ContentFactory` interface en overschrijven `retrieveGenerators`.
+1. Uw aangepaste versie implementeren `ContentFactory` door de `ContentFactory` interface en overschrijven `retrieveGenerators`.
 
    Bijvoorbeeld:
 
@@ -89,7 +88,7 @@ U kunt uw eigen opportuniteitsgenerators uitvoeren door de klasse OpportunityGen
 
 <!--<a id="example_7A46377EBE79458E87423EB95D0568D4"></a>-->
 
-Dit is een voorbeeld van een aangepaste plaatsingsopportuniteitsdetector:
+Dit is een voorbeelddetector voor aangepaste plaatsingsmogelijkheden:
 
 ```java
 public class MyOpportunityGenerator implements OpportunityGenerator {

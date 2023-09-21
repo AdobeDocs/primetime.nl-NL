@@ -2,8 +2,7 @@
 title: Terugdraaidetectie
 description: Terugdraaidetectie
 copied-description: true
-exl-id: 054d3634-5ce9-4a51-ac91-e6ae60a1fd6e
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '126'
 ht-degree: 0%
@@ -12,6 +11,6 @@ ht-degree: 0%
 
 # Terugdraaidetectie {#rollback-detection}
 
-Als uw implementatie van Adobe Access bedrijfsregels gebruikt die van de client vereisen dat de status behouden blijft (bijvoorbeeld het interval van het afspeelvenster), raadt Adobe u ten zeerste aan dat de server de terugdraaiingsteller bijhoudt en AIR of SWF lijst toestaat.
+Als uw implementatie van de Toegang van de Adobe bedrijfsregels gebruikt die de cliënt vereisen om staat (bijvoorbeeld, het interval van het playbackvenster) te handhaven, adviseert de Adobe hoogst dat de server spoor van het terugschroeven van prijzen houdt en AIR of SWF lijst toestaat.
 
-De rollback teller wordt verzonden naar de server in de meeste verzoeken van de cliënt. Als uw implementatie van de Toegang van Adobe niet de het terugschroeven van prijzen vereist, kan het worden genegeerd. Anders raadt Adobe aan dat de server de willekeurige machine-id opslaat, verkregen met `MachineToken.getMachineId().getUniqueId()`—en de huidige tellerwaarde in een gegevensbestand. Voor meer informatie bij het verhogen van en het volgen van de rollback teller, zie ClientState in *Referentie voor Adobe Access API* en *Terugdraaidetectie* in *De SDK van Adobe Access gebruiken voor het beschermen van inhoud*.
+De rollback teller wordt verzonden naar de server in de meeste verzoeken van de cliënt. Als uw implementatie van de Toegang van de Adobe niet het terugschroeven van prijzen vereist, kan het worden genegeerd. Anders wordt door de Adobe aangeraden dat de server de willekeurige machine-id opslaat, verkregen met `MachineToken.getMachineId().getUniqueId()`—en de huidige tellerwaarde in een gegevensbestand. Voor meer informatie bij het verhogen van en het volgen van de rollback teller, zie ClientState in *API-naslaggids voor Adobe* en *Terugdraaidetectie* in *De Adobe Access SDK gebruiken voor het beveiligen van inhoud*.

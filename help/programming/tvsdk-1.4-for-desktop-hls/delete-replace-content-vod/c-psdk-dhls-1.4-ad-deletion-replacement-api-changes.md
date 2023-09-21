@@ -1,8 +1,7 @@
 ---
 description: Deze wijzigingen in TVSDK ondersteunen het verwijderen en vervangen van bestanden.
 title: Wijzigingen in API voor verwijderen en vervangen toevoegen
-exl-id: 3cf63353-741b-41f4-93fd-609b69f7c3af
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '381'
 ht-degree: 0%
@@ -15,13 +14,13 @@ Deze wijzigingen in TVSDK ondersteunen het verwijderen en vervangen van bestande
 
 * `AdSignalingMode` Toegevoegd `CUSTOM_RANGES` signaalmodus.
 
-* `OpportunityGenerator`  `extractAdSignalingMode()` - Set `AdSignalingMode.CUSTOM_RANGES` als reeksen vervangen in de metagegevens staan.
+* `OpportunityGenerator`  `extractAdSignalingMode()` - Set `AdSignalingMode.CUSTOM_RANGES` als de metagegevens reeksen voor het vervangen van reeksen bevatten.
 
 * `PlacementType` Toegevoegd `CUSTOM_RANGE` type.
 
 * `PlacementMode`
 
-   * Toegevoegd `DELETE` in.
+   * Toegevoegd `DELETE` -modus.
    * Toegevoegd `MARK` mode
    * Toegevoegd `FreeReplace` modus - Deze modus heeft een duur maar is een zuivere invoeging
 
@@ -29,7 +28,7 @@ Deze wijzigingen in TVSDK ondersteunen het verwijderen en vervangen van bestande
 
 * Toegevoegd `ReplaceTimeRange()` methode
 
-   Uitbreidingen `TimeRange` om een `replacementDuration` eigenschap. Voor de zaken MARK en DELETE, `replacementDuration` is 0.
+  Uitbreidingen `TimeRange` om een `replacementDuration` eigenschap. Voor de zaken MARK en DELETE, `replacementDuration` is 0.
 
 * `TimeRangeCollection`
 
@@ -54,12 +53,12 @@ Deze wijzigingen in TVSDK ondersteunen het verwijderen en vervangen van bestande
 
    * `doRetrieveGenerators()`
 
-      * Toegevoegd `CustomRangesOpportunityGenerator` wanneer de metagegevens aangepaste bereiken bevatten
+      * Toegevoegd `CustomRangesOpportunityGenerator` voor wanneer de metagegevens aangepaste bereiken bevatten
+
    * `doRetrieveResolvers()`
 
       * Toevoegen `CustomRangeResolver` for wanneer DELETE en REPLACE aangepaste bereiken aanwezig zijn in de metagegevens
       * Verplaatst `CustomAdMarkerResolver` voor `AuditudeResolver`
-
 
 * Toegevoegd `CustomRangeOpportunityGenerator`
 
@@ -70,11 +69,11 @@ Deze wijzigingen in TVSDK ondersteunen het verwijderen en vervangen van bestande
 
    * Toegevoegd `createCustomRangeOpportunities` alle mogelijkheden creëren
 
-      MARK - één mogelijkheid voor elk geldig merkbereik van `PlacementType.CUSTOM_RANGE` en `PlacementMode.MARK`
+     MARK - één mogelijkheid voor elk geldig merkbereik van `PlacementType.CUSTOM_RANGE` en `PlacementMode.MARK`
 
-      DELETE - Eén mogelijkheid voor elk geldig verwijderingsbereik van `PlacementType.CUSTOM_RANGE` en `PlacementMode.DELETE`
+     DELETE - Eén mogelijkheid voor elk geldig verwijderingsbereik van `PlacementType.CUSTOM_RANGE` en `PlacementMode.DELETE`
 
-      VERVANGEN - Twee mogelijkheden voor elke geldige vervang waaier:
+     VERVANGEN - Twee mogelijkheden voor elke geldige vervang waaier:
 
       1. Een verwijderbereikmogelijkheid van `PlacementType.CUSTOM_RANGE` en `PlacementMode.DELETE`.
 

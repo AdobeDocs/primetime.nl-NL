@@ -1,8 +1,7 @@
 ---
 description: In Browser TVSDK, kunt u aan een specifieke positie (tijd) in een stroom zoeken. Een stream kan een afspeellijst met schuifvensters of VOD-inhoud (video on demand) zijn.
 title: Handgreep zoeken bij gebruik van de zoekbalk
-exl-id: 4c09b218-917a-4318-82b0-c221d450a2c1
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '329'
 ht-degree: 0%
@@ -19,11 +18,11 @@ In Browser TVSDK, kunt u aan een specifieke positie (tijd) in een stroom zoeken.
 
 1. Wacht tot Browser TVSDK geldig is voor zoeken.
 
-   Geldige statussen worden BEREID, VOLTOOID, GEPAUZEERD en AFGESPEELD. Als u in een geldige status werkt, weet u zeker dat de mediabrondel is geladen. Als de speler zich niet in een geldige, doorzoekbare status bevindt, wordt bij een poging de volgende methoden aan te roepen een `IllegalStateException`.
+   Geldige statussen worden BEREID, VOLTOOID, GEPAUZEERD en AFGESPEELD. Als u in een geldige status werkt, weet u zeker dat de mediabrondel correct is geladen. Als de speler zich niet in een geldige, doorzoekbare status bevindt, wordt bij een poging de volgende methoden aan te roepen een `IllegalStateException`.
 
    U kunt bijvoorbeeld wachten tot Browser TVSDK wordt geactiveerd  `AdobePSDK.MediaPlayerStatusChangeEvent`  met een `event.status` van `AdobePSDK.MediaPlayerStatus.PREPARED`.
 
-1. Geef de gewenste positie in de zoekopdracht door aan de `MediaPlayer.seek` als een parameter in milliseconden.
+1. Geef de gewenste positie in de zoekopdracht door `MediaPlayer.seek` als een parameter in milliseconden.
 
    Hierdoor wordt de afspeelkop naar een andere positie in de stream verplaatst.
 
@@ -49,7 +48,7 @@ In Browser TVSDK, kunt u aan een specifieke positie (tijd) in een stroom zoeken.
    * Het afspeelgedrag wordt beïnvloed als een zoekopdracht of een andere verplaatsing in het midden van een advertentiesleutel eindigt of als een zoekopdracht of andere verplaatsing wordt overgeslagen en afgebroken.
    * U kunt alleen zoeken in de doorzoekbare duur van het element. Voor VOD, dat van 0 door de duur van het activa is.
 
-1. Voor de zoekbalk die in het bovenstaande voorbeeld is gemaakt, luistert u naar `setPositionChangeListener()` om te zien wanneer de gebruiker scrubt:
+1. Luister naar de zoekbalk die in het bovenstaande voorbeeld is gemaakt `setPositionChangeListener()` om te zien wanneer de gebruiker scrubt:
 
    ```js
    seekBar.setPositionChangeListener(function (pos) { 

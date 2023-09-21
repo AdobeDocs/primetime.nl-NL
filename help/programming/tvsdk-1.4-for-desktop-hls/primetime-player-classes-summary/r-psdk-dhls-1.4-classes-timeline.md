@@ -1,8 +1,7 @@
 ---
 description: Deze klassen bieden informatie over de tijdlijn van de specifieke media, waaronder de plaatsing van advertenties.
 title: Tijdlijnklassen
-exl-id: 8382fff2-0f10-4a8c-9c0c-66d26fe18938
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '376'
 ht-degree: 0%
@@ -41,7 +40,7 @@ Pakket: [com.adobe.mediacore.timeline](https://help.adobe.com/en_US/primetime/ap
   </tr> 
   <tr rowsep="1"> 
    <td colname="1"> <span class="codeph"> <a href="https://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls_1.4/com/adobe/mediacore/timeline/PlacementType.html" format="html" scope="external"> PlacementType </a> </span> </td> 
-   <td colname="2"> Opsomming van plaatsingstypen die aangeven waar plaatsing in de tijdlijn plaatsvindt. bijvoorbeeld PRE_ROLL. </td> 
+   <td colname="2"> Opsomming van plaatsingstypen die aangeven waar plaatsing in de tijdlijn plaatsvindt, bijvoorbeeld PRE_ROLL. </td> 
   </tr> 
   <tr rowsep="1"> 
    <td colname="1"> <span class="codeph"> <a href="https://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls_1.4/com/adobe/mediacore/timeline/Reservation.html" format="html" scope="external"> Voorbehoud </a> </span> </td> 

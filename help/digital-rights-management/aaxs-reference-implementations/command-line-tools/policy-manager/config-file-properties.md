@@ -2,8 +2,7 @@
 title: Eigenschappen van configuratiebestand
 description: Eigenschappen van configuratiebestand
 copied-description: true
-exl-id: 6405126d-4cf2-4ffc-821d-fbfdc00b60ef
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '1119'
 ht-degree: 0%
@@ -12,7 +11,7 @@ ht-degree: 0%
 
 # Eigenschappen van configuratiebestand {#configuration-file-properties}
 
-In het configuratiebestand worden de volgende eigenschappen opgegeven. Voor eigenschapnamen die `n`, `n` vertegenwoordigt een geheel dat met 1 begint en voor elke instantie van het bezit stijgt.
+In het configuratiebestand worden de volgende eigenschappen opgegeven. Voor eigenschapnamen die include-bestanden bevatten `n`, `n` vertegenwoordigt een geheel dat met 1 begint en voor elke instantie van het bezit stijgt.
 
 <table class="+ topic/table " id="table_p3x_54y_n4"> 
  <thead class="- topic/thead "> 
@@ -53,7 +52,7 @@ In het configuratiebestand worden de volgende eigenschappen opgegeven. Voor eige
   </tr> 
   <tr rowsep="1" class="- topic/row "> 
    <td colname="1" class="- topic/entry "><span class="codeph"> policy.domain.anoniem</span> <p class="- topic/p "><span class="codeph"> -domainAnon</span> </p> </td> 
-   <td colname="2" class="- topic/entry "> Geeft aan of anonieme domeinregistratie is toegestaan. Stel de eigenschap in op true of neem deze opdrachtregeloptie op om anonieme toegang toe te staan. Deze optie kan niet worden gebruikt met -domainAuthNS. </td> 
+   <td colname="2" class="- topic/entry "> Geeft aan of anonieme domeinregistratie is toegestaan. Plaats het bezit aan waar of neem deze optie van de bevellijn op om anonieme toegang toe te staan. Deze optie kan niet worden gebruikt met -domainAuthNS. </td> 
   </tr> 
   <tr rowsep="1" class="- topic/row "> 
    <td colname="1" class="- topic/entry "><span class="codeph"> policy.domain.autoNamespace</span> <p class="- topic/p "><span class="codeph"> -domainAuthNS</span> <i class="+ topic/ph hi-d/i ">namespace</i> </p> </td> 
@@ -96,11 +95,11 @@ In het configuratiebestand worden de volgende eigenschappen opgegeven. Voor eige
   </tr> 
   <tr rowsep="1" class="- topic/row "> 
    <td colname="1" class="- topic/entry "><span class="codeph"> policy.useRootLicense</span> </td> 
-   <td colname="2" class="- topic/entry ">Geeft aan of dit beleid een hoofdlicentie heeft (zie <i class="+ topic/ph hi-d/i ">Enhanced License Chaining</i> in <i class="+ topic/ph hi-d/i ">Adobe Access gebruiken voor het beveiligen van inhoud</i>). </td> 
+   <td colname="2" class="- topic/entry ">Geeft aan of dit beleid een hoofdlicentie heeft (zie <i class="+ topic/ph hi-d/i ">Enhanced License Chaining</i> in <i class="+ topic/ph hi-d/i ">Toegang tot Adobe gebruiken voor het beveiligen van inhoud</i>). </td> 
   </tr> 
   <tr rowsep="1" class="- topic/row "> 
    <td colname="1" class="- topic/entry "><span class="codeph"> policy.startDate</span> </td> 
-   <td colname="2" class="- topic/entry ">De datum waarna de inhoud geldig is. De indeling gebruiken <span class="+ topic/ph pr-d/codeph codeph">jjjj-mm-dd</span> (bijvoorbeeld <span class="codeph"> 2009-01-31</span> vertegenwoordigt 31 januari om 12.00 uur) of <span class="+ topic/ph pr-d/codeph codeph">jjjj-mm-dd-h24:min:sec</span> (bijvoorbeeld <span class="codeph"> 2009-01-31-14:30:00</span> staat voor 31 januari om 2:30 uur). </td> 
+   <td colname="2" class="- topic/entry ">De datum waarna de inhoud geldig is. De indeling gebruiken <span class="+ topic/ph pr-d/codeph codeph">jjjj-mm-dd</span> (bijvoorbeeld <span class="codeph"> 2009-01-31</span> vertegenwoordigt 31 januari om 12.00 uur) of <span class="+ topic/ph pr-d/codeph codeph">jjjj-mm-dd-h24:min:sec</span> (bijvoorbeeld <span class="codeph"> 2009-01-31-14:30:00</span> vertegenwoordigt 31 januari om 2:30). </td> 
   </tr> 
   <tr rowsep="1" class="- topic/row "> 
    <td colname="1" class="- topic/entry "><span class="codeph"> policy.expiration.endDate</span> </td> 
@@ -112,7 +111,7 @@ In het configuratiebestand worden de volgende eigenschappen opgegeven. Voor eige
   </tr> 
   <tr rowsep="1" class="- topic/row "> 
    <td colname="1" class="- topic/entry "><span class="codeph"> beleid.licenseCaching.duration</span> </td> 
-   <td colname="2" class="- topic/entry "> <p class="- topic/p ">De tijd dat een licentie in de cache op de client kan worden geplaatst (in minuten). Stel deze eigenschap in op 0 om het in cache plaatsen van licenties niet toe te staan. De waarde moet 0 of hoger zijn. Beide <span class="codeph"> beleid.licenseCaching.duration</span> en <span class="codeph"> policy.licenseCaching.endDate</span> mag niet gelijktijdig worden gebruikt. </p> <p class="- topic/p "><b class="+ topic/ph hi-d/b ">Opmerking</b>: Deze beleidsinstelling wordt alleen toegepast op de licentiecache op de schijf. De licentieduur van de geheugencache wordt niet geregeld. De licentie kan in het geheugen worden opgeslagen, zelfs als de door het beleid opgegeven duur nul is. </p> </td> 
+   <td colname="2" class="- topic/entry "> <p class="- topic/p ">De hoeveelheid tijd dat een licentie in de cache op de client kan worden geplaatst (in minuten). Stel deze eigenschap in op 0 om het in cache plaatsen van licenties niet toe te staan. De waarde moet 0 of hoger zijn. Beide <span class="codeph"> beleid.licenseCaching.duration</span> en <span class="codeph"> policy.licenseCaching.endDate</span> mag niet gelijktijdig worden gebruikt. </p> <p class="- topic/p "><b class="+ topic/ph hi-d/b ">Opmerking</b>: Deze beleidsinstelling wordt alleen toegepast op de licentiecache op de schijf. De licentieduur van de geheugencache wordt niet geregeld. De licentie kan in het geheugen worden opgeslagen, zelfs als de door het beleid opgegeven duur nul is. </p> </td> 
   </tr> 
   <tr rowsep="1" class="- topic/row "> 
    <td colname="1" class="- topic/entry "><span class="codeph"> policy.licenseCaching.endDate</span> </td> 
@@ -152,7 +151,7 @@ In het configuratiebestand worden de volgende eigenschappen opgegeven. Voor eige
   </tr> 
   <tr rowsep="1" class="- topic/row "> 
    <td colname="1" class="- topic/entry "><span class="+ topic/ph pr-d/codeph codeph">policy.allowedSWFApplication.n</span> </td> 
-   <td colname="2" class="- topic/entry "> <p class="- topic/p ">Een lijst van gewenste personen van SWF-toepassingen waarmee beveiligde inhoud kan worden afgespeeld. Gebruik de volgende indeling: </p> <p class="- topic/p "><span class="+ topic/ph pr-d/codeph codeph">URL</span> of bestand=<span class="+ topic/ph pr-d/codeph codeph">swf_file</span>,tijd=<i class="+ topic/ph hi-d/i ">max_time_to_verify</i> <i class="+ topic/ph hi-d/i ">swf_file</i> is het SWF-bestand waarvoor de hash moet worden berekend en <i class="+ topic/ph hi-d/i ">max_time_to_verify</i> is de maximale tijd die nodig is om het downloaden en de verificatie van de SWF toe te staan (in seconden). </p> </td> 
+   <td colname="2" class="- topic/entry "> <p class="- topic/p ">Een lijst van gewenste personen SWF-toepassingen die beveiligde inhoud mogen afspelen. Gebruik de volgende indeling: </p> <p class="- topic/p "><span class="+ topic/ph pr-d/codeph codeph">URL</span> of bestand=<span class="+ topic/ph pr-d/codeph codeph">swf_file</span>,tijd=<i class="+ topic/ph hi-d/i ">max_time_to_verify</i> <i class="+ topic/ph hi-d/i ">swf_file</i> is het SWF-bestand waarvoor de hash moet worden berekend en <i class="+ topic/ph hi-d/i ">max_time_to_verify</i> is de maximale tijd die nodig is om het downloaden en de verificatie van de SWF toe te staan (in seconden). </p> </td> 
   </tr> 
   <tr rowsep="0" class="- topic/row "> 
    <td colname="1" class="- topic/entry "><span class="+ topic/ph pr-d/codeph codeph">policy.license.customProp.n</span> </td> 

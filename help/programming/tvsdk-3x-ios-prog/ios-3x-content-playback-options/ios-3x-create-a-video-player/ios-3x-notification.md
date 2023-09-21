@@ -1,8 +1,7 @@
 ---
 description: De speler kan luisteren naar een reeks gebeurtenissen die de status van de speler aangeven.
 title: Meldingen instellen
-exl-id: 52039895-5529-4fc3-8e58-13309de12e80
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '332'
 ht-degree: 0%
@@ -13,7 +12,7 @@ ht-degree: 0%
 
 De speler kan luisteren naar een reeks gebeurtenissen die de status van de speler aangeven.
 
-Ervan uitgaande dat `PTMediaPlayer` is een eigenschap van de clientspeler; `self.player` in het volgende voorbeeld staat voor de `PTMediaPlayer` -instantie. In het volgende voorbeeld wordt het `addObservers` methode die wordt weergegeven in de PTMediaPlayer-instellingsinstructies en die de meeste meldingen bevat:
+Aangenomen dat `PTMediaPlayer` is een eigenschap van de clientspeler; `self.player` in het volgende voorbeeld staat voor de `PTMediaPlayer` -instantie. In het volgende voorbeeld wordt het `addObservers` methode die wordt weergegeven in de PTMediaPlayer-instellingsinstructies en die de meeste meldingen bevat:
 
 ```
 [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(onMediaPlayerStatusChange:)  
@@ -70,7 +69,7 @@ Ervan uitgaande dat `PTMediaPlayer` is een eigenschap van de clientspeler; `self
   </tr> 
   <tr rowsep="1"> 
    <td colname="1"> <span class="codeph"> PTMediaPlayerAdProgressNotification </span> </td> 
-   <td colname="2"> een vooruitgang; voortdurend worden verzonden terwijl een advertentie wordt afgespeeld. </td> 
+   <td colname="2"> Een advertentie vorderde; wordt constant verzonden terwijl een advertentie speelt. </td> 
   </tr> 
   <tr rowsep="1"> 
    <td colname="1"> <span class="codeph"> PTMediaPlayerAdStartedNotification </span> </td> 

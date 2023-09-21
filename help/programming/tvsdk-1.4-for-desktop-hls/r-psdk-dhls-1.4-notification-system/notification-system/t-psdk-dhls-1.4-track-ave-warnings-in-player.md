@@ -1,8 +1,7 @@
 ---
-description: Gebruikend NotificationEvent, kunt u waarschuwingen volgen die van de Adobe VideoMotor (AVE) worden overgegaan.
+description: Gebruikend NotificationEvent, kunt u waarschuwingen volgen die van de VideoMotor van de Adobe (AVE) worden overgegaan.
 title: AVE-waarschuwingen bijhouden in uw speler
-exl-id: 49118d7f-ed79-4d22-ba91-8929f97c7256
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '165'
 ht-degree: 0%
@@ -11,7 +10,7 @@ ht-degree: 0%
 
 # AVE-waarschuwingen bijhouden in uw speler{#track-ave-warnings-in-your-player}
 
-Gebruikend NotificationEvent, kunt u waarschuwingen volgen die van de Adobe VideoMotor (AVE) worden overgegaan.
+Gebruikend NotificationEvent, kunt u waarschuwingen volgen die van de VideoMotor van de Adobe (AVE) worden overgegaan.
 
 Uw speler-app kan afspeelwaarschuwingen en fouten bijhouden die door de AVE zijn gegenereerd, zoals failover- of netwerk-downgebeurtenissen die het afspelen niet stoppen en waarvoor niet noodzakelijkerwijs een actie van uw app nodig is. Terwijl sommige AVE-fouten door de TVSDK worden behandeld, `NotificationEvent` fungeert als een algemeen doorloopmechanisme voor AVE-waarschuwingen naar uw toepassingslaag. Na het ontvangen van waarschuwingen van de AVE, zou u kunnen verkiezen om wat actie te voeren, zoals proactief het tegenhouden van playback, het activeren van een rampenplan, het registreren van berichten, etc.
 

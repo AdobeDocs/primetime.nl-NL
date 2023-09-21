@@ -1,8 +1,7 @@
 ---
 description: TVSDK ondersteunt het programmatisch verwijderen en vervangen van inhoud van advertenties in VOD-streams.
 title: Aangepaste tijdbereikbewerkingen
-exl-id: 5480b22a-ecff-4fd8-9ec0-40e4a2e97641
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '248'
 ht-degree: 0%
@@ -17,7 +16,7 @@ De functie Verwijderen en vervangen breidt de functie Aangepaste markeertekens u
 
 <!--<a id="section_D3FE668CAF764DCC912373D5410C932C"></a>-->
 
-De schrapping en de vervanging van de toevoeging worden uitgevoerd met douanemarkeringen die verschillende types van tijdwaaiers in een stroom VOD identificeren: markeren, verwijderen en vervangen. Voor elk aangepast tijdbereik kunt u bijbehorende bewerkingen uitvoeren, zoals het verwijderen of vervangen van advertentie-inhoud.
+Verwijderen en vervangen van toevoegingen worden geïmplementeerd met aangepaste markeringen die verschillende typen tijdbereiken in een VOD-stroom identificeren: markering, verwijderen en vervangen. Voor elk aangepast tijdbereik kunt u bijbehorende bewerkingen uitvoeren, zoals het verwijderen of vervangen van advertentie-inhoud.
 
 Voor het verwijderen en vervangen van advertenties bevat TVSDK het volgende: *aangepaste tijdbereikbewerking* modi:
 

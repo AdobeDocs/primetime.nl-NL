@@ -2,8 +2,7 @@
 title: Uitvoerbeveiligingsbeleid gebruiken
 description: Uitvoerbeveiligingsbeleid gebruiken
 copied-description: true
-exl-id: d91c9181-a6b2-4982-a3ba-57c4b56428eb
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '183'
 ht-degree: 0%
@@ -16,7 +15,7 @@ ht-degree: 0%
 
 Widevine ondersteunt native zowel analoge als digitale uitvoerbeschermingsbeperkingen. Raadpleeg de documentatie van uw Widevine-serviceprovider over hoe u dit beleid aan gegenereerde licenties kunt koppelen.
 
-Als u Expressplay als de Windows-serviceprovider gebruikt, voegt u een beleid voor de bescherming van de digitale uitvoer toe tijdens het genereren van tokens via de hdcpOutputControl-vlag: Toegestane waarden zijn 0, 1, 2 waarbij 0 = HDCP_NONE, 1 = HDCP_V1, 2 = HDCP_V2. Zowel HDCP_V1 als HDCP_V2 dwingen HDCP versie 1.X en 2.X af.
+Als u Expressplay als de Windows-serviceprovider gebruikt, voegt u het beleid voor de bescherming van de digitale uitvoer toe op het moment dat het token wordt gegenereerd via de markering hdcpOutputControl: Toegestane waarden zijn 0, 1, 2 waarbij 0 = HDCP_NONE, 1 = HDCP_V1, 2 = HDCP_V2. Zowel HDCP_V1 als HDCP_V2 dwingen HDCP versie 1.X en 2.X af.
 
 Expressplay biedt momenteel geen ondersteuning voor het koppelen van analoge uitvoerbeperkingen
 

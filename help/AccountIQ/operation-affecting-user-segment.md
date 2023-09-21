@@ -1,8 +1,7 @@
 ---
 title: Een bewerking maken op een gebruikerssegment en het trackeffect
 description: Hoe te om een verrichting tot stand te brengen die gevolgen en spoor het effect op een bepaald segment van gebruikers beïnvloedt.
-exl-id: ab74f857-e178-4120-8f9c-655ec921d096
-source-git-commit: 326f97d058646795cab5d062fa5b980235f7da37
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '1007'
 ht-degree: 0%
@@ -11,16 +10,16 @@ ht-degree: 0%
 
 # Een bewerking maken op een gebruikerssegment {#operation-to-track-segment}
 
-Elke rapportpagina op de IQ van de Rekening heeft a **Nieuwe bewerking maken** optie om u te helpen werkschema&#39;s tot stand brengen om diverse (bulk) acties op abonneerekeningen te automatiseren (en te vereenvoudigen); Definieer regels om een voorbeeld op te geven, acties te definiëren en de effecten van die acties op te nemen en te analyseren. Op de pagina voor het maken van bewerkingen kunt u het voorbeeld definiëren van gebruikersgroepen waarop bewerkingen worden uitgevoerd en de bewerking plannen die op een toekomstige datum moet worden uitgevoerd.
+Elke rapportpagina op de IQ van de Rekening heeft a **Nieuwe bewerking maken** om u te helpen werkschema&#39;s tot stand brengen om diverse (bulk) acties op abonneerekeningen te automatiseren (en te vereenvoudigen); bepaal regels om een steekproef te specificeren, acties te bepalen, en de gevolgen van die acties te registreren en te analyseren. Op de pagina voor het maken van bewerkingen kunt u het voorbeeld definiëren van gebruikersgroepen waarop bewerkingen worden uitgevoerd en de bewerking plannen die op een toekomstige datum moet worden uitgevoerd.
 
 Een bewerking maken:
 
-1. Definieer het segment (cohort) voor analyse op een van de pagina&#39;s met rapporten of dashboards met behulp van de stappen in [Segmenten en tijdkader definiëren](/help/AccountIQ/howto-select-segment-timeframe.md).
+1. Definieer het segment (cohort) voor analyse op een van de pagina&#39;s met rapporten of dashboards met de stappen in [Segmenten en tijdkader definiëren](/help/AccountIQ/howto-select-segment-timeframe.md).
 
 1. Selecteren **Nieuwe bewerking maken** Deze optie is beschikbaar op alle pagina&#39;s met rapporten of dashboards. De **Nieuwe bewerking maken** wordt weergegeven.
 
    ![Pagina om een nieuwe bewerking te maken](assets/create-new-operations.png)
-   *Afbeelding: Pagina om nieuwe bewerking te maken*
+   *Afbeelding: pagina om nieuwe bewerking te maken*
 
 1. Op de **Nieuwe bewerking maken** pagina, vult de gegevens in de formuliervelden in voor:
 
@@ -50,7 +49,7 @@ Geef de nieuwe bewerking een naam in **Handelingsnaam** onder Bewerkingsdetails.
 
 +++Programmer- doelsegment
 
-De **Segment** Hier worden de gebruikers vermeld die door deze verrichting zullen worden geëxploiteerd; of de voorbeeldgroep voor uw bewerking. Het standaardsegment is **segment** u hebt geselecteerd met [segment en tijdframe, deelvenster](/help/AccountIQ/howto-select-segment-timeframe.md) op de pagina met hoofdrapporten of dashboards in stap 1 hierboven.
+De **Segment** Hier wordt gedefinieerd op welke gebruikers deze bewerking zal worden uitgevoerd of welke voorbeeldgroep de bewerking zal uitvoeren. Het standaardsegment is **segment** u hebt geselecteerd met [segment en tijdframe, deelvenster](/help/AccountIQ/howto-select-segment-timeframe.md) op de pagina met hoofdrapporten of dashboards in stap 1 hierboven.
 
 <!--* The first segment entry in the **Segment** section, by default, shows the **segment** you selected in the step 1.
 
@@ -64,7 +63,7 @@ Dit segment bepaalt de abonnees die door de verrichting zullen worden beïnvloed
 
 +++MVPD- Doelsegment
 
-De **Segment** Hier worden de gebruikers vermeld die door deze verrichting zullen worden geëxploiteerd; of de voorbeeldgroep voor uw bewerking. Het standaardsegment is **segment** u hebt geselecteerd met [segment en tijdframe, deelvenster](/help/AccountIQ/howto-select-segment-timeframe.md) op de pagina met hoofdrapporten of dashboards in stap 1 hierboven.
+De **Segment** Hier wordt gedefinieerd op welke gebruikers deze bewerking zal worden uitgevoerd of welke voorbeeldgroep de bewerking zal uitvoeren. Het standaardsegment is **segment** u hebt geselecteerd met [segment en tijdframe, deelvenster](/help/AccountIQ/howto-select-segment-timeframe.md) op de pagina met hoofdrapporten of dashboards in stap 1 hierboven.
 
 <!--* The first segment entry in the **Segment** section, by default, shows the **segment** you selected in the step 1.
 
@@ -81,7 +80,7 @@ Bovendien, kunt u uw doelsegment verfijnen door meer metriek toe te voegen. U ku
 
 ![](assets/additional-segment.gif)
 
-*Afbeelding: Aanvullende segmentering*
+*Afbeelding: extra segmentatie*
 
 Verder, als u de verrichting door nog metrisch voor aantal apparaten toe te voegen verfijnen, dan leest de bijgewerkte probleemverklaring *&quot;creeer een verrichting voor abonneerekeningen van MVPD genoemd &quot;C&quot;die het kanaal &quot;N Sports&quot;bekijken die een het delen score boven 90 hebben en meer dan 5 apparaten gebruiken om inhoud tijdens de evaluatieperiode te bekijken&quot;*.
 
@@ -97,7 +96,7 @@ Segmenttype is de manier waarop een segment gedurende de gehele evaluatieperiode
 
 ![](assets/segment-type.png)
 
-*Afbeelding: Verfijn het aantal segmenten om te werken op het gebruiken van het type van Segment*
+*Figuur: Verfijn het aantal segmenten om op het gebruiken van het type van Segment te werken*
 
 <!--The segment type option allows you to further refine your segment based on the evaluation period (or time).
 
@@ -146,7 +145,7 @@ De **Handeling** bepaalt welke verrichting u op het bepaalde segment zult uitvoe
 
 U kunt twee soorten acties uitvoeren:
 
-* acties met systemen die zijn geïntegreerd met Account IQ; zoals **Gelijktijdige bewaking** <!--[Concurrency Monitoring](https://tve.helpdocsonline.com/concurrency-monitoring-introduction), or Adobe Target-->.
+* handelingen die gebruikmaken van systemen die zijn geïntegreerd met Account IQ, zoals **Gelijktijdige bewaking** <!--[Concurrency Monitoring](https://tve.helpdocsonline.com/concurrency-monitoring-introduction), or Adobe Target-->.
 
 * Handelingen voor het maken en verwerken van workflows die extern zijn voor Account IQ en niet zijn geïntegreerd met Account IQ-systeem. Bijvoorbeeld, een actie voor kanaalprogrammeur &quot;N&quot;om bulkmail naar alle abonnees van MVPD &quot;C&quot;te verzenden.
 
@@ -163,7 +162,7 @@ U kunt de activering voor de bewerking plannen door begin- en einddatums in te s
 >De begindatum en de einddatum hebben een granulariteit het zelfde als granulariteit u voor de evaluatie selecteerde toen het bepalen van segment gebruikend **segment en tijdframe, deelvenster**, in stap 1.
 >
 >
->Dus als u de granulariteit selecteert als Week, dan zijn de begin- en einddatums in termen van week (bijvoorbeeld Week 14); als u granulariteit kiest als Maand, dan zijn de begin en einddata in termen van maanden.
+>Dus als u de granulariteit selecteert als Week, dan zijn de begin- en einddatums in termen van week (bijvoorbeeld Week 14); als u granulariteit selecteert als Maand, dan zijn de begin- en einddatums in termen van maanden.
 
 
 >[!IMPORTANT]
@@ -200,4 +199,4 @@ De details van de opgeslagen bewerking zijn te vinden op de hoofdmap [Bewerkinge
 
 ![](assets/new-operation-created.png)
 
-*Afbeelding: Nieuw gemaakte bewerking wordt vermeld op de hoofdpagina Bewerkingen*
+*Figuur: Nieuw gemaakte verrichting wordt vermeld op de belangrijkste pagina van Verrichtingen*

@@ -1,8 +1,7 @@
 ---
 description: U kunt de zichtbaarheid van gesloten bijschriften bepalen. Wanneer de zichtbaarheid is ingeschakeld, wordt de geselecteerde track weergegeven. Als u wijzigt welke track huidig is, blijft de zichtbaarheidsinstelling ongewijzigd.
 title: Zichtbaarheid van ondertiteling beheren
-exl-id: fac24d97-b83e-4bc4-a824-8a1692509519
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '209'
 ht-degree: 0%
@@ -21,11 +20,11 @@ U kunt de zichtbaarheid van gesloten bijschriften bepalen. Wanneer de zichtbaarh
 >
 >De zichtbaarheidswaarden voor gesloten bijschriften worden gedefinieerd in `ClosedCaptionsVisibility`.
 >
->
-```
+>```
 >public static const HIDDEN:String = hidden; 
 >public static const VISIBLE:String = visible;
 >```
+>
 
 1. Wacht op de `MediaPlayer` ten minste de status PREPARED hebben (zie [Wacht op een geldige status](../../t-psdk-dhls-1.4-configure/c-psdk-dhls-1.4-ui-configure/t-psdk-dhls-1.4-ui-state-prepared-wait-for.md)).
 1. Gebruik de methode getter in `MediaPlayer`, die een zichtbaarheidswaarde retourneert.
@@ -42,7 +41,7 @@ U kunt de zichtbaarheid van gesloten bijschriften bepalen. Wanneer de zichtbaarh
    public function set ccVisibility(value:String):void
    ```
 
-1. Definieer een vervolgkeuzelijst.
+1. Een vervolgkeuzelijst definiëren.
 
    ```
    <s:DropDownList id="ccTracksList" width="85" 

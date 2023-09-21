@@ -1,8 +1,7 @@
 ---
 title: Opmerkingen bij de release PTAI 20.12.1
 description: In de PTAI-release wordt beschreven wat nieuw of gewijzigd is, wat de opgeloste en bekende problemen zijn in Primetime Ad Insertion in 2020.
-exl-id: 47e36e42-b6a0-408c-93da-f63c929396b5
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '1081'
 ht-degree: 0%
@@ -66,9 +65,9 @@ Neem voor meer informatie of om deze functie in te schakelen contact op met uw m
 
 * Bied ondersteuning voor het beperken van de totale tijd voor advertentie-oplossing, als providers te lang duren om te reageren. Om het beperken toe te laten, plaats de laarzentrekker API parameter `ptadtimeout` naar een waarde in milliseconden.
 
-   >[!NOTE]
-   >
-   >Deze time-out is alleen van toepassing op advertentieverzoeken en niet op creatieve verzoeken.
+  >[!NOTE]
+  >
+  >Deze time-out is alleen van toepassing op advertentieverzoeken en niet op creatieve verzoeken.
 
 ### Versie 20.9.1
 
@@ -114,7 +113,7 @@ Onderhoudsupdates.
 
 **Verbeteringen**
 
-Verbeterde streamsynchronisatie voor videoclips die precisie in milliseconden vereisen. Contact opnemen met de Adobe-ondersteuning om millisecondenprecisie in te schakelen voor `#EXT-X-PROGRAM-DATE-TIME tags`.
+Verbeterde streamsynchronisatie voor videoclips die precisie in milliseconden vereisen. Neem contact op met de ondersteuning van Adoben om millisecondenprecisie in te schakelen voor `#EXT-X-PROGRAM-DATE-TIME tags`.
 
 ### Versie 20.6.1
 
@@ -122,17 +121,17 @@ Verbeterde streamsynchronisatie voor videoclips die precisie in milliseconden ve
 
 **Nieuwe functies**
 
-Neem contact op met de ondersteuning van Adobe om de volgende nieuwe functies in te schakelen via de serverconfiguratie:
+Neem contact op met de ondersteuning van de Adobe om de volgende nieuwe functies in te schakelen via de serverconfiguratie:
 
-* Manifest Manipulation: HLS-segment en bron-URL&#39;s kunnen nu worden getransformeerd tussen HTTP en HTTPS om de prestaties te verbeteren door TLS-handtekeningen op back-end verzoeken te verminderen. Het kan ook worden gebruikt om fragmenten van advertentie/inhoud op zelfde CDNs te verenigen.
+* Manifest Manipulation: Het segment van HLS en middel URLs kunnen nu tussen HTTP en HTTPS worden omgezet om prestaties te verbeteren door de handtekeningen van TLS op achterste-eindverzoeken te verminderen. Het kan ook worden gebruikt om fragmenten van advertentie/inhoud op zelfde CDNs te verenigen.
 
-* VOD in lange vorm: Verbeterde API&#39;s om sessies in leven te houden met VOD-middelen van lange formulieren.
+* VOD in lange vorm: verbeterde API&#39;s om de sessie in leven te houden met VOD-middelen in lange vorm.
 
 **Bugfixes**
 
 * Probleem verholpen waarbij WebVTT-fragmenten altijd werden aangevraagd onder http-protocol, ongeacht het oorspronkelijke aangevraagde protocol.
 
-* Probleem verholpen waarbij EXT-X-DISCONTINUITY-tags van de bovenkant van de afspeellijst werden verwijderd bij het terugschakelen van advertenties naar inhoud. Neem contact op met de Adobe-ondersteuning om deze oplossing in te schakelen.
+* Probleem verholpen waarbij EXT-X-DISCONTINUITY-tags van de bovenkant van de afspeellijst werden verwijderd bij het terugschakelen van advertenties naar inhoud. Neem contact op met de ondersteuning van de Adobe om deze oplossing in te schakelen.
 
 ### Versie 20.5.1
 
@@ -176,7 +175,7 @@ Neem contact op met de ondersteuning van Adobe om de volgende nieuwe functies in
 
 * Prestatieverbeteringen:
 
-   * Extra cacheondersteuning voor zowel master manifests als media m3u8. Deze manifests antwoorden nu aan geheime voorgeheugen-controle: de openbare en Max-Leeftijd kopballen, die vaak videobeginprestaties kunnen verbeteren.
+   * Extra cacheondersteuning voor zowel master-/media m3u8-manifests. Deze manifests beantwoorden nu aan geheime voorgeheugen-controle: openbare en maximum-leeftijdskopballen, die vaak videobeginprestaties kunnen verbeteren.
 
    * Toegevoegde ondersteuning voor het forceren van https-creatieven om op http te worden opgehaald, wat ook de prestaties van het starten van de video kan verbeteren.
 
@@ -195,11 +194,11 @@ Neem contact op met de ondersteuning van Adobe om de volgende nieuwe functies in
 
 * **VMAP met FER-ondersteuning voor nbc CueFormat**
 
-   cues van FER-stream omzetten in FW-tijdlijnoverschrijvingsparams, wanneer `ptcueformat=nbc` wordt gebruikt en de stream is een VOD-stream met in-manifest aanwijzingen en kant-en-klare advertenties.
+  cues van FER-stream omzetten in FW-tijdlijnoverschrijvingsparams, wanneer `ptcueformat=nbc` wordt gebruikt en de stream is een VOD-stream met in-manifest aanwijzingen en kant-en-klare advertenties.
 
 * Maak user-agent gebied in de Kopbal van HTTP alvorens aan derdeleveranciers/CDN door:sturen.
 
-* Filter controle-/niet-afdrukbare tekens (ASCII-code &lt; 32) uit HTTP-headers van de user-agent voordat u deze verzendt naar Auditude en andere add-providers, CDN&#39;s. Auditude Ad-Call gebruikt om voor dergelijke ongeldige kopballen te ontbreken.
+* Filter controle-/niet-afdrukbare tekens (ASCII-code &lt; 32) uit HTTP-headers van de user-agent voordat deze naar Auditude en andere add-providers, CDN&#39;s, worden verzonden. De Auditude Ad-Vraag die wordt gebruikt om voor dergelijke ongeldige kopballen te ontbreken.
 
 * Verwijder oude V1-objecten van NetStorage-groepen om het aantal objecten binnen de veilige grenzen van Akamai te houden.
 
@@ -231,7 +230,7 @@ Wanneer de oplossing aan een gemelde kwestie wordt geassocieerd, wordt een verwi
 
 * `WebVTT` fragmenten werden altijd aangevraagd onder het http-protocol, ongeacht het oorspronkelijke aangevraagde protocol.
 
-* `EXT-X-DISCONTINUITY` -tags worden boven aan de afspeellijst verwijderd wanneer u terugschakelt van advertenties naar inhoud. Neem contact op met de Adobe-ondersteuning om deze oplossing in te schakelen.
+* `EXT-X-DISCONTINUITY` -tags worden boven aan de afspeellijst verwijderd wanneer u terugschakelt van advertenties naar inhoud. Neem contact op met de ondersteuning van de Adobe om deze oplossing in te schakelen.
 
 **PTAI 20.5.1**
 

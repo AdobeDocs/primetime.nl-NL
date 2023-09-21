@@ -2,8 +2,7 @@
 title: Aanvragen voor domeinregistratie afhandelen
 description: Aanvragen voor domeinregistratie afhandelen
 copied-description: true
-exl-id: f846e154-e90c-4e45-aafd-f6e22dac3339
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '553'
 ht-degree: 0%
@@ -12,13 +11,13 @@ ht-degree: 0%
 
 # Aanvragen voor domeinregistratie afhandelen{#handling-domain-registration-requests}
 
-Als de DRM-metagegevens aangeven dat domeinregistratie nodig is om de inhoud af te spelen, moet de clienttoepassing de ActionScript-API van DRMManager.addToDeviceGroup() of joinLicenseDomain() iOS-API aanroepen. Als de client zich nog niet bij de opgegeven domeinserver heeft geregistreerd (of als de toepassing opnieuw moet deelnemen), wordt een domeinregistratieverzoek verzonden. De domeinserver bepaalt of de cliënt wordt toegelaten om zich bij een domein aan te sluiten en geeft één of meerdere domeingeloofsbrieven aan de cliënt uit.
+Als de DRM-metagegevens aangeven dat domeinregistratie nodig is om de inhoud af te spelen, moet de clienttoepassing de ActionScript-API van DRMManager.addToDeviceGroup() of de joinLicenseDomain()-API aanroepen. Als de client zich nog niet bij de opgegeven domeinserver heeft geregistreerd (of als de toepassing opnieuw moet deelnemen), wordt een domeinregistratieverzoek verzonden. De domeinserver bepaalt of de cliënt wordt toegelaten om zich bij een domein aan te sluiten en geeft één of meerdere domeingeloofsbrieven aan de cliënt uit.
 
 * De klasse request handler is `com.adobe.flashaccess.sdk.protocol.domain.DomainRegistrationHandler`
 * De klasse request message is `com.adobe.flashaccess.sdk.protocol.domain.DomainRegistrationRequestMessage`
-* Als zowel de client als server protocol versie 5 ondersteunen, is de aanvraag-URL &quot;Domain Server URL in metadata: + &quot;/flashaccess/domain/v4&quot;. Anders is de aanvraag-URL de domeinserver-URL in metagegevens&quot; + &quot;/flashaccess/domain/v3&quot;
+* Als zowel de client als de server protocol versie 5 ondersteunen, is de aanvraag-URL &quot;Domain Server URL in metadata: + &quot;/flashaccess/domain/v4&quot;. Anders is de aanvraag-URL de domeinserver-URL in metagegevens&quot; + &quot;/flashaccess/domain/v3&quot;
 
-Bij het initialiseren van het dialoogvenster `DomainRegistrationHandler`, moet de URL van de domeinserver worden opgegeven. Deze URL wordt opgenomen in de domeintokens die door de handler worden uitgegeven om aan te geven welke domeinserver het token heeft uitgegeven. De URL moet overeenkomen met de URL van de domeinserver die is opgegeven in elk beleid waarvoor domeinregistratie bij de server is vereist.
+Bij het initialiseren van de `DomainRegistrationHandler`, moet de URL van de domeinserver worden opgegeven. Deze URL wordt opgenomen in de domeintokens die door de handler worden uitgegeven om aan te geven welke domeinserver het token heeft uitgegeven. De URL moet overeenkomen met de URL van de domeinserver die is opgegeven in elk beleid waarvoor domeinregistratie bij de server is vereist.
 
 Om te bepalen of de cliënt zich bij het domein mag aansluiten, kan de server de machine en gebruikersinformatie in het verzoek onderzoeken. Zie [Apparaatid&#39;s gebruiken](../../aaxs-protecting-content/content-implementing-the-license-server/content-processing-aaxs-requests/content-using-machine-ids.md) voor informatie over hoe te om machines te identificeren en te tellen die tot het domein toetreden. De server kan ook bepalen welk domein de client mag verbinden. Merk op dat een cliënt slechts lid van één domein per domeinserver URL kan zijn. Als de computer al een domeintoken heeft voor de URL van deze domeinserver, bevat de domeinregistratieaanvraag de huidige domeinnaam ( `getRequestDomainName()`). Als u een aanvraag opnieuw wilt indienen, moet de domeinserver de huidige set domeinreferenties voor dit domein retourneren of een fout retourneren (de domeinserver retourneert mogelijk niet de domeinreferenties voor een ander domein).
 

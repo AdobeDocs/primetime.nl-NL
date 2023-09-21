@@ -2,8 +2,7 @@
 description: Voor Digital Video Ad Serving Template (VAST)-advertenties (of creatieven) waarvoor de fallback-regel is ingeschakeld, behandelt TVSDK een advertentie met een ongeldig mediatype als een lege advertentie en probeert het alternatieve advertenties te gebruiken. U kunt bepaalde aspecten van fallback-gedrag configureren.
 keywords: lengte nul en;lege advertentie
 title: Extra fallback voor VAST- en VMAP-advertenties
-exl-id: 1fc04cac-e83f-4c1f-bf7b-1cbcb2135d53
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '290'
 ht-degree: 0%

@@ -1,8 +1,7 @@
 ---
-description: U kunt om het even welke stromen van een op TVSDK-Gebaseerde afzenderapp werpen en de stroom hebben teruggespeeld op Chromecast met Browser TVSDK.
+description: U kunt om het even welke stromen van een op TVSDK-Gebaseerde afzenderapp gieten en de stroom hebben teruggespeeld op Chromecast met Browser TVSDK.
 title: Google Cast-app voor TVSDK van browser
-exl-id: 71077467-8040-4f04-a43b-cc963701c426
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '410'
 ht-degree: 0%
@@ -11,7 +10,7 @@ ht-degree: 0%
 
 # Google Cast-app voor TVSDK van browser{#google-cast-app-for-browser-tvsdk}
 
-U kunt om het even welke stromen van een op TVSDK-Gebaseerde afzenderapp werpen en de stroom hebben teruggespeeld op Chromecast met Browser TVSDK.
+U kunt om het even welke stromen van een op TVSDK-Gebaseerde afzenderapp gieten en de stroom hebben teruggespeeld op Chromecast met Browser TVSDK.
 
 <!--<a id="section_87CE5D6D46F0439EB6E63A742D6DD9C8"></a>-->
 
@@ -19,12 +18,12 @@ Er zijn twee componenten van een app voor Cast:
 
 * De afzender-app, die fungeert als de afstandsbediening.
 
-   Toepassingen van de afzender omvatten smartphones, pc&#39;s enzovoort. De app kan worden ontwikkeld met behulp van native SDK&#39;s voor iOS, Android en Chrome.
+  Toepassingen van de afzender omvatten smartphones, pc&#39;s enzovoort. De app kan worden ontwikkeld met behulp van native SDK&#39;s voor iOS, Android en Chrome.
 * De ontvanger-app, die op Chromecast wordt uitgevoerd en de inhoud afspeelt.
 
-   >[!IMPORTANT]
-   >
-   >Deze app kan alleen een HTML5-app zijn.
+  >[!IMPORTANT]
+  >
+  >Deze app kan alleen een HTML5-app zijn.
 
 De afzender en de ontvanger communiceren door de Gegoten SDKs te gebruiken om berichten over te gaan.
 
@@ -67,18 +66,18 @@ Om een verbinding tot stand te brengen, moeten de afzender en de ontvanger de vo
 * De afzender moet de documentatie voor het platform op [Ontwikkeling van afzender](https://developers.google.com/cast/docs/sender_apps).
 * De ontvanger gebruikt de ontvanger APIs van de Gietvorm om een verbinding met de afzender te vestigen app. Bijvoorbeeld:
 
-   ```js
-   window.castReceiverManager = cast.receiver.CastReceiverManager.getInstance(); 
-   
-   window.castReceiverManager.onReady = function (event) { /*handle event*/ }; 
-   window.castReceiverManager.onSenderConnected = function (event) { /*handle event*/ }; 
-   window.castReceiverManager.onSenderDisconnected = function (event) { /*handle event*/ }; 
-   
-   var customMessageBus = window.castReceiverManager.getCastMessageBus(MSG_NAMESPACE); 
-   customMessageBus.onMessage = function (event) { /*handle messages*/ }; 
-   
-   window.castReceiverManager.start(); 
-   ```
+  ```js
+  window.castReceiverManager = cast.receiver.CastReceiverManager.getInstance(); 
+  
+  window.castReceiverManager.onReady = function (event) { /*handle event*/ }; 
+  window.castReceiverManager.onSenderConnected = function (event) { /*handle event*/ }; 
+  window.castReceiverManager.onSenderDisconnected = function (event) { /*handle event*/ }; 
+  
+  var customMessageBus = window.castReceiverManager.getCastMessageBus(MSG_NAMESPACE); 
+  customMessageBus.onMessage = function (event) { /*handle messages*/ }; 
+  
+  window.castReceiverManager.start(); 
+  ```
 
 ## Berichtverwerking {#section_3E4814546F5946C9B3E7A1AE384B4FF8}
 

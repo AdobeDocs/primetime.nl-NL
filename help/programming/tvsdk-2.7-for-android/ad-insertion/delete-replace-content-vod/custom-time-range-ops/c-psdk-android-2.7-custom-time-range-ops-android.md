@@ -1,8 +1,7 @@
 ---
 description: De klasse CustomRangeMetadata identificeert verschillende typen tijdbereiken in een VOD-streammarkering, -verwijderen en -vervangen. Voor elk van deze types van douanetijdwaaier, kunt u overeenkomstige verrichtingen uitvoeren, met inbegrip van het schrappen en het vervangen van advertentie inhoud.
 title: Aangepaste tijdbereikbewerkingen
-exl-id: 52d2bbf6-107d-4e38-93ea-a29c9dd8c81e
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '319'
 ht-degree: 0%
@@ -27,8 +26,8 @@ TVSDK biedt de volgende opties ter ondersteuning van deze bewerkingen met aangep
 
 * Meerdere oplossingen voor inhoud
 
-   Een stream kan meerdere inhoudsoplossers hebben op basis van de advertentiemodus en de metagegevens van de advertentie. Het gedrag verandert met verschillende combinaties van advertentiemodi en ad meta-gegevens.
+  Een stream kan meerdere inhoudsoplossers hebben op basis van de advertentiemodus en de metagegevens van de advertentie. Het gedrag verandert met verschillende combinaties van advertentiemodi en ad meta-gegevens.
 * Meerdere initiële mogelijkheden met `CustomMarkerOpportunityGenerator`.
 * een nieuwe ad-signaalmodus, `CUSTOM_RANGES`.
 
-   Advertenties worden geplaatst op basis van de gegevens van het Tijdbereik van een externe bron, zoals een JSON-bestand.
+  Advertenties worden geplaatst op basis van de gegevens van het Tijdbereik van een externe bron, zoals een JSON-bestand.

@@ -1,8 +1,7 @@
 ---
 description: TVSDK verzendt ad-playbackgebeurtenissen als reactie op ad-gerelateerde bewerkingen, zoals wanneer een advertentie wordt afgespeeld.
 title: Afspeelgebeurtenissen toevoegen
-exl-id: 61e7c9ec-20ed-4221-8ae7-b5d43adb4ce4
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '315'
 ht-degree: 0%
@@ -17,7 +16,7 @@ Registreer listeners bij de `MediaPlayer` -object voor de volgende gebeurtenisse
 
 >[!TIP]
 >
->Wanneer advertenties worden ingevoegd in of verwijderd uit de media, verzendt TVSDK de gebeurtenis TimelineEvent.[TIMELINE_UPDATED](https://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls_1.4/com/adobe/mediacore/events/TimelineEvent.html#TIMELINE_UPDATED).
+>Wanneer advertenties worden ingevoegd in of verwijderd uit de media, verzendt TVSDK de gebeurtenis TimelineEvent die wordt afgespeeld.[TIMELINE_UPDATED](https://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls_1.4/com/adobe/mediacore/events/TimelineEvent.html#TIMELINE_UPDATED).
 
 | Gebeurtenis | Betekenis |
 |---|---|

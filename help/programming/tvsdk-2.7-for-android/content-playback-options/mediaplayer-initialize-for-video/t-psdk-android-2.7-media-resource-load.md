@@ -1,8 +1,7 @@
 ---
-description: Laad een bron door rechtstreeks een MediaResource te instantiëren en de video-inhoud te laden die moet worden afgespeeld. Dit is een manier om een mediabrondel te laden.
+description: Laad een bron door rechtstreeks een MediaResource te instantiëren en de te spelen video-inhoud te laden. Dit is een manier om een mediabrondel te laden.
 title: Een mediabron laden in de mediaspeler
-exl-id: ee11876b-c752-46cc-8e65-8c1608a41362
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '188'
 ht-degree: 0%
@@ -11,11 +10,11 @@ ht-degree: 0%
 
 # Een mediabron laden in de mediaspeler {#load-a-media-resource-in-the-media-player}
 
-Laad een bron door rechtstreeks een MediaResource te instantiëren en de video-inhoud te laden die moet worden afgespeeld. Dit is een manier om een mediabrondel te laden.
+Laad een bron door rechtstreeks een MediaResource te instantiëren en de te spelen video-inhoud te laden. Dit is een manier om een mediabrondel te laden.
 
 1. Stel de mediaspeler in om de nieuwe bron af te spelen.
 
-   Vervang het momenteel afspeelbare item door het aanroepen van `MediaPlayer.replaceCurrentResource()` en bestaande `MediaResource` -instantie.
+   Vervang het momenteel afspeelbare item door `MediaPlayer.replaceCurrentResource()` en het doorgeven van bestaande `MediaResource` -instantie.
 
    Hierdoor wordt het proces voor het laden van bronnen gestart.
 

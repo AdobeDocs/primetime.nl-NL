@@ -2,8 +2,7 @@
 title: Adobe Primetime DRM implementeren
 description: Adobe Primetime DRM implementeren
 copied-description: true
-exl-id: 64a96d70-502c-48b8-9f43-59f4001a7ab6
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '770'
 ht-degree: 0%
@@ -17,13 +16,13 @@ Een belangrijk voordeel voor Adobe Primetime DRM SDK is dat u deze kunt installe
 De stappen op hoog niveau om Primetime DRM te implementeren zijn:
 
 1. Installeer en configureer Primetime DRM SDK.
-1. Digitale certificaten verkrijgen van Adobe.
+1. Verkrijg digitale certificaten van Adobe.
 1. Maak een licentieserver met de SDK of implementeer Primetime DRM Server voor beveiligde streaming.
-1. Maak inhoud verpakken en beleidsbeheertools om inhoud te verpakken, gebruik de meegeleverde gereedschappen voor het voorbereiden van inhoud of geef een licentie voor een van de Adobe HTTP Dynamic Streaming-pakketten.
+1. Maak inhoud verpakken en beleidsbeheertools om inhoud te verpakken, gebruik de meegeleverde gereedschappen voor het voorbereiden van inhoud of geef een licentie voor een van de HTTP Dynamic Streaming-pakketten van de Adobe.
 1. Bepaal gebruiksregels voor uw inhoud en creeer beleid ter ondersteuning van die regels.
 1. Verpak uw inhoud met de tools voor verpakking en beleidsbeheer.
 1. Ontwikkel videotoepassingen waarmee consumenten uw beschermde inhoud kunnen bekijken gebruikend Flash Player of Adobe AIR, of gebruik een gevestigde OVP (Online Video Platform) die Primetime DRM steunt.
-1. Implementeer een SWF-bestand voor gebruik met Flash Player naar uw website of post het Adobe AIR-installatieprogramma voor downloaden.
+1. Implementeer een SWF-bestand voor gebruik met Flash Player op uw website of post het Adobe AIR-installatieprogramma voor downloaden.
 
 Deze stappen worden in de volgende secties uitgebreid, met verwijzingen naar andere documenten die extra informatie bevatten.
 
@@ -41,7 +40,7 @@ Met Adobe Primetime DRM SDK moet u een licentieserver maken. Wanneer inhoud word
 
 Wanneer u een licentieserver implementeert, moet u de benodigde digitale certificaten verkrijgen van Adobe. Raadpleeg het document voor primetime DRM-certificaatinschrijving voor gedetailleerde instructies over het aanvragen van certificaten.
 
-Meer informatie over het uitvoeren van een Server van de Vergunning, en het verkrijgen van digitale certificaten, zie **Adobe Primetime DRM SDK gebruiken voor het beveiligen van inhoud.**
+Meer informatie over het uitvoeren van een Server van de Vergunning, en het verkrijgen van digitale certificaten, zie **Adobe Primetime DRM SDK gebruiken om inhoud te beschermen.**
 
 ## Inhoud verpakken en beleidsbeheertools maken{#create-content-packaging-and-policy-management-tools}
 
@@ -49,7 +48,7 @@ Met de Adobe Primetime DRM SDK kunt u verpakken van inhoud en beleidsbeheertools
 
 De Primetime DRM SDK bevat een referentie-implementatie ( [!DNL AdobePackager.jar]) met voorbeelden van gereedschappen voor het verpakken van inhoud en beleidsbeheer ( [!DNL AdobePolicyManager.jar]).
 
-Ga voor meer informatie over het maken van verpakken van inhoud en beleidsbeheertools naar **De Adobe Primetime DRM SDK gebruiken voor het beschermen van inhoud.**
+Ga voor meer informatie over het maken van verpakken van inhoud en beleidsbeheertools naar **De Adobe Primetime DRM SDK gebruiken voor het beveiligen van inhoud.**
 
 ## Beleid maken en inhoud verpakken {#create-policies-and-package-content}
 
@@ -66,6 +65,6 @@ Ga voor meer informatie over het verpakken van inhoud naar *Inhoud beveiligen*. 
 
 ## Toepassingen ontwikkelen voor het afspelen van video {#develop-applications-for-video-playback}
 
-Als u consumenten toegang wilt geven tot inhoud en deze wilt bekijken, ontwikkelt u een videoafspeeltoepassing met Flash Player of Adobe AIR. Nadat u een videoafspeeltoepassing hebt ontwikkeld, moet u deze implementeren voor consumenten. Als u een toepassing ontwikkelt met behulp van Flash Player, host u deze op de website van uw organisatie. Als u een toepassing ontwikkelt met Adobe® AIR®, plaatst u het installatieprogramma van de AIR-toepassing zodat consumenten de toepassing kunnen downloaden en installeren op hun computer.
+Als u consumenten toegang wilt geven tot inhoud en deze wilt bekijken, ontwikkelt u een videoafspeeltoepassing met Flash Player of Adobe AIR. Nadat u een videoafspeeltoepassing hebt ontwikkeld, moet u deze implementeren voor consumenten. Als u een toepassing ontwikkelt met Flash Player, host u deze op de website van uw organisatie. Als u een toepassing ontwikkelt met Adobe® AIR®, plaatst u het installatieprogramma van de AIR-toepassing zodat consumenten de toepassing kunnen downloaden en installeren op hun computer.
 
-Zie het hoofdstuk &#39;Werken met video&#39; in het gedeelte over het ontwikkelen van aangepaste toepassingen voor het afspelen van video&#39;s voor gebruik met Adobe Primetime DRM voor meer informatie over het ontwikkelen van aangepaste toepassingen voor het afspelen van video&#39;s. [ActionScript 3.0 Handleiding voor ontwikkelaars](https://help.adobe.com/en_US/as3/dev/WS9936fa0d5984e93b3f4f38ec1272a447844-8000.html)de [Adobe Video Technology Center](https://www.adobe.com/devnet/video/)en het Open Source Media Framework.
+Zie het hoofdstuk &#39;Werken met video&#39; in het gedeelte over het ontwikkelen van aangepaste toepassingen voor het afspelen van video&#39;s voor gebruik met Adobe Primetime DRM voor meer informatie over het ontwikkelen van aangepaste toepassingen voor het afspelen van video [ActionScript 3.0 Handleiding voor ontwikkelaars](https://help.adobe.com/en_US/as3/dev/WS9936fa0d5984e93b3f4f38ec1272a447844-8000.html)de [Adobe Video Technology Center](https://www.adobe.com/devnet/video/)en het Open Source Media Framework.

@@ -1,8 +1,7 @@
 ---
 description: U kunt een Browser-Compatibele speler tot stand brengen gebruikend JS dossiers die door Browser TVSDK worden verstrekt.
 title: Browsercompatibele speler
-exl-id: 3e9751d8-7a7e-465b-8d46-d07e4ccb1f5b
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '133'
 ht-degree: 0%
@@ -13,9 +12,9 @@ ht-degree: 0%
 
 U kunt een Browser-Compatibele speler tot stand brengen gebruikend JS dossiers die door Browser TVSDK worden verstrekt.
 
-Browser TVSDK biedt twee JS-bestanden die compatibel zijn met Browser. Een is bedoeld voor gebruik met de AdobePSDK-module. Dit is voor het ontwikkelen van apps zonder het UI-Kader. andere is voor gebruik met de module UI-Kader; het keert PTP namespace terug u voor het schrijven apps gebruikend UI-Kader gebruikt.
+Browser TVSDK biedt twee JS-bestanden die compatibel zijn met Browser. De ene is bedoeld voor gebruik met de AdobePSDK-module; dit is voor het ontwikkelen van toepassingen zonder het UI-Framework. Andere is voor gebruik met de module UI-Kader; het keert PTP namespace terug u voor het schrijven van apps gebruikend UI-Kader gebruikt.
 
-Om met Browser te beginnen, stel de volgende opstellingsbevelen in werking om te creëren [!DNL final.js] bestanden (uw Browserbundelbestand) in het dialoogvenster [!DNL example] mappen onder [!DNL samples/browerify/reference] en [!DNL samples/browerify/ui-framework]:
+Om met Browser te beginnen, stel de volgende opstellingsbevelen in werking om te creëren [!DNL final.js] bestanden (uw Browserbundelbestand) in het dialoogvenster [!DNL example] directory&#39;s onder [!DNL samples/browerify/reference] en [!DNL samples/browerify/ui-framework]:
 
 1. Navigeren naar [!DNL samples/browserify/reference/build].
 1. Voer de volgende opdrachten uit:

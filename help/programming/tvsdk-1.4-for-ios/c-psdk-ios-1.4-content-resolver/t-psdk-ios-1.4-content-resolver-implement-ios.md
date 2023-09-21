@@ -1,8 +1,7 @@
 ---
 description: U kunt uw oplosmiddelen uitvoeren die op de standaardoplossers worden gebaseerd.
 title: Een aangepaste opportuniteit/contentoplosser implementeren
-exl-id: f2a8512f-9f6c-4fd9-8694-32132cddc7d2
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '328'
 ht-degree: 0%
@@ -23,7 +22,7 @@ U kunt uw oplosmiddelen uitvoeren die op de standaardoplossers worden gebaseerd.
 
    >[!TIP]
    >
-   >`PTContentResolver` wordt via `PTDefaultMediaPlayerClientFactory` klasse. Klanten kunnen een nieuwe inhoudoplosser registreren door het dialoogvenster `PTContentResolver` abstracte klasse. Standaard wordt, tenzij dit specifiek wordt verwijderd, een `PTDefaultAdContentResolver` is geregistreerd in het `PTDefaultMediaPlayerClientFactory`.
+   >`PTContentResolver` wordt via de `PTDefaultMediaPlayerClientFactory` klasse. Klanten kunnen een nieuwe inhoudoplosser registreren door het dialoogvenster `PTContentResolver` abstracte klasse. Standaard wordt, tenzij dit specifiek wordt verwijderd, een `PTDefaultAdContentResolver` is geregistreerd in het `PTDefaultMediaPlayerClientFactory`.
 
    ```
    @protocol PTContentResolver <NSObject> 
@@ -53,7 +52,7 @@ U kunt uw oplosmiddelen uitvoeren die op de standaardoplossers worden gebaseerd.
 
 1. Implementeren `shouldResolveOpportunity` en retour `YES` of zij de ontvangen `PTPlacementOpportunity`.
 1. Implementeren `resolvePlacementOpportunity`, waarmee de alternatieve inhoud of advertenties wordt geladen.
-1. Nadat de advertenties zijn geladen, bereidt u een `PTTimeline` met de informatie over de inhoud die moet worden ingevoegd.
+1. Nadat de advertenties zijn geladen, maakt u een `PTTimeline` met de informatie over de inhoud die moet worden ingevoegd.
 
        Hier volgt nuttige informatie over tijdlijnen:
    
@@ -63,11 +62,12 @@ U kunt uw oplosmiddelen uitvoeren die op de standaardoplossers worden gebaseerd.
 
          * A `CMTimeRange` met de begintijd en de duur van het einde.
 
-            Dit wordt ingesteld als de eigenschap range van `PTAdBreak`.
+           Dit wordt ingesteld als de eigenschap range van `PTAdBreak`.
 
          * `NSArray` van `PTAd`s.
 
-            Dit is ingesteld als de eigenschap ads van `PTAdBreak`.
+           Dit is ingesteld als de eigenschap ads van `PTAdBreak`.
+
    * A `PTAd` staat voor de advertentie, en elk `PTAd` heeft het volgende:
 
       * A `PTAdHLSAsset` ingesteld als de primaire eigenschap asset van de advertentie.
@@ -116,7 +116,7 @@ U kunt uw oplosmiddelen uitvoeren die op de standaardoplossers worden gebaseerd.
    [[PTDefaultMediaPlayerFactory defaultFactory] registerContentResolver:[contentResolver autorelease]];
    ```
 
-1. Als u een aangepaste opportuniteitsoplosser hebt geïmplementeerd, registreert u deze in de standaardfabriek voor de mediaspeler.
+1. Als u een aangepaste opportuniteitsoplosser hebt geïmplementeerd, registreert u deze bij de standaardmediaspeler.
 
    >[!TIP]
    >
@@ -134,6 +134,6 @@ U kunt uw oplosmiddelen uitvoeren die op de standaardoplossers worden gebaseerd.
               registerOpportunityResolver:[opportunityResolver autorelease]];
    ```
 
-Wanneer de speler de inhoud laadt en wordt bepaald dat deze van het type VOD of LIVE is, vindt een van de volgende situaties plaats: >
+Wanneer de speler de inhoud laadt en wordt bepaald dat deze van het type VOD of LIVE is, vindt een van de volgende gebeurtenissen plaats: >
 * Als de inhoud VOD is, wordt de aangepaste inhoudoplosser gebruikt om de tijdlijn van de advertentie van de volledige video te krijgen.
 * Als de inhoud LIVE is, wordt de oplosser van de douaneinhoud geroepen telkens als een plaatsingskans (richtsnoerpunt) in de inhoud wordt ontdekt.

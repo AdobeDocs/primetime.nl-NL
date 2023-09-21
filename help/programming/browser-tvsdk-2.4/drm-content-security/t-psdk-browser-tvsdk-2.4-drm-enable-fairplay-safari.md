@@ -1,8 +1,7 @@
 ---
 description: U kunt FairPlay voor Safari inschakelen wanneer u werkt met Primetime DRM Cloud, aangedreven door ExpressPlay.
 title: FairPlay inschakelen voor Safari HLS
-exl-id: 761c7cb8-3068-44c9-8ceb-6411c509c0a7
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '418'
 ht-degree: 0%
@@ -17,10 +16,10 @@ Zorg ervoor dat u het volgende hebt:
 
 * Een werkende voorbeeldtoepassing waarmee HLS-video kan worden afgespeeld.
 
-   De voorbeeldapp moet met de via Primetime DRM, met ExpressPlay, afgehandelde licenties beveiligde inhoud kunnen afspelen die door FairPlay is beveiligd.
+  De voorbeeldapp moet met de via Primetime DRM, met ExpressPlay, afgehandelde licenties beveiligde inhoud kunnen afspelen die door FairPlay is beveiligd.
 * Voorbeeld-HLS-inhoud (een M3U8-manifest) verpakt met FairPlay-bescherming.
 
-Als u de informatie hier volledig wilt gebruiken, leert u meer over Multi-DRM-workflows vanaf de subsectie [Referentieserver: Voorbeeld ExpressPlay Entitlement Server (SES)](https://helpx.adobe.com/content/dam/help/en/primetime/drm/drm_multi_drm_workflows.pdf) in de handleiding voor multi-DRM-workflows. Lees eerst dat de documentatie over het instellen van uw machtiging en sleutelserver veel nuttiger is. De onderstaande informatie is ook nuttig.
+Als u de informatie hier volledig wilt gebruiken, leert u meer over Multi-DRM-workflows vanaf de subsectie [Referentieserver: Sample ExpressPlay Entitlement Server (SES)](https://helpx.adobe.com/content/dam/help/en/primetime/drm/drm_multi_drm_workflows.pdf) in de handleiding voor multi-DRM-workflows. Lees eerst dat de documentatie over het instellen van uw machtiging en sleutelserver veel nuttiger is. De onderstaande informatie is ook nuttig.
 U hebt de volgende items nodig:
 
 * Uw *productie* Customer Authenticator van ExpressPlay
@@ -44,22 +43,22 @@ Zo wijzigt u uw FairPlay/Safari-app:
    * Gebruik uw eigen ExpressPlay Production-klantverificator.
    * Dezelfde inhoudssleutel gebruiken en `iv` in deze aanvraag die is gebruikt om de inhoud te verpakken die u wilt afspelen.
 
-      Voer de volgende opdracht uit vanuit de shell en vervang uw ExpressPlay-klantenauthenticator om de licentietoken-URL voor de voorbeeldinhoud te verkrijgen:
+     Voer de volgende opdracht uit vanuit de shell en vervang uw ExpressPlay-klantenauthenticator om de licentietoken-URL voor de voorbeeldinhoud te verkrijgen:
 
-      ```
-      curl -v "https://fp-gen.service.expressplay.com/hms/fp/token? 
-           customerAuthenticator=<ExpressPlay customer authenticator identifier>& 
-           errorFormat=json& 
-           contentKey=<your content key>& 
-           iv=<your iv here>"
-      ```
+     ```
+     curl -v "https://fp-gen.service.expressplay.com/hms/fp/token? 
+          customerAuthenticator=<ExpressPlay customer authenticator identifier>& 
+          errorFormat=json& 
+          contentKey=<your content key>& 
+          iv=<your iv here>"
+     ```
 
-      De reactie met de licentie-token-URL ziet er ongeveer als volgt uit:
+     De reactie met de licentie-token-URL ziet er ongeveer als volgt uit:
 
-      ```
-      https://fp.service.expressplay.com:80/hms/fp/rights/? 
-           ExpressPlayToken=<base64-encoded ExpressPlay token>
-      ```
+     ```
+     https://fp.service.expressplay.com:80/hms/fp/rights/? 
+          ExpressPlayToken=<base64-encoded ExpressPlay token>
+     ```
 
 1. Stel een variabele in met de licentietoken-URL van ExpressPlay.
 

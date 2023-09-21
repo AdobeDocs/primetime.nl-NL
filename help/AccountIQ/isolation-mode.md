@@ -1,8 +1,7 @@
 ---
 title: Rapporten weergeven in de isolatiemodus
 description: Rapporten weergeven in de isolatiemodus voor Xfinity.
-exl-id: e7cf24c5-9bfa-48f6-b5c8-20443a976891
-source-git-commit: 326f97d058646795cab5d062fa5b980235f7da37
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '471'
 ht-degree: 0%
@@ -17,7 +16,7 @@ Bijvoorbeeld, in het volgende beeld als abonnee B van een Wijze van de Isolatie 
 
 ![](assets/isolation-diff-new.png)
 
-*Afbeelding: De Wijze van de isolatie MVPD identificeert vier verschillende abonnees in plaats van twee*
+*Afbeelding: MVPD voor isolatiemodus identificeert vier verschillende abonnees in plaats van twee*
 
 Om de vervorming van gegevens (door het identificeren van de zelfde abonnee als verschillend te beheren gebaseerd op de toegang tot van verschillende programmeurs), beperkt de Wijze van de Isolatie de activiteit die over een programmeur aan de activiteit slechts op de toepassingen van die programmeur wordt gemeld. Voor de isolatiemodus in de bovenstaande afbeelding ziet Programmer L bijvoorbeeld alleen gegevens die zijn gebaseerd op de activiteit van Identities W en Y, waarbij de identiteiten X en Z worden genegeerd.
 
@@ -26,7 +25,7 @@ Om de vervorming van gegevens (door het identificeren van de zelfde abonnee als 
 > Het nadeel is dat Programmer L wordt beroofd van het delen van informatie die over Abonnees A en B wordt verzameld wegens activiteit met om het even welke Programmer buiten L.
 
 In de isolatiemodus worden alle berekeningen die zijn gemaakt voor het verkrijgen van de Sharing Scores en alle bijbehorende meetgegevens gemaakt met alleen de activiteit van de apparaten die worden gestreamd vanuit toepassingen die tot de geselecteerde programmeur en kanalen behoren.
-De delende scores en waarschijnlijkheden worden berekend slechts gebruikend de stroom die van de momenteel geselecteerde kanalen begint.
+De delende scores en de waarschijnlijkheden worden berekend slechts gebruikend de stroom die van de momenteel geselecteerde kanalen begint.
 
 Metrische gegevens weergeven in de isolatiemodus:
 
@@ -34,7 +33,7 @@ Metrische gegevens weergeven in de isolatiemodus:
 
    ![](assets/xfinity-in-segment.gif)
 
-   *Afbeelding: MVPD-selectie in isolatiemodus*
+   *Afbeelding: MVPD-selectie in de isolatiemodus*
 
 1. Selecteer de gewenste kanalen in het menu **Kanalen in segment** en selecteert u **Selectie toepassen**. Selecteer ook een [tijdkader](/help/AccountIQ/product-concepts.md#granularity-def).
 
@@ -44,6 +43,6 @@ Metrische gegevens weergeven in de isolatiemodus:
 
    ![](assets/aggregate-sharing-isolation.png)
 
-   *Afbeelding: Het delen van waarschijnlijkheidsmeters in de wijze van de Isolatie*
+   *Afbeelding: kansmeters delen in de isolatiemodus*
 
-   Uit bovenstaande cijfers blijkt dat slechts 6% van alle rekeningen wordt gedeeld; slechts 8 % van de inhoud wordt door deze 8 % geconsumeerd . De kanalen kunnen hun scores in de isolatiemodus vergelijken met die in de andere MVPD&#39;s. Daarom moet de informatie die door het gebruiken van de Wijze van de Isolatie wordt verkregen verschillend van de andere gegevens worden geïnterpreteerd.
+   Uit bovenstaande cijfers blijkt dat slechts 6% van alle accounts wordt gedeeld en dat slechts 8% van de inhoud wordt verbruikt door die 8%. De kanalen kunnen hun scores in de isolatiemodus vergelijken met die in de andere MVPD&#39;s. Daarom moet de informatie die door het gebruiken van de Wijze van de Isolatie wordt verkregen verschillend van de andere gegevens worden geïnterpreteerd.

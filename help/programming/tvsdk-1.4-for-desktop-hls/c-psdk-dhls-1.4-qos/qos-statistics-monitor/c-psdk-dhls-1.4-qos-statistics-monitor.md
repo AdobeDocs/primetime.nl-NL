@@ -1,8 +1,7 @@
 ---
 description: De kwaliteit van de dienst (QoS) biedt een gedetailleerde mening in hoe de videomotor presteert. TVSDK biedt gedetailleerde statistieken over het afspelen, bufferen en apparaten.
 title: Kwaliteit van de dienststatistieken
-exl-id: ab664d75-a24f-41d6-91d7-a26ad7baab9a
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '418'
 ht-degree: 0%
@@ -68,17 +67,17 @@ U kunt de kwaliteit van de dienst (QoS) informatie over gedownloade middelen, zo
    <tr> 
       <td colname="col01"> <span class="codeph"> trackIndex </span> </td> 
       <td colname="col1"> <p>int </p> </td> 
-      <td colname="col2"> de index van het overeenkomstige spoor, indien bekend; anders, 0. </td> 
+      <td colname="col2"> De index van de overeenkomstige track, indien bekend; anders 0. </td> 
    </tr> 
    <tr> 
       <td colname="col01"> <span class="codeph"> trackName </span> </td> 
       <td colname="col1"> <p>String </p> </td> 
-      <td colname="col2"> de naam van de overeenkomstige spoorbaan, indien bekend; anders, null. </td> 
+      <td colname="col2"> De naam van de overeenkomstige track, indien bekend; anders null. </td> 
    </tr> 
    <tr> 
       <td colname="col01"> <span class="codeph"> trackType </span> </td> 
       <td colname="col1"> <p>String </p> </td> 
-      <td colname="col2"> het type van het overeenkomstige spoor, indien bekend; anders, null. </td> 
+      <td colname="col2"> Het type van het overeenkomstige spoor, als gekend; anders, ongeldig. </td> 
    </tr> 
    <tr> 
       <td colname="col01"> <span class="codeph"> type </span> </td> 
@@ -98,7 +97,7 @@ U kunt de kwaliteit van de dienst (QoS) informatie over gedownloade middelen, zo
    </tbody> 
    </table>
 
-## De playback van QOS, het bufferen, en apparatenstatistieken lezen {#read-qos-playback-buffering-and-device-statistics}
+## De playback van QOS, het als buffer optreden voor, en apparatenstatistieken lezen {#read-qos-playback-buffering-and-device-statistics}
 
 U kunt playback, het als buffer optreden voor, en apparatenstatistieken van de klasse lezen QOSProvider.
 
@@ -106,7 +105,7 @@ De `QOSProvider` klasse verstrekt diverse statistieken, met inbegrip van informa
 
 Het biedt ook informatie over het apparaat, zoals de fabrikant, het model, het besturingssysteem, de SDK-versie en schermgrootte/dichtheid.
 
-1. Instantiëren van een mediaspeler.
+1. Een mediaspeler instantiëren.
 1. Een `QOSProvider` en aan de mediaspeler koppelen.
 
    ```

@@ -2,8 +2,7 @@
 title: Just-in-Time Transcoding
 description: Just-in-Time Transcoding
 copied-description: true
-exl-id: 9577e1d5-1462-49d6-9d24-94e74dc9c019
-source-git-commit: 3e63c187f12d1bff53370bbcde4d6a77f58f3b4f
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '177'
 ht-degree: 0%
@@ -19,7 +18,7 @@ Een typisch werkschema is als volgt:
 
 1. Als de creatieve indeling van een advertentie standaard compatibel is met de inhoudsstroom, wordt de creatieve indeling in het manifest ingevoegd.
 
-1. Als de creatieve indeling van een advertentie niet standaard compatibel is (bijvoorbeeld .mp4, .mov, .webm), zoekt Primetime Ad Insertion naar een vooraf getranscodeerde versie van de advertentie vanuit een opgegeven CDN. Indien een dergelijke advertentie wordt gevonden, wordt die advertentie ingevoegd; anders, wordt de advertentie een rij gevormd voor transcode.
+1. Als de creatieve indeling van een advertentie niet standaard compatibel is (bijvoorbeeld .mp4, .mov, .webm), zoekt Primetime Ad Insertion naar een vooraf getranscodeerde versie van de advertentie vanuit een opgegeven CDN. Als een advertentie wordt gevonden, wordt die advertentie ingevoegd; anders wordt de advertentie in de wachtrij voor transcode geplaatst.
 
 1. Nadat de creatieve advertentie is getranscodeerd, zal Primetime Ad Insertion alle verdere verzoeken om die advertentie in manifesten vastzetten.
 

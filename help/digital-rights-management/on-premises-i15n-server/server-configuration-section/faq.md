@@ -2,8 +2,7 @@
 title: Veelgestelde vragen
 description: Veelgestelde vragen
 copied-description: true
-exl-id: 9058604e-dbab-4df5-89fd-1219c85c7643
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '97'
 ht-degree: 0%
@@ -13,7 +12,7 @@ ht-degree: 0%
 # Veelgestelde vragen {#faq}
 
 * Hoe vaak treden ECI-wijzigingen op?
-   * Telkens wanneer een nieuwe Adobe DRM-client wordt losgelaten, wordt een ECI-apparaatrecord toegevoegd.
+   * Telkens wanneer een nieuwe Adobe DRM-client wordt vrijgegeven, wordt een ECI-apparaatrecord toegevoegd.
 
 * Hoe groot zijn ECI-bestanden?
    * Deze zijn doorgaans minder dan 1 kilobyte per apparaatrecord.

@@ -1,8 +1,7 @@
 ---
 description: Toevoegen lost advertenties voor video-op-verzoek (VOD), voor live streaming en voor lineair streamen met het bijhouden van advertenties en het afspelen van advertenties op. TVSDK doet de vereiste verzoeken aan de advertentieserver, ontvangt informatie over advertenties voor de opgegeven inhoud en plaatst de advertenties in fasen.
 title: Advertenties invoegen
-exl-id: 4e5a4fe2-6887-48d0-b335-f3e99559dca8
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '580'
 ht-degree: 0%
@@ -49,7 +48,7 @@ Deze markeringen vereisen de meta-gegevensgebied `DURATION` in seconden en de un
 #EXT-X-CUE DURATION=27 ID=identiferForThisCue ... 
 ```
 
-Voor meer informatie over extra aanwijzingen raadpleegt u [Abonneren op aangepaste tags](../ad-insertion/c-psdk-ios-1.4-custom-tags-configure/t-psdk-ios-1.4-custom-tags-subscribe.md).
+Zie voor meer informatie over extra aanwijzingen [Abonneren op aangepaste tags](../ad-insertion/c-psdk-ios-1.4-custom-tags-configure/t-psdk-ios-1.4-custom-tags-subscribe.md).
 
 ## Clientadvertentie bijhouden {#section_12355C7A35F14C15A2A18AAC90FEC2F5}
 
@@ -65,7 +64,7 @@ Hier volgen enkele voorbeelden van een vroege return ad break:
 
 * De duur van de pauze bij bepaalde sportevenementen.
 
-   Hoewel er een standaardduur is opgegeven, moet het ad-einde worden verlaten als de game wordt hervat voordat het einde van het einde is bereikt.
+  Hoewel er een standaardduur is opgegeven, moet het ad-einde worden verlaten als de game wordt hervat voordat het einde van het einde is bereikt.
 * Een noodsignaal tijdens een advertentiestop in een live stream.
 
 De mogelijkheid om vroegtijdig een advertentie-einde te verlaten, wordt geïdentificeerd door een aangepaste tag in het manifest die als splice-in of een cue-intag wordt bekend. Met TVSDK kan de toepassing zich abonneren op deze splice-in-tags om een splice-in-mogelijkheid te bieden.
@@ -90,14 +89,13 @@ De mogelijkheid om vroegtijdig een advertentie-einde te verlaten, wordt geïdent
 
 * Dezelfde tag delen voor splice-out en splice-in:
 
-   1. Als de toepassing dezelfde actielijn deelt om activering/splice-out en activering/splice-in aan te geven, breidt u `PTDefaultAdOpportunityResolver` en de `preparePlacementOpportunity` methode.
+   1. Als de toepassing dezelfde actielijn deelt om activering/splice-out en activering/splice-in aan te geven, breidt u `PTDefaultAdOpportunityResolver` en voert de `preparePlacementOpportunity` methode.
 
       >[!TIP]
       >
       >In de volgende code wordt ervan uitgegaan dat de toepassing een implementatie voor de `isCueInOpportunity` methode.
       >
-      >
-      ```
+      >```
       >- (PTPlacementOpportunity *)preparePlacementOpportunity:(PTTimedMetadata *)timedMetadata 
       >{ 
       >       if ([self isCueInOpportunity:timedMetadata]) 
@@ -110,6 +108,7 @@ De mogelijkheid om vroegtijdig een advertentie-einde te verlaten, wordt geïdent
       >       } 
       >}
       >```
+      >
 
    1. Registreer de verlengde opportuniteitsoplosser op de `PTDefaultMediaPlayerClientFactory` -instantie.
 

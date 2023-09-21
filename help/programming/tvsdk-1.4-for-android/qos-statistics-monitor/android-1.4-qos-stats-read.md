@@ -1,15 +1,14 @@
 ---
 description: U kunt playback, het als buffer optreden voor, en apparatenstatistieken van de klasse lezen QOSProvider.
-title: De playback van QOS, het bufferen, en apparatenstatistieken lezen
-exl-id: 1b79c254-4135-4d77-8b24-473f214021a1
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+title: De playback van QOS, het als buffer optreden voor, en apparatenstatistieken lezen
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '138'
 ht-degree: 0%
 
 ---
 
-# De playback van QOS, het bufferen, en apparatenstatistieken lezen{#read-qos-playback-buffering-and-device-statistics}
+# De playback van QOS, het als buffer optreden voor, en apparatenstatistieken lezen{#read-qos-playback-buffering-and-device-statistics}
 
 U kunt playback, het als buffer optreden voor, en apparatenstatistieken van de klasse lezen QOSProvider.
 
@@ -17,7 +16,7 @@ De `QOSProvider` klasse verstrekt diverse statistieken, met inbegrip van informa
 
 Het biedt ook informatie over het apparaat, zoals de fabrikant, het model, het besturingssysteem, de SDK-versie, de apparaat-id van de fabrikant en schermgrootte/dichtheid.
 
-1. Instantiëren van een mediaspeler.
+1. Een mediaspeler instantiëren.
 1. Een `QOSProvider` en aan de mediaspeler koppelen.
 
    De `QOSProvider` constructor gebruikt een spelercontext zodat deze apparaatspecifieke informatie kan ophalen.

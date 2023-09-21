@@ -1,8 +1,7 @@
 ---
 description: U kunt de huidige afspeelpositie in een video opslaan en het afspelen op dezelfde positie in een volgende sessie hervatten.
 title: De videopositie opslaan en later hervatten
-exl-id: a06897a6-bf57-4902-b1b4-e931419b56ba
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '398'
 ht-degree: 0%
@@ -28,11 +27,11 @@ Dynamisch ingevoegde advertenties verschillen per gebruikerssessie, zodat de pos
    // save the resumeTime to a persistent location
    ```
 
-   Als de gebruiker bijvoorbeeld op de twintigste minuut van de video staat en deze positie vijf minuten aan advertenties bevat, `currentTime` zal `be` 1200 seconden, terwijl `localTime` op dit punt `be` 900 seconden.
+   Als de gebruiker bijvoorbeeld op de 20e minuut van de video staat en deze positie vijf minuten aan advertenties bevat, `currentTime` zal `be` 1200 seconden, terwijl `localTime` op dit punt `be` 900 seconden.
 
 1. Herstel de gebruikerssessie wanneer de activiteit van de speler wordt hervat.
 
-   TVSDK hervat het afspelen tussen TVSDK-initialisaties niet omdat het geen lokale informatie opslaat. Deze logica moet door uw toepassing worden geïmplementeerd.
+   TVSDK hervat het afspelen tussen TVSDK-initialisaties niet omdat het geen lokale informatie opslaat. Uw toepassing moet deze logica implementeren.
 
    ```
    // retrieve the resumeTime from the persistent location 
@@ -43,11 +42,11 @@ Dynamisch ingevoegde advertenties verschillen per gebruikerssessie, zodat de pos
 
    * Als u het afspelen van de video wilt hervatten vanaf de positie die u tijdens een vorige sessie hebt opgeslagen, gebruikt u `seekToLocal`.
 
-      >[!TIP]
-      >
-      >Deze methode wordt alleen aangeroepen met lokale tijdwaarden. Als de methode wordt aangeroepen met de huidige-tijdresultaten, treedt een onjuist gedrag op.
+     >[!TIP]
+     >
+     >Deze methode wordt alleen aangeroepen met lokale tijdwaarden. Als de methode wordt aangeroepen met de huidige-tijdresultaten, treedt een onjuist gedrag op.
 
-   * Om naar de huidige tijd te zoeken, gebruik `seek`.
+   * Als u naar de huidige tijd wilt zoeken, gebruikt u `seek`.
 
 1. Wanneer uw toepassing de `onStatusChanged` wijzigt de status, zoekt naar de opgeslagen lokale tijd.
 1. Geef de pagina-einden op zoals opgegeven in de interface voor advertentiebeleid.

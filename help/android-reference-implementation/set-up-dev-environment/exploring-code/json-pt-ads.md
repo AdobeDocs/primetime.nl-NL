@@ -1,8 +1,7 @@
 ---
 title: JSON-object voor primetime-advertenties
 description: In het codeblok hieronder worden de details van het JSON-object gedefinieerd als de typewaarde bestaat uit primetime-advertenties.
-exl-id: b1392781-2dfb-4934-b1ce-1c761cbfb22d
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '120'
 ht-degree: 0%
@@ -37,6 +36,6 @@ In het codeblok hieronder worden de details van het JSON-object gedefinieerd als
 | domein | Het domein voor primetime-advertenties dat moet worden gebruikt voor advertentieverzoeken. |
 | middelmatig | De mediaclip die voor deze inhoud is ingesteld in primetime-advertenties. |
 | zoneid | De Primetime-advertenties zijn gezoneid. Raadpleeg de documentatie bij primetime-advertenties voor meer informatie. |
-| doelgericht | Een array van sleutel-/waardeparen die wordt gebruikt voor het aanwijzen van specifieke advertenties voor de inhoud. |
+| doelgerichtheid | Een array van sleutel-/waardeparen die wordt gebruikt voor het aanwijzen van specifieke advertenties voor de inhoud. |
 
 Zie [com.adobe.mediacore.metadata.AuditudeSettings](https://help.adobe.com/en_US/primetime/api/psdk/javadoc/com/adobe/mediacore/metadata/AuditudeSettings.html) voor meer informatie over de waarde van deze eigenschappen.

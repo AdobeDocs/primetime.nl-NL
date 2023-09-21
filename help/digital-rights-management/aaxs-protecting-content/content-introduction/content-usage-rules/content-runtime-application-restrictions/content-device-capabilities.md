@@ -2,8 +2,7 @@
 title: Apparaatmogelijkheden vereist om beveiligde inhoud af te spelen
 description: Apparaatmogelijkheden vereist om beveiligde inhoud af te spelen
 copied-description: true
-exl-id: 5f2089e9-3176-46a7-9998-2dad0e77e453
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '132'
 ht-degree: 0%
@@ -34,11 +33,11 @@ De mogelijkheden van het apparaat kunnen worden geïdentificeerd aan de hand van
    <td colname="1" class="- topic/entry "> <p class="- topic/p ">Hoofdmap van vertrouwen voor hardware </p> </td> 
    <td colname="2" class="- topic/entry "> <p class="- topic/p ">"true" of "false" </p> </td> 
    <td colname="3" class="- topic/entry "> <p class="- topic/p ">Exacte macro </p> </td> 
-   <td colname="4" class="- topic/entry "> <p class="- topic/p ">Indien waar (true), moet het apparaat een vertrouwensbasis voor de hardware hebben. </p> </td> 
+   <td colname="4" class="- topic/entry "> <p class="- topic/p ">Indien waar (true), moet het apparaat beschikken over een vertrouwenwekkende hardwarebron. </p> </td> 
   </tr> 
  </tbody> 
 </table>
 
 >[!NOTE]
 >
->Deze gebruiksregel wordt gesteund door de cliëntversie 2.0.2 van de Toegang van de Adobe. Het gedrag bij oudere clients is afhankelijk van de minimale clientversie die door de licentieserver wordt ondersteund. Zie, [Minimale clientversie](../../../../aaxs-protecting-content/content-setting-up-the-sdk/content-setting-up-the-dev-env.md).
+>Deze gebruiksregel wordt gesteund door de cliënten van de Toegang van de Adobe versie 2.0.2 en hoger. Het gedrag bij oudere clients is afhankelijk van de minimale clientversie die door de licentieserver wordt ondersteund. Zie, [Minimale clientversie](../../../../aaxs-protecting-content/content-setting-up-the-sdk/content-setting-up-the-dev-env.md).

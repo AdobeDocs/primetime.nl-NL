@@ -1,8 +1,7 @@
 ---
 description: Het gebruik van MediaPlayerItemLoader helpt u informatie over een mediastream te verkrijgen zonder een instantie MediaPlayer te instantiëren. Dit is vooral handig bij het vooraf bufferen van streams, zodat het afspelen zonder vertraging kan beginnen.
 title: Een mediabron laden met MediaPlayerItemLoader
-exl-id: 6bd081bb-b92b-4c0a-a3bc-ef2128d0d8bf
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '325'
 ht-degree: 0%
@@ -80,6 +79,7 @@ De `MediaPlayerItemLoader` de klasse helpt u een media middel voor de huidige `M
 
    * Zorg ervoor dat alles wat buffering kan beïnvloeden, bijvoorbeeld het selecteren van WebVTT- of audiotracks, volledig is en aanroept `prepareBuffer()` om direct te profiteren van.
    * Het item aan het `MediaPlayer` instantie gebruiken `replaceCurrentItem()`.
+
    Als u `prepareBuffer()`ontvangt u de BUFFER_PREPARED-gebeurtenis in uw `onBufferPrepared` handler wanneer de bereiding is voltooid.
 
 1. Bellen `load` op de `MediaPlayerItemLoader` instantie en geef de te laden bron en eventueel de inhoud-id door, en een `MediaPlayerItemConfig` -instantie.
@@ -101,6 +101,7 @@ De `MediaPlayerItemLoader` de klasse helpt u een media middel voor de huidige `M
       1. Bellen `prepareToPlay()`.
       1. Wacht op de status PREPARED.
       1. Bellen `play()`.
+
    * Als het item is gebufferd:
 
       1. Wacht op de gebeurtenis die in de buffer is voorbereid.

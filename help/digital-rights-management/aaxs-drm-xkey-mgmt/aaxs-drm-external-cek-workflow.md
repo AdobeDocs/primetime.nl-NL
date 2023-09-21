@@ -1,8 +1,7 @@
 ---
 title: AXS DRM External CEK Workflow
 description: Deze workflow is een afwijking van de meeste bestaande DRM-systemen, aangezien hiervoor geen centrale gegevensopslagruimte of CKMS (Content Key Management System) vereist is
-exl-id: f084aa57-8bef-40a0-b52d-4d23dfdf36c4
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '178'
 ht-degree: 0%

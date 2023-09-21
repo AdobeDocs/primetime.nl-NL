@@ -1,8 +1,7 @@
 ---
 description: Met de hulpklasse AuditudeSettings, die de klasse MetadataNode uitbreidt, kunt u Adobe Primetime- en beslissingsmetagegevens instellen.
 title: Metagegevens instellen en invoegen
-exl-id: 5afcdd51-a611-4ea9-88e1-5aa15b8a504a
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '267'
 ht-degree: 0%
@@ -45,8 +44,7 @@ Metagegevens over reclame bevinden zich in de `MediaResource.Metadata` eigenscha
    >
    >De media-id wordt door TVSDK gebruikt als een tekenreeks, die wordt omgezet in een md5-waarde en wordt gebruikt voor de `u` waarde in het Primetime- en beslissings-URL-verzoek. Bijvoorbeeld:
    >
-   >
-   ```
+   >```
    >https://ad.auditude.com/adserver?
    >u=c76d04ee31c91c4ce5c8cee41006c97d
    >   &z=114100 

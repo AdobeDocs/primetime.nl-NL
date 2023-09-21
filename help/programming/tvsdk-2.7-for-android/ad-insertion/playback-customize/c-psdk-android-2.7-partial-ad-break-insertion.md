@@ -1,16 +1,15 @@
 ---
-title: Onvolledige invoeging van advertentie
-description: Onvolledige invoeging van advertentie
+title: Onvolledige invoeging van advertentie-einde
+description: Onvolledige invoeging van advertentie-einde
 copied-description: true
-exl-id: bcd4b108-9b91-479e-8147-ec4d24862e37
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '204'
 ht-degree: 0%
 
 ---
 
-# Onvolledige invoeging van advertentie {#partial-ad-break-insertion}
+# Onvolledige invoeging van advertentie-einde {#partial-ad-break-insertion}
 
 U kunt een tv-achtige ervaring inschakelen om in live streams deel te kunnen nemen aan een advertentie. Met de functie Partial Ad break kunt u een tv-achtige ervaring nabootsen waarbij, als de client een live stream in een midroll start, deze binnen die midroll start. Het is vergelijkbaar met het schakelen naar een tv-zender en de reclames werken naadloos.
 

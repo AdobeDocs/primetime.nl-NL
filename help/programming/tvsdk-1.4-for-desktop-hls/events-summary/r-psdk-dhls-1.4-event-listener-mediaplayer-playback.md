@@ -1,8 +1,7 @@
 ---
 description: Uw toepassing kan de activiteit in uw speler en de veranderende staat van de speler controleren door naar gebeurtenissen te luisteren die door TVSDK worden verzonden.
 title: Gebeurtenissen van Playback
-exl-id: 9fb77b57-be6c-4dab-b779-d8c606938e46
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '516'
 ht-degree: 0%

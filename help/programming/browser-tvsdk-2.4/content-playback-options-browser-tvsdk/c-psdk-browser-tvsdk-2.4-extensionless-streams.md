@@ -1,8 +1,7 @@
 ---
 description: Browser-TVSDK ondersteunt momenteel het afspelen van streams waarbij manifesten en fragmenten geen extensies bevatten.
 title: Uitbreidbare stromen
-exl-id: ef81bfd2-2bfa-4ff7-b826-fd80802b3c07
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '149'
 ht-degree: 0%
@@ -19,7 +18,7 @@ Browser TVSDK ontleedt de eerste bytes van de reactie om het inhoudstype van fra
 
 ## Manifestniveau {#section_AAD9EBAC883D4CC3A0133A45B555EECF}
 
-Browser TVSDK gebruikt de `mediaResource.resourceType` parameter die wordt doorgegeven in het dialoogvenster `replaceCurrentResource` methode om het inhoudstype van manifest-URL te detecteren. Zie voor meer informatie de `AdobePSDK.MediaPlayer` klasse.
+Browser TVSDK gebruikt de `mediaResource.resourceType` parameter die wordt doorgegeven in de `replaceCurrentResource` methode om het inhoudstype van manifest-URL te detecteren. Zie de klasse `AdobePSDK.MediaPlayer` klasse.
 
 In de speler van het Kader UI, kunt u het middeltype in media middel als volgt specificeren:
 

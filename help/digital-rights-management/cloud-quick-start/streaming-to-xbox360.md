@@ -2,8 +2,7 @@
 title: Het XSTS-token instellen in de speler
 description: Het XSTS-token instellen in de speler
 copied-description: true
-exl-id: 1b83baac-e6a6-4e84-8ea5-07bd7e4afd9d
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '841'
 ht-degree: 0%
@@ -58,22 +57,22 @@ private void Player_RequestKeyAttribute(object sender, RequestKeyAttributeEventA
 
 ## Xbox Live XSTS-tokenvalidatie {#xbox-live-xsts-token-validation}
 
-Voor XSTS-aanvragen `customerSpecificAuthToken` Het veld bevat het token Base64-codering voor XSTS. Het voorbeeld `XSTSValidator` de code onderzoekt Base64 gedecodeerde teken voor het bestaan van `EncryptedAssertion` element; echter, kunt u andere methodes gebruiken om tussen deze verzoeken en niet-Xbox verzoeken te onderscheiden. U kunt bijvoorbeeld een andere URL gebruiken.
+Voor XSTS-aanvragen `customerSpecificAuthToken` Het veld bevat het token Base64-codering voor XSTS. Het voorbeeld `XSTSValidator` de code onderzoekt Base64 gedecodeerde teken voor het bestaan van `EncryptedAssertion` -element, maar u kunt andere methoden gebruiken om onderscheid te maken tussen deze aanvragen en niet-Xbox-aanvragen. U kunt bijvoorbeeld een andere URL gebruiken.
 
 Het beleid dat in het antwoordbericht wordt geretourneerd, overschrijft het oorspronkelijke beleid in de DRM-metagegevens die bij de Xbox key-aanvraag worden geleverd. Slechts wordt een ondergroep van beleidseigenschappen gesteund door de Xbox cliënt, en deze gebieden zijn de enige die het originele beleid zullen met voeten treden.
 
-Er zijn extra opstellingsstappen nodig om symbolische decryptie en bevestiging te steunen. U moet de opdracht [!DNL xsts_partner_cert.pfx] en [!DNL x_secure_token_service.part.xboxlive.com.cer] referenties naar een sleutelarchief met JKS-indelingen, dat u vervolgens aan uw back-end machtigingsserver opgeeft als de eigenschap system `xsts-keystore`. Door gebrek, de partner [!DNL .pfx] heeft de alias `xsts`en het token validation cert heeft de alias `xsts-verify-cert`. U kunt deze ook overschrijven met behulp van systeemeigenschappen. Tot slot is er een systeembezit `xsts-keystore-password` die geen standaardwaarde heeft en die het sleutelarchiefwachtwoord bevat. De systeemeigenschappen die door de `XSTSValidator` de code wordt hieronder samengevat:
+Er zijn extra opstellingsstappen nodig om symbolische decryptie en bevestiging te steunen. U moet de opdracht [!DNL xsts_partner_cert.pfx] en [!DNL x_secure_token_service.part.xboxlive.com.cer] referenties naar een sleutelarchief met JKS-indelingen, dat u vervolgens aan uw back-end machtigingsserver opgeeft als de eigenschap system `xsts-keystore`. Door gebrek, de partner [!DNL .pfx] heeft de alias `xsts`en het token validation cert heeft de alias `xsts-verify-cert`. U kunt deze ook overschrijven met behulp van systeemeigenschappen. Tot slot is er een systeem-eigenschap `xsts-keystore-password` die geen standaardwaarde heeft en die het sleutelarchiefwachtwoord bevat. De systeemeigenschappen die door de `XSTSValidator` de code wordt hieronder samengevat:
 
 | Systeemeigenschap | Standaardwaarde | Opmerking |
 |---|---|---|
 | xst-keystore | xsts.jks | Het sleutelarchief met JKS-indelingen dat door de validator wordt gebruikt. |
-| xsts-keystore-password |  | Wachtwoord voor het sleutelarchief |
+| xsts-keystore-password | | Wachtwoord voor het sleutelarchief |
 | xsts-alias | xsts | Alias die wordt gebruikt om de decryptiesleutel van keystore terug te winnen |
 | xsts-verify-cert-alias | xsts-verify-cert | Alias die wordt gebruikt om het validatiecertificaat van keystore terug te winnen |
 
 ## JKS maken voor een XSTS-validator{#create-jks-for-an-xsts-validator}
 
-1. Zoek de alias-naam van de persoonlijke cert op die zich in de partner bevindt [!DNL .pfx] bestand.
+1. Zoek de alias-naam van de persoonlijke cert op, in de partner [!DNL .pfx] bestand.
 
    ```
    keytool -list -storetype pkcs12 -keystore xsts_partner_cert.pfx -v 

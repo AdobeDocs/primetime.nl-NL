@@ -1,8 +1,7 @@
 ---
-description: Deze klassen helpen u bij het detecteren van en het vinden van kansen in de tijdlijn.
+description: Deze klassen helpen u bij het detecteren van en de mogelijkheden voor advertenties in de tijdlijn.
 title: Tijdlijndetectorklassen
-exl-id: c6a39ac5-53bb-4a5b-802b-eeb18ca6a7bc
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '101'
 ht-degree: 0%
@@ -11,7 +10,7 @@ ht-degree: 0%
 
 # Tijdlijndetectorklassen{#timeline-detectors-classes}
 
-Deze klassen helpen u bij het detecteren van en het vinden van kansen in de tijdlijn.
+Deze klassen helpen u bij het detecteren van en de mogelijkheden voor advertenties in de tijdlijn.
 
 Pakket: [com.adobe.mediacore.timeline.detectors](https://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls_1.4/com/adobe/mediacore/timeline/detectors/package-detail.html)
 

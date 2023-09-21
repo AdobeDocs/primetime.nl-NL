@@ -1,8 +1,7 @@
 ---
 description: ID3-tags bieden informatie over een audio- of videobestand, zoals de titel van het bestand of de naam van de artiest. Hiermee worden ID3-tags op het niveau van het transportstreamsegment (TS) in HLS-streams gedetecteerd en wordt een gebeurtenis verzonden. De toepassing kan gegevens uit de tag extraheren.
 title: ID3-tags
-exl-id: 1934516e-729b-476a-a19d-677bf2eb922a
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '233'
 ht-degree: 0%
@@ -30,7 +29,7 @@ Wanneer TVSDK ID3-metagegevens detecteert, wordt een melding met de volgende geg
 
    >[!NOTE]
    >
-   >Aangepaste cues voor advertenties gebruiken hetzelfde `onTimedMetadata` gebeurtenis die de detectie van een nieuwe tag aangeeft. Dit mag geen verwarring veroorzaken omdat aangepaste ad-cues worden gedetecteerd op manifestniveau en ID3-tags zijn ingesloten in de stream. Voor meer informatie, zie douane-markeringen-vormen.
+   >Aangepaste cues voor advertenties gebruiken hetzelfde `onTimedMetadata` gebeurtenis om de detectie van een nieuwe tag aan te geven. Dit mag geen verwarring veroorzaken omdat aangepaste ad-cues worden gedetecteerd op manifestniveau en ID3-tags zijn ingesloten in de stream. Voor meer informatie, zie douane-markeringen-vormen.
 
 1. Haal de metagegevens op.
 

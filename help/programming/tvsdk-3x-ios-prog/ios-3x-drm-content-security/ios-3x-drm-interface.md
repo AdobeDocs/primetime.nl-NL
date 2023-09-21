@@ -1,9 +1,8 @@
 ---
-description: U kunt de functies van het DRM-systeem (Primetime Digital Rights Management) gebruiken om veilige toegang tot uw video-inhoud te bieden. U kunt ook DRM-oplossingen van derden gebruiken als alternatief voor de geïntegreerde Primetime DRM-oplossing met Adobe.
+description: U kunt de functies van het DRM-systeem (Primetime Digital Rights Management) gebruiken om veilige toegang tot uw video-inhoud te bieden. U kunt ook DRM-oplossingen van derden gebruiken als alternatief voor de geïntegreerde Primetime DRM-oplossing van Adobe.
 keywords: DRM;DASH;HLS
 title: Overzicht van de primaire DRM-interface
-exl-id: e07c1551-5a9b-4907-94ea-6b7536918b91
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '426'
 ht-degree: 0%
@@ -12,11 +11,11 @@ ht-degree: 0%
 
 # Overzicht van de primaire DRM-interface {#primetime-drm-interface-overview}
 
-U kunt de functies van het DRM-systeem (Primetime Digital Rights Management) gebruiken om veilige toegang tot uw video-inhoud te bieden. U kunt ook DRM-oplossingen van derden gebruiken als alternatief voor de geïntegreerde Primetime DRM-oplossing met Adobe.
+U kunt de functies van het DRM-systeem (Primetime Digital Rights Management) gebruiken om veilige toegang tot uw video-inhoud te bieden. U kunt ook DRM-oplossingen van derden gebruiken als alternatief voor de geïntegreerde Primetime DRM-oplossing van Adobe.
 
 <!--<a id="section_4DD54E085AB345FE9BE00865E56B28DB"></a>-->
 
-Neem contact op met uw Adobe voor de meest actuele informatie over de beschikbaarheid van DRM-oplossingen van derden.
+Vraag uw Adobe om de meest actuele informatie over de beschikbaarheid van DRM-oplossingen van derden.
 
 Het belangrijkste client-side element van het DRM-systeem (Primetime Digital Rights Management) is DRM Manager.
 
@@ -30,9 +29,9 @@ Dit zijn de belangrijkste API-elementen voor het werken met DRM:
 
 * Een verwijzing in de mediaspeler naar het DRM-beheerobject dat het DRM-subsysteem implementeert:
 
-   ```
-   @property (readonly, nonatomic) DRMManager *drmManager
-   ```
+  ```
+  @property (readonly, nonatomic) DRMManager *drmManager
+  ```
 
 <!--<a id="section_F986DB1EDD6F44CD8E57419CCA0921E8"></a>-->
 
@@ -50,7 +49,7 @@ Als de DRM-beveiligde stream meerdere bitsnelheden (MBR) heeft gecodeerd, moeten
 https://your.domain.com/hls/[...]/index.m3u8?faxs=1
 ```
 
-De `faxs=1` De parameter van het vraagkoord signaleert dat de inhoud DRM beschermd is, en brengt het DRM decryptiewerkschema dienovereenkomstig in iOS TVSDK in werking. U kunt ook de opdracht `faxs=1` tags toewijzen aan URL&#39;s met HLS-middelen die met DRM zijn beveiligd en die bestemd zijn voor andere platforms; het wordt waargenomen zoals vereist op iOS of behandeld als een non-op in spelers op andere platforms.
+De `faxs=1` De parameter van het vraagkoord signaleert dat de inhoud DRM beschermd is, en brengt het DRM decryptiewerkschema dienovereenkomstig in iOS TVSDK in werking. U kunt ook de opdracht `faxs=1` -tag op met DRM beveiligde URL&#39;s voor HLS-middelen die bestemd zijn voor andere platforms; deze tag wordt als verplicht gezien op iOS of wordt als een niet-op-tag behandeld in spelers op andere platforms.
 
 ## Primetime DRM implementeren in een TSVDK-toepassing {#implement-primetime-drm-in-a-tsvdk-application}
 

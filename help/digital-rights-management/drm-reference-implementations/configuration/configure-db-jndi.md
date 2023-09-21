@@ -2,8 +2,7 @@
 title: De database van de licentieserver configureren
 description: De database van de licentieserver configureren
 copied-description: true
-exl-id: 1d5d988e-d22a-4405-8f39-1763f1f65094
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '294'
 ht-degree: 0%
@@ -28,16 +27,16 @@ Om het steekproefgegevensbestand te vormen door opstelling het gegevensbestandsc
 
    >[!NOTE]
    >
-   >Geen puntkomma ( `;`) aan het einde van het script.
+   >Zorg ervoor dat er geen puntkomma ( `;`) aan het einde van het script.
 
 1. Bewerk de `PopulateSampleDB.sql` script dat voorbeeldgegevens in de tabellen vult om gegevens voor uw tests op te nemen.
 
    Dit script bevindt zich in het dialoogvenster `[DRM SDK DVD]\Reference Implementation\Server\Reference Implementation Server\dbscript\ dbscript\` map.
-1. Voer de [!DNL PopulateSampleDB] script gebruiken om de gegevens te vullen zoals u dat in stap 2 hebt gedaan.
+1. Voer de [!DNL PopulateSampleDB] gebruiken om de gegevens te vullen zoals u in stap 2 hebt gedaan.
 
    >[!NOTE]
    >
-   >De eerste keer dat u de [!DNL CreateSampleDB.sql] script de volgende fout treedt op:
+   >De eerste keer dat u de [!DNL CreateSampleDB.sql] script uitvoeren, treedt de volgende fout op:
 
    U kunt deze fout veilig negeren. Dit gebeurt alleen wanneer u dit script voor de eerste keer uitvoert.
 

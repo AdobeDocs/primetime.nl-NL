@@ -1,8 +1,7 @@
 ---
 description: TVSDK introduceert veilige levering via HTTPS.
 title: Beveiligde aflevering via HTTPS
-exl-id: 41e2c925-2145-4dfd-909a-aec57dbae9cd
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '81'
 ht-degree: 0%
@@ -13,7 +12,7 @@ ht-degree: 0%
 
 Adobe Primetime TVSDK biedt ondersteuning voor HTTPS-levering voor alle aanroepen die afkomstig zijn van TVSDK, waaronder
 
-* Server-aanroepen van Auditude en
+* Auditude en serveraanroepen
 * CRS-verzoeken
 * DRM-licentieaanroepen
 * Video Analytics Pings

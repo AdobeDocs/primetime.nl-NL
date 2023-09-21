@@ -1,8 +1,7 @@
 ---
 description: U kunt TimedMetadata gebruiken wanneer de huidige playbacktijd de begintijd aanpast.
 title: Metagegevens met tijdslimiet gebruiken
-exl-id: 7f87cd14-121a-4543-ab0a-a03d829d040b
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '152'
 ht-degree: 0%
@@ -22,9 +21,9 @@ Deze opgeslagen `TimedMetadata` objecten tijdens afspelen gebruiken de opgeslage
 
    >[!IMPORTANT]
    >
-   >Wanneer u controleert of de huidige afspeeltijd overeenkomt met een `TimedMetadata` objecten opnemen `shouldTriggerSubscribedTagEvent` als voorwaarde.
+   >Wanneer u controleert of de huidige afspeeltijd overeenkomt met een `TimedMetadata` objecten, include `shouldTriggerSubscribedTagEvent` als voorwaarde.
 
-   De tijdlijn kan veranderen als gevolg van verschillende vormen van advertentie. Een of meer afbrekingen van een advertentie kunnen bijvoorbeeld vanaf de oorspronkelijke positie op de tijdlijn worden verplaatst, maar `shouldTriggerSubscribedTagEvent` ervoor zorgt dat de `TimeMetadata` de begintijd van het object komt overeen met de huidige afspeeltijd.
+   De tijdlijn kan veranderen als gevolg van verschillende gedragingen. Een of meer afbrekingen van een advertentie kunnen bijvoorbeeld vanaf de oorspronkelijke positie op de tijdlijn worden verplaatst, maar `shouldTriggerSubscribedTagEvent` ervoor zorgt dat de `TimeMetadata` de begintijd van het object komt overeen met de huidige afspeeltijd.
 
    Bijvoorbeeld:
 

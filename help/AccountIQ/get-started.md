@@ -1,17 +1,16 @@
 ---
-title: Hoe u aan boord kunt gaan en aan de slag kunt met Account IQ
+title: Hoe u aan boord kunt gaan en aan de slag kunt gaan met Account IQ
 description: Hoe te aan boord, eerste vereisten, en begonnen worden met Rekening IQ.
-exl-id: 840ab081-0073-492f-86b2-ba174ae93256
-source-git-commit: b83105b94dc1c78de84908f5676ade6a62486349
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '271'
 ht-degree: 0%
 
 ---
 
-# Hoe u aan boord kunt gaan en aan de slag kunt met Account IQ {#onboard}
+# Hoe u aan boord kunt gaan en aan de slag kunt gaan met Account IQ {#onboard}
 
-Account IQ is een gehoste webtoepassing. Als u deze analysetool wilt gaan gebruiken als een D2C-streamingprovider, -programmeur of -distributeur (MVPD) en het delen van referenties wilt beperken, moet u uw organisatie in Adobe Experience Cloud-organisaties inschakelen en gebruikers van de organisatie toewijzen aan **IQ van primetime-account** profiel op [Adobe Admin Console](https://adminconsole.adobe.com/). Lees verder om de voorwaarden en details aan boord te kennen.
+Account IQ is een gehoste webtoepassing. Als u deze analysetool wilt gaan gebruiken als een D2C-streamingprovider, -programmeur of -distributeur (MVPD) en het delen van referenties wilt beperken, moet u uw organisatie in Adobe Experience Cloud-organisaties inschakelen en gebruikers van de organisatie toewijzen aan **IQ van primaire account** profiel op [Adobe Admin Console](https://adminconsole.adobe.com/). Lees verder om de voorwaarden en details aan boord te kennen.
 
 ## Voorwaarden voor browsers {#browser-prerequisites}
 
@@ -36,7 +35,7 @@ Account IQ is compatibel met de meest recente versies van de volgende browsers:
 
    1. Selecteren **Adobe Primetime** van **Producten en diensten**.
 
-   1. Van **Productprofielen** Selecteer een van de **TVE-dashboard lezen-schrijven** of **TVE-dashboard, alleen-lezen** profiel.
+   1. Van **Productprofielen** selecteert u een van de **TVE-dashboard lezen-schrijven** of **TVE-dashboard, alleen-lezen** profiel.
 
       ![](assets/product-profiles.png)
 
@@ -48,8 +47,8 @@ Account IQ is compatibel met de meest recente versies van de volgende browsers:
 
       ![](assets/add-users-2profile.png)
 
-   1. Selecteren **Gebruiker toevoegen** om gebruikers toe te voegen.
+   1. Selecteren **Gebruiker toevoegen** toevoegen.
 
 >[!IMPORTANT]
 >
->Als uw gebruikers het IQ-dashboard van uw account niet kunnen openen, neemt u contact op met de Adobe-ondersteuning om ervoor te zorgen dat de ID van uw organisatie wordt vermeld in Account IQ.
+>Als uw gebruikers het IQ-dashboard van uw account niet kunnen openen, neemt u contact op met de ondersteuning van de Adobe om ervoor te zorgen dat de ID van uw organisatie wordt vermeld in Account IQ.

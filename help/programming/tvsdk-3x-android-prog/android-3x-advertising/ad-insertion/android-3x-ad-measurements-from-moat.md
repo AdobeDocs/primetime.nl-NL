@@ -1,8 +1,7 @@
 ---
 description: TVSDK neemt informatie van FreeWheel en andere advertentieservers die VAST-reacties leveren. FreeWheel verstrekt, binnen VAST reacties, informatie van de dienst van de Moat. De Maat-service telt en impressies met een nauwkeurigheid die beter laat zien of creatieve mensen de belangen van een publiek vastleggen of negeren.
 title: Metingen toevoegen van mat
-exl-id: c480f152-c09c-49fe-a8fb-d199bbfb0393
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '240'
 ht-degree: 0%
@@ -15,7 +14,7 @@ TVSDK neemt informatie van FreeWheel en andere advertentieservers die VAST-react
 
 Maat is een service voor het meten en weergeven van vele toepassingen, van browsers tot toepassingen. Met de indeling Mat worden in real-time analytische gegevens voor marketingdoeleinden gegenereerd voor verschillende platforms.
 
-De VAST reactie XML heeft een bezit en een element uw code kan lezen, buitenste `Ad id` eigendommen en de buitenwereld `Extension` element. In beide gevallen kan uw code gebruikmaken van TVSDK om beide `Ad id` informatie en `Extension` en ordent de informatie vervolgens in een boomstructuur. Met deze organisatie, kan uw code de gegevens van om het even welk niveau ophalen en het overgaan tot waar het moet gaan. De waarde van de buitenste `Ad id` de eigenschap laat uw code toe om informatie van de bijbehorende campagne te coördineren.
+De VAST reactie XML heeft een bezit en een element uw code kan lezen, buitenste `Ad id` eigendommen en de buitenwereld `Extension` element. In beide gevallen kan uw code gebruikmaken van TVSDK om beide `Ad id` informatie en de `Extension` en ordent de informatie vervolgens in een boomstructuur. Met deze organisatie, kan uw code de gegevens van om het even welk niveau ophalen en het overgaan tot waar het moet gaan. De waarde van de buitenste `Ad id` de eigenschap laat uw code toe om informatie van de bijbehorende campagne te coördineren.
 
 FreeWheel kan bijvoorbeeld gegevens in een Extensions-element retourneren. Hieronder ziet u een voorbeeldelement.
 

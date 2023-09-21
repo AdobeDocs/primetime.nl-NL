@@ -2,8 +2,7 @@
 title: Hoofdstukondersteuning implementeren
 description: Hoofdstukondersteuning implementeren
 copied-description: true
-exl-id: f86af555-4eba-4bc8-a323-41f65f23f4cc
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '95'
 ht-degree: 0%
@@ -16,7 +15,7 @@ U kunt hoofdstukken voor video het volgen in een op TVSDK-Gebaseerde toepassing 
 
 * Standaardhoofdstukken, die intern door TVSDK worden beheerd.
 
-   Een hoofdstuk wordt gedefinieerd als de tijd tussen elk advertentieeinde. De tijd tussen een voorrol en een onderbreking wordt bijvoorbeeld gedefinieerd als het eerste hoofdstuk.
+  Een hoofdstuk wordt gedefinieerd als de tijd tussen elk advertentieeinde. De tijd tussen een voorrol en een onderbreking wordt bijvoorbeeld gedefinieerd als het eerste hoofdstuk.
 * De hoofdstukken van de douane, die door de toepassing worden beheerd en op CMS gegevens of een andere manier gebaseerd zijn die de toepassing gebruikt om hoofdstukken te bepalen.
 
 1. Definieer standaardhoofdstukken en volg deze bij.

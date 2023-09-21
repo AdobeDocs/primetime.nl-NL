@@ -1,8 +1,7 @@
 ---
-description: De Flash Runtime TVSDK heeft een ondertekend token nodig om te controleren of u het recht hebt om de TVSDK API aan te roepen in het domein waar uw toepassing zich bevindt.
+description: De Flash Runtime TVSDK heeft een ondertekend token nodig om te controleren of u het recht hebt om de TVSDK API aan te roepen op het domein waar uw toepassing zich bevindt.
 title: Uw ondertekende token laden
-exl-id: fef6b764-dc65-412e-a990-3f0b1fef94dd
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '515'
 ht-degree: 0%
@@ -11,7 +10,7 @@ ht-degree: 0%
 
 # Uw ondertekende token laden {#load-your-signed-token}
 
-De Flash Runtime TVSDK heeft een ondertekend token nodig om te controleren of u het recht hebt om de TVSDK API aan te roepen in het domein waar uw toepassing zich bevindt.
+De Flash Runtime TVSDK heeft een ondertekend token nodig om te controleren of u het recht hebt om de TVSDK API aan te roepen op het domein waar uw toepassing zich bevindt.
 
 1. Krijg een ondertekend teken van uw Adobe vertegenwoordiger voor elk van uw domeinen (waar elk domein een specifiek domein of een vervangingsdomein zou kunnen zijn).
 
@@ -19,9 +18,9 @@ De Flash Runtime TVSDK heeft een ondertekend token nodig om te controleren of u 
    
    * An [!DNL .xml] bestand dat fungeert als token voor één domein of jokertekendomein.
 
-      >[!NOTE]
-      >
-      >Een token voor een jokertekendomein dekt dat domein en alle subdomeinen ervan. Bijvoorbeeld een jokerteken voor het domein [!DNL mycompany.com] zou ook [!DNL vids.mycompany.com] en [!DNL private.vids.mycompany.com]; een jokerteken voor [!DNL vids.mycompany.com] zou ook [!DNL private.vids.mycompany.com]. *Jokerdomeintokens worden alleen ondersteund voor bepaalde Flash Player-versies.*
+     >[!NOTE]
+     >
+     >Een token voor een jokertekendomein dekt dat domein en alle subdomeinen ervan. Bijvoorbeeld een jokerteken voor het domein [!DNL mycompany.com] zou ook [!DNL vids.mycompany.com] en [!DNL private.vids.mycompany.com]; een jokerteken voor [!DNL vids.mycompany.com] zou ook [!DNL private.vids.mycompany.com]. *Jokerdomeintokens worden alleen ondersteund voor bepaalde versies van Flash Player.*
 
    * A [!DNL .swf] bestand met tokeninformatie voor meerdere domeinen (exclusief jokertekens) (enkelvoudig of jokerteken) die uw toepassing dynamisch kan laden.
 
@@ -36,6 +35,7 @@ De Flash Runtime TVSDK heeft een ondertekend token nodig om te controleren of u 
    1. TVSDK verzendt een `COMPLETED` als het laden is voltooid of als een `FAILED` anders. Voer de juiste actie uit wanneer u een van beide gebeurtenissen detecteert.
 
       Uw toepassing kan alleen de vereiste `authorizedFeatures` objecten voor TVSDK in de vorm van een `MediaPlayerContext`.
+
    In dit voorbeeld wordt getoond hoe u een token kunt gebruiken [!DNL .xml] bestand.
 
    ```
@@ -59,9 +59,9 @@ De Flash Runtime TVSDK heeft een ondertekend token nodig om te controleren of u 
       Luister ook naar de gebeurtenis ERROR en voer de juiste actie uit.
    1. Als het laden is gelukt, gebruikt u de `AuthorizedFeaturesHelper` om een `ByteArray` die de met PCKS-7 gecodeerde beveiligingsgegevens bevat.
 
-      Deze gegevens worden via de AVE V11-API gebruikt om verificatie van de Flash Runtime Player te verkrijgen. Als de bytearray geen inhoud bevat, gebruikt u in plaats daarvan de procedure om te zoeken naar een token-bestand voor één domein.
+      Deze gegevens worden gebruikt via AVE V11 API om autorisatiebevestiging te verkrijgen van de Flash Runtime Player. Als de bytearray geen inhoud bevat, gebruikt u in plaats daarvan de procedure om te zoeken naar een token-bestand voor één domein.
    1. Gebruiken `AuthorizedFeatureHelper.loadFeatureFromData` om de vereiste gegevens op te halen uit de bytearray.
-   1. Het gereedschap [!DNL .swf] bestand.
+   1. Het gereedschap verwijderen [!DNL .swf] bestand.
 
    De volgende voorbeelden laten zien hoe u een meervoudig token kunt gebruiken [!DNL .swf] bestand.
 

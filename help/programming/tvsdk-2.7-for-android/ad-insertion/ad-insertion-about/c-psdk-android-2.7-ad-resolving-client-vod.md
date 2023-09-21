@@ -1,8 +1,7 @@
 ---
 description: Voor video-on-demand (VOD)-inhoud voegt TVSDK de advertenties in de hoofdinhoud op en verbreekt deze door de tijdlijnduur te spreiden.
 title: VOD-advertentie omzetten en invoegen
-exl-id: 10ae101d-f07b-485a-aa59-361761b4b65d
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '159'
 ht-degree: 0%
@@ -30,7 +29,7 @@ Advertenties kunnen niet:
 * Ingevoegd
 * Verwijderd
 
-   U kunt bijvoorbeeld geen ingebouwde advertenties uit de inhoud verwijderen voor een ad-vrije ervaring.
+  U kunt bijvoorbeeld geen ingebouwde advertenties uit de inhoud verwijderen voor een ad-vrije ervaring.
 * Vervangen
 
-   U kunt bijvoorbeeld geen ingebouwde advertenties vervangen door beoogde advertenties.
+  U kunt bijvoorbeeld geen ingebouwde advertenties vervangen door beoogde advertenties.

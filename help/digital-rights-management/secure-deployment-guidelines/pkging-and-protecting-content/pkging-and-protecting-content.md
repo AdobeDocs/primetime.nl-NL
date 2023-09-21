@@ -1,8 +1,7 @@
 ---
 description: Met informatie over verpakking en bescherming van inhoud kunt u uw inhoud beschermen.
 title: Inhoud verpakken en beschermen
-exl-id: f33d382b-07d7-4630-9e44-820d6249fee4
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '805'
 ht-degree: 0%
@@ -25,13 +24,13 @@ Als uw implementatie van het verpakken van inhoud netwerkconnectiviteit vereist,
 
 Voor het configuratiebestand voor het opdrachtregelprogramma Adobe Primetime DRM Media Packager is een PKCS12-referentie vereist die tijdens het verpakken wordt gebruikt.
 
-In de de beveltijdehulpmiddelen van de Implementatie van de Verwijzing, wordt het wachtwoord voor het PKCS12 geloofsbrieven dossier opgeslagen in `flashaccess.properties` bestand in duidelijke tekst. Daarom moet u extra voorzichtig zijn wanneer u de computer beveiligt die dit bestand host en ervoor zorgt dat de computer zich in een veilige omgeving bevindt. Zie voor meer informatie [Fysieke beveiliging en toegang](../../secure-deployment-guidelines/physical-sec-and-access.md).
+In de de beveltijdehulpmiddelen van de Implementatie van de Verwijzing, wordt het wachtwoord voor het PKCS12 geloofsbrieven dossier opgeslagen in `flashaccess.properties` bestand in duidelijke tekst. Daarom moet u extra voorzichtig zijn wanneer u de computer beveiligt waarop dit bestand wordt gehost en zorgt u ervoor dat de computer zich in een veilige omgeving bevindt. Zie voor meer informatie [Fysieke beveiliging en toegang](../../secure-deployment-guidelines/physical-sec-and-access.md).
 
 De verpakker gebruikt ook de certificaten van het Vervoer van de Server van de Vergunning en van de Server van de Vergunning, en de integriteit en de vertrouwelijkheid van deze informatie moeten worden beschermd. Alleen bevoegde entiteiten mogen de verpakker gebruiken. Als uw persoonlijke sleutels worden gecompromitteerd, informeer Adobe Systems Incorporated onmiddellijk zodat het certificaat kan worden ingetrokken.
 
 >[!NOTE]
 >
->Met de API kunt u dezelfde sleutel gebruiken voor meerdere inhoud. Om het hoogste niveau van veiligheid te verzekeren, zou u deze eigenschap slechts voor multi-beetjetarief FMS inhoud moeten gebruiken. Gebruik niet dezelfde sleutel voor meerdere bestanden die verschillende inhoud vertegenwoordigen.
+>Met de API kunt u dezelfde sleutel gebruiken voor meerdere stukken inhoud. Om het hoogste niveau van veiligheid te verzekeren, zou u deze eigenschap slechts voor multi-beetjetarief FMS inhoud moeten gebruiken. Gebruik niet dezelfde sleutel voor meerdere bestanden die verschillende inhoud vertegenwoordigen.
 
 De Primetime DRM Packaging-API geeft onder bepaalde omstandigheden waarschuwingen weer. Controleer deze waarschuwingen om te bepalen of uw bestanden zijn versleuteld. De waarschuwingsberichten kunnen een van de volgende zijn:
 
@@ -51,7 +50,7 @@ Wanneer u deze toepassingen maakt, kunt u toestaan dat sommige gebruikers beleid
 
 Het beleid wordt pas ondertekend of tegen wijzigingen beschermd als het in een pakket wordt gebruikt. Als u zich zorgen maakt dat gebruikers van verpakkingsgereedschappen beleid kunnen wijzigen, ondertekent u het beleid om ervoor te zorgen dat het beleid niet kan worden gewijzigd.
 
-Zie de API&#39;s voor primetime DRM op voor meer informatie over het maken van toepassingen met de SDK. [API-referenties voor primetime API](https://help.adobe.com/en_US/primetime/api/index.html#api-Adobe_Primetime_API_References).
+Zie de API&#39;s voor primetime DRM op voor meer informatie over het maken van toepassingen met de SDK. [API-voorkeuren voor API](https://help.adobe.com/en_US/primetime/api/index.html#api-Adobe_Primetime_API_References).
 
 ## Asymmetrische sleutelversleuteling {#asymmetric-key-encryption}
 

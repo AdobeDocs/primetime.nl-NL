@@ -1,8 +1,7 @@
 ---
 description: U kunt het gedrag van advertenties aanpassen of overschrijven.
 title: Aangepast afspelen instellen
-exl-id: 28c28589-9e94-40de-b921-1bffc0392c29
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '169'
 ht-degree: 0%
@@ -18,15 +17,15 @@ Voer een van de volgende handelingen uit om het gedrag van advertenties aan te p
 
 * Implementeer de `AdPolicySelector` en alle bijbehorende methoden.
 
-   Deze optie wordt aanbevolen als u deze optie moet overschrijven **alles** de standaardinstellingen en gedragingen.
+  Deze optie wordt aanbevolen als u deze optie moet overschrijven **alles** de standaardinstellingen en gedragingen.
 
 * Breid uit `DefaultAdPolicySelector` en verstrekt implementaties voor slechts die gedrag dat aanpassing vereist.
 
-   Deze optie wordt aanbevolen als u alleen de optie wilt overschrijven **sommige** van het standaardgedrag.
+  Deze optie wordt aanbevolen als u alleen de optie wilt overschrijven **sommige** van het standaardgedrag.
 
 Voer voor beide opties de volgende taken uit:
 
-1. Implementeer uw eigen aangepaste advertentie-beleidskiezer.
+1. Implementeer uw eigen aangepaste advertentiebeleidskiezer.
 
    ```
    public class CustomAdPolicySelector implements AdPolicySelector { 

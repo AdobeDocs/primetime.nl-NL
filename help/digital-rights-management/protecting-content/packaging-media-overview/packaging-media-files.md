@@ -2,8 +2,7 @@
 title: Overzicht van mediabestanden verpakken
 description: Overzicht van mediabestanden verpakken
 copied-description: true
-exl-id: 88c593a7-33b5-4773-b283-2ab16f9e8c3a
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '663'
 ht-degree: 0%
@@ -28,7 +27,7 @@ Een bepaald stuk inhoud kan meerdere DRM-beleidsregels hebben. U kunt bijvoorbee
 >
 >De architectuur staat voor gebruikDRM beleid toe om aan inhoud worden gespecificeerd en worden gebonden wanneer de inhoud wordt verpakt. Voordat een client inhoud kan afspelen, moet de client een licentie voor een opgegeven computer aanschaffen. De vergunning specificeert de gebruiksregels die worden afgedwongen en verstrekt de sleutel die moet worden gebruikt om inhoud te decrypteren. Het DRM-beleid vertegenwoordigt een sjabloon voor het genereren van een licentie. De licentieserver kan echter de gebruiksregels overschrijven wanneer deze een licentie uitgeeft. De licentie kan door dergelijke beperkingen, zoals vervaltijden of afspeelvensters, ongeldig worden gemaakt.
 
-Primetime DRM biedt een API voor het doorgeven in de CEK. Als er geen CEK is opgegeven, genereert de SDK deze willekeurig. Gewoonlijk hebt u voor elke sectie van inhoud een andere CEK nodig. In Dynamic Streaming zult u echter waarschijnlijk dezelfde CEK gebruiken voor alle bestanden waaruit die inhoud bestaat. Daarom heeft een gebruiker slechts één licentie nodig om naadloos over te schakelen van de ene bitsnelheid naar de andere. Als u dezelfde sleutel en licentie voor meerdere inhoud wilt gebruiken, moet u hetzelfde doorgeven `DRMParameters` object naar `MediaEncrypter.encryptContent()`, of pas de CEK in gebruikend `V2KeyParameters.setContentEncryptionKey()`. Als u voor elke sectie van inhoud een andere sleutel en licentie wilt gebruiken, moet u een nieuwe sleutel maken `DRMParameters` -instantie voor elk bestand.
+Primetime DRM biedt een API voor het doorgeven in de CEK. Als er geen CEK is opgegeven, genereert de SDK deze willekeurig. Gewoonlijk hebt u voor elke sectie van inhoud een andere CEK nodig. In Dynamic Streaming zult u echter waarschijnlijk dezelfde CEK gebruiken voor alle bestanden waaruit die inhoud bestaat. Daarom heeft een gebruiker slechts één licentie nodig om naadloos over te schakelen van de ene bitsnelheid naar de andere. Als u dezelfde sleutel en licentie voor meerdere inhoud wilt gebruiken, moet u hetzelfde doorgeven `DRMParameters` object naar `MediaEncrypter.encryptContent()`, of pas de CEK in gebruikend `V2KeyParameters.setContentEncryptionKey()`. Als u voor elke sectie van inhoud een andere sleutel en licentie wilt gebruiken, moet u een nieuwe sleutel maken `DRMParameters` voor elk bestand.
 
 Wanneer u inhoud verpakt met behulp van toetsrotatie, kunt u de gebruikte rotatietoetsen en de frequentie waarmee de toetsen worden gewijzigd instellen. `F4VDRMParameters` en `FLVDRMParameters` de `KeyRotationParameters` interface. Via deze interface kunt u sleutelrotatie inschakelen. U moet ook een `RotatingContentEncryptionKeyProvider`. Voor elke gecodeerde steekproef, bepaalt deze klasse de Sleutel van de Omwenteling te gebruiken. U kunt uw eigen provider implementeren of de `TimeBasedKeyProvider` opgenomen in de SDK. Deze implementatie genereert op willekeurige wijze een nieuwe sleutel na een opgegeven aantal seconden.
 
@@ -36,6 +35,6 @@ In sommige gevallen moet u de metagegevens van de inhoud mogelijk opslaan als ee
 
 Al deze taken kunnen worden uitgevoerd met de Java API.
 
-Zie *Adobe Primetime DRM API-naslaggids* voor meer informatie over de Java API.
+Zie *Adobe Primetime DRM API Reference* voor meer informatie over de Java API.
 
 Zie *Adobe Primetime DRM Reference Implementations gebruiken* voor informatie over de de verwijzingsimplementatie van Media Packager.

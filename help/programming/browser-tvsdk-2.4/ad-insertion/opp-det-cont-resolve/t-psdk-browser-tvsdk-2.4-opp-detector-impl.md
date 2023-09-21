@@ -1,8 +1,7 @@
 ---
 description: U kunt uw eigen opportuniteitsgenerator uitvoeren door de interface OpportunityGenerator uit te breiden.
 title: Een aangepaste opportuniteitsgenerator implementeren
-exl-id: 45f9ed89-94c4-4e74-b20a-4789a25bd9b3
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '78'
 ht-degree: 0%
@@ -65,7 +64,7 @@ U kunt uw eigen opportuniteitsgenerator uitvoeren door de interface OpportunityG
    }; 
    ```
 
-1. Registreer de aangepaste inhoudsfabriek voor de mediastream die moet worden afgespeeld.
+1. Registreer de aangepaste inhoudsfabriek voor de af te spelen mediastream.
 
    In UI Framework-speler kunt u als volgt de fabriek voor aangepaste inhoud opgeven:
 

@@ -1,8 +1,7 @@
 ---
 description: Deze klassen bieden informatie over advertenties die binnen een tijdlijn voorkomen.
 title: Tijdlijnadvertentieklassen
-exl-id: fb31a235-6578-4da1-b732-713a2f9b24be
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '570'
 ht-degree: 0%
@@ -26,7 +25,7 @@ Pakket: [com.adobe.mediacore.timeline.advertence.auditude](https://help.adobe.co
 | [AdBreakPolicy](https://help.adobe.com/en_US/primetime/api/psdk/javadoc_1.4/com/adobe/mediacore/timeline/advertising/AdBreakPolicy.html) | Opsomming waarmee het beleid voor het afspelen van advertenties wordt gedefinieerd voor het omzeilen van advertenties door de gebruiker tijdens het zoeken. |
 | [AdClick](https://help.adobe.com/en_US/primetime/api/psdk/javadoc_1.4/com/adobe/mediacore/timeline/advertising/AdClick.html) | Klasse die een klikinstantie vertegenwoordigt die aan activa wordt geassocieerd. Deze instantie bevat informatie over de doorklikken-URL en de titel die kunnen worden gebruikt om extra informatie aan de gebruiker te verstrekken. |
 | [AdPolicyInfo](https://help.adobe.com/en_US/primetime/api/psdk/javadoc_1.4/com/adobe/mediacore/timeline/advertising/AdPolicyInfo.html) | Interface die eigenschappen voor API-aanroepen AdPolicySelector definieert. Deze eigenschappen bieden de context voor het afdwingen van elk advertentiegedrag. |
-| [AdPolicySelector](https://help.adobe.com/en_US/primetime/api/psdk/javadoc_1.4/com/adobe/mediacore/timeline/advertising/AdPolicySelector.html) | An ad policy selector interface for enforcing and behavior. Toepassingen kunnen met deze interface in overeenstemming zijn door alle vereiste methoden te implementeren of door de bestaande standaardbeleidsselectorklasse uit te breiden om specifiek gedrag aan te passen. |
+| [AdbeleidSelector](https://help.adobe.com/en_US/primetime/api/psdk/javadoc_1.4/com/adobe/mediacore/timeline/advertising/AdPolicySelector.html) | An ad policy selector interface for enforcing and behavior. Toepassingen kunnen met deze interface in overeenstemming zijn door alle vereiste methoden te implementeren of door de bestaande standaardbeleidsselectorklasse uit te breiden om specifiek gedrag aan te passen. |
 | `auditude.AuditudeAdProvider` | Vervangen. Gebruik AuditudeResolver. |
 | [AuditudeResolver](https://help.adobe.com/en_US/primetime/api/psdk/javadoc_1.4/com/adobe/mediacore/timeline/advertising/auditude/AuditudeResolver.html) | Klasse die de primetime afhandelt en het oplossen in het proces van de Woorden. |
 | [AuditudeTracker](https://help.adobe.com/en_US/primetime/api/psdk/javadoc_1.4/com/adobe/mediacore/timeline/advertising/auditude/AuditudeTracker.html) | Klasse die de interface ContentTracker implementeert en gebeurtenissen Primetime ad-tracking definieert. |

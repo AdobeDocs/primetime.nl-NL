@@ -1,8 +1,7 @@
 ---
 title: De segmenten van de abonnee en tijdkader
 description: Definieer cohorts of selecteer abonneesegmenten om de mogelijkheden en patronen van uw kanaalviewers voor het delen van accounts te meten en grafische gereedschappen en rapporten te gebruiken in Account IQ.
-exl-id: c38cde37-70d9-486d-b8d0-7c1cbd2baf2e
-source-git-commit: 326f97d058646795cab5d062fa5b980235f7da37
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '321'
 ht-degree: 0%

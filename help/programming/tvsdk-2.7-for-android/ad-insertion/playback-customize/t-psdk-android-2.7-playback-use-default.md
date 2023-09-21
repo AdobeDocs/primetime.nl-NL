@@ -1,8 +1,7 @@
 ---
 description: U kunt ervoor kiezen om standaard en gedrag te gebruiken.
 title: Standaardgedrag voor afspelen gebruiken
-exl-id: eb4ce0b4-9dfd-4de8-8cbf-8aba093a5ddd
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '201'
 ht-degree: 0%
@@ -27,11 +26,11 @@ Registreer de beleidsinstantie voor advertenties bij TVSDK voordat u gedrag voor
 
 * Implementeer de `AdPolicySelector` en alle bijbehorende methoden.
 
-   Deze optie wordt aanbevolen als u deze optie moet overschrijven **alles** de standaardinstellingen en gedragingen.
+  Deze optie wordt aanbevolen als u deze optie moet overschrijven **alles** de standaardinstellingen en gedragingen.
 
 * Breid uit `DefaultAdPolicySelector` en verstrekt implementaties voor slechts die gedrag dat aanpassing vereist.
 
-   Deze optie wordt aanbevolen als u alleen de optie wilt overschrijven **sommige** van het standaardgedrag.
+  Deze optie wordt aanbevolen als u alleen de optie wilt overschrijven **sommige** van het standaardgedrag.
 
 Zo past u het gedrag van advertenties aan:
 

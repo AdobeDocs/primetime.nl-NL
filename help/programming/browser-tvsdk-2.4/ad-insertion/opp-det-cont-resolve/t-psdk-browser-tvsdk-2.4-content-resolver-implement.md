@@ -1,8 +1,7 @@
 ---
 description: U kunt uw eigen inhoudsoplossers implementeren op basis van de standaardoplossers.
 title: Een aangepaste contentoplosser implementeren
-exl-id: f594840b-ff56-49c5-baf5-ac2800411215
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '191'
 ht-degree: 0%
@@ -19,9 +18,9 @@ De volgende informatie onthouden:
 
 * Aanroepen van de inhoudoplosser `client.process` om aan te geven welke tijdlijnbewerking TVSDK moet uitvoeren.
 
-   De bewerking is doorgaans een plaatsing van een advertentie-einde.
+  De bewerking is doorgaans een plaatsing van een advertentie-einde.
 
-* Aanroepen van de inhoudoplosser `client.notifyCompleted` als het afwikkelingsproces succesvol is of `client.notifyFailed` als het proces mislukt.
+* Aanroepen van de inhoudoplosser `client.notifyCompleted` als het afwikkelingsproces succesvol is, of `client.notifyFailed` als het proces mislukt.
 
 1. Maak een aangepaste opportuniteitsoplosser.
 
@@ -105,7 +104,7 @@ De volgende informatie onthouden:
    }; 
    ```
 
-1. Registreer de aangepaste inhoudsfabriek voor de mediastream die moet worden afgespeeld.
+1. Registreer de aangepaste inhoudsfabriek voor de af te spelen mediastream.
 
    In de UI Framework-speler kunt u als volgt de fabriek voor aangepaste inhoud opgeven:
 

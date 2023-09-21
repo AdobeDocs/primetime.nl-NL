@@ -2,8 +2,7 @@
 title: Verboden logboekregistratie
 description: Verboden logboekregistratie
 copied-description: true
-exl-id: f2d1b0c2-ba28-4fba-9a4e-71d1421f37fe
-source-git-commit: 3e63c187f12d1bff53370bbcde4d6a77f58f3b4f
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '2155'
 ht-degree: 0%
@@ -107,7 +106,7 @@ De verslagen van dit type registreren de resultaten van manifestserver en verzoe
 | status | string | Geretourneerde HTTP-statuscode |
 | request_duration | integer | Tijd (milliseconden) van verzoek tot antwoord |
 | ad_server_query_url | string | URL voor de advertentievraag, met inbegrip van vraagparameters |
-| ad_system_id | string | Systeem toevoegen, van de reactie van de advertentieserver (Auditude indien niet opgegeven) |
+| ad_system_id | string | Systeem toevoegen, van reactie van de advertentieserver (Auditude indien niet opgegeven) |
 | avail_id | string | Id van de zegel, van de advertentie in het contentmanifest-bestand (N.v.t. VOD) |
 | avail_duration | getal | Duur (in seconden) van de golf, van de advertentie in het contentmanifest-bestand (N.v.t. VOD) |
 | ad_server_response | string | Base64-gecodeerde reactie van een advertentieserver |
@@ -124,13 +123,13 @@ De verslagen van dit type registreren de resultaten van de ad verzoeken die door
 
 | Veld | Type | Beschrijving |
 |---|---|---|
-| status | string | Geretourneerde HTTP-statuscode. |
+| status | string | Geeft HTTP-statuscode terug. |
 | avail_id | string | Id van de licentie, van de advertentie in het manifestbestand voor de inhoud (live) of van de manifestserver (VOD). |
 | ad_type | string | Type advertentie (DIRECT of REDIRECT). |
 | ad_duration | integer | Duur (seconden) van advertentie, van reactie van de advertentieserver. |
 | ad_content_url | string | URL van het manifestbestand van de advertentie, van de reactie van de advertentieserver. |
 | **†** ad_content_url_actual | string | URL van het ingevoegde manifestbestand van de advertentie. Leeg voor TRACE_AD_REDIRECT. |
-| ad_system_id | string | Systeem toevoegen uit de reactie van de advertentieserver (Auditude indien niet opgegeven). |
+| ad_system_id | string | Systeem toevoegen, van de reactie van de advertentieserver (Auditude indien niet opgegeven). |
 | ad_id | string | Id van de advertentie, van de reactie van de advertentieserver. |
 | creative_id | string | Id van creatief, van de advertentieknooppunt, van de reactie van de advertentieserver. |
 | **†** ad_call_id | string | Niet gebruikt. Gereserveerd voor toekomstig gebruik. |
@@ -141,7 +140,7 @@ De verslagen van dit type registreren de resultaten van de ad verzoeken die door
 
 >[!NOTE]
 >
->Voor `TRACE_AD_RESOLVE` en `TRACE_AD_INSERT`, de URL in de `ad_content_url_actual` is voor de getranscodeerde advertentie, als er een beschikbaar is. Anders is het veld leeg voor `TRACE_AD_RESOLVE` of dezelfde `ad_content_url` for `TRACE_AD_INSERT`.
+>Voor `TRACE_AD_RESOLVE` en `TRACE_AD_INSERT`, de URL in de `ad_content_url_actual` is voor de getranscodeerde advertentie, als er een beschikbaar is. Anders is het veld leeg voor `TRACE_AD_RESOLVE` of gelijk aan `ad_content_url` for `TRACE_AD_INSERT`.
 
 Een voorbeeld:
 
@@ -175,7 +174,7 @@ Records van dit type registreren een ontbrekend en creatief bestand. Het enige v
 
 | Veld | Type | Beschrijving |
 |---|---|---|
-| ad_id | string | Volledig gekwalificeerde advertentie-id (FQ_AD_ID: Q_AD_ID\[;Q_AD_ID\[;Q_AD_ID..\] \] Q_AD_ID: PROTOCOL:AD_SYSTEM:AD_ID\[:CREATIVE_ID\[:MEDIA_ID\] \] PROTOCOL: AUDITUDE, VAST) |
+| ad_id | string | Volledig gekwalificeerde advertentie-id (FQ_AD_ID: Q_AD_ID\[;Q_AD_ID\[;Q_AD_ID...\] \] Q_AD_ID: PROTOCOL:AD_SYSTEM:AD_ID\[:CREATIVE_ID\[:MEDIA_ID\] \] PROTOCOL: AUDITUDE, VAST) |
 
 De verslagen van dit type registreren de resultaten van het transcoderen verzoeken die de manifestserver naar CRS verzendt. Velden buiten `TRACE_TRANSCODING_REQUESTED` worden weergegeven in de volgorde die in de tabel wordt weergegeven, gescheiden door tabs.
 
@@ -187,11 +186,11 @@ De verslagen van dit type registreren de resultaten van het transcoderen verzoek
 | vlaggen | string | ID3 geeft aan of de transcoderingsaanvraag een verzoek bevat om een ID3-tag toe te voegen |
 | target_duration | string | Doelduur (seconden) van de getranscodeerde creatieve waarde |
 
-Records van dit type geven aan dat een verzoek is gedaan om de serverzijde te volgen. Velden buiten `TRACE_TRACKING_REQUEST` worden weergegeven in de volgorde die in de tabel wordt weergegeven, gescheiden door tabs.
+De verslagen van dit type wijzen op een verzoek om server zij het volgen te doen. Velden buiten `TRACE_TRACKING_REQUEST` worden weergegeven in de volgorde die in de tabel wordt weergegeven, gescheiden door tabs.
 
 | Veld | Type | Beschrijving |
 |---|---|---|
-| tracking_url_count | integer | Aantal URL&#39;s die worden bijgehouden |
+| tracking_url_count | integer | Aantal URL&#39;s voor bijhouden |
 | start | zweven | Begintijd van PTS-fragment (seconden met precisie milliseconde) |
 | end | zweven | Eindtijd van PTS-fragment (seconden met precisie milliseconde) |
 
@@ -230,35 +229,35 @@ De verslagen van dit type laten de manifestserver toe om gebeurtenissen en infor
 
 * Toevoegen genegeerd: AdPlacement \[addManifestURL=https://cdn2.auditude.com/assets/3p/v2/8c/2b/8c2bb. . . .m3u8, durationSeconds=15.0, ignore=false, redirectAd=false, priority=1\]
 * AdPlacement adManifestURL= adManifestURL, durationSeconds= seconds, ignore= ignore, redirectAd= redirectAd, priority= priority
-* De advertentie is null geretourneerd.
+* De advertentie is null.
 * Toegevoegd.
 * Aanroep toevoegen mislukt: foutbericht.
-* Gebruiker-Agent toevoegen om onbewerkte manifest te halen: user-agent.
-* Cookie toevoegen om Raw-manifest op te halen: Aantal
+* Het toevoegen van gebruiker-Agent om ruwe manifest te halen: gebruiker-agent.
+* Cookie toevoegen om Raw-manifest op te halen: #
 * Onjuist URL-foutbericht opgevraagd. (Kan URL variant niet parseren)
-* Opgeroepen URL: URL retourneert: antwoordcode. (Live URL)
-* Opgeroepen URL: Retourcode URL: antwoordcode. (VOD-URL)
-* Conflict gevonden tijdens het omzetten van advertenties: een van de middelste of middelste beginuiteinden valt binnen de voorrol of voorrol in de middelste rol (VOD).
-* Onverwerkte uitzondering gedetecteerd die door de handler voor URI wordt gegenereerd: verzoek-URL.
+* Oproepen url: URL kreeg terugkeer: reactiecode. (Live URL)
+* Opgeroepen URL: URL-retourcode: antwoordcode. (VOD-URL)
+* Conflict aangetroffen tijdens het oplossen van advertenties: een van de midroll start- of mid-roll-eindpunten valt binnen de pre-roll- of pre-roll-fase (VOD).
+* Niet-afgehandelde uitzondering gedetecteerd die door de handler voor URI: request URL wordt gegenereerd.
 * Gereed met het genereren van het manifest van de variant. (Variant)
 * Gereed met het genereren van het manifest van de variant.
-* Uitzondering bij verwerking van VAST redirect *redirect URL *error: foutbericht.
+* Uitzondering bij het verwerken van VAST redirect *redirect URL *error: foutbericht.
 * Kan de afspeellijst van de advertentie niet ophalen voor de URL van het advertentiemanifest.
 * Kan doelmanifest niet genereren. (HLSManifestResolver)
-* Kan eerste reactie op advertentie niet parseren: foutbericht.
+* Kan reactie eerste advertentie niet parseren: foutbericht.
 * Kan *GET|POST *request for path niet verwerken: verzoek-URL. (Live/VOD)
 * Kan live manifestverzoek niet verwerken: verzoek-URL. (Live)
-* Kan geen variantmanifest retourneren: foutbericht.
+* Failed to return a variant manifest: error message.
 * Kan groep-id niet valideren: groep-id.
 * Onbewerkte manifest ophalen: inhoud-URL. (Live)
-* Na omleiding VAST: URL omleiden.
+* Na VAST-omleiding: URL omleiden.
 * Er zijn lege bronnen gevonden. (VOD)
 * Gevonden *getal* advertenties. (VOD)
 * HTTP-aanvraag ontvangen. (Zeer eerste bericht)
 * Dit wordt genegeerd omdat het verschil tussen de tijdsduur van de advertentie (*ad responsduur *sec) en de werkelijke duur van de advertentie (*actual duration *sec) groter is dan de limiet. (HLSManifestResolver)
 * Negeren is gelukt zonder id-waarde. (GroupAdResolver.java)
-* Negeren van een geldige tijdwaarde: *time *for availId = geldige id.
-* Negeren van een geldige waarde voor de duur: *duration *for availId = avail ID.
+* Negeren heeft een ongeldige tijdwaarde opgeleverd: *time *for availId = avail ID.
+* Negeren heeft een ongeldige duurwaarde opgeleverd: *duration *for availId = avail ID.
 * Nieuwe sessie initialiseren. (Variant)
 * Ongeldige HTTP-methode. Het moet een GET zijn. (VOD)
 * Ongeldige HTTP-methode. Trackingverzoek moet een GET zijn. (Live)
@@ -269,27 +268,27 @@ De verslagen van dit type laten de manifestserver toe om gebeurtenissen en infor
 * Ongeldig verzoek. Het volgende verzoek moet worden gedaan nadat de zitting wordt gevestigd. (VOD)
 * Ongeldige serverinstantie voor overbelastingsgroep-id: groep-id. (Live)
 * Limiet voor VAST-omleidingen bereikt - getal.
-* Plaatsen van advertentie: URL toevoegen.
+* Plaatsen en bellen: URL aanroepen.
 * Geen manifest gevonden voor: inhoud-URL. (Live)
-* Geen gelijke die voor beschikbare identiteitskaart wordt gevonden: geldige id. (HLSManifestResolver)
+* Geen overeenkomende zegel gevonden voor geldige ID: geldige ID. (HLSManifestResolver)
 * Geen afspeelsessie gevonden. (HLSManifestResolver)
 * Bezig met verwerken van VOD-verzoek voor URL voor manifestinhoud.
 * Verwerkingsvariant.
-* Bezig met verwerken van bijschriftverzoek voor URL voor manifestinhoud.
+* Bezig met het verwerken van het bijschriftverzoek voor de URL van de manifestinhoud.
 * Trackingverzoek verwerken. (VOD)
 * Leid en reactie leeg om. ( VASTStAX)
 * Aanvragen: URL.
 * Respons van fout voor GET- verzoek omdat geen playbackzitting werd gevonden. (VOD)
 * Respons van een fout voor het verzoek van de GET wegens een interne serverfout terugkeren.
-* Respons van fout voor GET- verzoek die een ongeldig middel specificeren: aanvraag-id toevoegen. (VOD)
-* Respons van fout voor GET- verzoek die een ongeldige of lege groep ID specificeren: groep-id. (VOD)
+* Respons van fout voor GET- verzoek die een ongeldig element specificeren: en verzoek identiteitskaart (VOD)
+* Respons van een fout voor het GET-verzoek die een ongeldige of lege groep-id opgeeft: groep-id. (VOD)
 * Respons van fout voor het terugkeren van GET verzoek die een ongeldige het volgen positiewaarde specificeren. (VOD)
 * Respons van fout voor GET verzoek met ongeldige syntaxis terugkeren - verzoek URL. (Live/VOD)
 * Respons van fout voor verzoek met niet gestaafde methode van HTTP terugkeren: GET|POST. (Live/VOD)
 * Manifest van cache retourneren. (VOD)
 * Server is overbelast. Doorgaan zonder aanvraag voor een advertentie. (Variant)
 * Beginnen met genereren van doelmanifest. (HLSManifestResolver)
-* Begin genererend variantmanifest van: inhoud-URL. (Variant)
+* Begin genererend variantmanifest van: inhoud URL. (Variant)
 * Begin advertenties in manifest te stikken. (VODHLSResolver)
 * Poging om advertentie te naaien bij `HH:MM:SS`: AdPlacement \[adManifestURL= and Manifest URL, durationSeconds= seconds, ignore= ignore, redirectAd= redirect ad, priority= priority.\] \(HLSManifestResolver\)
 * Kan geen advertenties ophalen vanwege een ongeldige tijdlijn. Retourneerde de inhoud zonder advertenties. (VOD)
@@ -320,7 +319,7 @@ De manifestserver produceert verslagen van dit type wanneer het een signaal over
 
 Clientverzoeken om invoeging van een advertentie geven doorgaans meer dan één bitsnelheid op in de afspeellijst met versies die zijn opgemaakt voor de variant M3U8. De manifestserver genereert en retourneert een nieuw M3U8-bestand met een aparte M3U8-koppeling voor elke bitsnelheid. Er wordt ook een unieke groep-id gegenereerd om deze M3U8s aan elkaar te koppelen.
 
-De manifestserver gebruikt de informatie in het Bootstrap URL-verzoek van de cliënt om de inhoudvariant playlist terug te winnen. Het produceert een nieuwe variant playlist die duidelijke serververbindingen met de stroom-vlakke inhoud bevat. De client gebruikt deze voor het samenstellen en invoegen van aanvragen. De inhoudskoppelingen op streamniveau van de manifestserver hebben de volgende indeling:
+De manifestserver gebruikt de informatie in het de Bootstrap URL- verzoek van de cliënt om de inhoudvariant playlist terug te winnen. Het produceert een nieuwe variant playlist die duidelijke serververbindingen met de stroom-vlakke inhoud bevat. De client gebruikt deze voor het samenstellen en invoegen van aanvragen. De inhoudskoppelingen op streamniveau van de manifestserver hebben de volgende indeling:
 
 ```shell
 https://manifest.auditude.com/auditude/{live/vod}/{publisherAssetID}/{rendition}/
@@ -328,21 +327,19 @@ https://manifest.auditude.com/auditude/{live/vod}/{publisherAssetID}/{rendition}
 ```
 
 * **live/vod**
-De manifestserver plaatst deze waarde die op het playlist type van de inhoud wordt gebaseerd: Live/lineair (
-`#EXT-X-PLAYLIST-TYPE:EVENT`) of VOD (`#EXT-X-PLAYLIST-TYPE:VOD`)
+De manifestserver plaatst deze waarde die op het playlist type van de inhoud wordt gebaseerd: Levend/lineair (`#EXT-X-PLAYLIST-TYPE:EVENT`) of VOD (`#EXT-X-PLAYLIST-TYPE:VOD`)
 
 * **publisherAssetID**
 De unieke id van de uitgever voor de specifieke inhoud die in het URL-verzoek van de Bootstrap wordt opgegeven.
 
 * **uitvoering**
-De manifestserver plaatst dit gebaseerd op 
-`BANDWIDTH` -waarde van de inhoudsstroom en gebruikt deze om de bitsnelheid van de advertentie aan te passen aan de bitsnelheid van de inhoud. De bitsnelheid van de advertentie kan de bitsnelheid van de inhoud alleen overschrijden als de advertentie-uitvoering met de laagste bitsnelheid dit doet.
+De manifestserver plaatst dit gebaseerd op `BANDWIDTH` -waarde van de inhoudsstroom en gebruikt deze om de bitsnelheid van de advertentie aan te passen aan de bitsnelheid van de inhoud. De bitsnelheid van de advertentie kan de bitsnelheid van de inhoud alleen overschrijden als de advertentie-uitvoering met de laagste bitsnelheid dit doet.
 
 * **groupID**
-De manifestserver genereert deze waarde en gebruikt deze om ervoor te zorgen dat advertenties consistent worden geplaatst, ongeacht de bitsnelheidsuitvoering die de client vraagt voor advertenties.
+De manifestserver genereert deze waarde en gebruikt deze om ervoor te zorgen dat advertenties consistent worden geplaatst, ongeacht de bitsnelheidsuitvoering die de client aanvraagt.
 
 * **base64-gecodeerde url van de bitsnelheidstream**
 De duidelijke server URL-safe base64 codeert de absolute URL van de inhoudsstroom. Elke stream heeft een eigen URL.
 
-* **Parameters query**
+* **Query-parameters**
 De parameters van de vraag die in het Bootstrap URL- verzoek worden verstrekt.

@@ -1,8 +1,7 @@
 ---
 description: U kunt aangepaste tagnamen in TVSDK globaal configureren met de klasse PTSDKConfig.
 title: Methoden van de klasse Config voor tags
-exl-id: b23bba25-ddab-4700-bae6-db1ee833eea2
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '166'
 ht-degree: 0%
@@ -30,5 +29,5 @@ Houd rekening met het volgende:
 * De settermethoden staan niet toe dat de tagparameter null-waarden bevat.
 * De naam van de aangepaste tag moet het voorvoegsel # bevatten.
 
-   #EXT-X-ASSET is bijvoorbeeld een correcte aangepaste tagnaam, maar EXT-X-ASSET is onjuist.
+  #EXT-X-ASSET is bijvoorbeeld een correcte aangepaste tagnaam, maar EXT-X-ASSET is onjuist.
 * U kunt de configuratie niet wijzigen nadat de mediastream is geladen.

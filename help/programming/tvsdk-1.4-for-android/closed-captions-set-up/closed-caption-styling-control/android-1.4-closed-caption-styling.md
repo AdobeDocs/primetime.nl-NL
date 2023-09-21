@@ -1,8 +1,7 @@
 ---
 description: Met de klasse TextFormat kunt u opmaakinformatie opgeven voor Closed Caption-tracks. Hiermee stelt u de stijl in voor alle gesloten bijschriften die door de speler worden weergegeven.
 title: Opmaak van ondertiteling beheren
-exl-id: 0083c141-9c03-46a2-902b-6e7eebaadea4
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '656'
 ht-degree: 0%
@@ -52,31 +51,31 @@ U kunt de tekst met een gesloten bijschrift opmaken met de methoden TVSDK.
 
    * Alle stijlinstellingen ophalen met `MediaPlayer.getCCStyle`.
 
-      De geretourneerde waarde is een instantie van de `TextFormat` interface.
+     De geretourneerde waarde is een instantie van de `TextFormat` interface.
 
-      ```js
-      /** 
-      * @return the current closed captioning style.  
-      * If no style was previously set, it returns a TextFormat object 
-      * with default values for each attribute. 
-      * @throws IllegalStateException if media player was already released. 
-      */ 
-      public TextFormat getCCStyle() throws IllegalStateException;
-      ```
+     ```js
+     /** 
+     * @return the current closed captioning style.  
+     * If no style was previously set, it returns a TextFormat object 
+     * with default values for each attribute. 
+     * @throws IllegalStateException if media player was already released. 
+     */ 
+     public TextFormat getCCStyle() throws IllegalStateException;
+     ```
 
-   * De instellingen een voor een ophalen via de `TextFormat` interface getter, methoden.
+   * Hiermee kunt u de instellingen een voor een ophalen via de `TextFormat` interface getter, methoden.
 
-      ```js
-      public Color getFontColor(); 
-      public Color getBackgroundColor(); 
-      public Color getFillColor(); // retrieve the font fill color 
-      public Color getEdgeColor(); // retrieve the font edge color 
-      public Size getSize(); // retrieve the font size 
-      public FontEdge getFontEdge(); // retrieve the font edge type 
-      public Font getFont(); // retrieve the font type 
-      public int getFontOpacity(); 
-      public int getBackgroundOpacity();
-      ```
+     ```js
+     public Color getFontColor(); 
+     public Color getBackgroundColor(); 
+     public Color getFillColor(); // retrieve the font fill color 
+     public Color getEdgeColor(); // retrieve the font edge color 
+     public Size getSize(); // retrieve the font size 
+     public FontEdge getFontEdge(); // retrieve the font edge type 
+     public Font getFont(); // retrieve the font type 
+     public int getFontOpacity(); 
+     public int getBackgroundOpacity();
+     ```
 
 1. Voer een van de volgende handelingen uit om de stijlinstellingen te wijzigen:
 
@@ -86,41 +85,41 @@ U kunt de tekst met een gesloten bijschrift opmaken met de methoden TVSDK.
 
    * De methode setter gebruiken `MediaPlayer.setCCStyle`, waarbij een instantie van de `TextFormat` interface:
 
-      ```js
-      /** 
-      * Sets the closed captioning style. Used to control the closed captioning font, 
-      * size, color, edge and opacity.  
-      * 
-      * This method is safe to use even if the current media stream doesn't have closed 
-      * captions. 
-      * 
-      * @param textFormat 
-      * @throws IllegalStateException 
-      */ 
-      public void setCCStyle(TextFormat textFormat) throws IllegalStateException;
-      ```
+     ```js
+     /** 
+     * Sets the closed captioning style. Used to control the closed captioning font, 
+     * size, color, edge and opacity.  
+     * 
+     * This method is safe to use even if the current media stream doesn't have closed 
+     * captions. 
+     * 
+     * @param textFormat 
+     * @throws IllegalStateException 
+     */ 
+     public void setCCStyle(TextFormat textFormat) throws IllegalStateException;
+     ```
 
    * Gebruik de `TextFormatBuilder` klasse, die afzonderlijke settermethoden definieert.
 
-      De `TextFormat` interface definieert een onveranderlijk object, zodat er alleen methoden getter en geen setters zijn. U kunt de opmaakparameters voor Closed Caption alleen instellen met de opdracht `TextFormatBuilder` klasse:
+     De `TextFormat` interface definieert een onveranderlijk object, zodat er alleen methoden getter en geen setters zijn. U kunt de opmaakparameters voor Closed Caption alleen instellen met de opdracht `TextFormatBuilder` klasse:
 
-      ```js
-      // set font type 
-      public void setFont(Font font)  
-      public void setBackgroundColor(Color backgroundColor) 
-      public void setFillColor(Color fillColor) 
-      // set the font-edge color 
-      public void setEdgeColor(Color edgeColor)  
-      // set the font size 
-      public void setSize(Size size)  
-      // set the font edge type 
-      public void setFontEdge(FontEdge fontEdge)  
-      public void setFontOpacity(int fontOpacity) 
-      public void setBackgroundOpacity(int backgroundOpacity) 
-      // set the font-fill opacity level 
-      public void setFillOpacity(int fillOpacity)  
-      public void setFontColor(Color fontColor)
-      ```
+     ```js
+     // set font type 
+     public void setFont(Font font)  
+     public void setBackgroundColor(Color backgroundColor) 
+     public void setFillColor(Color fillColor) 
+     // set the font-edge color 
+     public void setEdgeColor(Color edgeColor)  
+     // set the font size 
+     public void setSize(Size size)  
+     // set the font edge type 
+     public void setFontEdge(FontEdge fontEdge)  
+     public void setFontOpacity(int fontOpacity) 
+     public void setBackgroundOpacity(int backgroundOpacity) 
+     // set the font-fill opacity level 
+     public void setFillOpacity(int fillOpacity)  
+     public void setFontColor(Color fontColor)
+     ```
 
 Het instellen van de stijl voor een Closed Caption is een asynchrone bewerking. Het kan dus enkele seconden duren voordat de wijzigingen op het scherm worden weergegeven.
 
@@ -157,7 +156,7 @@ public TextFormatBuilder(
  <tbody> 
   <tr rowsep="1"> 
    <td colname="1"> Lettertype </td> 
-   <td colname="2"> <p>Het lettertype. </p> <p>Kan alleen worden ingesteld op een waarde die wordt gedefinieerd door de <span class="codeph"> TextFormat.Font </span> opsomming en vertegenwoordigt, bijvoorbeeld, monospaced met of zonder series. </p> <p>Tip: De werkelijke lettertypen die op een apparaat beschikbaar zijn, kunnen variëren en waar nodig worden vervangende lettertypen gebruikt. Monospace met schreef wordt typisch gebruikt als substituut, hoewel deze substitutie systeemspecifiek kan zijn. </p> </td> 
+   <td colname="2"> <p>Het fonttype. </p> <p>Kan alleen worden ingesteld op een waarde die wordt gedefinieerd door de <span class="codeph"> TextFormat.Font </span> opsomming en vertegenwoordigt, bijvoorbeeld, monospaced met of zonder series. </p> <p>Tip: de werkelijke lettertypen die op een apparaat beschikbaar zijn, kunnen variëren en waar nodig worden vervangende lettertypen gebruikt. Monospace met schreef wordt typisch gebruikt als substituut, hoewel deze substitutie systeemspecifiek kan zijn. </p> </td> 
   </tr> 
   <tr rowsep="1"> 
    <td colname="1"> Grootte </td> 
@@ -166,7 +165,7 @@ public TextFormatBuilder(
       <li id="li_A592ED46B8DF4D8FAD7AF3BD931A712B"> <span class="codeph"> MEDIUM </span> - De standaardgrootte </li> 
       <li id="li_4F8CEDE54965430EB707DD3D5B2E3F87"> <span class="codeph"> GROOT </span> - Ongeveer 30% groter dan gemiddeld </li> 
       <li id="li_D78D823883F54D869118BAB58257E377"> <span class="codeph"> KLEIN </span> - Ongeveer 30% kleiner dan gemiddeld </li> 
-      <li id="li_9299C13408584A38835F8D91BD048083"> <span class="codeph"> STANDAARD </span> - De standaardgrootte voor het bijschrift; gelijk aan medium </li> 
+      <li id="li_9299C13408584A38835F8D91BD048083"> <span class="codeph"> STANDAARD </span> - De standaardgrootte voor het bijschrift; gelijk aan normaal </li> 
      </ul> </p> </td> 
   </tr> 
   <tr rowsep="1"> 
@@ -174,7 +173,7 @@ public TextFormatBuilder(
    <td colname="2"> <p>Het effect dat voor de fontrand wordt gebruikt, zoals verhoogd of geen. </p> <p>Kan alleen worden ingesteld op een waarde die wordt gedefinieerd door de <span class="codeph"> TextFormat.FontEdge </span> opsomming. </p> </td> 
   </tr> 
   <tr rowsep="1"> 
-   <td colname="1"> Fontkleur </td> 
+   <td colname="1"> Lettertypekleur </td> 
    <td colname="2"> <p>De fontkleur. </p> <p>Kan alleen worden ingesteld op een waarde die wordt gedefinieerd door de <span class="codeph"> TextFormat.Color </span> opsomming. </p> </td> 
   </tr> 
   <tr rowsep="1"> 
@@ -183,7 +182,7 @@ public TextFormatBuilder(
   </tr> 
   <tr rowsep="1"> 
    <td colname="1"> Achtergrondkleur </td> 
-   <td colname="2"> <p>De kleur van de achtergrondtekencel. </p> <p>Kan alleen worden ingesteld op waarden die beschikbaar zijn voor de lettertypekleur. </p> </td> 
+   <td colname="2"> <p>De kleur van de achtergrondtekencel. </p> <p>Kan alleen worden ingesteld op waarden die beschikbaar zijn voor de fontkleur. </p> </td> 
   </tr> 
   <tr rowsep="1"> 
    <td colname="1"> Vulkleur </td> 
@@ -208,7 +207,7 @@ public TextFormatBuilder(
 
 U kunt opmaak voor Closed Caption opgeven.
 
-**Voorbeeld 1: Opmaakwaarden expliciet opgeven**
+**Voorbeeld 1: geef opmaakwaarden expliciet op**
 
 ```java
 private final MediaPlayer.PlaybackEventListener  
@@ -232,7 +231,7 @@ private final MediaPlayer.PlaybackEventListener
 } 
 ```
 
-**Voorbeeld 2: Opmaakwaarden opgeven in parameters**
+**Voorbeeld 2: indelingswaarden opgeven in parameters**
 
 ```java
 /** 

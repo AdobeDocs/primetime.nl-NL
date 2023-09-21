@@ -1,8 +1,7 @@
 ---
 description: Browser TVSDK biedt standaard opportuniteitsgeneratoren en inhoudsoplossers die advertenties in de tijdlijn plaatsen, en deze generatoren en oplossers zijn gebaseerd op niet-standaardlabels in het manifest. Uw toepassing zou de chronologie kunnen moeten veranderen die op kansen wordt gebaseerd die in manifest worden geïdentificeerd.
 title: Opportuniteitsgeneratoren en contentoplosers
-exl-id: a47acd22-8b1b-4c66-a7eb-a4d99afb5f17
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '301'
 ht-degree: 0%
@@ -23,7 +22,7 @@ De kansen worden geïdentificeerd in een chronologie in `TimedMetata`. De `Manif
 
 Wanneer uw toepassing op de hoogte wordt gesteld van een opportuniteit (tag), kan uw toepassing de tijdlijn wijzigen door bijvoorbeeld een reeks advertenties in te voegen. Door gebrek, roept Browser TVSDK aangewezen *`content resolver`* om de vereiste tijdlijnwijzigingen of -handelingen te implementeren. Uw toepassing kan de standaardinhoudsoplosser voor TVSDK-advertenties in de browser gebruiken of een eigen inhoudoplosser registreren.
 
-U kunt ook `MediaPlayerItemConfig.adTags` om meer tags/aanwijzingen voor de standaardmarkeertekens voor advertenties toe te voegen `ManifestCuesOpportunityGenerator` klasse en gebruik `MediaPlayerItemConfig.subscribedTags` zodat TVSDK uw toepassing op de hoogte kan stellen van aanvullende tags die informatie over de publicatieworkflow kunnen bevatten.
+U kunt ook `MediaPlayerItemConfig.adTags` om meer tags/aanwijzingen voor de standaardmarkeertekens toe te voegen `ManifestCuesOpportunityGenerator` klasse en gebruik `MediaPlayerItemConfig.subscribedTags` zodat TVSDK uw toepassing op de hoogte kan stellen van aanvullende tags die informatie over de publicatieworkflow kunnen bevatten.
 
 >[!TIP]
 >

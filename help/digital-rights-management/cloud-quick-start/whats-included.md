@@ -1,8 +1,7 @@
 ---
-description: Adobe biedt een Cloud DRM-service aan Adobe Primetime DRM-klanten die hun eigen Primetime DRM-licentieserver niet willen ontwikkelen en onderhouden. Door deze service te gebruiken, kunnen klanten de operationele en ontwikkelingscomplexiteit van DRM-licenties verminderen. Met Primetime Cloud DRM kunt u DRM-licenties verlenen voor alle apparaten die een videotoepassing kunnen uitvoeren die geschikt is voor TVSDK in de primaire browser, zoals iOS, Android, Desktops en Xbox360. Deze DRM-service wordt gehost en onderhouden door Adobe, met 24/7 uptime.
+description: Adobe biedt een Cloud DRM-service aan Adobe Primetime DRM-klanten die hun eigen Primetime DRM-licentieserver niet willen ontwikkelen en onderhouden. Door deze service te gebruiken, kunnen klanten de operationele en ontwikkelingscomplexiteit van DRM-licenties verminderen. Met Primetime Cloud DRM kunt u DRM-licenties verlenen voor alle apparaten die een videotoepassing kunnen uitvoeren die geschikt is voor TVSDK in de primaire browser, zoals iOS, Android, Desktops en Xbox360. Deze DRM-service wordt gehost en onderhouden door de Adobe, met 24/7 uptime.
 title: Achtergrond
-exl-id: bb5ad080-5b1d-43a6-8d0e-9b5735c82d96
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '364'
 ht-degree: 0%
@@ -11,11 +10,11 @@ ht-degree: 0%
 
 # Achtergrond {#background}
 
-Adobe biedt een Cloud DRM-service aan Adobe Primetime DRM-klanten die hun eigen Primetime DRM-licentieserver niet willen ontwikkelen en onderhouden. Door deze service te gebruiken, kunnen klanten de operationele en ontwikkelingscomplexiteit van DRM-licenties verminderen. Met Primetime Cloud DRM kunt u DRM-licenties verlenen voor alle apparaten die een videotoepassing kunnen uitvoeren die geschikt is voor TVSDK in de primaire browser, zoals iOS, Android, Desktops en Xbox360. Deze DRM-service wordt gehost en onderhouden door Adobe, met 24/7 uptime.
+Adobe biedt een Cloud DRM-service aan Adobe Primetime DRM-klanten die hun eigen Primetime DRM-licentieserver niet willen ontwikkelen en onderhouden. Door deze service te gebruiken, kunnen klanten de operationele en ontwikkelingscomplexiteit van DRM-licenties verminderen. Met Primetime Cloud DRM kunt u DRM-licenties verlenen voor alle apparaten die een videotoepassing kunnen uitvoeren die geschikt is voor TVSDK in de primaire browser, zoals iOS, Android, Desktops en Xbox360. Deze DRM-service wordt gehost en onderhouden door de Adobe, met 24/7 uptime.
 
 >[!NOTE]
 >
->Adobe Primetime DRM werd voorheen Adobe Access genoemd, en daarvoor Flash Access.
+>Adobe Primetime DRM werd vroeger genoemd Toegang van de Adobe, en voorafgaand aan dat, Flash Access.
 
 ## Wat is inbegrepen bij Primetime Cloud DRM {#section_788D0DD5F6DB41678FD87CFBD21B25FD}
 
@@ -34,5 +33,5 @@ Adobe biedt een Cloud DRM-service aan Adobe Primetime DRM-klanten die hun eigen 
 
    * **policy_adobePass** - De client moet eerst worden geverifieerd met (voorheen Adobe Pass genoemd), anders wordt een licentie geweigerd.
 
-* Het hulpmiddel van de Manager van het Beleid van Adobe om extra beleid te creëren DRM
+* Het hulpmiddel van de Manager van het Beleid van de Adobe om extra beleid te creëren DRM
 * Voorbeeldvideo-inhoud voor verpakking

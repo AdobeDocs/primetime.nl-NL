@@ -1,8 +1,7 @@
 ---
 description: De status van de mediaspeler bepaalt welke handelingen legaal zijn.
 title: Levenscyclus en status van het MediaPlayer-object
-exl-id: 6b43f334-bd21-4d0e-a123-fd99403a6082
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '453'
 ht-degree: 0%
@@ -19,7 +18,7 @@ Voor het werken met de status van de mediaspeler:
 
 * De lijst met statussen wordt gedefinieerd in het dialoogvenster [MediaPlayerStatus](https://help.adobe.com/en_US/primetime/api/psdk/javadoc_2.7/com/adobe/mediacore/MediaPlayerStatus.html) enum.
 
-Status-overgangsdiagram voor de levenscyclus van een `MediaPlayer` instantie:
+Status-overgangsdiagram voor de levenscyclus van een `MediaPlayer` -instantie:
 <!--<a id="fig_A6425F24C7734DC681D992859D2A6743"></a>-->
 
 ![](assets/media_player_statuses.png)

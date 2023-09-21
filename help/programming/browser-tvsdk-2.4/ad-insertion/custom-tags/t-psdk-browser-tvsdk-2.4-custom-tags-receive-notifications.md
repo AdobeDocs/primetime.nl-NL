@@ -1,19 +1,18 @@
 ---
 description: Luister naar AdobePSDK.TimedMetadataEvent om meldingen over tags in het manifest te ontvangen.
-title: Listeners toevoegen voor meldingen van getimede metagegevens
-exl-id: eea2505f-595c-4bbe-9b68-ae395943c888
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+title: Listeners toevoegen voor meldingen met tijdmetagegevens
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '67'
 ht-degree: 0%
 
 ---
 
-# Listeners toevoegen voor meldingen van getimede metagegevens{#add-listeners-for-timed-metadata-notifications}
+# Listeners toevoegen voor meldingen met tijdmetagegevens{#add-listeners-for-timed-metadata-notifications}
 
 Luister naar AdobePSDK.TimedMetadataEvent om meldingen over tags in het manifest te ontvangen.
 
-Wanneer een nieuwe `TimedMetadata` -object wordt gemaakt, de MediaPlayer verzendt `AdobePSDK.TimedMetadataEvent`.
+Wanneer een nieuwe `TimedMetadata` -object wordt gemaakt, wordt de MediaPlayer verzonden `AdobePSDK.TimedMetadataEvent`.
 
 1. Voer de aangewezen luisteraars uit.
 

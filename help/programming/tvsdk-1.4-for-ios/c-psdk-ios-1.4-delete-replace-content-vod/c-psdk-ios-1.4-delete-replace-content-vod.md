@@ -1,8 +1,7 @@
 ---
 description: TVSDK ondersteunt het programmatisch verwijderen en vervangen van inhoud van advertenties in VOD-streams.
 title: Advertenties in VOD-streams verwijderen en vervangen
-exl-id: 44d75250-23ee-4ce3-a0c1-59bd488a5aba
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '372'
 ht-degree: 0%
@@ -24,15 +23,15 @@ De volgende wijzigingen in TVSDK ondersteunen het verwijderen en vervangen van b
    * `property PTTimeRangeCollectionType type` Hiermee wordt het type tijdbereik aangegeven.
    * `property NSArray* ranges` wordt gebruikt om de tijdwaaiers te plaatsen.
 
-      Het verwachte type objecten in de array zijn `PTReplacementTimeRange` of `CMTimeRange`.
+     Het verwachte type objecten in de array zijn `PTReplacementTimeRange` of `CMTimeRange`.
 
-      >[!TIP]
-      >
-      >Alle objecten van de array moeten van hetzelfde type zijn.
+     >[!TIP]
+     >
+     >Alle objecten van de array moeten van hetzelfde type zijn.
 
-   * `PTTimeRangeCollectionType` is een opsomming die het gedrag definieert voor de bereiken die zijn gedefinieerd in het dialoogvenster `PTTimeRangeCollection`:
+   * `PTTimeRangeCollectionType` is een opsomming die het gedrag definieert voor de bereiken die in het dialoogvenster `PTTimeRangeCollection`:
 
-      * `PTTimeRangeCollectionTypeMarkRanges`: Het type van de bereiken is *Mark*. De bereiken worden gebruikt om de waaiers in de inhoud als Advertentie te merken.
+      * `PTTimeRangeCollectionTypeMarkRanges`: Het type bereik is *Markeren*. De bereiken worden gebruikt om de waaiers in de inhoud als Advertentie te merken.
 
       * `PTTimeRangeCollectionTypeDeleteRanges`: Het type van de bereiken is Delete. De gedefinieerde bereiken worden voor het invoegen uit de hoofdinhoud verwijderd.
       * `PTTimeRangeCollectionTypeReplaceRanges`: Het type van de bereiken is Vervangen. De gedefinieerde bereiken worden vanaf de hoofdregel vervangen door Advertenties (de modus voor Ad-signalering is ingesteld op `PTAdSignalingModeCustomTimeRanges`).
@@ -54,13 +53,13 @@ De volgende wijzigingen in TVSDK ondersteunen het verwijderen en vervangen van b
 
    * `UNDEFINED_TIME_RANGES`
 
-      * Type - Waarschuwing
+      * Tekst - waarschuwing
       * Beschrijving - De ad-signaalmodus wordt gedefinieerd als aangepaste bereiken, maar de aangepaste bereiken worden niet gedefinieerd.
+
    * `INVALID_TIME_RANGES`
 
-      * Type - Waarschuwing
+      * Tekst - waarschuwing
       * Beschrijving - Een of meer tijdbereiken zijn ongeldig en worden genegeerd of gewijzigd.
-
 
 **Verouderde API&#39;s**
 

@@ -1,8 +1,7 @@
 ---
 description: Voor een vloeiender kijkervaring wordt de videostream soms door TVSDK gebufferd. U kunt de manier configureren waarop de speler buffert.
 title: Buffertijden instellen
-exl-id: 4542d10a-b6f8-430d-8b9a-5a358d1c0e9d
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '311'
 ht-degree: 0%
@@ -31,20 +30,20 @@ De `MediaPlayer` biedt methoden voor het instellen en ophalen van de eerste buff
    
    * De eerste buffertijd instellen op gelijk aan de buffertijd van het afspelen:
 
-      ```java
-      public static BufferControlParameters createSimple( 
-          long bufferTime)
-      ```
+     ```java
+     public static BufferControlParameters createSimple( 
+         long bufferTime)
+     ```
 
    * U stelt als volgt de buffertijden voor initialen en afspelen in:
 
-      ```java
-      public static BufferControlParameters createDual( 
-          long initialBuffer,   
-          long bufferTime)
-      ```
+     ```java
+     public static BufferControlParameters createDual( 
+         long initialBuffer,   
+         long bufferTime)
+     ```
 
-      Deze methoden genereren een `IllegalArgumentException` als de parameters niet geldig zijn, bijvoorbeeld wanneer:
+     Deze methoden genereren een `IllegalArgumentException` als de parameters niet geldig zijn, bijvoorbeeld wanneer:
 
    * De aanvankelijke buffertijd is minder dan nul.
    * De aanvankelijke buffertijd is groter dan de buffertijd.
@@ -71,4 +70,4 @@ Stel bijvoorbeeld de eerste buffer in op 2 seconden en de buffertijd voor het af
 mediaPlayer.setBufferControlParameters(BufferControlParameters.createDual(2000, 30000));
 ```
 
-Deze functie wordt geïllustreerd door de implementatie van de Primetime-referentie. Gebruik de instellingen van de toepassing om de bufferwaarden in te stellen.
+Deze functie wordt geïllustreerd in de implementatie van de Primetime-verwijzing. Gebruik de instellingen van de toepassing om de bufferwaarden in te stellen.

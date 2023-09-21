@@ -2,8 +2,7 @@
 title: DRM Intrekkingslijstbeheer
 description: DRM Intrekkingslijstbeheer
 copied-description: true
-exl-id: 5b17d195-30ca-4005-b710-83a6f77779a2
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '444'
 ht-degree: 0%
@@ -40,9 +39,9 @@ java -jar AdobeRevocationListManager.jar
 ```
 
 * `destfile` geeft de naam aan van het bestand waarin de eigenschappen van de intrekkingslijst zijn opgeslagen.
-* `crlNumber` vertegenwoordigt een niet-negatief versienummer van de certificaatintrekkingslijst (CRL). U moet dit aantal verhogen telkens als CRL wordt bijgewerkt.
+* `crlNumber` staat voor een niet-negatief versienummer van de certificaatintrekkingslijst (CRL). U moet dit aantal verhogen telkens als CRL wordt bijgewerkt.
 
-**Tabel 5: Opties voor opdrachtregel**
+**Tabel 5: Opdrachtregelopties**
 
 <table frame="all" colsep="1" rowsep="1" class="+ topic/table adobe-d/table " id="table_a3y_wqy_n4">  
  <thead class="- topic/thead "> 
@@ -54,7 +53,7 @@ java -jar AdobeRevocationListManager.jar
  <tbody class="- topic/tbody "> 
   <tr rowsep="1" class="- topic/row "> 
    <td colname="1" class="- topic/entry "><span class="+ topic/ph pr-d/codeph codeph">-c configfile</span> </td> 
-   <td colname="2" class="- topic/entry "><p class="- topic/p ">Hier geeft u de naam en locatie op van het configuratiebestand. </p><p class="- topic/p ">Als u geen naam of locatie opgeeft, zoekt DRM Revocation List Manager naar <span class="filepath"> flashaccessstools.properties</span> in de huidige werkmap. </p><p>Opmerking: Opties die u op de opdrachtregel opgeeft, hebben voorrang op de opties die u in het configuratiebestand opgeeft. </p>Hier geeft u de locatie van het configuratiebestand op. Als u deze optie niet toepast, zoekt de Manager van de Lijst van de Intrekking naar <span class="filepath"> flashaccessstools.properties</span> in de werkmap. </td> 
+   <td colname="2" class="- topic/entry "><p class="- topic/p ">Hier geeft u de naam en locatie op van het configuratiebestand. </p><p class="- topic/p ">Als u geen naam of locatie opgeeft, zoekt DRM Revocation List Manager naar <span class="filepath"> flashaccessstools.properties</span> in de huidige werkmap. </p><p>Opmerking: de opties die u op de opdrachtregel opgeeft, hebben voorrang op de opties die u in het configuratiebestand opgeeft. </p>Hier geeft u de locatie van het configuratiebestand op. Als u deze optie niet toepast, zoekt de Manager van de Lijst van de Intrekking naar <span class="filepath"> flashaccessstools.properties</span> in de werkmap. </td> 
   </tr> 
   <tr rowsep="1" class="- topic/row "> 
    <td colname="1" class="- topic/entry "><span class="+ topic/ph pr-d/codeph codeph">-d bestandsnaam</span> </td> 

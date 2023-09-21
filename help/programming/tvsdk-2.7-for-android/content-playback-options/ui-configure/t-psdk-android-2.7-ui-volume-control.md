@@ -1,17 +1,16 @@
 ---
-description: U kunt een gebruikersinterfacecontrole instellen om het volume voor de video aan te passen.
-title: Volumeregeling opgeven
-exl-id: 0daa87e2-51aa-4459-9a67-135dc54d09c7
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+description: U kunt opstelling een controle van de gebruikersinterface om het volume voor de video aan te passen.
+title: Volumecontrole bieden
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '98'
 ht-degree: 0%
 
 ---
 
-# Volumeregeling opgeven {#provide-volume-control}
+# Volumecontrole bieden {#provide-volume-control}
 
-U kunt een gebruikersinterfacecontrole instellen om het volume voor de video aan te passen.
+U kunt opstelling een controle van de gebruikersinterface om het volume voor de video aan te passen.
 
 1. In de callback routine voor het interface element van de volumeregelaar, zorg ervoor dat de speler in een geldige status voor dit bevel is.
 

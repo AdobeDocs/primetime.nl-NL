@@ -2,8 +2,7 @@
 description: U kunt het configuratiebestand van TVSDK (AdobeTVSDKConfig.json) gebruiken om de prioriteiten voor een creatieve selectie op VAST/VMAP-reacties bij te werken. U kunt dit configuratiebestand ook gebruiken om de URL-omzettingsregels voor de bron van advertenties te definiëren.
 keywords: creatieve selectieregels;AdobeTVSDKConfig;ad creatieve prioriteiten;transformatieregels
 title: Regels voor het bijwerken en creatief selecteren
-exl-id: d52ac207-dbb9-49d7-bd04-b722159d0314
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '243'
 ht-degree: 0%
@@ -22,8 +21,7 @@ Wanneer uw videospeler een verzoek indient bij een advertentieserver, bevat de V
 >* Dit bestand moet in het dialoogvenster [!DNL assets/] van uw project.
 >
 
-
-U kunt twee typen regels opgeven in [!DNL AdobeTVSDKConfig.json]: *Prioriteit* en *Normaliseren* regels.
+U kunt twee typen regels opgeven in [!DNL AdobeTVSDKConfig.json]: *Prioriteit* regels en *Normaliseren* regels.
 
 ## Pre-Roll uitschakelen {#disabling-preroll}
 

@@ -1,8 +1,7 @@
 ---
-description: Met Adobe Offline packager kunt u inhoud voorbereiden voor alle DRM-oplossingen die worden ondersteund door Primetime Cloud DRM, aangedreven door ExpressPlay.
+description: U kunt het offlinepakket van de Adobe gebruiken om inhoud voor te bereiden voor alle DRM-oplossingen die worden ondersteund door Primetime Cloud DRM, aangedreven door ExpressPlay.
 title: Primetime Packager / Cloud DRM / TVSDK
-exl-id: 2055c18b-62de-41bf-9644-f366609e0198
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '437'
 ht-degree: 0%
@@ -11,7 +10,7 @@ ht-degree: 0%
 
 # Primetime Packager / Cloud DRM / TVSDK {#primetime-packager-cloud-drm-tvsdk}
 
-Met Adobe Offline packager kunt u inhoud voorbereiden voor alle DRM-oplossingen die worden ondersteund door Primetime Cloud DRM, aangedreven door ExpressPlay.
+U kunt het offlinepakket van de Adobe gebruiken om inhoud voor te bereiden voor alle DRM-oplossingen die worden ondersteund door Primetime Cloud DRM, aangedreven door ExpressPlay.
 
 Bij deze set instructies wordt ervan uitgegaan dat u al een ExpressPlay-beheerdersaccount hebt ingesteld: [Primetime DRM Cloud, snel starten](../../../multi-drm-workflows/quick-start/quick-overview.md).
 1. Kies de infrastructuur die u wilt gebruiken voor het verpakken van uw inhoud. Primetime Packager ondersteunt zowel opdrachtregelpakketten als op configuratie gebaseerde pakketten van inhoud voor gebruik met de DRM&#39;s FairPlay, Widevine en PlayReady. De volgende indelingen en codering worden momenteel ondersteund in TVSDK (met meer in voorbereiding):
@@ -21,13 +20,13 @@ Bij deze set instructies wordt ervan uitgegaan dat u al een ExpressPlay-beheerde
 
 1. Kies een Key Management System (KMS):
 
-   * ExpressPlay&#39;s KMS gebruiken ( [ExpressPlay-sleutelopslag](https://www.expressplay.com/developer/key-storage/)); dit systeem beheert uw inhoudstoetsen via de RESTful-API van ExpressPlay.
+   * ExpressPlay&#39;s KMS gebruiken ( [ExpressPlay-sleutelopslag](https://www.expressplay.com/developer/key-storage/)); dit systeem beheert uw inhoudssleutels via de RESTful-API van ExpressPlay.
 
-      of...
+     of...
 
    * Stel uw eigen KMS in. Maak een database met inhoudssleutels die u kunt selecteren op basis van Content-ID.
 
-      In beide gevallen beheert het KMS een voorraad inhoudssleutels, waarbij elke sleutel een bijbehorende Content-ID heeft.
+     In beide gevallen beheert het KMS een voorraad inhoudssleutels, waarbij elke sleutel een bijbehorende Content-ID heeft.
 
 1. Verpak uw inhoud. Met Primetime Packager kunt u een stuk inhoud verpakken voor een specifieke DRM-oplossing of voor meerdere DRM-oplossingen.
 
@@ -35,41 +34,41 @@ Bij deze set instructies wordt ervan uitgegaan dat u al een ExpressPlay-beheerde
 
    * [Widevine met Primetime Packager](https://helpx.adobe.com/content/dam/help/en/primetime/guides/offline_packager_getting_started.pdf#page=19) (Hiermee wordt een MPD-bestand gegenereerd):
 
-      ```
-      java -jar OfflinePackager.jar \ 
-        -in_path [ 
-        <your_content.mp4>] \ 
-        -out_type dash \ 
-        -out_path [ 
-        <your_out_file_path>] \ 
-        -drm \ 
-        -drm_sys WIDEVINE \ 
-        -key_file_path "creds/widevine_key.bin" \ 
-        -widevine_key_id [ 
-        <some_keyID>] \ 
-        -widevine_content_id [ 
-        <some_content-ID] \ 
-        -widevine_header provider:intertrust#content_id:2a
-      ```
+     ```
+     java -jar OfflinePackager.jar \ 
+       -in_path [ 
+       <your_content.mp4>] \ 
+       -out_type dash \ 
+       -out_path [ 
+       <your_out_file_path>] \ 
+       -drm \ 
+       -drm_sys WIDEVINE \ 
+       -key_file_path "creds/widevine_key.bin" \ 
+       -widevine_key_id [ 
+       <some_keyID>] \ 
+       -widevine_content_id [ 
+       <some_content-ID] \ 
+       -widevine_header provider:intertrust#content_id:2a
+     ```
 
    * [FairPlay met Primetime Packager](https://helpx.adobe.com/content/dam/help/en/primetime/guides/offline_packager_getting_started.pdf#page=20) (Genereert een M3U8-bestand):
 
-      ```
-      java -jar OfflinePackager.jar  
-        -in_path [ 
-        <your_content.mp4>]  
-        -out_type hls  
-        -out_path [ 
-        <your_out_file_path>]  
-        -drm  
-        -drm_sys FAIRPLAY  
-        -key_file_path "creds/fairplay_key.bin"  
-        -key_url "user_provided_value"
-      ```
+     ```
+     java -jar OfflinePackager.jar  
+       -in_path [ 
+       <your_content.mp4>]  
+       -out_type hls  
+       -out_path [ 
+       <your_out_file_path>]  
+       -drm  
+       -drm_sys FAIRPLAY  
+       -key_file_path "creds/fairplay_key.bin"  
+       -key_url "user_provided_value"
+     ```
 
-      >[!NOTE]
-      >
-      >De `key_url` De waarde wordt gekopieerd zoals in het M3U8-bestand.
+     >[!NOTE]
+     >
+     >De `key_url` De waarde wordt gekopieerd zoals in het M3U8-bestand.
 
 1. Maak een &quot;storefront server&quot;.
 
@@ -81,7 +80,7 @@ Bij deze set instructies wordt ervan uitgegaan dat u al een ExpressPlay-beheerde
 
 1. Maak uw client.
 
-       De client moet een aanroep naar uw winkelserver bevatten. Adobe raadt aan dat de client de storefront aanroept nadat de gebruiker inhoud selecteert en nadat de gebruiker is geverifieerd. Geef vervolgens het token dat door ExpressPlay is geretourneerd, door aan de speler voor licentieaanvragen. Hier vindt u informatie over de implementatie van de DRM-component van uw spelers:
+       De client moet een aanroep naar uw winkelserver bevatten. De Adobe raadt aan dat de client de storefront aanroept nadat de gebruiker inhoud selecteert en nadat de gebruiker is geverifieerd. Geef vervolgens het token dat door ExpressPlay is geretourneerd, door aan de speler voor licentieaanvragen. Hier vindt u informatie over de implementatie van de DRM-component van uw spelers:
    
    * [TVSDK van browser voor HTML5](https://help.adobe.com/en_US/primetime/psdk/browser_tvsdk/index.html#PSDKs-reference-DRM_interface_overview)
    * [iOS](../../../../programming/tvsdk-3x-ios-prog/ios-3x-drm-content-security/ios-3x-apple-fairplay-tvsdk.md)

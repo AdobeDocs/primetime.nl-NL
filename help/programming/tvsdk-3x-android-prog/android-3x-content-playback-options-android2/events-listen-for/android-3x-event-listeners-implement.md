@@ -1,8 +1,7 @@
 ---
 description: Met gebeurtenishandlers kunt u reageren op TVSDK-gebeurtenissen.
 title: Gebeurtenislisteners en callbacks implementeren
-exl-id: 1f7977e3-4f96-4c0d-ae33-319c84a33ed6
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '448'
 ht-degree: 0%
@@ -21,13 +20,13 @@ Uw toepassing moet gebeurtenislisteners implementeren voor alle TVSDK-gebeurteni
 
 1. Bepaal op welke gebeurtenissen uw toepassing moet letten.
 
-   * Vereiste gebeurtenissen: Luister naar alle afspeelgebeurtenissen.
+   * Vereiste gebeurtenissen: luister naar alle afspeelgebeurtenissen.
 
-      >[!IMPORTANT]
-      >
-      >Luister naar de gebeurtenis over statuswijziging die optreedt wanneer de status van de speler verandert op een manier die u moet weten. De informatie die wordt verschaft, bevat fouten die mogelijk van invloed zijn op de volgende taken van de speler.
+     >[!IMPORTANT]
+     >
+     >Luister naar de gebeurtenis over statuswijziging die optreedt wanneer de status van de speler verandert op een manier die u moet weten. De informatie die wordt verschaft, bevat fouten die mogelijk van invloed zijn op de volgende taken van de speler.
 
-   * Voor andere gebeurtenissen, afhankelijk van uw toepassing, raadpleegt u  [Overzicht van gebeurtenissen in de primaire speler](../../android-3x-events-notifications/events-summary/android-3x-events-summary.md).
+   * Voor andere gebeurtenissen, afhankelijk van uw toepassing, raadpleegt u  [Overzicht van gebeurtenissen in de primetime-speler](../../android-3x-events-notifications/events-summary/android-3x-events-summary.md).
 
 1. Een gebeurtenislistener voor elke gebeurtenis implementeren en toevoegen.
 

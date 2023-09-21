@@ -1,8 +1,7 @@
 ---
-description: Laad een bron door rechtstreeks een MediaResource te instantiëren en de video-inhoud te laden die moet worden afgespeeld. Dit is een manier om een mediabrondel te laden.
+description: Laad een bron door rechtstreeks een MediaResource te instantiëren en de te spelen video-inhoud te laden. Dit is een manier om een mediabrondel te laden.
 title: Een mediabron laden in de MediaPlayer
-exl-id: 8258c45e-f8bf-434d-9621-88c189e1530d
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '244'
 ht-degree: 0%
@@ -11,11 +10,11 @@ ht-degree: 0%
 
 # Een mediabron laden in de MediaPlayer{#load-a-media-resource-in-the-mediaplayer}
 
-Laad een bron door rechtstreeks een MediaResource te instantiëren en de video-inhoud te laden die moet worden afgespeeld. Dit is een manier om een mediabrondel te laden.
+Laad een bron door rechtstreeks een MediaResource te instantiëren en de te spelen video-inhoud te laden. Dit is een manier om een mediabrondel te laden.
 
 1. Stel uw `MediaPlayer` het afspeelbare item van het object met de nieuwe bron die moet worden afgespeeld.
 
-   Vervang het momenteel afspeelbare item van uw bestaande MediaPlayer door het aanroepen van `MediaPlayer.replaceCurrentResource` en bestaande `MediaResource` -instantie.
+   Vervang het momenteel afspeelbare item van uw bestaande MediaPlayer door het aanroepen van `MediaPlayer.replaceCurrentResource` en het doorgeven van bestaande `MediaResource` -instantie.
 
 1. Controleer op zijn minst op de volgende wijzigingen:
 
@@ -23,7 +22,7 @@ Laad een bron door rechtstreeks een MediaResource te instantiëren en de video-i
    * BEREID
    * FOUT
 
-      Via deze gebeurtenissen `MediaPlayer` -object kan uw toepassing op de hoogte stellen wanneer de mediabron is geladen.
+     Via deze gebeurtenissen `MediaPlayer` -object kan uw toepassing op de hoogte stellen wanneer de mediabron is geladen.
 
 1. Wanneer de status van de mediaspeler verandert in INITIALIZED, kunt u `MediaPlayer.prepareToPlay`
 
@@ -33,7 +32,7 @@ Laad een bron door rechtstreeks een MediaResource te instantiëren en de video-i
 
    Wanneer de mediastream is geladen, wordt een `MediaPlayerItem` wordt gemaakt.
 
-Als er een fout optreedt, schakelt MediaPlayer over naar de status ERROR. Het brengt ook uw toepassing op de hoogte door de `STATUS_CHANGED` gebeurtenis aan uw `MediaPlayerStatusChangeEvent` callback.
+Als er een fout optreedt, schakelt de MediaPlayer over naar de status ERROR. Het brengt ook uw toepassing op de hoogte door de `STATUS_CHANGED` gebeurtenis aan uw `MediaPlayerStatusChangeEvent` callback.
 
 Hiermee worden verschillende parameters doorgegeven:
 * A `type` parameter van het type tekenreeks met de waarde `ERROR`.

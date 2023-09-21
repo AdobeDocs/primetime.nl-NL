@@ -1,8 +1,7 @@
 ---
 description: 302 optimalisatie voor omleiding minimaliseert het aantal van 302 reacties voor omleiding, waardoor uw toepassing de taakverdeling effectiever kan uitvoeren.
 title: HTTP 302-herleidingsoptimalisatie
-exl-id: 80d5d38d-c998-4fc0-b527-b38e578d76e7
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '149'
 ht-degree: 0%
@@ -19,9 +18,9 @@ Als een hoofdmanifestverzoek wordt omgeleid, en optimalisering 302 in uw speler 
 >
 >Deze functie wordt alleen ondersteund in gecertificeerde browsers die de `responseURL` eigenschap in de `XMLHttpRequest` object.
 
-Voor Flash fallback, herinner de volgende informatie:
+Houd rekening met de volgende informatie voor het terugdraaien van Flash:
 
-* Uw eindgebruikers moeten Adobe Flash Player versie 23 of hoger hebben geïnstalleerd.
+* Uw eindgebruikers moeten versie 23 of hoger van de Adobe Flash Player hebben geïnstalleerd.
 * Als de streamintegriteit is uitgeschakeld, wordt 302 omleiding alleen ondersteund door gecertificeerde browsers.
 
 ## 302-herleidingsoptimalisatie uitschakelen {#disabling-redirect-optimization}

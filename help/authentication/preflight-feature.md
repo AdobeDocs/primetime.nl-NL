@@ -1,15 +1,14 @@
 ---
 title: Preflight-functie, Hoe kan ik het probleem inschakelen, oplossen of bepalen
 description: Preflight-functie, Hoe kan ik het probleem inschakelen, oplossen of bepalen
-exl-id: 9e4ec343-371f-4116-915f-191e5f42cb47
-source-git-commit: bfc3ba55c99daba561255760baf273b6538a3c6e
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '495'
 ht-degree: 0%
 
 ---
 
-# Preflight-functie: Hoe te, los of bepaal de kwestie toe te laten problemen op {#preflight-feature}
+# Preflight-functie: Het probleem inschakelen, oplossen of bepalen {#preflight-feature}
 
 >[!NOTE]
 >
@@ -20,11 +19,11 @@ De externe interface voor de preAuthorization API is onveranderd, worden geen up
 
 Er zijn drie manieren waarop de Preflight-bronnen worden berekend:
 
-* **Fork en sluit methode aan bij MVPD**: dit impliceert Adobe het maken van veelvoudige vergunningsvraag aan MVPD (de cliënt zal nog één Preflight vraag moeten maken).
-* **Kanaallijn naar boven**: MVPD stelt de kanaallijn voor de het programma geopende gebruiker in de authentificatiereactie van SAML bloot en Adobe keert de erkende middelen terug die op dat worden gebaseerd. De SAML authN-respons in de SAML-tracer moet die lijst onthullen.
-* **Meerkanaalsautorisatie**: De client &amp; Adobe-verificatie doet beide één oproep aan de MVPD voor een set bronnen.
+* **Fork en sluit methode aan bij MVPD**: dit impliceert Adobe die veelvoudige vergunningsvraag aan MVPD (de cliënt zal nog één Preflight vraag moeten maken).
+* **Kanaallijn naar boven**: MVPD stelt de kanaallijn voor de het programma geopende gebruiker in de de authentificatiereactie van SAML bloot en de Adobe keert de erkende middelen terug die op dat worden gebaseerd. De SAML authN-respons in de SAML-tracer moet die lijst onthullen.
+* **Meerkanaalsautorisatie**: de client- en Adobe-verificatie doet beide één oproep aan de MVPD voor een set bronnen.
 
-Ongeacht MVPD, zal de toepassing van de Cliënt één enkele vraag aan het Preflight eindpunt (checkPreauthorisedResources API) maken, die een reeks resourceIDs overgaat. Gebaseerd op één van de bovengenoemde manieren die door MVPD worden gesteund, zal Adobe dan de pre-erkende resourceIDs terugkeren.
+Ongeacht MVPD, zal de toepassing van de Cliënt één enkele vraag aan het Preflight eindpunt (checkPreauthorisedResources API) maken, die een reeks resourceIDs overgaat. Gebaseerd op één van de bovengenoemde manieren die door MVPD worden gesteund, zal de Adobe dan pre-erkende resourceIDs terugkeren.
 
 Als Preflight is gebaseerd op de vork &amp; sluit zich aan bij methode, dan controleert het achterste eind van de Authentificatie van Adobe Primetime een waarde die voor de &quot;maximum pre-autorisatievraag&quot;in zijn configuratie wordt geplaatst. Dit wordt gevormd door Adobe.
 

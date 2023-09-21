@@ -1,15 +1,14 @@
 ---
 description: Sommige advertenties van derden (of creatieve objecten) kunnen niet in de HLS-inhoudsstroom (HTTP Live Streaming) worden geplaatst omdat hun video-indeling niet compatibel is met HLS. Primetime en invoeging en TVSDK kunnen desgewenst proberen incompatibele advertenties om te zetten in compatibele M3U8-video's.
-title: Niet-compatibele advertenties opnieuw verpakken met gebruik van de Adobe Creative Repackaging Service (CRS)
-exl-id: b6fb2846-64b6-4db7-a6a9-f85365780775
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+title: Niet-compatibele advertenties opnieuw verpakken met de Adobe Creative Repackaging Service (CRS)
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '324'
 ht-degree: 0%
 
 ---
 
-# Niet-compatibele advertenties opnieuw verpakken met gebruik van de Adobe Creative Repackaging Service (CRS) {#repackage-incompatible-ads-using-adobe-creative-repackaging-service-crs}
+# Niet-compatibele advertenties opnieuw verpakken met de Adobe Creative Repackaging Service (CRS) {#repackage-incompatible-ads-using-adobe-creative-repackaging-service-crs}
 
 Sommige advertenties van derden (of creatieve objecten) kunnen niet in de HLS-inhoudsstroom (HTTP Live Streaming) worden geplaatst omdat hun video-indeling niet compatibel is met HLS. Primetime en invoeging en TVSDK kunnen desgewenst proberen incompatibele advertenties om te zetten in compatibele M3U8-video&#39;s.
 
@@ -28,12 +27,11 @@ Neem contact op met uw Adobe als u deze optionele CRS-functie wilt activeren.
 >* CRS 3.1 minimaliseert zeer netwerkvraag, verbeterend videostarttijd.
 >
 
-
 Voor meer informatie over CRS, zie [Creative Packaging Service (CRS)](https://helpx.adobe.com/content/dam/help/en/primetime/drm/drm_certificate_enrollment.pdf).
 
 ## CRS inschakelen in TVSDK-toepassingen{#enable-crs-in-tvsdk-applications}
 
-Als u CRS wilt inschakelen in uw TVSDK-toepassingen, moet u de volgende informatie instellen in de instellingen voor de accountantscontrole:
+Als u CRS wilt inschakelen in uw TVSDK-toepassingen, moet u de volgende informatie instellen in de Auditude-instellingen:
 
 1. CRS inschakelen in `AuditudeSettings`.
 

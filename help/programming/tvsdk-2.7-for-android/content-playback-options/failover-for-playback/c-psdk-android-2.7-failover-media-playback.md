@@ -1,8 +1,7 @@
 ---
 description: Voor live- en video-on-demand-media (VOD) begint TVSDK met het afspelen door de afspeellijst te downloaden die is gekoppeld aan de bitsnelheid met de middelste resolutie en worden de mediasegmenten gedownload die door die afspeellijst worden gedefinieerd. Deze selecteert snel de afspeellijst met hoge bitsnelheid en de bijbehorende media en gaat verder met het downloaden.
 title: Afspelen van media en failover
-exl-id: 3da1bde3-b685-4331-8bbe-a4c8ccdc68ed
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '595'
 ht-degree: 0%
@@ -54,3 +53,4 @@ Als de video-engine continu geen segmenten kan ophalen, beperkt deze de doorlope
 >* Tijdens een failoververrichting, kan er een profielschakelaar zijn.
 >
 >  Als een fout tijdens de download van één van playlist segmenten voorkomt, worden de controleparameters ABR zoals min/max toegestaan beetjetarief genegeerd.
+>

@@ -1,8 +1,7 @@
 ---
 description: Voer de volgende stappen uit om een basisspeler te maken met de Browser-TVSDK.
 title: Een basisspeler maken met TVSDK
-exl-id: ea7485e0-5d15-469b-b8b6-f9604d283492
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '206'
 ht-degree: 0%
@@ -48,7 +47,7 @@ Voer de volgende stappen uit om een basisspeler te maken met de Browser-TVSDK.
    ```
 
 1. Beginnen met de implementatie van `startVideo` functie.
-1. Voeg een scripttag toe en maak de `startVideo` in de tag.
+1. Voeg een scripttag toe en maak de code `startVideo` in de tag.
 
    Dit hoort in de kopsectie van de pagina te staan.
 
@@ -164,7 +163,7 @@ Voer de volgende stappen uit om een basisspeler te maken met de Browser-TVSDK.
     break;
    ```
 
-1. Nadat de speler in de PREPARED staat is, roep `play`.
+1. Nadat de speler zich in de PREPARED staat bevindt, roep `play`.
 
    ```js
    case PREPARED: 

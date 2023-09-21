@@ -2,8 +2,7 @@
 title: Overzicht
 description: Overzicht
 copied-description: true
-exl-id: 332343ce-ac22-41a5-801a-3597476f0eaf
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '133'
 ht-degree: 0%
@@ -14,6 +13,6 @@ ht-degree: 0%
 
 U moet mogelijk de referenties van een client intrekken of controleren of een bepaalde set referenties al onder bepaalde voorwaarden zijn ingetrokken. Credentials kunnen worden ingetrokken als ze gecompromitteerd zijn. Wanneer deze problemen zich voordoen, worden er geen licenties meer uitgegeven aan gecompromitteerde klanten.
 
-Adobe handhaaft de lijsten van de Intrekking van het Certificaat (CRLs) voor het terugroepen van gecompromitteerde cliënten. Deze CRLs wordt automatisch afgedwongen door SDK. Licentieservers kunnen clients verder beperken door bepaalde computerreferenties of bepaalde versies van DRM- en runtime-referenties te weigeren. A `RevocationList` kan worden gemaakt en doorgegeven aan de SDK om de referenties van de computer in te trekken. Specifieke DRM/runtime versies kunnen op DRM-beleidsniveau worden ingetrokken door modulebeperkingen in te stellen in het afspeelrecht of globaal door modulebeperkingen in te stellen in het dialoogvenster `HandlerConfiguration`.
+De Adobe handhaaft de Lijsten van de Intrekking van Certificaat (CRLs) voor het terugroepen van gecompromitteerde cliënten. Deze CRLs wordt automatisch afgedwongen door SDK. Licentieservers kunnen clients verder beperken door bepaalde computerreferenties of bepaalde versies van DRM- en runtime-referenties niet toe te staan. A `RevocationList` kan worden gemaakt en doorgegeven aan de SDK om de referenties van de computer in te trekken. Specifieke DRM/runtime versies kunnen op DRM-beleidsniveau worden ingetrokken door modulebeperkingen in te stellen in het afspeelrecht of globaal door modulebeperkingen in te stellen in het dialoogvenster `HandlerConfiguration`.
 
 De discussie is gericht op het intrekken van clientgegevens.

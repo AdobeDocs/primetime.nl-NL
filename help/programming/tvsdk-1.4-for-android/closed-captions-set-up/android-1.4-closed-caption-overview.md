@@ -1,8 +1,7 @@
 ---
 description: Bij Closed Captioning wordt het audiogedeelte van een video als tekst op het scherm weergegeven wanneer het geluid onhoorbaar is of de kijker niet goed kan worden gehoord.
 title: Selecteer een ondertitelingstrack uit de beschikbare tracks
-exl-id: ff3e0c59-bcd9-4831-804c-35e13d96f499
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '212'
 ht-degree: 0%

@@ -1,8 +1,7 @@
 ---
 description: Een opportuniteitsdetector is een TVSDK-component die aangepaste tags in een stream detecteert en plaatsingsmogelijkheden identificeert. Deze mogelijkheden worden naar de inhoudoplosser verzonden, die de inhoud/toevoegingswerkstroom op de eigenschappen van de plaatsingskans en meta-gegevens aanpast.
 title: Opportuniteitsgeneratoren en contentoplosers
-exl-id: e396eaa9-444d-4173-a534-74b29309a151
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '487'
 ht-degree: 0%
@@ -19,7 +18,7 @@ TVSDK bevat een standaardopportuniteitsdetector:
 
 TVSDK bevat ook standaardinhoudsoplossers die inhoud bieden die moet worden ingevoegd op basis van de metagegevenssleutel in het Player-item:
 
-* `AuditudeResolver` for `AUDITUDE_METADATA_KEY`, die kan communiceren met Adobe Primetime en beslissingsservers (voorheen Auditude genoemd), en kan ad-hoconderbrekingen retourneren die moeten worden geplaatst.
+* `AuditudeResolver` for `AUDITUDE_METADATA_KEY`, die kan communiceren met Adobe Primetime en beslissingsservers (voorheen bekend als Auditude) en kan terugsturen en pauzes plaatsen.
 
 * `MetadataResolver` for `JSON_METADATA_KEY`
 

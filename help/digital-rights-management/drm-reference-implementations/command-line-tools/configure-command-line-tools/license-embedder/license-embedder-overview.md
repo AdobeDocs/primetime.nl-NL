@@ -2,8 +2,7 @@
 title: Overzicht
 description: Overzicht
 copied-description: true
-exl-id: 9aebdbd0-a6f0-4c9d-be2f-a8789cadf287
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '180'
 ht-degree: 0%
@@ -23,7 +22,7 @@ java -jar AdobeLicenseEmbedder.jar sourcefile destfile [options]
 * `sourcefile` vertegenwoordigt een gecodeerd bestand.
 * `destfile` geeft de naam aan van het bestand waarin de gecodeerde inhoud met de ingesloten licentie wordt opgeslagen.
 
-   Als u een map opgeeft, wordt het bestand opgeslagen in de doelmap. De naam van het bronbestand wordt ook de naam van het bestand dat in de doelmap is opgeslagen.
+  Als u een map opgeeft, wordt het bestand opgeslagen in de doelmap. De naam van het bronbestand wordt ook de naam van het bestand dat in de doelmap is opgeslagen.
 
 In de volgende tabel worden de opdrachtregelopties beschreven die u kunt opgeven:
 

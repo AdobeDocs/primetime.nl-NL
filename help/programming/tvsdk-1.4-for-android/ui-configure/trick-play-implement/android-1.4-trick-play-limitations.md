@@ -1,8 +1,7 @@
 ---
 description: Er zijn enkele beperkingen en een aantal problemen in de manier waarop de truc-afspeelmodus zich gedraagt.
 title: Beperkingen en gedrag voor het spelen van truc
-exl-id: 98558970-9e5e-4dc1-a327-63d9db1d4fed
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '364'
 ht-degree: 0%
@@ -17,11 +16,11 @@ Er zijn enkele beperkingen en een aantal problemen in de manier waarop de truc-a
 
 Hier volgen de beperkingen voor de modus voor het spelen van truc:
 
-* De master afspeellijst moet alleen I-frame-segmenten bevatten. Alleen de keyframes van de I-frame track worden op het scherm weergegeven.
+* De hoofdafspeellijst moet alleen I-frame-segmenten bevatten. Alleen de keyframes van de I-frame track worden op het scherm weergegeven.
 * De audiotrack en gesloten bijschriften zijn uitgeschakeld.
 * De logica voor de adaptieve bitsnelheid (ABR) is uitgeschakeld. TVSDK selecteert één beetjetarief tussen het laagste verstrekte tarief en 800 kbps en gebruikt dat tarief tijdens de volledige truc-spelzitting.
 * Afspelen en pauzeren zijn ingeschakeld.
-* Seek is niet toegestaan. Om te zoeken, roep `pause` om de speelwijze van de truc weg te gaan en dan te roepen `seek`.
+* Seek is niet toegestaan. Om te zoeken, roep `pause` om de speelwijze van de truc te verlaten en dan te roepen `seek`.
 
 * U kunt van truc spelwijze in om het even welk toegestaan playbacktarief (spel of pauze) gaan.
 * Wanneer advertenties in de stream worden opgenomen:
@@ -33,4 +32,4 @@ Hier volgen de beperkingen voor de modus voor het spelen van truc:
    * De `MediaPlayerEvent.AD_BREAK_SKIPPED` -gebeurtenis wordt verzonden vlak voordat een advertentieeinde wordt overgeslagen. De speler kan deze gebeurtenis gebruiken om aangepaste logica te implementeren met betrekking tot overgeslagen en verbroken bewerkingen.
    * Als u een truc afsluit, wordt hetzelfde ad-playbackbeleid aangeroepen als wanneer u een zoekopdracht afsluit.
 
-      Daarom hangt het gedrag, net als bij het zoeken, af van het feit of het afspeelbeleid van uw toepassing afwijkt van het standaardbeleid. Standaard wordt het laatste overgeslagen en afgebroken geluid afgespeeld op het punt waar u de speelmodus hebt verlaten.
+     Daarom hangt het gedrag, net als bij het zoeken, af van het feit of het afspeelbeleid van uw toepassing afwijkt van het standaardbeleid. Standaard wordt het laatste overgeslagen en afgebroken geluid afgespeeld op het punt waar u de speelmodus hebt verlaten.

@@ -1,8 +1,7 @@
 ---
 title: Gebruikershandleiding voor Primetime TVE-dashboard
 description: Gebruikershandleiding voor Primetime TVE-dashboard
-exl-id: 6f7f7901-db3a-4c68-ac6a-27082db9240a
-source-git-commit: bfc3ba55c99daba561255760baf273b6538a3c6e
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '4386'
 ht-degree: 0%
@@ -57,23 +56,23 @@ Om tussen milieu&#39;s te schakelen, kan de gebruiker op het gewenste milieu kli
 
 ![Vervolgkeuzelijst voor TVE-dashboardomgevingen](assets/tve-dashboard-env.png)
 
-*Afbeelding 2: De vervolgkeuzelijst Adobe Primetime TVE-dashboardomgevingen*
+*Afbeelding 2: vervolgkeuzelijst voor Adobe Primetime TVE-dashboardomgevingen*
 
 >[!IMPORTANT]
 >Het is zeer belangrijk om op te merken dat wanneer het aanbrengen van administratieve veranderingen in uw configuratie van de Authentificatie van Adobe Primetime door het Dashboard van TVE, wij u sterk adviseren om de hieronder opeenvolging te volgen om correcte functionaliteit te verzekeren.
 
 Beheerwijzigingen aanbrengen in uw Adobe Primetime-verificatieconfiguratie via het TVE-dashboard:
 
-* Voer de wijzigingen uit in [Staging vrijgeven en valideren](http://sp.auth-staging.adobe.com/apitest/api.html).
-* Voer de wijzigingen uit in [Prequente productie en validatie hiervan](http://sp.auth-staging.adobe.com/apitest/api.html).
-* Voer de wijzigingen uit in [Productie vrijgeven en valideren](http://sp.auth-staging.adobe.com/apitest/api.html).
+* Wijzigingen uitvoeren in [Staging vrijgeven en valideren](http://sp.auth-staging.adobe.com/apitest/api.html).
+* Wijzigingen uitvoeren in [Prequente productie en validatie hiervan](http://sp.auth-staging.adobe.com/apitest/api.html).
+* Wijzigingen uitvoeren in [Productie vrijgeven en valideren](http://sp.auth-staging.adobe.com/apitest/api.html).
 
 >[!IMPORTANT]
 >Voor de administratieve veranderingen om levend te gaan, moeten de gebruikers aan de &quot;Overzicht en de Duw sectie van Veranderingen&quot;door de knoop te selecteren, die in het bodem-linkergedeelte van sidebar zal verschijnen, om veranderingen te herzien, een beschrijving voor de pas gecreëerde veranderingen toe te voegen en de configuratieupdate te bevestigen door &quot;de Duw Configuratie&quot;te selecteren.
 
 ![Het dashboard van de duw- overzicht](assets/tve-review-push-notifications.png)
 
-*Figuur 3: De Adobe Primetime TVE Dashboard Review en Push Changes-melding*
+*Afbeelding 3: De Adobe Primetime TVE-dashboardrevisie en pushmelding*
 
 ## Secties {#sections}
 
@@ -83,12 +82,12 @@ Gebruikers die werken voor mediabedrijven (programmeurs) hebben via het zijpanee
 * **Programmeurs** - Bevat instellingen die betrekking hebben op een of meer bovenliggende organisaties **Kanalen**
 * **Integraties** - Bevat instellingen die betrekking hebben op de integratie tussen **Kanalen** en **MVPD&#39;s**
 * **MVPD&#39;s** - Bevat instellingen die betrekking hebben op de beschikbare **MVPD&#39;s**
-* **Rapporten** - Bevat geaggregeerde gegevens voor drie typen rapporten: AuthN TTL, AuthZ TTL, SSO
+* **Rapporten** - Bevat geaggregeerde gegevens voor drie soorten rapporten: AuthN TTL, AuthZ TTL, SSO
 * **Logbestand wijzigen** - Bevat de meest recente wijzigingen die zijn toegepast op de TVE-dashboardconfiguratie
 
 ![TVE-dashboardsecties](assets/tve-dashboard-sections.png)
 
-*Figuur 4: De Adobe Primetime TVE-dashboardsecties*
+*Afbeelding 4: De Adobe Primetime TVE-dashboardsecties*
 
 ### Kanalen {#tve-db-channels-section}
 
@@ -96,25 +95,25 @@ In deze sectie kunt u instellingen voor beschikbare kanalen weergeven en bewerke
 
 * **Kanaalgegevens**
    * **Kanaal-id** - De unieke id van het kanaal die in ons systeem wordt gebruikt, ook wel &quot;aanvraag-id&quot; genoemd.
-   * **Weergavenaam** - De handelsnaam van het Kanaal.
+   * **Weergavenaam** - De handelsnaam van Channel.
 * **Algemene instellingen**
    * **Analyseconfiguratie** - Configureer Adobe Primetime-verificatiegebeurtenissen die naar Adobe Analytics moeten worden doorgestuurd. Gelieve te contacteren Adobe voor meer details over hoe identiteitskaart van de Reeks van het Rapport (RSID) moet worden gevormd alvorens deze eigenschap toe te laten.
 * **Certificaten**
 
-   Bevat de lijst van certificaten die in de authentificatiestroom naast hun het uitgeven organisatie, het uitgeven datum en vervaldatum worden gebruikt. Deze certificaten fungeren als openbare/persoonlijke sleutels en worden gebruikt voor validatiedoeleinden.
+  Bevat de lijst van certificaten die in de authentificatiestroom naast hun het uitgeven organisatie, het uitgeven datum en vervaldatum worden gebruikt. Deze certificaten fungeren als openbare/persoonlijke sleutels en worden gebruikt voor validatiedoeleinden.
 * **Domeinen**
 
-   Bevat de lijst van domeinen waarvan het respectieve Kanaal met de Authentificatie van Adobe Primetime zal communiceren.
+  Bevat de lijst van domeinen waarvan het respectieve Kanaal met de Authentificatie van Adobe Primetime zal communiceren.
 * **Integraties**
 
-   Bevat de lijst van integraties met beschikbare MVPDs, naast de status van elke integratie die zou kunnen worden toegelaten of niet. Navigeren naar de pagina Integratie is beschikbaar door op een specifieke vermelding te klikken.
+  Bevat de lijst van integraties met beschikbare MVPDs, naast de status van elke integratie die zou kunnen worden toegelaten of niet. Navigeren naar de pagina Integratie is beschikbaar door op een specifieke vermelding te klikken.
 * **Geregistreerde toepassingen**
 
-   Bevat de lijst met toepassingsregistraties. Raadpleeg het document voor meer informatie [Dynamisch clientregistratiebeheer](/help/authentication/dynamic-client-registration-management.md).
+  Bevat de lijst met toepassingsregistraties. Raadpleeg het document voor meer informatie [Dynamisch clientregistratiebeheer](/help/authentication/dynamic-client-registration-management.md).
 
 * **Aangepaste schema&#39;s**
 
-   Bevat de lijst met aangepaste schema&#39;s. Zie voor meer informatie [iOS/tvOS-toepassingsregistratie](/help/authentication/iostvos-application-registration.md) en [Dynamisch clientregistratiebeheer](/help/authentication/dynamic-client-registration-management.md)
+  Bevat de lijst met aangepaste schema&#39;s. Zie voor meer informatie [iOS/tvOS-toepassingsregistratie](/help/authentication/iostvos-application-registration.md) en [Dynamisch clientregistratiebeheer](/help/authentication/dynamic-client-registration-management.md)
 
 
 #### Domeinen toevoegen/verwijderen {#add-delete-domains}
@@ -137,19 +136,19 @@ In deze sectie kunt u instellingen weergeven en bewerken voor beschikbare progra
 
 * **Certificaten**
 
-   Bevat de lijst van certificaten die in de authentificatiestroom naast hun het uitgeven organisatie, het uitgeven datum en vervaldatum worden gebruikt. Deze certificaten fungeren als openbare/persoonlijke sleutels en worden gebruikt voor validatiedoeleinden.
+  Bevat de lijst van certificaten die in de authentificatiestroom naast hun het uitgeven organisatie, het uitgeven datum en vervaldatum worden gebruikt. Deze certificaten fungeren als openbare/persoonlijke sleutels en worden gebruikt voor validatiedoeleinden.
 
 * **Kanalen**
 
-   Bevat de lijst met kanalen die bij deze specifieke programmeur horen. U kunt navigeren naar de sectie Kanalen door op een bepaald item te klikken.
+  Bevat de lijst met kanalen die bij deze specifieke programmeur horen. U kunt navigeren naar de sectie Kanalen door op een bepaald item te klikken.
 
 * **Geregistreerde toepassingen**
 
-   Bevat de lijst met toepassingsregistraties. Zie voor meer informatie [Dynamisch clientregistratiebeheer](/help/authentication/dynamic-client-registration-management.md).
+  Bevat de lijst met toepassingsregistraties. Zie voor meer informatie [Dynamisch clientregistratiebeheer](/help/authentication/dynamic-client-registration-management.md).
 
 * **Aangepaste schema&#39;s**
 
-   Bevat de lijst met aangepaste schema&#39;s. Zie voor meer informatie [iOS/tvOS-toepassingsregistratie](/help/authentication/iostvos-application-registration.md) en [Dynamisch clientregistratiebeheer](/help/authentication/dynamic-client-registration-management.md).
+  Bevat de lijst met aangepaste schema&#39;s. Zie voor meer informatie [iOS/tvOS-toepassingsregistratie](/help/authentication/iostvos-application-registration.md) en [Dynamisch clientregistratiebeheer](/help/authentication/dynamic-client-registration-management.md).
 
 
 ### Integraties {#tve-db-integrations-sec}
@@ -158,13 +157,13 @@ Deze sectie staat het bekijken en het uitgeven montages voor integratie tussen K
 
 * **Integratiegegevens**
    * **Integratie-id**- Het resultaat van het toevoegen van unieke id van MVPD aan unieke identiteitskaart van het Kanaal die door &quot;_&quot;karakter wordt gescheiden.
-   * **Weergavenaam kanaal** - De handelsnaam van het Kanaal.
+   * **Weergavenaam kanaal** - De handelsnaam van Channel.
    * **Kanaal-id** - De unieke id van het kanaal die in ons systeem wordt gebruikt, ook wel &quot;aanvraag-id&quot; genoemd.
    * **Weergavenaam MVPD** - de handelsnaam van het MVPD.
    * **MVPD-id** - De unieke id van de MVPD die in ons systeem wordt gebruikt.
 * **Algemene instellingen**
    * **Metagegevenstoetsen gebruiker** - Configureer metagegevenssleutels die beschikbaar zijn voor de specifieke integratie.
-   * **Platform-specifieke instellingen** - Vorm verschillende montages aan een specifiek platform (bijvoorbeeld, TTLs, SSO, en IFrames).
+   * **Platformspecifieke instellingen** - Vorm verschillende montages aan een specifiek platform (bijvoorbeeld, TTLs, SSO, en IFrames).
 
 * **Verificatie-instellingen**
    * Bevat instellingen die verwant zijn aan de Adobe Primetime-verificatiefunctie.
@@ -209,7 +208,7 @@ In het geval van zowel de modi Standaard als Geavanceerd van de werkruimte, kunn
 
 
 >[!IMPORTANT]
->Het is belangrijk dat u de keten van instellingen voor overerving begrijpt: MVPD -> Eindpunt MVPD -> Integratie -> Platform, waar Platform de meest specifieke waarde en MVPD het meest generische gebrek heeft.
+>Het is belangrijk om de ketting van de montageenovererving te begrijpen: MVPD -> Eindpunt MVPD -> Integratie -> Platform, waar Platform de meest specifieke waarde en MVPD de meest generische gebrek heeft.
 
 ![](assets/inheritance-chain-component.png)
 
@@ -217,15 +216,15 @@ In het geval van zowel de modi Standaard als Geavanceerd van de werkruimte, kunn
 *Figuur 6. De eigenschapoverervingsketen van de Adobe Primetime TVE-dashboard*
 
 
-#### Platform-specifieke instellingen {#platform-sp-settings}
+#### Platformspecifieke instellingen {#platform-sp-settings}
 
 Deze subsectie kan worden gebruikt om de montages voor specifieke platforms met voeten te treden. De beschikbare platforms zijn:
 
-* **Alle Platforms** - Stel waarden in die op alle platforms worden toegepast, ongeacht de programmeerimplementaties voor het geval er geen andere waarden zijn ingesteld voor een bepaald platform.
+* **Alle platforms** - Stel waarden in die op alle platforms worden toegepast, ongeacht de programmeerimplementaties voor het geval er geen andere waarden zijn ingesteld voor een bepaald platform.
 * **Android** - Stel waarden in die op de programmeerimplementaties worden toegepast via de Adobe Primetime Authentication Android SDK.
 * **REST-API zonder client** - Stel waarden in die op de programmeerimplementaties worden toegepast via de Adobe Primetime Authentication REST API.
 * **Fire TV** - Stel waarden in die op de programmeerimplementaties worden toegepast via Adobe Primetime Authentication FireTV SDK.
-* **Flash SDK** - Dit platform is verouderd. **verouderd**
+* **FLASH SDK** - Dit platform is verouderd. **verouderd**
 * **JavaScript SDK** - Stel waarden in die op de programmeerimplementaties worden toegepast via Adobe Primetime Authentication JavaScript SDK.
 * **Roku** - Stel waarden in die op de programmeerimplementaties worden toegepast via de Adobe Primetime Authentication REST API en die &quot;Roku&quot; verzenden als apparaattype. In het geval van Roku-apparaten heeft dit voorrang op de waarden die zijn ingesteld voor het Clientless REST API-platform.
 * **Xbox native SDK** - Dit platform is verouderd. **verouderd**
@@ -237,34 +236,34 @@ Deze subsectie kan worden gebruikt om de montages voor specifieke platforms met 
 
 ![](assets/platform-sp-settings.png)
 
-*Figuur 7. Specifieke instellingen voor het Adobe Primetime TVE-dashboard voor Platforms*
+*Figuur 7. Specifieke instellingen van het Adobe Primetime TVE-dashboard Platform*
 
 
-#### Single Sign On van Platform inschakelen {#enable-platform-sso}
+#### Eenmalige aanmelding platform inschakelen {#enable-platform-sso}
 
 Volg de onderstaande stappen om Single Sign On in-/uit te schakelen voor een specifieke integratie en een specifiek platform:
 
 * zorg ervoor u de Geavanceerde wijze van de Werkruimte gebruikt
-* navigeer naar de gewenste integratie
+* naar de gewenste integratie gaan
 * navigeer naar de **Algemene instellingen** tab
 * Selecteer het gewenste platform waarop u Single Sign On wilt in- of uitschakelen
 * schakelen tussen **Single Sign On inschakelen** markering naar de gewenste waarde (Ja/Nee)
 
-   >[!IMPORTANT]
-   >Het is belangrijk op te merken dat de **Single Sign On inschakelen** Markering is alleen beschikbaar voor iOS-, tvOS-, Roku- en FireTV-platforms en alleen voor integratie met MVPD&#39;s die Single Sign On voor deze platforms ondersteunen.
+  >[!IMPORTANT]
+  >Het is belangrijk op te merken dat de **Single Sign On inschakelen** Markering is alleen beschikbaar voor iOS-, tvOS-, Roku- en FireTV-platforms en alleen voor integratie met MVPD&#39;s die Single Sign On voor deze platforms ondersteunen.
 
-* schakelen tussen **Machtiging Platform afdwingen** markering naar de gewenste waarde (Ja/Nee)
+* schakelen tussen **Permis platform afdwingen** markering naar de gewenste waarde (Ja/Nee)
 
-   >[!IMPORTANT]
-   >Het is belangrijk op te merken dat de **Machtiging Platform afdwingen** De markering bepaalt of het besluit van de gebruiker om platformtoegang tot zijn/haar abonnement op een tv-provider toe te staan of te weigeren al dan niet wordt afgedwongen. Het scenario in overweging nemen wanneer **Single Sign On inschakelen** markering is ingesteld op &quot;Ja&quot;, **Machtiging Platform afdwingen** De markering is ook ingesteld op &quot;Ja&quot; en de gebruiker geeft de keuze om platformtoegang te weigeren tot zijn/haar abonnement op de tv-provider. De desbetreffende toepassing (kanaal) kan dan het Adobe Primetime-verificatietoken dat door een andere toepassing (kanaal) wordt verkregen, niet gebruiken.
+  >[!IMPORTANT]
+  >Het is belangrijk op te merken dat de **Permis platform afdwingen** De markering bepaalt of het besluit van de gebruiker om platformtoegang tot zijn/haar abonnement op een tv-provider toe te staan of te weigeren al dan niet wordt afgedwongen. Het scenario in overweging nemen wanneer **Single Sign On inschakelen** markering is ingesteld op &quot;Ja&quot;, **Permis platform afdwingen** De markering is ook ingesteld op &quot;Ja&quot; en de gebruiker geeft de keuze om platformtoegang te weigeren tot zijn/haar abonnement op de tv-provider. De desbetreffende toepassing (kanaal) kan dan het Adobe Primetime-verificatietoken dat door een andere toepassing (kanaal) wordt verkregen, niet gebruiken.
 
 
 #### Verificatie op thuisbasis inschakelen {#enable-hba}
 
-Volg onderstaande stappen om HomeBase-verificatie in of uit te schakelen voor **OAuth2** op basis van MVPD&#39;s:
+Volg onderstaande stappen om HomeBase-verificatie in of uit te schakelen voor **OAuth2** gebaseerde MVPD&#39;s:
 
 * zorg ervoor u de Geavanceerde wijze van de Werkruimte gebruikt
-* navigeer naar de gewenste integratie
+* naar de gewenste integratie gaan
 * navigeren naar **Verificatie-instellingen** tab
 * navigeren naar **AuthN dynamische regels** subtab
 * schakelen tussen **Attempt HBA** markering naar de gewenste waarde (Ja/Nee)
@@ -286,11 +285,11 @@ Deze sectie staat het bekijken montages voor beschikbare MVPDs toe. Wanneer u op
    * **Voorvertoning logo** - De commerciële voorvertoning van het MVPD-logo door deze te downloaden van de bovenstaande URL (Uniform Resource Locator).
 * **Algemene instellingen**
    * **Metagegevenstoetsen gebruiker**
-      * De sleutels van meta-gegevens beschikbaar voor specifieke MVPD.
+      * Metagegevenssleutels beschikbaar voor specifieke MVPD.
    * **Eigenschappen van clientgegevens**
       * **Auth/Aggregator** - Als de reeks aan &quot;ja&quot;, dan een nieuw authentificatietoken nodig is voor elk nieuw Kanaal de gebruiker probeert toegang te hebben.
       * **Passieve AuthN ingeschakeld** - Als de Auth/Aggregator vlag aan &quot;ja&quot;wordt geplaatst en als Passive AuthN Toegelaten aan &quot;ja&quot;wordt geplaatst, dan zal het authentificatieproces met een ander Kanaal op de achtergrond zonder de behoefte aan volledige browser omleiding en de plukker gebeuren die wordt getoond.
-      * **Auth/browser sessie** - Indien ingesteld op &quot;Ja&quot;, wordt de gebruiker afgemeld nadat de browser is gesloten. Als deze optie is ingesteld op Nee, kan de gebruiker de browser opnieuw starten en blijven aanmelden.
+      * **Auth/browser sessie** - Indien ingesteld op &quot;Ja&quot;, wordt de gebruiker afgemeld nadat de browser is gesloten. Als deze optie is ingesteld op &quot;Nee&quot;, kan de gebruiker de browser opnieuw starten en blijven aanmelden.
       * **IFrame vereist** - Indien ingesteld op &quot;Ja&quot;, geeft dit aan dat voor het MVPD-aanmeldvenster een iFrame is vereist. De velden &quot;iFrame-breedte&quot; en &quot;iFrame-hoogte&quot; geven de grootte aan die nodig is voor de iFrame die de MVPD-aanmeldingspagina laadt.
 * **Verificatie-instellingen**
    * **Eindpunt selecteren**
@@ -300,7 +299,7 @@ Deze sectie staat het bekijken montages voor beschikbare MVPDs toe. Wanneer u op
    * **AuthN-certificaten**
       * Op dit subtabblad worden de certificaten weergegeven die door het MVPD worden gebruikt in de verificatiestroom, naast de organisatie van de uitgever, de datum van afgifte en de vervaldatum. Deze certificaten fungeren als openbare/persoonlijke sleutels en worden gebruikt voor validatiedoeleinden.
    * **AuthN dynamische regels**
-      * Dit subtabblad bevat de regels die van toepassing zijn op het verificatieproces. Door op het Verzoek/de Reactie/Token van het diagram te drukken, kunt u als benadrukte parameters zien die op dat deel van de authentificatiestroom worden toegepast.
+      * Op dit subtabblad worden de regels weergegeven die van toepassing zijn op het verificatieproces. Door op het Verzoek/de Reactie/Token van het diagram te drukken, kunt u als benadrukte parameters zien die op dat deel van de authentificatiestroom worden toegepast.
 * **Autorisatie-instellingen**
    * **Eindpunt selecteren**
       * Dit gebied wijst op het vergunningseindpunt dat door MVPD wordt blootgesteld. Het eindpunt kan verschillen afhankelijk van het gebruikte vergunningsprotocol. De beschikbare vergunningsprotocollen zijn ZEEP, REST (voor cliëntless apparaten), SAML, XACML en OAUTH.
@@ -310,8 +309,8 @@ Deze sectie staat het bekijken montages voor beschikbare MVPDs toe. Wanneer u op
          * Het beschrijft het aantal middelen die door MVPD in één enkele vraag kunnen worden gepreautoriseerd, het gebruikte model PreFlight, evenals de onderbrekingsdrempel. Soms kan het aantal bronnen voor een bepaalde integratie verschillen. Dit kan worden beheerd door de &quot;**Max. aantal Preflight-bronnen**&quot;, beschikbaar onder het tabblad Algemene instellingen. Deze eigenschap is alleen beschikbaar voor een bepaalde integratie en als deze is ingesteld, wordt deze gebruikt in plaats van de waarde die is gedefinieerd in Autorisatie-instellingen -> PreFlight-configuratie -> PreFlight Max Resources.
       * **DOS-beveiliging**
          * Het beschrijft de ontkenning-van-dienst bescherming op het MVPD toestemmingseindpunt. Voor een exacte beschrijving van elk veld bekijkt u de knopinfo door de muisaanwijzer op de velden DOS Protection te plaatsen.
-      * Als de MVPD een **TempPass** en de **Algemene instellingen van AuthZ** bevat ook informatie over de TempPass-duur.
-      * Als de MVPD een **FlexibleTempPass** en de **Algemene instellingen van AuthZ** bevat ook informatie over de TempPass-duur, het maximumaantal bronnen en het identificatieveld (zie de afbeelding hieronder).
+      * Als de MVPD een **TempPass** en vervolgens de **Algemene instellingen van AuthZ** bevat ook informatie over de TempPass-duur.
+      * Als de MVPD een **FlexibleTempPass** en vervolgens de **Algemene instellingen van AuthZ** bevat ook informatie over de TempPass-duur, het maximumaantal bronnen en het identificatieveld (zie de afbeelding hieronder).
    * **AuthZ-certificaten**
       * Op dit subtabblad worden de certificaten weergegeven die door het MVPD in de vergunningsstroom worden gebruikt, naast de organisatie van de uitgevende instelling, de datum van afgifte en de vervaldatum. Deze certificaten fungeren als openbare/persoonlijke sleutels en worden gebruikt voor validatiedoeleinden.
    * **AuthZ dynamische regels**
@@ -340,13 +339,13 @@ Alle rapporten groeperen waarden over de volgende platforms:
 **BROWSERS**
 Geeft waarden weer die worden toegepast op de programmeerimplementaties via Adobe Primetime Authentication JavaScript SDK.
 
-**MOBIEL: iOS**
+**MOBIEL: IOS**
 Geeft waarden weer die worden toegepast op de programmeerimplementaties via Adobe Primetime Authentication iOS SDK.
 
 **MOBIEL: ANDROID**
 Geeft waarden weer die worden toegepast op de programmeerimplementaties via de Adobe Primetime Authentication Android SDK.
 
-**MOBIEL: ANDEREN**
+**MOBIEL: ANDERE**
 Geeft waarden weer die worden toegepast op de programmeerimplementaties via de Adobe Primetime Authentication REST API die is ontwikkeld voor mobiele apparaten.
 
 **TVCD: ROKU**
@@ -358,15 +357,15 @@ Geeft waarden weer die worden toegepast op de programmeerimplementaties via Adob
 **TVCD: APPLETV**
 Geeft waarden weer die worden toegepast op de programmeerimplementaties via Adobe Primetime Authentication tvOS SDK.
 
-**TVCD: ANDEREN**
+**TVCD: ANDERE**
 Geeft waarden weer die worden toegepast op de programmeerimplementaties via de Adobe Primetime Authentication REST API die is ontwikkeld voor apparaten die zijn aangesloten op een televisie.
 
-**Platform: ONBEKEND**
+**PLATFORM: ONBEKEND**
 De waarden van vertoningen die op de implementaties van de Programmer zullen worden toegepast waarvoor de diensten van de Authentificatie van Adobe Primetime een onbekend apparatentype ontdekken.
 
-Herzie het mechanisme van [clientgegevens doorgeven](/help/authentication/passing-client-information-device-connection-and-application.md) naar Adobe Primetime Authentication REST API&#39;s of SDK&#39;s voor meer informatie over het verzenden van het gewenste apparaattype (bijvoorbeeld &#39;Roku&#39;).
+Het mechanisme van [clientgegevens doorgeven](/help/authentication/passing-client-information-device-connection-and-application.md) naar Adobe Primetime Authentication REST API&#39;s of SDK&#39;s voor meer informatie over het verzenden van het gewenste apparaattype (bijvoorbeeld &#39;Roku&#39;).
 
-Alle rapporten verzamelen gegevens verwerkte waarden op basis van de configuratie die specifiek is voor elke Adobe Primetime-verificatieomgeving. Daarom kunt u verschillende rapportgegevens verwachten wanneer u overschakelt tussen verschillende TVE-dashboardomgevingen.
+Alle rapporten verzamelen gegevens verwerkte waarden op basis van de configuratie die voor elke milieu van de Authentificatie van Adobe Primetime specifiek is. Daarom kunt u verschillende rapportgegevens verwachten wanneer u overschakelt tussen verschillende TVE-dashboardomgevingen.
 
 Controleer de [Omgevingen](#authn-environments) voor meer informatie over de beschikbare omgevingen voor Adobe Primetime-verificatie.
 
@@ -406,7 +405,7 @@ Als u naar dit type rapport wilt navigeren, klikt u op het tabblad &quot;AuthN T
 
 ![AuthN TTL-rapporten](assets/authn-ttl-reports.png)
 
-*Figuur 8: Het tabblad Adobe Primetime TVE-dashboard AuthN TTL-rapport*
+*Afbeelding 8: Het tabblad AuthN TTL-rapport van het Adobe Primetime TVE-dashboard*
 
 De tabel AuthN TTL-rapporten bevat pagina&#39;s die horizontaal en verticaal schuifbaar zijn, afhankelijk van de schermgrootte.
 
@@ -452,7 +451,7 @@ Als u naar dit type rapport wilt navigeren, klikt u op &quot;**SSO-rapporten**&q
 ![Tabblad SSO-rapporten voor TVE-dashboard](assets/sso-reports.png)
 
 
-*Figuur 10: Het tabblad SSO-rapporten van het Adobe Primetime TVE-dashboard*
+*Afbeelding 10: Het tabblad SSO-rapporten van het Adobe Primetime TVE-dashboard*
 
 De tabel SSO-rapporten bevat pagina&#39;s en is horizontaal en verticaal schuifbaar, afhankelijk van de schermgrootte.
 
@@ -471,17 +470,17 @@ Deze sectie staat ook de vergelijking van twee lijstingangen toe om de specifiek
 
 ### Feedback {#tve-db-feedback-sec}
 
-In deze sectie kunnen gebruikers feedback verzenden. Voer de stappen uit om feedback te geven aan het productteam voor Adobe Primetime Authentication:
+In deze sectie kunnen gebruikers feedback verzenden. Voer de volgende stappen uit om feedback te geven aan het productteam voor Adobe Primetime-verificatie:
 
-* Klik op de knop &quot;Feedback&quot; aan de rechterkant van het scherm
+* Klik op de knop Feedback rechts op het scherm
 * onderwerp invoeren
 * Voer het bericht in
-* Indien nodig een schermafbeelding uploaden naar het bericht door op de knop &quot;Schermafbeelding uploaden&quot; te klikken
+* upload zo nodig een screenshot naar het bericht door op de knop &quot;Schermafbeelding uploaden&quot; te klikken
 * Klik op Verzenden
 
 ![feedbackformulier voor tve dashboard](assets/tve-dashboard-feedback.png)
 
-*Figuur 11: Het gedeelte Adobe Primetime TVE-dashboard Feedback*
+*Afbeelding 11: De sectie Feedback op het Adobe Primetime TVE-dashboard*
 
 Zie de onderstaande koppelingen voor instructies over het vastleggen van schermafbeeldingen:
 
@@ -496,7 +495,7 @@ Zie de onderstaande koppelingen voor instructies over het vastleggen van scherma
 ![TVE-toepassing in onderhoudsmodus](assets/tveapp-maintenance-mode.png)
 
 
-*Afbeelding: TVE App in onderhoudsmodus*
+*Afbeelding: TVE-toepassing in de modus Onderhoud*
 
 
 Als het TVE-dashboard zich in de &quot;onderhoudsmodus&quot; bevindt, kunnen gebruikers geen nieuwe wijzigingen bekijken of aanbrengen.
@@ -508,7 +507,7 @@ Als dit gebeurt, moet u wachten tot het technische team voor Adobe Primetime-ver
 ![TVE-toepassing in verminderde toestand](assets/tve-degraded-state.png)
 
 
-*Afbeelding: TVE-toepassing in verminderde toestand*
+*Afbeelding: TVE-toepassing in gestoord bedrijf*
 
 Als het TVE-dashboard zich in een &#39;gedegradeerde status&#39; bevindt, zullen gebruikers niet over zoekmogelijkheden en sorteermogelijkheden beschikken, maar kunnen gebruikers wel nieuwe wijzigingen bekijken of aanbrengen.
 

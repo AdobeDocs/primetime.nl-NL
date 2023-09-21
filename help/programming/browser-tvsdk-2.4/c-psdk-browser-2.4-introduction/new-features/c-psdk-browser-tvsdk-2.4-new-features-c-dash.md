@@ -1,8 +1,7 @@
 ---
 description: Browser TVSDK steunt een aantal eigenschappen DASH die u kunt uitvoeren om functionaliteit aan uw videotoepassingen toe te voegen.
 title: Ondersteunde DASH-functies
-exl-id: 29a5d1a3-e31e-459c-90b5-80227df46e4b
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '484'
 ht-degree: 0%
@@ -124,19 +123,19 @@ De volgende functies worden ondersteund:
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> Inhoud beschermen </td> 
+   <td colname="col1"> Inhoudsbeveiliging </td> 
    <td colname="col2"> VOD + Live </td> 
    <td colname="col3"> AES-128 </td> 
    <td colname="col6"> Niet ondersteund </td>
   </tr> 
   <tr> 
-   <td colname="col1"> Inhoud beschermen </td> 
+   <td colname="col1"> Inhoudsbeveiliging </td> 
    <td colname="col2"> VOD + Live </td> 
    <td colname="col3"> Sample-AES </td> 
    <td colname="col6"> Niet ondersteund </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> Inhoud beschermen </td> 
+   <td colname="col1"> Inhoudsbeveiliging </td> 
    <td colname="col2"> VOD </td> 
    <td colname="col3"> DRM </td> 
    <td colname="col6"> 
@@ -148,13 +147,13 @@ De volgende functies worden ondersteund:
        <li id="li_BC06B0A6EAAC4FC991C713775A8BB4DA">Chromecast </li> 
       </ul> </li> 
      <li id="li_D48B51C2208F423CB85D08886C2E1C66">PlayReady in Internet Explorer op Windows 8.1 en Edge </li> 
-     <li id="li_2786AC19387241A296E015EE6FD07F2D">Adobe Access voor Windows Firefox (alleen video) </li> 
+     <li id="li_2786AC19387241A296E015EE6FD07F2D">Toegang tot Adobe voor Windows Firefox (alleen video) </li> 
     </ul> </td> 
   </tr> 
  </tbody> 
 </table>
 
-## Geavanceerde afspeelfuncties DASH {#dash-advanced-playback}
+## Geavanceerde DASH-afspeelfuncties {#dash-advanced-playback}
 
 | Categorie | Inhoudstype | Functie | HTML5, FF, IE, Chrome, Android-chroom |
 |---|---|---|---|

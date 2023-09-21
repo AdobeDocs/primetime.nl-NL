@@ -1,8 +1,7 @@
 ---
 description: Dit onderwerp beschrijft prestaties-verwante overwegingen. Om het even welke montages in het globale configuratiedossier genoemd flashaccess-global.xml beïnvloeden prestaties.
 title: Globaal configuratiebestand
-exl-id: 52d41476-d352-4c02-8af6-25c0fe6bcaa7
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '309'
 ht-degree: 0%
@@ -25,15 +24,15 @@ Het configuratiebestand bevat de volgende instellingselementen:
 
 * `refreshDelaySeconds` Bepaalt hoe vaak de server controleert op updates van de configuratiebestanden. Een lage waarde voor `refreshDelaySeconds` de prestaties negatief beïnvloeden terwijl een hogere waarde de prestaties kan verbeteren.
 
-   Zie *Configuratiebestanden bijwerken* voor meer informatie over `refreshDelaySeconds`.
+  Zie *Configuratiebestanden bijwerken* voor meer informatie over `refreshDelaySeconds`.
 
 * `numTenants` geeft het aantal huurders aan. Een waarde die lager is dan het aantal huurders heeft invloed op de prestaties omdat aanvragen bij de resterende huurders resulteren in cacheproblemen. Een geheim voorgeheugen mist voor om het even welke configuratiegegevens negatief beïnvloedt prestaties. Daarom wordt geadviseerd dat u deze waarde hoger dan het aantal huurders plaatst die voor de server worden gevormd tenzij er geheugenbeperkingen zijn die u moet overwegen.
 
 * `<Logging>` De `<Logging>` het element specificeert het registrerenniveau en de frequentie waarmee de logboekdossiers worden gerold. De `<Logging>` element ondersteunt de volgende syntaxis:
 
-   ```
-   <Logging level="..." rollingFrequency="..."/>
-   ```
+  ```
+  <Logging level="..." rollingFrequency="..."/>
+  ```
 
 * `<level>`  `level` geeft berichten aan voor een logboek. Een waarde van `DEBUG` Geeft vele logboekberichten op, die prestaties negatief kunnen beïnvloeden. U wordt aangeraden een instelling voor `WARN` voor optimale prestaties. Deze waarde kan echter resulteren in het verliezen van essentiële runtime-informatie, zoals licentiecontroles. Als u logboekinformatie met minimale prestatiesgevolgen wilt bewaren, moet u een waarde van toepassen `INFO`.
 

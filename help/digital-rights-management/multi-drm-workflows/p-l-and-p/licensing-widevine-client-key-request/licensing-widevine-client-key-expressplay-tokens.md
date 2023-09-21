@@ -1,8 +1,7 @@
 ---
 description: U kunt ExpressSplaytokens voor hun gecodeerde inhoud genereren door tokenverzoeken naar de juiste Expressplaytokenserver te verzenden.
 title: Expressplaytokens
-exl-id: 38faba06-6737-4dec-ac97-27db3124b993
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '131'
 ht-degree: 0%
@@ -24,7 +23,7 @@ token?customerAuthenticator=<your expressplay customer authenticator>
 &hdcpOutputControl=0
 ```
 
-De opslag-id van de inhoudscoderingssleutel of CEKSID die aan de `kid` parameter en de coderingssleutel voor de inhoud die aan de `contentKey` parameter moet overeenkomen met de opslag-id en de coderingssleutel voor inhoud die voor het verpakken worden gebruikt. De volgende tekst is een voorbeeld van de tokenserverreactie:
+De opslag-id van de inhoudscoderingssleutel of CEKSID die aan de `kid` parameter en de coderingssleutel voor de inhoud die aan de `contentKey` parameter moet overeenkomen met de opslag-id van de coderingssleutel voor inhoud en de coderingssleutel voor inhoud die wordt gebruikt voor het verpakken. De volgende tekst is een voorbeeld van de tokenserverreactie:
 
 ```
 https://wv.service.expressplay.com/hms/wv/rights/

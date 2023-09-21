@@ -2,8 +2,7 @@
 title: Certificaten vernieuwen
 description: Certificaten vernieuwen
 copied-description: true
-exl-id: db130ca5-4e26-447f-b2f4-4eee0838fd56
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '295'
 ht-degree: 0%
@@ -16,13 +15,13 @@ Houd rekening met de volgende beperkingen voor certificaatvernieuwing die zijn g
 
 * Primetime DRM Production SDK
 
-   Adobe biedt de eerste set gratis certificaten voor de Primetime DRM Production SDK wanneer u een ondersteuningscontract aanschaft. Als u geen supportcontract hebt, kunt u een reeks vernieuwingscertificaten kopen die twee jaar geldig zijn.
+  Adobe biedt de eerste set gratis certificaten voor de Primetime DRM Production SDK wanneer u een ondersteuningscontract aanschaft. Als u geen supportcontract hebt, kunt u een reeks vernieuwingscertificaten kopen die twee jaar geldig zijn.
 * Primetime DRM Evaluation SDK
 
-   Het certificaat dat voor deze SDK is ingesteld, is één jaar geldig en kan niet worden verlengd.
+  Het certificaat dat voor deze SDK is ingesteld, is één jaar geldig en kan niet worden verlengd.
 * Primetime DRM-proefversie van SDK
 
-   De proefversie van Primetime DRM SDK is drie maanden geldig en Adobe biedt één set gratis vernieuwingscertificaten.
+  De proefversie van Primetime DRM SDK is drie maanden geldig en Adobe biedt één set gratis vernieuwingscertificaten.
 
 ## Nieuwe certificaten implementeren en oude certificaten gebruiken voor bestaande inhoud {#section_345C92D1C9794B0BBB9A9B0702EC95FF}
 

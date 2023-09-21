@@ -1,8 +1,7 @@
 ---
 description: Wanneer Browser TVSDK om een advertentie vraagt die zich niet op uw primaire advertentieserver bevindt, moet de speler de advertentie aanvragen bij de secundaire server. De video Ad Serving Malplaatje (VAST) plaatst de norm van mededeling tussen advertentieservers en videospelers en is de reactie die door de secundaire advertentieserver wordt verzonden wanneer de advertentie wordt gevraagd.
 title: VAST-advertenties
-exl-id: b0ebade5-b5da-413d-84f4-abebac579f45
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '308'
 ht-degree: 0%
@@ -29,7 +28,7 @@ De volgende elementen worden ondersteund:
 * `AdTitle`
 * `Impression`
 
-   De volgende optionele elementen worden ondersteund:
+  De volgende optionele elementen worden ondersteund:
 
 * `Description`
 * `Survey`
@@ -56,17 +55,17 @@ Hier volgt meer informatie over de advertentietypen:
 
       * `MediaFile`
 
-         >[!TIP]
-         >
-         >In dit element, `id`, `bitrate`, `delivery`, `width`, `height`, `scalable`, `maintainAspectRatio`, `apiFramework`, en `type` worden ondersteund.
+        >[!TIP]
+        >
+        >In dit element, `id`, `bitrate`, `delivery`, `width`, `height`, `scalable`, `maintainAspectRatio`, `apiFramework`, en `type` worden ondersteund.
 
 * **Niet-lineaire advertenties** De volgende elementen worden ondersteund:
 
    * `Non-linear`
 
-      >[!TIP]
-      >
-      >In dit element, `id`, `width`, `height`, `apiFramework`, `expandedWidth`, `expandedHeight`, `scalable`, `maintainAspectRatio`, en `minSuggestedDuration` worden ondersteund.
+     >[!TIP]
+     >
+     >In dit element, `id`, `width`, `height`, `apiFramework`, `expandedWidth`, `expandedHeight`, `scalable`, `maintainAspectRatio`, en `minSuggestedDuration` worden ondersteund.
 
       * `StaticResource`
       * `IFrameResource`
@@ -78,9 +77,9 @@ Hier volgt meer informatie over de advertentietypen:
 
    * `Companion`
 
-      >[!TIP]
-      >
-      >In dit element, `id`, `width`, `height`, `apiFramework`, `expandedWidth`, en `expandedHeight` worden ondersteund.
+     >[!TIP]
+     >
+     >In dit element, `id`, `width`, `height`, `apiFramework`, `expandedWidth`, en `expandedHeight` worden ondersteund.
 
       * `StaticResource`
       * `IFrameResource`
@@ -91,6 +90,6 @@ Hier volgt meer informatie over de advertentietypen:
 
 >[!TIP]
 >
->Alleen Auditegerichte extensies worden ondersteund.
+>Alleen Auditude-specifieke extensies worden ondersteund.
 
 * `Extension`

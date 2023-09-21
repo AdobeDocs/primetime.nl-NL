@@ -1,8 +1,7 @@
 ---
 title: Uw CDN integreren
 description: De CDN integreren
-exl-id: b93031a2-6e66-4de1-9cf2-b0260f88fe13
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '184'
 ht-degree: 0%
@@ -11,7 +10,7 @@ ht-degree: 0%
 
 # Uw CDN integreren {#integrating-cdn}
 
-Primetime Ad Insertion fungeert als een proxy tussen uw clienttoepassing en manifests, niet de videoblokken zelf. Implementeer uw inhoud naar de CDN van uw keuze en geef de URL door aan Primetime Ad Insertion met behulp van de Bootstrap-API. Voor integratiegegevens raadpleegt u [Ondersteunde CDN&#39;s](/help/primetime-ad-insertion/technical-reference/supported-cdns.md).
+Primetime Ad Insertion fungeert als een proxy tussen uw clienttoepassing en manifests, niet de videoblokken zelf. Implementeer uw inhoud naar de CDN van uw keuze en geef de URL door aan Primetime Ad Insertion met de Bootstrap-API. Voor integratiegegevens raadpleegt u [Ondersteunde CDN&#39;s](/help/primetime-ad-insertion/technical-reference/supported-cdns.md).
 
 ## Ondersteunde CDN-tokenisatieschema&#39;s {#cdn-tokenization-schemes}
 
@@ -19,7 +18,7 @@ CDN&#39;s hebben vaak verschillende tokenisatieschema&#39;s voor fragmentautoris
 
 * Akamai
 * Lichtsterkte
-* Centurylink / Niveau3
+* Centurylink/Niveau3
 * Neem contact op met uw ondersteuningsvertegenwoordiger voor Primetime voor een volledige lijst met ondersteunde CDN&#39;s
 
 Voor meer informatie over de `pttoken` parameter, zie [Beschrijving van Bootstrap API-parameter](/help/primetime-ad-insertion/technical-reference/bootstrap-api.md#parameter-description).

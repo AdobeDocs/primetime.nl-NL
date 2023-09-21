@@ -1,8 +1,7 @@
 ---
-description: Werk samen met uw Adobe-medewerker om certificaten te verkrijgen en om een beheeraccount in te stellen bij ExpressPlay. Nadat uw Adobe- en ExpressPlay-accounts zijn ingesteld, kunt u workflows voor verschillende DRM-oplossingen implementeren en testen.
+description: Werk samen met uw Adobe om certificaten te verkrijgen en om een beheeraccount in te stellen bij ExpressPlay. Nadat u de Adobe- en ExpressPlay-accounts hebt ingesteld, kunt u workflows voor verschillende DRM-oplossingen implementeren en testen.
 title: Voorlopige DRM Cloud - snel startoverzicht
-exl-id: b44d0f69-c8c4-47c8-b246-a3a6f0b9442b
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '116'
 ht-degree: 0%
@@ -11,6 +10,6 @@ ht-degree: 0%
 
 # Overzicht {#primetime-drm-cloud-quick-start-overview}
 
-Werk samen met uw Adobe-medewerker om certificaten te verkrijgen en om een beheeraccount in te stellen bij ExpressPlay. Nadat uw Adobe- en ExpressPlay-accounts zijn ingesteld, kunt u workflows voor verschillende DRM-oplossingen implementeren en testen.
+Werk samen met uw Adobe om certificaten te verkrijgen en om een beheeraccount in te stellen bij ExpressPlay. Nadat u de Adobe- en ExpressPlay-accounts hebt ingesteld, kunt u workflows voor verschillende DRM-oplossingen implementeren en testen.
 
-Met deze snelstartstappen kunt u het installatieproces van Multi-DRM doorlopen. van het aanschaffen van de vereiste certificaten en toetsen tot het aanschaffen van een beheerdersaccount bij ExpressPlay tot het testen van het maken van pakketten, licenties en het afspelen van uw beveiligde inhoud.
+Met deze snelstartstappen kunt u het Multi-DRM-installatieproces doorlopen, van het aanschaffen van de vereiste certs en toetsen tot het aanschaffen van een beheeraccount bij ExpressPlay tot het testen van het verpakken, licentiëren en afspelen van uw beveiligde inhoud.

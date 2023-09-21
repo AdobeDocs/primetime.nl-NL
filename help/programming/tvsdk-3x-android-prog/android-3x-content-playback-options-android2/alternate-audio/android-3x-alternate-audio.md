@@ -1,8 +1,7 @@
 ---
 description: Met alternatieve audio kunt u schakelen tussen beschikbare audiotracks voor een videotrack. Gebruikers kunnen hun voorkeurstaal selecteren wanneer de video wordt afgespeeld.
 title: Alternatieve audio
-exl-id: 7438d667-3003-42ba-88f3-818fa093c7d9
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '247'
 ht-degree: 0%

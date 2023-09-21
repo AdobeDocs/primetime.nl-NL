@@ -1,8 +1,7 @@
 ---
 description: De gemeenschappelijke problemen tijdens het testen impliceren vaak uw authenticators ExpressPlay, vervoerprotocollen, en vereiste parameters van het de dienstverzoek.
 title: Problemen met uw snelstartoplossing oplossen
-exl-id: d8908f9c-98f4-4100-a003-d3b990105dee
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '446'
 ht-degree: 0%
@@ -21,13 +20,13 @@ Als het genereren van het token is gelukt en er geen fout is opgetreden en de vi
 
 Daarnaast:
 
-* Controleer of u de correcte Authenticator van de Klant in uw de dienstverzoeken gebruikt. Het is gemakkelijk om de productieauthenticator per ongeluk te gebruiken wanneer u de testauthenticator wilde gebruiken. Zorg er ook voor dat u *uw* authenticator. Tijdens het testen kunt u bijvoorbeeld iemand anders lenen `curl` en vergeet de authenticator van de persoon of personen te wisselen.
+* Controleer of u de correcte Authenticator van de Klant in uw de dienstverzoeken gebruikt. Het is gemakkelijk om de productieauthenticator per ongeluk te gebruiken wanneer u de testauthenticator wilde gebruiken. Zorg er ook voor dat u *uw* authenticator. Tijdens het testen kunt u bijvoorbeeld andermans `curl` en vergeet de authenticator van de persoon of personen te wisselen.
 
-* Controle dat u het juiste vervoerprotocol in uw verzoeken of in uw manifests gebruikt ( `https://` versus `https://`of in het geval van FairPlay `skd://` versus `https://` versus `https://`.
+* Controle dat u het juiste vervoerprotocol in uw verzoeken of in uw manifests gebruikt ( `https://` versus `https://`of in het geval van FairPlay, `skd://` versus `https://` versus `https://`.
 
 * Zorg ervoor dat u alle vereiste vraagparameters voor de oplossing DRM omvat u met werkt. Het is gemakkelijk om tussen PlayReady en Widevine bijvoorbeeld te worden verward, omdat zij allebei met DASH werken, maar de vereiste verzoekparameters en verpakkingsconfiguraties zijn verschillend.
 * Bevestig dat je ExpressPlay-account voldoende token-credits heeft en nog niet is gebruikt.
-* Bevestig dat het drievoud van DRM-gegevens dat naar de TVSDK wordt verzonden, juist is: ExpressPlay-token, de URL van de licentieserver en het DRM-type.
+* Bevestig dat het drievoud van DRM-gegevens dat naar de TVSDK wordt verzonden juist is: ExpressPlay-token, de URL van de licentieserver en het DRM-type.
 * Bevestig dat al uw componenten de zelfde veronderstelling maken over welke milieu ExpressPlay in gebruik is aangezien er twee milieu&#39;s, Test en Productie zijn.
 * Houd er rekening mee dat verschillende browsers doorgaans slechts één DRM voor DASH-inhoud ondersteunen.
 * Vanaf TVSDK 2.4 wordt alleen het DASH-LIVE-pakketprofiel ondersteund. (Ondersteuning voor DASH-OnDemand staat op de routekaart.)
@@ -36,5 +35,5 @@ Daarnaast:
    * het Razer Forge-apparaat heeft problemen met PlayReady-inhoud
    * Amazon FireTV kan geen DASH-inhoud gebruiken waarvoor de audiotrack is versleuteld
 
-* Vanaf TVSDK 2.4 ondersteunen alleen AndroidTV-apparaten doorgaans zowel PlayReady- als Windows-DRM&#39;s. Alle andere Android-apparaten ondersteunen doorgaans alleen Widevine.
+* Vanaf TVSDK 2.4 ondersteunen alleen AndroidTV-apparaten doorgaans zowel PlayReady- als Windows-DRM&#39;s. Alle andere Android-apparaten ondersteunen doorgaans alleen Windows.
 * Vanaf TVSDK 2.4 vereist de Android-TVSDK momenteel dat het vak PSSH zich in het .mpd-manifest bevindt. Dit is in strijd met de norm DASH, die specificeert dat de doos PSSH overal, zoals in de inhoud zelf, en niet alleen in .mpd kan zijn.

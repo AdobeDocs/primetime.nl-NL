@@ -4,8 +4,7 @@ description: TVSDK voor Desktop HLS de Nota's van de Versie beschrijven wat nieu
 contentOwner: asgupta
 products: SG_PRIMETIME
 topic-tags: release-notes
-exl-id: 5e227c99-acf6-4b16-a35a-68e2928fdbfd
-source-git-commit: 1bc2f6c230c262babf2958c32fee31afcad04c2f
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '5194'
 ht-degree: 0%
@@ -22,7 +21,7 @@ De Nota&#39;s van de Versie van TVSDK voor Desktop HLS beschrijven wat nieuw of 
 
 * **Ondersteuning voor meerdere CDN&#39;s voor CRS-advertenties**
 
-   * Standaard worden alle getranscodeerde elementen gehost op een CDN die eigendom is van een Adobe op Akamai. Met de nieuwste release biedt de Adobe Creative Repackaging Service (CRS) u de mogelijkheid om de getranscodeerde creatieven te uploaden naar meerdere CDN&#39;s, zoals opgegeven door de klant.
+   * Standaard worden alle getranscodeerde elementen gehost op een CDN die eigendom is van een Adobe in Akamai. Met de nieuwste release biedt de Adobe Creative Repackaging Service (CRS) u de mogelijkheid om de getranscodeerde creatieven te uploaden naar meerdere CDN&#39;s, zoals opgegeven door de klant.
    * Nieuwe API&#39;s worden toegevoegd aan TVSDK om het opgeven van de uiteindelijke creatieve CRS-URL mogelijk te maken wanneer de standaard-URL niet wordt gebruikt. Raadpleeg de documentatie voor meer informatie over het gebruik van deze nieuwe API&#39;s.
 
 ### Nieuwe functies in de vorige versies {#new-features-previous}
@@ -31,13 +30,13 @@ De Nota&#39;s van de Versie van TVSDK voor Desktop HLS beschrijven wat nieuw of 
 
 * **Factureringscijfers**
 
-Om klanten aan te passen die slechts voor wat willen betalen zij, eerder dan een vast tarief ongeacht werkelijk gebruik, Adobe gebruiksmetriek verzamelen en deze metriek gebruiken om te bepalen hoeveel om de klanten in rekening te brengen.
+Om klanten aan te passen die slechts voor wat willen betalen zij, eerder dan een vast tarief ongeacht werkelijk gebruik, Adobe gebruiksmetriek inzamelen en deze metriek gebruiken om te bepalen hoeveel om de klanten in rekening te brengen.
 
 **1.4.24**
 
 * **Blijvende netwerkverbinding**
 
-Belangrijk: U moet ten minste Adobe Flash Player versie 22 of hoger hebben geïnstalleerd.
+Belangrijk: u moet ten minste Adobe Flash Player versie 22 of hoger hebben geïnstalleerd.
 Met continue netwerkverbindingen wordt een interne lijst met netwerkverbindingen gemaakt en opgeslagen die opnieuw kan worden gebruikt voor meerdere aanvragen, in plaats van een nieuwe verbinding voor elke netwerkaanvraag te openen. Blijvende netwerkverbindingen moeten de efficiëntie verhogen en de latentie in uw netwerkcode verminderen.
 
 In deze release wordt deze functie niet ondersteund in Apple Safari en Mozilla Firefox op een Mac.
@@ -49,7 +48,7 @@ In deze release wordt deze functie niet ondersteund in Apple Safari en Mozilla F
 
 **1.4.18**
 
-* Primetime-desktop HLS TVSDK ondersteunt nu VPAID 2.0 Lineaire SWF-creatieven om een rijke interactieve in-stream-advertentie-ervaring mogelijk te maken.
+* Primetime-desktop HLS TVSDK ondersteunt nu VPAID 2.0 Lineaire SWF-creatieven om een rijke interactieve in-stream-advertentie mogelijk te maken.
 
 **1.4.10**
 
@@ -61,7 +60,7 @@ Zie voor meer informatie [Extra fallback voor VAST- en VMAP-advertenties](../pro
 
 * **Video Heartbeats Library (VHL) bijgewerkt naar versie 1.5**
 
-   * Mogelijkheid om metagegevens te verzenden met het starten van de video en/of het starten van de video/advertentie/hoofdstuk als contextgegevens
+   * Mogelijkheid om metagegevens te verzenden met het starten van video en/of het starten van video/advertentie/hoofdstuk als contextgegevens
    * Minder netwerkverkeer - De hartslagen zijn gemiddeld minder en kleiner in grootte.
 
 **1.4.7**
@@ -106,7 +105,7 @@ AES-codering op basis van voorbeelden wordt nu ondersteund.
 
 ### Opgeloste problemen in de vorige releases {#resolved-issues-previous}
 
-**Versie 1.4.38** (891)
+**Versie 1.4.38** 891
 
 * Zendesk #30731 - TVSDK speelt geen veelvoudige VPAID advertenties in een AdBreak.
 
@@ -116,11 +115,11 @@ AES-codering op basis van voorbeelden wordt nu ondersteund.
 
   De videospeler kan het laatste segment van een periode herhalen wanneer een schakelaar ABR gebeurt. Hierdoor werd het laatste segment van preroll soms herhaald. Dit is opgelost.
 
-**Versie 1.4.35** (879)
+**Versie 1.4.35** 879
 
 * Zendesk #26058 - Ondersteunt native VPAID-gebeurtenissen
 
-**Versie 1.4.33** (873)
+**Versie 1.4.3** 873
 
 * Zendesk #21701 - Verzend de oorspronkelijke creatieve URL voor het 1401 CRS-verzoek in plaats van de genormaliseerde URL.
 
@@ -139,7 +138,7 @@ AES-codering op basis van voorbeelden wordt nu ondersteund.
 
 * Zendesk #27460 - De nieuwe rekening Akamai kan geen POST CDN verzoek behandelen.
 
-  Het nieuwe CDN-account kan een CDN-aanvraag van een POST niet verwerken. Dit probleem is opgelost door de code bij te werken zodat de cdn.auditude.com-aanvraag GET is in plaats van POST.
+  Het nieuwe CDN-account kan een CDN-aanvraag van een POST niet verwerken. Dit probleem is opgelost door de code bij te werken zodat de aanvraag cdn.auditude.com wordt weergegeven in plaats van in de POST.
 * Zendesk #27619 - Flash loopt vast op Windows 10
 
   **Opmerking**: Voor dit probleem is Flash Player 24.0.0.218 of hoger vereist.
@@ -150,7 +149,7 @@ AES-codering op basis van voorbeelden wordt nu ondersteund.
 
   Dit is hetzelfde probleem als in Zendesk #26592. Het probleem waarbij zoekbewerkingen zijn toegestaan wanneer de mediaspeler de status PREPARED voor VOD-streams heeft, is opgelost.
 
-**Versie 1.4.32** (867)
+**Versie 1.4.32** 867
 
 * Zendesk #26592 De gebeurtenis Tracking wordt niet gestart wanneer het afspelen begint vanaf het hervattingspunt
 
@@ -160,7 +159,7 @@ De code werkte het pre-rol en onderbrekingspunt niet bij wanneer het hervattings
 
 De uitzonderingen met de arraymethoden zijn hersteld.
 
-**Versie 1.4.30** (855)
+**Versie 1.4.30** 855
 
 De volgende problemen zijn in deze release opgelost voor TVSDK:
 
@@ -176,11 +175,11 @@ Dit probleem is opgelost door VPAID-advertenties correct af te handelen op basis
 
 * Zendesk #24528 - Gebruikswaarden voor TVSDK voor facturering.
 
-Belangrijk: Voor dit probleem is Flash Player 23.0.0.185 of hoger vereist.
+Belangrijk: voor dit probleem is Flash Player 23.0.0.185 of hoger vereist.
 
 * Zendesk # 25432 Closed Caption issue during resizing the player.
 
-Belangrijk: Voor dit probleem is Flash Player 23.0.0.185 of hoger vereist.
+Belangrijk: voor dit probleem is Flash Player 23.0.0.185 of hoger vereist.
 
 De structuurcode van de weergave van het bijschrift is aangepast om de coördinaten tijdens het wijzigen van de grootte van de speler correct af te handelen.
 
@@ -212,9 +211,9 @@ Dit probleem is opgelost door de WebVTT-bestanden alleen te laden als ondertitel
 
 **Opmerking**: Voor dit probleem is Flash Player 23 of hoger vereist.
 
-Door de onjuiste EOC-code verdween de weergave van het bijschrift. Dit probleem is opgelost door de codes 608 van de bijschriften RU2, RU3 en RU4 te dwingen de juiste zichtbaarheid in het huidige actieve venster te bieden.
+De onjuiste EOC-code heeft ertoe geleid dat de weergave van het bijschrift is verdwenen. Dit probleem is opgelost door de codes 608 van de bijschriften RU2, RU3 en RU4 te dwingen de juiste zichtbaarheid in het huidige actieve venster te bieden.
 
-**Versie 1.4.27** (844)
+**Versie 1.4.27** 844
 
 * Zendesk #21554 - TVSDK-foutbakens worden niet geactiveerd voor het toepassingstype = video/mp4
 
@@ -224,7 +223,7 @@ Dit probleem is opgelost door TVSDK de mogelijkheid te geven de juiste URL&#39;s
 
 **Opmerking**: Voor dit probleem is Flash Player 23 of hoger vereist.
 
-Na het krijgen van een 404 fout op bepaalde verzoeken, zou een neerstorting kunnen voorkomen. Dit probleem is opgelost door ervoor te zorgen dat de verbinding niet wordt verbroken terwijl het antwoord wordt afgehandeld. De resolutie zorgt ervoor dat de VPAID-advertentiebestanden niet verkeerd worden geteld, zodat ze niet worden vrijgegeven tijdens het downloaden.
+Na het krijgen van een 404 fout op bepaalde verzoeken, zou een neerstorting kunnen voorkomen. Dit probleem is opgelost door ervoor te zorgen dat de verbinding niet wordt verbroken terwijl het antwoord wordt afgehandeld. De resolutie zorgt ervoor dat de VPAID-advertentiebestanden niet verkeerd worden geteld, zodat ze niet worden vrijgegeven terwijl ze worden gedownload.
 
 * Zendesk #23621 - Retry mislukt op 400 en 404
 
@@ -248,7 +247,7 @@ De inheemse voorzien van een netwerkcode van Vensters is bevestigd om ervoor te 
 
 Dit probleem is opgelost door clients toe te staan aangepaste parameters afzonderlijk in te stellen voor de instantie Opportunity, zodat clients OpportunityGenerator niet hoeven te negeren.
 
-**Versie 1.4.26** (839)
+**Versie 1.4.26** 839
 
 * Zendesk #18854 - Update creative selection logic based on CRS rules
    * Bied ondersteuning voor het bijwerken van creatieve selectielogica op basis van CRS-regels
@@ -263,13 +262,13 @@ Dit probleem is opgelost door clients toe te staan aangepaste parameters afzonde
 
 * Zendesk #22822 - Frequent bufferen bij gebruik van TVSDK om een duidelijke HLS af te spelen
 
-   * Opgelost door de eerste kans te verwijderen die door addSignalingModeOpportunityGenerator wordt gegenereerd als er geen advertentie is.
+   * Opgelost door de eerste kans te verwijderen die door addSignalingModeOpportunityGenerator wordt gegenereerd als er geen advertentie is
 
 * Zendesk #23378 - Stream integriteitsblokken rules.xml
 
    * Probleem verholpen door het bestand rules.xml te laden via de workflow voor streamintegriteit.
 
-**Versie 1.4.24** (817)
+**Versie 1.4.24** 817
 
 * Zendesk #19851 - Wanneer de speler zich aanpast aan een andere bitsnelheid, springt deze een paar frames terug in de tijd op de nieuwe bitsnelheid, waardoor een lastige ervaring ontstaat
 
@@ -277,7 +276,7 @@ Dit probleem is opgelost door clients toe te staan aangepaste parameters afzonde
 
 Het probleem waarbij de DRM-adapter opnieuw wordt ingesteld nadat een klein deel van een segment is gedownload, wordt niet correct hersteld, is opgelost.
 
-* Zendesk #20784 - Analytics: Het triggeren van inhoud wordt voltooid voor live video-overgangen
+* Zendesk #20784 - Analytics: Trigging content completes for live video transitions
 
 Dit probleem is opgelost door een API (trackVideoComplete) toe te voegen waarmee de inhoud handmatig kan worden voltooid tijdens een LINEAR/LIVE-videolesessie.
 
@@ -291,7 +290,7 @@ De volgende bibliotheken zijn bijgewerkt:
 
 Dit probleem is opgelost door een viewport met hoogte nul te gebruiken om het werkgebied te vullen wanneer een VPAID-advertentie wordt afgespeeld.
 
-* Zendesk #22110 - Analytics: Een h toevoegen:sc:ssl gebied aan de hartslag volgende vraag
+* Zendesk #22110 - Analytics: Add a h:sc:ssl gebied aan de hartslag volgende vraag
 
 De problemen met SSL zijn opgelost en de VHL-bibliotheek die wordt gebruikt in TVSDK, is bijgewerkt naar de nieuwste versie.
 
@@ -299,7 +298,7 @@ De problemen met SSL zijn opgelost en de VHL-bibliotheek die wordt gebruikt in T
 
 Tijdens adaptieve bitsnelheid, met de maximale bitsnelheidlimiet, wordt bij het opnieuw laden van de video periodiek een zwart scherm weergegeven, ook al ziet de client updates naar de positie, en de client gedraagt zich alsof de video inhoud afspeelt.
 
-**Versie 1.4.23** (809)
+**Versie 1.4.23** 809
 
 * Zendesk #2887 - Post-roll en skipping kwestie wanneer de logica van de Regel van de Advertentie op TVSDK van toepassing was
 
@@ -321,7 +320,7 @@ Het probleem met het herhalen van audio is opgelost.
 
 **Opmerking**: Voor dit probleem is Flash Player 21.0.0.240 of hoger vereist.
 
-Deze release biedt ondersteuning voor het retourneren van een advertentieeinde vroeg voordat het advertentieeinde wordt afgespeeld. De vroege terugkeer wordt vermeld door een markering van douanemanifest.
+Deze release biedt ondersteuning voor het retourneren van een advertentieeinde vroeg voordat het advertentieeinde wordt afgespeeld. De vroege terugkeer wordt vermeld door een douane manifest markering.
 
 * Zendesk # 21369 Late binding audio veroorzaakt een inconsistente tijd
 
@@ -339,9 +338,9 @@ Het probleem met het herhalen van de audio is opgelost.
 
 Het probleem waarbij de referentiespeler geen stream afspeelt en bij het opstarten een uitzondering genereerde, is opgelost.
 
-**Versie 1.4.22** (791)
+**Versie 1.4.22** 791
 
-* Zendesk #17580 - Runtimefout bij primetime met code 3357
+* Zendesk #17580 - Primetime-fout met code 3357
 
 **Opmerking**: Voor dit probleem is Flash Player 21.0.0.197 of hoger vereist.
 
@@ -351,7 +350,7 @@ De willekeurige 3357 fouten die optraden door de deviceID correct te initialiser
 
 In deze release is de time-out voor algemene advertenties toegevoegd.
 
-**Versie 1.4.21** (782)
+**Versie 1.4.21** 782
 
 * Zendesk #19580 TVSDK wacht op voltooiing van de contentoplosser voordat deze wordt verzonden `PTTimedMetadataChangedNotification` meldingen
 
@@ -390,7 +389,7 @@ Dit gedrag is zodanig gewijzigd dat aangepaste parameters van het object Opportu
 
 Dit probleem is opgelost door de TVSDK toe te staan het manifest (HLS-subprofielen) te negeren dat de AC3-codec bevat die de TVSDK niet ondersteunt (surround).
 
-**Versie 1.4.20** (762)
+**Versie 1.4.20** 762
 
 * Zendesk #19181 - Steen speelt snel vooruit naar live point loopt vast.
 
@@ -408,7 +407,7 @@ De incidentele hek die optrad bij het zoeken in Google Chrome, werd opgelost doo
 
 Dit probleem is opgelost door een waarschuwing te melden.
 
-* Zendesk # 19359 - Flash Player is vastgelopen vanwege de positie van #EXT-X-FAXS-CM: kenmerk in manifest op setniveau.
+* Zendesk # 19359 - Flash Player crashte wegens de positie van #EXT-X-FAXS-CM: attribuut in set-level manifest.
 
 Dit probleem is opgelost wanneer de #EXT-X-FAXS-CM-tag boven aan de afspeellijst wordt weergegeven vóór afzonderlijke bitsnelheid of segmenten in de afspeellijst.
 
@@ -422,23 +421,23 @@ Deze kwestie werd opgelost door de spelerstortplaats te maken en manifest opnieu
 
 **Versie 1.4.19** (1.4.19.738)
 
-* Zendesk #18234 - Flash Player loopt vast bij het afspelen van streams met Unicode-tekenreeksen in CC
+* Zendesk #18234 - Flash Player loopt vast tijdens het afspelen van de streams met Unicode-tekenreeksen in CC
 
-Dit probleem vereist Flash Player FP 20.0.0.267 of hoger en is opgelost door de Unicode-tekenreeks correct te verwerken.
+Dit probleem vereist Flash Player FP 20.0.0.267 of hoger en is opgelost door de juiste verwerking van de Unicode-tekenreeks.
 
 * Zendesk #18304 - Ondersteuning voor stroomintegriteit voor VPAID-advertenties
 
-Voor deze functie is Flash Player FP 20.0.0.267 of hoger vereist. Deze functie is geïntroduceerd in release 1.4.19.
+Deze functie vereist Flash Player FP 20.0.0.267 of later en werd geïntroduceerd in release 1.4.19.
 
 * Zendesk #18766 - Reference Player kan geen niet-Latijnse Unicode-tekens weergeven in CC-tracknamen
 
-Voor deze functie is Flash Player FP 20.0.0.267 of hoger vereist. De functie is hersteld door de Unicode-tekenreeks correct af te handelen.
+Deze functie vereist Flash Player FP 20.0.0.267 of later en is gecorrigeerd door de juiste verwerking van de Unicode-tekenreeks.
 
 * Zendesk #18804 - Speler loopt vast in Firefox 42
 
-Voor dit probleem is Flash Player FP 20.0.0.235 of hoger vereist en hetzelfde probleem als Zendesk #18723.
+Dit probleem vereist Flash Player FP 20.0.0.235 of hoger en is hetzelfde als Zendesk #18723.
 
-* Zendesk #18864 - Flash Player volledige insteekmodule vastgelopen
+* Zendesk #18864 - Flash Player plug-in loopt vast
 
 Dit probleem vereist Flash Player FP 20.0.0.235 of hoger en is hetzelfde als Zendesk #18723.
 
@@ -460,7 +459,7 @@ Voor dit probleem is Flash Player FP 20.0.0.267 of hoger vereist. Dit probleem i
 
 * Zendesk #19175 - Soms worden pre-olladvertenties niet weergegeven wanneer de stream voor het eerst wordt afgespeeld.
 
-Dit probleem is opgelost door een nieuwe API, adRequestTimeout, toe te voegen aan AuditudeSettings voor een time-out voor een advertentieverzoek. Gebruikers kunnen nu de standaardperiode van tien jaar overschrijven en een time-out aanvragen.
+Dit probleem is opgelost door een nieuwe API, adRequestTimeout, toe te voegen aan AuditudeSettings voor een time-out voor een advertentieverzoek. Gebruikers kunnen nu de standaardperiode van tien jaar overschrijven en de time-out voor aanvragen overschrijven.
 
 **Versie 1.4.18** (1.4.18.722)
 
@@ -476,19 +475,19 @@ Dit probleem is opgelost door ondersteuning te bieden voor de EXT-X-MEDIA-TIME-t
 
 * Zendesk #17983 - Het niet downloaden van om het even welke sleutels voor manifest veroorzaakt de volledige manifestplayback om te ontbreken
 
-**Opmerking**: U moet minstens Flash Player FP 19.0.0.245 hebben of hoger.
+**Opmerking**: U moet minimaal Flash Player FP 19.0.0.245 of hoger hebben.
 
 Wanneer soms actieve inhoud wordt afgespeeld, kunnen er ongeldige sleutels in het manifest staan (bijvoorbeeld voor brainstormperioden), maar andere tijdbereiken hebben geldige sleutels en worden nog steeds afgespeeld. Eerder, toen een sleutel die in manifest werd vermeld niet kon worden gedownload, ontbrak volledig manifest. Nu, ontbreekt manifest slechts wanneer alle vermelde sleutels niet kunnen worden gedownload. Als sommige toetsen geldig zijn, maar sommige van deze toetsen niet kunnen worden gedownload, wordt de inhoud afgespeeld. We zullen nog steeds mislukken als we een segment proberen te spelen waarvoor een sleutel nodig is die we niet hebben.
 
 * Zendesk #18554 - De Integriteit van de stroom die in sommige gevallen de koekjes in orde maakt
 
-**Opmerking**: U moet minstens Flash Player FP 19.0.0.245 hebben of hoger.
+**Opmerking**: U moet minimaal Flash Player FP 19.0.0.245 of hoger hebben.
 
 Een fout in de code van de koekjesmanipulatie die koekjeswaarden kon beknotten werd opgelost.
 
 **Versie 1.4.16** (1.4.16.684)
 
-* Zendesk #3732 - Voeg ondersteuning toe voor proxy&#39;s in Chrome voor streamintegriteit (vereist Flash Player FP 19.0.0.207 of hoger)
+* Zendesk #3732 - Voeg steun voor volmachten in Chrome voor de Integriteit van de Stroom toe (vereist Flash Player FP 19.0.0.207 of groter)
 
 Dit is een verbetering.
 
@@ -500,55 +499,55 @@ Dit probleem is opgelost door rollover te detecteren en de discontinuïteit per 
 
 Dit probleem is opgelost door videohartslagtracker opnieuw te initialiseren tijdens een lineaire streamafspeelsessie.
 
-* Zendesk #17427 - Integriteit van de Adobe-stream die niet werkt via een proxy op Chrome (Win7) ()
+* Zendesk #17427 - Integriteit van de Stroom van de Adobe die niet door een volmacht op Chrome werkt (Win7) ()
 
-**Opmerking**: De resolutie vereist Flash Player FP 19.0.0.207 of hoger.
+**Opmerking** De resolutie vereist Flash Player FP 19.0.0.207 of hoger.
 
 Dit is hetzelfde als Zendesk #3732.
 
 * Zendesk #17907 - Lag op pHLS Live Stream met Flash Player 19
 
-**Opmerking**: De resolutie vereist Flash Player FP 19.0.0.207 of hoger.
+**Opmerking** De resolutie vereist Flash Player FP 19.0.0.207 of hoger.
 
 Dit probleem is opgelost door de live streams te verwerken waarbij de domeinen van de TS-bestanden veranderen wanneer het live manifest opnieuw wordt geladen en de bestanden twee keer zijn gedownload.
 
 * Zendesk #17931 - HLS-inhoud met leisteen aan het begin kan niet worden afgespeeld
 
-**Opmerking**: De resolutie vereist Flash Player FP 19.0.0.207 of hoger.
+**Opmerking** De resolutie vereist Flash Player FP 19.0.0.207 of hoger.
 
 Het probleem is opgelost door streams zonder audio af te handelen in de eerste 2 seconden van het eerste TS-bestand.
 
-* Zendesk #17934 - Live streaming mislukt met Flash 19.0.0.185
+* Zendesk #17934 - Live streamingfout met Flash 19.0.0.185
 
-**Opmerking**: De resolutie vereist Flash Player FP 19.0.0.207 of hoger.
+**Opmerking** De resolutie vereist Flash Player FP 19.0.0.207 of hoger.
 
 Het probleem is opgelost door live streams af te handelen met tussenruimte tussen audio- en videoframes op segmentgrenzen.
 
-* Zendesk #17973 - Nieuwste Flash Player 19.0.0.185 crashes tijdens de middelste rol
+* Zendesk #17973 - Nieuwste Flash Player 19.0.0.185 crasht tijdens de middentelling
 
-**Opmerking**: De resolutie vereist Flash Player FP 19.0.0.207 of hoger.
+**Opmerking** De resolutie vereist Flash Player FP 19.0.0.207 of hoger.
 
 Het probleem is opgelost door ongedempte audio met middenrol en invoeging af te handelen. (De parserschakelaar komt voor, en op om het even welk punt in playback, overgaat de inhoud naar middenroladvertentie, of in het midden van advertentie, etc.)
 
-* Zendesk #18049 - Flash 19 crasht met Firefox 42 beta
+* Zendesk #18049 - Flash 19 loopt vast met Firefox 42 bèta
 
 Dit is hetzelfde als Zendesk #17973.
 
 **Versie 1.4.15** (1.4.15.678)
 
-* Zendesk #4377: Fire AD_BREAK_SKIPPED-gebeurtenis bij het overslaan van een advertentie-einde vanwege het advertentiebeleid.
+* Zendesk #4377: Fire AD_BREAK_SKIPPED-gebeurtenis bij het overslaan van een advertentieeinde vanwege het advertentiebeleid.
 
 De correctie was om AD_BREAK_SKIPPED toe te voegen als een advertentie wordt overgeslagen.
 
-* Zendesk #4496 - Stream Integrity: Fout 102100 met omleidingen naar gescheiden streams.
+* Zendesk #4496 - Stream Integrity: Error 102100 with redirects to tokenized streams.
 
 De oplossing bestond uit het toevoegen van ondersteuning voor het instellen van de AVNetworkConfiguration-eigenschap useCookieHeaderForAllRequests via de TVSDK.
 
-* Zendesk #17179 - Flash speler crasht bij meerdere SAP-wijzigingen voor gecodeerde inhoud.
+* Zendesk #17179 - De speler van de Flash die op veelvoudige veranderingen van SAP voor gecodeerde inhoud crasht.
 
 Een crash tijdens het afspelen van gecodeerde inhoud is opgelost.
 
-**Opmerking**: Voor deze oplossing is Flash Player 19.0.0.200 of hoger vereist.
+**Opmerking**: Voor deze correctie is Flash Player 19.0.0.200 of hoger vereist.
 
 * Zendesk #17499 - Hoe kunnen we halffabrikaten na het horloge niet verwijderen, maar preroll uit de vetinhoud verwijderen?
 
@@ -562,7 +561,7 @@ De oplossing was het verwijderen van de logica om de buffergrootte van het doel 
 
 * Zendesk #17363 - ReADME-documentatie voor de referentiespeler herstellen
 
-   * Instructies voor het downloaden en installeren van playerglobal.swc verduidelijken.
+   * Verduidelijk instructies voor het downloaden en installeren playerglobal.swc.
    * Voeg instructies toe voor het bijwerken van projectconfiguratie met specifieke Flash Player-versie.
    * Werk AdvertisingOverlay project config bij om minimumspelerversie te gebruiken.
    * Update ReferenceCore project config om specifieke spelerversie 11.9 te gebruiken
@@ -583,9 +582,9 @@ probleem met url-parsering verhelpen wanneer queryparameter &quot;http&quot; bev
 
 * Zendesk #4260 - Flash Player 18 crashes in IE11 (vereist Flash Player 18.0.0.232 of hoger)
 
-Probleem verholpen waarbij het afspelen van video in de modus Volledig scherm vastliep met IE11
+Probleem verholpen waarbij het afspelen van video op volledig scherm met IE11 vastliep
 
-* Zendesk #4262 - Adobe Primetime-speler loopt vast op Windows 10 (vereist Flash Player 18.0.0.232 of hoger)
+* Zendesk #4262 - Adobe Primetime Player crasht op windows 10 (vereist Flash Player 18.0.0.232 of hoger)
 
 Probleem verholpen waarbij het programma vastloopt wanneer video wordt afgespeeld in de modus Volledig scherm met FireFox in Windows.
 
@@ -593,7 +592,7 @@ Probleem verholpen waarbij het programma vastloopt wanneer video wordt afgespeel
 
 Probleem verholpen waarbij het type van een URL niet correct werd herkend omdat deze geen extensie had
 
-* Zendesk #4306 - Flash Player crasht wanneer alleen Windows op volledig scherm wordt uitgevoerd (vereist Flash Player 18.0.0.232 of hoger)
+* Zendesk #4306 - Flash Player loopt vast wanneer alleen Windows op volledig scherm wordt weergegeven (vereist Flash Player 18.0.0.232 of hoger)
 
 Oplossing voor een crash bij het afspelen van video in de modus Volledig scherm van Windows.
 
@@ -601,7 +600,7 @@ Oplossing voor een crash bij het afspelen van video in de modus Volledig scherm 
 
 **1.4.12 **(1.4.12.656)
 
-* Zendesk #2751 - CSAI en CRS | Verbeteren: Dynamische elementen in bepaalde URL&#39;s van mediabestanden verwerken.
+* Zendesk #2751 - CSAI en CRS | Verbeteren: dynamische elementen in bepaalde URL&#39;s van mediabestanden verwerken.
 
 Bijgewerkte Creative Repackaging Service voor het correct verwerken van advertenties met dynamische creatieve URL&#39;s.
 
@@ -615,7 +614,7 @@ Voor het volgende is Flash Player 18.0.0.225 of hoger vereist:
 
 TrickPlay accepteert nu snelheden hoger dan 16x: +/- 32, +/-64 en +/-128.
 
-* Zendesk #3113 - Flash Player insteekmodule vastlopen
+* Zendesk #3113 - Plug-in Flash Player crasht
 
 Probleem verholpen waarbij het programma vastloopt tijdens een poging om een advertentie om te leiden af te spelen op Mac Firefox.
 
@@ -630,16 +629,16 @@ Correctie van vastlopen in Windows Firefox tijdens afspelen op volledig scherm.
 
 Sta bijschriftgrootten toe om in WebVTT-bijschriftcode te worden gebruikt.
 
-* Zendesk #3113 - Flash Player insteekmodule vastlopen (vereist Flash Player 18.0.0.200)
-* Zendesk #3268 - Desktop: De videospeler begint na +- 40/50 seconden met flikkeren en begint na +- 90 seconden met zwart (vereist Flash Player 18.0.0.200)
+* Zendesk #3113 - Flash Player plug-in crasht (vereist Flash Player 18.0.0.200)
+* Zendesk #3268 - Desktop: De videospeler begint na +- 40/50 seconden te flikkeren en begint na +- 90 seconden zwart te worden (vereist Flash Player 18.0.0.200)
 
 Probleem met werkgebiedvideo verhelpen.
 
-* Zendesk #3670 - fout INVALID_PARAMETER in VOD tijdens het zoeken in de Speler van de Verwijzing (vereist Flash Player 18.0.0.200)
+* Zendesk #3670 - fout INVALID_PARAMETER in VOD terwijl het zoeken in de Speler van de Verwijzing (vereist Flash Player 18.0.0.200)
 
 InvalidateProfiles in ThreadSeek wanneer een nieuwe periode wordt ontdekt.
 
-* Zendesk #3896 - Flash Player crasht met streamintegriteit ingesteld op ON op Chrome (vereist Flash Player 18.0.0.200)
+* Zendesk #3896 - de botsing van de Flash Player met de Integriteit van de Stream die aan op Chrome wordt geplaatst (vereist Flash Player 18.0.0.200)
 
 Correctie van crash in native netwerkmodus van pepapparaat
 
@@ -649,9 +648,9 @@ Het zoeken naar jokertekens voor jokertekens in gevallen waarin pageDomain ander
 
 **Versie 1.4.10** (1.4.10.642)
 
-* Zendesk #3249 - TVSDK Web Player crashes Flash op Firefox
+* Zendesk #3249 - TVSDK Web Player crasht Flash op Firefox
 
-Probleem verholpen waarbij Firefox af en toe vastliep terwijl een Flash Player op Mac bij een stream die op een externe monitor wordt afgespeeld, zou overschakelen op een hogere bitsnelheidsstream.(vereist Flash Player 18.0.0.160)
+Probleem verholpen waarbij een Flash Player soms vastliep terwijl Firefox op Mac terwijl een stream, die op een externe monitor wordt afgespeeld, overschakelde naar een hogere bitsnelheidsstream.(vereist Flash Player 18.0.0.160)
 
 * Zendesk #3268 - Desktop: De videospeler begint te flikkeren na `+-` 40/50 seconden en begint met zwart na `+-` 90 seconden
 
@@ -662,7 +661,7 @@ Probleem verholpen met Mac Chrome waarbij de stream zou gaan flikkeren en uitein
    * foutcode 400 wordt weergegeven als deze inline is en slecht creatief is.
    * `[ERRORCODE]` macro wordt URL-gecodeerd
 
-* Zendesk #3601 - Aanvraag tot verbetering: Beheer van de compacte onderneming
+* Zendesk #3601 - Aanvraag tot verbetering: Slangenbedrijf
 
    * TVSDK geeft een wrappers-partner weer die bronnen (html, iframe of static) bevat die dicht bij de inline staan. (als de inline geen code voor die grootte bevat)
    * Wrappers gezelons met middel, tenzij gebruik voor vertoning, zal worden genegeerd. (niet gebruiken voor reeksspatiëring)
@@ -699,25 +698,25 @@ Mime-typen voor HLS-indeling waren hoofdlettergevoelig, dit was onjuist en is ge
 
 **Versie 1.4.5**
 
-* Zendesk #2256 - Toegang tot Master afspeellijst, bijgewerkte PSDK om gebeurtenissen timedMetadata voor geabonneerde markeringen op master playlist te verzenden. (vereist Flash Player versie 17.0.0.134)
+* Zendesk #2256 - Toegang tot stramienafspeellijst, bijgewerkte PSDK om gebeurtenissen met tijdedMetadata te verzenden voor geabonneerde tags op de hoofdafspeellijst. (vereist Flash Player versie 17.0.0.134)
 * Zendesk #2417 - Speler die ondertitels probeert te downloaden alvorens playbackbegin, WebVTT gebruikte de verkeerde variabele van het segmentaantal voor segmentaantalaanpassing. Er zou alleen een fout optreden voor media waarvoor de segmentindexen nul waren. (vereist Flash Player versie 17.0.0.134)
-* Zendesk #2537 - Flash speler crasht wanneer de peperplug-in met Chrome wordt gebruikt (vereist Flash Player versie 17.0.0.134)
-* Zendesk #2547 - Arabische ondertitels: Tekst moet rechts worden uitgelijnd (Flash Player versie 17.0.0.134 is vereist)
+* Zendesk #2537 - De speler van de Flash loopt vast wanneer het gebruiken van de peperstop met Chrome (vereist Flash Player versie 17.0.0.134)
+* Zendesk #2547 - Arabische ondertitels: De tekst moet rechts worden uitgelijnd (vereist Flash Player versie 17.0.0.134)
 
 **Versie 1.4.4**
 
-* Zendesk #1561 - Re: `[Adobe Primetime]` Bijwerken: HLS client based failover support for PROGRAM-DATE-TIME in Desktop PSDK (vereist Flash Player versie 16.0.0.305 of hoger)
+* Zendesk #1561 - Re: `[Adobe Primetime]` Update: HLS client based failover support for PROGRAM-DATE-TIME in Desktop PSDK (vereist Flash Player versie 16.0.0.305 of hoger)
 * Zendesk #2197 - `[Ads]` Traceren en fouten
 * Zendesk #2286 - Aanvraag van functies: Geef informatie op over de status voor het laden van advertenties (VPAID)
-* Zendesk #2285 - Aanvraag van functies: Advertenties na een opgegeven tijdsduur overslaan
+* Zendesk #2285 - Aanvraag van functie: Advertentie overslaan na een opgegeven time-outduur
 * Bug #3921755 - OpenSSL-bibliotheekupdate naar versie 1.0.1L in Flash Player (vereist Flash Player versie 16.0.0.305 of hoger)
 
 **Versie 1.4.2**
 
 * Zendesk #1303 - Verticale verschuiving voor Closed Caption (vereist Flash Player versie 16.0.0.235 of hoger, verwachte releasedatum: december 2014)
 * Zendesk #1870 - Closed Caption On &amp; Off (vereist Flash Player versie 16.0.0.235 of hoger, verwachte releasedatum: december 2014)
-* Zendesk #2110 - Afspelen blijft vastzitten nadat is geprobeerd het volledige scherm te betreden tijdens een VPAID-advertentie (vereist Flash Player versie 16.0.0.235 of hoger, verwachte releasedatum: december 2014)
-* Zendesk #2199 - `[VPAID]` Speler reageert niet wanneer u naar een verleden en een onderbreking zoekt
+* Zendesk #2110 - Playback blijft vastzitten nadat hij tijdens een VPAID-advertentie probeert het volledige scherm te betreden (vereist Flash Player versie 16.0.0.235 of hoger, verwachte releasedatum: december 2014)
+* Zendesk #2199 - `[VPAID]` Speler reageert niet wanneer u voorbij en onderbreking zoekt
 * Zendesk #2358 - Re: `[Analytics]` Onjuiste hoofdstukgegevens
 
 **Versie 1.4.1**
@@ -735,7 +734,7 @@ Mime-typen voor HLS-indeling waren hoofdlettergevoelig, dit was onjuist en is ge
 * Closed Caption werkt niet met alleen-audio inhoud omdat het bijschriftsysteem video nodig heeft om te werken.
 Zonder video is er geen viewport-dimensie en zonder viewport-dimensie kunt u geen afbeeldingen voor bijschriften weergeven.
 * De streamintegriteit in Google Chrome is iets trager vanwege beperkingen in de Chrome-sandbox.
-* Als u autoPlay in TVSDK 1.4 uitschakelt, kan een DRM-fout optreden wanneer de speler minstens een minuut inactief blijft. Als u dit probleem wilt oplossen, wanneer u autoPlay uitschakelt maar elementen vooraf laadt, wijzigt u `ReferenceCore.as` door de inhoud van `onPlaybackManagerPrepared`:
+* Als u autoPlay uitschakelt in TVSDK 1.4, kan een DRM-fout optreden wanneer de speler minstens een minuut inactief blijft. Als u dit probleem wilt oplossen, wanneer u autoPlay uitschakelt maar elementen vooraf laadt, wijzigt u `ReferenceCore.as` door de inhoud van `onPlaybackManagerPrepared`:
 
 ```
 if (_playbackManager.autoPlay) {
@@ -748,7 +747,7 @@ _playbackManager.pause();
 
 * **Versie 1.4.13** PTPLAY-8501 - Wanneer VMAP twee directe MP4 niet-getranscodeerde advertenties terugkeert, de zelfde daling terug en speelt tweemaal.
 
-* **Versie 1.4.2** In versie 16 van Flash Player werd een kwestie geïdentificeerd met ABR &quot;omschakelings neer&quot;logica, nadat de speler in een lege het bufferen gebeurtenis wordt. Het probleem voorkomt dat de bitsnelheid in slechte bandbreedteomgevingen omlaag gaat wanneer de speler in een bufferstatus komt. Als u dit probleem wilt verhelpen, stelt u uw app in op de knop `BufferControlParameters.initialBufferTime` gelijk zijn aan `BufferControlParameters.playbackBufferTime` tijdelijk tijdens de bufferstatus (dat wil zeggen op een `BufferEvent.BUFFERING_BEGIN` (gebeurtenis) en herstel deze vervolgens naar de ingestelde waarden op `BufferEvent.BUFFERING_END` gebeurtenis. De oplossing voor dit probleem is beschikbaar in de volgende patchrelease van Flash Player versie 16.
+* **Versie 1.4.2** In versie 16 van de Flash Player, werd een kwestie geïdentificeerd met ABR &quot;omschakelings neer&quot;logica, nadat de speler in een lege het bufferen gebeurtenis wordt. Het probleem voorkomt dat de bitsnelheid in slechte bandbreedteomgevingen omlaag gaat wanneer de speler in een bufferstatus komt. Als u dit probleem wilt verhelpen, stelt u uw app in op de knop `BufferControlParameters.initialBufferTime` gelijk zijn aan `BufferControlParameters.playbackBufferTime` tijdelijk tijdens de bufferstatus (dat wil zeggen op een `BufferEvent.BUFFERING_BEGIN` (gebeurtenis) en herstel deze vervolgens naar de ingestelde waarden op `BufferEvent.BUFFERING_END` gebeurtenis. De oplossing voor dit probleem is beschikbaar in de volgende patchrelease van Flash Player versie 16.
 
 * **Versie 1.4.0**
 

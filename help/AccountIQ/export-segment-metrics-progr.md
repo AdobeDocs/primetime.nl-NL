@@ -1,8 +1,7 @@
 ---
 title: Metriek van de uitvoer voor een programmeur en geselecteerde MVPDs in een segment
 description: Metriek van de uitvoer voor een programmeur en geselecteerde MVPDs in een segment
-exl-id: 129f3ae3-09ff-4b40-98a1-157dbd14f13e
-source-git-commit: bfc3ba55c99daba561255760baf273b6538a3c6e
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '225'
 ht-degree: 0%
@@ -20,15 +19,15 @@ Om metriek voor specifieke programmeurs en MVPDs uit te voeren die in het segmen
 1. Ga naar een van de volgende deelvensters:
 
    * Industriewideoverall sharing scores, voor geselecteerde MVPDs
-      ![](assets/ind-sharpanel-export-option.png)
+     ![](assets/ind-sharpanel-export-option.png)
 
    * Score delen via kanalen en MVPD&#39;s
 
-      ![](assets/sharscorepanel-export-option.png)
+     ![](assets/sharscorepanel-export-option.png)
 
    * Aantal rekeningen en gebruik door kansniveau te delen
 
-      ![](assets/usage-panel-export-option.png)
+     ![](assets/usage-panel-export-option.png)
 
 1. Selecteren **Exporteren** Deze optie is beschikbaar in de rechterbovenhoek van het deelvenster.
 
@@ -36,12 +35,12 @@ De gegevens worden geëxporteerd in de CSV-indeling en het bestand wordt lokaal 
 
 * Sectorniveau delingsscores voor geselecteerde MVPD&#39;s
 
-   ![](assets/export-ind-sharing-score.png)
+  ![](assets/export-ind-sharing-score.png)
 
 * Score delen via kanalen en MVPD&#39;s in het segment
 
-   ![](assets/export-risk-index-by-mvpdchannels.png)
+  ![](assets/export-risk-index-by-mvpdchannels.png)
 
 * Aantal rekeningen en gebruik door kansniveau te delen
 
-   ![](assets/export-acc-usage.png)
+  ![](assets/export-acc-usage.png)

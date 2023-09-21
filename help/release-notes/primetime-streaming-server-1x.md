@@ -3,8 +3,7 @@ title: Release van Primetime Streaming Server
 description: Nieuw in de versies Primetime Streaming Server 1.3 en 1.4.
 products: SG_PRIMETIME
 topic-tags: release-notes
-exl-id: 80c4687e-b0ac-48f2-a1c3-8751552da9d1
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '1916'
 ht-degree: 0%
@@ -22,7 +21,7 @@ Nieuw in de versies Primetime Streaming Server 1.3 en 1.4.
 * HLS-uitvoerstromen bevatten nu ID3-metagegevens die aanwezig zijn in MPEG-2 TS
 * Alleen HLS-audiostreams kunnen nu een gekoppelde statische afbeelding hebben
 * Ondersteuning voor het leveren van IV als gebruikersinvoer voor HLS AES-coderingsworkflows
-* Ondersteuning voor uitvoer IV naar een bestand wanneer IV wordt gegenereerd door de offlineverpakker
+* Ondersteuning voor uitvoer IV naar een bestand wanneer IV wordt gegenereerd door de offline verpakker
 * De Maker van playlist steunt nu het associëren van de AudioGroepen van de MultiTaal en de ondertitelgroepen WebVTT van MultiTaal aan media stromen
 
 **Oorspronkelijke server**
@@ -39,7 +38,7 @@ PHDS/PHLS-certificaten zijn vernieuwd. De nieuwe vervaldatum voor dezelfde datum
 
 ### **Opgeloste problemen in versie 1.4** {#bug-fixes-included-in-release}
 
-* PTPUB-282 - HLS vastgestelde-vlakke manifest die door OfflinePackager 1.3.1 wordt gecreeerd heeft geen codec en resolutieinformatie.
+* PTPUB-282 - het reeks-vlakke manifest van HLS die door OfflinePackager 1.3.1 wordt gecreeerd heeft geen codec en resolutieinformatie.
 * PTPUB-353 - PlayListCreator biedt geen ondersteuning voor het toevoegen van WebVTT-informatie in manifest op setniveau
 * PTPUB-583 - Het hulpmiddel PlaylistCreator presteert onverwacht groep URI&#39;s met.
 * PTPUB-605 Playlist Creator die geen SUBTITLE Group in elke variantstroom opsomt
@@ -80,7 +79,7 @@ Dit biedt een uniforme bestandsinterface voor deze servers, zodat ze eenvoudig o
 
 **Ondersteuning voor bèta-MPEG-DASH**
 
-Primetime Streaming Server ondersteunt MPEG-DASH-pakketten voor Live- en VOD-workflows. De component Live Packager zet ingeschrevene RTMP- of MPEG-2-TS-streams om in de DASH-indeling. De component Origin accepteert een DASH-stroom.
+Primetime Streaming Server ondersteunt MPEG-DASH-pakketten voor Live en VOD workflows. De component Live Packager zet ingeschrevene RTMP- of MPEG-2-TS-streams om in de DASH-indeling. De component Origin accepteert een DASH-stroom.
 
 Voor VOD-workflows converteert de component Offline Packager MP4- en TS-elementen naar de indeling MPEG-DASH ISOBFF.
 
@@ -90,7 +89,7 @@ Er is nu een nieuwe componentopnameserver beschikbaar die het vastleggen van een
 
 **RTMP naar HLS-omzetting in Primetime Live Packager**
 
-De component Primetime Live Packager ondersteunt het maken van HLS-streams uit RTMP-streams. Met deze functie kunt u ook Primetime DRM en Protected Streaming toevoegen aan de HLS-uitvoerstreams.
+De component Primetime Live Packager ondersteunt het maken van HLS-streams uit RTMP-streams. Ook kunt u Primetime DRM en Protected Streaming toevoegen aan de HLS-uitvoerstreams.
 
 **Verificatie voor binnenkomende RTMP-streams naar Primetime Live Packager**
 
@@ -135,13 +134,13 @@ Verschillende prestatieverbeteringen zijn opgenomen in de JIT-pakketmogelijkhede
 * 1 Gb Ethernet-kaart aanbevolen (meerdere netwerkkaarten en 10 Gb ook ondersteund)
 * Schijf:
 
-   * (Schijf-SAS): Minimaal 10 GB met 7.500 rpm
+   * (Schijf-SAS): minimaal 10 GB met 7.500 rpm
    * (Schijf-SSD): 400 MBps lezen/schrijven
    * (NAS) : 1 GB toegewezen koppeling
 
 **Softwarevereisten**
 
-* Oracle Java JRE 1.7 (Aanbevolen: Sun/Oracle Hotspot (JVM). JDK is vereist voor JConsole-toegang tot de JMX API&#39;s
+* Oracle Java JRE 1.7 (aanbevolen: Sun/Oracle Hotspot JVM). JDK is vereist voor JConsole-toegang tot de JMX API&#39;s
 
 ### Primetime Streaming Server installeren en configureren {#install-and-configure-primetime-streaming-server}
 
@@ -212,13 +211,13 @@ Deze sectie is van toepassing wanneer Primetime Streaming Server niet wordt gebr
 * 1 Gb Ethernet-kaart aanbevolen (meerdere netwerkkaarten en 10 Gb ook ondersteund)
 * Schijf:
 
-   * (Schijf-SAS): Minimaal 10 GB met 7.500 rpm
+   * (Schijf-SAS): minimaal 10 GB met 7.500 rpm
    * (Schijf-SSD): 400 MBps lezen/schrijven
    * (NAS) : 1 GB toegewezen koppeling
 
 **Softwarevereisten**
 
-* Oracle Java JRE 1.7 (Aanbevolen: Sun/Oracle Hotspot (JVM). JDK is vereist voor JConsole-toegang tot de JMX API&#39;s
+* Oracle Java JRE 1.7 (aanbevolen: Sun/Oracle Hotspot JVM). JDK is vereist voor JConsole-toegang tot de JMX API&#39;s
 
 De bovenstaande minimale systeemvereisten gelden voor zowel de oorspronkelijke server als Live Packager.
 
@@ -303,7 +302,7 @@ Als u de HTTP Origin Server wilt verwijderen, moet u de HTTP Origin Server stopp
 * 1 Gb Ethernet-kaart aanbevolen (meerdere netwerkkaarten en 10 Gb ook ondersteund)
 * Schijf:
 
-   * (Schijf-SAS): Minimaal 10 GB met 7.500 rpm
+   * (Schijf-SAS): minimaal 10 GB met 7.500 rpm
    * (Schijf-SSD): 400 MBps lezen/schrijven
    * (NAS) : 1 GB toegewezen koppeling
 

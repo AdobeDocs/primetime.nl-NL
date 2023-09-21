@@ -1,8 +1,7 @@
 ---
 title: Opmerkingen bij de release PTAI 22.9.2
 description: In de PTAI-release wordt beschreven wat nieuw of gewijzigd is, wat de opgeloste en bekende problemen zijn in Primetime Ad Insertion in 2022.
-exl-id: 58b254b8-18b9-48ba-bd4e-378785e56af5
-source-git-commit: 1782a6b1d5f1c56d39648d73616bdefddd8a51bc
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '368'
 ht-degree: 0%
@@ -90,9 +89,9 @@ Opmerkingen bij de release van Primetime Ad Insertion 22.xx.x beschrijven wat ni
 
 * Geüpgraded aggregatiemethode voor interne meetgegevens voor bewaking van &quot;per miljoen&quot; naar &quot;aantal&quot;.
 
-* De middelen worden opgeschoond en geoptimaliseerd.
+* Asset Cleup and Optimization.
 
-### Versie 22.2.2
+### Versie 2.2.2
 
 **Wanneer:** Woensdag 20 maart 2022 1:30 uur tot 4:30 uur Oosterse tijd
 

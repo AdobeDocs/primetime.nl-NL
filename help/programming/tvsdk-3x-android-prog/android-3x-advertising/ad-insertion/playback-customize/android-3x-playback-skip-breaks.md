@@ -1,8 +1,7 @@
 ---
 description: Standaard dwingt TVSDK een advertentie-einde af wanneer de gebruiker een advertentie-einde zoekt. U kunt het gedrag aanpassen om een advertentie-einde over te slaan als de tijd die is verstreken vanaf een vorige eindemarkering binnen een bepaald aantal minuten is.
 title: Advertenties gedurende een bepaalde periode overslaan
-exl-id: a9b77168-c567-4e27-9b34-9b28107bef11
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '271'
 ht-degree: 0%
@@ -22,16 +21,16 @@ Als u het standaardgedrag voor TVSDK en break wilt overschrijven, kunt u de stan
 * AFSPELEN
 * OVERSLAAN
 
-   >[!NOTE]
-   >
-   >Het beleid voor SKIP en break werkt mogelijk niet zoals verwacht voor live streams wanneer een advertentie aanwezig is op het actieve punt. Bij een pre-roll-gebeurtenis zorgt SKIP bijvoorbeeld dat een zoekopdracht het einde van het ad-einde bereikt, wat groter kan zijn dan het live punt. In dit geval kan TVSDK naar het midden van een advertentie zoeken.
+  >[!NOTE]
+  >
+  >Het beleid voor SKIP en break werkt mogelijk niet zoals verwacht voor live streams wanneer een advertentie aanwezig is op het actieve punt. Bij een pre-roll-gebeurtenis zorgt SKIP bijvoorbeeld dat een zoekopdracht het einde van het ad-einde bereikt, wat groter kan zijn dan het live punt. In dit geval kan TVSDK naar het midden van een advertentie zoeken.
 
 * REMOVE_AFTER
 * VERWIJDEREN
 
-   >[!NOTE]
-   >
-   >De `REMOVE` het beleid voor onderbreking van advertentie is bedoeld voor afschrijving. Adobe raadt u aan de `SKIP` en breder beleid in plaats van `REMOVE`.
+  >[!NOTE]
+  >
+  >De `REMOVE` het beleid voor onderbreking van advertentie is bedoeld voor afschrijving. Adobe raadt u aan de `SKIP` en breder beleid in plaats van `REMOVE`.
 
 In het volgende voorbeeld van een aangepaste advertentiebeleidskiezer worden advertenties in de komende vijf minuten (tijd van de wandklok) overgeslagen nadat een gebruiker een advertentiesonderbreking heeft bekeken.
 

@@ -1,8 +1,7 @@
 ---
 description: U kunt uw eigen inhoudsoplossers implementeren op basis van de standaardoplossers.
 title: Een aangepaste contentoplosser implementeren
-exl-id: abe967a5-ced3-4e23-8671-065e256974d3
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '169'
 ht-degree: 0%
@@ -118,7 +117,7 @@ Wanneer TVSDK een nieuwe kans detecteert, doorloopt het de geregistreerde conten
    }
    ```
 
-1. Registreer de aangepaste inhoudsfabriek voor de mediastream die moet worden afgespeeld.
+1. Registreer de aangepaste inhoudsfabriek voor de af te spelen mediastream.
 
    Bijvoorbeeld:
 

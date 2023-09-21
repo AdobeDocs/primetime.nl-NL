@@ -1,8 +1,7 @@
 ---
 title: Account IQ-dashboard
 description: Het dashboard helpt de instanties van het delen van wachtwoorden te identificeren door een brede serie van abonneegegevens te analyseren.
-exl-id: 616da2a5-c9fe-40ea-90cf-f565bc13e764
-source-git-commit: a2181a8fd7334f19b8387a31c71527d4f689ab9d
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '600'
 ht-degree: 0%
@@ -29,7 +28,7 @@ Het dashboard voor gebruikers MVPD is lichtjes verschillend van die van de progr
 
 ![dashboard of Account IQ for programmeur users](assets/dashboard-mvpd.png)
 
-Afbeelding: Het dashboard voor gebruikers MVPD
+Afbeelding: Het dashboard voor MVPD-gebruikers
 
 +++
 
@@ -42,7 +41,7 @@ De waarden helpen u de grootte van credentiedelen door uw abonnees begrijpen, va
 ![](assets/aggregate-sharing-score.png)
 
 
-*Afbeelding: Deelvenster Gemiddelde deelscore - samengevoegd voor het huidige segment*
+*Afbeelding: Deelvenster Gemiddelde score voor delen - samengevoegd voor het huidige segment*
 
 De volgende drie metriek zijn componenten van de Gemiddelde het Delen Score.
 
@@ -98,7 +97,7 @@ Deze lijst verstrekt een vergelijkende mening van de verschillende Geaggregeerde
 ![](assets/top-mvpds.png)
 
 
-*Afbeelding: Top MVPDs in segment door algemene score*
+*Figuur: Bovenste MVPDs in segment door algemene score*
 
 ## Muziek delen via kanalen en MVPD&#39;s {#sharin-score-by-channels-and-mvpds}
 
@@ -107,7 +106,7 @@ Deze tabel biedt een vergelijkende weergave van het delen van scores van de gese
 ![](assets/sharing-scores-by-channels-mvpds.png)
 
 
-*Afbeelding: Muziek delen via kanalen en MVPD&#39;s*
+*Afbeelding: scores delen via kanalen en MVPD&#39;s*
 
 ## Rekeningen met waarschijnlijkheid {#accounts-sharing-probability}
 
@@ -121,7 +120,7 @@ Dit diagram verdeelt de rekeningen in reeksen van het delen kanskwintielen van z
 ![](assets/dashboard-ac-sharing-prob.png)
 
 
-*Afbeelding: Aantal en percentage abonneerekeningen in verschillende waarschijnlijkheidsbereiken bij delen*
+*Afbeelding: Aantal en percentage abonneeaccounts in verschillende waarschijnlijkheidsbereiken voor delen*
 
 ## Aantal rekeningen en gebruik door kansniveau te delen {#number-of-accounts-usage-sharing-probability}
 
@@ -130,7 +129,7 @@ In dit deelvenster vindt u een tabeloverzicht van de accounts die zijn verdeeld 
 ![](assets/no-acc-usage-prob-level.png)
 
 
-*Afbeelding: Aantal rekeningen, tendensen, en gebruik die in diverse kansbereiken vallen*
+*Figuur: Aantal rekeningen, tendensen, en gebruik die in diverse kansbereiken vallen*
 
 <!--
 +++Dashboard for programmers

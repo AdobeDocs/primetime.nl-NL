@@ -1,8 +1,7 @@
 ---
 description: TVSDK neemt informatie van FreeWheel en andere adservers die VAST-reacties verstrekken. FreeWheel verstrekt, binnen VAST reacties, informatie van de dienst van de Moat. De Maat-service telt en impressies met een nauwkeurigheid die beter laat zien dat creatieve mensen de belangen van een publiek vastleggen of negeren.
 title: Metingen toevoegen van mat
-exl-id: f8f68e0b-985c-43bb-878e-e24fed54e0c3
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '247'
 ht-degree: 0%

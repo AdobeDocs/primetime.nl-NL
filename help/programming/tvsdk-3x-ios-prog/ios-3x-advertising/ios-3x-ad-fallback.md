@@ -1,8 +1,7 @@
 ---
 description: Voor Digital Video Ad Serving Template (VAST)-advertenties (of creatieven) waarvoor de fallback-regel is ingeschakeld, behandelt TVSDK een advertentie met een ongeldig mediatype als een lege advertentie en probeert het alternatieve advertenties te gebruiken. U kunt bepaalde aspecten van fallback-gedrag configureren.
 title: Extra fallback voor VAST- en VMAP-advertenties
-exl-id: 8e33793c-d278-4c82-ad9b-7c6c7ee69cd2
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '502'
 ht-degree: 0%
@@ -43,7 +42,7 @@ Wanneer er stand-alone reserveadvertenties zijn, zoekt de Insteekmodule Primetim
    Als het opnieuw verpakken mislukt, is dit proces van toepassing op andere exemplaren van de advertentie.
 1. Als TVSDK geen geldige fallback-advertenties vindt, wordt de oorspronkelijke advertentie met het ongeldige mediatype geretourneerd.
 1. Als een fallback-advertentie met een geldig MIME-type wordt geretourneerd in plaats van de originele advertentie, verzenden Primetime en het nemen van beslissingen foutcode 403 naar de VAST-fout-URL, indien beschikbaar.
-1. Als een fallback-advertentie een omslag is en meerdere advertenties retourneert, worden alleen advertenties met het juiste mediatype geretourneerd.
+1. Als een terugvaladvertentie een omslag is en veelvoudige advertenties terugkeert, slechts worden de advertenties met het correcte media type teruggegeven.
 
 >[!IMPORTANT]
 >

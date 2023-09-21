@@ -1,8 +1,7 @@
 ---
 description: TVSDK ondersteunt het zoeken naar een specifieke positie (tijd) waar de stream een afspeellijst met schuifvensters is, zowel in video op aanvraag (VOD) als in live streams.
 title: Een zoekbalk weergeven met de huidige afspeelpositie
-exl-id: 8076521b-579d-491f-97de-c7b57daa9b2e
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '250'
 ht-degree: 0%
@@ -22,7 +21,7 @@ TVSDK ondersteunt het zoeken naar een specifieke positie (tijd) waar de stream e
        Zoeken is asynchroon, dus verzendt TVSDK de volgende gebeurtenissen met betrekking tot zoeken:
    
    * `QOSEventListener.onSeekStart` - De zoekactie begint.
-   * `QOSEventListener.onSeekComplete` - Zoek succesvol.
+   * `QOSEventListener.onSeekComplete` - Seek succesvol.
    * `QOSEventListener.onOperationFailed` - Seek is mislukt.
 
 1. Wacht tot de speler zich in een geldige staat bevindt om te zoeken.
@@ -37,7 +36,7 @@ TVSDK ondersteunt het zoeken naar een specifieke positie (tijd) waar de stream e
 1. Wacht tot TVSDK de `QOSEventListener.onSeekComplete` callback.
 1. Haal de definitieve aangepaste spelpositie terug gebruikend de positieparameter van callback.
 
-   Dit is belangrijk omdat de werkelijke startpositie na de zoekactie kan verschillen van de gewenste positie. Het afspeelgedrag kan worden beïnvloed als een zoekopdracht of een andere herpositionering halverwege een advertentie-einde eindigt of als een zoekactie wordt overgeslagen en afgebroken.
+   Dit is belangrijk omdat de werkelijke startpositie na de zoekactie kan verschillen van de gewenste positie. Het afspeelgedrag kan worden beïnvloed als een zoekopdracht of een andere verplaatsing in het midden van een advertentiescheiding eindigt of als een zoekactie of andere verplaatsing wordt overgeslagen en afgebroken.
 
 1. Gebruik de positiegegevens wanneer u een zoekbalk weergeeft.
 

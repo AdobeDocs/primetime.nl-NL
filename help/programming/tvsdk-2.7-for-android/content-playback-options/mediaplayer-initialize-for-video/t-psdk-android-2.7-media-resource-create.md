@@ -1,8 +1,7 @@
 ---
 description: De MediaResource-klasse vertegenwoordigt de inhoud die door de MediaPlayer-instantie moet worden geladen.
 title: Een mediabron maken
-exl-id: 754515e9-567d-4f9f-911d-e9dad22f71a1
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '296'
 ht-degree: 0%
@@ -53,7 +52,7 @@ De MediaResource-klasse vertegenwoordigt de inhoud die door de MediaPlayer-insta
    >
    >Voor MP4-video-on-demand (VOD)-inhoud biedt TVSDK geen ondersteuning voor truc&#39;s, ABR-streaming (Adaptive bit rate), invoeging, Closed Captions of DRM.
 
-   De volgende code maakt een `MediaResource` instantie:
+   De volgende code maakt een `MediaResource` -instantie:
 
    ```java
    // To do: Create metadata here

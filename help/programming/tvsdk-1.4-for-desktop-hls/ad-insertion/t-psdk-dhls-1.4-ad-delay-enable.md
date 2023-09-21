@@ -1,8 +1,7 @@
 ---
 description: U kunt opgeven of het afspelen is toegestaan voordat alle advertenties zijn geladen en in de tijdlijn zijn geplaatst. Als u het afspelen op deze manier start, heeft een viewer sneller toegang tot de hoofdinhoud. Deze functie is alleen van toepassing op levende DVR en werkt niet aan VOD-activa.
 title: Lazy en laden inschakelen
-exl-id: 6b70a7ae-28ce-4a19-9560-26e937c721cd
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '294'
 ht-degree: 0%
@@ -33,7 +32,7 @@ U kunt opgeven of het afspelen is toegestaan voordat alle advertenties zijn gela
 
    Wanneer VoD-streams vertraagd en geladen gebruiken, worden niet alle advertenties op de tijdlijn geplaatst wanneer de speler de status PREPARED inschakelt. U moet daarom de scrubbalk expliciet opnieuw tekenen.
 
-   TVSDK optimaliseert de verzending van deze gebeurtenis om het aantal keren dat u de scrubbalk opnieuw moet tekenen, te minimaliseren; Het aantal tijdlijngebeurtenissen houdt daarom geen verband met het aantal ad-hocpauzes dat op de tijdlijn moet worden geplaatst. Als u bijvoorbeeld vijf ad-einden hebt, krijgt u mogelijk niet precies vijf gebeurtenissen.
+   TVSDK optimaliseert de verzending van deze gebeurtenis om het aantal keren te minimaliseren dat u de scrubbalk opnieuw moet tekenen; daarom houdt het aantal tijdlijngebeurtenissen geen verband met het aantal ad-hoceinden dat op de tijdlijn moet worden geplaatst. Als u bijvoorbeeld vijf ad-einden hebt, krijgt u mogelijk niet precies vijf gebeurtenissen.
 
    ```
    mediaPlayer.addEventListener(TimelineEvent.TIMELINE_UPDATED, onTimelineUpdated); 

@@ -1,8 +1,7 @@
 ---
 description: Met de ExpressPlay's Bento4-packager kunt u inhoud voorbereiden voor alle DRM-oplossingen die worden ondersteund door Primetime Cloud DRM, met ExpressPlay.
 title: ExpressPlay Packager / Cloud DRM / TVSDK
-exl-id: ff937279-3866-4d0a-9a19-cf61726299e1
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '477'
 ht-degree: 0%
@@ -17,12 +16,12 @@ In deze taak wordt beschreven hoe u een hulpprogramma van derden kunt gebruiken 
 1. Vraag een ExpressPlay-account aan en verkrijg uw ExpressPlay-klantverificatie-gegevens.
 
    Zie [Primetime DRM Cloud, snel starten.](../../quick-start/quick-overview.md)
-1. Als u inhoud voor Toegang Primetime codeert, verkrijg de Toegang SDK van de Adobe van Primetime van Adobe, samen met de vereiste certificaten (Vergunning, Vervoer, en het Verpakken certs).
+1. Als u inhoud voor Toegang Primetime codeert, verkrijg de Toegang SDK van de Adobe Primetime van Adobe, samen met de vereiste certificaten (Vergunning, Vervoer, en het Verpakken certs).
 1. Geef een CEK (Content Encryption Key) en CEKSID (Content Encryption Key Storage ID) op voor gebruik op de DRM-systemen. (U genereert deze willekeurig met OpenSSL of een vergelijkbare methode.)
 
    De CEK is de werkelijke sleutel waarmee u uw videobestand(en) versleutelt. U slaat het bestand op een veilige manier op uw eigen server op in uw eigen sleutelbeheersysteem of u kunt de ExpressPlay-functies gebruiken [belangrijkste opslagoplossing](https://www.expressplay.com/developer/key-storage/).
 
-   Een CEKSID is het herkenningsteken voor bepaalde CEK. U geeft (gewoonlijk) de coderingssleutel niet door. Bijvoorbeeld, wanneer het verzoeken van een vergunningsteken, verstrekt u CEKSID.
+   Een CEKSID is het herkenningsteken voor bepaalde CEK. U geeft (gewoonlijk) de coderingssleutel niet door. Bijvoorbeeld, wanneer het verzoeken van om een licentietoken, verstrekt u CEKSID.
 
 1. Als u inhoud voor Toegang codeert, gebruik uw CEK om meta-gegevens tot stand te brengen Primetime van de Toegang verbonden aan uw inhoud.
 
@@ -61,7 +60,7 @@ In deze taak wordt beschreven hoe u een hulpprogramma van derden kunt gebruiken 
 
 1. Maak uw client.
 
-   De client moet een aanroep naar uw winkelserver bevatten. Adobe raadt aan dat de client de storefront aanroept nadat de gebruiker inhoud selecteert en nadat de gebruiker is geverifieerd. Geef vervolgens het token dat door ExpressPlay is geretourneerd, door aan de speler voor licentieaanvragen. Hier vindt u informatie over de implementatie van de DRM-component van uw spelers:
+   De client moet een aanroep naar uw winkelserver bevatten. De Adobe raadt aan dat de client de storefront aanroept nadat de gebruiker inhoud selecteert en nadat de gebruiker is geverifieerd. Geef vervolgens het token dat door ExpressPlay is geretourneerd, door aan de speler voor licentieaanvragen. Hier vindt u informatie over de implementatie van de DRM-component van uw spelers:
 
    * TVSDK van browser voor HTML5
    * [iOS](../../../../programming/tvsdk-3x-ios-prog/ios-3x-drm-content-security/ios-3x-apple-fairplay-tvsdk.md)

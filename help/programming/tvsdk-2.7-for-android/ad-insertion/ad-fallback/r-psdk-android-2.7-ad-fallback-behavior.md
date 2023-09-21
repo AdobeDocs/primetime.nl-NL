@@ -1,8 +1,7 @@
 ---
 description: Wanneer Primetime en beslissingsoningencounters een (creatieve) VAST-advertentie die leeg is of een mediatype heeft dat ongeldig is voor HLS, evalueert het de fallback-advertenties om te bepalen wat er moet worden geretourneerd.
 title: Extra fallback-gedrag voor VAST en VMAP
-exl-id: 8145d928-5d38-40f1-8dc3-fee9b815465c
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '243'
 ht-degree: 0%
@@ -24,7 +23,7 @@ Wanneer er stand-alone reserveadvertenties zijn, onderzoekt Primetime en besliss
    Als het opnieuw verpakken mislukt, is dit proces van toepassing op andere exemplaren van de advertentie.
 1. Als TVSDK geen geldige fallback-advertenties vindt, wordt de oorspronkelijke advertentie met het ongeldige mediatype geretourneerd.
 1. Als een fallback-advertentie met een geldig MIME-type wordt geretourneerd in plaats van de oorspronkelijke advertentie, beëindigt Primetime en decisions foutcode 403 aan de VAST-fout-URL, indien beschikbaar.
-1. Als een fallback-advertentie een omslag is en meerdere advertenties retourneert, worden alleen advertenties met het juiste mediatype geretourneerd.
+1. Als een terugvaladvertentie een omslag is en veelvoudige advertenties terugkeert, slechts worden de advertenties met het correcte media type teruggegeven.
 
 >[!IMPORTANT]
 >

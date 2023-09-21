@@ -2,8 +2,7 @@
 title: Terminologie en kernbegrippen
 description: Terminologie en kernbegrippen
 copied-description: true
-exl-id: eb065dd4-0312-4a5c-b013-a02e6ac85fa0
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '669'
 ht-degree: 0%
@@ -44,7 +43,7 @@ A *digitale handtekening* bindt de identiteit van de uitgever aan de inhoud die 
 
 **Distributeur**
 
-*Distributeurs* (ook aangeduid als *inhoudsdistributeurs* of* detailhandelaren*) zijn bedrijfsentiteiten die distributierechten van eigenaars van inhoud veiligstellen om inhoud te publiceren en aan consumenten te verspreiden. In sommige gevallen is dezelfde entiteit zowel de eigenaar van de inhoud als de distributeur van de inhoud.
+*Distributeurs* (ook aangeduid als *inhoudsdistributeurs* of* detailhandelaren*) zijn bedrijfsentiteiten die distributierechten van eigenaars van inhoud veiligstellen om inhoud te publiceren en aan consumenten te verspreiden. In sommige gevallen is dezelfde entiteit zowel de eigenaar als de distributeur van inhoud.
 
 **DRM-metagegevens**
 
@@ -52,7 +51,7 @@ Informatie die de client (Adobe® Flash® Player, Adobe® AIR® runtime en Prime
 
 **Licentie**
 
-Een *license *is een gegevensstructuur die een gecodeerde sleutel bevat die wordt gebruikt om inhoud te decrypteren verbonden aan een beleid. De licentie wordt gegenereerd door Primetime DRM wanneer de consument om inhoud vraagt en is gebonden aan de computer van de consument. Met een beleid als referentie definieert de licentie de rechten die beschikbaar zijn voor de consument die inhoud downloadt. De consument moet een licentie krijgen om de inhoud te kunnen bekijken.
+Een *license *is een gegevensstructuur die een gecodeerde sleutel bevat die wordt gebruikt om inhoud te decrypteren verbonden aan een beleid. De licentie wordt gegenereerd door Primetime DRM wanneer de consument om inhoud vraagt en is gebonden aan de computer van de consument. Met een beleid als referentie definieert de licentie de rechten waarover de consument beschikt die inhoud downloadt. De consument moet een licentie krijgen om de inhoud te kunnen bekijken.
 
 **Vergunning verkrijgen**
 

@@ -1,18 +1,17 @@
 ---
-title: De protocollen van het netwerk die door Adobe Access worden gebruikt
-description: De protocollen van het netwerk die door Adobe Access worden gebruikt
+title: De protocollen van het netwerk die door de Toegang van de Adobe worden gebruikt
+description: De protocollen van het netwerk die door de Toegang van de Adobe worden gebruikt
 copied-description: true
-exl-id: f065690d-6fa1-43a7-8aa8-a1ccd68e998d
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '106'
 ht-degree: 0%
 
 ---
 
-# De protocollen van het netwerk die door Adobe Access worden gebruikt {#network-protocols-used-by-adobe-access}
+# De protocollen van het netwerk die door de Toegang van de Adobe worden gebruikt {#network-protocols-used-by-adobe-access}
 
-Wanneer u een veilige netwerkarchitectuur vormt, worden de netwerkprotocollen in de volgende lijst vereist voor interactie tussen de Toegang van Adobe en andere systemen in uw ondernemingsnetwerk.
+Wanneer u een veilige netwerkarchitectuur vormt, worden de netwerkprotocollen in de volgende lijst vereist voor interactie tussen de Toegang van de Adobe en andere systemen in uw ondernemingsnetwerk.
 
 <table frame="all" colsep="1" rowsep="1" class="+ topic/table adobe-d/table " id="table-itc-33z-n4"> 
  <thead class="- topic/thead "> 

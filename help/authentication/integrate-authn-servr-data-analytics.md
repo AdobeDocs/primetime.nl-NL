@@ -1,8 +1,7 @@
 ---
 title: Gegevens van Primetime-verificatieservers integreren in Adobe Analytics
 description: Gegevens van Primetime-verificatieservers integreren in Adobe Analytics
-exl-id: c1f1f2a3-c98c-4aed-92ad-1f9bfd80b82b
-source-git-commit: bfc3ba55c99daba561255760baf273b6538a3c6e
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '1133'
 ht-degree: 4%
@@ -29,7 +28,7 @@ Het is niet bedoeld om een clientimplementatie te vervangen als er al een bestaa
 | AuthN in behandeling | Aantal met succes geproduceerde authentificatietokens (het negeren van al dan niet de cliënt werkelijk het verwierf) |
 | AuthN OK | Aantal verificatietokens dat gebruikers hebben opgehaald |
 | AuthZ aangevraagd | Aantal pogingen tot het verlenen van vergunningen |
-| AuthZ OK | Aantal geslaagde toelatingen |
+| AuthZ OK | Aantal geslaagde vergunningen |
 | AuthZ is mislukt | Aantal door de MVPD’s geweigerde vergunningen op toepassingsniveau |
 | Aanvraag afspelen | Aantal gegenereerde korte mediatokens (die overeenkomen met het aantal afspeelverzoeken) |
 | Aanmelding aangevraagd | Aantal geïnitieerde afmeldingsstromen |
@@ -37,7 +36,7 @@ Het is niet bedoeld om een clientimplementatie te vervangen als er al een bestaa
 | Afmelden mislukt | Aantal mislukte logout-stromen |
 | Voorafgaande toestemming aangevraagd | Aantal geïnitieerde preautorisatiestromen |
 | Voorkeursprocedure | Aantal geslaagde preautorisatiegebeurtenissen met de middelen die vooraf werden gemachtigd |
-| Voorvergunning geweigerd | Aantal gebeurtenissen voorafgaand aan autorisatie met de middelen die vooraf werden geweigerd |
+| Toestemming vooraf geweigerd | Aantal gebeurtenissen voorafgaand aan autorisatie met de middelen die vooraf werden geweigerd |
 | Voorvertoning is mislukt | Aantal mislukte voorafgaande verificatie-gebeurtenissen |
 
 | Adobe Analytics-naam | Beschrijving |
@@ -50,7 +49,7 @@ Het is niet bedoeld om een clientimplementatie te vervangen als er al een bestaa
 | Resource ID | De feitelijke titel van de bron die bij het vergunningsverzoek is betrokken (geëxtraheerd uit de MRSS-lading als item/titel indien verstrekt) |
 | AuthZ-fouttype | De reden voor fouten, zoals gemeld door Adobe Primetime-verificatie <br/> Hier zijn de meest voorkomende waarden <br/> **noAuthZ** = de MVPD antwoordde dat de gebruiker niet het kanaal in hun pakket heeft<br/> **netwerk** = wij konden MVPD niet bereiken (MVPD heeft een kwestie op het ogenblik van de vraag en antwoordde niet)<br/> **norefreshtoken** = dit is strikt voor implementaties OAuth en het zou kunnen resulteren als de gebruiker hun wachtwoord veranderde of MVPD het om één of andere reden ontkende. Het resulteert typisch in een nieuwe authentificatie<br/> **mismatch** = als het verzoek van een apparaat wordt gemaakt dat verschillend is dan het apparaat dat het authentificatietoken had. Dit kan het gevolg zijn als gebruikers proberen het systeem te bedriegen, maar de meeste hiervan deden zich voor in de context van onze oude JavaScript SDK waarin de apparaat-id het IP-adres als onderdeel van de berekening gebruikte. Als een gebruiker TVE thuis en op het werk zou controleren, zou deze fout worden geactiveerd en moesten deze opnieuw worden geverifieerd<br/> **ongeldig** = ongeldige aanvraag, ontbrekende of ongeldige parameters<br/>  **authzNone** = De programmeurs hebben de capaciteit om toestemmingen voor een specifieke channelxMVPD combinatie te ontkennen. Dit wordt geactiveerd door een back-end-API waartoe programmeurs toegang hebben<br/> **fraude** = het is een beschermingsmechanisme aan onze kant . Als de gebruiker vergunning ontbreekt en het dan een aantal tijden in een kort interval (seconden) opnieuw verzoekt ontkennen wij direct de vraag. Het gebeurt typisch wanneer een Programmer een insect in hun implementatie heeft die om vergunning constant vraagt als het ontbreekt. |
 | Type token | Wanneer tokens door AuthZ allen en AuthN allen worden gecreeerd, moeten wij weten wat door een degradatiemaatregel wordt veroorzaakt.<br/> Het zijn:<br/> &quot;normal&quot; = het normale geval<br/> &quot;authnall&quot; = When AuthN All is enabled<br/> &quot;authzall&quot; = When AuthZ All is enabled<br/>  &quot;hba&quot; = Wanneer HBA is ingeschakeld |
-| Apparaattype zonder clip | Het apparaatplatform (alternatief), momenteel gebruikt voor Clientless.<br/> De waarden kunnen zijn:<br/> N.v.t. - de gebeurtenis kwam niet voort uit een Clientless SDK<br/> Onbekend - Sinds de parameter deviceType van een **Clientloze API** is optioneel. Er zijn aanroepen die geen waarde bevatten.<br/> Een andere waarde die via de **Clientloze API**. Bijvoorbeeld xbox, appletv en roku. |
+| Apparaattype zonder clip | Het apparaatplatform (alternatief), dat momenteel wordt gebruikt voor Clientless.<br/> De waarden kunnen zijn:<br/> N.v.t. - de gebeurtenis kwam niet voort uit een Clientless SDK<br/> Onbekend - Omdat de parameter deviceType afkomstig is van een **Clientloze API** is optioneel. Er zijn aanroepen die geen waarde bevatten.<br/> Een andere waarde die via de **Clientloze API**. Bijvoorbeeld xbox, appletv en roku. |
 | MVPD-gebruikersnaam | Vervangt op cookie gebaseerde bezoeker-id |
 
 
@@ -61,7 +60,7 @@ Het is niet bedoeld om een clientimplementatie te vervangen als er al een bestaa
 * Elke klant zal één of veelvoudige rapportseries hebben. Eén aanvrager-id (kanaal) wijst slechts aan één rapportsuite toe. Meerdere verzoek-id&#39;s kunnen aan slechts één rapportsuite worden toegewezen.
 * Historische gegevens kunnen worden verstrekt, maar er moet speciale aandacht worden besteed aan verkeersproblemen/prestatieproblemen.
 * De unieke bezoekersvariabele wordt ingesteld op de MVPD-gebruikersnaam
-* Het in kaart brengen van gebeurtenissen en eVars is niet configureerbaar.
+* De toewijzing van gebeurtenissen en eVars kan niet worden geconfigureerd.
 
 
 ## SLA {#sla-int-authn-serv-anal}
@@ -70,7 +69,7 @@ Aangezien het geen kritieke component is, is er geen SLA garantie voor de integr
 
 ## Configuratie van rapportsuite {#report-suite-config}
 
-Het rapport moet een tijdstempel hebben omdat de gebeurtenissen batchgewijs worden verzonden.
+Het rapport moet een tijdstempel hebben, omdat de gebeurtenissen batchgewijs worden verzonden.
 
 ### Gebeurtenissen {#report-suite-config-events}
 
@@ -79,7 +78,6 @@ Het rapport moet een tijdstempel hebben omdat de gebeurtenissen batchgewijs word
 >Alles moet worden ingesteld met:
 >
 >* Teller (geen subrelaties)
-
 
 | Gebeurtenis | Adobe Analytics, gebeurtenis |
 |---------------------------------------|-----------------------|
@@ -109,10 +107,9 @@ Het rapport moet een tijdstempel hebben omdat de gebeurtenissen batchgewijs word
 >[!NOTE]
 >Alles moet worden ingesteld met:
 >
->* Toewijzing: Recentste (laatste)
+>* Toewijzing: meest recente (laatste)
 >* Verlopen na: Actief
 >* Type: Tekstreeks
-
 
 | Eigenschap | eVar |
 |-----------------------------------|--------------------------------|
@@ -152,6 +149,6 @@ Het rapport moet een tijdstempel hebben omdat de gebeurtenissen batchgewijs word
 | Versie apparaatbrowser | eVar33 |
 | Genormaliseerd apparaattype zonder clip | eVar34 |
 
-## Prijzen {#pricing}
+## Prijsstelling {#pricing}
 
 Neem contact op met uw TAM voor meer informatie.

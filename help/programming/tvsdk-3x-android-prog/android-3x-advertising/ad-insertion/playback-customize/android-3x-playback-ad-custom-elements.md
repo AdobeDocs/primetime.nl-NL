@@ -1,8 +1,7 @@
 ---
 description: TVSDK biedt klassen en methoden waarmee u het afspeelgedrag kunt aanpassen van inhoud die reclame bevat.
 title: API-elementen voor het afspelen van advertenties
-exl-id: 1114d00b-e853-47a5-af29-253df615692e
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '228'
 ht-degree: 0%
@@ -36,7 +35,7 @@ De volgende API-elementen zijn handig voor het aanpassen van het afspelen:
    <td colname="col2"> Hiermee geeft u een overzicht van het mogelijke afspeelbeleid voor advertenties. </td> 
   </tr> 
   <tr> 
-   <td colname="col1"><span class="apiname"> AdPolicySelector </span> </td> 
+   <td colname="col1"><span class="apiname"> AdbeleidSelector </span> </td> 
    <td colname="col2"> Interface die aanpassing van TVSDK en gedrag toestaat. </td> 
   </tr> 
   <tr> 
@@ -50,7 +49,7 @@ De volgende API-elementen zijn handig voor het aanpassen van het afspelen:
      <li id="li_B465170D449E49489C5924572BEEB4A5"><span class="codeph"> getLocalTime</span> <p>Dit is de lokale tijd van het afspelen, exclusief de geplaatste en afgebroken foto's. </p> </li> 
      <li id="li_D9D68CF428904BB2B84E1BCE828A90DC"><span class="codeph"> seekToLocal</span>. <p>Hier wordt gezocht ten opzichte van een lokale tijd in de stream. </p> </li> 
      <li id="li_9DBCA75537DC4824AA66B53A3FA28812"><span class="codeph"> getTimeline.convertToLocalTime</span>. <p>De virtuele positie op de tijdlijn wordt geconverteerd naar de lokale positie. </p> </li> 
-    </ul> <p>Belangrijk:  <span class="codeph"> getLocalTime</span> in <span class="codeph"> MediaPlayer</span> retourneert de huidige tijd ten opzichte van de oorspronkelijke inhoud, zonder dynamisch gesplitste advertenties. <span class="codeph"> getLocalTime</span> in <span class="codeph"> AdBreak</span> retourneert de begintijd van het einde ten opzichte van de oorspronkelijke inhoud. </p> </td> 
+    </ul> <p>Belangrijk:  <span class="codeph"> getLocalTime</span> in <span class="codeph"> MediaPlayer</span> retourneert de huidige tijd ten opzichte van de oorspronkelijke inhoud, zonder dynamisch gespliceerde advertenties. <span class="codeph"> getLocalTime</span> in <span class="codeph"> AdBreak</span> retourneert de begintijd van het einde ten opzichte van de oorspronkelijke inhoud. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"><span class="apiname"> AdBreak</span> </td> 

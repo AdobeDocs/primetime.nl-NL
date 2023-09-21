@@ -1,8 +1,7 @@
 ---
 description: De TVSDK biedt API's en voorbeeldcode voor de afhandeling van brainstormperioden.
 title: Afstroomverwerking implementeren
-exl-id: 57823364-fdb3-41c3-8441-008e991f19a7
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '129'
 ht-degree: 0%
@@ -15,7 +14,7 @@ De TVSDK biedt API&#39;s en voorbeeldcode voor de afhandeling van brainstormperi
 
 Omgaan met black-out en alternatieve inhoud bieden tijdens de black-out:
 
-1. Stel uw app in om u te abonneren op brainstormtags in een live streaming manifest.
+1. Stel uw app in om u te abonneren op black-out-tags in een live streaming manifest.
 
    ```
    - (void) createMediaPlayer:(PTMediaPlayerItem *)item 

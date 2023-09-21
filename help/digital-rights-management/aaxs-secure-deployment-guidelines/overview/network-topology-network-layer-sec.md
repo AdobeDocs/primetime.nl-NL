@@ -2,8 +2,7 @@
 title: Netwerklaagbeveiliging
 description: Netwerklaagbeveiliging
 copied-description: true
-exl-id: 70c9917d-32bc-43f6-add3-62883f98ac5e
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '265'
 ht-degree: 0%
@@ -26,14 +25,14 @@ Deze lijst beschrijft gemeenschappelijke technieken die de kwetsbaarheid van de 
  <tbody class="- topic/tbody "> 
   <tr rowsep="1" class="- topic/row "> 
    <td colname="1" class="- topic/entry "> <p class="- topic/p ">Gedemilitariseerde zones (DMZ's) </p> </td> 
-   <td colname="2" class="- topic/entry "> <p class="- topic/p ">De segmentatie moet in minstens twee niveaus bestaan met de toepassingsserver die wordt gebruikt om Toegang in werking te stellen Adobe die achter de binnenfirewall wordt geplaatst. Scheid het externe netwerk van DMZ die de Webservers bevat, die beurtelings van het interne netwerk moeten worden gescheiden. Gebruik firewalls om de scheidingslagen te implementeren. Categoriseer en controleer het verkeer dat door elke netwerklaag overgaat om ervoor te zorgen dat slechts het absolute minimum van vereiste gegevens wordt toegestaan. </p> </td> 
+   <td colname="2" class="- topic/entry "> <p class="- topic/p ">De segmentatie moet in minstens twee niveaus bestaan met de toepassingsserver die wordt gebruikt om de Toegang van de Adobe in werking te stellen die achter de binnenfirewall wordt geplaatst. Scheid het externe netwerk van DMZ die de Webservers bevat, die beurtelings van het interne netwerk moeten worden gescheiden. Gebruik firewalls om de scheidingslagen te implementeren. Categoriseer en controleer het verkeer dat door elke netwerklaag overgaat om ervoor te zorgen dat slechts het absolute minimum van vereiste gegevens wordt toegestaan. </p> </td> 
   </tr> 
   <tr rowsep="1" class="- topic/row "> 
    <td colname="1" class="- topic/entry "> <p class="- topic/p ">Persoonlijke IP-adressen </p> </td> 
-   <td colname="2" class="- topic/entry "> <p class="- topic/p ">De Vertaling van het Adres van het Netwerk van het gebruik (NATIONAAL) met RFC 1918 privé IP adressen op de toepassingsservers van de Toegang van Adobe. Wijs privé IP adressen (10.0.0.0/8, 172.16.0.0/12, en 192.168.0.0/16) toe om het voor een aanvaller moeilijker te maken om verkeer aan en van een NATIONAAL interne gastheer door Internet te leiden. </p> </td> 
+   <td colname="2" class="- topic/entry "> <p class="- topic/p ">De Vertaling van het Adres van het Netwerk van het gebruik (NATIONAAL) met privé IP adressen RFC 1918 op de toepassingsservers van de Toegang van de Adobe. Wijs privé IP adressen (10.0.0.0/8, 172.16.0.0/12, en 192.168.0.0/16) toe om het voor een aanvaller moeilijker te maken om verkeer aan en van een NATIONAAL interne gastheer door Internet te leiden. </p> </td> 
   </tr> 
   <tr rowsep="0" class="- topic/row "> 
-   <td colname="1" class="- topic/entry "> <p class="- topic/p ">Vuurmuren </p> </td> 
+   <td colname="1" class="- topic/entry "> <p class="- topic/p ">Firewalls </p> </td> 
    <td colname="2" class="- topic/entry "> <p class="- topic/p ">Gebruik de volgende criteria om een firewalloplossing te selecteren: </p> <p class="- topic/p "> 
      <ul class="- topic/ul " id="ul-wjf-lhz-n4"> 
       <li class="- topic/li " id="li-8031632160F44037B092988183139202"> <p class="- topic/p ">Voer firewalls uit die volmachtsservers en/of stateful inspectie in plaats van eenvoudige pakket-filtrerende oplossingen steunen. </p> </li> 

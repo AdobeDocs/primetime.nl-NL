@@ -2,8 +2,7 @@
 title: Adobe Primetime-verificatie en Adobe Primetime DRM
 description: Adobe Primetime-verificatie en Adobe Primetime DRM
 copied-description: true
-exl-id: 7239be8b-9725-48b6-a4e2-8d13461f297d
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '416'
 ht-degree: 0%
@@ -24,7 +23,7 @@ De *Toegangsfunctie* kan achterste vergunningen tussen de authentificatiedienst 
 
 De verificatie- en autorisatietokens worden ondertekend met de unieke id en de persoonlijke sleutel van de Primetime DRM-client om te voorkomen dat er wordt geknoeid met of geknoeid met de computer. Deze token is alleen toegankelijk via de *Toegangsfunctie*.
 
-De videospeler kan het proces activeren door `getAuthorization` op de *Toegangsfunctie*. Als er geldige AuthN/AuthZ-tokens aanwezig zijn, worden de *AccessEnabler* geeft een callback aan de videospeler uit die een kort-levend media teken voor het spelen van de videoinhoud zal omvatten.
+De videospeler kan het proces activeren door `getAuthorization` op de *Toegangsfunctie*. Als er geldige AuthN/AuthZ-tokens aanwezig zijn, worden de *AccessEnabled* geeft een callback aan de videospeler uit die een kort-levend media teken voor het spelen van de videoinhoud zal omvatten.
 
 Adobe Primetime-verificatie biedt een Java-bibliotheek voor mediatoken-validatie die kan worden geïmplementeerd op een server. Wanneer u de Primetime DRM-server gebruikt voor inhoudsbeveiliging, kunt u de mediatoken-validator integreren met een Primetime DRM-plug-in voor servers om automatisch een algemene licentie uit te geven nadat u de mediatoken hebt gevalideerd. De inhoud wordt dan gestreamd van de CDN-servers naar de client. Als u een inhoudslicentie wilt aanschaffen, kan het kortstondige media-token worden verzonden naar de Primetime DRM-server, waar de geldigheid van het token wordt geverifieerd en een licentie kan worden uitgegeven.
 

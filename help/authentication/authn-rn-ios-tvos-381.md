@@ -1,7 +1,7 @@
 ---
 title: Opmerkingen bij de release iOS / tvOS 3.8.1 verifiëren
 description: Opmerkingen bij de release iOS / tvOS 3.8.1 verifiëren
-source-git-commit: 6a32450d99b84835d820b54679a73ffe5dc61636
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '89'
 ht-degree: 0%
@@ -20,7 +20,7 @@ Op deze pagina worden nieuwe functies, wijzigingen en bekende problemen met deze
 
 Adobe Primetime-verificatie: iOS / tvOS 3.8.1
 
-Releasedatum: 05-26-2023
+Releasedatum: 26-05-2023
 
 
 

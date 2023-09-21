@@ -1,8 +1,7 @@
 ---
 description: Voor een vloeiender kijkervaring wordt de videostream soms door TVSDK gebufferd. U kunt configureren hoe de speler buffert.
 title: Bufferen
-exl-id: 3b706420-878d-487a-8db7-cff2a12c2660
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '500'
 ht-degree: 0%
@@ -27,7 +26,7 @@ Terwijl de video wordt teruggegeven, blijft TVSDK nieuwe fragmenten bufferen tot
 
 >[!TIP]
 >
->Als de aanvankelijke bufferwaarde hoog is, zou het uw gebruiker een lange aanvankelijke buffertijd kunnen geven alvorens te beginnen. Hierdoor wordt het afspelen langer soepel afgespeeld. als de netwerkvoorwaarden echter slecht zijn , kan het afspelen eerst worden vertraagd .
+>Als de aanvankelijke bufferwaarde hoog is, zou het uw gebruiker een lange aanvankelijke buffertijd kunnen geven alvorens te beginnen. Dit kan een langere afspeeltijd voor een vloeiende weergave zorgen. Als de netwerkvoorwaarden echter slecht zijn, kan de eerste afspeelbewerking worden vertraagd.
 
 Als u onmiddellijk toelaat op door te roepen `prepareBuffer`De eerste buffering begint op dat moment, in plaats van te wachten op `play`.
 
@@ -39,28 +38,28 @@ De `MediaPlayer` biedt methoden voor het instellen en ophalen van de eerste buff
 >
 >Als u de bufferbesturingsparameters niet instelt voordat u begint met afspelen, wordt de mediaspeler standaard ingesteld op 2 seconden voor de eerste buffer en op 30 seconden voor de doorlopende buffertijd.
 
-1. Stel de `BufferControlParameters` object, dat de initiële parameters voor buffertijd en tijd van de afspeelbuffer inkapselt.
+1. Stel de `BufferControlParameters` object, dat de initiële parameters voor buffertijd en afspeelbuffertijd inkapselt.
 
    Deze klasse biedt de volgende fabrieksmethoden:
 
    * De eerste buffertijd instellen op gelijk aan de buffertijd van het afspelen:
 
-      ```
-      public static BufferControlParameters createSimple(long bufferTime)
-      ```
+     ```
+     public static BufferControlParameters createSimple(long bufferTime)
+     ```
 
    * De tijd van de eerste buffer en de afspeelbuffer instellen:
 
-      ```
-      public static BufferControlParameters createDual( 
-        long initialBuffer,  
-        long bufferTime)
-      ```
+     ```
+     public static BufferControlParameters createDual( 
+       long initialBuffer,  
+       long bufferTime)
+     ```
+
    Als de parameters niet geldig zijn, genereren deze methoden `MediaPlayerException` met foutcode `PSDKErrorCode.INVALID_ARGUMENT`, bijvoorbeeld wanneer aan de volgende voorwaarden is voldaan:
 
    * De aanvankelijke buffertijd is minder dan nul.
    * De aanvankelijke buffertijd is groter dan de buffertijd.
-
 
 1. Als u de bufferparameters wilt instellen, gebruikt u deze `MediaPlayer` methode:
 

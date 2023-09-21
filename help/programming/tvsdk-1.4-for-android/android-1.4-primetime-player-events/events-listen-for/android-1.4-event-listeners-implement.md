@@ -1,8 +1,7 @@
 ---
 description: Met gebeurtenishandlers kan TVSDK reageren op gebeurtenissen.
 title: Gebeurtenislisteners en callbacks implementeren
-exl-id: eda5cd4e-4ee8-4b37-a179-242e8697f61f
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '572'
 ht-degree: 0%
@@ -25,13 +24,13 @@ Zie Core Video Playback bijhouden voor een volledige lijst met gebeurtenissen vo
 
    * **Vereiste gebeurtenissen**: Luister naar alle afspeelgebeurtenissen.
 
-      >[!IMPORTANT]
-      >
-      >De afspeelgebeurtenis `onStateChanged` bevat de status van de speler, inclusief fouten. Een van de statussen heeft mogelijk invloed op de volgende stap van de speler
+     >[!IMPORTANT]
+     >
+     >De afspeelgebeurtenis `onStateChanged` bevat de status van de speler, inclusief fouten. Een van de statussen heeft mogelijk invloed op de volgende stap van de speler
 
    * **Andere gebeurtenissen**: Optioneel, afhankelijk van uw toepassing.
 
-      Bijvoorbeeld, als u reclame in uw playback opneemt, voer de callbacks AdPlaybackEventListener uit.
+     Bijvoorbeeld, als u reclame in uw playback opneemt, voer de callbacks AdPlaybackEventListener uit.
 
 1. Implementeer gebeurtenislisteners voor elke gebeurtenis.
 

@@ -1,8 +1,7 @@
 ---
 title: Toegang tot de Android SDK Single Sign-On (SSO) voor Android 10-apps
 description: Toegang tot de Android SDK Single Sign-On (SSO) voor Android 10-apps
-exl-id: dedade15-c451-4757-b684-d3728e11dd87
-source-git-commit: 84a16ce775a0aab96ad954997c008b5265e69283
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '377'
 ht-degree: 0%

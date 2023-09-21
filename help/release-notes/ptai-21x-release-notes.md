@@ -1,8 +1,7 @@
 ---
 title: Opmerkingen bij de release PTAI 21.11.1
 description: In de PTAI-release wordt beschreven wat nieuw of gewijzigd is, wat de opgeloste en bekende problemen zijn in Primetime Ad Insertion in 2021.
-exl-id: 39a05f6d-431a-4416-81b1-21d82c0dbd69
-source-git-commit: f4c6ef44c7f13bf8170a1f23a7ae8eba0171316a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '389'
 ht-degree: 0%
@@ -15,7 +14,7 @@ Opmerkingen bij de release van Primetime Ad Insertion 21.xx.x beschrijven wat ni
 
 ## Nieuw in PTAI 21.11.1
 
-Wanneer: Dinsdag 9 november 2021, 13.30 tot 4.30 uur Oosterse tijd
+Wanneer: Dinsdag 9 november 2021 van 1.30 tot 04.30 uur Oosterse tijd
 
 * [!UICONTROL EXT-X-IMAGE-STREAM-INF] is nu configureerbaar per streek.
 
@@ -25,31 +24,31 @@ Wanneer: Dinsdag 9 november 2021, 13.30 tot 4.30 uur Oosterse tijd
 
 ### Versie 21.10.1
 
-Wanneer: Dinsdag 12 oktober 2021, 19.45 - 13.45 uur Oosterse tijd
+Als: Dinsdag 12 oktober 2021, 19.45 - 13.45 uur Oost Tijd
 
 * Geconsolideerde servers, verwijderde niet-productie en niet-bruikbare servers.
 
 ### Primetime Ad Insertion Maintenance release
 
-Wanneer: Dinsdag 28 september 2021, van 5.00 tot 6.00 uur Oosterse tijd
+Als: Dinsdag 28 september 2021, van 5.00 tot 6.00 uur Oost Tijd
 
-* Updates voor Load Balancer-stapel van AWS Elastic Load Balancer naar AWS Application Load Balancer voor verbeterde functionaliteit en schaalbaarheid. Deze Balancers van de Lading worden gebruikt om verkeer te leiden en te verzoeken aan Auditude achterste van de laag van de Ad Insertion (SSAI/CSAI).
+* Updates voor Load Balancer-stapel van AWS Elastic Load Balancer naar AWS Application Load Balancer voor verbeterde functionaliteit en schaalbaarheid. Deze Balancers van de Lading worden gebruikt om verkeer aan Auditude achterste van de laag van de Ad Insertion (SSAI/CSAI) te leiden en te verzoeken.
 
 ### Versie 21.9.1
 
-Wanneer: Dinsdag 7 september 2021, 2.30 uur &#39;s middags tot 5.30 uur &#39;s morgens
+Wanneer: Dinsdag 7 september 2021 van 2.30 uur tot 05.30 uur Oosterse tijd
 
 * Updates voor infrastructuurcomponenten achter de bemiddelings- en rapportagecomponenten van Primetime Ad Insertion (Primetime Ads GUI).
 
 ### Versie 21.8.1
 
-Wanneer: Dinsdag 24 augustus 2021, van 2.00 uur tot 05.00 uur Oosterse tijd
+Wanneer: Dinsdag 24 augustus 2021 van 2.00 tot 05.00 uur Oosterse tijd
 
 * Toegevoegde ondersteuning voor live/lineaire DASH-streams (VOD wordt al ondersteund).
 
 ### Versie 21.5.1
 
-Wanneer: Woensdag 26 mei 2021, 15.30 - 06.30 uur Oosterse tijd
+Wanneer: woensdag 26 mei 2021 van 3.30 tot 06.30 uur &#39;s morgens
 
 **Wijzigingen**
 
@@ -81,7 +80,7 @@ Wanneer: Woensdag 26 mei 2021, 15.30 - 06.30 uur Oosterse tijd
 
 **Wijzigingen**
 
-* Toegevoegde ondersteuning voor DASH-uitvoeroptimalisatie: op tijd gebaseerde consolidatie van knooppunten.
+* Toegevoegde ondersteuning voor DASH-uitvoeroptimalisatie: tijdgebaseerde consolidatie van knooppunten.
 
 ### Versie 21.1.2
 
@@ -89,7 +88,7 @@ Wanneer: Woensdag 26 mei 2021, 15.30 - 06.30 uur Oosterse tijd
 
 **Wijzigingen**
 
-* Onderhoudsupdate: Upgrade van Primetime Ad Insertion backend-geheugenclusters.
+* Onderhoudsupdate: upgrade van Primetime Ad Insertion backend-geheugenclusters.
 
 ### Versie 21.1.1
 

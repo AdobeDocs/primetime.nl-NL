@@ -1,8 +1,7 @@
 ---
 description: Deze handleiding bevat informatie over hoe u videospelertoepassingen kunt ontwikkelen met behulp van TVSDK voor Android, die in Java is geïmplementeerd.
 title: Overzicht
-exl-id: 21d224fe-a843-4200-ad13-9b8eba52d74f
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '216'
 ht-degree: 0%
@@ -31,6 +30,6 @@ Deze handleiding bevat informatie waarmee u TVSDK-functies kunt opnemen in een v
 
 >[!TIP]
 >
->Het prefix voor de TVSDK API-naamruimte `com.adobe.mediacore` wordt weggelaten om kort te zijn.
+>Het prefix voor de TVSDK API-naamruimte `com.adobe.mediacore` wordt weggelaten voor de beknoptheid.
 >
 >Er wordt naar veel API-elementen verwezen zonder de aanduiding van de bovenliggende klasse als de context duidelijk is.

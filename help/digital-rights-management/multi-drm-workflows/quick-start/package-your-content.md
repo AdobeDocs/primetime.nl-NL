@@ -1,8 +1,7 @@
 ---
 description: Inhoud verpakken is het proces waarbij video-inhoud wordt voorbereid voor weergave op het web. Het verpakken omvat het omzetten van ruwe video in manifestdossiers, en naar keuze het coderen van de inhoud gebruikend verschillende oplossingen DRM voor verschillende apparaten en browsers.
 title: Inhoud verpakken
-exl-id: d6f922d6-afec-4314-a01e-b951c1f8a7e8
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '561'
 ht-degree: 0%
@@ -13,9 +12,9 @@ ht-degree: 0%
 
 Inhoud verpakken is het proces waarbij video-inhoud wordt voorbereid voor weergave op het web. Het verpakken omvat het omzetten van ruwe video in manifestdossiers, en naar keuze het coderen van de inhoud gebruikend verschillende oplossingen DRM voor verschillende apparaten en browsers.
 
-Om uw inhoud voor te bereiden, kunt u Adobe Offline Packager of andere hulpmiddelen gebruiken zoals het verpakkingshulpprogramma Bento4 van ExpressPlay. De verpakkers bereiden allebei de video voor playback voor (b.v., die het originele dossier en het zetten van het in manifest), en beschermen de video met uw gekozen oplossing DRM (PlayReady, Widevine, FairPlay, Toegang, enz.):
+Om uw inhoud voor te bereiden, kunt u of Adobe Offline Packager of andere hulpmiddelen zoals de verpakker van Bento4 van ExpressPlay gebruiken. De verpakkers bereiden allebei de video voor playback voor (b.v., die het originele dossier en het zetten van het in manifest), en beschermen de video met uw gekozen oplossing DRM (PlayReady, Widevine, FairPlay, Toegang, enz.):
 
-* [Adobe Offline Packager](https://helpx.adobe.com/content/dam/help/en/primetime/guides/offline_packager_getting_started.pdf)
+* [Offline Adobe Packager](https://helpx.adobe.com/content/dam/help/en/primetime/guides/offline_packager_getting_started.pdf)
 * [ExpressPlay-pakketten](https://www.expressplay.com/developer/packaging-tools/)
 
 <!--<a id="fig_jbn_fw5_xw"></a>-->
@@ -24,15 +23,15 @@ Om uw inhoud voor te bereiden, kunt u Adobe Offline Packager of andere hulpmidde
 
 1. Verpak of verkrijg op een andere manier inhoud voor het testen van uw opstelling.
 
-   Een van de cruciale punten die u voor het maken van pakketten moet onthouden, is dat de sleutel-id (Content ID) die u in deze verpakkingsstap gebruikt, dezelfde is als die u in uw volgende licentietoken-aanvraag moet opgeven. Sleutelidentiteitskaart is het enige punt dat uw CEK identificeert (die in uw eigen zeer belangrijke beheersgegevensbestand kan worden opgeslagen, of die gebruikend wordt opgeslagen [De belangrijkste opslagservice van ExpressPlay](https://www.expressplay.com/developer/key-storage/).
+   Een van de cruciale punten die u voor het maken van pakketten moet onthouden, is dat de sleutel-id (Content ID) die u in deze verpakkingsstap gebruikt, dezelfde is als die u in uw volgende licentietoken-aanvraag moet opgeven. Sleutelidentiteitskaart is het enige punt dat uw CEK identificeert (die in uw eigen zeer belangrijke beheersgegevensbestand kan worden opgeslagen, of die gebruikend wordt opgeslagen [ExpressPlay&#39;s Key Storage-service](https://www.expressplay.com/developer/key-storage/).
 
    >[!NOTE]
    >
-   >Voor degenen die vertrouwd zijn met Adobe Access, is dit een belangrijk verschil in hoe de verschillende oplossingen werken. Bij Access wordt de licentiecode ingesloten in de DRM-metagegevens en doorgestuurd met de beveiligde inhoud. In de multi-DRM systemen die hier worden beschreven, wordt de daadwerkelijke Vergunning niet overgegaan, maar veilig opgeslagen en via Key ID verkregen.
+   >Voor hen die met de Toegang van de Adobe vertrouwd zijn, is dit een belangrijk verschil in hoe de verschillende oplossingen werken. Bij Access wordt de licentiecode ingesloten in de DRM-metagegevens en doorgestuurd met de beveiligde inhoud. In de multi-DRM systemen die hier worden beschreven, wordt de daadwerkelijke Vergunning niet overgegaan, maar veilig opgeslagen en via Key ID verkregen.
 
 <!--<a id="example_52AF76B730174B79B6088280FCDF126D"></a>-->
 
-Hier volgt een voorbeeld van het verpakken met Adobe Offline Packager for Widevine. Packager gebruikt een configuratiebestand (bijvoorbeeld [!DNL widevine.xml]), die er ongeveer als volgt uitziet:
+Hier is een verpakkingsvoorbeeld dat Adobe Offline Packager voor Widevine gebruikt. Packager gebruikt een configuratiebestand (bijvoorbeeld [!DNL widevine.xml]), die er ongeveer als volgt uitziet:
 
 ```
 <config> 

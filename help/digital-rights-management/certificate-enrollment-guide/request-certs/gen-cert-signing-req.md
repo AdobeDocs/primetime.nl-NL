@@ -2,8 +2,7 @@
 title: Een certificaataanvraag genereren (aanvrager)
 description: Een certificaataanvraag genereren (aanvrager)
 copied-description: true
-exl-id: 4f8dae3d-da56-453d-b3c4-e67fe4f37064
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '203'
 ht-degree: 0%
@@ -41,7 +40,7 @@ ht-degree: 0%
 1. U wordt gevraagd het wachtwoord voor de persoonlijke sleutel in te voeren.
 1. Maak een reservekopie van uw persoonlijke sleutel en wachtwoord.
 
-   Als u de persoonlijke sleutel verliest of als deze is gecompromitteerd, neemt u contact op met de beheerder van het Adobe-certificaat om uw certificaat in te trekken en een nieuw certificaat aan te vragen.
+   Als u de persoonlijke sleutel verliest of als het gecompromitteerd is, contacteer de Beheerder van het Certificaat van de Adobe om uw certificaat in te trekken en om nieuwe te verzoeken.
 
    >[!NOTE]
    >

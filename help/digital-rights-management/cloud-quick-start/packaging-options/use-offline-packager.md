@@ -2,8 +2,7 @@
 title: De meegeleverde Offline Packager Primetime gebruiken
 description: De meegeleverde Offline Packager Primetime gebruiken
 copied-description: true
-exl-id: 6a1d0dc3-8906-4de5-8351-890c1cf31efd
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '201'
 ht-degree: 0%
@@ -24,9 +23,9 @@ Context voor de huidige taak
 
 | Eigenschapnaam | Beschrijving |
 |---|---|
-| `policy_file` | pad naar beleidsbestand. Adobe biedt diverse vooraf geconfigureerde beleidslijnen die u kunt kiezen. |
-| `pkgr_pfx` | Pad naar inloggegevens van Packager. U moet uw eigen door Adobe uitgegeven pakketreferentie opgeven ( [!DNL .pfx]) hier. |
-| `pkgr_pfx_pwd` | Wachtwoord voor inloggegevens van Packager. U moet het wachtwoord hier opgeven aan de referentie van uw door Adobe uitgegeven verpakker. |
+| `policy_file` | pad naar beleidsbestand. De Adobe voorziet in verschillende vooraf geconfigureerde beleidslijnen waaruit kan worden gekozen. |
+| `pkgr_pfx` | Pad naar inloggegevens van Packager. U moet uw eigen door de Adobe uitgegeven pakketreferentie opgeven ( [!DNL .pfx]) hier. |
+| `pkgr_pfx_pwd` | Wachtwoord voor gegevens van Packager. U moet het wachtwoord hier aan uw Adobe-uitgegeven pakketreferentie verstrekken. |
 
 ## Pakket maken met opdrachtregel {#section_DFBE462679E34D62963BE201FD3321F9}
 

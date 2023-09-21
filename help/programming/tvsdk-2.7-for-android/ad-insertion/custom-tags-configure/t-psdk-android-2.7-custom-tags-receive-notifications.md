@@ -1,8 +1,7 @@
 ---
 description: Als u meldingen over tags in het manifest wilt ontvangen, moet u de juiste gebeurtenislisteners implementeren.
 title: Listeners toevoegen voor meldingen van getimede metagegevens
-exl-id: e38f2a25-3379-4132-a8de-6703dc564ed4
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '152'
 ht-degree: 0%
@@ -37,4 +36,4 @@ U kunt vastgestelde meta-gegevens controleren door te luisteren naar `onTimedMet
    }; 
    ```
 
-ID3-metagegevens gebruiken hetzelfde `onTimedMetadata` listener die de aanwezigheid van een ID3-tag aangeeft. Dit mag echter geen verwarring veroorzaken, omdat u de `TimedMetadata` `type` eigenschap om onderscheid te maken tussen TAG en ID3. Voor meer informatie over ID3-tags raadpleegt u  [ID3-tags](../../content-playback-options/t-psdk-android-2.7-id3-metadata-retrieve.md).
+ID3-metagegevens gebruiken hetzelfde `onTimedMetadata` listener die de aanwezigheid van een ID3-tag aangeeft. Dit mag echter geen verwarring veroorzaken, omdat u de `TimedMetadata` `type` eigenschap voor onderscheid tussen TAG en ID3. Zie voor meer informatie over ID3-tags  [ID3-tags](../../content-playback-options/t-psdk-android-2.7-id3-metadata-retrieve.md).

@@ -1,19 +1,18 @@
 ---
 description: Een manier om licenties en beleidshandhaving te coördineren, is deze functies op te nemen in een machtigingsserver. Adobe verstrekt de SEES server van de verwijzingsrecht waarmee u kunt werken om uw eigen server te bouwen.
 title: Referentieservervoorbeeld ExpressPlay Entitlement Server (SEES)
-exl-id: aa5b63f4-dffc-4808-8aa6-6b8f63df592c
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '189'
 ht-degree: 0%
 
 ---
 
-# Referentieserver: Voorbeeld ExpressPlay Entitlement Server (SES) {#reference-server-sample-expressplay-entitlement-server-sees}
+# Referentieserver: Sample ExpressPlay Entitlement Server (SES) {#reference-server-sample-expressplay-entitlement-server-sees}
 
 Een manier om licenties en beleidshandhaving te coördineren, is deze functies op te nemen in een machtigingsserver. Adobe verstrekt de SEES server van de verwijzingsrecht waarmee u kunt werken om uw eigen server te bouwen.
 
-De verwijzingsserver SEES toont de ExpressPlay Dienst van de Entitlement aan, die twee diensten toont: elementaire op tijd gebaseerde machtiging en rechten voor apparaatbinding.
+De referentieserver SEES demonstreert de ExpressPlay Entitlement Service en toont twee services: een basisrecht op basis van tijd en rechten voor apparaatbinding.
 
 De SES is gebaseerd op twee ExpressPlay Fairplay-services:
 

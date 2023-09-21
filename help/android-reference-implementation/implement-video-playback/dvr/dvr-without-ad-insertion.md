@@ -1,8 +1,7 @@
 ---
 description: Een live stream met ondersteuning voor DVR stelt standaard een doorzoekbaar bereik beschikbaar waarin de viewer kan pauzeren en zoeken.
 title: DVR zonder invoeging
-exl-id: 96f39465-0225-4725-90dc-e7ec6e478339
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '136'
 ht-degree: 0%
@@ -19,5 +18,5 @@ U kunt de besturingsbalk voor de speler voor DVR verbeteren met de volgende aanv
 * Markeer het doorzoekbare bereik in de besturingsbalk.
 * Wijzig de duur van de besturingsbalk in het doorzoekbare bereik van de stream in plaats van het afspeelbereik van de stream.
 
-   Het doorzoekbare bereik is een subset van het afspeelbare bereik waarin advertenties veilig kunnen worden ingevoegd.
+  Het doorzoekbare bereik is een subset van het afspeelbare bereik waarin advertenties veilig kunnen worden ingevoegd.
 * Kies een aangepast beginpunt voor het tijdstip waarop u een stream wilt invoeren.

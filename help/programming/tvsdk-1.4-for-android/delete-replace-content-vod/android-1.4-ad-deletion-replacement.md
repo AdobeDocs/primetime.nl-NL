@@ -1,8 +1,7 @@
 ---
 description: Deze wijzigingen in de Android TVSDK API ondersteunen en verwijderen en vervangen.
 title: Wijzigingen in API voor verwijderen en vervangen toevoegen
-exl-id: bde8bd6e-0afe-42d0-b716-f33f75de757e
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '428'
 ht-degree: 0%
@@ -24,7 +23,7 @@ Deze wijzigingen in de Android TVSDK API ondersteunen en verwijderen en vervange
 
 * Nieuw `ContentRemoval` class
 
-   `TimelineOperation` klasse die het tijdbereik definieert dat uit de tijdlijn moet worden verwijderd
+  `TimelineOperation` klasse die het tijdbereik definieert dat uit de tijdlijn moet worden verwijderd
 
 * `AuditudeResolver`
 
@@ -35,7 +34,7 @@ Deze wijzigingen in de Android TVSDK API ondersteunen en verwijderen en vervange
 
    * Nieuw `canDoResolver()`: Controleert of de plaatsingsmogelijkheid metagegevens voor primetime en besluitvorming bevat
 
-* Nieuw `CustomRangeHelper` De klasse van de hulp die tijdwaaier meta-gegevens uit advertentiemetagegevens haalt, en subsets/overlappingen/ongeldige tijdwaaiers verwijdert.
+* Nieuw `CustomRangeHelper` De klasse van de hulp die meta-gegevens van de tijdwaaier uit advertentiemetagegevens haalt, en subsets/overlappingen/ongeldige tijdwaaiers verwijdert.
 
 * Nieuw `DeleteContentResolver` Inhoud oplossen die plaatsingskansen van `PlacementInformation.Mode.DELETE`
 
@@ -63,12 +62,12 @@ Deze wijzigingen in de Android TVSDK API ondersteunen en verwijderen en vervange
    * Nieuw `MARK_RANGES, DELETE_RANGES, REPLACE_RANGES`
    * Naam gewijzigd `CUSTOM_AD_MARKERS` tot `MARK_RANGES`
 
-   * Gewijzigd `toMetadata(Metadata options)` om reeksen voor verwijderen/markeren/vervangen in metagegevens voor advertenties te plaatsen.
+   * gewijzigd `toMetadata(Metadata options)` om reeksen voor verwijderen/markeren/vervangen in metagegevens voor advertenties te plaatsen.
 
 * `MediaPlayerNotification`
 
-   * Nieuw `UNDEFINED_TIME_RANGES`: Wanneer de advertentie-signalerende wijze de Kaart van de Server of Duidelijke Gebruik is, en reeksen vervangt ook in de ademetagegevens zijn, vervangt waaiers worden genegeerd.
-   * Nieuw `REPLACE_RANGES_NOT_AVAILABLE`: Wanneer de ad signalerende wijze de Waaier van de Tijd van de Douane is en reeksen vervangt niet beschikbaar, zal een waarschuwing worden verzonden.
+   * Nieuw `UNDEFINED_TIME_RANGES`: Wanneer de ad-signaalmodus Server Map of Manifest Cues is en waaiers vervangen zich ook in de metagegevens van de advertentie bevinden, worden reeksen vervangen genegeerd.
+   * Nieuw `REPLACE_RANGES_NOT_AVAILABLE`: Wanneer de ad-signaalmodus Aangepaste tijdbereiken is en reeksen vervangen niet beschikbaar is, wordt een waarschuwing verzonden.
 
 * `AdvertisingFactory` Nieuw `public abstract List<ContentResolver> createContentResolvers(MediaPlayerItem item)`
 
@@ -78,19 +77,19 @@ Deze wijzigingen in de Android TVSDK API ondersteunen en verwijderen en vervange
 
 * `DefaultMediaPlayer`
 
-   * In `prepareToPlay()`: Hiermee wordt een eerste zoekopdracht ingesteld op 0, omdat het if-bereik `[0,n]` wordt verwijderd, wordt de mediaspeler niet automatisch afgespeeld.
+   * In `prepareToPlay()`: Hiermee wordt een eerste zoekopdracht ingesteld op 0, omdat het bereik indien `[0,n]` wordt verwijderd, wordt de mediaspeler niet automatisch afgespeeld.
 
-   * In `prepareToPlay()`: Lussen door de lijst van aanvankelijke plaatsingsinformatie voor `mediaplayerclient` om op te lossen.
+   * In `prepareToPlay()`: Wordt door de lijst met initiële plaatsingsgegevens voor `mediaplayerclient` om op te lossen.
 
-   * In `extractAdSignalingMode()`: Ga naar de nieuwe modus Aangepast tijdbereik.
+   * In `extractAdSignalingMode()`: Kies deze optie voor de nieuwe modus Aangepast tijdbereik.
    * Nieuw `private static List<PlacementInformation> createInitalPlacementInformations()`: Hiermee genereert u de initiële plaatsingsinformatie voor de ad-signaalmodus en de inhoudsoplossers (afgeleid van metagegevens van advertenties).
-   * In `ContentPlacementCompletedListener`: Controleert of `mediaPlayerClient` is `doneInitialResolving` alvorens te roepen `endAdResolving`.
+   * In `ContentPlacementCompletedListener`: Controleert of `mediaPlayerClient` is `doneInitialResolving` voordat wordt aangeroepen `endAdResolving`.
 
 * `MediaPlayerClient`
 
    * Nieuw `List<ContentResolver> _contentResolvers`
    * Nieuw `int _reservations`
-   * Nieuw `lookupContentResolver(PlacementOpportunity placementOpportunity)`: Zoekt welke oplosser de `PlacementOpportunity`.
+   * Nieuw `lookupContentResolver(PlacementOpportunity placementOpportunity)`: hiermee wordt gezocht naar de oplosser die het `PlacementOpportunity`.
 
    * Gewijzigde code voor het maken van meerdere inhoudsoplossers.
    * Nieuw `public boolean doneInitialResolving()`: Controleert of er nog mogelijkheden zijn om op te lossen.
@@ -100,4 +99,4 @@ Deze wijzigingen in de Android TVSDK API ondersteunen en verwijderen en vervange
    * Nieuw `removeContent(TimelineOperation timelineOperation)`: Hiermee wordt een bepaald inhoudsbereik uit de tijdlijn verwijderd.
    * Nieuw `removeContentByLocalTime(long begin, long end)`: Hiermee wordt inhoud verwijderd volgens lokale tijd die wordt gegeven `begin` en `end`.
 
-* `DefaultOpportunityDetectorFactory` Gewijzigd `createOpportunityDetector`: Voor VOD-streams alleen een nieuwe waarde retourneren `SpliceOutOpportunityDetector` als er geen Banden van het KERK of van de VERVANGING zijn (aangezien die waaiers prioriteit over de signalerende wijze hebben).
+* `DefaultOpportunityDetectorFactory` gewijzigd `createOpportunityDetector`: Retourneer voor VOD-streams alleen een nieuwe `SpliceOutOpportunityDetector` als er geen Banden van het KERK of van de VERVANGING zijn (aangezien die waaiers prioriteit over de signalerende wijze hebben).

@@ -1,8 +1,7 @@
 ---
 description: Om Flash Player te gebruiken, zorg ervoor dat uw milieu aan de noodzakelijke vereisten voldoet.
 title: Flash Player-eisen
-exl-id: 26531d0d-d34c-4134-8a05-0604f00a3107
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '142'
 ht-degree: 0%
@@ -18,16 +17,16 @@ Om Flash Player te gebruiken, zorg ervoor dat uw milieu aan de noodzakelijke ver
 Hier volgen de eisen voor de Flash Player:
 
 * Afspelen met `Primetime.js`minimaal Flash Player versie 23 installeren.
-* Installeer ten minste Flash Player versie 11.0.0 als u wilt worden gevraagd om updates naar Flash Player versie 23 of hoger.
+* Installeer ten minste Flash Player versie 11.0.0 als u wilt worden gevraagd om updates voor Flash Player versie 23 of hoger.
 
 ## Verpakkingsvoorschriften {#section_F95FC1FEEFEA44D28C9596D2F359AFC7}
 
 Voor afspelen met Flash Player zijn de volgende SWF-bestanden vereist:
 
 * Het SWF-hoofdbestand van de toepassing dat Browser TVSDK API&#39;s verwerkt.
-* De `playerProductInstall.swf` SWF-bestand dat Flash Player-installatie en -updates afhandelt.
+* De `playerProductInstall.swf` SWF-bestand dat de installatie en updates van Flash Player afhandelt.
 
-Daarnaast is voor het afspelen van video in Flash een machtigingstoken-bestand vereist dat een SWF of een `.DAT` bestand. U kunt het pad naar de SWF-bestanden, het machtigingstoken-bestand en de naam en het type van het tokenbestand opgeven met de AdobePSDK-API&#39;s.
+Daarnaast is voor het afspelen van video in Flash een machtigingstoken-bestand vereist dat een SWF of `.DAT` bestand. U kunt het pad naar de SWF-bestanden, het machtigingstoken-bestand en de naam en het type van het tokenbestand opgeven met de AdobePSDK-API&#39;s.
 
 Bijvoorbeeld:
 

@@ -2,8 +2,7 @@
 title: Anonieme domeinen
 description: Anonieme domeinen
 copied-description: true
-exl-id: a9358582-ad25-4016-94d2-cd82b4c00573
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '380'
 ht-degree: 0%
@@ -12,12 +11,12 @@ ht-degree: 0%
 
 # Anonieme domeinen {#anonymous-domains}
 
-In dit geval, behoren een groot aantal apparaten tot één enkel domein, en de authentificatie kan niet worden vereist. Als u dit type domein wilt gebruiken in de referentie-implementatie, maakt u het beleid waarin wordt opgegeven dat domeinregistratie verplicht is. Geef de URL van de domeinserver op als `https:// host:port/flashaccess/domainserver/domainname/` en geef anonieme verificatie op.
+In dit geval, behoren een groot aantal apparaten tot één enkel domein, en de authentificatie kan niet worden vereist. Als u dit type domein wilt gebruiken in de referentie-implementatie, maakt u het beleid waarin u opgeeft dat domeinregistratie verplicht is. Geef de URL van de domeinserver op als `https:// host:port/flashaccess/domainserver/domainname/` en geef anonieme verificatie op.
 
 De referentie-implementatie implementeert de volgende logica voor domeinregistratie:
 
 1. Analyseer de domeinnaam van de aanvraag-URL.
-1. De domeinnaam opzoeken in het dialoogvenster `DomainServerInfo` tabel. Als een item niet wordt gevonden, voegt u een item in de tabel in (standaardwaarden: verificatie is niet vereist en geen lidmaatschapsmaximum).
+1. De domeinnaam opzoeken in het dialoogvenster `DomainServerInfo` tabel. Als een ingang niet wordt gevonden, neem een ingang in de lijst (standaardwaarden: authentificatie wordt niet vereist en geen lidmaatschapsmaximum) op.
 1. Als verificatie is vereist voor het gevraagde domein, controleert u of een geldig verificatietoken is opgenomen in de aanvraag en past u de naamruimte Auth aan, indien opgegeven in de database.
 
    1. Als verificatie is vereist maar geen geldig auteur-token is opgegeven, retourneert u een fout `DOM_AUTHENTICATION_REQUIRED (503)`.

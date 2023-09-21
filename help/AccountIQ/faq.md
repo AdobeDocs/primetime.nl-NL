@@ -1,8 +1,7 @@
 ---
 title: Veelgestelde vragen over account-IQ
 description: Antwoorden op veelgestelde vragen van klanten.
-exl-id: d6e11fc9-0d14-46d8-9a85-f1006ac81fb1
-source-git-commit: 4eb5ba53fb3e0a0c314695fcd30cf15c7242b53c
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '562'
 ht-degree: 0%
@@ -17,13 +16,13 @@ ht-degree: 0%
 
 1. Hoe ver gaan de gegevens terug?
 
-   **Antwoord.** Twee jaar. Het beleid van het behoud van gegevens verhindert het houden van gegevens ouder dan dat.
+   **Antwoord.** Twee jaar. Het beleid van het behoud van gegevens verhindert het houden gegevens ouder dan dat.
 
 1. Hoe vaak worden de gegevens bijgewerkt?
 
    **Antwoord.** De gegevens in Account IQ worden wekelijks en maandelijks bijgewerkt.
 
-1. Is het mogelijk de testrekeningen te filteren?
+1. Is het mogelijk om de testrekeningen te filteren?
 
    **Antwoord.** De functionaliteit om de testaccounts uit te filteren is niet beschikbaar in deze versie, maar de functie is beschikbaar in een toekomstige versie.
 
@@ -41,7 +40,7 @@ ht-degree: 0%
 
 1. Is AccountIQ een handhavingsinstrument? Zo niet, hoe gebruiken we het om te stoppen met delen?
 
-   **Antwoord.** AIQ gebruikt krachtige analyses om inzichten te verschaffen. Deze inzichten kunnen echter tot onbeperkte acties leiden door integratie met Adobe-producten, zoals Gelijktijdige controle of uw bedrijfsmiddelen.
+   **Antwoord.** AIQ gebruikt krachtige analyses om inzichten te verschaffen. Deze inzichten kunnen echter tot onbeperkte acties leiden door integratie met producten van de Adobe, zoals Gelijktijdige Controle, of uw ondernemingshulpmiddelen.
 
 1. Hoe effectief is Gelijktijdige bewaking bij het verzachten van het delen in de industrie?
 
@@ -53,7 +52,7 @@ ht-degree: 0%
 
 1. Hoe vergelijkbaar zijn de resultaten van Account IQ in vergelijking met interne oplossingen?
 
-   **Antwoord.** Account IQ heeft toegang tot meer gegevens dan elke streamingservice en heeft een detectiemodel dat is gebaseerd op meer dan tien jaar verwerking, wat resulteert in de meest nauwkeurige resultaten die beschikbaar zijn.
+   **Antwoord.** Account IQ heeft toegang tot meer gegevens dan elke streamingservice en beschikt over een detectiemodel dat is gebaseerd op meer dan tien jaar verwerking, wat resulteert in de meest nauwkeurige resultaten die beschikbaar zijn.
 
 1. Hoe kan ik de inzichten gebruiken die door Account IQ worden verstrekt?
 

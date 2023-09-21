@@ -1,8 +1,7 @@
 ---
 description: Als u ondersteuning voor VPAID 2.0 wilt toevoegen, voegt u een aangepaste advertentieweergave en de juiste listeners toe.
 title: VPAID 2.0-integratie implementeren
-exl-id: 8a6b81e7-1034-48fc-87aa-4cb8ab305d15
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '169'
 ht-degree: 0%
@@ -44,8 +43,7 @@ U voegt als volgt VPAID 2.0-ondersteuning toe:
    >
    >Gooi de aangepaste advertentieweergave alleen weg wanneer de voorinstelling wordt aangeroepen. Bijvoorbeeld:
    >
-   >
-   ```
+   >```
    >// on reset 
    >if (_mediaPlayer != null) { 
    >       _mediaPlayer.disposeCustomAdView(); 
@@ -55,8 +53,7 @@ U voegt als volgt VPAID 2.0-ondersteuning toe:
    >
    >Voordat u de aangepaste advertentieweergave kunt verwijderen, moet u deze verwijderen uit het dialoogvenster `FrameLayout`. Bijvoorbeeld:
    >
-   >
-   ```
+   >```
    >if (_playerFrame != null) 
    >       _playerFrame.removeAllViews(); 
    >```

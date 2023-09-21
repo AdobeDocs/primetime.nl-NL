@@ -2,8 +2,7 @@
 title: Anonieme domeinlogica
 description: Anonieme domeinlogica
 copied-description: true
-exl-id: 4a6c3485-cde7-403f-89d8-f6420df3539a
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '349'
 ht-degree: 0%
@@ -55,6 +54,6 @@ De verwijzingsimplementatie past de volgende logica voor anonieme domein de-regi
 
    Als u een overeenkomende vermelding niet kunt vinden, retourneert u een fout `DEREG_DENIED (401)`.
 
-1. Als dit geen voorvertoningsverzoek is, verwijdert u het item uit `DomainMembership`, en in `DomainServerInfo`stelt u de `Key Rollover Required` markering.
+1. Als dit geen voorvertoningsverzoek is, verwijdert u het item uit `DomainMembership`, en in `DomainServerInfo`, stelt u de `Key Rollover Required` markering.
 
 Omdat een groot aantal machines zich bij het domein kan aansluiten, kunt u niet eenvoudig machine identiteitskaart aanpassen In plaats daarvan, wordt de willekeurige machine GUID die aan de machine tijdens individualisering wordt toegewezen toegepast.

@@ -1,8 +1,7 @@
 ---
 description: Voor live- en video-on-demand-media (VOD) begint TVSDK met het afspelen door de afspeellijst te downloaden die is gekoppeld aan de bitsnelheid met de middelste resolutie en worden de mediasegmenten gedownload die door die afspeellijst worden gedefinieerd. Deze selecteert snel de afspeellijst met hoge bitsnelheid en de bijbehorende media en gaat verder met het downloaden.
 title: Afspelen van media en failover
-exl-id: eef1e5ed-422b-4731-8228-d0be63f6f908
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '596'
 ht-degree: 0%

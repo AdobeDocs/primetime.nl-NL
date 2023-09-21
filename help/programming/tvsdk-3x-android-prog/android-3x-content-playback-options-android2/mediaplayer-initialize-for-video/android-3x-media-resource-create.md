@@ -1,8 +1,7 @@
 ---
 description: De MediaResource-klasse vertegenwoordigt de inhoud die door de MediaPlayer-instantie moet worden geladen.
 title: Een mediabron maken
-exl-id: d9693ee5-c192-4ac5-925a-d64e629920b4
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '299'
 ht-degree: 0%
@@ -42,7 +41,7 @@ De MediaResource-klasse vertegenwoordigt de inhoud die door de MediaPlayer-insta
    </tr> 
    <tr> 
       <td colname="col1"> <span class="codeph"> metagegevens </span> </td> 
-      <td colname="col2"> Een instantie van de <span class="codeph"> Metagegevens </span> klasse (een op een woordenboek lijkende structuur) die aanvullende informatie kan bevatten over de inhoud die wordt geladen, zoals alternatieve inhoud of inhoud die in de hoofdinhoud wordt geplaatst. Als u reclame gebruikt, instellen <span class="codeph"> AuditudeSettings </span> voordat u deze constructor gebruikt <a href="/help/programming/tvsdk-3x-android-prog/android-3x-advertising/ad-insertion/ad-insertion-metadata/android-3x-ad-insertion-metadata.md"> Metagegevens voor invoeging toevoegen </a>. </td> 
+      <td colname="col2"> Een instantie van de <span class="codeph"> Metagegevens </span> klasse (een op een woordenboek lijkende structuur) die aanvullende informatie kan bevatten over de inhoud die wordt geladen, zoals alternatieve inhoud of inhoud die in de hoofdinhoud wordt geplaatst. Als u reclame gebruikt, instellen <span class="codeph"> AuditudeSettings </span> voordat u deze constructor gebruikt <a href="/help/programming/tvsdk-3x-android-prog/android-3x-advertising/ad-insertion/ad-insertion-metadata/android-3x-ad-insertion-metadata.md"> Metagegevens voor invoegen toevoegen </a>. </td> 
    </tr> 
    </tbody> 
    </table>
@@ -53,7 +52,7 @@ De MediaResource-klasse vertegenwoordigt de inhoud die door de MediaPlayer-insta
    >
    >Voor MP4-video-on-demand (VOD)-inhoud biedt TVSDK geen ondersteuning voor truc&#39;s, ABR-streaming (Adaptive bit rate), invoeging, Closed Captions of DRM.
 
-   De volgende code maakt een `MediaResource` instantie: >
+   De volgende code maakt een `MediaResource` instance: >
 
    ```java
    // To do: Create metadata here 

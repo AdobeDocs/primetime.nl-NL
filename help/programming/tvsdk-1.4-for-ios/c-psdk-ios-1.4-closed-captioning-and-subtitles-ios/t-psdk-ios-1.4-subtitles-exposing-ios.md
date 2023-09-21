@@ -1,8 +1,7 @@
 ---
 description: De TVSDK informeert uw spelerclient over de beschikbaarheid van de interne AVAsset's availableMediaCharacteristicsWithMediaSelectionOptions via de PTMediaPlayerMediaSelectionOptionsAvailableNotification-melding.
 title: Ondertiteling weergeven
-exl-id: dc726a5b-2eab-4ebd-8773-7396bf818205
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '90'
 ht-degree: 0%
@@ -13,7 +12,7 @@ ht-degree: 0%
 
 De TVSDK informeert uw spelerclient over de beschikbaarheid van de interne AVAsset&#39;s availableMediaCharacteristicsWithMediaSelectionOptions via de PTMediaPlayerMediaSelectionOptionsAvailableNotification-melding.
 
-U hebt toegang tot de beschikbare ondertitels via de `PTMediaPlayerItem` eigendom `subtitlesOptions`.
+U hebt toegang tot de beschikbare ondertitels via het dialoogvenster `PTMediaPlayerItem` eigendom `subtitlesOptions`.
 
 Ondertiteling toegankelijk maken:
 
@@ -35,4 +34,4 @@ Ondertiteling toegankelijk maken:
    }
    ```
 
-   Voor informatie over alternatieve audiotracks raadpleegt u  [Alternatieve audio](../alternate-audio/c-psdk-ios-1.4-alternate-audio.md).
+   Zie voor informatie over alternatieve audiotracks  [Alternatieve audio](../alternate-audio/c-psdk-ios-1.4-alternate-audio.md).

@@ -1,8 +1,7 @@
 ---
 description: Het PTMediaPlayer-object vertegenwoordigt uw mediaspeler. Een PTMediaPlayerItem vertegenwoordigt audio of video op uw speler.
 title: Werken met MediaPlayer-objecten
-exl-id: 57dd455e-e78c-4e5b-80af-070ae7982864
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '449'
 ht-degree: 0%
@@ -17,7 +16,7 @@ Het PTMediaPlayer-object vertegenwoordigt uw mediaspeler. Een PTMediaPlayerItem 
 
 Nadat een mediabron is geladen, maakt TVSDK een instantie van de `PTMediaPlayerItem` klasse om toegang tot die bron te verlenen.
 
-De `PTMediaPlayer` lost het media middel op, laadt het bijbehorende duidelijke dossier, en ontleedt manifest. Dit is het asynchrone gedeelte van het proces voor het laden van bronnen. De `PTMediaPlayerItem` instantie wordt geproduceerd nadat het middel is opgelost, en dit geval is een opgeloste versie van een media middel. TVSDK biedt toegang tot het nieuwe `PTMediaPlayerItem` instantie door `PTMediaPlayer.currentItem`.
+De `PTMediaPlayer` lost het media middel op, laadt het bijbehorende duidelijke dossier, en ontleedt manifest. Dit is het asynchrone gedeelte van het proces voor het laden van bronnen. De `PTMediaPlayerItem` instantie wordt geproduceerd nadat het middel is opgelost, en dit geval is een opgeloste versie van een media middel. TVSDK biedt toegang tot het zojuist gemaakte `PTMediaPlayerItem` instantie door `PTMediaPlayer.currentItem`.
 
 >[!TIP]
 >

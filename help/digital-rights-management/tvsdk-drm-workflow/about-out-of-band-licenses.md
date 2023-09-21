@@ -2,8 +2,7 @@
 title: Overzicht van out-of-band licenties
 description: Overzicht van out-of-band licenties
 copied-description: true
-exl-id: 31a9f097-74e8-41d0-9b9a-1c2a08d3e63a
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '715'
 ht-degree: 0%
@@ -12,7 +11,7 @@ ht-degree: 0%
 
 # Out-of-band licenties {#out-of-band-licenses}
 
-Licenties kunnen ook offline worden verkregen (zonder contact op te nemen met een Primetime DRM-licentieserver) door de licentie op schijf en in het geheugen op te slaan met behulp van de `storeVoucher()` methode.
+Licenties kunnen ook offline worden verkregen (zonder contact op te nemen met een Primetime DRM-licentieserver) door de licentie op schijf en in het geheugen op te slaan met de `storeVoucher()` methode.
 
 Als u gecodeerde video&#39;s wilt afspelen in Primetime, moet de respectievelijke runtime de licentie voor die video verkrijgen. De licentie bevat de coderingssleutel van de video en wordt gegenereerd door de Primetime DRM-licentieserver die de klant heeft geïmplementeerd.
 

@@ -1,8 +1,7 @@
 ---
-description: Deze klassen bieden de interface tussen TVSDK en Adobe Video Analytics.
+description: Deze klassen bieden de interface tussen de TVSDK en Adobe Video Analytics.
 title: Video Analytics-klassen
-exl-id: 60650f61-5303-449a-a78b-bacc6ce1aa7f
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '79'
 ht-degree: 0%
@@ -11,7 +10,7 @@ ht-degree: 0%
 
 # Video Analytics-klassen{#video-analytics-classes}
 
-Deze klassen bieden de interface tussen TVSDK en Adobe Video Analytics.
+Deze klassen bieden de interface tussen de TVSDK en Adobe Video Analytics.
 
 | Naam | Beschrijving |
 |---|---|

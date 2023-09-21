@@ -1,8 +1,7 @@
 ---
 description: De kwaliteit van de dienst (QoS) verstrekt een gedetailleerde mening in hoe de videomotor presteert. TVSDK biedt gedetailleerde statistieken over het afspelen, bufferen en apparaten.
 title: Kwaliteit van de dienststatistieken
-exl-id: 62b2b65e-7383-4694-bdec-aacc4c2ae372
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '258'
 ht-degree: 0%
@@ -30,13 +29,13 @@ U kunt de kwaliteit van de dienst (QoS) informatie over gedownloade middelen, zo
    >
    >Voor meer informatie `LoadInformation`, zie [3.0 voor Android (Java)](https://help.adobe.com/en_US/primetime/api/psdk/javadoc3.0/index.html) API-documenten.
 
-## De playback van QOS, het bufferen, en apparatenstatistieken lezen {#section_D21722600F324E67A9F06234D338B243}
+## De playback van QOS, het als buffer optreden voor, en apparatenstatistieken lezen {#section_D21722600F324E67A9F06234D338B243}
 
 U kunt de statistische gegevens over het afspelen, bufferen en apparaat lezen vanuit de `QOSProvider` klasse.
 
 De `QOSProvider` klasse verstrekt diverse statistieken, met inbegrip van informatie over het als buffer optreden voor, beetjetarieven, kadertarieven, tijdgegevens, etc. Het biedt ook informatie over het apparaat, zoals de fabrikant, het model, het besturingssysteem, de SDK-versie, de apparaat-id van de fabrikant en schermgrootte/dichtheid.
 
-1. Instantiëren van een mediaspeler.
+1. Een mediaspeler instantiëren.
 1. Een `QOSProvider` en aan de mediaspeler koppelen.
 
    De `QOSProvider` constructor gebruikt een spelercontext zodat deze apparaatspecifieke informatie kan ophalen.

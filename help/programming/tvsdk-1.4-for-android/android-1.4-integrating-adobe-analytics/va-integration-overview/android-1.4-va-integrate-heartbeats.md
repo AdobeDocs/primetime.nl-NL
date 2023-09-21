@@ -1,8 +1,7 @@
 ---
-description: U kunt uw speler configureren om het videogebruik te volgen en te analyseren.
+description: U kunt de speler configureren om het videogebruik te volgen en te analyseren.
 title: Videoanalysemogelijkheden initialiseren en configureren
-exl-id: 82013882-e314-44fd-82f2-0640575d3c68
-source-git-commit: 3bbf70e07b51585c9b53f470180d55aa7ac084bc
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '615'
 ht-degree: 0%
@@ -11,30 +10,30 @@ ht-degree: 0%
 
 # Videoanalysemogelijkheden initialiseren en configureren{#initialize-and-configure-video-analytics}
 
-U kunt uw speler configureren om het videogebruik te volgen en te analyseren.
+U kunt de speler configureren om het videogebruik te volgen en te analyseren.
 
 Controleer of u het volgende hebt voordat u video-tracking (videohartslagen) activeert:
 
 * TVSDK voor Android
-* Configuratie-/initialisatiegegevens - Neem contact op met uw Adobe-vertegenwoordiger voor uw specifieke accountgegevens voor het bijhouden van video:
+* Configuratie-/initialisatiegegevens - Neem contact op met uw Adobe voor uw specifieke accountgegevens voor het bijhouden van video:
 
 <table id="table_3565328ABBEE4605A92EAE1ADE5D6F84"> 
  <tbody> 
   <tr> 
    <td colname="col1"> <span class="filepath"> ADBMobileConfig.json </span> </td> 
-   <td colname="col2"> <p>Belangrijk: De naam van dit JSON-configuratiebestand moet behouden blijven <span class="codeph"> ADBMobileConfig.json </span>. De naam en het pad van dit configuratiebestand kunnen niet worden gewijzigd. Het pad naar dit bestand moet <span class="codeph"> &lt;source root=""&gt;/assets </span>. </p> </td> 
+   <td colname="col2"> <p>Belangrijk: deze JSON config-bestandsnaam moet behouden blijven <span class="codeph"> ADBMobileConfig.json </span>. De naam en het pad van dit configuratiebestand kunnen niet worden gewijzigd. Het pad naar dit bestand moet <span class="codeph"> &lt;source root=""&gt;/assets </span>. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> Het eindpunt van de toepassingsmeetserver </td> 
+   <td colname="col1"> AppMeasurement tracking servereindpunt </td> 
    <td colname="col2"> De URL van het achterste eindpunt van de Adobe Analytics-verzameling (voorheen SiteCatalyst). </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Het servereindpunt voor videoanalyse bijhouden </td> 
-   <td colname="col2"> De URL van het back-end verzameleindpunt van de videoanalyse. Dit is waar alle video hartslag het volgen vraag wordt verzonden. <p>Tip: De URL van de server voor het bijhouden van bezoekers is gelijk aan de URL van de analytische trackingserver. Voor informatie over het uitvoeren van de Dienst van identiteitskaart van de Bezoeker, zie <a href="https://experienceleague.adobe.com/docs/id-service/using/implementation/setup-target.html?lang=en" format="html" scope="external"> Id-service implementeren </a>. </p> </td> 
+   <td colname="col2"> De URL van het back-end verzameleindpunt van de videoanalyse. Dit is waar alle video hartslag het volgen vraag wordt verzonden. <p>Tip: de URL van de server voor het bijhouden van bezoekers is gelijk aan de URL van de analytische trackingserver. Voor informatie over het uitvoeren van de Dienst van identiteitskaart van de Bezoeker, zie <a href="https://experienceleague.adobe.com/docs/id-service/using/implementation/setup-target.html?lang=en" format="html" scope="external"> Id-service implementeren </a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Accountnaam </td> 
-   <td colname="col2"> Ook gekend als identiteitskaart van de Reeks van het Rapport (RSID). </td> 
+   <td colname="col2"> Wordt ook wel de RSID (Report Suite ID) genoemd. </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Organisatie-id Marketing Cloud </td> 
@@ -42,7 +41,7 @@ Controleer of u het volgende hebt voordat u video-tracking (videohartslagen) act
   </tr> 
   <tr> 
    <td colname="col1"> Uitgever </td> 
-   <td colname="col2"> Dit is de uitgevers-id die door hun Adobe-vertegenwoordiger aan klanten wordt geleverd. <p>Tip: Deze id is niet alleen een tekenreeks met de naam merk/televisie. </p> </td> 
+   <td colname="col2"> Dit is de uitgevers-id, die door de Adobe aan klanten wordt geleverd. <p>Tip: deze id is niet alleen een tekenreeks met het merk/de televisienaam. </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -80,16 +79,16 @@ U kunt als volgt video bijhouden in uw speler configureren:
 
    Dit JSON-configuratiebestand wordt gebundeld als bron met TVSDK. De speler leest deze waarden alleen tijdens het laden en de waarden blijven constant tijdens de uitvoering van de toepassing.
 
-   Opties voor laadtijd configureren:
+   U configureert opties voor de laadtijd als volgt:
 
-   1. Bevestig dat de `ADBMobileConfig.json` Het bestand bevat de juiste waarden die door Adobe worden opgegeven.
+   1. Bevestig dat de `ADBMobileConfig.json` Het bestand bevat de juiste waarden die door de Adobe worden opgegeven.
    1. Bevestig dat dit bestand zich bevindt in het dialoogvenster `assets` map.
 
       Deze map moet zich in de hoofdmap van de bronstructuur van de toepassing bevinden.
    1. Compileer en bouw uw toepassing.
    1. Implementeer en voer de gebundelde toepassing uit.
 
-      Voor meer informatie over deze instellingen van AppMeasurement raadpleegt u [Video meten in Adobe Analytics](https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html?lang=en).
+      Zie voor meer informatie over deze AppMeasurement-instellingen [Video meten in Adobe Analytics](https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html?lang=en).
 1. Metagegevens voor het bijhouden van videokaarten initialiseren en configureren.
 
    >[!IMPORTANT]
@@ -146,7 +145,7 @@ U kunt als volgt video bijhouden in uw speler configureren:
       videoAnalyticsProvider.attachMediaPlayer(mediaPlayer); 
       ```
 
-   1. Vernietig de videoanalysetracker.
+   1. Vernietig de videoanalysator.
 
       Voordat u een nieuwe afspeelsessie voor inhoud begint, moet u de vorige instantie van de videotracering vernietigen. Nadat u de gebeurtenis &#39;complete&#39; van de inhoud (of het bericht) hebt ontvangen, wacht u een paar minuten voordat u de instantie van de videotracker vernietigt. Het vernietigen van de instantie onmiddellijk zou kunnen interfereren met de capaciteit van de Videoanalysator om een video te verzenden volledig pingelt.
 

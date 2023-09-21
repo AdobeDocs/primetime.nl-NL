@@ -1,8 +1,7 @@
 ---
 description: Wanneer de DRM-metagegevens voor een video zijn opgenomen in de mediastream, kunt u verificatie uitvoeren tijdens het afspelen.
 title: DRM-verificatie tijdens afspelen
-exl-id: f6e6e73a-d455-4b2c-b35c-2db173372092
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '194'
 ht-degree: 0%
@@ -39,7 +38,7 @@ Bij het draaien van licenties wordt een element gecodeerd met meerdere DRM-licen
    * Als verificatie niet vereist is, hoeft u niets te doen en wordt het afspelen zonder onderbreking voortgezet.
    * Als verificatie vereist is, voltooit u de DRM-verificatie.
 
-      Aangezien deze bewerking asynchroon is en in een andere thread wordt afgehandeld, heeft deze geen invloed op de gebruikersinterface en het afspelen van video.
+     Aangezien deze bewerking asynchroon is en in een andere thread wordt afgehandeld, heeft deze geen invloed op de gebruikersinterface en het afspelen van video.
 
 1. Als de verificatie mislukt, kan de gebruiker niet doorgaan met het weergeven van de video en het afspelen stoppen.
 

@@ -1,8 +1,7 @@
 ---
-description: Adobe adviseert dat als u veranderingen in het configuratiedossier aanbrengt, u het nut van Validator van de Configuratie zou moeten in werking stellen alvorens u de server begint. Dit nut kan de meeste configuratiefouten vroeg ontdekken, alvorens zij mislukkingen tijdens verzoekverwerking veroorzaken.
+description: De Adobe adviseert dat als u veranderingen in het configuratiedossier aanbrengt, u het nut van Validator van de Configuratie zou moeten in werking stellen alvorens u de server begint. Dit nut kan de meeste configuratiefouten vroeg ontdekken, alvorens zij mislukkingen tijdens verzoekverwerking veroorzaken.
 title: Configuratievalidator
-exl-id: 41d0a926-4e12-442c-886e-5f12cf10eed8
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '219'
 ht-degree: 0%
@@ -11,7 +10,7 @@ ht-degree: 0%
 
 # Configuratievalidator{#configuration-validator}
 
-Adobe adviseert dat als u veranderingen in het configuratiedossier aanbrengt, u het nut van Validator van de Configuratie zou moeten in werking stellen alvorens u de server begint. Dit nut kan de meeste configuratiefouten vroeg ontdekken, alvorens zij mislukkingen tijdens verzoekverwerking veroorzaken.
+De Adobe adviseert dat als u veranderingen in het configuratiedossier aanbrengt, u het nut van Validator van de Configuratie zou moeten in werking stellen alvorens u de server begint. Dit nut kan de meeste configuratiefouten vroeg ontdekken, alvorens zij mislukkingen tijdens verzoekverwerking veroorzaken.
 
 Typ het volgende als u de validator wilt uitvoeren:
 
@@ -51,12 +50,12 @@ Op implementatie gebaseerde validatie kan op de volgende niveaus worden uitgevoe
 
 * `Tenant` — Valideert het configuratiedossier en geloofsbrieven voor een specifieke huurder. Als u de configuratie voor wilt bevestigen `<tenant1>`, type:
 
-   ```
-       Validator --<root-path-to-LicenseServer.ConfigRoot> -d flashaccessserver/tenant1 -t
-   ```
+  ```
+      Validator --<root-path-to-LicenseServer.ConfigRoot> -d flashaccessserver/tenant1 -t
+  ```
 
 * `Global` — Valideert het algemene configuratiebestand en de validatie van de huurder voor alle huurders. Als u globale plaatsing-gebaseerde bevestiging wilt uitvoeren, type:
 
-   ```
-       Validator --<root-path-to-LicenseServer.ConfigRoot> -g
-   ```
+  ```
+      Validator --<root-path-to-LicenseServer.ConfigRoot> -g
+  ```

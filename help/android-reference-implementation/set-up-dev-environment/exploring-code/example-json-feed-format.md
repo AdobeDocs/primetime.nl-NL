@@ -1,15 +1,14 @@
 ---
 description: Voor de voorbeeldimplementatie wordt een op JSON gebaseerd invoerbestand gebruikt.
-title: Voorbeeld JSON-feedindeling
-exl-id: a04d5501-74dc-4ae3-880e-72da7718fe1b
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+title: Voorbeeld-JSON-voederindeling
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '51'
 ht-degree: 0%
 
 ---
 
-# Voorbeeld JSON-feedindeling {#example-json-feed-format}
+# Voorbeeld-JSON-voederindeling {#example-json-feed-format}
 
 Voor de voorbeeldimplementatie wordt een op JSON gebaseerd invoerbestand gebruikt.
 

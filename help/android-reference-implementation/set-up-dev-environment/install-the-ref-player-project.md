@@ -1,15 +1,14 @@
 ---
 description: De Primetime-naslaggids voor TVSDK is een Android-toepassing die is gebouwd rond de frameworks TVSDK en AVE.
-title: De implementatie van de Primetime-referentie samenstellen
-exl-id: d2950f2b-06d7-4fc8-a031-5f058ce47545
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+title: De Primetime-referentieimplementatie maken
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '216'
 ht-degree: 0%
 
 ---
 
-# De implementatie van de Primetime-referentie samenstellen {#build-the-primetime-reference-implementation}
+# De Primetime-referentieimplementatie maken {#build-the-primetime-reference-implementation}
 
 De Primetime-naslaggids voor TVSDK is een Android-toepassing die is gebouwd rond de frameworks TVSDK en AVE.
 
@@ -33,7 +32,7 @@ Het project Primetime Reference instellen en bouwen in Eclipse:
 
       Het testproject heeft een gebiedsdeel op het project CatalogActivity zodat moet u het testproject met het project associëren CatalogActivity.
    1. Klikken met rechtermuisknop **[!UICONTROL tests]** en kiest u **[!UICONTROL Properties]**.
-   1. Selecteer **[!UICONTROL Projects]** onder Java Build Path.
+   1. Selecteer de **[!UICONTROL Projects]** onder Java Build Path.
    1. Klikken **[!UICONTROL Add...]**
    1. Selecteer CatalogActivity.
    1. Klikken **[!UICONTROL OK]** om het project toe te voegen.

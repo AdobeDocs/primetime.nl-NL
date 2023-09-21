@@ -1,8 +1,7 @@
 ---
 title: Temperatuurcontrole
 description: Temperatuurcontrole
-exl-id: 1df14090-8e71-4e3e-82d8-f441d07c6f64
-source-git-commit: bfc3ba55c99daba561255760baf273b6538a3c6e
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '2210'
 ht-degree: 0%
@@ -22,7 +21,7 @@ De Pas van de Temperatuur laat Programmeurs tijdelijke toegang tot hun beschermd
 * De Pas van de Temperatuur kan worden gevormd om tijdelijke toegang te verlenen om een verscheidenheid van scenario&#39;s, met inbegrip van het volgende te behandelen:
    * Een programmeur kan een dagelijkse, korte (bijvoorbeeld een voorvertoning van 10 minuten) van een van zijn sites aanbieden.
    * Een programmeur kan één lange presentatie (bijvoorbeeld vier uur) aanbieden van een belangrijk sportevenement zoals de Olympische Spelen of de Waanzin van NCAA March.
-   * Een programmeur kan een combinatie van de vorige twee scenario&#39;s verstrekken; bijvoorbeeld een eerste, langere kijkperiode op één dag, gevolgd door een reeks korte perioden die dagelijks worden herhaald voor een aantal opeenvolgende dagen.
+   * Een programmeur kan een combinatie van de vorige twee scenario&#39;s verstrekken; bijvoorbeeld, een eerste, langere kijkperiode één dag, die door een reeks korte periodes wordt gevolgd die dagelijks voor één of ander aantal verdere dagen herhalen.
 * Programmeurs geven de duur (Tijd-aan-Levende, of TTL) van hun Pass van het Temperatuur aan.
 * Temperatuurcontrole werkt per aanvrager.  Bijvoorbeeld, kon NBC een Pass van 4 uurTemp voor de aanvrager &quot;NBCOlymics&quot;opzetten.
 * Programmeurs kunnen alle tokens herstellen die aan een bepaalde aanvrager zijn toegekend.  De &quot;tijdelijke MVPD&quot;wordt gebruikt om de Pas van Temperatuur uit te voeren moet met &quot;Authentificatie per Aanvrager&quot;worden gevormd die wordt toegelaten.
@@ -35,21 +34,21 @@ De Pas van de Temperatuur laat Programmeurs tijdelijke toegang tot hun beschermd
 
 ## Details onderdeel {#tempass-featur-details}
 
-* **Hoe de weergavetijd wordt berekend** - De hoeveelheid tijd die een tijdelijke controle geldig blijft, is niet gerelateerd aan de hoeveelheid tijd die een gebruiker besteedt aan het bekijken van inhoud in de toepassing van de programmeur.  Op het aanvankelijke gebruikersverzoek om vergunning via de Pas van de Temperatuur, wordt een vervaltijd berekend door de aanvankelijke huidige verzoektijd aan TTL toe te voegen die door de Programmer wordt gespecificeerd. Deze vervaltijd wordt geassocieerd met het apparaat van de gebruiker identiteitskaart en van de programmeur identiteitskaart, en in het de authentificatiegegevensbestand van Primetime opgeslagen. Telkens als de gebruiker probeert om tot inhoud toegang te hebben die de Pas van het zelfde apparaat gebruikt, zal de authentificatie van de Premetime de tijd van het serververzoek met de vervaltijd vergelijken verbonden aan het apparaat van de gebruiker identiteitskaart en de verzoeksidentiteitskaart van de Programmer. Als de tijd van het serververzoek minder dan de vervaltijd is, zal de vergunning worden verleend; anders wordt de vergunning geweigerd .
+* **Hoe de weergavetijd wordt berekend** - De hoeveelheid tijd die een tijdelijke controle geldig blijft, is niet gerelateerd aan de hoeveelheid tijd die een gebruiker besteedt aan het bekijken van inhoud in de toepassing van de programmeur.  Op het aanvankelijke gebruikersverzoek om vergunning via de Pas van de Temperatuur, wordt een vervaltijd berekend door de aanvankelijke huidige verzoektijd aan TTL toe te voegen die door de Programmer wordt gespecificeerd. Deze vervaltijd wordt geassocieerd met het apparaat van de gebruiker identiteitskaart en van de programmeur identiteitskaart, en in het de authentificatiegegevensbestand van Primetime opgeslagen. Telkens als de gebruiker probeert om tot inhoud toegang te hebben die de Pas van het zelfde apparaat gebruikt, zal de authentificatie van de Premetime de tijd van het serververzoek met de vervaltijd vergelijken verbonden aan het apparaat van de gebruiker identiteitskaart en de verzoeksidentiteitskaart van de Programmer. Als de tijd van het serververzoek minder dan de vervaltijd is, zal de vergunning worden verleend; anders, zal de vergunning worden ontkend.
 * **Configuratieparameters** - De volgende parameters van de Controle van het Temperatuur kunnen door een Programmer worden gespecificeerd om een regel van de Voldoende Sjabloon tot stand te brengen:
    * **Token-TTL** - De hoeveelheid tijd die een gebruiker mag bekijken zonder zich aan te melden bij een MVPD. Deze keer is op de klok gebaseerd en verloopt of de gebruiker inhoud bekijkt of niet.
-   >[!NOTE]
-   >Aan een aanvraag-id kunnen niet meer dan één regel voor een tijdelijke controle zijn gekoppeld.
+  >[!NOTE]
+  >Aan een aanvraag-id kunnen niet meer dan één regel voor een tijdelijke controle zijn gekoppeld.
 * **Verificatie/autorisatie** - In de stroom van de Pas van de Temperatuur, specificeert u MVPD als &quot;Pass van de Temperatuur&quot;.  De authentificatie van Primetime communiceert niet met daadwerkelijke MVPD in de stroom van de Pas van Temperatuur, zodat &quot;de Pas van Temperatuur&quot;MVPD om het even welke middel toestaat. Programmeurs kunnen een middel specificeren dat toegankelijk gebruikend de Pas van Temperatuur is net zoals zij voor de rest middelen op hun plaats doen. De bibliotheek van de Verificateur van Media kan worden gebruikt zoals gebruikelijk om het korte media token van de Pas van Temperatuur te verifiëren en middel controle vóór playback af te dwingen.
 * **Gegevens bijhouden in Temperatuur-voldoende** - Twee punten met betrekking tot gegevens bijhouden tijdens een machtigingsstroom voor een tijdelijke controle:
-   * De volgende id die wordt doorgegeven van Primetime-verificatie naar uw **sendTrackingData()** callback is een knoeiboel van identiteitskaart van het Apparaat.
+   * De volgende id die wordt doorgegeven van Primetime-verificatie naar uw **sendTrackingData()** callback is een hash van Apparaat identiteitskaart
    * Aangezien de MVPD-id die in de Temp-controle-stroom wordt gebruikt, &#39;Temp Pass&#39; is, wordt dezelfde MVPD-id doorgegeven aan **sendTrackingData()**. De meeste programmeurs zullen de metriek van de Voldoende SLOTJES waarschijnlijk anders willen behandelen dan daadwerkelijke MVPD metriek. Hiervoor is extra werk nodig in uw analytische implementatie.
 
 In het volgende voorbeeld ziet u de Temperatuur-doorstroomsnelheid:
 
 ![De Temperatuurdoorstroming](assets/temp-pass-flow.png)
 
-*Afbeelding: De Temperatuurdoorstroming*
+*Afbeelding: De gasstroom voor de temperatuurcontrole*
 
 ## Tijdelijke controle implementeren {#implement-tempass}
 
@@ -64,7 +63,7 @@ De volgende punten zijn van toepassing op beide uitvoeringsscenario&#39;s:
 
 * De &quot;Controle van het Temperatuur&quot;zou in de plukker MVPD slechts voor gebruikers moeten worden getoond die nog niet om een vergunning van de Voldoende Sjabloon hebben gevraagd. Het blokkeren van de weergave van volgende aanvragen kan worden bereikt door een markering op cookies te plaatsen. Dit werkt zolang de gebruiker de browsercache niet wist. Als gebruikers hun browsercache wissen, wordt de opdracht Tijdelijke controle opnieuw weergegeven in de kiezer en kan de gebruiker deze opnieuw aanvragen. Toegang wordt alleen verleend als de &quot;Temperatuur Pass&quot;-tijd nog niet is verstreken.
 * Wanneer een gebruiker toegang via de Pas van Temperatuur vraagt, zal de server van de authentificatie Primetime zijn gebruikelijke vraag van de Prijsverhoging van de Taal van de Waardering van de Veiligheid (SAML) tijdens het authentificatieproces niet uitvoeren. In plaats daarvan, zal het authentificatieeindpunt succes terugkeren telkens als het wordt aangehaald terwijl de tekenen voor het apparaat geldig zijn.
-* Wanneer een Pass van het Temperatuur verloopt, zal zijn gebruiker niet meer voor authentiek worden verklaard, omdat in de Stroom van het Pad van het Temperatuur het authentificatietoken en het toestemmingstoken de zelfde vervaldatum hebben. Om gebruikers uit te leggen dat hun tijdelijke controle is verlopen, moeten programmeurs de geselecteerde MVPD direct na het aanroepen ophalen `setRequestor()`en vervolgens `checkAuthentication()` zoals gebruikelijk. In de `setAuthenticationStatus()` callback een controle kan worden gemaakt om te bepalen als de autestatus 0 is, zodat als geselecteerde MVPD &quot;TempPass&quot;was een bericht aan gebruikers kan worden voorgesteld dat hun zitting van de Controle van het Temperatuur is verlopen.
+* Wanneer een Pass van het Temperatuur verloopt, zal zijn gebruiker niet meer voor authentiek worden verklaard, omdat in de Stroom van het Pad van het Temperatuur het authentificatietoken en het toestemmingstoken de zelfde vervaldatum hebben. Om gebruikers uit te leggen dat hun tijdelijke controle is verlopen, moeten programmeurs de geselecteerde MVPD direct na het aanroepen ophalen `setRequestor()`en vervolgens bellen `checkAuthentication()` zoals gebruikelijk. In de `setAuthenticationStatus()` callback een controle kan worden gemaakt om te bepalen als de autestatus 0 is, zodat als geselecteerde MVPD &quot;TempPass&quot;was een bericht aan gebruikers kan worden voorgesteld dat hun zitting van de Controle van het Temperatuur is verlopen.
 * Als een gebruiker het token Tijdelijke controle vóór het verlopen verwijdert, wordt met de daaropvolgende machtigingscontroles een token gegenereerd dat een TTL heeft die gelijk is aan de resterende tijd.
 * Als de gebruiker het token Temperatuur-controle verwijdert nadat het is verlopen, worden de daaropvolgende machtigingscontroles uitgevoerd met de waarde &quot;Gebruiker niet geautoriseerd&quot;.
 
@@ -220,7 +219,7 @@ In dit voorbeeld ziet u hoe u Temp Pass implementeert voor het geval waarin MVPD
 1. De gebruiker klikt op Tijdelijke controle, zodat de programmeur een vlag aan een cookie toevoegt om te voorkomen dat de gebruiker de koppeling Tijdelijke controle ziet bij volgende bezoeken aan de pagina.
 1. Het de authentificatieverzoek van de Volgorde van de Temp bereikt de servers van de Authentificatie Primetime, en zij produceren een authentificatietoken. De TTL is gelijk aan de periode die door de programmeur voor de Pass van Temperatuur wordt geplaatst.
 1. De vergunningsaanvraag voor een tijdelijke controle bereikt de Primetime-verificatieservers.
-1. De Primetime authentificatieservers halen het apparaat en de aanvrager IDs uit het verzoek, en slaan hen in het gegevensbestand samen met de vervaltijd op. De vervaltijd wordt als volgt berekend: initiële time-Pass-aanvraagtijd plus de TTL (opgegeven door de programmeur).
+1. De Primetime authentificatieservers halen het apparaat en aanvrager IDs uit het verzoek, en slaan hen in het gegevensbestand samen met de vervaltijd op. De vervaltijd wordt berekend als: de aanvankelijke de verzoektijd van de Volgorde van de Temperatuur plus TTL (die door Programmer wordt gespecificeerd).
 1. De Primetime-verificatieservers genereren een verificatietoken.
 1. De gebruiker heeft toegang tot de beveiligde inhoud.
 
@@ -233,7 +232,7 @@ In dit voorbeeld ziet u hoe u Temp Pass implementeert voor het geval waarin MVPD
 1. Het de authentificatieverzoek van de Volgorde van de Temp bereikt de servers van de Authentificatie Primetime, die een authentificatietoken produceren. TTL is nu de resterende tijd voor de Pas van de Temperatuur (het verschil tussen de huidige tijd en de vervaltijd verbonden aan apparatenidentiteitskaart).
 1. De vergunningsaanvraag voor een tijdelijke controle bereikt de Primetime-verificatieservers.
 1. De servers van de authentificatie Primetime halen het apparaat en de aanvrager IDs uit het verzoek, en gebruiken hen om de vervaltijd van het gegevensbestand van de authentificatie terug te winnen Primetime. De huidige tijd wordt vergeleken met de vervaltijd.
-1. Als de Temperatuur-controle van de gebruiker niet is verlopen, genereren de Primetime-verificatieservers een verificatietoken.
+1. Als de Tijdcontrole van de gebruiker niet is verlopen, produceren de servers van de authentificatie Primetime een toestemmingstoken.
 1. Als de Temperatuur-controle van de gebruiker niet is verlopen, kan de gebruiker toegang krijgen tot de beveiligde inhoud.
 
 ### Voorbeeld van automatisch aanmelden {#auto-login-sample}
@@ -474,13 +473,13 @@ In het volgende voorbeeld ziet u een geval waarbij een gebruiker automatisch wor
 
 ## Meerdere sjablooncontroles gebruiken {#use-mult-tempass}
 
-Bepaalde gebeurtenissen vereisen gefaseerde vrije toegang tot inhoud, zoals een eerste interval van vrije toegang (bijv. 4 uur), gevolgd door dagelijkse vrije toegang (bijv. 10 minuten op elke volgende dag).  Opdat een Programmeur dit scenario ten uitvoer legt, moeten zij het met hun contact van de Adobe schikken om twee tijdelijke MVPDs voor de Programmeur te vormen.
+Bepaalde gebeurtenissen vereisen gefaseerde vrije toegang tot inhoud, zoals een eerste interval van vrije toegang (bijv. 4 uur), gevolgd door dagelijkse vrije toegang (bijv. 10 minuten op elke volgende dag).  Opdat een programmeur dit scenario uitvoert, moeten zij het met hun contact van de Adobe schikken om twee tijdelijke MVPDs voor de Programmer te vormen.
 
-Voor dit voorbeeldscenario (een aanvankelijke 4 uren vrije zitting, die door dagelijkse 10 minuten vrije zittingen wordt gevolgd) vormt Adobe een MVPD genoemd TempPass1 met een Tijd-aan-Levende (TTL) van 4 uren, en een TempPass2 met TTL van 10 minuten voor de verdere periode.  Beide worden geassocieerd met identiteitskaart van de Vraag van de Programmeur.
+Voor dit voorbeeldscenario (een aanvankelijke 4 uren vrije zitting, die door dagelijkse 10 minuten vrije zittingen wordt gevolgd) vormt de Adobe een MVPD genoemd TempPass1 met een Tijd-aan-Levende (TTL) van 4 uren, en een TempPass2 met een TTL van 10 minuten voor de verdere periode.  Beide worden geassocieerd met identiteitskaart van de Aanvrager van de Programmer.
 
-### Programmeerimplementatie {#mult-tempass-prog-impl}
+### Programmeringsuitvoering {#mult-tempass-prog-impl}
 
-Nadat Adobe de twee instanties TempPass vormt, zullen twee extra MVPDs (TempPass1 en TempPass2), in de MVPD lijst van de Programmer verschijnen.  De programmeur moet de volgende stappen nemen om de veelvoudige tijdelijke overgangen uit te voeren:
+Nadat de Adobe de twee instanties TempPass vormt, zullen twee extra MVPDs (TempPass1 en TempPass2), in de MVPD lijst van de Programmer verschijnen.  De programmeur moet de volgende stappen nemen om de veelvoudige tijdelijke overgangen uit te voeren:
 
 1. Meld de gebruiker automatisch aan bij het eerste bezoek van de gebruiker aan de site met TempPass1. U kunt de Steekproef Autologin hierboven als uitgangspunt voor deze taak gebruiken.
 1. Wanneer u ontdekt dat TempPass1 is verlopen, bewaar het feit (in een koekje/lokale opslag) en stel de gebruiker met uw standaardMVPD plukker voor. **Zorg ervoor dat u TempPass1 en TempPass2 uit die lijst filtert**.
@@ -534,8 +533,8 @@ Ondersteuning voor gereedschap Temperatuur doorgeven en herstellen per platform:
 
 | Adobe Primetime-verificatieclients | Temperatuurcontrole | Gereedschap herstellen |
 |:--------------------------------------:|:---------:|:----------:|
-| JS AccessEnabler | JA | JA |
-| iOS voor native client | JA | JA |
+| JS AccessEnabled | JA | JA |
+| IOS voor native client | JA | JA |
 | Systeemeigen clientbesturingssysteem | JA | JA |
 | Systeemeigen clientAndroid | JA | JA |
 | Native Client FireTV | JA | JA |
@@ -545,6 +544,6 @@ Ondersteuning voor gereedschap Temperatuur doorgeven en herstellen per platform:
 
 In dit gedeelte worden de beperkingen beschreven die van toepassing zijn op de huidige implementatie van Temperatuurcontrole.
 
-**JavaScript SDK**: ondersteunt de functie voor het opnieuw instellen van temp-voldoende van versie **3.X en hoger**.
+**JavaScript SDK**: ondersteunt de functie voor het opnieuw instellen van temp pass van versie **3.X en hoger**.
 
 <!--For Customers migrating from the 2.X JavaScript AccessEnabler to the 3.X JavaScript AccessEnabler, see [AccessEnabler JS 2.x to JS 3.x migration guide](https://tve.helpdocsonline.com/accessenabler-js-to-js-migration-guide).-->

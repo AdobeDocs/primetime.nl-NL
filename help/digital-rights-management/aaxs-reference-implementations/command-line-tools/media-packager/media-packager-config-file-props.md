@@ -2,8 +2,7 @@
 title: Eigenschappen van configuratiebestand
 description: Eigenschappen van configuratiebestand
 copied-description: true
-exl-id: eec6a53d-d831-4ec4-a90c-8b3e7997f330
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '630'
 ht-degree: 0%
@@ -36,7 +35,7 @@ Voordat u Media Packager uitvoert, geeft u waarden op voor de eigenschappen van 
   </tr> 
   <tr rowsep="1" class="- topic/row "> 
    <td colname="1" class="- topic/entry "><span class="codeph"> encrypt.contents.video.level</span> </td> 
-   <td colname="2" class="- topic/entry "> <p class="- topic/p ">Geeft het niveau van de videoversleuteling aan. De waarde high wordt gebruikt om alle video-inhoud te coderen, terwijl de waarden medium en low worden gebruikt om gedeelten van de video-inhoud te coderen voor F4V-bestanden die H.264-inhoud bevatten. </p> <p class="- topic/p ">value = <span class="codeph"> hoog | medium | laag</span> </p> </td> 
+   <td colname="2" class="- topic/entry "> <p class="- topic/p ">Hiermee wordt het niveau van de videocodering aangegeven. De waarde high wordt gebruikt om alle video-inhoud te coderen, terwijl de waarden medium en low worden gebruikt om gedeelten van de video-inhoud te coderen voor F4V-bestanden die H.264-inhoud bevatten. </p> <p class="- topic/p ">value = <span class="codeph"> hoog | medium | laag</span> </p> </td> 
   </tr> 
   <tr rowsep="1" class="- topic/row "> 
    <td colname="1" class="- topic/entry "><span class="codeph"> encrypt.contents.secondsUnencrypted</span> </td> 
@@ -60,11 +59,11 @@ Voordat u Media Packager uitvoert, geeft u waarden op voor de eigenschappen van 
   </tr> 
   <tr rowsep="1" class="- topic/row "> 
    <td colname="1" class="- topic/entry "><span class="codeph"> encrypt.sign.certfile</span> </td> 
-   <td colname="2" class="- topic/entry "> <p class="- topic/p ">Het PKCS12-bestand met de pakketgegevens voor het ondertekenen van inhoud. De <span class="codeph"> encrypt.sign.certfile</span> verwijst naar een <span class="filepath"> .pfx</span> bestand met een certificaat en een persoonlijke sleutel. </p> </td> 
+   <td colname="2" class="- topic/entry "> <p class="- topic/p ">Het PKCS12-bestand met de gegevens van de verpakker voor het ondertekenen van inhoud. De <span class="codeph"> encrypt.sign.certfile</span> verwijst naar een <span class="filepath"> .pfx</span> bestand met een certificaat en een persoonlijke sleutel. </p> </td> 
   </tr> 
   <tr rowsep="1" class="- topic/row "> 
    <td colname="1" class="- topic/entry "><span class="codeph"> encrypt.sign.certpass</span> </td> 
-   <td colname="2" class="- topic/entry "> <p class="- topic/p ">Het wachtwoord waarmee het bestand wordt beveiligd dat is opgegeven door <span class="codeph"> encrypt.sign.certfile</span>. </p> </td> 
+   <td colname="2" class="- topic/entry "> <p class="- topic/p ">Het wachtwoord dat wordt gebruikt om het bestand te beveiligen dat is opgegeven door <span class="codeph"> encrypt.sign.certfile</span>. </p> </td> 
   </tr> 
   <tr rowsep="1" class="- topic/row "> 
    <td colname="1" class="- topic/entry "><span class="codeph"> encrypt.license.minServerVersion</span> </td> 
@@ -80,7 +79,7 @@ Voordat u Media Packager uitvoert, geeft u waarden op voor de eigenschappen van 
   </tr> 
   <tr rowsep="1" class="- topic/row "> 
    <td colname="1" class="- topic/entry "><span class="codeph"> encrypt.keys.rotation.enable</span> </td> 
-   <td colname="2" class="- topic/entry "> <p class="- topic/p ">Geeft aan of toetsrotatie is ingeschakeld. Indien ingesteld op false (standaard), wordt sleutelrotatie uitgeschakeld en wordt de master CEK gebruikt om alle samples in de inhoud te coderen. </p> <p class="- topic/p ">Indien ingesteld op true, wordt het roteren van toetsen ingeschakeld en kunnen verschillende toetsen worden gebruikt om delen van de inhoud te coderen. </p> </td> 
+   <td colname="2" class="- topic/entry "> <p class="- topic/p ">Geeft aan of toetsrotatie is ingeschakeld. Indien ingesteld op false (standaard), wordt sleutelrotatie uitgeschakeld en wordt de hoofd-CEK gebruikt om alle samples in de inhoud te coderen. </p> <p class="- topic/p ">Indien ingesteld op true, wordt het roteren van toetsen ingeschakeld en kunnen verschillende toetsen worden gebruikt om delen van de inhoud te coderen. </p> </td> 
   </tr> 
   <tr rowsep="1" class="- topic/row "> 
    <td colname="1" class="- topic/entry "><span class="codeph">encrypt.keys.rotation.key.n</span> </td> 

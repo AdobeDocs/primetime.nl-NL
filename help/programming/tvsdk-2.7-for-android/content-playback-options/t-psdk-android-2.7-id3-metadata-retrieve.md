@@ -1,8 +1,7 @@
 ---
 description: ID3-tags bieden informatie over een audio- of videobestand, zoals de titel van het bestand of de naam van de artiest. TVSDK detecteert ID3-tags op het segmentniveau van de transportstream (TS) in HLS-streams en verzendt een gebeurtenis. De toepassing kan gegevens uit de tag extraheren.
 title: ID3-tags
-exl-id: 316bc704-e71a-4fd7-b970-706b8c08a42e
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '232'
 ht-degree: 0%
@@ -28,7 +27,7 @@ Wanneer TVSDK ID3-metagegevens detecteert, wordt een melding met de volgende geg
 
    >[!TIP]
    >
-   >Aangepaste cues voor advertenties gebruiken hetzelfde `onTimedMetadata` gebeurtenis die de detectie van een nieuwe tag aangeeft. Dit mag geen verwarring veroorzaken omdat aangepaste ad-cues worden gedetecteerd op manifestniveau en ID3-tags zijn ingesloten in de stream. Zie voor meer informatie [Aangepaste tags](../../tvsdk-2.7-for-android/ad-insertion/custom-tags-configure/c-psdk-android-2.7-custom-tags-configure.md).
+   >Aangepaste cues voor advertenties gebruiken hetzelfde `onTimedMetadata` gebeurtenis om de detectie van een nieuwe tag aan te geven. Dit mag geen verwarring veroorzaken omdat aangepaste ad-cues worden gedetecteerd op manifestniveau en ID3-tags zijn ingesloten in de stream. Zie voor meer informatie [Aangepaste tags](../../tvsdk-2.7-for-android/ad-insertion/custom-tags-configure/c-psdk-android-2.7-custom-tags-configure.md).
 
 
 1. Haal de metagegevens op.

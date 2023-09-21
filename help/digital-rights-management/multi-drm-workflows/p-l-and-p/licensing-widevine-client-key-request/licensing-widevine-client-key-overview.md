@@ -1,8 +1,7 @@
 ---
 description: Als u de DASH-inhoud wilt afspelen die het resultaat is van het verpakken van inhoud, moet de TVSDK-client de coderingssleutel voor de inhoud verkrijgen die tijdens het pakketproces is doorgegeven in de workflow voor sleutelaankopen. De ontsleutelingssleutel voor de client-inhoud wordt doorgaans door een Widevine/PlayReady-licentieserver aan de client geleverd als reactie op een of meer HTTP/HTTPS-berichten van de client.
 title: Overzicht van de workflow voor het aanvragen van clientsleutels
-exl-id: ae600cbd-415b-441a-bf01-f259993071f2
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '305'
 ht-degree: 0%

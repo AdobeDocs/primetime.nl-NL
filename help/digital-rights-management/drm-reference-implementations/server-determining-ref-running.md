@@ -2,8 +2,7 @@
 title: Bepalen of Referentie-implementatie-licentieserver correct wordt uitgevoerd
 description: Bepalen of Referentie-implementatie-licentieserver correct wordt uitgevoerd
 copied-description: true
-exl-id: 97ca0b6c-2661-4cdc-b8d0-dcc545f009f6
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '362'
 ht-degree: 0%
@@ -24,7 +23,7 @@ De volgende procedure beschrijft dit proces:
 
 1. Ga naar de [!DNL \Reference Implementation\Command Line Tools] map.
 
-   Zie [De opdrachtregelprogramma&#39;s installeren](../drm-reference-implementations/command-line-tools/install-command-line-tools.md) op hoe te om de hulpmiddelen van de bevellijn te installeren.
+   Zie [De opdrachtregelprogramma&#39;s installeren](../drm-reference-implementations/command-line-tools/install-command-line-tools.md) voor het installeren van de opdrachtregelprogramma&#39;s.
 
 1. Typ het volgende bevel om een eenvoudig anoniem beleid te creëren DRM:
 

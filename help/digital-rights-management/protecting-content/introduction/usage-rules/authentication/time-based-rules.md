@@ -2,8 +2,7 @@
 title: Op tijd gebaseerde regels
 description: Op tijd gebaseerde regels
 copied-description: true
-exl-id: 02a5c10d-13f5-4482-b525-bf6a1ec9dcf0
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '523'
 ht-degree: 0%
@@ -23,19 +22,19 @@ Terwijl de zachte handhaving het standaardgedrag is, kunt u harde handhaving ook
 
 De begindatum geeft de datum aan waarna een licentie geldig is.
 
-Voorbeeld van gebruik: Gebruik een absolute datum om inhoudsvergunningen vóór de beschikbaarheidsdatum van een activa uit te geven, of een &quot;embargo&quot;periode af te dwingen.
+Voorbeeld: gebruik een absolute datum om inhoudslicenties af te geven vóór de beschikbaarheidsdatum van een actief of om een &#39;embargo&#39;-periode af te dwingen.
 
 ## Einddatum {#end-date}
 
 De einddatum geeft de datum aan waarna een licentie vervalt.
 
-Voorbeeld van gebruik: Gebruik een absolute vervaldatum om het einde van distributierechten te weerspiegelen.
+Voorbeeld: gebruik een absolute vervaldatum om het einde van distributierechten aan te geven.
 
 ## Relatieve einddatum {#relative-end-date}
 
 De relatieve einddatum geeft de vervaldatum van de vergunning aan, die wordt uitgedrukt in verhouding tot de verpakkingsdatum en niet in verhouding tot de datum waarop de vergunning is afgegeven.
 
-Voorbeeld van gebruik: Gebruik in een geautomatiseerd verpakkingsproces één Primetime DRM-beleid met deze optie voor een reeks video&#39;s om de vervaldatum in te stellen op 30 dagen ten opzichte van de verpakkingsdatum.
+Voorbeeld: in een geautomatiseerd verpakkingsproces gebruikt u één Primetime DRM-beleid met deze optie voor een reeks video&#39;s om de vervaldatum in te stellen op 30 dagen ten opzichte van de verpakkingsdatum.
 
 ## Duur van licentiecache{#license-caching-duration}
 
@@ -43,13 +42,13 @@ De duur van het in cache plaatsen van licenties bepaalt hoe lang een licentie op
 
 Nadat de vervaldatum van de cache is verstreken, is de licentie niet meer geldig en moet de client een nieuwe licentie aanvragen bij de licentieserver.
 
-Voorbeeld van gebruik: Gebruik de duur van het in cache plaatsen van licenties om een vaste tijdsduur op te geven die geldig is voor een bepaalde licentie, zoals in een gebruiksgeval voor verhuur. U kunt een verhuur van 30 dagen opgeven (met licentiecache) om de totale licentieduur aan te geven waarbinnen de inhoud moet worden geconsumeerd.
+Voorbeeld van gebruik: gebruik de duur van het in cache plaatsen van licenties om een vaste tijdsduur op te geven die geldig is voor een bepaalde licentie, zoals in een gebruiksgeval. U kunt een verhuur van 30 dagen opgeven (met licentiecache) om de totale licentieduur aan te geven waarbinnen de inhoud moet worden geconsumeerd.
 
 ## Afspeelvenster {#playback-window}
 
 In het afspeelvenster wordt aangegeven hoe lang een licentie geldig is nadat deze voor het eerst wordt gebruikt om beveiligde inhoud af te spelen.
 
-Voorbeeld van gebruik: Sommige bedrijfsmodellen staan een verhuurperiode van 30 dagen toe, maar wanneer het afspelen begint, moet het afspelen binnen 48 uur worden voltooid. In dit geval is de duur van 48 uur van de licentie het afspeelvenster.
+Voorbeeld van gebruik: sommige bedrijfsmodellen staan een verhuurperiode van 30 dagen toe, maar wanneer het afspelen begint, moet het afspelen binnen 48 uur worden voltooid. In dit geval is de duur van 48 uur van de licentie het afspeelvenster.
 
 **Vanaf versie 5.3 vooruit** - Het playbackvenster steunt ook de optie van het toelaten of onbruikbaar maken van Harde Stop, die erop wijst of de decryptie context voor playback bij het verlopen van (toegelaten) playbackvenster zou moeten stoppen of ondanks afloop (gehandicapt) verdergaan.
 

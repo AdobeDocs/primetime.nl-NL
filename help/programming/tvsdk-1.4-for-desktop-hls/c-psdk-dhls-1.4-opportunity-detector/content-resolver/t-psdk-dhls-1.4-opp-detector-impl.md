@@ -1,8 +1,7 @@
 ---
 description: U kunt uw eigen opportuniteitsdetectors implementeren.
 title: Een aangepaste opportuniteitsdetector implementeren
-exl-id: a3f6d6b3-4d5e-49bc-b8de-a1196305bbb4
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '160'
 ht-degree: 0%
@@ -64,7 +63,7 @@ U kunt uw eigen opportuniteitsdetectors implementeren.
    }
    ```
 
-1. Registreer de aangepaste inhoudsfabriek voor de mediastream die moet worden afgespeeld.
+1. Registreer de aangepaste inhoudsfabriek voor de af te spelen mediastream.
 
    ```
    var mediaPlayerItemConfig:MediaPlayerItemConfig = new DefaultMediaPlayerItemConfig(); 

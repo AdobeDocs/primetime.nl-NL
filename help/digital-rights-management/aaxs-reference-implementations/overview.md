@@ -2,8 +2,7 @@
 title: Overzicht - De verwijzingsimplementaties gebruiken
 description: Overzicht - De verwijzingsimplementaties gebruiken
 copied-description: true
-exl-id: 2a5075f4-3e7b-4e4c-b69d-c044b064e282
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '61'
 ht-degree: 0%
@@ -12,7 +11,7 @@ ht-degree: 0%
 
 # Overzicht - De verwijzingsimplementaties gebruiken {#overview-using-the-reference-implementations}
 
-Het product van de Toegang van Adobe komt met een verwijzingsimplementatie voor de volgende componenten:
+Het product van de Toegang van de Adobe komt met een verwijzingsimplementatie voor de volgende componenten:
 
 * Opdrachtregelprogramma&#39;s
 * Licentieserver en controlemappackager

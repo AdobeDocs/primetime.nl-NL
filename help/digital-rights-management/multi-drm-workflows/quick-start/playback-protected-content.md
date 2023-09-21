@@ -1,8 +1,7 @@
 ---
 description: Als u de DRM-oplossing wilt testen, hebt u een videotoepassing nodig die de specifieke DRM-oplossing kan verwerken waarmee u werkt. Deze speler kan een voorbeeldspeler zijn die door Adobe of uw eigen op TVSDK gebaseerde videotoepassing beschikbaar wordt gesteld.
 title: Beschermde inhoud afspelen
-exl-id: b0e09474-f752-495f-a702-93f288535403
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '550'
 ht-degree: 0%
@@ -29,15 +28,15 @@ Als u de DRM-oplossing wilt testen, hebt u een videotoepassing nodig die de spec
 
    * HTML5 Reference Player:
 
-      ```
-      https://ptdemos.com/html5/internal/1_2/2.4_GM/samples/reference/reference_player.html
-      ```
+     ```
+     https://ptdemos.com/html5/internal/1_2/2.4_GM/samples/reference/reference_player.html
+     ```
 
    * Shaka Player:
 
-      ```
-      https://shaka-player-demo.appspot.com
-      ```
+     ```
+     https://shaka-player-demo.appspot.com
+     ```
 
    * Voorbeeld van TVSDK Player (in ontwikkeling) -
 
@@ -47,7 +46,7 @@ Als u de DRM-oplossing wilt testen, hebt u een videotoepassing nodig die de spec
 
    **Het afspelen controleren tijdens het testen van uw FairPlay-instellingen:** FairPlay vereist enkele extra stappen om inhoud af te spelen wanneer u de ExpressPlay-licentieservers gebruikt. Als u [!DNL curl] om uw verbindingen te testen (zoals beschreven in [Licentie](../../multi-drm-workflows/quick-start/handle-the-licensing.md)), moet u *uw M3U8-manifest bewerken* (uw verpakte inhoud) als volgt:
 
-1. Voeg de reactie die u van uw verzoek van het licentietoken hebt teruggekregen toe aan de `#EXT-X-KEY:` de code in het manifest; en
+1. Voeg de reactie die u van uw verzoek van het licentietoken hebt teruggekregen toe aan de `#EXT-X-KEY:` in het manifest, en
 1. Wijzig het protocol van die URL vanuit de reactie (nu in het manifest), van `https://` tot `skd://`.
 
    Hier volgt een volledig voorbeeld voor het testen van het afspelen met FairPlay, inclusief de licentiesstap:
@@ -70,7 +69,7 @@ Als u de DRM-oplossing wilt testen, hebt u een videotoepassing nodig die de spec
    SSwcDq1ZnRtXunFLueTw6LAL52aZllMLasCSzYRMaAVHw 
    ```
 
-1. Plaats de geretourneerde URL-reactie van het licentietoken in uw M3U8-manifest en *Wijzig het schema van licentietoken-URL in* `sdk://` van `https://`. Hieronder ziet u een voorbeeld van de tag #EXT-X-KEY in uw manifest van M3U8:
+1. Plaats de geretourneerde URL-reactie van het licentietoken in uw M3U8-manifest, en *Wijzig het schema van licentietoken-URL in* `sdk://` van `https://`. Hieronder ziet u een voorbeeld van de tag #EXT-X-KEY in uw manifest van M3U8:
 
    ```
    #EXT-X-KEY:METHOD=SAMPLE-AES, 

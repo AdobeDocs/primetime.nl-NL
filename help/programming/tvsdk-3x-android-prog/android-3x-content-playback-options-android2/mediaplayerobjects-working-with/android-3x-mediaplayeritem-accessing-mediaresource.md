@@ -1,8 +1,7 @@
 ---
 description: Met de methoden in de MediaPlayerItem-klasse kunt u informatie ophalen over de inhoudsstroom die wordt vertegenwoordigd door een geladen MediaResource.
 title: Methoden van MediaPlayerItem voor toegang tot MediaResource-informatie
-exl-id: d6a547f3-0267-4a49-93a4-628b4879aef4
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '436'
 ht-degree: 0%
@@ -18,7 +17,7 @@ Met de methoden in de MediaPlayerItem-klasse kunt u informatie ophalen over de i
 | **Labels toevoegen** |  |
 | Lijst`<String>` getAdTags() | Bevat de lijst met advertentietags die worden gebruikt voor het plaatsingsproces. |
 | **Live stream** |  |
-| boolean isLive(); | True if the stream is live; false als het om VOD gaat. |
+| boolean isLive(); | True if the stream is live; false if it is VOD. |
 | **DRM beveiligd** |  |
 | boolean isProtected(); | True if the stream is protected DRM. |
 | Lijst`<DRMMetadataInfo>` getDRMMetadataInfos(); | Hiermee worden alle DRM-metagegevensobjecten weergegeven die in het manifest zijn aangetroffen. |
@@ -28,7 +27,7 @@ Met de methoden in de MediaPlayerItem-klasse kunt u informatie ophalen over de i
 | ClosedCaptionsTrack get SelectedClosedCaptionsTrack(); | Hiermee wordt de huidige gesloten bijschrifttrack opgehaald die is geselecteerd met SelectClosedCaptionsTrack. |
 | selectClosedCaptionsTrack ( ClosedCaptionsTrack closedCaptionsTrack) | Hiermee stelt u een Closed Caption-track in als de huidige Closed Caption-track. |
 | **Alternatieve audiotracks** |  |
-| boolean hasAlternateAudio(); | True als de stream alternatieve audiotracks heeft. Opmerking: De hoofdaudiotrack (standaard) maakt ook deel uit van de lijst met alternatieve audiotracks.  TVSDK voor Android beschouwt de hoofdaudiotrack als een van de items in de alternatieve audiotracklijst. Daarom is het enige geval waarin MediaPlayerItem.hasAlternateAudio false retourneert, wanneer de stream helemaal geen audio heeft. Als de inhoud slechts één audiotrack heeft, retourneert deze methode true, en  `MediaPlayerItem.getAudioTracks`  Hiermee wordt een lijst met één element geretourneerd (de standaardaudiotrack). |
+| boolean hasAlternateAudio(); | True als de stream alternatieve audiotracks heeft. Opmerking: de hoofdaudiotrack (standaard) maakt ook deel uit van de lijst met alternatieve audiotracks.  TVSDK voor Android beschouwt de hoofdaudiotrack als een van de items in de alternatieve audiotracklijst. Daarom is het enige geval waarin MediaPlayerItem.hasAlternateAudio false retourneert, wanneer de stream helemaal geen audio heeft. Als de inhoud slechts één audiotrack heeft, retourneert deze methode true, en  `MediaPlayerItem.getAudioTracks`  retourneert een lijst met één element (de standaardaudiotrack). |
 | Lijst`<AudioTrack>` getAudioTracks(); | Geeft een lijst met beschikbare alternatieve audiotracks. |
 | AudioTrack getSelectedAudioTrack(); | Hiermee wordt de audiotrack opgehaald die is geselecteerd met selectAudioTrack. |
 | selectAudioTrack ( AudioTrack AudioTrack ) | Hiermee selecteert u een audiotrack als huidige audiotrack. |

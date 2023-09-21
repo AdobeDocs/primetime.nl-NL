@@ -1,8 +1,7 @@
 ---
 description: Bij Closed Captioning wordt het audiogedeelte van een video als tekst op het scherm weergegeven wanneer het geluid onhoorbaar is of de kijker niet goed kan worden gehoord.
 title: Werken met gesloten bijschriften
-exl-id: 523e384f-4f45-41cc-b0a1-27c0c1adf2b7
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '211'
 ht-degree: 0%

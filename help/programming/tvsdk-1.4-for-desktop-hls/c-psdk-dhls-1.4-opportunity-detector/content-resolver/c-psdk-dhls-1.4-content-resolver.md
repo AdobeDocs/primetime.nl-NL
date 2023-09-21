@@ -1,8 +1,7 @@
 ---
 description: Een opportuniteitsdetector is een TVADK-component die aangepaste tags in een stream detecteert en plaatsingsmogelijkheden identificeert. Deze mogelijkheden worden naar de inhoudoplosser verzonden, die de inhoud/toevoegingswerkstroom op de eigenschappen van de plaatsingskans en meta-gegevens aanpast.
 title: Aangepaste opportuniteitsdetectors en contentoplossers
-exl-id: 0721278c-e128-4afc-ae81-4f23c2644859
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '207'
 ht-degree: 0%
@@ -21,7 +20,7 @@ TVSDK bevat standaard opportuniteitsdetectoren:
 
 TVSDK bevat ook een standaardinhoudsoplosser die inhoud bevat die moet worden ingevoegd op basis van de metagegevenssleutel in het speleritem:
 
-* `AuditudeResolver`, geschikt voor communicatie met Adobe Primetime en beslissingsservers (voorheen Auditude genoemd) en het retourneren van ad-hoconderbrekingen die moeten worden geplaatst.
+* `AuditudeResolver`, geschikt voor communicatie met Adobe Primetime en beslissingsservers (voorheen bekend als Auditude) en het retourneren van ad-hoconderbrekingen die moeten worden geplaatst.
 
 U kunt de standaardopportuniteitsdetectors en inhoudsoplossers overschrijven om de advertentieworkflow op de volgende manieren aan te passen:
 

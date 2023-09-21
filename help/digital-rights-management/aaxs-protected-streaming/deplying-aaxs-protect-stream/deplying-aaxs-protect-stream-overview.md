@@ -2,8 +2,7 @@
 title: Overzicht van Adobe Access Server for Protected Streaming implementeren
 description: Overzicht van Adobe Access Server for Protected Streaming implementeren
 copied-description: true
-exl-id: fdefa13a-14ec-4301-ab39-2ceea830463d
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '196'
 ht-degree: 0%
@@ -14,7 +13,7 @@ ht-degree: 0%
 
 Voordat u de Adobe Access Server for Protected Streaming gaat implementeren, moet u controleren of u de versies van Java en Tomcat hebt geïnstalleerd die in de sectie Vereisten worden vermeld.
 
-Het Adobe Access Server for Protected Streaming-pakket bevat [!DNL flashaccesserver.war]. Als u dit WAR-bestand wilt implementeren, kopieert u het naar Tomcat&#39;s [!DNL webapps] directory. Als u eerder het WAR-bestand hebt geïmplementeerd, moet u mogelijk de onverpakte WAR-map handmatig verwijderen ( [!DNL flashaccessserver] in Tomcat [!DNL webapps] directory). Als u wilt voorkomen dat Tomcat WAR-bestanden uitpakt, bewerkt u de opdracht [!DNL server.xml] bestand in Tomcat [!DNL conf] en stelt de `unpackWARs` kenmerk naar `false`.
+Het Adobe Access Server for Protected Streaming-pakket bevat [!DNL flashaccesserver.war]. Als u dit WAR-bestand wilt implementeren, kopieert u het naar Tomcat&#39;s [!DNL webapps] directory. Als u eerder het WAR-bestand hebt geïmplementeerd, moet u mogelijk de onverpakte WAR-map handmatig verwijderen ( [!DNL flashaccessserver] in Tomcat&#39;s [!DNL webapps] directory). Als u wilt voorkomen dat Tomcat WAR-bestanden uitpakt, bewerkt u de opdracht [!DNL server.xml] bestand in Tomcat&#39;s [!DNL conf] en stelt de `unpackWARs` kenmerk naar `false`.
 
 >[!NOTE]
 >

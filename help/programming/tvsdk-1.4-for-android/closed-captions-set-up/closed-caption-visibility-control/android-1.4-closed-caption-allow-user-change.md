@@ -1,15 +1,14 @@
 ---
 description: Dit is een voorbeeld van hoe u een knop maakt waarmee een gebruiker een track met een gesloten bijschrift kan selecteren.
 title: Voorbeeld Gebruikers mogen bijschrifttrack wijzigen
-exl-id: d7ba19ac-cbfa-4fb4-a92d-21a3d0f7c23f
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '107'
 ht-degree: 0%
 
 ---
 
-# Voorbeeld: Gebruikers toestaan de bijschrifttrack te wijzigen{#example-allow-users-to-change-the-caption-track}
+# Voorbeeld: gebruikers toestaan de bijschrifttrack te wijzigen{#example-allow-users-to-change-the-caption-track}
 
 Dit is een voorbeeld van hoe u een knop maakt waarmee een gebruiker een track met een gesloten bijschrift kan selecteren.
 

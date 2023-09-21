@@ -1,8 +1,7 @@
 ---
 title: Gebruikspatronen
 description: Gedrag voor het delen van accounts weergeven voor verschillende gebruikerstypen.
-exl-id: 2faa7e75-b3a1-491b-bb7d-bd3a149cbe79
-source-git-commit: 560611f2af2605ba399e4cf5ddfd331b6e8e0231
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '327'
 ht-degree: 0%
@@ -13,11 +12,11 @@ ht-degree: 0%
 
 Rekening-IQ classificeert gebruikers van abonneerekeningen in diverse categorieën wat hun sociaal gedrag betreft, zoals reiziger of forengebruiker, Grote familie en het delen van de Gemeenschap. De **Gebruikspatronen** op de pagina worden verschillende analyses en rapporten voor deze gebruikerstypen weergegeven. Bijvoorbeeld: **Distributie van gebruikspatronen - Gebruikers in segment vs. totaal** het rapport vergelijkt het gebruiksgedrag voor het huidige segment met de volledige industrie.
 
-Net als de andere pagina&#39;s in de app zijn de analyses en rapporten hier gebaseerd op het huidige segment zoals gedefinieerd in het dialoogvenster [segmentpaneel](/help/AccountIQ/segments-timeframe.md).
+Net als de andere pagina&#39;s in de app zijn de analyses en rapporten hier gebaseerd op het huidige segment dat is gedefinieerd in het dialoogvenster [segmentpaneel](/help/AccountIQ/segments-timeframe.md).
 
 ## Distributie van gebruikspatronen {#usage-pattern-dis}
 
-De staafgrafiek in **Distributie van gebruikspatronen - Gebruikers in segment versus totaal** geeft het aantal en de percentages van abonnees voor elk sociaal gedrag, of gebruikspatroon weer. Naast het vergelijken van elk gebruikspatroon in het huidige segment met de volledige industrie, vergelijkt het hen ook met een segment dat al uw kanalen bevat.
+De staafgrafiek in **Distributie van gebruikspatronen - Gebruikers in segment vs. totaal** geeft het aantal en de percentages van abonnees voor elk sociaal gedrag, of gebruikspatroon weer. Naast het vergelijken van elk gebruikspatroon in het huidige segment met de volledige industrie, vergelijkt het hen ook met een segment dat al uw kanalen bevat.
 
 ![](assets/segment-users-industry.png)
 

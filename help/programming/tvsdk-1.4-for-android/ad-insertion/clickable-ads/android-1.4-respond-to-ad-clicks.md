@@ -1,8 +1,7 @@
 ---
 description: Wanneer een gebruiker op een advertentie of een verwante knop klikt, moet de toepassing reageren. TVSDK biedt u informatie over de doel-URL voor de klik.
 title: Reageren op klikken op advertenties
-exl-id: dc1f1ad7-2f11-4a6c-8459-e02cf8a2e0aa
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '287'
 ht-degree: 0%
@@ -22,17 +21,17 @@ Wanneer een gebruiker op een advertentie of een verwante knop klikt, moet de toe
 1. Als u de doorklikURL en verwante informatie wilt ophalen, gebruikt u de methoden getter voor de `AdClickEvent` -instantie.
 1. De video pauzeren.
 
-   Ga voor meer informatie over het pauzeren van de video naar [Het afspelen onderbreken en hervatten.](../../ad-insertion/clickable-ads/android-1.4-pausing-resuming-playback.md).
+   Voor meer informatie over het pauzeren van de video raadpleegt u [Het afspelen onderbreken en hervatten.](../../ad-insertion/clickable-ads/android-1.4-pausing-resuming-playback.md).
 1. Gebruik de doorklikinformatie om de advertentie-door URL en de verwante informatie te tonen.
 
        U kunt de informatie bijvoorbeeld op een van de volgende manieren weergeven:
    
    * In uw toepassing door klik-door URL in browser te openen.
 
-      Op bureaubladplatforms worden de video en het afspeelgebied gebruikt om doorklikURL&#39;s aan te roepen wanneer de gebruiker klikt.
+     Op bureaubladplatforms worden de video en het afspeelgebied gebruikt om doorklikURL&#39;s aan te roepen wanneer de gebruiker klikt.
    * Gebruikers omleiden naar hun externe mobiele webbrowser.
 
-      Op mobiele apparaten worden de video en het afspeelgebied gebruikt voor andere functies, zoals het verbergen en weergeven van besturingselementen, het pauzeren van het afspelen, het uitbreiden naar het volledige scherm, enzovoort. Op deze apparaten wordt een aparte weergave, zoals een sponsor, gebruikt om de URL voor klikken te starten.
+     Op mobiele apparaten worden de video en het afspeelgebied gebruikt voor andere functies, zoals het verbergen en weergeven van besturingselementen, het pauzeren van het afspelen, het uitbreiden naar het volledige scherm, enzovoort. Op deze apparaten wordt een aparte weergave, zoals een sponsor, gebruikt om de URL voor klikken te starten.
 
 1. Sluit het browservenster waarin de doorklikinformatie wordt weergegeven en hervat het afspelen van de video.
 

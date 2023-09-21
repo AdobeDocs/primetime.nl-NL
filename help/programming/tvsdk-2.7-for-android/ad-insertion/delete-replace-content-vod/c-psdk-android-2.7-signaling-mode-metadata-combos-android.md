@@ -1,8 +1,7 @@
 ---
 description: U kunt tijdbereiken in VOD-streams markeren, verwijderen en vervangen door verschillende combinaties van ad-signaalmodus en metagegevens te gebruiken. Verschillende combinaties van signaalmodus en metagegevens resulteren in verschillende gedragingen.
 title: Effect op het toevoegen en verwijderen van gegevens uit de advertentiemodus en combinaties van metagegevens
-exl-id: 949ca84f-4aa9-4668-b91b-99fdf13f625c
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '434'
 ht-degree: 0%
@@ -71,7 +70,7 @@ De volgende lijst verstrekt de details over het signaleren wijze en gedrag van d
   </tr> 
   <tr> 
    <td></td> 
-   <td> Mark </td> 
+   <td> Markeren </td> 
    <td> CustomAd </td> 
    <td><span class="codeph"> PlacementInfo (Type.CUSTOM_TIME_RANGE, Mode.MARK)</span> </td> 
    <td> Gemarkeerde bereiken </td> 
@@ -124,7 +123,7 @@ De volgende lijst verstrekt de details over het signaleren wijze en gedrag van d
   </tr> 
   <tr> 
    <td></td> 
-   <td> Mark </td> 
+   <td> Markeren </td> 
    <td> CustomAd </td> 
    <td><span class="codeph"> PlacementInfo (Type.CUSTOM_TIME_RANGE, Mode.MARK)</span> </td> 
    <td> Gemarkeerde bereiken </td> 
@@ -173,7 +172,7 @@ De volgende lijst verstrekt de details over het signaleren wijze en gedrag van d
   </tr> 
   <tr> 
    <td></td> 
-   <td> Mark </td> 
+   <td> Markeren </td> 
    <td> CustomAd </td> 
    <td><span class="codeph"> PlacementInfo (Type.CUSTOM_TIME_RANGE, Mode.MARK)</span> </td> 
    <td> Gemarkeerde bereiken </td> 
@@ -181,7 +180,7 @@ De volgende lijst verstrekt de details over het signaleren wijze en gedrag van d
   <tr> 
    <td></td> 
    <td> Mark, Auditude </td> 
-   <td> Aangepaste advertentie, controle </td> 
+   <td> Aangepaste advertentie, Auditude </td> 
    <td><span class="codeph"> PlacementInfo (Type.CUSTOM_TIME_RANGE, Mode.MARK)</span> </td> 
    <td> Bereiken gemarkeerd, geen advertenties ingevoegd </td> 
   </tr> 
@@ -222,7 +221,7 @@ De volgende lijst verstrekt de details over het signaleren wijze en gedrag van d
   </tr> 
   <tr> 
    <td></td> 
-   <td> Mark </td> 
+   <td> Markeren </td> 
    <td> CustomAd </td> 
    <td><span class="codeph"> PlacementInfo (Type.CUSTOM_TIME_RANGE, Mode.MARK)</span> </td> 
    <td> Gemarkeerde bereiken </td> 

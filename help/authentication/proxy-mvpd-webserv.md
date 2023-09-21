@@ -1,8 +1,7 @@
 ---
 title: Proxy MVPD Web Service
 description: Proxy MVPD Web Service
-exl-id: f75cbc4d-4132-4ce8-a81c-1561a69d1d3a
-source-git-commit: bfc3ba55c99daba561255760baf273b6538a3c6e
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '955'
 ht-degree: 0%
@@ -82,7 +81,7 @@ Past een serie van MVPDs die met de Volmacht MVPD wordt geïntegreerd door de pa
 
 | Endpoint | Geroepen door | Aanvraagkoppen | HTTP-methode | HTTP-respons |
 |:------------------------------:|:---------:|:--------------------------------------------:|:-----------:|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
-| &lt;fqdn>/control/v1/proxiedMvpds | ProxyMVPD | apikey (Mandatory) proxied-mvpds (Mandatory) | POST | <ul><li>201 (gemaakt) - De push is verwerkt</li><li>400 (ongeldig verzoek) - De server weet niet hoe te om het verzoek te verwerken:<ul><li>Binnenkomende XML voldoet niet aan schema dat in deze specificatie wordt gepubliceerd</li><li>De proxy-mvpd&#39;s hebben geen unieke id&#39;s</li><li>De geduwde aanvragerIds bestaat niet Andere de containerreden van Servlet voor 400 reactiecode</li></ul><li>401 (onbevoegd) - de apikey is ongeldig of bezoeker IP is niet op de lijst van gewenste personen</li><li>403 (niet toegestaan) - Geeft aan dat de bewerking niet wordt ondersteund voor de opgegeven parameters of dat de proxy-MVPD niet is ingesteld als een proxy of ontbreekt</li><li>405 (methode niet toegestaan) - Er is een andere HTTP-methode dan GET of POST gebruikt. De HTTP-methode wordt over het algemeen niet ondersteund of wordt niet ondersteund voor dit specifieke eindpunt.</li><li>500 (interne serverfout) - Er is een fout opgetreden aan de serverzijde tijdens het aanvraagproces.</li></ul> |
+| &lt;fqdn>/control/v1/proxiedMvpds | ProxyMVPD | apikey (Mandatory) proxied-mvpds (Mandatory) | POST | <ul><li>201 (gemaakt) - De push is verwerkt</li><li>400 (ongeldig verzoek) - De server weet niet hoe te om het verzoek te verwerken:<ul><li>Binnenkomende XML voldoet niet aan schema dat in deze specificatie wordt gepubliceerd</li><li>De proxy-mvpds hebben geen unieke id&#39;s</li><li>De geduwde aanvragerIds bestaat niet Andere de containerreden van Servlet voor 400 reactiecode</li></ul><li>401 (onbevoegd) - de apikey is ongeldig of bezoeker IP is niet op de lijst van gewenste personen</li><li>403 (niet toegestaan) - Geeft aan dat de bewerking niet wordt ondersteund voor de opgegeven parameters of dat de proxy-MVPD niet is ingesteld als een proxy of ontbreekt</li><li>405 (methode niet toegestaan) - Er is een andere HTTP-methode dan GET of POST gebruikt. De HTTP-methode wordt over het algemeen niet ondersteund of wordt niet ondersteund voor dit specifieke eindpunt.</li><li>500 (interne serverfout) - Er is een fout opgetreden aan de serverzijde tijdens het aanvraagproces.</li></ul> |
 
 Voorbeeld van krullen:
 
@@ -137,7 +136,7 @@ Als ProxyMVPD een verslag van XML met een lege lijst ProxiedMVPDs duwt, zal die 
 
 ## XSD-indeling {#xsd-format}
 
-Adobe heeft de volgende geaccepteerde indeling gedefinieerd voor het posten/ophalen van proxy-MVPD&#39;s van/naar onze openbare webservice:
+De Adobe heeft het volgende toegelaten formaat voor het posten/het terugwinnen van proxyMVPDs van/aan onze openbare Webdienst bepaald:
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -207,13 +206,13 @@ Adobe heeft de volgende geaccepteerde indeling gedefinieerd voor het posten/opha
 **Opmerkingen over elementen:**
 
 * `id` (verplicht) - De Proxied MVPD ID moet een koord relevant voor de naam van MVPD zijn, gebruikend om het even welke volgende karakters (aangezien het aan Programmers voor het volgen van doeleinden zal worden blootgesteld):
-   * Alle alfanumerieke tekens, onderstrepingsteken (&quot;_&quot;) en afbreekstreepje (&quot;-&quot;).
+   * Alfanumerieke tekens, onderstrepingsteken (&quot;_&quot;) en koppelteken (&quot;-&quot;).
    * De idID moet voldoen aan de volgende reguliere expressie:
-      `(a-zA-Z0-9((-)|_)*)`
+     `(a-zA-Z0-9((-)|_)*)`
 
-      Het moet dus ten minste één teken hebben, beginnen met een letter en doorgaan met een letter, cijfer, streepje of onderstrepingsteken.
+     Het moet dus ten minste één teken hebben, beginnen met een letter en doorgaan met een letter, cijfer, streepje of onderstrepingsteken.
 
-* `iframeSize` (optioneel) - Het iframeSize-element is optioneel en definieert de grootte van het iFrame als de MVPD-verificatiepagina zich in een iFrame moet bevinden. Als het iframeSize-element niet aanwezig is, vindt de verificatie plaats in een volledige pagina voor omleiding van de browser.
+* `iframeSize` (optioneel) - Het iframeSize-element is optioneel en definieert de grootte van het iFrame als de MVPD-verificatiepagina zich in een iFrame moet bevinden. Anders, als het iframeSize element niet aanwezig is, zal de authentificatie in volledige browser opnieuw richten pagina gebeuren.
 * `requestorIds` (optioneel) - De waarden voor requestIds worden opgegeven door Adobe. Een vereiste is dat een proxy MVPD met minstens één aanvragerId moet worden geïntegreerd. Als de tag &quot;requestIds&quot; niet aanwezig is op het proxy-element MVPD, wordt die proxy MVPD geïntegreerd met alle beschikbare aanvragers die zijn geïntegreerd onder de proxy MVPD.
 * `ProviderID` (facultatief) - wanneer het attribuut ProviderID op het id element aanwezig is, zal de waarde van ProviderID op het SAML authentificatieverzoek naar Volmacht MVPD als Proxied MVPD/SubMVPD ID (in plaats van de id waarde) worden verzonden. In dit geval, zal de waarde van identiteitskaart slechts in de plukker worden gebruikt MVPD die op de pagina van de Programmer wordt voorgesteld, en intern door de authentificatie van Adobe Primetime. De lengte van het attribuut ProviderID moet tussen 1 en 128 karakters zijn.
 
@@ -225,7 +224,7 @@ Een verzoek kan alleen als geldig worden beschouwd als het aan de volgende regel
 * Het verzoek moet van een specifiek IP adres komen dat is toegestaan.
 * De aanvraag moet via het SSL-protocol worden verzonden.
 
-Adobe zal de (statische) waarde van het teken verstrekken. Deze waarde wordt gebruikt in het verificatie- en autorisatieproces.  Alle parameters in de aanvraagkoptekst die hierboven niet worden vermeld, worden genegeerd.
+Adobe geeft de (statische) waarde van het token op. Deze waarde wordt gebruikt in het verificatie- en autorisatieproces.  Alle parameters in de aanvraagkoptekst die hierboven niet worden vermeld, worden genegeerd.
 
 Voorbeeld van krullen:
 
@@ -233,7 +232,7 @@ Voorbeeld van krullen:
 
 ## De Eindpunten van de Dienst van het Web van de Volmacht MVPD voor de authentificatiemilieu&#39;s van Adobe Primetime {#proxy-mvpd-wevserv-endpoints}
 
-* **Productie-URL:** https://mgmt.auth.adobe.com/control/v1/proxiedMvpds
+* **URL productie:** https://mgmt.auth.adobe.com/control/v1/proxiedMvpds
 * **Staging-URL:** https://mgmt.auth-staging.adobe.com/control/v1/proxiedMvpds
 * **URL voor preQual-Production:** https://mgmt-prequal.auth.adobe.com/control/v1/proxiedMvpds
 * **PreQual-Staging URL:** https://mgmt-prequal.auth-staging.adobe.com/control/v1/proxiedMvpds

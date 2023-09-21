@@ -3,8 +3,7 @@ keywords: hard stop
 title: Configuratieeigenschappen
 description: Configuratieeigenschappen
 copied-description: true
-exl-id: f88c57d6-d951-4d7a-8de1-44cd1aa8e5f7
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '1217'
 ht-degree: 0%
@@ -17,7 +16,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Voor eigenschapnamen die `.n`de `n` vertegenwoordigt een geheel dat met 1 begint en voor elke instantie van het bezit stijgt. Bijvoorbeeld: `policy.license.customProp.n`.
+>Voor eigenschapnamen die include-bestanden bevatten `.n`de `n` vertegenwoordigt een geheel dat met 1 begint en voor elke instantie van het bezit stijgt. Bijvoorbeeld: `policy.license.customProp.n`.
 
 <table class="+ topic/table " id="table_p3x_54y_n4"> 
  <thead class="- topic/thead "> 
@@ -53,7 +52,7 @@ ht-degree: 0%
   </tr> 
   <tr rowsep="1" class="- topic/row "> 
    <td colname="1" class="- topic/entry "><span class="codeph"> policy.chaining.asymmetrisch.certfile</span> </td> 
-   <td colname="2" class="- topic/entry ">Certificaat van licentieserver waarvan de openbare sleutel wordt gebruikt voor het versleutelen van de hoofdcoderingssleutel voor de <a href="https://help.adobe.com/en_US/primetime/drm/5.3/protecting_content/index.html#DRM-concept-Enhanced_License_Chaining" class="- topic/xref " format="http" scope="external"> Enhanced License Chaining</a>. This property specifies a file that only the certificate. <p>Opmerking: Zowel PEM- als DER-indelingen worden ondersteund. </p> </td> 
+   <td colname="2" class="- topic/entry ">Certificaat van licentieserver waarvan de openbare sleutel wordt gebruikt voor het versleutelen van de hoofdcoderingssleutel voor de <a href="https://help.adobe.com/en_US/primetime/drm/5.3/protecting_content/index.html#DRM-concept-Enhanced_License_Chaining" class="- topic/xref " format="http" scope="external"> Enhanced License Chaining</a>. This property specifies a file that only the certificate. <p>Opmerking: zowel de PEM- als de DER-indeling worden ondersteund. </p> </td> 
   </tr> 
   <tr rowsep="1" class="- topic/row "> 
    <td colname="1" class="- topic/entry "><span class="codeph"> policy.chaining.rootKey</span> <p class="- topic/p "><span class="codeph"> -rootKey</span> <i class="+ topic/ph hi-d/i ">hoofdtoets</i> </p> </td> 
@@ -65,11 +64,11 @@ ht-degree: 0%
   </tr> 
   <tr rowsep="1" class="- topic/row "> 
    <td colname="1" class="- topic/entry "><span class="codeph"> policy.domain.anoniem</span> <p class="- topic/p "><span class="codeph"> -domainAnon</span> </p> </td> 
-   <td colname="2" class="- topic/entry ">Geeft aan of anonieme domeinregistratie is toegestaan. Plaatst het bezit aan waar of omvat deze bevel-lijn optie om anonieme toegang toe te staan. <p>Opmerking: Deze optie kan niet worden gebruikt met <span class="codeph"> -domainAuthNS</span>. </p> </td> 
+   <td colname="2" class="- topic/entry ">Geeft aan of anonieme domeinregistratie is toegestaan. Plaatst het bezit aan waar of omvat deze bevel-lijn optie om anonieme toegang toe te staan. <p>Opmerking: deze optie kan niet worden gebruikt met <span class="codeph"> -domainAuthNS</span>. </p> </td> 
   </tr> 
   <tr rowsep="1" class="- topic/row "> 
    <td colname="1" class="- topic/entry "><span class="codeph"> policy.domain.autoNamespace</span> <p class="- topic/p "><span class="codeph"> -domainAuthNS</span> <i class="+ topic/ph hi-d/i ">namespace</i> </p> </td> 
-   <td colname="2" class="- topic/entry "> <p>De verificatienaamruimte voor domeinregistratie. Indien opgegeven, moet de client worden geverifieerd met een gebruikersnaam en wachtwoord die door de opgegeven instantie zijn uitgegeven. </p> <p>Voor updates is de opdrachtregeloptie niet beschikbaar en wordt de eigenschap genegeerd. </p> <p>Opmerking: Deze optie kan niet worden gebruikt met <span class="codeph"> -domainAnon</span>. </p> </td> 
+   <td colname="2" class="- topic/entry "> <p>De verificatienaamruimte voor domeinregistratie. Indien opgegeven, moet de client worden geverifieerd met een gebruikersnaam en wachtwoord die door de opgegeven instantie zijn uitgegeven. </p> <p>Voor updates is de opdrachtregeloptie niet beschikbaar en wordt de eigenschap genegeerd. </p> <p>Opmerking: deze optie kan niet worden gebruikt met <span class="codeph"> -domainAnon</span>. </p> </td> 
   </tr> 
   <tr rowsep="1" class="- topic/row "> 
    <td colname="1" class="- topic/entry "><span class="codeph"> policy.outputProtection.analog</span> <p class="- topic/p "><span class="codeph"> -opAnalog</span> <i class="+ topic/ph hi-d/i ">AnalogOption</i> </p> </td> 
@@ -87,19 +86,19 @@ ht-degree: 0%
   </tr> 
   <tr rowsep="1" class="- topic/row "> 
    <td colname="1" class="- topic/entry "><span class="codeph"> policy.drmVersionBlacklist.n</span> <p class="- topic/p "><span class="codeph"> -drmBlacklist</span> <i class="+ topic/ph hi-d/i ">name/value-pairs</i> </p> </td> 
-   <td colname="2" class="- topic/entry "> <p>DRM-clients die geen toegang hebben tot beveiligde inhoud. Met deze optie geeft u een lijst op met versies van DRM-modules die niet mogen worden gebruikt (lijst van gewezen personen). </p> <p>De waarde bestaat uit komma's gescheiden <span class="codeph"> name=value</span> paren in de volgende indeling: </p> <p class="- topic/p "><span class="+ topic/ph pr-d/codeph codeph"> os|release|arch|model|leverancier|env|screen=value</span> </p> <p class="- topic/p ">De extra naam/waardeparen moeten komma-gescheiden zijn. Bijvoorbeeld: <span class="codeph"> os=Win,release=2.0,arch=32</span>. </p> </td> 
+   <td colname="2" class="- topic/entry "> <p>DRM-clients die geen toegang hebben tot beveiligde inhoud. Met deze optie geeft u een lijst op met versies van DRM-modules die niet mogen worden gebruikt (lijst van gewezen personen). </p> <p>De waarde bestaat uit komma's gescheiden <span class="codeph"> name=value</span> paren in de volgende notatie: </p> <p class="- topic/p "><span class="+ topic/ph pr-d/codeph codeph"> os|release|arch|model|leverancier|env|screen=value</span> </p> <p class="- topic/p ">De extra naam/waardeparen moeten komma-gescheiden zijn. Bijvoorbeeld: <span class="codeph"> os=Win,release=2.0,arch=32</span>. </p> </td> 
   </tr> 
   <tr rowsep="1" class="- topic/row "> 
    <td colname="1" class="- topic/entry "><span class="codeph"> policy.runtimeVersionBlacklist.n</span> <p class="- topic/p "><span class="codeph"> -runtimeBlacklsit</span> <i class="+ topic/ph hi-d/i ">name/value-pairs</i> </p> </td> 
-   <td colname="2" class="- topic/entry "> <p>Toepassingsruntimes hebben geen toegang tot beveiligde inhoud. Met deze optie geeft u een lijst op met versies van runtimemodules die mogelijk niet worden gebruikt (lijst van gewezen personen). </p> <p>De waarde bestaat uit komma's van elkaar gescheiden <span class="codeph"> name=value</span> paren in de volgende indeling: </p> <p class="- topic/p "><span class="+ topic/ph pr-d/codeph codeph"> os|release|toepassing|arch|model|leverancier|env|screen=value</span> </p> <p class="- topic/p ">De extra naam/waardeparen moeten komma-gescheiden zijn. Bijvoorbeeld: <span class="codeph"> os=Win,toepassing=AIR</span>. </p> </td> 
+   <td colname="2" class="- topic/entry "> <p>Toepassingsruntimes hebben geen toegang tot beveiligde inhoud. Met deze optie geeft u een lijst op met versies van runtimemodules die mogelijk niet worden gebruikt (lijst van gewezen personen). </p> <p>De waarde bestaat uit komma's van elkaar gescheiden <span class="codeph"> name=value</span> paren in de volgende notatie: </p> <p class="- topic/p "><span class="+ topic/ph pr-d/codeph codeph"> os|release|toepassing|arch|model|leverancier|env|screen=value</span> </p> <p class="- topic/p ">De extra naam/waardeparen moeten komma-gescheiden zijn. Bijvoorbeeld: <span class="codeph"> os=Win,toepassing=AIR</span>. </p> </td> 
   </tr> 
   <tr rowsep="1" class="- topic/row "> 
    <td colname="1" class="- topic/entry "><span class="codeph"> policy.v1DeviceCapabilities</span> <p class="- topic/p "><span class="codeph"> -devCapabilitiesV1</span> <i class="+ topic/ph hi-d/i ">name/value-pairs</i> </p> </td> 
-   <td colname="2" class="- topic/entry "> <p class="- topic/p ">Hiermee geeft u de apparaatmogelijkheden op die vereist zijn voor toegang tot beveiligde inhoud. De waarde bestaat uit komma's gescheiden <span class="codeph"> name=value</span> paren in de volgende indeling: </p> <p class="- topic/p "><span class="+ topic/ph pr-d/codeph codeph"> nonUserAccessibleBus|hardwareRootOfTrust=true|false</span> </p> <p class="- topic/p ">Bijvoorbeeld: <span class="codeph"> nonUserAccessibleBus=false,hardwareRootOfTrust=true</span>. </p> <p>Tijdens een update moet u deze toepassen <span class="codeph"> -devCapabilitiesV1</span> zonder de resterende argumenten die de beperking van de apparaatmogelijkheden verwijderen. </p> </td> 
+   <td colname="2" class="- topic/entry "> <p class="- topic/p ">Hiermee geeft u de apparaatmogelijkheden op die vereist zijn voor toegang tot beveiligde inhoud. De waarde bestaat uit komma's gescheiden <span class="codeph"> name=value</span> paren in de volgende notatie: </p> <p class="- topic/p "><span class="+ topic/ph pr-d/codeph codeph"> nonUserAccessibleBus|hardwareRootOfTrust=true|false</span> </p> <p class="- topic/p ">Bijvoorbeeld: <span class="codeph"> nonUserAccessibleBus=false,hardwareRootOfTrust=true</span>. </p> <p>Tijdens een update moet u deze toepassen <span class="codeph"> -devCapabilitiesV1</span> zonder de resterende argumenten die de beperking van de apparaatmogelijkheden verwijderen. </p> </td> 
   </tr> 
   <tr rowsep="1" class="- topic/row "> 
    <td colname="1" class="- topic/entry "><span class="codeph"> policy.syncFrequency</span> <p class="- topic/p "><span class="codeph"> -sync</span> <i class="+ topic/ph hi-d/i ">name/value-pairs</i> </p> </td> 
-   <td colname="2" class="- topic/entry "> <p class="- topic/p ">Geeft aan hoe vaak clients synchronisatieberichten naar de server moeten verzenden. </p> <p>Als het bezit niet wordt geplaatst, zullen de cliënten geen synchronisatieberichten verzenden wanneer zij inhoud spelen die met een beleid DRM wordt beschermd. De waarde bestaat uit komma's van elkaar gescheiden <span class="codeph"> name=value</span> paren in de volgende indeling: </p> <p class="- topic/p "><span class="+ topic/ph pr-d/codeph codeph"> start|force=numberValue</span> </p> <p class="- topic/p ">De volgende lijst bevat aanvullende informatie over de opties: 
+   <td colname="2" class="- topic/entry "> <p class="- topic/p ">Hiermee geeft u aan hoe vaak clients synchronisatieberichten naar de server moeten verzenden. </p> <p>Als het bezit niet wordt geplaatst, zullen de cliënten geen synchronisatieberichten verzenden wanneer zij inhoud spelen die met een beleid DRM wordt beschermd. De waarde bestaat uit komma's van elkaar gescheiden <span class="codeph"> name=value</span> paren in de volgende notatie: </p> <p class="- topic/p "><span class="+ topic/ph pr-d/codeph codeph"> start|force=numberValue</span> </p> <p class="- topic/p ">De volgende lijst bevat aanvullende informatie over de opties: 
      <ul id="ul_a5j_q4t_44"> 
       <li id="li_FD2C0C6DA19E455AA1917A56E09A7F84">(vereist) <span class="codeph"> start</span> geeft aan dat de client in de opgegeven minuten sinds de laatste synchronisatie moet beginnen met synchroniseren met de server. </li> 
       <li id="li_9DEBC57385A442C3929AE3D0E3FA8992">(optioneel) <span class="codeph"> kracht</span> is de waarschijnlijkheid (0-100) waarmee de client een synchronisatiebericht tijdens het afspelen moet afdwingen. </li> 
@@ -119,19 +118,19 @@ ht-degree: 0%
   </tr> 
   <tr rowsep="1" class="- topic/row "> 
    <td colname="1" class="- topic/entry "><span class="codeph"> policy.expiration.endDate</span> </td> 
-   <td colname="2" class="- topic/entry "> <p class="- topic/p ">De datum voordat de inhoud ongeldig wordt. </p> <p>Opmerking: U kunt geen <span class="codeph"> policy.expiration.endDate</span> en <span class="codeph"> policy.expiration.duration</span> tegelijkertijd. </p> <p>Bijvoorbeeld, 2009-01-31-14:30:00 betekent dat de inhoud op 31 januari om 14.30 uur vervalt. </p> </td> 
+   <td colname="2" class="- topic/entry "> <p class="- topic/p ">De datum voordat de inhoud ongeldig wordt. </p> <p>Opmerking: u kunt geen gegevens opgeven <span class="codeph"> policy.expiration.endDate</span> en <span class="codeph"> policy.expiration.duration</span> tegelijkertijd. </p> <p>Bijvoorbeeld, 2009-01-31-14:30:00 betekent dat de inhoud op 31 januari om 14.30 uur vervalt. </p> </td> 
   </tr> 
   <tr rowsep="1" class="- topic/row "> 
    <td colname="1" class="- topic/entry "><span class="codeph"> policy.expiration.duration</span> </td> 
-   <td colname="2" class="- topic/entry "> <p class="- topic/p ">De tijd in minuten waarin de inhoud ongeldig wordt. De tijd begint wanneer u inhoud verpakt. </p> <p>Opmerking: U kunt geen <span class="codeph"> policy.expiration.endDate</span> en <span class="codeph"> policy.expiration.duration</span> tegelijkertijd. </p> </td> 
+   <td colname="2" class="- topic/entry "> <p class="- topic/p ">De tijd in minuten waarin de inhoud ongeldig wordt. De tijd begint wanneer u inhoud verpakt. </p> <p>Opmerking: u kunt geen gegevens opgeven <span class="codeph"> policy.expiration.endDate</span> en <span class="codeph"> policy.expiration.duration</span> tegelijkertijd. </p> </td> 
   </tr> 
   <tr rowsep="1" class="- topic/row "> 
    <td colname="1" class="- topic/entry "><span class="codeph"> beleid.licenseCaching.duration</span> </td> 
-   <td colname="2" class="- topic/entry "> <p class="- topic/p ">De tijd in minuten waarin een licentie in de cache op de client kan worden geplaatst. U kunt deze eigenschap instellen op 0 om te voorkomen dat de licentie in cache wordt geplaatst. De waarde moet 0 of hoger zijn. </p> <p>Opmerking: U kunt geen <span class="codeph"> beleid.licenseCaching.duration</span> en <span class="codeph"> policy.licenseCaching.endDate</span> tegelijkertijd. </p> <p class="- topic/p ">Deze DRM-beleidsinstelling wordt alleen toegepast op de licentiecache op de schijf en heeft geen invloed op de licentieduur in de cache. De licentie kan in het geheugen worden opgeslagen, zelfs als u geen DRM-beleid met een duur van nul opgeeft. </p> </td> 
+   <td colname="2" class="- topic/entry "> <p class="- topic/p ">De tijd in minuten waarin een licentie in de cache op de client kan worden geplaatst. U kunt deze eigenschap instellen op 0 om te voorkomen dat de licentie in cache wordt geplaatst. De waarde moet 0 of hoger zijn. </p> <p>Opmerking: u kunt geen gegevens opgeven <span class="codeph"> beleid.licenseCaching.duration</span> en <span class="codeph"> policy.licenseCaching.endDate</span> tegelijkertijd. </p> <p class="- topic/p ">Deze DRM-beleidsinstelling wordt alleen toegepast op de licentiecache op de schijf en heeft geen invloed op de licentieduur in de cache. De licentie kan in het geheugen worden opgeslagen, zelfs als u geen DRM-beleid met een duur van nul opgeeft. </p> </td> 
   </tr> 
   <tr rowsep="1" class="- topic/row "> 
    <td colname="1" class="- topic/entry "><span class="codeph"> policy.licenseCaching.endDate</span> </td> 
-   <td colname="2" class="- topic/entry "> <p class="- topic/p ">De datum waarna u licenties niet meer in cache kunt plaatsen. </p> <p>Opmerking: U kunt geen <span class="codeph"> beleid.licenseCaching.duration</span> en <span class="codeph"> policy.licenseCaching.endDate</span> tegelijkertijd. </p> </td> 
+   <td colname="2" class="- topic/entry "> <p class="- topic/p ">De datum waarna u licenties niet meer in cache kunt plaatsen. </p> <p>Opmerking: u kunt geen gegevens opgeven <span class="codeph"> beleid.licenseCaching.duration</span> en <span class="codeph"> policy.licenseCaching.endDate</span> tegelijkertijd. </p> </td> 
   </tr> 
   <tr rowsep="1" class="- topic/row "> 
    <td colname="1" class="- topic/entry "><span class="codeph"> beleid.anoniem</span> </td> 
@@ -183,7 +182,7 @@ ht-degree: 0%
   </tr> 
   <tr rowsep="1" class="- topic/row "> 
    <td colname="1" class="- topic/entry "><span class="+ topic/ph pr-d/codeph codeph">policy.allowedAIRApplication.n</span> </td> 
-   <td colname="2" class="- topic/entry "> <p class="- topic/p ">Een lijst van gewenste personen van niet-Flash-toepassingen (Adobe AIR, iOS, Android, enz.) die beveiligde inhoud mogen afspelen. De eigenschap moet de volgende notatie gebruiken: <span class="+ topic/ph pr-d/codeph codeph">pubId</span>[:<span class="+ topic/ph pr-d/codeph codeph">appId</span>[:[<span class="+ topic/ph pr-d/codeph codeph">min</span>]:[<span class="+ topic/ph pr-d/codeph codeph">max</span>]] </p> </td> 
+   <td colname="2" class="- topic/entry "> <p class="- topic/p ">Een lijst van gewenste personen van toepassingen die geen Flash zijn (Adobe AIR, iOS, Android, enz.) die beveiligde inhoud mogen afspelen. De eigenschap moet de volgende notatie gebruiken: <span class="+ topic/ph pr-d/codeph codeph">pubId</span>[:<span class="+ topic/ph pr-d/codeph codeph">appId</span>[:[<span class="+ topic/ph pr-d/codeph codeph">min</span>]:[<span class="+ topic/ph pr-d/codeph codeph">max</span>]] </p> </td> 
   </tr> 
   <tr rowsep="1" class="- topic/row "> 
    <td colname="1" class="- topic/entry "><span class="+ topic/ph pr-d/codeph codeph">policy.allowedSWFApplication.n</span> </td> 
@@ -192,7 +191,7 @@ ht-degree: 0%
       <li id="li_3E4A47D925C24834A2C25BC5943279D4"><span class="+ topic/ph pr-d/codeph codeph">URL</span> </li> 
       <li id="li_9A7CAF081C5F488FB5CDA6D38C5552F6"><span class="+ topic/ph pr-d/codeph codeph">file=swf_file</span> </li> 
       <li id="li_E10EA4223137489CBE4015DE999F7154"><span class="codeph">time=max_time_to_verify</span> </li> 
-     </ul> <i class="+ topic/ph hi-d/i ">swf_file</i> het SWF-bestand is dat wordt gebruikt om de hash te berekenen, en <i class="+ topic/ph hi-d/i ">max_time_to_verify</i> Dit is de maximale tijd in seconden die nodig is om de SWF te downloaden en te controleren. </p> </td> 
+     </ul> <i class="+ topic/ph hi-d/i ">swf_file</i> het SWF-bestand is dat wordt gebruikt om de hash te berekenen, en <i class="+ topic/ph hi-d/i ">max_time_to_verify</i> is de maximumtijd in seconden die is toegestaan voor het downloaden en controleren van de SWF om te voltooien. </p> </td> 
   </tr> 
   <tr rowsep="0" class="- topic/row "> 
    <td colname="1" class="- topic/entry "><span class="+ topic/ph pr-d/codeph codeph">policy.license.customProp.n</span> </td> 

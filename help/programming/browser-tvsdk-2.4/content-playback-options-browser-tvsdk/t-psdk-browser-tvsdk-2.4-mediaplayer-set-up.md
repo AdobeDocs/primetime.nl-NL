@@ -1,8 +1,7 @@
 ---
 description: Een MediaPlayer-object kapselt het gedrag en de functionaliteit van een mediaspeler in.
 title: De MediaPlayer instellen
-exl-id: f492b2bb-3280-4306-ac4b-8b8d0fd68409
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '91'
 ht-degree: 0%
@@ -19,7 +18,7 @@ Een MediaPlayer-object kapselt het gedrag en de functionaliteit van een mediaspe
    var player = new AdobePSDK.MediaPlayer();
    ```
 
-1. Een `MediaPlayerView` instantie:
+1. Een `MediaPlayerView` -instantie:
 
    ```js
    var view = new AdobePSDK.MediaPlayerView(container);
@@ -39,7 +38,7 @@ Een MediaPlayer-object kapselt het gedrag en de functionaliteit van een mediaspe
    </div>
    ```
 
-   Bel:
+   Bellen:
 
    ```js
    var view = new  
@@ -49,13 +48,13 @@ Een MediaPlayer-object kapselt het gedrag en de functionaliteit van een mediaspe
          document.getElementById("videoDiv"));  
    ```
 
-1. Voeg uw `MediaPlayerView` -instantie `MediaPlayer` instantie:
+1. Voeg uw `MediaPlayerView` -instantie `MediaPlayer` -instantie:
 
    ```js
    player.view = view;
    ```
 
-1. Aangepaste besturingselementen koppelen `div` -element naar uw MediaPlayer-instantie.
+1. Aangepaste besturingselementen bijvoegen `div` -element naar uw MediaPlayer-instantie.
 
    Bijvoorbeeld in HTML:
 
@@ -67,7 +66,7 @@ Een MediaPlayer-object kapselt het gedrag en de functionaliteit van een mediaspe
    </div>
    ```
 
-   Bel:
+   Bellen:
 
    ```js
    if (typeof player.getView() !== 'undefined') { 

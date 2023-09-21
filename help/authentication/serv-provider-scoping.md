@@ -1,8 +1,7 @@
 ---
 title: Scoping serviceprovider
 description: Scoping serviceprovider
-exl-id: 730c43e1-46c0-4eec-b562-b1ad93cce6d3
-source-git-commit: bfc3ba55c99daba561255760baf273b6538a3c6e
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '313'
 ht-degree: 0%
@@ -31,7 +30,7 @@ De authentificatie van Adobe Primetime steunt de volgende twee manieren om SP sc
 
 >[!NOTE]
 >
->De &quot;aanvrager-id&quot; is hoe Adobe Primetime-verificatie verwijst naar het netwerkmerk van de programmeur (bijvoorbeeld: &quot;CNN&quot; is een van de merken van het Turner-netwerk).
+>De &quot;identiteitskaart van de Aanvrager&quot;is hoe de authentificatie van Adobe Primetime naar het netwerkmerk van de Programmer verwijst (bijvoorbeeld: &quot;CNN&quot;is één van de merken van het netwerk van Turner).
 
 ### SAML-uitgiftebenadering {#saml-issuer-approach}
 

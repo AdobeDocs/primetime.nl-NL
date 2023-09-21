@@ -1,8 +1,7 @@
 ---
 description: U kunt uw eigen inhoudsoplossers implementeren op basis van de standaardoplossers.
 title: Een aangepaste contentoplosser implementeren
-exl-id: 96468f6d-80ad-4721-8ed3-4dbfa2a64b9e
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '241'
 ht-degree: 0%
@@ -52,7 +51,7 @@ Wanneer TVSDK een nieuwe kans detecteert, doorloopt het de geregistreerde conten
    mediaPlayer.registerAdClientFactory(advertisingFactory);
    ```
 
-1. Een `AdvertisingMetadata` als volgt naar TVSDK verwijzen:
+1. Een `AdvertisingMetadata` als volgt naar TVSDK te verwijzen:
    1. Een `AdvertisingMetadata` object en `MetadataNode` object.
    1. Sla de `AdvertisingMetadata` object naar `MetadataNode`.
 
@@ -62,7 +61,7 @@ Wanneer TVSDK een nieuwe kans detecteert, doorloopt het de geregistreerde conten
                   advertisingMetadata);
    ```
 
-1. Maak een aangepaste ad resolver-klasse die de klasse `ContentResolver` klasse.
+1. Een aangepaste ad resolver-klasse maken die de klasse `ContentResolver` klasse.
    1. Overschrijf deze beveiligde functie in de aangepaste en oplosser:
 
       ```java
@@ -101,7 +100,6 @@ Wanneer TVSDK een nieuwe kans detecteert, doorloopt het de geregistreerde conten
       metadata.setValue("NATIVE_ERROR_CODE", exception.getCause().toString()); 
       error.setMetadata(metadata);
       ```
-
 
 <!--<a id="example_4F0D7692A92E480A835D6FDBEDBE75E7"></a>-->
 

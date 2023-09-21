@@ -1,8 +1,7 @@
 ---
 title: Tijdelijke controle voor speciale acties
 description: Tijdelijke controle voor speciale acties
-exl-id: 705c1ba9-0430-4e3b-add1-d9e4da3f82d1
-source-git-commit: bfc3ba55c99daba561255760baf273b6538a3c6e
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '1523'
 ht-degree: 0%
@@ -88,7 +87,7 @@ Voor de stromen van de Pass van de Promotie Temp, communiceren de authentificati
 
 Wanneer een Preflight- of pre-autorisatieverzoek wordt ingediend voor een MVPD voor een tijdelijke controle van promoties, bevat de corresponderende geretourneerde Preflight-reactie de volledige lijst met bronnen van de Preflight-aanvraag als Preflight geslaagd.
 
-De logica achter dit alles is: de toelatingsvoorwaarden voor een tijdelijke promotieinspectie zijn gebaseerd op een beperking van tijd en hulpbronnenaantal in plaats van op specifieke middelen. Meer specifiek, zolang de tijdbeperking wordt voldaan en zolang de middelgrens niet wordt overschreden, zullen de geroepen middelen worden toegelaten.
+De logica achter dit amendement is dat de toelatingsvoorwaarden voor een tijdelijke controle van promoties gebaseerd zijn op een beperking van tijd en hulpbronnenaantal in plaats van op specifieke middelen. Meer specifiek, zolang de tijdbeperking wordt voldaan en zolang de middelgrens niet wordt overschreden, zullen de geroepen middelen worden toegelaten.
 
 ### SSO {#sso}
 
@@ -96,13 +95,13 @@ SSO wordt niet toegelaten voor instanties van de Volwassening van de Temperatuur
 
 ### Afmelden {#logout}
 
-Alle tokens op een apparaat worden bij het afmelden verwijderd. Daarom zou het overschakelen van de Bevorderingstemperatuur Pass aan een regelmatige gebruiker-geselecteerde MVPD niet op deze implementatie moeten vertrouwen. De aanbeveling is om gebruik te maken van de `setSelectedProvider(null)` om de status van de toepassing te wissen en vervolgens de verificatiestroom opnieuw te starten, wat een betere gebruikerservaring heeft.
+Alle tokens op een apparaat worden bij het afmelden verwijderd. Daarom zou het overschakelen van de Bevorderingstemperatuur Pass aan een regelmatige gebruiker-geselecteerde MVPD niet op deze implementatie moeten baseren. De aanbeveling is om de `setSelectedProvider(null)` om de status van de toepassing te wissen en vervolgens de verificatiestroom opnieuw te starten, wat een betere gebruikerservaring heeft.
 
 ### Stroomdiagram voor promotietemperatuur {#promo-tempass-flowdia}
 
 ![Stroomdiagram voor promotietemperatuur](assets/promo-temp-pass-flow.png)
 
-*Afbeelding: Volwassenstroom voor promotietemperatuur*
+*Afbeelding: Tijdelijke doorstroming voor promotiedoeleinden*
 
 ## Tijdelijke controle voor bevordering uitvoeren {#impl-promo-tempass}
 
@@ -121,9 +120,9 @@ Voor een tijdelijke controle van de promotietest zijn de volgende functies aan d
 >[!IMPORTANT]
 >Adobe slaat geen Persoonlijk Identificeerbare Informatie (PII) op. Daarom moet de programmeur een knoeiboel over de unieke gebruiker plaatsen verstrekte informatie over de authentificatie APIs Primetime.
 
-**Onderbreking van informatie van gebruikers-id**
+**Onderbreking van de informatie van de gebruikersidentificatie**
 
-Adobe raadt u aan de **SHA-2** familie of specifieke **SHA-256**, **SHA-512** functies op gegevens voordat deze naar Adobe worden verzonden.
+Adobe raadt u aan de **SHA-2** familie of specifieke **SHA-256**, **SHA-512** functies op gegevens voordat deze naar de Adobe worden verzonden.
 
 Bijvoorbeeld: **SHA-256** over **&quot;user@domain.com&quot;** is **&quot;f7ee5ec7312165148b69fcca1d29075b14b8aef0b5048a332b18b88d09069fb7&quot;**.
 
@@ -148,7 +147,7 @@ $ curl -X DELETE -H "Authorization:Bearer H4j7cF3GtJX81BrsgDa10GwSizVz" "https:/
 | Adobe Primetime-verificatieclients | Tijdelijke controle voor speciale acties | Gereedschap herstellen | Ondersteunt toegewezen antwoordcode/clientfout |
 |:--------------------------------------:|:---------------------:|:----------:|:-----------------------------------------------:|
 | JS Access Enabler | JA | JA | JA (vanaf versie 3.0.0) |
-| iOS voor native client | JA | JA | JA (vanaf v 1.10) |
+| IOS voor native client | JA | JA | JA (vanaf v 1.10) |
 | Systeemeigen clientAndroid | JA | JA | JA |
 | Clientloze API | JA | JA | NEE |
 
@@ -161,7 +160,7 @@ In dit gedeelte worden de beperkingen beschreven die gelden voor de huidige impl
 
 **Slimme apparaten zonder unieke apparaat-id**
 
-Niet alle toepassingen voor slimme apparaten kunnen een unieke apparaat-id leveren. Bij gebrek aan één, kan de authentificatie van Adobe Primetime UUID gebruiken die door de Dienst van de Code van de Registratie van de Adobe als Unieke identiteitskaart van het Apparaat wordt geproduceerd. Dit betekent dat als de gebruiker zich afmeldt, de verificatie- en autorisatietokens worden verwijderd. Wanneer de gebruiker opnieuw probeert te verifiëren, kan de gebruiker dit keer met andere gebruikersgegevens (bijvoorbeeld een e-mail) opnieuw autoriseren. Adobe raadt u aan een UI-flow toe te voegen waarmee een gebruiker het systeem niet kan &#39;misleiden&#39; en logica toe te voegen om te bepalen of het een nieuwe gebruiker is die een proefversie of een bestaande proefversie aanvraagt.
+Niet alle toepassingen voor slimme apparaten kunnen een unieke apparaat-id leveren. Bij gebrek aan één, kan de authentificatie van Adobe Primetime UUID gebruiken die door de Dienst van de Code van de Registratie van de Adobe als Unieke Apparaat ID wordt geproduceerd. Dit betekent dat als de gebruiker zich afmeldt, de verificatie- en autorisatietokens worden verwijderd. Wanneer de gebruiker opnieuw probeert te verifiëren, kan de gebruiker dit keer met andere gebruikersgegevens (bijvoorbeeld een e-mail) opnieuw autoriseren. Adobe raadt aan een UI-flow toe te voegen die een gebruiker niet toestaat het systeem voor de gek te houden en logica toe te voegen om te bepalen of het een nieuwe gebruiker betreft die een proefversie of een bestaande proefversie aanvraagt.
 
 **Temperatuurcontrole opnieuw instellen/leegmaken**
 

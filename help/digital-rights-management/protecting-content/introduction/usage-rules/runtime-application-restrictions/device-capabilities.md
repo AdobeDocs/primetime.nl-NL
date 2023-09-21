@@ -2,8 +2,7 @@
 title: Apparaatmogelijkheden vereist om beveiligde inhoud af te spelen
 description: Apparaatmogelijkheden vereist om beveiligde inhoud af te spelen
 copied-description: true
-exl-id: 540fbb53-ec1a-43be-b51b-9937ed31e384
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '129'
 ht-degree: 0%
@@ -34,7 +33,7 @@ De volgende kenmerken kunnen de mogelijkheden van het apparaat identificeren:
    <td colname="1" class="- topic/entry "> <p class="- topic/p ">Hoofdmap van vertrouwen voor hardware </p> </td> 
    <td colname="2" class="- topic/entry "> <p class="- topic/p ">"true" of "false" </p> </td> 
    <td colname="3" class="- topic/entry "> <p class="- topic/p ">Exacte overeenkomst </p> </td> 
-   <td colname="4" class="- topic/entry "> <p class="- topic/p ">Indien waar (true), moet het apparaat een vertrouwensbasis voor de hardware hebben. </p> </td> 
+   <td colname="4" class="- topic/entry "> <p class="- topic/p ">Indien waar (true), moet het apparaat beschikken over een vertrouwenwekkende hardwarebron. </p> </td> 
   </tr> 
  </tbody> 
 </table>

@@ -2,8 +2,7 @@
 title: Terminologie en kernbegrippen
 description: Terminologie en kernbegrippen
 copied-description: true
-exl-id: 29d83bf8-5f4e-4651-a523-4472942c09a7
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '672'
 ht-degree: 0%
@@ -32,7 +31,7 @@ De *Inhoudscoderingssleutel* (CEK) is een cryptografische sleutel die wordt gebr
 
 **Inhoud verpakken**
 
-*Inhoud verpakken* zijn organisaties die inhoud verpakken voor gebruik met Adobe Access. Eigenaren of distributeurs van inhoud kunnen ervoor kiezen hun eigen inhoud in een pakket te plaatsen, of ze kunnen de services van een derde partij inschrijven om hun inhoud te verpakken en deze elektronisch via internet te distribueren.
+*Inhoud verpakken* zijn organisaties die inhoud verpakken voor gebruik met de Toegang van de Adobe. Eigenaren of distributeurs van inhoud kunnen ervoor kiezen hun eigen inhoud in een pakket te plaatsen, of ze kunnen de services van een derde partij inschrijven om hun inhoud te verpakken en deze elektronisch via internet te distribueren.
 
 **Digitaal certificaat**
 
@@ -44,7 +43,7 @@ A *digitale handtekening* bindt de identiteit van de uitgever aan de inhoud die 
 
 **Distributeur**
 
-*Distributeurs* (ook aangeduid als *inhoudsdistributeurs* of* detailhandelaren*) zijn bedrijfsentiteiten die distributierechten van eigenaars van inhoud veiligstellen om inhoud te publiceren en aan consumenten te verspreiden. In sommige gevallen is dezelfde entiteit zowel de eigenaar van de inhoud als de distributeur van de inhoud.
+*Distributeurs* (ook aangeduid als *inhoudsdistributeurs* of* detailhandelaren*) zijn bedrijfsentiteiten die distributierechten van eigenaars van inhoud veiligstellen om inhoud te publiceren en aan consumenten te verspreiden. In sommige gevallen is dezelfde entiteit zowel de eigenaar als de distributeur van inhoud.
 
 **DRM-metagegevens**
 
@@ -52,7 +51,7 @@ Informatie die de client (Adobe® Flash® Player, Adobe® AIR® runtime en Prime
 
 **Licentie**
 
-Een *license *is een gegevensstructuur die een gecodeerde sleutel bevat die wordt gebruikt om inhoud te decrypteren verbonden aan een beleid. De licentie wordt gegenereerd door Adobe Access wanneer de consument om inhoud vraagt en is gebonden aan de computer van de consument. Met een beleid als referentie definieert de licentie de rechten die beschikbaar zijn voor de consument die inhoud downloadt. De consument moet een licentie krijgen om de inhoud te kunnen bekijken.
+Een *license *is een gegevensstructuur die een gecodeerde sleutel bevat die wordt gebruikt om inhoud te decrypteren verbonden aan een beleid. De licentie wordt gegenereerd door Adobe Access wanneer de consument om inhoud vraagt en is gebonden aan de computer van de consument. Met een beleid als referentie definieert de licentie de rechten waarover de consument beschikt die inhoud downloadt. De consument moet een licentie krijgen om de inhoud te kunnen bekijken.
 
 **Vergunning verkrijgen**
 
@@ -62,13 +61,13 @@ Een *license *is een gegevensstructuur die een gecodeerde sleutel bevat die word
 
 De* Licentieserver *kan worden geïntegreerd in de facturerings- en verificatiesystemen van de distributeur of serviceprovider en kan bedrijfslogica bevatten om te controleren of de consument die om beveiligde inhoud verzoekt, gemachtigd is om de inhoud te bekijken. Als de gebruiker gemachtigd is om tot de inhoud toegang te hebben, geeft de Server van de Vergunning een vergunning uit die de runtime cliënt toestaat om inhoud te decrypteren en te spelen die op het beleid en de rechten wordt gebaseerd verbonden aan de rekening van de consument.
 
-U moet een Server van de Vergunning tot stand brengen en opstellen gebruikend de Adobe Toegang SDK.
+U moet een Server van de Vergunning tot stand brengen en opstellen gebruikend de Toegang SDK van de Adobe.
 
 **Beleid**
 
 A *beleid* is een container voor de gebruiksregels die bepalen hoe de consument beschermde inhoud kan gebruiken. Het beleid wordt onafhankelijk van de inhoud gedefinieerd die wordt beveiligd. Een beleid dwingt geen rechten af tot het aan de inhoud door de vergunning wordt gebonden. Een beleid maakt een lijst van de reeks gebruiksregels, betekenend de toestemmingen of de &quot;rechten&quot;die de consumenten aan de inhoud moeten hebben zij verwerven. Eigenaars van inhoud kunnen bijvoorbeeld een beleid maken dat ervoor zorgt dat beveiligde inhoud alleen voor een bepaalde periode toegankelijk is voor consumenten. Dit beleid wordt vervolgens toegepast op alle inhoud waarvoor de eigenaar van de inhoud deze beperking wil afdwingen.
 
-Het beleid wordt gecreeerd gebruikend Adobe Access SDK.
+Het beleid wordt gecreeerd gebruikend de Toegang SDK van de Adobe.
 
 **Beveiligde inhoud**
 

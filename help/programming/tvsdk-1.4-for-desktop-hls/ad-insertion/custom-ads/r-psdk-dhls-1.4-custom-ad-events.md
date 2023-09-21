@@ -1,8 +1,7 @@
 ---
 description: De TVSDK-speler verzendt gebeurtenissen om de status van de aangepaste advertentie en het laden weer te geven of om een advertentie te negeren die te lang duurt om te laden of die fouten bevat. Deze gebeurtenissen worden gedefinieerd in events.CustomAdEvents.
 title: Aangepaste ad-events
-exl-id: 44f32584-7f6c-4071-82b6-9cc9584418ee
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '175'
 ht-degree: 0%
@@ -39,7 +38,7 @@ De TVSDK-speler verzendt gebeurtenissen om de status van de aangepaste advertent
   </tr> 
   <tr> 
    <td colname="col1"> <span class="codeph"> AdPaused </span> </td> 
-   <td colname="col2"> De aangepaste advertentie is gepauzeerd. </td> 
+   <td colname="col2"> De aangepaste advertentie is onderbroken. </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <span class="codeph"> AdResumed </span> </td> 
@@ -55,7 +54,7 @@ De TVSDK-speler verzendt gebeurtenissen om de status van de aangepaste advertent
   </tr> 
   <tr> 
    <td colname="col1"> AdStarted </td> 
-   <td colname="col2"> De aangepaste advertentie is begonnen met afspelen en wordt weergegeven aan de viewer.  </td> 
+   <td colname="col2"> De aangepaste advertentie wordt afgespeeld en wordt weergegeven aan de viewer.  </td> 
   </tr> 
   <tr> 
    <td colname="col1"> AdStopped </td> 

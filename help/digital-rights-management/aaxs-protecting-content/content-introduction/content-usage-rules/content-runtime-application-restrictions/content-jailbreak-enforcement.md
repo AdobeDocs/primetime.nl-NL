@@ -2,8 +2,7 @@
 title: Jailbreak Enforcement (vereist Adobe Primetime)
 description: Jailbreak Enforcement (vereist Adobe Primetime)
 copied-description: true
-exl-id: d7b931b5-0adb-42c8-8f24-340f385ffb4e
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '82'
 ht-degree: 0%
@@ -16,4 +15,4 @@ Op platforms die ondersteuning bieden voor jailbreak-detectie (zoals mobiele And
 
 >[!NOTE]
 >
->Deze gebruiksregel wordt gesteund door de cliëntversie 4.0 van de Toegang van de Adobe, maar heeft geen effect op platforms die jailbreak opsporing niet steunen. Het gedrag bij oudere clients is afhankelijk van de minimale clientversie die door de licentieserver wordt ondersteund.
+>Deze gebruiksregel wordt gesteund door de cliëntversie van de Toegang van de Adobe 4.0 en hoger, maar heeft geen effect op platforms die geen jailbreak opsporing steunen. Het gedrag bij oudere clients is afhankelijk van de minimale clientversie die door de licentieserver wordt ondersteund.

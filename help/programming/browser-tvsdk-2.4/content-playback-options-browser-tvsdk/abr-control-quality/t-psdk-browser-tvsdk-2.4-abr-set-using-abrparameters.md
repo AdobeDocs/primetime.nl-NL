@@ -1,19 +1,18 @@
 ---
 description: U kunt waarden voor ABR-besturingselementen alleen instellen met ABRControlParameters, maar u kunt op elk gewenst moment een nieuwe waarde maken.
-title: Aangepaste bitsnelheden configureren met ABRControlParameters
-exl-id: 53ca8516-b449-46c8-baa9-9d0d5800b3c8
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+title: Aangepaste bitsnelheden configureren met behulp van ABRControlParameters
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '107'
 ht-degree: 0%
 
 ---
 
-# Aangepaste bitsnelheden configureren met ABRControlParameters{#configure-adaptive-bit-rates-using-abrcontrolparameters}
+# Aangepaste bitsnelheden configureren met behulp van ABRControlParameters{#configure-adaptive-bit-rates-using-abrcontrolparameters}
 
 U kunt waarden voor ABR-besturingselementen alleen instellen met ABRControlParameters, maar u kunt op elk gewenst moment een nieuwe waarde maken.
 
-De volgende voorwaarden zijn van toepassing op `ABRControlParameters`:
+Voor `ABRControlParameters`:
 
 * U moet waarden opgeven voor alle parameters tijdens de constructietijd.
 * U kunt afzonderlijke waarden niet wijzigen na de constructietijd.

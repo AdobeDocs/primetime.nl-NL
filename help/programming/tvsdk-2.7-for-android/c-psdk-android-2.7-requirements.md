@@ -1,17 +1,16 @@
 ---
-description: TVSDK heeft specifieke vereisten voor mediacontent, manifestcontent, DRM en softwareversies.
-title: Vereisten
-exl-id: 8c252761-eee3-4fec-a85f-a38c1d9be9cb
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+description: TVSDK heeft specifieke vereisten voor media-, manifestinhoud, DRM- en softwareversies.
+title: Eisen
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '310'
 ht-degree: 0%
 
 ---
 
-# Vereisten {#requirements}
+# Eisen {#requirements}
 
-TVSDK heeft specifieke vereisten voor mediacontent, manifestcontent, DRM en softwareversies.
+TVSDK heeft specifieke vereisten voor media-, manifestinhoud, DRM- en softwareversies.
 
 ## Systeem- en softwarevereisten {#section_96E5B079900246E78682AE44D3F23068}
 
@@ -30,18 +29,18 @@ Controleer de beperkingen en vereisten voor streams en afspeellijsten (manifests
 
 | Adobe Access DRM | Als de DRM-beveiligde stream meerdere bitsnelheden (MBR) heeft, moet de DRM-coderingssleutel die voor de MBR wordt gebruikt, gelijk zijn aan de sleutel die in alle bitsnelheidstreams wordt gebruikt. |
 |---|---|
-| Variantmanifesten toevoegen | Must have the same bit-rate renditions as the renditions of the main content. |
+| Variantmanifesten toevoegen | De weergaven met de bitsnelheid moeten dezelfde zijn als de weergaven van de hoofdinhoud. |
 
-## #EXT-X-VERSION requirements {#section_49A33664651A46EC9ED888BA9C1C3F6D}
+## vereisten voor #EXT-X-VERSIE {#section_49A33664651A46EC9ED888BA9C1C3F6D}
 
-De versie van `#EXT-X-VERSION` in het manifestbestand van [!DNL .m3u8] heeft invloed op welke functies beschikbaar zijn voor uw applicatie en welke `EXT` tags geldig zijn.
+De versie van `#EXT-X-VERSION` het [!DNL .m3u8] manifestbestand bepaalt welke functies voor uw toepassing beschikbaar zijn en welke `EXT` tags geldig zijn.
 
-Hier volgt informatie over de tag `#EXT-X-VERSION`, die de versie van het HLS-protocol aangeeft:
+Hier volgt wat informatie over de `#EXT-X-VERSION` tag, die de HLS-protocolversie aangeeft:
 
-* De versie moet overeenkomen met de functies en kenmerken in de HLS-afspeellijst; anders kunnen afspeelfouten optreden. Zie voor meer informatie [HTTP Live Streaming-specificatie](https://datatracker.ietf.org/doc/draft-pantos-http-live-streaming/?include_text=1).
+* De versie moet overeenkomen met de functies en kenmerken in de HLS-afspeellijst; Anders kunnen er afspeelfouten optreden. Zie voor meer informatie [HTTP Live Streaming-specificatie](https://datatracker.ietf.org/doc/draft-pantos-http-live-streaming/?include_text=1).
 * Adobe raadt aan ten minste versie 2 van HLS te gebruiken voor afspelen in op TVSDK gebaseerde clients.
 
-   De cliënten en de servers moeten de versies op de volgende manier uitvoeren:
+  De cliënten en de servers moeten de versies op de volgende manier uitvoeren:
 
 <table frame="all" colsep="1" rowsep="1" id="table_62EB98EDD9DE49EC84CB1C7D59BC40E6"> 
  <thead> 
@@ -53,17 +52,17 @@ Hier volgt informatie over de tag `#EXT-X-VERSION`, die de versie van het HLS-pr
  <tbody> 
   <tr rowsep="1"> 
    <td colname="1"> <span class="codeph"> EXT-X-VERSIE:2 </span> </td> 
-   <td colname="2"> De eigenschap IV van de <span class="codeph"> EXT-X-KEY </span> tag. </td> 
+   <td colname="2"> De eigenschap IV van de <span class="codeph"> EXT-X-KEY </span> -tag. </td> 
   </tr> 
   <tr rowsep="1"> 
-   <td colname="1"> <span class="codeph"> EXT-X-VERSION:3 </span> </td> 
+   <td colname="1"> <span class="codeph"> EXT-X-VERSIE:3 </span> </td> 
    <td colname="2"> 
     <ul id="ul_C9500D3F934848639C204BF248F139FF"> 
-     <li id="li_535A7E3FABCB46FE872A7EA5DE2A1784">Drijvende-komma <span class="codeph"> EXTINF </span> duurwaarden <p>De duurtags ( <span class="codeph"> #EXTINF: </span>&lt;duration&gt;,&lt;title&gt;) in versie 2 werden afgerond naar gehele waarden. Version 3 and above require durations to be specified exactly, in floating point. </p> </li> 
+     <li id="li_535A7E3FABCB46FE872A7EA5DE2A1784">Zwevende-punt <span class="codeph"> EXTINF-duurwaarden </span> <p>De tags voor de duur ( <span class="codeph"> #EXTINF: </span>&lt;duration&gt;,&lt;title&gt;) in versie 2 werden afgerond op gehele getallen. &lt;/title&gt;&lt;/duration&gt; Voor versie 3 en hoger moet de tijdsduur exact worden opgegeven, in een zwevend punt. </p> </li> 
     </ul> </td> 
   </tr> 
   <tr rowsep="0"> 
-   <td colname="1"> <span class="codeph"> EXT-X-VERSION:4 </span> </td> 
+   <td colname="1"> <span class="codeph"> EXT-X-VERSIE:4 </span> </td> 
    <td colname="2"> 
     <ul id="ul_3355A6CBBE2141DDB92660BB4B604D70"> 
      <li id="li_5E73D41AF6DC4CEE88D6C029FFCFC350">De <span class="codeph"> EXT-X-BYTERANGE </span> tag </li> 

@@ -1,21 +1,20 @@
 ---
-title: Hoe te om de stromen van de Vergunning van de Authentificatie te testen gebruikend Adobe API testplaats
-description: Hoe te om de stromen van de Vergunning van de Authentificatie te testen gebruikend Adobe API testplaats
-exl-id: 04af4aed-35e4-44cb-98ce-7643165a8869
-source-git-commit: bfc3ba55c99daba561255760baf273b6538a3c6e
+title: Verificatie- en autorisatiestromen testen met de API-testsite van de Adobe
+description: Verificatie- en autorisatiestromen testen met de API-testsite van de Adobe
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '318'
 ht-degree: 0%
 
 ---
 
-# Hoe te om de stromen van de Vergunning van de Authentificatie te testen gebruikend de plaats van de Test van Adobe API {#How-to-test-auth-flows}
+# Verificatie- en autorisatiestromen testen met de API-testsite van de Adobe {#How-to-test-auth-flows}
 
 >[!NOTE]
 >
 >De inhoud op deze pagina wordt alleen ter informatie verstrekt. Voor het gebruik van deze API is een huidige licentie van Adobe vereist. Ongeautoriseerd gebruik is niet toegestaan.
 
-Om de AuthN- en AuthZ-stromen te testen, hebben we een **API-testsite** die u ter beschikking staat. Ons ondersteuningsteam zal u met alle plezier van uw aanmeldingsgegevens voorzien. U kunt contact met ons opnemen op **support@tve.zendesk.com**.
+Om de AuthN en AuthZ stromen te testen, hebben wij voorbereid een **API-testsite** die u ter beschikking staat. Ons ondersteuningsteam zal u met alle plezier van uw aanmeldingsgegevens voorzien. U kunt contact met ons opnemen op **support@tve.zendesk.com**.
 
 
 ## Deel I {#part-I}
@@ -27,7 +26,7 @@ Voor het testen tegen de RELEASE-omgeving gaat u rechtstreeks naar deel II.  Voo
 Voer de volgende stappen uit nadat u deel I hebt voltooid:
 
 
-1. Webpagina openen: [Testen van API-test](https://sp.auth-staging.adobe.com/apitest/api.html).
+1. Webpagina openen: [Testen van API](https://sp.auth-staging.adobe.com/apitest/api.html).
 1. Toegangsfunctie laden vanaf de volgende URL:
    * [JavaScript voor opmaken van bestanden inschakelen](https://entitlement.auth-staging.adobe.com/entitlement/js/AccessEnabler.js).
    * OF

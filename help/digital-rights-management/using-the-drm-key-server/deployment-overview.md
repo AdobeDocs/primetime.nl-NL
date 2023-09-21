@@ -2,8 +2,7 @@
 title: Overzicht van Primetime DRM Key Server implementeren
 description: Overzicht van Primetime DRM Key Server implementeren
 copied-description: true
-exl-id: d70e8315-ed35-4159-842b-5066a2b1c4f0
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '1075'
 ht-degree: 0%
@@ -14,7 +13,7 @@ ht-degree: 0%
 
 Voordat u de Primetime DRM-sleutelserver implementeert, moet u controleren of u de vereiste versies van Java en Tomcat hebt geïnstalleerd. Zie, [Vereisten voor DRM-sleutelserver](../../digital-rights-management/using-the-drm-key-server/requirements.md).
 
-Het downloaden van Primetime DRM Key Server omvat [!DNL faxsks.war]. Als u dit WAR-bestand wilt implementeren, kopieert u het bestand naar Tomcat&#39;s [!DNL webapps] directory. Als u eerder het WAR-bestand hebt geïmplementeerd, moet u mogelijk de onverpakte WAR-map handmatig verwijderen. [!DNL faxsks] in Tomcat [!DNL webapps] directory). Als u wilt voorkomen dat Tomcat WAR-bestanden uitpakt, bewerkt u de opdracht [!DNL server.xml] bestand in Tomcat [!DNL conf] en stelt de `unpackWARs` kenmerk naar `false`.
+Het downloaden van Primetime DRM Key Server omvat [!DNL faxsks.war]. Als u dit WAR-bestand wilt implementeren, kopieert u het bestand naar Tomcat&#39;s [!DNL webapps] directory. Als u eerder het WAR-bestand hebt geïmplementeerd, moet u mogelijk de onverpakte WAR-map handmatig verwijderen. [!DNL faxsks] in Tomcat&#39;s [!DNL webapps] directory). Als u wilt voorkomen dat Tomcat WAR-bestanden uitpakt, bewerkt u de opdracht [!DNL server.xml] bestand in Tomcat&#39;s [!DNL conf] en stelt de `unpackWARs` kenmerk naar `false`.
 
 De Primetime DRM-sleutelserver gebruikt optioneel een platformspecifieke bibliotheek (`jsafe.dll` in Windows of `libjsafe.so` in Linux) voor betere prestaties. Kopieer de juiste bibliotheek voor uw platform van `thirdparty/cryptoj/platform` naar een locatie die door de `PATH` omgevingsvariabele (of `LD_LIBRARY_PATH` in Linux).
 
@@ -52,7 +51,7 @@ Generate Certificate:
  openssl x509 -req -days 365 -in server.csr -signkey server.key -out server.cer
 ```
 
-Wanneer ertoe aangezet voor de gemeenschappelijke naam, gebruik volledig - gekwalificeerde Naam van het Domein van uw server (FQDN).
+Wanneer ertoe aangezet voor de gemeenschappelijke naam, gebruik FQDN (Fully Qualified Domain Name) van uw server.
 
 Kopiëren [!DNL server.cer], en [!DNL server.key] naar de Tomcat-directory. Geef de volgende connector op in [!DNL conf/server.xml]:
 
@@ -70,7 +69,7 @@ Kopiëren [!DNL server.cer], en [!DNL server.key] naar de Tomcat-directory. Geef
 
 U kunt de volgende twee eigenschappen van het Java-systeem instellen om de locatie van configuratie- en logbestanden voor de Primetime DRM-sleutelserver te wijzigen:
 
-* `KeyServer.ConfigRoot` - Deze map bevat alle configuratiebestanden voor de Primetime DRM-sleutelserver. Voor meer informatie over de inhoud van deze bestanden raadpleegt u [Sleutelserverconfiguratiebestanden](#key-server-configuration-files). Indien niet ingesteld, is de standaardwaarde [!DNL CATALINA_BASE/keyserver].
+* `KeyServer.ConfigRoot` - Deze map bevat alle configuratiebestanden voor de Primetime DRM-sleutelserver. Zie voor meer informatie over de inhoud van deze bestanden [Sleutelserverconfiguratiebestanden](#key-server-configuration-files). Indien niet ingesteld, is de standaardwaarde [!DNL CATALINA_BASE/keyserver].
 
 * `KeyServer.LogRoot` - Dit is een logmap die de toepassingslogbestanden van iOS Key Server bevat. Indien niet ingesteld, is de standaardwaarde gelijk aan `KeyServer.ConfigRoot`
 
@@ -87,7 +86,7 @@ JAVA_OPTS=-DKeyServer.ConfigRoot=”absolute-path-to-config-folder”
 
 Om zeer belangrijke verzoeken van Primetime DRM iOS en Xbox 360 cliënten te verwerken, moet de Belangrijkste Server van Primetime DRM met een reeks geloofsbrieven worden gevormd die door Adobe worden uitgegeven. Deze gegevens kunnen worden opgeslagen in PKCS#12 ( [!DNL .pfx]) of op een HSM.
 
-De [!DNL .pfx] bestanden kunnen overal worden gevonden, maar voor de eenvoudige configuratie raadt Adobe u aan de [!DNL .pfx] bestanden in de configuratiemap van de huurder. Zie voor meer informatie [Sleutelserverconfiguratiebestanden](#key-server-configuration-files).
+De [!DNL .pfx] bestanden kunnen overal worden gevonden, maar voor de eenvoudige configuratie wordt het aangeraden de [!DNL .pfx] bestanden in de configuratiemap van de huurder. Zie voor meer informatie [Sleutelserverconfiguratiebestanden](#key-server-configuration-files).
 
 ### HSM-configuratie {#section_13A19E3E32934C5FA00AEF621F369877}
 
@@ -145,7 +144,7 @@ U kunt alle dossierwegen in het dossier van de huurdersconfiguratie als of absol
 
 Alle configuratiebestanden van de huurder bevatten:
 
-* Sleutelserverreferenties - Geeft een of meer sleutelserverreferenties (certificaat en persoonlijke sleutel) aan die door Adobe zijn uitgegeven. Kan worden opgegeven als een pad naar een [!DNL .pfx] bestand en een wachtwoord, of een alias voor een referentie die is opgeslagen op een HSM. Verscheidene dergelijke geloofsbrieven kunnen hier, of als dossierwegen, of belangrijkste aliassen, of allebei worden gespecificeerd.
+* Sleutelserverreferenties - Geeft een of meer sleutelserverreferenties (certificaat en persoonlijke sleutel) aan die door de Adobe worden uitgegeven. Kan worden opgegeven als een pad naar een [!DNL .pfx] en een wachtwoord, of een alias voor een referentie die op HSM wordt opgeslagen. Verscheidene dergelijke geloofsbrieven kunnen hier, of als dossierwegen, of belangrijkste aliassen, of allebei worden gespecificeerd.
 
 De **iOS** Het configuratiebestand van de huurder bevat:
 

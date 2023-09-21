@@ -1,8 +1,7 @@
 ---
 description: Wanneer het afspelen een advertentie-einde bereikt, een advertentie-einde doorgeeft of eindigt in een advertentie-einde, definieert TVSDK een standaardgedrag voor het plaatsen van de huidige afspeelkop.
 title: Afspelen met advertenties aanpassen
-exl-id: 3e945113-f44f-4b53-b952-10307f8d2d2f
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '222'
 ht-degree: 0%
@@ -25,4 +24,4 @@ U kunt het gedrag voor het afspelen en afspelen op de volgende manieren aanpasse
 * Als een advertentie-einde aan de gebruiker wordt voorgesteld, toon geen extra advertenties voor een aantal notulen, zelfs als de gebruiker aan een nieuwe positie zoekt.
 * Als de inhoud na een paar minuten niet kan worden afgespeeld, start u de stream opnieuw of start u de stream over naar een andere bron voor dezelfde inhoud.
 
-   Als u tijdens de afspeelsessie van de failover de gebruiker de mogelijkheid wilt bieden om advertenties over te slaan en de vorige mislukte positie te herstellen, kunt u pre-roll- en/of mid-roll-advertenties uitschakelen. TVSDK biedt methoden om pre- en mid-roll-advertenties over te slaan.
+  Als u tijdens de afspeelsessie van de failover de gebruiker de mogelijkheid wilt bieden om advertenties over te slaan en de vorige mislukte positie te herstellen, kunt u pre-roll- en/of mid-roll-advertenties uitschakelen. TVSDK biedt methoden om pre- en mid-roll-advertenties over te slaan.

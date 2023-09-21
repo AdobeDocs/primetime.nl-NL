@@ -2,8 +2,7 @@
 title: Overzicht van licentieserver en gecontroleerde mappakketten
 description: Overzicht van licentieserver en gecontroleerde mappakketten
 copied-description: true
-exl-id: 1a355068-7ad6-4cc2-8447-49251dae3ff8
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '454'
 ht-degree: 0%
@@ -12,7 +11,7 @@ ht-degree: 0%
 
 # Overzicht van licentieserver en gecontroleerde mappakketten {#license-server-and-watched-folder-packager-overview}
 
-De server van de verwijzings implementatie kan u helpen een vergunningsserver tot stand brengen gebruikend de Adobe Toegang SDK. In deze implementatie worden gebruikers geverifieerd op basis van gebruikersinvoer in een database. De server bevat demonstratie-bedrijfslogica voor het afgeven van licenties. Het voert ook verenigbaarheidssteun voor de Server 1.0 en 1.5 van het Rights Management van de Media van Flash uit.
+De server van de verwijzings implementatie kan u helpen een vergunningsserver tot stand brengen gebruikend de Toegang SDK van de Adobe. In deze implementatie worden gebruikers geverifieerd op basis van gebruikersinvoer in een database. De server bevat demonstratie-bedrijfslogica voor het afgeven van licenties. Het voert ook verenigbaarheidssteun voor de Server 1.0 en 1.5 van het Rights Management van de Media van de Flash uit.
 
 De referentie-implementatieserver bevat ook een gecontroleerde mapimplementatie van de pakketsoftware. Deze component kan samen met de licentieserver of op een aparte computer worden geïmplementeerd. Met deze pakketimplementatie kunnen meerdere gecontroleerde mappen worden gemaakt. Wanneer inhoud in de gecontroleerde omslag wordt gelaten vallen, verpakt de pakketmanager automatisch de inhoud.
 
@@ -30,8 +29,8 @@ De voorbeeldcode van de Reference Implementation demonstreert de volgende functi
    * Gebruikend gegevensbestand om te bepalen of de gebruiker wordt gemachtigd om inhoud te bekijken
    * Lijsten met beleidsupdates gebruiken
    * Intrekkingslijsten voor computers gebruiken
-   * Een HSM- of PKCS12-bestand gebruiken om referenties op te slaan
-   * Wachtwoorden coderen die zijn opgegeven in eigenschappenbestand
+   * Referenties opslaan met een HSM- of PKCS12-bestand
+   * Wachtwoorden die zijn opgegeven in het eigenschappenbestand coderen
    * Het specificeren van veelvoudige vergunningsserver of vervoergeloofsbrieven (nadat de geloofsbrieven worden vernieuwd, worden de oude geloofsbrieven gehouden op de server zodat de bestaande inhoud kan worden verbruikt zonder het moeten opnieuw verpakken)
    * Het beperken van DRM/Runtime versies toegestaan om verzoeken aan de vergunningsserver te doen
    * Voorkeuren voor het terugdraaien van de client instellen
@@ -49,6 +48,6 @@ De voorbeeldcode van de Reference Implementation demonstreert de volgende functi
 * Packager Server:
 
    * Implementeren van een pakketimplementatie die automatisch inhoud verpakt die aan een gecontroleerde map is toegevoegd
-   * Een HSM- of PKCS12-bestand gebruiken om referenties op te slaan
-   * Wachtwoorden coderen die zijn opgegeven in eigenschappenbestand
+   * Referenties opslaan met een HSM- of PKCS12-bestand
+   * Wachtwoorden die zijn opgegeven in het eigenschappenbestand coderen
    * Packager configureren, beleid maken en lijsten met beleidsupdates maken met een AIR-toepassing

@@ -1,8 +1,7 @@
 ---
 description: Wanneer gebruikers snel vooruit of snel terugspoelen door de media, zijn zij in de truc spelwijze. Als u de speelmodus voor truc wilt inschakelen, moet u de afspeelsnelheid van MediaPlayer instellen op een andere waarde dan 1.
-title: Snel vooruitspoelen en terugspoelen
-exl-id: 58ed9a96-9617-4364-81d4-b404b23cf265
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+title: Snel vooruit en terugspoelen
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '202'
 ht-degree: 0%
@@ -54,4 +53,4 @@ U moet één waarde instellen om van snelheid te wisselen.
 
    * `AdobePSDK.PSDKEventType.RATE_PLAYING` wanneer het afspelen wordt hervat met de geselecteerde frequentie.
 
-      TVSDK verzendt beide gebeurtenissen wanneer de speler van de truc-spelmodus naar de normale afspeelmodus terugkeert.
+     TVSDK verzendt beide gebeurtenissen wanneer de speler van de truc-spelmodus naar de normale afspeelmodus terugkeert.

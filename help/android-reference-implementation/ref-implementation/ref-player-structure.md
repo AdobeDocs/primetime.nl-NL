@@ -1,8 +1,7 @@
 ---
 description: De eigenschapmanagers dienen als omslagen rond de bibliotheek van TVSDK.
 title: Referentie-implementatiestructuur
-exl-id: cf102ccc-2e31-4197-a321-e485f77ba754
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '441'
 ht-degree: 0%
@@ -26,7 +25,7 @@ De implementatie van de Primetime-referentie bevat de volgende pakketten:
 | [com.adobe.primetime.reference.feeds](https://help.adobe.com/en_US/primetime/api/reference_implementation/android/javadoc/com/adobe/primetime/reference/feeds/package-summary.html) | De adapters en itemadapters voor interface, platform, en verwijzingsinformatie. Bevat ook de FeedAdapterFactory-, ContentRenditionInfo- en XMLParserHelper-code. |
 | [com.adobe.primetime.reference.logging](https://help.adobe.com/en_US/primetime/api/reference_implementation/android/javadoc/com/adobe/primetime/reference/logging/package-summary.html) | Verstrekt klassen voor het registreren plaatselijk en ver. |
 | [com.adobe.primetime.reference.manager](https://help.adobe.com/en_US/primetime/api/reference_implementation/android/javadoc/com/adobe/primetime/reference/manager/package-summary.html) | Dit is waar u de eigenschapmanagers evenals ManagerFactory kunt vinden. Voor facultatieve eigenschappen die u kunt toelaten of onbruikbaar maken, zijn er twee eigenschapmanagers: <ul><li>Één eigenschapmanager die de naam van de eigenschap, bijvoorbeeld, CCManager is. Deze functiemanager wordt uitgezet en verstrekt het gebrek van gedrag.</li><li>Één eigenschapmanager die op heeft toegevoegd aan de naam van de eigenschapmanager, bijvoorbeeld, CCManagerOn. Deze functiemanager verstrekt steekproefcode voor de toegelaten eigenschap.</li></ul> |
-| [com.adobe.primetime.reference.ui.catalog](https://help.adobe.com/en_US/primetime/api/reference_implementation/android/javadoc/com/adobe/primetime/reference/ui/catalog/package-summary.html) | Bevat UI-code voor de catalogus. |
+| [com.adobe.primetime.reference.ui.catalk](https://help.adobe.com/en_US/primetime/api/reference_implementation/android/javadoc/com/adobe/primetime/reference/ui/catalog/package-summary.html) | Bevat UI-code voor de catalogus. |
 | [com.adobe.primetime.reference.ui.log](https://help.adobe.com/en_US/primetime/api/reference_implementation/android/javadoc/com/adobe/primetime/reference/ui/log/package-summary.html) | Bevat UI-code voor het logbestand. |
 | [com.adobe.primetime.reference.ui.player](https://help.adobe.com/en_US/primetime/api/reference_implementation/android/javadoc/com/adobe/primetime/reference/ui/player/package-summary.html) | Bevat UI-code voor de speler. |
 | [com.adobe.primetime.reference.ui.settings](https://help.adobe.com/en_US/primetime/api/reference_implementation/android/javadoc/com/adobe/primetime/reference/ui/settings/package-summary.html) | Bevat UI-code voor instellingen. |

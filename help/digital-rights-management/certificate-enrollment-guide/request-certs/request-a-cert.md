@@ -2,8 +2,7 @@
 title: Een certificaat aanvragen (aanvrager)
 description: Een certificaat aanvragen (aanvrager)
 copied-description: true
-exl-id: 290231ec-1146-4bfb-a449-b8ff85704197
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '118'
 ht-degree: 0%
@@ -27,9 +26,9 @@ ht-degree: 0%
    * Upload het CSR-bestand.
    * Kopieer de CSR-gegevens van de CSR en plak deze in het formulier.
 
-      >[!NOTE]
-      >
-      >Als u de CSR-gegevens wilt kopiëren, selecteert u de tekst tussen, niet inclusief, de begintag `(-----BEGIN CERTIFICATE REQUEST-----)` en eindtag `(-----END CERTIFICATE REQUEST-----)`.
+     >[!NOTE]
+     >
+     >Als u de CSR-gegevens wilt kopiëren, selecteert u de tekst tussen, niet inclusief, de begintag `(-----BEGIN CERTIFICATE REQUEST-----)` en eindtag `(-----END CERTIFICATE REQUEST-----)`.
 
 1. Klik op de knop **[!UICONTROL Submit Request]** knop.
 

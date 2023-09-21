@@ -1,8 +1,7 @@
 ---
 description: Gesloten bijschriften en ondertitels hebben enkele unieke verschillen en u kunt deze op verschillende manieren inschakelen.
 title: Ondertitels en gesloten bijschriften
-exl-id: 6602e9cf-d1e8-405b-83b7-bdd7d93b88f1
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '224'
 ht-degree: 0%
@@ -28,13 +27,13 @@ Houd rekening met de volgende vereisten voor gesloten bijschriften en ondertitel
    * Ondertitels zijn doorgaans in een andere taal en bevatten geen achtergrondgeluiden.
    * Ondertitels bevinden zich in streams die parallel lopen met de hoofdinhoud.
 
-      De `PTMediaPlayer` speelt de belangrijkste inhoud en advertenties, waar de belangrijkste inhoud live/lineair of VOD kon zijn, en de advertenties konden pre-rol, middenrol, of post-rol zijn.
-   Hier volgen enkele aanvullende vereisten voor ondertitels in iOS:
+     De `PTMediaPlayer` speelt de belangrijkste inhoud en advertenties, waar de belangrijkste inhoud live/lineair of VOD kon zijn, en de advertenties konden pre-rol, middenrol, of post-rol zijn.
 
-   * Voor tijdstempels: `X-TIMESTAMP-MAP` waarde, die wordt opgegeven in het koptekstgedeelte van het dialoogvenster `WebVTT` bestand, moet overeenkomen met de tijdstempel van de video.
+  Hier volgen enkele aanvullende vereisten voor ondertitels in iOS:
+
+   * Voor tijdstempels: `X-TIMESTAMP-MAP` waarde, die wordt opgegeven in het koptekstgedeelte van het dialoogvenster `WebVTT` moet overeenkomen met de tijdstempel van de video.
 
    * Voor het systeem moet u iOS 6.1 of hoger gebruiken.
-
 
 >[!IMPORTANT]
 >

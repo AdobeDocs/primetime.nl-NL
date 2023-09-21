@@ -1,15 +1,14 @@
 ---
 title: Hoe te om de metriek van de Rekening IQ voor een specifieke MVPD te gebruiken
 description: Hoe te om van Rekening IQ- rapporten te gebruiken en te begrijpen.
-exl-id: ada9a80a-b31b-4bdc-838c-dcd94a0a6c59
-source-git-commit: 5963c55d87385fbd92646bfc45a3650fb568bca5
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '172'
 ht-degree: 0%
 
 ---
 
-# De verslagen van het rekeningendelen van de mening voor een specifieke MVPD <!--and programmer--> {#report-sp-mvpd}
+# De verslagen van het rekenschap delen van de mening voor een specifieke MVPD <!--and programmer--> {#report-sp-mvpd}
 
 Als u als een [programmeur](/help/AccountIQ/product-concepts.md#programmer-def)kunt u rapporten over het delen op uw kanalen weergeven voor specifieke [MVPD](/help/AccountIQ/product-concepts.md#mvpd-def) abonnees.
 
@@ -29,17 +28,17 @@ Als u rapporten wilt weergeven in Account IQ, nadat u zich met succes hebt aange
 
 * [Algemeen gebruik](/help/AccountIQ/general-usage-reports.md)
 
-   ![](assets/specific-mvpd-gen-usage.png)
+  ![](assets/specific-mvpd-gen-usage.png)
 * [Gedeelde accounts](/help/AccountIQ/shared-acc-reports.md)
 
-   ![](assets/specific-mvpd-shared-acc.png)
+  ![](assets/specific-mvpd-shared-acc.png)
 * [Gebruikspatronen](/help/AccountIQ/usage-patterns.md)
 
-   ![](assets/specific-mvpd-usage-pattern.png)
+  ![](assets/specific-mvpd-usage-pattern.png)
 
 * [Dashboard](/help/AccountIQ/dashboard.md) (Het dashboard geeft een glimp van de geselecteerde grafieken van verschillende rapportpagina&#39;s).
 
-   ![](assets/specific-mvpd-dashboard.png)
+  ![](assets/specific-mvpd-dashboard.png)
 
 Elk van deze pagina&#39;s zal op de activiteit van geselecteerd segment wijzen.
 

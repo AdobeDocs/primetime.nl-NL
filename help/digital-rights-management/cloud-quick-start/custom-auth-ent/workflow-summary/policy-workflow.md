@@ -2,8 +2,7 @@
 title: Details van beleidswerkstroom
 description: Details van beleidswerkstroom
 copied-description: true
-exl-id: e3daf7a9-def0-48a9-8190-adb25eec7b59
-source-git-commit: 0019a95fa9ca6d21249533d559ce844897ab67cf
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '582'
 ht-degree: 0%
@@ -12,7 +11,7 @@ ht-degree: 0%
 
 # BES-workflow {#bees-workflow}
 
-**Overzicht:**
+**Samenvatting:**
 
 * **Beleid** - Maak een DRM BES-bewust beleid dat aangeeft dat BES vereist is voor alle inhoud die met dit beleid is verpakt.
 * **Verpakken** - Inhoud verpakken met gebruik van het DRM-beleid dat BEES-compatibel is.
@@ -38,11 +37,11 @@ Bijvoorbeeld het gebruiken van de Manager van het Beleid Primetime DRM ( [!DNL A
 
 >[!NOTE]
 >
->Als u al `policy.customProp.1` of `policy.customProp.2` voor een andere eigenschap gebruikt u gewoon unieke nummers voor de nieuwere eigenschappen.
+>Als u al `policy.customProp.1` of `policy.customProp.2` voor een andere eigenschap gebruikt u gewoon unieke getallen voor de nieuwere eigenschappen.
 
 ## Werkstroomgegevens pakket {#package-workflow-details}
 
-Tijdens het verpakken van uw Adobe Access-beveiligde inhoud moet u een van uw DRM-beleid met BEES-vermogen toepassen op de inhoud.
+Tijdens het verpakken van uw Adobe Toegang-beschermde inhoud, moet u één van uw BEES-bewuste beleid DRM op de inhoud toepassen.
 
 ## Gegevens verificatieworkflow {#authentication-workflow-details}
 
@@ -64,7 +63,7 @@ mgr.setAuthenticationToken(<auth token>);
 
 Het token wordt verzonden met alle licentieaanvragen totdat het token wordt gewist door het aanroepen `.setAuthenticationToken` met null als parameter.
 
-## Gegevens licentieworkflow{#license-workflow-details}
+## Licentieworkflowdetails{#license-workflow-details}
 
 Vraag een licentie aan via Primetime Cloud DRM door `mgr.loadVoucher()`.
 

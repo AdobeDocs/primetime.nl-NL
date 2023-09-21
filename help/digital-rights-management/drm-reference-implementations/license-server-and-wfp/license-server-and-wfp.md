@@ -1,8 +1,7 @@
 ---
 description: Met de server voor referentie-implementatie kunt u een volledig functionele licentieserver maken die alle functies van de Adobe Primetime DRM Java SDK gebruikt.
 title: Licentieserver
-exl-id: a928b7ac-9191-4b8c-b038-eb92a09286fa
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '269'
 ht-degree: 0%
@@ -13,7 +12,7 @@ ht-degree: 0%
 
 Met de server voor referentie-implementatie kunt u een volledig functionele licentieserver maken die alle functies van de Adobe Primetime DRM Java SDK gebruikt.
 
-In deze implementatie worden gebruikers geverifieerd op basis van gebruikersinvoer in een database. De server bevat demonstratie-bedrijfslogica voor het afgeven van licenties en biedt compatibiliteitsondersteuning voor Flash Media Rights Management Server 1.0 en 1.5.
+In deze implementatie worden gebruikers geverifieerd op basis van gebruikersinvoer in een database. De server omvat demonstratie bedrijfslogica voor het uitgeven van vergunningen en verleent verenigbaarheidssteun voor de Server 1.0 en 1.5 van het Rights Management van de Media van de Flash.
 
 ## Vereisten voor licentieservers {#license-server-requirements}
 
@@ -24,7 +23,7 @@ Vereisten voor licentieserver:
 * Zorg ervoor dat Java 1.6 of hoger is geïnstalleerd
 * Om de steekproef in werking te stellen bouwt manuscripten, zorg ervoor dat u Ant 1.8 of later hebt
 
-Nadat u Tomcat en MySQL hebt geïnstalleerd, neemt u contact op met Adobe voor uw set vereiste DRM-referenties.
+Nadat u Tomcat en MySQL hebt geïnstalleerd, neemt u contact op met de Adobe voor uw set vereiste DRM-referenties.
 
 ## De licentieserver samenstellen {#build-the-license-server}
 

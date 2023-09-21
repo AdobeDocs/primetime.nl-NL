@@ -1,26 +1,25 @@
 ---
-title: Video-analyses instellen die worden gerapporteerd aan de serverzijde
-description: Video-analyses instellen die worden gerapporteerd aan de serverzijde
+title: Video-analyses instellen die worden gerapporteerd op de server
+description: Video-analyses instellen die worden gerapporteerd op de server
 copied-description: true
-exl-id: 964d8ebd-6454-4875-b423-b2ab8360b729
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '107'
 ht-degree: 0%
 
 ---
 
-# Video-analyses instellen die worden gerapporteerd aan de serverzijde{#set-up-video-analytics-reporting-on-the-server-side}
+# Video-analyses instellen die worden gerapporteerd op de server{#set-up-video-analytics-reporting-on-the-server-side}
 
-Uw Adobe-vertegenwoordiger zal de meeste aspecten van de installatie aan de serverzijde voor Adobe Analytics-rapportage afhandelen. Zie voor meer informatie [Help en referentie voor Analytics - Report Suite Manager](https://microsite.omniture.com/t2/help/en_US/reference/#Report_Suite_Manager).
+Uw Adobe zal de meeste aspecten van de installatie aan de serverzijde voor Adobe Analytics-rapportering behandelen. Zie voor meer informatie [Help en referentie voor Analytics - Report Suite Manager](https://microsite.omniture.com/t2/help/en_US/reference/#Report_Suite_Manager).
 1. Om het omzettingsniveau voor identiteitskaart van de Reeks van het Rapport (RSID) toe te laten:
    1. Toegang **[!UICONTROL Admin Tools]**.
    1. Selecteren **[!UICONTROL Report Suites]**.
    1. Selecteer RSID aan opstelling.
    1. Selecteren **[!UICONTROL Edit Settings]** > **[!UICONTROL General]** > **[!UICONTROL General Account Settings]**.
-   1. In de **[!UICONTROL Conversion Level]** keuzelijst met invoervak, selecteert u **[!UICONTROL Enabled, no Shopping Cart]**.
+   1. In de **[!UICONTROL Conversion Level]** keuzelijst met invoervak **[!UICONTROL Enabled, no Shopping Cart]**.
    1. Klikken **[!UICONTROL Save]**.
-1. Het bijhouden van video&#39;s inschakelen:
+1. Videotracering inschakelen:
    1. Toegang **[!UICONTROL Admin Tools]**.
    1. Selecteren **[!UICONTROL Report Suites]**
    1. Selecteer RSID aan opstelling.

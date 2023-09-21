@@ -1,8 +1,7 @@
 ---
 description: U kunt stroomstoringen in live videostreams verwerken en tijdens een stroomstoring alternatieve inhoud bieden.
 title: Stroomuitval in live streams verwerken
-exl-id: 2e63fb0c-44b1-46f1-a4b8-f8f67389d183
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '519'
 ht-degree: 0%
@@ -31,14 +30,14 @@ Stroomuitval in live streams afhandelen:
 
 1. Stel uw app in om black-out-tags te detecteren door u te abonneren op black-out-tags in een live-streaming manifest.
 
-   TVSDK detecteert alleen geen black-out-tags; u moet zich abonneren op brainstormtags om meldingen te ontvangen wanneer de tags tijdens het parseren van manifestbestanden worden aangetroffen.
+   TVSDK detecteert zelf geen brainstormtags. U moet zich abonneren op brainstormtags om meldingen te ontvangen wanneer de tags tijdens het parseren van manifestbestanden worden aangetroffen.
 1. Maak gebeurtenislisteners voor tags waarop de speler is geabonneerd.
 
    Wanneer een tag voorkomt waarop de speler heeft geabonneerd (bijvoorbeeld een black-out tag) in de manifests van de voor- (hoofdinhoud) of de achtergrond (alternatieve inhoud), verzendt TVSDK een `TimedMetadataEvent` en maakt een `TimedMetadataObject` voor de `TimedMetadataEvent`.
 1. Implementeer handlers voor de getimede metagegevensgebeurtenissen voor zowel de voorgrond- als de achtergrondstreams.
 
    In deze handlers, krijg de begin en eindtijden voor de zwartoutperiode van de getimed voorwerpen van de meta-gegevensgebeurtenis.
-1. De `MediaPlayer` voor stroomstoringen.
+1. De `MediaPlayer` voor stroomuitval.
 
    Wanneer de `MediaPlayer` wordt de status PREPARED weergegeven, berekent u de bereik voor stroomuitval en bereidt u deze in op de `MediaPlayer` object.
 

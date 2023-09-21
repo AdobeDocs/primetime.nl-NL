@@ -2,8 +2,7 @@
 title: De database instellen en de JNDI-gegevensbron configureren
 description: De database instellen en de JNDI-gegevensbron configureren
 copied-description: true
-exl-id: ed22f095-924b-4792-8a10-e7548fab2c3b
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '521'
 ht-degree: 0%
@@ -35,9 +34,9 @@ Als u de licentieserver wilt uitvoeren, moet u MySQL 5.1.34 installeren en confi
 
    * Map verwijderen *systeemstation:* [!DNL \Documents and Settings\All Users\Application Data\MySQL].
 
-   * Verwijder de oude installatiemap voor MySQL: bijvoorbeeld: *systeemstation:* [!DNL \Program Files\MySQL\MySQL Server 5.1].
+   * Verwijder de oude installatiemap voor MySQL: bijvoorbeeld *systeemstation:* [!DNL \Program Files\MySQL\MySQL Server 5.1].
 
-Vervolgens moet u MySQL JDBC Driver 5.1.7 installeren. Kopieer [!DNL mysql-connector-java-5.1.7-bin.jar] (te vinden in het dialoogvenster [!DNL Third Party\MySQL\Installer\5.1] map op de dvd) naar de directory Tomcat Server lib: [!DNL ...\Tomcat6.0\lib].
+Vervolgens moet u MySQL JDBC Driver 5.1.7 installeren. Kopieer [!DNL mysql-connector-java-5.1.7-bin.jar] (te vinden in het dialoogvenster [!DNL Third Party\MySQL\Installer\5.1] (map op de dvd) naar de directory Tomcat Server lib: [!DNL ...\Tomcat6.0\lib].
 
 >[!NOTE]
 >
@@ -59,10 +58,10 @@ Stel de voorbeelddatabase in door het databaseschema in te stellen en de databas
 >
 >De eerste keer dat u de [!DNL CreateSampleDB.sql] -script ontvangt u de volgende fout:
 
-*FOUT 1396 (HY000): Operation DROP USER failed for &#39;dbuser&#39;@&#39;localhost&#39; Query OK, 0 rows affected (0,00 sec).*
+*FOUT 1396 (HY000): Bewerking DROP USER is mislukt voor &#39;&#39;dbuser&#39;@&#39;localhost&#39;&#39; Query OK, 0 rijen worden beïnvloed (0,00 sec.).*
 
 U kunt deze fout veilig negeren. Dit gebeurt alleen de eerste keer dat u dit script uitvoert.
 
-Op dit punt zult u het Pooling van de Verbinding van het Gegevensbestand (DBCP) moeten vormen. DBCP gebruikt de Jakarta-Commons Groep van de Verbinding van het Gegevensbestand. Een JNDI Datasource TestDB wordt gevormd om uit deze verbinding van de toepassingsserver voordeel te halen die pooling. Als u de databaseverbinding wilt wijzigen zodat deze naar een MySQL-server verwijst die zich niet op localhost bevindt, wijzigt u de instelling [!DNL META-INF\context.xml] bestand (dat de locatie, gebruikersnaam en wachtwoord van de database van de licentieserver opgeeft) dat zich bevindt in [!DNL flashaccess.war]of wijzigen [!DNL \Reference Implementation\Server\refimpl\WebContent\META-INF\context.xml] en maak het WAR-bestand opnieuw met de bijgewerkte bestanden. Als u een van deze parameters wilt wijzigen, bewerkt u de opdracht [!DNL context.xml] bevindt zich in de map WebContent en gebruikt het Ant-script om het WAR-bestand opnieuw te maken. Om het gegevensbestand te stemmen, verander de JNDI gegevensbronmontages in dit dossier.
+Op dit punt zult u het Pooling van de Verbinding van het Gegevensbestand (DBCP) moeten vormen. DBCP gebruikt de Jakarta-Commons Groep van de Verbinding van het Gegevensbestand. Een JNDI Datasource TestDB wordt gevormd om uit deze verbinding van de toepassingsserver voordeel te halen die pooling. Als u de databaseverbinding wilt wijzigen zodat deze naar een MySQL-server verwijst die zich niet op localhost bevindt, wijzigt u de instelling [!DNL META-INF\context.xml] bestand (dat de locatie, gebruikersnaam en wachtwoord van de database van de licentieserver opgeeft) dat zich bevindt in [!DNL flashaccess.war], of wijzigen [!DNL \Reference Implementation\Server\refimpl\WebContent\META-INF\context.xml] en maak het WAR-bestand opnieuw met de bijgewerkte bestanden. Als u een van deze parameters wilt wijzigen, bewerkt u de opdracht [!DNL context.xml] bevindt zich in de map WebContent en gebruikt het Ant-script om het WAR-bestand opnieuw te maken. Om het gegevensbestand te stemmen, verander de JNDI gegevensbronmontages in dit dossier.
 
 Als u het project van de Implementatie van de Verwijzing binnen Verduistering zuivert, moet u toevoegen `$CATALINA_HOME\lib\tomcat-dbcp.jar` aan uw looppas/zuivert configuratie. Deze stap is niet vereist als u de opdracht [!DNL flashaccess.war] bestand op een zelfstandige Tomcat 6.0-server.

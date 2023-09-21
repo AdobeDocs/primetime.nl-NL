@@ -1,8 +1,7 @@
 ---
 description: TimedMetadata-objecten worden door TVSDK voorbereid voor geabonneerde tags telkens wanneer deze objecten in het inhoudsmanifest worden aangetroffen.
 title: Abonneren op aangepaste tags
-exl-id: 7a3021cc-d2ba-4a70-9c1f-59766b848a62
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '266'
 ht-degree: 0%
@@ -14,7 +13,7 @@ ht-degree: 0%
 TimedMetadata-objecten worden door TVSDK voorbereid voor geabonneerde tags telkens wanneer deze objecten in het inhoudsmanifest worden aangetroffen.
 
 Voordat het afspelen begint, moet u zich op de tags abonneren.
-Als u zich wilt abonneren op tags, wijst u een vector met de aangepaste tagnamen toe aan de `subscribedTags` eigenschap. Als u ook de advertentietags moet wijzigen die door de standaardopportuniteitsgenerator worden gebruikt, wijst u een vector die de aangepaste namen van ad-tags bevat, toe aan de `adTags` eigenschap.
+Als u zich wilt abonneren op tags, wijst u een vector met de aangepaste tagnamen toe aan de `subscribedTags` eigenschap. Als u ook de advertentietags moet wijzigen die door de standaardopportuniteitsgenerator worden gebruikt, wijst u een vector toe die de aangepaste namen van ad-tags bevat `adTags` eigenschap.
 
 Informatie over aangepaste tags in HLS-manifests:
 

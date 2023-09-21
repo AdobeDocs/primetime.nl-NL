@@ -1,8 +1,7 @@
 ---
 description: Browser TVSDK biedt een DRM-interface waarmee u inhoud kunt afspelen die is beveiligd door verschillende DRM-oplossingen, zoals FairPlay, PlayReady en Widevine.
 title: Overzicht van de DRM-interface
-exl-id: aa13f042-4472-4fc3-b7ba-61746b8e024a
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '264'
 ht-degree: 0%
@@ -99,7 +98,7 @@ Hier volgt een workflow op hoog niveau voor het afspelen van DRM-beveiligde inho
 
 1. Standaard is het sessietype voor de DRM-licentie tijdelijk, wat betekent dat de licentie niet wordt opgeslagen nadat de sessie is gesloten.
 
-   U kunt een sessietype opgeven met behulp van een API in `DRMManager`.  Voor achterwaartse verenigbaarheid, omvatten de zittingstypes `temporary`, `persistent-license`, `persistent-usage-record`, en `persistent`.
+   U kunt een sessietype opgeven met een API in `DRMManager`.  Voor achterwaartse verenigbaarheid, omvatten de zittingstypes `temporary`, `persistent-license`, `persistent-usage-record`, en `persistent`.
 
    ```js
    var drmManager = mediaPlayer.drmManager; 

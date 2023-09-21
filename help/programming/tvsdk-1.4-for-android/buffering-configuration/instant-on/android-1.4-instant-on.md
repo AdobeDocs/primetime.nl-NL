@@ -1,8 +1,7 @@
 ---
 description: De term instant op verwijst naar het vooraf laden van een of meer kanalen, zodat een gebruiker die een kanaal selecteert of schakelt kanalen de inhoud direct ziet afspelen. De buffering is al uitgevoerd tegen de tijd dat de gebruiker begint te kijken.
 title: Direct aan
-exl-id: f640f208-d1b3-467a-be97-38690e10b7ed
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '329'
 ht-degree: 0%
@@ -21,7 +20,7 @@ Hoewel het aantal `MediaPlayer` instanties die door TVSDK kunnen worden uitgevoe
 
 ## Buffering configureren voor onmiddellijk afspelen {#configure-buffering-for-instant-on-playback}
 
-Met onmiddellijke aan, kunnen de gebruikers kanalen schakelen en het playback begint onmiddellijk zonder wachttijd. Wanneer u onmiddellijk inschakelt, buffert TVSDK een of meer kanalen voordat het afspelen begint.
+Met onmiddellijk aan, kunnen de gebruikers kanalen schakelen en het playback begint onmiddellijk zonder wachttijd. Wanneer u onmiddellijk inschakelt, buffert TVSDK een of meer kanalen voordat het afspelen begint.
 
 1. Bevestig dat de bron is geladen en klaar is voor afspelen door te controleren of de status PREPARED is.
 1. Vóór het aanroepen `play`, aanroepen `prepareBuffer` voor elke `MediaPlayer` -instantie.

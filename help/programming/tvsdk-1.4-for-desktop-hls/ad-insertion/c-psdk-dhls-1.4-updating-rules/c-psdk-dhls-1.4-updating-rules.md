@@ -1,8 +1,7 @@
 ---
 description: U kunt het configuratiebestand van TVSDK (AdobeTVSDKConfig.json) gebruiken om de prioriteiten voor een creatieve selectie op VAST/VMAP-reacties bij te werken. U kunt dit configuratiebestand ook gebruiken om de URL-omzettingsregels voor de bron van advertenties te definiëren.
 title: Regels voor het bijwerken en creatief selecteren
-exl-id: 6664c120-2d4d-4cc0-8d9d-4bd8a66a5e88
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '191'
 ht-degree: 0%
@@ -21,5 +20,4 @@ Wanneer uw videospeler een verzoek indient bij een advertentieserver, bevat de V
 >* Dit bestand moet worden gehost op het CDN (Content Delivery Network).
 >
 
-
-U kunt twee typen regels opgeven in [!DNL AdobeTVSDKConfig.json]: *Prioriteit* en *Normaliseren* regels.
+U kunt twee typen regels opgeven in [!DNL AdobeTVSDKConfig.json]: *Prioriteit* regels en *Normaliseren* regels.

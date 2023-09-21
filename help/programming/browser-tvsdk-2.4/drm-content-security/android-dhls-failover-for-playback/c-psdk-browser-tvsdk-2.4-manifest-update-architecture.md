@@ -1,21 +1,20 @@
 ---
-description: Hier volgt een aantal informatie en voorbeelden over hoe Browser TVSDK bijgewerkte master manifesten aanpast.
-title: Live master-manifest updatearchitectuur
-exl-id: 2d9be228-7a96-4c19-828d-c1a4b0b07aa0
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+description: Hier volgt een aantal informatie en voorbeelden over hoe Browser TVSDK bijgewerkte hoofdmanifests aanpast.
+title: Live master-manifest update-architectuur
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '540'
 ht-degree: 1%
 
 ---
 
-# Live master-manifest updatearchitectuur{#live-master-manifest-update-architecture}
+# Live master-manifest update-architectuur{#live-master-manifest-update-architecture}
 
-Hier volgt een aantal informatie en voorbeelden over hoe Browser TVSDK bijgewerkte master manifesten aanpast.
+Hier volgt een aantal informatie en voorbeelden over hoe Browser TVSDK bijgewerkte hoofdmanifests aanpast.
 
 Deze functie is standaard uitgeschakeld. Als de toepassing deze inschakelt door een updatefrequentie in minuten in te stellen, vinden de volgende stappen plaats na elk update-interval:
 
-1. De Browser TVSDK controleert de laatste gewijzigde tijd en de tag van het master manifest om te bepalen of het bestand is bijgewerkt.
+1. De Browser TVSDK controleert de laatste gewijzigde tijd en de tag van het hoofdmanifest om te bepalen of het bestand is bijgewerkt.
 
    Als zowel de tijd als de tag zijn gewijzigd, wordt het bestand als gewijzigd beschouwd.
 1. Browser TVSDK ontleedt en analyseert nieuw manifest en neemt aangewezen actie die op de aard van de update wordt gebaseerd.
@@ -38,7 +37,7 @@ De volgende bitsnelheden worden live uitgezonden:
 * 900k
 * 2100k
 
-De 2100k-stream heeft een aantal problemen en moet daarom opnieuw worden opgestart. Het master manifest wordt bijgewerkt en bevat slechts 500 kB en 900 kB. Kort daarna zullen de gebruikers die dit programma bij 2100 k bekijken een beetje tariefschakelaar aan 900 k krijgen. De gebruikers die op 900.000 uur kijken, blijven om 900.000 uur kijken. Later, hervat de stroom 2100k, en het wordt toegevoegd terug in master manifest. Enige tijd later, worden de gebruikers die bij 900k letten, en de bandbreedte hebben, overgeschakeld naar 2100k.
+De 2100k-stream heeft een aantal problemen, dus deze moet opnieuw worden opgestart. Het hoofdmanifest wordt bijgewerkt zodat het slechts 500 k en 900 k bevat. Kort daarna zullen de gebruikers die dit programma bij 2100 k bekijken een beetje tariefschakelaar aan 900 k krijgen. De gebruikers die op 900.000 uur kijken, blijven om 900.000 uur kijken. Later, hervat de stroom 2100k, en het wordt toegevoegd terug in hoofdmanifest. Enige tijd later, worden de gebruikers die bij 900k letten, en de bandbreedte hebben, overgeschakeld naar 2100k.
 
 ### Voorbeeld 2 {#example_485E9A9F373D454CADE5395DEC734E5D}
 
@@ -48,7 +47,7 @@ De volgende bitsnelheden worden live uitgezonden:
 * 900k
 * 2100k
 
-Al deze beetjetarieven moeten opnieuw worden begonnen. Hiervoor zijn twee tijdsstromen ingesteld, op 400 kbps en 1500 kbps. De gebruikers worden geschakeld aan 400k, die het laagste beetjetarief van de nieuwe configuratie is. Sommige gebruikers worden geschakeld naar 1500k wanneer hun bandbreedte voldoende is. Later, zijn de drie beetjetarieven file en master manifest wordt bijgewerkt. De gebruikers schakelen automatisch terug om bij 500k te letten, die de laagste bandbreedte in herzien (origineel) manifest is. Een tijdje later, worden de gebruikers geschakeld aan de hoogste bandbreedte (900k of 1200k) die hun netwerk toestaat.
+Al deze beetjetarieven moeten opnieuw worden begonnen. Hiervoor zijn twee tijdsstromen ingesteld, op 400 kbps en 1500 kbps. De gebruikers worden geschakeld aan 400k, die het laagste beetjetarief van de nieuwe configuratie is. Sommige gebruikers worden geschakeld naar 1500k wanneer hun bandbreedte voldoende is. Later, zijn de drie beetjetarieven file en hoofdmanifest wordt bijgewerkt. De gebruikers schakelen automatisch terug om bij 500k te letten, die de laagste bandbreedte in herzien (origineel) manifest is. Een tijdje later, worden de gebruikers geschakeld aan de hoogste bandbreedte (900k of 1200k) die hun netwerk toestaat.
 
 <!-- 
 

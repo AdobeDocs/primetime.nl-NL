@@ -1,8 +1,7 @@
 ---
 description: Met de methoden in de MediaPlayerItem-klasse kunt u informatie ophalen over de inhoudsstroom die wordt vertegenwoordigd door een geladen MediaResource.
 title: Methoden van MediaPlayerItem voor toegang tot MediaResource-informatie
-exl-id: 5e4434ce-d2b1-4b7b-b3d1-77f62ff46d36
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '444'
 ht-degree: 0%
@@ -35,7 +34,7 @@ Met de methoden in de MediaPlayerItem-klasse kunt u informatie ophalen over de i
   </tr> 
   <tr rowsep="1"> 
    <td colname="2"> <span class="codeph"> boolean isLive(); </span> </td> 
-   <td colname="3"> True if the stream is live; false als het om VOD gaat. </td> 
+   <td colname="3"> True if the stream is live; false if it is VOD. </td> 
   </tr> 
   <tr rowsep="1"> 
    <td colname="2"> <b>DRM beveiligd</b> </td> 
@@ -75,7 +74,7 @@ Met de methoden in de MediaPlayerItem-klasse kunt u informatie ophalen over de i
   </tr> 
   <tr rowsep="1"> 
    <td colname="2"> <span class="codeph"> boolean hasAlternateAudio(); </span> </td> 
-   <td colname="3"> True als de stream alternatieve audiotracks heeft. <p>Opmerking: De hoofdaudiotrack (standaard) maakt ook deel uit van de lijst met alternatieve audiotracks. </p> <p>TVSDK voor Android beschouwt de hoofdaudiotrack als een van de items in de alternatieve audiotracklijst. Daarom is dit het enige geval waarin <span class="codeph"> MediaPlayerItem.hasAlternateAudio </span> retourneert false wanneer de stream helemaal geen audio heeft. Als de inhoud slechts één audiotrack heeft, retourneert deze methode true, en <span class="codeph"> MediaPlayerItem.getAudioTracks </span> Hiermee wordt een lijst met één element geretourneerd (de standaardaudiotrack). </p> </td> 
+   <td colname="3"> True als de stream alternatieve audiotracks heeft. <p>Opmerking: de hoofdaudiotrack (standaard) maakt ook deel uit van de lijst met alternatieve audiotracks. </p> <p>TVSDK voor Android beschouwt de hoofdaudiotrack als een van de items in de alternatieve audiotracklijst. Daarom is dit het enige geval waarin <span class="codeph"> MediaPlayerItem.hasAlternateAudio </span> retourneert false wanneer de stream helemaal geen audio heeft. Als de inhoud slechts één audiotrack heeft, retourneert deze methode true, en <span class="codeph"> MediaPlayerItem.getAudioTracks </span> retourneert een lijst met één element (de standaardaudiotrack). </p> </td> 
   </tr> 
   <tr rowsep="1"> 
    <td colname="2"> <span class="codeph"> Lijst&lt;audiotrack&gt; getAudioTracks(); </span> </td> 

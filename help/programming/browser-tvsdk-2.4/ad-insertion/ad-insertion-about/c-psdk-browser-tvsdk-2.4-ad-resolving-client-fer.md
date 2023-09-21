@@ -1,15 +1,14 @@
 ---
 description: FER-inhoud (Full Event Replay) is een live stream die wordt omgezet in VOD door de tag
-title: SNELLER EN OPLOSSEN EN INVOEGEN
-exl-id: 9075932d-4e77-4249-af5d-0b392033907f
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+title: SNELLER EN OPLOSSEN EN invoegen
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '206'
 ht-degree: 0%
 
 ---
 
-# SNELLER EN OPLOSSEN EN INVOEGEN{#fer-ad-resolving-and-insertion}
+# SNELLER EN OPLOSSEN EN invoegen{#fer-ad-resolving-and-insertion}
 
 FER-inhoud (Full Event Replay) is een live stream die wordt omgezet in VOD door de tag #EXT-X-ENDLIST toe te voegen aan het einde van het manifestbestand. De stream behoudt de advertentiemarkeringen.
 

@@ -1,8 +1,7 @@
 ---
 description: Gebruik het bibliotheekbestand Browser van TVSDK van Browser in uw app om een speler te maken die compatibel is met Browser.
 title: Creeer een Browser-Compatibele speler zonder UI-Kader
-exl-id: 27b5e1c5-49c3-44e4-9e34-0f50a50e36f5
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '229'
 ht-degree: 0%
@@ -13,7 +12,7 @@ ht-degree: 0%
 
 Gebruik het bibliotheekbestand Browser van TVSDK van Browser in uw app om een speler te maken die compatibel is met Browser.
 
-Het onderwerp [](../../../browser-tvsdk-2.4/getting-started/c-psdk-browser-tvsdk-2.4-create-a-basic-player/t-psdk-browser-tvsdk-2.4-create-basic-player-tvsdk.md) Hier wordt een lijst weergegeven met de sets TVSDK-bibliotheken van de browser die u normaal gesproken gebruikt wanneer u een eenvoudige videospeler maakt. Hiervoor voegt u eenvoudig `script` tags met `src` kenmerken die naar de bibliotheken verwijzen.
+Het onderwerp [](../../../browser-tvsdk-2.4/getting-started/c-psdk-browser-tvsdk-2.4-create-a-basic-player/t-psdk-browser-tvsdk-2.4-create-basic-player-tvsdk.md) Hier wordt een lijst weergegeven met de set TVSDK-bibliotheken van de browser die u normaal gesproken gebruikt wanneer u een eenvoudige videospeler maakt. Hiervoor voegt u eenvoudig `script` tags met `src` kenmerken die naar de bibliotheken verwijzen.
 
 Het proces is iets anders voor het maken van een speler die compatibel is met Browser. Hiervoor gebruikt u de opdracht `require` gebruiken om de opdracht [!DNL AdobePSDK.module.js] bestand (opgegeven door de Browser-TVSDK) in uw app. Dit bestand bundelt de basisbibliotheekbestanden van de speler in de juiste volgorde van afhankelijkheid en retourneert de `AdobePSDK` naamruimte die u gebruikt om functies voor uw speler te implementeren.
 
@@ -38,5 +37,5 @@ Een videospeler maken die compatibel is met Browser:
 
 1. De speler maken zoals beschreven in [](../../../browser-tvsdk-2.4/getting-started/c-psdk-browser-tvsdk-2.4-create-a-basic-player/t-psdk-browser-tvsdk-2.4-create-basic-player-tvsdk.md).
 
-   Stap 1 in deze taak vervangt de stap in de basisspelerinstructies waarin u de afzonderlijke basisspelerbibliotheken in uw toepassingsbestand plaatst.
+   Stap 1 in deze taak vervangt de stap in de basisspelerinstructies waarin u de afzonderlijke basisspelerbibliotheken in uw app-bestand opneemt.
 U kunt nu een bundel maken van uw toepassingsbestanden met behulp van Bladeren.

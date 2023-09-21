@@ -1,8 +1,7 @@
 ---
 description: U kunt advertenties in uw VOD en levende/lineaire inhoud opnemen door Adobe Primetime en besluitvormingsinterface te gebruiken.
 title: Reclamevereisten
-exl-id: b162e5b0-9f6c-46de-85de-97cec009a9b7
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '123'
 ht-degree: 0%
@@ -11,7 +10,7 @@ ht-degree: 0%
 
 # Time-out advertentie {#ad-timeout}
 
-## Vereisten voor AV-stichting {#av-foundation-requirements}
+## AV-stichtingsvereisten {#av-foundation-requirements}
 
 In het geval van VOD-inhoud moet het naaien van de afspeellijst, waarbij het laden van het hoofdinhoudsmanifest en het laden van de resolutie en het ad-manifest worden doorlopen, binnen 35 seconden worden voltooid.
 

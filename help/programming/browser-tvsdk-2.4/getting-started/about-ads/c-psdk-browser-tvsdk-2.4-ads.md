@@ -1,8 +1,7 @@
 ---
 description: Wanneer inhoud wordt afgespeeld, kan Browser-TVSDK tijdens het maken van het MediaResource-object advertenties weergeven en informatie over advertenties doorgeven.
 title: Adds
-exl-id: a44ad0fa-841f-474b-89f4-39666190231f
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '100'
 ht-degree: 0%
@@ -67,4 +66,4 @@ var playerWrapper = ptp.videoPlayer('.videoDiv', {
 }; 
 ```
 
-Voor meer informatie over de vereiste `AuditudeSettings`, zie [Metagegevens voor invoeging toevoegen](../../ad-insertion/ad-insertion-metadata/c-psdk-browser-tvsdk-2.4-ad-insertion-metadata.md).
+Voor meer informatie over de vereiste `AuditudeSettings`, zie [Metagegevens voor invoegen toevoegen](../../ad-insertion/ad-insertion-metadata/c-psdk-browser-tvsdk-2.4-ad-insertion-metadata.md).

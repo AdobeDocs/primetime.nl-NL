@@ -2,8 +2,7 @@
 title: Verzoeken om verificatie verwerken
 description: Verzoeken om verificatie verwerken
 copied-description: true
-exl-id: 64d23db0-254d-46b1-8317-ba0381509b44
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '188'
 ht-degree: 0%
@@ -20,4 +19,4 @@ De manager leest een authentificatieverzoek en ontleedt het verzoekbericht wanne
 
 * De klasse request handler is `com.adobe.flashaccess.sdk.protocol.authentication.AuthenticationHandler`
 * De klasse request message is `com.adobe.flashaccess.sdk.protocol.authentication.AuthenticationRequestMessage`
-* Als zowel de client als het serverondersteuningsprotocol versie 5, is de aanvraag-URL &quot;Licence Server URL in metadata: + &quot; [!DNL /flashaccess/authn/v4]&quot;. Als protocolversie 3 het maximum is dat door de client of server wordt ondersteund, sturen Adobe Primetime DRM-clients dan verificatieaanvragen naar &quot;Licentie Server URL in metadata&quot; + &quot; [!DNL /flashaccess/authn/v3]&quot;. Anders worden verificatieaanvragen verzonden naar &quot;Licentieserver-URL in metagegevens&quot; + &quot; [!DNL /flashaccess/authn/v1]&quot;
+* Als het protocol versie 5 voor client- en serverondersteuning beide is, is de aanvraag-URL &quot;License Server URL in metadata: + &quot; [!DNL /flashaccess/authn/v4]&quot;. Als protocolversie 3 het maximum is dat door de client of server wordt ondersteund, sturen Adobe Primetime DRM-clients dan verificatieaanvragen naar &quot;Licentie Server URL in metadata&quot; + &quot; [!DNL /flashaccess/authn/v3]&quot;. Anders worden verificatieaanvragen verzonden naar &quot;Licentieserver-URL in metagegevens&quot; + &quot; [!DNL /flashaccess/authn/v1]&quot;

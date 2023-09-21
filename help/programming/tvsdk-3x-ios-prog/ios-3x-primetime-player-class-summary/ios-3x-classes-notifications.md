@@ -1,15 +1,14 @@
 ---
 description: Deze klassen beschrijven berichten over fouten, waarschuwingen, en sommige activiteiten die TVSDK voor het registreren en het zuiveren doeleinden uitgeeft.
-title: Kennisgevingsklassen
-exl-id: 97a01418-f747-4a6e-bfa5-e680438e40c5
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+title: Meldingsklassen
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '256'
 ht-degree: 0%
 
 ---
 
-# Kennisgevingsklassen {#notification-classes}
+# Meldingsklassen {#notification-classes}
 
 Deze klassen beschrijven berichten over fouten, waarschuwingen, en sommige activiteiten die TVSDK voor het registreren en het zuiveren doeleinden uitgeeft.
 

@@ -2,8 +2,7 @@
 title: Logica voor domeinregistratie op basis van identiteit
 description: Logica voor domeinregistratie op basis van identiteit
 copied-description: true
-exl-id: 6e391fce-00b4-45cf-b785-3b0ec734a11e
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '406'
 ht-degree: 0%
@@ -18,7 +17,7 @@ De verwijzingsimplementatie past de volgende logica voor op identiteit-gebaseerd
 
 1. Bepaal de domeinnaam die aan een aangewezen gebruiker moet worden toegewezen.
 
-   De domeinnaam ( `namequalifier:username`) wordt uit het verificatietoken geëxtraheerd. Als een token niet beschikbaar is, wordt een fout gegenereerd.
+   De domeinnaam ( `namequalifier:username`) wordt uit het verificatietoken gehaald. Als een token niet beschikbaar is, wordt een fout gegenereerd.
 1. De domeinnaam opzoeken in het dialoogvenster `DomainServerInfo` tabel.
 
    Als er geen item wordt gevonden, voegt u een item in. De standaardwaarden zijn:
@@ -36,8 +35,8 @@ De verwijzingsimplementatie past de volgende logica voor op identiteit-gebaseerd
       1. Als dit een nieuwe computer is, voegt u een item toe aan de `UserDomainMembership` tabel.
       1. Zoeken naar de bijbehorende records in `UserDomainRefCount` tabel.
       1. Als een ingang niet voor deze machine GUID bestaat, voeg een verslag toe.
-   1. Als het een nieuw apparaat is, en `Max Membership` waarde is bereikt, retourfout.
 
+   1. Als het een nieuw apparaat is, en `Max Membership` waarde is bereikt, retourfout.
 
 1. Alle domeinsleutels voor dit domein opzoeken in het dialoogvenster `DomainKeys` tabel:
 

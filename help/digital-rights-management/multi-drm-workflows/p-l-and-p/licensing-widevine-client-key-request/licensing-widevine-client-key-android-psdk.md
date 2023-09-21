@@ -1,8 +1,7 @@
 ---
 description: De clientcode geeft gegevens door aan een Android-API.
 title: Belangrijke aanvraagworkflow voor Android PSDK
-exl-id: 3ff52c0d-0789-4fe5-bf9d-f03184bad488
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '142'
 ht-degree: 0%
@@ -33,7 +32,7 @@ class DRMManager
 
 Nadat deze API met succes is aangeroepen, kan uw code het afspelen van inhoud op de gebruikelijke manier starten. Als u Expressplay gebruikt, kunt u of het teken als deel van de vergunningsserver URL of als verzoekbezit overgaan en uit het teken van de vergunningsserver URL schrappen.
 
-Sommige Android-apparaten ondersteunen zowel Windows als PlayReady. Op dergelijke apparaten kan de klant PSDK dwingen de inhoud te decoderen gebruikend bepaalde DRM als de inhoud veelvoudige DRM kopballen heeft. Dit kan door volgende API vóór playback te roepen:
+Sommige Android-apparaten ondersteunen zowel Windows als PlayReady. Op dergelijke apparaten kan de klant PSDK dwingen de inhoud te decoderen gebruikend bepaalde DRM als de inhoud veelvoudige DRM kopballen heeft. Dit kan worden gedaan door de volgende API vóór playback te roepen:
 
 ```
 class MediaPlayer 

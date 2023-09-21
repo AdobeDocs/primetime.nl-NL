@@ -1,8 +1,7 @@
 ---
 description: U kunt de Reference Implementation instellen om Adobe Analytics-rapporten te gebruiken.
 title: Adobe Analytics-rapportage configureren
-exl-id: 3607f9d4-1069-4722-af0b-121223125112
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '379'
 ht-degree: 0%
@@ -13,9 +12,9 @@ ht-degree: 0%
 
 U kunt de Reference Implementation instellen om Adobe Analytics-rapporten te gebruiken.
 
-De Reference Implementation is geconfigureerd om Primetime-verificatiegebeurtenisgegevens naar Adobe Analytics te verzenden met de Adobe Mobile Library die in de Primetime SDK is gebundeld. Als u de gebeurtenisgegevens die vanuit de toepassing zijn verzonden wilt inschakelen en gebruiken, moet u eerst een Adobe Analytics-account maken. Zodra de account is gemaakt:
+De Reference Implementation is geconfigureerd om Primetime-verificatiegebeurtenisgegevens naar Adobe Analytics te verzenden met de Adobe Mobile Library die is gebundeld in de Primetime SDK. Als u de gebeurtenisgegevens die vanuit de toepassing zijn verzonden wilt inschakelen en gebruiken, moet u eerst een Adobe Analytics-account maken. Zodra de account is gemaakt:
 
-1. Configureer de toepassing met uw accountgegevens. en
+1. De toepassing configureren met uw accountgegevens, en
 1. Maak verwerkingsregels om aan te passen hoe de gebeurtenisgegevens in uw rapporten worden weergegeven.
 
 De onderstaande tabel bevat de gegevens die naar Adobe Analytics zijn verzonden:
@@ -24,14 +23,14 @@ De onderstaande tabel bevat de gegevens die naar Adobe Analytics zijn verzonden:
 |---|---|---|
 | Contextgegevens | `a.media.pass.MvpdId (String)` | De door de gebruiker geselecteerde MVPD |
 |  | `a.media.pass.ClientType` | (String) Het clienttype is &quot;flash&quot;, &quot;html5&quot;, &quot;ios&quot; of &quot;android&quot; |
-|  |  |  |
+|  | | |
 | Naam van handeling | `a.media.pass.event.AuthenticationDetection` | Een verificatieworkflow voltooid |
 | Contextgegevens | `a.media.pass.Successful` | (Boolean) Of de token-aanvraag succesvol was, true of false |
-|  | `a.media.pass.MvpdId` | (Tekenreeks) De door de gebruiker geselecteerde MVPD |
+|  | `a.media.pass.MvpdId` | (String) De door de gebruiker geselecteerde MVPD |
 |  | `a.media.pass.Guid` | (Tekenreeks) Een id voor bijhouden |
 |  | `a.media.pass.Cached` | (Boolean) Token bevindt zich al in cache, waar of onwaar |
 |  | `a.media.pass.ClientType` | (String) Het clienttype is &quot;flash&quot;, &quot;html5&quot;, &quot;ios&quot; of &quot;android&quot; |
-|  |  |  |
+|  | | |
 | Naam van handeling | `a.media.pass.event.AuthorizationDetection` | Een workflow voor autorisatie is voltooid |
 | Contextgegevens | `a.media.pass.Successful` | (Boolean) Of de token-aanvraag succesvol was, true of false |
 |  | `a.media.pass.MvpdId` | (String) De gebruiker heeft MVPD geselecteerd |

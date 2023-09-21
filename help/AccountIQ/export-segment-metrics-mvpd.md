@@ -1,8 +1,7 @@
 ---
 title: Metriek van de uitvoer voor MVPD en geselecteerde programmeurs
 description: Metriek van de uitvoer voor MVPD en geselecteerde programmeurs
-exl-id: 868016ec-71aa-44b9-a002-0d124a64c167
-source-git-commit: bfc3ba55c99daba561255760baf273b6538a3c6e
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '191'
 ht-degree: 0%
@@ -20,11 +19,11 @@ Om metriek voor MVPD en geselecteerde programmeurs uit te voeren, zodra u als er
 1. Ga naar een van de volgende deelvensters:
 
    * Programmeurs in segment
-      ![](assets/prog-segment-export-option.png)
+     ![](assets/prog-segment-export-option.png)
 
    * Aantal rekeningen en gebruik door kansniveau te delen
 
-      ![](assets/progr-usage-panel-export.png)
+     ![](assets/progr-usage-panel-export.png)
 
 1. Selecteren **Exporteren** Deze optie is beschikbaar in de rechterbovenhoek van het deelvenster.
 
@@ -32,9 +31,9 @@ De gegevens worden geëxporteerd in de CSV-indeling en het bestand wordt lokaal 
 
 * Programmeurs in segment
 
-   ![](assets/export-progr-in-seg.png)
+  ![](assets/export-progr-in-seg.png)
 
 
 * Aantal rekeningen en gebruik door kansniveau te delen
 
-   ![](assets/export-acc-usage.png)
+  ![](assets/export-acc-usage.png)

@@ -2,8 +2,7 @@
 title: De Flash Access Manager AIR-toepassing samenstellen
 description: De Flash Access Manager AIR-toepassing samenstellen
 copied-description: true
-exl-id: f15fe9d2-d5e8-43ef-a1d5-1211752d54da
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '349'
 ht-degree: 0%
@@ -12,9 +11,9 @@ ht-degree: 0%
 
 # De Flash Access Manager AIR-toepassing samenstellen {#building-the-flash-access-manager-air-application}
 
-Als u het Flash Access Manager AIR-bestand wilt maken op basis van de broncode, moet de SDK van Flex en AIR op uw computer zijn geïnstalleerd. Voordat u de toepassing in een pakket kunt plaatsen en uitvoeren, moet u de MXML code eerst met de [!DNL amxmlc] compiler. De [!DNL amxmlc] compiler vindt u in het dialoogvenster [!DNL bin] directory van de Flex 4 of hoger SDK. Desgewenst kunt u de omgevingsvariabele van het pad zodanig instellen dat deze de binmap van de Flex SDK bevat, zodat de hulpprogramma&#39;s gemakkelijker op de opdrachtregel kunnen worden uitgevoerd.
+Als u het AIR-bestand van Flash Access Manager wilt maken op basis van de broncode, moet de SDK van Flex en AIR op uw computer zijn geïnstalleerd. Voordat u de toepassing in een pakket kunt plaatsen en uitvoeren, moet u de MXML code eerst met de [!DNL amxmlc] compiler. De [!DNL amxmlc] compiler vindt u in het dialoogvenster [!DNL bin] directory van de Flex 4 of hoger SDK. Desgewenst kunt u de omgevingsvariabele van het pad zodanig instellen dat deze de binmap van de Flex SDK bevat, zodat de hulpprogramma&#39;s gemakkelijker op de opdrachtregel kunnen worden uitgevoerd.
 
-Ga als volgt te werk om het Flash Access Manager AIR-bestand te maken:
+Ga als volgt te werk om het AIR-bestand voor Flash Access Manager te maken:
 
 1. Open bevelshell of een terminal en navigeer aan de projectomslag van de toepassing van AIR van de Manager van de Flash Access ( [!DNL UI Tools\Flash Access Manager] in de map Referentie-implementatie).
 1. Voer de volgende opdracht in:
@@ -42,6 +41,6 @@ Gebruik vervolgens ADT om de toepassing in een pakket te plaatsen [!DNL .air] be
 adt -package -storetype pkcs12 -keystore testCert.pfx FlashAccessManager.air src\FlashAccessManager-app.xml . -C src assets
 ```
 
-Deze opdracht geeft ADT de opdracht om uw toepassing in een pakket te plaatsen met behulp van het sleutelbestand in [!DNL testCert.pfx]. In de bovenstaande regel configureert u ADT om de volledige toepassing te verpakken in een bestand met de naam [!DNL FlashAccessManager.air]en om de bestanden op te nemen [!DNL FlashAccessManager-app.xml] en [!DNL FlashAccessManager.swf] en de afbeeldingen uit de map assets.
+Deze opdracht geeft ADT de opdracht om uw toepassing te verpakken met behulp van het sleutelbestand in [!DNL testCert.pfx]. In de bovenstaande regel configureert u ADT om de volledige toepassing in een bestand met de naam [!DNL FlashAccessManager.air]en om de bestanden op te nemen [!DNL FlashAccessManager-app.xml] en [!DNL FlashAccessManager.swf] en de afbeeldingen uit de map assets.
 
 Tijdens dit proces wordt u gevraagd om het wachtwoord dat u instelt voor het nieuwe certificaatbestand. Voer het in, wacht even en een [!DNL FlashAccessManager.air] bestand moet in dezelfde map staan als de projectbestanden.

@@ -2,8 +2,7 @@
 title: De database van de licentieserver instellen
 description: De database van de licentieserver instellen
 copied-description: true
-exl-id: be6232b4-bf51-486f-9c85-ab6f6ec6d9bd
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '217'
 ht-degree: 0%
@@ -40,7 +39,7 @@ Als u de licentieserver wilt uitvoeren, moet u MySQL installeren en configureren
    1. Verwijder de oude installatiemap voor MySQL.
 
       Bijvoorbeeld: *systeemstation:*, die zich bevindt in [!DNL \Program Files\MySQL\MySQL Server 5.1].
-1. Als u MySQL JDBC Driver 5.1.7 wilt installeren, kopieert u de [!DNL mysql-connector-java-5.1.7-bin.jar] in het [!DNL Third Party\MySQL\Installer\5.1] op de dvd naar de [!DNL ...\Tomcat6.0\lib] op de Tomcat-server.
+1. Als u MySQL JDBC Driver 5.1.7 wilt installeren, kopieert u de [!DNL mysql-connector-java-5.1.7-bin.jar] in het [!DNL Third Party\MySQL\Installer\5.1] naar de dvd [!DNL ...\Tomcat6.0\lib] op de Tomcat-server.
 
    >[!NOTE]
    >

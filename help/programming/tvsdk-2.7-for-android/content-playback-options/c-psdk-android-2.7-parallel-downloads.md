@@ -1,8 +1,7 @@
 ---
 description: Het downloaden van video en audio parallel, eerder dan in een reeks, vermindert startvertragingen.
 title: Parallelle downloads
-exl-id: 6c93154b-8de4-448b-bc33-776fcc1f6243
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '304'
 ht-degree: 0%
@@ -38,7 +37,7 @@ De verbinding van HTTP zou vertragingen in de volgende stadia kunnen ervaren:
 
 * Bij het tot stand brengen van een TCP/IP-verbinding met de server
 
-   Hoewel de client en de server zijn overeengekomen te communiceren, is er nog geen HTTP-communicatie opgetreden. Dit type vertraging is afhankelijk van de infrastructuur tussen de client en de server. Dit proces vereist het vinden van een weg door Internet tussen de cliënt en de server en het ervoor zorgen alle apparaten, zoals routers en firewalls, op de route met de gegevensoverdracht akkoord gaat.
+  Hoewel de client en de server zijn overeengekomen te communiceren, is er nog geen HTTP-communicatie opgetreden. Dit type vertraging is afhankelijk van de infrastructuur tussen de client en de server. Dit proces vereist het vinden van een weg door Internet tussen de cliënt en de server en het ervoor zorgen alle apparaten, zoals routers en firewalls, op de route met de gegevensoverdracht akkoord gaat.
 * Wanneer het verzenden van een HTTP- verzoek om een segment of manifest over de verbinding TCP/IP.
 
-   De server ontvangt het verzoek, verwerkt het, en begint de gegevens terug naar de cliënt te verzenden. De mate van vertraging is afhankelijk van de lading en de ingewikkeldheid van de software op de server en enigszins van de snelheid van de uploadverbinding wanneer de cliënt het verzoek verzendt.
+  De server ontvangt het verzoek, verwerkt het, en begint de gegevens terug naar de cliënt te verzenden. De mate van vertraging is afhankelijk van de lading en de ingewikkeldheid van de software op de server en enigszins van de snelheid van de uploadverbinding wanneer de cliënt het verzoek verzendt.

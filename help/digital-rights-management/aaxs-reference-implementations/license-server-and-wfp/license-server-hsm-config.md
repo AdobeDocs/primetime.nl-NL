@@ -2,8 +2,7 @@
 title: HSM-configuratie
 description: HSM-configuratie
 copied-description: true
-exl-id: 0418bcc1-0a85-4074-9616-915f77507bdd
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '147'
 ht-degree: 0%
@@ -23,4 +22,4 @@ Als u uw geloofsbrieven in de lijst ziet, wordt HSM gevormd behoorlijk.
 
 >[!NOTE]
 >
->Vanaf Java 1.7 biedt 64-bits Sun Java voor Windows geen ondersteuning voor de PKCS11-interfaces die Adobe Access DRM nodig heeft voor communicatie met HSM-apparaten. Als u een HSM wilt gebruiken, moet u een 32-bits versie van Java gebruiken of een JDK gebruiken die de volledige PKCS11-interfaces ondersteunt.
+>Vanaf Java 1.7 biedt 64-bits Sun Java voor Windows geen ondersteuning voor de PKCS11-interfaces die Adobe Access DRM vereist om te communiceren met HSM-apparaten. Als u een HSM wilt gebruiken, moet u een 32-bits versie van Java gebruiken of een JDK gebruiken die de volledige PKCS11-interfaces ondersteunt.

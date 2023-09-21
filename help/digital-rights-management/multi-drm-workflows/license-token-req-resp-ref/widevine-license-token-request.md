@@ -1,8 +1,7 @@
 ---
 description: De Widevine-licentie-tokeninterface biedt productie- en testservices.
 title: Token-aanvraag voor Widevine-licentie/reactie
-exl-id: f8d71f63-7783-44f9-8b1b-4b5646dca339
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '858'
 ht-degree: 5%
@@ -25,20 +24,20 @@ Dit HTTP-verzoek retourneert een token dat kan worden ingewisseld voor een Widev
 
 * **Voorbeeldverzoek:**
 
-   ```
-   https://wv-gen.service.expressplay.com/hms/wv/token?customerAuthenticator= 
-   <ExpressPlay customer authenticator identifier>
-   ```
+  ```
+  https://wv-gen.service.expressplay.com/hms/wv/token?customerAuthenticator= 
+  <ExpressPlay customer authenticator identifier>
+  ```
 
 * **Samplereactie:**
 
-   ```
-   https://wv.service.expressplay.com/hms/wv/rights/?ExpressPlayToken=<base64-encoded ExpressPlay token>
-   ```
+  ```
+  https://wv.service.expressplay.com/hms/wv/rights/?ExpressPlayToken=<base64-encoded ExpressPlay token>
+  ```
 
 <!--<a id="section_1E22012EE4B94BB2974D3B16DE8812D9"></a>-->
 
-**Tabel 13: Parameters tokenquery**
+**Tabel 13: Parameters tokenQuery**
 
 <table id="table_ww1_hcs_pv">  
  <thead> 
@@ -79,13 +78,13 @@ Dit HTTP-verzoek retourneert een token dat kan worden ingewisseld voor een Widev
 
 Info `licenseDuration`: <ol><li> Het afspelen wordt gestopt `licenseDuration` seconden na het starten van het afspelen. </li><li> Als u het afspelen wilt stoppen/hervatten gedurende een onbeperkte periode, laat u het bestand weg `licenseDuration` (standaard oneindig). Geef anders op hoeveel tijd eindgebruikers van de stream moeten kunnen genieten. </li></ol>
 
-**Tabel 15: Parameters query-beperking token**
+**Lijst 15: De Parameters van de Vraag van de Symbolische Beperking**
 
 | Query-parameter | Beschrijving | Vereist? |
 |--- |--- |--- |
-| `expirationTime` | Vervaltijd van deze token. Deze waarde MOET een tekenreeks zijn in [RFC 3339](https://www.ietf.org/rfc/rfc3339.txt) datum-/tijdnotatie in de zoneaanduiding &quot;Z&quot; (&quot;Zulu-tijd&quot;) of een geheel getal voorafgegaan door een plusteken (+). Een voorbeeld van een RFC 3339 datum/tijd is 2006-04-14T12:01:10Z. <br> Als de waarde een tekenreeks is in [RFC 3339](https://www.ietf.org/rfc/rfc3339.txt) datum-/tijdnotatie, dan staat deze voor een absolute vervaldatum/tijd voor het token. Als de waarde een geheel getal is dat wordt voorafgegaan door een plusteken (+), wordt deze geïnterpreteerd als een relatief aantal seconden vanaf de uitgifte, dat de token geldig is. Bijvoorbeeld: `+60` geeft één minuut aan. <br> De maximum en standaard (als gespecificeerd niet) symbolische levensduur is 30 dagen. | Nee |
+| `expirationTime` | Vervaltijd van deze token. Deze waarde MOET een tekenreeks zijn in [RFC 339](https://www.ietf.org/rfc/rfc3339.txt) datum-/tijdnotatie in de zoneaanduiding &quot;Z&quot; (&quot;Zulu-tijd&quot;) of een geheel getal voorafgegaan door een plusteken (+). Een voorbeeld van een RFC 3339 datum/tijd is 2006-04-14T12:01:10Z. <br> Als de waarde een tekenreeks is in [RFC 339](https://www.ietf.org/rfc/rfc3339.txt) datum-/tijdnotatie, dan staat deze voor een absolute vervaldatum/tijd voor het token. Als de waarde een geheel getal is dat wordt voorafgegaan door een plusteken (+), wordt deze geïnterpreteerd als een relatief aantal seconden vanaf de uitgifte, dat de token geldig is. Bijvoorbeeld: `+60` geeft één minuut aan. <br> De maximum en standaard (als gespecificeerd niet) symbolische levensduur is 30 dagen. | Nee |
 
-**Tabel 16: Zoekparameters correleren**
+**Tabel 16: Parameters van zoekopdrachten in overeenstemming**
 
 | **Query-parameter** | **Beschrijving** | **Vereist?** |
 |---|---|---|
@@ -135,7 +134,7 @@ Info `licenseDuration`: <ol><li> Het afspelen wordt gestopt `licenseDuration` se
   </tr> 
   <tr> 
    <td> -2018 </td> 
-   <td> Verificatietoken ongeldig: &lt;details&gt; <p>Opmerking: Dit kan gebeuren als de authenticator het mis heeft of wanneer het toegang tot van test API bij *.test.expression.com gebruikend productieauthentiek en vice versa. </p> <p importance="high">Opmerking: De SDK van de Test en het Geavanceerde Hulpmiddel van de Test (ATT) werken slechts met <span class="filepath"> *.test.expression.splay.com </span>overwegende dat de productiemiddelen <span class="filepath"> *.service.expressplay.com </span> </p>. </td> 
+   <td> Verificatietoken ongeldig: &lt;details&gt; <p>Opmerking: dit kan gebeuren als de authenticator het mis heeft of als de test-API wordt benaderd via *.test.expressplay.com en andersom. </p> <p importance="high">Opmerking: de testSDK en het geavanceerde testgereedschap (ATT) werken alleen met <span class="filepath"> *.test.expressplay.com </span>overwegende dat de productiemiddelen <span class="filepath"> *.service.expressplay.com </span> </p>. </td> 
   </tr> 
   <tr> 
    <td> -2019 </td> 
@@ -151,7 +150,7 @@ Info `licenseDuration`: <ol><li> Het afspelen wordt gestopt `licenseDuration` se
   </tr> 
   <tr> 
    <td> -2025 </td> 
-   <td> Ongeldige afspeelduur verhuur </td> 
+   <td> Ongeldige afspeelduur van verhuur </td> 
   </tr> 
   <tr> 
    <td> -2027 </td> 

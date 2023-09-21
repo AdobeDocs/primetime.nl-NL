@@ -2,8 +2,7 @@
 title: Overzicht
 description: Overzicht
 copied-description: true
-exl-id: 7327386b-e796-4fa5-bda4-cacc612a9d1f
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '128'
 ht-degree: 0%
@@ -12,7 +11,7 @@ ht-degree: 0%
 
 # Overzicht{#overview}
 
-Als u licenties aan klanten wilt verlenen, moet u een Adobe Access-licentieserver implementeren. De licentieserver gebruikt de Adobe® Access™ SDK om de volgende taken uit te voeren:
+Als u licenties aan clients wilt verlenen, moet u een Adobe Access-licentieserver implementeren. De licentieserver gebruikt de Adobe® Access™ SDK om de volgende taken uit te voeren:
 
 * Verwerk verificatieaanvragen als gebruikersbenaming-/wachtwoordverificatie wordt ondersteund.
 * Procesvergunningsaanvragen
@@ -23,4 +22,4 @@ Als u licenties aan klanten wilt verlenen, moet u een Adobe Access-licentieserve
 
 Bovendien moet de server bedrijfslogica voor het voor authentiek verklaren van gebruikers verstrekken, bepalend of de gebruikers worden gemachtigd om inhoud te bekijken, en naar keuze vergunningsgebruik te volgen.
 
-Zie voor meer informatie over de Java API die in dit hoofdstuk wordt besproken *Referentie voor Adobe Access API*.
+Voor meer informatie over de Java API die in dit hoofdstuk wordt besproken, raadpleegt u *API-naslaggids voor Adobe*.

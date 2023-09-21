@@ -2,8 +2,7 @@
 title: Overzicht
 description: Overzicht
 copied-description: true
-exl-id: ba6e8fab-b199-4969-b372-06fa6d7a1e4a
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '672'
 ht-degree: 0%
@@ -30,7 +29,7 @@ java -jar AdobeLicenseGenerator.jar -m
 
 * `metadata` - Bevat de Adobe Primetime DRM-metagegevens.
 
-   U kunt dit bestand ophalen van beveiligde inhoud met de `-d -m` in Media Packager.
+  U kunt dit bestand ophalen van beveiligde inhoud met de `-d -m` in Media Packager.
 
 **Een eerder gegenereerde licentie weergeven:**
 
@@ -55,7 +54,7 @@ java -jar AdobeLicenseGenerator.jar -d
  <tbody class="- topic/tbody "> 
   <tr rowsep="1" class="- topic/row "> 
    <td colname="1" class="- topic/entry "><span class="+ topic/ph pr-d/codeph codeph">-c configfile</span> </td> 
-   <td colname="2" class="- topic/entry "> <p class="- topic/p ">Hier geeft u de naam en locatie op van het configuratiebestand. </p> <p class="- topic/p ">Als u geen naam of locatie opgeeft, zoekt de DRM-licentiegenerator naar <span class="filepath"> flashaccessstools.properties</span> in de huidige werkmap. </p> <p>Opmerking: Opties die u op de opdrachtregel opgeeft, hebben voorrang op de opties die u in het configuratiebestand opgeeft. </p> </td> 
+   <td colname="2" class="- topic/entry "> <p class="- topic/p ">Hier geeft u de naam en locatie op van het configuratiebestand. </p> <p class="- topic/p ">Als u geen naam of locatie opgeeft, zoekt de DRM-licentiegenerator naar <span class="filepath"> flashaccessstools.properties</span> in de huidige werkmap. </p> <p>Opmerking: de opties die u op de opdrachtregel opgeeft, hebben voorrang op de opties die u in het configuratiebestand opgeeft. </p> </td> 
   </tr> 
   <tr rowsep="1" class="- topic/row "> 
    <td colname="1" class="- topic/entry "> <p class="- topic/p ">-d <i class="+ topic/ph hi-d/i "><span class="+ topic/ph pr-d/codeph codeph"> licentiebestand</span></i> </p> </td> 
@@ -98,7 +97,7 @@ Voordat u de licentiegenerator uitvoert, moet u waarden voor de eigenschappen va
 
 >[!NOTE]
 >
->Voor eigenschapnamen die *n*, *n* vertegenwoordigt een geheel dat met 1 begint en voor elke instantie van het bezit stijgt.
+>Voor eigenschapnamen die include-bestanden bevatten *n*, *n* vertegenwoordigt een geheel dat met 1 begint en voor elke instantie van het bezit stijgt.
 
 <table frame="all" colsep="1" rowsep="1" class="+ topic/table adobe-d/table " id="table_qk1_rry_n4"> 
  <thead class="- topic/thead "> 
@@ -122,7 +121,7 @@ Voordat u de licentiegenerator uitvoert, moet u waarden voor de eigenschappen va
   </tr> 
   <tr rowsep="1" class="- topic/row "> 
    <td colname="1" class="- topic/entry "><span class="+ topic/ph pr-d/codeph codeph"> licensegen.sign.certpass</span> </td> 
-   <td colname="2" class="- topic/entry ">Het wachtwoord dat het bestand beveiligt dat u met het <span class="+ topic/ph pr-d/codeph codeph"> licensegen.sign.certfile</span> optie. </td> 
+   <td colname="2" class="- topic/entry ">Het wachtwoord dat het bestand beveiligt dat u met het <span class="+ topic/ph pr-d/codeph codeph"> licensegen.sign.certfile</span> -optie. </td> 
   </tr> 
   <tr rowsep="1" class="- topic/row "> 
    <td colname="1" class="- topic/entry "><span class="+ topic/ph pr-d/codeph codeph">licensegen.domainca.n</span> </td> 

@@ -1,8 +1,7 @@
 ---
 description: Voor live/lineaire inhoud vervangt TVSDK een segment van de inhoud van de hoofdstream door een ad-einde van dezelfde duur, zodat de tijdlijnduur ongewijzigd blijft.
 title: Live/lineaire advertentie oplossen en invoegen
-exl-id: 2097520f-283b-4839-af5e-b1cfb0f3f359
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '256'
 ht-degree: 0%
@@ -20,7 +19,7 @@ TVSDK voegt advertenties op de volgende manieren in:
 * **Pre-roll**, die voor de inhoud wordt geplaatst.
 * **Midden rol**, die in het midden van de inhoud wordt geplaatst.
 
-TVSDK accepteert het ad-einde, zelfs als de duur langer of korter is dan de vervangende duur van het actiepunt. TVSDK biedt standaard ondersteuning voor de `#EXT-X-CUE` activeer als een geldige advertentiemarkering bij het omzetten en plaatsen van advertenties. Voor deze markering is het metagegevensveld vereist `DURATION` waarde die moet worden uitgedrukt in seconden en de unieke id van de cue. Bijvoorbeeld:
+TVSDK accepteert het ad-einde, zelfs als de duur langer of korter is dan de vervangende duur van het actiepunt. TVSDK biedt standaard ondersteuning voor de `#EXT-X-CUE` activeer als een geldige advertentiemarkering bij het omzetten en plaatsen van advertenties. Deze markering vereist het metagegevensveld `DURATION` waarde die moet worden uitgedrukt in seconden en de unieke id van de actielijn. Bijvoorbeeld:
 
 ```
 #EXT-X-CUE:DURATION=27,ID="..."

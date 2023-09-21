@@ -2,8 +2,7 @@
 title: Eigenschappen van configuratiebestand
 description: Eigenschappen van configuratiebestand
 copied-description: true
-exl-id: ce4193fa-d217-4134-b08e-715c2cc57c84
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '314'
 ht-degree: 0%
@@ -12,7 +11,7 @@ ht-degree: 0%
 
 # Eigenschappen van configuratiebestand {#configuration-file-properties}
 
-Voordat u de licentiegenerator uitvoert, geeft u waarden op voor de eigenschappen van de licentiegenerator. In het configuratiebestand worden de volgende eigenschappen opgegeven. Voor eigenschapnamen die *n*, *n* vertegenwoordigt een geheel dat met 1 begint en voor elke instantie van het bezit stijgt.
+Voordat u de licentiegenerator uitvoert, geeft u waarden op voor de eigenschappen van de licentiegenerator. In het configuratiebestand worden de volgende eigenschappen opgegeven. Voor eigenschapnamen die include-bestanden bevatten *n*, *n* vertegenwoordigt een geheel dat met 1 begint en voor elke instantie van het bezit stijgt.
 
 <table frame="all" colsep="1" rowsep="1" class="+ topic/table adobe-d/table " id="table_qk1_rry_n4"> 
  <thead class="- topic/thead "> 
@@ -24,7 +23,7 @@ Voordat u de licentiegenerator uitvoert, geeft u waarden op voor de eigenschappe
  <tbody class="- topic/tbody "> 
   <tr rowsep="1" class="- topic/row "> 
    <td colname="1" class="- topic/entry "><span class="+ topic/ph pr-d/codeph codeph"> licensegen.minClientVersion</span> </td> 
-   <td colname="2" class="- topic/entry "> Stel de minimaal ondersteunde clientversie in. Als deze optie niet is ingesteld, worden standaard alle versies ondersteund. Stel deze waarde in om te bepalen hoe oudere clients reageren op licentievereisten die ze niet ondersteunen. Geef x (voor Adobe Access x.0) op, waarbij x het hoofdreleasenummer is. </td> 
+   <td colname="2" class="- topic/entry "> Stel de minimaal ondersteunde clientversie in. Als deze optie niet is ingesteld, worden standaard alle versies ondersteund. Stel deze waarde in om te bepalen hoe oudere clients reageren op licentievereisten die ze niet ondersteunen. Specificeer x (voor de Toegang van de Adobe x.0) waar x het belangrijkste versieaantal is. </td> 
   </tr> 
   <tr rowsep="1" class="- topic/row "> 
    <td colname="1" class="- topic/entry "><span class="+ topic/ph pr-d/codeph codeph"> licensegen.keyServerCert</span> </td> 
@@ -36,7 +35,7 @@ Voordat u de licentiegenerator uitvoert, geeft u waarden op voor de eigenschappe
   </tr> 
   <tr rowsep="1" class="- topic/row "> 
    <td colname="1" class="- topic/entry "><span class="+ topic/ph pr-d/codeph codeph"> licensegen.sign.certpass</span> </td> 
-   <td colname="2" class="- topic/entry ">Het wachtwoord waarmee het bestand wordt beveiligd dat is opgegeven door <span class="+ topic/ph pr-d/codeph codeph"> licensegen.sign.certfile.</span> </td> 
+   <td colname="2" class="- topic/entry ">Het wachtwoord dat wordt gebruikt om het bestand te beveiligen dat is opgegeven door <span class="+ topic/ph pr-d/codeph codeph"> licensegen.sign.certfile.</span> </td> 
   </tr> 
   <tr rowsep="1" class="- topic/row "> 
    <td colname="1" class="- topic/entry "><span class="+ topic/ph pr-d/codeph codeph">licensegen.domainca.n</span> </td> 

@@ -1,8 +1,7 @@
 ---
 description: MediaPlayerStatus-objecten bieden informatie over wijzigingen in de spelerstatus. De voorwerpen van het bericht verstrekken informatie over waarschuwingen en fouten. Fouten die het afspelen van de video stoppen, leiden ook tot een wijziging in de status van de speler. U implementeert gebeurtenislisteners om gebeurtenissen vast te leggen en erop te reageren (MediaPlayerEvent-objecten).
 title: Meldingen en gebeurtenissen voor spelerstatus, activiteit, fouten en logboekregistratie
-exl-id: c25e834e-ffa0-444c-9285-331e6841ac29
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '517'
 ht-degree: 0%
@@ -26,10 +25,10 @@ TVSDK verstrekt een chronologische lijst van `MediaPlayerNotification` en elke k
 * Een tijdstempel
 * Diagnostische metagegevens die bestaan uit de volgende elementen:
 
-   * `type`: INFORMATIE, WAARSCHUWING of FOUT.
+   * `type`: INFO, WARN of ERROR.
    * `code`: Een numerieke weergave van de kennisgeving.
    * `name`: Een door mensen leesbare beschrijving van de melding, zoals SEEK_ERROR
-   * `metadata`: Sleutel-waardeparen die relevante informatie over de kennisgeving bevatten. Een toets met de naam `URL` Hiermee wordt een waarde opgegeven die een URL is die gerelateerd is aan het bericht.
+   * `metadata`: sleutel/waardeparen die relevante informatie over de kennisgeving bevatten. Bijvoorbeeld een toets met de naam `URL` Hiermee wordt een waarde opgegeven die een URL is die gerelateerd is aan het bericht.
 
    * `innerNotification`: Een verwijzing naar een andere `MediaPlayerNotification` object dat rechtstreeks van invloed is op deze melding.
 
@@ -75,7 +74,7 @@ Hier is een voorbeeld van hoe u meldingen kunt ophalen:
    >
    >1. Verlaag het tijdinterval dat de draad drijft die voor nieuwe gebeurtenissen opiniepeilt.
    >1. Vergroot de lijst met meldingen.
-
+   >
 
 1. Serialiseren van de meest recente berichtgebeurtenisberichten in JSON-indeling en verzenden de berichten naar een externe server voor nabewerking.
 

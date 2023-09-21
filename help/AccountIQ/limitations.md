@@ -1,8 +1,7 @@
 ---
 title: Beperkingen en bekende problemen
 description: Bekende problemen in het product.
-exl-id: 08d65716-8b6a-4300-acda-fec63e1e6815
-source-git-commit: 326f97d058646795cab5d062fa5b980235f7da37
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '415'
 ht-degree: 0%
@@ -11,9 +10,9 @@ ht-degree: 0%
 
 # Bekende problemen en beperkingen {#known-issues}
 
-Adobe streeft ernaar robuuste functionaliteit te bieden en naadloze gebruikerservaring te bieden via haar aanbod. De huidige versie (versie 1.0) van Account IQ biedt analyses voor het delen van gebruik en abonnementen voor streamingproviders met een hoge mate van vertrouwen. De volgende beperkingen worden echter in toekomstige releaseversies opgelost.
+Adobe streeft ernaar robuuste functionaliteit en naadloze gebruikerservaring te bieden via haar aanbod. De huidige versie (versie 1.0) van Account IQ biedt analyses voor het delen van gebruik en abonnementen voor streamingproviders met een hoge mate van vertrouwen. De volgende beperkingen worden echter in toekomstige releaseversies opgelost.
 
-* Bij het definiëren van cohorten in het dashboard of de rapportpagina&#39;s is er momenteel geen optie om metriek toe te voegen, zoals **aantal apparaten** om het segment te verfijnen. Deze mogelijkheid is beschikbaar in een toekomstige versie.
+* Bij het definiëren van cohorten in het dashboard of de rapportpagina&#39;s is er momenteel geen optie om metriek toe te voegen, zoals **aantal apparaten** het segment verfijnen. Deze mogelijkheid is beschikbaar in een toekomstige versie.
 
 * Bij het schatten van de delingsscores voor individuele rekeningen, neemt Account IQ een conservatieve benadering die bedrijven in staat stelt om met grote mate van vertrouwen op het delen te handelen. Deze benadering onderschat echter meestal het totale bedrag aan delen wanneer dit over veel rekeningen wordt geaggregeerd.
 

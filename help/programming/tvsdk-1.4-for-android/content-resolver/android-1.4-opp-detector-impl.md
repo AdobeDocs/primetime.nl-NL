@@ -1,8 +1,7 @@
 ---
 description: U kunt uw eigen opportuniteitsdetectors implementeren door de interface PlacementOpportunityDetector te implementeren.
 title: Een aangepaste opportuniteitsdetector implementeren
-exl-id: d78949a0-2c76-4976-9358-05f3db86781e
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '135'
 ht-degree: 0%
@@ -55,7 +54,7 @@ U kunt uw eigen opportuniteitsdetectors implementeren door de interface Placemen
 
    1. Nadat de plaatsingsmogelijkheden voor alle ontdekte getimede meta-gegevensvoorwerpen worden gecreeerd, keer eenvoudig terug `PlacementOpportunity` lijst.
 
-Dit is een voorbeeld van een aangepaste plaatsingsopportuniteitsdetector:
+Dit is een voorbeelddetector voor aangepaste plaatsingsmogelijkheden:
 
 ```java
 public class CustomPlacementOpportunityDetector implements PlacementOpportunityDetector { 

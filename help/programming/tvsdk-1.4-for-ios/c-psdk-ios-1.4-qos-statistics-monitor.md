@@ -1,8 +1,7 @@
 ---
 description: De kwaliteit van de dienst (QoS) biedt een gedetailleerde mening in hoe de videomotor presteert. TVSDK biedt gedetailleerde statistieken over het afspelen, bufferen en apparaten.
 title: Kwaliteit van de dienststatistieken
-exl-id: 7684605f-e049-47bf-8073-155d1ff000e0
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '197'
 ht-degree: 0%
@@ -13,7 +12,7 @@ ht-degree: 0%
 
 De kwaliteit van de dienst (QoS) biedt een gedetailleerde mening in hoe de videomotor presteert. TVSDK biedt gedetailleerde statistieken over het afspelen, bufferen en apparaten.
 
-## De playback van QOS, het bufferen, en apparatenstatistieken lezen {#section_9996406E2D814FA382B77E3041CB02BC}
+## De playback van QOS, het als buffer optreden voor, en apparatenstatistieken lezen {#section_9996406E2D814FA382B77E3041CB02BC}
 
 U kunt de statistische gegevens over het afspelen, bufferen en apparaat lezen vanuit de `PTQOSProvider` klasse.
 
@@ -25,7 +24,7 @@ Het biedt ook informatie over het apparaat, zoals het model, het besturingssyste
 >
 >U kunt de grootte van de afspeelbuffer niet wijzigen, maar u kunt wel de status van de buffergrootte voor foutopsporing of analyse controleren. `PTPlaybackInformation` bevat eigenschappen zoals `playbackBufferFull` en `playbackLikelyToKeepUp`.
 
-1. Instantiëren van een mediaspeler.
+1. Een mediaspeler instantiëren.
 1. Een `PTQOSProvider` en aan de mediaspeler koppelen.
 
    De `PTQOSProvider` constructor gebruikt een spelercontext zodat deze apparaatspecifieke informatie kan ophalen.

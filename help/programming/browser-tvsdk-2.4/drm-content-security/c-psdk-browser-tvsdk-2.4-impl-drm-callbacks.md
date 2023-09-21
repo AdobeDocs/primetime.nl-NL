@@ -1,8 +1,7 @@
 ---
 description: Met de volgende nieuwe API's kunt u DRM-callbacks definiëren.
 title: DRM-callbacks implementeren
-exl-id: 3aaa502d-9273-4320-a022-642fee75dafd
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '168'
 ht-degree: 0%
@@ -15,7 +14,7 @@ Met de volgende nieuwe API&#39;s kunt u DRM-callbacks definiëren.
 
 <!--<a id="section_1090BFDB2C1D4EA4AAC9F9A6EC9DCD51"></a>-->
 
-U kunt een callback-functie definiëren (bijvoorbeeld `parseContentIdCallback`) om de inhoud-id te parseren en in te stellen op `drmManager` door `setParseContentIdCallback` API.
+U kunt een callback-functie definiëren (bijvoorbeeld `parseContentIdCallback`) om de inhoud-id te parseren en in te stellen op `drmManager` door de `setParseContentIdCallback` API.
 
 ```js
 var arrayToString = function (array) { 
@@ -38,7 +37,7 @@ drmManager.setParseContentIdCallback(parseContentIdCallback);
 
 <!--<a id="section_1E082B428EA74D9CA11C052158A83947"></a>-->
 
-U kunt een callback-functie definiëren (bijvoorbeeld `onCertificateResponseCallback`) om een reactie van het tekstcertificaat te verwerken en de functie in te stellen op `drmManager` door `setCertificateResponseCallback` API. U kunt instellen `setCertificateResponseCallback` om het standaardgedrag te overschrijven. Als u bijvoorbeeld een `certificateResponseType` die niet `ArrayBuffer`kunt u deze callback gebruiken om de certificaatreactie om te zetten in de `ArrayBuffer` type.
+U kunt een callback-functie definiëren (bijvoorbeeld `onCertificateResponseCallback`) om een reactie van het tekstcertificaat te verwerken en de functie in te stellen op `drmManager` door de `setCertificateResponseCallback` API. U kunt instellen `setCertificateResponseCallback` om het standaardgedrag te overschrijven. Als u bijvoorbeeld een `certificateResponseType` die niet `ArrayBuffer`kunt u deze callback gebruiken om de certificaatreactie om te zetten in de `ArrayBuffer` type.
 
 ```js
 var base64DecodeUint8Array = function (input) { 

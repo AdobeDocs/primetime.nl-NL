@@ -2,8 +2,7 @@
 title: Referentie servereigenschappen
 description: Referentie servereigenschappen
 copied-description: true
-exl-id: 8724d097-7cba-4ca9-b597-df56f80b2e9c
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '870'
 ht-degree: 0%
@@ -62,7 +61,7 @@ ht-degree: 0%
      <li id="li_4E7D7F76085D411688B5003E855F860B"><span class="codeph"> contentServer.timeout =</span> [Time-out verbinding, in seconden] </li> 
      <li id="li_4B751F238A1643A7AC730CD9354887B6"><span class="codeph"> contentServer.pollFrequency =</span> [Hoe vaak u de server opiniepeilt, in dagen (minimaal 1 dag)] </li> 
      <li id="li_8E23C3C6E7EF46B0AFDD7993DE79F142"><span class="codeph"> contentServer.pollTime =</span> [Tijd van de dag om de server, in notulen sinds middernacht te poll] </li> 
-    </ul> <p>Lees de sectie goed door <i>CRL- en ECI-bestanden</i> over het up-to-date houden van de cache. </p> </td> 
+    </ul> <p>Lees de sectie goed <i>CRL- en ECI-bestanden</i> over het up-to-date houden van de cache. </p> </td> 
   </tr> 
   <tr> 
    <td> Individuele CA CRL </td> 
@@ -74,11 +73,11 @@ ht-degree: 0%
     <p> <code>
       cert.machine.crldp__DEV=<span>tps://onprem-individualization.com</span>CRL/onprem-individualization-ca.crl
      </code></p>
-     <p>De licentieserver moet deze CRL automatisch downloaden zodra een licentieaanvraag is afgehandeld. </p> <p importance="high">Opmerking: Dit distributiepunt is <i>niet</i> gecontroleerd door Primetime DRM voor geldigheid. U moet controleren of deze URL geldig is. Fouten als gevolg van een ongeldige URL worden pas weergegeven wanneer validatiefouten worden weergegeven op de licentieserver. </p> </td> 
+     <p>De licentieserver moet deze CRL automatisch downloaden zodra een licentieaanvraag is afgehandeld. </p> <p importance="high">Opmerking: dit distributiepunt is <i>niet</i> gecontroleerd door Primetime DRM voor geldigheid. U moet controleren of deze URL geldig is. Fouten als gevolg van een ongeldige URL worden pas weergegeven wanneer validatiefouten worden weergegeven op de licentieserver. </p> </td> 
   </tr> 
   <tr> 
    <td> Logboekregistratie </td> 
-   <td>Configureer de <span class="filepath"> AdobeInitial.properties</span> voor registratie, indien nodig. </td> 
+   <td>Vorm <span class="filepath"> AdobeInitial.properties</span> voor registratie, indien nodig. </td> 
    <td> 
     <ul id="ul_j1v_kw2_jr"> 
      <li id="li_B60002B33A3042FCBE1F694454966469"><span class="codeph"> adobe.weblogs.loc =</span> [Map waarin logbestanden worden gemaakt] </li> 
@@ -86,7 +85,7 @@ ht-degree: 0%
      <li id="li_610FAF239A554CE59DAC455174F0CF0A"><span class="codeph"> log.FileName =</span> [Voorvoegsel voor logbestanden. Datum/tijd en extensie ".log" worden toegevoegd aan de bestandsnaam] </li> 
      <li id="li_1F2913B209BE4A0E8207FAAD052D1764"><span class="codeph"> log.RollInterval =</span> [Hiermee bepaalt u hoe vaak de logbestanden worden gewist.] </li> 
      <li id="li_3F46C15488114BB5B41035F710E7A19F"><span class="codeph"> log.RollSize =</span> [De logboeken rollen wanneer ze deze grootte bereiken (de logboeken worden verschoven wanneer een van de <span class="codeph"> RollInterval</span> of <span class="codeph"> RollSize</span> is bereikt, al naar gelang welke het eerst komt)] </li> 
-     <li id="li_DA32E862F7B0413885DA20633B682484"><span class="codeph"> log.ReportLogging.Enabled =</span>[ [true] | false ] Geeft aan of een afzonderlijk bestand moet worden gegenereerd dat gegevens bevat die door Adobe worden gebruikt om Individualisatierapporten te genereren.] </li> 
+     <li id="li_DA32E862F7B0413885DA20633B682484"><span class="codeph"> log.ReportLogging.Enabled =</span>[ [true] | false ] Geeft aan of een afzonderlijk bestand moet worden gegenereerd dat gegevens bevat die door de Adobe worden gebruikt om Individualisatierapporten te genereren.] </li> 
      <li id="li_465CC6D81B8A484CBF4E7A39F7AF86AA"><span class="codeph"> log.ReportLogging.FileName =</span> [Voorvoegsel voor rapportlogbestanden. Datum/tijd en <span class="filepath"> .log</span> extensie wordt toegevoegd aan de bestandsnaam. De l<span class="codeph"> og.Level</span> eigenschap is niet van toepassing op dit logbestand, maar <span class="codeph"> log.RollInterval</span> en <span class="codeph"> log.RollSize</span> do.] </li> 
     </ul> </td> 
   </tr> 
@@ -96,7 +95,7 @@ ht-degree: 0%
    <td> 
     <ul id="ul_b3b_g1f_jr"> 
      <li id="li_FACF07CB332D416E91FD34DE48152FAA"><span class="codeph"> deviceinfo.key =</span> [Encrypted Base64 coded sleutel die aan HMAC apparateninfo wordt gebruikt alvorens het in het machinetoken te omvatten. De sleutel kan voor de Dev/Staging/Productomgevingen verschillend zijn, maar moet voor alle servers in een bepaalde milieu het zelfde zijn. ] </li> 
-     <li id="li_B19C77FD6F91496294DBF836A1922EE1"><span class="codeph"> keys.kgs.server =</span> [Locatie van Key Gen Server (één host/poort die een pool van sleutelservers vertegenwoordigt) ] </li> 
+     <li id="li_B19C77FD6F91496294DBF836A1922EE1"><span class="codeph"> keys.kgs.server =</span> [Locatie van Key Gen Server (één host/poort, die een pool van sleutelservers vertegenwoordigt) ] </li> 
      <li id="li_5DA3C89770804B148EF6FAF01A5AD958"><span class="codeph"> keys.MinQueueSize =</span> [Een andere batch sleutels ophalen van de KGS wanneer er nog zoveel toetsen in de wachtrij staan] </li> 
      <li id="li_0C2E5F2FDB824182A6BE418B041D2F28"><span class="codeph"> status.Timeout =</span> [De pagina van de Status zal KGS pingelen om te bepalen als het de server kan bereiken. Het zal tijd uit als een reactie niet terug in de gespecificeerde hoeveelheid tijd wordt ontvangen.] </li> 
     </ul> </td> 

@@ -1,8 +1,7 @@
 ---
 description: U kunt meldingen gebruiken om realtime aanmelding in uw videotoepassing te implementeren.
 title: Logboekregistratie en foutopsporing in realtime toevoegen
-exl-id: 06ba7207-bb6e-4f77-8575-746505b131bd
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '237'
 ht-degree: 0%
@@ -19,7 +18,7 @@ Het berichtsysteem staat u toe om het registreren en het zuiveren informatie voo
 >
 >Het registreren achtereind maakt geen deel uit van een productieconfiguratie en wordt niet verwacht om hoog-ladingsverkeer te behandelen. Als uw implementatie niet volledig hoeft te zijn, kunt u beter de efficiëntie van gegevensoverdracht in overweging nemen om te voorkomen dat uw systeem wordt overbelast.
 
-Hier is een voorbeeld van hoe u meldingen kunt ophalen.
+Hier is een voorbeeld van hoe te om berichten terug te winnen.
 
 1. Creeer een op tijdopnemer-gebaseerde uitvoeringsdraad voor uw videotoepassing die periodiek de gegevens vraagt die door het TVSDK berichtsysteem worden verzameld.
 

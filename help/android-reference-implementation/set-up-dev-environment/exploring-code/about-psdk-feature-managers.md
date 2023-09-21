@@ -1,8 +1,7 @@
 ---
 title: Functiemanagers
 description: De managers van de eigenschap verstrekken een manier voor u om individuele eigenschappen te controleren zonder volledige TVSDK in onderzoek naar code voor één eigenschap over te steken die in veelvoudige plaatsen zou kunnen worden verspreid.
-exl-id: dbf2dc8b-6067-4d94-9c3c-553452b7ffd9
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '390'
 ht-degree: 0%
@@ -16,16 +15,13 @@ De managers van de eigenschap verstrekken een manier voor u om individuele eigen
 De eigenschapmanagers voeren de volgende taken uit:
 
 * **Triggers TVSDK-functies.**
-Dit zijn functieaanroepen om een TVSDK-functie te activeren. Bijvoorbeeld: 
-`PlaybackManager.play()` wordt aangeroepen wanneer de toepassing van de speler het afspelen van de video moet starten.
+Dit zijn functieaanroepen om een TVSDK-functie te activeren. Bijvoorbeeld: `PlaybackManager.play()` wordt aangeroepen wanneer de toepassing van de speler het afspelen van de video moet starten.
 
 * **Luistert naar TVSDK-gebeurtenissen.**
-De functiemanager moet naar gebeurtenissen van TVSDK luisteren om informatie van TVSDK te verwerven. Bijvoorbeeld: 
-`AdsManager` luistert naar TVSDK Ads-gebeurtenissen die op de hoogte moeten worden gebracht wanneer de advertentie wordt gestart.
+De functiemanager moet naar gebeurtenissen van TVSDK luisteren om informatie van TVSDK te verwerven. Bijvoorbeeld: `AdsManager` luistert naar TVSDK Ads-gebeurtenissen die op de hoogte moeten worden gebracht wanneer de advertentie wordt gestart.
 
 * **Verzendt gebeurtenissen naar de manager.**
-Nadat de eigenschapmanagers de gebeurtenissen van TVSDK ontvangen en verwerken, brengen zij de cliëntkant op om de gebeurtenis te behandelen. Bijvoorbeeld na 
-`AdsManager` ontvangt een gebeurtenis van het begin van het advertentieverlies, vertelt het spelerfragment om deze verandering in UI (onbruikbaar maken schrobt bar, toon de advertentie bedekking, enz.) te weerspiegelen.
+Nadat de eigenschapmanagers de gebeurtenissen van TVSDK ontvangen en verwerken, brengen zij de cliëntkant op om de gebeurtenis te behandelen. Bijvoorbeeld na `AdsManager` ontvangt een gebeurtenis van het begin van het advertentieverlies, vertelt het spelerfragment om deze verandering in UI (onbruikbaar maken schrobt bar, toon de advertentie bedekking, enz.) te weerspiegelen.
 
 De implementatie van de Primetime-verwijzing omvat de volgende functiemanagers:
 

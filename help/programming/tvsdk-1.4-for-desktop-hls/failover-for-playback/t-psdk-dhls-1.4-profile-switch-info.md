@@ -1,8 +1,7 @@
 ---
 description: Wanneer de media speler zijn huidige profiel aan een nieuw profiel overschakelt, kunt u informatie over de schakelaar terugwinnen, met inbegrip van wanneer het geschakeld, breedte en hoogteinformatie, of waarom een verschillende beetjetarief werd gebruikt.
 title: Informatie ophalen over profielschakelaar
-exl-id: b46909fe-666a-4730-8922-15c3eb7a1cba
-source-git-commit: 0019a95fa9ca6d21249533d559ce844897ab67cf
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '274'
 ht-degree: 0%
@@ -19,10 +18,10 @@ Wanneer de media speler zijn huidige profiel aan een nieuw profiel overschakelt,
 1. Wanneer de gebeurtenis voorkomt, controleer de volgende eigenschappen voor informatie over de schakelaar:
 
    * `profile`: Id voor het nieuwe profiel dat wordt gebruikt.
-   * `time`: De stroomtijd waarbij de schakelaar voorkwam.
-   * `description`: Een tekstbeschrijving van de reden voor een wijziging van de bitsnelheid, als een tekenreeks met door puntkomma&#39;s gescheiden sleutel/waardeparen. Bevat maximaal één `Reason` en één `Bitrate`. Als de informatie niet beschikbaar is of de bitsnelheid niet is gewijzigd, is deze tekenreeks leeg.
+   * `time`: De streamtijd waarop de switch plaatsvond.
+   * `description`: Beschrijving van de reden voor een wijziging van de bitsnelheid, als een tekenreeks met door puntkomma&#39;s gescheiden sleutel/waardeparen. Bevat maximaal één `Reason` en één `Bitrate`. Als de informatie niet beschikbaar is of de bitsnelheid niet is gewijzigd, is deze tekenreeks leeg.
 
-      <table id="table_E400FD9C57FF40CBAC14AF6847CD8301"> 
+     <table id="table_E400FD9C57FF40CBAC14AF6847CD8301"> 
        <thead> 
          <tr> 
          <th colname="col1" class="entry"> Sleutelnaam </th> 
@@ -51,20 +50,20 @@ Wanneer de media speler zijn huidige profiel aan een nieuw profiel overschakelt,
        </tbody> 
        </table>
 
-      Hier volgen enkele voorbeelden van geretourneerde waarden `description` tekenreeksen:
+     Hier volgen enkele voorbeelden van geretourneerde waarden `description` tekenreeksen:
 
-      ```
-      "Bitrate::=up;Reason::=Network Adaptation;" 
-      
-      "Bitrate::=down;Reason::=Failover;"
-      ```
+     ```
+     "Bitrate::=up;Reason::=Network Adaptation;" 
+     
+     "Bitrate::=down;Reason::=Failover;"
+     ```
 
    * `width`: Geheel getal dat de breedte in pixels aangeeft.
    * `height`: Geheel getal dat de hoogte in pixels aangeeft.
 
-      >[!NOTE]
-      >
-      >Breedte- en hoogtegegevens zijn alleen beschikbaar als ze zijn opgenomen in het dialoogvenster `RESOLUTION` -tag in het M3U8-manifest. Als de informatie niet in de M3U8 is opgenomen, worden de eigenschappen width en height ingesteld op 0, aangezien deze geen deel uitmaken van de profielinformatie.
+     >[!NOTE]
+     >
+     >Breedte- en hoogtegegevens zijn alleen beschikbaar als ze zijn opgenomen in het dialoogvenster `RESOLUTION` -tag in het M3U8-manifest. Als de informatie niet in de M3U8 is opgenomen, worden de eigenschappen width en height ingesteld op 0, aangezien deze geen deel uitmaken van de profielinformatie.
 
 <!--<a id="example_A713D420AE2E4E3CB7B78C6BC732BE90"></a>-->
 

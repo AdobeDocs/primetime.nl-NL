@@ -2,8 +2,7 @@
 title: Lijst van gewezen personen van DRM-clients die geen toegang hebben tot beveiligde inhoud
 description: Lijst van gewezen personen van DRM-clients die geen toegang hebben tot beveiligde inhoud
 copied-description: true
-exl-id: 74ddb5ed-4e68-4570-9cd5-bfc699609972
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '377'
 ht-degree: 0%
@@ -12,11 +11,11 @@ ht-degree: 0%
 
 # Lijst van gewezen personen van DRM-clients die geen toegang hebben tot beveiligde inhoud {#blocklist-of-drm-clients-restricted-from-accessing-protected-content}
 
-**Adobe Access DRM-moduleversies hebben geen toegang tot beveiligde inhoud.**
+**Adobe Access DRM-moduleversies hebben beperkte toegang tot beveiligde inhoud.**
 
 Hiermee geeft u de DRM-client op die geen toegang heeft tot inhoud. Specified by DRM client version and platform.
 
-Voorbeeld van gebruik: In geval van een inbreuk op de beveiliging kan een nieuwere versie van de DRM-client worden opgegeven als de minimale versie die vereist is voor het aanschaffen van licenties en het afspelen van inhoud. De licentieserver controleert of de DRM-client die de licentieaanvraag indient, aan de versievereisten voldoet voordat een licentie wordt uitgegeven. De DRM-client controleert ook de DRM-versie in de licentie voordat de inhoud wordt afgespeeld. Deze clientcontrole is vereist in het geval van domeinen waar een licentie naar een andere computer kan worden overgedragen.
+Voorbeeld: in geval van een inbreuk op de beveiliging kan een nieuwere versie van de DRM-client worden opgegeven als de minimale versie die vereist is voor het aanschaffen van licenties en het afspelen van inhoud. De licentieserver controleert of de DRM-client die de licentieaanvraag indient, aan de versievereisten voldoet voordat een licentie wordt uitgegeven. De DRM-client controleert ook de DRM-versie in de licentie voordat de inhoud wordt afgespeeld. Deze clientcontrole is vereist in het geval van domeinen waar een licentie naar een andere computer kan worden overgedragen.
 
 Een DRM-clientversie kan worden geïdentificeerd aan de hand van de kenmerken die in de volgende tabel zijn opgegeven:
 
@@ -24,8 +23,8 @@ Een DRM-clientversie kan worden geïdentificeerd aan de hand van de kenmerken di
 |---|---|---|---|
 | Omgeving | &quot;PC&quot;, &quot;PortingKit&quot; | Exacte overeenkomst | Geeft aan of de client op een desktopcomputer of op een ander apparaat wordt uitgevoerd. |
 | OS | &quot;Win&quot;, &quot;Mac&quot;, &quot;Linux&quot;, &quot;Android&quot;, &quot;iOS&quot;, &quot;ChromeOS&quot; | Exacte overeenkomst | Platform |
-| Architectuur | “32”, “64” | Exacte overeenkomst | 32-bits of 64-bits |
-| Schermtype | &quot;PC&quot;, &quot;Mobile&quot;, &quot;TV&quot; | Exacte overeenkomst |  |
+| Architectuur | “32”, “64” | Exacte overeenkomst | 32 bits of 64 bits |
+| Schermtype | &quot;PC&quot;, &quot;Mobile&quot;, &quot;TV&quot; | Exacte overeenkomst | |
 | Runtimeversie | Een geldig versienummer. Bijvoorbeeld &quot;2.0.0&quot;, &quot;3.0&quot;, &quot;4.0&quot;, &quot;11.0&quot;, enz. | Komt overeen met als de clientversie kleiner dan of gelijk is aan de opgegeven versie. | Versienummer is opgegeven als een combinatie van getallen en punten (&quot;.&quot;) van elke lengte. |
 | DRM-bibliotheekversie | Een geldig versienummer. Bijvoorbeeld &quot;2.0.0&quot;. | Komt overeen met als de clientversie kleiner dan of gelijk is aan de opgegeven versie. | Versienummer is opgegeven als een combinatie van getallen en punten (&quot;.&quot;) van elke lengte. |
 | OEM-leverancier | Tekenreeks OEM-leverancier | Exacte overeenkomst | De identificatiereeks van de Leverancier van OEM voor het apparaat gebruikend de het Porteren uitrusting. |

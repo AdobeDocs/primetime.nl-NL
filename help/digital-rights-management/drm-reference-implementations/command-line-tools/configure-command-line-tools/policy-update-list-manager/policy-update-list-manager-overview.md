@@ -2,8 +2,7 @@
 title: Overzicht
 description: Overzicht
 copied-description: true
-exl-id: 1e06bead-4b45-4bf0-8bcf-1ea376af6bd8
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '520'
 ht-degree: 0%
@@ -22,7 +21,7 @@ Voordat u het opdrachtregelprogramma Manager voor de lijst met beleidsupdates ui
 
 ## Beheer opdrachtregelgebruik van de lijst met beleidsupdates {#policy-update-list-manager-command-line-usage}
 
-**Een lijst met beleidsupdates maken:**
+**Een beleidsupdate maken:**
 
 ```
 java -jar AdobePolicyUpdateListManager.jar  
@@ -47,7 +46,7 @@ java -jar AdobePolicyUpdateListManager.jar -d
 
 * `filename` De naam van het bestand met de lijst met beleidsupdates.
 
-**Tabel 4: Opties voor opdrachtregel**
+**Tabel 4: Opties voor opdrachtregels**
 
 <table frame="all" colsep="1" rowsep="1" class="+ topic/table adobe-d/table " id="table_ghb_jqy_n4">  
  <thead class="- topic/thead "> 
@@ -59,7 +58,7 @@ java -jar AdobePolicyUpdateListManager.jar -d
  <tbody class="- topic/tbody "> 
   <tr rowsep="1" class="- topic/row "> 
    <td colname="1" class="- topic/entry "> <span class="+ topic/ph pr-d/codeph codeph"> -c configfile </span> </td> 
-   <td colname="2" class="- topic/entry "> <p class="- topic/p ">Hier geeft u de naam en locatie op van het configuratiebestand. </p> <p class="- topic/p ">Als u geen naam of een locatie opgeeft, zoekt de DRM Policy Update List Manager naar <span class="filepath"> flashaccessstools.properties </span> in de huidige werkmap. </p> <p>Opmerking: Opties die u op de opdrachtregel opgeeft, hebben voorrang op de opties die u in het configuratiebestand opgeeft. </p> </td> 
+   <td colname="2" class="- topic/entry "> <p class="- topic/p ">Hier geeft u de naam en locatie op van het configuratiebestand. </p> <p class="- topic/p ">Als u geen naam of een locatie opgeeft, zoekt de DRM Policy Update List Manager naar <span class="filepath"> flashaccessstools.properties </span> in de huidige werkmap. </p> <p>Opmerking: de opties die u op de opdrachtregel opgeeft, hebben voorrang op de opties die u in het configuratiebestand opgeeft. </p> </td> 
   </tr> 
   <tr rowsep="1" class="- topic/row "> 
    <td colname="1" class="- topic/entry "> <p class="- topic/p "> <span class="+ topic/ph pr-d/codeph codeph"> -d bestandsnaam </span> </p> </td> 
@@ -71,7 +70,7 @@ java -jar AdobePolicyUpdateListManager.jar -d
   </tr> 
   <tr rowsep="1" class="- topic/row "> 
    <td colname="1" class="- topic/entry "> <span class="+ topic/ph pr-d/codeph codeph"> -f bestandsnaam [certfile] </span> </td> 
-   <td colname="2" class="- topic/entry "> <p class="- topic/p ">Voegt alle ingangen van de bestaande DRM lijst van de beleidsupdate toe. U kunt slechts één bestaand bestand opgeven. </p> <p class="- topic/p ">Als de bestaande lijst is ondertekend met een andere referentie dan de referentie die wordt gebruikt om de nieuwe lijst te ondertekenen, moet u het certificaatbestand ervan opgeven om de handtekening te verifiëren. </p> </td> 
+   <td colname="2" class="- topic/entry "> <p class="- topic/p ">Voegt alle ingangen van de bestaande DRM beleidsupdate lijst toe. U kunt slechts één bestaand bestand opgeven. </p> <p class="- topic/p ">Als de bestaande lijst is ondertekend met een andere referentie dan de referentie die wordt gebruikt om de nieuwe lijst te ondertekenen, moet u het certificaatbestand ervan opgeven om de handtekening te verifiëren. </p> </td> 
   </tr> 
   <tr rowsep="1" class="- topic/row "> 
    <td colname="1" class="- topic/entry "> <span class="+ topic/ph pr-d/codeph codeph"> -noprompt </span> </td> 
@@ -87,7 +86,7 @@ java -jar AdobePolicyUpdateListManager.jar -d
   </tr> 
   <tr rowsep="1" class="- topic/row "> 
    <td colname="1" class="- topic/entry "> <p class="- topic/p ">-rf <span class="+ topic/ph pr-d/codeph codeph"> policyFilename </span> <span class="+ topic/ph pr-d/codeph codeph"> date </span> " <span class="+ topic/ph pr-d/codeph codeph"> reasonCode </span>" <span class="+ topic/ph pr-d/codeph codeph"> reasonText </span>" <span class="+ topic/ph pr-d/codeph codeph"> reasonURL </span>" </p> </td> 
-   <td colname="2" class="- topic/entry "> <p class="- topic/p ">Voert dezelfde handeling uit als de <span class="codeph"> -r </span> optie. De DRM-beleidsidentificatie wordt echter uit een opgegeven bestand geëxtraheerd. </p> </td> 
+   <td colname="2" class="- topic/entry "> <p class="- topic/p ">Voert dezelfde handeling uit als de <span class="codeph"> -r </span> -optie. De DRM-beleidsidentificatie wordt echter uit een opgegeven bestand geëxtraheerd. </p> </td> 
   </tr> 
   <tr rowsep="0" class="- topic/row "> 
    <td colname="1" class="- topic/entry "> <span class="codeph"> -u policyFilename " reasonCode" " reasonText" " reasonURL" </span> </td> 

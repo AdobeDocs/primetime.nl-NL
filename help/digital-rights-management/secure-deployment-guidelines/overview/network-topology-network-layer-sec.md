@@ -1,8 +1,7 @@
 ---
 description: De de veiligheidskwetsbaarheid van het netwerk is onder de eerste bedreigingen aan om het even welke Internet-Onder ogen ziet of intranet-Onder ogen ziet toepassingsserver, en u moet gastheren op het netwerk tegen deze kwetsbaarheden onderdrukken.
 title: Netwerklaagbeveiliging
-exl-id: 0a45d18a-66aa-4ecc-8eaf-e2af599eb3b8
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '280'
 ht-degree: 0%
@@ -32,7 +31,7 @@ Hier zijn sommige gemeenschappelijke technieken die kwetsbaarheid van de netwerk
    <td colname="2" class="- topic/entry "> <p class="- topic/p ">De Vertaling van het Adres van het Netwerk van het gebruik (NATIONAAL) met RFC 1918 privé IP adressen op de toepassingsservers van Primetime DRM. U kunt privé IP adressen (10.0.0.0/8, 172.16.0.0/12 en 192.168.0.0/16) toewijzen om het voor een aanvaller moeilijker te maken om verkeer aan en van een NATIONAAL interne gastheer door Internet te leiden. </p> </td> 
   </tr> 
   <tr rowsep="0" class="- topic/row "> 
-   <td colname="1" class="- topic/entry "> <p class="- topic/p ">Vuurmuren </p> </td> 
+   <td colname="1" class="- topic/entry "> <p class="- topic/p ">Firewalls </p> </td> 
    <td colname="2" class="- topic/entry "> <p class="- topic/p ">Hieronder volgen enkele criteria die u in acht moet nemen wanneer u een firewalloplossing selecteert: </p> <p class="- topic/p "> 
      <ul class="- topic/ul " id="ul_wjf_lhz_n4"> 
       <li class="- topic/li " id="li_A620D0B635384590BA7804F9720D04D0">Voer firewalls uit die volmachtsservers en/of stateful inspectie, in plaats van eenvoudige pakket-filtrerende oplossingen steunen. </li> 

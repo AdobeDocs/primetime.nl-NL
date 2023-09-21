@@ -1,8 +1,7 @@
 ---
 description: Manager voor videoanalyse maken
 title: Manager voor videoanalyse maken
-exl-id: 8d2bbb39-10e2-43e8-8ed3-bc376b3f3cc8
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '108'
 ht-degree: 0%
@@ -11,7 +10,7 @@ ht-degree: 0%
 
 # Manager voor videoanalyse maken {#create-the-video-analytics-manager}
 
-Een nieuwe beheerklasse ( `VAManager`) is toegevoegd aan de Android Reference Implementation. `VAManager` maakt en vernietigt eenvoudig een instantie van de `VideoHeartbeat` klasse. Met de voorbeeldimplementatie wordt een `VAManager` instantie wanneer een nieuwe `MediaPlayer` wordt gemaakt en vernietigt die instantie wanneer de `MediaPlayer` wordt vernietigd. Dit wordt geïmplementeerd in `PlayerFragment.java`.
+Een nieuwe beheerklasse ( `VAManager`) is toegevoegd aan de Android Reference Implementation. `VAManager` maakt en vernietigt eenvoudig een instantie van de `VideoHeartbeat` klasse. De referentie-implementatie leidt tot een `VAManager` instantie wanneer een nieuwe `MediaPlayer` wordt gemaakt en vernietigt die instantie wanneer de `MediaPlayer` wordt vernietigd. Dit wordt geïmplementeerd in `PlayerFragment.java`.
 
 ## Een nieuwe Video Analytics Manager maken
 

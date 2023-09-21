@@ -1,8 +1,7 @@
 ---
 description: TVSDK ondersteunt het omzetten en invoegen van advertenties voor VOD en live/lineaire streams.
 title: Metagegevens van primetime en server
-exl-id: 3723dd2f-292c-4ce5-9670-fda1b1f2b5df
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '427'
 ht-degree: 0%
@@ -22,7 +21,6 @@ TVSDK ondersteunt het omzetten en invoegen van advertenties voor VOD en live/lin
 >* Uw advertentieserverdomein, dat het domein van uw toegewezen advertentieserver specificeert.
 >* Andere doelparameters.
 >
-
 
 ## Metagegevens van primetime en server instellen {#section_86C4A3B2DF124770B9B7FD2511394313}
 

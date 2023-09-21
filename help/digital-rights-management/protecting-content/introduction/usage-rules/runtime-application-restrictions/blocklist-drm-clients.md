@@ -2,8 +2,7 @@
 title: Lijst van gewezen personen van DRM-clients die geen toegang hebben tot beveiligde inhoud
 description: Lijst van gewezen personen van DRM-clients die geen toegang hebben tot beveiligde inhoud
 copied-description: true
-exl-id: 837e55ef-8dff-46eb-a952-c787d40d4a1b
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '400'
 ht-degree: 0%
@@ -14,7 +13,7 @@ ht-degree: 0%
 
 Deze lijst van gewezen personen geeft de Primetime DRM-clients aan die geen toegang hebben tot beveiligde inhoud. U lijst van gewezen personen clients op clientversie en platform.
 
-Voorbeeld van gebruik: In geval van een inbreuk op de beveiliging kan een nieuwere versie van de Primetime DRM-client worden opgegeven als de minimale versie die vereist is voor het aanschaffen van licenties en het afspelen van inhoud. De licentieserver controleert of de Primetime DRM-client die de licentieaanvraag indient, aan de versievereisten voldoet voordat een licentie wordt uitgegeven. De Primetime DRM-client controleert ook de versie in de licentie voordat de inhoud wordt afgespeeld. Deze clientcontrole is vereist in het geval van domeinen waar een licentie naar een andere computer kan worden overgedragen.
+Voorbeeld: in geval van een inbreuk op de beveiliging kan een nieuwere versie van de Primetime DRM-client worden opgegeven als de minimale versie die vereist is voor het aanschaffen van licenties en het afspelen van inhoud. De licentieserver controleert of de Primetime DRM-client die de licentieaanvraag indient, aan de versievereisten voldoet voordat een licentie wordt uitgegeven. De Primetime DRM-client controleert ook de versie in de licentie voordat de inhoud wordt afgespeeld. Deze clientcontrole is vereist in het geval van domeinen waar een licentie naar een andere computer kan worden overgedragen.
 
 Een Primetime DRM-clientversie kan worden geïdentificeerd door de kenmerken die in de volgende tabel zijn opgegeven:
 
@@ -22,8 +21,8 @@ Een Primetime DRM-clientversie kan worden geïdentificeerd door de kenmerken die
 |---|---|---|---|
 | Omgeving | `“PC”, “PortingKit”` | Exacte overeenkomst | Geeft aan of de client op een desktopcomputer of op een ander apparaat wordt uitgevoerd. |
 | OS | `“Win”, “Mac”, “Linux”, “Android”, “iOS”, "ChromeOS"` | Exacte overeenkomst | Platform |
-| Architectuur | `“32”, “64”` | Exacte overeenkomst | 32-bits of 64-bits |
-| Schermtype | `“PC”, “Mobile”, “TV”` | Exacte overeenkomst |  |
+| Architectuur | `“32”, “64”` | Exacte overeenkomst | 32 bits of 64 bits |
+| Schermtype | `“PC”, “Mobile”, “TV”` | Exacte overeenkomst | |
 | Runtimeversie | Een geldig versienummer. Bijvoorbeeld: `“2.0.0”, "3.0", "4.0", "11.0"`, enz. | Komt overeen met als de clientversie kleiner dan of gelijk is aan de opgegeven versie. | Versienummer is opgegeven als een combinatie van getallen en punten (&quot;.&quot;) van elke lengte. |
 | Primetime DRM-bibliotheekversie | Een geldig versienummer. Bijvoorbeeld: `“2.0.0”`. | Komt overeen met als de clientversie kleiner dan of gelijk is aan de opgegeven versie. | Versienummer is opgegeven als een combinatie van getallen en punten (&quot;.&quot;) van elke lengte. |
 | OEM-leverancier | De koord van de Leverancier van OEM dat in het Runtime Certificaat kan worden gevestigd dat aan een klant werd uitgegeven die Primetime DRM aan een apparaat steunde. | Exacte overeenkomst | De identificatiereeks van de Leverancier van OEM voor het apparaat gebruikend de het Porteren uitrusting. |

@@ -1,8 +1,7 @@
 ---
 description: De kwaliteit van de dienst (QoS) biedt een gedetailleerde mening in hoe de videomotor presteert. TVSDK biedt gedetailleerde statistieken over het afspelen, bufferen en apparaten.
 title: Bijhouden op fragmentniveau met behulp van laadgegevens
-exl-id: 29e82a93-783f-4e32-ab5e-12713a60cfec
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '326'
 ht-degree: 0%
@@ -57,17 +56,17 @@ TVSDK biedt ook informatie over de volgende gedownloade bronnen:
       <tr> 
       <td colname="col01"> <span class="codeph"> trackIndex </span> </td> 
       <td colname="col1"> <span class="codeph"> int </span> </td> 
-      <td colname="col2"> de index van het overeenkomstige spoor, indien bekend; anders, 0. </td> 
+      <td colname="col2"> De index van de overeenkomstige track, indien bekend; anders 0. </td> 
       </tr> 
       <tr> 
       <td colname="col01"> <span class="codeph"> trackName </span> </td> 
       <td colname="col1"> <span class="codeph"> String </span> </td> 
-      <td colname="col2"> de naam van de overeenkomstige spoorbaan, indien bekend; anders, null. </td> 
+      <td colname="col2"> De naam van de overeenkomstige track, indien bekend; anders null. </td> 
       </tr> 
       <tr> 
       <td colname="col01"> <span class="codeph"> trackType </span> </td> 
       <td colname="col1"> <span class="codeph"> String </span> </td> 
-      <td colname="col2"> het type van het overeenkomstige spoor, indien bekend; anders, null. </td> 
+      <td colname="col2"> Het type van het overeenkomstige spoor, als gekend; anders, ongeldig. </td> 
       </tr> 
       <tr> 
       <td colname="col01"> <span class="codeph"> type </span> </td> 

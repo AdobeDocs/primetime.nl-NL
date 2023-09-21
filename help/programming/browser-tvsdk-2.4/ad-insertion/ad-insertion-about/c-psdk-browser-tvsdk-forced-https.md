@@ -2,8 +2,7 @@
 title: Beveiligd laden van advertentie via HTTPS
 description: Beveiligd laden van advertentie via HTTPS
 copied-description: true
-exl-id: d43418e9-631b-4344-a5b3-0a6154a325d4
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '71'
 ht-degree: 0%
@@ -12,7 +11,7 @@ ht-degree: 0%
 
 # Beveiligd laden van advertentie via HTTPS{#secure-ad-loading-over-https}
 
-Adobe Primetime kan externe advertentieservers via https aanvragen, zelfs als de speler wordt gehost op http. Alleen die aanroepen op advertentieservers worden bijgewerkt naar https waar de client naar zoekt tijdens de Auditude Ad resolver-fase.
+Adobe Primetime kan externe advertentieservers via https aanvragen, zelfs als de speler wordt gehost op http. Alleen die aanroepen op advertentieservers worden bijgewerkt naar https die de client zoekt tijdens de Auditude en oplossingfase.
 
 >[!NOTE]
 >

@@ -1,15 +1,14 @@
 ---
 description: TVSDK handelt fouten in het tijdbereik af op basis van het specifieke probleem, door de onjuist gedefinieerde tijdbereiken samen te voegen of opnieuw te ordenen.
-title: Foutafhandeling voor verwijderen en vervangen van toevoegen
-exl-id: 3147d446-68a1-4e4b-9a29-f464b936d650
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+title: Foutafhandeling voor verwijderen en vervangen
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '385'
 ht-degree: 0%
 
 ---
 
-# Foutafhandeling voor verwijderen en vervangen van toevoegen{#ad-deletion-and-replacement-error-handling}
+# Foutafhandeling voor verwijderen en vervangen{#ad-deletion-and-replacement-error-handling}
 
 TVSDK handelt fouten in het tijdbereik af op basis van het specifieke probleem, door de onjuist gedefinieerde tijdbereiken samen te voegen of opnieuw te ordenen.
 
@@ -27,9 +26,9 @@ TVSDK handelt signaalconflict met metagegevens voor advertenties als volgt af:
 * Als de ad signalerende wijze met de tijd-waaier meta-gegevens in conflict brengt, heeft de tijd-waaier meta-gegevens altijd prioriteit. Bijvoorbeeld, als de advertentie signalerende wijze als serverkaart of duidelijke aanwijzingen wordt geplaatst, en er ook de tijdwaaiers van de TUSSENVOEGSEL in de meta-gegevens zijn, is het resulterende gedrag dat de waaiers duidelijk zijn, en geen advertenties worden opgenomen.
 * Voor de waaiers van de VERVANGING, als de signalerende wijze als serverkaart of duidelijke aanwijzingen wordt geplaatst, worden de waaiers vervangen zoals die in de waaiers van de VERVANGING worden gespecificeerd, en er is geen invoeging door serverkaart of duidelijke aanwijzingen. Zie [Toevoegingsmodus](../../../tvsdk-1.4-for-android/ad-insertion/ad-insertion-metadata/android-1.4-ad-signaling-mode.md).
 
-Wanneer de server niet geldig is `AdBreaks`:
+Wanneer de server niet geldig retourneert `AdBreaks`:
 
-* TVSDK genereert en verwerkt een `NOPTimelineOperation` voor de lege `AdBreak`. Geen advertentie wordt afgespeeld.
+* TVSDK genereert en verwerkt `NOPTimelineOperation` voor de lege `AdBreak`. Geen advertentie wordt afgespeeld.
 
 Voor tijdbereiken met live streams:
 

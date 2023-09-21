@@ -1,15 +1,14 @@
 ---
 description: Browser TVSDK biedt hulpprogramma's voor het maken van een geavanceerde videospelertoepassing (uw Primetime-speler), die u kunt integreren met andere Primetime-componenten.
-title: Flash Failover
-exl-id: 76bd9214-767a-4f26-977d-81fbac3e0c42
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+title: Flash-failover
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '278'
 ht-degree: 0%
 
 ---
 
-# Flash Failover {#flash-failover}
+# Flash-failover {#flash-failover}
 
 Browser TVSDK biedt hulpprogramma&#39;s voor het maken van een geavanceerde videospelertoepassing (uw Primetime-speler), die u kunt integreren met andere Primetime-componenten.
 
@@ -41,11 +40,11 @@ Deze voorbeeldprocedure illustreert het proces om de spelertechnologie te bepale
 
 1. Als de Uitbreidingen van de Bron van Media wordt gesteund, gebruik het zonder bekende beperkingen.
 1. Gebruik, indien ondersteund, de `<video>` rechtstreeks zonder MSE.
-1. Zorg ervoor dat u ten minste Adobe Flash Player 23.0 gebruikt.
+1. Zorg ervoor dat u minstens versie 23.0 van de Flash Player van de Adobe gebruikt.
 1. Als er geen geschikte afspeeltechnologie wordt gevonden, `replaceCurrentResource` retourneert een fout.
 
-Een volgende `replaceCurrentResource` dezelfde oproep `MediaPlayer` -instantie volgt hetzelfde proces. Dit staat u toe om diverse middeltypes te spelen door het zelfde te gebruiken `MediaPlayer` instantie in hetzelfde bovenliggende `<DIV>` -tag die u hebt opgegeven bij het `MediaPlayerView` -instantie is gemaakt.
+Een volgende `replaceCurrentResource` dezelfde oproep `MediaPlayer` -instantie volgt hetzelfde proces. Hierdoor kunt u verschillende typen bronnen afspelen door hetzelfde te gebruiken `MediaPlayer` instantie in hetzelfde bovenliggende `<DIV>` -tag die u hebt opgegeven bij het `MediaPlayerView` -instantie is gemaakt.
 
 >[!TIP]
 >
->Het object SWF en de `<video>` -tag is genest in het bovenliggende `<DIV>` tag.
+>Het object SWF en de `<video>` -tag is genest in het bovenliggende `<DIV>` -tag.

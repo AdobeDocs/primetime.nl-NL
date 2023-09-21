@@ -2,8 +2,7 @@
 title: Overzicht van voorkeuren instellen
 description: Overzicht van voorkeuren instellen
 copied-description: true
-exl-id: 9618a038-c5b0-4b49-8936-ef8fcacf2105
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '184'
 ht-degree: 0%
@@ -32,7 +31,7 @@ In de voorkeursbeschrijvingen worden de volgende termen gebruikt:
  <tbody class="- topic/tbody "> 
   <tr rowsep="1" class="- topic/row "> 
    <td colname="1" class="- topic/entry "> URL van Packager Server </td> 
-   <td colname="2" class="- topic/entry "> Locatie van server die wordt uitgevoerd <span class="filepath"> flashaccess-packager.war </span>; bijvoorbeeld: <span class="filepath"> https://localhost:8080 </span> </td> 
+   <td colname="2" class="- topic/entry "> Locatie van server die wordt uitgevoerd <span class="filepath"> flashaccess-packager.war </span>; bijvoorbeeld <span class="filepath"> https://localhost:8080 </span> </td> 
   </tr> 
   <tr rowsep="1" class="- topic/row "> 
    <td colname="1" class="- topic/entry "> Resource Directory </td> 
@@ -40,7 +39,7 @@ In de voorkeursbeschrijvingen worden de volgende termen gebruikt:
   </tr> 
   <tr rowsep="0" class="- topic/row "> 
    <td colname="1" class="- topic/entry "> URL licentieserver </td> 
-   <td colname="2" class="- topic/entry "> <p class="- topic/p ">URL van de server waarvan de client een licentie moet aanvragen; bijvoorbeeld: <span class="filepath"> https://mylicenseserver.com:8080 </span> </p> </td> 
+   <td colname="2" class="- topic/entry "> <p class="- topic/p ">URL van de server waarvan de client een licentie moet aanvragen, bijvoorbeeld <span class="filepath"> https://mylicenseserver.com:8080 </span> </p> </td> 
   </tr> 
  </tbody> 
 </table>

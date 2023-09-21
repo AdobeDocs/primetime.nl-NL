@@ -1,8 +1,7 @@
 ---
 description: TVSDK ondersteunt zoeken naar een specifieke positie (tijd) waar de stream een afspeellijst met schuifvensters is, in video op aanvraag (VOD) en live streams.
 title: Een zoekbalk weergeven met de huidige afspeelpositie
-exl-id: d5bc3a54-7dfd-435e-abb4-323639732e0a
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '314'
 ht-degree: 0%
@@ -28,7 +27,7 @@ TVSDK ondersteunt zoeken naar een specifieke positie (tijd) waar de stream een a
 1. Wacht tot de speler een geldige zoekstatus heeft.
 
    De geldige statussen worden BEREID, VOLTOOID, GEPAUZEERD EN AFGESPEELD.
-1. De native `SeekBar` in te stellen `OnSeekBarChangeListener`, die bepaalt wanneer de gebruiker scrubt.
+1. De native `SeekBar` instellen `OnSeekBarChangeListener`, die bepaalt wanneer de gebruiker scrubt.
 1. Geef de gewenste zoekpositie (milliseconden) door aan de `MediaPlayer.seek` methode.
 
    ```java

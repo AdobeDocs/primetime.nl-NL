@@ -2,8 +2,7 @@
 description: U kunt de functie Oplossen via Lazy en laden in- of uitschakelen via het bestaande mechanisme voor Lazy en oplossen (de functie Oplossen via Lazy en oplossen is standaard uitgeschakeld).
 keywords: Lazy;Adverteren;Advertentie laden;delayLoading
 title: Lozy en oplossen inschakelen
-exl-id: a52a1f9a-3bf6-4193-8347-1ef248ba8884
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '298'
 ht-degree: 0%
@@ -22,8 +21,8 @@ U kunt het Oplossen van de Lazy en onbruikbaar maken door te roepen [Advertising
    * Indien *hasDelayAdLoading* retourneert true, lost TVSDK alleen de initiële advertenties en overgangen naar de status PREPARED op.
 
       * De resterende advertenties worden opgelost en tijdens het afspelen geplaatst.
-   * Als *hasPreroll *of *hasLivePreroll* Retourneer false, TVSDK gaat ervan uit dat er geen preroll-advertentie is en start het afspelen van de inhoud direct. Deze zijn standaard ingesteld op true.
 
+   * Als *hasPreroll *of *hasLivePreroll* Retourneer false, TVSDK gaat ervan uit dat er geen preroll-advertentie is en start het afspelen van de inhoud direct. Deze zijn standaard ingesteld op true.
 
 **API&#39;s die relevant zijn voor luie advertentie-resolutie:**
 

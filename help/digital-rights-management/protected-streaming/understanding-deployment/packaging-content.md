@@ -1,8 +1,7 @@
 ---
 description: Wanneer u inhoud verpakt, moet u de URL van de licentieserver opgeven.
 title: Inhoud verpakken
-exl-id: f82385d5-cdb3-4c24-822e-3fc3c3a0793f
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '128'
 ht-degree: 0%
@@ -19,7 +18,7 @@ De URL van de Adobe Primetime DRM-server gebruikt de volgende indeling:
 http(s)://<license-server-host:port>/flashaccessserver/<tenant-name>
 ```
 
-Bijvoorbeeld voor hostnaam licentieserver `mylicenseserver.com` die op haven 8080, en een huurder richt *`tenant1`* U gebruikt dan de volgende syntaxis voor de URL van de licentieserver die u opgeeft op het moment dat u inhoud verpakt:
+Bijvoorbeeld voor hostnaam van licentieserver `mylicenseserver.com` die op haven 8080, en een huurder richt *`tenant1`* U gebruikt dan de volgende syntaxis voor de URL van de licentieserver die u opgeeft op het moment dat u inhoud verpakt:
 
 ```
 https://mylicenseserver.com:8080/flashaccessserver/tenant1

@@ -2,8 +2,7 @@
 title: Details voor de melding NATIVE_ERROR
 description: Details voor de melding NATIVE_ERROR
 copied-description: true
-exl-id: 51c75349-0fa8-405d-9e09-b51b425fe21b
-source-git-commit: 1bc2f6c230c262babf2958c32fee31afcad04c2f
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '6868'
 ht-degree: 2%
@@ -18,7 +17,7 @@ Wanneer TVSDK een native fout afhandelt, worden enkele of alle volgende waarden 
  <thead> 
   <tr> 
    <th colname="col1" class="entry"> Sleutelnaam metagegevens </th> 
-   <th colname="col2" class="entry"> Waarde metagegevens </th> 
+   <th colname="col2" class="entry"> Waarde van metagegevens </th> 
   </tr> 
  </thead>
  <tbody> 
@@ -26,7 +25,7 @@ Wanneer TVSDK een native fout afhandelt, worden enkele of alle volgende waarden 
    <td colname="col1"><span class="codeph"> NATIVE_ERROR_CODE</span> </td> 
    <td colname="col2"> <p>Native foutcode van de AVE. </p> <p>Deze codes vertegenwoordigen het volgende: 
      <ul id="ul_1F33D523DDFE4CE8B4F0DC279FF7E4F8"> 
-      <li id="li_07A2D9BEE6364935A61EF3BD4AB6DE27">DRM-fouten (codes 3300 tot en met 3367). Deze zijn hetzelfde als de equivalente Flash Player-foutcodes </li> 
+      <li id="li_07A2D9BEE6364935A61EF3BD4AB6DE27">DRM-fouten (codes 3300 tot 3367). Deze zijn hetzelfde als de equivalente foutcodes voor Flash Player </li> 
       <li id="li_433BA22DE3504AEEB623598BB4F939FA">Fouten bij het afspelen van video (-1 tot 89) </li> 
       <li id="li_B347CB151DB94DE0A1DDEB1B33D2DABA">Cryptografiefouten (300 tot 307) </li> 
      </ul> </p> </td> 
@@ -85,7 +84,7 @@ Wanneer TVSDK een native fout afhandelt, worden enkele of alle volgende waarden 
   </tr> 
   <tr> 
    <td colname="col1"><span class="codeph"> AD_DURATION</span> </td> 
-   <td colname="col2"> Duur van advertentie in milliseconden. </td> 
+   <td colname="col2"> Toegevoegde duur in milliseconden. </td> 
   </tr> 
   <tr> 
    <td colname="col1"><span class="codeph"> AD_ID</span> </td> 
@@ -120,7 +119,7 @@ Wanneer TVSDK een native fout afhandelt, worden enkele of alle volgende waarden 
    <td colname="col2"> Naam van de audiotrack die niet is geladen, zoals opgegeven in het manifest. </td> 
   </tr> 
   <tr> 
-   <td colname="col1"><span class="codeph"> AUDIO_TRACK_LANGUAGE</span> </td> 
+   <td colname="col1"><span class="codeph"> AUDIO_TRACK_TAAL</span> </td> 
    <td colname="col2"> Taal van de audiotrack, zoals opgegeven in het manifest. </td> 
   </tr> 
   <tr> 
@@ -136,12 +135,12 @@ Wanneer TVSDK een native fout afhandelt, worden enkele of alle volgende waarden 
    <td colname="col2"> <p>Gezochte positie (in milliseconden) (dubbel). </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"><b>Diversen</b> </td> 
+   <td colname="col1"><b>Overige</b> </td> 
    <td colname="col2"></td> 
   </tr> 
   <tr> 
    <td colname="col1"><span class="codeph"> AUDITUDE_ERROR_CODE</span> </td> 
-   <td colname="col2"> Foutcode controle (nummer). </td> 
+   <td colname="col2"> Foutcode Auditude (nummer). </td> 
   </tr> 
  </tbody> 
 </table>
@@ -150,11 +149,11 @@ Wanneer TVSDK een native fout afhandelt, worden enkele of alle volgende waarden 
 
 De Video Encoder-interface van de Adobe-video-engine retourneert deze DRM-meldingen in het dialoogvenster `NATIVE_ERROR` object metadata.
 
-Wanneer u DRM-fouten rapporteert aan Adobe, moet u ervoor zorgen dat u de `NATIVE_SUBERROR_CODE` en `DRM_ERROR_STRING` voor hulp bij probleemoplossing.
+Zorg ervoor dat u bij het rapporteren van DRM-fouten aan de Adobe de `NATIVE_SUBERROR_CODE` en `DRM_ERROR_STRING` voor hulp bij probleemoplossing.
 
 >[!TIP]
 >
->Deze lijst bevat specifiek voor TVSDK bestemde informatie over de fouten. Voor volledige beschrijvingen raadpleegt u [ActionScript Runtime de Verwijzing van de ActionScript van Fouten voor Adobe Flash Platform](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/runtimeErrors.html#3300).
+>Deze lijst bevat specifiek voor TVSDK bestemde informatie over de fouten. Zie voor volledige beschrijvingen [Referentie van ActionScript voor uitvoeringsfouten van ActionScript voor de Adobe Flash Platform](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/runtimeErrors.html#3300).
 
 <table id="table_CD59A859865F4FFDBAA249C89C74770A"> 
  <thead> 
@@ -172,12 +171,12 @@ Wanneer u DRM-fouten rapporteert aan Adobe, moet u ervoor zorgen dat u de `NATIV
     <ul id="ul_516E4CB32D624B22892DDB9266CB04CA"> 
      <li id="li_348FC0F38B11417994119B61C9244076">Wat de software van de distributeur moet doen: 
       <ul id="ul_7AFD45CF92454BA4927783FAA628FBC4"> 
-       <li id="li_0D9CCE61612643648C12DCDDD252E52A">Als u Google Chrome gebruikt en u bevindt zich in de Incognito-modus en uw versie van Flash Player is lager dan 11.6, kan deze fout optreden. <p>We raden de speler aan het versienummer van de browser te controleren en de gebruiker aan te raden de modus Incognito af te sluiten. </p> </li> 
+       <li id="li_0D9CCE61612643648C12DCDDD252E52A">Als u Google Chrome gebruikt en u bevindt zich in de Incognito-modus en uw versie van de Flash Player is lager dan 11.6, kan deze fout optreden. <p>We raden de speler aan het versienummer van de browser te controleren en de gebruiker aan te raden de modus Incognito af te sluiten. </p> </li> 
        <li id="li_1DC6B755BD0840D48BEC92568FD330BA">Vraag de licentie opnieuw aan. <p>Als het verzoek succesvol is, te hoeven u niet om te registreren of te stijgen. Als de aanvraag mislukt is, registreert u de inhoud die de fout heeft veroorzaakt. <span class="codeph"> subErrorId</span> bevat een regelfout, indien aanwezig. </p> </li> 
       </ul> </li> 
      <li id="li_060B5D60C9BB419CBFA7B062FBCF2632">Wat de distributeur moet doen: 
       <ul id="ul_FADB29DBF0DA4A0E8E54134AEB7DCD8A"> 
-       <li id="li_FC5B1C04D21E4AECB0EBD9ADD3198504">Als pogingen mislukken op andere configuraties dan Chrome met Flash lager dan versie 11.6, kan er een fout zijn opgetreden in het pakket. </li> 
+       <li id="li_FC5B1C04D21E4AECB0EBD9ADD3198504">Als pogingen mislukken op andere configuraties dan Chrome met Flash onder versie 11.6, kan er een fout zijn opgetreden in het pakket. </li> 
        <li id="li_A720ECE591254021879B335B81B1F76D">Controleer of het probleem specifiek is voor bepaalde inhoud en herverpakking. </li> 
       </ul> </li> 
     </ul> </td> 
@@ -197,7 +196,7 @@ Wanneer u DRM-fouten rapporteert aan Adobe, moet u ervoor zorgen dat u de `NATIV
    <td colname="col3"> <p>Bij Access 4.0 en hoger wordt deze fout gegenereerd in iOS wanneer de URL van de externe sleutel geen HTTPS gebruikt als het schema. HTTPS is vereist. </p> 
     <ul id="ul_3D47777BBCA14B67B107FBBE3E37E40C"> 
      <li id="li_7F7BBB27AE754CC39ABAAF9269739C49">Als de distributeur een versie gebruikt die ouder is dan Access v4, of de versie ten minste 4 maar het platform niet iOS is, moet de software van de distributeur de fout registreren. <p>De fout wordt alleen gegenereerd op iOS. </p> </li> 
-     <li id="li_D83C427D2A0D47408F723EF7195070B6">Als de software van de verdeler minstens versie 4 van de Toegang van Adobe is, en het platform iOS is, moeten de verdelers de verre zeer belangrijke server URL veranderen die zij aan HTTPS gebruiken. <p>Als zij slechts HTTP gebruikten, zouden de distributeurs een server kunnen moeten opzetten HTTPS. Anders, moeten de distributeurs de geregistreerde informatie aan Adobe voorleggen en de kwestie escaleren. </p> </li> 
+     <li id="li_D83C427D2A0D47408F723EF7195070B6">Als de software van de verdeler minstens versie 4 van de Toegang van de Adobe is, en het platform iOS is, moeten de verdelers de verre zeer belangrijke server URL veranderen die zij aan HTTPS gebruiken. <p>Als zij slechts HTTP gebruikten, zouden de distributeurs een server kunnen moeten opzetten HTTPS. Anders, moeten de distributeurs de geregistreerde informatie aan Adobe voorleggen en de kwestie escaleren. </p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
@@ -237,16 +236,16 @@ Wanneer u DRM-fouten rapporteert aan Adobe, moet u ervoor zorgen dat u de `NATIV
      </ul> </p> 
     <ul id="ul_EE4AE6AD4F1745A5B5623E53B599DB62"> 
      <li id="li_7A83869D4262443DA35FA1DF8D3097DD">De software van de distributeur moet de gebruiker waarschuwen en de bewerking afbreken. <p>Als de software een manier heeft om te bepalen of een verbetering beschikbaar is, richt de gebruiker aan die verbetering op de aangewezen manier voor het platform. </p> </li> 
-     <li id="li_AF9C2711FDE54DA196EB9D2864632000">Als de kwestie wegens een gedeeld domein voorkomt, zal de verdeler met Adobe voor bijgewerkte runtime of een bibliotheek moeten controleren. <p>Voor Flash runtime, kan de verdeler de verbetering in hun toepassing direct dwingen. In het geval van een bibliotheek, zal de verdeler een bijgewerkte bibliotheek moeten verkrijgen, hun toepassing herbouwen en het opstellen aan hun gebruikers. </p> <p>Als het probleem optreedt als gevolg van meerdere DRMS-sessies, moet de distributeur de toepassing bijwerken om het iOS-versienummer te controleren voordat er meerdere DRMS-sessies kunnen worden toegevoegd. Of ze kunnen de distributie van hun toepassing beperken tot iOS v5 en hoger. </p> <p>als de kwestie voorkomt omdat de meta-gegevensversie hoger is dan versie 2, is de kwestie waarschijnlijk bedorven meta-gegevens. Ze kunnen proberen de metagegevens opnieuw op te bouwen en de resultaten te bekijken. Als zij het probleem blijven zien, registreer de kwestie en escaleer aan Adobe. </p> </li> 
+     <li id="li_AF9C2711FDE54DA196EB9D2864632000">Als de kwestie wegens een gedeeld domein voorkomt, zal de verdeler met Adobe voor bijgewerkte runtime of een bibliotheek moeten controleren. <p>Voor runtime van de Flash, kan de verdeler de verbetering in hun toepassing direct dwingen. In het geval van een bibliotheek, zal de verdeler een bijgewerkte bibliotheek moeten verkrijgen, hun toepassing herbouwen en het opstellen aan hun gebruikers. </p> <p>Als het probleem optreedt als gevolg van meerdere DRMS-sessies, moet de distributeur de toepassing bijwerken om het iOS-versienummer te controleren voordat er meerdere DRMS-sessies kunnen worden toegevoegd. Of ze kunnen de distributie van hun toepassing beperken tot iOS v5 en hoger. </p> <p>als de kwestie voorkomt omdat de meta-gegevensversie hoger is dan versie 2, is de kwestie waarschijnlijk bedorven meta-gegevens. Ze kunnen proberen de metagegevens opnieuw op te bouwen en de resultaten te bekijken. Als zij het probleem blijven zien, registreer de kwestie en escaleer aan Adobe. </p> </li> 
     </ul> <p>Zie voor meer informatie over deze foutcode <a href="https://forums.adobe.com/thread/1266675" format="https" scope="external"> Een 3306 DRMErrorEvent-foutcode corrigeren</a> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> 3307 </td> 
    <td colname="col2"><span class="codeph"> AXS_InternalFailed</span> </td> 
-   <td colname="col3"> <p>Dit vertegenwoordigt over het algemeen een insect in de code van de Toegang van Adobe en is onverwacht, tenzij er een bekende bug, zoals hieronder is. subErrorId bevat een client-specifieke fout of regelfout. </p> 
+   <td colname="col3"> <p>Dit vertegenwoordigt over het algemeen een insect in de code van de Toegang van de Adobe en is onverwacht, tenzij er een bekende bug, zoals hieronder is. subErrorId bevat een client-specifieke fout of regelfout. </p> 
     <ul id="ul_79F4A9655A2148519B1E9509C41F78C3"> 
-     <li id="li_0E093AB4D6BD489B852279E6C1525A15">Als browser Chrome op Vensters is en de versie van Flash 11.6 (versie 19 van SWF of groter) is, zou de software van de verdeler moeten veronderstellen dat de gebruiker op <span class="uicontrol"> Weigeren</span> op de infobar en behandelen hetzelfde als een 3368. </li> 
-     <li id="li_0215D1089B344861A2C0A73E1067CFEF">Als 3307 voorkomt wanneer browser niet Chrome is of de versie van Flash niet 11.6 is, zou de verdeler aan Adobe moeten stijgen. </li> 
+     <li id="li_0E093AB4D6BD489B852279E6C1525A15">Als browser Chrome op Vensters is en de versie van de Flash 11.6 (versie 19 van de SWF of groter) is, zou de software van de verdeler moeten veronderstellen dat de gebruiker op <span class="uicontrol"> Weigeren</span> op de infobar en behandelen hetzelfde als een 3368. </li> 
+     <li id="li_0215D1089B344861A2C0A73E1067CFEF">Als 3307 voorkomt wanneer browser niet Chrome is of de versie van de Flash niet 11.6 is, zou de verdeler aan Adobe moeten stijgen. </li> 
     </ul> <p>Belangrijk: <span class="codeph"> 3307:1107296344 (FailedToGetBrokerHandle)</span> Dit kan gebeuren met Chrome-browserversies 24-28. </p> </td> 
   </tr> 
   <tr> 
@@ -298,10 +297,10 @@ Wanneer u DRM-fouten rapporteert aan Adobe, moet u ervoor zorgen dat u de `NATIV
   <tr> 
    <td colname="col1"> 3313 </td> 
    <td colname="col2"><span class="codeph"> AAXS_WriteMicrosafeFailed </span> </td> 
-   <td colname="col3"> <p>Dit probleem doet zich voor wanneer het systeem niet naar het bestandssysteem kan schrijven. <span class="codeph"> subErrorId</span> bevat een clientspecifieke fout of een regelfout. </p> <p>In Microsoft Windows kan fout 3313 worden gegenereerd door de Flash Player-insteekmodule Active X of NPAPI wanneer de gecodeerde inhoud een licentie-id of een beleids-id heeft die te lang is. Dit komt door de maximale padlengte in Windows. (Dit probleem treedt niet op bij de Pepper-plug-in.) </p> <p>Zie watson 3549660 </p> 
+   <td colname="col3"> <p>Dit probleem doet zich voor wanneer het systeem niet naar het bestandssysteem kan schrijven. <span class="codeph"> subErrorId</span> bevat een clientspecifieke fout of een regelfout. </p> <p>In Microsoft Windows kan fout 3313 worden gegenereerd door de Flash Player-insteekmodule Active X of NPAPI wanneer de gecodeerde inhoud een licentie-id of een beleids-id heeft die te lang is. Dit komt door de maximale padlengte in Windows. (Dit probleem treedt niet op bij de Pepper-plug-in.) </p> <p>Zie watson 354960 </p> 
     <ul id="ul_DFD527D1E1224A439766DF7BED878E3B"> 
      <li id="li_FAF8FD98A4E8478CA7A92F770676ADFC">De software van de distributeur moet de gebruiker vragen te bevestigen dat zijn gebruikersmap niet is vergrendeld of zich op een vol of vergrendeld volume bevindt. </li> 
-     <li id="li_6D1136EA750A459BBECEEE5F73F527BB">Als de distributeur AIR in plaats van Flash gebruikt, kan het probleem worden veroorzaakt door een beperking van de padlengte. <p>Distributeurs moeten de naam van hun AIR-toepassing tot een redelijke termijn beperken. Publiceer de inhoud ook nogmaals met een kortere <span class="codeph"> licenseID</span> en <span class="codeph"> policyID</span>. </p> </li> 
+     <li id="li_6D1136EA750A459BBECEEE5F73F527BB">Als de verdeler AIR, eerder dan Flash gebruikt, zou de kwestie door een beperking van de weglengte kunnen worden veroorzaakt. <p>Distributeurs moeten de naam van hun AIR-toepassing tot een redelijke termijn beperken. Publiceer de inhoud ook nogmaals met een kortere <span class="codeph"> licenseID</span> en <span class="codeph"> policyID</span>. </p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
@@ -316,20 +315,20 @@ Wanneer u DRM-fouten rapporteert aan Adobe, moet u ervoor zorgen dat u de `NATIV
   <tr> 
    <td colname="col1"> 3315 </td> 
    <td colname="col2"><span class="codeph"> AAXS_PermissionDenied </span> </td> 
-   <td colname="col3"> <p>Er zijn bekende fouten waarin deze foutcode wordt gegenereerd wanneer een 3305-teken is bedoeld. Zie voor meer informatie <a href="https://forums.adobe.com/thread/1284947" format="https" scope="external"> DRM 3305 [ServerConnectionFailed] veroorzaakt en resolutie</a>. </p> <p>Externe SWF die door AIR wordt geladen, heeft geen toegang tot de Flash Access-functionaliteit. Deze foutcode kan ook worden gegenereerd als tijdens de netwerktoegang een beveiligingsfout optreedt. De voorbeelden omvatten de bestemmingsserver niet de cliënt om te verbinden door crossdomain.xml te gebruiken, of crossdomain.xml is niet bereikbaar. </p> <p>Zie voor meer informatie <a href="https://forums.adobe.com/thread/1266592" format="https" scope="external"> DRM-fout 3315 mogelijke hoofdoorzaak en resolutie</a>. </p> </td> 
+   <td colname="col3"> <p>Er zijn bekende fouten waarin deze foutcode wordt gegenereerd wanneer een 3305-teken is bedoeld. Zie voor meer informatie <a href="https://forums.adobe.com/thread/1284947" format="https" scope="external"> DRM 3305 [ServerConnectionFailed] veroorzaakt en resolutie</a>. </p> <p>Externe SWF die door AIR wordt geladen, heeft geen toegang tot de functionaliteit van de Flash Access. Deze foutcode kan ook worden gegenereerd als tijdens de netwerktoegang een beveiligingsfout optreedt. De voorbeelden omvatten de bestemmingsserver niet de cliënt om te verbinden door crossdomain.xml te gebruiken, of crossdomain.xml is niet bereikbaar. </p> <p>Zie voor meer informatie <a href="https://forums.adobe.com/thread/1266592" format="https" scope="external"> DRM-fout 3315 mogelijke hoofdoorzaak en resolutie</a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> 3316 </td> 
    <td colname="col2"><span class="codeph"> AXS_NOTUSED_MOVED </span> </td> 
-   <td colname="col3"> was <span class="codeph"> ADOBECPSHIM_MinorErr_MissingAdobeCPModule</span>. Verplaatst naar 3344 vanwege een conflict met Flash-foutcode. </td> 
+   <td colname="col3"> was <span class="codeph"> ADOBECPSHIM_MinorErr_MissingAdobeCPModule</span>. Verplaatst naar 3344 wegens conflict met de foutencode van de Flash. </td> 
   </tr> 
   <tr> 
    <td colname="col1"> 3317 </td> 
    <td colname="col2"><span class="codeph"> AAXS_LoadAdobeCPFailed </span> </td> 
-   <td colname="col3"> <p>Belangrijk: Dit is een zeldzame fout en komt gewoonlijk niet voor in een productieomgeving. </p> <p>Als de fout voorkomt, kunt u één van het volgende doen: 
+   <td colname="col3"> <p>Belangrijk: dit is een zeldzame fout en komt gewoonlijk niet voor in een productieomgeving. </p> <p>Als de fout voorkomt, kunt u één van het volgende doen: 
      <ul id="ul_BC435E61623444BB98A86216531DC892"> 
       <li id="li_FA433D0758B642D2AFDCF04906B3FE18">Als u AIR gebruikt, installeert u deze opnieuw. </li> 
-      <li id="li_F08D9AAFF46244F8842DEE5FD9CBBE0A">Als u Flash Player gebruikt, downloadt u de <span class="codeph"> AdobeCP</span> nogmaals. </li> 
+      <li id="li_F08D9AAFF46244F8842DEE5FD9CBBE0A">Als u Flash Player gebruikt, downloadt u <span class="codeph"> AdobeCP</span> nogmaals. </li> 
      </ul> </p> </td> 
   </tr> 
   <tr> 
@@ -355,9 +354,9 @@ Wanneer u DRM-fouten rapporteert aan Adobe, moet u ervoor zorgen dat u de `NATIV
      <li id="li_DCAB00A8AC4A426CBBD377374B3F71AE">De software van de distributeur moet de bewerking ten minste één keer opnieuw proberen. <p>Als u Google Chrome in Windows gebruikt, geeft u uitleg over het toestaan van toegang voor insteekmodules die zich niet in een sandbox bevinden. Toegang tot niet-sandbox van Google Chrome geweigerd</a>. </p> </li> 
      <li id="li_7FB7681FE32D444BB1BDBA3E5953A2C3">De distributeur moet een van de volgende taken uitvoeren: 
       <ul id="ul_486B64F187C44AE3B4775953A6142836"> 
-       <li id="li_095B1D4CD051427CB2BFA7082B454056">Als de fout op verschillende platformen consistent is, moet u het probleem met Adobe doorverwijzen. </li> 
+       <li id="li_095B1D4CD051427CB2BFA7082B454056">Als de fout op verschillende platforms consistent is, moet u het probleem met Adobe oplossen. </li> 
        <li id="li_0C6EB7B912FA41E59657216498DA3515">Als de fout zich beperkt tot Chrome in Windows, raadpleegt u de gebruiker om toegang tot de niet-sandbox plug-in toe te staan. </li> 
-      </ul> <p>Distributeurs dienen hun SWF bij te werken naar versie 19 of hoger en bij de Chrome-specifieke fout 3321 wordt een fout 3368 gegenereerd. Fout 3368 kan specifieker door de software van de verdeler worden behandeld. Deze wijziging is geïntroduceerd in Chrome Stable Channel versie 26.0.1410.43. </p> <p>Tip: Fout <span class="codeph"> 3321:1090519056</span> kan optreden met Flash Player versies 11.1 tot en met 11.6. We raden u aan een upgrade uit te voeren naar de nieuwste versie van Flash Player. </p> </li> 
+      </ul> <p>Distributeurs dienen hun SWF bij te werken naar versie 19 of hoger en bij de Chrome-specifieke fout 3321 wordt een fout 3368 gegenereerd. Fout 3368 kan specifieker door de software van de verdeler worden behandeld. Deze wijziging is geïntroduceerd in Chrome Stable Channel versie 26.0.1410.43. </p> <p>Tip: fout <span class="codeph"> 3321:1090519056</span> Dit kan gebeuren met Flash Player versies 11.1 tot en met 11.6. Wij adviseren dat u aan de recentste versie van de Flash Player bevordert. </p> </li> 
     </ul> <p>Zie voor meer informatie <a href="https://forums.adobe.com/thread/1277138" format="https" scope="external"> DRM-fout 3321 Oorzaken en resolutie</a>. </p> </td> 
   </tr> 
   <tr> 
@@ -370,9 +369,9 @@ Wanneer u DRM-fouten rapporteert aan Adobe, moet u ervoor zorgen dat u de `NATIV
    <td colname="col2"><span class="codeph"> AXS_DeviceBindingFailed </span> </td> 
    <td colname="col3"> <p>Het apparaat lijkt niet overeen te komen met de configuratie die aanwezig was toen het werd geïnitialiseerd. subErrorId bevat een client-specifieke of line fout. </p> <p>De software van de distributeur moet een van de volgende taken uitvoeren: 
      <ul id="ul_444401051A2E407B95BC44491E9BB71C"> 
-      <li id="li_93493EA05DB44CB1AEC368663F1ABA8D"> <p>Als het apparaat geen Flash Player gebruikt en AIR, iOS, enzovoort gebruikt, roept u <span class="codeph"> DRMManager.resetDRMVouchers()</span>. </p> <p>Als de kwestie op iOS in een ontwikkelingsfase voorkomt, vraag de ontwikkelaar om te bevestigen of de kwestie wordt waargenomen wanneer het schakelen tussen bouwstijlen die van derde werden gedownload, pre-versiedistributiesystemen (bijvoorbeeld, HockeyApp) en een lokale bouwstijl van Xcode. De attributen van een vorige installatie worden niet volledig beschreven wanneer het schakelen tussen een bouwstijl die van HockeyApp en een bouwstijl van Xcode wordt verdeeld. Deze situatie zou de fout 3322 kunnen veroorzaken. </p> <p>Om dit probleem op te lossen, moet de ontwikkelaar de oudere build van het apparaat verwijderen voordat de nieuwe build wordt geïnstalleerd. </p> </li> 
-      <li id="li_A5C9633F11584C788A2D9A23CC18FA6D">Als het apparaat Flash Player gebruikt, en het onbruikbaar van 3322 of 3346 foutencodes is, zie de instructies van Adobe over hoe te om uw DRM vergunningsopslag programmatically terug te stellen op <a href="https://forums.adobe.com/message/5535907#5535907" format="https" scope="external"> DRM-fout 3322/3346/3368 in Chrome (problemen op de Infobalk)</a>. </li> 
-     </ul> </p> <p>Deze fout treedt naar verwachting niet vaak op. In bedrijfsomgevingen die zwervende profielen gebruiken, als een gebruiker inhoud die door DRM wordt beschermd, de kans dat fout 3322 voorkomt stijgt aangezien de gebruiker zich bij verschillende machines aanmeldt. Indien mogelijk, zou de verdeler moeten proberen om deze informatie van gebruiker te krijgen. </p> <p>Als de fout vaak voorkomt, escaleer aan Adobe. U moet Adobe op de hoogte stellen of het opnieuw instellen van de licentieopslag het probleem heeft opgelost (of niet) en u moet de Adobe vertellen welke browsers de fout veroorzaken. </p> <p>Raadpleeg de volgende artikelen voor meer informatie: 
+      <li id="li_93493EA05DB44CB1AEC368663F1ABA8D"> <p>Als het apparaat geen Flash Player gebruikt en AIR, iOS, enzovoort gebruikt, roept u <span class="codeph"> DRMManager.resetDRMVouchers()</span>. </p> <p>Als de kwestie op iOS in een ontwikkelingsfase voorkomt, vraag de ontwikkelaar om te bevestigen of de kwestie wordt waargenomen wanneer het schakelen tussen bouwstijlen die van derde werden gedownload, pre-versiedistributiesystemen (bijvoorbeeld, HockeyApp) en een lokale bouwstijl van Xcode. De attributen van een vorige installatie worden niet volledig beschreven wanneer het schakelen tussen een bouwstijl die van HockeyApp en een bouwstijl van Xcode wordt verdeeld. Deze situatie zou de fout 3322 kunnen teweegbrengen. </p> <p>Om dit probleem op te lossen, moet de ontwikkelaar de oudere build van het apparaat verwijderen voordat de nieuwe build wordt geïnstalleerd. </p> </li> 
+      <li id="li_A5C9633F11584C788A2D9A23CC18FA6D">Als het apparaat Flash Player gebruikt, en het onbruikbaar van 3322 of 3346 foutencodes is, zie de instructies van Adobe over hoe te om uw DRM vergunningsopslag programmatically terug te stellen op <a href="https://forums.adobe.com/message/5535907#5535907" format="https" scope="external"> DRM-fout 3322/3346/3368 in Chrome (problemen op informatiebalk)</a>. </li> 
+     </ul> </p> <p>Deze fout treedt naar verwachting niet vaak op. In bedrijfsomgevingen die zwervende profielen gebruiken, als een gebruiker inhoud die door DRM wordt beschermd, de kans dat fout 3322 voorkomt stijgt aangezien de gebruiker zich bij verschillende machines aanmeldt. Indien mogelijk, zou de verdeler moeten proberen om deze informatie van gebruiker te krijgen. </p> <p>Als de fout vaak voorkomt, escaleer aan Adobe. U moet de Adobe laten weten of het probleem is opgelost door de licentieopslag opnieuw in te stellen (of niet) en u moet de Adobe vertellen welke browsers de fout hebben opgelopen. </p> <p>Raadpleeg de volgende artikelen voor meer informatie: 
      <ul id="ul_C468409D1EA046178CA7F54DCDCB84EA"> 
       <li id="li_20C8CA3853574CE486F21E7A3667DAB9"><a href="https://forums.adobe.com/message/5520902" format="https" scope="external"> https://forums.adobe.com/message/5520902</a> </li> 
       <li id="li_6E6F1BD6FE7843449B3E2F06F342EFF7"><a href="https://forums.adobe.com/message/5535911" format="https" scope="external"> https://forums.adobe.com/message/5535911</a> </li> 
@@ -386,23 +385,23 @@ Wanneer u DRM-fouten rapporteert aan Adobe, moet u ervoor zorgen dat u de `NATIV
    <td colname="col3"> <p>Bestanden die door de DRM-client worden gebruikt, zijn onverwacht gewijzigd. subErrorId bevat een client-specifieke of line fout. </p> 
     <ul id="ul_96EA771046CA4B2B9FAE24D493F43FF2"> 
      <li id="li_D2693CD8EFEF46108828BA17E3F54FF6">De software van de distributeur zou de gebruiker moeten begeleiden om op de zelfde manier terug te stellen zoals voor 3322. </li> 
-     <li id="li_0149B82436B64E28AC2B8C9B0EB09898">Als de GlobalStore een lager percentage dan de verwachte foutsnelheid van de harde schijven van uw gebruikersbasis heeft, moet u het probleem doorverwijzen naar Adobe. </li> 
+     <li id="li_0149B82436B64E28AC2B8C9B0EB09898">Als de GlobalStore een lager percentage dan de verwachte foutsnelheid van de harde schijven van uw gebruikersbasis heeft, moet u het probleem doorverwijzen naar de Adobe. </li> 
     </ul> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> 3324 </td> 
    <td colname="col2"><span class="codeph"> AXS_MachineTokenInvalid </span> </td> 
-   <td colname="col3"> Lokale DRM-opslag voor deze toepassing opnieuw instellen. Roep DRMManager.resetDRM aan. <p>De licentieserver kan mogelijk geen verbinding maken met de CRL-server (Certificate Revocation List) om de CRL-bestanden te vernieuwen, of de clientcomputer vraagt om een licentie/verificatie die door de licentieserver is ingetrokken. </p> <p>In de serverlogboeken, is foutcode 111 MachineTokenInvalid. Op clientniveau wordt foutcode 111 echter vertaald naar foutcode 3324. </p> <p>De beheerder van de DRM-licentieserver moet controleren of de licentieserver van de klant ooit de Adobe CRL-bestanden heeft kunnen ophalen. Als de klant Tomcat gebruikt, kan de klant de<span class="filepath"> tomcat/temp/</span> om te zien of er 4 CRL-bestanden zijn. </p> 
+   <td colname="col3"> Lokale DRM-opslag voor deze toepassing opnieuw instellen. Roep DRMManager.resetDRM aan. <p>De licentieserver kan mogelijk geen verbinding maken met de CRL-server (Certificate Revocation List) om de CRL-bestanden te vernieuwen, of de clientcomputer vraagt om een licentie/verificatie die door de licentieserver is ingetrokken. </p> <p>In de serverlogboeken, is foutcode 111 MachineTokenInvalid. Op clientniveau wordt foutcode 111 echter vertaald naar foutcode 3324. </p> <p>De beheerder van de DRM-licentieserver moet controleren of de licentieserver van de klant ooit in staat is geweest de Adobe-CRL-bestanden op te halen. Als de klant Tomcat gebruikt, kan de klant de<span class="filepath"> tomcat/temp/</span> om te zien of er 4 CRL-bestanden zijn. </p> 
     <ul id="ul_23B7F1A104AF49E79EA87DB8E15E337E"> 
      <li id="li_855D87F251184FE688A8D5FA0F6C9EF5">Als de bestanden zich in deze map bevinden, dubbelklikt u op de bestanden in Windows Verkenner en in de CRL-viewertoepassing om te bepalen of een van de bestanden is verlopen. </li> 
      <li id="li_58EC4EDA2B5146188A0FF7B33C91E2FD">Als er geen dossiers in tomcat/temp/ zijn, dan kan men veronderstellen deze vergunningsserver nooit de server van Adobe CRL wegens een firewall/het verpletteren van kwestie heeft kunnen bereiken. </li> 
-    </ul> <p>Zie voor meer informatie <a href="https://helpx.adobe.com/content/dam/help/en/primetime/drm/drm_secure_deployment_guidelines.pdf" format="http" scope="external"> Firewall-regels</a>. </p> <p>Als de CRL-bestanden niet beschikbaar zijn of verlopen zijn, moet u bevestigen of de licentieserver kan worden bereikt. Open een netwerksniffer op de de vergunningsserver van de klant, herstart de server, en heb een cliëntpoging om een vergunning van de server te vragen. U kunt het netwerkverkeer waarnemen om te zien of de vraag aan de volgende URL eindpunten succesvol is: <p>Tip: U kunt ook de volgende CRL-URL's in een browser invoeren om te zien of u elk bestand handmatig kunt downloaden. </p> 
+    </ul> <p>Zie voor meer informatie <a href="https://helpx.adobe.com/content/dam/help/en/primetime/drm/drm_secure_deployment_guidelines.pdf" format="http" scope="external"> Firewall-regels</a>. </p> <p>Als de CRL-bestanden niet beschikbaar zijn of verlopen zijn, moet u bevestigen of de licentieserver kan worden bereikt. Open een netwerksniffer op de de vergunningsserver van de klant, herstart de server, en heb een cliëntpoging om een vergunning van de server te vragen. U kunt het netwerkverkeer waarnemen om te zien of de vraag aan de volgende URL eindpunten succesvol is: <p>Tip: u kunt ook de volgende CRL-URL's in een browser invoeren om te zien of u elk bestand handmatig kunt downloaden. </p> 
      <ul id="ul_9B65C7ABBDEC4AC9BF3755FFD3587971"> 
       <li id="li_6867A9050E8D421C9138AC853D1784C9"><a href="https://crl2.adobe.com/Adobe/FlashAccessIndividualizationCA.crl" format="http" scope="external"> crl2.adobe.com/Adobe/FlashAccessIndividualizationCA.crl</a> </li> 
       <li id="li_6431689260554EAFAFDA2EC31798DCB5"><a href="https://crl2.adobe.com/Adobe/FlashAccessIntermediateCA.crl" format="http" scope="external"> crl2.adobe.com/Adobe/FlashAccessIntermediateCA.crl</a> </li> 
       <li id="li_2939674D0F854ADEB67E45FD216288A2"><a href="https://crl2.adobe.com/Adobe/FlashAccessRootCA.crl" format="http" scope="external"> crl2.adobe.com/Adobe/FlashAccessRootCA.crl</a> </li> 
       <li id="li_96386E00BE9D4CB99D100057A5F7C6DD">crl3.adobe.com/AdobeSystemsIncorporated FlashAccessRuntime/LatestCRL.crl</li> 
-     </ul> </p> <p>Als de firewallregels open zijn en er geen huidige 3324 fouten zijn, zou er een tijdelijke netwerkkwestie kunnen zijn geweest. Controleer de serverlogboeken van de klant, die waarschijnlijk in <span class="codeph"> /tomcat/logs/</span> om te bepalen of er een fout is opgetreden toen de licentieserver de lijst met certificaatintrekking probeerde op te halen. <p>Belangrijk: Een fout zou kunnen voorkomen wanneer een groot aantal (of een uitbarsting) cliënten een fout 3324 aan een tijdelijke netwerkkwestie melden wanneer het vernieuwen van een CRL- dossier. Toen het netwerkprobleem werd opgelost, werden de 3324 kwesties ook opgelost. </p> </p> <p>Als alle vier de CRL-bestanden bestaan in het dialoogvenster <span class="filepath"> tomcat/temp/</span> en clients nog steeds 3324 foutcodes hebben, kunnen er problemen zijn met de toegang tot de CRL-bestanden. U kunt dit probleem oplossen door de logbestanden te bekijken en de bestaande CRL-bestanden te wissen. </p> <p>Als er geen serverproblemen optreden, vraagt u de gebruiker om de versie opnieuw in te stellen zoals beschreven in 3322. </p> </td> 
+     </ul> </p> <p>Als de firewallregels open zijn en er geen huidige 3324 fouten zijn, zou er een tijdelijke netwerkkwestie kunnen zijn geweest. Controleer de serverlogboeken van de klant, die waarschijnlijk in <span class="codeph"> /tomcat/logs/</span> om te bepalen of er een fout is opgetreden toen de licentieserver de lijst met certificaatintrekking probeerde op te halen. <p>Belangrijk: Een fout kan voorkomen wanneer een groot aantal (of een uitbarsting) cliënten een fout 3324 aan een tijdelijke netwerkkwestie melden wanneer het vernieuwen van een CRL- dossier. Toen het netwerkprobleem werd opgelost, werden de 3324 kwesties ook opgelost. </p> </p> <p>Als alle vier de CRL-bestanden bestaan in het dialoogvenster <span class="filepath"> tomcat/temp/</span> en clients nog steeds 3324 foutcodes hebben, kunnen er problemen zijn met de toegang tot de CRL-bestanden. U kunt dit probleem oplossen door de logbestanden te bekijken en de bestaande CRL-bestanden te wissen. </p> <p>Als er geen serverproblemen optreden, vraagt u de gebruiker om de versie opnieuw in te stellen zoals beschreven in 3322. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"><b>Fouten in serverwinkelbeschadiging</b> </td> 
@@ -415,7 +414,7 @@ Wanneer u DRM-fouten rapporteert aan Adobe, moet u ervoor zorgen dat u de `NATIV
    <td colname="col3"> <p>Bestanden die door de DRM-client worden gebruikt, zijn onverwacht gewijzigd. <span class="codeph"> subErrorId</span> bevat een client-specifieke of regelfout. </p> 
     <ul id="ul_860D2402DA61460AB0D938F1116F6D64"> 
      <li id="li_CF368C43452B4265B62ADA3E223894BA">De software van de distributeur zou de verrichting opnieuw moeten proberen, omdat AdobeCP de beledigende serveropslag intern heeft geschrapt, en een herpoging zou moeten slagen. Als het opnieuw proberen ontbreekt, registreer de kwestie. </li> 
-     <li id="li_51A5803A1F754970BB4EBD6494F5DC96">Als het aantal pogingen daalt met een snelheid die hoger is dan de verwachte foutsnelheid van de harde schijven van uw gebruikersbasis, moet u het probleem doorverwijzen naar Adobe. </li> 
+     <li id="li_51A5803A1F754970BB4EBD6494F5DC96">Als het aantal pogingen daalt met een snelheid die hoger is dan de verwachte foutsnelheid van de harde schijven van uw gebruikersbasis, moet u het probleem doorverwijzen naar de Adobe. </li> 
     </ul> </td> 
   </tr> 
   <tr> 
@@ -436,12 +435,12 @@ Wanneer u DRM-fouten rapporteert aan Adobe, moet u ervoor zorgen dat u de `NATIV
   <tr> 
    <td colname="col1"> 3328 </td> 
    <td colname="col2"><span class="codeph"> AXS_ServerErrorTryAgain </span> </td> 
-   <td colname="col3"> <p>Dit is een serverfout waarbij de server het verzoek van de client niet kon voltooien. Deze fout kan voorkomen wanneer, bijvoorbeeld, de server bezig is, HTTP/500, de server niet de noodzakelijke sleutel heeft om het verzoek te decrypteren, etc. </p> <p>Op de cliënt, is er geen manier om te bepalen wat verkeerd ging. De klant moet de de serverlogboeken van de Toegang van Adobe herzien, die gewoonlijk worden genoemd <span class="codeph"> AdobeFlashAccess.log</span>om te bepalen wat er mis ging. Het logbestand bevat altijd een beschrijvende stacktracering die het probleem aangeeft. <span class="codeph"> subErrorId</span> bevat een serverspecifieke of regelfout. </p> <p>De distributeur zou serverlogboeken moeten bekijken om te identificeren welke server deze fout verzendt. Voor 3328 fouten die subfoutcode 101 hebben, kan de server de aanvraag niet decoderen. De klant moet valideren dat de licentie-/transportservercertificaten die op de licentieserver zijn geïnstalleerd, overeenkomen met en overeenkomen met de certificaten die tijdens het verpakken worden gebruikt. </p> <p>Bovendien moeten klanten die de implementatie van de Verwijzing gebruiken ervoor zorgen dat er geen typos in <span class="codeph"> flashaccess-refimpl.properties</span> bestand waarin de primaire en aanvullende certificaten zijn opgegeven. </p> </td> 
+   <td colname="col3"> <p>Dit is een serverfout waarbij de server het verzoek van de client niet kon voltooien. Deze fout kan voorkomen wanneer, bijvoorbeeld, de server bezig is, HTTP/500, de server niet de noodzakelijke sleutel heeft om het verzoek te decrypteren, etc. </p> <p>Op de cliënt, is er geen manier om te bepalen wat verkeerd ging. De klant moet de de serverlogboeken van de Toegang van de Adobe herzien, die gewoonlijk worden genoemd <span class="codeph"> AdobeFlashAccess.log</span>om te bepalen wat er mis ging. Het logbestand bevat altijd een beschrijvende stacktracering die het probleem aangeeft. <span class="codeph"> subErrorId</span> bevat een serverspecifieke of regelfout. </p> <p>De distributeur zou serverlogboeken moeten bekijken om te identificeren welke server deze fout verzendt. Voor 3328 fouten die subfoutcode 101 hebben, kan de server de aanvraag niet decoderen. De klant moet valideren dat de licentie-/transportservercertificaten die op de licentieserver zijn geïnstalleerd, overeenkomen met en overeenkomen met de certificaten die tijdens het verpakken worden gebruikt. </p> <p>Bovendien moeten klanten die de implementatie van de Verwijzing gebruiken ervoor zorgen dat er geen typos in <span class="codeph"> flashaccess-refimpl.properties</span> bestand waarin de primaire en aanvullende certificaten zijn opgegeven. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> 3329 </td> 
    <td colname="col2"><span class="codeph"> AXS_ApplicationSpecificError </span> </td> 
-   <td colname="col3"> <p>De toepassingsspecifieke subfoutcode is niet bekend bij Flash Access. <span class="codeph"> subErrorId</span> bevat een serverspecifieke fout van de aangepaste licentieserver voor uitgevers. De server heeft een fout geretourneerd in de toepassingsspecifieke naamruimte. </p> </td> 
+   <td colname="col3"> <p>De toepassingsspecifieke subfoutcode is niet bekend bij de Flash Access. <span class="codeph"> subErrorId</span> bevat een serverspecifieke fout van de aangepaste licentieserver voor uitgevers. De server heeft een fout geretourneerd in de toepassingsspecifieke naamruimte. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> 3330 </td> 
@@ -475,7 +474,7 @@ Wanneer u DRM-fouten rapporteert aan Adobe, moet u ervoor zorgen dat u de `NATIV
   <tr> 
    <td colname="col1"> 3334 </td> 
    <td colname="col2"><span class="codeph"> AXS_InvalidDRMPlatform </span> </td> 
-   <td colname="col3"> <p>Dit platform wordt niet toegestaan om de inhoud te spelen omdat, bijvoorbeeld, de inhoudsleverancier de Toegang van Adobe heeft gevormd om inhoud aan de Toegang van Adobe te ontkennen op een platform of een gedeelde domein-gebonden vergunning verbindend aan een gedeeld domeinteken dat voor een verschillende verdeling wordt bedoeld. </p> <p>CDM kan deze fout genereren als de inhoud niet in het pakket is opgenomen met behulp van een geschikte (CDM-functie gecodeerde) pakketcertificering. </p> <p>Als de inhoud is verpakt met een onjuist PHDS/PHLS-certificaat, werkt de inhoud mogelijk in Chrome, maar niet in andere browsers (of andersom). <p>Tip: Dit komt doordat Chrome verschillende PHDS/PHLS-certificaten gebruikt. </p>Om te bevestigen welk certificaat wordt gebruikt, stort de details van de inhoudsmeta-gegevens en zoek naar <i>ontvangercertificaten</i>. Zie voor meer informatie <a href="https://adobeprimetime.zendesk.com/agent/tickets/2891" format="https" scope="external"> https://adobeprimetime.zendesk.com/agent/tickets/2891</a>. </p> </td> 
+   <td colname="col3"> <p>Dit platform wordt niet toegestaan om de inhoud te spelen omdat, bijvoorbeeld, de inhoudsleverancier de Toegang van de Adobe heeft gevormd om inhoud aan de Toegang van de Adobe op een platform te ontkennen of een gedeelde domein-gebonden vergunning gebonden aan een gedeeld domeinteken dat voor een verschillende verdeling wordt bedoeld. </p> <p>CDM kan deze fout genereren als de inhoud niet in het pakket is opgenomen met behulp van een geschikte (CDM-functie gecodeerde) pakketcertificering. </p> <p>Als de inhoud is verpakt met een onjuist PHDS/PHLS-certificaat, werkt de inhoud mogelijk in Chrome, maar niet in andere browsers (of andersom). <p>Tip: dit komt doordat Chrome verschillende PHDS/PHLS-certificaten gebruikt. </p>Om te bevestigen welk certificaat wordt gebruikt, stort de details van de inhoudsmeta-gegevens en zoek naar <i>ontvangercertificaten</i>. Zie voor meer informatie <a href="https://adobeprimetime.zendesk.com/agent/tickets/2891" format="https" scope="external"> https://adobeprimetime.zendesk.com/agent/tickets/2891</a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> 3335 </td> 
@@ -483,7 +482,7 @@ Wanneer u DRM-fouten rapporteert aan Adobe, moet u ervoor zorgen dat u de `NATIV
    <td colname="col3"> Voer een upgrade uit naar de nieuwste versie van de TVSDK voor Android. <p>Voer een van de volgende taken uit om dit probleem op te lossen: 
      <ul id="ul_BF1742948BC9461CB8686DE70124D3CD"> 
       <li id="li_690D440C94CC45A0AE55EC319B1C4C23">Upgrade uitvoeren voor AIR </li> 
-      <li id="li_CDD20251C881466E88BE7BBB53D61EBC">Voer voor Flash Player een upgrade uit op de AdobeCP-module en probeer het afspelen opnieuw. </li> 
+      <li id="li_CDD20251C881466E88BE7BBB53D61EBC">Voor Flash Player, bevorder de module AdobeCP en probeer playback opnieuw. </li> 
      </ul> </p> </td> 
   </tr> 
   <tr> 
@@ -494,18 +493,18 @@ Wanneer u DRM-fouten rapporteert aan Adobe, moet u ervoor zorgen dat u de `NATIV
   <tr> 
    <td colname="col1"> 3337 </td> 
    <td colname="col2"><span class="codeph"> AXS_InvalidRuntimeVersion </span> </td> 
-   <td colname="col3"> Voer een upgrade uit naar de nieuwste versie van TVSDK voor Android. <p>Dit gebeurt als de inhoud of de server is geconfigureerd om het afspelen van een bepaalde versie van de runtimes van de Flash of AIR te weigeren. </p> 
+   <td colname="col3"> Voer een upgrade uit naar de nieuwste versie van TVSDK voor Android. <p>Dit komt voor als de inhoud of de server wordt gevormd om playback aan een bepaalde versie van de Flash of runtimes van AIR te ontkennen. </p> 
     <ul id="ul_B0732D941256483CABBDD30C9BF43249"> 
-     <li id="li_72782B1D638F48C0B87084689FB9C798">Als de gebruiker zich op een werkend systeem bevindt waarop Flash kan worden bevorderd, zou de software van de verdeler de gebruiker moeten vragen om Flash te bevorderen en opnieuw te proberen. Anders wordt de gebruiker geadviseerd een andere machine te gebruiken. </li> 
+     <li id="li_72782B1D638F48C0B87084689FB9C798">Als de gebruiker op een werkend systeem is waarop de Flash kan worden bevorderd, zou de software van de verdeler de gebruiker moeten vragen om Flash te bevorderen en opnieuw te proberen. Anders wordt de gebruiker geadviseerd een andere machine te gebruiken. </li> 
      <li id="li_1E3FD93CE39E43F2B7D961299B1211DA">Als fout 3337s wordt vermoed, bepaal of het voor specifieke inhoud voorkomt en herverpak die inhoud. Als de inhoud op de juiste wijze is verpakt, raadpleegt u Verschillen in beleid/licentie voor diagnose </li> 
     </ul> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> 3338 </td> 
    <td colname="col2"><span class="codeph"> AXS_UnknownConnectionType </span> </td> 
-   <td colname="col3"> <p>Kan het verbindingstype niet detecteren en het beleid vereist dat u Uitvoerbeveiliging inschakelt. Dit probleem wordt alleen verwacht als de inhoud in een pakket is geplaatst en digitale of analoge uitvoerbeveiliging vereist. </p> <p>Een probleem in versies van Flash Player ouder dan versie 11.8.800.168 heeft ertoe geleid dat fout 3338 af en toe is opgetreden op inhoud waarvoor het beleid aangeeft dat inhoudsbeveiliging is <span class="codeph"> GEBRUIKEN INDIEN BESCHIKBAAR</span>. Dit probleem is opgelost in versie 11.8.800.168 en hoger. </p> 
+   <td colname="col3"> <p>Kan het verbindingstype niet detecteren en het beleid vereist dat u Uitvoerbeveiliging inschakelt. Dit probleem wordt alleen verwacht als de inhoud in een pakket is geplaatst en digitale of analoge uitvoerbeveiliging vereist. </p> <p>Een probleem met versies van Flash Player ouder dan versie 11.8.800.168 heeft ertoe geleid dat fout 3338 af en toe is opgetreden op inhoud waarvoor het beleid aangeeft dat de inhoud wordt beveiligd <span class="codeph"> GEBRUIKEN INDIEN BESCHIKBAAR</span>. Dit probleem is opgelost in versie 11.8.800.168 en hoger. </p> 
     <ul id="ul_4B6CA26A53F84838B5B95400925464D4"> 
-     <li id="li_CBD890F467E449EBB5116E1561252058">De software van de verdeler selecteert een variant van de inhoud die outputbescherming niet vereist (bijvoorbeeld de variant van SD van een stroom HD). <p>Als fout 3338 voorkomt op <span class="codeph"> USE_IF_AVAILABLE </span> inhoud, controleer het versienummer van de speler. Als de versie van de speler lager is dan 11.8.800.168, raadt u de gebruiker aan een upgrade van Flash Player uit te voeren. Als fout 3338 op versies boven 11.8.800.168 voorkomt, registreer welke inhoud de fout veroorzaakte. </p> </li> 
+     <li id="li_CBD890F467E449EBB5116E1561252058">De software van de verdeler selecteert een variant van de inhoud die outputbescherming niet vereist (bijvoorbeeld de variant van SD van een stroom HD). <p>Als fout 3338 voorkomt op <span class="codeph"> USE_IF_AVAILABLE </span> inhoud, controleer het versienummer van de speler. Als de versie van de speler lager is dan 11.8.800.168, raadt u de gebruiker aan een upgrade uit te voeren van de Flash Player. Als fout 3338 op versies boven 11.8.800.168 voorkomt, registreer welke inhoud de fout veroorzaakte. </p> </li> 
      <li id="li_62886C1D96264B129928A7E29E6C70E1">De distributeur moet controleren welke inhoud deze fout veroorzaakt en controleren of het beleid van de inhoud het plaatsen is <span class="codeph"> NO_PROTECTION</span> of <span class="codeph"> USE_IF_AVAILABLE</span> voor analoge en digitale uitvoer. <p>Als inhoud per ongeluk is verpakt met <span class="codeph"> NO_OUTPUT</span> of <span class="codeph"> VEREIST</span>de inhoud opnieuw verpakken. Zie Verschillen tussen beleid en licenties voor diagnose als de inhoud op de juiste wijze is verpakt. Doorbreek anders naar Adobe. </p> </li> 
     </ul> <p>Zie voor meer informatie <a href="https://forums.adobe.com/message/5518688" format="https" scope="external"> Onverwachte 3338 fouten krijgen wanneer uw beleid DRM aan USE_IF_AVAILABLE wordt geplaatst?</a> </p> </td> 
   </tr> 
@@ -522,7 +521,7 @@ Wanneer u DRM-fouten rapporteert aan Adobe, moet u ervoor zorgen dat u de `NATIV
   <tr> 
    <td colname="col1"> 3341 </td> 
    <td colname="col2"><span class="codeph"> AXS_NoDigitalPlaybackAllowed </span> </td> 
-   <td colname="col3"> Kan inhoud niet afspelen op een digitaal apparaat. <p>Belangrijk: Dit probleem kan zich niet voordoen in een productieomgeving, omdat uitgevers van inhoud het afspelen van digitale inhoud niet mogen uitschakelen. </p> </td> 
+   <td colname="col3"> Kan inhoud niet afspelen op een digitaal apparaat. <p>Belangrijk: dit probleem kan zich niet voordoen in een productieomgeving, omdat uitgevers van inhoud het afspelen van digitale inhoud niet mag uitschakelen. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> 3342 </td> 
@@ -532,14 +531,14 @@ Wanneer u DRM-fouten rapporteert aan Adobe, moet u ervoor zorgen dat u de `NATIV
   <tr> 
    <td colname="col1"> 3343 </td> 
    <td colname="col2"><span class="codeph"> AAXS_IntegrityVerificationFailed </span> </td> 
-   <td colname="col3"> <p>Niet van toepassing op Android. </p> <p>Deze fout treedt momenteel in eerste instantie op nadat een nieuwe versie van Flash is uitgebracht. Het komt voor omdat Flash bevorderd terwijl Flash open was, die Flash in een slechte staat zet tot browser opnieuw begint. </p> 
+   <td colname="col3"> <p>Niet van toepassing op Android. </p> <p>Deze fout treedt momenteel in eerste instantie op nadat een nieuwe versie van Flash is uitgebracht. Het komt voor omdat de Flash terwijl de Flash open was, die Flash in een slechte staat zet tot browser opnieuw begint. </p> 
     <ul id="ul_A0AC4A77550E40409A04BD33748EA987"> 
      <li id="li_F41C1ABD838D41ABB0DF65093E664A29">De software van de distributeur moet de volgende taken uitvoeren: 
       <ul id="ul_79B2AB1372074D448F129851AA24F985"> 
        <li id="li_B93EDD263D78434FAF198A01938D3508">Het is raadzaam alle browsers te sluiten of af te sluiten en deze vervolgens opnieuw te openen. </li> 
        <li id="li_ADFBCFA66AD849E18DB390455458528E">Controleer of de versie van Flash actueel is. <p>Als de versie niet actueel is, raadt u de klant aan een upgrade uit te voeren, alle tabbladen in de browser te sluiten en opnieuw te openen. </p> </li> 
       </ul> </li> 
-     <li id="li_281B54582B5949AEA7D166246917EE41">Als er een fout optreedt nadat de browser opnieuw is gestart, gaat u naar Adobe. <p>Wanneer een nieuwe versie wordt vrijgegeven, adviseren wij dat u Adobe Support contacteert om te zien of de kwestie van achtergrondupdates is opgelost. </p> </li> 
+     <li id="li_281B54582B5949AEA7D166246917EE41">Als er een fout optreedt nadat de browser opnieuw is gestart, gaat u naar Adobe. <p>Als een nieuwe versie wordt uitgebracht, raden we u aan contact op te nemen met de Adobe Support om te zien of het probleem met de updates op de achtergrond is opgelost. </p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
@@ -564,12 +563,12 @@ Wanneer u DRM-fouten rapporteert aan Adobe, moet u ervoor zorgen dat u de `NATIV
      <li id="li_3C44F0740B08490E9C62D89C40B57DC2">De software van de distributeur zou één van het volgende moeten doen: 
       <ul id="ul_7D90526684BF4EB2BBADCF598AA13086"> 
        <li id="li_D15B4BEDAF7340F6B9BC886DF6E346EC">Indien AIR, roep <span class="codeph"> DRMManager.resetDRMVouchers()</span> </li> 
-       <li id="li_40A51D35408249CFA28DBC49FDA3408B">Als Flash onbruikbaar is wegens fouten 3322 of 3346 foutencode, zouden de gebruikers moeten gaan <a href="https://forums.adobe.com/message/5535907#5535907" format="http" scope="external"> https://forums.adobe.com/message/5535907#5535907</a> en volg de instructies van het Adobe-artikel om de DRM-licentieopslag programmatisch opnieuw in te stellen. </li> 
+       <li id="li_40A51D35408249CFA28DBC49FDA3408B">Als Flash onbruikbaar is wegens fouten 3322 of 3346 foutencode, zouden de gebruikers moeten gaan <a href="https://forums.adobe.com/message/5535907#5535907" format="http" scope="external"> https://forums.adobe.com/message/5535907#5535907</a> en volgt u de instructies van het artikel van de Adobe om de DRM-licentieopslag programmatisch te herstellen. </li> 
       </ul> </li> 
-     <li id="li_0464471E4A094C80BF2986694341921A">Als deze fout vaak optreedt, moet de distributeur de gegevens over de versie van de frequentiespeler en de browserversie aan Adobe verstrekken. </li> 
+     <li id="li_0464471E4A094C80BF2986694341921A">Als deze fout vaak optreedt, moet de distributeur de gegevens over de versie van de frequentiespeler en de browserversie ter Adobe opgeven. </li> 
     </ul> <p>Raadpleeg de volgende forumartikelen voor meer informatie: 
      <ul id="ul_44E0077FEAA749CC9549BF3846065304"> 
-      <li id="li_2BE3B2443380415DA73B7AA3B6547B31"><a href="https://forums.adobe.com/message/5520902" format="https" scope="external"> DRM-fout 3322/3346/3368 in Chrome (problemen op de Infobalk)</a> </li> 
+      <li id="li_2BE3B2443380415DA73B7AA3B6547B31"><a href="https://forums.adobe.com/message/5520902" format="https" scope="external"> DRM-fout 3322/3346/3368 in Chrome (problemen op informatiebalk)</a> </li> 
       <li id="li_4E5C7414756644E1AB78BE7B8112228C"><a href="https://forums.adobe.com/message/5535911" format="https" scope="external"> 3322- of 3346-fout na hardwarewijziging</a> </li> 
      </ul> </p> </td> 
   </tr> 
@@ -579,7 +578,7 @@ Wanneer u DRM-fouten rapporteert aan Adobe, moet u ervoor zorgen dat u de `NATIV
    <td colname="col3"> <p>De belangrijkste betekenis van deze fout is dat de licentie een beperking heeft waaraan het DRM-certificaat van de client kan voldoen. De volgende "hardwaremogelijkheden" worden gedefinieerd wanneer het DRM-certificaat van de client wordt uitgegeven: 
      <ul id="ul_1EB6F1469C244CF0BA52C212495C053D"> 
       <li id="li_646043CE045C4DE2BBC939E1F4963DFE"><b>Toegankelijke bus voor andere gebruikers</b>. Indien <b>true</b>, de ontsleutelde media stromen nooit over een bus of naar het hoofdgeheugen waartoe een toepassing toegang heeft. <p>Indien <b>false</b>, kan inhoud na decodering toegankelijk zijn voor de toepassing. </p> </li> 
-      <li id="li_02AAECAF4D35447BA10554541B46DE67"><b>Hoofdmap van vertrouwen van hardware</b>. Indien <b>true</b>Alle software die tijdens het opstarten op het apparaat is geladen, is gevalideerd op basis van een sleutel of samenvatting die alleen beschikbaar is in de hardware. <p>Beide beperkingen worden aan de clientzijde gecontroleerd wanneer de licentie wordt geopend op basis van het DRM-certificaat voor de client en de fout onmiddellijk optreedt. Deze beperkingen kunnen ook aan de serverzijde worden gecontroleerd alvorens de vergunning uit te geven. </p> </li> 
+      <li id="li_02AAECAF4D35447BA10554541B46DE67"><b>Hoofdmap van vertrouwen van hardware</b>. Indien <b>true</b>Alle software die tijdens het opstarten op het apparaat is geladen, is gevalideerd op basis van een sleutel of samenvatting die alleen beschikbaar is in de hardware. <p>Beide beperkingen worden op de client gecontroleerd wanneer de licentie wordt geopend op basis van het DRM-certificaat voor de client en de fout onmiddellijk optreedt. Deze beperkingen kunnen ook aan de serverzijde worden gecontroleerd alvorens de vergunning uit te geven. </p> </li> 
      </ul> </p> <p>De secundaire betekenis van deze fout is dat de licentie het beleid "Jailbreak Enforcement" heeft en dat er een jailbreak op het apparaat is gedetecteerd. Deze controle wordt periodiek uitgevoerd aan de clientzijde en kan niet worden gecontroleerd aan de serverzijde. </p> <p>De distributeurs kunnen het beleid bijwerken en de beperkingen verwijderen. Voor beleid van het apparatenvermogen, geef het bevel van de beleidsupdate met uit <span class="codeph"> -devCapabilitiesV1</span> markering en geen argumenten. Voor afgedwongen afgedwongen omzetting, set <span class="codeph"> policy.enfordJailbreak=false</span>. </p> </td> 
   </tr> 
   <tr> 
@@ -685,17 +684,17 @@ Wanneer u DRM-fouten rapporteert aan Adobe, moet u ervoor zorgen dat u de `NATIV
   <tr> 
    <td colname="col1"> 3368 </td> 
    <td colname="col2"><span class="codeph"> AXS_UserSettingsNoAccess</span> </td> 
-   <td colname="col3"> <p>De gebruiker heeft de bewerking geannuleerd of heeft instellingen ingevoerd die de toegang tot het systeem blokkeren. </p> <p>Deze fout wordt alleen gegenereerd wanneer de versie SWF 19 of hoger is. Voor achterwaartse compatibiliteit wordt 3321 gegenereerd wanneer de SWF versie 18 of lager is. </p> <p>De software van de distributeur moet de gebruiker begeleiden bij een uitleg van de manier waarop toegang tot niet-sandbox-plug-ins kan worden toegestaan. Toegang tot niet-sandbox van Google Chrome geweigerd</a> en <a href="https://forums.adobe.com/message/5520902" format="https" scope="external"> DRM-fout 3322/3346/3368 in Chrome (problemen op de Infobalk)</a>. </p> </td> 
+   <td colname="col3"> <p>De gebruiker heeft de bewerking geannuleerd of heeft instellingen ingevoerd die de toegang tot het systeem blokkeren. </p> <p>Deze fout wordt alleen gegenereerd wanneer de versie SWF 19 of hoger is. Voor achterwaartse compatibiliteit wordt 3321 gegenereerd wanneer de SWF versie 18 of lager is. </p> <p>De software van de distributeur moet de gebruiker begeleiden bij een uitleg van de manier waarop toegang tot niet-sandbox-plug-ins kan worden toegestaan. Toegang tot niet-sandbox van Google Chrome geweigerd</a> en <a href="https://forums.adobe.com/message/5520902" format="https" scope="external"> DRM-fout 3322/3346/3368 in Chrome (problemen op informatiebalk)</a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> 3369 </td> 
    <td colname="col2"><span class="codeph"> AXS_InterfaceNotAvailable</span> </td> 
-   <td colname="col3"> <p>Een vereiste browserinterface is niet beschikbaar. Dit probleem treedt alleen op bij Pepper. De Flash-plug-in en de browserversie komen mogelijk niet overeen. </p> <p>De software van de distributeur zou de gebruiker moeten begeleiden om ervoor te zorgen dat zij de recentste geïnstalleerde versie van browser hebben. </p> <p> Als de incidentie van deze fout toeneemt en overeenkomt met een browserupdate die wordt uitgebracht, gaat u naar Adobe. </p> </td> 
+   <td colname="col3"> <p>Een vereiste browserinterface is niet beschikbaar. Dit probleem treedt alleen op bij Pepper. De Flash-insteekmodule en de browserversie komen mogelijk niet overeen. </p> <p>De software van de distributeur zou de gebruiker moeten begeleiden om ervoor te zorgen dat zij de recentste geïnstalleerde versie van browser hebben. </p> <p> Als de incidentie van deze fout toeneemt en overeenkomt met een browserupdate die wordt uitgebracht, gaat u verder met de Adobe. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> 3370 </td> 
    <td colname="col2"><span class="codeph"> AXS_ContentIdSettingsNoAccess</span> </td> 
-   <td colname="col3"> <p>De gebruiker heeft de <span class="uicontrol"> Id's voor beveiligde inhoud toestaan</span> instellen. </p> <p>Tip: Deze fout is opgetreden bij Pepper-versies 13.0.0.x of hoger. </p> <p>De software van de distributeur moet de gebruiker begeleiden bij het inschakelen van de <span class="uicontrol"> Id's voor beveiligde inhoud toestaan</span> instellen. </p> <p>Het de verrichtingenteam van de verdeler zou de gebruiker moeten begeleiden om toe te laten <span class="uicontrol"> Id's voor beveiligde inhoud toestaan</span> instellen. </p> <p>Zie voor meer informatie <a href="https://forums.adobe.com/message/6518323#6518323" format="https" scope="external"> https://forums.adobe.com/message/6518323#6518323</a>. </p> </td> 
+   <td colname="col3"> <p>De gebruiker heeft de <span class="uicontrol"> Id's voor beveiligde inhoud toestaan</span> instellen. </p> <p>Tip: deze fout is opgetreden bij Pepper-versies 13.0.0.x of hoger. </p> <p>De software van de distributeur zou de gebruiker moeten begeleiden om de <span class="uicontrol"> Id's voor beveiligde inhoud toestaan</span> instellen. </p> <p>Het de verrichtingenteam van de verdeler zou de gebruiker moeten begeleiden om toe te laten <span class="uicontrol"> Id's voor beveiligde inhoud toestaan</span> instellen. </p> <p>Zie voor meer informatie <a href="https://forums.adobe.com/message/6518323#6518323" format="https" scope="external"> https://forums.adobe.com/message/6518323#6518323</a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> 3371 </td> 
@@ -720,7 +719,7 @@ Wanneer u DRM-fouten rapporteert aan Adobe, moet u ervoor zorgen dat u de `NATIV
  </tbody> 
 </table>
 
-## NATIVE_ERROR: Afspeelwaarden van video {#section_7079501250C2487499639F92EC774525}
+## NATIVE_ERROR: waarden voor het afspelen van video {#section_7079501250C2487499639F92EC774525}
 
 De Video Encoder-interface van de AVE retourneert deze meldingen voor het afspelen van video in het dialoogvenster `NATIVE_ERROR` object metadata.
 
@@ -751,7 +750,7 @@ De Video Encoder-interface van de AVE retourneert deze meldingen voor het afspel
   <tr> 
    <td colname="col1"> 2 </td> 
    <td colname="col2"><span class="codeph"> EOF</span> </td> 
-   <td colname="col3"> Bewerking niet mogelijk vanwege bestandseinde (EOF). </td> 
+   <td colname="col3"> Bewerking niet mogelijk vanwege bestandseinenvoorwaarde. </td> 
   </tr> 
   <tr> 
    <td colname="col1"> 3 </td> 
@@ -801,7 +800,7 @@ De Video Encoder-interface van de AVE retourneert deze meldingen voor het afspel
   <tr> 
    <td colname="col1"> 12 </td> 
    <td colname="col2"><span class="codeph"> PARSE_ERROR </span> </td> 
-   <td colname="col3"> Fout bij het parseren van het mediabestand. </td> 
+   <td colname="col3"> Fout bij parseren van mediabestand. </td> 
   </tr> 
   <tr> 
    <td colname="col1"> 13 </td> 
@@ -1206,7 +1205,7 @@ De Video Encoder-interface van de AVE retourneert deze meldingen voor het afspel
   <tr> 
    <td colname="col1"> 93 </td> 
    <td colname="col2"><span class="codeph"> TRICKPLAY_ENDED_DUE_TO_ERROR</span> </td> 
-   <td colname="col3">Er is een fout opgetreden tijdens het afspelen van media in <i>truc</i> in. De modus Steen afspelen wordt beëindigd en de stream wordt gepauzeerd. Bellen <span class="codeph"> Play()</span> om de media in de normale modus af te spelen. </td> 
+   <td colname="col3">Er is een fout opgetreden tijdens het afspelen van media in <i>truc</i> -modus. De modus Steen afspelen wordt beëindigd en de stream wordt gepauzeerd. Bellen <span class="codeph"> Play()</span> om de media in de normale modus af te spelen. </td> 
   </tr> 
   <tr> 
    <td colname="col1"> 95 </td> 
@@ -1216,9 +1215,9 @@ De Video Encoder-interface van de AVE retourneert deze meldingen voor het afspel
  </tbody> 
 </table>
 
-## NATIVE_ERROR: Cryptowaarden {#section_39365E545CAC49B9A4D4678657BB2155}
+## NATIVE_ERROR: Crypto-waarden {#section_39365E545CAC49B9A4D4678657BB2155}
 
-De cryptomodule van de Adobe video-engine retourneert deze meldingen in het dialoogvenster `NATIVE_ERROR` object metadata.
+De cryptomodule van de Adobe videomotor keert deze berichten in terug `NATIVE_ERROR` object metadata.
 
 | Waarde voor metagegevenssleutel NATIVE_ERROR_CODE | Waarde voor metagegevenssleutel NATIVE_ERROR_NAME | Betekenis |
 |---|---|---|

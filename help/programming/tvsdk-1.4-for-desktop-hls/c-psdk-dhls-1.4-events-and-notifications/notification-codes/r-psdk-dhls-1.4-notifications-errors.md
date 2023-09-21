@@ -1,8 +1,7 @@
 ---
 description: Deze tabel bevat gedetailleerde informatie over meldingen van FOUTtypen.
 title: FOUTmeldingscodes
-exl-id: 4f8882b5-2c2b-4f17-a9c9-834816265e1f
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '514'
 ht-degree: 4%
@@ -237,7 +236,7 @@ De meeste fouten bevatten relevante metagegevens, bijvoorbeeld de URL van de bro
    <td colname="1"><span class="codeph"> 109000 </span> </td> 
    <td colname="2"><span class="codeph"> AUDIO_TRACK_ERROR </span> </td> 
    <td colname="3"><span class="codeph"> DOWNLOAD_ERROR </span> </td> 
-   <td colname="4"><span class="codeph"> AUDIO_TRACK_NAME </span><span class="codeph"> AUDIO_TRACK_LANGUAGE </span> </td> 
+   <td colname="4"><span class="codeph"> AUDIO_TRACK_NAME </span><span class="codeph"> AUDIO_TRACK_TAAL </span> </td> 
    <td colname="5"> <p>Er is een fout opgetreden met betrekking tot een audiotrack. </p> </td> 
   </tr> 
   <tr rowsep="1"> 
@@ -252,7 +251,7 @@ De meeste fouten bevatten relevante metagegevens, bijvoorbeeld de URL van de bro
    <td colname="2"><span class="codeph"> GENERIC_ERROR </span> </td> 
    <td colname="3"> Geen </td> 
    <td colname="4"> Geen </td> 
-   <td colname="5"> <p>Hiermee wordt een algemene foutgebeurtenis gemarkeerd. Niet daadwerkelijk uitgegeven door TVSDK. Het is slechts een teller voor het eind van de waaier van numerieke codes die aan de foutengebeurtenissen van TVSDK beantwoorden. </p> </td> 
+   <td colname="5"> <p>Geeft een algemene foutgebeurtenis aan. Niet daadwerkelijk uitgegeven door TVSDK. Het is slechts een teller voor het eind van de waaier van numerieke codes die aan de foutengebeurtenissen van TVSDK beantwoorden. </p> </td> 
   </tr> 
  </tbody> 
 </table>

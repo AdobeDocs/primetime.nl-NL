@@ -1,8 +1,7 @@
 ---
-description: In de klasse PlayerFragment kunt u de code bewerken om de functiemanagers volledig in te schakelen.
+description: In de klasse PlayerFragment kunt u de code bewerken om de functies voor volledig ingeschakelde functies te maken.
 title: PlayerFragment
-exl-id: 9060f0f5-9148-48cd-b89b-718607dd70bc
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '118'
 ht-degree: 0%
@@ -11,7 +10,7 @@ ht-degree: 0%
 
 # PlayerFragment {#playerfragment}
 
-In de klasse PlayerFragment kunt u de code bewerken om de functiemanagers volledig in te schakelen.
+In de klasse PlayerFragment kunt u de code bewerken om de functies voor volledig ingeschakelde functies te maken.
 
 De `PlayerFragment` klasse bevat alle UI-componenten, zoals de klasse `playerFrame`, `ControlBar`, `playerClickableAdFragment`, en `adOverlay`.
 

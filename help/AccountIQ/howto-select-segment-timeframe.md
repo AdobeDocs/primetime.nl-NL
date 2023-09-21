@@ -1,8 +1,7 @@
 ---
 title: Een segment en tijdframe definiëren
 description: Een segment en tijdframe definiëren
-exl-id: 86fe010d-3202-4ce2-b803-ff44f5538d7e
-source-git-commit: c17fb003d8c8103aac36696f696c9e3c7bb83c4f
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '569'
 ht-degree: 0%
@@ -15,7 +14,7 @@ Alle analyse of het bekijken rapporten in IQ van de Rekening beginnen met het be
 
 ![](assets/segment-panel.png)
 
-*Afbeelding: Selectie van segment en tijdkader*
+*Afbeelding: Selectie van segment en tijdframe*
 
 Bij de bovenkant van alle rapportpagina&#39;s in Rekening IQ, is er een paneel om segment te bepalen door MVPDs, kanaalprogrammeurs, en granulariteit en tijdkader te selecteren.
 
@@ -49,16 +48,16 @@ Om de gewenste programmeerkanalen van te selecteren **Kanalen in segment** optie
 
    >[!NOTE]
    >
-   >**Alles** programmeerkanalen voor uw bedrijf worden geselecteerd door gebrek. Als u afzonderlijke kanalen of programmeurs wilt selecteren, moet u eerst de selectie opheffen **Alles**.
+   >**Alles** programmeerkanalen voor uw bedrijf worden geselecteerd door gebrek. Om individuele kanalen of programmeurs te selecteren moet u eerst deselecteren **Alles**.
 
 1. Klik of tik op de gewenste kanalen of programmeurs.
 
-   De lijstitems op het hoogste niveau in het dialoogvenster **Kanalen in segment** zijn [programmeur](/help/AccountIQ/product-concepts.md#programmer-def) bedrijven en de lijstonderdelen onder programmeernamen zijn hun [kanalen](/help/AccountIQ/product-concepts.md#channel-def). U kunt of individuele kanalen selecteren onder programmeurs, of programmeurs selecteren en alle activiteiten van de kanalen onder die programmeur zijn inbegrepen in rapport en grafiekresultaten.
+   De lijstonderdelen op het hoogste niveau in het dialoogvenster **Kanalen in segment** zijn [programmeur](/help/AccountIQ/product-concepts.md#programmer-def) bedrijven en de lijstonderdelen onder programmeernamen zijn hun [kanalen](/help/AccountIQ/product-concepts.md#channel-def). U kunt of individuele kanalen selecteren onder programmeurs, of programmeurs selecteren en alle activiteiten van de kanalen onder die programmeur zijn inbegrepen in rapport en grafiekresultaten.
 
    ![](assets/programmer-channels.png)
 
 
-   *Afbeelding: Programmeurs en kanalen die in kanaalselecteur worden vermeld*
+   *Figuur: Programmeurs en kanalen die in kanaalselecteur worden vermeld*
 
    >[!IMPORTANT]
    >
@@ -77,26 +76,26 @@ Om de gewenste programmeerkanalen van te selecteren **Kanalen in segment** optie
 
 Naast het wijzigen van de selectie in het dialoogvenster **MVPD&#39;s in segment** en **Kanalen in segment** segmentkiezers kunt u de eerder geselecteerde MVPD&#39;s en kanalen deselecteren door:
 
-* Het selecteren van **Verwijderen** icon (![pictogram verwijderen](assets/remove-icon.png)) op de namen van deze geselecteerde MVPD&#39;s en kanalen die onder segmentkiezer worden weergegeven.
+* De **Verwijderen** icon (![pictogram verwijderen](assets/remove-icon.png)) op de namen van deze geselecteerde MVPD&#39;s en kanalen die onder segmentkiezer worden weergegeven.
 
 * U kunt ook **Selectie wissen** om alle eerder geselecteerde MVPD&#39;s of kanalen te verwijderen.
 
 ![](assets/segment-panel-selection.png)
 
-*Afbeelding: Geselecteerde MVPD&#39;s en kanalen in segment- en tijdlijnpaneel*
+*Afbeelding: Geselecteerde MVPD&#39;s en kanalen in segment- en tijdframe-deelvenster*
 
 ## Korreligheid en selectie van tijdframes {#granularity-timeframe}
 
 Een evaluatieperiode selecteren:
 
-1. Selecteer **Korreligheid en tijdkader** datumkiezer.
+1. Selecteer de **Korreligheid en tijdkader** datumkiezer.
 
-1. Selecteer **Week** of **Maand** van **Samenvoegen met** om granulariteit voor uw evaluatie in te stellen.
+1. Selecteer een van beide **Week** of **Maand** van **Samenvoegen met** om granulariteit voor uw evaluatie in te stellen.
 
    ![](assets/granularity-timeframe-weekwise.png)
 
 
-   *Afbeelding: De kiezer van de datum om Korreligheid en tijdkader te selecteren*
+   *Afbeelding: Datumkiezer om granulariteit en tijdkader te selecteren*
 
 1. Als u de granulariteit hebt geselecteerd, kunt u met de pijlen naar voren of naar achteren in de tijd gaan.
 

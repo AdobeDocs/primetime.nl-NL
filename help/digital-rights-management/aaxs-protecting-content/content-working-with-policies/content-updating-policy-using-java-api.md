@@ -2,8 +2,7 @@
 title: Een beleid bijwerken met de Java API
 description: Een beleid bijwerken met de Java API
 copied-description: true
-exl-id: 1b03f033-0d29-46cc-ae14-d6fef96fe970
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '113'
 ht-degree: 0%
@@ -14,7 +13,7 @@ ht-degree: 0%
 
 Voer de volgende stappen uit om een beleid bij te werken met de Java API:
 
-1. Stel uw ontwikkelomgeving in en neem alle JAR-bestanden op die in [De ontwikkelomgeving instellen](../../aaxs-protecting-content/content-setting-up-the-sdk/content-setting-up-the-dev-env.md) in uw project.
+1. Stel uw ontwikkelomgeving in en neem alle JAR-bestanden op die worden vermeld in [De ontwikkelomgeving instellen](../../aaxs-protecting-content/content-setting-up-the-sdk/content-setting-up-the-dev-env.md) in uw project.
 1. Een `Policy` -instantie en in het beleid lezen vanuit een bestand of database.
 
    ```
@@ -60,4 +59,4 @@ Voer de volgende stappen uit om een beleid bij te werken met de Java API:
       out.close(); 
    ```
 
-Voor de volledige bron van deze voorbeeldcode raadpleegt u `com.adobe.flashaccess.samples.policy.UpdatePolicy` in de map &quot;samples&quot; van de opdrachtregelprogramma&#39;s van de naslagimplementatie.
+Zie voor de volledige bron van deze voorbeeldcode `com.adobe.flashaccess.samples.policy.UpdatePolicy` in de map &quot;samples&quot; van de opdrachtregelprogramma&#39;s van de naslagimplementatie.

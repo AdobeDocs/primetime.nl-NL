@@ -1,8 +1,7 @@
 ---
 description: Wanneer een gebruiker op een advertentie of een verwante knop klikt, moet de toepassing reageren. TVSDK biedt u informatie over de doel-URL voor de klik.
 title: Reageren op klikken op advertenties
-exl-id: a313bb03-a857-48b6-ace7-b61574dbf75f
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '325'
 ht-degree: 0%
@@ -32,10 +31,10 @@ Wanneer een gebruiker op een advertentie of een verwante knop klikt, moet de toe
    
    * In uw toepassing, door klik-door URL in browser te openen.
 
-      Op bureaubladplatforms worden de video en het afspeelgebied gebruikt om doorklikURL&#39;s aan te roepen wanneer de gebruiker klikt.
+     Op bureaubladplatforms worden de video en het afspeelgebied gebruikt om doorklikURL&#39;s aan te roepen wanneer de gebruiker klikt.
    * Gebruikers omleiden naar hun externe mobiele webbrowser.
 
-      Op mobiele apparaten worden de video en het afspeelgebied gebruikt voor andere functies, zoals het verbergen en weergeven van besturingselementen, het pauzeren van het afspelen, het uitbreiden naar het volledige scherm, enzovoort. Op deze apparaten wordt een aparte weergave, zoals een sponsor, gebruikt om de doorklikURL te starten.
+     Op mobiele apparaten worden de video en het afspeelgebied gebruikt voor andere functies, zoals het verbergen en weergeven van besturingselementen, het pauzeren van het afspelen, het uitbreiden naar het volledige scherm, enzovoort. Op deze apparaten wordt een aparte weergave, zoals een sponsor, gebruikt om de doorklikURL te starten.
 
 1. Sluit het browservenster waarin de doorklikinformatie wordt weergegeven en hervat het afspelen van de video.
 

@@ -2,8 +2,7 @@
 title: Referenties opslaan
 description: Referenties opslaan
 copied-description: true
-exl-id: 42bccf3a-307f-4763-8b02-f983bcc2e131
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '363'
 ht-degree: 0%
@@ -20,7 +19,7 @@ De SDK ondersteunt meerdere manieren om referenties op te slaan (een openbare-sl
 
 >[!NOTE]
 >
->Vanaf Java1.7, steunt 64bit Zon Java voor Vensters niet de interfaces PKCS11 die Adobe Access DRM vereist om met apparaten te communiceren HSM. Als u een HSM wilt gebruiken, moet u een 32-bits versie van Java gebruiken of een JDK gebruiken die de volledige PKCS11-interfaces ondersteunt.
+>Vanaf Java1.7, steunt de Zon Java van 64 bits voor Vensters niet de interfaces PKCS11 die de Toegang DRM van de Adobe vereist om met apparaten te communiceren HSM. Als u een HSM wilt gebruiken, moet u een 32-bits versie van Java gebruiken of een JDK gebruiken die de volledige PKCS11-interfaces ondersteunt.
 
 U kunt een privé sleutel op een Module van de Veiligheid van de Hardware (HSM) houden en SDK gebruiken om in de referentie over te gaan u van HSM verkrijgt. Als u een referentie wilt gebruiken die op een HSM is opgeslagen, gebruikt u een JCE-provider die met een HSM kan communiceren om een greep naar de persoonlijke sleutel te krijgen. Geef vervolgens de greep van de persoonlijke sleutel, de naam van de provider en het certificaat met de openbare sleutel door aan `ServerCredentialFactory.getServerCredential()`.
 

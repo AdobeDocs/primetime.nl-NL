@@ -1,15 +1,14 @@
 ---
 description: De PlayReady interface van het licentietoken verleent productie en testdiensten.
-title: PlayReady verzoek voor licentietoken/reactie
-exl-id: 12f925f7-336b-42b2-95a9-e806801bab8c
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+title: PlayReady-verzoek voor licentietoken/reactie
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '898'
 ht-degree: 4%
 
 ---
 
-# PlayReady verzoek voor licentietoken/reactie {#playready-license-token-request-response}
+# PlayReady-verzoek voor licentietoken/reactie {#playready-license-token-request-response}
 
 De PlayReady interface van het licentietoken verleent productie en testdiensten.
 
@@ -25,31 +24,31 @@ Deze HTTP-aanvraag retourneert een token dat voor een PlayReady-licentie kan wor
 
 * **Voorbeeldverzoek:**
 
-   ```
-   <xref href="https: pr-gen.test.expressplay.com="" hms="" pr="" token?customerAuthenticator="201722,1ad8eed133edf43cbcc185f0236828ae&kid=b366360da82e9c6e0b0984002a362cf2&contentKey=b366360da82e9c6e0b0984002a362cf2&rightsType=BuyToOwn&analogVideoOPL=0&compressedDigitalAudioOPL=0&compressedDigitalVideoOPL=0&uncompressedDigitalAudioOPL=0&uncompressedDigitalVideoOPL=0&quot; format=&quot;html&quot; scope=&quot;external&quot;">
-   https://pr-gen.test.expressplay.com/hms/pr/token?customerAuthenticator=
-    <ExpressPlay customer authenticator identifier>
-    &kid=<CEKSID>
-    &contentKey=<CEK>
-    &rightsType=BuyToOwn
-    &analogVideoOPL=0
-    &compressedDigitalAudioOPL=0
-    &compressedDigitalVideoOPL=0
-    &uncompressedDigitalAudioOPL=0
-    &uncompressedDigitalVideoOPL=0
-   </xref href="https:>
-   ```
+  ```
+  <xref href="https: pr-gen.test.expressplay.com="" hms="" pr="" token?customerAuthenticator="201722,1ad8eed133edf43cbcc185f0236828ae&kid=b366360da82e9c6e0b0984002a362cf2&contentKey=b366360da82e9c6e0b0984002a362cf2&rightsType=BuyToOwn&analogVideoOPL=0&compressedDigitalAudioOPL=0&compressedDigitalVideoOPL=0&uncompressedDigitalAudioOPL=0&uncompressedDigitalVideoOPL=0&quot; format=&quot;html&quot; scope=&quot;external&quot;">
+  https://pr-gen.test.expressplay.com/hms/pr/token?customerAuthenticator=
+   <ExpressPlay customer authenticator identifier>
+   &kid=<CEKSID>
+   &contentKey=<CEK>
+   &rightsType=BuyToOwn
+   &analogVideoOPL=0
+   &compressedDigitalAudioOPL=0
+   &compressedDigitalVideoOPL=0
+   &uncompressedDigitalAudioOPL=0
+   &uncompressedDigitalVideoOPL=0
+  </xref href="https:>
+  ```
 
 * **Samplereactie:**
 
-   ```
-   {"licenseAcquisitionUrl":"https://expressplay-licensing.axprod.net/LicensingService.ashx",
-               "token":"<base64-encoded ExpressPlay token>"}
-   ```
+  ```
+  {"licenseAcquisitionUrl":"https://expressplay-licensing.axprod.net/LicensingService.ashx",
+              "token":"<base64-encoded ExpressPlay token>"}
+  ```
 
 ## Query-parameters aanvragen {#section_26F8856641A64A46A3290DBE61ACFAD2}
 
-**Tabel 9: Parameters tokenquery**
+**Tabel 9: parameters voor tokenquery**
 
 <table id="table_zxg_dyr_pv">  
  <thead> 
@@ -67,7 +66,7 @@ Deze HTTP-aanvraag retourneert een token dat voor een PlayReady-licentie kan wor
   </tr> 
   <tr> 
    <td><span class="codeph"> errorFormat</span> </td> 
-   <td>Willekeurig <span class="codeph"> html</span> of <span class="codeph"> json</span>. Indien <span class="codeph"> html</span> (standaard) een HTML-weergave van eventuele fouten wordt gegeven in de hoofdtekst van de reactie van de entiteit. <p>Indien <span class="codeph"> json</span> wordt opgegeven, wordt een gestructureerde reactie in JSON-indeling geretourneerd. Zie <a href="https://www.expressplay.com/developer/restapi/#json-errors" format="html" scope="external"> JSON-fouten</a> voor meer informatie. </p> <p>Het mime-type van de reactie is: <span class="codeph"> text/uri-list</span> over succes, <span class="codeph"> text/html</span> voor de indeling HTML error, of <span class="codeph"> application/json</span> voor JSON-foutindeling. </p> </td> 
+   <td>Willekeurig <span class="codeph"> html</span> of <span class="codeph"> json</span>. Indien <span class="codeph"> html</span> (standaard) een HTML-weergave van eventuele fouten wordt gegeven in de hoofdtekst van de reactie van de entiteit. <p>Indien <span class="codeph"> json</span> wordt opgegeven, wordt een gestructureerde reactie in JSON-indeling geretourneerd. Zie <a href="https://www.expressplay.com/developer/restapi/#json-errors" format="html" scope="external"> JSON-fouten</a> voor meer informatie. </p> <p>Het mime-type van de reactie is: <span class="codeph"> text/uri-list</span> over succes, <span class="codeph"> text/html</span> voor de indeling van de HTML-fout, of <span class="codeph"> application/json</span> voor JSON-foutindeling. </p> </td> 
    <td> Nee </td> 
   </tr> 
  </tbody> 
@@ -116,7 +115,7 @@ Deze HTTP-aanvraag retourneert een token dat voor een PlayReady-licentie kan wor
   </tr> 
   <tr> 
    <td><span class="codeph"> huur.periodEndTime</span> </td> 
-   <td>Einddatum huur. Deze waarde MOET de notatie "RFC 3339" _ datum/tijd hebben in de notatie "Z"-zoneaanduiding ("Zulu time") of een geheel getal voorafgegaan door een plusteken (+). <p>Als de waarde een <a href="https://www.ietf.org/rfc/rfc3339.txt" format="html" scope="external"> RFC 3339</a> datum-/tijdnotatie, dan staat deze voor een absolute vervaldatum/tijd voor de licentie. Een voorbeeld van een RFC 3339 datum/tijd is 2006-04-14T12:01:10Z. </p> <p> Als de waarde een geheel getal is dat wordt voorafgegaan door een plusteken (+), wordt deze genomen als een relatief aantal seconden vanaf het moment dat het token wordt uitgegeven. De inhoud kan na deze keer niet worden afgespeeld. Alleen geldig als <span class="codeph"> rightsType</span> is <span class="codeph"> Huur</span>. </p> </td> 
+   <td>Einddatum huur. Deze waarde MOET de notatie "RFC 3339" _ datum/tijd hebben in de notatie "Z"-zoneaanduiding ("Zulu time") of een geheel getal voorafgegaan door een plusteken (+). <p>Als de waarde een <a href="https://www.ietf.org/rfc/rfc3339.txt" format="html" scope="external"> RFC 339</a> datum-/tijdnotatie, dan staat deze voor een absolute vervaldatum/tijd voor de licentie. Een voorbeeld van een RFC 3339 datum/tijd is 2006-04-14T12:01:10Z. </p> <p> Als de waarde een geheel getal is dat wordt voorafgegaan door een plusteken (+), wordt deze genomen als een relatief aantal seconden vanaf het moment dat het token wordt uitgegeven. De inhoud kan na deze keer niet worden afgespeeld. Alleen geldig als <span class="codeph"> rightsType</span> is <span class="codeph"> Huur</span>. </p> </td> 
    <td>Ja, wanneer <span class="codeph"> rightsType</span> is <span class="codeph"> Huur</span>. </td> 
   </tr> 
   <tr> 
@@ -216,7 +215,7 @@ Deze HTTP-aanvraag retourneert een token dat voor een PlayReady-licentie kan wor
   </tr> 
   <tr> 
    <td> -2018 </td> 
-   <td>Verificatietoken ongeldig: &lt;details&gt; <p>Opmerking: Dit kan gebeuren als de authenticator het mis heeft of wanneer het toegang tot van test API bij *.test.expression.com gebruikend productieauthentiek en vice versa. </p> <p importance="high">Opmerking: De SDK van de Test en het Geavanceerde Hulpmiddel van de Test (ATT) werken slechts met <span class="filepath"> *.test.expression.splay.com</span>overwegende dat de productiemiddelen <span class="filepath"> *.service.expressplay.com</span>. </p> </td> 
+   <td>Verificatietoken ongeldig: &lt;details&gt; <p>Opmerking: dit kan gebeuren als de authenticator het mis heeft of als de test-API wordt benaderd via *.test.expressplay.com en andersom. </p> <p importance="high">Opmerking: de testSDK en het geavanceerde testgereedschap (ATT) werken alleen met <span class="filepath"> *.test.expressplay.com</span>overwegende dat de productiemiddelen <span class="filepath"> *.service.expressplay.com</span>. </p> </td> 
   </tr> 
   <tr> 
    <td> -2019 </td> 
@@ -240,7 +239,7 @@ Deze HTTP-aanvraag retourneert een token dat voor een PlayReady-licentie kan wor
   </tr> 
   <tr> 
    <td> -2025 </td> 
-   <td> Ongeldige afspeelduur verhuur </td> 
+   <td> Ongeldige afspeelduur van verhuur </td> 
   </tr> 
   <tr> 
    <td> -2027 </td> 
@@ -324,7 +323,7 @@ Deze HTTP-aanvraag retourneert een token dat voor een PlayReady-licentie kan wor
   </tr> 
   <tr> 
    <td> -5004 </td> 
-   <td> Apparaat-id moet 32 hexadecimale tekens lang zijn </td> 
+   <td> Device ID moet 32 hexadecimale tekens lang zijn </td> 
   </tr> 
   <tr> 
    <td> -5005 </td> 

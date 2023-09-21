@@ -1,8 +1,7 @@
 ---
 title: Uw advertentieserver integreren
 description: Uw advertentieserver integreren
-exl-id: 4f2c75e0-db88-4c5d-8ddd-a5eab5d0b910
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '147'
 ht-degree: 0%
@@ -19,7 +18,7 @@ Om te beginnen, zult u login worden gegeven om tot de console toegang te hebben 
 
 ## Macroondersteuning {#macro-support}
 
-Met Primetime Ad Insertion worden de volgende servermacro&#39;s voor advertentie ingeschakeld voor alle streams:
+Met Primetime Ad Insertion worden de volgende servermacro&#39;s voor de advertentie ingeschakeld voor alle streams:
 
 * Cache-busting
 * Toepassingscontext of pagina-URL

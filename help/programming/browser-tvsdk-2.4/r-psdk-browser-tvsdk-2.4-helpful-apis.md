@@ -1,8 +1,7 @@
 ---
-description: Er zijn enkele API's die u kunnen helpen de Flash Player van Adobe te gebruiken.
+description: Sommige API's kunnen u helpen de Flash Player Adobe te gebruiken.
 title: Nuttige API's voor de Adobe Flash Player
-exl-id: 3a80088b-382e-4624-bbaa-6d7e9f0126e2
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '64'
 ht-degree: 0%
@@ -11,7 +10,7 @@ ht-degree: 0%
 
 # Nuttige API&#39;s voor de Adobe Flash Player{#helpful-apis-for-the-adobe-flash-player}
 
-Er zijn enkele API&#39;s die u kunnen helpen de Flash Player van Adobe te gebruiken.
+Sommige API&#39;s kunnen u helpen de Flash Player Adobe te gebruiken.
 
 ## AdobePSDK.MediaResource {#section_8C339FA1386D4B1A926A1459B2619E5E}
 
@@ -19,7 +18,7 @@ Er zijn enkele API&#39;s die u kunnen helpen de Flash Player van Adobe te gebrui
 new MediaResource(url, type, metadata, forceFlash)
 ```
 
-Indien ondersteund, kunt u de `forceFlash` parameter om de bepalingsopeenvolging van de playbacktechnologie met voeten te treden en de implementatie te dwingen om de Flash Player te gebruiken.
+Als dit wordt ondersteund, kunt u de `forceFlash` parameter om de bepalingsopeenvolging van de playbacktechnologie met voeten te treden en de implementatie te dwingen om de Flash Player te gebruiken.
 
 <!--<a id="section_FEE3205B532446498771F7DD55B5E79F"></a>-->
 

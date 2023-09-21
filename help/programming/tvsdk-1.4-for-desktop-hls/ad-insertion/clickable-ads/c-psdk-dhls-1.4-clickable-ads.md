@@ -1,8 +1,7 @@
 ---
 description: TVSDK biedt u informatie zodat u op doorklikadvertenties kunt werken. Terwijl u de interface van de speler maakt, moet u bepalen hoe u moet reageren wanneer een gebruiker op een klikbare advertentie klikt.
 title: Klikbare advertenties
-exl-id: 50c74c82-c5d8-43f6-accf-8330a426a7bd
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '362'
 ht-degree: 0%
@@ -96,9 +95,9 @@ In dit voorbeeld ziet u een mogelijke manier om advertenties te beheren.
    
    * Open de doorklikURL in browser binnen uw toepassing.
 
-      Op bureaubladplatforms wordt het video- en afspeelgebied doorgaans gebruikt om doorklikURL&#39;s aan te roepen wanneer de gebruiker klikt.
+     Op bureaubladplatforms wordt het video- en afspeelgebied doorgaans gebruikt om doorklikURL&#39;s aan te roepen wanneer de gebruiker klikt.
    * Leid de gebruiker om naar de externe mobiele webbrowser.
 
-      Op mobiele apparaten worden de video en het afspeelgebied gebruikt voor andere functies, zoals het verbergen en weergeven van besturingselementen, het pauzeren van het afspelen, het uitbreiden naar het volledige scherm, enzovoort. Daarom wordt op mobiele apparaten doorgaans een aparte weergave, zoals een sponsor-knop, aan de gebruiker getoond als een manier om de doorklikURL te starten.
+     Op mobiele apparaten worden de video en het afspeelgebied gebruikt voor andere functies, zoals het verbergen en weergeven van besturingselementen, het pauzeren van het afspelen, het uitbreiden naar het volledige scherm, enzovoort. Daarom wordt op mobiele apparaten doorgaans een aparte weergave, zoals een sponsor-knop, aan de gebruiker getoond als een manier om de doorklikURL te starten.
 
 1. Sluit het browservenster waarin de doorklikinformatie wordt weergegeven en hervat het afspelen van de video.

@@ -1,8 +1,7 @@
 ---
 description: Als u banneradvertenties wilt weergeven, moet u bannerinstanties maken en Browser-TVSDK toestaan te luisteren naar gebeurtenissen met betrekking tot advertenties.
 title: banneradvertenties weergeven
-exl-id: 331c10a4-ae31-4d3b-aaca-9497e2970ecf
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '242'
 ht-degree: 0%
@@ -19,7 +18,7 @@ Manifests kunnen banneradvertenties voor gezellen specificeren door:
 
 * Een HTML-fragment
 * De URL van een iFrame-pagina
-* De URL van een statische afbeelding of een Adobe Flash-SWF van het type
+* De URL van een statisch of Adobe Flash-SWF-bestand
 
 Voor elke bijbehorende advertentie geeft Browser TVSDK aan welke typen beschikbaar zijn voor uw toepassing.
 
@@ -32,7 +31,7 @@ Een listener toevoegen voor de gebeurtenis `AdobePSDK.PSDKEventType.AD_STARTED` 
 1. Als een video zonder bijbehorende advertenties is geboekt, bevat de lijst met bijbehorende elementen geen gegevens voor die video-advertentie.
 1. Verzendt de bannergegevens naar een functie op de pagina die de banners op een geschikte locatie weergeeft.
 
-   Dit is meestal een `div`en uw functie gebruikt de `div ID` om de banner weer te geven. Bijvoorbeeld:
+   Dit is meestal een `div`en uw functie gebruikt de `div ID` de banner weergeven. Bijvoorbeeld:
 
    Voeg de gebeurtenislistener toe:
 

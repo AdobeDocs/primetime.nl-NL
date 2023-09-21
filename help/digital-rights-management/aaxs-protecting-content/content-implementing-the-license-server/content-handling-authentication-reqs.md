@@ -2,8 +2,7 @@
 title: Verzoeken om verificatie verwerken
 description: Verzoeken om verificatie verwerken
 copied-description: true
-exl-id: c1d46ec0-e053-4824-b3b1-20320e259fbe
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '197'
 ht-degree: 0%
@@ -20,4 +19,4 @@ De manager leest een authentificatieverzoek en ontleedt het verzoekbericht wanne
 
 * De klasse request handler is `com.adobe.flashaccess.sdk.protocol.authentication.AuthenticationHandler`
 * De klasse request message is `com.adobe.flashaccess.sdk.protocol.authentication.AuthenticationRequestMessage`
-* Als zowel de client als het serverondersteuningsprotocol versie 5, is de aanvraag-URL &quot;Licence Server URL in metadata: + &quot;/flashaccess/authn/v4&quot;. Als protocolversie 3 het maximum is dat door of de cliënt of de server wordt gesteund, zullen de cliënten van de Toegang van Adobe naar &quot;de Server URL van de Vergunning in meta-gegevens&quot;verzenden + &quot;/flashaccess/authn/v3&quot;. Anders worden verificatieaanvragen verzonden naar &quot;Licentieserver-URL in metagegevens&quot; + &quot;/flashaccess/authn/v1&quot;
+* Als zowel de client als het serverondersteuningsprotocol versie 5 is, is de aanvraag-URL &quot;Licence Server URL in metadata: + &quot;/flashaccess/authn/v4&quot;. Als protocolversie 3 het maximum is dat door of de cliënt of de server wordt gesteund, zullen de cliënten van de Toegang van de Adobe authentificatieverzoeken naar &quot;de Server URL van de Vergunning in meta-gegevens&quot; + &quot;/flashaccess/authn/v3&quot; verzenden. Anders worden verificatieaanvragen verzonden naar &quot;Licentieserver-URL in metagegevens&quot; + &quot;/flashaccess/authn/v1&quot;

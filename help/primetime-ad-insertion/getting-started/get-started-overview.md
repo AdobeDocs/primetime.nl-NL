@@ -1,8 +1,7 @@
 ---
 title: Aan de slag met Adobe Primetime Ad Insertion
 description: Aan de slag met Adobe Primetime Ad Insertion
-exl-id: 629ea2a5-1b50-4451-a478-95d02f192145
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '312'
 ht-degree: 0%
@@ -17,7 +16,7 @@ Primetime Ad Insertion communiceert met video-levering cliënttoepassingen door 
 
 Nadat het systeem correct is opgezet, zou een typisch werkschema als volgt kunnen kijken:
 
-1. De clienttoepassing genereert een [Bootstrap URL](/help/primetime-ad-insertion/technical-reference/bootstrap-api.md) met informatie over de videostream en verzendt een verzoek van GET naar Primetime Ad Insertion.  Primetime Ad Insertion ondersteunt HLS en DASH met een groot aantal verschillende indelingen voor advertenties.
+1. De clienttoepassing genereert een [Bootstrap-URL](/help/primetime-ad-insertion/technical-reference/bootstrap-api.md) met informatie over de videostream en verzendt een verzoek van GET naar Primetime Ad Insertion.  Primetime Ad Insertion ondersteunt HLS en DASH met een groot aantal verschillende indelingen voor advertenties.
 
 1. Primetime Ad Insertion reageert door inhoudsmanifest van CDN van de uitgever terug naar de cliënttoepassing te verzenden.
 
@@ -25,7 +24,7 @@ Nadat het systeem correct is opgezet, zou een typisch werkschema als volgt kunne
 
 1. Primetime-Ad Insertion haalt de aangevraagde stream(s) op van de CDN-inhoud, parseert/leest alle actiemiddelen, roept de advertentieserver aan en vervangt en verbreekt indien nodig de gegevens.
 
-1. Primetime-Ad Insertion normaliseert het manifest door bron-URL&#39;s opnieuw te schrijven en na te gaan of ad-creatieve functies transcoderen vereisen, raadpleegt u [Just-in-Time en Transcoding](/help/primetime-ad-insertion/just-in-time-transcoding/jit-transcoding-overview.md).
+1. Primetime-Ad Insertion normaliseert het manifest door bron-URL&#39;s opnieuw te schrijven en na te gaan of ad-creatieve functies transcoderen vereisen. Zie [Just-in-Time en Transcoding](/help/primetime-ad-insertion/just-in-time-transcoding/jit-transcoding-overview.md).
 
 1. Primetime Ad Insertion haalt de vereiste en creatieve elementen op en voegt de juiste fragmenten in de manifesten in.
 

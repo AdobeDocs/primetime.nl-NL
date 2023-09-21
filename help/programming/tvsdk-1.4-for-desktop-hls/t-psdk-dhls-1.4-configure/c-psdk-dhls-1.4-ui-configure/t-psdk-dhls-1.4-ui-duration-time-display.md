@@ -1,8 +1,7 @@
 ---
 description: U kunt TVSDK gebruiken om informatie op te halen over de media die u op de zoekbalk kunt weergeven.
 title: De duur, de huidige tijd en de resterende tijd van de video weergeven
-exl-id: 490bfa22-6df6-44a3-8e0d-9bb5939ae881
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '292'
 ht-degree: 0%
@@ -14,7 +13,7 @@ ht-degree: 0%
 U kunt TVSDK gebruiken om informatie op te halen over de media die u op de zoekbalk kunt weergeven.
 
 1. Wacht tot de speler de status INITIALIZED heeft.
-1. De huidige tijd van de afspeelkop ophalen met de `MediaPlayer.currentTime` eigenschap.
+1. De huidige tijd van de afspeelkop ophalen met de opdracht `MediaPlayer.currentTime` eigenschap.
 
    Hiermee wordt de huidige positie van de afspeelkop op de virtuele tijdlijn in milliseconden geretourneerd. De tijd wordt berekend ten opzichte van de opgeloste stream die meerdere instanties van alternatieve inhoud kan bevatten, zoals meerdere advertenties of ad-einden die in de hoofdstream worden gespliceerd. Voor live/lineaire streams bevindt de geretourneerde tijd zich altijd in het bereik van het afspeelvenster.
 

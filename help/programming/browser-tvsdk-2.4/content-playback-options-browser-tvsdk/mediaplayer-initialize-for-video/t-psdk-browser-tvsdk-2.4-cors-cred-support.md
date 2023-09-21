@@ -2,8 +2,7 @@
 description: De steun voor het attribuut withCredentials in XMLHttpRequests staat het delen van middelen van oorsprong (CORS) verzoeken toe om de koekjes van het doeldomein voor een verscheidenheid van verzoektypes te omvatten.
 keywords: CORS;cross origin;resource sharing;cookies;withCredentials
 title: Bron delen tussen verschillende oorsprong
-exl-id: 02826c87-b0c6-495b-a17d-67c5693a9772
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '254'
 ht-degree: 0%
@@ -51,7 +50,7 @@ Inschakelen `withCredentials` ondersteuning voor de meeste typen verzoeken bij h
 
 >[!IMPORTANT]
 >
->De `useCookieHeaderForAllRequests` de markering heeft geen invloed op vergunningaanvragen. Als u de `withCredentials` kenmerk naar `true` voor een licentieaanvraag moet u de instelling `withCredentials` in uw beveiligingsgegevens of geef een machtigingssleutel op in het veld `httpRequestHeaders` van uw beveiligingsgegevens. Bijvoorbeeld:
+>De `useCookieHeaderForAllRequests` de markering heeft geen invloed op vergunningaanvragen. Als u het dialoogvenster `withCredentials` kenmerk naar `true` voor een licentieaanvraag moet u de instelling `withCredentials` in uw beveiligingsgegevens of geef een machtigingssleutel op in het veld `httpRequestHeaders` van uw beveiligingsgegevens. Bijvoorbeeld:
 
 ```
 # Example 1 

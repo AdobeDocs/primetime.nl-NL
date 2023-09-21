@@ -1,8 +1,7 @@
 ---
 description: Pas uw referentie-implementatie aan om Adobe Primetime-verificatie voor uw productieomgeving te integreren.
 title: Primetime-verificatie integreren
-exl-id: ef6dc75d-d00f-481f-a620-4ec402cbebb6
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '767'
 ht-degree: 0%
@@ -25,7 +24,7 @@ De integratie van de Dienst van de Uitvoering van de Verwijzing van de Echtheid 
    EntitlementManager.initializeAccessEnabler(this); // comment out this line to disable entitlement workflows
    ```
 
-1. Gebruik de `ManagerFactory` klasse om een instantie van de klasse te verkrijgen `EntitlementManager`.
+1. Gebruik de `ManagerFactory` klasse om een instantie van de klasse `EntitlementManager`.
 
    U moet altijd de opdracht `ManagerFactory` om een instantie van de `EntitlementManager`als de `ManagerFactory` onderhoudt één instantie van EntitlementManager voor uw toepassing. Instantieer nooit de `EntitlementManager` of `EntitlementManagerOn` klassen gebruiken door hun constructors te gebruiken.
 
@@ -34,9 +33,9 @@ De integratie van de Dienst van de Uitvoering van de Verwijzing van de Echtheid 
    ManagerFactory.getEntitlementManager();
    ```
 
-   De `ManagerFactory` retourneert een instantie van `EntitlementManagerOn`, met de machtigingsstromen ingeschakeld, als u eerder `EntitlementManager.initializeAccessEnabler`. Als u niet eerst roept `EntitlementManager.initializeAccessEnabler`en de `ManagerFactory` retourneert een instantie van `EntitlementManager`, met de machtigingsstromen uitgeschakeld. 1. Configureer de aanvrager-id.
+   De `ManagerFactory` retourneert een instantie van `EntitlementManagerOn`, met de machtigingsstromen ingeschakeld, als u eerder `EntitlementManager.initializeAccessEnabler`. Als u niet eerst roept `EntitlementManager.initializeAccessEnabler`en vervolgens de `ManagerFactory` retourneert een instantie van `EntitlementManager`, met de machtigingsstromen uitgeschakeld. 1. Configureer de aanvrager-id.
 
-   De implementatie van de Verwijzing wordt vooraf geconfigureerd met de id van de testaanvrager ingesteld op: &quot;REF&quot;. U kunt deze aanvrager-id gebruiken om uw toepassing te testen. Wanneer u klaar bent om de ID van de Aanvrager te gebruiken die door uw vertegenwoordiger van de Authentificatie wordt verstrekt Primetime, werk de toepassing bij [!DNL res/values/strings.xml] bestand met uw aanvrager-id.
+   De implementatie van de Verwijzing wordt vooraf geconfigureerd met de id van de testaanvrager ingesteld op &quot;REF&quot;. U kunt deze aanvrager-id gebruiken om uw toepassing te testen. Wanneer u klaar bent om de ID van de Aanvrager te gebruiken die door uw vertegenwoordiger van de Authentificatie wordt verstrekt Primetime, werk de toepassing bij [!DNL res/values/strings.xml] bestand met uw aanvrager-id.
 
    ```xml
    <!-- Programmer Requestor ID, change to ID provided by your Adobe  
@@ -54,7 +53,7 @@ De integratie van de Dienst van de Uitvoering van de Verwijzing van de Echtheid 
 
    Bovendien moet u mogelijk de URL&#39;s wijzigen die uw toepassing gebruikt om verbinding te maken met de Primetime-verificatieservices. Dit zijn onder andere de URL&#39;s van de Primetime-verificatieserver en productieserver, en een URL naar een token-verificatieservice. Neem contact op met uw Adobe Primetime-vertegenwoordiger voor meer informatie. 1. Onderteken de aanvrager-id.
 
-   Om de identiteit van de programmeur binnen het authentificatiesysteem te vestigen Primetime, wordt de identiteitskaart van de Aanvrager van de Programma verzonden naar het authentificatiesysteem Primetime. Als toegevoegde laag van veiligheid, moet identiteitskaart van de Aanvrager door de Programmeur worden ondertekend alvorens het naar Adobe te verzenden. Adobe raadt de programmeur aan een service in te stellen om de aanvrager-id op een vertrouwd netwerk te ondertekenen.
+   Om de identiteit van de programmeur binnen het authentificatiesysteem te vestigen Primetime, wordt de identiteitskaart van de Aanvrager van de Programma verzonden naar het authentificatiesysteem Primetime. Als toegevoegde laag van veiligheid, moet identiteitskaart van de Aanvrager door de Programmeur worden ondertekend alvorens het naar Adobe te verzenden. De Adobe raadt de programmeur aan een service in te stellen om de aanvrager-id op een vertrouwd netwerk te ondertekenen.
 
    In de Primetime-referentieimplementatie wordt getoond hoe u de id van de aanvrager ondertekent. Dit is echter alleen voor demonstratiedoeleinden. Adobe beveelt ten zeerste aan dat het ondertekeningscertificaat en de code van de handtekeninggenerator onder `com.adobe.primetime.reference.crypto`, niet in een productieaanvraag worden opgenomen. In plaats daarvan moet u de toepassing verplaatsen naar een vertrouwde netwerkservice.
 

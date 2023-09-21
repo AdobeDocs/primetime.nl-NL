@@ -2,8 +2,7 @@
 title: Lijst met beleidsupdates
 description: Lijst met beleidsupdates
 copied-description: true
-exl-id: 78078e95-775e-4c64-ab0f-d8bf644f3aee
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '264'
 ht-degree: 0%
@@ -18,6 +17,6 @@ Als u voor het eerst een lijst met beleidsupdates wilt maken, klikt u op **[!UIC
 
 Als u geen beleid meer wilt gebruiken om licenties af te geven en het beleid al is gebruikt om inhoud te verpakken, kunt u het beleid intrekken. Selecteer hiertoe de optie **[!UICONTROL revoke]** keuzerondje. Als het gewenste beleid is geselecteerd, kiest u **[!UICONTROL Create Policy Update List]**. Een bestand dat [!DNL PolicyUpdateList.dat] wordt opgeslagen in de [!DNL Resources] Map.
 
-Om een bestaande Lijst van de Update van het Beleid te wijzigen, klik **[!UICONTROL Add policies]** om alle beschikbare beleidsregels op de server weer te geven. Kies het aanvullende beleid dat u wilt toevoegen of intrekken. Bestaande ingangen in de Lijst van de Update van het Beleid kunnen in de hogere sectie van het scherm worden veranderd. Beleid dat is gemarkeerd **[!UICONTROL updated]** kan worden gewijzigd in **[!UICONTROL revoked]**, maar eenmaal een beleid **[!UICONTROL revoked]** kan niet worden gewijzigd in **[!UICONTROL updated]**.
+Om een bestaande Lijst van de Update van het Beleid te wijzigen, klik **[!UICONTROL Add policies]** om alle beschikbare beleidsregels op de server weer te geven. Kies het aanvullende beleid dat u wilt toevoegen of intrekken. Bestaande ingangen in de Lijst van de Update van het Beleid kunnen in de hogere sectie van het scherm worden veranderd. Beleidsregels die zijn gemarkeerd **[!UICONTROL updated]** kan worden gewijzigd in **[!UICONTROL revoked]**, maar eenmaal een beleid **[!UICONTROL revoked]** kan niet worden gewijzigd in **[!UICONTROL updated]**.
 
 Als de gewenste wijzigingen zijn aangebracht, kiest u **[!UICONTROL Create Policy Update List]** en de [!DNL PolicyUpdateList.dat] wordt opnieuw gegenereerd. Als een beleid reeds in de lijst van de beleidsupdate is en sinds de laatste tijd werd bijgewerkt werd de lijst geproduceerd, zal de meest recente versie van het beleid worden gebruikt wanneer de Lijst van de Update van het Beleid opnieuw wordt geproduceerd.

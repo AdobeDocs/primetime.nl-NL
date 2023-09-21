@@ -1,8 +1,7 @@
 ---
 description: Als u de advertentieoplosser wilt laten werken, hebben providers, zoals Adobe Primetime en besluitvorming, configuratiewaarden nodig om de verbinding met de provider mogelijk te maken.
-title: Metagegevens voor invoeging toevoegen
-exl-id: 8d6cb371-8666-4b55-b828-0f1d495e7fb7
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+title: Metagegevens voor invoegen toevoegen
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '228'
 ht-degree: 0%
@@ -17,7 +16,7 @@ Browser-TVSDK bevat de Adobe Primetime en de beslissingsbibliotheek. Uw toepassi
 
 * `mediaID`Dit is een unieke id voor de video die moet worden afgespeeld.
 
-   De uitgever wijst de media-id toe bij het verzenden van video-inhoud en advertentiegegevens naar de Adobe Primetime en de beslissingsserver. Deze id wordt gebruikt door Adobe Primetime en besluit gerelateerde advertentiegegevens voor de video op te halen van de server.
+  De uitgever wijst de media-id toe bij het verzenden van video-inhoud en advertentiegegevens naar de Adobe Primetime en de beslissingsserver. Deze id wordt gebruikt door Adobe Primetime en besluit gerelateerde advertentiegegevens voor de video op te halen van de server.
 
 * (Optioneel) `defaultMediaId`, die aangeeft welke advertenties worden aangeboden wanneer aan de volgende voorwaarden wordt voldaan:
 
@@ -25,12 +24,12 @@ Browser-TVSDK bevat de Adobe Primetime en de beslissingsbibliotheek. Uw toepassi
    * Adobe Primetime en de besluitvorming hebben vertraging bij de verspreiding van de gegevens.
    * Een van de Adobe Primetime en back-endprocessen voor beslissingen werkt niet of is niet beschikbaar.
 
-   >[!TIP]
-   >
-   >Adobe raadt u aan `defaultMediaId`.
+  >[!TIP]
+  >
+  >Adobe raadt u aan `defaultMediaId`.
 
-* Uw `zoneID`, die wordt toegewezen door Adobe, uw bedrijf of website identificeert.
+* Uw `zoneID`, die door Adobe wordt toegewezen, uw bedrijf of website identificeert.
 * Het domein van de toegewezen advertentieserver.
 * Andere doelparameters.
 
-   U kunt deze parameters opnemen, afhankelijk van uw behoeften en de behoeften van de advertentieprovider.
+  U kunt deze parameters opnemen, afhankelijk van uw behoeften en de behoeften van de advertentieprovider.

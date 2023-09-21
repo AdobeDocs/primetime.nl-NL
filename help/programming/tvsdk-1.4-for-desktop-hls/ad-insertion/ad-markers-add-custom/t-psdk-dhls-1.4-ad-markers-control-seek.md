@@ -1,8 +1,7 @@
 ---
 description: U kunt het standaardgedrag negeren voor de manier waarop TVSDK via advertenties zoekt wanneer u aangepaste advertentiemarkeringen gebruikt.
 title: Afspeelgedrag bepalen voor zoeken op aangepaste advertentiemarkeringen
-exl-id: c821e0be-1490-4b5f-8f9f-bffdfb1a982d
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '155'
 ht-degree: 0%

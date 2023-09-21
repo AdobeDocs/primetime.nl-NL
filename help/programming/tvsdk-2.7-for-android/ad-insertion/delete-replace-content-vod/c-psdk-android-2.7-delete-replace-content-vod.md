@@ -1,8 +1,7 @@
 ---
 description: TVSDK ondersteunt het programmatisch verwijderen en vervangen van inhoud van advertenties in VOD-streams.
 title: Advertenties in VOD-streams verwijderen en vervangen
-exl-id: 55143d27-cb12-42c6-8a9e-07867de7a964
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '79'
 ht-degree: 0%

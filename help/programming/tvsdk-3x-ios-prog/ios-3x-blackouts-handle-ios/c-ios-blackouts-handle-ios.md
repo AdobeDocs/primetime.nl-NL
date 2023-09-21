@@ -1,15 +1,14 @@
 ---
 description: TVSDK handelt stroomonderbrekingen in live videostreams af en biedt alternatieve inhoud tijdens een stroomstoring.
-title: Verwerking verwerken
-exl-id: 4a2ff371-69a9-4c13-ac61-3c5cd9c83a6f
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+title: Verspreiden verwerken
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '331'
 ht-degree: 0%
 
 ---
 
-# Verwerking verwerken {#handle-blackouts}
+# Verspreiden verwerken {#handle-blackouts}
 
 TVSDK handelt stroomonderbrekingen in live videostreams af en biedt alternatieve inhoud tijdens een stroomstoring.
 
@@ -17,22 +16,22 @@ Het meest gebruikte geval bij een programmastroomuitval is wanneer uw speler-app
 
 Om de oplossing voor dit gebruiksgeval uit te voeren:
 
-1. Stel uw app in om u te abonneren op brainstormtags in een live streaming manifest.
+1. Stel uw app in om u te abonneren op black-out-tags in een live streaming manifest.
 
    TVSDK is niet direct op de hoogte van brainstormtags, maar uw app kan zich abonneren op meldingen wanneer specifieke tags worden aangetroffen tijdens het parseren van manifestbestanden.
 1. Een meldingslistener toevoegen voor `PTTimedMetadataChangedNotification`.
 
    Deze melding wordt elke keer verzonden wanneer een geabonneerde tag in het manifest wordt geparseerd, en een nieuwe `PTTimedMetadata` is bereid.
 
-1. Een listenermethode implementeren, zoals `onMediaPlayerSubscribedTagIdentified`, for `PTTimedMetadata` objecten op de voorgrond.
+1. Hiermee wordt een listenermethode geïmplementeerd, zoals `onMediaPlayerSubscribedTagIdentified`, for `PTTimedMetadata` objecten op de voorgrond.
 
-1. Elke keer dat er een update wordt uitgevoerd tijdens het afspelen, gebruikt u de opdracht `PTMediaPlayerTimeChangeNotification` listener die moet worden afgehandeld `PTTimedMetadata` objecten.
+1. Elke keer dat er een update wordt uitgevoerd tijdens het afspelen, gebruikt u de opdracht `PTMediaPlayerTimeChangeNotification` listener voor afhandeling `PTTimedMetadata` objecten.
 
 1. Voeg de `PTTimedMetadata` handler.
 
    Met deze handler kunt u schakelen naar alternatieve inhoud en terugkeren naar de hoofdinhoud, zoals wordt aangegeven door de `PTTimedMetadata` object en de afspeeltijd ervan.
 
-1. Gebruiken `onSubscribedTagInBackground` om de listenermethode te implementeren voor `PTTimedMetadata` objecten op de achtergrond.
+1. Gebruiken `onSubscribedTagInBackground` om de listenermethode voor `PTTimedMetadata` objecten op de achtergrond.
 
    Deze methode controleert de timing op de achtergrondstroom, die u helpt bepalen wanneer u van afwisselende inhoud terug naar de belangrijkste inhoud kunt schakelen.
 

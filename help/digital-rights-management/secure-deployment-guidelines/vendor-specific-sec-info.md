@@ -1,8 +1,7 @@
 ---
 description: Besturingssystemen en toepassingsservers worden opgenomen in uw Adobe Primetime DRM-oplossing.
 title: Specifieke beveiligingsinformatie van de leverancier
-exl-id: 4cc39414-cab5-4282-825d-64651d9b03e1
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '371'
 ht-degree: 0%
@@ -59,7 +58,7 @@ Hier volgt een aantal informatie over manieren om beveiligingskwetsbaarheden in 
  <tbody class="- topic/tbody "> 
   <tr rowsep="1" class="- topic/row "> 
    <td colname="1" class="- topic/entry "> <p class="- topic/p ">Beveiligingspatches </p> </td> 
-   <td colname="2" class="- topic/entry "> <p class="- topic/p ">Er is een verhoogd risico dat een onbevoegde gebruiker toegang tot de toepassingsserver zou kunnen krijgen als de patches en upgrades van de verkopersveiligheid niet tijdig worden toegepast. </p> <p>Opmerking: Zorg ervoor dat u beveiligingspatches test voordat u ze op productieservers toepast. </p> <p class="- topic/p ">U moet beleidsregels en procedures maken om regelmatig te controleren op patches en deze te installeren. </p> </td> 
+   <td colname="2" class="- topic/entry "> <p class="- topic/p ">Er is een verhoogd risico dat een onbevoegde gebruiker toegang tot de toepassingsserver zou kunnen krijgen als de patches en upgrades van de verkopersveiligheid niet tijdig worden toegepast. </p> <p>Opmerking: zorg ervoor dat u beveiligingspatches test voordat u ze op productieservers toepast. </p> <p class="- topic/p ">U moet beleidsregels en procedures maken om regelmatig te controleren op patches en deze te installeren. </p> </td> 
   </tr> 
   <tr rowsep="1" class="- topic/row "> 
    <td colname="1" class="- topic/entry "> <p class="- topic/p ">Virusbeveiligingssoftware </p> </td> 
@@ -76,9 +75,9 @@ Hier volgt een aantal informatie over manieren om beveiligingskwetsbaarheden in 
 
 Wanneer u uw toepassingsserver beveiligt, moet u de maatregelen implementeren die door uw serverleverancier worden beschreven.
 
-Hieronder volgen enkele maatregelen:
+Hier volgen enkele van de volgende maatregelen:
 
-* Niet-duidelijke gebruikersnaam beheerder gebruiken
+* Gebruikend niet duidelijke beheerdergebruikersnaam
 * Onnodige services uitschakelen
 * De consolemanager beveiligen
 * Beveiligde cookies inschakelen

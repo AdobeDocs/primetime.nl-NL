@@ -2,8 +2,7 @@
 title: Domein CA-certificaten verkrijgen
 description: Domein CA-certificaten verkrijgen
 copied-description: true
-exl-id: cad233e0-41f7-4897-ab5f-d5a098c37306
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '115'
 ht-degree: 0%
@@ -17,7 +16,7 @@ In tegenstelling tot de Server van de Vergunning, wordt de Packager of het certi
 Het certificaat van MAC van het Domein zou een sleutel met 1024 bits moeten gebruiken en de standaardattributen bevatten die in een certificaat van CA worden vereist:
 
 * De basis uitbreiding van Beperkingen met de vlag van CA die aan waar wordt geplaatst
-* Sleutelgebruiksextensie waarmee wordt opgegeven dat Certificaat is ondertekend, is toegestaan
+* De extensie Sleutelgebruik waarmee wordt opgegeven dat het certificaat is ondertekend, is toegestaan
 
 Met OpenSSL kunt u bijvoorbeeld als volgt een zelfondertekend CA-certificaat genereren:
 
@@ -54,7 +53,7 @@ Met OpenSSL kunt u bijvoorbeeld als volgt een zelfondertekend CA-certificaat gen
    openssl rand -base64 8 
    ```
 
-1. PFX genereren:
+1. PDF genereren:
 
    ```
    openssl pkcs12 -export -inkey domain-ca.key \ 

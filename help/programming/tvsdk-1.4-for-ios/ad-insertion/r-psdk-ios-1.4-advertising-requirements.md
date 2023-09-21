@@ -2,8 +2,7 @@
 title: Reclamevereisten
 description: Reclamevereisten
 copied-description: true
-exl-id: 906f4910-396c-4909-8e22-119486ed13a0
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '209'
 ht-degree: 0%
@@ -27,4 +26,4 @@ Als u advertenties wilt opnemen in uw video-inhoud, moet u ervoor zorgen dat de 
 * Als de belangrijkste inhoud veelvoudige beetjetarief (MBR) is, moet de reclame inhoud ook MBR zijn.
 * Als de hoofdinhoud alternatieve audiotracks heeft, moet elke advertentie ten minste één audiostream hebben.
 
-   Als de advertentie niet minstens één audio-enige stroom heeft, wordt de advertentie overgeslagen.
+  Als de advertentie niet minstens één audio-enige stroom heeft, wordt de advertentie overgeslagen.

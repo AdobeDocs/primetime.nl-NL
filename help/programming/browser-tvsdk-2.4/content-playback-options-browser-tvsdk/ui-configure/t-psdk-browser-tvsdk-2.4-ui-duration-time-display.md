@@ -1,8 +1,7 @@
 ---
 description: U kunt Browser TVSDK gebruiken om informatie over de media terug te winnen die u op de zoekbalk kunt tonen.
 title: De duur, de huidige tijd en de resterende tijd van de video weergeven
-exl-id: f2aa3c42-9c47-4a55-aed6-7dc5a8d0662b
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '289'
 ht-degree: 0%
@@ -14,7 +13,7 @@ ht-degree: 0%
 U kunt Browser TVSDK gebruiken om informatie over de media terug te winnen die u op de zoekbalk kunt tonen.
 
 1. Wacht tot de speler zich ten minste in de staat PREPARED bevindt.
-1. De huidige tijd van de afspeelkop ophalen met de `MediaPlayer.currentTime` kenmerk.
+1. De huidige tijd van de afspeelkop ophalen met de opdracht `MediaPlayer.currentTime` kenmerk.
 
    Dit kenmerk retourneert de huidige positie van de afspeelkop op de virtuele tijdlijn in milliseconden. De tijd wordt berekend ten opzichte van de opgeloste stream die meerdere instanties van alternatieve inhoud kan bevatten, zoals meerdere advertenties of ad-einden die in de hoofdstream worden gespliceerd. Voor live/lineaire streams bevindt de geretourneerde tijd zich altijd in het bereik van het afspeelvenster.
 
@@ -49,7 +48,7 @@ U kunt Browser TVSDK gebruiken om informatie over de media terug te winnen die u
      </div> 
    ```
 
-   Hier is het overeenkomstige CSS:
+   Hier is het corresponderende CSS:
 
    ```
    #seekbar { 

@@ -1,8 +1,7 @@
 ---
 description: Voor live streaming en invoegen moet u mogelijk een ad-einde verlaten voordat alle advertenties in het einde worden afgespeeld.
 title: Een vroege terugkeer voor een onderbreking implementeren
-exl-id: 38386ab7-0e3b-4628-84eb-470d585eb929
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '176'
 ht-degree: 0%
@@ -31,7 +30,7 @@ De duur van de advertentiepauze bij bepaalde sportevenementen is bijvoorbeeld mo
    }
    ```
 
-   Voor meer informatie over het gebruik van een aangepaste `ContentFactory`zie stap 1 in [Een aangepaste opportuniteitsdetector implementeren](../../../tvsdk-1.4-for-android/content-resolver/android-1.4-opp-detector-impl.md) .
+   Voor meer informatie over het gebruik van een aangepaste `ContentFactory`, zie stap 1 in [Een aangepaste opportuniteitsdetector implementeren](../../../tvsdk-1.4-for-android/content-resolver/android-1.4-opp-detector-impl.md) .
 
 1. Op dezelfde aangepaste `ContentFactory`uitvoeren `retrieveResolvers` en omvatten `AuditudeResolver` en `SpliceInCustomResolver`.
 

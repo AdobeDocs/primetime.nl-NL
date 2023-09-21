@@ -1,8 +1,7 @@
 ---
 description: Als u vooraf licenties genereert die op tijd gebaseerde gebruiksregels bevatten, moet de licentie synchronisatievereisten bevatten om licentievervalsing veilig af te dwingen.
 title: Vooraf gegenereerde licenties
-exl-id: f3b6927d-66cf-4aa2-802d-d4b3a5652c63
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '97'
 ht-degree: 0%

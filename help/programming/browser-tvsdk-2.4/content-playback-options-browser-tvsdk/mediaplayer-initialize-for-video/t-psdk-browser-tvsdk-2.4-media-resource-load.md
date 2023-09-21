@@ -1,8 +1,7 @@
 ---
-description: Laad een bron door rechtstreeks een MediaResource te instantiëren en de video-inhoud te laden die moet worden afgespeeld.
+description: Laad een bron door rechtstreeks een MediaResource te instantiëren en de te spelen video-inhoud te laden.
 title: Een mediabron laden in de MediaPlayer
-exl-id: b775c33e-399c-4a03-a132-407944f07706
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '187'
 ht-degree: 0%
@@ -11,11 +10,11 @@ ht-degree: 0%
 
 # Een mediabron laden in de MediaPlayer {#load-a-media-resource-in-the-mediaplayer}
 
-Laad een bron door rechtstreeks een MediaResource te instantiëren en de video-inhoud te laden die moet worden afgespeeld.
+Laad een bron door rechtstreeks een MediaResource te instantiëren en de te spelen video-inhoud te laden.
 
 1. Stel uw `MediaPlayer` het afspeelbare item van het object met de nieuwe bron die moet worden afgespeeld.
 
-   Bestaande vervangen `MediaPlayer` momenteel afspeelbare item van object aanroepen `replaceCurrentResource` en bestaande `MediaResource` -instantie.
+   Bestaande vervangen `MediaPlayer` momenteel afspeelbare item van object aanroepen `replaceCurrentResource` en het doorgeven van bestaande `MediaResource` -instantie.
 
 1. Wachten tot TVSDK van browser wordt verzonden `AdobePSDK.MediaPlayerStatusChangeEvent` with `event.status` die gelijk is aan:
 
@@ -23,14 +22,14 @@ Laad een bron door rechtstreeks een MediaResource te instantiëren en de video-i
    * `MediaPlayerStatus.PREPARED`
    * `MediaPlayerStatus.ERROR`
 
-      Via deze gebeurtenissen wordt de toepassing door het MediaPlayer-object gewaarschuwd of de mediabron is geladen.
+     Via deze gebeurtenissen wordt de toepassing door het MediaPlayer-object gewaarschuwd of de mediabron is geladen.
 
 1. Wanneer de status van de mediaspeler verandert in `MediaPlayerStatus.INITIALIZED`, kunt u `MediaPlayer.prepareToPlay`.
 
    De geINITIALISEERDE status geeft aan dat het medium is geladen. Aanroepen `prepareToPlay` start het proces voor het oplossen en plaatsen van reclame, indien van toepassing.
-1. Wanneer Browser TVSDK het `MediaPlayerStatus.PREPARED` -gebeurtenis is geladen (er is een MediaPlayerItem gemaakt) en dat de mediastream is voorbereid voor afspelen.
+1. Wanneer Browser TVSDK het `MediaPlayerStatus.PREPARED` -gebeurtenis is geladen (er is een MediaPlayerItem gemaakt) en dat deze klaar is voor afspelen.
 
-Als er een fout optreedt, wordt `MediaPlayer` schakelt naar de `MediaPlayerStatus.ERROR`.
+Als er een fout optreedt, wordt de `MediaPlayer` schakelt naar de `MediaPlayerStatus.ERROR`.
 
 Het brengt ook uw toepassing op de hoogte door de `MediaPlayerStatus.ERROR` gebeurtenis.
 

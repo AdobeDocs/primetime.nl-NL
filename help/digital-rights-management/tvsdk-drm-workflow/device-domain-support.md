@@ -1,8 +1,7 @@
 ---
-description: Doorgaans zijn alle Primetime DRM-licenties tijdens het maken gebonden aan een uniek apparaat. Deze binding voorkomt dat gebruikers licenties zonder toestemming op verschillende apparaten kunnen delen. Naast de binding per apparaat, biedt Primetime DRM de mogelijkheid om licenties te binden aan een apparaatdomein of groep apparaten.
+description: Alle Primetime DRM-licenties zijn tijdens het maken gebonden aan een uniek apparaat. Deze binding voorkomt dat gebruikers licenties zonder toestemming op verschillende apparaten kunnen delen. Naast de binding per apparaat, biedt Primetime DRM de mogelijkheid om licenties te binden aan een apparaatdomein of groep apparaten.
 title: Gecodeerde inhoud afspelen met domeinondersteuning
-exl-id: 3c9badfc-046b-4c56-bde1-7b3b708bfaa2
-source-git-commit: 59f7f8aa82be59c4012ee80648032600590bc4e1
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '370'
 ht-degree: 0%
@@ -11,7 +10,7 @@ ht-degree: 0%
 
 # Ondersteuning van apparaatdomeinen {#device-domain-support}
 
-Doorgaans zijn alle Primetime DRM-licenties tijdens het maken gebonden aan een uniek apparaat. Deze binding voorkomt dat gebruikers licenties zonder toestemming op verschillende apparaten kunnen delen. Naast de binding per apparaat, biedt Primetime DRM de mogelijkheid om licenties te binden aan een apparaatdomein of groep apparaten.
+Alle Primetime DRM-licenties zijn tijdens het maken gebonden aan een uniek apparaat. Deze binding voorkomt dat gebruikers licenties zonder toestemming op verschillende apparaten kunnen delen. Naast de binding per apparaat, biedt Primetime DRM de mogelijkheid om licenties te binden aan een apparaatdomein of groep apparaten.
 
 Als de metagegevens voor de inhoud aangeven dat apparaatdomeinregistratie is vereist, kan de toepassing een API aanroepen om deel te nemen aan een apparaatgroep. Deze handeling leidt ertoe dat een domeinregistratieverzoek naar de domeinserver wordt verzonden. Zodra een vergunning aan een apparatengroep wordt uitgegeven, kan de vergunning worden uitgevoerd en met andere apparaten worden gedeeld die zich bij de apparatengroep hebben aangesloten.
 
@@ -28,6 +27,7 @@ Voer de volgende stappen uit om gecodeerde inhoud af te spelen met Primetime DRM
 
       * Haal de gebruikersnaam en het wachtwoord van de gebruiker op en activeer `DRMManager.authenticate(deviceGroup.serverURL, deviceGroup.domain, username, password)`.
       * Verkrijg een caching/pre-geproduceerde authentificatietoken en haal aan `DRMManager.setAuthenticationToken()`.
+
    1. Invoeden `DRMManager.addToDeviceGroup()`
 1. Haal de licentie voor de inhoud op door een van de volgende taken uit te voeren:
    1. Gebruik de `DRMManager.loadVoucher()` methode.

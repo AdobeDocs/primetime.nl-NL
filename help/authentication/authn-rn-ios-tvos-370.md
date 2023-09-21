@@ -1,8 +1,7 @@
 ---
 title: Opmerkingen bij de release iOS / tvOS 3.7.0 verifiëren
 description: Opmerkingen bij de release iOS / tvOS 3.7.0 verifiëren
-exl-id: 19c1179e-16b1-4608-954f-25b0980d7ad9
-source-git-commit: bfc3ba55c99daba561255760baf273b6538a3c6e
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '117'
 ht-degree: 0%
@@ -21,7 +20,7 @@ Op deze pagina worden nieuwe functies, wijzigingen en bekende problemen met deze
 
 Adobe Primetime-verificatie: iOS / tvOS 3.7.0
 
-Releasedatum: 03-09-2021
+Releasedatum: 09-03-2021
 
 
 

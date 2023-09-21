@@ -1,8 +1,7 @@
 ---
 description: U kunt een besturingsbalk implementeren met DVR-ondersteuning voor VOD en live streaming. DVR-ondersteuning omvat het concept van een doorzoekbaar venster en het live-punt van de client.
 title: Een besturingsbalk maken die is verbeterd voor DVR
-exl-id: a812f2d5-f1ee-4df6-9cc7-e39f55ec26f1
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '319'
 ht-degree: 0%
@@ -16,11 +15,11 @@ U kunt een besturingsbalk implementeren met DVR-ondersteuning voor VOD en live s
 * Voor VOD is de lengte van het doorzoekbare venster de duur van het gehele element.
 * Voor live streaming wordt de lengte van het DVR-venster (doorzoekbaar) gedefinieerd als het tijdbereik dat begint bij het live afspeelvenster en eindigt bij het live punt van de client.
 
-   Het live punt van de client wordt berekend door de buffered length af te trekken van het live-venstereinde. De doelduur is een waarde die groter is dan of gelijk is aan de maximale duur van een fragment in het manifest.
+  Het live punt van de client wordt berekend door de buffered length af te trekken van het live-venstereinde. De doelduur is een waarde die groter is dan of gelijk is aan de maximale duur van een fragment in het manifest.
 
-   De standaardwaarde is 10000 ms.
+  De standaardwaarde is 10000 ms.
 
-   De besturingsbalk voor live afspelen ondersteunt DVR door het blokje eerst op het actieve punt van de client te plaatsen wanneer het afspelen wordt gestart en door een gebied weer te geven dat het gebied aangeeft waar zoeken niet is toegestaan.
+  De besturingsbalk voor live afspelen ondersteunt DVR door het blokje eerst op het actieve punt van de client te plaatsen wanneer het afspelen wordt gestart en door een gebied weer te geven dat het gebied aangeeft waar zoeken niet is toegestaan.
 
 <!--<a id="fig_37A39A28BA714BA5A2C461357ED5BD41"></a>-->
 
@@ -31,7 +30,8 @@ U kunt een besturingsbalk implementeren met DVR-ondersteuning voor VOD en live s
    * U kunt verkiezen om een controlebar uit te voeren die slechts voor de doorzoekbare waaier in plaats van voor de playbackwaaier in kaart wordt gebracht. Elke gebruikersinteractie voor zoekopdrachten kan in het doorzoekbare bereik als veilig worden beschouwd.
    * U kunt verkiezen om een controlebar uit te voeren die voor de playbackwaaier maar in kaart wordt gebracht die ook de doorzoekbare waaier toont.
 
-      Voor een besturingsbalk:
+     Voor een besturingsbalk:
+
    1. Voeg een bedekking aan de controlebar toe die de playbackwaaier vertegenwoordigt.
    1. Wanneer de gebruiker begint te zoeken, controleert u met `MediaPlayer.getSeekableRange`.
 

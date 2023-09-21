@@ -1,8 +1,7 @@
 ---
 description: Deze handleiding bevat informatie over hoe u videospelertoepassingen kunt ontwikkelen met behulp van TVSDK voor Android, die in Java is geïmplementeerd.
 title: Productoverzicht, publiek en deze handleiding
-exl-id: 3dfef60a-5547-494b-9bbe-74eb0440ec92
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '259'
 ht-degree: 0%
@@ -17,7 +16,7 @@ Deze handleiding bevat informatie over hoe u videospelertoepassingen kunt ontwik
 
 * Voor een lijst met functies die door TVSDK worden ondersteund, raadpleegt u [Functies van Primetime TVSDK](../../tvsdk-2.7-for-android/overview-prod-audience-guide/c-psdk-android-2.7-overview-of-the-player.md).
 * Voor specifieke hardware- en softwarevereisten voor het gebruik van TVSDK raadpleegt u [Vereisten](../../tvsdk-2.7-for-android/c-psdk-android-2.7-requirements.md).
-* Voor een lijst met beschikbare API&#39;s raadpleegt u [TVSDK Android-API&#39;s](https://help.adobe.com/en_US/primetime/api/psdk/javadoc_2.7/).
+* Zie voor een lijst met beschikbare API&#39;s [TVSDK Android-API&#39;s](https://help.adobe.com/en_US/primetime/api/psdk/javadoc_2.7/).
 
 ## Overzicht van producten {#section_9664959F25C948878F2F7EF3D360CA95}
 

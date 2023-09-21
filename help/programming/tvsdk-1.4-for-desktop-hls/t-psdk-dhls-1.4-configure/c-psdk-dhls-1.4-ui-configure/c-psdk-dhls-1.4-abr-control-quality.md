@@ -1,8 +1,7 @@
 ---
 description: HLS- en DASH-streams bieden verschillende bitsnelheidcoderingen (profielen) voor dezelfde korte videoprand. TVSDK kan het kwaliteitsniveau voor elke uitbarsting selecteren op basis van de beschikbare bandbreedte.
 title: Adaptieve bitsnelheden (ABR) voor videokwaliteit
-exl-id: 2fd24360-4159-4330-a479-02310c6aa525
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '973'
 ht-degree: 0%
@@ -36,9 +35,9 @@ U kunt het adaptieve beetje-tarief (ABR) omschakelingsbeleid en de aanvankelijke
    <td colname="col2"> De schakelaars van de playback geleidelijk aan het hoogste beetje-tarief profiel wanneer mogelijk. U kunt het beleid voor omschakeling plaatsen ABR, die bepaalt hoe snel TVSDK tussen profielen schakelt. De standaardwaarde is <span class="codeph"> MODERATE_POLICY </span>. <p>Wanneer TVSDK besluit over te schakelen naar een hogere bitsnelheid, selecteert de speler het ideale bitsnelheidprofiel om over te schakelen op basis van het huidige ABR-beleid: 
      <ul id="ul_058D0FFC944C476A83BB9E756B95DEBD"> 
       <li id="li_C690A12DC34C4754B01C2D0616FB6A0A"> <span class="codeph"> CONSERVATIVE_POLICY </span>: Schakelt over naar het profiel met de volgende hogere bitsnelheid wanneer de bandbreedte 50% hoger is dan de huidige bitsnelheid. </li> 
-      <li id="li_FF5BDB099B554940AC296938C7A12B81"> <span class="codeph"> MODERATE_POLICY </span>: Schakelt over naar het volgende profiel met een hogere bitsnelheid wanneer de bandbreedte 20% hoger is dan de huidige bitsnelheid. </li> 
-      <li id="li_E602508429864C279BF78360E95718A6"> <span class="codeph"> AGRESSIVE_POLICY </span>: Schakelt onmiddellijk naar het hoogste beetje-tarief profiel wanneer de bandbreedte hoger is dan het huidige beetjetarief. </li> 
-     </ul> </p> <p>Als de aanvankelijke bitsnelheid nul is of niet is opgegeven, maar een beleid is opgegeven, begint het afspelen met het laagste bitsnelheidprofiel voor conservatief, het profiel dat zich het dichtst bij de mediane bitsnelheid van beschikbare profielen voor matig en het hoogste bitsnelheidprofiel voor agressief bevindt. </p> <p>Het beleid werkt in de beperkingen van de minimum en maximumbeetjetarieven, als deze tarieven worden gespecificeerd. </p> <p> <span class="codeph"> ABRPopolicy </span> retourneert de huidige instelling van het dialoogvenster <span class="codeph"> ABRControlParameters </span> getallen: CONSERVATIVE_POLICY, MODERATE_POLICY, of AGGRESSIVE_POLICY. </p> </td> 
+      <li id="li_FF5BDB099B554940AC296938C7A12B81"> <span class="codeph"> MODERATE_POLICY </span>: schakelt naar het volgende hogere bitsnelheidprofiel wanneer de bandbreedte 20% hoger is dan de huidige bitsnelheid. </li> 
+      <li id="li_E602508429864C279BF78360E95718A6"> <span class="codeph"> AGRESSIVE_POLICY </span>: schakelt onmiddellijk naar het hoogste bitsnelheidprofiel wanneer de bandbreedte hoger is dan de huidige bitsnelheid. </li> 
+     </ul> </p> <p>Als de aanvankelijke bitsnelheid nul is of niet is opgegeven, maar een beleid is opgegeven, begint het afspelen met het laagste bitsnelheidprofiel voor conservatief, het profiel dat zich het dichtst bij de mediane bitsnelheid van beschikbare profielen voor matig en het hoogste bitsnelheidprofiel voor agressief bevindt. </p> <p>Het beleid werkt in de beperkingen van de minimum en maximumbeetjetarieven, als deze tarieven worden gespecificeerd. </p> <p> <span class="codeph"> ABRPopolicy </span> retourneert de huidige instelling van het dialoogvenster <span class="codeph"> ABRControlParameters </span> enum: CONSERVATIVE_POLICY, MODERATE_POLICY, of AGGRESSIVE_POLICY. </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -63,7 +62,7 @@ Voer een van de volgende handelingen uit om ABR-besturingsparameters in te stell
 
 * Gebruik de `ABRControlParameterBuilder` helperklasse om het even welke ondergroep van de parameters te plaatsen (werkt op `ABRControlParameter` achter de schermen)
 
-* Stel de parameters in op de `ABRControlParameter` klasse.
+* Stel de parameters in op de knop `ABRControlParameter` klasse.
 
 ## Aangepaste bitsnelheden configureren met ABRControlParametersBuilder {#section_3DDE397A7CE445E1832EBAA46CE5C069}
 
@@ -73,7 +72,7 @@ Met de `ABRControlParametersBuilder` helperklasse is de eenvoudigste, meest effi
 
 * U kunt individuele parameters ABR tijdens runtime terugstellen zolang u een verwijzing naar het zelfde handhaaft `ABRControlParametersBuilder` -instantie.
 
-Deze klasse bevat ook de `toABRControlParameters()` helpermethode. Gebruik deze methode om een instantie van `ABRControlParameters` en zet deze op de `mediaPlayer.ABRControlParameters` eigenschap. Hierdoor worden uw instellingen van kracht in de speler.
+Deze klasse bevat ook de klasse `toABRControlParameters()` helpermethode. Gebruik deze methode om een instantie van `ABRControlParameters` en zet deze in op de `mediaPlayer.ABRControlParameters` eigenschap. Hierdoor worden uw instellingen van kracht in de speler.
 
 1. Instantiëren van de `ABRControlParametersBuilder` hulpklasse, en de parameters op de Speler van Media plaatsen.
 
@@ -81,8 +80,7 @@ Deze klasse bevat ook de `toABRControlParameters()` helpermethode. Gebruik deze 
    >
    >In het volgende voorbeeld worden alle parameters bijvoorbeeld geïnitialiseerd naar de standaardwaarden en wordt alleen het beleid ingesteld op conservatief. De maximale bitsnelheid wordt beperkt tot 1000000:
    >
-   >
-   ```
+   >```
    >var abrBuilder:ABRControlParametersBuilder =  
    >   new ABRControlParametersBuilder(); 
    >abrBuilder.policy = ABRControlParameters.CONSERVATIVE_POLICY; 
@@ -90,6 +88,7 @@ Deze klasse bevat ook de `toABRControlParameters()` helpermethode. Gebruik deze 
    >mediaPlayer.abrControlParameters =  
    >   abrBuilder.toABRControlParameters();
    >```
+   >
 
 1. Pas individuele parameters ABR bij runtime aan.
 
@@ -104,13 +103,13 @@ Deze klasse bevat ook de `toABRControlParameters()` helpermethode. Gebruik deze 
 
    Als u de vorige instellingen wilt behouden, moet u een verwijzing naar dezelfde instellingen behouden `ABRControlParametersBuilder` -instantie die u hebt gemaakt in Stap 1.
 
-## Aangepaste bitsnelheden configureren met ABRControlParameters {#section_02161FD0A73F40ED9CAE17F9AF850483}
+## Aangepaste bitsnelheden configureren met behulp van ABRControlParameters {#section_02161FD0A73F40ED9CAE17F9AF850483}
 
 U kunt waarden voor ABR-besturingselementen alleen instellen met `ABRControlParameters`, maar u kunt op elk gewenst moment een nieuwe maken.
 
 Deze mogelijkheid om ABR-parameters in te stellen, werd ondersteund voordat het `ABRControlParametersBuilder` -klasse, maar deze mogelijkheid is nog steeds effectief voor het instellen van ABR-parameters tijdens de constructieperiode. Als u echter individuele parameters wilt wijzigen na de constructie, moet u de opdracht `ABRControlParametersBuilder` klasse.
 
-De volgende voorwaarden zijn van toepassing op `ABRControlParameters`:
+Voor `ABRControlParameters`:
 
 * U moet waarden opgeven voor alle parameters tijdens de constructietijd.
 * U kunt afzonderlijke waarden niet wijzigen na de constructietijd.

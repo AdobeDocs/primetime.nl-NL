@@ -1,8 +1,7 @@
 ---
 description: U moet de gebruikersinterfacelogica van uw speler scheiden van het proces dat beheert en klikt. Een manier om dit te doen is het implementeren van meerdere fragmenten voor een activiteit.
 title: Scheid het klikbare ad proces
-exl-id: 9b6fad9b-d46d-4965-8770-0bb85c052e0e
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '141'
 ht-degree: 0%
@@ -15,7 +14,7 @@ U moet de gebruikersinterfacelogica van uw speler scheiden van het proces dat be
 
 1. Eén fragment implementeren dat de `MediaPlayer`.
 
-   Dit fragment moet worden aangeroepen `notifyClick()` en is verantwoordelijk voor het afspelen van video.
+   Dit fragment moet `notifyClick()` en is verantwoordelijk voor het afspelen van video.
 
    ```java
    public class PlayerFragment extends SherlockFragment { 

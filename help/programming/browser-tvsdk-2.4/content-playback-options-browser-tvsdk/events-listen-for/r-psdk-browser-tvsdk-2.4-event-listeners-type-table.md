@@ -1,8 +1,7 @@
 ---
 description: Wanneer u gebeurtenislisteners registreert met Browser-TVSDK, geeft u een gebeurtenistype op waarnaar wordt geluisterd en de naam van de callback. Wanneer een gebeurtenis voorkomt, roept Browser TVSDK uw callback en gaat tot het een gebeurtenisvoorwerp van het aangewezen type over.
 title: Gebeurtenistypen en -klassen voor callbacks
-exl-id: 94c571ea-6dd2-4c15-89db-7015d89c9208
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '206'
 ht-degree: 0%
@@ -17,7 +16,7 @@ Wanneer u gebeurtenislisteners registreert met Browser-TVSDK, geeft u een gebeur
  <thead> 
   <tr rowsep="1"> 
    <th colname="2" class="entry"> Wanneer u naar deze gebeurtenisnaam luistert (AdobePSDK.EventType) </th> 
-   <th class="entry">De uitdrukkingen/browser-tvsdk-naam gaat een gebeurtenis tot uw callback van dit objecten type (<span class="codeph"> AdobePSDK.Event</span>) </th> 
+   <th class="entry">De uitdrukkingen/browser-tvsdk-naam gaat een gebeurtenis tot uw callback van dit objecten type over (<span class="codeph"> AdobePSDK.Event</span>) </th> 
   </tr> 
  </thead>
  <tbody> 

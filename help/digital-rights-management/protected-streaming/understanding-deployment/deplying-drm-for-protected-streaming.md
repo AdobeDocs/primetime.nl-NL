@@ -2,8 +2,7 @@
 title: De Adobe Primetime DRM-server implementeren voor beveiligde streaming
 description: De Adobe Primetime DRM-server implementeren voor beveiligde streaming
 copied-description: true
-exl-id: 814c08e6-5d09-495b-b529-cedc9b9c02a7
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '215'
 ht-degree: 0%
@@ -16,10 +15,10 @@ Voordat u de Adobe Primetime DRM-server kunt implementeren voor beveiligde strea
 
 Het pakket Primetime DRM Server for Protected Streaming bevat [!DNL flashaccesserver.war]. Als u:
 
-* Als u dit WAR-bestand wilt implementeren, moet u het kopiëren naar Tomcat&#39;s [!DNL webapps] directory.
-* Als u het WAR-bestand al eerder hebt geïmplementeerd, moet u mogelijk de onverpakte WAR-map verwijderen ( [!DNL flashaccessserver] in Tomcat [!DNL webapps] directory).
+* Als u dit WAR-bestand wilt implementeren, moet u het naar Tomcat kopiëren [!DNL webapps] directory.
+* Als u het WAR-bestand al eerder hebt geïmplementeerd, moet u mogelijk de onverpakte WAR-map verwijderen ( [!DNL flashaccessserver] in Tomcat&#39;s [!DNL webapps] directory).
 
-* Als u wilt voorkomen dat Tomcat WAR-bestanden uitpakt, bewerkt u de opdracht [!DNL server.xml] bestand in Tomcat [!DNL conf] en configureer de `unpackWARs` kenmerk door deze in te stellen op `false`.
+* Als u wilt voorkomen dat Tomcat WAR-bestanden uitpakt, bewerkt u de opdracht [!DNL server.xml] bestand in Tomcat&#39;s [!DNL conf] en configureer de `unpackWARs` kenmerk door deze in te stellen op `false`.
 
 >[!NOTE]
 >

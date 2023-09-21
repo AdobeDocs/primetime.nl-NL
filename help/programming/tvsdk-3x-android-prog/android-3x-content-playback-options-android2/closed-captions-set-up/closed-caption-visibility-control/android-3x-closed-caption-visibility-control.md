@@ -1,8 +1,7 @@
 ---
 description: U kunt de zichtbaarheid van gesloten bijschriften bepalen. Wanneer de zichtbaarheid is ingeschakeld, wordt de geselecteerde track weergegeven. Als u wijzigt welke track huidig is, blijft de zichtbaarheidsinstelling ongewijzigd.
 title: Zichtbaarheid van ondertiteling beheren
-exl-id: 1fe978c5-b9ae-4e72-ac32-e3ba4e948683
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '177'
 ht-degree: 0%
@@ -19,13 +18,13 @@ U kunt de zichtbaarheid van gesloten bijschriften bepalen. Wanneer de zichtbaarh
 >
 >De zichtbaarheidswaarden voor gesloten bijschriften worden gedefinieerd in `MediaPlayer.Visibility`.
 >
->
-```java
+>```java
 >enum Visibility {  
 >       VISIBLE,  
 >       INVISIBLE 
 >}
 >```
+>
 
 1. Wacht op de `MediaPlayer` ten minste de status PREPARED hebben. Zie voor meer informatie [Wacht op een geldige status](../../../../tvsdk-3x-android-prog/android-3x-content-playback-options-android2/ui-configure/android-3x-ui-state-prepared-wait-for.md).
 

@@ -2,8 +2,7 @@
 title: Markeringsbereiken
 description: Markeringsbereiken
 copied-description: true
-exl-id: e13db995-8910-43aa-a302-d8b1175af181
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '186'
 ht-degree: 0%
@@ -120,7 +119,7 @@ Om het `PTTimeRangeCollection` en verwijdert inhoudsbereiken als advertenties:
 
    >[!TIP]
    >
-   >Hoewel de `signalingMode` is ingesteld als `PTAdSignalingModeCustomRanges`, wordt deze advertentiemodus automatisch ingesteld bij het instellen van de `PTTimeRangeCollection` van het type `PTTimeRangeCollectionTypeReplace`.
+   >Hoewel de `signalingMode` is ingesteld als `PTAdSignalingModeCustomRanges`, wordt deze advertentiemodus automatisch ingesteld wanneer u de `PTTimeRangeCollection` van het type `PTTimeRangeCollectionTypeReplace`.
 
 1. Maak de speler en start het afspelen.
 

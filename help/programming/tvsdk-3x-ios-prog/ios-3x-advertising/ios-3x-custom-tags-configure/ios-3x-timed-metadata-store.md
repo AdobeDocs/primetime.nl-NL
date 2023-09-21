@@ -1,8 +1,7 @@
 ---
 description: Uw toepassing moet de juiste PTTimedMetadata-objecten op de juiste momenten gebruiken.
 title: Metagegevensobjecten met tijdslimiet opslaan terwijl ze worden verzonden
-exl-id: 8b859e8d-eb4c-48f9-a95e-1bcc35a2a520
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '199'
 ht-degree: 0%
@@ -18,7 +17,7 @@ Tijdens het parseren van inhoud, wat vóór playback gebeurt, identificeert TVSD
 Uw toepassing moet de volgende taken uitvoeren:
 
 1. Houd de huidige afspeeltijd bij.
-1. De huidige afspeeltijd afstemmen op de verzonden tijd `PTTimedMetadata` objecten.
+1. Pas de huidige afspeeltijd aan de verzonden `PTTimedMetadata` objecten.
 
 1. Gebruik de `PTTimedMetadata` waarbij de begintijd gelijk is aan de huidige afspeeltijd.
 

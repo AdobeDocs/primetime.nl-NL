@@ -2,8 +2,7 @@
 title: Servereigenschappen
 description: Servereigenschappen
 copied-description: true
-exl-id: c42fde8f-e438-4497-bd15-ebd0f6e2eed7
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '182'
 ht-degree: 0%
@@ -12,7 +11,7 @@ ht-degree: 0%
 
 # Servereigenschappen {#server-properties-files}
 
-Voor de server zijn twee configuratiebestanden nodig: een voor de licentieserver en een voor de pakketsoftware. Beide bestanden moeten op het klassepad worden geplaatst. De eigenschappenbestanden bevatten de locatie van de gegevens die door Adobe zijn uitgegeven. Deze referenties kunnen worden opgegeven als een .pfx-bestand en wachtwoord of door een alias en wachtwoord op te geven voor een referentie die is opgeslagen op een HSM.
+Voor de server zijn twee configuratiebestanden nodig: een voor de licentieserver en een voor de pakketsoftware. Beide bestanden moeten op het klassepad worden geplaatst. De eigenschappenbestanden bevatten de locatie van de gegevens die door de Adobe worden uitgegeven. Deze referenties kunnen worden opgegeven als een .pfx-bestand en wachtwoord of door een alias en wachtwoord op te geven voor een referentie die is opgeslagen op een HSM.
 
 Raadpleeg de eigenschappenbestanden voor meer informatie over de specifieke waarden en het gebruik van elke parameter. Bestanden met voorbeeldeigenschappen vindt u in de map &quot;resources&quot; van de referentie-implementatie (bronnen\Server\Reference Implementation).
 

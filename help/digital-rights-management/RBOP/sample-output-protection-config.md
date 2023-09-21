@@ -1,8 +1,7 @@
 ---
 description: Deze sectie stelt een steekproefconfiguratie voor die de concepten en de vorm van de configuratie illustreert.
 title: Voorbeeld van RBOP-configuratie
-exl-id: 0f40be83-9c7f-482b-ac42-9aa4e3f46f58
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '158'
 ht-degree: 0%
@@ -18,8 +17,8 @@ De volgende voorbeeld-JSON-configuratie definieert een pixeluitvoerbeleid dat he
 * Decodering van de video beperken tot resoluties van 1080 of lager
 * Stel specifieke beperkingen op voor resoluties 720 en 480:
 
-   * Voor resolutie 720: HDCP vereist voor digitale uitvoer; vereisen *Generatiebeheersysteem kopiëren - analoog* (CGMS-A) bescherming voor analoge uitvoer.
-   * Voor resolutie 480: HDCP vereist voor digitale uitvoer; geen bescherming van het analoge
+   * Voor resolutie 720: vereist HDCP voor digitale uitvoer; vereist *Generatiebeheersysteem kopiëren - analoog* (CGMS-A) bescherming voor analoge uitvoer.
+   * Voor een resolutie van 480: vereist HDCP voor digitale uitvoer; vereist geen bescherming voor analoge uitvoer
 
 ```
 { 

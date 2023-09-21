@@ -1,8 +1,7 @@
 ---
 description: Wanneer TVSDK een geabonneerde tag in de afspeellijst/het manifest detecteert, probeert de speler de tag automatisch te verwerken en beschikbaar te maken in de vorm van een object TimedMetadata.
 title: Timed metadata-klasse
-exl-id: abb552d0-42f9-495e-a307-1f03d6a0b965
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '388'
 ht-degree: 0%
@@ -47,7 +46,7 @@ De klasse biedt de volgende elementen:
   <tr> 
    <td colname="col1"> <span class="codeph"> type </span> </td> 
    <td colname="col02"> Type </td> 
-   <td colname="col2"> <p>Het type van de getimede meta-gegevens. Gebruiken <span class="codeph"> getType </span>. 
+   <td colname="col2"> <p>Het type van de getimede metagegevens. Gebruiken <span class="codeph"> getType </span>. 
      <ul id="ul_70FBFB33E9F846D8B38592560CCE9560"> 
       <li id="li_739D30561BFB4D9B97DF212E4880BA2C">TAG - geeft aan dat de metagegevens met tijdinstellingen zijn gemaakt op basis van een tag in de afspeellijst/het manifest. </li> 
       <li id="li_E785E1DEF1CC4D9DBE7764E5D05EFAFC">ID3 - geeft aan dat de metagegevens met tijdinstellingen zijn gemaakt op basis van een ID3-tag in de mediastream. </li> 
@@ -62,15 +61,15 @@ Houd rekening met het volgende:
 
 * TVSDK extraheert de lijst met kenmerken automatisch naar sleutelwaardeparen en slaat de kenmerken op in de eigenschap metadata.
 
-   >[!TIP]
-   >
-   >Complexe gegevens in aangepaste tags in het manifest, zoals tekenreeksen met speciale tekens, moeten tussen aanhalingstekens staan. Bijvoorbeeld:
-   >
-   >
-   ```
-   >#EXT-CUSTOM-TAG:type=SpliceOut,ID=1,time=71819.7222,duration=30.0,url= 
-   >"www.example.com:8090?parameter1=xyz&parameter2=abc"
-   >```
+  >[!TIP]
+  >
+  >Complexe gegevens in aangepaste tags in het manifest, zoals tekenreeksen met speciale tekens, moeten tussen aanhalingstekens staan. Bijvoorbeeld:
+  >
+  >```
+  >#EXT-CUSTOM-TAG:type=SpliceOut,ID=1,time=71819.7222,duration=30.0,url= 
+  >"www.example.com:8090?parameter1=xyz&parameter2=abc"
+  >```
+  >
 
 * Als de extractie mislukt als gevolg van een aangepaste tagindeling, is de eigenschap metadata leeg en moet de toepassing de werkelijke informatie ophalen. In dit geval wordt geen fout gegenereerd.
 

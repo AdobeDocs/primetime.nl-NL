@@ -1,8 +1,7 @@
 ---
 title: Algemene gebruiksrapporten
 description: Algemene gebruiksrapporten
-exl-id: 1272073a-61fe-47ec-aced-2e8055b6b11e
-source-git-commit: a2181a8fd7334f19b8387a31c71527d4f689ab9d
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '1281'
 ht-degree: 0%
@@ -23,7 +22,7 @@ device filters
 segment and definition replicate to cohorts. Number of people and number of account that ......
 content consumption.....-->
 
-De rapporten zijn allen gebaseerd op het huidige geselecteerde segment gebruikend [Segmenten en tijdkader](/help/AccountIQ/howto-select-segment-timeframe.md) deelvenster. U kunt uw selectie verfijnen en deze verder verkleinen door drempelwaarden (aantal apparaten, aantal IP&#39;s en aantal postcodes) op te geven in [Overzicht van momentopnamen - Accounts boven drempels](#snapshot-overview) deelvenster.
+De rapporten zijn allen gebaseerd op het huidige geselecteerde segment gebruikend [Segmenten en tijdkader](/help/AccountIQ/howto-select-segment-timeframe.md) deelvenster. U kunt uw selectie verfijnen en deze verder verkleinen door drempelwaarden (aantal apparaten, aantal IP&#39;s en aantal postcodes) op te geven in [Overzicht van momentopnamen - Rekeningen boven drempels](#snapshot-overview) deelvenster.
 
 <!--To view General Usage Reports:
 
@@ -46,7 +45,7 @@ De lijngrafieken hier geeft u een mening van de veranderingen in tijd in waarden
 ![](assets/progr-line-graph-gu.png)
 
 
-*Afbeelding: AuthN OK / AuthZ OK / Play Requests / Unique Subscribers for programmeer user*
+*Afbeelding: AuthN OK / AuthZ OK / Play Requests / Unieke abonnees voor programmeergebruiker*
 
 
 +++
@@ -66,30 +65,30 @@ De x-as stelt de eenheden binnen het huidige tijdkader voor en de y-as vertegenw
 
 * **AuthN OK**
 
-   AuthN OK is het aantal geslaagde authenticaties. Zie voor meer informatie en definitie [Productconcepten: AuthN OK](/help/AccountIQ/product-concepts.md#authn-ok-def).
+  AuthN OK is het aantal geslaagde authenticaties. Zie voor meer informatie en definitie [Productconcepten: AuthN OK](/help/AccountIQ/product-concepts.md#authn-ok-def).
 
 * **AuthZ OK**
 
-   AuthZ OK is het aantal geslaagde autorisaties. Zie voor meer informatie en definitie [Productconcepten: AuthZ OK](/help/AccountIQ/product-concepts.md#authz-ok-def).
+  AuthZ OK is het aantal geslaagde machtigingen. Zie voor meer informatie en definitie [Productconcepten: AuthZ OK](/help/AccountIQ/product-concepts.md#authz-ok-def).
 
 * **Verzoeken afspelen**
 
-   De verzoeken van het spel zijn het aantal Verzoeken van het Spel. Zie voor meer informatie en definitie [Productconcepten: Aanvragen afspelen](/help/AccountIQ/product-concepts.md#play-requests-def)
+  De verzoeken van het spel zijn het aantal Verzoeken van het Spel. Zie voor meer informatie en definitie [Productconcepten: afspeelverzoeken](/help/AccountIQ/product-concepts.md#play-requests-def)
 
-   >[!NOTE]
-   >
-   >De grafiek van de spelverzoeken lijngrafiek is niet beschikbaar voor gebruikers MVPD.
+  >[!NOTE]
+  >
+  >De grafiek van de spelverzoeken lijngrafiek is niet beschikbaar voor gebruikers MVPD.
 
 
 * **Unieke abonnees**
 
-   De unieke abonnees zijn het aantal succesvolle unieke abonnees. Zie voor meer informatie en definitie [Productconcepten: Unieke abonnees](/help/AccountIQ/product-concepts.md#unique-subscriber-def)
+  De unieke abonnees zijn het aantal succesvolle unieke abonnees. Zie voor meer informatie en definitie [Productconcepten: unieke abonnees](/help/AccountIQ/product-concepts.md#unique-subscriber-def)
 
-   >[!NOTE]
-   >
-   >Het totale aantal unieke abonnees omvat ook het aantal unieke apparaten als het gebruik van Adobe TempPass door een programmeur (dat vrije voorproef is) deel van het segment uitmaakt.
+  >[!NOTE]
+  >
+  >Het totale aantal unieke abonnees omvat ook het aantal unieke apparaten als het gebruik van Adobe TempPass (dat vrije voorproef) van een programmeur deel van het segment uitmaakt.
 
-## Overzicht van momentopnamen - Accounts boven drempels {#snapshot-overview}
+## Overzicht van momentopnamen - Rekeningen boven drempels {#snapshot-overview}
 
 Stel uw analyses en rapporten nauwkeurig af met dit extra filter om verschillende gebruiksdrempels in te stellen. Nadat u het segment (of de cohort) voor analyse hebt gedefinieerd door de gewenste MVPD(s) en kanalen te selecteren, kunt u ook de volgende filters gebruiken om het gedrag van abonnees te analyseren:
 
@@ -123,7 +122,7 @@ In de grafiek ziet u het volgende:
 
 * percentage van de totale abonnementrekeningen in dat segment;
 
-   die het aantal van X apparaten, het aantal van Y van IPs, en het aantal van Z codes van het ZIP gebruiken om inhoud van uw kanaal voor (bepaald segment van) MVPDs, voor een tijdkader te verbruiken.
+  die het aantal van X apparaten, het aantal van Y van IPs, en het aantal van Z codes van het ZIP gebruiken om inhoud van uw kanaal voor (bepaald segment van) MVPDs, voor een tijdkader te verbruiken.
 
 ![](assets/select-thresholds.png)
 
@@ -155,7 +154,7 @@ Met het donutdiagram kunt u in één oogopslag de grootte beoordelen van abonnee
 
 leuk [Apparaten per week (of maand) per account](#devices-week-account)Met de maatstaf voor locaties per week (of maand) per account kunt u het gebruik van de abonneeaccount op verschillende locaties analyseren om het delen van wachtwoorden beter te identificeren. Het x-as palet Aantal Rekeningen, en de y-asPunten Aantal Plaatsen.
 
-Resultaten van deze metrische methode gecombineerd met het aantal [Apparaten per week (of maand) per account](#devices-week-account) en aantal [IPs per week (of maand) per Rekening](#ip-week-account) helpen u nauwkeuriger de instanties van het delen van wachtwoord beoordelen; zodat authentieke gebruikers niet worden meegerekend.
+Resultaten van deze metrisch gecombineerd met aantal [Apparaten per week (of maand) per account](#devices-week-account) en aantal [IPs per week (of maand) per Rekening](#ip-week-account) helpen u nauwkeuriger de instanties van het delen van het wachtwoord te beoordelen; zodat de authentieke gebruikers niet in worden geteld.
 
 ![](assets/graph-loc-week-acc.png)
 
@@ -191,7 +190,7 @@ De grafiek van de bar van de Historische Mening helpt u de gebruiksmetriek over 
 
 * De oranje gekleurde balken geven segmenten in verschillende tijdframes aan.
 
-* In de lijngrafiek worden de wijzigingen in [Apparaten per week (of maand) per account](#devices-week-account), [Locaties per week (of maand) per account](#locations-week-account), en [IPs per week (of maand) per Rekening](#ip-week-account) waarden over het tijdkader die op de drempel worden gebaseerd.
+* De lijngrafiek geeft een overzicht van de wijzigingen in [Apparaten per week (of maand) per account](#devices-week-account), [Locaties per week (of maand) per account](#locations-week-account), en [IPs per week (of maand) per Rekening](#ip-week-account) waarden over het tijdkader die op de drempel worden gebaseerd.
 
 ![](assets/historical-view.png)
 
@@ -203,5 +202,4 @@ De grafiek van de bar van de Historische Mening helpt u de gebruiksmetriek over 
 
 >[!MORELIKETHIS]
 >
->* Weet hoe te om rapporten voor hoogste 1000 abonnees in het geselecteerde segment uit te voeren gebruikend filters in het Algemene Rapport van het Gebruik gebruikend [Bovenste 1000-accounts exporteren](/help/AccountIQ/export-acc-information.md) optie.
-
+>* Weet hoe u rapporten voor de bovenste 1000 abonnees in het geselecteerde segment kunt exporteren met filters in Rapport Algemeen gebruik met [Bovenste 1000-accounts exporteren](/help/AccountIQ/export-acc-information.md) -optie.

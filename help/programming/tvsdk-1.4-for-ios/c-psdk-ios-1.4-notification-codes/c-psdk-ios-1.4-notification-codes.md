@@ -1,8 +1,7 @@
 ---
 description: Het TVSDK-meldingssysteem produceert verschillende fouten, waarschuwingen en informatieve kennisgevingen die diagnostische metagegevens bieden.
 title: Meldingscodes
-exl-id: 6cbc85d7-c197-448b-aa90-554c70af6557
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '224'
 ht-degree: 0%
@@ -27,7 +26,7 @@ Meldingsobjecten bevatten informatie over de status van de speler. TVSDK biedt e
    <td colname="1"><span class="codeph"> type</span></td> 
    <td colname="2">Het berichttype. Afhankelijk van het platform verwijst deze eigenschap naar een opgesomd type met mogelijke waarden van 
     <pre>
-      INFORMATIE, WAARSCHUWING of FOUT. Dit is de groepering op hoofdniveau voor meldingen.
+      INFO, WARN of ERROR. Dit is de groepering op hoofdniveau voor meldingen.
     </pre> </td> 
   </tr> 
   <tr rowsep="1"> 
@@ -35,7 +34,7 @@ Meldingsobjecten bevatten informatie over de status van de speler. TVSDK biedt e
    <td colname="2">De numerieke representatie die aan het bericht is toegewezen. 
     <ul id="ul_31AB497C6FFA452496DD09B0D78687B9"> 
      <li id="li_53E75022C50246E0982E315D04EFD8B3">Foutmeldingsgebeurtenissen, van 100000 tot 19999 </li> 
-     <li id="li_11AE91D1325E4F718228E662C9C55F9A">Waarschuwingsmeldingsgebeurtenissen, van 200000 tot en met 299999 </li> 
+     <li id="li_11AE91D1325E4F718228E662C9C55F9A">Waarschuwingsmeldingsgebeurtenissen, van 200000 tot 299999 </li> 
      <li id="li_6D3EA03845294DC2BAD1ACF507639E51">Gebeurtenissen voor de kennisgeving van informatie, van 300000 tot 399999 </li> 
     </ul> <p>Elk bereik op hoofdniveau, zoals fouten, wordt onderverdeeld in subbereiken, zoals 101000 tot en met 101999 die de afspeelfouten vertegenwoordigen. </p> </td> 
   </tr> 
@@ -45,7 +44,7 @@ Meldingsobjecten bevatten informatie over de status van de speler. TVSDK biedt e
   </tr> 
   <tr rowsep="1"> 
    <td colname="1"><span class="codeph"> metagegevens</span> </td> 
-   <td colname="2">Sleutel-waardeparen die extra relevante informatie over de kennisgeving bevatten. Een toets met de naam <span class="codeph"> URL</span> zou worden gecombineerd met een waarde die een URL is die gerelateerd is aan het bericht, zoals een ongeldige URL die een fout heeft veroorzaakt. </td> 
+   <td colname="2">Sleutel-waardeparen die extra relevante informatie over de kennisgeving bevatten. Bijvoorbeeld een toets met de naam <span class="codeph"> URL</span> zou worden gecombineerd met een waarde die een URL is die gerelateerd is aan het bericht, zoals een ongeldige URL die een fout heeft veroorzaakt. </td> 
   </tr> 
   <tr rowsep="0"> 
    <td colname="1"><span class="codeph"> innerNotification</span></td> 

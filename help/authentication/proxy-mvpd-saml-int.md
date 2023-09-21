@@ -1,8 +1,7 @@
 ---
 title: Proxy MVPD SAML-integratie
 description: Proxy MVPD SAML-integratie
-exl-id: 6c83e703-d8cd-476b-8514-05b8230902be
-source-git-commit: bfc3ba55c99daba561255760baf273b6538a3c6e
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '711'
 ht-degree: 1%
@@ -33,15 +32,15 @@ Elke Volmacht MVPD verstrekt de configuratiegegevens van de Volmacht voor hun Pr
 
 ## SAML-integratiestromen {#saml-int-flows}
 
-Wanneer een abonnee MVPD de plaats of de toepassing van een Programmer bezoekt, antwoordt de authentificatie van Adobe Primetime aan een API vraag van de plaats of de toepassing met een lijst van MVPDs die voor die Programmer wordt geactiveerd.  De integratie kan direct of geproxideerd zijn; de programmeur maakt er geen onderscheid tussen beide. Hierdoor kunnen programmeurs de lijst met actieve MVPD&#39;s op elke manier presenteren die zij geschikt achten. De abonnee kiest hun MVPD, en de authentificatie van Adobe Primetime richt de abonnee aan specifieke Identiteitsprovider van MVPD opnieuw.
+Wanneer een abonnee MVPD de plaats of de toepassing van een Programmer bezoekt, antwoordt de authentificatie van Adobe Primetime aan een API vraag van de plaats of de toepassing met een lijst van MVPDs die voor die Programmer wordt geactiveerd.  De integratie kan direct of geproxideerd zijn; er is geen onderscheid tussen hen en de programmeur. Hierdoor kunnen programmeurs de lijst met actieve MVPD&#39;s op elke manier presenteren die zij geschikt achten. De abonnee kiest hun MVPD, en de authentificatie van Adobe Primetime richt de abonnee aan specifieke Identiteitsprovider van MVPD opnieuw.
 
-In het geval van een geïntegreerde Volmacht MVPD, wordt de integratie gedaan tussen de authentificatie van Adobe Primetime en de Volmacht MVPD. De authentificatie van Adobe Primetime verzendt het verzoek van de gebruikersauthentificatie naar de Volmacht MVPD, en de Volmacht MVPD behandelt redirection. Opdat de Volmacht MVPD weet waar te om het verzoek van de gebruikersauthentificatie opnieuw te richten, verzendt de authentificatie van Adobe Primetime een herkenningsteken MVPD in het de authentificatieverzoek van SAML.  Dit herkenningsteken is identiteitskaart MVPD die door de Leverancier van de Volmacht als hierboven gespecificeerd wordt gespecificeerd.
+In het geval van een geïntegreerde Volmacht MVPD, wordt de integratie gedaan tussen de authentificatie van Adobe Primetime en de Volmacht MVPD. De authentificatie van Adobe Primetime verzendt het verzoek van de gebruikersauthentificatie naar de Volmacht MVPD, en de Volmacht MVPD behandelt redirection. Opdat de Volmacht MVPD weet waar te om het verzoek van de gebruikersauthentificatie opnieuw te richten, verzendt de authentificatie van Adobe Primetime een herkenningsteken MVPD in het de authentificatieverzoek van SAML.  Dit herkenningsteken is identiteitskaart MVPD die door de Leverancier van de Volmacht door als de Dienst van het Web van de Volmacht zoals hierboven gespecificeerd wordt gespecificeerd.
 
 ### Verificatie {#authn-saml-int}
 
 Adobe Primetime-verificatie kan alleen worden geïntegreerd met een proxy-MVPD als:
 
-* Een Volmacht MVPD verstrekte lijst van Proxied MVPDs, die aan de Dienst van het Web van de Volmacht van Adobe wordt geduwd
+* Een Volmacht MVPD verstrekte lijst van Proxied MVPDs, die aan de Dienst van het Web van de Volmacht van de Adobe wordt geduwd
 
 * SAML-metagegevens voor de bovenliggende MVPD-proxy
 

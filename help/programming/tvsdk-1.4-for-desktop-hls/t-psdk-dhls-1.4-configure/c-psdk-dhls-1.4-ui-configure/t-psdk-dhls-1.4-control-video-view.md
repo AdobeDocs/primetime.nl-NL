@@ -1,8 +1,7 @@
 ---
 description: U kunt de positie en grootte van de videoweergave bepalen met het MediaPlayerView-object.
 title: De positie en grootte van de videoweergave bepalen
-exl-id: 5e7ae557-7f2b-4697-85eb-e72d1f43a7fc
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '218'
 ht-degree: 0%
@@ -15,7 +14,7 @@ U kunt de positie en grootte van de videoweergave bepalen met het MediaPlayerVie
 
 TVSDK probeert standaard de hoogte-breedteverhouding van de videoweergave te behouden wanneer de grootte of de positie van de video verandert (als gevolg van een wijziging die door de toepassing, een profielschakelaar of een inhoudsschakelaar is aangebracht, enz.).
 
-U kunt het standaardgedrag voor de verhouding overschrijven door een andere waarde op te geven *schaalbeleid*. Geef het schaalbeleid op met de opdracht `MediaPlayerView` object `scalePolicy` eigenschap. De `MediaPlayerView`Het standaardschaalbeleid van de gebruiker wordt ingesteld met een instantie van het `MaintainAspectRatioScalePolicy` klasse. Als u het schaalbeleid opnieuw wilt instellen, vervangt u de standaardinstantie van `MaintainAspectRatioScalePolicy` op `MediaPlayerView.scalePolicy` met uw eigen beleid. (U kunt de `scalePolicy` naar een null-waarde.)
+U kunt het standaardgedrag voor de verhouding overschrijven door een andere waarde op te geven *schaalbeleid*. Geef het schaalbeleid op met de opdracht `MediaPlayerView` object `scalePolicy` eigenschap. De `MediaPlayerView`Het standaardschaalbeleid van de gebruiker wordt ingesteld met een instantie van het `MaintainAspectRatioScalePolicy` klasse. Vervang de standaardinstantie van `MaintainAspectRatioScalePolicy` op `MediaPlayerView.scalePolicy` met uw eigen beleid. (U kunt de instelling `scalePolicy` naar een null-waarde.)
 
 1. Implementeer de `MediaPlayerViewScalePolicy` om uw eigen schaalbeleid te maken.
 
@@ -33,8 +32,7 @@ U kunt het standaardgedrag voor de verhouding overschrijven door een andere waar
    >
    >Bijvoorbeeld:
    >
-   >
-   ```
+   >```
    >public class CustomScalePolicy implements MediaPlayerViewScalePolicy { 
    >       /** 
    >         * Default constructor. 
@@ -56,15 +54,16 @@ U kunt het standaardgedrag voor de verhouding overschrijven door een andere waar
    >       } 
    >}
    >```
+   >
 
-1. Wijs uw implementatie toe aan de `MediaPlayerView` eigenschap.
+1. Uw implementatie toewijzen aan de `MediaPlayerView` eigenschap.
 
    ```
    var view:MediaPlayerView = MediaPlayerView.create(stage.stageVideos[0]); 
    view.scalePolicy = new CustomScalePolicy();
    ```
 
-1. Uw weergave toevoegen aan de `view` eigenschap.
+1. Uw weergave toevoegen aan de mediaspeler `view` eigenschap.
 
    ```
    addChild(view); 
@@ -74,7 +73,7 @@ U kunt het standaardgedrag voor de verhouding overschrijven door een andere waar
 
 <!--<a id="example_7B08ECCDA17B4DD191FC672BD1F4C850"></a>-->
 
-**Bijvoorbeeld: Schaal de video om de volledige videomening te vullen, zonder aspectverhouding te handhaven:**
+**Bijvoorbeeld: schaal de video om de volledige videoweergave te vullen, zonder de hoogte-breedteverhouding te behouden:**
 
 ```
 package com.adobe.mediacore.samples.utils { 

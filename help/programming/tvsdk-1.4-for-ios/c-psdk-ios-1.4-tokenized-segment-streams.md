@@ -1,8 +1,7 @@
 ---
 description: HLS de stromen die door een Netwerk van de Levering van de Inhoud (CDN) worden geleverd kunnen authentificatietokens op manifest en segmentverzoeken voor controle soms gebruiken. Deze tokens kunnen worden opgegeven als URL-parameters of als cookiekopteksten.
 title: Vertogende segmentstromen
-exl-id: 20a3e8a2-2e9d-4c0d-abea-66edcbcf0003
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '159'
 ht-degree: 0%
@@ -13,14 +12,14 @@ ht-degree: 0%
 
 HLS de stromen die door een Netwerk van de Levering van de Inhoud (CDN) worden geleverd kunnen authentificatietokens op manifest en segmentverzoeken voor controle soms gebruiken. Deze tokens kunnen worden opgegeven als URL-parameters of als cookiekopteksten.
 
-Tokens die als koekjes op master manifest (m3u8) reactie worden verstrekt worden niet gedeeld met de segment (ts) verzoeken zelfs wanneer de segmentverzoeken voor het zelfde domein zijn. Als u het delen van deze cookies in een segmentverzoek wilt inschakelen, stelt u de volgende eigenschap in op de knop `PTMetadata` -instantie die aan het Player-item wordt doorgegeven: 
+Tokens die als koekjes op hoofdmanifest (m3u8) reactie worden verstrekt worden niet gedeeld met de segment (ts) verzoeken zelfs wanneer de segmentverzoeken voor het zelfde domein zijn. Als u het delen van deze cookies in een segmentverzoek wilt inschakelen, stelt u de volgende eigenschap in op de knop `PTMetadata` -instantie die aan het Player-item wordt doorgegeven: 
 
 ```
 PTMetadata *metadata = [[[PTMetadata alloc] init] autorelease]; 
 [metadata setValue:[NSNumber numberWithBool:YES] forKey:kSyncCookiesWithAVAsset]; 
 ```
 
-Er wordt een aanvullend verzoek ingediend voor het master manifest (m3u8) voordat de stream wordt afgespeeld.
+Er wordt een aanvullend verzoek gedaan aan het hoofdmanifest (m3u8) voordat de stream wordt afgespeeld.
 
 >[!IMPORTANT]
 >

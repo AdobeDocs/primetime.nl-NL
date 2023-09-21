@@ -1,8 +1,7 @@
 ---
 title: Rapporten over het delen van accounts weergeven voor een specifieke programmeur
 description: Rapporten over het delen van accounts weergeven voor een specifieke programmeur
-exl-id: 34b198e1-dbb9-4486-b688-92780eec0a56
-source-git-commit: bfc3ba55c99daba561255760baf273b6538a3c6e
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '105'
 ht-degree: 0%
@@ -22,16 +21,16 @@ Als u rapporten wilt weergeven in Account IQ, nadat u zich met succes hebt aange
 
 * [Algemeen gebruik](/help/AccountIQ/general-usage-reports.md)
 
-   ![](assets/specific-mvpd-gen-usage.png)
+  ![](assets/specific-mvpd-gen-usage.png)
 * [Gedeelde accounts](/help/AccountIQ/shared-acc-reports.md)
 
-   ![](assets/specific-mvpd-shared-acc.png)
+  ![](assets/specific-mvpd-shared-acc.png)
 * [Gebruikspatronen](/help/AccountIQ/usage-patterns.md)
 
-   ![](assets/specific-mvpd-usage-pattern.png)
+  ![](assets/specific-mvpd-usage-pattern.png)
 
 * [Dashboard](/help/AccountIQ/dashboard.md) (Het dashboard geeft een glimp van de geselecteerde grafieken van verschillende rapportpagina&#39;s).
 
-   ![](assets/specific-mvpd-dashboard.png)
+  ![](assets/specific-mvpd-dashboard.png)
 
 Elk van deze pagina&#39;s zal op de activiteit van geselecteerd segment wijzen.

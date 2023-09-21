@@ -1,8 +1,7 @@
 ---
 title: Gradatie-API - overzicht
 description: Gradatie-API - overzicht
-exl-id: c7d6685b-a235-42eb-9c9c-0ffa1747f614
-source-git-commit: bfc3ba55c99daba561255760baf273b6538a3c6e
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '364'
 ht-degree: 0%
@@ -19,7 +18,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Deze API is niet algemeen beschikbaar. Neem contact op met uw Adobe-vertegenwoordiger voor beschikbaarheidsupdates.
+>Deze API is niet algemeen beschikbaar. Neem contact op met uw Adobe voor updates van de beschikbaarheid.
 
 Deze eigenschap verstrekt om het even welke drie partijen in een integratie (Programmers, MVPDs, en Adobe) met de capaciteit om specifieke eindpunten van de Authentificatie en van de Vergunning tijdelijk over te slaan MVPD. Meestal is het de programmeur die een dergelijke actie initieert, maar ongeacht wie een afbraakgebeurtenis activeert, is de actie afhankelijk van eerder overeengekomen regelingen met de betrokken MVPD&#39;s.
 
@@ -30,8 +29,8 @@ Een degradatieregel wordt slechts voor een bepaalde periode toegepast. Hoewel de
 Afbraaknotities:
 
 * Deze eigenschap wordt ontworpen om samen met het gebruik controle API worden gebruikt, die informatie in real time over het aantal voor authentificaties en vergunningen per MVPD, gemiddelde vergunningsvertraging, en andere metriek nodig voor een volledig de dienstoverzicht verstrekt.
-* Met deze functie kunt u de Adobe Primetim-verificatieservice niet omzeilen. Als de authentificatie van Primetime neer is is er geen mechanisme binnen de dienst die kan worden gebruikt om gebruikers toe te staan om inhoud te zien. De sites of apps kunnen echter zelf rondom de Primetime-verificatie navigeren.
-* Adobe zal momenteel geen directe verslechtering teweegbrengen - het besluit moet altijd bij een specifieke programmeur verblijven die met dergelijke voorwaarden met MVPD&#39;s heeft ingestemd. In de toekomst, kan de authentificatie van Primetime pro-actief in het teweegbrengen van degradatieregels zijn als de overeenkomsten (SLA bescherming) met MVPDs kunnen worden bereikt.
+* Met deze functie kunt u de Primetim-verificatieservice van Adobe niet omzeilen. Als de authentificatie van Primetime neer is is er geen mechanisme binnen de dienst die kan worden gebruikt om gebruikers toe te staan om inhoud te zien. De sites of apps kunnen echter zelf rondom de Primetime-verificatie navigeren.
+* Adobe zal momenteel niet rechtstreeks tot aantasting leiden. Het besluit moet altijd in het bezit zijn van een specifieke programmeur die met dergelijke voorwaarden heeft ingestemd. In de toekomst, kan de authentificatie van Primetime pro-actief in het teweegbrengen van degradatieregels zijn als de overeenkomsten (SLA bescherming) met MVPDs kunnen worden bereikt.
 
 <!--
 ## Related Information {#related}

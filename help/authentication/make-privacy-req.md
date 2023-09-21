@@ -1,8 +1,7 @@
 ---
 title: Een privacyverzoek indienen
 description: Een privacyverzoek indienen
-exl-id: abb21306-98d6-4899-914a-bdfa85cbd204
-source-git-commit: bfc3ba55c99daba561255760baf273b6538a3c6e
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '586'
 ht-degree: 0%
@@ -222,7 +221,7 @@ Voor een verwijderaanvraag:
 Er zijn twee opties voor klanten om privacyverzoeken naar Adobe te verzenden:
 
 * **handmatig** - door [Gebruikersinterface Privacy Service](#privacy-service-ui)
-* **automatisch** - door [Privacy Service-API ](#privacy-service-api)
+* **automatisch** - door [Privacy Service-API](#privacy-service-api)
 
 ### Door Privacy Service UI te gebruiken {#privacy-service-ui}
 
@@ -234,7 +233,7 @@ In de gebruikersinterface moeten klanten hun eigen IMSOrgID laden en een JSON me
 
 Adobe Experience Platform Privacy Service biedt een gemeenschappelijke, gecentraliseerde facilitering van toegang tot/verwijderingsverzoeken en opt-out-of-sales aanvragen voor privégegevens.
 
-De **Privacy Service API-documentatie** behandelt diepgaand hoe een klant van Adobe met Adobe API kan integreren.
+De **Privacy Service API-documentatie** behandelt diepgaand hoe een Adobe klant met Adobe API kan integreren.
 
 **API-aanroepen visualiseren met Postman (een gratis software van derden):**
 
@@ -245,14 +244,14 @@ De **Privacy Service API-documentatie** behandelt diepgaand hoe een klant van Ad
 
 **API-paden:**
 
-* Platform Gateway-URL: `https://platform.adobe.io/`
+* URL PLATFORM-gateway: `https://platform.adobe.io/`
 * Basispad voor deze API: `/data/core/privacy/jobs`
 * Voorbeeld van een volledig pad: `https://platform.adobe.io/data/core/privacy/jobs/ping`
 
 
 **Vereiste kopteksten:**
 
-* Alle vraag vereist de kopballen `Authorization`, `x-gw-ims-org-id`, en `x-api-key`. Voor meer informatie over hoe u deze waarden kunt verkrijgen, raadpleegt u de **verificatiezelfstudie**.
+* Alle vraag vereist de kopballen `Authorization`, `x-gw-ims-org-id`, en `x-api-key`. Zie voor meer informatie over het verkrijgen van deze waarden de **verificatiezelfstudie**.
 * Alle verzoeken met een lading in het verzoeklichaam (zoals POST, PUT, en de vraag van PATCH) moeten de kopbal omvatten `Content-Type` met een waarde van `application/json`.
 
 <!--

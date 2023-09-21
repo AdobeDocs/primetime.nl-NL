@@ -1,8 +1,7 @@
 ---
 description: U kunt het videogebruik bijhouden door TVSDK te integreren met Adobe Analytics.
 title: Integratie van videoanalysemogelijkheden
-exl-id: c335b864-7468-49ae-ab7f-0d23f3d5bc25
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '128'
 ht-degree: 0%
@@ -13,11 +12,11 @@ ht-degree: 0%
 
 U kunt het videogebruik bijhouden door TVSDK te integreren met Adobe Analytics.
 
-Bij het bijhouden van video&#39;s in TVSDK wordt het **Adobe Analytics Video Essentials** service, die metriek voor videobetrokkenheid biedt, zoals videoweergaven, voltooide video en indrukken, tijd die aan video wordt besteed, enzovoort. Neem voor meer informatie over deze service contact op met uw Adobe-vertegenwoordiger.
+Bij het bijhouden van video&#39;s in TVSDK wordt het **Adobe Analytics Video Essentials** service, die metriek voor videobetrokkenheid biedt, zoals videoweergaven, voltooide video en indrukken, tijd die aan video wordt besteed, enzovoort. Neem voor meer informatie over deze service contact op met uw Adobe.
 
 In de volgende procedure worden de stappen beschreven waarmee videotracering in de speler wordt geactiveerd:
 
-1. Initialiseer en/of vorm de volgende video volgende componenten:
+1. Initialiseer en/of vorm de volgende video het volgen componenten:
 
    In iOS maken deze componenten deel uit van TVSDK:
 

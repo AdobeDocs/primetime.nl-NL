@@ -1,8 +1,7 @@
 ---
 description: Wanneer een segment mist, bijvoorbeeld wanneer een bepaald segment er niet in slaagt te downloaden, probeert om door een verscheidenheid van failoverpogingen terug te krijgen. Als het niet kan herstellen, geeft het een fout uit.
 title: Ontbrekende segment-failover
-exl-id: e941008a-99a5-4fff-ac88-133abcf9380d
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '287'
 ht-degree: 0%

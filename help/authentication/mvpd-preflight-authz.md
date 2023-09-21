@@ -1,8 +1,7 @@
 ---
 title: Preflight-machtiging voor MVPD
 description: Preflight-machtiging voor MVPD
-exl-id: da2e7150-b6a8-42f3-9930-4bc846c7eee9
-source-git-commit: bfc3ba55c99daba561255760baf273b6538a3c6e
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '745'
 ht-degree: 0%
@@ -55,7 +54,7 @@ Deze Preflight-implementatie is ook compatibel met OLCA (Cablelabs).  De Authent
 
 De authentificatie van Adobe Primetime ontvangt de lijst van middelen van de toepassing van de Programmer. De integratie van MVPD van de authentificatie van Adobe Primetime kan één vraag AuthZ met al die middelen dan maken, en dan de reactie ontleden en de veelvoudige vergunning/ontkennen besluiten halen.  De stroom voor de preflight met multi-channel scenario AuthZ werkt als volgt:
 
-1. De app van de programmeur verzendt een komma gescheiden lijst van middelen door preflight cliënt API, bijvoorbeeld: &quot;TestChannel1,TestChannel2,TestChannel3&quot;.
+1. De app van de programmeur verzendt een komma gescheiden lijst van middelen door de Preflight cliënt API, bijvoorbeeld: &quot;TestChannel1,TestChannel2,TestChannel3&quot;.
 1. De Preflight AuthZ- verzoekvraag MVPD bevat de veelvoudige middelen, en heeft de volgende structuur:
 
 ```XML
@@ -117,7 +116,7 @@ De authentificatie van Adobe Primetime ontvangt de lijst van middelen van de toe
 
 Sommige MVPDs hebben toestemmingseindpunten die vergunning voor veelvoudige middelen in één verzoek steunen, maar zij vallen niet onder het scenario dat in Multikanaal AuthZ wordt beschreven. Deze specifieke MVPDs vereist douanewerk.
 
-Adobe kan ook ondersteuning bieden voor meerdere kanalen zonder wijzigingen in de bestaande implementatie.  Deze aanpak moet tussen Adobe en het technische team van de MVPD worden herzien om ervoor te zorgen dat het naar behoren functioneert.
+De Adobe kan veelvoudige kanaalvergunning zonder veranderingen in de bestaande implementatie ook steunen.  Deze aanpak moet tussen Adobe en het technische team van de MVPD worden herzien om ervoor te zorgen dat het naar behoren functioneert.
 
 ## MVPD&#39;s die Preflight-autorisatie ondersteunen {#mvpds-supp-preflight-authz}
 
@@ -125,7 +124,7 @@ De volgende lijst maakt een lijst van MVPDs die Preflight Vergunning, samen met 
 
 | Preflight-benadering | MVPD | Notities |
 |:-------------------------------:|:--------------------------------------------------------------------------------------------------------:|:------------------------------------------------------------------:|
-| AuthZ met meerdere kanalen | AT&amp;T Proxy Clearleap Charter_Direct Proxy GLDS Rogers Verizon OSN Bell Sasktel Optimum AlticeOne comprimeren |  |
+| AuthZ met meerdere kanalen | AT&amp;T Proxy Clearleap Charter_Direct Proxy GLDS Rogers Verizon OSN Bell Sasktel Optimum AlticeOne comprimeren |                                                                    |
 | Kanaalverbinding in gebruikersmetagegevens | Suddenlink HTC | Alle directe integraties van de Synacor kunnen deze benadering eveneens steunen. |
 | Vork en verbinding | Alle andere niet hierboven vermelde | Het standaard maximum aantal gecontroleerde middelen = 5. |
 

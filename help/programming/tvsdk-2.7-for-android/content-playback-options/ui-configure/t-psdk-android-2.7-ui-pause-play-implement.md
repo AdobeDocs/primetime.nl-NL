@@ -1,8 +1,7 @@
 ---
 description: U kunt pauze- en afspeelknoppen toevoegen om de video te pauzeren of af te spelen.
 title: Een video afspelen en pauzeren
-exl-id: cb13ae62-f96b-4329-841f-aba885725d70
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '105'
 ht-degree: 0%

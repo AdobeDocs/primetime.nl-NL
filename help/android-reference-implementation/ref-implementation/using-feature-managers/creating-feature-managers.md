@@ -1,8 +1,7 @@
 ---
 description: De eigenschappen van TVSDK worden gedreven door configuratie en door MediaPlayer uitgevoerd.
 title: Het creëren van eigenschapmanagers door configuratieinformatie tot MediaPlayer over te gaan
-exl-id: 47377ceb-ed3e-4dca-9b55-82e4fe6b0194
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '230'
 ht-degree: 0%
@@ -15,13 +14,13 @@ De eigenschappen van TVSDK worden gedreven door configuratie en door MediaPlayer
 
 * De configuratie is de lijst van specifieke montages voor de eigenschap, zoals aanvankelijke beetjetarief van controle ABR en gebrek gesloten ondertitelingszicht.
 
-   De managers van de eigenschap moeten de configuraties krijgen om het eigenschapgedrag te bepalen.
+  De managers van de eigenschap moeten de configuraties krijgen om het eigenschapgedrag te bepalen.
 
-   In de Primetime verwijzingsimplementatie, wordt de configuratie opgeslagen in gedeelde voorkeur, maar u kunt de configuratie opslaan op wat voor manier voor uw milieu zinvol is.
+  In de Primetime verwijzingsimplementatie, wordt de configuratie opgeslagen in gedeelde voorkeur, maar u kunt de configuratie opslaan op wat voor manier voor uw milieu zinvol is.
 
 * `MediaPlayer` is het TVSDK-mediaspelerobject dat de videobron bevat.
 
-   De managers van de eigenschap registreren TVSDK gebeurtenisluisteraars aan dit spelervoorwerp, halen gegevens van de playbackzitting terug en brengen eigenschappen TVSDK aan de playbackzitting teweeg.
+  De managers van de eigenschap registreren TVSDK gebeurtenisluisteraars aan dit spelervoorwerp, halen gegevens van de playbackzitting terug en brengen eigenschappen TVSDK aan de playbackzitting teweeg.
 
 Elke eigenschap heeft een overeenkomstige configuratieinterface. Bijvoorbeeld: `CCManager` gebruik `ICCConfig` om de configuratie op te halen. `ICCConfig` bevat methodes om de configuratieinformatie met betrekking tot gesloten ondertiteling slechts te krijgen.
 

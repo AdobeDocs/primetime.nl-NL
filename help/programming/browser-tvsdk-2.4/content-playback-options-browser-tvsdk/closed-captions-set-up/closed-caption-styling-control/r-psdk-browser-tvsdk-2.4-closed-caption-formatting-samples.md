@@ -1,8 +1,7 @@
 ---
 description: U kunt opmaak voor Closed Caption opgeven.
-title: Voorbeelden van bijschriftopmaak
-exl-id: 946530a1-c7d7-4582-81b8-71b2980561cb
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+title: Voorbeelden van opmaak van bijschriften
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '33'
 ht-degree: 0%
@@ -13,7 +12,7 @@ ht-degree: 0%
 
 U kunt opmaak voor Closed Caption opgeven.
 
-## Voorbeeld 1: Opmaakwaarden expliciet opgeven {#section_BD7B48F3B66D4E9290E1CB2F464E08E4}
+## Voorbeeld 1: geef opmaakwaarden expliciet op {#section_BD7B48F3B66D4E9290E1CB2F464E08E4}
 
 ```js
 // Set CC style. 

@@ -4,8 +4,7 @@ description: Nieuw in de versies van Primetime Offline Packager 2.1 en 2.3.1
 contentOwner: asgupta
 products: SG_PRIMETIME
 topic-tags: release-notes
-exl-id: 911549b4-45b3-400a-b903-fa1479ee862b
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '638'
 ht-degree: 0%
@@ -57,7 +56,7 @@ Hardwarevereisten
 
 * Vaste schijf
 
-(Schijf-SAS): Minimaal 10 GB met 7.500 rpm
+(Schijf-SAS): minimaal 10 GB met 7.500 rpm
 
 (Schijf-SSD): 400 MBps lees-/schrijfsnelheid
 
@@ -111,7 +110,7 @@ De volgende problemen zijn ook opgelost in deze release.
 
 * Vaste schijf
 
-   * (Schijf-SAS): Minimaal 10 GB met 7.500 rpm
+   * (Schijf-SAS): minimaal 10 GB met 7.500 rpm
    * (Schijf-SSD): 400 MBps lees-/schrijfsnelheid
    * (NAS): 1 GB toegewezen koppeling
 
@@ -122,7 +121,7 @@ De volgende problemen zijn ook opgelost in deze release.
 ### Offline Packager 2.1 installeren {#installing-offline-packager}
 
 1. Download de Java SE-software van de [Oracle](https://www.oracle.com/technetwork/java/javase/downloads/index.html) en volgt u de installatie-instructies.
-1. Het gereedschap Extraheren `Adobe Primetime - Offline Packager 2.1.0 archive file, PrimetimeOfflinePackager-2-1-0-b15-07082015.zip`, naar uw schijf.
+1. Het gereedschap `Adobe Primetime - Offline Packager 2.1.0 archive file, PrimetimeOfflinePackager-2-1-0-b15-07082015.zip`, naar uw schijf.
 
 ### Het vormen van Offline Packager 2.1 {#configuring-the-offline-packager-1}
 

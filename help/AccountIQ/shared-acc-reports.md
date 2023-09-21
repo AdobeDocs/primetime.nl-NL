@@ -1,8 +1,7 @@
 ---
 title: Rapporten over gedeelde accounts
 description: Rapporten van gedeelde accounts
-exl-id: 16c5ded1-2a95-4373-8b90-b445131f333a
-source-git-commit: dd1001d94e32a1a8b5346ff97b0f6cb7d244dcf2
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '458'
 ht-degree: 0%
@@ -11,7 +10,7 @@ ht-degree: 0%
 
 # Rapporten over gedeelde accounts {#shared-accounts-reports}
 
-In de rapporten Gedeelde accounts worden de maatstaven, zoals het aantal apparaten en apparaattypen, uitgesplitst op basis van het geselecteerde bereik voor het delen van de waarschijnlijkheid, bijvoorbeeld **Te matige betrouwbaarheid** en **Te lage waarschijnlijkheid** voor het huidige segment.
+De rapporten van de Gedeelde Rekeningen onderverdelen de metriek zoals aantal apparaten en apparatentypes door de geselecteerde waaier van het delen waarschijnlijkheid, bijvoorbeeld **Te matige betrouwbaarheid** en **Te lage waarschijnlijkheid** voor het huidige segment.
 
 Deze bereiken kunnen dan dienen als door de gebruiker gedefinieerde drempels en de grafieken worden bijgewerkt op basis van de geselecteerde drempels.
 
@@ -31,7 +30,7 @@ De rode lijn geeft het drempelbereik aan dat door gebruikers in [Rekeningen bove
 
 ![](assets/accounts-sharing-probability-pie.png)
 
-In het staafdiagram wordt het aantal accounts op de y-as weergegeven voor verschillende categorieën van waarschijnlijkheid van delen (weergegeven op x-as).
+In het staafdiagram wordt het aantal accounts op de y-as weergegeven voor verschillende categorieën van waarschijnlijkheid van delen (weergegeven op de x-as).
 
 ![](assets/accounts-sharing-probability-bar.png)
 
@@ -57,7 +56,7 @@ Zodra u de drempel selecteert, toont het paneel het percentage (en het aantal) r
 
 ## Segment - Verzoeken afspelen van totaal {#play-request-out-total}
 
-In het donutdiagram worden het percentage (en het aantal) afspeelverzoeken van abonnees in het segment weergegeven. en laat u de spelverzoeken vergelijken die door abonnees niet in het bepaalde segment worden gemaakt.
+Het donut diagram toont het percentage (en het aantal) spelverzoeken die door abonnees in het segment worden gemaakt; en laat u de spelverzoeken vergelijken die door abonnees niet in het bepaalde segment worden gemaakt.
 
 ![](assets/play-req-outof-total.png)
 

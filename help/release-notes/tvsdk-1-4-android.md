@@ -4,8 +4,7 @@ description: In de Release-notities van TVSDK 1.4 voor Android wordt beschreven 
 contentOwner: asgupta
 products: SG_PRIMETIME
 topic-tags: release-notes
-exl-id: 1e3ec3b7-25be-4640-870e-928e832fe12d
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '7802'
 ht-degree: 0%
@@ -34,7 +33,7 @@ Er wordt een Booleaanse parameterwaarde geaccepteerd. Als de waarde ervan `True`
 
 **Gedeeltelijke invoeging van advertentie:**
 TV-achtige ervaring om mee te doen in het midden van een advertentie zonder de tracking te starten voor de gedeeltelijk bekeken advertentie.
-Voorbeeld: De gebruiker verbindt zich in het midden (bij 40 seconden) van een 90 seconde en onderbreking die uit drie 30 seconden bestaat. Dit is 10 seconden in de tweede advertentie in de pauze.
+Voorbeeld: de gebruiker sluit zich aan in het midden (bij 40 seconden) van een 90 seconden durende advertentie-onderbreking die uit drie 30 seconden bestaat. Dit is 10 seconden in de tweede advertentie in de pauze.
 * De tweede advertentie wordt afgespeeld gedurende de resterende duur (20 sec.), gevolgd door de derde advertentie.
 * Er worden geen trackers voor de gedeeltelijke advertentie geactiveerd (tweede advertentie). De trackers voor slechts de derde advertentie worden geactiveerd.
 
@@ -58,22 +57,22 @@ Geen nieuwe functies.
 * TVSDK biedt ondersteuning voor de Android Oreo-release.
 * Een nieuwe functie wordt toegevoegd aan `AdClientFactory` -klasse die ondersteuning biedt voor het registreren van meerdere Opportunity-detectors:
 
-   ```
-   public List<PlacementOpportunityDetector> createOpportunityDetectors(MediaPlayerItem item);
-   ```
+  ```
+  public List<PlacementOpportunityDetector> createOpportunityDetectors(MediaPlayerItem item);
+  ```
 
-   Dit moet een array van PlacementOpportunityDetector retourneren. Nu kunt u meerdere Opportunity-detectors registreren. Bijvoorbeeld voor vroege en uitgangseigenschap, werden twee Detectors van de Kans vereist - voor toevoegings en een andere voor vroege uitgang uit advertentie. U moet deze nieuwe functie alleen implementeren als u uw eigen AdvertisingFactory hebt geïmplementeerd (en niet DefaultAdvertisingfactory gebruikt). Voor het ophalen van het bestaande gedrag moet u één Opportunity Detector maken, zoals in de functie createOpportunityDetector() en in een array en return:
+  Dit moet een array van PlacementOpportunityDetector retourneren. Nu kunt u meerdere Opportunity-detectors registreren. Bijvoorbeeld voor vroege en uitgangseigenschap, werden twee Detectors van de Kans vereist - voor toevoegings en een andere voor vroege uitgang uit advertentie. U moet deze nieuwe functie alleen implementeren als u uw eigen AdvertisingFactory hebt geïmplementeerd (en niet DefaultAdvertisingfactory gebruikt). Voor het ophalen van het bestaande gedrag moet u één Opportunity Detector maken, zoals in de functie createOpportunityDetector() en in een array en return:
 
-   ```
-   public class MyAdvertisingFactory extends AdvertisingFactory {  
-   …  
-   @Override  
-   public List&lt;PlacementOpportunityDetector&gt; createOpportunityDetectors(MediaPlayerItem mediaPlayerItem) {  
-   List&lt;PlacementOpportunityDetector&gt; opportunityDetectors = new ArrayList&lt;PlacementOpportunityDetector&gt;();  
-   opportunityDetectors.add(createOpportunityDetector(mediaPlayerItem));  
-   return opportunityDetectors;  
-   } }
-   ```
+  ```
+  public class MyAdvertisingFactory extends AdvertisingFactory {  
+  …  
+  @Override  
+  public List&lt;PlacementOpportunityDetector&gt; createOpportunityDetectors(MediaPlayerItem mediaPlayerItem) {  
+  List&lt;PlacementOpportunityDetector&gt; opportunityDetectors = new ArrayList&lt;PlacementOpportunityDetector&gt;();  
+  opportunityDetectors.add(createOpportunityDetector(mediaPlayerItem));  
+  return opportunityDetectors;  
+  } }
+  ```
 
 >[!NOTE]
 >
@@ -87,16 +86,16 @@ Opgeloste problemen voor inhoud overslaan op Android.
 
 * **Netwerk en informatie**
 
-   TVSDK API&#39;s bieden nu aanvullende informatie over VAST-reacties van derden. ID van de hulp, het Systeem van de Advertentie en de Uitbreidingen van VAST worden verstrekt in de klasse NetworkAdInfo die door het networkAdInfo bezit op een Middel van de Advertentie toegankelijk is. Deze informatie kan worden gebruikt voor integratie met andere analytische hulpmiddelen, zoals **Mat Analytics**.
+  TVSDK API&#39;s bieden nu aanvullende informatie over VAST-reacties van derden. ID van de hulp, het Systeem van de Advertentie en de Uitbreidingen van VAST worden verstrekt in de klasse NetworkAdInfo die door het networkAdInfo bezit op een Middel van de Advertentie toegankelijk is. Deze informatie kan worden gebruikt voor integratie met andere analytische hulpmiddelen, zoals **Mat Analytics**.
 
 **Versie 1.4.31**
 
 **Ondersteuning voor meerdere CDN&#39;s voor CRS-advertenties**
-* Standaard worden alle getranscodeerde elementen gehost op een CDN die eigendom is van een Adobe op Akamai. Met de nieuwste release biedt de Adobe Creative Repackaging Service (CRS) u de mogelijkheid om de getranscodeerde creatieven te uploaden naar meerdere CDN&#39;s, zoals opgegeven door de klant.
+* Standaard worden alle getranscodeerde elementen gehost op een CDN die eigendom is van een Adobe in Akamai. Met de nieuwste release biedt de Adobe Creative Repackaging Service (CRS) u de mogelijkheid om de getranscodeerde creatieven te uploaden naar meerdere CDN&#39;s, zoals opgegeven door de klant.
 * Nieuwe API&#39;s worden toegevoegd aan TVSDK om het opgeven van de uiteindelijke creatieve CRS-URL mogelijk te maken wanneer de standaard-URL niet wordt gebruikt. Raadpleeg de documentatie voor meer informatie over het gebruik van deze nieuwe API&#39;s.
 
 **Versie 1.4.18**
-Primetime Android-TVSDK ondersteunt nu VPAID 2.0 Javascript-creatieven om een rijke interactieve functie in-stream en ervaring mogelijk te maken. Voor meer informatie over VPAID 2.0 raadpleegt u [VPAID-ondersteuning](../programming/tvsdk-3x-android-prog/android-3x-advertising/ad-insertion/vpaid-ads/android-3x-vpaid-ads.md).
+Primetime Android-TVSDK ondersteunt nu VPAID 2.0 Javascript-creatieven om een rijke interactieve functie in-stream en ervaring mogelijk te maken. Zie voor meer informatie over VPAID 2.0 [VPAID-ondersteuning](../programming/tvsdk-3x-android-prog/android-3x-advertising/ad-insertion/vpaid-ads/android-3x-vpaid-ads.md).
 
 **Versie 1.4.17**
 
@@ -109,7 +108,7 @@ AC-3 5.1 wordt alleen ondersteund op Amazon FireTV.
 Zie voor meer informatie [Extra fallback voor VAST- en VMAP-advertenties](../programming/tvsdk-3x-android-prog/android-3x-advertising/ad-insertion/ad-fallback/android-3x-ad-fallback.md).
 
 * **Video Heartbeats Library (VHL) bijgewerkt naar versie 1.5**
-   * Mogelijkheid om metagegevens te verzenden met het starten van de video en/of het starten van de video/advertentie/hoofdstuk als contextgegevens
+   * Mogelijkheid om metagegevens te verzenden met het starten van video en/of het starten van video/advertentie/hoofdstuk als contextgegevens
    * Minder netwerkverkeer - De hartslagen zijn gemiddeld minder en kleiner
 
 **Versie 1.4.7**
@@ -139,26 +138,26 @@ Zie voor meer informatie [Extra fallback voor VAST- en VMAP-advertenties](../pro
 * De interface PlaybackEventListener heeft een nieuwe methode genoemd onReplaceMediaPlayerItem, die u kunt gebruiken om naar een nieuwe gebeurtenis te luisteren, `ITEM_REPLACED`. Deze gebeurtenis wordt verzonden wanneer een instantie MediaPlayeritem op MediaPlayer wordt vervangen. De clienttoepassing die deze PlaybackEventListener implementeert, moet deze nieuwe methode implementeren of overschrijven.
 * AdClientFactory heeft een nieuwe functie toegevoegd aan de klasse om te registreren voor meerdere Opportunity-detectors:
 
-   ```
-   public List&lt;PlacementOpportunityDetector&gt; createOpportunityDetectors(MediaPlayerItem item);
-   
-   For example for early ad exit feature, you need two Opportunity Detectors - one for ad insertion and another for  early  exit from  `ad`.
-   
-   To override this new function create a single Opportunity Detector, and put into an array and return:
-   
-   @Override
-   
-   public List&lt;PlacementOpportunityDetector&gt; createOpportunityDetectors(MediaPlayerItem mediaPlayerItem) {
-   
-   List&lt;PlacementOpportunityDetector&gt; opportunityDetectors = new ArrayList&lt;PlacementOpportunityDetector&gt;();
-   
-   opportunityDetectors.add(createOpportunityDetector(mediaPlayerItem));
-   
-   return opportunityDetectors;
-   }
-   
-   }
-   ```
+  ```
+  public List&lt;PlacementOpportunityDetector&gt; createOpportunityDetectors(MediaPlayerItem item);
+  
+  For example for early ad exit feature, you need two Opportunity Detectors - one for ad insertion and another for  early  exit from  `ad`.
+  
+  To override this new function create a single Opportunity Detector, and put into an array and return:
+  
+  @Override
+  
+  public List&lt;PlacementOpportunityDetector&gt; createOpportunityDetectors(MediaPlayerItem mediaPlayerItem) {
+  
+  List&lt;PlacementOpportunityDetector&gt; opportunityDetectors = new ArrayList&lt;PlacementOpportunityDetector&gt;();
+  
+  opportunityDetectors.add(createOpportunityDetector(mediaPlayerItem));
+  
+  return opportunityDetectors;
+  }
+  
+  }
+  ```
 
 ## Wijzigingen voor TVSDK voor 1.4 {#tvsdk-changes}
 
@@ -199,7 +198,6 @@ return opportunityDetectors;
 >* Trage beweging op elk platform of elke versie.
 >* Live truc.
 
-
 **Versie 1.4.43**
 
 TVSDK 1.4.43 is gecertificeerd met Android-apparaten met Android 6.0.1/ 7.0 en 8.1 (Oreo).
@@ -217,7 +215,7 @@ TVSDK 1.4.43 is gecertificeerd met Android-apparaten met Android 6.0.1/ 7.0 en 8
 
 >[!NOTE]
 >
->Alle TVSDK-klanten die CRS gebruiken, worden sterk aangeraden om te upgraden naar TVSDK 1.4.39 of hoger op iOS en Android. Deze upgrade is een drop-in vervanging van de bestaande app-implementatie. Na de upgrade controleert u de creatieve URL-aanvragen van CRS in een proxyprogramma (bijvoorbeeld Charles) om te controleren of de versie in het pad versie 3.1 weerspiegelt. Bijvoorbeeld:
+>Alle TVSDK-klanten die CRS gebruiken, worden sterk aangeraden om te upgraden naar TVSDK 1.4.39 of hoger op iOS en Android. Deze upgrade is een vervanging voor de bestaande app-implementatie. Na de upgrade controleert u de creatieve URL-aanvragen van CRS in een proxyprogramma (bijvoorbeeld Charles) om te controleren of de versie in het pad versie 3.1 weerspiegelt. Bijvoorbeeld:
 >
 >`https://primetime-a.akamaihd.net/assets/3p/v3.1/222000/167/d77/ 167d775d00cbf7fd224b112sf5a4bc7d_0e34cd3ca5177fbc74d66d784bf3586d.m3u8`
 
@@ -239,7 +237,7 @@ TVSDK 1.4.43 is gecertificeerd met Android-apparaten met Android 6.0.1/ 7.0 en 8
 
 **Versie 1.4.42 (1791)**
 
-* Zendesk #33719: De Adaptieve bitsnelheid van FireTV 4k wordt langzaam geschaald. Extra ondersteuning voor ABR voor FireTV 4K-apparaten.
+* Zendesk #33719: FireTV 4k Adaptieve bitsnelheid wordt langzaam geschaald. Extra ondersteuning voor ABR voor FireTV 4K-apparaten.
 * Zendesk #33338: resetDRM wist alle gegevens van de toepassing.  Behandelde extra geval waar de uitzonderingen in verbindingen niet - TVSDK de verrichtingsrijen van TVSDK omhoog veroorzaakten.
 
 **Versie 1.4.41 (1776)**
@@ -247,17 +245,17 @@ TVSDK 1.4.43 is gecertificeerd met Android-apparaten met Android 6.0.1/ 7.0 en 8
 * Zendesk #33002 - Companion asset data van TVSDK op Fire TV. Geïmplementeerd een nieuwe klasse AdBannerAsset die de gegevens van de Bedrijf als Lijst zal terugkeren &lt;adbannerasset> en AdAsset::id is nu een tekenreeks in plaats van lang.
 * Zendesk #32821 - Android Primetime speler bevriest wanneer het de Tijdstempel van de Presentatie (PTS) voor WWE ontmoet. Dit probleem is opgelost in deze release.
 * Zendesk #33572 - VideoAnalyticsProvider en Start vastlopen. Met de juiste combinatie van VHL+Nielsen joint SDK-versie van VideoHeartbone.jar heeft u dit probleem opgelost.
-* Zendesk #33355 - Fire TV: 15 seconden terug. Geen enkele oplossing van TVSDK en de klant verifieert dit aan het eind en van derden.
+* Zendesk #33355 - Fire TV: Scrub back 15 second issue. Geen enkele oplossing van TVSDK en de klant verifieert dit aan het eind en van derden.
 
 **Versie 1.4.40 (1764)**
 
 * Zendesk #33068 - Amazon lip sync issue on new device. Het synchronisatieprobleem met de app is opgelost in deze releases.
 * Zendesk #32215 - Android TVSDK 1.4.38 Beveiligingsproblemen `[Hotlist]`. Bijgewerkt naar de nieuwste OpenSSL-1.1.0 en curl-7.5.1.
-* Zendesk #32920 - Leeg scherm binnen een Ad-einde en geen Ad-break-voltooiing. Probleem verholpen waarbij een VPAID-container in een blokkeringsstatus terecht kon komen en een probleem behandelde waarbij Facebook VPAID-advertenties vaak meerdere CDATA-blokken in één \&amp;lt retourneren;AdParameters\&amp;gt; VAST-knooppunt.
+* Zendesk #32920 - Leeg scherm binnen een Ad-einde en geen Ad-break-voltooiing. Probleem verholpen waarbij een VPAID-container in een vastgelopen status terecht kon komen en een probleem afhandelde waarbij Facebook VPAID-advertenties vaak meerdere CDATA-blokken in één \&amp;lt retourneren;AdParameters\&amp;gt; VAST-knooppunt.
 
 **Versie 1.4.39 (1744)**
 
-* Zendesk #28976 - Vergunningsaanvraag duurt meer dan een seconde. Terwijl de DRM vraag van het vergunningsverzoek die POST gebruikt uitvoert, voegt Krol extra &quot;Verwacht toe: 100-continue&quot; header. Verwijderd Koptekst &quot;Verwacht:&quot; in TVSDK.
+* Zendesk #28976 - Vergunningsaanvraag duurt meer dan een seconde. Terwijl de DRM het verzoekvraag van de Vergunning die POST gebruiken uitvoert, voegt de Kromme extra &quot;Verwacht: 100-verdergaat&quot;kopbal toe. Verwijderd Koptekst &quot;Verwacht:&quot; in TVSDK.
 * Zendesk #27707 - CSAI milieu&#39;s respecteren geen KUINE IN tellers voor vroege terugkeer of terugkeer naar inhoud. Bied ondersteuning voor meerdere opportuniteitsproducenten.
 
 **Versie 1.4.38 (1722)**
@@ -290,10 +288,10 @@ Dit probleem is opgelost door het Inet-object Posix cURL te verwijderen uit de I
 
 De OpenSSL-bibliotheek is bijgewerkt met OpenSSL versie 1.0.2j.
 
-* Zendesk #21701 - Verzend de oorspronkelijke creatieve URL voor het 1401 CRS-verzoek in plaats van de genormaliseerde URL.
+* Zendesk #21701 - Verzend de originele creatieve URL voor het 1401 CRS verzoek in plaats van genormaliseerde URL.
 Dit probleem wordt opgelost door de oorspronkelijke creatieve URL&#39;s te verzenden.
 
-* Zendesk #25023 - Video&#39;s met lange duur afspelen: video bevriezen, schermflikkeringen Dit probleem is opgelost door de maximale videoformaten voor CenturyLink-set-top box-apparaten in te stellen.
+* Zendesk #25023 - Video playback met lange duur: video bevriest, schermflikkeringen Dit probleem is opgelost door de maximale videoformaten voor CenturyLink set-top box-apparaten in te stellen.
 
 * Zendesk #27460 - De nieuwe rekening Akamai kan een POST cdn- verzoek niet behandelen.
 De code is bijgewerkt om de `cdn.auditude.com` en verzoek om GET in plaats van POST te zijn.
@@ -304,7 +302,7 @@ De code is bijgewerkt om de `cdn.auditude.com` en verzoek om GET in plaats van P
 
 * Zendesk #25779 - Beveiligingskwetsbaarheid gevonden met TVSDK Android 4.2 en lager heeft een beveiligingskwetsbaarheid wanneer JavaScript is ingeschakeld in een WebView. Het gebruik van WebView door TVSDK is uitgeschakeld voor apparaten met OS 4.2 of lager. Hierdoor wordt het gebruik van VPAID-advertenties in TVSDK op deze apparaten uitgeschakeld.
 
-* Zendesk #26890 - Issue in SCREEN state (ON/OFF) handling Ref. Speler wanneer de Adobe Video Motor (AVE) van een GESUSPENDED staat hervat, werkt DefaultMediaPlayer zijn status niet bij. Dientengevolge, blijft DefaultMediaPlayer in een GESUSPENDED staat alhoewel AVE in een SPELENDE staat is. Dit probleem is opgelost door de status DefaultMediaPlayer in te stellen op AFSPELEN bij het ontvangen van een afspeelstatus van de AVE, zelfs als de huidige status van DefaultMediaPlayer WORDT GESUSPENDEERD.
+* Zendesk #26890 - Issue in SCREEN state (ON/OFF) handling Ref. Speler wanneer de Adobe Video Engine (AVE) van een GESUSPENDED staat hervat, werkt DefaultMediaPlayer zijn status niet bij. Dientengevolge, blijft DefaultMediaPlayer in een GESUSPENDED staat alhoewel AVE in een SPELENDE staat is. Dit probleem is opgelost door de status DefaultMediaPlayer in te stellen op AFSPELEN bij het ontvangen van een afspeelstatus van de AVE, zelfs als de huidige status van DefaultMediaPlayer WORDT GESUSPENDEERD.
 
 **Versie 1.4.31 (1675)**
 
@@ -369,7 +367,7 @@ De code is bijgewerkt om de `cdn.auditude.com` en verzoek om GET in plaats van P
 
 **Versie 1.4.24 (1612)**
 
-* Zendesk #20784 - Analytics: Het uitproberen van inhoud is voltooid voor live video-overgangen Dit probleem is opgelost door een API (trackVideoComplete) toe te voegen die handmatig het voltooien van de inhoud tijdens een live/lineaire videolesessie activeert.
+* Zendesk #20784 - Analytics: Trigging content voltooit voor live video-overgangen Dit probleem is opgelost door een API (trackVideoComplete) toe te voegen die handmatig de voltooiing van de inhoud tijdens een live/lineaire video-traceringssessie activeert.
 
 * Zendesk #21977 VideoEngineTimeline crash during placeAdBreak/acceptAd operation
    * In deze uitgave zijn de volgende bibliotheken bijgewerkt:
@@ -381,7 +379,7 @@ Dit probleem is opgelost door een null-controle toe te voegen voordat advertenti
 
 * Zendesk #22313 De bitsnelheid voor STBs met Amilogic chipset gaat niet verder dan 1.2M Dit probleem is opgelost door de mogelijkheden van de media-codec vooraf te laden en de naadloze switch voor Amilogic chipset-apparaten uit te schakelen.
 
-* Zendesk #19520 Sample AES HLS-element wordt niet afgespeeld in TVSDK-spelers Dit probleem is opgelost door het verwerken van meerdere PMT-descriptors voor met AES gecodeerde HLS-streams van Sample.
+* Zendesk #19520 Sample AES HLS-element wordt niet afgespeeld in TVSDK-spelers Dit probleem is opgelost door het verwerken van meerdere PMT-descriptors voor met AES gecodeerde HLS-streams met Sample.
 
 **Versie 1.4.23 (1602)**
 
@@ -408,7 +406,7 @@ Dit probleem is opgelost door een null-controle toe te voegen voordat advertenti
 * Zendesk #19986 - OP-gedrag mislukt voor bepaalde apparaten zoals Android TV
 * Een FILE_NOT_FOUND-fout toevoegen aan de voorwaarde.
 * Wanneer de fout afkomstig is van een *bestand niet gevonden* fout, waarbij de URL en het antwoord worden gescheiden van de foutbeschrijving als het antwoord beschikbaar is.
-De logische fout die is geïntroduceerd door de IP-ondersteuning van het NVidia-schild is opgelost. Vertrouw op niet-NVidia-schermapparaten op de veilige markeringen voor de weergave, zelfs als het weergavetype onbekend is.
+De logische fout die is geïntroduceerd door de ondersteuning van het OP van het NVidia-schild is opgelost. Vertrouw op niet-NVidia-schermapparaten op de veilige markeringen voor de weergave, zelfs als het weergavetype onbekend is.
 
 * Zendesk #20549 - Handling of stale playlists. Deze kwestie werd opgelost door het interval tussen de levende duidelijke update tot de helft van de verwachte segmentduur te verminderen, als vorige halen geen nieuwe segmenten ontvangt.
 
@@ -422,7 +420,7 @@ De logische fout die is geïntroduceerd door de IP-ondersteuning van het NVidia-
 
 * Zendesk #17781 - ADB screencapture werkt niet meer Dit probleem is opgelost door de API DefaultMediaPlayer.create (Context, Boolean secureSurface) toe te voegen, die schermvastlegging toestaat.
 Als u schermvastleggingen wilt toestaan, geeft u false door voor secureSurface.
-Belangrijk: We raden u ten zeerste aan deze functie voor het vastleggen van schermen niet in te schakelen bij een productie-instelling.
+Belangrijk: we raden u ten zeerste aan deze functie voor het vastleggen van schermen niet in te schakelen bij een productie-instelling.
 
 * Zendesk #19074 - Video bevriest tijdens FWD en REW-truc De volgende problemen die optraden toen de trucPlay in de afspeelfilm kon bevriezen, zijn opgelost:
 
@@ -441,7 +439,7 @@ Dit probleem is opgelost door de TVSDK toe te staan de mislukkingsreactie als ee
 
 **Versie 1.4.20 (1546)**
 
-* Zendesk #17384 - Aanvraag van functies: ID3-metagegevens voor ondersteuning van AAC-afspeelondersteuning voor ID3-tags in AAC-media worden vanaf versie 1.4.20 ondersteund in de TVSDK voor Android.
+* Zendesk #17384 - Aanvraag van functies: ID3-metagegevensondersteuning voor AAC-afspeelondersteuning voor ID3-tags in AAC-media is vanaf versie 1.4.20 beschikbaar in de TVSDK voor Android.
 
 * Zendesk #18358 - Speler bevriest op bitsnelheidschakelaar met uit-van-synchronisatieonderbrekingen Dit probleem werd opgelost door de ABR stitching edge cases correct te behandelen.
 
@@ -460,7 +458,7 @@ RENDITION_TIMEOUT_THRESHOLD werd geplaatst aan 100ms, maar het bleek ontoereiken
 
 * Zendesk #19717 - CC-opties geven het probleem weer. Dit probleem is opgelost door de Unicode-tekenreeks correct af te handelen.
 
-* Zendesk #19910 - TIT2 ID3-tags niet gedetecteerd Dit probleem is opgelost door meer volledige ondersteuning te bieden voor ID3 v2.4-tekenreekscoderingen en door ondersteuning te bieden voor ID3 v2.3.
+* Zendesk #19910 - TIT2 ID3-tags niet gedetecteerd Dit probleem is opgelost door meer volledige ondersteuning te bieden voor ID3 v2.4-tekenreekscoderingen en door ID3 v2.3 te ondersteunen.
 
 * Zendesk #20135 - De TVSDK activeert meerdere onComplete voor VOD-inhoud.
 Dit probleem is opgelost door de gebeurtenislistener post_roll_complete op de juiste plaats toe te voegen in plaats van met het volledige hoofdlettergebruik van de gebeurtenis status wijzigen.
@@ -477,7 +475,7 @@ Om de bevriezing te bevestigen, zou de vraag aan de mediaPlayer.setCustomConfigu
 
 * Zendesk #19038 - Geen live stream op Asus Zenpad 10.
 
-   Dit probleem is opgelost door de media-codec-informatie vooraf te laden, zodat u de functie niet tijdens runtime opnieuw hoeft te starten.
+  Dit probleem is opgelost door de media-codec-informatie vooraf te laden, zodat u de functie niet tijdens runtime opnieuw hoeft te starten.
 
 * De volgende kwesties zijn hetzelfde als Zendesk #19038:
    * Zendesk #19483 - De TVSDK loopt vast op het Intel-platform.
@@ -488,7 +486,7 @@ Om de bevriezing te bevestigen, zou de vraag aan de mediaPlayer.setCustomConfigu
 * Zendesk #3324 - Rapportage voor primetime-advertenties houdt geen onderbrekingen bij wanneer er geen advertentiemedia in een VMAP aanwezig zijn.
 Wanneer een advertentie-einde leeg is, werden de gebeurtenissen voor het starten en bijhouden van een advertentie niet gepingeld. Dit probleem is opgelost door het verzenden en afbreken van startpagina&#39;s op lege advertentieafbrekingen, zoals VMAP AdBreak, met een geldig AdSource-knooppunt.
 
-* Zendesk #18229 - SetCCVisiblity(VISIBLE) wordt genegeerd na de aanroep van MediaPlayer.reset() Dit probleem is opgelost door setCCVisibility(Visibility.INVISIBLE) toe te voegen; naar de reset() functie in de MediaPlayer klasse.
+* Zendesk #18229 - SetCCVisiblity(VISIBLE) wordt genegeerd na het aanroepen van MediaPlayer.reset() Dit probleem is opgelost door setCCVisibility(Visibility.INVISIBLE) toe te voegen aan de functie reset() in de MediaPlayer-klasse.
 
 * Zendesk #18328 - Het probleem met gedropt frame op Amazon Fire TV 2nd gen-apparaten voor de inhoud met 60FPS Dit probleem is opgelost door de gecodeerde FPS toe te passen voor de besluitvorming tijdens de slaaptijd en met een beter gecodeerde FPS-voorspellingslogica.
 
@@ -507,7 +505,7 @@ Dit probleem is opgelost door de grootte van de DRM-metagegevens van het profiel
 
 **Versie 1.4.16 (1454)**
 
-* Zendesk #3875 - Tab S loopt vast tijdens het afspelen. De afhankelijkheid van OKHTTP bij Auditude voor CRS wordt omgekeerd, omdat TVSDK nu rechtstreeks httpurlconnection in plaats van curl gebruikt. Het probleem werd opgelost door uitzonderingen vrij te maken voordat een andere JNI-oproep werd gedaan.
+* Zendesk #3875 - Tab S loopt vast tijdens het afspelen. De afhankelijkheid van OKHTTP van Auditude voor CRS wordt omgekeerd, omdat TVSDK nu rechtstreeks httpurlconnection in plaats van curl gebruikt. Het probleem werd opgelost door uitzonderingen vrij te maken voordat een andere JNI-oproep werd gedaan.
 
 * Zendesk #4487 - Tracking Linear Channel of Content Het probleem is opgelost door het opnieuw initialiseren van de videohartslagtracker tijdens een lineaire streamafspeelsessie toe te staan.
 
@@ -527,7 +525,7 @@ Als u dit probleem wilt verhelpen en meerdere sleutels in manifest worden weerge
 **Versie 1.4.15 (1435)**
 
 * Zendesk #4278 - Glitches op Android stellen bovenste vakken in als Adaptieve bitsnelheid verandert (ABR).
-De oplossing was het toevoegen van ondersteuning voor naadloze ABR-switch met de nieuwste Android-mediacode.
+De oplossing was om ondersteuning toe te voegen voor naadloze ABR-switch met de nieuwste Android-mediacode.
 
 * Zendesk #17063 - Calling mediaPlayer.reset() veroorzaakt een fout bij het opnieuw instellen van de video-engine.
 De oplossing bestond erin de oorspronkelijke MediaErrorCode van VideoEngineExceptions op te nemen bij het verzenden van ErrorEvents.
@@ -566,7 +564,7 @@ Een beperking voor het uitschakelen van creatief opnieuw verpakken op fallback-a
 
 **Versie 1.4.12 (1388)**
 
-* Zendesk #2751 - CSAI en CRS | Verbeteren: Dynamische elementen in bepaalde URL&#39;s van mediabestanden verwerken.
+* Zendesk #2751 - CSAI en CRS | Verbeteren: dynamische elementen in bepaalde URL&#39;s van mediabestanden verwerken.
 Bijgewerkte Creative Repackaging Service voor het correct verwerken van advertenties met dynamische creatieve URL&#39;s.
 
 * Zendesk #3965 - Het schakelen terug naar normaal playback van trickplay resulteert in een sprong voorwaarts alvorens met playback te beginnen.
@@ -583,7 +581,7 @@ Bijgewerkte Creative Repackaging Service voor het correct verwerken van adverten
 TrickPlay is bijgewerkt om snelheden hoger dan 16x te accepteren; +/- 32, +/-64 en +/-128 zijn nu ook toegestaan.
 
 * Zendesk #4007 - Het GEOB-object interpreteren als onderdeel van de tijdlijnmetagegevens (Android en Web).
-Toegevoegde setByteArray- en getByteArray-API.
+Toegevoegde setByteArray en getByteArray API.
 
 * PTPLAY-7301 - Onmiddellijk aan begin bij het Willekeurige Punt van de Toegang.
 Instant On is bijgewerkt om een startpunt van niet nul toe te staan.
@@ -606,21 +604,21 @@ Instant On is bijgewerkt om een startpunt van niet nul toe te staan.
 * Zendesk #3299 - Onverklaarbaar gedrag bij het spelen van een truc
    * Het probleem waarbij het terugkeren naar de afspeelstatus na het stoppen van truc enkele seconden kon duren (soms 25+ seconden), is opgelost.
    * Probleem verholpen waarbij het aanroepen van een truc een tweede keer op dezelfde media wordt afgespeeld, kan ertoe leiden dat de stream op het huidige moment vastloopt.
-* Zendesk #3433 - Android en Flash - Problemen met ondertitels
+* Zendesk #3433 - Android and Flash - Problemen met ondertitels
 
-GetLine voor WebVTT heeft geen respect voor een &lt;cr>&lt;lf> aangepaste lengte voor een pakje; het laatste bijschrift kan tekens uit vorige bijschriften bevatten.
+GetLine voor WebVTT heeft geen respect voor een &lt;cr>&lt;lf> aangepaste lengte voor een pakket; het laatste bijschrift kan tekens uit vorige bijschriften bevatten.
 
 * PTPLAY-6243 - Verbeter verwijzingsspeler om te vangen zuivert informatie
 
 De Android-voorbeeldspelers zijn verbeterd en hebben nu een optie waarmee u foutopsporingslogboeken kunt inschakelen en de resultaten via e-mail kunt verzenden. Deze optie vindt u onder het menu Logboek in de referentiespeler.
 
-**Versie 1.4.9 (1332)**
+**Versie 1.4.9 (132)**
 
 * Zendesk #2649 - Buffer Complete treedt op voordat de eerste buffer vol is
 
 Na een zoekactie is het mogelijk dat de videoengine de status PLAYING instelt voordat de videopresentator klaar is om te worden afgespeeld. Vindt plaats wanneer de bufferstatus hoog is voordat wordt gezocht. Oplossen door de video-engine een melding te geven van een lage bufferstatus. Bij een lage bufferstatus van de video-engine leidt het aanroepen van Play tot een statuswijziging in BUFFERING in plaats van PLAYING. Het afspelen wordt hervat wanneer de status verandert in AFSPELEN.
 
-* Zendesk #2846 - Aanvraag tot verbetering: Verstrek capaciteit om verschillend user-agent koord voor vraag te plaatsen die door de bibliotheek van de Audittegraad wordt gemaakt
+* Zendesk #2846 - het verzoek van de Verbetering: Verstrek capaciteit om verschillende user-agent koord voor vraag te plaatsen die door de bibliotheek van de Auditude wordt gemaakt
 
 Er is een nieuwe API toegevoegd om de gebruikersagent in te stellen voor gerelateerde aanroepen, zoals auditudeSettings.setUserAgent(&quot;user/agent&quot;). Als geen gebruikersagent wordt geplaatst, zal het gebrek worden gebruikt. Dit beïnvloedt slechts de gebruikersagent voor verwante vraag, is de gebruikersagent voor media vraag onveranderd die &quot;Adobe Primetime&quot;+ is&lt;default useragent=&quot;&quot;>.
 
@@ -631,7 +629,7 @@ Er is een nieuwe API toegevoegd om de gebruikersagent in te stellen voor gerelat
 * Zendesk #3168 - WebVTT ondertitels slechts getoond voor eerste 10 sec.
 * Zendesk #3193 - Verzoek om een API voor profielwijziging in TVSDK, PlaybackEventListener.onProfileChanged() is toegevoegd.
 
-**Versie 1.4.7 (1311)**
+**Versie 1.4.7 (131)**
 
 * Zendesk #2197 - Tracking and errors. Toegevoegde melding voor element kan manifest niet laden
 * Zendesk #2575 - PSDK negeert MARK aangepaste in-stream advertentie vóór video
@@ -640,7 +638,7 @@ Er is een nieuwe API toegevoegd om de gebruikersagent in te stellen voor gerelat
 * Zendesk #2805 - Speler crashte bij Begin van afspelen, zelfde moeilijke situatie zoals Zendesk #2719
 * Zendesk #2817 - Android-speler - De speler loopt soms vast en stopt met afspelen, gecorrigeerd door het uitbreiden van de decodebuffers van 2,0 tot 3,0 seconden
 * Zendesk #2839 - Does Adobe Primetime PSDK support ARMv8 chipsets?, added fix for crash found on Galaxy S6.
-* Zendesk #2885 - Afspelen van Auditude Crashing, zelfde probleem als Zendesk #2719
+* Zendesk #2885 - Auditude crasht playback, zelfde moeilijke situatie zoals Zendesk #2719
 * Zendesk #2895 - Live HLS mislukt na 10 minuten afspelen
 * Zendesk #2925 - Terugkoppeling betreffende de bouwstijl van Android (1.4.5), op bepaalde apparaten wanneer wij het pakket aan de inputrij in rij plaatsen, als PTS negatief is, gaat de decoder in een vreemde staat dat wij altijd een negatieve outputPTS voor toekomstige pakketten krijgen. Met de correctie wordt de invoer-PTS op nul ingesteld als dit probleem wordt voorkomen.
 * PTPLAY-4645 - Schakel RC4 cipher ondersteuning in openssl uit. Er zijn bekende explosies voor RC4. Dit betekent dat als wordt geprobeerd om met een server te verbinden die slechts RC4 steunt, het zal ontbreken.
@@ -648,7 +646,7 @@ Er is een nieuwe API toegevoegd om de gebruikersagent in te stellen voor gerelat
 **Versie 1.4.6 (1282)**
 
 * Zendesk #2192 - Bitsnelheid vermindert niet altijd in slechte netwerkvoorwaarden, die door snelle schakelaarimplementatie te verwijderen worden bevestigd.
-* Zendesk #2631 - Arabische ondertitels op Android: Tekst op meerdere regels wordt afgekapt weergegeven. De tekst wordt gecorrigeerd door de tekengrootte voor Arabische lettertypen aan te passen.
+* Zendesk #2631 - Arabische ondertitels op Android: Tekst op meerdere regels wordt afgekapt, aangepast door de tekengrootte voor Arabische lettertypen aan te passen.
 * Zendesk #2844 - Het bufferen op Nota 4 en de downloadtijd van het Fragment is niet nauwkeurig.
 
 Deze kwestie werd opgelost door latentie tussen videosegmentdownloads in bandbreedteberekening toe te voegen en het hebben van de logica van de downloadtijdberekening de volledige tijd van de verzoekcyclus gebruiken.
@@ -662,21 +660,21 @@ Deze kwestie werd opgelost door latentie tussen videosegmentdownloads in bandbre
 * Zendesk #1757 - Alleen audio afgespeeld of speler crasht voor een bepaald videobitsnelheidprofiel, Nexus 4 en Nexus 7 zijn hersteld
 * Zendesk #2072 - TimedMetadata for AdEvent bevat niet de volledige URL alleen &quot;http&quot;
 * Zendesk #2192 - Bitsnelheid is niet altijd lager in slechte netwerkomstandigheden
-* Zendesk #2256 - Toegang tot Master afspeellijst, bijgewerkte PSDK om gebeurtenissen timedMetadata voor geabonneerde markeringen op master playlist te verzenden.
+* Zendesk #2256 - Toegang tot stramienafspeellijst, bijgewerkte PSDK om gebeurtenissen met tijdedMetadata te verzenden voor geabonneerde tags op de hoofdafspeellijst.
 * Zendesk #2269 - Twee verschillende ondertitelingstalen verschijnen op het scherm tezelfdertijd met WebVTT
 * Zendesk #2417 - Speler die ondertitels probeert te downloaden alvorens playbackbegin, WebVTT gebruikte de verkeerde variabele van het segmentaantal voor segmentaantalaanpassing. Er zou alleen een fout optreden voor media waarvoor de segmentindexen nul waren.
 * Zendesk #2470 - PSDK keert niet terug uit de SUSPENDED status wanneer de bitsnelheidverandering zich voordoet na de suspensie. In een speciale situatie wanneer slim zoeken wordt aangeroepen door RestoreGPUResource (de terugzetspeler wordt uitgeschakeld) en streamswitch die daarvoor wordt gedetecteerd, kan Smart seek niet voltooien en resulteren in constante buffering.
 * Zendesk #2451 - Closed captioning &#39;bottom inset&#39;, added &#39;bottomInset&#39; parameter to caption code
 * Zendesk #2480 - het onbruikbaar maken van HTTP 302 herdirect optimalisering, Toegevoegde steun voor het plaatsen van useRedirectedUrl bezit
 * Zendesk #2486 - Derde partijenbakens
-* Zendesk #2547 - Arabische ondertitels: Tekst moet rechts worden uitgelijnd
+* Zendesk #2547 - Arabische ondertitels: De tekst moet rechts worden uitgelijnd
 
 **Versie 1.4.4 (195)**
 
 * Zendesk #1158 - Het afspelen mislukt bij Huawei Valiant (Y301A1)
 * Zendesk #1709 - Onjuiste mediagrootte en uitgerekte video
 * Zendesk #1757 - Alleen audio die wordt afgespeeld nadat tussen streams met identieke spa/pps-gegevens is geschakeld
-* Zendesk #2095 - HTTP 307 status (omleiding) zorgt ervoor dat de Adobe speler het afspelen stopt
+* Zendesk #2095 - HTTP 307 status (omleiding) zorgt ervoor dat de speler van de Adobe het afspelen stopt
 * Zendesk #2126 - Ontbrekende gebeurtenis TimedMetaData voor laatste ADEVENT, Geabonneerde markeringen die bestaan nadat het laatste segment niet aan PSDK van AVE werden gemeld
 * Zendesk #2227 - Lockups in VideoEngine nativeReset en nativePause
 * Bug #3921755 - OpenSSL-bibliotheekupdate naar versie 1.0.1L
@@ -700,7 +698,7 @@ Deze kwestie werd opgelost door latentie tussen videosegmentdownloads in bandbre
 
 * Zendesk #1951 - Lockup in VideoEngine.nativeReset() op 4.0.x-apparaten
 * Zendesk #2064 - Native Crash SIGSEGV op specifieke Android-apparaten op basis van intel
-* Zendesk #2075 - Lockup in VideoEngine.nativeReleaseGPUResource op 4.0.x-apparaten Opmerking: Deze build is &#42;&#42;&#42;vereist&#42;&#42;&#42; voor ondersteuning van Android 5.0 (Lollipop)
+* Zendesk #2075 - Vergrendeling in VideoEngine.nativeReleaseGPUResource op 4.0.x-apparaten Opmerking: deze build is &#42;&#42;&#42;vereist&#42;&#42;&#42; voor ondersteuning van Android 5.0 (Lollipop)
 * Zendesk #1513 - Ondersteuning voor Android Lollipop
 * Zendesk #1709 - Onjuiste mediagrootte en uitgerekte video
 * Zendesk #1871 - WebVTT-bijschriften verdwijnen af en toe en verschijnen opnieuw wanneer een livestream met WebVTT-bijschriften wordt weergegeven
@@ -779,7 +777,7 @@ De Media Player verzendt MediaPlayerState.Complete onjuist tijdens de terugspoel
 * PTPLAY-2541 - COMPONENT_CREATION_FAILURE wordt soms gezien na verscheidene schakelaars aan/van de afwisselende stroom in stroomonderbrekingen
 * Bug #3726865 - Als een LBA-stream met multibitsnelheid vanuit een alleen-audiostream start, wordt de video niet weergegeven als naar een audio- of videostream wordt geschakeld. Vanaf een audio- of videostream wordt dit probleem niet weergegeven en kan worden geschakeld tussen audio- en audio- of videostreams
 * Bug #3760144 - De resolutie kan veranderen of lijkt te bewegen wanneer een stroom wordt gepauzeerd op sommige apparaten zoals Kindle Fire 7 en Samsung Galaxy Nexus. Enkel waarneembaar onder nauwgezet toezicht
-* Bug #3761170 - seekToLocal in Live met advertenties kan niet terugzoeken in advertentie-inhoud; het is aan te raden de huidigeTime-API&#39;s te gebruiken voor Live streams
+* Bug #3761170 - seekToLocal in Live met advertenties kan niet terugzoeken in ad-inhoud. U kunt de huidigeTime-API&#39;s het beste gebruiken voor live streams
 * Bug #3763370 - Live streams met advertenties laten soms twee advertentiemarkeringen bij elkaar zien wanneer er slechts één zou moeten zijn. Deze advertentiemarkeringen vertegenwoordigen dezelfde advertentie en slechts één zal spelen
 * Bug #3763373 - De advertentiemarkering kan kort verdwijnen wanneer u voorbij een advertentie in VOD-streams zoekt. De advertentiemarkering wordt hersteld en er is geen ander negatief effect op de tijdlijn
 * Sommige apparaten kennen afspeelproblemen. Zie voor meer informatie [Bekende apparaatproblemen in 1.4](https://helpx.adobe.com/primetime/release-notes/tvsdk-1-4-android.html#Knownissuesin14).
@@ -793,17 +791,17 @@ De Media Player verzendt MediaPlayerState.Complete onjuist tijdens de terugspoel
 | HTC Desire (anders dan HTC Desire HD) | QSD8250 | Kan video niet afspelen. Returns VIDEO_PROFILE_NOT_SUPPORTED error. | Desire biedt geen juiste HW-decoder. Het geeft Stagefright&#39;s SW decoder. | Start het apparaat opnieuw. |
 | HTC EVO 4G | QSD8650 | Geen HW-decoder. | Qualcomm heeft geen HW-decoder. | Upgrade naar Android 4.x. |
 | Kindle FireSystem versie 6.0 | TI OMAP4 | Hiermee worden HLS-streams niet afgespeeld. Video op AIR werkt niet. |  | Upgrade naar systeemversie 6.3. |
-| Kindle Fire HD | TI OMAP4 | Kan een status activeren waarin video niet kan worden afgespeeld. Retourneert fouten VIDEO_PROFILE_NOT_SUPPORTED en UNRECOVERABLE_ERROR. | De HW-decoder wordt onherstelbaar wanneer de app de HW-decoder niet volledig uitschakelt, bijvoorbeeld na een crash. gebeurt ook op native apps op het apparaat. | Start het apparaat opnieuw. |
+| Kindle Fire HD | TI OMAP4 | Kan een status activeren waarin video niet kan worden afgespeeld. Retourneert fouten VIDEO_PROFILE_NOT_SUPPORTED en UNRECOVERABLE_ERROR. | De HW-decoder wordt onherstelbaar wanneer de toepassing de HW-decoder niet volledig uitschakelt, bijvoorbeeld na een crash. Dit gebeurt ook op native apps op het apparaat. | Start het apparaat opnieuw. |
 | Kindle Fire HD 8.9 | Snapdragon 800 | AVE crasht na meerdere ABR-switches. |  |  |
 | Motorola Atrix | Tegra2 | Algemene prestatieproblemen met AVE in tegenstelling tot AIR. Audio/video wordt niet gesynchroniseerd en het afspelen van video loopt vast na het afspelen tussen 9 en 15 minuten. Crashes. | Mogelijk gerelateerd aan openGLES die we op AIR inschakelen. Wordt onderzocht. |  |
 | Nexus 7 (tweede gen) | S4Pro APQ8064 (Qualcomm) | Het apparaat loopt vast wanneer een film langer dan 30 minuten wordt gepauzeerd. | Apparaatprobleem dat is gemeld aan Google. | De toepassing moet een time-out toepassen om geen lange pauzestatus toe te staan. |
 | Nexus S (GB) | Vogelvogel | Kan geen video afspelen met HW-decoder. | Er is geen op Stagefright gebaseerde HW-decoder in Nexus S, dus voor Android 2.3 gebruiken we een SW-decoder. | Upgrade naar ICS. |
 | Nexus S (ICS) | Vogelvogel | Soms flikkert video. | Onjuiste gegevens kunnen ertoe leiden dat de decoder in een slechte toestand raakt. | Start het apparaat opnieuw. |
-| Nook-tabletAndroid-besturingssysteem: 2,3 | TI OMAP 4 | Video wordt niet afgespeeld en de app loopt vast. | StageFright wordt instabiel nadat de app een paar keer is uitgevoerd. Vraag aan mediaplayer::QueryCodecs hangt. | Start het apparaat opnieuw om de status te herstellen. |
+| Nook-tabletAndroid-besturingssysteem: 2.3 | TI OMAP 4 | Video wordt niet afgespeeld en de app loopt vast. | StageFright wordt instabiel nadat de app een paar keer is uitgevoerd. Vraag aan mediaplayer::QueryCodecs hangt. | Start het apparaat opnieuw om de status te herstellen. |
 | Samsung Galaxy ACE | Qualcomm MSM7227 | Kan SampleMediaPlayer-app niet installeren. | Gebruikt ARM v6 in plaats van de gemeenschappelijkere ARM v7 chipset. FP/AIR biedt geen ondersteuning voor dit apparaat. |  |
-| Samsung Galaxy ACE2Android OS: 2.3.6. | NovaThor U8500 | Kan video niet afspelen. | Deze chipset is een onbekende decoder voor Android pre-ICS in AVE. |  |
+| Samsung Galaxy ACE2Android OS: 2.3.6 | NovaThor U8500 | Kan video niet afspelen. | Deze chipset is een onbekende decoder voor Android pre-ICS in AVE. |  |
 | Samsung Galaxy S2 (GT-I9100) | Exynos | De videoprestaties zijn niet tot op gelijke voor dit apparaat. | De HW-decoder retourneert gedecodeerde frames met de verkeerde PTS. Het lijkt erop dat de decoder de decoderingstijd in plaats van de presentatietijd gebruikt. |  |
-| Samsung Galaxy S2 GAndroid-besturingssysteem: 2.3.6. | TI OMAP4 | Crashes tijdens het starten van de video. |  | Upgrade naar Android 2.3.7 of 4.x. |
+| Samsung Galaxy S2 GAndroid-besturingssysteem: 2.3.6 | TI OMAP4 | Crashes tijdens het starten van de video. |  | Upgrade naar Android 2.3.7 of 4.x. |
 | Samsung Galaxy S3 (I747) | Qualcomm MSM8960 | Soms loopt de video vast en wordt alleen audio afgespeeld en reageert deze niet meer. |  |  |
 | Samsung Galaxy S3 I747M | SAMSUNG_M2ATT | Video bevriest. | Onderzoek. |  |
 | Samsung Galaxy Tab 1 v10.1 | Tegra 2 | De overgang MBR zou tot drie seconden kunnen vergen. | Als moeilijke situatie voor MBR crashes, beginnen wij decoder voor elke stroomschakelaar opnieuw, die tot drie seconden kan vergen. |  |

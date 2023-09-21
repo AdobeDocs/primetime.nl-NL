@@ -2,8 +2,7 @@
 title: Verbeterde licentietakken
 description: Verbeterde licentietakken
 copied-description: true
-exl-id: 269e7866-fe43-45a8-84d8-c51e4fc95f77
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '263'
 ht-degree: 0%
@@ -20,6 +19,6 @@ Als u uitgebreide licentietekeningen wilt inschakelen, moet u een hoofdcoderings
 
 >[!NOTE]
 >
->Verbeterde licentieketting wordt ondersteund door Primetime DRM-clients versie 3.0 of hoger. Als een oudere client een licentie aanvraagt voor inhoud die ondersteuning biedt voor de uitgebreide licentieketen, kan de licentieserver nog steeds een licentie aan deze client uitgeven met behulp van de licentieketen die wordt ondersteund door Primetime DRM 2.0.
+>Verbeterde licentieketting wordt ondersteund door Primetime DRM-clients versie 3.0 of hoger. Als een oudere client een licentie aanvraagt voor inhoud die ondersteuning biedt voor de uitgebreide licentieketting, kan de licentieserver nog steeds een licentie aan deze client uitgeven met behulp van de licentieketen die wordt ondersteund door Primetime DRM 2.0.
 
-Voorbeeld van gebruik: Met deze optie kunt u gekoppelde licenties bijwerken door één hoofdlicentie te downloaden. Implementeer bijvoorbeeld abonnementsmodellen waarbij inhoud kan worden afgespeeld zolang de gebruiker het abonnement elke maand vernieuwt. Het voordeel van deze aanpak is dat gebruikers slechts één licentie hoeven aan te schaffen om al hun abonnementslicenties bij te werken.
+Voorbeeld: gebruik deze optie om gekoppelde licenties bij te werken door één hoofdlicentie te downloaden. Implementeer bijvoorbeeld abonnementsmodellen waarbij inhoud kan worden afgespeeld zolang de gebruiker het abonnement elke maand vernieuwt. Het voordeel van deze aanpak is dat gebruikers slechts één licentie hoeven aan te schaffen om al hun abonnementslicenties bij te werken.

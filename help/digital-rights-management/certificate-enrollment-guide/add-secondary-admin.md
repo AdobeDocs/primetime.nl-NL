@@ -2,8 +2,7 @@
 title: Een secundaire beheerder maken
 description: Een secundaire beheerder maken
 copied-description: true
-exl-id: c3c58361-d173-425c-b59d-ab4427640cdf
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '355'
 ht-degree: 0%
@@ -19,21 +18,21 @@ De accountbeheerder kan een secundaire beheerder maken. Er kan slechts één sec
 
    * **[!UICONTROL Add user]**.
 
-      Als de werknemer een rekening van de Adobe heeft, ga het e-mailadres in. Klikken **[!UICONTROL Add]** en doorgaan.
+     Als de werknemer een rekening van de Adobe heeft, ga het e-mailadres in. Klikken **[!UICONTROL Add]** en doorgaan.
 
-   * **[!UICONTROL Invite user]** Als de werknemer geen rekening van de Adobe heeft, nodig hen uit om één tot stand te brengen. Voer het e-mailadres en de naam van de medewerker in en klik op **[!UICONTROL Send an invitation]**. De site verzendt een e-mailuitnodiging naar de genodigde. Het e-mailbericht bevat een koppeling naar adobe.com waar de genodigde een account kan maken. De genodigde moet het e-mailadres gebruiken waarnaar de uitnodiging is verzonden.
+   * **[!UICONTROL Invite user]** Als de werknemer geen rekening van de Adobe heeft, nodig hen uit om één tot stand te brengen. Voer het e-mailadres en de naam van de medewerker in en klik op **[!UICONTROL Send an invitation]**. De site verzendt een e-mailuitnodiging naar de genodigde. Het e-mailbericht bevat een koppeling naar adobe.com. De genodigde moet het e-mailadres gebruiken waarnaar de uitnodiging is verzonden.
 
-      >[!NOTE]
-      >
-      >De beheerder ontvangt geen melding wanneer een gebruiker een account heeft gemaakt. Controleer de **[!UICONTROL User accounts]** op de site Certificaat invoeren om te controleren of een genodigde een account heeft gemaakt.
+     >[!NOTE]
+     >
+     >De beheerder ontvangt geen melding wanneer een gebruiker een account heeft gemaakt. Controleer de **[!UICONTROL User accounts]** op de site Certificaat invoeren om te controleren of een genodigde een account heeft gemaakt.
 
 1. Als u een gebruiker hebt toegevoegd, wordt het scherm met de rolsectie in het dialoogvenster **[!UICONTROL User accounts]** wordt geopend. Ga als volgt te werk:
 
-   1. Bevestig dat de gebruikersgegevens juist zijn.
+   1. Bevestig dat de gegevens van de gebruiker juist zijn.
    1. Ga het aantal van de bedrijfstelefoon en uitdagingsuitdrukking in.
 
       De gebruiker moet deze uitdrukking weten om zijn rekening te verifiëren.
-   1. Selecteer bij Type gebruiker de optie **[!UICONTROL Administrator]**.
+   1. Selecteer bij Type gebruiker **[!UICONTROL Administrator]**.
 
       >[!NOTE]
       >
@@ -46,18 +45,18 @@ De accountbeheerder kan een secundaire beheerder maken. Er kan slechts één sec
 1. Voer de volgende handelingen uit als u een gebruiker hebt uitgenodigd:
 
    1. Meld u aan bij de site voor certificaatinschrijving.
-   1. Selecteer **[!UICONTROL User accounts]** tab.
-   1. Zoek de gebruiker in het dialoogvenster **[!UICONTROL Invitations Sent]** en klik op **[!UICONTROL Authorize]**.
+   1. Selecteer de **[!UICONTROL User accounts]** tab.
+   1. Zoek de gebruiker in het dialoogvenster **[!UICONTROL Invitations Sent]** sectie en klik op **[!UICONTROL Authorize]**.
 
       >[!NOTE]
       >
-      >Als er geen koppeling Autoriseren in de kolom Acties is, heeft de genodigde nog geen account Adobe gemaakt.
+      >Als er geen koppeling Autoriseren in de kolom Acties is, heeft de genodigde nog geen account voor Adoben gemaakt.
 
-   1. Bevestig dat de gebruikersgegevens juist zijn.
+   1. Bevestig dat de gegevens van de gebruiker juist zijn.
    1. Ga het aantal van de bedrijfstelefoon en uitdagingsuitdrukking in.
 
       De gebruiker moet deze uitdrukking weten om zijn rekening te verifiëren.
-   1. Selecteer bij Type gebruiker de optie **[!UICONTROL Administrator]**.
+   1. Selecteer bij Type gebruiker **[!UICONTROL Administrator]**.
 
       >[!NOTE]
       >

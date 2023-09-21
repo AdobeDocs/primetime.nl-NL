@@ -1,8 +1,7 @@
 ---
 description: Deze lijst bewijst gedetailleerde informatie over WARN type berichten.
 title: WAARSCHUWINGSmeldingscodes
-exl-id: e787fad5-fbdc-416d-b03d-8c84f4884c5a
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '407'
 ht-degree: 2%
@@ -43,7 +42,7 @@ De meeste waarschuwingen bevatten relevante metagegevens, bijvoorbeeld de URL va
    <td colname="5"> <p>Een afspeelbewerking is mislukt, maar het afspelen kan worden voortgezet. </p> </td> 
   </tr> 
   <tr rowsep="1"> 
-   <td colname="1"><b>Oplossen van advertentie</b> </td> 
+   <td colname="1"><b>Oplossen</b> </td> 
    <td colname="2"> </td> 
    <td colname="3"> </td> 
    <td colname="4"> </td> 

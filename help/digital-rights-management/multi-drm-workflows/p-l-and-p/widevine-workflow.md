@@ -1,8 +1,7 @@
 ---
 description: Deze workflow voor multi-DRM begeleidt u door het instellen, verpakken, licentiëren en afspelen van DASH-inhoud die met Windows en PlayReady is gecodeerd.
 title: MultiDRM-workflow voor Windows en PlayReady
-exl-id: 97adfa69-52ef-470b-903a-eff1f075b7be
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '354'
 ht-degree: 0%
@@ -43,7 +42,7 @@ De inhoud van het streepje bestaat uit hoofdmanifest, geschreven in xml, dat aan
 </MPD>
 ```
 
-Hieronder ziet u een voorbeeld-manifest waarop Gemeenschappelijke codering is toegepast. De Windows-elementen voor inhoudsbeveiliging XML (de `<ContentProtection>` blokken) in het manifest bevatten een base64 gecodeerde psh (de Specifieke Kopbal van het Systeem van de Bescherming) doos. Het vak PSH bevat de gegevens die nodig zijn voor het initialiseren van de ontsleuteling van inhoud. Deze gegevens worden ook ingesloten in de video-/audio-inhoud waarnaar het manifest verwijst. DASH-inhoud kan meerdere elementen ter bescherming van inhoud bevatten, bijvoorbeeld 1 voor PlayReady en 1 voor Windows.
+Hieronder ziet u een voorbeeld-manifest waarop Gemeenschappelijke codering is toegepast. De Windows-elementen voor inhoudsbeveiliging XML (de `<ContentProtection>` blokken) in het manifest bevatten een base64 gecodeerde psh (System Specific Header) box. Het vak PSH bevat de gegevens die nodig zijn voor het initialiseren van de ontsleuteling van inhoud. Deze gegevens worden ook ingesloten in de video-/audio-inhoud waarnaar het manifest verwijst. DASH-inhoud kan meerdere elementen ter bescherming van inhoud bevatten, bijvoorbeeld 1 voor PlayReady en 1 voor Windows.
 
 ```
 <?xml version="1.0" ?>

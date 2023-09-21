@@ -1,8 +1,7 @@
 ---
 title: De token-verificator voor media integreren
 description: De token-verificator voor media integreren
-exl-id: 1688889a-2e30-4d66-96ff-1ddf4b287f68
-source-git-commit: bfc3ba55c99daba561255760baf273b6538a3c6e
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '916'
 ht-degree: 0%
@@ -15,7 +14,7 @@ ht-degree: 0%
 >
 >De inhoud op deze pagina wordt alleen ter informatie verstrekt. Voor het gebruik van deze API is een huidige licentie van Adobe vereist. Ongeautoriseerd gebruik is niet toegestaan.
 
-## Over de token-verificator voor media {#about-media-token-verifier}
+## Informatie over de token-verificator voor media {#about-media-token-verifier}
 
 Wanneer de vergunning slaagt, leidt de authentificatie van Adobe Primetime tot een teken van de vergunning (AuthZ) voor lange tijd.  Het token AuthZ wordt doorgegeven aan de client-kant of opgeslagen op de server, afhankelijk van het platform van de client.  (Zie [Tokens begrijpen](/help/authentication/programmer-overview.md#understanding-tokens) voor hoe tokens op verschillende cliëntsystemen, samen met andere details worden opgeslagen.)
 
@@ -23,10 +22,10 @@ Wanneer de vergunning slaagt, leidt de authentificatie van Adobe Primetime tot e
 Een teken AuthZ machtigt de gebruiker van de plaats om een bepaalde middel te bekijken.  Het heeft typisch tijd-aan-levende (TTL) van 6 tot 24 uren, waarna het teken verloopt. **Voor daadwerkelijke het bekijken toegang, gebruikt de authentificatie Primetime het teken AuthZ om een kort-levend media token te produceren dat u krijgt en tot uw media server over gaat**. Deze kortstondige mediatokens hebben een zeer korte TTL (doorgaans een paar minuten).
 
 
-In Integraties AccessEnabler, verkrijgt u het korte media teken via `setToken()` callback. Voor Clientless API-integratie krijgt u het kortstondige mediatoken met de `<SP_FQDN>/api/v1/tokens/media` API-aanroep. Het token is een tekenreeks die in duidelijke tekst wordt verzonden en die door Adobe is ondertekend en die tokenbeveiliging gebruikt op basis van PKI (Public Key Infrastructure). Met deze op PKI-Gebaseerde bescherming, wordt het teken ondertekend gebruikend een asymmetrische sleutel, die aan Adobe door een certificatieautoriteit wordt uitgegeven.
+In Integraties AccessEnabler, verkrijgt u het korte media teken via `setToken()` callback. Voor Clientless API-integratie krijgt u het kortstondige mediatoken met de `<SP_FQDN>/api/v1/tokens/media` API-aanroep. Het token is een tekenreeks die in duidelijke tekst wordt verzonden en die door de Adobe is ondertekend en die tokenbeveiliging gebruikt op basis van PKI (Public Key Infrastructure). Met deze op PKI-Gebaseerde bescherming, wordt het teken ondertekend gebruikend een asymmetrische sleutel, die aan Adobe door een certificatieautoriteit wordt uitgegeven.
 
 
-Omdat er aan de clientzijde geen validatie voor het token is, kan een kwaadwillende gebruiker gereedschappen gebruiken om nep te injecteren `setToken()` oproepen. Daarom **kan** zich er enkel op baseren dat `setToken()` is geactiveerd wanneer wordt overwogen of een gebruiker al dan niet geautoriseerd is. U moet bevestigen dat het kort-levende teken zelf wettig is. Het gereedschap voor het uitvoeren van de validatie is de Media Token Verifier Library.
+Omdat er aan de clientzijde geen validatie voor het token is, kan een kwaadwillende gebruiker gereedschappen gebruiken om nep te injecteren `setToken()` oproepen. Daarom moet u **kan** zich er enkel op baseren dat `setToken()` is geactiveerd wanneer wordt overwogen of een gebruiker al dan niet geautoriseerd is. U moet bevestigen dat het kort-levende teken zelf wettig is. Het gereedschap voor het uitvoeren van de validatie is de Media Token Verifier Library.
 
 
 >[!TIP]
@@ -46,8 +45,8 @@ De [Media Token Verifier Library](https://adobeprimetime.zendesk.com/auth/v2/log
 De bibliotheek Media Token Verifier bevindt zich in het Java-archief `mediatoken-verifier-VERSION.jar`. De bibliotheek definieert:
 
 * Een API voor tokenverificatie (`ITokenVerifier` interface), met JavaDoc-documentatie
-* De openbare sleutel van Adobe die wordt gebruikt om te verifiëren dat het teken inderdaad uit Adobe komt
-* Een referentie-implementatie (`com.adobe.entitlement.test.EntitlementVerifierTest.java`) die laat zien hoe u de API Verifier gebruikt en hoe u de openbare sleutel Adobe in de bibliotheek gebruikt om de oorsprong ervan te controleren
+* De openbare sleutel van de Adobe die wordt gebruikt om te verifiëren dat het token inderdaad afkomstig is van Adobe
+* Een referentie-implementatie (`com.adobe.entitlement.test.EntitlementVerifierTest.java`) die laat zien hoe u de API Verifier kunt gebruiken en hoe u de openbare sleutel voor de Adobe in de bibliotheek kunt gebruiken om de oorsprong ervan te controleren
 
 
 Het archief bevat alle afhankelijkheden en certificaatsleutelarchieven. Het standaardwachtwoord voor het inbegrepen certificaatsleutelarchief is &quot;123456&quot;.
@@ -59,7 +58,7 @@ Het archief bevat alle afhankelijkheden en certificaatsleutelarchieven. Het stan
 **De verificatiebibliotheek moet de enige manier zijn om de tokeninhoud te analyseren. Programmeurs moeten de token niet parseren en de gegevens zelf extraheren, omdat de token-indeling niet gegarandeerd is en in de toekomst kan worden gewijzigd.** Alleen de API voor verificatie werkt naar behoren. Het rechtstreeks parseren van de tekenreeks werkt mogelijk tijdelijk, maar dit leidt in de toekomst tot problemen wanneer de opmaak kan veranderen. De API van de Verifier wint informatie van het teken terug, zoals:
 
 * Is de token geldig (de `isValid()` methode)?
-* De bron-id is gekoppeld aan het token (de `getResourceID()` methode); dit kan worden vergeleken met (en moet overeenkomen) de andere parameter van het `setToken()` functie callback. Als het niet aanpast, zou dit op frauduleus gedrag kunnen wijzen.
+* De bron-id is gekoppeld aan het token (de `getResourceID()` methode); dit kan worden vergeleken met (en moet overeenkomen) de andere parameter van de `setToken()` functie callback. Als het niet aanpast, zou dit op frauduleus gedrag kunnen wijzen.
 * De tijd waarop het token is uitgegeven (`getTimeIssued()` methode).
 * De TTL (`getTimeToLive()` methode).
 * Een geanonimiseerde authentificatie GUID die van MVPD wordt ontvangen (`getUserSessionGUID()` methode).
@@ -80,7 +79,7 @@ De `isValid()` Deze methode retourneert een van de volgende statuswaarden:
 | VALID_TOKEN | Alle validaties voltooid |
 |--------------------|-----------------------------------------|
 | INVALID_TOKEN_FORMAT | Token-indeling is ongeldig |
-| INVALID_SIGNATURE | Verificatie van token is niet gevalideerd |
+| INVALID_SIGNATURE | De tokenauthenticiteit kan niet worden gevalideerd |
 | TOKEN_EXPIRED | Token-TTL is niet geldig |
 | INVALID_RESOURCE_ID | Token is niet geldig voor een bepaalde resource |
 | ERROR_UNKNOWN | Token is nog niet gevalideerd |
@@ -96,7 +95,7 @@ De extra methodes verlenen specifieke toegang tot middelidentiteitskaart, de uit
 
 ## Voorbeeldcode {#sample-code}
 
-Het archief van de Verificator van Media Token bevat een verwijzingsimplementatie (`com.adobe.entitlement.test.EntitlementVerifierTest.java`) en een voorbeeld van het aanroepen van de API met de testklasse. Dit monster (`com.adobe.entitlement.text.EntitlementVerifierTest.java`) illustreert de integratie van de tokenverificatiebibliotheek in een mediaserver.
+Het archief van de Verificator van Media Token bevat een verwijzingsimplementatie (`com.adobe.entitlement.test.EntitlementVerifierTest.java`) en een voorbeeld van het aanroepen van de API met de testklasse. Dit monster (`com.adobe.entitlement.text.EntitlementVerifierTest.java`) illustreert de integratie van de symbolische controlebibliotheek in een media server.
 
 
 ```Java

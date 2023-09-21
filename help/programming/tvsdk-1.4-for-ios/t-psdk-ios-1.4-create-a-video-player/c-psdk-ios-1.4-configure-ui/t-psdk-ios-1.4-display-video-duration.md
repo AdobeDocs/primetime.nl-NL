@@ -1,8 +1,7 @@
 ---
 description: U kunt de duur van de actieve inhoud weergeven.
 title: De duur van de video weergeven
-exl-id: 4e31d784-4d16-470b-8317-11be32a55c2f
-source-git-commit: 0019a95fa9ca6d21249533d559ce844897ab67cf
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '105'
 ht-degree: 0%
@@ -20,7 +19,7 @@ De `PTMediaPlayer` eigenschap, [seekableRange](https://help.adobe.com/en_US/prim
 * Voor VOD is dit bereik het gehele VOD-inhoudsbereik, inclusief advertenties.
 * Voor live/lineair vertegenwoordigt dit bereik het doorzoekbare venster.
 
-Zie voor meer informatie over de API [TVSDK 1.4 voor iOS API-naslaggids](https://help.adobe.com/en_US/primetime/api/psdk/appledoc/index.html)
+Zie voor meer informatie over de API [TVSDK 1.4 voor iOS API-naslag](https://help.adobe.com/en_US/primetime/api/psdk/appledoc/index.html)
 
 <!--<a id="example_A153BE3AC03F43C6BF3A156316A08CD3"></a>-->
 

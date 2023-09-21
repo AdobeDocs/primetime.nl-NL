@@ -2,8 +2,7 @@
 title: Referenties van DRM-client en runtime intrekken
 description: Referenties van DRM-client en runtime intrekken
 copied-description: true
-exl-id: 3a91a256-ab01-48d8-99f3-854195faae6f
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '413'
 ht-degree: 0%
@@ -20,9 +19,9 @@ Als het minimale beveiligingsniveau is ingesteld, moet de versie op de client (o
 
 Als een lijst van uitgesloten versies wordt gespecificeerd en de versie van de cliënt om het even welke versie herkenningstekens in de lijst aanpast, zal de cliënt niet worden toegestaan om een recht te gebruiken die deze instantie ModuleRequirements bevat. Een module die overeenkomt met de versiegegevens, vereist dat alle parameters die in de versiegegevens zijn opgegeven, behalve de releaseversie, exact overeenkomen met de waarden van de modules. De releaseversie komt overeen als de waarde van de clientmodule kleiner is dan of gelijk is aan de waarde in de versiegegevens.
 
-Als een inbreuk wordt gemeld met een bepaalde DRM-client of runtimeversie, kunnen de eigenaar van de inhoud en de contentdistributeur (die de licentieserver uitvoert) de server zodanig configureren dat deze weigeren licenties uit te geven gedurende een periode waarin Adobe geen oplossing beschikbaar heeft. Dit kan door `HandlerConfiguration` zoals hierboven beschreven, of door wijzigingen aan te brengen in alle DRM-beleidsregels. In het laatste geval kunt u een DRM-lijst met beleidsupdates bijhouden en deze gebruiken om te controleren of een DRM-beleid is bijgewerkt of ingetrokken.
+Als een inbreuk wordt gemeld met een bepaalde DRM-client of runtimeversie, kunnen de eigenaar van de inhoud en de contentdistributeur (die de licentieserver uitvoert) de server zodanig configureren dat deze weigeren licenties uit te geven gedurende een periode waarin de Adobe geen oplossing beschikbaar heeft. Dit kan worden gevormd door `HandlerConfiguration` zoals hierboven beschreven, of door wijzigingen aan te brengen in alle DRM-beleidsregels. In het laatste geval kunt u een DRM-lijst met beleidsupdates bijhouden en deze gebruiken om te controleren of een DRM-beleid is bijgewerkt of ingetrokken.
 
-Als u een nieuwere versie van de Runtime van Adobe Flash Player/Adobe AIR of van de Adobe Inhoud van de Bescherming van de Bibliotheek (DRM module) vereist, moet u uw beleid DRM bijwerken.
+Als u een nieuwere versie van de Runtime van de Flash Player van de Adobe/Adobe AIR of de Bibliotheek van de Bescherming van de Inhoud van de Adobe (DRM module) vereist, moet u uw beleid DRM bijwerken.
 
 Zie [Een beleid bijwerken met de Java API](../../protecting-content/working-policies-overview/updating-policy-using-java-api.md).
 

@@ -1,8 +1,7 @@
 ---
 title: Overzicht voor programmeurs
 description: Overzicht voor programmeurs
-exl-id: 64a12e49-0ecb-4b81-977d-60c10925bb59
-source-git-commit: bfc3ba55c99daba561255760baf273b6538a3c6e
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '4272'
 ht-degree: 0%
@@ -17,7 +16,7 @@ ht-degree: 0%
 
 ## Inleiding {#introduction}
 
-Dit overzicht is bedoeld voor de inhoudprovider (Programmer) die van plan is om Adobe® Pass in hun website of toepassing te integreren. Zie Verwante informatie hieronder voor aanvullende documentatie, waaronder handleidingen voor Kickstart en integratie.
+Dit overzicht is bedoeld voor de inhoudprovider (Programmer) die van plan is Adobe® Pass in hun website of toepassing te integreren. Zie Verwante informatie hieronder voor aanvullende documentatie, waaronder handleidingen voor Kickstart en integratie.
 
 Vandaag kunnen uw kijkers op Internet op om het even welk ogenblik krijgen, overal, en om toegang tot beschermde inhoud direct van u, de Programmer verzoeken. Misschien willen ze een eenmalig evenement bekijken, of ze willen misschien kijkrechten voor een hele serie televisieprogramma&#39;s die je in beeld brengt.
 
@@ -27,7 +26,7 @@ Het bepalen van de machtiging van een kijker is niet altijd eenvoudig voor een p
 
 ![](assets/user-ent-by-progr.png)
 
-*Afbeelding: Gebruikersrechten rechtstreeks bepaald door programmeur*
+*Afbeelding: gebruikerstoegang rechtstreeks bepaald door programmeur*
 
 Adobe Primetime-authenticatie voor tv overal zorgt veilig voor bemiddeling tussen programmeurs en MVPD&#39;s. Met Adobe Primetime-verificatie kunnen programmeurs eenvoudig, snel en veilig beveiligde inhoud leveren aan geldige klanten:
 
@@ -42,25 +41,25 @@ Adobe Primetime-verificatie werkt als een proxy in overleg met deelnemende MVPD&
 
 ### Werken met Adobe Primetime-verificatie {#HowItWorks}
 
-De inhoudsweergavetoepassing van de programmeur communiceert met Adobe Primetime-verificatie met behulp van de Access Enabler-clientcomponent of de RESTful-webservices van de client-API (voor apparaten die niet geschikt zijn voor internet, zoals intelligente tv&#39;s, spelconsoles, set-top boxes, enz.). De functie Toegangsbeheer wordt uitgevoerd op het systeem van de gebruiker, waar alle workflows met bevoegdheden worden vereenvoudigd.  De component Access Enabler wordt gedownload van de hostsite op de Adobe wanneer klanten uw site openen en beveiligde inhoud aanvragen.  Adobe Primetime-verificatieservers hosten de RESTful-webservices die worden gebruikt in de oplossing zonder client.
+De inhoudsweergavetoepassing van de programmeur communiceert met Adobe Primetime-verificatie met behulp van de Access Enabler-clientcomponent of de RESTful-webservices van de client-API (voor apparaten die niet geschikt zijn voor internet, zoals intelligente tv&#39;s, spelconsoles, set-top boxes, enz.). De functie Toegangsbeheer wordt uitgevoerd op het systeem van de gebruiker, waar alle workflows met bevoegdheden worden vereenvoudigd.  De component Access Enabler wordt gedownload van de hostsite op de Adobe wanneer klanten toegang krijgen tot uw site en beveiligde inhoud aanvragen.  Adobe Primetime-verificatieservers hosten de RESTful-webservices die worden gebruikt in de oplossing zonder client.
 
 Adobe Primetime-verificatie verwerkt de werkelijke workflows voor machtigingen terwijl u de volgende primitieven biedt:
 
 * Stel uw identiteit in. (De programmeur is de &quot;aanvrager&quot; in de Adobe Primetime-verificatierechten.)
 * Verifieer een gebruiker met bepaalde MVPD.  (MVPD is de &quot;identiteitsprovider&quot;of &quot;IdP&quot;in de de authentificatierechtenstroom van Adobe Primetime.)
 * Autoriseer een gebruiker met MVPD voor een bepaalde middel.
-* Log uit bij de gebruiker.
+* Meld u af bij de gebruiker.
 
 De programmeur is verantwoordelijk voor hun webpagina of spelertoepassing op het hoogste niveau die het volgende doet:
 
-* Hiermee wordt de gebruikersinterface geïmplementeerd
-* Werkt met de API-webservices van Access Enabler of Clientless
+* Implementeert de gebruikersinterface
+* Werkt met de API-webservices zonder toegang of zonder client
 
-Het doel van de authentificatie van Adobe Primetime is een eenvoudige, modulaire manier voor zowel Programmeurs als MVPDs tot stand te brengen om toestemmingscontrole te behandelen.
+Het doel van de authentificatie van Adobe Primetime is een eenvoudige, modulaire manier voor zowel Programmeurs als MVPDs tot stand te brengen om machtigingscontrole te behandelen.
 
 ## Tokens begrijpen {#understanding-tokens}
 
-De Adobe Primetime-oplossing voor verificatiebevoegdheden richt zich op het genereren van specifieke gegevens die worden gemaakt wanneer de workflows voor verificatie en autorisatie met succes zijn voltooid. Deze gegevens worden tokens genoemd. Tokens hebben een beperkte levensduur; wanneer zij verlopen, moeten tokens opnieuw worden uitgegeven door het opnieuw opstarten van de authentificatie en vergunningswerkschema&#39;s.
+De Adobe Primetime-oplossing voor verificatiebevoegdheden richt zich op het genereren van specifieke gegevens die worden gemaakt wanneer de workflows voor verificatie en autorisatie met succes zijn voltooid. Deze gegevens worden tokens genoemd. Tokens hebben een beperkte levensduur; wanneer ze verlopen, moeten tokens opnieuw worden uitgegeven door het opnieuw opstarten van de verificatie- en autorisatieworkflows.
 
 Raadpleeg de volgende secties voor meer informatie over tokens:
 
@@ -71,35 +70,35 @@ Raadpleeg de volgende secties voor meer informatie over tokens:
 
 ### Typen tokens {#token-types}
 
-Tijdens de workflows voor verificatie en autorisatie worden drie typen tokens uitgegeven. De AuthN- en AuthZ-tokens zijn &#39;langlevend&#39; en bieden continuïteit in de kijkervaring van de gebruiker. De token Media Token is een token van korte duur dat ondersteuning biedt voor de beste praktijken van de branche om fraude te voorkomen door het rippen van streams. Programmeurs geven de time-to-live (TTL) waarden op voor elk type token op basis van overeenkomsten met MVPD&#39;s. De programmeurs beslissen over een waarde van TTL die het best uw zaken en uw klanten dient.
+Tijdens de workflows voor verificatie en autorisatie worden drie typen tokens uitgegeven. De AuthN- en AuthZ-tokens zijn &#39;langlevend&#39; en zorgen voor continuïteit in de kijkervaring van de gebruiker. De token Media Token is een token van korte duur dat ondersteuning biedt voor de beste praktijken van de branche om fraude te voorkomen door het rippen van streams. Programmeurs geven de time-to-live (TTL) waarden op voor elk type token op basis van overeenkomsten met MVPD&#39;s. De programmeurs beslissen over een waarde van TTL die het best uw zaken en uw klanten dient.
 
-* **AuthN Token** (&quot;Lange levensduur&quot;): Op succesvolle authentificatie, leidt de authentificatie van Adobe Primetime tot een teken AuthN verbonden aan zowel het verzoekende apparaat als globally uniek herkenningsteken (GUID).
+* **AuthN Token** (&quot;Lang-levend&quot;): Op succesvolle authentificatie, leidt de authentificatie van Adobe Primetime tot een teken AuthN verbonden aan zowel het het vragen apparaat als globally uniek herkenningsteken (GUID).
    * De authentificatie van Adobe Primetime verzendt het teken AuthN naar Toegangsmanager, die het veilig op het systeem van de cliënt in het voorgeheugen onderbrengt.  Terwijl het token AuthN aanwezig en niet verlopen is, is het beschikbaar voor alle toepassingen die Adobe Primetime-verificatie gebruiken. De Toegangsmanager gebruikt het teken AuthN voor de vergunningsstroom.
    * Op een gegeven moment wordt slechts één AuthN-token in de cache geplaatst. Wanneer een nieuw token AuthN wordt uitgegeven en een oud token al bestaat, overschrijft Adobe Primetime-verificatie het token in de cache.
-* **AuthZ Token** (&quot;Lange levensduur&quot;): Bij een geslaagde autorisatie maakt Adobe Primetime-verificatie een AuthZ-token dat is gekoppeld aan het apparaat dat het verzoek indient en een specifieke beveiligde resource.  De beschermde bron wordt geïdentificeerd door een unieke bron-id.
+* **AuthZ Token** (&quot;Lange levensduur&quot;): Bij een geslaagde autorisatie maakt Adobe Primetime-verificatie een AuthZ-token dat is gekoppeld aan het apparaat dat het verzoek indient en een specifieke beveiligde bron.  De beschermde bron wordt geïdentificeerd door een unieke bron-id.
    * De authentificatie van Adobe Primetime verzendt het teken AuthZ naar Toegangsmanager, die het veilig op het lokale systeem in het voorgeheugen onderbrengt. De Toegangsmanager gebruikt dan het teken AuthZ om het symbolische teken van Media tot stand te brengen van korte duur dat voor daadwerkelijke het bekijken toegang wordt gebruikt.
    * Op elk moment wordt slechts één AuthZ-token per resource in de cache opgeslagen. Adobe Primetime-verificatie kan meerdere AuthZ-tokens in cache plaatsen, mits deze aan verschillende bronnen zijn gekoppeld. Wanneer een nieuw teken AuthZ wordt uitgegeven en oud reeds voor het zelfde middel bestaat, beschrijft de authentificatie van Adobe Primetime het caching teken.
-* **Mediumtoken** (&quot;Short-Lived&quot;): De Toegangsmanager gebruikt het teken AuthZ om een kortstondig (gebrek) te produceren: 7 minuten) Media-token. Dit is het punt waarop een succesvol spelverzoek wordt geacht te hebben plaatsgevonden.
+* **Mediumtoken** (&quot;Kort-Levend&quot;): Toegangsbeheer gebruikt het teken AuthZ om een kort-levend (gebrek: 7 minuten) token van Media te produceren. Dit is het punt waarop een succesvol spelverzoek wordt geacht te hebben plaatsgevonden.
    * Voordat toegang tot de beveiligde bron wordt verleend, moet uw mediaserver een Adobe Primetime-verificatiecomponent, de Media Token Verifier, gebruiken om het Media-token te valideren.
-   * Omdat het token Media niet aan het apparaat is gebonden, is de levensduur aanzienlijk korter (standaard: 7 minuten) dan de langlevende AuthN- en AuthZ-tokens.
+   * Omdat het token Media niet aan het apparaat is gebonden, is de levensduur aanzienlijk korter (standaard: 7 minuten) dan die van de langlevende AuthN- en AuthZ-tokens.
    * Het media-token met een korte levensduur is beperkt tot eenmalig gebruik en wordt nooit in de cache opgeslagen. Deze wordt opgehaald van de Adobe Primetime-verificatieserver telkens wanneer een autorisatie-API wordt aangeroepen.
 
 ### Tokenopslag {#token-storage}
 
 Toegangsbeheer slaat langlevende tokens (AuthN en AuthZ) in plaatsen specifiek voor zijn milieu op:
 
-* **Flash 10.1** (of hoger): De tokens met een lange levensduur worden opgeslagen als Lokale, gezamenlijke objecten.
-* **HTML5**: De langlevende tokens worden veilig bewaard in de lokale opslag van de HTML5 browser.
+* **Flash 10.1** (of hoger): De tokens met een lange levensduur worden opgeslagen als Lokale gezamenlijke objecten.
+* **HTML 5**: De langlevende tokens worden veilig bewaard in de lokale opslagruimte van de HTML5-browser.
 * **iOS**: De tokens met een lange levensduur worden opgeslagen op een blijvend plakbord, waar ze kunnen worden geopend door andere Adobe Primetime-verificatieclients.
-* **Android**: De tokens van lange duur worden opgeslagen in een gedeeld gegevensbestanddossier, waar zij door andere de authentificatiecliënt van Adobe Primetime toepassingen kunnen worden betreden.
-* **Clientloze API-apparaten**: Tokens worden opgeslagen op de servers van de authentificatie Primetime.
+* **Android**: De tokens met een lange levensduur worden opgeslagen in een gedeeld databasebestand, waar ze toegankelijk zijn voor andere Adobe Primetime-verificatieclients.
+* **Clientloze API-apparaten**: Tokens worden opgeslagen op de Primetime-verificatieservers.
 
 ### Tokenbeveiliging {#token-security}
 
 De Adobe Primetime-verificatieserver ondertekent digitaal alle langlevende tokens met behulp van de apparaat-id (die is afgeleid van de hardwarekenmerken van het apparaat). De digitale handtekening verschilt in de manier waarop deze wordt gegenereerd, beveiligd en gevalideerd, afhankelijk van de omgeving:
 
-* **Flash 10.1** (of hoger) - De apparaat-id is afhankelijk van de apparaatreferentie, een uniek certificaat dat is uitgegeven door de Adobe Individualization-server. Deze beveiliging is gelijk aan FAXS DRM-technologie. Deze server-zijbevestiging vergelijkt unieke apparatenidentiteitskaart in het teken met de apparatenreferentie (veilig die van de authentificatie van Flash Player aan Adobe Primetime wordt meegedeeld). De apparaatreferentie identificeert ook de versie van de FAXS-client en de versie van de Flash Player (of AIR) waaraan deze is uitgegeven. De apparaatbinding is sterker dan bij HTML5, zodat de time-to-live (TTL) voor tokens doorgaans langer is met Flash.
-* **HTML5** - Het apparaat wordt individueel aangepast aan de clientzijde. Het gebruikt kenmerken beschikbaar door JavaScript om een pseudo-apparatenidentiteitskaart te produceren die browser en OS versies, een IP adres, en een browser koekje GUID (globally uniek herkenningsteken) omvat. Deze token-apparaat-id wordt vergeleken met de huidige pseudo-apparaat-id voor het apparaat. Omdat het IP adres tijdens normaal gebruik, zelfs in de zelfde zitting kan veranderen, slaat de authentificatie van Adobe Primetime HTML5 tokens in twee plaatsen op: localStorage en sessionStorage. Als IP verandert en het sessionStorage teken anders nog geldig is, wordt de zitting gehandhaafd. Met HTML5, is de apparatenband niet zo sterk, zodat is TTL voor tekenen typisch korter dan voor Flash.
+* **Flash 10.1** (of hoger) - De apparaat-id is afhankelijk van de apparaatreferentie, een uniek certificaat dat is uitgegeven door de Adobe Individualization-server. Deze beveiliging is gelijk aan FAXS DRM-technologie. Deze server-zijbevestiging vergelijkt unieke apparatenidentiteitskaart in het teken met de apparatenreferentie (veilig die van Flash Player aan de authentificatie van Adobe Primetime wordt meegedeeld). De apparaatreferentie identificeert ook de versie van de FAXS-client en de versie van de Flash Player (of AIR) waaraan deze is uitgegeven. De apparaatbinding is sterker dan bij HTML5, zodat de time-to-live (TTL) voor tokens doorgaans langer is bij Flash.
+* **HTML 5** - Het apparaat wordt individueel aangepast aan de clientzijde. Het gebruikt kenmerken beschikbaar door JavaScript om een pseudo-apparatenidentiteitskaart te produceren die browser en OS versies, een IP adres, en een browser koekje GUID (globally uniek herkenningsteken) omvat. Deze token-apparaat-id wordt vergeleken met de huidige pseudo-apparaat-id voor het apparaat. Omdat het IP adres tijdens normaal gebruik, zelfs in de zelfde zitting kan veranderen, slaat de authentificatie van Adobe Primetime HTML5 tokens in twee plaatsen op: localStorage en sessionStorage. Als IP verandert en het sessionStorage teken anders nog geldig is, wordt de zitting gehandhaafd. Met HTML5, is de apparatenband niet zo sterk, zodat is TTL voor tekenen typisch korter dan voor Flash.
 * **Eigen clients** (iOS en Android) - De langlevende tokens bevatten informatie over de individualisatie van native apparaat-id&#39;s en zijn dus gebonden aan het apparaat dat het verzoek indient. De verificatie- en autorisatieverzoeken worden verzonden via HTTPS en de informatie over de apparaat-id wordt digitaal ondertekend door de bibliotheek Access Enabler voordat deze naar de back-endservers wordt verzonden. Aan de serverzijde worden de gegevens van de apparaat-id gevalideerd tegen de bijbehorende digitale handtekening.
 * **Clients zonder client voor API** - De oplossing Clientless API heeft zijn reeks veiligheidsprotocollen die digitaal het ondertekenen van alle API vraag impliceren. Tokens die tijdens de machtigingsstromen worden gegenereerd, worden veilig opgeslagen op de Adobe Primetime-verificatieservers.
 
@@ -109,8 +108,8 @@ Adobe Primetime-verificatie valideert elk token van lange duur om te controleren
 
 Toepassingen op verschillende platforms delen geen tokens. Hiervoor zijn een aantal redenen, waaronder de volgende:
 
-* Zoals beschreven in [Tokenopslag](#token-storage)De manier waarop tokens worden opgeslagen, verschilt per platform (bijvoorbeeld Lokale, gedeelde objecten voor Flash, WebStorage voor JavaScript).
-* De mate van tokenbeveiliging verschilt per platform. Flash-tokens zijn bijvoorbeeld sterk gebonden aan een apparaat met FAXS. Tokens in een zuivere JavaScript-omgeving hebben niet hetzelfde niveau van DRM-ondersteuning als in Flash.  Door JS-tokens te delen met Flash-toepassingen, wordt de kans op minder veilige tokens die gebruikmaken van een veiliger omgeving, groter.
+* Zoals beschreven in [Tokenopslag](#token-storage)De methode voor het opslaan van tokens verschilt per platform (bijvoorbeeld Lokale, gedeelde objecten voor Flash, WebStorage voor JavaScript).
+* De mate van tokenbeveiliging verschilt per platform. Bijvoorbeeld, zijn de tokens van de Flash sterk gebonden aan een apparaat gebruikend FAXS. Tokens in een zuivere JavaScript-omgeving hebben niet hetzelfde niveau van DRM-ondersteuning als in Flash.  Door JS-tokens te delen met Flash-toepassingen, wordt de kans op minder veilige tokens die gebruikmaken van een veiliger omgeving, groter.
 
 ## Levenscyclus van programmeerintegratie {#prog-integ-lifecycle}
 
@@ -121,19 +120,19 @@ Toepassingen op verschillende platforms delen geen tokens. Hiervoor zijn een aan
 
 ## Logische stromen {#logical-flows}
 
-### Entitlement FlowGrafiek {#chart}
+### Entitlement FlowChart {#chart}
 
 In het volgende stroomschema wordt het algemene proces beschreven voor het bevestigen van machtigingen (met behulp van de Adobe Primetime-client voor verificatietoegang):
 
 ![](assets/ent-flowchart.png)
 
-*Afbeelding: Procedure voor de bevestiging van het recht*
+*Afbeelding: Procedure voor bevestiging van rechten*
 
 ### Verificatiestappen {#authn-steps}
 
-De volgende stappen geven een voorbeeld van de Adobe Primetime-verificatiestroom.  Dit is het deel van het machtigingsproces waarin een Programmer bepaalt als de gebruiker een geldige klant van MVPD is.  In dit scenario, is de gebruiker een geldige abonnee aan MVPD.  De gebruiker probeert beveiligde inhoud weer te geven met de Flash-toepassing van een programmeur:
+De volgende stappen geven een voorbeeld van de Adobe Primetime-verificatiestroom.  Dit is het deel van het machtigingsproces waarin een Programmer bepaalt als de gebruiker een geldige klant van MVPD is.  In dit scenario, is de gebruiker een geldige abonnee aan MVPD.  De gebruiker probeert beveiligde inhoud weer te geven met behulp van de toepassing Flash van de programmeur:
 
-1. De gebruiker bladert naar de Web-pagina van de Programmer, die de toepassing van de Flash van de Programmer en de componenten van de Toegelaten van de Authentificatie van Adobe Primetime op de machine van de gebruiker laadt. De toepassing van de Flash gebruikt Toegang Enabler om het herkennen van de programmeur met de authentificatie van Adobe Primetime te plaatsen, en de authentificatiepunten van Adobe Primetime de Toegankelijkheid met configuratie en staatsgegevens voor die programmeur (de &quot;aanvrager&quot;). De Toegangsfunctie moet deze gegevens van de server ontvangen voordat andere API-aanroepen kunnen worden uitgevoerd. Technische opmerking: De programmeur stelt zijn identiteit met Toegangsmogelijkheden in `setRequestor()` methode; zie voor meer informatie de [Programmeringsintegratiehandleiding](/help/authentication/programmer-integration-guide-overview.md).
+1. De gebruiker bladert naar de Web-pagina van de Programmer, die de toepassing van de Flash van de Programmer en de componenten van de Toegelaten van de Authentificatie van Adobe Primetime op de machine van de gebruiker laadt. De toepassing van de Flash gebruikt Toegang Enabler om het herkennen van de programmeur met de authentificatie van Adobe Primetime te plaatsen, en de authentificatiepunten van Adobe Primetime Enabler van de Toegang met configuratie en staatsgegevens voor die programmeur (de &quot;aanvrager&quot;). De Toegangsfunctie moet deze gegevens van de server ontvangen voordat andere API-aanroepen kunnen worden uitgevoerd. Technische opmerking: de programmeur stelt zijn identiteit vast met de Access Enabler `setRequestor()` methode; zie voor meer informatie de [Programmeringsintegratiehandleiding](/help/authentication/programmer-integration-guide-overview.md).
 1. Wanneer de gebruiker probeert om de beschermde inhoud van de Programmer te bekijken, stelt de toepassing van de Programmer de gebruiker met een lijst van MVPDs voor, waarvan de gebruiker een leverancier selecteert.
 1. De gebruiker wordt omgeleid naar een Adobe Primetime-verificatieserver, waar een gecodeerde [SAML](https://en.wikipedia.org/wiki/Security_Assertion_Markup_Language) request for the user-selected MVPD is created. Dit verzoek wordt verzonden als authentificatieverzoek namens de programmeur aan MVPD. Afhankelijk van het systeem van MVPD, wordt browser van de gebruiker dan of opnieuw gericht aan de plaats van MVPD aan login, of een login iFrame wordt gecreeerd in app van de Programmer.
 1. In beide gevallen (omleiding of iFrame) accepteert de MVPD de aanvraag en geeft de aanmeldingspagina weer.
@@ -141,8 +140,8 @@ De volgende stappen geven een voorbeeld van de Adobe Primetime-verificatiestroom
 1. Wanneer de gebruiker wordt bevestigd, leidt MVPD tot een reactie (SAML &amp; gecodeerd), die MVPD terug naar de authentificatie van Adobe Primetime verzendt.
 1. De authentificatie van Adobe Primetime ontvangt de reactie MVPD, ziet dat er een open zitting van HTTP van de authentificatie van Adobe Primetime is, bevestigt de reactie van SAML van MVPD, en richt terug naar de plaats van de Programmer.
 1. De site van de programmeur wordt opnieuw geladen, de Access Enabler wordt opnieuw geladen en de programmeur roept setRequestor() opnieuw aan.  De tweede vraag aan setRequestor () is noodzakelijk omdat de huidige configuratie is veranderd-er nu een vlag aanwezig is die toelaat van de Toegang meedeelt dat een teken AuthN op de server wacht te worden geproduceerd.
-1. Toegangsbeheer ziet dat er een verificatie in behandeling is en vraagt het token aan bij de Adobe Primetime-verificatieserver. Het token wordt opgehaald door de servermogelijkheden van Flash Player DRM aan te roepen.
-1. Het teken AuthN wordt opgeslagen in het geheime voorgeheugen van Flash Player LSO van de Programmer; De verificatie is nu voltooid en de sessie wordt vernietigd op de Adobe Primetime-verificatieserver.
+1. Toegangsbeheer ziet dat er een verificatie in behandeling is en vraagt het token aan bij de Adobe Primetime-verificatieserver. Het token wordt opgehaald van de server door de DRM-mogelijkheden van de Flash Player aan te roepen.
+1. Het teken AuthN wordt opgeslagen in het geheime voorgeheugen van de Flash Player LSO van de Programmer; de authentificatie is nu volledig, en de zitting wordt vernietigd op de de authentificatieserver van Adobe Primetime.
 
 ### Autorisatiestappen {#authz-steps}
 
@@ -151,7 +150,7 @@ De volgende stappen gaan verder vanaf de [Verificatiestappen](#authn-steps):
 1. Wanneer de gebruiker probeert om tot de beschermde inhoud van de Programmer toegang te hebben, controleert de toepassing van de Programmer eerst op een teken AuthN op de lokale machine of het apparaat van de gebruiker.  Als dat token niet aanwezig is, wordt het [Verificatiestappen](#authn-steps) hierboven worden gevolgd.  Als het token AuthN aanwezig is, gaat de machtigingsstroom verder met de toepassing van de programmeur die een aanroep van Access Enabler initieert met een verzoek om de weergaverechten van de gebruiker voor een specifiek item van beveiligde inhoud op te halen.
 1. Het specifieke item van de beveiligde inhoud wordt vertegenwoordigd door een &quot;resource identifier&quot;.  Dit kan een eenvoudige tekenreeks of een complexere structuur zijn, maar in elk geval wordt de aard van de resource identifier vooraf overeengekomen tussen de programmeur en de MVPD.  De toepassing van de Programmer gaat het middelherkenningsteken tot Toegangstoegelaten over.  De Toegangsfunctie controleert op een AuthZ-token op de lokale computer of het lokale apparaat van de gebruiker.  Als het token AuthZ er niet is, geeft de Access Enabler het verzoek door aan de back-end Adobe Primetime-verificatieserver.
 1. De de authentificatieserver van Adobe Primetime communiceert met het MVPDs vergunningseindpunt gebruikend gestandaardiseerde protocollen.  Als de reactie van MVPD erop wijst dat de gebruiker de beschermde inhoud mag bekijken, leidt de de authentificatieserver van Adobe Primetime tot een teken AuthZ en geeft het terug naar Enabler van de Toegang, die het teken AuthZ op de machine van de gebruiker opslaat.
-1. Met een token AuthZ dat op de computer of het apparaat van de gebruiker is opgeslagen, roept de toepassing van de programmeur de Access Enabler op om een token van de Adobe Primetime-verificatieserver te verkrijgen en verstrekt deze token aan de toepassing van de programmeur.
+1. Met een token AuthZ dat op de computer of het apparaat van de gebruiker is opgeslagen, roept de toepassing van de programmeur de Access Enabler aan om een token van de Adobe Primetime-verificatieserver te verkrijgen en verstrekt deze token aan de toepassing van de programmeur.
 1. Tot slot gebruikt de toepassing van de Programmeur de component van de Verificator van het Boek van Media om te bevestigen dat de juiste gebruiker de juiste inhoud bekijkt, en met het Symbolische teken op zijn plaats, wordt de gebruiker toegestaan om de beschermde inhoud te bekijken.
 
 
@@ -159,11 +158,11 @@ De volgende stappen gaan verder vanaf de [Verificatiestappen](#authn-steps):
 
 De eerste stap in het werken met de authentificatie van Adobe Primetime is bij Adobe, of met een de authentificatie-erkende partner van Adobe Primetime te registreren.
 
-Wanneer u zich registreert, geeft u een lijst op met de domeinen vanwaar u met Adobe Primetime-verificatie gaat communiceren. De Turner Broadcasting System-domeinen zijn bijvoorbeeld tbs.com en tnt.tv als met Adobe Primetime geregistreerde domeinen. Elk van deze inhoudsplaatsen wordt toegang tot de authentificatie van Adobe Primetime verleend, en zijn eigen identiteitskaart van de Aanvrager toegewezen (bijvoorbeeld, &quot;TBS&quot;, en &quot;TNT&quot;). Als u besluit om extra plaatsen toe te voegen, moet u Adobe van de extra domeinnamen op de hoogte brengen om hen te krijgen op de lijst van toegestane domeinen worden geplaatst en extra Vraag IDs worden gegeven.
+Wanneer u zich registreert, geeft u een lijst op met de domeinen vanwaar u met Adobe Primetime-verificatie gaat communiceren. De Turner Broadcasting System-domeinen bevatten bijvoorbeeld tbs.com en tnt.tv als met Adobe Primetime geregistreerde domeinen. Elk van deze inhoudsplaatsen wordt toegang tot de authentificatie van Adobe Primetime verleend, en zijn eigen identiteitskaart van de Aanvrager toegewezen (bijvoorbeeld, &quot;TBS&quot;, en &quot;TNT&quot;). Als u besluit om extra plaatsen toe te voegen, moet u Adobe van de extra domeinnamen op de hoogte brengen om hen te krijgen op de lijst van toegestane domeinen worden geplaatst en extra Vraag IDs worden gegeven.
 
 >[!WARNING]
 >
->Terwijl u uw integratie test, zorg ervoor dat uw testserver op een geregistreerd domein is dat u in productie van plan bent te gebruiken. Verzoeken, zelfs testverzoeken, die afkomstig zijn uit niet-gewhitelisteerde domeinen worden genegeerd. Bijvoorbeeld, als u domein.com om in productie vroeg worden gebruikt, zorg ervoor u uw testintegratie onder domain.com, test.domain.com, en staging.domain.com opstelt.
+>Terwijl u uw integratie test, zorg ervoor dat uw testserver op een geregistreerd domein is dat u in productie van plan bent te gebruiken. Verzoeken, zelfs testverzoeken, die afkomstig zijn uit niet-gewhitelisteerde domeinen worden genegeerd. Als u bijvoorbeeld hebt gevraagd domain.com te gebruiken in productie, zorgt u ervoor dat u de testintegratie implementeert onder domain.com, test.domain.com en staging.domain.com.
 >
 >Aanvragen die een gebruikersnaam en/of wachtwoord in de URL bevatten, worden genegeerd, zelfs als domeinen worden gewhitelist. Voorbeeld: `//username@registered-domain/`
 
@@ -177,7 +176,7 @@ Identiteitskaart van de aanvrager identificeert uniek de cliënt van de Programm
 
 >[!TIP]
 >
->Als u Adobe Open Source Media Framework (&quot;OSMF&quot;) voor uw media spelerontwikkeling gebruikt, de snelste manier om de authentificatie van Adobe Primetime te gebruiken is de Insteekmodule te integreren OSMF *(Afgekeurd)* in de code van uw speler.
+>Als u het Open Source Media Framework van de Adobe (&quot;OSMF&quot;) voor uw media spelerontwikkeling gebruikt, de snelste manier om de authentificatie van Adobe Primetime te gebruiken is de Insteekmodule OSMF te integreren *(Verouderd)* in de code van uw speler.
 >
 ><!--For details, see [Adobe Primetime authentication Plugin For OSMF](https://tve.helpdocsonline.com/9-2-2) in the Programmer Integration Guide.-->
 
@@ -187,21 +186,21 @@ Identiteitskaart van de aanvrager identificeert uniek de cliënt van de Programm
 
 ### 1. Instellen van aanvrager {#requestor}
 
-#### 1 bis. Registreren met Adobe
+#### 1 bis. Registreren bij Adobe
 
-Uw eerste stap is bij Adobe, of met een de authentificatieerkende partner van Adobe Primetime te registreren.  Wanneer u registreert wordt u uitgegeven één of meerdere globaal unieke herkenningstekens (GUIDs). Elke GUID u wordt uitgegeven wordt geassocieerd met een domein waarvan de toegang tot de authentificatie van Adobe Primetime wordt toegestaan. U gaat een GUID (genoemd verzoekeridentiteitskaart) voor het het vragen domein over om uw identiteit voor elke zitting te registreren waarin u met Toegankelijkheid in wisselwerking staat. Zie voor meer informatie [Registratie en initialisatie](#reg-and-init) in de Programmer Integration Guide.
+Uw eerste stap bestaat uit het registreren bij Adobe, of bij een geautoriseerde partner van de authentificatie van Adobe Primetime.  Wanneer u registreert wordt u uitgegeven één of meerdere globaal unieke herkenningstekens (GUIDs). Elke GUID u wordt uitgegeven wordt geassocieerd met een domein waarvan de toegang tot de authentificatie van Adobe Primetime wordt toegestaan. U gaat een GUID (genoemd verzoekeridentiteitskaart) voor het het vragen domein over om uw identiteit voor elke zitting te registreren waarin u met Toegankelijkheid in wisselwerking staat. Zie voor meer informatie [Registratie en initialisatie](#reg-and-init) in de Programmer Integration Guide.
 
 #### 1 ter. De aanvankelijke Integratie van Toegelaten van de Toegang
 
 De volgende stap bestaat uit het integreren van Access Enabler in uw bestaande mediaspeler-app of -webpagina:
 
-* U kunt de Flash-versie insluiten, `AccessEnabler.swf`in een op Flash gebaseerde videospeler, of u kunt de video rechtstreeks insluiten in de HTML van uw webpagina. U kunt met de SWF van Toegangsbeheer in of ActionScript of JavaScript communiceren. De basis-API is ActionScript, maar als u liever met JavaScript werkt, is een volledige omvattende bibliotheek beschikbaar voor insluiting op uw pagina&#39;s.
-* Voor niet-Flash-omgevingen kunt u het volgende doen:
+* U kunt de versie van de Flash insluiten, `AccessEnabler.swf`, in een op Flash gebaseerde videospeler, of u kunt het direct in de HTML van uw webpagina insluiten. U kunt met de SWF van Toegangsbeheer in of ActionScript of JavaScript communiceren. De basis-API is ActionScript, maar als u liever met JavaScript werkt, is een volledige omvattende bibliotheek beschikbaar voor insluiting op uw pagina&#39;s.
+* Voor omgevingen die geen Flash zijn, kunt u het volgende doen:
    * Gebruik de HTML5/JavaScript-versie, AccessEnabler.js, en communiceer ermee via de JavaScript-API
    * Gebruik de AIR Native Extension for Adobe Primetime-verificatie om native code te combineren met ingebouwde ActionScript-klassen
    * Een van de native clientversies van de Access Enabler-bibliotheek gebruiken (iOS of Android)
 
-### 2. Verificatie en autorisatie afhandelen {#authn-authz}
+### 2. Verwerking van verificatie en autorisatie {#authn-authz}
 
 #### 2 bis. Communiceren met de Access Enabler
 
@@ -215,7 +214,6 @@ De communicatie tussen de Access Enabler en uw webpagina of speler-app is asynch
 >* De authentificatie komt als uitwisseling SAML voor, tussen de authentificatie van Adobe Primetime zoals de Dienstverlener (SP) en MVPD als Identiteitskaart (IdP).
 >
 >* De vergunning gebruikt een achter-kanaal (server-aan-server) Web-dienst uitwisseling tussen de authentificatie van Adobe Primetime (SP) en een MVPD (IdP).
-
 
 
 #### 2 ter. Een machtigingsgebruikersinterface bieden {#entitlement-ui}
@@ -234,7 +232,7 @@ U moet de Adobe Primetime-component voor verificatie van mediasken integreren in
 
 In de meeste gevallen is uw mediaspeler verantwoordelijk voor het afhandelen van gebruikersaanmeldingen via een eenvoudige API voor toegangsbeheer. Wanneer u logout() aanroept, doet de Access Enabler het volgende:
 
-* Hiermee meldt u zich af bij de huidige gebruiker
+* Hiermee wordt de huidige gebruiker afgemeld
 * Wist alle authentificatie en vergunningsinformatie voor de geregistreerde gebruiker
 * Verwijdert alle AuthN en AuthZ tokens van het lokale systeem van de gebruiker
 
@@ -244,7 +242,7 @@ Wanneer logout van een plaats in werking wordt gesteld die niet met de authentif
 
 ## Gebruikersnaam {#user-ids}
 
-Elke gebruiker die een machtigingsstroom start, is gekoppeld aan één unieke gebruikersnaam.  Tijdens een machtigingsstroom kan één gebruiker-id echter op verschillende manieren worden weergegeven, afhankelijk van de API waarvan u de id ontvangt.
+Elke gebruiker die een machtigingsstroom start, is gekoppeld aan één unieke gebruikers-id.  Tijdens een machtigingsstroom kan één gebruiker-id echter op verschillende manieren worden weergegeven, afhankelijk van de API waarvan u de id ontvangt.
 
 sessionGUID in het Korte Token van Media is de veilige vorm van UserID, die via sendTrackingData () vraag beschikbaar is.   In alle huidige integratie, is dit een blijvende GUID voor de gebruiker over tijd en apparaten, maar de bron van GUID begint met UserID in de reactie van SAML van MVPD.   Nochtans, konden sommige MVPDs hun mening in de toekomst veranderen, en beginnen een voorbijgaande GUID te verzenden.  Als een programmeur ervoor wil zorgen dat MVPD bronGebruikersidentiteitskaart in de reactie AuthN blijvend is, zouden zij in hun overeenkomsten met MVPDs moeten ervoor zorgen.
 
@@ -256,7 +254,7 @@ Hier volgen de verschillende manieren waarop de gebruikersnaam wordt weergegeven
 
 **Conclusie**
 
-* De MVPD-gebruikersnaam is een standaard, maar niet gegarandeerde, permanente unieke id die **gegenereerd door de MVPD&#39;s en doorgegeven aan Adobe bij geslaagde verificatie**. Het is over het algemeen verenigbaar over alle netwerken met sommige uitzonderingen.
+* De MVPD-gebruikersnaam is een standaard, maar niet gegarandeerde, permanente unieke id die **gegenereerd op basis van de MVPD&#39;s en doorgegeven aan de Adobe bij geslaagde verificatie**. Het is over het algemeen verenigbaar over alle netwerken met sommige uitzonderingen.
 * De MVPD-gebruikersnaam bevat geen PII en is GEEN rekeningnummer. Het hoeft niet in gecodeerde vorm te worden aangeboden, aangezien we met alle MVPD&#39;s hebben gevalideerd die geen PII worden verzonden.
 
 

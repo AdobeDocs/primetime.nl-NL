@@ -1,8 +1,7 @@
 ---
 description: U kunt een MediaPlayer-instantie die u niet meer nodig hebt opnieuw instellen, opnieuw gebruiken of vrijgeven.
 title: Een MediaPlayer-instantie opnieuw gebruiken of verwijderen
-exl-id: 1ee25dd0-95e6-472d-b80c-ef9d8461302d
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '263'
 ht-degree: 0%
@@ -19,13 +18,13 @@ Wanneer u een `MediaPlayer` -instantie, wordt de niet-geïnitialiseerde IDLE-sta
 
 * U wilt een `MediaPlayer` -instantie maar moet een nieuwe instantie laden `MediaResource` (video-inhoud) en vervangt u de vorige instantie.
 
-   Met opnieuw instellen kunt u de opdracht `MediaPlayer` instantie zonder de overhead van het vrijgeven van bronnen, opnieuw maken van de `MediaPlayer`en herallocatie van middelen.
+  Met opnieuw instellen kunt u de opdracht `MediaPlayer` instantie zonder de overhead van het vrijgeven van bronnen, opnieuw maken van de `MediaPlayer`en herallocatie van middelen.
 
 * Wanneer de `MediaPlayer` bevindt zich in de status ERROR en moet worden gewist.
 
-   >[!IMPORTANT]
-   >
-   >Dit is de enige manier om van de status van de FOUT terug te krijgen.
+  >[!IMPORTANT]
+  >
+  >Dit is de enige manier om van de status van de FOUT terug te krijgen.
 
    1. Bellen `reset` om de `MediaPlayer` -instantie naar de niet-geïnitialiseerde status:
 
@@ -33,7 +32,7 @@ Wanneer u een `MediaPlayer` -instantie, wordt de niet-geïnitialiseerde IDLE-sta
       void reset() throws MediaPlayerException; 
       ```
 
-   1. Gebruiken `MediaPlayer.replaceCurrentResource()` om een andere te laden `MediaResource`.
+   1. Gebruiken `MediaPlayer.replaceCurrentResource()` om een andere `MediaResource`.
 
       >[!NOTE]
       >
@@ -55,10 +54,10 @@ Hier volgen enkele redenen om een `MediaPlayer`:
 
 * Laat de `MediaPlayer`.
 
-   ```java
-   void release() throws MediaPlayerException;
-   ```
+  ```java
+  void release() throws MediaPlayerException;
+  ```
 
-   >[!NOTE]
-   >
-   >Na de `MediaPlayer` -instantie wordt vrijgegeven, kunt u deze niet meer gebruiken. Indien een methode van de `MediaPlayer` de interface wordt geroepen nadat het wordt vrijgegeven, a `MediaPlayerException` wordt gegenereerd.
+  >[!NOTE]
+  >
+  >Na de `MediaPlayer` -instantie wordt vrijgegeven, kunt u deze niet meer gebruiken. Indien een methode van de `MediaPlayer` de interface wordt geroepen nadat het wordt vrijgegeven, a `MediaPlayerException` wordt gegenereerd.

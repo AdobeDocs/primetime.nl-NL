@@ -1,8 +1,7 @@
 ---
-description: Het gedrag van het afspelen van media wordt beïnvloed door zoeken, pauzeren, snel vooruitspoelen of terugspoelen (de modus voor het kunstspel) en het opnemen van reclame.
+description: Het gedrag van het afspelen van media wordt beïnvloed door zoeken, pauzeren, snel vooruitspoelen of terugspoelen (de modus voor het spelen van truien) en het opnemen van reclame.
 title: Standaardgedrag en aangepast afspeelgedrag met advertenties
-exl-id: 56544683-28a3-4720-bfd8-946cb09880aa
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '493'
 ht-degree: 0%
@@ -11,7 +10,7 @@ ht-degree: 0%
 
 # Standaardgedrag en aangepast afspeelgedrag met advertenties{#default-and-customized-playback-behavior-with-ads}
 
-Het gedrag van het afspelen van media wordt beïnvloed door zoeken, pauzeren, snel vooruitspoelen of terugspoelen (de modus voor het kunstspel) en het opnemen van reclame.
+Het gedrag van het afspelen van media wordt beïnvloed door zoeken, pauzeren, snel vooruitspoelen of terugspoelen (de modus voor het spelen van truien) en het opnemen van reclame.
 
 Als u het standaardgedrag wilt overschrijven, gebruikt u `AdBreakPolicySelector`.
 
@@ -52,7 +51,7 @@ In de volgende tabel wordt beschreven hoe in Browser-TVSDK advertenties en afbre
   <tr> 
    <td colname="col1"> Uw toepassing zoekt verder in een advertentie-einde. </td> 
    <td colname="col2"> Hiermee wordt afgespeeld vanaf het begin van de advertentie waarin de zoekopdracht is beëindigd. </td> 
-   <td colname="col3">Geef een ander advertentiebeleid op voor het advertentieeinde en voor de specifieke advertentie waar de zoekactie is geëindigd door gebruik te maken van <span class="codeph"> selectPolicyForSeekIntoAd</span>. </td> 
+   <td colname="col3">Geef een ander advertentiebeleid op voor het advertentieeinde en voor de specifieke advertentie waar de zoekactie is geëindigd met gebruik <span class="codeph"> selectPolicyForSeekIntoAd</span>. </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Uw toepassing zoekt terug naar een advertentie-einde. </td> 

@@ -1,8 +1,7 @@
 ---
 title: Overzicht van privacyondersteuning
 description: Overzicht van privacyondersteuning
-exl-id: 9868a7e7-30f6-420e-a660-7d2f7870374d
-source-git-commit: bfc3ba55c99daba561255760baf273b6538a3c6e
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '250'
 ht-degree: 0%
@@ -21,7 +20,7 @@ ht-degree: 0%
 
 **CCPA**- De California Consumer Privacy Act (CCPA) is een wet die inwoners van Californië nieuwe rechten met betrekking tot hun persoonlijke informatie verleent en gegevensbeschermingsverantwoordelijkheden oplegt aan bepaalde entiteiten die zaken in Californië leiden. De CCPA maakt gebruik van enkele concepten die al bekend zijn onder de GDPR, zoals het recht op toegang tot en verwijdering van persoonlijke informatie. Er zijn echter andere gebieden waar de CCPA van de GDPR verschilt.
 
-Als klant van de Authentificatie Primetime, kunt u individuele GDPR of CCPA privacyverzoeken indienen om tot klantengegevens toegang te hebben en te schrappen, of door [UI Privacy Service](https://www.adobe.io/apis/experiencecloud/gdpr/docs/alldocs.html#!api-specification/markdown/narrative/tutorials/privacy_service_tutorial/privacy_service_ui_tutorial.md) of door de [Privacy Service-API](https://www.adobe.io/apis/experiencecloud/gdpr/docs/alldocs.html#!api-specification/markdown/narrative/tutorials/privacy_service_tutorial/privacy_service_api_tutorial.md).
+Als klant van de Authentificatie Primetime, kunt u individuele GDPR of CCPA privacyverzoeken indienen om tot klantengegevens toegang te hebben en te schrappen, of door [UI PRIVACY SERVICE](https://www.adobe.io/apis/experiencecloud/gdpr/docs/alldocs.html#!api-specification/markdown/narrative/tutorials/privacy_service_tutorial/privacy_service_ui_tutorial.md) of door de [Privacy Service-API](https://www.adobe.io/apis/experiencecloud/gdpr/docs/alldocs.html#!api-specification/markdown/narrative/tutorials/privacy_service_tutorial/privacy_service_api_tutorial.md).
 
 <!--
 

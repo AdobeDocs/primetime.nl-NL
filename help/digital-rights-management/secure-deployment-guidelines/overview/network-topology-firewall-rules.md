@@ -1,8 +1,7 @@
 ---
 description: Houd rekening met de volgende typen URL's wanneer u uw firewallregels bepaalt
 title: Firewall-regels
-exl-id: 3f6f6d1a-5759-43b3-9f62-6feb02e0a5c5
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '370'
 ht-degree: 0%
@@ -51,7 +50,7 @@ Externe gebruikers hebben toegang tot de volgende URL&#39;s via de buitenste fir
      <li id="li_5112283BDCF1457099056733B633FAF1"><span class="filepath"> /flashaccess/license/v5/*</span> </li> 
      <li id="li_F73A570E2C1A45E1BBF21C1468B90D3A"><span class="filepath"> /flashaccess/license/v6/*</span> </li> 
     </ul> </td> 
-   <td colname="2" class="- topic/entry "> <p class="- topic/p ">Om licenties aan eindgebruikers uit te geven. </p> </td> 
+   <td colname="2" class="- topic/entry "> <p class="- topic/p ">Licenties aan eindgebruikers uitgeven. </p> </td> 
   </tr> 
   <tr rowsep="1" class="- topic/row "> 
    <td colname="1" class="- topic/entry "> 
@@ -85,11 +84,11 @@ Externe gebruikers hebben toegang tot de volgende URL&#39;s via de buitenste fir
   </tr> 
   <tr rowsep="1" class="- topic/row "> 
    <td colname="1" class="- topic/entry "><span class="filepath"> /flashaccess/headerconversion/v1/*</span> </td> 
-   <td colname="2" class="- topic/entry "> <p class="- topic/p ">De client toestaan om FMRMS 1.x DRM-metagegevens te converteren naar Primetime DRM-metagegevens. </p> <p>Opmerking: Deze URL moet SSL (HTTPS) gebruiken. </p> </td> 
+   <td colname="2" class="- topic/entry "> <p class="- topic/p ">De client toestaan om FMRMS 1.x DRM-metagegevens te converteren naar Primetime DRM-metagegevens. </p> <p>Opmerking: deze URL moet SSL (HTTPS) gebruiken. </p> </td> 
   </tr> 
   <tr rowsep="0" class="- topic/row "> 
    <td colname="1" class="- topic/entry "><span class="filepath"> /edcws/services/urn:EDCLicenseService/*</span> </td> 
-   <td colname="2" class="- topic/entry "> <p class="- topic/p ">URL van webservice LiveCycle Rights Management ES. Als inhoud is gepubliceerd met een eerdere versie van FMRMS, staat deze URL oudere clients toe verbinding te maken met de server. Deze clients worden gevraagd een upgrade uit te voeren naar Adobe Primetime DRM. </p> <p class="- topic/p ">Opmerking: Deze URL moet SSL (HTTPS) gebruiken. </p> </td> 
+   <td colname="2" class="- topic/entry "> <p class="- topic/p ">URL van de webservice van LiveCyclee Rights Management ES. Als inhoud is gepubliceerd met een eerdere versie van FMRMS, staat deze URL oudere clients toe verbinding te maken met de server. Deze clients worden gevraagd een upgrade uit te voeren naar Adobe Primetime DRM. </p> <p class="- topic/p ">Opmerking: deze URL moet SSL (HTTPS) gebruiken. </p> </td> 
   </tr> 
   <tr> 
    <td colname="1" class="- topic/entry "> 

@@ -1,8 +1,7 @@
 ---
 description: U kunt functies in- of uitschakelen zonder de code te doorlopen met behulp van de beheerfactory.
 title: Functies in- of uitschakelen met ManagerFactory
-exl-id: 4e288a6e-80e5-43c1-aba2-374723dd9957
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '136'
 ht-degree: 0%

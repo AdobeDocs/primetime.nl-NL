@@ -1,15 +1,14 @@
 ---
 description: De SEES verwijzingsserver toont u hoe te om de apparaat-bindende machtigingsdienst toe te laten gebruikend ExpressPlay.
 title: Referentie-service Device-Binding Entitlement
-exl-id: 91f9d406-f3f9-47d3-aa50-f47c4e81b9fc
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '230'
 ht-degree: 0%
 
 ---
 
-# Referentieservice: Machtiging voor apparaatbinding {#reference-service-device-binding-entitlement}
+# Referentieservice: Device-Binding Entitlement {#reference-service-device-binding-entitlement}
 
 De SEES verwijzingsserver toont u hoe te om de apparaat-bindende machtigingsdienst toe te laten gebruikend ExpressPlay.
 

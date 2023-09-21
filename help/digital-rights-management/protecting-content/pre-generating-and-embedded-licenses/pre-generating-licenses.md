@@ -1,8 +1,7 @@
 ---
 description: Als u Adobe Primetime DRM Professional gebruikt, kunt u licenties vooraf genereren en licenties insluiten in inhoud. Deze functie kan worden gecombineerd met 'Enhanced License Chaining', zodat een Leaf-licentie vooraf wordt gegenereerd en ingesloten in de inhoud, en de client kan een basislicentie (gebonden aan een computer of domein) aanvragen bij een licentieserver. Als alternatief kunnen clienttoepassingen een workflow implementeren waarbij het apparaat zich vooraf bij een server registreert, de server licenties vooraf genereert die aan dat apparaat zijn gebonden en de client de licenties ophaalt van een eenvoudige HTTP-webserver.
 title: Vooraf gegenereerde licenties
-exl-id: 6ced7dde-b4bb-470d-bdae-3042f5577b67
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '611'
 ht-degree: 0%
@@ -13,7 +12,7 @@ ht-degree: 0%
 
 Als u Adobe Primetime DRM Professional gebruikt, kunt u licenties vooraf genereren en licenties insluiten in inhoud. Deze functie kan worden gecombineerd met &#39;Enhanced License Chaining&#39;, zodat een Leaf-licentie vooraf wordt gegenereerd en ingesloten in de inhoud, en de client kan een basislicentie (gebonden aan een computer of domein) aanvragen bij een licentieserver. Als alternatief kunnen clienttoepassingen een workflow implementeren waarbij het apparaat zich vooraf bij een server registreert, de server licenties vooraf genereert die aan dat apparaat zijn gebonden en de client de licenties ophaalt van een eenvoudige HTTP-webserver.
 
-Als u licenties vooraf wilt genereren, moet u `com.adobe.flashaccess.sdk.license.pregen.LicenseFactory.getInstance()` om een instantie te verkrijgen van `LicenseFactory`. U moet een licentieserverreferentie opgeven om de licenties die door deze fabriek worden gegenereerd, te ondertekenen. Deze klasse ondersteunt het genereren van Leaf-licenties zonder licentieketens en Leaf- en Root-licenties met de [Verbeterde licentietakken](../../protecting-content/implementing-the-license-server/license-chaining/gen-enhanced-license-chaining.md).
+Als u licenties vooraf wilt genereren, moet u `com.adobe.flashaccess.sdk.license.pregen.LicenseFactory.getInstance()` om een instantie van `LicenseFactory`. U moet een licentieserverreferentie opgeven om de licenties die door deze fabriek worden gegenereerd, te ondertekenen. Deze klasse ondersteunt het genereren van Leaf-licenties zonder licentieketens en Leaf- en Root-licenties met de [Verbeterde licentietakken](../../protecting-content/implementing-the-license-server/license-chaining/gen-enhanced-license-chaining.md).
 
 Wanneer u een Leaf-licentie genereert, moet u de metagegevens voor de inhoud opgeven die van toepassing zijn `initContentInfo()`. Als de metagegevens meerdere DRM-beleidsregels bevatten of als u een DRM-beleid wilt gebruiken dat niet is opgenomen in de metagegevens, moet u `setSelectedPolicy()` om het DRM-beleid voor het genereren van een licentie op te geven. Als u een lijst van de Update van het Beleid DRM gebruikt om updates aan beleid te volgen DRM, kunt u de Lijst van de Update van het Beleid DRM aan de Fabriek van de Vergunning verstrekken alvorens u de meta-gegevens met initialiseert `setPolicyUpdateList()`.
 

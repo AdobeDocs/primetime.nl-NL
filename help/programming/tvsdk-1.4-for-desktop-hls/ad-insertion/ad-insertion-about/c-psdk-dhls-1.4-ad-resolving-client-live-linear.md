@@ -1,8 +1,7 @@
 ---
 description: Voor live/lineaire inhoud vervangt TVSDK een segment van de inhoud van de hoofdstream door een ad-einde van dezelfde duur, zodat de tijdlijnduur ongewijzigd blijft.
 title: Actief/lineair en omzetten en invoegen
-exl-id: b0fbdddf-8529-4f7a-aef2-1764320307f1
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '289'
 ht-degree: 0%
@@ -20,7 +19,7 @@ TVSDK voegt advertenties op de volgende manieren in:
 * **Pre-roll**, die aan het begin van de inhoud staat.
 * **Midden rol**, die midden in de inhoud ligt.
 
-TVSDK accepteert het ad-einde, zelfs als de duur langer of korter is dan de vervangende duur van het actiepunt. TVSDK biedt standaard ondersteuning voor de `#EXT-X-CUE` activeer als een geldige advertentiemarkering bij het omzetten en plaatsen van advertenties. Voor deze markering is het metagegevensveld vereist `DURATION` in seconden en de unieke id van de actielijn. Bijvoorbeeld:
+TVSDK accepteert het ad-einde, zelfs als de duur langer of korter is dan de vervangende duur van het actiepunt. TVSDK biedt standaard ondersteuning voor de `#EXT-X-CUE` activeer als een geldige advertentiemarkering bij het omzetten en plaatsen van advertenties. Deze markering vereist het metagegevensveld `DURATION` in seconden en de unieke id van de actielijn. Bijvoorbeeld:
 
 ```
 #EXT-X-CUE:DURATION=27,ID="..."
@@ -28,6 +27,6 @@ TVSDK accepteert het ad-einde, zelfs als de duur langer of korter is dan de verv
 
 >[!IMPORTANT]
 >
->Bij het implementeren van een `AdPolicySelector`, kan een ander beleid worden gevoerd voor pre-roll, mid-roll en post-roll `AdBreakTimelineItem`s in `AdPolicyInfo`, die gebaseerd is op het type `AdBreakTimelineItem`s. U kunt bijvoorbeeld inhoud halverwege de rol behouden nadat deze is afgespeeld, maar de inhoud vóór de rol verwijderen nadat deze is afgespeeld.
+>Bij het implementeren van een `AdPolicySelector`, kan een ander beleid worden gevoerd voor pre-roll, mid-roll en post-roll `AdBreakTimelineItem`s in `AdPolicyInfo`, die gebaseerd is op het type `AdBreakTimelineItem`s. U kunt bijvoorbeeld de inhoud halverwege de rol behouden nadat deze is afgespeeld, maar de inhoud vóór de rol verwijderen nadat deze is afgespeeld.
 
 Nadat het afspelen is gestart, vernieuwt de video-engine het manifestbestand regelmatig. TVSDK lost nieuwe advertenties op en voegt de advertenties in wanneer een richtsnoerpunt in de levende of lineaire stroom wordt ontmoet die in manifest werd bepaald. Nadat de advertenties zijn opgelost en ingevoegd, berekent TVSDK de virtuele tijdlijn opnieuw en wordt een `TimelineEvent.TIMELINE_UPDATED` gebeurtenis.

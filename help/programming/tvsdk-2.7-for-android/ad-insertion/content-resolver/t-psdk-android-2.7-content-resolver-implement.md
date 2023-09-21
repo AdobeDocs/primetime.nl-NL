@@ -1,8 +1,7 @@
 ---
 description: U kunt uw eigen inhoudsoplossers implementeren op basis van de standaardoplossers.
 title: Een aangepaste contentoplosser implementeren
-exl-id: 04eff874-8a18-42f0-adb2-5b563e5c6a31
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '209'
 ht-degree: 0%
@@ -67,7 +66,7 @@ Wanneer TVSDK een nieuwe kans genereert, doorloopt het de geregistreerde content
    itemLoader.load(resource, id, config);
    ```
 
-1. Een `AdvertisingMetadata` als volgt naar TVSDK verwijzen:
+1. Een `AdvertisingMetadata` als volgt naar TVSDK te verwijzen:
    1. Een `AdvertisingMetadata` object.
    1. Sla de `AdvertisingMetadata` object naar `MediaPlayerItemConfig`.
 
@@ -80,7 +79,7 @@ Wanneer TVSDK een nieuwe kans genereert, doorloopt het de geregistreerde content
       mediaPlayerItemConfig.setAdvertisingMetadata(advertisingMetadata); 
       ```
 
-1. Maak een aangepaste ad resolver-klasse die de klasse `ContentResolver` klasse.
+1. Een aangepaste ad resolver-klasse maken die de klasse `ContentResolver` klasse.
    1. Overschrijf in de aangepaste en oplosser `doConfigure`, `doCanResolve`, `doResolve`, `doCleanup`:
 
       ```java
@@ -116,22 +115,22 @@ Wanneer TVSDK een nieuwe kans genereert, doorloopt het de geregistreerde content
 
       * Als de advertentie succesvol is, roep `process(List<TimelineOperation> proposals)` en `notifyCompleted(Opportunity opportunity)` op de `ContentResolverClient`
 
-         ```java
-         _client.process(timelineOperations); 
-         _client.notifyCompleted(opportunity); 
-         ```
+        ```java
+        _client.process(timelineOperations); 
+        _client.notifyCompleted(opportunity); 
+        ```
 
       * Als de advertentie-oplossing mislukt, roept u `notifyResolveError` op de `ContentResolverClient`
 
-         ```java
-         _client.notifyFailed(Opportunity opportunity, PSDKErrorCode error);
-         ```
+        ```java
+        _client.notifyFailed(Opportunity opportunity, PSDKErrorCode error);
+        ```
 
-         Bijvoorbeeld:
+        Bijvoorbeeld:
 
-         ```java
-         _client.notifyFailed(opportunity, UNSUPPORTED_OPERATION);
-         ```
+        ```java
+        _client.notifyFailed(opportunity, UNSUPPORTED_OPERATION);
+        ```
 
 <!--<a id="example_463B718749504A978F0B887786844C39"></a>-->
 

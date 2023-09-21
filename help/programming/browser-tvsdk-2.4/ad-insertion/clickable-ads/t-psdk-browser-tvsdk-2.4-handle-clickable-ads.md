@@ -1,8 +1,7 @@
 ---
 description: De MediaPlayer biedt een notifyClick()-functie die aan advertenties gerelateerde gebeurtenissen verzendt wanneer een aanklikbare advertentie wordt afgespeeld. Deze gebeurtenissen bieden informatie over advertenties en afbrekingen die uw app kan gebruiken om doorklikfuncties te bieden.
 title: Aanklikbare advertenties verwerken
-exl-id: 25738592-f3fe-4f13-b2bb-26a5f942cd18
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '217'
 ht-degree: 0%
@@ -60,7 +59,7 @@ De `AdClickedEvent` bevat de informatie die nodig is om de klikfunctie te verwer
    ```
 
 1. Voeg gebeurtenishandlers toe.
-a. Handel de gebeurtenis voor het starten van de advertentie af.
+a. Handel de gebeurtenis ad start af.
 Dit kan alles doen, zoals het instellen van de gebruikersinterface voor de gebruiker.
 
    ```
@@ -95,7 +94,7 @@ In dit voorbeeld verkrijgen we advertentiegegevens van de gebeurtenis en openen 
    }
    ```
 
-   c. Handel de gebeurtenis advertentie af.
+   c. Verwerk de gebeurtenis advertentie voltooid.
 
    ```
    onAdCompleted = function (event) { 

@@ -1,8 +1,7 @@
 ---
 description: De MediaResource-klasse vertegenwoordigt de inhoud die door de MediaPlayer-instantie moet worden geladen.
 title: Een mediabron maken
-exl-id: ab66255d-7848-479a-a8cd-c6113cdd7749
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '250'
 ht-degree: 0%
@@ -38,7 +37,7 @@ De MediaResource-klasse vertegenwoordigt de inhoud die door de MediaPlayer-insta
     </tr> 
     <tr> 
     <td colname="col1"> <p>metagegevens </p> </td> 
-    <td colname="col2"> <p>Een instantie van de <span class="codeph"> Metagegevens </span> klasse, die aangepaste informatie kan bevatten over de inhoud die moet worden geladen. Voorbeelden van inhoud zijn alternatieve inhoud of voegt inhoud toe die in de hoofdinhoud wordt geplaatst. Als u reclame gebruikt, instellen <span class="codeph"> AuditudeSettings </span> voordat u deze constructor gebruikt. Zie voor meer informatie <a href="../../ad-insertion/ad-insertion-metadata/c-psdk-browser-tvsdk-2.4-ad-insertion-metadata.md">Advertentie-toevoeging-meta-gegevens</a>. </p> <p>Tip: U kunt indien nodig de Flash-fallback forceren met de <span class="codeph"> forceFlash </span> parameter wanneer het creëren van een media middel. Dit kan handig zijn omdat momenteel niet alle functies (zoals Live Adflows) worden ondersteund in TVSDK van de browser. Flash fallback wordt gebruikt om video-inhoud af te spelen. </p> </td> 
+    <td colname="col2"> <p>Een instantie van de <span class="codeph"> Metagegevens </span> klasse, die aangepaste informatie over de te laden inhoud kan bevatten. Voorbeelden van inhoud zijn alternatieve inhoud of voegt inhoud toe die in de hoofdinhoud wordt geplaatst. Als u reclame gebruikt, instellen <span class="codeph"> AuditudeSettings </span> voordat u deze constructor gebruikt. Zie voor meer informatie <a href="../../ad-insertion/ad-insertion-metadata/c-psdk-browser-tvsdk-2.4-ad-insertion-metadata.md">Advertentie-toevoeging-meta-gegevens</a>. </p> <p>Tip: U kunt de Flash indien nodig terugdraaien met de <span class="codeph"> forceFlash </span> parameter wanneer het creëren van een media middel. Dit kan handig zijn omdat momenteel niet alle functies (zoals Live Adflows) worden ondersteund in TVSDK van de browser. Flash fallback wordt gebruikt om video-inhoud af te spelen. </p> </td> 
     </tr> 
     </tbody> 
    </table>
@@ -47,7 +46,7 @@ De MediaResource-klasse vertegenwoordigt de inhoud die door de MediaPlayer-insta
    >
    >Browser-TVSDK ondersteunt het afspelen van alleen bepaalde typen inhoud. Als u probeert een ander type inhoud te laden, verzendt Browser TVSDK een foutgebeurtenis.
 
-   De volgende code maakt een `MediaResource` instantie:
+   De volgende code maakt een `MediaResource` -instantie:
 
    ```js
    //create a MediaResource instance pointing to some HLS content 
@@ -60,6 +59,6 @@ De MediaResource-klasse vertegenwoordigt de inhoud die door de MediaPlayer-insta
 
    >[!TIP]
    >
-   >Op elk gewenst moment kunt u `MediaResource` accessors (getters) om het type, de URL en de metagegevens van de bron te bekijken.
+   >U kunt op elk gewenst moment daarna `MediaResource` accessors (getters) om het type, de URL en de metagegevens van de bron te bekijken.
 
 1. Laad de instantie MediaPlayer. Zie voor meer informatie [Een mediabron laden in de MediaPlayer](../../content-playback-options-browser-tvsdk/mediaplayer-initialize-for-video/t-psdk-browser-tvsdk-2.4-media-resource-load.md).

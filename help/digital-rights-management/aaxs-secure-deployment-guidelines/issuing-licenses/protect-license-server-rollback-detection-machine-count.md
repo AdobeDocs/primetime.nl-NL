@@ -2,8 +2,7 @@
 title: Aantal machines bij afgifte van vergunningen
 description: Aantal machines bij afgifte van vergunningen
 copied-description: true
-exl-id: de052e98-8ae3-4e12-8f77-787293edda39
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '208'
 ht-degree: 0%
@@ -20,4 +19,4 @@ Als de bedrijfsregels vereisen dat het aantal machines voor een gebruiker wordt 
 >
 >Deze vergelijking is niet praktisch voor plaatsingen die anonieme toegang toestaan. In dergelijke gevallen `MachineId.getUniqueID()` kan worden gebruikt, maar deze id is niet hetzelfde als de gebruiker toegang heeft tot inhoud van zowel Flash- als Adobe AIR®-runtimes. De id blijft ook behouden als de gebruiker de vaste schijf opnieuw formatteert.
 
-Meer informatie over `MachineToken.getMachineId()`en `MachineId.matches()`, zie de *Referentie voor Adobe Access API*.
+Meer informatie over `MachineToken.getMachineId()`en `MachineId.matches()`, zie de *API-naslaggids voor Adobe*.

@@ -1,8 +1,7 @@
 ---
-description: TVSDK biedt ondersteuning voor banneradvertenties die bij een lineaire advertentie horen en die vaak na afloop van de lineaire advertentie op de pagina blijven staan. Uw toepassing is verantwoordelijk voor het weergeven van de bijbehorende banners die een lineaire advertentie hebben.
+description: TVSDK biedt ondersteuning voor banneradvertenties die bij een lineaire advertentie horen en die vaak op de pagina blijven staan nadat de lineaire advertentie is beëindigd. Uw toepassing is verantwoordelijk voor het weergeven van de bijbehorende banners die een lineaire advertentie hebben.
 title: Companion banneradvertenties
-exl-id: 7ea1c518-5a0e-4ce3-8dd0-225f589dee3b
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '557'
 ht-degree: 0%
@@ -11,22 +10,22 @@ ht-degree: 0%
 
 # Companion banneradvertenties {#companion-banner-ads}
 
-TVSDK biedt ondersteuning voor banneradvertenties die bij een lineaire advertentie horen en die vaak na afloop van de lineaire advertentie op de pagina blijven staan. Uw toepassing is verantwoordelijk voor het weergeven van de bijbehorende banners die een lineaire advertentie hebben.
+TVSDK biedt ondersteuning voor banneradvertenties die bij een lineaire advertentie horen en die vaak op de pagina blijven staan nadat de lineaire advertentie is beëindigd. Uw toepassing is verantwoordelijk voor het weergeven van de bijbehorende banners die een lineaire advertentie hebben.
 
 Volg deze aanbevelingen bij het weergeven van bijhorende advertenties:
 
 * Poging om zoveel van de banneradvertenties van een video-advertentie weer te geven als in de lay-out van de speler passen.
 * Een bijbehorende banner alleen presenteren als u een locatie hebt die exact overeenkomt met de opgegeven hoogte en breedte.
 
-   >[!TIP]
-   >
-   >Wijzig de grootte van de banner niet.
+  >[!TIP]
+  >
+  >Wijzig de grootte van de banner niet.
 
 * Plaats de bijbehorende banner(s) zo snel mogelijk nadat de advertentie is gestart.
 * Bedek de hoofd-advertentie-/videoclip niet met bijbehorende banners.
 * Ga door met het weergeven van bijbehorende banners nadat de advertentie is beëindigd.
 
-   Standaard wordt elke bijbehorende banner weergegeven totdat u een nieuwe banner voor deze banner hebt.
+  Standaard wordt elke bijbehorende banner weergegeven totdat u een nieuwe banner voor deze banner hebt.
 
 ## Bannergegevens van de onderneming {#companion-banner-data}
 
@@ -58,8 +57,8 @@ Elk `PtAdAsset` biedt informatie over de weergave van het element.
    <td colname="col2">Het middeltype voor deze metgezelbanner: 
     <ul id="ul_A067787FE49E4B6095BE0AC1D447DBB3"> 
      <li id="li_02B7224C67004095B3F6E50FD21E507E">html: De gegevens staan in HTML-code. </li> 
-     <li id="li_5F37E14472424F808C6094F42009E676">iframe: De gegevens zijn een iframe-URL (src). </li> 
-     <li id="li_76B945007CE842158B5125422765E0B2">statisch: De gegevens zijn een staticURL die een directe URL naar een afbeelding is. </li> 
+     <li id="li_5F37E14472424F808C6094F42009E676">iframe: de gegevens zijn een iframe-URL (src). </li> 
+     <li id="li_76B945007CE842158B5125422765E0B2">statisch: de gegevens zijn een staticURL die een directe URL naar een afbeelding is. </li> 
     </ul> </td> 
   </tr> 
   <tr> 
@@ -79,7 +78,7 @@ Manifests kunnen banneradvertenties voor gezellen specificeren door:
 
 * Een HTML-fragment
 * De URL van een iFrame-pagina
-* De URL van een statische afbeelding of een Adobe Flash-SWF van het type
+* De URL van een statisch of Adobe Flash-SWF-bestand
 
 Voor elke bijbehorende advertentie geeft TVSDK aan welke typen beschikbaar zijn voor uw toepassing.
 
@@ -101,7 +100,7 @@ Voor elke bijbehorende advertentie geeft TVSDK aan welke typen beschikbaar zijn 
       Als u een standalone weergaveadvertentie wilt weergeven, voegt u de logica toe aan uw script om een normale DFP-advertentie (DoubleClick voor Publishers) in de juiste bannerinstantie uit te voeren.
    1. Verzendt de bannergegevens naar een functie op de pagina die de banners op een geschikte locatie weergeeft.
 
-      Dit is meestal een `div`en uw functie gebruikt de `div ID` om de banner weer te geven. Bijvoorbeeld:
+      Dit is meestal een `div`en uw functie gebruikt de `div ID` de banner weergeven. Bijvoorbeeld:
 
       ```
       - (void) onMediaPlayerAdPlayStarted:(NSNotification *) notification { 

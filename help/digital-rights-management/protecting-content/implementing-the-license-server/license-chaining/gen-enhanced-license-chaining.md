@@ -2,8 +2,7 @@
 title: Enhanced License Chaining
 description: Enhanced License Chaining
 copied-description: true
-exl-id: 4b07b29c-e739-4bf9-b464-0c82f68542d4
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '253'
 ht-degree: 0%
@@ -18,4 +17,4 @@ Als de licentie in Adobe Primetime DRM 3.0 via een verbeterde certificaatketen i
 
 >[!NOTE]
 >
->Als het beleid 3.0 Verbeterde het In de cache plaatsen van de Vergunning ondersteunt, maar de cliënt is Primetime DRM 2.0, geeft de server dan een 2.0 oorspronkelijke geketende vergunning uit. Gebruik `LicenseRequestMessage.getClientVersion()`.
+>Als het beleid 3.0 Verbeterde het In de cache plaatsen van de Vergunning ondersteunt, maar de cliënt is Primetime DRM 2.0, geeft de server dan een 2.0 oorspronkelijke geketende vergunning uit. Om de cliëntversie te bepalen, gebruik `LicenseRequestMessage.getClientVersion()`.

@@ -2,8 +2,7 @@
 title: Over CRL-bestanden
 description: Over CRL-bestanden
 copied-description: true
-exl-id: 126a323d-9433-4a1e-a617-2d3bbf717cce
-source-git-commit: 6a00df9c061da43f6efa49d927873db629568597
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '270'
 ht-degree: 0%
@@ -22,21 +21,21 @@ Hieronder volgt een lijst met extern gehoste CRL&#39;s die door zowel de Individ
 
    * URL: [!DNL <ht<span></span>tps://crl2.adobe.com/Adobe/FlashAccessIntermediateCA.crl>]
    * Bestand: [!DNL http___crl2.adobe.com_Adobe_FlashAccessIntermediateCA.crl]
-   * Geldigheid: Goed voor ongeveer 12 maanden vanaf de aanmaak
+   * Geldigheid: goed voor ongeveer 12 maanden na het maken
 
 * **Root CRL:**
 
    * URL: [!DNL <ht<span></span>tps://crl2.adobe.com/Adobe/FlashAccessRootCA.crl>]
    * Bestand: [!DNL http___crl2.adobe.com_Adobe_FlashAccessRootCA.crl]
-   * Geldigheid: Goed voor ongeveer 5 jaar na de creatie
+   * Geldigheid: goed voor ongeveer 5 jaar na het maken
 
 * **Laatste CRL:**
 
    * URL: [!DNL <ht<span></span>tps://crl3.adobe.com/AdobeSystemsIncorporatedFlashAccessRuntime/LatestCRL.crl>]
    * Bestand: [!DNL http___crl3.adobe.com_AdobeSystemsIncorporatedFlashAccessRuntime_LatestCRL.crl]
-   * Geldigheid: Goed voor ongeveer 3 maanden na de aanmaak
+   * Geldigheid: ongeveer 3 maanden na het maken goed
 
-Neem contact op met de Adobe Support voor informatie over de extern gehoste CRL&#39;s die door de licentieservers kunnen worden gebruikt.
+Neem contact op met de ondersteuning voor Adoben voor informatie over de extern gehoste CRL&#39;s die door de licentieservers kunnen worden gebruikt.
 
 <!---
 

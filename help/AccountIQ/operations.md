@@ -1,8 +1,7 @@
 ---
 title: Activiteiten in rekening-IQ
 description: De verrichtingen in Rekening IQ impliceren acties om automatiserings en bulkverrichtingen op abonneerekeningen uit te voeren en hun gevolgen te volgen.
-exl-id: ba6bceca-221c-42db-b207-804e4b9f6d54
-source-git-commit: 5b34fbe26078ae761d61179975366505c5628c9c
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '467'
 ht-degree: 0%
@@ -19,7 +18,7 @@ Naar weergave **Bewerkingen** pagina selecteren **Bewerkingen** optie onder **Ha
 
 ![](assets/operations-page.png)
 
-*Afbeelding: Lijst en nadere gegevens van bestaande transacties in IQ van account*
+*Afbeelding: Lijst en details van bestaande bewerkingen in Account IQ*
 
 Op de pagina van Verrichtingen, kunt u:
 
@@ -27,7 +26,7 @@ Op de pagina van Verrichtingen, kunt u:
 
 * Bewerkingsdetails weergeven, zoals:
 
-   * status (Gepland, Running, Beëindigd, Fout, of Gestopt)
+   * status (Gepland, Lopend, Beëindigd, Fout, of Gestopt)
 
    * voortgang (in percentage van voltooiing)
 
@@ -59,7 +58,7 @@ U kunt de effecten van een bewerking analyseren door het bijbehorende rapport te
 
    ![](assets/operation-impact-report.png)
 
-   *Afbeelding: Operationeel verslag om de effecten van de concrete acties te bekijken*
+   *Afbeelding: Operationeel rapport om de effecten van de activiteiten te bekijken*
 
    De X-as geeft de evaluatieperiode weer en de y-as geeft het effect van de operatie weer (in termen van het aantal rekeningen in een segment tijdens de evaluatieperiode). Elke balk bestaat uit drie delen.
 
@@ -68,6 +67,7 @@ U kunt de effecten van een bewerking analyseren door het bijbehorende rapport te
    * Een ander deel vertegenwoordigt het aantal actieve rekeningen voor die periode die oorspronkelijk in het segment waren, maar niet langer aan de criteria van het exploitatiesegment voldoen.
 
    * Het derde deel vertegenwoordigt de rekeningen die in die periode niet actief waren.
+
    >[!NOTE]
    >
    >De eerste balk geeft het aantal rekeningen weer dat aan het begin van de evaluatieperiode aan de voorwaarden van het exploitatiesegment voldoet.

@@ -1,8 +1,7 @@
 ---
-description: Streaming via internet vereist een constante en stabiele verbinding om een stream vanaf een externe server af te spelen. De variabiliteit van de internetverbinding of het afspelen van streaming van een viewer betekent echter dat extern afspelen mogelijk niet de kwaliteit heeft van media die lokaal worden afgespeeld.
+description: Streaming via internet vereist een constante en stabiele verbinding om een stream vanaf een externe server af te spelen. De variabiliteit van de internetverbinding of het afspelen van streaming van een viewer betekent echter dat het afspelen op afstand mogelijk niet de kwaliteit heeft van media die lokaal worden afgespeeld.
 title: AC-3 5.1-indeling
-exl-id: dcc43c1b-b9ce-44a1-a4c9-50ccfc5d572d
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '514'
 ht-degree: 0%
@@ -11,7 +10,7 @@ ht-degree: 0%
 
 # AC-3 5.1-indeling{#ac-format}
 
-Streaming via internet vereist een constante en stabiele verbinding om een stream vanaf een externe server af te spelen. De variabiliteit van de internetverbinding of het afspelen van streaming van een viewer betekent echter dat extern afspelen mogelijk niet de kwaliteit heeft van media die lokaal worden afgespeeld.
+Streaming via internet vereist een constante en stabiele verbinding om een stream vanaf een externe server af te spelen. De variabiliteit van de internetverbinding of het afspelen van streaming van een viewer betekent echter dat het afspelen op afstand mogelijk niet de kwaliteit heeft van media die lokaal worden afgespeeld.
 
 Primetime kan niet tegen dergelijke mislukkingen zoals een ISP stroomonderbreking of een kabelontbinding beschermen. Primetime streaming biedt echter bescherming bij uitvalbeveiliging om het afspelen te beschermen tegen bepaalde fouten op de externe server of operationele fouten, waardoor viewers een betere ervaring krijgen. TVSDK implementeert failover-beveiliging om afspeelonderbrekingen tot een minimum te beperken en een naadloze weergave te bereiken ondanks transmissieproblemen. De videospeler schakelt automatisch over naar een back-upmediaset wanneer volledige uitvoeringen of fragmenten niet beschikbaar zijn.
 
@@ -21,7 +20,7 @@ Zie voor meer informatie [Dolby Digital 5.1](https://www.dolby.com/us/en/technol
 
 >[!IMPORTANT]
 >
->TVSDK versie 1.4 ondersteunt de indeling AC-3 5.1 alleen op Amazon FireTV.
+>TVSDK versie 1.4 biedt alleen ondersteuning voor de indeling AC-3 5.1 op Amazon FireTV.
 
 TVSDK ondersteunt de volgende AC-3 5.1-functies:
 
@@ -29,10 +28,10 @@ TVSDK ondersteunt de volgende AC-3 5.1-functies:
 * Gemengde/niet-gemengde streams voor surround-audiotypen
 * Mogelijkheid om het apparaat te vragen om te controleren of de surround-audiocodec beschikbaar is op het apparaat.
 
-   De resultaten bepalen welk voorkeurstype voor audiocodec is geselecteerd. Het manifest met audiocodetype dat het apparaat niet zal gebruiken wordt verworpen. Als bijvoorbeeld de indeling AC-3 is geselecteerd, worden profielen met de indeling Advanced Audio Coding (AAC) niet in aanmerking genomen.
+  De resultaten bepalen welk voorkeurstype voor audiocodec is geselecteerd. Het manifest met audiocodetype dat het apparaat niet zal gebruiken wordt verworpen. Als bijvoorbeeld de indeling AC-3 is geselecteerd, worden profielen met de indeling Advanced Audio Coding (AAC) niet in aanmerking genomen.
 * Passthrough-modus
 
-   In de passthrough-modus wordt de TVSDK-indeling gewijzigd of ongewijzigd (afhankelijk van het apparaat) Dolby-media van de Decoder in plaats van de media te decoderen van de AC-3 5.1-indeling naar een PCM-indeling (multi-channel pulse-code modululation). Deze media worden naar het audioapparaat (luidspreker of ontvanger) verzonden, zodat het audioapparaat de Dolby-surround-stream kan decoderen en afspelen.
+  In de passthrough-modus wordt de TVSDK-indeling gewijzigd of ongewijzigd (afhankelijk van het apparaat) Dolby-media van de Decoder in plaats van de media te decoderen van de AC-3 5.1-indeling naar een PCM-indeling (multi-channel pulse-code modululation). Deze media worden naar het audioapparaat (luidspreker of ontvanger) verzonden, zodat het audioapparaat de Dolby-surround-stream kan decoderen en afspelen.
 
 TVSDK ondersteunt de AC-3 5.1-functies alleen op het Amazon Fire TV-apparaat van de eerste generatie.
 
@@ -59,7 +58,7 @@ Hier is het typische werkschema dat voorkomt wanneer TVSDK manifest met AC-3 en 
 
 Als een Android-apparaat tijdens de verwerking van AC-3-media is aangesloten op het luidsprekersysteem, is de beslissing om inhoud af te spelen in de surround-modus of de stereomodus afhankelijk van de configuratie van het apparaat.
 
-|  | Surround sound | Stereoluidspreker |
+|   | Surround sound | Stereoluidspreker |
 |---|---|---|
 | Apparaatconfiguratie Dolby ingeschakeld (of automatisch) | Apparaatconfiguratie Dolby ingeschakeld (of automatisch) | Stereomodus |
 | Apparaatconfiguratie Dolby uit | Stereomodus | Stereomodus |

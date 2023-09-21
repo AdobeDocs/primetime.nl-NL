@@ -1,8 +1,7 @@
 ---
-description: Om klanten aan te passen die slechts voor wat willen betalen zij, eerder dan een vast tarief ongeacht werkelijk gebruik, Adobe gebruiksmetriek verzamelen en deze metriek gebruiken om te bepalen hoeveel om de klanten in rekening te brengen.
+description: Om klanten aan te passen die slechts voor wat willen betalen zij, eerder dan een vast tarief ongeacht werkelijk gebruik, Adobe gebruiksmetriek inzamelen en deze metriek gebruiken om te bepalen hoeveel om de klanten in rekening te brengen.
 title: Factureringscijfers
-exl-id: 85974d51-3e29-42f6-bf31-1fa9ccbdd528
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '224'
 ht-degree: 0%
@@ -11,9 +10,9 @@ ht-degree: 0%
 
 # Overzicht {#billing-metrics-overview}
 
-Om klanten aan te passen die slechts voor wat willen betalen zij, eerder dan een vast tarief ongeacht werkelijk gebruik, Adobe gebruiksmetriek verzamelen en deze metriek gebruiken om te bepalen hoeveel om de klanten in rekening te brengen.
+Om klanten aan te passen die slechts voor wat willen betalen zij, eerder dan een vast tarief ongeacht werkelijk gebruik, Adobe gebruiksmetriek inzamelen en deze metriek gebruiken om te bepalen hoeveel om de klanten in rekening te brengen.
 
-Telkens wanneer de speler een streamstartgebeurtenis genereert, begint TVSDK regelmatig HTTP-berichten naar het Adobe systeem te verzenden. De periode, die ook wel factureerbare duur wordt genoemd, kan verschillen voor standaard VOD, pro VOD (mid-roll ads ingeschakeld) en live inhoud. De standaardduur voor elk inhoudstype is 30 minuten, maar uw contract met Adobe bepaalt de werkelijke waarden.
+Telkens wanneer de speler een streamstartgebeurtenis genereert, begint TVSDK regelmatig HTTP-berichten te verzenden naar het factureringssysteem van de Adobe. De periode, die ook wel factureerbare duur wordt genoemd, kan verschillen voor standaard VOD, pro VOD (mid-roll ads ingeschakeld) en live inhoud. De standaardduur voor elk inhoudstype is 30 minuten, maar uw contract met Adobe bepaalt de daadwerkelijke waarden.
 
 De berichten bevatten de volgende informatie:
 
@@ -24,6 +23,6 @@ De berichten bevatten de volgende informatie:
 * Of de stream door DRM is beveiligd
 * De TVSDK-versie en -platform
 
-Adobe vormt deze regeling vooraf, maar u kunt met uw vertegenwoordiger van Inschakelen van de Adobe werken om de regeling te veranderen, met uw vertegenwoordiger van Adobe te werken Enablement.
+Adobe vormt vooraf deze regeling, maar u kunt met uw vertegenwoordiger van de Adobe werken Enablement om de regeling te veranderen, met uw vertegenwoordiger van de Adobe werken Enablement.
 
-Om de statistieken te controleren die TVSDK naar Adobe verzendt, verkrijg URL van uw vertegenwoordiger van Inablement van de Adobe, en gebruik een netwerk vangt hulpmiddel, zoals Charles, om de gegevens te zien.
+Om de statistieken te controleren die TVSDK naar Adobe verzendt, verkrijg URL van uw vertegenwoordiger van Inschakelen van de Adobe, en gebruik een hulpmiddel van de netwerkvangst, zoals Charles, om de gegevens te zien.

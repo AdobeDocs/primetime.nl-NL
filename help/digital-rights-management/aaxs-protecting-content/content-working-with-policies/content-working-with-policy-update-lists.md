@@ -2,8 +2,7 @@
 title: Werken met lijst met beleidsupdates
 description: Werken met lijst met beleidsupdates
 copied-description: true
-exl-id: 71715eec-e6a3-4640-b17f-ec0c38caf73e
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '440'
 ht-degree: 0%
@@ -16,7 +15,7 @@ Voor licentieservers die geen toegang hebben tot een database voor het opslaan v
 
 Het beleid kan ook worden ingetrokken als eigenaren of distributeurs van inhoud de afgifte van licenties in het kader van een bepaald beleid willen stopzetten. Een lijst met beleidsupdates kan worden gebruikt om beleidsherroeping in SDK af te dwingen. De lijsten van de beleidsupdate kunnen ook worden gebruikt om een lijst van bijgewerkt beleid aan SDK te verstrekken. Als u een beleid intrekt, worden reeds afgegeven licenties niet ingetrokken. Het voorkomt alleen dat er in het kader van dat beleid extra vergunningen worden afgegeven.
 
-Bij het werken met de lijst met beleidsupdates wordt het gebruik van een `PolicyUpdateListFactory` object. Voer de volgende stappen uit om een lijst met beleidsupdates te maken, een bestaande lijst met beleidsupdates te laden en te controleren of een beleid is bijgewerkt of ingetrokken met de Java API:
+Wanneer u werkt met een lijst met beleidsupdates, wordt een `PolicyUpdateListFactory` object. Voer de volgende stappen uit om een lijst met beleidsupdates te maken, een bestaande lijst met beleidsupdates te laden en te controleren of een beleid is bijgewerkt of ingetrokken met de Java API:
 
 1. Stel uw ontwikkelomgeving in en neem alle JAR-bestanden op die worden vermeld in de ontwikkelomgeving van uw project.
 1. Een `ServerCredentialFactory` -instantie om de referenties te laden die nodig zijn voor ondertekening.

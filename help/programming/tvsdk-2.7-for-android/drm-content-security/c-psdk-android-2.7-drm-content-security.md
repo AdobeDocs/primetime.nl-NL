@@ -1,9 +1,8 @@
 ---
-description: U kunt de functies van het DRM-systeem (Primetime Digital Rights Management) gebruiken om veilige toegang tot uw video-inhoud te bieden. U kunt ook DRM-oplossingen van derden gebruiken als alternatief voor de geïntegreerde Adobe.
+description: U kunt de functies van het DRM-systeem (Primetime Digital Rights Management) gebruiken om veilige toegang tot uw video-inhoud te bieden. U kunt ook DRM-oplossingen van derden gebruiken als alternatief voor de geïntegreerde oplossing van Adobe.
 keywords: DRM;HLS
 title: Inhoudsbescherming
-exl-id: 48eb38a4-055b-4b6e-b492-664166b4643a
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '91'
 ht-degree: 0%
@@ -12,6 +11,6 @@ ht-degree: 0%
 
 # Overzicht {#content-protection-overview}
 
-U kunt de functies van het DRM-systeem (Primetime Digital Rights Management) gebruiken om veilige toegang tot uw video-inhoud te bieden. U kunt ook DRM-oplossingen van derden gebruiken als alternatief voor de geïntegreerde Adobe.
+U kunt de functies van het DRM-systeem (Primetime Digital Rights Management) gebruiken om veilige toegang tot uw video-inhoud te bieden. U kunt ook DRM-oplossingen van derden gebruiken als alternatief voor de geïntegreerde oplossing van Adobe.
 
-Neem contact op met uw Adobe-vertegenwoordiger voor de meest actuele informatie over de beschikbaarheid van DRM-oplossingen van derden.
+Neem contact op met uw Adobe voor de meest actuele informatie over de beschikbaarheid van DRM-oplossingen van derden.

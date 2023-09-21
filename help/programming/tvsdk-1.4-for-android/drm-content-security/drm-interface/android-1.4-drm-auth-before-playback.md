@@ -1,8 +1,7 @@
 ---
 description: Wanneer de DRM-metagegevens voor een video gescheiden zijn van de mediastream, moet u verificatie uitvoeren voordat u begint met afspelen.
 title: DRM-verificatie vóór afspelen
-exl-id: da81ec38-ea77-4fcd-a6e4-5804465385cb
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '338'
 ht-degree: 0%
@@ -168,4 +167,4 @@ Wanneer dit het geval is, gebruik `DRMHelper` methoden om de inhoud van het DRM-
 1. Start het afspelen als de verificatie is gelukt.
 1. Als de verificatie niet is gelukt, meldt u dit aan de gebruiker en start u het afspelen niet.
 
-De toepassing moet eventuele verificatiefouten afhandelen. Verificatie is mislukt voordat TVSDK wordt afgespeeld in een foutstatus. De status wordt gewijzigd in ERROR, er wordt een fout gegenereerd met de foutcode uit de DRM-bibliotheek en het afspelen wordt gestopt. Uw toepassing moet het probleem oplossen, de speler herstellen en de bron opnieuw laden.
+De toepassing moet eventuele verificatiefouten afhandelen. Verificatie is mislukt voordat TVSDK wordt afgespeeld in een foutstatus. De status wordt gewijzigd in ERROR, er wordt een fout gegenereerd met de foutcode uit de DRM-bibliotheek en het afspelen wordt gestopt. Uw toepassing moet het probleem oplossen, de speler opnieuw instellen en de bron opnieuw laden.

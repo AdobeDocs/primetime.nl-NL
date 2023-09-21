@@ -2,8 +2,7 @@
 title: Overzicht
 description: Overzicht
 copied-description: true
-exl-id: 866b3147-c28b-41b0-8653-06ba867354c5
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '1315'
 ht-degree: 0%
@@ -40,9 +39,9 @@ java -jar AdobePackager.jar
 * `source` - De naam van het bestand dat u wilt versleutelen.
 * `dest` - De naam van het resulterende gecodeerde bestand.
 
-   Als u een map opgeeft, wordt het gecodeerde bestand automatisch opgeslagen in de opgegeven map met dezelfde bestandsnaam als het bronbestand. U kunt echter geen doelmap opgeven die het bronbestand bevat.
+  Als u een map opgeeft, wordt het gecodeerde bestand automatisch opgeslagen in de opgegeven map met dezelfde bestandsnaam als het bronbestand. U kunt echter geen doelmap opgeven die het bronbestand bevat.
 
-**Meerdere bestanden met dezelfde sleutel verpakken** (voor ondersteuning voor meerdere bitsnelheden):
+**Meerdere bestanden met dezelfde sleutel in een pakket plaatsen** (voor ondersteuning voor meerdere bitsnelheden):
 
 ```
 java -jar AdobePackager.jar  
@@ -93,7 +92,7 @@ java -jar AdobePackager.jar -dm <metadatafile> [-e]
  <tbody class="- topic/tbody "> 
   <tr rowsep="1" class="- topic/row "> 
    <td colname="1" class="- topic/entry "> <p class="- topic/p ">-c <span class="+ topic/ph pr-d/codeph codeph"> configfile </span> </p> </td> 
-   <td colname="2" class="- topic/entry "> <p class="- topic/p ">Hier geeft u de naam en locatie op van het configuratiebestand. </p> <p class="- topic/p ">Als u geen naam of locatie opgeeft, zoekt DRM Media Packager naar <span class="filepath"> flashaccessstools.properties </span> in de huidige werkmap. </p> <p>Opmerking: Opties die u op de opdrachtregel opgeeft, hebben voorrang op de opties die u in het configuratiebestand opgeeft. </p> </td> 
+   <td colname="2" class="- topic/entry "> <p class="- topic/p ">Hier geeft u de naam en locatie op van het configuratiebestand. </p> <p class="- topic/p ">Als u geen naam of locatie opgeeft, zoekt DRM Media Packager naar <span class="filepath"> flashaccessstools.properties </span> in de huidige werkmap. </p> <p>Opmerking: de opties die u op de opdrachtregel opgeeft, hebben voorrang op de opties die u in het configuratiebestand opgeeft. </p> </td> 
   </tr> 
   <tr rowsep="1" class="- topic/row "> 
    <td colname="1" class="- topic/entry "> <p class="- topic/p ">-d <span class="+ topic/ph pr-d/codeph codeph"> versleuteld bestand </span> </p> </td> 
@@ -105,11 +104,11 @@ java -jar AdobePackager.jar -dm <metadatafile> [-e]
   </tr> 
   <tr rowsep="1" class="- topic/row "> 
    <td colname="1" class="- topic/entry "> <p class="- topic/p ">-e </p> </td> 
-   <td colname="2" class="- topic/entry "> <p class="- topic/p ">Extraheert DRM-beleid uit een pakketbestand wanneer u deze optie in combinatie met de optie <span class="codeph"> -d </span> optie. </p> <p class="- topic/p ">Er wordt automatisch een bestand gemaakt in dezelfde map als waarin het gecodeerde bestand zich bevindt, met een bestandsnaam en DRM-beleidsidentificatie. </p> </td> 
+   <td colname="2" class="- topic/entry "> <p class="- topic/p ">Extraheert DRM-beleid uit een pakketbestand wanneer u deze optie in combinatie met de optie <span class="codeph"> -d </span> -optie. </p> <p class="- topic/p ">Er wordt automatisch een bestand gemaakt in dezelfde map als waarin het gecodeerde bestand zich bevindt, met een bestandsnaam en DRM-beleidsidentificatie. </p> </td> 
   </tr> 
   <tr rowsep="1" class="- topic/row "> 
    <td colname="1" class="- topic/entry "> <p class="- topic/p ">-h </p> </td> 
-   <td colname="2" class="- topic/entry "> <p class="- topic/p ">Extraheert de DRM-header uit een pakketbestand wanneer u deze optie in combinatie met de <span class="codeph"> -d </span> optie. </p> <p class="- topic/p ">Er wordt automatisch een bestand gemaakt in de map waarin het gecodeerde bestand zich bevindt, met de bestandsnaam en de extensie <span class="filepath"> .header </span>. </p> </td> 
+   <td colname="2" class="- topic/entry "> <p class="- topic/p ">Extraheert de DRM-header uit een pakketbestand wanneer u deze optie in combinatie met de <span class="codeph"> -d </span> -optie. </p> <p class="- topic/p ">Er wordt automatisch een bestand gemaakt in de map waarin het gecodeerde bestand zich bevindt, met de bestandsnaam en de extensie <span class="filepath"> .header </span>. </p> </td> 
   </tr> 
   <tr rowsep="1" class="- topic/row "> 
    <td colname="1" class="- topic/entry "> <p class="- topic/p ">-i <span class="+ topic/ph pr-d/codeph codeph"> contentID </span> </p> </td> 
@@ -121,7 +120,7 @@ java -jar AdobePackager.jar -dm <metadatafile> [-e]
   </tr> 
   <tr rowsep="1" class="- topic/row "> 
    <td colname="1" class="- topic/entry "> <p class="- topic/p ">-m </p> </td> 
-   <td colname="2" class="- topic/entry "> <p class="- topic/p ">Metagegevens uit een pakketbestand extraheren wanneer u deze optie in combinatie met de optie <span class="codeph"> -d </span> optie. </p> <p class="- topic/p ">Er wordt automatisch een bestand met een bestandsnaam en een <span class="codeph"> .metadata </span> extensie. </p> </td> 
+   <td colname="2" class="- topic/entry "> <p class="- topic/p ">Metagegevens uit een pakketbestand extraheren wanneer u deze optie in combinatie met de optie <span class="codeph"> -d </span> -optie. </p> <p class="- topic/p ">Er wordt automatisch een bestand gemaakt in dezelfde map als het gecodeerde bestand met een bestandsnaam en een <span class="codeph"> .metadata </span> extensie. </p> </td> 
   </tr> 
   <tr rowsep="1" class="- topic/row "> 
    <td colname="1" class="- topic/entry "> <p class="- topic/p ">-noprompt </p> </td> 
@@ -168,7 +167,7 @@ java -jar AdobePackager.jar -dm <metadatafile> [-e]
   </tr> 
   <tr rowsep="1" class="- topic/row "> 
    <td colname="1" class="- topic/entry "><span class="codeph"> encrypt.contents.video.level</span> </td> 
-   <td colname="2" class="- topic/entry "> <p class="- topic/p ">Geeft het niveau van de videoversleuteling aan. </p> <p class="- topic/p ">Een waarde van <span class="codeph"> hoog</span> wordt gebruikt om alle video-inhoud te coderen, terwijl waarden van <span class="codeph"> medium</span> en <span class="codeph"> laag</span> worden gebruikt om delen van de video-inhoud te coderen voor MP4-bestanden die H.264-inhoud bevatten. </p> <p class="- topic/p ">value = <span class="codeph"> hoog | medium | laag</span> </p> </td> 
+   <td colname="2" class="- topic/entry "> <p class="- topic/p ">Hiermee wordt het niveau van de videocodering aangegeven. </p> <p class="- topic/p ">Een waarde van <span class="codeph"> hoog</span> wordt gebruikt om alle video-inhoud te coderen, terwijl waarden van <span class="codeph"> medium</span> en <span class="codeph"> laag</span> worden gebruikt om delen van de video-inhoud te coderen voor MP4-bestanden die H.264-inhoud bevatten. </p> <p class="- topic/p ">value = <span class="codeph"> hoog | medium | laag</span> </p> </td> 
   </tr> 
   <tr rowsep="1" class="- topic/row "> 
    <td colname="1" class="- topic/entry "><span class="codeph"> encrypt.contents.secondsUnencrypted</span> </td> 
@@ -212,7 +211,7 @@ java -jar AdobePackager.jar -dm <metadatafile> [-e]
   </tr> 
   <tr rowsep="1" class="- topic/row "> 
    <td colname="1" class="- topic/entry "><span class="codeph"> encrypt.keys.rotation.enable</span> </td> 
-   <td colname="2" class="- topic/entry "> <p class="- topic/p ">Geeft aan of toetsrotatie is ingeschakeld. </p> <p class="- topic/p ">Indien ingesteld op false (de standaardinstelling), wordt sleutelrotatie uitgeschakeld en wordt de master CEK gebruikt om alle samples in de inhoud te coderen. </p> <p class="- topic/p ">Indien ingesteld op true, wordt sleutelrotatie ingeschakeld en kunnen verschillende toetsen worden gebruikt om segmenten van elke inhoud te coderen. </p> </td> 
+   <td colname="2" class="- topic/entry "> <p class="- topic/p ">Geeft aan of toetsrotatie is ingeschakeld. </p> <p class="- topic/p ">Indien ingesteld op false (de standaardinstelling), wordt sleutelrotatie uitgeschakeld en wordt de hoofd-CEK gebruikt om alle samples in de inhoud te coderen. </p> <p class="- topic/p ">Indien ingesteld op true, wordt sleutelrotatie ingeschakeld en kunnen verschillende toetsen worden gebruikt om segmenten van elke inhoud te coderen. </p> </td> 
   </tr> 
   <tr rowsep="1" class="- topic/row "> 
    <td colname="1" class="- topic/entry "><span class="codeph">encrypt.keys.rotation.key.n</span> </td> 

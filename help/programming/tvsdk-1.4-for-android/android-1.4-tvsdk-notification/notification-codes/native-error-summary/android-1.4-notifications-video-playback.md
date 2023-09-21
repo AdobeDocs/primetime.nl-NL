@@ -1,15 +1,14 @@
 ---
 description: De interface Video Encoder van AVE keert deze videoplaybackberichten in het NATIVE_ERROR meta-gegevensvoorwerp terug.
 title: NATIVE_ERROR-waarden voor het afspelen van video
-exl-id: a4476bbe-a62b-40cf-9795-cd209683c572
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '1407'
 ht-degree: 6%
 
 ---
 
-# NATIVE_ERROR: Afspeelwaarden van video{#native-error-video-playback-values}
+# NATIVE_ERROR: waarden voor het afspelen van video{#native-error-video-playback-values}
 
 De interface Video Encoder van AVE keert deze videoplaybackberichten in het NATIVE_ERROR meta-gegevensvoorwerp terug.
 
@@ -40,7 +39,7 @@ De interface Video Encoder van AVE keert deze videoplaybackberichten in het NATI
   <tr> 
    <td colname="col1"> 2 </td> 
    <td colname="col2"><span class="codeph"> EOF</span> </td> 
-   <td colname="col3"> Bewerking niet mogelijk vanwege bestandseinde (EOF). </td> 
+   <td colname="col3"> Bewerking niet mogelijk vanwege bestandseinenvoorwaarde. </td> 
   </tr> 
   <tr> 
    <td colname="col1"> 3 </td> 
@@ -90,7 +89,7 @@ De interface Video Encoder van AVE keert deze videoplaybackberichten in het NATI
   <tr> 
    <td colname="col1"> 12 </td> 
    <td colname="col2"><span class="codeph"> PARSE_ERROR </span> </td> 
-   <td colname="col3"> Fout bij het parseren van het mediabestand. </td> 
+   <td colname="col3"> Fout bij parseren van mediabestand. </td> 
   </tr> 
   <tr> 
    <td colname="col1"> 13 </td> 
@@ -495,7 +494,7 @@ De interface Video Encoder van AVE keert deze videoplaybackberichten in het NATI
   <tr> 
    <td colname="col1"> 93 </td> 
    <td colname="col2"><span class="codeph"> TRICKPLAY_ENDED_DUE_TO_ERROR</span> </td> 
-   <td colname="col3">Er is een fout opgetreden tijdens het afspelen van media in <i>truc</i> in. De modus Steen afspelen wordt beëindigd en de stream wordt gepauzeerd. Bellen <span class="codeph"> Play()</span> om de media in de normale modus af te spelen. </td> 
+   <td colname="col3">Er is een fout opgetreden tijdens het afspelen van media in <i>truc</i> -modus. De modus Steen afspelen wordt beëindigd en de stream wordt gepauzeerd. Bellen <span class="codeph"> Play()</span> om de media in de normale modus af te spelen. </td> 
   </tr> 
   <tr> 
    <td colname="col1"> 95 </td> 

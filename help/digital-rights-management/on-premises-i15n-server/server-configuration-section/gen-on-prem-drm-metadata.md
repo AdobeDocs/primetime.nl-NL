@@ -2,8 +2,7 @@
 title: De DRM-metagegevens op locatie genereren
 description: De DRM-metagegevens op locatie genereren
 copied-description: true
-exl-id: b42e3491-081b-45bf-bd00-8fb769a97446
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '172'
 ht-degree: 0%
@@ -20,7 +19,7 @@ A [!DNL CreateMetadata.jar] wordt opgenomen in het [!DNL create_metadata] map. H
    * [!DNL commons-cli-1.2.jar]
    * [!DNL createMetadata.properties]
 
-      De twee JAR-bestanden kunnen zich bevinden in de [!DNL Command Line Tools/libs] map. De [!DNL createMetadata.properties] bestand kan naast het [!DNL flashaccesstools.properties] bestand.
+     De twee JAR-bestanden kunnen zich bevinden in de [!DNL Command Line Tools/libs] map. De [!DNL createMetadata.properties] bestand kan naast het [!DNL flashaccesstools.properties] bestand.
 
 <!--<a id="example_2116349CA33642CD9293EAD94A532ED8"></a>-->
 

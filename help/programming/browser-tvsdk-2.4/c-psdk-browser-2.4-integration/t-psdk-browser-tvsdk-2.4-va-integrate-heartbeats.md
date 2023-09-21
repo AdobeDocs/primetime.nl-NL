@@ -1,8 +1,7 @@
 ---
-description: U kunt uw speler configureren om het videogebruik te volgen en te analyseren.
+description: U kunt de speler configureren om het videogebruik te volgen en te analyseren.
 title: Videoanalysemogelijkheden initialiseren en configureren
-exl-id: e0bf461b-a431-4fba-bd3d-c38be307a92f
-source-git-commit: 3bbf70e07b51585c9b53f470180d55aa7ac084bc
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '689'
 ht-degree: 0%
@@ -11,25 +10,25 @@ ht-degree: 0%
 
 # Videoanalysemogelijkheden initialiseren en configureren {#initialize-and-configure-video-analytics}
 
-U kunt uw speler configureren om het videogebruik te volgen en te analyseren.
+U kunt de speler configureren om het videogebruik te volgen en te analyseren.
 
 Controleer of u het volgende hebt voordat u video-tracking (videohartslagen) activeert:
 
-* Configuratie/Browser TVSDK Initialisatiegegevens - Neem contact op met uw Adobe-vertegenwoordiger voor uw specifieke informatie over uw video-tracking-account:
+* Configuratie/Browser TVSDK Initialisatiegegevens - Neem contact op met uw Adobe voor uw specifieke informatie over uw video-tracking-account:
 
 <table id="table_3565328ABBEE4605A92EAE1ADE5D6F84">
  <tbody>
   <tr>
-   <td colname="col1"> Het eindpunt van de toepassingsmeetserver </td>
+   <td colname="col1"> AppMeasurement tracking servereindpunt </td>
    <td colname="col2"> De URL van het achterste eindpunt van de Adobe Analytics-verzameling (voorheen SiteCatalyst). </td>
   </tr>
   <tr>
    <td colname="col1"> Het servereindpunt voor videoanalyse bijhouden </td>
-   <td colname="col2"> De URL van het back-end verzameleindpunt van de videoanalyse. Dit is waar alle video hartslag het volgen vraag wordt verzonden. <p>Tip: De URL van de server voor het bijhouden van bezoekers is gelijk aan de URL van de analytische trackingserver. Voor informatie over het uitvoeren van de Dienst van identiteitskaart van de Bezoeker, zie <a href="https://experienceleague.adobe.com/docs/id-service/using/implementation/setup-target.html?lang=en" format="html" scope="external"> Id-service implementeren </a>. </p> </td>
+   <td colname="col2"> De URL van het back-end verzameleindpunt van de videoanalyse. Dit is waar alle video hartslag het volgen vraag wordt verzonden. <p>Tip: de URL van de server voor het bijhouden van bezoekers is gelijk aan de URL van de analytische trackingserver. Voor informatie over het uitvoeren van de Dienst van identiteitskaart van de Bezoeker, zie <a href="https://experienceleague.adobe.com/docs/id-service/using/implementation/setup-target.html?lang=en" format="html" scope="external"> Id-service implementeren </a>. </p> </td>
   </tr>
   <tr>
    <td colname="col1"> Accountnaam </td>
-   <td colname="col2"> Ook gekend als identiteitskaart van de Reeks van het Rapport (RSID). </td>
+   <td colname="col2"> Wordt ook wel de RSID (Report Suite ID) genoemd. </td>
   </tr>
   <tr>
    <td colname="col1"> Organisatie-id Marketing Cloud </td>
@@ -37,11 +36,11 @@ Controleer of u het volgende hebt voordat u video-tracking (videohartslagen) act
   </tr>
   <tr>
    <td colname="col1"> Het servereindpunt van de Bezoeker </td>
-   <td colname="col2"> URL van het achterste eindpunt dat een unieke herkenningsteken voor de huidige videokijker verstrekt. </td>
+   <td colname="col2"> De URL van het achterste eindpunt dat een unieke id voor de huidige videoviewer biedt. </td>
   </tr>
   <tr>
    <td colname="col1"> Uitgever </td>
-   <td colname="col2"> Dit is de uitgevers-id die door hun Adobe-vertegenwoordiger aan klanten wordt geleverd. <p>Tip: Deze id is niet alleen een tekenreeks met de naam merk/televisie. </p> </td>
+   <td colname="col2"> Dit is de uitgevers-id, die door de Adobe aan klanten wordt geleverd. <p>Tip: deze id is niet alleen een tekenreeks met het merk/de televisienaam. </p> </td>
   </tr>
  </tbody>
 </table>
@@ -54,24 +53,24 @@ U kunt als volgt video bijhouden in uw speler configureren:
    
    * Instantiatie vereist een Marketing Cloud organisatie-id-invoerparameter die door Adobe wordt opgegeven.
 
-      Dit is een tekenreekswaarde.
+     Dit is een tekenreeks.
    * De enige configuratieoptie voor de bibliotheek VisitorAPI is URL van het achterste eindpunt dat unieke herkenningsteken voor de huidige gebruiker verstrekt.
    * De URL van de server voor het bijhouden van bezoekers is gelijk aan de URL van de analytische trackingserver.
 
-      Voor informatie over het uitvoeren van de Dienst van identiteitskaart van de Bezoeker, zie [Implementatie van Bezoekersidentiteitsservice](https://experienceleague.adobe.com/docs/id-service/using/implementation/setup-target.html?lang=en).
+     Voor informatie over het uitvoeren van de Dienst van identiteitskaart van de Bezoeker, zie [Implementatie van Bezoekersidentiteitsservice](https://experienceleague.adobe.com/docs/id-service/using/implementation/setup-target.html?lang=en).
 
    ```js
    var_visitor = new Visitor("MARKETING_CLOUD_ORG_ID");
    _visitor.trackingServer = "URL_OF_THE_VISITOR_TRACKER_SERVER”;
    ```
 
-2. Instantieer en vorm de component AppMeasurement.
+2. Instantiëren en configureren van de component AppMeasurement.
 
-   De instantie AppMeasurement heeft vele configuratieopties. Ga voor meer informatie naar de [Adobe Analytics Developer](https://microsite.omniture.com/t2/help/en_US/reference/#Developer) documentatie. De opties in de volgende voorbeeldcode ( `account`, `visitorNamespace`, en `trackingServer`) zijn vereist en de waarden worden opgegeven door Adobe.
+   De instantie van het AppMeasurement heeft vele configuratieopties. Ga voor meer informatie naar de [Adobe Analytics Developer](https://microsite.omniture.com/t2/help/en_US/reference/#Developer) documentatie. De opties in de volgende voorbeeldcode ( `account`, `visitorNamespace`, en `trackingServer`) zijn vereist en de waarden worden opgegeven door Adobe.
 
    >[!IMPORTANT]
    >
-   >U moet ervoor zorgen dat de afhankelijkheidsketen correct is ingesteld. De instantie AppMeasurement aggregeert (afhankelijk van) de API-component van de bezoeker.
+   >U moet ervoor zorgen dat de afhankelijkheidsketen correct is ingesteld. De instantie AppMeasurement aggregeert (is afhankelijk van) de API-component van de bezoeker.
 
    ```js
    var appMeasurement = new AppMeasurement();
@@ -119,12 +118,13 @@ Houd rekening met het volgende:
       * Maak altijd een nieuwe tracker-instantie voor elke afspeelsessie van de inhoud en verwijder de vorige referentie (na het loskoppelen van de instantie van de mediaspeler).
       * De metagegevens die in substap 1 zijn gemaakt, moeten worden opgegeven in de constructor of Video Analytics Tracker.
 
-         ```js
-         var videoAnalyticsMetadata = getVideoAnalyticsMetadata();
-         videoAnalyticsProvider = new AdobePSDK.VA.VideoAnalyticsProvider(videoAnalyticsMetadata);
-         videoAnalyticsProvider.attachMediaPlayer(player);
-         ```
-   3. Vernietig de videoanalysetracker.
+        ```js
+        var videoAnalyticsMetadata = getVideoAnalyticsMetadata();
+        videoAnalyticsProvider = new AdobePSDK.VA.VideoAnalyticsProvider(videoAnalyticsMetadata);
+        videoAnalyticsProvider.attachMediaPlayer(player);
+        ```
+
+   3. Vernietig de videoanalysator.
 Voordat u een nieuwe afspeelsessie voor inhoud begint, moet u de vorige instantie van de videotracering vernietigen. Nadat u de gebeurtenis &#39;complete&#39; van de inhoud (of het bericht) hebt ontvangen, wacht u een paar minuten voordat u de instantie van de videotracker vernietigt. Het vernietigen van de instantie onmiddellijk zou kunnen interfereren met de capaciteit van de Videoanalysator om een video te verzenden volledig pingelt.
 
       ```js

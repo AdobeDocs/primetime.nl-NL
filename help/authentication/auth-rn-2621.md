@@ -1,8 +1,7 @@
 ---
 title: Opmerkingen bij de release Adobe Primetime authentication 2.62.1
 description: Opmerkingen bij de release Adobe Primetime authentication 2.62.1
-exl-id: 7a43cb64-27c7-41ec-b02a-64cf7f476c5d
-source-git-commit: 79ec21744e682112a7e95c2ce7845d9a9458b8bc
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '79'
 ht-degree: 0%
@@ -24,7 +23,7 @@ Op deze pagina worden nieuwe functies, wijzigingen en bekende problemen met deze
 
 ### Buildnummer {#build-number-2621}
 
-Adobe Primetime-verificatie: adobe pass-pass **2,62,1**
+Adobe Primetime-verificatie: adobe-pass-**2,62,1**
 Releasedatum: **02-08-2022 - 08-04-2022**
 
 ### Nieuwe functies {#new-features-2621}

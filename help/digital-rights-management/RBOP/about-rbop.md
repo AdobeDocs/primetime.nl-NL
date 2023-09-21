@@ -1,8 +1,7 @@
 ---
 description: Op resolutie gebaseerde uitvoerbeveiliging (RBOP) is een mechanisme dat uitvoerbeveiliging biedt op basis van het verticale aantal pixels van de inhoud.
 title: RBOP-overzicht
-exl-id: 57c39c4e-d8f3-4f28-95a5-2e61a1bd7793
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '174'
 ht-degree: 0%
@@ -15,7 +14,7 @@ Op resolutie gebaseerde uitvoerbeveiliging (RBOP) is een mechanisme dat uitvoerb
 
 RBOP laat u verschillende combinaties beschermingsvereisten specificeren, die u flexibiliteit verstrekken in vestiging uw outputcontroles.
 
-Om het proces te vereenvoudigen om uw vereisten van de outputbescherming te specificeren, verstrekt Adobe een structuur JSON voor de configuratie van de outputbescherming. In dit document wordt de JSON-structuur in detail beschreven, samen met de grammatica die u gebruikt om uitvoerbeveiligingsregels op te geven.
+Om het proces te vereenvoudigen om uw vereisten van de outputbescherming te specificeren, verstrekt de Adobe een structuur JSON voor de configuratie van de outputbescherming. In dit document wordt de JSON-structuur in detail beschreven, samen met de grammatica die u gebruikt om uitvoerbeveiligingsregels op te geven.
 
 Secties in deze handleiding:
 

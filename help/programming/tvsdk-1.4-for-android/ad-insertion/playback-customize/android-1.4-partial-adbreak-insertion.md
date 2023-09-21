@@ -1,15 +1,14 @@
 ---
 description: U kunt een tv-achtige ervaring inschakelen om in live streams deel te kunnen nemen aan een advertentie.
-title: Onvolledige invoeging van advertentie
-exl-id: cb0d2f5f-c760-450e-ab34-fd7639d1190b
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+title: Onvolledige invoeging van advertentie-einde
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '325'
 ht-degree: 0%
 
 ---
 
-# Onvolledige invoeging van advertentie {#partial-ad-break-insertion}
+# Onvolledige invoeging van advertentie-einde {#partial-ad-break-insertion}
 
 U kunt een tv-achtige ervaring inschakelen om in live streams deel te kunnen nemen aan een advertentie.
 
@@ -38,7 +37,7 @@ Dit gedrag is niet standaard ingeschakeld. Ga als volgt te werk om deze functie 
 
 1. Deze functie vereist dat u een aangepaste Advertentieselecteur implementeert om het gedrag aan te passen. Als u nog geen aangepaste implementatie van de klasse AdvertisingFactory hebt, voegt u een nieuwe AdvertisingFactory-implementatie toe. Hef de methode createAdPolicySelector op. Deze methode keert een nieuw geval van de implementatie van AdPolicySelector terug.
 
-   Hieronder vindt u een voorbeeldimplementatie. De volgende voorbeeldimplementatie is beschikbaar voor gebruik via het pakket com.adobe.mediacore. Het wordt echter vereenvoudigd om gemakkelijk te kunnen verwijzen en het wordt niet aanbevolen om zo te worden gebruikt.
+   Hieronder vindt u een voorbeeldimplementatie. De volgende voorbeeldimplementatie is beschikbaar voor gebruik via het pakket com.adobe.mediacore. Het wordt echter vereenvoudigd om het gemakkelijk te kunnen gebruiken en het wordt niet aanbevolen om het zo te gebruiken.
 
    1. Voorbeeld van beleidskiezer voor toevoegen
 

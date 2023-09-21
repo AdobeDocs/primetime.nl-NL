@@ -1,8 +1,7 @@
 ---
 description: Met de hulpklasse AuditudeSettings, die de klasse MetadataNode uitbreidt, kunt u Adobe Primetime- en beslissingsmetagegevens instellen.
 title: Metagegevens instellen en invoegen
-exl-id: f7d1eb7d-e0be-4f0f-9dec-9336641a8f87
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '265'
 ht-degree: 0%
@@ -59,7 +58,7 @@ Metagegevens over reclame bevinden zich in de `MediaResource.Metadata` eigenscha
    De `MediaPlayer` start met het laden en verwerken van het mediastroommanifest.
 
 1. Wanneer de `MediaPlayer` overgangen naar de status INITIALIZED, krijg de kenmerken van de mediastream in de vorm van een `MediaPlayerItem` door de `MediaPlayer.CurrentItem` methode.
-1. (Optioneel) Zoek naar de `MediaPlayerItem` -instantie om te zien of de stream live is, ongeacht of deze alternatieve audiotracks heeft of dat de stream beveiligd is.
+1. (Optioneel) Zoek naar de `MediaPlayerItem` -instantie om te zien of de stream live is, ongeacht of de stream alternatieve audiotracks heeft of dat de stream beveiligd is.
 
    Deze informatie kan u helpen UI voor het playback voorbereiden. Als u bijvoorbeeld weet dat er twee audiotracks zijn, kunt u een UI-besturingselement opnemen dat schakelt tussen deze tracks.
 

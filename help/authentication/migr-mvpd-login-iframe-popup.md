@@ -1,8 +1,7 @@
 ---
 title: Hoe te om de MVPD Login Pagina van iFrame aan Popup te migreren
 description: Hoe te om de MVPD Login Pagina van iFrame aan Popup te migreren
-exl-id: 389ea0ea-4e18-4c2e-a527-c84bffd808b4
-source-git-commit: bfc3ba55c99daba561255760baf273b6538a3c6e
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '689'
 ht-degree: 0%
@@ -32,7 +31,7 @@ Aangezien er al een iFrame-implementatie bestaat, bevat het eerste deel van de t
 
 ## MVPD-kiezer met aanmeldingspagina in iFrame {#mvpd-pickr-iframe}
 
-De vorige codevoorbeelden toonden een pagina van de HTML die bevat &lt;div> -tag waar het iFrame samen met de knop Close iFrame wordt gemaakt:
+De vorige codevoorbeelden toonden een pagina van de HTML die bevat &lt;div> -tag waar het iFrame samen met de knop close iFrame moet worden gemaakt:
 
 ```HTML
 <body> 
@@ -105,7 +104,7 @@ function setSelectedProvider(providerID) {
 
 ## MVPD-kiezer met aanmeldingspagina in pop-upvenster {#mvpd-pickr-popup}
 
-Omdat we geen **iFrame** nu bevat de HTML-code niet de iFrame of de knop om het iFrame te sluiten. De div die voorheen de iFrame bevatte - **mvpddiv** - wordt bewaard en gebruikt voor:
+Omdat we geen gebruik maken van een **iFrame** nu bevat de HTML-code niet de iFrame of de knop om het iFrame te sluiten. De div die voorheen de iFrame bevatte - **mvpddiv** - wordt bewaard en gebruikt voor:
 
 * om de gebruiker te laten weten dat de MVPD-aanmeldingspagina al is geopend als de popup-focus niet meer aanwezig is
 * om een koppeling te maken om de focus op de popup te herstellen
@@ -136,7 +135,7 @@ Omdat we geen **iFrame** nu bevat de HTML-code niet de iFrame of de knop om het 
 
 De lijst van MVPDs zal in geroepen div worden getoond **kiezer** als een selectie **-mvpdList**.
 
-Een nieuwe API callback zal worden gebruikt - **setConfig(configXML)**. De callback wordt geactiveerd na het aanroepen van de functie setRequestor(requestID). Deze callback keert de lijst van MVPDs terug die met aanvragerID eerder wordt geïntegreerd. In de callback methode, zal inkomende XML worden ontleed, en de lijst van MVPDs caching. De plukker MVPD wordt ook gecreeerd maar niet getoond.
+Er wordt een nieuwe API-callback gebruikt - **setConfig(configXML)**. De callback wordt geactiveerd na het aanroepen van de functie setRequestor(requestID). Deze callback keert de lijst van MVPDs terug die met aanvragerID eerder wordt geïntegreerd. In de callback methode, zal inkomende XML worden ontleed, en de lijst van MVPDs caching. De plukker MVPD wordt ook gecreeerd maar niet getoond.
 
 ```JavaScript
 var mvpdList;  // The list of cached MVPDs
@@ -181,7 +180,7 @@ function displayProviderDialog(providers) {
 
 Nadat de gebruiker een MVPD van de plukker heeft geselecteerd, moet popup worden gecreeerd. Sommige browsers kunnen popup blokkeren als het met ongeveer:blank of met een pagina wordt gecreeerd die op een ander domein is - daarom wordt het geadviseerd om het met hostname van te openen waar AccessEnabler wordt geladen.
 
-In de iFrame-implementatie werd het opnieuw instellen van de verificatiestroom uitgevoerd door de knop btnCloseIframe en de JavaScript-functie closeIframeAction(), maar nu is het niet meer mogelijk het iFrame te versieren. Zo, wordt het zelfde gedrag bereikt door te letten op wanneer popup (of door de gebruiker of door de authentificatiestroom te voltooien) wordt gesloten. Er is een codefragment toegevoegd dat ook helpt als de gebruiker de focus van de pop-up verliest:
+In de iFrame-implementatie werd het opnieuw instellen van de verificatiestroom uitgevoerd door de knop btnCloseIframe en de JavaScript-functie closeIframeAction(), maar nu is het niet meer mogelijk het iFrame te versieren. Zo, wordt het zelfde gedrag bereikt door te letten op wanneer popup (of door de gebruiker of door de authentificatiestroom te voltooien) wordt gesloten. Er is een codefragment toegevoegd dat ook nuttig is voor het geval de gebruiker de focus van de pop-up verliest:
 
 ```HTML
 "<a href="javascript:mvpdWindow.focus();">Click here to open it.</a>".
@@ -231,5 +230,4 @@ function checkClosed() {
 >* De voorbeeldcode bevat een hardcoded variabele voor de gebruikte requestID - &#39;REF&#39;, die moet worden vervangen door een echte id van de programmeur.
 >* De voorbeeldcode wordt alleen correct uitgevoerd vanuit een zwevend domein dat is gekoppeld aan de gebruikte aanvrager-id.
 >* Aangezien de gehele code kan worden gedownload, is de code in deze technische notitie afgebroken. Voor een volledig monster raadpleegt u **JS iFrame versus pop-upvoorbeeld**.
->* De externe JavaScript-bibliotheken zijn gekoppeld vanuit [Google Hosted Services](https://developers.google.com/speed/libraries/).
-
+>* De externe JavaScript-bibliotheken zijn gekoppeld vanuit [Op Google gehoste services](https://developers.google.com/speed/libraries/).

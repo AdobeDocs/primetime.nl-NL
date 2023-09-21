@@ -1,8 +1,7 @@
 ---
 description: Adobe® Access™ is een geavanceerde oplossing voor digitaal rechtenbeheer en contentbescherming voor hoogwaardige audiovisuele inhoud. Met gereedschappen die u maakt met Java API's kunt u beleidsregels maken, beleidsregels toepassen op bestanden die audio- en video-inhoud bevatten en die bestanden versleutelen. De stappen op hoog niveau voor het uitvoeren van deze taken zijn als volgt
 title: Overzicht
-exl-id: cf081058-9b41-4b09-9258-a7d873799846
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '430'
 ht-degree: 0%
@@ -26,11 +25,11 @@ Adobe® Access™ is een geavanceerde oplossing voor digitaal rechtenbeheer en c
 
 De gecodeerde inhoud is nu gereed voor implementatie en de client kan de licentie aanvragen bij de server.
 
-De SDK biedt een Java API om deze taken uit te voeren. De SDK bevat referentie-implementaties van de licentieserver en opdrachtregelprogramma&#39;s die zijn gebaseerd op de Java API&#39;s. Zie voor meer informatie *Implementaties van de Adobe Access-naslaggids gebruiken*.
+De SDK biedt een Java API om deze taken uit te voeren. De SDK bevat referentie-implementaties van de licentieserver en opdrachtregelprogramma&#39;s die zijn gebaseerd op de Java API&#39;s. Zie voor meer informatie *De implementatie van de Adobe Access Reference gebruiken*.
 
-## Nieuw in Adobe Access 5.2 {#section_06220EDE36B54DCB9CA7963B76DA8167}
+## Nieuw in Toegang 5.2 van de Adobe {#section_06220EDE36B54DCB9CA7963B76DA8167}
 
-* **Externe CEK**: De mogelijkheid om een CKMS (Content Key Management System) te integreren in de workflows voor het verzenden en verpakken van DRM-licenties in plaats van de CEK te coderen en te bundelen in de metagegevens van de inhoud. Zie [Adobe Access DRM - Overzicht externe CEK](../../aaxs-drm-xkey-mgmt/aaxs-drm-using-external-cek-overview.md).
+* **Externe CEK**: De mogelijkheid om een CKMS (Content Key Management System) te integreren in de workflows voor het serveren en verpakken van DRM-licenties in plaats van de CEK te coderen en te bundelen in de metagegevens van de inhoud. Zie [Adobe Access DRM External CEK Overview](../../aaxs-drm-xkey-mgmt/aaxs-drm-using-external-cek-overview.md).
 
 * **Licentie (voucher) Return**: De mogelijkheid voor een client om een licentie die aan de client is uitgegeven, te retourneren (of te verwijderen).
 * **Xbox Key-server**: De mogelijkheid om inhoud die naar de Xbox en Xbox 360 wordt verzonden, te beschermen. (Een Adobe Primetime-client is vereist.)
@@ -39,4 +38,4 @@ De SDK biedt een Java API om deze taken uit te voeren. De SDK bevat referentie-i
 
 Geeft aangepaste gebruiksregels aan. U kunt aangepaste gegevens opnemen in licenties die door de licentieserver worden uitgegeven. De interpretatie/verwerking van deze gegevens is volledig tot de implementatie van de clienttoepassing en licentieserver.
 
-Voorbeeld van gebruik: Laat rekbaarheid van gebruiksregels toe door andere bedrijfsregels toe te staan om veilig als deel van het beleid en/of inhoudsvergunning worden vervoerd. Om veiligheidsredenen, omdat deze gebruiksregels in de code van de douanecliënt worden afgedwongen, zou deze optie samen met de toepassing van AIR of de opties van de lijst van gewenste personen van de SWF van de Flash Player moeten worden gebruikt. Zie voor meer informatie [Beperkingen van runtime en toepassing](../../aaxs-protecting-content/content-introduction/content-usage-rules/content-runtime-application-restrictions/content-allowlist-air.md).
+Voorbeeld: laat uitbreidbaarheid van gebruiksregels toe door toe te staan dat andere bedrijfsregels veilig als deel van het beleid en/of inhoudsvergunning worden overgebracht. Om veiligheidsredenen, omdat deze gebruiksregels in de code van de douanecliënt worden afgedwongen, zou deze optie samen met de toepassing van AIR of de opties van de lijst van gewenste personen van de SWF van de Flash Player moeten worden gebruikt. Zie voor meer informatie [Beperkingen van runtime en toepassing](../../aaxs-protecting-content/content-introduction/content-usage-rules/content-runtime-application-restrictions/content-allowlist-air.md).

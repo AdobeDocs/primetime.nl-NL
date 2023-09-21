@@ -1,15 +1,14 @@
 ---
-title: Bootstrap API
-description: Bootstrap API
-exl-id: bc7fe244-8664-43ac-b9a1-3967ea8749b1
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+title: Bootstrap-API
+description: Bootstrap-API
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '1148'
 ht-degree: 0%
 
 ---
 
-# Bootstrap API {#bootstrap-api}
+# Bootstrap-API {#bootstrap-api}
 
 De Bootstrap-API is doorgaans de URL die naar de client/video-afspeelAPI&#39;s wordt verzonden.  Voor opties en parameters die kunnen worden gevormd, verwijs naar [Bootstrap API-parameters](#bootstrap-api-parameters).
 
@@ -29,7 +28,7 @@ De Bootstrap-API is doorgaans de URL die naar de client/video-afspeelAPI&#39;s w
 
    * **Inhoud-URL** Vereist. URL van de inhoud van het M3U8-bestand, Base64-gecodeerd om veilig te zijn binnen de URL van de manifestserver. De inhoud-URL moet verwijzen naar een M3U8-bestand van een andere type, zelfs als er slechts één bitsnelheidstream is.
 
-   * **Parameters query** Deze vormen het meest gevarieerde deel van het verzoek. Zij vertellen de duidelijke server welke soort cliënt het verzoek doet en wat het de manifestserver wil doen.
+   * **Query-parameters** Deze vormen het meest gevarieerde deel van het verzoek. Zij vertellen de duidelijke server welke soort cliënt het verzoek doet en wat het de manifestserver wil doen.
 
    Bijvoorbeeld:
 
@@ -42,7 +41,7 @@ De Bootstrap-API is doorgaans de URL die naar de client/video-afspeelAPI&#39;s w
 
    **HTTP- vs. HTTPS-aanvragen**
 
-   De manifestserver leidt tot URLs gebruikend het zelfde protocol van HTTP van het verzoek van de cliënt. Als een speler een niet-veilig HTTP-verzoek (http) indient, retourneert de manifestserver manifest-URL&#39;s en Auditude-URL&#39;s met het http-protocol. Als een speler een beveiligde HTTP-verbinding (https) maakt, geeft de manifestserver duidelijke URL&#39;s en URL&#39;s van Auditude tracking met het https-protocol.
+   De manifestserver leidt tot URLs gebruikend het zelfde protocol van HTTP van het verzoek van de cliënt. Wanneer een speler een niet-beveiligd HTTP-verzoek (http) indient, retourneert de manifestserver manifest-URL&#39;s en Auditude-URL&#39;s met het http-protocol. Wanneer een speler een beveiligde HTTP-verbinding (https) maakt, maakt de manifestserver, retourneert deze manifest-URL&#39;s en URL&#39;s voor het bijhouden van de Auditude met het https-protocol.
 
    >[!NOTE]
    >
@@ -67,16 +66,16 @@ parameters worden doorgegeven aan de advertentieserver.
 | ptassetid | De unieke id van de inhoud die door de uitgever wordt toegewezen en onderhouden.  Vereist in combinatie met de Akamai Ad Scaler. | HLS/DASH |
 | ptcdn | Lijst van één of meerdere CDNs aan gastheer transcoded activa. Zie voor meer informatie [Levering en opslag](/help/primetime-ad-insertion/just-in-time-transcoding/delivery-and-storage.md).<br>Mogelijke waarden:<br>akamai, level3, llnw (lichtnetwerken), comcast.<br>Standaard worden Ad Insertion CDN&#39;s van Primetime gebruikt. | HLS/DASH |
 | ptcueformat | De opgegeven indeling van tags die moeten worden uitgevoerd en bepaald (bijvoorbeeld scte35).<br>Mogelijke waarden:<br>dpisimple, dpiscte35, elemental<br>Neem voor aangepaste actiefindelingen contact op met uw technische accountvertegenwoordiger voor de waarde die u voor uw gebruiksgeval wilt gebruiken | HLS/DASH |
-| ptfailover | Signaleert de manifestserver om primaire en failover stromen te identificeren die in master playlist worden gespecificeerd, en hen te behandelen als gescheiden reeksen. Dit vergemakkelijkt failover en voorkomt timingsfouten. (Alleen voor Apple HLS-apparaten.) Zie voor meer informatie [Omschakelen van HLS-speler vergemakkelijken](hls-switching-to-failover.md) | Alleen HLS |
+| ptfailover | Signaleert de manifestserver om primaire en failover stromen te identificeren die in hoofdplaylist worden gespecificeerd, en hen te behandelen als gescheiden reeksen. Dit vergemakkelijkt failover en voorkomt timingsfouten. (Alleen voor Apple HLS-apparaten.) Zie voor meer informatie [Omschakelen van HLS-speler vergemakkelijken](hls-switching-to-failover.md) | Alleen HLS |
 | ptmulticall | Indien ingeschakeld, wordt een afzonderlijke advertentieaanvraag gedaan voor elke in een VOD-element gevonden bron.  Standaard probeert Primetime Ad Insertion alle beschikbare informatie te verzamelen en deze in één aanvraag naar de advertentieserver te verzenden. Mogelijke waarden:true om in te schakelen, <br>Weglaten om uit te schakelen (standaard uitgeschakeld) | HLS/DASH |
 | ptparallelstream | Hiermee kunnen klanten met spelers die CMAF-gedemuleerde audio- of videostreams aanvragen, parallel werken om ervoor te zorgen dat advertenties in audio- en videotracks consistent zijn. | Alleen HLS |
 | ptprotoswitch | Laat genoemde genoemde manifest het herschrijven regels en ad het halen regels toe, die typisch opstelling door uw technische steunvertegenwoordiger zullen zijn.<br>Voorbeeld: adfetch_fw, cdn_akm | HLS/DASH |
 | pttagds | Hiermee wordt injectie van EXT-X-DISCONTINUITY-SEQUENCE-tags in HLS-headers ingeschakeld.Mogelijke waarden:true om uit te schakelen (standaard uitgeschakeld) | Alleen HLS |
-| pttimeline | Een tekenreeks met de gewenste tijdlijn voor plaatsing en inhoud van de advertentie, die de inhoudsstroom overschrijft en afbreekt. [ Zie VOD-tijdlijnindeling ] | HLS/DASH |
+| pttimeline | Een tekenreeks met de gewenste tijdlijn voor plaatsing en inhoud van de advertentie, die de inhoudsstroom overschrijft en afbreekt. [Zie VOD-tijdlijnindeling] | HLS/DASH |
 | pttoken | Hiermee schakelt u tokenbeveiligingsregelingen voor inhoudsfragmenten en segmenten voor CDN&#39;s in<br>Mogelijke waarden:<br>akamai, lnw (licht), ctl (centurylink) (standaardtokenisatie is uitgeschakeld) | HLS/DASH |
 | trackingmodus | Stel rasterschema&#39;s in.<br>Mogelijke waarden:<br>eenvoudig voor client-side advertentie-tracking<br>sstm voor server-side en tracking<br>eenvoudiger systeem voor hybride client/server en tracering (standaard wordt geen advertentie bijgehouden) | HLS/DASH |
-| trackingpositie | Instrueert de manifestserver om slechts informatie terug te keren en te volgen. Geef deze parameter niet op in de bootstrap-aanvraag.<br>Opmerking: De manifestserver negeert alle overgegaane waarden. Als u echter een null-tekenreeks of een lege tekenreeks doorgeeft, retourneert de manifestserver de M3U8 | HLS/DASH<br>Client-Side Tracking |
+| trackingpositie | Instrueert de manifestserver om slechts informatie terug te keren en te volgen. Geef deze parameter niet op in de opstartaanvraag.<br>Opmerking: de manifestserver negeert alle doorgegeven waarden. Als u echter een null-tekenreeks of een lege tekenreeks doorgeeft, retourneert de manifestserver de M3U8 | HLS/DASH<br>Client-Side Tracking |
 | trackingversie | Hiermee stelt u de indelingsversie in die moet worden geretourneerd.<br>Mogelijke waarden:<br>v1, v2, v3 of vmap | HLS/DASH<br>Client-Side Tracking |
-| scteTracking | Deze parameter geeft aan de manifestserver door dat de speler die de M3U8 haalt, SCTE-taginformatie moet ophalen.<br>Mogelijke waarden:<br>true of false (standaard false)<br>Opmerking: De SCTE-35 gegevens zijn teruggekeerd in JSON sidecar met de volgende combinatie waarden van de vraagparameter:<br>ptcueformat=turner | elementair | nfl | DPIScte35<br>pttrackingversion=v2<br>scteTracking=true<br> | Alleen HLS |
-| vetargetmultiplier | Het aantal segmenten vanaf het live punt De pre-roll compensatie wordt gevormd gebruikend: ( vetargetmultiplier * target duration ) + vebufferlength<br>Opmerking: Deze parameter is alleen van toepassing op Live/Lineaire HLS-streams<br>Mogelijke waarden:<br>numerieke float<br>(standaard: 3.0 - dezelfde als de HLS-specificatie) | Alleen HLS |
-| vebufferLength | Het aantal seconden vanaf het actieve punt dat wordt gebruikt in combinatie met vetargetmultiplier.<br>Opmerking: Deze parameter is alleen van toepassing op Live/Lineaire HLS-streams<br>Mogelijke waarden:<br>numerieke float<br>(standaard: 3,0) | Alleen HLS |
+| scteTracking | Deze parameter geeft aan de manifestserver door dat de speler die de M3U8 haalt, SCTE-taginformatie moet ophalen.<br>Mogelijke waarden:<br>true of false (standaard false)<br>Nota: De SCTE-35 gegevens zijn teruggekeerd in JSON sidecar met de volgende combinatie waarden van de vraagparameter:<br>ptcueformat=turner | elementair | nfl | DPIScte35<br>pttrackingversion=v2<br>scteTracking=true<br> | Alleen HLS |
+| vetargetmultiplier | Het aantal segmenten vanaf het actieve punt De verschuiving vóór de rol wordt geconfigureerd met: ( vetargetmultiplier * target duration ) + vebufferlength<br>Opmerking: deze parameter is alleen van toepassing op Live/Lineaire HLS-streams<br>Mogelijke waarden:<br>numerieke float<br>(standaard: 3.0 - dezelfde als de HLS-specificatie) | Alleen HLS |
+| vebufferLength | Het aantal seconden vanaf het actieve punt dat wordt gebruikt in combinatie met vetargetmultiplier.<br>Opmerking: deze parameter is alleen van toepassing op Live/Lineaire HLS-streams<br>Mogelijke waarden:<br>numerieke float<br>(standaard: 3.0) | Alleen HLS |

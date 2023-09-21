@@ -2,8 +2,7 @@
 title: WAR-bestand van licentieserver bijwerken
 description: WAR-bestand van licentieserver bijwerken
 copied-description: true
-exl-id: a70d04e2-24a4-4848-9e9b-97467f2c1749
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '166'
 ht-degree: 0%
@@ -22,7 +21,7 @@ Ga als volgt te werk om de licentieserver bij te werken:
 
    De invoer voor het script is als volgt:
 
-   * `cert`: PKCS12-bestand met het certificaat Individualization CA
+   * `cert`: PKCS12-bestand met het CA-certificaat voor individualisatie
    * `war`: WAR-bestand dat moet worden bijgewerkt
 
    Het uitvoerbestand is een bijgewerkt WAR-bestand.
@@ -31,4 +30,4 @@ Ga als volgt te werk om de licentieserver bij te werken:
    ./addIndivCert.py -cert NEW_IndivCA.cer -war flashaccess.war
    ```
 
-De WAR-bestanden worden gewijzigd. Indien nodig kunt u het Python-script naar wens bewerken. Nadat u de updates uitvoert, kunt u de dossiers van WAR normaal opstellen.
+De WAR-bestanden worden gewijzigd. Indien nodig kunt u het Python-script aan uw specifieke behoeften aanpassen. Nadat u de updates uitvoert, kunt u de dossiers van WAR normaal opstellen.

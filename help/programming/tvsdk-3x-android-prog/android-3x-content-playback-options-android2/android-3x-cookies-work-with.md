@@ -1,8 +1,7 @@
 ---
 description: U kunt TVSDK gebruiken om willekeurige gegevens in koekjeskopballen voor zittingsbeheer, poorttoegang, etc. te verzenden.
 title: Werken met cookies
-exl-id: 7f0e7d77-0718-4df7-8380-0e9351f588bc
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '380'
 ht-degree: 0%
@@ -46,7 +45,7 @@ Werken met cookies:
 
    TVSDK vraagt dit `cookieManager` controleert tijdens runtime of er cookies zijn gekoppeld aan de URL en gebruikt deze cookies automatisch.
 
-   Als de cookies tijdens het afspelen in de toepassing moeten worden bijgewerkt, gebruikt u `networkConfiguration.setCookieHeaders` API&#39;s als de update worden weergegeven in de cookie store van JAVA.
+   Als de cookies tijdens het afspelen in de toepassing moeten worden bijgewerkt, gebruikt u `networkConfiguration.setCookieHeaders` API&#39;s als de update worden weergegeven in de cookie-opslag van JAVA.
 
    `networkConfiguration.setCookieHeaders` API stelt de cookies in op de C++ CookieStore van TVSDK.
 

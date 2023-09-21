@@ -1,8 +1,7 @@
 ---
 description: Rapporten voor videoanalyse worden naar de Adobe Analytics-rapportageplatforms geleid.
 title: Rapporten voor videoanalyse openen
-exl-id: 4e269a46-96b9-4c4f-9dc0-3f34b2a421ae
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '60'
 ht-degree: 0%

@@ -1,8 +1,7 @@
 ---
-description: Voor degenen die bekend zijn met de Adobe Primetime Access DRM-oplossing, zijn er enkele fundamentele architectonische verschillen tussen Access en de Primetime Cloud DRM, aangedreven door de ExpressPlay-oplossing.
+description: Voor degenen die bekend zijn met de Primetime Access DRM-oplossing van Adobe, zijn er enkele fundamentele architectonische verschillen tussen Access en de Primetime Cloud DRM, aangedreven door de ExpressPlay-oplossing.
 title: Migreren van toegang naar multi-DRM
-exl-id: f5e4cd88-091d-4049-933d-1c72ceeb2efb
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '395'
 ht-degree: 0%
@@ -11,7 +10,7 @@ ht-degree: 0%
 
 # Migreren van toegang naar multi-DRM {#migrating-from-access-to-multi-drm}
 
-Voor degenen die bekend zijn met de Adobe Primetime Access DRM-oplossing, zijn er enkele fundamentele architectonische verschillen tussen Access en de Primetime Cloud DRM, aangedreven door de ExpressPlay-oplossing.
+Voor degenen die bekend zijn met de Primetime Access DRM-oplossing van Adobe, zijn er enkele fundamentele architectonische verschillen tussen Access en de Primetime Cloud DRM, aangedreven door de ExpressPlay-oplossing.
 
 ## Architectuurverschillen tussen toegang en multi-DRM
 

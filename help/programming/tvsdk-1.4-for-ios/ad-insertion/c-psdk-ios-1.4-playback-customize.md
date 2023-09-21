@@ -1,8 +1,7 @@
 ---
 description: Wanneer het afspelen een advertentie-einde bereikt, een advertentie-einde doorgeeft of eindigt in een advertentie-einde, definieert TVSDK een standaardgedrag voor het plaatsen van de huidige afspeelkop.
 title: Afspelen met advertenties aanpassen
-exl-id: f59e94c2-7ca0-4e0b-b0b1-af076fdd4064
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '990'
 ht-degree: 0%
@@ -25,7 +24,7 @@ U kunt het gedrag voor het afspelen en afspelen op de volgende manieren aanpasse
 * Als een advertentie-einde aan de gebruiker wordt voorgesteld, toon geen extra advertenties voor een aantal notulen, zelfs als de gebruiker aan een nieuwe positie zoekt.
 * Als de inhoud na een paar minuten niet kan worden afgespeeld, start u de stream opnieuw of start u de stream over naar een andere bron voor dezelfde inhoud.
 
-   Als u tijdens de afspeelsessie van de failover de gebruiker de mogelijkheid wilt bieden om advertenties over te slaan en de vorige mislukte positie te herstellen, kunt u pre-roll- en/of mid-roll-advertenties uitschakelen. TVSDK biedt methoden om pre- en mid-roll-advertenties over te slaan.
+  Als u tijdens de afspeelsessie van de failover de gebruiker de mogelijkheid wilt bieden om advertenties over te slaan en de vorige mislukte positie te herstellen, kunt u pre-roll- en/of mid-roll-advertenties uitschakelen. TVSDK biedt methoden om pre- en mid-roll-advertenties over te slaan.
 
 ## API-elementen voor het afspelen van advertenties {#section_296ADE00CFEA40CBA1B46142720D13A5}
 
@@ -76,11 +75,11 @@ Voer een van de volgende handelingen uit om het gedrag van advertenties aan te p
 
 * Conform de `PTAdPolicySelector` alle vereiste methoden voor beleidsselectie te implementeren.
 
-   Deze optie wordt aanbevolen als u deze optie moet overschrijven **alles** de standaardinstellingen en gedragingen.
+  Deze optie wordt aanbevolen als u deze optie moet overschrijven **alles** de standaardinstellingen en gedragingen.
 
 * De `PTDefaultAdPolicySelector` en verstrekt implementaties voor slechts die gedrag dat aanpassing vereist.
 
-   Deze optie wordt aanbevolen als u alleen de optie wilt overschrijven **sommige** van het standaardgedrag.
+  Deze optie wordt aanbevolen als u alleen de optie wilt overschrijven **sommige** van het standaardgedrag.
 
 Voer voor beide opties de volgende taken uit:
 
@@ -124,7 +123,7 @@ In het volgende voorbeeld van een aangepaste advertentiebeleidskiezer worden adv
    [[PTDefaultMediaPlayerClientFactory defaultFactory] registerAdPolicySelector:adPolicySelector];
    ```
 
-1. Implementeer uw aanpassingen.
+1. Implementeer uw aanpassing.
 
 **PTS5MinuteSkipBreakPolicySelector.h**
 
@@ -260,7 +259,7 @@ Dynamisch ingevoegde advertenties verschillen per gebruikerssessie, zodat de pos
 
    De pauzes van de toevoeging kunnen in elke zitting als toe te schrijven aan advertentiepatronen, frequentiegrenzen, etc. variëren. De huidige tijd van de video in één sessie kan in een volgende sessie anders zijn. Wanneer u een positie in de video opslaat, haalt de toepassing de lokale tijd op. Gebruik de  `localTime` eigenschap voor het lezen van deze positie, die u kunt opslaan op het apparaat of in een database op de server.
 
-   Als de gebruiker bijvoorbeeld op de twintigste minuut van de video staat en deze positie vijf minuten aan advertenties bevat, `currentTime` zal 1200 seconden zijn, terwijl `localTime` op deze plaats is dit 900 seconden .
+   Als de gebruiker bijvoorbeeld op de 20e minuut van de video staat en deze positie vijf minuten aan advertenties bevat, `currentTime` zal 1200 seconden zijn, terwijl `localTime` op deze plaats is dit 900 seconden .
 
    >[!IMPORTANT]
    >
@@ -279,13 +278,13 @@ Dynamisch ingevoegde advertenties verschillen per gebruikerssessie, zodat de pos
    }
    ```
 
-1. De video op dezelfde positie hervatten: Als u het afspelen van de video wilt hervatten vanaf de positie die u tijdens een vorige sessie hebt opgeslagen, gebruikt u `seekToLocalTime`
+1. U hervat de video op dezelfde positie: als u het afspelen van de video wilt hervatten vanaf de positie die tijdens een vorige sessie is opgeslagen, gebruikt u `seekToLocalTime`
 
    >[!TIP]
    >
    >Deze methode wordt alleen aangeroepen met lokale tijdwaarden. Als de methode wordt aangeroepen met de huidige-tijdresultaten, treedt een onjuist gedrag op.
 
-   Om naar de huidige tijd te zoeken, gebruik `seekToTime`.
+   Als u naar de huidige tijd wilt zoeken, gebruikt u `seekToTime`.
 
 1. Wanneer uw toepassing de `PTMediaPlayerStatusReady` wijzigt de status, zoekt naar de opgeslagen lokale tijd.
 

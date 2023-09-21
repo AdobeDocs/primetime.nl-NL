@@ -1,15 +1,14 @@
 ---
 description: De belangrijkste componenten van Primetime DRM bestaan uit een Java SDK en de Flash Player- en Adobe AIR-clientruntimeomgevingen.
 title: Java SDK, Flash Player en Adobe AIR-client
-exl-id: 5422d282-da9c-4810-a782-3c3af5fdeb3f
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '433'
 ht-degree: 0%
 
 ---
 
-# Adobe Primetime DRM SDK {#section_522E57DFEEFF4794978FF2D366B83690}
+# ADOBE PRIMETIME DRM SDK {#section_522E57DFEEFF4794978FF2D366B83690}
 
 Primetime DRM wordt geleverd als een Java SDK die de bouwstenen verstrekt waarvan u een serverimplementatie kunt tot stand brengen. Met de SDK kunt u een Primetime DRM-oplossing maken die geschikt is voor het bedrijfsmodel van uw organisatie.
 
@@ -17,21 +16,21 @@ De Java API&#39;s in de SDK worden in de volgende subsecties beschreven.
 
 ## Java API&#39;s voor het beheer van apparaatgroepdomeinen{#java-apis-for-managing-device-group-domains}
 
-Deze APIs wordt gebruikt om de server toe te staan om cliëntverzoeken te behandelen om zich bij te sluiten van en het verlaten van de domeinen van de apparatengroep.
+Deze APIs wordt gebruikt om de server toe te staan om cliëntverzoeken te behandelen om zich bij te sluiten en apparatengroepsdomeinen te verlaten.
 
 Een apparaatgroepdomein is een logische verzameling apparaten die licenties tussen elkaar kunnen delen. Dit kan alleen gebeuren als elk apparaat zich eerst bij hetzelfde domein aansluit/zich registreert. De Primetime DRM SDK, die op een server wordt uitgevoerd, moet de verzoeken van de de toetreding van het Domein van het Apparaat (register), evenals verzoeken van het de verlaten van het Domein van het Apparaat behandelen (deregister). Apparaten die niet zijn verbonden met een domein, krijgen licenties toegewezen die zijn gebonden aan dat apparaat, dat niet kan worden gedeeld met een ander apparaat.
 
-## Java API&#39;s voor het beveiligen van inhoud{#java-apis-for-protecting-content}
+## Java API&#39;s voor inhoudsbeveiliging{#java-apis-for-protecting-content}
 
 Deze API&#39;s worden gebruikt om rechten te definiëren en inhoud voor te bereiden voor verspreiding. De API&#39;s voor inhoudsbeveiliging zijn:
 
 * Beleidsbeheer
 
-   De API voor beleidsbeheer wordt gebruikt om beleid te maken en te wijzigen dat op inhoud moet worden toegepast. Het beleid kan worden tot stand gebracht of worden bijgewerkt, met inbegrip van het krijgen/plaatsen van alle gebruiksregels en het toestaan van extra parameters in een douanenamespace.
+  De API voor beleidsbeheer wordt gebruikt om beleid te maken en te wijzigen dat op inhoud moet worden toegepast. Het beleid kan worden tot stand gebracht of worden bijgewerkt, met inbegrip van het krijgen/plaatsen van alle gebruiksregels en het toestaan van extra parameters in een douanenamespace.
 
 * Inhoud verpakken
 
-   De API voor het verpakken van inhoud wordt gebruikt om inhoud te coderen en metagegevens van de inhoud in het pakket op te halen.
+  De API voor het verpakken van inhoud wordt gebruikt om inhoud te coderen en metagegevens van de inhoud in het pakket op te halen.
 
 ## Java API&#39;s voor het afgeven van licenties{#java-apis-for-issuing-licenses}
 
@@ -39,15 +38,15 @@ Deze API&#39;s worden gebruikt wanneer een client een licentie aanvraagt bij de 
 
 * Verificatie
 
-   De verificatie-API kan worden gebruikt om verificatieaanvragen af te handelen en verificatietokens te genereren.
+  De verificatie-API kan worden gebruikt om verificatieaanvragen af te handelen en verificatietokens te genereren.
 
 * Vergunning genereren en verwerven
 
-   De licentie-API voor genereren en aanschaffen wordt gebruikt om een licentie voor de gebruiker te genereren.
+  De licentie-API voor genereren en aanschaffen wordt gebruikt om een licentie voor de gebruiker te genereren.
 
 * Ondersteuning voor Adobe AIR versie 1.5-clients en -inhoud
 
-   Met het oog op achterwaartse compatibiliteit heeft de SDK API&#39;s om aanvragen van AIR-toepassingen af te handelen die zijn gemaakt voor gebruik met AIR versie 1.5 en eerdere clients en beveiligde inhoud.
+  Met het oog op achterwaartse compatibiliteit heeft de SDK API&#39;s om aanvragen van AIR-toepassingen af te handelen die zijn gemaakt voor gebruik met AIR versie 1.5 en eerdere clients en beveiligde inhoud.
 
 ## Referentie-implementatie {#reference-implementation}
 

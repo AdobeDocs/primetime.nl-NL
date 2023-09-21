@@ -1,8 +1,7 @@
 ---
 title: Opmerkingen bij de release Adobe Primetime authentication 2.64
 description: Opmerkingen bij de release Adobe Primetime authentication 2.64
-exl-id: 4db21026-a0c2-4e33-b01f-4ccae824a110
-source-git-commit: bfc3ba55c99daba561255760baf273b6538a3c6e
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '132'
 ht-degree: 0%
@@ -26,7 +25,7 @@ Op deze pagina worden nieuwe functies, wijzigingen en bekende problemen met deze
 
 ### Buildnummer {#build-no-264}
 
-Adobe Primetime-verificatie: adobe pass-pass **2,64**
+Adobe Primetime-verificatie: adobe-pass-**2,64**
 
 Releasedatum: **08-11-2022 - 11-10-2022**
 

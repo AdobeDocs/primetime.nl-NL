@@ -3,8 +3,7 @@ title: Opmerkingen bij de release TVSDK 2.4.1 voor Android
 description: In de Release-notities bij TVSDK 2.4.1 voor Android worden de nieuwe en ondersteunde functies en de bekende problemen en beperkingen in TVSDK Android 2.4.1 beschreven.
 topic-tags: release-notes
 products: SG_PRIMETIME
-exl-id: 3de09048-ae32-43b4-a019-34b217931a4c
-source-git-commit: 3b051c3188c81673129e12dfeb573aaf85c15c97
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '1962'
 ht-degree: 0%
@@ -17,7 +16,7 @@ In de Release-notities bij TVSDK 2.4.1 voor Android worden de nieuwe en onderste
 
 ## TVSDK Android 2.4.1 {#tvsdk-android}
 
-Adobe geeft TVSDK 2.4.1 voor Android uit.
+Adobe geeft TVSDK 2.4.1 voor Android vrij.
 
 Om deze versie van TVSDK te gebruiken, zorg ervoor dat uw systeem aan de vereisten voldoet die bij worden beschreven [Systeemvereisten](https://helpx.adobe.com/content/dam/help/en/primetime/programming-guides/psdk_android_2.5.pdf#page=6).
 
@@ -47,7 +46,7 @@ Hier volgen de belangrijkste nieuwe functies van versie 2.4.1:
 
 * Functies van HLS versie 4
 
-   * **Video afspelen** (afspelen, pauzeren, zoeken) met afspeelbesturingselementen voor live, lineaire en VOD-streams.
+   * **Video afspelen** (afspelen, pauzeren, zoeken) met besturingselementen voor live, lineaire en VOD-streams.
    * **Ondertiteling gesloten.** TVSDK kan 608/708 gesloten bijschriften weergeven met een aantal lettertypen, tekengrootten, kleuren en achtergrond. Het kan video&#39;s met roll-up titels en schakelaar tussen taalsporen ook steunen als die beschikbaar zijn.
    * **Steen, afspeelmodus** ondersteunt snel voorwaarts en terugspoelen voor HLS-streams die I-frames gebruiken. Alle besturingselementen voor het afspelen van video werken op de inhoud. Langzame beweging (vooruit) is beschikbaar voor de externe afspeelmodus van video met een snelheid tussen 0 en 1.
    * **Adaptieve bitsnelheid (ABR)** Hiermee kan de speler dynamisch selecteren welke van de meerdere versies van dezelfde inhoudsstroom moet worden afgespeeld, op basis van het netwerk en andere voorwaarden. U kunt parameters dynamisch instellen of in het manifestbestand selecteren onder agressief, matig en conservatief selectiebeleid.
@@ -59,7 +58,7 @@ Hier volgen de belangrijkste nieuwe functies van versie 2.4.1:
 
 * Functies voor inhoudsbeveiliging
 
-   * **DRM voor HLS.** Alle video playback APIs werkt met gecodeerde videoinhoud die door Adobe Access wordt beschermd. De volgende DRM-functies worden ondersteund:
+   * **DRM voor HLS.** Alle video playback APIs werkt met gecodeerde videoinhoud die door de Toegang van de Adobe wordt beschermd. De volgende DRM-functies worden ondersteund:
 
       * Licentie roteren
       * Toetsrotatie
@@ -68,26 +67,26 @@ Hier volgen de belangrijkste nieuwe functies van versie 2.4.1:
       * IV-rotatie
 
 * **AES 128 Playback.** TVSDK kan geavanceerde HLS-inhoud van coderingsstandaard (AES) afspelen met een sleutellengte van 128 bits.
-* **Beschermde HLS (PHLS)** verstrekt een beperkte reeks vooraf gebouwd beleid DRM, een ondergroep van wat Adobe Access verstrekt, om lichtgewichtDRM over HLS voor levende en VOD stromen toe te laten.
+* **Beschermde HLS (PHLS)** verstrekt een beperkte reeks vooraf gebouwd beleid DRM, een ondergroep van wat Toegang van de Adobe verstrekt, om lichtgewichtDRM over HLS voor levende en VOD stromen toe te laten.
 
 * Reclame/alternatieve inhoud en monetiekenmerken
 
-   * **Volgen voor aan de serverzijde ingevoegde advertenties.** TVSDK kan advertenties bijhouden die zijn ingevoegd door de Adobe Cloud en de invoegservice. Het steunt lineaire advertenties in VAST2, VAST3, en formaten VMAP voor VOD en levende/lineaire stromen.
+   * **Volgen voor ingevoegde advertenties op de server.** TVSDK kan advertenties bijhouden die zijn ingevoegd door de Adobe Cloud en de invoegservice. Het steunt lineaire advertenties in VAST2, VAST3, en formaten VMAP voor VOD en levende/lineaire stromen.
    * **Aangepaste HLS-tags.** TVSDK gebruikt zijn `MediaPlayerConfig` klasse om het aanmelden van de spelertoepassing mogelijk te maken wanneer er aangepaste HLS-tags in de stream worden weergegeven.
-   * **Client-kant en invoeging.** De Auditude- en invoegbibliotheek werken samen met Adobe Auditude-servers om advertenties op dynamische, lineaire en VOD-posities op te lossen, zodat ze kunnen worden ingevoegd in live, lineaire en VOD-inhoud, op pre-, mid-roll- of post-roll-posities.
+   * **Client-kant en invoeging.** De Auditude- en invoegbibliotheek werkt samen met Adobe Auditude-servers om advertenties op dynamische, lineaire en VOD-posities op te lossen, zodat ze kunnen worden ingevoegd in live, lineaire en VOD-inhoud, op pre-, mid-roll- of post-roll-posities.
    * **Aangepaste en oplosbare versies.** De `ContentResolver, OpportunityGenerator,` en `MediaPlayerClientFactory` Met interfaces kunt u een aangepaste en/of alternatieve contentoplosser implementeren en een aangepaste opportuniteitsdetector registreren voor gebruik met TVSDK. De `TestAdResolver` en `AuditudeResolver` de klassen verstrekken C++ voorbeelden om een inhoudsoplosser uit te voeren. U vindt een Javascript-voorbeeld op `samples/jspsdk/testapp/psdk.js`.
    * **Consistent gedrag voor toevoegen.** Gebruik de `AdPolicySelector` interface om consistent gedrag tussen alle spelers mogelijk te maken voor bewerkingen zoals zoeken en spelen met trucs wanneer de inhoud advertenties bevat. Als u uw eigen versie niet implementeert, gebruikt TVSDK `DefaultAdPolicySelector`.
    * **C3-advertenties verwijderen/vervangen.** Gebruik de juiste TVSDK API om aangepaste inhoudsbereiken te verwijderen en dynamisch nieuwe advertenties in te voegen zonder extra voorbereidend werk. Dit is handig wanneer live/lineaire inhoud wordt uitgezonden en vervolgens onmiddellijk op aanvraag beschikbaar wordt gesteld zonder opschoning.
 
 Hier volgen de belangrijkste nieuwe functies versie 2.4:
 
-* **Direct aan voor VOD en live** Wanneer u instant on inschakelt, initialiseert en buffert de TVSDK media voordat het afspelen wordt gestart. Omdat u meerdere `MediaPlayerItemLoader` meerdere streams tegelijk op de achtergrond in de buffer plaatsen. Wanneer een gebruiker het kanaal wijzigt en de stream correct is gebufferd, wordt het afspelen op het nieuwe kanaal onmiddellijk gestart. TVSDK 2.4 biedt ook ondersteuning voor Instant On voor live streams. De live streams worden opnieuw gebufferd wanneer het live venster wordt verplaatst.
+* **Direct aan voor VOD en live** Wanneer u instant on inschakelt, initialiseert de TVSDK de media en buffert deze voordat het afspelen wordt gestart. Omdat u meerdere `MediaPlayerItemLoader` meerdere streams tegelijk op de achtergrond in de buffer plaatsen. Wanneer een gebruiker het kanaal wijzigt en de stream correct is gebufferd, wordt het afspelen op het nieuwe kanaal onmiddellijk gestart. TVSDK 2.4 biedt ook ondersteuning voor Instant On voor live streams. De live streams worden opnieuw gebufferd wanneer het live venster wordt verplaatst.
 
 * **Prestatieverbeteringen **De nieuwe TVSDK 2.4-architectuur biedt verschillende prestatieverbeteringen:
 
    * **Subsegmentatie** - TVSDK verkleint verder de grootte van elk fragment om het afspelen zo snel mogelijk te starten.
    * **Parallel en downloaden** - TVSDK-prefetches plaatsen advertenties parallel aan het afspelen van de inhoud voordat de advertentie wordt afgebroken, zodat advertenties en inhoud naadloos kunnen worden afgespeeld.
-   * **Lazy en resolutie** - Met deze functie wachten we niet op het oplossen van niet-preroll-advertenties voordat we het afspelen starten, waardoor de opstarttijd afneemt. API&#39;s zoals zoeken en spelen met truc zijn nog steeds niet toegestaan totdat alle advertenties zijn opgelost.
+   * **Lazy en resolutie** - Met deze functie wachten we niet op het oplossen van niet-preroll-advertenties voordat we het afspelen starten, waardoor de opstarttijd afneemt. API&#39;s zoals zoeken en spelen met truc&#39;s zijn nog steeds niet toegestaan totdat alle advertenties zijn opgelost.
 
 * **Afspelen van MP4-inhoud**
 
@@ -119,7 +118,7 @@ De nieuwe logica ABR is gebaseerd op bufferlengte, tarief van verandering van bu
 
 * **Facturering**
 
-TVSDK verzamelt automatisch metriek, met inachtneming van het klantenverkoopcontract om periodieke gebruiksrapporten te produceren die voor factureringsdoeleinden worden vereist. Bij elke streamstartgebeurtenis gebruikt TVSDK de API voor het invoegen van Adobe Analytics-gegevens om factuurmetriek, zoals inhoudssoort, voor het invoegen ingeschakelde vlaggen en voor het drm ingeschakelde vlaggen - gebaseerd op de duur van de factureerbare stream - naar de Adobe Analytics Primetime-rapportsuite te verzenden. Dit heeft geen invloed op of wordt niet opgenomen in de eigen Adobe Analytics-rapportreeksen of serveraanroepen van de klant. Op verzoek wordt dit gebruiksrapport voor facturering periodiek naar klanten verzonden. Dit is de eerste fase van de factureringsfunctie die alleen gebruiksfacturering ondersteunt. Het kan worden gevormd gebaseerd op het verkoopcontract gebruikend APIs die in de documentatie worden beschreven.
+TVSDK verzamelt automatisch meetgegevens, met inachtneming van het verkoopcontract van de klant, om periodieke gebruiksrapporten te genereren die voor factureringsdoeleinden worden vereist. Bij elke streamstartgebeurtenis gebruikt TVSDK de API voor het invoegen van Adobe Analytics-gegevens om factuurmetriek, zoals inhoudssoort, voor het invoegen ingeschakelde vlaggen en voor het drm ingeschakelde vlaggen - gebaseerd op de duur van de factureerbare stream - naar de Adobe Analytics Primetime-rapportsuite te verzenden. Dit heeft geen invloed op of wordt niet opgenomen in de eigen Adobe Analytics-rapportreeksen of serveraanroepen van de klant. Op verzoek wordt dit gebruiksrapport voor facturering periodiek naar klanten verzonden. Dit is de eerste fase van de factureringsfunctie die alleen gebruiksfacturering ondersteunt. Het kan worden gevormd gebaseerd op het verkoopcontract gebruikend APIs die in de documentatie worden beschreven.
 
 ## Ondersteunde functies {#supported-features}
 
@@ -241,7 +240,7 @@ TVSDK voor Android 2.4 ondersteunt een aantal functies die u kunt implementeren 
 |---|---|---|---|
 | Algemeen afspelen, advertenties ingeschakeld | VOD + Live | √ | ð (alleen VOD-rollen) |
 | FER-inhoud met ingeschakelde advertenties | VOD | √ | Niet ondersteund |
-| Standaardgedrag advertentie | VOD + Live | √ | ð (alleen VOD-rollen) |
+| Standaardgedrag Advertentie | VOD + Live | √ | ð (alleen VOD-rollen) |
 | VAST 2,0/3,0 | VOD + Live | √ | ð (alleen VOD-rollen) |
 | VMAP 1.0 | VOD + Live | √ | ð (alleen VOD-rollen) |
 | MP4-advertenties | VOD + Live | Ö uit CRS) | Ö uit CRS, alleen voorrollen) |
@@ -299,7 +298,7 @@ TVSDK voor Android 2.4 ondersteunt een aantal functies die u kunt implementeren 
    <td>Niet ondersteund</td> 
   </tr>
   <tr>
-   <td>Aangepaste en resolver van vrijloopwiel</td> 
+   <td>Aangepaste en resolver van vrijloop</td> 
    <td>VOD</td> 
    <td>Niet ondersteund</td> 
    <td>Niet ondersteund</td> 
@@ -364,9 +363,9 @@ TVSDK voor Android 2.4 ondersteunt een aantal functies die u kunt implementeren 
 | **Functie** | **Inhoudstype** | **HLS** | **DASH** |
 |---|---|---|---|
 | AES-codering | VOD + Live | √ | Ö (alleen VOD) |
-| Voorbeeld AES-codering | VOD + Live | √ |  |
+| Voorbeeld van AES-codering | VOD + Live | √ |  |
 | Vertogende stromen | VOD + Live | √ |  |
-| DRM | VOD + Live | Alleen Primetime DRM (in de toekomst: Widevine) | Alleen Widevine |
+| DRM | VOD + Live | Alleen primetime DRM (toekomstig: Widevine) | Alleen Widevine |
 | Extern afspelen (RBOP) | VOD + Live | Alleen Primetime DRM | Niet ondersteund |
 | Licentie roteren | VOD + Live | Alleen Primetime DRM | Niet ondersteund |
 | Toetsrotatie | VOD + Live | Alleen Primetime DRM | Niet ondersteund |
@@ -398,7 +397,7 @@ Deze versie van TVSDK heeft de volgende problemen:
 * Het instellen van het bijschrift Sluiten op CJK-talen werkt niet.
 * Video kan automatisch uit de truc-modus komen, zowel tussen VOD als live.
 * VHL - de verkeerde hartslagvraag wordt verzonden wanneer wij een inhoud van een compensatie beginnen.
-* Wanneer VPAID-advertenties VHL-aanroepen voor hartslag worden afgespeeld:type:afspeeladvertentie ontbreekt.
+* Wanneer VPAID-advertenties VHL-aanroepen voor hartslag worden afgespeeld voor gebeurtenis:type:afspeeladvertentie ontbreekt.
 * Pre-rol en speelt zelfs wanneer addBreakPolicy SKIP wordt gekozen.
 * Nadat u naar de statusspeler Volledig bent gegaan, gaat u terug naar de afspeelstatus met SKIP en BreakPolicy voor Post-roll-advertenties.
 

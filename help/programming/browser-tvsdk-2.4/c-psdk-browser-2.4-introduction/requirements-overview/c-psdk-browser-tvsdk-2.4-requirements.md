@@ -1,8 +1,7 @@
 ---
 description: Deze release bevat spelers en ondersteunt een groot aantal browsers.
 title: Vereisten
-exl-id: 3157a86b-bf93-41d9-be82-0b702d69c69e
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '102'
 ht-degree: 0%
@@ -23,7 +22,7 @@ Players omvatten de volgende referentie-APIs:
 * JavaScript API voor Core Playback
 * Referentie-demospeler
 
-**Gecertificeerde Platforms:**
+**Gecertificeerde platforms:**
 
 * **Desktopconfiguraties**
 
@@ -32,22 +31,22 @@ Players omvatten de volgende referentie-APIs:
       * Internet Explorer 11+
       * Chroom 33+
       * Firefox 38+
+
    * Microsoft Windows 8.1
 
       * Internet Explorer 11+
       * Chroom 33+
       * Firefox 38+
+
    * Microsoft Windows 10
 
       * Rand+
-   * Apple OS X
+
+   * APPLE OS X
 
       * Safari 8+
       * Chroom 33+
       * Firefox 38+
-
-
-
 
 * **Mobiele webconfiguraties**
 
@@ -55,18 +54,22 @@ Players omvatten de volgende referentie-APIs:
 
       * Oorspronkelijke browser
       * Chroom 33+
+
    * Android 5.0
 
       * Oorspronkelijke browser
       * Chroom 33+
+
    * Android 6.0
 
       * Chroom 33+
-   * Apple iOS 8
+
+   * APPLE IOS 8
 
       * Safari 8+
       * Chroom 33+
-   * Apple iOS 9
+
+   * APPLE IOS 9
 
       * Safari 8+
       * Chroom 33+

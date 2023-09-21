@@ -1,8 +1,7 @@
 ---
 description: Nadat u met succes het voorwerp MediaResource laadt, leidt TVSDK tot een geval van de klasse MediaPlayerItem om toegang tot die middel te verlenen.
 title: Informatie over de klasse MediaPlayerItem
-exl-id: 7bf9db5f-63e1-4098-b657-5905fdd12b70
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '151'
 ht-degree: 0%
@@ -17,7 +16,7 @@ Nadat u met succes het voorwerp MediaResource laadt, leidt TVSDK tot een geval v
 
 De `MediaResource` vertegenwoordigt een verzoek dat door de toepassingslaag aan wordt uitgegeven `MediaPlayer` -instantie om inhoud te laden.
 
-De `MediaPlayer` lost het media middel op, laadt het bijbehorende duidelijke dossier, en ontleedt manifest. Dit is het asynchrone gedeelte van het proces voor het laden van bronnen. De `MediaPlayerItem` -instantie wordt gemaakt nadat de bron is opgelost en dit is een opgeloste versie van een `MediaResource`. TVSDK biedt toegang tot het nieuwe `MediaPlayerItem` instantie door `MediaPlayer.CurrentItem`.
+De `MediaPlayer` lost het media middel op, laadt het bijbehorende duidelijke dossier, en ontleedt manifest. Dit is het asynchrone gedeelte van het proces voor het laden van bronnen. De `MediaPlayerItem` -instantie wordt gemaakt nadat de bron is opgelost en dit is een opgeloste versie van een `MediaResource`. TVSDK biedt toegang tot het zojuist gemaakte `MediaPlayerItem` instantie door `MediaPlayer.CurrentItem`.
 
 >[!TIP]
 >

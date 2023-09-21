@@ -1,8 +1,7 @@
 ---
 description: Mediastreams kunnen aanvullende metagegevens in de vorm van tags in het bestand playlist/manifest bevatten. Dit bestand geeft de plaatsing van de reclame aan. U kunt aangepaste tagnamen opgeven en een melding ontvangen wanneer bepaalde tags in het manifestbestand worden weergegeven.
 title: Aangepaste tags
-exl-id: 1b660b2a-c48b-49f9-af14-8b2318119e9a
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '328'
 ht-degree: 0%
@@ -64,6 +63,6 @@ Uw toepassing kan de volgende scenario&#39;s instellen:
 * Een melding wanneer `#EXT-X-ASSET` -tags of een andere set aangepaste tagnamen waarop u zich hebt geabonneerd, bestaan in het bestand.
 * Advertenties invoegen wanneer een `#EXT-X-AD` -tag of een andere aangepaste tagnaam in de stream wordt gevonden.
 
-U kunt zich als aangepaste tags abonneren op een van de volgende tags: `EXT-PROGRAM-DATE-TIME`, `EXT-X-START`, `EXT-X-AD`, `EXT-X-CUE`, `EXT-X-ENDLIST`. U wordt op de hoogte gesteld van een `TimedMetadata` gebeurtenis tijdens het parseren van manifestbestanden.
+U kunt zich als aangepaste tags abonneren op een van de volgende tags: `EXT-PROGRAM-DATE-TIME`, `EXT-X-START`, `EXT-X-AD`, `EXT-X-CUE`, `EXT-X-ENDLIST`. U ontvangt een melding met een `TimedMetadata` gebeurtenis tijdens het parseren van manifestbestanden.
 
 Er zijn enkele advertentietags, zoals `EXT-X-CUE`, waarop u al bent geabonneerd. Deze advertentietags worden ook gebruikt door de standaardopportuniteitsgenerator. U kunt opgeven welke advertentietags door de standaardopportuniteitsgenerator worden gebruikt door de optie `adTags` eigenschap.

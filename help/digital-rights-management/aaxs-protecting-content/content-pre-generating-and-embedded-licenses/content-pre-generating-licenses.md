@@ -2,8 +2,7 @@
 title: Vooraf gegenereerde licenties
 description: Vooraf gegenereerde licenties
 copied-description: true
-exl-id: 2be8674c-736f-4ed3-b952-f661bf3ff48f
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '402'
 ht-degree: 0%
@@ -12,7 +11,7 @@ ht-degree: 0%
 
 # Vooraf gegenereerde licenties{#pre-generating-licenses}
 
-Gebruik voor het vooraf genereren van licenties `com.adobe.flashaccess.sdk.license.pregen.LicenseFactory.getInstance()` om een instantie te verkrijgen van `LicenseFactory`. U moet een licentieserverreferentie opgeven om de licenties die door deze fabriek worden gegenereerd, te ondertekenen. Deze klasse ondersteunt het genereren van Leaf-licenties zonder licentieketens en Leaf- en Root-licenties met de [Verbeterde licentietakken](../../aaxs-protecting-content/content-introduction/content-usage-rules/content-other-policy-options/content-enhanced-license-chaining.md).
+Gebruik voor het vooraf genereren van licenties `com.adobe.flashaccess.sdk.license.pregen.LicenseFactory.getInstance()` om een instantie van `LicenseFactory`. U moet een licentieserverreferentie opgeven om de licenties die door deze fabriek worden gegenereerd, te ondertekenen. Deze klasse ondersteunt het genereren van Leaf-licenties zonder licentieketens en Leaf- en Root-licenties met de [Verbeterde licentietakken](../../aaxs-protecting-content/content-introduction/content-usage-rules/content-other-policy-options/content-enhanced-license-chaining.md).
 
 Bij het genereren van een Leaf-licentie moeten de metagegevens voor de inhoud worden opgegeven met `initContentInfo()`. Als de metagegevens meerdere beleidsregels bevatten of als u een beleid wilt gebruiken dat niet in de metagegevens voorkomt, gebruikt u `setSelectedPolicy()` om het beleid te specificeren dat moet worden gebruikt om de vergunning te produceren. Als u een Lijst van de Update van het Beleid gebruikt om updates aan beleid te volgen, kunt u de Lijst van de Update van het Beleid aan de Fabriek van de Vergunning verstrekken alvorens de meta-gegevens te initialiseren gebruikend `setPolicyUpdateList()`.
 
@@ -20,11 +19,11 @@ Bij het genereren van een basislicentie kunnen de metagegevens van de inhoud wor
 
 >[!NOTE]
 >
->Een licentieserver-URL is vereist, zelfs als er geen Adobe Access-licentieserver is waarvan de clients een licentie kunnen aanvragen. In dat geval moet de URL van de licentieserver een URL opgeven die de uitgever van de licentie identificeert.
+>Een URL van de Server van de Vergunning van de Vergunning wordt vereist zelfs als er geen Server van de Vergunning van de Toegang van de Adobe is waarvan de cliënten een vergunning kunnen verzoeken. In dat geval moet de URL van de licentieserver een URL opgeven die de uitgever van de licentie identificeert.
 
 Als het beleid Verbeterde het Ketsen van de Vergunning gebruikt, moet een referentie van de Server van de Vergunning worden gespecificeerd om de Sleutel van de Encryptie van de Wortel in het beleid te decrypteren ( `setRootKeyRetrievalInfo()`).
 
-Als het beleid een domein gebonden vergunning vereist, gebruik `setDomainCAs()` om de Uitgevers van het Domein te specificeren waarvan de vergunningsserver domeintokens zal goedkeuren. U moet een of meer Domain CA-certificaten opgeven om de licentieontvanger te valideren.
+Als het beleid een domeingebonden vergunning vereist, gebruik `setDomainCAs()` om de Uitgevers van het Domein te specificeren waarvan de vergunningsserver domeintokens zal goedkeuren. U moet een of meer Domain CA-certificaten opgeven om de licentieontvanger te valideren.
 
 Als voor het beleid levering via externe sleutels is vereist voor iOS-apparaten, moet het Key Server Certificate worden geleverd met `setKeyServerCertificate()`, tenzij er een geketend blad wordt gegenereerd.
 

@@ -2,8 +2,7 @@
 title: SSL configureren op uw BES-server
 description: SSL configureren op uw BES-server
 copied-description: true
-exl-id: 6823a71c-3be6-4c07-a3e6-e16bd931deaf
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '78'
 ht-degree: 0%
@@ -12,7 +11,7 @@ ht-degree: 0%
 
 # SSL configureren op uw BES-server {#configure-ssl-on-your-bees-server}
 
-1. Geef het SSL-certificaat van de server op aan uw Adobe-contactpersoon die deze software heeft geleverd.
+1. Geef uw SSL-servercertificaat door aan de contactpersoon van de Adobe die deze software heeft geleverd.
 
    Het certificaat wordt als vertrouwd certificaat toegevoegd aan de Primetime Cloud DRM-vertrouwde opslag.
 1. Client authentication for the SSL connection (disabled in this version):

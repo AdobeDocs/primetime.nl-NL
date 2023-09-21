@@ -1,8 +1,7 @@
 ---
 title: MVPD Content Metadata Exchange
 description: MVPD Content Metadata Exchange
-exl-id: d17e60dc-6c61-4ca2-bad8-1840c95261e0
-source-git-commit: bfc3ba55c99daba561255760baf273b6538a3c6e
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '404'
 ht-degree: 0%
@@ -34,9 +33,9 @@ De authentificatie van Adobe Primetime steunt twee benaderingen voor het omzette
 * **XACML**.  De eerste aanpak wordt afgestemd op de OLCA-standaard.  Het gebruikt XACML, waarin de waarden MRSS worden gehaald om een XACMLResource met attributen te bouwen die aan de elementen MRSS in kaart brengen.  Dit wordt dan overgegaan tot MVPD.
 * **REST**.  De tweede aanpak is REST-gebaseerd.  MRSS is base64 gecodeerd en overgegaan als parameter URL op de vraag REST.
 
-In beide benaderingen verwerkt het MVPD het vergunningsverzoek door de geëxtraheerde waarden in zijn eigen logische stroom op te nemen, en een vergunningreactie te retourneren.
+In beide benaderingen verwerkt het MVPD het vergunningsverzoek door de geëxtraheerde waarden in zijn eigen logische stroom op te nemen en een reactie op de toelating te retourneren.
 
-## Integratiegegevens {#integration-details}
+## Integratiedetails {#integration-details}
 
 * Op OLCA gebaseerde XACML gestructureerde bron
 * Op REST gebaseerde gestructureerde bron

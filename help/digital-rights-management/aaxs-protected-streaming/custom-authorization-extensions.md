@@ -1,8 +1,7 @@
 ---
 title: Aangepaste extensies voor machtigingen
 description: Aangepaste machtigingslogica kan tijdens licentieverwerving worden aangeroepen om te beslissen of een licentie aan de verzoekende cliënt moet worden verleend.
-exl-id: bf7870f5-11bf-4392-a422-506b47d684f9
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '152'
 ht-degree: 0%

@@ -1,8 +1,7 @@
 ---
 description: Deze klassen bieden informatie die u helpt te bepalen hoe goed de speler presteert.
 title: QoS-klassen
-exl-id: 7d8b2bb2-491d-4c36-a6b3-8f91cf2304aa
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '432'
 ht-degree: 0%
@@ -48,7 +47,7 @@ Pakket: [com.adobe.mediacore.qos](https://help.adobe.com/en_US/primetime/api/psd
    <td colname="2"> Opsommingsklasse die mogelijke waarden opsomt voor de eigenschap type van LoadInformation-objecten. </td> 
   </tr> 
   <tr rowsep="1"> 
-   <td colname="1"><span class="codeph"><a href="https://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls_1.4/com/adobe/mediacore/qos/PlaybackInformation.html" format="html" scope="external"> Afspeelgegevens</a></span> </td> 
+   <td colname="1"><span class="codeph"><a href="https://help.adobe.com/en_US/primetime/api/psdk/asdoc-dhls_1.4/com/adobe/mediacore/qos/PlaybackInformation.html" format="html" scope="external"> PlaybackInformation</a></span> </td> 
    <td colname="2"> Verstrekt informatie over hoe de playback uitvoert. Dit omvat de framesnelheid, de bitsnelheid van het profiel, de totale tijd die is besteed aan buffering, het aantal bufferpogingen, de tijd die het heeft geduurd om de eerste byte van het eerste videofragment op te halen, de tijd die het heeft geduurd om het eerste frame te renderen, de momenteel gebufferde lengte en de buffertijd. </td> 
   </tr> 
   <tr rowsep="1"> 

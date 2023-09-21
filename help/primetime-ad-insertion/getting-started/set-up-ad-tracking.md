@@ -1,8 +1,7 @@
 ---
 title: Advertentie bijhouden instellen
 description: Advertentie bijhouden instellen
-exl-id: b5ebad0f-4e20-456a-892d-4c981ab26e51
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '280'
 ht-degree: 0%
@@ -17,7 +16,7 @@ De meeste adverteerders hebben informatie nodig over wanneer, hoe lang en hoe go
 
 In client-side advertentie-tracking verzendt de server de client een JSON-, VMAP- of in-manifest-structuur die gebeurtenissen tracking en URL&#39;s opgeeft, samen met de playlist met advertenties.
 
-Als u het bijhouden van advertenties op de client wilt inschakelen, geeft u de volgende parameters op in het dialoogvenster [Bootstrap API](/help/primetime-ad-insertion/technical-reference/bootstrap-api.md).
+Als u het bijhouden van advertenties op de client wilt inschakelen, geeft u de volgende parameters op in het dialoogvenster [Bootstrap-API](/help/primetime-ad-insertion/technical-reference/bootstrap-api.md).
 
 * `pttrackingmode=simple`
 
@@ -25,7 +24,7 @@ Als u het bijhouden van advertenties op de client wilt inschakelen, geeft u de v
 
 >[!NOTE]
 >
->De instelling `pttrackingmode=simple` zorgt ervoor dat de eerste API-bootstrap-aanvraag een JSON-reactie retourneert in plaats van een HLS- of DASH-document.
+>De instelling van `pttrackingmode=simple` zorgt ervoor dat de eerste API-bootstrap-aanvraag een JSON-reactie retourneert in plaats van een HLS- of DASH-document.
 
 <!-- **Daniel to check. The specified file in this statement does not exist.** 
 More information about `pttrackingmode`, `pttrackingversion` formats, can be found in [API Reference: Manifest server query parameters](manifest-server-query-parameters.md). -->
@@ -36,11 +35,11 @@ More information about `pttrackingmode`, `pttrackingversion` formats, can be fou
 
 Met deze methode worden gegevens voor het bijhouden van gegevens volledig berekend aan de serverzijde. Dit is handig wanneer het bijwerken van de clienttoepassing niet mogelijk is. Nochtans, kunnen de server-kant en het volgen niet met cliënt-zijplaybackactiviteit aanpassen. De server beschouwt bijvoorbeeld een advertentie die moet worden afgespeeld nadat de segmenten zijn geleverd, zelfs als de eindgebruiker de volledige advertentie niet weergeeft.
 
-Als u gegevensspatiëring op de server wilt inschakelen, geeft u de volgende parameter op in het dialoogvenster [Bootstrap API](/help/primetime-ad-insertion/technical-reference/bootstrap-api.md).
+Als u gegevensspatiëring op de server wilt inschakelen, geeft u de volgende parameter op in het dialoogvenster [Bootstrap-API](/help/primetime-ad-insertion/technical-reference/bootstrap-api.md).
 
 `pttrackingmode=sstm`
 
-Zie `pttrackingmode` secties [Bootstrap API](/help/primetime-ad-insertion/technical-reference/bootstrap-api.md).
+Zie `pttrackingmode` delen van [Bootstrap-API](/help/primetime-ad-insertion/technical-reference/bootstrap-api.md).
 
 Alle beacons voor het bijhouden van advertenties worden verzonden met de volgende HTTP-aanvraagheaders:
 
@@ -53,4 +52,4 @@ Deze waarden bevatten het client/player user-agent en client IP-adres.
 ## Hybride advertentie bijhouden {#hybrid-ad-tracking}
 
 Deze aanpak lijkt op het bijhouden van de server, maar de clienttoepassing vraagt ook om secundaire gegevens van Primetime Ad Insertion voor gedetailleerde traceringsinformatie. Hybride en het volgen kunnen niet-lineaire advertenties zoals overlays en metgezellen aan de cliënttoepassing leveren, terwijl nog het verlaten van Primetime Ad Insertion om individuele en volgende URLs te verzenden.
-Als u hybride advertentietracering wilt inschakelen, raadpleegt u de `pttrackingmode` in de [Bootstrap API](/help/primetime-ad-insertion/technical-reference/bootstrap-api.md).
+Als u hybride advertentietracering wilt inschakelen, raadpleegt u de `pttrackingmode` in de [Bootstrap-API](/help/primetime-ad-insertion/technical-reference/bootstrap-api.md).

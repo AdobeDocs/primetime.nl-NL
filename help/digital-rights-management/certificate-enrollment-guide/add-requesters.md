@@ -2,8 +2,7 @@
 title: Aanvragers toevoegen
 description: Aanvragers toevoegen
 copied-description: true
-exl-id: 66d9bc90-8287-4a07-9f60-4263888d5cce
-source-git-commit: be43bbbd1051886c8979ff590a3197b2a7249b6a
+source-git-commit: 02ebc3548a254b2a6554f1ab34afbb3ea5f09bb8
 workflow-type: tm+mt
 source-wordcount: '344'
 ht-degree: 0%
@@ -20,22 +19,22 @@ Een Adobe Primetime DRM-licentiehouder kan maximaal vijf aanvragers hebben. Adob
 
    * Voeg gebruiker toe.
 
-      Als de werknemer een rekening van de Adobe heeft, ga het e-mailadres in. Klikken **[!UICONTROL Add]** en doorgaan.
+     Als de werknemer een rekening van de Adobe heeft, ga het e-mailadres in. Klikken **[!UICONTROL Add]** en doorgaan.
    * Gebruiker uitnodigen.
 
-      Als de werknemer geen rekening van de Adobe heeft, nodig hen uit om één tot stand te brengen. Voer het e-mailadres en de naam van de medewerker in en klik op **[!UICONTROL Send an invitation]**. De site verzendt een e-mailuitnodiging naar de genodigde. Het e-mailbericht bevat een koppeling naar adobe.com waar de genodigde een account kan maken. De genodigde moet het e-mailadres gebruiken waarnaar de uitnodiging is verzonden.
+     Als de werknemer geen rekening van de Adobe heeft, nodig hen uit om één tot stand te brengen. Voer het e-mailadres en de naam van de medewerker in en klik op **[!UICONTROL Send an invitation]**. De site verzendt een e-mailuitnodiging naar de genodigde. Het e-mailbericht bevat een koppeling naar adobe.com. De genodigde moet het e-mailadres gebruiken waarnaar de uitnodiging is verzonden.
 
-      >[!NOTE]
-      >
-      >De beheerder ontvangt geen melding wanneer een gebruiker een account heeft gemaakt. Controleer de **[!UICONTROL User accounts]** op de site Certificaat invoeren om te controleren of een genodigde een account heeft gemaakt.
+     >[!NOTE]
+     >
+     >De beheerder ontvangt geen melding wanneer een gebruiker een account heeft gemaakt. Controleer de **[!UICONTROL User accounts]** op de site Certificaat invoeren om te controleren of een genodigde een account heeft gemaakt.
 
 1. Als u een gebruiker hebt toegevoegd, wordt het scherm met de rolsectie in het dialoogvenster **[!UICONTROL User accounts]** wordt geopend. Ga als volgt te werk:
 
-   1. Bevestig dat de gebruikersgegevens juist zijn.
+   1. Bevestig dat de gegevens van de gebruiker juist zijn.
    1. Ga het aantal van de bedrijfstelefoon en uitdagingsuitdrukking in.
 
       De gebruiker moet deze uitdrukking weten om zijn rekening te verifiëren.
-   1. Selecteer bij Type gebruiker de optie **[!UICONTROL Requester]**.
+   1. Selecteer bij Type gebruiker **[!UICONTROL Requester]**.
    1. Klik op Opslaan.
 
       De aanvrager ontvangt een e-mail met de mededeling dat zijn Primetime DRM-accountregistratie is voltooid.
@@ -43,8 +42,8 @@ Een Adobe Primetime DRM-licentiehouder kan maximaal vijf aanvragers hebben. Adob
 1. Voer de volgende handelingen uit als u een gebruiker hebt uitgenodigd:
 
    1. Meld u aan bij de site voor certificaatinschrijving.
-   1. Selecteer **[!UICONTROL User accounts]** tab.
-   1. Zoek de gebruiker in het dialoogvenster **[!UICONTROL Invitations Sent]** en klik op **[!UICONTROL Authorize]**.
+   1. Selecteer de **[!UICONTROL User accounts]** tab.
+   1. Zoek de gebruiker in het dialoogvenster **[!UICONTROL Invitations Sent]** sectie en klik op **[!UICONTROL Authorize]**.
 
       >[!NOTE]
       >
@@ -54,7 +53,7 @@ Een Adobe Primetime DRM-licentiehouder kan maximaal vijf aanvragers hebben. Adob
    1. Ga het aantal van de bedrijfstelefoon en uitdagingsuitdrukking in.
 
       De aanvrager moet deze uitdrukking kennen om zijn rekening te verifiëren.
-   1. Selecteer bij Type gebruiker de optie **[!UICONTROL Requester]**.
+   1. Selecteer bij Type gebruiker **[!UICONTROL Requester]**.
    1. Klikken **[!UICONTROL Save]**.
 
       De gebruiker ontvangt een e-mail met de mededeling dat zijn Primetime DRM-accountregistratie is voltooid.
