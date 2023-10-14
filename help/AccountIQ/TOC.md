@@ -2,11 +2,11 @@
 product: adobe primetime
 audience: end-user
 feature: Account IQ
-user-guide-description: De hulp van IQ van de Rekening van Primetime geeft informatie over de IQ van de Rekening componenten en begeleidt u door gebruikersreizen om de diverse componenten te gebruiken.
+user-guide-description: Primetime Account IQ geeft informatie over de Account IQ-componenten en leidt u door gebruikerstrajecten om de verschillende componenten te gebruiken.
 source-git-commit: 11ca161ebaaeca08b6bdc84f9bd719dfc8509d09
 workflow-type: tm+mt
 source-wordcount: '141'
-ht-degree: 0%
+ht-degree: 16%
 
 ---
 

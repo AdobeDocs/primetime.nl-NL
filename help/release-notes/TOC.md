@@ -1,19 +1,19 @@
 ---
 product: adobe primetime
 audience: end-user
-user-guide-title: Opmerkingen bij de release Primetime
-user-guide-description: Verstrekt versie-specifieke informatie, systeemvereisten, beperkingen, vaste kwesties, en bekende kwesties.
+user-guide-title: Aanvullende informatie over Primetime
+user-guide-description: Verstrekt versiespecifieke informatie, systeemvereisten, beperkingen, opgeloste problemen en bekende problemen.
 source-git-commit: a29715b0ef833f795760094fd0eb9161462dabb7
 workflow-type: tm+mt
 source-wordcount: '116'
-ht-degree: 0%
+ht-degree: 16%
 
 ---
 
 
-# Opmerkingen bij de release Primetime {#release-notes}
+# Aanvullende informatie over Primetime {#release-notes}
 
-+ [Overzicht van opmerkingen bij de release](home.md)
++ [Aanvullende informatie Overzicht](home.md)
 + Primetime Ad Insertion {#ptai}
    + [Opmerkingen bij de release PTAI 22.9.2](ptai-22x-release-notes.md)
    + [Opmerkingen bij de release PTAI 21.11.1](ptai-21x-release-notes.md)
@@ -33,7 +33,7 @@ ht-degree: 0%
    + [Opmerkingen bij de release TVSDK 1.4 voor desktop HLS](tvsdk-1-4-desktop-hls.md)
 + Offline pakket primetime {#offline-packager}
    + [Versie 2 van de Offline Packager van primetime](offline-packager-2x-release-note.md)
-+ Primetime Streaming Server {#streaming-server}
++ Primetime-streamingserver {#streaming-server}
    + [Primetime Streaming Server versie 1 releases](primetime-streaming-server-1x.md)
 + TVSDK voor afspeelstation 4 {#tvsdk-playstation}
    + [Opmerkingen bij de release TVSDK 2.1 PlayStation 4](tvsdk-21-ps4.md)

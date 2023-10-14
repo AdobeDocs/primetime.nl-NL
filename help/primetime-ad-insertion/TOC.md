@@ -1,16 +1,16 @@
 ---
 product: adobe primetime
 audience: end-user
-user-guide-title: Help bij primetime Ad Insertion
+user-guide-title: Primetime Ad Insertion Help
 source-git-commit: 2b8aa2d4d20dac0f6f8467043dd2e55a88e9e9f1
 workflow-type: tm+mt
 source-wordcount: '176'
-ht-degree: 0%
+ht-degree: 4%
 
 ---
 
 
-# Help bij primetime Ad Insertion {#ad-insertion}
+# Primetime Ad Insertion Help {#ad-insertion}
 
 + [Adobe Primetime Ad Insertion](home.md)
 + Aankondigingen Ad Insertion in primetime{#announcements}
@@ -46,7 +46,7 @@ ht-degree: 0%
    + [Belangrijkste afmetingen en gegevens](advanced-telemetry/key-metrics.md)
 + [Live-gebeurtenisbewaking](live-event-monitoring.md)
 + Referentie {#technical-reference}
-   + [Bootstrap API](technical-reference/bootstrap-api.md)
+   + [Bootstrap-API](technical-reference/bootstrap-api.md)
    + [Rapporten-API](technical-reference/report-api.md)
    + Aanbevolen procedures{#best-practices}
       + [Overzicht](best-practices/best-practices-overview.md)
